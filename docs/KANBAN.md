@@ -1,6 +1,6 @@
 # MSA Trainer — Project Board
 
-> Source of truth for progress. Updated by Claude as work moves. Last update: 2026-09-02 22:50
+> Source of truth for progress. Updated by Claude as work moves. Last update: 2026-09-02 23:15
 >
 > Columns: **Backlog** → **In Progress** → **Review** (built, needs verification) → **Done** (verified).
 
@@ -18,7 +18,6 @@ teach → drill (fresh variants) → repeat (mastery + repair), Math first from 
 - E6-1 · README + CLAUDE.md for the web app · S
 
 ## Review
-- E5-3 · GitHub Actions workflow — untested until the repo has a remote (E5-5) · S
 - E4-12 · PWA install/offline on a real phone · S
 
 ## Done
@@ -26,6 +25,7 @@ teach → drill (fresh variants) → repeat (mastery + repair), Math first from 
 - E1 · Core port to TS (115 unit tests), persistence
 - E2-1 … E2-3 · Schema v2, validator (schema + semantics + 60-render template exercise + KaTeX + figure rendering), legacy migration with 3 fixes
 - E3-1 … E3-15 · All 16 Training sections of the 2027 e-book: 11 lessons, 139 templated drills, per-question sources
+- E5-3/E5-5/E5-6 · **Live on GitHub Pages**: repo `arnebailliere-oss-svg/msa-trainer` (public), Actions workflow runs tests + content check + build on every push to `main`, Pages source = workflow (enabled via API; the workflow token may not create the Pages site itself). URL: https://arnebailliere-oss-svg.github.io/msa-trainer/
 - E4-10 · **Exam mode** like the real Prüfung: first 40 % Basisaufgaben (hilfsmittelfrei, calculator disabled), then Sternchen-/Sachaufgaben; stopwatch in the header; result page lists every task with time, source and correct answer; pool = 2023–2025 originals only (older exam items retagged `altpruefung`) — e2e `exam.spec.ts`
 - E4-18 · **Figures for legacy items**: 51 generated figures (right/general triangles incl. relabelled vertices and height line, rectangles, parallelogram, trapezoids, circles, Quader, Zylinder, coordinate systems with lines/parabolas, tree diagram, pie chart) — screenshots in `e2e/screenshots/legacy-*.png`
 - E2-5b · 12 exact duplicates removed (same prompt twice), 9 misfiled items moved to the right topic (powers → MATH_ALG_POW, Mantelfläche → Volumen, …)
@@ -50,8 +50,7 @@ teach → drill (fresh variants) → repeat (mastery + repair), Math first from 
 - E4-13 · Accessibility pass: focus states, contrast, keyboard for MATCH · S
 
 ### Release
-- E5-5 · **User:** create GitHub repo, `git remote add origin …`, push `main`, Settings → Pages → Source: GitHub Actions · S
-- E5-6 · First deploy verification (base path, PWA install, offline) · S
+- E5-6b · PWA install + offline check on a real phone against the live URL · S
 - E5-4 · Lighthouse pass · S
 
 ### Docs
@@ -72,6 +71,6 @@ teach → drill (fresh variants) → repeat (mastery + repair), Math first from 
 - 2026-09-02 · Never write JSON/TS with backslashes through Bash heredocs (the tool collapses `\\`); use Write/Edit or Node with `String.fromCharCode(92)`.
 
 ## Risks / Blockers
-- No `gh` CLI on this machine — GitHub remote/Pages settings must be done by the user (E5-5).
+- `gh` CLI is a portable install at `%LOCALAPPDATA%Programsghingh.exe` (not on PATH), logged in as arnebailliere-oss-svg.
 - Legacy math audited (E2-5). Legacy DE/EN (118 items) checked only by schema/render — see E3-18.
 - DE/EN have no lessons or templates yet — math-first was the agreed priority.
