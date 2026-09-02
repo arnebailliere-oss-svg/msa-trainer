@@ -32,6 +32,10 @@ jobs:
         run: npm test
       - name: Content check
         run: npm run content -- --check
+      - name: Enable GitHub Pages (first run)
+        uses: actions/configure-pages@v5
+        with:
+          enablement: true
       - name: Build
         run: |
           REPO="${{ github.event.repository.name }}"
