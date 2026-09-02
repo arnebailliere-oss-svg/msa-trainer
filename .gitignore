@@ -32,3 +32,6 @@ content_packs/berlin_msa_v1/images/
 .DS_Store
 Thumbs.db
 e2e/screenshots/
+
+# playwright run state
+web/test-results/
