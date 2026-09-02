@@ -9,13 +9,13 @@
 :root {
   --bg: #0d0f1c;
   --bg-2: #141830;
-  --surface: rgba(255, 255, 255, 0.05);
-  --surface-2: rgba(255, 255, 255, 0.09);
+  --surface: rgba(255, 255, 255, 0.07);
+  --surface-2: rgba(255, 255, 255, 0.12);
   --surface-solid: #1a1f3a;
-  --line: rgba(255, 255, 255, 0.1);
-  --ink: #f2f4ff;
-  --ink-2: #a9afd1;
-  --ink-3: #6b7199;
+  --line: rgba(255, 255, 255, 0.14);
+  --ink: #f5f6ff;
+  --ink-2: #c6cbe8;
+  --ink-3: #9096bd;
 
   --brand: #7c6cff;
   --brand-2: #22d3ee;
@@ -44,13 +44,13 @@
   :root:not([data-theme="dark"]) {
     --bg: #f4f5fb;
     --bg-2: #ffffff;
-    --surface: rgba(20, 24, 48, 0.04);
-    --surface-2: rgba(20, 24, 48, 0.08);
+    --surface: rgba(20, 24, 48, 0.06);
+    --surface-2: rgba(20, 24, 48, 0.11);
     --surface-solid: #ffffff;
-    --line: rgba(20, 24, 48, 0.1);
-    --ink: #151834;
-    --ink-2: #4b5078;
-    --ink-3: #8b90b5;
+    --line: rgba(20, 24, 48, 0.14);
+    --ink: #10122b;
+    --ink-2: #363b63;
+    --ink-3: #5d6289;
     --red-soft: rgba(255, 92, 122, 0.14);
     --yellow-soft: rgba(255, 200, 87, 0.22);
     --green-soft: rgba(61, 220, 151, 0.18);
@@ -63,13 +63,13 @@
 :root[data-theme="light"] {
   --bg: #f4f5fb;
   --bg-2: #ffffff;
-  --surface: rgba(20, 24, 48, 0.04);
-  --surface-2: rgba(20, 24, 48, 0.08);
+  --surface: rgba(20, 24, 48, 0.06);
+  --surface-2: rgba(20, 24, 48, 0.11);
   --surface-solid: #ffffff;
-  --line: rgba(20, 24, 48, 0.1);
-  --ink: #151834;
-  --ink-2: #4b5078;
-  --ink-3: #8b90b5;
+  --line: rgba(20, 24, 48, 0.14);
+  --ink: #10122b;
+  --ink-2: #363b63;
+  --ink-3: #5d6289;
   --red-soft: rgba(255, 92, 122, 0.14);
   --yellow-soft: rgba(255, 200, 87, 0.22);
   --green-soft: rgba(61, 220, 151, 0.18);
@@ -146,6 +146,7 @@ textarea {
 /* ---------- Utilities ------------------------------------------------------- */
 .glass {
   background: var(--surface);
+  border: 1px solid var(--line);
   box-shadow: var(--glow);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
@@ -240,7 +241,7 @@ textarea {
   }
 }
 .anim-pop {
-  animation: pop-in 0.35s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+  animation: pop-in 0.25s cubic-bezier(0.2, 0.8, 0.2, 1) both;
 }
 .anim-shake {
   animation: shake 0.5s both;

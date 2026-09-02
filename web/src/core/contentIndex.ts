@@ -44,9 +44,11 @@ export function buildContentIndex(pack: ContentPack): ContentIndex {
   const questionMap = new Map(pack.questions.map((q) => [q.id, q]));
   const lessonsByTopic = new Map<string, Lesson[]>();
   for (const l of pack.lessons) {
-    const list = lessonsByTopic.get(l.topicId) ?? [];
-    list.push(l);
-    lessonsByTopic.set(l.topicId, list);
+    for (const tid of [l.topicId, ...(l.alsoFor ?? [])]) {
+      const list = lessonsByTopic.get(tid) ?? [];
+      list.push(l);
+      lessonsByTopic.set(tid, list);
+    }
   }
   const lessonMap = new Map(pack.lessons.map((l) => [l.id, l]));
 

@@ -91,6 +91,7 @@
         "id": { "type": "string", "pattern": "^L_[A-Z][A-Za-z0-9_]+$" },
         "subject": { "$ref": "#/definitions/subject" },
         "topicId": { "type": "string" },
+        "alsoFor": { "type": "array", "items": { "type": "string" } },
         "title": { "type": "string", "minLength": 1 },
         "intro": { "type": "string" },
         "sections": { "type": "array", "minItems": 1, "items": { "$ref": "#/definitions/section" } },

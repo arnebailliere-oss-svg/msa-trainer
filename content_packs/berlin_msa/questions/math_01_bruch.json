@@ -1,0 +1,1058 @@
+[
+  {
+    "id": "MATH_FRAC_KUERZEN_T1",
+    "subject": "MATH",
+    "topicId": "MATH_NUM_FRAC_BASIC",
+    "difficulty": 1,
+    "qtype": "SHORT",
+    "prompt": "Kürze vollständig: $\\frac{{{= a*k}}}{{{= b*k}}}$",
+    "payload": {
+      "answer_type": "fraction",
+      "require_reduced": true
+    },
+    "solution": {
+      "value": "{{a}}/{{b}}"
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "body": "Kürzen heißt: Zähler **und** Nenner durch dieselbe Zahl teilen. Der Wert bleibt gleich, der Bruch wird nur einfacher."
+      },
+      {
+        "kind": "steps",
+        "body": "1. Gemeinsamen Teiler von {{= a*k}} und {{= b*k}} finden: beide sind durch **{{k}}** teilbar.\n2. Teilen: $\\frac{{{= a*k}} : {{k}}}{{{= b*k}} : {{k}}} = \\frac{{{a}}}{{{b}}}$\n3. Prüfen: {{a}} und {{b}} haben keinen gemeinsamen Teiler mehr — fertig gekürzt."
+      },
+      {
+        "kind": "mistake",
+        "body": "Nur den Zähler oder nur den Nenner zu teilen verändert den Wert. Immer **beide** durch dieselbe Zahl teilen."
+      },
+      {
+        "kind": "answer",
+        "body": "$\\frac{{{a}}}{{{b}}}$"
+      }
+    ],
+    "tags": [
+      "bruch",
+      "kuerzen",
+      "drill"
+    ],
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "a": {
+          "type": "int",
+          "min": 1,
+          "max": 9
+        },
+        "b": {
+          "type": "int",
+          "min": 2,
+          "max": 12
+        },
+        "k": {
+          "type": "int",
+          "min": 2,
+          "max": 9
+        }
+      },
+      "constraints": [
+        "gcd(a, b) == 1",
+        "a != b"
+      ]
+    },
+    "source": "Verallgemeinert nach Prüfungshefte 2027, 1.1 Aufgabe 3a"
+  },
+  {
+    "id": "MATH_FRAC_ERWEITERN_T1",
+    "subject": "MATH",
+    "topicId": "MATH_NUM_FRAC_BASIC",
+    "difficulty": 1,
+    "qtype": "SHORT",
+    "prompt": "Erweitere $\\frac{{{a}}}{{{b}}}$ mit {{k}}.",
+    "payload": {
+      "answer_type": "fraction",
+      "exact": true
+    },
+    "solution": {
+      "value": "{{= a*k}}/{{= b*k}}"
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "body": "Erweitern heißt: Zähler **und** Nenner mit derselben Zahl multiplizieren. Der Bruch sieht anders aus, ist aber genauso groß."
+      },
+      {
+        "kind": "steps",
+        "body": "$\\frac{{{a}}}{{{b}}} = \\frac{{{a}} \\cdot {{k}}}{{{b}} \\cdot {{k}}} = \\frac{{{= a*k}}}{{{= b*k}}}$"
+      },
+      {
+        "kind": "mistake",
+        "body": "Nur den Zähler mit {{k}} malzunehmen wäre falsch — dann hätte sich der Wert des Bruchs ver-{{k}}-facht."
+      },
+      {
+        "kind": "answer",
+        "body": "$\\frac{{{= a*k}}}{{{= b*k}}}$"
+      }
+    ],
+    "tags": [
+      "bruch",
+      "erweitern",
+      "drill"
+    ],
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "a": {
+          "type": "int",
+          "min": 1,
+          "max": 9
+        },
+        "b": {
+          "type": "int",
+          "min": 2,
+          "max": 12
+        },
+        "k": {
+          "type": "int",
+          "min": 2,
+          "max": 9
+        }
+      },
+      "constraints": [
+        "gcd(a, b) == 1",
+        "a < b"
+      ]
+    },
+    "source": "Verallgemeinert nach Prüfungshefte 2027, 1.1 Aufgabe 2"
+  },
+  {
+    "id": "MATH_FRAC_DIV_ALS_BRUCH_T1",
+    "subject": "MATH",
+    "topicId": "MATH_NUM_FRAC_BASIC",
+    "difficulty": 2,
+    "qtype": "SHORT",
+    "prompt": "Schreibe {{= a*k}} : {{= b*k}} als Bruch und kürze so weit wie möglich.",
+    "payload": {
+      "answer_type": "fraction",
+      "require_reduced": true
+    },
+    "solution": {
+      "value": "{{a}}/{{b}}"
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "body": "Der Bruchstrich ist ein Geteiltzeichen: $x : y = \\frac{x}{y}$."
+      },
+      {
+        "kind": "steps",
+        "body": "1. Als Bruch schreiben: ${{= a*k}} : {{= b*k}} = \\frac{{{= a*k}}}{{{= b*k}}}$\n2. Gemeinsamen Teiler finden: {{k}}\n3. Kürzen: $\\frac{{{= a*k}} : {{k}}}{{{= b*k}} : {{k}}} = \\frac{{{a}}}{{{b}}}$"
+      },
+      {
+        "kind": "answer",
+        "body": "$\\frac{{{a}}}{{{b}}}$"
+      }
+    ],
+    "tags": [
+      "bruch",
+      "kuerzen",
+      "drill"
+    ],
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "a": {
+          "type": "int",
+          "min": 1,
+          "max": 9
+        },
+        "b": {
+          "type": "int",
+          "min": 2,
+          "max": 9
+        },
+        "k": {
+          "type": "int",
+          "min": 2,
+          "max": 8
+        }
+      },
+      "constraints": [
+        "gcd(a, b) == 1",
+        "a != b"
+      ]
+    },
+    "source": "Verallgemeinert nach Prüfungshefte 2027, 1.1 Aufgabe 1 (18 : 12)"
+  },
+  {
+    "id": "MATH_FRAC_KEHRWERT_T1",
+    "subject": "MATH",
+    "topicId": "MATH_NUM_FRAC_BASIC",
+    "difficulty": 1,
+    "qtype": "SHORT",
+    "prompt": "Gib den Kehrwert von $\\frac{{{a}}}{{{b}}}$ an.",
+    "payload": {
+      "answer_type": "fraction",
+      "exact": true
+    },
+    "solution": {
+      "value": "{{b}}/{{a}}"
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "body": "Den **Kehrwert** bekommst du, indem du Zähler und Nenner vertauschst."
+      },
+      {
+        "kind": "steps",
+        "body": "$\\frac{{{a}}}{{{b}}} \\rightarrow \\frac{{{b}}}{{{a}}}$\n\nProbe: Bruch mal Kehrwert ist immer 1: $\\frac{{{a}}}{{{b}}} \\cdot \\frac{{{b}}}{{{a}}} = 1$"
+      },
+      {
+        "kind": "remember",
+        "body": "Den Kehrwert brauchst du beim **Dividieren** von Brüchen: geteilt durch einen Bruch = mal seinem Kehrwert."
+      },
+      {
+        "kind": "answer",
+        "body": "$\\frac{{{b}}}{{{a}}}$"
+      }
+    ],
+    "tags": [
+      "bruch",
+      "kehrwert",
+      "drill"
+    ],
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "a": {
+          "type": "int",
+          "min": 1,
+          "max": 12
+        },
+        "b": {
+          "type": "int",
+          "min": 2,
+          "max": 12
+        }
+      },
+      "constraints": [
+        "gcd(a, b) == 1",
+        "a != b"
+      ]
+    }
+  },
+  {
+    "id": "MATH_FRAC_ADD_GLEICH_T1",
+    "subject": "MATH",
+    "topicId": "MATH_NUM_FRAC_OPS",
+    "difficulty": 1,
+    "qtype": "SHORT",
+    "prompt": "Berechne und kürze das Ergebnis so weit wie möglich: $\\frac{{{a}}}{{{c}}} + \\frac{{{b}}}{{{c}}}$",
+    "payload": {
+      "answer_type": "fraction",
+      "require_reduced": true
+    },
+    "solution": {
+      "value": "{{= (a+b)/c | frac}}"
+    },
+    "explanation": [
+      {
+        "kind": "formula",
+        "body": "Gleicher Nenner: $\\frac{a}{c} + \\frac{b}{c} = \\frac{a + b}{c}$ — nur die Zähler addieren, der Nenner bleibt."
+      },
+      {
+        "kind": "steps",
+        "body": "$\\frac{{{a}}}{{{c}}} + \\frac{{{b}}}{{{c}}} = \\frac{{{a}} + {{b}}}{{{c}}} = \\frac{{{= a+b}}}{{{c}}}$\n\nGekürzt: $\\frac{{{= a+b}}}{{{c}}} = {{= (a+b)/c | fractex}}$"
+      },
+      {
+        "kind": "mistake",
+        "body": "Nicht die Nenner addieren! $\\frac{1}{4} + \\frac{1}{4}$ ist $\\frac{2}{4} = \\frac{1}{2}$, nicht $\\frac{2}{8}$."
+      },
+      {
+        "kind": "answer",
+        "body": "${{= (a+b)/c | fractex}}$"
+      }
+    ],
+    "tags": [
+      "bruch",
+      "addition",
+      "drill"
+    ],
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "a": {
+          "type": "int",
+          "min": 1,
+          "max": 9
+        },
+        "b": {
+          "type": "int",
+          "min": 1,
+          "max": 9
+        },
+        "c": {
+          "type": "int",
+          "min": 3,
+          "max": 12
+        }
+      },
+      "constraints": [
+        "a + b != c"
+      ]
+    }
+  },
+  {
+    "id": "MATH_FRAC_ADD_UNGLEICH_T1",
+    "subject": "MATH",
+    "topicId": "MATH_NUM_FRAC_OPS",
+    "difficulty": 2,
+    "qtype": "SHORT",
+    "prompt": "Berechne und kürze das Ergebnis so weit wie möglich: $\\frac{{{a}}}{{{b}}} + \\frac{{{c}}}{{{d}}}$",
+    "payload": {
+      "answer_type": "fraction",
+      "require_reduced": true
+    },
+    "solution": {
+      "value": "{{= num/den | frac}}"
+    },
+    "explanation": [
+      {
+        "kind": "formula",
+        "body": "Ungleiche Nenner → erst auf einen gemeinsamen Nenner erweitern, dann Zähler addieren."
+      },
+      {
+        "kind": "steps",
+        "body": "1. Hauptnenner: kgV von {{b}} und {{d}} ist **{{den}}**.\n2. Erweitern: $\\frac{{{a}}}{{{b}}} = \\frac{{{= a*den/b}}}{{{den}}}$ und $\\frac{{{c}}}{{{d}}} = \\frac{{{= c*den/d}}}{{{den}}}$\n3. Addieren: $\\frac{{{= a*den/b}} + {{= c*den/d}}}{{{den}}} = \\frac{{{num}}}{{{den}}}$\n4. Kürzen: ${{= num/den | fractex}}$"
+      },
+      {
+        "kind": "answer",
+        "body": "${{= num/den | fractex}}$"
+      }
+    ],
+    "tags": [
+      "bruch",
+      "addition",
+      "hauptnenner",
+      "drill"
+    ],
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "a": {
+          "type": "int",
+          "min": 1,
+          "max": 7
+        },
+        "b": {
+          "type": "int",
+          "min": 2,
+          "max": 9
+        },
+        "c": {
+          "type": "int",
+          "min": 1,
+          "max": 7
+        },
+        "d": {
+          "type": "int",
+          "min": 2,
+          "max": 9
+        }
+      },
+      "derived": {
+        "den": "lcm(b, d)",
+        "num": "a * lcm(b, d) / b + c * lcm(b, d) / d"
+      },
+      "constraints": [
+        "b != d",
+        "gcd(a, b) == 1",
+        "gcd(c, d) == 1"
+      ]
+    },
+    "source": "Verallgemeinert nach Prüfungshefte 2027, 1.1 Aufgabe 4a"
+  },
+  {
+    "id": "MATH_FRAC_SUB_UNGLEICH_T1",
+    "subject": "MATH",
+    "topicId": "MATH_NUM_FRAC_OPS",
+    "difficulty": 2,
+    "qtype": "SHORT",
+    "prompt": "Berechne und kürze das Ergebnis so weit wie möglich: $\\frac{{{a}}}{{{b}}} - \\frac{{{c}}}{{{d}}}$",
+    "payload": {
+      "answer_type": "fraction",
+      "require_reduced": true
+    },
+    "solution": {
+      "value": "{{= num/den | frac}}"
+    },
+    "explanation": [
+      {
+        "kind": "formula",
+        "body": "Ungleiche Nenner → erst auf einen gemeinsamen Nenner erweitern, dann Zähler subtrahieren."
+      },
+      {
+        "kind": "steps",
+        "body": "1. Hauptnenner: kgV von {{b}} und {{d}} ist **{{den}}**.\n2. Erweitern: $\\frac{{{a}}}{{{b}}} = \\frac{{{= a*den/b}}}{{{den}}}$ und $\\frac{{{c}}}{{{d}}} = \\frac{{{= c*den/d}}}{{{den}}}$\n3. Subtrahieren: $\\frac{{{= a*den/b}} - {{= c*den/d}}}{{{den}}} = \\frac{{{num}}}{{{den}}}$\n4. Kürzen: ${{= num/den | fractex}}$"
+      },
+      {
+        "kind": "answer",
+        "body": "${{= num/den | fractex}}$"
+      }
+    ],
+    "tags": [
+      "bruch",
+      "subtraktion",
+      "hauptnenner",
+      "drill"
+    ],
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "a": {
+          "type": "int",
+          "min": 1,
+          "max": 8
+        },
+        "b": {
+          "type": "int",
+          "min": 2,
+          "max": 9
+        },
+        "c": {
+          "type": "int",
+          "min": 1,
+          "max": 8
+        },
+        "d": {
+          "type": "int",
+          "min": 2,
+          "max": 9
+        }
+      },
+      "derived": {
+        "den": "lcm(b, d)",
+        "num": "a * lcm(b, d) / b - c * lcm(b, d) / d"
+      },
+      "constraints": [
+        "b != d",
+        "gcd(a, b) == 1",
+        "gcd(c, d) == 1",
+        "num > 0"
+      ]
+    },
+    "source": "Verallgemeinert nach Prüfungshefte 2027, 1.1 Aufgabe 4b"
+  },
+  {
+    "id": "MATH_FRAC_MUL_T1",
+    "subject": "MATH",
+    "topicId": "MATH_NUM_FRAC_OPS",
+    "difficulty": 2,
+    "qtype": "SHORT",
+    "prompt": "Berechne und kürze das Ergebnis so weit wie möglich: $\\frac{{{a}}}{{{b}}} \\cdot \\frac{{{c}}}{{{d}}}$",
+    "payload": {
+      "answer_type": "fraction",
+      "require_reduced": true
+    },
+    "solution": {
+      "value": "{{= a*c/(b*d) | frac}}"
+    },
+    "explanation": [
+      {
+        "kind": "formula",
+        "body": "Zähler mal Zähler, Nenner mal Nenner: $\\frac{a}{b} \\cdot \\frac{c}{d} = \\frac{a \\cdot c}{b \\cdot d}$"
+      },
+      {
+        "kind": "steps",
+        "body": "$\\frac{{{a}}}{{{b}}} \\cdot \\frac{{{c}}}{{{d}}} = \\frac{{{a}} \\cdot {{c}}}{{{b}} \\cdot {{d}}} = \\frac{{{= a*c}}}{{{= b*d}}}$\n\nGekürzt: ${{= a*c/(b*d) | fractex}}$"
+      },
+      {
+        "kind": "remember",
+        "body": "Beim Malnehmen braucht man **keinen** gemeinsamen Nenner. Tipp: vor dem Multiplizieren über Kreuz kürzen spart Arbeit."
+      },
+      {
+        "kind": "answer",
+        "body": "${{= a*c/(b*d) | fractex}}$"
+      }
+    ],
+    "tags": [
+      "bruch",
+      "multiplikation",
+      "drill"
+    ],
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "a": {
+          "type": "int",
+          "min": 1,
+          "max": 7
+        },
+        "b": {
+          "type": "int",
+          "min": 2,
+          "max": 9
+        },
+        "c": {
+          "type": "int",
+          "min": 1,
+          "max": 7
+        },
+        "d": {
+          "type": "int",
+          "min": 2,
+          "max": 9
+        }
+      },
+      "constraints": [
+        "gcd(a, b) == 1",
+        "gcd(c, d) == 1"
+      ]
+    },
+    "source": "Verallgemeinert nach Prüfungshefte 2027, 1.1 Aufgabe 4c"
+  },
+  {
+    "id": "MATH_FRAC_DIV_T1",
+    "subject": "MATH",
+    "topicId": "MATH_NUM_FRAC_OPS",
+    "difficulty": 2,
+    "qtype": "SHORT",
+    "prompt": "Berechne und kürze das Ergebnis so weit wie möglich: $\\frac{{{a}}}{{{b}}} : \\frac{{{c}}}{{{d}}}$",
+    "payload": {
+      "answer_type": "fraction",
+      "require_reduced": true
+    },
+    "solution": {
+      "value": "{{= a*d/(b*c) | frac}}"
+    },
+    "explanation": [
+      {
+        "kind": "formula",
+        "body": "Geteilt durch einen Bruch = **mal dem Kehrwert**: $\\frac{a}{b} : \\frac{c}{d} = \\frac{a}{b} \\cdot \\frac{d}{c}$"
+      },
+      {
+        "kind": "steps",
+        "body": "1. Kehrwert des zweiten Bruchs: $\\frac{{{c}}}{{{d}}} \\rightarrow \\frac{{{d}}}{{{c}}}$\n2. Multiplizieren: $\\frac{{{a}}}{{{b}}} \\cdot \\frac{{{d}}}{{{c}}} = \\frac{{{a}} \\cdot {{d}}}{{{b}} \\cdot {{c}}} = \\frac{{{= a*d}}}{{{= b*c}}}$\n3. Kürzen: ${{= a*d/(b*c) | fractex}}$"
+      },
+      {
+        "kind": "mistake",
+        "body": "Der Kehrwert gehört zum **zweiten** Bruch (dem, durch den geteilt wird) — nicht zum ersten."
+      },
+      {
+        "kind": "answer",
+        "body": "${{= a*d/(b*c) | fractex}}$"
+      }
+    ],
+    "tags": [
+      "bruch",
+      "division",
+      "kehrwert",
+      "drill"
+    ],
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "a": {
+          "type": "int",
+          "min": 1,
+          "max": 7
+        },
+        "b": {
+          "type": "int",
+          "min": 2,
+          "max": 9
+        },
+        "c": {
+          "type": "int",
+          "min": 1,
+          "max": 7
+        },
+        "d": {
+          "type": "int",
+          "min": 2,
+          "max": 9
+        }
+      },
+      "constraints": [
+        "gcd(a, b) == 1",
+        "gcd(c, d) == 1",
+        "a*d != b*c"
+      ]
+    },
+    "source": "Verallgemeinert nach Prüfungshefte 2027, 1.1 Aufgabe 4d"
+  },
+  {
+    "id": "MATH_FRAC_ANTEIL_T1",
+    "subject": "MATH",
+    "topicId": "MATH_NUM_FRAC_OPS",
+    "difficulty": 2,
+    "qtype": "SHORT",
+    "prompt": "Ein Kuchen wird in {{n}} gleich große Stücke geteilt. {{name}} isst $\\frac{{{a}}}{{{b}}}$ des Kuchens. Wie viele Stücke hat {{name}} gegessen?",
+    "payload": {
+      "answer_type": "number",
+      "unit": "Stücke"
+    },
+    "solution": {
+      "kind": "computed",
+      "expr": "n * a / b"
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "body": "„$\\frac{{{a}}}{{{b}}}$ von {{n}}“ heißt rechnen: ${{n}} \\cdot \\frac{{{a}}}{{{b}}}$."
+      },
+      {
+        "kind": "steps",
+        "body": "1. Ein {{b}}-tel des Kuchens: ${{n}} : {{b}} = {{= n/b}}$ Stücke\n2. Davon {{a}}-mal: ${{= n/b}} \\cdot {{a}} = {{= n*a/b}}$ Stücke"
+      },
+      {
+        "kind": "remember",
+        "body": "**„von“ heißt „mal“**: Bruch von Menge = Menge · Bruch."
+      },
+      {
+        "kind": "answer",
+        "body": "{{name}} hat **{{= n*a/b}} Stücke** gegessen."
+      }
+    ],
+    "tags": [
+      "bruch",
+      "anteil",
+      "sachaufgabe",
+      "drill"
+    ],
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "n": {
+          "type": "choice",
+          "values": [
+            8,
+            12,
+            16,
+            20,
+            24,
+            30,
+            36
+          ]
+        },
+        "a": {
+          "type": "int",
+          "min": 1,
+          "max": 5
+        },
+        "b": {
+          "type": "choice",
+          "values": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            8
+          ]
+        },
+        "name": {
+          "type": "choice",
+          "values": [
+            "Lea",
+            "Tom",
+            "Ayşe",
+            "Ben",
+            "Mila",
+            "Noah",
+            "Elif",
+            "Jonas"
+          ]
+        }
+      },
+      "constraints": [
+        "a < b",
+        "gcd(a, b) == 1",
+        "isint(n / b)"
+      ]
+    },
+    "source": "Verallgemeinert nach Prüfungshefte 2027, 1.1 Aufgabe 5 (Kuchen)"
+  },
+  {
+    "id": "MATH_FRAC_ZU_DEZ_T1",
+    "subject": "MATH",
+    "topicId": "MATH_NUM_DEC_CONV",
+    "difficulty": 1,
+    "qtype": "SHORT",
+    "prompt": "Schreibe $\\frac{{{a}}}{{{b}}}$ als Dezimalzahl.",
+    "payload": {
+      "answer_type": "number"
+    },
+    "solution": {
+      "kind": "computed",
+      "expr": "a / b",
+      "round": 4
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "body": "Bruchstrich = geteilt. Also einfach Zähler durch Nenner teilen."
+      },
+      {
+        "kind": "steps",
+        "body": "Trick: auf Nenner 10, 100 oder 1000 erweitern.\n\n$\\frac{{{a}}}{{{b}}} = \\frac{{{= a*(100/b) | raw}} }{100} = {{= a/b}}$\n\nOder direkt: ${{a}} : {{b}} = {{= a/b}}$"
+      },
+      {
+        "kind": "answer",
+        "body": "{{= a/b}}"
+      }
+    ],
+    "tags": [
+      "bruch",
+      "dezimalzahl",
+      "umwandeln",
+      "drill"
+    ],
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "a": {
+          "type": "int",
+          "min": 1,
+          "max": 9
+        },
+        "b": {
+          "type": "choice",
+          "values": [
+            2,
+            4,
+            5,
+            10,
+            20,
+            25,
+            50
+          ]
+        }
+      },
+      "constraints": [
+        "gcd(a, b) == 1",
+        "a < b"
+      ]
+    }
+  },
+  {
+    "id": "MATH_DEZ_ZU_FRAC_T1",
+    "subject": "MATH",
+    "topicId": "MATH_NUM_DEC_CONV",
+    "difficulty": 2,
+    "qtype": "SHORT",
+    "prompt": "Schreibe {{= a/b}} als vollständig gekürzten Bruch.",
+    "payload": {
+      "answer_type": "fraction",
+      "require_reduced": true
+    },
+    "solution": {
+      "value": "{{a}}/{{b}}"
+    },
+    "explanation": [
+      {
+        "kind": "steps",
+        "body": "1. Als Bruch mit Nenner 100 schreiben: ${{= a/b}} = \\frac{{{= a/b*100 | raw}}}{100}$\n2. Kürzen, so weit es geht: $\\frac{{{a}}}{{{b}}}$"
+      },
+      {
+        "kind": "remember",
+        "body": "Zwei Nachkommastellen → Nenner 100, eine → Nenner 10. Dann kürzen."
+      },
+      {
+        "kind": "answer",
+        "body": "$\\frac{{{a}}}{{{b}}}$"
+      }
+    ],
+    "tags": [
+      "bruch",
+      "dezimalzahl",
+      "umwandeln",
+      "drill"
+    ],
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "a": {
+          "type": "int",
+          "min": 1,
+          "max": 9
+        },
+        "b": {
+          "type": "choice",
+          "values": [
+            2,
+            4,
+            5,
+            10,
+            20,
+            25,
+            50
+          ]
+        }
+      },
+      "constraints": [
+        "gcd(a, b) == 1",
+        "a < b"
+      ]
+    }
+  },
+  {
+    "id": "MATH_FRAC_VERGLEICH_T1",
+    "subject": "MATH",
+    "topicId": "MATH_NUM_FRAC_BASIC",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Welcher Bruch ist größer: $\\frac{{{a}}}{{{b}}}$ oder $\\frac{{{c}}}{{{d}}}$?",
+    "payload": {
+      "choices": [
+        "$\\frac{{{a}}}{{{b}}}$",
+        "$\\frac{{{c}}}{{{d}}}$",
+        "Beide sind gleich groß.",
+        "Das kann man nicht vergleichen."
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "$\\frac{{{a}}}{{{b}}}$"
+    },
+    "explanation": [
+      {
+        "kind": "steps",
+        "body": "Auf den gemeinsamen Nenner {{= b*d}} bringen:\n\n$\\frac{{{a}}}{{{b}}} = \\frac{{{= a*d}}}{{{= b*d}}}$ und $\\frac{{{c}}}{{{d}}} = \\frac{{{= c*b}}}{{{= b*d}}}$\n\nGleicher Nenner → der größere Zähler gewinnt: ${{= a*d}} > {{= c*b}}$"
+      },
+      {
+        "kind": "remember",
+        "body": "Brüche vergleicht man nur bei **gleichem Nenner** (oder als Dezimalzahl: {{= a/b | fixed:2}} gegen {{= c/d | fixed:2}})."
+      },
+      {
+        "kind": "answer",
+        "body": "$\\frac{{{a}}}{{{b}}}$ ist größer."
+      }
+    ],
+    "tags": [
+      "bruch",
+      "vergleichen",
+      "drill"
+    ],
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "a": {
+          "type": "int",
+          "min": 1,
+          "max": 8
+        },
+        "b": {
+          "type": "int",
+          "min": 2,
+          "max": 9
+        },
+        "c": {
+          "type": "int",
+          "min": 1,
+          "max": 8
+        },
+        "d": {
+          "type": "int",
+          "min": 2,
+          "max": 9
+        }
+      },
+      "constraints": [
+        "gcd(a, b) == 1",
+        "gcd(c, d) == 1",
+        "a < b",
+        "c < d",
+        "b != d",
+        "a * d > c * b"
+      ]
+    }
+  },
+  {
+    "id": "MATH_FRAC_GEMISCHT_T1",
+    "subject": "MATH",
+    "topicId": "MATH_NUM_FRAC_BASIC",
+    "difficulty": 2,
+    "qtype": "SHORT",
+    "prompt": "Schreibe die gemischte Zahl ${{w}}\\,\\frac{{{a}}}{{{b}}}$ als unechten Bruch.",
+    "payload": {
+      "answer_type": "fraction",
+      "exact": true
+    },
+    "solution": {
+      "value": "{{= w*b+a}}/{{b}}"
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "body": "${{w}}\\,\\frac{{{a}}}{{{b}}}$ bedeutet ${{w}} + \\frac{{{a}}}{{{b}}}$: {{w}} Ganze und noch {{a}} {{b}}-tel."
+      },
+      {
+        "kind": "steps",
+        "body": "1. Ganze in {{b}}-tel umrechnen: ${{w}} = \\frac{{{w}} \\cdot {{b}}}{{{b}}} = \\frac{{{= w*b}}}{{{b}}}$\n2. Dazuzählen: $\\frac{{{= w*b}}}{{{b}}} + \\frac{{{a}}}{{{b}}} = \\frac{{{= w*b+a}}}{{{b}}}$"
+      },
+      {
+        "kind": "remember",
+        "body": "Ganze **mal** Nenner **plus** Zähler — der Nenner bleibt."
+      },
+      {
+        "kind": "answer",
+        "body": "$\\frac{{{= w*b+a}}}{{{b}}}$"
+      }
+    ],
+    "tags": [
+      "bruch",
+      "gemischte-zahl",
+      "drill"
+    ],
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "w": {
+          "type": "int",
+          "min": 1,
+          "max": 5
+        },
+        "a": {
+          "type": "int",
+          "min": 1,
+          "max": 7
+        },
+        "b": {
+          "type": "int",
+          "min": 2,
+          "max": 8
+        }
+      },
+      "constraints": [
+        "a < b",
+        "gcd(a, b) == 1"
+      ]
+    }
+  },
+  {
+    "id": "MATH_FRAC_DEFMENGE_T1",
+    "subject": "MATH",
+    "topicId": "MATH_NUM_FRAC_BASIC",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "Für welchen Wert von $x$ ist der Bruch $\\frac{{{k}}}{x - {{a}}}$ **nicht** definiert?",
+    "payload": {
+      "choices": [
+        "$x = {{a}}$",
+        "$x = -{{a}}$",
+        "$x = 0$",
+        "$x = {{k}}$"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "$x = {{a}}$"
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "body": "Ein Bruch ist nicht definiert, wenn der **Nenner 0** wird. Durch 0 kann man nicht teilen."
+      },
+      {
+        "kind": "steps",
+        "body": "Nenner gleich 0 setzen: $x - {{a}} = 0 \\Rightarrow x = {{a}}$\n\nDefinitionsmenge: $D = \\mathbb{R} \\setminus \\{{{a}}\\}$"
+      },
+      {
+        "kind": "mistake",
+        "body": "Der Zähler darf 0 sein — $\\frac{0}{5} = 0$ ist völlig in Ordnung. Nur der Nenner ist das Problem."
+      },
+      {
+        "kind": "answer",
+        "body": "$x = {{a}}$"
+      }
+    ],
+    "tags": [
+      "bruch",
+      "definitionsmenge",
+      "drill"
+    ],
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "a": {
+          "type": "int",
+          "min": 1,
+          "max": 9
+        },
+        "k": {
+          "type": "int",
+          "min": 2,
+          "max": 9
+        }
+      },
+      "constraints": [
+        "a != k"
+      ]
+    }
+  },
+  {
+    "id": "MATH_FRAC_BRUCHGLEICHUNG_T1",
+    "subject": "MATH",
+    "topicId": "MATH_NUM_FRAC_OPS",
+    "difficulty": 4,
+    "qtype": "SHORT",
+    "prompt": "Löse die Bruchgleichung: $\\frac{{{k}}}{x} - {{m}} = \\frac{{{n}}}{x}$",
+    "payload": {
+      "answer_type": "number"
+    },
+    "solution": {
+      "kind": "computed",
+      "expr": "(k - n) / m"
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "body": "Definitionsmenge zuerst: $x$ steht im Nenner, also $x \\neq 0$, $D = \\mathbb{R} \\setminus \\{0\\}$."
+      },
+      {
+        "kind": "steps",
+        "body": "1. Brüche auf eine Seite: $\\frac{{{k}}}{x} - \\frac{{{n}}}{x} = {{m}}$\n2. Gleicher Nenner, Zähler zusammenfassen: $\\frac{{{= k-n}}}{x} = {{m}}$\n3. Mit $x$ multiplizieren: ${{= k-n}} = {{m}}x$\n4. Durch {{m}} teilen: $x = {{= (k-n)/m}}$\n5. Probe: ${{= (k-n)/m}} \\in D$ ✓, also $L = \\{{{= (k-n)/m}}\\}$"
+      },
+      {
+        "kind": "mistake",
+        "body": "Nach dem Lösen immer prüfen, ob die Lösung in der Definitionsmenge liegt. Käme $x = 0$ heraus, wäre die Lösungsmenge leer."
+      },
+      {
+        "kind": "answer",
+        "body": "$x = {{= (k-n)/m}}$"
+      }
+    ],
+    "tags": [
+      "bruch",
+      "bruchgleichung",
+      "drill"
+    ],
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "k": {
+          "type": "int",
+          "min": 6,
+          "max": 30
+        },
+        "n": {
+          "type": "int",
+          "min": 1,
+          "max": 12
+        },
+        "m": {
+          "type": "int",
+          "min": 2,
+          "max": 6
+        }
+      },
+      "constraints": [
+        "k > n",
+        "isint((k - n) / m)",
+        "(k - n) / m != 1"
+      ]
+    },
+    "source": "Verallgemeinert nach Prüfungshefte 2027, 1.1 Aufgabe 6a"
+  }
+]

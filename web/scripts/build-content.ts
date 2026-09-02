@@ -11,7 +11,7 @@ import katex from "katex";
 import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join, resolve } from "node:path";
 import { evaluate } from "../src/core/evaluators";
-import { parseFraction } from "../src/core/normalizers";
+import { parseFraction, reduceFraction } from "../src/core/normalizers";
 import type { ClozePayload, ContentPack, ContentSection, Lesson, MatchPayload, McqPayload, Question, ShortPayload, Topic } from "../src/core/types";
 import { hasPlaceholder, parseExplanation, renderPreview } from "../src/core/variants";
 
@@ -95,11 +95,18 @@ const MATH_INLINE = /\$\$([\s\S]+?)\$\$|\$([^$\n]+?)\$/g;
 function checkTex(where: string, text: string) {
   for (const m of text.matchAll(MATH_INLINE)) {
     const tex = (m[1] ?? m[2] ?? "").replace(/(\d),(\d)/g, "$1{,}$2");
+    // KaTeX reports missing glyphs (€, ‰ …) via console.warn — surface them per item instead.
+    const warnings: string[] = [];
+    const origWarn = console.warn;
+    console.warn = (...args: unknown[]) => warnings.push(args.map(String).join(" "));
     try {
       katex.renderToString(tex, { throwOnError: true, strict: "ignore" });
     } catch (e) {
       error(where, `invalid KaTeX "${tex}": ${(e as Error).message.split("\n")[0]}`);
+    } finally {
+      console.warn = origWarn;
     }
+    for (const w of warnings) warn(where, `KaTeX: ${w} in "${tex}" — move the symbol outside $…$`);
   }
 }
 
@@ -195,8 +202,16 @@ for (const q of questions) {
     if (r.qtype === "SHORT") {
       const v = (r.solution as { value: unknown }).value;
       if (typeof v === "number" && !Number.isFinite(v)) error(where, `render #${i}: non-finite solution`);
-      // The rendered correct answer must be accepted by the evaluator.
-      const answerText = typeof v === "number" ? String(v).replace(".", ",") : String(v);
+      // The rendered correct answer must be accepted by the evaluator (fractions in reduced form).
+      const shortPayload = r.payload as ShortPayload;
+      let answerText = typeof v === "number" ? String(v).replace(".", ",") : String(v);
+      if (shortPayload.answer_type === "fraction" && !shortPayload.exact) {
+        const f = parseFraction(String(v));
+        if (f) {
+          const red = reduceFraction(f);
+          answerText = red.den === 1 ? String(red.num) : `${red.num}/${red.den}`;
+        }
+      }
       const ev = evaluate(r, answerText);
       if (!ev.isCorrect) error(where, `render #${i}: evaluator rejects its own solution "${answerText}" (${ev.hint ?? ""}) vars=${JSON.stringify(r.vars)}`);
     }
@@ -213,18 +228,20 @@ for (const q of questions) {
   if (templated && prompts.size < 5) warn(where, `template only produced ${prompts.size} distinct prompts in ${n} renders`);
 }
 
+const lessonTopics = new Set(lessons.map((l) => l.topicId));
 for (const l of lessons) {
   const where = `lesson ${l.id}`;
   const topic = topicById.get(l.topicId);
   if (!topic) error(where, `unknown topicId ${l.topicId}`);
   else if (topic.subject !== l.subject) error(where, `subject mismatch`);
+  for (const tid of l.alsoFor ?? []) if (!topicById.has(tid)) error(where, `unknown alsoFor topic ${tid}`);
+  for (const tid of l.alsoFor ?? []) lessonTopics.add(tid);
   if (l.intro) checkTex(where, l.intro);
   checkSections(where, l.sections);
 }
 
 // Coverage warnings
 const parents = new Set(topics.map((t) => t.parentId).filter(Boolean));
-const lessonTopics = new Set(lessons.map((l) => l.topicId));
 for (const t of topics) {
   if (parents.has(t.id)) continue;
   const n = counts.get(t.id) ?? 0;

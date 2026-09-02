@@ -1,0 +1,48 @@
+[
+  {
+    "id": "L_MATH_NUM_PCT",
+    "subject": "MATH",
+    "topicId": "MATH_NUM_PCT_BASIC",
+    "alsoFor": ["MATH_NUM_PCT_CHANGE", "MATH_NUM_INTEREST"],
+    "title": "Prozent- und Zinsrechnung",
+    "intro": "Prozente tauchen in der Prüfung überall auf: Rabatte, Zinsen, Anteile, Wahrscheinlichkeiten. Die gute Nachricht: Es gibt nur **eine** Grundformel — und drei Wege, sie zu benutzen.",
+    "source": "Adaptiert nach Prüfungshefte MSA Mathe Berlin 2027, Kap. 1.2 und Formelblatt",
+    "sections": [
+      {
+        "kind": "what",
+        "title": "Was ist ein Prozent?",
+        "body": "Ein **Prozent** ist ein Hundertstel: $1\\,\\% = \\frac{1}{100} = 0{,}01$. Also: $67\\,\\% = \\frac{67}{100} = 0{,}67$.\n\nEin **Promille** ist ein Tausendstel: 1 ‰ $= \\frac{1}{1000} = 0{,}001$. Also: 431 ‰ = 0,431."
+      },
+      {
+        "kind": "terms",
+        "title": "Die drei Größen",
+        "body": "- **Grundwert $G$** — das Ganze (100 %). *Die Klasse hat 24 Schüler.*\n- **Prozentwert $W$** — der Teil, um den es geht. *6 davon sind Mädchen.*\n- **Prozentsatz $p\\,\\%$** — der Anteil des Teils am Ganzen. *Das sind 25 %.*\n\nMerkhilfe: **G**anzes, **W**as davon, **p**rozent."
+      },
+      {
+        "kind": "formula",
+        "title": "Die Grundformel — und ihre drei Gesichter",
+        "body": "$$\\frac{W}{G} = \\frac{p}{100}$$\n\n**Prozentwert gesucht:** $W = G \\cdot \\frac{p}{100}$\n\n**Prozentsatz gesucht:** $p = \\frac{W}{G} \\cdot 100$\n\n**Grundwert gesucht:** $G = \\frac{W}{p} \\cdot 100 = W : \\frac{p}{100}$"
+      },
+      {
+        "kind": "example",
+        "title": "Beispiele",
+        "body": "**Prozentsatz:** 24 Schüler, 6 Mädchen. $p = \\frac{6}{24} \\cdot 100 = 25\\,\\%$\n\n**Prozentwert:** 60 % von 62 kg. $W = 62 \\cdot 0{,}6 = 37{,}2$ kg\n\n**Grundwert:** 30 % Rabatt sparen 84 €. $G = 84 : 0{,}3 = 280$ €"
+      },
+      {
+        "kind": "steps",
+        "title": "Prozentuale Änderung (Rabatt, Erhöhung, Zinsen)",
+        "body": "Ein Anfangswert (100 %) wird um $p\\,\\%$ **erhöht** oder **vermindert**:\n\n$$\\text{Endwert} = \\text{Anfangswert} \\cdot \\left(1 \\pm \\frac{p}{100}\\right)$$\n\n- Pizza 9 € mit 15 % Rabatt: $9 \\cdot (1 - 0{,}15) = 9 \\cdot 0{,}85 = 7{,}65$ €\n- 107 700 Autos, 21 % mehr: $107\\,700 \\cdot 1{,}21 = 130\\,317$\n\n**Zinseszins** — jedes Jahr wird der Faktor erneut angewendet:\n\n$$K_n = K_0 \\cdot \\left(1 + \\frac{p}{100}\\right)^n$$\n\n1000 € zu 5 % für 3 Jahre: $1000 \\cdot 1{,}05^3 \\approx 1157{,}63$ €"
+      },
+      {
+        "kind": "mistake",
+        "title": "Typische Fehler",
+        "body": "- **„um“ und „auf“ verwechseln:** *um 20 % erhöht* → Faktor 1,2. *auf 20 % gesenkt* → Faktor 0,2!\n- Beim **Grundwert** nicht den Prozentwert mit dem Prozentsatz multiplizieren, sondern **dividieren**: $G = W : \\frac{p}{100}$.\n- Erst +20 %, dann −20 % ergibt **nicht** den Ausgangswert: $1{,}2 \\cdot 0{,}8 = 0{,}96$ — es fehlen 4 %.\n- Prozentsatz immer auf den **Grundwert** beziehen, nie auf den Prozentwert."
+      },
+      {
+        "kind": "remember",
+        "title": "Merke",
+        "body": "**Prozent = Hundertstel.** Eine Formel: $\\frac{W}{G} = \\frac{p}{100}$. Änderungen rechnest du mit dem **Faktor** $1 \\pm \\frac{p}{100}$; bei Zinseszins kommt der Faktor **hoch n**."
+      }
+    ]
+  }
+]

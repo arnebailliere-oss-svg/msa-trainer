@@ -57,6 +57,7 @@ describe("renderTemplate", () => {
     expect(renderTemplate("{{= 2.5 | int}}", vars)).toBe("3");
     expect(renderTemplate("{{= 1/3 | raw}}", vars)).toBe("0.3333333333333333");
     expect(renderTemplate("no placeholders", vars)).toBe("no placeholders");
+    expect(renderTemplate("$\\frac{{{p}}}{{{g}}}$", vars)).toBe("$\\frac{20}{150}$");
   });
   it("fails loudly on unknown variables or filters", () => {
     expect(() => renderTemplate("{{unknown}}", vars)).toThrow();

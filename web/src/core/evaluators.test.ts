@@ -57,17 +57,42 @@ describe("SHORT fraction", () => {
     expect(r.isCorrect).toBe(false);
     expect(r.hint).toMatch(/gekürzt/);
   });
+  it("exact form: 16/40 required, 2/5 rejected with hint", () => {
+    const q = rq({ payload: { answer_type: "fraction", exact: true }, solution: { value: "16/40" } });
+    expect(evaluate(q, "16/40").isCorrect).toBe(true);
+    const r = evaluate(q, "2/5");
+    expect(r.isCorrect).toBe(false);
+    expect(r.hint).toMatch(/Schreibweise/);
+    expect(r.correctAnswerText).toBe("16/40");
+  });
   it("without require_reduced 6/8 is fine", () => {
     expect(evaluate(rq({ payload: { answer_type: "fraction" }, solution: { value: "3/4" } }), "6/8").isCorrect).toBe(true);
   });
 });
 
 describe("SHORT term / text", () => {
-  it("term ignores spacing and · vs *", () => {
+  it("term accepts any algebraically equivalent form", () => {
     const q = rq({ payload: { answer_type: "term" }, solution: { value: "3x+6" } });
     expect(evaluate(q, "3 x + 6").isCorrect).toBe(true);
     expect(evaluate(q, "3·x+6").isCorrect).toBe(true);
-    expect(evaluate(q, "6+3x").isCorrect).toBe(false);
+    expect(evaluate(q, "6+3x").isCorrect).toBe(true);
+    expect(evaluate(q, "3(x+2)").isCorrect).toBe(true);
+    expect(evaluate(q, "3x+5").isCorrect).toBe(false);
+    expect(evaluate(q, "3x").isCorrect).toBe(false);
+    expect(evaluate(q, "").isCorrect).toBe(false);
+  });
+  it("term handles powers, products of variables and factorised forms", () => {
+    expect(evaluate(rq({ payload: { answer_type: "term" }, solution: { value: "x^2+6x+9" } }), "(x+3)²").isCorrect).toBe(true);
+    expect(evaluate(rq({ payload: { answer_type: "term" }, solution: { value: "x^2-9" } }), "(x+3)(x-3)").isCorrect).toBe(true);
+    expect(evaluate(rq({ payload: { answer_type: "term" }, solution: { value: "3a/5b" } }), "3a/(5b)").isCorrect).toBe(false);
+    expect(evaluate(rq({ payload: { answer_type: "term" }, solution: { value: "2xy" } }), "2yx").isCorrect).toBe(true);
+  });
+  it("term with require_simplified rejects unsimplified equivalents", () => {
+    const q = rq({ payload: { answer_type: "term", require_simplified: true }, solution: { value: "5x" } });
+    expect(evaluate(q, "5x").isCorrect).toBe(true);
+    const r = evaluate(q, "3x+2x");
+    expect(r.isCorrect).toBe(false);
+    expect(r.hint).toMatch(/zusammengefasst/);
   });
   it("text uses normalizations", () => {
     const q = rq({ payload: { answer_type: "text", normalization: ["trim", "lowercase"] }, solution: { value: "Nomen" } });

@@ -11,6 +11,14 @@ const base = process.env.BASE_PATH ?? "/";
 export default defineConfig({
   base,
   resolve: { alias: { "@": fileURLToPath(new URL("./src", import.meta.url)) } },
+  build: {
+    rollupOptions: {
+      output: {
+        // KaTeX is the single largest dependency; keep it in its own long-cached chunk.
+        manualChunks: { katex: ["katex"], react: ["react", "react-dom", "react-router-dom"] },
+      },
+    },
+  },
   plugins: [
     react(),
     tailwindcss(),

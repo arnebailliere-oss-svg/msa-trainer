@@ -67,6 +67,10 @@ export interface ShortPayload {
   tolerance?: number;
   /** For fractions: reject unreduced input like 6/8 for 3/4. */
   require_reduced?: boolean;
+  /** For fractions: numerator and denominator must match exactly (e.g. "erweitere" tasks). */
+  exact?: boolean;
+  /** For terms: an equivalent but longer term (not fully simplified) is rejected with a hint. */
+  require_simplified?: boolean;
   /** Unit label shown after the input, e.g. "cm²". */
   unit?: string;
 }
@@ -135,6 +139,8 @@ export interface Lesson {
   id: string;
   subject: Subject;
   topicId: string;
+  /** Additional topics this lesson also serves as the primary lesson for. */
+  alsoFor?: string[];
   title: string;
   /** Short motivating intro (why this matters for the MSA). */
   intro?: string;

@@ -1,0 +1,969 @@
+[
+  {
+    "id": "MATH_PCT_DEZ_ZU_PROZENT_T1",
+    "subject": "MATH",
+    "topicId": "MATH_NUM_PCT_BASIC",
+    "difficulty": 1,
+    "qtype": "SHORT",
+    "prompt": "Gib {{= n/100}} in Prozent an.",
+    "payload": {
+      "answer_type": "number",
+      "unit": "%"
+    },
+    "solution": {
+      "kind": "computed",
+      "expr": "n"
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "body": "Prozent heißt „von Hundert“. Eine Dezimalzahl wird zu Prozent, indem man sie **mal 100** nimmt — das Komma wandert zwei Stellen nach rechts."
+      },
+      {
+        "kind": "steps",
+        "body": "${{= n/100}} = \\frac{{{n}}}{100} = {{n}}\\,\\%$"
+      },
+      {
+        "kind": "mistake",
+        "body": "Bei Zahlen über 1 gibt es mehr als 100 %: $1{,}74 = 174\\,\\%$. Das ist völlig normal, z. B. bei Preissteigerungen."
+      },
+      {
+        "kind": "answer",
+        "body": "{{n}} %"
+      }
+    ],
+    "tags": [
+      "prozent",
+      "umwandeln",
+      "drill"
+    ],
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "n": {
+          "type": "int",
+          "min": 1,
+          "max": 199
+        }
+      },
+      "constraints": [
+        "mod(n, 100) != 0"
+      ]
+    },
+    "source": "Verallgemeinert nach Prüfungshefte 2027, 1.2 Aufgabe 1a/b"
+  },
+  {
+    "id": "MATH_PCT_BRUCH_ZU_PROZENT_T1",
+    "subject": "MATH",
+    "topicId": "MATH_NUM_PCT_BASIC",
+    "difficulty": 2,
+    "qtype": "SHORT",
+    "prompt": "Gib $\\frac{{{a}}}{{{b}}}$ in Prozent an.",
+    "payload": {
+      "answer_type": "number",
+      "unit": "%"
+    },
+    "solution": {
+      "kind": "computed",
+      "expr": "a / b * 100"
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "body": "Prozent = Hundertstel. Bring den Bruch auf den Nenner 100 — oder teile einfach Zähler durch Nenner und nimm mal 100."
+      },
+      {
+        "kind": "steps",
+        "body": "$\\frac{{{a}}}{{{b}}} = \\frac{{{a}} \\cdot {{= 100/b}}}{{{b}} \\cdot {{= 100/b}}} = \\frac{{{= a*100/b}}}{100} = {{= a*100/b}}\\,\\%$\n\nOder: ${{a}} : {{b}} = {{= a/b}}$, und ${{= a/b}} \\cdot 100 = {{= a*100/b}}\\,\\%$"
+      },
+      {
+        "kind": "answer",
+        "body": "{{= a*100/b}} %"
+      }
+    ],
+    "tags": [
+      "prozent",
+      "bruch",
+      "umwandeln",
+      "drill"
+    ],
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "a": {
+          "type": "int",
+          "min": 1,
+          "max": 19
+        },
+        "b": {
+          "type": "choice",
+          "values": [
+            2,
+            4,
+            5,
+            10,
+            20,
+            25,
+            50
+          ]
+        }
+      },
+      "constraints": [
+        "a < b",
+        "gcd(a, b) == 1"
+      ]
+    },
+    "source": "Verallgemeinert nach Prüfungshefte 2027, 1.2 Aufgabe 1c"
+  },
+  {
+    "id": "MATH_PCT_PROMILLE_T1",
+    "subject": "MATH",
+    "topicId": "MATH_NUM_PCT_BASIC",
+    "difficulty": 2,
+    "qtype": "SHORT",
+    "prompt": "Gib {{m}} ‰ (Promille) in Prozent an.",
+    "payload": {
+      "answer_type": "number",
+      "unit": "%"
+    },
+    "solution": {
+      "kind": "computed",
+      "expr": "m / 10"
+    },
+    "explanation": [
+      {
+        "kind": "terms",
+        "body": "- Prozent (%) = von **Hundert** (÷ 100)\n- Promille (‰) = von **Tausend** (÷ 1000)\n\n10 ‰ sind also 1 %."
+      },
+      {
+        "kind": "steps",
+        "body": "{{m}} ‰ $= \\frac{{{m}}}{1000} = \\frac{{{= m/10}}}{100} = {{= m/10}}\\,\\%$"
+      },
+      {
+        "kind": "remember",
+        "body": "Promille → Prozent: **durch 10** teilen."
+      },
+      {
+        "kind": "answer",
+        "body": "{{= m/10}} %"
+      }
+    ],
+    "tags": [
+      "prozent",
+      "promille",
+      "umwandeln",
+      "drill"
+    ],
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "m": {
+          "type": "int",
+          "min": 5,
+          "max": 995,
+          "step": 5
+        }
+      },
+      "constraints": [
+        "mod(m, 100) != 0"
+      ]
+    },
+    "source": "Verallgemeinert nach Prüfungshefte 2027, 1.2 Aufgabe 1d"
+  },
+  {
+    "id": "MATH_PCT_SATZ_T1",
+    "subject": "MATH",
+    "topicId": "MATH_NUM_PCT_BASIC",
+    "difficulty": 2,
+    "qtype": "SHORT",
+    "prompt": "Von {{g}} {{ding}} sind {{w}} {{eigenschaft}}. Wie viel Prozent sind das?",
+    "payload": {
+      "answer_type": "number",
+      "unit": "%"
+    },
+    "solution": {
+      "kind": "computed",
+      "expr": "w / g * 100"
+    },
+    "explanation": [
+      {
+        "kind": "terms",
+        "body": "- Grundwert $G$ = das Ganze = {{g}}\n- Prozentwert $W$ = der Teil = {{w}}\n- Gesucht: Prozentsatz $p$"
+      },
+      {
+        "kind": "formula",
+        "body": "$p = \\frac{W}{G} \\cdot 100$"
+      },
+      {
+        "kind": "steps",
+        "body": "$p = \\frac{{{w}}}{{{g}}} \\cdot 100 = {{= w/g}} \\cdot 100 = {{= w/g*100}}\\,\\%$"
+      },
+      {
+        "kind": "answer",
+        "body": "{{= w/g*100}} %"
+      }
+    ],
+    "tags": [
+      "prozent",
+      "prozentsatz",
+      "sachaufgabe",
+      "drill"
+    ],
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "g": {
+          "type": "choice",
+          "values": [
+            20,
+            25,
+            40,
+            50,
+            80,
+            120,
+            150,
+            200,
+            250,
+            400
+          ]
+        },
+        "p": {
+          "type": "int",
+          "min": 4,
+          "max": 96,
+          "step": 2
+        },
+        "ding": {
+          "type": "choice",
+          "values": [
+            "Murmeln",
+            "Schülerinnen und Schülern",
+            "Äpfeln",
+            "Fahrrädern",
+            "Stimmen",
+            "Losen"
+          ]
+        },
+        "eigenschaft": {
+          "type": "choice",
+          "values": [
+            "rot",
+            "gelb",
+            "blau",
+            "grün",
+            "defekt",
+            "gültig"
+          ]
+        }
+      },
+      "derived": {
+        "w": "g * p / 100"
+      },
+      "constraints": [
+        "isint(w)",
+        "w > 0",
+        "w < g"
+      ]
+    },
+    "source": "Verallgemeinert nach Prüfungshefte 2027, 1.2 Aufgabe 2 (Murmeln) und 7 (Müsli)"
+  },
+  {
+    "id": "MATH_PCT_WERT_T1",
+    "subject": "MATH",
+    "topicId": "MATH_NUM_PCT_BASIC",
+    "difficulty": 2,
+    "qtype": "SHORT",
+    "prompt": "Berechne {{p}} % von {{g}} {{unit}}.",
+    "payload": {
+      "answer_type": "number",
+      "unit": "{{unit}}",
+      "tolerance": 0.01
+    },
+    "solution": {
+      "kind": "computed",
+      "expr": "g * p / 100",
+      "round": 2
+    },
+    "explanation": [
+      {
+        "kind": "terms",
+        "body": "- Grundwert $G$ = {{g}} {{unit}}\n- Prozentsatz $p$ = {{p}} %\n- Gesucht: Prozentwert $W$"
+      },
+      {
+        "kind": "formula",
+        "body": "$W = G \\cdot \\frac{p}{100}$"
+      },
+      {
+        "kind": "steps",
+        "body": "1. Prozentsatz als Dezimalzahl: ${{p}}\\,\\% = {{= p/100}}$\n2. Multiplizieren: ${{g}} \\cdot {{= p/100}} = {{= g*p/100}}$ {{unit}}"
+      },
+      {
+        "kind": "answer",
+        "body": "{{= g*p/100}} {{unit}}"
+      }
+    ],
+    "tags": [
+      "prozent",
+      "prozentwert",
+      "drill"
+    ],
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "g": {
+          "type": "int",
+          "min": 12,
+          "max": 400,
+          "step": 2
+        },
+        "p": {
+          "type": "choice",
+          "values": [
+            5,
+            10,
+            12,
+            15,
+            20,
+            25,
+            30,
+            35,
+            40,
+            45,
+            50,
+            60,
+            65,
+            70,
+            75,
+            80,
+            90
+          ]
+        },
+        "unit": {
+          "type": "choice",
+          "values": [
+            "€",
+            "kg",
+            "km",
+            "g",
+            "Liter"
+          ]
+        }
+      },
+      "constraints": [
+        "isint(g * p / 10)"
+      ]
+    },
+    "source": "Verallgemeinert nach Prüfungshefte 2027, 1.2 Aufgabe 8 (Wasseranteil)"
+  },
+  {
+    "id": "MATH_PCT_ERHOEHUNG_T1",
+    "subject": "MATH",
+    "topicId": "MATH_NUM_PCT_CHANGE",
+    "difficulty": 3,
+    "qtype": "SHORT",
+    "prompt": "{{jahr1}} gab es in einer Stadt {{g}} {{ding}}. Bis {{jahr2}} stieg die Zahl um {{p}} %. Wie viele {{ding}} gab es {{jahr2}}?",
+    "payload": {
+      "answer_type": "number"
+    },
+    "solution": {
+      "kind": "computed",
+      "expr": "g * (1 + p / 100)"
+    },
+    "explanation": [
+      {
+        "kind": "formula",
+        "body": "Erhöhung um $p\\,\\%$: $\\text{neu} = \\text{alt} \\cdot \\left(1 + \\frac{p}{100}\\right)$"
+      },
+      {
+        "kind": "steps",
+        "body": "1. Faktor: $1 + \\frac{{{p}}}{100} = {{= 1 + p/100}}$\n2. Rechnen: ${{g}} \\cdot {{= 1 + p/100}} = {{= g*(1+p/100)}}$\n\nAlternativ: Zuwachs ${{g}} \\cdot {{= p/100}} = {{= g*p/100}}$, dazu: ${{g}} + {{= g*p/100}} = {{= g*(1+p/100)}}$"
+      },
+      {
+        "kind": "mistake",
+        "body": "**Um** {{p}} % gestiegen heißt: der Zuwachs kommt **dazu**. Nur $\\frac{p}{100}$ zu berechnen gibt bloß den Zuwachs, nicht den neuen Wert."
+      },
+      {
+        "kind": "answer",
+        "body": "{{= g*(1+p/100)}} {{ding}}"
+      }
+    ],
+    "tags": [
+      "prozent",
+      "erhoehung",
+      "sachaufgabe",
+      "drill"
+    ],
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "g": {
+          "type": "int",
+          "min": 200,
+          "max": 12000,
+          "step": 50
+        },
+        "p": {
+          "type": "choice",
+          "values": [
+            2,
+            4,
+            5,
+            6,
+            8,
+            10,
+            12,
+            15,
+            20,
+            21,
+            25,
+            30,
+            40
+          ]
+        },
+        "ding": {
+          "type": "choice",
+          "values": [
+            "Elektroautos",
+            "Einwohner",
+            "Fahrräder",
+            "Bäume",
+            "Lastenräder"
+          ]
+        },
+        "jahr1": {
+          "type": "choice",
+          "values": [
+            2018,
+            2019,
+            2020,
+            2021,
+            2022
+          ]
+        }
+      },
+      "derived": {
+        "jahr2": "jahr1 + 3"
+      },
+      "constraints": [
+        "isint(g * (1 + p / 100))"
+      ]
+    },
+    "source": "Verallgemeinert nach Prüfungshefte 2027, 1.2 Aufgabe 3 (Hybridautos)"
+  },
+  {
+    "id": "MATH_PCT_RABATT_T1",
+    "subject": "MATH",
+    "topicId": "MATH_NUM_PCT_CHANGE",
+    "difficulty": 2,
+    "qtype": "SHORT",
+    "prompt": "Ein Geschäft verkauft {{artikel}} für {{g}} €. Im Sale gibt es {{p}} % Rabatt. Wie viel kostet {{artikel}} mit Rabatt?",
+    "payload": {
+      "answer_type": "number",
+      "unit": "€",
+      "tolerance": 0.01
+    },
+    "solution": {
+      "kind": "computed",
+      "expr": "g * (1 - p / 100)",
+      "round": 2
+    },
+    "explanation": [
+      {
+        "kind": "formula",
+        "body": "Rabatt von $p\\,\\%$: $\\text{neu} = \\text{alt} \\cdot \\left(1 - \\frac{p}{100}\\right)$ — du zahlst noch $(100 - p)\\,\\%$."
+      },
+      {
+        "kind": "steps",
+        "body": "1. Restanteil: $100\\,\\% - {{p}}\\,\\% = {{= 100-p}}\\,\\%$ → Faktor ${{= 1 - p/100}}$\n2. Rechnen: ${{g}} \\cdot {{= 1 - p/100}} = {{= g*(1-p/100) | fixed:2}}$ €\n\nAlternativ: Rabatt ${{g}} \\cdot {{= p/100}} = {{= g*p/100 | fixed:2}}$ €, abziehen: ${{g}} - {{= g*p/100}} = {{= g*(1-p/100)}}$ €"
+      },
+      {
+        "kind": "answer",
+        "body": "{{= g*(1-p/100) | euro}}"
+      }
+    ],
+    "tags": [
+      "prozent",
+      "rabatt",
+      "sachaufgabe",
+      "drill"
+    ],
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "g": {
+          "type": "int",
+          "min": 20,
+          "max": 900,
+          "step": 5
+        },
+        "p": {
+          "type": "choice",
+          "values": [
+            5,
+            10,
+            15,
+            20,
+            25,
+            30,
+            40,
+            50,
+            60,
+            70
+          ]
+        },
+        "artikel": {
+          "type": "choice",
+          "values": [
+            "ein Handy",
+            "eine Jacke",
+            "ein Skateboard",
+            "eine Konsole",
+            "ein Fahrrad",
+            "ein Paar Sneaker"
+          ]
+        }
+      },
+      "constraints": [
+        "isint(g * (1 - p / 100) * 100)"
+      ]
+    },
+    "source": "Verallgemeinert nach Prüfungshefte 2027, 1.2 Aufgabe 5 (Handy)"
+  },
+  {
+    "id": "MATH_PCT_GRUNDWERT_ERSPARNIS_T1",
+    "subject": "MATH",
+    "topicId": "MATH_NUM_PCT_CHANGE",
+    "difficulty": 3,
+    "qtype": "SHORT",
+    "prompt": "{{name}} hat bei einem Ausverkauf mit {{p}} % Rabatt {{w}} € gespart. Berechne den ursprünglichen Preis.",
+    "payload": {
+      "answer_type": "number",
+      "unit": "€",
+      "tolerance": 0.01
+    },
+    "solution": {
+      "kind": "computed",
+      "expr": "w / (p / 100)",
+      "round": 2
+    },
+    "explanation": [
+      {
+        "kind": "terms",
+        "body": "- Die Ersparnis {{w}} € ist der **Prozentwert** $W$ (der Teil).\n- {{p}} % ist der **Prozentsatz**.\n- Gesucht ist der **Grundwert** $G$ — der ursprüngliche Preis."
+      },
+      {
+        "kind": "formula",
+        "body": "$G = W : \\frac{p}{100}$"
+      },
+      {
+        "kind": "steps",
+        "body": "${{p}}\\,\\%$ von $G$ sind {{w}} €:\n\n$G \\cdot {{= p/100}} = {{w}} \\quad | : {{= p/100}}$\n\n$G = {{w}} : {{= p/100}} = {{= w/(p/100)}}$ €"
+      },
+      {
+        "kind": "mistake",
+        "body": "Nicht {{w}} · {{= p/100}} rechnen! Der Prozentwert ist schon bekannt — der Grundwert ist **größer**, also musst du **teilen**."
+      },
+      {
+        "kind": "answer",
+        "body": "Der ursprüngliche Preis war **{{= w/(p/100)}} €**."
+      }
+    ],
+    "tags": [
+      "prozent",
+      "grundwert",
+      "sachaufgabe",
+      "drill"
+    ],
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "g": {
+          "type": "int",
+          "min": 40,
+          "max": 600,
+          "step": 10
+        },
+        "p": {
+          "type": "choice",
+          "values": [
+            10,
+            15,
+            20,
+            25,
+            30,
+            40,
+            50
+          ]
+        },
+        "name": {
+          "type": "choice",
+          "values": [
+            "Paula",
+            "Malik",
+            "Sophie",
+            "Emre",
+            "Lina",
+            "Finn"
+          ]
+        }
+      },
+      "derived": {
+        "w": "g * p / 100"
+      },
+      "constraints": [
+        "isint(w)"
+      ]
+    },
+    "source": "Verallgemeinert nach Prüfungshefte 2027, 1.2 Aufgabe 6 (Paula, 84 €)"
+  },
+  {
+    "id": "MATH_PCT_GRUNDWERT_NEU_T1",
+    "subject": "MATH",
+    "topicId": "MATH_NUM_PCT_CHANGE",
+    "difficulty": 4,
+    "qtype": "SHORT",
+    "prompt": "Nach einer Preissenkung um {{p}} % kostet {{artikel}} jetzt {{neu}} €. Wie viel hat {{artikel}} vorher gekostet?",
+    "payload": {
+      "answer_type": "number",
+      "unit": "€",
+      "tolerance": 0.01
+    },
+    "solution": {
+      "kind": "computed",
+      "expr": "neu / (1 - p / 100)",
+      "round": 2
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "body": "Der neue Preis ist **nicht** {{p}} % des alten, sondern $(100 - {{p}})\\,\\% = {{= 100-p}}\\,\\%$ davon."
+      },
+      {
+        "kind": "steps",
+        "body": "$G \\cdot {{= 1 - p/100}} = {{neu}} \\quad | : {{= 1 - p/100}}$\n\n$G = {{neu}} : {{= 1 - p/100}} = {{= neu/(1-p/100)}}$ €\n\nProbe: ${{= neu/(1-p/100)}} \\cdot {{= 1 - p/100}} = {{neu}}$ ✓"
+      },
+      {
+        "kind": "mistake",
+        "body": "Häufiger Fehler: {{p}} % **auf den neuen Preis** draufschlagen. Das ergibt ${{neu}} \\cdot {{= 1 + p/100}} = {{= neu*(1+p/100)}}$ — falsch, weil sich die {{p}} % auf den **alten** Preis beziehen."
+      },
+      {
+        "kind": "answer",
+        "body": "Vorher: **{{= neu/(1-p/100)}} €**"
+      }
+    ],
+    "tags": [
+      "prozent",
+      "grundwert",
+      "rabatt",
+      "sachaufgabe",
+      "drill"
+    ],
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "g": {
+          "type": "int",
+          "min": 40,
+          "max": 800,
+          "step": 10
+        },
+        "p": {
+          "type": "choice",
+          "values": [
+            10,
+            20,
+            25,
+            30,
+            40,
+            50
+          ]
+        },
+        "artikel": {
+          "type": "choice",
+          "values": [
+            "ein Fahrrad",
+            "eine Jacke",
+            "ein Tablet",
+            "ein Rucksack",
+            "eine Konsole"
+          ]
+        }
+      },
+      "derived": {
+        "neu": "g * (1 - p / 100)"
+      },
+      "constraints": [
+        "isint(neu)"
+      ]
+    }
+  },
+  {
+    "id": "MATH_PCT_ZINSEN_JAHR_T1",
+    "subject": "MATH",
+    "topicId": "MATH_NUM_INTEREST",
+    "difficulty": 2,
+    "qtype": "SHORT",
+    "prompt": "{{name}} legt {{k}} € zu {{p}} % Zinsen pro Jahr an. Wie viel Zinsen bekommt {{name}} nach einem Jahr?",
+    "payload": {
+      "answer_type": "number",
+      "unit": "€",
+      "tolerance": 0.01
+    },
+    "solution": {
+      "kind": "computed",
+      "expr": "k * p / 100",
+      "round": 2
+    },
+    "explanation": [
+      {
+        "kind": "terms",
+        "body": "- Kapital $K$ = Grundwert = {{k}} €\n- Zinssatz $p$ = {{p}} %\n- Zinsen $Z$ = Prozentwert"
+      },
+      {
+        "kind": "formula",
+        "body": "$Z = K \\cdot \\frac{p}{100}$"
+      },
+      {
+        "kind": "steps",
+        "body": "$Z = {{k}} \\cdot \\frac{{{p}}}{100} = {{k}} \\cdot {{= p/100}} = {{= k*p/100 | fixed:2}}$ €"
+      },
+      {
+        "kind": "answer",
+        "body": "{{= k*p/100 | euro}} Zinsen"
+      }
+    ],
+    "tags": [
+      "zinsen",
+      "prozent",
+      "drill"
+    ],
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "k": {
+          "type": "int",
+          "min": 200,
+          "max": 5000,
+          "step": 50
+        },
+        "p": {
+          "type": "choice",
+          "values": [
+            1,
+            1.5,
+            2,
+            2.5,
+            3,
+            3.5,
+            4,
+            5
+          ]
+        },
+        "name": {
+          "type": "choice",
+          "values": [
+            "Tom",
+            "Marcel",
+            "Ayla",
+            "Jana",
+            "Leon",
+            "Mira"
+          ]
+        }
+      },
+      "constraints": [
+        "isint(k * p)"
+      ]
+    }
+  },
+  {
+    "id": "MATH_PCT_ZINSESZINS_T1",
+    "subject": "MATH",
+    "topicId": "MATH_NUM_INTEREST",
+    "difficulty": 3,
+    "qtype": "SHORT",
+    "prompt": "{{name}} hat {{k}} € auf dem Sparkonto und bekommt {{p}} % Zinsen pro Jahr. Die Zinsen bleiben auf dem Konto. Wie viel Geld ist nach {{n}} Jahren auf dem Konto? (Runde auf Cent.)",
+    "payload": {
+      "answer_type": "number",
+      "unit": "€",
+      "tolerance": 0.02
+    },
+    "solution": {
+      "kind": "computed",
+      "expr": "k * (1 + p / 100) ^ n",
+      "round": 2
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "body": "**Zinseszins**: Jedes Jahr gibt es Zinsen auf das Kapital **und** auf die Zinsen der Vorjahre. Deshalb wird der Faktor jedes Jahr erneut angewendet — also **hoch n**."
+      },
+      {
+        "kind": "formula",
+        "body": "$K_n = K_0 \\cdot \\left(1 + \\frac{p}{100}\\right)^n$"
+      },
+      {
+        "kind": "steps",
+        "body": "1. Faktor pro Jahr: $1 + \\frac{{{p}}}{100} = {{= 1 + p/100}}$\n2. Für {{n}} Jahre: ${{= 1 + p/100}}^{{{n}}} \\approx {{= (1+p/100)^n | fixed:4}}$\n3. Mal Anfangskapital: ${{k}} \\cdot {{= (1+p/100)^n | fixed:4}} \\approx {{= k*(1+p/100)^n | fixed:2}}$ €"
+      },
+      {
+        "kind": "mistake",
+        "body": "Einfach ${{n}} \\cdot {{p}}\\,\\%$ zu rechnen wäre **einfache** Verzinsung und ergäbe nur ${{= k*(1 + n*p/100) | fixed:2}}$ €. Mit Zinseszins ist es mehr."
+      },
+      {
+        "kind": "answer",
+        "body": "≈ {{= k*(1+p/100)^n | euro}}"
+      }
+    ],
+    "tags": [
+      "zinsen",
+      "zinseszins",
+      "drill"
+    ],
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "k": {
+          "type": "int",
+          "min": 500,
+          "max": 5000,
+          "step": 100
+        },
+        "p": {
+          "type": "choice",
+          "values": [
+            2,
+            2.5,
+            3,
+            4,
+            5
+          ]
+        },
+        "n": {
+          "type": "int",
+          "min": 2,
+          "max": 7
+        },
+        "name": {
+          "type": "choice",
+          "values": [
+            "Marcel",
+            "Tom",
+            "Selin",
+            "Nora",
+            "Ben"
+          ]
+        }
+      }
+    },
+    "source": "Verallgemeinert nach Prüfungshefte 2027, 1.2 Aufgabe 4 (Marcel, 2500 €)"
+  },
+  {
+    "id": "MATH_PCT_UM_AUF_MCQ_T1",
+    "subject": "MATH",
+    "topicId": "MATH_NUM_PCT_CHANGE",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Ein Ticket kostet {{g}} €. Der Preis wird **um** {{p}} % erhöht. Wie viel kostet das Ticket danach?",
+    "payload": {
+      "choices": [
+        "{{= g*(1+p/100) | euro}}",
+        "{{= g*p/100 | euro}}",
+        "{{= g*(1-p/100) | euro}}",
+        "{{= g + p | euro}}"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "{{= g*(1+p/100) | euro}}"
+    },
+    "explanation": [
+      {
+        "kind": "steps",
+        "body": "**Um** {{p}} % erhöht → Faktor $1 + {{= p/100}} = {{= 1+p/100}}$\n\n${{g}} \\cdot {{= 1+p/100}} = {{= g*(1+p/100) | fixed:2}}$ €"
+      },
+      {
+        "kind": "mistake",
+        "body": "- {{= g*p/100 | euro}} ist nur der **Aufschlag**, nicht der neue Preis.\n- {{= g + p | euro}}: Prozent sind keine Euro — {{p}} % von {{g}} € sind {{= g*p/100 | euro}}, nicht {{p}} €."
+      },
+      {
+        "kind": "answer",
+        "body": "{{= g*(1+p/100) | euro}}"
+      }
+    ],
+    "tags": [
+      "prozent",
+      "erhoehung",
+      "drill"
+    ],
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "g": {
+          "type": "int",
+          "min": 20,
+          "max": 300,
+          "step": 5
+        },
+        "p": {
+          "type": "choice",
+          "values": [
+            5,
+            10,
+            15,
+            20,
+            25,
+            30,
+            40,
+            50
+          ]
+        }
+      },
+      "constraints": [
+        "g != 100",
+        "p != 50",
+        "isint(g * p / 100 * 100)",
+        "g * p / 100 != p"
+      ]
+    }
+  },
+  {
+    "id": "MATH_PCT_HIN_UND_ZURUECK_MCQ",
+    "subject": "MATH",
+    "topicId": "MATH_NUM_PCT_CHANGE",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "Ein Preis wird zuerst um 20 % erhöht und danach um 20 % gesenkt. Was gilt für den Preis am Ende?",
+    "payload": {
+      "choices": [
+        "Er ist niedriger als am Anfang.",
+        "Er ist genauso hoch wie am Anfang.",
+        "Er ist höher als am Anfang.",
+        "Das hängt vom Anfangspreis ab."
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "Er ist niedriger als am Anfang."
+    },
+    "explanation": [
+      {
+        "kind": "steps",
+        "body": "Rechne mit 100 €:\n\n1. Erhöhung um 20 %: $100 \\cdot 1{,}2 = 120$ €\n2. Senkung um 20 % — jetzt von **120 €**: $120 \\cdot 0{,}8 = 96$ €\n\nInsgesamt: $1{,}2 \\cdot 0{,}8 = 0{,}96$ — es fehlen 4 %."
+      },
+      {
+        "kind": "remember",
+        "body": "Prozente beziehen sich immer auf den **aktuellen** Grundwert. Erhöhung und Senkung um den gleichen Prozentsatz heben sich **nicht** auf."
+      },
+      {
+        "kind": "answer",
+        "body": "Der Preis ist am Ende niedriger (96 % des Anfangspreises)."
+      }
+    ],
+    "tags": [
+      "prozent",
+      "veraenderung",
+      "konzept"
+    ]
+  }
+]

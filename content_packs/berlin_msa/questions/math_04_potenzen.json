@@ -1,0 +1,651 @@
+[
+  {
+    "id": "MATH_POW_BERECHNE_T1",
+    "subject": "MATH",
+    "topicId": "MATH_ALG_POW",
+    "difficulty": 1,
+    "qtype": "SHORT",
+    "prompt": "Berechne: ${{a}}^{{{n}}}$",
+    "payload": {
+      "answer_type": "number"
+    },
+    "solution": {
+      "kind": "computed",
+      "expr": "a ^ n"
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "body": "${{a}}^{{{n}}}$ heißt: die Basis {{a}} wird **{{n}}-mal mit sich selbst multipliziert**."
+      },
+      {
+        "kind": "steps",
+        "body": "${{a}}^{{{n}}} = {{a}} \\cdot {{a}}{{= if(n > 2, 1, 0) | raw}}$ … $= {{= a^n}}$\n\nSchrittweise: ${{a}} \\cdot {{a}} = {{= a*a}}$, ${{= a*a}} \\cdot {{a}} = {{= a*a*a}}$"
+      },
+      {
+        "kind": "mistake",
+        "body": "Nicht Basis mal Exponent rechnen: ${{a}}^{{{n}}}$ ist **nicht** ${{a}} \\cdot {{n}} = {{= a*n}}$."
+      },
+      {
+        "kind": "answer",
+        "body": "{{= a^n}}"
+      }
+    ],
+    "tags": [
+      "potenzen",
+      "drill"
+    ],
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "a": {
+          "type": "int",
+          "min": 2,
+          "max": 12
+        },
+        "n": {
+          "type": "int",
+          "min": 2,
+          "max": 4
+        }
+      },
+      "constraints": [
+        "a ^ n <= 2500",
+        "a ^ n >= 8"
+      ]
+    },
+    "source": "Verallgemeinert nach Prüfungshefte 2027, 2.2 Aufgabe 1a"
+  },
+  {
+    "id": "MATH_POW_ZEHNER_NEG_T1",
+    "subject": "MATH",
+    "topicId": "MATH_ALG_POW",
+    "difficulty": 2,
+    "qtype": "SHORT",
+    "prompt": "Schreibe als Dezimalzahl: $10^{-{{n}}}$",
+    "payload": {
+      "answer_type": "number"
+    },
+    "solution": {
+      "kind": "computed",
+      "expr": "10 ^ (-n)"
+    },
+    "explanation": [
+      {
+        "kind": "formula",
+        "body": "Negativer Exponent = Kehrwert: $a^{-x} = \\frac{1}{a^x}$"
+      },
+      {
+        "kind": "steps",
+        "body": "$10^{-{{n}}} = \\frac{1}{10^{{{n}}}} = \\frac{1}{{{= 10^n}}} = {{= 10^(-n)}}$"
+      },
+      {
+        "kind": "remember",
+        "body": "$10^{-n}$ ist eine 1 an der $n$-ten Nachkommastelle: $10^{-2} = 0{,}01$."
+      },
+      {
+        "kind": "answer",
+        "body": "{{= 10^(-n)}}"
+      }
+    ],
+    "tags": [
+      "potenzen",
+      "zehnerpotenz",
+      "drill"
+    ],
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "n": {
+          "type": "int",
+          "min": 1,
+          "max": 4
+        }
+      }
+    },
+    "source": "Verallgemeinert nach Prüfungshefte 2027, 2.2 Aufgabe 1b"
+  },
+  {
+    "id": "MATH_POW_NULL_MCQ_T1",
+    "subject": "MATH",
+    "topicId": "MATH_ALG_POW",
+    "difficulty": 1,
+    "qtype": "MCQ",
+    "prompt": "Was ist ${{a}}^0$?",
+    "payload": {
+      "choices": [
+        "$1$",
+        "$0$",
+        "${{a}}$",
+        "nicht definiert"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "$1$"
+    },
+    "explanation": [
+      {
+        "kind": "formula",
+        "body": "Jede Zahl (außer 0) hoch 0 ist **1**: $a^0 = 1$."
+      },
+      {
+        "kind": "steps",
+        "body": "Warum? Mit dem Potenzgesetz: $\\frac{{{a}}^2}{{{a}}^2} = {{a}}^{2-2} = {{a}}^0$, und $\\frac{{{a}}^2}{{{a}}^2}$ ist natürlich 1."
+      },
+      {
+        "kind": "answer",
+        "body": "${{a}}^0 = 1$"
+      }
+    ],
+    "tags": [
+      "potenzen",
+      "konzept",
+      "drill"
+    ],
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "a": {
+          "type": "int",
+          "min": 2,
+          "max": 999
+        }
+      }
+    },
+    "source": "Verallgemeinert nach Prüfungshefte 2027, 2.2 Aufgabe 1e"
+  },
+  {
+    "id": "MATH_POW_NEG_EXP_T1",
+    "subject": "MATH",
+    "topicId": "MATH_ALG_POW",
+    "difficulty": 2,
+    "qtype": "SHORT",
+    "prompt": "Schreibe als Bruch: ${{a}}^{-2}$",
+    "payload": {
+      "answer_type": "fraction",
+      "require_reduced": true
+    },
+    "solution": {
+      "value": "1/{{= a*a}}"
+    },
+    "explanation": [
+      {
+        "kind": "formula",
+        "body": "$a^{-x} = \\frac{1}{a^x}$"
+      },
+      {
+        "kind": "steps",
+        "body": "${{a}}^{-2} = \\frac{1}{{{a}}^2} = \\frac{1}{{{= a*a}}}$"
+      },
+      {
+        "kind": "mistake",
+        "body": "${{a}}^{-2}$ ist **positiv** — das Minus im Exponenten heißt „Kehrwert“, nicht „negativ“."
+      },
+      {
+        "kind": "answer",
+        "body": "$\\frac{1}{{{= a*a}}}$"
+      }
+    ],
+    "tags": [
+      "potenzen",
+      "negativer-exponent",
+      "drill"
+    ],
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "a": {
+          "type": "int",
+          "min": 2,
+          "max": 12
+        }
+      }
+    }
+  },
+  {
+    "id": "MATH_POW_PRODUKT_MCQ_T1",
+    "subject": "MATH",
+    "topicId": "MATH_ALG_POW",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Vereinfache: $x^{{{m}}} \\cdot x^{{{n}}}$",
+    "payload": {
+      "choices": [
+        "$x^{{{= m+n}}}$",
+        "$x^{{{= m*n}}}$",
+        "$2x^{{{= m+n}}}$",
+        "$x^{{{= m-n | abs}}}$"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "$x^{{{= m+n}}}$"
+    },
+    "explanation": [
+      {
+        "kind": "formula",
+        "body": "Gleiche Basis, **multiplizieren** → Exponenten **addieren**: $a^m \\cdot a^n = a^{m+n}$"
+      },
+      {
+        "kind": "steps",
+        "body": "$x^{{{m}}} \\cdot x^{{{n}}} = x^{{{m}} + {{n}}} = x^{{{= m+n}}}$\n\nWarum? $x^{{{m}}}$ sind {{m}} Faktoren $x$, $x^{{{n}}}$ sind {{n}} Faktoren $x$ — zusammen {{= m+n}} Faktoren."
+      },
+      {
+        "kind": "mistake",
+        "body": "$x^{{{= m*n}}}$ wäre $(x^{{{m}}})^{{{n}}}$ — Potenz einer Potenz. Beim Malnehmen werden die Exponenten nur addiert."
+      },
+      {
+        "kind": "answer",
+        "body": "$x^{{{= m+n}}}$"
+      }
+    ],
+    "tags": [
+      "potenzen",
+      "potenzgesetze",
+      "drill"
+    ],
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "m": {
+          "type": "int",
+          "min": 2,
+          "max": 9
+        },
+        "n": {
+          "type": "int",
+          "min": 2,
+          "max": 9
+        }
+      },
+      "constraints": [
+        "m != n",
+        "m + n != m * n",
+        "m - n != 1",
+        "n - m != 1"
+      ]
+    }
+  },
+  {
+    "id": "MATH_POW_QUOTIENT_MCQ_T1",
+    "subject": "MATH",
+    "topicId": "MATH_ALG_POW",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Vereinfache: $\\frac{x^{{{m}}}}{x^{{{n}}}}$",
+    "payload": {
+      "choices": [
+        "$x^{{{= m-n}}}$",
+        "$x^{{{= m+n}}}$",
+        "$x^{{{= m/n | raw}}}$",
+        "$1$"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "$x^{{{= m-n}}}$"
+    },
+    "explanation": [
+      {
+        "kind": "formula",
+        "body": "Gleiche Basis, **dividieren** → Exponenten **subtrahieren**: $\\frac{a^n}{a^m} = a^{n-m}$"
+      },
+      {
+        "kind": "steps",
+        "body": "$\\frac{x^{{{m}}}}{x^{{{n}}}} = x^{{{m}} - {{n}}} = x^{{{= m-n}}}$\n\nWarum? Von {{m}} Faktoren $x$ oben kürzen sich {{n}} gegen die unten weg."
+      },
+      {
+        "kind": "answer",
+        "body": "$x^{{{= m-n}}}$"
+      }
+    ],
+    "tags": [
+      "potenzen",
+      "potenzgesetze",
+      "drill"
+    ],
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "m": {
+          "type": "int",
+          "min": 4,
+          "max": 12
+        },
+        "n": {
+          "type": "int",
+          "min": 2,
+          "max": 6
+        }
+      },
+      "constraints": [
+        "m > n + 1",
+        "mod(m, n) == 0",
+        "m / n != m - n"
+      ]
+    }
+  },
+  {
+    "id": "MATH_POW_POTENZ_MCQ_T1",
+    "subject": "MATH",
+    "topicId": "MATH_ALG_POW",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Vereinfache: $\\left(x^{{{m}}}\\right)^{{{n}}}$",
+    "payload": {
+      "choices": [
+        "$x^{{{= m*n}}}$",
+        "$x^{{{= m+n}}}$",
+        "$x^{{{= m^n}}}$",
+        "${{n}}x^{{{m}}}$"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "$x^{{{= m*n}}}$"
+    },
+    "explanation": [
+      {
+        "kind": "formula",
+        "body": "Potenz einer Potenz → Exponenten **multiplizieren**: $(a^n)^m = a^{n \\cdot m}$"
+      },
+      {
+        "kind": "steps",
+        "body": "$(x^{{{m}}})^{{{n}}} = x^{{{m}} \\cdot {{n}}} = x^{{{= m*n}}}$\n\nWarum? $(x^{{{m}}})^{{{n}}}$ heißt {{n}}-mal $x^{{{m}}}$ multiplizieren: $x^{{{m}}} \\cdot x^{{{m}}} \\cdot \\ldots$ — und beim Multiplizieren werden {{n}}-mal {{m}} addiert."
+      },
+      {
+        "kind": "answer",
+        "body": "$x^{{{= m*n}}}$"
+      }
+    ],
+    "tags": [
+      "potenzen",
+      "potenzgesetze",
+      "drill"
+    ],
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "m": {
+          "type": "int",
+          "min": 2,
+          "max": 6
+        },
+        "n": {
+          "type": "int",
+          "min": 2,
+          "max": 5
+        }
+      },
+      "constraints": [
+        "m * n != m + n",
+        "m ^ n != m * n",
+        "m ^ n != m + n"
+      ]
+    },
+    "source": "Verallgemeinert nach Prüfungshefte 2027, 2.2 Aufgabe 1f"
+  },
+  {
+    "id": "MATH_POW_TERM_T1",
+    "subject": "MATH",
+    "topicId": "MATH_ALG_POW",
+    "difficulty": 3,
+    "qtype": "SHORT",
+    "prompt": "Fasse zu einer Potenz zusammen: $x^{{{a}}} \\cdot \\left(x^{{{b}}}\\right)^{{{c}}}$",
+    "payload": {
+      "answer_type": "term",
+      "require_simplified": true
+    },
+    "solution": {
+      "value": "x^{{= a + b*c}}"
+    },
+    "explanation": [
+      {
+        "kind": "steps",
+        "body": "1. Potenz einer Potenz: $(x^{{{b}}})^{{{c}}} = x^{{{b}} \\cdot {{c}}} = x^{{{= b*c}}}$\n2. Multiplizieren → addieren: $x^{{{a}}} \\cdot x^{{{= b*c}}} = x^{{{a}} + {{= b*c}}} = x^{{{= a + b*c}}}$"
+      },
+      {
+        "kind": "remember",
+        "body": "Erst die Klammer (mal), dann das Produkt (plus)."
+      },
+      {
+        "kind": "answer",
+        "body": "$x^{{{= a + b*c}}}$"
+      }
+    ],
+    "tags": [
+      "potenzen",
+      "potenzgesetze",
+      "drill"
+    ],
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "a": {
+          "type": "int",
+          "min": 1,
+          "max": 7
+        },
+        "b": {
+          "type": "int",
+          "min": 2,
+          "max": 5
+        },
+        "c": {
+          "type": "int",
+          "min": 2,
+          "max": 4
+        }
+      }
+    },
+    "source": "Verallgemeinert nach Prüfungshefte 2027, 2.2 Aufgabe 2c"
+  },
+  {
+    "id": "MATH_POW_WURZEL_PRODUKT_T1",
+    "subject": "MATH",
+    "topicId": "MATH_ALG_POW",
+    "difficulty": 3,
+    "qtype": "SHORT",
+    "prompt": "Berechne mit dem Wurzelgesetz: $\\sqrt{{{a}}} \\cdot \\sqrt{{{b}}}$",
+    "payload": {
+      "answer_type": "number"
+    },
+    "solution": {
+      "kind": "computed",
+      "expr": "k"
+    },
+    "explanation": [
+      {
+        "kind": "formula",
+        "body": "$\\sqrt{a} \\cdot \\sqrt{b} = \\sqrt{a \\cdot b}$ — erst unter **einer** Wurzel multiplizieren, dann ziehen."
+      },
+      {
+        "kind": "steps",
+        "body": "$\\sqrt{{{a}}} \\cdot \\sqrt{{{b}}} = \\sqrt{{{a}} \\cdot {{b}}} = \\sqrt{{{= a*b}}} = {{k}}$\n\nProbe: ${{k}}^2 = {{= k*k}}$ ✓"
+      },
+      {
+        "kind": "mistake",
+        "body": "$\\sqrt{{{a}}}$ und $\\sqrt{{{b}}}$ einzeln auszurechnen gibt krumme Dezimalzahlen. Das Wurzelgesetz macht es glatt."
+      },
+      {
+        "kind": "answer",
+        "body": "{{k}}"
+      }
+    ],
+    "tags": [
+      "wurzeln",
+      "wurzelgesetze",
+      "drill"
+    ],
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "k": {
+          "type": "int",
+          "min": 4,
+          "max": 12
+        },
+        "a": {
+          "type": "int",
+          "min": 2,
+          "max": 40
+        }
+      },
+      "derived": {
+        "b": "k * k / a"
+      },
+      "constraints": [
+        "isint(b)",
+        "a != b",
+        "b >= 2",
+        "!isint(sqrt(a))",
+        "!isint(sqrt(b))"
+      ]
+    },
+    "source": "Verallgemeinert nach Prüfungshefte 2027, 2.2 Aufgabe 3a/3c"
+  },
+  {
+    "id": "MATH_POW_WURZEL_QUOTIENT_T1",
+    "subject": "MATH",
+    "topicId": "MATH_ALG_POW",
+    "difficulty": 3,
+    "qtype": "SHORT",
+    "prompt": "Berechne mit dem Wurzelgesetz: $\\sqrt{{{= b*k*k}}} : \\sqrt{{{b}}}$",
+    "payload": {
+      "answer_type": "number"
+    },
+    "solution": {
+      "kind": "computed",
+      "expr": "k"
+    },
+    "explanation": [
+      {
+        "kind": "formula",
+        "body": "$\\frac{\\sqrt{a}}{\\sqrt{b}} = \\sqrt{\\frac{a}{b}}$ — erst unter **einer** Wurzel dividieren, dann ziehen."
+      },
+      {
+        "kind": "steps",
+        "body": "$\\sqrt{{{= b*k*k}}} : \\sqrt{{{b}}} = \\sqrt{{{= b*k*k}} : {{b}}} = \\sqrt{{{= k*k}}} = {{k}}$"
+      },
+      {
+        "kind": "answer",
+        "body": "{{k}}"
+      }
+    ],
+    "tags": [
+      "wurzeln",
+      "wurzelgesetze",
+      "drill"
+    ],
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "k": {
+          "type": "int",
+          "min": 3,
+          "max": 12
+        },
+        "b": {
+          "type": "choice",
+          "values": [
+            2,
+            3,
+            5,
+            6,
+            7,
+            10,
+            11,
+            13
+          ]
+        }
+      }
+    },
+    "source": "Verallgemeinert nach Prüfungshefte 2027, 2.2 Aufgabe 3b"
+  },
+  {
+    "id": "MATH_POW_KUBIKWURZEL_T1",
+    "subject": "MATH",
+    "topicId": "MATH_ALG_POW",
+    "difficulty": 2,
+    "qtype": "SHORT",
+    "prompt": "Berechne: $\\sqrt[3]{{{= a*a*a}}}$",
+    "payload": {
+      "answer_type": "number"
+    },
+    "solution": {
+      "kind": "computed",
+      "expr": "a"
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "body": "Die dritte Wurzel fragt: **Welche Zahl hoch 3 ergibt {{= a*a*a}}?**"
+      },
+      {
+        "kind": "steps",
+        "body": "${{a}}^3 = {{a}} \\cdot {{a}} \\cdot {{a}} = {{= a*a*a}}$, also $\\sqrt[3]{{{= a*a*a}}} = {{a}}$"
+      },
+      {
+        "kind": "remember",
+        "body": "Wurzelziehen ist die **Umkehrung** des Potenzierens: $x^n = a \\Leftrightarrow x = \\sqrt[n]{a}$."
+      },
+      {
+        "kind": "answer",
+        "body": "{{a}}"
+      }
+    ],
+    "tags": [
+      "wurzeln",
+      "drill"
+    ],
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "a": {
+          "type": "int",
+          "min": 2,
+          "max": 10
+        }
+      }
+    }
+  },
+  {
+    "id": "MATH_POW_WURZEL_NEG_MCQ",
+    "subject": "MATH",
+    "topicId": "MATH_ALG_POW",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Was ist $\\sqrt{-25}$?",
+    "payload": {
+      "choices": [
+        "nicht definiert",
+        "$-5$",
+        "$5$",
+        "$\\pm 5$"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "nicht definiert"
+    },
+    "explanation": [
+      {
+        "kind": "steps",
+        "body": "Eine Wurzel fragt: welche Zahl mal sich selbst ergibt $-25$? $5 \\cdot 5 = 25$ und $(-5) \\cdot (-5) = 25$ — ein Quadrat ist **nie negativ**. Also gibt es keine solche Zahl."
+      },
+      {
+        "kind": "mistake",
+        "body": "Nicht verwechseln: $-\\sqrt{25} = -5$ existiert. Aber $\\sqrt{-25}$ nicht."
+      },
+      {
+        "kind": "answer",
+        "body": "Nicht definiert."
+      }
+    ],
+    "tags": [
+      "wurzeln",
+      "konzept"
+    ]
+  }
+]

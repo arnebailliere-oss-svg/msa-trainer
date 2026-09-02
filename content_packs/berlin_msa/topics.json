@@ -91,6 +91,27 @@
     "parentId": "MATH_ALG"
   },
   {
+    "id": "MATH_ALG_EQU_QUAD",
+    "subject": "MATH",
+    "code": "ALG_EQU_QUAD",
+    "name": "Quadratische Gleichungen (pq-Formel)",
+    "parentId": "MATH_ALG"
+  },
+  {
+    "id": "MATH_ALG_POW",
+    "subject": "MATH",
+    "code": "ALG_POW",
+    "name": "Potenzen und Wurzeln",
+    "parentId": "MATH_ALG"
+  },
+  {
+    "id": "MATH_ALG_LGS",
+    "subject": "MATH",
+    "code": "ALG_LGS",
+    "name": "Lineare Gleichungssysteme",
+    "parentId": "MATH_ALG"
+  },
+  {
     "id": "MATH_FUNC",
     "subject": "MATH",
     "code": "MATH_FUNC",

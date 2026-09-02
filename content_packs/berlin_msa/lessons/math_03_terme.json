@@ -1,0 +1,53 @@
+[
+  {
+    "id": "L_MATH_ALG_EQU",
+    "subject": "MATH",
+    "topicId": "MATH_ALG_EQU_LINEAR",
+    "alsoFor": ["MATH_ALG_TERMS_SIMPLIFY", "MATH_ALG_BRACKETS", "MATH_ALG_EQU_WORD"],
+    "title": "Terme und Gleichungen",
+    "intro": "Gleichungen lösen ist **die** Grundlage für viele Prüfungsaufgaben — von Sachaufgaben bis zu Funktionen. Das Prinzip ist immer dasselbe: Beide Seiten gleich behandeln, bis $x$ allein steht.",
+    "source": "Adaptiert nach Prüfungshefte MSA Mathe Berlin 2027, Kap. 2.1",
+    "sections": [
+      {
+        "kind": "what",
+        "title": "Term, Gleichung, Lösungsmenge",
+        "body": "Ein **Term** ist ein sinnvoller Rechenausdruck aus Zahlen, Variablen und Rechenzeichen: $4a + 3$, $2x^2 - 5$.\n\nEine **Gleichung** verbindet zwei Terme mit einem Gleichheitszeichen: $x + 5 = 7$.\n\nDie **Lösungsmenge** $L$ enthält alle Werte für $x$, die die Gleichung wahr machen: $x^2 = 4 \\Rightarrow L = \\{2; -2\\}$."
+      },
+      {
+        "kind": "formula",
+        "title": "Äquivalenzumformungen — die Waage",
+        "body": "Eine Gleichung ist wie eine **Waage**: Was du links tust, musst du auch rechts tun. Dann bleibt die Lösungsmenge gleich. Erlaubt ist auf beiden Seiten:\n\n- die gleiche Zahl **addieren** oder **subtrahieren**\n- mit der gleichen Zahl **multiplizieren** (nicht mit 0!)\n- durch die gleiche Zahl **dividieren** (nicht durch 0!)\n\nBeispiel: $2x - 3 = 4x + 5 \\;|\\; -2x - 5 \\;\\Rightarrow\\; -8 = 2x \\;|\\; : 2 \\;\\Rightarrow\\; x = -4$"
+      },
+      {
+        "kind": "terms",
+        "title": "Die Rechengesetze",
+        "body": "- **Kommutativgesetz** — Vertauschen: $a + b = b + a$, $a \\cdot b = b \\cdot a$\n- **Assoziativgesetz** — Klammern versetzen: $(a + b) + c = a + (b + c)$\n- **Distributivgesetz** — Ausmultiplizieren und Ausklammern: $a \\cdot (b + c) = ab + ac$\n\nBeispiel: $2(x + y) = 2x + 2y$ und rückwärts $2x + 4y = 2(x + 2y)$"
+      },
+      {
+        "kind": "example",
+        "title": "Binomische Formeln",
+        "body": "$(a + b)^2 = a^2 + 2ab + b^2$\n\n$(a - b)^2 = a^2 - 2ab + b^2$\n\n$(a + b)(a - b) = a^2 - b^2$\n\nMit Zahlen: $(x + 3)^2 = x^2 + 6x + 9$, $(x - 3)^2 = x^2 - 6x + 9$, $(x + 3)(x - 3) = x^2 - 9$"
+      },
+      {
+        "kind": "steps",
+        "title": "Lineare Gleichung lösen — so gehst du vor",
+        "body": "1. **Klammern auflösen** (Distributivgesetz).\n2. **Zusammenfassen**: gleiche Variablen, gleiche Zahlen.\n3. Alle **$x$ auf eine Seite**, alle Zahlen auf die andere (addieren/subtrahieren).\n4. Durch den **Faktor vor $x$** teilen.\n5. **Probe**: Lösung einsetzen.\n\n$2(x + 5) = 10x + 2 \\Rightarrow 2x + 10 = 10x + 2 \\;|\\; -2x - 2 \\Rightarrow 8 = 8x \\Rightarrow x = 1$"
+      },
+      {
+        "kind": "formula",
+        "title": "Quadratische Gleichungen: die pq-Formel",
+        "body": "Steht $x^2$ in der Gleichung, bringst du sie zuerst in die **Normalform** $x^2 + px + q = 0$ (alles auf eine Seite, dann durch den Faktor vor $x^2$ teilen). Dann:\n\n$$x_{1,2} = -\\frac{p}{2} \\pm \\sqrt{\\left(\\frac{p}{2}\\right)^2 - q}$$\n\nUnter der Wurzel negativ → **keine** Lösung. Null → **eine** Lösung. Positiv → **zwei** Lösungen.\n\nBeispiel: $x^2 + 14x - 15 = 0$: $x_{1,2} = -7 \\pm \\sqrt{49 + 15} = -7 \\pm 8 \\Rightarrow x_1 = 1,\\; x_2 = -15$"
+      },
+      {
+        "kind": "mistake",
+        "title": "Typische Fehler",
+        "body": "- **Vorzeichen** beim Rüberbringen: $-3$ nach rechts wird zu $+3$.\n- Beim Ausmultiplizieren **jeden** Summanden in der Klammer multiplizieren: $2(x + 5) = 2x + 10$, nicht $2x + 5$.\n- **Niemals durch 0 teilen** — der berühmte „Beweis“ $1 = 2$ teilt heimlich durch $(1 - 1) = 0$.\n- pq-Formel: $p$ und $q$ **mit Vorzeichen** ablesen, und erst in Normalform bringen."
+      },
+      {
+        "kind": "remember",
+        "title": "Merke",
+        "body": "Gleichung = **Waage**. Klammern auf, zusammenfassen, $x$ isolieren, Probe. Bei $x^2$: Normalform, dann **pq-Formel**."
+      }
+    ]
+  }
+]

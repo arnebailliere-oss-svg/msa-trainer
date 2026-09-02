@@ -4,7 +4,10 @@
  */
 import { expect, test, type Page } from "@playwright/test";
 
-const shot = (page: Page, name: string) => page.screenshot({ path: `e2e/screenshots/${test.info().project.name}-${name}.png`, fullPage: true });
+const shot = async (page: Page, name: string) => {
+  await page.waitForTimeout(500); // let entry animations settle
+  await page.screenshot({ path: `e2e/screenshots/${test.info().project.name}-${name}.png`, fullPage: true });
+};
 
 test("full flow", async ({ page }) => {
   await page.goto("/#/");

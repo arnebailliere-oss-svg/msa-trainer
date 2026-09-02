@@ -94,7 +94,8 @@ export function sampleVariables(spec: VariantSpec, rng: Rng, maxTries = 2000): V
  * Placeholders: {{x}}, {{= expr}}, {{= expr | filter}}, {{= expr | fixed:2}}.
  * Filters: num (default), fixed:n, frac, fractex, euro, raw, sign, abs, int.
  */
-const PLACEHOLDER = /\{\{\s*=?\s*([^}|]+?)\s*(?:\|\s*([a-z]+)(?::([^}\s]+))?\s*)?\}\}/g;
+// Body may not contain braces so `\frac{{{a}}}{{{b}}}` (TeX brace + placeholder) still works.
+const PLACEHOLDER = /\{\{\s*=?\s*([^{}|]+?)\s*(?:\|\s*([a-z]+)(?::([^}\s]+))?\s*)?\}\}/g;
 
 export function renderTemplate(text: string, vars: VarValues): string {
   if (!text.includes("{{")) return text;

@@ -50,6 +50,55 @@ export function normalizeTerm(value: string): string {
     .replace(/(\d)\*([a-z])/g, "$1$2"); // 3*x → 3x
 }
 
+/** Turn a student-style term ("3x(x+2)", "x²−4", "2·x:4") into evaluator syntax. */
+export function termToExpr(term: string): string {
+  let s = normalizeTerm(term);
+  s = s
+    .replace(/(\d)([a-z(])/g, "$1*$2") // 3x, 2(
+    .replace(/([a-z)])(\()/g, "$1*(") // x(, )(
+    .replace(/(\))([a-z0-9])/g, ")*$1") // )x, )2
+    .replace(/([a-z])([a-z])/g, "$1*$2")
+    .replace(/([a-z])([a-z])/g, "$1*$2"); // xyz → x*y*z (two passes for overlaps)
+  return s;
+}
+
+const TERM_VARS = /[a-z]/g;
+
+/**
+ * Numeric equivalence of two terms: evaluate both at several sample points.
+ * Returns null when either term cannot be evaluated (then fall back to string comparison).
+ */
+export function termsEquivalent(a: string, b: string, evaluate: (expr: string, vars: Record<string, number>) => number): boolean | null {
+  const ea = termToExpr(a);
+  const eb = termToExpr(b);
+  if (!ea || !eb) return null;
+  const names = [...new Set([...(ea.match(TERM_VARS) ?? []), ...(eb.match(TERM_VARS) ?? [])])].sort();
+  let compared = 0;
+  for (let i = 0; i < 7; i++) {
+    const vars: Record<string, number> = {};
+    names.forEach((n, j) => (vars[n] = 0.37 + 1.31 * i + 0.53 * j - (i % 2 ? 2.2 : 0)));
+    let va: number;
+    let vb: number;
+    try {
+      va = evaluate(ea, vars);
+      vb = evaluate(eb, vars);
+    } catch {
+      if (i === 0) {
+        // If the correct term itself is not evaluable we cannot judge numerically.
+        try {
+          evaluate(eb, vars);
+        } catch {
+          return null;
+        }
+      }
+      continue;
+    }
+    if (Math.abs(va - vb) > 1e-6 * (1 + Math.abs(vb))) return false;
+    compared++;
+  }
+  return compared >= 3 ? true : null;
+}
+
 export interface Fraction {
   num: number;
   den: number;

@@ -1,0 +1,1068 @@
+[
+  {
+    "id": "MATH_EQU_ADD_T1",
+    "subject": "MATH",
+    "topicId": "MATH_ALG_EQU_LINEAR",
+    "difficulty": 1,
+    "qtype": "SHORT",
+    "prompt": "Löse die Gleichung: $x {{= b | sign}} = {{c}}$",
+    "payload": {
+      "answer_type": "number"
+    },
+    "solution": {
+      "kind": "computed",
+      "expr": "c - b"
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "body": "$x$ soll allein stehen. Die Zahl neben $x$ bringst du mit der **Gegenrechnung** auf die andere Seite."
+      },
+      {
+        "kind": "steps",
+        "body": "$x {{= b | sign}} = {{c}} \\quad | {{= -b | sign}}$\n\n$x = {{c}} {{= -b | sign}} = {{= c - b}}$\n\nProbe: ${{= c-b}} {{= b | sign}} = {{c}}$ ✓"
+      },
+      {
+        "kind": "answer",
+        "body": "$x = {{= c - b}}$, also $L = \\{{{= c - b}}\\}$"
+      }
+    ],
+    "tags": [
+      "gleichung",
+      "linear",
+      "drill"
+    ],
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "b": {
+          "type": "int",
+          "min": -12,
+          "max": 12
+        },
+        "x": {
+          "type": "int",
+          "min": -10,
+          "max": 15
+        }
+      },
+      "derived": {
+        "c": "x + b"
+      },
+      "constraints": [
+        "b != 0",
+        "x != 0"
+      ]
+    },
+    "source": "Verallgemeinert nach Prüfungshefte 2027, 2.1 Aufgabe 1a"
+  },
+  {
+    "id": "MATH_EQU_MUL_T1",
+    "subject": "MATH",
+    "topicId": "MATH_ALG_EQU_LINEAR",
+    "difficulty": 1,
+    "qtype": "SHORT",
+    "prompt": "Löse die Gleichung: ${{a}}x = {{c}}$",
+    "payload": {
+      "answer_type": "number"
+    },
+    "solution": {
+      "kind": "computed",
+      "expr": "c / a"
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "body": "${{a}}x$ heißt ${{a}} \\cdot x$. Die Gegenrechnung zu „mal {{a}}“ ist „geteilt durch {{a}}“."
+      },
+      {
+        "kind": "steps",
+        "body": "${{a}}x = {{c}} \\quad | : {{a}}$\n\n$x = \\frac{{{c}}}{{{a}}} = {{= c / a}}$"
+      },
+      {
+        "kind": "answer",
+        "body": "$x = {{= c / a}}$"
+      }
+    ],
+    "tags": [
+      "gleichung",
+      "linear",
+      "drill"
+    ],
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "a": {
+          "type": "int",
+          "min": 2,
+          "max": 12
+        },
+        "x": {
+          "type": "int",
+          "min": -9,
+          "max": 12
+        }
+      },
+      "derived": {
+        "c": "a * x"
+      },
+      "constraints": [
+        "x != 0",
+        "x != 1"
+      ]
+    }
+  },
+  {
+    "id": "MATH_EQU_AXB_T1",
+    "subject": "MATH",
+    "topicId": "MATH_ALG_EQU_LINEAR",
+    "difficulty": 2,
+    "qtype": "SHORT",
+    "prompt": "Löse die Gleichung: ${{a}}x {{= b | sign}} = {{c}}$",
+    "payload": {
+      "answer_type": "number"
+    },
+    "solution": {
+      "kind": "computed",
+      "expr": "(c - b) / a"
+    },
+    "explanation": [
+      {
+        "kind": "steps",
+        "body": "1. Zahl auf die andere Seite: ${{a}}x {{= b | sign}} = {{c}} \\quad | {{= -b | sign}}$\n   ${{a}}x = {{= c - b}}$\n2. Durch den Faktor vor $x$ teilen: $| : {{a}}$\n   $x = \\frac{{{= c - b}}}{{{a}}} = {{= (c - b) / a}}$\n3. Probe: ${{a}} \\cdot {{= (c-b)/a}} {{= b | sign}} = {{c}}$ ✓"
+      },
+      {
+        "kind": "mistake",
+        "body": "Erst **plus/minus**, dann **mal/geteilt** — die Reihenfolge ist wichtig. Wer zuerst durch {{a}} teilt, muss auch {{b | abs}} durch {{a}} teilen."
+      },
+      {
+        "kind": "answer",
+        "body": "$x = {{= (c - b) / a}}$"
+      }
+    ],
+    "tags": [
+      "gleichung",
+      "linear",
+      "drill"
+    ],
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "a": {
+          "type": "int",
+          "min": 2,
+          "max": 9
+        },
+        "b": {
+          "type": "int",
+          "min": -15,
+          "max": 15
+        },
+        "x": {
+          "type": "int",
+          "min": -8,
+          "max": 12
+        }
+      },
+      "derived": {
+        "c": "a * x + b"
+      },
+      "constraints": [
+        "b != 0",
+        "x != 0",
+        "x != 1"
+      ]
+    }
+  },
+  {
+    "id": "MATH_EQU_BOTH_SIDES_T1",
+    "subject": "MATH",
+    "topicId": "MATH_ALG_EQU_LINEAR",
+    "difficulty": 3,
+    "qtype": "SHORT",
+    "prompt": "Löse die Gleichung: ${{a}}x {{= b | sign}} = {{c}}x {{= d | sign}}$",
+    "payload": {
+      "answer_type": "number"
+    },
+    "solution": {
+      "kind": "computed",
+      "expr": "(d - b) / (a - c)"
+    },
+    "explanation": [
+      {
+        "kind": "steps",
+        "body": "1. Alle $x$ auf eine Seite: $| {{= -c | sign}}x$\n   ${{= a - c}}x {{= b | sign}} = {{d}}$\n2. Alle Zahlen auf die andere Seite: $| {{= -b | sign}}$\n   ${{= a - c}}x = {{= d - b}}$\n3. Durch ${{= a - c}}$ teilen:\n   $x = \\frac{{{= d - b}}}{{{= a - c}}} = {{= (d - b) / (a - c)}}$\n4. Probe: links ${{a}} \\cdot {{= (d-b)/(a-c)}} {{= b | sign}} = {{= a*(d-b)/(a-c) + b}}$, rechts ${{c}} \\cdot {{= (d-b)/(a-c)}} {{= d | sign}} = {{= c*(d-b)/(a-c) + d}}$ ✓"
+      },
+      {
+        "kind": "remember",
+        "body": "$x$-Terme links sammeln, Zahlen rechts — oder umgekehrt. Hauptsache getrennt."
+      },
+      {
+        "kind": "answer",
+        "body": "$x = {{= (d - b) / (a - c)}}$"
+      }
+    ],
+    "tags": [
+      "gleichung",
+      "linear",
+      "drill"
+    ],
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "a": {
+          "type": "int",
+          "min": 2,
+          "max": 9
+        },
+        "c": {
+          "type": "int",
+          "min": 1,
+          "max": 8
+        },
+        "b": {
+          "type": "int",
+          "min": -12,
+          "max": 12
+        },
+        "x": {
+          "type": "int",
+          "min": -7,
+          "max": 9
+        }
+      },
+      "derived": {
+        "d": "(a - c) * x + b"
+      },
+      "constraints": [
+        "a != c",
+        "b != 0",
+        "d != 0",
+        "x != 0",
+        "x != 1"
+      ]
+    },
+    "source": "Verallgemeinert nach Prüfungshefte 2027, 2.1 Aufgabe 1c"
+  },
+  {
+    "id": "MATH_EQU_BRACKET_T1",
+    "subject": "MATH",
+    "topicId": "MATH_ALG_EQU_LINEAR",
+    "difficulty": 3,
+    "qtype": "SHORT",
+    "prompt": "Löse die Gleichung: ${{a}} \\cdot (x {{= b | sign}}) = {{c}}$",
+    "payload": {
+      "answer_type": "number"
+    },
+    "solution": {
+      "kind": "computed",
+      "expr": "c / a - b"
+    },
+    "explanation": [
+      {
+        "kind": "steps",
+        "body": "**Weg 1 – Klammer auflösen:**\n${{a}}x {{= a*b | sign}} = {{c}} \\quad | {{= -a*b | sign}}$\n${{a}}x = {{= c - a*b}} \\quad | : {{a}}$\n$x = {{= c/a - b}}$\n\n**Weg 2 – erst durch {{a}} teilen:**\n$x {{= b | sign}} = {{= c / a}} \\quad | {{= -b | sign}}$\n$x = {{= c/a - b}}$"
+      },
+      {
+        "kind": "mistake",
+        "body": "Beim Auflösen wird **jeder** Summand in der Klammer mit {{a}} multipliziert: ${{a}} \\cdot (x {{= b | sign}}) = {{a}}x {{= a*b | sign}}$."
+      },
+      {
+        "kind": "answer",
+        "body": "$x = {{= c/a - b}}$"
+      }
+    ],
+    "tags": [
+      "gleichung",
+      "klammer",
+      "drill"
+    ],
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "a": {
+          "type": "int",
+          "min": 2,
+          "max": 7
+        },
+        "b": {
+          "type": "int",
+          "min": -9,
+          "max": 9
+        },
+        "x": {
+          "type": "int",
+          "min": -6,
+          "max": 10
+        }
+      },
+      "derived": {
+        "c": "a * (x + b)"
+      },
+      "constraints": [
+        "b != 0",
+        "x != 0"
+      ]
+    },
+    "source": "Verallgemeinert nach Prüfungshefte 2027, 2.1 Aufgabe 1b"
+  },
+  {
+    "id": "MATH_EQU_KEINE_LOESUNG_MCQ",
+    "subject": "MATH",
+    "topicId": "MATH_ALG_EQU_LINEAR",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "Welche Lösungsmenge hat die Gleichung $x = x + 1$?",
+    "payload": {
+      "choices": [
+        "$L = \\{\\}$ (keine Lösung)",
+        "$L = \\{1\\}$",
+        "$L = \\{0\\}$",
+        "$L = \\mathbb{R}$ (alle Zahlen)"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "$L = \\{\\}$ (keine Lösung)"
+    },
+    "explanation": [
+      {
+        "kind": "steps",
+        "body": "$x = x + 1 \\quad | - x$\n\n$0 = 1$ — das ist **falsch**, egal welchen Wert $x$ hat. Also gibt es keine Lösung: $L = \\{\\}$."
+      },
+      {
+        "kind": "remember",
+        "body": "Fällt $x$ weg und bleibt eine **falsche** Aussage ($0 = 1$) → keine Lösung. Bleibt eine **wahre** Aussage ($0 = 0$) → alle Zahlen sind Lösung."
+      },
+      {
+        "kind": "answer",
+        "body": "$L = \\{\\}$"
+      }
+    ],
+    "tags": [
+      "gleichung",
+      "loesungsmenge",
+      "konzept"
+    ],
+    "source": "Nach Prüfungshefte 2027, 2.1 Aufgabe 1d"
+  },
+  {
+    "id": "MATH_EQU_BEWEIS_FEHLER_MCQ",
+    "subject": "MATH",
+    "topicId": "MATH_ALG_EQU_LINEAR",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "Hier wird „bewiesen“, dass $1 = 2$ ist:\n\n$2 \\cdot 0 = 1 \\cdot 0 \\;\\Leftrightarrow\\; 2 \\cdot (1 - 1) = 1 \\cdot (1 - 1) \\;|\\; : (1 - 1) \\;\\Leftrightarrow\\; 2 = 1$\n\nWo liegt der Fehler?",
+    "payload": {
+      "choices": [
+        "Es wird durch $(1 - 1) = 0$ geteilt — das ist verboten.",
+        "$2 \\cdot 0$ ist nicht gleich $1 \\cdot 0$.",
+        "$(1 - 1)$ darf man nicht für 0 einsetzen.",
+        "Es gibt keinen Fehler, der Beweis ist richtig."
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "Es wird durch $(1 - 1) = 0$ geteilt — das ist verboten."
+    },
+    "explanation": [
+      {
+        "kind": "steps",
+        "body": "Die erste Zeile stimmt: $0 = 0$. Der Fehler ist die Umformung $| : (1 - 1)$: das ist eine **Division durch 0**, und die ist keine erlaubte Äquivalenzumformung."
+      },
+      {
+        "kind": "remember",
+        "body": "Multiplizieren und Dividieren sind nur mit Zahlen **ungleich 0** erlaubt."
+      },
+      {
+        "kind": "answer",
+        "body": "Division durch $(1 - 1) = 0$."
+      }
+    ],
+    "tags": [
+      "gleichung",
+      "aequivalenzumformung",
+      "konzept"
+    ],
+    "source": "Nach Prüfungshefte 2027, 2.1 Aufgabe 2"
+  },
+  {
+    "id": "MATH_TERM_ZUSAMMENFASSEN_T1",
+    "subject": "MATH",
+    "topicId": "MATH_ALG_TERMS_SIMPLIFY",
+    "difficulty": 1,
+    "qtype": "SHORT",
+    "prompt": "Fasse zusammen: ${{a}}x + {{b}}x$",
+    "payload": {
+      "answer_type": "term",
+      "require_simplified": true
+    },
+    "solution": {
+      "value": "{{= a+b}}x"
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "body": "$x$ ist wie eine Kiste: {{a}} Kisten plus {{b}} Kisten sind {{= a+b}} Kisten."
+      },
+      {
+        "kind": "steps",
+        "body": "${{a}}x + {{b}}x = ({{a}} + {{b}})x = {{= a+b}}x$"
+      },
+      {
+        "kind": "answer",
+        "body": "${{= a+b}}x$"
+      }
+    ],
+    "tags": [
+      "term",
+      "zusammenfassen",
+      "drill"
+    ],
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "a": {
+          "type": "int",
+          "min": 2,
+          "max": 12
+        },
+        "b": {
+          "type": "int",
+          "min": 1,
+          "max": 12
+        }
+      }
+    }
+  },
+  {
+    "id": "MATH_TERM_ZUSAMMENFASSEN_T2",
+    "subject": "MATH",
+    "topicId": "MATH_ALG_TERMS_SIMPLIFY",
+    "difficulty": 2,
+    "qtype": "SHORT",
+    "prompt": "Fasse so weit wie möglich zusammen: ${{a}}x + {{b}} {{= c | sign}}x {{= d | sign}}$",
+    "payload": {
+      "answer_type": "term",
+      "require_simplified": true
+    },
+    "solution": {
+      "value": "{{= a+c}}x{{= b+d | sign}}"
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "body": "Nur **gleichartige** Glieder darf man zusammenfassen: $x$-Glieder mit $x$-Gliedern, Zahlen mit Zahlen."
+      },
+      {
+        "kind": "steps",
+        "body": "1. $x$-Glieder: ${{a}}x {{= c | sign}}x = {{= a+c}}x$\n2. Zahlen: ${{b}} {{= d | sign}} = {{= b+d}}$\n3. Zusammen: ${{= a+c}}x {{= b+d | sign}}$"
+      },
+      {
+        "kind": "mistake",
+        "body": "${{a}}x$ und ${{b}}$ kann man **nicht** zu einem Glied zusammenfassen — Kisten und Äpfel bleiben getrennt."
+      },
+      {
+        "kind": "answer",
+        "body": "${{= a+c}}x {{= b+d | sign}}$"
+      }
+    ],
+    "tags": [
+      "term",
+      "zusammenfassen",
+      "drill"
+    ],
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "a": {
+          "type": "int",
+          "min": 2,
+          "max": 9
+        },
+        "b": {
+          "type": "int",
+          "min": 1,
+          "max": 12
+        },
+        "c": {
+          "type": "int",
+          "min": -8,
+          "max": 8
+        },
+        "d": {
+          "type": "int",
+          "min": -12,
+          "max": 12
+        }
+      },
+      "constraints": [
+        "c != 0",
+        "d != 0",
+        "a + c != 0",
+        "a + c != 1",
+        "b + d != 0"
+      ]
+    }
+  },
+  {
+    "id": "MATH_TERM_AUSMULTIPLIZIEREN_T1",
+    "subject": "MATH",
+    "topicId": "MATH_ALG_BRACKETS",
+    "difficulty": 2,
+    "qtype": "SHORT",
+    "prompt": "Löse die Klammer auf: ${{a}} \\cdot (x {{= b | sign}})$",
+    "payload": {
+      "answer_type": "term",
+      "require_simplified": true
+    },
+    "solution": {
+      "value": "{{a}}x{{= a*b | sign}}"
+    },
+    "explanation": [
+      {
+        "kind": "formula",
+        "body": "Distributivgesetz: $a \\cdot (b + c) = a \\cdot b + a \\cdot c$ — die Zahl vor der Klammer wird mit **jedem** Glied multipliziert."
+      },
+      {
+        "kind": "steps",
+        "body": "${{a}} \\cdot (x {{= b | sign}}) = {{a}} \\cdot x {{= b | sign}} \\cdot {{a}} = {{a}}x {{= a*b | sign}}$"
+      },
+      {
+        "kind": "mistake",
+        "body": "Nicht vergessen, auch die Zahl in der Klammer zu multiplizieren: ${{a}}x {{= b | sign}}$ wäre falsch."
+      },
+      {
+        "kind": "answer",
+        "body": "${{a}}x {{= a*b | sign}}$"
+      }
+    ],
+    "tags": [
+      "term",
+      "klammer",
+      "distributivgesetz",
+      "drill"
+    ],
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "a": {
+          "type": "int",
+          "min": 2,
+          "max": 9
+        },
+        "b": {
+          "type": "int",
+          "min": -9,
+          "max": 9
+        }
+      },
+      "constraints": [
+        "b != 0"
+      ]
+    }
+  },
+  {
+    "id": "MATH_TERM_AUSMULTIPLIZIEREN_T2",
+    "subject": "MATH",
+    "topicId": "MATH_ALG_BRACKETS",
+    "difficulty": 3,
+    "qtype": "SHORT",
+    "prompt": "Löse die Klammern auf und fasse zusammen: ${{a}}(x + {{b}}) - {{c}}(x - {{d}})$",
+    "payload": {
+      "answer_type": "term",
+      "require_simplified": true
+    },
+    "solution": {
+      "value": "{{= a-c}}x{{= a*b + c*d | sign}}"
+    },
+    "explanation": [
+      {
+        "kind": "steps",
+        "body": "1. Erste Klammer: ${{a}}(x + {{b}}) = {{a}}x + {{= a*b}}$\n2. Zweite Klammer — Achtung Minus davor: $-{{c}}(x - {{d}}) = -{{c}}x + {{= c*d}}$\n3. Zusammenfassen: ${{a}}x - {{c}}x + {{= a*b}} + {{= c*d}} = {{= a-c}}x + {{= a*b + c*d}}$"
+      },
+      {
+        "kind": "mistake",
+        "body": "Ein **Minus vor der Klammer** dreht **alle** Vorzeichen in der Klammer um: $-{{c}}(x - {{d}})$ ergibt $-{{c}}x$ **plus** ${{= c*d}}$."
+      },
+      {
+        "kind": "answer",
+        "body": "${{= a-c}}x {{= a*b + c*d | sign}}$"
+      }
+    ],
+    "tags": [
+      "term",
+      "klammer",
+      "minusklammer",
+      "drill"
+    ],
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "a": {
+          "type": "int",
+          "min": 2,
+          "max": 8
+        },
+        "b": {
+          "type": "int",
+          "min": 1,
+          "max": 9
+        },
+        "c": {
+          "type": "int",
+          "min": 2,
+          "max": 8
+        },
+        "d": {
+          "type": "int",
+          "min": 1,
+          "max": 9
+        }
+      },
+      "constraints": [
+        "a != c",
+        "a - c != 1",
+        "a - c != -1"
+      ]
+    }
+  },
+  {
+    "id": "MATH_TERM_BINOM_T1",
+    "subject": "MATH",
+    "topicId": "MATH_ALG_BRACKETS",
+    "difficulty": 3,
+    "qtype": "SHORT",
+    "prompt": "Wende die binomische Formel an: $(x {{= b | sign}})^2$",
+    "payload": {
+      "answer_type": "term",
+      "require_simplified": true
+    },
+    "solution": {
+      "value": "x^2{{= 2*b | sign}}x+{{= b*b}}"
+    },
+    "explanation": [
+      {
+        "kind": "formula",
+        "body": "$(a + b)^2 = a^2 + 2ab + b^2$ und $(a - b)^2 = a^2 - 2ab + b^2$"
+      },
+      {
+        "kind": "steps",
+        "body": "Hier ist $a = x$ und $b = {{= b | abs}}$:\n\n$(x {{= b | sign}})^2 = x^2 {{= 2*b | sign}}x + {{= b*b}}$\n\nProbe durch Ausmultiplizieren: $(x {{= b | sign}})(x {{= b | sign}}) = x^2 {{= b | sign}}x {{= b | sign}}x + {{= b*b}}$ ✓"
+      },
+      {
+        "kind": "mistake",
+        "body": "$(x {{= b | sign}})^2$ ist **nicht** $x^2 + {{= b*b}}$ — das mittlere Glied $2ab$ wird gern vergessen."
+      },
+      {
+        "kind": "answer",
+        "body": "$x^2 {{= 2*b | sign}}x + {{= b*b}}$"
+      }
+    ],
+    "tags": [
+      "term",
+      "binomische-formel",
+      "drill"
+    ],
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "b": {
+          "type": "int",
+          "min": -9,
+          "max": 9
+        }
+      },
+      "constraints": [
+        "b != 0"
+      ]
+    }
+  },
+  {
+    "id": "MATH_TERM_AUSKLAMMERN_T1",
+    "subject": "MATH",
+    "topicId": "MATH_ALG_BRACKETS",
+    "difficulty": 3,
+    "qtype": "SHORT",
+    "prompt": "Klammere den größtmöglichen Faktor aus: ${{= a*m}}x + {{= a*n}}$",
+    "payload": {
+      "answer_type": "term"
+    },
+    "solution": {
+      "value": "{{a}}({{m}}x+{{n}})"
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "body": "Ausklammern ist das Distributivgesetz **rückwärts**: den gemeinsamen Faktor vor die Klammer ziehen."
+      },
+      {
+        "kind": "steps",
+        "body": "1. Größter gemeinsamer Teiler von {{= a*m}} und {{= a*n}}: **{{a}}**\n2. Beide Glieder durch {{a}} teilen: ${{= a*m}}x : {{a}} = {{m}}x$ und ${{= a*n}} : {{a}} = {{n}}$\n3. ${{= a*m}}x + {{= a*n}} = {{a}} \\cdot ({{m}}x + {{n}})$\n\nProbe durch Ausmultiplizieren: ${{a}} \\cdot {{m}}x + {{a}} \\cdot {{n}} = {{= a*m}}x + {{= a*n}}$ ✓"
+      },
+      {
+        "kind": "answer",
+        "body": "${{a}}({{m}}x + {{n}})$"
+      }
+    ],
+    "tags": [
+      "term",
+      "ausklammern",
+      "drill"
+    ],
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "a": {
+          "type": "int",
+          "min": 2,
+          "max": 9
+        },
+        "m": {
+          "type": "int",
+          "min": 1,
+          "max": 7
+        },
+        "n": {
+          "type": "int",
+          "min": 1,
+          "max": 9
+        }
+      },
+      "constraints": [
+        "gcd(m, n) == 1"
+      ]
+    }
+  },
+  {
+    "id": "MATH_EQU_QUAD_PQ_MCQ_T1",
+    "subject": "MATH",
+    "topicId": "MATH_ALG_EQU_QUAD",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "Löse mit der pq-Formel: $x^2 {{= p | sign}}x {{= q | sign}} = 0$",
+    "payload": {
+      "choices": [
+        "$L = \\{{{r1}}; {{r2}}\\}$",
+        "$L = \\{{{= -r1}}; {{= -r2}}\\}$",
+        "$L = \\{{{r1}}; {{= -r2}}\\}$",
+        "$L = \\{{{= -r1}}; {{r2}}\\}$"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "$L = \\{{{r1}}; {{r2}}\\}$"
+    },
+    "explanation": [
+      {
+        "kind": "terms",
+        "body": "Normalform $x^2 + px + q = 0$ mit $p = {{p}}$ und $q = {{q}}$ (Vorzeichen mitnehmen!)."
+      },
+      {
+        "kind": "formula",
+        "body": "$x_{1,2} = -\\frac{p}{2} \\pm \\sqrt{\\left(\\frac{p}{2}\\right)^2 - q}$"
+      },
+      {
+        "kind": "steps",
+        "body": "$x_{1,2} = {{= -p/2}} \\pm \\sqrt{{{= (p/2)^2}} {{= -q | sign}}} = {{= -p/2}} \\pm \\sqrt{{{= (p/2)^2 - q}}} = {{= -p/2}} \\pm {{= sqrt((p/2)^2 - q)}}$\n\n$x_1 = {{= -p/2}} + {{= sqrt((p/2)^2 - q)}} = {{r1}}$, $x_2 = {{= -p/2}} - {{= sqrt((p/2)^2 - q)}} = {{r2}}$\n\nProbe mit $x_1$: ${{r1}}^2 {{= p | sign}} \\cdot {{r1}} {{= q | sign}} = {{= r1*r1}} {{= p*r1 | sign}} {{= q | sign}} = 0$ ✓"
+      },
+      {
+        "kind": "remember",
+        "body": "Satz von Vieta als Kontrolle: $x_1 + x_2 = -p = {{= -p}}$ und $x_1 \\cdot x_2 = q = {{q}}$."
+      },
+      {
+        "kind": "answer",
+        "body": "$L = \\{{{r1}}; {{r2}}\\}$"
+      }
+    ],
+    "tags": [
+      "gleichung",
+      "quadratisch",
+      "pq-formel",
+      "drill"
+    ],
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "r1": {
+          "type": "int",
+          "min": -9,
+          "max": 9
+        },
+        "r2": {
+          "type": "int",
+          "min": -9,
+          "max": 9
+        }
+      },
+      "derived": {
+        "p": "-(r1 + r2)",
+        "q": "r1 * r2"
+      },
+      "constraints": [
+        "r1 > r2",
+        "r1 != 0",
+        "r2 != 0",
+        "r1 != -r2",
+        "p != 0",
+        "q != 0"
+      ]
+    },
+    "source": "Verallgemeinert nach Prüfungshefte 2027, 2.1 Aufgabe 3b"
+  },
+  {
+    "id": "MATH_EQU_QUAD_PQ_T1",
+    "subject": "MATH",
+    "topicId": "MATH_ALG_EQU_QUAD",
+    "difficulty": 4,
+    "qtype": "SHORT",
+    "prompt": "Bringe die Gleichung in Normalform und löse sie mit der pq-Formel. Gib die **größere** Lösung an: $x^2 {{= p | sign}}x = {{= -q}}$",
+    "payload": {
+      "answer_type": "number"
+    },
+    "solution": {
+      "kind": "computed",
+      "expr": "r1"
+    },
+    "explanation": [
+      {
+        "kind": "steps",
+        "body": "1. Normalform: alles auf eine Seite: $x^2 {{= p | sign}}x {{= q | sign}} = 0$, also $p = {{p}}$, $q = {{q}}$\n2. pq-Formel: $x_{1,2} = {{= -p/2}} \\pm \\sqrt{{{= (p/2)^2}} {{= -q | sign}}} = {{= -p/2}} \\pm {{= sqrt((p/2)^2 - q)}}$\n3. $x_1 = {{r1}}$, $x_2 = {{r2}}$\n\nDie größere Lösung ist ${{r1}}$."
+      },
+      {
+        "kind": "mistake",
+        "body": "Die pq-Formel gilt **nur** für die Normalform $x^2 + px + q = 0$. Erst alles auf eine Seite bringen, dann $p$ und $q$ ablesen."
+      },
+      {
+        "kind": "answer",
+        "body": "$x_1 = {{r1}}$ (und $x_2 = {{r2}}$)"
+      }
+    ],
+    "tags": [
+      "gleichung",
+      "quadratisch",
+      "pq-formel",
+      "normalform",
+      "drill"
+    ],
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "r1": {
+          "type": "int",
+          "min": -9,
+          "max": 12
+        },
+        "r2": {
+          "type": "int",
+          "min": -12,
+          "max": 9
+        }
+      },
+      "derived": {
+        "p": "-(r1 + r2)",
+        "q": "r1 * r2"
+      },
+      "constraints": [
+        "r1 > r2",
+        "r1 != 0",
+        "r2 != 0",
+        "p != 0",
+        "q != 0"
+      ]
+    },
+    "source": "Verallgemeinert nach Prüfungshefte 2027, 2.1 Aufgabe 3c"
+  },
+  {
+    "id": "MATH_EQU_QUAD_ANZAHL_MCQ_T1",
+    "subject": "MATH",
+    "topicId": "MATH_ALG_EQU_QUAD",
+    "difficulty": 4,
+    "qtype": "MCQ",
+    "prompt": "Wie viele Lösungen hat die Gleichung $x^2 {{= p | sign}}x + {{q}} = 0$? (Tipp: Schau unter die Wurzel.)",
+    "payload": {
+      "choices": [
+        "keine Lösung",
+        "genau eine Lösung",
+        "zwei Lösungen",
+        "unendlich viele Lösungen"
+      ],
+      "shuffle": false
+    },
+    "solution": {
+      "correct_choice": "keine Lösung"
+    },
+    "explanation": [
+      {
+        "kind": "steps",
+        "body": "Unter der Wurzel steht $\\left(\\frac{p}{2}\\right)^2 - q = {{= (p/2)^2}} - {{q}} = {{= (p/2)^2 - q}}$.\n\nDas ist **negativ** — aus einer negativen Zahl kann man keine Wurzel ziehen. Also: keine Lösung."
+      },
+      {
+        "kind": "remember",
+        "body": "Unter der Wurzel: negativ → keine, null → eine, positiv → zwei Lösungen."
+      },
+      {
+        "kind": "answer",
+        "body": "Keine Lösung, $L = \\{\\}$."
+      }
+    ],
+    "tags": [
+      "gleichung",
+      "quadratisch",
+      "diskriminante",
+      "drill"
+    ],
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "p": {
+          "type": "int",
+          "min": -8,
+          "max": 8,
+          "step": 2
+        },
+        "q": {
+          "type": "int",
+          "min": 2,
+          "max": 30
+        }
+      },
+      "constraints": [
+        "p != 0",
+        "(p/2)^2 - q < 0"
+      ]
+    }
+  },
+  {
+    "id": "MATH_EQU_QUAD_ANZAHL_MCQ_T2",
+    "subject": "MATH",
+    "topicId": "MATH_ALG_EQU_QUAD",
+    "difficulty": 4,
+    "qtype": "MCQ",
+    "prompt": "Wie viele Lösungen hat die Gleichung $x^2 {{= p | sign}}x {{= q | sign}} = 0$? (Tipp: Schau unter die Wurzel.)",
+    "payload": {
+      "choices": [
+        "keine Lösung",
+        "genau eine Lösung",
+        "zwei Lösungen",
+        "unendlich viele Lösungen"
+      ],
+      "shuffle": false
+    },
+    "solution": {
+      "correct_choice": "zwei Lösungen"
+    },
+    "explanation": [
+      {
+        "kind": "steps",
+        "body": "Unter der Wurzel steht $\\left(\\frac{p}{2}\\right)^2 - q = {{= (p/2)^2}} {{= -q | sign}} = {{= (p/2)^2 - q}}$.\n\nDas ist **positiv** → die Wurzel hat einen Wert, und mit $\\pm$ ergeben sich **zwei** Lösungen: $x_{1,2} = {{= -p/2}} \\pm {{= sqrt((p/2)^2 - q) | fixed:2}}$."
+      },
+      {
+        "kind": "remember",
+        "body": "Unter der Wurzel: negativ → keine, null → eine, positiv → zwei Lösungen."
+      },
+      {
+        "kind": "answer",
+        "body": "Zwei Lösungen."
+      }
+    ],
+    "tags": [
+      "gleichung",
+      "quadratisch",
+      "diskriminante",
+      "drill"
+    ],
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "p": {
+          "type": "int",
+          "min": -8,
+          "max": 8,
+          "step": 2
+        },
+        "q": {
+          "type": "int",
+          "min": -20,
+          "max": 15
+        }
+      },
+      "constraints": [
+        "p != 0",
+        "q != 0",
+        "(p/2)^2 - q > 0"
+      ]
+    }
+  },
+  {
+    "id": "MATH_EQU_WORD_ALTER_T1",
+    "subject": "MATH",
+    "topicId": "MATH_ALG_EQU_WORD",
+    "difficulty": 3,
+    "qtype": "SHORT",
+    "prompt": "{{name1}} ist {{k}}-mal so alt wie {{name2}}. Zusammen sind sie {{s}} Jahre alt. Wie alt ist {{name2}}?",
+    "payload": {
+      "answer_type": "number",
+      "unit": "Jahre"
+    },
+    "solution": {
+      "kind": "computed",
+      "expr": "s / (k + 1)"
+    },
+    "explanation": [
+      {
+        "kind": "steps",
+        "body": "1. Variable festlegen: $x$ = Alter von {{name2}}. Dann ist {{name1}} ${{k}}x$ Jahre alt.\n2. Gleichung aufstellen: $x + {{k}}x = {{s}}$\n3. Zusammenfassen: ${{= k+1}}x = {{s}}$\n4. Teilen: $x = {{s}} : {{= k+1}} = {{= s/(k+1)}}$\n5. Probe: {{name2}} {{= s/(k+1)}}, {{name1}} ${{k}} \\cdot {{= s/(k+1)}} = {{= k*s/(k+1)}}$, zusammen ${{= s/(k+1)}} + {{= k*s/(k+1)}} = {{s}}$ ✓"
+      },
+      {
+        "kind": "remember",
+        "body": "Sachaufgabe: **Variable wählen → Gleichung aufstellen → lösen → Probe im Text.**"
+      },
+      {
+        "kind": "answer",
+        "body": "{{name2}} ist **{{= s/(k+1)}} Jahre** alt."
+      }
+    ],
+    "tags": [
+      "gleichung",
+      "sachaufgabe",
+      "drill"
+    ],
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "k": {
+          "type": "int",
+          "min": 2,
+          "max": 5
+        },
+        "x": {
+          "type": "int",
+          "min": 4,
+          "max": 16
+        },
+        "name1": {
+          "type": "choice",
+          "values": [
+            "Der Vater",
+            "Die Mutter",
+            "Die Tante",
+            "Der Trainer"
+          ]
+        },
+        "name2": {
+          "type": "choice",
+          "values": [
+            "Sohn",
+            "Tochter",
+            "Neffe",
+            "Nichte"
+          ]
+        }
+      },
+      "derived": {
+        "s": "x * (k + 1)"
+      }
+    }
+  }
+]

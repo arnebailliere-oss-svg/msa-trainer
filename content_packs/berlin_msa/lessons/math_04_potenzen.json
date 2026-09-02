@@ -1,0 +1,42 @@
+[
+  {
+    "id": "L_MATH_ALG_POW",
+    "subject": "MATH",
+    "topicId": "MATH_ALG_POW",
+    "title": "Potenzen und Wurzeln",
+    "intro": "Potenzen und Wurzeln begegnen dir in der Prüfung bei Flächen, Volumen, Zinseszins, Pythagoras und Wachstum. Die Rechenregeln sind wenige — sie sicher zu können spart viel Zeit.",
+    "source": "Adaptiert nach Prüfungshefte MSA Mathe Berlin 2027, Kap. 2.2 und Formelblatt",
+    "sections": [
+      {
+        "kind": "what",
+        "title": "Was ist eine Potenz?",
+        "body": "Mehrfaches Multiplizieren einer Zahl mit sich selbst: $2^3 = 2 \\cdot 2 \\cdot 2 = 8$.\n\n$\\text{Potenz} = \\text{Basis}^{\\text{Exponent}}$ — die **Basis** ist 2, der **Exponent** 3."
+      },
+      {
+        "kind": "terms",
+        "title": "Sonderfälle, die du kennen musst",
+        "body": "- **Hoch 0**: jede Zahl (außer 0) hoch 0 ist 1. $193^0 = 1$\n- **Hoch 1**: die Zahl selbst. $73^1 = 73$\n- **Zehnerpotenzen**: $10^x$ ist eine 1 mit $x$ Nullen. $10^5 = 100\\,000$\n- **Negativer Exponent** = Kehrwert: $a^{-x} = \\frac{1}{a^x}$. $5^{-2} = \\frac{1}{25}$, $10^{-2} = 0{,}01$\n- **Bruch im Exponenten** = Wurzel: $a^{\\frac{1}{2}} = \\sqrt{a}$. $9^{\\frac{1}{2}} = \\sqrt{9} = 3$\n- **Wurzel** ist die Umkehrung: $x^n = a \\Leftrightarrow x = \\sqrt[n]{a}$. $2^3 = 8 \\Leftrightarrow 2 = \\sqrt[3]{8}$\n- Die Wurzel aus einer **negativen Zahl** ist nicht definiert: $\\sqrt{-25}$ gibt es nicht."
+      },
+      {
+        "kind": "formula",
+        "title": "Potenzgesetze",
+        "body": "**Gleiche Basis, multiplizieren → Exponenten addieren:** $a^m \\cdot a^n = a^{m+n}$ — $3^4 \\cdot 3^1 = 3^5$\n\n**Gleiche Basis, dividieren → Exponenten subtrahieren:** $\\frac{a^n}{a^m} = a^{n-m}$ — $\\frac{4^5}{4^2} = 4^3$\n\n**Potenz einer Potenz → Exponenten multiplizieren:** $(a^n)^m = a^{n \\cdot m}$ — $(6^4)^2 = 6^8$\n\n**Gleicher Exponent:** $a^n \\cdot b^n = (a \\cdot b)^n$ und $\\frac{a^n}{b^n} = \\left(\\frac{a}{b}\\right)^n$ — $3^2 \\cdot 5^2 = 15^2$"
+      },
+      {
+        "kind": "example",
+        "title": "Wurzelgesetze",
+        "body": "$\\sqrt{a} \\cdot \\sqrt{b} = \\sqrt{a \\cdot b}$ — $\\sqrt{5} \\cdot \\sqrt{20} = \\sqrt{100} = 10$\n\n$\\frac{\\sqrt{a}}{\\sqrt{b}} = \\sqrt{\\frac{a}{b}}$ — $\\sqrt{245} : \\sqrt{5} = \\sqrt{49} = 7$\n\n$(\\sqrt{a})^m = \\sqrt{a^m}$ — $(\\sqrt{2})^4 = \\sqrt{16} = 4$"
+      },
+      {
+        "kind": "mistake",
+        "title": "Typische Fehler",
+        "body": "- $2^3$ ist **nicht** $2 \\cdot 3 = 6$, sondern $2 \\cdot 2 \\cdot 2 = 8$.\n- Bei $a^m \\cdot a^n$ werden die Exponenten **addiert**, nicht multipliziert: $x^2 \\cdot x^3 = x^5$, nicht $x^6$.\n- $a^{-2}$ ist **nicht** negativ: $5^{-2} = \\frac{1}{25}$ ist positiv.\n- $\\sqrt{a + b}$ ist **nicht** $\\sqrt{a} + \\sqrt{b}$: $\\sqrt{9 + 16} = 5$, aber $3 + 4 = 7$."
+      },
+      {
+        "kind": "remember",
+        "title": "Merke",
+        "body": "Mal → Exponenten **plus**. Geteilt → Exponenten **minus**. Potenz hoch Potenz → Exponenten **mal**. Negativer Exponent → **Kehrwert**. Wurzel = Potenz mit **Bruch** im Exponenten."
+      }
+    ]
+  }
+]
