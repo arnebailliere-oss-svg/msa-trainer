@@ -6,12 +6,13 @@ import { SessionController } from "@/core/session";
 import type { AttemptResult, RenderedQuestion, Subject, TrainingMode } from "@/core/types";
 import { Calculator } from "@/ui/Calculator";
 import { ExplanationBlocks } from "@/ui/Explanation";
+import { FormulaSheetDrawer } from "@/ui/FormulaSheet";
 import { MathText } from "@/ui/MathText";
 import { Button, Chip, ProgressBar, SUBJECT_LABEL } from "@/ui/primitives";
 import { isAnswerReady, QuestionRenderer } from "@/ui/renderers";
 
 const MODE_LABEL: Record<TrainingMode, string> = { QUICK: "Schnelltraining", TOPIC: "Thema üben", ERRORS: "Fehler-Training", MSA: "Prüfungs-Modus" };
-const COUNT: Record<TrainingMode, number> = { QUICK: 10, TOPIC: 8, ERRORS: 10, MSA: 8 };
+const COUNT: Record<TrainingMode, number> = { QUICK: 10, TOPIC: 8, ERRORS: 10, MSA: 10 };
 
 export function SessionView() {
   const params = useParams();
@@ -26,6 +27,7 @@ export function SessionView() {
   const [answer, setAnswer] = useState<unknown>(null);
   const [result, setResult] = useState<AttemptResult | null>(null);
   const [showCalc, setShowCalc] = useState(false);
+  const [showFormulas, setShowFormulas] = useState(false);
   const [empty, setEmpty] = useState(false);
 
   useEffect(() => {
@@ -187,9 +189,14 @@ export function SessionView() {
       <div className="fixed inset-x-0 bottom-0 z-20 border-t border-line bg-bg/85 p-3 backdrop-blur-md">
         <div className="mx-auto flex max-w-3xl items-center gap-2">
           {subject === "MATH" && (
-            <Button variant="ghost" onClick={() => setShowCalc((v) => !v)} aria-pressed={showCalc} aria-label="Taschenrechner">
-              🧮
-            </Button>
+            <>
+              <Button variant="ghost" onClick={() => setShowCalc((v) => !v)} aria-pressed={showCalc} aria-label="Taschenrechner">
+                🧮
+              </Button>
+              <Button variant="ghost" onClick={() => setShowFormulas(true)} aria-label="Formelblatt">
+                📐
+              </Button>
+            </>
           )}
           {result ? (
             <Button variant="accent" size="lg" full onClick={next}>
@@ -207,6 +214,7 @@ export function SessionView() {
           <Calculator onClose={() => setShowCalc(false)} />
         </div>
       )}
+      {showFormulas && <FormulaSheetDrawer onClose={() => setShowFormulas(false)} />}
     </div>
   );
 }

@@ -115,6 +115,12 @@ export function DashboardView() {
         <ModeCard title="Prüfungs-Modus" desc="Schwere Aufgaben wie im MSA, ohne Hilfe" emoji="🏁" onClick={() => nav(`/session/MSA/${subject}`)} />
       </div>
 
+      {subject === "MATH" && (
+        <Link to="/formeln" className="mt-3 inline-flex items-center gap-2 rounded-2xl bg-surface px-4 py-2 text-sm font-semibold text-ink-2 hover:bg-surface-2 hover:text-ink">
+          📐 Formelblatt ansehen
+        </Link>
+      )}
+
       {/* Topics */}
       <div className="mt-8 flex items-center justify-between">
         <h2 className="text-xl font-bold">Deine Themen</h2>

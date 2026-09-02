@@ -36,6 +36,16 @@ describe("SHORT number", () => {
     expect(evaluate(q, "12,6").isCorrect).toBe(false);
     expect(evaluate(q, "12,5 cm").isCorrect).toBe(false); // unit typed in: hint, not accepted
   });
+  it("without tolerance, accepts answers that round to the stored precision", () => {
+    const q = rq({ payload: { answer_type: "number" }, solution: { value: 58.3 } });
+    expect(evaluate(q, "58,33").isCorrect).toBe(true);
+    expect(evaluate(q, "58,3").isCorrect).toBe(true);
+    expect(evaluate(q, "58,25").isCorrect).toBe(true);
+    expect(evaluate(q, "58,2").isCorrect).toBe(false);
+    const int = rq({ payload: { answer_type: "number" }, solution: { value: 5 } });
+    expect(evaluate(int, "5,4").isCorrect).toBe(false);
+    expect(evaluate(int, "5").isCorrect).toBe(true);
+  });
   it("gives a hint for non-numbers and shows the unit", () => {
     const r = evaluate(q, "zwölf");
     expect(r.isCorrect).toBe(false);

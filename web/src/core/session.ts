@@ -205,9 +205,12 @@ export class SessionController {
       pool = index.questionsByDifficulty(topicId, min, max, true);
       if (pool.length === 0) pool = index.questionsInSubtree(topicId);
     } else if (mode === "MSA") {
+      // Exam mode: real exam items first, then anything at exam-level difficulty.
       const floor = this.cfg.minDifficulty ?? 3;
-      pool = index.questionsBySubject(subject).filter((q) => q.difficulty >= floor);
-      if (pool.length === 0) pool = index.questionsBySubject(subject);
+      const all = index.questionsBySubject(subject);
+      pool = all.filter((q) => q.tags.includes("exam"));
+      if (pool.length < this.cfg.questionCount) pool = all.filter((q) => q.difficulty >= floor);
+      if (pool.length === 0) pool = all;
     } else {
       const topics = selectTopics(index, store, userId, subject, mode, 5, this.rng, this.now());
       if (topics.length === 0) return undefined;
