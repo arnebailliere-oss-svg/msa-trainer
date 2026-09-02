@@ -1,0 +1,48 @@
+[
+  {
+    "id": "L_MATH_DATA",
+    "subject": "MATH",
+    "topicId": "MATH_DATA_PROB",
+    "alsoFor": ["MATH_DATA_STATS", "MATH_DATA_CHARTS"],
+    "title": "Wahrscheinlichkeit, Statistik und Diagramme",
+    "intro": "Stochastik kommt in der Prüfung fast sicher dran — Würfel, Glücksräder, Urnen, Mittelwerte und Diagramme. Die Grundlage ist die Prozent- und Bruchrechnung.",
+    "source": "Adaptiert nach Prüfungshefte MSA Mathe Berlin 2027, Kap. 3.1 und 3.2",
+    "sections": [
+      {
+        "kind": "terms",
+        "title": "Häufigkeit und Wahrscheinlichkeit",
+        "body": "- **Absolute Häufigkeit**: wie oft ein Ergebnis eintritt. *10 Würfe, 2-mal die 6 → absolute Häufigkeit 2.*\n- **Relative Häufigkeit**: Anteil an allen Versuchen. *$\\frac{2}{10} = 20\\,\\%$*\n- **Ergebnismenge $\\Omega$**: alle möglichen Ergebnisse. *Würfel: $\\Omega = \\{1; 2; 3; 4; 5; 6\\}$*\n- **Wahrscheinlichkeit** $P(E)$: die relative Häufigkeit, die man auf lange Sicht erwartet."
+      },
+      {
+        "kind": "formula",
+        "title": "Die Laplace-Formel",
+        "body": "$$P(E) = \\frac{\\text{Anzahl günstiger Ergebnisse}}{\\text{Anzahl aller Ergebnisse}}$$\n\nEine 5 würfeln: $P = \\frac{1}{6}$. Eine grüne Kugel aus 2 blauen, 6 roten, 4 grünen: $P = \\frac{4}{12} = \\frac{1}{3}$.\n\n**Gegenereignis**: $P(\\text{nicht } E) = 1 - P(E)$. *Keine rote Kugel: $1 - \\frac{6}{12} = \\frac{1}{2}$.*"
+      },
+      {
+        "kind": "steps",
+        "title": "Mehrstufige Experimente: Baumdiagramm und Pfadregeln",
+        "body": "Wird ein Experiment mehrfach wiederholt (zweimal Münze werfen, dreimal am Glücksrad drehen), hilft ein **Baumdiagramm**.\n\n1. **Produktregel** (1. Pfadregel): Die Wahrscheinlichkeit **eines Pfades** ist das Produkt der Wahrscheinlichkeiten entlang des Pfades.\n2. **Summenregel** (2. Pfadregel): Gehören mehrere Pfade zum Ereignis, werden ihre Pfadwahrscheinlichkeiten **addiert**.\n\nUrne mit 3 roten und 1 blauen Kugel, zweimal ziehen **mit Zurücklegen**. Eine rote und eine blaue Kugel (Reihenfolge egal):\n\n$P(R,B) + P(B,R) = \\frac{3}{4} \\cdot \\frac{1}{4} + \\frac{1}{4} \\cdot \\frac{3}{4} = \\frac{3}{16} + \\frac{3}{16} = \\frac{3}{8} = 37{,}5\\,\\%$"
+      },
+      {
+        "kind": "terms",
+        "title": "Statistik: Mittelwert, Median, Modalwert, Spannweite",
+        "body": "- **Arithmetisches Mittel** (Durchschnitt): alle Werte addieren, durch die Anzahl teilen. *3, 5, 6, 10: $\\frac{3+5+6+10}{4} = 6$*\n- **Median**: der mittlere Wert der **sortierten** Reihe. Bei gerader Anzahl der Durchschnitt der beiden mittleren. *13, 13, 17, 43, 1000 → Median 17*\n- **Modalwert** (Modus): der häufigste Wert. *→ 13*\n- **Spannweite**: größter minus kleinster Wert. *→ $1000 - 13 = 987$*\n\nDer Median ist unempfindlich gegen Ausreißer (die 1000), der Mittelwert nicht."
+      },
+      {
+        "kind": "example",
+        "title": "Diagramme",
+        "body": "- **Kreisdiagramm**: Anteile als Sektoren. Winkel = Anteil · 360°. *12 von 36 Kindern → $\\frac{12}{36} \\cdot 360° = 120°$*\n- **Säulendiagramm**: absolute Werte als senkrechte Säulen; Höhe der Achse am größten Wert ausrichten.\n- **Balkendiagramm**: wie Säulen, nur waagerecht.\n- **Streifendiagramm**: Anteile in Prozent in einem Streifen, 100 % = alle Werte zusammen."
+      },
+      {
+        "kind": "mistake",
+        "title": "Typische Fehler",
+        "body": "- Beim Median **erst sortieren**. Ohne Sortieren ist der „mittlere“ Wert Zufall.\n- Bei „mindestens einmal“ mit dem **Gegenereignis** rechnen: $1 - P(\\text{keinmal})$.\n- Pfadwahrscheinlichkeiten werden **multipliziert**, nicht addiert — addiert wird nur über verschiedene Pfade.\n- Kreisdiagramm: Prozent mal **360°**, nicht mal 100."
+      },
+      {
+        "kind": "remember",
+        "title": "Merke",
+        "body": "**Günstig durch möglich.** Entlang des Pfades **mal**, über Pfade **plus**. Median = Mitte der **sortierten** Reihe. Kreisdiagramm: Anteil **· 360°**."
+      }
+    ]
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(tasklist *)",
+      "Bash(npx vitest run)",
+      "Bash(npx tsc -b)",
+      "Bash(npx tsx scripts/build-content.ts --check)",
+      "Bash(npm test)",
+      "Bash(npm run typecheck)"
+    ]
+  }
+}

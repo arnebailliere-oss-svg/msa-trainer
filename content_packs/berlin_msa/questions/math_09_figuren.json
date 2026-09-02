@@ -1,0 +1,339 @@
+[
+  {
+    "id": "MATH_GEO_RECHTECK_FLAECHE_T1",
+    "subject": "MATH",
+    "topicId": "MATH_GEO_AREA_BASIC",
+    "difficulty": 2,
+    "qtype": "SHORT",
+    "prompt": "Ein Rechteck hat die Seiten $a = {{a}}$ cm und $b = {{b}}$ dm. Berechne den Flächeninhalt in dm².",
+    "payload": { "answer_type": "number", "unit": "dm²", "tolerance": 0.01 },
+    "solution": { "kind": "computed", "expr": "a / 10 * b", "round": 2 },
+    "explanation": [
+      { "kind": "what", "body": "Zwei verschiedene Einheiten — **erst umrechnen**, dann rechnen. Gefragt ist dm², also $a$ in dm." },
+      { "kind": "steps", "body": "1. $a = {{a}}$ cm $= {{= a/10}}$ dm\n2. $A = a \\cdot b = {{= a/10}} \\cdot {{b}} = {{= a/10*b}}\\,\\text{dm}^2$" },
+      { "kind": "mistake", "body": "${{a}} \\cdot {{b}} = {{= a*b}}$ wäre falsch — cm mal dm ergibt keine sinnvolle Einheit." },
+      { "kind": "answer", "body": "{{= a/10*b}} dm²" }
+    ],
+    "tags": ["geometrie", "rechteck", "flaeche", "einheiten", "drill"],
+    "source": "Verallgemeinert nach Prüfungshefte 2027, 5.3 Aufgabe 1a",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "a": { "type": "int", "min": 30, "max": 300, "step": 10 },
+        "b": { "type": "int", "min": 2, "max": 12 }
+      }
+    }
+  },
+  {
+    "id": "MATH_GEO_RECHTECK_UMFANG_T1",
+    "subject": "MATH",
+    "topicId": "MATH_GEO_AREA_BASIC",
+    "difficulty": 1,
+    "qtype": "SHORT",
+    "prompt": "Berechne den Umfang eines Rechtecks mit $a = {{a}}$ cm und $b = {{b}}$ cm.",
+    "payload": { "answer_type": "number", "unit": "cm" },
+    "solution": { "kind": "computed", "expr": "2 * a + 2 * b" },
+    "explanation": [
+      { "kind": "formula", "body": "$u = 2a + 2b = 2 \\cdot (a + b)$ — einmal außen herum." },
+      { "kind": "steps", "body": "$u = 2 \\cdot {{a}} + 2 \\cdot {{b}} = {{= 2*a}} + {{= 2*b}} = {{= 2*a + 2*b}}$ cm" },
+      { "kind": "answer", "body": "{{= 2*a+2*b}} cm" }
+    ],
+    "tags": ["geometrie", "rechteck", "umfang", "drill"],
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "a": { "type": "int", "min": 3, "max": 40 },
+        "b": { "type": "int", "min": 2, "max": 30 }
+      },
+      "constraints": ["a != b"]
+    }
+  },
+  {
+    "id": "MATH_GEO_QUADRAT_T1",
+    "subject": "MATH",
+    "topicId": "MATH_GEO_AREA_BASIC",
+    "difficulty": 1,
+    "qtype": "SHORT",
+    "prompt": "Ein Quadrat hat den Umfang $u = {{= 4*a}}$ cm. Berechne seinen Flächeninhalt.",
+    "payload": { "answer_type": "number", "unit": "cm²" },
+    "solution": { "kind": "computed", "expr": "a * a" },
+    "explanation": [
+      { "kind": "steps", "body": "1. Seitenlänge aus dem Umfang: $a = u : 4 = {{= 4*a}} : 4 = {{a}}$ cm\n2. Fläche: $A = a^2 = {{a}}^2 = {{= a*a}}\\,\\text{cm}^2$" },
+      { "kind": "answer", "body": "{{= a*a}} cm²" }
+    ],
+    "tags": ["geometrie", "quadrat", "flaeche", "umfang", "drill"],
+    "variants": {
+      "enabled": true,
+      "variables": { "a": { "type": "int", "min": 2, "max": 25 } }
+    }
+  },
+  {
+    "id": "MATH_GEO_DREIECK_T1",
+    "subject": "MATH",
+    "topicId": "MATH_GEO_AREA_BASIC",
+    "difficulty": 2,
+    "qtype": "SHORT",
+    "prompt": "Ein Dreieck hat die Grundseite $g = {{g}}$ cm und die Höhe $h = {{h}}$ cm. Berechne den Flächeninhalt.",
+    "payload": { "answer_type": "number", "unit": "cm²", "tolerance": 0.01 },
+    "solution": { "kind": "computed", "expr": "g * h / 2", "round": 2 },
+    "explanation": [
+      { "kind": "formula", "body": "$A = \\frac{1}{2} \\cdot g \\cdot h$ — ein Dreieck ist ein halbes Rechteck (oder Parallelogramm)." },
+      { "kind": "steps", "body": "$A = \\frac{1}{2} \\cdot {{g}} \\cdot {{h}} = \\frac{{{= g*h}}}{2} = {{= g*h/2}}\\,\\text{cm}^2$" },
+      { "kind": "mistake", "body": "Das $\\frac{1}{2}$ nicht vergessen — sonst hast du das Rechteck berechnet." },
+      { "kind": "answer", "body": "{{= g*h/2}} cm²" }
+    ],
+    "tags": ["geometrie", "dreieck", "flaeche", "drill"],
+    "source": "Verallgemeinert nach Prüfungshefte 2027, 5.3 Aufgabe 3",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "g": { "type": "int", "min": 3, "max": 20 },
+        "h": { "type": "int", "min": 2, "max": 15 }
+      }
+    }
+  },
+  {
+    "id": "MATH_GEO_PARALLELOGRAMM_MCQ_T1",
+    "subject": "MATH",
+    "topicId": "MATH_GEO_AREA_BASIC",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Ein Parallelogramm hat die Grundseite $a = {{a}}$ cm, die schräge Seite $b = {{b}}$ cm und die Höhe $h = {{h}}$ cm. Wie groß ist der Flächeninhalt?",
+    "payload": { "choices": ["{{= a*h}} cm²", "{{= a*b}} cm²", "{{= a*h/2}} cm²", "{{= 2*a + 2*b}} cm²"], "shuffle": true },
+    "solution": { "correct_choice": "{{= a*h}} cm²" },
+    "explanation": [
+      { "kind": "formula", "body": "$A = a \\cdot h$ — Grundseite mal **Höhe**. Die schräge Seite $b$ spielt für die Fläche keine Rolle." },
+      { "kind": "steps", "body": "$A = {{a}} \\cdot {{h}} = {{= a*h}}\\,\\text{cm}^2$" },
+      { "kind": "mistake", "body": "${{a}} \\cdot {{b}} = {{= a*b}}$ ist der Klassiker — die Höhe steht **senkrecht** auf der Grundseite, die schräge Seite nicht." },
+      { "kind": "answer", "body": "{{= a*h}} cm²" }
+    ],
+    "tags": ["geometrie", "parallelogramm", "flaeche", "drill"],
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "a": { "type": "int", "min": 4, "max": 20 },
+        "h": { "type": "int", "min": 2, "max": 12 },
+        "b": { "type": "int", "min": 3, "max": 15 }
+      },
+      "constraints": ["b > h", "a != b", "a * h != a * b", "a * h != 2 * a + 2 * b", "a * b != 2 * a + 2 * b"]
+    }
+  },
+  {
+    "id": "MATH_GEO_TRAPEZ_T1",
+    "subject": "MATH",
+    "topicId": "MATH_GEO_AREA_BASIC",
+    "difficulty": 3,
+    "qtype": "SHORT",
+    "prompt": "Ein Trapez hat die parallelen Seiten $a = {{a}}$ cm und $c = {{c}}$ cm und die Höhe $h = {{h}}$ cm. Berechne den Flächeninhalt.",
+    "payload": { "answer_type": "number", "unit": "cm²", "tolerance": 0.01 },
+    "solution": { "kind": "computed", "expr": "(a + c) / 2 * h", "round": 2 },
+    "explanation": [
+      { "kind": "formula", "body": "$A = \\frac{1}{2}(a + c) \\cdot h$ — Mittellinie (Durchschnitt der parallelen Seiten) mal Höhe. (Formelblatt)" },
+      { "kind": "steps", "body": "1. Mittellinie: $m = \\frac{{{a}} + {{c}}}{2} = {{= (a+c)/2}}$ cm\n2. $A = m \\cdot h = {{= (a+c)/2}} \\cdot {{h}} = {{= (a+c)/2*h}}\\,\\text{cm}^2$" },
+      { "kind": "answer", "body": "{{= (a+c)/2*h}} cm²" }
+    ],
+    "tags": ["geometrie", "trapez", "flaeche", "drill"],
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "a": { "type": "int", "min": 6, "max": 20 },
+        "c": { "type": "int", "min": 2, "max": 12 },
+        "h": { "type": "int", "min": 2, "max": 10 }
+      },
+      "constraints": ["a > c"]
+    }
+  },
+  {
+    "id": "MATH_GEO_KREIS_FLAECHE_T1",
+    "subject": "MATH",
+    "topicId": "MATH_GEO_CIRCLE",
+    "difficulty": 2,
+    "qtype": "SHORT",
+    "prompt": "Berechne den Flächeninhalt eines Kreises mit dem Radius $r = {{r}}$ cm. (Runde auf eine Nachkommastelle.)",
+    "payload": { "answer_type": "number", "unit": "cm²", "tolerance": 0.15 },
+    "solution": { "kind": "computed", "expr": "pi * r^2", "round": 1 },
+    "explanation": [
+      { "kind": "formula", "body": "$A = \\pi \\cdot r^2$" },
+      { "kind": "steps", "body": "$A = \\pi \\cdot {{r}}^2 = \\pi \\cdot {{= r*r}} \\approx {{= pi*r*r | fixed:1}}\\,\\text{cm}^2$" },
+      { "kind": "remember", "body": "Erst quadrieren, dann mal $\\pi$ (≈ 3,14). Flächeneinheit **hoch 2**." },
+      { "kind": "answer", "body": "≈ {{= pi*r*r | fixed:1}} cm²" }
+    ],
+    "tags": ["geometrie", "kreis", "flaeche", "drill"],
+    "source": "Verallgemeinert nach Prüfungshefte 2027, 5.3 Aufgabe 1b",
+    "variants": {
+      "enabled": true,
+      "variables": { "r": { "type": "choice", "values": [1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 6, 7, 7.5, 8, 9, 10, 12] } }
+    }
+  },
+  {
+    "id": "MATH_GEO_KREIS_UMFANG_D_T1",
+    "subject": "MATH",
+    "topicId": "MATH_GEO_CIRCLE",
+    "difficulty": 2,
+    "qtype": "SHORT",
+    "prompt": "Ein Kreis hat den Durchmesser $d = {{d}}$ cm. Berechne seinen Umfang. (Runde auf eine Nachkommastelle.)",
+    "payload": { "answer_type": "number", "unit": "cm", "tolerance": 0.15 },
+    "solution": { "kind": "computed", "expr": "pi * d", "round": 1 },
+    "explanation": [
+      { "kind": "formula", "body": "$u = 2 \\cdot \\pi \\cdot r = \\pi \\cdot d$" },
+      { "kind": "steps", "body": "Der Durchmesser ist schon gegeben: $u = \\pi \\cdot {{d}} \\approx {{= pi*d | fixed:1}}$ cm\n\n(Oder über $r = {{= d/2}}$: $2 \\cdot \\pi \\cdot {{= d/2}}$ — dasselbe.)" },
+      { "kind": "answer", "body": "≈ {{= pi*d | fixed:1}} cm" }
+    ],
+    "tags": ["geometrie", "kreis", "umfang", "drill"],
+    "source": "Verallgemeinert nach Prüfungshefte 2027, 5.3 Aufgabe 1c",
+    "variants": {
+      "enabled": true,
+      "variables": { "d": { "type": "int", "min": 3, "max": 40 } }
+    }
+  },
+  {
+    "id": "MATH_GEO_KREIS_FLAECHE_AUS_UMFANG_T1",
+    "subject": "MATH",
+    "topicId": "MATH_GEO_CIRCLE",
+    "difficulty": 4,
+    "qtype": "SHORT",
+    "prompt": "Ein Kreis hat den Umfang $u = {{= 2*pi*r | fixed:1}}$ cm. Berechne seinen Flächeninhalt. (Runde auf ganze cm².)",
+    "payload": { "answer_type": "number", "unit": "cm²", "tolerance": 2 },
+    "solution": { "kind": "computed", "expr": "pi * r^2", "round": 0 },
+    "explanation": [
+      { "kind": "what", "body": "Zwei Schritte: aus dem Umfang den **Radius**, aus dem Radius die **Fläche**." },
+      { "kind": "steps", "body": "1. $u = 2\\pi r \\Rightarrow r = \\frac{u}{2\\pi} = \\frac{{{= 2*pi*r | fixed:1}}}{2\\pi} \\approx {{r}}$ cm\n2. $A = \\pi r^2 = \\pi \\cdot {{r}}^2 = \\pi \\cdot {{= r*r}} \\approx {{= pi*r*r | fixed:0}}\\,\\text{cm}^2$" },
+      { "kind": "answer", "body": "≈ {{= pi*r*r | fixed:0}} cm²" }
+    ],
+    "tags": ["geometrie", "kreis", "flaeche", "umfang", "drill"],
+    "source": "Verallgemeinert nach Prüfungshefte 2027, 5.3 Aufgabe 2",
+    "variants": {
+      "enabled": true,
+      "variables": { "r": { "type": "int", "min": 2, "max": 15 } }
+    }
+  },
+  {
+    "id": "MATH_GEO_WINKELSUMME_T1",
+    "subject": "MATH",
+    "topicId": "MATH_GEO_AREA_BASIC",
+    "difficulty": 1,
+    "qtype": "SHORT",
+    "prompt": "In einem Dreieck sind $\\alpha = {{a}}°$ und $\\beta = {{b}}°$. Berechne $\\gamma$.",
+    "payload": { "answer_type": "number", "unit": "°" },
+    "solution": { "kind": "computed", "expr": "180 - a - b" },
+    "explanation": [
+      { "kind": "formula", "body": "Innenwinkelsumme im Dreieck: $\\alpha + \\beta + \\gamma = 180°$" },
+      { "kind": "steps", "body": "$\\gamma = 180° - {{a}}° - {{b}}° = {{= 180 - a - b}}°$" },
+      { "kind": "answer", "body": "γ = {{= 180-a-b}}°" }
+    ],
+    "tags": ["geometrie", "winkel", "winkelsumme", "drill"],
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "a": { "type": "int", "min": 20, "max": 110 },
+        "b": { "type": "int", "min": 15, "max": 100 }
+      },
+      "constraints": ["a + b < 170", "a != b"]
+    }
+  },
+  {
+    "id": "MATH_GEO_WINKEL_NECK_T1",
+    "subject": "MATH",
+    "topicId": "MATH_GEO_AREA_BASIC",
+    "difficulty": 3,
+    "qtype": "SHORT",
+    "prompt": "Wie groß ist die Innenwinkelsumme in einem {{n}}-Eck?",
+    "payload": { "answer_type": "number", "unit": "°" },
+    "solution": { "kind": "computed", "expr": "(n - 2) * 180" },
+    "explanation": [
+      { "kind": "formula", "body": "Innenwinkelsumme im $n$-Eck: $(n - 2) \\cdot 180°$ — ein $n$-Eck lässt sich in $n - 2$ Dreiecke zerlegen." },
+      { "kind": "steps", "body": "$({{n}} - 2) \\cdot 180° = {{= n-2}} \\cdot 180° = {{= (n-2)*180}}°$" },
+      { "kind": "remember", "body": "Dreieck 180°, Viereck 360°, Fünfeck 540° — pro Ecke mehr kommen 180° dazu." },
+      { "kind": "answer", "body": "{{= (n-2)*180}}°" }
+    ],
+    "tags": ["geometrie", "winkel", "vieleck", "drill"],
+    "variants": {
+      "enabled": true,
+      "variables": { "n": { "type": "int", "min": 4, "max": 12 } }
+    }
+  },
+  {
+    "id": "MATH_GEO_WINKELART_SPITZ_MCQ_T1",
+    "subject": "MATH",
+    "topicId": "MATH_GEO_AREA_BASIC",
+    "difficulty": 1,
+    "qtype": "MCQ",
+    "prompt": "Wie heißt ein Winkel von {{w}}°?",
+    "payload": { "choices": ["spitzer Winkel", "rechter Winkel", "stumpfer Winkel", "überstumpfer Winkel"], "shuffle": false },
+    "solution": { "correct_choice": "spitzer Winkel" },
+    "explanation": [
+      { "kind": "terms", "body": "- spitz: unter 90°\n- recht: genau 90°\n- stumpf: zwischen 90° und 180°\n- gestreckt: genau 180°\n- überstumpf: zwischen 180° und 360°" },
+      { "kind": "answer", "body": "{{w}}° ist kleiner als 90° → **spitzer** Winkel." }
+    ],
+    "tags": ["geometrie", "winkel", "drill"],
+    "variants": {
+      "enabled": true,
+      "variables": { "w": { "type": "int", "min": 5, "max": 89 } }
+    }
+  },
+  {
+    "id": "MATH_GEO_WINKELART_STUMPF_MCQ_T1",
+    "subject": "MATH",
+    "topicId": "MATH_GEO_AREA_BASIC",
+    "difficulty": 1,
+    "qtype": "MCQ",
+    "prompt": "Wie heißt ein Winkel von {{w}}°?",
+    "payload": { "choices": ["spitzer Winkel", "rechter Winkel", "stumpfer Winkel", "überstumpfer Winkel"], "shuffle": false },
+    "solution": { "correct_choice": "stumpfer Winkel" },
+    "explanation": [
+      { "kind": "terms", "body": "- spitz: unter 90°\n- recht: genau 90°\n- stumpf: zwischen 90° und 180°\n- gestreckt: genau 180°\n- überstumpf: zwischen 180° und 360°" },
+      { "kind": "answer", "body": "{{w}}° liegt zwischen 90° und 180° → **stumpfer** Winkel." }
+    ],
+    "tags": ["geometrie", "winkel", "drill"],
+    "variants": {
+      "enabled": true,
+      "variables": { "w": { "type": "int", "min": 91, "max": 179 } }
+    }
+  },
+  {
+    "id": "MATH_GEO_KOORDINATEN_MCQ_T1",
+    "subject": "MATH",
+    "topicId": "MATH_GEO_AREA_BASIC",
+    "difficulty": 1,
+    "qtype": "MCQ",
+    "prompt": "Welche Koordinaten hat der Punkt $P$ im Koordinatensystem?",
+    "figure": "<svg viewBox='0 0 260 260' width='260' height='260' role='img' aria-label='Koordinatensystem mit Punkt P'><g stroke='currentColor' stroke-opacity='0.18' stroke-width='1'><line x1='10' y1='30' x2='250' y2='30'/><line x1='10' y1='50' x2='250' y2='50'/><line x1='10' y1='70' x2='250' y2='70'/><line x1='10' y1='90' x2='250' y2='90'/><line x1='10' y1='110' x2='250' y2='110'/><line x1='10' y1='150' x2='250' y2='150'/><line x1='10' y1='170' x2='250' y2='170'/><line x1='10' y1='190' x2='250' y2='190'/><line x1='10' y1='210' x2='250' y2='210'/><line x1='10' y1='230' x2='250' y2='230'/><line x1='30' y1='10' x2='30' y2='250'/><line x1='50' y1='10' x2='50' y2='250'/><line x1='70' y1='10' x2='70' y2='250'/><line x1='90' y1='10' x2='90' y2='250'/><line x1='110' y1='10' x2='110' y2='250'/><line x1='150' y1='10' x2='150' y2='250'/><line x1='170' y1='10' x2='170' y2='250'/><line x1='190' y1='10' x2='190' y2='250'/><line x1='210' y1='10' x2='210' y2='250'/><line x1='230' y1='10' x2='230' y2='250'/></g><line x1='10' y1='130' x2='252' y2='130' stroke='currentColor' stroke-width='1.5'/><line x1='130' y1='250' x2='130' y2='8' stroke='currentColor' stroke-width='1.5'/><polygon points='252,130 244,126 244,134' fill='currentColor'/><polygon points='130,8 126,16 134,16' fill='currentColor'/><text x='246' y='145' font-size='11' fill='currentColor'>x</text><text x='136' y='16' font-size='11' fill='currentColor'>y</text><text x='148' y='143' font-size='10' fill='currentColor'>1</text><text x='229' y='143' font-size='10' fill='currentColor'>5</text><text x='134' y='114' font-size='10' fill='currentColor'>1</text><text x='134' y='34' font-size='10' fill='currentColor'>5</text><text x='24' y='143' font-size='10' fill='currentColor'>−5</text><text x='134' y='234' font-size='10' fill='currentColor'>−5</text><circle cx='{{= 130 + 20*x | raw}}' cy='{{= 130 - 20*y | raw}}' r='5' fill='#ff6b9d'/><text x='{{= 138 + 20*x | raw}}' y='{{= 126 - 20*y | raw}}' font-size='13' font-weight='700' fill='currentColor'>P</text></svg>",
+    "payload": { "choices": ["$P({{x}} \\,|\\, {{y}})$", "$P({{y}} \\,|\\, {{x}})$", "$P({{= -x}} \\,|\\, {{y}})$", "$P({{x}} \\,|\\, {{= -y}})$"], "shuffle": true },
+    "solution": { "correct_choice": "$P({{x}} \\,|\\, {{y}})$" },
+    "explanation": [
+      { "kind": "steps", "body": "1. Vom Ursprung **waagerecht** zählen: {{= x | abs}} Kästchen nach {{= if(x > 0, 1, 0) | raw}} → $x = {{x}}$\n2. Dann **senkrecht**: {{= y | abs}} Kästchen nach {{= if(y > 0, 1, 0) | raw}} → $y = {{y}}$\n3. Schreibweise: **erst $x$, dann $y$**: $P({{x}} \\,|\\, {{y}})$" },
+      { "kind": "mistake", "body": "$P({{y}} \\,|\\, {{x}})$ vertauscht die Achsen. Merksatz: **erst zur Seite gehen, dann hoch (oder runter)** — wie beim Treppensteigen." },
+      { "kind": "answer", "body": "$P({{x}} \\,|\\, {{y}})$" }
+    ],
+    "tags": ["geometrie", "koordinaten", "drill"],
+    "source": "Nach Prüfungshefte 2027, 5.2 (Koordinatensysteme)",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "x": { "type": "int", "min": -5, "max": 5 },
+        "y": { "type": "int", "min": -5, "max": 5 }
+      },
+      "constraints": ["x != 0", "y != 0", "abs(x) != abs(y)"]
+    }
+  },
+  {
+    "id": "MATH_GEO_KONSTRUKTION_MCQ",
+    "subject": "MATH",
+    "topicId": "MATH_GEO_AREA_BASIC",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Du sollst ein Dreieck mit $c = 10$ cm, $\\alpha = 40°$ und $a = 7$ cm konstruieren. Welcher Schritt kommt **nach** dem Zeichnen von $c$ und dem Abmessen von $\\alpha$?",
+    "payload": {
+      "choices": ["Um $B$ einen Kreisbogen mit Radius $a = 7$ cm zeichnen (Zirkel).", "Um $A$ einen Kreisbogen mit Radius $a = 7$ cm zeichnen.", "Den Winkel $\\beta$ schätzen und einzeichnen.", "Die Seite $b$ mit dem Lineal beliebig lang zeichnen."],
+      "shuffle": true
+    },
+    "solution": { "correct_choice": "Um $B$ einen Kreisbogen mit Radius $a = 7$ cm zeichnen (Zirkel)." },
+    "explanation": [
+      { "kind": "steps", "body": "Seite $a$ liegt **gegenüber** von $A$, also geht sie von $B$ nach $C$. Deshalb: Zirkel in $B$ einstechen, Radius 7 cm, Kreisbogen — wo er die Hilfslinie von $\\alpha$ schneidet, liegt $C$." },
+      { "kind": "remember", "body": "Strecken → Lineal. Winkel → Geodreieck. Längen abtragen → **Zirkel**." },
+      { "kind": "answer", "body": "Kreisbogen um $B$ mit $r = a = 7$ cm." }
+    ],
+    "tags": ["geometrie", "konstruktion", "konzept"],
+    "source": "Nach Prüfungshefte 2027, 5.4 Beispielkonstruktion"
+  }
+]

@@ -1,0 +1,482 @@
+[
+  {
+    "id": "MATH_PROB_REL_HAEUFIGKEIT_T1",
+    "subject": "MATH",
+    "topicId": "MATH_DATA_PROB",
+    "difficulty": 1,
+    "qtype": "SHORT",
+    "prompt": "Bei einer Kontrolle haben {{k}} von {{n}} {{ding}} Mängel. Bestimme die relative Häufigkeit in Prozent.",
+    "payload": { "answer_type": "number", "unit": "%" },
+    "solution": { "kind": "computed", "expr": "k / n * 100" },
+    "explanation": [
+      { "kind": "terms", "body": "- Absolute Häufigkeit: {{k}} (so oft trat „Mangel“ auf)\n- Relative Häufigkeit: Anteil an allen {{n}} Versuchen" },
+      { "kind": "steps", "body": "$\\frac{{{k}}}{{{n}}} = {{= k/n}} = {{= k/n*100}}\\,\\%$" },
+      { "kind": "answer", "body": "{{= k/n*100}} %" }
+    ],
+    "tags": ["stochastik", "haeufigkeit", "drill"],
+    "source": "Verallgemeinert nach Prüfungshefte 2027, 3.1 Aufgabe 3a",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "n": { "type": "choice", "values": [20, 25, 40, 50, 80, 100, 200, 250, 500] },
+        "p": { "type": "int", "min": 4, "max": 60, "step": 2 },
+        "ding": { "type": "choice", "values": ["Fahrrädern", "Glühbirnen", "Handys", "Rollern", "Schulbüchern"] }
+      },
+      "derived": { "k": "n * p / 100" },
+      "constraints": ["isint(k)", "k > 0"]
+    }
+  },
+  {
+    "id": "MATH_PROB_ERWARTUNG_T1",
+    "subject": "MATH",
+    "topicId": "MATH_DATA_PROB",
+    "difficulty": 2,
+    "qtype": "SHORT",
+    "prompt": "Erfahrungsgemäß haben {{p}} % aller {{ding}} Mängel. Bei einer Kontrolle werden {{n}} {{ding}} überprüft. Wie viele davon werden voraussichtlich Mängel haben?",
+    "payload": { "answer_type": "number" },
+    "solution": { "kind": "computed", "expr": "n * p / 100" },
+    "explanation": [
+      { "kind": "what", "body": "Die relative Häufigkeit {{p}} % ist die **Wahrscheinlichkeit** für „Mangel“. Erwartete Anzahl = Wahrscheinlichkeit · Anzahl." },
+      { "kind": "steps", "body": "${{p}}\\,\\% \\cdot {{n}} = {{= p/100}} \\cdot {{n}} = {{= n*p/100}}$" },
+      { "kind": "answer", "body": "Voraussichtlich **{{= n*p/100}}** {{ding}}." }
+    ],
+    "tags": ["stochastik", "erwartung", "drill"],
+    "source": "Verallgemeinert nach Prüfungshefte 2027, 3.1 Aufgabe 3b",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "n": { "type": "int", "min": 50, "max": 900, "step": 10 },
+        "p": { "type": "choice", "values": [5, 10, 12, 15, 20, 25, 30, 40] },
+        "ding": { "type": "choice", "values": ["Fahrräder", "Glühbirnen", "Bauteile", "Roller", "Kopfhörer"] }
+      },
+      "constraints": ["isint(n * p / 100)"]
+    }
+  },
+  {
+    "id": "MATH_PROB_URNE_T1",
+    "subject": "MATH",
+    "topicId": "MATH_DATA_PROB",
+    "difficulty": 2,
+    "qtype": "SHORT",
+    "prompt": "In einer Urne sind {{b}} blaue, {{r}} rote und {{g}} grüne Kugeln. Eine Kugel wird zufällig gezogen. Wie groß ist die Wahrscheinlichkeit für eine **grüne** Kugel? (Bruch, vollständig gekürzt)",
+    "payload": { "answer_type": "fraction", "require_reduced": true },
+    "solution": { "value": "{{= g/(b+r+g) | frac}}" },
+    "explanation": [
+      { "kind": "formula", "body": "$P(E) = \\frac{\\text{günstige}}{\\text{alle}}$" },
+      { "kind": "steps", "body": "1. Alle Kugeln: ${{b}} + {{r}} + {{g}} = {{= b+r+g}}$\n2. Günstig (grün): {{g}}\n3. $P(\\text{grün}) = \\frac{{{g}}}{{{= b+r+g}}} = {{= g/(b+r+g) | fractex}} \\approx {{= g/(b+r+g)*100 | fixed:1}}\\,\\%$" },
+      { "kind": "answer", "body": "${{= g/(b+r+g) | fractex}}$" }
+    ],
+    "tags": ["stochastik", "laplace", "drill"],
+    "source": "Verallgemeinert nach Prüfungshefte 2027, 3.1 Aufgabe 4a",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "b": { "type": "int", "min": 1, "max": 8 },
+        "r": { "type": "int", "min": 1, "max": 8 },
+        "g": { "type": "int", "min": 1, "max": 8 }
+      },
+      "constraints": ["b != g", "r != g"]
+    }
+  },
+  {
+    "id": "MATH_PROB_GEGENEREIGNIS_T1",
+    "subject": "MATH",
+    "topicId": "MATH_DATA_PROB",
+    "difficulty": 2,
+    "qtype": "SHORT",
+    "prompt": "In einer Urne sind {{b}} blaue, {{r}} rote und {{g}} grüne Kugeln. Wie groß ist die Wahrscheinlichkeit, **keine rote** Kugel zu ziehen? (Bruch, vollständig gekürzt)",
+    "payload": { "answer_type": "fraction", "require_reduced": true },
+    "solution": { "value": "{{= (b+g)/(b+r+g) | frac}}" },
+    "explanation": [
+      { "kind": "what", "body": "„Keine rote“ ist das **Gegenereignis** von „rot“. Entweder zählst du die nicht-roten Kugeln, oder du rechnest $1 - P(\\text{rot})$." },
+      { "kind": "steps", "body": "Alle: ${{= b+r+g}}$, nicht rot: ${{b}} + {{g}} = {{= b+g}}$\n\n$P(\\text{nicht rot}) = \\frac{{{= b+g}}}{{{= b+r+g}}} = {{= (b+g)/(b+r+g) | fractex}}$\n\nOder: $1 - \\frac{{{r}}}{{{= b+r+g}}} = {{= (b+g)/(b+r+g) | fractex}}$" },
+      { "kind": "answer", "body": "${{= (b+g)/(b+r+g) | fractex}}$" }
+    ],
+    "tags": ["stochastik", "gegenereignis", "drill"],
+    "source": "Verallgemeinert nach Prüfungshefte 2027, 3.1 Aufgabe 4b",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "b": { "type": "int", "min": 1, "max": 8 },
+        "r": { "type": "int", "min": 2, "max": 9 },
+        "g": { "type": "int", "min": 1, "max": 8 }
+      }
+    }
+  },
+  {
+    "id": "MATH_PROB_GLUECKSRAD_GERADE_T1",
+    "subject": "MATH",
+    "topicId": "MATH_DATA_PROB",
+    "difficulty": 2,
+    "qtype": "SHORT",
+    "prompt": "Ein Glücksrad hat {{n}} gleich große Felder mit den Zahlen 1 bis {{n}}. Wie groß ist die Wahrscheinlichkeit, eine **gerade** Zahl zu drehen? (Bruch, vollständig gekürzt)",
+    "payload": { "answer_type": "fraction", "require_reduced": true },
+    "solution": { "value": "{{= floor(n/2)/n | frac}}" },
+    "explanation": [
+      { "kind": "steps", "body": "Gerade Zahlen von 1 bis {{n}}: {{= floor(n/2)}} Stück (2, 4, 6, …). Alle Felder: {{n}}.\n\n$P(\\text{gerade}) = \\frac{{{= floor(n/2)}}}{{{n}}} = {{= floor(n/2)/n | fractex}}$" },
+      { "kind": "remember", "body": "Bei einer **ungeraden** Anzahl Felder gibt es eine ungerade Zahl mehr — dann ist das Spiel „gerade gegen ungerade“ **nicht** gerecht." },
+      { "kind": "answer", "body": "${{= floor(n/2)/n | fractex}}$" }
+    ],
+    "tags": ["stochastik", "laplace", "drill"],
+    "source": "Verallgemeinert nach Prüfungshefte 2027, 3.1 Aufgabe 2",
+    "variants": {
+      "enabled": true,
+      "variables": { "n": { "type": "int", "min": 5, "max": 15 } }
+    }
+  },
+  {
+    "id": "MATH_PROB_GERECHT_MCQ",
+    "subject": "MATH",
+    "topicId": "MATH_DATA_PROB",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Max dreht ein Glücksrad mit den Feldern 1 bis 9. Bei einer geraden Zahl gewinnt Max, sonst Tim. Ist das Spiel gerecht?",
+    "payload": {
+      "choices": ["Nein — Tim hat 5 Felder, Max nur 4.", "Ja — beide haben die gleiche Chance.", "Nein — Max hat 5 Felder, Tim nur 4.", "Das hängt davon ab, wie oft gedreht wird."],
+      "shuffle": true
+    },
+    "solution": { "correct_choice": "Nein — Tim hat 5 Felder, Max nur 4." },
+    "explanation": [
+      { "kind": "steps", "body": "Gerade: 2, 4, 6, 8 → **4** Felder für Max. Ungerade: 1, 3, 5, 7, 9 → **5** Felder für Tim.\n\n$P(\\text{Max}) = \\frac{4}{9}$, $P(\\text{Tim}) = \\frac{5}{9}$ — Tim ist im Vorteil." },
+      { "kind": "remember", "body": "Ein Spiel ist **gerecht**, wenn alle Spieler die gleiche Gewinnwahrscheinlichkeit haben." },
+      { "kind": "answer", "body": "Nicht gerecht — Tim gewinnt mit $\\frac{5}{9}$." }
+    ],
+    "tags": ["stochastik", "gerechtes-spiel", "konzept"],
+    "source": "Nach Prüfungshefte 2027, 3.1 Aufgabe 2"
+  },
+  {
+    "id": "MATH_PROB_PFAD_DREIMAL_T1",
+    "subject": "MATH",
+    "topicId": "MATH_DATA_PROB",
+    "difficulty": 3,
+    "qtype": "SHORT",
+    "prompt": "Ein Glücksrad hat {{n}} gleich große Felder, davon {{r}} rot und {{b}} blau. Es wird dreimal gedreht. Berechne die Wahrscheinlichkeit für **dreimal rot** in Prozent.",
+    "payload": { "answer_type": "number", "unit": "%", "tolerance": 0.05 },
+    "solution": { "kind": "computed", "expr": "(r/n)^3 * 100", "round": 2 },
+    "explanation": [
+      { "kind": "formula", "body": "**Produktregel**: entlang des Pfades werden die Wahrscheinlichkeiten multipliziert." },
+      { "kind": "steps", "body": "$P(\\text{rot}) = \\frac{{{r}}}{{{n}}}$ bei jedem Drehen (das Rad „vergisst“ die vorherigen Drehungen).\n\n$P(R,R,R) = \\frac{{{r}}}{{{n}}} \\cdot \\frac{{{r}}}{{{n}}} \\cdot \\frac{{{r}}}{{{n}}} = \\frac{{{= r*r*r}}}{{{= n*n*n}}} = {{= (r/n)^3 | fixed:4}} \\approx {{= (r/n)^3*100 | fixed:2}}\\,\\%$" },
+      { "kind": "answer", "body": "≈ {{= (r/n)^3*100 | fixed:2}} %" }
+    ],
+    "tags": ["stochastik", "pfadregel", "drill"],
+    "source": "Verallgemeinert nach Prüfungshefte 2027, 3.1 Aufgabe 6a",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "n": { "type": "choice", "values": [4, 5, 8, 10] },
+        "r": { "type": "int", "min": 1, "max": 7 }
+      },
+      "derived": { "b": "n - r" },
+      "constraints": ["r < n", "r >= 1", "b >= 1"]
+    }
+  },
+  {
+    "id": "MATH_PROB_PFAD_REIHENFOLGE_T1",
+    "subject": "MATH",
+    "topicId": "MATH_DATA_PROB",
+    "difficulty": 3,
+    "qtype": "SHORT",
+    "prompt": "Ein Glücksrad hat {{n}} gleich große Felder, davon {{r}} rot und {{b}} blau. Es wird dreimal gedreht. Berechne die Wahrscheinlichkeit für **rot, blau, rot** (genau in dieser Reihenfolge) in Prozent.",
+    "payload": { "answer_type": "number", "unit": "%", "tolerance": 0.05 },
+    "solution": { "kind": "computed", "expr": "(r/n) * (b/n) * (r/n) * 100", "round": 2 },
+    "explanation": [
+      { "kind": "steps", "body": "Ein einziger Pfad: R → B → R.\n\n$P(R,B,R) = \\frac{{{r}}}{{{n}}} \\cdot \\frac{{{b}}}{{{n}}} \\cdot \\frac{{{r}}}{{{n}}} = \\frac{{{= r*b*r}}}{{{= n*n*n}}} \\approx {{= r*b*r/(n*n*n)*100 | fixed:2}}\\,\\%$" },
+      { "kind": "mistake", "body": "„In dieser Reihenfolge“ heißt: **nur dieser eine Pfad**. Wäre die Reihenfolge egal, müsstest du alle Pfade mit zweimal rot und einmal blau addieren (Summenregel)." },
+      { "kind": "answer", "body": "≈ {{= r*b*r/(n*n*n)*100 | fixed:2}} %" }
+    ],
+    "tags": ["stochastik", "pfadregel", "drill"],
+    "source": "Verallgemeinert nach Prüfungshefte 2027, 3.1 Aufgabe 6b",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "n": { "type": "choice", "values": [4, 5, 8, 10] },
+        "r": { "type": "int", "min": 1, "max": 7 }
+      },
+      "derived": { "b": "n - r" },
+      "constraints": ["r < n", "b >= 1"]
+    }
+  },
+  {
+    "id": "MATH_PROB_SUMMENREGEL_T1",
+    "subject": "MATH",
+    "topicId": "MATH_DATA_PROB",
+    "difficulty": 4,
+    "qtype": "SHORT",
+    "prompt": "In einer Urne sind {{r}} rote und {{b}} blaue Kugeln. Es werden zwei Kugeln **mit Zurücklegen** gezogen. Wie groß ist die Wahrscheinlichkeit, eine rote und eine blaue Kugel zu ziehen (Reihenfolge egal)? (Bruch, vollständig gekürzt)",
+    "payload": { "answer_type": "fraction", "require_reduced": true },
+    "solution": { "value": "{{= 2*r*b/(n*n) | frac}}" },
+    "explanation": [
+      { "kind": "what", "body": "„Reihenfolge egal“ → **zwei Pfade** passen: rot–blau **und** blau–rot. Erst Produktregel je Pfad, dann Summenregel." },
+      { "kind": "steps", "body": "Alle Kugeln: ${{n}}$. $P(R) = \\frac{{{r}}}{{{n}}}$, $P(B) = \\frac{{{b}}}{{{n}}}$ (mit Zurücklegen bleiben die Chancen gleich).\n\n$P(R,B) = \\frac{{{r}}}{{{n}}} \\cdot \\frac{{{b}}}{{{n}}} = \\frac{{{= r*b}}}{{{= n*n}}}$\n\n$P(B,R) = \\frac{{{b}}}{{{n}}} \\cdot \\frac{{{r}}}{{{n}}} = \\frac{{{= r*b}}}{{{= n*n}}}$\n\nSumme: $\\frac{{{= 2*r*b}}}{{{= n*n}}} = {{= 2*r*b/(n*n) | fractex}} \\approx {{= 2*r*b/(n*n)*100 | fixed:1}}\\,\\%$" },
+      { "kind": "answer", "body": "${{= 2*r*b/(n*n) | fractex}}$" }
+    ],
+    "tags": ["stochastik", "pfadregel", "summenregel", "drill"],
+    "source": "Verallgemeinert nach Prüfungshefte 2027, 3.1 Beispiel Baumdiagramm (3 rot, 1 blau)",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "r": { "type": "int", "min": 1, "max": 6 },
+        "b": { "type": "int", "min": 1, "max": 6 }
+      },
+      "derived": { "n": "r + b" },
+      "constraints": ["n >= 3", "n <= 10"]
+    }
+  },
+  {
+    "id": "MATH_PROB_ZWEI_WUERFEL_T1",
+    "subject": "MATH",
+    "topicId": "MATH_DATA_PROB",
+    "difficulty": 4,
+    "qtype": "SHORT",
+    "prompt": "Zwei faire Würfel werden gleichzeitig geworfen. Wie groß ist die Wahrscheinlichkeit, dass die Augensumme **mindestens {{s}}** beträgt? (Bruch, vollständig gekürzt)",
+    "payload": { "answer_type": "fraction", "require_reduced": true },
+    "solution": { "value": "{{= (13-s)*(14-s)/72 | frac}}" },
+    "explanation": [
+      { "kind": "what", "body": "Zwei Würfel haben $6 \\cdot 6 = 36$ gleich wahrscheinliche Ergebnisse. Zähle die **günstigen** Paare." },
+      { "kind": "steps", "body": "Augensumme mindestens {{s}} heißt {{s}}, {{= s+1 | int}}, … bis 12.\n\nGünstige Paare: **{{= (13-s)*(14-s)/2}}** (z. B. Summe 12 nur (6|6); Summe 11: (5|6) und (6|5) …)\n\n$P = \\frac{{{= (13-s)*(14-s)/2}}}{36} = {{= (13-s)*(14-s)/72 | fractex}}$" },
+      { "kind": "remember", "body": "(5|6) und (6|5) sind **zwei verschiedene** Ergebnisse — die Würfel sind unterscheidbar." },
+      { "kind": "answer", "body": "${{= (13-s)*(14-s)/72 | fractex}}$" }
+    ],
+    "tags": ["stochastik", "zwei-wuerfel", "drill"],
+    "source": "Verallgemeinert nach Prüfungshefte 2027, 3.1 Aufgabe 8b",
+    "variants": {
+      "enabled": true,
+      "variables": { "s": { "type": "int", "min": 8, "max": 12 } }
+    }
+  },
+  {
+    "id": "MATH_PROB_PASCH_MCQ",
+    "subject": "MATH",
+    "topicId": "MATH_DATA_PROB",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "Zwei faire Würfel werden geworfen. Wie groß ist die Wahrscheinlichkeit für einen **Pasch** (beide zeigen dieselbe Zahl)?",
+    "payload": { "choices": ["$\\frac{1}{6}$", "$\\frac{1}{36}$", "$\\frac{1}{12}$", "$\\frac{1}{3}$"], "shuffle": true },
+    "solution": { "correct_choice": "$\\frac{1}{6}$" },
+    "explanation": [
+      { "kind": "steps", "body": "Alle Ergebnisse: $6 \\cdot 6 = 36$. Günstig: (1|1), (2|2), (3|3), (4|4), (5|5), (6|6) → 6 Stück.\n\n$P = \\frac{6}{36} = \\frac{1}{6}$" },
+      { "kind": "mistake", "body": "$\\frac{1}{36}$ wäre die Wahrscheinlichkeit für **einen bestimmten** Pasch, z. B. (6|6)." },
+      { "kind": "answer", "body": "$\\frac{1}{6}$" }
+    ],
+    "tags": ["stochastik", "zwei-wuerfel", "konzept"],
+    "source": "Nach Prüfungshefte 2027, 3.1 Aufgabe 8a"
+  },
+  {
+    "id": "MATH_PROB_QUALITAET_T1",
+    "subject": "MATH",
+    "topicId": "MATH_DATA_PROB",
+    "difficulty": 4,
+    "qtype": "SHORT",
+    "prompt": "Bei einer Qualitätskontrolle fallen erfahrungsgemäß {{p}} % der Bauteile durch. Ein Prüfer entnimmt zufällig 3 Bauteile. Berechne die Wahrscheinlichkeit in Prozent, dass **alle drei** einwandfrei sind.",
+    "payload": { "answer_type": "number", "unit": "%", "tolerance": 0.05 },
+    "solution": { "kind": "computed", "expr": "(1 - p/100)^3 * 100", "round": 2 },
+    "explanation": [
+      { "kind": "steps", "body": "1. Gegenereignis pro Bauteil: einwandfrei $= 100\\,\\% - {{p}}\\,\\% = {{= 100-p}}\\,\\% = {{= 1-p/100}}$\n2. Drei Bauteile hintereinander (Produktregel): ${{= 1-p/100}} \\cdot {{= 1-p/100}} \\cdot {{= 1-p/100}} = {{= 1-p/100}}^3 \\approx {{= (1-p/100)^3 | fixed:4}}$\n3. In Prozent: $\\approx {{= (1-p/100)^3*100 | fixed:2}}\\,\\%$" },
+      { "kind": "answer", "body": "≈ {{= (1-p/100)^3*100 | fixed:2}} %" }
+    ],
+    "tags": ["stochastik", "pfadregel", "gegenereignis", "drill"],
+    "source": "Verallgemeinert nach Prüfungshefte 2027, 3.1 Aufgabe 9a",
+    "variants": {
+      "enabled": true,
+      "variables": { "p": { "type": "choice", "values": [2, 4, 5, 8, 10, 15, 20, 25] } }
+    }
+  },
+  {
+    "id": "MATH_STATS_MITTELWERT_T1",
+    "subject": "MATH",
+    "topicId": "MATH_DATA_STATS",
+    "difficulty": 1,
+    "qtype": "SHORT",
+    "prompt": "Berechne das arithmetische Mittel von {{a}}, {{b}}, {{c}} und {{d}}.",
+    "payload": { "answer_type": "number" },
+    "solution": { "kind": "computed", "expr": "(a + b + c + d) / 4" },
+    "explanation": [
+      { "kind": "formula", "body": "Arithmetisches Mittel = Summe aller Werte : Anzahl der Werte" },
+      { "kind": "steps", "body": "$\\frac{{{a}} + {{b}} + {{c}} + {{d}}}{4} = \\frac{{{= a+b+c+d}}}{4} = {{= (a+b+c+d)/4}}$" },
+      { "kind": "answer", "body": "{{= (a+b+c+d)/4}}" }
+    ],
+    "tags": ["statistik", "mittelwert", "drill"],
+    "source": "Verallgemeinert nach Prüfungshefte 2027, 3.1 Beispiel (5)",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "m": { "type": "int", "min": 4, "max": 40 },
+        "a": { "type": "int", "min": 1, "max": 30 },
+        "b": { "type": "int", "min": 1, "max": 30 },
+        "c": { "type": "int", "min": 1, "max": 30 }
+      },
+      "derived": { "d": "4 * m - a - b - c" },
+      "constraints": ["d > 0", "d <= 60", "a != b", "b != c", "a != c"]
+    }
+  },
+  {
+    "id": "MATH_STATS_MEDIAN_T1",
+    "subject": "MATH",
+    "topicId": "MATH_DATA_STATS",
+    "difficulty": 2,
+    "qtype": "SHORT",
+    "prompt": "Bestimme den Median der Werte: {{v1}}, {{v2}}, {{v3}}, {{v4}}, {{v5}}",
+    "payload": { "answer_type": "number" },
+    "solution": { "kind": "computed", "expr": "m" },
+    "explanation": [
+      { "kind": "what", "body": "Der **Median** ist der mittlere Wert der **sortierten** Reihe." },
+      { "kind": "steps", "body": "1. Sortieren: {{= m - d2}}, {{= m - d1}}, **{{m}}**, {{= m + d3}}, {{= m + d4}}\n2. Fünf Werte → der 3. Wert ist die Mitte: **{{m}}**" },
+      { "kind": "mistake", "body": "Der Median ist **nicht** der Wert, der in der Aufgabe in der Mitte steht — erst sortieren!" },
+      { "kind": "answer", "body": "Median = {{m}}" }
+    ],
+    "tags": ["statistik", "median", "drill"],
+    "source": "Verallgemeinert nach Prüfungshefte 2027, 3.1 Beispiel (6)",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "m": { "type": "int", "min": 10, "max": 60 },
+        "d1": { "type": "int", "min": 1, "max": 6 },
+        "d2": { "type": "int", "min": 7, "max": 12 },
+        "d3": { "type": "int", "min": 1, "max": 6 },
+        "d4": { "type": "int", "min": 7, "max": 40 }
+      },
+      "derived": { "v1": "m + d3", "v2": "m - d1", "v3": "m + d4", "v4": "m", "v5": "m - d2" }
+    }
+  },
+  {
+    "id": "MATH_STATS_MEDIAN_GERADE_T1",
+    "subject": "MATH",
+    "topicId": "MATH_DATA_STATS",
+    "difficulty": 3,
+    "qtype": "SHORT",
+    "prompt": "Bestimme den Median der Werte: {{v1}}, {{v2}}, {{v3}}, {{v4}}, {{v5}}, {{v6}}",
+    "payload": { "answer_type": "number" },
+    "solution": { "kind": "computed", "expr": "(m1 + m2) / 2" },
+    "explanation": [
+      { "kind": "what", "body": "Bei einer **geraden** Anzahl Werte gibt es zwei mittlere — der Median ist ihr Durchschnitt." },
+      { "kind": "steps", "body": "1. Sortieren: {{= m1 - d2}}, {{= m1 - d1}}, **{{m1}}**, **{{m2}}**, {{= m2 + d3}}, {{= m2 + d4}}\n2. Mitte: 3. und 4. Wert → $\\frac{{{m1}} + {{m2}}}{2} = {{= (m1+m2)/2}}$" },
+      { "kind": "answer", "body": "Median = {{= (m1+m2)/2}}" }
+    ],
+    "tags": ["statistik", "median", "drill"],
+    "source": "Verallgemeinert nach Prüfungshefte 2027, 3.1 Zusammenfassung (6)",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "m1": { "type": "int", "min": 10, "max": 50 },
+        "g": { "type": "int", "min": 1, "max": 5 },
+        "d1": { "type": "int", "min": 1, "max": 5 },
+        "d2": { "type": "int", "min": 6, "max": 12 },
+        "d3": { "type": "int", "min": 1, "max": 5 },
+        "d4": { "type": "int", "min": 6, "max": 30 }
+      },
+      "derived": { "m2": "m1 + g", "v1": "m2 + d3", "v2": "m1 - d2", "v3": "m2", "v4": "m2 + d4", "v5": "m1", "v6": "m1 - d1" }
+    }
+  },
+  {
+    "id": "MATH_STATS_MODUS_SPANNWEITE_T1",
+    "subject": "MATH",
+    "topicId": "MATH_DATA_STATS",
+    "difficulty": 2,
+    "qtype": "SHORT",
+    "prompt": "Gegeben sind die Werte {{v1}}, {{v2}}, {{v3}}, {{v4}}, {{v5}}, {{v6}}. Berechne die **Spannweite**.",
+    "payload": { "answer_type": "number" },
+    "solution": { "kind": "computed", "expr": "hi - lo" },
+    "explanation": [
+      { "kind": "terms", "body": "- **Spannweite** = größter Wert − kleinster Wert\n- (Der **Modalwert** dieser Reihe wäre übrigens {{mo}} — er kommt zweimal vor.)" },
+      { "kind": "steps", "body": "Größter Wert: {{hi}}, kleinster Wert: {{lo}}\n\nSpannweite: ${{hi}} - {{lo}} = {{= hi - lo}}$" },
+      { "kind": "answer", "body": "{{= hi - lo}}" }
+    ],
+    "tags": ["statistik", "spannweite", "modalwert", "drill"],
+    "source": "Verallgemeinert nach Prüfungshefte 2027, 3.1 Zusammenfassung (7)–(8)",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "lo": { "type": "int", "min": 2, "max": 30 },
+        "s": { "type": "int", "min": 15, "max": 80 },
+        "mo": { "type": "int", "min": 5, "max": 60 },
+        "x": { "type": "int", "min": 5, "max": 60 },
+        "y": { "type": "int", "min": 5, "max": 60 }
+      },
+      "derived": { "hi": "lo + s", "v1": "mo", "v2": "hi", "v3": "x", "v4": "lo", "v5": "mo", "v6": "y" },
+      "constraints": ["mo > lo", "mo < hi", "x > lo", "x < hi", "y > lo", "y < hi", "x != mo", "y != mo", "x != y"]
+    }
+  },
+  {
+    "id": "MATH_STATS_FUENFTER_WERT_T1",
+    "subject": "MATH",
+    "topicId": "MATH_DATA_STATS",
+    "difficulty": 3,
+    "qtype": "SHORT",
+    "prompt": "Vier Freunde sind {{h1}} cm, {{h2}} cm, {{h3}} cm und {{h4}} cm groß. Ein fünfter Freund kommt dazu. Wie groß muss er sein, damit alle fünf im Durchschnitt genau {{t}} cm groß sind?",
+    "payload": { "answer_type": "number", "unit": "cm" },
+    "solution": { "kind": "computed", "expr": "5 * t - (h1 + h2 + h3 + h4)" },
+    "explanation": [
+      { "kind": "what", "body": "Rückwärts denken: Wenn der Durchschnitt von 5 Werten {{t}} ist, muss die **Summe** $5 \\cdot {{t}} = {{= 5*t}}$ sein." },
+      { "kind": "steps", "body": "1. Zielsumme: $5 \\cdot {{t}} = {{= 5*t}}$ cm\n2. Bisherige Summe: ${{h1}} + {{h2}} + {{h3}} + {{h4}} = {{= h1+h2+h3+h4}}$ cm\n3. Fünfter Freund: ${{= 5*t}} - {{= h1+h2+h3+h4}} = {{= 5*t - (h1+h2+h3+h4)}}$ cm" },
+      { "kind": "answer", "body": "{{= 5*t - (h1+h2+h3+h4)}} cm" }
+    ],
+    "tags": ["statistik", "mittelwert", "drill"],
+    "source": "Verallgemeinert nach Prüfungshefte 2027, 3.1 Aufgabe 7a",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "h1": { "type": "int", "min": 158, "max": 185 },
+        "h2": { "type": "int", "min": 158, "max": 185 },
+        "h3": { "type": "int", "min": 158, "max": 185 },
+        "h4": { "type": "int", "min": 158, "max": 185 },
+        "t": { "type": "int", "min": 165, "max": 178 }
+      },
+      "constraints": ["5 * t - (h1 + h2 + h3 + h4) >= 150", "5 * t - (h1 + h2 + h3 + h4) <= 200"]
+    }
+  },
+  {
+    "id": "MATH_CHARTS_KREIS_WINKEL_T1",
+    "subject": "MATH",
+    "topicId": "MATH_DATA_CHARTS",
+    "difficulty": 2,
+    "qtype": "SHORT",
+    "prompt": "In einer Klasse mit {{n}} Kindern wählen {{k}} Kinder {{sorte}} als Lieblingseis. Wie groß ist der Winkel des Sektors „{{sorte}}“ im Kreisdiagramm?",
+    "payload": { "answer_type": "number", "unit": "°" },
+    "solution": { "kind": "computed", "expr": "k / n * 360" },
+    "explanation": [
+      { "kind": "formula", "body": "Winkel = Anteil · 360°" },
+      { "kind": "steps", "body": "1. Anteil: $\\frac{{{k}}}{{{n}}} = {{= k/n | fixed:4}}$ (= {{= k/n*100 | fixed:1}} %)\n2. Winkel: ${{= k/n | fixed:4}} \\cdot 360° = {{= k/n*360}}°$" },
+      { "kind": "mistake", "body": "Der ganze Kreis hat **360°**, nicht 100. Prozent musst du also noch in Grad umrechnen." },
+      { "kind": "answer", "body": "{{= k/n*360}}°" }
+    ],
+    "tags": ["diagramme", "kreisdiagramm", "drill"],
+    "source": "Verallgemeinert nach Prüfungshefte 2027, 3.2 Aufgabe (Lieblingseis)",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "n": { "type": "choice", "values": [18, 20, 24, 30, 36, 40, 45, 60] },
+        "k": { "type": "int", "min": 2, "max": 30 },
+        "sorte": { "type": "choice", "values": ["Schoko", "Vanille", "Erdbeere", "Zitrone", "Stracciatella"] }
+      },
+      "constraints": ["k < n", "isint(k / n * 360)"]
+    }
+  },
+  {
+    "id": "MATH_CHARTS_SAEULEN_LESEN_T1",
+    "subject": "MATH",
+    "topicId": "MATH_DATA_CHARTS",
+    "difficulty": 2,
+    "qtype": "SHORT",
+    "prompt": "Das Säulendiagramm zeigt die Lieblingseissorten einer Klasse. Wie viel Prozent der Kinder haben **Vanille** gewählt?",
+    "figure": "<svg viewBox='0 0 340 210' width='340' height='210' role='img' aria-label='Säulendiagramm Lieblingseis'><line x1='40' y1='170' x2='330' y2='170' stroke='currentColor' stroke-width='1.5'/><line x1='40' y1='170' x2='40' y2='20' stroke='currentColor' stroke-width='1.5'/><text x='36' y='24' font-size='11' text-anchor='end' fill='currentColor'>Kinder</text><rect x='60' y='{{= 170 - v1*140/max(v1,v2,v3,v4) | raw}}' width='44' height='{{= v1*140/max(v1,v2,v3,v4) | raw}}' rx='4' fill='#7c6cff'/><text x='82' y='{{= 162 - v1*140/max(v1,v2,v3,v4) | raw}}' font-size='13' font-weight='700' text-anchor='middle' fill='currentColor'>{{v1}}</text><text x='82' y='188' font-size='12' text-anchor='middle' fill='currentColor'>Schoko</text><rect x='130' y='{{= 170 - v2*140/max(v1,v2,v3,v4) | raw}}' width='44' height='{{= v2*140/max(v1,v2,v3,v4) | raw}}' rx='4' fill='#22d3ee'/><text x='152' y='{{= 162 - v2*140/max(v1,v2,v3,v4) | raw}}' font-size='13' font-weight='700' text-anchor='middle' fill='currentColor'>{{v2}}</text><text x='152' y='188' font-size='12' text-anchor='middle' fill='currentColor'>Vanille</text><rect x='200' y='{{= 170 - v3*140/max(v1,v2,v3,v4) | raw}}' width='44' height='{{= v3*140/max(v1,v2,v3,v4) | raw}}' rx='4' fill='#ff6b9d'/><text x='222' y='{{= 162 - v3*140/max(v1,v2,v3,v4) | raw}}' font-size='13' font-weight='700' text-anchor='middle' fill='currentColor'>{{v3}}</text><text x='222' y='188' font-size='12' text-anchor='middle' fill='currentColor'>Erdbeere</text><rect x='270' y='{{= 170 - v4*140/max(v1,v2,v3,v4) | raw}}' width='44' height='{{= v4*140/max(v1,v2,v3,v4) | raw}}' rx='4' fill='#ffc857'/><text x='292' y='{{= 162 - v4*140/max(v1,v2,v3,v4) | raw}}' font-size='13' font-weight='700' text-anchor='middle' fill='currentColor'>{{v4}}</text><text x='292' y='188' font-size='12' text-anchor='middle' fill='currentColor'>Sonstige</text></svg>",
+    "payload": { "answer_type": "number", "unit": "%", "tolerance": 0.1 },
+    "solution": { "kind": "computed", "expr": "v2 / (v1+v2+v3+v4) * 100", "round": 1 },
+    "explanation": [
+      { "kind": "steps", "body": "1. Werte ablesen: Schoko {{v1}}, Vanille {{v2}}, Erdbeere {{v3}}, Sonstige {{v4}}\n2. Gesamtzahl: ${{v1}} + {{v2}} + {{v3}} + {{v4}} = {{= v1+v2+v3+v4}}$ Kinder\n3. Anteil Vanille: $\\frac{{{v2}}}{{{= v1+v2+v3+v4}}} = {{= v2/(v1+v2+v3+v4) | fixed:3}} \\approx {{= v2/(v1+v2+v3+v4)*100 | fixed:1}}\\,\\%$" },
+      { "kind": "remember", "body": "Ein Säulendiagramm zeigt **absolute** Zahlen. Für Prozent brauchst du immer die **Gesamtzahl** als Grundwert." },
+      { "kind": "answer", "body": "≈ {{= v2/(v1+v2+v3+v4)*100 | fixed:1}} %" }
+    ],
+    "tags": ["diagramme", "saeulendiagramm", "prozent", "drill"],
+    "source": "Verallgemeinert nach Prüfungshefte 2027, 3.2 Aufgabe (Lieblingseis)",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "v1": { "type": "int", "min": 4, "max": 16 },
+        "v2": { "type": "int", "min": 4, "max": 16 },
+        "v3": { "type": "int", "min": 2, "max": 12 },
+        "v4": { "type": "int", "min": 1, "max": 8 }
+      },
+      "constraints": ["v1 != v2", "isint((v1+v2+v3+v4) / 2)"]
+    }
+  }
+]

@@ -1,0 +1,213 @@
+[
+  {
+    "id": "MATH_UNITS_CM_M_T1",
+    "subject": "MATH",
+    "topicId": "MATH_GEO_UNITS",
+    "difficulty": 1,
+    "qtype": "SHORT",
+    "prompt": "Rechne um: {{v}} cm in m",
+    "payload": { "answer_type": "number", "unit": "m" },
+    "solution": { "kind": "computed", "expr": "v / 100" },
+    "explanation": [
+      { "kind": "steps", "body": "Zenti = Hundertstel: $1\\,\\text{cm} = 0{,}01\\,\\text{m}$.\n\n${{v}}\\,\\text{cm} = ({{v}} : 100)\\,\\text{m} = {{= v/100}}\\,\\text{m}$" },
+      { "kind": "remember", "body": "In die **größere** Einheit → **teilen**. Das Komma wandert zwei Stellen nach links." },
+      { "kind": "answer", "body": "{{= v/100}} m" }
+    ],
+    "tags": ["einheiten", "laenge", "drill"],
+    "source": "Verallgemeinert nach Prüfungshefte 2027, 5.1 Aufgabe 1a",
+    "variants": {
+      "enabled": true,
+      "variables": { "v": { "type": "int", "min": 3, "max": 950 } },
+      "constraints": ["mod(v, 100) != 0"]
+    }
+  },
+  {
+    "id": "MATH_UNITS_G_KG_T1",
+    "subject": "MATH",
+    "topicId": "MATH_GEO_UNITS",
+    "difficulty": 1,
+    "qtype": "SHORT",
+    "prompt": "Rechne um: {{v}} g in kg",
+    "payload": { "answer_type": "number", "unit": "kg" },
+    "solution": { "kind": "computed", "expr": "v / 1000" },
+    "explanation": [
+      { "kind": "steps", "body": "Kilo = Tausend: $1\\,\\text{kg} = 1000\\,\\text{g}$.\n\n${{v}}\\,\\text{g} = ({{v}} : 1000)\\,\\text{kg} = {{= v/1000}}\\,\\text{kg}$" },
+      { "kind": "answer", "body": "{{= v/1000}} kg" }
+    ],
+    "tags": ["einheiten", "gewicht", "drill"],
+    "source": "Verallgemeinert nach Prüfungshefte 2027, 5.1 Aufgabe 1b",
+    "variants": {
+      "enabled": true,
+      "variables": { "v": { "type": "int", "min": 5, "max": 2950, "step": 5 } },
+      "constraints": ["mod(v, 1000) != 0"]
+    }
+  },
+  {
+    "id": "MATH_UNITS_H_S_T1",
+    "subject": "MATH",
+    "topicId": "MATH_GEO_UNITS",
+    "difficulty": 2,
+    "qtype": "SHORT",
+    "prompt": "Rechne um: {{v}} h in s",
+    "payload": { "answer_type": "number", "unit": "s" },
+    "solution": { "kind": "computed", "expr": "v * 3600" },
+    "explanation": [
+      { "kind": "steps", "body": "Zeit ist nicht dezimal: $1\\,\\text{h} = 60\\,\\text{min}$, $1\\,\\text{min} = 60\\,\\text{s}$.\n\n${{v}}\\,\\text{h} = {{v}} \\cdot 60\\,\\text{min} = {{= v*60}}\\,\\text{min} = {{= v*60}} \\cdot 60\\,\\text{s} = {{= v*3600}}\\,\\text{s}$" },
+      { "kind": "remember", "body": "Eine Stunde hat $60 \\cdot 60 = 3600$ Sekunden." },
+      { "kind": "answer", "body": "{{= v*3600}} s" }
+    ],
+    "tags": ["einheiten", "zeit", "drill"],
+    "source": "Verallgemeinert nach Prüfungshefte 2027, 5.1 Aufgabe 1c",
+    "variants": {
+      "enabled": true,
+      "variables": { "v": { "type": "choice", "values": [0.5, 1, 1.5, 2, 2.5, 3, 4, 5] } }
+    }
+  },
+  {
+    "id": "MATH_UNITS_MIN_H_T1",
+    "subject": "MATH",
+    "topicId": "MATH_GEO_UNITS",
+    "difficulty": 2,
+    "qtype": "SHORT",
+    "prompt": "Rechne um: {{v}} min in h (als Dezimalzahl)",
+    "payload": { "answer_type": "number", "unit": "h", "tolerance": 0.001 },
+    "solution": { "kind": "computed", "expr": "v / 60", "round": 3 },
+    "explanation": [
+      { "kind": "steps", "body": "$1\\,\\text{h} = 60\\,\\text{min}$, also durch 60 teilen:\n\n${{v}}\\,\\text{min} = ({{v}} : 60)\\,\\text{h} = {{= v/60}}\\,\\text{h}$" },
+      { "kind": "mistake", "body": "${{= v/60}}$ h sind **nicht** {{= floor(v/60)}} h {{= round((v/60 - floor(v/60))*100)}} min — Zeit ist nicht dezimal! Es sind {{= floor(v/60)}} h {{= mod(v, 60)}} min." },
+      { "kind": "answer", "body": "{{= v/60}} h" }
+    ],
+    "tags": ["einheiten", "zeit", "drill"],
+    "variants": {
+      "enabled": true,
+      "variables": { "v": { "type": "choice", "values": [15, 30, 45, 75, 90, 105, 120, 135, 150, 180, 210, 240] } }
+    }
+  },
+  {
+    "id": "MATH_UNITS_CM2_M2_T1",
+    "subject": "MATH",
+    "topicId": "MATH_GEO_UNITS",
+    "difficulty": 2,
+    "qtype": "SHORT",
+    "prompt": "Rechne um: {{v}} cm² in m²",
+    "payload": { "answer_type": "number", "unit": "m²" },
+    "solution": { "kind": "computed", "expr": "v / 10000" },
+    "explanation": [
+      { "kind": "what", "body": "Flächeneinheiten: pro Stufe Faktor $10^2 = 100$. Von cm² zu m² sind es **zwei** Stufen (cm → dm → m), also $100 \\cdot 100 = 10\\,000$." },
+      { "kind": "steps", "body": "${{v}}\\,\\text{cm}^2 = ({{v}} : 10\\,000)\\,\\text{m}^2 = {{= v/10000}}\\,\\text{m}^2$" },
+      { "kind": "mistake", "body": "Nur durch 100 zu teilen wäre die Umrechnung für **Längen**. Bei Flächen wird der Faktor quadriert." },
+      { "kind": "answer", "body": "{{= v/10000}} m²" }
+    ],
+    "tags": ["einheiten", "flaeche", "drill"],
+    "source": "Verallgemeinert nach Prüfungshefte 2027, 5.1 Aufgabe 1d",
+    "variants": {
+      "enabled": true,
+      "variables": { "v": { "type": "int", "min": 5, "max": 9500, "step": 5 } },
+      "constraints": ["mod(v, 10000) != 0"]
+    }
+  },
+  {
+    "id": "MATH_UNITS_DM2_MM2_T1",
+    "subject": "MATH",
+    "topicId": "MATH_GEO_UNITS",
+    "difficulty": 3,
+    "qtype": "SHORT",
+    "prompt": "Rechne um: {{v}} dm² in mm²",
+    "payload": { "answer_type": "number", "unit": "mm²" },
+    "solution": { "kind": "computed", "expr": "v * 10000" },
+    "explanation": [
+      { "kind": "steps", "body": "dm → cm → mm sind **zwei** Stufen. Bei Flächen: $100 \\cdot 100 = 10\\,000$.\n\nIn die **kleinere** Einheit → malnehmen: ${{v}}\\,\\text{dm}^2 = {{v}} \\cdot 10\\,000\\,\\text{mm}^2 = {{= v*10000}}\\,\\text{mm}^2$" },
+      { "kind": "answer", "body": "{{= v*10000}} mm²" }
+    ],
+    "tags": ["einheiten", "flaeche", "drill"],
+    "source": "Verallgemeinert nach Prüfungshefte 2027, 5.1 Aufgabe 1e",
+    "variants": {
+      "enabled": true,
+      "variables": { "v": { "type": "int", "min": 2, "max": 95 } }
+    }
+  },
+  {
+    "id": "MATH_UNITS_KM2_M2_T1",
+    "subject": "MATH",
+    "topicId": "MATH_GEO_UNITS",
+    "difficulty": 2,
+    "qtype": "SHORT",
+    "prompt": "Rechne um: {{v}} km² in m²",
+    "payload": { "answer_type": "number", "unit": "m²" },
+    "solution": { "kind": "computed", "expr": "v * 1000000" },
+    "explanation": [
+      { "kind": "steps", "body": "$1\\,\\text{km} = 1000\\,\\text{m}$, also $1\\,\\text{km}^2 = 1000 \\cdot 1000\\,\\text{m}^2 = 1\\,000\\,000\\,\\text{m}^2$.\n\n${{v}}\\,\\text{km}^2 = {{v}} \\cdot 1\\,000\\,000\\,\\text{m}^2 = {{= v*1000000}}\\,\\text{m}^2$" },
+      { "kind": "answer", "body": "{{= v*1000000}} m²" }
+    ],
+    "tags": ["einheiten", "flaeche", "drill"],
+    "source": "Verallgemeinert nach Prüfungshefte 2027, 5.1 Aufgabe 1f",
+    "variants": {
+      "enabled": true,
+      "variables": { "v": { "type": "choice", "values": [0.5, 1, 1.5, 2, 2.5, 3, 4, 7.5] } }
+    }
+  },
+  {
+    "id": "MATH_UNITS_CM3_DM3_T1",
+    "subject": "MATH",
+    "topicId": "MATH_GEO_UNITS",
+    "difficulty": 2,
+    "qtype": "SHORT",
+    "prompt": "Rechne um: {{v}} cm³ in dm³",
+    "payload": { "answer_type": "number", "unit": "dm³" },
+    "solution": { "kind": "computed", "expr": "v / 1000" },
+    "explanation": [
+      { "kind": "what", "body": "Volumeneinheiten: pro Stufe Faktor $10^3 = 1000$." },
+      { "kind": "steps", "body": "${{v}}\\,\\text{cm}^3 = ({{v}} : 1000)\\,\\text{dm}^3 = {{= v/1000}}\\,\\text{dm}^3$\n\n(Das sind übrigens auch {{= v/1000}} Liter.)" },
+      { "kind": "answer", "body": "{{= v/1000}} dm³" }
+    ],
+    "tags": ["einheiten", "volumen", "drill"],
+    "source": "Verallgemeinert nach Prüfungshefte 2027, 5.1 Aufgabe 1g",
+    "variants": {
+      "enabled": true,
+      "variables": { "v": { "type": "int", "min": 5, "max": 4500, "step": 5 } },
+      "constraints": ["mod(v, 1000) != 0"]
+    }
+  },
+  {
+    "id": "MATH_UNITS_DM3_L_MCQ_T1",
+    "subject": "MATH",
+    "topicId": "MATH_GEO_UNITS",
+    "difficulty": 1,
+    "qtype": "MCQ",
+    "prompt": "Wie viel Liter sind {{v}} dm³?",
+    "payload": { "choices": ["{{v}} l", "{{= v*10}} l", "{{= v/10}} l", "{{= v*1000}} l"], "shuffle": true },
+    "solution": { "correct_choice": "{{v}} l" },
+    "explanation": [
+      { "kind": "formula", "body": "$1\\,\\text{dm}^3 = 1\\,\\text{l}$ — ein Würfel mit 10 cm Kantenlänge fasst genau einen Liter." },
+      { "kind": "steps", "body": "${{v}}\\,\\text{dm}^3 = {{v}}\\,\\text{l}$" },
+      { "kind": "remember", "body": "Und $1\\,\\text{cm}^3 = 1\\,\\text{ml}$, $1\\,\\text{m}^3 = 1000\\,\\text{l}$." },
+      { "kind": "answer", "body": "{{v}} l" }
+    ],
+    "tags": ["einheiten", "volumen", "liter", "drill"],
+    "source": "Verallgemeinert nach Prüfungshefte 2027, 5.1 Aufgabe 1h",
+    "variants": {
+      "enabled": true,
+      "variables": { "v": { "type": "int", "min": 2, "max": 95 } }
+    }
+  },
+  {
+    "id": "MATH_UNITS_CM3_M3_T1",
+    "subject": "MATH",
+    "topicId": "MATH_GEO_UNITS",
+    "difficulty": 3,
+    "qtype": "SHORT",
+    "prompt": "Rechne um: {{v}} cm³ in m³",
+    "payload": { "answer_type": "number", "unit": "m³" },
+    "solution": { "kind": "computed", "expr": "v / 1000000" },
+    "explanation": [
+      { "kind": "steps", "body": "cm → dm → m sind **zwei** Stufen. Bei Volumen: $1000 \\cdot 1000 = 1\\,000\\,000$.\n\n${{v}}\\,\\text{cm}^3 = ({{v}} : 1\\,000\\,000)\\,\\text{m}^3 = {{= v/1000000}}\\,\\text{m}^3$" },
+      { "kind": "answer", "body": "{{= v/1000000}} m³" }
+    ],
+    "tags": ["einheiten", "volumen", "drill"],
+    "source": "Verallgemeinert nach Prüfungshefte 2027, 5.1 Aufgabe 1i",
+    "variants": {
+      "enabled": true,
+      "variables": { "v": { "type": "int", "min": 100000, "max": 9900000, "step": 100000 } }
+    }
+  }
+]
