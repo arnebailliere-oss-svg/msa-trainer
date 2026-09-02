@@ -1,0 +1,415 @@
+[
+  {
+    "id": "MSA2023_1A_FAHRRAD",
+    "subject": "MATH",
+    "topicId": "MATH_FUNC_PROP",
+    "difficulty": 3,
+    "qtype": "SHORT",
+    "prompt": "Nora braucht mit dem Fahrrad für 4 km 25 Minuten. Wie viele Minuten braucht sie bei gleicher Geschwindigkeit für 6 km?",
+    "payload": { "answer_type": "number", "unit": "min", "tolerance": 0.01 },
+    "solution": { "value": 37.5 },
+    "explanation": [
+      { "kind": "steps", "body": "Proportional (je mehr km, desto mehr Zeit). Dreisatz: $4\\,\\text{km} \\to 25$ min, $2\\,\\text{km} \\to 12{,}5$ min, $6\\,\\text{km} \\to 3 \\cdot 12{,}5 = 37{,}5$ min" },
+      { "kind": "answer", "body": "37,5 min" }
+    ],
+    "tags": ["msa2023", "exam", "basisaufgabe", "proportional"],
+    "source": "MSA Berlin 2023, Aufgabe 1a (1 P)"
+  },
+  {
+    "id": "MSA2023_1B_GEWINN",
+    "subject": "MATH",
+    "topicId": "MATH_NUM_PCT_BASIC",
+    "difficulty": 3,
+    "qtype": "SHORT",
+    "prompt": "Tim schenkt 25 % seines Gewinns seinen Eltern. Das sind 200 €. Gib die gesamte Gewinnsumme an.",
+    "payload": { "answer_type": "number", "unit": "€" },
+    "solution": { "value": 800 },
+    "explanation": [
+      { "kind": "steps", "body": "25 % ist ein Viertel. Wenn ein Viertel 200 € sind, ist das Ganze $4 \\cdot 200 = 800$ €.\n\nFormel: $G = W : \\frac{p}{100} = 200 : 0{,}25 = 800$" },
+      { "kind": "answer", "body": "800 €" }
+    ],
+    "tags": ["msa2023", "exam", "basisaufgabe", "grundwert"],
+    "source": "MSA Berlin 2023, Aufgabe 1b (1 P)"
+  },
+  {
+    "id": "MSA2023_1C_RECHTECK",
+    "subject": "MATH",
+    "topicId": "MATH_GEO_AREA_BASIC",
+    "difficulty": 3,
+    "qtype": "SHORT",
+    "prompt": "Ein Rechteck hat einen Flächeninhalt von 42 000 mm² und ist 400 mm breit. Gib die Länge des Rechtecks an.",
+    "payload": { "answer_type": "number", "unit": "mm" },
+    "solution": { "value": 105 },
+    "explanation": [
+      { "kind": "steps", "body": "$A = a \\cdot b \\Rightarrow a = A : b = 42\\,000 : 400 = 105$ mm" },
+      { "kind": "answer", "body": "105 mm" }
+    ],
+    "tags": ["msa2023", "exam", "basisaufgabe", "flaeche"],
+    "source": "MSA Berlin 2023, Aufgabe 1c (1 P)"
+  },
+  {
+    "id": "MSA2023_1E_GLEICHUNG",
+    "subject": "MATH",
+    "topicId": "MATH_ALG_EQU_LINEAR",
+    "difficulty": 3,
+    "qtype": "SHORT",
+    "prompt": "Gib die Lösung der Gleichung $3 \\cdot (x - 8) + 2 = 2$ an.",
+    "payload": { "answer_type": "number" },
+    "solution": { "value": 8 },
+    "explanation": [
+      { "kind": "steps", "body": "$3(x - 8) + 2 = 2 \\;|\\; -2 \\Rightarrow 3(x - 8) = 0 \\;|\\; :3 \\Rightarrow x - 8 = 0 \\Rightarrow x = 8$" },
+      { "kind": "answer", "body": "$x = 8$" }
+    ],
+    "tags": ["msa2023", "exam", "basisaufgabe", "gleichung"],
+    "source": "MSA Berlin 2023, Aufgabe 1e (1 P)"
+  },
+  {
+    "id": "MSA2023_1F_KLEINSTER_WERT_MCQ",
+    "subject": "MATH",
+    "topicId": "MATH_NUM_DEC_CONV",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "Welcher Wert ist der kleinste?",
+    "payload": { "choices": ["$0{,}4^2$", "$4{,}4$", "$0{,}44$", "$44\\,\\%$"], "shuffle": true },
+    "solution": { "correct_choice": "$0{,}4^2$" },
+    "explanation": [
+      { "kind": "steps", "body": "Alles als Dezimalzahl: $4{,}4$ · $0{,}44$ · $0{,}4^2 = 0{,}4 \\cdot 0{,}4 = 0{,}16$ · $44\\,\\% = 0{,}44$.\n\nDer kleinste Wert ist $0{,}4^2 = 0{,}16$." },
+      { "kind": "mistake", "body": "Eine Zahl kleiner als 1 wird beim Quadrieren **kleiner**, nicht größer." },
+      { "kind": "answer", "body": "$0{,}4^2 = 0{,}16$" }
+    ],
+    "tags": ["msa2023", "exam", "basisaufgabe", "dezimalzahlen"],
+    "source": "MSA Berlin 2023, Aufgabe 1f (1 P)"
+  },
+  {
+    "id": "MSA2023_1G_DREIECK_WINKEL",
+    "subject": "MATH",
+    "topicId": "MATH_GEO_AREA_BASIC",
+    "difficulty": 3,
+    "qtype": "SHORT",
+    "prompt": "Im Dreieck $ABC$ sind $\\alpha = 70°$ und $\\beta = 70°$, die Seite $AC$ ist 6 cm lang. Gib die Größe des Winkels $\\gamma$ an.",
+    "figure": { "type": "triangle", "alpha": 70, "beta": 70, "labels": { "alpha": "70°", "beta": "70°", "b": "6 cm", "a": "?", "gamma": "γ" } },
+    "payload": { "answer_type": "number", "unit": "°" },
+    "solution": { "value": 40 },
+    "explanation": [
+      { "kind": "steps", "body": "Winkelsumme: $\\gamma = 180° - 70° - 70° = 40°$.\n\nZwei gleiche Winkel → das Dreieck ist **gleichschenklig**, also ist auch $|BC| = |AC| = 6$ cm." },
+      { "kind": "answer", "body": "$\\gamma = 40°$ (und $|BC| = 6$ cm)" }
+    ],
+    "tags": ["msa2023", "exam", "basisaufgabe", "winkel", "gleichschenklig"],
+    "source": "MSA Berlin 2023, Aufgabe 1g (2 P)"
+  },
+  {
+    "id": "MSA2023_1H_TERM_MCQ",
+    "subject": "MATH",
+    "topicId": "MATH_ALG_TERMS_SIMPLIFY",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "„Die Differenz aus dem Doppelten einer Zahl $a$ und 13 wird verdreifacht.“ Welcher Term passt?",
+    "payload": { "choices": ["$3 \\cdot (2a - 13)$", "$(2a - 13) : 3$", "$2a : 13 \\cdot 3$", "$2a - 13 \\cdot 3$"], "shuffle": true },
+    "solution": { "correct_choice": "$3 \\cdot (2a - 13)$" },
+    "explanation": [
+      { "kind": "steps", "body": "Das Doppelte von $a$: $2a$. Die Differenz mit 13: $2a - 13$. Verdreifachen — die **ganze** Differenz, also Klammer: $3 \\cdot (2a - 13)$." },
+      { "kind": "mistake", "body": "$2a - 13 \\cdot 3$ verdreifacht nur die 13 (Punkt vor Strich)." },
+      { "kind": "answer", "body": "$3 \\cdot (2a - 13)$" }
+    ],
+    "tags": ["msa2023", "exam", "basisaufgabe", "terme"],
+    "source": "MSA Berlin 2023, Aufgabe 1h (1 P)"
+  },
+  {
+    "id": "MSA2023_1I_PUNKT_MCQ",
+    "subject": "MATH",
+    "topicId": "MATH_FUNC_LINEAR_FORM",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "Einer der Punkte liegt **nicht** auf der Geraden $f(x) = -7x + 3$. Welcher?",
+    "payload": { "choices": ["$(3 \\,|\\, -24)$", "$(-1 \\,|\\, 10)$", "$(-4 \\,|\\, 31)$"], "shuffle": true },
+    "solution": { "correct_choice": "$(3 \\,|\\, -24)$" },
+    "explanation": [
+      { "kind": "steps", "body": "Punktprobe:\n\n$f(-1) = 7 + 3 = 10$ ✓ · $f(-4) = 28 + 3 = 31$ ✓ · $f(3) = -21 + 3 = -18 \\neq -24$ ✗" },
+      { "kind": "answer", "body": "$(3 \\,|\\, -24)$ liegt nicht auf der Geraden." }
+    ],
+    "tags": ["msa2023", "exam", "basisaufgabe", "punktprobe"],
+    "source": "MSA Berlin 2023, Aufgabe 1i (1 P)"
+  },
+  {
+    "id": "MSA2023_2A_TRAPEZ_WINKEL",
+    "subject": "MATH",
+    "topicId": "MATH_GEO_AREA_BASIC",
+    "difficulty": 3,
+    "qtype": "SHORT",
+    "prompt": "Ein gleichschenkliges Trapez hat an der langen Grundseite zwei Winkel von je 56°. Gib die Größe des Winkels $\\gamma$ an einer der oberen Ecken an.",
+    "payload": { "answer_type": "number", "unit": "°" },
+    "solution": { "value": 124 },
+    "explanation": [
+      { "kind": "steps", "body": "Winkelsumme im Viereck: 360°. Die beiden oberen Winkel sind gleich groß:\n\n$\\gamma = (360° - 56° - 56°) : 2 = 248° : 2 = 124°$\n\n(Oder: Nebenwinkel an den Parallelen: $180° - 56° = 124°$.)" },
+      { "kind": "answer", "body": "$\\gamma = 124°$" }
+    ],
+    "tags": ["msa2023", "exam", "trapez", "winkel"],
+    "source": "MSA Berlin 2023, Aufgabe 2a (1 P)"
+  },
+  {
+    "id": "MSA2023_2B_TRAPEZ_FLAECHE",
+    "subject": "MATH",
+    "topicId": "MATH_GEO_AREA_BASIC",
+    "difficulty": 4,
+    "qtype": "SHORT",
+    "prompt": "Ein Trapez hat die parallelen Seiten $a = 25{,}8$ m und $c = 15$ m und die Höhe $h = 8$ m. Berechne den Flächeninhalt.",
+    "figure": { "type": "trapezoid", "a": 25.8, "c": 15, "h": 8, "labels": { "a": "a = 25,8 m", "c": "c = 15 m", "h": "h = 8 m" } },
+    "payload": { "answer_type": "number", "unit": "m²", "tolerance": 0.05 },
+    "solution": { "value": 163.2 },
+    "explanation": [
+      { "kind": "steps", "body": "$A = \\frac{a + c}{2} \\cdot h = \\frac{25{,}8 + 15}{2} \\cdot 8 = 20{,}4 \\cdot 8 = 163{,}2\\,\\text{m}^2$" },
+      { "kind": "answer", "body": "163,2 m²" }
+    ],
+    "tags": ["msa2023", "exam", "trapez", "flaeche"],
+    "source": "MSA Berlin 2023, Aufgabe 2b (2 P)"
+  },
+  {
+    "id": "MSA2023_2C_TRAPEZ_UMFANG",
+    "subject": "MATH",
+    "topicId": "MATH_GEO_PYTH",
+    "difficulty": 5,
+    "qtype": "SHORT",
+    "prompt": "Ein gleichschenkliges Trapez hat die parallelen Seiten $a = 25{,}8$ m und $c = 15$ m und die Höhe $h = 8$ m. Berechne den Umfang. (Runde auf eine Nachkommastelle.)",
+    "figure": { "type": "trapezoid", "a": 25.8, "c": 15, "h": 8, "labels": { "a": "25,8 m", "c": "15 m", "h": "8 m" } },
+    "payload": { "answer_type": "number", "unit": "m", "tolerance": 0.15 },
+    "solution": { "value": 60.1 },
+    "explanation": [
+      { "kind": "steps", "body": "1. Überstand links und rechts: $x = (25{,}8 - 15) : 2 = 5{,}4$ m\n2. Schenkel mit Pythagoras: $y = \\sqrt{5{,}4^2 + 8^2} = \\sqrt{29{,}16 + 64} = \\sqrt{93{,}16} \\approx 9{,}65$ m\n3. Umfang: $u = 25{,}8 + 15 + 2 \\cdot 9{,}65 \\approx 60{,}1$ m" },
+      { "kind": "remember", "body": "Die Höhe erzeugt ein **rechtwinkliges Dreieck** am Rand — dort hilft Pythagoras für die schräge Seite." },
+      { "kind": "answer", "body": "≈ 60,1 m" }
+    ],
+    "tags": ["msa2023", "exam", "trapez", "pythagoras", "umfang", "sternchen"],
+    "source": "MSA Berlin 2023, Aufgabe 2c* (3 P)"
+  },
+  {
+    "id": "MSA2023_3B_UMZUG_KOSTEN",
+    "subject": "MATH",
+    "topicId": "MATH_FUNC_LINEAR_FORM",
+    "difficulty": 5,
+    "qtype": "SHORT",
+    "prompt": "Herr Mert braucht einen Umzugswagen von Montag bis Freitag (5 Tage) für 470 km. Angebot 2: 120 € Wochenmiete plus 0,09 € pro km. Berechne die Gesamtkosten für Angebot 2.",
+    "payload": { "answer_type": "number", "unit": "€", "tolerance": 0.01 },
+    "solution": { "value": 162.3 },
+    "explanation": [
+      { "kind": "steps", "body": "$K_2 = 120 + 470 \\cdot 0{,}09 = 120 + 42{,}30 = 162{,}30$ €\n\nZum Vergleich Angebot 1 (27 € pro Tag, 350 km frei, dann 0,36 €/km): $K_1 = 5 \\cdot 27 + 120 \\cdot 0{,}36 = 135 + 43{,}20 = 178{,}20$ € → Angebot 2 ist günstiger.\n\nAllgemein für $x$ km: $K = 120 + 0{,}09x$" },
+      { "kind": "answer", "body": "162,30 € (Angebot 2 ist günstiger)" }
+    ],
+    "tags": ["msa2023", "exam", "lineare-funktion", "sachaufgabe", "sternchen"],
+    "source": "MSA Berlin 2023, Aufgabe 3b* (5 P)"
+  },
+  {
+    "id": "MSA2023_3B_UMZUG_GLEICHUNG_MCQ",
+    "subject": "MATH",
+    "topicId": "MATH_FUNC_LINEAR_FORM",
+    "difficulty": 4,
+    "qtype": "MCQ",
+    "prompt": "Angebot 2 für einen Umzugswagen: 120 € Grundpreis pro Woche plus 0,09 € pro gefahrenem Kilometer. Welche Gleichung beschreibt die Gesamtkosten $K$ für $x$ Kilometer in einer Woche?",
+    "payload": { "choices": ["$K = 120 + 0{,}09x$", "$K = 0{,}09 + 120x$", "$K = 120 \\cdot 0{,}09x$", "$K = 120x + 0{,}09$"], "shuffle": true },
+    "solution": { "correct_choice": "$K = 120 + 0{,}09x$" },
+    "explanation": [
+      { "kind": "steps", "body": "Fester Anteil (Achsenabschnitt): 120. Veränderlicher Anteil pro km (Steigung): 0,09. Lineare Funktion: $K = 0{,}09x + 120$." },
+      { "kind": "answer", "body": "$K = 120 + 0{,}09x$" }
+    ],
+    "tags": ["msa2023", "exam", "lineare-funktion", "modellieren"],
+    "source": "MSA Berlin 2023, Aufgabe 3b*"
+  },
+  {
+    "id": "MSA2023_4A_AUSSAGEN_MCQ",
+    "subject": "MATH",
+    "topicId": "MATH_FUNC_LINEAR_FORM",
+    "difficulty": 4,
+    "qtype": "MCQ",
+    "prompt": "Die Gerade $f(x) = 4x - 2$ und eine nach unten geöffnete Normalparabel $p$ mit Scheitel $S(-1 \\,|\\, 6)$ sind gegeben. Welche Aussage ist **wahr**?",
+    "figure": { "type": "coordinateSystem", "xmin": -6, "xmax": 5, "ymin": -12, "ymax": 8, "width": 280, "height": 320, "lines": [{ "m": 4, "n": -2, "label": "f" }], "parabolas": [{ "a": -1, "d": -1, "e": 6, "label": "p" }] },
+    "payload": { "choices": ["Gerade und Parabel schneiden sich in zwei Punkten.", "Die Steigung von $f$ ist negativ.", "Die Gerade $f$ schneidet die $y$-Achse im Punkt $(-2 \\,|\\, 0)$.", "Die Gerade $f$ geht durch den Ursprung."], "shuffle": true },
+    "solution": { "correct_choice": "Gerade und Parabel schneiden sich in zwei Punkten." },
+    "explanation": [
+      { "kind": "steps", "body": "- Steigung 4 → **positiv**, nicht negativ.\n- Schnitt mit der $y$-Achse bei $(0 \\,|\\, -2)$ — nicht $(-2 \\,|\\, 0)$ (das wäre auf der $x$-Achse).\n- Die steigende Gerade schneidet die nach unten geöffnete Parabel zweimal, z. B. in $P(1 \\,|\\, 2)$: $f(1) = 2$ und $p(1) = -(1+1)^2 + 6 = 2$ ✓" },
+      { "kind": "answer", "body": "Wahr: zwei Schnittpunkte." }
+    ],
+    "tags": ["msa2023", "exam", "lineare-funktion", "parabel"],
+    "source": "MSA Berlin 2023, Aufgabe 4a (3 P)"
+  },
+  {
+    "id": "MSA2023_4B_SCHEITELPUNKTFORM_MCQ",
+    "subject": "MATH",
+    "topicId": "MATH_FUNC_QUAD",
+    "difficulty": 4,
+    "qtype": "MCQ",
+    "prompt": "Eine nach unten geöffnete Normalparabel hat den Scheitelpunkt $S(-1 \\,|\\, 6)$. Welche Gleichung in Scheitelpunktform gehört dazu?",
+    "payload": { "choices": ["$p(x) = -(x + 1)^2 + 6$", "$p(x) = (x + 1)^2 + 6$", "$p(x) = -(x - 1)^2 + 6$", "$p(x) = -(x + 1)^2 - 6$"], "shuffle": true },
+    "solution": { "correct_choice": "$p(x) = -(x + 1)^2 + 6$" },
+    "explanation": [
+      { "kind": "steps", "body": "Scheitelpunktform $a(x - d)^2 + e$ mit $d = -1$, $e = 6$: $(x - (-1))^2 = (x + 1)^2$. Nach unten geöffnet → $a = -1$.\n\n$p(x) = -(x + 1)^2 + 6$ — ausmultipliziert $-x^2 - 2x + 5$." },
+      { "kind": "answer", "body": "$p(x) = -(x + 1)^2 + 6$" }
+    ],
+    "tags": ["msa2023", "exam", "parabel", "scheitelpunktform", "sternchen"],
+    "source": "MSA Berlin 2023, Aufgabe 4b* (2 P)"
+  },
+  {
+    "id": "MSA2023_4C_PARABEL_Y_MINUS10",
+    "subject": "MATH",
+    "topicId": "MATH_ALG_EQU_QUAD",
+    "difficulty": 5,
+    "qtype": "SHORT",
+    "prompt": "Die Parabel $p(x) = -x^2 - 2x + 5$: Bestimme die $x$-Koordinaten der Punkte, deren $y$-Koordinate $-10$ ist. Gib die **größere** an.",
+    "payload": { "answer_type": "number" },
+    "solution": { "value": 3 },
+    "explanation": [
+      { "kind": "steps", "body": "$-x^2 - 2x + 5 = -10 \\;|\\; +10 \\Rightarrow -x^2 - 2x + 15 = 0 \\;|\\; \\cdot(-1) \\Rightarrow x^2 + 2x - 15 = 0$\n\npq-Formel ($p = 2$, $q = -15$): $x_{1,2} = -1 \\pm \\sqrt{1 + 15} = -1 \\pm 4 \\Rightarrow x_1 = 3,\\; x_2 = -5$" },
+      { "kind": "remember", "body": "Vor der pq-Formel: **Normalform** — die Gleichung mit $(-1)$ multiplizieren, damit $x^2$ positiv ist." },
+      { "kind": "answer", "body": "$x = 3$ (und $x = -5$)" }
+    ],
+    "tags": ["msa2023", "exam", "parabel", "pq-formel", "sternchen"],
+    "source": "MSA Berlin 2023, Aufgabe 4c* (3 P)"
+  },
+  {
+    "id": "MSA2023_5A_DOSE_MANTEL",
+    "subject": "MATH",
+    "topicId": "MATH_GEO_VOLUME",
+    "difficulty": 4,
+    "qtype": "SHORT",
+    "prompt": "Eine zylinderförmige Konservendose hat den Radius 4 cm und die Höhe 8 cm. Die Mantelfläche wird abgerollt — ein Rechteck. Berechne seine Länge $a$ (die Breite ist $b = h = 8$ cm). (Runde auf eine Nachkommastelle.)",
+    "figure": { "type": "cylinder", "r": 4, "h": 8, "labels": { "r": "r = 4 cm", "h": "h = 8 cm" } },
+    "payload": { "answer_type": "number", "unit": "cm", "tolerance": 0.15 },
+    "solution": { "value": 25.1 },
+    "explanation": [
+      { "kind": "steps", "body": "Die Länge des abgerollten Mantels ist der **Umfang** der Grundfläche: $a = 2\\pi r = 2 \\cdot \\pi \\cdot 4 \\approx 25{,}1$ cm. Breite $b = h = 8$ cm." },
+      { "kind": "answer", "body": "$a \\approx 25{,}1$ cm, $b = 8$ cm" }
+    ],
+    "tags": ["msa2023", "exam", "zylinder", "mantelflaeche"],
+    "source": "MSA Berlin 2023, Aufgabe 5a (3 P)"
+  },
+  {
+    "id": "MSA2023_5B_DOSE_VOLUMEN_MCQ",
+    "subject": "MATH",
+    "topicId": "MATH_GEO_VOLUME",
+    "difficulty": 4,
+    "qtype": "MCQ",
+    "prompt": "Eine Konservendose ($r = 4$ cm, $h = 8$ cm) soll laut Hersteller ca. 400 ml fassen. Stimmt das? ($1\\,\\text{cm}^3 = 1$ ml)",
+    "payload": { "choices": ["Ja — $V = \\pi \\cdot 4^2 \\cdot 8 \\approx 402\\,\\text{cm}^3 \\approx 400$ ml.", "Nein — $V = \\pi \\cdot 4 \\cdot 8 \\approx 100\\,\\text{cm}^3$.", "Nein — $V = 4 \\cdot 4 \\cdot 8 = 128\\,\\text{cm}^3$.", "Ja — $V = 2\\pi \\cdot 4 \\cdot 8 \\approx 201\\,\\text{cm}^3$, also etwa 400 ml."], "shuffle": true },
+    "solution": { "correct_choice": "Ja — $V = \\pi \\cdot 4^2 \\cdot 8 \\approx 402\\,\\text{cm}^3 \\approx 400$ ml." },
+    "explanation": [
+      { "kind": "steps", "body": "$A_G = \\pi \\cdot 4^2 \\approx 50{,}3\\,\\text{cm}^2$, $V = A_G \\cdot h \\approx 50{,}3 \\cdot 8 \\approx 402\\,\\text{cm}^3 = 402$ ml ≈ 400 ml ✓" },
+      { "kind": "answer", "body": "Ja, ≈ 402 ml." }
+    ],
+    "tags": ["msa2023", "exam", "zylinder", "volumen"],
+    "source": "MSA Berlin 2023, Aufgabe 5b (2 P)"
+  },
+  {
+    "id": "MSA2023_5C_DOSE_ABFALL",
+    "subject": "MATH",
+    "topicId": "MATH_NUM_PCT_BASIC",
+    "difficulty": 5,
+    "qtype": "SHORT",
+    "prompt": "Deckel ($r = 4$ cm) werden aus Blechstreifen (8 cm breit, 1 m lang) gestanzt — so viele wie möglich. Berechne den Materialverlust in Prozent. (Runde auf eine Nachkommastelle.)",
+    "payload": { "answer_type": "number", "unit": "%", "tolerance": 0.3 },
+    "solution": { "value": 24.5 },
+    "explanation": [
+      { "kind": "steps", "body": "1. Durchmesser 8 cm → auf 100 cm passen $100 : 8 = 12{,}5$, also **12** Deckel.\n2. Deckelfläche: $\\pi \\cdot 4^2 \\approx 50{,}3\\,\\text{cm}^2$, 12 Deckel: $\\approx 603{,}2\\,\\text{cm}^2$\n3. Streifen: $8 \\cdot 100 = 800\\,\\text{cm}^2$\n4. Verlust: $\\frac{800 - 603{,}2}{800} \\approx 24{,}6\\,\\%$ — unter 25 %, die Vorgabe ist erfüllt." },
+      { "kind": "answer", "body": "≈ 24,5 % (< 25 % → erfüllt)" }
+    ],
+    "tags": ["msa2023", "exam", "prozent", "kreis", "sternchen"],
+    "source": "MSA Berlin 2023, Aufgabe 5c* (4 P)"
+  },
+  {
+    "id": "MSA2023_5D_DOSE_HOEHE",
+    "subject": "MATH",
+    "topicId": "MATH_GEO_VOLUME",
+    "difficulty": 5,
+    "qtype": "SHORT",
+    "prompt": "Eine größere Dose mit demselben Deckel ($r = 4$ cm) soll 1 Liter fassen. Ermittle die Höhe der Dose. (Runde auf ganze cm.)",
+    "payload": { "answer_type": "number", "unit": "cm", "tolerance": 0.6 },
+    "solution": { "value": 20 },
+    "explanation": [
+      { "kind": "steps", "body": "$V = A_G \\cdot h \\Rightarrow h = \\frac{V}{A_G} = \\frac{1000\\,\\text{cm}^3}{\\pi \\cdot 4^2} \\approx \\frac{1000}{50{,}3} \\approx 19{,}9 \\approx 20$ cm" },
+      { "kind": "remember", "body": "1 Liter = 1000 cm³. Formel nach $h$ **umstellen**." },
+      { "kind": "answer", "body": "≈ 20 cm" }
+    ],
+    "tags": ["msa2023", "exam", "zylinder", "umstellen", "sternchen"],
+    "source": "MSA Berlin 2023, Aufgabe 5d* (3 P)"
+  },
+  {
+    "id": "MSA2023_6A_JUGENDLICHE",
+    "subject": "MATH",
+    "topicId": "MATH_NUM_PCT_BASIC",
+    "difficulty": 4,
+    "qtype": "SHORT",
+    "prompt": "2020 lebten 7,8 Milliarden Menschen auf der Erde, davon 1,25 Milliarden Jugendliche (15–24 Jahre). Wie viel Prozent waren Jugendliche? (Runde auf ganze Prozent.)",
+    "payload": { "answer_type": "number", "unit": "%", "tolerance": 0.5 },
+    "solution": { "value": 16 },
+    "explanation": [
+      { "kind": "steps", "body": "$p = \\frac{1{,}25}{7{,}8} \\cdot 100 \\approx 16\\,\\%$" },
+      { "kind": "answer", "body": "≈ 16 %" }
+    ],
+    "tags": ["msa2023", "exam", "prozent"],
+    "source": "MSA Berlin 2023, Aufgabe 6a (2 P)"
+  },
+  {
+    "id": "MSA2023_6B_AUSSAGE_MCQ",
+    "subject": "MATH",
+    "topicId": "MATH_NUM_FRAC_BASIC",
+    "difficulty": 4,
+    "qtype": "MCQ",
+    "prompt": "Weltbevölkerung 2020: 7,8 Mrd. gesamt, davon 1,95 Mrd. Kinder und 3,9 Mrd. im mittleren Alter. Welche Aussage ist **falsch**?",
+    "payload": { "choices": ["Ein Drittel der Weltbevölkerung waren Kinder.", "Jeder zweite Mensch war im mittleren Alter.", "Ein Viertel der Weltbevölkerung waren Kinder.", "Die Hälfte der Weltbevölkerung war im mittleren Alter."], "shuffle": true },
+    "solution": { "correct_choice": "Ein Drittel der Weltbevölkerung waren Kinder." },
+    "explanation": [
+      { "kind": "steps", "body": "$\\frac{3{,}9}{7{,}8} = \\frac{1}{2}$ → „jeder zweite“ stimmt.\n\n$\\frac{1{,}95}{7{,}8} = \\frac{1}{4}$ → ein **Viertel**, nicht ein Drittel. Die Drittel-Aussage ist falsch." },
+      { "kind": "answer", "body": "Falsch: „ein Drittel Kinder“ — richtig ist ein Viertel." }
+    ],
+    "tags": ["msa2023", "exam", "bruch", "anteil"],
+    "source": "MSA Berlin 2023, Aufgabe 6b (2 P)"
+  },
+  {
+    "id": "MSA2023_6C_SPRACHEN_SPANNWEITE",
+    "subject": "MATH",
+    "topicId": "MATH_DATA_STATS",
+    "difficulty": 3,
+    "qtype": "SHORT",
+    "prompt": "Muttersprachler in Millionen: Arabisch 290, Chinesisch 1300, Englisch 500, Hindi 525, Spanisch 389. Gib die Spannweite an.",
+    "figure": { "type": "barChart", "categories": ["Arabisch", "Chinesisch", "Englisch", "Hindi", "Spanisch"], "values": [290, 1300, 500, 525, 389], "unit": "Mio." },
+    "payload": { "answer_type": "number", "unit": "Mio." },
+    "solution": { "value": 1010 },
+    "explanation": [
+      { "kind": "steps", "body": "Minimum 290 (Arabisch), Maximum 1300 (Chinesisch). Spannweite: $1300 - 290 = 1010$ Millionen." },
+      { "kind": "answer", "body": "1010 Mio." }
+    ],
+    "tags": ["msa2023", "exam", "statistik", "spannweite"],
+    "source": "MSA Berlin 2023, Aufgabe 6c (3 P)"
+  },
+  {
+    "id": "MSA2023_7B_DREIECK_BF",
+    "subject": "MATH",
+    "topicId": "MATH_GEO_PYTH",
+    "difficulty": 5,
+    "qtype": "SHORT",
+    "prompt": "Das Dreieck $ABF$ ist rechtwinklig bei $F$ und gleichschenklig ($|AF| = |BF|$). Die Hypotenuse $AB$ ist 131,5 cm lang. Berechne $|BF|$. (Runde auf eine Nachkommastelle.)",
+    "figure": { "type": "rightTriangle", "a": 93, "b": 93, "labels": { "a": "BF = ?", "b": "AF = ?", "c": "AB = 131,5 cm", "A": "A", "B": "B", "C": "F" } },
+    "payload": { "answer_type": "number", "unit": "cm", "tolerance": 0.15 },
+    "solution": { "value": 93 },
+    "explanation": [
+      { "kind": "steps", "body": "Beide Katheten heißen $x$: $x^2 + x^2 = 131{,}5^2 \\Rightarrow 2x^2 = 17\\,292{,}25 \\Rightarrow x^2 = 8\\,646{,}1 \\Rightarrow x \\approx 93{,}0$ cm" },
+      { "kind": "answer", "body": "$|BF| = |AF| \\approx 93{,}0$ cm" }
+    ],
+    "tags": ["msa2023", "exam", "pythagoras", "gleichschenklig"],
+    "source": "MSA Berlin 2023, Aufgabe 7b (4 P)"
+  },
+  {
+    "id": "MSA2023_7B_DREIECK_BC",
+    "subject": "MATH",
+    "topicId": "MATH_GEO_TRIG",
+    "difficulty": 5,
+    "qtype": "SHORT",
+    "prompt": "Im rechtwinkligen Dreieck $BCF$ (rechter Winkel bei $F$) ist $|BF| = 93$ cm die Ankathete des Winkels $65°$ bei $B$. Berechne die Hypotenuse $|BC|$. (Runde auf eine Nachkommastelle.)",
+    "figure": { "type": "rightTriangle", "a": 93, "b": 199.5, "labels": { "a": "BF = 93 cm", "b": "CF", "c": "BC = ?", "A": "C", "B": "B", "C": "F", "beta": "65°" } },
+    "payload": { "answer_type": "number", "unit": "cm", "tolerance": 0.3 },
+    "solution": { "value": 220.1 },
+    "explanation": [
+      { "kind": "steps", "body": "Ankathete und Hypotenuse → Kosinus:\n\n$\\cos 65° = \\frac{|BF|}{|BC|} \\Rightarrow |BC| = \\frac{93}{\\cos 65°} \\approx \\frac{93}{0{,}4226} \\approx 220{,}1$ cm" },
+      { "kind": "answer", "body": "$|BC| \\approx 220{,}1$ cm" }
+    ],
+    "tags": ["msa2023", "exam", "trigonometrie", "kosinus"],
+    "source": "MSA Berlin 2023, Aufgabe 7b (4 P)"
+  }
+]

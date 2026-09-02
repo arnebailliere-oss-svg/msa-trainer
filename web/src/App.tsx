@@ -4,6 +4,7 @@ import { AppProvider, useApp } from "./app/state";
 import { Spinner } from "./ui/primitives";
 import { DashboardView } from "./views/DashboardView";
 import { OverviewView } from "./views/OverviewView";
+import { PreviewView } from "./views/PreviewView";
 import { ResultView } from "./views/ResultView";
 import { SessionView } from "./views/SessionView";
 import { StartView } from "./views/StartView";
@@ -129,6 +130,7 @@ function Shell() {
               </RequireProfile>
             }
           />
+          <Route path="/preview/:id" element={<PreviewView />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </main>

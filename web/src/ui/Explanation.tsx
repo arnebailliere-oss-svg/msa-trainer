@@ -3,7 +3,10 @@
 import type { ContentSection } from "@/core/types";
 import { MathText } from "./MathText";
 
+import { LessonWidget } from "./widgets";
+
 const META: Record<ContentSection["kind"], { icon: string; title: string; tone: string; pre: boolean }> = {
+  widget: { icon: "🎛️", title: "Probier es aus", tone: "border-brand-2", pre: false },
   what: { icon: "🎯", title: "Was ist das?", tone: "border-brand-2", pre: false },
   terms: { icon: "📖", title: "Die Begriffe", tone: "border-ink-3", pre: false },
   formula: { icon: "📐", title: "Die Formel", tone: "border-brand", pre: true },
@@ -29,7 +32,8 @@ export function ExplanationBlocks({ sections, compact = false }: { sections: Con
                 {title}
               </h3>
             )}
-            <MathText text={s.body} pre={m.pre} className="text-[1.02rem] leading-relaxed" />
+            {s.kind === "widget" ? <LessonWidget id={s.body.trim()} /> : <MathText text={s.body} pre={m.pre} className="text-[1.02rem] leading-relaxed" />}
+            {s.figureSvg && <div className="mt-3 flex justify-center [&_svg]:max-w-full [&_svg]:h-auto" dangerouslySetInnerHTML={{ __html: s.figureSvg }} />}
           </section>
         );
       })}

@@ -1,141 +1,61 @@
 # CLAUDE.md
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+Guidance for Claude Code when working in this repository.
 
 ## Environment
 
-This project runs on Windows but the shell uses bash (Git Bash/WSL). Use Unix commands:
-- `ls`, `mv`, `cp`, `rm`, `cat` all work
-- Use forward slashes `/` for paths (e.g., `c:/Dev2/MSATRAINER/`)
-- Backslashes also work but forward slashes are preferred in bash
+Windows, shell is Git Bash. Use forward slashes. Node 24 + npm for the web app, Python 3.11 venv (`.venv/`) only for the legacy desktop app and PDF tooling (`PySide6.QtPdf`).
 
-## Project Overview
+**Do not write JSON/TS containing backslashes through Bash heredocs** — the tool collapses `\\` (e.g. `\\alpha` arrives as a BEL byte). Use the Write/Edit tools, or Node with `String.fromCharCode(92)`.
 
-MSA Trainer Berlin - Offline desktop application for German MSA (Mittlerer Schulabschluss) exam preparation for 9th-grade students in Berlin. Focuses on mastery learning with adaptive question selection and error-driven repair mode.
+## Project
 
-**Tech Stack:** Python 3.11+, PySide6 (Qt), SQLite, JSON content packs
+MSA Trainer Berlin — a static web app / PWA (Vite + React 19 + TypeScript + Tailwind 4 + KaTeX) for Berlin's MSA exam (Klasse 9/10). Teach → drill (templated questions with fresh numbers) → repeat (mastery score, Ampel, repair mode). Hosted on GitHub Pages via `.github/workflows/deploy.yml`. Progress lives in the browser (IndexedDB), no backend.
 
-## Build & Run Commands
+The PySide6 desktop app in `src/msa_trainer/` is **legacy** and not developed further.
+
+Project board with status and decisions: [docs/KANBAN.md](docs/KANBAN.md) — keep it updated when work moves.
+
+## Commands (run in `web/`)
 
 ```bash
-# Setup
-python -m venv .venv
-.venv/Scripts/activate  # Windows
-pip install -e ".[dev]"
-
-# Run application
-python -m msa_trainer
-
-# Run tests
-pytest tests/
-
-# Run specific test file
-pytest tests/unit/test_mastery_engine.py -v
+npm run dev                       # dev server http://127.0.0.1:5173/
+npm test                          # vitest (core engine)
+npm run typecheck                 # tsc -b
+npm run content -- --check        # validate content only
+npm run content                   # validate + write web/public/content
+npm run build                     # content + tsc + vite build → dist/
+npm run e2e:desktop               # playwright smoke (needs a build; screenshots in e2e/screenshots)
 ```
 
-## Project Structure
+Preview any question with its variants: `#/preview/<question-id>`.
+
+## Layout
 
 ```
-src/msa_trainer/
-├── core/                    # Business logic (no Qt dependency)
-│   ├── models.py            # Data classes: User, Topic, Question, etc.
-│   ├── enums.py             # Subject, QuestionType, TrainingMode, AmpelState
-│   ├── constants.py         # Scoring deltas, thresholds, weights
-│   ├── mastery_engine.py    # Mastery score updates
-│   ├── selection_engine.py  # Topic prioritization
-│   ├── repair_mode.py       # Repair queue management
-│   ├── session_controller.py
-│   ├── variant_generator.py # SHA-256 seeding
-│   ├── normalizers.py       # Answer normalization
-│   └── evaluators/          # MCQ, CLOZE, MATCH, SHORT evaluators
-├── persistence/
-│   ├── database.py          # SQLite connection with WAL mode
-│   ├── migrations.py        # Schema creation
-│   └── repositories/        # User, Topic, Question, Attempt, Mastery repos
-├── content/
-│   ├── pack_loader.py       # Load content packs
-│   ├── schema_validator.py  # JSON Schema validation
-│   └── importer.py          # Import to SQLite
-├── calculator/              # Safe math calculator (NO eval!)
-│   ├── tokenizer.py         # Lexical analysis
-│   ├── parser.py            # Recursive descent parser
-│   └── evaluator.py         # AST evaluation
-├── ui/
-│   ├── router.py            # View navigation
-│   ├── styles.py            # QSS stylesheets
-│   ├── widgets/             # AmpelIndicator, CalculatorWidget
-│   ├── renderers/           # MCQ, CLOZE, MATCH, SHORT renderers
-│   └── views/               # Start, Dashboard, Session, Result views
-└── utils/
+web/src/core/        engine, no React: types, constants, mastery, selection, repair, session,
+                     variants (SHA-256 seed, sfc32 RNG, templates), expr (safe evaluator),
+                     evaluators, normalizers, format, figures (SVG generators), calculator
+web/src/app/         content loader, db (idb-keyval), state (AppProvider)
+web/src/ui/          MathText (KaTeX + bold/italic/lists), Explanation, renderers, widgets, Calculator, primitives
+web/src/views/       Start, Dashboard, Topic, Session, Result, Overview, Preview
+web/scripts/         build-content.ts (validator + bundle), migrate-legacy.ts (one-off, do not re-run)
+content_packs/berlin_msa/   source of truth: topics.json, questions/*.json, lessons/*.json
+content_packs/schema.v2.json
 ```
 
-## Architecture
+## Content rules
 
-### Core Components
+- Every question: `id`, `subject`, `topicId`, `difficulty` 1–5, `qtype` MCQ/SHORT/CLOZE/MATCH, `prompt`, `payload`, `solution`, structured `explanation` sections, `tags`, `source`.
+- Templates: `variants.variables` (int/float/choice), `derived` expressions, `constraints`; placeholders `{{x}}`, `{{= expr | filter}}`. Computed SHORT solutions: `{ kind: "computed", expr, round?, tolerance? }`. Fraction answers via `answer_type: "fraction"` (`require_reduced`, `exact`), terms via `"term"` (numeric equivalence, `require_simplified`).
+- Math in text: `$…$` / `$$…$$` (KaTeX). Keep `€`, `‰` outside math. Decimal commas are auto-fixed (`3,5` → `3{,}5`).
+- Figures: `figure: { type, … }` generated from variables (types in `core/figures.ts`) — never scans. Lessons may embed `{"kind":"widget","body":"line-explorer"}`.
+- `npm run content -- --check` must pass (0 errors) before committing content. It renders 60 variants per template and checks the evaluator accepts its own solution.
+- Sources: the 2027 Prüfungshefte e-book and exam PDFs are commercial — transcribe/adapt, cite in `source`, never commit or ship PDFs/scans.
 
-- **MasteryEngine** - Updates mastery_score (0-1) and stability per user+topic
-  - Correct: +0.03 mastery, +0.02 stability
-  - Incorrect: -0.06 mastery, -0.04 stability
-  - Speed bonus: +0.01 if under target time
+## Engine rules (docs/ALGORITHM.md)
 
-- **SelectionEngine** - Prioritizes questions using weighted formula:
-  ```
-  priority = 0.45×weakness + 0.25×error_rate + 0.20×recency + 0.10×stability_factor
-  ```
-
-- **Repair Mode** - Triggered on wrong answer, creates 3-question queue:
-  1. Two same-topic questions (difficulty ≤ current)
-  2. One transfer question (parent topic, difficulty ≥ current)
-  - Exits only when transfer question answered correctly
-
-- **Content Pack Loader** - Validates and imports JSON content packs
-
-### Ampel (Traffic Light) System
-
-- Red: mastery_score < 0.45
-- Yellow: 0.45 - 0.75
-- Green: mastery_score > 0.75 AND stability > 0.55
-
-### Question Types
-
-- **MCQ** - Multiple choice with 4 options
-- **CLOZE** - Fill-in-blank with choices
-- **MATCH** - Matching pairs
-- **SHORT** - Numeric/text with answer normalization
-
-### Variant Generation
-
-Deterministic seeding using SHA-256:
-```
-SHA-256(user_id|subject|topic_id|question_id|date_key|mode_key|counter)
-```
-First 8 bytes as uint64 seed for local RNG per question.
-
-## Content Pack Structure
-
-```
-/content_packs/berlin_msa_v1/
-├── pack_manifest.json      # Pack metadata
-├── topics.json             # 51 topics (MATH, DE, EN)
-├── questions_math.json     # Math questions
-├── questions_german.json   # German questions
-└── questions_english.json  # English questions
-```
-
-Schema validation: [docs/JSON_SCHEMA.json](docs/JSON_SCHEMA.json)
-
-## Key Documentation
-
-- [docs/ALGORITHM.md](docs/ALGORITHM.md) - Mastery, Repair Mode, Selection Engine logic
-- [docs/BACKLOGS.md](docs/BACKLOGS.md) - MVP epics A-H with tickets
-- [docs/UI_FLOWS.md](docs/UI_FLOWS.md) - Screen navigation and layouts
-- [docs/VARIANTS_AND_SEEDING.md](docs/VARIANTS_AND_SEEDING.md) - Deterministic variant generation
-- [docs/ACCEPTANCE_TESTS.md](docs/ACCEPTANCE_TESTS.md) - Definition of Done criteria
-
-## Implementation Rules
-
-- No `eval()` - use safe expression parser for calculator
-- No global `random.seed()` - use local RNG per question
-- Repair Mode overrides Selection Engine
-- Mastery updates only after attempt persistence
-- All content in German (student-facing), code/docs can be English or German
+- Mastery: correct +0.03 (+0.01 speed bonus), wrong −0.06; stability +0.02 / −0.04; Ampel red < 0.45, green > 0.75 with stability > 0.55.
+- Selection priority = 0.45·weakness + 0.25·error rate + 0.20·recency + 0.10·(1 − stability).
+- Repair mode after a wrong answer: 2 same-topic questions (difficulty ≤ current), then 1 transfer question from sibling topics; correct transfer exits, wrong transfer restarts one level easier. Repair overrides selection. Attempt is persisted before mastery is updated.
+- Variants: seed = SHA-256(user|subject|topic|question|date|mode|counter); local RNG only; trig in degrees.

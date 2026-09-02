@@ -1,0 +1,469 @@
+[
+  {
+    "id": "MSA2024_1A_STUNDEN_MCQ",
+    "subject": "MATH",
+    "topicId": "MATH_GEO_UNITS",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "Wie viele Minuten sind 3,25 Stunden?",
+    "payload": { "choices": ["195 min", "185 min", "205 min", "215 min"], "shuffle": true },
+    "solution": { "correct_choice": "195 min" },
+    "explanation": [
+      { "kind": "steps", "body": "$3{,}25\\,\\text{h} = 3{,}25 \\cdot 60\\,\\text{min} = 195\\,\\text{min}$ — oder: 3 h = 180 min, 0,25 h = 15 min." },
+      { "kind": "answer", "body": "195 min" }
+    ],
+    "tags": ["msa2024", "exam", "basisaufgabe", "einheiten"],
+    "source": "MSA Berlin 2024, Aufgabe 1a (1 P)"
+  },
+  {
+    "id": "MSA2024_1B_ANTEIL",
+    "subject": "MATH",
+    "topicId": "MATH_NUM_FRAC_BASIC",
+    "difficulty": 3,
+    "qtype": "SHORT",
+    "prompt": "Eine Figur besteht aus 16 gleich großen Quadraten. Davon sind 4 Quadrate ganz und 8 Quadrate zur Hälfte grau eingefärbt. Gib den Anteil der grauen Fläche in Prozent an.",
+    "payload": { "answer_type": "number", "unit": "%" },
+    "solution": { "value": 50 },
+    "explanation": [
+      { "kind": "steps", "body": "8 halbe Quadrate sind 4 ganze. Grau: $4 + 4 = 8$ von 16 Quadraten.\n\n$\\frac{8}{16} = \\frac{1}{2} = 50\\,\\%$" },
+      { "kind": "answer", "body": "50 % (oder $\\frac{1}{2}$)" }
+    ],
+    "tags": ["msa2024", "exam", "basisaufgabe", "bruch", "anteil"],
+    "source": "MSA Berlin 2024, Aufgabe 1b (1 P)"
+  },
+  {
+    "id": "MSA2024_1C_UMFANG_MCQ",
+    "subject": "MATH",
+    "topicId": "MATH_GEO_AREA_BASIC",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "Ein gleichseitiges Dreieck hat die Seitenlänge $a$. Mit welcher Formel berechnet man den Umfang $u$?",
+    "payload": { "choices": ["$u = 3 \\cdot a$", "$u = a \\cdot a \\cdot a$", "$u = a^3$", "$u = \\frac{3}{a}$"], "shuffle": true },
+    "solution": { "correct_choice": "$u = 3 \\cdot a$" },
+    "explanation": [
+      { "kind": "steps", "body": "Gleichseitig = alle drei Seiten gleich lang. Umfang = alle Seiten addieren: $u = a + a + a = 3a$." },
+      { "kind": "answer", "body": "$u = 3 \\cdot a$" }
+    ],
+    "tags": ["msa2024", "exam", "basisaufgabe", "umfang"],
+    "source": "MSA Berlin 2024, Aufgabe 1c (1 P)"
+  },
+  {
+    "id": "MSA2024_1D_GLEICHUNG",
+    "subject": "MATH",
+    "topicId": "MATH_ALG_EQU_LINEAR",
+    "difficulty": 3,
+    "qtype": "SHORT",
+    "prompt": "Gib die Lösung der Gleichung $2 \\cdot (x - 6{,}5) = 0$ an.",
+    "payload": { "answer_type": "number" },
+    "solution": { "value": 6.5 },
+    "explanation": [
+      { "kind": "steps", "body": "$2 \\cdot (x - 6{,}5) = 0 \\;|\\; : 2 \\Rightarrow x - 6{,}5 = 0 \\;|\\; + 6{,}5 \\Rightarrow x = 6{,}5$\n\nSchneller: Ein Produkt ist 0, wenn ein Faktor 0 ist — die Klammer muss 0 sein." },
+      { "kind": "answer", "body": "$x = 6{,}5$" }
+    ],
+    "tags": ["msa2024", "exam", "basisaufgabe", "gleichung"],
+    "source": "MSA Berlin 2024, Aufgabe 1d (1 P)"
+  },
+  {
+    "id": "MSA2024_1E_EINTRITT",
+    "subject": "MATH",
+    "topicId": "MATH_NUM_PCT_CHANGE",
+    "difficulty": 3,
+    "qtype": "SHORT",
+    "prompt": "Der Eintritt ins Schwimmbad kostet 3,50 €. Der Preis wird um 20 % erhöht. Gib den neuen Eintrittspreis an.",
+    "payload": { "answer_type": "number", "unit": "€", "tolerance": 0.001 },
+    "solution": { "value": 4.2 },
+    "explanation": [
+      { "kind": "steps", "body": "Um 20 % erhöht → 120 % vom alten Preis: $1{,}2 \\cdot 3{,}50 = 4{,}20$ €" },
+      { "kind": "answer", "body": "4,20 €" }
+    ],
+    "tags": ["msa2024", "exam", "basisaufgabe", "prozent"],
+    "source": "MSA Berlin 2024, Aufgabe 1e (1 P)"
+  },
+  {
+    "id": "MSA2024_1F_PYTHAGORAS_MCQ",
+    "subject": "MATH",
+    "topicId": "MATH_GEO_PYTH",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "In einem rechtwinkligen Dreieck ist $x$ die Hypotenuse, $y$ und $z$ sind die Katheten. Mit welcher Gleichung kann man $z$ berechnen?",
+    "figure": { "type": "rightTriangle", "a": 4, "b": 3, "labels": { "a": "y", "b": "z", "c": "x" } },
+    "payload": { "choices": ["$z^2 = x^2 - y^2$", "$z^2 = \\sqrt{x^2 + y^2}$", "$z = x + y$", "$z^2 = \\sqrt{x^2 - y^2}$"], "shuffle": true },
+    "solution": { "correct_choice": "$z^2 = x^2 - y^2$" },
+    "explanation": [
+      { "kind": "steps", "body": "Pythagoras mit Hypotenuse $x$: $y^2 + z^2 = x^2$. Nach $z^2$ umstellen: $z^2 = x^2 - y^2$, also $z = \\sqrt{x^2 - y^2}$." },
+      { "kind": "mistake", "body": "$z^2 = \\sqrt{\\ldots}$ mischt Quadrat und Wurzel — entweder $z^2 = x^2 - y^2$ oder $z = \\sqrt{x^2 - y^2}$." },
+      { "kind": "answer", "body": "$z^2 = x^2 - y^2$" }
+    ],
+    "tags": ["msa2024", "exam", "basisaufgabe", "pythagoras"],
+    "source": "MSA Berlin 2024, Aufgabe 1f (1 P)"
+  },
+  {
+    "id": "MSA2024_1G_POTENZ",
+    "subject": "MATH",
+    "topicId": "MATH_ALG_POW",
+    "difficulty": 3,
+    "qtype": "SHORT",
+    "prompt": "Gib den Wert für $x$ an, sodass gilt: $4^x = 256$.",
+    "payload": { "answer_type": "number" },
+    "solution": { "value": 4 },
+    "explanation": [
+      { "kind": "steps", "body": "Ausprobieren: $4^2 = 16$, $4^3 = 64$, $4^4 = 256$ ✓\n\nAlso $x = 4$." },
+      { "kind": "answer", "body": "$x = 4$" }
+    ],
+    "tags": ["msa2024", "exam", "basisaufgabe", "potenzen"],
+    "source": "MSA Berlin 2024, Aufgabe 1g (1 P)"
+  },
+  {
+    "id": "MSA2024_1H_MEDIAN",
+    "subject": "MATH",
+    "topicId": "MATH_DATA_STATS",
+    "difficulty": 3,
+    "qtype": "SHORT",
+    "prompt": "Ermittle den Median (Zentralwert) der Datenreihe: 20 °C, 17 °C, 21 °C, 18 °C, 21 °C, 11 °C.",
+    "payload": { "answer_type": "number", "unit": "°C" },
+    "solution": { "value": 19 },
+    "explanation": [
+      { "kind": "steps", "body": "Sortieren: 11, 17, **18, 20**, 21, 21.\n\nSechs Werte → zwei mittlere: $\\frac{18 + 20}{2} = 19$ °C" },
+      { "kind": "answer", "body": "Median 19 °C" }
+    ],
+    "tags": ["msa2024", "exam", "basisaufgabe", "median"],
+    "source": "MSA Berlin 2024, Aufgabe 1h (2 P)"
+  },
+  {
+    "id": "MSA2024_1I_YACHSE_MCQ",
+    "subject": "MATH",
+    "topicId": "MATH_FUNC_LINEAR_FORM",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "Eine Gerade hat die Gleichung $y = 0{,}5x - 1$. Wo schneidet sie die $y$-Achse?",
+    "payload": { "choices": ["$S(0 \\,|\\, -1)$", "$S(0 \\,|\\, 0{,}5)$", "$S(-1 \\,|\\, 0)$", "$S(2 \\,|\\, 0)$"], "shuffle": true },
+    "solution": { "correct_choice": "$S(0 \\,|\\, -1)$" },
+    "explanation": [
+      { "kind": "steps", "body": "$y = mx + n$: der Achsenabschnitt $n = -1$ ist der Schnitt mit der $y$-Achse (dort ist $x = 0$): $S(0 \\,|\\, -1)$.\n\n$(2 \\,|\\, 0)$ wäre die Nullstelle — Schnitt mit der $x$-Achse." },
+      { "kind": "answer", "body": "$S(0 \\,|\\, -1)$" }
+    ],
+    "tags": ["msa2024", "exam", "basisaufgabe", "lineare-funktion"],
+    "source": "MSA Berlin 2024, Aufgabe 1i (1 P)"
+  },
+  {
+    "id": "MSA2024_2A_SPANNWEITE",
+    "subject": "MATH",
+    "topicId": "MATH_DATA_STATS",
+    "difficulty": 3,
+    "qtype": "SHORT",
+    "prompt": "Die monatlichen Niederschläge 2021 in Brandenburg: Der niedrigste Wert war im April mit 19,2 mm, der höchste im Juni mit 85,1 mm. Ermittle die Spannweite.",
+    "payload": { "answer_type": "number", "unit": "mm", "tolerance": 0.05 },
+    "solution": { "value": 65.9 },
+    "explanation": [
+      { "kind": "steps", "body": "Spannweite = größter − kleinster Wert: $85{,}1 - 19{,}2 = 65{,}9$ mm" },
+      { "kind": "answer", "body": "65,9 mm" }
+    ],
+    "tags": ["msa2024", "exam", "statistik", "spannweite"],
+    "source": "MSA Berlin 2024, Aufgabe 2a (2 P)"
+  },
+  {
+    "id": "MSA2024_2B_DURCHSCHNITT_PROZENT",
+    "subject": "MATH",
+    "topicId": "MATH_NUM_PCT_BASIC",
+    "difficulty": 4,
+    "qtype": "SHORT",
+    "prompt": "Im Jahr 2021 fielen insgesamt 581,7 mm Niederschlag, im April nur 19,2 mm. Berechne zuerst den monatlichen Durchschnitt und ermittle dann, um wie viel Prozent der April **unter** dem Durchschnitt liegt. (Runde auf ganze Prozent.)",
+    "payload": { "answer_type": "number", "unit": "%", "tolerance": 1 },
+    "solution": { "value": 60 },
+    "explanation": [
+      { "kind": "steps", "body": "1. Durchschnitt: $581{,}7 : 12 \\approx 48{,}5$ mm\n2. April im Verhältnis zum Durchschnitt: $19{,}2 : 48{,}5 \\approx 0{,}40 = 40\\,\\%$\n3. Also liegt der April $100\\,\\% - 40\\,\\% = 60\\,\\%$ **unter** dem Durchschnitt." },
+      { "kind": "mistake", "body": "Der Grundwert ist der **Durchschnitt** (48,5 mm), nicht der April-Wert." },
+      { "kind": "answer", "body": "≈ 60 % unter dem Durchschnitt" }
+    ],
+    "tags": ["msa2024", "exam", "statistik", "prozent", "mittelwert"],
+    "source": "MSA Berlin 2024, Aufgabe 2b (3 P)"
+  },
+  {
+    "id": "MSA2024_2C_KREISWINKEL",
+    "subject": "MATH",
+    "topicId": "MATH_DATA_CHARTS",
+    "difficulty": 4,
+    "qtype": "SHORT",
+    "prompt": "Familie Schulz verbraucht täglich 508 Liter Wasser, davon 12 Liter für Trinken und Kochen. Berechne die Winkelgröße dieses Anteils im Kreisdiagramm. (Runde auf eine Nachkommastelle.)",
+    "figure": { "type": "pieChart", "categories": ["Trinken/Kochen 12 l", "Körperpflege 256 l", "Toilette 136 l", "Wäsche 60 l", "Garten 16 l", "Sonstiges 28 l"], "values": [12, 256, 136, 60, 16, 28] },
+    "payload": { "answer_type": "number", "unit": "°", "tolerance": 0.25 },
+    "solution": { "value": 8.5 },
+    "explanation": [
+      { "kind": "steps", "body": "Anteil: $\\frac{12}{508} \\approx 0{,}0236 = 2{,}4\\,\\%$\n\nWinkel = Anteil · 360°: $0{,}0236 \\cdot 360° \\approx 8{,}5°$ (mit dem gerundeten Anteil 2,4 % ergibt sich 8,64° — beides wird akzeptiert)." },
+      { "kind": "answer", "body": "≈ 8,5°" }
+    ],
+    "tags": ["msa2024", "exam", "kreisdiagramm", "sternchen"],
+    "source": "MSA Berlin 2024, Aufgabe 2c* (2 P)"
+  },
+  {
+    "id": "MSA2024_2D_WASSERKOSTEN",
+    "subject": "MATH",
+    "topicId": "MATH_FUNC_PROP",
+    "difficulty": 3,
+    "qtype": "SHORT",
+    "prompt": "Für die Gartenpflege verbraucht Familie Schulz täglich 16 Liter Leitungswasser. Ein Liter kostet 0,14 ct. Wie viel Geld spart die Familie pro Tag, wenn sie dafür Regenwasser nutzt? (Angabe in Cent)",
+    "payload": { "answer_type": "number", "unit": "ct", "tolerance": 0.001 },
+    "solution": { "value": 2.24 },
+    "explanation": [
+      { "kind": "steps", "body": "$16 \\cdot 0{,}14\\,\\text{ct} = 2{,}24\\,\\text{ct}$" },
+      { "kind": "answer", "body": "2,24 ct pro Tag" }
+    ],
+    "tags": ["msa2024", "exam", "proportional", "sachaufgabe"],
+    "source": "MSA Berlin 2024, Aufgabe 2d (1 P)"
+  },
+  {
+    "id": "MSA2024_3B_SCHEITEL_MCQ",
+    "subject": "MATH",
+    "topicId": "MATH_FUNC_QUAD",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "Gegeben ist die Parabel $p(x) = x^2 - 4$. Wo liegt ihr Scheitelpunkt $S$?",
+    "figure": { "type": "coordinateSystem", "xmin": -5, "xmax": 5, "ymin": -6, "ymax": 6, "width": 260, "height": 260, "parabolas": [{ "a": 1, "d": 0, "e": -4, "label": "p" }], "points": [{ "x": 0, "y": -4, "label": "S" }] },
+    "payload": { "choices": ["$S(0 \\,|\\, -4)$", "$S(-4 \\,|\\, 0)$", "$S(0 \\,|\\, 4)$", "$S(2 \\,|\\, 0)$"], "shuffle": true },
+    "solution": { "correct_choice": "$S(0 \\,|\\, -4)$" },
+    "explanation": [
+      { "kind": "steps", "body": "$x^2 - 4$ ist die Normalparabel, um 4 nach **unten** verschoben. Scheitelpunktform: $(x - 0)^2 + (-4)$ → $S(0 \\,|\\, -4)$.\n\n$(2 \\,|\\, 0)$ und $(-2 \\,|\\, 0)$ sind die Nullstellen." },
+      { "kind": "answer", "body": "$S(0 \\,|\\, -4)$" }
+    ],
+    "tags": ["msa2024", "exam", "parabel", "scheitelpunkt"],
+    "source": "MSA Berlin 2024, Aufgabe 3b (2 P)"
+  },
+  {
+    "id": "MSA2024_3C_PUNKTPROBE_MCQ",
+    "subject": "MATH",
+    "topicId": "MATH_FUNC_QUAD",
+    "difficulty": 4,
+    "qtype": "MCQ",
+    "prompt": "Liegt der Punkt $T(-5 \\,|\\, 20)$ auf der Parabel $p(x) = x^2 - 4$?",
+    "payload": { "choices": ["Nein, denn $p(-5) = 25 - 4 = 21 \\neq 20$.", "Ja, denn $p(-5) = 20$.", "Nein, denn $p(-5) = -25 - 4 = -29$.", "Ja, denn $-5$ ist eine Nullstelle."], "shuffle": true },
+    "solution": { "correct_choice": "Nein, denn $p(-5) = 25 - 4 = 21 \\neq 20$." },
+    "explanation": [
+      { "kind": "steps", "body": "Punktprobe: $p(-5) = (-5)^2 - 4 = 25 - 4 = 21$. Der Punkt hat aber $y = 20$ → liegt **nicht** auf der Parabel." },
+      { "kind": "mistake", "body": "$(-5)^2 = 25$, nicht $-25$ — die Klammer beim Quadrieren nicht vergessen." },
+      { "kind": "answer", "body": "Nein — $p(-5) = 21$." }
+    ],
+    "tags": ["msa2024", "exam", "parabel", "punktprobe"],
+    "source": "MSA Berlin 2024, Aufgabe 3c (2 P)"
+  },
+  {
+    "id": "MSA2024_3D_SCHNITTPUNKTE",
+    "subject": "MATH",
+    "topicId": "MATH_FUNC_QUAD",
+    "difficulty": 5,
+    "qtype": "MCQ",
+    "prompt": "Die Gerade $f(x) = 4x + 1$ und die Parabel $p(x) = x^2 - 4$ schneiden sich in zwei Punkten. Berechne ihre Koordinaten.",
+    "figure": { "type": "coordinateSystem", "xmin": -4, "xmax": 7, "ymin": -6, "ymax": 24, "width": 280, "height": 320, "lines": [{ "m": 4, "n": 1, "label": "f" }], "parabolas": [{ "a": 1, "d": 0, "e": -4, "label": "p" }], "points": [{ "x": -1, "y": -3 }, { "x": 5, "y": 21 }] },
+    "payload": { "choices": ["$S_1(-1 \\,|\\, -3)$ und $S_2(5 \\,|\\, 21)$", "$S_1(1 \\,|\\, 5)$ und $S_2(-5 \\,|\\, -19)$", "$S_1(-1 \\,|\\, 3)$ und $S_2(5 \\,|\\, -21)$", "$S_1(0 \\,|\\, 1)$ und $S_2(4 \\,|\\, 12)$"], "shuffle": true },
+    "solution": { "correct_choice": "$S_1(-1 \\,|\\, -3)$ und $S_2(5 \\,|\\, 21)$" },
+    "explanation": [
+      { "kind": "steps", "body": "1. Gleichsetzen: $4x + 1 = x^2 - 4 \\;|\\; -4x - 1 \\Rightarrow 0 = x^2 - 4x - 5$\n2. pq-Formel ($p = -4$, $q = -5$): $x_{1,2} = 2 \\pm \\sqrt{4 + 5} = 2 \\pm 3 \\Rightarrow x_1 = 5,\\; x_2 = -1$\n3. $y$-Werte über $f$: $f(5) = 21$, $f(-1) = -3$\n\n$S_1(-1 \\,|\\, -3)$, $S_2(5 \\,|\\, 21)$" },
+      { "kind": "remember", "body": "Schnittpunkte zweier Graphen: **gleichsetzen**, $x$ berechnen, dann $y$ durch Einsetzen." },
+      { "kind": "answer", "body": "$S_1(-1 \\,|\\, -3)$ und $S_2(5 \\,|\\, 21)$" }
+    ],
+    "tags": ["msa2024", "exam", "parabel", "schnittpunkte", "pq-formel", "sternchen"],
+    "source": "MSA Berlin 2024, Aufgabe 3d* (4 P)"
+  },
+  {
+    "id": "MSA2024_4A_KEGEL_GRUNDFLAECHE",
+    "subject": "MATH",
+    "topicId": "MATH_GEO_CIRCLE",
+    "difficulty": 3,
+    "qtype": "SHORT",
+    "prompt": "Ein Kegel hat den Radius $r = 30$ cm und die Höhe $h = 80$ cm. Berechne den Flächeninhalt der Grundfläche. (Runde auf zwei Nachkommastellen.)",
+    "payload": { "answer_type": "number", "unit": "cm²", "tolerance": 0.05 },
+    "solution": { "value": 2827.43 },
+    "explanation": [
+      { "kind": "steps", "body": "Die Grundfläche ist ein Kreis: $A = \\pi r^2 = \\pi \\cdot 30^2 = \\pi \\cdot 900 \\approx 2827{,}43\\,\\text{cm}^2$" },
+      { "kind": "answer", "body": "≈ 2827,43 cm²" }
+    ],
+    "tags": ["msa2024", "exam", "kegel", "kreis"],
+    "source": "MSA Berlin 2024, Aufgabe 4a (2 P)"
+  },
+  {
+    "id": "MSA2024_4B_VERPACKUNG_MCQ",
+    "subject": "MATH",
+    "topicId": "MATH_GEO_VOLUME_ADV",
+    "difficulty": 4,
+    "qtype": "MCQ",
+    "prompt": "Ein Kegel ($r = 30$ cm, $h = 80$ cm) soll in eine quaderförmige Verpackung (Länge × Breite × Höhe). Welche ist die kleinstmögliche?",
+    "payload": { "choices": ["61 cm × 61 cm × 81 cm", "31 cm × 31 cm × 81 cm", "61 cm × 61 cm × 101 cm", "31 cm × 61 cm × 81 cm"], "shuffle": true },
+    "solution": { "correct_choice": "61 cm × 61 cm × 81 cm" },
+    "explanation": [
+      { "kind": "steps", "body": "Der Kegel ist so breit wie sein **Durchmesser**: $d = 2 \\cdot 30 = 60$ cm — in **beide** Richtungen. Höhe mindestens 80 cm.\n\nAlso mindestens $60 \\times 60 \\times 80$ → die kleinste passende Verpackung ist $61 \\times 61 \\times 81$." },
+      { "kind": "mistake", "body": "31 cm reichen nicht — das ist nur der Radius plus 1 cm." },
+      { "kind": "answer", "body": "61 cm × 61 cm × 81 cm" }
+    ],
+    "tags": ["msa2024", "exam", "kegel", "begruenden"],
+    "source": "MSA Berlin 2024, Aufgabe 4b (4 P)"
+  },
+  {
+    "id": "MSA2024_4C_FUELLMATERIAL",
+    "subject": "MATH",
+    "topicId": "MATH_GEO_VOLUME_ADV",
+    "difficulty": 5,
+    "qtype": "SHORT",
+    "prompt": "Ein Kegel ($r = 30$ cm, $h = 80$ cm) wird in einem Zylinder mit den Innenmaßen $r = 30{,}5$ cm und $h = 81$ cm verschickt. Der Rest wird mit Füllmaterial aufgefüllt. Wie viele cm³ Füllmaterial werden benötigt? (Runde auf ganze cm³.)",
+    "payload": { "answer_type": "number", "unit": "cm³", "tolerance": 5 },
+    "solution": { "value": 161322 },
+    "explanation": [
+      { "kind": "steps", "body": "Füllmaterial = Zylinder − Kegel\n\n$V_{Zyl} = \\pi \\cdot 30{,}5^2 \\cdot 81 \\approx 236\\,719{,}8\\,\\text{cm}^3$\n\n$V_{Kegel} = \\frac{1}{3} \\cdot \\pi \\cdot 30^2 \\cdot 80 \\approx 75\\,398{,}2\\,\\text{cm}^3$\n\n$V_{Füll} \\approx 236\\,719{,}8 - 75\\,398{,}2 \\approx 161\\,322\\,\\text{cm}^3$" },
+      { "kind": "remember", "body": "Kegel = ein **Drittel** des Zylinders mit gleicher Grundfläche und Höhe." },
+      { "kind": "answer", "body": "≈ 161 322 cm³ (≈ 161 Liter)" }
+    ],
+    "tags": ["msa2024", "exam", "kegel", "zylinder", "volumen", "sternchen"],
+    "source": "MSA Berlin 2024, Aufgabe 4c* (3 P)"
+  },
+  {
+    "id": "MSA2024_5A_STAUBSAUGEN",
+    "subject": "MATH",
+    "topicId": "MATH_DATA_PROB",
+    "difficulty": 3,
+    "qtype": "SHORT",
+    "prompt": "Fünf Kinder ziehen je einen von 5 Aufgabenzetteln (Staubsaugen, Abwaschen, Müll, Einkaufen, Joker). Gib die Wahrscheinlichkeit an, dass das erste Kind „Staubsaugen“ zieht. (Bruch)",
+    "payload": { "answer_type": "fraction", "require_reduced": true },
+    "solution": { "value": "1/5" },
+    "explanation": [
+      { "kind": "steps", "body": "1 günstiger Zettel von 5: $P = \\frac{1}{5} = 20\\,\\%$" },
+      { "kind": "answer", "body": "$\\frac{1}{5}$" }
+    ],
+    "tags": ["msa2024", "exam", "wahrscheinlichkeit"],
+    "source": "MSA Berlin 2024, Aufgabe 5a (1 P)"
+  },
+  {
+    "id": "MSA2024_5B_JOKER_ZWEIMAL",
+    "subject": "MATH",
+    "topicId": "MATH_DATA_PROB",
+    "difficulty": 4,
+    "qtype": "SHORT",
+    "prompt": "Benjamin zieht jede Woche als Erster einen von 5 Zetteln (einer davon ist der Joker; die Zettel werden jede Woche neu gemischt). Berechne die Wahrscheinlichkeit, dass er in **beiden** Wochen den Joker zieht. (Bruch)",
+    "figure": { "type": "treeDiagram", "a": "J", "b": "kein J", "pa": "1/5", "pb": "4/5", "stages": 2 },
+    "payload": { "answer_type": "fraction", "require_reduced": true },
+    "solution": { "value": "1/25" },
+    "explanation": [
+      { "kind": "steps", "body": "Jede Woche neu: $P(\\text{Joker}) = \\frac{1}{5}$, unabhängig voneinander.\n\nProduktregel: $\\frac{1}{5} \\cdot \\frac{1}{5} = \\frac{1}{25} = 4\\,\\%$" },
+      { "kind": "answer", "body": "$\\frac{1}{25}$" }
+    ],
+    "tags": ["msa2024", "exam", "wahrscheinlichkeit", "pfadregel"],
+    "source": "MSA Berlin 2024, Aufgabe 5b (3 P)"
+  },
+  {
+    "id": "MSA2024_5C_KLARA_JOKER",
+    "subject": "MATH",
+    "topicId": "MATH_DATA_PROB",
+    "difficulty": 5,
+    "qtype": "SHORT",
+    "prompt": "Benjamin zieht als Erster einen von 5 Zetteln (einer ist der Joker), Klara zieht danach als Zweite — **ohne Zurücklegen**. Ermittle die Wahrscheinlichkeit, dass Klara den Joker zieht. (Bruch)",
+    "payload": { "answer_type": "fraction", "require_reduced": true },
+    "solution": { "value": "1/5" },
+    "explanation": [
+      { "kind": "steps", "body": "Damit Klara den Joker bekommt, darf Benjamin ihn **nicht** ziehen: $\\frac{4}{5}$. Dann sind noch 4 Zettel da, einer ist der Joker: $\\frac{1}{4}$.\n\n$P = \\frac{4}{5} \\cdot \\frac{1}{4} = \\frac{4}{20} = \\frac{1}{5}$" },
+      { "kind": "remember", "body": "**Ohne Zurücklegen** ändern sich die Brüche in der zweiten Stufe: der Nenner wird um 1 kleiner." },
+      { "kind": "answer", "body": "$\\frac{1}{5}$" }
+    ],
+    "tags": ["msa2024", "exam", "wahrscheinlichkeit", "ohne-zuruecklegen", "sternchen"],
+    "source": "MSA Berlin 2024, Aufgabe 5c* (2 P)"
+  },
+  {
+    "id": "MSA2024_6A_SEILBAHN_HOEHE",
+    "subject": "MATH",
+    "topicId": "MATH_GEO_PYTH",
+    "difficulty": 4,
+    "qtype": "SHORT",
+    "prompt": "Eine Seilbahn verbindet die Orte $B$ und $A$. Die Seilstrecke $BA$ ist 384 m lang, die waagerechte Entfernung $BF$ beträgt 255 m. Berechne den Höhenunterschied $FA$. (Runde auf zwei Nachkommastellen.)",
+    "figure": { "type": "rightTriangle", "a": 255, "b": 287.11, "labels": { "a": "BF = 255 m", "b": "FA = ?", "c": "BA = 384 m", "A": "A", "B": "B", "C": "F", "beta": "β₁" } },
+    "payload": { "answer_type": "number", "unit": "m", "tolerance": 0.05 },
+    "solution": { "value": 287.11 },
+    "explanation": [
+      { "kind": "steps", "body": "Rechtwinkliges Dreieck mit Hypotenuse $BA = 384$ m:\n\n$|FA| = \\sqrt{384^2 - 255^2} = \\sqrt{147\\,456 - 65\\,025} = \\sqrt{82\\,431} \\approx 287{,}11$ m" },
+      { "kind": "answer", "body": "≈ 287,11 m" }
+    ],
+    "tags": ["msa2024", "exam", "pythagoras", "sachaufgabe"],
+    "source": "MSA Berlin 2024, Aufgabe 6a (2 P)"
+  },
+  {
+    "id": "MSA2024_6B_SEILBAHN_WINKEL",
+    "subject": "MATH",
+    "topicId": "MATH_GEO_TRIG",
+    "difficulty": 4,
+    "qtype": "SHORT",
+    "prompt": "Seilbahn: Seilstrecke $BA = 384$ m, waagerechte Entfernung $BF = 255$ m. Bestimme den Winkel $\\beta_1$ bei $B$, mit dem die Seilbahn ansteigt. (Runde auf zwei Nachkommastellen.)",
+    "payload": { "answer_type": "number", "unit": "°", "tolerance": 0.05 },
+    "solution": { "value": 48.39 },
+    "explanation": [
+      { "kind": "steps", "body": "Von $\\beta_1$ aus: 255 m = **Ankathete**, 384 m = **Hypotenuse** → Kosinus.\n\n$\\cos\\beta_1 = \\frac{255}{384} \\approx 0{,}664 \\Rightarrow \\beta_1 = \\cos^{-1}(0{,}664) \\approx 48{,}39°$" },
+      { "kind": "answer", "body": "$\\beta_1 \\approx 48{,}39°$" }
+    ],
+    "tags": ["msa2024", "exam", "trigonometrie", "sachaufgabe"],
+    "source": "MSA Berlin 2024, Aufgabe 6b (2 P)"
+  },
+  {
+    "id": "MSA2024_6C_SEILBAHN_DAUER",
+    "subject": "MATH",
+    "topicId": "MATH_GEO_UNITS",
+    "difficulty": 3,
+    "qtype": "SHORT",
+    "prompt": "Die Seilbahn fährt die 384 m von $B$ nach $A$ mit durchschnittlich 3,2 m/s. Wie lange dauert die Fahrt in Minuten?",
+    "payload": { "answer_type": "number", "unit": "min" },
+    "solution": { "value": 2 },
+    "explanation": [
+      { "kind": "formula", "body": "$v = \\frac{s}{t} \\Rightarrow t = \\frac{s}{v}$ (Formelblatt)" },
+      { "kind": "steps", "body": "$t = 384 : 3{,}2 = 120$ s $= 2$ min" },
+      { "kind": "answer", "body": "2 Minuten" }
+    ],
+    "tags": ["msa2024", "exam", "geschwindigkeit", "einheiten"],
+    "source": "MSA Berlin 2024, Aufgabe 6c (2 P)"
+  },
+  {
+    "id": "MSA2024_6D_SEILBAHN_SINUSSATZ",
+    "subject": "MATH",
+    "topicId": "MATH_GEO_TRIG",
+    "difficulty": 5,
+    "qtype": "SHORT",
+    "prompt": "Eine zweite Seilbahn verbindet $B$ mit $C$. Im Dreieck $ABC$ ist $c = |AB| = 384$ m, $\\alpha = 38°$ und $\\beta_2 = 108°$. Berechne die Länge der Strecke $BC$. (Runde auf zwei Nachkommastellen.)",
+    "figure": { "type": "triangle", "alpha": 38, "beta": 108, "labels": { "alpha": "α = 38°", "beta": "β₂ = 108°", "c": "c = 384 m", "a": "a = BC = ?" } },
+    "payload": { "answer_type": "number", "unit": "m", "tolerance": 0.1 },
+    "solution": { "value": 422.78 },
+    "explanation": [
+      { "kind": "steps", "body": "1. Dritter Winkel: $\\gamma = 180° - 38° - 108° = 34°$ (gegenüber von $c$).\n2. Sinussatz: $\\frac{a}{\\sin\\alpha} = \\frac{c}{\\sin\\gamma}$\n3. $a = \\frac{\\sin 38°}{\\sin 34°} \\cdot 384 \\approx \\frac{0{,}6157}{0{,}5592} \\cdot 384 \\approx 422{,}78$ m" },
+      { "kind": "answer", "body": "$|BC| \\approx 422{,}78$ m" }
+    ],
+    "tags": ["msa2024", "exam", "sinussatz", "sternchen"],
+    "source": "MSA Berlin 2024, Aufgabe 6d* (4 P)"
+  },
+  {
+    "id": "MSA2024_7A_BLUMEN_LGS_MCQ",
+    "subject": "MATH",
+    "topicId": "MATH_ALG_LGS",
+    "difficulty": 4,
+    "qtype": "MCQ",
+    "prompt": "Im Geschäft A kosten eine Rose und eine Tulpe zusammen 3,80 €. Für 6 Rosen und 5 Tulpen zahlt Daniel 21,20 €. Welches Gleichungssystem passt ($x$: Preis pro Rose, $y$: Preis pro Tulpe)?",
+    "payload": {
+      "choices": ["I. $x + y = 3{,}80$ · II. $6x + 5y = 21{,}20$", "I. $x \\cdot y = 3{,}80$ · II. $6x \\cdot 5y = 21{,}20$", "I. $x + y = 3{,}80$ · II. $5x + 6y = 21{,}20$", "I. $x + y = 21{,}20$ · II. $6x + 5y = 3{,}80$"],
+      "shuffle": true
+    },
+    "solution": { "correct_choice": "I. $x + y = 3{,}80$ · II. $6x + 5y = 21{,}20$" },
+    "explanation": [
+      { "kind": "steps", "body": "„Eine Rose und eine Tulpe zusammen 3,80 €“ → $x + y = 3{,}80$.\n\n„6 Rosen und 5 Tulpen 21,20 €“ → $6x + 5y = 21{,}20$ — Anzahl mal Preis, addiert." },
+      { "kind": "remember", "body": "Beim Aufstellen: **Anzahl · Einzelpreis** pro Sorte, dann addieren." },
+      { "kind": "answer", "body": "$x + y = 3{,}80$ und $6x + 5y = 21{,}20$" }
+    ],
+    "tags": ["msa2024", "exam", "lgs", "aufstellen"],
+    "source": "MSA Berlin 2024, Aufgabe 7a (2 P)"
+  },
+  {
+    "id": "MSA2024_7B_BLUMEN_LOESEN",
+    "subject": "MATH",
+    "topicId": "MATH_ALG_LGS",
+    "difficulty": 5,
+    "qtype": "SHORT",
+    "prompt": "Im Geschäft B kostet eine Rose 2,30 € und eine Tulpe 1,70 €. Filips Strauß: I. $2{,}30r + 1{,}70t = 26{,}90$ und II. $r + t = 13$ (der Strauß hat 13 Blumen). Wie viele Tulpen $t$ enthält der Strauß?",
+    "payload": { "answer_type": "number", "unit": "Tulpen" },
+    "solution": { "value": 5 },
+    "explanation": [
+      { "kind": "steps", "body": "Gleichung II bedeutet: Rosen und Tulpen zusammen sind **13 Blumen**.\n\nAdditionsverfahren: II $\\cdot (-2{,}3)$: $-2{,}3r - 2{,}3t = -29{,}9$. Addieren zu I:\n\n$-0{,}6t = -3 \\Rightarrow t = 5$, dann $r = 13 - 5 = 8$.\n\nProbe: $2{,}3 \\cdot 8 + 1{,}7 \\cdot 5 = 18{,}4 + 8{,}5 = 26{,}9$ ✓" },
+      { "kind": "answer", "body": "5 Tulpen (und 8 Rosen)" }
+    ],
+    "tags": ["msa2024", "exam", "lgs", "sachaufgabe", "sternchen"],
+    "source": "MSA Berlin 2024, Aufgabe 7b* (4 P)"
+  }
+]

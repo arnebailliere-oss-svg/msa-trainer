@@ -6,18 +6,55 @@
     "difficulty": 1,
     "qtype": "SHORT",
     "prompt": "Berechne das Volumen eines Würfels mit der Kantenlänge $a = {{a}}$ cm.",
-    "payload": { "answer_type": "number", "unit": "cm³" },
-    "solution": { "kind": "computed", "expr": "a^3" },
+    "payload": {
+      "answer_type": "number",
+      "unit": "cm³"
+    },
+    "solution": {
+      "kind": "computed",
+      "expr": "a^3"
+    },
     "explanation": [
-      { "kind": "formula", "body": "$V = a \\cdot a \\cdot a = a^3$" },
-      { "kind": "steps", "body": "$V = {{a}}^3 = {{a}} \\cdot {{a}} \\cdot {{a}} = {{= a^3}}\\,\\text{cm}^3$" },
-      { "kind": "answer", "body": "{{= a^3}} cm³" }
+      {
+        "kind": "formula",
+        "body": "$V = a \\cdot a \\cdot a = a^3$"
+      },
+      {
+        "kind": "steps",
+        "body": "$V = {{a}}^3 = {{a}} \\cdot {{a}} \\cdot {{a}} = {{= a^3}}\\,\\text{cm}^3$"
+      },
+      {
+        "kind": "answer",
+        "body": "{{= a^3}} cm³"
+      }
     ],
-    "tags": ["koerper", "wuerfel", "volumen", "drill"],
+    "tags": [
+      "koerper",
+      "wuerfel",
+      "volumen",
+      "drill"
+    ],
     "source": "Verallgemeinert nach Prüfungshefte 2027, 5.7 Aufgabe 1",
     "variants": {
       "enabled": true,
-      "variables": { "a": { "type": "int", "min": 2, "max": 15 } }
+      "variables": {
+        "a": {
+          "type": "int",
+          "min": 2,
+          "max": 15
+        }
+      }
+    },
+    "figure": {
+      "type": "box",
+      "a": "{{= a | raw}}",
+      "b": "{{= a | raw}}",
+      "c": "{{= a | raw}}",
+      "labels": {
+        "a": "a = {{a}} cm",
+        "b": "a",
+        "c": "a"
+      }
     }
   },
   {
@@ -27,18 +64,47 @@
     "difficulty": 2,
     "qtype": "SHORT",
     "prompt": "Berechne die Oberfläche eines Würfels mit der Kantenlänge $a = {{a}}$ cm.",
-    "payload": { "answer_type": "number", "unit": "cm²" },
-    "solution": { "kind": "computed", "expr": "6 * a^2" },
+    "payload": {
+      "answer_type": "number",
+      "unit": "cm²"
+    },
+    "solution": {
+      "kind": "computed",
+      "expr": "6 * a^2"
+    },
     "explanation": [
-      { "kind": "formula", "body": "Ein Würfel hat **6** gleich große Quadrate als Flächen: $A_O = 6 \\cdot a^2$" },
-      { "kind": "steps", "body": "$A_O = 6 \\cdot {{a}}^2 = 6 \\cdot {{= a*a}} = {{= 6*a*a}}\\,\\text{cm}^2$" },
-      { "kind": "mistake", "body": "Oberfläche ist eine **Fläche** → cm², nicht cm³." },
-      { "kind": "answer", "body": "{{= 6*a*a}} cm²" }
+      {
+        "kind": "formula",
+        "body": "Ein Würfel hat **6** gleich große Quadrate als Flächen: $A_O = 6 \\cdot a^2$"
+      },
+      {
+        "kind": "steps",
+        "body": "$A_O = 6 \\cdot {{a}}^2 = 6 \\cdot {{= a*a}} = {{= 6*a*a}}\\,\\text{cm}^2$"
+      },
+      {
+        "kind": "mistake",
+        "body": "Oberfläche ist eine **Fläche** → cm², nicht cm³."
+      },
+      {
+        "kind": "answer",
+        "body": "{{= 6*a*a}} cm²"
+      }
     ],
-    "tags": ["koerper", "wuerfel", "oberflaeche", "drill"],
+    "tags": [
+      "koerper",
+      "wuerfel",
+      "oberflaeche",
+      "drill"
+    ],
     "variants": {
       "enabled": true,
-      "variables": { "a": { "type": "int", "min": 2, "max": 15 } }
+      "variables": {
+        "a": {
+          "type": "int",
+          "min": 2,
+          "max": 15
+        }
+      }
     }
   },
   {
@@ -48,21 +114,64 @@
     "difficulty": 1,
     "qtype": "SHORT",
     "prompt": "Berechne das Volumen eines Quaders mit $a = {{a}}$ cm, $b = {{b}}$ cm und $c = {{c}}$ cm.",
-    "payload": { "answer_type": "number", "unit": "cm³" },
-    "solution": { "kind": "computed", "expr": "a * b * c" },
+    "payload": {
+      "answer_type": "number",
+      "unit": "cm³"
+    },
+    "solution": {
+      "kind": "computed",
+      "expr": "a * b * c"
+    },
     "explanation": [
-      { "kind": "formula", "body": "$V = a \\cdot b \\cdot c$ — Grundfläche $a \\cdot b$ mal Höhe $c$." },
-      { "kind": "steps", "body": "$V = {{a}} \\cdot {{b}} \\cdot {{c}} = {{= a*b}} \\cdot {{c}} = {{= a*b*c}}\\,\\text{cm}^3$" },
-      { "kind": "answer", "body": "{{= a*b*c}} cm³" }
+      {
+        "kind": "formula",
+        "body": "$V = a \\cdot b \\cdot c$ — Grundfläche $a \\cdot b$ mal Höhe $c$."
+      },
+      {
+        "kind": "steps",
+        "body": "$V = {{a}} \\cdot {{b}} \\cdot {{c}} = {{= a*b}} \\cdot {{c}} = {{= a*b*c}}\\,\\text{cm}^3$"
+      },
+      {
+        "kind": "answer",
+        "body": "{{= a*b*c}} cm³"
+      }
     ],
-    "tags": ["koerper", "quader", "volumen", "drill"],
+    "tags": [
+      "koerper",
+      "quader",
+      "volumen",
+      "drill"
+    ],
     "source": "Verallgemeinert nach Prüfungshefte 2027, 5.7 Aufgabe 2",
     "variants": {
       "enabled": true,
       "variables": {
-        "a": { "type": "int", "min": 2, "max": 20 },
-        "b": { "type": "int", "min": 2, "max": 15 },
-        "c": { "type": "int", "min": 2, "max": 12 }
+        "a": {
+          "type": "int",
+          "min": 2,
+          "max": 20
+        },
+        "b": {
+          "type": "int",
+          "min": 2,
+          "max": 15
+        },
+        "c": {
+          "type": "int",
+          "min": 2,
+          "max": 12
+        }
+      }
+    },
+    "figure": {
+      "type": "box",
+      "a": "{{= a | raw}}",
+      "b": "{{= b | raw}}",
+      "c": "{{= c | raw}}",
+      "labels": {
+        "a": "a = {{a}} cm",
+        "b": "b = {{b}} cm",
+        "c": "c = {{c}} cm"
       }
     }
   },
@@ -73,22 +182,68 @@
     "difficulty": 3,
     "qtype": "SHORT",
     "prompt": "Berechne die Oberfläche eines Quaders mit $a = {{a}}$ cm, $b = {{b}}$ cm und $c = {{c}}$ cm.",
-    "payload": { "answer_type": "number", "unit": "cm²" },
-    "solution": { "kind": "computed", "expr": "2*(a*b + b*c + a*c)" },
+    "payload": {
+      "answer_type": "number",
+      "unit": "cm²"
+    },
+    "solution": {
+      "kind": "computed",
+      "expr": "2*(a*b + b*c + a*c)"
+    },
     "explanation": [
-      { "kind": "formula", "body": "Ein Quader hat 6 Rechtecke — je zwei gleiche: $A_O = 2ab + 2bc + 2ac$" },
-      { "kind": "steps", "body": "$A_O = 2 \\cdot {{a}} \\cdot {{b}} + 2 \\cdot {{b}} \\cdot {{c}} + 2 \\cdot {{a}} \\cdot {{c}}$\n\n$= {{= 2*a*b}} + {{= 2*b*c}} + {{= 2*a*c}} = {{= 2*(a*b+b*c+a*c)}}\\,\\text{cm}^2$" },
-      { "kind": "answer", "body": "{{= 2*(a*b+b*c+a*c)}} cm²" }
+      {
+        "kind": "formula",
+        "body": "Ein Quader hat 6 Rechtecke — je zwei gleiche: $A_O = 2ab + 2bc + 2ac$"
+      },
+      {
+        "kind": "steps",
+        "body": "$A_O = 2 \\cdot {{a}} \\cdot {{b}} + 2 \\cdot {{b}} \\cdot {{c}} + 2 \\cdot {{a}} \\cdot {{c}}$\n\n$= {{= 2*a*b}} + {{= 2*b*c}} + {{= 2*a*c}} = {{= 2*(a*b+b*c+a*c)}}\\,\\text{cm}^2$"
+      },
+      {
+        "kind": "answer",
+        "body": "{{= 2*(a*b+b*c+a*c)}} cm²"
+      }
     ],
-    "tags": ["koerper", "quader", "oberflaeche", "drill"],
+    "tags": [
+      "koerper",
+      "quader",
+      "oberflaeche",
+      "drill"
+    ],
     "variants": {
       "enabled": true,
       "variables": {
-        "a": { "type": "int", "min": 2, "max": 15 },
-        "b": { "type": "int", "min": 2, "max": 12 },
-        "c": { "type": "int", "min": 2, "max": 10 }
+        "a": {
+          "type": "int",
+          "min": 2,
+          "max": 15
+        },
+        "b": {
+          "type": "int",
+          "min": 2,
+          "max": 12
+        },
+        "c": {
+          "type": "int",
+          "min": 2,
+          "max": 10
+        }
       },
-      "constraints": ["a != b", "b != c"]
+      "constraints": [
+        "a != b",
+        "b != c"
+      ]
+    },
+    "figure": {
+      "type": "box",
+      "a": "{{= a | raw}}",
+      "b": "{{= b | raw}}",
+      "c": "{{= c | raw}}",
+      "labels": {
+        "a": "a = {{a}} cm",
+        "b": "b = {{b}} cm",
+        "c": "c = {{c}} cm"
+      }
     }
   },
   {
@@ -98,19 +253,58 @@
     "difficulty": 2,
     "qtype": "SHORT",
     "prompt": "Berechne das Volumen eines Zylinders mit Radius $r = {{r}}$ cm und Höhe $h = {{h}}$ cm. (Runde auf eine Nachkommastelle.)",
-    "payload": { "answer_type": "number", "unit": "cm³", "tolerance": 0.3 },
-    "solution": { "kind": "computed", "expr": "pi * r^2 * h", "round": 1 },
+    "payload": {
+      "answer_type": "number",
+      "unit": "cm³",
+      "tolerance": 0.3
+    },
+    "solution": {
+      "kind": "computed",
+      "expr": "pi * r^2 * h",
+      "round": 1
+    },
     "explanation": [
-      { "kind": "formula", "body": "$V = A_G \\cdot h = \\pi r^2 \\cdot h$ — Kreisfläche mal Höhe." },
-      { "kind": "steps", "body": "1. Grundfläche: $A_G = \\pi \\cdot {{r}}^2 = \\pi \\cdot {{= r*r}} \\approx {{= pi*r*r | fixed:2}}\\,\\text{cm}^2$\n2. Volumen: $V = {{= pi*r*r | fixed:2}} \\cdot {{h}} \\approx {{= pi*r*r*h | fixed:1}}\\,\\text{cm}^3$" },
-      { "kind": "answer", "body": "≈ {{= pi*r*r*h | fixed:1}} cm³" }
+      {
+        "kind": "formula",
+        "body": "$V = A_G \\cdot h = \\pi r^2 \\cdot h$ — Kreisfläche mal Höhe."
+      },
+      {
+        "kind": "steps",
+        "body": "1. Grundfläche: $A_G = \\pi \\cdot {{r}}^2 = \\pi \\cdot {{= r*r}} \\approx {{= pi*r*r | fixed:2}}\\,\\text{cm}^2$\n2. Volumen: $V = {{= pi*r*r | fixed:2}} \\cdot {{h}} \\approx {{= pi*r*r*h | fixed:1}}\\,\\text{cm}^3$"
+      },
+      {
+        "kind": "answer",
+        "body": "≈ {{= pi*r*r*h | fixed:1}} cm³"
+      }
     ],
-    "tags": ["koerper", "zylinder", "volumen", "drill"],
+    "tags": [
+      "koerper",
+      "zylinder",
+      "volumen",
+      "drill"
+    ],
     "variants": {
       "enabled": true,
       "variables": {
-        "r": { "type": "int", "min": 2, "max": 12 },
-        "h": { "type": "int", "min": 3, "max": 25 }
+        "r": {
+          "type": "int",
+          "min": 2,
+          "max": 12
+        },
+        "h": {
+          "type": "int",
+          "min": 3,
+          "max": 25
+        }
+      }
+    },
+    "figure": {
+      "type": "cylinder",
+      "r": "{{= r | raw}}",
+      "h": "{{= h | raw}}",
+      "labels": {
+        "r": "r = {{r}} cm",
+        "h": "h = {{h}} cm"
       }
     }
   },
@@ -121,19 +315,62 @@
     "difficulty": 4,
     "qtype": "SHORT",
     "prompt": "Eine zylindrische Regentonne hat innen einen Durchmesser von {{d}} cm und ist {{h}} cm hoch. Wie viele Liter passen hinein? (Runde auf ganze Liter.)",
-    "payload": { "answer_type": "number", "unit": "Liter", "tolerance": 1.5 },
-    "solution": { "kind": "computed", "expr": "pi * (d/2)^2 * h / 1000", "round": 0 },
+    "payload": {
+      "answer_type": "number",
+      "unit": "Liter",
+      "tolerance": 1.5
+    },
+    "solution": {
+      "kind": "computed",
+      "expr": "pi * (d/2)^2 * h / 1000",
+      "round": 0
+    },
     "explanation": [
-      { "kind": "what", "body": "Zwei Fallen: Es ist der **Durchmesser** gegeben (Radius = Hälfte), und die Antwort soll in **Litern** sein ($1\\,\\text{l} = 1000\\,\\text{cm}^3$)." },
-      { "kind": "steps", "body": "1. Radius: $r = {{d}} : 2 = {{= d/2}}$ cm\n2. Volumen: $V = \\pi \\cdot {{= d/2}}^2 \\cdot {{h}} = \\pi \\cdot {{= (d/2)^2}} \\cdot {{h}} \\approx {{= pi*(d/2)^2*h | fixed:0}}\\,\\text{cm}^3$\n3. In Liter: ${{= pi*(d/2)^2*h | fixed:0}} : 1000 \\approx {{= pi*(d/2)^2*h/1000 | fixed:0}}$ l" },
-      { "kind": "answer", "body": "≈ {{= pi*(d/2)^2*h/1000 | fixed:0}} Liter" }
+      {
+        "kind": "what",
+        "body": "Zwei Fallen: Es ist der **Durchmesser** gegeben (Radius = Hälfte), und die Antwort soll in **Litern** sein ($1\\,\\text{l} = 1000\\,\\text{cm}^3$)."
+      },
+      {
+        "kind": "steps",
+        "body": "1. Radius: $r = {{d}} : 2 = {{= d/2}}$ cm\n2. Volumen: $V = \\pi \\cdot {{= d/2}}^2 \\cdot {{h}} = \\pi \\cdot {{= (d/2)^2}} \\cdot {{h}} \\approx {{= pi*(d/2)^2*h | fixed:0}}\\,\\text{cm}^3$\n3. In Liter: ${{= pi*(d/2)^2*h | fixed:0}} : 1000 \\approx {{= pi*(d/2)^2*h/1000 | fixed:0}}$ l"
+      },
+      {
+        "kind": "answer",
+        "body": "≈ {{= pi*(d/2)^2*h/1000 | fixed:0}} Liter"
+      }
     ],
-    "tags": ["koerper", "zylinder", "volumen", "liter", "sachaufgabe", "drill"],
+    "tags": [
+      "koerper",
+      "zylinder",
+      "volumen",
+      "liter",
+      "sachaufgabe",
+      "drill"
+    ],
     "variants": {
       "enabled": true,
       "variables": {
-        "d": { "type": "int", "min": 40, "max": 90, "step": 2 },
-        "h": { "type": "int", "min": 50, "max": 120, "step": 5 }
+        "d": {
+          "type": "int",
+          "min": 40,
+          "max": 90,
+          "step": 2
+        },
+        "h": {
+          "type": "int",
+          "min": 50,
+          "max": 120,
+          "step": 5
+        }
+      }
+    },
+    "figure": {
+      "type": "cylinder",
+      "r": "{{= d/2 | raw}}",
+      "h": "{{= h | raw}}",
+      "labels": {
+        "d": "d = {{d}} cm",
+        "h": "h = {{h}} cm"
       }
     }
   },
@@ -144,20 +381,62 @@
     "difficulty": 3,
     "qtype": "SHORT",
     "prompt": "Berechne die Mantelfläche eines Zylinders mit Radius $r = {{r}}$ cm und Höhe $h = {{h}}$ cm. (Runde auf eine Nachkommastelle.)",
-    "payload": { "answer_type": "number", "unit": "cm²", "tolerance": 0.3 },
-    "solution": { "kind": "computed", "expr": "2 * pi * r * h", "round": 1 },
+    "payload": {
+      "answer_type": "number",
+      "unit": "cm²",
+      "tolerance": 0.3
+    },
+    "solution": {
+      "kind": "computed",
+      "expr": "2 * pi * r * h",
+      "round": 1
+    },
     "explanation": [
-      { "kind": "what", "body": "Die **Mantelfläche** ist die Seitenwand — abgerollt ein Rechteck: Breite = Kreisumfang, Höhe = $h$." },
-      { "kind": "steps", "body": "$A_M = u \\cdot h = 2\\pi r \\cdot h = 2\\pi \\cdot {{r}} \\cdot {{h}} \\approx {{= 2*pi*r*h | fixed:1}}\\,\\text{cm}^2$" },
-      { "kind": "mistake", "body": "Mantel ≠ Oberfläche. Für die **Oberfläche** kommen noch die zwei Kreise dazu: $+ 2 \\cdot \\pi r^2$." },
-      { "kind": "answer", "body": "≈ {{= 2*pi*r*h | fixed:1}} cm²" }
+      {
+        "kind": "what",
+        "body": "Die **Mantelfläche** ist die Seitenwand — abgerollt ein Rechteck: Breite = Kreisumfang, Höhe = $h$."
+      },
+      {
+        "kind": "steps",
+        "body": "$A_M = u \\cdot h = 2\\pi r \\cdot h = 2\\pi \\cdot {{r}} \\cdot {{h}} \\approx {{= 2*pi*r*h | fixed:1}}\\,\\text{cm}^2$"
+      },
+      {
+        "kind": "mistake",
+        "body": "Mantel ≠ Oberfläche. Für die **Oberfläche** kommen noch die zwei Kreise dazu: $+ 2 \\cdot \\pi r^2$."
+      },
+      {
+        "kind": "answer",
+        "body": "≈ {{= 2*pi*r*h | fixed:1}} cm²"
+      }
     ],
-    "tags": ["koerper", "zylinder", "mantelflaeche", "drill"],
+    "tags": [
+      "koerper",
+      "zylinder",
+      "mantelflaeche",
+      "drill"
+    ],
     "variants": {
       "enabled": true,
       "variables": {
-        "r": { "type": "int", "min": 2, "max": 12 },
-        "h": { "type": "int", "min": 3, "max": 25 }
+        "r": {
+          "type": "int",
+          "min": 2,
+          "max": 12
+        },
+        "h": {
+          "type": "int",
+          "min": 3,
+          "max": 25
+        }
+      }
+    },
+    "figure": {
+      "type": "cylinder",
+      "r": "{{= r | raw}}",
+      "h": "{{= h | raw}}",
+      "labels": {
+        "r": "r = {{r}} cm",
+        "h": "h = {{h}} cm"
       }
     }
   },
@@ -168,19 +447,60 @@
     "difficulty": 2,
     "qtype": "SHORT",
     "prompt": "Ein Prisma hat die Grundfläche $A_G = {{g}}$ cm² und die Höhe $h = {{h}}$ cm. Berechne das Volumen.",
-    "payload": { "answer_type": "number", "unit": "cm³", "tolerance": 0.01 },
-    "solution": { "kind": "computed", "expr": "g * h", "round": 2 },
+    "payload": {
+      "answer_type": "number",
+      "unit": "cm³",
+      "tolerance": 0.01
+    },
+    "solution": {
+      "kind": "computed",
+      "expr": "g * h",
+      "round": 2
+    },
     "explanation": [
-      { "kind": "formula", "body": "Für jedes gerade Prisma (und den Zylinder): $V = A_G \\cdot h$" },
-      { "kind": "steps", "body": "$V = {{g}} \\cdot {{h}} = {{= g*h}}\\,\\text{cm}^3$" },
-      { "kind": "answer", "body": "{{= g*h}} cm³" }
+      {
+        "kind": "formula",
+        "body": "Für jedes gerade Prisma (und den Zylinder): $V = A_G \\cdot h$"
+      },
+      {
+        "kind": "steps",
+        "body": "$V = {{g}} \\cdot {{h}} = {{= g*h}}\\,\\text{cm}^3$"
+      },
+      {
+        "kind": "answer",
+        "body": "{{= g*h}} cm³"
+      }
     ],
-    "tags": ["koerper", "prisma", "volumen", "drill"],
+    "tags": [
+      "koerper",
+      "prisma",
+      "volumen",
+      "drill"
+    ],
     "variants": {
       "enabled": true,
       "variables": {
-        "g": { "type": "choice", "values": [4.5, 6, 7.5, 9, 10.5, 12, 15, 18, 20, 24, 30] },
-        "h": { "type": "int", "min": 3, "max": 20 }
+        "g": {
+          "type": "choice",
+          "values": [
+            4.5,
+            6,
+            7.5,
+            9,
+            10.5,
+            12,
+            15,
+            18,
+            20,
+            24,
+            30
+          ]
+        },
+        "h": {
+          "type": "int",
+          "min": 3,
+          "max": 20
+        }
       }
     }
   },
@@ -191,20 +511,53 @@
     "difficulty": 3,
     "qtype": "SHORT",
     "prompt": "Eine quadratische Pyramide hat die Grundkante $a = {{a}}$ cm und die Höhe $h = {{h}}$ cm. Berechne das Volumen. (Runde auf eine Nachkommastelle.)",
-    "payload": { "answer_type": "number", "unit": "cm³", "tolerance": 0.1 },
-    "solution": { "kind": "computed", "expr": "a^2 * h / 3", "round": 1 },
+    "payload": {
+      "answer_type": "number",
+      "unit": "cm³",
+      "tolerance": 0.1
+    },
+    "solution": {
+      "kind": "computed",
+      "expr": "a^2 * h / 3",
+      "round": 1
+    },
     "explanation": [
-      { "kind": "formula", "body": "$V = \\frac{1}{3} \\cdot A_G \\cdot h = \\frac{1}{3} \\cdot a^2 \\cdot h$ — eine Pyramide ist ein **Drittel** des Quaders mit gleicher Grundfläche und Höhe." },
-      { "kind": "steps", "body": "1. Grundfläche: $A_G = {{a}}^2 = {{= a*a}}\\,\\text{cm}^2$\n2. $V = \\frac{1}{3} \\cdot {{= a*a}} \\cdot {{h}} = \\frac{{{= a*a*h}}}{3} \\approx {{= a*a*h/3 | fixed:1}}\\,\\text{cm}^3$" },
-      { "kind": "mistake", "body": "Das $\\frac{1}{3}$ vergessen ist der häufigste Fehler — spitze Körper haben nur ein Drittel des Volumens." },
-      { "kind": "answer", "body": "≈ {{= a*a*h/3 | fixed:1}} cm³" }
+      {
+        "kind": "formula",
+        "body": "$V = \\frac{1}{3} \\cdot A_G \\cdot h = \\frac{1}{3} \\cdot a^2 \\cdot h$ — eine Pyramide ist ein **Drittel** des Quaders mit gleicher Grundfläche und Höhe."
+      },
+      {
+        "kind": "steps",
+        "body": "1. Grundfläche: $A_G = {{a}}^2 = {{= a*a}}\\,\\text{cm}^2$\n2. $V = \\frac{1}{3} \\cdot {{= a*a}} \\cdot {{h}} = \\frac{{{= a*a*h}}}{3} \\approx {{= a*a*h/3 | fixed:1}}\\,\\text{cm}^3$"
+      },
+      {
+        "kind": "mistake",
+        "body": "Das $\\frac{1}{3}$ vergessen ist der häufigste Fehler — spitze Körper haben nur ein Drittel des Volumens."
+      },
+      {
+        "kind": "answer",
+        "body": "≈ {{= a*a*h/3 | fixed:1}} cm³"
+      }
     ],
-    "tags": ["koerper", "pyramide", "volumen", "drill"],
+    "tags": [
+      "koerper",
+      "pyramide",
+      "volumen",
+      "drill"
+    ],
     "variants": {
       "enabled": true,
       "variables": {
-        "a": { "type": "int", "min": 3, "max": 15 },
-        "h": { "type": "int", "min": 4, "max": 20 }
+        "a": {
+          "type": "int",
+          "min": 3,
+          "max": 15
+        },
+        "h": {
+          "type": "int",
+          "min": 4,
+          "max": 20
+        }
       }
     }
   },
@@ -215,19 +568,49 @@
     "difficulty": 3,
     "qtype": "SHORT",
     "prompt": "Ein Kegel hat den Radius $r = {{r}}$ cm und die Höhe $h = {{h}}$ cm. Berechne das Volumen. (Runde auf eine Nachkommastelle.)",
-    "payload": { "answer_type": "number", "unit": "cm³", "tolerance": 0.3 },
-    "solution": { "kind": "computed", "expr": "pi * r^2 * h / 3", "round": 1 },
+    "payload": {
+      "answer_type": "number",
+      "unit": "cm³",
+      "tolerance": 0.3
+    },
+    "solution": {
+      "kind": "computed",
+      "expr": "pi * r^2 * h / 3",
+      "round": 1
+    },
     "explanation": [
-      { "kind": "formula", "body": "$V = \\frac{1}{3} \\cdot \\pi r^2 \\cdot h$ — ein Drittel des Zylinders." },
-      { "kind": "steps", "body": "$V = \\frac{1}{3} \\cdot \\pi \\cdot {{r}}^2 \\cdot {{h}} = \\frac{1}{3} \\cdot \\pi \\cdot {{= r*r}} \\cdot {{h}} \\approx {{= pi*r*r*h/3 | fixed:1}}\\,\\text{cm}^3$" },
-      { "kind": "answer", "body": "≈ {{= pi*r*r*h/3 | fixed:1}} cm³" }
+      {
+        "kind": "formula",
+        "body": "$V = \\frac{1}{3} \\cdot \\pi r^2 \\cdot h$ — ein Drittel des Zylinders."
+      },
+      {
+        "kind": "steps",
+        "body": "$V = \\frac{1}{3} \\cdot \\pi \\cdot {{r}}^2 \\cdot {{h}} = \\frac{1}{3} \\cdot \\pi \\cdot {{= r*r}} \\cdot {{h}} \\approx {{= pi*r*r*h/3 | fixed:1}}\\,\\text{cm}^3$"
+      },
+      {
+        "kind": "answer",
+        "body": "≈ {{= pi*r*r*h/3 | fixed:1}} cm³"
+      }
     ],
-    "tags": ["koerper", "kegel", "volumen", "drill"],
+    "tags": [
+      "koerper",
+      "kegel",
+      "volumen",
+      "drill"
+    ],
     "variants": {
       "enabled": true,
       "variables": {
-        "r": { "type": "int", "min": 2, "max": 10 },
-        "h": { "type": "int", "min": 4, "max": 20 }
+        "r": {
+          "type": "int",
+          "min": 2,
+          "max": 10
+        },
+        "h": {
+          "type": "int",
+          "min": 4,
+          "max": 20
+        }
       }
     }
   },
@@ -238,17 +621,45 @@
     "difficulty": 3,
     "qtype": "SHORT",
     "prompt": "Berechne das Volumen einer Kugel mit dem Radius $r = {{r}}$ cm. Formel: $V = \\frac{4}{3} \\pi r^3$. (Runde auf eine Nachkommastelle.)",
-    "payload": { "answer_type": "number", "unit": "cm³", "tolerance": 0.3 },
-    "solution": { "kind": "computed", "expr": "4/3 * pi * r^3", "round": 1 },
+    "payload": {
+      "answer_type": "number",
+      "unit": "cm³",
+      "tolerance": 0.3
+    },
+    "solution": {
+      "kind": "computed",
+      "expr": "4/3 * pi * r^3",
+      "round": 1
+    },
     "explanation": [
-      { "kind": "steps", "body": "$V = \\frac{4}{3} \\cdot \\pi \\cdot {{r}}^3 = \\frac{4}{3} \\cdot \\pi \\cdot {{= r^3}} \\approx {{= 4/3*pi*r^3 | fixed:1}}\\,\\text{cm}^3$" },
-      { "kind": "remember", "body": "Kugel: $r$ **hoch 3** und der Faktor $\\frac{4}{3}$. Die Formel steht in der Formelsammlung — erkennen musst du sie trotzdem." },
-      { "kind": "answer", "body": "≈ {{= 4/3*pi*r^3 | fixed:1}} cm³" }
+      {
+        "kind": "steps",
+        "body": "$V = \\frac{4}{3} \\cdot \\pi \\cdot {{r}}^3 = \\frac{4}{3} \\cdot \\pi \\cdot {{= r^3}} \\approx {{= 4/3*pi*r^3 | fixed:1}}\\,\\text{cm}^3$"
+      },
+      {
+        "kind": "remember",
+        "body": "Kugel: $r$ **hoch 3** und der Faktor $\\frac{4}{3}$. Die Formel steht in der Formelsammlung — erkennen musst du sie trotzdem."
+      },
+      {
+        "kind": "answer",
+        "body": "≈ {{= 4/3*pi*r^3 | fixed:1}} cm³"
+      }
     ],
-    "tags": ["koerper", "kugel", "volumen", "drill"],
+    "tags": [
+      "koerper",
+      "kugel",
+      "volumen",
+      "drill"
+    ],
     "variants": {
       "enabled": true,
-      "variables": { "r": { "type": "int", "min": 2, "max": 12 } }
+      "variables": {
+        "r": {
+          "type": "int",
+          "min": 2,
+          "max": 12
+        }
+      }
     }
   },
   {
@@ -258,17 +669,46 @@
     "difficulty": 4,
     "qtype": "SHORT",
     "prompt": "Berechne die Raumdiagonale eines Würfels mit der Kantenlänge $a = {{a}}$ cm. (Runde auf zwei Nachkommastellen.)",
-    "payload": { "answer_type": "number", "unit": "cm", "tolerance": 0.02 },
-    "solution": { "kind": "computed", "expr": "a * sqrt(3)", "round": 2 },
+    "payload": {
+      "answer_type": "number",
+      "unit": "cm",
+      "tolerance": 0.02
+    },
+    "solution": {
+      "kind": "computed",
+      "expr": "a * sqrt(3)",
+      "round": 2
+    },
     "explanation": [
-      { "kind": "formula", "body": "Raumdiagonale im Würfel: $d = a \\cdot \\sqrt{3}$ (Formelblatt) — zweimal Pythagoras: erst die Flächendiagonale $a\\sqrt{2}$, dann mit der Höhe $a$." },
-      { "kind": "steps", "body": "$d = {{a}} \\cdot \\sqrt{3} \\approx {{a}} \\cdot 1{,}7321 \\approx {{= a*sqrt(3) | fixed:2}}$ cm\n\nOder: $d = \\sqrt{a^2 + a^2 + a^2} = \\sqrt{3 \\cdot {{= a*a}}} = \\sqrt{{{= 3*a*a}}}$" },
-      { "kind": "answer", "body": "≈ {{= a*sqrt(3) | fixed:2}} cm" }
+      {
+        "kind": "formula",
+        "body": "Raumdiagonale im Würfel: $d = a \\cdot \\sqrt{3}$ (Formelblatt) — zweimal Pythagoras: erst die Flächendiagonale $a\\sqrt{2}$, dann mit der Höhe $a$."
+      },
+      {
+        "kind": "steps",
+        "body": "$d = {{a}} \\cdot \\sqrt{3} \\approx {{a}} \\cdot 1{,}7321 \\approx {{= a*sqrt(3) | fixed:2}}$ cm\n\nOder: $d = \\sqrt{a^2 + a^2 + a^2} = \\sqrt{3 \\cdot {{= a*a}}} = \\sqrt{{{= 3*a*a}}}$"
+      },
+      {
+        "kind": "answer",
+        "body": "≈ {{= a*sqrt(3) | fixed:2}} cm"
+      }
     ],
-    "tags": ["koerper", "wuerfel", "raumdiagonale", "pythagoras", "drill"],
+    "tags": [
+      "koerper",
+      "wuerfel",
+      "raumdiagonale",
+      "pythagoras",
+      "drill"
+    ],
     "variants": {
       "enabled": true,
-      "variables": { "a": { "type": "int", "min": 2, "max": 20 } }
+      "variables": {
+        "a": {
+          "type": "int",
+          "min": 2,
+          "max": 20
+        }
+      }
     }
   },
   {
@@ -278,12 +718,31 @@
     "difficulty": 2,
     "qtype": "MCQ",
     "prompt": "Für welchen Körper gilt die Volumenformel $V = \\frac{1}{3} \\cdot A_G \\cdot h$?",
-    "payload": { "choices": ["Pyramide und Kegel", "Prisma und Zylinder", "Würfel und Quader", "Kugel"], "shuffle": true },
-    "solution": { "correct_choice": "Pyramide und Kegel" },
+    "payload": {
+      "choices": [
+        "Pyramide und Kegel",
+        "Prisma und Zylinder",
+        "Würfel und Quader",
+        "Kugel"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "Pyramide und Kegel"
+    },
     "explanation": [
-      { "kind": "steps", "body": "Körper, die **spitz zulaufen** (Pyramide, Kegel), haben ein Drittel des Volumens des passenden „geraden“ Körpers (Prisma, Zylinder) mit gleicher Grundfläche und Höhe.\n\nPrisma, Zylinder, Quader, Würfel: $V = A_G \\cdot h$ — ohne $\\frac{1}{3}$." },
-      { "kind": "answer", "body": "Pyramide und Kegel." }
+      {
+        "kind": "steps",
+        "body": "Körper, die **spitz zulaufen** (Pyramide, Kegel), haben ein Drittel des Volumens des passenden „geraden“ Körpers (Prisma, Zylinder) mit gleicher Grundfläche und Höhe.\n\nPrisma, Zylinder, Quader, Würfel: $V = A_G \\cdot h$ — ohne $\\frac{1}{3}$."
+      },
+      {
+        "kind": "answer",
+        "body": "Pyramide und Kegel."
+      }
     ],
-    "tags": ["koerper", "konzept"]
+    "tags": [
+      "koerper",
+      "konzept"
+    ]
   }
 ]

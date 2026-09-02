@@ -6,25 +6,82 @@
     "difficulty": 2,
     "qtype": "SHORT",
     "prompt": "{{k}} {{ding}} kosten {{p}} €. Wie viel kosten {{k2}} {{ding}}?",
-    "payload": { "answer_type": "number", "unit": "€", "tolerance": 0.01 },
-    "solution": { "kind": "computed", "expr": "p / k * k2", "round": 2 },
+    "payload": {
+      "answer_type": "number",
+      "unit": "€",
+      "tolerance": 0.01
+    },
+    "solution": {
+      "kind": "computed",
+      "expr": "p / k * k2",
+      "round": 2
+    },
     "explanation": [
-      { "kind": "what", "body": "Je mehr {{ding}}, desto mehr Geld — **proportional**. Dreisatz: erst auf 1 zurück, dann auf {{k2}}." },
-      { "kind": "steps", "body": "1. ${{k}}$ {{ding}} → ${{p}}$ €\n2. $1$ Stück → ${{p}} : {{k}} = {{= p/k}}$ €\n3. ${{k2}}$ Stück → ${{= p/k}} \\cdot {{k2}} = {{= p/k*k2 | fixed:2}}$ €\n\nKontrolle: {{k2}} ist mehr als {{k}}, der Preis muss größer sein ✓" },
-      { "kind": "answer", "body": "{{= p/k*k2 | fixed:2}} €" }
+      {
+        "kind": "what",
+        "body": "Je mehr {{ding}}, desto mehr Geld — **proportional**. Dreisatz: erst auf 1 zurück, dann auf {{k2}}."
+      },
+      {
+        "kind": "steps",
+        "body": "1. ${{k}}$ {{ding}} → ${{p}}$ €\n2. $1$ Stück → ${{p}} : {{k}} = {{= p/k}}$ €\n3. ${{k2}}$ Stück → ${{= p/k}} \\cdot {{k2}} = {{= p/k*k2 | fixed:2}}$ €\n\nKontrolle: {{k2}} ist mehr als {{k}}, der Preis muss größer sein ✓"
+      },
+      {
+        "kind": "answer",
+        "body": "{{= p/k*k2 | fixed:2}} €"
+      }
     ],
-    "tags": ["zuordnung", "proportional", "dreisatz", "drill"],
+    "tags": [
+      "zuordnung",
+      "proportional",
+      "dreisatz",
+      "drill"
+    ],
     "source": "Verallgemeinert nach Prüfungshefte 2027, Kap. 6 Beispiel (Brote)",
     "variants": {
       "enabled": true,
       "variables": {
-        "k": { "type": "int", "min": 2, "max": 8 },
-        "e": { "type": "choice", "values": [0.5, 0.8, 1.2, 1.5, 2, 2.5, 3, 4.5] },
-        "k2": { "type": "int", "min": 3, "max": 15 },
-        "ding": { "type": "choice", "values": ["Brötchen", "Brote", "Hefte", "Äpfel", "Tickets", "Stifte"] }
+        "k": {
+          "type": "int",
+          "min": 2,
+          "max": 8
+        },
+        "e": {
+          "type": "choice",
+          "values": [
+            0.5,
+            0.8,
+            1.2,
+            1.5,
+            2,
+            2.5,
+            3,
+            4.5
+          ]
+        },
+        "k2": {
+          "type": "int",
+          "min": 3,
+          "max": 15
+        },
+        "ding": {
+          "type": "choice",
+          "values": [
+            "Brötchen",
+            "Brote",
+            "Hefte",
+            "Äpfel",
+            "Tickets",
+            "Stifte"
+          ]
+        }
       },
-      "derived": { "p": "k * e" },
-      "constraints": ["k2 > k", "isint(p * 100)"]
+      "derived": {
+        "p": "k * e"
+      },
+      "constraints": [
+        "k2 > k",
+        "isint(p * 100)"
+      ]
     }
   },
   {
@@ -34,24 +91,61 @@
     "difficulty": 3,
     "qtype": "SHORT",
     "prompt": "{{a}} Arbeiter brauchen für einen Auftrag {{t}} Tage. Wie viele Tage brauchen {{a2}} Arbeiter, wenn alle gleich schnell arbeiten?",
-    "payload": { "answer_type": "number", "unit": "Tage" },
-    "solution": { "kind": "computed", "expr": "a * t / a2" },
+    "payload": {
+      "answer_type": "number",
+      "unit": "Tage"
+    },
+    "solution": {
+      "kind": "computed",
+      "expr": "a * t / a2"
+    },
     "explanation": [
-      { "kind": "what", "body": "Je mehr Arbeiter, desto **weniger** Tage — **antiproportional**. Das Produkt Arbeiter · Tage bleibt gleich." },
-      { "kind": "steps", "body": "1. Gesamtarbeit: ${{a}} \\cdot {{t}} = {{= a*t}}$ Arbeiter-Tage\n2. Mit {{a2}} Arbeitern: ${{= a*t}} : {{a2}} = {{= a*t/a2}}$ Tage\n\nKontrolle: {{a2}} Arbeiter sind {{= if(a2 > a, 1, 0) | raw}} mehr als {{a}} → es muss schneller gehen ✓" },
-      { "kind": "mistake", "body": "Hier **nicht** den normalen Dreisatz (mal {{a2}}) rechnen — mehr Arbeiter brauchen weniger Zeit." },
-      { "kind": "answer", "body": "{{= a*t/a2}} Tage" }
+      {
+        "kind": "what",
+        "body": "Je mehr Arbeiter, desto **weniger** Tage — **antiproportional**. Das Produkt Arbeiter · Tage bleibt gleich."
+      },
+      {
+        "kind": "steps",
+        "body": "1. Gesamtarbeit: ${{a}} \\cdot {{t}} = {{= a*t}}$ Arbeiter-Tage\n2. Mit {{a2}} Arbeitern: ${{= a*t}} : {{a2}} = {{= a*t/a2}}$ Tage\n\nKontrolle: {{a2}} Arbeiter sind {{= if(a2 > a, 1, 0) | raw}} mehr als {{a}} → es muss schneller gehen ✓"
+      },
+      {
+        "kind": "mistake",
+        "body": "Hier **nicht** den normalen Dreisatz (mal {{a2}}) rechnen — mehr Arbeiter brauchen weniger Zeit."
+      },
+      {
+        "kind": "answer",
+        "body": "{{= a*t/a2}} Tage"
+      }
     ],
-    "tags": ["zuordnung", "antiproportional", "drill"],
+    "tags": [
+      "zuordnung",
+      "antiproportional",
+      "drill"
+    ],
     "source": "Verallgemeinert nach Prüfungshefte 2027, Kap. 6 Beispiel (Arbeiter)",
     "variants": {
       "enabled": true,
       "variables": {
-        "a": { "type": "int", "min": 2, "max": 6 },
-        "t": { "type": "int", "min": 4, "max": 30 },
-        "a2": { "type": "int", "min": 3, "max": 12 }
+        "a": {
+          "type": "int",
+          "min": 2,
+          "max": 6
+        },
+        "t": {
+          "type": "int",
+          "min": 4,
+          "max": 30
+        },
+        "a2": {
+          "type": "int",
+          "min": 3,
+          "max": 12
+        }
       },
-      "constraints": ["a2 > a", "isint(a * t / a2)"]
+      "constraints": [
+        "a2 > a",
+        "isint(a * t / a2)"
+      ]
     }
   },
   {
@@ -61,14 +155,38 @@
     "difficulty": 2,
     "qtype": "MCQ",
     "prompt": "Welche Art von Zuordnung liegt vor? „{{situation}}“",
-    "payload": { "choices": ["antiproportional (je mehr, desto weniger)", "proportional (je mehr, desto mehr)", "weder noch", "das lässt sich nicht sagen"], "shuffle": true },
-    "solution": { "correct_choice": "antiproportional (je mehr, desto weniger)" },
+    "payload": {
+      "choices": [
+        "antiproportional (je mehr, desto weniger)",
+        "proportional (je mehr, desto mehr)",
+        "weder noch",
+        "das lässt sich nicht sagen"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "antiproportional (je mehr, desto weniger)"
+    },
     "explanation": [
-      { "kind": "steps", "body": "Frage dich: Wird die zweite Größe **größer** oder **kleiner**, wenn die erste wächst?\n\nHier: mehr von dem einen → **weniger** von dem anderen, und zwar gleichmäßig (doppelt so viel → halb so viel). Das ist **antiproportional**." },
-      { "kind": "remember", "body": "Antiproportional: das **Produkt** der beiden Größen bleibt gleich." },
-      { "kind": "answer", "body": "Antiproportional." }
+      {
+        "kind": "steps",
+        "body": "Frage dich: Wird die zweite Größe **größer** oder **kleiner**, wenn die erste wächst?\n\nHier: mehr von dem einen → **weniger** von dem anderen, und zwar gleichmäßig (doppelt so viel → halb so viel). Das ist **antiproportional**."
+      },
+      {
+        "kind": "remember",
+        "body": "Antiproportional: das **Produkt** der beiden Größen bleibt gleich."
+      },
+      {
+        "kind": "answer",
+        "body": "Antiproportional."
+      }
     ],
-    "tags": ["zuordnung", "antiproportional", "konzept", "drill"],
+    "tags": [
+      "zuordnung",
+      "antiproportional",
+      "konzept",
+      "drill"
+    ],
     "variants": {
       "enabled": true,
       "variables": {
@@ -92,14 +210,38 @@
     "difficulty": 2,
     "qtype": "MCQ",
     "prompt": "Welche Art von Zuordnung liegt vor? „{{situation}}“",
-    "payload": { "choices": ["proportional (je mehr, desto mehr)", "antiproportional (je mehr, desto weniger)", "weder noch", "das lässt sich nicht sagen"], "shuffle": true },
-    "solution": { "correct_choice": "proportional (je mehr, desto mehr)" },
+    "payload": {
+      "choices": [
+        "proportional (je mehr, desto mehr)",
+        "antiproportional (je mehr, desto weniger)",
+        "weder noch",
+        "das lässt sich nicht sagen"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "proportional (je mehr, desto mehr)"
+    },
     "explanation": [
-      { "kind": "steps", "body": "Frage dich: Wird die zweite Größe **größer** oder **kleiner**, wenn die erste wächst?\n\nHier: mehr von dem einen → **mehr** von dem anderen, und zwar gleichmäßig (doppelt so viel → doppelt so viel). Das ist **proportional**." },
-      { "kind": "remember", "body": "Proportional: der **Quotient** der beiden Größen (der Proportionalitätsfaktor) bleibt gleich." },
-      { "kind": "answer", "body": "Proportional." }
+      {
+        "kind": "steps",
+        "body": "Frage dich: Wird die zweite Größe **größer** oder **kleiner**, wenn die erste wächst?\n\nHier: mehr von dem einen → **mehr** von dem anderen, und zwar gleichmäßig (doppelt so viel → doppelt so viel). Das ist **proportional**."
+      },
+      {
+        "kind": "remember",
+        "body": "Proportional: der **Quotient** der beiden Größen (der Proportionalitätsfaktor) bleibt gleich."
+      },
+      {
+        "kind": "answer",
+        "body": "Proportional."
+      }
     ],
-    "tags": ["zuordnung", "proportional", "konzept", "drill"],
+    "tags": [
+      "zuordnung",
+      "proportional",
+      "konzept",
+      "drill"
+    ],
     "variants": {
       "enabled": true,
       "variables": {
@@ -123,23 +265,56 @@
     "difficulty": 1,
     "qtype": "SHORT",
     "prompt": "Gegeben ist $f(x) = x^2 {{= c | sign}}$. Berechne $f({{x}})$.",
-    "payload": { "answer_type": "number" },
-    "solution": { "kind": "computed", "expr": "x^2 + c" },
+    "payload": {
+      "answer_type": "number"
+    },
+    "solution": {
+      "kind": "computed",
+      "expr": "x^2 + c"
+    },
     "explanation": [
-      { "kind": "what", "body": "$f({{x}})$ heißt: für $x$ die Zahl {{x}} einsetzen und ausrechnen." },
-      { "kind": "steps", "body": "$f({{x}}) = ({{x}})^2 {{= c | sign}} = {{= x*x}} {{= c | sign}} = {{= x*x + c}}$" },
-      { "kind": "mistake", "body": "$(-3)^2 = 9$, nicht $-9$ — beim Quadrieren einer negativen Zahl die Klammer nicht vergessen." },
-      { "kind": "answer", "body": "$f({{x}}) = {{= x*x + c}}$" }
+      {
+        "kind": "what",
+        "body": "$f({{x}})$ heißt: für $x$ die Zahl {{x}} einsetzen und ausrechnen."
+      },
+      {
+        "kind": "steps",
+        "body": "$f({{x}}) = ({{x}})^2 {{= c | sign}} = {{= x*x}} {{= c | sign}} = {{= x*x + c}}$"
+      },
+      {
+        "kind": "mistake",
+        "body": "$(-3)^2 = 9$, nicht $-9$ — beim Quadrieren einer negativen Zahl die Klammer nicht vergessen."
+      },
+      {
+        "kind": "answer",
+        "body": "$f({{x}}) = {{= x*x + c}}$"
+      }
     ],
-    "tags": ["funktion", "wertetabelle", "drill"],
+    "tags": [
+      "funktion",
+      "wertetabelle",
+      "drill"
+    ],
     "source": "Verallgemeinert nach Prüfungshefte 2027, Kap. 4 Aufgabe 1a",
     "variants": {
       "enabled": true,
       "variables": {
-        "c": { "type": "int", "min": -9, "max": 9 },
-        "x": { "type": "int", "min": -5, "max": 5 }
+        "c": {
+          "type": "int",
+          "min": -9,
+          "max": 9
+        },
+        "x": {
+          "type": "int",
+          "min": -5,
+          "max": 5
+        }
       },
-      "constraints": ["c != 0", "x != 0", "x != 1"]
+      "constraints": [
+        "c != 0",
+        "x != 0",
+        "x != 1"
+      ]
     }
   },
   {
@@ -149,21 +324,64 @@
     "difficulty": 1,
     "qtype": "SHORT",
     "prompt": "Gegeben ist die lineare Funktion $y = {{m}}x {{= n | sign}}$. Welcher $y$-Wert gehört zu $x = {{x}}$?",
-    "payload": { "answer_type": "number" },
-    "solution": { "kind": "computed", "expr": "m * x + n" },
+    "payload": {
+      "answer_type": "number"
+    },
+    "solution": {
+      "kind": "computed",
+      "expr": "m * x + n"
+    },
     "explanation": [
-      { "kind": "steps", "body": "$y = {{m}} \\cdot {{x}} {{= n | sign}} = {{= m*x}} {{= n | sign}} = {{= m*x + n}}$\n\nDer Punkt $({{x}} \\,|\\, {{= m*x+n}})$ liegt auf der Geraden." },
-      { "kind": "answer", "body": "$y = {{= m*x + n}}$" }
+      {
+        "kind": "steps",
+        "body": "$y = {{m}} \\cdot {{x}} {{= n | sign}} = {{= m*x}} {{= n | sign}} = {{= m*x + n}}$\n\nDer Punkt $({{x}} \\,|\\, {{= m*x+n}})$ liegt auf der Geraden."
+      },
+      {
+        "kind": "answer",
+        "body": "$y = {{= m*x + n}}$"
+      }
     ],
-    "tags": ["funktion", "linear", "wertetabelle", "drill"],
+    "tags": [
+      "funktion",
+      "linear",
+      "wertetabelle",
+      "drill"
+    ],
     "variants": {
       "enabled": true,
       "variables": {
-        "m": { "type": "choice", "values": [-3, -2, -1.5, -1, -0.5, 0.5, 1.5, 2, 3, 4] },
-        "n": { "type": "int", "min": -8, "max": 8 },
-        "x": { "type": "int", "min": -6, "max": 8 }
+        "m": {
+          "type": "choice",
+          "values": [
+            -3,
+            -2,
+            -1.5,
+            -1,
+            -0.5,
+            0.5,
+            1.5,
+            2,
+            3,
+            4
+          ]
+        },
+        "n": {
+          "type": "int",
+          "min": -8,
+          "max": 8
+        },
+        "x": {
+          "type": "int",
+          "min": -6,
+          "max": 8
+        }
       },
-      "constraints": ["n != 0", "x != 0", "x != 1", "isint(m * x * 2)"]
+      "constraints": [
+        "n != 0",
+        "x != 0",
+        "x != 1",
+        "isint(m * x * 2)"
+      ]
     }
   },
   {
@@ -173,23 +391,81 @@
     "difficulty": 2,
     "qtype": "SHORT",
     "prompt": "Berechne die Nullstelle der linearen Funktion $y = {{m}}x {{= n | sign}}$.",
-    "payload": { "answer_type": "number" },
-    "solution": { "kind": "computed", "expr": "-n / m" },
+    "payload": {
+      "answer_type": "number"
+    },
+    "solution": {
+      "kind": "computed",
+      "expr": "-n / m"
+    },
     "explanation": [
-      { "kind": "what", "body": "Nullstelle = der $x$-Wert, an dem der Graph die $x$-Achse schneidet. Dort ist $y = 0$." },
-      { "kind": "steps", "body": "${{m}}x {{= n | sign}} = 0 \\;|\\; {{= -n | sign}}$\n\n${{m}}x = {{= -n}} \\;|\\; : {{m}}$\n\n$x = {{= -n/m}}$\n\nDie Nullstelle liegt bei $x = {{= -n/m}}$, also im Punkt $({{= -n/m}} \\,|\\, 0)$." },
-      { "kind": "answer", "body": "$x = {{= -n/m}}$" }
+      {
+        "kind": "what",
+        "body": "Nullstelle = der $x$-Wert, an dem der Graph die $x$-Achse schneidet. Dort ist $y = 0$."
+      },
+      {
+        "kind": "steps",
+        "body": "${{m}}x {{= n | sign}} = 0 \\;|\\; {{= -n | sign}}$\n\n${{m}}x = {{= -n}} \\;|\\; : {{m}}$\n\n$x = {{= -n/m}}$\n\nDie Nullstelle liegt bei $x = {{= -n/m}}$, also im Punkt $({{= -n/m}} \\,|\\, 0)$."
+      },
+      {
+        "kind": "answer",
+        "body": "$x = {{= -n/m}}$"
+      }
     ],
-    "tags": ["funktion", "linear", "nullstelle", "drill"],
+    "tags": [
+      "funktion",
+      "linear",
+      "nullstelle",
+      "drill"
+    ],
     "source": "Verallgemeinert nach Prüfungshefte 2027, Kap. 4 Aufgabe 2a",
     "variants": {
       "enabled": true,
       "variables": {
-        "m": { "type": "choice", "values": [-4, -3, -2, -1.5, -0.5, 0.5, 1.5, 2, 3, 4] },
-        "x0": { "type": "int", "min": -8, "max": 8 }
+        "m": {
+          "type": "choice",
+          "values": [
+            -4,
+            -3,
+            -2,
+            -1.5,
+            -0.5,
+            0.5,
+            1.5,
+            2,
+            3,
+            4
+          ]
+        },
+        "x0": {
+          "type": "int",
+          "min": -8,
+          "max": 8
+        }
       },
-      "derived": { "n": "-m * x0" },
-      "constraints": ["x0 != 0", "isint(n)"]
+      "derived": {
+        "n": "-m * x0"
+      },
+      "constraints": [
+        "x0 != 0",
+        "isint(n)"
+      ]
+    },
+    "figure": {
+      "type": "coordinateSystem",
+      "xmin": -8,
+      "xmax": 8,
+      "ymin": -8,
+      "ymax": 8,
+      "width": 280,
+      "height": 280,
+      "lines": [
+        {
+          "m": "{{= m | raw}}",
+          "n": "{{= n | raw}}",
+          "label": "f"
+        }
+      ]
     }
   },
   {
@@ -199,23 +475,69 @@
     "difficulty": 2,
     "qtype": "MCQ",
     "prompt": "Liegt der Punkt $P({{px}} \\,|\\, {{py}})$ auf der Geraden $y = {{m}}x {{= n | sign}}$?",
-    "payload": { "choices": ["Ja, denn $f({{px}}) = {{py}}$.", "Nein, denn $f({{px}}) \\neq {{py}}$.", "Das lässt sich nur mit einer Zeichnung entscheiden."], "shuffle": true },
-    "solution": { "correct_choice": "Ja, denn $f({{px}}) = {{py}}$." },
+    "payload": {
+      "choices": [
+        "Ja, denn $f({{px}}) = {{py}}$.",
+        "Nein, denn $f({{px}}) \\neq {{py}}$.",
+        "Das lässt sich nur mit einer Zeichnung entscheiden."
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "Ja, denn $f({{px}}) = {{py}}$."
+    },
     "explanation": [
-      { "kind": "steps", "body": "**Punktprobe**: $x = {{px}}$ einsetzen.\n\n$y = {{m}} \\cdot {{px}} {{= n | sign}} = {{= m*px}} {{= n | sign}} = {{= m*px + n}}$\n\nDas ist genau der $y$-Wert von $P$ → der Punkt liegt **auf** der Geraden." },
-      { "kind": "answer", "body": "Ja." }
+      {
+        "kind": "steps",
+        "body": "**Punktprobe**: $x = {{px}}$ einsetzen.\n\n$y = {{m}} \\cdot {{px}} {{= n | sign}} = {{= m*px}} {{= n | sign}} = {{= m*px + n}}$\n\nDas ist genau der $y$-Wert von $P$ → der Punkt liegt **auf** der Geraden."
+      },
+      {
+        "kind": "answer",
+        "body": "Ja."
+      }
     ],
-    "tags": ["funktion", "linear", "punktprobe", "drill"],
+    "tags": [
+      "funktion",
+      "linear",
+      "punktprobe",
+      "drill"
+    ],
     "source": "Verallgemeinert nach Prüfungshefte 2027, Kap. 4 Aufgabe 2b",
     "variants": {
       "enabled": true,
       "variables": {
-        "m": { "type": "choice", "values": [-3, -2, -1.5, -0.5, 0.5, 1.5, 2, 3] },
-        "n": { "type": "int", "min": -6, "max": 6 },
-        "px": { "type": "int", "min": -8, "max": 8 }
+        "m": {
+          "type": "choice",
+          "values": [
+            -3,
+            -2,
+            -1.5,
+            -0.5,
+            0.5,
+            1.5,
+            2,
+            3
+          ]
+        },
+        "n": {
+          "type": "int",
+          "min": -6,
+          "max": 6
+        },
+        "px": {
+          "type": "int",
+          "min": -8,
+          "max": 8
+        }
       },
-      "derived": { "py": "m * px + n" },
-      "constraints": ["n != 0", "px != 0", "isint(py)"]
+      "derived": {
+        "py": "m * px + n"
+      },
+      "constraints": [
+        "n != 0",
+        "px != 0",
+        "isint(py)"
+      ]
     }
   },
   {
@@ -225,24 +547,80 @@
     "difficulty": 2,
     "qtype": "MCQ",
     "prompt": "Liegt der Punkt $P({{px}} \\,|\\, {{py}})$ auf der Geraden $y = {{m}}x {{= n | sign}}$?",
-    "payload": { "choices": ["Nein, denn $f({{px}}) = {{= m*px+n}} \\neq {{py}}$.", "Ja, denn $f({{px}}) = {{py}}$.", "Das lässt sich nur mit einer Zeichnung entscheiden."], "shuffle": true },
-    "solution": { "correct_choice": "Nein, denn $f({{px}}) = {{= m*px+n}} \\neq {{py}}$." },
+    "payload": {
+      "choices": [
+        "Nein, denn $f({{px}}) = {{= m*px+n}} \\neq {{py}}$.",
+        "Ja, denn $f({{px}}) = {{py}}$.",
+        "Das lässt sich nur mit einer Zeichnung entscheiden."
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "Nein, denn $f({{px}}) = {{= m*px+n}} \\neq {{py}}$."
+    },
     "explanation": [
-      { "kind": "steps", "body": "**Punktprobe**: $x = {{px}}$ einsetzen.\n\n$y = {{m}} \\cdot {{px}} {{= n | sign}} = {{= m*px + n}}$\n\nAber $P$ hat $y = {{py}}$, und ${{= m*px+n}} \\neq {{py}}$ → der Punkt liegt **nicht** auf der Geraden." },
-      { "kind": "answer", "body": "Nein." }
+      {
+        "kind": "steps",
+        "body": "**Punktprobe**: $x = {{px}}$ einsetzen.\n\n$y = {{m}} \\cdot {{px}} {{= n | sign}} = {{= m*px + n}}$\n\nAber $P$ hat $y = {{py}}$, und ${{= m*px+n}} \\neq {{py}}$ → der Punkt liegt **nicht** auf der Geraden."
+      },
+      {
+        "kind": "answer",
+        "body": "Nein."
+      }
     ],
-    "tags": ["funktion", "linear", "punktprobe", "drill"],
+    "tags": [
+      "funktion",
+      "linear",
+      "punktprobe",
+      "drill"
+    ],
     "source": "Verallgemeinert nach Prüfungshefte 2027, Kap. 4 Aufgabe 2b",
     "variants": {
       "enabled": true,
       "variables": {
-        "m": { "type": "choice", "values": [-3, -2, -1.5, -0.5, 0.5, 1.5, 2, 3] },
-        "n": { "type": "int", "min": -6, "max": 6 },
-        "px": { "type": "int", "min": -8, "max": 8 },
-        "delta": { "type": "choice", "values": [-3, -2, -1, 1, 2, 3] }
+        "m": {
+          "type": "choice",
+          "values": [
+            -3,
+            -2,
+            -1.5,
+            -0.5,
+            0.5,
+            1.5,
+            2,
+            3
+          ]
+        },
+        "n": {
+          "type": "int",
+          "min": -6,
+          "max": 6
+        },
+        "px": {
+          "type": "int",
+          "min": -8,
+          "max": 8
+        },
+        "delta": {
+          "type": "choice",
+          "values": [
+            -3,
+            -2,
+            -1,
+            1,
+            2,
+            3
+          ]
+        }
       },
-      "derived": { "py": "m * px + n + delta" },
-      "constraints": ["n != 0", "px != 0", "isint(py)"]
+      "derived": {
+        "py": "m * px + n + delta"
+      },
+      "constraints": [
+        "n != 0",
+        "px != 0",
+        "isint(py)"
+      ]
     }
   },
   {
@@ -252,25 +630,103 @@
     "difficulty": 3,
     "qtype": "SHORT",
     "prompt": "Eine Gerade geht durch die Punkte $A({{x1}} \\,|\\, {{y1}})$ und $B({{x2}} \\,|\\, {{y2}})$. Berechne die Steigung $m$.",
-    "payload": { "answer_type": "number" },
-    "solution": { "kind": "computed", "expr": "(y2 - y1) / (x2 - x1)" },
+    "payload": {
+      "answer_type": "number"
+    },
+    "solution": {
+      "kind": "computed",
+      "expr": "(y2 - y1) / (x2 - x1)"
+    },
     "explanation": [
-      { "kind": "formula", "body": "$m = \\frac{y_2 - y_1}{x_2 - x_1} = \\frac{\\text{Höhenunterschied}}{\\text{Schritt nach rechts}}$" },
-      { "kind": "steps", "body": "$m = \\frac{{{y2}} - ({{y1}})}{{{x2}} - ({{x1}})} = \\frac{{{= y2 - y1}}}{{{= x2 - x1}}} = {{= (y2-y1)/(x2-x1)}}$\n\nBedeutung: ein Schritt nach rechts → {{= (y2-y1)/(x2-x1) | abs}} nach {{= if((y2-y1)/(x2-x1) > 0, 1, 0) | raw}}." },
-      { "kind": "mistake", "body": "Die Reihenfolge muss oben und unten **gleich** sein: $y_2 - y_1$ über $x_2 - x_1$ (nicht $x_1 - x_2$)." },
-      { "kind": "answer", "body": "$m = {{= (y2-y1)/(x2-x1)}}$" }
+      {
+        "kind": "formula",
+        "body": "$m = \\frac{y_2 - y_1}{x_2 - x_1} = \\frac{\\text{Höhenunterschied}}{\\text{Schritt nach rechts}}$"
+      },
+      {
+        "kind": "steps",
+        "body": "$m = \\frac{{{y2}} - ({{y1}})}{{{x2}} - ({{x1}})} = \\frac{{{= y2 - y1}}}{{{= x2 - x1}}} = {{= (y2-y1)/(x2-x1)}}$\n\nBedeutung: ein Schritt nach rechts → {{= (y2-y1)/(x2-x1) | abs}} nach {{= if((y2-y1)/(x2-x1) > 0, 1, 0) | raw}}."
+      },
+      {
+        "kind": "mistake",
+        "body": "Die Reihenfolge muss oben und unten **gleich** sein: $y_2 - y_1$ über $x_2 - x_1$ (nicht $x_1 - x_2$)."
+      },
+      {
+        "kind": "answer",
+        "body": "$m = {{= (y2-y1)/(x2-x1)}}$"
+      }
     ],
-    "tags": ["funktion", "linear", "steigung", "drill"],
+    "tags": [
+      "funktion",
+      "linear",
+      "steigung",
+      "drill"
+    ],
     "variants": {
       "enabled": true,
       "variables": {
-        "x1": { "type": "int", "min": -5, "max": 5 },
-        "dx": { "type": "int", "min": 1, "max": 5 },
-        "m": { "type": "choice", "values": [-3, -2, -1, -0.5, 0.5, 1, 2, 3] },
-        "y1": { "type": "int", "min": -6, "max": 6 }
+        "x1": {
+          "type": "int",
+          "min": -5,
+          "max": 5
+        },
+        "dx": {
+          "type": "int",
+          "min": 1,
+          "max": 5
+        },
+        "m": {
+          "type": "choice",
+          "values": [
+            -3,
+            -2,
+            -1,
+            -0.5,
+            0.5,
+            1,
+            2,
+            3
+          ]
+        },
+        "y1": {
+          "type": "int",
+          "min": -6,
+          "max": 6
+        }
       },
-      "derived": { "x2": "x1 + dx", "y2": "y1 + m * dx" },
-      "constraints": ["isint(y2)"]
+      "derived": {
+        "x2": "x1 + dx",
+        "y2": "y1 + m * dx"
+      },
+      "constraints": [
+        "isint(y2)"
+      ]
+    },
+    "figure": {
+      "type": "coordinateSystem",
+      "xmin": -8,
+      "xmax": 8,
+      "ymin": -8,
+      "ymax": 8,
+      "width": 280,
+      "height": 280,
+      "lines": [
+        {
+          "m": "{{= m | raw}}",
+          "n": "{{= y1 - m*x1 | raw}}"
+        }
+      ],
+      "points": [
+        {
+          "x": "{{= x1 | raw}}",
+          "y": "{{= y1 | raw}}",
+          "label": "A"
+        },
+        {
+          "x": "{{= x2 | raw}}",
+          "y": "{{= y2 | raw}}",
+          "label": "B"
+        }
+      ]
     }
   },
   {
@@ -280,22 +736,59 @@
     "difficulty": 2,
     "qtype": "MCQ",
     "prompt": "Eine Gerade hat die Steigung $m = {{m}}$ und schneidet die $y$-Achse bei $y = {{n}}$. Welche Gleichung gehört zu ihr?",
-    "payload": { "choices": ["$y = {{m}}x {{= n | sign}}$", "$y = {{n}}x {{= m | sign}}$", "$y = {{m}}x {{= -n | sign}}$", "$y = {{= -m}}x {{= n | sign}}$"], "shuffle": true },
-    "solution": { "correct_choice": "$y = {{m}}x {{= n | sign}}$" },
+    "payload": {
+      "choices": [
+        "$y = {{m}}x {{= n | sign}}$",
+        "$y = {{n}}x {{= m | sign}}$",
+        "$y = {{m}}x {{= -n | sign}}$",
+        "$y = {{= -m}}x {{= n | sign}}$"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "$y = {{m}}x {{= n | sign}}$"
+    },
     "explanation": [
-      { "kind": "formula", "body": "$y = mx + n$: die Steigung steht **vor** $x$, der $y$-Achsenabschnitt steht **allein**." },
-      { "kind": "steps", "body": "$m = {{m}}$ → vor das $x$. $n = {{n}}$ → als Konstante dazu.\n\n$y = {{m}}x {{= n | sign}}$\n\nProbe: bei $x = 0$ ist $y = {{n}}$ ✓" },
-      { "kind": "answer", "body": "$y = {{m}}x {{= n | sign}}$" }
+      {
+        "kind": "formula",
+        "body": "$y = mx + n$: die Steigung steht **vor** $x$, der $y$-Achsenabschnitt steht **allein**."
+      },
+      {
+        "kind": "steps",
+        "body": "$m = {{m}}$ → vor das $x$. $n = {{n}}$ → als Konstante dazu.\n\n$y = {{m}}x {{= n | sign}}$\n\nProbe: bei $x = 0$ ist $y = {{n}}$ ✓"
+      },
+      {
+        "kind": "answer",
+        "body": "$y = {{m}}x {{= n | sign}}$"
+      }
     ],
-    "tags": ["funktion", "linear", "funktionsgleichung", "drill"],
+    "tags": [
+      "funktion",
+      "linear",
+      "funktionsgleichung",
+      "drill"
+    ],
     "source": "Verallgemeinert nach Prüfungshefte 2027, Kap. 4 Aufgabe 2c",
     "variants": {
       "enabled": true,
       "variables": {
-        "m": { "type": "int", "min": -5, "max": 5 },
-        "n": { "type": "int", "min": -7, "max": 7 }
+        "m": {
+          "type": "int",
+          "min": -5,
+          "max": 5
+        },
+        "n": {
+          "type": "int",
+          "min": -7,
+          "max": 7
+        }
       },
-      "constraints": ["m != 0", "n != 0", "m != n", "m != -n"]
+      "constraints": [
+        "m != 0",
+        "n != 0",
+        "m != n",
+        "m != -n"
+      ]
     }
   },
   {
@@ -305,23 +798,86 @@
     "difficulty": 2,
     "qtype": "MCQ",
     "prompt": "Wo liegt der Scheitelpunkt der Parabel $f(x) = (x {{= -d | sign}})^2 {{= e | sign}}$?",
-    "payload": { "choices": ["$S({{d}} \\,|\\, {{e}})$", "$S({{= -d}} \\,|\\, {{e}})$", "$S({{d}} \\,|\\, {{= -e}})$", "$S({{e}} \\,|\\, {{d}})$"], "shuffle": true },
-    "solution": { "correct_choice": "$S({{d}} \\,|\\, {{e}})$" },
+    "payload": {
+      "choices": [
+        "$S({{d}} \\,|\\, {{e}})$",
+        "$S({{= -d}} \\,|\\, {{e}})$",
+        "$S({{d}} \\,|\\, {{= -e}})$",
+        "$S({{e}} \\,|\\, {{d}})$"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "$S({{d}} \\,|\\, {{e}})$"
+    },
     "explanation": [
-      { "kind": "formula", "body": "Scheitelpunktform $f(x) = a(x - d)^2 + e$ → Scheitelpunkt $S(d \\,|\\, e)$. **Vorzeichen von $d$ beachten!**" },
-      { "kind": "steps", "body": "In der Klammer steht $x {{= -d | sign}}$, also $x - ({{d}})$ → $d = {{d}}$.\n\nHinter der Klammer steht ${{= e | sign}}$ → $e = {{e}}$.\n\n$S({{d}} \\,|\\, {{e}})$" },
-      { "kind": "mistake", "body": "Das Vorzeichen in der Klammer **dreht sich um**: $(x - 3)^2$ hat den Scheitel bei $x = +3$, $(x + 3)^2$ bei $x = -3$." },
-      { "kind": "answer", "body": "$S({{d}} \\,|\\, {{e}})$" }
+      {
+        "kind": "formula",
+        "body": "Scheitelpunktform $f(x) = a(x - d)^2 + e$ → Scheitelpunkt $S(d \\,|\\, e)$. **Vorzeichen von $d$ beachten!**"
+      },
+      {
+        "kind": "steps",
+        "body": "In der Klammer steht $x {{= -d | sign}}$, also $x - ({{d}})$ → $d = {{d}}$.\n\nHinter der Klammer steht ${{= e | sign}}$ → $e = {{e}}$.\n\n$S({{d}} \\,|\\, {{e}})$"
+      },
+      {
+        "kind": "mistake",
+        "body": "Das Vorzeichen in der Klammer **dreht sich um**: $(x - 3)^2$ hat den Scheitel bei $x = +3$, $(x + 3)^2$ bei $x = -3$."
+      },
+      {
+        "kind": "answer",
+        "body": "$S({{d}} \\,|\\, {{e}})$"
+      }
     ],
-    "tags": ["funktion", "quadratisch", "scheitelpunkt", "drill"],
+    "tags": [
+      "funktion",
+      "quadratisch",
+      "scheitelpunkt",
+      "drill"
+    ],
     "source": "Verallgemeinert nach Prüfungshefte 2027, Kap. 4 (Scheitelpunktform)",
     "variants": {
       "enabled": true,
       "variables": {
-        "d": { "type": "int", "min": -7, "max": 7 },
-        "e": { "type": "int", "min": -7, "max": 7 }
+        "d": {
+          "type": "int",
+          "min": -7,
+          "max": 7
+        },
+        "e": {
+          "type": "int",
+          "min": -7,
+          "max": 7
+        }
       },
-      "constraints": ["d != 0", "e != 0", "abs(d) != abs(e)"]
+      "constraints": [
+        "d != 0",
+        "e != 0",
+        "abs(d) != abs(e)"
+      ]
+    },
+    "figure": {
+      "type": "coordinateSystem",
+      "xmin": -8,
+      "xmax": 8,
+      "ymin": -8,
+      "ymax": 8,
+      "width": 280,
+      "height": 280,
+      "parabolas": [
+        {
+          "a": 1,
+          "d": "{{= d | raw}}",
+          "e": "{{= e | raw}}",
+          "label": "f"
+        }
+      ],
+      "points": [
+        {
+          "x": "{{= d | raw}}",
+          "y": "{{= e | raw}}",
+          "label": "S"
+        }
+      ]
     }
   },
   {
@@ -331,23 +887,76 @@
     "difficulty": 3,
     "qtype": "SHORT",
     "prompt": "Gegeben ist $f(x) = x^2 {{= p | sign}}x {{= q | sign}}$. Berechne die **kleinere** Nullstelle.",
-    "payload": { "answer_type": "number" },
-    "solution": { "kind": "computed", "expr": "r2" },
+    "payload": {
+      "answer_type": "number"
+    },
+    "solution": {
+      "kind": "computed",
+      "expr": "r2"
+    },
     "explanation": [
-      { "kind": "steps", "body": "Nullstellen: $f(x) = 0$ → $x^2 {{= p | sign}}x {{= q | sign}} = 0$, pq-Formel mit $p = {{p}}$, $q = {{q}}$:\n\n$x_{1,2} = {{= -p/2}} \\pm \\sqrt{{{= (p/2)^2}} {{= -q | sign}}} = {{= -p/2}} \\pm {{= sqrt((p/2)^2 - q)}}$\n\n$x_1 = {{r1}}$, $x_2 = {{r2}}$ → die kleinere ist ${{r2}}$." },
-      { "kind": "remember", "body": "Der Scheitel liegt genau in der Mitte: $x_S = \\frac{{{r1}} + {{r2}}}{2} = {{= (r1+r2)/2}}$." },
-      { "kind": "answer", "body": "$x_2 = {{r2}}$" }
+      {
+        "kind": "steps",
+        "body": "Nullstellen: $f(x) = 0$ → $x^2 {{= p | sign}}x {{= q | sign}} = 0$, pq-Formel mit $p = {{p}}$, $q = {{q}}$:\n\n$x_{1,2} = {{= -p/2}} \\pm \\sqrt{{{= (p/2)^2}} {{= -q | sign}}} = {{= -p/2}} \\pm {{= sqrt((p/2)^2 - q)}}$\n\n$x_1 = {{r1}}$, $x_2 = {{r2}}$ → die kleinere ist ${{r2}}$."
+      },
+      {
+        "kind": "remember",
+        "body": "Der Scheitel liegt genau in der Mitte: $x_S = \\frac{{{r1}} + {{r2}}}{2} = {{= (r1+r2)/2}}$."
+      },
+      {
+        "kind": "answer",
+        "body": "$x_2 = {{r2}}$"
+      }
     ],
-    "tags": ["funktion", "quadratisch", "nullstellen", "pq-formel", "drill"],
+    "tags": [
+      "funktion",
+      "quadratisch",
+      "nullstellen",
+      "pq-formel",
+      "drill"
+    ],
     "source": "Verallgemeinert nach Prüfungshefte 2027, Kap. 4 Aufgabe 3a",
     "variants": {
       "enabled": true,
       "variables": {
-        "r1": { "type": "int", "min": -6, "max": 9 },
-        "r2": { "type": "int", "min": -9, "max": 6 }
+        "r1": {
+          "type": "int",
+          "min": -6,
+          "max": 9
+        },
+        "r2": {
+          "type": "int",
+          "min": -9,
+          "max": 6
+        }
       },
-      "derived": { "p": "-(r1 + r2)", "q": "r1 * r2" },
-      "constraints": ["r1 > r2", "r1 != 0", "r2 != 0", "p != 0"]
+      "derived": {
+        "p": "-(r1 + r2)",
+        "q": "r1 * r2"
+      },
+      "constraints": [
+        "r1 > r2",
+        "r1 != 0",
+        "r2 != 0",
+        "p != 0"
+      ]
+    },
+    "figure": {
+      "type": "coordinateSystem",
+      "xmin": -10,
+      "xmax": 10,
+      "ymin": -10,
+      "ymax": 10,
+      "width": 280,
+      "height": 280,
+      "parabolas": [
+        {
+          "a": 1,
+          "d": "{{= (r1+r2)/2 | raw}}",
+          "e": "{{= -((r1-r2)/2)^2 | raw}}",
+          "label": "f"
+        }
+      ]
     }
   },
   {
@@ -357,22 +966,53 @@
     "difficulty": 3,
     "qtype": "SHORT",
     "prompt": "Eine Parabel hat die Nullstellen $x_1 = {{r1}}$ und $x_2 = {{r2}}$. Bei welchem $x$-Wert liegt ihr Scheitelpunkt?",
-    "payload": { "answer_type": "number" },
-    "solution": { "kind": "computed", "expr": "(r1 + r2) / 2" },
+    "payload": {
+      "answer_type": "number"
+    },
+    "solution": {
+      "kind": "computed",
+      "expr": "(r1 + r2) / 2"
+    },
     "explanation": [
-      { "kind": "what", "body": "Eine Parabel ist **symmetrisch**. Der Scheitel liegt genau in der Mitte zwischen den Nullstellen." },
-      { "kind": "steps", "body": "$x_S = \\frac{x_1 + x_2}{2} = \\frac{{{r1}} + ({{r2}})}{2} = \\frac{{{= r1 + r2}}}{2} = {{= (r1+r2)/2}}$" },
-      { "kind": "answer", "body": "$x_S = {{= (r1+r2)/2}}$" }
+      {
+        "kind": "what",
+        "body": "Eine Parabel ist **symmetrisch**. Der Scheitel liegt genau in der Mitte zwischen den Nullstellen."
+      },
+      {
+        "kind": "steps",
+        "body": "$x_S = \\frac{x_1 + x_2}{2} = \\frac{{{r1}} + ({{r2}})}{2} = \\frac{{{= r1 + r2}}}{2} = {{= (r1+r2)/2}}$"
+      },
+      {
+        "kind": "answer",
+        "body": "$x_S = {{= (r1+r2)/2}}$"
+      }
     ],
-    "tags": ["funktion", "quadratisch", "scheitelpunkt", "symmetrie", "drill"],
+    "tags": [
+      "funktion",
+      "quadratisch",
+      "scheitelpunkt",
+      "symmetrie",
+      "drill"
+    ],
     "source": "Verallgemeinert nach Prüfungshefte 2027, Kap. 4 Aufgabe 3b (Alternative)",
     "variants": {
       "enabled": true,
       "variables": {
-        "r1": { "type": "int", "min": -8, "max": 10 },
-        "r2": { "type": "int", "min": -10, "max": 8 }
+        "r1": {
+          "type": "int",
+          "min": -8,
+          "max": 10
+        },
+        "r2": {
+          "type": "int",
+          "min": -10,
+          "max": 8
+        }
       },
-      "constraints": ["r1 > r2", "r1 + r2 != 0"]
+      "constraints": [
+        "r1 > r2",
+        "r1 + r2 != 0"
+      ]
     }
   },
   {
@@ -383,18 +1023,48 @@
     "qtype": "MCQ",
     "prompt": "Wie sieht der Graph von $f(x) = {{a}}x^2 + 1$ aus?",
     "payload": {
-      "choices": ["nach oben geöffnet und gestreckt (schmal)", "nach oben geöffnet und gestaucht (breit)", "nach unten geöffnet und gestreckt (schmal)", "nach unten geöffnet und gestaucht (breit)"],
+      "choices": [
+        "nach oben geöffnet und gestreckt (schmal)",
+        "nach oben geöffnet und gestaucht (breit)",
+        "nach unten geöffnet und gestreckt (schmal)",
+        "nach unten geöffnet und gestaucht (breit)"
+      ],
       "shuffle": false
     },
-    "solution": { "correct_choice": "nach oben geöffnet und gestreckt (schmal)" },
+    "solution": {
+      "correct_choice": "nach oben geöffnet und gestreckt (schmal)"
+    },
     "explanation": [
-      { "kind": "steps", "body": "Der Faktor vor $x^2$ ist $a = {{a}}$.\n\n- $a > 0$ → nach **oben** geöffnet\n- $|a| = {{a}} > 1$ → **gestreckt** (schmaler als die Normalparabel)" },
-      { "kind": "answer", "body": "Nach oben geöffnet und gestreckt." }
+      {
+        "kind": "steps",
+        "body": "Der Faktor vor $x^2$ ist $a = {{a}}$.\n\n- $a > 0$ → nach **oben** geöffnet\n- $|a| = {{a}} > 1$ → **gestreckt** (schmaler als die Normalparabel)"
+      },
+      {
+        "kind": "answer",
+        "body": "Nach oben geöffnet und gestreckt."
+      }
     ],
-    "tags": ["funktion", "quadratisch", "parabel", "drill"],
+    "tags": [
+      "funktion",
+      "quadratisch",
+      "parabel",
+      "drill"
+    ],
     "variants": {
       "enabled": true,
-      "variables": { "a": { "type": "choice", "values": [1.5, 2, 2.5, 3, 4, 5] } }
+      "variables": {
+        "a": {
+          "type": "choice",
+          "values": [
+            1.5,
+            2,
+            2.5,
+            3,
+            4,
+            5
+          ]
+        }
+      }
     }
   },
   {
@@ -405,18 +1075,47 @@
     "qtype": "MCQ",
     "prompt": "Wie sieht der Graph von $f(x) = {{a}}x^2 + 1$ aus?",
     "payload": {
-      "choices": ["nach oben geöffnet und gestreckt (schmal)", "nach oben geöffnet und gestaucht (breit)", "nach unten geöffnet und gestreckt (schmal)", "nach unten geöffnet und gestaucht (breit)"],
+      "choices": [
+        "nach oben geöffnet und gestreckt (schmal)",
+        "nach oben geöffnet und gestaucht (breit)",
+        "nach unten geöffnet und gestreckt (schmal)",
+        "nach unten geöffnet und gestaucht (breit)"
+      ],
       "shuffle": false
     },
-    "solution": { "correct_choice": "nach unten geöffnet und gestaucht (breit)" },
+    "solution": {
+      "correct_choice": "nach unten geöffnet und gestaucht (breit)"
+    },
     "explanation": [
-      { "kind": "steps", "body": "Der Faktor vor $x^2$ ist $a = {{a}}$.\n\n- $a < 0$ → nach **unten** geöffnet\n- $|a| = {{= a | abs}} < 1$ → **gestaucht** (breiter als die Normalparabel)" },
-      { "kind": "answer", "body": "Nach unten geöffnet und gestaucht." }
+      {
+        "kind": "steps",
+        "body": "Der Faktor vor $x^2$ ist $a = {{a}}$.\n\n- $a < 0$ → nach **unten** geöffnet\n- $|a| = {{= a | abs}} < 1$ → **gestaucht** (breiter als die Normalparabel)"
+      },
+      {
+        "kind": "answer",
+        "body": "Nach unten geöffnet und gestaucht."
+      }
     ],
-    "tags": ["funktion", "quadratisch", "parabel", "drill"],
+    "tags": [
+      "funktion",
+      "quadratisch",
+      "parabel",
+      "drill"
+    ],
     "variants": {
       "enabled": true,
-      "variables": { "a": { "type": "choice", "values": [-0.2, -0.25, -0.4, -0.5, -0.75] } }
+      "variables": {
+        "a": {
+          "type": "choice",
+          "values": [
+            -0.2,
+            -0.25,
+            -0.4,
+            -0.5,
+            -0.75
+          ]
+        }
+      }
     }
   }
 ]

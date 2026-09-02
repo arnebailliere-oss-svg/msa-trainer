@@ -3,7 +3,9 @@
     "id": "L_MATH_GEO_FLAECHE",
     "subject": "MATH",
     "topicId": "MATH_GEO_AREA_BASIC",
-    "alsoFor": ["MATH_GEO_CIRCLE"],
+    "alsoFor": [
+      "MATH_GEO_CIRCLE"
+    ],
     "title": "Ebene Figuren und Koordinaten",
     "intro": "Flächen, Umfang, Winkel und das Koordinatensystem — die Grundlagen, auf denen Pythagoras, Trigonometrie und Körperberechnung aufbauen. Ein paar Formeln musst du für den hilfsmittelfreien Teil auswendig können.",
     "source": "Adaptiert nach Prüfungshefte MSA Mathe Berlin 2027, Kap. 5.2, 5.3, 5.5 und Formelblatt",
@@ -49,7 +51,9 @@
     "id": "L_MATH_GEO_PYTH_TRIG",
     "subject": "MATH",
     "topicId": "MATH_GEO_PYTH",
-    "alsoFor": ["MATH_GEO_TRIG"],
+    "alsoFor": [
+      "MATH_GEO_TRIG"
+    ],
     "title": "Pythagoras und Trigonometrie",
     "intro": "Mit dem Satz des Pythagoras berechnest du Seiten im rechtwinkligen Dreieck. Mit Sinus, Kosinus und Tangens kommen die Winkel dazu — und mit Sinus- und Kosinussatz auch beliebige Dreiecke. Beide Sätze stehen auf dem Formelblatt.",
     "source": "Adaptiert nach Prüfungshefte MSA Mathe Berlin 2027, Kap. 5.5, 5.6 und Formelblatt",
@@ -57,12 +61,29 @@
       {
         "kind": "formula",
         "title": "Satz des Pythagoras",
-        "body": "Im **rechtwinkligen** Dreieck gilt:\n\n$$a^2 + b^2 = c^2$$\n\n$a$ und $b$ sind die **Katheten** (am rechten Winkel), $c$ ist die **Hypotenuse** — die längste Seite, **gegenüber** vom rechten Winkel.\n\nHypotenuse gesucht: $c = \\sqrt{a^2 + b^2}$. Kathete gesucht: $a = \\sqrt{c^2 - b^2}$."
+        "body": "Im **rechtwinkligen** Dreieck gilt:\n\n$$a^2 + b^2 = c^2$$\n\n$a$ und $b$ sind die **Katheten** (am rechten Winkel), $c$ ist die **Hypotenuse** — die längste Seite, **gegenüber** vom rechten Winkel.\n\nHypotenuse gesucht: $c = \\sqrt{a^2 + b^2}$. Kathete gesucht: $a = \\sqrt{c^2 - b^2}$.",
+        "figure": {
+          "type": "rightTriangle",
+          "a": 4,
+          "b": 3,
+          "labels": {
+            "a": "a (Kathete)",
+            "b": "b (Kathete)",
+            "c": "c (Hypotenuse)",
+            "alpha": "α",
+            "beta": "β"
+          }
+        }
       },
       {
         "kind": "example",
         "title": "Beispiele",
         "body": "$a = 8$ cm, $b = 6$ cm: $c = \\sqrt{64 + 36} = \\sqrt{100} = 10$ cm\n\n$b = 5$ cm, $c = 13$ cm: $a = \\sqrt{169 - 25} = \\sqrt{144} = 12$ cm\n\n$a = 36$ cm, $c = 85$ cm: $b = \\sqrt{7225 - 1296} = \\sqrt{5929} = 77$ cm"
+      },
+      {
+        "kind": "widget",
+        "title": "Probier es aus: Pythagoras live",
+        "body": "triangle-explorer"
       },
       {
         "kind": "terms",
@@ -95,7 +116,9 @@
     "id": "L_MATH_GEO_KOERPER",
     "subject": "MATH",
     "topicId": "MATH_GEO_VOLUME",
-    "alsoFor": ["MATH_GEO_VOLUME_ADV"],
+    "alsoFor": [
+      "MATH_GEO_VOLUME_ADV"
+    ],
     "title": "Körper: Volumen und Oberfläche",
     "intro": "Würfel, Quader, Prisma, Zylinder, Pyramide und Kegel — die Formeln stehen auf dem Formelblatt. Wichtig ist, dass du die Begriffe auseinanderhältst und die Einheiten sauber führst.",
     "source": "Adaptiert nach Prüfungshefte MSA Mathe Berlin 2027, Kap. 5.7 und Formelblatt",

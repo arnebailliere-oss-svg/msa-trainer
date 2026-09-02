@@ -10,10 +10,12 @@ import { sha256 } from "./sha256";
 import { rngFromBytes, rngFromSeed, type Rng } from "./rng";
 import { evaluateExpr, roundHalfUp } from "./expr";
 import { formatEuro, formatFixed, formatFraction, formatFractionTex, formatNumber } from "./format";
+import { renderFigure } from "./figures";
 import type {
   ClozePayload,
   ContentSection,
   Explanation,
+  FigureSpec,
   MatchPayload,
   McqPayload,
   Payload,
@@ -245,6 +247,18 @@ function renderSolution(solution: Solution, vars: VarValues, payload: Payload): 
   return { solution, payload };
 }
 
+/** Deep-render every string in a figure spec, then generate the SVG. */
+export function renderFigureSpec(spec: FigureSpec | string, vars: VarValues): string {
+  if (typeof spec === "string") return renderTemplate(spec, vars);
+  const walk = (v: unknown): unknown => {
+    if (typeof v === "string") return renderTemplate(v, vars);
+    if (Array.isArray(v)) return v.map(walk);
+    if (v && typeof v === "object") return Object.fromEntries(Object.entries(v as Record<string, unknown>).map(([k, x]) => [k, walk(x)]));
+    return v;
+  };
+  return renderFigure(walk(spec) as FigureSpec);
+}
+
 export function renderQuestion(question: Question, vars: VarValues, variantId: string): RenderedQuestion {
   const payload = renderPayload(question.payload, vars);
   const { solution, payload: payload2 } = renderSolution(question.solution, vars, payload);
@@ -252,6 +266,8 @@ export function renderQuestion(question: Question, vars: VarValues, variantId: s
     ...s,
     title: s.title ? renderTemplate(s.title, vars) : s.title,
     body: renderTemplate(s.body, vars),
+    figure: undefined,
+    figureSvg: s.figure ? renderFigureSpec(s.figure, vars) : undefined,
   }));
   return {
     baseQuestionId: question.id,
@@ -266,7 +282,7 @@ export function renderQuestion(question: Question, vars: VarValues, variantId: s
     explanation,
     vars,
     source: question.source,
-    figure: question.figure ? renderTemplate(question.figure, vars) : undefined,
+    figure: question.figure ? renderFigureSpec(question.figure, vars) : undefined,
   };
 }
 

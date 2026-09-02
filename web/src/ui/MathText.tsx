@@ -23,35 +23,53 @@ export function renderTex(tex: string, display: boolean): string {
   }
 }
 
-function inline(text: string, keyBase: string): ReactNode[] {
+const ITALIC_RE = /(?<![*\w])\*(?!\*)([^*\n]+?)\*(?![*\w])/g;
+
+/** Math segments first (so `$…$` never gets mangled), then bold/italic inside the text runs. */
+function math(text: string, keyBase: string): ReactNode[] {
   const out: ReactNode[] = [];
   let last = 0;
   let k = 0;
   for (const m of text.matchAll(MATH_RE)) {
-    if (m.index! > last) out.push(...bold(text.slice(last, m.index), `${keyBase}-t${k++}`));
+    if (m.index! > last) out.push(<Fragment key={`${keyBase}-t${k++}`}>{text.slice(last, m.index)}</Fragment>);
     const display = m[1] !== undefined;
     const tex = m[1] ?? m[2] ?? "";
     out.push(<span key={`${keyBase}-m${k++}`} className={display ? "block my-1" : undefined} dangerouslySetInnerHTML={{ __html: renderTex(tex, display) }} />);
     last = m.index! + m[0].length;
   }
-  if (last < text.length) out.push(...bold(text.slice(last), `${keyBase}-t${k++}`));
+  if (last < text.length) out.push(<Fragment key={`${keyBase}-t${k++}`}>{text.slice(last)}</Fragment>);
   return out;
 }
 
-function bold(text: string, keyBase: string): ReactNode[] {
+/** Bold and italic spans may contain math, so emphasis is split first and math rendered inside. */
+function inline(text: string, keyBase: string): ReactNode[] {
   const out: ReactNode[] = [];
   let last = 0;
   let k = 0;
-  for (const m of text.matchAll(BOLD_RE)) {
-    if (m.index! > last) out.push(<Fragment key={`${keyBase}-${k++}`}>{text.slice(last, m.index)}</Fragment>);
-    out.push(
-      <strong key={`${keyBase}-${k++}`} className="font-semibold text-ink">
-        {m[1]}
-      </strong>,
-    );
-    last = m.index! + m[0].length;
+  const spans: { start: number; end: number; inner: string; tag: "strong" | "em" }[] = [];
+  for (const m of text.matchAll(BOLD_RE)) spans.push({ start: m.index!, end: m.index! + m[0].length, inner: m[1]!, tag: "strong" });
+  for (const m of text.matchAll(ITALIC_RE)) {
+    const s = m.index!;
+    if (!spans.some((x) => s >= x.start && s < x.end)) spans.push({ start: s, end: s + m[0].length, inner: m[1]!, tag: "em" });
   }
-  if (last < text.length) out.push(<Fragment key={`${keyBase}-${k++}`}>{text.slice(last)}</Fragment>);
+  spans.sort((a, b) => a.start - b.start);
+  for (const sp of spans) {
+    if (sp.start < last) continue;
+    if (sp.start > last) out.push(...math(text.slice(last, sp.start), `${keyBase}-p${k++}`));
+    out.push(
+      sp.tag === "strong" ? (
+        <strong key={`${keyBase}-b${k++}`} className="font-semibold text-ink">
+          {math(sp.inner, `${keyBase}-bi${k}`)}
+        </strong>
+      ) : (
+        <em key={`${keyBase}-i${k++}`} className="text-ink-2">
+          {math(sp.inner, `${keyBase}-ii${k}`)}
+        </em>
+      ),
+    );
+    last = sp.end;
+  }
+  if (last < text.length) out.push(...math(text.slice(last), `${keyBase}-p${k++}`));
   return out;
 }
 

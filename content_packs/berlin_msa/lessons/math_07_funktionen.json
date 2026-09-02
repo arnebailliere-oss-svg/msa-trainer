@@ -3,7 +3,12 @@
     "id": "L_MATH_FUNC",
     "subject": "MATH",
     "topicId": "MATH_FUNC_LINEAR_FORM",
-    "alsoFor": ["MATH_FUNC_PROP", "MATH_FUNC_LINEAR_GRAPH", "MATH_FUNC_LINEAR_TABLE", "MATH_FUNC_QUAD"],
+    "alsoFor": [
+      "MATH_FUNC_PROP",
+      "MATH_FUNC_LINEAR_GRAPH",
+      "MATH_FUNC_LINEAR_TABLE",
+      "MATH_FUNC_QUAD"
+    ],
     "title": "Zuordnungen und Funktionen",
     "intro": "In den letzten Jahren gab es in jeder Prüfung mindestens eine Aufgabe zu funktionalen Zusammenhängen — weniger Fachbegriffe, mehr Verstehen und Anwenden: Tabelle, Graph und Gleichung ineinander übersetzen.",
     "source": "Adaptiert nach Prüfungshefte MSA Mathe Berlin 2027, Kap. 4 und 6",
@@ -24,9 +29,19 @@
         "body": "Der Graph ist eine **Gerade**.\n\n- $m$ = **Steigung**: pro Schritt nach rechts geht es um $m$ nach oben (oder nach unten, wenn $m < 0$). Aus zwei Punkten: $m = \\frac{y_2 - y_1}{x_2 - x_1}$\n- $n$ = **y-Achsenabschnitt**: der Graph schneidet die $y$-Achse bei $(0 \\,|\\, n)$\n- **Nullstelle**: $mx + n = 0 \\Rightarrow x = -\\frac{n}{m}$\n- **Punktprobe**: liegt $P(x_P \\,|\\, y_P)$ auf der Geraden? $x_P$ einsetzen — kommt $y_P$ heraus?\n\n$y = 0{,}5x + 3$: Nullstelle bei $x = -6$. $P(-12{,}4 \\,|\\, -2{,}8)$? $0{,}5 \\cdot (-12{,}4) + 3 = -3{,}2 \\neq -2{,}8$ → liegt nicht drauf."
       },
       {
+        "kind": "widget",
+        "title": "Probier es aus: Steigung und Achsenabschnitt",
+        "body": "line-explorer"
+      },
+      {
         "kind": "formula",
         "title": "Quadratische Funktionen: die Parabel",
         "body": "$f(x) = ax^2 + bx + c$. Der Graph heißt **Parabel**, ist symmetrisch und hat einen **Scheitelpunkt**.\n\n**Scheitelpunktform**: $f(x) = a(x - d)^2 + e$ mit Scheitelpunkt $S(d \\,|\\, e)$ — **Vorzeichen von $d$ beachten!** $f(x) = (x - 3)^2 + 1$ hat $S(3 \\,|\\, 1)$, $f(x) = (x + 3)^2 + 1$ hat $S(-3 \\,|\\, 1)$.\n\n- $a > 0$: nach **oben** geöffnet, $a < 0$: nach **unten**\n- $|a| > 1$: **gestreckt** (schmal), $|a| < 1$: **gestaucht** (breit)\n- **Nullstellen**: $f(x) = 0$ setzen → pq-Formel\n- Der Scheitel liegt genau **zwischen** den Nullstellen: $x_S = \\frac{x_1 + x_2}{2}$"
+      },
+      {
+        "kind": "widget",
+        "title": "Probier es aus: die Parabel verschieben",
+        "body": "parabola-explorer"
       },
       {
         "kind": "example",

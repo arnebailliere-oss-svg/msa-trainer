@@ -1,0 +1,514 @@
+[
+  {
+    "id": "MSA2025_1A_RABATT",
+    "subject": "MATH",
+    "topicId": "MATH_NUM_PCT_CHANGE",
+    "difficulty": 4,
+    "qtype": "SHORT",
+    "prompt": "Auf ein T-Shirt gibt es 6 € Rabatt. Das sind 20 % des alten Preises. Gib den alten Preis des T-Shirts an.",
+    "payload": { "answer_type": "number", "unit": "€" },
+    "solution": { "value": 30 },
+    "explanation": [
+      { "kind": "steps", "body": "Der Rabatt (6 €) ist der **Prozentwert**, 20 % der **Prozentsatz**, gesucht ist der **Grundwert**.\n\n$0{,}2 \\cdot x = 6 \\;|\\; : 0{,}2 \\Rightarrow x = 30$" },
+      { "kind": "answer", "body": "Der alte Preis war **30 €**." }
+    ],
+    "tags": ["msa2025", "exam", "basisaufgabe", "prozent"],
+    "source": "MSA Berlin 2025, Aufgabe 1a (1 P)"
+  },
+  {
+    "id": "MSA2025_1A_RABATT_T",
+    "subject": "MATH",
+    "topicId": "MATH_NUM_PCT_CHANGE",
+    "difficulty": 4,
+    "qtype": "SHORT",
+    "prompt": "Auf {{artikel}} gibt es {{w}} € Rabatt. Das sind {{p}} % des alten Preises. Gib den alten Preis an.",
+    "payload": { "answer_type": "number", "unit": "€" },
+    "solution": { "kind": "computed", "expr": "w / (p / 100)" },
+    "explanation": [
+      { "kind": "steps", "body": "Rabatt = Prozentwert, {{p}} % = Prozentsatz, gesucht: Grundwert.\n\n${{= p/100}} \\cdot x = {{w}} \\;|\\; : {{= p/100}} \\Rightarrow x = {{= w/(p/100)}}$" },
+      { "kind": "answer", "body": "Alter Preis: **{{= w/(p/100)}} €**" }
+    ],
+    "tags": ["msa2025", "exam", "basisaufgabe", "prozent", "drill"],
+    "source": "Verallgemeinert nach MSA Berlin 2025, Aufgabe 1a",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "g": { "type": "int", "min": 15, "max": 300, "step": 5 },
+        "p": { "type": "choice", "values": [10, 20, 25, 30, 40, 50] },
+        "artikel": { "type": "choice", "values": ["ein T-Shirt", "eine Hose", "einen Rucksack", "ein Spiel", "Kopfhörer"] }
+      },
+      "derived": { "w": "g * p / 100" },
+      "constraints": ["isint(w)"]
+    }
+  },
+  {
+    "id": "MSA2025_1B_STUNDEN",
+    "subject": "MATH",
+    "topicId": "MATH_GEO_UNITS",
+    "difficulty": 3,
+    "qtype": "SHORT",
+    "prompt": "Gib 1,5 h in Minuten an.",
+    "payload": { "answer_type": "number", "unit": "min" },
+    "solution": { "value": 90 },
+    "explanation": [
+      { "kind": "steps", "body": "$1{,}5\\,\\text{h} = 1{,}5 \\cdot 60\\,\\text{min} = 90\\,\\text{min}$" },
+      { "kind": "mistake", "body": "Nicht 1 h 50 min — Zeit ist nicht dezimal, 0,5 h sind 30 min." },
+      { "kind": "answer", "body": "90 min" }
+    ],
+    "tags": ["msa2025", "exam", "basisaufgabe", "einheiten"],
+    "source": "MSA Berlin 2025, Aufgabe 1b (1 P)"
+  },
+  {
+    "id": "MSA2025_1D_ZEHNERPOTENZ",
+    "subject": "MATH",
+    "topicId": "MATH_ALG_POW",
+    "difficulty": 3,
+    "qtype": "SHORT",
+    "prompt": "Gib den Exponenten der Zehnerpotenz so an, dass die Gleichung stimmt: $850\\,000 = 8{,}5 \\cdot 10^{\\,?}$",
+    "payload": { "answer_type": "number" },
+    "solution": { "value": 5 },
+    "explanation": [
+      { "kind": "steps", "body": "$850\\,000 : 8{,}5 = 100\\,000 = 10^5$, also $850\\,000 = 8{,}5 \\cdot 10^5$.\n\nSchneller: Von 8,5 bis 850 000 wandert das Komma **5** Stellen nach rechts." },
+      { "kind": "answer", "body": "Exponent **5**" }
+    ],
+    "tags": ["msa2025", "exam", "basisaufgabe", "potenzen"],
+    "source": "MSA Berlin 2025, Aufgabe 1d (1 P)"
+  },
+  {
+    "id": "MSA2025_1D_ZEHNERPOTENZ_T",
+    "subject": "MATH",
+    "topicId": "MATH_ALG_POW",
+    "difficulty": 3,
+    "qtype": "SHORT",
+    "prompt": "Gib den Exponenten der Zehnerpotenz so an, dass die Gleichung stimmt: ${{= m * 10^n | raw}} = {{m}} \\cdot 10^{\\,?}$",
+    "payload": { "answer_type": "number" },
+    "solution": { "kind": "computed", "expr": "n" },
+    "explanation": [
+      { "kind": "steps", "body": "Von ${{m}}$ bis ${{= m * 10^n | raw}}$ wandert das Komma **{{n}}** Stellen nach rechts — also $10^{{{n}}}$.\n\nProbe: ${{m}} \\cdot 10^{{{n}}} = {{m}} \\cdot {{= 10^n | raw}} = {{= m*10^n | raw}}$" },
+      { "kind": "answer", "body": "Exponent **{{n}}**" }
+    ],
+    "tags": ["msa2025", "exam", "basisaufgabe", "potenzen", "drill"],
+    "source": "Verallgemeinert nach MSA Berlin 2025, Aufgabe 1d",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "m": { "type": "choice", "values": [1.2, 2.5, 3.4, 4.7, 6.1, 7.3, 8.5, 9.9] },
+        "n": { "type": "int", "min": 3, "max": 7 }
+      }
+    }
+  },
+  {
+    "id": "MSA2025_1E_KREISSEKTOR",
+    "subject": "MATH",
+    "topicId": "MATH_DATA_CHARTS",
+    "difficulty": 4,
+    "qtype": "SHORT",
+    "prompt": "In einem Kreis ist ein Sektor mit dem Mittelpunktswinkel 145° grau markiert. Bestimme den Anteil der grau markierten Fläche in Prozent. (Runde auf zwei Nachkommastellen.)",
+    "figure": { "type": "pieChart", "categories": ["grau (145°)", "weiß (215°)"], "values": [145, 215] },
+    "payload": { "answer_type": "number", "unit": "%", "tolerance": 0.05 },
+    "solution": { "value": 40.28 },
+    "explanation": [
+      { "kind": "steps", "body": "Der ganze Kreis hat 360°. Anteil $= \\frac{145}{360} \\approx 0{,}4028 = 40{,}28\\,\\%$" },
+      { "kind": "answer", "body": "≈ 40,28 %" }
+    ],
+    "tags": ["msa2025", "exam", "basisaufgabe", "kreisdiagramm"],
+    "source": "MSA Berlin 2025, Aufgabe 1e (2 P)"
+  },
+  {
+    "id": "MSA2025_1G_SINUS",
+    "subject": "MATH",
+    "topicId": "MATH_GEO_TRIG",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "Ergänze die Gleichung passend zur Abbildung: $\\sin\\gamma = \\;?$",
+    "figure": { "type": "rightTriangle", "a": 3, "b": 4, "labels": { "a": "u", "b": "v", "c": "w", "alpha": "γ" } },
+    "payload": { "choices": ["$\\frac{u}{w}$", "$\\frac{v}{w}$", "$\\frac{u}{v}$", "$\\frac{w}{u}$"], "shuffle": true },
+    "solution": { "correct_choice": "$\\frac{u}{w}$" },
+    "explanation": [
+      { "kind": "steps", "body": "Sinus = Gegenkathete durch Hypotenuse. Gegenüber von $\\gamma$ liegt $u$, die Hypotenuse (gegenüber vom rechten Winkel) ist $w$.\n\n$\\sin\\gamma = \\frac{u}{w}$" },
+      { "kind": "answer", "body": "$\\sin\\gamma = \\frac{u}{w}$" }
+    ],
+    "tags": ["msa2025", "exam", "basisaufgabe", "trigonometrie"],
+    "source": "MSA Berlin 2025, Aufgabe 1g (1 P)"
+  },
+  {
+    "id": "MSA2025_1H_GLEICHUNG",
+    "subject": "MATH",
+    "topicId": "MATH_ALG_EQU_QUAD",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "Einer der Werte erfüllt die Gleichung $x(x + 5) = -6$. Welcher?",
+    "payload": { "choices": ["$x = -2$", "$x = 2$", "$x = 3$", "$x = -6$"], "shuffle": true },
+    "solution": { "correct_choice": "$x = -2$" },
+    "explanation": [
+      { "kind": "steps", "body": "Einsetzen und prüfen:\n\n$x = -2$: $-2 \\cdot (-2 + 5) = -2 \\cdot 3 = -6$ ✓\n\n$x = 2$: $2 \\cdot 7 = 14$ ✗ · $x = 3$: $3 \\cdot 8 = 24$ ✗ · $x = -6$: $-6 \\cdot (-1) = 6$ ✗" },
+      { "kind": "remember", "body": "Bei Multiple-Choice mit Gleichungen: **einsetzen** ist schneller als lösen." },
+      { "kind": "answer", "body": "$x = -2$" }
+    ],
+    "tags": ["msa2025", "exam", "basisaufgabe", "gleichung"],
+    "source": "MSA Berlin 2025, Aufgabe 1h (1 P)"
+  },
+  {
+    "id": "MSA2025_1I_RECHTECK",
+    "subject": "MATH",
+    "topicId": "MATH_GEO_AREA_BASIC",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "Ein Rechteck hat die Länge $a$. Seine Breite setzt sich aus zwei Teilen $b$ und $c$ zusammen. Mit welcher Gleichung berechnet man den Flächeninhalt des gesamten Rechtecks?",
+    "payload": { "choices": ["$A = a \\cdot (b + c)$", "$A = 2 \\cdot (a + b + c)$", "$A = a + 2 \\cdot a \\cdot b$", "$A = a \\cdot b \\cdot c$"], "shuffle": true },
+    "solution": { "correct_choice": "$A = a \\cdot (b + c)$" },
+    "explanation": [
+      { "kind": "steps", "body": "Fläche = Länge · Breite. Die Breite ist $b + c$, also $A = a \\cdot (b + c)$ — oder ausmultipliziert $ab + ac$ (die beiden Teilrechtecke)." },
+      { "kind": "mistake", "body": "$2 \\cdot (a + b + c)$ wäre eine Umfangs-Formel, $a \\cdot b \\cdot c$ ein Volumen." },
+      { "kind": "answer", "body": "$A = a \\cdot (b + c)$" }
+    ],
+    "tags": ["msa2025", "exam", "basisaufgabe", "flaeche"],
+    "source": "MSA Berlin 2025, Aufgabe 1i (1 P)"
+  },
+  {
+    "id": "MSA2025_2A_DRACHEN_SYMMETRIE",
+    "subject": "MATH",
+    "topicId": "MATH_GEO_AREA_BASIC",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "Ein Drachenviereck $ABCD$ hat die Diagonalen $|AC| = 50$ cm und $|BD| = 80$ cm. Wie viele Symmetrieachsen hat das Drachenviereck?",
+    "payload": { "choices": ["1", "0", "2", "4"], "shuffle": true },
+    "solution": { "correct_choice": "1" },
+    "explanation": [
+      { "kind": "steps", "body": "Ein Drachenviereck hat genau **eine** Symmetrieachse — die Diagonale $BD$, die das Viereck in zwei spiegelgleiche Hälften teilt. Die andere Diagonale $AC$ wird von ihr senkrecht halbiert." },
+      { "kind": "answer", "body": "1 Symmetrieachse" }
+    ],
+    "tags": ["msa2025", "exam", "drachenviereck"],
+    "source": "MSA Berlin 2025, Aufgabe 2a"
+  },
+  {
+    "id": "MSA2025_2A_DRACHEN_AB",
+    "subject": "MATH",
+    "topicId": "MATH_GEO_PYTH",
+    "difficulty": 4,
+    "qtype": "SHORT",
+    "prompt": "Im Drachenviereck $ABCD$ schneiden sich die Diagonalen $|AC| = 50$ cm und $|BD| = 80$ cm senkrecht im Punkt $F$. Dabei ist $|FD| = 25$ cm, also $|BF| = 55$ cm. Berechne die Länge der Strecke $AB$. (Runde auf zwei Nachkommastellen.)",
+    "figure": { "type": "rightTriangle", "a": 55, "b": 25, "labels": { "a": "BF = 55 cm", "b": "AF = 25 cm", "c": "AB = ?", "A": "A", "B": "B", "C": "F" } },
+    "payload": { "answer_type": "number", "unit": "cm", "tolerance": 0.05 },
+    "solution": { "value": 60.42 },
+    "explanation": [
+      { "kind": "steps", "body": "1. $AC$ wird von $BD$ halbiert: $|AF| = 50 : 2 = 25$ cm.\n2. Die Diagonalen stehen senkrecht → Dreieck $AFB$ ist rechtwinklig bei $F$, $AB$ ist die Hypotenuse.\n3. Pythagoras: $|AB| = \\sqrt{25^2 + 55^2} = \\sqrt{625 + 3025} = \\sqrt{3650} \\approx 60{,}42$ cm" },
+      { "kind": "remember", "body": "Im Drachenviereck stehen die Diagonalen **senkrecht** aufeinander — das liefert die rechtwinkligen Dreiecke für Pythagoras." },
+      { "kind": "answer", "body": "$|AB| \\approx 60{,}42$ cm" }
+    ],
+    "tags": ["msa2025", "exam", "drachenviereck", "pythagoras"],
+    "source": "MSA Berlin 2025, Aufgabe 2a (4 P)"
+  },
+  {
+    "id": "MSA2025_2B_DRACHEN_FLAECHE",
+    "subject": "MATH",
+    "topicId": "MATH_GEO_AREA_BASIC",
+    "difficulty": 4,
+    "qtype": "SHORT",
+    "prompt": "Ein Drachenviereck hat die Diagonalen $e = |AC| = 50$ cm und $f = |BD| = 80$ cm. Ermittle den Flächeninhalt des Drachenvierecks.",
+    "payload": { "answer_type": "number", "unit": "cm²" },
+    "solution": { "value": 2000 },
+    "explanation": [
+      { "kind": "formula", "body": "Drachenviereck (Formelsammlung): $A = \\frac{1}{2} \\cdot e \\cdot f$" },
+      { "kind": "steps", "body": "$A = \\frac{1}{2} \\cdot 50 \\cdot 80 = 2000\\,\\text{cm}^2$" },
+      { "kind": "answer", "body": "2000 cm²" }
+    ],
+    "tags": ["msa2025", "exam", "drachenviereck", "flaeche"],
+    "source": "MSA Berlin 2025, Aufgabe 2b (2 P)"
+  },
+  {
+    "id": "MSA2025_3B_ZAHLENSCHEIBEN_33",
+    "subject": "MATH",
+    "topicId": "MATH_DATA_PROB",
+    "difficulty": 4,
+    "qtype": "SHORT",
+    "prompt": "Bei einem Spiel dreht man gleichzeitig zwei Scheiben mit je vier gleich großen Feldern. Linke Scheibe: 1, 1, 2, 3. Rechte Scheibe: 1, 2, 2, 3. Man liest zuerst die linke, dann die rechte Ziffer ab (z. B. „12“). Berechne die Wahrscheinlichkeit, eine **33** zu drehen. (Bruch)",
+    "figure": { "type": "treeDiagram", "a": "3", "b": "≠3", "pa": "1/4", "pb": "3/4", "stages": 2 },
+    "payload": { "answer_type": "fraction", "require_reduced": true },
+    "solution": { "value": "1/16" },
+    "explanation": [
+      { "kind": "steps", "body": "Auf jeder Scheibe steht die 3 auf **einem von vier** Feldern.\n\n$P(33) = \\frac{1}{4} \\cdot \\frac{1}{4} = \\frac{1}{16} = 6{,}25\\,\\%$" },
+      { "kind": "answer", "body": "$\\frac{1}{16}$" }
+    ],
+    "tags": ["msa2025", "exam", "wahrscheinlichkeit", "pfadregel"],
+    "source": "MSA Berlin 2025, Aufgabe 3b (1 P)"
+  },
+  {
+    "id": "MSA2025_3B_ZAHLENSCHEIBEN_ESRA",
+    "subject": "MATH",
+    "topicId": "MATH_DATA_PROB",
+    "difficulty": 4,
+    "qtype": "MCQ",
+    "prompt": "Zwei Scheiben mit je vier Feldern: links 1, 1, 2, 3 — rechts 1, 2, 2, 3. Esra behauptet: „Die Wahrscheinlichkeit, eine 22 zu drehen, ist genauso hoch wie die für eine 33.“ Stimmt das?",
+    "payload": {
+      "choices": ["Nein — $P(22) = \\frac{1}{4} \\cdot \\frac{2}{4} = \\frac{2}{16}$, aber $P(33) = \\frac{1}{16}$.", "Ja — beide Ziffern kommen auf beiden Scheiben vor.", "Nein — $P(33)$ ist größer, weil 3 die größte Ziffer ist.", "Das kann man ohne Ausprobieren nicht sagen."],
+      "shuffle": true
+    },
+    "solution": { "correct_choice": "Nein — $P(22) = \\frac{1}{4} \\cdot \\frac{2}{4} = \\frac{2}{16}$, aber $P(33) = \\frac{1}{16}$." },
+    "explanation": [
+      { "kind": "steps", "body": "Die 2 steht links **einmal**, rechts **zweimal**: $P(22) = \\frac{1}{4} \\cdot \\frac{2}{4} = \\frac{2}{16}$.\n\nDie 3 steht auf beiden Scheiben nur einmal: $P(33) = \\frac{1}{16}$.\n\nAlso ist eine 22 doppelt so wahrscheinlich — Esra hat **nicht** recht." },
+      { "kind": "answer", "body": "Nein, $P(22) > P(33)$." }
+    ],
+    "tags": ["msa2025", "exam", "wahrscheinlichkeit", "begruenden"],
+    "source": "MSA Berlin 2025, Aufgabe 3b (2 P)"
+  },
+  {
+    "id": "MSA2025_3C_ZAHLENSCHEIBEN_12_21",
+    "subject": "MATH",
+    "topicId": "MATH_DATA_PROB",
+    "difficulty": 5,
+    "qtype": "SHORT",
+    "prompt": "Zwei Scheiben mit je vier Feldern: links 1, 1, 2, 3 — rechts 1, 2, 2, 3. Bestimme die Wahrscheinlichkeit, eine **12 oder 21** zu drehen. (Bruch)",
+    "payload": { "answer_type": "fraction", "require_reduced": true },
+    "solution": { "value": "5/16" },
+    "explanation": [
+      { "kind": "steps", "body": "Zwei Pfade, dann Summenregel:\n\n$P(12) = \\frac{2}{4} \\cdot \\frac{2}{4} = \\frac{4}{16}$ (links zwei 1en, rechts zwei 2en)\n\n$P(21) = \\frac{1}{4} \\cdot \\frac{1}{4} = \\frac{1}{16}$\n\n$P(12 \\text{ oder } 21) = \\frac{4}{16} + \\frac{1}{16} = \\frac{5}{16} = 31{,}25\\,\\%$" },
+      { "kind": "answer", "body": "$\\frac{5}{16}$" }
+    ],
+    "tags": ["msa2025", "exam", "wahrscheinlichkeit", "summenregel", "sternchen"],
+    "source": "MSA Berlin 2025, Aufgabe 3c* (2 P)"
+  },
+  {
+    "id": "MSA2025_4A_RAMPE_LAENGE",
+    "subject": "MATH",
+    "topicId": "MATH_GEO_PYTH",
+    "difficulty": 4,
+    "qtype": "SHORT",
+    "prompt": "An eine Stufe von 16 cm Höhe soll eine feste Rampe gebaut werden, die waagerecht 170 cm weit reicht. Berechne die Länge $x$ der Rampe. (Runde auf zwei Nachkommastellen.)",
+    "figure": { "type": "rightTriangle", "a": 170, "b": 16, "labels": { "a": "170 cm", "b": "16 cm", "c": "x = ?", "beta": "α" } },
+    "payload": { "answer_type": "number", "unit": "cm", "tolerance": 0.05 },
+    "solution": { "value": 170.75 },
+    "explanation": [
+      { "kind": "steps", "body": "Rampe, Boden und Stufe bilden ein rechtwinkliges Dreieck; die Rampe ist die Hypotenuse.\n\n$x = \\sqrt{170^2 + 16^2} = \\sqrt{28\\,900 + 256} = \\sqrt{29\\,156} \\approx 170{,}75$ cm" },
+      { "kind": "answer", "body": "$x \\approx 170{,}75$ cm" }
+    ],
+    "tags": ["msa2025", "exam", "pythagoras", "sachaufgabe"],
+    "source": "MSA Berlin 2025, Aufgabe 4a (4 P)"
+  },
+  {
+    "id": "MSA2025_4A_RAMPE_WINKEL",
+    "subject": "MATH",
+    "topicId": "MATH_GEO_TRIG",
+    "difficulty": 4,
+    "qtype": "SHORT",
+    "prompt": "Eine Rampe überwindet auf 170 cm waagerechter Strecke eine Höhe von 16 cm. Berechne den Anstiegswinkel $\\alpha$. (Runde auf zwei Nachkommastellen.)",
+    "figure": { "type": "rightTriangle", "a": 170, "b": 16, "labels": { "a": "170 cm", "b": "16 cm", "c": "", "beta": "α = ?" } },
+    "payload": { "answer_type": "number", "unit": "°", "tolerance": 0.05 },
+    "solution": { "value": 5.38 },
+    "explanation": [
+      { "kind": "steps", "body": "Gegenkathete 16 cm, Ankathete 170 cm → Tangens.\n\n$\\tan\\alpha = \\frac{16}{170} \\approx 0{,}0941 \\Rightarrow \\alpha = \\tan^{-1}(0{,}0941) \\approx 5{,}38°$" },
+      { "kind": "answer", "body": "$\\alpha \\approx 5{,}38°$" }
+    ],
+    "tags": ["msa2025", "exam", "trigonometrie", "sachaufgabe"],
+    "source": "MSA Berlin 2025, Aufgabe 4a (4 P)"
+  },
+  {
+    "id": "MSA2025_4A_RAMPE_T",
+    "subject": "MATH",
+    "topicId": "MATH_GEO_TRIG",
+    "difficulty": 4,
+    "qtype": "SHORT",
+    "prompt": "Eine Rampe überwindet auf {{l}} cm waagerechter Strecke eine Höhe von {{h}} cm. Berechne den Anstiegswinkel $\\alpha$. (Runde auf zwei Nachkommastellen.)",
+    "figure": { "type": "rightTriangle", "a": "{{= l | raw}}", "b": "{{= h | raw}}", "labels": { "a": "{{l}} cm", "b": "{{h}} cm", "c": "", "beta": "α = ?" } },
+    "payload": { "answer_type": "number", "unit": "°", "tolerance": 0.05 },
+    "solution": { "kind": "computed", "expr": "atan(h / l)", "round": 2 },
+    "explanation": [
+      { "kind": "steps", "body": "$\\tan\\alpha = \\frac{{{h}}}{{{l}}} \\approx {{= h/l | fixed:4}} \\Rightarrow \\alpha = \\tan^{-1}({{= h/l | fixed:4}}) \\approx {{= atan(h/l) | fixed:2}}°$\n\nSteigung in Prozent: ${{= h/l*100 | fixed:2}}\\,\\%$ — {{= if(h/l > 0.06, 1, 0) | raw}}" },
+      { "kind": "answer", "body": "$\\alpha \\approx {{= atan(h/l) | fixed:2}}°$" }
+    ],
+    "tags": ["msa2025", "exam", "trigonometrie", "sachaufgabe", "drill"],
+    "source": "Verallgemeinert nach MSA Berlin 2025, Aufgabe 4a",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "l": { "type": "int", "min": 120, "max": 300, "step": 10 },
+        "h": { "type": "int", "min": 8, "max": 36, "step": 2 }
+      }
+    }
+  },
+  {
+    "id": "MSA2025_4B_STEIGUNG_PROZENT",
+    "subject": "MATH",
+    "topicId": "MATH_NUM_PCT_BASIC",
+    "difficulty": 4,
+    "qtype": "MCQ",
+    "prompt": "Eine Rampe steigt auf 170 cm waagerechter Strecke um 16 cm. Frau Yücel sagt: „Die Rampe wird zu steil, die Steigung ist mehr als 6 %.“ Hat sie recht?",
+    "payload": {
+      "choices": ["Ja — $\\frac{16}{170} \\approx 9{,}4\\,\\% > 6\\,\\%$.", "Nein — $\\frac{16}{170} \\approx 0{,}09\\,\\% < 6\\,\\%$.", "Nein — 16 cm sind weniger als 6 % von 170 cm.", "Das hängt von der Länge der Rampe ab."],
+      "shuffle": true
+    },
+    "solution": { "correct_choice": "Ja — $\\frac{16}{170} \\approx 9{,}4\\,\\% > 6\\,\\%$." },
+    "explanation": [
+      { "kind": "what", "body": "Steigung in Prozent = Höhe : waagerechte Strecke. „6 %“ heißt: auf **100 m** waagerecht **6 m** Höhenunterschied." },
+      { "kind": "steps", "body": "$\\frac{16}{170} \\approx 0{,}0941 = 9{,}41\\,\\%$. Das ist mehr als 6 % — Frau Yücel hat recht." },
+      { "kind": "answer", "body": "Ja, die Steigung beträgt ≈ 9,41 %." }
+    ],
+    "tags": ["msa2025", "exam", "prozent", "steigung"],
+    "source": "MSA Berlin 2025, Aufgabe 4b (3 P)"
+  },
+  {
+    "id": "MSA2025_4C_RAMPE_SINUSSATZ",
+    "subject": "MATH",
+    "topicId": "MATH_GEO_TRIG",
+    "difficulty": 5,
+    "qtype": "SHORT",
+    "prompt": "Eine mobile Rampe wird an zwei Treppenstufen angelegt. Im entstehenden Dreieck sind zwei Winkel 141° und 5° groß; die Seite gegenüber dem dritten Winkel ist 160 cm lang. Berechne die Länge $y$ der Rampe, die dem 141°-Winkel gegenüberliegt. (Runde auf zwei Nachkommastellen.)",
+    "payload": { "answer_type": "number", "unit": "cm", "tolerance": 0.1 },
+    "solution": { "value": 180.07 },
+    "explanation": [
+      { "kind": "steps", "body": "1. Dritter Winkel: $\\beta = 180° - 141° - 5° = 34°$ — ihm gegenüber liegen die 160 cm.\n2. Sinussatz: $\\frac{y}{\\sin 141°} = \\frac{160}{\\sin 34°}$\n3. $y = \\frac{160}{\\sin 34°} \\cdot \\sin 141° \\approx \\frac{160}{0{,}5592} \\cdot 0{,}6293 \\approx 180{,}07$ cm" },
+      { "kind": "remember", "body": "Kein rechter Winkel → **Sinussatz** (Formelblatt). Erst den fehlenden Winkel über die Winkelsumme bestimmen." },
+      { "kind": "answer", "body": "$y \\approx 180{,}07$ cm" }
+    ],
+    "tags": ["msa2025", "exam", "sinussatz", "sternchen"],
+    "source": "MSA Berlin 2025, Aufgabe 4c* (3 P)"
+  },
+  {
+    "id": "MSA2025_5A_GERADE_AUSSAGEN",
+    "subject": "MATH",
+    "topicId": "MATH_FUNC_LINEAR_FORM",
+    "difficulty": 4,
+    "qtype": "MCQ",
+    "prompt": "Der Graph der linearen Funktion $f$ verläuft durch $A(-2 \\,|\\, 6)$ und $B(3 \\,|\\, -1{,}5)$. Welche Aussage ist **wahr**?",
+    "figure": { "type": "coordinateSystem", "xmin": -5, "xmax": 5, "ymin": -5, "ymax": 8, "width": 280, "height": 300, "lines": [{ "m": -1.5, "n": 3, "label": "f" }], "points": [{ "x": -2, "y": 6, "label": "A" }, { "x": 3, "y": -1.5, "label": "B" }] },
+    "payload": { "choices": ["Der Graph schneidet die $y$-Achse im Punkt $(0 \\,|\\, 3)$.", "Der Graph verläuft monoton steigend.", "Die Steigung beträgt $1{,}5$.", "Der Graph geht durch den Ursprung."], "shuffle": true },
+    "solution": { "correct_choice": "Der Graph schneidet die $y$-Achse im Punkt $(0 \\,|\\, 3)$." },
+    "explanation": [
+      { "kind": "steps", "body": "Steigung: $m = \\frac{-1{,}5 - 6}{3 - (-2)} = \\frac{-7{,}5}{5} = -1{,}5$ → **fallend**, nicht steigend.\n\n$y$-Achsenabschnitt: $6 = -1{,}5 \\cdot (-2) + n \\Rightarrow n = 3$ → Schnitt in $(0 \\,|\\, 3)$ ✓\n\n$f(x) = -1{,}5x + 3$" },
+      { "kind": "answer", "body": "Wahr: Schnitt mit der $y$-Achse in $(0 \\,|\\, 3)$." }
+    ],
+    "tags": ["msa2025", "exam", "lineare-funktion"],
+    "source": "MSA Berlin 2025, Aufgabe 5a (4 P)"
+  },
+  {
+    "id": "MSA2025_5A_GERADE_STEIGUNG",
+    "subject": "MATH",
+    "topicId": "MATH_FUNC_LINEAR_FORM",
+    "difficulty": 4,
+    "qtype": "SHORT",
+    "prompt": "Der Graph einer linearen Funktion $f$ verläuft durch $A(-2 \\,|\\, 6)$ und $B(3 \\,|\\, -1{,}5)$. Gib die Steigung $m$ an.",
+    "payload": { "answer_type": "number" },
+    "solution": { "value": -1.5 },
+    "explanation": [
+      { "kind": "steps", "body": "$m = \\frac{y_B - y_A}{x_B - x_A} = \\frac{-1{,}5 - 6}{3 - (-2)} = \\frac{-7{,}5}{5} = -1{,}5$\n\nGleichung: $f(x) = -1{,}5x + 3$" },
+      { "kind": "answer", "body": "$m = -1{,}5$" }
+    ],
+    "tags": ["msa2025", "exam", "lineare-funktion", "steigung"],
+    "source": "MSA Berlin 2025, Aufgabe 5a"
+  },
+  {
+    "id": "MSA2025_5B_SCHEITELPUNKT",
+    "subject": "MATH",
+    "topicId": "MATH_FUNC_QUAD",
+    "difficulty": 4,
+    "qtype": "MCQ",
+    "prompt": "Gegeben ist $p(x) = x^2 - 6x + 7$. Welche Gleichung ist die Scheitelpunktform von $p$?",
+    "figure": { "type": "coordinateSystem", "xmin": -2, "xmax": 8, "ymin": -4, "ymax": 8, "width": 280, "height": 300, "parabolas": [{ "a": 1, "d": 3, "e": -2, "label": "p" }], "points": [{ "x": 3, "y": -2, "label": "S" }] },
+    "payload": { "choices": ["$p(x) = (x - 3)^2 - 2$", "$p(x) = (x + 3)^2 - 2$", "$p(x) = (x - 3)^2 + 7$", "$p(x) = (x - 6)^2 + 7$"], "shuffle": true },
+    "solution": { "correct_choice": "$p(x) = (x - 3)^2 - 2$" },
+    "explanation": [
+      { "kind": "steps", "body": "Scheitelpunkt ablesen (oder $x_S = -\\frac{p}{2} = 3$, $y_S = 9 - 18 + 7 = -2$): $S(3 \\,|\\, -2)$.\n\nScheitelpunktform $a(x - d)^2 + e$ mit $d = 3$, $e = -2$: $p(x) = (x - 3)^2 - 2$\n\nProbe: $(x-3)^2 - 2 = x^2 - 6x + 9 - 2 = x^2 - 6x + 7$ ✓" },
+      { "kind": "answer", "body": "$p(x) = (x - 3)^2 - 2$, $S(3 \\,|\\, -2)$" }
+    ],
+    "tags": ["msa2025", "exam", "parabel", "scheitelpunktform"],
+    "source": "MSA Berlin 2025, Aufgabe 5b (2 P)"
+  },
+  {
+    "id": "MSA2025_5C_NULLSTELLEN",
+    "subject": "MATH",
+    "topicId": "MATH_FUNC_QUAD",
+    "difficulty": 5,
+    "qtype": "SHORT",
+    "prompt": "Berechne die Nullstellen von $p(x) = x^2 - 6x + 7$. Gib die **größere** Nullstelle auf zwei Nachkommastellen an.",
+    "payload": { "answer_type": "number", "tolerance": 0.01 },
+    "solution": { "value": 4.41 },
+    "explanation": [
+      { "kind": "steps", "body": "$x^2 - 6x + 7 = 0$, pq-Formel mit $p = -6$, $q = 7$:\n\n$x_{1,2} = 3 \\pm \\sqrt{9 - 7} = 3 \\pm \\sqrt{2}$\n\n$x_1 = 3 + \\sqrt{2} \\approx 4{,}41$, $x_2 = 3 - \\sqrt{2} \\approx 1{,}59$\n\nSchnittpunkte mit der $x$-Achse: $(4{,}41 \\,|\\, 0)$ und $(1{,}59 \\,|\\, 0)$." },
+      { "kind": "answer", "body": "$x_1 = 3 + \\sqrt{2} \\approx 4{,}41$" }
+    ],
+    "tags": ["msa2025", "exam", "parabel", "nullstellen", "pq-formel", "sternchen"],
+    "source": "MSA Berlin 2025, Aufgabe 5c* (4 P)"
+  },
+  {
+    "id": "MSA2025_6A_KITA_MODALWERT",
+    "subject": "MATH",
+    "topicId": "MATH_DATA_STATS",
+    "difficulty": 4,
+    "qtype": "MCQ",
+    "prompt": "Das Alter der Kinder einer Kita: 5, 2, 1, 4, 2, 4, 2, 4, 2, 2. Welche Aussage ist **falsch**?",
+    "payload": { "choices": ["Der Modalwert beträgt 4 Jahre.", "Die Spannweite beträgt 4 Jahre.", "Der Median beträgt 2 Jahre.", "Das jüngste Kind ist 1 Jahr alt."], "shuffle": true },
+    "solution": { "correct_choice": "Der Modalwert beträgt 4 Jahre." },
+    "explanation": [
+      { "kind": "steps", "body": "Sortiert: 1, 2, 2, 2, 2, 2, 4, 4, 4, 5.\n\n- Spannweite: $5 - 1 = 4$ ✓\n- **Modalwert**: die 2 kommt fünfmal vor, die 4 nur dreimal → Modalwert **2**, nicht 4 ✗\n- Median: 5. und 6. Wert sind beide 2 → Median 2 ✓" },
+      { "kind": "answer", "body": "Falsch ist „Modalwert 4“ — korrekt: Modalwert 2 Jahre." }
+    ],
+    "tags": ["msa2025", "exam", "statistik", "modalwert", "spannweite"],
+    "source": "MSA Berlin 2025, Aufgabe 6a (2 P)"
+  },
+  {
+    "id": "MSA2025_6B_KITA_ANTEIL",
+    "subject": "MATH",
+    "topicId": "MATH_DATA_CHARTS",
+    "difficulty": 4,
+    "qtype": "SHORT",
+    "prompt": "Das Alter der 11 Erziehenden einer Kita: 52, 57, 33, 44, 31, 30, 66, 58, 61, 41, 55. Ermittle den prozentualen Anteil der Erziehenden, die jünger als 50 Jahre sind. (Runde auf zwei Nachkommastellen.)",
+    "payload": { "answer_type": "number", "unit": "%", "tolerance": 0.05 },
+    "solution": { "value": 45.45 },
+    "explanation": [
+      { "kind": "steps", "body": "Jünger als 50: 33, 44, 31, 30, 41 → **5 von 11**.\n\n$\\frac{5}{11} \\cdot 100 \\approx 45{,}45\\,\\%$\n\nIm Kreisdiagramm: $\\frac{5}{11} \\cdot 360° \\approx 164°$." },
+      { "kind": "answer", "body": "≈ 45,45 % (Kreissektor ≈ 164°)" }
+    ],
+    "tags": ["msa2025", "exam", "statistik", "prozent", "kreisdiagramm"],
+    "source": "MSA Berlin 2025, Aufgabe 6b (3 P)"
+  },
+  {
+    "id": "MSA2025_6C_KITA_DURCHSCHNITT",
+    "subject": "MATH",
+    "topicId": "MATH_DATA_STATS",
+    "difficulty": 5,
+    "qtype": "MCQ",
+    "prompt": "Das Alter der 11 Erziehenden: 52, 57, 33, 44, 31, 30, 66, 58, 61, 41, 55 (Durchschnitt 48 Jahre). Die älteste und die jüngste Person verlassen die Kita. Wie wirkt sich das auf das Durchschnittsalter aus?",
+    "payload": { "choices": ["Es bleibt bei 48 Jahren.", "Es sinkt, weil eine Person mit 66 geht.", "Es steigt, weil eine Person mit 30 geht.", "Es sinkt auf 43,2 Jahre."], "shuffle": true },
+    "solution": { "correct_choice": "Es bleibt bei 48 Jahren." },
+    "explanation": [
+      { "kind": "steps", "body": "Summe: $52 + 57 + 33 + 44 + 31 + 30 + 66 + 58 + 61 + 41 + 55 = 528$, $528 : 11 = 48$.\n\nOhne 30 und 66: $528 - 96 = 432$, $432 : 9 = 48$.\n\nDie beiden haben zusammen genau $2 \\cdot 48 = 96$ Jahre — ihr Durchschnitt ist 48. Deshalb ändert sich der Durchschnitt **nicht**." },
+      { "kind": "remember", "body": "Entfernt man Werte, deren Durchschnitt gleich dem Gesamtdurchschnitt ist, bleibt der Durchschnitt gleich." },
+      { "kind": "answer", "body": "Das Durchschnittsalter bleibt 48 Jahre." }
+    ],
+    "tags": ["msa2025", "exam", "statistik", "mittelwert", "sternchen"],
+    "source": "MSA Berlin 2025, Aufgabe 6c* (3 P)"
+  },
+  {
+    "id": "MSA2025_7B_BAKTERIEN_FAKTOR",
+    "subject": "MATH",
+    "topicId": "MATH_FUNC_EXP",
+    "difficulty": 4,
+    "qtype": "SHORT",
+    "prompt": "Ein Bakterienstamm wächst exponentiell: nach 0 h 80 Bakterien, nach 1 h 112, nach 2 h 157, nach 3 h 220, nach 4 h 308. Weise den Wachstumsfaktor nach: Berechne $112 : 80$.",
+    "payload": { "answer_type": "number", "tolerance": 0.005 },
+    "solution": { "value": 1.4 },
+    "explanation": [
+      { "kind": "steps", "body": "Wachstumsfaktor = Wert : Vorgängerwert: $112 : 80 = 1{,}4$, $157 : 112 \\approx 1{,}4$, $220 : 157 \\approx 1{,}4$ ✓\n\nGleichung: $N(t) = 80 \\cdot 1{,}4^t$" },
+      { "kind": "answer", "body": "Wachstumsfaktor 1,4; $N(t) = 80 \\cdot 1{,}4^t$" }
+    ],
+    "tags": ["msa2025", "exam", "exponentiell", "sternchen"],
+    "source": "MSA Berlin 2025, Aufgabe 7b* (4 P)"
+  },
+  {
+    "id": "MSA2025_7B_BAKTERIEN_24H",
+    "subject": "MATH",
+    "topicId": "MATH_FUNC_EXP",
+    "difficulty": 5,
+    "qtype": "MCQ",
+    "prompt": "Ein Bakterienstamm wächst nach $N(t) = 80 \\cdot 1{,}4^t$ ($t$ in Stunden). Aussage: „Nach 24 Stunden ist der Stamm auf mehr als 250 000 Bakterien angewachsen.“ Stimmt das?",
+    "payload": { "choices": ["Wahr — $80 \\cdot 1{,}4^{24} \\approx 257\\,000 > 250\\,000$.", "Falsch — $80 \\cdot 1{,}4 \\cdot 24 = 2688$.", "Falsch — $80 \\cdot 24^{1{,}4} \\approx 6800$.", "Wahr — $80 \\cdot 1{,}4^{24} \\approx 2{,}5$ Millionen."], "shuffle": true },
+    "solution": { "correct_choice": "Wahr — $80 \\cdot 1{,}4^{24} \\approx 257\\,000 > 250\\,000$." },
+    "explanation": [
+      { "kind": "steps", "body": "$N(24) = 80 \\cdot 1{,}4^{24} \\approx 80 \\cdot 3217 \\approx 257\\,000$.\n\nDas ist mehr als 250 000 — die Aussage ist **wahr**." },
+      { "kind": "mistake", "body": "Exponentiell heißt $1{,}4^{t}$ (Faktor **hoch** $t$), nicht $1{,}4 \\cdot t$ — das wäre linear." },
+      { "kind": "answer", "body": "Wahr, ≈ 257 000 Bakterien." }
+    ],
+    "tags": ["msa2025", "exam", "exponentiell", "sternchen"],
+    "source": "MSA Berlin 2025, Aufgabe 7b* (4 P)"
+  }
+]

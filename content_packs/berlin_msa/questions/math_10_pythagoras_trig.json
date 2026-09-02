@@ -6,23 +6,66 @@
     "difficulty": 2,
     "qtype": "SHORT",
     "prompt": "Im Dreieck $ABC$ ist $\\gamma = 90°$. Gegeben: $a = {{a}}$ cm, $b = {{b}}$ cm. Berechne $c$.",
-    "payload": { "answer_type": "number", "unit": "cm" },
-    "solution": { "kind": "computed", "expr": "sqrt(a^2 + b^2)" },
+    "payload": {
+      "answer_type": "number",
+      "unit": "cm"
+    },
+    "solution": {
+      "kind": "computed",
+      "expr": "sqrt(a^2 + b^2)"
+    },
     "explanation": [
-      { "kind": "what", "body": "$\\gamma = 90°$ liegt bei $C$ — also ist $c$ (gegenüber von $C$) die **Hypotenuse**." },
-      { "kind": "formula", "body": "$a^2 + b^2 = c^2 \\Rightarrow c = \\sqrt{a^2 + b^2}$" },
-      { "kind": "steps", "body": "$c = \\sqrt{{{a}}^2 + {{b}}^2} = \\sqrt{{{= a*a}} + {{= b*b}}} = \\sqrt{{{= a*a + b*b}}} = {{= sqrt(a*a+b*b)}}$ cm" },
-      { "kind": "answer", "body": "c = {{= sqrt(a*a+b*b)}} cm" }
+      {
+        "kind": "what",
+        "body": "$\\gamma = 90°$ liegt bei $C$ — also ist $c$ (gegenüber von $C$) die **Hypotenuse**."
+      },
+      {
+        "kind": "formula",
+        "body": "$a^2 + b^2 = c^2 \\Rightarrow c = \\sqrt{a^2 + b^2}$"
+      },
+      {
+        "kind": "steps",
+        "body": "$c = \\sqrt{{{a}}^2 + {{b}}^2} = \\sqrt{{{= a*a}} + {{= b*b}}} = \\sqrt{{{= a*a + b*b}}} = {{= sqrt(a*a+b*b)}}$ cm"
+      },
+      {
+        "kind": "answer",
+        "body": "c = {{= sqrt(a*a+b*b)}} cm"
+      }
     ],
-    "tags": ["pythagoras", "hypotenuse", "drill"],
+    "tags": [
+      "pythagoras",
+      "hypotenuse",
+      "drill"
+    ],
     "source": "Verallgemeinert nach Prüfungshefte 2027, 5.5 Aufgabe a",
     "variants": {
       "enabled": true,
       "variables": {
-        "a": { "type": "int", "min": 3, "max": 40 },
-        "b": { "type": "int", "min": 4, "max": 40 }
+        "a": {
+          "type": "int",
+          "min": 3,
+          "max": 40
+        },
+        "b": {
+          "type": "int",
+          "min": 4,
+          "max": 40
+        }
       },
-      "constraints": ["a < b", "isint(sqrt(a^2 + b^2))"]
+      "constraints": [
+        "a < b",
+        "isint(sqrt(a^2 + b^2))"
+      ]
+    },
+    "figure": {
+      "type": "rightTriangle",
+      "a": "{{= a | raw}}",
+      "b": "{{= b | raw}}",
+      "labels": {
+        "a": "a = {{a}} cm",
+        "b": "b = {{b}} cm",
+        "c": "c = ?"
+      }
     }
   },
   {
@@ -32,23 +75,66 @@
     "difficulty": 3,
     "qtype": "SHORT",
     "prompt": "Im Dreieck $ABC$ ist $\\gamma = 90°$. Gegeben: $b = {{b}}$ cm, $c = {{c}}$ cm. Berechne $a$.",
-    "payload": { "answer_type": "number", "unit": "cm" },
-    "solution": { "kind": "computed", "expr": "sqrt(c^2 - b^2)" },
+    "payload": {
+      "answer_type": "number",
+      "unit": "cm"
+    },
+    "solution": {
+      "kind": "computed",
+      "expr": "sqrt(c^2 - b^2)"
+    },
     "explanation": [
-      { "kind": "what", "body": "Gesucht ist eine **Kathete** — die Hypotenuse $c$ ist gegeben. Also nach $a^2$ umstellen." },
-      { "kind": "steps", "body": "$a^2 + b^2 = c^2 \\Rightarrow a^2 = c^2 - b^2$\n\n$a = \\sqrt{{{c}}^2 - {{b}}^2} = \\sqrt{{{= c*c}} - {{= b*b}}} = \\sqrt{{{= c*c - b*b}}} = {{= sqrt(c*c - b*b)}}$ cm" },
-      { "kind": "mistake", "body": "Nicht $\\sqrt{c^2 + b^2}$ rechnen — die Hypotenuse ist die **längste** Seite, eine Kathete muss kürzer sein. Bei einer Kathete wird **subtrahiert**." },
-      { "kind": "answer", "body": "a = {{= sqrt(c*c - b*b)}} cm" }
+      {
+        "kind": "what",
+        "body": "Gesucht ist eine **Kathete** — die Hypotenuse $c$ ist gegeben. Also nach $a^2$ umstellen."
+      },
+      {
+        "kind": "steps",
+        "body": "$a^2 + b^2 = c^2 \\Rightarrow a^2 = c^2 - b^2$\n\n$a = \\sqrt{{{c}}^2 - {{b}}^2} = \\sqrt{{{= c*c}} - {{= b*b}}} = \\sqrt{{{= c*c - b*b}}} = {{= sqrt(c*c - b*b)}}$ cm"
+      },
+      {
+        "kind": "mistake",
+        "body": "Nicht $\\sqrt{c^2 + b^2}$ rechnen — die Hypotenuse ist die **längste** Seite, eine Kathete muss kürzer sein. Bei einer Kathete wird **subtrahiert**."
+      },
+      {
+        "kind": "answer",
+        "body": "a = {{= sqrt(c*c - b*b)}} cm"
+      }
     ],
-    "tags": ["pythagoras", "kathete", "drill"],
+    "tags": [
+      "pythagoras",
+      "kathete",
+      "drill"
+    ],
     "source": "Verallgemeinert nach Prüfungshefte 2027, 5.5 Aufgabe b/c",
     "variants": {
       "enabled": true,
       "variables": {
-        "b": { "type": "int", "min": 3, "max": 40 },
-        "c": { "type": "int", "min": 5, "max": 50 }
+        "b": {
+          "type": "int",
+          "min": 3,
+          "max": 40
+        },
+        "c": {
+          "type": "int",
+          "min": 5,
+          "max": 50
+        }
       },
-      "constraints": ["c > b", "isint(sqrt(c^2 - b^2))"]
+      "constraints": [
+        "c > b",
+        "isint(sqrt(c^2 - b^2))"
+      ]
+    },
+    "figure": {
+      "type": "rightTriangle",
+      "a": "{{= sqrt(c*c - b*b) | raw}}",
+      "b": "{{= b | raw}}",
+      "labels": {
+        "a": "a = ?",
+        "b": "b = {{b}} cm",
+        "c": "c = {{c}} cm"
+      }
     }
   },
   {
@@ -58,21 +144,69 @@
     "difficulty": 3,
     "qtype": "SHORT",
     "prompt": "Eine {{l}} m lange Leiter lehnt an einer Hauswand. Ihr Fuß steht {{d}} m von der Wand entfernt. In welcher Höhe berührt die Leiter die Wand? (Runde auf zwei Nachkommastellen.)",
-    "payload": { "answer_type": "number", "unit": "m", "tolerance": 0.02 },
-    "solution": { "kind": "computed", "expr": "sqrt(l^2 - d^2)", "round": 2 },
+    "payload": {
+      "answer_type": "number",
+      "unit": "m",
+      "tolerance": 0.02
+    },
+    "solution": {
+      "kind": "computed",
+      "expr": "sqrt(l^2 - d^2)",
+      "round": 2
+    },
     "explanation": [
-      { "kind": "what", "body": "Wand, Boden und Leiter bilden ein **rechtwinkliges Dreieck**: Der rechte Winkel ist zwischen Wand und Boden, die Leiter ist die **Hypotenuse**." },
-      { "kind": "steps", "body": "$h^2 + {{d}}^2 = {{l}}^2$\n\n$h = \\sqrt{{{l}}^2 - {{d}}^2} = \\sqrt{{{= l*l}} - {{= d*d}}} = \\sqrt{{{= l*l - d*d}}} \\approx {{= sqrt(l*l - d*d) | fixed:2}}$ m" },
-      { "kind": "answer", "body": "≈ {{= sqrt(l*l - d*d) | fixed:2}} m" }
+      {
+        "kind": "what",
+        "body": "Wand, Boden und Leiter bilden ein **rechtwinkliges Dreieck**: Der rechte Winkel ist zwischen Wand und Boden, die Leiter ist die **Hypotenuse**."
+      },
+      {
+        "kind": "steps",
+        "body": "$h^2 + {{d}}^2 = {{l}}^2$\n\n$h = \\sqrt{{{l}}^2 - {{d}}^2} = \\sqrt{{{= l*l}} - {{= d*d}}} = \\sqrt{{{= l*l - d*d}}} \\approx {{= sqrt(l*l - d*d) | fixed:2}}$ m"
+      },
+      {
+        "kind": "answer",
+        "body": "≈ {{= sqrt(l*l - d*d) | fixed:2}} m"
+      }
     ],
-    "tags": ["pythagoras", "sachaufgabe", "drill"],
+    "tags": [
+      "pythagoras",
+      "sachaufgabe",
+      "drill"
+    ],
     "variants": {
       "enabled": true,
       "variables": {
-        "l": { "type": "choice", "values": [3, 3.5, 4, 4.5, 5, 6, 7, 8] },
-        "d": { "type": "choice", "values": [0.8, 1, 1.2, 1.5, 1.8, 2, 2.5, 3] }
+        "l": {
+          "type": "choice",
+          "values": [
+            3,
+            3.5,
+            4,
+            4.5,
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        "d": {
+          "type": "choice",
+          "values": [
+            0.8,
+            1,
+            1.2,
+            1.5,
+            1.8,
+            2,
+            2.5,
+            3
+          ]
+        }
       },
-      "constraints": ["d < l * 0.7", "!isint(sqrt(l^2 - d^2))"]
+      "constraints": [
+        "d < l * 0.7",
+        "!isint(sqrt(l^2 - d^2))"
+      ]
     }
   },
   {
@@ -82,21 +216,63 @@
     "difficulty": 3,
     "qtype": "SHORT",
     "prompt": "Ein Rechteck ist {{a}} cm lang und {{b}} cm breit. Berechne die Länge der Diagonale. (Runde auf eine Nachkommastelle.)",
-    "payload": { "answer_type": "number", "unit": "cm", "tolerance": 0.1 },
-    "solution": { "kind": "computed", "expr": "sqrt(a^2 + b^2)", "round": 1 },
+    "payload": {
+      "answer_type": "number",
+      "unit": "cm",
+      "tolerance": 0.1
+    },
+    "solution": {
+      "kind": "computed",
+      "expr": "sqrt(a^2 + b^2)",
+      "round": 1
+    },
     "explanation": [
-      { "kind": "what", "body": "Die Diagonale teilt das Rechteck in zwei rechtwinklige Dreiecke — sie ist die **Hypotenuse**, die Seiten sind die Katheten." },
-      { "kind": "steps", "body": "$d = \\sqrt{a^2 + b^2} = \\sqrt{{{= a*a}} + {{= b*b}}} = \\sqrt{{{= a*a + b*b}}} \\approx {{= sqrt(a*a+b*b) | fixed:1}}$ cm" },
-      { "kind": "answer", "body": "≈ {{= sqrt(a*a+b*b) | fixed:1}} cm" }
+      {
+        "kind": "what",
+        "body": "Die Diagonale teilt das Rechteck in zwei rechtwinklige Dreiecke — sie ist die **Hypotenuse**, die Seiten sind die Katheten."
+      },
+      {
+        "kind": "steps",
+        "body": "$d = \\sqrt{a^2 + b^2} = \\sqrt{{{= a*a}} + {{= b*b}}} = \\sqrt{{{= a*a + b*b}}} \\approx {{= sqrt(a*a+b*b) | fixed:1}}$ cm"
+      },
+      {
+        "kind": "answer",
+        "body": "≈ {{= sqrt(a*a+b*b) | fixed:1}} cm"
+      }
     ],
-    "tags": ["pythagoras", "diagonale", "drill"],
+    "tags": [
+      "pythagoras",
+      "diagonale",
+      "drill"
+    ],
     "variants": {
       "enabled": true,
       "variables": {
-        "a": { "type": "int", "min": 4, "max": 30 },
-        "b": { "type": "int", "min": 3, "max": 25 }
+        "a": {
+          "type": "int",
+          "min": 4,
+          "max": 30
+        },
+        "b": {
+          "type": "int",
+          "min": 3,
+          "max": 25
+        }
       },
-      "constraints": ["a > b", "!isint(sqrt(a^2 + b^2))"]
+      "constraints": [
+        "a > b",
+        "!isint(sqrt(a^2 + b^2))"
+      ]
+    },
+    "figure": {
+      "type": "rectangle",
+      "a": "{{= a | raw}}",
+      "b": "{{= b | raw}}",
+      "labels": {
+        "a": "{{a}} cm",
+        "b": "{{b}} cm"
+      },
+      "diagonal": "d = ?"
     }
   },
   {
@@ -106,15 +282,53 @@
     "difficulty": 2,
     "qtype": "MCQ",
     "prompt": "Im Dreieck $ABC$ ist $\\alpha = 90°$. Welche Gleichung gilt?",
-    "payload": { "choices": ["$b^2 + c^2 = a^2$", "$a^2 + b^2 = c^2$", "$a^2 + c^2 = b^2$", "$a + b = c$"], "shuffle": true },
-    "solution": { "correct_choice": "$b^2 + c^2 = a^2$" },
+    "payload": {
+      "choices": [
+        "$b^2 + c^2 = a^2$",
+        "$a^2 + b^2 = c^2$",
+        "$a^2 + c^2 = b^2$",
+        "$a + b = c$"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "$b^2 + c^2 = a^2$"
+    },
     "explanation": [
-      { "kind": "what", "body": "Die Hypotenuse liegt **gegenüber vom rechten Winkel**. Der rechte Winkel ist bei $A$ — gegenüber von $A$ liegt Seite $a$. Also ist hier $a$ die Hypotenuse!" },
-      { "kind": "steps", "body": "Katheten: $b$ und $c$. Hypotenuse: $a$.\n\n$b^2 + c^2 = a^2$" },
-      { "kind": "mistake", "body": "$a^2 + b^2 = c^2$ gilt nur, wenn der rechte Winkel bei $C$ liegt. Die Formel ist kein Buchstabengesetz — es kommt darauf an, **wo** der rechte Winkel ist." },
-      { "kind": "answer", "body": "$b^2 + c^2 = a^2$" }
+      {
+        "kind": "what",
+        "body": "Die Hypotenuse liegt **gegenüber vom rechten Winkel**. Der rechte Winkel ist bei $A$ — gegenüber von $A$ liegt Seite $a$. Also ist hier $a$ die Hypotenuse!"
+      },
+      {
+        "kind": "steps",
+        "body": "Katheten: $b$ und $c$. Hypotenuse: $a$.\n\n$b^2 + c^2 = a^2$"
+      },
+      {
+        "kind": "mistake",
+        "body": "$a^2 + b^2 = c^2$ gilt nur, wenn der rechte Winkel bei $C$ liegt. Die Formel ist kein Buchstabengesetz — es kommt darauf an, **wo** der rechte Winkel ist."
+      },
+      {
+        "kind": "answer",
+        "body": "$b^2 + c^2 = a^2$"
+      }
     ],
-    "tags": ["pythagoras", "konzept"]
+    "tags": [
+      "pythagoras",
+      "konzept"
+    ],
+    "figure": {
+      "type": "rightTriangle",
+      "a": 3,
+      "b": 4,
+      "labels": {
+        "a": "a",
+        "b": "b",
+        "c": "c",
+        "A": "A",
+        "B": "B",
+        "C": "C"
+      }
+    }
   },
   {
     "id": "MATH_TRIG_SIN_GEGENKATHETE_T1",
@@ -123,22 +337,69 @@
     "difficulty": 3,
     "qtype": "SHORT",
     "prompt": "Im rechtwinkligen Dreieck ($\\gamma = 90°$) ist die Hypotenuse $c = {{c}}$ cm und $\\alpha = {{w}}°$. Berechne die Gegenkathete $a$. (Runde auf zwei Nachkommastellen.)",
-    "payload": { "answer_type": "number", "unit": "cm", "tolerance": 0.02 },
-    "solution": { "kind": "computed", "expr": "c * sin(w)", "round": 2 },
+    "payload": {
+      "answer_type": "number",
+      "unit": "cm",
+      "tolerance": 0.02
+    },
+    "solution": {
+      "kind": "computed",
+      "expr": "c * sin(w)",
+      "round": 2
+    },
     "explanation": [
-      { "kind": "what", "body": "Gegeben: Hypotenuse. Gesucht: Gegenkathete von $\\alpha$. **G**egenkathete und **H**ypotenuse → **Sinus**." },
-      { "kind": "steps", "body": "$\\sin\\alpha = \\frac{a}{c} \\Rightarrow a = c \\cdot \\sin\\alpha$\n\n$a = {{c}} \\cdot \\sin {{w}}° = {{c}} \\cdot {{= sin(w) | fixed:4}} \\approx {{= c*sin(w) | fixed:2}}$ cm" },
-      { "kind": "remember", "body": "Taschenrechner auf **DEG** — Probe: $\\sin 30° = 0{,}5$." },
-      { "kind": "answer", "body": "a ≈ {{= c*sin(w) | fixed:2}} cm" }
+      {
+        "kind": "what",
+        "body": "Gegeben: Hypotenuse. Gesucht: Gegenkathete von $\\alpha$. **G**egenkathete und **H**ypotenuse → **Sinus**."
+      },
+      {
+        "kind": "steps",
+        "body": "$\\sin\\alpha = \\frac{a}{c} \\Rightarrow a = c \\cdot \\sin\\alpha$\n\n$a = {{c}} \\cdot \\sin {{w}}° = {{c}} \\cdot {{= sin(w) | fixed:4}} \\approx {{= c*sin(w) | fixed:2}}$ cm"
+      },
+      {
+        "kind": "remember",
+        "body": "Taschenrechner auf **DEG** — Probe: $\\sin 30° = 0{,}5$."
+      },
+      {
+        "kind": "answer",
+        "body": "a ≈ {{= c*sin(w) | fixed:2}} cm"
+      }
     ],
-    "tags": ["trigonometrie", "sinus", "drill"],
+    "tags": [
+      "trigonometrie",
+      "sinus",
+      "drill"
+    ],
     "variants": {
       "enabled": true,
       "variables": {
-        "c": { "type": "int", "min": 4, "max": 25 },
-        "w": { "type": "int", "min": 20, "max": 70 }
+        "c": {
+          "type": "int",
+          "min": 4,
+          "max": 25
+        },
+        "w": {
+          "type": "int",
+          "min": 20,
+          "max": 70
+        }
       },
-      "constraints": ["w != 30", "w != 45", "w != 60"]
+      "constraints": [
+        "w != 30",
+        "w != 45",
+        "w != 60"
+      ]
+    },
+    "figure": {
+      "type": "rightTriangle",
+      "a": "{{= c*sin(w) | raw}}",
+      "b": "{{= c*cos(w) | raw}}",
+      "labels": {
+        "a": "a = ?",
+        "b": "",
+        "c": "c = {{c}} cm",
+        "alpha": "α = {{w}}°"
+      }
     }
   },
   {
@@ -148,22 +409,52 @@
     "difficulty": 3,
     "qtype": "SHORT",
     "prompt": "Im rechtwinkligen Dreieck ist die Hypotenuse $a = {{a}}$ und $\\beta = {{w}}°$. Berechne die Ankathete $c$ von $\\beta$. (Runde auf zwei Nachkommastellen.)",
-    "payload": { "answer_type": "number", "tolerance": 0.02 },
-    "solution": { "kind": "computed", "expr": "a * cos(w)", "round": 2 },
+    "payload": {
+      "answer_type": "number",
+      "tolerance": 0.02
+    },
+    "solution": {
+      "kind": "computed",
+      "expr": "a * cos(w)",
+      "round": 2
+    },
     "explanation": [
-      { "kind": "what", "body": "Gegeben: Hypotenuse. Gesucht: Ankathete von $\\beta$. **A**nkathete und **H**ypotenuse → **Kosinus**." },
-      { "kind": "steps", "body": "$\\cos\\beta = \\frac{c}{a} \\Rightarrow c = a \\cdot \\cos\\beta$\n\n$c = {{a}} \\cdot \\cos {{w}}° = {{a}} \\cdot {{= cos(w) | fixed:4}} \\approx {{= a*cos(w) | fixed:2}}$" },
-      { "kind": "answer", "body": "c ≈ {{= a*cos(w) | fixed:2}}" }
+      {
+        "kind": "what",
+        "body": "Gegeben: Hypotenuse. Gesucht: Ankathete von $\\beta$. **A**nkathete und **H**ypotenuse → **Kosinus**."
+      },
+      {
+        "kind": "steps",
+        "body": "$\\cos\\beta = \\frac{c}{a} \\Rightarrow c = a \\cdot \\cos\\beta$\n\n$c = {{a}} \\cdot \\cos {{w}}° = {{a}} \\cdot {{= cos(w) | fixed:4}} \\approx {{= a*cos(w) | fixed:2}}$"
+      },
+      {
+        "kind": "answer",
+        "body": "c ≈ {{= a*cos(w) | fixed:2}}"
+      }
     ],
-    "tags": ["trigonometrie", "kosinus", "drill"],
+    "tags": [
+      "trigonometrie",
+      "kosinus",
+      "drill"
+    ],
     "source": "Verallgemeinert nach Prüfungshefte 2027, 5.6 Aufgabe 1 (α = 90°, β = 55°, a = 8)",
     "variants": {
       "enabled": true,
       "variables": {
-        "a": { "type": "int", "min": 4, "max": 25 },
-        "w": { "type": "int", "min": 20, "max": 70 }
+        "a": {
+          "type": "int",
+          "min": 4,
+          "max": 25
+        },
+        "w": {
+          "type": "int",
+          "min": 20,
+          "max": 70
+        }
       },
-      "constraints": ["w != 60"]
+      "constraints": [
+        "w != 60"
+      ]
     }
   },
   {
@@ -173,21 +464,63 @@
     "difficulty": 3,
     "qtype": "SHORT",
     "prompt": "Im rechtwinkligen Dreieck ($\\gamma = 90°$) ist die Ankathete $b = {{b}}$ cm und $\\alpha = {{w}}°$. Berechne die Gegenkathete $a$. (Runde auf zwei Nachkommastellen.)",
-    "payload": { "answer_type": "number", "unit": "cm", "tolerance": 0.02 },
-    "solution": { "kind": "computed", "expr": "b * tan(w)", "round": 2 },
+    "payload": {
+      "answer_type": "number",
+      "unit": "cm",
+      "tolerance": 0.02
+    },
+    "solution": {
+      "kind": "computed",
+      "expr": "b * tan(w)",
+      "round": 2
+    },
     "explanation": [
-      { "kind": "what", "body": "Gegeben: Ankathete. Gesucht: Gegenkathete. Keine Hypotenuse im Spiel → **Tangens**." },
-      { "kind": "steps", "body": "$\\tan\\alpha = \\frac{a}{b} \\Rightarrow a = b \\cdot \\tan\\alpha$\n\n$a = {{b}} \\cdot \\tan {{w}}° = {{b}} \\cdot {{= tan(w) | fixed:4}} \\approx {{= b*tan(w) | fixed:2}}$ cm" },
-      { "kind": "answer", "body": "a ≈ {{= b*tan(w) | fixed:2}} cm" }
+      {
+        "kind": "what",
+        "body": "Gegeben: Ankathete. Gesucht: Gegenkathete. Keine Hypotenuse im Spiel → **Tangens**."
+      },
+      {
+        "kind": "steps",
+        "body": "$\\tan\\alpha = \\frac{a}{b} \\Rightarrow a = b \\cdot \\tan\\alpha$\n\n$a = {{b}} \\cdot \\tan {{w}}° = {{b}} \\cdot {{= tan(w) | fixed:4}} \\approx {{= b*tan(w) | fixed:2}}$ cm"
+      },
+      {
+        "kind": "answer",
+        "body": "a ≈ {{= b*tan(w) | fixed:2}} cm"
+      }
     ],
-    "tags": ["trigonometrie", "tangens", "drill"],
+    "tags": [
+      "trigonometrie",
+      "tangens",
+      "drill"
+    ],
     "variants": {
       "enabled": true,
       "variables": {
-        "b": { "type": "int", "min": 3, "max": 20 },
-        "w": { "type": "int", "min": 15, "max": 70 }
+        "b": {
+          "type": "int",
+          "min": 3,
+          "max": 20
+        },
+        "w": {
+          "type": "int",
+          "min": 15,
+          "max": 70
+        }
       },
-      "constraints": ["w != 45"]
+      "constraints": [
+        "w != 45"
+      ]
+    },
+    "figure": {
+      "type": "rightTriangle",
+      "a": "{{= b*tan(w) | raw}}",
+      "b": "{{= b | raw}}",
+      "labels": {
+        "a": "a = ?",
+        "b": "b = {{b}} cm",
+        "c": "",
+        "alpha": "α = {{w}}°"
+      }
     }
   },
   {
@@ -197,21 +530,64 @@
     "difficulty": 4,
     "qtype": "SHORT",
     "prompt": "Im rechtwinkligen Dreieck ($\\gamma = 90°$) ist die Gegenkathete $a = {{a}}$ cm und die Ankathete $b = {{b}}$ cm. Berechne den Winkel $\\alpha$. (Runde auf eine Nachkommastelle.)",
-    "payload": { "answer_type": "number", "unit": "°", "tolerance": 0.15 },
-    "solution": { "kind": "computed", "expr": "atan(a / b)", "round": 1 },
+    "payload": {
+      "answer_type": "number",
+      "unit": "°",
+      "tolerance": 0.15
+    },
+    "solution": {
+      "kind": "computed",
+      "expr": "atan(a / b)",
+      "round": 1
+    },
     "explanation": [
-      { "kind": "what", "body": "Gegenkathete und Ankathete → **Tangens**. Der Winkel ist gesucht → **Umkehrfunktion** $\\tan^{-1}$ (auf dem Taschenrechner: SHIFT/2nd + tan)." },
-      { "kind": "steps", "body": "$\\tan\\alpha = \\frac{a}{b} = \\frac{{{a}}}{{{b}}} = {{= a/b | fixed:4}}$\n\n$\\alpha = \\tan^{-1}({{= a/b | fixed:4}}) \\approx {{= atan(a/b) | fixed:1}}°$" },
-      { "kind": "answer", "body": "α ≈ {{= atan(a/b) | fixed:1}}°" }
+      {
+        "kind": "what",
+        "body": "Gegenkathete und Ankathete → **Tangens**. Der Winkel ist gesucht → **Umkehrfunktion** $\\tan^{-1}$ (auf dem Taschenrechner: SHIFT/2nd + tan)."
+      },
+      {
+        "kind": "steps",
+        "body": "$\\tan\\alpha = \\frac{a}{b} = \\frac{{{a}}}{{{b}}} = {{= a/b | fixed:4}}$\n\n$\\alpha = \\tan^{-1}({{= a/b | fixed:4}}) \\approx {{= atan(a/b) | fixed:1}}°$"
+      },
+      {
+        "kind": "answer",
+        "body": "α ≈ {{= atan(a/b) | fixed:1}}°"
+      }
     ],
-    "tags": ["trigonometrie", "winkel", "tangens", "drill"],
+    "tags": [
+      "trigonometrie",
+      "winkel",
+      "tangens",
+      "drill"
+    ],
     "variants": {
       "enabled": true,
       "variables": {
-        "a": { "type": "int", "min": 2, "max": 20 },
-        "b": { "type": "int", "min": 2, "max": 20 }
+        "a": {
+          "type": "int",
+          "min": 2,
+          "max": 20
+        },
+        "b": {
+          "type": "int",
+          "min": 2,
+          "max": 20
+        }
       },
-      "constraints": ["a != b"]
+      "constraints": [
+        "a != b"
+      ]
+    },
+    "figure": {
+      "type": "rightTriangle",
+      "a": "{{= a | raw}}",
+      "b": "{{= b | raw}}",
+      "labels": {
+        "a": "a = {{a}} cm",
+        "b": "b = {{b}} cm",
+        "c": "",
+        "alpha": "α = ?"
+      }
     }
   },
   {
@@ -221,24 +597,84 @@
     "difficulty": 4,
     "qtype": "SHORT",
     "prompt": "In einem Dreieck sind $\\alpha = {{al}}°$, $\\beta = {{be}}°$ und $b = {{b}}$ cm. Berechne die Seite $a$ mit dem Sinussatz. (Runde auf zwei Nachkommastellen.)",
-    "payload": { "answer_type": "number", "unit": "cm", "tolerance": 0.03 },
-    "solution": { "kind": "computed", "expr": "sin(al) / sin(be) * b", "round": 2 },
+    "payload": {
+      "answer_type": "number",
+      "unit": "cm",
+      "tolerance": 0.03
+    },
+    "solution": {
+      "kind": "computed",
+      "expr": "sin(al) / sin(be) * b",
+      "round": 2
+    },
     "explanation": [
-      { "kind": "formula", "body": "Sinussatz (Formelblatt): $\\frac{a}{\\sin\\alpha} = \\frac{b}{\\sin\\beta}$ — kein rechter Winkel nötig." },
-      { "kind": "steps", "body": "$a = \\frac{\\sin\\alpha}{\\sin\\beta} \\cdot b = \\frac{\\sin {{al}}°}{\\sin {{be}}°} \\cdot {{b}} = \\frac{{{= sin(al) | fixed:4}}}{{{= sin(be) | fixed:4}}} \\cdot {{b}} \\approx {{= sin(al)/sin(be)*b | fixed:2}}$ cm" },
-      { "kind": "remember", "body": "Sinussatz, wenn ein **Paar** aus Seite und Gegenwinkel bekannt ist ($b$ und $\\beta$)." },
-      { "kind": "answer", "body": "a ≈ {{= sin(al)/sin(be)*b | fixed:2}} cm" }
+      {
+        "kind": "formula",
+        "body": "Sinussatz (Formelblatt): $\\frac{a}{\\sin\\alpha} = \\frac{b}{\\sin\\beta}$ — kein rechter Winkel nötig."
+      },
+      {
+        "kind": "steps",
+        "body": "$a = \\frac{\\sin\\alpha}{\\sin\\beta} \\cdot b = \\frac{\\sin {{al}}°}{\\sin {{be}}°} \\cdot {{b}} = \\frac{{{= sin(al) | fixed:4}}}{{{= sin(be) | fixed:4}}} \\cdot {{b}} \\approx {{= sin(al)/sin(be)*b | fixed:2}}$ cm"
+      },
+      {
+        "kind": "remember",
+        "body": "Sinussatz, wenn ein **Paar** aus Seite und Gegenwinkel bekannt ist ($b$ und $\\beta$)."
+      },
+      {
+        "kind": "answer",
+        "body": "a ≈ {{= sin(al)/sin(be)*b | fixed:2}} cm"
+      }
     ],
-    "tags": ["trigonometrie", "sinussatz", "drill"],
+    "tags": [
+      "trigonometrie",
+      "sinussatz",
+      "drill"
+    ],
     "source": "Verallgemeinert nach Prüfungshefte 2027, 5.6 Aufgabe 2",
     "variants": {
       "enabled": true,
       "variables": {
-        "al": { "type": "int", "min": 30, "max": 110 },
-        "be": { "type": "int", "min": 25, "max": 80 },
-        "b": { "type": "choice", "values": [3, 4, 4.3, 5, 5.5, 6, 7, 8, 9.5, 12] }
+        "al": {
+          "type": "int",
+          "min": 30,
+          "max": 110
+        },
+        "be": {
+          "type": "int",
+          "min": 25,
+          "max": 80
+        },
+        "b": {
+          "type": "choice",
+          "values": [
+            3,
+            4,
+            4.3,
+            5,
+            5.5,
+            6,
+            7,
+            8,
+            9.5,
+            12
+          ]
+        }
       },
-      "constraints": ["al + be < 165", "al != be"]
+      "constraints": [
+        "al + be < 165",
+        "al != be"
+      ]
+    },
+    "figure": {
+      "type": "triangle",
+      "alpha": "{{= al | raw}}",
+      "beta": "{{= be | raw}}",
+      "labels": {
+        "alpha": "α = {{al}}°",
+        "beta": "β = {{be}}°",
+        "b": "b = {{b}}",
+        "a": "a = ?"
+      }
     }
   },
   {
@@ -248,24 +684,74 @@
     "difficulty": 5,
     "qtype": "SHORT",
     "prompt": "In einem Dreieck sind $b = {{b}}$ cm, $c = {{c}}$ cm und der eingeschlossene Winkel $\\alpha = {{al}}°$. Berechne die Seite $a$ mit dem Kosinussatz. (Runde auf zwei Nachkommastellen.)",
-    "payload": { "answer_type": "number", "unit": "cm", "tolerance": 0.03 },
-    "solution": { "kind": "computed", "expr": "sqrt(b^2 + c^2 - 2*b*c*cos(al))", "round": 2 },
+    "payload": {
+      "answer_type": "number",
+      "unit": "cm",
+      "tolerance": 0.03
+    },
+    "solution": {
+      "kind": "computed",
+      "expr": "sqrt(b^2 + c^2 - 2*b*c*cos(al))",
+      "round": 2
+    },
     "explanation": [
-      { "kind": "formula", "body": "Kosinussatz (Formelblatt): $a^2 = b^2 + c^2 - 2bc \\cdot \\cos\\alpha$ — der Pythagoras für Dreiecke ohne rechten Winkel." },
-      { "kind": "steps", "body": "$a^2 = {{b}}^2 + {{c}}^2 - 2 \\cdot {{b}} \\cdot {{c}} \\cdot \\cos {{al}}°$\n\n$= {{= b*b}} + {{= c*c}} - {{= 2*b*c}} \\cdot {{= cos(al) | fixed:4}} \\approx {{= b*b + c*c - 2*b*c*cos(al) | fixed:2}}$\n\n$a \\approx \\sqrt{{{= b*b + c*c - 2*b*c*cos(al) | fixed:2}}} \\approx {{= sqrt(b^2 + c^2 - 2*b*c*cos(al)) | fixed:2}}$ cm" },
-      { "kind": "remember", "body": "Bei $\\alpha = 90°$ ist $\\cos\\alpha = 0$ — dann bleibt genau der Satz des Pythagoras übrig." },
-      { "kind": "answer", "body": "a ≈ {{= sqrt(b^2 + c^2 - 2*b*c*cos(al)) | fixed:2}} cm" }
+      {
+        "kind": "formula",
+        "body": "Kosinussatz (Formelblatt): $a^2 = b^2 + c^2 - 2bc \\cdot \\cos\\alpha$ — der Pythagoras für Dreiecke ohne rechten Winkel."
+      },
+      {
+        "kind": "steps",
+        "body": "$a^2 = {{b}}^2 + {{c}}^2 - 2 \\cdot {{b}} \\cdot {{c}} \\cdot \\cos {{al}}°$\n\n$= {{= b*b}} + {{= c*c}} - ({{= 2*b*c*cos(al) | fixed:2}}) \\approx {{= b*b + c*c - 2*b*c*cos(al) | fixed:2}}$\n\n$a \\approx \\sqrt{{{= b*b + c*c - 2*b*c*cos(al) | fixed:2}}} \\approx {{= sqrt(b^2 + c^2 - 2*b*c*cos(al)) | fixed:2}}$ cm\n\n(Bei einem stumpfen Winkel ist $\\cos\\alpha$ negativ — dann wird die Klammer negativ und $a$ größer als bei Pythagoras.)"
+      },
+      {
+        "kind": "remember",
+        "body": "Bei $\\alpha = 90°$ ist $\\cos\\alpha = 0$ — dann bleibt genau der Satz des Pythagoras übrig."
+      },
+      {
+        "kind": "answer",
+        "body": "a ≈ {{= sqrt(b^2 + c^2 - 2*b*c*cos(al)) | fixed:2}} cm"
+      }
     ],
-    "tags": ["trigonometrie", "kosinussatz", "drill"],
+    "tags": [
+      "trigonometrie",
+      "kosinussatz",
+      "drill"
+    ],
     "source": "Verallgemeinert nach Prüfungshefte 2027, 5.6 Aufgabe 3",
     "variants": {
       "enabled": true,
       "variables": {
-        "b": { "type": "int", "min": 3, "max": 12 },
-        "c": { "type": "int", "min": 3, "max": 12 },
-        "al": { "type": "int", "min": 35, "max": 130 }
+        "b": {
+          "type": "int",
+          "min": 3,
+          "max": 12
+        },
+        "c": {
+          "type": "int",
+          "min": 3,
+          "max": 12
+        },
+        "al": {
+          "type": "int",
+          "min": 35,
+          "max": 130
+        }
       },
-      "constraints": ["b != c", "al != 90"]
+      "constraints": [
+        "b != c",
+        "al != 90"
+      ]
+    },
+    "figure": {
+      "type": "triangle",
+      "alpha": "{{= al | raw}}",
+      "beta": "{{= acos((c - b*cos(al)) / sqrt(b*b + c*c - 2*b*c*cos(al))) | raw}}",
+      "labels": {
+        "alpha": "α = {{al}}°",
+        "b": "b = {{b}}",
+        "c": "c = {{c}}",
+        "a": "a = ?"
+      }
     }
   },
   {
@@ -275,14 +761,48 @@
     "difficulty": 2,
     "qtype": "MCQ",
     "prompt": "Im rechtwinkligen Dreieck $ABC$ mit $\\gamma = 90°$: Was ist $\\sin\\alpha$?",
-    "payload": { "choices": ["$\\frac{a}{c}$ (Gegenkathete durch Hypotenuse)", "$\\frac{b}{c}$ (Ankathete durch Hypotenuse)", "$\\frac{a}{b}$ (Gegenkathete durch Ankathete)", "$\\frac{c}{a}$ (Hypotenuse durch Gegenkathete)"], "shuffle": true },
-    "solution": { "correct_choice": "$\\frac{a}{c}$ (Gegenkathete durch Hypotenuse)" },
+    "payload": {
+      "choices": [
+        "$\\frac{a}{c}$ (Gegenkathete durch Hypotenuse)",
+        "$\\frac{b}{c}$ (Ankathete durch Hypotenuse)",
+        "$\\frac{a}{b}$ (Gegenkathete durch Ankathete)",
+        "$\\frac{c}{a}$ (Hypotenuse durch Gegenkathete)"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "$\\frac{a}{c}$ (Gegenkathete durch Hypotenuse)"
+    },
     "explanation": [
-      { "kind": "steps", "body": "Bei $\\gamma = 90°$ ist $c$ die Hypotenuse. Seite $a$ liegt **gegenüber** von $\\alpha$ → Gegenkathete. Seite $b$ liegt **an** $\\alpha$ → Ankathete.\n\n$\\sin\\alpha = \\frac{\\text{Gegenkathete}}{\\text{Hypotenuse}} = \\frac{a}{c}$" },
-      { "kind": "remember", "body": "**GAGA HüHnerHof AG**: sin = G/H, cos = A/H, tan = G/A." },
-      { "kind": "answer", "body": "$\\sin\\alpha = \\frac{a}{c}$" }
+      {
+        "kind": "steps",
+        "body": "Bei $\\gamma = 90°$ ist $c$ die Hypotenuse. Seite $a$ liegt **gegenüber** von $\\alpha$ → Gegenkathete. Seite $b$ liegt **an** $\\alpha$ → Ankathete.\n\n$\\sin\\alpha = \\frac{\\text{Gegenkathete}}{\\text{Hypotenuse}} = \\frac{a}{c}$"
+      },
+      {
+        "kind": "remember",
+        "body": "**GAGA HüHnerHof AG**: sin = G/H, cos = A/H, tan = G/A."
+      },
+      {
+        "kind": "answer",
+        "body": "$\\sin\\alpha = \\frac{a}{c}$"
+      }
     ],
-    "tags": ["trigonometrie", "konzept"],
-    "source": "Nach Prüfungshefte 2027, 5.6 Zusammenfassung"
+    "tags": [
+      "trigonometrie",
+      "konzept"
+    ],
+    "source": "Nach Prüfungshefte 2027, 5.6 Zusammenfassung",
+    "figure": {
+      "type": "rightTriangle",
+      "a": 3,
+      "b": 4,
+      "labels": {
+        "a": "a",
+        "b": "b",
+        "c": "c",
+        "alpha": "α",
+        "beta": "β"
+      }
+    }
   }
 ]

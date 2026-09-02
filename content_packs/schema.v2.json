@@ -22,9 +22,17 @@
       "additionalProperties": false,
       "required": ["kind", "body"],
       "properties": {
-        "kind": { "type": "string", "enum": ["what", "terms", "formula", "steps", "mistake", "remember", "answer", "example", "text"] },
+        "kind": { "type": "string", "enum": ["what", "terms", "formula", "steps", "mistake", "remember", "answer", "example", "widget", "text"] },
         "title": { "type": "string" },
-        "body": { "type": "string" }
+        "body": { "type": "string" },
+        "figure": { "$ref": "#/definitions/figure" }
+      }
+    },
+    "figure": {
+      "type": "object",
+      "required": ["type"],
+      "properties": {
+        "type": { "type": "string", "enum": ["rightTriangle", "triangle", "rectangle", "parallelogram", "trapezoid", "circle", "coordinateSystem", "barChart", "pieChart", "treeDiagram", "box", "cylinder"] }
       }
     },
     "explanation": {
@@ -80,7 +88,7 @@
         "tags": { "type": "array", "items": { "type": "string", "minLength": 1 } },
         "variants": { "$ref": "#/definitions/variants" },
         "source": { "type": "string" },
-        "figure": { "type": "string" }
+        "figure": { "oneOf": [{ "type": "string" }, { "$ref": "#/definitions/figure" }] }
       }
     },
     "lesson": {

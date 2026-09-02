@@ -45,10 +45,15 @@ export interface ContentSection {
     | "remember" // Merke
     | "answer" // Antwort
     | "example" // Beispiel (lessons)
+    | "widget" // interactive explorer (lessons); body = widget id
     | "text";
   title?: string;
   /** Rich text: paragraphs, "- " bullets, **bold**, $inline$ and $$display$$ math, {{templates}}. */
   body: string;
+  /** Optional generated figure shown under the body (specs may contain templates). */
+  figure?: FigureSpec;
+  /** Rendered SVG of `figure` (filled in when a question/lesson is rendered). */
+  figureSvg?: string;
 }
 
 export type Explanation = string | ContentSection[];
@@ -114,9 +119,11 @@ export interface Question {
   variants?: VariantSpec;
   /** Attribution, e.g. "MSA 2023 Aufgabe 2" or "iMINT Prozentrechnung Karte 5" */
   source?: string;
-  /** Inline SVG (data) for diagrams — no page scans. */
-  figure?: string;
+  /** Figure: inline SVG string, or a generated-figure spec (see core/figures.ts) whose values may be templates. */
+  figure?: string | FigureSpec;
 }
+
+export type FigureSpec = { type: string } & Record<string, unknown>;
 
 /** A concrete, fully rendered question instance. */
 export interface RenderedQuestion {
