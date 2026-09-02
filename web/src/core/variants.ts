@@ -282,6 +282,7 @@ export function renderQuestion(question: Question, vars: VarValues, variantId: s
     explanation,
     vars,
     source: question.source,
+    tags: question.tags,
     figure: question.figure ? renderFigureSpec(question.figure, vars) : undefined,
   };
 }

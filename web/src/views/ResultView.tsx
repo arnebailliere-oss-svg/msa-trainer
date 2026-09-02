@@ -2,6 +2,7 @@ import { useEffect, useMemo } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useApp } from "@/app/state";
 import type { SessionStats, Subject, TrainingMode } from "@/core/types";
+import { MathText } from "@/ui/MathText";
 import { Button, Chip, Ring } from "@/ui/primitives";
 
 interface ResultState {
@@ -26,6 +27,8 @@ export function ResultView() {
   const name = (id: string) => content.topicById(id)?.name ?? id;
   const again = () => nav(`/session/${mode}/${subject}${topicId ? `/${topicId}` : ""}`);
   const headline = pct >= 0.9 ? "Stark! 🏆" : pct >= 0.7 ? "Gut gemacht! 💪" : pct >= 0.5 ? "Weiter so! 🚀" : "Dranbleiben! 🌱";
+  const items = stats.items ?? [];
+  const avgSec = items.length ? Math.round(stats.totalTimeMs / items.length / 1000) : 0;
 
   return (
     <div className="mx-auto max-w-xl px-4 py-10 text-center">
@@ -38,7 +41,9 @@ export function ResultView() {
         <h1 className="mt-5 text-3xl font-extrabold">{headline}</h1>
         <p className="mt-1 text-ink-2">
           {stats.correctCount} von {stats.totalQuestions} richtig · {minutes < 1 ? "unter 1 Minute" : `${minutes} Min.`}
+          {mode === "MSA" && items.length > 0 && ` · Ø ${avgSec} s pro Aufgabe`}
         </p>
+        {mode === "MSA" && <p className="mt-2 text-sm text-ink-3">Prüfungs-Check: Originalaufgaben aus MSA 2023–2025. Schau dir unten jede Aufgabe an, die nicht geklappt hat.</p>}
       </div>
 
       {(stats.strengthenedTopics.length > 0 || stats.weakTopics.length > 0) && (
@@ -67,6 +72,29 @@ export function ResultView() {
               </div>
             </div>
           )}
+        </div>
+      )}
+
+      {items.length > 0 && (
+        <div className="glass mt-6 p-5 text-left anim-pop">
+          <div className="mb-2 text-sm font-bold text-ink-2">Deine Aufgaben</div>
+          <ol className="divide-y divide-line">
+            {items.map((it, i) => (
+              <li key={i} className="flex items-start gap-3 py-2.5">
+                <span className={`mt-0.5 grid h-6 w-6 shrink-0 place-items-center rounded-full text-xs font-bold ${it.isCorrect ? "bg-green text-[#062b1c]" : "bg-red text-white"}`} aria-label={it.isCorrect ? "richtig" : "falsch"}>
+                  {it.isCorrect ? "✓" : "✗"}
+                </span>
+                <div className="min-w-0 flex-1">
+                  <MathText text={it.prompt} className="line-clamp-2 text-sm" />
+                  <div className="mt-0.5 text-xs text-ink-3">
+                    {name(it.topicId)} · {Math.round(it.responseTimeMs / 1000)} s{it.inRepair ? " · Reparatur" : ""}
+                    {it.source ? ` · ${it.source}` : ""}
+                  </div>
+                  {!it.isCorrect && <MathText text={`Richtig: **${it.correctAnswerText.replace(/\n/g, ", ")}**`} className="mt-0.5 text-xs text-ink-2" />}
+                </div>
+              </li>
+            ))}
+          </ol>
         </div>
       )}
 

@@ -11,7 +11,7 @@ import type { ProgressStore } from "./progress";
 import { randomRng, type Rng } from "./rng";
 import { activateRepair, isTransferQuestion, nextRepairQuestion, onRepairAnswer } from "./repair";
 import { selectDifficulty, selectTopics } from "./selection";
-import type { Attempt, AttemptResult, Question, RenderedQuestion, RepairQueue, SessionStats, Subject, TrainingMode } from "./types";
+import type { Attempt, AttemptResult, Question, RenderedQuestion, RepairQueue, SessionItem, SessionStats, Subject, TrainingMode } from "./types";
 import { renderVariant, todayKey } from "./variants";
 
 export type SessionState = "IDLE" | "QUESTION" | "FEEDBACK" | "COMPLETED";
@@ -43,6 +43,7 @@ export class SessionController {
   private totalTimeMs = 0;
   private topicsPracticed = new Set<string>();
   private asked: string[] = [];
+  private items: SessionItem[] = [];
   private lastResult: AttemptResult | null = null;
 
   constructor(private readonly cfg: SessionConfig) {
@@ -80,6 +81,18 @@ export class SessionController {
     const now = this.now();
     const responseTimeMs = Math.max(0, now.getTime() - this.questionStart);
     const evaluation = evaluate(q, userAnswer);
+    this.items.push({
+      questionId: q.baseQuestionId,
+      topicId: q.topicId,
+      prompt: q.prompt,
+      difficulty: q.difficulty,
+      isCorrect: evaluation.isCorrect,
+      responseTimeMs,
+      userAnswer: evaluation.normalizedAnswer,
+      correctAnswerText: evaluation.correctAnswerText,
+      source: q.source,
+      inRepair: this.repair !== null,
+    });
 
     // Persist attempt first, then mastery (ALGORITHM.md §9).
     const attempt: Attempt = {
@@ -169,6 +182,7 @@ export class SessionController {
       topicsPracticed: [...this.topicsPracticed],
       strengthenedTopics: strengthened,
       weakTopics: weak,
+      items: [...this.items],
     };
   }
 
@@ -211,6 +225,10 @@ export class SessionController {
       pool = all.filter((q) => q.tags.includes("exam"));
       if (pool.length < this.cfg.questionCount) pool = all.filter((q) => q.difficulty >= floor);
       if (pool.length === 0) pool = all;
+      // Like the real exam: Basisaufgaben (hilfsmittelfrei) first, then the Sternchen-/Sachaufgaben.
+      const basis = pool.filter((q) => q.tags.includes("basisaufgabe"));
+      const rest = pool.filter((q) => !q.tags.includes("basisaufgabe"));
+      if (basis.length > 0 && rest.length > 0) pool = this.answered < Math.round(this.cfg.questionCount * 0.4) ? basis : rest;
     } else {
       const topics = selectTopics(index, store, userId, subject, mode, 5, this.rng, this.now());
       if (topics.length === 0) return undefined;

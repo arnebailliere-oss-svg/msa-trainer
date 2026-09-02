@@ -39,6 +39,8 @@ describe("SessionController", () => {
     const stats = session.stats();
     expect(stats.totalQuestions).toBe(4);
     expect(stats.correctCount).toBe(4);
+    expect(stats.items).toHaveLength(4);
+    expect(stats.items.every((it) => it.isCorrect && it.prompt.length > 0 && !it.inRepair)).toBe(true);
     expect(store.attempts("u")).toHaveLength(4);
     expect(store.allMastery("u").length).toBeGreaterThan(0);
   });

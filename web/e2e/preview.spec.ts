@@ -35,6 +35,20 @@ test("figure previews", async ({ page }) => {
   }
 });
 
+/** Legacy items that received generated figures in E4-18. */
+const LEGACY_IDS = ["MATH_GEO_TRIG_004", "MATH_GEO_TRIG_006", "MATH_GEO_TRIG_007", "MATH_GEO_AREA_BASIC_003", "MATH_VOL_ZYLINDER_001", "MATH_GEO_VOLUME_001", "MATH_FUNC_QUAD_003", "MATH_DATA_PROB_005", "MATH_DATA_CHARTS_MSA_001", "MATH_GEO_CIRCLE_004"];
+
+test("legacy figure previews", async ({ page }) => {
+  test.setTimeout(120_000);
+  await page.emulateMedia({ colorScheme: "dark" });
+  for (const id of LEGACY_IDS) {
+    await page.goto(`${DEV}/#/preview/${id}`);
+    await page.getByText("Erklärung").waitFor();
+    await page.waitForTimeout(400);
+    await page.screenshot({ path: `e2e/screenshots/legacy-${id}.png`, fullPage: true });
+  }
+});
+
 test("lesson widgets", async ({ page }) => {
   await page.emulateMedia({ colorScheme: "dark" });
   await page.goto(`${DEV}/#/`);

@@ -1415,7 +1415,17 @@
     "tags": [
       "MSA",
       "linear_function"
-    ]
+    ],
+    "figure": {
+      "type": "coordinateSystem",
+      "lines": [
+        {
+          "m": 2,
+          "n": -3,
+          "label": "y = 2x − 3"
+        }
+      ]
+    }
   },
   {
     "id": "MATH_FUNC_LINEAR_FORM_002",
@@ -1467,7 +1477,19 @@
       "MSA",
       "linear_function",
       "y-intercept"
-    ]
+    ],
+    "figure": {
+      "type": "coordinateSystem",
+      "ymin": -3,
+      "ymax": 8,
+      "lines": [
+        {
+          "m": 3,
+          "n": 5,
+          "label": "y = 3x + 5"
+        }
+      ]
+    }
   },
   {
     "id": "MATH_FUNC_LINEAR_FORM_003",
@@ -1518,7 +1540,19 @@
       "MSA",
       "linear_function",
       "evaluate"
-    ]
+    ],
+    "figure": {
+      "type": "coordinateSystem",
+      "ymin": -3,
+      "ymax": 8,
+      "lines": [
+        {
+          "m": 2,
+          "n": 1,
+          "label": "y = 2x + 1"
+        }
+      ]
+    }
   },
   {
     "id": "MATH_GEO_AREA_BASIC_001",
@@ -1569,7 +1603,16 @@
       "MSA",
       "geometry",
       "area"
-    ]
+    ],
+    "figure": {
+      "type": "rectangle",
+      "a": 8,
+      "b": 5,
+      "labels": {
+        "a": "a = 8 cm",
+        "b": "b = 5 cm"
+      }
+    }
   },
   {
     "id": "MATH_GEO_AREA_BASIC_002",
@@ -1631,7 +1674,16 @@
       "MSA",
       "geometry",
       "perimeter"
-    ]
+    ],
+    "figure": {
+      "type": "rectangle",
+      "a": 6,
+      "b": 4,
+      "labels": {
+        "a": "a = 6 cm",
+        "b": "b = 4 cm"
+      }
+    }
   },
   {
     "id": "MATH_GEO_AREA_BASIC_003",
@@ -1687,7 +1739,16 @@
       "MSA",
       "geometry",
       "triangle"
-    ]
+    ],
+    "figure": {
+      "type": "triangle",
+      "alpha": 50.2,
+      "beta": 50.2,
+      "labels": {
+        "c": "g = 10 cm",
+        "h": "h = 6 cm"
+      }
+    }
   },
   {
     "id": "MATH_GEO_CIRCLE_001",
@@ -1750,7 +1811,13 @@
       "geometry",
       "circle",
       "circumference"
-    ]
+    ],
+    "figure": {
+      "type": "circle",
+      "labels": {
+        "r": "r = 7 cm"
+      }
+    }
   },
   {
     "id": "MATH_GEO_CIRCLE_002",
@@ -1808,7 +1875,13 @@
       "geometry",
       "circle",
       "area"
-    ]
+    ],
+    "figure": {
+      "type": "circle",
+      "labels": {
+        "r": "r = 5 cm"
+      }
+    }
   },
   {
     "id": "MATH_GEO_PYTH_001",
@@ -1864,7 +1937,17 @@
     "tags": [
       "MSA",
       "pythagoras"
-    ]
+    ],
+    "figure": {
+      "type": "rightTriangle",
+      "a": 6,
+      "b": 8,
+      "labels": {
+        "a": "a = 6 cm",
+        "b": "b = 8 cm",
+        "c": "c = ?"
+      }
+    }
   },
   {
     "id": "MATH_GEO_PYTH_002",
@@ -1919,7 +2002,17 @@
     "tags": [
       "MSA",
       "pythagoras"
-    ]
+    ],
+    "figure": {
+      "type": "rightTriangle",
+      "a": 5,
+      "b": 12,
+      "labels": {
+        "a": "a = 5 cm",
+        "b": "b = ?",
+        "c": "c = 13 cm"
+      }
+    }
   },
   {
     "id": "MATH_GEO_VOLUME_001",
@@ -1975,7 +2068,18 @@
       "MSA",
       "geometry",
       "volume"
-    ]
+    ],
+    "figure": {
+      "type": "box",
+      "a": 4,
+      "b": 3,
+      "c": 5,
+      "labels": {
+        "a": "a = 4 cm",
+        "b": "b = 3 cm",
+        "c": "c = 5 cm"
+      }
+    }
   },
   {
     "id": "MATH_GEO_VOLUME_002",
@@ -2033,7 +2137,16 @@
       "geometry",
       "volume",
       "cylinder"
-    ]
+    ],
+    "figure": {
+      "type": "cylinder",
+      "r": 3,
+      "h": 10,
+      "labels": {
+        "r": "r = 3 cm",
+        "h": "h = 10 cm"
+      }
+    }
   },
   {
     "id": "MATH_DATA_STATS_001",
@@ -2147,62 +2260,6 @@
       "MSA",
       "statistics",
       "median"
-    ]
-  },
-  {
-    "id": "MATH_DATA_PROB_001",
-    "subject": "MATH",
-    "topicId": "MATH_DATA_PROB",
-    "difficulty": 2,
-    "qtype": "MCQ",
-    "prompt": "In einem Beutel sind 3 rote und 7 blaue Kugeln. Wie groß ist die Wahrscheinlichkeit, eine rote Kugel zu ziehen?",
-    "payload": {
-      "choices": [
-        "30%",
-        "70%",
-        "3%",
-        "7%"
-      ],
-      "shuffle": true
-    },
-    "solution": {
-      "correct_choice": "30%"
-    },
-    "explanation": [
-      {
-        "kind": "what",
-        "title": "Was ist das",
-        "body": "Wahrscheinlichkeit - wie 'wahrscheinlich' ist ein Ereignis?"
-      },
-      {
-        "kind": "terms",
-        "title": "Die begriffe",
-        "body": "• Günstige Ereignisse = die, die wir wollen (3 rote)\n• Mögliche Ereignisse = alle zusammen (3+7 = 10)"
-      },
-      {
-        "kind": "formula",
-        "title": "Die formel",
-        "body": "P = günstige ÷ mögliche"
-      },
-      {
-        "kind": "steps",
-        "title": "Rechnung",
-        "body": "1. Günstig: 3 rote Kugeln\n2. Möglich: 3 + 7 = 10 Kugeln\n3. P = 3/10 = 0,3 = 30%"
-      },
-      {
-        "kind": "text",
-        "title": "Vorstellung",
-        "body": "Von 10 Kugeln sind 3 rot.\nAlso ist jede 3. bis 4. Kugel rot.\n= 30% Chance"
-      },
-      {
-        "kind": "answer",
-        "title": "Antwort",
-        "body": "30%"
-      }
-    ],
-    "tags": [
-      "MSA",
-      "probability"
     ]
   },
   {
@@ -2525,7 +2582,7 @@
     "tags": [
       "MSA",
       "percent",
-      "exam",
+      "altpruefung",
       "2016"
     ],
     "source": "MSA 2016 N Basisaufgaben"
@@ -2583,7 +2640,7 @@
     "tags": [
       "MSA",
       "interest",
-      "exam",
+      "altpruefung",
       "2015"
     ],
     "source": "MSA 2015 Basisaufgaben"
@@ -2641,7 +2698,7 @@
     "tags": [
       "MSA",
       "interest",
-      "exam",
+      "altpruefung",
       "2014"
     ],
     "source": "MSA 2014 Basisaufgaben"
@@ -2699,7 +2756,7 @@
     "tags": [
       "MSA",
       "percent",
-      "exam",
+      "altpruefung",
       "2018"
     ],
     "source": "MSA 2018 Basisaufgaben"
@@ -2763,7 +2820,7 @@
       "MSA",
       "percent",
       "grundwert",
-      "exam",
+      "altpruefung",
       "2014"
     ],
     "source": "MSA 2014 N Basisaufgaben"
@@ -2827,7 +2884,7 @@
       "MSA",
       "percent",
       "grundwert",
-      "exam",
+      "altpruefung",
       "2011"
     ],
     "source": "MSA 2011 Basisaufgaben"
@@ -2887,7 +2944,7 @@
       "MSA",
       "statistics",
       "relative_frequency",
-      "exam",
+      "altpruefung",
       "2014"
     ],
     "source": "MSA 2014 N Basisaufgaben"
@@ -2941,7 +2998,7 @@
       "MSA",
       "percent",
       "fractions",
-      "exam",
+      "altpruefung",
       "2009"
     ],
     "source": "MSA 2009 N Basisaufgaben"
@@ -3016,7 +3073,7 @@
       "MSA",
       "percent",
       "understanding",
-      "exam",
+      "altpruefung",
       "2020"
     ],
     "source": "MSA 2020 Basisaufgaben"
@@ -3075,7 +3132,7 @@
     "tags": [
       "MSA",
       "percent",
-      "exam",
+      "altpruefung",
       "2018"
     ],
     "source": "MSA 2018 A7"
@@ -3134,7 +3191,7 @@
     "tags": [
       "MSA",
       "percent",
-      "exam",
+      "altpruefung",
       "2011"
     ],
     "source": "MSA 2011 N A7"
@@ -3185,7 +3242,19 @@
       "trigonometry",
       "sin"
     ],
-    "source": "MSA 2010 Basisaufgabe"
+    "source": "MSA 2010 Basisaufgabe",
+    "figure": {
+      "type": "rightTriangle",
+      "a": 4,
+      "b": 3,
+      "labels": {
+        "a": "a",
+        "b": "b",
+        "c": "c",
+        "alpha": "α",
+        "beta": "β"
+      }
+    }
   },
   {
     "id": "MATH_TRIG_COS_001",
@@ -3233,7 +3302,19 @@
       "trigonometry",
       "cos"
     ],
-    "source": "MSA 2013 Basisaufgaben"
+    "source": "MSA 2013 Basisaufgaben",
+    "figure": {
+      "type": "rightTriangle",
+      "a": 4,
+      "b": 3,
+      "labels": {
+        "a": "a",
+        "b": "b",
+        "c": "c",
+        "alpha": "α",
+        "beta": "β"
+      }
+    }
   },
   {
     "id": "MATH_TRIG_TAN_001",
@@ -3285,7 +3366,19 @@
       "MSA",
       "trigonometry",
       "tan"
-    ]
+    ],
+    "figure": {
+      "type": "rightTriangle",
+      "a": 4,
+      "b": 3,
+      "labels": {
+        "a": "a",
+        "b": "b",
+        "c": "c",
+        "alpha": "α",
+        "beta": "β"
+      }
+    }
   },
   {
     "id": "MATH_TRIG_CALC_SIDE_001",
@@ -3333,7 +3426,17 @@
       "sin",
       "calculate"
     ],
-    "source": "MSA 2020 Basisaufgabe"
+    "source": "MSA 2020 Basisaufgabe",
+    "figure": {
+      "type": "rightTriangle",
+      "a": 5,
+      "b": 8.66,
+      "labels": {
+        "a": "a = ?",
+        "c": "c = 10 cm",
+        "alpha": "30°"
+      }
+    }
   },
   {
     "id": "MATH_TRIG_CALC_SIDE_002",
@@ -3380,7 +3483,17 @@
       "trigonometry",
       "cos",
       "calculate"
-    ]
+    ],
+    "figure": {
+      "type": "rightTriangle",
+      "a": 13.86,
+      "b": 8,
+      "labels": {
+        "b": "b = 8 cm",
+        "c": "c = ?",
+        "alpha": "60°"
+      }
+    }
   },
   {
     "id": "MATH_TRIG_ANGLE_001",
@@ -3432,7 +3545,7 @@
       "MSA",
       "trigonometry",
       "sin",
-      "exam"
+      "altpruefung"
     ],
     "source": "MSA 2014 A2"
   },
@@ -3480,7 +3593,16 @@
       "MSA",
       "trigonometry",
       "angles"
-    ]
+    ],
+    "figure": {
+      "type": "rightTriangle",
+      "a": 4,
+      "b": 4,
+      "labels": {
+        "alpha": "45°",
+        "beta": "β = ?"
+      }
+    }
   },
   {
     "id": "MATH_EXP_BACTERIA_001",
@@ -3536,7 +3658,7 @@
       "MSA",
       "exponential",
       "growth",
-      "exam"
+      "altpruefung"
     ],
     "source": "MSA 2014 N A4"
   },
@@ -3595,7 +3717,7 @@
       "MSA",
       "exponential",
       "growth",
-      "exam"
+      "altpruefung"
     ],
     "source": "MSA 2014 A4"
   },
@@ -3653,7 +3775,7 @@
       "MSA",
       "exponential",
       "growth",
-      "exam"
+      "altpruefung"
     ],
     "source": "MSA 2013 N A7"
   },
@@ -3888,7 +4010,18 @@
       "MSA",
       "volume",
       "quader"
-    ]
+    ],
+    "figure": {
+      "type": "box",
+      "a": 20,
+      "b": 15,
+      "c": 12,
+      "labels": {
+        "a": "a = 20 cm",
+        "b": "b = 15 cm",
+        "c": "c = 12 cm"
+      }
+    }
   },
   {
     "id": "MATH_VOL_QUADER_OBERFL_001",
@@ -3939,7 +4072,18 @@
       "MSA",
       "surface_area",
       "quader"
-    ]
+    ],
+    "figure": {
+      "type": "box",
+      "a": 3,
+      "b": 4,
+      "c": 5,
+      "labels": {
+        "a": "a = 3 cm",
+        "b": "b = 4 cm",
+        "c": "h = 5 cm"
+      }
+    }
   },
   {
     "id": "MATH_VOL_PRISMA_001",
@@ -3996,7 +4140,7 @@
       "MSA",
       "volume",
       "prisma",
-      "exam"
+      "altpruefung"
     ],
     "source": "MSA 2014 N A3"
   },
@@ -4043,14 +4187,23 @@
       {
         "kind": "answer",
         "title": "Antwort",
-        "body": "≈ 142.384 cm³"
+        "body": "≈ 142.478 cm³"
       }
     ],
     "tags": [
       "MSA",
       "volume",
       "cylinder"
-    ]
+    ],
+    "figure": {
+      "type": "cylinder",
+      "r": 27.5,
+      "h": 60,
+      "labels": {
+        "d": "d = 55 cm",
+        "h": "h = 60 cm"
+      }
+    }
   },
   {
     "id": "MATH_VOL_ZYLINDER_REAL_001",
@@ -4107,7 +4260,7 @@
       "MSA",
       "volume",
       "cylinder",
-      "exam",
+      "altpruefung",
       "real_world"
     ],
     "source": "MSA 2012 N A5"
@@ -4229,7 +4382,7 @@
       "MSA",
       "volume",
       "pyramid",
-      "exam"
+      "altpruefung"
     ],
     "source": "MSA 2015 A6"
   },
@@ -4397,7 +4550,7 @@
       "MSA",
       "surface_area",
       "cylinder",
-      "exam"
+      "altpruefung"
     ],
     "source": "MSA 2012 N A5"
   },
@@ -4451,7 +4604,7 @@
       "MSA",
       "statistics",
       "mean",
-      "exam"
+      "altpruefung"
     ],
     "source": "MSA 2011 N Basisaufgabe"
   },
@@ -5829,7 +5982,7 @@
   {
     "id": "MATH_ALG_TERMS_SIMPLIFY_TRAIN_001",
     "subject": "MATH",
-    "topicId": "MATH_ALG_TERMS_SIMPLIFY",
+    "topicId": "MATH_ALG_POW",
     "difficulty": 1,
     "qtype": "SHORT",
     "prompt": "Berechne: 2⁴",
@@ -5882,7 +6035,7 @@
   {
     "id": "MATH_ALG_TERMS_SIMPLIFY_TRAIN_002",
     "subject": "MATH",
-    "topicId": "MATH_ALG_TERMS_SIMPLIFY",
+    "topicId": "MATH_ALG_POW",
     "difficulty": 2,
     "qtype": "MCQ",
     "prompt": "Was ist 10⁻²?",
@@ -5945,7 +6098,7 @@
   {
     "id": "MATH_ALG_TERMS_SIMPLIFY_TRAIN_003",
     "subject": "MATH",
-    "topicId": "MATH_ALG_TERMS_SIMPLIFY",
+    "topicId": "MATH_ALG_POW",
     "difficulty": 2,
     "qtype": "SHORT",
     "prompt": "Berechne: 8⁴ ÷ 4⁴",
@@ -6003,7 +6156,7 @@
   {
     "id": "MATH_ALG_TERMS_SIMPLIFY_TRAIN_004",
     "subject": "MATH",
-    "topicId": "MATH_ALG_TERMS_SIMPLIFY",
+    "topicId": "MATH_ALG_POW",
     "difficulty": 1,
     "qtype": "SHORT",
     "prompt": "Berechne: 27⁰",
@@ -6056,7 +6209,7 @@
   {
     "id": "MATH_ALG_TERMS_SIMPLIFY_TRAIN_005",
     "subject": "MATH",
-    "topicId": "MATH_ALG_TERMS_SIMPLIFY",
+    "topicId": "MATH_ALG_POW",
     "difficulty": 2,
     "qtype": "SHORT",
     "prompt": "Berechne: (2³)²",
@@ -6113,7 +6266,7 @@
   {
     "id": "MATH_ALG_TERMS_SIMPLIFY_TRAIN_006",
     "subject": "MATH",
-    "topicId": "MATH_ALG_TERMS_SIMPLIFY",
+    "topicId": "MATH_ALG_POW",
     "difficulty": 2,
     "qtype": "SHORT",
     "prompt": "Berechne: ³√216 (dritte Wurzel aus 216)",
@@ -6850,7 +7003,17 @@
       "geometry",
       "triangle",
       "angles"
-    ]
+    ],
+    "figure": {
+      "type": "triangle",
+      "alpha": 70,
+      "beta": 70,
+      "labels": {
+        "alpha": "70°",
+        "beta": "70°",
+        "gamma": "γ = ?"
+      }
+    }
   },
   {
     "id": "MATH_ALG_TERMS_SIMPLIFY_MSA2023_001",
@@ -6956,7 +7119,19 @@
       "MSA2023",
       "linear_function",
       "points"
-    ]
+    ],
+    "figure": {
+      "type": "coordinateSystem",
+      "ymin": -8,
+      "ymax": 8,
+      "lines": [
+        {
+          "m": -7,
+          "n": 3,
+          "label": "f"
+        }
+      ]
+    }
   },
   {
     "id": "MATH_GEO_AREA_BASIC_MSA2023_003",
@@ -7005,7 +7180,18 @@
       "geometry",
       "trapezoid",
       "area"
-    ]
+    ],
+    "figure": {
+      "type": "trapezoid",
+      "a": 25.8,
+      "c": 15,
+      "h": 8,
+      "labels": {
+        "a": "a = 25,80 m",
+        "c": "c = 15,00 m",
+        "h": "h = 8,00 m"
+      }
+    }
   },
   {
     "id": "MATH_GEO_VOLUME_MSA2022_001",
@@ -7054,12 +7240,21 @@
       "geometry",
       "cylinder",
       "volume"
-    ]
+    ],
+    "figure": {
+      "type": "cylinder",
+      "r": 2.8,
+      "h": 6,
+      "labels": {
+        "r": "r = 2,8 cm",
+        "h": "h = 6 cm"
+      }
+    }
   },
   {
     "id": "MATH_GEO_CIRCLE_MSA2022_001",
     "subject": "MATH",
-    "topicId": "MATH_GEO_CIRCLE",
+    "topicId": "MATH_GEO_VOLUME",
     "difficulty": 2,
     "qtype": "SHORT",
     "prompt": "Berechne die Mantelfläche eines Zylinders mit Radius r = 2,8 cm und Höhe h = 6 cm. (Runde auf eine Dezimalstelle)",
@@ -7103,7 +7298,16 @@
       "geometry",
       "cylinder",
       "surface"
-    ]
+    ],
+    "figure": {
+      "type": "cylinder",
+      "r": 2.8,
+      "h": 6,
+      "labels": {
+        "r": "r = 2,8 cm",
+        "h": "h = 6 cm"
+      }
+    }
   },
   {
     "id": "MATH_GEO_PYTH_MSA2022_002",
@@ -7143,7 +7347,16 @@
       "geometry",
       "pythagoras",
       "cylinder"
-    ]
+    ],
+    "figure": {
+      "type": "cylinder",
+      "r": 2.8,
+      "h": 6,
+      "labels": {
+        "r": "r = 2,8 cm",
+        "h": "h = 6 cm"
+      }
+    }
   },
   {
     "id": "MATH_FUNC_LINEAR_FORM_MSA2022_001",
@@ -7201,7 +7414,17 @@
       "MSA2022",
       "linear_function",
       "zero"
-    ]
+    ],
+    "figure": {
+      "type": "coordinateSystem",
+      "lines": [
+        {
+          "m": 3,
+          "n": -1,
+          "label": "f"
+        }
+      ]
+    }
   },
   {
     "id": "MATH_FUNC_QUAD_MSA2022_001",
@@ -7254,7 +7477,18 @@
       "MSA2022",
       "quadratic_function",
       "vertex"
-    ]
+    ],
+    "figure": {
+      "type": "coordinateSystem",
+      "parabolas": [
+        {
+          "a": 1,
+          "d": 1,
+          "e": -2,
+          "label": "q"
+        }
+      ]
+    }
   },
   {
     "id": "MATH_NUM_PCT_BASIC_MSA2022_010",
@@ -7345,7 +7579,17 @@
       "geometry",
       "trapezoid",
       "angles"
-    ]
+    ],
+    "figure": {
+      "type": "trapezoid",
+      "a": 6,
+      "c": 3,
+      "h": 2.22,
+      "labels": {
+        "a": "a",
+        "c": "c"
+      }
+    }
   },
   {
     "id": "MATH_DATA_PROB_MSA_001",
@@ -7676,7 +7920,7 @@
   {
     "id": "MATH_FUNC_LINEAR_TABLE_MSA_001",
     "subject": "MATH",
-    "topicId": "MATH_FUNC_LINEAR_TABLE",
+    "topicId": "MATH_FUNC_QUAD",
     "difficulty": 2,
     "qtype": "SHORT",
     "prompt": "Für f(x) = x² - 1, berechne f(2).",
@@ -7722,7 +7966,18 @@
       "MSA",
       "functions",
       "value"
-    ]
+    ],
+    "figure": {
+      "type": "coordinateSystem",
+      "parabolas": [
+        {
+          "a": 1,
+          "d": 0,
+          "e": -1,
+          "label": "f"
+        }
+      ]
+    }
   },
   {
     "id": "MATH_FUNC_EXP_MSA_001",
@@ -7838,7 +8093,18 @@
       "statistics",
       "diagrams",
       "circle"
-    ]
+    ],
+    "figure": {
+      "type": "pieChart",
+      "categories": [
+        "Sektor",
+        "Rest"
+      ],
+      "values": [
+        90,
+        270
+      ]
+    }
   },
   {
     "id": "MATH_GEO_UNITS_001",
@@ -8170,52 +8436,6 @@
     ]
   },
   {
-    "id": "MATH_GEO_AREA_BASIC_004",
-    "subject": "MATH",
-    "topicId": "MATH_GEO_AREA_BASIC",
-    "difficulty": 2,
-    "qtype": "SHORT",
-    "prompt": "Berechne den Flächeninhalt eines Dreiecks mit Grundseite a = 10 cm und Höhe h = 6 cm. A = ? cm²",
-    "payload": {
-      "answer_type": "number"
-    },
-    "solution": {
-      "value": 30
-    },
-    "explanation": [
-      {
-        "kind": "what",
-        "title": "Dreieck-fläche",
-        "body": ""
-      },
-      {
-        "kind": "formula",
-        "title": "Formel",
-        "body": "A = (1/2) × a × h\n(Halb mal Grundseite mal Höhe)"
-      },
-      {
-        "kind": "steps",
-        "title": "Rechnung",
-        "body": "A = (1/2) × 10 × 6\nA = (1/2) × 60 = 30 cm²"
-      },
-      {
-        "kind": "remember",
-        "title": "Warum halb",
-        "body": "Ein Dreieck ist ein halbes Rechteck!"
-      },
-      {
-        "kind": "answer",
-        "title": "Antwort",
-        "body": "30 cm²"
-      }
-    ],
-    "tags": [
-      "MSA",
-      "area",
-      "triangle"
-    ]
-  },
-  {
     "id": "MATH_GEO_AREA_BASIC_005",
     "subject": "MATH",
     "topicId": "MATH_GEO_AREA_BASIC",
@@ -8259,60 +8479,17 @@
       "MSA",
       "area",
       "parallelogram"
-    ]
-  },
-  {
-    "id": "MATH_GEO_AREA_BASIC_006",
-    "subject": "MATH",
-    "topicId": "MATH_GEO_AREA_BASIC",
-    "difficulty": 3,
-    "qtype": "MCQ",
-    "prompt": "Welche Formel berechnet den Flächeninhalt eines Dreiecks?",
-    "payload": {
-      "choices": [
-        "A = (1/2) × a × h",
-        "A = a × b",
-        "A = a²",
-        "A = 2 × a × h"
-      ],
-      "shuffle": true
-    },
-    "solution": {
-      "correct_choice": "A = (1/2) × a × h"
-    },
-    "explanation": [
-      {
-        "kind": "what",
-        "title": "Dreieck-formel",
-        "body": ""
-      },
-      {
-        "kind": "formula",
-        "title": "Richtig",
-        "body": "A = (1/2) × a × h"
-      },
-      {
-        "kind": "text",
-        "title": "Falsch",
-        "body": "• A = a × b → Das ist für Rechtecke!\n• A = a² → Das ist für Quadrate!\n• A = 2 × a × h → Doppelt statt halb!"
-      },
-      {
-        "kind": "remember",
-        "title": "Merkhilfe",
-        "body": "Dreieck = HALBES Rechteck\n→ daher (1/2) in der Formel"
-      },
-      {
-        "kind": "answer",
-        "title": "Antwort",
-        "body": "A = (1/2) × a × h"
-      }
     ],
-    "tags": [
-      "MSA",
-      "area",
-      "triangle",
-      "formula"
-    ]
+    "figure": {
+      "type": "parallelogram",
+      "a": 8,
+      "h": 4,
+      "offset": 2,
+      "labels": {
+        "a": "a = 8 cm",
+        "h": "h = 4 cm"
+      }
+    }
   },
   {
     "id": "MATH_GEO_CIRCLE_003",
@@ -8364,7 +8541,13 @@
       "MSA",
       "circle",
       "circumference"
-    ]
+    ],
+    "figure": {
+      "type": "circle",
+      "labels": {
+        "r": "r = 3,5 mm"
+      }
+    }
   },
   {
     "id": "MATH_GEO_CIRCLE_004",
@@ -8412,7 +8595,13 @@
       "circle",
       "area",
       "advanced"
-    ]
+    ],
+    "figure": {
+      "type": "circle",
+      "labels": {
+        "u": "U = 38 cm"
+      }
+    }
   },
   {
     "id": "MATH_GEO_PYTH_003",
@@ -8458,7 +8647,17 @@
       "MSA",
       "pythagoras",
       "cathetus"
-    ]
+    ],
+    "figure": {
+      "type": "rightTriangle",
+      "a": 36,
+      "b": 77,
+      "labels": {
+        "a": "a = 36 cm",
+        "b": "b = ?",
+        "c": "c = 85 cm"
+      }
+    }
   },
   {
     "id": "MATH_GEO_PYTH_004",
@@ -8505,162 +8704,6 @@
       "MSA",
       "pythagoras",
       "theory"
-    ]
-  },
-  {
-    "id": "MATH_GEO_TRIG_001",
-    "subject": "MATH",
-    "topicId": "MATH_GEO_TRIG",
-    "difficulty": 2,
-    "qtype": "MCQ",
-    "prompt": "Im rechtwinkligen Dreieck gilt: sin(α) = ?",
-    "payload": {
-      "choices": [
-        "Gegenkathete ÷ Hypotenuse",
-        "Ankathete ÷ Hypotenuse",
-        "Gegenkathete ÷ Ankathete",
-        "Hypotenuse ÷ Gegenkathete"
-      ],
-      "shuffle": true
-    },
-    "solution": {
-      "correct_choice": "Gegenkathete ÷ Hypotenuse"
-    },
-    "explanation": [
-      {
-        "kind": "what",
-        "title": "Sinus-definition",
-        "body": ""
-      },
-      {
-        "kind": "formula",
-        "title": "Formel",
-        "body": "sin(α) = Gegenkathete / Hypotenuse"
-      },
-      {
-        "kind": "remember",
-        "title": "Merkhilfe 'gaga-haha-gaga'",
-        "body": "• sin = Gegenkathete / Hypotenuse (GE/HY)\n• cos = Ankathete / Hypotenuse (AN/HY)\n• tan = Gegenkathete / Ankathete (GE/AN)"
-      },
-      {
-        "kind": "what",
-        "title": "Tipp",
-        "body": "Gegenkathete = die Seite GEGENÜBER dem Winkel"
-      },
-      {
-        "kind": "answer",
-        "title": "Antwort",
-        "body": "Gegenkathete ÷ Hypotenuse"
-      }
-    ],
-    "tags": [
-      "MSA",
-      "trigonometry",
-      "sine"
-    ]
-  },
-  {
-    "id": "MATH_GEO_TRIG_002",
-    "subject": "MATH",
-    "topicId": "MATH_GEO_TRIG",
-    "difficulty": 2,
-    "qtype": "MCQ",
-    "prompt": "Im rechtwinkligen Dreieck gilt: cos(α) = ?",
-    "payload": {
-      "choices": [
-        "Ankathete ÷ Hypotenuse",
-        "Gegenkathete ÷ Hypotenuse",
-        "Gegenkathete ÷ Ankathete",
-        "Hypotenuse ÷ Ankathete"
-      ],
-      "shuffle": true
-    },
-    "solution": {
-      "correct_choice": "Ankathete ÷ Hypotenuse"
-    },
-    "explanation": [
-      {
-        "kind": "what",
-        "title": "Kosinus-definition",
-        "body": ""
-      },
-      {
-        "kind": "formula",
-        "title": "Formel",
-        "body": "cos(α) = Ankathete / Hypotenuse"
-      },
-      {
-        "kind": "remember",
-        "title": "Merkhilfe",
-        "body": "• Ankathete = die Seite AM Winkel (nicht die Hypotenuse)\n• Hypotenuse = die längste Seite (gegenüber vom rechten Winkel)"
-      },
-      {
-        "kind": "what",
-        "title": "Eselsbrücke",
-        "body": "'COS' hat ein 'A' → ANkathete im Zähler"
-      },
-      {
-        "kind": "answer",
-        "title": "Antwort",
-        "body": "Ankathete ÷ Hypotenuse"
-      }
-    ],
-    "tags": [
-      "MSA",
-      "trigonometry",
-      "cosine"
-    ]
-  },
-  {
-    "id": "MATH_GEO_TRIG_003",
-    "subject": "MATH",
-    "topicId": "MATH_GEO_TRIG",
-    "difficulty": 2,
-    "qtype": "MCQ",
-    "prompt": "Im rechtwinkligen Dreieck gilt: tan(α) = ?",
-    "payload": {
-      "choices": [
-        "Gegenkathete ÷ Ankathete",
-        "Ankathete ÷ Gegenkathete",
-        "Gegenkathete ÷ Hypotenuse",
-        "Hypotenuse ÷ Ankathete"
-      ],
-      "shuffle": true
-    },
-    "solution": {
-      "correct_choice": "Gegenkathete ÷ Ankathete"
-    },
-    "explanation": [
-      {
-        "kind": "what",
-        "title": "Tangens-definition",
-        "body": ""
-      },
-      {
-        "kind": "formula",
-        "title": "Formel",
-        "body": "tan(α) = Gegenkathete / Ankathete"
-      },
-      {
-        "kind": "remember",
-        "title": "Merkhilfe",
-        "body": "tan = GE/AN (GEgenkathete durch ANkathete)\nKeine Hypotenuse beim Tangens!"
-      },
-      {
-        "kind": "what",
-        "title": "Zusammenfassung",
-        "body": "• sin = GE/HY\n• cos = AN/HY\n• tan = GE/AN = sin/cos"
-      },
-      {
-        "kind": "answer",
-        "title": "Antwort",
-        "body": "Gegenkathete ÷ Ankathete"
-      }
-    ],
-    "tags": [
-      "MSA",
-      "trigonometry",
-      "tangent"
     ]
   },
   {
@@ -8713,7 +8756,20 @@
       "MSA",
       "trigonometry",
       "calculation"
-    ]
+    ],
+    "figure": {
+      "type": "rightTriangle",
+      "a": 4.59,
+      "b": 6.55,
+      "labels": {
+        "a": "c = ?",
+        "b": "b",
+        "c": "a = 8",
+        "beta": "55°",
+        "A": "C",
+        "C": "A"
+      }
+    }
   },
   {
     "id": "MATH_GEO_VOLUME_003",
@@ -8765,7 +8821,16 @@
       "MSA",
       "volume",
       "cylinder"
-    ]
+    ],
+    "figure": {
+      "type": "cylinder",
+      "r": 2.8,
+      "h": 6,
+      "labels": {
+        "r": "r = 2,8 cm",
+        "h": "h = 6 cm"
+      }
+    }
   },
   {
     "id": "MATH_GEO_VOLUME_004",
@@ -8813,7 +8878,16 @@
       "volume",
       "cylinder",
       "advanced"
-    ]
+    ],
+    "figure": {
+      "type": "cylinder",
+      "r": 4.5,
+      "h": 6,
+      "labels": {
+        "r": "r = ?",
+        "h": "h = 6 cm"
+      }
+    }
   },
   {
     "id": "MATH_GEO_AREA_BASIC_007",
@@ -8916,97 +8990,6 @@
     ]
   },
   {
-    "id": "MATH_GEO_AREA_BASIC_009",
-    "subject": "MATH",
-    "topicId": "MATH_GEO_AREA_BASIC",
-    "difficulty": 2,
-    "qtype": "MCQ",
-    "prompt": "Wie viele Symmetrieachsen hat ein Drachen?",
-    "payload": {
-      "choices": [
-        "1",
-        "0",
-        "2",
-        "4"
-      ],
-      "shuffle": true
-    },
-    "solution": {
-      "correct_choice": "1"
-    },
-    "explanation": [
-      {
-        "kind": "what",
-        "title": "Symmetrie beim drachen",
-        "body": ""
-      },
-      {
-        "kind": "terms",
-        "title": "Ein drachen hat",
-        "body": "• 1 Symmetrieachse (die Längsdiagonale)\n• Gegenüberliegende Seiten sind NICHT gleich\n• Zwei Paare gleicher Nachbarseiten"
-      },
-      {
-        "kind": "remember",
-        "title": "Vergleich",
-        "body": "• Quadrat: 4 Symmetrieachsen\n• Rechteck: 2 Symmetrieachsen\n• Raute: 2 Symmetrieachsen\n• Drachen: 1 Symmetrieachse"
-      },
-      {
-        "kind": "answer",
-        "title": "Antwort",
-        "body": "1"
-      }
-    ],
-    "tags": [
-      "MSA",
-      "symmetry",
-      "kite"
-    ]
-  },
-  {
-    "id": "MATH_GEO_PYTH_005",
-    "subject": "MATH",
-    "topicId": "MATH_GEO_PYTH",
-    "difficulty": 3,
-    "qtype": "MCQ",
-    "prompt": "Ein Rührholz steht diagonal in einer zylindrischen Dose (r = 2,8 cm, h = 6 cm). 3 cm ragen heraus. Wie lang ist das Holz insgesamt? (Runde auf eine Dezimalstelle)",
-    "payload": {
-      "choices": [
-        "9,6 cm",
-        "6,6 cm",
-        "8,4 cm",
-        "11,2 cm"
-      ],
-      "shuffle": true
-    },
-    "solution": {
-      "correct_choice": "11,2 cm"
-    },
-    "explanation": [
-      {
-        "kind": "what",
-        "body": "Das Rührholz steht **diagonal** in der Dose: Es bildet mit der Höhe h = 6 cm und dem **Durchmesser** d = 2 · 2,8 = 5,6 cm ein rechtwinkliges Dreieck. Das Holz ist die Hypotenuse."
-      },
-      {
-        "kind": "steps",
-        "body": "1. Teil in der Dose: x = √(d² + h²) = √(5,6² + 6²) = √(31,36 + 36) = √67,36 ≈ 8,2 cm\n2. Dazu die 3 cm, die herausragen: 8,2 + 3 = **11,2 cm**"
-      },
-      {
-        "kind": "mistake",
-        "body": "Nicht mit dem Radius rechnen — diagonal durch die Dose geht das Holz über den ganzen **Durchmesser**."
-      },
-      {
-        "kind": "answer",
-        "body": "≈ 11,2 cm"
-      }
-    ],
-    "tags": [
-      "MSA",
-      "pythagoras",
-      "cylinder",
-      "application"
-    ]
-  },
-  {
     "id": "MATH_GEO_TRIG_005",
     "subject": "MATH",
     "topicId": "MATH_GEO_TRIG",
@@ -9056,7 +9039,18 @@
       "MSA",
       "trigonometry",
       "sine-rule"
-    ]
+    ],
+    "figure": {
+      "type": "triangle",
+      "alpha": 70,
+      "beta": 46,
+      "labels": {
+        "alpha": "70°",
+        "beta": "46°",
+        "b": "b = 4,3",
+        "a": "a = ?"
+      }
+    }
   },
   {
     "id": "MATH_GEO_TRIG_006",
@@ -9108,7 +9102,18 @@
       "MSA",
       "trigonometry",
       "cosine-rule"
-    ]
+    ],
+    "figure": {
+      "type": "triangle",
+      "alpha": 65,
+      "beta": 80.6,
+      "labels": {
+        "alpha": "65°",
+        "b": "b = 7",
+        "c": "c = 4",
+        "a": "a = ?"
+      }
+    }
   },
   {
     "id": "MATH_GEO_VOLUME_005",
@@ -9208,7 +9213,16 @@
       "perimeter",
       "rectangle",
       "units"
-    ]
+    ],
+    "figure": {
+      "type": "rectangle",
+      "a": 24,
+      "b": 7,
+      "labels": {
+        "a": "a = 240 cm",
+        "b": "b = 7 dm"
+      }
+    }
   },
   {
     "id": "MATH_GEO_VOLUME_006",
@@ -9261,7 +9275,16 @@
       "MSA2023",
       "volume",
       "cylinder"
-    ]
+    ],
+    "figure": {
+      "type": "cylinder",
+      "r": 4,
+      "h": 8,
+      "labels": {
+        "r": "r = 4 cm",
+        "h": "h = 8 cm"
+      }
+    }
   },
   {
     "id": "MATH_GEO_VOLUME_007",
@@ -9314,7 +9337,16 @@
       "MSA2023",
       "cylinder",
       "surface"
-    ]
+    ],
+    "figure": {
+      "type": "cylinder",
+      "r": 4,
+      "h": 8,
+      "labels": {
+        "r": "r = 4 cm",
+        "h": "h = 8 cm"
+      }
+    }
   },
   {
     "id": "MATH_GEO_VOLUME_008",
@@ -9410,7 +9442,16 @@
       "MSA2023",
       "volume",
       "cylinder"
-    ]
+    ],
+    "figure": {
+      "type": "cylinder",
+      "r": 4,
+      "h": 15,
+      "labels": {
+        "r": "r = 4 cm",
+        "h": "h = ?"
+      }
+    }
   },
   {
     "id": "MATH_FUNC_LINEAR_FORM_006",
@@ -9468,7 +9509,17 @@
       "MSA2023",
       "linear",
       "function"
-    ]
+    ],
+    "figure": {
+      "type": "coordinateSystem",
+      "lines": [
+        {
+          "m": 4,
+          "n": -2,
+          "label": "f"
+        }
+      ]
+    }
   },
   {
     "id": "MATH_FUNC_QUAD_002",
@@ -9515,7 +9566,18 @@
       "MSA2023",
       "quadratic",
       "vertex"
-    ]
+    ],
+    "figure": {
+      "type": "coordinateSystem",
+      "parabolas": [
+        {
+          "a": 1,
+          "d": 1,
+          "e": -2,
+          "label": "p"
+        }
+      ]
+    }
   },
   {
     "id": "MATH_FUNC_QUAD_003",
@@ -9563,12 +9625,28 @@
       "MSA2023",
       "quadratic",
       "equation"
-    ]
+    ],
+    "figure": {
+      "type": "coordinateSystem",
+      "xmin": -6,
+      "xmax": 4,
+      "ymin": -12,
+      "ymax": 8,
+      "height": 320,
+      "parabolas": [
+        {
+          "a": -1,
+          "d": -1,
+          "e": 6,
+          "label": "p"
+        }
+      ]
+    }
   },
   {
     "id": "MATH_DATA_STATS_012",
     "subject": "MATH",
-    "topicId": "MATH_DATA_STATS",
+    "topicId": "MATH_NUM_PCT_BASIC",
     "difficulty": 2,
     "qtype": "MCQ",
     "prompt": "Im Jahr 2020 waren von 7,8 Mrd. Menschen 1,25 Mrd. Jugendliche. Wie viel Prozent waren Jugendliche? (Runde auf ganze Zahl)",
@@ -9727,7 +9805,15 @@
       "MSA2024",
       "probability",
       "tree"
-    ]
+    ],
+    "figure": {
+      "type": "treeDiagram",
+      "a": "J",
+      "b": "N",
+      "pa": "1/5",
+      "pb": "4/5",
+      "stages": 2
+    }
   },
   {
     "id": "MATH_GEO_TRIG_007",
@@ -9775,7 +9861,18 @@
       "MSA2024",
       "pythagoras",
       "application"
-    ]
+    ],
+    "figure": {
+      "type": "rightTriangle",
+      "a": 255,
+      "b": 287,
+      "labels": {
+        "a": "FB = 255 m",
+        "b": "h = ?",
+        "c": "AB = 384 m",
+        "C": "F"
+      }
+    }
   },
   {
     "id": "MATH_FUNC_EXP_008",
@@ -9894,202 +9991,6 @@
     ]
   },
   {
-    "id": "MATH_NUM_PCT_BASIC_030",
-    "subject": "MATH",
-    "topicId": "MATH_NUM_PCT_BASIC",
-    "difficulty": 2,
-    "qtype": "MCQ",
-    "prompt": "Jeder vierte Schüler fährt mit dem Fahrrad zur Schule. Wie viel Prozent sind das?",
-    "payload": {
-      "choices": [
-        "25%",
-        "10%",
-        "15%",
-        "50%"
-      ],
-      "shuffle": true
-    },
-    "solution": {
-      "correct_choice": "25%"
-    },
-    "explanation": [
-      {
-        "kind": "what",
-        "title": "Bruch in prozent",
-        "body": ""
-      },
-      {
-        "kind": "terms",
-        "title": "'JEDER VIERTE' bedeutet",
-        "body": "1 von 4 = 1/4"
-      },
-      {
-        "kind": "steps",
-        "title": "Umrechnung",
-        "body": "1/4 = 1 ÷ 4 = 0,25 = 25%"
-      },
-      {
-        "kind": "remember",
-        "title": "Merkhilfe",
-        "body": "• Jeder Zweite = 1/2 = 50%\n• Jeder Dritte = 1/3 ≈ 33%\n• Jeder Vierte = 1/4 = 25%\n• Jeder Fünfte = 1/5 = 20%"
-      },
-      {
-        "kind": "answer",
-        "title": "Antwort",
-        "body": "25%"
-      }
-    ],
-    "tags": [
-      "MSA",
-      "MSA2022",
-      "percent",
-      "fractions"
-    ]
-  },
-  {
-    "id": "MATH_DATA_STATS_014",
-    "subject": "MATH",
-    "topicId": "MATH_DATA_STATS",
-    "difficulty": 2,
-    "qtype": "MCQ",
-    "prompt": "Sechs Häuser sind im Durchschnitt 10 m hoch. Fünf davon sind: 8m, 9m, 11m, 10m, 10m. Wie hoch ist das sechste Haus?",
-    "payload": {
-      "choices": [
-        "12 m",
-        "10 m",
-        "8 m",
-        "14 m"
-      ],
-      "shuffle": true
-    },
-    "solution": {
-      "correct_choice": "12 m"
-    },
-    "explanation": [
-      {
-        "kind": "what",
-        "title": "Fehlenden wert beim durchschnitt finden",
-        "body": ""
-      },
-      {
-        "kind": "formula",
-        "title": "Durchschnitt-formel",
-        "body": "Durchschnitt = Summe ÷ Anzahl\n→ Summe = Durchschnitt × Anzahl"
-      },
-      {
-        "kind": "steps",
-        "title": "Rechnung",
-        "body": "Gesamtsumme: 10 × 6 = 60 m\n\nSumme der bekannten: 8 + 9 + 11 + 10 + 10 = 48 m\n\nFehlendes Haus: 60 - 48 = 12 m"
-      },
-      {
-        "kind": "remember",
-        "title": "Probe",
-        "body": "(8+9+11+10+10+12) ÷ 6 = 60 ÷ 6 = 10 ✓"
-      },
-      {
-        "kind": "answer",
-        "title": "Antwort",
-        "body": "12 m"
-      }
-    ],
-    "tags": [
-      "MSA",
-      "MSA2022",
-      "statistics",
-      "average"
-    ]
-  },
-  {
-    "id": "MATH_NUM_PCT_BASIC_031",
-    "subject": "MATH",
-    "topicId": "MATH_NUM_PCT_BASIC",
-    "difficulty": 2,
-    "qtype": "SHORT",
-    "prompt": "Beim Bäcker kosten 600g Vollkornbrot 2,40€. Wie viel kosten 1000g? (In Euro)",
-    "payload": {
-      "answer_type": "number"
-    },
-    "solution": {
-      "value": 4
-    },
-    "explanation": [
-      {
-        "kind": "what",
-        "title": "Dreisatz",
-        "body": ""
-      },
-      {
-        "kind": "formula",
-        "title": "Ansatz",
-        "body": "600g → 2,40€\n1000g → ?€"
-      },
-      {
-        "kind": "steps",
-        "title": "Rechnung",
-        "body": "Methode 1 (Dreisatz):\n1g kostet: 2,40€ ÷ 600 = 0,004€\n1000g kosten: 0,004€ × 1000 = 4,00€\n\nMethode 2 (Verhältnis):\n1000 ÷ 600 = 5/3\n2,40€ × 5/3 = 4,00€"
-      },
-      {
-        "kind": "answer",
-        "title": "Antwort",
-        "body": "4,00€"
-      }
-    ],
-    "tags": [
-      "MSA",
-      "MSA2022",
-      "proportional",
-      "price"
-    ]
-  },
-  {
-    "id": "MATH_ALG_EQU_LINEAR_008",
-    "subject": "MATH",
-    "topicId": "MATH_ALG_EQU_LINEAR",
-    "difficulty": 2,
-    "qtype": "MCQ",
-    "prompt": "Löse die Gleichung: 8 - 3x = x - 12",
-    "payload": {
-      "choices": [
-        "x = 5",
-        "x = 3",
-        "x = 7",
-        "x = 9"
-      ],
-      "shuffle": true
-    },
-    "solution": {
-      "correct_choice": "x = 5"
-    },
-    "explanation": [
-      {
-        "kind": "what",
-        "title": "Lineare gleichung lösen",
-        "body": ""
-      },
-      {
-        "kind": "steps",
-        "title": "Rechnung",
-        "body": "8 - 3x = x - 12      | +3x\n8 = 4x - 12         | +12\n20 = 4x             | ÷4\n5 = x"
-      },
-      {
-        "kind": "remember",
-        "title": "Probe",
-        "body": "8 - 3×5 = 8 - 15 = -7\n5 - 12 = -7 ✓"
-      },
-      {
-        "kind": "answer",
-        "title": "Antwort",
-        "body": "x = 5"
-      }
-    ],
-    "tags": [
-      "MSA",
-      "MSA2022",
-      "equation",
-      "linear"
-    ]
-  },
-  {
     "id": "MATH_DATA_CHARTS_002",
     "subject": "MATH",
     "topicId": "MATH_DATA_CHARTS",
@@ -10188,7 +10089,17 @@
       "MSA2022",
       "linear",
       "zeros"
-    ]
+    ],
+    "figure": {
+      "type": "coordinateSystem",
+      "lines": [
+        {
+          "m": 3,
+          "n": -1,
+          "label": "f"
+        }
+      ]
+    }
   },
   {
     "id": "MATH_NUM_PCT_CHANGE_006",

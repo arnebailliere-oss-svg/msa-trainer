@@ -109,6 +109,12 @@ export function triangle(spec: FigureSpec): string {
   if (labels.alpha !== undefined) body += angleArc(A.x, A.y, 24, 0, alpha, str(labels.alpha));
   if (labels.beta !== undefined) body += angleArc(B.x, B.y, 24, 180 - beta, 180, str(labels.beta), ACCENT2);
   if (labels.gamma !== undefined) body += angleArc(C.x, C.y, 22, 180 + alpha, 360 - beta, str(labels.gamma), ACCENT4);
+  if (labels.h !== undefined) {
+    // height from C onto the base line AB
+    body += line(C.x, C.y, C.x, A.y, { dashed: true, color: ACCENT3 }) + rightAngleMark(C.x, A.y, C.x < (A.x + B.x) / 2 ? 1 : -1, -1, 10);
+    // label in the lower quarter, where the triangle is wide enough to keep it off the edges
+    body += text(C.x + 8, A.y - (A.y - C.y) * 0.25 + 4, str(labels.h), { anchor: "start", fill: ACCENT3, bold: true });
+  }
   body += text(A.x - 10, A.y + 16, "A", { size: 12 }) + text(B.x + 10, B.y + 16, "B", { size: 12 }) + text(C.x, C.y - 10, "C", { size: 12 });
   return svg(W, H, body, "Dreieck");
 }

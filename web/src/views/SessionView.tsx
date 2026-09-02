@@ -13,6 +13,7 @@ import { isAnswerReady, QuestionRenderer } from "@/ui/renderers";
 
 const MODE_LABEL: Record<TrainingMode, string> = { QUICK: "Schnelltraining", TOPIC: "Thema üben", ERRORS: "Fehler-Training", MSA: "Prüfungs-Modus" };
 const COUNT: Record<TrainingMode, number> = { QUICK: 10, TOPIC: 8, ERRORS: 10, MSA: 10 };
+const fmtTime = (s: number) => `${Math.floor(s / 60)}:${String(s % 60).padStart(2, "0")}`;
 
 export function SessionView() {
   const params = useParams();
@@ -29,11 +30,15 @@ export function SessionView() {
   const [showCalc, setShowCalc] = useState(false);
   const [showFormulas, setShowFormulas] = useState(false);
   const [empty, setEmpty] = useState(false);
+  const startedAt = useRef(Date.now());
+  const [elapsed, setElapsed] = useState(0);
 
   useEffect(() => {
     if (!content || !profile || !store) return;
     const c = new SessionController({ userId: profile.id, subject, mode, topicId, questionCount: COUNT[mode], index: content, store });
     ctrl.current = c;
+    startedAt.current = Date.now();
+    setElapsed(0);
     const q = c.start();
     setQuestion(q);
     setAnswer(null);
@@ -85,6 +90,13 @@ export function SessionView() {
     return () => window.removeEventListener("keydown", onKey);
   }, [result, next, submit, question, answer]);
 
+  // Exam mode: visible stopwatch, like the real Prüfung.
+  useEffect(() => {
+    if (mode !== "MSA") return;
+    const id = window.setInterval(() => setElapsed(Math.floor((Date.now() - startedAt.current) / 1000)), 1000);
+    return () => window.clearInterval(id);
+  }, [mode]);
+
   const topic = useMemo(() => (question && content ? content.topicById(question.topicId) : undefined), [question, content]);
   const lesson = useMemo(() => (question && content ? content.lessonFor(question.topicId) : undefined), [question, content]);
 
@@ -103,6 +115,8 @@ export function SessionView() {
   const progress = c.progress;
   const repair = c.repairQueue;
   const ready = isAnswerReady(question, answer);
+  // Teil 1 of the real exam (Basisaufgaben) is hilfsmittelfrei: no calculator.
+  const noCalc = mode === "MSA" && (question.tags ?? []).includes("basisaufgabe");
 
   return (
     <div className={`subject-${subject} mx-auto max-w-3xl px-4 pb-32`}>
@@ -116,6 +130,11 @@ export function SessionView() {
             {MODE_LABEL[mode]} · {SUBJECT_LABEL[subject]}
           </div>
           <div className="text-sm tabular-nums text-ink-3">
+            {mode === "MSA" && (
+              <span className="mr-3" aria-label="Verstrichene Zeit">
+                ⏱ {fmtTime(elapsed)}
+              </span>
+            )}
             {progress.answered + (result ? 0 : 1)}/{progress.total}
           </div>
         </div>
@@ -142,6 +161,7 @@ export function SessionView() {
             ))}
           </span>
           {question.source && <span className="text-xs text-ink-3">{question.source}</span>}
+          {noCalc && <Chip tone="yellow">🚫🧮 ohne Taschenrechner</Chip>}
         </div>
         <div className="card-solid p-5 sm:p-7">
           <MathText text={question.prompt} className="text-xl leading-relaxed sm:text-2xl" />
@@ -190,7 +210,7 @@ export function SessionView() {
         <div className="mx-auto flex max-w-3xl items-center gap-2">
           {subject === "MATH" && (
             <>
-              <Button variant="ghost" onClick={() => setShowCalc((v) => !v)} aria-pressed={showCalc} aria-label="Taschenrechner">
+              <Button variant="ghost" onClick={() => setShowCalc((v) => !v)} aria-pressed={showCalc} aria-label="Taschenrechner" disabled={noCalc} title={noCalc ? "Basisaufgabe: ohne Taschenrechner" : undefined}>
                 🧮
               </Button>
               <Button variant="ghost" onClick={() => setShowFormulas(true)} aria-label="Formelblatt">
@@ -209,7 +229,7 @@ export function SessionView() {
           )}
         </div>
       </div>
-      {showCalc && (
+      {showCalc && !noCalc && (
         <div className="fixed bottom-20 right-3 z-30 anim-pop">
           <Calculator onClose={() => setShowCalc(false)} />
         </div>

@@ -140,6 +140,7 @@ export interface RenderedQuestion {
   vars: Record<string, number | string>;
   source?: string;
   figure?: string;
+  tags?: string[];
 }
 
 export interface Lesson {
@@ -198,6 +199,20 @@ export interface AttemptResult {
   inRepairMode: boolean;
 }
 
+/** One answered question, for the per-task summary at the end of a session. */
+export interface SessionItem {
+  questionId: string;
+  topicId: string;
+  prompt: string;
+  difficulty: number;
+  isCorrect: boolean;
+  responseTimeMs: number;
+  userAnswer: string;
+  correctAnswerText: string;
+  source?: string;
+  inRepair: boolean;
+}
+
 export interface SessionStats {
   totalQuestions: number;
   correctCount: number;
@@ -206,6 +221,7 @@ export interface SessionStats {
   topicsPracticed: string[];
   strengthenedTopics: string[];
   weakTopics: string[];
+  items: SessionItem[];
 }
 
 export interface RepairQueue {
