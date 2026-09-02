@@ -1,0 +1,107 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "msa-trainer/content/v2",
+  "title": "MSA Trainer content pack v2",
+  "definitions": {
+    "subject": { "type": "string", "enum": ["MATH", "DE", "EN"] },
+    "topic": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "subject", "code", "name", "parentId"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[A-Z][A-Z0-9_]+$" },
+        "subject": { "$ref": "#/definitions/subject" },
+        "code": { "type": "string", "minLength": 1 },
+        "name": { "type": "string", "minLength": 1 },
+        "parentId": { "type": ["string", "null"] },
+        "description": { "type": "string" }
+      }
+    },
+    "section": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "body"],
+      "properties": {
+        "kind": { "type": "string", "enum": ["what", "terms", "formula", "steps", "mistake", "remember", "answer", "example", "text"] },
+        "title": { "type": "string" },
+        "body": { "type": "string" }
+      }
+    },
+    "explanation": {
+      "oneOf": [{ "type": "string", "minLength": 1 }, { "type": "array", "minItems": 1, "items": { "$ref": "#/definitions/section" } }]
+    },
+    "variable": {
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["type", "min", "max"],
+          "properties": { "type": { "const": "int" }, "min": { "type": "integer" }, "max": { "type": "integer" }, "step": { "type": "integer", "minimum": 1 } }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["type", "min", "max", "step"],
+          "properties": { "type": { "const": "float" }, "min": { "type": "number" }, "max": { "type": "number" }, "step": { "type": "number", "exclusiveMinimum": 0 } }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["type", "values"],
+          "properties": { "type": { "const": "choice" }, "values": { "type": "array", "minItems": 1, "items": { "type": ["string", "number"] } } }
+        }
+      ]
+    },
+    "variants": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["enabled", "variables"],
+      "properties": {
+        "enabled": { "type": "boolean" },
+        "variables": { "type": "object", "additionalProperties": { "$ref": "#/definitions/variable" } },
+        "derived": { "type": "object", "additionalProperties": { "type": "string" } },
+        "constraints": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "question": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "subject", "topicId", "difficulty", "qtype", "prompt", "payload", "solution", "explanation", "tags"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[A-Z][A-Za-z0-9_]+$" },
+        "subject": { "$ref": "#/definitions/subject" },
+        "topicId": { "type": "string" },
+        "difficulty": { "type": "integer", "minimum": 1, "maximum": 5 },
+        "qtype": { "type": "string", "enum": ["MCQ", "CLOZE", "MATCH", "SHORT"] },
+        "prompt": { "type": "string", "minLength": 1 },
+        "payload": { "type": "object" },
+        "solution": { "type": "object" },
+        "explanation": { "$ref": "#/definitions/explanation" },
+        "tags": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+        "variants": { "$ref": "#/definitions/variants" },
+        "source": { "type": "string" },
+        "figure": { "type": "string" }
+      }
+    },
+    "lesson": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "subject", "topicId", "title", "sections"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^L_[A-Z][A-Za-z0-9_]+$" },
+        "subject": { "$ref": "#/definitions/subject" },
+        "topicId": { "type": "string" },
+        "title": { "type": "string", "minLength": 1 },
+        "intro": { "type": "string" },
+        "sections": { "type": "array", "minItems": 1, "items": { "$ref": "#/definitions/section" } },
+        "source": { "type": "string" }
+      }
+    }
+  },
+  "type": "object",
+  "properties": {
+    "topics": { "type": "array", "items": { "$ref": "#/definitions/topic" } },
+    "questions": { "type": "array", "items": { "$ref": "#/definitions/question" } },
+    "lessons": { "type": "array", "items": { "$ref": "#/definitions/lesson" } }
+  }
+}

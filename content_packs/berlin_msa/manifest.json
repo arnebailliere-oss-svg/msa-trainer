@@ -1,0 +1,10 @@
+{
+  "packId": "berlin_msa",
+  "version": "2.0.0",
+  "title": "Berlin MSA Klasse 9/10",
+  "subjects": [
+    "MATH",
+    "DE",
+    "EN"
+  ]
+}

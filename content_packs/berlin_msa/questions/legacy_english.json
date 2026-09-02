@@ -1,0 +1,3701 @@
+[
+  {
+    "id": "EN_USE_TENSES_001",
+    "subject": "EN",
+    "topicId": "EN_USE_TENSES",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Choose the correct sentence.",
+    "payload": {
+      "choices": [
+        "She go to school every day.",
+        "She goes to school every day.",
+        "She going to school every day.",
+        "She is go to school every day."
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "She goes to school every day."
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "What is this",
+        "body": "Present Simple - for habits and routines."
+      },
+      {
+        "kind": "terms",
+        "title": "The rule",
+        "body": "With he/she/it → add -s or -es to the verb!"
+      },
+      {
+        "kind": "steps",
+        "title": "How it works",
+        "body": "I go → She goes\n   ↑        ↑\n  (no s)   (+s)"
+      },
+      {
+        "kind": "text",
+        "title": "Signal words",
+        "body": "'every day' = routine = Present Simple"
+      },
+      {
+        "kind": "remember",
+        "title": "Remember",
+        "body": "I/you/we/they → go\nhe/she/it → goes"
+      },
+      {
+        "kind": "mistake",
+        "title": "Common mistakes",
+        "body": "• 'She go' (missing -s)\n• 'She is go' (wrong structure)\n• 'She going' (missing 'is' for continuous)"
+      },
+      {
+        "kind": "answer",
+        "title": "Answer",
+        "body": "She goes to school every day."
+      }
+    ],
+    "tags": [
+      "MSA",
+      "grammar",
+      "present_simple"
+    ]
+  },
+  {
+    "id": "EN_USE_TENSES_002",
+    "subject": "EN",
+    "topicId": "EN_USE_TENSES",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Choose the correct sentence.",
+    "payload": {
+      "choices": [
+        "Look! The cat sleep on the sofa.",
+        "Look! The cat sleeps on the sofa.",
+        "Look! The cat is sleeping on the sofa.",
+        "Look! The cat slept on the sofa."
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "Look! The cat is sleeping on the sofa."
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "What is this",
+        "body": "Present Continuous - for actions happening RIGHT NOW."
+      },
+      {
+        "kind": "terms",
+        "title": "The rule",
+        "body": "'Look!' = something is happening NOW\n→ Use Present Continuous: am/is/are + verb-ing"
+      },
+      {
+        "kind": "steps",
+        "title": "Structure",
+        "body": "[am/is/are] + [verb + ing]\nThe cat is sleeping\n      ↑     ↑\n     is   -ing"
+      },
+      {
+        "kind": "text",
+        "title": "Signal words",
+        "body": "Look! Listen! Right now! At the moment!\n→ Present Continuous!"
+      },
+      {
+        "kind": "remember",
+        "title": "Comparison",
+        "body": "• Every day → Present Simple (habit)\n• Right now → Present Continuous (now)"
+      },
+      {
+        "kind": "mistake",
+        "title": "Common mistake",
+        "body": "Using Present Simple for current actions!"
+      },
+      {
+        "kind": "answer",
+        "title": "Answer",
+        "body": "Look! The cat is sleeping on the sofa."
+      }
+    ],
+    "tags": [
+      "MSA",
+      "grammar",
+      "present_continuous"
+    ]
+  },
+  {
+    "id": "EN_USE_TENSES_003",
+    "subject": "EN",
+    "topicId": "EN_USE_TENSES",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Choose the correct sentence for yesterday.",
+    "payload": {
+      "choices": [
+        "I walk to school yesterday.",
+        "I walks to school yesterday.",
+        "I walked to school yesterday.",
+        "I am walking to school yesterday."
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "I walked to school yesterday."
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "What is this",
+        "body": "Past Simple - for completed actions in the past."
+      },
+      {
+        "kind": "terms",
+        "title": "The rule",
+        "body": "'yesterday' = past = Past Simple"
+      },
+      {
+        "kind": "steps",
+        "title": "How to form",
+        "body": "Regular verbs: add -ed\nwalk → walked\nplay → played"
+      },
+      {
+        "kind": "text",
+        "title": "Signal words",
+        "body": "yesterday, last week, ago, in 2020\n→ Past Simple!"
+      },
+      {
+        "kind": "remember",
+        "title": "Remember",
+        "body": "Past Simple is the SAME for all persons:\nI walked, you walked, he walked, we walked"
+      },
+      {
+        "kind": "mistake",
+        "title": "Common mistakes",
+        "body": "• 'I walk yesterday' (wrong tense)\n• 'I was walked' (wrong structure)"
+      },
+      {
+        "kind": "answer",
+        "title": "Answer",
+        "body": "I walked to school yesterday."
+      }
+    ],
+    "tags": [
+      "MSA",
+      "grammar",
+      "past_simple"
+    ]
+  },
+  {
+    "id": "EN_USE_TENSES_004",
+    "subject": "EN",
+    "topicId": "EN_USE_TENSES",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "Yesterday I ___ my homework and ___ TV.",
+    "payload": {
+      "choices": [
+        "do / watch",
+        "did / watched",
+        "done / watched",
+        "doing / watching"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "did / watched"
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "What is this",
+        "body": "Past Simple with irregular verb (do → did)."
+      },
+      {
+        "kind": "terms",
+        "title": "Irregular verbs",
+        "body": "Some verbs don't add -ed!\ndo → did (NOT 'doed'!)\nsee → saw\ngo → went"
+      },
+      {
+        "kind": "steps",
+        "title": "REGULAR vs IRREGULAR",
+        "body": "• watch → watched (regular: +ed)\n• do → did (irregular: changes completely)"
+      },
+      {
+        "kind": "remember",
+        "title": "Common irregular verbs",
+        "body": "do → did\ngo → went\nsee → saw\nhave → had\nmake → made\nget → got"
+      },
+      {
+        "kind": "mistake",
+        "title": "Important",
+        "body": "You MUST memorize irregular verbs!"
+      },
+      {
+        "kind": "answer",
+        "title": "Answer",
+        "body": "did / watched"
+      }
+    ],
+    "tags": [
+      "MSA",
+      "grammar",
+      "past_simple",
+      "irregular"
+    ]
+  },
+  {
+    "id": "EN_USE_TENSES_005",
+    "subject": "EN",
+    "topicId": "EN_USE_TENSES",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Which signal word indicates Present Simple?",
+    "payload": {
+      "choices": [
+        "right now",
+        "yesterday",
+        "every Monday",
+        "at the moment"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "every Monday"
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "What is this",
+        "body": "Signal words help you choose the right tense!"
+      },
+      {
+        "kind": "terms",
+        "title": "Signal word guide",
+        "body": ""
+      },
+      {
+        "kind": "steps",
+        "title": "PRESENT SIMPLE (habits)",
+        "body": "• every day/week/Monday\n• always, usually, often\n• sometimes, never"
+      },
+      {
+        "kind": "text",
+        "title": "PRESENT CONTINUOUS (now)",
+        "body": "• right now\n• at the moment\n• Look! Listen!"
+      },
+      {
+        "kind": "remember",
+        "title": "PAST SIMPLE (finished)",
+        "body": "• yesterday\n• last week/year\n• ago\n• in 2020"
+      },
+      {
+        "kind": "mistake",
+        "title": "Trick",
+        "body": "'every...' = routine = Present Simple"
+      },
+      {
+        "kind": "answer",
+        "title": "Answer",
+        "body": "every Monday"
+      }
+    ],
+    "tags": [
+      "MSA",
+      "grammar",
+      "signal_words"
+    ]
+  },
+  {
+    "id": "EN_USE_TENSES_006",
+    "subject": "EN",
+    "topicId": "EN_USE_TENSES",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "Complete: 'She ___ (not/like) pizza.'",
+    "payload": {
+      "choices": [
+        "don't like",
+        "doesn't like",
+        "not likes",
+        "isn't like"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "doesn't like"
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "What is this",
+        "body": "Present Simple negative with he/she/it."
+      },
+      {
+        "kind": "terms",
+        "title": "The rule",
+        "body": "he/she/it → doesn't + base verb\n(NOT 'don't'!)"
+      },
+      {
+        "kind": "steps",
+        "title": "Structure",
+        "body": "[doesn't] + [verb (no s!)]\nShe doesn't like\n     ↑         ↑\n  doesn't   no 's'!"
+      },
+      {
+        "kind": "text",
+        "title": "Full pattern",
+        "body": "I/you/we/they don't like\nhe/she/it doesn't like"
+      },
+      {
+        "kind": "mistake",
+        "title": "Common mistakes",
+        "body": "• 'She don't like' (wrong helper)\n• 'She doesn't likes' (double s!)"
+      },
+      {
+        "kind": "remember",
+        "title": "Remember",
+        "body": "The 's' goes to 'doesn't', NOT to the verb!"
+      },
+      {
+        "kind": "answer",
+        "title": "Answer",
+        "body": "doesn't like"
+      }
+    ],
+    "tags": [
+      "MSA",
+      "grammar",
+      "present_simple",
+      "negative"
+    ]
+  },
+  {
+    "id": "EN_USE_QUEST_NEG_001",
+    "subject": "EN",
+    "topicId": "EN_USE_QUEST_NEG",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Choose the correct question.",
+    "payload": {
+      "choices": [
+        "Do you like pizza?",
+        "Like you pizza?",
+        "You do like pizza?",
+        "Does you like pizza?"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "Do you like pizza?"
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "What is this",
+        "body": "Yes/No questions in Present Simple."
+      },
+      {
+        "kind": "terms",
+        "title": "The rule",
+        "body": "[Do/Does] + [subject] + [base verb]?"
+      },
+      {
+        "kind": "steps",
+        "title": "Structure",
+        "body": "Do you like pizza?\n↓   ↓    ↓\nDo  you  like (base form!)"
+      },
+      {
+        "kind": "text",
+        "title": "When to use which",
+        "body": "• I/you/we/they → DO you like?\n• he/she/it → DOES she like?"
+      },
+      {
+        "kind": "mistake",
+        "title": "Common mistakes",
+        "body": "• 'Like you pizza?' (missing Do)\n• 'Does you like?' (wrong match: Does + you)\n• 'Do you likes?' (verb shouldn't have -s)"
+      },
+      {
+        "kind": "remember",
+        "title": "Word order",
+        "body": "Statement: You like pizza.\nQuestion: Do you like pizza?"
+      },
+      {
+        "kind": "answer",
+        "title": "Answer",
+        "body": "Do you like pizza?"
+      }
+    ],
+    "tags": [
+      "MSA",
+      "grammar",
+      "questions"
+    ]
+  },
+  {
+    "id": "EN_USE_QUEST_NEG_002",
+    "subject": "EN",
+    "topicId": "EN_USE_QUEST_NEG",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Choose the correct question.",
+    "payload": {
+      "choices": [
+        "Does she likes coffee?",
+        "Do she like coffee?",
+        "Does she like coffee?",
+        "Is she like coffee?"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "Does she like coffee?"
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "What is this",
+        "body": "Questions with he/she/it in Present Simple."
+      },
+      {
+        "kind": "terms",
+        "title": "The rule",
+        "body": "he/she/it → DOES + base verb (no -s!)"
+      },
+      {
+        "kind": "steps",
+        "title": "Structure",
+        "body": "Does she like coffee?\n  ↓    ↓    ↓\nDoes  she  like (NOT likes!)"
+      },
+      {
+        "kind": "text",
+        "title": "Remember",
+        "body": "The 's' is already in 'Does'!\nDoes + like (NOT likes)"
+      },
+      {
+        "kind": "mistake",
+        "title": "Common mistakes",
+        "body": "• 'Does she likes?' (double -s!)\n• 'Do she like?' (wrong: Do + she)"
+      },
+      {
+        "kind": "remember",
+        "title": "Comparison",
+        "body": "Statement: She likes coffee.\nQuestion: Does she like coffee?\n          ↑ The 's' moved to 'Does'!"
+      },
+      {
+        "kind": "answer",
+        "title": "Answer",
+        "body": "Does she like coffee?"
+      }
+    ],
+    "tags": [
+      "MSA",
+      "grammar",
+      "questions"
+    ]
+  },
+  {
+    "id": "EN_USE_QUEST_NEG_003",
+    "subject": "EN",
+    "topicId": "EN_USE_QUEST_NEG",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Make a question: 'You went to Berlin.' → '___?'",
+    "payload": {
+      "choices": [
+        "Do you went to Berlin?",
+        "Did you go to Berlin?",
+        "Did you went to Berlin?",
+        "Were you go to Berlin?"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "Did you go to Berlin?"
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "What is this",
+        "body": "Past Simple questions."
+      },
+      {
+        "kind": "terms",
+        "title": "The rule",
+        "body": "[Did] + [subject] + [base verb]?"
+      },
+      {
+        "kind": "steps",
+        "title": "Structure",
+        "body": "Did you go to Berlin?\n ↓   ↓   ↓\nDid  you  go (BASE form, not 'went'!)"
+      },
+      {
+        "kind": "text",
+        "title": "Important",
+        "body": "'Did' already shows past tense!\nThe main verb goes back to BASE form:\nwent → go"
+      },
+      {
+        "kind": "mistake",
+        "title": "Common mistakes",
+        "body": "• 'Did you went?' (double past!)\n• 'Do you went?' (wrong tense)"
+      },
+      {
+        "kind": "remember",
+        "title": "Comparison",
+        "body": "Statement: You went to Berlin.\nQuestion: Did you go to Berlin?\n               ↑ Back to base form!"
+      },
+      {
+        "kind": "answer",
+        "title": "Answer",
+        "body": "Did you go to Berlin?"
+      }
+    ],
+    "tags": [
+      "MSA",
+      "grammar",
+      "questions",
+      "past"
+    ]
+  },
+  {
+    "id": "EN_USE_QUEST_NEG_004",
+    "subject": "EN",
+    "topicId": "EN_USE_QUEST_NEG",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Complete the short answer: 'Do you speak English?' - 'Yes, ___.'",
+    "payload": {
+      "choices": [
+        "I speak",
+        "I do",
+        "I am",
+        "I does"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "I do"
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "What is this",
+        "body": "Short answers in English."
+      },
+      {
+        "kind": "terms",
+        "title": "The rule",
+        "body": "Answer with the SAME helper verb!"
+      },
+      {
+        "kind": "steps",
+        "title": "Pattern",
+        "body": "Do you...? → Yes, I do. / No, I don't.\nDoes she...? → Yes, she does. / No, she doesn't.\nDid they...? → Yes, they did. / No, they didn't."
+      },
+      {
+        "kind": "text",
+        "title": "Why short answers",
+        "body": "In English, just 'Yes/No' sounds incomplete!\n'Yes' is okay, but 'Yes, I do' is better."
+      },
+      {
+        "kind": "mistake",
+        "title": "Common mistakes",
+        "body": "• 'Yes, I speak' (not wrong, but not natural)\n• 'Yes, I am' (wrong helper verb)"
+      },
+      {
+        "kind": "remember",
+        "title": "Remember",
+        "body": "The helper verb in the question = helper verb in answer!"
+      },
+      {
+        "kind": "answer",
+        "title": "Answer",
+        "body": "I do"
+      }
+    ],
+    "tags": [
+      "MSA",
+      "grammar",
+      "short_answers"
+    ]
+  },
+  {
+    "id": "EN_USE_MODALS_001",
+    "subject": "EN",
+    "topicId": "EN_USE_MODALS",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Choose the best option: 'You ___ wear a helmet when you ride a bike.'",
+    "payload": {
+      "choices": [
+        "can",
+        "must",
+        "might",
+        "did"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "must"
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "What is this",
+        "body": "Modal verbs - 'must' for rules and obligations."
+      },
+      {
+        "kind": "terms",
+        "title": "Modal meanings",
+        "body": "• can = ability (Ich kann...)\n• must = obligation/rule (Ich muss...)\n• should = advice (Ich sollte...)\n• might = possibility (vielleicht)"
+      },
+      {
+        "kind": "steps",
+        "title": "Context",
+        "body": "Helmet when riding = safety RULE\n→ must (you HAVE to!)"
+      },
+      {
+        "kind": "text",
+        "title": "Structure",
+        "body": "Modal verbs + BASE VERB (no 'to'!)\nYou must wear (NOT 'to wear')"
+      },
+      {
+        "kind": "mistake",
+        "title": "Common mistakes",
+        "body": "• 'You must to wear' (no 'to' needed!)\n• Using 'can' for rules (can = ability, not rule)"
+      },
+      {
+        "kind": "remember",
+        "title": "Remember",
+        "body": "Modals never change: he must, she must, they must (NOT 'musts'!)"
+      },
+      {
+        "kind": "answer",
+        "title": "Answer",
+        "body": "must"
+      }
+    ],
+    "tags": [
+      "MSA",
+      "grammar",
+      "modals"
+    ]
+  },
+  {
+    "id": "EN_USE_MODALS_002",
+    "subject": "EN",
+    "topicId": "EN_USE_MODALS",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "'___ you help me with my homework?'",
+    "payload": {
+      "choices": [
+        "Can",
+        "Must",
+        "Should",
+        "Have"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "Can"
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "What is this",
+        "body": "Modal verbs - 'can' for requests and ability."
+      },
+      {
+        "kind": "terms",
+        "title": "'can' uses",
+        "body": "1. Ability: I can swim. (Ich kann schwimmen.)\n2. Permission: Can I go? (Darf ich gehen?)\n3. Request: Can you help? (Kannst du helfen?)"
+      },
+      {
+        "kind": "steps",
+        "title": "Here",
+        "body": "Asking for help = polite request\n→ Can you help me?"
+      },
+      {
+        "kind": "text",
+        "title": "Comparison",
+        "body": "• Can you...? = friendly request\n• Must you...? = not natural for requests\n• Could you...? = more formal/polite"
+      },
+      {
+        "kind": "mistake",
+        "title": "Don't confuse",
+        "body": "'Can' (Können) ≠ 'Must' (Müssen)"
+      },
+      {
+        "kind": "answer",
+        "title": "Answer",
+        "body": "Can"
+      }
+    ],
+    "tags": [
+      "MSA",
+      "grammar",
+      "modals",
+      "can"
+    ]
+  },
+  {
+    "id": "EN_USE_MODALS_003",
+    "subject": "EN",
+    "topicId": "EN_USE_MODALS",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "'You ___ eat more vegetables. It's good for your health.'",
+    "payload": {
+      "choices": [
+        "can",
+        "must",
+        "should",
+        "might"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "should"
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "What is this",
+        "body": "Modal verbs - 'should' for advice."
+      },
+      {
+        "kind": "terms",
+        "title": "'SHOULD' = Advice (Ratschlag)",
+        "body": "It's a GOOD IDEA, but not a strict rule."
+      },
+      {
+        "kind": "steps",
+        "title": "Context",
+        "body": "'good for your health' = advice, recommendation\n→ should (you SHOULD do this)"
+      },
+      {
+        "kind": "text",
+        "title": "Comparison",
+        "body": "• must = you HAVE to (Pflicht)\n• should = it's a good idea (Empfehlung)\n• can = you are able to (Fähigkeit)"
+      },
+      {
+        "kind": "remember",
+        "title": "German translation",
+        "body": "should ≈ sollte\nmust ≈ muss"
+      },
+      {
+        "kind": "mistake",
+        "title": "Note",
+        "body": "'Should' is softer than 'must'!"
+      },
+      {
+        "kind": "answer",
+        "title": "Answer",
+        "body": "should"
+      }
+    ],
+    "tags": [
+      "MSA",
+      "grammar",
+      "modals",
+      "should"
+    ]
+  },
+  {
+    "id": "EN_VOCAB_TRAVEL_001",
+    "subject": "EN",
+    "topicId": "EN_VOCAB_TRAVEL",
+    "difficulty": 2,
+    "qtype": "MATCH",
+    "prompt": "Match the words with the meaning.",
+    "payload": {
+      "left": [
+        "ticket",
+        "luggage",
+        "platform"
+      ],
+      "right": [
+        "bags and suitcases",
+        "a place to wait for a train",
+        "a paper or digital pass"
+      ]
+    },
+    "solution": {
+      "pairs": [
+        [
+          "ticket",
+          "a paper or digital pass"
+        ],
+        [
+          "luggage",
+          "bags and suitcases"
+        ],
+        [
+          "platform",
+          "a place to wait for a train"
+        ]
+      ]
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "What is this",
+        "body": "Travel vocabulary - essential words for journeys."
+      },
+      {
+        "kind": "terms",
+        "title": "The words",
+        "body": ""
+      },
+      {
+        "kind": "steps",
+        "title": "Ticket",
+        "body": "= Fahrkarte, Eintrittskarte\na paper or digital pass to travel or enter"
+      },
+      {
+        "kind": "text",
+        "title": "Luggage",
+        "body": "= Gepäck\nbags and suitcases you take on a trip"
+      },
+      {
+        "kind": "remember",
+        "title": "Platform",
+        "body": "= Bahnsteig\nthe place at a train station where you wait"
+      },
+      {
+        "kind": "mistake",
+        "title": "Pronunciation",
+        "body": "• luggage = /ˈlʌɡɪdʒ/\n• platform = /ˈplætfɔːm/"
+      },
+      {
+        "kind": "answer",
+        "title": "Matches",
+        "body": "ticket → a paper or digital pass\nluggage → bags and suitcases\nplatform → a place to wait for a train"
+      }
+    ],
+    "tags": [
+      "MSA",
+      "vocabulary",
+      "travel"
+    ]
+  },
+  {
+    "id": "EN_VOCAB_TRAVEL_002",
+    "subject": "EN",
+    "topicId": "EN_VOCAB_TRAVEL",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "What does 'departure' mean?",
+    "payload": {
+      "choices": [
+        "when you arrive",
+        "when you leave",
+        "when you sleep",
+        "when you eat"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "when you leave"
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "What is this",
+        "body": "Travel vocabulary - departure vs arrival."
+      },
+      {
+        "kind": "terms",
+        "title": "The words",
+        "body": ""
+      },
+      {
+        "kind": "steps",
+        "title": "DEPARTURE (Abfahrt/Abflug)",
+        "body": "= when you LEAVE\n• departure time = Abfahrtszeit\n• departure gate = Abflug-Gate"
+      },
+      {
+        "kind": "text",
+        "title": "ARRIVAL (Ankunft)",
+        "body": "= when you ARRIVE\n• arrival time = Ankunftszeit"
+      },
+      {
+        "kind": "remember",
+        "title": "Memory trick",
+        "body": "• DEpart = leave (DE- like 'weg-')\n• ARrive = come (like 'ankommen')"
+      },
+      {
+        "kind": "mistake",
+        "title": "At airports",
+        "body": "Departures = where you check in to LEAVE\nArrivals = where people COME from flights"
+      },
+      {
+        "kind": "answer",
+        "title": "Answer",
+        "body": "when you leave"
+      }
+    ],
+    "tags": [
+      "MSA",
+      "vocabulary",
+      "travel"
+    ]
+  },
+  {
+    "id": "EN_VOCAB_SCHOOL_001",
+    "subject": "EN",
+    "topicId": "EN_VOCAB_SCHOOL",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "What is a 'timetable'?",
+    "payload": {
+      "choices": [
+        "a watch",
+        "a schedule showing when lessons happen",
+        "a type of desk",
+        "a homework book"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "a schedule showing when lessons happen"
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "What is this",
+        "body": "School vocabulary."
+      },
+      {
+        "kind": "terms",
+        "title": "TIMETABLE (Stundenplan)",
+        "body": "= a schedule showing when lessons/events happen"
+      },
+      {
+        "kind": "steps",
+        "title": "Example",
+        "body": "Monday 8:00 - Math\nMonday 9:00 - English\n→ This is a timetable!"
+      },
+      {
+        "kind": "text",
+        "title": "Related words",
+        "body": "• schedule = Zeitplan\n• lesson = Unterrichtsstunde\n• subject = Schulfach\n• break = Pause"
+      },
+      {
+        "kind": "remember",
+        "title": "Also used for",
+        "body": "• bus timetable = Busfahrplan\n• train timetable = Zugfahrplan"
+      },
+      {
+        "kind": "answer",
+        "title": "Answer",
+        "body": "a schedule showing when lessons happen"
+      }
+    ],
+    "tags": [
+      "MSA",
+      "vocabulary",
+      "school"
+    ]
+  },
+  {
+    "id": "EN_VOCAB_DAILYLIFE_001",
+    "subject": "EN",
+    "topicId": "EN_VOCAB_DAILYLIFE",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Which word means 'Frühstück'?",
+    "payload": {
+      "choices": [
+        "lunch",
+        "dinner",
+        "breakfast",
+        "snack"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "breakfast"
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "What is this",
+        "body": "Daily life vocabulary - meals."
+      },
+      {
+        "kind": "terms",
+        "title": "Meals of the day",
+        "body": ""
+      },
+      {
+        "kind": "steps",
+        "title": "BREAKFAST (Frühstück)",
+        "body": "= the FIRST meal of the day (morning)\nbreak + fast = 'breaking the fast' from sleeping"
+      },
+      {
+        "kind": "text",
+        "title": "LUNCH (Mittagessen)",
+        "body": "= midday meal (around 12:00)"
+      },
+      {
+        "kind": "remember",
+        "title": "DINNER (Abendessen)",
+        "body": "= evening meal (around 18:00-20:00)"
+      },
+      {
+        "kind": "mistake",
+        "title": "SNACK (Snack/Zwischenmahlzeit)",
+        "body": "= small food between meals"
+      },
+      {
+        "kind": "remember",
+        "title": "Memory trick",
+        "body": "Break-FAST = first meal, you 'break' your 'fast' (not eating while sleeping)"
+      },
+      {
+        "kind": "answer",
+        "title": "Answer",
+        "body": "breakfast"
+      }
+    ],
+    "tags": [
+      "MSA",
+      "vocabulary",
+      "daily_life"
+    ]
+  },
+  {
+    "id": "EN_READ_CORE_001",
+    "subject": "EN",
+    "topicId": "EN_READ_CORE",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "Read: 'Tom missed the bus, so he arrived late. The teacher was not angry because Tom had a note from his mother.' What is true?",
+    "payload": {
+      "choices": [
+        "Tom arrived early.",
+        "Tom arrived late and had an excuse.",
+        "The teacher was angry.",
+        "Tom missed the train."
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "Tom arrived late and had an excuse."
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "What is this",
+        "body": "Reading comprehension - finding facts in a text."
+      },
+      {
+        "kind": "terms",
+        "title": "Text analysis",
+        "body": "'Tom missed the bus' → He was late\n'arrived late' → confirms he was late\n'not angry because Tom had a note' → he had an excuse"
+      },
+      {
+        "kind": "steps",
+        "title": "Check each answer",
+        "body": "• 'arrived early' → FALSE (text says 'late')\n• 'arrived late and had an excuse' → TRUE ✓\n• 'teacher was angry' → FALSE (text says 'not angry')\n• 'missed the train' → FALSE (text says 'bus')"
+      },
+      {
+        "kind": "remember",
+        "title": "Reading tip",
+        "body": "Look for EXACT words in the text!\n'bus' ≠ 'train'\n'not angry' ≠ 'angry'"
+      },
+      {
+        "kind": "answer",
+        "title": "Answer",
+        "body": "Tom arrived late and had an excuse."
+      }
+    ],
+    "tags": [
+      "MSA",
+      "reading",
+      "true_false"
+    ]
+  },
+  {
+    "id": "EN_READ_CORE_002",
+    "subject": "EN",
+    "topicId": "EN_READ_CORE",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "Read: 'Dear Lisa, I can't come to your party on Saturday. I have to visit my grandmother. Sorry! Love, Anna.' Why can't Anna come?",
+    "payload": {
+      "choices": [
+        "She is sick.",
+        "She has to visit her grandmother.",
+        "She doesn't like parties.",
+        "She is on holiday."
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "She has to visit her grandmother."
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "What is this",
+        "body": "Reading comprehension - understanding a message."
+      },
+      {
+        "kind": "terms",
+        "title": "Text analysis",
+        "body": "'I can't come to your party'\n'I have to visit my grandmother'\n→ The reason is clearly stated!"
+      },
+      {
+        "kind": "steps",
+        "title": "Reading strategy",
+        "body": "Find the REASON:\n'I can't come' = what she can't do\n'I have to...' = why (the reason)"
+      },
+      {
+        "kind": "text",
+        "title": "Text type",
+        "body": "This is a short MESSAGE (informal note).\n• 'Dear Lisa' = greeting\n• 'Love, Anna' = closing"
+      },
+      {
+        "kind": "remember",
+        "title": "TIP",
+        "body": "In short texts, the answer is usually directly stated!"
+      },
+      {
+        "kind": "answer",
+        "title": "Answer",
+        "body": "She has to visit her grandmother."
+      }
+    ],
+    "tags": [
+      "MSA",
+      "reading",
+      "message"
+    ]
+  },
+  {
+    "id": "EN_READ_EMAILS_001",
+    "subject": "EN",
+    "topicId": "EN_READ_EMAILS",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "Read: 'Subject: Meeting tomorrow. Hi team, the meeting is at 10 a.m. in Room 5. Please bring your notes. Best, Mr. Smith.' When is the meeting?",
+    "payload": {
+      "choices": [
+        "9 a.m.",
+        "10 a.m.",
+        "11 a.m.",
+        "5 p.m."
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "10 a.m."
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "What is this",
+        "body": "Reading emails - finding specific information."
+      },
+      {
+        "kind": "terms",
+        "title": "Email structure",
+        "body": "• Subject line: 'Meeting tomorrow'\n• Greeting: 'Hi team'\n• Body: time, place, request\n• Closing: 'Best, Mr. Smith'"
+      },
+      {
+        "kind": "steps",
+        "title": "Finding information",
+        "body": "Time: 'at 10 a.m.'\nPlace: 'in Room 5'\nRequest: 'Please bring your notes'"
+      },
+      {
+        "kind": "text",
+        "title": "Email reading tip",
+        "body": "Scan for KEY WORDS:\n• Numbers (10, 5)\n• Time words (a.m., p.m.)\n• Place words (Room, office)"
+      },
+      {
+        "kind": "remember",
+        "title": "Careful",
+        "body": "'Room 5' is the PLACE, not the time!"
+      },
+      {
+        "kind": "answer",
+        "title": "Answer",
+        "body": "10 a.m."
+      }
+    ],
+    "tags": [
+      "MSA",
+      "reading",
+      "email"
+    ]
+  },
+  {
+    "id": "EN_WRITE_ERRORFIX_001",
+    "subject": "EN",
+    "topicId": "EN_WRITE_ERRORFIX",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "Fix the sentence: 'He dont like football.'",
+    "payload": {
+      "choices": [
+        "He doesn't likes football.",
+        "He don't likes football.",
+        "He doesn't like football.",
+        "He not like football."
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "He doesn't like football."
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "What is this",
+        "body": "Error correction - Present Simple negative."
+      },
+      {
+        "kind": "terms",
+        "title": "The error",
+        "body": "'He dont like' → TWO mistakes!\n1. 'dont' should be 'doesn't' (he/she/it)\n2. Missing apostrophe"
+      },
+      {
+        "kind": "steps",
+        "title": "Correct form",
+        "body": "he/she/it + doesn't + base verb\nHe doesn't like\n     ↑         ↑\n  doesn't   no -s!"
+      },
+      {
+        "kind": "mistake",
+        "title": "Common mistakes",
+        "body": "• 'doesn't likes' → double marking!\n• 'don't' with he/she/it → wrong helper\n• 'not like' → missing helper verb"
+      },
+      {
+        "kind": "remember",
+        "title": "Rule",
+        "body": "The -s goes to 'doesn't', NOT the main verb!"
+      },
+      {
+        "kind": "answer",
+        "title": "Answer",
+        "body": "He doesn't like football."
+      }
+    ],
+    "tags": [
+      "MSA",
+      "writing",
+      "error_correction"
+    ]
+  },
+  {
+    "id": "EN_WRITE_ERRORFIX_002",
+    "subject": "EN",
+    "topicId": "EN_WRITE_ERRORFIX",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "Fix the sentence: 'Yesterday I go to the cinema.'",
+    "payload": {
+      "choices": [
+        "Yesterday I goes to the cinema.",
+        "Yesterday I went to the cinema.",
+        "Yesterday I am go to the cinema.",
+        "Yesterday I going to the cinema."
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "Yesterday I went to the cinema."
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "What is this",
+        "body": "Error correction - Past Simple."
+      },
+      {
+        "kind": "terms",
+        "title": "The error",
+        "body": "'Yesterday' = past time\n'go' = present form\n→ Tense mismatch!"
+      },
+      {
+        "kind": "steps",
+        "title": "Correction",
+        "body": "go → went (irregular verb!)"
+      },
+      {
+        "kind": "text",
+        "title": "Irregular verb",
+        "body": "go - went - gone\nNOT: go - goed - goed!"
+      },
+      {
+        "kind": "mistake",
+        "title": "Common mistakes",
+        "body": "• Using present tense with past time words\n• 'goed' (go is irregular!)"
+      },
+      {
+        "kind": "remember",
+        "title": "Signal word check",
+        "body": "Yesterday = PAST → use PAST tense!"
+      },
+      {
+        "kind": "answer",
+        "title": "Answer",
+        "body": "Yesterday I went to the cinema."
+      }
+    ],
+    "tags": [
+      "MSA",
+      "writing",
+      "error_correction",
+      "past"
+    ]
+  },
+  {
+    "id": "EN_WRITE_ERRORFIX_003",
+    "subject": "EN",
+    "topicId": "EN_WRITE_ERRORFIX",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "Fix the sentence: 'She can to swim very well.'",
+    "payload": {
+      "choices": [
+        "She can swim very well.",
+        "She cans swim very well.",
+        "She can swims very well.",
+        "She can swimming very well."
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "She can swim very well."
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "What is this",
+        "body": "Error correction - Modal verbs."
+      },
+      {
+        "kind": "terms",
+        "title": "The error",
+        "body": "'can to swim' → 'to' is wrong!\nModal verbs DON'T use 'to'!"
+      },
+      {
+        "kind": "steps",
+        "title": "Correct structure",
+        "body": "[modal] + [base verb] (NO 'to'!)\nShe can swim\n    ↑    ↑\n  can  swim (not 'to swim')"
+      },
+      {
+        "kind": "text",
+        "title": "Modal verbs",
+        "body": "can, must, should, will, would, might\n→ ALL followed by BASE VERB, no 'to'!"
+      },
+      {
+        "kind": "mistake",
+        "title": "Common mistakes",
+        "body": "• 'can to swim' → remove 'to'\n• 'cans swim' → modals don't add -s!\n• 'can swims' → base verb, no -s!"
+      },
+      {
+        "kind": "answer",
+        "title": "Answer",
+        "body": "She can swim very well."
+      }
+    ],
+    "tags": [
+      "MSA",
+      "writing",
+      "error_correction",
+      "modals"
+    ]
+  },
+  {
+    "id": "EN_WRITE_GUIDED_001",
+    "subject": "EN",
+    "topicId": "EN_WRITE_GUIDED",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Complete: 'My name ___ Lisa.'",
+    "payload": {
+      "choices": [
+        "am",
+        "is",
+        "are",
+        "be"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "is"
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "What is this",
+        "body": "The verb 'to be' - basic introduction."
+      },
+      {
+        "kind": "terms",
+        "title": "'be' forms",
+        "body": "• I am\n• you are\n• he/she/it is\n• we are\n• they are"
+      },
+      {
+        "kind": "steps",
+        "title": "Here",
+        "body": "'My name' = it (a thing)\n→ My name IS Lisa"
+      },
+      {
+        "kind": "text",
+        "title": "Common phrases",
+        "body": "• My name is...\n• I am... years old\n• I am from..."
+      },
+      {
+        "kind": "remember",
+        "title": "Shortcut",
+        "body": "If it's not I/you/we/they, use 'is'!"
+      },
+      {
+        "kind": "mistake",
+        "title": "Don't say",
+        "body": "'My name am Lisa' ✗\n'My name are Lisa' ✗"
+      },
+      {
+        "kind": "answer",
+        "title": "Answer",
+        "body": "is"
+      }
+    ],
+    "tags": [
+      "MSA",
+      "writing",
+      "guided",
+      "be"
+    ]
+  },
+  {
+    "id": "EN_USE_COMPARISON_001",
+    "subject": "EN",
+    "topicId": "EN_USE_COMPARISON",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Complete: 'A car is ___ than a bike.'",
+    "payload": {
+      "choices": [
+        "fast",
+        "faster",
+        "fastest",
+        "more fast"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "faster"
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "What is this",
+        "body": "Comparatives - comparing two things."
+      },
+      {
+        "kind": "terms",
+        "title": "The rule",
+        "body": "Short adjectives (1-2 syllables) → add -er\nfast → faster\ntall → taller"
+      },
+      {
+        "kind": "steps",
+        "title": "Structure",
+        "body": "[adjective + er] + than\nA car is faster than a bike."
+      },
+      {
+        "kind": "text",
+        "title": "Spelling rules",
+        "body": "• fast → faster\n• big → bigger (double consonant)\n• happy → happier (y → i)"
+      },
+      {
+        "kind": "mistake",
+        "title": "Long adjectives",
+        "body": "3+ syllables → more + adjective\n• beautiful → more beautiful\n• NOT 'beautifuler'!"
+      },
+      {
+        "kind": "remember",
+        "title": "Remember",
+        "body": "Comparing TWO things = -er or 'more'\nSuperlative (THE best) = -est or 'most'"
+      },
+      {
+        "kind": "answer",
+        "title": "Answer",
+        "body": "faster"
+      }
+    ],
+    "tags": [
+      "MSA",
+      "grammar",
+      "comparison"
+    ]
+  },
+  {
+    "id": "EN_USE_COMPARISON_002",
+    "subject": "EN",
+    "topicId": "EN_USE_COMPARISON",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "Complete: 'This is the ___ book I have ever read.'",
+    "payload": {
+      "choices": [
+        "good",
+        "better",
+        "best",
+        "more good"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "best"
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "What is this",
+        "body": "Superlative + irregular adjective."
+      },
+      {
+        "kind": "terms",
+        "title": "'the ___' = superlative",
+        "body": "Comparing more than 2 → superlative (the -est)"
+      },
+      {
+        "kind": "steps",
+        "title": "Irregular forms",
+        "body": "good → better → best\nbad → worse → worst\nmany → more → most"
+      },
+      {
+        "kind": "text",
+        "title": "Structure",
+        "body": "the + superlative\n'the best book'"
+      },
+      {
+        "kind": "mistake",
+        "title": "Common mistakes",
+        "body": "• 'the most good' ✗ (good is irregular!)\n• 'the better' ✗ (that's comparative)\n• 'more good' ✗ (irregular!)"
+      },
+      {
+        "kind": "remember",
+        "title": "Memorize",
+        "body": "good - better - best\nbad - worse - worst"
+      },
+      {
+        "kind": "answer",
+        "title": "Answer",
+        "body": "best"
+      }
+    ],
+    "tags": [
+      "MSA",
+      "grammar",
+      "comparison",
+      "superlative"
+    ]
+  },
+  {
+    "id": "EN_USE_TENSES_TRAIN_001",
+    "subject": "EN",
+    "topicId": "EN_USE_TENSES",
+    "difficulty": 1,
+    "qtype": "MCQ",
+    "prompt": "Which tense is used for habits and regular actions? Example: 'I usually watch TV in the evening.'",
+    "payload": {
+      "choices": [
+        "Simple Present",
+        "Present Perfect",
+        "Present Progressive",
+        "Simple Past"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "Simple Present"
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "What is this",
+        "body": "Identifying the Simple Present tense."
+      },
+      {
+        "kind": "terms",
+        "title": "Simple present - uses",
+        "body": "• Habits and routines (Gewohnheiten)\n• General facts (Fakten)\n• Regular actions (regelmäßige Handlungen)"
+      },
+      {
+        "kind": "steps",
+        "title": "Formation",
+        "body": "Infinitive (+ -s/-es for he/she/it)\nI watch → He watches"
+      },
+      {
+        "kind": "remember",
+        "title": "Signal words",
+        "body": "• usually, sometimes, always\n• every day, often, never\n• on Mondays, in the morning"
+      },
+      {
+        "kind": "text",
+        "title": "Examples",
+        "body": "• I usually watch TV. (Gewohnheit)\n• The sun rises in the east. (Fakt)\n• She works in Berlin. (regelmäßig)"
+      },
+      {
+        "kind": "mistake",
+        "title": "NOT",
+        "body": "• Present Progressive = NOW (gerade jetzt)\n• Present Perfect = connection past-present"
+      },
+      {
+        "kind": "answer",
+        "title": "Answer",
+        "body": "Simple Present"
+      }
+    ],
+    "tags": [
+      "MSA",
+      "training",
+      "tenses",
+      "Simple_Present",
+      "grammar"
+    ]
+  },
+  {
+    "id": "EN_USE_TENSES_TRAIN_002",
+    "subject": "EN",
+    "topicId": "EN_USE_TENSES",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Which tense is correct? 'I have just arrived at the airport.'",
+    "payload": {
+      "choices": [
+        "Present Perfect",
+        "Simple Past",
+        "Simple Present",
+        "Past Progressive"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "Present Perfect"
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "What is this",
+        "body": "Identifying the Present Perfect tense."
+      },
+      {
+        "kind": "terms",
+        "title": "Present perfect - uses",
+        "body": "• Action just completed (gerade abgeschlossen)\n• Past action with present result\n• Experience (Erfahrung)"
+      },
+      {
+        "kind": "steps",
+        "title": "Formation",
+        "body": "have/has + past participle (3rd form)"
+      },
+      {
+        "kind": "steps",
+        "title": "Analysis",
+        "body": "'I HAVE just ARRIVED'\n  ↓           ↓\nhave    +  past participle\n= PRESENT PERFECT"
+      },
+      {
+        "kind": "remember",
+        "title": "Signal words",
+        "body": "• just, recently (gerade)\n• yet, already, still\n• since, for\n• ever, never"
+      },
+      {
+        "kind": "text",
+        "title": "Examples",
+        "body": "• I have just finished. (gerade fertig)\n• She has lived here since 2010. (seit)\n• Have you ever been to London? (jemals)"
+      },
+      {
+        "kind": "answer",
+        "title": "Answer",
+        "body": "Present Perfect"
+      }
+    ],
+    "tags": [
+      "MSA",
+      "training",
+      "tenses",
+      "Present_Perfect",
+      "grammar"
+    ]
+  },
+  {
+    "id": "EN_USE_TENSES_TRAIN_003",
+    "subject": "EN",
+    "topicId": "EN_USE_TENSES",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Which tense is correct? 'They are calling their grandma right now.'",
+    "payload": {
+      "choices": [
+        "Present Progressive",
+        "Simple Present",
+        "Present Perfect",
+        "Simple Past"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "Present Progressive"
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "What is this",
+        "body": "Identifying the Present Progressive tense."
+      },
+      {
+        "kind": "terms",
+        "title": "Present progressive - uses",
+        "body": "• Action happening NOW (jetzt gerade)\n• Temporary situation\n• Fixed plans (feste Pläne)"
+      },
+      {
+        "kind": "steps",
+        "title": "Formation",
+        "body": "to be (am/is/are) + verb + -ing"
+      },
+      {
+        "kind": "steps",
+        "title": "Analysis",
+        "body": "'They ARE CALLING their grandma right now.'\n      ↓    ↓\n   are + calling (-ing)\n= PRESENT PROGRESSIVE"
+      },
+      {
+        "kind": "remember",
+        "title": "Signal words",
+        "body": "• right now, now\n• at the moment\n• currently\n• Look! Listen!"
+      },
+      {
+        "kind": "text",
+        "title": "Examples",
+        "body": "• I am studying right now. (gerade jetzt)\n• She is working at the moment. (im Moment)\n• Look! It is raining! (Schau!)"
+      },
+      {
+        "kind": "mistake",
+        "title": "NOT Simple Present",
+        "body": "'They call' = habit/regularly\n'They are calling' = right now"
+      },
+      {
+        "kind": "answer",
+        "title": "Answer",
+        "body": "Present Progressive"
+      }
+    ],
+    "tags": [
+      "MSA",
+      "training",
+      "tenses",
+      "Present_Progressive",
+      "grammar"
+    ]
+  },
+  {
+    "id": "EN_USE_TENSES_TRAIN_004",
+    "subject": "EN",
+    "topicId": "EN_USE_TENSES",
+    "difficulty": 2,
+    "qtype": "CLOZE",
+    "prompt": "Complete the sentence with the correct form: 'She ___ (go) to school every day.'",
+    "payload": {
+      "text_with_blanks": "She ___ to school every day.",
+      "blanks": [
+        {
+          "id": 1,
+          "choices": [
+            "goes",
+            "go",
+            "is going",
+            "has gone"
+          ]
+        }
+      ]
+    },
+    "solution": {
+      "answers": {
+        "1": "goes"
+      }
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "What is this",
+        "body": "Simple Present with he/she/it."
+      },
+      {
+        "kind": "terms",
+        "title": "The rule",
+        "body": "Simple Present + he/she/it → add -s or -es"
+      },
+      {
+        "kind": "steps",
+        "title": "Why 'goes'",
+        "body": "1. 'every day' = Signal for Simple Present ✓\n2. 'She' = 3rd person singular\n3. go → goes (add -es)"
+      },
+      {
+        "kind": "remember",
+        "title": "Spelling rules for -s/-es",
+        "body": "• Most verbs: add -s (play → plays)\n• Verbs ending in -s, -sh, -ch, -x, -o: add -es\n  go → goes\n  watch → watches\n  wash → washes\n• Verbs ending in consonant + y: y → ies\n  study → studies\n  try → tries"
+      },
+      {
+        "kind": "mistake",
+        "title": "NOT",
+        "body": "• 'is going' = Present Progressive (NOW)\n• 'has gone' = Present Perfect"
+      },
+      {
+        "kind": "answer",
+        "title": "Answer",
+        "body": "goes"
+      }
+    ],
+    "tags": [
+      "MSA",
+      "training",
+      "tenses",
+      "Simple_Present",
+      "third_person"
+    ]
+  },
+  {
+    "id": "EN_USE_TENSES_TRAIN_005",
+    "subject": "EN",
+    "topicId": "EN_USE_TENSES",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "What is the Simple Past form of 'go'?",
+    "payload": {
+      "choices": [
+        "went",
+        "gone",
+        "goed",
+        "goes"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "went"
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "What is this",
+        "body": "Irregular verb: go - went - gone"
+      },
+      {
+        "kind": "terms",
+        "title": "Irregular verbs",
+        "body": "They don't follow the regular -ed pattern!\nYou must memorize them."
+      },
+      {
+        "kind": "steps",
+        "title": "GO (irregular verb)",
+        "body": "Simple Present: go/goes\nSimple Past: went\nPast Participle: gone"
+      },
+      {
+        "kind": "remember",
+        "title": "Usage",
+        "body": "• 'I went to school yesterday.' (Simple Past)\n• 'I have gone home.' (Present Perfect)"
+      },
+      {
+        "kind": "mistake",
+        "title": "Common mistake",
+        "body": "'goed' is WRONG! ❌\n'go' is irregular → 'went'"
+      },
+      {
+        "kind": "text",
+        "title": "More irregular verbs",
+        "body": "• see → saw → seen\n• come → came → come\n• take → took → taken\n• write → wrote → written"
+      },
+      {
+        "kind": "answer",
+        "title": "Answer",
+        "body": "went"
+      }
+    ],
+    "tags": [
+      "MSA",
+      "training",
+      "irregular_verbs",
+      "Simple_Past",
+      "go"
+    ]
+  },
+  {
+    "id": "EN_USE_TENSES_TRAIN_006",
+    "subject": "EN",
+    "topicId": "EN_USE_TENSES",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "What is the Past Participle of 'write'?",
+    "payload": {
+      "choices": [
+        "written",
+        "wrote",
+        "writed",
+        "writing"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "written"
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "What is this",
+        "body": "Irregular verb: write - wrote - written"
+      },
+      {
+        "kind": "terms",
+        "title": "The three forms",
+        "body": "1. Infinitive/Simple Present: write\n2. Simple Past: wrote\n3. Past Participle: written"
+      },
+      {
+        "kind": "steps",
+        "title": "When do we use past participle",
+        "body": "• Present Perfect: I have written a letter.\n• Past Perfect: I had written a letter.\n• Passive: The letter was written."
+      },
+      {
+        "kind": "remember",
+        "title": "SIMILAR PATTERN (-en ending)",
+        "body": "• write → wrote → written\n• drive → drove → driven\n• ride → rode → ridden\n• rise → rose → risen"
+      },
+      {
+        "kind": "mistake",
+        "title": "Common mistake",
+        "body": "'writed' is WRONG! ❌\nIrregular verbs don't use -ed!"
+      },
+      {
+        "kind": "answer",
+        "title": "Answer",
+        "body": "written"
+      }
+    ],
+    "tags": [
+      "MSA",
+      "training",
+      "irregular_verbs",
+      "Past_Participle",
+      "write"
+    ]
+  },
+  {
+    "id": "EN_USE_TENSES_TRAIN_007",
+    "subject": "EN",
+    "topicId": "EN_USE_TENSES",
+    "difficulty": 2,
+    "qtype": "MATCH",
+    "prompt": "Match the verbs with their Simple Past forms.",
+    "payload": {
+      "left": [
+        "see",
+        "take",
+        "know",
+        "tell"
+      ],
+      "right": [
+        "saw",
+        "took",
+        "knew",
+        "told"
+      ]
+    },
+    "solution": {
+      "pairs": [
+        [
+          "see",
+          "saw"
+        ],
+        [
+          "take",
+          "took"
+        ],
+        [
+          "know",
+          "knew"
+        ],
+        [
+          "tell",
+          "told"
+        ]
+      ]
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "What is this",
+        "body": "Irregular verbs - Simple Past forms."
+      },
+      {
+        "kind": "terms",
+        "title": "The matches",
+        "body": "• see → saw (sehen → sah)\n• take → took (nehmen → nahm)\n• know → knew (wissen → wusste)\n• tell → told (erzählen → erzählte)"
+      },
+      {
+        "kind": "remember",
+        "title": "Full forms",
+        "body": "• see - saw - seen\n• take - took - taken\n• know - knew - known\n• tell - told - told"
+      },
+      {
+        "kind": "text",
+        "title": "Learning tip",
+        "body": "Learn verbs in groups with similar patterns!\n\nGroup 1 (same Past & Participle):\ntell → told → told\nsell → sold → sold\nsend → sent → sent\n\nGroup 2 (vowel change):\nsee → saw → seen\nknow → knew → known"
+      },
+      {
+        "kind": "answer",
+        "title": "All pairs matched correctly!",
+        "body": ""
+      }
+    ],
+    "tags": [
+      "MSA",
+      "training",
+      "irregular_verbs",
+      "Simple_Past",
+      "matching"
+    ]
+  },
+  {
+    "id": "EN_USE_TENSES_TRAIN_008",
+    "subject": "EN",
+    "topicId": "EN_USE_TENSES",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Which sentence uses the Present Perfect correctly?",
+    "payload": {
+      "choices": [
+        "I have lived here since 2020.",
+        "I have lived here yesterday.",
+        "I lived here since 2020.",
+        "I am living here since 2020."
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "I have lived here since 2020."
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "What is this",
+        "body": "Correct use of Present Perfect with 'since'."
+      },
+      {
+        "kind": "terms",
+        "title": "The rule",
+        "body": "SINCE + point in time → PRESENT PERFECT\nFOR + duration → PRESENT PERFECT"
+      },
+      {
+        "kind": "steps",
+        "title": "Analysis",
+        "body": ""
+      },
+      {
+        "kind": "text",
+        "title": "'I have lived here since 2020.'",
+        "body": "Present Perfect + since = CORRECT!"
+      },
+      {
+        "kind": "text",
+        "title": "'I have lived here yesterday.'",
+        "body": "yesterday = finished time → Simple Past needed!"
+      },
+      {
+        "kind": "text",
+        "title": "'I lived here since 2020.'",
+        "body": "since = needs Present Perfect!"
+      },
+      {
+        "kind": "text",
+        "title": "'I am living here since 2020.'",
+        "body": "since = needs Present Perfect, not Progressive!"
+      },
+      {
+        "kind": "remember",
+        "title": "SINCE vs. FOR",
+        "body": "• SINCE + point: since 2020, since Monday, since 3pm\n• FOR + duration: for 5 years, for 2 hours, for a week"
+      },
+      {
+        "kind": "text",
+        "title": "Examples",
+        "body": "• I have worked here since January.\n• I have worked here for 6 months."
+      },
+      {
+        "kind": "answer",
+        "title": "Answer",
+        "body": "I have lived here since 2020."
+      }
+    ],
+    "tags": [
+      "MSA",
+      "training",
+      "tenses",
+      "Present_Perfect",
+      "since_for"
+    ]
+  },
+  {
+    "id": "EN_USE_QUEST_NEG_TRAIN_001",
+    "subject": "EN",
+    "topicId": "EN_USE_QUEST_NEG",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Which is the correct question form? 'She likes pizza.'",
+    "payload": {
+      "choices": [
+        "Does she like pizza?",
+        "Do she like pizza?",
+        "Is she like pizza?",
+        "Like she pizza?"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "Does she like pizza?"
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "What is this",
+        "body": "Forming questions in Simple Present."
+      },
+      {
+        "kind": "terms",
+        "title": "The rule",
+        "body": "Do/Does + subject + infinitive (without -s)?"
+      },
+      {
+        "kind": "steps",
+        "title": "Formation",
+        "body": "Statement: She likes pizza.\nQuestion: Does she like pizza?"
+      },
+      {
+        "kind": "remember",
+        "title": "DO vs. DOES",
+        "body": "• DO for I, you, we, they\n• DOES for he, she, it"
+      },
+      {
+        "kind": "mistake",
+        "title": "Important",
+        "body": "When using DOES, the main verb loses the -s!\n• She likes → Does she like? ✓\n• NOT: Does she likes? ❌"
+      },
+      {
+        "kind": "text",
+        "title": "More examples",
+        "body": "• He plays tennis. → Does he play tennis?\n• They work here. → Do they work here?\n• You speak German. → Do you speak German?"
+      },
+      {
+        "kind": "text",
+        "title": "Wrong forms",
+        "body": "• 'Do she like?' - wrong helper\n• 'Is she like?' - 'be' only for be-verbs/progressive\n• 'Like she?' - missing do/does"
+      },
+      {
+        "kind": "answer",
+        "title": "Answer",
+        "body": "Does she like pizza?"
+      }
+    ],
+    "tags": [
+      "MSA",
+      "training",
+      "questions",
+      "Simple_Present",
+      "grammar"
+    ]
+  },
+  {
+    "id": "EN_USE_QUEST_NEG_TRAIN_002",
+    "subject": "EN",
+    "topicId": "EN_USE_QUEST_NEG",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Which is the correct negative form? 'I like spinach.'",
+    "payload": {
+      "choices": [
+        "I don't like spinach.",
+        "I doesn't like spinach.",
+        "I not like spinach.",
+        "I no like spinach."
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "I don't like spinach."
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "What is this",
+        "body": "Forming negations in Simple Present."
+      },
+      {
+        "kind": "terms",
+        "title": "The rule",
+        "body": "Subject + do/does + not + infinitive"
+      },
+      {
+        "kind": "steps",
+        "title": "Formation",
+        "body": "Positive: I like spinach.\nNegative: I do not like spinach.\nShort form: I don't like spinach."
+      },
+      {
+        "kind": "remember",
+        "title": "DON'T vs. DOESN'T",
+        "body": "• DON'T (do not) for I, you, we, they\n• DOESN'T (does not) for he, she, it"
+      },
+      {
+        "kind": "text",
+        "title": "Examples",
+        "body": "• I don't like spinach. (I)\n• She doesn't like spinach. (she)\n• They don't work here. (they)\n• He doesn't play tennis. (he)"
+      },
+      {
+        "kind": "text",
+        "title": "Wrong forms",
+        "body": "• 'I doesn't like' - wrong helper for 'I'\n• 'I not like' - missing do/does\n• 'I no like' - 'no' is not for verbs"
+      },
+      {
+        "kind": "mistake",
+        "title": "Short forms",
+        "body": "• do not = don't\n• does not = doesn't"
+      },
+      {
+        "kind": "answer",
+        "title": "Answer",
+        "body": "I don't like spinach."
+      }
+    ],
+    "tags": [
+      "MSA",
+      "training",
+      "negation",
+      "Simple_Present",
+      "grammar"
+    ]
+  },
+  {
+    "id": "EN_USE_MODALS_TRAIN_001",
+    "subject": "EN",
+    "topicId": "EN_USE_MODALS",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Which modal verb expresses ABILITY (Fähigkeit)?",
+    "payload": {
+      "choices": [
+        "can",
+        "must",
+        "should",
+        "may"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "can"
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "What is this",
+        "body": "Modal verbs and their meanings."
+      },
+      {
+        "kind": "terms",
+        "title": "CAN = ABILITY (Fähigkeit/Können)",
+        "body": ""
+      },
+      {
+        "kind": "steps",
+        "title": "Examples",
+        "body": "• I can swim. (Ich kann schwimmen.)\n• She can speak German. (Sie kann Deutsch sprechen.)\n• Can you help me? (Kannst du mir helfen?)"
+      },
+      {
+        "kind": "remember",
+        "title": "Overview of modals",
+        "body": "• CAN = ability, possibility (können)\n• MUST = obligation, necessity (müssen)\n• SHOULD = advice, recommendation (sollte)\n• MAY = permission, possibility (dürfen, könnte)"
+      },
+      {
+        "kind": "text",
+        "title": "More examples",
+        "body": "• You must wear a seatbelt. (Pflicht)\n• You should study more. (Rat)\n• May I go to the toilet? (Erlaubnis)"
+      },
+      {
+        "kind": "mistake",
+        "title": "Grammar rule",
+        "body": "Modal + infinitive WITHOUT 'to'!\n• I can swim. ✓\n• I can to swim. ❌"
+      },
+      {
+        "kind": "answer",
+        "title": "Answer",
+        "body": "can"
+      }
+    ],
+    "tags": [
+      "MSA",
+      "training",
+      "modals",
+      "can",
+      "ability"
+    ]
+  },
+  {
+    "id": "EN_USE_COMPARISON_TRAIN_001",
+    "subject": "EN",
+    "topicId": "EN_USE_COMPARISON",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "What is the comparative form of 'big'?",
+    "payload": {
+      "choices": [
+        "bigger",
+        "more big",
+        "biger",
+        "biggest"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "bigger"
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "What is this",
+        "body": "Comparative adjectives - comparing two things."
+      },
+      {
+        "kind": "terms",
+        "title": "The rule for short adjectives",
+        "body": "Adjective + -er"
+      },
+      {
+        "kind": "steps",
+        "title": "Formation",
+        "body": "big → bigger"
+      },
+      {
+        "kind": "mistake",
+        "title": "Spelling rule",
+        "body": "Short adjective ending in consonant-vowel-consonant:\nDouble the last consonant!\nbig → bigger (not biger!)\nhot → hotter\nthin → thinner"
+      },
+      {
+        "kind": "remember",
+        "title": "More short adjectives",
+        "body": "• small → smaller\n• tall → taller\n• fast → faster\n• old → older"
+      },
+      {
+        "kind": "text",
+        "title": "LONG ADJECTIVES (3+ syllables)",
+        "body": "Use 'more' + adjective\n• beautiful → more beautiful\n• interesting → more interesting"
+      },
+      {
+        "kind": "text",
+        "title": "Wrong forms",
+        "body": "• 'more big' - big is short, use -er\n• 'biger' - need to double the g\n• 'biggest' - that's superlative (best of all)"
+      },
+      {
+        "kind": "answer",
+        "title": "Answer",
+        "body": "bigger"
+      }
+    ],
+    "tags": [
+      "MSA",
+      "training",
+      "comparison",
+      "comparative",
+      "adjectives"
+    ]
+  },
+  {
+    "id": "EN_VOCAB_SCHOOL_TRAIN_001",
+    "subject": "EN",
+    "topicId": "EN_VOCAB_SCHOOL",
+    "difficulty": 1,
+    "qtype": "MATCH",
+    "prompt": "Match the English words with their German translations.",
+    "payload": {
+      "left": [
+        "homework",
+        "exam",
+        "teacher",
+        "subject"
+      ],
+      "right": [
+        "Hausaufgaben",
+        "Prüfung",
+        "Lehrer/in",
+        "Schulfach"
+      ]
+    },
+    "solution": {
+      "pairs": [
+        [
+          "homework",
+          "Hausaufgaben"
+        ],
+        [
+          "exam",
+          "Prüfung"
+        ],
+        [
+          "teacher",
+          "Lehrer/in"
+        ],
+        [
+          "subject",
+          "Schulfach"
+        ]
+      ]
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "What is this",
+        "body": "School vocabulary (Schulvokabeln)."
+      },
+      {
+        "kind": "terms",
+        "title": "The matches",
+        "body": "• homework = Hausaufgaben\n• exam = Prüfung\n• teacher = Lehrer/in\n• subject = Schulfach"
+      },
+      {
+        "kind": "remember",
+        "title": "More school vocabulary",
+        "body": "• classroom = Klassenzimmer\n• student/pupil = Schüler/in\n• lesson = Unterrichtsstunde\n• timetable = Stundenplan\n• break = Pause\n• grade/mark = Note"
+      },
+      {
+        "kind": "text",
+        "title": "Example sentences",
+        "body": "• I have to do my homework.\n• The math exam is next week.\n• My favorite subject is English.\n• Our teacher is very nice."
+      },
+      {
+        "kind": "answer",
+        "title": "All pairs matched correctly!",
+        "body": ""
+      }
+    ],
+    "tags": [
+      "MSA",
+      "training",
+      "vocabulary",
+      "school",
+      "matching"
+    ]
+  },
+  {
+    "id": "EN_USE_TENSES_TRAIN_009",
+    "subject": "EN",
+    "topicId": "EN_USE_TENSES",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "What is the Past Participle of 'speak'?",
+    "payload": {
+      "choices": [
+        "spoken",
+        "spoke",
+        "speaked",
+        "speaking"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "spoken"
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "What is this",
+        "body": "Irregular verb: speak - spoke - spoken"
+      },
+      {
+        "kind": "terms",
+        "title": "The three forms",
+        "body": "1. Infinitive: speak\n2. Simple Past: spoke\n3. Past Participle: spoken"
+      },
+      {
+        "kind": "steps",
+        "title": "Usage",
+        "body": "• Simple Past: I spoke to him yesterday.\n• Present Perfect: I have spoken to him.\n• Passive: English is spoken here."
+      },
+      {
+        "kind": "remember",
+        "title": "Similar pattern",
+        "body": "• speak → spoke → spoken\n• break → broke → broken\n• steal → stole → stolen\n• choose → chose → chosen"
+      },
+      {
+        "kind": "mistake",
+        "title": "Common mistake",
+        "body": "'speaked' is WRONG! ❌\n'speak' is irregular!"
+      },
+      {
+        "kind": "text",
+        "title": "TIP",
+        "body": "Many verbs with 'ea' follow this pattern:\nea → o → o (with -en)"
+      },
+      {
+        "kind": "answer",
+        "title": "Answer",
+        "body": "spoken"
+      }
+    ],
+    "tags": [
+      "MSA",
+      "training",
+      "irregular_verbs",
+      "Past_Participle",
+      "speak"
+    ]
+  },
+  {
+    "id": "EN_WRITE_ERRORFIX_TRAIN_001",
+    "subject": "EN",
+    "topicId": "EN_WRITE_ERRORFIX",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Find the error: 'She don't like coffee.'",
+    "payload": {
+      "choices": [
+        "don't should be doesn't",
+        "like should be likes",
+        "She should be Her",
+        "There is no error"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "don't should be doesn't"
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "What is this",
+        "body": "Error correction - do/does in negations."
+      },
+      {
+        "kind": "terms",
+        "title": "The rule",
+        "body": "• DON'T for I, you, we, they\n• DOESN'T for he, she, it"
+      },
+      {
+        "kind": "steps",
+        "title": "The error",
+        "body": "'She don't like coffee.' ❌\n'She' = 3rd person singular → needs DOESN'T"
+      },
+      {
+        "kind": "steps",
+        "title": "Correct sentence",
+        "body": "'She doesn't like coffee.' ✓"
+      },
+      {
+        "kind": "remember",
+        "title": "Why not 'likes'",
+        "body": "After doesn't, use the infinitive (base form)!\n• She doesn't like ✓\n• She doesn't likes ❌"
+      },
+      {
+        "kind": "text",
+        "title": "More examples",
+        "body": "• He doesn't work here. ✓\n• It doesn't matter. ✓\n• They don't know. ✓\n• I don't understand. ✓"
+      },
+      {
+        "kind": "mistake",
+        "title": "Common msa mistake",
+        "body": "Mixing up don't/doesn't is very common!\nRemember: he/she/it → DOESN'T"
+      },
+      {
+        "kind": "answer",
+        "title": "Answer",
+        "body": "don't should be doesn't"
+      }
+    ],
+    "tags": [
+      "MSA",
+      "training",
+      "error_correction",
+      "negation",
+      "grammar"
+    ]
+  },
+  {
+    "id": "EN_USE_TENSES_020",
+    "subject": "EN",
+    "topicId": "EN_USE_TENSES",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Which tense? 'I usually watch TV in the evening.'",
+    "payload": {
+      "choices": [
+        "Simple Present",
+        "Present Progressive",
+        "Present Perfect",
+        "Simple Past"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "Simple Present"
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "Simple present",
+        "body": ""
+      },
+      {
+        "kind": "terms",
+        "title": "USE",
+        "body": "For habits and regular actions."
+      },
+      {
+        "kind": "steps",
+        "title": "Signal words",
+        "body": "• usually, always, often\n• every day, sometimes\n• never"
+      },
+      {
+        "kind": "remember",
+        "title": "Example",
+        "body": "'I USUALLY watch TV'\n→ 'usually' = habit/regular action\n→ Simple Present!"
+      },
+      {
+        "kind": "formula",
+        "title": "Formation",
+        "body": "Infinitive (+ -s/-es for he/she/it)"
+      },
+      {
+        "kind": "answer",
+        "title": "Answer",
+        "body": "Simple Present"
+      }
+    ],
+    "tags": [
+      "MSA",
+      "tenses",
+      "simple-present"
+    ]
+  },
+  {
+    "id": "EN_USE_TENSES_021",
+    "subject": "EN",
+    "topicId": "EN_USE_TENSES",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Which tense? 'They are calling their grandma right now.'",
+    "payload": {
+      "choices": [
+        "Present Progressive",
+        "Simple Present",
+        "Present Perfect",
+        "Simple Past"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "Present Progressive"
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "Present progressive",
+        "body": ""
+      },
+      {
+        "kind": "terms",
+        "title": "USE",
+        "body": "For actions happening RIGHT NOW."
+      },
+      {
+        "kind": "steps",
+        "title": "Signal words",
+        "body": "• right now, now\n• at the moment\n• Look! Listen!"
+      },
+      {
+        "kind": "remember",
+        "title": "Example",
+        "body": "'They ARE CALLING right now'\n→ Action is happening NOW\n→ Present Progressive!"
+      },
+      {
+        "kind": "formula",
+        "title": "Formation",
+        "body": "am/is/are + verb + -ing"
+      },
+      {
+        "kind": "answer",
+        "title": "Answer",
+        "body": "Present Progressive"
+      }
+    ],
+    "tags": [
+      "MSA",
+      "tenses",
+      "present-progressive"
+    ]
+  },
+  {
+    "id": "EN_USE_TENSES_022",
+    "subject": "EN",
+    "topicId": "EN_USE_TENSES",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Which tense? 'He has lived here since 2003.'",
+    "payload": {
+      "choices": [
+        "Present Perfect",
+        "Simple Present",
+        "Simple Past",
+        "Past Perfect"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "Present Perfect"
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "Present perfect",
+        "body": ""
+      },
+      {
+        "kind": "terms",
+        "title": "USE",
+        "body": "Action started in the past and continues to the present."
+      },
+      {
+        "kind": "steps",
+        "title": "Signal words",
+        "body": "• since, for\n• already, yet\n• just, recently\n• ever, never"
+      },
+      {
+        "kind": "remember",
+        "title": "Example",
+        "body": "'He HAS LIVED here SINCE 2003'\n→ Started in 2003, still living there now\n→ Present Perfect!"
+      },
+      {
+        "kind": "formula",
+        "title": "Formation",
+        "body": "have/has + past participle"
+      },
+      {
+        "kind": "answer",
+        "title": "Answer",
+        "body": "Present Perfect"
+      }
+    ],
+    "tags": [
+      "MSA",
+      "tenses",
+      "present-perfect"
+    ]
+  },
+  {
+    "id": "EN_USE_TENSES_023",
+    "subject": "EN",
+    "topicId": "EN_USE_TENSES",
+    "difficulty": 2,
+    "qtype": "CLOZE",
+    "prompt": "Fill in the correct form: 'I ___ just ___ at the airport.' (arrive - Present Perfect)",
+    "payload": {
+      "blanks": [
+        {
+          "id": 1,
+          "choices": [
+            "have",
+            "has",
+            "had",
+            "am"
+          ]
+        },
+        {
+          "id": 2,
+          "choices": [
+            "arrived",
+            "arrive",
+            "arriving",
+            "arrives"
+          ]
+        }
+      ],
+      "text_with_blanks": "I ___ just ___ at the airport."
+    },
+    "solution": {
+      "answers": {
+        "1": "have",
+        "2": "arrived"
+      }
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "Present perfect formation",
+        "body": ""
+      },
+      {
+        "kind": "formula",
+        "title": "Rule",
+        "body": "have/has + past participle"
+      },
+      {
+        "kind": "steps",
+        "title": "Here",
+        "body": "• Subject 'I' → use 'have' (not 'has')\n• 'arrive' → past participle: 'arrived'"
+      },
+      {
+        "kind": "remember",
+        "title": "'JUST' = very recently",
+        "body": "→ Typical Present Perfect signal word!"
+      },
+      {
+        "kind": "answer",
+        "title": "Answer",
+        "body": "I HAVE just ARRIVED at the airport."
+      }
+    ],
+    "tags": [
+      "MSA",
+      "tenses",
+      "present-perfect",
+      "cloze"
+    ]
+  },
+  {
+    "id": "EN_USE_TENSES_024",
+    "subject": "EN",
+    "topicId": "EN_USE_TENSES",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "What is the Simple Past of 'go'?",
+    "payload": {
+      "choices": [
+        "went",
+        "gone",
+        "goed",
+        "going"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "went"
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "Irregular verb",
+        "body": "GO"
+      },
+      {
+        "kind": "formula",
+        "title": "Forms",
+        "body": "• Simple Present: go\n• Simple Past: WENT\n• Past Participle: gone"
+      },
+      {
+        "kind": "mistake",
+        "title": "Common mistake",
+        "body": "'goed' does NOT exist!\n'go' is irregular!"
+      },
+      {
+        "kind": "remember",
+        "title": "Example",
+        "body": "• Yesterday I WENT to school.\n• I have GONE to school. (Present Perfect)"
+      },
+      {
+        "kind": "answer",
+        "title": "Answer",
+        "body": "went"
+      }
+    ],
+    "tags": [
+      "MSA",
+      "irregular-verbs",
+      "go"
+    ]
+  },
+  {
+    "id": "EN_USE_TENSES_025",
+    "subject": "EN",
+    "topicId": "EN_USE_TENSES",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "What is the Past Participle of 'write'?",
+    "payload": {
+      "choices": [
+        "written",
+        "wrote",
+        "writed",
+        "writing"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "written"
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "Irregular verb",
+        "body": "WRITE"
+      },
+      {
+        "kind": "formula",
+        "title": "Forms",
+        "body": "• Simple Present: write\n• Simple Past: wrote\n• Past Participle: WRITTEN"
+      },
+      {
+        "kind": "remember",
+        "title": "USE",
+        "body": "• Simple Past: She WROTE a letter yesterday.\n• Present Perfect: She has WRITTEN a letter."
+      },
+      {
+        "kind": "mistake",
+        "title": "Remember",
+        "body": "write - wrote - written\n(all different!)"
+      },
+      {
+        "kind": "answer",
+        "title": "Answer",
+        "body": "written"
+      }
+    ],
+    "tags": [
+      "MSA",
+      "irregular-verbs",
+      "write"
+    ]
+  },
+  {
+    "id": "EN_USE_TENSES_026",
+    "subject": "EN",
+    "topicId": "EN_USE_TENSES",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "What is the Simple Past of 'see'?",
+    "payload": {
+      "choices": [
+        "saw",
+        "seen",
+        "seed",
+        "sawed"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "saw"
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "Irregular verb",
+        "body": "SEE"
+      },
+      {
+        "kind": "formula",
+        "title": "Forms",
+        "body": "• Simple Present: see\n• Simple Past: SAW\n• Past Participle: seen"
+      },
+      {
+        "kind": "remember",
+        "title": "Examples",
+        "body": "• I SAW him yesterday. (Simple Past)\n• I have SEEN this movie before. (Present Perfect)"
+      },
+      {
+        "kind": "mistake",
+        "title": "Careful",
+        "body": "'seed' is a noun (Samen)!\n'sawed' is from 'saw' (sägen)!"
+      },
+      {
+        "kind": "answer",
+        "title": "Answer",
+        "body": "saw"
+      }
+    ],
+    "tags": [
+      "MSA",
+      "irregular-verbs",
+      "see"
+    ]
+  },
+  {
+    "id": "EN_USE_TENSES_027",
+    "subject": "EN",
+    "topicId": "EN_USE_TENSES",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "What is the Past Participle of 'speak'?",
+    "payload": {
+      "choices": [
+        "spoken",
+        "spoke",
+        "speaked",
+        "speaking"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "spoken"
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "Irregular verb",
+        "body": "SPEAK"
+      },
+      {
+        "kind": "formula",
+        "title": "Forms",
+        "body": "• Simple Present: speak\n• Simple Past: spoke\n• Past Participle: SPOKEN"
+      },
+      {
+        "kind": "remember",
+        "title": "Examples",
+        "body": "• She SPOKE to him yesterday.\n• She has SPOKEN to him already."
+      },
+      {
+        "kind": "mistake",
+        "title": "Pattern",
+        "body": "speak - spoke - spoken\n(like break - broke - broken)"
+      },
+      {
+        "kind": "answer",
+        "title": "Answer",
+        "body": "spoken"
+      }
+    ],
+    "tags": [
+      "MSA",
+      "irregular-verbs",
+      "speak"
+    ]
+  },
+  {
+    "id": "EN_USE_TENSES_028",
+    "subject": "EN",
+    "topicId": "EN_USE_TENSES",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "What is the Simple Past AND Past Participle of 'put'?",
+    "payload": {
+      "choices": [
+        "put - put",
+        "put - putted",
+        "putted - putted",
+        "put - putten"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "put - put"
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "Irregular verb",
+        "body": "PUT"
+      },
+      {
+        "kind": "formula",
+        "title": "Forms",
+        "body": "• Simple Present: put\n• Simple Past: PUT\n• Past Participle: PUT"
+      },
+      {
+        "kind": "remember",
+        "title": "All forms are the same!",
+        "body": "put - put - put"
+      },
+      {
+        "kind": "terms",
+        "title": "Similar verbs",
+        "body": "• cut - cut - cut\n• shut - shut - shut\n• hurt - hurt - hurt"
+      },
+      {
+        "kind": "answer",
+        "title": "Answer",
+        "body": "put - put"
+      }
+    ],
+    "tags": [
+      "MSA",
+      "irregular-verbs",
+      "put"
+    ]
+  },
+  {
+    "id": "EN_USE_TENSES_029",
+    "subject": "EN",
+    "topicId": "EN_USE_TENSES",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "Choose the correct sentence:",
+    "payload": {
+      "choices": [
+        "She has already finished her homework.",
+        "She have already finished her homework.",
+        "She has already finish her homework.",
+        "She already has finished her homework."
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "She has already finished her homework."
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "Present perfect - word order",
+        "body": ""
+      },
+      {
+        "kind": "formula",
+        "title": "Structure",
+        "body": "Subject + have/has + (already/just/never) + past participle"
+      },
+      {
+        "kind": "steps",
+        "title": "Analysis",
+        "body": "• 'She' (3rd person) → 'has' (not 'have')\n• 'finish' → past participle: 'finished'\n• 'already' comes AFTER have/has"
+      },
+      {
+        "kind": "mistake",
+        "title": "Wrong",
+        "body": "• 'She have...' (wrong auxiliary)\n• 'She has finish...' (missing -ed)\n• 'She already has...' (wrong word order)"
+      },
+      {
+        "kind": "answer",
+        "title": "Answer",
+        "body": "She has already finished her homework."
+      }
+    ],
+    "tags": [
+      "MSA",
+      "tenses",
+      "present-perfect",
+      "word-order"
+    ]
+  },
+  {
+    "id": "EN_USE_TENSES_030",
+    "subject": "EN",
+    "topicId": "EN_USE_TENSES",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Which signal word indicates Present Perfect?",
+    "payload": {
+      "choices": [
+        "since",
+        "yesterday",
+        "every day",
+        "now"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "since"
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "Signal words",
+        "body": ""
+      },
+      {
+        "kind": "terms",
+        "title": "Present perfect",
+        "body": "• since, for\n• already, yet\n• just, recently\n• ever, never\n• so far, up to now"
+      },
+      {
+        "kind": "terms",
+        "title": "Simple past",
+        "body": "• yesterday\n• last week/month/year\n• ago"
+      },
+      {
+        "kind": "terms",
+        "title": "Simple present",
+        "body": "• every day, always\n• usually, often"
+      },
+      {
+        "kind": "terms",
+        "title": "Present progressive",
+        "body": "• now, at the moment"
+      },
+      {
+        "kind": "answer",
+        "title": "Answer",
+        "body": "since (Present Perfect)"
+      }
+    ],
+    "tags": [
+      "MSA",
+      "tenses",
+      "signal-words"
+    ]
+  },
+  {
+    "id": "EN_USE_MODALS_005",
+    "subject": "EN",
+    "topicId": "EN_USE_MODALS",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Which modal verb expresses OBLIGATION? 'You ___ wear a seatbelt.'",
+    "payload": {
+      "choices": [
+        "must",
+        "can",
+        "might",
+        "could"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "must"
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "Modal verbs",
+        "body": "OBLIGATION"
+      },
+      {
+        "kind": "terms",
+        "title": "Must",
+        "body": "Expresses strong obligation/necessity.\n'You MUST wear a seatbelt' = It's required!"
+      },
+      {
+        "kind": "terms",
+        "title": "Comparison",
+        "body": "• must = strong obligation\n• should = advice\n• can = ability/permission\n• might/could = possibility"
+      },
+      {
+        "kind": "remember",
+        "title": "TIP",
+        "body": "'must' is often used for rules and laws."
+      },
+      {
+        "kind": "answer",
+        "title": "Answer",
+        "body": "must"
+      }
+    ],
+    "tags": [
+      "MSA",
+      "modals",
+      "must",
+      "obligation"
+    ]
+  },
+  {
+    "id": "EN_USE_MODALS_006",
+    "subject": "EN",
+    "topicId": "EN_USE_MODALS",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Which modal verb expresses ABILITY? 'She ___ speak three languages.'",
+    "payload": {
+      "choices": [
+        "can",
+        "must",
+        "should",
+        "may"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "can"
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "Modal verbs",
+        "body": "ABILITY"
+      },
+      {
+        "kind": "terms",
+        "title": "CAN",
+        "body": "Expresses ability (what someone is able to do).\n\n'She CAN speak three languages'\n= She is able to speak them."
+      },
+      {
+        "kind": "terms",
+        "title": "Comparison",
+        "body": "• can = ability NOW\n• could = ability in the PAST\n• will be able to = ability in FUTURE"
+      },
+      {
+        "kind": "answer",
+        "title": "Answer",
+        "body": "can"
+      }
+    ],
+    "tags": [
+      "MSA",
+      "modals",
+      "can",
+      "ability"
+    ]
+  },
+  {
+    "id": "EN_USE_COMPARISON_005",
+    "subject": "EN",
+    "topicId": "EN_USE_COMPARISON",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "What is the comparative of 'good'?",
+    "payload": {
+      "choices": [
+        "better",
+        "gooder",
+        "more good",
+        "best"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "better"
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "Irregular comparison",
+        "body": ""
+      },
+      {
+        "kind": "formula",
+        "title": "Forms of 'good'",
+        "body": "• Positive: good\n• Comparative: BETTER\n• Superlative: best"
+      },
+      {
+        "kind": "mistake",
+        "title": "Irregular!",
+        "body": "'gooder' and 'more good' do NOT exist!"
+      },
+      {
+        "kind": "remember",
+        "title": "Similar",
+        "body": "• bad - worse - worst\n• much/many - more - most\n• little - less - least"
+      },
+      {
+        "kind": "answer",
+        "title": "Answer",
+        "body": "better"
+      }
+    ],
+    "tags": [
+      "MSA",
+      "comparison",
+      "irregular"
+    ]
+  },
+  {
+    "id": "EN_USE_COMPARISON_006",
+    "subject": "EN",
+    "topicId": "EN_USE_COMPARISON",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "What is the superlative of 'beautiful'?",
+    "payload": {
+      "choices": [
+        "the most beautiful",
+        "the beautifulest",
+        "more beautiful",
+        "beautifuller"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "the most beautiful"
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "Comparison",
+        "body": "LONG ADJECTIVES"
+      },
+      {
+        "kind": "formula",
+        "title": "Rule",
+        "body": "Adjectives with 3+ syllables:\n• Comparative: more + adjective\n• Superlative: most + adjective"
+      },
+      {
+        "kind": "steps",
+        "title": "'BEAUTIFUL' (4 syllables)",
+        "body": "• beautiful\n• more beautiful\n• THE MOST beautiful"
+      },
+      {
+        "kind": "mistake",
+        "title": "DON'T ADD -er/-est!",
+        "body": "'beautifuler' is WRONG!"
+      },
+      {
+        "kind": "answer",
+        "title": "Answer",
+        "body": "the most beautiful"
+      }
+    ],
+    "tags": [
+      "MSA",
+      "comparison",
+      "long-adjectives"
+    ]
+  },
+  {
+    "id": "EN_VOCAB_DAILYLIFE_005",
+    "subject": "EN",
+    "topicId": "EN_VOCAB_DAILYLIFE",
+    "difficulty": 1,
+    "qtype": "MCQ",
+    "prompt": "What does 'to spend money' mean in German?",
+    "payload": {
+      "choices": [
+        "Geld ausgeben",
+        "Geld sparen",
+        "Geld verdienen",
+        "Geld verlieren"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "Geld ausgeben"
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "Vocabulary",
+        "body": "SPEND"
+      },
+      {
+        "kind": "terms",
+        "title": "'to spend' has TWO meanings",
+        "body": "1. spend MONEY = Geld AUSGEBEN\n2. spend TIME = Zeit VERBRINGEN"
+      },
+      {
+        "kind": "remember",
+        "title": "Examples",
+        "body": "• I spent 50 euros on shoes. (ausgeben)\n• I spent the weekend with friends. (verbringen)"
+      },
+      {
+        "kind": "formula",
+        "title": "Irregular",
+        "body": "spend - spent - spent"
+      },
+      {
+        "kind": "answer",
+        "title": "Answer",
+        "body": "Geld ausgeben"
+      }
+    ],
+    "tags": [
+      "MSA",
+      "vocabulary",
+      "spend"
+    ]
+  },
+  {
+    "id": "EN_VOCAB_DAILYLIFE_006",
+    "subject": "EN",
+    "topicId": "EN_VOCAB_DAILYLIFE",
+    "difficulty": 1,
+    "qtype": "MCQ",
+    "prompt": "What does 'to lose' mean in German?",
+    "payload": {
+      "choices": [
+        "verlieren",
+        "verlassen",
+        "vergessen",
+        "versuchen"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "verlieren"
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "Vocabulary",
+        "body": "LOSE"
+      },
+      {
+        "kind": "terms",
+        "title": "'to lose' = verlieren",
+        "body": ""
+      },
+      {
+        "kind": "remember",
+        "title": "Examples",
+        "body": "• I lost my keys. (Schlüssel verloren)\n• We lost the game. (Spiel verloren)"
+      },
+      {
+        "kind": "formula",
+        "title": "Irregular",
+        "body": "lose - lost - lost"
+      },
+      {
+        "kind": "mistake",
+        "title": "Don't confuse",
+        "body": "• lose = verlieren\n• leave = verlassen\n• forget = vergessen"
+      },
+      {
+        "kind": "answer",
+        "title": "Answer",
+        "body": "verlieren"
+      }
+    ],
+    "tags": [
+      "MSA",
+      "vocabulary",
+      "lose"
+    ]
+  },
+  {
+    "id": "EN_READ_CORE_005",
+    "subject": "EN",
+    "topicId": "EN_READ_CORE",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "A sign says: 'Zeb throws objects. Please beware - his aim is accurate.' What does this mean?",
+    "payload": {
+      "choices": [
+        "Be careful - this animal could hit you",
+        "Do not feed this animal",
+        "This animal is scared",
+        "The animal might escape"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "Be careful - this animal could hit you"
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "Reading comprehension",
+        "body": ""
+      },
+      {
+        "kind": "terms",
+        "title": "Key words",
+        "body": "• 'throws objects' = wirft Gegenstände\n• 'beware' = Vorsicht\n• 'aim is accurate' = Ziel ist genau"
+      },
+      {
+        "kind": "steps",
+        "title": "Meaning",
+        "body": "The animal throws things AND can aim well!\n→ It could hit you!\n→ This is a WARNING sign."
+      },
+      {
+        "kind": "remember",
+        "title": "TIP",
+        "body": "Look for KEY WORDS to understand the meaning!"
+      },
+      {
+        "kind": "answer",
+        "title": "Answer",
+        "body": "Be careful - this animal could hit you"
+      }
+    ],
+    "tags": [
+      "MSA",
+      "reading",
+      "signs"
+    ]
+  },
+  {
+    "id": "EN_USE_QUEST_NEG_005",
+    "subject": "EN",
+    "topicId": "EN_USE_QUEST_NEG",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Which question is correct?",
+    "payload": {
+      "choices": [
+        "Does she like pizza?",
+        "Do she likes pizza?",
+        "Does she likes pizza?",
+        "Do she like pizza?"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "Does she like pizza?"
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "Questions in simple present",
+        "body": ""
+      },
+      {
+        "kind": "formula",
+        "title": "Rule",
+        "body": "Do/Does + subject + infinitive (WITHOUT -s)?"
+      },
+      {
+        "kind": "steps",
+        "title": "Analysis",
+        "body": "• 'she' (3rd person) → use 'Does'\n• After 'Does' → infinitive WITHOUT -s!\n• 'like' (not 'likes'!)"
+      },
+      {
+        "kind": "mistake",
+        "title": "Common mistake",
+        "body": "'Does she likes...' is WRONG!\nThe -s is already in 'Does'!"
+      },
+      {
+        "kind": "answer",
+        "title": "Answer",
+        "body": "Does she like pizza?"
+      }
+    ],
+    "tags": [
+      "MSA",
+      "questions",
+      "simple-present"
+    ]
+  },
+  {
+    "id": "EN_USE_TENSES_031",
+    "subject": "EN",
+    "topicId": "EN_USE_TENSES",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "What is the Simple Past of 'think'?",
+    "payload": {
+      "choices": [
+        "thought",
+        "thinked",
+        "thank",
+        "thinks"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "thought"
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "Irregular verb",
+        "body": "THINK"
+      },
+      {
+        "kind": "formula",
+        "title": "Forms",
+        "body": "• Simple Present: think\n• Simple Past: THOUGHT\n• Past Participle: thought"
+      },
+      {
+        "kind": "mistake",
+        "title": "'thinked' does NOT exist!",
+        "body": ""
+      },
+      {
+        "kind": "remember",
+        "title": "Similar pattern",
+        "body": "• think - thought - thought\n• bring - brought - brought\n• buy - bought - bought"
+      },
+      {
+        "kind": "answer",
+        "title": "Answer",
+        "body": "thought"
+      }
+    ],
+    "tags": [
+      "MSA",
+      "irregular-verbs",
+      "think"
+    ]
+  }
+]

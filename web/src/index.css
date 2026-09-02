@@ -1,0 +1,268 @@
+@import "tailwindcss";
+@import "katex/dist/katex.min.css";
+
+/* ---------- Design tokens ---------------------------------------------------
+   Dark-first "midnight" look with vibrant subject accents. Light mode follows
+   the system preference; both palettes are defined here so no colour exists in
+   only one mode.
+---------------------------------------------------------------------------- */
+:root {
+  --bg: #0d0f1c;
+  --bg-2: #141830;
+  --surface: rgba(255, 255, 255, 0.05);
+  --surface-2: rgba(255, 255, 255, 0.09);
+  --surface-solid: #1a1f3a;
+  --line: rgba(255, 255, 255, 0.1);
+  --ink: #f2f4ff;
+  --ink-2: #a9afd1;
+  --ink-3: #6b7199;
+
+  --brand: #7c6cff;
+  --brand-2: #22d3ee;
+  --math: #6c8cff;
+  --math-2: #22d3ee;
+  --de: #ff6b9d;
+  --de-2: #ffb86b;
+  --en: #2ee6a6;
+  --en-2: #a3ff5c;
+
+  --red: #ff5c7a;
+  --yellow: #ffc857;
+  --green: #3ddc97;
+  --red-soft: rgba(255, 92, 122, 0.16);
+  --yellow-soft: rgba(255, 200, 87, 0.16);
+  --green-soft: rgba(61, 220, 151, 0.16);
+
+  --radius: 20px;
+  --radius-sm: 12px;
+  --shadow: 0 10px 40px rgba(0, 0, 0, 0.35);
+  --glow: 0 0 0 1px rgba(255, 255, 255, 0.06) inset;
+  color-scheme: dark;
+}
+
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) {
+    --bg: #f4f5fb;
+    --bg-2: #ffffff;
+    --surface: rgba(20, 24, 48, 0.04);
+    --surface-2: rgba(20, 24, 48, 0.08);
+    --surface-solid: #ffffff;
+    --line: rgba(20, 24, 48, 0.1);
+    --ink: #151834;
+    --ink-2: #4b5078;
+    --ink-3: #8b90b5;
+    --red-soft: rgba(255, 92, 122, 0.14);
+    --yellow-soft: rgba(255, 200, 87, 0.22);
+    --green-soft: rgba(61, 220, 151, 0.18);
+    --shadow: 0 10px 30px rgba(21, 24, 52, 0.1);
+    --glow: 0 0 0 1px rgba(21, 24, 52, 0.04) inset;
+    color-scheme: light;
+  }
+}
+
+:root[data-theme="light"] {
+  --bg: #f4f5fb;
+  --bg-2: #ffffff;
+  --surface: rgba(20, 24, 48, 0.04);
+  --surface-2: rgba(20, 24, 48, 0.08);
+  --surface-solid: #ffffff;
+  --line: rgba(20, 24, 48, 0.1);
+  --ink: #151834;
+  --ink-2: #4b5078;
+  --ink-3: #8b90b5;
+  --red-soft: rgba(255, 92, 122, 0.14);
+  --yellow-soft: rgba(255, 200, 87, 0.22);
+  --green-soft: rgba(61, 220, 151, 0.18);
+  --shadow: 0 10px 30px rgba(21, 24, 52, 0.1);
+  --glow: 0 0 0 1px rgba(21, 24, 52, 0.04) inset;
+  color-scheme: light;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-bg-2: var(--bg-2);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-surface-solid: var(--surface-solid);
+  --color-line: var(--line);
+  --color-ink: var(--ink);
+  --color-ink-2: var(--ink-2);
+  --color-ink-3: var(--ink-3);
+  --color-brand: var(--brand);
+  --color-brand-2: var(--brand-2);
+  --color-math: var(--math);
+  --color-math-2: var(--math-2);
+  --color-de: var(--de);
+  --color-de-2: var(--de-2);
+  --color-en: var(--en);
+  --color-en-2: var(--en-2);
+  --color-red: var(--red);
+  --color-yellow: var(--yellow);
+  --color-green: var(--green);
+  --color-red-soft: var(--red-soft);
+  --color-yellow-soft: var(--yellow-soft);
+  --color-green-soft: var(--green-soft);
+  --radius-card: var(--radius);
+  --radius-el: var(--radius-sm);
+  --font-sans: "Inter", "Segoe UI Variable", "Segoe UI", system-ui, -apple-system, Roboto, sans-serif;
+  --font-display: "Inter", "Segoe UI Variable Display", "Segoe UI", system-ui, sans-serif;
+}
+
+/* ---------- Base ------------------------------------------------------------ */
+html {
+  background: var(--bg);
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+  min-height: 100dvh;
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-size: 17px;
+  line-height: 1.5;
+  background:
+    radial-gradient(1200px 600px at 10% -10%, color-mix(in oklab, var(--brand) 22%, transparent), transparent 60%),
+    radial-gradient(900px 500px at 110% 10%, color-mix(in oklab, var(--brand-2) 16%, transparent), transparent 60%),
+    var(--bg);
+  background-attachment: fixed;
+  -webkit-font-smoothing: antialiased;
+}
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+:focus-visible {
+  outline: 3px solid color-mix(in oklab, var(--brand-2) 70%, white);
+  outline-offset: 2px;
+  border-radius: 8px;
+}
+::selection {
+  background: color-mix(in oklab, var(--brand) 50%, transparent);
+}
+
+/* ---------- Utilities ------------------------------------------------------- */
+.glass {
+  background: var(--surface);
+  box-shadow: var(--glow);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-radius: var(--radius);
+}
+.card-solid {
+  background: var(--surface-solid);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow), var(--glow);
+}
+.gradient-text {
+  background: linear-gradient(90deg, var(--brand), var(--brand-2));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.subject-MATH {
+  --accent: var(--math);
+  --accent-2: var(--math-2);
+}
+.subject-DE {
+  --accent: var(--de);
+  --accent-2: var(--de-2);
+}
+.subject-EN {
+  --accent: var(--en);
+  --accent-2: var(--en-2);
+}
+.accent-gradient {
+  background: linear-gradient(135deg, var(--accent, var(--brand)), var(--accent-2, var(--brand-2)));
+}
+.pre-wrap {
+  white-space: pre-wrap;
+}
+
+/* KaTeX sizing inside prose */
+.katex {
+  font-size: 1.08em;
+}
+.katex-display {
+  margin: 0.4em 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+/* ---------- Motion ---------------------------------------------------------- */
+@keyframes pop-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes shake {
+  10%,
+  90% {
+    transform: translateX(-2px);
+  }
+  20%,
+  80% {
+    transform: translateX(4px);
+  }
+  30%,
+  50%,
+  70% {
+    transform: translateX(-6px);
+  }
+  40%,
+  60% {
+    transform: translateX(6px);
+  }
+}
+@keyframes pulse-ring {
+  0% {
+    box-shadow: 0 0 0 0 color-mix(in oklab, var(--green) 60%, transparent);
+  }
+  100% {
+    box-shadow: 0 0 0 18px transparent;
+  }
+}
+@keyframes confetti-fall {
+  0% {
+    transform: translateY(-10vh) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(110vh) rotate(720deg);
+    opacity: 0;
+  }
+}
+.anim-pop {
+  animation: pop-in 0.35s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+.anim-shake {
+  animation: shake 0.5s both;
+}
+.anim-pulse-ring {
+  animation: pulse-ring 0.9s ease-out 1;
+}
+.confetti {
+  position: fixed;
+  top: 0;
+  width: 10px;
+  height: 16px;
+  border-radius: 3px;
+  animation: confetti-fall linear both;
+  pointer-events: none;
+  z-index: 50;
+}
+@media (prefers-reduced-motion: reduce) {
+  .anim-pop,
+  .anim-shake,
+  .anim-pulse-ring,
+  .confetti {
+    animation: none;
+  }
+}
