@@ -1,0 +1,102 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.local/msa-trainer/schema.json",
+  "title": "MSA Trainer Berlin Content Pack Schema",
+  "type": "object",
+  "properties": {
+    "pack_manifest": { "$ref": "#/$defs/PackManifest" },
+    "topics": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/Topic" }
+    },
+    "questions": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/Question" }
+    }
+  },
+  "required": [],
+  "$defs": {
+    "PackManifest": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "pack_id": { "type": "string", "minLength": 1 },
+        "version": { "type": "string", "minLength": 1 },
+        "title": { "type": "string", "minLength": 1 },
+        "min_app_version": { "type": "string", "minLength": 1 },
+        "subjects": {
+          "type": "array",
+          "items": { "type": "string", "enum": ["MATH", "DE", "EN"] },
+          "minItems": 1
+        },
+        "topic_file": { "type": "string", "minLength": 1 },
+        "question_files": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "MATH": { "type": "string" },
+            "DE": { "type": "string" },
+            "EN": { "type": "string" }
+          },
+          "required": ["MATH", "DE", "EN"]
+        }
+      },
+      "required": ["pack_id", "version", "title", "min_app_version", "subjects", "topic_file", "question_files"]
+    },
+    "Topic": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "subject": { "type": "string", "enum": ["MATH", "DE", "EN"] },
+        "code": { "type": "string", "minLength": 1 },
+        "name": { "type": "string", "minLength": 1 },
+        "parent_id": { "type": ["string", "null"] }
+      },
+      "required": ["id", "subject", "code", "name", "parent_id"]
+    },
+    "Question": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "subject": { "type": "string", "enum": ["MATH", "DE", "EN"] },
+        "topic_id": { "type": "string", "minLength": 1 },
+        "difficulty": { "type": "integer", "minimum": 1, "maximum": 5 },
+        "qtype": { "type": "string", "enum": ["MCQ", "CLOZE", "MATCH", "SHORT"] },
+        "prompt": { "type": "string", "minLength": 1 },
+        "payload": { "type": "object" },
+        "solution": { "type": "object" },
+        "explanation": { "type": "string", "minLength": 1 },
+        "tags": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "minItems": 1
+        },
+        "variants": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "enabled": { "type": "boolean" },
+            "seedable": { "type": "boolean" },
+            "template": { "type": "string" },
+            "variables": { "type": "object" }
+          },
+          "required": ["enabled", "seedable", "template", "variables"]
+        },
+        "image": {
+          "type": "string",
+          "description": "Relative path to image file within content pack"
+        },
+        "image_region": {
+          "type": "array",
+          "description": "Crop region as [x0, y0, x1, y1] in pixels",
+          "items": { "type": "integer", "minimum": 0 },
+          "minItems": 4,
+          "maxItems": 4
+        }
+      },
+      "required": ["id", "subject", "topic_id", "difficulty", "qtype", "prompt", "payload", "solution", "explanation", "tags"]
+    }
+  }
+}

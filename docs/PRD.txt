@@ -1,0 +1,44 @@
+# PRD: MSA Trainer Berlin (Klasse 9)
+
+## 1. Ziel
+Eine offline Desktop-App, die Schüler der 9. Klasse in Berlin in Mathe, Deutsch und Englisch auf den MSA vorbereitet.
+Die App trainiert Grundlagen, prüfungsnahe Formate und reduziert Fehler über konsequente Wiederholung.
+
+## 2. Zielgruppe
+- Schüler (Klasse 9, Berlin)
+- Eltern (Überblick und Steuerung)
+- Optional Admin (Content Import)
+
+## 3. Kernprinzipien
+- Mastery Learning pro Thema
+- Fehlergetriebener Repair Mode
+- Adaptive Auswahl nach Schwächen, Stabilität, Wiederholabstand
+- Kurze Aufgaben, sofortiges Feedback, klare Erklärungen
+
+## 4. Funktionsumfang MVP
+- Multi-Profil
+- Fächer: MATH, DE, EN
+- Trainingsmodi:
+  - Quick Training (adaptiv)
+  - Topic Training (gezielt)
+  - Error List (nur Schwächen)
+  - Optional MSA Block (prüfungsähnliche Mischung, optional Timer)
+- Aufgabentypen:
+  - MCQ (Multiple Choice)
+  - CLOZE (Lücke)
+  - MATCH (Zuordnung)
+  - SHORT (Kurzantwort)
+- Mathe Rechner Widget im Session Screen
+- Dashboard: Ampel pro Thema, Streak, Empfehlungen (Top-3 Fokus)
+- Elternbereich: Fortschritt pro Kind, Tagesziel, optional PIN
+
+## 5. Nicht im MVP
+- Cloud Sync
+- Listening Audio
+- Freitextaufsatz Bewertung
+- Lehrer Accounts
+
+## 6. Erfolgsmessung MVP
+- Nutzung: regelmäßige Sessions (z. B. 15 Minuten am Tag)
+- Mastery: mehr Themen auf Gelb/Grün, weniger Wiederholungen im Repair Mode
+- Fehlerquoten: Top-3 Schwächen sinken über 2 Wochen

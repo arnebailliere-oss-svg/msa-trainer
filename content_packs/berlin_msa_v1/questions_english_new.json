@@ -1,0 +1,320 @@
+[
+  {
+    "id": "EN_USE_TENSES_020",
+    "subject": "EN",
+    "topic_id": "EN_USE_TENSES",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Which tense? 'I usually watch TV in the evening.'",
+    "payload": {
+      "choices": ["Simple Present", "Present Progressive", "Present Perfect", "Simple Past"],
+      "shuffle": true
+    },
+    "solution": { "correct_choice": "Simple Present" },
+    "explanation": "🎯 SIMPLE PRESENT\n\n📖 USE:\nFor habits and regular actions.\n\n✏️ SIGNAL WORDS:\n• usually, always, often\n• every day, sometimes\n• never\n\n💡 EXAMPLE:\n'I USUALLY watch TV'\n→ 'usually' = habit/regular action\n→ Simple Present!\n\n📐 FORMATION:\nInfinitive (+ -s/-es for he/she/it)\n\n✅ Answer: Simple Present",
+    "tags": ["MSA", "tenses", "simple-present"]
+  },
+  {
+    "id": "EN_USE_TENSES_021",
+    "subject": "EN",
+    "topic_id": "EN_USE_TENSES",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Which tense? 'They are calling their grandma right now.'",
+    "payload": {
+      "choices": ["Present Progressive", "Simple Present", "Present Perfect", "Simple Past"],
+      "shuffle": true
+    },
+    "solution": { "correct_choice": "Present Progressive" },
+    "explanation": "🎯 PRESENT PROGRESSIVE\n\n📖 USE:\nFor actions happening RIGHT NOW.\n\n✏️ SIGNAL WORDS:\n• right now, now\n• at the moment\n• Look! Listen!\n\n💡 EXAMPLE:\n'They ARE CALLING right now'\n→ Action is happening NOW\n→ Present Progressive!\n\n📐 FORMATION:\nam/is/are + verb + -ing\n\n✅ Answer: Present Progressive",
+    "tags": ["MSA", "tenses", "present-progressive"]
+  },
+  {
+    "id": "EN_USE_TENSES_022",
+    "subject": "EN",
+    "topic_id": "EN_USE_TENSES",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Which tense? 'He has lived here since 2003.'",
+    "payload": {
+      "choices": ["Present Perfect", "Simple Present", "Simple Past", "Past Perfect"],
+      "shuffle": true
+    },
+    "solution": { "correct_choice": "Present Perfect" },
+    "explanation": "🎯 PRESENT PERFECT\n\n📖 USE:\nAction started in the past and continues to the present.\n\n✏️ SIGNAL WORDS:\n• since, for\n• already, yet\n• just, recently\n• ever, never\n\n💡 EXAMPLE:\n'He HAS LIVED here SINCE 2003'\n→ Started in 2003, still living there now\n→ Present Perfect!\n\n📐 FORMATION:\nhave/has + past participle\n\n✅ Answer: Present Perfect",
+    "tags": ["MSA", "tenses", "present-perfect"]
+  },
+  {
+    "id": "EN_USE_TENSES_023",
+    "subject": "EN",
+    "topic_id": "EN_USE_TENSES",
+    "difficulty": 2,
+    "qtype": "CLOZE",
+    "prompt": "Fill in the correct form: 'I ___ just ___ at the airport.' (arrive - Present Perfect)",
+    "payload": {
+      "text": "I ___ just ___ at the airport.",
+      "blanks": [
+        {"position": 1, "choices": ["have", "has", "had", "am"]},
+        {"position": 2, "choices": ["arrived", "arrive", "arriving", "arrives"]}
+      ]
+    },
+    "solution": { "answers": ["have", "arrived"] },
+    "explanation": "🎯 PRESENT PERFECT FORMATION\n\n📐 RULE:\nhave/has + past participle\n\n✏️ HERE:\n• Subject 'I' → use 'have' (not 'has')\n• 'arrive' → past participle: 'arrived'\n\n💡 'JUST' = very recently\n→ Typical Present Perfect signal word!\n\n✅ Answer: I HAVE just ARRIVED at the airport.",
+    "tags": ["MSA", "tenses", "present-perfect", "cloze"]
+  },
+  {
+    "id": "EN_USE_TENSES_024",
+    "subject": "EN",
+    "topic_id": "EN_USE_TENSES",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "What is the Simple Past of 'go'?",
+    "payload": {
+      "choices": ["went", "gone", "goed", "going"],
+      "shuffle": true
+    },
+    "solution": { "correct_choice": "went" },
+    "explanation": "🎯 IRREGULAR VERB: GO\n\n📐 FORMS:\n• Simple Present: go\n• Simple Past: WENT\n• Past Participle: gone\n\n⚠️ COMMON MISTAKE:\n'goed' does NOT exist!\n'go' is irregular!\n\n💡 EXAMPLE:\n• Yesterday I WENT to school.\n• I have GONE to school. (Present Perfect)\n\n✅ Answer: went",
+    "tags": ["MSA", "irregular-verbs", "go"]
+  },
+  {
+    "id": "EN_USE_TENSES_025",
+    "subject": "EN",
+    "topic_id": "EN_USE_TENSES",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "What is the Past Participle of 'write'?",
+    "payload": {
+      "choices": ["written", "wrote", "writed", "writing"],
+      "shuffle": true
+    },
+    "solution": { "correct_choice": "written" },
+    "explanation": "🎯 IRREGULAR VERB: WRITE\n\n📐 FORMS:\n• Simple Present: write\n• Simple Past: wrote\n• Past Participle: WRITTEN\n\n💡 USE:\n• Simple Past: She WROTE a letter yesterday.\n• Present Perfect: She has WRITTEN a letter.\n\n⚠️ REMEMBER:\nwrite - wrote - written\n(all different!)\n\n✅ Answer: written",
+    "tags": ["MSA", "irregular-verbs", "write"]
+  },
+  {
+    "id": "EN_USE_TENSES_026",
+    "subject": "EN",
+    "topic_id": "EN_USE_TENSES",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "What is the Simple Past of 'see'?",
+    "payload": {
+      "choices": ["saw", "seen", "seed", "sawed"],
+      "shuffle": true
+    },
+    "solution": { "correct_choice": "saw" },
+    "explanation": "🎯 IRREGULAR VERB: SEE\n\n📐 FORMS:\n• Simple Present: see\n• Simple Past: SAW\n• Past Participle: seen\n\n💡 EXAMPLES:\n• I SAW him yesterday. (Simple Past)\n• I have SEEN this movie before. (Present Perfect)\n\n⚠️ CAREFUL:\n'seed' is a noun (Samen)!\n'sawed' is from 'saw' (sägen)!\n\n✅ Answer: saw",
+    "tags": ["MSA", "irregular-verbs", "see"]
+  },
+  {
+    "id": "EN_USE_TENSES_027",
+    "subject": "EN",
+    "topic_id": "EN_USE_TENSES",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "What is the Past Participle of 'speak'?",
+    "payload": {
+      "choices": ["spoken", "spoke", "speaked", "speaking"],
+      "shuffle": true
+    },
+    "solution": { "correct_choice": "spoken" },
+    "explanation": "🎯 IRREGULAR VERB: SPEAK\n\n📐 FORMS:\n• Simple Present: speak\n• Simple Past: spoke\n• Past Participle: SPOKEN\n\n💡 EXAMPLES:\n• She SPOKE to him yesterday.\n• She has SPOKEN to him already.\n\n⚠️ PATTERN:\nspeak - spoke - spoken\n(like break - broke - broken)\n\n✅ Answer: spoken",
+    "tags": ["MSA", "irregular-verbs", "speak"]
+  },
+  {
+    "id": "EN_USE_TENSES_028",
+    "subject": "EN",
+    "topic_id": "EN_USE_TENSES",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "What is the Simple Past AND Past Participle of 'put'?",
+    "payload": {
+      "choices": ["put - put", "put - putted", "putted - putted", "put - putten"],
+      "shuffle": true
+    },
+    "solution": { "correct_choice": "put - put" },
+    "explanation": "🎯 IRREGULAR VERB: PUT\n\n📐 FORMS:\n• Simple Present: put\n• Simple Past: PUT\n• Past Participle: PUT\n\n💡 ALL FORMS ARE THE SAME!\nput - put - put\n\n📖 SIMILAR VERBS:\n• cut - cut - cut\n• shut - shut - shut\n• hurt - hurt - hurt\n\n✅ Answer: put - put",
+    "tags": ["MSA", "irregular-verbs", "put"]
+  },
+  {
+    "id": "EN_USE_TENSES_029",
+    "subject": "EN",
+    "topic_id": "EN_USE_TENSES",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "Choose the correct sentence:",
+    "payload": {
+      "choices": [
+        "She has already finished her homework.",
+        "She have already finished her homework.",
+        "She has already finish her homework.",
+        "She already has finished her homework."
+      ],
+      "shuffle": true
+    },
+    "solution": { "correct_choice": "She has already finished her homework." },
+    "explanation": "🎯 PRESENT PERFECT - WORD ORDER\n\n📐 STRUCTURE:\nSubject + have/has + (already/just/never) + past participle\n\n✏️ ANALYSIS:\n• 'She' (3rd person) → 'has' (not 'have')\n• 'finish' → past participle: 'finished'\n• 'already' comes AFTER have/has\n\n⚠️ WRONG:\n• 'She have...' (wrong auxiliary)\n• 'She has finish...' (missing -ed)\n• 'She already has...' (wrong word order)\n\n✅ Answer: She has already finished her homework.",
+    "tags": ["MSA", "tenses", "present-perfect", "word-order"]
+  },
+  {
+    "id": "EN_USE_TENSES_030",
+    "subject": "EN",
+    "topic_id": "EN_USE_TENSES",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Which signal word indicates Present Perfect?",
+    "payload": {
+      "choices": ["since", "yesterday", "every day", "now"],
+      "shuffle": true
+    },
+    "solution": { "correct_choice": "since" },
+    "explanation": "🎯 SIGNAL WORDS\n\n📖 PRESENT PERFECT:\n• since, for\n• already, yet\n• just, recently\n• ever, never\n• so far, up to now\n\n📖 SIMPLE PAST:\n• yesterday\n• last week/month/year\n• ago\n\n📖 SIMPLE PRESENT:\n• every day, always\n• usually, often\n\n📖 PRESENT PROGRESSIVE:\n• now, at the moment\n\n✅ Answer: since (Present Perfect)",
+    "tags": ["MSA", "tenses", "signal-words"]
+  },
+  {
+    "id": "EN_USE_MODALS_005",
+    "subject": "EN",
+    "topic_id": "EN_USE_MODALS",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Which modal verb expresses OBLIGATION? 'You ___ wear a seatbelt.'",
+    "payload": {
+      "choices": ["must", "can", "might", "could"],
+      "shuffle": true
+    },
+    "solution": { "correct_choice": "must" },
+    "explanation": "🎯 MODAL VERBS: OBLIGATION\n\n📖 MUST:\nExpresses strong obligation/necessity.\n'You MUST wear a seatbelt' = It's required!\n\n📖 COMPARISON:\n• must = strong obligation\n• should = advice\n• can = ability/permission\n• might/could = possibility\n\n💡 TIP:\n'must' is often used for rules and laws.\n\n✅ Answer: must",
+    "tags": ["MSA", "modals", "must", "obligation"]
+  },
+  {
+    "id": "EN_USE_MODALS_006",
+    "subject": "EN",
+    "topic_id": "EN_USE_MODALS",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Which modal verb expresses ABILITY? 'She ___ speak three languages.'",
+    "payload": {
+      "choices": ["can", "must", "should", "may"],
+      "shuffle": true
+    },
+    "solution": { "correct_choice": "can" },
+    "explanation": "🎯 MODAL VERBS: ABILITY\n\n📖 CAN:\nExpresses ability (what someone is able to do).\n\n'She CAN speak three languages'\n= She is able to speak them.\n\n📖 COMPARISON:\n• can = ability NOW\n• could = ability in the PAST\n• will be able to = ability in FUTURE\n\n✅ Answer: can",
+    "tags": ["MSA", "modals", "can", "ability"]
+  },
+  {
+    "id": "EN_USE_COMPARISON_005",
+    "subject": "EN",
+    "topic_id": "EN_USE_COMPARISON",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "What is the comparative of 'good'?",
+    "payload": {
+      "choices": ["better", "gooder", "more good", "best"],
+      "shuffle": true
+    },
+    "solution": { "correct_choice": "better" },
+    "explanation": "🎯 IRREGULAR COMPARISON\n\n📐 FORMS OF 'GOOD':\n• Positive: good\n• Comparative: BETTER\n• Superlative: best\n\n⚠️ IRREGULAR!\n'gooder' and 'more good' do NOT exist!\n\n💡 SIMILAR:\n• bad - worse - worst\n• much/many - more - most\n• little - less - least\n\n✅ Answer: better",
+    "tags": ["MSA", "comparison", "irregular"]
+  },
+  {
+    "id": "EN_USE_COMPARISON_006",
+    "subject": "EN",
+    "topic_id": "EN_USE_COMPARISON",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "What is the superlative of 'beautiful'?",
+    "payload": {
+      "choices": ["the most beautiful", "the beautifulest", "more beautiful", "beautifuller"],
+      "shuffle": true
+    },
+    "solution": { "correct_choice": "the most beautiful" },
+    "explanation": "🎯 COMPARISON: LONG ADJECTIVES\n\n📐 RULE:\nAdjectives with 3+ syllables:\n• Comparative: more + adjective\n• Superlative: most + adjective\n\n✏️ 'BEAUTIFUL' (4 syllables):\n• beautiful\n• more beautiful\n• THE MOST beautiful\n\n⚠️ DON'T ADD -er/-est!\n'beautifuler' is WRONG!\n\n✅ Answer: the most beautiful",
+    "tags": ["MSA", "comparison", "long-adjectives"]
+  },
+  {
+    "id": "EN_VOCAB_DAILYLIFE_005",
+    "subject": "EN",
+    "topic_id": "EN_VOCAB_DAILYLIFE",
+    "difficulty": 1,
+    "qtype": "MCQ",
+    "prompt": "What does 'to spend money' mean in German?",
+    "payload": {
+      "choices": ["Geld ausgeben", "Geld sparen", "Geld verdienen", "Geld verlieren"],
+      "shuffle": true
+    },
+    "solution": { "correct_choice": "Geld ausgeben" },
+    "explanation": "🎯 VOCABULARY: SPEND\n\n📖 'to spend' has TWO meanings:\n1. spend MONEY = Geld AUSGEBEN\n2. spend TIME = Zeit VERBRINGEN\n\n💡 EXAMPLES:\n• I spent 50 euros on shoes. (ausgeben)\n• I spent the weekend with friends. (verbringen)\n\n📐 IRREGULAR:\nspend - spent - spent\n\n✅ Answer: Geld ausgeben",
+    "tags": ["MSA", "vocabulary", "spend"]
+  },
+  {
+    "id": "EN_VOCAB_DAILYLIFE_006",
+    "subject": "EN",
+    "topic_id": "EN_VOCAB_DAILYLIFE",
+    "difficulty": 1,
+    "qtype": "MCQ",
+    "prompt": "What does 'to lose' mean in German?",
+    "payload": {
+      "choices": ["verlieren", "verlassen", "vergessen", "versuchen"],
+      "shuffle": true
+    },
+    "solution": { "correct_choice": "verlieren" },
+    "explanation": "🎯 VOCABULARY: LOSE\n\n📖 'to lose' = verlieren\n\n💡 EXAMPLES:\n• I lost my keys. (Schlüssel verloren)\n• We lost the game. (Spiel verloren)\n\n📐 IRREGULAR:\nlose - lost - lost\n\n⚠️ DON'T CONFUSE:\n• lose = verlieren\n• leave = verlassen\n• forget = vergessen\n\n✅ Answer: verlieren",
+    "tags": ["MSA", "vocabulary", "lose"]
+  },
+  {
+    "id": "EN_READ_CORE_005",
+    "subject": "EN",
+    "topic_id": "EN_READ_CORE",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "A sign says: 'Zeb throws objects. Please beware - his aim is accurate.' What does this mean?",
+    "payload": {
+      "choices": [
+        "Be careful - this animal could hit you",
+        "Do not feed this animal",
+        "This animal is scared",
+        "The animal might escape"
+      ],
+      "shuffle": true
+    },
+    "solution": { "correct_choice": "Be careful - this animal could hit you" },
+    "explanation": "🎯 READING COMPREHENSION\n\n📖 KEY WORDS:\n• 'throws objects' = wirft Gegenstände\n• 'beware' = Vorsicht\n• 'aim is accurate' = Ziel ist genau\n\n✏️ MEANING:\nThe animal throws things AND can aim well!\n→ It could hit you!\n→ This is a WARNING sign.\n\n💡 TIP:\nLook for KEY WORDS to understand the meaning!\n\n✅ Answer: Be careful - this animal could hit you",
+    "tags": ["MSA", "reading", "signs"]
+  },
+  {
+    "id": "EN_USE_QUEST_NEG_005",
+    "subject": "EN",
+    "topic_id": "EN_USE_QUEST_NEG",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Which question is correct?",
+    "payload": {
+      "choices": [
+        "Does she like pizza?",
+        "Do she likes pizza?",
+        "Does she likes pizza?",
+        "Do she like pizza?"
+      ],
+      "shuffle": true
+    },
+    "solution": { "correct_choice": "Does she like pizza?" },
+    "explanation": "🎯 QUESTIONS IN SIMPLE PRESENT\n\n📐 RULE:\nDo/Does + subject + infinitive (WITHOUT -s)?\n\n✏️ ANALYSIS:\n• 'she' (3rd person) → use 'Does'\n• After 'Does' → infinitive WITHOUT -s!\n• 'like' (not 'likes'!)\n\n⚠️ COMMON MISTAKE:\n'Does she likes...' is WRONG!\nThe -s is already in 'Does'!\n\n✅ Answer: Does she like pizza?",
+    "tags": ["MSA", "questions", "simple-present"]
+  },
+  {
+    "id": "EN_USE_TENSES_031",
+    "subject": "EN",
+    "topic_id": "EN_USE_TENSES",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "What is the Simple Past of 'think'?",
+    "payload": {
+      "choices": ["thought", "thinked", "thank", "thinks"],
+      "shuffle": true
+    },
+    "solution": { "correct_choice": "thought" },
+    "explanation": "🎯 IRREGULAR VERB: THINK\n\n📐 FORMS:\n• Simple Present: think\n• Simple Past: THOUGHT\n• Past Participle: thought\n\n⚠️ 'thinked' does NOT exist!\n\n💡 SIMILAR PATTERN:\n• think - thought - thought\n• bring - brought - brought\n• buy - bought - bought\n\n✅ Answer: thought",
+    "tags": ["MSA", "irregular-verbs", "think"]
+  }
+]

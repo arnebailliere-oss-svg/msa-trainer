@@ -1,0 +1,33 @@
+# Python (legacy desktop app)
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+msa_trainer.db
+*.db-wal
+*.db-shm
+nul
+
+# Node / web
+web/node_modules/
+web/dist/
+web/dev-dist/
+web/.vite/
+web/public/content/
+
+# Source PDFs: iMINT set is CC BY-SA but 118 MB (kept local, see README);
+# Prüfungshefte e-books are commercial and must never be committed.
+MSA_Folien_als_PDF/
+docs/MSA_Folien_als_PDF/
+docs/prüfungshefte/
+*_Ebook_*.pdf
+content_packs/berlin_msa_v1/images/
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

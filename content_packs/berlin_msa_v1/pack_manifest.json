@@ -1,0 +1,13 @@
+{
+  "pack_id": "berlin_msa_v1",
+  "version": "1.0.0",
+  "title": "Berlin MSA Klasse 9",
+  "min_app_version": "0.1.0",
+  "subjects": ["MATH", "DE", "EN"],
+  "topic_file": "topics.json",
+  "question_files": {
+    "MATH": "questions_math.json",
+    "DE": "questions_german.json",
+    "EN": "questions_english.json"
+  }
+}

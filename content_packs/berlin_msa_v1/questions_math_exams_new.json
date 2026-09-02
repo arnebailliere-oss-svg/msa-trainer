@@ -1,0 +1,309 @@
+[
+  {
+    "id": "MATH_GEO_VOLUME_006",
+    "subject": "MATH",
+    "topic_id": "MATH_GEO_VOLUME",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Eine zylindrische Konservendose hat r = 4 cm und h = 8 cm. Wie groß ist das Volumen? (Runde auf ganze ml)",
+    "payload": {
+      "choices": ["402 ml", "201 ml", "100 ml", "804 ml"],
+      "shuffle": true
+    },
+    "solution": { "correct_choice": "402 ml" },
+    "explanation": "🎯 ZYLINDER-VOLUMEN\n\n📐 FORMEL:\nV = π × r² × h\n\n✏️ RECHNUNG:\nV = π × 4² × 8\nV = π × 16 × 8\nV = 128π ≈ 402,12 cm³\n\n💡 HINWEIS:\n1 cm³ = 1 ml\nAlso V ≈ 402 ml\n\n✅ Antwort: 402 ml",
+    "tags": ["MSA", "MSA2023", "volume", "cylinder"]
+  },
+  {
+    "id": "MATH_GEO_VOLUME_007",
+    "subject": "MATH",
+    "topic_id": "MATH_GEO_VOLUME",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "Die Mantelfläche eines Zylinders (r = 4 cm, h = 8 cm) wird abgewickelt. Welche Länge a hat das Rechteck?",
+    "payload": {
+      "choices": ["ca. 25,1 cm", "ca. 8 cm", "ca. 12,6 cm", "ca. 50,3 cm"],
+      "shuffle": true
+    },
+    "solution": { "correct_choice": "ca. 25,1 cm" },
+    "explanation": "🎯 MANTELFLÄCHE ABWICKELN\n\n📖 BEIM ABWICKELN:\nDie Mantelfläche wird zu einem Rechteck!\n• Länge a = Umfang des Kreises = 2πr\n• Breite b = Höhe h\n\n✏️ RECHNUNG:\na = 2 × π × 4 = 8π ≈ 25,13 cm\n\n💡 VORSTELLUNG:\nStell dir vor, du schneidest eine Dose auf\nund rollst sie flach aus!\n\n✅ Antwort: ca. 25,1 cm",
+    "tags": ["MSA", "MSA2023", "cylinder", "surface"]
+  },
+  {
+    "id": "MATH_GEO_VOLUME_008",
+    "subject": "MATH",
+    "topic_id": "MATH_GEO_VOLUME",
+    "difficulty": 4,
+    "qtype": "MCQ",
+    "prompt": "Deckel (r = 4 cm) werden aus einem Blechstreifen (8 cm × 100 cm) gestanzt. Der Materialverlust soll max. 25% sein. Wie viele Deckel passen nebeneinander?",
+    "payload": {
+      "choices": ["12 Deckel", "25 Deckel", "6 Deckel", "8 Deckel"],
+      "shuffle": true
+    },
+    "solution": { "correct_choice": "12 Deckel" },
+    "explanation": "🎯 DECKEL AUS BLECHSTREIFEN\n\n📐 BERECHNUNG:\nDurchmesser eines Deckels: d = 2r = 8 cm\nBlechstreifenlänge: 100 cm\n\nAnzahl = 100 ÷ 8 = 12,5 → 12 ganze Deckel\n\n📐 MATERIALVERLUST PRÜFEN:\nFläche Blech: 8 × 100 = 800 cm²\nFläche 12 Deckel: 12 × π × 4² = 12 × 16π ≈ 603,2 cm²\nVerlust: 800 - 603,2 = 196,8 cm²\nVerlust in %: 196,8 ÷ 800 ≈ 24,6% < 25% ✓\n\n✅ Antwort: 12 Deckel",
+    "tags": ["MSA", "MSA2023", "percent", "application"]
+  },
+  {
+    "id": "MATH_GEO_VOLUME_009",
+    "subject": "MATH",
+    "topic_id": "MATH_GEO_VOLUME",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "Eine Dose mit r = 4 cm soll 1 Liter fassen. Welche Höhe h wird benötigt? (Runde auf eine Dezimalstelle)",
+    "payload": {
+      "choices": ["19,9 cm", "15,9 cm", "25,0 cm", "7,9 cm"],
+      "shuffle": true
+    },
+    "solution": { "correct_choice": "19,9 cm" },
+    "explanation": "🎯 HÖHE AUS VOLUMEN BERECHNEN\n\n📐 FORMEL UMSTELLEN:\nV = π × r² × h\n→ h = V ÷ (π × r²)\n\n✏️ RECHNUNG:\n1 Liter = 1000 cm³\nh = 1000 ÷ (π × 16)\nh = 1000 ÷ 50,27\nh ≈ 19,89 cm ≈ 19,9 cm\n\n✅ Antwort: 19,9 cm",
+    "tags": ["MSA", "MSA2023", "volume", "cylinder"]
+  },
+  {
+    "id": "MATH_FUNC_LINEAR_FORM_006",
+    "subject": "MATH",
+    "topic_id": "MATH_FUNC_LINEAR_FORM",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Die Gerade f hat die Gleichung f(x) = 4x - 2. Welche Aussage ist FALSCH?",
+    "payload": {
+      "choices": [
+        "Die Gerade schneidet die y-Achse im Punkt (-2|0)",
+        "Die Steigung der Geraden ist 4",
+        "Die Gerade verläuft durch den Punkt (1|2)",
+        "Die Gerade ist eine steigende Funktion"
+      ],
+      "shuffle": true
+    },
+    "solution": { "correct_choice": "Die Gerade schneidet die y-Achse im Punkt (-2|0)" },
+    "explanation": "🎯 LINEARE FUNKTION ANALYSIEREN\n\n📖 f(x) = 4x - 2 bedeutet:\n• Steigung m = 4 (positiv = steigend) ✓\n• y-Achsenabschnitt b = -2\n\n⚠️ ACHTUNG:\ny-Achsenabschnitt heißt x = 0!\nAlso Punkt (0|-2), NICHT (-2|0)!\n\n✏️ PRÜFUNG für (1|2):\nf(1) = 4×1 - 2 = 2 ✓\n\n❌ FALSCH: Die y-Achse wird im Punkt (0|-2) geschnitten, nicht (-2|0)!\n\n✅ Antwort: y-Achse bei (-2|0) ist FALSCH",
+    "tags": ["MSA", "MSA2023", "linear", "function"]
+  },
+  {
+    "id": "MATH_FUNC_QUAD_002",
+    "subject": "MATH",
+    "topic_id": "MATH_FUNC_QUAD",
+    "difficulty": 2,
+    "qtype": "SHORT",
+    "prompt": "Die Parabel p(x) = (x - 1)² - 2 hat den Scheitelpunkt S. Was ist die x-Koordinate von S?",
+    "payload": {
+      "answer_type": "number",
+      "tolerance": 0,
+      "normalization": ["trim"]
+    },
+    "solution": { "value": 1 },
+    "explanation": "🎯 SCHEITELPUNKTFORM ABLESEN\n\n📐 SCHEITELPUNKTFORM:\np(x) = (x - d)² + e\nScheitelpunkt S(d|e)\n\n✏️ ABLESEN:\np(x) = (x - 1)² - 2\n→ d = 1, e = -2\n→ S(1|-2)\n\n💡 MERKE:\nIn der Scheitelpunktform steht der Scheitelpunkt 'versteckt' drin!\n(x - d) → x-Koordinate ist +d\n\n✅ Antwort: x = 1",
+    "tags": ["MSA", "MSA2023", "quadratic", "vertex"]
+  },
+  {
+    "id": "MATH_FUNC_QUAD_003",
+    "subject": "MATH",
+    "topic_id": "MATH_FUNC_QUAD",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "Für welche x-Werte ist p(x) = -x² - 2x + 5 gleich -10?",
+    "payload": {
+      "choices": ["x = -5 und x = 3", "x = 5 und x = -3", "x = -3 und x = 3", "x = -5 und x = -3"],
+      "shuffle": true
+    },
+    "solution": { "correct_choice": "x = -5 und x = 3" },
+    "explanation": "🎯 QUADRATISCHE GLEICHUNG LÖSEN\n\n📐 GLEICHUNG AUFSTELLEN:\n-x² - 2x + 5 = -10\n-x² - 2x + 15 = 0  |×(-1)\nx² + 2x - 15 = 0\n\n📐 PQ-FORMEL:\nx₁,₂ = -1 ± √(1 + 15)\nx₁,₂ = -1 ± √16\nx₁,₂ = -1 ± 4\n\nx₁ = -1 + 4 = 3\nx₂ = -1 - 4 = -5\n\n✅ Antwort: x = -5 und x = 3",
+    "tags": ["MSA", "MSA2023", "quadratic", "equation"]
+  },
+  {
+    "id": "MATH_DATA_STATS_012",
+    "subject": "MATH",
+    "topic_id": "MATH_DATA_STATS",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Im Jahr 2020 waren von 7,8 Mrd. Menschen 1,25 Mrd. Jugendliche. Wie viel Prozent waren Jugendliche? (Runde auf ganze Zahl)",
+    "payload": {
+      "choices": ["16%", "25%", "20%", "13%"],
+      "shuffle": true
+    },
+    "solution": { "correct_choice": "16%" },
+    "explanation": "🎯 PROZENTSATZ BERECHNEN\n\n📐 FORMEL:\np = (Anteil ÷ Gesamt) × 100%\n\n✏️ RECHNUNG:\np = (1,25 ÷ 7,8) × 100%\np = 0,1603 × 100%\np ≈ 16%\n\n💡 ÜBERPRÜFUNG:\n16% von 7,8 = 0,16 × 7,8 = 1,248 ≈ 1,25 ✓\n\n✅ Antwort: 16%",
+    "tags": ["MSA", "MSA2023", "percent", "statistics"]
+  },
+  {
+    "id": "MATH_DATA_STATS_013",
+    "subject": "MATH",
+    "topic_id": "MATH_DATA_STATS",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Die Datenreihe zeigt Muttersprachler (in Mio.): Arabisch 290, Chinesisch 1300, Englisch 500, Hindi 525, Spanisch 389. Was ist die Spannweite?",
+    "payload": {
+      "choices": ["1010 Mio.", "1300 Mio.", "290 Mio.", "600 Mio."],
+      "shuffle": true
+    },
+    "solution": { "correct_choice": "1010 Mio." },
+    "explanation": "🎯 SPANNWEITE BERECHNEN\n\n📖 DEFINITION:\nSpannweite = Maximum - Minimum\n\n✏️ BESTIMMEN:\n• Maximum: 1300 (Chinesisch)\n• Minimum: 290 (Arabisch)\n\n✏️ RECHNUNG:\nSpannweite = 1300 - 290 = 1010 Mio.\n\n💡 DIE SPANNWEITE zeigt, wie weit die Werte auseinander liegen.\n\n✅ Antwort: 1010 Mio.",
+    "tags": ["MSA", "MSA2023", "statistics", "range"]
+  },
+  {
+    "id": "MATH_DATA_PROB_005",
+    "subject": "MATH",
+    "topic_id": "MATH_DATA_PROB",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "In einer Lostrommel mit 5 Losen ist 1 Joker. Benjamin zieht zweimal (mit Zurücklegen). P(zweimal Joker) = ?",
+    "payload": {
+      "choices": ["1/25", "2/25", "1/5", "1/10"],
+      "shuffle": true
+    },
+    "solution": { "correct_choice": "1/25" },
+    "explanation": "🎯 WAHRSCHEINLICHKEIT MIT ZURÜCKLEGEN\n\n📐 BEI 'MIT ZURÜCKLEGEN':\nJedes Ziehen ist unabhängig!\nP(A und B) = P(A) × P(B)\n\n✏️ RECHNUNG:\nP(Joker) = 1/5 bei jedem Ziehen\n\nP(zweimal Joker) = 1/5 × 1/5 = 1/25\n\n💡 PFADREGEL:\nAuf einem Pfad werden Wahrscheinlichkeiten MULTIPLIZIERT!\n\n✅ Antwort: 1/25",
+    "tags": ["MSA", "MSA2024", "probability", "tree"]
+  },
+  {
+    "id": "MATH_GEO_TRIG_007",
+    "subject": "MATH",
+    "topic_id": "MATH_GEO_TRIG",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "Eine Seilbahn verbindet A und B. Die Strecke AB = 384 m, die horizontale Entfernung FB = 255 m. Wie hoch ist der Höhenunterschied FA? (Pythagoras)",
+    "payload": {
+      "choices": ["287 m", "195 m", "461 m", "129 m"],
+      "shuffle": true
+    },
+    "solution": { "correct_choice": "287 m" },
+    "explanation": "🎯 PYTHAGORAS BEI DER SEILBAHN\n\n📐 RECHTWINKLIGES DREIECK:\n• AB = Hypotenuse = 384 m (Seil)\n• FB = Kathete = 255 m (horizontal)\n• FA = Kathete = ? (Höhenunterschied)\n\n✏️ RECHNUNG:\nFA² = AB² - FB²\nFA² = 384² - 255²\nFA² = 147456 - 65025\nFA² = 82431\nFA = √82431 ≈ 287,1 m\n\n✅ Antwort: 287 m",
+    "tags": ["MSA", "MSA2024", "pythagoras", "application"]
+  },
+  {
+    "id": "MATH_FUNC_EXP_008",
+    "subject": "MATH",
+    "topic_id": "MATH_FUNC_EXP",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Eine Bakterienkultur: t=0: 80, t=1: 112, t=2: 157. Was ist der Wachstumsfaktor?",
+    "payload": {
+      "choices": ["1,4", "1,2", "1,5", "0,4"],
+      "shuffle": true
+    },
+    "solution": { "correct_choice": "1,4" },
+    "explanation": "🎯 WACHSTUMSFAKTOR BESTIMMEN\n\n📐 FORMEL:\nWachstumsfaktor = neuer Wert ÷ alter Wert\n\n✏️ RECHNUNG:\nVon t=0 zu t=1: 112 ÷ 80 = 1,4\nVon t=1 zu t=2: 157 ÷ 112 ≈ 1,4\n\n💡 BEI EXPONENTIELLEM WACHSTUM:\nDer Wachstumsfaktor ist KONSTANT!\n\n📐 FORMEL:\nN(t) = N₀ × q^t\nHier: N(t) = 80 × 1,4^t\n\n✅ Antwort: 1,4",
+    "tags": ["MSA", "MSA2025", "exponential", "growth"]
+  },
+  {
+    "id": "MATH_FUNC_EXP_009",
+    "subject": "MATH",
+    "topic_id": "MATH_FUNC_EXP",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "Bakterien wachsen nach N(t) = 80 × 1,4^t. Wie viele nach 24 Stunden?",
+    "payload": {
+      "choices": ["Mehr als 250.000", "Genau 250.000", "Weniger als 250.000", "Genau 80.000"],
+      "shuffle": true
+    },
+    "solution": { "correct_choice": "Mehr als 250.000" },
+    "explanation": "🎯 EXPONENTIELLES WACHSTUM BERECHNEN\n\n📐 FORMEL:\nN(t) = 80 × 1,4^t\n\n✏️ RECHNUNG für t = 24:\nN(24) = 80 × 1,4^24\n1,4^24 ≈ 4907 (mit Taschenrechner)\nN(24) = 80 × 4907 ≈ 392.545\n\n💡 VERGLEICH:\n392.545 > 250.000 ✓\n\n⚠️ EXPONENTIELLES WACHSTUM:\nWächst SEHR SCHNELL!\nNach 24h: fast 400.000 Bakterien!\n\n✅ Antwort: Mehr als 250.000",
+    "tags": ["MSA", "MSA2025", "exponential", "calculation"]
+  },
+  {
+    "id": "MATH_NUM_PCT_BASIC_030",
+    "subject": "MATH",
+    "topic_id": "MATH_NUM_PCT_BASIC",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Jeder vierte Schüler fährt mit dem Fahrrad zur Schule. Wie viel Prozent sind das?",
+    "payload": {
+      "choices": ["25%", "10%", "15%", "50%"],
+      "shuffle": true
+    },
+    "solution": { "correct_choice": "25%" },
+    "explanation": "🎯 BRUCH IN PROZENT\n\n📖 'JEDER VIERTE' bedeutet:\n1 von 4 = 1/4\n\n✏️ UMRECHNUNG:\n1/4 = 1 ÷ 4 = 0,25 = 25%\n\n💡 MERKHILFE:\n• Jeder Zweite = 1/2 = 50%\n• Jeder Dritte = 1/3 ≈ 33%\n• Jeder Vierte = 1/4 = 25%\n• Jeder Fünfte = 1/5 = 20%\n\n✅ Antwort: 25%",
+    "tags": ["MSA", "MSA2022", "percent", "fractions"]
+  },
+  {
+    "id": "MATH_DATA_STATS_014",
+    "subject": "MATH",
+    "topic_id": "MATH_DATA_STATS",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Sechs Häuser sind im Durchschnitt 10 m hoch. Fünf davon sind: 8m, 9m, 11m, 10m, 10m. Wie hoch ist das sechste Haus?",
+    "payload": {
+      "choices": ["12 m", "10 m", "8 m", "14 m"],
+      "shuffle": true
+    },
+    "solution": { "correct_choice": "12 m" },
+    "explanation": "🎯 FEHLENDEN WERT BEIM DURCHSCHNITT FINDEN\n\n📐 DURCHSCHNITT-FORMEL:\nDurchschnitt = Summe ÷ Anzahl\n→ Summe = Durchschnitt × Anzahl\n\n✏️ RECHNUNG:\nGesamtsumme: 10 × 6 = 60 m\n\nSumme der bekannten: 8 + 9 + 11 + 10 + 10 = 48 m\n\nFehlendes Haus: 60 - 48 = 12 m\n\n💡 PROBE:\n(8+9+11+10+10+12) ÷ 6 = 60 ÷ 6 = 10 ✓\n\n✅ Antwort: 12 m",
+    "tags": ["MSA", "MSA2022", "statistics", "average"]
+  },
+  {
+    "id": "MATH_NUM_PCT_BASIC_031",
+    "subject": "MATH",
+    "topic_id": "MATH_NUM_PCT_BASIC",
+    "difficulty": 2,
+    "qtype": "SHORT",
+    "prompt": "Beim Bäcker kosten 600g Vollkornbrot 2,40€. Wie viel kosten 1000g? (In Euro)",
+    "payload": {
+      "answer_type": "number",
+      "tolerance": 0,
+      "normalization": ["trim", "comma_to_dot"]
+    },
+    "solution": { "value": 4 },
+    "explanation": "🎯 DREISATZ\n\n📐 ANSATZ:\n600g → 2,40€\n1000g → ?€\n\n✏️ RECHNUNG:\nMethode 1 (Dreisatz):\n1g kostet: 2,40€ ÷ 600 = 0,004€\n1000g kosten: 0,004€ × 1000 = 4,00€\n\nMethode 2 (Verhältnis):\n1000 ÷ 600 = 5/3\n2,40€ × 5/3 = 4,00€\n\n✅ Antwort: 4,00€",
+    "tags": ["MSA", "MSA2022", "proportional", "price"]
+  },
+  {
+    "id": "MATH_ALG_EQU_LINEAR_008",
+    "subject": "MATH",
+    "topic_id": "MATH_ALG_EQU_LINEAR",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Löse die Gleichung: 8 - 3x = x - 12",
+    "payload": {
+      "choices": ["x = 5", "x = 3", "x = 7", "x = 9"],
+      "shuffle": true
+    },
+    "solution": { "correct_choice": "x = 5" },
+    "explanation": "🎯 LINEARE GLEICHUNG LÖSEN\n\n✏️ RECHNUNG:\n8 - 3x = x - 12      | +3x\n8 = 4x - 12         | +12\n20 = 4x             | ÷4\n5 = x\n\n💡 PROBE:\n8 - 3×5 = 8 - 15 = -7\n5 - 12 = -7 ✓\n\n✅ Antwort: x = 5",
+    "tags": ["MSA", "MSA2022", "equation", "linear"]
+  },
+  {
+    "id": "MATH_DATA_CHARTS_002",
+    "subject": "MATH",
+    "topic_id": "MATH_DATA_CHARTS",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "In einem Kreisdiagramm soll 19% dargestellt werden. Welchen Winkel hat dieser Sektor?",
+    "payload": {
+      "choices": ["68,4°", "19°", "90°", "34,2°"],
+      "shuffle": true
+    },
+    "solution": { "correct_choice": "68,4°" },
+    "explanation": "🎯 WINKEL IM KREISDIAGRAMM\n\n📐 FORMEL:\nWinkel = Prozent × 360° ÷ 100%\noder: Winkel = Prozent × 3,6°\n\n✏️ RECHNUNG:\nWinkel = 19% × 3,6°\nWinkel = 68,4°\n\n💡 MERKE:\n• 100% = 360° (voller Kreis)\n• 50% = 180° (halber Kreis)\n• 25% = 90° (Viertelkreis)\n• 1% = 3,6°\n\n✅ Antwort: 68,4°",
+    "tags": ["MSA", "MSA2022", "charts", "pie"]
+  },
+  {
+    "id": "MATH_FUNC_LINEAR_FORM_007",
+    "subject": "MATH",
+    "topic_id": "MATH_FUNC_LINEAR_FORM",
+    "difficulty": 2,
+    "qtype": "SHORT",
+    "prompt": "Die Gerade f(x) = 3x - 1 schneidet die x-Achse bei x = ?",
+    "payload": {
+      "answer_type": "text",
+      "normalization": ["trim", "comma_to_dot"]
+    },
+    "solution": { "value": "1/3" },
+    "explanation": "🎯 NULLSTELLE FINDEN\n\n📖 NULLSTELLE:\nWo schneidet die Gerade die x-Achse?\n→ Wo ist y = 0?\n\n✏️ RECHNUNG:\n0 = 3x - 1     | +1\n1 = 3x         | ÷3\nx = 1/3\n\n💡 PROBE:\nf(1/3) = 3 × 1/3 - 1 = 1 - 1 = 0 ✓\n\n✅ Antwort: x = 1/3",
+    "tags": ["MSA", "MSA2022", "linear", "zeros"]
+  },
+  {
+    "id": "MATH_NUM_PCT_CHANGE_006",
+    "subject": "MATH",
+    "topic_id": "MATH_NUM_PCT_CHANGE",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "Von 2018 (382 Schüler) bis 2019 (328 Schüler) sank die Zahl der Nicht-Videospieler. Um wie viel Prozent? (Runde auf ganze Zahl)",
+    "payload": {
+      "choices": ["14%", "54%", "16%", "86%"],
+      "shuffle": true
+    },
+    "solution": { "correct_choice": "14%" },
+    "explanation": "🎯 PROZENTUALE ABNAHME\n\n📐 FORMEL:\nAbnahme in % = (Alter Wert - Neuer Wert) ÷ Alter Wert × 100%\n\n✏️ RECHNUNG:\nAbnahme = (382 - 328) ÷ 382 × 100%\nAbnahme = 54 ÷ 382 × 100%\nAbnahme ≈ 0,1414 × 100%\nAbnahme ≈ 14%\n\n⚠️ ACHTUNG:\nImmer durch den ALTEN Wert teilen!\n\n✅ Antwort: 14%",
+    "tags": ["MSA", "MSA2022", "percent", "change"]
+  }
+]

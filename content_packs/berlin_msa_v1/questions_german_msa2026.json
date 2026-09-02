@@ -1,0 +1,231 @@
+[
+  {
+    "id": "DE_ORTHO_CASE_TRAIN_001",
+    "subject": "DE",
+    "topic_id": "DE_ORTHO_CASE",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Welche Rechtschreibstrategie hilft dir bei der Frage: Schreibt man 'eifersüchtig' mit i oder ü?",
+    "payload": {
+      "choices": [
+        "Ich suche ein stammverwandtes Wort",
+        "Ich trenne das Wort",
+        "Ich verlängere das Wort",
+        "Ich bilde den Plural"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "Ich suche ein stammverwandtes Wort"
+    },
+    "explanation": "🎯 WAS IST DAS?\nRechtschreibstrategie: ABLEITEN\n\n📖 DIE REGEL:\nBei der Frage 'e oder ä?' oder 'i oder ü?' hilft die ABLEITUNGSPROBE.\nSuche ein verwandtes Wort!\n\n✏️ BEISPIEL:\neifersüchtig → Sucht (stammverwandtes Wort)\nIn 'Sucht' hört man das U deutlich!\nAlso: eifersüchtig mit Ü\n\n💡 WEITERE BEISPIELE:\n• häufig → Haufen (a → ä)\n• Stärke → stark (a → ä)\n• Bäume → Baum (au → äu)\n\n⚠️ MERKE:\nABLEITEN hilft bei:\n• e oder ä?\n• eu oder äu?\n• i oder ü?\n\n✅ Antwort: Ich suche ein stammverwandtes Wort",
+    "tags": ["MSA", "training", "spelling", "strategy", "Ableiten"]
+  },
+  {
+    "id": "DE_ORTHO_CASE_TRAIN_002",
+    "subject": "DE",
+    "topic_id": "DE_ORTHO_CASE",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Welche Rechtschreibstrategie hilft dir bei der Frage: Schreibt man 'eifersüchtig' mit g oder k am Ende?",
+    "payload": {
+      "choices": [
+        "Ich verlängere das Wort",
+        "Ich suche ein stammverwandtes Wort",
+        "Ich trenne das Wort",
+        "Ich erkenne ein Suffix"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "Ich verlängere das Wort"
+    },
+    "explanation": "🎯 WAS IST DAS?\nRechtschreibstrategie: VERLÄNGERN\n\n📖 DIE REGEL:\nBei der Frage 'g oder k?', 'd oder t?', 'b oder p?' hilft VERLÄNGERN.\n\n✏️ WIE VERLÄNGERT MAN?\n• Nomen → Plural bilden\n• Verben → Infinitiv bilden\n• Adjektive → steigern (Komparativ)\n\n✏️ BEISPIEL:\neifersüchtig → eifersüchtiger (Komparativ)\nJetzt hört man das G deutlich!\nAlso: eifersüchtig mit G\n\n💡 WEITERE BEISPIELE:\n• Hund oder Hunt? → Hunde → Hund\n• klug oder kluk? → klüger → klug\n• liebt oder liept? → lieben → liebt\n\n⚠️ MERKE:\nVERLÄNGERN hilft bei:\n• g oder k?\n• d oder t?\n• b oder p?\n\n✅ Antwort: Ich verlängere das Wort",
+    "tags": ["MSA", "training", "spelling", "strategy", "Verlängern"]
+  },
+  {
+    "id": "DE_ORTHO_DOUBLE_TRAIN_001",
+    "subject": "DE",
+    "topic_id": "DE_ORTHO_DOUBLE",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Wie schreibt man das Wort richtig: 'Sterke' oder 'Stärke'?",
+    "payload": {
+      "choices": ["Stärke", "Sterke", "Staerke", "Stercke"],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "Stärke"
+    },
+    "explanation": "🎯 WAS IST DAS?\nRechtschreibung mit Umlaut (ä).\n\n📖 DIE STRATEGIE: ABLEITEN\nSuche ein verwandtes Wort ohne Umlaut!\n\n✏️ ABLEITUNG:\nStärke → stark\nIn 'stark' steht ein A.\nAlso wird 'Stärke' mit Ä geschrieben!\n\n💡 REGEL:\nWenn das Grundwort ein A hat,\nschreibt man im abgeleiteten Wort Ä (nicht E).\n\n🎁 WEITERE BEISPIELE:\n• Bäcker → backen\n• Händler → Handel\n• Länge → lang\n• kälter → kalt\n\n⚠️ ACHTUNG:\nAuch wenn Ä und E gleich klingen,\nmusst du das Grundwort suchen!\n\n✅ Antwort: Stärke",
+    "tags": ["MSA", "training", "spelling", "Umlaut", "Ableiten"]
+  },
+  {
+    "id": "DE_ORTHO_DOUBLE_TRAIN_002",
+    "subject": "DE",
+    "topic_id": "DE_ORTHO_DOUBLE",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Wie schreibt man das Wort richtig: 'heufig' oder 'häufig'?",
+    "payload": {
+      "choices": ["häufig", "heufig", "haufig", "häuffig"],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "häufig"
+    },
+    "explanation": "🎯 WAS IST DAS?\nRechtschreibung mit äu oder eu.\n\n📖 DIE STRATEGIE: ABLEITEN\nSuche ein verwandtes Wort!\n\n✏️ ABLEITUNG:\nhäufig → Haufen\nIn 'Haufen' steht AU.\nAlso wird 'häufig' mit ÄU geschrieben!\n\n💡 REGEL:\nWenn das Grundwort AU hat,\nschreibt man im abgeleiteten Wort ÄU (nicht EU).\n\n🎁 WEITERE BEISPIELE:\n• Bäume → Baum (au → äu)\n• träumen → Traum (au → äu)\n• Mäuse → Maus (au → äu)\n• läuft → laufen (au → äu)\n\n⚠️ ABER:\n• heute → kein Grundwort mit au → EU\n• neu → kein Grundwort mit au → EU\n\n✅ Antwort: häufig",
+    "tags": ["MSA", "training", "spelling", "Umlaut", "äu_eu"]
+  },
+  {
+    "id": "DE_GRAM_WORD_CLASSES_TRAIN_001",
+    "subject": "DE",
+    "topic_id": "DE_GRAM_WORD_CLASSES",
+    "difficulty": 1,
+    "qtype": "MCQ",
+    "prompt": "Welches Stilmittel wird hier verwendet? 'Veni, vidi, vici' (Ich kam, ich sah, ich siegte)",
+    "payload": {
+      "choices": ["Alliteration", "Anapher", "Antithese", "Metapher"],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "Alliteration"
+    },
+    "explanation": "🎯 WAS IST DAS?\nStilmittel erkennen: ALLITERATION\n\n📖 DEFINITION:\nAlliteration = Mindestens zwei aufeinanderfolgende Wörter beginnen mit dem GLEICHEN ANFANGSLAUT.\n\n✏️ ANALYSE:\nVeni, Vidi, Vici\n↓     ↓     ↓\nV     V     V\n\nAlle drei Wörter beginnen mit V!\n= Alliteration\n\n💡 WEITERE BEISPIELE:\n• 'frisch und fröhlich' (f-f)\n• 'Kind und Kegel' (k-k)\n• 'Mann und Maus' (m-m)\n• 'mit Rat und Tat' (r-t? Nein!)\n\n⚠️ WICHTIG:\nEs geht um den LAUT, nicht den Buchstaben!\n'Chemie und Charme' ist KEINE Alliteration\n(Ch klingt unterschiedlich)\n\n✅ Antwort: Alliteration",
+    "tags": ["MSA", "training", "Stilmittel", "Alliteration", "rhetoric"]
+  },
+  {
+    "id": "DE_GRAM_WORD_CLASSES_TRAIN_002",
+    "subject": "DE",
+    "topic_id": "DE_GRAM_WORD_CLASSES",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Welches Stilmittel wird hier verwendet? 'Wer war das? Wer hat das getan? Wer ist schuld?'",
+    "payload": {
+      "choices": ["Anapher", "Alliteration", "Antithese", "Asyndeton"],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "Anapher"
+    },
+    "explanation": "🎯 WAS IST DAS?\nStilmittel erkennen: ANAPHER\n\n📖 DEFINITION:\nAnapher = Wiederholung eines Wortes oder einer Wortgruppe am ANFANG aufeinanderfolgender Sätze.\n\n✏️ ANALYSE:\n'Wer war das?'\n'Wer hat das getan?'\n'Wer ist schuld?'\n ↓\nJeder Satz beginnt mit 'Wer'!\n= Anapher\n\n💡 WEITERE BEISPIELE:\n• 'Ich fordere Mut. Ich fordere Tatkraft. Ich fordere Einheit.'\n• 'Das Wasser rauscht. Das Wasser schwoll.'\n\n⚠️ UNTERSCHIED ZUR ALLITERATION:\nAlliteration = gleicher Anfangslaut in Wörtern\nAnapher = gleiches Wort am Satzanfang\n\n🎭 WIRKUNG:\nAnaphen verstärken die Aussage\nund erzeugen einen Rhythmus.\n\n✅ Antwort: Anapher",
+    "tags": ["MSA", "training", "Stilmittel", "Anapher", "rhetoric"]
+  },
+  {
+    "id": "DE_GRAM_WORD_CLASSES_TRAIN_003",
+    "subject": "DE",
+    "topic_id": "DE_GRAM_WORD_CLASSES",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Welches Stilmittel wird hier verwendet? 'Jung und Alt kamen zusammen.'",
+    "payload": {
+      "choices": ["Antithese", "Anapher", "Alliteration", "Asyndeton"],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "Antithese"
+    },
+    "explanation": "🎯 WAS IST DAS?\nStilmittel erkennen: ANTITHESE\n\n📖 DEFINITION:\nAntithese = Gegenüberstellung von GEGENSÄTZEN.\n\n✏️ ANALYSE:\n'Jung und Alt'\n  ↓       ↓\nGegensatz!\nJung ≠ Alt\n= Antithese\n\n💡 WEITERE BEISPIELE:\n• 'Gut und Böse'\n• 'Himmel und Hölle'\n• 'Krieg und Frieden'\n• 'Tag und Nacht'\n• 'Arm und Reich'\n\n🎭 WIRKUNG:\nAntithesen betonen Kontraste\nund machen Texte lebendiger.\n\n⚠️ VERWECHSLUNGSGEFAHR:\n'Wasser, Luft, Erde, Feuer'\n= KEIN Gegensatz, sondern Aufzählung!\n\n✅ Antwort: Antithese",
+    "tags": ["MSA", "training", "Stilmittel", "Antithese", "rhetoric"]
+  },
+  {
+    "id": "DE_GRAM_WORD_CLASSES_TRAIN_004",
+    "subject": "DE",
+    "topic_id": "DE_GRAM_WORD_CLASSES",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Welches Stilmittel wird hier verwendet? 'Wasser, Luft, Erde, Feuer - das sind die Elemente.'",
+    "payload": {
+      "choices": ["Asyndeton", "Antithese", "Anapher", "Alliteration"],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "Asyndeton"
+    },
+    "explanation": "🎯 WAS IST DAS?\nStilmittel erkennen: ASYNDETON\n\n📖 DEFINITION:\nAsyndeton = Aufzählung OHNE Bindewörter (wie 'und', 'oder').\n\n✏️ ANALYSE:\n'Wasser, Luft, Erde, Feuer'\n       ↓\nKommas statt 'und'!\n= Asyndeton\n\nNormal wäre:\n'Wasser, Luft, Erde UND Feuer'\n\n💡 WEITERE BEISPIELE:\n• 'Er kam, sah, siegte.' (statt: kam, sah und siegte)\n• 'Groß, klein, dick, dünn - alle waren da.'\n\n🎭 WIRKUNG:\n• Erzeugt Tempo und Dynamik\n• Wirkt eindringlich\n• Hebt die Aufzählung hervor\n\n⚠️ GEGENTEIL:\nPolysyndeton = Aufzählung MIT vielen 'und'\n'Wasser und Luft und Erde und Feuer'\n\n✅ Antwort: Asyndeton",
+    "tags": ["MSA", "training", "Stilmittel", "Asyndeton", "rhetoric"]
+  },
+  {
+    "id": "DE_WRITE_REPHRASE_TRAIN_001",
+    "subject": "DE",
+    "topic_id": "DE_WRITE_REPHRASE",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Wie kann man den umgangssprachlichen Satz 'Das war ihr ausgeleierter Rollkragenpulli' in Standardsprache umformulieren?",
+    "payload": {
+      "choices": [
+        "Das war ihr oft getragener Rollkragenpullover",
+        "Das war ihr kaputter Rolli",
+        "Das war ihr alter Pulli mit Rollkragen",
+        "Das war ihr abgenutzter Pulli"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "Das war ihr oft getragener Rollkragenpullover"
+    },
+    "explanation": "🎯 WAS IST DAS?\nUmgangssprache in Standardsprache umwandeln.\n\n📖 ANALYSE DES SATZES:\n\n'ausgeleiert' → Alltagswort/umgangssprachlich\nStandardsprache: 'oft getragen', 'abgetragen'\n\n'Rollkragenpulli' → Abkürzung, Alltagswort\nStandardsprache: 'Rollkragenpullover'\n\n✏️ UMFORMULIERUNG:\nOriginal: 'Das war ihr ausgeleierter Rollkragenpulli'\nStandard: 'Das war ihr oft getragener Rollkragenpullover'\n\n💡 MERKMALE DER STANDARDSPRACHE:\n• Keine Abkürzungen (Pulli → Pullover)\n• Sachliche Ausdrücke (ausgeleiert → oft getragen)\n• Keine Slang-Wörter\n• Vollständige Wörter\n\n⚠️ DIE ANDEREN ANTWORTEN:\n• 'Rolli' ist auch umgangssprachlich\n• 'Pulli' ist eine Abkürzung\n\n✅ Antwort: Das war ihr oft getragener Rollkragenpullover",
+    "tags": ["MSA", "training", "Standardsprache", "Umgangssprache", "rephrase"]
+  },
+  {
+    "id": "DE_PUNCT_COMMA_MAIN_SUB_TRAIN_001",
+    "subject": "DE",
+    "topic_id": "DE_PUNCT_COMMA_MAIN_SUB",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Wo muss ein Komma gesetzt werden? 'Ich gehe nach Hause weil ich müde bin.'",
+    "payload": {
+      "choices": [
+        "Ich gehe nach Hause, weil ich müde bin.",
+        "Ich gehe, nach Hause weil ich müde bin.",
+        "Ich gehe nach Hause weil, ich müde bin.",
+        "Es wird kein Komma benötigt."
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "Ich gehe nach Hause, weil ich müde bin."
+    },
+    "explanation": "🎯 WAS IST DAS?\nKomma zwischen Haupt- und Nebensatz.\n\n📖 DIE REGEL:\nVor NEBENSATZ-EINLEITENDEN WÖRTERN steht ein Komma!\n\n✏️ ANALYSE:\n'Ich gehe nach Hause' = Hauptsatz (kann alleine stehen)\n'weil ich müde bin' = Nebensatz (beginnt mit 'weil')\n\nZwischen Hauptsatz und Nebensatz → KOMMA!\n\n💡 SIGNALWÖRTER FÜR NEBENSÄTZE:\n• weil, da, obwohl, wenn, falls\n• dass, ob\n• der, die, das (Relativpronomen)\n• als, nachdem, bevor, während\n\n🎁 TIPP:\nDas Verb steht im Nebensatz am ENDE!\n'...weil ich müde BIN' ✓\n\n✅ Antwort: Ich gehe nach Hause, weil ich müde bin.",
+    "tags": ["MSA", "training", "comma", "Nebensatz", "Hauptsatz"]
+  },
+  {
+    "id": "DE_GRAM_TENSES_TRAIN_001",
+    "subject": "DE",
+    "topic_id": "DE_GRAM_TENSES",
+    "difficulty": 1,
+    "qtype": "MCQ",
+    "prompt": "In welcher Zeitform steht der Satz: 'Ich habe gestern Fußball gespielt.'?",
+    "payload": {
+      "choices": ["Perfekt", "Präteritum", "Präsens", "Futur"],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "Perfekt"
+    },
+    "explanation": "🎯 WAS IST DAS?\nZeitform (Tempus) erkennen.\n\n📖 ERKENNUNGSMERKMAL PERFEKT:\nHilfsverb (haben/sein) + Partizip II (ge-...-t/en)\n\n✏️ ANALYSE:\n'Ich HABE gestern Fußball GESPIELT.'\n     ↓                      ↓\n  Hilfsverb              Partizip II\n  (haben)               (ge-spiel-t)\n\n= PERFEKT!\n\n💡 ÜBERSICHT ZEITFORMEN:\n• Präsens: Ich spiele. (jetzt)\n• Präteritum: Ich spielte. (erzählende Vergangenheit)\n• Perfekt: Ich habe gespielt. (Vergangenheit, gesprochen)\n• Futur: Ich werde spielen. (Zukunft)\n\n⚠️ UNTERSCHIED PERFEKT vs. PRÄTERITUM:\nPerfekt: 'Ich habe gespielt' (mündlich bevorzugt)\nPräteritum: 'Ich spielte' (schriftlich/Erzählung)\n\n✅ Antwort: Perfekt",
+    "tags": ["MSA", "training", "tenses", "Perfekt", "grammar"]
+  },
+  {
+    "id": "DE_READ_CORE_TRAIN_001",
+    "subject": "DE",
+    "topic_id": "DE_READ_CORE",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Was ist die KERNAUSSAGE eines Textes?",
+    "payload": {
+      "choices": [
+        "Die zentrale Botschaft oder Hauptidee des Textes",
+        "Der erste Satz des Textes",
+        "Eine wörtliche Textstelle",
+        "Die Überschrift des Textes"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "Die zentrale Botschaft oder Hauptidee des Textes"
+    },
+    "explanation": "🎯 WAS IST DAS?\nDefinition der Kernaussage.\n\n📖 KERNAUSSAGE =\nDie ZENTRALE BOTSCHAFT oder HAUPTIDEE,\ndie der Autor vermitteln möchte.\n\n✏️ WIE FINDET MAN SIE?\n1. Lies den Text ganz durch\n2. Frage: 'Worum geht es hauptsächlich?'\n3. Fasse in 1-2 Sätzen zusammen\n4. Prüfe: Deckt deine Zusammenfassung das Wichtigste ab?\n\n💡 DIE KERNAUSSAGE IST NICHT:\n• Der erste Satz (kann Einleitung sein)\n• Die Überschrift (ist oft nur ein Hinweis)\n• Ein wörtliches Zitat (ist nur ein Teil)\n\n🎁 BEISPIEL:\nText über Umweltschutz mit vielen Details.\nKernaussage: 'Jeder kann durch kleine Handlungen zum Umweltschutz beitragen.'\n\n✅ Antwort: Die zentrale Botschaft oder Hauptidee des Textes",
+    "tags": ["MSA", "training", "reading", "Kernaussage", "comprehension"]
+  }
+]

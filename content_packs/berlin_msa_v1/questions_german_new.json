@@ -1,0 +1,312 @@
+[
+  {
+    "id": "DE_GRAM_TENSES_010",
+    "subject": "DE",
+    "topic_id": "DE_GRAM_TENSES",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "In welchem Modus steht der Satz: 'Könntest du vielleicht dort weggehen?'",
+    "payload": {
+      "choices": ["Konjunktiv II", "Indikativ", "Konjunktiv I", "Imperativ"],
+      "shuffle": true
+    },
+    "solution": { "correct_choice": "Konjunktiv II" },
+    "explanation": "🎯 DIE VIER MODI\n\n📖 KONJUNKTIV II:\nWird verwendet für:\n• Höfliche Bitten ('könntest du...')\n• Irreale/hypothetische Situationen\n• Wünsche\n\n✏️ ERKENNUNGSZEICHEN:\n'könntest' ist die Konjunktiv II-Form von 'können'\n\n💡 VERGLEICH:\n• Indikativ: 'Du gehst weg.'\n• Konjunktiv II: 'Könntest du weggehen?'\n• Imperativ: 'Geh weg!'\n\n✅ Antwort: Konjunktiv II",
+    "tags": ["MSA", "grammar", "modes", "konjunktiv"]
+  },
+  {
+    "id": "DE_GRAM_TENSES_011",
+    "subject": "DE",
+    "topic_id": "DE_GRAM_TENSES",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "In welchem Modus steht der Satz: 'Ich suche die Toiletten.'",
+    "payload": {
+      "choices": ["Indikativ", "Konjunktiv I", "Konjunktiv II", "Imperativ"],
+      "shuffle": true
+    },
+    "solution": { "correct_choice": "Indikativ" },
+    "explanation": "🎯 INDIKATIV - WIRKLICHKEITSFORM\n\n📖 DER INDIKATIV:\n• Drückt Realität und Fakten aus\n• Für tatsächliche Aussagen\n• Die 'normale' Verbform\n\n✏️ BEISPIEL:\n'Ich suche die Toiletten.'\n→ Eine direkte Aussage über etwas Reales\n\n💡 ERKENNUNGSZEICHEN:\nKeine Konjunktiv-Endungen, keine Aufforderung\n\n✅ Antwort: Indikativ",
+    "tags": ["MSA", "grammar", "modes", "indikativ"]
+  },
+  {
+    "id": "DE_GRAM_TENSES_012",
+    "subject": "DE",
+    "topic_id": "DE_GRAM_TENSES",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "In welchem Modus steht: 'Auf die Plätze, fertig, los!'",
+    "payload": {
+      "choices": ["Imperativ", "Indikativ", "Konjunktiv I", "Konjunktiv II"],
+      "shuffle": true
+    },
+    "solution": { "correct_choice": "Imperativ" },
+    "explanation": "🎯 IMPERATIV - BEFEHLSFORM\n\n📖 DER IMPERATIV:\nWird verwendet für:\n• Befehle und Aufforderungen\n• Anweisungen\n• Ratschläge\n\n✏️ ERKENNUNGSZEICHEN:\n• Ausrufezeichen (!)\n• Keine Subjektperson genannt\n• Direkte Aufforderung\n\n💡 BEISPIELE:\n• 'Geh!' / 'Komm!' / 'Los!'\n• 'Auf die Plätze, fertig, los!'\n\n✅ Antwort: Imperativ",
+    "tags": ["MSA", "grammar", "modes", "imperativ"]
+  },
+  {
+    "id": "DE_GRAM_TENSES_013",
+    "subject": "DE",
+    "topic_id": "DE_GRAM_TENSES",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "In welchem Modus steht: 'Wir seien fleißige Schülerinnen und Schüler.'",
+    "payload": {
+      "choices": ["Konjunktiv I", "Indikativ", "Konjunktiv II", "Imperativ"],
+      "shuffle": true
+    },
+    "solution": { "correct_choice": "Konjunktiv I" },
+    "explanation": "🎯 KONJUNKTIV I\n\n📖 VERWENDUNG:\n• Indirekte Rede\n• Formelle Ausdrücke\n• Wünsche\n\n✏️ ERKENNUNGSZEICHEN:\n'seien' ist Konjunktiv I von 'sein'\n(Indikativ wäre 'sind')\n\n💡 BILDUNG KONJUNKTIV I:\nInfinitivstamm + Endung -e, -est, -e, -en, -et, -en\n\nVergleich 'sein':\n• Indikativ: wir sind\n• Konjunktiv I: wir seien\n\n✅ Antwort: Konjunktiv I",
+    "tags": ["MSA", "grammar", "modes", "konjunktiv"]
+  },
+  {
+    "id": "DE_GRAM_WORD_CLASSES_005",
+    "subject": "DE",
+    "topic_id": "DE_GRAM_WORD_CLASSES",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Welches Stilmittel liegt vor: 'Die Sonne lacht am Himmel.'",
+    "payload": {
+      "choices": ["Personifikation", "Metapher", "Vergleich", "Hyperbel"],
+      "shuffle": true
+    },
+    "solution": { "correct_choice": "Personifikation" },
+    "explanation": "🎯 PERSONIFIKATION\n\n📖 DEFINITION:\nUnbelebten Dingen oder Tieren werden menschliche Eigenschaften zugesprochen.\n\n✏️ ANALYSE:\n'Die Sonne LACHT'\n→ Lachen ist eine menschliche Eigenschaft\n→ Die Sonne (unbelebt) bekommt sie zugesprochen\n\n💡 WEITERE BEISPIELE:\n• 'Der Wind flüstert'\n• 'Die Zeit rennt'\n• 'Die Natur ruft'\n\n✅ Antwort: Personifikation",
+    "tags": ["MSA", "stilmittel", "personifikation"]
+  },
+  {
+    "id": "DE_GRAM_WORD_CLASSES_006",
+    "subject": "DE",
+    "topic_id": "DE_GRAM_WORD_CLASSES",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Welches Stilmittel liegt vor: 'frisch und fröhlich'",
+    "payload": {
+      "choices": ["Alliteration", "Anapher", "Parallelismus", "Asyndeton"],
+      "shuffle": true
+    },
+    "solution": { "correct_choice": "Alliteration" },
+    "explanation": "🎯 ALLITERATION\n\n📖 DEFINITION:\nMindestens zwei aufeinanderfolgende Wörter beginnen mit demselben Anfangslaut.\n\n✏️ ANALYSE:\n'Frisch und Fröhlich'\n→ F-F (gleicher Anfangsbuchstabe)\n\n💡 WEITERE BEISPIELE:\n• 'Veni, vidi, vici'\n• 'Mit Mann und Maus'\n• 'Kind und Kegel'\n\n✅ Antwort: Alliteration",
+    "tags": ["MSA", "stilmittel", "alliteration"]
+  },
+  {
+    "id": "DE_GRAM_WORD_CLASSES_007",
+    "subject": "DE",
+    "topic_id": "DE_GRAM_WORD_CLASSES",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Welches Stilmittel liegt vor: 'klein wie eine Maus'",
+    "payload": {
+      "choices": ["Vergleich", "Metapher", "Personifikation", "Hyperbel"],
+      "shuffle": true
+    },
+    "solution": { "correct_choice": "Vergleich" },
+    "explanation": "🎯 VERGLEICH\n\n📖 DEFINITION:\nDurch das Wort 'wie' werden zwei Sachverhalte miteinander verknüpft.\n\n✏️ ERKENNUNGSZEICHEN:\nDas Wort 'WIE'!\n\n'klein WIE eine Maus'\n→ Eigenschaft wird mit etwas anderem verglichen\n\n💡 UNTERSCHIED ZUR METAPHER:\n• Vergleich: 'stark WIE ein Löwe'\n• Metapher: 'Er IST ein Löwe' (ohne 'wie')\n\n✅ Antwort: Vergleich",
+    "tags": ["MSA", "stilmittel", "vergleich"]
+  },
+  {
+    "id": "DE_GRAM_WORD_CLASSES_008",
+    "subject": "DE",
+    "topic_id": "DE_GRAM_WORD_CLASSES",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Welches Stilmittel liegt vor: 'weißer Schimmel'",
+    "payload": {
+      "choices": ["Pleonasmus", "Oxymoron", "Metapher", "Ellipse"],
+      "shuffle": true
+    },
+    "solution": { "correct_choice": "Pleonasmus" },
+    "explanation": "🎯 PLEONASMUS\n\n📖 DEFINITION:\nDopplung - zwei Begriffe mit derselben Bedeutung werden verwendet.\n\n✏️ ANALYSE:\n'weißer Schimmel'\n→ Ein Schimmel ist IMMER weiß!\n→ 'weiß' ist überflüssig, aber verstärkend\n\n💡 WEITERE BEISPIELE:\n• 'nasser Regen'\n• 'großer Riese'\n• 'runde Kugel'\n\n⚠️ UNTERSCHIED ZUM OXYMORON:\nOxymoron = Widerspruch ('alter Jüngling')\nPleonasmus = Dopplung ('weißer Schimmel')\n\n✅ Antwort: Pleonasmus",
+    "tags": ["MSA", "stilmittel", "pleonasmus"]
+  },
+  {
+    "id": "DE_GRAM_WORD_CLASSES_009",
+    "subject": "DE",
+    "topic_id": "DE_GRAM_WORD_CLASSES",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "Welches Stilmittel liegt vor: 'Flüssiggas'",
+    "payload": {
+      "choices": ["Oxymoron", "Pleonasmus", "Metapher", "Hyperbel"],
+      "shuffle": true
+    },
+    "solution": { "correct_choice": "Oxymoron" },
+    "explanation": "🎯 OXYMORON\n\n📖 DEFINITION:\nInnerer Widerspruch - zwei Begriffe, die sich eigentlich ausschließen.\n\n✏️ ANALYSE:\n'Flüssiggas'\n→ Flüssig ↔ Gas sind Gegensätze!\n→ Ein scheinbarer Widerspruch\n\n💡 WEITERE BEISPIELE:\n• 'alter Jüngling'\n• 'bittersüß'\n• 'lebende Tote'\n\n✅ Antwort: Oxymoron",
+    "tags": ["MSA", "stilmittel", "oxymoron"]
+  },
+  {
+    "id": "DE_GRAM_WORD_CLASSES_010",
+    "subject": "DE",
+    "topic_id": "DE_GRAM_WORD_CLASSES",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Welches Stilmittel liegt vor: 'Das Auto fährt im Schneckentempo.'",
+    "payload": {
+      "choices": ["Hyperbel", "Metapher", "Vergleich", "Personifikation"],
+      "shuffle": true
+    },
+    "solution": { "correct_choice": "Hyperbel" },
+    "explanation": "🎯 HYPERBEL\n\n📖 DEFINITION:\nStarke Übertreibung oder Untertreibung.\n\n✏️ ANALYSE:\n'Schneckentempo'\n→ Extreme Übertreibung der Langsamkeit\n→ Das Auto fährt nicht wirklich so langsam wie eine Schnecke\n\n💡 WEITERE BEISPIELE:\n• 'todmüde'\n• 'blitzschnell'\n• 'Ich hab dir das schon tausendmal gesagt!'\n\n✅ Antwort: Hyperbel",
+    "tags": ["MSA", "stilmittel", "hyperbel"]
+  },
+  {
+    "id": "DE_GRAM_WORD_CLASSES_011",
+    "subject": "DE",
+    "topic_id": "DE_GRAM_WORD_CLASSES",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "Welches Stilmittel liegt vor: 'Wer war das? Wer hat das getan?'",
+    "payload": {
+      "choices": ["Anapher", "Alliteration", "Parallelismus", "Klimax"],
+      "shuffle": true
+    },
+    "solution": { "correct_choice": "Anapher" },
+    "explanation": "🎯 ANAPHER\n\n📖 DEFINITION:\nWiederholung eines Wortes oder einer Wortgruppe am ANFANG aufeinanderfolgender Sätze/Verse.\n\n✏️ ANALYSE:\n'WER war das? WER hat das getan?'\n→ 'Wer' wird am Satzanfang wiederholt\n\n💡 WEITERE BEISPIELE:\n• 'Ich will leben. Ich will lieben. Ich will lachen.'\n• 'Das ist mein Haus. Das ist mein Garten.'\n\n✅ Antwort: Anapher",
+    "tags": ["MSA", "stilmittel", "anapher"]
+  },
+  {
+    "id": "DE_ORTHO_CASE_005",
+    "subject": "DE",
+    "topic_id": "DE_ORTHO_CASE",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Welches Wort ist RICHTIG großgeschrieben?",
+    "payload": {
+      "choices": ["das Schwimmen", "das schwimmen", "Das schwimmen", "DAS schwimmen"],
+      "shuffle": true
+    },
+    "solution": { "correct_choice": "das Schwimmen" },
+    "explanation": "🎯 NOMINALISIERUNG\n\n📖 REGEL:\nVerben werden großgeschrieben, wenn sie als Nomen verwendet werden (= Nominalisierung).\n\n✏️ ERKENNUNGSZEICHEN:\n• Artikel davor: 'DAS Schwimmen'\n• Adjektiv davor: 'langes Schwimmen'\n\n💡 BEISPIELE:\n• 'Schwimmen macht Spaß' → Verb (klein)\n• 'Das Schwimmen ist gesund' → Nomen (groß)\n\n✅ Antwort: das Schwimmen",
+    "tags": ["MSA", "rechtschreibung", "nominalisierung"]
+  },
+  {
+    "id": "DE_ORTHO_CASE_006",
+    "subject": "DE",
+    "topic_id": "DE_ORTHO_CASE",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Welche Schreibweise ist RICHTIG: 'Wie geht es ___?'",
+    "payload": {
+      "choices": ["Ihnen", "ihnen", "IHNEN", "IHnen"],
+      "shuffle": true
+    },
+    "solution": { "correct_choice": "Ihnen" },
+    "explanation": "🎯 HÖFLICHE ANREDE\n\n📖 REGEL:\nAnredepronomen in der höflichen Anrede werden GROSS geschrieben.\n\n✏️ BEISPIELE:\n• 'Wie geht es Ihnen?'\n• 'Haben Sie schon gewählt?'\n• 'Ich danke Ihnen.'\n\n⚠️ ABER:\n'ihnen' (klein) = 3. Person Plural normal\n'Sie begrüßen ihnen' → falsch\n'Sie begrüßen sie' → richtig (normale 3.P.Pl.)\n\n✅ Antwort: Ihnen (groß)",
+    "tags": ["MSA", "rechtschreibung", "anrede"]
+  },
+  {
+    "id": "DE_ORTHO_CASE_007",
+    "subject": "DE",
+    "topic_id": "DE_ORTHO_CASE",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Welche Schreibweise ist RICHTIG?",
+    "payload": {
+      "choices": ["am Montag", "am montag", "Am montag", "am MONTAG"],
+      "shuffle": true
+    },
+    "solution": { "correct_choice": "am Montag" },
+    "explanation": "🎯 WOCHENTAGE ALS NOMEN\n\n📖 REGEL:\nWochentage werden GROSSgeschrieben, wenn sie als Nomen verwendet werden.\n\n✏️ ERKENNUNGSZEICHEN:\n• Artikel/Präposition davor: 'am Montag', 'der Dienstag'\n\n⚠️ ABER:\nAls Adverb KLEINgeschrieben:\n• 'montags' (= jeden Montag)\n• 'dienstags'\n\n💡 VERGLEICH:\n• 'Am Montag gehe ich...' → Nomen (groß)\n• 'Montags gehe ich immer...' → Adverb (klein)\n\n✅ Antwort: am Montag",
+    "tags": ["MSA", "rechtschreibung", "wochentage"]
+  },
+  {
+    "id": "DE_PUNCT_COMMA_MAIN_SUB_005",
+    "subject": "DE",
+    "topic_id": "DE_PUNCT_COMMA_MAIN_SUB",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Wo muss ein Komma stehen? 'Ich gehe schwimmen(1) obwohl(2) es(3) regnet.'",
+    "payload": {
+      "choices": ["Nach (1)", "Nach (2)", "Nach (3)", "Kein Komma nötig"],
+      "shuffle": true
+    },
+    "solution": { "correct_choice": "Nach (1)" },
+    "explanation": "🎯 KOMMA VOR NEBENSATZ\n\n📖 REGEL:\nVor Nebensätzen steht ein Komma!\n\n✏️ ERKENNUNGSZEICHEN:\nNebensätze beginnen oft mit:\n• obwohl, weil, dass, wenn, als, während...\n\n📐 ANALYSE:\n'Ich gehe schwimmen, obwohl es regnet.'\nHauptsatz | Nebensatz\n→ Komma trennt die beiden Sätze\n\n✅ Antwort: Nach (1) - vor 'obwohl'",
+    "tags": ["MSA", "kommasetzung", "nebensatz"]
+  },
+  {
+    "id": "DE_PUNCT_INFINITIVE_002",
+    "subject": "DE",
+    "topic_id": "DE_PUNCT_INFINITIVE",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "Wann muss bei einer Infinitivgruppe ein Komma gesetzt werden?",
+    "payload": {
+      "choices": [
+        "Wenn sie ein einleitendes Wort hat (um, ohne, statt...)",
+        "Immer",
+        "Nie",
+        "Nur am Satzende"
+      ],
+      "shuffle": true
+    },
+    "solution": { "correct_choice": "Wenn sie ein einleitendes Wort hat (um, ohne, statt...)" },
+    "explanation": "🎯 KOMMA BEI INFINITIVGRUPPEN\n\n📖 KOMMA MUSS gesetzt werden, wenn:\n1. Einleitendes Wort vorhanden (um, ohne, statt, anstatt, außer, als)\n2. Die Infinitivgruppe von einem Nomen abhängt\n3. Sie mit einem hinweisenden Wort angekündigt wird\n\n✏️ BEISPIELE:\n• 'Ich gehe los, UM einzukaufen.' (einleitendes 'um')\n• 'Die Absicht, zu helfen, ist lobenswert.' (hängt von 'Absicht' ab)\n\n✅ Antwort: Wenn sie ein einleitendes Wort hat",
+    "tags": ["MSA", "kommasetzung", "infinitiv"]
+  },
+  {
+    "id": "DE_READ_CORE_005",
+    "subject": "DE",
+    "topic_id": "DE_READ_CORE",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Was ist ein Euphemismus?",
+    "payload": {
+      "choices": [
+        "Eine beschönigende Umschreibung",
+        "Eine starke Übertreibung",
+        "Ein innerer Widerspruch",
+        "Eine Wiederholung"
+      ],
+      "shuffle": true
+    },
+    "solution": { "correct_choice": "Eine beschönigende Umschreibung" },
+    "explanation": "🎯 EUPHEMISMUS\n\n📖 DEFINITION:\nEine beschönigende, verharmlosende Umschreibung für etwas Unangenehmes.\n\n✏️ BEISPIELE:\n• 'Seniorenresidenz' statt 'Altersheim'\n• 'entschlafen' statt 'sterben'\n• 'vollschlank' statt 'dick'\n• 'freisetzen' statt 'entlassen'\n\n💡 ZWECK:\nMacht unangenehme Dinge sprachlich 'weicher'\n\n✅ Antwort: Eine beschönigende Umschreibung",
+    "tags": ["MSA", "stilmittel", "euphemismus"]
+  },
+  {
+    "id": "DE_WRITE_REPHRASE_003",
+    "subject": "DE",
+    "topic_id": "DE_WRITE_REPHRASE",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Welches Wort in 'Das war ihr ausgeleierter Rollkragenpulli' ist umgangssprachlich?",
+    "payload": {
+      "choices": ["ausgeleiert", "Rollkragenpulli", "Beide Wörter", "Keines der Wörter"],
+      "shuffle": true
+    },
+    "solution": { "correct_choice": "Beide Wörter" },
+    "explanation": "🎯 UMGANGSSPRACHE ERKENNEN\n\n📖 ANALYSE:\n• 'ausgeleiert' → Alltagswort\n  Standardsprache: 'oft getragen', 'abgenutzt'\n\n• 'Rollkragenpulli' → Abkürzung, Alltagswort\n  Standardsprache: 'Rollkragenpullover'\n\n✏️ STANDARDSPRACHLICH:\n'Das war ihr oft getragener Rollkragenpullover.'\n\n💡 TIPP FÜR DIE PRÜFUNG:\nAbkürzungen und Slang vermeiden!\n\n✅ Antwort: Beide Wörter",
+    "tags": ["MSA", "sprachebene", "umgangssprache"]
+  },
+  {
+    "id": "DE_GRAM_WORD_CLASSES_012",
+    "subject": "DE",
+    "topic_id": "DE_GRAM_WORD_CLASSES",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Welches Stilmittel liegt vor: 'Ich kam, sah, siegte.'",
+    "payload": {
+      "choices": ["Klimax", "Antiklimax", "Parallelismus", "Ellipse"],
+      "shuffle": true
+    },
+    "solution": { "correct_choice": "Klimax" },
+    "explanation": "🎯 KLIMAX\n\n📖 DEFINITION:\nAufsteigende Steigerung von Begriffen oder Aussagen.\n\n✏️ ANALYSE:\n'Ich kam, sah, siegte.'\nkommen → sehen → siegen\n→ Steigerung der Intensität!\n\n💡 ANTIKLIMAX wäre das Gegenteil:\nAbfallende Steigerung\nz.B. 'Großmutter, Mutter, Kind'\n\n✅ Antwort: Klimax",
+    "tags": ["MSA", "stilmittel", "klimax"]
+  },
+  {
+    "id": "DE_GRAM_WORD_CLASSES_013",
+    "subject": "DE",
+    "topic_id": "DE_GRAM_WORD_CLASSES",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "Was symbolisiert eine weiße Taube?",
+    "payload": {
+      "choices": ["Frieden", "Liebe", "Tod", "Treue"],
+      "shuffle": true
+    },
+    "solution": { "correct_choice": "Frieden" },
+    "explanation": "🎯 SYMBOL\n\n📖 DEFINITION:\nEin Symbol ist ein Bild, das Assoziationen auslöst und für etwas anderes steht.\n\n✏️ BEKANNTE SYMBOLE:\n• Weiße Taube → Frieden\n• Rotes Herz → Liebe\n• Schwarze Farbe → Trauer, Tod\n• Rose → Liebe, Schönheit\n• Krone → Macht, Herrschaft\n\n💡 IN DER PRÜFUNG:\nSymbole in Texten erkennen und deuten können!\n\n✅ Antwort: Frieden",
+    "tags": ["MSA", "stilmittel", "symbol"]
+  }
+]

@@ -1,0 +1,589 @@
+[
+  {
+    "id": "MATH_NUM_PCT_BASIC_MSA2022_001",
+    "subject": "MATH",
+    "topic_id": "MATH_NUM_PCT_BASIC",
+    "difficulty": 1,
+    "qtype": "MCQ",
+    "prompt": "Kennzeichne 40% der Fläche. Wie viele Kästchen von 5 musst du ankreuzen?",
+    "payload": {
+      "choices": ["1 Kästchen", "2 Kästchen", "3 Kästchen", "4 Kästchen"],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "2 Kästchen"
+    },
+    "explanation": "🎯 WAS IST DAS?\n40% von einer Fläche markieren.\n\n📖 VERSTEHEN:\n• Die Fläche hat 5 gleich große Kästchen\n• 40% bedeutet '40 von 100'\n• Wir müssen herausfinden: 40% von 5 = ?\n\n✏️ RECHNUNG:\nMethode 1 (Prozent → Dezimalzahl):\n40% = 40 ÷ 100 = 0,4\n0,4 × 5 = 2\n\nMethode 2 (Dreisatz):\n100% → 5 Kästchen\n1% → 5 ÷ 100 = 0,05 Kästchen\n40% → 0,05 × 40 = 2 Kästchen\n\n💡 TRICK:\n40% = 2/5 (zwei Fünftel)\nAlso: 2 von 5 Kästchen!\n\n✅ Antwort: 2 Kästchen",
+    "tags": ["MSA", "MSA2022", "percent", "visual", "basic"]
+  },
+  {
+    "id": "MATH_NUM_PCT_BASIC_MSA2022_002",
+    "subject": "MATH",
+    "topic_id": "MATH_NUM_PCT_BASIC",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Jeder vierte Schüler fährt mit dem Fahrrad zur Schule. Wie viel Prozent macht das aus?",
+    "payload": {
+      "choices": ["10%", "15%", "25%", "50%"],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "25%"
+    },
+    "explanation": "🎯 WAS IST DAS?\nEinen Bruch in Prozent umwandeln.\n\n📖 VERSTEHEN:\n• 'Jeder vierte' = 1 von 4 = 1/4\n• Wir müssen 1/4 in Prozent umrechnen\n\n✏️ RECHNUNG:\n1/4 = 1 ÷ 4 = 0,25\n0,25 × 100 = 25%\n\n💡 MERKHILFE - Die wichtigsten Brüche:\n• 1/2 = 50%\n• 1/4 = 25%\n• 1/5 = 20%\n• 1/10 = 10%\n\n🎁 VORSTELLUNG:\nStell dir 100 Schüler vor.\nJeder 4. fährt Fahrrad.\n100 ÷ 4 = 25 Schüler\n= 25 von 100 = 25%\n\n✅ Antwort: 25%",
+    "tags": ["MSA", "MSA2022", "percent", "fraction_to_percent"]
+  },
+  {
+    "id": "MATH_FUNC_PROP_MSA2022_001",
+    "subject": "MATH",
+    "topic_id": "MATH_FUNC_PROP",
+    "difficulty": 2,
+    "qtype": "SHORT",
+    "prompt": "Beim Bäcker kosten 600 g Vollkornbrot 2,40 €. Wie viel kosten 1000 g Vollkornbrot? (Antwort in Euro)",
+    "payload": {
+      "answer_type": "number",
+      "tolerance": 0,
+      "normalization": ["trim", "comma_to_dot"]
+    },
+    "solution": {
+      "value": 4
+    },
+    "explanation": "🎯 WAS IST DAS?\nDreisatz - proportionale Zuordnung.\n\n📖 VERSTEHEN:\n• 600 g kosten 2,40 €\n• Gesucht: Preis für 1000 g\n• Mehr Brot = mehr Geld (proportional)\n\n✏️ RECHNUNG (Dreisatz):\n600 g → 2,40 €\n1 g → 2,40 € ÷ 600 = 0,004 €\n1000 g → 0,004 € × 1000 = 4,00 €\n\n💡 ALTERNATIV (Verhältnis):\n1000 g ÷ 600 g = 5/3\n2,40 € × 5/3 = 12/3 = 4,00 €\n\n⚠️ KONTROLLE:\n1000 g ist mehr als 600 g\n→ Preis muss auch mehr sein ✓\n4 € > 2,40 € ✓\n\n✅ Antwort: 4 €",
+    "tags": ["MSA", "MSA2022", "proportion", "Dreisatz", "money"]
+  },
+  {
+    "id": "MATH_ALG_EQU_LINEAR_MSA2022_001",
+    "subject": "MATH",
+    "topic_id": "MATH_ALG_EQU_LINEAR",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Gegeben ist die Gleichung: 8 - 3x = x - 12. Welche Zahl ist die Lösung der Gleichung?",
+    "payload": {
+      "choices": ["x = 3", "x = 5", "x = 7", "x = 9"],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "x = 5"
+    },
+    "explanation": "🎯 WAS IST DAS?\nLineare Gleichung lösen.\n\n📖 ZIEL:\nAlle x auf eine Seite, alle Zahlen auf die andere.\n\n✏️ RECHNUNG:\n8 - 3x = x - 12\n\nSchritt 1: +3x auf beiden Seiten\n8 = x + 3x - 12\n8 = 4x - 12\n\nSchritt 2: +12 auf beiden Seiten\n8 + 12 = 4x\n20 = 4x\n\nSchritt 3: ÷4 auf beiden Seiten\n20 ÷ 4 = x\nx = 5\n\n✓ PROBE:\nLinks: 8 - 3×5 = 8 - 15 = -7\nRechts: 5 - 12 = -7 ✓\n\n💡 TIPP:\nBei Multiple Choice kannst du auch einsetzen und prüfen!\n\n✅ Antwort: x = 5",
+    "tags": ["MSA", "MSA2022", "equation", "linear"]
+  },
+  {
+    "id": "MATH_DATA_STATS_MSA2022_001",
+    "subject": "MATH",
+    "topic_id": "MATH_DATA_STATS",
+    "difficulty": 2,
+    "qtype": "SHORT",
+    "prompt": "Die Häuser in einer Straße sind im Durchschnitt 10 m hoch. Die Höhen sind: 8 m, 9 m, ? m, 11 m, 10 m, 10 m. Wie hoch ist das fehlende Haus?",
+    "payload": {
+      "answer_type": "number",
+      "tolerance": 0,
+      "normalization": ["trim", "comma_to_dot"]
+    },
+    "solution": {
+      "value": 12
+    },
+    "explanation": "🎯 WAS IST DAS?\nArithmetisches Mittel (Durchschnitt) rückwärts rechnen.\n\n📖 FORMEL:\nDurchschnitt = Summe aller Werte ÷ Anzahl\n\n✏️ RECHNUNG:\n6 Häuser mit Durchschnitt 10 m\n→ Gesamtsumme = 6 × 10 = 60 m\n\nBekannte Höhen:\n8 + 9 + 11 + 10 + 10 = 48 m\n\nFehlendes Haus:\n60 - 48 = 12 m\n\n✓ PROBE:\n(8 + 9 + 12 + 11 + 10 + 10) ÷ 6\n= 60 ÷ 6 = 10 ✓\n\n💡 TRICK:\nGesamtsumme = Durchschnitt × Anzahl\nDann: Unbekannt = Gesamtsumme - bekannte Summe\n\n✅ Antwort: 12 m",
+    "tags": ["MSA", "MSA2022", "statistics", "mean", "average"]
+  },
+  {
+    "id": "MATH_GEO_AREA_BASIC_MSA2022_001",
+    "subject": "MATH",
+    "topic_id": "MATH_GEO_AREA_BASIC",
+    "difficulty": 1,
+    "qtype": "MCQ",
+    "prompt": "Welche Formel berechnet den Flächeninhalt eines Dreiecks mit Grundseite z und Höhe y?",
+    "payload": {
+      "choices": ["A = z × y", "A = (z × y) ÷ 2", "A = z + y", "A = 2 × z × y"],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "A = (z × y) ÷ 2"
+    },
+    "explanation": "🎯 WAS IST DAS?\nFlächenformel für ein Dreieck.\n\n📖 DIE FORMEL:\nA = (Grundseite × Höhe) ÷ 2\nA = (g × h) ÷ 2\n\nMit unseren Buchstaben:\nA = (z × y) ÷ 2\n\n💡 WARUM ÷ 2?\nEin Dreieck ist die Hälfte eines Rechtecks!\n\n🎁 VORSTELLUNG:\n┌─────────┐\n│         │  ← Rechteck: A = g × h\n└─────────┘\n\n◣         ← Dreieck: halbes Rechteck\n            A = (g × h) ÷ 2\n\n⚠️ ACHTUNG:\nDie Höhe steht SENKRECHT auf der Grundseite!\n\n✅ Antwort: A = (z × y) ÷ 2",
+    "tags": ["MSA", "MSA2022", "geometry", "area", "triangle"]
+  },
+  {
+    "id": "MATH_GEO_PYTH_MSA2022_001",
+    "subject": "MATH",
+    "topic_id": "MATH_GEO_PYTH",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Welche Aussage gilt für ein rechtwinkliges Dreieck?",
+    "payload": {
+      "choices": [
+        "Der Flächeninhalt des Hypotenusenquadrates ist gleich der Summe der beiden Kathetenquadrate",
+        "Gegenüber der Hypotenuse befindet sich der rechte Winkel",
+        "c - a = b",
+        "Die Hypotenuse ist die kürzeste Seite"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "Der Flächeninhalt des Hypotenusenquadrates ist gleich der Summe der beiden Kathetenquadrate"
+    },
+    "explanation": "🎯 WAS IST DAS?\nSatz des Pythagoras verstehen.\n\n📖 DER SATZ:\na² + b² = c²\n\nIn Worten:\nDas Quadrat über der Hypotenuse (c)\nist gleich der Summe der Quadrate\nüber den beiden Katheten (a und b).\n\n🔍 DIE BEGRIFFE:\n• Hypotenuse (c) = längste Seite, liegt dem rechten Winkel GEGENÜBER\n• Katheten (a, b) = die beiden kürzeren Seiten, bilden den rechten Winkel\n\n❌ FALSCHE ANTWORTEN:\n• 'Gegenüber der Hypotenuse ist der rechte Winkel' - FALSCH! Der rechte Winkel liegt ZWISCHEN den Katheten\n• 'c - a = b' - FALSCH! Richtig wäre c² = a² + b²\n\n✅ Antwort: Flächeninhalt des Hypotenusenquadrates = Summe der Kathetenquadrate",
+    "tags": ["MSA", "MSA2022", "geometry", "pythagoras", "theory"]
+  },
+  {
+    "id": "MATH_GEO_AREA_BASIC_MSA2022_002",
+    "subject": "MATH",
+    "topic_id": "MATH_GEO_AREA_BASIC",
+    "difficulty": 1,
+    "qtype": "MCQ",
+    "prompt": "Wie viele Symmetrieachsen hat ein Drachen (Drachenviereck)?",
+    "payload": {
+      "choices": ["0", "1", "2", "4"],
+      "shuffle": false
+    },
+    "solution": {
+      "correct_choice": "1"
+    },
+    "explanation": "🎯 WAS IST DAS?\nSymmetrieachsen bei geometrischen Figuren.\n\n📖 WAS IST EINE SYMMETRIEACHSE?\nEine Linie, an der man die Figur falten kann,\nsodass beide Hälften genau übereinander liegen.\n\n🪁 DER DRACHEN:\n    △\n   ╱│╲\n  ╱ │ ╲\n ╱  │  ╲\n△───┼───△\n ╲  │  ╱\n  ╲ │ ╱\n   ╲│╱\n    ▽\n\nDie senkrechte Linie (│) ist die EINZIGE Symmetrieachse!\n\n💡 VERGLEICH:\n• Quadrat: 4 Symmetrieachsen\n• Rechteck: 2 Symmetrieachsen\n• Drachen: 1 Symmetrieachse\n• Parallelogramm: 0 Symmetrieachsen\n\n✅ Antwort: 1 Symmetrieachse",
+    "tags": ["MSA", "MSA2022", "geometry", "symmetry", "shapes"]
+  },
+  {
+    "id": "MATH_NUM_DEC_CONV_MSA2022_001",
+    "subject": "MATH",
+    "topic_id": "MATH_NUM_DEC_CONV",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Vergleiche: 2⁻² □ 0,5. Welches Zeichen gehört in das Kästchen?",
+    "payload": {
+      "choices": ["<", "=", ">"],
+      "shuffle": false
+    },
+    "solution": {
+      "correct_choice": "<"
+    },
+    "explanation": "🎯 WAS IST DAS?\nNegative Exponenten verstehen und vergleichen.\n\n📖 REGEL FÜR NEGATIVE EXPONENTEN:\na⁻ⁿ = 1/aⁿ\n\n✏️ RECHNUNG:\n2⁻² = 1/2² = 1/4 = 0,25\n\nJetzt vergleichen:\n0,25 □ 0,5\n0,25 < 0,5\n\n💡 MERKHILFE:\nNegative Exponenten = 'unter den Bruchstrich'\n2⁻² bedeutet: 1 geteilt durch 2²\n\n⚠️ HÄUFIGER FEHLER:\n2⁻² ist NICHT -4!\n2⁻² = 1/4 = 0,25\n\n✅ Antwort: <",
+    "tags": ["MSA", "MSA2022", "exponents", "negative", "compare"]
+  },
+  {
+    "id": "MATH_ALG_EQU_WORD_MSA2022_001",
+    "subject": "MATH",
+    "topic_id": "MATH_ALG_EQU_WORD",
+    "difficulty": 2,
+    "qtype": "SHORT",
+    "prompt": "Lisa schwimmt heute 300 m. Das Schwimmbecken ist 50 m lang. Wie viele Bahnen muss Lisa schwimmen?",
+    "payload": {
+      "answer_type": "number",
+      "tolerance": 0,
+      "normalization": ["trim"]
+    },
+    "solution": {
+      "value": 6
+    },
+    "explanation": "🎯 WAS IST DAS?\nTextaufgabe - Division anwenden.\n\n📖 VERSTEHEN:\n• Gesamtstrecke: 300 m\n• Eine Bahn: 50 m\n• Gesucht: Anzahl der Bahnen\n\n✏️ RECHNUNG:\nAnzahl = Gesamtstrecke ÷ Bahnlänge\nAnzahl = 300 m ÷ 50 m = 6 Bahnen\n\n✓ PROBE:\n6 Bahnen × 50 m = 300 m ✓\n\n💡 VORSTELLUNG:\n🏊 50m → 🏊 50m → 🏊 50m → 🏊 50m → 🏊 50m → 🏊 50m\n   1        2        3        4        5        6\n= 6 × 50 m = 300 m\n\n✅ Antwort: 6 Bahnen",
+    "tags": ["MSA", "MSA2022", "word_problem", "division"]
+  },
+  {
+    "id": "MATH_NUM_PCT_BASIC_TRAIN_001",
+    "subject": "MATH",
+    "topic_id": "MATH_NUM_PCT_BASIC",
+    "difficulty": 1,
+    "qtype": "SHORT",
+    "prompt": "Gib 0,57 in Prozent an.",
+    "payload": {
+      "answer_type": "number",
+      "tolerance": 0,
+      "normalization": ["trim", "comma_to_dot"]
+    },
+    "solution": {
+      "value": 57
+    },
+    "explanation": "🎯 WAS IST DAS?\nDezimalzahl in Prozent umwandeln.\n\n📖 DIE REGEL:\nDezimalzahl × 100 = Prozent\n\n✏️ RECHNUNG:\n0,57 × 100 = 57\n\n💡 TRICK:\nKomma um 2 Stellen nach rechts verschieben!\n0,57 → 57%\n\n🎁 WEITERE BEISPIELE:\n0,25 → 25%\n0,08 → 8%\n1,50 → 150%\n\n⚠️ MERKE:\nProzent bedeutet 'von Hundert'\n57% = 57 von 100 = 57/100 = 0,57\n\n✅ Antwort: 57%",
+    "tags": ["MSA", "training", "percent", "conversion", "basic"]
+  },
+  {
+    "id": "MATH_NUM_PCT_BASIC_TRAIN_002",
+    "subject": "MATH",
+    "topic_id": "MATH_NUM_PCT_BASIC",
+    "difficulty": 2,
+    "qtype": "SHORT",
+    "prompt": "Gib 1,74 in Prozent an.",
+    "payload": {
+      "answer_type": "number",
+      "tolerance": 0,
+      "normalization": ["trim", "comma_to_dot"]
+    },
+    "solution": {
+      "value": 174
+    },
+    "explanation": "🎯 WAS IST DAS?\nDezimalzahl größer als 1 in Prozent umwandeln.\n\n📖 DIE REGEL:\nDezimalzahl × 100 = Prozent\n\n✏️ RECHNUNG:\n1,74 × 100 = 174\n\n💡 TRICK:\nKomma um 2 Stellen nach rechts!\n1,74 → 174%\n\n⚠️ WICHTIG:\nProzente können auch größer als 100% sein!\n174% bedeutet: 174 von 100\n= mehr als das Ganze\n= 74% mehr als 100%\n\n🎁 VORSTELLUNG:\nWenn dein Taschengeld um 174% steigt,\nbekommst du fast das Doppelte!\n\n✅ Antwort: 174%",
+    "tags": ["MSA", "training", "percent", "conversion"]
+  },
+  {
+    "id": "MATH_NUM_FRAC_BASIC_TRAIN_001",
+    "subject": "MATH",
+    "topic_id": "MATH_NUM_FRAC_BASIC",
+    "difficulty": 1,
+    "qtype": "SHORT",
+    "prompt": "Gib den Bruch 3/20 in Prozent an.",
+    "payload": {
+      "answer_type": "number",
+      "tolerance": 0,
+      "normalization": ["trim", "comma_to_dot"]
+    },
+    "solution": {
+      "value": 15
+    },
+    "explanation": "🎯 WAS IST DAS?\nBruch in Prozent umwandeln.\n\n📖 METHODE 1 - Erweitern auf 100:\n3/20 = ?/100\n20 × 5 = 100\nAlso: 3 × 5 = 15\n3/20 = 15/100 = 15%\n\n📖 METHODE 2 - Division:\n3 ÷ 20 = 0,15\n0,15 × 100 = 15%\n\n💡 TIPP:\nWenn der Nenner ein Teiler von 100 ist,\nist Erweitern am einfachsten!\n20 × 5 = 100 ✓\n\n🎁 WEITERE BEISPIELE:\n1/4 = 25/100 = 25%\n1/5 = 20/100 = 20%\n1/20 = 5/100 = 5%\n\n✅ Antwort: 15%",
+    "tags": ["MSA", "training", "percent", "fraction", "conversion"]
+  },
+  {
+    "id": "MATH_NUM_PCT_BASIC_TRAIN_003",
+    "subject": "MATH",
+    "topic_id": "MATH_NUM_PCT_BASIC",
+    "difficulty": 2,
+    "qtype": "SHORT",
+    "prompt": "Gib 170‰ (Promille) in Prozent an.",
+    "payload": {
+      "answer_type": "number",
+      "tolerance": 0,
+      "normalization": ["trim", "comma_to_dot"]
+    },
+    "solution": {
+      "value": 17
+    },
+    "explanation": "🎯 WAS IST DAS?\nPromille in Prozent umwandeln.\n\n📖 DIE BEGRIFFE:\n• Prozent (%) = von Hundert (÷ 100)\n• Promille (‰) = von Tausend (÷ 1000)\n\n📖 UMRECHNUNG:\n1‰ = 0,1%\nAlso: Promille ÷ 10 = Prozent\n\n✏️ RECHNUNG:\n170‰ ÷ 10 = 17%\n\n💡 ANDERS ERKLÄRT:\n170‰ = 170/1000 = 17/100 = 17%\n\n⚠️ MERKHILFE:\nPromille ist 'feiner' als Prozent\n1000 > 100\nAlso: Promille-Zahl ist immer größer als Prozent-Zahl\n170‰ = 17%\n\n✅ Antwort: 17%",
+    "tags": ["MSA", "training", "percent", "promille", "conversion"]
+  },
+  {
+    "id": "MATH_NUM_PCT_BASIC_TRAIN_004",
+    "subject": "MATH",
+    "topic_id": "MATH_NUM_PCT_BASIC",
+    "difficulty": 2,
+    "qtype": "SHORT",
+    "prompt": "Von 20 Murmeln in einem Behälter sind 5 Murmeln rot. Berechne den Prozentsatz der roten Murmeln.",
+    "payload": {
+      "answer_type": "number",
+      "tolerance": 0,
+      "normalization": ["trim", "comma_to_dot"]
+    },
+    "solution": {
+      "value": 25
+    },
+    "explanation": "🎯 WAS IST DAS?\nAnteil als Prozentsatz berechnen.\n\n📖 DIE FORMEL:\nProzentsatz = (Teil ÷ Ganzes) × 100\n\n✏️ RECHNUNG:\nTeil = 5 rote Murmeln\nGanzes = 20 Murmeln insgesamt\n\np = (5 ÷ 20) × 100\np = 0,25 × 100\np = 25%\n\n💡 ALTERNATIV (Bruch):\n5/20 = 1/4 = 25%\n\n🎁 VORSTELLUNG:\n20 Murmeln = 100%\n5 Murmeln = ? %\n\nDreisatz:\n20 → 100%\n1 → 5%\n5 → 25%\n\n✅ Antwort: 25%",
+    "tags": ["MSA", "training", "percent", "ratio"]
+  },
+  {
+    "id": "MATH_NUM_PCT_CHANGE_TRAIN_001",
+    "subject": "MATH",
+    "topic_id": "MATH_NUM_PCT_CHANGE",
+    "difficulty": 3,
+    "qtype": "SHORT",
+    "prompt": "Im Jahr 2015 gab es in Deutschland 107.700 Hybridautos. Im Jahr 2016 erhöhte sich die Anzahl um 21%. Wie viele Hybridautos gab es 2016?",
+    "payload": {
+      "answer_type": "number",
+      "tolerance": 0,
+      "normalization": ["trim", "comma_to_dot", "remove_thousands_sep"]
+    },
+    "solution": {
+      "value": 130317
+    },
+    "explanation": "🎯 WAS IST DAS?\nProzentuale Zunahme berechnen.\n\n📖 DIE FORMEL:\nNeuer Wert = Alter Wert × (1 + p/100)\noder\nNeuer Wert = Alter Wert + Zunahme\n\n✏️ RECHNUNG Methode 1:\nZunahme = 107.700 × 21%\n= 107.700 × 0,21\n= 22.617\n\nNeue Anzahl = 107.700 + 22.617 = 130.317\n\n✏️ RECHNUNG Methode 2 (schneller):\n121% vom alten Wert = neuer Wert\n107.700 × 1,21 = 130.317\n\n💡 WARUM 1,21?\n100% (das Alte) + 21% (Zunahme) = 121%\n121% = 1,21\n\n✅ Antwort: 130.317 Hybridautos",
+    "tags": ["MSA", "training", "percent", "increase", "application"]
+  },
+  {
+    "id": "MATH_NUM_INTEREST_TRAIN_001",
+    "subject": "MATH",
+    "topic_id": "MATH_NUM_INTEREST",
+    "difficulty": 3,
+    "qtype": "SHORT",
+    "prompt": "Marcel hat auf seinem Sparkonto 2500 €. Pro Jahr bekommt er 4% Zinsen (Zinseszins). Wie viel Geld ist nach 4 Jahren auf dem Konto? (Runde auf ganze Euro)",
+    "payload": {
+      "answer_type": "number",
+      "tolerance": 1,
+      "normalization": ["trim", "comma_to_dot"]
+    },
+    "solution": {
+      "value": 2925
+    },
+    "explanation": "🎯 WAS IST DAS?\nZinseszinsrechnung - das Geld wächst exponentiell.\n\n📖 DIE FORMEL:\nK(n) = K₀ × (1 + p/100)ⁿ\n\nK₀ = Anfangskapital = 2500 €\np = Zinssatz = 4%\nn = Jahre = 4\n\n✏️ RECHNUNG:\nK(4) = 2500 × (1 + 0,04)⁴\n= 2500 × 1,04⁴\n= 2500 × 1,16985856\n= 2924,65 €\n≈ 2925 €\n\n💡 SCHRITT FÜR SCHRITT:\nJahr 0: 2500,00 €\nJahr 1: 2500 × 1,04 = 2600,00 €\nJahr 2: 2600 × 1,04 = 2704,00 €\nJahr 3: 2704 × 1,04 = 2812,16 €\nJahr 4: 2812,16 × 1,04 = 2924,65 €\n\n✅ Antwort: 2925 €",
+    "tags": ["MSA", "training", "interest", "compound", "exponential"]
+  },
+  {
+    "id": "MATH_NUM_PCT_CHANGE_TRAIN_002",
+    "subject": "MATH",
+    "topic_id": "MATH_NUM_PCT_CHANGE",
+    "difficulty": 2,
+    "qtype": "SHORT",
+    "prompt": "Ein Geschäft verkauft ein Handy für 200 €. Zu Weihnachten gibt es 20% Rabatt. Wie viel kostet das Handy mit Rabatt?",
+    "payload": {
+      "answer_type": "number",
+      "tolerance": 0,
+      "normalization": ["trim", "comma_to_dot"]
+    },
+    "solution": {
+      "value": 160
+    },
+    "explanation": "🎯 WAS IST DAS?\nRabatt berechnen = prozentuale Abnahme.\n\n📖 ZWEI METHODEN:\n\n✏️ METHODE 1 (Rabatt berechnen):\nRabatt = 200 € × 20%\n= 200 × 0,20 = 40 €\n\nNeuer Preis = 200 € - 40 € = 160 €\n\n✏️ METHODE 2 (schneller):\n20% Rabatt = du zahlst nur 80%\n200 € × 80% = 200 × 0,80 = 160 €\n\n💡 MERKE:\nRabatt p% → du zahlst (100-p)%\n20% Rabatt → 80% zahlen\n30% Rabatt → 70% zahlen\n50% Rabatt → 50% zahlen\n\n🎁 KONTROLLE:\n160 € ist weniger als 200 € ✓\nRabatt macht günstiger ✓\n\n✅ Antwort: 160 €",
+    "tags": ["MSA", "training", "percent", "discount", "decrease"]
+  },
+  {
+    "id": "MATH_NUM_PCT_BASIC_TRAIN_005",
+    "subject": "MATH",
+    "topic_id": "MATH_NUM_PCT_BASIC",
+    "difficulty": 3,
+    "qtype": "SHORT",
+    "prompt": "Paula hat bei einem Ausverkauf mit 30% Rabatt 84 € gespart. Berechne den ursprünglichen Preis.",
+    "payload": {
+      "answer_type": "number",
+      "tolerance": 0,
+      "normalization": ["trim", "comma_to_dot"]
+    },
+    "solution": {
+      "value": 280
+    },
+    "explanation": "🎯 WAS IST DAS?\nVom Prozentwert zum Grundwert rechnen.\n\n📖 WAS WISSEN WIR?\n• Rabatt = 30%\n• Ersparnis = 84 € (das ist der Prozentwert!)\n• Gesucht: ursprünglicher Preis (Grundwert)\n\n📖 DIE FORMEL:\nGrundwert = Prozentwert × 100 ÷ Prozentsatz\nG = W × 100 ÷ p\n\n✏️ RECHNUNG:\nG = 84 × 100 ÷ 30\nG = 8400 ÷ 30\nG = 280 €\n\n💡 DREISATZ:\n30% → 84 €\n1% → 84 ÷ 30 = 2,80 €\n100% → 2,80 × 100 = 280 €\n\n✓ PROBE:\n30% von 280 € = 0,30 × 280 = 84 € ✓\n\n✅ Antwort: 280 €",
+    "tags": ["MSA", "training", "percent", "reverse", "Grundwert"]
+  },
+  {
+    "id": "MATH_NUM_PCT_BASIC_TRAIN_006",
+    "subject": "MATH",
+    "topic_id": "MATH_NUM_PCT_BASIC",
+    "difficulty": 2,
+    "qtype": "SHORT",
+    "prompt": "In einer 25 g Portion Müsli befinden sich 8 g Haferflocken. Wie viel Prozent sind das?",
+    "payload": {
+      "answer_type": "number",
+      "tolerance": 0,
+      "normalization": ["trim", "comma_to_dot"]
+    },
+    "solution": {
+      "value": 32
+    },
+    "explanation": "🎯 WAS IST DAS?\nProzentsatz berechnen.\n\n📖 DIE FORMEL:\np = (Teil ÷ Ganzes) × 100\n\n✏️ RECHNUNG:\np = (8 g ÷ 25 g) × 100\np = 0,32 × 100\np = 32%\n\n💡 ALTERNATIV (Bruch):\n8/25 = ?/100\n25 × 4 = 100\n8 × 4 = 32\nAlso: 8/25 = 32/100 = 32%\n\n🎁 VORSTELLUNG:\n25 g Müsli = 100%\n8 g Haferflocken = 32%\n\nFast ein Drittel des Müslis\nbesteht aus Haferflocken!\n\n✅ Antwort: 32%",
+    "tags": ["MSA", "training", "percent", "ratio", "food"]
+  },
+  {
+    "id": "MATH_NUM_PCT_BASIC_TRAIN_007",
+    "subject": "MATH",
+    "topic_id": "MATH_NUM_PCT_BASIC",
+    "difficulty": 2,
+    "qtype": "SHORT",
+    "prompt": "Der Wasseranteil eines Menschen beträgt ungefähr 60%. Wie viel Wasser enthält ein 62 kg schwerer Mensch? (Antwort in kg)",
+    "payload": {
+      "answer_type": "number",
+      "tolerance": 0.1,
+      "normalization": ["trim", "comma_to_dot"]
+    },
+    "solution": {
+      "value": 37.2
+    },
+    "explanation": "🎯 WAS IST DAS?\nProzentwert berechnen.\n\n📖 DIE FORMEL:\nProzentwert = Grundwert × Prozentsatz\nW = G × p\n\n✏️ RECHNUNG:\nW = 62 kg × 60%\nW = 62 × 0,60\nW = 37,2 kg\n\n💡 VORSTELLUNG:\n60% = etwas mehr als die Hälfte\nHälfte von 62 kg = 31 kg\n60% muss mehr sein → 37,2 kg ✓\n\n🎁 INTERESSANT:\nEin Mensch besteht zu fast 2/3 aus Wasser!\n62 kg Person → 37,2 kg Wasser\n\n⚠️ EINHEIT:\nKörpergewicht in kg → Wasser auch in kg!\n\n✅ Antwort: 37,2 kg",
+    "tags": ["MSA", "training", "percent", "body", "application"]
+  },
+  {
+    "id": "MATH_ALG_TERMS_SIMPLIFY_TRAIN_001",
+    "subject": "MATH",
+    "topic_id": "MATH_ALG_TERMS_SIMPLIFY",
+    "difficulty": 1,
+    "qtype": "SHORT",
+    "prompt": "Berechne: 2⁴",
+    "payload": {
+      "answer_type": "number",
+      "tolerance": 0,
+      "normalization": ["trim"]
+    },
+    "solution": {
+      "value": 16
+    },
+    "explanation": "🎯 WAS IST DAS?\nPotenz berechnen.\n\n📖 WAS BEDEUTET 2⁴?\n2 hoch 4 = 2 × 2 × 2 × 2\nDie Basis (2) wird 4-mal mit sich selbst multipliziert.\n\n✏️ RECHNUNG:\n2⁴ = 2 × 2 × 2 × 2\n   = 4 × 2 × 2\n   = 8 × 2\n   = 16\n\n💡 WICHTIGE 2er-POTENZEN:\n2¹ = 2\n2² = 4\n2³ = 8\n2⁴ = 16\n2⁵ = 32\n2¹⁰ = 1024\n\n⚠️ ACHTUNG:\n2⁴ ≠ 2 × 4 = 8 (falsch!)\n2⁴ = 2 × 2 × 2 × 2 = 16 (richtig!)\n\n✅ Antwort: 16",
+    "tags": ["MSA", "training", "exponents", "power", "basic"]
+  },
+  {
+    "id": "MATH_ALG_TERMS_SIMPLIFY_TRAIN_002",
+    "subject": "MATH",
+    "topic_id": "MATH_ALG_TERMS_SIMPLIFY",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Was ist 10⁻²?",
+    "payload": {
+      "choices": ["0,01", "0,1", "-20", "100"],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "0,01"
+    },
+    "explanation": "🎯 WAS IST DAS?\nNegative Exponenten verstehen.\n\n📖 DIE REGEL:\na⁻ⁿ = 1/aⁿ\n\nEin negativer Exponent bedeutet:\n'1 geteilt durch die Potenz'\n\n✏️ RECHNUNG:\n10⁻² = 1/10²\n     = 1/100\n     = 0,01\n\n💡 MERKHILFE:\nNegativer Exponent = Kehrwert\n10⁻² → unter den Bruchstrich → 1/10²\n\n🎁 WEITERE BEISPIELE:\n10⁻¹ = 1/10 = 0,1\n10⁻³ = 1/1000 = 0,001\n2⁻¹ = 1/2 = 0,5\n2⁻² = 1/4 = 0,25\n\n❌ HÄUFIGER FEHLER:\n10⁻² ≠ -20 (negativ ist der Exponent, nicht das Ergebnis!)\n\n✅ Antwort: 0,01",
+    "tags": ["MSA", "training", "exponents", "negative"]
+  },
+  {
+    "id": "MATH_ALG_TERMS_SIMPLIFY_TRAIN_003",
+    "subject": "MATH",
+    "topic_id": "MATH_ALG_TERMS_SIMPLIFY",
+    "difficulty": 2,
+    "qtype": "SHORT",
+    "prompt": "Berechne: 8⁴ ÷ 4⁴",
+    "payload": {
+      "answer_type": "number",
+      "tolerance": 0,
+      "normalization": ["trim"]
+    },
+    "solution": {
+      "value": 16
+    },
+    "explanation": "🎯 WAS IST DAS?\nPotenzgesetz: gleiche Exponenten.\n\n📖 DIE REGEL:\naⁿ ÷ bⁿ = (a ÷ b)ⁿ\n\n✏️ RECHNUNG (elegant):\n8⁴ ÷ 4⁴ = (8 ÷ 4)⁴\n        = 2⁴\n        = 16\n\n✏️ RECHNUNG (ausführlich):\n8⁴ = 4096\n4⁴ = 256\n4096 ÷ 256 = 16\n\n💡 WARUM FUNKTIONIERT DAS?\n8⁴/4⁴ = (8×8×8×8)/(4×4×4×4)\n      = (8/4)×(8/4)×(8/4)×(8/4)\n      = 2×2×2×2 = 16\n\n⚠️ WICHTIG:\nDiese Regel gilt nur bei GLEICHEM Exponenten!\n\n✅ Antwort: 16",
+    "tags": ["MSA", "training", "exponents", "division", "rule"]
+  },
+  {
+    "id": "MATH_ALG_TERMS_SIMPLIFY_TRAIN_004",
+    "subject": "MATH",
+    "topic_id": "MATH_ALG_TERMS_SIMPLIFY",
+    "difficulty": 1,
+    "qtype": "SHORT",
+    "prompt": "Berechne: 27⁰",
+    "payload": {
+      "answer_type": "number",
+      "tolerance": 0,
+      "normalization": ["trim"]
+    },
+    "solution": {
+      "value": 1
+    },
+    "explanation": "🎯 WAS IST DAS?\nExponent 0 - eine wichtige Regel!\n\n📖 DIE REGEL:\na⁰ = 1 (für alle a ≠ 0)\n\nJEDE Zahl hoch 0 ist 1!\n\n✏️ BEISPIELE:\n27⁰ = 1\n5⁰ = 1\n1000000⁰ = 1\n(-3)⁰ = 1\n\n💡 WARUM IST DAS SO?\nDenke an die Potenzregeln:\naⁿ ÷ aⁿ = aⁿ⁻ⁿ = a⁰\n\nAber auch:\naⁿ ÷ aⁿ = 1 (jede Zahl durch sich selbst = 1)\n\nAlso: a⁰ = 1\n\n⚠️ AUSNAHME:\n0⁰ ist nicht definiert!\n\n✅ Antwort: 1",
+    "tags": ["MSA", "training", "exponents", "zero", "rule"]
+  },
+  {
+    "id": "MATH_ALG_TERMS_SIMPLIFY_TRAIN_005",
+    "subject": "MATH",
+    "topic_id": "MATH_ALG_TERMS_SIMPLIFY",
+    "difficulty": 2,
+    "qtype": "SHORT",
+    "prompt": "Berechne: (2³)²",
+    "payload": {
+      "answer_type": "number",
+      "tolerance": 0,
+      "normalization": ["trim"]
+    },
+    "solution": {
+      "value": 64
+    },
+    "explanation": "🎯 WAS IST DAS?\nPotenz einer Potenz.\n\n📖 DIE REGEL:\n(aⁿ)ᵐ = aⁿ×ᵐ\n\nBei 'Potenz hoch Potenz' werden die Exponenten MULTIPLIZIERT!\n\n✏️ RECHNUNG (mit Regel):\n(2³)² = 2³ˣ²\n     = 2⁶\n     = 64\n\n✏️ RECHNUNG (ausführlich):\n(2³)² = (2³) × (2³)\n     = 8 × 8\n     = 64\n\n💡 ESELSBRÜCKE:\nKlammer → Multiplizieren\n(2³)² → 3 × 2 = 6 → 2⁶\n\n⚠️ NICHT VERWECHSELN:\n(2³)² = 2⁶ = 64 (Exponenten multiplizieren)\n2³ × 2² = 2⁵ = 32 (Exponenten addieren)\n\n✅ Antwort: 64",
+    "tags": ["MSA", "training", "exponents", "power_of_power"]
+  },
+  {
+    "id": "MATH_ALG_TERMS_SIMPLIFY_TRAIN_006",
+    "subject": "MATH",
+    "topic_id": "MATH_ALG_TERMS_SIMPLIFY",
+    "difficulty": 2,
+    "qtype": "SHORT",
+    "prompt": "Berechne: ³√216 (dritte Wurzel aus 216)",
+    "payload": {
+      "answer_type": "number",
+      "tolerance": 0,
+      "normalization": ["trim"]
+    },
+    "solution": {
+      "value": 6
+    },
+    "explanation": "🎯 WAS IST DAS?\nKubikwurzel (dritte Wurzel) berechnen.\n\n📖 WAS BEDEUTET ³√216?\nWelche Zahl mal sich selbst mal sich selbst = 216?\n? × ? × ? = 216\n\n✏️ ÜBERLEGUNG:\n³√216 = ?\n\nProbiere kleine Zahlen:\n2³ = 2×2×2 = 8 (zu klein)\n3³ = 3×3×3 = 27 (zu klein)\n4³ = 4×4×4 = 64 (zu klein)\n5³ = 5×5×5 = 125 (zu klein)\n6³ = 6×6×6 = 216 ✓\n\n💡 WICHTIGE KUBIKZAHLEN:\n1³ = 1\n2³ = 8\n3³ = 27\n4³ = 64\n5³ = 125\n6³ = 216\n10³ = 1000\n\n✅ Antwort: 6",
+    "tags": ["MSA", "training", "roots", "cube_root"]
+  },
+  {
+    "id": "MATH_DATA_STATS_TRAIN_001",
+    "subject": "MATH",
+    "topic_id": "MATH_DATA_STATS",
+    "difficulty": 2,
+    "qtype": "SHORT",
+    "prompt": "Berechne das arithmetische Mittel der Zahlen: 3, 5, 6, 10",
+    "payload": {
+      "answer_type": "number",
+      "tolerance": 0,
+      "normalization": ["trim", "comma_to_dot"]
+    },
+    "solution": {
+      "value": 6
+    },
+    "explanation": "🎯 WAS IST DAS?\nArithmetisches Mittel = Durchschnitt berechnen.\n\n📖 DIE FORMEL:\nDurchschnitt = Summe aller Werte ÷ Anzahl der Werte\n\n✏️ RECHNUNG:\nSchritt 1: Summe bilden\n3 + 5 + 6 + 10 = 24\n\nSchritt 2: Durch Anzahl teilen\n24 ÷ 4 = 6\n\n💡 VORSTELLUNG:\nStell dir vor, du verteilst 24 Bonbons\ngleichmäßig auf 4 Personen.\nJeder bekommt 6 Bonbons.\n\n⚠️ BEGRIFFE:\n• Arithmetisches Mittel = Durchschnitt = Mittelwert\n• Alle drei Begriffe meinen das Gleiche!\n\n✅ Antwort: 6",
+    "tags": ["MSA", "training", "statistics", "mean", "average"]
+  },
+  {
+    "id": "MATH_DATA_STATS_TRAIN_002",
+    "subject": "MATH",
+    "topic_id": "MATH_DATA_STATS",
+    "difficulty": 2,
+    "qtype": "SHORT",
+    "prompt": "Bestimme den Median der Zahlen: 13, 13, 17, 43, 1000",
+    "payload": {
+      "answer_type": "number",
+      "tolerance": 0,
+      "normalization": ["trim"]
+    },
+    "solution": {
+      "value": 17
+    },
+    "explanation": "🎯 WAS IST DAS?\nMedian = mittlerer Wert einer sortierten Zahlenreihe.\n\n📖 SO FINDEST DU DEN MEDIAN:\n1. Sortiere die Zahlen der Größe nach\n2. Finde die mittlere Zahl\n\n✏️ RECHNUNG:\nSchritt 1: Sortieren (schon sortiert!)\n13, 13, 17, 43, 1000\n\nSchritt 2: Mittlere Zahl finden\n5 Zahlen → die 3. Zahl ist in der Mitte\n13, 13, [17], 43, 1000\n        ↑\n      Median\n\n💡 MEDIAN vs. MITTELWERT:\nMittelwert: (13+13+17+43+1000)÷5 = 217,2\nMedian: 17\n\nDer Median ist robuster gegen Ausreißer!\n(1000 beeinflusst den Median nicht)\n\n⚠️ BEI GERADER ANZAHL:\nDurchschnitt der beiden mittleren Werte!\n\n✅ Antwort: 17",
+    "tags": ["MSA", "training", "statistics", "median"]
+  },
+  {
+    "id": "MATH_DATA_PROB_TRAIN_001",
+    "subject": "MATH",
+    "topic_id": "MATH_DATA_PROB",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Ein Würfel wird geworfen. Mit welcher Wahrscheinlichkeit zeigt er eine 5?",
+    "payload": {
+      "choices": ["1/6", "1/5", "5/6", "1/2"],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "1/6"
+    },
+    "explanation": "🎯 WAS IST DAS?\nWahrscheinlichkeit bei einem Würfelwurf.\n\n📖 DIE FORMEL:\nP(E) = günstige Ergebnisse ÷ alle möglichen Ergebnisse\n\n✏️ RECHNUNG:\nGünstige Ergebnisse: 1 (nur die 5)\nAlle möglichen Ergebnisse: 6 (Zahlen 1-6)\n\nP(5) = 1/6\n\n💡 WARUM NICHT 1/5?\nEin Würfel hat 6 Seiten, nicht 5!\nDie Zahl 5 ist nur EINE von 6 Möglichkeiten.\n\n🎲 WICHTIG ZU WISSEN:\n• P(eine bestimmte Zahl) = 1/6\n• P(gerade Zahl) = 3/6 = 1/2\n• P(Zahl ≤ 4) = 4/6 = 2/3\n\n✅ Antwort: 1/6",
+    "tags": ["MSA", "training", "probability", "dice", "basic"]
+  },
+  {
+    "id": "MATH_NUM_FRAC_OPS_TRAIN_001",
+    "subject": "MATH",
+    "topic_id": "MATH_NUM_FRAC_OPS",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Berechne: 3/5 + 1/5",
+    "payload": {
+      "choices": ["4/5", "4/10", "2/5", "3/5"],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "4/5"
+    },
+    "explanation": "🎯 WAS IST DAS?\nBrüche mit gleichem Nenner addieren.\n\n📖 DIE REGEL:\na/c + b/c = (a+b)/c\n\nBei gleichem Nenner: Nur die Zähler addieren!\nDer Nenner bleibt gleich.\n\n✏️ RECHNUNG:\n3/5 + 1/5 = (3+1)/5 = 4/5\n\n💡 VORSTELLUNG:\n🍕🍕🍕🍕🍕 (Pizza in 5 Stücke geteilt)\n\n3 Stücke + 1 Stück = 4 Stücke\n= 4/5 der Pizza\n\n❌ HÄUFIGER FEHLER:\n3/5 + 1/5 ≠ 4/10\nDie Nenner werden NICHT addiert!\n\n✅ Antwort: 4/5",
+    "tags": ["MSA", "training", "fractions", "addition", "same_denominator"]
+  },
+  {
+    "id": "MATH_NUM_FRAC_OPS_TRAIN_002",
+    "subject": "MATH",
+    "topic_id": "MATH_NUM_FRAC_OPS",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Berechne: 1/3 × 2/5",
+    "payload": {
+      "choices": ["2/15", "3/8", "2/8", "1/4"],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "2/15"
+    },
+    "explanation": "🎯 WAS IST DAS?\nBrüche multiplizieren.\n\n📖 DIE REGEL:\na/b × c/d = (a×c)/(b×d)\n\nZähler mal Zähler, Nenner mal Nenner!\n\n✏️ RECHNUNG:\n1/3 × 2/5 = (1×2)/(3×5) = 2/15\n\n💡 VORSTELLUNG:\n1/3 von 2/5 = ?\nEin Drittel von zwei Fünfteln\n= 2/15\n\n🎁 TIPP:\nVor dem Multiplizieren kürzen!\n(hier nicht möglich, aber bei anderen Aufgaben)\n\n⚠️ NICHT VERWECHSELN:\nMultiplizieren: Zähler × Zähler, Nenner × Nenner\nAddieren: Nur Zähler addieren (bei gleichem Nenner)\n\n✅ Antwort: 2/15",
+    "tags": ["MSA", "training", "fractions", "multiplication"]
+  },
+  {
+    "id": "MATH_NUM_FRAC_OPS_TRAIN_003",
+    "subject": "MATH",
+    "topic_id": "MATH_NUM_FRAC_OPS",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Berechne: 1/3 ÷ 2/5",
+    "payload": {
+      "choices": ["5/6", "2/15", "6/5", "2/3"],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "5/6"
+    },
+    "explanation": "🎯 WAS IST DAS?\nBrüche dividieren.\n\n📖 DIE REGEL:\na/b ÷ c/d = a/b × d/c\n\nDividieren = Mit dem Kehrwert multiplizieren!\n\n✏️ RECHNUNG:\n1/3 ÷ 2/5\n= 1/3 × 5/2  (Kehrwert von 2/5 ist 5/2)\n= (1×5)/(3×2)\n= 5/6\n\n💡 MERKHILFE:\n'Teilen durch einen Bruch?\nNimm den Kehrwert und dann Mal!'\n\nKehrwert = Zähler und Nenner tauschen\nKehrwert von 2/5 → 5/2\n\n⚠️ VORSICHT:\n1/3 ÷ 2/5 ≠ 1/3 × 2/5\nDivision ≠ Multiplikation!\n\n✅ Antwort: 5/6",
+    "tags": ["MSA", "training", "fractions", "division", "reciprocal"]
+  }
+]

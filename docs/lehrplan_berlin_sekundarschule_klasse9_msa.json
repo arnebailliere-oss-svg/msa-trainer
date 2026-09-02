@@ -1,0 +1,156 @@
+{
+  "meta": {
+    "region": "Berlin",
+    "school_type": "Sekundarschule",
+    "grade": 9,
+    "target_degree": "MSA",
+    "version": "1.0",
+    "note": "Reduzierter und praxisnaher Lehrplan fuer MSA, ohne gymnasiale Vertiefungen."
+  },
+  "subjects": [
+    {
+      "subject": "MATH",
+      "name": "Mathematik",
+      "topics": [
+        {
+          "topic_id": "MATH_NUM_FRAC",
+          "name": "Brueche und Dezimalzahlen",
+          "focus": "Grundrechenarten, Umwandlungen",
+          "msa_priority": "hoch"
+        },
+        {
+          "topic_id": "MATH_NUM_PERCENT",
+          "name": "Prozentrechnung",
+          "focus": "Grundwert, Prozentwert, Prozentsatz, Zu- und Abnahme",
+          "msa_priority": "sehr_hoch"
+        },
+        {
+          "topic_id": "MATH_NUM_INTEREST",
+          "name": "Einfache Zinsrechnung",
+          "focus": "Alltagsnahe Aufgaben",
+          "msa_priority": "mittel"
+        },
+        {
+          "topic_id": "MATH_ALG_TERMS",
+          "name": "Terme und Klammern",
+          "focus": "Zusammenfassen, Ausmultiplizieren",
+          "msa_priority": "hoch"
+        },
+        {
+          "topic_id": "MATH_ALG_LINEAR_EQ",
+          "name": "Lineare Gleichungen",
+          "focus": "Eine Variable, Sachaufgaben",
+          "msa_priority": "sehr_hoch"
+        },
+        {
+          "topic_id": "MATH_FUNC_LINEAR",
+          "name": "Lineare Funktionen",
+          "focus": "y = mx + b, Tabellen, einfache Graphen",
+          "msa_priority": "hoch"
+        },
+        {
+          "topic_id": "MATH_GEO_AREA",
+          "name": "Flaechen und Umfang",
+          "focus": "Rechteck, Dreieck, Parallelogramm, Kreis",
+          "msa_priority": "hoch"
+        },
+        {
+          "topic_id": "MATH_GEO_VOLUME",
+          "name": "Volumen",
+          "focus": "Quader, Prisma, Zylinder",
+          "msa_priority": "mittel"
+        },
+        {
+          "topic_id": "MATH_GEO_PYTH",
+          "name": "Satz des Pythagoras",
+          "focus": "Rechtwinklige Dreiecke",
+          "msa_priority": "hoch"
+        },
+        {
+          "topic_id": "MATH_DATA",
+          "name": "Daten und Wahrscheinlichkeit",
+          "focus": "Mittelwert, Median, einfache Wahrscheinlichkeiten",
+          "msa_priority": "mittel"
+        }
+      ]
+    },
+    {
+      "subject": "DE",
+      "name": "Deutsch",
+      "topics": [
+        {
+          "topic_id": "DE_ORTHOGRAPHY",
+          "name": "Rechtschreibung",
+          "focus": "Gross/Klein, ss/ß, haeufige Fehler",
+          "msa_priority": "sehr_hoch"
+        },
+        {
+          "topic_id": "DE_PUNCTUATION",
+          "name": "Zeichensetzung",
+          "focus": "Komma bei Haupt- und Nebensatz, Aufzaehlungen",
+          "msa_priority": "sehr_hoch"
+        },
+        {
+          "topic_id": "DE_GRAMMAR",
+          "name": "Grammatik Grundlagen",
+          "focus": "Wortarten, Satzarten, Zeiten",
+          "msa_priority": "hoch"
+        },
+        {
+          "topic_id": "DE_READING_CORE",
+          "name": "Leseverstehen",
+          "focus": "Kernaussage, Argumente, Textbelege",
+          "msa_priority": "sehr_hoch"
+        },
+        {
+          "topic_id": "DE_WRITING_SHORT",
+          "name": "Kurze Schreibformate",
+          "focus": "Zusammenfassen, Umformulieren",
+          "msa_priority": "mittel"
+        }
+      ]
+    },
+    {
+      "subject": "EN",
+      "name": "Englisch",
+      "topics": [
+        {
+          "topic_id": "EN_TENSES",
+          "name": "Zeitformen",
+          "focus": "Present Simple, Present Continuous, Past Simple",
+          "msa_priority": "sehr_hoch"
+        },
+        {
+          "topic_id": "EN_QUESTIONS",
+          "name": "Fragen und Verneinung",
+          "focus": "do/does/did, word order",
+          "msa_priority": "sehr_hoch"
+        },
+        {
+          "topic_id": "EN_MODALS",
+          "name": "Modalverben",
+          "focus": "can, must, should",
+          "msa_priority": "hoch"
+        },
+        {
+          "topic_id": "EN_VOCAB",
+          "name": "Wortschatz Alltag",
+          "focus": "Schule, Freizeit, Reisen",
+          "msa_priority": "mittel"
+        },
+        {
+          "topic_id": "EN_READING",
+          "name": "Leseverstehen",
+          "focus": "Kurze Texte, E-Mails",
+          "msa_priority": "hoch"
+        },
+        {
+          "topic_id": "EN_WRITING_GUIDED",
+          "name": "Gefuehrtes Schreiben",
+          "focus": "Lueckentexte, kurze Antworten",
+          "msa_priority": "mittel"
+        }
+      ]
+    }
+  ]
+}

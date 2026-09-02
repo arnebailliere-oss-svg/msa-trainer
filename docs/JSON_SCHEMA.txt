@@ -1,0 +1,21 @@
+# JSON_SCHEMA: Pack Dateien
+
+Dieses Repo nutzt drei JSON Dateitypen:
+- pack_manifest.json
+- topics.json
+- questions_*.json
+
+Validierung erfolgt gegen /docs/JSON_SCHEMA.json (Draft 2020-12).
+Jede questions Datei ist ein Array von Question Objekten.
+
+Supported qtype:
+- MCQ
+- CLOZE
+- MATCH
+- SHORT
+
+Hinweise:
+- payload und solution hängen vom qtype ab
+- explanation ist Pflicht (kurz, 1 bis 6 Zeilen)
+- tags ist Pflicht (Array von Strings)
+- optional variants für template-basierte Generierung

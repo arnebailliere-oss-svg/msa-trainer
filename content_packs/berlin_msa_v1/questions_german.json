@@ -1,0 +1,1512 @@
+[
+  {
+    "id": "DE_PUNCT_COMMA_MAIN_SUB_001",
+    "subject": "DE",
+    "topic_id": "DE_PUNCT_COMMA_MAIN_SUB",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Wo muss das Komma stehen? 'Ich glaube _ dass er heute kommt.'",
+    "payload": {
+      "choices": [
+        "Ich glaube, dass",
+        "Ich, glaube dass",
+        "Ich glaube dass,",
+        "Kein Komma nötig"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "Ich glaube, dass"
+    },
+    "explanation": "🎯 WAS IST DAS?\nKomma zwischen Hauptsatz und Nebensatz.\n\n📖 DIE BEGRIFFE:\n• Hauptsatz = kann alleine stehen ('Ich glaube')\n• Nebensatz = braucht den Hauptsatz ('dass er heute kommt')\n• Signalwort = zeigt Nebensatz an ('dass')\n\n📐 DIE REGEL:\nVOR dem Signalwort kommt ein Komma!\n\n✏️ ANWENDUNG:\n'Ich glaube' = Hauptsatz\n'dass er heute kommt' = Nebensatz\n→ Komma VOR 'dass'\n\n💡 SIGNALWÖRTER für Nebensätze:\ndass, weil, obwohl, wenn, als, damit, ob\n\n✅ Antwort: Ich glaube, dass",
+    "tags": [
+      "MSA",
+      "comma",
+      "nebensatz"
+    ]
+  },
+  {
+    "id": "DE_PUNCT_COMMA_MAIN_SUB_002",
+    "subject": "DE",
+    "topic_id": "DE_PUNCT_COMMA_MAIN_SUB",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Wo fehlt das Komma? 'Er kam nicht weil er krank war.'",
+    "payload": {
+      "choices": [
+        "nach 'nicht'",
+        "nach 'kam'",
+        "nach 'weil'",
+        "nach 'krank'"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "nach 'nicht'"
+    },
+    "explanation": "🎯 WAS IST DAS?\nKomma vor 'weil' - ein häufiges Signalwort.\n\n📖 REGEL:\n'weil' leitet einen Nebensatz ein.\nVOR 'weil' steht immer ein Komma!\n\n✏️ RICHTIG:\nEr kam nicht, weil er krank war.\n\n🎁 VORSTELLUNG:\nStell dir eine Grenze vor:\n[Hauptsatz] | [Nebensatz]\nEr kam nicht | weil er krank war\nDas Komma markiert diese Grenze.\n\n💡 ÄHNLICHE WÖRTER:\nweil, obwohl, wenn, als, damit, sodass\n→ IMMER Komma davor!\n\n✅ Antwort: nach 'nicht'",
+    "tags": [
+      "MSA",
+      "comma",
+      "weil"
+    ]
+  },
+  {
+    "id": "DE_PUNCT_COMMA_MAIN_SUB_003",
+    "subject": "DE",
+    "topic_id": "DE_PUNCT_COMMA_MAIN_SUB",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Welcher Satz ist korrekt?",
+    "payload": {
+      "choices": [
+        "Obwohl es regnete ging sie spazieren.",
+        "Obwohl es regnete, ging sie spazieren.",
+        "Obwohl, es regnete ging sie spazieren.",
+        "Obwohl es, regnete ging sie spazieren."
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "Obwohl es regnete, ging sie spazieren."
+    },
+    "explanation": "🎯 WAS IST DAS?\nKomma nach einem vorangestellten Nebensatz.\n\n📖 REGEL:\nWenn der Nebensatz ZUERST kommt:\nKomma am ENDE des Nebensatzes!\n\n✏️ STRUKTUR:\n[Nebensatz], [Hauptsatz]\nObwohl es regnete, ging sie spazieren.\n        ↑\n    Komma hier!\n\n🎁 VORSTELLUNG:\nDer Nebensatz 'wartet' auf den Hauptsatz.\nDas Komma trennt die beiden.\n\n💡 MERKE:\n• Nebensatz am Anfang → Komma am Ende des Nebensatzes\n• Nebensatz am Ende → Komma vor dem Nebensatz\n\n✅ Antwort: Obwohl es regnete, ging sie spazieren.",
+    "tags": [
+      "MSA",
+      "comma",
+      "obwohl"
+    ]
+  },
+  {
+    "id": "DE_PUNCT_COMMA_MAIN_SUB_004",
+    "subject": "DE",
+    "topic_id": "DE_PUNCT_COMMA_MAIN_SUB",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "Wie viele Kommas braucht dieser Satz? 'Als ich aufwachte schien die Sonne und die Vögel sangen.'",
+    "payload": {
+      "choices": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "1"
+    },
+    "explanation": "🎯 WAS IST DAS?\nKomma bei Nebensatz + 'und' bei Hauptsätzen.\n\n📖 ANALYSE:\n'Als ich aufwachte' = Nebensatz (Signalwort 'als')\n'schien die Sonne' = Hauptsatz 1\n'und die Vögel sangen' = Hauptsatz 2\n\n📐 REGELN:\n1. Nach Nebensatz → Komma ✓\n2. Vor 'und' bei Hauptsätzen → KEIN Komma!\n\n✏️ RICHTIG:\nAls ich aufwachte, schien die Sonne und die Vögel sangen.\n                ↑\n           nur hier!\n\n💡 MERKE:\n• Nebensatz-Grenze: IMMER Komma\n• Hauptsatz + und + Hauptsatz: KEIN Komma\n\n✅ Antwort: 1 Komma",
+    "tags": [
+      "MSA",
+      "comma",
+      "compound"
+    ]
+  },
+  {
+    "id": "DE_PUNCT_COMMA_LIST_001",
+    "subject": "DE",
+    "topic_id": "DE_PUNCT_COMMA_LIST",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Welcher Satz hat die Kommas richtig gesetzt?",
+    "payload": {
+      "choices": [
+        "Ich kaufe Äpfel, Birnen, und Bananen.",
+        "Ich kaufe Äpfel, Birnen und Bananen.",
+        "Ich kaufe, Äpfel Birnen und Bananen.",
+        "Ich kaufe Äpfel Birnen, und Bananen."
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "Ich kaufe Äpfel, Birnen und Bananen."
+    },
+    "explanation": "🎯 WAS IST DAS?\nKomma bei Aufzählungen.\n\n📖 DIE REGEL:\nZwischen den Teilen einer Aufzählung steht ein Komma.\nABER: Vor 'und' oder 'oder' KEIN Komma!\n\n✏️ STRUKTUR:\nTeil 1, Teil 2, Teil 3 und Teil 4\n     ↑      ↑         ↑\n  Komma  Komma   KEIN Komma!\n\n🎁 BEISPIEL:\nÄpfel, Birnen und Bananen\n    ↑         ↑\n Komma    'und' ersetzt Komma\n\n⚠️ ACHTUNG: Im Englischen steht oft Komma vor 'and'.\nIm DEUTSCHEN nicht!\n\n✅ Antwort: Ich kaufe Äpfel, Birnen und Bananen.",
+    "tags": [
+      "MSA",
+      "comma",
+      "list"
+    ]
+  },
+  {
+    "id": "DE_PUNCT_COMMA_LIST_002",
+    "subject": "DE",
+    "topic_id": "DE_PUNCT_COMMA_LIST",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Wie viele Kommas fehlen? 'Er ist klug fleißig und freundlich.'",
+    "payload": {
+      "choices": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "1"
+    },
+    "explanation": "🎯 WAS IST DAS?\nAufzählung von Adjektiven.\n\n📖 ANALYSE:\nklug, fleißig und freundlich\n= 3 gleichwertige Adjektive\n\n📐 REGEL:\nZwischen gleichwertigen Adjektiven: Komma\nVor 'und': KEIN Komma\n\n✏️ RICHTIG:\nEr ist klug, fleißig und freundlich.\n        ↑\n    1 Komma fehlt\n\n💡 TEST:\nKann man 'und' dazwischen setzen?\n'klug und fleißig und freundlich'\n→ Ja! Also sind sie gleichwertig → Komma!\n\n✅ Antwort: 1 Komma fehlt",
+    "tags": [
+      "MSA",
+      "comma",
+      "adjectives"
+    ]
+  },
+  {
+    "id": "DE_ORTHO_CASE_001",
+    "subject": "DE",
+    "topic_id": "DE_ORTHO_CASE",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Welche Schreibweise ist richtig?",
+    "payload": {
+      "choices": [
+        "im allgemeinen",
+        "im Allgemeinen",
+        "Im allgemeinen",
+        "im allgemeinEN"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "im Allgemeinen"
+    },
+    "explanation": "🎯 WAS IST DAS?\nNominalisierung - ein Adjektiv wird zum Nomen.\n\n📖 DIE REGEL:\nNach 'im', 'am', 'zum', 'beim' wird das Wort GROSS geschrieben!\n\n✏️ WARUM?\n'im Allgemeinen' = 'in dem Allgemeinen'\n                        ↑\n                   Das ist ein NOMEN!\n\n💡 MEHR BEISPIELE:\n• im Folgenden\n• am Besten? NEIN! → am besten (Superlativ!)\n• zum Glück? JA! → zum Glück (Nomen)\n\n⚠️ ACHTUNG: 'am besten/schnellsten' = KLEIN\n(Das sind Superlative, keine Nomen!)\n\n✅ Antwort: im Allgemeinen",
+    "tags": [
+      "MSA",
+      "orthography",
+      "case"
+    ]
+  },
+  {
+    "id": "DE_ORTHO_CASE_002",
+    "subject": "DE",
+    "topic_id": "DE_ORTHO_CASE",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Welche Schreibweise ist richtig?",
+    "payload": {
+      "choices": [
+        "Heute Morgen",
+        "heute morgen",
+        "Heute morgen",
+        "heute Morgen"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "heute Morgen"
+    },
+    "explanation": "🎯 WAS IST DAS?\nTageszeiten als Nomen.\n\n📖 DIE REGEL:\nTageszeiten sind NOMEN → GROSS!\n'heute' ist ein ADVERB → klein!\n\n✏️ STRUKTUR:\nheute + Morgen\n  ↓       ↓\nklein   GROSS\n\n💡 MEHR BEISPIELE:\n• heute Abend\n• gestern Nacht\n• morgen Mittag\n\n⚠️ ACHTUNG - VERWECHSLUNGSGEFAHR:\n• 'morgen' (= der nächste Tag) → klein\n• 'Morgen' (= Tageszeit) → gross\n\n'Morgen früh' vs 'morgen früh'?\n→ morgen früh (der nächste Tag, früh)\n\n✅ Antwort: heute Morgen",
+    "tags": [
+      "MSA",
+      "orthography",
+      "case"
+    ]
+  },
+  {
+    "id": "DE_ORTHO_CASE_003",
+    "subject": "DE",
+    "topic_id": "DE_ORTHO_CASE",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "Welche Schreibweise ist richtig?",
+    "payload": {
+      "choices": [
+        "Sie hat recht.",
+        "Sie hat Recht.",
+        "sie hat recht.",
+        "Sie hat RECHT."
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "Sie hat recht."
+    },
+    "explanation": "🎯 WAS IST DAS?\nFeste Wendungen mit 'recht/Recht'.\n\n📖 DIE REGEL:\n'recht haben' = mit kleinem 'r'!\n(Es ist hier ein Adjektiv/Adverb)\n\n✏️ ABER:\n'das Recht' = gross (Nomen für Gesetz)\n\n💡 UNTERSCHEIDE:\n• Sie hat recht. (= Sie liegt richtig)\n• Sie hat ein Recht darauf. (= einen Anspruch)\n• Das ist nicht recht. (= nicht fair/okay)\n\n⚠️ ÄHNLICHE FÄLLE:\n• recht haben → klein\n• Unrecht haben → klein\n• im Recht sein → GROSS (Nomen!)\n\n✅ Antwort: Sie hat recht.",
+    "tags": [
+      "MSA",
+      "orthography",
+      "case"
+    ]
+  },
+  {
+    "id": "DE_ORTHO_SS_SZ_001",
+    "subject": "DE",
+    "topic_id": "DE_ORTHO_SS_SZ",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Welche Schreibweise ist richtig?",
+    "payload": {
+      "choices": [
+        "Ich muss gehen.",
+        "Ich muß gehen.",
+        "Ich mus gehen.",
+        "Ich Muss gehen."
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "Ich muss gehen."
+    },
+    "explanation": "🎯 WAS IST DAS?\nss oder ß? Eine wichtige Rechtschreibregel!\n\n📖 DIE REGEL:\nNach KURZEM Vokal → ss\nNach LANGEM Vokal → ß\n\n✏️ TEST für 'muss':\nWie sprichst du das 'u'?\n→ kurz! Also: ss\n\n🎁 VORSTELLUNG:\nSag 'muuuuuss' - geht nicht!\nDer Vokal ist kurz → ss\n\n💡 MERKE:\n• muss, dass, Fluss, Schluss (kurz → ss)\n• Fuß, Gruß, groß, Straße (lang → ß)\n\n⚠️ SCHWEIZ:\nIn der Schweiz gibt es kein ß!\nDort schreibt man immer ss.\n\n✅ Antwort: Ich muss gehen.",
+    "tags": [
+      "MSA",
+      "orthography",
+      "ss"
+    ]
+  },
+  {
+    "id": "DE_ORTHO_SS_SZ_002",
+    "subject": "DE",
+    "topic_id": "DE_ORTHO_SS_SZ",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Welche Schreibweise ist richtig?",
+    "payload": {
+      "choices": [
+        "Die Strasse ist lang.",
+        "Die Straße ist lang.",
+        "Die Strase ist lang.",
+        "Die Strasse ist Lang."
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "Die Straße ist lang."
+    },
+    "explanation": "🎯 WAS IST DAS?\nss oder ß nach langem Vokal.\n\n📖 DIE REGEL:\nNach LANGEM Vokal oder Diphthong → ß\n\n✏️ TEST für 'Straße':\nWie sprichst du das 'a'?\n→ lang! (Straaaaaße) Also: ß\n\n🎁 VORSTELLUNG:\nKannst du den Vokal lang ziehen?\n• Straaaaaße → JA → ß\n• muuuuuss → NEIN → ss\n\n💡 DIPHTHONGE (Doppellaute):\nau, ei, eu → danach immer ß!\n• draußen, heißen, reißen\n\n✅ Antwort: Die Straße ist lang.",
+    "tags": [
+      "MSA",
+      "orthography",
+      "sz"
+    ]
+  },
+  {
+    "id": "DE_ORTHO_SS_SZ_003",
+    "subject": "DE",
+    "topic_id": "DE_ORTHO_SS_SZ",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "Welches Wortpaar ist BEIDE Male richtig geschrieben?",
+    "payload": {
+      "choices": [
+        "Fluss / Fuß",
+        "Fluss / Fuss",
+        "Fluß / Fuß",
+        "Fluß / Fuss"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "Fluss / Fuß"
+    },
+    "explanation": "🎯 WAS IST DAS?\nss vs ß - zwei Wörter im Vergleich.\n\n📖 ANALYSE:\n• Fluss: kurzes u (Flŭss) → ss ✓\n• Fuß: langes u (Fuuuß) → ß ✓\n\n✏️ AUSSPRACHE:\nFluss → schnell, kurz\nFuß → gedehnt, lang\n\n💡 ESELSBRÜCKE:\nKurzer Vokal = kurzer Weg = ss (zwei Buchstaben nebeneinander)\nLanger Vokal = langer Weg = ß (ein einzelner Buchstabe)\n\n⚠️ TYPISCHE FEHLER:\n• 'dass' (kurz) wird oft mit ß geschrieben\n• 'groß' (lang) wird oft mit ss geschrieben\n\n✅ Antwort: Fluss / Fuß",
+    "tags": [
+      "MSA",
+      "orthography",
+      "ss_sz"
+    ]
+  },
+  {
+    "id": "DE_ORTHO_DOUBLE_001",
+    "subject": "DE",
+    "topic_id": "DE_ORTHO_DOUBLE",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Welche Schreibweise ist richtig?",
+    "payload": {
+      "choices": [
+        "kommen",
+        "komen",
+        "kommmen",
+        "Kommen"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "kommen"
+    },
+    "explanation": "🎯 WAS IST DAS?\nDoppelkonsonanten nach kurzem Vokal.\n\n📖 DIE REGEL:\nNach KURZEM Vokal folgt oft ein Doppelkonsonant.\n\n✏️ TEST für 'kommen':\nWie sprichst du das 'o'?\n→ kurz! (nicht 'koooomen')\nAlso: Doppel-m!\n\n🎁 VORSTELLUNG:\nDer kurze Vokal braucht 'Schutz'.\nDie Doppelkonsonanten sind wie eine Mauer.\n\n💡 MEHR BEISPIELE:\n• Sommer, Sonne, Tanne\n• rennen, Wasser, Butter\n• Mutter, Teller, fallen\n\n⚠️ ABER:\nNach langem Vokal: KEIN Doppelkonsonant!\n• Vater (langes a), Boden (langes o)\n\n✅ Antwort: kommen",
+    "tags": [
+      "MSA",
+      "orthography",
+      "double"
+    ]
+  },
+  {
+    "id": "DE_GRAM_WORD_CLASSES_001",
+    "subject": "DE",
+    "topic_id": "DE_GRAM_WORD_CLASSES",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Welche Wortart ist 'schnell' in: 'Der Zug ist schnell.'?",
+    "payload": {
+      "choices": [
+        "Verb",
+        "Adjektiv",
+        "Nomen",
+        "Artikel"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "Adjektiv"
+    },
+    "explanation": "🎯 WAS IST DAS?\nWortarten erkennen - Adjektive.\n\n📖 DIE BEGRIFFE:\n• Adjektiv = WIE-Wort (beschreibt Eigenschaften)\n• Nomen = Namenwort (Personen, Dinge)\n• Verb = Tu-Wort (Handlungen)\n• Artikel = Begleiter (der, die, das)\n\n✏️ TEST:\nWie ist der Zug? → schnell\n'Wie?' = Frage nach Adjektiv!\n\n🎁 ADJEKTIV-ERKENNUNG:\n• Kann vor einem Nomen stehen: der schnelle Zug\n• Kann gesteigert werden: schnell - schneller - am schnellsten\n• Beantwortet 'Wie?'\n\n💡 MERKE:\nAdjektive beschreiben EIGENSCHAFTEN.\n\n✅ Antwort: Adjektiv",
+    "tags": [
+      "MSA",
+      "grammar",
+      "word_class"
+    ]
+  },
+  {
+    "id": "DE_GRAM_WORD_CLASSES_002",
+    "subject": "DE",
+    "topic_id": "DE_GRAM_WORD_CLASSES",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Welche Wortart ist 'gehen' in: 'Ich muss jetzt gehen.'?",
+    "payload": {
+      "choices": [
+        "Nomen",
+        "Adjektiv",
+        "Verb",
+        "Präposition"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "Verb"
+    },
+    "explanation": "🎯 WAS IST DAS?\nWortarten erkennen - Verben.\n\n📖 DIE BEGRIFFE:\n• Verb = Tu-Wort (drückt Handlungen oder Zustände aus)\n• Infinitiv = Grundform des Verbs (gehen, laufen, sein)\n\n✏️ TEST:\nWas tut jemand? → gehen\n'Was tun?' = Frage nach Verb!\n\n🎁 VERB-ERKENNUNG:\n• Kann konjugiert werden: ich gehe, du gehst, er geht\n• Endet im Infinitiv oft auf -en: gehen, laufen, spielen\n• Beantwortet 'Was tut/macht jemand?'\n\n💡 VERBEN KÖNNEN:\n• Handlungen: laufen, schreiben, essen\n• Zustände: sein, haben, werden\n• Vorgänge: wachsen, schmelzen\n\n✅ Antwort: Verb",
+    "tags": [
+      "MSA",
+      "grammar",
+      "word_class"
+    ]
+  },
+  {
+    "id": "DE_GRAM_WORD_CLASSES_003",
+    "subject": "DE",
+    "topic_id": "DE_GRAM_WORD_CLASSES",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Welche Wortart ist 'Tisch' in: 'Der Tisch ist neu.'?",
+    "payload": {
+      "choices": [
+        "Verb",
+        "Adjektiv",
+        "Nomen",
+        "Adverb"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "Nomen"
+    },
+    "explanation": "🎯 WAS IST DAS?\nWortarten erkennen - Nomen.\n\n📖 DIE BEGRIFFE:\n• Nomen = Namenwort, Hauptwort\n• Bezeichnet: Personen, Tiere, Dinge, Gefühle\n\n✏️ ERKENNUNGSMERKMALE:\n• GROSS geschrieben\n• Hat einen Artikel: DER Tisch\n• Hat einen Plural: die Tische\n\n🎁 NOMEN-TEST:\nKann ich 'der/die/das' davor setzen?\nDer Tisch → JA! → Nomen\n\n💡 NOMEN-TYPEN:\n• Konkret: Tisch, Hund, Apfel\n• Abstrakt: Liebe, Glück, Freiheit\n• Eigennamen: Berlin, Anna, Montag\n\n⚠️ ACHTUNG:\nNomen sind IMMER gross!\n\n✅ Antwort: Nomen",
+    "tags": [
+      "MSA",
+      "grammar",
+      "word_class"
+    ]
+  },
+  {
+    "id": "DE_GRAM_TENSES_001",
+    "subject": "DE",
+    "topic_id": "DE_GRAM_TENSES",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "Welche Zeitform ist: 'Ich ging gestern nach Hause.'?",
+    "payload": {
+      "choices": [
+        "Präsens",
+        "Perfekt",
+        "Präteritum",
+        "Futur I"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "Präteritum"
+    },
+    "explanation": "🎯 WAS IST DAS?\nZeitformen erkennen - Präteritum.\n\n📖 DIE BEGRIFFE:\n• Präteritum = einfache Vergangenheit\n• Wird in SCHRIFTLICHEN Texten verwendet\n• Auch: 'Imperfekt' oder '1. Vergangenheit'\n\n✏️ ERKENNUNG:\nEIN Wort für die Vergangenheit!\ngehen → ging\n\n🎁 VERGLEICH:\n• Präsens: Ich gehe.\n• Präteritum: Ich ging. (1 Wort)\n• Perfekt: Ich bin gegangen. (2 Wörter)\n\n💡 TYPISCHE PRÄTERITUM-ENDUNGEN:\n• ich ging, ich sah, ich kam (starke Verben)\n• ich spielte, ich machte (schwache Verben: -te)\n\n⚠️ MÜNDLICH: Oft Perfekt statt Präteritum\n'Ich bin gegangen' statt 'Ich ging'\n\n✅ Antwort: Präteritum",
+    "tags": [
+      "MSA",
+      "grammar",
+      "tenses"
+    ]
+  },
+  {
+    "id": "DE_GRAM_TENSES_002",
+    "subject": "DE",
+    "topic_id": "DE_GRAM_TENSES",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Welche Zeitform ist: 'Ich habe das Buch gelesen.'?",
+    "payload": {
+      "choices": [
+        "Präsens",
+        "Perfekt",
+        "Präteritum",
+        "Plusquamperfekt"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "Perfekt"
+    },
+    "explanation": "🎯 WAS IST DAS?\nZeitformen erkennen - Perfekt.\n\n📖 DIE BEGRIFFE:\n• Perfekt = vollendete Gegenwart\n• Wird im MÜNDLICHEN häufig verwendet\n• Auch: '2. Vergangenheit'\n\n✏️ ERKENNUNG:\nZWEI Teile: haben/sein + Partizip II\nhabe ... gelesen\n  ↓         ↓\nHilfsverb  ge-...-en\n\n🎁 STRUKTUR:\n[haben/sein] + [ge-STAMM-t/en]\n• Ich habe gespielt\n• Ich bin gegangen\n\n💡 WANN 'sein'?\nBei Bewegung/Zustandsänderung:\n• gehen, laufen, fahren → bin gegangen\n• schlafen, spielen → habe geschlafen\n\n✅ Antwort: Perfekt",
+    "tags": [
+      "MSA",
+      "grammar",
+      "tenses"
+    ]
+  },
+  {
+    "id": "DE_GRAM_TENSES_003",
+    "subject": "DE",
+    "topic_id": "DE_GRAM_TENSES",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Welche Zeitform ist: 'Morgen werde ich ins Kino gehen.'?",
+    "payload": {
+      "choices": [
+        "Präsens",
+        "Perfekt",
+        "Präteritum",
+        "Futur I"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "Futur I"
+    },
+    "explanation": "🎯 WAS IST DAS?\nZeitformen erkennen - Futur I.\n\n📖 DIE BEGRIFFE:\n• Futur I = Zukunft\n• Drückt aus, was passieren WIRD\n\n✏️ ERKENNUNG:\n'werden' + Infinitiv\nwerde ... gehen\n  ↓         ↓\nwerde   Infinitiv\n\n🎁 STRUKTUR:\n[werden] + [Infinitiv]\n• Ich werde spielen\n• Du wirst kommen\n• Er wird lernen\n\n💡 AUCH MÖGLICH:\nPräsens + Zeitangabe für Zukunft:\n'Morgen gehe ich ins Kino.'\n(Häufiger im Deutschen!)\n\n⚠️ ACHTUNG:\nFutur I kann auch Vermutung ausdrücken:\n'Er wird wohl krank sein.'\n\n✅ Antwort: Futur I",
+    "tags": [
+      "MSA",
+      "grammar",
+      "tenses"
+    ]
+  },
+  {
+    "id": "DE_GRAM_SENTENCE_TYPES_001",
+    "subject": "DE",
+    "topic_id": "DE_GRAM_SENTENCE_TYPES",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Was ist ein Hauptsatz?",
+    "payload": {
+      "choices": [
+        "Ein Satz, der alleine stehen kann",
+        "Ein Satz, der mit 'weil' beginnt",
+        "Ein Satz ohne Verb",
+        "Ein Satz mit Fragezeichen"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "Ein Satz, der alleine stehen kann"
+    },
+    "explanation": "🎯 WAS IST DAS?\nHauptsatz vs. Nebensatz.\n\n📖 DIE BEGRIFFE:\n• Hauptsatz = kann ALLEINE stehen, ergibt Sinn\n• Nebensatz = braucht einen Hauptsatz, um Sinn zu ergeben\n\n🎁 BEISPIELE:\n• 'Ich gehe nach Hause.' → Hauptsatz ✓\n  (Ergibt alleine Sinn!)\n• 'weil ich müde bin' → Nebensatz ✗\n  (Was ist mit 'weil ich müde bin'? Unvollständig!)\n\n✏️ ERKENNUNGSMERKMALE:\nHauptsatz: Verb an Position 2\nNebensatz: Verb am ENDE + Signalwort\n\n💡 SIGNALWÖRTER für Nebensätze:\nweil, dass, wenn, obwohl, als, damit\n\n✅ Antwort: Ein Satz, der alleine stehen kann",
+    "tags": [
+      "MSA",
+      "grammar",
+      "sentence_types"
+    ]
+  },
+  {
+    "id": "DE_READ_CORE_001",
+    "subject": "DE",
+    "topic_id": "DE_READ_CORE",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "In einem Sachtext werden 3 Gründe genannt, warum Jugendliche weniger schlafen. Was ist am ehesten die Kernaussage?",
+    "payload": {
+      "choices": [
+        "Jugendliche schlafen weniger, weil mehrere Alltagsfaktoren zusammenwirken.",
+        "Jugendliche schlafen weniger, weil sie faul sind.",
+        "Jugendliche schlafen weniger, weil Schulen zu leicht sind.",
+        "Jugendliche schlafen weniger, weil Sport verboten ist."
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "Jugendliche schlafen weniger, weil mehrere Alltagsfaktoren zusammenwirken."
+    },
+    "explanation": "🎯 WAS IST DAS?\nKernaussage finden - die HAUPTBOTSCHAFT eines Textes.\n\n📖 DIE BEGRIFFE:\n• Kernaussage = Was will der Text vor allem sagen?\n• Nicht: einzelne Details oder Meinungen\n\n✏️ WIE FINDE ICH DIE KERNAUSSAGE?\n1. Was ist das THEMA? (Schlafmangel bei Jugendlichen)\n2. Was sagt der Text INSGESAMT dazu? (mehrere Faktoren)\n3. Keine Wertung, neutral formuliert!\n\n🎁 AUSSCHLUSS:\n• 'weil sie faul sind' → Wertung, zu einseitig\n• 'Schulen zu leicht' → im Text nicht erwähnt\n• 'Sport verboten' → im Text nicht erwähnt\n\n💡 KERNAUSSAGE-MERKMALE:\n• Neutral formuliert\n• Fasst den GESAMTEN Text zusammen\n• Keine erfundenen Details\n\n✅ Antwort: ...weil mehrere Alltagsfaktoren zusammenwirken.",
+    "tags": [
+      "MSA",
+      "reading",
+      "main_idea"
+    ]
+  },
+  {
+    "id": "DE_READ_CORE_002",
+    "subject": "DE",
+    "topic_id": "DE_READ_CORE",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "Lies: 'Laut einer Studie nutzen 95% der Jugendlichen täglich ihr Smartphone. Experten warnen vor den Folgen für die Konzentration.' Was ist die Textabsicht?",
+    "payload": {
+      "choices": [
+        "Smartphones verkaufen",
+        "Über ein Problem informieren",
+        "Jugendliche loben",
+        "Experten kritisieren"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "Über ein Problem informieren"
+    },
+    "explanation": "🎯 WAS IST DAS?\nTextabsicht erkennen - WARUM wurde der Text geschrieben?\n\n📖 TEXTABSICHTEN:\n• Informieren = Fakten mitteilen\n• Appellieren = zum Handeln auffordern\n• Unterhalten = amüsieren\n• Überzeugen = Meinung ändern\n\n✏️ ANALYSE:\n• 'Laut einer Studie' → Fakten, sachlich\n• 'Experten warnen' → Problem wird benannt\n→ Text INFORMIERT über ein Problem!\n\n🎁 AUSSCHLUSS:\n• 'verkaufen' → keine Werbung\n• 'loben' → eher Warnung\n• 'kritisieren' → Experten werden zitiert, nicht kritisiert\n\n💡 SIGNALWÖRTER für Information:\nStudie, Prozent, Experten, Forscher\n\n✅ Antwort: Über ein Problem informieren",
+    "tags": [
+      "MSA",
+      "reading",
+      "intention"
+    ]
+  },
+  {
+    "id": "DE_WRITE_REPHRASE_001",
+    "subject": "DE",
+    "topic_id": "DE_WRITE_REPHRASE",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "Welche Umformulierung hat die gleiche Bedeutung wie: 'Er hat keine Zeit.'?",
+    "payload": {
+      "choices": [
+        "Er ist nicht da.",
+        "Er ist beschäftigt.",
+        "Er ist müde.",
+        "Er ist froh."
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "Er ist beschäftigt."
+    },
+    "explanation": "🎯 WAS IST DAS?\nSätze umformulieren - gleiche Bedeutung, andere Worte.\n\n📖 ANALYSE:\n'Er hat keine Zeit' bedeutet:\n→ Er kann sich nicht um etwas kümmern\n→ Er hat andere Dinge zu tun\n→ Er ist BESCHÄFTIGT!\n\n✏️ AUSSCHLUSS:\n• 'nicht da' = physisch abwesend (≠ keine Zeit)\n• 'müde' = erschöpft (≠ keine Zeit)\n• 'froh' = glücklich (≠ keine Zeit)\n\n💡 UMFORMULIEREN HEISST:\n• Gleicher SINN\n• Andere WÖRTER\n• Passendes SYNONYM finden\n\n⚠️ VORSICHT:\nÄhnlich klingende Wörter sind nicht immer Synonyme!\n\n✅ Antwort: Er ist beschäftigt.",
+    "tags": [
+      "MSA",
+      "writing",
+      "rephrase"
+    ]
+  },
+  {
+    "id": "DE_WRITE_REPHRASE_002",
+    "subject": "DE",
+    "topic_id": "DE_WRITE_REPHRASE",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "Formuliere um: 'Das Wetter ist schlecht.' → 'Es...'",
+    "payload": {
+      "choices": [
+        "Es regnet.",
+        "Es ist warm.",
+        "Es ist Sommer.",
+        "Es ist Tag."
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "Es regnet."
+    },
+    "explanation": "🎯 WAS IST DAS?\nUmformulierung mit konkretem Beispiel.\n\n📖 ANALYSE:\n'schlechtes Wetter' = konkretes Beispiel gesucht\n→ Regen ist typisch für schlechtes Wetter!\n\n✏️ AUSSCHLUSS:\n• 'warm' = eher gutes Wetter\n• 'Sommer' = Jahreszeit, nicht Wetterzustand\n• 'Tag' = Tageszeit, nicht Wetter\n\n💡 TECHNIK:\nAbstraktes Wort → konkretes Beispiel\n• schlecht → regnet, stürmt\n• gut → sonnig, warm\n• kalt → friert, schneit\n\n⚠️ KONTEXT BEACHTEN:\n'Schlecht' kann je nach Kontext anderes bedeuten!\n\n✅ Antwort: Es regnet.",
+    "tags": [
+      "MSA",
+      "writing",
+      "rephrase"
+    ]
+  },
+  {
+    "id": "DE_PUNCT_SPEECH_001",
+    "subject": "DE",
+    "topic_id": "DE_PUNCT_SPEECH",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "Welcher Satz mit direkter Rede ist korrekt?",
+    "payload": {
+      "choices": [
+        "Sie sagte: \"Ich komme morgen.\"",
+        "Sie sagte \"Ich komme morgen\"",
+        "Sie sagte: Ich komme morgen.",
+        "\"Sie sagte: Ich komme morgen.\""
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "Sie sagte: \"Ich komme morgen.\""
+    },
+    "explanation": "🎯 WAS IST DAS?\nDirekte Rede - jemandes Worte wörtlich wiedergeben.\n\n📖 DIE REGELN:\n1. Doppelpunkt nach dem Redebegleitsatz\n2. Anführungszeichen um die wörtliche Rede\n3. Punkt/Fragezeichen VOR dem letzten Anführungszeichen\n\n✏️ STRUKTUR:\nSie sagte: \"Ich komme morgen.\"\n        ↑  ↑              ↑  ↑\n    Doppelpunkt  Anf.zeichen  Punkt  Anf.zeichen\n\n💡 VARIANTEN:\n• \"Ich komme\", sagte sie. (Rede zuerst → Komma)\n• \"Ich komme!\" sagte sie. (Bei ! oder ? kein Komma)\n\n⚠️ TYPISCHE FEHLER:\n• Doppelpunkt vergessen\n• Anführungszeichen vergessen\n• Punkt nach den Anführungszeichen\n\n✅ Antwort: Sie sagte: \"Ich komme morgen.\"",
+    "tags": [
+      "MSA",
+      "punctuation",
+      "speech"
+    ]
+  },
+  {
+    "id": "DE_ORTHO_CASE_TRAIN_001",
+    "subject": "DE",
+    "topic_id": "DE_ORTHO_CASE",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Welche Rechtschreibstrategie hilft dir bei der Frage: Schreibt man 'eifersüchtig' mit i oder ü?",
+    "payload": {
+      "choices": [
+        "Ich suche ein stammverwandtes Wort",
+        "Ich trenne das Wort",
+        "Ich verlängere das Wort",
+        "Ich bilde den Plural"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "Ich suche ein stammverwandtes Wort"
+    },
+    "explanation": "🎯 WAS IST DAS?\nRechtschreibstrategie: ABLEITEN\n\n📖 DIE REGEL:\nBei der Frage 'e oder ä?' oder 'i oder ü?' hilft die ABLEITUNGSPROBE.\nSuche ein verwandtes Wort!\n\n✏️ BEISPIEL:\neifersüchtig → Sucht (stammverwandtes Wort)\nIn 'Sucht' hört man das U deutlich!\nAlso: eifersüchtig mit Ü\n\n💡 WEITERE BEISPIELE:\n• häufig → Haufen (a → ä)\n• Stärke → stark (a → ä)\n• Bäume → Baum (au → äu)\n\n⚠️ MERKE:\nABLEITEN hilft bei:\n• e oder ä?\n• eu oder äu?\n• i oder ü?\n\n✅ Antwort: Ich suche ein stammverwandtes Wort",
+    "tags": [
+      "MSA",
+      "training",
+      "spelling",
+      "strategy",
+      "Ableiten"
+    ]
+  },
+  {
+    "id": "DE_ORTHO_CASE_TRAIN_002",
+    "subject": "DE",
+    "topic_id": "DE_ORTHO_CASE",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Welche Rechtschreibstrategie hilft dir bei der Frage: Schreibt man 'eifersüchtig' mit g oder k am Ende?",
+    "payload": {
+      "choices": [
+        "Ich verlängere das Wort",
+        "Ich suche ein stammverwandtes Wort",
+        "Ich trenne das Wort",
+        "Ich erkenne ein Suffix"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "Ich verlängere das Wort"
+    },
+    "explanation": "🎯 WAS IST DAS?\nRechtschreibstrategie: VERLÄNGERN\n\n📖 DIE REGEL:\nBei der Frage 'g oder k?', 'd oder t?', 'b oder p?' hilft VERLÄNGERN.\n\n✏️ WIE VERLÄNGERT MAN?\n• Nomen → Plural bilden\n• Verben → Infinitiv bilden\n• Adjektive → steigern (Komparativ)\n\n✏️ BEISPIEL:\neifersüchtig → eifersüchtiger (Komparativ)\nJetzt hört man das G deutlich!\nAlso: eifersüchtig mit G\n\n💡 WEITERE BEISPIELE:\n• Hund oder Hunt? → Hunde → Hund\n• klug oder kluk? → klüger → klug\n• liebt oder liept? → lieben → liebt\n\n⚠️ MERKE:\nVERLÄNGERN hilft bei:\n• g oder k?\n• d oder t?\n• b oder p?\n\n✅ Antwort: Ich verlängere das Wort",
+    "tags": [
+      "MSA",
+      "training",
+      "spelling",
+      "strategy",
+      "Verlängern"
+    ]
+  },
+  {
+    "id": "DE_ORTHO_DOUBLE_TRAIN_001",
+    "subject": "DE",
+    "topic_id": "DE_ORTHO_DOUBLE",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Wie schreibt man das Wort richtig: 'Sterke' oder 'Stärke'?",
+    "payload": {
+      "choices": [
+        "Stärke",
+        "Sterke",
+        "Staerke",
+        "Stercke"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "Stärke"
+    },
+    "explanation": "🎯 WAS IST DAS?\nRechtschreibung mit Umlaut (ä).\n\n📖 DIE STRATEGIE: ABLEITEN\nSuche ein verwandtes Wort ohne Umlaut!\n\n✏️ ABLEITUNG:\nStärke → stark\nIn 'stark' steht ein A.\nAlso wird 'Stärke' mit Ä geschrieben!\n\n💡 REGEL:\nWenn das Grundwort ein A hat,\nschreibt man im abgeleiteten Wort Ä (nicht E).\n\n🎁 WEITERE BEISPIELE:\n• Bäcker → backen\n• Händler → Handel\n• Länge → lang\n• kälter → kalt\n\n⚠️ ACHTUNG:\nAuch wenn Ä und E gleich klingen,\nmusst du das Grundwort suchen!\n\n✅ Antwort: Stärke",
+    "tags": [
+      "MSA",
+      "training",
+      "spelling",
+      "Umlaut",
+      "Ableiten"
+    ]
+  },
+  {
+    "id": "DE_ORTHO_DOUBLE_TRAIN_002",
+    "subject": "DE",
+    "topic_id": "DE_ORTHO_DOUBLE",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Wie schreibt man das Wort richtig: 'heufig' oder 'häufig'?",
+    "payload": {
+      "choices": [
+        "häufig",
+        "heufig",
+        "haufig",
+        "häuffig"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "häufig"
+    },
+    "explanation": "🎯 WAS IST DAS?\nRechtschreibung mit äu oder eu.\n\n📖 DIE STRATEGIE: ABLEITEN\nSuche ein verwandtes Wort!\n\n✏️ ABLEITUNG:\nhäufig → Haufen\nIn 'Haufen' steht AU.\nAlso wird 'häufig' mit ÄU geschrieben!\n\n💡 REGEL:\nWenn das Grundwort AU hat,\nschreibt man im abgeleiteten Wort ÄU (nicht EU).\n\n🎁 WEITERE BEISPIELE:\n• Bäume → Baum (au → äu)\n• träumen → Traum (au → äu)\n• Mäuse → Maus (au → äu)\n• läuft → laufen (au → äu)\n\n⚠️ ABER:\n• heute → kein Grundwort mit au → EU\n• neu → kein Grundwort mit au → EU\n\n✅ Antwort: häufig",
+    "tags": [
+      "MSA",
+      "training",
+      "spelling",
+      "Umlaut",
+      "äu_eu"
+    ]
+  },
+  {
+    "id": "DE_GRAM_WORD_CLASSES_TRAIN_001",
+    "subject": "DE",
+    "topic_id": "DE_GRAM_WORD_CLASSES",
+    "difficulty": 1,
+    "qtype": "MCQ",
+    "prompt": "Welches Stilmittel wird hier verwendet? 'Veni, vidi, vici' (Ich kam, ich sah, ich siegte)",
+    "payload": {
+      "choices": [
+        "Alliteration",
+        "Anapher",
+        "Antithese",
+        "Metapher"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "Alliteration"
+    },
+    "explanation": "🎯 WAS IST DAS?\nStilmittel erkennen: ALLITERATION\n\n📖 DEFINITION:\nAlliteration = Mindestens zwei aufeinanderfolgende Wörter beginnen mit dem GLEICHEN ANFANGSLAUT.\n\n✏️ ANALYSE:\nVeni, Vidi, Vici\n↓     ↓     ↓\nV     V     V\n\nAlle drei Wörter beginnen mit V!\n= Alliteration\n\n💡 WEITERE BEISPIELE:\n• 'frisch und fröhlich' (f-f)\n• 'Kind und Kegel' (k-k)\n• 'Mann und Maus' (m-m)\n• 'mit Rat und Tat' (r-t? Nein!)\n\n⚠️ WICHTIG:\nEs geht um den LAUT, nicht den Buchstaben!\n'Chemie und Charme' ist KEINE Alliteration\n(Ch klingt unterschiedlich)\n\n✅ Antwort: Alliteration",
+    "tags": [
+      "MSA",
+      "training",
+      "Stilmittel",
+      "Alliteration",
+      "rhetoric"
+    ]
+  },
+  {
+    "id": "DE_GRAM_WORD_CLASSES_TRAIN_002",
+    "subject": "DE",
+    "topic_id": "DE_GRAM_WORD_CLASSES",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Welches Stilmittel wird hier verwendet? 'Wer war das? Wer hat das getan? Wer ist schuld?'",
+    "payload": {
+      "choices": [
+        "Anapher",
+        "Alliteration",
+        "Antithese",
+        "Asyndeton"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "Anapher"
+    },
+    "explanation": "🎯 WAS IST DAS?\nStilmittel erkennen: ANAPHER\n\n📖 DEFINITION:\nAnapher = Wiederholung eines Wortes oder einer Wortgruppe am ANFANG aufeinanderfolgender Sätze.\n\n✏️ ANALYSE:\n'Wer war das?'\n'Wer hat das getan?'\n'Wer ist schuld?'\n ↓\nJeder Satz beginnt mit 'Wer'!\n= Anapher\n\n💡 WEITERE BEISPIELE:\n• 'Ich fordere Mut. Ich fordere Tatkraft. Ich fordere Einheit.'\n• 'Das Wasser rauscht. Das Wasser schwoll.'\n\n⚠️ UNTERSCHIED ZUR ALLITERATION:\nAlliteration = gleicher Anfangslaut in Wörtern\nAnapher = gleiches Wort am Satzanfang\n\n🎭 WIRKUNG:\nAnaphen verstärken die Aussage\nund erzeugen einen Rhythmus.\n\n✅ Antwort: Anapher",
+    "tags": [
+      "MSA",
+      "training",
+      "Stilmittel",
+      "Anapher",
+      "rhetoric"
+    ]
+  },
+  {
+    "id": "DE_GRAM_WORD_CLASSES_TRAIN_003",
+    "subject": "DE",
+    "topic_id": "DE_GRAM_WORD_CLASSES",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Welches Stilmittel wird hier verwendet? 'Jung und Alt kamen zusammen.'",
+    "payload": {
+      "choices": [
+        "Antithese",
+        "Anapher",
+        "Alliteration",
+        "Asyndeton"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "Antithese"
+    },
+    "explanation": "🎯 WAS IST DAS?\nStilmittel erkennen: ANTITHESE\n\n📖 DEFINITION:\nAntithese = Gegenüberstellung von GEGENSÄTZEN.\n\n✏️ ANALYSE:\n'Jung und Alt'\n  ↓       ↓\nGegensatz!\nJung ≠ Alt\n= Antithese\n\n💡 WEITERE BEISPIELE:\n• 'Gut und Böse'\n• 'Himmel und Hölle'\n• 'Krieg und Frieden'\n• 'Tag und Nacht'\n• 'Arm und Reich'\n\n🎭 WIRKUNG:\nAntithesen betonen Kontraste\nund machen Texte lebendiger.\n\n⚠️ VERWECHSLUNGSGEFAHR:\n'Wasser, Luft, Erde, Feuer'\n= KEIN Gegensatz, sondern Aufzählung!\n\n✅ Antwort: Antithese",
+    "tags": [
+      "MSA",
+      "training",
+      "Stilmittel",
+      "Antithese",
+      "rhetoric"
+    ]
+  },
+  {
+    "id": "DE_GRAM_WORD_CLASSES_TRAIN_004",
+    "subject": "DE",
+    "topic_id": "DE_GRAM_WORD_CLASSES",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Welches Stilmittel wird hier verwendet? 'Wasser, Luft, Erde, Feuer - das sind die Elemente.'",
+    "payload": {
+      "choices": [
+        "Asyndeton",
+        "Antithese",
+        "Anapher",
+        "Alliteration"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "Asyndeton"
+    },
+    "explanation": "🎯 WAS IST DAS?\nStilmittel erkennen: ASYNDETON\n\n📖 DEFINITION:\nAsyndeton = Aufzählung OHNE Bindewörter (wie 'und', 'oder').\n\n✏️ ANALYSE:\n'Wasser, Luft, Erde, Feuer'\n       ↓\nKommas statt 'und'!\n= Asyndeton\n\nNormal wäre:\n'Wasser, Luft, Erde UND Feuer'\n\n💡 WEITERE BEISPIELE:\n• 'Er kam, sah, siegte.' (statt: kam, sah und siegte)\n• 'Groß, klein, dick, dünn - alle waren da.'\n\n🎭 WIRKUNG:\n• Erzeugt Tempo und Dynamik\n• Wirkt eindringlich\n• Hebt die Aufzählung hervor\n\n⚠️ GEGENTEIL:\nPolysyndeton = Aufzählung MIT vielen 'und'\n'Wasser und Luft und Erde und Feuer'\n\n✅ Antwort: Asyndeton",
+    "tags": [
+      "MSA",
+      "training",
+      "Stilmittel",
+      "Asyndeton",
+      "rhetoric"
+    ]
+  },
+  {
+    "id": "DE_WRITE_REPHRASE_TRAIN_001",
+    "subject": "DE",
+    "topic_id": "DE_WRITE_REPHRASE",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Wie kann man den umgangssprachlichen Satz 'Das war ihr ausgeleierter Rollkragenpulli' in Standardsprache umformulieren?",
+    "payload": {
+      "choices": [
+        "Das war ihr oft getragener Rollkragenpullover",
+        "Das war ihr kaputter Rolli",
+        "Das war ihr alter Pulli mit Rollkragen",
+        "Das war ihr abgenutzter Pulli"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "Das war ihr oft getragener Rollkragenpullover"
+    },
+    "explanation": "🎯 WAS IST DAS?\nUmgangssprache in Standardsprache umwandeln.\n\n📖 ANALYSE DES SATZES:\n\n'ausgeleiert' → Alltagswort/umgangssprachlich\nStandardsprache: 'oft getragen', 'abgetragen'\n\n'Rollkragenpulli' → Abkürzung, Alltagswort\nStandardsprache: 'Rollkragenpullover'\n\n✏️ UMFORMULIERUNG:\nOriginal: 'Das war ihr ausgeleierter Rollkragenpulli'\nStandard: 'Das war ihr oft getragener Rollkragenpullover'\n\n💡 MERKMALE DER STANDARDSPRACHE:\n• Keine Abkürzungen (Pulli → Pullover)\n• Sachliche Ausdrücke (ausgeleiert → oft getragen)\n• Keine Slang-Wörter\n• Vollständige Wörter\n\n⚠️ DIE ANDEREN ANTWORTEN:\n• 'Rolli' ist auch umgangssprachlich\n• 'Pulli' ist eine Abkürzung\n\n✅ Antwort: Das war ihr oft getragener Rollkragenpullover",
+    "tags": [
+      "MSA",
+      "training",
+      "Standardsprache",
+      "Umgangssprache",
+      "rephrase"
+    ]
+  },
+  {
+    "id": "DE_PUNCT_COMMA_MAIN_SUB_TRAIN_001",
+    "subject": "DE",
+    "topic_id": "DE_PUNCT_COMMA_MAIN_SUB",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Wo muss ein Komma gesetzt werden? 'Ich gehe nach Hause weil ich müde bin.'",
+    "payload": {
+      "choices": [
+        "Ich gehe nach Hause, weil ich müde bin.",
+        "Ich gehe, nach Hause weil ich müde bin.",
+        "Ich gehe nach Hause weil, ich müde bin.",
+        "Es wird kein Komma benötigt."
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "Ich gehe nach Hause, weil ich müde bin."
+    },
+    "explanation": "🎯 WAS IST DAS?\nKomma zwischen Haupt- und Nebensatz.\n\n📖 DIE REGEL:\nVor NEBENSATZ-EINLEITENDEN WÖRTERN steht ein Komma!\n\n✏️ ANALYSE:\n'Ich gehe nach Hause' = Hauptsatz (kann alleine stehen)\n'weil ich müde bin' = Nebensatz (beginnt mit 'weil')\n\nZwischen Hauptsatz und Nebensatz → KOMMA!\n\n💡 SIGNALWÖRTER FÜR NEBENSÄTZE:\n• weil, da, obwohl, wenn, falls\n• dass, ob\n• der, die, das (Relativpronomen)\n• als, nachdem, bevor, während\n\n🎁 TIPP:\nDas Verb steht im Nebensatz am ENDE!\n'...weil ich müde BIN' ✓\n\n✅ Antwort: Ich gehe nach Hause, weil ich müde bin.",
+    "tags": [
+      "MSA",
+      "training",
+      "comma",
+      "Nebensatz",
+      "Hauptsatz"
+    ]
+  },
+  {
+    "id": "DE_GRAM_TENSES_TRAIN_001",
+    "subject": "DE",
+    "topic_id": "DE_GRAM_TENSES",
+    "difficulty": 1,
+    "qtype": "MCQ",
+    "prompt": "In welcher Zeitform steht der Satz: 'Ich habe gestern Fußball gespielt.'?",
+    "payload": {
+      "choices": [
+        "Perfekt",
+        "Präteritum",
+        "Präsens",
+        "Futur"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "Perfekt"
+    },
+    "explanation": "🎯 WAS IST DAS?\nZeitform (Tempus) erkennen.\n\n📖 ERKENNUNGSMERKMAL PERFEKT:\nHilfsverb (haben/sein) + Partizip II (ge-...-t/en)\n\n✏️ ANALYSE:\n'Ich HABE gestern Fußball GESPIELT.'\n     ↓                      ↓\n  Hilfsverb              Partizip II\n  (haben)               (ge-spiel-t)\n\n= PERFEKT!\n\n💡 ÜBERSICHT ZEITFORMEN:\n• Präsens: Ich spiele. (jetzt)\n• Präteritum: Ich spielte. (erzählende Vergangenheit)\n• Perfekt: Ich habe gespielt. (Vergangenheit, gesprochen)\n• Futur: Ich werde spielen. (Zukunft)\n\n⚠️ UNTERSCHIED PERFEKT vs. PRÄTERITUM:\nPerfekt: 'Ich habe gespielt' (mündlich bevorzugt)\nPräteritum: 'Ich spielte' (schriftlich/Erzählung)\n\n✅ Antwort: Perfekt",
+    "tags": [
+      "MSA",
+      "training",
+      "tenses",
+      "Perfekt",
+      "grammar"
+    ]
+  },
+  {
+    "id": "DE_READ_CORE_TRAIN_001",
+    "subject": "DE",
+    "topic_id": "DE_READ_CORE",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Was ist die KERNAUSSAGE eines Textes?",
+    "payload": {
+      "choices": [
+        "Die zentrale Botschaft oder Hauptidee des Textes",
+        "Der erste Satz des Textes",
+        "Eine wörtliche Textstelle",
+        "Die Überschrift des Textes"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "Die zentrale Botschaft oder Hauptidee des Textes"
+    },
+    "explanation": "🎯 WAS IST DAS?\nDefinition der Kernaussage.\n\n📖 KERNAUSSAGE =\nDie ZENTRALE BOTSCHAFT oder HAUPTIDEE,\ndie der Autor vermitteln möchte.\n\n✏️ WIE FINDET MAN SIE?\n1. Lies den Text ganz durch\n2. Frage: 'Worum geht es hauptsächlich?'\n3. Fasse in 1-2 Sätzen zusammen\n4. Prüfe: Deckt deine Zusammenfassung das Wichtigste ab?\n\n💡 DIE KERNAUSSAGE IST NICHT:\n• Der erste Satz (kann Einleitung sein)\n• Die Überschrift (ist oft nur ein Hinweis)\n• Ein wörtliches Zitat (ist nur ein Teil)\n\n🎁 BEISPIEL:\nText über Umweltschutz mit vielen Details.\nKernaussage: 'Jeder kann durch kleine Handlungen zum Umweltschutz beitragen.'\n\n✅ Antwort: Die zentrale Botschaft oder Hauptidee des Textes",
+    "tags": [
+      "MSA",
+      "training",
+      "reading",
+      "Kernaussage",
+      "comprehension"
+    ]
+  },
+  {
+    "id": "DE_GRAM_TENSES_010",
+    "subject": "DE",
+    "topic_id": "DE_GRAM_TENSES",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "In welchem Modus steht der Satz: 'Könntest du vielleicht dort weggehen?'",
+    "payload": {
+      "choices": [
+        "Konjunktiv II",
+        "Indikativ",
+        "Konjunktiv I",
+        "Imperativ"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "Konjunktiv II"
+    },
+    "explanation": "🎯 DIE VIER MODI\n\n📖 KONJUNKTIV II:\nWird verwendet für:\n• Höfliche Bitten ('könntest du...')\n• Irreale/hypothetische Situationen\n• Wünsche\n\n✏️ ERKENNUNGSZEICHEN:\n'könntest' ist die Konjunktiv II-Form von 'können'\n\n💡 VERGLEICH:\n• Indikativ: 'Du gehst weg.'\n• Konjunktiv II: 'Könntest du weggehen?'\n• Imperativ: 'Geh weg!'\n\n✅ Antwort: Konjunktiv II",
+    "tags": [
+      "MSA",
+      "grammar",
+      "modes",
+      "konjunktiv"
+    ]
+  },
+  {
+    "id": "DE_GRAM_TENSES_011",
+    "subject": "DE",
+    "topic_id": "DE_GRAM_TENSES",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "In welchem Modus steht der Satz: 'Ich suche die Toiletten.'",
+    "payload": {
+      "choices": [
+        "Indikativ",
+        "Konjunktiv I",
+        "Konjunktiv II",
+        "Imperativ"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "Indikativ"
+    },
+    "explanation": "🎯 INDIKATIV - WIRKLICHKEITSFORM\n\n📖 DER INDIKATIV:\n• Drückt Realität und Fakten aus\n• Für tatsächliche Aussagen\n• Die 'normale' Verbform\n\n✏️ BEISPIEL:\n'Ich suche die Toiletten.'\n→ Eine direkte Aussage über etwas Reales\n\n💡 ERKENNUNGSZEICHEN:\nKeine Konjunktiv-Endungen, keine Aufforderung\n\n✅ Antwort: Indikativ",
+    "tags": [
+      "MSA",
+      "grammar",
+      "modes",
+      "indikativ"
+    ]
+  },
+  {
+    "id": "DE_GRAM_TENSES_012",
+    "subject": "DE",
+    "topic_id": "DE_GRAM_TENSES",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "In welchem Modus steht: 'Auf die Plätze, fertig, los!'",
+    "payload": {
+      "choices": [
+        "Imperativ",
+        "Indikativ",
+        "Konjunktiv I",
+        "Konjunktiv II"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "Imperativ"
+    },
+    "explanation": "🎯 IMPERATIV - BEFEHLSFORM\n\n📖 DER IMPERATIV:\nWird verwendet für:\n• Befehle und Aufforderungen\n• Anweisungen\n• Ratschläge\n\n✏️ ERKENNUNGSZEICHEN:\n• Ausrufezeichen (!)\n• Keine Subjektperson genannt\n• Direkte Aufforderung\n\n💡 BEISPIELE:\n• 'Geh!' / 'Komm!' / 'Los!'\n• 'Auf die Plätze, fertig, los!'\n\n✅ Antwort: Imperativ",
+    "tags": [
+      "MSA",
+      "grammar",
+      "modes",
+      "imperativ"
+    ]
+  },
+  {
+    "id": "DE_GRAM_TENSES_013",
+    "subject": "DE",
+    "topic_id": "DE_GRAM_TENSES",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "In welchem Modus steht: 'Wir seien fleißige Schülerinnen und Schüler.'",
+    "payload": {
+      "choices": [
+        "Konjunktiv I",
+        "Indikativ",
+        "Konjunktiv II",
+        "Imperativ"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "Konjunktiv I"
+    },
+    "explanation": "🎯 KONJUNKTIV I\n\n📖 VERWENDUNG:\n• Indirekte Rede\n• Formelle Ausdrücke\n• Wünsche\n\n✏️ ERKENNUNGSZEICHEN:\n'seien' ist Konjunktiv I von 'sein'\n(Indikativ wäre 'sind')\n\n💡 BILDUNG KONJUNKTIV I:\nInfinitivstamm + Endung -e, -est, -e, -en, -et, -en\n\nVergleich 'sein':\n• Indikativ: wir sind\n• Konjunktiv I: wir seien\n\n✅ Antwort: Konjunktiv I",
+    "tags": [
+      "MSA",
+      "grammar",
+      "modes",
+      "konjunktiv"
+    ]
+  },
+  {
+    "id": "DE_GRAM_WORD_CLASSES_005",
+    "subject": "DE",
+    "topic_id": "DE_GRAM_WORD_CLASSES",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Welches Stilmittel liegt vor: 'Die Sonne lacht am Himmel.'",
+    "payload": {
+      "choices": [
+        "Personifikation",
+        "Metapher",
+        "Vergleich",
+        "Hyperbel"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "Personifikation"
+    },
+    "explanation": "🎯 PERSONIFIKATION\n\n📖 DEFINITION:\nUnbelebten Dingen oder Tieren werden menschliche Eigenschaften zugesprochen.\n\n✏️ ANALYSE:\n'Die Sonne LACHT'\n→ Lachen ist eine menschliche Eigenschaft\n→ Die Sonne (unbelebt) bekommt sie zugesprochen\n\n💡 WEITERE BEISPIELE:\n• 'Der Wind flüstert'\n• 'Die Zeit rennt'\n• 'Die Natur ruft'\n\n✅ Antwort: Personifikation",
+    "tags": [
+      "MSA",
+      "stilmittel",
+      "personifikation"
+    ]
+  },
+  {
+    "id": "DE_GRAM_WORD_CLASSES_006",
+    "subject": "DE",
+    "topic_id": "DE_GRAM_WORD_CLASSES",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Welches Stilmittel liegt vor: 'frisch und fröhlich'",
+    "payload": {
+      "choices": [
+        "Alliteration",
+        "Anapher",
+        "Parallelismus",
+        "Asyndeton"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "Alliteration"
+    },
+    "explanation": "🎯 ALLITERATION\n\n📖 DEFINITION:\nMindestens zwei aufeinanderfolgende Wörter beginnen mit demselben Anfangslaut.\n\n✏️ ANALYSE:\n'Frisch und Fröhlich'\n→ F-F (gleicher Anfangsbuchstabe)\n\n💡 WEITERE BEISPIELE:\n• 'Veni, vidi, vici'\n• 'Mit Mann und Maus'\n• 'Kind und Kegel'\n\n✅ Antwort: Alliteration",
+    "tags": [
+      "MSA",
+      "stilmittel",
+      "alliteration"
+    ]
+  },
+  {
+    "id": "DE_GRAM_WORD_CLASSES_007",
+    "subject": "DE",
+    "topic_id": "DE_GRAM_WORD_CLASSES",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Welches Stilmittel liegt vor: 'klein wie eine Maus'",
+    "payload": {
+      "choices": [
+        "Vergleich",
+        "Metapher",
+        "Personifikation",
+        "Hyperbel"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "Vergleich"
+    },
+    "explanation": "🎯 VERGLEICH\n\n📖 DEFINITION:\nDurch das Wort 'wie' werden zwei Sachverhalte miteinander verknüpft.\n\n✏️ ERKENNUNGSZEICHEN:\nDas Wort 'WIE'!\n\n'klein WIE eine Maus'\n→ Eigenschaft wird mit etwas anderem verglichen\n\n💡 UNTERSCHIED ZUR METAPHER:\n• Vergleich: 'stark WIE ein Löwe'\n• Metapher: 'Er IST ein Löwe' (ohne 'wie')\n\n✅ Antwort: Vergleich",
+    "tags": [
+      "MSA",
+      "stilmittel",
+      "vergleich"
+    ]
+  },
+  {
+    "id": "DE_GRAM_WORD_CLASSES_008",
+    "subject": "DE",
+    "topic_id": "DE_GRAM_WORD_CLASSES",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Welches Stilmittel liegt vor: 'weißer Schimmel'",
+    "payload": {
+      "choices": [
+        "Pleonasmus",
+        "Oxymoron",
+        "Metapher",
+        "Ellipse"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "Pleonasmus"
+    },
+    "explanation": "🎯 PLEONASMUS\n\n📖 DEFINITION:\nDopplung - zwei Begriffe mit derselben Bedeutung werden verwendet.\n\n✏️ ANALYSE:\n'weißer Schimmel'\n→ Ein Schimmel ist IMMER weiß!\n→ 'weiß' ist überflüssig, aber verstärkend\n\n💡 WEITERE BEISPIELE:\n• 'nasser Regen'\n• 'großer Riese'\n• 'runde Kugel'\n\n⚠️ UNTERSCHIED ZUM OXYMORON:\nOxymoron = Widerspruch ('alter Jüngling')\nPleonasmus = Dopplung ('weißer Schimmel')\n\n✅ Antwort: Pleonasmus",
+    "tags": [
+      "MSA",
+      "stilmittel",
+      "pleonasmus"
+    ]
+  },
+  {
+    "id": "DE_GRAM_WORD_CLASSES_009",
+    "subject": "DE",
+    "topic_id": "DE_GRAM_WORD_CLASSES",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "Welches Stilmittel liegt vor: 'Flüssiggas'",
+    "payload": {
+      "choices": [
+        "Oxymoron",
+        "Pleonasmus",
+        "Metapher",
+        "Hyperbel"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "Oxymoron"
+    },
+    "explanation": "🎯 OXYMORON\n\n📖 DEFINITION:\nInnerer Widerspruch - zwei Begriffe, die sich eigentlich ausschließen.\n\n✏️ ANALYSE:\n'Flüssiggas'\n→ Flüssig ↔ Gas sind Gegensätze!\n→ Ein scheinbarer Widerspruch\n\n💡 WEITERE BEISPIELE:\n• 'alter Jüngling'\n• 'bittersüß'\n• 'lebende Tote'\n\n✅ Antwort: Oxymoron",
+    "tags": [
+      "MSA",
+      "stilmittel",
+      "oxymoron"
+    ]
+  },
+  {
+    "id": "DE_GRAM_WORD_CLASSES_010",
+    "subject": "DE",
+    "topic_id": "DE_GRAM_WORD_CLASSES",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Welches Stilmittel liegt vor: 'Das Auto fährt im Schneckentempo.'",
+    "payload": {
+      "choices": [
+        "Hyperbel",
+        "Metapher",
+        "Vergleich",
+        "Personifikation"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "Hyperbel"
+    },
+    "explanation": "🎯 HYPERBEL\n\n📖 DEFINITION:\nStarke Übertreibung oder Untertreibung.\n\n✏️ ANALYSE:\n'Schneckentempo'\n→ Extreme Übertreibung der Langsamkeit\n→ Das Auto fährt nicht wirklich so langsam wie eine Schnecke\n\n💡 WEITERE BEISPIELE:\n• 'todmüde'\n• 'blitzschnell'\n• 'Ich hab dir das schon tausendmal gesagt!'\n\n✅ Antwort: Hyperbel",
+    "tags": [
+      "MSA",
+      "stilmittel",
+      "hyperbel"
+    ]
+  },
+  {
+    "id": "DE_GRAM_WORD_CLASSES_011",
+    "subject": "DE",
+    "topic_id": "DE_GRAM_WORD_CLASSES",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "Welches Stilmittel liegt vor: 'Wer war das? Wer hat das getan?'",
+    "payload": {
+      "choices": [
+        "Anapher",
+        "Alliteration",
+        "Parallelismus",
+        "Klimax"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "Anapher"
+    },
+    "explanation": "🎯 ANAPHER\n\n📖 DEFINITION:\nWiederholung eines Wortes oder einer Wortgruppe am ANFANG aufeinanderfolgender Sätze/Verse.\n\n✏️ ANALYSE:\n'WER war das? WER hat das getan?'\n→ 'Wer' wird am Satzanfang wiederholt\n\n💡 WEITERE BEISPIELE:\n• 'Ich will leben. Ich will lieben. Ich will lachen.'\n• 'Das ist mein Haus. Das ist mein Garten.'\n\n✅ Antwort: Anapher",
+    "tags": [
+      "MSA",
+      "stilmittel",
+      "anapher"
+    ]
+  },
+  {
+    "id": "DE_ORTHO_CASE_005",
+    "subject": "DE",
+    "topic_id": "DE_ORTHO_CASE",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Welches Wort ist RICHTIG großgeschrieben?",
+    "payload": {
+      "choices": [
+        "das Schwimmen",
+        "das schwimmen",
+        "Das schwimmen",
+        "DAS schwimmen"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "das Schwimmen"
+    },
+    "explanation": "🎯 NOMINALISIERUNG\n\n📖 REGEL:\nVerben werden großgeschrieben, wenn sie als Nomen verwendet werden (= Nominalisierung).\n\n✏️ ERKENNUNGSZEICHEN:\n• Artikel davor: 'DAS Schwimmen'\n• Adjektiv davor: 'langes Schwimmen'\n\n💡 BEISPIELE:\n• 'Schwimmen macht Spaß' → Verb (klein)\n• 'Das Schwimmen ist gesund' → Nomen (groß)\n\n✅ Antwort: das Schwimmen",
+    "tags": [
+      "MSA",
+      "rechtschreibung",
+      "nominalisierung"
+    ]
+  },
+  {
+    "id": "DE_ORTHO_CASE_006",
+    "subject": "DE",
+    "topic_id": "DE_ORTHO_CASE",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Welche Schreibweise ist RICHTIG: 'Wie geht es ___?'",
+    "payload": {
+      "choices": [
+        "Ihnen",
+        "ihnen",
+        "IHNEN",
+        "IHnen"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "Ihnen"
+    },
+    "explanation": "🎯 HÖFLICHE ANREDE\n\n📖 REGEL:\nAnredepronomen in der höflichen Anrede werden GROSS geschrieben.\n\n✏️ BEISPIELE:\n• 'Wie geht es Ihnen?'\n• 'Haben Sie schon gewählt?'\n• 'Ich danke Ihnen.'\n\n⚠️ ABER:\n'ihnen' (klein) = 3. Person Plural normal\n'Sie begrüßen ihnen' → falsch\n'Sie begrüßen sie' → richtig (normale 3.P.Pl.)\n\n✅ Antwort: Ihnen (groß)",
+    "tags": [
+      "MSA",
+      "rechtschreibung",
+      "anrede"
+    ]
+  },
+  {
+    "id": "DE_ORTHO_CASE_007",
+    "subject": "DE",
+    "topic_id": "DE_ORTHO_CASE",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Welche Schreibweise ist RICHTIG?",
+    "payload": {
+      "choices": [
+        "am Montag",
+        "am montag",
+        "Am montag",
+        "am MONTAG"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "am Montag"
+    },
+    "explanation": "🎯 WOCHENTAGE ALS NOMEN\n\n📖 REGEL:\nWochentage werden GROSSgeschrieben, wenn sie als Nomen verwendet werden.\n\n✏️ ERKENNUNGSZEICHEN:\n• Artikel/Präposition davor: 'am Montag', 'der Dienstag'\n\n⚠️ ABER:\nAls Adverb KLEINgeschrieben:\n• 'montags' (= jeden Montag)\n• 'dienstags'\n\n💡 VERGLEICH:\n• 'Am Montag gehe ich...' → Nomen (groß)\n• 'Montags gehe ich immer...' → Adverb (klein)\n\n✅ Antwort: am Montag",
+    "tags": [
+      "MSA",
+      "rechtschreibung",
+      "wochentage"
+    ]
+  },
+  {
+    "id": "DE_PUNCT_COMMA_MAIN_SUB_005",
+    "subject": "DE",
+    "topic_id": "DE_PUNCT_COMMA_MAIN_SUB",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Wo muss ein Komma stehen? 'Ich gehe schwimmen(1) obwohl(2) es(3) regnet.'",
+    "payload": {
+      "choices": [
+        "Nach (1)",
+        "Nach (2)",
+        "Nach (3)",
+        "Kein Komma nötig"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "Nach (1)"
+    },
+    "explanation": "🎯 KOMMA VOR NEBENSATZ\n\n📖 REGEL:\nVor Nebensätzen steht ein Komma!\n\n✏️ ERKENNUNGSZEICHEN:\nNebensätze beginnen oft mit:\n• obwohl, weil, dass, wenn, als, während...\n\n📐 ANALYSE:\n'Ich gehe schwimmen, obwohl es regnet.'\nHauptsatz | Nebensatz\n→ Komma trennt die beiden Sätze\n\n✅ Antwort: Nach (1) - vor 'obwohl'",
+    "tags": [
+      "MSA",
+      "kommasetzung",
+      "nebensatz"
+    ]
+  },
+  {
+    "id": "DE_PUNCT_INFINITIVE_002",
+    "subject": "DE",
+    "topic_id": "DE_PUNCT_INFINITIVE",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "Wann muss bei einer Infinitivgruppe ein Komma gesetzt werden?",
+    "payload": {
+      "choices": [
+        "Wenn sie ein einleitendes Wort hat (um, ohne, statt...)",
+        "Immer",
+        "Nie",
+        "Nur am Satzende"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "Wenn sie ein einleitendes Wort hat (um, ohne, statt...)"
+    },
+    "explanation": "🎯 KOMMA BEI INFINITIVGRUPPEN\n\n📖 KOMMA MUSS gesetzt werden, wenn:\n1. Einleitendes Wort vorhanden (um, ohne, statt, anstatt, außer, als)\n2. Die Infinitivgruppe von einem Nomen abhängt\n3. Sie mit einem hinweisenden Wort angekündigt wird\n\n✏️ BEISPIELE:\n• 'Ich gehe los, UM einzukaufen.' (einleitendes 'um')\n• 'Die Absicht, zu helfen, ist lobenswert.' (hängt von 'Absicht' ab)\n\n✅ Antwort: Wenn sie ein einleitendes Wort hat",
+    "tags": [
+      "MSA",
+      "kommasetzung",
+      "infinitiv"
+    ]
+  },
+  {
+    "id": "DE_READ_CORE_005",
+    "subject": "DE",
+    "topic_id": "DE_READ_CORE",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Was ist ein Euphemismus?",
+    "payload": {
+      "choices": [
+        "Eine beschönigende Umschreibung",
+        "Eine starke Übertreibung",
+        "Ein innerer Widerspruch",
+        "Eine Wiederholung"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "Eine beschönigende Umschreibung"
+    },
+    "explanation": "🎯 EUPHEMISMUS\n\n📖 DEFINITION:\nEine beschönigende, verharmlosende Umschreibung für etwas Unangenehmes.\n\n✏️ BEISPIELE:\n• 'Seniorenresidenz' statt 'Altersheim'\n• 'entschlafen' statt 'sterben'\n• 'vollschlank' statt 'dick'\n• 'freisetzen' statt 'entlassen'\n\n💡 ZWECK:\nMacht unangenehme Dinge sprachlich 'weicher'\n\n✅ Antwort: Eine beschönigende Umschreibung",
+    "tags": [
+      "MSA",
+      "stilmittel",
+      "euphemismus"
+    ]
+  },
+  {
+    "id": "DE_WRITE_REPHRASE_003",
+    "subject": "DE",
+    "topic_id": "DE_WRITE_REPHRASE",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Welches Wort in 'Das war ihr ausgeleierter Rollkragenpulli' ist umgangssprachlich?",
+    "payload": {
+      "choices": [
+        "ausgeleiert",
+        "Rollkragenpulli",
+        "Beide Wörter",
+        "Keines der Wörter"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "Beide Wörter"
+    },
+    "explanation": "🎯 UMGANGSSPRACHE ERKENNEN\n\n📖 ANALYSE:\n• 'ausgeleiert' → Alltagswort\n  Standardsprache: 'oft getragen', 'abgenutzt'\n\n• 'Rollkragenpulli' → Abkürzung, Alltagswort\n  Standardsprache: 'Rollkragenpullover'\n\n✏️ STANDARDSPRACHLICH:\n'Das war ihr oft getragener Rollkragenpullover.'\n\n💡 TIPP FÜR DIE PRÜFUNG:\nAbkürzungen und Slang vermeiden!\n\n✅ Antwort: Beide Wörter",
+    "tags": [
+      "MSA",
+      "sprachebene",
+      "umgangssprache"
+    ]
+  },
+  {
+    "id": "DE_GRAM_WORD_CLASSES_012",
+    "subject": "DE",
+    "topic_id": "DE_GRAM_WORD_CLASSES",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Welches Stilmittel liegt vor: 'Ich kam, sah, siegte.'",
+    "payload": {
+      "choices": [
+        "Klimax",
+        "Antiklimax",
+        "Parallelismus",
+        "Ellipse"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "Klimax"
+    },
+    "explanation": "🎯 KLIMAX\n\n📖 DEFINITION:\nAufsteigende Steigerung von Begriffen oder Aussagen.\n\n✏️ ANALYSE:\n'Ich kam, sah, siegte.'\nkommen → sehen → siegen\n→ Steigerung der Intensität!\n\n💡 ANTIKLIMAX wäre das Gegenteil:\nAbfallende Steigerung\nz.B. 'Großmutter, Mutter, Kind'\n\n✅ Antwort: Klimax",
+    "tags": [
+      "MSA",
+      "stilmittel",
+      "klimax"
+    ]
+  },
+  {
+    "id": "DE_GRAM_WORD_CLASSES_013",
+    "subject": "DE",
+    "topic_id": "DE_GRAM_WORD_CLASSES",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "Was symbolisiert eine weiße Taube?",
+    "payload": {
+      "choices": [
+        "Frieden",
+        "Liebe",
+        "Tod",
+        "Treue"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "Frieden"
+    },
+    "explanation": "🎯 SYMBOL\n\n📖 DEFINITION:\nEin Symbol ist ein Bild, das Assoziationen auslöst und für etwas anderes steht.\n\n✏️ BEKANNTE SYMBOLE:\n• Weiße Taube → Frieden\n• Rotes Herz → Liebe\n• Schwarze Farbe → Trauer, Tod\n• Rose → Liebe, Schönheit\n• Krone → Macht, Herrschaft\n\n💡 IN DER PRÜFUNG:\nSymbole in Texten erkennen und deuten können!\n\n✅ Antwort: Frieden",
+    "tags": [
+      "MSA",
+      "stilmittel",
+      "symbol"
+    ]
+  }
+]

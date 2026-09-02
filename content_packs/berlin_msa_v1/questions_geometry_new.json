@@ -1,0 +1,610 @@
+[
+  {
+    "id": "MATH_GEO_UNITS_001",
+    "subject": "MATH",
+    "topic_id": "MATH_GEO_UNITS",
+    "difficulty": 1,
+    "qtype": "SHORT",
+    "prompt": "Rechne um: 10 cm = ? m",
+    "payload": {
+      "answer_type": "number",
+      "tolerance": 0,
+      "normalization": ["trim", "comma_to_dot"]
+    },
+    "solution": { "value": 0.1 },
+    "explanation": "🎯 EINHEITEN UMRECHNEN\n\n📖 MERKE:\n1 m = 100 cm\nAlso: cm → m bedeutet ÷ 100\n\n✏️ RECHNUNG:\n10 cm ÷ 100 = 0,1 m\n\n💡 TRICK:\nZenti (c) = Hundertstel\nAlso 10 Hundertstel = 0,10\n\n✅ Antwort: 0,1 m",
+    "tags": ["MSA", "units", "length"]
+  },
+  {
+    "id": "MATH_GEO_UNITS_002",
+    "subject": "MATH",
+    "topic_id": "MATH_GEO_UNITS",
+    "difficulty": 1,
+    "qtype": "SHORT",
+    "prompt": "Rechne um: 170 g = ? kg",
+    "payload": {
+      "answer_type": "number",
+      "tolerance": 0,
+      "normalization": ["trim", "comma_to_dot"]
+    },
+    "solution": { "value": 0.17 },
+    "explanation": "🎯 EINHEITEN UMRECHNEN\n\n📖 MERKE:\n1 kg = 1000 g\nAlso: g → kg bedeutet ÷ 1000\n\n✏️ RECHNUNG:\n170 g ÷ 1000 = 0,17 kg\n\n💡 TRICK:\nKilo (k) = Tausend\nAlso 170 ÷ 1000 = 0,170\n\n✅ Antwort: 0,17 kg",
+    "tags": ["MSA", "units", "mass"]
+  },
+  {
+    "id": "MATH_GEO_UNITS_003",
+    "subject": "MATH",
+    "topic_id": "MATH_GEO_UNITS",
+    "difficulty": 2,
+    "qtype": "SHORT",
+    "prompt": "Rechne um: 2 Stunden = ? Sekunden",
+    "payload": {
+      "answer_type": "number",
+      "tolerance": 0,
+      "normalization": ["trim"]
+    },
+    "solution": { "value": 7200 },
+    "explanation": "🎯 ZEITEINHEITEN\n\n📖 MERKE:\n1 Stunde = 60 Minuten\n1 Minute = 60 Sekunden\nAlso: 1 Stunde = 60 × 60 = 3600 Sekunden\n\n✏️ RECHNUNG:\n2 h = 2 × 60 min = 120 min\n120 min = 120 × 60 s = 7200 s\n\n💡 ODER DIREKT:\n2 × 3600 = 7200\n\n✅ Antwort: 7200 s",
+    "tags": ["MSA", "units", "time"]
+  },
+  {
+    "id": "MATH_GEO_UNITS_004",
+    "subject": "MATH",
+    "topic_id": "MATH_GEO_UNITS",
+    "difficulty": 3,
+    "qtype": "SHORT",
+    "prompt": "Rechne um: 24 cm² = ? m²",
+    "payload": {
+      "answer_type": "number",
+      "tolerance": 0,
+      "normalization": ["trim", "comma_to_dot"]
+    },
+    "solution": { "value": 0.0024 },
+    "explanation": "🎯 FLÄCHENEINHEITEN\n\n📖 MERKE:\nBei Flächen: Umrechnungszahl QUADRIEREN!\n1 m = 100 cm\n→ 1 m² = 100² cm² = 10.000 cm²\n\n✏️ RECHNUNG:\n24 cm² ÷ 10.000 = 0,0024 m²\n\n⚠️ ACHTUNG:\nNicht nur ÷100, sondern ÷10.000!\n\n✅ Antwort: 0,0024 m²",
+    "tags": ["MSA", "units", "area"]
+  },
+  {
+    "id": "MATH_GEO_UNITS_005",
+    "subject": "MATH",
+    "topic_id": "MATH_GEO_UNITS",
+    "difficulty": 3,
+    "qtype": "SHORT",
+    "prompt": "Rechne um: 1 km² = ? m²",
+    "payload": {
+      "answer_type": "number",
+      "tolerance": 0,
+      "normalization": ["trim"]
+    },
+    "solution": { "value": 1000000 },
+    "explanation": "🎯 FLÄCHENEINHEITEN\n\n📖 MERKE:\n1 km = 1000 m\nBei Flächen: ×1000² = ×1.000.000\n\n✏️ RECHNUNG:\n1 km² = 1000 m × 1000 m = 1.000.000 m²\n\n💡 VORSTELLUNG:\n1 km² ist ein Quadrat mit 1 km Seitenlänge\n= 1000 m × 1000 m\n\n✅ Antwort: 1.000.000 m²",
+    "tags": ["MSA", "units", "area"]
+  },
+  {
+    "id": "MATH_GEO_UNITS_006",
+    "subject": "MATH",
+    "topic_id": "MATH_GEO_UNITS",
+    "difficulty": 3,
+    "qtype": "SHORT",
+    "prompt": "Rechne um: 45 cm³ = ? dm³",
+    "payload": {
+      "answer_type": "number",
+      "tolerance": 0,
+      "normalization": ["trim", "comma_to_dot"]
+    },
+    "solution": { "value": 0.045 },
+    "explanation": "🎯 VOLUMENEINHEITEN\n\n📖 MERKE:\nBei Volumen: Umrechnungszahl HOCH 3!\n1 dm = 10 cm\n→ 1 dm³ = 10³ cm³ = 1000 cm³\n\n✏️ RECHNUNG:\n45 cm³ ÷ 1000 = 0,045 dm³\n\n💡 BONUS:\n1 dm³ = 1 Liter\nAlso 45 cm³ = 0,045 Liter = 45 ml\n\n✅ Antwort: 0,045 dm³",
+    "tags": ["MSA", "units", "volume"]
+  },
+  {
+    "id": "MATH_GEO_UNITS_007",
+    "subject": "MATH",
+    "topic_id": "MATH_GEO_UNITS",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "72 dm³ entspricht wie viel Liter?",
+    "payload": {
+      "choices": ["7,2 Liter", "72 Liter", "720 Liter", "0,72 Liter"],
+      "shuffle": true
+    },
+    "solution": { "correct_choice": "72 Liter" },
+    "explanation": "🎯 VOLUMEN UND LITER\n\n📖 GOLDENE REGEL:\n1 dm³ = 1 Liter (IMMER!)\n\n✏️ RECHNUNG:\n72 dm³ = 72 × 1 Liter = 72 Liter\n\n💡 MERKHILFE:\n1 Liter Milch passt in einen Würfel\nmit 10 cm × 10 cm × 10 cm = 1 dm³\n\n✅ Antwort: 72 Liter",
+    "tags": ["MSA", "units", "volume", "liter"]
+  },
+  {
+    "id": "MATH_GEO_AREA_BASIC_001",
+    "subject": "MATH",
+    "topic_id": "MATH_GEO_AREA_BASIC",
+    "difficulty": 1,
+    "qtype": "SHORT",
+    "prompt": "Berechne den Flächeninhalt eines Rechtecks mit a = 8 cm und b = 5 cm. A = ? cm²",
+    "payload": {
+      "answer_type": "number",
+      "tolerance": 0,
+      "normalization": ["trim"]
+    },
+    "solution": { "value": 40 },
+    "explanation": "🎯 RECHTECK-FLÄCHE\n\n📐 FORMEL:\nA = a × b\n(Länge mal Breite)\n\n✏️ RECHNUNG:\nA = 8 cm × 5 cm = 40 cm²\n\n💡 VORSTELLUNG:\n8 Reihen mit je 5 Quadraten\n= 40 kleine Quadrate (cm²)\n\n✅ Antwort: 40 cm²",
+    "tags": ["MSA", "area", "rectangle"]
+  },
+  {
+    "id": "MATH_GEO_AREA_BASIC_002",
+    "subject": "MATH",
+    "topic_id": "MATH_GEO_AREA_BASIC",
+    "difficulty": 1,
+    "qtype": "SHORT",
+    "prompt": "Berechne den Umfang eines Rechtecks mit a = 12 cm und b = 7 cm. U = ? cm",
+    "payload": {
+      "answer_type": "number",
+      "tolerance": 0,
+      "normalization": ["trim"]
+    },
+    "solution": { "value": 38 },
+    "explanation": "🎯 RECHTECK-UMFANG\n\n📐 FORMEL:\nU = 2a + 2b oder U = 2(a + b)\n\n✏️ RECHNUNG:\nU = 2 × 12 + 2 × 7\nU = 24 + 14 = 38 cm\n\n💡 VORSTELLUNG:\nDu läufst einmal um das Rechteck herum:\n12 + 7 + 12 + 7 = 38 cm\n\n✅ Antwort: 38 cm",
+    "tags": ["MSA", "perimeter", "rectangle"]
+  },
+  {
+    "id": "MATH_GEO_AREA_BASIC_003",
+    "subject": "MATH",
+    "topic_id": "MATH_GEO_AREA_BASIC",
+    "difficulty": 2,
+    "qtype": "SHORT",
+    "prompt": "Berechne den Flächeninhalt eines Quadrats mit Seitenlänge a = 9 cm. A = ? cm²",
+    "payload": {
+      "answer_type": "number",
+      "tolerance": 0,
+      "normalization": ["trim"]
+    },
+    "solution": { "value": 81 },
+    "explanation": "🎯 QUADRAT-FLÄCHE\n\n📐 FORMEL:\nA = a × a = a²\n\n✏️ RECHNUNG:\nA = 9 × 9 = 81 cm²\n\n💡 WARUM a²?\nEin Quadrat hat alle Seiten gleich lang!\nRechteck-Formel A = a × b wird zu A = a × a\n\n✅ Antwort: 81 cm²",
+    "tags": ["MSA", "area", "square"]
+  },
+  {
+    "id": "MATH_GEO_AREA_BASIC_004",
+    "subject": "MATH",
+    "topic_id": "MATH_GEO_AREA_BASIC",
+    "difficulty": 2,
+    "qtype": "SHORT",
+    "prompt": "Berechne den Flächeninhalt eines Dreiecks mit Grundseite a = 10 cm und Höhe h = 6 cm. A = ? cm²",
+    "payload": {
+      "answer_type": "number",
+      "tolerance": 0,
+      "normalization": ["trim"]
+    },
+    "solution": { "value": 30 },
+    "explanation": "🎯 DREIECK-FLÄCHE\n\n📐 FORMEL:\nA = (1/2) × a × h\n(Halb mal Grundseite mal Höhe)\n\n✏️ RECHNUNG:\nA = (1/2) × 10 × 6\nA = (1/2) × 60 = 30 cm²\n\n💡 WARUM HALB?\nEin Dreieck ist ein halbes Rechteck!\n\n✅ Antwort: 30 cm²",
+    "tags": ["MSA", "area", "triangle"]
+  },
+  {
+    "id": "MATH_GEO_AREA_BASIC_005",
+    "subject": "MATH",
+    "topic_id": "MATH_GEO_AREA_BASIC",
+    "difficulty": 2,
+    "qtype": "SHORT",
+    "prompt": "Berechne den Flächeninhalt eines Parallelogramms mit Grundseite a = 8 cm und Höhe h = 4 cm. A = ? cm²",
+    "payload": {
+      "answer_type": "number",
+      "tolerance": 0,
+      "normalization": ["trim"]
+    },
+    "solution": { "value": 32 },
+    "explanation": "🎯 PARALLELOGRAMM-FLÄCHE\n\n📐 FORMEL:\nA = a × h\n(Grundseite mal Höhe)\n\n✏️ RECHNUNG:\nA = 8 × 4 = 32 cm²\n\n💡 WARUM WIE RECHTECK?\nWenn du ein Dreieck von der Seite abschneidest\nund auf der anderen Seite ansetzt,\nentsteht ein Rechteck!\n\n✅ Antwort: 32 cm²",
+    "tags": ["MSA", "area", "parallelogram"]
+  },
+  {
+    "id": "MATH_GEO_AREA_BASIC_006",
+    "subject": "MATH",
+    "topic_id": "MATH_GEO_AREA_BASIC",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "Welche Formel berechnet den Flächeninhalt eines Dreiecks?",
+    "payload": {
+      "choices": [
+        "A = (1/2) × a × h",
+        "A = a × b",
+        "A = a²",
+        "A = 2 × a × h"
+      ],
+      "shuffle": true
+    },
+    "solution": { "correct_choice": "A = (1/2) × a × h" },
+    "explanation": "🎯 DREIECK-FORMEL\n\n📐 RICHTIG:\nA = (1/2) × a × h\n\n❌ FALSCH:\n• A = a × b → Das ist für Rechtecke!\n• A = a² → Das ist für Quadrate!\n• A = 2 × a × h → Doppelt statt halb!\n\n💡 MERKHILFE:\nDreieck = HALBES Rechteck\n→ daher (1/2) in der Formel\n\n✅ Antwort: A = (1/2) × a × h",
+    "tags": ["MSA", "area", "triangle", "formula"]
+  },
+  {
+    "id": "MATH_GEO_CIRCLE_001",
+    "subject": "MATH",
+    "topic_id": "MATH_GEO_CIRCLE",
+    "difficulty": 2,
+    "qtype": "SHORT",
+    "prompt": "Der Durchmesser eines Kreises ist d = 10 cm. Wie groß ist der Radius r? r = ? cm",
+    "payload": {
+      "answer_type": "number",
+      "tolerance": 0,
+      "normalization": ["trim"]
+    },
+    "solution": { "value": 5 },
+    "explanation": "🎯 RADIUS UND DURCHMESSER\n\n📖 ZUSAMMENHANG:\nd = 2r (Durchmesser = 2 × Radius)\nr = d ÷ 2 (Radius = Durchmesser ÷ 2)\n\n✏️ RECHNUNG:\nr = 10 ÷ 2 = 5 cm\n\n💡 VORSTELLUNG:\nDer Radius geht vom Mittelpunkt zum Rand.\nDer Durchmesser geht einmal komplett durch.\n\n✅ Antwort: 5 cm",
+    "tags": ["MSA", "circle", "radius"]
+  },
+  {
+    "id": "MATH_GEO_CIRCLE_002",
+    "subject": "MATH",
+    "topic_id": "MATH_GEO_CIRCLE",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Der Radius eines Kreises ist r = 3,5 mm. Wie groß ist der Flächeninhalt A? (Runde auf eine Dezimalstelle)",
+    "payload": {
+      "choices": ["38,5 mm²", "22,0 mm²", "11,0 mm²", "49,0 mm²"],
+      "shuffle": true
+    },
+    "solution": { "correct_choice": "38,5 mm²" },
+    "explanation": "🎯 KREISFLÄCHE\n\n📐 FORMEL:\nA = π × r²\n\n✏️ RECHNUNG:\nA = π × (3,5)²\nA = π × 12,25\nA ≈ 3,14159 × 12,25\nA ≈ 38,48 mm² ≈ 38,5 mm²\n\n💡 TIPP:\nImmer erst r² berechnen, dann × π\n\n✅ Antwort: 38,5 mm²",
+    "tags": ["MSA", "circle", "area"]
+  },
+  {
+    "id": "MATH_GEO_CIRCLE_003",
+    "subject": "MATH",
+    "topic_id": "MATH_GEO_CIRCLE",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Der Radius eines Kreises ist r = 3,5 mm. Wie groß ist der Umfang U? (Runde auf eine Dezimalstelle)",
+    "payload": {
+      "choices": ["22,0 mm", "38,5 mm", "7,0 mm", "11,0 mm"],
+      "shuffle": true
+    },
+    "solution": { "correct_choice": "22,0 mm" },
+    "explanation": "🎯 KREISUMFANG\n\n📐 FORMEL:\nU = 2 × π × r\n\n✏️ RECHNUNG:\nU = 2 × π × 3,5\nU = 7 × π\nU ≈ 7 × 3,14159\nU ≈ 21,99 mm ≈ 22,0 mm\n\n💡 ALTERNATIVE FORMEL:\nU = π × d (mit Durchmesser)\n\n✅ Antwort: 22,0 mm",
+    "tags": ["MSA", "circle", "circumference"]
+  },
+  {
+    "id": "MATH_GEO_CIRCLE_004",
+    "subject": "MATH",
+    "topic_id": "MATH_GEO_CIRCLE",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "Ein Kreis hat den Umfang U = 38 cm. Wie groß ist der Flächeninhalt A? (Runde auf ganze Zahl)",
+    "payload": {
+      "choices": ["113 cm²", "38 cm²", "452 cm²", "19 cm²"],
+      "shuffle": true
+    },
+    "solution": { "correct_choice": "113 cm²" },
+    "explanation": "🎯 VOM UMFANG ZUR FLÄCHE\n\n📐 SCHRITT 1: Radius finden\nU = 2πr → r = U ÷ (2π)\nr = 38 ÷ (2 × π) ≈ 38 ÷ 6,28 ≈ 6 cm\n\n📐 SCHRITT 2: Fläche berechnen\nA = π × r²\nA = π × 6² = π × 36\nA ≈ 113,1 cm² ≈ 113 cm²\n\n✅ Antwort: 113 cm²",
+    "tags": ["MSA", "circle", "area", "advanced"]
+  },
+  {
+    "id": "MATH_GEO_PYTH_001",
+    "subject": "MATH",
+    "topic_id": "MATH_GEO_PYTH",
+    "difficulty": 2,
+    "qtype": "SHORT",
+    "prompt": "In einem rechtwinkligen Dreieck sind a = 8 cm und b = 6 cm. Berechne die Hypotenuse c. c = ? cm",
+    "payload": {
+      "answer_type": "number",
+      "tolerance": 0,
+      "normalization": ["trim"]
+    },
+    "solution": { "value": 10 },
+    "explanation": "🎯 SATZ DES PYTHAGORAS\n\n📐 FORMEL:\na² + b² = c²\n(c ist die Hypotenuse - längste Seite!)\n\n✏️ RECHNUNG:\nc² = a² + b²\nc² = 8² + 6²\nc² = 64 + 36 = 100\nc = √100 = 10 cm\n\n💡 MERKE:\nDie Hypotenuse liegt dem rechten Winkel gegenüber!\n\n✅ Antwort: 10 cm",
+    "tags": ["MSA", "pythagoras", "hypotenuse"]
+  },
+  {
+    "id": "MATH_GEO_PYTH_002",
+    "subject": "MATH",
+    "topic_id": "MATH_GEO_PYTH",
+    "difficulty": 2,
+    "qtype": "SHORT",
+    "prompt": "In einem rechtwinkligen Dreieck sind b = 5 cm und c = 13 cm. Berechne die Kathete a. a = ? cm",
+    "payload": {
+      "answer_type": "number",
+      "tolerance": 0,
+      "normalization": ["trim"]
+    },
+    "solution": { "value": 12 },
+    "explanation": "🎯 KATHETE BERECHNEN\n\n📐 FORMEL UMSTELLEN:\na² + b² = c²\n→ a² = c² - b²\n\n✏️ RECHNUNG:\na² = 13² - 5²\na² = 169 - 25 = 144\na = √144 = 12 cm\n\n💡 MERKE:\nKathete = √(Hypotenuse² - andere Kathete²)\n\n✅ Antwort: 12 cm",
+    "tags": ["MSA", "pythagoras", "cathetus"]
+  },
+  {
+    "id": "MATH_GEO_PYTH_003",
+    "subject": "MATH",
+    "topic_id": "MATH_GEO_PYTH",
+    "difficulty": 3,
+    "qtype": "SHORT",
+    "prompt": "In einem rechtwinkligen Dreieck sind a = 36 cm und c = 85 cm. Berechne die Kathete b. b = ? cm",
+    "payload": {
+      "answer_type": "number",
+      "tolerance": 0,
+      "normalization": ["trim"]
+    },
+    "solution": { "value": 77 },
+    "explanation": "🎯 KATHETE BERECHNEN\n\n📐 FORMEL UMSTELLEN:\na² + b² = c²\n→ b² = c² - a²\n\n✏️ RECHNUNG:\nb² = 85² - 36²\nb² = 7225 - 1296 = 5929\nb = √5929 = 77 cm\n\n💡 TIPP:\nFür den Taschenrechner:\n√5929 eingeben!\n\n✅ Antwort: 77 cm",
+    "tags": ["MSA", "pythagoras", "cathetus"]
+  },
+  {
+    "id": "MATH_GEO_PYTH_004",
+    "subject": "MATH",
+    "topic_id": "MATH_GEO_PYTH",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Welche Aussage über den Satz des Pythagoras ist RICHTIG?",
+    "payload": {
+      "choices": [
+        "Der Flächeninhalt des Hypotenusenquadrates ist gleich der Summe der beiden Kathetenquadrate.",
+        "Gegenüber der Hypotenuse befindet sich der rechte Winkel.",
+        "Die Formel lautet c - a = b",
+        "Er gilt für alle Dreiecke."
+      ],
+      "shuffle": true
+    },
+    "solution": { "correct_choice": "Der Flächeninhalt des Hypotenusenquadrates ist gleich der Summe der beiden Kathetenquadrate." },
+    "explanation": "🎯 SATZ DES PYTHAGORAS\n\n✅ RICHTIG:\na² + b² = c² bedeutet:\nKathetenquadrat + Kathetenquadrat = Hypotenusenquadrat\n\n❌ FALSCH:\n• Gegenüber der Hypotenuse ist der RECHTE WINKEL, nicht die Hypotenuse!\n• c - a = b ist FALSCH\n• Gilt NUR für RECHTWINKLIGE Dreiecke!\n\n✅ Antwort: Hypotenusenquadrat = Summe der Kathetenquadrate",
+    "tags": ["MSA", "pythagoras", "theory"]
+  },
+  {
+    "id": "MATH_GEO_TRIG_001",
+    "subject": "MATH",
+    "topic_id": "MATH_GEO_TRIG",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Im rechtwinkligen Dreieck gilt: sin(α) = ?",
+    "payload": {
+      "choices": [
+        "Gegenkathete ÷ Hypotenuse",
+        "Ankathete ÷ Hypotenuse",
+        "Gegenkathete ÷ Ankathete",
+        "Hypotenuse ÷ Gegenkathete"
+      ],
+      "shuffle": true
+    },
+    "solution": { "correct_choice": "Gegenkathete ÷ Hypotenuse" },
+    "explanation": "🎯 SINUS-DEFINITION\n\n📐 FORMEL:\nsin(α) = Gegenkathete / Hypotenuse\n\n💡 MERKHILFE 'GAGA-HAHA-GAGA':\n• sin = Gegenkathete / Hypotenuse (GE/HY)\n• cos = Ankathete / Hypotenuse (AN/HY)\n• tan = Gegenkathete / Ankathete (GE/AN)\n\n🎯 TIPP:\nGegenkathete = die Seite GEGENÜBER dem Winkel\n\n✅ Antwort: Gegenkathete ÷ Hypotenuse",
+    "tags": ["MSA", "trigonometry", "sine"]
+  },
+  {
+    "id": "MATH_GEO_TRIG_002",
+    "subject": "MATH",
+    "topic_id": "MATH_GEO_TRIG",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Im rechtwinkligen Dreieck gilt: cos(α) = ?",
+    "payload": {
+      "choices": [
+        "Ankathete ÷ Hypotenuse",
+        "Gegenkathete ÷ Hypotenuse",
+        "Gegenkathete ÷ Ankathete",
+        "Hypotenuse ÷ Ankathete"
+      ],
+      "shuffle": true
+    },
+    "solution": { "correct_choice": "Ankathete ÷ Hypotenuse" },
+    "explanation": "🎯 KOSINUS-DEFINITION\n\n📐 FORMEL:\ncos(α) = Ankathete / Hypotenuse\n\n💡 MERKHILFE:\n• Ankathete = die Seite AM Winkel (nicht die Hypotenuse)\n• Hypotenuse = die längste Seite (gegenüber vom rechten Winkel)\n\n🎯 ESELSBRÜCKE:\n'COS' hat ein 'A' → ANkathete im Zähler\n\n✅ Antwort: Ankathete ÷ Hypotenuse",
+    "tags": ["MSA", "trigonometry", "cosine"]
+  },
+  {
+    "id": "MATH_GEO_TRIG_003",
+    "subject": "MATH",
+    "topic_id": "MATH_GEO_TRIG",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Im rechtwinkligen Dreieck gilt: tan(α) = ?",
+    "payload": {
+      "choices": [
+        "Gegenkathete ÷ Ankathete",
+        "Ankathete ÷ Gegenkathete",
+        "Gegenkathete ÷ Hypotenuse",
+        "Hypotenuse ÷ Ankathete"
+      ],
+      "shuffle": true
+    },
+    "solution": { "correct_choice": "Gegenkathete ÷ Ankathete" },
+    "explanation": "🎯 TANGENS-DEFINITION\n\n📐 FORMEL:\ntan(α) = Gegenkathete / Ankathete\n\n💡 MERKHILFE:\ntan = GE/AN (GEgenkathete durch ANkathete)\nKeine Hypotenuse beim Tangens!\n\n🎯 ZUSAMMENFASSUNG:\n• sin = GE/HY\n• cos = AN/HY\n• tan = GE/AN = sin/cos\n\n✅ Antwort: Gegenkathete ÷ Ankathete",
+    "tags": ["MSA", "trigonometry", "tangent"]
+  },
+  {
+    "id": "MATH_GEO_TRIG_004",
+    "subject": "MATH",
+    "topic_id": "MATH_GEO_TRIG",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "Im rechtwinkligen Dreieck mit α = 90°, β = 55° und a = 8. Berechne c mit: c = cos(β) × a. Was ist c? (Runde auf zwei Dezimalstellen)",
+    "payload": {
+      "choices": ["4,59", "6,55", "9,76", "13,95"],
+      "shuffle": true
+    },
+    "solution": { "correct_choice": "4,59" },
+    "explanation": "🎯 SEITE MIT KOSINUS BERECHNEN\n\n📐 GEGEBEN:\nβ = 55°, a = 8\ncos(β) = c/a → c = cos(β) × a\n\n✏️ RECHNUNG:\nc = cos(55°) × 8\nc = 0,5736 × 8\nc ≈ 4,59\n\n💡 TASCHENRECHNER:\nAuf DEG-Modus achten (nicht RAD)!\n\n✅ Antwort: 4,59",
+    "tags": ["MSA", "trigonometry", "calculation"]
+  },
+  {
+    "id": "MATH_GEO_VOLUME_001",
+    "subject": "MATH",
+    "topic_id": "MATH_GEO_VOLUME",
+    "difficulty": 1,
+    "qtype": "SHORT",
+    "prompt": "Berechne das Volumen eines Würfels mit Kantenlänge a = 5 cm. V = ? cm³",
+    "payload": {
+      "answer_type": "number",
+      "tolerance": 0,
+      "normalization": ["trim"]
+    },
+    "solution": { "value": 125 },
+    "explanation": "🎯 WÜRFEL-VOLUMEN\n\n📐 FORMEL:\nV = a³ = a × a × a\n\n✏️ RECHNUNG:\nV = 5³ = 5 × 5 × 5 = 125 cm³\n\n💡 WARUM a³?\nEin Würfel hat alle 3 Seiten gleich lang!\nQuader: V = a × b × c\nWürfel: V = a × a × a = a³\n\n✅ Antwort: 125 cm³",
+    "tags": ["MSA", "volume", "cube"]
+  },
+  {
+    "id": "MATH_GEO_VOLUME_002",
+    "subject": "MATH",
+    "topic_id": "MATH_GEO_VOLUME",
+    "difficulty": 2,
+    "qtype": "SHORT",
+    "prompt": "Berechne das Volumen eines Quaders mit a = 4 cm, b = 4 cm und c = 2 cm. V = ? cm³",
+    "payload": {
+      "answer_type": "number",
+      "tolerance": 0,
+      "normalization": ["trim"]
+    },
+    "solution": { "value": 32 },
+    "explanation": "🎯 QUADER-VOLUMEN\n\n📐 FORMEL:\nV = a × b × c\n(Länge × Breite × Höhe)\n\n✏️ RECHNUNG:\nV = 4 × 4 × 2 = 32 cm³\n\n💡 VORSTELLUNG:\n4 × 4 = 16 kleine Würfel in einer Schicht\n2 Schichten = 32 kleine Würfel\n\n✅ Antwort: 32 cm³",
+    "tags": ["MSA", "volume", "cuboid"]
+  },
+  {
+    "id": "MATH_GEO_VOLUME_003",
+    "subject": "MATH",
+    "topic_id": "MATH_GEO_VOLUME",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Ein Zylinder hat Radius r = 2,8 cm und Höhe h = 6 cm. Wie groß ist das Volumen? (Runde auf ganze Zahl)",
+    "payload": {
+      "choices": ["148 cm³", "53 cm³", "106 cm³", "296 cm³"],
+      "shuffle": true
+    },
+    "solution": { "correct_choice": "148 cm³" },
+    "explanation": "🎯 ZYLINDER-VOLUMEN\n\n📐 FORMEL:\nV = π × r² × h\n(Grundfläche × Höhe)\n\n✏️ RECHNUNG:\nV = π × 2,8² × 6\nV = π × 7,84 × 6\nV = π × 47,04\nV ≈ 147,78 cm³ ≈ 148 cm³\n\n💡 MERKE:\n1 cm³ = 1 ml\nAlso passen etwa 148 ml hinein!\n\n✅ Antwort: 148 cm³",
+    "tags": ["MSA", "volume", "cylinder"]
+  },
+  {
+    "id": "MATH_GEO_VOLUME_004",
+    "subject": "MATH",
+    "topic_id": "MATH_GEO_VOLUME",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "Eine zylindrische Dose soll 375 ml fassen bei einer Höhe von 6 cm. Welchen Radius braucht sie? (Runde auf eine Dezimalstelle)",
+    "payload": {
+      "choices": ["4,5 cm", "3,2 cm", "6,3 cm", "2,8 cm"],
+      "shuffle": true
+    },
+    "solution": { "correct_choice": "4,5 cm" },
+    "explanation": "🎯 RADIUS AUS VOLUMEN BERECHNEN\n\n📐 FORMEL UMSTELLEN:\nV = π × r² × h\n→ r² = V ÷ (π × h)\n→ r = √(V ÷ (π × h))\n\n✏️ RECHNUNG:\n375 ml = 375 cm³\nr² = 375 ÷ (π × 6)\nr² = 375 ÷ 18,85\nr² ≈ 19,89\nr = √19,89 ≈ 4,46 ≈ 4,5 cm\n\n✅ Antwort: 4,5 cm",
+    "tags": ["MSA", "volume", "cylinder", "advanced"]
+  },
+  {
+    "id": "MATH_GEO_AREA_BASIC_007",
+    "subject": "MATH",
+    "topic_id": "MATH_GEO_AREA_BASIC",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Ein Winkel von 45° ist ein...",
+    "payload": {
+      "choices": [
+        "spitzer Winkel",
+        "rechter Winkel",
+        "stumpfer Winkel",
+        "gestreckter Winkel"
+      ],
+      "shuffle": true
+    },
+    "solution": { "correct_choice": "spitzer Winkel" },
+    "explanation": "🎯 WINKELARTEN\n\n📖 ÜBERSICHT:\n• Spitzer Winkel: 0° < α < 90°\n• Rechter Winkel: α = 90°\n• Stumpfer Winkel: 90° < α < 180°\n• Gestreckter Winkel: α = 180°\n• Überstumpfer Winkel: 180° < α < 360°\n• Vollwinkel: α = 360°\n\n✏️ PRÜFUNG:\n45° liegt zwischen 0° und 90°\n→ spitzer Winkel!\n\n✅ Antwort: spitzer Winkel",
+    "tags": ["MSA", "angles", "classification"]
+  },
+  {
+    "id": "MATH_GEO_AREA_BASIC_008",
+    "subject": "MATH",
+    "topic_id": "MATH_GEO_AREA_BASIC",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Wie groß ist die Innenwinkelsumme in einem Dreieck?",
+    "payload": {
+      "choices": ["180°", "90°", "360°", "270°"],
+      "shuffle": true
+    },
+    "solution": { "correct_choice": "180°" },
+    "explanation": "🎯 INNENWINKELSUMME IM DREIECK\n\n📐 REGEL:\nα + β + γ = 180°\n\n💡 WARUM?\nWenn du die drei Winkel ausschneidest und zusammenlegst, ergibt sich eine gerade Linie (180°)!\n\n📖 ALLGEMEIN:\nIn einem n-Eck: 180° × (n - 2)\nDreieck (n=3): 180° × (3-2) = 180°\nViereck (n=4): 180° × (4-2) = 360°\n\n✅ Antwort: 180°",
+    "tags": ["MSA", "angles", "triangle", "sum"]
+  },
+  {
+    "id": "MATH_GEO_AREA_BASIC_009",
+    "subject": "MATH",
+    "topic_id": "MATH_GEO_AREA_BASIC",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Wie viele Symmetrieachsen hat ein Drachen?",
+    "payload": {
+      "choices": ["1", "0", "2", "4"],
+      "shuffle": true
+    },
+    "solution": { "correct_choice": "1" },
+    "explanation": "🎯 SYMMETRIE BEIM DRACHEN\n\n📖 EIN DRACHEN HAT:\n• 1 Symmetrieachse (die Längsdiagonale)\n• Gegenüberliegende Seiten sind NICHT gleich\n• Zwei Paare gleicher Nachbarseiten\n\n💡 VERGLEICH:\n• Quadrat: 4 Symmetrieachsen\n• Rechteck: 2 Symmetrieachsen\n• Raute: 2 Symmetrieachsen\n• Drachen: 1 Symmetrieachse\n\n✅ Antwort: 1",
+    "tags": ["MSA", "symmetry", "kite"]
+  },
+  {
+    "id": "MATH_GEO_PYTH_005",
+    "subject": "MATH",
+    "topic_id": "MATH_GEO_PYTH",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "Ein Rührholz steht diagonal in einer zylindrischen Dose (r = 2,8 cm, h = 6 cm). 3 cm ragen heraus. Wie lang ist das Holz insgesamt? (Runde auf eine Dezimalstelle)",
+    "payload": {
+      "choices": ["9,6 cm", "6,6 cm", "8,4 cm", "11,2 cm"],
+      "shuffle": true
+    },
+    "solution": { "correct_choice": "9,6 cm" },
+    "explanation": "🎯 PYTHAGORAS IM ZYLINDER\n\n📐 DIE DIAGONALE:\nIm Zylinder bildet sich ein rechtwinkliges Dreieck:\n• Eine Kathete = Durchmesser = 2 × 2,8 = 5,6 cm\n• Andere Kathete = Höhe = 6 cm\n\n✏️ RECHNUNG:\nDiagonale² = 5,6² + 6²\nDiagonale² = 31,36 + 36 = 67,36\nDiagonale = √67,36 ≈ 8,21 cm\n\n📐 GESAMTLÄNGE:\n8,21 + 3 = 11,21 cm\n\n✅ Antwort: 9,6 cm",
+    "tags": ["MSA", "pythagoras", "cylinder", "application"]
+  },
+  {
+    "id": "MATH_GEO_TRIG_005",
+    "subject": "MATH",
+    "topic_id": "MATH_GEO_TRIG",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "Im Dreieck ABC (nicht rechtwinklig): α = 70°, β = 46°, b = 4,3. Berechne a mit dem Sinussatz. (Runde auf zwei Dezimalstellen)",
+    "payload": {
+      "choices": ["5,62", "3,43", "4,89", "6,15"],
+      "shuffle": true
+    },
+    "solution": { "correct_choice": "5,62" },
+    "explanation": "🎯 SINUSSATZ\n\n📐 FORMEL:\na/sin(α) = b/sin(β)\n→ a = b × sin(α) / sin(β)\n\n✏️ RECHNUNG:\na = 4,3 × sin(70°) / sin(46°)\na = 4,3 × 0,9397 / 0,7193\na = 4,04 / 0,7193\na ≈ 5,62\n\n💡 WANN SINUSSATZ?\nWenn du 2 Winkel und 1 Seite kennst!\n\n✅ Antwort: 5,62",
+    "tags": ["MSA", "trigonometry", "sine-rule"]
+  },
+  {
+    "id": "MATH_GEO_TRIG_006",
+    "subject": "MATH",
+    "topic_id": "MATH_GEO_TRIG",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "Im Dreieck ABC: α = 65°, b = 7, c = 4. Berechne a mit dem Kosinussatz. (Runde auf zwei Dezimalstellen)",
+    "payload": {
+      "choices": ["6,43", "5,29", "7,81", "8,12"],
+      "shuffle": true
+    },
+    "solution": { "correct_choice": "6,43" },
+    "explanation": "🎯 KOSINUSSATZ\n\n📐 FORMEL:\na² = b² + c² - 2bc × cos(α)\n\n✏️ RECHNUNG:\na² = 7² + 4² - 2 × 7 × 4 × cos(65°)\na² = 49 + 16 - 56 × 0,4226\na² = 65 - 23,67\na² = 41,33\na = √41,33 ≈ 6,43\n\n💡 WANN KOSINUSSATZ?\nWenn du 2 Seiten und den eingeschlossenen Winkel kennst!\n\n✅ Antwort: 6,43",
+    "tags": ["MSA", "trigonometry", "cosine-rule"]
+  },
+  {
+    "id": "MATH_GEO_VOLUME_005",
+    "subject": "MATH",
+    "topic_id": "MATH_GEO_VOLUME",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Welche Formel berechnet die Mantelfläche eines Zylinders?",
+    "payload": {
+      "choices": [
+        "M = 2πrh",
+        "M = πr²",
+        "M = πr²h",
+        "M = 2πr² + 2πrh"
+      ],
+      "shuffle": true
+    },
+    "solution": { "correct_choice": "M = 2πrh" },
+    "explanation": "🎯 MANTELFLÄCHE ZYLINDER\n\n📐 FORMEL:\nM = 2πr × h = Umfang × Höhe\n\n💡 VORSTELLUNG:\nDen Zylindermantel 'abwickeln' ergibt ein Rechteck!\n• Breite = Umfang = 2πr\n• Höhe = h\n• Fläche = Breite × Höhe = 2πrh\n\n⚠️ NICHT VERWECHSELN:\n• Mantelfläche M = 2πrh\n• Grundfläche G = πr²\n• Oberfläche O = 2πr² + 2πrh\n\n✅ Antwort: M = 2πrh",
+    "tags": ["MSA", "volume", "cylinder", "surface"]
+  },
+  {
+    "id": "MATH_GEO_AREA_BASIC_010",
+    "subject": "MATH",
+    "topic_id": "MATH_GEO_AREA_BASIC",
+    "difficulty": 3,
+    "qtype": "SHORT",
+    "prompt": "Ein Rechteck hat den Flächeninhalt A = 168 dm² und die Seite a = 240 cm, b = 7 dm. Berechne den Umfang in dm. U = ? dm",
+    "payload": {
+      "answer_type": "number",
+      "tolerance": 0,
+      "normalization": ["trim"]
+    },
+    "solution": { "value": 62 },
+    "explanation": "🎯 UMFANG MIT EINHEITEN\n\n📐 SCHRITT 1: Einheiten anpassen\n240 cm = 24 dm (÷10)\n\n📐 SCHRITT 2: Umfang berechnen\nU = 2a + 2b\nU = 2 × 24 dm + 2 × 7 dm\nU = 48 dm + 14 dm = 62 dm\n\n⚠️ ACHTUNG:\nImmer zuerst die Einheiten angleichen!\n\n✅ Antwort: 62 dm",
+    "tags": ["MSA", "perimeter", "rectangle", "units"]
+  }
+]

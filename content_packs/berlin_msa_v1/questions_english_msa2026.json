@@ -1,0 +1,292 @@
+[
+  {
+    "id": "EN_USE_TENSES_TRAIN_001",
+    "subject": "EN",
+    "topic_id": "EN_USE_TENSES",
+    "difficulty": 1,
+    "qtype": "MCQ",
+    "prompt": "Which tense is used for habits and regular actions? Example: 'I usually watch TV in the evening.'",
+    "payload": {
+      "choices": ["Simple Present", "Present Perfect", "Present Progressive", "Simple Past"],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "Simple Present"
+    },
+    "explanation": "🎯 WHAT IS THIS?\nIdentifying the Simple Present tense.\n\n📖 SIMPLE PRESENT - USES:\n• Habits and routines (Gewohnheiten)\n• General facts (Fakten)\n• Regular actions (regelmäßige Handlungen)\n\n✏️ FORMATION:\nInfinitive (+ -s/-es for he/she/it)\nI watch → He watches\n\n💡 SIGNAL WORDS:\n• usually, sometimes, always\n• every day, often, never\n• on Mondays, in the morning\n\n🎁 EXAMPLES:\n• I usually watch TV. (Gewohnheit)\n• The sun rises in the east. (Fakt)\n• She works in Berlin. (regelmäßig)\n\n⚠️ NOT:\n• Present Progressive = NOW (gerade jetzt)\n• Present Perfect = connection past-present\n\n✅ Answer: Simple Present",
+    "tags": ["MSA", "training", "tenses", "Simple_Present", "grammar"]
+  },
+  {
+    "id": "EN_USE_TENSES_TRAIN_002",
+    "subject": "EN",
+    "topic_id": "EN_USE_TENSES",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Which tense is correct? 'I have just arrived at the airport.'",
+    "payload": {
+      "choices": ["Present Perfect", "Simple Past", "Simple Present", "Past Progressive"],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "Present Perfect"
+    },
+    "explanation": "🎯 WHAT IS THIS?\nIdentifying the Present Perfect tense.\n\n📖 PRESENT PERFECT - USES:\n• Action just completed (gerade abgeschlossen)\n• Past action with present result\n• Experience (Erfahrung)\n\n✏️ FORMATION:\nhave/has + past participle (3rd form)\n\n✏️ ANALYSIS:\n'I HAVE just ARRIVED'\n  ↓           ↓\nhave    +  past participle\n= PRESENT PERFECT\n\n💡 SIGNAL WORDS:\n• just, recently (gerade)\n• yet, already, still\n• since, for\n• ever, never\n\n🎁 EXAMPLES:\n• I have just finished. (gerade fertig)\n• She has lived here since 2010. (seit)\n• Have you ever been to London? (jemals)\n\n✅ Answer: Present Perfect",
+    "tags": ["MSA", "training", "tenses", "Present_Perfect", "grammar"]
+  },
+  {
+    "id": "EN_USE_TENSES_TRAIN_003",
+    "subject": "EN",
+    "topic_id": "EN_USE_TENSES",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Which tense is correct? 'They are calling their grandma right now.'",
+    "payload": {
+      "choices": ["Present Progressive", "Simple Present", "Present Perfect", "Simple Past"],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "Present Progressive"
+    },
+    "explanation": "🎯 WHAT IS THIS?\nIdentifying the Present Progressive tense.\n\n📖 PRESENT PROGRESSIVE - USES:\n• Action happening NOW (jetzt gerade)\n• Temporary situation\n• Fixed plans (feste Pläne)\n\n✏️ FORMATION:\nto be (am/is/are) + verb + -ing\n\n✏️ ANALYSIS:\n'They ARE CALLING their grandma right now.'\n      ↓    ↓\n   are + calling (-ing)\n= PRESENT PROGRESSIVE\n\n💡 SIGNAL WORDS:\n• right now, now\n• at the moment\n• currently\n• Look! Listen!\n\n🎁 EXAMPLES:\n• I am studying right now. (gerade jetzt)\n• She is working at the moment. (im Moment)\n• Look! It is raining! (Schau!)\n\n⚠️ NOT Simple Present:\n'They call' = habit/regularly\n'They are calling' = right now\n\n✅ Answer: Present Progressive",
+    "tags": ["MSA", "training", "tenses", "Present_Progressive", "grammar"]
+  },
+  {
+    "id": "EN_USE_TENSES_TRAIN_004",
+    "subject": "EN",
+    "topic_id": "EN_USE_TENSES",
+    "difficulty": 2,
+    "qtype": "CLOZE",
+    "prompt": "Complete the sentence with the correct form: 'She ___ (go) to school every day.'",
+    "payload": {
+      "text_with_blanks": "She ___ to school every day.",
+      "blanks": [
+        {
+          "id": 1,
+          "choices": ["goes", "go", "is going", "has gone"]
+        }
+      ]
+    },
+    "solution": {
+      "answers": {"1": "goes"}
+    },
+    "explanation": "🎯 WHAT IS THIS?\nSimple Present with he/she/it.\n\n📖 THE RULE:\nSimple Present + he/she/it → add -s or -es\n\n✏️ WHY 'GOES'?\n1. 'every day' = Signal for Simple Present ✓\n2. 'She' = 3rd person singular\n3. go → goes (add -es)\n\n💡 SPELLING RULES FOR -S/-ES:\n• Most verbs: add -s (play → plays)\n• Verbs ending in -s, -sh, -ch, -x, -o: add -es\n  go → goes\n  watch → watches\n  wash → washes\n• Verbs ending in consonant + y: y → ies\n  study → studies\n  try → tries\n\n⚠️ NOT:\n• 'is going' = Present Progressive (NOW)\n• 'has gone' = Present Perfect\n\n✅ Answer: goes",
+    "tags": ["MSA", "training", "tenses", "Simple_Present", "third_person"]
+  },
+  {
+    "id": "EN_USE_TENSES_TRAIN_005",
+    "subject": "EN",
+    "topic_id": "EN_USE_TENSES",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "What is the Simple Past form of 'go'?",
+    "payload": {
+      "choices": ["went", "gone", "goed", "goes"],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "went"
+    },
+    "explanation": "🎯 WHAT IS THIS?\nIrregular verb: go - went - gone\n\n📖 IRREGULAR VERBS:\nThey don't follow the regular -ed pattern!\nYou must memorize them.\n\n✏️ GO (irregular verb):\nSimple Present: go/goes\nSimple Past: went\nPast Participle: gone\n\n💡 USAGE:\n• 'I went to school yesterday.' (Simple Past)\n• 'I have gone home.' (Present Perfect)\n\n⚠️ COMMON MISTAKE:\n'goed' is WRONG! ❌\n'go' is irregular → 'went'\n\n🎁 MORE IRREGULAR VERBS:\n• see → saw → seen\n• come → came → come\n• take → took → taken\n• write → wrote → written\n\n✅ Answer: went",
+    "tags": ["MSA", "training", "irregular_verbs", "Simple_Past", "go"]
+  },
+  {
+    "id": "EN_USE_TENSES_TRAIN_006",
+    "subject": "EN",
+    "topic_id": "EN_USE_TENSES",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "What is the Past Participle of 'write'?",
+    "payload": {
+      "choices": ["written", "wrote", "writed", "writing"],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "written"
+    },
+    "explanation": "🎯 WHAT IS THIS?\nIrregular verb: write - wrote - written\n\n📖 THE THREE FORMS:\n1. Infinitive/Simple Present: write\n2. Simple Past: wrote\n3. Past Participle: written\n\n✏️ WHEN DO WE USE PAST PARTICIPLE?\n• Present Perfect: I have written a letter.\n• Past Perfect: I had written a letter.\n• Passive: The letter was written.\n\n💡 SIMILAR PATTERN (-en ending):\n• write → wrote → written\n• drive → drove → driven\n• ride → rode → ridden\n• rise → rose → risen\n\n⚠️ COMMON MISTAKE:\n'writed' is WRONG! ❌\nIrregular verbs don't use -ed!\n\n✅ Answer: written",
+    "tags": ["MSA", "training", "irregular_verbs", "Past_Participle", "write"]
+  },
+  {
+    "id": "EN_USE_TENSES_TRAIN_007",
+    "subject": "EN",
+    "topic_id": "EN_USE_TENSES",
+    "difficulty": 2,
+    "qtype": "MATCH",
+    "prompt": "Match the verbs with their Simple Past forms.",
+    "payload": {
+      "left": ["see", "take", "know", "tell"],
+      "right": ["saw", "took", "knew", "told"]
+    },
+    "solution": {
+      "pairs": [
+        ["see", "saw"],
+        ["take", "took"],
+        ["know", "knew"],
+        ["tell", "told"]
+      ]
+    },
+    "explanation": "🎯 WHAT IS THIS?\nIrregular verbs - Simple Past forms.\n\n📖 THE MATCHES:\n• see → saw (sehen → sah)\n• take → took (nehmen → nahm)\n• know → knew (wissen → wusste)\n• tell → told (erzählen → erzählte)\n\n💡 FULL FORMS:\n• see - saw - seen\n• take - took - taken\n• know - knew - known\n• tell - told - told\n\n🎁 LEARNING TIP:\nLearn verbs in groups with similar patterns!\n\nGroup 1 (same Past & Participle):\ntell → told → told\nsell → sold → sold\nsend → sent → sent\n\nGroup 2 (vowel change):\nsee → saw → seen\nknow → knew → known\n\n✅ All pairs matched correctly!",
+    "tags": ["MSA", "training", "irregular_verbs", "Simple_Past", "matching"]
+  },
+  {
+    "id": "EN_USE_TENSES_TRAIN_008",
+    "subject": "EN",
+    "topic_id": "EN_USE_TENSES",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Which sentence uses the Present Perfect correctly?",
+    "payload": {
+      "choices": [
+        "I have lived here since 2020.",
+        "I have lived here yesterday.",
+        "I lived here since 2020.",
+        "I am living here since 2020."
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "I have lived here since 2020."
+    },
+    "explanation": "🎯 WHAT IS THIS?\nCorrect use of Present Perfect with 'since'.\n\n📖 THE RULE:\nSINCE + point in time → PRESENT PERFECT\nFOR + duration → PRESENT PERFECT\n\n✏️ ANALYSIS:\n✓ 'I have lived here since 2020.'\n  Present Perfect + since = CORRECT!\n\n❌ 'I have lived here yesterday.'\n  yesterday = finished time → Simple Past needed!\n\n❌ 'I lived here since 2020.'\n  since = needs Present Perfect!\n\n❌ 'I am living here since 2020.'\n  since = needs Present Perfect, not Progressive!\n\n💡 SINCE vs. FOR:\n• SINCE + point: since 2020, since Monday, since 3pm\n• FOR + duration: for 5 years, for 2 hours, for a week\n\n🎁 EXAMPLES:\n• I have worked here since January.\n• I have worked here for 6 months.\n\n✅ Answer: I have lived here since 2020.",
+    "tags": ["MSA", "training", "tenses", "Present_Perfect", "since_for"]
+  },
+  {
+    "id": "EN_USE_QUEST_NEG_TRAIN_001",
+    "subject": "EN",
+    "topic_id": "EN_USE_QUEST_NEG",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Which is the correct question form? 'She likes pizza.'",
+    "payload": {
+      "choices": [
+        "Does she like pizza?",
+        "Do she like pizza?",
+        "Is she like pizza?",
+        "Like she pizza?"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "Does she like pizza?"
+    },
+    "explanation": "🎯 WHAT IS THIS?\nForming questions in Simple Present.\n\n📖 THE RULE:\nDo/Does + subject + infinitive (without -s)?\n\n✏️ FORMATION:\nStatement: She likes pizza.\nQuestion: Does she like pizza?\n\n💡 DO vs. DOES:\n• DO for I, you, we, they\n• DOES for he, she, it\n\n⚠️ IMPORTANT:\nWhen using DOES, the main verb loses the -s!\n• She likes → Does she like? ✓\n• NOT: Does she likes? ❌\n\n🎁 MORE EXAMPLES:\n• He plays tennis. → Does he play tennis?\n• They work here. → Do they work here?\n• You speak German. → Do you speak German?\n\n❌ WRONG FORMS:\n• 'Do she like?' - wrong helper\n• 'Is she like?' - 'be' only for be-verbs/progressive\n• 'Like she?' - missing do/does\n\n✅ Answer: Does she like pizza?",
+    "tags": ["MSA", "training", "questions", "Simple_Present", "grammar"]
+  },
+  {
+    "id": "EN_USE_QUEST_NEG_TRAIN_002",
+    "subject": "EN",
+    "topic_id": "EN_USE_QUEST_NEG",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Which is the correct negative form? 'I like spinach.'",
+    "payload": {
+      "choices": [
+        "I don't like spinach.",
+        "I doesn't like spinach.",
+        "I not like spinach.",
+        "I no like spinach."
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "I don't like spinach."
+    },
+    "explanation": "🎯 WHAT IS THIS?\nForming negations in Simple Present.\n\n📖 THE RULE:\nSubject + do/does + not + infinitive\n\n✏️ FORMATION:\nPositive: I like spinach.\nNegative: I do not like spinach.\nShort form: I don't like spinach.\n\n💡 DON'T vs. DOESN'T:\n• DON'T (do not) for I, you, we, they\n• DOESN'T (does not) for he, she, it\n\n🎁 EXAMPLES:\n• I don't like spinach. (I)\n• She doesn't like spinach. (she)\n• They don't work here. (they)\n• He doesn't play tennis. (he)\n\n❌ WRONG FORMS:\n• 'I doesn't like' - wrong helper for 'I'\n• 'I not like' - missing do/does\n• 'I no like' - 'no' is not for verbs\n\n⚠️ SHORT FORMS:\n• do not = don't\n• does not = doesn't\n\n✅ Answer: I don't like spinach.",
+    "tags": ["MSA", "training", "negation", "Simple_Present", "grammar"]
+  },
+  {
+    "id": "EN_USE_MODALS_TRAIN_001",
+    "subject": "EN",
+    "topic_id": "EN_USE_MODALS",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Which modal verb expresses ABILITY (Fähigkeit)?",
+    "payload": {
+      "choices": ["can", "must", "should", "may"],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "can"
+    },
+    "explanation": "🎯 WHAT IS THIS?\nModal verbs and their meanings.\n\n📖 CAN = ABILITY (Fähigkeit/Können)\n\n✏️ EXAMPLES:\n• I can swim. (Ich kann schwimmen.)\n• She can speak German. (Sie kann Deutsch sprechen.)\n• Can you help me? (Kannst du mir helfen?)\n\n💡 OVERVIEW OF MODALS:\n• CAN = ability, possibility (können)\n• MUST = obligation, necessity (müssen)\n• SHOULD = advice, recommendation (sollte)\n• MAY = permission, possibility (dürfen, könnte)\n\n🎁 MORE EXAMPLES:\n• You must wear a seatbelt. (Pflicht)\n• You should study more. (Rat)\n• May I go to the toilet? (Erlaubnis)\n\n⚠️ GRAMMAR RULE:\nModal + infinitive WITHOUT 'to'!\n• I can swim. ✓\n• I can to swim. ❌\n\n✅ Answer: can",
+    "tags": ["MSA", "training", "modals", "can", "ability"]
+  },
+  {
+    "id": "EN_USE_COMPARISON_TRAIN_001",
+    "subject": "EN",
+    "topic_id": "EN_USE_COMPARISON",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "What is the comparative form of 'big'?",
+    "payload": {
+      "choices": ["bigger", "more big", "biger", "biggest"],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "bigger"
+    },
+    "explanation": "🎯 WHAT IS THIS?\nComparative adjectives - comparing two things.\n\n📖 THE RULE FOR SHORT ADJECTIVES:\nAdjective + -er\n\n✏️ FORMATION:\nbig → bigger\n\n⚠️ SPELLING RULE:\nShort adjective ending in consonant-vowel-consonant:\nDouble the last consonant!\nbig → bigger (not biger!)\nhot → hotter\nthin → thinner\n\n💡 MORE SHORT ADJECTIVES:\n• small → smaller\n• tall → taller\n• fast → faster\n• old → older\n\n🎁 LONG ADJECTIVES (3+ syllables):\nUse 'more' + adjective\n• beautiful → more beautiful\n• interesting → more interesting\n\n❌ WRONG FORMS:\n• 'more big' - big is short, use -er\n• 'biger' - need to double the g\n• 'biggest' - that's superlative (best of all)\n\n✅ Answer: bigger",
+    "tags": ["MSA", "training", "comparison", "comparative", "adjectives"]
+  },
+  {
+    "id": "EN_VOCAB_SCHOOL_TRAIN_001",
+    "subject": "EN",
+    "topic_id": "EN_VOCAB_SCHOOL",
+    "difficulty": 1,
+    "qtype": "MATCH",
+    "prompt": "Match the English words with their German translations.",
+    "payload": {
+      "left": ["homework", "exam", "teacher", "subject"],
+      "right": ["Hausaufgaben", "Prüfung", "Lehrer/in", "Schulfach"]
+    },
+    "solution": {
+      "pairs": [
+        ["homework", "Hausaufgaben"],
+        ["exam", "Prüfung"],
+        ["teacher", "Lehrer/in"],
+        ["subject", "Schulfach"]
+      ]
+    },
+    "explanation": "🎯 WHAT IS THIS?\nSchool vocabulary (Schulvokabeln).\n\n📖 THE MATCHES:\n• homework = Hausaufgaben\n• exam = Prüfung\n• teacher = Lehrer/in\n• subject = Schulfach\n\n💡 MORE SCHOOL VOCABULARY:\n• classroom = Klassenzimmer\n• student/pupil = Schüler/in\n• lesson = Unterrichtsstunde\n• timetable = Stundenplan\n• break = Pause\n• grade/mark = Note\n\n🎁 EXAMPLE SENTENCES:\n• I have to do my homework.\n• The math exam is next week.\n• My favorite subject is English.\n• Our teacher is very nice.\n\n✅ All pairs matched correctly!",
+    "tags": ["MSA", "training", "vocabulary", "school", "matching"]
+  },
+  {
+    "id": "EN_USE_TENSES_TRAIN_009",
+    "subject": "EN",
+    "topic_id": "EN_USE_TENSES",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "What is the Past Participle of 'speak'?",
+    "payload": {
+      "choices": ["spoken", "spoke", "speaked", "speaking"],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "spoken"
+    },
+    "explanation": "🎯 WHAT IS THIS?\nIrregular verb: speak - spoke - spoken\n\n📖 THE THREE FORMS:\n1. Infinitive: speak\n2. Simple Past: spoke\n3. Past Participle: spoken\n\n✏️ USAGE:\n• Simple Past: I spoke to him yesterday.\n• Present Perfect: I have spoken to him.\n• Passive: English is spoken here.\n\n💡 SIMILAR PATTERN:\n• speak → spoke → spoken\n• break → broke → broken\n• steal → stole → stolen\n• choose → chose → chosen\n\n⚠️ COMMON MISTAKE:\n'speaked' is WRONG! ❌\n'speak' is irregular!\n\n🎁 TIP:\nMany verbs with 'ea' follow this pattern:\nea → o → o (with -en)\n\n✅ Answer: spoken",
+    "tags": ["MSA", "training", "irregular_verbs", "Past_Participle", "speak"]
+  },
+  {
+    "id": "EN_WRITE_ERRORFIX_TRAIN_001",
+    "subject": "EN",
+    "topic_id": "EN_WRITE_ERRORFIX",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Find the error: 'She don't like coffee.'",
+    "payload": {
+      "choices": [
+        "don't should be doesn't",
+        "like should be likes",
+        "She should be Her",
+        "There is no error"
+      ],
+      "shuffle": true
+    },
+    "solution": {
+      "correct_choice": "don't should be doesn't"
+    },
+    "explanation": "🎯 WHAT IS THIS?\nError correction - do/does in negations.\n\n📖 THE RULE:\n• DON'T for I, you, we, they\n• DOESN'T for he, she, it\n\n✏️ THE ERROR:\n'She don't like coffee.' ❌\n'She' = 3rd person singular → needs DOESN'T\n\n✏️ CORRECT SENTENCE:\n'She doesn't like coffee.' ✓\n\n💡 WHY NOT 'LIKES'?\nAfter doesn't, use the infinitive (base form)!\n• She doesn't like ✓\n• She doesn't likes ❌\n\n🎁 MORE EXAMPLES:\n• He doesn't work here. ✓\n• It doesn't matter. ✓\n• They don't know. ✓\n• I don't understand. ✓\n\n⚠️ COMMON MSA MISTAKE:\nMixing up don't/doesn't is very common!\nRemember: he/she/it → DOESN'T\n\n✅ Answer: don't should be doesn't",
+    "tags": ["MSA", "training", "error_correction", "negation", "grammar"]
+  }
+]

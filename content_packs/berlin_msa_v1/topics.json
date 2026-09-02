@@ -1,0 +1,90 @@
+[
+  { "id": "MATH", "subject": "MATH", "code": "MATH", "name": "Mathematik", "parent_id": null },
+
+  { "id": "MATH_NUM", "subject": "MATH", "code": "MATH_NUM", "name": "Zahlen und Operationen", "parent_id": "MATH" },
+  { "id": "MATH_NUM_FRAC_BASIC", "subject": "MATH", "code": "MATH_NUM_FRAC_BASIC", "name": "Brueche Grundlagen (kuerzen, erweitern, vergleichen)", "parent_id": "MATH_NUM" },
+  { "id": "MATH_NUM_FRAC_OPS", "subject": "MATH", "code": "MATH_NUM_FRAC_OPS", "name": "Brueche Rechenarten", "parent_id": "MATH_NUM" },
+  { "id": "MATH_NUM_DEC_CONV", "subject": "MATH", "code": "MATH_NUM_DEC_CONV", "name": "Dezimalzahlen und Umwandlungen", "parent_id": "MATH_NUM" },
+  { "id": "MATH_NUM_PCT_BASIC", "subject": "MATH", "code": "MATH_NUM_PCT_BASIC", "name": "Prozentrechnung Grundlagen (W, G, p)", "parent_id": "MATH_NUM" },
+  { "id": "MATH_NUM_PCT_CHANGE", "subject": "MATH", "code": "MATH_NUM_PCT_CHANGE", "name": "Prozentuale Veraenderung (Zu, Abnahme)", "parent_id": "MATH_NUM" },
+  { "id": "MATH_NUM_INTEREST", "subject": "MATH", "code": "MATH_NUM_INTEREST", "name": "Zinsrechnung einfach", "parent_id": "MATH_NUM" },
+
+  { "id": "MATH_ALG", "subject": "MATH", "code": "MATH_ALG", "name": "Algebra", "parent_id": "MATH" },
+  { "id": "MATH_ALG_TERMS_SIMPLIFY", "subject": "MATH", "code": "MATH_ALG_TERMS_SIMPLIFY", "name": "Terme vereinfachen", "parent_id": "MATH_ALG" },
+  { "id": "MATH_ALG_BRACKETS", "subject": "MATH", "code": "MATH_ALG_BRACKETS", "name": "Klammern aufloesen und ausmultiplizieren", "parent_id": "MATH_ALG" },
+  { "id": "MATH_ALG_EQU_LINEAR", "subject": "MATH", "code": "MATH_ALG_EQU_LINEAR", "name": "Lineare Gleichungen (eine Variable)", "parent_id": "MATH_ALG" },
+  { "id": "MATH_ALG_EQU_WORD", "subject": "MATH", "code": "MATH_ALG_EQU_WORD", "name": "Sachaufgaben mit Gleichungen", "parent_id": "MATH_ALG" },
+
+  { "id": "MATH_FUNC", "subject": "MATH", "code": "MATH_FUNC", "name": "Funktionen", "parent_id": "MATH" },
+  { "id": "MATH_FUNC_PROP", "subject": "MATH", "code": "MATH_FUNC_PROP", "name": "Proportionalitaet und Zuordnungen", "parent_id": "MATH_FUNC" },
+  { "id": "MATH_FUNC_LINEAR_FORM", "subject": "MATH", "code": "MATH_FUNC_LINEAR_FORM", "name": "Lineare Funktion (y = mx + b) verstehen", "parent_id": "MATH_FUNC" },
+  { "id": "MATH_FUNC_LINEAR_GRAPH", "subject": "MATH", "code": "MATH_FUNC_LINEAR_GRAPH", "name": "Graphen lesen und zeichnen (basis)", "parent_id": "MATH_FUNC" },
+  { "id": "MATH_FUNC_LINEAR_TABLE", "subject": "MATH", "code": "MATH_FUNC_LINEAR_TABLE", "name": "Tabelle <-> Term <-> Graph", "parent_id": "MATH_FUNC" },
+  { "id": "MATH_FUNC_QUAD", "subject": "MATH", "code": "MATH_FUNC_QUAD", "name": "Quadratische Funktionen (Parabel, Scheitel)", "parent_id": "MATH_FUNC" },
+  { "id": "MATH_FUNC_EXP", "subject": "MATH", "code": "MATH_FUNC_EXP", "name": "Exponentielles Wachstum und Abnahme", "parent_id": "MATH_FUNC" },
+
+  { "id": "MATH_GEO", "subject": "MATH", "code": "MATH_GEO", "name": "Geometrie", "parent_id": "MATH" },
+  { "id": "MATH_GEO_AREA_BASIC", "subject": "MATH", "code": "MATH_GEO_AREA_BASIC", "name": "Flaechen und Umfang (Rechteck, Dreieck, Parallelogramm)", "parent_id": "MATH_GEO" },
+  { "id": "MATH_GEO_CIRCLE", "subject": "MATH", "code": "MATH_GEO_CIRCLE", "name": "Kreis (Umfang, Flaeche)", "parent_id": "MATH_GEO" },
+  { "id": "MATH_GEO_VOLUME", "subject": "MATH", "code": "MATH_GEO_VOLUME", "name": "Volumen (Quader, Prisma, Zylinder)", "parent_id": "MATH_GEO" },
+  { "id": "MATH_GEO_PYTH", "subject": "MATH", "code": "MATH_GEO_PYTH", "name": "Satz des Pythagoras (basis)", "parent_id": "MATH_GEO" },
+  { "id": "MATH_GEO_TRIG", "subject": "MATH", "code": "MATH_GEO_TRIG", "name": "Trigonometrie (sin, cos, tan)", "parent_id": "MATH_GEO" },
+  { "id": "MATH_GEO_VOLUME_ADV", "subject": "MATH", "code": "MATH_GEO_VOLUME_ADV", "name": "Volumen (Pyramide, Kegel, Kugel)", "parent_id": "MATH_GEO" },
+  { "id": "MATH_GEO_UNITS", "subject": "MATH", "code": "MATH_GEO_UNITS", "name": "Einheiten umrechnen", "parent_id": "MATH_GEO" },
+
+  { "id": "MATH_DATA", "subject": "MATH", "code": "MATH_DATA", "name": "Daten und Zufall", "parent_id": "MATH" },
+  { "id": "MATH_DATA_STATS", "subject": "MATH", "code": "MATH_DATA_STATS", "name": "Mittelwert, Median, Streuung basis", "parent_id": "MATH_DATA" },
+  { "id": "MATH_DATA_CHARTS", "subject": "MATH", "code": "MATH_DATA_CHARTS", "name": "Diagramme lesen", "parent_id": "MATH_DATA" },
+  { "id": "MATH_DATA_PROB", "subject": "MATH", "code": "MATH_DATA_PROB", "name": "Wahrscheinlichkeit Grundlagen", "parent_id": "MATH_DATA" },
+
+  { "id": "DE", "subject": "DE", "code": "DE", "name": "Deutsch", "parent_id": null },
+
+  { "id": "DE_ORTHO", "subject": "DE", "code": "DE_ORTHO", "name": "Rechtschreibung", "parent_id": "DE" },
+  { "id": "DE_ORTHO_CASE", "subject": "DE", "code": "DE_ORTHO_CASE", "name": "Gross und Kleinschreibung", "parent_id": "DE_ORTHO" },
+  { "id": "DE_ORTHO_SS_SZ", "subject": "DE", "code": "DE_ORTHO_SS_SZ", "name": "ss und ss (ss/ss) und sZ (ss/ß)", "parent_id": "DE_ORTHO" },
+  { "id": "DE_ORTHO_DOUBLE", "subject": "DE", "code": "DE_ORTHO_DOUBLE", "name": "Doppelkonsonanten und Dehnung", "parent_id": "DE_ORTHO" },
+  { "id": "DE_ORTHO_SEP_JOIN", "subject": "DE", "code": "DE_ORTHO_SEP_JOIN", "name": "Getrennt und Zusammenschreibung (basis)", "parent_id": "DE_ORTHO" },
+
+  { "id": "DE_PUNCT", "subject": "DE", "code": "DE_PUNCT", "name": "Zeichensetzung", "parent_id": "DE" },
+  { "id": "DE_PUNCT_COMMA_MAIN_SUB", "subject": "DE", "code": "DE_PUNCT_COMMA_MAIN_SUB", "name": "Komma bei Haupt und Nebensatz", "parent_id": "DE_PUNCT" },
+  { "id": "DE_PUNCT_COMMA_LIST", "subject": "DE", "code": "DE_PUNCT_COMMA_LIST", "name": "Komma bei Aufzaehlungen", "parent_id": "DE_PUNCT" },
+  { "id": "DE_PUNCT_INFINITIVE", "subject": "DE", "code": "DE_PUNCT_INFINITIVE", "name": "Komma bei Infinitivgruppen (basis)", "parent_id": "DE_PUNCT" },
+  { "id": "DE_PUNCT_SPEECH", "subject": "DE", "code": "DE_PUNCT_SPEECH", "name": "Direkte Rede (Anfuehrungszeichen, Komma, Doppelpunkt)", "parent_id": "DE_PUNCT" },
+
+  { "id": "DE_GRAM", "subject": "DE", "code": "DE_GRAM", "name": "Grammatik", "parent_id": "DE" },
+  { "id": "DE_GRAM_WORD_CLASSES", "subject": "DE", "code": "DE_GRAM_WORD_CLASSES", "name": "Wortarten (Nomen, Verb, Adjektiv)", "parent_id": "DE_GRAM" },
+  { "id": "DE_GRAM_TENSES", "subject": "DE", "code": "DE_GRAM_TENSES", "name": "Zeitformen (Praesens, Praeteritum, Perfekt)", "parent_id": "DE_GRAM" },
+  { "id": "DE_GRAM_SENTENCE_TYPES", "subject": "DE", "code": "DE_GRAM_SENTENCE_TYPES", "name": "Satzarten (Hauptsatz, Nebensatz)", "parent_id": "DE_GRAM" },
+  { "id": "DE_GRAM_SENTENCE_PARTS", "subject": "DE", "code": "DE_GRAM_SENTENCE_PARTS", "name": "Satzglieder (Subjekt, Praedikat, Objekt) basis", "parent_id": "DE_GRAM" },
+
+  { "id": "DE_READ", "subject": "DE", "code": "DE_READ", "name": "Lesen und Verstehen", "parent_id": "DE" },
+  { "id": "DE_READ_CORE", "subject": "DE", "code": "DE_READ_CORE", "name": "Kernaussage und Intention", "parent_id": "DE_READ" },
+  { "id": "DE_READ_ARGUMENT", "subject": "DE", "code": "DE_READ_ARGUMENT", "name": "Argumente erkennen und zuordnen", "parent_id": "DE_READ" },
+  { "id": "DE_READ_EVIDENCE", "subject": "DE", "code": "DE_READ_EVIDENCE", "name": "Textbelege finden (Zitatstelle)", "parent_id": "DE_READ" },
+
+  { "id": "DE_WRITE", "subject": "DE", "code": "DE_WRITE", "name": "Schreiben (kurze Formate)", "parent_id": "DE" },
+  { "id": "DE_WRITE_REPHRASE", "subject": "DE", "code": "DE_WRITE_REPHRASE", "name": "Saetze umformulieren", "parent_id": "DE_WRITE" },
+  { "id": "DE_WRITE_SUMMARY", "subject": "DE", "code": "DE_WRITE_SUMMARY", "name": "Mini Zusammenfassung (1 bis 2 Saetze)", "parent_id": "DE_WRITE" },
+
+  { "id": "EN", "subject": "EN", "code": "EN", "name": "Englisch", "parent_id": null },
+
+  { "id": "EN_USE", "subject": "EN", "code": "EN_USE", "name": "Use of English (Grammar and Vocabulary)", "parent_id": "EN" },
+  { "id": "EN_USE_TENSES", "subject": "EN", "code": "EN_USE_TENSES", "name": "Tenses (PS, PC, Past, PresPerf)", "parent_id": "EN_USE" },
+  { "id": "EN_USE_QUEST_NEG", "subject": "EN", "code": "EN_USE_QUEST_NEG", "name": "Questions and Negations", "parent_id": "EN_USE" },
+  { "id": "EN_USE_MODALS", "subject": "EN", "code": "EN_USE_MODALS", "name": "Modal verbs (can, must, should)", "parent_id": "EN_USE" },
+  { "id": "EN_USE_COMPARISON", "subject": "EN", "code": "EN_USE_COMPARISON", "name": "Adjectives and comparison", "parent_id": "EN_USE" },
+
+  { "id": "EN_VOCAB", "subject": "EN", "code": "EN_VOCAB", "name": "Vocabulary sets", "parent_id": "EN" },
+  { "id": "EN_VOCAB_SCHOOL", "subject": "EN", "code": "EN_VOCAB_SCHOOL", "name": "Vocabulary: School", "parent_id": "EN_VOCAB" },
+  { "id": "EN_VOCAB_DAILYLIFE", "subject": "EN", "code": "EN_VOCAB_DAILYLIFE", "name": "Vocabulary: Daily life", "parent_id": "EN_VOCAB" },
+  { "id": "EN_VOCAB_TRAVEL", "subject": "EN", "code": "EN_VOCAB_TRAVEL", "name": "Vocabulary: Travel", "parent_id": "EN_VOCAB" },
+  { "id": "EN_VOCAB_OPINIONS", "subject": "EN", "code": "EN_VOCAB_OPINIONS", "name": "Vocabulary: Opinions and feelings", "parent_id": "EN_VOCAB" },
+
+  { "id": "EN_READ", "subject": "EN", "code": "EN_READ", "name": "Reading", "parent_id": "EN" },
+  { "id": "EN_READ_CORE", "subject": "EN", "code": "EN_READ_CORE", "name": "Reading comprehension (short texts)", "parent_id": "EN_READ" },
+  { "id": "EN_READ_EMAILS", "subject": "EN", "code": "EN_READ_EMAILS", "name": "E-mails and everyday texts", "parent_id": "EN_READ" },
+
+  { "id": "EN_WRITE", "subject": "EN", "code": "EN_WRITE", "name": "Writing (short formats)", "parent_id": "EN" },
+  { "id": "EN_WRITE_GUIDED", "subject": "EN", "code": "EN_WRITE_GUIDED", "name": "Guided writing and sentence building", "parent_id": "EN_WRITE" },
+  { "id": "EN_WRITE_ERRORFIX", "subject": "EN", "code": "EN_WRITE_ERRORFIX", "name": "Error correction (common mistakes)", "parent_id": "EN_WRITE" }
+]
