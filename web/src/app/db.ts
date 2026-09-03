@@ -34,7 +34,7 @@ export async function saveProfiles(profiles: Profile[]): Promise<void> {
 }
 
 export async function loadProgress(profileId: string): Promise<ProgressSnapshot> {
-  return (await safeGet<ProgressSnapshot>(progressKey(profileId))) ?? { mastery: [], attempts: [], counters: {} };
+  return (await safeGet<ProgressSnapshot>(progressKey(profileId))) ?? { mastery: [], attempts: [], counters: {}, primers: {} };
 }
 
 export async function deleteProfileData(profileId: string): Promise<void> {

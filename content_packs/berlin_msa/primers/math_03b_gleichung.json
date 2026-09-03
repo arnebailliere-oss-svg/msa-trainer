@@ -1,0 +1,73 @@
+[
+  {
+    "id": "P_MATH_GLEICHUNG",
+    "subject": "MATH",
+    "title": "Gleichungen: die Waage",
+    "teaser": "Was eine Gleichung ist, was „lösen“ heißt und warum man auf beiden Seiten das Gleiche tun muss",
+    "hook": "Eine Gleichung ist ein Rätsel: „Ich denke mir eine Zahl. Das Doppelte plus 3 ergibt 11. Welche Zahl?“ Genau das ist $2x + 3 = 11$. Lösen heißt nur: das Rätsel knacken. Und dafür gibt es einen sicheren Weg.",
+    "outro": "Waage, beide Seiten, Probe. Mehr steckt in keiner Gleichung, auch nicht in den langen. Jetzt in die Lektion.",
+    "steps": [
+      {
+        "title": "Ein Rätsel",
+        "body": "Ich denke mir eine Zahl.\n\nDas Doppelte plus 3 ergibt 11.\n\n$2x + 3 = 11$",
+        "say": "Das ist alles, was eine Gleichung ist: ein Zahlenrätsel in kurzer Schreibweise. Das x ist die gesuchte Zahl."
+      },
+      {
+        "title": "Das Gleichheitszeichen",
+        "body": "$=$ heißt: links und rechts ist **derselbe Wert**.\n\nWie eine **Waage** im Gleichgewicht.",
+        "say": "Links liegt die unbekannte Menge, rechts liegen 11. Die Waage steht gerade."
+      },
+      {
+        "title": "Was heißt „lösen“?",
+        "body": "Die **Lösung** ist die Zahl, die das Rätsel wahr macht.\n\n$x = 4$: $2 \\cdot 4 + 3 = 11$ ✓\n\n$x = 5$: $2 \\cdot 5 + 3 = 13$ ✗",
+        "say": "Du könntest raten. Aber es gibt einen sicheren Weg. Nächste Tafel."
+      },
+      {
+        "title": "Auf beiden Seiten das Gleiche",
+        "body": "Nimmst du links 3 weg, musst du rechts auch 3 wegnehmen.\n\n$2x + 3 = 11 \\quad | -3$\n\n$2x = 8$",
+        "say": "Sonst kippt die Waage. Der senkrechte Strich bedeutet: auf beiden Seiten minus 3."
+      },
+      {
+        "title": "Dann teilen",
+        "body": "$2x = 8$ heißt: 2 mal $x$ ist 8.\n\n$2x = 8 \\quad | :2$\n\n$x = 4$",
+        "say": "Erst die Zahlen wegräumen, dann durch die Zahl vor dem x teilen. Fertig."
+      },
+      {
+        "title": "Die Probe",
+        "body": "Lösung einsetzen:\n\n$2 \\cdot 4 + 3 = 8 + 3 = 11$ ✓",
+        "say": "Mit der Probe merkst du jeden Fehler selbst. In der Prüfung ist das Gold wert."
+      },
+      {
+        "title": "„Rüberbringen“",
+        "body": "Viele sagen: „Die 3 rüberbringen, dann wird sie minus.“\n\nDas ist **dasselbe** wie $| -3$ auf beiden Seiten.",
+        "say": "Beim Seitenwechsel dreht sich das Zeichen um: Plus wird Minus, Mal wird Geteilt."
+      },
+      {
+        "title": "x auf beiden Seiten",
+        "body": "$5x + 3 = 3x + 11 \\quad | -3x$\n\n$2x + 3 = 11 \\quad | -3$\n\n$2x = 8 \\quad | :2$\n\n$x = 4$",
+        "say": "Erst alle x auf eine Seite. Dann wie gewohnt. Das Ziel ist immer: x steht allein."
+      },
+      {
+        "title": "Wie viele Lösungen?",
+        "body": "$x + 1 = x + 1$ → **immer** wahr\n\n$x = x + 1$ → **nie** wahr\n\n$x^2 = 9$ → $x = 3$ oder $x = -3$",
+        "say": "Meistens gibt es genau eine Lösung. Aber nicht immer, und genau das fragen sie gern."
+      }
+    ],
+    "vocab": [
+      { "term": "Gleichung", "plain": "Zwei Terme mit einem Gleichheitszeichen dazwischen.", "example": "$2x + 3 = 11$" },
+      { "term": "Lösung", "plain": "Die Zahl, die die Gleichung wahr macht.", "example": "$x = 4$" },
+      { "term": "Lösungsmenge L", "plain": "Alle Lösungen zusammen, in geschweiften Klammern.", "example": "$L = \\{4\\}$" },
+      { "term": "Äquivalenzumformung", "plain": "Ein erlaubter Schritt auf beiden Seiten, der die Lösung nicht ändert.", "example": "$| -3$ oder $| :2$" },
+      { "term": "Probe", "plain": "Lösung einsetzen und nachrechnen.", "example": "$2 \\cdot 4 + 3 = 11$ ✓" },
+      { "term": "Isolieren", "plain": "Das x allein auf eine Seite stellen.", "example": "$x = 4$" },
+      { "term": "Unbekannte", "plain": "Ein anderes Wort für die gesuchte Variable.", "example": "meist $x$" }
+    ],
+    "quiz": [
+      { "prompt": "Welche Zahl löst $x + 5 = 12$?", "choices": ["7", "17", "5", "12"], "correct": "7", "explain": "$7 + 5 = 12$. Oder: auf beiden Seiten minus 5." },
+      { "prompt": "$2x + 3 = 11$. Was machst du zuerst?", "choices": ["Auf beiden Seiten $-3$", "Auf beiden Seiten $:2$", "Links $-3$, rechts nichts", "$x = 11 - 2$"], "correct": "Auf beiden Seiten $-3$", "explain": "Erst die Zahlen wegräumen, und immer auf beiden Seiten. Dann $2x = 8$." },
+      { "prompt": "Was bedeutet der Strich in „$| -4$“?", "choices": ["Auf beiden Seiten 4 abziehen", "Nur links 4 abziehen", "Durch 4 teilen", "4 dazuzählen"], "correct": "Auf beiden Seiten 4 abziehen", "explain": "Der Strich heißt: Das Folgende passiert links und rechts." },
+      { "prompt": "$x = 3$ soll Lösung von $4x - 2 = 10$ sein. Wie prüfst du das?", "choices": ["Einsetzen: $4 \\cdot 3 - 2 = 10$ ✓", "Die Gleichung nochmal lösen", "3 durch 4 teilen", "Gar nicht, das sieht man"], "correct": "Einsetzen: $4 \\cdot 3 - 2 = 10$ ✓", "explain": "Probe heißt einsetzen und nachrechnen. $12 - 2 = 10$, stimmt." },
+      { "prompt": "Wie viele Lösungen hat $x^2 = 16$?", "choices": ["Zwei: 4 und $-4$", "Eine: 4", "Eine: 8", "Keine"], "correct": "Zwei: 4 und $-4$", "explain": "$4 \\cdot 4 = 16$ und $(-4) \\cdot (-4) = 16$." }
+    ]
+  }
+]

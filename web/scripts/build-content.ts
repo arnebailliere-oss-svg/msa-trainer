@@ -12,8 +12,8 @@ import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from 
 import { join, resolve } from "node:path";
 import { evaluate } from "../src/core/evaluators";
 import { parseFraction, reduceFraction } from "../src/core/normalizers";
-import type { ClozePayload, ContentPack, ContentSection, Lesson, MatchPayload, McqPayload, Question, ShortPayload, Topic } from "../src/core/types";
-import { hasPlaceholder, parseExplanation, renderPreview } from "../src/core/variants";
+import type { ClozePayload, ContentPack, ContentSection, Lesson, MatchPayload, McqPayload, Primer, Question, ShortPayload, Topic } from "../src/core/types";
+import { hasPlaceholder, parseExplanation, renderFigureSpec, renderPreview } from "../src/core/variants";
 
 const ROOT = resolve(import.meta.dirname, "../..");
 const PACK_DIR = join(ROOT, "content_packs", "berlin_msa");
@@ -58,18 +58,20 @@ for (const file of listJson(join(PACK_DIR, "questions"))) {
 }
 const lessons: Lesson[] = [];
 for (const file of listJson(join(PACK_DIR, "lessons"))) lessons.push(...readJson<Lesson[]>(file));
+const primers: Primer[] = [];
+for (const file of listJson(join(PACK_DIR, "primers"))) primers.push(...readJson<Primer[]>(file));
 
 // --- schema -------------------------------------------------------------------
 
 const ajv = new Ajv({ allErrors: true, allowUnionTypes: true });
 const schema = readJson<Record<string, unknown>>(SCHEMA_PATH);
 const validate = ajv.compile(schema);
-if (!validate({ topics, questions, lessons })) {
+if (!validate({ topics, questions, lessons, primers })) {
   for (const e of validate.errors ?? []) {
-    const m = e.instancePath.match(/^\/(topics|questions|lessons)\/(\d+)/);
+    const m = e.instancePath.match(/^\/(topics|questions|lessons|primers)\/(\d+)/);
     let where = e.instancePath;
     if (m) {
-      const list = m[1] === "topics" ? topics : m[1] === "questions" ? questions : lessons;
+      const list = m[1] === "topics" ? topics : m[1] === "questions" ? questions : m[1] === "lessons" ? lessons : primers;
       where = `${m[1]}[${m[2]}] ${(list[Number(m[2])] as { id?: string })?.id ?? ""}${e.instancePath.slice(m[0].length)}`;
     }
     error(where, `${e.message ?? "schema violation"} ${e.params ? JSON.stringify(e.params) : ""}`);
@@ -89,6 +91,7 @@ const dup = <T extends { id: string }>(items: T[], what: string) => {
 dup(topics, "topic");
 dup(questions, "question");
 dup(lessons, "lesson");
+dup(primers, "primer");
 for (const t of topics) if (t.parentId && !topicById.has(t.parentId)) error(`topic ${t.id}`, `unknown parentId ${t.parentId}`);
 
 const MATH_INLINE = /\$\$([\s\S]+?)\$\$|\$([^$\n]+?)\$/g;
@@ -228,6 +231,8 @@ for (const q of questions) {
   if (templated && prompts.size < 5) warn(where, `template only produced ${prompts.size} distinct prompts in ${n} renders`);
 }
 
+const primerById = new Map(primers.map((p) => [p.id, p]));
+const primerUsed = new Set<string>();
 const lessonTopics = new Set(lessons.map((l) => l.topicId));
 for (const l of lessons) {
   const where = `lesson ${l.id}`;
@@ -238,6 +243,36 @@ for (const l of lessons) {
   for (const tid of l.alsoFor ?? []) lessonTopics.add(tid);
   if (l.intro) checkTex(where, l.intro);
   checkSections(where, l.sections);
+  for (const pid of [l.primer, ...l.sections.map((s) => s.primer)]) {
+    if (!pid) continue;
+    if (!primerById.has(pid)) error(where, `unknown primer ${pid}`);
+    primerUsed.add(pid);
+  }
+}
+
+// Eulen-Lektionen ("Frag Ferdinand"): plain-language primers with a mini quiz.
+for (const p of primers) {
+  const where = `primer ${p.id}`;
+  for (const t of [p.title, p.teaser, p.hook, p.outro ?? ""]) checkTex(where, t);
+  p.steps.forEach((s, i) => {
+    checkTex(`${where} step ${i + 1}`, s.title);
+    checkTex(`${where} step ${i + 1}`, s.body);
+    if (s.figure) {
+      try {
+        renderFigureSpec(s.figure, {});
+      } catch (e) {
+        error(`${where} step ${i + 1}`, `figure failed: ${(e as Error).message}`);
+      }
+    }
+  });
+  for (const v of p.vocab) for (const t of [v.term, v.plain, v.example ?? ""]) checkTex(where, t);
+  p.quiz.forEach((q, i) => {
+    const w = `${where} quiz ${i + 1}`;
+    for (const t of [q.prompt, q.explain, ...q.choices]) checkTex(w, t);
+    if (!q.choices.includes(q.correct)) error(w, `correct "${q.correct}" not among choices`);
+    if (new Set(q.choices).size !== q.choices.length) error(w, "duplicate choices");
+  });
+  if (!primerUsed.has(p.id)) warn(where, "not referenced by any lesson or section");
 }
 
 // Coverage warnings
@@ -259,7 +294,7 @@ for (const i of errors) console.log(`  ERROR ${i.where}: ${i.message}`);
 const bySubject = (s: string) => questions.filter((q) => q.subject === s).length;
 console.log(
   `\ncontent: ${topics.length} topics, ${questions.length} questions (MATH ${bySubject("MATH")}, DE ${bySubject("DE")}, EN ${bySubject("EN")}), ` +
-    `${questions.filter((q) => q.variants?.enabled).length} templated, ${lessons.length} lessons — ${errors.length} errors, ${warnings.length} warnings`,
+    `${questions.filter((q) => q.variants?.enabled).length} templated, ${lessons.length} lessons, ${primers.length} Eulen-Lektionen — ${errors.length} errors, ${warnings.length} warnings`,
 );
 if (errors.length > 0) {
   console.log("content: FAILED");
@@ -277,6 +312,7 @@ const normalized: ContentPack = {
   topics,
   questions: questions.map((q) => ({ ...q, explanation: parseExplanation(q.explanation) })),
   lessons,
+  primers,
 };
 const subjects = ["MATH", "DE", "EN"] as const;
 const out: Record<string, unknown> = {
@@ -284,14 +320,15 @@ const out: Record<string, unknown> = {
   version: normalized.version,
   title: normalized.title,
   builtAt: new Date().toISOString(),
-  subjects: {} as Record<string, { questions: number; lessons: number; file: string }>,
+  subjects: {} as Record<string, { questions: number; lessons: number; primers: number; file: string }>,
 };
 for (const s of subjects) {
   const qs = normalized.questions.filter((q) => q.subject === s);
   const ls = normalized.lessons.filter((l) => l.subject === s);
+  const ps = primers.filter((p) => p.subject === s);
   const file = `${s}.json`;
-  writeFileSync(join(OUT_DIR, file), JSON.stringify({ questions: qs, lessons: ls }));
-  (out.subjects as Record<string, unknown>)[s] = { questions: qs.length, lessons: ls.length, file };
+  writeFileSync(join(OUT_DIR, file), JSON.stringify({ questions: qs, lessons: ls, primers: ps }));
+  (out.subjects as Record<string, unknown>)[s] = { questions: qs.length, lessons: ls.length, primers: ps.length, file };
 }
 writeFileSync(join(OUT_DIR, "topics.json"), JSON.stringify(topics));
 writeFileSync(join(OUT_DIR, "manifest.json"), JSON.stringify(out, null, 2));

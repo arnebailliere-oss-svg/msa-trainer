@@ -1,6 +1,6 @@
 # MSA Trainer — Project Board
 
-> Source of truth for progress. Updated by Claude as work moves. Last update: 2026-09-02 23:15
+> Source of truth for progress. Updated by Claude as work moves. Last update: 2026-09-03 01:10
 >
 > Columns: **Backlog** → **In Progress** → **Review** (built, needs verification) → **Done** (verified).
 
@@ -15,6 +15,7 @@ teach → drill (fresh variants) → repeat (mastery + repair), Math first from 
 ---
 
 ## In Progress
+- E7-2 · **Frag Ferdinand — content**: remaining Eulen-Lektionen (Brüche, Prozent, Potenzen, Funktionen, Parabel, LGS, Geometrie-Begriffe, Pythagoras/Trig, Körper, Stochastik, Einheiten) and badges on every dense lesson section · L
 - E6-1 · README + CLAUDE.md for the web app · S
 
 ## Review
@@ -25,6 +26,7 @@ teach → drill (fresh variants) → repeat (mastery + repair), Math first from 
 - E1 · Core port to TS (115 unit tests), persistence
 - E2-1 … E2-3 · Schema v2, validator (schema + semantics + 60-render template exercise + KaTeX + figure rendering), legacy migration with 3 fixes
 - E3-1 … E3-15 · All 16 Training sections of the 2027 e-book: 11 lessons, 139 templated drills, per-question sources
+- E7-1 · **Frag Ferdinand (Eulen-Lektionen)**: new content type `primers/*.json` (boards + `say` + vocab + quiz), schema + validator (quiz correctness, KaTeX, figures, references), progress flag per primer, chalkboard view `#/eule/:id` (Patrick Hand chalk font bundled, wipe animation, keyboard 1–5/Enter/arrows), ladder index `#/eule`, owl card at lesson top + inline badges on dense sections, dashboard entry; 3 primers live (Zeichen 15 Tafeln, Terme/Rechengesetze 14, Gleichungen 9); e2e `owl.spec.ts` desktop + mobile
 - E5-3/E5-5/E5-6 · **Live on GitHub Pages**: repo `arnebailliere-oss-svg/msa-trainer` (public), Actions workflow runs tests + content check + build on every push to `main`, Pages source = workflow (enabled via API; the workflow token may not create the Pages site itself). URL: https://arnebailliere-oss-svg.github.io/msa-trainer/
 - E4-10 · **Exam mode** like the real Prüfung: first 40 % Basisaufgaben (hilfsmittelfrei, calculator disabled), then Sternchen-/Sachaufgaben; stopwatch in the header; result page lists every task with time, source and correct answer; pool = 2023–2025 originals only (older exam items retagged `altpruefung`) — e2e `exam.spec.ts`
 - E4-18 · **Figures for legacy items**: 51 generated figures (right/general triangles incl. relabelled vertices and height line, rectangles, parallelogram, trapezoids, circles, Quader, Zylinder, coordinate systems with lines/parabolas, tree diagram, pie chart) — screenshots in `e2e/screenshots/legacy-*.png`
@@ -59,6 +61,7 @@ teach → drill (fresh variants) → repeat (mastery + repair), Math first from 
 ---
 
 ## Decisions
+- 2026-09-03 · **Frag Ferdinand**: every dense lesson section gets an owl badge to a pre-lesson that assumes nothing. Format is a chalkboard: one idea per board in plain language, click → wipe → next board, then the words, then a mini quiz on the board (pass ≥ 80 %). Ferdinand speaks in a bubble below the board. Goal: let students who missed lessons catch up from zero.
 - 2026-09-02 · Architecture: static PWA (Vite + React + TS + Tailwind + KaTeX), Python core ported to TS, progress in browser. Hosting: GitHub Pages via Actions.
 - 2026-09-02 · PySide6 app is **legacy** (kept in `src/msa_trainer/`, not developed further).
 - 2026-09-02 · Commercial e-books are never committed or shipped as scans; content is transcribed/adapted with `source` references. iMINT PDFs (CC BY-SA) stay local.

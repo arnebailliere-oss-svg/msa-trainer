@@ -115,11 +115,22 @@ export function DashboardView() {
         <ModeCard title="Prüfungs-Modus" desc="Schwere Aufgaben wie im MSA, ohne Hilfe" emoji="🏁" onClick={() => nav(`/session/MSA/${subject}`)} />
       </div>
 
-      {subject === "MATH" && (
-        <Link to="/formeln" className="mt-3 inline-flex items-center gap-2 rounded-2xl bg-surface px-4 py-2 text-sm font-semibold text-ink-2 hover:bg-surface-2 hover:text-ink">
-          📐 Formelblatt ansehen
+      <div className="mt-3 flex flex-wrap items-center gap-3">
+        <Link to="/eule" className="flex items-center gap-3 rounded-2xl border border-yellow/40 bg-yellow-soft px-4 py-2 font-semibold hover:border-yellow">
+          <span className="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-linear-to-br from-yellow to-brand-2 text-xl shadow-md" aria-hidden>
+            🦉
+          </span>
+          <span>
+            Frag Ferdinand
+            <span className="block text-xs font-normal text-ink-2">Grundlagen von Anfang an, Tafel für Tafel</span>
+          </span>
         </Link>
-      )}
+        {subject === "MATH" && (
+          <Link to="/formeln" className="inline-flex items-center gap-2 rounded-2xl bg-surface px-4 py-2 text-sm font-semibold text-ink-2 hover:bg-surface-2 hover:text-ink">
+            📐 Formelblatt ansehen
+          </Link>
+        )}
+      </div>
 
       {/* Topics */}
       <div className="mt-8 flex items-center justify-between">

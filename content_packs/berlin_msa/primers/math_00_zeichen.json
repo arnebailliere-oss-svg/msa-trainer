@@ -1,0 +1,106 @@
+[
+  {
+    "id": "P_MATH_ZEICHEN",
+    "subject": "MATH",
+    "title": "Die Zeichen der Mathematik",
+    "teaser": "Was Plus, Mal, Geteilt, Hochzahl, Wurzel, Klammern und Prozent wirklich bedeuten",
+    "hook": "Hallo, ich bin **Ferdinand**. Bevor wir irgendetwas rechnen, schauen wir uns die Zeichen an. Mathe ist eine Sprache, und jedes Zeichen ist ein Wort. Wer die Wörter kennt, versteht plötzlich die Sätze. Eine Tafel nach der anderen, ganz ohne Eile.",
+    "outro": "Jetzt kannst du jedes Zeichen auf dem Formelblatt lesen. Wenn dir eins wieder entfällt: Ich bin nur einen Klick entfernt.",
+    "steps": [
+      {
+        "title": "Mathe ist eine Sprache",
+        "body": "Jedes Zeichen ist ein **Wort**.\n\n$+ \\quad - \\quad \\cdot \\quad : \\quad = \\quad x \\quad \\sqrt{\\;} \\quad \\%$\n\nWenn du die Wörter kennst, verstehst du die Sätze.",
+        "say": "Ich zeige dir jedes Zeichen einzeln. Klick auf Weiter, wenn du eine Tafel gelesen hast."
+      },
+      {
+        "title": "Plus und Minus",
+        "body": "$+$ heißt **dazu**.\n\n$-$ heißt **weg**.\n\n$12 + 5 = 17$\n\n$12 - 5 = 7$",
+        "say": "Plus und Minus kennst du. Die nächste Tafel hat trotzdem eine kleine Überraschung."
+      },
+      {
+        "title": "Minus vor einer Zahl",
+        "body": "$-3$ ist eine Zahl **unter null**.\n\nThermometer: $-3\\,°C$\n\nKonto: $-3$ Euro heißt 3 Euro Schulden.\n\n$5 - 12 = -7$",
+        "say": "Du hast 5 Euro und gibst 12 aus. Dann bist du mit 7 Euro im Minus. Genau das ist −7."
+      },
+      {
+        "title": "Mal ist ein Punkt",
+        "body": "$3 \\cdot 4$ heißt **3 mal 4**.\n\n$4 + 4 + 4 = 12$\n\nMal ist nur eine **Abkürzung** für Plus.",
+        "say": "Das Kreuz × sieht aus wie ein x. Darum schreibt man in der Schule den Punkt. Auf dem Taschenrechner bleibt es die ×-Taste."
+      },
+      {
+        "title": "Der Punkt darf verschwinden",
+        "body": "$3a$ heißt $3 \\cdot a$.\n\n$2x$ heißt $2 \\cdot x$.\n\nZwischen Zahl und Buchstabe schreibt keiner den Punkt.",
+        "say": "Wenn du irgendwo 3a siehst: still „drei mal a“ lesen. Dann ist es nicht mehr komisch."
+      },
+      {
+        "title": "Geteilt: drei Schreibweisen",
+        "body": "$12 : 4 \\qquad 12 / 4 \\qquad \\frac{12}{4}$\n\nAlle drei heißen: **12 in 4 gleiche Teile.**\n\nErgebnis: 3",
+        "say": "Der Bruchstrich ist also nur ein Geteilt-Zeichen, das liegt. Auf dem Taschenrechner ist es die ÷-Taste."
+      },
+      {
+        "title": "Hochzahlen",
+        "body": "$5^2 = 5 \\cdot 5 = 25$\n\n$5^3 = 5 \\cdot 5 \\cdot 5 = 125$\n\nDie kleine Zahl oben sagt: **so oft steht die 5 da.**",
+        "say": "Vorsicht, die Falle: 5² ist nicht 5 mal 2. Es ist 5 mal 5."
+      },
+      {
+        "title": "Warum heißt es „Quadrat“?",
+        "body": "Ein Quadrat mit Seite 5 hat die Fläche $5 \\cdot 5 = 25$.\n\nDarum heißt $5^2$ auch **5 Quadrat**.",
+        "figure": { "type": "rectangle", "a": 5, "b": 5, "labels": { "a": "5", "b": "5" } },
+        "say": "Und 5 hoch 3 ist ein Würfel mit Kante 5. Man sagt auch „fünf Kubik“."
+      },
+      {
+        "title": "Die Wurzel",
+        "body": "$\\sqrt{25} = 5$, weil $5 \\cdot 5 = 25$\n\nDie Wurzel fragt:\n\n**Welche Zahl mal sich selbst ergibt das?**",
+        "say": "Wurzel ist das Gegenteil von Hochzahl. So wie Minus das Gegenteil von Plus ist. Das Zeichen ist ein verschnörkeltes kleines r, von radix, lateinisch für Wurzel."
+      },
+      {
+        "title": "Gleich, ungefähr, ungleich",
+        "body": "$=$ **genau gleich**: $3 + 4 = 7$\n\n$\\approx$ **ungefähr**, nach dem Runden: $\\pi \\approx 3{,}14$\n\n$\\neq$ **nicht gleich**: $3 \\neq 4$",
+        "say": "Das Wellen-Gleich benutzt du immer, wenn du gerundet hast. Damit sagst du ehrlich: ungefähr."
+      },
+      {
+        "title": "Kleiner und größer",
+        "body": "$3 < 7$ heißt: 3 ist **kleiner** als 7.\n\n$7 > 3$ heißt: 7 ist **größer** als 3.\n\nDie Spitze zeigt zur kleinen Zahl.",
+        "say": "Merk dir das Krokodil: Das Maul schnappt immer nach der größeren Zahl."
+      },
+      {
+        "title": "Klammern zuerst",
+        "body": "$2 \\cdot (3 + 4) = 2 \\cdot 7 = 14$\n\n$2 \\cdot 3 + 4 = 6 + 4 = 10$\n\nWas in der **Klammer** steht, rechnest du **zuerst**.",
+        "say": "Ohne Klammer gilt: Punkt vor Strich. Mal und Geteilt kommen vor Plus und Minus."
+      },
+      {
+        "title": "Buchstaben sind Kisten",
+        "body": "$x$ ist eine **Kiste**. Darin liegt eine Zahl, die du noch nicht kennst.\n\n$3x + 2$ mit $x = 4$:\n\n$3 \\cdot 4 + 2 = 14$",
+        "say": "Nichts Magisches. Ein Buchstabe ist nur ein Platz für eine Zahl."
+      },
+      {
+        "title": "Griechische Buchstaben",
+        "body": "$\\alpha$ alpha, $\\beta$ beta, $\\gamma$ gamma → **Winkel**\n\n$\\pi$ pi $\\approx 3{,}14$ → die **Kreiszahl**",
+        "say": "Die stehen auf dem Formelblatt. Jetzt kannst du sie wenigstens aussprechen."
+      },
+      {
+        "title": "Prozent heißt „von hundert“",
+        "body": "$25\\,\\%$ = 25 von 100 = $\\frac{25}{100}$ = $0{,}25$\n\n$\\%$ = pro **cent**um = von **hundert**",
+        "say": "Und Promille ‰ heißt von tausend. Das war's mit den Zeichen. Jetzt die Wörter."
+      }
+    ],
+    "vocab": [
+      { "term": "Summe", "plain": "Das Ergebnis von Plus.", "example": "$3 + 4 = 7$. Die 3 und die 4 heißen Summanden." },
+      { "term": "Differenz", "plain": "Das Ergebnis von Minus, also der Unterschied.", "example": "$9 - 4 = 5$" },
+      { "term": "Produkt", "plain": "Das Ergebnis von Mal. Die Zahlen davor heißen Faktoren.", "example": "$3 \\cdot 4 = 12$" },
+      { "term": "Quotient", "plain": "Das Ergebnis von Geteilt.", "example": "$12 : 4 = 3$" },
+      { "term": "Hochzahl (Exponent)", "plain": "Die kleine Zahl oben. Sagt, wie oft die Zahl da steht.", "example": "$2^3 = 2 \\cdot 2 \\cdot 2 = 8$" },
+      { "term": "Wurzel", "plain": "Das Gegenteil vom Hoch-2-Nehmen.", "example": "$\\sqrt{49} = 7$" },
+      { "term": "Variable", "plain": "Ein Buchstabe als Platz für eine Zahl.", "example": "$3x$ mit $x = 5$ ergibt 15." },
+      { "term": "Runden (≈)", "plain": "Eine Zahl kürzer machen. Dann schreibt man ≈ statt =.", "example": "$\\frac{1}{3} \\approx 0{,}33$" }
+    ],
+    "quiz": [
+      { "prompt": "Was bedeutet $4^2$?", "choices": ["$4 \\cdot 4$", "$4 \\cdot 2$", "$4 + 4$", "$4 + 2$"], "correct": "$4 \\cdot 4$", "explain": "Die kleine 2 sagt: 4 mal sich selbst. $4 \\cdot 4 = 16$." },
+      { "prompt": "Was rechnest du zuerst bei $5 \\cdot (2 + 3)$?", "choices": ["$2 + 3$", "$5 \\cdot 2$", "$5 \\cdot 3$", "Ist egal"], "correct": "$2 + 3$", "explain": "Klammer zuerst: $2 + 3 = 5$, dann $5 \\cdot 5 = 25$." },
+      { "prompt": "Was heißt $3a$?", "choices": ["$3 \\cdot a$", "$3 + a$", "$3$ hoch $a$", "$a$ geteilt durch 3"], "correct": "$3 \\cdot a$", "explain": "Zwischen Zahl und Buchstabe lässt man den Malpunkt weg." },
+      { "prompt": "Welches Zeichen heißt „ungefähr gleich“?", "choices": ["$\\approx$", "$\\neq$", "$\\leq$", "$=$"], "correct": "$\\approx$", "explain": "≈ benutzt man nach dem Runden, zum Beispiel $\\pi \\approx 3{,}14$." },
+      { "prompt": "Wie viel ist $\\sqrt{36}$?", "choices": ["6", "18", "12", "72"], "correct": "6", "explain": "Welche Zahl mal sich selbst gibt 36? $6 \\cdot 6 = 36$." },
+      { "prompt": "Was bedeutet $40\\,\\%$?", "choices": ["40 von 100", "40 von 10", "40 von 1000", "40 mal 100"], "correct": "40 von 100", "explain": "Prozent heißt „von hundert“: $40\\,\\% = \\frac{40}{100} = 0{,}4$." }
+    ]
+  }
+]

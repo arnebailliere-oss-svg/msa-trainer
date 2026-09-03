@@ -3,6 +3,7 @@ import { useApp } from "@/app/state";
 import { ampelFor } from "@/core/mastery";
 import { ExplanationBlocks } from "@/ui/Explanation";
 import { MathText } from "@/ui/MathText";
+import { AskOwl } from "@/ui/Owl";
 import { Ampel, AMPEL_LABEL, Button, Chip, PageTitle, Ring } from "@/ui/primitives";
 
 /** Topic page: lesson (if any) + practice entry point. */
@@ -47,6 +48,7 @@ export function TopicView() {
         <article className="anim-pop">
           <h2 className="mb-1 text-2xl font-bold">📘 {lesson.title}</h2>
           {lesson.intro && <MathText text={lesson.intro} className="mb-4 text-ink-2" />}
+          {lesson.primer && <AskOwl primerId={lesson.primer} variant="card" />}
           <ExplanationBlocks sections={lesson.sections} />
           {lesson.source && <p className="mt-3 text-xs text-ink-3">Quelle: {lesson.source}</p>}
         </article>

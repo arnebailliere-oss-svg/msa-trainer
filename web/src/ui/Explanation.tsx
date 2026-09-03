@@ -2,7 +2,7 @@
 
 import type { ContentSection } from "@/core/types";
 import { MathText } from "./MathText";
-
+import { AskOwl } from "./Owl";
 import { LessonWidget } from "./widgets";
 
 const META: Record<ContentSection["kind"], { icon: string; title: string; tone: string; pre: boolean }> = {
@@ -27,9 +27,14 @@ export function ExplanationBlocks({ sections, compact = false }: { sections: Con
         return (
           <section key={i} className={`rounded-2xl border-l-4 bg-surface px-4 py-3 ${m.tone} anim-pop`} style={{ animationDelay: `${Math.min(i, 6) * 40}ms` }}>
             {(title || m.icon) && (
-              <h3 className="mb-1 flex items-center gap-2 text-sm font-bold uppercase tracking-wide text-ink-2">
+              <h3 className="mb-1 flex flex-wrap items-center gap-2 text-sm font-bold uppercase tracking-wide text-ink-2">
                 {m.icon && <span aria-hidden>{m.icon}</span>}
                 {title}
+                {s.primer && (
+                  <span className="ml-auto">
+                    <AskOwl primerId={s.primer} />
+                  </span>
+                )}
               </h3>
             )}
             {s.kind === "widget" ? <LessonWidget id={s.body.trim()} /> : <MathText text={s.body} pre={m.pre} className="text-[1.02rem] leading-relaxed" />}

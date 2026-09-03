@@ -10,6 +10,8 @@ export interface ProgressSnapshot {
   mastery: MasteryState[];
   attempts: Attempt[];
   counters: Record<string, number>;
+  /** Completed Eulen-Lektionen: "userId|primerId" → ISO date. */
+  primers?: Record<string, string>;
 }
 
 export interface ProgressStore {
@@ -21,6 +23,9 @@ export interface ProgressStore {
   attempts(userId: string, topicId?: string, limit?: number): Attempt[];
   errorRate(userId: string, topicId: string, recent?: number): number;
   nextCounter(userId: string, subject: Subject, topicId: string, mode: TrainingMode, dateKey: string): number;
+  primerDone(userId: string, primerId: string): boolean;
+  primersDone(userId: string): string[];
+  markPrimerDone(userId: string, primerId: string): void;
   snapshot(): ProgressSnapshot;
 }
 
@@ -32,14 +37,30 @@ export class InMemoryProgressStore implements ProgressStore {
   private mastery = new Map<string, MasteryState>();
   private attemptList: Attempt[] = [];
   private counters = new Map<string, number>();
+  private primers = new Map<string, string>();
 
   constructor(
     initial?: Partial<ProgressSnapshot>,
-    private onChange: (kind: "mastery" | "attempt" | "counter", payload: unknown) => void = () => {},
+    private onChange: (kind: "mastery" | "attempt" | "counter" | "primer", payload: unknown) => void = () => {},
   ) {
     for (const m of initial?.mastery ?? []) this.mastery.set(`${m.userId}|${m.topicId}`, m);
     this.attemptList = [...(initial?.attempts ?? [])].sort((a, b) => a.createdAt.localeCompare(b.createdAt));
     for (const [k, v] of Object.entries(initial?.counters ?? {})) this.counters.set(k, v);
+    for (const [k, v] of Object.entries(initial?.primers ?? {})) this.primers.set(k, v);
+  }
+
+  primerDone(userId: string, primerId: string): boolean {
+    return this.primers.has(`${userId}|${primerId}`);
+  }
+
+  primersDone(userId: string): string[] {
+    return [...this.primers.keys()].filter((k) => k.startsWith(`${userId}|`)).map((k) => k.slice(userId.length + 1));
+  }
+
+  markPrimerDone(userId: string, primerId: string): void {
+    const key = `${userId}|${primerId}`;
+    this.primers.set(key, new Date().toISOString());
+    this.onChange("primer", { key });
   }
 
   getMastery(userId: string, topicId: string): MasteryState | undefined {
@@ -88,6 +109,7 @@ export class InMemoryProgressStore implements ProgressStore {
       mastery: [...this.mastery.values()],
       attempts: [...this.attemptList],
       counters: Object.fromEntries(this.counters),
+      primers: Object.fromEntries(this.primers),
     };
   }
 }

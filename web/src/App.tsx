@@ -6,6 +6,8 @@ import { DashboardView } from "./views/DashboardView";
 import { OverviewView } from "./views/OverviewView";
 import { PreviewView } from "./views/PreviewView";
 import { FormulaView } from "./views/FormulaView";
+import { PrimerIndexView } from "./views/PrimerIndexView";
+import { PrimerView } from "./views/PrimerView";
 import { ResultView } from "./views/ResultView";
 import { SessionView } from "./views/SessionView";
 import { StartView } from "./views/StartView";
@@ -128,6 +130,22 @@ function Shell() {
             element={
               <RequireProfile>
                 <OverviewView />
+              </RequireProfile>
+            }
+          />
+          <Route
+            path="/eule"
+            element={
+              <RequireProfile>
+                <PrimerIndexView />
+              </RequireProfile>
+            }
+          />
+          <Route
+            path="/eule/:id"
+            element={
+              <RequireProfile>
+                <PrimerView />
               </RequireProfile>
             }
           />

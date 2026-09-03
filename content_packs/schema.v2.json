@@ -25,7 +25,56 @@
         "kind": { "type": "string", "enum": ["what", "terms", "formula", "steps", "mistake", "remember", "answer", "example", "widget", "text"] },
         "title": { "type": "string" },
         "body": { "type": "string" },
-        "figure": { "$ref": "#/definitions/figure" }
+        "figure": { "$ref": "#/definitions/figure" },
+        "primer": { "type": "string", "pattern": "^P_[A-Z][A-Za-z0-9_]+$" }
+      }
+    },
+    "primer": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "subject", "title", "teaser", "hook", "steps", "vocab", "quiz"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^P_[A-Z][A-Za-z0-9_]+$" },
+        "subject": { "$ref": "#/definitions/subject" },
+        "title": { "type": "string", "minLength": 1 },
+        "teaser": { "type": "string", "minLength": 1 },
+        "hook": { "type": "string", "minLength": 1 },
+        "outro": { "type": "string" },
+        "steps": {
+          "type": "array",
+          "minItems": 3,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["title", "body"],
+            "properties": { "title": { "type": "string", "minLength": 1 }, "body": { "type": "string", "minLength": 1 }, "figure": { "$ref": "#/definitions/figure" }, "say": { "type": "string" } }
+          }
+        },
+        "vocab": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["term", "plain"],
+            "properties": { "term": { "type": "string", "minLength": 1 }, "plain": { "type": "string", "minLength": 1 }, "example": { "type": "string" } }
+          }
+        },
+        "quiz": {
+          "type": "array",
+          "minItems": 3,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["prompt", "choices", "correct", "explain"],
+            "properties": {
+              "prompt": { "type": "string", "minLength": 1 },
+              "choices": { "type": "array", "minItems": 2, "maxItems": 5, "items": { "type": "string", "minLength": 1 } },
+              "correct": { "type": "string", "minLength": 1 },
+              "explain": { "type": "string", "minLength": 1 }
+            }
+          }
+        },
+        "source": { "type": "string" }
       }
     },
     "figure": {
@@ -103,7 +152,8 @@
         "title": { "type": "string", "minLength": 1 },
         "intro": { "type": "string" },
         "sections": { "type": "array", "minItems": 1, "items": { "$ref": "#/definitions/section" } },
-        "source": { "type": "string" }
+        "source": { "type": "string" },
+        "primer": { "type": "string", "pattern": "^P_[A-Z][A-Za-z0-9_]+$" }
       }
     }
   },
@@ -111,6 +161,7 @@
   "properties": {
     "topics": { "type": "array", "items": { "$ref": "#/definitions/topic" } },
     "questions": { "type": "array", "items": { "$ref": "#/definitions/question" } },
-    "lessons": { "type": "array", "items": { "$ref": "#/definitions/lesson" } }
+    "lessons": { "type": "array", "items": { "$ref": "#/definitions/lesson" } },
+    "primers": { "type": "array", "items": { "$ref": "#/definitions/primer" } }
   }
 }

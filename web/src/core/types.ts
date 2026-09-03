@@ -54,6 +54,50 @@ export interface ContentSection {
   figure?: FigureSpec;
   /** Rendered SVG of `figure` (filled in when a question/lesson is rendered). */
   figureSvg?: string;
+  /** Eulen-Lektion ("Frag Ferdinand") that explains this section's basics from scratch. */
+  primer?: string;
+}
+
+/** One chalkboard of an Eulen-Lektion: one idea, a few chalk lines, optionally a figure. */
+export interface PrimerStep {
+  title: string;
+  body: string;
+  figure?: FigureSpec;
+  /** What Ferdinand says while this board is shown. */
+  say?: string;
+}
+
+export interface PrimerVocab {
+  term: string;
+  plain: string;
+  example?: string;
+}
+
+export interface PrimerQuizItem {
+  prompt: string;
+  choices: string[];
+  correct: string;
+  explain: string;
+}
+
+/**
+ * Eulen-Lektion ("Frag Ferdinand"): a pre-lesson that assumes nothing. Ferdinand the owl
+ * explains words, symbols and ideas board by board, then checks with a mini quiz.
+ */
+export interface Primer {
+  id: string;
+  subject: Subject;
+  title: string;
+  /** One line for badges and the index. */
+  teaser: string;
+  /** Ferdinand's opening line. */
+  hook: string;
+  /** Ferdinand's closing line after a passed quiz. */
+  outro?: string;
+  steps: PrimerStep[];
+  vocab: PrimerVocab[];
+  quiz: PrimerQuizItem[];
+  source?: string;
 }
 
 export type Explanation = string | ContentSection[];
@@ -154,6 +198,8 @@ export interface Lesson {
   intro?: string;
   sections: ContentSection[];
   source?: string;
+  /** Eulen-Lektion recommended before this lesson ("Grundlagen zuerst"). */
+  primer?: string;
 }
 
 export interface Profile {
@@ -239,4 +285,5 @@ export interface ContentPack {
   topics: Topic[];
   questions: Question[];
   lessons: Lesson[];
+  primers?: Primer[];
 }

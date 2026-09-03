@@ -5,6 +5,7 @@
     "topicId": "MATH_ALG_EQU_LINEAR",
     "alsoFor": ["MATH_ALG_TERMS_SIMPLIFY", "MATH_ALG_BRACKETS", "MATH_ALG_EQU_WORD"],
     "title": "Terme und Gleichungen",
+    "primer": "P_MATH_TERME",
     "intro": "Gleichungen lösen ist **die** Grundlage für viele Prüfungsaufgaben — von Sachaufgaben bis zu Funktionen. Das Prinzip ist immer dasselbe: Beide Seiten gleich behandeln, bis $x$ allein steht.",
     "source": "Adaptiert nach Prüfungshefte MSA Mathe Berlin 2027, Kap. 2.1",
     "sections": [
@@ -16,11 +17,13 @@
       {
         "kind": "formula",
         "title": "Äquivalenzumformungen — die Waage",
+        "primer": "P_MATH_GLEICHUNG",
         "body": "Eine Gleichung ist wie eine **Waage**: Was du links tust, musst du auch rechts tun. Dann bleibt die Lösungsmenge gleich. Erlaubt ist auf beiden Seiten:\n\n- die gleiche Zahl **addieren** oder **subtrahieren**\n- mit der gleichen Zahl **multiplizieren** (nicht mit 0!)\n- durch die gleiche Zahl **dividieren** (nicht durch 0!)\n\nBeispiel: $2x - 3 = 4x + 5 \\;|\\; -2x - 5 \\;\\Rightarrow\\; -8 = 2x \\;|\\; : 2 \\;\\Rightarrow\\; x = -4$"
       },
       {
         "kind": "terms",
         "title": "Die Rechengesetze",
+        "primer": "P_MATH_TERME",
         "body": "- **Kommutativgesetz** — Vertauschen: $a + b = b + a$, $a \\cdot b = b \\cdot a$\n- **Assoziativgesetz** — Klammern versetzen: $(a + b) + c = a + (b + c)$\n- **Distributivgesetz** — Ausmultiplizieren und Ausklammern: $a \\cdot (b + c) = ab + ac$\n\nBeispiel: $2(x + y) = 2x + 2y$ und rückwärts $2x + 4y = 2(x + 2y)$"
       },
       {
@@ -31,6 +34,7 @@
       {
         "kind": "steps",
         "title": "Lineare Gleichung lösen — so gehst du vor",
+        "primer": "P_MATH_GLEICHUNG",
         "body": "1. **Klammern auflösen** (Distributivgesetz).\n2. **Zusammenfassen**: gleiche Variablen, gleiche Zahlen.\n3. Alle **$x$ auf eine Seite**, alle Zahlen auf die andere (addieren/subtrahieren).\n4. Durch den **Faktor vor $x$** teilen.\n5. **Probe**: Lösung einsetzen.\n\n$2(x + 5) = 10x + 2 \\Rightarrow 2x + 10 = 10x + 2 \\;|\\; -2x - 2 \\Rightarrow 8 = 8x \\Rightarrow x = 1$"
       },
       {
