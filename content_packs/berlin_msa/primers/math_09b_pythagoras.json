@@ -1,0 +1,93 @@
+[
+  {
+    "id": "P_MATH_PYTH_TRIG",
+    "subject": "MATH",
+    "title": "Rechtwinklige Dreiecke: Pythagoras, Sinus, Kosinus",
+    "teaser": "Was Katheten und Hypotenuse sind, was $a^2 + b^2 = c^2$ wirklich sagt und was sin, cos und tan auf dem Taschenrechner tun",
+    "hook": "Pythagoras und Trigonometrie klingen nach Studium. In Wahrheit geht es nur um ein Dreieck mit einer rechten Ecke, und um drei Seiten, die zusammenhängen.",
+    "outro": "Rechte Ecke, Katheten, Hypotenuse. Quadrate für Pythagoras, Brüche für sin, cos, tan. Jetzt kannst du die Formeln in der Lektion lesen.",
+    "steps": [
+      {
+        "title": "Das rechtwinklige Dreieck",
+        "body": "Eine Ecke ist **genau 90°** (das kleine Quadrat).\n\nDie längste Seite liegt **gegenüber** vom rechten Winkel.",
+        "figure": { "type": "rightTriangle", "a": 4, "b": 3, "labels": { "a": "a", "b": "b", "c": "c" } },
+        "say": "Alles in dieser Lektion braucht diese rechte Ecke. Ohne sie gilt nichts davon."
+      },
+      {
+        "title": "Katheten und Hypotenuse",
+        "body": "Die zwei Seiten **am** rechten Winkel: **Katheten** ($a$, $b$)\n\nDie Seite **gegenüber**: **Hypotenuse** ($c$), immer die längste",
+        "say": "Hypotenuse, griechisch: die, die sich darunter spannt. Kathete: die Senkrechte."
+      },
+      {
+        "title": "Der Satz des Pythagoras",
+        "body": "$a^2 + b^2 = c^2$\n\n$a = 3$, $b = 4$: $9 + 16 = 25 = c^2$ → $c = 5$",
+        "say": "Die Quadrate der Katheten zusammen sind so groß wie das Quadrat der Hypotenuse. Mit 3, 4, 5 geht es ohne Rest auf."
+      },
+      {
+        "title": "Was heißt das als Bild?",
+        "body": "Ein Quadrat auf jeder Seite:\n\n$3^2 = 9$, $4^2 = 16$, $5^2 = 25$\n\n$9 + 16 = 25$ ✓",
+        "say": "Die beiden kleinen Quadrate haben zusammen genau so viel Fläche wie das große. Das ist der ganze Satz."
+      },
+      {
+        "title": "Hypotenuse berechnen",
+        "body": "$c = \\sqrt{a^2 + b^2}$\n\n$a = 6$, $b = 8$: $c = \\sqrt{36 + 64} = \\sqrt{100} = 10$",
+        "say": "Quadrieren, addieren, Wurzel. Drei Schritte."
+      },
+      {
+        "title": "Kathete berechnen",
+        "body": "$b = \\sqrt{c^2 - a^2}$\n\n$c = 13$, $a = 5$: $b = \\sqrt{169 - 25} = \\sqrt{144} = 12$",
+        "say": "Wenn du die Hypotenuse kennst, wird es Minus. Die Hypotenuse steht allein, sie ist die größte."
+      },
+      {
+        "title": "Gegenkathete und Ankathete",
+        "body": "Vom Winkel $\\alpha$ aus gesehen:\n\n**Gegenkathete**: liegt gegenüber\n\n**Ankathete**: liegt an $\\alpha$",
+        "figure": { "type": "rightTriangle", "a": 4, "b": 3, "labels": { "a": "Gegenkathete", "b": "Ankathete", "c": "Hypotenuse", "alpha": "α" } },
+        "say": "Die Namen hängen vom Winkel ab. Wechselst du zum anderen Winkel, tauschen die Katheten ihre Namen."
+      },
+      {
+        "title": "sin, cos, tan sind Brüche",
+        "body": "$\\sin\\alpha = \\frac{\\text{Gegenkathete}}{\\text{Hypotenuse}}$\n\n$\\cos\\alpha = \\frac{\\text{Ankathete}}{\\text{Hypotenuse}}$\n\n$\\tan\\alpha = \\frac{\\text{Gegenkathete}}{\\text{Ankathete}}$",
+        "say": "Ein Verhältnis ist ein Bruch aus zwei Seiten. Der Winkel legt fest, wie groß der Bruch ist. Genau so steht es auf dem Formelblatt."
+      },
+      {
+        "title": "Was der Taschenrechner tut",
+        "body": "$\\sin 30° = 0{,}5$\n\nHeißt: Bei 30° ist die Gegenkathete **halb so lang** wie die Hypotenuse.",
+        "say": "Der Taschenrechner kennt für jeden Winkel diesen Bruch. Achte darauf, dass er auf DEG steht, nicht auf RAD."
+      },
+      {
+        "title": "Seite berechnen",
+        "body": "$c = 10$, $\\alpha = 30°$, gesucht $a$:\n\n$\\sin 30° = \\frac{a}{10}$ → $a = 10 \\cdot 0{,}5 = 5$",
+        "say": "Formel hinschreiben, bekannte Werte einsetzen, nach der gesuchten Seite umstellen."
+      },
+      {
+        "title": "Winkel berechnen",
+        "body": "$a = 5$, $c = 10$:\n\n$\\sin\\alpha = \\frac{5}{10} = 0{,}5$ → $\\alpha = \\sin^{-1}(0{,}5) = 30°$",
+        "say": "Die Taste sin hoch minus eins (oder SHIFT sin) macht aus dem Bruch wieder den Winkel."
+      },
+      {
+        "title": "Merkwort",
+        "body": "**GAGA HüHnerHof AG**\n\nsin = **G**/**H**, cos = **A**/**H**, tan = **G**/**A**",
+        "say": "Gegenkathete, Ankathete, Gegenkathete. Hypotenuse, Hypotenuse, Ankathete. Klingt albern, funktioniert seit Generationen."
+      }
+    ],
+    "vocab": [
+      { "term": "Rechter Winkel", "plain": "Genau 90°. Das kleine Quadrat in der Ecke.", "example": "$\\gamma = 90°$" },
+      { "term": "Kathete", "plain": "Eine der zwei Seiten am rechten Winkel.", "example": "$a$ und $b$" },
+      { "term": "Hypotenuse", "plain": "Die längste Seite, gegenüber vom rechten Winkel.", "example": "$c$" },
+      { "term": "Gegenkathete", "plain": "Die Kathete gegenüber vom Winkel.", "example": "bei $\\alpha$: $a$" },
+      { "term": "Ankathete", "plain": "Die Kathete am Winkel.", "example": "bei $\\alpha$: $b$" },
+      { "term": "Satz des Pythagoras", "plain": "Kathete² + Kathete² = Hypotenuse².", "example": "$a^2 + b^2 = c^2$" },
+      { "term": "Sinus", "plain": "Gegenkathete durch Hypotenuse.", "example": "$\\sin 30° = 0{,}5$" },
+      { "term": "Kosinus", "plain": "Ankathete durch Hypotenuse.", "example": "$\\cos 60° = 0{,}5$" },
+      { "term": "Tangens", "plain": "Gegenkathete durch Ankathete.", "example": "$\\tan 45° = 1$" },
+      { "term": "DEG", "plain": "Taschenrechner-Modus für Grad.", "example": "nicht RAD!" }
+    ],
+    "quiz": [
+      { "prompt": "Welche Seite ist die Hypotenuse?", "choices": ["Die längste, gegenüber vom rechten Winkel", "Die kürzeste", "Eine der Seiten am rechten Winkel", "Die untere"], "correct": "Die längste, gegenüber vom rechten Winkel", "explain": "Sie spannt sich gegenüber der rechten Ecke und ist immer die längste." },
+      { "prompt": "$a = 3$, $b = 4$. Wie lang ist $c$?", "choices": ["5", "7", "25", "12"], "correct": "5", "explain": "$9 + 16 = 25$, Wurzel: 5." },
+      { "prompt": "$c = 10$, $a = 6$. Wie lang ist $b$?", "choices": ["8", "4", "16", "136"], "correct": "8", "explain": "$\\sqrt{100 - 36} = \\sqrt{64} = 8$." },
+      { "prompt": "$\\sin\\alpha$ ist …", "choices": ["Gegenkathete durch Hypotenuse", "Ankathete durch Hypotenuse", "Gegenkathete durch Ankathete", "Hypotenuse durch Gegenkathete"], "correct": "Gegenkathete durch Hypotenuse", "explain": "GAGA HüHnerHof AG: sin = G/H." },
+      { "prompt": "Der Taschenrechner muss auf … stehen.", "choices": ["DEG", "RAD", "GRAD", "AUTO"], "correct": "DEG", "explain": "DEG heißt Grad. Auf RAD kommen falsche Werte raus." }
+    ]
+  }
+]

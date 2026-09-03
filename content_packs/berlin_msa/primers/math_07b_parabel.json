@@ -1,0 +1,76 @@
+[
+  {
+    "id": "P_MATH_QUADRAT",
+    "subject": "MATH",
+    "title": "Parabeln und quadratische Gleichungen",
+    "teaser": "Warum $x^2$ eine Parabel gibt, was der Scheitelpunkt ist und was Nullstellen mit der pq-Formel zu tun haben",
+    "hook": "Sobald ein $x^2$ auftaucht, ist die Gerade weg und eine Kurve da: die Parabel. Sie sieht aus wie eine Schüssel, und alles, was man sie fragt, hat mit dieser Schüssel zu tun.",
+    "outro": "Schüssel, Scheitel, Nullstellen. Und die pq-Formel ist nur Einsetzen. Jetzt kannst du die Lektion lesen.",
+    "steps": [
+      {
+        "title": "x² macht eine Schüssel",
+        "body": "$y = x^2$\n\n$x = 2$ → $4$, $x = -2$ → auch $4$\n\nLinks und rechts gleich: **symmetrisch**.",
+        "figure": { "type": "coordinateSystem", "xmin": -4, "xmax": 4, "ymin": -2, "ymax": 10, "width": 300, "height": 320, "parabolas": [{ "a": 1, "d": 0, "e": 0, "label": "y = x²" }] },
+        "say": "Minus mal minus ist plus. Darum landen −2 und 2 auf derselben Höhe. So entsteht die Schüsselform."
+      },
+      {
+        "title": "Der Scheitelpunkt",
+        "body": "Der tiefste (oder höchste) Punkt heißt **Scheitelpunkt** $S$.\n\nBei $y = x^2$: $S(0\\,|\\,0)$",
+        "say": "Scheitel wie beim Haar: die Stelle, wo es sich teilt. Links geht es runter, rechts rauf."
+      },
+      {
+        "title": "Nach oben oder nach unten",
+        "body": "$y = x^2$: offen nach **oben**\n\n$y = -x^2$: offen nach **unten**",
+        "figure": { "type": "coordinateSystem", "xmin": -4, "xmax": 4, "ymin": -8, "ymax": 8, "width": 300, "height": 300, "parabolas": [{ "a": 1, "d": 0, "e": 0, "label": "x²" }, { "a": -1, "d": 0, "e": 0, "label": "−x²" }] },
+        "say": "Ein Minus vor dem x² dreht die Schüssel um. Dann ist der Scheitel der höchste Punkt."
+      },
+      {
+        "title": "Die Parabel verschieben",
+        "body": "$y = (x - 1)^2 - 2$\n\nScheitelpunkt: $S(1\\,|\\,-2)$\n\nIn der Klammer steht das Gegenteil: $-1$ → $x = 1$.",
+        "figure": { "type": "coordinateSystem", "xmin": -3, "xmax": 5, "ymin": -4, "ymax": 8, "width": 300, "height": 320, "parabolas": [{ "a": 1, "d": 1, "e": -2, "label": "(x − 1)² − 2" }], "points": [{ "x": 1, "y": -2, "label": "S" }] },
+        "say": "Diese Form heißt Scheitelpunktform, weil man den Scheitel direkt ablesen kann. Vorsicht mit dem Vorzeichen in der Klammer."
+      },
+      {
+        "title": "Nullstellen",
+        "body": "Wo schneidet die Parabel die x-Achse?\n\nDort ist $y = 0$.\n\nEine Parabel kann **0, 1 oder 2** Nullstellen haben.",
+        "say": "Schüssel über der Achse: keine. Berührt sie: eine. Taucht sie durch: zwei."
+      },
+      {
+        "title": "Die einfachste quadratische Gleichung",
+        "body": "$x^2 = 9$\n\n$x = 3$ oder $x = -3$\n\nZwei Lösungen, weil $(-3)^2$ auch 9 ist.",
+        "say": "Wurzel ziehen, und das Minus nicht vergessen."
+      },
+      {
+        "title": "Die Normalform",
+        "body": "$x^2 + px + q = 0$\n\nVor $x^2$ steht **nichts** (also 1), rechts steht **0**.\n\n$x^2 + 6x + 5 = 0$: $p = 6$, $q = 5$",
+        "say": "Bevor die pq-Formel darf, muss die Gleichung so aussehen. p ist die Zahl vor dem x, q die Zahl ohne x, jeweils mit Vorzeichen."
+      },
+      {
+        "title": "Die pq-Formel",
+        "body": "$x_{1,2} = -\\frac{p}{2} \\pm \\sqrt{\\left(\\frac{p}{2}\\right)^2 - q}$\n\n$p = 6$, $q = 5$: $x_{1,2} = -3 \\pm \\sqrt{9 - 5} = -3 \\pm 2$\n\n$x_1 = -1$, $x_2 = -5$",
+        "say": "Sieht wild aus, ist aber nur Einsetzen: p halbe mit Minus, plus-minus Wurzel aus p halbe zum Quadrat minus q."
+      },
+      {
+        "title": "Plus-minus",
+        "body": "$\\pm$ heißt: einmal mit Plus, einmal mit Minus rechnen.\n\nDarum kommen zwei Lösungen raus.",
+        "say": "Wenn unter der Wurzel 0 steht, gibt es nur eine. Wenn da Minus steht, gar keine. Das ist genau das Bild von der Schüssel."
+      }
+    ],
+    "vocab": [
+      { "term": "Parabel", "plain": "Die Kurve von $x^2$. Sieht aus wie eine Schüssel.", "example": "$y = x^2$" },
+      { "term": "Scheitelpunkt S", "plain": "Der tiefste oder höchste Punkt.", "example": "$S(1\\,|\\,-2)$" },
+      { "term": "Scheitelpunktform", "plain": "$y = (x - d)^2 + e$, Scheitel bei $(d\\,|\\,e)$.", "example": "$(x - 1)^2 - 2$" },
+      { "term": "Nullstelle", "plain": "Wo die Parabel die x-Achse schneidet ($y = 0$).", "example": "0, 1 oder 2 Stück" },
+      { "term": "Normalform", "plain": "$x^2 + px + q = 0$", "example": "$x^2 + 6x + 5 = 0$" },
+      { "term": "pq-Formel", "plain": "Formel für die Lösungen der Normalform.", "example": "$-\\frac{p}{2} \\pm \\sqrt{(\\frac{p}{2})^2 - q}$" },
+      { "term": "±", "plain": "Einmal plus, einmal minus rechnen.", "example": "$-3 \\pm 2$ → $-1$ und $-5$" }
+    ],
+    "quiz": [
+      { "prompt": "Der Scheitelpunkt von $y = (x - 3)^2 + 1$?", "choices": ["$S(3\\,|\\,1)$", "$S(-3\\,|\\,1)$", "$S(1\\,|\\,3)$", "$S(3\\,|\\,-1)$"], "correct": "$S(3\\,|\\,1)$", "explain": "In der Klammer steht $-3$, also $x = 3$. Dahinter $+1$, also $y = 1$." },
+      { "prompt": "$y = -x^2 + 4$ ist offen nach …", "choices": ["unten", "oben", "rechts", "links"], "correct": "unten", "explain": "Das Minus vor dem $x^2$ dreht die Schüssel um." },
+      { "prompt": "Wie viele Lösungen hat $x^2 = 25$?", "choices": ["Zwei: 5 und $-5$", "Eine: 5", "Eine: 12,5", "Keine"], "correct": "Zwei: 5 und $-5$", "explain": "$5^2 = 25$ und $(-5)^2 = 25$." },
+      { "prompt": "Bei $x^2 + 8x - 9 = 0$: Was ist $p$?", "choices": ["8", "$-9$", "9", "1"], "correct": "8", "explain": "p ist die Zahl vor dem x. q wäre $-9$." },
+      { "prompt": "Nullstelle heißt …", "choices": ["$y = 0$", "$x = 0$", "Scheitelpunkt", "Steigung 0"], "correct": "$y = 0$", "explain": "Nullstelle: Die Funktion gibt 0 aus, der Graph schneidet die x-Achse." }
+    ]
+  }
+]

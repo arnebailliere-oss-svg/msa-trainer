@@ -3,7 +3,11 @@
     "id": "L_MATH_ALG_EQU",
     "subject": "MATH",
     "topicId": "MATH_ALG_EQU_LINEAR",
-    "alsoFor": ["MATH_ALG_TERMS_SIMPLIFY", "MATH_ALG_BRACKETS", "MATH_ALG_EQU_WORD"],
+    "alsoFor": [
+      "MATH_ALG_TERMS_SIMPLIFY",
+      "MATH_ALG_BRACKETS",
+      "MATH_ALG_EQU_WORD"
+    ],
     "title": "Terme und Gleichungen",
     "primer": "P_MATH_TERME",
     "intro": "Gleichungen lösen ist **die** Grundlage für viele Prüfungsaufgaben — von Sachaufgaben bis zu Funktionen. Das Prinzip ist immer dasselbe: Beide Seiten gleich behandeln, bis $x$ allein steht.",
@@ -40,7 +44,8 @@
       {
         "kind": "formula",
         "title": "Quadratische Gleichungen: die pq-Formel",
-        "body": "Steht $x^2$ in der Gleichung, bringst du sie zuerst in die **Normalform** $x^2 + px + q = 0$ (alles auf eine Seite, dann durch den Faktor vor $x^2$ teilen). Dann:\n\n$$x_{1,2} = -\\frac{p}{2} \\pm \\sqrt{\\left(\\frac{p}{2}\\right)^2 - q}$$\n\nUnter der Wurzel negativ → **keine** Lösung. Null → **eine** Lösung. Positiv → **zwei** Lösungen.\n\nBeispiel: $x^2 + 14x - 15 = 0$: $x_{1,2} = -7 \\pm \\sqrt{49 + 15} = -7 \\pm 8 \\Rightarrow x_1 = 1,\\; x_2 = -15$"
+        "body": "Steht $x^2$ in der Gleichung, bringst du sie zuerst in die **Normalform** $x^2 + px + q = 0$ (alles auf eine Seite, dann durch den Faktor vor $x^2$ teilen). Dann:\n\n$$x_{1,2} = -\\frac{p}{2} \\pm \\sqrt{\\left(\\frac{p}{2}\\right)^2 - q}$$\n\nUnter der Wurzel negativ → **keine** Lösung. Null → **eine** Lösung. Positiv → **zwei** Lösungen.\n\nBeispiel: $x^2 + 14x - 15 = 0$: $x_{1,2} = -7 \\pm \\sqrt{49 + 15} = -7 \\pm 8 \\Rightarrow x_1 = 1,\\; x_2 = -15$",
+        "primer": "P_MATH_QUADRAT"
       },
       {
         "kind": "mistake",

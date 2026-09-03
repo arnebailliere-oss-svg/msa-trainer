@@ -3,7 +3,10 @@
     "id": "L_MATH_NUM_PCT",
     "subject": "MATH",
     "topicId": "MATH_NUM_PCT_BASIC",
-    "alsoFor": ["MATH_NUM_PCT_CHANGE", "MATH_NUM_INTEREST"],
+    "alsoFor": [
+      "MATH_NUM_PCT_CHANGE",
+      "MATH_NUM_INTEREST"
+    ],
     "title": "Prozent- und Zinsrechnung",
     "intro": "Prozente tauchen in der Prüfung überall auf: Rabatte, Zinsen, Anteile, Wahrscheinlichkeiten. Die gute Nachricht: Es gibt nur **eine** Grundformel — und drei Wege, sie zu benutzen.",
     "source": "Adaptiert nach Prüfungshefte MSA Mathe Berlin 2027, Kap. 1.2 und Formelblatt",
@@ -16,12 +19,14 @@
       {
         "kind": "terms",
         "title": "Die drei Größen",
-        "body": "- **Grundwert $G$** — das Ganze (100 %). *Die Klasse hat 24 Schüler.*\n- **Prozentwert $W$** — der Teil, um den es geht. *6 davon sind Mädchen.*\n- **Prozentsatz $p\\,\\%$** — der Anteil des Teils am Ganzen. *Das sind 25 %.*\n\nMerkhilfe: **G**anzes, **W**as davon, **p**rozent."
+        "body": "- **Grundwert $G$** — das Ganze (100 %). *Die Klasse hat 24 Schüler.*\n- **Prozentwert $W$** — der Teil, um den es geht. *6 davon sind Mädchen.*\n- **Prozentsatz $p\\,\\%$** — der Anteil des Teils am Ganzen. *Das sind 25 %.*\n\nMerkhilfe: **G**anzes, **W**as davon, **p**rozent.",
+        "primer": "P_MATH_PROZENT"
       },
       {
         "kind": "formula",
         "title": "Die Grundformel — und ihre drei Gesichter",
-        "body": "$$\\frac{W}{G} = \\frac{p}{100}$$\n\n**Prozentwert gesucht:** $W = G \\cdot \\frac{p}{100}$\n\n**Prozentsatz gesucht:** $p = \\frac{W}{G} \\cdot 100$\n\n**Grundwert gesucht:** $G = \\frac{W}{p} \\cdot 100 = W : \\frac{p}{100}$"
+        "body": "$$\\frac{W}{G} = \\frac{p}{100}$$\n\n**Prozentwert gesucht:** $W = G \\cdot \\frac{p}{100}$\n\n**Prozentsatz gesucht:** $p = \\frac{W}{G} \\cdot 100$\n\n**Grundwert gesucht:** $G = \\frac{W}{p} \\cdot 100 = W : \\frac{p}{100}$",
+        "primer": "P_MATH_PROZENT"
       },
       {
         "kind": "example",
@@ -43,6 +48,7 @@
         "title": "Merke",
         "body": "**Prozent = Hundertstel.** Eine Formel: $\\frac{W}{G} = \\frac{p}{100}$. Änderungen rechnest du mit dem **Faktor** $1 \\pm \\frac{p}{100}$; bei Zinseszins kommt der Faktor **hoch n**."
       }
-    ]
+    ],
+    "primer": "P_MATH_PROZENT"
   }
 ]

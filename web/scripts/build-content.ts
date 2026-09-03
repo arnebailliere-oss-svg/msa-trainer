@@ -243,6 +243,17 @@ for (const l of lessons) {
   for (const tid of l.alsoFor ?? []) lessonTopics.add(tid);
   if (l.intro) checkTex(where, l.intro);
   checkSections(where, l.sections);
+  l.sections.forEach((s, i) => {
+    const specs = [...(s.figure ? [s.figure] : []), ...(s.figures ?? []).map((g) => g.figure)];
+    for (const spec of specs) {
+      try {
+        renderFigureSpec(spec, {});
+      } catch (e) {
+        error(`${where} section ${i + 1}`, `figure failed: ${(e as Error).message}`);
+      }
+    }
+    for (const g of s.figures ?? []) if (g.caption) checkTex(`${where} section ${i + 1}`, g.caption);
+  });
   for (const pid of [l.primer, ...l.sections.map((s) => s.primer)]) {
     if (!pid) continue;
     if (!primerById.has(pid)) error(where, `unknown primer ${pid}`);

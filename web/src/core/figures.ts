@@ -431,9 +431,103 @@ export function cylinder(spec: FigureSpec): string {
   return svg(W, H, body, "Zylinder");
 }
 
+/** A single angle of `deg` degrees (1–360) with arc and label. */
+export function angle(spec: FigureSpec): string {
+  const deg = Math.max(1, Math.min(360, num(spec.deg, 45)));
+  const label = str(spec.label, `${f(deg)}°`);
+  const W = 220;
+  const H = 170;
+  const len = 78;
+  const cx = deg <= 90 ? 60 : 110;
+  const cy = deg <= 180 ? 122 : 92;
+  const rad = (deg * Math.PI) / 180;
+  let body = line(cx, cy, cx + len, cy) + line(cx, cy, cx + len * Math.cos(rad), cy - len * Math.sin(rad));
+  if (deg === 360) body += `<circle cx='${cx}' cy='${cy}' r='24' fill='none' stroke='${ACCENT3}' stroke-width='2'/>` + text(cx, cy - 32, label, { fill: ACCENT3, bold: true });
+  else if (deg === 90) body += rightAngleMark(cx, cy, 1, -1) + text(cx + 30, cy - 30, label, { fill: ACCENT3, bold: true });
+  else body += angleArc(cx, cy, 24, 0, deg, label);
+  body += `<circle cx='${cx}' cy='${cy}' r='3' fill='currentColor'/>`;
+  return svg(W, H, body, `Winkel ${label}`);
+}
+
+/** Square pyramid: base edge a, height h. */
+export function pyramid(spec: FigureSpec): string {
+  const a = num(spec.a, 4);
+  const h = num(spec.h, 5);
+  const labels = (spec.labels ?? {}) as Record<string, unknown>;
+  const W = 300;
+  const H = 240;
+  const k = 0.5;
+  const scale = Math.min(180 / (a + a * k), 160 / (h + (a * k) / 2));
+  const A = a * scale;
+  const d = a * k * scale;
+  const x0 = 50;
+  const y0 = H - 36;
+  const P1 = [x0, y0];
+  const P2 = [x0 + A, y0];
+  const P3 = [x0 + A + d, y0 - d];
+  const P4 = [x0 + d, y0 - d];
+  const cx = x0 + A / 2 + d / 2;
+  const cy = y0 - d / 2;
+  const T = [cx, cy - h * scale];
+  const P = (p: number[]) => `${f(p[0]!)},${f(p[1]!)}`;
+  let body = `<polygon points='${P(P1)} ${P(P2)} ${P(P3)} ${P(P4)}' fill='${SOFT}' stroke='none'/>`;
+  body += `<polygon points='${P(P1)} ${P(P2)} ${P(T)}' fill='rgba(34,211,238,0.16)' stroke='none'/>`;
+  body += line(P1[0]!, P1[1]!, P2[0]!, P2[1]!) + line(P2[0]!, P2[1]!, P3[0]!, P3[1]!);
+  body += line(P3[0]!, P3[1]!, P4[0]!, P4[1]!, { dashed: true, width: 1.2 }) + line(P4[0]!, P4[1]!, P1[0]!, P1[1]!, { dashed: true, width: 1.2 });
+  body += line(P1[0]!, P1[1]!, T[0]!, T[1]!) + line(P2[0]!, P2[1]!, T[0]!, T[1]!) + line(P3[0]!, P3[1]!, T[0]!, T[1]!) + line(P4[0]!, P4[1]!, T[0]!, T[1]!, { dashed: true, width: 1.2 });
+  body += line(cx, cy, T[0]!, T[1]!, { dashed: true, color: ACCENT3 }) + `<circle cx='${f(cx)}' cy='${f(cy)}' r='2.5' fill='${ACCENT3}'/>`;
+  if (labels.h !== undefined) body += text(cx + 10, cy - (h * scale) / 2, str(labels.h), { anchor: "start", fill: ACCENT3, bold: true });
+  if (labels.a !== undefined) body += text(x0 + A / 2, y0 + 18, str(labels.a), { bold: true });
+  return svg(W, H, body, "Pyramide");
+}
+
+/** Cone: radius r, height h. */
+export function cone(spec: FigureSpec): string {
+  const r = num(spec.r, 2);
+  const h = num(spec.h, 5);
+  const labels = (spec.labels ?? {}) as Record<string, unknown>;
+  const W = 300;
+  const H = 240;
+  const scale = Math.min(90 / r, 170 / h);
+  const R = r * scale;
+  const Hh = h * scale;
+  const cx = 130;
+  const cy = H - 40;
+  const ry = Math.max(8, R * 0.3);
+  const top = cy - Hh;
+  let body = `<path d='M ${f(cx - R)} ${f(cy)} L ${f(cx)} ${f(top)} L ${f(cx + R)} ${f(cy)} A ${f(R)} ${f(ry)} 0 0 0 ${f(cx - R)} ${f(cy)}' fill='${SOFT}' stroke='currentColor' stroke-width='2' stroke-linejoin='round'/>`;
+  body += `<path d='M ${f(cx - R)} ${f(cy)} A ${f(R)} ${f(ry)} 0 0 1 ${f(cx + R)} ${f(cy)}' fill='none' stroke='currentColor' stroke-width='1.2' stroke-dasharray='5 4'/>`;
+  body += line(cx, cy, cx, top, { dashed: true, color: ACCENT3 }) + line(cx, cy, cx + R, cy, { color: ACCENT2 }) + `<circle cx='${cx}' cy='${cy}' r='2.5' fill='currentColor'/>`;
+  if (labels.h !== undefined) body += text(cx + 8, cy - Hh / 2, str(labels.h), { anchor: "start", fill: ACCENT3, bold: true });
+  if (labels.r !== undefined) body += text(cx + R / 2, cy + 18, str(labels.r), { fill: ACCENT2, bold: true });
+  if (labels.s !== undefined) body += text(cx + R / 2 + 14, top + Hh / 2, str(labels.s), { anchor: "start", bold: true });
+  return svg(W, H, body, "Kegel");
+}
+
+/** Sphere with equator and radius. */
+export function sphere(spec: FigureSpec): string {
+  const labels = (spec.labels ?? {}) as Record<string, unknown>;
+  const W = 240;
+  const H = 220;
+  const cx = W / 2;
+  const cy = H / 2;
+  const R = 84;
+  let body = `<circle cx='${cx}' cy='${cy}' r='${R}' fill='${SOFT}' stroke='currentColor' stroke-width='2'/>`;
+  body += `<path d='M ${f(cx - R)} ${cy} A ${R} ${f(R * 0.3)} 0 0 0 ${f(cx + R)} ${cy}' fill='none' stroke='currentColor' stroke-width='1.6'/>`;
+  body += `<path d='M ${f(cx - R)} ${cy} A ${R} ${f(R * 0.3)} 0 0 1 ${f(cx + R)} ${cy}' fill='none' stroke='currentColor' stroke-width='1.2' stroke-dasharray='5 4'/>`;
+  body += line(cx, cy, cx + R, cy, { color: ACCENT3 }) + `<circle cx='${cx}' cy='${cy}' r='3' fill='currentColor'/>`;
+  if (labels.r !== undefined) body += text(cx + R / 2, cy - 8, str(labels.r), { fill: ACCENT3, bold: true });
+  body += text(cx + 8, cy + 16, "M", { size: 11, anchor: "start" });
+  return svg(W, H, body, "Kugel");
+}
+
 // --- registry ---------------------------------------------------------------------
 
 const GENERATORS: Record<string, (spec: FigureSpec) => string> = {
+  angle,
+  pyramid,
+  cone,
+  sphere,
   rightTriangle,
   triangle,
   rectangle,

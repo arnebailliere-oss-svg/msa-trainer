@@ -16,17 +16,65 @@
       {
         "kind": "terms",
         "title": "Proportional und antiproportional",
-        "body": "- **Proportional** = „je mehr, desto mehr“, gleichmäßig. Doppelte Menge → doppelter Preis. *1 Brot 2 €, 2 Brote 4 €, 3 Brote 6 €.* Der **Proportionalitätsfaktor** ist immer gleich: $2:1 = 4:2 = 6:3 = 2$.\n- **Antiproportional** = „je mehr, desto weniger“. Doppelt so viele Arbeiter → halbe Zeit. *1 Arbeiter 12 Tage, 2 Arbeiter 6 Tage, 3 Arbeiter 4 Tage.* Das **Produkt** ist immer gleich: $1 \\cdot 12 = 2 \\cdot 6 = 3 \\cdot 4 = 12$.\n\nRechnen mit dem **Dreisatz**: erst auf 1 zurück, dann auf die gesuchte Menge."
+        "body": "- **Proportional** = „je mehr, desto mehr“, gleichmäßig. Doppelte Menge → doppelter Preis. *1 Brot 2 €, 2 Brote 4 €, 3 Brote 6 €.* Der **Proportionalitätsfaktor** ist immer gleich: $2:1 = 4:2 = 6:3 = 2$.\n- **Antiproportional** = „je mehr, desto weniger“. Doppelt so viele Arbeiter → halbe Zeit. *1 Arbeiter 12 Tage, 2 Arbeiter 6 Tage, 3 Arbeiter 4 Tage.* Das **Produkt** ist immer gleich: $1 \\cdot 12 = 2 \\cdot 6 = 3 \\cdot 4 = 12$.\n\nRechnen mit dem **Dreisatz**: erst auf 1 zurück, dann auf die gesuchte Menge.",
+        "figure": {
+          "type": "coordinateSystem",
+          "xmin": -1,
+          "xmax": 6,
+          "ymin": -1,
+          "ymax": 12,
+          "width": 260,
+          "height": 260,
+          "lines": [
+            {
+              "m": 2,
+              "n": 0,
+              "label": "proportional: y = 2x"
+            }
+          ]
+        }
       },
       {
         "kind": "what",
         "title": "Was ist eine Funktion?",
-        "body": "Eine **Funktion** ordnet jedem $x$ **genau ein** $y$ zu: $y = f(x)$. Die **Funktionsgleichung** ist die Rechenvorschrift, der **Graph** ihr Bild im Koordinatensystem.\n\n**Nullstellen** sind die $x$-Werte, an denen der Graph die $x$-Achse schneidet — also $y = 0$."
+        "body": "Eine **Funktion** ordnet jedem $x$ **genau ein** $y$ zu: $y = f(x)$. Die **Funktionsgleichung** ist die Rechenvorschrift, der **Graph** ihr Bild im Koordinatensystem.\n\n**Nullstellen** sind die $x$-Werte, an denen der Graph die $x$-Achse schneidet — also $y = 0$.",
+        "primer": "P_MATH_FUNKTION",
+        "figure": {
+          "type": "coordinateSystem",
+          "xmin": -1,
+          "xmax": 5,
+          "ymin": -1,
+          "ymax": 8,
+          "width": 260,
+          "height": 260,
+          "lines": [
+            {
+              "m": 2,
+              "n": 1,
+              "label": "y = 2x + 1"
+            }
+          ],
+          "points": [
+            {
+              "x": 0,
+              "y": 1
+            },
+            {
+              "x": 1,
+              "y": 3
+            },
+            {
+              "x": 2,
+              "y": 5
+            }
+          ]
+        }
       },
       {
         "kind": "formula",
         "title": "Lineare Funktionen: y = mx + n",
-        "body": "Der Graph ist eine **Gerade**.\n\n- $m$ = **Steigung**: pro Schritt nach rechts geht es um $m$ nach oben (oder nach unten, wenn $m < 0$). Aus zwei Punkten: $m = \\frac{y_2 - y_1}{x_2 - x_1}$\n- $n$ = **y-Achsenabschnitt**: der Graph schneidet die $y$-Achse bei $(0 \\,|\\, n)$\n- **Nullstelle**: $mx + n = 0 \\Rightarrow x = -\\frac{n}{m}$\n- **Punktprobe**: liegt $P(x_P \\,|\\, y_P)$ auf der Geraden? $x_P$ einsetzen — kommt $y_P$ heraus?\n\n$y = 0{,}5x + 3$: Nullstelle bei $x = -6$. $P(-12{,}4 \\,|\\, -2{,}8)$? $0{,}5 \\cdot (-12{,}4) + 3 = -3{,}2 \\neq -2{,}8$ → liegt nicht drauf."
+        "body": "Der Graph ist eine **Gerade**.\n\n- $m$ = **Steigung**: pro Schritt nach rechts geht es um $m$ nach oben (oder nach unten, wenn $m < 0$). Aus zwei Punkten: $m = \\frac{y_2 - y_1}{x_2 - x_1}$\n- $n$ = **y-Achsenabschnitt**: der Graph schneidet die $y$-Achse bei $(0 \\,|\\, n)$\n- **Nullstelle**: $mx + n = 0 \\Rightarrow x = -\\frac{n}{m}$\n- **Punktprobe**: liegt $P(x_P \\,|\\, y_P)$ auf der Geraden? $x_P$ einsetzen — kommt $y_P$ heraus?\n\n$y = 0{,}5x + 3$: Nullstelle bei $x = -6$. $P(-12{,}4 \\,|\\, -2{,}8)$? $0{,}5 \\cdot (-12{,}4) + 3 = -3{,}2 \\neq -2{,}8$ → liegt nicht drauf.",
+        "primer": "P_MATH_FUNKTION"
       },
       {
         "kind": "widget",
@@ -36,7 +84,8 @@
       {
         "kind": "formula",
         "title": "Quadratische Funktionen: die Parabel",
-        "body": "$f(x) = ax^2 + bx + c$. Der Graph heißt **Parabel**, ist symmetrisch und hat einen **Scheitelpunkt**.\n\n**Scheitelpunktform**: $f(x) = a(x - d)^2 + e$ mit Scheitelpunkt $S(d \\,|\\, e)$ — **Vorzeichen von $d$ beachten!** $f(x) = (x - 3)^2 + 1$ hat $S(3 \\,|\\, 1)$, $f(x) = (x + 3)^2 + 1$ hat $S(-3 \\,|\\, 1)$.\n\n- $a > 0$: nach **oben** geöffnet, $a < 0$: nach **unten**\n- $|a| > 1$: **gestreckt** (schmal), $|a| < 1$: **gestaucht** (breit)\n- **Nullstellen**: $f(x) = 0$ setzen → pq-Formel\n- Der Scheitel liegt genau **zwischen** den Nullstellen: $x_S = \\frac{x_1 + x_2}{2}$"
+        "body": "$f(x) = ax^2 + bx + c$. Der Graph heißt **Parabel**, ist symmetrisch und hat einen **Scheitelpunkt**.\n\n**Scheitelpunktform**: $f(x) = a(x - d)^2 + e$ mit Scheitelpunkt $S(d \\,|\\, e)$ — **Vorzeichen von $d$ beachten!** $f(x) = (x - 3)^2 + 1$ hat $S(3 \\,|\\, 1)$, $f(x) = (x + 3)^2 + 1$ hat $S(-3 \\,|\\, 1)$.\n\n- $a > 0$: nach **oben** geöffnet, $a < 0$: nach **unten**\n- $|a| > 1$: **gestreckt** (schmal), $|a| < 1$: **gestaucht** (breit)\n- **Nullstellen**: $f(x) = 0$ setzen → pq-Formel\n- Der Scheitel liegt genau **zwischen** den Nullstellen: $x_S = \\frac{x_1 + x_2}{2}$",
+        "primer": "P_MATH_QUADRAT"
       },
       {
         "kind": "widget",
@@ -58,6 +107,7 @@
         "title": "Merke",
         "body": "Gerade: $y = mx + n$ — $m$ Steigung, $n$ Schnitt mit der $y$-Achse. Parabel: $a(x - d)^2 + e$ — Scheitel $S(d \\,|\\, e)$. Nullstelle = $y$ gleich **0** setzen."
       }
-    ]
+    ],
+    "primer": "P_MATH_FUNKTION"
   }
 ]

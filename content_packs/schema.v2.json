@@ -26,6 +26,16 @@
         "title": { "type": "string" },
         "body": { "type": "string" },
         "figure": { "$ref": "#/definitions/figure" },
+        "figures": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["figure"],
+            "properties": { "caption": { "type": "string" }, "figure": { "$ref": "#/definitions/figure" } }
+          }
+        },
         "primer": { "type": "string", "pattern": "^P_[A-Z][A-Za-z0-9_]+$" }
       }
     },
@@ -81,7 +91,7 @@
       "type": "object",
       "required": ["type"],
       "properties": {
-        "type": { "type": "string", "enum": ["rightTriangle", "triangle", "rectangle", "parallelogram", "trapezoid", "circle", "coordinateSystem", "barChart", "pieChart", "treeDiagram", "box", "cylinder"] }
+        "type": { "type": "string", "enum": ["rightTriangle", "triangle", "rectangle", "parallelogram", "trapezoid", "circle", "coordinateSystem", "barChart", "pieChart", "treeDiagram", "box", "cylinder", "angle", "pyramid", "cone", "sphere"] }
       }
     },
     "explanation": {

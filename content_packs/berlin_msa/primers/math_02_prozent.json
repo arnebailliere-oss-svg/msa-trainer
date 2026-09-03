@@ -1,0 +1,78 @@
+[
+  {
+    "id": "P_MATH_PROZENT",
+    "subject": "MATH",
+    "title": "Prozent heißt „von hundert“",
+    "teaser": "Was Prozent bedeutet, welche drei Zahlen es immer gibt und wie du sie auseinanderhältst",
+    "hook": "Prozent steht auf jedem Preisschild, in jeder Statistik, in jeder Prüfung. Und es ist immer dieselbe Idee: etwas von hundert.",
+    "outro": "Das Ganze, der Teil, der Anteil. Wenn du die drei erkennst, ist jede Prozentaufgabe dieselbe Aufgabe.",
+    "steps": [
+      {
+        "title": "Von hundert",
+        "body": "$1\\,\\%$ = 1 von 100 = $\\frac{1}{100}$ = $0{,}01$\n\n$50\\,\\%$ = 50 von 100 = die **Hälfte**",
+        "say": "Pro centum, lateinisch: von hundert. Das Zeichen % ist nur eine Abkürzung dafür."
+      },
+      {
+        "title": "Prozent als Bruch und Dezimalzahl",
+        "body": "$25\\,\\% = \\frac{25}{100} = 0{,}25$\n\n$10\\,\\% = \\frac{10}{100} = 0{,}1$\n\n$100\\,\\% = 1$ = alles",
+        "say": "Prozent in Dezimalzahl: Komma zwei Stellen nach links. Aus 25 % wird 0,25."
+      },
+      {
+        "title": "Drei Zahlen, immer",
+        "body": "Von 200 Schülern fahren 50 Rad. Das sind 25 %.\n\n**200** = das Ganze\n\n**50** = der Teil\n\n**25 %** = der Anteil",
+        "say": "In jeder Prozentaufgabe kommen genau diese drei vor. Zwei kennst du, die dritte suchst du."
+      },
+      {
+        "title": "Die Namen",
+        "body": "Das Ganze = **Grundwert** $G$\n\nDer Teil = **Prozentwert** $W$\n\nDer Anteil = **Prozentsatz** $p\\,\\%$",
+        "say": "Der Grundwert ist das, wovon alle reden: der ganze Preis, alle Schüler, das ganze Kapital. Immer die 100 %."
+      },
+      {
+        "title": "Der Teil vom Ganzen",
+        "body": "20 % von 150:\n\n$150 \\cdot 0{,}2 = 30$\n\nGanzes mal Prozentsatz als Dezimalzahl.",
+        "say": "Prozent in Dezimalzahl, dann mal. 20 % von 150 sind 30. Das ist der Prozentwert."
+      },
+      {
+        "title": "Der Trick mit 1 %",
+        "body": "1 % von 150 = $150 : 100 = 1{,}5$\n\n20 % = $20 \\cdot 1{,}5 = 30$",
+        "say": "Wenn du 1 % kennst, kannst du jeden Prozentsatz bauen. Das geht sogar im Kopf."
+      },
+      {
+        "title": "Wie viel Prozent sind das?",
+        "body": "30 von 150:\n\n$30 : 150 = 0{,}2 = 20\\,\\%$\n\nTeil geteilt durch Ganzes.",
+        "say": "Teil durch Ganzes, dann mal 100. Das ist der Prozentsatz."
+      },
+      {
+        "title": "Das Ganze finden",
+        "body": "20 % sind 30. Wie viel ist alles?\n\n$30 : 0{,}2 = 150$\n\nTeil geteilt durch Prozentsatz.",
+        "say": "Oder mit 1 %: 30 geteilt durch 20 ist 1,5. Mal 100 ist 150."
+      },
+      {
+        "title": "Rabatt",
+        "body": "Preis 80 €, 25 % Rabatt.\n\nRabatt: $80 \\cdot 0{,}25 = 20$ €\n\nNeuer Preis: $80 - 20 = 60$ €\n\nOder direkt: $80 \\cdot 0{,}75 = 60$ €",
+        "say": "25 % weg heißt 75 % bleiben. Mal 0,75 ist der schnelle Weg."
+      },
+      {
+        "title": "Zinsen sind Prozent vom Geld",
+        "body": "500 € auf dem Konto, 2 % Zinsen im Jahr:\n\n$500 \\cdot 0{,}02 = 10$ € Zinsen\n\nNach einem Jahr: 510 €",
+        "say": "Zinsen sind nichts Neues. Das Kapital ist der Grundwert, der Zinssatz ist der Prozentsatz."
+      }
+    ],
+    "vocab": [
+      { "term": "Prozent (%)", "plain": "Von hundert.", "example": "$30\\,\\% = \\frac{30}{100} = 0{,}3$" },
+      { "term": "Grundwert G", "plain": "Das Ganze, die 100 %.", "example": "Alle 200 Schüler." },
+      { "term": "Prozentwert W", "plain": "Der Teil vom Ganzen.", "example": "50 Schüler fahren Rad." },
+      { "term": "Prozentsatz p", "plain": "Der Anteil in Prozent.", "example": "25 %" },
+      { "term": "Rabatt", "plain": "Ein Teil vom Preis wird abgezogen.", "example": "25 % Rabatt: mal 0,75" },
+      { "term": "Zinsen", "plain": "Prozent vom Geld, das auf dem Konto liegt.", "example": "2 % von 500 € sind 10 €." },
+      { "term": "Promille (‰)", "plain": "Von tausend.", "example": "5 ‰ = $0{,}005$" }
+    ],
+    "quiz": [
+      { "prompt": "Was ist 50 % von 80?", "choices": ["40", "50", "30", "0,5"], "correct": "40", "explain": "50 % ist die Hälfte: $80 \\cdot 0{,}5 = 40$." },
+      { "prompt": "Was bedeutet 30 %?", "choices": ["30 von 100", "30 von 10", "3 von 100", "30 mal 100"], "correct": "30 von 100", "explain": "Prozent heißt von hundert." },
+      { "prompt": "Von 200 Schülern sind 50 krank. Was ist der Grundwert?", "choices": ["200", "50", "25 %", "150"], "correct": "200", "explain": "Der Grundwert ist das Ganze, hier alle 200 Schüler." },
+      { "prompt": "Wie viel Prozent sind 10 von 40?", "choices": ["25 %", "10 %", "40 %", "4 %"], "correct": "25 %", "explain": "Teil durch Ganzes: $10 : 40 = 0{,}25$." },
+      { "prompt": "Ein Pullover kostet 40 €, es gibt 10 % Rabatt. Neuer Preis?", "choices": ["36 €", "30 €", "44 €", "4 €"], "correct": "36 €", "explain": "10 % von 40 € sind 4 €. $40 - 4 = 36$." }
+    ]
+  }
+]

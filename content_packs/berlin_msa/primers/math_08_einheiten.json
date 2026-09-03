@@ -1,0 +1,69 @@
+[
+  {
+    "id": "P_MATH_EINHEITEN",
+    "subject": "MATH",
+    "title": "Einheiten: kilo, zenti, milli",
+    "teaser": "Was die Vorsilben bedeuten, warum bei Flächen die 100 auftaucht und warum die Zeit anders tickt",
+    "hook": "Einheiten umrechnen ist kein Rechnen, sondern Wörter verstehen. Kilo heißt tausend, zenti heißt hundertstel. Wer das weiß, braucht keine Tabelle.",
+    "outro": "Kilo, zenti, milli. Länge mal 10, Fläche mal 100, Volumen mal 1000. Und Zeit läuft in Sechzigern. Das reicht für jede Umrechnung.",
+    "steps": [
+      {
+        "title": "Die Vorsilben",
+        "body": "**kilo** = tausend: 1 km = 1000 m\n\n**zenti** = hundertstel: 1 cm = $\\frac{1}{100}$ m\n\n**milli** = tausendstel: 1 mm = $\\frac{1}{1000}$ m",
+        "say": "Griechisch und lateinisch, aber nur drei Wörter. Kilo, zenti, milli."
+      },
+      {
+        "title": "Die Längen-Leiter",
+        "body": "km → m → dm → cm → mm\n\nJede Stufe: **mal 10**\n\nNur km → m: **mal 1000**",
+        "say": "Nach unten mal, nach oben geteilt. 2,5 m sind 25 dm sind 250 cm."
+      },
+      {
+        "title": "Beispiel",
+        "body": "$3{,}5\\ \\text{m} = 350\\ \\text{cm}$\n\n$4200\\ \\text{m} = 4{,}2\\ \\text{km}$",
+        "say": "Größere Einheit, kleinere Zahl. Kleinere Einheit, größere Zahl. Das ist die Kontrolle."
+      },
+      {
+        "title": "Fläche: alles mal 100",
+        "body": "1 m = 100 cm\n\n$1\\ \\text{m}^2 = 100 \\cdot 100 = 10\\,000\\ \\text{cm}^2$\n\nBei Flächen: jede Stufe **mal 100**.",
+        "figure": { "type": "rectangle", "a": 100, "b": 100, "labels": { "a": "100 cm", "b": "100 cm" } },
+        "say": "Ein Quadratmeter ist ein Quadrat von 1 m mal 1 m. In Zentimetern: 100 mal 100."
+      },
+      {
+        "title": "Volumen: alles mal 1000",
+        "body": "$1\\ \\text{m}^3 = 100 \\cdot 100 \\cdot 100 = 1\\,000\\,000\\ \\text{cm}^3$\n\nBei Volumen: jede Stufe **mal 1000**.",
+        "say": "Länge hoch 1: mal 10. Fläche hoch 2: mal 100. Volumen hoch 3: mal 1000. Die kleine Hochzahl verrät es."
+      },
+      {
+        "title": "Liter",
+        "body": "$1\\ \\text{l} = 1\\ \\text{dm}^3$\n\n$1\\ \\text{ml} = 1\\ \\text{cm}^3$\n\n$1\\ \\text{m}^3 = 1000\\ \\text{l}$",
+        "say": "Ein Liter ist ein Würfel mit 10 cm Kante. Merk dir das Bild vom Milchkarton."
+      },
+      {
+        "title": "Gewicht",
+        "body": "1 t = 1000 kg\n\n1 kg = 1000 g\n\n1 g = 1000 mg\n\nImmer **mal 1000**.",
+        "say": "Beim Gewicht gibt es nur die Tausender-Schritte. Einfacher als Länge."
+      },
+      {
+        "title": "Zeit ist die Ausnahme",
+        "body": "1 h = **60** min\n\n1 min = **60** s\n\n1 h = 3600 s\n\n1,5 h sind **90** min, nicht 150!",
+        "say": "Zeit läuft in Sechzigern, nicht in Zehnern. 0,5 Stunden sind 30 Minuten."
+      }
+    ],
+    "vocab": [
+      { "term": "kilo", "plain": "Tausend.", "example": "1 km = 1000 m, 1 kg = 1000 g" },
+      { "term": "zenti", "plain": "Ein Hundertstel.", "example": "100 cm = 1 m" },
+      { "term": "milli", "plain": "Ein Tausendstel.", "example": "1000 mm = 1 m, 1000 ml = 1 l" },
+      { "term": "dezi", "plain": "Ein Zehntel.", "example": "10 dm = 1 m" },
+      { "term": "Quadrat-Einheit (m²)", "plain": "Fläche. Jede Stufe mal 100.", "example": "$1\\ \\text{m}^2 = 10\\,000\\ \\text{cm}^2$" },
+      { "term": "Kubik-Einheit (m³)", "plain": "Volumen. Jede Stufe mal 1000.", "example": "$1\\ \\text{dm}^3 = 1000\\ \\text{cm}^3$" },
+      { "term": "Liter", "plain": "Ein Würfel mit 10 cm Kante, also 1 dm³.", "example": "1 l = 1000 ml" }
+    ],
+    "quiz": [
+      { "prompt": "2,5 km in Metern?", "choices": ["2500 m", "250 m", "25 m", "25 000 m"], "correct": "2500 m", "explain": "Kilo heißt tausend: $2{,}5 \\cdot 1000$." },
+      { "prompt": "1 m² sind wie viele cm²?", "choices": ["10 000", "100", "1000", "1 000 000"], "correct": "10 000", "explain": "100 cm mal 100 cm." },
+      { "prompt": "1 Liter ist …", "choices": ["1 dm³", "1 cm³", "1 m³", "10 cm"], "correct": "1 dm³", "explain": "Ein Würfel mit 10 cm Kante." },
+      { "prompt": "1,5 Stunden sind …", "choices": ["90 Minuten", "150 Minuten", "1 Stunde 50 Minuten", "15 Minuten"], "correct": "90 Minuten", "explain": "Eine Stunde hat 60 Minuten, eine halbe 30." },
+      { "prompt": "42 000 mm² in cm²?", "choices": ["420 cm²", "4200 cm²", "42 cm²", "4,2 cm²"], "correct": "420 cm²", "explain": "Fläche: eine Stufe nach oben heißt geteilt durch 100." }
+    ]
+  }
+]

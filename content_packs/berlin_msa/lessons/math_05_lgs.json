@@ -10,12 +10,14 @@
       {
         "kind": "what",
         "title": "Was ist ein LGS?",
-        "body": "Mehrere lineare Gleichungen mit mehreren Variablen bilden ein **lineares Gleichungssystem**. Für eine eindeutige Lösung brauchst du mindestens so viele Gleichungen wie Variablen — im MSA fast immer **2 Gleichungen, 2 Variablen** ($x$ und $y$).\n\nDie Lösung ist ein Zahlenpaar $(x \\,|\\, y)$, das **beide** Gleichungen erfüllt."
+        "body": "Mehrere lineare Gleichungen mit mehreren Variablen bilden ein **lineares Gleichungssystem**. Für eine eindeutige Lösung brauchst du mindestens so viele Gleichungen wie Variablen — im MSA fast immer **2 Gleichungen, 2 Variablen** ($x$ und $y$).\n\nDie Lösung ist ein Zahlenpaar $(x \\,|\\, y)$, das **beide** Gleichungen erfüllt.",
+        "primer": "P_MATH_LGS"
       },
       {
         "kind": "steps",
         "title": "Einsetzungsverfahren",
-        "body": "Eine Gleichung ist schon nach einer Variablen aufgelöst → in die andere **einsetzen**.\n\n(1) $y - x = 1$, (2) $y = 2x + 2$\n\n1. (2) in (1): $(2x + 2) - x = 1 \\Rightarrow x + 2 = 1 \\Rightarrow x = -1$\n2. $x = -1$ in (2): $y = 2 \\cdot (-1) + 2 = 0$\n3. $L = \\{(-1 \\,|\\, 0)\\}$"
+        "body": "Eine Gleichung ist schon nach einer Variablen aufgelöst → in die andere **einsetzen**.\n\n(1) $y - x = 1$, (2) $y = 2x + 2$\n\n1. (2) in (1): $(2x + 2) - x = 1 \\Rightarrow x + 2 = 1 \\Rightarrow x = -1$\n2. $x = -1$ in (2): $y = 2 \\cdot (-1) + 2 = 0$\n3. $L = \\{(-1 \\,|\\, 0)\\}$",
+        "primer": "P_MATH_LGS"
       },
       {
         "kind": "steps",
@@ -30,7 +32,35 @@
       {
         "kind": "example",
         "title": "Grafisch lösen",
-        "body": "Jede Gleichung ist eine **Gerade**. Beide nach $y$ umstellen, zeichnen, Schnittpunkt ablesen.\n\n- Die Geraden **schneiden** sich → genau **eine** Lösung (der Schnittpunkt)\n- Die Geraden sind **parallel** → **keine** Lösung\n- Die Geraden sind **identisch** → **unendlich viele** Lösungen\n\n$y = x + 2$ und $y = -x + 6$ schneiden sich in $S(2 \\,|\\, 4)$, also $L = \\{(2 \\,|\\, 4)\\}$."
+        "body": "Jede Gleichung ist eine **Gerade**. Beide nach $y$ umstellen, zeichnen, Schnittpunkt ablesen.\n\n- Die Geraden **schneiden** sich → genau **eine** Lösung (der Schnittpunkt)\n- Die Geraden sind **parallel** → **keine** Lösung\n- Die Geraden sind **identisch** → **unendlich viele** Lösungen\n\n$y = x + 2$ und $y = -x + 6$ schneiden sich in $S(2 \\,|\\, 4)$, also $L = \\{(2 \\,|\\, 4)\\}$.",
+        "figure": {
+          "type": "coordinateSystem",
+          "xmin": -1,
+          "xmax": 6,
+          "ymin": -1,
+          "ymax": 7,
+          "width": 280,
+          "height": 280,
+          "lines": [
+            {
+              "m": 1,
+              "n": 1,
+              "label": "(I) y = x + 1"
+            },
+            {
+              "m": -1,
+              "n": 5,
+              "label": "(II) y = −x + 5"
+            }
+          ],
+          "points": [
+            {
+              "x": 2,
+              "y": 3,
+              "label": "S(2|3)"
+            }
+          ]
+        }
       },
       {
         "kind": "mistake",
@@ -42,6 +72,7 @@
         "title": "Merke",
         "body": "Steht $y = \\ldots$ da → **einsetzen** oder **gleichsetzen**. Stehen beide in der Form $ax + by = c$ → **Additionsverfahren**. Lösung immer als Paar $(x \\,|\\, y)$ angeben."
       }
-    ]
+    ],
+    "primer": "P_MATH_LGS"
   }
 ]

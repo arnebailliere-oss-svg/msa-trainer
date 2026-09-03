@@ -15,7 +15,17 @@
       {
         "kind": "formula",
         "title": "Längen, Flächen, Volumen — die Potenzen zählen mit",
-        "body": "Von einer Längeneinheit zur nächsten ist der Faktor **10** (mm → cm → dm → m), zu km **1000**.\n\n- **Flächen** ($\\text{m}^2$, $\\text{cm}^2$ …): Faktor $10^2 = 100$ pro Stufe. $1\\,\\text{m}^2 = 100\\,\\text{dm}^2 = 10\\,000\\,\\text{cm}^2$\n- **Volumen** ($\\text{m}^3$, $\\text{cm}^3$ …): Faktor $10^3 = 1000$ pro Stufe. $1\\,\\text{m}^3 = 1000\\,\\text{dm}^3 = 1\\,000\\,000\\,\\text{cm}^3$\n- **Liter**: $1\\,\\text{l} = 1\\,\\text{dm}^3$, $1\\,\\text{ml} = 1\\,\\text{cm}^3$\n\n$24\\,\\text{cm}^2 = 24 : 10^4\\,\\text{m}^2 = 0{,}0024\\,\\text{m}^2$ und $45\\,\\text{cm}^3 = 45 : 10^3\\,\\text{dm}^3 = 0{,}045\\,\\text{dm}^3$"
+        "body": "Von einer Längeneinheit zur nächsten ist der Faktor **10** (mm → cm → dm → m), zu km **1000**.\n\n- **Flächen** ($\\text{m}^2$, $\\text{cm}^2$ …): Faktor $10^2 = 100$ pro Stufe. $1\\,\\text{m}^2 = 100\\,\\text{dm}^2 = 10\\,000\\,\\text{cm}^2$\n- **Volumen** ($\\text{m}^3$, $\\text{cm}^3$ …): Faktor $10^3 = 1000$ pro Stufe. $1\\,\\text{m}^3 = 1000\\,\\text{dm}^3 = 1\\,000\\,000\\,\\text{cm}^3$\n- **Liter**: $1\\,\\text{l} = 1\\,\\text{dm}^3$, $1\\,\\text{ml} = 1\\,\\text{cm}^3$\n\n$24\\,\\text{cm}^2 = 24 : 10^4\\,\\text{m}^2 = 0{,}0024\\,\\text{m}^2$ und $45\\,\\text{cm}^3 = 45 : 10^3\\,\\text{dm}^3 = 0{,}045\\,\\text{dm}^3$",
+        "primer": "P_MATH_EINHEITEN",
+        "figure": {
+          "type": "rectangle",
+          "a": 100,
+          "b": 100,
+          "labels": {
+            "a": "1 m = 100 cm",
+            "b": "100 cm"
+          }
+        }
       },
       {
         "kind": "example",
@@ -32,6 +42,7 @@
         "title": "Merke",
         "body": "Länge: **10**. Fläche: **100**. Volumen: **1000**. Zeit: **60**. In die **größere** Einheit → **teilen**, in die kleinere → **malnehmen**."
       }
-    ]
+    ],
+    "primer": "P_MATH_EINHEITEN"
   }
 ]

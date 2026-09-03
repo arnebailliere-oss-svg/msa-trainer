@@ -1,0 +1,89 @@
+[
+  {
+    "id": "P_MATH_POTENZ",
+    "subject": "MATH",
+    "title": "Potenzen und Wurzeln",
+    "teaser": "Was Basis und Hochzahl sind, warum $2^{-1}$ ein Bruch ist und was Wurzeln mit Quadraten zu tun haben",
+    "hook": "Eine Potenz ist eine Abkürzung. Statt $2 \\cdot 2 \\cdot 2 \\cdot 2 \\cdot 2$ schreibt man 2 hoch 5. Das war's schon. Der Rest sind ein paar Regeln, die daraus folgen.",
+    "outro": "Hoch ist Mal in kurz, Wurzel ist die Rückfrage. Mit dem Bild kannst du jetzt die Potenzgesetze lesen.",
+    "steps": [
+      {
+        "title": "Die Abkürzung",
+        "body": "$2 \\cdot 2 \\cdot 2 \\cdot 2 \\cdot 2 = 2^5 = 32$\n\nStatt fünfmal 2 schreibt man **2 hoch 5**.",
+        "say": "Wie „mal“ eine Abkürzung für Plus ist, ist „hoch“ eine Abkürzung für Mal."
+      },
+      {
+        "title": "Basis und Hochzahl",
+        "body": "$2^5$\n\n**2** = Basis, die Zahl, die multipliziert wird\n\n**5** = Hochzahl (Exponent), so oft steht sie da",
+        "say": "Basis heißt Grundlage. Sie steht unten, die Hochzahl steht oben."
+      },
+      {
+        "title": "Nicht verwechseln",
+        "body": "$2^5 = 32$, aber $5^2 = 25$\n\n$2^3 = 8$, nicht 6!",
+        "say": "Zwei hoch drei ist zwei mal zwei mal zwei, also acht. Nicht zwei mal drei."
+      },
+      {
+        "title": "Hoch 2 und hoch 3",
+        "body": "$4^2 = 16$ → Quadrat\n\n$4^3 = 64$ → Kubik\n\nQuadratzahlen bis 15 lohnen sich auswendig.",
+        "say": "1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196, 225. Lies sie dir ein paarmal durch."
+      },
+      {
+        "title": "Hoch 1 und hoch 0",
+        "body": "$7^1 = 7$\n\n$7^0 = 1$\n\nJede Zahl hoch 0 ist **1**.",
+        "say": "Hoch null ist die Überraschung. Merk es dir einfach: immer 1."
+      },
+      {
+        "title": "Zehnerpotenzen",
+        "body": "$10^2 = 100$\n\n$10^3 = 1000$\n\n$10^6 = 1\\,000\\,000$\n\nDie Hochzahl zählt die **Nullen**.",
+        "say": "Eine Million ist zehn hoch sechs: eine 1 mit sechs Nullen."
+      },
+      {
+        "title": "Negative Hochzahl = Bruch",
+        "body": "$2^{-1} = \\frac{1}{2}$\n\n$2^{-3} = \\frac{1}{2^3} = \\frac{1}{8}$\n\n$10^{-2} = \\frac{1}{100} = 0{,}01$",
+        "say": "Minus in der Hochzahl heißt: eins geteilt durch. Die Zahl wird nicht negativ, sie wird klein."
+      },
+      {
+        "title": "Mal bei gleicher Basis",
+        "body": "$2^3 \\cdot 2^2 = 2 \\cdot 2 \\cdot 2 \\cdot 2 \\cdot 2 = 2^5$\n\nHochzahlen **addieren**.",
+        "say": "Drei Zweier mal zwei Zweier sind fünf Zweier. Darum plus."
+      },
+      {
+        "title": "Geteilt bei gleicher Basis",
+        "body": "$\\frac{2^5}{2^2} = 2^3$\n\nHochzahlen **subtrahieren**.",
+        "say": "Fünf Zweier, zwei kürzen sich weg, drei bleiben."
+      },
+      {
+        "title": "Die Wurzel",
+        "body": "$\\sqrt{16} = 4$, weil $4^2 = 16$\n\n$\\sqrt{81} = 9$, weil $9^2 = 81$",
+        "say": "Wurzel ziehen ist die Rückfrage: Welche Zahl hoch 2 gibt das?"
+      },
+      {
+        "title": "Wurzel aus keiner Quadratzahl",
+        "body": "$\\sqrt{10} \\approx 3{,}16$\n\nTaschenrechner. Und dann ≈, weil gerundet.",
+        "say": "Die meisten Wurzeln sind krumme Zahlen. Kein Problem, dafür gibt es die Wurzel-Taste."
+      },
+      {
+        "title": "Wurzel aus Minus?",
+        "body": "$\\sqrt{-25}$ gibt es **nicht**.\n\nKeine Zahl mal sich selbst ist negativ.",
+        "say": "Plus mal plus ist plus, minus mal minus ist auch plus. Also kann kein Quadrat negativ sein."
+      }
+    ],
+    "vocab": [
+      { "term": "Potenz", "plain": "Eine Zahl mehrmals mit sich selbst mal genommen.", "example": "$2^5 = 32$" },
+      { "term": "Basis", "plain": "Die Zahl unten, die multipliziert wird.", "example": "Bei $2^5$ ist 2 die Basis." },
+      { "term": "Hochzahl (Exponent)", "plain": "Die Zahl oben. Sagt, wie oft.", "example": "Bei $2^5$ ist 5 die Hochzahl." },
+      { "term": "Quadratzahl", "plain": "Eine Zahl hoch 2.", "example": "$7^2 = 49$" },
+      { "term": "Zehnerpotenz", "plain": "10 hoch etwas. Die Hochzahl zählt die Nullen.", "example": "$10^4 = 10\\,000$" },
+      { "term": "Wurzel", "plain": "Die Rückfrage zum Quadrieren.", "example": "$\\sqrt{49} = 7$" },
+      { "term": "Radikand", "plain": "Die Zahl unter der Wurzel.", "example": "Bei $\\sqrt{49}$ ist 49 der Radikand." }
+    ],
+    "quiz": [
+      { "prompt": "$3^3 = ?$", "choices": ["27", "9", "6", "33"], "correct": "27", "explain": "$3 \\cdot 3 \\cdot 3 = 27$." },
+      { "prompt": "Bei $5^4$: Was ist die Basis?", "choices": ["5", "4", "20", "625"], "correct": "5", "explain": "Die Basis steht unten und wird multipliziert." },
+      { "prompt": "$10^0 = ?$", "choices": ["1", "0", "10", "100"], "correct": "1", "explain": "Jede Zahl hoch 0 ist 1." },
+      { "prompt": "$2^{-2} = ?$", "choices": ["$\\frac{1}{4}$", "$-4$", "$-\\frac{1}{4}$", "4"], "correct": "$\\frac{1}{4}$", "explain": "Minus in der Hochzahl: eins geteilt durch $2^2$." },
+      { "prompt": "$\\sqrt{64} = ?$", "choices": ["8", "32", "16", "4"], "correct": "8", "explain": "$8 \\cdot 8 = 64$." },
+      { "prompt": "$3^2 \\cdot 3^4 = ?$", "choices": ["$3^6$", "$3^8$", "$9^6$", "$3^2$"], "correct": "$3^6$", "explain": "Gleiche Basis, mal: Hochzahlen addieren." }
+    ]
+  }
+]

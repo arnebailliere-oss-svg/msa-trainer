@@ -13,27 +13,249 @@
       {
         "kind": "terms",
         "title": "Begriffe",
-        "body": "- Ein **Vieleck** hat $n$ Ecken; ein **regelmäßiges** Vieleck hat lauter gleiche Seiten und Winkel (regelmäßiges Viereck = Quadrat).\n- **Punkte** heißen $A, B, C$ (Großbuchstaben), **Seiten** $a, b, c$ (Kleinbuchstaben). Im Dreieck liegt Seite $a$ **gegenüber** von Punkt $A$.\n- **Kreis**: alle Punkte gleich weit vom Mittelpunkt entfernt — der **Radius** $r$. Durchmesser $d = 2r$.\n- **Koordinaten**: $P(x \\,|\\, y)$ — **erst $x$** (waagerecht), **dann $y$** (senkrecht)."
+        "body": "- Ein **Vieleck** hat $n$ Ecken; ein **regelmäßiges** Vieleck hat lauter gleiche Seiten und Winkel (regelmäßiges Viereck = Quadrat).\n- **Punkte** heißen $A, B, C$ (Großbuchstaben), **Seiten** $a, b, c$ (Kleinbuchstaben). Im Dreieck liegt Seite $a$ **gegenüber** von Punkt $A$.\n- **Kreis**: alle Punkte gleich weit vom Mittelpunkt entfernt — der **Radius** $r$. Durchmesser $d = 2r$.\n- **Koordinaten**: $P(x \\,|\\, y)$ — **erst $x$** (waagerecht), **dann $y$** (senkrecht).",
+        "figures": [
+          {
+            "figure": {
+              "type": "triangle",
+              "alpha": 60,
+              "beta": 50,
+              "labels": {
+                "a": "a",
+                "b": "b",
+                "c": "c",
+                "alpha": "α",
+                "beta": "β",
+                "gamma": "γ"
+              }
+            },
+            "caption": "Dreieck: Seite $a$ liegt gegenüber von Ecke $A$"
+          },
+          {
+            "figure": {
+              "type": "circle",
+              "labels": {
+                "r": "r",
+                "d": "d"
+              }
+            },
+            "caption": "Kreis: Radius $r$, Durchmesser $d = 2r$"
+          },
+          {
+            "figure": {
+              "type": "coordinateSystem",
+              "xmin": -1,
+              "xmax": 6,
+              "ymin": -1,
+              "ymax": 7,
+              "width": 240,
+              "height": 240,
+              "points": [
+                {
+                  "x": 3,
+                  "y": 5,
+                  "label": "P(3|5)"
+                }
+              ]
+            },
+            "caption": "Punkt $P(3\\,|\\,5)$: erst $x$, dann $y$"
+          }
+        ]
       },
       {
         "kind": "formula",
         "title": "Flächen, die du auswendig können musst",
-        "body": "**Rechteck**: $A = a \\cdot b$, Umfang $u = 2a + 2b$\n\n**Quadrat**: $A = a^2$, $u = 4a$\n\n**Parallelogramm**: $A = a \\cdot h$ (Grundseite mal **Höhe**, nicht mal die schräge Seite)\n\n**Dreieck**: $A = \\frac{1}{2} \\cdot a \\cdot h$\n\n**Trapez**: $A = \\frac{1}{2}(a + c) \\cdot h$\n\n**Kreis**: $A = \\pi \\cdot r^2$, Umfang $u = 2 \\cdot \\pi \\cdot r = \\pi \\cdot d$"
+        "body": "**Rechteck**: $A = a \\cdot b$, Umfang $u = 2a + 2b$\n\n**Quadrat**: $A = a^2$, $u = 4a$\n\n**Parallelogramm**: $A = a \\cdot h$ (Grundseite mal **Höhe**, nicht mal die schräge Seite)\n\n**Dreieck**: $A = \\frac{1}{2} \\cdot a \\cdot h$\n\n**Trapez**: $A = \\frac{1}{2}(a + c) \\cdot h$\n\n**Kreis**: $A = \\pi \\cdot r^2$, Umfang $u = 2 \\cdot \\pi \\cdot r = \\pi \\cdot d$",
+        "primer": "P_MATH_GEO_BEGRIFFE",
+        "figures": [
+          {
+            "figure": {
+              "type": "rectangle",
+              "a": 5,
+              "b": 3,
+              "labels": {
+                "a": "a",
+                "b": "b"
+              }
+            },
+            "caption": "Rechteck: $A = a \\cdot b$, $u = 2a + 2b$"
+          },
+          {
+            "figure": {
+              "type": "rectangle",
+              "a": 4,
+              "b": 4,
+              "labels": {
+                "a": "a",
+                "b": "a"
+              }
+            },
+            "caption": "Quadrat: $A = a^2$, $u = 4a$"
+          },
+          {
+            "figure": {
+              "type": "parallelogram",
+              "a": 5,
+              "h": 2.5,
+              "offset": 1.5,
+              "labels": {
+                "a": "a",
+                "h": "h",
+                "b": "b"
+              }
+            },
+            "caption": "Parallelogramm: $A = a \\cdot h$ (Höhe, nicht $b$!)"
+          },
+          {
+            "figure": {
+              "type": "triangle",
+              "alpha": 55,
+              "beta": 60,
+              "labels": {
+                "c": "a",
+                "h": "h"
+              }
+            },
+            "caption": "Dreieck: $A = \\frac{1}{2} \\cdot a \\cdot h$"
+          },
+          {
+            "figure": {
+              "type": "trapezoid",
+              "a": 6,
+              "c": 3,
+              "h": 2.5,
+              "labels": {
+                "a": "a",
+                "c": "c",
+                "h": "h"
+              }
+            },
+            "caption": "Trapez: $A = \\frac{1}{2}(a + c) \\cdot h$"
+          },
+          {
+            "figure": {
+              "type": "circle",
+              "labels": {
+                "r": "r",
+                "u": "u"
+              }
+            },
+            "caption": "Kreis: $A = \\pi r^2$, $u = 2\\pi r = \\pi d$"
+          }
+        ]
       },
       {
         "kind": "example",
         "title": "Beispiele",
-        "body": "Rechteck $a = 240$ cm, $b = 7$ dm — **erst gleiche Einheit**: $a = 24$ dm. $A = 24 \\cdot 7 = 168\\,\\text{dm}^2$, $u = 2 \\cdot 24 + 2 \\cdot 7 = 62$ dm\n\nKreis $d = 17$ cm → $r = 8{,}5$ cm. $A = \\pi \\cdot 8{,}5^2 \\approx 227{,}0\\,\\text{cm}^2$, $u = 2\\pi \\cdot 8{,}5 \\approx 53{,}4$ cm\n\nKreis mit Umfang $u = 38$ cm: $r = \\frac{u}{2\\pi} \\approx 6$ cm → $A = \\pi \\cdot 6^2 \\approx 113\\,\\text{cm}^2$"
+        "body": "Rechteck $a = 240$ cm, $b = 7$ dm — **erst gleiche Einheit**: $a = 24$ dm. $A = 24 \\cdot 7 = 168\\,\\text{dm}^2$, $u = 2 \\cdot 24 + 2 \\cdot 7 = 62$ dm\n\nKreis $d = 17$ cm → $r = 8{,}5$ cm. $A = \\pi \\cdot 8{,}5^2 \\approx 227{,}0\\,\\text{cm}^2$, $u = 2\\pi \\cdot 8{,}5 \\approx 53{,}4$ cm\n\nKreis mit Umfang $u = 38$ cm: $r = \\frac{u}{2\\pi} \\approx 6$ cm → $A = \\pi \\cdot 6^2 \\approx 113\\,\\text{cm}^2$",
+        "figures": [
+          {
+            "figure": {
+              "type": "rectangle",
+              "a": 24,
+              "b": 7,
+              "labels": {
+                "a": "a = 24 dm",
+                "b": "b = 7 dm"
+              }
+            },
+            "caption": "$A = 168\\ \\text{dm}^2$, $u = 62$ dm"
+          },
+          {
+            "figure": {
+              "type": "circle",
+              "labels": {
+                "d": "d = 17 cm"
+              }
+            },
+            "caption": "$r = 8{,}5$ cm → $A \\approx 227\\ \\text{cm}^2$"
+          },
+          {
+            "figure": {
+              "type": "circle",
+              "labels": {
+                "u": "u = 38 cm"
+              }
+            },
+            "caption": "$r = \\frac{u}{2\\pi} \\approx 6$ cm → $A \\approx 113\\ \\text{cm}^2$"
+          }
+        ]
       },
       {
         "kind": "terms",
         "title": "Winkel",
-        "body": "- **spitz**: $< 90°$ · **recht**: $= 90°$ · **stumpf**: zwischen $90°$ und $180°$ · **gestreckt**: $= 180°$ · **überstumpf**: zwischen $180°$ und $360°$ · **Vollwinkel**: $360°$\n- **Innenwinkelsumme** im Dreieck: $180°$. Im $n$-Eck: $(n - 2) \\cdot 180°$ — Viereck $360°$, Fünfeck $540°$.\n- **Scheitelwinkel** (gegenüber an einer Kreuzung) sind gleich; **Nebenwinkel** ergänzen sich zu $180°$.\n- An geschnittenen **Parallelen** sind Stufenwinkel und Wechselwinkel gleich groß."
+        "body": "- **spitz**: $< 90°$ · **recht**: $= 90°$ · **stumpf**: zwischen $90°$ und $180°$ · **gestreckt**: $= 180°$ · **überstumpf**: zwischen $180°$ und $360°$ · **Vollwinkel**: $360°$\n- **Innenwinkelsumme** im Dreieck: $180°$. Im $n$-Eck: $(n - 2) \\cdot 180°$ — Viereck $360°$, Fünfeck $540°$.\n- **Scheitelwinkel** (gegenüber an einer Kreuzung) sind gleich; **Nebenwinkel** ergänzen sich zu $180°$.\n- An geschnittenen **Parallelen** sind Stufenwinkel und Wechselwinkel gleich groß.",
+        "primer": "P_MATH_GEO_BEGRIFFE",
+        "figures": [
+          {
+            "figure": {
+              "type": "angle",
+              "deg": 45,
+              "label": "45°"
+            },
+            "caption": "spitz: unter 90°"
+          },
+          {
+            "figure": {
+              "type": "angle",
+              "deg": 90,
+              "label": "90°"
+            },
+            "caption": "recht: genau 90°"
+          },
+          {
+            "figure": {
+              "type": "angle",
+              "deg": 130,
+              "label": "130°"
+            },
+            "caption": "stumpf: zwischen 90° und 180°"
+          },
+          {
+            "figure": {
+              "type": "angle",
+              "deg": 180,
+              "label": "180°"
+            },
+            "caption": "gestreckt: 180°"
+          },
+          {
+            "figure": {
+              "type": "angle",
+              "deg": 250,
+              "label": "250°"
+            },
+            "caption": "überstumpf: über 180°"
+          },
+          {
+            "figure": {
+              "type": "triangle",
+              "alpha": 70,
+              "beta": 60,
+              "labels": {
+                "alpha": "70°",
+                "beta": "60°",
+                "gamma": "50°"
+              }
+            },
+            "caption": "Innenwinkelsumme: $70° + 60° + 50° = 180°$"
+          }
+        ]
       },
       {
         "kind": "steps",
         "title": "Dreieck konstruieren (z. B. c = 10 cm, α = 40°, a = 7 cm)",
-        "body": "1. Seite $c$ mit dem Lineal zeichnen, Endpunkte $A$ und $B$.\n2. Bei $A$ den Winkel $\\alpha = 40°$ mit dem Geodreieck abmessen, Hilfslinie zeichnen.\n3. Um $B$ einen Kreisbogen mit dem Zirkel, Radius $a = 7$ cm.\n4. Schnittpunkt mit der Hilfslinie ist $C$ — Strecken ergänzen, Ecken beschriften.\n\nStrecken: Lineal. Winkel: Geodreieck. Längen abtragen: Zirkel."
+        "body": "1. Seite $c$ mit dem Lineal zeichnen, Endpunkte $A$ und $B$.\n2. Bei $A$ den Winkel $\\alpha = 40°$ mit dem Geodreieck abmessen, Hilfslinie zeichnen.\n3. Um $B$ einen Kreisbogen mit dem Zirkel, Radius $a = 7$ cm.\n4. Schnittpunkt mit der Hilfslinie ist $C$ — Strecken ergänzen, Ecken beschriften.\n\nStrecken: Lineal. Winkel: Geodreieck. Längen abtragen: Zirkel.",
+        "figure": {
+          "type": "triangle",
+          "alpha": 40,
+          "beta": 73.3,
+          "labels": {
+            "c": "c = 10 cm",
+            "a": "a = 7 cm",
+            "alpha": "α = 40°"
+          }
+        }
       },
       {
         "kind": "mistake",
@@ -45,7 +267,8 @@
         "title": "Merke",
         "body": "Rechteck $a \\cdot b$ · Dreieck $\\frac{1}{2} a h$ · Kreis $\\pi r^2$ und $2 \\pi r$ · Dreieckswinkel **180°** · Punkt: **erst $x$, dann $y$**."
       }
-    ]
+    ],
+    "primer": "P_MATH_GEO_BEGRIFFE"
   },
   {
     "id": "L_MATH_GEO_PYTH_TRIG",
@@ -73,7 +296,8 @@
             "alpha": "α",
             "beta": "β"
           }
-        }
+        },
+        "primer": "P_MATH_PYTH_TRIG"
       },
       {
         "kind": "example",
@@ -88,7 +312,19 @@
       {
         "kind": "terms",
         "title": "Trigonometrie: die Seiten vom Winkel aus gesehen",
-        "body": "Im rechtwinkligen Dreieck, vom Winkel $\\alpha$ aus:\n- **Hypotenuse**: gegenüber vom rechten Winkel (immer dieselbe)\n- **Gegenkathete** von $\\alpha$: die Seite **gegenüber** von $\\alpha$\n- **Ankathete** von $\\alpha$: die Seite **am** Winkel $\\alpha$ (aber nicht die Hypotenuse)\n\n$$\\sin\\alpha = \\frac{\\text{Gegenkathete}}{\\text{Hypotenuse}} \\qquad \\cos\\alpha = \\frac{\\text{Ankathete}}{\\text{Hypotenuse}} \\qquad \\tan\\alpha = \\frac{\\text{Gegenkathete}}{\\text{Ankathete}}$$\n\nMerkwort: **GAGA HüHnerHof AG** — Sinus: **G**egenkathete/**H**ypotenuse, Kosinus: **A**nkathete/**H**ypotenuse, Tangens: **G**egenkathete/**A**nkathete."
+        "body": "Im rechtwinkligen Dreieck, vom Winkel $\\alpha$ aus:\n- **Hypotenuse**: gegenüber vom rechten Winkel (immer dieselbe)\n- **Gegenkathete** von $\\alpha$: die Seite **gegenüber** von $\\alpha$\n- **Ankathete** von $\\alpha$: die Seite **am** Winkel $\\alpha$ (aber nicht die Hypotenuse)\n\n$$\\sin\\alpha = \\frac{\\text{Gegenkathete}}{\\text{Hypotenuse}} \\qquad \\cos\\alpha = \\frac{\\text{Ankathete}}{\\text{Hypotenuse}} \\qquad \\tan\\alpha = \\frac{\\text{Gegenkathete}}{\\text{Ankathete}}$$\n\nMerkwort: **GAGA HüHnerHof AG** — Sinus: **G**egenkathete/**H**ypotenuse, Kosinus: **A**nkathete/**H**ypotenuse, Tangens: **G**egenkathete/**A**nkathete.",
+        "primer": "P_MATH_PYTH_TRIG",
+        "figure": {
+          "type": "rightTriangle",
+          "a": 4,
+          "b": 3,
+          "labels": {
+            "a": "Gegenkathete",
+            "b": "Ankathete",
+            "c": "Hypotenuse",
+            "alpha": "α"
+          }
+        }
       },
       {
         "kind": "steps",
@@ -98,7 +334,21 @@
       {
         "kind": "formula",
         "title": "Beliebige Dreiecke: Sinussatz und Kosinussatz (Formelblatt)",
-        "body": "**Sinussatz**: $\\frac{a}{\\sin\\alpha} = \\frac{b}{\\sin\\beta} = \\frac{c}{\\sin\\gamma}$ — wenn ein Paar aus Seite und Gegenwinkel bekannt ist.\n\n$\\alpha = 70°$, $\\beta = 46°$, $b = 4{,}3$: $a = \\frac{\\sin 70°}{\\sin 46°} \\cdot 4{,}3 \\approx 5{,}62$\n\n**Kosinussatz**: $a^2 = b^2 + c^2 - 2bc \\cdot \\cos\\alpha$ — der „Pythagoras mit Korrektur“ für zwei Seiten und den eingeschlossenen Winkel.\n\n$b = 7$, $c = 4$, $\\alpha = 65°$: $a = \\sqrt{49 + 16 - 56 \\cdot \\cos 65°} \\approx 6{,}43$"
+        "body": "**Sinussatz**: $\\frac{a}{\\sin\\alpha} = \\frac{b}{\\sin\\beta} = \\frac{c}{\\sin\\gamma}$ — wenn ein Paar aus Seite und Gegenwinkel bekannt ist.\n\n$\\alpha = 70°$, $\\beta = 46°$, $b = 4{,}3$: $a = \\frac{\\sin 70°}{\\sin 46°} \\cdot 4{,}3 \\approx 5{,}62$\n\n**Kosinussatz**: $a^2 = b^2 + c^2 - 2bc \\cdot \\cos\\alpha$ — der „Pythagoras mit Korrektur“ für zwei Seiten und den eingeschlossenen Winkel.\n\n$b = 7$, $c = 4$, $\\alpha = 65°$: $a = \\sqrt{49 + 16 - 56 \\cdot \\cos 65°} \\approx 6{,}43$",
+        "primer": "P_MATH_PYTH_TRIG",
+        "figure": {
+          "type": "triangle",
+          "alpha": 70,
+          "beta": 46,
+          "labels": {
+            "a": "a",
+            "b": "b",
+            "c": "c",
+            "alpha": "α",
+            "beta": "β",
+            "gamma": "γ"
+          }
+        }
       },
       {
         "kind": "mistake",
@@ -110,7 +360,8 @@
         "title": "Merke",
         "body": "**$a^2 + b^2 = c^2$**, $c$ gegenüber vom rechten Winkel. **GAGA HüHnerHof AG**. Winkel gesucht → $\\sin^{-1}$, $\\cos^{-1}$, $\\tan^{-1}$. Kein rechter Winkel → Sinussatz oder Kosinussatz (Formelblatt)."
       }
-    ]
+    ],
+    "primer": "P_MATH_PYTH_TRIG"
   },
   {
     "id": "L_MATH_GEO_KOERPER",
@@ -126,12 +377,102 @@
       {
         "kind": "terms",
         "title": "Begriffe",
-        "body": "- **Volumen** $V$: das Fassungsvermögen — in cm³, dm³ (= Liter), m³.\n- **Grundfläche** $A_G$: die Fläche, auf der der Körper steht.\n- **Mantelfläche** $A_M$: alle **Seitenflächen** zusammen (ohne Boden und Deckel).\n- **Oberfläche** $A_O$: **alle** Flächen zusammen — Mantel plus Grund- (und Deck-)fläche."
+        "body": "- **Volumen** $V$: das Fassungsvermögen — in cm³, dm³ (= Liter), m³.\n- **Grundfläche** $A_G$: die Fläche, auf der der Körper steht.\n- **Mantelfläche** $A_M$: alle **Seitenflächen** zusammen (ohne Boden und Deckel).\n- **Oberfläche** $A_O$: **alle** Flächen zusammen — Mantel plus Grund- (und Deck-)fläche.",
+        "figures": [
+          {
+            "figure": {
+              "type": "box",
+              "a": 4,
+              "b": 3,
+              "c": 2,
+              "labels": {
+                "a": "a",
+                "b": "b",
+                "c": "c"
+              }
+            },
+            "caption": "Quader: Grundfläche $G = a \\cdot b$, Höhe $c$"
+          },
+          {
+            "figure": {
+              "type": "cylinder",
+              "r": 2,
+              "h": 5,
+              "labels": {
+                "r": "r",
+                "h": "h"
+              }
+            },
+            "caption": "Zylinder: Grundfläche Kreis, Mantel außen herum"
+          }
+        ]
       },
       {
         "kind": "formula",
         "title": "Die Formeln (Formelblatt)",
-        "body": "**Würfel**: $V = a^3$, $A_O = 6a^2$, Raumdiagonale $d = a\\sqrt{3}$\n\n**Quader**: $V = a \\cdot b \\cdot c$, $A_O = 2ab + 2bc + 2ac$, $d = \\sqrt{a^2 + b^2 + c^2}$\n\n**Prisma** (gerade): $V = A_G \\cdot h$, $A_M = u_G \\cdot h$, $A_O = 2A_G + A_M$\n\n**Zylinder**: $V = \\pi r^2 \\cdot h$, $A_M = 2\\pi r \\cdot h$, $A_O = 2\\pi r^2 + 2\\pi r h$\n\n**Pyramide** (quadratisch): $V = \\frac{1}{3} a^2 \\cdot h$, $A_M = 2a \\cdot h_s$\n\n**Kegel**: $V = \\frac{1}{3} \\pi r^2 \\cdot h$\n\n**Kugel**: $V = \\frac{4}{3} \\pi r^3$"
+        "body": "**Würfel**: $V = a^3$, $A_O = 6a^2$, Raumdiagonale $d = a\\sqrt{3}$\n\n**Quader**: $V = a \\cdot b \\cdot c$, $A_O = 2ab + 2bc + 2ac$, $d = \\sqrt{a^2 + b^2 + c^2}$\n\n**Prisma** (gerade): $V = A_G \\cdot h$, $A_M = u_G \\cdot h$, $A_O = 2A_G + A_M$\n\n**Zylinder**: $V = \\pi r^2 \\cdot h$, $A_M = 2\\pi r \\cdot h$, $A_O = 2\\pi r^2 + 2\\pi r h$\n\n**Pyramide** (quadratisch): $V = \\frac{1}{3} a^2 \\cdot h$, $A_M = 2a \\cdot h_s$\n\n**Kegel**: $V = \\frac{1}{3} \\pi r^2 \\cdot h$\n\n**Kugel**: $V = \\frac{4}{3} \\pi r^3$",
+        "primer": "P_MATH_KOERPER",
+        "figures": [
+          {
+            "figure": {
+              "type": "box",
+              "a": 4,
+              "b": 3,
+              "c": 2,
+              "labels": {
+                "a": "a",
+                "b": "b",
+                "c": "c"
+              }
+            },
+            "caption": "Quader: $V = a \\cdot b \\cdot c$, $O = 2(ab + ac + bc)$"
+          },
+          {
+            "figure": {
+              "type": "cylinder",
+              "r": 2,
+              "h": 5,
+              "labels": {
+                "r": "r",
+                "h": "h"
+              }
+            },
+            "caption": "Zylinder: $V = \\pi r^2 \\cdot h$, $M = 2\\pi r \\cdot h$"
+          },
+          {
+            "figure": {
+              "type": "pyramid",
+              "a": 4,
+              "h": 5,
+              "labels": {
+                "a": "a",
+                "h": "h"
+              }
+            },
+            "caption": "Pyramide: $V = \\frac{1}{3} \\cdot G \\cdot h$"
+          },
+          {
+            "figure": {
+              "type": "cone",
+              "r": 2,
+              "h": 5,
+              "labels": {
+                "r": "r",
+                "h": "h"
+              }
+            },
+            "caption": "Kegel: $V = \\frac{1}{3} \\cdot \\pi r^2 \\cdot h$"
+          },
+          {
+            "figure": {
+              "type": "sphere",
+              "labels": {
+                "r": "r"
+              }
+            },
+            "caption": "Kugel: $V = \\frac{4}{3} \\pi r^3$, $O = 4 \\pi r^2$"
+          }
+        ]
       },
       {
         "kind": "example",
@@ -141,7 +482,8 @@
       {
         "kind": "steps",
         "title": "So gehst du vor",
-        "body": "1. Körper erkennen — Prisma und Zylinder haben oben und unten dieselbe Fläche, Pyramide und Kegel laufen spitz zu (**Faktor $\\frac{1}{3}$**).\n2. Alle Maße in **eine** Einheit bringen.\n3. Formel vom Formelblatt, einsetzen, rechnen.\n4. Einheit ans Ergebnis: Volumen **hoch 3**, Flächen **hoch 2**. Bei Liter: $1\\,\\text{dm}^3 = 1$ l."
+        "body": "1. Körper erkennen — Prisma und Zylinder haben oben und unten dieselbe Fläche, Pyramide und Kegel laufen spitz zu (**Faktor $\\frac{1}{3}$**).\n2. Alle Maße in **eine** Einheit bringen.\n3. Formel vom Formelblatt, einsetzen, rechnen.\n4. Einheit ans Ergebnis: Volumen **hoch 3**, Flächen **hoch 2**. Bei Liter: $1\\,\\text{dm}^3 = 1$ l.",
+        "primer": "P_MATH_KOERPER"
       },
       {
         "kind": "mistake",
@@ -153,6 +495,7 @@
         "title": "Merke",
         "body": "Gerade Körper: **Grundfläche mal Höhe**. Spitze Körper: **ein Drittel** davon. Oberfläche = Mantel **+** Grundfläche(n). Liter = dm³."
       }
-    ]
+    ],
+    "primer": "P_MATH_KOERPER"
   }
 ]

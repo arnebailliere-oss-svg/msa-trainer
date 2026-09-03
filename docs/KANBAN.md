@@ -1,6 +1,6 @@
 # MSA Trainer — Project Board
 
-> Source of truth for progress. Updated by Claude as work moves. Last update: 2026-09-03 01:10
+> Source of truth for progress. Updated by Claude as work moves. Last update: 2026-09-03 02:20
 >
 > Columns: **Backlog** → **In Progress** → **Review** (built, needs verification) → **Done** (verified).
 
@@ -8,14 +8,13 @@
 Rebuild MSA Trainer as a fast, modern, youth-friendly **static web app / PWA** on GitHub Pages:
 teach → drill (fresh variants) → repeat (mastery + repair), Math first from the 2027 e-book, with automated content checks.
 
-**Content now:** 531 questions (142 templated → unlimited variants; 82 original-exam items 2023–2025; 307 legacy, 51 of them with generated figures), 12 lessons (incl. Formelblatt) with 3 interactive explorers, 33 generated figures, 75 topics, 0 validation errors.
+**Content now:** 531 questions (142 templated → unlimited variants; 82 original-exam items 2023–2025; 307 legacy, 51 of them with generated figures), 12 lessons (incl. Formelblatt) with 3 interactive explorers and figure galleries, 14 Eulen-Lektionen (Frag Ferdinand, 150 Tafeln), 33 generated figures, 75 topics, 0 validation errors.
 
 **Milestones:** `d71e336` baseline · `b282d2f` web app end-to-end · `da469aa` modules 1–5 · `50d2610` all 16 Training sections · `01d0756` figures + widgets + exams 2023–2025 · `c9ea264` Formelblatt + audit · (next) exam mode + legacy figures
 
 ---
 
 ## In Progress
-- E7-2 · **Frag Ferdinand — content**: remaining Eulen-Lektionen (Brüche, Prozent, Potenzen, Funktionen, Parabel, LGS, Geometrie-Begriffe, Pythagoras/Trig, Körper, Stochastik, Einheiten) and badges on every dense lesson section · L
 - E6-1 · README + CLAUDE.md for the web app · S
 
 ## Review
@@ -26,6 +25,8 @@ teach → drill (fresh variants) → repeat (mastery + repair), Math first from 
 - E1 · Core port to TS (115 unit tests), persistence
 - E2-1 … E2-3 · Schema v2, validator (schema + semantics + 60-render template exercise + KaTeX + figure rendering), legacy migration with 3 fixes
 - E3-1 … E3-15 · All 16 Training sections of the 2027 e-book: 11 lessons, 139 templated drills, per-question sources
+- E7-2 · **All 14 Eulen-Lektionen** (Zeichen, Brüche, Prozent, Terme/Rechengesetze, Gleichungen, Potenzen, LGS, Stochastik, Funktionen, Parabel/pq, Einheiten, Fläche/Umfang/Winkel, Pythagoras/Trig, Körper): 150 boards with Ferdinand lines, 100 vocab cards, 73 quiz questions; every lesson has the owl card and 26 dense sections carry badges
+- E7-3 · **Figure galleries in lessons**: sections may carry `figures: [{caption, figure}]`; 19 sections now draw every shape they mention (Rechteck, Quadrat, Parallelogramm, Dreieck mit Höhe, Trapez, Kreis, 5 Winkelarten, Konstruktionsdreieck, Quader, Zylinder, Pyramide, Kegel, Kugel, Baumdiagramm, Säulen/Kreisdiagramm, Geraden/Punkte); new generators `angle`, `pyramid`, `cone`, `sphere`; lesson figures now render in TopicView too; e2e `lessons.spec.ts`
 - E7-1 · **Frag Ferdinand (Eulen-Lektionen)**: new content type `primers/*.json` (boards + `say` + vocab + quiz), schema + validator (quiz correctness, KaTeX, figures, references), progress flag per primer, chalkboard view `#/eule/:id` (Patrick Hand chalk font bundled, wipe animation, keyboard 1–5/Enter/arrows), ladder index `#/eule`, owl card at lesson top + inline badges on dense sections, dashboard entry; 3 primers live (Zeichen 15 Tafeln, Terme/Rechengesetze 14, Gleichungen 9); e2e `owl.spec.ts` desktop + mobile
 - E5-3/E5-5/E5-6 · **Live on GitHub Pages**: repo `arnebailliere-oss-svg/msa-trainer` (public), Actions workflow runs tests + content check + build on every push to `main`, Pages source = workflow (enabled via API; the workflow token may not create the Pages site itself). URL: https://arnebailliere-oss-svg.github.io/msa-trainer/
 - E4-10 · **Exam mode** like the real Prüfung: first 40 % Basisaufgaben (hilfsmittelfrei, calculator disabled), then Sternchen-/Sachaufgaben; stopwatch in the header; result page lists every task with time, source and correct answer; pool = 2023–2025 originals only (older exam items retagged `altpruefung`) — e2e `exam.spec.ts`

@@ -54,6 +54,8 @@ export interface ContentSection {
   figure?: FigureSpec;
   /** Rendered SVG of `figure` (filled in when a question/lesson is rendered). */
   figureSvg?: string;
+  /** Gallery of small labelled figures (lessons): one drawing per shape/formula mentioned in the body. */
+  figures?: { caption?: string; figure: FigureSpec }[];
   /** Eulen-Lektion ("Frag Ferdinand") that explains this section's basics from scratch. */
   primer?: string;
 }

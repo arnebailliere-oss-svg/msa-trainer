@@ -47,12 +47,63 @@
       {
         "kind": "formula",
         "title": "Beliebiges Dreieck",
-        "body": "**Sinussatz**: $\\frac{a}{\\sin\\alpha} = \\frac{b}{\\sin\\beta} = \\frac{c}{\\sin\\gamma}$\n\n**Umfang**: $u = a + b + c$ · **Fläche**: $A = \\frac{1}{2} c \\cdot h_c = \\frac{1}{2} a \\cdot b \\cdot \\sin\\gamma$"
+        "body": "**Sinussatz**: $\\frac{a}{\\sin\\alpha} = \\frac{b}{\\sin\\beta} = \\frac{c}{\\sin\\gamma}$\n\n**Umfang**: $u = a + b + c$ · **Fläche**: $A = \\frac{1}{2} c \\cdot h_c = \\frac{1}{2} a \\cdot b \\cdot \\sin\\gamma$",
+        "figure": {
+          "type": "triangle",
+          "alpha": 70,
+          "beta": 46,
+          "labels": {
+            "a": "a",
+            "b": "b",
+            "c": "c",
+            "alpha": "α",
+            "beta": "β",
+            "gamma": "γ"
+          }
+        }
       },
       {
         "kind": "formula",
         "title": "Rechteck, Trapez, Kreis",
-        "body": "**Rechteck**: $u = 2a + 2b$ · $A = a \\cdot b$ · Diagonale $e = \\sqrt{a^2 + b^2}$\n\n**Trapez**: Mittellinie $m = \\frac{1}{2}(a + c)$ · $A = m \\cdot h = \\frac{1}{2}(a + c) \\cdot h$\n\n**Kreis**: $d = 2r$ · $u = 2 \\cdot \\pi \\cdot r$ · $A = \\pi \\cdot r^2$"
+        "body": "**Rechteck**: $u = 2a + 2b$ · $A = a \\cdot b$ · Diagonale $e = \\sqrt{a^2 + b^2}$\n\n**Trapez**: Mittellinie $m = \\frac{1}{2}(a + c)$ · $A = m \\cdot h = \\frac{1}{2}(a + c) \\cdot h$\n\n**Kreis**: $d = 2r$ · $u = 2 \\cdot \\pi \\cdot r$ · $A = \\pi \\cdot r^2$",
+        "figures": [
+          {
+            "figure": {
+              "type": "rectangle",
+              "a": 5,
+              "b": 3,
+              "labels": {
+                "a": "a",
+                "b": "b"
+              }
+            },
+            "caption": "Rechteck"
+          },
+          {
+            "figure": {
+              "type": "trapezoid",
+              "a": 6,
+              "c": 3,
+              "h": 2.5,
+              "labels": {
+                "a": "a",
+                "c": "c",
+                "h": "h"
+              }
+            },
+            "caption": "Trapez"
+          },
+          {
+            "figure": {
+              "type": "circle",
+              "labels": {
+                "r": "r",
+                "d": "d"
+              }
+            },
+            "caption": "Kreis"
+          }
+        ]
       },
       {
         "kind": "formula",
@@ -82,7 +133,42 @@
             "r": "r",
             "h": "h"
           }
-        }
+        },
+        "figures": [
+          {
+            "figure": {
+              "type": "pyramid",
+              "a": 4,
+              "h": 5,
+              "labels": {
+                "a": "a",
+                "h": "h"
+              }
+            },
+            "caption": "Pyramide"
+          },
+          {
+            "figure": {
+              "type": "cone",
+              "r": 2,
+              "h": 5,
+              "labels": {
+                "r": "r",
+                "h": "h"
+              }
+            },
+            "caption": "Kegel"
+          },
+          {
+            "figure": {
+              "type": "sphere",
+              "labels": {
+                "r": "r"
+              }
+            },
+            "caption": "Kugel"
+          }
+        ]
       }
     ],
     "primer": "P_MATH_ZEICHEN"

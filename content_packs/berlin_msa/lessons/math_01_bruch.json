@@ -10,7 +10,18 @@
       {
         "kind": "what",
         "title": "Was ist ein Bruch?",
-        "body": "Der **Bruchstrich** ist nur eine andere Schreibweise für das Geteiltzeichen: $1 : 4 = \\frac{1}{4}$.\n\nOben steht der **Zähler**, unten der **Nenner**: $\\frac{\\text{Zähler}}{\\text{Nenner}}$. Der Nenner sagt, in wie viele gleich große Teile das Ganze geteilt ist; der Zähler sagt, wie viele davon gemeint sind.\n\n**Der Nenner darf niemals 0 sein.**"
+        "body": "Der **Bruchstrich** ist nur eine andere Schreibweise für das Geteiltzeichen: $1 : 4 = \\frac{1}{4}$.\n\nOben steht der **Zähler**, unten der **Nenner**: $\\frac{\\text{Zähler}}{\\text{Nenner}}$. Der Nenner sagt, in wie viele gleich große Teile das Ganze geteilt ist; der Zähler sagt, wie viele davon gemeint sind.\n\n**Der Nenner darf niemals 0 sein.**",
+        "figure": {
+          "type": "pieChart",
+          "categories": [
+            "3/4 gegessen",
+            "1/4 übrig"
+          ],
+          "values": [
+            3,
+            1
+          ]
+        }
       },
       {
         "kind": "terms",
@@ -20,7 +31,8 @@
       {
         "kind": "formula",
         "title": "Die Rechenregeln",
-        "body": "**Addition** (gleicher Nenner): $\\frac{a}{c} + \\frac{b}{c} = \\frac{a + b}{c}$\n\n**Subtraktion** (gleicher Nenner): $\\frac{a}{c} - \\frac{b}{c} = \\frac{a - b}{c}$\n\n**Multiplikation**: $\\frac{a}{b} \\cdot \\frac{c}{d} = \\frac{a \\cdot c}{b \\cdot d}$ — Zähler mal Zähler, Nenner mal Nenner\n\n**Division**: $\\frac{a}{b} : \\frac{c}{d} = \\frac{a}{b} \\cdot \\frac{d}{c}$ — mit dem **Kehrwert** multiplizieren"
+        "body": "**Addition** (gleicher Nenner): $\\frac{a}{c} + \\frac{b}{c} = \\frac{a + b}{c}$\n\n**Subtraktion** (gleicher Nenner): $\\frac{a}{c} - \\frac{b}{c} = \\frac{a - b}{c}$\n\n**Multiplikation**: $\\frac{a}{b} \\cdot \\frac{c}{d} = \\frac{a \\cdot c}{b \\cdot d}$ — Zähler mal Zähler, Nenner mal Nenner\n\n**Division**: $\\frac{a}{b} : \\frac{c}{d} = \\frac{a}{b} \\cdot \\frac{d}{c}$ — mit dem **Kehrwert** multiplizieren",
+        "primer": "P_MATH_BRUCH"
       },
       {
         "kind": "example",
@@ -30,7 +42,8 @@
       {
         "kind": "steps",
         "title": "Ungleiche Nenner? So gehst du vor",
-        "body": "1. **Hauptnenner** finden: das kleinste gemeinsame Vielfache der Nenner (zur Not: beide Nenner multiplizieren).\n2. Beide Brüche auf den Hauptnenner **erweitern**.\n3. Zähler addieren oder subtrahieren, Nenner bleibt.\n4. Ergebnis **kürzen**, so weit es geht.\n\nBeispiel: $\\frac{1}{2} + \\frac{3}{4} = \\frac{2}{4} + \\frac{3}{4} = \\frac{5}{4}$"
+        "body": "1. **Hauptnenner** finden: das kleinste gemeinsame Vielfache der Nenner (zur Not: beide Nenner multiplizieren).\n2. Beide Brüche auf den Hauptnenner **erweitern**.\n3. Zähler addieren oder subtrahieren, Nenner bleibt.\n4. Ergebnis **kürzen**, so weit es geht.\n\nBeispiel: $\\frac{1}{2} + \\frac{3}{4} = \\frac{2}{4} + \\frac{3}{4} = \\frac{5}{4}$",
+        "primer": "P_MATH_BRUCH"
       },
       {
         "kind": "mistake",
@@ -42,6 +55,7 @@
         "title": "Merke",
         "body": "**Erweitern und Kürzen** ändern nur die Schreibweise, nicht den Wert. **Plus und Minus** brauchen den gleichen Nenner. **Mal**: oben mal oben, unten mal unten. **Geteilt**: mit dem Kehrwert malnehmen. Am Ende immer kürzen!"
       }
-    ]
+    ],
+    "primer": "P_MATH_BRUCH"
   }
 ]

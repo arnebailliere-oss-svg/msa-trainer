@@ -1,7 +1,18 @@
 /** Structured explanation / lesson sections rendered as styled blocks. */
 
-import type { ContentSection } from "@/core/types";
+import type { ContentSection, FigureSpec } from "@/core/types";
+import { renderFigureSpec } from "@/core/variants";
 import { MathText } from "./MathText";
+
+/** Render a static figure spec (lessons); never throws in the UI. */
+function safeFigure(spec: FigureSpec | undefined): string | undefined {
+  if (!spec) return undefined;
+  try {
+    return renderFigureSpec(spec, {});
+  } catch {
+    return undefined;
+  }
+}
 import { AskOwl } from "./Owl";
 import { LessonWidget } from "./widgets";
 
@@ -24,6 +35,7 @@ export function ExplanationBlocks({ sections, compact = false }: { sections: Con
       {sections.map((s, i) => {
         const m = META[s.kind];
         const title = s.title ?? m.title;
+        const figureSvg = s.figureSvg ?? safeFigure(s.figure);
         return (
           <section key={i} className={`rounded-2xl border-l-4 bg-surface px-4 py-3 ${m.tone} anim-pop`} style={{ animationDelay: `${Math.min(i, 6) * 40}ms` }}>
             {(title || m.icon) && (
@@ -38,7 +50,21 @@ export function ExplanationBlocks({ sections, compact = false }: { sections: Con
               </h3>
             )}
             {s.kind === "widget" ? <LessonWidget id={s.body.trim()} /> : <MathText text={s.body} pre={m.pre} className="text-[1.02rem] leading-relaxed" />}
-            {s.figureSvg && <div className="mt-3 flex justify-center [&_svg]:max-w-full [&_svg]:h-auto" dangerouslySetInnerHTML={{ __html: s.figureSvg }} />}
+            {figureSvg && <div className="mt-3 flex justify-center [&_svg]:max-w-full [&_svg]:h-auto" dangerouslySetInnerHTML={{ __html: figureSvg }} />}
+            {s.figures && s.figures.length > 0 && (
+              <div className={`mt-3 grid gap-3 ${s.figures.length === 1 ? "" : s.figures.length === 2 || s.figures.length === 4 ? "sm:grid-cols-2" : "sm:grid-cols-2 lg:grid-cols-3"}`}>
+                {s.figures.map((g, j) => {
+                  const svg = safeFigure(g.figure);
+                  if (!svg) return null;
+                  return (
+                    <figure key={j} className="rounded-2xl bg-surface-2/60 p-2 text-center">
+                      <div className="flex justify-center [&_svg]:max-w-full [&_svg]:h-auto" dangerouslySetInnerHTML={{ __html: svg }} />
+                      {g.caption && <MathText text={g.caption} className="mt-1 text-sm text-ink-2" />}
+                    </figure>
+                  );
+                })}
+              </div>
+            )}
           </section>
         );
       })}

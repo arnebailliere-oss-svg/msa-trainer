@@ -1,0 +1,62 @@
+[
+  {
+    "id": "P_MATH_LGS",
+    "subject": "MATH",
+    "title": "Zwei Gleichungen, zwei Unbekannte",
+    "teaser": "Warum man manchmal zwei Gleichungen braucht, was die Lösung ist und was sie mit einem Schnittpunkt zu tun hat",
+    "hook": "Ein Gleichungssystem ist ein Rätsel mit zwei Unbekannten. Eine Gleichung reicht dann nicht. Zwei schon.",
+    "outro": "Zwei Unbekannte, zwei Gleichungen, ein Zahlenpaar als Lösung. Mit diesem Bild kannst du die Verfahren in der Lektion lesen.",
+    "steps": [
+      {
+        "title": "Ein Rätsel mit zwei Zahlen",
+        "body": "Zwei Zahlen zusammen ergeben 10.\n\nIhre Differenz ist 2.\n\n$x + y = 10$\n\n$x - y = 2$",
+        "say": "Zwei Unbekannte, x und y. Eine Gleichung allein hätte unendlich viele Lösungen. Erst beide zusammen legen das Ergebnis fest."
+      },
+      {
+        "title": "Die Lösung ist ein Paar",
+        "body": "$x = 6$ und $y = 4$\n\nProbe: $6 + 4 = 10$ ✓ und $6 - 4 = 2$ ✓\n\nMan schreibt: $L = \\{(6\\,|\\,4)\\}$",
+        "say": "Die Lösung sind zwei Zahlen, die in beiden Gleichungen gleichzeitig passen."
+      },
+      {
+        "title": "Was heißt „System“?",
+        "body": "System heißt nur: **mehrere Gleichungen, die zusammengehören**.\n\nMan nummeriert sie: (I) und (II).",
+        "say": "Das Wort klingt groß. Es bedeutet nur „zusammen“."
+      },
+      {
+        "title": "Idee 1: Einsetzen",
+        "body": "(I) $y = 2x$\n\n(II) $x + y = 9$\n\nSetze $2x$ für $y$ in (II):\n\n$x + 2x = 9$ → $3x = 9$ → $x = 3$, dann $y = 6$",
+        "say": "Wenn eine Gleichung schon „y =“ sagt, steck das einfach in die andere. Dann bleibt eine Gleichung mit einer Unbekannten."
+      },
+      {
+        "title": "Idee 2: Addieren",
+        "body": "(I) $x + y = 10$\n\n(II) $x - y = 2$\n\n(I) + (II): $2x = 12$ → $x = 6$, dann $y = 4$",
+        "say": "Plus y und minus y heben sich auf. Das ist das Additionsverfahren."
+      },
+      {
+        "title": "Das Bild dazu",
+        "body": "Jede Gleichung ist eine Gerade.\n\nDie Lösung ist der **Schnittpunkt**.",
+        "figure": { "type": "coordinateSystem", "xmin": -1, "xmax": 11, "ymin": -3, "ymax": 11, "width": 320, "height": 320, "lines": [{ "m": -1, "n": 10, "label": "x + y = 10" }, { "m": 1, "n": -2, "label": "x − y = 2" }], "points": [{ "x": 6, "y": 4, "label": "(6|4)" }] },
+        "say": "Zwei Geraden schneiden sich in genau einem Punkt. Genau da passen beide Gleichungen."
+      },
+      {
+        "title": "Keine oder unendlich viele",
+        "body": "Parallele Geraden: **keine** Lösung.\n\nDieselbe Gerade zweimal: **unendlich viele**.",
+        "say": "Das fragen sie gern: Wie viele Lösungen hat das System? Denk an die Geraden."
+      }
+    ],
+    "vocab": [
+      { "term": "Gleichungssystem (LGS)", "plain": "Mehrere Gleichungen, die zusammengehören.", "example": "(I) und (II)" },
+      { "term": "Unbekannte", "plain": "Die gesuchten Zahlen.", "example": "$x$ und $y$" },
+      { "term": "Lösungspaar", "plain": "Zwei Zahlen, die in beiden Gleichungen passen.", "example": "$(6\\,|\\,4)$" },
+      { "term": "Einsetzungsverfahren", "plain": "Eine Gleichung nach y auflösen und in die andere stecken.", "example": "$y = 2x$ in $x + y = 9$" },
+      { "term": "Additionsverfahren", "plain": "Beide Gleichungen addieren, sodass eine Unbekannte verschwindet.", "example": "$+y$ und $-y$ heben sich auf." },
+      { "term": "Schnittpunkt", "plain": "Wo sich die beiden Geraden treffen. Das ist die Lösung.", "example": "$(6\\,|\\,4)$" }
+    ],
+    "quiz": [
+      { "prompt": "$x + y = 7$ und $x - y = 1$. Lösung?", "choices": ["$x = 4$, $y = 3$", "$x = 3$, $y = 4$", "$x = 7$, $y = 1$", "$x = 6$, $y = 1$"], "correct": "$x = 4$, $y = 3$", "explain": "$4 + 3 = 7$ und $4 - 3 = 1$. Beides passt." },
+      { "prompt": "Was ist die Lösung eines LGS im Bild?", "choices": ["Der Schnittpunkt der Geraden", "Die Steigung", "Die y-Achse", "Der Nullpunkt"], "correct": "Der Schnittpunkt der Geraden", "explain": "Nur dort passen beide Gleichungen gleichzeitig." },
+      { "prompt": "Zwei parallele Geraden: Wie viele Lösungen?", "choices": ["Keine", "Eine", "Zwei", "Unendlich viele"], "correct": "Keine", "explain": "Parallele Geraden treffen sich nie." },
+      { "prompt": "(I) $y = 3x$, (II) $x + y = 8$. Was setzt du ein?", "choices": ["$3x$ für $y$ in (II)", "8 für $x$ in (I)", "$y$ für $x$", "Nichts, man addiert"], "correct": "$3x$ für $y$ in (II)", "explain": "Dann steht da $x + 3x = 8$, also $x = 2$ und $y = 6$." }
+    ]
+  }
+]
