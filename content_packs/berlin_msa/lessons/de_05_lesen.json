@@ -1,0 +1,48 @@
+[
+  {
+    "id": "L_DE_LESEN",
+    "subject": "DE",
+    "topicId": "DE_READ_CORE",
+    "alsoFor": ["DE_READ_ARGUMENT", "DE_READ_EVIDENCE", "DE_READ"],
+    "title": "Textverständnis: lesen, markieren, belegen",
+    "intro": "Der erste Teil der Deutschprüfung prüft dein **Text- und Leseverständnis**: ein Sachtext, ein literarischer Text oder ein Diagramm, dazu Aufgaben wie *richtig oder falsch*, *Kernaussage*, *Textbeleg mit Zeilenangabe*. Hier zählt nicht Tempo, sondern ein **fester Ablauf**.",
+    "source": "Adaptiert nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 1 (Textverständnis)",
+    "sections": [
+      {
+        "kind": "terms",
+        "title": "Die drei Textarten",
+        "body": "- **Sachtext** (z. B. Zeitungsartikel): informiert, nennt Fakten, Zahlen, Zitate von Fachleuten.\n- **Literarischer Text** (z. B. Buchauszug): erzählt, zeigt Gefühle oft **zwischen den Zeilen** (Herzklopfen statt „sie hatte Angst“).\n- **Diskontinuierlicher Text** (Grafik, Tabelle, Diagramm): Zahlen, die du **ablesen und vergleichen** musst."
+      },
+      {
+        "kind": "steps",
+        "title": "Der Ablauf in vier Schritten",
+        "body": "1. **Lesevorgang 1**: Text **überfliegen**. Worum geht es? Wer spricht?\n2. **Aufgaben lesen** und **Schlüsselwörter markieren**: meist Nomen, die sich wiederholen (Thema Umweltschutz → *Umwelt, Abfall, Recycling*). Auch die **Signalwörter** in der Aufgabe markieren (*umzäunt, Zoologe, freiwillig*).\n3. **Lesevorgang 2**: gründlich lesen, die Stellen zu den Signalwörtern **markieren**.\n4. **Aufgaben bearbeiten**: zur markierten Stelle springen, genau vergleichen, **Beleg mit Zeilenangabe** notieren."
+      },
+      {
+        "kind": "formula",
+        "title": "Richtig, falsch, steht nicht im Text",
+        "body": "Die Aussage wird Wort für Wort mit dem Text verglichen.\n\n- **richtig**: Der Text sagt genau das (auch in anderen Worten).\n- **falsch**: Der Text sagt das **Gegenteil** oder etwas **anderes** (*eine Pause* ≠ *ganzer Tag*, *nur gibt es leider auch schwarze Schafe* ≠ *Jäger schützen immer die Natur*).\n- **steht nicht im Text**: klingt plausibel, kommt aber nicht vor. Vermutungen zählen nicht.\n\nAchte auf **absolute Wörter** in der Aussage: *immer, nie, alle, gar nicht, nur*. Sie machen eine Aussage oft falsch."
+      },
+      {
+        "kind": "formula",
+        "title": "Kernaussage und Absicht",
+        "body": "**Kernaussage**: Was sagt der Text **insgesamt**? Suche das Wort oder den Satz, der alles zusammenhält (*gemischte Bilanz*, *Trophäenjäger als Naturschützer*). Antworten, die nur zu einem einzelnen Satz passen, sind keine Kernaussage.\n\n**Absicht (Intention)**: **informieren** (Fakten, neutral), **appellieren/überzeugen** (Meinung, Aufforderung, direkte Ansprache *Und du?*), **unterhalten** (Spannung, Humor), **erzählen** (Handlung, Figuren)."
+      },
+      {
+        "kind": "formula",
+        "title": "Belegen und zitieren",
+        "body": "Ein Beleg ist eine **wörtliche Textstelle** mit **Zeilenangabe**:\n\n*„… der durch keinen Zaun getrennt … steht.“ (Z. 4/5)*\n\n- Anführungszeichen setzen, Auslassungen mit *(…)* kennzeichnen.\n- Der Beleg muss die **Aussage selbst** stützen, nicht nur zum Thema passen.\n- Bei Diagrammen: Zahlen nennen und rechnen (*17 von 26, also mehr als die Hälfte*)."
+      },
+      {
+        "kind": "mistake",
+        "title": "Typische Fehler",
+        "body": "- Nur **einmal** lesen und aus dem Gedächtnis antworten.\n- *Plausibel* mit *richtig* verwechseln: Was nicht dasteht, ist **steht nicht im Text**.\n- Beleg ohne Zeilenangabe oder ohne Anführungszeichen.\n- Beim Diagramm die **Einheit** und das **Ganze** übersehen (*mehr als die Hälfte* braucht die Summe)."
+      },
+      {
+        "kind": "remember",
+        "title": "Merke",
+        "body": "Überfliegen → Aufgaben + Schlüsselwörter → gründlich lesen + markieren → belegen mit **Zeilenangabe**. Absolute Wörter (*immer, nie, alle*) sind Warnsignale."
+      }
+    ]
+  }
+]

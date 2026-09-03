@@ -1,0 +1,58 @@
+[
+  {
+    "id": "L_DE_EROERTERUNG",
+    "subject": "DE",
+    "topicId": "DE_WRITE_EROERTERUNG",
+    "alsoFor": ["DE_WRITE_REPHRASE", "DE_WRITE_SUMMARY", "DE_WRITE"],
+    "title": "Die Erörterung: Schreibplan und Aufbau",
+    "intro": "Der letzte Prüfungsteil ist ein eigener Text: meist eine **dialektische Erörterung** zu einem vorgegebenen Thema. Der **Schreibplan** ist oft selbst Teil der Aufgabe und bringt Punkte. Wer den Aufbau kennt, kann nicht viel falsch machen.",
+    "source": "Adaptiert nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 5 (Erörterung)",
+    "sections": [
+      {
+        "kind": "what",
+        "title": "Was die Prüfung fragt",
+        "body": "*„Verfassen Sie eine Erörterung zu der Frage, inwiefern soziale Medien sich auf die Gesellschaft auswirken. Berücksichtigen Sie Vor- und Nachteile. Vervollständigen Sie zuerst den Schreibplan.“*\n\nZwei Leistungen: **Schreibplan** (Gliederungsraster) und **Text**. Beide werden bewertet."
+      },
+      {
+        "kind": "formula",
+        "title": "Der Aufbau",
+        "body": "**Einleitung**\n\n- Anlass: ein Fakt, eine Statistik, ein Zitat oder eine kurze Anekdote, die Interesse weckt\n- Hinführung zum Thema und klare Fragestellung\n- Überleitung zum Hauptteil\n\n**Hauptteil**\n\n- **These** (eine Seite) mit Argumenten\n- **Gegenthese** (andere Seite) mit Argumenten\n- Jedes Argument: **Behauptung → Begründung → Beispiel/Beleg**\n\n**Schluss**\n\n- Eigene Position: pro oder kontra\n- Fazit\n- Ausblick, Empfehlung oder Appell"
+      },
+      {
+        "kind": "formula",
+        "title": "Ein Argument, drei Bausteine",
+        "body": "**Behauptung**: *Soziale Medien fördern die Vereinsamung.*\n\n**Begründung**: *Viele kommunizieren lieber online, als sich persönlich zu treffen, und verlieren dabei soziale Kompetenz.*\n\n**Beispiel/Beleg**: *Studien zeigen, dass Jugendliche mit hoher Nutzungsdauer seltener Freunde treffen.*\n\nOhne Begründung ist eine Behauptung nur eine Meinung. Ohne Beispiel bleibt sie abstrakt."
+      },
+      {
+        "kind": "steps",
+        "title": "Der Schreibplan (Gliederungsraster)",
+        "body": "1. **Zugang finden**: Was fällt dir zum Thema ein? Wo hast du Berührungspunkte? Gedankenexperiment: Zwei Freunde, die selten einer Meinung sind, diskutieren das Thema.\n2. **Einleitung**: Schreibanlass, Hinführung.\n3. **These** formulieren, drei Argumente mit Beleg/Beispiel stichpunktartig notieren.\n4. **Gegenthese** formulieren, ebenfalls drei Argumente mit Beleg.\n5. **Schluss**: persönliche Meinung, Fazit, Empfehlung.\n6. Argumente **sortieren**: pro Seite vom schwächsten zum stärksten."
+      },
+      {
+        "kind": "example",
+        "title": "Musterplan: Soziale Medien",
+        "body": "**Einleitung**: Soziale Medien sind zentral im Alltag; Kontakt zu Familie und Freunden, Information, aber auch negative Folgen → Frage: Wie wirken sie sich auf die Gesellschaft aus?\n\n**These: Soziale Medien sind eine Bereicherung.**\n\n1. Neue Freunde kennenlernen → Menschen weltweit erreichbar, gemeinsame Interessen sichtbar\n2. Als Content-Creator Geld verdienen → geringe Einstiegshürde, viele leben davon\n3. Ort für Aufklärung und Information → Gruppen erreichen viele Menschen, Organisation sozialer Anliegen\n\n**Gegenthese: Soziale Medien haben einen schlechten Einfluss.**\n\n1. Fördern Vereinsamung → lieber online als persönlich, Verlust sozialer Kompetenz\n2. Filterblasen → nur passende Inhalte, sachliche Diskussion wird schwer, Falschinformation\n3. Verzerrtes Selbstbild → jeder zeigt nur das Beste, das spiegelt nicht den Alltag\n\n**Schluss**: Kontra; Vereinsamung und Filterblasen wiegen schwerer; Verbot trotzdem nicht sinnvoll → Empfehlung: behutsamen Umgang in der Schule lehren."
+      },
+      {
+        "kind": "terms",
+        "title": "Tipps für den Text",
+        "body": "- **Präsens** schreiben. Konjunktiv nur, wenn du einen Autor wiedergibst.\n- **Sinnabschnitte**: jedes Argument ein eigener Absatz.\n- **Überleitungen**: *Ein weiterer Vorteil ist …*, *Jedoch …*, *Zu guter Letzt …*, *Insgesamt …*\n- **Neutral bleiben** bis zum Schluss: erst darstellen, dann werten.\n- **Steigerung**: das stärkste Argument zuletzt.\n- **Ausgewogen**: gleich viele Pro- und Kontra-Argumente.\n- Standardsprache, keine Füllwörter, keine Umgangssprache."
+      },
+      {
+        "kind": "steps",
+        "title": "Überarbeiten: die Checkliste",
+        "body": "1. Sind **alle drei Teile** da und erkennbar?\n2. Hat jedes Argument **Behauptung, Begründung, Beispiel**?\n3. Steht die eigene Meinung **nur im Schluss**?\n4. **Rechtschreibung**: das/dass, groß/klein. **Zeichensetzung**: Kommas vor Nebensätzen. **Ausdruck**: keine Umgangssprache.\n5. Zeitform **Präsens** durchgehend?"
+      },
+      {
+        "kind": "mistake",
+        "title": "Typische Fehler",
+        "body": "- Die eigene Meinung schon in der Einleitung verraten.\n- Nur eine Seite behandeln (dann ist es keine **dialektische** Erörterung).\n- Argumente ohne Beispiel: *Soziale Medien sind schlecht.* Punkt. Das ist eine Behauptung, kein Argument.\n- Im Schluss ein **neues** Argument bringen.\n- In der Vergangenheit erzählen statt im Präsens zu erörtern."
+      },
+      {
+        "kind": "remember",
+        "title": "Merke",
+        "body": "**Einleitung** (Anlass, Frage) → **Hauptteil** (These + 3 Argumente, Gegenthese + 3 Argumente, jedes: Behauptung, Begründung, Beispiel) → **Schluss** (Position, Fazit, Empfehlung). Präsens, Absätze, Überleitungen, stärkstes Argument zuletzt."
+      }
+    ]
+  }
+]

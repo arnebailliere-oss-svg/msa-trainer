@@ -1,0 +1,82 @@
+[
+  {
+    "id": "P_DE_WORTARTEN",
+    "subject": "DE",
+    "title": "Wortarten und Satzglieder von Anfang an",
+    "teaser": "Welche Jobs Wörter im Satz haben, wie du sie erkennst und welche Fragen die Satzglieder finden",
+    "hook": "Nomen, Verb, Adjektiv: Diese Wörter hast du schon hundertmal gehört. Aber was tun sie eigentlich? Ich zeige es dir wie bei einer Mannschaft: Jeder hat seinen Job, und am Job erkennst du ihn.",
+    "outro": "Artikelprobe, Steigerungsprobe, Stellvertreter, Verhältniswort, Bindewort. Und für die Satzglieder die vier Fragen. Damit kannst du jede Grammatikaufgabe lesen.",
+    "steps": [
+      {
+        "title": "Wörter haben Jobs",
+        "body": "Jedes Wort im Satz hat einen **Job**.\n\nDer Job heißt **Wortart**.",
+        "say": "Wie in einer Mannschaft: Torwart, Verteidiger, Stürmer. Wer was macht, erkennt man an der Aufgabe."
+      },
+      {
+        "title": "Nomen: Dinge, Menschen, Tiere, Gefühle",
+        "body": "**Hund**, **Lehrerin**, **Freude**, **Berlin**\n\nMan kann **der, die, das** davorsetzen.\n\nImmer **groß**.",
+        "say": "Artikelprobe: Passt der, die oder das davor? Dann ist es ein Nomen. Auch bei Gefühlen wie die Freude."
+      },
+      {
+        "title": "Verb: was passiert",
+        "body": "**laufen**, **denken**, **sein**, **haben**\n\nVerben verändern sich:\n\nich lauf**e**, du läuf**st**, er lief",
+        "say": "Das Verb ist das Herz des Satzes. Ohne Verb kein Satz."
+      },
+      {
+        "title": "Adjektiv: wie etwas ist",
+        "body": "**schnell**, **rot**, **müde**\n\nSteht oft vor dem Nomen: das rot**e** Auto\n\nKann gesteigert werden: schnell, schneller, am schnellsten",
+        "say": "Steigerungsprobe: Kann man es steigern? Dann ist es ein Adjektiv."
+      },
+      {
+        "title": "Artikel: die Begleiter",
+        "body": "**der, die, das** (bestimmt)\n\n**ein, eine** (unbestimmt)\n\nSie stehen vor Nomen.",
+        "say": "Kleine Wörter mit großem Nutzen: Sie verraten dir das Nomen."
+      },
+      {
+        "title": "Pronomen: Stellvertreter",
+        "body": "**ich, du, er, sie, wir**\n\n**mein, dein, sein**\n\n**dieser, jener, welcher**\n\nStehen **anstelle** eines Nomens.",
+        "say": "Pro-nomen heißt: für das Nomen. Statt „Tom lacht“ sagst du „Er lacht“."
+      },
+      {
+        "title": "Präposition: Verhältniswörter",
+        "body": "**in, auf, unter, mit, nach, vor, zu**\n\nSagen, **wo**, **wann** oder **wie**:\n\n*auf* dem Tisch, *nach* der Schule, *mit* dem Bus",
+        "say": "Präpositionen stehen vor Nomen oder Pronomen. Kleine Wörter, große Wirkung."
+      },
+      {
+        "title": "Konjunktion: Bindewörter",
+        "body": "**und, oder, aber, weil, dass, wenn, obwohl**\n\nVerbinden Wörter oder Sätze.",
+        "say": "Weil, dass, wenn und obwohl leiten Nebensätze ein. Vor ihnen steht ein Komma."
+      },
+      {
+        "title": "Adverb: nähere Umstände",
+        "body": "**heute, dort, sehr, gern, leider**\n\nVerändern sich **nicht**.\n\nSagen wo, wann, wie.",
+        "say": "Adverbien sehen manchmal wie Adjektive aus. Unterschied: Man kann sie nicht beugen und nicht steigern."
+      },
+      {
+        "title": "Satzglieder: die vier Fragen",
+        "body": "**Wer oder was?** → Subjekt\n\n**Was tut es?** → Prädikat (das Verb)\n\n**Wen oder was? Wem?** → Objekt\n\n**Wo, wann, wie, warum?** → Adverbiale",
+        "say": "Satzglieder sind größer als Wortarten: ganze Wortgruppen. Diese Fragen findest du in jeder Prüfung."
+      }
+    ],
+    "vocab": [
+      { "term": "Wortart", "plain": "Der Job eines Wortes im Satz.", "example": "Nomen, Verb, Adjektiv …" },
+      { "term": "Nomen", "plain": "Dinge, Menschen, Tiere, Gefühle. Artikelprobe, groß.", "example": "die Freude" },
+      { "term": "Verb", "plain": "Was passiert. Verändert sich nach der Person.", "example": "ich gehe, du gehst" },
+      { "term": "Adjektiv", "plain": "Wie etwas ist. Steigerbar.", "example": "schnell, schneller" },
+      { "term": "Artikel", "plain": "Begleiter des Nomens.", "example": "der, die, das, ein" },
+      { "term": "Pronomen", "plain": "Stellvertreter für ein Nomen.", "example": "er, sie, mein, dieser" },
+      { "term": "Präposition", "plain": "Verhältniswort: wo, wann, wie.", "example": "in, auf, mit, nach" },
+      { "term": "Konjunktion", "plain": "Bindewort.", "example": "und, weil, dass" },
+      { "term": "Subjekt", "plain": "Wer oder was?", "example": "**Der Hund** bellt." },
+      { "term": "Prädikat", "plain": "Was tut das Subjekt? Das Verb.", "example": "Der Hund **bellt**." },
+      { "term": "Objekt", "plain": "Wen oder was? Wem?", "example": "Er sieht **den Hund**." }
+    ],
+    "quiz": [
+      { "prompt": "Welche Wortart ist „Freude“?", "choices": ["Nomen", "Verb", "Adjektiv", "Pronomen"], "correct": "Nomen", "explain": "Artikelprobe: die Freude. Und es ist großgeschrieben." },
+      { "prompt": "Welche Wortart ist „schnell“ in „ein schnelles Auto“?", "choices": ["Adjektiv", "Nomen", "Verb", "Artikel"], "correct": "Adjektiv", "explain": "Es sagt, wie das Auto ist, und lässt sich steigern." },
+      { "prompt": "„Er lacht.“ Welche Wortart ist „er“?", "choices": ["Pronomen", "Nomen", "Artikel", "Adverb"], "correct": "Pronomen", "explain": "Es steht anstelle eines Namens." },
+      { "prompt": "Mit welcher Frage findest du das Subjekt?", "choices": ["Wer oder was?", "Wen oder was?", "Wo?", "Wann?"], "correct": "Wer oder was?", "explain": "Wer oder was tut etwas? Das ist das Subjekt." },
+      { "prompt": "Welches Wort ist eine Konjunktion?", "choices": ["weil", "auf", "schnell", "Hund"], "correct": "weil", "explain": "weil verbindet Sätze und leitet einen Nebensatz ein." }
+    ]
+  }
+]

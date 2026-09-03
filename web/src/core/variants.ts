@@ -69,6 +69,10 @@ export function sampleVariables(spec: VariantSpec, rng: Rng, maxTries = 2000): V
       } else if (def.type === "float") {
         const n = Math.round((def.max - def.min) / def.step) + 1;
         vars[name] = roundHalfUp(def.min + rng.int(n) * def.step, 6);
+      } else if (def.type === "pick") {
+        const i = rng.int(def.from.length);
+        vars[name] = i;
+        for (const [k, v] of Object.entries(def.from[i]!)) vars[`${name}_${k}`] = v;
       } else {
         vars[name] = rng.choice(def.values);
       }

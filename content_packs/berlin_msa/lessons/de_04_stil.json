@@ -1,0 +1,48 @@
+[
+  {
+    "id": "L_DE_STIL",
+    "subject": "DE",
+    "topicId": "DE_STIL_MITTEL",
+    "alsoFor": ["DE_STIL_REGISTER", "DE_STIL_FEHLER", "DE_STIL"],
+    "title": "Stilmittel, Sprachebenen, Fehler finden",
+    "intro": "Drei Aufgaben, die in fast jeder Prüfung auftauchen: *Notieren Sie zwei Stilmittel*, *Formulieren Sie den Satz in Standardsprache* und *Benennen Sie die Fehlerart*. Alle drei brauchen dasselbe: ein Auge für **Sprache**, nicht nur für Inhalt.",
+    "source": "Adaptiert nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 2 und Part 4",
+    "sections": [
+      {
+        "kind": "what",
+        "title": "Was die Prüfung fragt",
+        "body": "- „Notieren Sie **zwei Stilmittel**, die in folgendem Satz verwendet werden.“\n- „Notieren Sie den Satz in **Standardsprache**.“\n- „**Benennen** Sie die Fehler im Text: Rechtschreib-, Zeichensetzungs-, Grammatik- oder Ausdrucksfehler.“"
+      },
+      {
+        "kind": "terms",
+        "title": "Die wichtigsten Stilmittel",
+        "body": "- **Alliteration**: gleicher Anfangslaut. *frisch und fröhlich*\n- **Anapher**: Wiederholung am Satzanfang. *Wer war das? Wer hat das getan?*\n- **Antithese**: Gegensatz. *Jung und Alt*\n- **Asyndeton**: Reihe ohne Bindewort. *Wasser, Luft, Erde, Feuer*\n- **Chiasmus**: Überkreuzstellung. *Er ist jung, alt bist du.*\n- **Ellipse**: unvollständiger Satz. *Erst die Arbeit, dann das Vergnügen.*\n- **Euphemismus**: Beschönigung. *Seniorenresidenz*\n- **Hyperbel**: Übertreibung. *im Schneckentempo, tausendmal gesagt*\n- **Klimax**: Steigerung. *Ich kam, sah, siegte.*\n- **Metapher**: Bild ohne *wie*. *ein Löwe im Kampf*\n- **Oxymoron**: innerer Widerspruch. *alter Jüngling*\n- **Parallelismus**: gleicher Satzbau. *Der Mensch läuft, der Fisch schwimmt.*\n- **Personifikation**: Dinge handeln wie Menschen. *Die Sonne lacht.*\n- **Pleonasmus**: Doppelung. *weißer Schimmel*\n- **Rhetorische Frage**: Scheinfrage. *Wollen wir das wirklich?*\n- **Symbol**: festes Bild. *weiße Taube = Frieden*\n- **Vergleich**: mit *wie*. *klein wie eine Maus*"
+      },
+      {
+        "kind": "steps",
+        "title": "Stilmittel finden in drei Schritten",
+        "body": "1. **Wiederholt sich etwas?** Anfangslaut → Alliteration, Wort am Satzanfang → Anapher, Satzbau → Parallelismus.\n2. **Ist es ein Bild?** Mit *wie* → Vergleich, ohne *wie* → Metapher, Ding wird menschlich → Personifikation, festes Zeichen → Symbol.\n3. **Ist es übertrieben, beschönigt, widersprüchlich oder eine Scheinfrage?** → Hyperbel, Euphemismus, Oxymoron, rhetorische Frage.\n\nBeispiel aus dem Training: *„Sind wir als vernunftbegabter nackter Affe nur eine Laune der Natur?“* → **rhetorische Frage**, **Personifikation** (die Natur hat eine Laune), **Vergleich/Metapher** (Mensch als Affe)."
+      },
+      {
+        "kind": "formula",
+        "title": "Standard- und Umgangssprache",
+        "body": "**Standardsprache** (Hochdeutsch): formell, vollständige Sätze, sachlich, keine Füllwörter. Für Schule, Bewerbung, Prüfung.\n\n**Umgangssprache**: Alltagswörter, Slang, Füllwörter (*ähm, halt, also*), verkürzte Formen (*hab, machste, Pulli*). Für Freunde und Chats.\n\nUmformen: Füllwörter **streichen**, Slang-Wörter **ersetzen** (*voll* → *sehr*, *krass* → *beeindruckend*, *Bock* → *Lust*), Abkürzungen **ausschreiben** (*hab* → *habe*), höfliche vollständige Sätze bilden.\n\n*Das war ihr ausgeleierter Rollkragenpulli.* → *Das war ihr oft getragener Rollkragenpullover.*"
+      },
+      {
+        "kind": "formula",
+        "title": "Die vier Fehlerarten",
+        "body": "1. **Rechtschreibfehler** (R): *warscheinlich* → *wahrscheinlich*, *das* statt *dass*.\n2. **Zeichensetzungsfehler** (Z): fehlendes Komma, fehlende Anführungszeichen.\n3. **Grammatikfehler** (G): falscher Fall (*ein Film* → *einen Film*), falsche Verbform (*gefangt* → *gefangen*), *wegen dem* → *wegen des*.\n4. **Ausdrucksfehler** (A): Umgangssprache, Füllwörter, unpassende Wortwahl. *Naturreservate sind **voll** wichtig, aber zu viel Tourismus kann die Natur **halt** auch **kaputt machen**.* → *Naturreservate sind für den Naturschutz von großer Bedeutung, aber übermäßiger Tourismus kann die Natur schädigen.*"
+      },
+      {
+        "kind": "mistake",
+        "title": "Typische Fehler",
+        "body": "- Metapher und Vergleich verwechseln: Steht **wie** da, ist es ein Vergleich.\n- Nur **ein** Stilmittel nennen, wenn zwei verlangt sind.\n- Beim Umformen in Standardsprache den **Inhalt** verändern. Nur die Sprache ändert sich.\n- *das/dass* als Grammatikfehler einordnen: Es ist ein **Rechtschreibfehler**."
+      },
+      {
+        "kind": "remember",
+        "title": "Merke",
+        "body": "Stilmittel: **Wiederholung? Bild? Übertreibung/Frage?** Standardsprache: Füllwörter weg, Slang ersetzen, vollständige Sätze. Fehlerarten: **R, Z, G, A**."
+      }
+    ]
+  }
+]

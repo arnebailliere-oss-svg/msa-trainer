@@ -1,0 +1,273 @@
+[
+  {
+    "id": "DE_MODUS_MCQ_T1",
+    "subject": "DE",
+    "topicId": "DE_GRAM_MODUS",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "In welchem Modus steht der Satz?\n\n„{{s_satz}}“",
+    "payload": { "choices": ["Indikativ", "Konjunktiv I", "Konjunktiv II", "Imperativ"] },
+    "solution": { "correct_choice": "{{s_loesung}}" },
+    "explanation": [
+      { "kind": "what", "title": "Woran du es erkennst", "body": "{{s_hinweis}}" },
+      { "kind": "remember", "body": "**Indikativ**: Wirklichkeit, Tatsachen (*er geht*). **Konjunktiv I**: indirekte Rede (*er sagte, er gehe / sie habe / er sei*). **Konjunktiv II**: Wunsch, Unwirkliches, Höflichkeit (*hätte, wäre, würde, könnte*). **Imperativ**: Befehl oder Aufforderung (*Geh! Kauft!*)." }
+    ],
+    "tags": ["modus", "grammatik", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 2 (Die vier Hauptmodi)",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "s": {
+          "type": "pick",
+          "from": [
+            { "satz": "Könntest du vielleicht dort weggehen?", "loesung": "Konjunktiv II", "hinweis": "„könntest“ ist Konjunktiv II von können: höfliche Bitte." },
+            { "satz": "Ich suche die Toiletten.", "loesung": "Indikativ", "hinweis": "„suche“ beschreibt eine Tatsache in der Wirklichkeit." },
+            { "satz": "Geh bitte zum Supermarkt und kaufe Milch!", "loesung": "Imperativ", "hinweis": "„Geh“ und „kaufe“ sind Befehlsformen." },
+            { "satz": "Wir seien fleißige Schülerinnen und Schüler, hieß es.", "loesung": "Konjunktiv I", "hinweis": "„seien“ ist Konjunktiv I von sein (ich sei, wir seien): indirekte Rede. Konjunktiv II wäre „wären“." },
+            { "satz": "Er sagte, er gehe zur Arbeit.", "loesung": "Konjunktiv I", "hinweis": "„gehe“ nach „er“ ist Konjunktiv I: indirekte Rede." },
+            { "satz": "Wenn ich mehr Zeit hätte, würde ich reisen.", "loesung": "Konjunktiv II", "hinweis": "„hätte“ und „würde“: unwirkliche Bedingung." },
+            { "satz": "Er geht jeden Tag zur Arbeit.", "loesung": "Indikativ", "hinweis": "„geht“: Gewohnheit, Wirklichkeit." },
+            { "satz": "Kauf bitte Milch!", "loesung": "Imperativ", "hinweis": "„Kauf“ ist eine Aufforderung." },
+            { "satz": "Sie meinte, sie habe keine Zeit.", "loesung": "Konjunktiv I", "hinweis": "„habe“ nach „sie“ ist Konjunktiv I: indirekte Rede (Indikativ wäre „hat“)." },
+            { "satz": "Ich wäre so gern Pilot.", "loesung": "Konjunktiv II", "hinweis": "„wäre“: Wunsch, Unwirkliches." },
+            { "satz": "Kommt sofort her!", "loesung": "Imperativ", "hinweis": "„Kommt“ ist ein Befehl an mehrere Personen." },
+            { "satz": "Das Wetter war gestern schlecht.", "loesung": "Indikativ", "hinweis": "„war“: Tatsache in der Vergangenheit." },
+            { "satz": "Hätte ich das nur gewusst!", "loesung": "Konjunktiv II", "hinweis": "„Hätte“: unerfüllbarer Wunsch." },
+            { "satz": "Er behauptet, er sei unschuldig.", "loesung": "Konjunktiv I", "hinweis": "„sei“: indirekte Wiedergabe seiner Behauptung." },
+            { "satz": "Wir gehen morgen ins Kino.", "loesung": "Indikativ", "hinweis": "„gehen“: fester Plan, als Tatsache formuliert." },
+            { "satz": "Bleib bitte ruhig!", "loesung": "Imperativ", "hinweis": "„Bleib“: Aufforderung." }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "DE_AKTIV_PASSIV_MCQ_T1",
+    "subject": "DE",
+    "topicId": "DE_GRAM_AKTIV_PASSIV",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "„{{s_satz}}“\n\nWie lautet der Satz im **{{s_ziel}}**?",
+    "payload": { "choices": ["{{s_a}}", "{{s_b}}", "{{s_c}}", "{{s_d}}"] },
+    "solution": { "correct_choice": "{{s_a}}" },
+    "explanation": [
+      { "kind": "steps", "title": "So gehst du vor", "body": "{{s_hinweis}}" },
+      { "kind": "remember", "body": "**Aktiv**: Wer handelt, steht im Mittelpunkt. Subjekt + Verb + Objekt. *Der Hund jagt die Katze.*\n\n**Passiv**: Die Handlung steht im Mittelpunkt. Objekt wird Subjekt + Form von **werden** + **Partizip II**. Der Täter kann mit *von* genannt werden oder wegfallen. *Die Katze wird (vom Hund) gejagt.*" }
+    ],
+    "tags": ["aktiv-passiv", "grammatik", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 2 (Aktiv oder Passiv)",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "s": {
+          "type": "pick",
+          "from": [
+            { "satz": "Der Hund jagt die Katze.", "ziel": "Passiv", "a": "Die Katze wird vom Hund gejagt.", "b": "Die Katze jagt den Hund.", "c": "Der Hund wird von der Katze gejagt.", "d": "Die Katze hat den Hund gejagt.", "hinweis": "Objekt (die Katze) wird Subjekt, dazu **wird** + **gejagt**, der Täter mit *vom Hund*." },
+            { "satz": "Ich wurde in den Hinterhof gerufen.", "ziel": "Aktiv", "a": "Jemand rief mich in den Hinterhof.", "b": "Ich rief jemanden in den Hinterhof.", "c": "Ich werde in den Hinterhof gerufen.", "d": "Man wurde von mir gerufen.", "hinweis": "Der Täter fehlt im Passiv, also *jemand* als Subjekt. Zeitform bleibt Vergangenheit: **rief**." },
+            { "satz": "Die Lehrerin lobt die Klasse.", "ziel": "Passiv", "a": "Die Klasse wird von der Lehrerin gelobt.", "b": "Die Lehrerin wird von der Klasse gelobt.", "c": "Die Klasse lobt die Lehrerin.", "d": "Die Klasse ist von der Lehrerin gelobt.", "hinweis": "Objekt (die Klasse) nach vorn, **wird** + **gelobt**, Täter mit *von der Lehrerin*." },
+            { "satz": "Das Fenster wurde von Tim geöffnet.", "ziel": "Aktiv", "a": "Tim öffnete das Fenster.", "b": "Tim wurde vom Fenster geöffnet.", "c": "Das Fenster öffnet Tim.", "d": "Tim hat das Fenster geschlossen.", "hinweis": "Der Täter (*von Tim*) wird Subjekt, das Verb wieder in der Vergangenheit: **öffnete**." },
+            { "satz": "Der Koch bereitet das Essen zu.", "ziel": "Passiv", "a": "Das Essen wird vom Koch zubereitet.", "b": "Das Essen bereitet den Koch zu.", "c": "Der Koch wird vom Essen zubereitet.", "d": "Das Essen wird den Koch zubereiten.", "hinweis": "Objekt (das Essen) wird Subjekt, **wird** + **zubereitet**." },
+            { "satz": "Die Hausaufgaben werden von den Schülern gemacht.", "ziel": "Aktiv", "a": "Die Schüler machen die Hausaufgaben.", "b": "Die Schüler werden von den Hausaufgaben gemacht.", "c": "Die Schüler machten die Hausaufgaben.", "d": "Die Hausaufgaben wurden gemacht.", "hinweis": "Täter (*von den Schülern*) wird Subjekt, Gegenwart bleibt: **machen**." },
+            { "satz": "Mein Bruder repariert das Fahrrad.", "ziel": "Passiv", "a": "Das Fahrrad wird von meinem Bruder repariert.", "b": "Mein Bruder wird vom Fahrrad repariert.", "c": "Das Fahrrad repariert meinen Bruder.", "d": "Das Fahrrad ist von meinem Bruder repariert.", "hinweis": "Objekt (das Fahrrad) wird Subjekt, **wird** + **repariert**." },
+            { "satz": "Der Brief wurde gestern geschrieben.", "ziel": "Aktiv", "a": "Jemand schrieb den Brief gestern.", "b": "Der Brief schrieb gestern jemanden.", "c": "Jemand wird den Brief gestern schreiben.", "d": "Der Brief wird gestern geschrieben.", "hinweis": "Kein Täter genannt → *jemand*. Vergangenheit bleibt: **schrieb**." },
+            { "satz": "Die Polizei sperrt die Straße.", "ziel": "Passiv", "a": "Die Straße wird von der Polizei gesperrt.", "b": "Die Straße sperrt die Polizei.", "c": "Die Polizei wird von der Straße gesperrt.", "d": "Die Straße wurde die Polizei gesperrt.", "hinweis": "Objekt (die Straße) wird Subjekt, **wird** + **gesperrt**." },
+            { "satz": "Das Lied wird von der Klasse gesungen.", "ziel": "Aktiv", "a": "Die Klasse singt das Lied.", "b": "Die Klasse wird vom Lied gesungen.", "c": "Die Klasse sang das Lied.", "d": "Das Lied hat die Klasse gesungen.", "hinweis": "Täter (*von der Klasse*) wird Subjekt, Gegenwart bleibt: **singt**." }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "DE_INDIREKTE_REDE_MCQ_T1",
+    "subject": "DE",
+    "topicId": "DE_GRAM_INDIRECT",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "Wie lautet der Satz in **indirekter Rede**?\n\n{{s_satz}}",
+    "payload": { "choices": ["{{s_a}}", "{{s_b}}", "{{s_c}}", "{{s_d}}"] },
+    "solution": { "correct_choice": "{{s_a}}" },
+    "explanation": [
+      { "kind": "steps", "title": "Vier Schritte", "body": "1. Anführungszeichen und Doppelpunkt **weg**.\n2. **Pronomen anpassen**: ich → er/sie, mein → sein/ihr, wir → sie.\n3. Verb in den **Konjunktiv I**: gehe, habe, sei, komme (bei Vergangenheit: *sei … gewesen*).\n4. Fragen: **ob** oder das **Fragewort** einleiten lassen.\n\n{{s_hinweis}}" },
+      { "kind": "remember", "body": "Direkte Rede gibt die Worte **wörtlich** wieder (mit Anführungszeichen). Indirekte Rede **berichtet** sie: kein Anführungszeichen, Konjunktiv I, angepasste Pronomen." }
+    ],
+    "tags": ["indirekte-rede", "konjunktiv", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 2 (Direkte und indirekte Rede)",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "s": {
+          "type": "pick",
+          "from": [
+            { "satz": "Er sagte: „Ich gehe nach Hause.“", "a": "Er sagte, er gehe nach Hause.", "b": "Er sagte, er geht nach Hause.", "c": "Er sagte, dass er nach Hause gehen.", "d": "Er sagte, ich gehe nach Hause.", "hinweis": "ich → er, gehe bleibt als Konjunktiv I (er gehe)." },
+            { "satz": "Sie meinte: „Ich habe keine Zeit.“", "a": "Sie meinte, sie habe keine Zeit.", "b": "Sie meinte, ich habe keine Zeit.", "c": "Sie meinte, sie hat keine Zeit.", "d": "Sie meinte, sie hatte keine Zeit gehabt.", "hinweis": "ich → sie, hat → **habe** (Konjunktiv I)." },
+            { "satz": "Tom fragte: „Kommst du mit?“", "a": "Tom fragte, ob ich mitkomme.", "b": "Tom fragte, kommst du mit.", "c": "Tom fragte, dass ich mitkomme.", "d": "Tom fragte, ob du mitkommt.", "hinweis": "Entscheidungsfrage → **ob**, du → ich (die angesprochene Person berichtet)." },
+            { "satz": "Herr Schenck meinte: „Wir müssen einige Regionen opfern.“", "a": "Herr Schenck meinte, sie müssten einige Regionen opfern.", "b": "Herr Schenck meinte, wir müssen einige Regionen opfern.", "c": "Herr Schenck meinte, dass sie einige Regionen opfern.", "d": "Herr Schenck meinte, opfern wir einige Regionen.", "hinweis": "wir → sie. Weil Konjunktiv I (*müssen*) wie der Indikativ klingt, weicht man auf Konjunktiv II aus: **müssten**." },
+            { "satz": "Lea sagte: „Mein Bruder ist krank.“", "a": "Lea sagte, ihr Bruder sei krank.", "b": "Lea sagte, mein Bruder ist krank.", "c": "Lea sagte, ihr Bruder wäre gewesen krank.", "d": "Lea sagte, dass mein Bruder krank ist.", "hinweis": "mein → ihr, ist → **sei** (Konjunktiv I)." },
+            { "satz": "Der Lehrer sagte: „Die Arbeit war gut.“", "a": "Der Lehrer sagte, die Arbeit sei gut gewesen.", "b": "Der Lehrer sagte, die Arbeit war gut.", "c": "Der Lehrer sagte, die Arbeit ist gut.", "d": "Der Lehrer sagte, dass die Arbeit gut sein.", "hinweis": "Vergangenheit in der indirekten Rede: **sei … gewesen**." },
+            { "satz": "Anna rief: „Ich komme gleich!“", "a": "Anna rief, sie komme gleich.", "b": "Anna rief, ich komme gleich.", "c": "Anna rief, sie kommt gleich.", "d": "Anna rief, dass sie gleich kommen.", "hinweis": "ich → sie, komme bleibt als Konjunktiv I (sie komme)." },
+            { "satz": "Er fragte: „Wo ist der Bahnhof?“", "a": "Er fragte, wo der Bahnhof sei.", "b": "Er fragte, wo ist der Bahnhof.", "c": "Er fragte, ob der Bahnhof.", "d": "Er fragte, wo der Bahnhof war gewesen.", "hinweis": "Fragewort **wo** leitet ein, ist → **sei**, Verb ans Ende." }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "DE_PARTIZIP_T1",
+    "subject": "DE",
+    "topicId": "DE_GRAM_PARTIZIP",
+    "difficulty": 2,
+    "qtype": "CLOZE",
+    "prompt": "Partizip I oder Partizip II?",
+    "payload": { "text_with_blanks": "„{{s_wort}}“ → das ist ein ___", "blanks": [{ "id": 1, "choices": ["Partizip I", "Partizip II"] }] },
+    "solution": { "answers": { "1": "{{s_loesung}}" } },
+    "explanation": [
+      { "kind": "what", "body": "{{s_hinweis}}" },
+      { "kind": "remember", "body": "**Partizip I** = Verb + **-end** (*lachend, schlafend*): passiert gerade, aktiv. **Partizip II** = **ge-** … -t/-en (*gebacken, gelesen*): abgeschlossen, oft passiv. Beide können wie Adjektive vor einem Nomen stehen." }
+    ],
+    "tags": ["partizip", "grammatik", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Hinweise zur Deutschprüfung",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "s": {
+          "type": "pick",
+          "from": [
+            { "wort": "die lachenden Kinder", "loesung": "Partizip I", "hinweis": "lach**end**: Die Kinder lachen gerade." },
+            { "wort": "das gebackene Brot", "loesung": "Partizip II", "hinweis": "**ge**back**en**: Das Brot wurde gebacken, abgeschlossen." },
+            { "wort": "der schlafende Hund", "loesung": "Partizip I", "hinweis": "schlaf**end**: Der Hund schläft gerade." },
+            { "wort": "die gelesene Zeitung", "loesung": "Partizip II", "hinweis": "**ge**les**en**: Die Zeitung wurde gelesen." },
+            { "wort": "ein weinendes Baby", "loesung": "Partizip I", "hinweis": "wein**end**: Das Baby weint gerade." },
+            { "wort": "der verlorene Schlüssel", "loesung": "Partizip II", "hinweis": "verlor**en**: Der Schlüssel wurde verloren (Verben mit ver- bilden das Partizip II ohne ge-)." },
+            { "wort": "das singende Mädchen", "loesung": "Partizip I", "hinweis": "sing**end**: Das Mädchen singt gerade." },
+            { "wort": "die geöffnete Tür", "loesung": "Partizip II", "hinweis": "**ge**öffne**t**: Die Tür wurde geöffnet." },
+            { "wort": "laufende Motoren", "loesung": "Partizip I", "hinweis": "lauf**end**: Die Motoren laufen gerade." },
+            { "wort": "ein gebrochenes Bein", "loesung": "Partizip II", "hinweis": "**ge**broch**en**: Das Bein ist gebrochen worden." },
+            { "wort": "die spielenden Kinder", "loesung": "Partizip I", "hinweis": "spiel**end**: Die Kinder spielen gerade." },
+            { "wort": "das gekaufte Auto", "loesung": "Partizip II", "hinweis": "**ge**kauf**t**: Das Auto wurde gekauft." }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "DE_WORTART_MCQ_T1",
+    "subject": "DE",
+    "topicId": "DE_GRAM_WORD_CLASSES",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Welche Wortart hat **{{s_wort}}** in diesem Satz?\n\n„{{s_satz}}“",
+    "payload": { "choices": ["Nomen", "Verb", "Adjektiv", "Pronomen", "Präposition"] },
+    "solution": { "correct_choice": "{{s_loesung}}" },
+    "explanation": [
+      { "kind": "what", "title": "Die Probe", "body": "{{s_hinweis}}" },
+      { "kind": "remember", "body": "**Nomen**: Artikelprobe (der/die/das davor), groß. **Verb**: verändert sich nach der Person (ich gehe, du gehst). **Adjektiv**: sagt, wie etwas ist, lässt sich steigern. **Pronomen**: steht anstelle eines Nomens (er, sie, mein, dieser). **Präposition**: kleines Verhältniswort (in, auf, mit, nach, vor)." }
+    ],
+    "tags": ["wortarten", "grammatik", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026 (Sprachwissen) und Rahmenlehrplan",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "s": {
+          "type": "pick",
+          "from": [
+            { "satz": "Die Freude war groß.", "wort": "Freude", "loesung": "Nomen", "hinweis": "Artikelprobe: *die* Freude. Großgeschrieben." },
+            { "satz": "Wir laufen zum Bahnhof.", "wort": "laufen", "loesung": "Verb", "hinweis": "Verändert sich: ich laufe, du läufst. Sagt, was passiert." },
+            { "satz": "Das Auto ist schnell.", "wort": "schnell", "loesung": "Adjektiv", "hinweis": "Sagt, wie das Auto ist. Steigerung: schnell, schneller, am schnellsten." },
+            { "satz": "Er lacht laut.", "wort": "Er", "loesung": "Pronomen", "hinweis": "Steht anstelle eines Namens (Tom lacht → Er lacht)." },
+            { "satz": "Das Buch liegt auf dem Tisch.", "wort": "auf", "loesung": "Präposition", "hinweis": "Kleines Verhältniswort, sagt, wo das Buch ist." },
+            { "satz": "Meine Schwester singt gern.", "wort": "Meine", "loesung": "Pronomen", "hinweis": "Besitzanzeigendes Pronomen (Possessivpronomen): wessen Schwester?" },
+            { "satz": "Der müde Hund schläft.", "wort": "müde", "loesung": "Adjektiv", "hinweis": "Sagt, wie der Hund ist. Steigerbar: müde, müder, am müdesten." },
+            { "satz": "Nach der Schule gehen wir schwimmen.", "wort": "Nach", "loesung": "Präposition", "hinweis": "Verhältniswort: sagt, wann (nach der Schule)." },
+            { "satz": "Die Lehrerin erklärt die Aufgabe.", "wort": "erklärt", "loesung": "Verb", "hinweis": "Verändert sich: ich erkläre, du erklärst." },
+            { "satz": "Das Glück kommt selten allein.", "wort": "Glück", "loesung": "Nomen", "hinweis": "Artikelprobe: *das* Glück. Großgeschrieben." },
+            { "satz": "Dieser Film ist spannend.", "wort": "Dieser", "loesung": "Pronomen", "hinweis": "Hinweisendes Pronomen (Demonstrativpronomen), begleitet das Nomen Film." },
+            { "satz": "Sie wartet vor dem Kino.", "wort": "vor", "loesung": "Präposition", "hinweis": "Verhältniswort: sagt, wo sie wartet." },
+            { "satz": "Die Mannschaft gewinnt.", "wort": "Mannschaft", "loesung": "Nomen", "hinweis": "Artikelprobe: *die* Mannschaft. Suffix -schaft zeigt ein Nomen an." },
+            { "satz": "Er hat eine ehrliche Antwort gegeben.", "wort": "ehrliche", "loesung": "Adjektiv", "hinweis": "Suffix -lich, steht vor dem Nomen Antwort und beschreibt es." },
+            { "satz": "Ich habe dich gesehen.", "wort": "dich", "loesung": "Pronomen", "hinweis": "Persönliches Pronomen im 4. Fall (wen? dich)." },
+            { "satz": "Wir fahren mit dem Bus.", "wort": "mit", "loesung": "Präposition", "hinweis": "Verhältniswort: sagt, wie wir fahren." }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "DE_SATZGLIED_MCQ_T1",
+    "subject": "DE",
+    "topicId": "DE_GRAM_SENTENCE_PARTS",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Welches Satzglied ist **{{s_teil}}**?\n\n„{{s_satz}}“",
+    "payload": { "choices": ["Subjekt", "Prädikat", "Objekt", "Adverbiale Bestimmung"] },
+    "solution": { "correct_choice": "{{s_loesung}}" },
+    "explanation": [
+      { "kind": "what", "title": "Die Frage", "body": "{{s_hinweis}}" },
+      { "kind": "remember", "body": "**Subjekt**: Wer oder was? **Prädikat**: Was tut das Subjekt? (das Verb, ggf. zweiteilig). **Objekt**: Wen oder was? (Akkusativ) Wem? (Dativ) Wessen? (Genitiv). **Adverbiale Bestimmung**: Wo? Wann? Wie? Warum?" }
+    ],
+    "tags": ["satzglieder", "grammatik", "drill"],
+    "source": "Rahmenlehrplan Deutsch Berlin, Sprachwissen",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "s": {
+          "type": "pick",
+          "from": [
+            { "satz": "Der Hund jagt die Katze.", "teil": "Der Hund", "loesung": "Subjekt", "hinweis": "Wer jagt? **Der Hund**." },
+            { "satz": "Der Hund jagt die Katze.", "teil": "die Katze", "loesung": "Objekt", "hinweis": "Wen jagt der Hund? **Die Katze** (Akkusativobjekt)." },
+            { "satz": "Der Hund jagt die Katze.", "teil": "jagt", "loesung": "Prädikat", "hinweis": "Was tut der Hund? Er **jagt**." },
+            { "satz": "Wir fahren morgen nach Berlin.", "teil": "morgen", "loesung": "Adverbiale Bestimmung", "hinweis": "Wann fahren wir? **Morgen** (Zeit)." },
+            { "satz": "Wir fahren morgen nach Berlin.", "teil": "nach Berlin", "loesung": "Adverbiale Bestimmung", "hinweis": "Wohin fahren wir? **Nach Berlin** (Ort)." },
+            { "satz": "Lea schenkt ihrer Mutter Blumen.", "teil": "ihrer Mutter", "loesung": "Objekt", "hinweis": "Wem schenkt Lea Blumen? **Ihrer Mutter** (Dativobjekt)." },
+            { "satz": "Lea schenkt ihrer Mutter Blumen.", "teil": "Blumen", "loesung": "Objekt", "hinweis": "Was schenkt Lea? **Blumen** (Akkusativobjekt)." },
+            { "satz": "Die Kinder spielen im Garten.", "teil": "im Garten", "loesung": "Adverbiale Bestimmung", "hinweis": "Wo spielen die Kinder? **Im Garten** (Ort)." },
+            { "satz": "Die Kinder spielen im Garten.", "teil": "Die Kinder", "loesung": "Subjekt", "hinweis": "Wer spielt? **Die Kinder**." },
+            { "satz": "Er hat den Test bestanden.", "teil": "hat … bestanden", "loesung": "Prädikat", "hinweis": "Was hat er getan? **hat bestanden** (zweiteiliges Prädikat)." },
+            { "satz": "Sie singt wegen der Prüfung nervös.", "teil": "wegen der Prüfung", "loesung": "Adverbiale Bestimmung", "hinweis": "Warum ist sie nervös? **Wegen der Prüfung** (Grund)." },
+            { "satz": "Mein Bruder liest ein Buch.", "teil": "ein Buch", "loesung": "Objekt", "hinweis": "Was liest mein Bruder? **Ein Buch** (Akkusativobjekt)." }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "DE_ZEITFORM_MCQ_T1",
+    "subject": "DE",
+    "topicId": "DE_GRAM_TENSES",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "In welcher Zeitform steht der Satz?\n\n„{{s_satz}}“",
+    "payload": { "choices": ["Präsens", "Präteritum", "Perfekt", "Plusquamperfekt", "Futur I"] },
+    "solution": { "correct_choice": "{{s_loesung}}" },
+    "explanation": [
+      { "kind": "what", "title": "Woran du es erkennst", "body": "{{s_hinweis}}" },
+      { "kind": "remember", "body": "**Präsens**: ich gehe. **Präteritum**: ich ging (Erzählzeit, eine Verbform). **Perfekt**: ich bin gegangen (haben/sein + Partizip II). **Plusquamperfekt**: ich war gegangen (hatte/war + Partizip II, Vorvergangenheit). **Futur I**: ich werde gehen." }
+    ],
+    "tags": ["zeitformen", "grammatik", "drill"],
+    "source": "Rahmenlehrplan Deutsch Berlin, Sprachwissen",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "s": {
+          "type": "pick",
+          "from": [
+            { "satz": "Ich gehe jeden Tag zur Schule.", "loesung": "Präsens", "hinweis": "„gehe“: Gegenwart, eine Verbform." },
+            { "satz": "Gestern ging ich früh nach Hause.", "loesung": "Präteritum", "hinweis": "„ging“: Vergangenheit in einer Verbform (Erzählzeit)." },
+            { "satz": "Ich bin gestern früh nach Hause gegangen.", "loesung": "Perfekt", "hinweis": "„bin … gegangen“: sein + Partizip II." },
+            { "satz": "Als ich ankam, war der Zug schon abgefahren.", "loesung": "Plusquamperfekt", "hinweis": "„war … abgefahren“: war + Partizip II, das Ereignis liegt noch vor „ankam“." },
+            { "satz": "Morgen werde ich dich besuchen.", "loesung": "Futur I", "hinweis": "„werde … besuchen“: werden + Infinitiv." },
+            { "satz": "Sie hat den Test bestanden.", "loesung": "Perfekt", "hinweis": "„hat … bestanden“: haben + Partizip II." },
+            { "satz": "Die Kinder spielten im Garten.", "loesung": "Präteritum", "hinweis": "„spielten“: eine Verbform in der Vergangenheit." },
+            { "satz": "Er hatte das Buch schon gelesen, bevor der Film kam.", "loesung": "Plusquamperfekt", "hinweis": "„hatte … gelesen“: hatte + Partizip II, Vorvergangenheit." },
+            { "satz": "Wir werden das Spiel gewinnen.", "loesung": "Futur I", "hinweis": "„werden … gewinnen“: werden + Infinitiv." },
+            { "satz": "Die Sonne scheint.", "loesung": "Präsens", "hinweis": "„scheint“: Gegenwart." },
+            { "satz": "Wir haben gestern lange geübt.", "loesung": "Perfekt", "hinweis": "„haben … geübt“: haben + Partizip II." },
+            { "satz": "Der Zug kam pünktlich an.", "loesung": "Präteritum", "hinweis": "„kam … an“: Präteritum von ankommen." },
+            { "satz": "Ich werde morgen früh aufstehen.", "loesung": "Futur I", "hinweis": "„werde … aufstehen“: werden + Infinitiv." },
+            { "satz": "Nachdem sie gegessen hatte, ging sie schlafen.", "loesung": "Plusquamperfekt", "hinweis": "„hatte … gegessen“: Vorvergangenheit vor „ging“. (Der Nebensatz ist gemeint.)" },
+            { "satz": "Lea lernt für die Prüfung.", "loesung": "Präsens", "hinweis": "„lernt“: Gegenwart." }
+          ]
+        }
+      }
+    }
+  }
+]

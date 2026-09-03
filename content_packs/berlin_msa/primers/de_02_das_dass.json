@@ -1,0 +1,67 @@
+[
+  {
+    "id": "P_DE_DAS_DASS",
+    "subject": "DE",
+    "title": "das oder dass: die Ersatzprobe",
+    "teaser": "Warum die beiden gleich klingen, was sie im Satz tun und der Trick, der immer funktioniert",
+    "hook": "Das oder dass? Diese Frage kommt seit Jahren in jeder Prüfung vor. Und sie hat eine Antwort, die immer funktioniert: die Ersatzprobe. Zwei Sekunden, fertig.",
+    "outro": "Dieses oder welches: passt es, ein s. Passt es nicht, zwei s. Mehr musst du dir nicht merken.",
+    "steps": [
+      {
+        "title": "Zwei Wörter, ein Klang",
+        "body": "**das** und **dass** klingen gleich.\n\nAber sie haben verschiedene **Jobs** im Satz.",
+        "say": "Darum verwechselt man sie. Mit einem Trick kannst du sie in zwei Sekunden auseinanderhalten."
+      },
+      {
+        "title": "das als Artikel",
+        "body": "**das** Haus, **das** Kind, **das** Auto\n\nSteht direkt vor einem Nomen.",
+        "say": "Wie der, die, das. Immer nur ein s."
+      },
+      {
+        "title": "das zeigt auf etwas",
+        "body": "**Das** ist schön.\n\n**Das** gefällt mir.\n\nMan kann **dies** oder **dieses** sagen.",
+        "say": "Das Wort zeigt auf eine Sache. Ersetze es durch dies: Dies ist schön. Passt."
+      },
+      {
+        "title": "das leitet einen Relativsatz ein",
+        "body": "Das Buch, **das** ich lese\n\nMan kann **welches** sagen:\n\nDas Buch, **welches** ich lese",
+        "say": "Auch hier: ein s. Und die Probe mit welches funktioniert."
+      },
+      {
+        "title": "dass verbindet",
+        "body": "Ich glaube, **dass** es klappt.\n\n**dass** ist eine Konjunktion, ein Bindewort.\n\nEs leitet einen Nebensatz ein.",
+        "say": "Dass hat keine Bedeutung für sich. Es klebt nur zwei Sätze zusammen."
+      },
+      {
+        "title": "Die Ersatzprobe",
+        "body": "Ersetze durch **dieses** oder **welches**.\n\nPasst es? → **das**\n\nPasst es nicht? → **dass**",
+        "say": "Das ist der ganze Trick. Ich glaube, welches es klappt? Nein. Also dass."
+      },
+      {
+        "title": "Beispiel aus der Prüfung",
+        "body": "Das ist doch großartig, **dass** du gewonnen hast.\n\n1. *Dies* ist doch großartig → passt → **das**\n\n2. … großartig, *welches* du gewonnen hast → passt nicht → **dass**",
+        "say": "Genau so sieht die Aufgabe aus. Und genau so begründest du sie: Wortart plus Ersatzprobe."
+      },
+      {
+        "title": "Das Komma",
+        "body": "Vor **dass** steht **immer** ein Komma.\n\nVor **das** nur, wenn ein Relativsatz beginnt.",
+        "say": "Siehst du dass, weißt du zwei Dinge auf einmal: Doppel-s und Komma davor."
+      }
+    ],
+    "vocab": [
+      { "term": "Artikel", "plain": "Begleiter vor dem Nomen.", "example": "das Haus" },
+      { "term": "Pronomen", "plain": "Stellvertreter, zeigt auf etwas.", "example": "Das gefällt mir." },
+      { "term": "Relativpronomen", "plain": "Leitet einen Relativsatz ein, erklärt ein Nomen.", "example": "das Buch, das ich lese" },
+      { "term": "Konjunktion", "plain": "Bindewort, verbindet Sätze.", "example": "dass, weil, ob" },
+      { "term": "Ersatzprobe", "plain": "Durch dieses/welches ersetzen. Passt → das, passt nicht → dass.", "example": "Ich glaube, welches es klappt ✗ → dass" },
+      { "term": "Nebensatz", "plain": "Satzteil, der nicht allein stehen kann.", "example": "… dass es klappt" }
+    ],
+    "quiz": [
+      { "prompt": "Ich hoffe, ___ du kommst.", "choices": ["dass", "das", "daß", "des"], "correct": "dass", "explain": "„Ich hoffe, welches du kommst“ passt nicht → Konjunktion → dass." },
+      { "prompt": "Das Auto, ___ dort steht, ist rot.", "choices": ["das", "dass", "daß", "der"], "correct": "das", "explain": "„Das Auto, welches dort steht“ passt → Relativpronomen → das." },
+      { "prompt": "Womit prüfst du das oder dass?", "choices": ["Ersetzen durch dieses oder welches", "Laut vorlesen", "Silben zählen", "Wort verlängern"], "correct": "Ersetzen durch dieses oder welches", "explain": "Die Ersatzprobe: Passt der Ersatz, ist es das." },
+      { "prompt": "Welche Wortart ist „dass“?", "choices": ["Konjunktion (Bindewort)", "Artikel", "Nomen", "Adjektiv"], "correct": "Konjunktion (Bindewort)", "explain": "dass verbindet Hauptsatz und Nebensatz." },
+      { "prompt": "Steht vor „dass“ ein Komma?", "choices": ["Immer", "Nie", "Nur am Satzanfang", "Nur bei Fragen"], "correct": "Immer", "explain": "dass leitet einen Nebensatz ein, und vor dem Nebensatz steht ein Komma." }
+    ]
+  }
+]

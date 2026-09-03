@@ -1,0 +1,60 @@
+[
+  {
+    "id": "L_DE_RECHTSCHREIBUNG",
+    "subject": "DE",
+    "topicId": "DE_ORTHO_STRATEGIES",
+    "alsoFor": ["DE_ORTHO_DAS_DASS", "DE_ORTHO_CASE", "DE_ORTHO_SEP_JOIN", "DE_ORTHO_SS_SZ", "DE_ORTHO_DOUBLE"],
+    "title": "Richtig schreiben: Strategien, das/dass, groß/klein",
+    "primer": "P_DE_DAS_DASS",
+    "intro": "Im Prüfungsteil *Richtig Schreiben* geht es nicht darum, jedes Wort auswendig zu kennen. Gefragt sind **Strategien**: Wie prüfst du, ob *Hund* mit d oder t endet? Dazu kommen jedes Jahr **das/dass**, **Groß- und Kleinschreibung** und **Getrennt- und Zusammenschreibung**.",
+    "source": "Adaptiert nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 3 (Richtig Schreiben)",
+    "sections": [
+      {
+        "kind": "what",
+        "title": "Was die Prüfung fragt",
+        "body": "Typische Aufgabe: *„Welche Strategie wenden Sie an, um das Wort **eifersüchtig** an den markierten Stellen richtig zu schreiben? Kreuzen Sie an.“*\n\nDu musst also nicht nur richtig schreiben, sondern **sagen können, warum**. Dafür gibt es vier Strategien und drei Dauerbrenner."
+      },
+      {
+        "kind": "formula",
+        "title": "Die vier Strategien",
+        "body": "- **Verlängern** bei b/p, d/t, g/k am Wortende: Nomen in den Plural, Verb in den Infinitiv, Adjektiv steigern. *Hund → Hunde*, *liebt → lieben*, *klug → klüger*.\n- **Ableiten** bei e/ä und eu/äu: ein verwandtes Wort suchen. *Stärke → stark*, *häufig → Haufen*.\n- **Silbenprobe** bei Doppelkonsonanten (ff, ll, mm, nn, ss, tt): das Wort in Silben zerlegen. *Bet-ten* (nicht *be-ten*), *Was-ser*, *ken-nen*.\n- **h prüfen**: **Dehnungs-h** vor l, m, n, r nach langem Vokal (*fühlen, Zahl, Bahn*), **Trennungs-h** zwischen zwei Vokalen (*stehen, sehen*)."
+      },
+      {
+        "kind": "example",
+        "title": "Beispiel: eifersüchtig",
+        "body": "**i oder ü?** → stammverwandtes Wort suchen: *Eifer**sucht*** → **ü** (Ableiten).\n\n**g oder k am Ende?** → verlängern: *eifersüchti**g**er* → **g** (Verlängern)."
+      },
+      {
+        "kind": "formula",
+        "title": "das oder dass: die Ersatzprobe",
+        "primer": "P_DE_DAS_DASS",
+        "body": "Ersetze das Wort durch **dieses**, **jenes** oder **welches**.\n\n- Passt es → **das** (Artikel, Pronomen oder Relativpronomen). *Das Buch, **das** ich lese* → *welches ich lese* ✓\n- Passt es nicht → **dass** (Konjunktion, leitet einen Nebensatz ein). *Ich glaube, **dass** der Film gut wird* → *welches der Film gut wird* ✗\n\nVor **dass** steht **immer** ein Komma. Begründung in der Prüfung: Wortart nennen **und** die Ersatzprobe zeigen."
+      },
+      {
+        "kind": "formula",
+        "title": "Groß oder klein: die Top 10",
+        "body": "**Groß:**\n\n1. Nomen (*die Schülerin*), erkennbar an **Nomensignalen**: Artikel, Zahlwort, Adjektiv oder Pronomen davor und an den **Suffixen** -ung, -keit, -heit, -lein, -chen, -tion, -schaft, -nis, -tum, -ling.\n2. Satzanfänge, auch nach einem Doppelpunkt, wenn ein ganzer Satz folgt.\n3. Eigennamen und Herkunftsbezeichnungen (*Berliner Staatsoper*).\n4. **Nominalisierungen**: Verben und Adjektive mit Artikel oder nach *beim, zum, ins, alles, etwas, nichts* (*das Schwimmen, beim Essen, alles Gute*).\n5. Höfliche Anrede **Sie, Ihnen, Ihr**.\n6. Wochentage und Tageszeiten als Nomen (*der Montag, heute Morgen*).\n\n**Klein:**\n\n7. Verben und Adjektive, erkennbar an -ig, -bar, -isch, -sam, -lich, -haft, -los.\n8. Superlativ mit **am** (*am schönsten*).\n9. Adverbien: *montags, morgen, heute, gestern*.\n10. Pronomen: *nichts, etwas, jemand, man*."
+      },
+      {
+        "kind": "formula",
+        "title": "Getrennt oder zusammen",
+        "body": "**Zusammen:**\n\n- Präposition + Verb: *hingehen, aufstehen, anmachen*\n- Nomen + Nomen: *Autobahn*\n- Adverb + Verb, Betonung auf dem Adverb: *wiedersehen* (= erneut treffen)\n- Nominalisierungen: *beim Essengehen*\n\n**Getrennt:**\n\n- Verb + Verb: *schwimmen gehen, spazieren gehen*\n- Adjektiv + Verb: *laut singen, fertig lesen*\n- Nomen + Verb: *Klavier spielen, Fußball spielen*\n- Adverb + Verb, beide betont: *zusammen fahren* (= gemeinsam)"
+      },
+      {
+        "kind": "formula",
+        "title": "ss oder ß, Doppelkonsonanten",
+        "body": "Sprich das Wort laut.\n\n- **Kurzer** Vokal → **ss** oder anderer Doppelkonsonant: *Klasse, Kuss, wissen, Betten, kennen*\n- **Langer** Vokal oder **Doppellaut** (ei, au, eu, ie) → **ß**: *Straße, Füße, heiß, draußen, fließen*"
+      },
+      {
+        "kind": "mistake",
+        "title": "Typische Fehler",
+        "body": "- *dass* nach einem Relativsatz-Komma: *Das Buch, **dass** ich lese* ✗ → Ersatzprobe: *welches ich lese* ✓ → **das**\n- Nominalisierungen klein: *beim **e**ssen* ✗ → *beim **E**ssen* ✓\n- Superlativ groß: *am **S**chnellsten* ✗ → *am **s**chnellsten* ✓\n- *wiedersehen* (erneut treffen) und *wieder sehen* (noch einmal sehen) verwechseln: Die Betonung entscheidet."
+      },
+      {
+        "kind": "remember",
+        "title": "Merke",
+        "body": "**Verlängern, ableiten, Silben, h.** das/dass → **dieses/welches**-Probe. Groß: Nomen, Nominalisierung, Sie, Satzanfang. Klein: Verb, Adjektiv, *am* + Superlativ, *montags*. Kurzer Vokal → ss, langer → ß."
+      }
+    ]
+  }
+]

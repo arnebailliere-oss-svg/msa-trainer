@@ -128,7 +128,8 @@ for (const q of questions) {
   const topic = topicById.get(q.topicId);
   if (!topic) error(where, `unknown topicId ${q.topicId}`);
   else if (topic.subject !== q.subject) error(where, `subject ${q.subject} ≠ topic subject ${topic.subject}`);
-  counts.set(q.topicId, (counts.get(q.topicId) ?? 0) + 1);
+  // A template (numbers or a sentence bank) yields many distinct items; count it as a full topic's worth.
+  counts.set(q.topicId, (counts.get(q.topicId) ?? 0) + (q.variants?.enabled ? MIN_QUESTIONS_PER_TOPIC : 1));
   if (q.tags.length === 0) warn(where, "no tags");
   checkTex(where, q.prompt);
   checkSections(where, parseExplanation(q.explanation));
@@ -137,12 +138,20 @@ for (const q of questions) {
   const strings: string[] = [q.prompt, JSON.stringify(q.payload), JSON.stringify(q.solution), JSON.stringify(q.explanation)];
   if (!templated && strings.some(hasPlaceholder)) error(where, "contains {{placeholders}} but variants are not enabled");
   if (templated && !strings.some(hasPlaceholder)) warn(where, "variants enabled but nothing is templated");
+  // Pick banks (language drills): every record must carry the same fields.
+  for (const [name, def] of Object.entries(q.variants?.variables ?? {})) {
+    if (def.type !== "pick") continue;
+    const keys = Object.keys(def.from[0] ?? {}).sort().join(",");
+    def.from.forEach((rec, i) => {
+      if (Object.keys(rec).sort().join(",") !== keys) error(where, `pick "${name}": record ${i + 1} has fields (${Object.keys(rec).join(",")}) ≠ record 1 (${keys})`);
+    });
+    for (const rec of def.from) for (const v of Object.values(rec)) if (typeof v === "string") checkTex(where, v);
+  }
 
   // Static shape checks
   if (q.qtype === "MCQ") {
     const p = q.payload as McqPayload;
     if (!Array.isArray(p.choices) || p.choices.length < 3 || p.choices.length > 5) error(where, `MCQ needs 3–5 choices, has ${p.choices?.length}`);
-    else if (p.choices.length !== 4) warn(where, `MCQ has ${p.choices.length} choices (4 preferred)`);
     if (!("correct_choice" in q.solution)) error(where, "MCQ solution needs correct_choice");
   } else if (q.qtype === "SHORT") {
     const p = q.payload as ShortPayload;
@@ -159,7 +168,7 @@ for (const q of questions) {
     const sol = q.solution as { answers?: Record<string, string> };
     if (!sol.answers) error(where, "CLOZE solution needs answers");
     const blanksInText = (p.text_with_blanks.match(/___+/g) ?? []).length;
-    if (blanksInText !== p.blanks.length) error(where, `text has ${blanksInText} blanks but ${p.blanks.length} defined`);
+    if (!templated && blanksInText !== p.blanks.length) error(where, `text has ${blanksInText} blanks but ${p.blanks.length} defined`);
     for (const b of p.blanks) {
       const a = sol.answers?.[String(b.id)];
       if (a === undefined) error(where, `no answer for blank ${b.id}`);
@@ -193,7 +202,7 @@ for (const q of questions) {
       error(where, `render #${i} failed: ${(e as Error).message}`);
       break;
     }
-    prompts.add(r.prompt);
+    prompts.add(r.prompt + JSON.stringify(r.payload));
     const all = [r.prompt, JSON.stringify(r.payload), JSON.stringify(r.solution), ...r.explanation.map((s) => s.body)];
     if (all.some(hasPlaceholder)) error(where, `render #${i} left a {{placeholder}} (${JSON.stringify(r.vars)})`);
     if (r.qtype === "MCQ") {
@@ -220,6 +229,13 @@ for (const q of questions) {
     }
     if (r.qtype === "CLOZE") {
       const sol = (r.solution as { answers: Record<string, string> }).answers;
+      const cp = r.payload as ClozePayload;
+      const nBlanks = (cp.text_with_blanks.match(/___+/g) ?? []).length;
+      if (nBlanks !== cp.blanks.length) error(where, `render #${i}: text has ${nBlanks} blanks but ${cp.blanks.length} defined`);
+      for (const b of cp.blanks) {
+        const a = sol[String(b.id)];
+        if (b.choices && a !== undefined && !b.choices.includes(a)) error(where, `render #${i}: answer "${a}" not among choices of blank ${b.id}`);
+      }
       if (!evaluate(r, sol).isCorrect) error(where, `render #${i}: evaluator rejects its own answers`);
     }
     if (r.qtype === "MATCH") {

@@ -1,0 +1,80 @@
+[
+  {
+    "id": "P_DE_SATZ",
+    "subject": "DE",
+    "title": "Hauptsatz, Nebensatz, Komma",
+    "teaser": "Was ein Satzteil ist, woran du einen Nebensatz erkennst und warum das Komma genau dort sitzt",
+    "hook": "Kommas sind kein Ratespiel. Ein Satz besteht aus Teilen, und das Komma sitzt an der Grenze zwischen zwei Teilen. Wenn du die Teile findest, findest du das Komma. Ich zeige dir, wie man sie findet.",
+    "outro": "Verben zählen, Signalwörter suchen, Komma an die Grenze. Jetzt kannst du die sechs Regeln in der Lektion lesen, ohne dass sie wie Zauberei klingen.",
+    "steps": [
+      {
+        "title": "Ein Satz braucht ein Verb",
+        "body": "Jeder Satz hat ein **Verb** (Tuwort).\n\nIch **lese**. Der Hund **bellt**.\n\nOhne Verb ist es kein Satz.",
+        "say": "Das Verb sagt, was passiert. Wenn du Kommas setzen willst, musst du als Erstes die Verben finden."
+      },
+      {
+        "title": "Ein Verb, ein Satzteil",
+        "body": "Ich lese ein Buch, weil es regnet.\n\nZwei Verben: **lese**, **regnet**\n\nAlso zwei Teilsätze.",
+        "say": "Zähl die Verben. So viele Teilsätze hat der Satz. Und zwischen Teilsätze gehört meistens ein Komma."
+      },
+      {
+        "title": "Der Hauptsatz",
+        "body": "Ein **Hauptsatz** kann allein stehen.\n\n*Ich lese ein Buch.*\n\nDas Verb steht an **zweiter** Stelle.",
+        "say": "Hauptsatz heißt: Er braucht niemanden. Er ist fertig, so wie er ist."
+      },
+      {
+        "title": "Der Nebensatz",
+        "body": "Ein **Nebensatz** kann nicht allein stehen.\n\n*… weil es regnet.*\n\nDas Verb steht ganz am **Ende**.",
+        "say": "Sag mal nur „weil es regnet“. Da fehlt etwas. Genau das ist ein Nebensatz."
+      },
+      {
+        "title": "Die Signalwörter",
+        "body": "Nebensätze beginnen mit:\n\n**weil, dass, ob, wenn, obwohl, während, als, nachdem, damit**\n\noder mit **der, die, das** (Relativsatz).",
+        "say": "Siehst du eins dieser Wörter, weißt du: Hier beginnt ein Nebensatz. Davor kommt ein Komma."
+      },
+      {
+        "title": "Das Komma dazwischen",
+        "body": "Ich lese ein Buch**,** weil es regnet.\n\nWeil es regnet**,** lese ich ein Buch.\n\nHauptsatz und Nebensatz werden **immer** durch ein Komma getrennt.",
+        "say": "Egal, welcher vorne steht. Das Komma sitzt an der Grenze."
+      },
+      {
+        "title": "Zwei Hauptsätze",
+        "body": "Tim spielt Fußball**,** Lea liest.\n\nZwei Sätze, die allein stehen könnten.\n\nAuch dazwischen: Komma.",
+        "say": "Das nennt man Satzreihe. Mit „und“ dazwischen darf das Komma auch wegfallen."
+      },
+      {
+        "title": "Die Aufzählung",
+        "body": "Äpfel**,** Birnen**,** Bananen **und** Trauben\n\nZwischen die Dinge: Komma.\n\nVor **und**: **kein** Komma.",
+        "say": "Das kennst du seit der Grundschule. Der einzige Fehler, den alle machen: ein Komma vor und."
+      },
+      {
+        "title": "Der Einschub",
+        "body": "Das Haus**,** das alt war**,** wurde verkauft.\n\nEin Nebensatz **mitten** im Hauptsatz bekommt **zwei** Kommas.",
+        "say": "Wie eine Klammer: vorne eins, hinten eins. Das zweite vergisst man am liebsten."
+      },
+      {
+        "title": "Die Infinitivgruppe",
+        "body": "**zu + Verb**: *… um ein Fahrrad zu kaufen*\n\nKein eigenes Subjekt.\n\nKomma bei **um, ohne, anstatt** oder wenn ein Nomen oder ein Hinweiswort (es, das, daran) davor steht.",
+        "say": "Das ist der Sonderfall, den die Prüfung liebt. Die Lektion zeigt dir die drei Fälle genau."
+      }
+    ],
+    "vocab": [
+      { "term": "Verb", "plain": "Das Tuwort. Sagt, was passiert.", "example": "lesen, bellen, regnen" },
+      { "term": "Teilsatz", "plain": "Ein Stück Satz mit eigenem Verb.", "example": "Ich lese ein Buch | weil es regnet" },
+      { "term": "Hauptsatz", "plain": "Kann allein stehen, Verb an zweiter Stelle.", "example": "Ich lese ein Buch." },
+      { "term": "Nebensatz", "plain": "Kann nicht allein stehen, Verb am Ende.", "example": "… weil es regnet." },
+      { "term": "Konjunktion", "plain": "Bindewort, leitet oft einen Nebensatz ein.", "example": "weil, dass, ob, wenn, obwohl" },
+      { "term": "Relativsatz", "plain": "Nebensatz, der mit der/die/das beginnt und ein Nomen erklärt.", "example": "das Haus, das alt war" },
+      { "term": "Satzreihe", "plain": "Zwei Hauptsätze nebeneinander.", "example": "Tim spielt, Lea liest." },
+      { "term": "Satzgefüge", "plain": "Hauptsatz + Nebensatz.", "example": "Ich lese, weil es regnet." },
+      { "term": "Infinitivgruppe", "plain": "zu + Verb ohne eigenes Subjekt.", "example": "um ein Fahrrad zu kaufen" }
+    ],
+    "quiz": [
+      { "prompt": "Wie viele Teilsätze hat: „Ich gehe raus, wenn die Sonne scheint.“?", "choices": ["2", "1", "3", "0"], "correct": "2", "explain": "Zwei Verben: **gehe** und **scheint**. Also zwei Teilsätze." },
+      { "prompt": "Welcher Teil ist der Nebensatz?", "choices": ["wenn die Sonne scheint", "Ich gehe raus", "die Sonne", "raus"], "correct": "wenn die Sonne scheint", "explain": "„wenn“ am Anfang, „scheint“ am Ende, kann nicht allein stehen." },
+      { "prompt": "Wo steht das Verb im Nebensatz?", "choices": ["Am Ende", "An zweiter Stelle", "Am Anfang", "Egal"], "correct": "Am Ende", "explain": "… weil es **regnet**. Im Hauptsatz steht es an zweiter Stelle." },
+      { "prompt": "Kommt ein Komma vor „und“ in „Äpfel, Birnen und Trauben“?", "choices": ["Nein", "Ja", "Nur bei drei Dingen", "Nur am Satzende"], "correct": "Nein", "explain": "In einer Aufzählung steht vor „und“ kein Komma." },
+      { "prompt": "„Das Haus, das alt war, wurde verkauft.“ Wie viele Kommas?", "choices": ["Zwei", "Eins", "Keins", "Drei"], "correct": "Zwei", "explain": "Der Nebensatz steht mittendrin: vorne ein Komma, hinten ein Komma." }
+    ]
+  }
+]

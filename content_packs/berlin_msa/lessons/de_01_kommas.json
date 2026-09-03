@@ -1,0 +1,61 @@
+[
+  {
+    "id": "L_DE_KOMMA",
+    "subject": "DE",
+    "topicId": "DE_PUNCT_COMMA_MAIN_SUB",
+    "alsoFor": ["DE_PUNCT_COMMA_LIST", "DE_PUNCT_INFINITIVE", "DE_PUNCT_SPEECH", "DE_GRAM_SENTENCE_TYPES"],
+    "title": "Kommasetzung",
+    "primer": "P_DE_SATZ",
+    "intro": "Kommas kommen **in jeder MSA-Prüfung** vor: Kommas setzen, die Regel benennen, Fehler finden. Die gute Nachricht: Sechs Regeln decken fast alles ab, und alle sechs beginnen mit derselben Frage: *Wo endet ein Satzteil und wo beginnt der nächste?*",
+    "source": "Adaptiert nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 3 (Kommasetzung) und Part 2",
+    "sections": [
+      {
+        "kind": "what",
+        "title": "Was die Prüfung fragt",
+        "body": "Typische Aufgaben:\n\n- „Setzen Sie die fehlenden Kommas.“\n- „Ordnen Sie die Kommaregel dem Beispielsatz zu.“\n- „Begründen Sie das Komma.“ (mit dem **Namen** der Regel)\n\nDu brauchst also beides: das Komma **setzen** und die Regel **benennen**."
+      },
+      {
+        "kind": "terms",
+        "title": "Die Bausteine: Hauptsatz, Nebensatz, Infinitivgruppe",
+        "primer": "P_DE_SATZ",
+        "body": "- **Hauptsatz**: kann allein stehen, das Verb steht an **zweiter** Stelle. *Ich bleibe zu Hause.*\n- **Nebensatz**: kann nicht allein stehen, beginnt mit einer **Konjunktion** (weil, dass, ob, wenn, obwohl, während, als, nachdem, damit) oder einem **Relativpronomen** (der, die, das, welcher), das Verb steht **am Ende**. *… weil ich krank bin.*\n- **Infinitivgruppe**: **zu + Verb** ohne eigenes Subjekt. *… um ein Fahrrad zu kaufen.*\n\nFaustregel: **Jedes gebeugte Verb ist ein Teilsatz.** Zähle die Verben, dann weißt du, wie viele Teilsätze der Satz hat."
+      },
+      {
+        "kind": "formula",
+        "title": "Regel 1 und 2: Aufzählung und Satzreihe",
+        "body": "**Aufzählung**: Gleichartige Wörter oder Wortgruppen werden durch Kommas getrennt. Vor **und** / **oder** steht **kein** Komma.\n\n*Im Zoo gibt es Affen, Elefanten und Zebras.*\n\n**Satzreihe (zwei Hauptsätze)**: Zwei vollständige Sätze nebeneinander werden durch ein Komma getrennt. Mit **und** / **oder** dazwischen **darf** das Komma stehen, muss aber nicht.\n\n*Ich mache Hausaufgaben, Tim spielt Fußball.* — *Das Licht geht aus(,) und die Vorstellung beginnt.*"
+      },
+      {
+        "kind": "formula",
+        "title": "Regel 3 und 4: Satzgefüge und Einschübe",
+        "body": "**Satzgefüge (Hauptsatz + Nebensatz)**: Das Komma trennt Hauptsatz und Nebensatz, egal in welcher Reihenfolge.\n\n*Sie bleibt zu Hause, weil sie krank ist.* — *Während sie jubelt, ist er enttäuscht.*\n\n**Einschub**: Unterbricht ein Nebensatz den Hauptsatz, wird er in **zwei Kommas** eingeschlossen. Dasselbe gilt für die **Apposition** (ein erklärender Zusatz zu einem Nomen).\n\n*Das Haus, das abgerissen wurde, war sehr alt.* — *Herr Schmidt, der Lehrer meiner Tochter, ist jung.*"
+      },
+      {
+        "kind": "formula",
+        "title": "Regel 5: Infinitivgruppen, die drei Fälle",
+        "primer": "P_DE_SATZ",
+        "body": "Eine Infinitivgruppe (zu + Verb) bekommt ein Komma, wenn **eines von drei Signalen** da ist:\n\n1. **Einleitendes Wort**: um, ohne, anstatt, statt, als, außer. *Er spart Geld, um sich ein Fahrrad zu kaufen.*\n2. **Bezug zu einem Nomen**: die Infinitivgruppe erklärt ein Nomen. *Ihr Plan, im Ausland zu studieren, wurde finanziert.*\n3. **Hinweisendes Wort** im Hauptsatz: es, das, daran, davon, darauf. *Er liebte es, abenteuerliche Reisen zu unternehmen.*\n\nOhne Signal ist das Komma freiwillig: *Er hofft(,) zu gewinnen.*"
+      },
+      {
+        "kind": "formula",
+        "title": "Regel 6: Entgegenstellung und direkte Rede",
+        "body": "**Entgegenstellung**: Vor **aber, sondern, jedoch, doch** steht ein Komma.\n\n*Er ist nicht dumm, sondern faul.* — *Sie spielt gern Tennis, aber sie hasst Fußball.*\n\n**Direkte Rede**: Begleitsatz vorn → **Doppelpunkt**. Begleitsatz hinten → der Punkt der Rede fällt weg, nach dem Anführungszeichen folgt ein **Komma**. Frage- und Ausrufezeichen bleiben.\n\n*Sie sagte: „Ich komme morgen.“* — *„Ich komme morgen“, sagte sie.* — *„Kommst du mit?“, fragte er.*"
+      },
+      {
+        "kind": "steps",
+        "title": "So findest du jedes Komma",
+        "body": "1. **Verben markieren.** So viele Teilsätze hat der Satz.\n2. **Nebensatz-Signale suchen**: weil, dass, ob, wenn, obwohl, während … oder der/die/das als Relativpronomen → Komma davor. Steht der Nebensatz **mittendrin** → zwei Kommas.\n3. **Aufzählung?** Kommas zwischen die Glieder, keins vor *und*.\n4. **zu + Verb?** Eines der drei Signale (um/ohne/anstatt, Nomen, es/das/daran) → Komma.\n5. **aber / sondern / jedoch?** Komma davor.\n6. **Direkte Rede?** Doppelpunkt vorn, Komma hinten."
+      },
+      {
+        "kind": "mistake",
+        "title": "Typische Fehler",
+        "body": "- Komma vor **und** in einer Aufzählung: *Äpfel, Birnen, und Trauben* ✗\n- Beim Einschub nur **ein** Komma setzen und das zweite vergessen.\n- Ein Relativpronomen (*das*) mit dem Artikel (*das*) verwechseln: *Das Buch, das ich lese* → Komma; *Das Buch ist gut* → kein Komma.\n- Bei der direkten Rede das Komma **in** die Anführungszeichen setzen: *„Ich komme,“ sagte sie* ✗ → *„Ich komme“, sagte sie* ✓"
+      },
+      {
+        "kind": "remember",
+        "title": "Merke",
+        "body": "Verben zählen → Teilsätze finden → Komma an die Grenze. **Aufzählung, Satzreihe, Satzgefüge, Einschub, Infinitivgruppe (3 Signale), Entgegenstellung.** Kein Komma vor *und* in der Aufzählung."
+      }
+    ]
+  }
+]

@@ -116,6 +116,15 @@
           "additionalProperties": false,
           "required": ["type", "values"],
           "properties": { "type": { "const": "choice" }, "values": { "type": "array", "minItems": 1, "items": { "type": ["string", "number"] } } }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["type", "from"],
+          "properties": {
+            "type": { "const": "pick" },
+            "from": { "type": "array", "minItems": 2, "items": { "type": "object", "minProperties": 1, "additionalProperties": { "type": ["string", "number"] } } }
+          }
         }
       ]
     },

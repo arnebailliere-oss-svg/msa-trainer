@@ -22,7 +22,12 @@ export interface Topic {
 export type VariableSpec =
   | { type: "int"; min: number; max: number; step?: number }
   | { type: "float"; min: number; max: number; step: number }
-  | { type: "choice"; values: (string | number)[] };
+  | { type: "choice"; values: (string | number)[] }
+  /**
+   * Pick one record from a bank (language drills): the record's fields become `<name>_<field>`
+   * and `<name>` holds the record index (usable in constraints, e.g. `s != t`).
+   */
+  | { type: "pick"; from: Record<string, string | number>[] };
 
 /** Template spec attached to a question (`variants` in JSON). */
 export interface VariantSpec {

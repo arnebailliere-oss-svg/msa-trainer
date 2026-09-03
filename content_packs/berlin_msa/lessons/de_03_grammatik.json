@@ -1,0 +1,65 @@
+[
+  {
+    "id": "L_DE_GRAMMATIK",
+    "subject": "DE",
+    "topicId": "DE_GRAM_MODUS",
+    "alsoFor": ["DE_GRAM_AKTIV_PASSIV", "DE_GRAM_INDIRECT", "DE_GRAM_PARTIZIP", "DE_GRAM_WORD_CLASSES", "DE_GRAM_TENSES", "DE_GRAM_SENTENCE_PARTS"],
+    "title": "Sprachwissen: Modus, Aktiv/Passiv, indirekte Rede",
+    "primer": "P_DE_WORTARTEN",
+    "intro": "Der Prüfungsteil *Sprachwissen und Sprachbewusstsein* fragt nach **Grammatik zum Anfassen**: In welchem Modus steht der Satz? Forme ins Passiv um. Gib die Aussage in indirekter Rede wieder. Alles davon lässt sich in ein paar Handgriffen lernen.",
+    "source": "Adaptiert nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 2 (Sprachwissen)",
+    "sections": [
+      {
+        "kind": "what",
+        "title": "Was die Prüfung fragt",
+        "body": "- „Kreuzen Sie an, in welchem **Modus** die Sätze stehen.“\n- „Formen Sie den **Passivsatz** in einen **Aktivsatz** um“ (und umgekehrt).\n- „Formulieren Sie den Satz so um, dass er **keine direkte Rede** enthält.“\n- Dazu: Wortarten, Satzglieder, Zeitformen und Partizip I/II benennen."
+      },
+      {
+        "kind": "terms",
+        "title": "Wortarten in 60 Sekunden",
+        "primer": "P_DE_WORTARTEN",
+        "body": "- **Nomen**: Artikelprobe (*der, die, das* davor), groß. *die Freude*\n- **Verb**: verändert sich nach der Person. *ich gehe, du gehst*\n- **Adjektiv**: sagt, wie etwas ist, lässt sich steigern. *schnell, schneller*\n- **Artikel**: *der, die, das, ein, eine*\n- **Pronomen**: steht anstelle eines Nomens. *er, sie, mein, dieser*\n- **Präposition**: Verhältniswort. *in, auf, mit, nach, vor*\n- **Konjunktion**: Bindewort. *und, aber, weil, dass*\n- **Adverb**: unveränderlich, sagt wo/wann/wie. *heute, dort, sehr*"
+      },
+      {
+        "kind": "terms",
+        "title": "Satzglieder: die Fragen",
+        "body": "- **Subjekt**: *Wer oder was?* → *Der Hund* jagt die Katze.\n- **Prädikat**: *Was tut das Subjekt?* → Der Hund *jagt* die Katze. Kann zweiteilig sein: *hat … bestanden*.\n- **Objekt**: *Wen oder was?* (Akkusativ), *Wem?* (Dativ), *Wessen?* (Genitiv) → Der Hund jagt *die Katze*.\n- **Adverbiale Bestimmung**: *Wo? Wann? Wie? Warum?* → Wir fahren *morgen* *nach Berlin*.\n\nUmstellprobe: Ein Satzglied lässt sich als Ganzes an den Satzanfang stellen. *Morgen fahren wir nach Berlin.*"
+      },
+      {
+        "kind": "formula",
+        "title": "Zeitformen",
+        "body": "- **Präsens**: ich gehe\n- **Präteritum**: ich ging (Erzählzeit, eine Verbform)\n- **Perfekt**: ich bin gegangen (haben/sein + Partizip II, gesprochene Vergangenheit)\n- **Plusquamperfekt**: ich war gegangen (hatte/war + Partizip II, Vorvergangenheit: *Als ich ankam, war der Zug abgefahren.*)\n- **Futur I**: ich werde gehen"
+      },
+      {
+        "kind": "formula",
+        "title": "Die vier Modi",
+        "body": "- **Indikativ**: Wirklichkeit, Tatsachen, Gewohnheiten. *Er geht jeden Tag zur Arbeit.*\n- **Konjunktiv I**: indirekte Rede, formelle Wünsche. Formen: *er gehe, sie habe, er sei, sie komme*. *Er sagte, er gehe zur Arbeit.*\n- **Konjunktiv II**: Unwirkliches, Wünsche, höfliche Bitten. Formen: *hätte, wäre, würde, könnte, käme*. *Wenn ich Zeit hätte, würde ich reisen.* *Könntest du mir helfen?*\n- **Imperativ**: Befehl, Aufforderung, Rat. *Geh zum Supermarkt! Kauft Milch!*\n\nTrick: Klingt der Konjunktiv I wie der Indikativ (*wir müssen*), weicht man auf Konjunktiv II aus (*sie müssten*)."
+      },
+      {
+        "kind": "formula",
+        "title": "Aktiv und Passiv",
+        "body": "**Aktiv**: Wer handelt, steht im Mittelpunkt. Subjekt + Verb + Objekt.\n\n*Der Hund jagt die Katze.*\n\n**Passiv**: Die Handlung steht im Mittelpunkt, der Täter ist unwichtig oder unbekannt. Das Objekt wird Subjekt + Form von **werden** + **Partizip II**. Der Täter kann mit **von** genannt werden oder wegfallen.\n\n*Die Katze wird (vom Hund) gejagt.*\n\n**Zurück ins Aktiv**: Täter (*von …*) wird Subjekt. Fehlt er, nimm *jemand* oder *man*: *Ich wurde in den Hinterhof gerufen.* → *Jemand rief mich in den Hinterhof.* Zeitform beibehalten!"
+      },
+      {
+        "kind": "steps",
+        "title": "Direkte → indirekte Rede in vier Schritten",
+        "body": "*Herr Schenck meinte: „Ohne Jagdtourismus müssen wir einige Naturregionen opfern.“*\n\n1. **Wörtliche Rede finden** (Anführungszeichen).\n2. **Anführungszeichen und Doppelpunkt entfernen**, Begleitsatz behalten: *Herr Schenck meinte, …*\n3. **Konjunktiv** setzen, **Pronomen und Zeitform anpassen**: *wir müssen* → *sie müssten* (Konjunktiv II, weil Konjunktiv I wie Indikativ klingt), *ich* → *er/sie*, *mein* → *sein/ihr*.\n4. **Einleitung** wählen: *… meinte, dass …* / *… fragte, ob …* / Fragewort.\n\n→ *Herr Schenck meinte, dass sie ohne Jagdtourismus einige Naturregionen opfern müssten.*"
+      },
+      {
+        "kind": "terms",
+        "title": "Partizip I und II",
+        "body": "- **Partizip I** = Verb + **-end**: *lachend, schlafend, laufend*. Die Handlung passiert **gerade**, aktiv. *die lachenden Kinder*\n- **Partizip II** = **ge-** … **-t/-en**: *gebacken, gelesen, geöffnet*. Die Handlung ist **abgeschlossen**, oft passiv. *das gebackene Brot*\n\nBeide können wie Adjektive vor einem Nomen stehen und werden dann gebeugt: *die lachend**en** Kinder, das gebacken**e** Brot*."
+      },
+      {
+        "kind": "mistake",
+        "title": "Typische Fehler",
+        "body": "- Konjunktiv I und II verwechseln: *er gehe* (K I, indirekte Rede) vs. *er ginge / würde gehen* (K II, unwirklich).\n- Beim Passiv die **Zeitform** wechseln: *jagt* → *wird gejagt* (Präsens bleibt Präsens).\n- In der indirekten Rede das **ich** stehen lassen: *Er sagte, **ich** gehe* ✗ → *er gehe* ✓\n- Subjekt und Objekt verwechseln: Wer handelt? (Subjekt) Wen trifft es? (Objekt)"
+      },
+      {
+        "kind": "remember",
+        "title": "Merke",
+        "body": "Modus: **Indikativ** (Wirklichkeit), **K I** (indirekte Rede: gehe, habe, sei), **K II** (hätte, wäre, würde), **Imperativ** (Geh!). Passiv = **werden + Partizip II**. Indirekte Rede = Anführungszeichen weg, Pronomen anpassen, Konjunktiv."
+      }
+    ]
+  }
+]

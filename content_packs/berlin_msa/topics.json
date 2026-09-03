@@ -283,7 +283,7 @@
     "id": "DE_ORTHO_SEP_JOIN",
     "subject": "DE",
     "code": "DE_ORTHO_SEP_JOIN",
-    "name": "Getrennt und Zusammenschreibung (basis)",
+    "name": "Getrennt- und Zusammenschreibung",
     "parentId": "DE_ORTHO"
   },
   {
@@ -311,7 +311,7 @@
     "id": "DE_PUNCT_INFINITIVE",
     "subject": "DE",
     "code": "DE_PUNCT_INFINITIVE",
-    "name": "Komma bei Infinitivgruppen (basis)",
+    "name": "Komma bei Infinitivgruppen",
     "parentId": "DE_PUNCT"
   },
   {
@@ -332,14 +332,14 @@
     "id": "DE_GRAM_WORD_CLASSES",
     "subject": "DE",
     "code": "DE_GRAM_WORD_CLASSES",
-    "name": "Wortarten (Nomen, Verb, Adjektiv)",
+    "name": "Wortarten",
     "parentId": "DE_GRAM"
   },
   {
     "id": "DE_GRAM_TENSES",
     "subject": "DE",
     "code": "DE_GRAM_TENSES",
-    "name": "Zeitformen (Präsens, Präteritum, Perfekt)",
+    "name": "Zeitformen",
     "parentId": "DE_GRAM"
   },
   {
@@ -353,7 +353,7 @@
     "id": "DE_GRAM_SENTENCE_PARTS",
     "subject": "DE",
     "code": "DE_GRAM_SENTENCE_PARTS",
-    "name": "Satzglieder (Subjekt, Prädikat, Objekt) basis",
+    "name": "Satzglieder (Subjekt, Prädikat, Objekt, Adverbiale)",
     "parentId": "DE_GRAM"
   },
   {
@@ -523,5 +523,82 @@
     "code": "EN_WRITE_ERRORFIX",
     "name": "Error correction (common mistakes)",
     "parentId": "EN_WRITE"
+  },
+  {
+    "id": "DE_ORTHO_DAS_DASS",
+    "subject": "DE",
+    "code": "DE_ORTHO_DAS_DASS",
+    "name": "das oder dass",
+    "parentId": "DE_ORTHO"
+  },
+  {
+    "id": "DE_ORTHO_STRATEGIES",
+    "subject": "DE",
+    "code": "DE_ORTHO_STRATEGIES",
+    "name": "Rechtschreibstrategien (verlängern, ableiten, Silben, h)",
+    "parentId": "DE_ORTHO"
+  },
+  {
+    "id": "DE_GRAM_MODUS",
+    "subject": "DE",
+    "code": "DE_GRAM_MODUS",
+    "name": "Modus (Indikativ, Konjunktiv I und II, Imperativ)",
+    "parentId": "DE_GRAM"
+  },
+  {
+    "id": "DE_GRAM_AKTIV_PASSIV",
+    "subject": "DE",
+    "code": "DE_GRAM_AKTIV_PASSIV",
+    "name": "Aktiv und Passiv",
+    "parentId": "DE_GRAM"
+  },
+  {
+    "id": "DE_GRAM_INDIRECT",
+    "subject": "DE",
+    "code": "DE_GRAM_INDIRECT",
+    "name": "Direkte und indirekte Rede",
+    "parentId": "DE_GRAM"
+  },
+  {
+    "id": "DE_GRAM_PARTIZIP",
+    "subject": "DE",
+    "code": "DE_GRAM_PARTIZIP",
+    "name": "Partizip I und II",
+    "parentId": "DE_GRAM"
+  },
+  {
+    "id": "DE_STIL",
+    "subject": "DE",
+    "code": "DE_STIL",
+    "name": "Sprache und Stil",
+    "parentId": "DE"
+  },
+  {
+    "id": "DE_STIL_MITTEL",
+    "subject": "DE",
+    "code": "DE_STIL_MITTEL",
+    "name": "Stilmittel (rhetorische Mittel)",
+    "parentId": "DE_STIL"
+  },
+  {
+    "id": "DE_STIL_REGISTER",
+    "subject": "DE",
+    "code": "DE_STIL_REGISTER",
+    "name": "Standard- und Umgangssprache",
+    "parentId": "DE_STIL"
+  },
+  {
+    "id": "DE_STIL_FEHLER",
+    "subject": "DE",
+    "code": "DE_STIL_FEHLER",
+    "name": "Fehlerarten erkennen (Text überarbeiten)",
+    "parentId": "DE_STIL"
+  },
+  {
+    "id": "DE_WRITE_EROERTERUNG",
+    "subject": "DE",
+    "code": "DE_WRITE_EROERTERUNG",
+    "name": "Erörterung: Schreibplan und Aufbau",
+    "parentId": "DE_WRITE"
   }
 ]

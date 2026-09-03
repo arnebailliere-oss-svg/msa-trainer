@@ -1,0 +1,203 @@
+[
+  {
+    "id": "DE_KOMMA_SETZEN_T1",
+    "subject": "DE",
+    "topicId": "DE_PUNCT_COMMA_MAIN_SUB",
+    "difficulty": 2,
+    "qtype": "CLOZE",
+    "prompt": "Komma oder kein Komma? Entscheide an der Lücke.",
+    "payload": { "text_with_blanks": "{{s_satz}}", "blanks": [{ "id": 1, "choices": ["Komma", "kein Komma"] }] },
+    "solution": { "answers": { "1": "{{s_loesung}}" } },
+    "explanation": [
+      { "kind": "what", "title": "Die Regel", "body": "**{{s_regel}}**" },
+      { "kind": "answer", "body": "{{s_korrekt}}" },
+      { "kind": "remember", "body": "Komma bei: **Aufzählung**, **Hauptsatz + Nebensatz**, **zwei Hauptsätzen**, **Einschüben**, **Infinitivgruppen** mit um/ohne/anstatt, **Entgegenstellung** (aber, sondern). **Kein** Komma vor *und* in einer Aufzählung." }
+    ],
+    "tags": ["komma", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 3 (Kommasetzung)",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "s": {
+          "type": "pick",
+          "from": [
+            { "satz": "Ich bleibe zu Hause___ weil ich krank bin.", "loesung": "Komma", "regel": "Hauptsatz + Nebensatz (weil)", "korrekt": "Ich bleibe zu Hause, weil ich krank bin." },
+            { "satz": "Im Zoo gibt es Affen___ Elefanten und Zebras.", "loesung": "Komma", "regel": "Aufzählung", "korrekt": "Im Zoo gibt es Affen, Elefanten und Zebras." },
+            { "satz": "Tim spielt Fußball___ Lea liest ein Buch.", "loesung": "Komma", "regel": "Zwei Hauptsätze ohne und (Satzreihe)", "korrekt": "Tim spielt Fußball, Lea liest ein Buch." },
+            { "satz": "Sie kauft Brot___ und Butter.", "loesung": "kein Komma", "regel": "Aufzählung mit und: kein Komma", "korrekt": "Sie kauft Brot und Butter." },
+            { "satz": "Er spart Geld___ um sich ein Fahrrad zu kaufen.", "loesung": "Komma", "regel": "Infinitivgruppe mit einleitendem Wort (um)", "korrekt": "Er spart Geld, um sich ein Fahrrad zu kaufen." },
+            { "satz": "Das Haus___ das abgerissen wurde, war sehr alt.", "loesung": "Komma", "regel": "Eingeschobener Nebensatz (Relativsatz): zwei Kommas", "korrekt": "Das Haus, das abgerissen wurde, war sehr alt." },
+            { "satz": "Ich weiß nicht___ ob er kommt.", "loesung": "Komma", "regel": "Hauptsatz + Nebensatz (ob)", "korrekt": "Ich weiß nicht, ob er kommt." },
+            { "satz": "Der Hund bellt___ und knurrt.", "loesung": "kein Komma", "regel": "Zwei Verben mit und: kein Komma", "korrekt": "Der Hund bellt und knurrt." },
+            { "satz": "Sie hatte den Wunsch___ eine Weltreise zu machen.", "loesung": "Komma", "regel": "Infinitivgruppe hängt von einem Nomen ab (der Wunsch)", "korrekt": "Sie hatte den Wunsch, eine Weltreise zu machen." },
+            { "satz": "Er liebte es___ abenteuerliche Reisen zu unternehmen.", "loesung": "Komma", "regel": "Hinweisendes Wort (es) kündigt die Infinitivgruppe an", "korrekt": "Er liebte es, abenteuerliche Reisen zu unternehmen." },
+            { "satz": "Wir fahren morgen___ nach Berlin.", "loesung": "kein Komma", "regel": "Einfacher Hauptsatz: kein Grund für ein Komma", "korrekt": "Wir fahren morgen nach Berlin." },
+            { "satz": "Herr Schmidt___ der Lehrer meiner Tochter, ist jung.", "loesung": "Komma", "regel": "Apposition (erklärender Zusatz): zwei Kommas", "korrekt": "Herr Schmidt, der Lehrer meiner Tochter, ist jung." },
+            { "satz": "Während sie jubelt___ ist er enttäuscht.", "loesung": "Komma", "regel": "Nebensatz vor dem Hauptsatz (während)", "korrekt": "Während sie jubelt, ist er enttäuscht." },
+            { "satz": "Anna sagt___ dass sie müde ist.", "loesung": "Komma", "regel": "Hauptsatz + Nebensatz (dass)", "korrekt": "Anna sagt, dass sie müde ist." },
+            { "satz": "Er ist nicht dumm___ sondern faul.", "loesung": "Komma", "regel": "Entgegenstellung (sondern)", "korrekt": "Er ist nicht dumm, sondern faul." },
+            { "satz": "Sie spielt gern Tennis___ aber sie hasst Fußball.", "loesung": "Komma", "regel": "Entgegenstellung (aber) zwischen zwei Hauptsätzen", "korrekt": "Sie spielt gern Tennis, aber sie hasst Fußball." },
+            { "satz": "Ich habe Hunger___ und Durst.", "loesung": "kein Komma", "regel": "Aufzählung mit und: kein Komma", "korrekt": "Ich habe Hunger und Durst." },
+            { "satz": "Wenn es regnet___ bleiben wir drinnen.", "loesung": "Komma", "regel": "Nebensatz vor dem Hauptsatz (wenn)", "korrekt": "Wenn es regnet, bleiben wir drinnen." },
+            { "satz": "Er ging___ ohne sich zu verabschieden.", "loesung": "Komma", "regel": "Infinitivgruppe mit einleitendem Wort (ohne)", "korrekt": "Er ging, ohne sich zu verabschieden." },
+            { "satz": "Peter___ Anna und Tom kommen mit.", "loesung": "Komma", "regel": "Aufzählung", "korrekt": "Peter, Anna und Tom kommen mit." },
+            { "satz": "Die Kinder spielen draußen___ oder sie lesen.", "loesung": "kein Komma", "regel": "Hauptsätze mit oder: kein Komma nötig", "korrekt": "Die Kinder spielen draußen oder sie lesen." },
+            { "satz": "Obwohl er müde war___ lernte er weiter.", "loesung": "Komma", "regel": "Nebensatz vor dem Hauptsatz (obwohl)", "korrekt": "Obwohl er müde war, lernte er weiter." }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "DE_KOMMA_REGEL_MCQ_T1",
+    "subject": "DE",
+    "topicId": "DE_PUNCT_COMMA_MAIN_SUB",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "Welche Kommaregel gilt in diesem Satz?\n\n„{{s_satz}}“",
+    "payload": { "choices": ["Aufzählung", "Hauptsatz und Nebensatz", "Zwei Hauptsätze", "Infinitivgruppe", "Apposition (Einschub)"] },
+    "solution": { "correct_choice": "{{s_regel}}" },
+    "explanation": [
+      { "kind": "what", "title": "Woran du es erkennst", "body": "{{s_hinweis}}" },
+      { "kind": "remember", "body": "**Aufzählung**: gleichartige Wörter hintereinander. **Nebensatz**: beginnt mit weil/dass/ob/wenn/obwohl/während oder einem Relativpronomen, Verb am Ende. **Zwei Hauptsätze**: beide könnten allein stehen. **Infinitivgruppe**: zu + Verb. **Apposition**: erklärt ein Nomen und steht zwischen Kommas." }
+    ],
+    "tags": ["komma", "regel", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 3",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "s": {
+          "type": "pick",
+          "from": [
+            { "satz": "Wir kaufen Äpfel, Birnen und Trauben.", "regel": "Aufzählung", "hinweis": "Drei gleichartige Dinge hintereinander: Äpfel, Birnen, Trauben." },
+            { "satz": "Ich komme später, weil ich noch arbeiten muss.", "regel": "Hauptsatz und Nebensatz", "hinweis": "„weil“ leitet einen Nebensatz ein, das Verb „muss“ steht am Ende." },
+            { "satz": "Die Sonne scheint, die Vögel singen.", "regel": "Zwei Hauptsätze", "hinweis": "Beide Teile könnten allein stehen: „Die Sonne scheint.“ „Die Vögel singen.“" },
+            { "satz": "Sie trainiert hart, um zu gewinnen.", "regel": "Infinitivgruppe", "hinweis": "„um … zu gewinnen“: zu + Verb mit einleitendem Wort um." },
+            { "satz": "Berlin, die Hauptstadt Deutschlands, ist groß.", "regel": "Apposition (Einschub)", "hinweis": "„die Hauptstadt Deutschlands“ erklärt Berlin und steht zwischen zwei Kommas." },
+            { "satz": "Er fragte, ob wir Zeit haben.", "regel": "Hauptsatz und Nebensatz", "hinweis": "„ob“ leitet einen Nebensatz ein, „haben“ steht am Ende." },
+            { "satz": "Ich mache Hausaufgaben, Tim spielt Fußball.", "regel": "Zwei Hauptsätze", "hinweis": "Zwei vollständige Sätze, nur durch ein Komma verbunden (Satzreihe)." },
+            { "satz": "Anstatt zu lernen, ging er ins Kino.", "regel": "Infinitivgruppe", "hinweis": "„anstatt zu lernen“: zu + Verb mit einleitendem Wort anstatt." },
+            { "satz": "Meine Schwester, eine gute Schwimmerin, gewann.", "regel": "Apposition (Einschub)", "hinweis": "„eine gute Schwimmerin“ ist ein erklärender Zusatz zu „meine Schwester“." },
+            { "satz": "Sie mag Hunde, Katzen, Pferde und Hasen.", "regel": "Aufzählung", "hinweis": "Vier Tiere hintereinander, vor „und“ kein Komma." },
+            { "satz": "Obwohl es regnete, gingen wir raus.", "regel": "Hauptsatz und Nebensatz", "hinweis": "„obwohl“ leitet den Nebensatz ein, der hier vorne steht." },
+            { "satz": "Er hatte vor, ein Buch zu schreiben.", "regel": "Infinitivgruppe", "hinweis": "„ein Buch zu schreiben“: zu + Verb, hängt von „hatte vor“ ab." },
+            { "satz": "Das Konzert war laut, das Publikum jubelte.", "regel": "Zwei Hauptsätze", "hinweis": "Beide Teile sind vollständige Sätze mit eigenem Verb an zweiter Stelle." },
+            { "satz": "Wir brauchen Mehl, Zucker, Eier.", "regel": "Aufzählung", "hinweis": "Drei Zutaten hintereinander." },
+            { "satz": "Frau Meier, unsere Nachbarin, backt gern.", "regel": "Apposition (Einschub)", "hinweis": "„unsere Nachbarin“ erklärt, wer Frau Meier ist." },
+            { "satz": "Ich glaube, dass es klappt.", "regel": "Hauptsatz und Nebensatz", "hinweis": "„dass“ leitet den Nebensatz ein, „klappt“ steht am Ende." }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "DE_KOMMA_INFINITIV_MCQ_T1",
+    "subject": "DE",
+    "topicId": "DE_PUNCT_INFINITIVE",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "Warum steht hier ein Komma vor der Infinitivgruppe?\n\n„{{s_satz}}“",
+    "payload": { "choices": ["Einleitendes Wort (um, ohne, anstatt, statt, als)", "Die Infinitivgruppe hängt von einem Nomen ab", "Ein hinweisendes Wort (es, das, daran …) kündigt sie an"] },
+    "solution": { "correct_choice": "{{s_regel}}" },
+    "explanation": [
+      { "kind": "what", "title": "Das Signal", "body": "{{s_hinweis}}" },
+      { "kind": "remember", "body": "Komma bei Infinitivgruppen (zu + Verb) in **drei Fällen**: 1. **einleitendes Wort** (um, ohne, anstatt, statt, als), 2. **Bezug zu einem Nomen** (der Wunsch, der Plan, die Idee …), 3. **hinweisendes Wort** im Hauptsatz (es, das, daran, davon …)." }
+    ],
+    "tags": ["komma", "infinitivgruppe", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 3 (Exkurs Infinitivgruppen)",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "s": {
+          "type": "pick",
+          "from": [
+            { "satz": "Anstatt zu lernen, ging er ins Kino.", "regel": "Einleitendes Wort (um, ohne, anstatt, statt, als)", "hinweis": "„anstatt“ leitet die Infinitivgruppe ein." },
+            { "satz": "Ein eigenes Buch zu schreiben, das war sein größter Traum.", "regel": "Ein hinweisendes Wort (es, das, daran …) kündigt sie an", "hinweis": "„das“ im Hauptsatz weist auf die Infinitivgruppe zurück." },
+            { "satz": "Sie hatte den Wunsch, eine Weltreise zu machen.", "regel": "Die Infinitivgruppe hängt von einem Nomen ab", "hinweis": "Die Infinitivgruppe erklärt das Nomen „Wunsch“." },
+            { "satz": "Er spart Geld, um sich ein neues Fahrrad zu kaufen.", "regel": "Einleitendes Wort (um, ohne, anstatt, statt, als)", "hinweis": "„um“ leitet die Infinitivgruppe ein." },
+            { "satz": "Ihr Plan, im Ausland zu studieren, wurde wahr.", "regel": "Die Infinitivgruppe hängt von einem Nomen ab", "hinweis": "Die Infinitivgruppe erklärt das Nomen „Plan“." },
+            { "satz": "Er liebte es, abenteuerliche Reisen zu unternehmen.", "regel": "Ein hinweisendes Wort (es, das, daran …) kündigt sie an", "hinweis": "„es“ kündigt die Infinitivgruppe an." },
+            { "satz": "Sie ging, ohne sich zu verabschieden.", "regel": "Einleitendes Wort (um, ohne, anstatt, statt, als)", "hinweis": "„ohne“ leitet die Infinitivgruppe ein." },
+            { "satz": "Ich denke daran, dich bald zu besuchen.", "regel": "Ein hinweisendes Wort (es, das, daran …) kündigt sie an", "hinweis": "„daran“ weist auf die Infinitivgruppe hin." },
+            { "satz": "Die Idee, ein Café zu eröffnen, gefiel allen.", "regel": "Die Infinitivgruppe hängt von einem Nomen ab", "hinweis": "Die Infinitivgruppe erklärt das Nomen „Idee“." },
+            { "satz": "Statt zu schlafen, spielte er die halbe Nacht.", "regel": "Einleitendes Wort (um, ohne, anstatt, statt, als)", "hinweis": "„statt“ leitet die Infinitivgruppe ein." },
+            { "satz": "Es ist wichtig, pünktlich zu sein.", "regel": "Ein hinweisendes Wort (es, das, daran …) kündigt sie an", "hinweis": "„es“ am Satzanfang kündigt die Infinitivgruppe an." },
+            { "satz": "Sein Traum, Pilot zu werden, erfüllte sich.", "regel": "Die Infinitivgruppe hängt von einem Nomen ab", "hinweis": "Die Infinitivgruppe erklärt das Nomen „Traum“." }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "DE_SATZART_MCQ_T1",
+    "subject": "DE",
+    "topicId": "DE_GRAM_SENTENCE_TYPES",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Ist der markierte Teil ein Hauptsatz oder ein Nebensatz?\n\n„{{s_satz}}“ — gemeint ist: **{{s_teil}}**",
+    "payload": { "choices": ["Hauptsatz", "Nebensatz", "Infinitivgruppe"] },
+    "solution": { "correct_choice": "{{s_loesung}}" },
+    "explanation": [
+      { "kind": "what", "title": "Woran du es erkennst", "body": "{{s_hinweis}}" },
+      { "kind": "remember", "body": "**Hauptsatz**: kann allein stehen, das Verb steht an **zweiter** Stelle. **Nebensatz**: beginnt mit weil, dass, ob, wenn, obwohl, während, als … oder einem Relativpronomen (der, die, das), das Verb steht **am Ende**. **Infinitivgruppe**: zu + Verb, ohne eigenes Subjekt." }
+    ],
+    "tags": ["satzart", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 3",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "s": {
+          "type": "pick",
+          "from": [
+            { "satz": "Ich bleibe zu Hause, weil ich krank bin.", "teil": "weil ich krank bin", "loesung": "Nebensatz", "hinweis": "„weil“ am Anfang, das Verb „bin“ ganz am Ende." },
+            { "satz": "Ich bleibe zu Hause, weil ich krank bin.", "teil": "Ich bleibe zu Hause", "loesung": "Hauptsatz", "hinweis": "Könnte allein stehen, das Verb „bleibe“ steht an zweiter Stelle." },
+            { "satz": "Er spart Geld, um ein Fahrrad zu kaufen.", "teil": "um ein Fahrrad zu kaufen", "loesung": "Infinitivgruppe", "hinweis": "zu + Verb (zu kaufen), kein eigenes Subjekt." },
+            { "satz": "Das Buch, das ich lese, ist spannend.", "teil": "das ich lese", "loesung": "Nebensatz", "hinweis": "Relativsatz: beginnt mit „das“, das Verb „lese“ steht am Ende." },
+            { "satz": "Wenn es regnet, bleiben wir drinnen.", "teil": "bleiben wir drinnen", "loesung": "Hauptsatz", "hinweis": "Der Hauptsatz steht hinten; das Verb „bleiben“ steht direkt nach dem Komma an erster Stelle des Hauptsatzes, weil der Nebensatz die erste Position besetzt." },
+            { "satz": "Wenn es regnet, bleiben wir drinnen.", "teil": "Wenn es regnet", "loesung": "Nebensatz", "hinweis": "„wenn“ am Anfang, das Verb „regnet“ am Ende." },
+            { "satz": "Sie hofft, dass er kommt.", "teil": "dass er kommt", "loesung": "Nebensatz", "hinweis": "„dass“ leitet den Nebensatz ein, „kommt“ steht am Ende." },
+            { "satz": "Er ging, ohne sich zu verabschieden.", "teil": "ohne sich zu verabschieden", "loesung": "Infinitivgruppe", "hinweis": "zu + Verb (zu verabschieden) mit einleitendem Wort ohne." },
+            { "satz": "Die Sonne scheint, die Vögel singen.", "teil": "die Vögel singen", "loesung": "Hauptsatz", "hinweis": "Vollständiger Satz, Verb an zweiter Stelle. Vorsicht: „die“ ist hier ein Artikel, kein Relativpronomen." },
+            { "satz": "Obwohl er müde war, lernte er weiter.", "teil": "Obwohl er müde war", "loesung": "Nebensatz", "hinweis": "„obwohl“ am Anfang, „war“ am Ende." },
+            { "satz": "Ich weiß nicht, ob sie kommt.", "teil": "Ich weiß nicht", "loesung": "Hauptsatz", "hinweis": "Kann allein stehen, „weiß“ an zweiter Stelle." },
+            { "satz": "Sie hatte den Wunsch, eine Weltreise zu machen.", "teil": "eine Weltreise zu machen", "loesung": "Infinitivgruppe", "hinweis": "zu + Verb (zu machen), hängt vom Nomen „Wunsch“ ab." }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "DE_DIREKTE_REDE_MCQ_T1",
+    "subject": "DE",
+    "topicId": "DE_PUNCT_SPEECH",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Welcher Satz ist richtig gesetzt (Zeichen bei der direkten Rede)?",
+    "payload": { "choices": ["{{s_a}}", "{{s_b}}", "{{s_c}}", "{{s_d}}"] },
+    "solution": { "correct_choice": "{{s_a}}" },
+    "explanation": [
+      { "kind": "what", "title": "Die Regel", "body": "{{s_regel}}" },
+      { "kind": "remember", "body": "Begleitsatz **vorn**: Doppelpunkt, dann Anführungszeichen unten „ … oben“. Begleitsatz **hinten**: Punkt der Rede fällt weg, Komma nach dem schließenden Anführungszeichen: „…“, sagte er. **Frage- und Ausrufezeichen** bleiben: „Kommst du?“, fragte sie." }
+    ],
+    "tags": ["direkte-rede", "zeichensetzung", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 2 und 3",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "s": {
+          "type": "pick",
+          "from": [
+            { "a": "Sie sagte: „Ich komme morgen.“", "b": "Sie sagte, „Ich komme morgen.“", "c": "Sie sagte: „Ich komme morgen“.", "d": "Sie sagte: Ich komme morgen.", "regel": "Begleitsatz vorn: **Doppelpunkt**, dann die Rede in Anführungszeichen. Der Punkt steht **vor** dem schließenden Anführungszeichen." },
+            { "a": "„Ich komme morgen“, sagte sie.", "b": "„Ich komme morgen.“, sagte sie.", "c": "„Ich komme morgen“ sagte sie.", "d": "„Ich komme morgen,“ sagte sie.", "regel": "Begleitsatz hinten: Der Punkt der Rede **fällt weg**, nach dem schließenden Anführungszeichen folgt ein **Komma**." },
+            { "a": "„Kommst du mit?“, fragte er.", "b": "„Kommst du mit“, fragte er.", "c": "„Kommst du mit?“ fragte er.", "d": "„Kommst du mit,“ fragte er?", "regel": "Das **Fragezeichen** bleibt in der Rede, danach folgt trotzdem ein **Komma** vor dem Begleitsatz." },
+            { "a": "Er rief: „Pass auf!“", "b": "Er rief: „Pass auf“!", "c": "Er rief, „Pass auf!“", "d": "Er rief „Pass auf!“.", "regel": "Begleitsatz vorn: **Doppelpunkt**. Das Ausrufezeichen steht **in** den Anführungszeichen, danach kommt nichts mehr." },
+            { "a": "„Ich bin müde“, sagte Tom, „und gehe schlafen.“", "b": "„Ich bin müde,“ sagte Tom, „und gehe schlafen.“", "c": "„Ich bin müde“, sagte Tom „und gehe schlafen.“", "d": "„Ich bin müde“ sagte Tom, „und gehe schlafen“.", "regel": "**Eingeschobener** Begleitsatz: Kommas vor und nach dem Begleitsatz, die Rede wird in zwei Anführungsteilen fortgesetzt." },
+            { "a": "Lea fragte: „Wo warst du?“", "b": "Lea fragte: „Wo warst du“?", "c": "Lea fragte, „Wo warst du?“", "d": "Lea fragte: „Wo warst du?“.", "regel": "Begleitsatz vorn: **Doppelpunkt**. Das Fragezeichen gehört zur Rede und steht **vor** dem schließenden Anführungszeichen. Danach kein Punkt mehr." },
+            { "a": "„Wir gewinnen!“, jubelte die Mannschaft.", "b": "„Wir gewinnen!“ jubelte die Mannschaft.", "c": "„Wir gewinnen“, jubelte die Mannschaft!", "d": "„Wir gewinnen,“ jubelte die Mannschaft.", "regel": "Das **Ausrufezeichen** bleibt in der Rede, danach folgt ein **Komma** vor dem Begleitsatz." },
+            { "a": "Der Lehrer sagte: „Morgen schreiben wir einen Test.“", "b": "Der Lehrer sagte „Morgen schreiben wir einen Test.“", "c": "Der Lehrer sagte: „Morgen schreiben wir einen Test“.", "d": "Der Lehrer sagte; „Morgen schreiben wir einen Test.“", "regel": "Begleitsatz vorn: **Doppelpunkt** (kein Semikolon, kein Nichts), Punkt **vor** dem schließenden Anführungszeichen." }
+          ]
+        }
+      }
+    }
+  }
+]

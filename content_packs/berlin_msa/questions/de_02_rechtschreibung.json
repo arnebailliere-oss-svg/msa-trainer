@@ -1,0 +1,292 @@
+[
+  {
+    "id": "DE_DAS_DASS_T1",
+    "subject": "DE",
+    "topicId": "DE_ORTHO_DAS_DASS",
+    "difficulty": 2,
+    "qtype": "CLOZE",
+    "prompt": "das oder dass? Wähle an der Lücke.",
+    "payload": { "text_with_blanks": "{{s_satz}}", "blanks": [{ "id": 1, "choices": ["das", "dass"] }] },
+    "solution": { "answers": { "1": "{{s_loesung}}" } },
+    "explanation": [
+      { "kind": "steps", "title": "Ersatzprobe", "body": "{{s_probe}}" },
+      { "kind": "remember", "body": "**das** = Artikel oder Pronomen: lässt sich durch **dieses**, **jenes** oder **welches** ersetzen.\n\n**dass** = Konjunktion (Bindewort): leitet einen Nebensatz ein, die Ersatzprobe klappt **nicht**." }
+    ],
+    "tags": ["das-dass", "rechtschreibung", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 3 (das oder dass)",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "s": {
+          "type": "pick",
+          "from": [
+            { "satz": "Ich glaube, ___ der Film gut wird.", "loesung": "dass", "probe": "„Ich glaube, welches der Film gut wird“ ergibt keinen Sinn → Konjunktion → **dass**." },
+            { "satz": "Das Buch, ___ ich gerade lese, ist spannend.", "loesung": "das", "probe": "„Das Buch, welches ich gerade lese“ passt → Relativpronomen → **das**." },
+            { "satz": "Er sagt, ___ er müde ist.", "loesung": "dass", "probe": "„Er sagt, welches er müde ist“ ergibt keinen Sinn → **dass**." },
+            { "satz": "Das Auto, ___ dort steht, gehört mir.", "loesung": "das", "probe": "„Das Auto, welches dort steht“ passt → **das**." },
+            { "satz": "Ich hoffe, ___ du kommst.", "loesung": "dass", "probe": "„Ich hoffe, welches du kommst“ ergibt keinen Sinn → **dass**." },
+            { "satz": "Das Kind, ___ weint, hat Hunger.", "loesung": "das", "probe": "„Das Kind, welches weint“ passt → **das**." },
+            { "satz": "Wir wissen, ___ es schwer wird.", "loesung": "dass", "probe": "„Wir wissen, dieses es schwer wird“ ergibt keinen Sinn → **dass**." },
+            { "satz": "Ist es wahr, ___ du umziehst?", "loesung": "dass", "probe": "„Ist es wahr, welches du umziehst“ ergibt keinen Sinn → **dass**." },
+            { "satz": "Das Haus, ___ wir gekauft haben, ist alt.", "loesung": "das", "probe": "„Das Haus, welches wir gekauft haben“ passt → **das**." },
+            { "satz": "Sie meint, ___ es reicht.", "loesung": "dass", "probe": "„Sie meint, dieses es reicht“ ergibt keinen Sinn → **dass**." },
+            { "satz": "Ich nehme das Fahrrad, ___ blau ist.", "loesung": "das", "probe": "„das Fahrrad, welches blau ist“ passt → **das**." },
+            { "satz": "Es ist schade, ___ du nicht kommst.", "loesung": "dass", "probe": "„Es ist schade, welches du nicht kommst“ ergibt keinen Sinn → **dass**." },
+            { "satz": "Kennst du das Lied, ___ gerade läuft?", "loesung": "das", "probe": "„das Lied, welches gerade läuft“ passt → **das**." },
+            { "satz": "Der Lehrer sagt, ___ die Arbeit gut war.", "loesung": "dass", "probe": "„Der Lehrer sagt, welches die Arbeit gut war“ ergibt keinen Sinn → **dass**." },
+            { "satz": "Ich finde das Geschenk, ___ du gebastelt hast, toll.", "loesung": "das", "probe": "„das Geschenk, welches du gebastelt hast“ passt → **das**." },
+            { "satz": "Mir gefällt, ___ du ehrlich bist.", "loesung": "dass", "probe": "„Mir gefällt, welches du ehrlich bist“ ergibt keinen Sinn → **dass**." },
+            { "satz": "Er weiß genau, ___ er zu spät ist.", "loesung": "dass", "probe": "„Er weiß genau, dieses er zu spät ist“ ergibt keinen Sinn → **dass**." },
+            { "satz": "Das Handy, ___ ich verloren habe, war neu.", "loesung": "das", "probe": "„Das Handy, welches ich verloren habe“ passt → **das**." }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "DE_DAS_DASS_BEGRUENDUNG_MCQ_T1",
+    "subject": "DE",
+    "topicId": "DE_ORTHO_DAS_DASS",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "„{{s_satz}}“\n\nWie begründest du die Schreibweise von **{{s_wort}}**?",
+    "payload": { "choices": ["Konjunktion: leitet einen Nebensatz ein, Ersatzprobe mit „welches“ klappt nicht", "Relativpronomen: lässt sich durch „welches“ ersetzen", "Artikel: steht direkt vor einem Nomen", "Pronomen: lässt sich durch „dieses“ ersetzen"] },
+    "solution": { "correct_choice": "{{s_grund}}" },
+    "explanation": [
+      { "kind": "what", "body": "{{s_hinweis}}" },
+      { "kind": "remember", "body": "In der Prüfung wird oft eine **Begründung** verlangt. Nenne die Wortart (Artikel, Pronomen, Konjunktion) und die **Ersatzprobe** mit dieses/welches." }
+    ],
+    "tags": ["das-dass", "begruendung", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 3",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "s": {
+          "type": "pick",
+          "from": [
+            { "satz": "Das ist doch großartig, dass du gewonnen hast.", "wort": "dass", "grund": "Konjunktion: leitet einen Nebensatz ein, Ersatzprobe mit „welches“ klappt nicht", "hinweis": "„… großartig, welches du gewonnen hast“ ergibt keinen Sinn: „dass“ verbindet Haupt- und Nebensatz." },
+            { "satz": "Das ist doch großartig, dass du gewonnen hast.", "wort": "Das (am Anfang)", "grund": "Pronomen: lässt sich durch „dieses“ ersetzen", "hinweis": "„Dies ist doch großartig“ passt: „Das“ steht für die Sache, die gemeint ist." },
+            { "satz": "Das Buch, das ich lese, ist gut.", "wort": "das (nach dem Komma)", "grund": "Relativpronomen: lässt sich durch „welches“ ersetzen", "hinweis": "„Das Buch, welches ich lese“ passt: Das Relativpronomen leitet den Relativsatz ein." },
+            { "satz": "Das Buch, das ich lese, ist gut.", "wort": "Das (am Anfang)", "grund": "Artikel: steht direkt vor einem Nomen", "hinweis": "„Das“ steht direkt vor dem Nomen „Buch“, also ist es der Artikel." },
+            { "satz": "Ich hoffe, dass wir gewinnen.", "wort": "dass", "grund": "Konjunktion: leitet einen Nebensatz ein, Ersatzprobe mit „welches“ klappt nicht", "hinweis": "„Ich hoffe, welches wir gewinnen“ ergibt keinen Sinn." },
+            { "satz": "Das Auto, das dort steht, ist neu.", "wort": "das (nach dem Komma)", "grund": "Relativpronomen: lässt sich durch „welches“ ersetzen", "hinweis": "„Das Auto, welches dort steht“ passt." },
+            { "satz": "Das gefällt mir nicht.", "wort": "Das", "grund": "Pronomen: lässt sich durch „dieses“ ersetzen", "hinweis": "„Dies gefällt mir nicht“ passt: „Das“ ersetzt hier ein Nomen." },
+            { "satz": "Das Wetter ist schön.", "wort": "Das", "grund": "Artikel: steht direkt vor einem Nomen", "hinweis": "„Das“ steht direkt vor „Wetter“, also Artikel." }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "DE_GROSS_KLEIN_T1",
+    "subject": "DE",
+    "topicId": "DE_ORTHO_CASE",
+    "difficulty": 2,
+    "qtype": "CLOZE",
+    "prompt": "Groß oder klein? Wähle die richtige Schreibweise.",
+    "payload": { "text_with_blanks": "{{s_satz}}", "blanks": [{ "id": 1, "choices": ["{{s_gross}}", "{{s_klein}}"] }] },
+    "solution": { "answers": { "1": "{{s_loesung}}" } },
+    "explanation": [
+      { "kind": "what", "title": "Die Regel", "body": "{{s_grund}}" },
+      { "kind": "remember", "body": "Groß: **Nomen**, **Satzanfänge**, **Eigennamen**, **Nominalisierungen** (Verben/Adjektive mit Artikel oder nach beim/zum/ins/alles/etwas/nichts), **Sie/Ihnen** in der Anrede, **Wochentage und Tageszeiten** als Nomen. Klein: Verben, Adjektive, **Superlativ mit am**, Adverbien wie *montags*, *morgen*, *heute*." }
+    ],
+    "tags": ["gross-klein", "rechtschreibung", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 3 (Top-10 Groß- und Kleinschreibung)",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "s": {
+          "type": "pick",
+          "from": [
+            { "satz": "Das ___ macht mir Spaß.", "gross": "Lesen", "klein": "lesen", "loesung": "Lesen", "grund": "Nominalisierung: Der Artikel „das“ macht das Verb zum Nomen." },
+            { "satz": "Ich möchte heute Abend ___.", "gross": "Lesen", "klein": "lesen", "loesung": "lesen", "grund": "Hier ist „lesen“ ein Verb: klein." },
+            { "satz": "Beim ___ bezahlt heute Papa.", "gross": "Essen", "klein": "essen", "loesung": "Essen", "grund": "Nominalisierung nach „beim“ (bei dem)." },
+            { "satz": "Wir wollen jetzt endlich ___.", "gross": "Essen", "klein": "essen", "loesung": "essen", "grund": "Verb nach „wollen“: klein." },
+            { "satz": "Am ___ gehen wir schwimmen.", "gross": "Montag", "klein": "montag", "loesung": "Montag", "grund": "Wochentag als Nomen mit „am“: groß." },
+            { "satz": "Wir treffen uns ___ um acht.", "gross": "Montags", "klein": "montags", "loesung": "montags", "grund": "„montags“ mit -s ist ein Adverb (immer montags): klein." },
+            { "satz": "Die ___ war ihm anzusehen.", "gross": "Freude", "klein": "freude", "loesung": "Freude", "grund": "Nomen mit Artikel „die“: groß." },
+            { "satz": "Er läuft am ___.", "gross": "Schnellsten", "klein": "schnellsten", "loesung": "schnellsten", "grund": "Superlativ mit „am“ (Frage: wie?): klein." },
+            { "satz": "Können ___ mir bitte helfen?", "gross": "Sie", "klein": "sie", "loesung": "Sie", "grund": "Höfliche Anrede: „Sie“ wird immer großgeschrieben." },
+            { "satz": "Das ___ des Lehrers war laut.", "gross": "Lachen", "klein": "lachen", "loesung": "Lachen", "grund": "Nominalisierung: Artikel „das“ und Genitiv „des Lehrers“ sind Nomensignale." },
+            { "satz": "Sie trägt ein ___ Kleid.", "gross": "Rotes", "klein": "rotes", "loesung": "rotes", "grund": "Adjektiv vor einem Nomen: klein." },
+            { "satz": "Alles ___ zum Geburtstag!", "gross": "Gute", "klein": "gute", "loesung": "Gute", "grund": "Nominalisiertes Adjektiv nach „alles“: groß." },
+            { "satz": "Ich habe heute ___ zu tun.", "gross": "Nichts", "klein": "nichts", "loesung": "nichts", "grund": "„nichts“ ist ein Pronomen: klein." },
+            { "satz": "Wir fahren ins ___.", "gross": "Grüne", "klein": "grüne", "loesung": "Grüne", "grund": "Nominalisierung nach „ins“ (in das): groß." },
+            { "satz": "Heute ___ schien die Sonne.", "gross": "Morgen", "klein": "morgen", "loesung": "Morgen", "grund": "Tageszeit nach „heute/gestern“: Nomen, groß (heute Morgen)." },
+            { "satz": "Ich komme ___ bei dir vorbei.", "gross": "Morgen", "klein": "morgen", "loesung": "morgen", "grund": "„morgen“ = am nächsten Tag ist ein Adverb: klein." },
+            { "satz": "Die ___ der Klasse war groß.", "gross": "Aufregung", "klein": "aufregung", "loesung": "Aufregung", "grund": "Suffix -ung zeigt ein Nomen an: groß." },
+            { "satz": "Das ist wirklich ___.", "gross": "Herrlich", "klein": "herrlich", "loesung": "herrlich", "grund": "Suffix -lich zeigt ein Adjektiv an: klein." }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "DE_SUFFIX_MCQ_T1",
+    "subject": "DE",
+    "topicId": "DE_ORTHO_CASE",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Welcher Wortbestandteil (Suffix) entscheidet bei **{{s_wort}}** über groß oder klein?",
+    "payload": { "choices": ["{{s_a}}", "{{s_b}}", "{{s_c}}", "{{s_d}}"] },
+    "solution": { "correct_choice": "{{s_a}}" },
+    "explanation": [
+      { "kind": "what", "body": "**{{s_wort}}**: Suffix **{{s_a}}** → {{s_grund}}" },
+      { "kind": "remember", "body": "**Nomen-Suffixe** (groß): -ung, -keit, -heit, -lein, -chen, -tion, -schaft, -nis, -tum, -ling. **Adjektiv-Suffixe** (klein): -ig, -bar, -isch, -sam, -lich, -haft, -los." }
+    ],
+    "tags": ["gross-klein", "suffix", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 3 (Beispielaufgabe Suffix)",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "s": {
+          "type": "pick",
+          "from": [
+            { "wort": "Leistungen", "a": "-ung", "b": "-en", "c": "-ist", "d": "-lei", "grund": "Nomen, also groß." },
+            { "wort": "gefährlich", "a": "-lich", "b": "-ge", "c": "-fähr", "d": "-ich", "grund": "Adjektiv, also klein." },
+            { "wort": "Krankheiten", "a": "-heit", "b": "-en", "c": "-krank", "d": "-eit", "grund": "Nomen, also groß." },
+            { "wort": "freundlich", "a": "-lich", "b": "-freund", "c": "-ich", "d": "-nd", "grund": "Adjektiv, also klein." },
+            { "wort": "Mannschaft", "a": "-schaft", "b": "-mann", "c": "-aft", "d": "-sch", "grund": "Nomen, also groß." },
+            { "wort": "ehrlich", "a": "-lich", "b": "-ehr", "c": "-ich", "d": "-eh", "grund": "Adjektiv, also klein." },
+            { "wort": "Fröhlichkeit", "a": "-keit", "b": "-lich", "c": "-eit", "d": "-fröh", "grund": "Nomen (das letzte Suffix entscheidet), also groß." },
+            { "wort": "lustig", "a": "-ig", "b": "-lust", "c": "-tig", "d": "-ust", "grund": "Adjektiv, also klein." },
+            { "wort": "Ereignis", "a": "-nis", "b": "-er", "c": "-eig", "d": "-is", "grund": "Nomen, also groß." },
+            { "wort": "trinkbar", "a": "-bar", "b": "-trink", "c": "-ar", "d": "-nk", "grund": "Adjektiv, also klein." },
+            { "wort": "Lehrling", "a": "-ling", "b": "-lehr", "c": "-ing", "d": "-ng", "grund": "Nomen, also groß." },
+            { "wort": "sorglos", "a": "-los", "b": "-sorg", "c": "-os", "d": "-gl", "grund": "Adjektiv, also klein." },
+            { "wort": "Meisterschaft", "a": "-schaft", "b": "-meister", "c": "-aft", "d": "-er", "grund": "Nomen, also groß." },
+            { "wort": "kindisch", "a": "-isch", "b": "-kind", "c": "-sch", "d": "-di", "grund": "Adjektiv, also klein." }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "DE_GETRENNT_ZUSAMMEN_T1",
+    "subject": "DE",
+    "topicId": "DE_ORTHO_SEP_JOIN",
+    "difficulty": 3,
+    "qtype": "CLOZE",
+    "prompt": "Getrennt oder zusammen? Wähle die richtige Schreibweise.",
+    "payload": { "text_with_blanks": "{{s_satz}}", "blanks": [{ "id": 1, "choices": ["{{s_zusammen}}", "{{s_getrennt}}"] }] },
+    "solution": { "answers": { "1": "{{s_loesung}}" } },
+    "explanation": [
+      { "kind": "what", "title": "Die Regel", "body": "{{s_grund}}" },
+      { "kind": "remember", "body": "**Zusammen**: Präposition + Verb (*hingehen, aufstehen*), Nomen + Nomen (*Autobahn*), Adverb + Verb mit Betonung auf dem Adverb (*wiedersehen* = erneut treffen), Nominalisierungen (*beim Essengehen*). **Getrennt**: Verb + Verb (*schwimmen gehen*), Adjektiv + Verb (*laut singen*), Nomen + Verb (*Klavier spielen*), Adverb + Verb mit Betonung auf beiden (*zusammen fahren* = gemeinsam)." }
+    ],
+    "tags": ["getrennt-zusammen", "rechtschreibung", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 3 (Getrennt oder zusammen)",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "s": {
+          "type": "pick",
+          "from": [
+            { "satz": "Ich freue mich, wenn wir uns endlich ___.", "zusammen": "wiedersehen", "getrennt": "wieder sehen", "loesung": "wiedersehen", "grund": "Gemeint ist „erneut treffen“, die Betonung liegt auf „wieder“: zusammen." },
+            { "satz": "Möchtest du mit uns ___?", "zusammen": "zusammenfahren", "getrennt": "zusammen fahren", "loesung": "zusammen fahren", "grund": "Gemeint ist „gemeinsam fahren“, beide Wörter sind betont: getrennt." },
+            { "satz": "Wir gehen heute ___.", "zusammen": "schwimmengehen", "getrennt": "schwimmen gehen", "loesung": "schwimmen gehen", "grund": "Verb + Verb: getrennt." },
+            { "satz": "Er kann sehr gut ___.", "zusammen": "Klavierspielen", "getrennt": "Klavier spielen", "loesung": "Klavier spielen", "grund": "Nomen + Verb: getrennt." },
+            { "satz": "Du sollst nicht so ___.", "zusammen": "lautsingen", "getrennt": "laut singen", "loesung": "laut singen", "grund": "Adjektiv + Verb: getrennt." },
+            { "satz": "Wir müssen jetzt ___.", "zusammen": "hingehen", "getrennt": "hin gehen", "loesung": "hingehen", "grund": "Präposition + Verb: zusammen." },
+            { "satz": "Die ___ war völlig voll.", "zusammen": "Autobahn", "getrennt": "Auto Bahn", "loesung": "Autobahn", "grund": "Nomen + Nomen: zusammen." },
+            { "satz": "Kannst du bitte das Licht ___?", "zusammen": "anmachen", "getrennt": "an machen", "loesung": "anmachen", "grund": "Präposition + Verb: zusammen." },
+            { "satz": "Beim ___ bezahlt immer meine Freundin.", "zusammen": "Essengehen", "getrennt": "Essen gehen", "loesung": "Essengehen", "grund": "Nominalisierung (beim …): zusammen und groß." },
+            { "satz": "Sie wird morgen ___.", "zusammen": "zurückkommen", "getrennt": "zurück kommen", "loesung": "zurückkommen", "grund": "Adverb + Verb, Betonung auf „zurück“: zusammen." },
+            { "satz": "Er will endlich ___.", "zusammen": "aufstehen", "getrennt": "auf stehen", "loesung": "aufstehen", "grund": "Präposition + Verb: zusammen." },
+            { "satz": "Wir wollen heute ___.", "zusammen": "spazierengehen", "getrennt": "spazieren gehen", "loesung": "spazieren gehen", "grund": "Verb + Verb: getrennt." },
+            { "satz": "Sie kann richtig gut ___.", "zusammen": "Fußballspielen", "getrennt": "Fußball spielen", "loesung": "Fußball spielen", "grund": "Nomen + Verb: getrennt." },
+            { "satz": "Der Zug wird gleich ___.", "zusammen": "abfahren", "getrennt": "ab fahren", "loesung": "abfahren", "grund": "Präposition + Verb: zusammen." },
+            { "satz": "Ich möchte das Buch ___.", "zusammen": "fertiglesen", "getrennt": "fertig lesen", "loesung": "fertig lesen", "grund": "Adjektiv + Verb: getrennt." },
+            { "satz": "Das ___ zum Bahnhof dauert zehn Minuten.", "zusammen": "Zufußgehen", "getrennt": "Zu Fuß gehen", "loesung": "Zufußgehen", "grund": "Nominalisierung mit Artikel „das“: zusammen und groß." }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "DE_STRATEGIE_MCQ_T1",
+    "subject": "DE",
+    "topicId": "DE_ORTHO_STRATEGIES",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "**{{s_frage}}**\n\nMit welcher Rechtschreibstrategie findest du die richtige Schreibweise?",
+    "payload": { "choices": ["Verlängern (Plural, Infinitiv oder Komparativ bilden)", "Ableiten (ein verwandtes Wort suchen)", "Silbenprobe (das Wort in Silben zerlegen)", "Dehnungs-h oder Trennungs-h prüfen"] },
+    "solution": { "correct_choice": "{{s_loesung}}" },
+    "explanation": [
+      { "kind": "steps", "title": "So geht die Probe", "body": "{{s_probe}}" },
+      { "kind": "remember", "body": "**Verlängern** bei b/p, d/t, g/k am Wortende. **Ableiten** bei e/ä und eu/äu. **Silbenprobe** bei Doppelkonsonanten (tt, ss, nn …). **h** zur Dehnung vor l, m, n, r oder zur Trennung zweier Vokale." }
+    ],
+    "tags": ["strategie", "rechtschreibung", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 3 (Rechtschreibstrategien)",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "s": {
+          "type": "pick",
+          "from": [
+            { "frage": "Hund: d oder t am Ende?", "loesung": "Verlängern (Plural, Infinitiv oder Komparativ bilden)", "probe": "Plural bilden: Hun**d**e → man hört das d → **Hund**." },
+            { "frage": "Stärke: ä oder e?", "loesung": "Ableiten (ein verwandtes Wort suchen)", "probe": "Verwandtes Wort: st**a**rk → aus a wird ä → **Stärke**." },
+            { "frage": "Betten: t oder tt?", "loesung": "Silbenprobe (das Wort in Silben zerlegen)", "probe": "Silben: Bet-ten → zwei t, weil die erste Silbe mit t endet und die zweite mit t beginnt → **Betten** (anders als be-ten)." },
+            { "frage": "fühlen: mit oder ohne h?", "loesung": "Dehnungs-h oder Trennungs-h prüfen", "probe": "Langes ü vor l → Dehnungs-h → **fühlen**." },
+            { "frage": "klug: g oder k am Ende?", "loesung": "Verlängern (Plural, Infinitiv oder Komparativ bilden)", "probe": "Komparativ bilden: klü**g**er → man hört das g → **klug**." },
+            { "frage": "häufig: äu oder eu?", "loesung": "Ableiten (ein verwandtes Wort suchen)", "probe": "Verwandtes Wort: H**au**fen → aus au wird äu → **häufig**." },
+            { "frage": "Wasser: s oder ss?", "loesung": "Silbenprobe (das Wort in Silben zerlegen)", "probe": "Silben: Was-ser → **ss**." },
+            { "frage": "stehen: mit oder ohne h?", "loesung": "Dehnungs-h oder Trennungs-h prüfen", "probe": "Zwei Vokale treffen aufeinander (e und e) → Trennungs-h → **stehen**." },
+            { "frage": "liebt: b oder p?", "loesung": "Verlängern (Plural, Infinitiv oder Komparativ bilden)", "probe": "Infinitiv bilden: lie**b**en → man hört das b → **liebt**." },
+            { "frage": "Bäume: äu oder eu?", "loesung": "Ableiten (ein verwandtes Wort suchen)", "probe": "Verwandtes Wort: B**au**m → äu → **Bäume**." },
+            { "frage": "kennen: n oder nn?", "loesung": "Silbenprobe (das Wort in Silben zerlegen)", "probe": "Silben: ken-nen → **nn**." },
+            { "frage": "Zahl: mit oder ohne h?", "loesung": "Dehnungs-h oder Trennungs-h prüfen", "probe": "Langes a vor l → Dehnungs-h → **Zahl**." },
+            { "frage": "Berg: g oder k am Ende?", "loesung": "Verlängern (Plural, Infinitiv oder Komparativ bilden)", "probe": "Plural bilden: Ber**g**e → **Berg**." },
+            { "frage": "Wände: ä oder e?", "loesung": "Ableiten (ein verwandtes Wort suchen)", "probe": "Verwandtes Wort: W**a**nd → ä → **Wände**." },
+            { "frage": "Butter: t oder tt?", "loesung": "Silbenprobe (das Wort in Silben zerlegen)", "probe": "Silben: But-ter → **tt**." },
+            { "frage": "Bahn: mit oder ohne h?", "loesung": "Dehnungs-h oder Trennungs-h prüfen", "probe": "Langes a vor n → Dehnungs-h → **Bahn**." }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "DE_SS_SZ_T1",
+    "subject": "DE",
+    "topicId": "DE_ORTHO_SS_SZ",
+    "difficulty": 2,
+    "qtype": "CLOZE",
+    "prompt": "ss oder ß? Wähle an der Lücke.",
+    "payload": { "text_with_blanks": "{{s_wort}}", "blanks": [{ "id": 1, "choices": ["ss", "ß"] }] },
+    "solution": { "answers": { "1": "{{s_loesung}}" } },
+    "explanation": [
+      { "kind": "what", "title": "Die Regel", "body": "{{s_grund}} → **{{s_korrekt}}**" },
+      { "kind": "remember", "body": "Nach **kurzem** Vokal: **ss** (Klasse, Kuss, wissen). Nach **langem** Vokal oder **Doppellaut** (ei, au, eu, ie): **ß** (Straße, heiß, draußen, fließen). Sprich das Wort laut: kurz und knapp → ss, lang gezogen → ß." }
+    ],
+    "tags": ["ss-sz", "rechtschreibung", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 3",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "s": {
+          "type": "pick",
+          "from": [
+            { "wort": "Stra___e", "loesung": "ß", "grund": "Langer Vokal (a)", "korrekt": "Straße" },
+            { "wort": "Kla___e", "loesung": "ss", "grund": "Kurzer Vokal (a)", "korrekt": "Klasse" },
+            { "wort": "Fu___ball", "loesung": "ß", "grund": "Langer Vokal (u)", "korrekt": "Fußball" },
+            { "wort": "Ku___", "loesung": "ss", "grund": "Kurzer Vokal (u)", "korrekt": "Kuss" },
+            { "wort": "grü___en", "loesung": "ß", "grund": "Langer Vokal (ü)", "korrekt": "grüßen" },
+            { "wort": "Schlo___", "loesung": "ss", "grund": "Kurzer Vokal (o)", "korrekt": "Schloss" },
+            { "wort": "hei___", "loesung": "ß", "grund": "Doppellaut (ei)", "korrekt": "heiß" },
+            { "wort": "wi___en", "loesung": "ss", "grund": "Kurzer Vokal (i)", "korrekt": "wissen" },
+            { "wort": "Fü___e", "loesung": "ß", "grund": "Langer Vokal (ü)", "korrekt": "Füße" },
+            { "wort": "mü___en", "loesung": "ss", "grund": "Kurzer Vokal (ü)", "korrekt": "müssen" },
+            { "wort": "Spa___", "loesung": "ß", "grund": "Langer Vokal (a)", "korrekt": "Spaß" },
+            { "wort": "na___", "loesung": "ss", "grund": "Kurzer Vokal (a)", "korrekt": "nass" },
+            { "wort": "bi___chen", "loesung": "ss", "grund": "Kurzer Vokal (i)", "korrekt": "bisschen" },
+            { "wort": "Grö___e", "loesung": "ß", "grund": "Langer Vokal (ö)", "korrekt": "Größe" },
+            { "wort": "flie___en", "loesung": "ß", "grund": "Langer Laut (ie)", "korrekt": "fließen" },
+            { "wort": "e___en", "loesung": "ss", "grund": "Kurzer Vokal (e)", "korrekt": "essen" },
+            { "wort": "drau___en", "loesung": "ß", "grund": "Doppellaut (au)", "korrekt": "draußen" },
+            { "wort": "Fla___", "loesung": "ss", "grund": "Kurzer Vokal (a)", "korrekt": "Fass" }
+          ]
+        }
+      }
+    }
+  }
+]
