@@ -192,6 +192,14 @@ export class SessionController {
     const avoid = new Set(this.asked.slice(-AVOID_RECENT_QUESTIONS));
     let question: Question | undefined;
     if (this.repair) question = nextRepairQuestion(this.cfg.index, this.repair, this.rng, avoid);
+    // Keep the questions of one reading text together: after a passage question, continue with
+    // its unanswered siblings (like the real exam: one text, several tasks).
+    if (!question && this.current?.passage) {
+      const passage = this.current.passage;
+      const asked = new Set(this.asked);
+      const siblings = this.cfg.index.questionsBySubject(this.cfg.subject).filter((q) => q.passage === passage && !asked.has(q.id));
+      if (siblings.length > 0) question = siblings[0];
+    }
     if (!question) question = this.selectNormal(avoid);
     if (!question) {
       this.state = "COMPLETED";

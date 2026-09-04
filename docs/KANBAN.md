@@ -26,6 +26,7 @@ teach → drill (fresh variants) → repeat (mastery + repair), Math first from 
 - E1 · Core port to TS (115 unit tests), persistence
 - E2-1 … E2-3 · Schema v2, validator (schema + semantics + 60-render template exercise + KaTeX + figure rendering), legacy migration with 3 fixes
 - E3-1 … E3-15 · All 16 Training sections of the 2027 e-book: 11 lessons, 139 templated drills, per-question sources
+- E3-23 · **Passages**: shared reading texts (`passages/*.json`, ids `X_…`) rendered once in a collapsible panel above the question, validated (refs, subject, TeX), and kept together in a session: after a passage question the controller continues with its unanswered siblings (unit test `passage.test.ts`). Used by the Voluntourism article (9 static exam questions), the Quebec tours (MATCH + 5 second-tour items) and the training texts (Handys, Der letzte Bus, Screen time)
 - E3-21b · **Deutsch exam 2023**: 26 original items (Sprachwissen 151–156 and 251–256, Richtig schreiben 401–404, Überarbeiten 501–508, 510) with Musterlösung, tagged exam/msa2023
 - E3-22a · **Englisch Prüfungs-Modus**: MSA 2024 Reading Part 1 (Quebec tours: MATCH + 5 second-tour items), Part 2 (6 short texts reconstructed around the key sentences, statements original), Part 3 (Voluntourism article with all 9 questions) tagged exam/msa2024
 - E3-20 · **Primers** Stilmittel, Erörterung (DE) and E-Mail (EN) with badges on their lessons: 22 Eulen-Lektionen in total
@@ -54,7 +55,6 @@ teach → drill (fresh variants) → repeat (mastery + repair), Math first from 
 
 ### Content
 - E3-22 · EN exam 2023 reading tasks (Boston matching, signs, article) · M
-- E3-23 · Passage feature: several exam questions share one long text instead of repeating it · S
 - E3-19 · Optional: exam 2022 (text already extracted in scratch) · S
 
 ### UI

@@ -5,46 +5,236 @@
     "topicId": "EN_READ_MATCHING",
     "difficulty": 3,
     "qtype": "MATCH",
-    "prompt": "**Reading Part 1: What to do in and around Quebec (Canada)**\n\nThese people are looking for something to do. Match each person with the tour that fits their **first** wish.\n\n**Tours**\n\n- **A Historical and food tour**: evening tour, five gourmet stops, one course of your dinner at each; guide explains sights of Old Quebec; alcoholic drinks, minimum age 18.\n- **B Crime walking tour**: 90-minute animated evening walk with ghostly guides through Old Quebec: crimes, arrests, executions of centuries ago; children with parents.\n- **C Ski-shoeing tour**: about five hours of cross-country skiing and snowshoeing in Jacques-Cartier National Park, intense exercise, hot chocolate, wildlife; small group of eight who are not afraid of a true physical challenge.\n- **D Virtual reality tour**: 40-minute 3D movie about the history of Quebec City, then an interactive tablet quiz; fun and entertaining for the whole family.\n- **E Fashion and stylist tour**: shopping tour with a professional stylist, mini style consultation, try on pieces, ask any fashion question.\n- **F Electric fat bike winter tour**: quiet trails, plenty of photo stops, wildlife easier to spot, lunch and a hot drink in a heated tipi; regardless of your fitness level; minivan back to the hotel.\n- **G Blue hour photo tour**: two hours at sunset with a professional photographer who improves your photography skills while you discover beautiful places.",
+    "prompt": "**Reading Part 1.** These people are looking for something to do in and around Quebec. Read the descriptions of the people and the tours (A–G) above. Match each person with the tour that fits their **first** wish.",
     "payload": {
-      "left": ["Frank: travelling alone, wants to be around other athletes, test his limits and explore the wild around the city.", "Ronida: in Quebec with her two teens who love entertainment; wants to learn the history of the city in a playful way and be back for dinner.", "Hei-Lin: into nature and photography, wants to see the Canadian landscape and take great pictures, but is not a sportswoman.", "Agatha: wants a walking tour that combines historical facts with thrilling entertainment and should not take too long.", "Jonathan: wants a tasteful evening in downtown Quebec, new people, nice atmosphere and a few drinks."],
-      "right": ["C Ski-shoeing tour", "D Virtual reality tour", "F Electric fat bike winter tour", "B Crime walking tour", "A Historical and food tour"]
+      "left": [
+        "Frank: travelling alone, wants to be around other athletes, test his limits and explore the wild around the city.",
+        "Ronida: in Quebec with her two teens who love entertainment; wants to learn the history of the city in a playful way and be back for dinner.",
+        "Hei-Lin: into nature and photography, wants to see the Canadian landscape and take great pictures, but is not a sportswoman.",
+        "Agatha: wants a walking tour that combines historical facts with thrilling entertainment and should not take too long.",
+        "Jonathan: wants a tasteful evening in downtown Quebec, new people, nice atmosphere and a few drinks."
+      ],
+      "right": [
+        "C Ski-shoeing tour",
+        "D Virtual reality tour",
+        "F Electric fat bike winter tour",
+        "B Crime walking tour",
+        "A Historical and food tour"
+      ]
     },
-    "solution": { "pairs": [["Frank: travelling alone, wants to be around other athletes, test his limits and explore the wild around the city.", "C Ski-shoeing tour"], ["Ronida: in Quebec with her two teens who love entertainment; wants to learn the history of the city in a playful way and be back for dinner.", "D Virtual reality tour"], ["Hei-Lin: into nature and photography, wants to see the Canadian landscape and take great pictures, but is not a sportswoman.", "F Electric fat bike winter tour"], ["Agatha: wants a walking tour that combines historical facts with thrilling entertainment and should not take too long.", "B Crime walking tour"], ["Jonathan: wants a tasteful evening in downtown Quebec, new people, nice atmosphere and a few drinks.", "A Historical and food tour"]] },
+    "solution": {
+      "pairs": [
+        [
+          "Frank: travelling alone, wants to be around other athletes, test his limits and explore the wild around the city.",
+          "C Ski-shoeing tour"
+        ],
+        [
+          "Ronida: in Quebec with her two teens who love entertainment; wants to learn the history of the city in a playful way and be back for dinner.",
+          "D Virtual reality tour"
+        ],
+        [
+          "Hei-Lin: into nature and photography, wants to see the Canadian landscape and take great pictures, but is not a sportswoman.",
+          "F Electric fat bike winter tour"
+        ],
+        [
+          "Agatha: wants a walking tour that combines historical facts with thrilling entertainment and should not take too long.",
+          "B Crime walking tour"
+        ],
+        [
+          "Jonathan: wants a tasteful evening in downtown Quebec, new people, nice atmosphere and a few drinks.",
+          "A Historical and food tour"
+        ]
+      ]
+    },
     "explanation": [
-      { "kind": "steps", "title": "Schlüsselwörter", "body": "- Frank: *athletes, test his limits, the wild* → C: *intense exercise, true physical challenge, wildlife*\n- Ronida: *history, playful approach, back for dinner* → D: *live history, interactive, fun for the whole family*\n- Hei-Lin: *nature, photography, not a sportswoman* → F: *photo stops, wildlife, regardless of your fitness level*\n- Agatha: *historical facts, thrilling, shouldn't take too long* → B: *90-minute crime walking tour*\n- Jonathan: *evening, nice atmosphere, drinks* → A: *evening tour, top restaurants, alcoholic drinks*" },
-      { "kind": "remember", "body": "Markiere in jeder Personenbeschreibung die Schlüsselwörter und suche sie in den Touren wieder. Jede Person bekommt in der Prüfung **zwei** Touren (siehe Teil 2)." }
+      {
+        "kind": "steps",
+        "title": "Schlüsselwörter",
+        "body": "- Frank: *athletes, test his limits, the wild* → C: *intense exercise, true physical challenge, wildlife*\n- Ronida: *history, playful approach, back for dinner* → D: *live history, interactive, fun for the whole family*\n- Hei-Lin: *nature, photography, not a sportswoman* → F: *photo stops, wildlife, regardless of your fitness level*\n- Agatha: *historical facts, thrilling, shouldn't take too long* → B: *90-minute crime walking tour*\n- Jonathan: *evening, nice atmosphere, drinks* → A: *evening tour, top restaurants, alcoholic drinks*"
+      },
+      {
+        "kind": "remember",
+        "body": "Markiere in jeder Personenbeschreibung die Schlüsselwörter und suche sie in den Touren wieder. Jede Person bekommt in der Prüfung **zwei** Touren (siehe Teil 2)."
+      }
     ],
-    "tags": ["exam", "msa2024", "reading", "matching"],
-    "source": "MSA Berlin 2024 Englisch, Reading Part 1 (Nr. 1, 3, 5, 7, 9), Texte gekürzt"
+    "tags": [
+      "exam",
+      "msa2024",
+      "reading",
+      "matching"
+    ],
+    "source": "MSA Berlin 2024 Englisch, Reading Part 1 (Nr. 1, 3, 5, 7, 9), Texte gekürzt",
+    "passage": "X_EN_MSA2024_QUEBEC"
   },
   {
-    "id": "EN_MSA2024_R1_TOUR2_T1",
+    "id": "EN_MSA2024_R1_02",
     "subject": "EN",
     "topicId": "EN_READ_MATCHING",
     "difficulty": 3,
     "qtype": "MCQ",
-    "prompt": "**Reading Part 1: Quebec.** Each person takes a **second** tour. Which one?\n\n**{{s_person}}**\n\nTours: A Historical and food tour (evening, gourmet stops, drinks, 18+) · B Crime walking tour (90 min, history and thrills) · C Ski-shoeing (five hours, hard exercise) · D Virtual reality tour (history, whole family) · E Fashion and stylist tour (stylist, style consultation, try on pieces) · F Electric fat bike winter tour (photo stops, wildlife, hot drink, any fitness level) · G Blue hour photo tour (photographer improves your skills)",
-    "payload": { "choices": ["{{s_a}}", "{{s_b}}", "{{s_c}}", "{{s_d}}"] },
-    "solution": { "correct_choice": "{{s_a}}" },
-    "explanation": [{ "kind": "steps", "title": "Schlüsselwörter", "body": "{{s_grund}}" }],
-    "tags": ["exam", "msa2024", "reading", "matching"],
-    "source": "MSA Berlin 2024 Englisch, Reading Part 1 (Nr. 2, 4, 6, 8, 10), Texte gekürzt",
-    "variants": {
-      "enabled": true,
-      "variables": {
-        "s": {
-          "type": "pick",
-          "from": [
-            { "person": "Frank posts pictures of his experiences in his fashion and travel blog. Maybe he should also choose a tour that polishes up his knowledge on how to take nicer pictures.", "a": "G Blue hour photo tour", "b": "E Fashion and stylist tour", "c": "D Virtual reality tour", "d": "A Historical and food tour", "grund": "*how to take nicer pictures* → G: *advise you on your photography skills, make you a better photographer*." },
-            { "person": "Ronida and her teens love recreational activities in nature. As long as the kids have their hot beverage, they are out in the woods and the trip is not too tough, they are up for it.", "a": "F Electric fat bike winter tour", "b": "C Ski-shoeing tour", "c": "G Blue hour photo tour", "d": "B Crime walking tour", "grund": "*nature, hot beverage, not too tough* → F: *wildlife, lunch and a hot drink, regardless of your fitness level*. C wäre zu anstrengend." },
-            { "person": "After a tour in the woods, Hei-Lin would like to taste the flavors of Quebec City, preferably in a high-class environment.", "a": "A Historical and food tour", "b": "E Fashion and stylist tour", "c": "D Virtual reality tour", "d": "B Crime walking tour", "grund": "*taste the flavors, high-class* → A: *top restaurants, five gourmet stops*." },
-            { "person": "Agatha has the feeling that the way people dress tells you more about a place than anything else. A tour with an expert in this field could teach her a lot, and maybe she gets some input for her own wardrobe.", "a": "E Fashion and stylist tour", "b": "G Blue hour photo tour", "c": "A Historical and food tour", "d": "D Virtual reality tour", "grund": "*the way people dress, expert, her own wardrobe* → E: *professional stylist, style consultation*." },
-            { "person": "Jonathan's evening is hardly possible without the proper outfit. Someone who could advise him what to wear that night would be pretty useful.", "a": "E Fashion and stylist tour", "b": "A Historical and food tour", "c": "G Blue hour photo tour", "d": "F Electric fat bike winter tour", "grund": "*proper outfit, advise him what to wear* → E: *stylist pulls pieces for you, recommendations*. Eine Tour kann mehrfach passen." }
-          ]
-        }
+    "passage": "X_EN_MSA2024_QUEBEC",
+    "prompt": "**Reading Part 1, Nr. 2.** Each person takes a **second** tour (see the tours A–G above). Which one fits?\n\n**Frank posts pictures of his experiences in his fashion and travel blog. Maybe he should also choose a tour that polishes up his knowledge on how to take nicer pictures.**",
+    "payload": {
+      "choices": [
+        "G Blue hour photo tour",
+        "E Fashion and stylist tour",
+        "D Virtual reality tour",
+        "A Historical and food tour"
+      ]
+    },
+    "solution": {
+      "correct_choice": "G Blue hour photo tour"
+    },
+    "explanation": [
+      {
+        "kind": "steps",
+        "title": "Schlüsselwörter",
+        "body": "*how to take nicer pictures* → G: *advise you on your photography skills, make you a better photographer*."
       }
-    }
+    ],
+    "tags": [
+      "exam",
+      "msa2024",
+      "reading",
+      "matching"
+    ],
+    "source": "MSA Berlin 2024 Englisch, Reading Part 1, Nr. 2"
+  },
+  {
+    "id": "EN_MSA2024_R1_04",
+    "subject": "EN",
+    "topicId": "EN_READ_MATCHING",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "passage": "X_EN_MSA2024_QUEBEC",
+    "prompt": "**Reading Part 1, Nr. 4.** Each person takes a **second** tour (see the tours A–G above). Which one fits?\n\n**Ronida and her teens love recreational activities in nature. As long as the kids have their hot beverage, they are out in the woods and the trip is not too tough, they are up for it.**",
+    "payload": {
+      "choices": [
+        "F Electric fat bike winter tour",
+        "C Ski-shoeing tour",
+        "G Blue hour photo tour",
+        "B Crime walking tour"
+      ]
+    },
+    "solution": {
+      "correct_choice": "F Electric fat bike winter tour"
+    },
+    "explanation": [
+      {
+        "kind": "steps",
+        "title": "Schlüsselwörter",
+        "body": "*nature, hot beverage, not too tough* → F: *wildlife, lunch and a hot drink, regardless of your fitness level*. C wäre zu anstrengend."
+      }
+    ],
+    "tags": [
+      "exam",
+      "msa2024",
+      "reading",
+      "matching"
+    ],
+    "source": "MSA Berlin 2024 Englisch, Reading Part 1, Nr. 4"
+  },
+  {
+    "id": "EN_MSA2024_R1_06",
+    "subject": "EN",
+    "topicId": "EN_READ_MATCHING",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "passage": "X_EN_MSA2024_QUEBEC",
+    "prompt": "**Reading Part 1, Nr. 6.** Each person takes a **second** tour (see the tours A–G above). Which one fits?\n\n**After a tour in the woods, Hei-Lin would like to taste the flavors of Quebec City, preferably in a high-class environment.**",
+    "payload": {
+      "choices": [
+        "A Historical and food tour",
+        "E Fashion and stylist tour",
+        "D Virtual reality tour",
+        "B Crime walking tour"
+      ]
+    },
+    "solution": {
+      "correct_choice": "A Historical and food tour"
+    },
+    "explanation": [
+      {
+        "kind": "steps",
+        "title": "Schlüsselwörter",
+        "body": "*taste the flavors, high-class* → A: *top restaurants, five gourmet stops*."
+      }
+    ],
+    "tags": [
+      "exam",
+      "msa2024",
+      "reading",
+      "matching"
+    ],
+    "source": "MSA Berlin 2024 Englisch, Reading Part 1, Nr. 6"
+  },
+  {
+    "id": "EN_MSA2024_R1_08",
+    "subject": "EN",
+    "topicId": "EN_READ_MATCHING",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "passage": "X_EN_MSA2024_QUEBEC",
+    "prompt": "**Reading Part 1, Nr. 8.** Each person takes a **second** tour (see the tours A–G above). Which one fits?\n\n**Agatha has the feeling that the way people dress tells you more about a place than anything else. A tour with an expert in this field could teach her a lot, and maybe she gets some input for her own wardrobe.**",
+    "payload": {
+      "choices": [
+        "E Fashion and stylist tour",
+        "G Blue hour photo tour",
+        "A Historical and food tour",
+        "D Virtual reality tour"
+      ]
+    },
+    "solution": {
+      "correct_choice": "E Fashion and stylist tour"
+    },
+    "explanation": [
+      {
+        "kind": "steps",
+        "title": "Schlüsselwörter",
+        "body": "*the way people dress, expert, her own wardrobe* → E: *professional stylist, style consultation*."
+      }
+    ],
+    "tags": [
+      "exam",
+      "msa2024",
+      "reading",
+      "matching"
+    ],
+    "source": "MSA Berlin 2024 Englisch, Reading Part 1, Nr. 8"
+  },
+  {
+    "id": "EN_MSA2024_R1_10",
+    "subject": "EN",
+    "topicId": "EN_READ_MATCHING",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "passage": "X_EN_MSA2024_QUEBEC",
+    "prompt": "**Reading Part 1, Nr. 10.** Each person takes a **second** tour (see the tours A–G above). Which one fits?\n\n**Jonathan's evening is hardly possible without the proper outfit. Someone who could advise him what to wear that night would be pretty useful.**",
+    "payload": {
+      "choices": [
+        "E Fashion and stylist tour",
+        "A Historical and food tour",
+        "G Blue hour photo tour",
+        "F Electric fat bike winter tour"
+      ]
+    },
+    "solution": {
+      "correct_choice": "E Fashion and stylist tour"
+    },
+    "explanation": [
+      {
+        "kind": "steps",
+        "title": "Schlüsselwörter",
+        "body": "*proper outfit, advise him what to wear* → E: *stylist pulls pieces for you, recommendations*. Eine Tour kann mehrfach passen."
+      }
+    ],
+    "tags": [
+      "exam",
+      "msa2024",
+      "reading",
+      "matching"
+    ],
+    "source": "MSA Berlin 2024 Englisch, Reading Part 1, Nr. 10"
   },
   {
     "id": "EN_MSA2024_R2_T1",
@@ -53,10 +243,30 @@
     "difficulty": 3,
     "qtype": "MCQ",
     "prompt": "**Reading Part 2: Short texts.** What does the text say? There is only one correct statement.\n\n*{{s_text}}*\n\n**{{s_frage}}**",
-    "payload": { "choices": ["{{s_a}}", "{{s_b}}", "{{s_c}}", "{{s_d}}"] },
-    "solution": { "correct_choice": "{{s_a}}" },
-    "explanation": [{ "kind": "what", "title": "Schlüsselstelle", "body": "{{s_grund}}" }],
-    "tags": ["exam", "msa2024", "reading", "signs"],
+    "payload": {
+      "choices": [
+        "{{s_a}}",
+        "{{s_b}}",
+        "{{s_c}}",
+        "{{s_d}}"
+      ]
+    },
+    "solution": {
+      "correct_choice": "{{s_a}}"
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "Schlüsselstelle",
+        "body": "{{s_grund}}"
+      }
+    ],
+    "tags": [
+      "exam",
+      "msa2024",
+      "reading",
+      "signs"
+    ],
     "source": "MSA Berlin 2024 Englisch, Reading Part 2 (Nr. 11–16); Aussagen original, Kurztexte sinngemäß um die Schlüsselstellen rekonstruiert",
     "variants": {
       "enabled": true,
@@ -64,12 +274,60 @@
         "s": {
           "type": "pick",
           "from": [
-            { "text": "Hull Trains, passenger information: Please note that on-board catering is not available with standard class seats. First-class passengers may order from the menu at their seat.", "frage": "Hull Trains informs passengers that …", "a": "refreshments are not available for everyone on board.", "b": "they have a new menu for their first-class passengers.", "c": "meals need to be pre-ordered at the station.", "d": "they get a free coffee when upgrading their ticket.", "grund": "*on-board catering is not available with standard class seats* → nicht jeder bekommt etwas." },
-            { "text": "Note on an office door: Back in 10 minutes. Or 20. Honestly, I have the time management skills of a carrot.", "frage": "The person who wrote this note …", "a": "is struggling to organize themselves.", "b": "is asking for help with their work.", "c": "will be back in their office after lunch.", "d": "is complaining about their boss.", "grund": "*the time management skills of a carrot* = kann sich selbst schlecht organisieren (selbstironisch)." },
-            { "text": "Letter to the editor: I was offended and disappointed by the comment made at the Chesterland 4th of July parade that the girls should leave the flag carrying to the Boy Scouts. I found this comment very sexist and patronizing. – Julianne Speyer", "frage": "Julianne Speyer …", "a": "is complaining about a discriminatory statement made at the parade.", "b": "is expressing concerns about the lack of interest in the parade.", "c": "is criticizing the Boy Scouts' behaviour at the parade.", "d": "is making suggestions how to improve the next parade.", "grund": "*offended and disappointed, very sexist and patronizing* → Beschwerde über eine diskriminierende Aussage." },
-            { "text": "E-mail: Thank you for registering for our summer course. Please submit your details (full name, date of birth, address) by Friday so that we can complete your enrolment. The course fee will be invoiced after enrolment.", "frage": "The person who has received this email is asked to …", "a": "provide necessary information.", "b": "take an entrance test on Friday.", "c": "come in for an interview.", "d": "pay the course fee as soon as possible.", "grund": "*Please submit your details* → Informationen liefern. Die Gebühr kommt erst später." },
-            { "text": "Note on a windscreen: You parked so close that I had to climb in through the passenger door. Please be more considerate when you park. Thanks.", "frage": "The person who wrote this note …", "a": "is asking someone to park more carefully.", "b": "is complaining about irresponsible driving.", "c": "is apologizing for scratching someone's car.", "d": "is offering their parking spot for rent.", "grund": "*Please be more considerate when you park* → Bitte, rücksichtsvoller zu parken." },
-            { "text": "News item: After fleeing Syria together, Rana and her son Karim learnt English in Britain and are now both studying biomedical science at Nottingham Trent University, sometimes even in the same lab.", "frage": "Mother and son …", "a": "are fellow students.", "b": "were separated while fleeing from Syria.", "c": "learnt English before moving to Britain.", "d": "started their own chemical lab.", "grund": "*are both studying biomedical science at Nottingham Trent* → sie studieren zusammen." }
+            {
+              "text": "Hull Trains, passenger information: Please note that on-board catering is not available with standard class seats. First-class passengers may order from the menu at their seat.",
+              "frage": "Hull Trains informs passengers that …",
+              "a": "refreshments are not available for everyone on board.",
+              "b": "they have a new menu for their first-class passengers.",
+              "c": "meals need to be pre-ordered at the station.",
+              "d": "they get a free coffee when upgrading their ticket.",
+              "grund": "*on-board catering is not available with standard class seats* → nicht jeder bekommt etwas."
+            },
+            {
+              "text": "Note on an office door: Back in 10 minutes. Or 20. Honestly, I have the time management skills of a carrot.",
+              "frage": "The person who wrote this note …",
+              "a": "is struggling to organize themselves.",
+              "b": "is asking for help with their work.",
+              "c": "will be back in their office after lunch.",
+              "d": "is complaining about their boss.",
+              "grund": "*the time management skills of a carrot* = kann sich selbst schlecht organisieren (selbstironisch)."
+            },
+            {
+              "text": "Letter to the editor: I was offended and disappointed by the comment made at the Chesterland 4th of July parade that the girls should leave the flag carrying to the Boy Scouts. I found this comment very sexist and patronizing. – Julianne Speyer",
+              "frage": "Julianne Speyer …",
+              "a": "is complaining about a discriminatory statement made at the parade.",
+              "b": "is expressing concerns about the lack of interest in the parade.",
+              "c": "is criticizing the Boy Scouts' behaviour at the parade.",
+              "d": "is making suggestions how to improve the next parade.",
+              "grund": "*offended and disappointed, very sexist and patronizing* → Beschwerde über eine diskriminierende Aussage."
+            },
+            {
+              "text": "E-mail: Thank you for registering for our summer course. Please submit your details (full name, date of birth, address) by Friday so that we can complete your enrolment. The course fee will be invoiced after enrolment.",
+              "frage": "The person who has received this email is asked to …",
+              "a": "provide necessary information.",
+              "b": "take an entrance test on Friday.",
+              "c": "come in for an interview.",
+              "d": "pay the course fee as soon as possible.",
+              "grund": "*Please submit your details* → Informationen liefern. Die Gebühr kommt erst später."
+            },
+            {
+              "text": "Note on a windscreen: You parked so close that I had to climb in through the passenger door. Please be more considerate when you park. Thanks.",
+              "frage": "The person who wrote this note …",
+              "a": "is asking someone to park more carefully.",
+              "b": "is complaining about irresponsible driving.",
+              "c": "is apologizing for scratching someone's car.",
+              "d": "is offering their parking spot for rent.",
+              "grund": "*Please be more considerate when you park* → Bitte, rücksichtsvoller zu parken."
+            },
+            {
+              "text": "News item: After fleeing Syria together, Rana and her son Karim learnt English in Britain and are now both studying biomedical science at Nottingham Trent University, sometimes even in the same lab.",
+              "frage": "Mother and son …",
+              "a": "are fellow students.",
+              "b": "were separated while fleeing from Syria.",
+              "c": "learnt English before moving to Britain.",
+              "d": "started their own chemical lab.",
+              "grund": "*are both studying biomedical science at Nottingham Trent* → sie studieren zusammen."
+            }
           ]
         }
       }

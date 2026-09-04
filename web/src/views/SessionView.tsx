@@ -99,6 +99,7 @@ export function SessionView() {
   }, [mode]);
 
   const topic = useMemo(() => (question && content ? content.topicById(question.topicId) : undefined), [question, content]);
+  const passage = useMemo(() => (question?.passage && content ? content.passageById(question.passage) : undefined), [question, content]);
   const lesson = useMemo(() => (question && content ? content.lessonFor(question.topicId) : undefined), [question, content]);
   // Proactive Ferdinand: after two wrong answers in a row on this topic, offer the primer right in the feedback.
   const owlPrimer = useMemo(() => {
@@ -171,6 +172,13 @@ export function SessionView() {
           {question.source && <span className="text-xs text-ink-3">{question.source}</span>}
           {noCalc && <Chip tone="yellow">🚫🧮 ohne Taschenrechner</Chip>}
         </div>
+        {passage && (
+          <details open className="mb-3 rounded-2xl border border-line bg-surface px-4 py-3">
+            <summary className="cursor-pointer select-none text-sm font-bold uppercase tracking-wide text-ink-2">📄 {passage.title}</summary>
+            <MathText text={passage.body} className="mt-2 text-[1.02rem] leading-relaxed" />
+            {passage.source && <p className="mt-2 text-xs text-ink-3">{passage.source}</p>}
+          </details>
+        )}
         <div className="card-solid p-5 sm:p-7">
           <MathText text={question.prompt} className="text-xl leading-relaxed sm:text-2xl" />
           {question.figure && <div className="mt-4 flex justify-center [&_svg]:max-w-full [&_svg]:h-auto" dangerouslySetInnerHTML={{ __html: question.figure }} />}

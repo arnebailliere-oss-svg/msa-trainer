@@ -5,15 +5,36 @@
     "topicId": "DE_READ_CORE",
     "difficulty": 2,
     "qtype": "MCQ",
-    "prompt": "**Handys im Unterricht?**\n\n(1) Seit einem Jahr gilt an der Gesamtschule Nord ein neues Prinzip: Handys bleiben im Unterricht in der Tasche, dürfen aber in den Pausen benutzt werden. (2) Schulleiterin Karin Voss zieht eine gemischte Bilanz. (3) „Die Schülerinnen und Schüler sind im Unterricht deutlich konzentrierter“, sagt sie. (4) „In den Pausen sitzen aber viele allein über ihrem Bildschirm, statt miteinander zu reden.“ (5) Eine Umfrage des Schülerrats zeigt: 62 Prozent finden die Regel gut, 28 Prozent lehnen sie ab. (6) Der Rest hat keine Meinung. (7) Voss will im nächsten Schuljahr eine handyfreie Pause pro Tag testen.\n\nAussage: **Die Handys dürfen an der Gesamtschule Nord gar nicht benutzt werden.**",
-    "payload": { "choices": ["richtig", "falsch", "steht nicht im Text"], "shuffle": false },
-    "solution": { "correct_choice": "falsch" },
+    "prompt": "Aussage: **Die Handys dürfen an der Gesamtschule Nord gar nicht benutzt werden.**",
+    "payload": {
+      "choices": [
+        "richtig",
+        "falsch",
+        "steht nicht im Text"
+      ],
+      "shuffle": false
+    },
+    "solution": {
+      "correct_choice": "falsch"
+    },
     "explanation": [
-      { "kind": "what", "title": "Beleg", "body": "Satz 1: „… dürfen aber in den Pausen benutzt werden.“ Die Handys sind nur **im Unterricht** verboten." },
-      { "kind": "remember", "body": "Bei richtig/falsch-Aufgaben: **Signalwörter** der Aussage im Text suchen (hier: *Handys, benutzt*) und die Stelle genau lesen. Ein Wort wie *gar nicht* oder *immer* entscheidet oft." }
+      {
+        "kind": "what",
+        "title": "Beleg",
+        "body": "Satz 1: „… dürfen aber in den Pausen benutzt werden.“ Die Handys sind nur **im Unterricht** verboten."
+      },
+      {
+        "kind": "remember",
+        "body": "Bei richtig/falsch-Aufgaben: **Signalwörter** der Aussage im Text suchen (hier: *Handys, benutzt*) und die Stelle genau lesen. Ein Wort wie *gar nicht* oder *immer* entscheidet oft."
+      }
     ],
-    "tags": ["lesen", "sachtext", "richtig-falsch"],
-    "source": "Eigener Übungstext nach dem Aufgabenformat MSA Deutsch (Textverständnis, richtig/falsch)"
+    "tags": [
+      "lesen",
+      "sachtext",
+      "richtig-falsch"
+    ],
+    "source": "Eigener Übungstext nach dem Aufgabenformat MSA Deutsch (Textverständnis, richtig/falsch)",
+    "passage": "X_DE_HANDYS"
   },
   {
     "id": "DE_LESEN_SACHTEXT_1B",
@@ -21,15 +42,36 @@
     "topicId": "DE_READ_EVIDENCE",
     "difficulty": 2,
     "qtype": "MCQ",
-    "prompt": "**Handys im Unterricht?** (Text siehe oben: Gesamtschule Nord, Schulleiterin Voss, Umfrage des Schülerrats)\n\nAussage: **Die Mehrheit der Schülerinnen und Schüler findet die Regel gut.**\n\nWelche Textstelle belegt deine Entscheidung?",
-    "payload": { "choices": ["Satz 5: „62 Prozent finden die Regel gut“ → richtig", "Satz 4: „viele sitzen allein über ihrem Bildschirm“ → falsch", "Satz 7: „eine handyfreie Pause pro Tag testen“ → richtig", "Satz 2: „gemischte Bilanz“ → falsch"], "shuffle": false },
-    "solution": { "correct_choice": "Satz 5: „62 Prozent finden die Regel gut“ → richtig" },
+    "prompt": "Aussage: **Die Mehrheit der Schülerinnen und Schüler findet die Regel gut.**\n\nWelche Textstelle belegt deine Entscheidung?",
+    "payload": {
+      "choices": [
+        "Satz 5: „62 Prozent finden die Regel gut“ → richtig",
+        "Satz 4: „viele sitzen allein über ihrem Bildschirm“ → falsch",
+        "Satz 7: „eine handyfreie Pause pro Tag testen“ → richtig",
+        "Satz 2: „gemischte Bilanz“ → falsch"
+      ],
+      "shuffle": false
+    },
+    "solution": {
+      "correct_choice": "Satz 5: „62 Prozent finden die Regel gut“ → richtig"
+    },
     "explanation": [
-      { "kind": "what", "title": "Beleg", "body": "62 Prozent sind mehr als die Hälfte, also die Mehrheit. Der Beleg muss die **Aussage selbst** stützen, nicht nur zum Thema passen." },
-      { "kind": "remember", "body": "In der Prüfung gibst du Belege mit **Zeilen- oder Satzangabe** an: „Z. 5“ oder „(Satz 5)“. Zitiere wörtlich und in Anführungszeichen." }
+      {
+        "kind": "what",
+        "title": "Beleg",
+        "body": "62 Prozent sind mehr als die Hälfte, also die Mehrheit. Der Beleg muss die **Aussage selbst** stützen, nicht nur zum Thema passen."
+      },
+      {
+        "kind": "remember",
+        "body": "In der Prüfung gibst du Belege mit **Zeilen- oder Satzangabe** an: „Z. 5“ oder „(Satz 5)“. Zitiere wörtlich und in Anführungszeichen."
+      }
     ],
-    "tags": ["lesen", "beleg"],
-    "source": "Eigener Übungstext nach dem Aufgabenformat MSA Deutsch"
+    "tags": [
+      "lesen",
+      "beleg"
+    ],
+    "source": "Eigener Übungstext nach dem Aufgabenformat MSA Deutsch",
+    "passage": "X_DE_HANDYS"
   },
   {
     "id": "DE_LESEN_SACHTEXT_1C",
@@ -37,15 +79,35 @@
     "topicId": "DE_READ_CORE",
     "difficulty": 3,
     "qtype": "MCQ",
-    "prompt": "**Handys im Unterricht?** (Text siehe oben)\n\nAussage: **Frau Voss möchte das Handyverbot auf den ganzen Schultag ausweiten.**",
-    "payload": { "choices": ["richtig", "falsch", "steht nicht im Text"], "shuffle": false },
-    "solution": { "correct_choice": "falsch" },
+    "prompt": "Aussage: **Frau Voss möchte das Handyverbot auf den ganzen Schultag ausweiten.**",
+    "payload": {
+      "choices": [
+        "richtig",
+        "falsch",
+        "steht nicht im Text"
+      ],
+      "shuffle": false
+    },
+    "solution": {
+      "correct_choice": "falsch"
+    },
     "explanation": [
-      { "kind": "what", "title": "Beleg", "body": "Satz 7: Sie will **eine** handyfreie Pause pro Tag testen, nicht den ganzen Tag. Die Aussage übertreibt." },
-      { "kind": "mistake", "body": "Typische Falle: Die Aussage enthält ein Wort aus dem Text (*handyfrei*), aber der **Umfang** stimmt nicht (*eine Pause* ≠ *ganzer Schultag*)." }
+      {
+        "kind": "what",
+        "title": "Beleg",
+        "body": "Satz 7: Sie will **eine** handyfreie Pause pro Tag testen, nicht den ganzen Tag. Die Aussage übertreibt."
+      },
+      {
+        "kind": "mistake",
+        "body": "Typische Falle: Die Aussage enthält ein Wort aus dem Text (*handyfrei*), aber der **Umfang** stimmt nicht (*eine Pause* ≠ *ganzer Schultag*)."
+      }
     ],
-    "tags": ["lesen", "richtig-falsch"],
-    "source": "Eigener Übungstext nach dem Aufgabenformat MSA Deutsch"
+    "tags": [
+      "lesen",
+      "richtig-falsch"
+    ],
+    "source": "Eigener Übungstext nach dem Aufgabenformat MSA Deutsch",
+    "passage": "X_DE_HANDYS"
   },
   {
     "id": "DE_LESEN_SACHTEXT_1D",
@@ -53,15 +115,35 @@
     "topicId": "DE_READ_CORE",
     "difficulty": 3,
     "qtype": "MCQ",
-    "prompt": "**Handys im Unterricht?** (Text siehe oben)\n\nWas ist die **Kernaussage** des Textes?",
-    "payload": { "choices": ["Die Handyregel hat Vorteile im Unterricht, aber Nachteile in den Pausen.", "Handys sollten an Schulen komplett verboten werden.", "Die meisten Schüler sind gegen die Regel.", "Frau Voss ist gegen Handys."] },
-    "solution": { "correct_choice": "Die Handyregel hat Vorteile im Unterricht, aber Nachteile in den Pausen." },
+    "prompt": "Was ist die **Kernaussage** des Textes?",
+    "payload": {
+      "choices": [
+        "Die Handyregel hat Vorteile im Unterricht, aber Nachteile in den Pausen.",
+        "Handys sollten an Schulen komplett verboten werden.",
+        "Die meisten Schüler sind gegen die Regel.",
+        "Frau Voss ist gegen Handys."
+      ]
+    },
+    "solution": {
+      "correct_choice": "Die Handyregel hat Vorteile im Unterricht, aber Nachteile in den Pausen."
+    },
     "explanation": [
-      { "kind": "what", "title": "Kernaussage", "body": "Die Kernaussage fasst den **ganzen Text** zusammen: „gemischte Bilanz“ (Satz 2), konzentrierter im Unterricht (Satz 3), allein am Bildschirm in den Pausen (Satz 4). Die anderen Antworten passen nur zu einem Satz oder widersprechen dem Text." },
-      { "kind": "remember", "body": "Kernaussage = Was will der Text **insgesamt** sagen? Suche das Wort, das alles zusammenhält (hier: *gemischte Bilanz*)." }
+      {
+        "kind": "what",
+        "title": "Kernaussage",
+        "body": "Die Kernaussage fasst den **ganzen Text** zusammen: „gemischte Bilanz“ (Satz 2), konzentrierter im Unterricht (Satz 3), allein am Bildschirm in den Pausen (Satz 4). Die anderen Antworten passen nur zu einem Satz oder widersprechen dem Text."
+      },
+      {
+        "kind": "remember",
+        "body": "Kernaussage = Was will der Text **insgesamt** sagen? Suche das Wort, das alles zusammenhält (hier: *gemischte Bilanz*)."
+      }
     ],
-    "tags": ["lesen", "kernaussage"],
-    "source": "Eigener Übungstext nach dem Aufgabenformat MSA Deutsch"
+    "tags": [
+      "lesen",
+      "kernaussage"
+    ],
+    "source": "Eigener Übungstext nach dem Aufgabenformat MSA Deutsch",
+    "passage": "X_DE_HANDYS"
   },
   {
     "id": "DE_LESEN_LITERARISCH_2A",
@@ -69,15 +151,36 @@
     "topicId": "DE_READ_CORE",
     "difficulty": 2,
     "qtype": "MCQ",
-    "prompt": "**Der letzte Bus**\n\n(1) Mara stand an der Haltestelle und sah auf die Anzeige: „Linie 12, 23:40“. (2) Es war 23:38. (3) Hinter ihr lachte eine Gruppe, die von der Party kam, aber Mara hörte nur ihr eigenes Herz. (4) Sie hatte ihrer Mutter versprochen, um Mitternacht zu Hause zu sein. (5) Als die Scheinwerfer um die Ecke bogen, atmete sie aus, als hätte sie eine Stunde die Luft angehalten. (6) Erst im Bus merkte sie, dass sie ihre Jacke auf der Party vergessen hatte. (7) Sie lachte kurz und leise. (8) Hauptsache, sie war drin.\n\nAussage: **Mara ist nervös, weil sie den Bus verpassen könnte.**",
-    "payload": { "choices": ["richtig", "falsch", "steht nicht im Text"], "shuffle": false },
-    "solution": { "correct_choice": "richtig" },
+    "prompt": "Aussage: **Mara ist nervös, weil sie den Bus verpassen könnte.**",
+    "payload": {
+      "choices": [
+        "richtig",
+        "falsch",
+        "steht nicht im Text"
+      ],
+      "shuffle": false
+    },
+    "solution": {
+      "correct_choice": "richtig"
+    },
     "explanation": [
-      { "kind": "what", "title": "Beleg", "body": "Satz 3: „hörte nur ihr eigenes Herz“ und Satz 5: „als hätte sie eine Stunde die Luft angehalten“. Die Nervosität wird nicht **gesagt**, sondern **gezeigt**. Das ist typisch für literarische Texte." },
-      { "kind": "remember", "body": "In literarischen Texten musst du **zwischen den Zeilen** lesen: Körperreaktionen (Herz, Atem) verraten Gefühle." }
+      {
+        "kind": "what",
+        "title": "Beleg",
+        "body": "Satz 3: „hörte nur ihr eigenes Herz“ und Satz 5: „als hätte sie eine Stunde die Luft angehalten“. Die Nervosität wird nicht **gesagt**, sondern **gezeigt**. Das ist typisch für literarische Texte."
+      },
+      {
+        "kind": "remember",
+        "body": "In literarischen Texten musst du **zwischen den Zeilen** lesen: Körperreaktionen (Herz, Atem) verraten Gefühle."
+      }
     ],
-    "tags": ["lesen", "literarischer-text", "richtig-falsch"],
-    "source": "Eigener Übungstext nach dem Aufgabenformat MSA Deutsch (literarischer Text)"
+    "tags": [
+      "lesen",
+      "literarischer-text",
+      "richtig-falsch"
+    ],
+    "source": "Eigener Übungstext nach dem Aufgabenformat MSA Deutsch (literarischer Text)",
+    "passage": "X_DE_LETZTER_BUS"
   },
   {
     "id": "DE_LESEN_LITERARISCH_2B",
@@ -85,15 +188,35 @@
     "topicId": "DE_READ_CORE",
     "difficulty": 3,
     "qtype": "MCQ",
-    "prompt": "**Der letzte Bus** (Text siehe oben)\n\nAussage: **Maras Mutter ist streng.**",
-    "payload": { "choices": ["richtig", "falsch", "steht nicht im Text"], "shuffle": false },
-    "solution": { "correct_choice": "steht nicht im Text" },
+    "prompt": "Aussage: **Maras Mutter ist streng.**",
+    "payload": {
+      "choices": [
+        "richtig",
+        "falsch",
+        "steht nicht im Text"
+      ],
+      "shuffle": false
+    },
+    "solution": {
+      "correct_choice": "steht nicht im Text"
+    },
     "explanation": [
-      { "kind": "what", "title": "Beleg", "body": "Der Text sagt nur, dass Mara ihrer Mutter etwas **versprochen** hat (Satz 4). Ob die Mutter streng ist, erfährt man nicht. Das wäre eine Vermutung." },
-      { "kind": "mistake", "body": "Typische Falle: Etwas klingt **plausibel**, steht aber nicht da. Dann ist die richtige Antwort *steht nicht im Text*, nicht *richtig*." }
+      {
+        "kind": "what",
+        "title": "Beleg",
+        "body": "Der Text sagt nur, dass Mara ihrer Mutter etwas **versprochen** hat (Satz 4). Ob die Mutter streng ist, erfährt man nicht. Das wäre eine Vermutung."
+      },
+      {
+        "kind": "mistake",
+        "body": "Typische Falle: Etwas klingt **plausibel**, steht aber nicht da. Dann ist die richtige Antwort *steht nicht im Text*, nicht *richtig*."
+      }
     ],
-    "tags": ["lesen", "richtig-falsch"],
-    "source": "Eigener Übungstext nach dem Aufgabenformat MSA Deutsch"
+    "tags": [
+      "lesen",
+      "richtig-falsch"
+    ],
+    "source": "Eigener Übungstext nach dem Aufgabenformat MSA Deutsch",
+    "passage": "X_DE_LETZTER_BUS"
   },
   {
     "id": "DE_LESEN_LITERARISCH_2C",
@@ -101,14 +224,30 @@
     "topicId": "DE_READ_CORE",
     "difficulty": 3,
     "qtype": "MCQ",
-    "prompt": "**Der letzte Bus** (Text siehe oben)\n\nWelches **Stilmittel** steckt in Satz 5: „als hätte sie eine Stunde die Luft angehalten“?",
-    "payload": { "choices": ["Vergleich (mit als/wie) und Hyperbel (Übertreibung)", "Metapher und Anapher", "Personifikation", "Rhetorische Frage"] },
-    "solution": { "correct_choice": "Vergleich (mit als/wie) und Hyperbel (Übertreibung)" },
+    "prompt": "Welches **Stilmittel** steckt in Satz 5: „als hätte sie eine Stunde die Luft angehalten“?",
+    "payload": {
+      "choices": [
+        "Vergleich (mit als/wie) und Hyperbel (Übertreibung)",
+        "Metapher und Anapher",
+        "Personifikation",
+        "Rhetorische Frage"
+      ]
+    },
+    "solution": {
+      "correct_choice": "Vergleich (mit als/wie) und Hyperbel (Übertreibung)"
+    },
     "explanation": [
-      { "kind": "what", "body": "„als hätte sie …“ ist ein **Vergleich**; „eine Stunde die Luft angehalten“ ist unmöglich, also eine **Hyperbel**. Beide zusammen zeigen, wie angespannt Mara war." }
+      {
+        "kind": "what",
+        "body": "„als hätte sie …“ ist ein **Vergleich**; „eine Stunde die Luft angehalten“ ist unmöglich, also eine **Hyperbel**. Beide zusammen zeigen, wie angespannt Mara war."
+      }
     ],
-    "tags": ["lesen", "stilmittel"],
-    "source": "Eigener Übungstext nach dem Aufgabenformat MSA Deutsch"
+    "tags": [
+      "lesen",
+      "stilmittel"
+    ],
+    "source": "Eigener Übungstext nach dem Aufgabenformat MSA Deutsch",
+    "passage": "X_DE_LETZTER_BUS"
   },
   {
     "id": "DE_LESEN_DIAGRAMM_3A",
@@ -117,14 +256,50 @@
     "difficulty": 2,
     "qtype": "MCQ",
     "prompt": "**Diskontinuierlicher Text: Umfrage in Klasse 10**\n\n„Wofür nutzt du dein Handy am meisten?“ (Anzahl der Antworten)\n\nAussage: **Mehr als die Hälfte der Klasse nutzt das Handy am meisten für Videos.**",
-    "figure": { "type": "barChart", "categories": ["Chats", "Videos", "Spiele", "Musik", "Lernen"], "values": [9, 8, 4, 3, 2], "unit": "Schüler" },
-    "payload": { "choices": ["richtig", "falsch", "steht nicht im Diagramm"], "shuffle": false },
-    "solution": { "correct_choice": "falsch" },
+    "figure": {
+      "type": "barChart",
+      "categories": [
+        "Chats",
+        "Videos",
+        "Spiele",
+        "Musik",
+        "Lernen"
+      ],
+      "values": [
+        9,
+        8,
+        4,
+        3,
+        2
+      ],
+      "unit": "Schüler"
+    },
+    "payload": {
+      "choices": [
+        "richtig",
+        "falsch",
+        "steht nicht im Diagramm"
+      ],
+      "shuffle": false
+    },
+    "solution": {
+      "correct_choice": "falsch"
+    },
     "explanation": [
-      { "kind": "steps", "body": "1. Alle Werte addieren: $9 + 8 + 4 + 3 + 2 = 26$ Schüler.\n2. Videos: 8 von 26. Die Hälfte wäre 13.\n3. 8 ist weniger als 13 → **falsch**." },
-      { "kind": "remember", "body": "Bei Diagrammen: **Überschrift, Achsen, Einheit** lesen. Für *mehr als die Hälfte* musst du das Ganze kennen, also zuerst alle Werte addieren." }
+      {
+        "kind": "steps",
+        "body": "1. Alle Werte addieren: $9 + 8 + 4 + 3 + 2 = 26$ Schüler.\n2. Videos: 8 von 26. Die Hälfte wäre 13.\n3. 8 ist weniger als 13 → **falsch**."
+      },
+      {
+        "kind": "remember",
+        "body": "Bei Diagrammen: **Überschrift, Achsen, Einheit** lesen. Für *mehr als die Hälfte* musst du das Ganze kennen, also zuerst alle Werte addieren."
+      }
     ],
-    "tags": ["lesen", "diagramm", "diskontinuierlich"],
+    "tags": [
+      "lesen",
+      "diagramm",
+      "diskontinuierlich"
+    ],
     "source": "Eigene Übungsaufgabe nach dem Aufgabenformat MSA Deutsch (diskontinuierlicher Text)"
   },
   {
@@ -134,14 +309,49 @@
     "difficulty": 2,
     "qtype": "MCQ",
     "prompt": "**Umfrage in Klasse 10** (Diagramm siehe oben)\n\nWelche Aussage lässt sich aus dem Diagramm **belegen**?",
-    "figure": { "type": "barChart", "categories": ["Chats", "Videos", "Spiele", "Musik", "Lernen"], "values": [9, 8, 4, 3, 2], "unit": "Schüler" },
-    "payload": { "choices": ["Chats und Videos zusammen machen mehr als die Hälfte der Antworten aus.", "Die Klasse lernt zu wenig.", "Spiele sind bei Jungen beliebter als bei Mädchen.", "Musik wird von niemandem gehört."] },
-    "solution": { "correct_choice": "Chats und Videos zusammen machen mehr als die Hälfte der Antworten aus." },
+    "figure": {
+      "type": "barChart",
+      "categories": [
+        "Chats",
+        "Videos",
+        "Spiele",
+        "Musik",
+        "Lernen"
+      ],
+      "values": [
+        9,
+        8,
+        4,
+        3,
+        2
+      ],
+      "unit": "Schüler"
+    },
+    "payload": {
+      "choices": [
+        "Chats und Videos zusammen machen mehr als die Hälfte der Antworten aus.",
+        "Die Klasse lernt zu wenig.",
+        "Spiele sind bei Jungen beliebter als bei Mädchen.",
+        "Musik wird von niemandem gehört."
+      ]
+    },
+    "solution": {
+      "correct_choice": "Chats und Videos zusammen machen mehr als die Hälfte der Antworten aus."
+    },
     "explanation": [
-      { "kind": "steps", "body": "Chats + Videos: $9 + 8 = 17$ von 26. Die Hälfte wäre 13. 17 ist mehr → **belegbar**.\n\nDie anderen Aussagen sind **Wertungen** oder **Vermutungen** (zu wenig, Jungen/Mädchen) oder **falsch** (Musik: 3 Schüler)." },
-      { "kind": "remember", "body": "Belegbar ist nur, was sich aus den **Zahlen** ablesen lässt. Meinungen und Erklärungen stehen nie im Diagramm." }
+      {
+        "kind": "steps",
+        "body": "Chats + Videos: $9 + 8 = 17$ von 26. Die Hälfte wäre 13. 17 ist mehr → **belegbar**.\n\nDie anderen Aussagen sind **Wertungen** oder **Vermutungen** (zu wenig, Jungen/Mädchen) oder **falsch** (Musik: 3 Schüler)."
+      },
+      {
+        "kind": "remember",
+        "body": "Belegbar ist nur, was sich aus den **Zahlen** ablesen lässt. Meinungen und Erklärungen stehen nie im Diagramm."
+      }
     ],
-    "tags": ["lesen", "diagramm"],
+    "tags": [
+      "lesen",
+      "diagramm"
+    ],
     "source": "Eigene Übungsaufgabe nach dem Aufgabenformat MSA Deutsch"
   },
   {
@@ -151,13 +361,31 @@
     "difficulty": 2,
     "qtype": "MCQ",
     "prompt": "Welche **Absicht** hat ein Text, der so beginnt?\n\n„Jeder dritte Jugendliche schläft unter der Woche weniger als sieben Stunden. Wer die Folgen kennt, legt das Handy abends weg. Und du?“",
-    "payload": { "choices": ["appellieren: Der Leser soll sein Verhalten ändern", "unterhalten: Der Leser soll lachen", "erzählen: Der Text berichtet eine erfundene Geschichte", "nur informieren: Der Text gibt neutral Zahlen wieder"] },
-    "solution": { "correct_choice": "appellieren: Der Leser soll sein Verhalten ändern" },
+    "payload": {
+      "choices": [
+        "appellieren: Der Leser soll sein Verhalten ändern",
+        "unterhalten: Der Leser soll lachen",
+        "erzählen: Der Text berichtet eine erfundene Geschichte",
+        "nur informieren: Der Text gibt neutral Zahlen wieder"
+      ]
+    },
+    "solution": {
+      "correct_choice": "appellieren: Der Leser soll sein Verhalten ändern"
+    },
     "explanation": [
-      { "kind": "what", "body": "Die direkte Ansprache „Und du?“ und der Satz „legt das Handy abends weg“ zeigen: Der Text will **überzeugen** und zum Handeln bewegen (Appell). Die Zahl am Anfang dient nur als Einstieg." },
-      { "kind": "remember", "body": "Textabsichten: **informieren** (Fakten, neutral), **appellieren/überzeugen** (Meinung, Aufforderung, Ansprache), **unterhalten** (Spannung, Humor), **erzählen** (Handlung, Figuren)." }
+      {
+        "kind": "what",
+        "body": "Die direkte Ansprache „Und du?“ und der Satz „legt das Handy abends weg“ zeigen: Der Text will **überzeugen** und zum Handeln bewegen (Appell). Die Zahl am Anfang dient nur als Einstieg."
+      },
+      {
+        "kind": "remember",
+        "body": "Textabsichten: **informieren** (Fakten, neutral), **appellieren/überzeugen** (Meinung, Aufforderung, Ansprache), **unterhalten** (Spannung, Humor), **erzählen** (Handlung, Figuren)."
+      }
     ],
-    "tags": ["lesen", "intention"],
+    "tags": [
+      "lesen",
+      "intention"
+    ],
     "source": "Eigene Übungsaufgabe nach dem Aufgabenformat MSA Deutsch"
   }
 ]

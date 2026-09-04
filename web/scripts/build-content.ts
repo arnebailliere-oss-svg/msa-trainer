@@ -12,7 +12,7 @@ import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from 
 import { join, resolve } from "node:path";
 import { evaluate } from "../src/core/evaluators";
 import { parseFraction, reduceFraction } from "../src/core/normalizers";
-import type { ClozePayload, ContentPack, ContentSection, Lesson, MatchPayload, McqPayload, Primer, Question, ShortPayload, Topic } from "../src/core/types";
+import type { ClozePayload, ContentPack, ContentSection, Lesson, MatchPayload, McqPayload, Passage, Primer, Question, ShortPayload, Topic } from "../src/core/types";
 import { hasPlaceholder, parseExplanation, renderFigureSpec, renderPreview } from "../src/core/variants";
 
 const ROOT = resolve(import.meta.dirname, "../..");
@@ -60,18 +60,20 @@ const lessons: Lesson[] = [];
 for (const file of listJson(join(PACK_DIR, "lessons"))) lessons.push(...readJson<Lesson[]>(file));
 const primers: Primer[] = [];
 for (const file of listJson(join(PACK_DIR, "primers"))) primers.push(...readJson<Primer[]>(file));
+const passages: Passage[] = [];
+for (const file of listJson(join(PACK_DIR, "passages"))) passages.push(...readJson<Passage[]>(file));
 
 // --- schema -------------------------------------------------------------------
 
 const ajv = new Ajv({ allErrors: true, allowUnionTypes: true });
 const schema = readJson<Record<string, unknown>>(SCHEMA_PATH);
 const validate = ajv.compile(schema);
-if (!validate({ topics, questions, lessons, primers })) {
+if (!validate({ topics, questions, lessons, primers, passages })) {
   for (const e of validate.errors ?? []) {
-    const m = e.instancePath.match(/^\/(topics|questions|lessons|primers)\/(\d+)/);
+    const m = e.instancePath.match(/^\/(topics|questions|lessons|primers|passages)\/(\d+)/);
     let where = e.instancePath;
     if (m) {
-      const list = m[1] === "topics" ? topics : m[1] === "questions" ? questions : m[1] === "lessons" ? lessons : primers;
+      const list = m[1] === "topics" ? topics : m[1] === "questions" ? questions : m[1] === "lessons" ? lessons : m[1] === "primers" ? primers : passages;
       where = `${m[1]}[${m[2]}] ${(list[Number(m[2])] as { id?: string })?.id ?? ""}${e.instancePath.slice(m[0].length)}`;
     }
     error(where, `${e.message ?? "schema violation"} ${e.params ? JSON.stringify(e.params) : ""}`);
@@ -92,6 +94,9 @@ dup(topics, "topic");
 dup(questions, "question");
 dup(lessons, "lesson");
 dup(primers, "primer");
+dup(passages, "passage");
+const passageById = new Map(passages.map((p) => [p.id, p]));
+const passageUsed = new Set<string>();
 for (const t of topics) if (t.parentId && !topicById.has(t.parentId)) error(`topic ${t.id}`, `unknown parentId ${t.parentId}`);
 
 const MATH_INLINE = /\$\$([\s\S]+?)\$\$|\$([^$\n]+?)\$/g;
@@ -131,6 +136,12 @@ for (const q of questions) {
   // A template (numbers or a sentence bank) yields many distinct items; count it as a full topic's worth.
   counts.set(q.topicId, (counts.get(q.topicId) ?? 0) + (q.variants?.enabled ? MIN_QUESTIONS_PER_TOPIC : 1));
   if (q.tags.length === 0) warn(where, "no tags");
+  if (q.passage) {
+    const pa = passageById.get(q.passage);
+    if (!pa) error(where, `unknown passage ${q.passage}`);
+    else if (pa.subject !== q.subject) error(where, `passage subject ${pa.subject} ≠ ${q.subject}`);
+    passageUsed.add(q.passage);
+  }
   checkTex(where, q.prompt);
   checkSections(where, parseExplanation(q.explanation));
 
@@ -301,6 +312,10 @@ for (const p of primers) {
   });
   if (!primerUsed.has(p.id)) warn(where, "not referenced by any lesson or section");
 }
+for (const p of passages) {
+  checkTex(`passage ${p.id}`, p.body);
+  if (!passageUsed.has(p.id)) warn(`passage ${p.id}`, "no question refers to it");
+}
 
 // Coverage warnings
 const parents = new Set(topics.map((t) => t.parentId).filter(Boolean));
@@ -321,7 +336,7 @@ for (const i of errors) console.log(`  ERROR ${i.where}: ${i.message}`);
 const bySubject = (s: string) => questions.filter((q) => q.subject === s).length;
 console.log(
   `\ncontent: ${topics.length} topics, ${questions.length} questions (MATH ${bySubject("MATH")}, DE ${bySubject("DE")}, EN ${bySubject("EN")}), ` +
-    `${questions.filter((q) => q.variants?.enabled).length} templated, ${lessons.length} lessons, ${primers.length} Eulen-Lektionen — ${errors.length} errors, ${warnings.length} warnings`,
+    `${questions.filter((q) => q.variants?.enabled).length} templated, ${lessons.length} lessons, ${primers.length} Eulen-Lektionen, ${passages.length} passages — ${errors.length} errors, ${warnings.length} warnings`,
 );
 if (errors.length > 0) {
   console.log("content: FAILED");
@@ -340,6 +355,7 @@ const normalized: ContentPack = {
   questions: questions.map((q) => ({ ...q, explanation: parseExplanation(q.explanation) })),
   lessons,
   primers,
+  passages,
 };
 const subjects = ["MATH", "DE", "EN"] as const;
 const out: Record<string, unknown> = {
@@ -353,9 +369,10 @@ for (const s of subjects) {
   const qs = normalized.questions.filter((q) => q.subject === s);
   const ls = normalized.lessons.filter((l) => l.subject === s);
   const ps = primers.filter((p) => p.subject === s);
+  const xs = passages.filter((p) => p.subject === s);
   const file = `${s}.json`;
-  writeFileSync(join(OUT_DIR, file), JSON.stringify({ questions: qs, lessons: ls, primers: ps }));
-  (out.subjects as Record<string, unknown>)[s] = { questions: qs.length, lessons: ls.length, primers: ps.length, file };
+  writeFileSync(join(OUT_DIR, file), JSON.stringify({ questions: qs, lessons: ls, primers: ps, passages: xs }));
+  (out.subjects as Record<string, unknown>)[s] = { questions: qs.length, lessons: ls.length, primers: ps.length, passages: xs.length, file };
 }
 writeFileSync(join(OUT_DIR, "topics.json"), JSON.stringify(topics));
 writeFileSync(join(OUT_DIR, "manifest.json"), JSON.stringify(out, null, 2));

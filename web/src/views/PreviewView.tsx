@@ -53,6 +53,12 @@ export function PreviewView() {
       {Object.keys(rendered.vars).length > 0 && (
         <div className="mb-3 rounded-xl bg-surface px-3 py-2 font-mono text-xs text-ink-2">{JSON.stringify(rendered.vars)}</div>
       )}
+      {rendered.passage && content.passageById(rendered.passage) && (
+        <details open className="mb-3 rounded-2xl border border-line bg-surface px-4 py-3">
+          <summary className="cursor-pointer select-none text-sm font-bold uppercase tracking-wide text-ink-2">📄 {content.passageById(rendered.passage)!.title}</summary>
+          <MathText text={content.passageById(rendered.passage)!.body} className="mt-2 text-[1.02rem] leading-relaxed" />
+        </details>
+      )}
       <div className="card-solid p-5 sm:p-7">
         <MathText text={rendered.prompt} className="text-xl leading-relaxed sm:text-2xl" />
         {rendered.figure && <div className="mt-4 flex justify-center [&_svg]:max-w-full [&_svg]:h-auto" dangerouslySetInnerHTML={{ __html: rendered.figure }} />}

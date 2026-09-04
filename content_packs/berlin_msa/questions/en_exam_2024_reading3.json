@@ -1,37 +1,128 @@
 [
   {
-    "id": "EN_MSA2024_R3_T1",
+    "id": "EN_MSA2024_R3_17",
     "subject": "EN",
     "topicId": "EN_READ_CORE",
     "difficulty": 4,
     "qtype": "MCQ",
-    "prompt": "**Reading Part 3: The business of voluntourism** (adapted from The Guardian, 2018)\n\n(1) Every year, millions of people from wealthy nations travel to poor countries, hoping to do good. University students want to spend a school break or part of a summer giving back, perhaps even to improve their CV. Christians go with their churches for one- or two-week missions. All seek personal growth, connection to those less fortunate, and the satisfaction of making a difference. But the booming business of \"voluntourism\" supports practices and institutions that actually do harm.\n\n(2) Voluntourism is an outgrowth of the ecotourism movement of the 1990s. According to Pippa Biddle, author of a forthcoming book on voluntourism, travellers rebelled against package trips and resorts and wanted a more authentic experience – and they were willing to pay for it. Many charities in developing countries run such programmes and collect fees from volunteers. \"It used to be if you wanted to volunteer abroad, you wrote letters to overseas contacts,\" says Claire Bennett, co-author of Learning Service. \"Now you can buy a volunteer experience with a few clicks.\"\n\n(3) Voluntourism may be driven by noble feelings, but it is built on perverse economics. Many organisations offer volunteers the chance to dig wells, build schools and do other construction projects in poor villages. It's easy to understand why it's done this way: if a charity hired locals for its unskilled work, it would be spending money. If it uses volunteers who pay to be there, it's raising money.\n\n(4) But the last thing a Guatemalan highland village needs is imported unskilled labour. People are desperate for jobs. Public works serve the community better and last longer when locals do them. Besides, long-term change happens when people can solve their own problems, rather than having things done for them.\n\n(5) \"There are few things more cringeworthy than watching 20 British schoolgirls trying to build a well under the scalding Nepalese heat,\" one Durham University student wrote about her trip to an orphanage. Villagers, afraid of offending their visitors, say nothing. An American volunteer in Tanzania recalled: \"We were so bad at the most basic construction work that each night the men had to take down the structurally unsound bricks we had laid and rebuild the structure so that, when we woke up in the morning, we would be unaware of our failure.\"\n\n(6) Defenders of voluntourism claim that its real value is to change the visitor. But while it's definitely more transformational for the visitor than the host, it's not clear how significant the effects are. A study of 162 Americans who travelled to Honduras to build houses after Hurricane Mitch in 1998 found that years later, this work hadn't made better people out of the volunteers. And even if the houses they built didn't fall over, they were expensive. The houses in Honduras built by international volunteers cost $30,000 apiece, including airfare, while local organisations could build them for $2,000. If well-wishers had given money instead of labour, 15 times more houses could have been built. The helpful choice would have been to stay at home. Money goes far in poor countries. Two thousand dollars can pay for a week-long trip taken by an unskilled American volunteer – or it could pay the salary of a village teacher for four months.\n\n(7) Lourdes Milian, who manages Hope of Life, one of the biggest volunteer organisations near Guatemala City, said that during summer and school vacations, about 400 volunteers come every week, and, on average, 150 during other weeks. Volunteers, then, bring at least $9m a year to Hope of Life. Hope of Life had a budget of $15.7m in 2016, which funds its many programmes: projects in villages to dig wells and build schools, baby rescue, the feeding centre, the hospital. But when I visited, it seemed clear that not much money was being spent on its weakest, disabled residents, while a lot of investment has gone towards making the volunteer experience as comfortable as possible – and as emotionally rewarding.\n\n(8) McGehee at Virginia Tech would like to see voluntourism recast as \"transformational tourism\", with visitors rewarded by getting a better understanding of people's lives, and the way the economics of charity work. By all means, visit people who need help, she says. But do it beside them and hear who they are, she adds. Get to know them and not all those stereotypes about them. And then go home and see if there's something you're doing that somehow contributes to their problems.\n\n**{{s_frage}}**",
-    "payload": { "choices": ["{{s_a}}", "{{s_b}}", "{{s_c}}", "{{s_d}}"] },
-    "solution": { "correct_choice": "{{s_a}}" },
-    "explanation": [
-      { "kind": "what", "title": "Beleg im Text", "body": "{{s_grund}}" },
-      { "kind": "remember", "body": "Teile den Artikel in **Abschnitte** ein (hier 1–8), markiere die Schlüsselwörter der Frage und suche sie im passenden Abschnitt. Bei *both A + C* müssen **beide** Aussagen belegt sein." }
-    ],
+    "passage": "X_EN_MSA2024_VOLUNTOURISM",
+    "prompt": "**17.** Why do many people volunteer in poor countries?",
+    "payload": { "choices": ["to make themselves feel good", "as part of their school programme", "to have a cheap holiday", "to improve their language skills"] },
+    "solution": { "correct_choice": "to make themselves feel good" },
+    "explanation": [{ "kind": "what", "title": "Beleg im Text", "body": "Abschnitt 1: *hoping to do good … All seek personal growth, connection to those less fortunate, and the satisfaction of making a difference.*" }, { "kind": "remember", "body": "Teile den Artikel in Abschnitte ein, markiere die Schlüsselwörter der Frage und suche sie im passenden Abschnitt." }],
     "tags": ["exam", "msa2024", "reading", "article"],
-    "source": "MSA Berlin 2024 Englisch, Reading Part 3 (Nr. 17–25)",
-    "variants": {
-      "enabled": true,
-      "variables": {
-        "s": {
-          "type": "pick",
-          "from": [
-            { "frage": "17. Why do many people volunteer in poor countries?", "a": "to make themselves feel good", "b": "as part of their school programme", "c": "to have a cheap holiday", "d": "to improve their language skills", "grund": "Abschnitt 1: *hoping to do good … All seek personal growth, connection to those less fortunate, and the satisfaction of making a difference.*" },
-            { "frage": "18. According to Pippa Biddle the term 'voluntourism' refers to …", "a": "people paying to do volunteer work abroad.", "b": "trips to eco holiday resorts.", "c": "volunteers doing social work in their own communities.", "d": "all-inclusive club holidays.", "grund": "Abschnitt 2: *travellers … wanted a more authentic experience – and they were willing to pay for it.*" },
-            { "frage": "19. Organisations use volunteers …", "a": "to avoid having to pay local workers.", "b": "to benefit from their expert knowledge.", "c": "to make them feel good.", "d": "to break down cultural barriers.", "grund": "Abschnitt 3: *if a charity hired locals for its unskilled work, it would be spending money. If it uses volunteers who pay to be there, it's raising money.*" },
-            { "frage": "20. Locals should do the work instead of volunteers because …", "a": "both: locals are looking for paid work, and people benefit when they can help themselves.", "b": "locals are looking for paid work.", "c": "labour done by locals is cheaper.", "d": "people benefit when they can help themselves.", "grund": "Abschnitt 4: *People are desperate for jobs* **und** *long-term change happens when people can solve their own problems* → beide Aussagen (im Original: both A + C)." },
-            { "frage": "21. In a Tanzanian village volunteers …", "a": "caused more work rather than less.", "b": "had difficulties coping with the heat.", "c": "were sent home because of their bad work.", "d": "had to work day and night.", "grund": "Abschnitt 5: *each night the men had to take down the structurally unsound bricks we had laid and rebuild the structure*." },
-            { "frage": "22. A study shows that voluntourism …", "a": "is too ineffective to be useful.", "b": "brings people together to make a difference.", "c": "can lead to mental health problems.", "d": "has a lasting positive effect on communities.", "grund": "Abschnitt 6: *this work hadn't made better people out of the volunteers* und die Häuser kosteten das 15-Fache." },
-            { "frage": "23. What does the author criticize about the organisation Hope of Life?", "a": "They care more for the volunteers than the needy.", "b": "They employ the wrong people.", "c": "They limit the number of volunteers in certain areas.", "d": "They recruit too many volunteers in the summer months.", "grund": "Abschnitt 7: *not much money was being spent on its weakest, disabled residents, while a lot of investment has gone towards making the volunteer experience as comfortable as possible*." },
-            { "frage": "24. McGehee thinks that travelling abroad should lead to …", "a": "a change of your lifestyle.", "b": "higher prices of flights.", "c": "a better image of Western tourists.", "d": "both: higher prices of flights and a change of your lifestyle.", "grund": "Abschnitt 8: *go home and see if there's something you're doing that somehow contributes to their problems* → das eigene Verhalten ändern." },
-            { "frage": "25. Another title for this article could be …", "a": "Do Western do-gooders actually do harm?", "b": "How volunteer work makes the world a better place", "c": "Want to get rich? Start a volunteer organization", "d": "Stop travelling – reduce your carbon footprint!", "grund": "Abschnitt 1: *the booming business of \"voluntourism\" supports practices and institutions that actually do harm.*" }
-          ]
-        }
-      }
-    }
+    "source": "MSA Berlin 2024 Englisch, Reading Part 3, Nr. 17"
+  },
+  {
+    "id": "EN_MSA2024_R3_18",
+    "subject": "EN",
+    "topicId": "EN_READ_CORE",
+    "difficulty": 4,
+    "qtype": "MCQ",
+    "passage": "X_EN_MSA2024_VOLUNTOURISM",
+    "prompt": "**18.** According to Pippa Biddle the term 'voluntourism' refers to …",
+    "payload": { "choices": ["people paying to do volunteer work abroad.", "trips to eco holiday resorts.", "volunteers doing social work in their own communities.", "all-inclusive club holidays."] },
+    "solution": { "correct_choice": "people paying to do volunteer work abroad." },
+    "explanation": [{ "kind": "what", "title": "Beleg im Text", "body": "Abschnitt 2: *travellers … wanted a more authentic experience – and they were willing to pay for it.*" }],
+    "tags": ["exam", "msa2024", "reading", "article"],
+    "source": "MSA Berlin 2024 Englisch, Reading Part 3, Nr. 18"
+  },
+  {
+    "id": "EN_MSA2024_R3_19",
+    "subject": "EN",
+    "topicId": "EN_READ_CORE",
+    "difficulty": 4,
+    "qtype": "MCQ",
+    "passage": "X_EN_MSA2024_VOLUNTOURISM",
+    "prompt": "**19.** Organisations use volunteers …",
+    "payload": { "choices": ["to avoid having to pay local workers.", "to benefit from their expert knowledge.", "to make them feel good.", "to break down cultural barriers."] },
+    "solution": { "correct_choice": "to avoid having to pay local workers." },
+    "explanation": [{ "kind": "what", "title": "Beleg im Text", "body": "Abschnitt 3: *if a charity hired locals for its unskilled work, it would be spending money. If it uses volunteers who pay to be there, it's raising money.*" }],
+    "tags": ["exam", "msa2024", "reading", "article"],
+    "source": "MSA Berlin 2024 Englisch, Reading Part 3, Nr. 19"
+  },
+  {
+    "id": "EN_MSA2024_R3_20",
+    "subject": "EN",
+    "topicId": "EN_READ_CORE",
+    "difficulty": 4,
+    "qtype": "MCQ",
+    "passage": "X_EN_MSA2024_VOLUNTOURISM",
+    "prompt": "**20.** Locals should do the work instead of volunteers because …",
+    "payload": { "choices": ["locals are looking for paid work.", "labour done by locals is cheaper.", "people benefit when they can help themselves.", "both A + C"] },
+    "solution": { "correct_choice": "both A + C" },
+    "explanation": [{ "kind": "what", "title": "Beleg im Text", "body": "Abschnitt 4: *People are desperate for jobs* (A) **und** *long-term change happens when people can solve their own problems* (C). Bei *both A + C* müssen beide Aussagen belegt sein, und das sind sie hier." }],
+    "tags": ["exam", "msa2024", "reading", "article"],
+    "source": "MSA Berlin 2024 Englisch, Reading Part 3, Nr. 20"
+  },
+  {
+    "id": "EN_MSA2024_R3_21",
+    "subject": "EN",
+    "topicId": "EN_READ_CORE",
+    "difficulty": 4,
+    "qtype": "MCQ",
+    "passage": "X_EN_MSA2024_VOLUNTOURISM",
+    "prompt": "**21.** In a Tanzanian village volunteers …",
+    "payload": { "choices": ["had difficulties coping with the heat.", "were sent home because of their bad work.", "caused more work rather than less.", "had to work day and night."] },
+    "solution": { "correct_choice": "caused more work rather than less." },
+    "explanation": [{ "kind": "what", "title": "Beleg im Text", "body": "Abschnitt 5: *each night the men had to take down the structurally unsound bricks we had laid and rebuild the structure*." }],
+    "tags": ["exam", "msa2024", "reading", "article"],
+    "source": "MSA Berlin 2024 Englisch, Reading Part 3, Nr. 21"
+  },
+  {
+    "id": "EN_MSA2024_R3_22",
+    "subject": "EN",
+    "topicId": "EN_READ_CORE",
+    "difficulty": 4,
+    "qtype": "MCQ",
+    "passage": "X_EN_MSA2024_VOLUNTOURISM",
+    "prompt": "**22.** A study shows that voluntourism …",
+    "payload": { "choices": ["brings people together to make a difference.", "can lead to mental health problems.", "has a lasting positive effect on communities.", "is too ineffective to be useful."] },
+    "solution": { "correct_choice": "is too ineffective to be useful." },
+    "explanation": [{ "kind": "what", "title": "Beleg im Text", "body": "Abschnitt 6: *this work hadn't made better people out of the volunteers*, und die Häuser kosteten das 15-Fache." }],
+    "tags": ["exam", "msa2024", "reading", "article"],
+    "source": "MSA Berlin 2024 Englisch, Reading Part 3, Nr. 22"
+  },
+  {
+    "id": "EN_MSA2024_R3_23",
+    "subject": "EN",
+    "topicId": "EN_READ_CORE",
+    "difficulty": 4,
+    "qtype": "MCQ",
+    "passage": "X_EN_MSA2024_VOLUNTOURISM",
+    "prompt": "**23.** What does the author criticize about the organisation Hope of Life?",
+    "payload": { "choices": ["They care more for the volunteers than the needy.", "They employ the wrong people.", "They limit the number of volunteers in certain areas.", "They recruit too many volunteers in the summer months."] },
+    "solution": { "correct_choice": "They care more for the volunteers than the needy." },
+    "explanation": [{ "kind": "what", "title": "Beleg im Text", "body": "Abschnitt 7: *not much money was being spent on its weakest, disabled residents, while a lot of investment has gone towards making the volunteer experience as comfortable as possible*." }],
+    "tags": ["exam", "msa2024", "reading", "article"],
+    "source": "MSA Berlin 2024 Englisch, Reading Part 3, Nr. 23"
+  },
+  {
+    "id": "EN_MSA2024_R3_24",
+    "subject": "EN",
+    "topicId": "EN_READ_CORE",
+    "difficulty": 4,
+    "qtype": "MCQ",
+    "passage": "X_EN_MSA2024_VOLUNTOURISM",
+    "prompt": "**24.** McGehee thinks that travelling abroad should lead to …",
+    "payload": { "choices": ["higher prices of flights.", "a change of your lifestyle.", "a better image of Western tourists.", "both A + B"] },
+    "solution": { "correct_choice": "a change of your lifestyle." },
+    "explanation": [{ "kind": "what", "title": "Beleg im Text", "body": "Abschnitt 8: *go home and see if there's something you're doing that somehow contributes to their problems* → das eigene Verhalten ändern. Von Flugpreisen ist nicht die Rede." }],
+    "tags": ["exam", "msa2024", "reading", "article"],
+    "source": "MSA Berlin 2024 Englisch, Reading Part 3, Nr. 24"
+  },
+  {
+    "id": "EN_MSA2024_R3_25",
+    "subject": "EN",
+    "topicId": "EN_READ_CORE",
+    "difficulty": 4,
+    "qtype": "MCQ",
+    "passage": "X_EN_MSA2024_VOLUNTOURISM",
+    "prompt": "**25.** Another title for this article could be …",
+    "payload": { "choices": ["Do Western do-gooders actually do harm?", "How volunteer work makes the world a better place", "Want to get rich? Start a volunteer organization", "Stop travelling – reduce your carbon footprint!"] },
+    "solution": { "correct_choice": "Do Western do-gooders actually do harm?" },
+    "explanation": [{ "kind": "what", "title": "Beleg im Text", "body": "Abschnitt 1: *the booming business of \"voluntourism\" supports practices and institutions that actually do harm.* Der ganze Artikel begründet diese These." }],
+    "tags": ["exam", "msa2024", "reading", "article"],
+    "source": "MSA Berlin 2024 Englisch, Reading Part 3, Nr. 25"
   }
 ]

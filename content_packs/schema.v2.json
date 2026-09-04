@@ -156,7 +156,20 @@
         "tags": { "type": "array", "items": { "type": "string", "minLength": 1 } },
         "variants": { "$ref": "#/definitions/variants" },
         "source": { "type": "string" },
-        "figure": { "oneOf": [{ "type": "string" }, { "$ref": "#/definitions/figure" }] }
+        "figure": { "oneOf": [{ "type": "string" }, { "$ref": "#/definitions/figure" }] },
+        "passage": { "type": "string", "pattern": "^X_[A-Z][A-Za-z0-9_]+$" }
+      }
+    },
+    "passage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "subject", "title", "body"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^X_[A-Z][A-Za-z0-9_]+$" },
+        "subject": { "$ref": "#/definitions/subject" },
+        "title": { "type": "string", "minLength": 1 },
+        "body": { "type": "string", "minLength": 1 },
+        "source": { "type": "string" }
       }
     },
     "lesson": {
@@ -181,6 +194,7 @@
     "topics": { "type": "array", "items": { "$ref": "#/definitions/topic" } },
     "questions": { "type": "array", "items": { "$ref": "#/definitions/question" } },
     "lessons": { "type": "array", "items": { "$ref": "#/definitions/lesson" } },
-    "primers": { "type": "array", "items": { "$ref": "#/definitions/primer" } }
+    "primers": { "type": "array", "items": { "$ref": "#/definitions/primer" } },
+    "passages": { "type": "array", "items": { "$ref": "#/definitions/passage" } }
   }
 }

@@ -1,6 +1,6 @@
 /** In-memory index over a content pack: topic tree, questions, lessons. */
 
-import type { ContentPack, Lesson, Primer, Question, Subject, Topic } from "./types";
+import type { ContentPack, Lesson, Passage, Primer, Question, Subject, Topic } from "./types";
 
 export interface ContentIndex {
   pack: ContentPack;
@@ -26,6 +26,7 @@ export interface ContentIndex {
   /** Eulen-Lektionen ("Frag Ferdinand"). */
   primers: Primer[];
   primerById(id: string): Primer | undefined;
+  passageById(id: string): Passage | undefined;
 }
 
 export function buildContentIndex(pack: ContentPack): ContentIndex {
@@ -56,6 +57,7 @@ export function buildContentIndex(pack: ContentPack): ContentIndex {
   const lessonMap = new Map(pack.lessons.map((l) => [l.id, l]));
   const primers = pack.primers ?? [];
   const primerMap = new Map(primers.map((p) => [p.id, p]));
+  const passageMap = new Map((pack.passages ?? []).map((p) => [p.id, p]));
 
   const subtreeIds = (topicId: string): string[] => {
     const out: string[] = [];
@@ -96,5 +98,6 @@ export function buildContentIndex(pack: ContentPack): ContentIndex {
     },
     primers,
     primerById: (id) => primerMap.get(id),
+    passageById: (id) => passageMap.get(id),
   };
 }

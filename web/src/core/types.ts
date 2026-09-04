@@ -172,6 +172,18 @@ export interface Question {
   source?: string;
   /** Figure: inline SVG string, or a generated-figure spec (see core/figures.ts) whose values may be templates. */
   figure?: string | FigureSpec;
+  /** Shared reading text (exam article, sign collection); rendered once above the question, see `Passage`. */
+  passage?: string;
+}
+
+/** A shared text several questions refer to, like the article of an exam reading task. */
+export interface Passage {
+  id: string;
+  subject: Subject;
+  title: string;
+  /** Rich text (MathText markup); numbered paragraphs help students cite. */
+  body: string;
+  source?: string;
 }
 
 export type FigureSpec = { type: string } & Record<string, unknown>;
@@ -192,6 +204,7 @@ export interface RenderedQuestion {
   source?: string;
   figure?: string;
   tags?: string[];
+  passage?: string;
 }
 
 export interface Lesson {
@@ -293,4 +306,5 @@ export interface ContentPack {
   questions: Question[];
   lessons: Lesson[];
   primers?: Primer[];
+  passages?: Passage[];
 }
