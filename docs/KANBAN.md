@@ -8,7 +8,9 @@
 Rebuild MSA Trainer as a fast, modern, youth-friendly **static web app / PWA** on GitHub Pages:
 teach → drill (fresh variants) → repeat (mastery + repair), Math first from the 2027 e-book, with automated content checks.
 
-**Content now:** 607 questions (180 templated: 142 number templates + 38 sentence banks; 82 original-exam items 2023–2025; 307 legacy math, 51 with generated figures). DE 100, EN 94, 22 lessons (12 Mathe incl. Formelblatt, 6 Deutsch, 4 Englisch) with explorers and figure galleries, 19 Eulen-Lektionen (14 Mathe, 3 Deutsch, 2 Englisch), 33 generated figures, 75 topics, 0 validation errors.
+**Content now (2026-09-04):** 684 questions — MATH 413 (142 templated, 82 exam items 2023–2025), DE 161 (22 sentence banks, 61 exam items 2023–2024), EN 110 (17 banks, 16 exam items 2024); 22 lessons (12 Mathe incl. Formelblatt, 6 Deutsch, 4 Englisch) with explorers and figure galleries; 22 Eulen-Lektionen (14 Mathe, 5 Deutsch, 3 Englisch); 5 reading passages; 93 topics (74 leaf); 0 validation errors, 16 warnings (thin topics, see "Bis fertig").
+
+**Bis fertig (definition of done):** every leaf topic ≥ 6 drills · every subject with an exam pool ≥ 25 items · every lesson with its owl · Lighthouse/accessibility pass · one real student run-through. Status: Mathe done except 3 thin topics; Deutsch structure done, 18 of 27 topics still thin; Englisch structure done, 10 of 18 topics thin, exam 2023 missing.
 
 **Milestones:** `d71e336` baseline · `b282d2f` web app end-to-end · `da469aa` modules 1–5 · `50d2610` all 16 Training sections · `01d0756` figures + widgets + exams 2023–2025 · `c9ea264` Formelblatt + audit · (next) exam mode + legacy figures
 
@@ -53,8 +55,12 @@ teach → drill (fresh variants) → repeat (mastery + repair), Math first from 
 
 ## Backlog
 
-### Content
-- E3-22 · EN exam 2023 reading tasks (Boston matching, signs, article) · M
+### Content (what "fertig" still needs)
+- E3-24 · **Deutsch drills for thin topics** (< 6 questions): Zusammenfassung (0), Textbeleg (1), Modus (1), Partizip (1), Register (1), Argument (2), Komma bei Aufzählung (2), wörtliche Rede (2), Aktiv/Passiv (2), Doppelkonsonanten (3), getrennt/zusammen (3), Infinitiv-Komma (3), Satzarten (3), Satzglieder (3), indirekte Rede (3), das/dass (4), ss/ß (4), Strategien (4) · M
+- E3-25 · **Englisch drills for thin topics**: opinions vocab (1), e-mails reading (1), if-clauses (2), signs (2), mediation (2), school vocab (3), travel vocab (3), guided writing (3), e-mail writing (3), listening numbers (4) · M
+- E3-22 · **EN exam 2023** reading tasks (Boston matching, signs, article) → exam pool ≥ 25 · M
+- E3-26 · **Mathe thin topics**: Graph ablesen (0 — needs a figure-based reading question), Gleichungen in Sachaufgaben (2), Wertetabelle (2); short lessons for Bruch-Operationen, Dezimal-Umwandlung, quadratische Gleichungen, Exponentialfunktionen (validator: no lesson) · S
+- E7-5 · Owl primer for the Deutsch lesson (Lesen) and the Englisch lesson (Listening/Reading) that still have none · S
 - E3-19 · Optional: exam 2022 (text already extracted in scratch) · S
 
 ### UI
