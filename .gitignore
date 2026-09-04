@@ -35,3 +35,6 @@ e2e/screenshots/
 
 # playwright run state
 web/test-results/
+
+# personal permission overrides (never share)
+.claude/settings.local.json

@@ -148,7 +148,7 @@
         "subject": { "$ref": "#/definitions/subject" },
         "topicId": { "type": "string" },
         "difficulty": { "type": "integer", "minimum": 1, "maximum": 5 },
-        "qtype": { "type": "string", "enum": ["MCQ", "CLOZE", "MATCH", "SHORT"] },
+        "qtype": { "type": "string", "enum": ["MCQ", "CLOZE", "MATCH", "SHORT", "WRITE"] },
         "prompt": { "type": "string", "minLength": 1 },
         "payload": { "type": "object" },
         "solution": { "type": "object" },

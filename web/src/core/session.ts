@@ -140,6 +140,8 @@ export class SessionController {
       ampel: computeAmpel(after.masteryScore, after.stability),
       hint: evaluation.hint,
       inRepairMode: this.repair !== null,
+      checks: evaluation.checks,
+      score: evaluation.score,
     };
     return this.lastResult;
   }

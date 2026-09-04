@@ -1,0 +1,253 @@
+[
+  {
+    "id": "DE_WRITE_PLAN_SOZIALE_MEDIEN",
+    "subject": "DE",
+    "topicId": "DE_WRITE_EROERTERUNG",
+    "difficulty": 3,
+    "qtype": "WRITE",
+    "prompt": "**Schreibplan erstellen.** In Ihrem Freundeskreis werden soziale Medien intensiv genutzt. Eine Lehrperson nutzt das Thema als Übung für eine Erörterung: *Inwiefern wirken sich soziale Medien auf die Gesellschaft aus?*\n\nVervollständigen Sie den **Schreibplan** in Form eines Gliederungsrasters. Stichpunkte genügen. In der Prüfung gibt es **1 Punkt pro Feld**.",
+    "payload": {
+      "form": "schreibplan",
+      "fields": [
+        { "id": "e_anlass", "label": "Schreibanlass", "hint": "Warum ist das Thema gerade aktuell?" },
+        { "id": "e_hinfuehrung", "label": "Hinführung zum Thema / Fragestellung", "hint": "Worum geht es genau?" },
+        { "id": "these", "label": "These", "hint": "Soziale Medien sind eine Bereicherung …" },
+        { "id": "t_arg1", "label": "1. Argument (These)" },
+        { "id": "t_beleg1", "label": "Beleg / Beispiel zu 1", "hint": "z. B. …, Studien zeigen …" },
+        { "id": "t_arg2", "label": "2. Argument (These)" },
+        { "id": "t_beleg2", "label": "Beleg / Beispiel zu 2" },
+        { "id": "t_arg3", "label": "3. Argument (These)" },
+        { "id": "t_beleg3", "label": "Beleg / Beispiel zu 3" },
+        { "id": "gegenthese", "label": "Gegenthese", "hint": "Soziale Medien haben einen schlechten Einfluss …" },
+        { "id": "g_arg1", "label": "1. Argument (Gegenthese)" },
+        { "id": "g_beleg1", "label": "Beleg / Beispiel zu 1" },
+        { "id": "g_arg2", "label": "2. Argument (Gegenthese)" },
+        { "id": "g_beleg2", "label": "Beleg / Beispiel zu 2" },
+        { "id": "g_arg3", "label": "3. Argument (Gegenthese)" },
+        { "id": "g_beleg3", "label": "Beleg / Beispiel zu 3" },
+        { "id": "s_meinung", "label": "Persönliche Meinung" },
+        { "id": "s_fazit", "label": "Fazit" },
+        { "id": "s_empfehlung", "label": "Empfehlung / Appell" }
+      ]
+    },
+    "solution": {
+      "model_fields": {
+        "e_anlass": "Soziale Medien sind zentral im Alltag; Diskussion im Freundeskreis",
+        "e_hinfuehrung": "Kontakt, Information, aber auch negative Folgen → Wie wirken sie sich auf die Gesellschaft aus?",
+        "these": "Soziale Medien sind eine Bereicherung für die Gesellschaft.",
+        "t_arg1": "Neue Freunde und Kontakte weltweit",
+        "t_beleg1": "Menschen mit gleichen Interessen finden sich in Gruppen, z. B. Gaming oder Musik",
+        "t_arg2": "Als Content-Creator Geld verdienen",
+        "t_beleg2": "Geringe Einstiegshürde; viele leben inzwischen davon",
+        "t_arg3": "Ort für Aufklärung und Information",
+        "t_beleg3": "Gruppen und Kampagnen erreichen schnell viele Menschen, z. B. Spendenaktionen",
+        "gegenthese": "Soziale Medien haben einen schlechten Einfluss auf die Gesellschaft.",
+        "g_arg1": "Sie fördern Vereinsamung",
+        "g_beleg1": "Lieber online als persönlich treffen → Verlust sozialer Kompetenz",
+        "g_arg2": "Filterblasen und Falschinformation",
+        "g_beleg2": "Nur passende Inhalte werden angezeigt; sachliche Diskussion wird schwer",
+        "g_arg3": "Verzerrtes Selbstbild",
+        "g_beleg3": "Jeder zeigt nur das Beste; Vergleich macht unzufrieden",
+        "s_meinung": "Kontra: Vereinsamung und Filterblasen wiegen schwerer",
+        "s_fazit": "Verbot trotzdem nicht sinnvoll, Nutzen ist real",
+        "s_empfehlung": "Behutsamen Umgang in der Schule lehren, feste Bildschirmzeiten"
+      }
+    },
+    "explanation": [
+      { "kind": "steps", "title": "So füllst du das Raster", "body": "1. **These und Gegenthese** zuerst — sie geben die Richtung vor.\n2. Zu jeder Seite **drei Argumente**, jedes mit einem **Beleg oder Beispiel** (z. B., Studien zeigen, laut …).\n3. Einleitung: **Anlass** (warum jetzt?) und **Hinführung** (worum geht es?).\n4. Schluss: **Meinung**, **Fazit**, **Empfehlung** — erst hier werten." },
+      { "kind": "mistake", "body": "Ein Argument ohne Beleg ist nur eine Behauptung — das Beleg-Feld bringt den zweiten Punkt." },
+      { "kind": "remember", "body": "Schreibplan = **17 Punkte** in der Prüfung. Stichpunkte genügen, aber jedes Feld muss etwas Konkretes enthalten." }
+    ],
+    "tags": ["writing", "schreibplan", "eroerterung"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 5 (Beispielaufgabe Schreibplan)"
+  },
+  {
+    "id": "DE_WRITE_PLAN_VEGGIE_2023",
+    "subject": "DE",
+    "topicId": "DE_WRITE_EROERTERUNG",
+    "difficulty": 3,
+    "qtype": "WRITE",
+    "prompt": "**Schreibplan erstellen (17 P).** *Sollte man sich an einem Tag der Woche vegetarisch ernähren?* Im Rahmen eines Schulprojekts zum Thema „Nachhaltige Ernährung“ wird überlegt, ob alle einen persönlichen Veggie-Day in der Woche einlegen sollen. Die Idee wird kontrovers diskutiert.\n\nMeinungen: *„Ich finde es gut, mal auf Fleisch zu verzichten.“ · „Ich lasse mir doch nicht vorschreiben, was ich essen soll.“ · „Von Gemüse wird man doch nicht satt.“ · „So kann ich die Welt durch meine Ernährung ein bisschen besser machen.“*\n\nVervollständigen Sie den Schreibplan. Stichpunkte genügen.",
+    "payload": {
+      "form": "schreibplan",
+      "fields": [
+        { "id": "e_anlass", "label": "Schreibanlass" },
+        { "id": "e_hinfuehrung", "label": "Hinführung zum Thema / Fragestellung" },
+        { "id": "these", "label": "These" },
+        { "id": "t_arg1", "label": "1. Argument (These)" },
+        { "id": "t_beleg1", "label": "Beleg / Beispiel zu 1" },
+        { "id": "t_arg2", "label": "2. Argument (These)" },
+        { "id": "t_beleg2", "label": "Beleg / Beispiel zu 2" },
+        { "id": "t_arg3", "label": "3. Argument (These)" },
+        { "id": "t_beleg3", "label": "Beleg / Beispiel zu 3" },
+        { "id": "gegenthese", "label": "Gegenthese" },
+        { "id": "g_arg1", "label": "1. Argument (Gegenthese)" },
+        { "id": "g_beleg1", "label": "Beleg / Beispiel zu 1" },
+        { "id": "g_arg2", "label": "2. Argument (Gegenthese)" },
+        { "id": "g_beleg2", "label": "Beleg / Beispiel zu 2" },
+        { "id": "g_arg3", "label": "3. Argument (Gegenthese)" },
+        { "id": "g_beleg3", "label": "Beleg / Beispiel zu 3" },
+        { "id": "s_meinung", "label": "Persönliche Meinung" },
+        { "id": "s_fazit", "label": "Fazit" },
+        { "id": "s_empfehlung", "label": "Empfehlung / Appell" }
+      ]
+    },
+    "solution": {
+      "model_fields": {
+        "e_anlass": "Schulprojekt „Nachhaltige Ernährung“; Vorschlag eines persönlichen Veggie-Days",
+        "e_hinfuehrung": "Fleisch täglich auf vielen Tellern; Ernährung berührt Gesundheit, Umwelt, Tierwohl → Ist ein Veggie-Day sinnvoll?",
+        "these": "Ein wöchentlicher Veggie-Day ist sinnvoll.",
+        "t_arg1": "Gesundheitliche Vorteile",
+        "t_beleg1": "Studien zeigen: weniger Fleisch senkt das Risiko für Herzkrankheiten; viele essen zu wenig Gemüse",
+        "t_arg2": "Umweltschutz und Nachhaltigkeit",
+        "t_beleg2": "Tierzucht verbraucht Wasser und Fläche, verursacht Emissionen → kleinerer Fußabdruck",
+        "t_arg3": "Zeichen für Tierwohl",
+        "t_beleg3": "Weniger Nachfrage nach Massentierhaltung; bewusstere Auswahl beim Kauf",
+        "gegenthese": "Ein vorgeschriebener Veggie-Day ist nicht sinnvoll.",
+        "g_arg1": "Sättigung und Nährstoffe",
+        "g_beleg1": "Fleisch liefert viel Protein; nach Gemüse schneller wieder hungrig",
+        "g_arg2": "Persönliche Entscheidungsfreiheit",
+        "g_beleg2": "Niemand will vorgeschrieben bekommen, was er isst; Zwang erzeugt Widerstand",
+        "g_arg3": "Schwierige Umsetzung im Alltag",
+        "g_beleg3": "Viele können nicht vegetarisch kochen; Mensa und Familie müssen mitziehen",
+        "s_meinung": "Pro Veggie-Day, aber freiwillig",
+        "s_fazit": "Gesundheit, Umwelt und Tierwohl wiegen schwerer als die Umstellung",
+        "s_empfehlung": "Gemeinsam vegetarisch kochen lernen, Rezepte in der Schule tauschen"
+      }
+    },
+    "explanation": [
+      { "kind": "steps", "title": "Aus Meinungen werden Argumente", "body": "Die vier Meinungsäußerungen sind **Rohmaterial**: „Von Gemüse wird man nicht satt“ → Argument *Sättigung* (Kontra). „Die Welt besser machen“ → Argument *Umweltschutz* (Pro). Ordne jede Aussage einer Seite zu und ergänze den Beleg." },
+      { "kind": "remember", "body": "Je Argument ein **konkreter** Beleg: Zahl, Studie, Beispiel aus dem Alltag. „Ist gesund“ ist kein Beleg — „senkt das Risiko für Herzkrankheiten“ schon." }
+    ],
+    "tags": ["writing", "schreibplan", "eroerterung", "exam", "msa2023"],
+    "source": "MSA Berlin 2023 Deutsch, Aufgabe 6 „Erstellen eines Schreibplans“ (17 P)"
+  },
+  {
+    "id": "DE_WRITE_PLAN_ESCOOTER_2024",
+    "subject": "DE",
+    "topicId": "DE_WRITE_EROERTERUNG",
+    "difficulty": 3,
+    "qtype": "WRITE",
+    "prompt": "**Schreibplan erstellen (17 P).** *Ist ein E-Scooter ein empfehlenswertes Fortbewegungsmittel?* Ihre Schule beabsichtigt, Abstellflächen für E-Scooter einzurichten. In Ihrer Klasse wird diskutiert, ob es überhaupt empfehlenswert ist, E-Scooter zu nutzen.\n\nMeinungen: *„Es ist mega, mit den Dingern durch die Gegend zu düsen.“ · „Überall stehen die hässlichen Dinger herum.“ · „Unfälle sind vorprogrammiert.“ · „Ehe ich auf den Bus warte, schnappe ich mir den Roller.“*\n\nVervollständigen Sie den Schreibplan für einen Beitrag in der Schülerzeitung. Stichpunkte genügen.",
+    "payload": {
+      "form": "schreibplan",
+      "fields": [
+        { "id": "e_anlass", "label": "Schreibanlass" },
+        { "id": "e_hinfuehrung", "label": "Hinführung zum Thema / Fragestellung" },
+        { "id": "these", "label": "These" },
+        { "id": "t_arg1", "label": "1. Argument (These)" },
+        { "id": "t_beleg1", "label": "Beleg / Beispiel zu 1" },
+        { "id": "t_arg2", "label": "2. Argument (These)" },
+        { "id": "t_beleg2", "label": "Beleg / Beispiel zu 2" },
+        { "id": "t_arg3", "label": "3. Argument (These)" },
+        { "id": "t_beleg3", "label": "Beleg / Beispiel zu 3" },
+        { "id": "gegenthese", "label": "Gegenthese" },
+        { "id": "g_arg1", "label": "1. Argument (Gegenthese)" },
+        { "id": "g_beleg1", "label": "Beleg / Beispiel zu 1" },
+        { "id": "g_arg2", "label": "2. Argument (Gegenthese)" },
+        { "id": "g_beleg2", "label": "Beleg / Beispiel zu 2" },
+        { "id": "g_arg3", "label": "3. Argument (Gegenthese)" },
+        { "id": "g_beleg3", "label": "Beleg / Beispiel zu 3" },
+        { "id": "s_meinung", "label": "Persönliche Meinung" },
+        { "id": "s_fazit", "label": "Fazit" },
+        { "id": "s_empfehlung", "label": "Empfehlung / Appell" }
+      ]
+    },
+    "solution": {
+      "model_fields": {
+        "e_anlass": "Schule plant Abstellflächen für E-Scooter; Diskussion in der Klasse",
+        "e_hinfuehrung": "Mobilität im Wandel: schnell und flexibel, aber umstritten → Ist der E-Scooter empfehlenswert?",
+        "these": "E-Scooter sind ein empfehlenswertes Fortbewegungsmittel.",
+        "t_arg1": "Schnell und flexibel in der Stadt",
+        "t_beleg1": "Kein Warten auf Bus oder Bahn; unabhängig vom Fahrplan, z. B. bei Verspätungen",
+        "t_arg2": "Bis vor die Haustür, wenig Platzbedarf",
+        "t_beleg2": "Nächste Haltestelle oft weit weg; ein Roller braucht beim Parken kaum Fläche",
+        "t_arg3": "Spaßfaktor motiviert zu umweltfreundlicher Mobilität",
+        "t_beleg3": "Elektrisch statt Auto auf kurzen Strecken; Interesse an nachhaltiger Fortbewegung",
+        "gegenthese": "E-Scooter sind kein empfehlenswertes Fortbewegungsmittel.",
+        "g_arg1": "Werden unsachgemäß abgestellt",
+        "g_beleg1": "Blockieren Gehwege und Schulgelände; Regeln und Kontrolle nötig",
+        "g_arg2": "Hohes Unfallrisiko",
+        "g_beleg2": "Klein und leise, von Autofahrern übersehen; Stürze bei zu hohem Tempo",
+        "g_arg3": "Datenschutz",
+        "g_beleg3": "Anbieter speichern Standort und Fahrtstrecken → Bewegungsprofile",
+        "s_meinung": "Pro, aber mit klaren Regeln",
+        "s_fazit": "Vorteile bei kurzen Strecken überwiegen, Risiken sind beherrschbar",
+        "s_empfehlung": "Abstellflächen einrichten und Verkehrsregeln in der Schule üben"
+      }
+    },
+    "explanation": [
+      { "kind": "steps", "title": "Umgangssprache raus, Argument rein", "body": "„Es ist mega, mit den Dingern zu düsen“ ist eine Meinung in Umgangssprache. Im Schreibplan wird daraus: **Argument** *Spaßfaktor motiviert zu nachhaltiger Mobilität*, **Beleg** *elektrisch statt Auto auf kurzen Strecken*." },
+      { "kind": "mistake", "body": "Textform beachten: Hier ist ein **Beitrag für die Schülerzeitung** gefragt — trotzdem Aufbau einer Erörterung, aber mit Überschrift und Leseransprache." }
+    ],
+    "tags": ["writing", "schreibplan", "eroerterung", "exam", "msa2024"],
+    "source": "MSA Berlin 2024 Deutsch, Aufgabe 6 „Erstellen eines Schreibplans“ (17 P)"
+  },
+  {
+    "id": "DE_WRITE_EROERTERUNG_SOZIALE_MEDIEN",
+    "subject": "DE",
+    "topicId": "DE_WRITE_EROERTERUNG",
+    "difficulty": 4,
+    "qtype": "WRITE",
+    "prompt": "**Erörterung verfassen.** *Inwiefern wirken sich soziale Medien auf die Gesellschaft aus?* Berücksichtigen Sie Vor- und Nachteile.\n\nSchreiben Sie eine **dialektische Erörterung** mit Einleitung, Hauptteil (These und Gegenthese mit je mindestens zwei Argumenten und Belegen) und Schluss. Mindestens **200 Wörter**, Präsens, Standardsprache. Absätze mit Leerzeile trennen.",
+    "payload": {
+      "form": "eroerterung",
+      "min_words": 200,
+      "required": ["paragraphs:4", "both_sides", "belege", "transitions", "opinion_last", "standard_language"]
+    },
+    "solution": {
+      "model": "Kaum ein Thema begleitet Jugendliche so sehr wie soziale Medien: Fast jeder ist täglich auf Instagram, TikTok oder WhatsApp unterwegs. Im Freundeskreis wird deshalb oft diskutiert, ob diese Plattformen unsere Gesellschaft bereichern oder ihr schaden. Inwiefern wirken sich soziale Medien also auf die Gesellschaft aus?\n\nEin klarer Vorteil sozialer Medien ist, dass sie Menschen verbinden. Wer ein seltenes Hobby hat, findet online in kurzer Zeit Gleichgesinnte auf der ganzen Welt, zum Beispiel in Gruppen zu Musik, Gaming oder Sport. Außerdem eröffnen die Plattformen neue berufliche Wege: Viele junge Menschen verdienen als Content-Creator Geld, und die Einstiegshürde ist niedrig. Ein weiteres Argument dafür ist die schnelle Verbreitung von Informationen. Spendenaktionen oder Aufklärungskampagnen erreichen innerhalb von Stunden Millionen Menschen, was früher unmöglich war.\n\nJedoch gibt es auch gewichtige Nachteile. Ein zentrales Gegenargument ist die Vereinsamung: Wer lieber online chattet, als sich persönlich zu treffen, verliert soziale Kompetenz. Studien zeigen, dass Jugendliche mit sehr hoher Nutzungsdauer seltener Freunde im echten Leben sehen. Darüber hinaus entstehen Filterblasen. Die Algorithmen zeigen nur Inhalte, die zur eigenen Meinung passen, wodurch sachliche Diskussionen schwer werden und Falschinformationen sich verbreiten. Zudem führt der ständige Vergleich mit perfekt inszenierten Bildern bei vielen zu einem verzerrten Selbstbild.\n\nInsgesamt überwiegen für mich die Nachteile, denn Vereinsamung und Filterblasen betreffen die Gesellschaft als Ganzes. Meiner Meinung nach wäre ein Verbot trotzdem nicht sinnvoll, weil der Nutzen real ist. Ich empfehle deshalb, den bewussten Umgang mit sozialen Medien in der Schule zu lehren und feste Bildschirmzeiten zu vereinbaren."
+    },
+    "explanation": [
+      { "kind": "steps", "title": "Was hier geprüft wird", "body": "1. **Gliederung**: Einleitung, Pro, Kontra, Schluss — mindestens vier Absätze.\n2. **Beide Seiten** mit Signalwörtern: *Ein Vorteil ist …*, *Jedoch …*, *Ein Gegenargument …*\n3. **Belege**: *zum Beispiel*, *Studien zeigen*, *laut …* — mindestens zwei.\n4. **Überleitungen**: *außerdem*, *darüber hinaus*, *insgesamt*.\n5. Eigene **Meinung erst im Schluss**.\n6. **Standardsprache**, kein *krass*, *mega*, *cool*." },
+      { "kind": "what", "title": "Was die App nicht prüft", "body": "Rechtschreibung, Grammatik, Zeichensetzung und Stil (**8 der 18 Punkte**) kann die App nicht bewerten. Vergleiche deinen Text mit der Musterlösung: das/dass, Kommas vor Nebensätzen, Präsens durchgehend?" },
+      { "kind": "remember", "body": "Erörterung = **18 Punkte**: Gliederung, Schreibfunktion, Darstellung, Grammatik, Rechtschreibung, Zeichensetzung, Form. Die ersten drei bekommst du über den Aufbau." }
+    ],
+    "tags": ["writing", "eroerterung"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 5 (Beispielaufgabe Erörterung)"
+  },
+  {
+    "id": "DE_WRITE_EROERTERUNG_VEGGIE_2023",
+    "subject": "DE",
+    "topicId": "DE_WRITE_EROERTERUNG",
+    "difficulty": 4,
+    "qtype": "WRITE",
+    "prompt": "**Erörterung verfassen (18 P).** *Sollte man sich an einem Tag der Woche vegetarisch ernähren?* Verfassen Sie auf der Grundlage Ihres Schreibplans eine **dialektische Erörterung**: Einleitung, These und Gegenthese mit Argumenten und Belegen, Schluss mit eigener Meinung und Empfehlung.\n\nMindestens **200 Wörter**, Präsens, Standardsprache. Absätze mit Leerzeile trennen.",
+    "payload": {
+      "form": "eroerterung",
+      "min_words": 200,
+      "required": ["paragraphs:4", "both_sides", "belege", "transitions", "opinion_last", "standard_language"]
+    },
+    "solution": {
+      "model": "Gesunde und nachhaltige Ernährung wird immer wichtiger. Im Rahmen eines Schulprojekts zum Thema „Nachhaltige Ernährung“ wurde vorgeschlagen, dass jeder einen persönlichen Veggie-Day pro Woche einlegt. Die Idee wird kontrovers diskutiert, denn Essen ist ein emotionales Thema, das weit über den eigenen Teller hinausgeht. Sollte man sich also an einem Tag der Woche vegetarisch ernähren?\n\nEin klarer Vorteil eines Veggie-Days liegt in der Gesundheit. Studien zeigen, dass ein reduzierter Fleischkonsum das Risiko für Herzkrankheiten senkt, und viele Menschen essen ohnehin zu wenig Gemüse. Ein weiteres Argument dafür ist der Umweltschutz: Die Tierzucht verbraucht große Mengen Wasser und Fläche und verursacht Emissionen. Wer einen Tag auf Fleisch verzichtet, verkleinert seinen ökologischen Fußabdruck. Außerdem ist ein Veggie-Day ein Zeichen für das Tierwohl, weil die Nachfrage nach Massentierhaltung sinkt.\n\nJedoch gibt es auch gute Gegenargumente. Fleisch ist eine ausgezeichnete Proteinquelle, die lange satt macht; nach einer fleischlosen Mahlzeit sind viele schneller wieder hungrig. Darüber hinaus geht es um die persönliche Entscheidungsfreiheit: Niemand möchte vorgeschrieben bekommen, was er isst, und Zwang erzeugt Widerstand. Zudem ist die Umsetzung im Alltag schwierig, denn viele Familien haben zum Beispiel keine Erfahrung mit vegetarischer Küche.\n\nInsgesamt halte ich einen Veggie-Day für eine gute Möglichkeit, Nachhaltigkeit und Tierwohl in den Alltag zu holen. Meiner Meinung nach wiegen Gesundheit und Umwelt schwerer als die Umstellung. Ich empfehle deshalb, den Veggie-Day freiwillig einzuführen und gemeinsam vegetarisch kochen zu lernen, damit niemand hungrig bleibt."
+    },
+    "explanation": [
+      { "kind": "steps", "title": "Vom Schreibplan zum Text", "body": "1. Jedes Feld des Schreibplans wird **ein bis zwei Sätze**.\n2. Argument + Beleg in **einem Absatz** verbinden: *Ein Vorteil ist … Studien zeigen nämlich …*\n3. Seitenwechsel deutlich markieren: *Jedoch gibt es auch Gegenargumente.*\n4. Schluss: **Meinung → Fazit → Empfehlung**." },
+      { "kind": "mistake", "body": "Die Meinung schon in der Einleitung verraten — dann ist es keine *dialektische* Erörterung mehr. Erst darstellen, dann werten." }
+    ],
+    "tags": ["writing", "eroerterung", "exam", "msa2023"],
+    "source": "MSA Berlin 2023 Deutsch, Aufgabe 7 „Verfassen einer Erörterung“ (18 P)"
+  },
+  {
+    "id": "DE_WRITE_EROERTERUNG_ESCOOTER_2024",
+    "subject": "DE",
+    "topicId": "DE_WRITE_EROERTERUNG",
+    "difficulty": 4,
+    "qtype": "WRITE",
+    "prompt": "**Beitrag für die Schülerzeitung verfassen (18 P).** *Ist ein E-Scooter ein empfehlenswertes Fortbewegungsmittel?* Verfassen Sie auf der Grundlage Ihres Schreibplans einen erörternden Beitrag: Einleitung mit Leseransprache, Vor- und Nachteile mit Belegen, Schluss mit eigener Meinung und Empfehlung.\n\nMindestens **200 Wörter**, Präsens, Standardsprache. Absätze mit Leerzeile trennen.",
+    "payload": {
+      "form": "eroerterung",
+      "min_words": 200,
+      "required": ["paragraphs:4", "both_sides", "belege", "transitions", "opinion_last", "standard_language"]
+    },
+    "solution": {
+      "model": "Die Mobilität unserer Zeit befindet sich im Wandel. Angesichts der steigenden Umweltbelastung und des Wunsches nach schneller, flexibler Fortbewegung gewinnen E-Scooter an Beliebtheit. Auch unsere Schule plant Abstellflächen für die elektrischen Roller. Doch während viele die Vorteile loben, gibt es auch kritische Stimmen. Ist die Nutzung von E-Scootern also tatsächlich empfehlenswert? Dieser Beitrag betrachtet beide Seiten.\n\nEin wesentlicher Vorteil ist die Schnelligkeit. Gerade in der Stadt, wo der Verkehr dicht ist, kommen Schülerinnen und Schüler mit dem E-Scooter unkompliziert zur Schule, ohne auf Bus und Bahn angewiesen zu sein; bei Verspätungen ist er zum Beispiel eine praktische Alternative. Darüber hinaus fährt man direkt bis an das Ziel, sei es die Haustür oder das Schultor, und der Roller braucht beim Parken kaum Platz. Außerdem bringt das Fahren Spaß, was die Motivation erhöht, statt des Autos ein umweltfreundlicheres Verkehrsmittel zu nutzen.\n\nJedoch sprechen auch gewichtige Argumente dagegen. E-Scooter werden oft unsachgemäß abgestellt und blockieren Gehwege, wie jeder beobachten kann, der durch die Innenstadt geht. Ein weiteres Gegenargument ist das Unfallrisiko: Die Roller sind klein und leise, Autofahrer übersehen sie, und Statistiken der Versicherer zeigen steigende Unfallzahlen. Zudem sammeln viele Anbieter Standortdaten und Fahrtstrecken ihrer Nutzer, aus denen sich Bewegungsprofile erstellen lassen.\n\nInsgesamt überwiegen für mich die Vorteile, solange klare Regeln gelten. Meiner Meinung nach sind E-Scooter auf kurzen Strecken empfehlenswert, wenn Fahrende Rücksicht nehmen. Ich empfehle der Schule deshalb, die Abstellflächen einzurichten und gleichzeitig die Verkehrsregeln für E-Scooter im Unterricht zu behandeln."
+    },
+    "explanation": [
+      { "kind": "steps", "title": "Beitrag für die Schülerzeitung", "body": "1. **Überschrift** und Leseransprache in der Einleitung (*Dieser Beitrag betrachtet …*).\n2. Sonst wie eine Erörterung: Vorteile, Nachteile, jeweils mit Beleg.\n3. Schluss mit klarer **Empfehlung an die Schule**." },
+      { "kind": "mistake", "body": "Die Meinungsäußerungen aus der Aufgabe (*mega*, *düsen*, *Dinger*) **nicht** wörtlich übernehmen — sie sind Umgangssprache und kosten Ausdruckspunkte." }
+    ],
+    "tags": ["writing", "eroerterung", "exam", "msa2024"],
+    "source": "MSA Berlin 2024 Deutsch, Aufgabe 7 „Umsetzung des Schreibplans“ (18 P)"
+  }
+]

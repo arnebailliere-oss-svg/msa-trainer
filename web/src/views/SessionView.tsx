@@ -3,7 +3,7 @@ import { Link, useNavigate, useParams } from "react-router-dom";
 import { useApp } from "@/app/state";
 import { formatNumber } from "@/core/format";
 import { SessionController } from "@/core/session";
-import type { AttemptResult, RenderedQuestion, Subject, TrainingMode } from "@/core/types";
+import type { AttemptResult, RenderedQuestion, Subject, TrainingMode, WriteCheck } from "@/core/types";
 import { Calculator } from "@/ui/Calculator";
 import { ExplanationBlocks } from "@/ui/Explanation";
 import { FormulaSheetDrawer } from "@/ui/FormulaSheet";
@@ -13,6 +13,39 @@ import { Button, Chip, ProgressBar, SUBJECT_LABEL } from "@/ui/primitives";
 import { isAnswerReady, QuestionRenderer } from "@/ui/renderers";
 
 const MODE_LABEL: Record<TrainingMode, string> = { QUICK: "Schnelltraining", TOPIC: "Thema üben", ERRORS: "Fehler-Training", MSA: "Prüfungs-Modus" };
+
+/** WRITE feedback: the scored checks (Inhalt, Aufbau) and the unscored language hints. */
+export function WriteChecklist({ checks }: { checks: WriteCheck[] }) {
+  const scored = checks.filter((c) => c.weight > 0);
+  const hints = checks.filter((c) => c.weight === 0);
+  return (
+    <div className="mt-3 grid gap-3 text-sm">
+      <ul className="grid gap-1" aria-label="Inhalt und Aufbau">
+        {scored.map((c) => (
+          <li key={c.id} className="flex items-start gap-2">
+            <span className={`mt-0.5 grid h-5 w-5 shrink-0 place-items-center rounded-full text-xs font-bold ${c.ok ? "bg-green text-[#062b1c]" : "bg-surface-2 text-ink-3"}`}>{c.ok ? "✓" : "–"}</span>
+            <span className={c.ok ? "text-ink" : "text-ink-2"}>
+              {c.label}
+              {c.detail && <span className="text-ink-3"> · {c.detail}</span>}
+            </span>
+          </li>
+        ))}
+      </ul>
+      {hints.length > 0 && (
+        <div className="rounded-xl bg-yellow-soft px-3 py-2">
+          <div className="text-xs font-bold uppercase tracking-wide text-ink-2">Sprache — Hinweise, nicht gezählt</div>
+          <ul className="mt-1 grid gap-0.5">
+            {hints.map((c) => (
+              <li key={c.id}>
+                <MathText text={c.label} inline />
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+    </div>
+  );
+}
 const COUNT: Record<TrainingMode, number> = { QUICK: 10, TOPIC: 8, ERRORS: 10, MSA: 10 };
 const fmtTime = (s: number) => `${Math.floor(s / 60)}:${String(s % 60).padStart(2, "0")}`;
 
@@ -194,13 +227,14 @@ export function SessionView() {
           <div className={`flex items-start gap-3 rounded-2xl px-4 py-4 ${result.isCorrect ? "bg-green-soft" : "bg-red-soft"}`}>
             <span className={`grid h-10 w-10 shrink-0 place-items-center rounded-full text-xl ${result.isCorrect ? "bg-green text-[#062b1c] anim-pulse-ring" : "bg-red text-white"}`}>{result.isCorrect ? "✓" : "✗"}</span>
             <div className="flex-1">
-              <div className="text-lg font-bold">{result.isCorrect ? "Richtig!" : "Leider nicht richtig."}</div>
-              {!result.isCorrect && (
+              <div className="text-lg font-bold">{question.qtype === "WRITE" ? (result.isCorrect ? "Inhalt und Aufbau sitzen!" : "Da fehlt noch etwas.") : result.isCorrect ? "Richtig!" : "Leider nicht richtig."}</div>
+              {!result.isCorrect && question.qtype !== "WRITE" && (
                 <div className="text-ink-2">
                   Richtige Antwort: <strong className="text-ink whitespace-pre-line">{result.correctAnswerText}</strong>
                 </div>
               )}
               {result.hint && <div className="mt-1 text-sm text-ink-2">💬 {result.hint}</div>}
+              {result.checks && <WriteChecklist checks={result.checks} />}
               <div className="mt-1 text-sm text-ink-3">
                 Können in „{topic?.name}“: {formatNumber(result.newMasteryScore * 100, 0)} %{" "}
                 <span className={result.masteryDelta >= 0 ? "text-green" : "text-red"}>
@@ -210,6 +244,13 @@ export function SessionView() {
               </div>
             </div>
           </div>
+          {question.qtype === "WRITE" && (
+            <details open={!result.isCorrect} className="mt-4 rounded-2xl border border-line bg-surface px-4 py-3">
+              <summary className="cursor-pointer select-none text-sm font-bold uppercase tracking-wide text-ink-2">📝 Musterlösung zum Vergleich</summary>
+              <p className="mt-1 text-xs text-ink-3">Lies sie neben deinem Text: Anrede, Absätze, Zeitformen, Wortschatz. Was würdest du übernehmen?</p>
+              <MathText text={result.correctAnswerText} pre className="mt-2 text-[1.02rem] leading-relaxed" />
+            </details>
+          )}
           {owlPrimer && (
             <div className="mt-4">
               <AskOwl primerId={owlPrimer} variant="card" eyebrow="Zweimal daneben? Kein Problem." />

@@ -4,7 +4,7 @@
  */
 
 export type Subject = "MATH" | "DE" | "EN";
-export type QuestionType = "MCQ" | "CLOZE" | "MATCH" | "SHORT";
+export type QuestionType = "MCQ" | "CLOZE" | "MATCH" | "SHORT" | "WRITE";
 export type TrainingMode = "QUICK" | "TOPIC" | "ERRORS" | "MSA";
 export type AmpelState = "RED" | "YELLOW" | "GREEN";
 
@@ -146,7 +146,44 @@ export interface MatchPayload {
   right: string[];
 }
 
-export type Payload = McqPayload | ShortPayload | ClozePayload | MatchPayload;
+/** One content point of a writing task: earned when any keyword occurs in the text. */
+export interface WriteContentPoint {
+  label: string;
+  /** Case-insensitive alternatives; one hit is enough (`"Impf"`, `"vaccin"`). */
+  keywords: string[];
+}
+
+/** One cell of a Schreibplan (Gliederungsraster). */
+export interface WriteField {
+  id: string;
+  label: string;
+  hint?: string;
+}
+
+/**
+ * Rule-checkable requirements of a text form. Ids: greeting, closing, subject, sentences,
+ * `paragraphs:N`, both_sides, transitions, belege, opinion_last, standard_language.
+ */
+export type WriteRequirement = string;
+
+/**
+ * WRITE payload — a free text (e-mail, blog reply, photo answer, mediation, Erörterung) or a
+ * Schreibplan grid. Inhalt and Aufbau are checked by rules (content points, required elements,
+ * word count); Sprache is *not* graded — the student compares with the Musterlösung.
+ */
+export interface WritePayload {
+  form: "email" | "blog" | "photo" | "mediation" | "eroerterung" | "schreibplan";
+  min_words?: number;
+  max_words?: number;
+  content_points?: WriteContentPoint[];
+  required?: WriteRequirement[];
+  /** Expected register of an e-mail; mismatched greetings/closings are flagged. */
+  register?: "formal" | "informal";
+  /** Schreibplan cells (form "schreibplan"); the answer is a map id → text. */
+  fields?: WriteField[];
+}
+
+export type Payload = McqPayload | ShortPayload | ClozePayload | MatchPayload | WritePayload;
 
 /** Solutions — either literal or computed from template variables. */
 export type Solution =
@@ -154,7 +191,18 @@ export type Solution =
   | { value: number | string } // SHORT literal
   | { kind: "computed"; expr: string; round?: number; tolerance?: number } // SHORT computed
   | { answers: Record<string, string> } // CLOZE
-  | { pairs: [string, string][] }; // MATCH
+  | { pairs: [string, string][] } // MATCH
+  | { model: string } // WRITE text: the Musterlösung
+  | { model_fields: Record<string, string> }; // WRITE schreibplan: one entry per field
+
+/** One rule check of a writing task. `weight` 0 = language hint, shown but not scored. */
+export interface WriteCheck {
+  id: string;
+  label: string;
+  ok: boolean;
+  weight: number;
+  detail?: string;
+}
 
 export interface Question {
   id: string;
@@ -263,6 +311,10 @@ export interface AttemptResult {
   /** Optional evaluator hint, e.g. "Der Bruch ist noch nicht gekürzt." */
   hint?: string;
   inRepairMode: boolean;
+  /** WRITE only: the rule checks (Inhalt, Aufbau, Sprache-Hinweise) behind the verdict. */
+  checks?: WriteCheck[];
+  /** WRITE only: share of scored checks passed, 0..1. */
+  score?: number;
 }
 
 /** One answered question, for the per-task summary at the end of a session. */

@@ -3,6 +3,7 @@
  * Also drops screenshots into e2e/screenshots for visual review.
  */
 import { expect, test, type Page } from "@playwright/test";
+import { dismissTour } from "./helpers";
 
 const shot = async (page: Page, name: string) => {
   await page.waitForTimeout(500); // let entry animations settle
@@ -17,9 +18,11 @@ test("full flow", async ({ page }) => {
   await page.getByPlaceholder("z. B. Lea").fill("Test");
   await page.getByRole("button", { name: "🦄" }).click();
   await page.getByRole("button", { name: "Los geht's" }).click();
+  await dismissTour(page);
 
   await expect(page.getByText(/Hey Test/)).toBeVisible();
   await expect(page.getByText("Deine Themen")).toBeVisible();
+  await dismissTour(page);
   await shot(page, "02-dashboard");
 
   // Open a topic page
@@ -73,6 +76,7 @@ test("quick training runs through repair mode", async ({ page }) => {
   await page.goto("/#/");
   await page.getByPlaceholder("z. B. Lea").fill("Repair");
   await page.getByRole("button", { name: "Los geht's" }).click();
+  await dismissTour(page);
   await page.getByRole("button", { name: /Schnelltraining/ }).click();
   await expect(page.getByText(/Schnelltraining · Mathe/)).toBeVisible();
 

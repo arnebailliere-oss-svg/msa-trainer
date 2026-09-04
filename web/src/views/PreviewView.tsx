@@ -7,6 +7,7 @@ import { ExplanationBlocks } from "@/ui/Explanation";
 import { MathText } from "@/ui/MathText";
 import { Button, Chip, PageTitle } from "@/ui/primitives";
 import { isAnswerReady, QuestionRenderer } from "@/ui/renderers";
+import { WriteChecklist } from "./SessionView";
 
 /** Authoring/QA view: render any question by id, step through its variants, try answers. No progress is recorded. */
 export function PreviewView() {
@@ -81,8 +82,9 @@ export function PreviewView() {
         </div>
         {result && (
           <div className={`mt-3 rounded-xl px-3 py-2 text-sm ${result.isCorrect ? "bg-green-soft" : "bg-red-soft"}`}>
-            {result.isCorrect ? "Richtig" : `Falsch — richtig wäre: ${result.correctAnswerText}`}
+            {result.checks ? (result.isCorrect ? "Richtig — Inhalt und Aufbau erfüllt" : "Noch nicht — siehe Checkliste") : result.isCorrect ? "Richtig" : `Falsch — richtig wäre: ${result.correctAnswerText}`}
             {result.hint && <div className="text-ink-2">{result.hint}</div>}
+            {result.checks && <WriteChecklist checks={result.checks} />}
           </div>
         )}
       </div>

@@ -1,7 +1,8 @@
-/** Question renderers: MCQ, SHORT, CLOZE, MATCH. Controlled by SessionView. */
+/** Question renderers: MCQ, SHORT, CLOZE, MATCH, WRITE. Controlled by SessionView. */
 
 import { useEffect, useMemo, useRef, useState } from "react";
-import type { ClozePayload, MatchPayload, McqPayload, RenderedQuestion, ShortPayload } from "@/core/types";
+import { countWords } from "@/core/evaluators";
+import type { ClozePayload, MatchPayload, McqPayload, RenderedQuestion, ShortPayload, WritePayload } from "@/core/types";
 import { rngFromBytes } from "@/core/rng";
 import { sha256 } from "@/core/sha256";
 import { MathText } from "./MathText";
@@ -26,6 +27,8 @@ export function QuestionRenderer(props: RendererProps) {
       return <ClozeRenderer {...props} />;
     case "MATCH":
       return <MatchRenderer {...props} />;
+    case "WRITE":
+      return <WriteRenderer {...props} />;
   }
 }
 
@@ -45,7 +48,96 @@ export function isAnswerReady(q: RenderedQuestion, answer: unknown): boolean {
       const p = q.payload as MatchPayload;
       return Array.isArray(answer) && answer.length === p.left.length;
     }
+    case "WRITE": {
+      const p = q.payload as WritePayload;
+      if (p.form === "schreibplan") {
+        const a = (answer ?? {}) as Record<string, string>;
+        return (p.fields ?? []).some((f) => (a[f.id] ?? "").trim().length > 0);
+      }
+      return typeof answer === "string" && countWords(answer) >= 3;
+    }
   }
+}
+
+// --- WRITE ------------------------------------------------------------------------
+
+function WriteRenderer({ question, answer, onChange, locked, feedback }: RendererProps) {
+  const payload = question.payload as WritePayload;
+  const ref = useRef<HTMLTextAreaElement>(null);
+  useEffect(() => {
+    if (payload.form !== "schreibplan") ref.current?.focus();
+  }, [question.variantId, payload.form]);
+  let border = "border-line focus-within:border-brand-2";
+  if (feedback) border = feedback.isCorrect ? "border-green" : "border-yellow";
+
+  if (payload.form === "schreibplan") {
+    const a = (answer ?? {}) as Record<string, string>;
+    const filled = (payload.fields ?? []).filter((f) => (a[f.id] ?? "").trim().length > 0).length;
+    return (
+      <div>
+        <div className="mb-2 text-sm text-ink-3">
+          Schreibplan: {filled} von {payload.fields?.length ?? 0} Feldern · Stichpunkte reichen, keine ganzen Sätze.
+        </div>
+        <div className="grid gap-2">
+          {(payload.fields ?? []).map((f) => {
+            const section = f.id.startsWith("e_") ? "Einleitung" : f.id.startsWith("s_") ? "Schluss" : null;
+            const first = section && (payload.fields ?? []).find((x) => x.id.startsWith(f.id.slice(0, 2)))?.id === f.id;
+            return (
+              <div key={f.id}>
+                {first && <div className="mt-2 mb-1 text-xs font-bold uppercase tracking-wider text-ink-3">{section}</div>}
+                {f.id === "these" && <div className="mt-2 mb-1 text-xs font-bold uppercase tracking-wider text-ink-3">Hauptteil</div>}
+                <label className={`block rounded-2xl border-2 bg-surface px-3 py-2 transition-colors ${border}`}>
+                  <span className="block text-xs font-semibold text-ink-2">{f.label}</span>
+                  <textarea
+                    value={a[f.id] ?? ""}
+                    onChange={(e) => onChange({ ...a, [f.id]: e.target.value })}
+                    disabled={locked}
+                    rows={1}
+                    placeholder={f.hint ?? "…"}
+                    aria-label={f.label}
+                    className="mt-0.5 w-full resize-y bg-transparent text-base outline-none placeholder:text-ink-3"
+                  />
+                </label>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    );
+  }
+
+  const text = typeof answer === "string" ? answer : "";
+  const words = countWords(text);
+  const min = payload.min_words ?? 0;
+  const max = payload.max_words;
+  const inRange = words >= min && (max === undefined || words <= max);
+  const target = max !== undefined ? `${min}–${max}` : `mindestens ${min}`;
+  const placeholder = { email: "Dear …,\n\n…\n\nBest wishes,\n…", blog: "Hi …,\n\n…", photo: "…", mediation: "Hi …,\n\nI read an article about …", eroerterung: "Einleitung …\n\nHauptteil (Pro) …\n\nHauptteil (Kontra) …\n\nSchluss …", schreibplan: "" }[payload.form];
+  return (
+    <div>
+      <div className={`rounded-2xl border-2 bg-surface transition-colors ${border}`}>
+        <textarea
+          ref={ref}
+          value={text}
+          onChange={(e) => onChange(e.target.value)}
+          disabled={locked}
+          rows={payload.form === "eroerterung" ? 16 : payload.form === "photo" ? 5 : 10}
+          placeholder={placeholder}
+          aria-label="Dein Text"
+          spellCheck={false}
+          autoCapitalize="sentences"
+          className="w-full resize-y rounded-2xl bg-transparent px-4 py-3 text-base leading-relaxed outline-none placeholder:text-ink-3"
+        />
+      </div>
+      <div className="mt-2 flex flex-wrap items-center justify-between gap-2 text-sm">
+        <span className={`tabular-nums font-semibold ${words === 0 ? "text-ink-3" : inRange ? "text-green" : "text-yellow"}`} aria-live="polite">
+          {words} {words === 1 ? "Wort" : "Wörter"}
+          <span className="font-normal text-ink-3"> · Ziel: {target}</span>
+        </span>
+        {!feedback && <span className="text-ink-3">Absätze mit Leerzeile trennen. Sprache prüfst du nachher selbst.</span>}
+      </div>
+    </div>
+  );
 }
 
 // --- MCQ ------------------------------------------------------------------------

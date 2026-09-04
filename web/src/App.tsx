@@ -6,6 +6,7 @@ import { DashboardView } from "./views/DashboardView";
 import { OverviewView } from "./views/OverviewView";
 import { PreviewView } from "./views/PreviewView";
 import { FormulaView } from "./views/FormulaView";
+import { HelpView } from "./views/HelpView";
 import { PrimerIndexView } from "./views/PrimerIndexView";
 import { PrimerView } from "./views/PrimerView";
 import { ResultView } from "./views/ResultView";
@@ -44,8 +45,9 @@ function Header() {
   const inSession = pathname.startsWith("/session");
   if (inSession) return null;
   return (
-    <header className="mx-auto flex max-w-5xl items-center justify-between px-4 pt-4">
-      <Link to={profile ? "/home" : "/"} className="flex items-center gap-2 font-extrabold tracking-tight">
+    // flex-wrap: five items must never force the mobile layout viewport wider than the screen.
+    <header className="mx-auto flex max-w-5xl flex-wrap items-center justify-between gap-y-1 px-4 pt-4">
+      <Link to={profile ? "/home" : "/"} className="flex min-w-0 items-center gap-2 font-extrabold tracking-tight">
         <span className="grid h-9 w-9 place-items-center rounded-xl bg-linear-to-br from-brand to-brand-2 text-lg">🎓</span>
         <span>
           MSA <span className="gradient-text">Trainer</span>
@@ -63,6 +65,10 @@ function Header() {
             </Link>
           </>
         )}
+        <Link to="/hilfe" className="rounded-xl px-2 py-2 text-ink-2 hover:bg-surface hover:text-ink sm:px-3" title="Hilfe: So funktioniert der MSA Trainer" aria-label="Hilfe">
+          <span aria-hidden>❓</span>
+          <span className="ml-1 hidden font-semibold sm:inline">Hilfe</span>
+        </Link>
         <button onClick={cycle} className="rounded-xl px-3 py-2 text-ink-2 hover:bg-surface" title={`Design: ${theme}`} aria-label="Design wechseln">
           {theme === "dark" ? "🌙" : theme === "light" ? "☀️" : "🌗"}
         </button>
@@ -151,6 +157,7 @@ function Shell() {
           />
           <Route path="/preview/:id" element={<PreviewView />} />
           <Route path="/formeln" element={<FormulaView />} />
+          <Route path="/hilfe" element={<HelpView />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </main>

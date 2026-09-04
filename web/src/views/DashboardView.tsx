@@ -4,6 +4,7 @@ import { useApp } from "@/app/state";
 import { ampelFor } from "@/core/mastery";
 import type { AmpelState, Subject, Topic } from "@/core/types";
 import { Ampel, AMPEL_LABEL, Button, Chip, Ring, SUBJECT_EMOJI, SUBJECT_LABEL } from "@/ui/primitives";
+import { WelcomeTour } from "@/ui/WelcomeTour";
 
 const SUBJECTS: Subject[] = ["MATH", "DE", "EN"];
 const SUBJECT_KEY = "msa:subject";
@@ -73,6 +74,8 @@ export function DashboardView() {
 
   return (
     <div className={`subject-${subject} mx-auto max-w-5xl px-4 pb-16`}>
+      <WelcomeTour />
+
       {/* Hero */}
       <div className="glass mt-4 flex flex-col gap-5 p-5 sm:flex-row sm:items-center sm:justify-between sm:p-7 anim-pop">
         <div className="flex items-center gap-4">
@@ -99,7 +102,8 @@ export function DashboardView() {
       </div>
 
       {/* Subject tabs */}
-      <div className="mt-6 flex gap-2 overflow-x-auto pb-1">
+      <div className="mt-6 mb-2 text-xs font-bold uppercase tracking-wider text-ink-3">Fach wählen</div>
+      <div className="flex gap-2 overflow-x-auto pb-1">
         {SUBJECTS.map((s) => (
           <button key={s} onClick={() => pick(s)} className={`subject-${s} flex shrink-0 items-center gap-2 rounded-2xl px-4 py-2.5 font-semibold transition-all ${subject === s ? "accent-gradient text-white shadow-lg" : "bg-surface text-ink-2 hover:bg-surface-2"}`} aria-pressed={subject === s}>
             <span>{SUBJECT_EMOJI[s]}</span>
@@ -130,6 +134,9 @@ export function DashboardView() {
             📐 Formelblatt ansehen
           </Link>
         )}
+        <Link to="/hilfe" className="inline-flex items-center gap-2 rounded-2xl bg-surface px-4 py-2 text-sm font-semibold text-ink-2 hover:bg-surface-2 hover:text-ink">
+          ❓ So funktioniert's
+        </Link>
       </div>
 
       {/* Topics */}

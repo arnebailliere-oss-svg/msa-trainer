@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useApp } from "@/app/state";
 import { Button, Card } from "@/ui/primitives";
 
@@ -102,7 +102,12 @@ export function StartView() {
           ＋ Neues Profil anlegen
         </Button>
       )}
-      <p className="mt-8 text-center text-xs text-ink-3">Alles bleibt auf diesem Gerät gespeichert. Kein Konto, keine Cloud.</p>
+      <p className="mt-8 text-center">
+        <Link to="/hilfe" className="inline-flex items-center gap-2 rounded-2xl bg-surface px-4 py-2 text-sm font-semibold text-ink-2 hover:bg-surface-2 hover:text-ink">
+          ❓ Neu hier? So funktioniert der MSA Trainer
+        </Link>
+      </p>
+      <p className="mt-6 text-center text-xs text-ink-3">Alles bleibt auf diesem Gerät gespeichert. Kein Konto, keine Cloud.</p>
     </div>
   );
 }

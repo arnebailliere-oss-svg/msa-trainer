@@ -1,6 +1,99 @@
 import { describe, expect, it } from "vitest";
-import { evaluate } from "./evaluators";
+import { countWords, evaluate } from "./evaluators";
 import type { RenderedQuestion } from "./types";
+
+describe("WRITE", () => {
+  const blog = (partial: Partial<RenderedQuestion> = {}): RenderedQuestion => ({
+    baseQuestionId: "W",
+    variantId: "W::v",
+    subject: "EN",
+    topicId: "EN_WRITE_EMAIL",
+    difficulty: 3,
+    qtype: "WRITE",
+    prompt: "Write back.",
+    payload: {
+      form: "blog",
+      min_words: 15,
+      max_words: 60,
+      content_points: [
+        { label: "parents", keywords: ["parents", "my mum"] },
+        { label: "age limit", keywords: ["age limit", "18"] },
+      ],
+      required: ["greeting", "closing", "paragraphs:2"],
+    },
+    solution: { model: "Hi!\n\nMy parents are fine with tattoos. I think the age limit of 18 makes sense.\n\nBest,\nSam" },
+    explanation: [],
+    vars: {},
+    ...partial,
+  });
+
+  it("counts words without header lines", () => {
+    expect(countWords("Subject: hello\n\nOne two three.")).toBe(3);
+    expect(countWords("  ")).toBe(0);
+  });
+
+  it("passes a text that hits the content points and the form", () => {
+    const text = "Hey Inky,\n\nMy parents are quite relaxed about tattoos, my mum even has one. About the age limit, I think 18 makes sense.\n\nBest wishes,\nLea";
+    const ev = evaluate(blog(), text);
+    expect(ev.isCorrect).toBe(true);
+    expect(ev.score).toBe(1);
+    expect(ev.checks?.filter((c) => c.weight > 0).every((c) => c.ok)).toBe(true);
+  });
+
+  it("fails when a content point is missing and reports which", () => {
+    const text = "Hey Inky,\n\nMy parents are quite relaxed about tattoos, my mum even has one and she loves it a lot.\n\nBest wishes,\nLea";
+    const ev = evaluate(blog(), text);
+    const missing = ev.checks?.find((c) => c.id === "cp:age limit");
+    expect(missing?.ok).toBe(false);
+    expect(ev.score).toBeLessThan(1);
+  });
+
+  it("never passes below the minimum word count", () => {
+    const ev = evaluate(blog(), "Hi! My parents and the age limit 18. Best, Sam");
+    expect(ev.checks?.find((c) => c.id === "words")?.ok).toBe(false);
+    expect(ev.isCorrect).toBe(false);
+  });
+
+  it("flags Germanisms as unscored hints", () => {
+    const text = "Hey Inky,\n\nI have 16 years and my parents like tattoos since two years, so the age limit of 18 is fine for me.\n\nBest,\nSam";
+    const ev = evaluate(blog(), text);
+    const hints = ev.checks?.filter((c) => c.weight === 0) ?? [];
+    expect(hints.length).toBe(2);
+    expect(ev.isCorrect).toBe(true); // hints do not cost points
+  });
+
+  it("accepts its own Musterlösung", () => {
+    const q = blog();
+    expect(evaluate(q, (q.solution as { model: string }).model).isCorrect).toBe(true);
+  });
+
+  it("checks the German Erörterung rules", () => {
+    const q = blog({
+      subject: "DE",
+      payload: { form: "eroerterung", min_words: 10, required: ["both_sides", "belege", "transitions", "opinion_last", "standard_language"] },
+      solution: { model: "" },
+    });
+    const good = "Ein Vorteil ist die Zeit, zum Beispiel morgens. Außerdem zeigt eine Studie Nutzen. Jedoch gibt es Nachteile. Darüber hinaus kostet es Geld. Insgesamt bin ich der Meinung, dass es sich lohnt.";
+    const ev = evaluate(q, good);
+    expect(ev.isCorrect).toBe(true);
+    const early = "Ich finde es gut. Ein Vorteil ist die Zeit, zum Beispiel morgens. Außerdem zeigt eine Studie Nutzen. Jedoch gibt es Nachteile, das ist krass. Darüber hinaus kostet es Geld.";
+    const ev2 = evaluate(q, early);
+    expect(ev2.checks?.find((c) => c.id === "opinion_last")?.ok).toBe(false);
+    expect(ev2.checks?.find((c) => c.id === "standard_language")?.ok).toBe(false);
+  });
+
+  it("scores a Schreibplan per filled field", () => {
+    const q = blog({
+      subject: "DE",
+      payload: { form: "schreibplan", fields: [{ id: "a", label: "A" }, { id: "b", label: "B" }, { id: "c", label: "C" }, { id: "d", label: "D" }] },
+      solution: { model_fields: { a: "eins zwei drei", b: "eins zwei drei", c: "eins zwei drei", d: "eins zwei drei" } },
+    });
+    const ev = evaluate(q, { a: "Anlass ist klar", b: "Frage steht fest", c: "These lautet so", d: "" });
+    expect(ev.score).toBe(0.75);
+    expect(ev.isCorrect).toBe(true);
+    expect(evaluate(q, { a: "kurz" }).isCorrect).toBe(false);
+  });
+});
 
 const rq = (partial: Partial<RenderedQuestion>): RenderedQuestion => ({
   baseQuestionId: "Q",

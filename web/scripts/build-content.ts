@@ -12,7 +12,7 @@ import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from 
 import { join, resolve } from "node:path";
 import { evaluate } from "../src/core/evaluators";
 import { parseFraction, reduceFraction } from "../src/core/normalizers";
-import type { ClozePayload, ContentPack, ContentSection, Lesson, MatchPayload, McqPayload, Passage, Primer, Question, ShortPayload, Topic } from "../src/core/types";
+import type { ClozePayload, ContentPack, ContentSection, Lesson, MatchPayload, McqPayload, Passage, Primer, Question, ShortPayload, Topic, WritePayload } from "../src/core/types";
 import { hasPlaceholder, parseExplanation, renderFigureSpec, renderPreview } from "../src/core/variants";
 
 const ROOT = resolve(import.meta.dirname, "../..");
@@ -201,6 +201,24 @@ for (const q of questions) {
       if (new Set(sol.pairs.map((x) => x[0])).size !== sol.pairs.length) error(where, "MATCH left item used twice");
       if (new Set(sol.pairs.map((x) => x[1])).size !== sol.pairs.length) error(where, "MATCH right item used twice");
     }
+  } else if (q.qtype === "WRITE") {
+    const p = q.payload as WritePayload;
+    const sol = q.solution as { model?: unknown; model_fields?: Record<string, unknown> };
+    if (!["email", "blog", "photo", "mediation", "eroerterung", "schreibplan"].includes(p.form)) error(where, `WRITE form invalid: ${p.form}`);
+    if (templated) error(where, "WRITE tasks cannot be templated");
+    if (p.form === "schreibplan") {
+      if (!p.fields?.length) error(where, "WRITE schreibplan needs fields");
+      if (!sol.model_fields) error(where, "WRITE schreibplan solution needs model_fields");
+      else for (const f of p.fields ?? []) if (typeof sol.model_fields[f.id] !== "string") error(where, `model_fields lacks "${f.id}"`);
+      if (new Set((p.fields ?? []).map((f) => f.id)).size !== (p.fields ?? []).length) error(where, "WRITE duplicate field ids");
+    } else {
+      if (typeof sol.model !== "string" || !sol.model.trim()) error(where, "WRITE solution needs model (the Musterlösung)");
+      if (!p.min_words) error(where, "WRITE needs min_words");
+      if (!p.content_points?.length && !p.required?.length) error(where, "WRITE needs content_points or required");
+      for (const cp of p.content_points ?? []) if (!cp.keywords?.length || cp.keywords.some((k) => !k.trim())) error(where, `content point "${cp.label}" has no keywords`);
+      const known = ["greeting", "closing", "subject", "sentences", "paragraphs", "both_sides", "transitions", "belege", "opinion_last", "standard_language"];
+      for (const r of p.required ?? []) if (!known.includes(r.split(":")[0]!)) error(where, `unknown requirement "${r}"`);
+    }
   }
 
   // Dynamic checks: render previews and make sure the evaluator accepts the solution.
@@ -253,6 +271,15 @@ for (const q of questions) {
     if (r.qtype === "MATCH") {
       const sol = (r.solution as { pairs: [string, string][] }).pairs;
       if (!evaluate(r, sol).isCorrect) error(where, `render #${i}: evaluator rejects its own pairs`);
+    }
+    if (r.qtype === "WRITE") {
+      // The Musterlösung must earn every scored point, otherwise a content point is unreachable.
+      const wp = r.payload as WritePayload;
+      const sol = r.solution as { model?: string; model_fields?: Record<string, string> };
+      const ev = evaluate(r, wp.form === "schreibplan" ? (sol.model_fields ?? {}) : (sol.model ?? ""));
+      const failed = (ev.checks ?? []).filter((c) => c.weight > 0 && !c.ok);
+      if (failed.length) error(where, `Musterlösung fails its own checks: ${failed.map((c) => `${c.label}${c.detail ? ` (${c.detail})` : ""}`).join("; ")}`);
+      if (!ev.isCorrect) error(where, "evaluator rejects the Musterlösung");
     }
     if (i === 0) for (const s of r.explanation) checkTex(where, s.body);
   }

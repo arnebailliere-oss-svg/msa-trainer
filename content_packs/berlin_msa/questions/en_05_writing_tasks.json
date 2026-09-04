@@ -1,0 +1,268 @@
+[
+  {
+    "id": "EN_WRITE_PHOTO_CONCERT",
+    "subject": "EN",
+    "topicId": "EN_WRITE_GUIDED",
+    "difficulty": 2,
+    "qtype": "WRITE",
+    "prompt": "**Writing Part 1: Your photo.** You have sent a photo from a concert to your friend. Your friend answers:\n\n*„Wow, what a cool photo! Where did you take that? Who is on the stage? What is going on?“*\n\nAnswer your friend's questions. Write **30–50 words**.",
+    "payload": {
+      "form": "photo",
+      "min_words": 30,
+      "max_words": 50,
+      "content_points": [
+        { "label": "Where the photo was taken", "keywords": ["in ", "at the", "at a"] },
+        { "label": "Who is on the stage", "keywords": ["stage", "band", "singer", "group", "playing", "perform"] },
+        { "label": "What is going on", "keywords": ["concert", "festival", "show", "crowd", "fans", "singing", "dancing", "music"] }
+      ],
+      "required": ["sentences"]
+    },
+    "solution": {
+      "model": "I took this photo at the Waldbühne in Berlin last Saturday. The band on the stage is Provinz — they are my favourite German band. It was an open-air concert, the crowd was singing every song and we were dancing the whole evening!"
+    },
+    "explanation": [
+      { "kind": "steps", "title": "So bekommst du alle Inhaltspunkte", "body": "1. Jede Frage deines Freundes **einzeln** beantworten: Wo? Wer? Was passiert?\n2. Ein bis zwei Sätze pro Frage — das reicht für 30–50 Wörter.\n3. Am Ende **nachzählen**: unter 30 Wörtern gibt es Abzug." },
+      { "kind": "mistake", "title": "Typische Fehler", "body": "- *I make a photo* → **I take a photo**\n- *at Saturday* → **on Saturday**\n- Eine Frage vergessen → ein Inhaltspunkt weg." },
+      { "kind": "remember", "body": "Part 1 = **5 Punkte**, halb Inhalt, halb Sprache. Kurz, vollständig, in ganzen Sätzen." }
+    ],
+    "tags": ["writing", "photo", "exam", "msa2023"],
+    "source": "Nach MSA Berlin 2023 Englisch, Writing Part 1 (Aufgabenformat; Foto durch Beschreibung ersetzt)"
+  },
+  {
+    "id": "EN_WRITE_PHOTO_FIREWORKS",
+    "subject": "EN",
+    "topicId": "EN_WRITE_GUIDED",
+    "difficulty": 2,
+    "qtype": "WRITE",
+    "prompt": "**Writing Part 1: Your photo.** You have sent a photo of fireworks over a city to your friend. He texts back:\n\n*„That looks amazing! Where is this from? Did you take the picture yourself? What was the occasion?“*\n\nAnswer your friend's questions. Write **30–50 words** in total.",
+    "payload": {
+      "form": "photo",
+      "min_words": 30,
+      "max_words": 50,
+      "content_points": [
+        { "label": "Where the photo is from", "keywords": ["in ", "from ", "at the"] },
+        { "label": "Who took the picture", "keywords": ["took", "myself", "my dad", "my mum", "my brother", "my sister", "my friend", "taken by"] },
+        { "label": "What the occasion was", "keywords": ["new year", "birthday", "festival", "celebrat", "wedding", "holiday", "party", "national day", "silvester"] }
+      ],
+      "required": ["sentences"]
+    },
+    "solution": {
+      "model": "This photo is from Sydney, where we spent the holidays. I didn't take it myself — my dad took it from the balcony of our hotel. The fireworks were part of the New Year celebrations over the harbour. Thousands of people were watching and cheering."
+    },
+    "explanation": [
+      { "kind": "steps", "title": "Drei Fragen, drei Antworten", "body": "1. *Where is this from?* → Ort nennen.\n2. *Did you take it yourself?* → ja/nein **und wer**.\n3. *What was the occasion?* → Anlass (New Year, birthday …)." },
+      { "kind": "remember", "body": "Nicht mehr als 50 Wörter — Genauigkeit zählt, nicht Länge." }
+    ],
+    "tags": ["writing", "photo", "exam", "msa2022"],
+    "source": "Nach MSA Berlin Musterprüfung 2022 Englisch, Writing Part 1 (Foto durch Beschreibung ersetzt)"
+  },
+  {
+    "id": "EN_WRITE_PHOTO_SCHOOLTRIP",
+    "subject": "EN",
+    "topicId": "EN_WRITE_GUIDED",
+    "difficulty": 2,
+    "qtype": "WRITE",
+    "prompt": "**Writing Part 1: Your photo.** You have posted a photo of your class in front of a castle. Your friend James wants to know more:\n\n*„Nice one! Where are you? What are you doing there? Who is the person in the red jacket?“*\n\nAnswer his questions. Write **30–50 words**.",
+    "payload": {
+      "form": "photo",
+      "min_words": 30,
+      "max_words": 50,
+      "content_points": [
+        { "label": "Where you are", "keywords": ["in ", "at ", "castle", "near "] },
+        { "label": "What you are doing there", "keywords": ["trip", "tour", "visit", "excursion", "project", "learning", "sightseeing"] },
+        { "label": "Who the person in the red jacket is", "keywords": ["teacher", "guide", "friend", "classmate", "my ", "our "] }
+      ],
+      "required": ["sentences"]
+    },
+    "solution": {
+      "model": "We are in Potsdam, in front of Sanssouci castle. Our class is on a school trip and we are doing a guided tour about the Prussian kings. The person in the red jacket is our history teacher, Mrs Weber — she organised the whole trip."
+    },
+    "explanation": [
+      { "kind": "steps", "title": "Checkliste", "body": "1. Ort → *We are in …*\n2. Tätigkeit → *We are on a school trip / doing a tour …*\n3. Person → *The person in … is our teacher …*" },
+      { "kind": "mistake", "body": "*We make a trip* → **We are on a trip**. *The person with the red jacket* → **in the red jacket**." }
+    ],
+    "tags": ["writing", "photo", "exam", "msa2024"],
+    "source": "Nach MSA Berlin 2024 Englisch, Writing Part 1 (Foto durch Beschreibung ersetzt)"
+  },
+  {
+    "id": "EN_WRITE_BLOG_FOOD_2022",
+    "subject": "EN",
+    "topicId": "EN_WRITE_EMAIL",
+    "difficulty": 3,
+    "qtype": "WRITE",
+    "passage": "X_EN_BLOG_FOOD_2022",
+    "prompt": "**Writing Part 2: The environment and the food.** Read what the blogger has written. Then write back, answering **all** of his questions. Write **a minimum of 100 words**.",
+    "payload": {
+      "form": "blog",
+      "min_words": 100,
+      "content_points": [
+        { "label": "React: have you thought about your food choices?", "keywords": ["thought about", "think about", "never really", "aware", "my food", "what i eat"] },
+        { "label": "Health benefits of eating less meat", "keywords": ["health", "energy", "digest", "weight", "heart", "fit"] },
+        { "label": "Which bags you use when shopping and why", "keywords": ["bag", "backpack", "basket"] },
+        { "label": "What the world would look like if everybody ate less meat", "keywords": ["world", "planet", "climate", "environment", "animals", "emissions"] }
+      ],
+      "required": ["greeting", "closing", "paragraphs:3"]
+    },
+    "solution": {
+      "model": "Hey!\n\nTo be honest, I had never really thought about how my food affects the planet until I read your post. But you are right, it is a big topic.\n\nIf I ate less meat, I would expect some clear health benefits: more energy, better digestion and maybe a lower risk of heart problems. Many doctors say that a diet with more vegetables keeps you fit.\n\nWhen I go shopping, I always take a cotton bag or my backpack. Plastic bags end up in the sea, and a cotton bag can be used hundreds of times.\n\nIf everybody ate less meat, the world would look greener: fewer emissions, more space for forests and less suffering for animals. It would not solve every problem, but it would be a good start.\n\nThanks for the interesting post!\n\nBest wishes,\nLea"
+    },
+    "explanation": [
+      { "kind": "steps", "title": "Vier Fragen = vier Inhaltspunkte", "body": "1. **Markiere** jede Frage im Blogtext, bevor du schreibst.\n2. Beantworte sie **in derselben Reihenfolge**, jede in einem eigenen Absatz.\n3. Anrede (*Hey!* / *Hi …,*), Schluss (*Best wishes,*), Name.\n4. Mindestens 100 Wörter — nachzählen." },
+      { "kind": "mistake", "title": "Was Punkte kostet", "body": "- Eine Frage übersehen → Inhaltspunkt weg (halbe Punktzahl!).\n- Unter 100 Wörtern.\n- Kein Absatz, keine Anrede: *Textform* zählt zur Sprache." },
+      { "kind": "remember", "body": "Part 2 = **12 Punkte**: 6 Inhalt, 6 Sprache. Alle Fragen beantwortet + Form eingehalten = die Inhaltshälfte ist sicher." }
+    ],
+    "tags": ["writing", "blog", "email", "exam", "msa2022"],
+    "source": "MSA Berlin Musterprüfung 2022 Englisch, Writing Part 2 (12 P)"
+  },
+  {
+    "id": "EN_WRITE_BLOG_MEDIA_2023",
+    "subject": "EN",
+    "topicId": "EN_WRITE_EMAIL",
+    "difficulty": 4,
+    "qtype": "WRITE",
+    "passage": "X_EN_BLOG_MEDIA_2023",
+    "prompt": "**Writing Part 2: Media and biases.** Read what the blogger has written. Then write back, answering **all** of his questions. Write **a minimum of 100 words**.",
+    "payload": {
+      "form": "blog",
+      "min_words": 100,
+      "content_points": [
+        { "label": "Have you thought about how media shapes your views?", "keywords": ["thought about", "think about", "aware", "never", "shape"] },
+        { "label": "A situation where you strongly disagreed with something you read or watched", "keywords": ["disagree", "didn't agree", "did not agree", "angry", "wrong"] },
+        { "label": "Have you noticed a bias of your own?", "keywords": ["bias", "one-sided", "prejudice", "my own opinion"] },
+        { "label": "Do you agree with the author — and why (not)?", "keywords": ["agree", "you are right", "you're right", "i think you", "point"] }
+      ],
+      "required": ["greeting", "closing", "paragraphs:3"]
+    },
+    "solution": {
+      "model": "Hi!\n\nThat is a very interesting point. To be honest, I had never really thought about how much the media shape my views before I read your post.\n\nI can think of a situation, though. Last year a YouTuber I follow said that school uniforms are a great idea. I strongly disagreed with him — I think uniforms take away the freedom to show who you are. But then I realised something about my own bias: I only watch channels that share my opinion, so I never hear the other side.\n\nSo yes, I agree with you. If we all thought more about what we read and watch, it would be easier to understand people with different opinions instead of just calling them wrong.\n\nThanks for making me think!\n\nBest,\nTom"
+    },
+    "explanation": [
+      { "kind": "steps", "title": "So gehst du vor", "body": "1. Fragen markieren: *thought about it?* · *situation you disagreed with?* · *bias of yours?* · *agree — why?*\n2. Für jede Frage **ein Beispiel aus deinem Leben** — das bringt die Punkte für *weitere Aspekte*.\n3. Eigene Meinung **begründen**: *I agree because …*" },
+      { "kind": "terms", "title": "Nützliche Wendungen", "body": "- *To be honest, I had never thought about …*\n- *I strongly disagreed with … because …*\n- *I noticed that I tend to …*\n- *I agree with you that …* / *I don't fully agree because …*" },
+      { "kind": "remember", "body": "Blog-Antwort = informell (*Hi!*, *Best,*), aber **keine Chat-Sprache** und keine Abkürzungen wie *u* oder *thx*." }
+    ],
+    "tags": ["writing", "blog", "email", "exam", "msa2023"],
+    "source": "MSA Berlin 2023 Englisch, Writing Part 2 (12 P)"
+  },
+  {
+    "id": "EN_WRITE_BLOG_TATTOOS_2024",
+    "subject": "EN",
+    "topicId": "EN_WRITE_EMAIL",
+    "difficulty": 3,
+    "qtype": "WRITE",
+    "passage": "X_EN_BLOG_TATTOOS_2024",
+    "prompt": "**Writing Part 2: Tattoos.** Read what the blogger has written. Then write back, answering **all** of his questions. Write **a minimum of 100 words**.",
+    "payload": {
+      "form": "blog",
+      "min_words": 100,
+      "content_points": [
+        { "label": "What your parents think about tattoos", "keywords": ["parents", "my mum", "my dad", "my mother", "my father"] },
+        { "label": "Would you like to get one — why / why not?", "keywords": ["i would", "i wouldn't", "i'd like", "i don't want", "i want", "i'd love", "one day"] },
+        { "label": "Which tattoos are an absolute no-go for you, and why", "keywords": ["no-go", "no go", "never", "offensive", "racist", "face", "name of", "hurt"] },
+        { "label": "Your opinion on the age limit", "keywords": ["age limit", "18", "eighteen", "sixteen", "16", "limit"] }
+      ],
+      "required": ["greeting", "closing", "paragraphs:3"]
+    },
+    "solution": {
+      "model": "Hey Inky,\n\nI read your post and I know exactly how you feel!\n\nMy parents are quite relaxed about tattoos. My mum has a small one on her wrist, but they both say I should wait until I am 18 because I might regret it later.\n\nI would like to get one one day — something small that means a lot to me, maybe the date my little sister was born. But I want to be sure about it first.\n\nFor me, tattoos with offensive or racist symbols are an absolute no-go, and so are names of boyfriends or girlfriends. They can hurt other people, and a relationship can end much faster than a tattoo.\n\nAbout the age limit: I understand you, but I think the limit at 18 makes sense. A tattoo is for life, and at 16 many of us change our minds every month. Waiting two years is not that long.\n\nHope this helps!\n\nBest,\nSam"
+    },
+    "explanation": [
+      { "kind": "steps", "title": "Vier Punkte im Blog, vier Absätze bei dir", "body": "1. Eltern → *My parents think …*\n2. Selbst? → *I would (not) like to … because …*\n3. No-go → *For me, … are an absolute no-go, because …*\n4. Altersgrenze → *I think the age limit … because …*" },
+      { "kind": "mistake", "body": "*I have 16 years* → **I am 16**. *since two years* → **for two years**. Und: Der Blogger heißt **Inky** — sprich ihn an!" }
+    ],
+    "tags": ["writing", "blog", "email", "exam", "msa2024"],
+    "source": "MSA Berlin 2024 Englisch, Writing Part 2 (10 P)"
+  },
+  {
+    "id": "EN_WRITE_MED_JULIAN_2022",
+    "subject": "EN",
+    "topicId": "EN_WRITE_MEDIATION",
+    "difficulty": 4,
+    "qtype": "WRITE",
+    "passage": "X_EN_MED_JULIAN_2022",
+    "prompt": "**Writing Part 3: Mediation.** Your Irish friend Kim is interested in stories of young people who change the way people do things. You found the German article above.\n\n- Write an **e-mail** to Kim telling her what the student did.\n- Mention **at least four aspects** that improved or will improve his career chances.\n- Do **not** translate word for word. Write complete sentences.",
+    "payload": {
+      "form": "mediation",
+      "min_words": 80,
+      "content_points": [
+        { "label": "General information: Julian built a website to find vaccination appointments", "keywords": ["vaccin", "appointment", "website", "booking"] },
+        { "label": "Aspect: millions of people used the site", "keywords": ["million", "thousands"] },
+        { "label": "Aspect: podcasts, radio, newspapers reported about him", "keywords": ["podcast", "radio", "newspaper", "media", "news"] },
+        { "label": "Aspect: he taught himself programming before finishing school", "keywords": ["programm", "coding", "code", "taught himself", "learnt"] },
+        { "label": "Aspect: free site, donations only / wants to build more apps", "keywords": ["free", "donation", "app", "future", "continue"] }
+      ],
+      "required": ["greeting", "closing", "paragraphs:3"]
+    },
+    "solution": {
+      "model": "Hi Kim,\n\nyou asked me for a story about a young person who changed things — I found a great one in a German newspaper.\n\nJulian Ambrozy is a 17-year-old student from Esslingen. During the pandemic his grandfather could not find a vaccination appointment because the booking websites were so complicated. So Julian built his own website that shows all free appointments in one place.\n\nThe site was a huge success: millions of people used it, he was invited to podcasts and newspapers and radio stations reported about him. He had taught himself programming years before, and he built the whole site while still at school. The website is free — he only asks for donations to pay for the servers. He says he wants to continue developing apps that help people in everyday life.\n\nI think all of this will help his career a lot. What do you think?\n\nSee you soon,\nLena"
+    },
+    "explanation": [
+      { "kind": "what", "title": "Mediation heißt: Sinn übertragen", "body": "Nicht Wort für Wort übersetzen. Lies den Artikel, **markiere die Fakten**, schreib sie **in eigenen englischen Sätzen** in eine E-Mail." },
+      { "kind": "steps", "title": "Aufbau", "body": "1. Anrede + Grund (*you asked me for a story …*).\n2. Allgemeine Information: **wer** hat **was** gemacht?\n3. Mindestens **vier Aspekte** für die Karriere — zählen!\n4. Schluss + Gruß." },
+      { "kind": "remember", "body": "Part 3 = **8 Punkte**, 4 Inhalt + 4 Sprache. Die Inhaltspunkte stehen im Artikel — du musst sie nur finden und übertragen." }
+    ],
+    "tags": ["writing", "mediation", "email", "exam", "msa2022"],
+    "source": "MSA Berlin Musterprüfung 2022 Englisch, Writing Part 3 (8 P)"
+  },
+  {
+    "id": "EN_WRITE_MED_CHATGPT_2023",
+    "subject": "EN",
+    "topicId": "EN_WRITE_MEDIATION",
+    "difficulty": 4,
+    "qtype": "WRITE",
+    "passage": "X_EN_MED_CHATGPT_2023",
+    "prompt": "**Writing Part 3: Mediation.** Your Irish friend Liam is interested in artificial intelligence and what it means for schools. He asked you for an interesting German article.\n\n- Write an **e-mail** to Liam telling him what the article says about ChatGPT at school.\n- Mention **at least four aspects** of how AI influences schools.\n- Do **not** translate word for word. Write complete sentences.",
+    "payload": {
+      "form": "mediation",
+      "min_words": 80,
+      "content_points": [
+        { "label": "General information: ChatGPT is an AI chatbot many German students use, and teachers have to deal with it", "keywords": ["chatbot", "artificial intelligence", "ai "] },
+        { "label": "Aspect: it can write essays / generate texts", "keywords": ["essay", "write text", "writes text", "generate", "homework"] },
+        { "label": "Aspect: it can summarise or analyse texts", "keywords": ["summar", "analys"] },
+        { "label": "Aspect: students use it for research and presentations", "keywords": ["research", "presentation"] },
+        { "label": "Aspect: risk of cheating / students stop thinking for themselves", "keywords": ["cheat", "think for themselves", "critical", "own thinking", "lazy"] }
+      ],
+      "required": ["greeting", "closing", "paragraphs:3"]
+    },
+    "solution": {
+      "model": "Hi Liam,\n\nI found a German article about AI at school that you might like.\n\nIt is about ChatGPT, an AI chatbot that many students in Germany already use — and teachers have to find a way to deal with it. The chatbot can write whole essays and other texts, it can summarise or analyse texts, and it can even write computer programs. Its texts are so good that it is hard to tell them from texts written by humans.\n\nStudents use it to do their homework, to do research and to prepare presentations. That sounds helpful, but the article also describes the risks: some students use it to cheat, and many stop thinking critically for themselves. That is why more and more schools make rules: AI as a tool is fine, AI instead of your own brain is not.\n\nWhat is the situation in Ireland? Do your teachers allow it?\n\nTalk soon,\nMax"
+    },
+    "explanation": [
+      { "kind": "steps", "title": "Vom Artikel zur E-Mail", "body": "1. Allgemeine Info in **einem Satz**: Was ist ChatGPT, wer nutzt es?\n2. Vier Aspekte aus dem Text: schreiben · zusammenfassen · Hausaufgaben/Referate · Schummeln/Denken.\n3. Als **E-Mail** verpacken: Anrede, Grund, Schluss." },
+      { "kind": "mistake", "body": "Deutsche Sätze 1:1 übersetzen (*The chatbot makes that*) — lieber kurz und richtig: *The chatbot can write essays.*" }
+    ],
+    "tags": ["writing", "mediation", "email", "exam", "msa2023"],
+    "source": "MSA Berlin 2023 Englisch, Writing Part 3 (8 P)"
+  },
+  {
+    "id": "EN_WRITE_MED_TREPPE_2024",
+    "subject": "EN",
+    "topicId": "EN_WRITE_MEDIATION",
+    "difficulty": 4,
+    "qtype": "WRITE",
+    "passage": "X_EN_MED_TREPPE_2024",
+    "prompt": "**Writing Part 3: Mediation — Neighbourhood project.** Your Irish friend Kim and her friend want to start a neighbourhood project and are looking for ideas. You found the German article above.\n\n- Write an **e-mail** to Kim telling her what the project is about.\n- Mention **at least four important aspects**.\n- Do **not** translate word for word. Write complete sentences.",
+    "payload": {
+      "form": "mediation",
+      "min_words": 80,
+      "content_points": [
+        { "label": "General information: a pop-up café in the stairwell of a building", "keywords": ["stair", "café", "cafe", "coffee"] },
+        { "label": "Aspect: neighbours get to know each other / against anonymity", "keywords": ["neighbour", "neighbor", "know each other", "anonym", "meet"] },
+        { "label": "Aspect: someone from the house has to invite the team", "keywords": ["invite", "invitation"] },
+        { "label": "Aspect: funded by grants and volunteers / students", "keywords": ["volunteer", "fund", "grant", "student", "free"] },
+        { "label": "Aspect: posters, ringing every doorbell, older people benefit", "keywords": ["poster", "doorbell", "ring", "older people", "elderly", "old people"] }
+      ],
+      "required": ["greeting", "closing", "paragraphs:3"]
+    },
+    "solution": {
+      "model": "Hi Kim,\n\nI hope you are fine! I just read about a great neighbourhood project from Berlin that could be perfect for you and your friend.\n\nIt is called \"Auf halber Treppe\" (\"halfway up the stairs\"). A team sets up a small pop-up café in the stairwell of an apartment building for two or three hours. The idea is that neighbours who live in the same house finally get to know each other over coffee and cake — in a big city most people don't even know who lives next door.\n\nHere is how it works: someone from the house has to invite the team, because they don't want to force anything on people. The project is paid for by grants and run by student volunteers. Before the café opens, the team hangs up posters in the stairwell, sends invitations to every flat and rings every doorbell once more. Especially older people, who often don't go out any more, really enjoy it.\n\nAll you need is a table, coffee, cake and some candles. Maybe you could start with your own building?\n\nLots of love,\nMia"
+    },
+    "explanation": [
+      { "kind": "steps", "title": "Vier Aspekte finden", "body": "Lies den Artikel mit der Frage: *Was muss Kim wissen, um das nachzumachen?*\n1. Was ist es? (Pop-up-Café im Treppenhaus)\n2. Wozu? (Nachbarn kennenlernen)\n3. Wie läuft es? (Einladung, Plakate, Klingeln)\n4. Wer bezahlt? (Fördergelder, Ehrenamt)" },
+      { "kind": "terms", "title": "Wörter, die du brauchst", "body": "Treppenhaus → *stairwell* · Nachbarschaft → *neighbourhood* · ehrenamtlich → *voluntary / volunteers* · Fördergelder → *grants / funding* · einladen → *to invite*" },
+      { "kind": "remember", "body": "Deutsche Namen und Zitate darfst du übernehmen, aber **erkläre** sie kurz auf Englisch." }
+    ],
+    "tags": ["writing", "mediation", "email", "exam", "msa2024"],
+    "source": "MSA Berlin 2024 Englisch, Writing Part 3 (10 P)"
+  }
+]
