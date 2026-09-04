@@ -1,6 +1,6 @@
 # MSA Trainer — Project Board
 
-> Source of truth for progress. Updated by Claude as work moves. Last update: 2026-09-03 02:20
+> Source of truth for progress. Updated by Claude as work moves. Last update: 2026-09-04 01:30
 >
 > Columns: **Backlog** → **In Progress** → **Review** (built, needs verification) → **Done** (verified).
 
@@ -8,7 +8,7 @@
 Rebuild MSA Trainer as a fast, modern, youth-friendly **static web app / PWA** on GitHub Pages:
 teach → drill (fresh variants) → repeat (mastery + repair), Math first from the 2027 e-book, with automated content checks.
 
-**Content now:** 531 questions (142 templated → unlimited variants; 82 original-exam items 2023–2025; 307 legacy, 51 of them with generated figures), 12 lessons (incl. Formelblatt) with 3 interactive explorers and figure galleries, 14 Eulen-Lektionen (Frag Ferdinand, 150 Tafeln), 33 generated figures, 75 topics, 0 validation errors.
+**Content now:** 607 questions (180 templated: 142 number templates + 38 sentence banks; 82 original-exam items 2023–2025; 307 legacy math, 51 with generated figures). DE 100, EN 94, 22 lessons (12 Mathe incl. Formelblatt, 6 Deutsch, 4 Englisch) with explorers and figure galleries, 19 Eulen-Lektionen (14 Mathe, 3 Deutsch, 2 Englisch), 33 generated figures, 75 topics, 0 validation errors.
 
 **Milestones:** `d71e336` baseline · `b282d2f` web app end-to-end · `da469aa` modules 1–5 · `50d2610` all 16 Training sections · `01d0756` figures + widgets + exams 2023–2025 · `c9ea264` Formelblatt + audit · (next) exam mode + legacy figures
 
@@ -25,6 +25,7 @@ teach → drill (fresh variants) → repeat (mastery + repair), Math first from 
 - E1 · Core port to TS (115 unit tests), persistence
 - E2-1 … E2-3 · Schema v2, validator (schema + semantics + 60-render template exercise + KaTeX + figure rendering), legacy migration with 3 fixes
 - E3-1 … E3-15 · All 16 Training sections of the 2027 e-book: 11 lessons, 139 templated drills, per-question sources
+- E3-18 · **Deutsch and Englisch built from the 2026 e-books**: engine gets `pick` variables (sentence banks → fresh variants, constraints, validator checks); 18 new topics; DE 6 lessons (Kommasetzung, Rechtschreibung, Sprachwissen, Stil/Fehler, Textverständnis, Erörterung) + 3 primers (Hauptsatz/Nebensatz, das/dass, Wortarten) + 22 bank drills + reading texts; EN 4 lessons (Tenses, Modals/if/questions/comparison, Listening/Reading, Writing/Mediation/Vocab) + 2 primers (Verbformen, Zeitformen) + 16 bank drills + matching/signs/article/vocab items; cloze parts render inline; e2e `deutsch.spec.ts`, `english.spec.ts`
 - E7-2 · **All 14 Eulen-Lektionen** (Zeichen, Brüche, Prozent, Terme/Rechengesetze, Gleichungen, Potenzen, LGS, Stochastik, Funktionen, Parabel/pq, Einheiten, Fläche/Umfang/Winkel, Pythagoras/Trig, Körper): 150 boards with Ferdinand lines, 100 vocab cards, 73 quiz questions; every lesson has the owl card and 26 dense sections carry badges
 - E7-3 · **Figure galleries in lessons**: sections may carry `figures: [{caption, figure}]`; 19 sections now draw every shape they mention (Rechteck, Quadrat, Parallelogramm, Dreieck mit Höhe, Trapez, Kreis, 5 Winkelarten, Konstruktionsdreieck, Quader, Zylinder, Pyramide, Kegel, Kugel, Baumdiagramm, Säulen/Kreisdiagramm, Geraden/Punkte); new generators `angle`, `pyramid`, `cone`, `sphere`; lesson figures now render in TopicView too; e2e `lessons.spec.ts`
 - E7-1 · **Frag Ferdinand (Eulen-Lektionen)**: new content type `primers/*.json` (boards + `say` + vocab + quiz), schema + validator (quiz correctness, KaTeX, figures, references), progress flag per primer, chalkboard view `#/eule/:id` (Patrick Hand chalk font bundled, wipe animation, keyboard 1–5/Enter/arrows), ladder index `#/eule`, owl card at lesson top + inline badges on dense sections, dashboard entry; 3 primers live (Zeichen 15 Tafeln, Terme/Rechengesetze 14, Gleichungen 9); e2e `owl.spec.ts` desktop + mobile
@@ -46,7 +47,8 @@ teach → drill (fresh variants) → repeat (mastery + repair), Math first from 
 ## Backlog
 
 ### Content
-- E3-18 · **DE/EN**: lessons + CLOZE/MATCH templates (currently legacy-only, 57 + 61 static) · L
+- E3-20 · DE: Ferdinand primers for Stilmittel and Erörterung; EN: primer for e-mail writing · M
+- E3-21 · DE/EN exam-tagged originals for the Prüfungs-Modus (currently math only) · M
 - E3-19 · Optional: exam 2022 (text already extracted in scratch) · S
 
 ### UI
@@ -77,4 +79,4 @@ teach → drill (fresh variants) → repeat (mastery + repair), Math first from 
 ## Risks / Blockers
 - `gh` CLI is a portable install at `%LOCALAPPDATA%Programsghingh.exe` (not on PATH), logged in as arnebailliere-oss-svg.
 - Legacy math audited (E2-5). Legacy DE/EN (118 items) checked only by schema/render — see E3-18.
-- DE/EN have no lessons or templates yet — math-first was the agreed priority.
+- DE/EN: listening needs audio (only the publisher has it) and free writing cannot be auto-checked; the app teaches strategies and drills the recurring task types.

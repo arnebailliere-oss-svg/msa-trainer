@@ -1,0 +1,73 @@
+[
+  {
+    "id": "P_EN_VERBFORMEN",
+    "subject": "EN",
+    "title": "Verbformen von Anfang an",
+    "teaser": "Die fünf Gestalten eines Verbs, die drei Helfer be, have, do und wie Fragen und Verneinungen gebaut werden",
+    "hook": "Alle englischen Zeitformen sind aus denselben Bausteinen gemacht: ein Verb in einer seiner Formen, manchmal mit einem Helfer davor. Wenn du die Bausteine kennst, kannst du jede Zeit bauen. Wir fangen ganz vorn an.",
+    "outro": "Grundform, -s, -ing, 2. Form, 3. Form. Plus be, have, do. Mehr Material brauchst du für keine einzige Zeitform.",
+    "steps": [
+      {
+        "title": "Ein Verb, fünf Gestalten",
+        "body": "**go** – **goes** – **going** – **went** – **gone**\n\nGrundform, -s-Form, -ing-Form, 2. Form, 3. Form",
+        "say": "Fünf Gestalten, ein Verb. Jede Zeitform benutzt eine davon. Wer die Formen kennt, kann jede Zeit bauen."
+      },
+      {
+        "title": "Die Grundform",
+        "body": "to go, to play, to be\n\nNach **to**, nach **Modalverben** (*can go*), nach **do / does / did** (*Did you go?*)",
+        "say": "Die Grundform steht im Wörterbuch. Mit to davor heißt sie Infinitiv."
+      },
+      {
+        "title": "Die -s-Form",
+        "body": "he / she / it → **plays**, **goes**, **watches**\n\nNur im Simple Present.",
+        "say": "He, she, it, das s muss mit. Der häufigste Fehler in jeder Klassenarbeit."
+      },
+      {
+        "title": "Die -ing-Form",
+        "body": "play → play**ing**\n\nrun → run**n**ing\n\nwrite → writ**ing**\n\nFür alle Progressive-Zeiten: am / is / are / was / were + -ing",
+        "say": "Kurzer Vokal, Konsonant verdoppeln: running. Stummes e fällt weg: writing."
+      },
+      {
+        "title": "Die 2. Form: Simple Past",
+        "body": "regelmäßig: play → play**ed**\n\nunregelmäßig: go → **went**, see → **saw**",
+        "say": "Die zweite Form steht allein, ohne Hilfsverb: I went home."
+      },
+      {
+        "title": "Die 3. Form: past participle",
+        "body": "regelmäßig: play**ed** (wie die 2. Form)\n\nunregelmäßig: **gone**, **seen**, **written**\n\nImmer mit **have / has / had**.",
+        "say": "Have gone, has seen, had written. Nie allein. Wenn du have siehst, kommt die dritte Form."
+      },
+      {
+        "title": "Die drei Helfer",
+        "body": "**be**: am, is, are / was, were\n\n**have**: have, has / had\n\n**do**: do, does / did",
+        "say": "Diese drei bauen Fragen, Verneinungen und Zeitformen. Lern ihre Formen wie ein Gedicht."
+      },
+      {
+        "title": "Fragen mit do",
+        "body": "You like pizza. → **Do** you like pizza?\n\nShe likes pizza. → **Does** she like pizza?\n\nDas -s wandert zu **does**.",
+        "say": "Bei does und did steht das Verb wieder in der Grundform. Niemals „does she likes“."
+      },
+      {
+        "title": "Verneinen mit not",
+        "body": "I do **not** (don't) like it.\n\nShe does**n't** like it. He did**n't** come.\n\nI **am not**, he **isn't**, they **can't**.",
+        "say": "Bei be und Modalverben kommt not direkt dahinter. Bei allen anderen Verben brauchst du do."
+      }
+    ],
+    "vocab": [
+      { "term": "Grundform (Infinitiv)", "plain": "Die Form aus dem Wörterbuch.", "example": "go, to go" },
+      { "term": "-s-Form", "plain": "he/she/it im Simple Present.", "example": "she goes" },
+      { "term": "-ing-Form", "plain": "Für alle Progressive-Zeiten, nach be.", "example": "is going" },
+      { "term": "2. Form (Simple Past)", "plain": "Vergangenheit, steht allein.", "example": "went, played" },
+      { "term": "3. Form (past participle)", "plain": "Immer mit have/has/had.", "example": "has gone" },
+      { "term": "Hilfsverb", "plain": "Helfer: be, have, do.", "example": "is, has, did" },
+      { "term": "unregelmäßig", "plain": "Kein -ed, muss man lernen.", "example": "go – went – gone" }
+    ],
+    "quiz": [
+      { "prompt": "he/she/it im Simple Present: She ___ (play).", "choices": ["plays", "play", "playing", "played"], "correct": "plays", "explain": "he, she, it: das s muss mit." },
+      { "prompt": "Die -ing-Form von run?", "choices": ["running", "runing", "runnning", "runeing"], "correct": "running", "explain": "Kurzer Vokal, Konsonant verdoppeln." },
+      { "prompt": "Die 3. Form von go?", "choices": ["gone", "went", "goed", "going"], "correct": "gone", "explain": "go – went – gone. Die dritte Form steht nach have." },
+      { "prompt": "Frage: ___ she like pizza?", "choices": ["Does", "Do", "Is", "Has"], "correct": "Does", "explain": "he/she/it → does, danach die Grundform like." },
+      { "prompt": "Welche Form steht nach have?", "choices": ["3. Form (past participle)", "Grundform", "-ing-Form", "2. Form"], "correct": "3. Form (past participle)", "explain": "have gone, has seen, had written." }
+    ]
+  }
+]

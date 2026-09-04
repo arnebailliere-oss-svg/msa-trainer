@@ -1,0 +1,44 @@
+[
+  {
+    "id": "L_EN_GRAMMAR",
+    "subject": "EN",
+    "topicId": "EN_USE_MODALS",
+    "alsoFor": ["EN_USE_IF", "EN_USE_QUEST_NEG", "EN_USE_COMPARISON"],
+    "title": "Modal verbs, if-clauses, questions, comparison",
+    "primer": "P_EN_VERBFORMEN",
+    "intro": "Vier Grammatik-Bausteine, die in jedem Lese- und Schreibteil vorkommen: **Modalverben** (must, should, may …), **if-clauses**, **Fragen und Verneinungen** mit do/does/did und die **Steigerung** der Adjektive.",
+    "source": "Adaptiert nach Prüfungshefte MSA Englisch Berlin 2026, Training Grammatik (Modalverben, If-clauses)",
+    "sections": [
+      {
+        "kind": "formula",
+        "title": "Modalverben: Bedeutung und Ersatzformen",
+        "body": "Modalverben haben in der 3. Person **kein -s** (*he can*, nicht *he cans*), das Vollverb steht in der **Grundform**, Fragen brauchen **kein do** (*Can I …?*).\n\n- **can / could**: Fähigkeit, Erlaubnis, Bitte, Angebot, Möglichkeit. *I can swim. Could I call grandma?* Ersatz: *be able to, be allowed to*\n- **may / might**: Möglichkeit (might = unwahrscheinlicher), höfliche Erlaubnis. *It may be sunny. May I help you?*\n- **must**: Pflicht, starke Empfehlung, Wahrscheinlichkeit. *You must call grandma. You must be angry.* Ersatz: *have to*\n- **must not / may not**: **Verbot**. *You mustn't smoke here.* Ersatz: *not be allowed to*\n- **need not**: nicht nötig. *You needn't call.* Ersatz: *don't have to*\n- **shall / should / ought to**: Angebot (*Shall I …?*), Ratschlag, Verpflichtung, Vermutung (*He should arrive any moment*).\n- **will / would**: Wunsch, Aufforderung, Versprechen, spontaner Entschluss; would = höflicher (*Would you please …?*).\n\nAchtung: **mustn't** ist **nicht** das Gegenteil von must. Das Gegenteil (nicht müssen) ist **needn't / don't have to**."
+      },
+      {
+        "kind": "formula",
+        "title": "If-clauses: die drei Typen",
+        "body": "- **Typ I** (möglich, wahrscheinlich): if + **Simple Present**, Hauptsatz **will** + Grundform. *If it rains today, I won't go outside.* Warnung, Folge, Verhandlung, Aberglaube.\n- **Typ II** (möglich, aber unwahrscheinlich): if + **Simple Past**, Hauptsatz **would/could/might** + Grundform. *If I had time, I would come.* *If I were you, I would wait.* Ratschlag, hypothetische Frage, Entschuldigung.\n- **Typ III** (unmöglich, Vergangenheit): if + **Past Perfect**, Hauptsatz **would have** + 3. Form. *If I had woken up early, I would not have missed the train.* Bedauern, Kritik.\n\n**Komma**: nur wenn der if-Satz **vorne** steht. **Nie will im if-Satz.**"
+      },
+      {
+        "kind": "formula",
+        "title": "Fragen und Verneinungen",
+        "body": "Vollverben brauchen **do / does / did**, danach die **Grundform**:\n\n- *Do you like pizza? – I don't like pizza.*\n- *Does she play tennis? – She doesn't play tennis.* (das -s steckt in does)\n- *Did he go to school? – He didn't go.* (nicht *went*)\n- Fragewort davor: *Where does she live? Why didn't you call?*\n\n**Ohne do**: *be* (*Is he …? We weren't …*), **Modalverben** (*Can you …? You can't …*), *have* als Hilfsverb (*Have you ever been …?*), Progressive (*Is he playing …?*)."
+      },
+      {
+        "kind": "formula",
+        "title": "Steigerung der Adjektive",
+        "body": "- **Kurze Adjektive** (1 Silbe, 2 Silben auf -y): **-er / the -est**. *tall – taller – the tallest*, *easy – easier – the easiest*, Konsonant verdoppeln: *big – bigger*, *hot – hotter*\n- **Lange Adjektive**: **more / the most**. *interesting – more interesting – the most interesting*\n- **Unregelmäßig**: *good – better – best*, *bad – worse – worst*, *far – farther – farthest*, *much/many – more – most*\n- Vergleich: *… than*. Gleichheit: *as … as*. *He is as old as me.*"
+      },
+      {
+        "kind": "mistake",
+        "title": "Typische Fehler",
+        "body": "- *he cans* ✗ → *he can* ✓ (Modalverben ohne -s)\n- *mustn't* für „muss nicht“ ✗ → *needn't / doesn't have to* ✓\n- *If it will rain* ✗ → *If it rains* ✓\n- *Did you went?* ✗ → *Did you go?* ✓\n- *more big* ✗ → *bigger* ✓, *goodest* ✗ → *best* ✓"
+      },
+      {
+        "kind": "remember",
+        "title": "Merke",
+        "body": "Modalverb + Grundform, kein -s, kein do. If I: Present + will · II: Past + would · III: Past Perfect + would have. Fragen: do/does/did + Grundform. Kurz: -er/-est, lang: more/most."
+      }
+    ]
+  }
+]

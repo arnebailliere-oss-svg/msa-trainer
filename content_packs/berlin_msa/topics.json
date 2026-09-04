@@ -423,28 +423,28 @@
     "id": "EN_USE_TENSES",
     "subject": "EN",
     "code": "EN_USE_TENSES",
-    "name": "Tenses (PS, PC, Past, PresPerf)",
+    "name": "Tenses (Zeitformen) und unregelmäßige Verben",
     "parentId": "EN_USE"
   },
   {
     "id": "EN_USE_QUEST_NEG",
     "subject": "EN",
     "code": "EN_USE_QUEST_NEG",
-    "name": "Questions and Negations",
+    "name": "Questions and negations (do/does/did)",
     "parentId": "EN_USE"
   },
   {
     "id": "EN_USE_MODALS",
     "subject": "EN",
     "code": "EN_USE_MODALS",
-    "name": "Modal verbs (can, must, should)",
+    "name": "Modal verbs (can, must, should …)",
     "parentId": "EN_USE"
   },
   {
     "id": "EN_USE_COMPARISON",
     "subject": "EN",
     "code": "EN_USE_COMPARISON",
-    "name": "Adjectives and comparison",
+    "name": "Adjectives and comparison (Steigerung)",
     "parentId": "EN_USE"
   },
   {
@@ -458,28 +458,28 @@
     "id": "EN_VOCAB_SCHOOL",
     "subject": "EN",
     "code": "EN_VOCAB_SCHOOL",
-    "name": "Vocabulary: School",
+    "name": "Vocabulary: school, jobs and applications",
     "parentId": "EN_VOCAB"
   },
   {
     "id": "EN_VOCAB_DAILYLIFE",
     "subject": "EN",
     "code": "EN_VOCAB_DAILYLIFE",
-    "name": "Vocabulary: Daily life",
+    "name": "Vocabulary: daily life, technology, social networks",
     "parentId": "EN_VOCAB"
   },
   {
     "id": "EN_VOCAB_TRAVEL",
     "subject": "EN",
     "code": "EN_VOCAB_TRAVEL",
-    "name": "Vocabulary: Travel",
+    "name": "Vocabulary: travel, living and nature",
     "parentId": "EN_VOCAB"
   },
   {
     "id": "EN_VOCAB_OPINIONS",
     "subject": "EN",
     "code": "EN_VOCAB_OPINIONS",
-    "name": "Vocabulary: Opinions and feelings",
+    "name": "Vocabulary: opinions and feelings",
     "parentId": "EN_VOCAB"
   },
   {
@@ -493,14 +493,14 @@
     "id": "EN_READ_CORE",
     "subject": "EN",
     "code": "EN_READ_CORE",
-    "name": "Reading comprehension (short texts)",
+    "name": "Reading: articles and longer texts",
     "parentId": "EN_READ"
   },
   {
     "id": "EN_READ_EMAILS",
     "subject": "EN",
     "code": "EN_READ_EMAILS",
-    "name": "E-mails and everyday texts",
+    "name": "Reading: e-mails and everyday texts",
     "parentId": "EN_READ"
   },
   {
@@ -514,14 +514,14 @@
     "id": "EN_WRITE_GUIDED",
     "subject": "EN",
     "code": "EN_WRITE_GUIDED",
-    "name": "Guided writing and sentence building",
+    "name": "Writing: Bildbeschreibung und Aufbau",
     "parentId": "EN_WRITE"
   },
   {
     "id": "EN_WRITE_ERRORFIX",
     "subject": "EN",
     "code": "EN_WRITE_ERRORFIX",
-    "name": "Error correction (common mistakes)",
+    "name": "Writing: typische Fehler korrigieren",
     "parentId": "EN_WRITE"
   },
   {
@@ -600,5 +600,54 @@
     "code": "DE_WRITE_EROERTERUNG",
     "name": "Erörterung: Schreibplan und Aufbau",
     "parentId": "DE_WRITE"
+  },
+  {
+    "id": "EN_USE_IF",
+    "subject": "EN",
+    "code": "EN_USE_IF",
+    "name": "If-clauses (Typ I, II, III)",
+    "parentId": "EN_USE"
+  },
+  {
+    "id": "EN_LISTEN",
+    "subject": "EN",
+    "code": "EN_LISTEN",
+    "name": "Listening (Hörverstehen)",
+    "parentId": "EN"
+  },
+  {
+    "id": "EN_LISTEN_NUMBERS",
+    "subject": "EN",
+    "code": "EN_LISTEN_NUMBERS",
+    "name": "Listening: Uhrzeiten, Daten, Telefonnummern",
+    "parentId": "EN_LISTEN"
+  },
+  {
+    "id": "EN_READ_SIGNS",
+    "subject": "EN",
+    "code": "EN_READ_SIGNS",
+    "name": "Reading: Schilder und Kurztexte",
+    "parentId": "EN_READ"
+  },
+  {
+    "id": "EN_READ_MATCHING",
+    "subject": "EN",
+    "code": "EN_READ_MATCHING",
+    "name": "Reading: Personen und Angebote zuordnen",
+    "parentId": "EN_READ"
+  },
+  {
+    "id": "EN_WRITE_EMAIL",
+    "subject": "EN",
+    "code": "EN_WRITE_EMAIL",
+    "name": "Writing: E-Mail, Brief, Blog-Antwort",
+    "parentId": "EN_WRITE"
+  },
+  {
+    "id": "EN_WRITE_MEDIATION",
+    "subject": "EN",
+    "code": "EN_WRITE_MEDIATION",
+    "name": "Writing: Mediation (Inhalte übertragen)",
+    "parentId": "EN_WRITE"
   }
 ]

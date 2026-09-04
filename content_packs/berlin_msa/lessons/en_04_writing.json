@@ -1,0 +1,63 @@
+[
+  {
+    "id": "L_EN_WRITING",
+    "subject": "EN",
+    "topicId": "EN_WRITE_EMAIL",
+    "alsoFor": ["EN_WRITE_GUIDED", "EN_WRITE_ERRORFIX", "EN_WRITE_MEDIATION", "EN_WRITE", "EN_VOCAB", "EN_VOCAB_SCHOOL", "EN_VOCAB_DAILYLIFE", "EN_VOCAB_TRAVEL", "EN_VOCAB_OPINIONS"],
+    "title": "Writing: E-Mail, Bildbeschreibung, Mediation",
+    "intro": "Im dritten Prüfungsteil schreibst du selbst: eine **Bildbeschreibung**, eine **E-Mail oder einen Brief** oder eine **Antwort auf einen Blog**. Oft steckt eine **Mediation** darin: ein deutscher Text, dessen Inhalt du auf Englisch weitergibst. Punkte gibt es für **Inhalt und Sprache**.",
+    "source": "Adaptiert nach Prüfungshefte MSA Englisch Berlin 2026, Prüfungsteil 3 (Writing) und Checkliste Wortschatz",
+    "sections": [
+      {
+        "kind": "formula",
+        "title": "Bewertung: Inhalt und Sprache",
+        "body": "**Inhalt** (volle Punktzahl): klare, gut strukturierte Bearbeitung **aller** Punkte der Aufgabe, allgemeine Information plus weitere Aspekte, passend zum Adressaten und zur Situation.\n\n**Sprache**: durchgehend verständlich, kaum Fehler, abwechslungsreicher Wortschatz, sichere einfache **und** komplexe Sätze, passende Textform.\n\n**Mindestwortzahl** einhalten (z. B. 30–50 Wörter, mindestens 100 Wörter). Zähle am Ende nach."
+      },
+      {
+        "kind": "formula",
+        "title": "Aufbau einer E-Mail",
+        "body": "**To:** Empfänger · **From:** du · **Subject:** kurz und sachlich\n\n**Greeting**: *Dear Mr Brown,* (formell) · *Hi Sarah,* / *Hey Tom,* (informell)\n\n**Opening sentence**: *I am writing to …* (formell) · *I hope you're doing well! Thanks for your mail.* (informell)\n\n**Main part**: Fragen beantworten, eigene Fragen stellen, Inhalte erklären. Ein Absatz pro Punkt.\n\n**Closing phrase**: *Yours sincerely, / Kind regards,* (formell) · *Best wishes, / Take care,* (informell)\n\n**Signature**: dein Name\n\nBei einem **Brief** kommt oben die Adresse des Empfängers dazu, sonst gleicher Aufbau."
+      },
+      {
+        "kind": "formula",
+        "title": "Formell oder informell?",
+        "body": "**Formell** (Bewerbung um ein Praktikum, unbekannte Person, Firma): keine Abkürzungen (*I am*, nicht *I'm*), höfliche Bitten (*Could you please …?*, *I would be grateful if …*), *Dear Sir or Madam* → *Yours faithfully*, *Dear Mr Brown* → *Yours sincerely*.\n\n**Informell** (Freund, Familie): *Hey!*, Kurzformen (*I'm, don't*), *Thanks a lot*, *That sounds great*, *Write back soon!*\n\nAber: **nie** völlig umgangssprachlich (*wanna, gotta, u, ya*). Grammatik bleibt korrekt, sonst gehen Sprachpunkte verloren."
+      },
+      {
+        "kind": "steps",
+        "title": "Bildbeschreibung",
+        "body": "1. **Überblick**: *The photo shows … / In the picture you can see …*\n2. **Details**: *in the foreground / in the background, on the left / on the right, in the middle, next to, behind*\n3. **Deutung**: *It looks like … / I think … / Maybe they are …*\n4. **Aufgabe erfüllen**: die Fragen des Freundes beantworten, Bezug zum Thema.\n\nMusterlösung (46 Wörter): *Hey, I know, right? I am at a concert in Munich with Mark and Sarah. Do you know Harry Styles? He has been playing for half an hour now and I think he is the best singer I have ever heard! The concert is so cool!*"
+      },
+      {
+        "kind": "formula",
+        "title": "Mediation: übertragen, nicht übersetzen",
+        "body": "Du bekommst einen **deutschen Text** und schreibst z. B. eine E-Mail an einen englischsprachigen Freund.\n\n- **Nicht Wort für Wort** übersetzen. Den **Sinn** in einfachen, richtigen Sätzen wiedergeben.\n- Die verlangten Aspekte abarbeiten (*mention at least four aspects*): Was macht die Person? Wie hat sie angefangen? Was ist ihr Ziel?\n- Bilder auflösen: *den Modeolymp erklimmen* → *make it to the top of the fashion world*. *autodidaktisch* → *taught himself*. *mit 14* → *at the age of 14*.\n- Vollständige Sätze, E-Mail-Rahmen (Greeting, Opening, Closing)."
+      },
+      {
+        "kind": "formula",
+        "title": "Antwort auf einen Blog",
+        "body": "1. **Alle Fragen** des Blogposts beantworten (markiere sie vorher).\n2. **Eigene Meinung mit Begründung**: *I think … because …*, *In my opinion …*, *On the one hand … on the other hand …*\n3. **Eigene Erfahrung**: *I have noticed that …*, *For example, I …*\n4. Ein freundlicher Schluss: *What do you think?*, *Thanks for sharing!*"
+      },
+      {
+        "kind": "terms",
+        "title": "Wortschatz-Checkliste",
+        "body": "- **Jobs, applications**: apply for, internship, CV, job interview, employer, employee, salary, skills\n- **Living, tourism, vacations**: flat, neighbourhood, accommodation, journey, trip, sightseeing, return ticket, to book\n- **Social networks, technology**: device, screen time, password, to download, to share, to post, follower, addicted to\n- **Nature**: environment, pollution, wildlife, species, to protect, countryside, climate\n- **Emails, letters**: Dear …, I am writing to …, Could you please …, I look forward to hearing from you, Best wishes\n- **Opinions**: In my opinion, I agree/disagree, I'm not sure, That's a good point, However, That's why"
+      },
+      {
+        "kind": "steps",
+        "title": "Checkliste vor dem Abgeben",
+        "body": "1. Alle Punkte der Aufgabe bearbeitet? Alle Fragen beantwortet?\n2. Mindestwortzahl erreicht? (nachzählen)\n3. Textform: Greeting, Absätze, Closing, Name?\n4. Zeitformen: *-s* bei he/she/it, *since/for*, Simple Past bei *yesterday*?\n5. Typische Fehler: *I am 15*, *interested in*, *on Monday*, *look forward to hearing*, *make a mistake*, *tell somebody*?\n6. Register: passend formell oder informell, keine Chat-Sprache?"
+      },
+      {
+        "kind": "mistake",
+        "title": "Typische Fehler",
+        "body": "- Wort für Wort übersetzen (*I have 15 years*, *since five years*, *at Monday*).\n- Fragen des Blogs oder des Freundes **vergessen** → Inhaltspunkte weg.\n- Zu kurz: Mindestwortzahl nicht erreicht.\n- Formelle E-Mail mit *Hey!* beginnen oder informelle mit *Yours faithfully* enden."
+      },
+      {
+        "kind": "remember",
+        "title": "Merke",
+        "body": "**Inhalt + Sprache + Wortzahl.** E-Mail: Subject, Greeting, Opening, Main, Closing, Name. Bild: Überblick, Details, Deutung. Mediation: Sinn, nicht Wörter. Blog: alle Fragen + eigene Meinung mit Begründung."
+      }
+    ]
+  }
+]

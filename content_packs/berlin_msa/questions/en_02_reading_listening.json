@@ -1,0 +1,222 @@
+[
+  {
+    "id": "EN_TIME_DATE_MCQ_T1",
+    "subject": "EN",
+    "topicId": "EN_LISTEN_NUMBERS",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "{{s_frage}}",
+    "payload": { "choices": ["{{s_a}}", "{{s_b}}", "{{s_c}}", "{{s_d}}"] },
+    "solution": { "correct_choice": "{{s_a}}" },
+    "explanation": [
+      { "kind": "what", "body": "{{s_grund}}" },
+      { "kind": "remember", "body": "Uhrzeiten werden meist im **12-Stunden-System** gesprochen (am = vormittags, pm = nachmittags). **half past ten** = 10:30 (nicht halb zehn!). **12 pm** = Mittag, **12 am** = Mitternacht. Die 0 wird **oh** gesprochen. Jahreszahlen zweigeteilt: 1917 = nineteen seventeen, aber 2009 = two thousand and nine." }
+    ],
+    "tags": ["listening", "times", "dates", "drill"],
+    "source": "Nach Prüfungshefte MSA Englisch Berlin 2026, Training Listening (Exkurs Uhrzeiten, Daten, Telefonnummern)",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "s": {
+          "type": "pick",
+          "from": [
+            { "frage": "Wie wird **18:00** gesprochen?", "a": "six pm / six in the evening", "b": "eighteen o'clock", "c": "six am", "d": "half past six", "grund": "Gesprochen wird im 12-Stunden-System: 18:00 = six pm." },
+            { "frage": "Wie wird **10:30** gesprochen?", "a": "half past ten / ten thirty", "b": "half to eleven", "c": "half ten to eleven", "d": "quarter past ten", "grund": "half past ten = 10:30. Vorsicht: Im Deutschen wäre „halb elf“ 10:30, im Englischen heißt es half past **ten**." },
+            { "frage": "Wie wird **21:15** gesprochen?", "a": "quarter past nine (pm)", "b": "quarter to nine", "c": "twenty-one fifteen", "d": "nine and a quarter", "grund": "21:15 = nine fifteen pm = quarter past nine in the evening." },
+            { "frage": "Wie wird **05:09** gesprochen?", "a": "five oh-nine (am)", "b": "five nine", "c": "five zero nine pm", "d": "nine past five oh", "grund": "Die 0 wird bei Uhrzeiten **oh** gesprochen: five oh-nine in the morning." },
+            { "frage": "Was bedeutet **half past 12**?", "a": "12:30", "b": "11:30", "c": "12:15", "d": "13:30", "grund": "half past = eine halbe Stunde **nach** der genannten Stunde." },
+            { "frage": "Was ist **12 pm**?", "a": "12:00 (Mittag)", "b": "00:00 (Mitternacht)", "c": "12:00 nachts", "d": "20:00", "grund": "12 pm = Mittag, 12 am = Mitternacht." },
+            { "frage": "Was ist **12 am**?", "a": "00:00 (Mitternacht)", "b": "12:00 (Mittag)", "c": "01:00", "d": "10:00", "grund": "12 am steht für 00:00 Uhr." },
+            { "frage": "Wie wird das Datum **1st May** gesprochen?", "a": "the first of May", "b": "one May", "c": "May one", "d": "first May", "grund": "Geschrieben 1st May → gesprochen the first of May." },
+            { "frage": "Wie wird **May 1st** gesprochen?", "a": "May the first", "b": "May one", "c": "the May first", "d": "one of May", "grund": "Geschrieben May 1st → gesprochen May the first." },
+            { "frage": "Wie wird die Jahreszahl **1917** gesprochen?", "a": "nineteen seventeen", "b": "one thousand nine hundred seventeen", "c": "nineteen hundred and seventeen only", "d": "one nine one seven", "grund": "Jahreszahlen werden zweigeteilt: 19 | 17." },
+            { "frage": "Wie wird die Jahreszahl **1809** gesprochen?", "a": "eighteen oh-nine", "b": "eighteen nine", "c": "one eight zero nine", "d": "eighteen hundred nine", "grund": "Zweigeteilt, die 0 als oh: eighteen oh-nine." },
+            { "frage": "Wie wird die Jahreszahl **2009** gesprochen?", "a": "two thousand (and) nine", "b": "twenty oh-nine", "c": "twenty nine", "d": "two oh oh nine", "grund": "Ausnahme: 2009 = two thousand and nine." },
+            { "frage": "**200 v. Chr.** heißt auf Englisch …", "a": "200 BC (oder 200 BCE)", "b": "AD 200", "c": "200 CE", "d": "BC 200", "grund": "v. Chr. = BC (Before Christ) oder BCE, wird **nach** der Zahl gesprochen." },
+            { "frage": "**200 n. Chr.** heißt auf Englisch …", "a": "AD 200 (oder 200 CE)", "b": "200 BC", "c": "200 BCE", "d": "200 AD only", "grund": "n. Chr. = AD (Anno Domini), wird **vor** der Zahl gesprochen, oder CE nach der Zahl." },
+            { "frage": "Wie wird die Telefonnummer **503-567-5647** gesprochen?", "a": "five-oh-three, five-six-seven, five-six-four-seven", "b": "five hundred three, five hundred sixty-seven, …", "c": "fifty-three, five sixty-seven, fifty-six forty-seven", "d": "five-zero-three, five-six-seven, five-six-four-seven only", "grund": "Telefonnummern werden Ziffer für Ziffer gesprochen, die 0 als **oh**, betont wird die letzte Ziffer jeder Gruppe." },
+            { "frage": "Wie wird die **0** in Telefonnummern meistens gesprochen?", "a": "oh", "b": "zero only", "c": "nought only", "d": "null", "grund": "Bei Telefon- und Kontonummern sagt man meistens oh." }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "EN_LISTENING_STRATEGY_MCQ_1",
+    "subject": "EN",
+    "topicId": "EN_LISTEN_NUMBERS",
+    "difficulty": 1,
+    "qtype": "MCQ",
+    "prompt": "Wie oft wird jeder Hörtext in der Prüfung abgespielt?",
+    "payload": { "choices": ["Zweimal", "Einmal", "Dreimal", "So oft du willst"] },
+    "solution": { "correct_choice": "Zweimal" },
+    "explanation": [{ "kind": "what", "body": "Das Hörverstehen hat 4 bis 5 Texte, **jeder wird zweimal abgespielt**. Beim ersten Hören: Überblick und erste Antworten. Beim zweiten Hören: Lücken füllen und prüfen." }],
+    "tags": ["listening", "strategie"],
+    "source": "Nach Prüfungshefte MSA Englisch Berlin 2026, Prüfungsteil 1 Hörverstehen"
+  },
+  {
+    "id": "EN_LISTENING_STRATEGY_MCQ_2",
+    "subject": "EN",
+    "topicId": "EN_LISTEN_NUMBERS",
+    "difficulty": 1,
+    "qtype": "MCQ",
+    "prompt": "Was machst du **vor** dem Hören?",
+    "payload": { "choices": ["Die Aufgaben genau lesen und markieren, welche Information gesucht wird", "Nichts, damit ich unvoreingenommen bin", "Die Antworten schon ankreuzen", "Mit dem Nachbarn reden"] },
+    "solution": { "correct_choice": "Die Aufgaben genau lesen und markieren, welche Information gesucht wird" },
+    "explanation": [{ "kind": "what", "body": "Wer vorher weiß, ob eine Uhrzeit, ein Name oder ein Preis gesucht wird, **hört sie besser heraus** und lässt sich von Hintergrundgeräuschen und Akzenten weniger ablenken." }],
+    "tags": ["listening", "strategie"],
+    "source": "Nach Prüfungshefte MSA Englisch Berlin 2026, Prüfungsteil 1 Hörverstehen (Erschwerende Faktoren)"
+  },
+  {
+    "id": "EN_LISTENING_STRATEGY_MCQ_3",
+    "subject": "EN",
+    "topicId": "EN_LISTEN_NUMBERS",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Du hörst ein Wort, das du nicht kennst. Was ist die beste Strategie?",
+    "payload": { "choices": ["Auf die Wörter drumherum hören und die Bedeutung aus dem Zusammenhang erschließen", "Aufhören zuzuhören und über das Wort nachdenken", "Die Aufgabe leer lassen", "Das Wort aufschreiben und später nachschlagen"] },
+    "solution": { "correct_choice": "Auf die Wörter drumherum hören und die Bedeutung aus dem Zusammenhang erschließen" },
+    "explanation": [{ "kind": "what", "body": "Keine Panik bei unbekannten Wörtern: Der **Kontext** verrät meistens, was gemeint ist. Wer beim Grübeln hängen bleibt, verpasst den nächsten Satz." }],
+    "tags": ["listening", "strategie"],
+    "source": "Nach Prüfungshefte MSA Englisch Berlin 2026, Prüfungsteil 1 Hörverstehen"
+  },
+  {
+    "id": "EN_READING_MATCH_1",
+    "subject": "EN",
+    "topicId": "EN_READ_MATCHING",
+    "difficulty": 2,
+    "qtype": "MATCH",
+    "prompt": "These people are visiting Berlin. Match each person with the activity they would choose.",
+    "payload": {
+      "left": ["Mia loves animals and being outdoors in nature.", "Ben is fascinated by history and old buildings.", "Sara wants to try local dishes and street food.", "Tom is into music and wants to see a live show."],
+      "right": ["Zoo and a walk through the big park next to it", "Museum Island and the old palace", "Street food market with local specialities", "Open-air concert in the park"]
+    },
+    "solution": { "pairs": [["Mia loves animals and being outdoors in nature.", "Zoo and a walk through the big park next to it"], ["Ben is fascinated by history and old buildings.", "Museum Island and the old palace"], ["Sara wants to try local dishes and street food.", "Street food market with local specialities"], ["Tom is into music and wants to see a live show.", "Open-air concert in the park"]] },
+    "explanation": [
+      { "kind": "steps", "body": "Suche die **Schlüsselwörter** in der Personenbeschreibung und finde sie im Angebot wieder: *animals, nature* → Zoo, park · *history, old buildings* → museum, palace · *local dishes, street food* → street food market · *music, live show* → concert." },
+      { "kind": "remember", "body": "In der Prüfung gibt es meist 5 Personen und 7 Angebote, jede Person bekommt **zwei** Angebote, und ein Angebot kann **mehrfach** passen. Arbeite mit den Schlüsselwörtern, nicht mit dem Gefühl." }
+    ],
+    "tags": ["reading", "matching"],
+    "source": "Eigene Übungsaufgabe nach dem Aufgabenformat MSA Englisch (Reading 1: Personen zuordnen)"
+  },
+  {
+    "id": "EN_READING_MATCH_2",
+    "subject": "EN",
+    "topicId": "EN_READ_MATCHING",
+    "difficulty": 2,
+    "qtype": "MATCH",
+    "prompt": "Which app is right for whom? Match the people with the apps.",
+    "payload": {
+      "left": ["Lena wants to learn Spanish on her phone, five minutes a day.", "Omar needs to know when the next bus leaves.", "Ella wants to track how far and how fast she runs.", "Jonas loves cooking and wants step-by-step videos."],
+      "right": ["Language app with short daily lessons", "Public transport app with live timetables", "Running app with GPS and statistics", "Recipe app with video instructions"]
+    },
+    "solution": { "pairs": [["Lena wants to learn Spanish on her phone, five minutes a day.", "Language app with short daily lessons"], ["Omar needs to know when the next bus leaves.", "Public transport app with live timetables"], ["Ella wants to track how far and how fast she runs.", "Running app with GPS and statistics"], ["Jonas loves cooking and wants step-by-step videos.", "Recipe app with video instructions"]] },
+    "explanation": [
+      { "kind": "steps", "body": "Schlüsselwörter: *Spanish, five minutes a day* → language app, daily lessons · *bus, leaves* → transport, timetables · *track, far, fast, runs* → GPS, statistics · *cooking, videos* → recipe, video." }
+    ],
+    "tags": ["reading", "matching"],
+    "source": "Eigene Übungsaufgabe nach dem Aufgabenformat MSA Englisch (Reading 1)"
+  },
+  {
+    "id": "EN_SIGNS_MCQ_T1",
+    "subject": "EN",
+    "topicId": "EN_READ_SIGNS",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Read the sign. What does it say?\n\n**{{s_sign}}**",
+    "payload": { "choices": ["{{s_a}}", "{{s_b}}", "{{s_c}}", "{{s_d}}"] },
+    "solution": { "correct_choice": "{{s_a}}" },
+    "explanation": [
+      { "kind": "what", "body": "{{s_grund}}" },
+      { "kind": "remember", "body": "Bei Schildern zählt die **Aussage**, nicht ein einzelnes Wort. Lies alle vier Antworten, es ist **genau eine** richtig. Achte auf Verbote (*do not, no …*), Warnungen (*danger, beware, careful*) und Bedingungen (*only, unless, before*)." }
+    ],
+    "tags": ["reading", "signs", "drill"],
+    "source": "Eigene Übungsaufgaben nach dem Aufgabenformat MSA Englisch (Reading 2: Schilder und Kurztexte)",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "s": {
+          "type": "pick",
+          "from": [
+            { "sign": "Please do not touch the plants. They are delicate and may not survive.", "a": "Do not touch the plants", "b": "Be careful, there are bees", "c": "Flowers are not for sale", "d": "Do not hurt yourself", "grund": "*do not touch* + *plants* → Berühren verboten." },
+            { "sign": "DANGER. The rocks are extremely slippery. Several people have been injured while climbing here.", "a": "Do not climb on the rocks", "b": "Watch out for falling rocks", "c": "Beware of wild animals", "d": "Swimming is not allowed", "grund": "*slippery* + *injured while climbing* → das Klettern ist gefährlich, also nicht klettern." },
+            { "sign": "WiFi password? Send Mum a photo of the clean kitchen first.", "a": "The children have to clean the kitchen before they get the WiFi password", "b": "Mum wants to teach her children photography", "c": "Mum has left the house and wants a photo", "d": "The WiFi is broken", "grund": "*clean kitchen first* → erst aufräumen, dann Passwort." },
+            { "sign": "Zeb the monkey throws objects. His aim is very accurate.", "a": "Be careful, this animal could hit you", "b": "Do not feed this animal", "c": "This animal is scared of visitors", "d": "This animal could escape", "grund": "*throws objects* + *accurate aim* → er trifft, also Vorsicht." },
+            { "sign": "Café closed on Mondays. Open Tuesday to Sunday, 8 am – 6 pm.", "a": "You cannot get a coffee here on Monday", "b": "The café is open every day", "c": "The café opens at 6 pm", "d": "The café is closed at the weekend", "grund": "*closed on Mondays* → montags gibt es keinen Kaffee." },
+            { "sign": "LOST: black cat, answers to the name Milo. Reward! Call 0176 …", "a": "Someone is looking for their cat", "b": "A cat is for sale", "c": "Cats are not allowed here", "d": "A cat has found a new home", "grund": "*lost*, *reward*, *call* → jemand sucht sein Haustier." },
+            { "sign": "Bike parking only. Cars will be towed away at the owner's expense.", "a": "Cars are not allowed to park here", "b": "Bikes are not allowed here", "c": "Parking is free for everyone", "d": "You can buy a bike here", "grund": "*bike parking only* + *cars will be towed* → Autos werden abgeschleppt." },
+            { "sign": "The worst coffee one woman on Tripadvisor ever had in her life.", "a": "The café makes fun of a bad online review", "b": "The café advertises premium coffee", "c": "Only women are allowed in the café", "d": "The café says other cafés are worse", "grund": "Das Schild zitiert ironisch eine schlechte Bewertung (*Tripadvisor*), um Kunden anzulocken." },
+            { "sign": "Library quiet zone. Phones on silent, no food, no group work.", "a": "You have to be quiet in this area", "b": "You can eat here if you are quiet", "c": "Group work is allowed with permission", "d": "Phones are not allowed in the library", "grund": "*quiet zone* + Verbote → Ruhe; Handys sind erlaubt, aber stumm." },
+            { "sign": "Last entry 4:30 pm. The museum closes at 5 pm.", "a": "You cannot go in after 4:30 pm", "b": "The museum opens at 4:30 pm", "c": "You can stay until 6 pm", "d": "Entry is free after 4:30 pm", "grund": "*last entry* = letzter Einlass." }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "EN_ARTICLE_SCREENTIME_1",
+    "subject": "EN",
+    "topicId": "EN_READ_CORE",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "**Why some teenagers are switching off**\n\n(1) Fifteen-year-old Amira from Leeds used to spend more than five hours a day on her phone. (2) \"I didn't even notice,\" she says. (3) \"I just kept scrolling.\" (4) In January she joined a school project called *Offline Hours*: for one month, students agreed to keep their phones in a box between 7 pm and 9 pm. (5) At first, Amira felt nervous and bored. (6) After a week, she started reading again and even called her grandmother instead of texting her. (7) A survey at the end of the project showed that 70 per cent of the students slept better and 60 per cent felt less stressed. (8) Only a few said the project had changed nothing. (9) The school now wants to offer *Offline Hours* every term, and Amira has kept her own rule: no phone after 8 pm. (10) \"My friends thought I was crazy,\" she laughs. (11) \"Now three of them do it too.\"\n\n**1. What was Amira's problem before the project?**",
+    "payload": { "choices": ["She used her phone for many hours without noticing it.", "She had no phone and felt left out.", "Her grandmother did not answer her calls.", "She could not sleep because of her homework."] },
+    "solution": { "correct_choice": "She used her phone for many hours without noticing it." },
+    "explanation": [{ "kind": "what", "title": "Beleg", "body": "Sätze 1 bis 3: *more than five hours a day* und *I didn't even notice … I just kept scrolling*." }, { "kind": "remember", "body": "Schlüsselwörter der Frage (*problem, before*) → Textanfang. Die richtige Antwort steht meist **in anderen Worten** im Text." }],
+    "tags": ["reading", "article"],
+    "source": "Eigener Übungstext nach dem Aufgabenformat MSA Englisch (Reading 3: Artikel)"
+  },
+  {
+    "id": "EN_ARTICLE_SCREENTIME_2",
+    "subject": "EN",
+    "topicId": "EN_READ_CORE",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "**Why some teenagers are switching off** (text see above)\n\n**2. What did the students have to do during *Offline Hours*?**",
+    "payload": { "choices": ["Put their phones away for two hours every evening for a month", "Give their phones to the school for a month", "Stop using their phones completely", "Read a book every evening"] },
+    "solution": { "correct_choice": "Put their phones away for two hours every evening for a month" },
+    "explanation": [{ "kind": "what", "title": "Beleg", "body": "Satz 4: *for one month … keep their phones in a box between 7 pm and 9 pm*. Zwei Stunden pro Abend, nicht den ganzen Tag, nicht für immer." }],
+    "tags": ["reading", "article"],
+    "source": "Eigener Übungstext nach dem Aufgabenformat MSA Englisch"
+  },
+  {
+    "id": "EN_ARTICLE_SCREENTIME_3",
+    "subject": "EN",
+    "topicId": "EN_READ_CORE",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "**Why some teenagers are switching off** (text see above)\n\n**3. Which statement about the survey is correct?**",
+    "payload": { "choices": ["Most students slept better and many felt less stressed.", "All students felt less stressed.", "The project changed nothing for most students.", "60 per cent of the students slept better."] },
+    "solution": { "correct_choice": "Most students slept better and many felt less stressed." },
+    "explanation": [{ "kind": "what", "title": "Beleg", "body": "Satz 7: *70 per cent … slept better and 60 per cent felt less stressed*. Satz 8: *Only a few said the project had changed nothing.* Achte auf die Zahlen: 70 = schlafen, 60 = Stress." }, { "kind": "mistake", "body": "Falle: Zahlen vertauscht (*60 per cent slept better*) oder übertrieben (*all students*)." }],
+    "tags": ["reading", "article"],
+    "source": "Eigener Übungstext nach dem Aufgabenformat MSA Englisch"
+  },
+  {
+    "id": "EN_ARTICLE_SCREENTIME_4",
+    "subject": "EN",
+    "topicId": "EN_READ_CORE",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "**Why some teenagers are switching off** (text see above)\n\n**4. What does the last paragraph (sentences 9–11) tell us?**",
+    "payload": { "choices": ["Amira still limits her phone use and some friends have copied her.", "Amira stopped the rule because her friends laughed at her.", "The school has cancelled the project.", "Amira's friends never use their phones now."] },
+    "solution": { "correct_choice": "Amira still limits her phone use and some friends have copied her." },
+    "explanation": [{ "kind": "what", "title": "Beleg", "body": "Satz 9: *Amira has kept her own rule*. Satz 11: *Now three of them do it too.* Die Schule will das Projekt sogar **jedes Halbjahr** anbieten (Satz 9)." }],
+    "tags": ["reading", "article"],
+    "source": "Eigener Übungstext nach dem Aufgabenformat MSA Englisch"
+  },
+  {
+    "id": "EN_KEYWORDS_MCQ_1",
+    "subject": "EN",
+
+    "topicId": "EN_READ_CORE",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Read the paragraph. Which words are the **keywords** that tell you the topic?\n\n*This year, selfie sticks were banned at several music festivals. In some countries, using a selfie stick in dangerous places can even lead to arrest, after fatal accidents happened when people took selfies in front of trains.*",
+    "payload": { "choices": ["selfie sticks, banned, arrest, dangerous, accidents", "this year, several, some, even, when", "music, festivals, countries, trains", "people, places, front, happened"] },
+    "solution": { "correct_choice": "selfie sticks, banned, arrest, dangerous, accidents" },
+    "explanation": [{ "kind": "what", "body": "Schlüsselwörter sind meist **Nomen, die sich wiederholen** und mit dem Thema zusammenhängen. Hier: *selfie sticks* (zweimal), *banned, arrest, dangerous, accidents* → Thema: **die Gefahren von Selfie-Sticks**." }, { "kind": "remember", "body": "Markiere Schlüsselwörter im Text **und** in den Fragen. So findest du die Stelle mit der gesuchten Information in Sekunden." }],
+    "tags": ["reading", "keywords"],
+    "source": "Nach Prüfungshefte MSA Englisch Berlin 2026, Reading (Exkurs Schlüssel- und Signalwörter), eigener Text"
+  }
+]

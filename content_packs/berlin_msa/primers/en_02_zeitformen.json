@@ -1,0 +1,81 @@
+[
+  {
+    "id": "P_EN_ZEITFORMEN",
+    "subject": "EN",
+    "title": "Welche Zeit wann? Die Signalwörter",
+    "teaser": "Der Zeitstrahl, die wichtigsten Zeitformen in einfachen Worten und die Wörter, die sie verraten",
+    "hook": "Im Deutschen kommst du im Alltag mit drei Zeiten aus. Englisch hat mehr, weil es auch zeigt, ob etwas gerade läuft oder schon fertig ist. Klingt nach viel. Ist es nicht, wenn du den Zeitstrahl vor dir siehst.",
+    "outro": "Signalwort, Zeitstrahl, läuft es oder ist es fertig. Drei Fragen, und du hast die Zeitform. In der Lektion steht die ganze Tabelle.",
+    "steps": [
+      {
+        "title": "Drei Zeiten, ein Zeitstrahl",
+        "body": "**Past** ← **Present** → **Future**\n\nVorher, jetzt, später.\n\nJede englische Zeitform sitzt auf diesem Strahl.",
+        "say": "Wir gehen die Zeitformen von der Mitte aus durch: erst jetzt, dann vorher, dann später."
+      },
+      {
+        "title": "Simple Present: immer und normal",
+        "body": "I **play** football every Saturday.\n\nShe **plays** the piano.\n\nhe / she / it → **-s**",
+        "say": "Gewohnheiten, Fakten, Fahrpläne. Signalwörter: usually, always, every day, often, never."
+      },
+      {
+        "title": "Present Progressive: gerade jetzt",
+        "body": "I **am playing** football right now.\n\n**am / is / are + -ing**",
+        "say": "Das passiert in diesem Moment. Signalwörter: now, at the moment, Look!, Listen!"
+      },
+      {
+        "title": "Simple Past: vorbei und abgeschlossen",
+        "body": "I **played** football yesterday.\n\nI **went** home. (unregelmäßig)\n\n**-ed** oder 2. Form",
+        "say": "Gestern, letzte Woche, vor drei Jahren, 1997. Fertig, Punkt. Signalwörter: yesterday, last, ago, in 1997."
+      },
+      {
+        "title": "Present Perfect: vorbei, aber es zählt jetzt",
+        "body": "I **have played** football.\n\nShe **has lost** her key. (Der Schlüssel ist immer noch weg.)\n\n**have / has + 3. Form**",
+        "say": "Das ist die schwierigste. Frag dich: Hat es jetzt noch eine Folge? Dann Present Perfect. Signalwörter: just, already, yet, ever, never, since, for."
+      },
+      {
+        "title": "since und for",
+        "body": "**since** 2003 → seit einem Zeit**punkt**\n\n**for** two hours → seit einer Zeit**dauer**\n\nBeide → Present Perfect.",
+        "say": "Since ist ein Datum oder ein Moment. For ist eine Menge Zeit."
+      },
+      {
+        "title": "Past Progressive: es lief, als …",
+        "body": "I **was playing** football **when** it started to rain.\n\n**was / were + -ing**",
+        "say": "Eine lange Handlung, die von einer kurzen unterbrochen wird. Signalwörter: while, as, when."
+      },
+      {
+        "title": "Past Perfect: noch weiter zurück",
+        "body": "She **had gone** jogging **before** she went to bed.\n\n**had + 3. Form**",
+        "say": "Zwei Dinge in der Vergangenheit. Das frühere bekommt had. Signalwörter: before, after, by, when."
+      },
+      {
+        "title": "Zukunft: will oder going to",
+        "body": "It **will** rain tomorrow. (Vorhersage)\n\nI **am going to** visit my aunt. (Plan)\n\n**will + Grundform** · **am / is / are going to + Grundform**",
+        "say": "Will: Vermutung, Versprechen, spontaner Entschluss. Going to: fester Plan, oder es kündigt sich an."
+      },
+      {
+        "title": "Der Trick",
+        "body": "1. **Signalwort** suchen\n\n2. **Wann** auf dem Zeitstrahl?\n\n3. Läuft es gerade (**-ing**) oder ist es fertig?",
+        "say": "Drei Fragen, und du hast die Zeitform. Die Tabelle dazu findest du in der Lektion."
+      }
+    ],
+    "vocab": [
+      { "term": "Simple Present", "plain": "Immer, normal, Fakten. he/she/it + -s.", "example": "She plays every day." },
+      { "term": "Present Progressive", "plain": "Gerade jetzt. am/is/are + -ing.", "example": "I am playing now." },
+      { "term": "Simple Past", "plain": "Vorbei, abgeschlossen. -ed oder 2. Form.", "example": "I went home yesterday." },
+      { "term": "Present Perfect", "plain": "Vorbei, zählt aber jetzt. have/has + 3. Form.", "example": "I have lost my key." },
+      { "term": "Past Progressive", "plain": "Lief, als etwas passierte. was/were + -ing.", "example": "I was cooking when …" },
+      { "term": "Past Perfect", "plain": "Noch früher als etwas anderes. had + 3. Form.", "example": "She had gone before …" },
+      { "term": "will-future", "plain": "Vorhersage, Versprechen, spontan.", "example": "It will rain." },
+      { "term": "going to-future", "plain": "Plan, kündigt sich an.", "example": "I am going to visit her." },
+      { "term": "Signalwort", "plain": "Ein Wort, das die Zeitform verrät.", "example": "yesterday → Simple Past" }
+    ],
+    "quiz": [
+      { "prompt": "She ___ to school every day.", "choices": ["goes", "is going", "went", "has gone"], "correct": "goes", "explain": "every day = Gewohnheit → Simple Present, she + -s." },
+      { "prompt": "Look! It ___.", "choices": ["is raining", "rains", "rained", "has rained"], "correct": "is raining", "explain": "Look! = gerade jetzt → Present Progressive." },
+      { "prompt": "We ___ a film yesterday.", "choices": ["watched", "have watched", "watch", "were watching"], "correct": "watched", "explain": "yesterday → Simple Past." },
+      { "prompt": "I ___ my keys. I can't open the door.", "choices": ["have lost", "lost", "lose", "had lost"], "correct": "have lost", "explain": "Folge jetzt (kann nicht rein) → Present Perfect." },
+      { "prompt": "They have lived here ___ 2010.", "choices": ["since", "for", "ago", "before"], "correct": "since", "explain": "2010 ist ein Zeitpunkt → since." },
+      { "prompt": "Versprechen: I ___ call you tonight.", "choices": ["will", "am going to", "would", "did"], "correct": "will", "explain": "Versprechen und spontane Entschlüsse → will." }
+    ]
+  }
+]

@@ -1,0 +1,343 @@
+[
+  {
+    "id": "EN_TENSE_SELECT_T1",
+    "subject": "EN",
+    "topicId": "EN_USE_TENSES",
+    "difficulty": 2,
+    "qtype": "CLOZE",
+    "prompt": "Choose the correct form.",
+    "payload": { "text_with_blanks": "{{s_satz}}", "blanks": [{ "id": 1, "choices": ["{{s_a}}", "{{s_b}}", "{{s_c}}"] }] },
+    "solution": { "answers": { "1": "{{s_a}}" } },
+    "explanation": [
+      { "kind": "what", "title": "Warum", "body": "{{s_grund}}" },
+      { "kind": "remember", "body": "**Signalwörter** verraten die Zeitform: *usually, every day* → Simple Present · *now, at the moment* → Present Progressive · *yesterday, ago, last, in 1997* → Simple Past · *just, already, yet, since, for* → Present Perfect · *while, as* → Past Progressive · *before, by, after* → Past Perfect." }
+    ],
+    "tags": ["tenses", "drill"],
+    "source": "Nach Prüfungshefte MSA Englisch Berlin 2026, Training Grammatik (Zeitformen)",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "s": {
+          "type": "pick",
+          "from": [
+            { "satz": "I usually ___ TV in the evening.", "a": "watch", "b": "am watching", "c": "watched", "grund": "*usually* = Gewohnheit → **Simple Present**." },
+            { "satz": "She ___ the piano every day.", "a": "plays", "b": "is playing", "c": "played", "grund": "*every day* → **Simple Present**, he/she/it + **-s**." },
+            { "satz": "Listen! They ___ their grandma right now.", "a": "are calling", "b": "call", "c": "called", "grund": "*right now* = gerade → **Present Progressive** (are + -ing)." },
+            { "satz": "He ___ to work the other day.", "a": "walked", "b": "has walked", "c": "walks", "grund": "*the other day* = abgeschlossen → **Simple Past**." },
+            { "satz": "I ___ breakfast, then I went to the station.", "a": "ate", "b": "have eaten", "c": "was eating", "grund": "Aufeinanderfolgende Handlungen (*then*) → **Simple Past**." },
+            { "satz": "He ___ with his girlfriend since 2003.", "a": "has lived", "b": "lives", "c": "lived", "grund": "*since* = seit einem Zeitpunkt bis heute → **Present Perfect**." },
+            { "satz": "I have just ___ at the airport.", "a": "arrived", "b": "arrive", "c": "arriving", "grund": "*just* + have → **Present Perfect**: have + 3. Form." },
+            { "satz": "I ___ not cleaned my room yet.", "a": "have", "b": "had", "c": "did", "grund": "*yet* → **Present Perfect**: have + past participle." },
+            { "satz": "She ___ TV all day and she is still watching.", "a": "has been watching", "b": "watched", "c": "watches", "grund": "*all day* und dauert noch an → **Present Perfect Progressive**." },
+            { "satz": "He ___ already finished his homework by 10 pm.", "a": "had", "b": "has", "c": "was", "grund": "*by 10 pm*: fertig vor einem Zeitpunkt in der Vergangenheit → **Past Perfect** (had + 3. Form)." },
+            { "satz": "As she ___ food, her telephone rang.", "a": "was cooking", "b": "cooked", "c": "has cooked", "grund": "Lange Handlung wird unterbrochen (*as*) → **Past Progressive**." },
+            { "satz": "I was working while John ___ to the park.", "a": "was going", "b": "goes", "c": "has gone", "grund": "*while* = gleichzeitig in der Vergangenheit → **Past Progressive**." },
+            { "satz": "I think he ___ at 10 pm.", "a": "will arrive", "b": "arrives", "c": "is arriving", "grund": "Vorhersage (*I think*) → **will-future**." },
+            { "satz": "Who is going to tell her? – I ___.", "a": "will", "b": "am going to", "c": "do", "grund": "Spontaner Entschluss → **will**." },
+            { "satz": "I ___ marry her. We have already planned the wedding.", "a": "am going to", "b": "will", "c": "would", "grund": "Fester Plan → **going to-future**." },
+            { "satz": "If he keeps running like that, he ___ fall over.", "a": "is going to", "b": "will be", "c": "has", "grund": "Logische Schlussfolgerung → **going to**." },
+            { "satz": "We ___ tomorrow at 9 am. The timetable says so.", "a": "leave", "b": "are leaving", "c": "left", "grund": "Fahrplan, feststehend → **Simple Present**." },
+            { "satz": "I ___ to Thailand this week. Everything is booked.", "a": "am flying", "b": "fly", "c": "flew", "grund": "Fester Plan mit Zeitangabe → **Present Progressive**." },
+            { "satz": "The sun never ___ in the west.", "a": "rises", "b": "rise", "c": "is rising", "grund": "Allgemeine Tatsache → **Simple Present**, it + **-s**." },
+            { "satz": "She ___ jogging before she went to bed.", "a": "had gone", "b": "went", "c": "has gone", "grund": "*before*: die frühere Handlung → **Past Perfect**." },
+            { "satz": "He ___ been waiting for his date for 2 hours.", "a": "has", "b": "had", "c": "is", "grund": "*for 2 hours* bis jetzt → **Present Perfect Progressive** (has been + -ing)." },
+            { "satz": "I ___ my key! I can't get in.", "a": "have lost", "b": "lost", "c": "lose", "grund": "Folge in der Gegenwart (kann nicht rein) → **Present Perfect**." }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "EN_SIGNALWORD_MCQ_T1",
+    "subject": "EN",
+    "topicId": "EN_USE_TENSES",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Welche Zeitform passt zum Signalwort **{{s_wort}}**?",
+    "payload": { "choices": ["Simple Present", "Present Progressive", "Simple Past", "Present Perfect", "Past Perfect"] },
+    "solution": { "correct_choice": "{{s_loesung}}" },
+    "explanation": [
+      { "kind": "what", "body": "**{{s_wort}}** → {{s_loesung}}. {{s_bsp}}" },
+      { "kind": "remember", "body": "Simple Present: *usually, always, often, never, every day*. Present Progressive: *now, at the moment, right now, Look!*. Simple Past: *yesterday, ago, last week, in 1997*. Present Perfect: *just, already, yet, ever, since, for, so far*. Past Perfect: *by, before, until that day*." }
+    ],
+    "tags": ["tenses", "signalwoerter", "drill"],
+    "source": "Nach Prüfungshefte MSA Englisch Berlin 2026, Training Grammatik (Signalwörter)",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "s": {
+          "type": "pick",
+          "from": [
+            { "wort": "usually", "loesung": "Simple Present", "bsp": "I usually watch TV." },
+            { "wort": "every day", "loesung": "Simple Present", "bsp": "She plays the piano every day." },
+            { "wort": "often", "loesung": "Simple Present", "bsp": "We often go swimming." },
+            { "wort": "at the moment", "loesung": "Present Progressive", "bsp": "They are calling grandma at the moment." },
+            { "wort": "right now", "loesung": "Present Progressive", "bsp": "I am doing my homework right now." },
+            { "wort": "yesterday", "loesung": "Simple Past", "bsp": "He walked to work yesterday." },
+            { "wort": "two years ago", "loesung": "Simple Past", "bsp": "We moved here two years ago." },
+            { "wort": "last week", "loesung": "Simple Past", "bsp": "She visited Berlin last week." },
+            { "wort": "in 1997", "loesung": "Simple Past", "bsp": "I was born in 1997." },
+            { "wort": "just", "loesung": "Present Perfect", "bsp": "I have just arrived." },
+            { "wort": "yet", "loesung": "Present Perfect", "bsp": "I have not cleaned my room yet." },
+            { "wort": "since 2003", "loesung": "Present Perfect", "bsp": "He has lived here since 2003." },
+            { "wort": "so far", "loesung": "Present Perfect", "bsp": "So far we have read three books." },
+            { "wort": "already", "loesung": "Present Perfect", "bsp": "She has already eaten." },
+            { "wort": "by 10 pm", "loesung": "Past Perfect", "bsp": "He had finished his homework by 10 pm." },
+            { "wort": "until that day", "loesung": "Past Perfect", "bsp": "Until that day I had never seen the sea." }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "EN_IRREGULAR_T1",
+    "subject": "EN",
+    "topicId": "EN_USE_TENSES",
+    "difficulty": 2,
+    "qtype": "CLOZE",
+    "prompt": "Ergänze die fehlende Form des unregelmäßigen Verbs (Grundform – Simple Past – past participle).",
+    "payload": { "text_with_blanks": "{{s_reihe}}", "blanks": [{ "id": 1 }] },
+    "solution": { "answers": { "1": "{{s_loesung}}" } },
+    "explanation": [
+      { "kind": "answer", "body": "**{{s_voll}}** ({{s_de}})" },
+      { "kind": "remember", "body": "Unregelmäßige Verben musst du **auswendig** lernen. Die 2. Form steht allein (*I went*), die 3. Form immer mit have/has/had (*I have gone*)." }
+    ],
+    "tags": ["irregular-verbs", "drill"],
+    "source": "Nach Prüfungshefte MSA Englisch Berlin 2026, Training Grammatik (Unregelmäßige Verben)",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "s": {
+          "type": "pick",
+          "from": [
+            { "reihe": "go – ___ – gone", "loesung": "went", "voll": "go – went – gone", "de": "gehen" },
+            { "reihe": "see – saw – ___", "loesung": "seen", "voll": "see – saw – seen", "de": "sehen" },
+            { "reihe": "write – ___ – written", "loesung": "wrote", "voll": "write – wrote – written", "de": "schreiben" },
+            { "reihe": "eat – ate – ___", "loesung": "eaten", "voll": "eat – ate – eaten", "de": "essen" },
+            { "reihe": "buy – ___ – bought", "loesung": "bought", "voll": "buy – bought – bought", "de": "kaufen" },
+            { "reihe": "think – thought – ___", "loesung": "thought", "voll": "think – thought – thought", "de": "denken, glauben" },
+            { "reihe": "take – ___ – taken", "loesung": "took", "voll": "take – took – taken", "de": "nehmen" },
+            { "reihe": "give – gave – ___", "loesung": "given", "voll": "give – gave – given", "de": "geben" },
+            { "reihe": "come – ___ – come", "loesung": "came", "voll": "come – came – come", "de": "kommen" },
+            { "reihe": "know – knew – ___", "loesung": "known", "voll": "know – knew – known", "de": "wissen, kennen" },
+            { "reihe": "speak – ___ – spoken", "loesung": "spoke", "voll": "speak – spoke – spoken", "de": "sprechen" },
+            { "reihe": "drive – drove – ___", "loesung": "driven", "voll": "drive – drove – driven", "de": "fahren" },
+            { "reihe": "begin – ___ – begun", "loesung": "began", "voll": "begin – began – begun", "de": "beginnen" },
+            { "reihe": "break – broke – ___", "loesung": "broken", "voll": "break – broke – broken", "de": "brechen" },
+            { "reihe": "bring – ___ – brought", "loesung": "brought", "voll": "bring – brought – brought", "de": "bringen" },
+            { "reihe": "catch – caught – ___", "loesung": "caught", "voll": "catch – caught – caught", "de": "fangen" },
+            { "reihe": "choose – ___ – chosen", "loesung": "chose", "voll": "choose – chose – chosen", "de": "wählen" },
+            { "reihe": "do – did – ___", "loesung": "done", "voll": "do – did – done", "de": "tun, machen" },
+            { "reihe": "fall – ___ – fallen", "loesung": "fell", "voll": "fall – fell – fallen", "de": "fallen" },
+            { "reihe": "feel – felt – ___", "loesung": "felt", "voll": "feel – felt – felt", "de": "fühlen" },
+            { "reihe": "find – ___ – found", "loesung": "found", "voll": "find – found – found", "de": "finden" },
+            { "reihe": "forget – forgot – ___", "loesung": "forgotten", "voll": "forget – forgot – forgotten", "de": "vergessen" },
+            { "reihe": "get – ___ – gotten", "loesung": "got", "voll": "get – got – gotten (BE: got)", "de": "bekommen, werden" },
+            { "reihe": "leave – left – ___", "loesung": "left", "voll": "leave – left – left", "de": "verlassen, lassen" },
+            { "reihe": "lose – ___ – lost", "loesung": "lost", "voll": "lose – lost – lost", "de": "verlieren" },
+            { "reihe": "meet – met – ___", "loesung": "met", "voll": "meet – met – met", "de": "treffen" },
+            { "reihe": "run – ___ – run", "loesung": "ran", "voll": "run – ran – run", "de": "rennen, laufen" },
+            { "reihe": "sleep – slept – ___", "loesung": "slept", "voll": "sleep – slept – slept", "de": "schlafen" },
+            { "reihe": "wear – wore – ___", "loesung": "worn", "voll": "wear – wore – worn", "de": "tragen (Kleidung)" },
+            { "reihe": "sell – ___ – sold", "loesung": "sold", "voll": "sell – sold – sold", "de": "verkaufen" },
+            { "reihe": "tell – told – ___", "loesung": "told", "voll": "tell – told – told", "de": "erzählen" },
+            { "reihe": "read – ___ – read", "loesung": "read", "voll": "read – read – read (anders ausgesprochen)", "de": "lesen" },
+            { "reihe": "pay – paid – ___", "loesung": "paid", "voll": "pay – paid – paid", "de": "bezahlen" },
+            { "reihe": "ride – ___ – ridden", "loesung": "rode", "voll": "ride – rode – ridden", "de": "reiten, Rad fahren" },
+            { "reihe": "spend – spent – ___", "loesung": "spent", "voll": "spend – spent – spent", "de": "verbringen, ausgeben" },
+            { "reihe": "stand – ___ – stood", "loesung": "stood", "voll": "stand – stood – stood", "de": "stehen" },
+            { "reihe": "wake up – woke up – ___", "loesung": "woken up", "voll": "wake up – woke up – woken up", "de": "aufwachen" },
+            { "reihe": "build – ___ – built", "loesung": "built", "voll": "build – built – built", "de": "bauen" }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "EN_MODAL_MCQ_T1",
+    "subject": "EN",
+    "topicId": "EN_USE_MODALS",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "{{s_satz}}",
+    "payload": { "choices": ["{{s_a}}", "{{s_b}}", "{{s_c}}", "{{s_d}}"] },
+    "solution": { "correct_choice": "{{s_a}}" },
+    "explanation": [
+      { "kind": "what", "body": "**{{s_a}}**: {{s_grund}}" },
+      { "kind": "remember", "body": "**can/could** Fähigkeit, Erlaubnis, Bitte · **may/might** Möglichkeit, höfliche Erlaubnis · **must** Pflicht, starke Empfehlung · **mustn't** Verbot · **needn't** nicht nötig · **should/ought to** Ratschlag, Vermutung · **shall** Angebot · **will/would** Wunsch, Versprechen, Höflichkeit. Ersatzformen: *be able to, be allowed to, have to*." }
+    ],
+    "tags": ["modals", "drill"],
+    "source": "Nach Prüfungshefte MSA Englisch Berlin 2026, Training Grammatik (Modalverben)",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "s": {
+          "type": "pick",
+          "from": [
+            { "satz": "You ___ smoke here. (Verbot)", "a": "mustn't", "b": "needn't", "c": "can", "d": "should", "grund": "*must not* drückt ein Verbot aus. Vorsicht: Es ist **nicht** das Gegenteil von must." },
+            { "satz": "I ___ swim when I was five. (Fähigkeit in der Vergangenheit)", "a": "could", "b": "can", "c": "must", "d": "might", "grund": "*could* = Vergangenheit von can (Fähigkeit). Ersatzform: *was able to*." },
+            { "satz": "___ I open the window? (höfliche Bitte um Erlaubnis)", "a": "May", "b": "Must", "c": "Shall", "d": "Will", "grund": "*May I …?* = höfliche Frage um Erlaubnis (auch *Could I …?*)." },
+            { "satz": "You ___ call grandma. It's her birthday. (Pflicht)", "a": "must", "b": "can", "c": "may", "d": "might", "grund": "*must* = Pflicht, Notwendigkeit. Ersatzform: *have to*." },
+            { "satz": "You ___ call grandma, she is on holiday. (nicht nötig)", "a": "needn't", "b": "mustn't", "c": "can't", "d": "shouldn't", "grund": "*need not* = keine Notwendigkeit. Ersatzform: *don't have to*." },
+            { "satz": "You ___ speak clearly to her. (Ratschlag)", "a": "should", "b": "must not", "c": "may", "d": "can", "grund": "*should* = Ratschlag, weniger stark als must." },
+            { "satz": "It ___ be rainy in London. (Möglichkeit, eher unwahrscheinlich)", "a": "might", "b": "must", "c": "will", "d": "shall", "grund": "*might* = schwache Möglichkeit, schwächer als may." },
+            { "satz": "___ I carry your bags? (Angebot)", "a": "Shall", "b": "Must", "c": "Would", "d": "Might", "grund": "*Shall I …?* = Angebot." },
+            { "satz": "He ___ arrive any moment. (Vermutung)", "a": "should", "b": "mustn't", "c": "needn't", "d": "can't", "grund": "*should* = Vermutung (er müsste gleich da sein)." },
+            { "satz": "You ___ be angry. (Wahrscheinlichkeit: wahrscheinlich sauer)", "a": "must", "b": "may not", "c": "needn't", "d": "shall", "grund": "*must* kann auch Wahrscheinlichkeit ausdrücken: Du bist wahrscheinlich sauer." },
+            { "satz": "___ you please call grandma? (höflicher Wunsch)", "a": "Would", "b": "Must", "c": "Shall", "d": "May", "grund": "*Would you please …?* = höfliche Bitte, höflicher als will." },
+            { "satz": "I ___ call grandma for you. (höfliches Angebot)", "a": "could", "b": "must", "c": "shall", "d": "need", "grund": "*could* = höfliche Variante eines Angebots (Ich könnte …)." },
+            { "satz": "You ___ not call grandma. (Verbot, höflicher als mustn't)", "a": "may", "b": "should", "c": "can", "d": "will", "grund": "*may not* = Verbot, höflicher und weniger energisch als mustn't." },
+            { "satz": "Ersatzform für must: You ___ call grandma.", "a": "have to", "b": "are allowed to", "c": "are able to", "d": "would like to", "grund": "*have to* ersetzt must (Pflicht). *be allowed to* = dürfen, *be able to* = können." }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "EN_IF_CLAUSE_T1",
+    "subject": "EN",
+    "topicId": "EN_USE_IF",
+    "difficulty": 3,
+    "qtype": "CLOZE",
+    "prompt": "If-clause: choose the correct form.",
+    "payload": { "text_with_blanks": "{{s_satz}}", "blanks": [{ "id": 1, "choices": ["{{s_a}}", "{{s_b}}", "{{s_c}}"] }] },
+    "solution": { "answers": { "1": "{{s_a}}" } },
+    "explanation": [
+      { "kind": "what", "title": "Der Typ", "body": "{{s_grund}}" },
+      { "kind": "remember", "body": "**Typ I** (möglich): if + Simple Present, Hauptsatz **will** + Infinitiv. **Typ II** (unwahrscheinlich): if + Simple Past, Hauptsatz **would** + Infinitiv. **Typ III** (unmöglich, Vergangenheit): if + Past Perfect, Hauptsatz **would have** + 3. Form. Komma nur, wenn der if-Satz vorne steht." }
+    ],
+    "tags": ["if-clauses", "drill"],
+    "source": "Nach Prüfungshefte MSA Englisch Berlin 2026, Training Grammatik (If-clauses)",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "s": {
+          "type": "pick",
+          "from": [
+            { "satz": "I ___ tired tomorrow if I go to bed late today.", "a": "will be", "b": "am", "c": "would be", "grund": "**Typ I**: if + Simple Present (go), Hauptsatz will-future." },
+            { "satz": "If I ___ a superhero, I would save everyone.", "a": "were", "b": "am", "c": "had been", "grund": "**Typ II**: if + Simple Past (bei *be* meist *were*), Hauptsatz would + Infinitiv." },
+            { "satz": "If I find the time, I ___ you after class.", "a": "will meet", "b": "would meet", "c": "meet", "grund": "**Typ I**: if + Simple Present, Hauptsatz will + Infinitiv." },
+            { "satz": "You ___ the race if you hadn't slowed down.", "a": "would have won", "b": "would win", "c": "will win", "grund": "**Typ III**: if + Past Perfect (hadn't slowed), Hauptsatz would have + 3. Form." },
+            { "satz": "He would make a lot of money if he ___ his idea.", "a": "sold", "b": "sells", "c": "had sold", "grund": "**Typ II**: Hauptsatz would, also if + Simple Past." },
+            { "satz": "If it ___ today, I won't go outside.", "a": "rains", "b": "will rain", "c": "rained", "grund": "**Typ I**: Im if-Satz steht **nie** will, sondern Simple Present." },
+            { "satz": "If I had woken up early, I ___ the train.", "a": "would not have missed", "b": "would not miss", "c": "will not miss", "grund": "**Typ III**: Bedauern über die Vergangenheit, would have + 3. Form." },
+            { "satz": "If I ___ you, I would wait.", "a": "were", "b": "was", "c": "had been", "grund": "**Typ II**, feste Wendung: *If I were you* (Ratschlag)." },
+            { "satz": "If you break the mirror, you ___ bad luck.", "a": "will have", "b": "would have", "c": "had", "grund": "**Typ I**: vorhersehbare Folge (Aberglaube)." },
+            { "satz": "If my grandparents ___, I would not have been born.", "a": "had not met", "b": "did not meet", "c": "do not meet", "grund": "**Typ III**: Vergangenheit, unmöglich zu ändern." },
+            { "satz": "If you had a boat, what ___ you name it?", "a": "would", "b": "will", "c": "do", "grund": "**Typ II**: hypothetische Frage, if + Simple Past (had), would." },
+            { "satz": "If you don't do your homework, your teacher ___ very angry.", "a": "will be", "b": "would be", "c": "is", "grund": "**Typ I**: Warnung, Hauptsatz will + Infinitiv." }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "EN_IF_TYPE_MCQ_T1",
+    "subject": "EN",
+    "topicId": "EN_USE_IF",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Which type of if-clause is this?\n\n„{{s_satz}}“",
+    "payload": { "choices": ["Typ I: möglich (Simple Present + will)", "Typ II: unwahrscheinlich (Simple Past + would)", "Typ III: unmöglich, Vergangenheit (Past Perfect + would have)"] },
+    "solution": { "correct_choice": "{{s_loesung}}" },
+    "explanation": [
+      { "kind": "what", "body": "{{s_grund}}" },
+      { "kind": "remember", "body": "Schau auf das **Verb im if-Satz**: Simple Present → Typ I, Simple Past → Typ II, Past Perfect (had + 3. Form) → Typ III." }
+    ],
+    "tags": ["if-clauses", "drill"],
+    "source": "Nach Prüfungshefte MSA Englisch Berlin 2026, Training Grammatik (If-clauses)",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "s": {
+          "type": "pick",
+          "from": [
+            { "satz": "If it rains today, I won't go outside.", "loesung": "Typ I: möglich (Simple Present + will)", "grund": "if + rains (Simple Present), won't go (will-future): vorhersehbare Konsequenz." },
+            { "satz": "If I had time, I would come to your party.", "loesung": "Typ II: unwahrscheinlich (Simple Past + would)", "grund": "if + had (Simple Past), would come: Entschuldigung, eher unwahrscheinlich." },
+            { "satz": "If you hadn't spent so much time on the PC, your grades might have been better.", "loesung": "Typ III: unmöglich, Vergangenheit (Past Perfect + would have)", "grund": "if + hadn't spent (Past Perfect), might have been: Kritik an der Vergangenheit." },
+            { "satz": "If you are nice, I will buy you the toy.", "loesung": "Typ I: möglich (Simple Present + will)", "grund": "Verhandlung: are (Simple Present), will buy." },
+            { "satz": "If I were you, I would wait.", "loesung": "Typ II: unwahrscheinlich (Simple Past + would)", "grund": "Ratschlag mit *If I were you*: Simple Past, would." },
+            { "satz": "If I had woken up early, I would not have missed the train.", "loesung": "Typ III: unmöglich, Vergangenheit (Past Perfect + would have)", "grund": "Bedauern: had woken (Past Perfect), would not have missed." },
+            { "satz": "If you break the mirror, you will have bad luck.", "loesung": "Typ I: möglich (Simple Present + will)", "grund": "Aberglaube: break (Simple Present), will have." },
+            { "satz": "If you had a boat, what would you name it?", "loesung": "Typ II: unwahrscheinlich (Simple Past + would)", "grund": "Hypothetische Frage: had, would." },
+            { "satz": "If my grandparents had not met, I would not have been born.", "loesung": "Typ III: unmöglich, Vergangenheit (Past Perfect + would have)", "grund": "Hypothese über die Vergangenheit: had not met, would not have been." }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "EN_QUESTION_NEG_MCQ_T1",
+    "subject": "EN",
+    "topicId": "EN_USE_QUEST_NEG",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Which sentence is correct?",
+    "payload": { "choices": ["{{s_a}}", "{{s_b}}", "{{s_c}}", "{{s_d}}"] },
+    "solution": { "correct_choice": "{{s_a}}" },
+    "explanation": [
+      { "kind": "what", "body": "{{s_grund}}" },
+      { "kind": "remember", "body": "Fragen und Verneinungen brauchen **do/does/did** + Grundform (*Does she like …? She doesn't like …*). Ausnahmen: **be** und **Modalverben** (*Is he …? Can you …? He isn't, you can't*) und **have** als Hilfsverb (*Have you ever …?*)." }
+    ],
+    "tags": ["questions", "negations", "drill"],
+    "source": "Nach Prüfungshefte MSA Englisch Berlin 2026, Training Grammatik",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "s": {
+          "type": "pick",
+          "from": [
+            { "a": "Do you like pizza?", "b": "Like you pizza?", "c": "Does you like pizza?", "d": "You like pizza?", "grund": "Frage im Simple Present: **do** + Subjekt + Grundform." },
+            { "a": "She doesn't play tennis.", "b": "She don't play tennis.", "c": "She doesn't plays tennis.", "d": "She not plays tennis.", "grund": "Verneinung he/she/it: **doesn't** + Grundform (das -s steckt schon in does)." },
+            { "a": "Did he go to school yesterday?", "b": "Did he went to school yesterday?", "c": "Does he went to school yesterday?", "d": "Went he to school yesterday?", "grund": "Frage im Simple Past: **did** + Grundform (nicht went)." },
+            { "a": "They didn't see the film.", "b": "They didn't saw the film.", "c": "They don't saw the film.", "d": "They saw not the film.", "grund": "Verneinung Simple Past: **didn't** + Grundform." },
+            { "a": "Can you swim?", "b": "Do you can swim?", "c": "Can you to swim?", "d": "You can swim?", "grund": "Modalverben brauchen **kein do** und keinen to-Infinitiv." },
+            { "a": "Where does she live?", "b": "Where she lives?", "c": "Where does she lives?", "d": "Where do she live?", "grund": "Fragewort + **does** + Subjekt + Grundform." },
+            { "a": "Have you ever been to London?", "b": "Did you ever been to London?", "c": "Have you ever went to London?", "d": "Do you ever been to London?", "grund": "Present Perfect Frage: **have** + Subjekt + 3. Form (been)." },
+            { "a": "Is he playing football now?", "b": "Does he playing football now?", "c": "Is he play football now?", "d": "He is playing football now?", "grund": "Present Progressive Frage: **is/are** + Subjekt + -ing." },
+            { "a": "We weren't at home.", "b": "We wasn't at home.", "c": "We didn't were at home.", "d": "We not were at home.", "grund": "*be* wird ohne do verneint: **weren't** (we/you/they), wasn't (I/he/she/it)." },
+            { "a": "Why didn't you call me?", "b": "Why you didn't call me?", "c": "Why didn't you called me?", "d": "Why did not you call me?", "grund": "Fragewort + **didn't** + Subjekt + Grundform." }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "EN_COMPARISON_T1",
+    "subject": "EN",
+    "topicId": "EN_USE_COMPARISON",
+    "difficulty": 2,
+    "qtype": "CLOZE",
+    "prompt": "Choose the correct form of the adjective.",
+    "payload": { "text_with_blanks": "{{s_satz}}", "blanks": [{ "id": 1, "choices": ["{{s_a}}", "{{s_b}}", "{{s_c}}"] }] },
+    "solution": { "answers": { "1": "{{s_a}}" } },
+    "explanation": [
+      { "kind": "what", "body": "{{s_grund}}" },
+      { "kind": "remember", "body": "**Kurze** Adjektive: -er / the -est (*taller, the tallest*; bei -y: *easier*; Konsonant verdoppeln: *bigger, hotter*). **Lange** Adjektive: more / the most (*more interesting*). **Unregelmäßig**: good – better – best, bad – worse – worst, far – farther – farthest. Vergleich mit *than*, Gleichheit mit *as … as*." }
+    ],
+    "tags": ["comparison", "adjectives", "drill"],
+    "source": "Rahmenlehrplan Englisch Berlin, Use of English",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "s": {
+          "type": "pick",
+          "from": [
+            { "satz": "This car is ___ (fast) than mine.", "a": "faster", "b": "more fast", "c": "fastest", "grund": "Kurzes Adjektiv + *than* → **-er**." },
+            { "satz": "She is the ___ (good) player in the team.", "a": "best", "b": "goodest", "c": "better", "grund": "Unregelmäßig: good – better – **best**. *the* + Superlativ." },
+            { "satz": "This film is ___ (interesting) than the book.", "a": "more interesting", "b": "interestinger", "c": "most interesting", "grund": "Langes Adjektiv → **more** + Adjektiv." },
+            { "satz": "Tom is ___ (tall) than his brother.", "a": "taller", "b": "more tall", "c": "tallest", "grund": "Kurzes Adjektiv → **-er**." },
+            { "satz": "It's the ___ (bad) day of my life.", "a": "worst", "b": "baddest", "c": "worse", "grund": "Unregelmäßig: bad – worse – **worst**." },
+            { "satz": "My bag is ___ (heavy) than yours.", "a": "heavier", "b": "more heavy", "c": "heaviest", "grund": "Adjektiv auf -y: y → **-ier**." },
+            { "satz": "This is the ___ (expensive) phone in the shop.", "a": "most expensive", "b": "expensivest", "c": "more expensive", "grund": "Langes Adjektiv, Superlativ → **the most**." },
+            { "satz": "Berlin is ___ (big) than Hamburg.", "a": "bigger", "b": "more big", "c": "biggest", "grund": "Kurzer Vokal + Konsonant: Konsonant verdoppeln → **bigger**." },
+            { "satz": "He is as ___ (old) as me.", "a": "old", "b": "older", "c": "oldest", "grund": "*as … as* = genauso wie: **Grundform** des Adjektivs." },
+            { "satz": "This test was ___ (easy) than the last one.", "a": "easier", "b": "more easy", "c": "easiest", "grund": "-y → **-ier**." },
+            { "satz": "She runs ___ (far) than I do.", "a": "farther", "b": "more far", "c": "farthest", "grund": "Unregelmäßig: far – **farther** – farthest." },
+            { "satz": "It's ___ (hot) today than yesterday.", "a": "hotter", "b": "more hot", "c": "hottest", "grund": "Konsonant verdoppeln → **hotter**." }
+          ]
+        }
+      }
+    }
+  }
+]

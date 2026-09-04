@@ -1,0 +1,51 @@
+[
+  {
+    "id": "L_EN_TENSES",
+    "subject": "EN",
+    "topicId": "EN_USE_TENSES",
+    "alsoFor": ["EN_USE"],
+    "title": "Tenses: Welche Zeitform wann?",
+    "primer": "P_EN_VERBFORMEN",
+    "intro": "Die Englischprüfung fragt **keine Grammatikregeln** ab. Aber jede Schreibaufgabe und jeder Lesetext lebt von den Zeitformen. Wer die **Signalwörter** kennt, findet die richtige Form in drei Sekunden.",
+    "source": "Adaptiert nach Prüfungshefte MSA Englisch Berlin 2026, Training Grammatik (Zeitformen, unregelmäßige Verben)",
+    "sections": [
+      {
+        "kind": "terms",
+        "title": "Die Formen auf einen Blick",
+        "primer": "P_EN_VERBFORMEN",
+        "body": "- **Simple Present**: Grundform, bei he/she/it **-s**. *I watch, she watches*\n- **Present Progressive**: am/is/are + **-ing**. *They are calling.*\n- **Simple Past**: **-ed** oder 2. Form. *He walked, I went.*\n- **Past Progressive**: was/were + **-ing**. *She was cooking.*\n- **Present Perfect**: have/has + **3. Form**. *He has lived here since 2003.*\n- **Present Perfect Progressive**: have/has **been** + -ing. *She has been watching TV all day.*\n- **Past Perfect**: **had** + 3. Form. *He had finished by 10 pm.*\n- **will-future**: **will** + Grundform. *It will rain.*\n- **going to-future**: am/is/are **going to** + Grundform. *I am going to marry her.*"
+      },
+      {
+        "kind": "formula",
+        "title": "Wann welche Zeit? Die Signalwörter",
+        "primer": "P_EN_ZEITFORMEN",
+        "body": "- **Simple Present**: Gewohnheiten, Fakten, Fahrpläne. *usually, always, often, never, every day, sometimes*\n- **Present Progressive**: gerade jetzt, feste Pläne mit Zeitangabe. *now, at the moment, right now, Look!, this week*\n- **Simple Past**: abgeschlossen, Reihenfolge. *yesterday, the other day, last week, a month ago, in 1997, then*\n- **Past Progressive**: gleichzeitig oder unterbrochen. *while, as, when*\n- **Present Perfect**: Vergangenheit mit Folge in der Gegenwart, begann früher und dauert an. *just, already, yet, ever, never, since, for, so far, up to now*\n- **Present Perfect Progressive**: Betonung auf der Dauer. *for, since, all day, the whole day*\n- **Past Perfect**: vor einem anderen Punkt in der Vergangenheit. *before, after, by, when, until that day*\n- **will-future**: Vorhersage, Versprechen, spontaner Entschluss. *tomorrow, next week, I think, I promise*\n- **going to**: feste Pläne, logische Schlussfolgerung. *Look at those clouds, it is going to rain.*"
+      },
+      {
+        "kind": "steps",
+        "title": "In drei Schritten zur Zeitform",
+        "body": "1. **Signalwort** suchen (*yesterday, since, now …*).\n2. **Wann** auf dem Zeitstrahl? Vorher, jetzt, später? Oder noch weiter zurück?\n3. **Verlauf oder Ergebnis?** Läuft es gerade oder dauert es an → **-ing**. Ist es fertig oder zählt das Ergebnis → einfache Form oder Perfect.\n\n*I have lost my key. I can't get in.* → Ergebnis jetzt → Present Perfect.\n*I lost my key yesterday.* → abgeschlossen, Zeitangabe → Simple Past."
+      },
+      {
+        "kind": "formula",
+        "title": "since und for",
+        "body": "**since** + Zeit**punkt**: *since 2003, since Monday, since I was five*\n\n**for** + Zeit**dauer**: *for two hours, for three years, for a long time*\n\nBeide gehören zum **Present Perfect** (oder Present Perfect Progressive): *He has lived here since 2003. He has been waiting for two hours.*"
+      },
+      {
+        "kind": "terms",
+        "title": "Unregelmäßige Verben: die wichtigsten",
+        "body": "be – was/were – been · become – became – become · begin – began – begun · break – broke – broken · bring – brought – brought · build – built – built · buy – bought – bought · catch – caught – caught · choose – chose – chosen · come – came – come · cost – cost – cost · cut – cut – cut · do – did – done · drive – drove – driven · eat – ate – eaten · fall – fell – fallen · feel – felt – felt · find – found – found · forget – forgot – forgotten · get – got – gotten/got · give – gave – given · go – went – gone · have – had – had · hear – heard – heard · keep – kept – kept · know – knew – known · leave – left – left · lose – lost – lost · mean – meant – meant · meet – met – met · pay – paid – paid · put – put – put · read – read – read · ride – rode – ridden · run – ran – run · say – said – said · see – saw – seen · sell – sold – sold · send – sent – sent · show – showed – shown · sit – sat – sat · sleep – slept – slept · speak – spoke – spoken · spend – spent – spent · stand – stood – stood · take – took – taken · tell – told – told · think – thought – thought · wake up – woke up – woken up · wear – wore – worn · write – wrote – written"
+      },
+      {
+        "kind": "mistake",
+        "title": "Typische Fehler",
+        "body": "- Das **-s** bei he/she/it vergessen: *she play* ✗ → *she plays* ✓\n- Present Perfect mit **yesterday**: *I have seen him yesterday* ✗ → *I saw him yesterday* ✓\n- **since** und **for** vertauschen: *since two hours* ✗ → *for two hours* ✓\n- Nach **did** die 2. Form: *Did you went?* ✗ → *Did you go?* ✓\n- **will** im if-Satz: *If it will rain* ✗ → *If it rains* ✓"
+      },
+      {
+        "kind": "remember",
+        "title": "Merke",
+        "body": "**Signalwort → Zeitstrahl → Verlauf oder Ergebnis.** he/she/it + -s. have + 3. Form. since = Zeitpunkt, for = Dauer. Unregelmäßige Verben auswendig."
+      }
+    ]
+  }
+]

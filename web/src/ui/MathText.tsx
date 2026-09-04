@@ -77,10 +77,13 @@ interface Props {
   text: string;
   /** Keep whitespace/line breaks exactly (formula alignments, step lists). */
   pre?: boolean;
+  /** Render as a single inline span (no paragraphs), e.g. text fragments around a cloze blank. */
+  inline?: boolean;
   className?: string;
 }
 
-export const MathText = memo(function MathText({ text, pre = false, className }: Props) {
+export const MathText = memo(function MathText({ text, pre = false, inline: asInline = false, className }: Props) {
+  if (asInline) return <span className={className}>{inline(text.replace(/\s*\n+\s*/g, " "), "inl")}</span>;
   const blocks = text.replace(/\r\n/g, "\n").split(/\n{2,}/);
   return (
     <div className={className}>

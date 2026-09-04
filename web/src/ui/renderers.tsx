@@ -153,7 +153,7 @@ function ClozeRenderer({ question, answer, onChange, locked, feedback }: Rendere
         if (feedback && blank) cls = got.trim().toLowerCase() === (correct[key] ?? "").trim().toLowerCase() ? "border-green bg-green-soft" : "border-red bg-red-soft";
         return (
           <span key={i}>
-            <MathText text={part} className="inline" />
+            <MathText text={part} inline />
             {blank &&
               (blank.choices ? (
                 <select
