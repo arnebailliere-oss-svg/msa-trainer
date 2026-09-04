@@ -198,8 +198,39 @@ function ShortRenderer({ question, answer, onChange, onSubmit, locked, feedback 
   useEffect(() => {
     ref.current?.focus();
   }, [question.variantId]);
-  const numeric = payload.answer_type === "number";
-  const placeholder = { number: "Zahl, z. B. 3,5", fraction: "Bruch, z. B. 3/4", term: "Term, z. B. 3x+6", text: "Antwort" }[payload.answer_type ?? "text"];
+  const kind = payload.answer_type ?? "text";
+  const placeholder = { number: "Zahl, z. B. 3,5", fraction: "Bruch, z. B. 3/4", term: "Term, z. B. 3x+6", text: "Antwort" }[kind];
+  // Phone keypads (inputMode decimal) have no "/" or "-", so fractions, negative numbers and terms get
+  // their own keys next to the field; the inserted text is what the evaluator expects.
+  const KEYS: Record<string, { label: string; insert: string; aria: string }[]> = {
+    number: [{ label: "−", insert: "-", aria: "Minus" }],
+    fraction: [
+      { label: "/", insert: "/", aria: "Bruchstrich" },
+      { label: "−", insert: "-", aria: "Minus" },
+    ],
+    term: [
+      { label: "x", insert: "x", aria: "x" },
+      { label: "²", insert: "²", aria: "hoch 2" },
+      { label: "+", insert: "+", aria: "Plus" },
+      { label: "−", insert: "-", aria: "Minus" },
+      { label: "·", insert: "*", aria: "Mal" },
+      { label: "/", insert: "/", aria: "Bruchstrich" },
+      { label: "(", insert: "(", aria: "Klammer auf" },
+      { label: ")", insert: ")", aria: "Klammer zu" },
+    ],
+    text: [],
+  };
+  const insert = (s: string) => {
+    const el = ref.current;
+    if (!el || locked) return;
+    const start = el.selectionStart ?? el.value.length;
+    const end = el.selectionEnd ?? start;
+    onChange(el.value.slice(0, start) + s + el.value.slice(end));
+    requestAnimationFrame(() => {
+      el.focus();
+      el.setSelectionRange(start + s.length, start + s.length);
+    });
+  };
   let border = "border-line focus:border-brand-2";
   if (feedback) border = feedback.isCorrect ? "border-green bg-green-soft" : "border-red bg-red-soft";
   return (
@@ -213,7 +244,7 @@ function ShortRenderer({ question, answer, onChange, onSubmit, locked, feedback 
             if (e.key === "Enter") onSubmit();
           }}
           disabled={locked}
-          inputMode={numeric ? "decimal" : payload.answer_type === "fraction" ? "numeric" : "text"}
+          inputMode={kind === "number" || kind === "fraction" ? "decimal" : "text"}
           autoComplete="off"
           autoCapitalize="off"
           spellCheck={false}
@@ -223,6 +254,15 @@ function ShortRenderer({ question, answer, onChange, onSubmit, locked, feedback 
         />
         {payload.unit && <span className="ml-2 text-lg text-ink-2">{payload.unit}</span>}
       </div>
+      {!locked && KEYS[kind]!.length > 0 && (
+        <div className="flex flex-wrap gap-1.5" role="group" aria-label="Sonderzeichen">
+          {KEYS[kind]!.map((k) => (
+            <button key={k.aria} type="button" onMouseDown={(e) => e.preventDefault()} onClick={() => insert(k.insert)} aria-label={k.aria} title={k.aria} className="min-w-10 rounded-xl border border-line bg-surface px-3 py-2 text-lg font-semibold text-ink hover:bg-surface-2 active:scale-95">
+              {k.label}
+            </button>
+          ))}
+        </div>
+      )}
       {!feedback && <span className="text-sm text-ink-3">Enter = abschicken</span>}
     </div>
   );
