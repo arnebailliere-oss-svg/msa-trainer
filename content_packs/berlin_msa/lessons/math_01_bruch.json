@@ -3,6 +3,10 @@
     "id": "L_MATH_NUM_FRAC",
     "subject": "MATH",
     "topicId": "MATH_NUM_FRAC_BASIC",
+    "alsoFor": [
+      "MATH_NUM_FRAC_OPS",
+      "MATH_NUM_DEC_CONV"
+    ],
     "title": "Bruchrechnung",
     "intro": "In der Prüfung kommt fast immer mindestens eine Aufgabe mit Brüchen dran — und viele andere Aufgaben (Prozent, Wahrscheinlichkeit, Gleichungen) brauchen Brüche als Werkzeug. Wer Brüche sicher kann, hat es überall leichter.",
     "source": "Adaptiert nach Prüfungshefte MSA Mathe Berlin 2027, Kap. 1.1",
@@ -44,6 +48,11 @@
         "title": "Ungleiche Nenner? So gehst du vor",
         "body": "1. **Hauptnenner** finden: das kleinste gemeinsame Vielfache der Nenner (zur Not: beide Nenner multiplizieren).\n2. Beide Brüche auf den Hauptnenner **erweitern**.\n3. Zähler addieren oder subtrahieren, Nenner bleibt.\n4. Ergebnis **kürzen**, so weit es geht.\n\nBeispiel: $\\frac{1}{2} + \\frac{3}{4} = \\frac{2}{4} + \\frac{3}{4} = \\frac{5}{4}$",
         "primer": "P_MATH_BRUCH"
+      },
+      {
+        "kind": "formula",
+        "title": "Bruch, Dezimalzahl und Prozent umwandeln",
+        "body": "Bruch, Dezimalzahl und Prozent sind **drei Schreibweisen für dieselbe Zahl**: $\\frac{1}{4} = 0{,}25 = 25\\,\\%$.\n\n- **Bruch → Dezimalzahl**: Zähler durch Nenner teilen: $\\frac{3}{8} = 3 : 8 = 0{,}375$. Oder auf den Nenner 10, 100, 1000 erweitern: $\\frac{3}{5} = \\frac{6}{10} = 0{,}6$.\n- **Dezimalzahl → Bruch**: Nachkommastellen zählen — so viele Nullen bekommt der Nenner: $0{,}45 = \\frac{45}{100} = \\frac{9}{20}$, am Ende kürzen.\n- **Prozent** heißt „von Hundert“: $35\\,\\% = \\frac{35}{100} = 0{,}35$. Umgekehrt Dezimalzahl mal 100: $0{,}08 = 8\\,\\%$.\n\nBeispiel: Welche Zahl ist größer, $\\frac{5}{8}$ oder $0{,}6$? $\\frac{5}{8} = 5 : 8 = 0{,}625$, und $0{,}625 > 0{,}6$ — also ist $\\frac{5}{8}$ größer.\n\n**Merke:** Bruch → Dezimalzahl: **teilen**. Dezimalzahl → Bruch: **Nachkommastellen zählen** (1 Stelle → Zehntel, 2 Stellen → Hundertstel). Prozent = **Hundertstel**. Auswendig: $\\frac{1}{2} = 0{,}5$, $\\frac{1}{4} = 0{,}25$, $\\frac{3}{4} = 0{,}75$, $\\frac{1}{5} = 0{,}2$, $\\frac{1}{8} = 0{,}125$, $\\frac{1}{3} = 0{,}\\overline{3}$."
       },
       {
         "kind": "mistake",

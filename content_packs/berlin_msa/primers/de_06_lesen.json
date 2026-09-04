@@ -1,0 +1,100 @@
+[
+  {
+    "id": "P_DE_LESEN",
+    "subject": "DE",
+    "title": "Einen Text richtig lesen",
+    "teaser": "Was ein Sachtext ist, wie du Kernaussage, These, Argument und Beispiel auseinanderhältst, wie du richtig zitierst und in zwei Sätzen zusammenfasst",
+    "hook": "Die Leseaufgaben sehen nach viel Text aus. Aber es sind immer dieselben Handgriffe: Frage lesen, Stelle finden, genau hinschauen. Wer die Wörter kennt, mit denen die Aufgaben gestellt werden, hat den größten Teil schon geschafft.",
+    "outro": "Kernaussage, These, Argument, Beispiel, Beleg, Zusammenfassung. Und die Routine: Frage lesen, Schlüsselwörter, Absatz suchen. Damit kannst du jetzt die Lektion und jede Leseaufgabe angehen.",
+    "steps": [
+      {
+        "title": "Was ist ein Sachtext?",
+        "body": "Ein Text über eine **Sache** aus der Wirklichkeit.\n\nZeitungsartikel, Bericht, Kommentar, Lexikoneintrag.\n\nEr will **informieren** oder **überzeugen**. Keine erfundene Geschichte.",
+        "say": "Ein Sachtext erzählt dir keine Geschichte. Er will dir etwas erklären oder dich von etwas überzeugen. Das ist der ganze Unterschied zum Roman."
+      },
+      {
+        "title": "Kernaussage oder Detail?",
+        "body": "**Kernaussage**: das, was der Text **insgesamt** sagen will. Ein Satz.\n\n**Detail**: eine Zahl, ein Name, ein Beispiel.\n\n*Kernaussage: Jugendliche lernen besser, wenn die Schule später beginnt.*\n\n*Detail: Eine Schule in Niedersachsen startet um 8:50 Uhr.*",
+        "say": "Stell dir vor, du dürftest nur einen Satz behalten. Welcher wäre es? Das ist die Kernaussage. Alles andere sind Details."
+      },
+      {
+        "title": "Wo steckt die Kernaussage?",
+        "body": "Meist am **Anfang** oder am **Ende**.\n\nSignale: *Deshalb …*, *Insgesamt …*, *Ich finde …*, *Klar ist: …*\n\nUnd: die **Überschrift** lesen. Sie verrät viel.",
+        "say": "Der Anfang stellt die Frage, das Ende gibt die Antwort. Schau zuerst dort nach, bevor du den ganzen Text durchsuchst."
+      },
+      {
+        "title": "Die These",
+        "body": "Eine **These** ist eine Behauptung, die man **begründen** muss.\n\n*Schulkleidung ist eine gute Idee.*\n\nNoch ohne Beweis. Nur ein Standpunkt.",
+        "say": "Eine These ist ein Standpunkt, kein Beweis. Darum braucht sie Argumente. Sonst ist es nur eine Meinung."
+      },
+      {
+        "title": "Das Argument",
+        "body": "Ein **Argument** sagt, **warum** die These stimmt.\n\n*Schulkleidung ist eine gute Idee, **weil** niemand mehr mit teurer Markenkleidung angeben muss.*\n\nSignale: *weil, denn, da, deshalb*",
+        "say": "Such nach dem Warum. Steht ein weil oder ein denn im Satz, hast du meistens ein Argument in der Hand."
+      },
+      {
+        "title": "Das Beispiel",
+        "body": "Ein **Beispiel** zeigt das Argument an einem **konkreten Fall**.\n\n*An einer Hamburger Schule fühlten sich nach der Einführung weniger Schüler ausgegrenzt.*\n\nSignale: *zum Beispiel, etwa, so zeigt, eine Studie, eine Zahl, ein Name*",
+        "say": "Ein Beispiel kann man sich vorstellen: eine Schule, eine Person, eine Zahl. Es beweist das Argument. Aber es ist nicht das Argument selbst."
+      },
+      {
+        "title": "Alle drei auf einen Blick",
+        "body": "**These**: Schulkleidung ist gut.\n\n**Argument**: … weil der Druck durch Markenkleidung wegfällt.\n\n**Beispiel**: In Hamburg fühlten sich danach weniger Schüler ausgegrenzt.\n\nThese → Warum? → Zeig es mir!",
+        "say": "Merk dir die Kette: These, Warum, Zeig es mir. Wenn du die drei auseinanderhalten kannst, ist die halbe Leseaufgabe geschafft."
+      },
+      {
+        "title": "Was ist ein Beleg?",
+        "body": "Ein **Beleg** ist die Stelle im Text, die **beweist**, dass eine Aussage stimmt.\n\nAussage: *Die Mehrheit findet die Regel gut.*\n\nBeleg: *„62 Prozent finden die Regel gut“ (Z. 5)*",
+        "say": "Belegen heißt: Zeig mir, wo es steht. Nicht ungefähr, sondern genau. Mit Zeile."
+      },
+      {
+        "title": "So zitierst du richtig",
+        "body": "1. **Wörtlich** abschreiben, kein Wort ändern\n\n2. In **Anführungszeichen** „…“ setzen\n\n3. **Zeile** oder Absatz dazu: (Z. 12) oder (Abs. 3)\n\n4. Etwas weglassen? Dann **(…)** an die Stelle",
+        "say": "Vier Dinge: wörtlich, Anführungszeichen, Zeile, Auslassung markieren. Fehlt eins, gibt es Abzug. So einfach und so streng ist das."
+      },
+      {
+        "title": "Die Zusammenfassung: zwei Sätze",
+        "body": "**Satz 1**: Textart, Titel, Thema, Kernaussage\n\n*Der Kommentar „Ein Pullover für alle?“ spricht sich für Schulkleidung aus.*\n\n**Satz 2**: die wichtigsten Argumente\n\n*Als Gründe nennt die Autorin den Markendruck, die Gemeinschaft und die Zeitersparnis.*",
+        "say": "Zwei Sätze reichen: Worum geht es, und was sind die Hauptgründe. Mehr will niemand lesen."
+      },
+      {
+        "title": "Regeln für die Zusammenfassung",
+        "body": "**Präsens**: *Der Text zeigt …* (nicht *zeigte*)\n\n**Keine Meinung**: kein *ich finde*\n\n**Keine Zitate**: eigene Worte\n\n**Keine Details**: keine Zahlen und Namen, die nicht wichtig sind",
+        "say": "Eine Zusammenfassung ist wie ein Spiegel: Sie zeigt den Text, nicht dich. Deine Meinung bleibt draußen."
+      },
+      {
+        "title": "Die Drei-Schritte-Routine",
+        "body": "1. **Frage lesen**: Was genau wird gefragt?\n\n2. **Schlüsselwörter** in der Frage markieren\n\n3. **Absatz suchen**, in dem diese Wörter vorkommen, und genau lesen",
+        "say": "Erst die Frage, dann der Text. Wer den ganzen Text liest und dann aus dem Gedächtnis rät, verliert Zeit und Punkte."
+      },
+      {
+        "title": "Die Routine in Aktion",
+        "body": "Frage: *Welche Hürde nennen Jugendliche am häufigsten?*\n\nSchlüsselwörter: **Hürde**, **am häufigsten**\n\nIm Text: *„Es gibt allerdings auch Hürden. Am häufigsten nennen Jugendliche Zeitmangel“*\n\nAntwort: Zeitmangel (Abs. 4)",
+        "say": "Siehst du? Das Wort aus der Frage steht fast genauso im Text. Du musst es nur finden. Das ist kein Rätsel, das ist Suchen."
+      },
+      {
+        "title": "Drei Fallen",
+        "body": "*Plausibel* ist nicht *richtig*: Steht es nicht da, steht es nicht da.\n\nAbsolute Wörter: *immer, nie, alle, gar nicht*. Oft falsch.\n\n**Beispiel ≠ Argument**: Ein Beispiel allein erklärt kein Warum.",
+        "say": "Die Prüfung testet, ob du genau liest. Nicht, ob du gut rätst. Lieber einmal mehr nachschauen."
+      }
+    ],
+    "vocab": [
+      { "term": "Sachtext", "plain": "Text über eine echte Sache; informiert oder überzeugt.", "example": "Zeitungsartikel, Bericht, Kommentar" },
+      { "term": "Kernaussage", "plain": "Das, was der Text insgesamt sagen will.", "example": "Jugendliche lernen besser, wenn die Schule später beginnt." },
+      { "term": "These", "plain": "Standpunkt, den man begründen muss.", "example": "Schulkleidung ist eine gute Idee." },
+      { "term": "Argument", "plain": "Das Warum hinter der These.", "example": "…, weil niemand mit Marken angeben muss." },
+      { "term": "Beispiel", "plain": "Konkreter Fall, der das Argument zeigt.", "example": "eine Schule, eine Studie, eine Zahl" },
+      { "term": "Beleg", "plain": "Wörtliche Textstelle mit Zeilenangabe, die eine Aussage beweist.", "example": "„62 Prozent finden die Regel gut“ (Z. 5)" },
+      { "term": "Zitat", "plain": "Wörtlich übernommene Stelle in Anführungszeichen.", "example": "Auslassungen: (…)" },
+      { "term": "Zusammenfassung", "plain": "Kernaussage und Hauptargumente in eigenen Worten, im Präsens, ohne Meinung.", "example": "Der Text handelt von … Die Autorin vertritt die These, dass …" }
+    ],
+    "quiz": [
+      { "prompt": "Was ist die Kernaussage eines Textes?", "choices": ["Das, was der Text insgesamt sagen will", "Der erste Satz des Textes", "Die größte Zahl im Text", "Das längste Beispiel"], "correct": "Das, was der Text insgesamt sagen will", "explain": "Die Kernaussage gilt für den ganzen Text. Erster Satz, Zahlen und Beispiele sind Details." },
+      { "prompt": "Welcher Satz ist ein Argument?", "choices": ["Schulkleidung ist gut, weil niemand mit Markenkleidung angeben muss.", "Schulkleidung ist gut.", "An einer Hamburger Schule fühlten sich weniger Schüler ausgegrenzt.", "Ich mag Pullover."], "correct": "Schulkleidung ist gut, weil niemand mit Markenkleidung angeben muss.", "explain": "Das Argument nennt das Warum (*weil*). Ohne Warum ist es eine These, die Hamburger Schule ist ein Beispiel." },
+      { "prompt": "Was gehört zu einem korrekten Beleg?", "choices": ["Anführungszeichen und Zeilenangabe", "Nur die Zeilenangabe", "Eigene Worte ohne Zeile", "Ein Ausrufezeichen"], "correct": "Anführungszeichen und Zeilenangabe", "explain": "Wörtlich, in Anführungszeichen, mit Zeile. Das sind die Pflichtteile." },
+      { "prompt": "Welcher Satz gehört NICHT in eine Zusammenfassung?", "choices": ["Ich finde, die Autorin hat recht.", "Der Text handelt von Schulkleidung.", "Die Autorin nennt drei Gründe.", "Sie hält das Gegenargument für unbegründet."], "correct": "Ich finde, die Autorin hat recht.", "explain": "Deine Meinung bleibt draußen. Die Zusammenfassung zeigt nur, was im Text steht." },
+      { "prompt": "In welcher Zeitform steht eine Zusammenfassung?", "choices": ["Präsens", "Präteritum", "Futur", "Perfekt"], "correct": "Präsens", "explain": "Der Text liegt vor dir und sagt es jetzt: *Der Text zeigt …*" },
+      { "prompt": "Was machst du als Erstes bei einer Leseaufgabe?", "choices": ["Die Frage lesen und Schlüsselwörter markieren", "Den Text auswendig lernen", "Sofort eine Antwort raten", "Die Überschrift abschreiben"], "correct": "Die Frage lesen und Schlüsselwörter markieren", "explain": "Erst die Frage, dann der Absatz mit den Schlüsselwörtern. So findest du die Stelle schnell." }
+    ]
+  }
+]

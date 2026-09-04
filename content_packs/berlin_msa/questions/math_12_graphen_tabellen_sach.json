@@ -1,0 +1,1051 @@
+[
+  {
+    "id": "MATH_G12_GRAPH_YABSCHNITT_T1",
+    "subject": "MATH",
+    "topicId": "MATH_FUNC_LINEAR_GRAPH",
+    "difficulty": 1,
+    "qtype": "SHORT",
+    "prompt": "Im Koordinatensystem ist die Gerade $f$ mit der Steigung $m = {{m}}$ gezeichnet. Lies den $y$-Achsenabschnitt $n$ ab.",
+    "payload": { "answer_type": "number" },
+    "solution": { "kind": "computed", "expr": "n" },
+    "explanation": [
+      { "kind": "what", "body": "Der **$y$-Achsenabschnitt** $n$ ist der $y$-Wert, bei dem die Gerade die senkrechte Achse (die $y$-Achse) schneidet. Dort ist $x = 0$. In der Gleichung $y = mx + n$ ist $n$ die Zahl **ohne** $x$." },
+      { "kind": "steps", "body": "1. Suche die Stelle, an der die Gerade die senkrechte Achse kreuzt.\n2. Zähle die Kästchen von der waagerechten Achse bis zu dieser Stelle: {{= n | abs}} Kästchen. Oberhalb der $x$-Achse ist $n$ positiv, unterhalb negativ.\n3. Hier schneidet $f$ die $y$-Achse im Punkt $(0 \\,|\\, {{n}})$, also $n = {{n}}$." },
+      { "kind": "mistake", "body": "Nicht die **Nullstelle** (Schnitt mit der waagerechten $x$-Achse) ablesen — $n$ liegt auf der **senkrechten** Achse. Und: $m$ und $n$ nicht verwechseln. Die Steigung $m$ beschreibt, wie schräg die Gerade ist; $n$ ist nur die Höhe, in der sie die $y$-Achse trifft." },
+      { "kind": "remember", "body": "$n$ = Schnittpunkt mit der $y$-Achse (bei $x = 0$). Vorzeichen beachten: unter der $x$-Achse ist $n$ negativ." },
+      { "kind": "answer", "body": "$n = {{n}}$" }
+    ],
+    "tags": ["funktion", "linear", "graph", "y-achsenabschnitt", "drill", "basisaufgabe"],
+    "source": "Eigenerstellung nach Prüfungshefte MSA Mathe Berlin 2027, Training Funktionen",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "m": { "type": "choice", "values": [-3, -2, -1.5, -1, -0.5, 0.5, 1, 1.5, 2, 3] },
+        "n": { "type": "int", "min": -5, "max": 5 }
+      },
+      "constraints": ["n != 0"]
+    },
+    "figure": {
+      "type": "coordinateSystem",
+      "xmin": -6, "xmax": 6, "ymin": -6, "ymax": 6, "width": 280, "height": 280,
+      "lines": [{ "m": "{{= m | raw}}", "n": "{{= n | raw}}", "label": "f" }]
+    }
+  },
+  {
+    "id": "MATH_G12_GRAPH_STEIGUNG_T1",
+    "subject": "MATH",
+    "topicId": "MATH_FUNC_LINEAR_GRAPH",
+    "difficulty": 2,
+    "qtype": "SHORT",
+    "prompt": "Die Gerade $f$ geht durch die markierten Punkte $A$ (bei $x = {{x1}}$) und $B$ (bei $x = {{x2}}$). Bestimme die Steigung $m$ mit einem Steigungsdreieck.",
+    "payload": { "answer_type": "number" },
+    "solution": { "kind": "computed", "expr": "m" },
+    "explanation": [
+      { "kind": "what", "body": "Die **Steigung** $m$ sagt, wie steil die Gerade ist. Beim **Steigungsdreieck** gehst du von einem Punkt der Geraden ein Stück nach rechts (**Breite**) und dann senkrecht bis zur Geraden (**Höhe**)." },
+      { "kind": "steps", "body": "Steigungsdreieck von $A({{x1}} \\,|\\, {{y1}})$ nach $B({{x2}} \\,|\\, {{y2}})$:\n\n- Breite (nach rechts): ${{x2}} - ({{x1}}) = {{dx}}$\n- Höhe (nach oben oder unten): ${{y2}} - ({{y1}}) = {{dy}}$\n\n$m = \\frac{\\text{Höhe}}{\\text{Breite}} = \\frac{{{dy}}}{{{dx}}} = {{m}}$" },
+      { "kind": "mistake", "body": "Höhe und Breite nicht vertauschen: $m$ = Höhe **geteilt durch** Breite. Geht die Gerade nach rechts **abwärts**, ist die Höhe negativ und damit auch $m$. Ist die Breite nicht 1, musst du wirklich teilen — die Höhe allein ist noch nicht die Steigung." },
+      { "kind": "remember", "body": "$m = \\frac{\\text{Höhe}}{\\text{Breite}}$ des Steigungsdreiecks. Breite 1 → $m$ = Höhe. Steigt die Gerade: $m > 0$, fällt sie: $m < 0$." },
+      { "kind": "answer", "body": "$m = {{m}}$" }
+    ],
+    "tags": ["funktion", "linear", "graph", "steigung", "steigungsdreieck", "drill", "basisaufgabe"],
+    "source": "Eigenerstellung nach Prüfungshefte MSA Mathe Berlin 2027, Training Funktionen",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "x1": { "type": "int", "min": -4, "max": 2 },
+        "dx": { "type": "choice", "values": [1, 2, 4] },
+        "m": { "type": "choice", "values": [-3, -2, -1.5, -1, -0.5, 0.5, 1, 1.5, 2, 3] },
+        "n": { "type": "int", "min": -3, "max": 3 }
+      },
+      "derived": {
+        "x2": "x1 + dx",
+        "y1": "m * x1 + n",
+        "y2": "m * x2 + n",
+        "dy": "y2 - y1"
+      },
+      "constraints": ["isint(y1)", "isint(y2)", "abs(y1) <= 5", "abs(y2) <= 5", "x2 <= 5"]
+    },
+    "figure": {
+      "type": "coordinateSystem",
+      "xmin": -6, "xmax": 6, "ymin": -6, "ymax": 6, "width": 280, "height": 280,
+      "lines": [{ "m": "{{= m | raw}}", "n": "{{= n | raw}}", "label": "f" }],
+      "points": [
+        { "x": "{{= x1 | raw}}", "y": "{{= y1 | raw}}", "label": "A" },
+        { "x": "{{= x2 | raw}}", "y": "{{= y2 | raw}}", "label": "B" }
+      ]
+    }
+  },
+  {
+    "id": "MATH_G12_GRAPH_GLEICHUNG_MCQ_T1",
+    "subject": "MATH",
+    "topicId": "MATH_FUNC_LINEAR_GRAPH",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Welche Funktionsgleichung gehört zur gezeichneten Geraden $f$?",
+    "payload": {
+      "choices": [
+        "$y = {{m}}x {{= n | sign}}$",
+        "$y = {{n}}x {{= m | sign}}$",
+        "$y = {{= -m}}x {{= n | sign}}$",
+        "$y = {{m}}x {{= -n | sign}}$"
+      ],
+      "shuffle": true
+    },
+    "solution": { "correct_choice": "$y = {{m}}x {{= n | sign}}$" },
+    "explanation": [
+      { "kind": "what", "body": "Eine Gerade hat die Gleichung $y = mx + n$. Aus dem Graphen liest du zwei Dinge ab: den **$y$-Achsenabschnitt** $n$ (wo die Gerade die $y$-Achse schneidet) und die **Steigung** $m$ (Steigungsdreieck)." },
+      { "kind": "steps", "body": "1. **$n$ ablesen**: Die Gerade schneidet die $y$-Achse bei ${{n}}$ → $n = {{n}}$.\n2. **$m$ ablesen**: Ein Kästchen nach rechts → {{= m | abs}} Kästchen nach oben (wenn die Gerade steigt) bzw. nach unten (wenn sie fällt). Bei halben Werten hilft ein größeres Steigungsdreieck: 2 nach rechts → {{= 2*m | abs}} hoch bzw. runter. Hier: $m = {{m}}$.\n3. Einsetzen: $y = {{m}}x {{= n | sign}}$." },
+      { "kind": "mistake", "body": "$m$ und $n$ vertauschen: Die Steigung steht **vor** dem $x$, der $y$-Achsenabschnitt steht **allein**. $y = {{n}}x {{= m | sign}}$ wäre eine ganz andere Gerade. Und: Fällt die Gerade nach rechts, ist $m$ negativ." },
+      { "kind": "remember", "body": "$y = mx + n$: $n$ = Schnitt mit der $y$-Achse, $m$ = Höhe/Breite des Steigungsdreiecks." },
+      { "kind": "answer", "body": "$y = {{m}}x {{= n | sign}}$" }
+    ],
+    "tags": ["funktion", "linear", "graph", "funktionsgleichung", "drill", "basisaufgabe"],
+    "source": "Eigenerstellung nach Prüfungshefte MSA Mathe Berlin 2027, Training Funktionen",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "m": { "type": "choice", "values": [-3, -2, -1.5, -0.5, 0.5, 1.5, 2, 3] },
+        "n": { "type": "int", "min": -4, "max": 4 }
+      },
+      "constraints": ["n != 0", "m != n"]
+    },
+    "figure": {
+      "type": "coordinateSystem",
+      "xmin": -6, "xmax": 6, "ymin": -6, "ymax": 6, "width": 280, "height": 280,
+      "lines": [{ "m": "{{= m | raw}}", "n": "{{= n | raw}}", "label": "f" }]
+    }
+  },
+  {
+    "id": "MATH_G12_GRAPH_PUNKT_MCQ_T1",
+    "subject": "MATH",
+    "topicId": "MATH_FUNC_LINEAR_GRAPH",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Im Koordinatensystem sind die Gerade $f$ und vier Punkte eingezeichnet. Welcher Punkt liegt auf der Geraden?",
+    "payload": {
+      "choices": [
+        "$P({{px}} \\,|\\, {{py}})$",
+        "$Q({{py}} \\,|\\, {{px}})$",
+        "$R({{px}} \\,|\\, {{= py + k}})$",
+        "$S({{= -px}} \\,|\\, {{py}})$"
+      ],
+      "shuffle": true
+    },
+    "solution": { "correct_choice": "$P({{px}} \\,|\\, {{py}})$" },
+    "explanation": [
+      { "kind": "what", "body": "Ein Punkt liegt auf der Geraden, wenn die Gerade **genau durch ihn hindurchgeht**. Ein Punkt wird als $(x \\,|\\, y)$ geschrieben: erst nach rechts/links ($x$), dann nach oben/unten ($y$)." },
+      { "kind": "steps", "body": "1. Am Graphen: Bei $x = {{px}}$ hat die Gerade die Höhe $y = {{py}}$ — genau dort liegt $P$.\n2. Rechnerisch (Punktprobe) mit $y = {{m}}x {{= n | sign}}$: $y = {{m}} \\cdot ({{px}}) {{= n | sign}} = {{py}}$ ✓\n3. $R({{px}} \\,|\\, {{= py + k}})$ hat denselben $x$-Wert, aber die falsche Höhe: ${{= py + k}} \\neq {{py}}$. $Q$ und $S$ liegen ebenfalls neben der Geraden." },
+      { "kind": "mistake", "body": "Die Reihenfolge der Koordinaten vertauschen: $Q({{py}} \\,|\\, {{px}})$ ist **nicht** derselbe Punkt wie $P({{px}} \\,|\\, {{py}})$. Erst $x$ (waagerecht), dann $y$ (senkrecht)." },
+      { "kind": "remember", "body": "Punktprobe: $x$ einsetzen — kommt das $y$ des Punktes heraus, liegt er auf der Geraden. Am Graphen: Über $x$ senkrecht hoch — trifft man den Punkt genau auf der Linie?" },
+      { "kind": "answer", "body": "$P({{px}} \\,|\\, {{py}})$" }
+    ],
+    "tags": ["funktion", "linear", "graph", "punktprobe", "drill", "basisaufgabe"],
+    "source": "Eigenerstellung nach Prüfungshefte MSA Mathe Berlin 2027, Training Funktionen",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "m": { "type": "choice", "values": [-2, -1.5, -1, -0.5, 0.5, 1, 1.5, 2] },
+        "n": { "type": "int", "min": -4, "max": 4 },
+        "px": { "type": "int", "min": -5, "max": 5 },
+        "k": { "type": "choice", "values": [-2, -1, 1, 2] }
+      },
+      "derived": {
+        "py": "m * px + n"
+      },
+      "constraints": ["n != 0", "px != 0", "isint(py)", "abs(py) <= 5", "abs(py + k) <= 5", "px != py", "m * py + n != px"]
+    },
+    "figure": {
+      "type": "coordinateSystem",
+      "xmin": -6, "xmax": 6, "ymin": -6, "ymax": 6, "width": 280, "height": 280,
+      "lines": [{ "m": "{{= m | raw}}", "n": "{{= n | raw}}", "label": "f" }],
+      "points": [
+        { "x": "{{= px | raw}}", "y": "{{= py | raw}}", "label": "P" },
+        { "x": "{{= py | raw}}", "y": "{{= px | raw}}", "label": "Q" },
+        { "x": "{{= px | raw}}", "y": "{{= py + k | raw}}", "label": "R" },
+        { "x": "{{= -px | raw}}", "y": "{{= py | raw}}", "label": "S" }
+      ]
+    }
+  },
+  {
+    "id": "MATH_G12_GRAPH_NULLSTELLE_T1",
+    "subject": "MATH",
+    "topicId": "MATH_FUNC_LINEAR_GRAPH",
+    "difficulty": 2,
+    "qtype": "SHORT",
+    "prompt": "Im Koordinatensystem ist die Gerade $f$ gezeichnet; sie schneidet die $y$-Achse bei $y = {{n}}$. Lies die Nullstelle ab.",
+    "payload": { "answer_type": "number" },
+    "solution": { "kind": "computed", "expr": "x0" },
+    "explanation": [
+      { "kind": "what", "body": "Die **Nullstelle** ist der $x$-Wert, an dem der Graph die waagerechte Achse ($x$-Achse) schneidet. Dort ist $y = 0$." },
+      { "kind": "steps", "body": "1. Suche die Stelle, an der die Gerade die waagerechte Achse kreuzt.\n2. Lies dort den $x$-Wert ab: $x = {{x0}}$.\n3. Kontrolle mit der Gleichung $y = {{m}}x {{= n | sign}}$: ${{m}} \\cdot ({{x0}}) {{= n | sign}} = {{= m*x0}} {{= n | sign}} = 0$ ✓" },
+      { "kind": "mistake", "body": "Die Nullstelle ist ein **$x$-Wert**, kein $y$-Wert — also nicht den $y$-Achsenabschnitt $n = {{n}}$ angeben. Antwort ist die Zahl ${{x0}}$ (der Schnittpunkt wäre $({{x0}} \\,|\\, 0)$)." },
+      { "kind": "remember", "body": "Nullstelle: $y = 0$ setzen bzw. am Graphen den Schnitt mit der $x$-Achse ablesen." },
+      { "kind": "answer", "body": "Nullstelle bei $x = {{x0}}$" }
+    ],
+    "tags": ["funktion", "linear", "graph", "nullstelle", "drill", "basisaufgabe"],
+    "source": "Eigenerstellung nach Prüfungshefte MSA Mathe Berlin 2027, Training Funktionen",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "m": { "type": "choice", "values": [-3, -2, -1.5, -1, -0.5, 0.5, 1, 1.5, 2, 3] },
+        "x0": { "type": "int", "min": -5, "max": 5 }
+      },
+      "derived": {
+        "n": "-m * x0"
+      },
+      "constraints": ["x0 != 0", "isint(n)", "abs(n) <= 6"]
+    },
+    "figure": {
+      "type": "coordinateSystem",
+      "xmin": -6, "xmax": 6, "ymin": -6, "ymax": 6, "width": 280, "height": 280,
+      "lines": [{ "m": "{{= m | raw}}", "n": "{{= n | raw}}", "label": "f" }]
+    }
+  },
+  {
+    "id": "MATH_G12_GRAPH_SCHNITT_MCQ_T1",
+    "subject": "MATH",
+    "topicId": "MATH_FUNC_LINEAR_GRAPH",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "Im Koordinatensystem sind die Geraden $f$ und $g$ gezeichnet. In welchem Punkt $S$ schneiden sie sich?",
+    "payload": {
+      "choices": [
+        "$S({{sx}} \\,|\\, {{sy}})$",
+        "$S({{sy}} \\,|\\, {{sx}})$",
+        "$S({{= -sx}} \\,|\\, {{sy}})$",
+        "$S({{sx}} \\,|\\, {{= -sy}})$"
+      ],
+      "shuffle": true
+    },
+    "solution": { "correct_choice": "$S({{sx}} \\,|\\, {{sy}})$" },
+    "explanation": [
+      { "kind": "what", "body": "Der **Schnittpunkt** ist der Punkt, in dem sich beide Geraden kreuzen. Er liegt auf **beiden** Geraden — dort haben $f$ und $g$ denselben $x$- und denselben $y$-Wert." },
+      { "kind": "steps", "body": "1. Suche das Kreuz der beiden Linien.\n2. Von dort **senkrecht** zur $x$-Achse: $x = {{sx}}$.\n3. Von dort **waagerecht** zur $y$-Achse: $y = {{sy}}$.\n4. Kontrolle: $f$: ${{m1}} \\cdot ({{sx}}) {{= n1 | sign}} = {{sy}}$ ✓ und $g$: ${{m2}} \\cdot ({{sx}}) {{= n2 | sign}} = {{sy}}$ ✓\n\n$S({{sx}} \\,|\\, {{sy}})$" },
+      { "kind": "mistake", "body": "Koordinaten in der falschen Reihenfolge: **erst $x$, dann $y$**. $S({{sy}} \\,|\\, {{sx}})$ wäre ein anderer Punkt. Und beim Ablesen genau hinsehen, ob der Punkt links oder rechts der $y$-Achse liegt (Vorzeichen von $x$)." },
+      { "kind": "remember", "body": "Schnittpunkt ablesen: Kreuz suchen, dann senkrecht zur $x$-Achse ($x$) und waagerecht zur $y$-Achse ($y$). Punkt immer als $(x \\,|\\, y)$ schreiben." },
+      { "kind": "answer", "body": "$S({{sx}} \\,|\\, {{sy}})$" }
+    ],
+    "tags": ["funktion", "linear", "graph", "schnittpunkt", "drill", "basisaufgabe"],
+    "source": "Eigenerstellung nach Prüfungshefte MSA Mathe Berlin 2027, Training Funktionen",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "sx": { "type": "int", "min": -4, "max": 4 },
+        "sy": { "type": "int", "min": -4, "max": 4 },
+        "m1": { "type": "choice", "values": [-2, -1, -0.5, 0.5, 1, 2] },
+        "m2": { "type": "choice", "values": [-2, -1, -0.5, 0.5, 1, 2] }
+      },
+      "derived": {
+        "n1": "sy - m1 * sx",
+        "n2": "sy - m2 * sx"
+      },
+      "constraints": ["m1 != m2", "sx != 0", "sy != 0", "sx != sy", "isint(n1)", "isint(n2)"]
+    },
+    "figure": {
+      "type": "coordinateSystem",
+      "xmin": -6, "xmax": 6, "ymin": -6, "ymax": 6, "width": 280, "height": 280,
+      "lines": [
+        { "m": "{{= m1 | raw}}", "n": "{{= n1 | raw}}", "label": "f" },
+        { "m": "{{= m2 | raw}}", "n": "{{= n2 | raw}}", "label": "g" }
+      ]
+    }
+  },
+  {
+    "id": "MATH_G12_GRAPH_FWERT_T1",
+    "subject": "MATH",
+    "topicId": "MATH_FUNC_LINEAR_GRAPH",
+    "difficulty": 1,
+    "qtype": "SHORT",
+    "prompt": "Die Gerade $f$ ist gezeichnet. Der Punkt $P$ liegt auf ihr bei $x = {{x0}}$. Lies den Funktionswert $f({{x0}})$ ab.",
+    "payload": { "answer_type": "number" },
+    "solution": { "kind": "computed", "expr": "y0" },
+    "explanation": [
+      { "kind": "what", "body": "$f({{x0}})$ bedeutet: **Welcher $y$-Wert gehört zu $x = {{x0}}$?** Gesucht ist also die Höhe des Punktes $P$, nicht seine $x$-Position." },
+      { "kind": "steps", "body": "1. Gehe auf der $x$-Achse zu ${{x0}}$.\n2. Von dort senkrecht bis zur Geraden — das ist der Punkt $P$.\n3. Von $P$ waagerecht zur $y$-Achse und ablesen: $y = {{y0}}$.\n\nAlso $f({{x0}}) = {{y0}}$. Kontrolle mit der Gleichung $y = {{m}}x {{= n | sign}}$: ${{m}} \\cdot ({{x0}}) {{= n | sign}} = {{y0}}$ ✓" },
+      { "kind": "mistake", "body": "Nicht $x$ ablesen! $f({{x0}})$ ist der **$y$-Wert** (die Höhe des Punktes), nicht die Zahl ${{x0}}$ selbst. Auch nicht die Kästchen vom Punkt bis zur $y$-Achse zählen — das wäre wieder $x$." },
+      { "kind": "remember", "body": "Funktionswert ablesen: Auf der $x$-Achse starten, senkrecht zum Graphen, waagerecht zur $y$-Achse. $f(x)$ ist immer ein $y$-Wert." },
+      { "kind": "answer", "body": "$f({{x0}}) = {{y0}}$" }
+    ],
+    "tags": ["funktion", "linear", "graph", "funktionswert", "drill", "basisaufgabe"],
+    "source": "Eigenerstellung nach Prüfungshefte MSA Mathe Berlin 2027, Training Funktionen",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "m": { "type": "choice", "values": [-3, -2, -1.5, -1, -0.5, 0.5, 1, 1.5, 2, 3] },
+        "n": { "type": "int", "min": -4, "max": 4 },
+        "x0": { "type": "int", "min": -5, "max": 5 }
+      },
+      "derived": {
+        "y0": "m * x0 + n"
+      },
+      "constraints": ["x0 != 0", "isint(y0)", "abs(y0) <= 5", "y0 != 0"]
+    },
+    "figure": {
+      "type": "coordinateSystem",
+      "xmin": -6, "xmax": 6, "ymin": -6, "ymax": 6, "width": 280, "height": 280,
+      "lines": [{ "m": "{{= m | raw}}", "n": "{{= n | raw}}", "label": "f" }],
+      "points": [{ "x": "{{= x0 | raw}}", "y": "{{= y0 | raw}}", "label": "P" }]
+    }
+  },
+  {
+    "id": "MATH_G12_GRAPH_WELCHE_GERADE_MCQ_T1",
+    "subject": "MATH",
+    "topicId": "MATH_FUNC_LINEAR_GRAPH",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Im Koordinatensystem sind drei Geraden gezeichnet. Welche gehört zur Gleichung $y = {{m}}x {{= n | sign}}$?",
+    "payload": {
+      "choices": ["Gerade $f$", "Gerade $g$", "Gerade $h$"],
+      "shuffle": false
+    },
+    "solution": { "correct_choice": "Gerade ${{w_lab}}$" },
+    "explanation": [
+      { "kind": "what", "body": "Zwei Merkmale bestimmen eine Gerade: wo sie die $y$-Achse schneidet ($n$) und wie steil sie ist ($m$). Prüfe beide nacheinander." },
+      { "kind": "steps", "body": "1. **$n$ vergleichen**: $y = {{m}}x {{= n | sign}}$ schneidet die $y$-Achse bei ${{n}}$. Eine der drei Geraden schneidet sie bei ${{= -n}}$ — die scheidet aus.\n2. **$m$ vergleichen**: Die beiden übrigen Geraden gehen beide durch $(0 \\,|\\, {{n}})$, aber eine steigt und eine fällt. $m = {{m}}$ heißt: ein Schritt nach rechts → {{= m | abs}} nach oben (wenn $m$ positiv ist) bzw. nach unten (wenn $m$ negativ ist).\n3. Nur Gerade ${{w_lab}}$ passt zu beiden Merkmalen." },
+      { "kind": "mistake", "body": "Steigt die Gerade von links nach rechts, ist $m$ **positiv**; fällt sie, ist $m$ **negativ**. Die Gerade mit der Steigung ${{= -m}}$ sieht ähnlich steil aus, ist aber gespiegelt." },
+      { "kind": "remember", "body": "Erst $n$ (Schnitt mit der $y$-Achse), dann $m$ (steigt oder fällt? wie steil?)." },
+      { "kind": "answer", "body": "Gerade ${{w_lab}}$" }
+    ],
+    "tags": ["funktion", "linear", "graph", "funktionsgleichung", "drill", "basisaufgabe"],
+    "source": "Eigenerstellung nach Prüfungshefte MSA Mathe Berlin 2027, Training Funktionen",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "m": { "type": "choice", "values": [-3, -2, -1.5, -0.5, 0.5, 1.5, 2, 3] },
+        "n": { "type": "int", "min": -4, "max": 4 },
+        "w": { "type": "pick", "from": [{ "lab": "f" }, { "lab": "g" }, { "lab": "h" }] }
+      },
+      "derived": {
+        "i0": "mod(3 - w, 3)",
+        "i1": "mod(4 - w, 3)",
+        "i2": "mod(5 - w, 3)",
+        "mf": "if(i0 == 1, -m, m)",
+        "nf": "if(i0 == 2, -n, n)",
+        "mg": "if(i1 == 1, -m, m)",
+        "ng": "if(i1 == 2, -n, n)",
+        "mh": "if(i2 == 1, -m, m)",
+        "nh": "if(i2 == 2, -n, n)"
+      },
+      "constraints": ["n != 0"]
+    },
+    "figure": {
+      "type": "coordinateSystem",
+      "xmin": -6, "xmax": 6, "ymin": -6, "ymax": 6, "width": 280, "height": 280,
+      "lines": [
+        { "m": "{{= mf | raw}}", "n": "{{= nf | raw}}", "label": "f" },
+        { "m": "{{= mg | raw}}", "n": "{{= ng | raw}}", "label": "g" },
+        { "m": "{{= mh | raw}}", "n": "{{= nh | raw}}", "label": "h" }
+      ]
+    }
+  },
+  {
+    "id": "MATH_G12_GRAPH_X_ZU_Y_T1",
+    "subject": "MATH",
+    "topicId": "MATH_FUNC_LINEAR_GRAPH",
+    "difficulty": 2,
+    "qtype": "SHORT",
+    "prompt": "Die Gerade $f$ ist gezeichnet. Für welchen $x$-Wert gilt $f(x) = {{y0}}$?",
+    "payload": { "answer_type": "number" },
+    "solution": { "kind": "computed", "expr": "x0" },
+    "explanation": [
+      { "kind": "what", "body": "Diesmal ist der **$y$-Wert** gegeben und der passende **$x$-Wert** gesucht. Du liest also „rückwärts“: von der $y$-Achse zum Graphen und dann zur $x$-Achse." },
+      { "kind": "steps", "body": "1. Gehe auf der $y$-Achse zu ${{y0}}$.\n2. Von dort **waagerecht** bis zur Geraden.\n3. Von dort **senkrecht** zur $x$-Achse und ablesen: $x = {{x0}}$.\n\nKontrolle mit der Gleichung $y = {{m}}x {{= n | sign}}$: ${{m}} \\cdot ({{x0}}) {{= n | sign}} = {{y0}}$ ✓" },
+      { "kind": "mistake", "body": "Hier ist $y$ gegeben und $x$ gesucht — also auf der **$y$-Achse** starten, nicht auf der $x$-Achse. Wer bei $x = {{y0}}$ startet, liest den falschen Wert ab." },
+      { "kind": "remember", "body": "$y$ gegeben, $x$ gesucht: waagerecht zum Graphen, dann senkrecht runter (oder hoch) zur $x$-Achse." },
+      { "kind": "answer", "body": "$x = {{x0}}$" }
+    ],
+    "tags": ["funktion", "linear", "graph", "funktionswert", "drill", "basisaufgabe"],
+    "source": "Eigenerstellung nach Prüfungshefte MSA Mathe Berlin 2027, Training Funktionen",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "m": { "type": "choice", "values": [-3, -2, -1.5, -1, -0.5, 0.5, 1, 1.5, 2, 3] },
+        "n": { "type": "int", "min": -4, "max": 4 },
+        "x0": { "type": "int", "min": -5, "max": 5 }
+      },
+      "derived": {
+        "y0": "m * x0 + n"
+      },
+      "constraints": ["x0 != 0", "isint(y0)", "abs(y0) <= 5", "y0 != 0"]
+    },
+    "figure": {
+      "type": "coordinateSystem",
+      "xmin": -6, "xmax": 6, "ymin": -6, "ymax": 6, "width": 280, "height": 280,
+      "lines": [{ "m": "{{= m | raw}}", "n": "{{= n | raw}}", "label": "f" }]
+    }
+  },
+
+  {
+    "id": "MATH_G12_TABLE_TERM_MCQ_T1",
+    "subject": "MATH",
+    "topicId": "MATH_FUNC_LINEAR_TABLE",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Die Wertetabelle gehört zu einer linearen Funktion. Welche Funktionsgleichung passt?\n\n$$\\begin{array}{c|c|c|c|c} x & {{x0}} & {{= x0 + 1}} & {{= x0 + 2}} & {{= x0 + 3}} \\\\ \\hline y & {{y0}} & {{y1}} & {{y2}} & {{y3}} \\end{array}$$",
+    "payload": {
+      "choices": [
+        "$y = {{m}}x {{= n | sign}}$",
+        "$y = {{n}}x {{= m | sign}}$",
+        "$y = {{= -m}}x {{= n | sign}}$",
+        "$y = {{m}}x {{= -n | sign}}$"
+      ],
+      "shuffle": true
+    },
+    "solution": { "correct_choice": "$y = {{m}}x {{= n | sign}}$" },
+    "explanation": [
+      { "kind": "what", "body": "Bei $y = mx + n$ verrät die Tabelle beides: $n$ ist der $y$-Wert bei $x = 0$, und $m$ ist die **Änderung von $y$**, wenn $x$ um 1 größer wird." },
+      { "kind": "steps", "body": "1. **$n$**: In der Spalte $x = 0$ steht $y = {{n}}$ → $n = {{n}}$.\n2. **$m$**: Von einer Spalte zur nächsten wächst $x$ um 1 und $y$ ändert sich um ${{y1}} - ({{y0}}) = {{m}}$ → $m = {{m}}$ (Kontrolle: ${{y2}} - ({{y1}}) = {{m}}$ ✓).\n3. Gleichung: $y = {{m}}x {{= n | sign}}$.\n\nProbe mit $x = {{= x0 + 3}}$: ${{m}} \\cdot ({{= x0 + 3}}) {{= n | sign}} = {{y3}}$ ✓" },
+      { "kind": "mistake", "body": "$m$ und $n$ vertauschen. Merke: $n$ ist der Wert **ohne** $x$ (Start bei $x = 0$), $m$ ist der Faktor **vor** $x$ (Änderung pro Schritt). Bei negativem $m$ werden die $y$-Werte kleiner." },
+      { "kind": "remember", "body": "Tabelle → Term: $n$ = $y$ bei $x = 0$; $m$ = Differenz der $y$-Werte pro Schritt (wenn $x$ um 1 wächst)." },
+      { "kind": "answer", "body": "$y = {{m}}x {{= n | sign}}$" }
+    ],
+    "tags": ["funktion", "linear", "wertetabelle", "funktionsgleichung", "drill", "basisaufgabe"],
+    "source": "Eigenerstellung nach Prüfungshefte MSA Mathe Berlin 2027, Training Funktionen",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "m": { "type": "choice", "values": [-3, -2, -1.5, -0.5, 0.5, 1.5, 2, 3] },
+        "n": { "type": "int", "min": -6, "max": 6 },
+        "x0": { "type": "int", "min": -3, "max": 0 }
+      },
+      "derived": {
+        "y0": "m * x0 + n",
+        "y1": "m * (x0 + 1) + n",
+        "y2": "m * (x0 + 2) + n",
+        "y3": "m * (x0 + 3) + n"
+      },
+      "constraints": ["n != 0", "m != n"]
+    }
+  },
+  {
+    "id": "MATH_G12_TABLE_FEHLENDER_WERT_T1",
+    "subject": "MATH",
+    "topicId": "MATH_FUNC_LINEAR_TABLE",
+    "difficulty": 1,
+    "qtype": "SHORT",
+    "prompt": "Gegeben ist die lineare Funktion $y = {{m}}x {{= n | sign}}$. In der Wertetabelle fehlt ein Wert. Berechne ihn.\n\n$$\\begin{array}{c|c|c|c|c} x & {{x0}} & {{x1}} & {{x2}} & {{x3}} \\\\ \\hline y & {{y0}} & {{y1}} & {{y2}} & ? \\end{array}$$",
+    "payload": { "answer_type": "number" },
+    "solution": { "kind": "computed", "expr": "y3" },
+    "explanation": [
+      { "kind": "what", "body": "Eine Wertetabelle entsteht durch **Einsetzen**: Für jedes $x$ rechnest du mit der Gleichung das zugehörige $y$ aus." },
+      { "kind": "steps", "body": "Für die letzte Spalte ist $x = {{x3}}$:\n\n$y = {{m}} \\cdot ({{x3}}) {{= n | sign}} = {{= m * x3}} {{= n | sign}} = {{y3}}$\n\nKontrolle über die Differenzen: Von Spalte zu Spalte wächst $x$ um ${{s}}$, also ändert sich $y$ jedes Mal um ${{s}} \\cdot {{m}} = {{= m * s}}$: ${{y2}} {{= m * s | sign}} = {{y3}}$ ✓" },
+      { "kind": "mistake", "body": "Bei negativem $x$ die Klammer nicht vergessen: ${{m}} \\cdot ({{x3}})$ — Vorzeichenregel beachten. Und $n$ wird **einmal** addiert, nicht mit $x$ multipliziert." },
+      { "kind": "remember", "body": "Term → Tabelle: $x$ einsetzen, ausrechnen. Bei einer linearen Funktion ändert sich $y$ pro Schritt immer um denselben Betrag." },
+      { "kind": "answer", "body": "$y = {{y3}}$" }
+    ],
+    "tags": ["funktion", "linear", "wertetabelle", "drill", "basisaufgabe"],
+    "source": "Eigenerstellung nach Prüfungshefte MSA Mathe Berlin 2027, Training Funktionen",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "m": { "type": "choice", "values": [-3, -2, -1.5, -1, -0.5, 0.5, 1, 1.5, 2, 3, 4] },
+        "n": { "type": "int", "min": -8, "max": 8 },
+        "x0": { "type": "int", "min": -3, "max": 2 },
+        "s": { "type": "choice", "values": [1, 2, 5] }
+      },
+      "derived": {
+        "x1": "x0 + s",
+        "x2": "x0 + 2 * s",
+        "x3": "x0 + 3 * s",
+        "y0": "m * x0 + n",
+        "y1": "m * x1 + n",
+        "y2": "m * x2 + n",
+        "y3": "m * x3 + n"
+      },
+      "constraints": ["n != 0", "isint(y0)", "isint(m * s)"]
+    }
+  },
+  {
+    "id": "MATH_G12_TABLE_MUSTER_T1",
+    "subject": "MATH",
+    "topicId": "MATH_FUNC_LINEAR_TABLE",
+    "difficulty": 2,
+    "qtype": "SHORT",
+    "prompt": "Die Wertetabelle gehört zu einer linearen Funktion. Ein Wert fehlt. Bestimme ihn.\n\n$$\\begin{array}{c|c|c|c|c|c} x & {{x0}} & {{= x0 + 1}} & {{= x0 + 2}} & {{= x0 + 3}} & {{= x0 + 4}} \\\\ \\hline y & {{y0}} & {{y1}} & {{y2}} & ? & {{y4}} \\end{array}$$",
+    "payload": { "answer_type": "number" },
+    "solution": { "kind": "computed", "expr": "y3" },
+    "explanation": [
+      { "kind": "what", "body": "**Linear** heißt: Wenn $x$ um 1 wächst, ändert sich $y$ immer um **dieselbe Zahl** (gleiche Differenzen). Diese Differenz ist die Steigung $m$." },
+      { "kind": "steps", "body": "1. Differenz aus zwei bekannten Nachbarspalten: ${{y1}} - ({{y0}}) = {{m}}$ (Kontrolle: ${{y2}} - ({{y1}}) = {{m}}$ ✓).\n2. Also ändert sich $y$ pro Schritt um ${{m}}$. Fehlender Wert: ${{y2}} {{= m | sign}} = {{y3}}$.\n3. Kontrolle mit der letzten Spalte: ${{y3}} {{= m | sign}} = {{y4}}$ ✓" },
+      { "kind": "mistake", "body": "Nicht einfach die Mitte zwischen den Nachbarn schätzen — **rechnen**: Differenz bestimmen und addieren. Bei negativer Differenz werden die Werte kleiner." },
+      { "kind": "remember", "body": "Lineare Tabelle: gleiche $x$-Schritte → gleiche $y$-Differenzen. Fehlender Wert = Vorgänger + Differenz." },
+      { "kind": "answer", "body": "$y = {{y3}}$" }
+    ],
+    "tags": ["funktion", "linear", "wertetabelle", "drill", "basisaufgabe"],
+    "source": "Eigenerstellung nach Prüfungshefte MSA Mathe Berlin 2027, Training Funktionen",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "m": { "type": "choice", "values": [-4, -3, -2, -1, 1, 2, 3, 4] },
+        "n": { "type": "int", "min": -6, "max": 6 },
+        "x0": { "type": "int", "min": -3, "max": 2 }
+      },
+      "derived": {
+        "y0": "m * x0 + n",
+        "y1": "m * (x0 + 1) + n",
+        "y2": "m * (x0 + 2) + n",
+        "y3": "m * (x0 + 3) + n",
+        "y4": "m * (x0 + 4) + n"
+      },
+      "constraints": ["n != 0"]
+    }
+  },
+  {
+    "id": "MATH_G12_TABLE_LINEAR_MCQ_T1",
+    "subject": "MATH",
+    "topicId": "MATH_FUNC_LINEAR_TABLE",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Prüfe die Wertetabelle: Welche Aussage stimmt?\n\n$$\\begin{array}{c|c|c|c|c} x & 1 & 2 & 3 & 4 \\\\ \\hline y & {{y1}} & {{y2}} & {{y3}} & {{y4}} \\end{array}$$",
+    "payload": {
+      "choices": ["proportional", "linear, aber nicht proportional", "nicht linear"],
+      "shuffle": false
+    },
+    "solution": { "correct_choice": "{{t_kind}}" },
+    "explanation": [
+      { "kind": "what", "body": "**Linear**: Wenn $x$ um 1 wächst, ändert sich $y$ immer um dieselbe Zahl (**gleiche Differenzen**). **Proportional** ist der Sonderfall, bei dem außerdem $y : x$ immer gleich ist — zu $x = 0$ gehört dann $y = 0$, und der Graph geht durch den Ursprung." },
+      { "kind": "steps", "body": "1. **Differenzen** der $y$-Werte ($x$ wächst jeweils um 1): ${{y2}} - ({{y1}}) = {{d1}}$, ${{y3}} - ({{y2}}) = {{d2}}$, ${{y4}} - ({{y3}}) = {{d3}}$.\n2. **Quotienten** $y : x$: ${{y1}} : 1 = {{q1}}$, ${{y2}} : 2 = {{q2}}$, ${{y3}} : 3 = {{q3}}$, ${{y4}} : 4 = {{q4}}$.\n3. Alle Differenzen gleich → linear. Zusätzlich alle Quotienten gleich → proportional. Unterschiedliche Differenzen → nicht linear.\n\nHier: **{{t_kind}}**." },
+      { "kind": "mistake", "body": "„Je mehr, desto mehr“ reicht nicht für proportional — bei doppeltem $x$ muss auch $y$ **doppelt** so groß sein. Und „die Zahlen werden größer“ heißt noch nicht linear: Es müssen die **Differenzen** gleich sein." },
+      { "kind": "remember", "body": "Gleiche Differenzen → linear ($y = mx + n$). Gleiche Quotienten $y : x$ → proportional ($y = k \\cdot x$, also $n = 0$)." },
+      { "kind": "answer", "body": "{{t_kind}}" }
+    ],
+    "tags": ["funktion", "linear", "proportional", "wertetabelle", "drill", "basisaufgabe"],
+    "source": "Eigenerstellung nach Prüfungshefte MSA Mathe Berlin 2027, Training Funktionen",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "t": { "type": "pick", "from": [{ "kind": "proportional" }, { "kind": "linear, aber nicht proportional" }, { "kind": "nicht linear" }] },
+        "m": { "type": "int", "min": 2, "max": 6 },
+        "n": { "type": "int", "min": 1, "max": 9 },
+        "a": { "type": "choice", "values": [1, 2] },
+        "c": { "type": "int", "min": 0, "max": 4 }
+      },
+      "derived": {
+        "y1": "if(t == 2, a + c, m + if(t == 0, 0, n))",
+        "y2": "if(t == 2, 4 * a + c, 2 * m + if(t == 0, 0, n))",
+        "y3": "if(t == 2, 9 * a + c, 3 * m + if(t == 0, 0, n))",
+        "y4": "if(t == 2, 16 * a + c, 4 * m + if(t == 0, 0, n))",
+        "d1": "y2 - y1",
+        "d2": "y3 - y2",
+        "d3": "y4 - y3",
+        "q1": "y1",
+        "q2": "y2 / 2",
+        "q3": "y3 / 3",
+        "q4": "y4 / 4"
+      }
+    }
+  },
+  {
+    "id": "MATH_G12_TABLE_STEIGUNG_T1",
+    "subject": "MATH",
+    "topicId": "MATH_FUNC_LINEAR_TABLE",
+    "difficulty": 2,
+    "qtype": "SHORT",
+    "prompt": "Die Wertetabelle gehört zu einer linearen Funktion $y = mx + n$. Bestimme die Steigung $m$.\n\n$$\\begin{array}{c|c|c|c|c} x & {{x0}} & {{x1}} & {{x2}} & {{x3}} \\\\ \\hline y & {{y0}} & {{y1}} & {{y2}} & {{y3}} \\end{array}$$",
+    "payload": { "answer_type": "number" },
+    "solution": { "kind": "computed", "expr": "m" },
+    "explanation": [
+      { "kind": "what", "body": "Die Steigung $m$ ist die Änderung von $y$ **pro einem Schritt** in $x$-Richtung. In der Tabelle: $m = \\frac{\\text{Differenz der } y\\text{-Werte}}{\\text{Differenz der } x\\text{-Werte}}$." },
+      { "kind": "steps", "body": "Zwei Nachbarspalten nehmen:\n\n- $x$-Differenz: ${{x1}} - ({{x0}}) = {{s}}$\n- $y$-Differenz: ${{y1}} - ({{y0}}) = {{dy}}$\n\n$m = \\frac{{{dy}}}{{{s}}} = {{m}}$\n\nKontrolle mit der nächsten Spalte: ${{y2}} - ({{y1}}) = {{dy}}$ bei $x$-Schritt ${{s}}$ ✓" },
+      { "kind": "mistake", "body": "Wenn die $x$-Werte nicht um 1, sondern um ${{s}}$ wachsen, ist die $y$-Differenz **noch nicht** die Steigung — immer durch die $x$-Differenz teilen. Und die Reihenfolge oben und unten gleich halten (zweiter minus erster)." },
+      { "kind": "remember", "body": "$m = \\frac{\\Delta y}{\\Delta x}$ — Differenz der $y$-Werte geteilt durch Differenz der $x$-Werte. Nur bei $x$-Schritt 1 ist $m$ direkt die $y$-Differenz." },
+      { "kind": "answer", "body": "$m = {{m}}$" }
+    ],
+    "tags": ["funktion", "linear", "wertetabelle", "steigung", "drill", "basisaufgabe"],
+    "source": "Eigenerstellung nach Prüfungshefte MSA Mathe Berlin 2027, Training Funktionen",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "m": { "type": "choice", "values": [-3, -2, -1.5, -1, -0.5, 0.5, 1, 1.5, 2, 3] },
+        "n": { "type": "int", "min": -5, "max": 5 },
+        "x0": { "type": "int", "min": -3, "max": 2 },
+        "s": { "type": "choice", "values": [1, 2, 4] }
+      },
+      "derived": {
+        "x1": "x0 + s",
+        "x2": "x0 + 2 * s",
+        "x3": "x0 + 3 * s",
+        "y0": "m * x0 + n",
+        "y1": "m * x1 + n",
+        "y2": "m * x2 + n",
+        "y3": "m * x3 + n",
+        "dy": "y1 - y0"
+      },
+      "constraints": ["isint(y0)", "isint(m * s)"]
+    }
+  },
+  {
+    "id": "MATH_G12_TABLE_YABSCHNITT_T1",
+    "subject": "MATH",
+    "topicId": "MATH_FUNC_LINEAR_TABLE",
+    "difficulty": 3,
+    "qtype": "SHORT",
+    "prompt": "Die Wertetabelle gehört zu einer linearen Funktion $y = mx + n$. Bestimme den $y$-Achsenabschnitt $n$.\n\n$$\\begin{array}{c|c|c|c|c} x & {{x0}} & {{= x0 + 1}} & {{= x0 + 2}} & {{= x0 + 3}} \\\\ \\hline y & {{y0}} & {{y1}} & {{y2}} & {{y3}} \\end{array}$$",
+    "payload": { "answer_type": "number" },
+    "solution": { "kind": "computed", "expr": "n" },
+    "explanation": [
+      { "kind": "what", "body": "$n$ ist der $y$-Wert bei $x = 0$. Die Spalte $x = 0$ fehlt hier — also musst du mit der Steigung **zurückrechnen** oder $n$ aus der Gleichung bestimmen." },
+      { "kind": "steps", "body": "1. **Steigung** aus zwei Nachbarspalten: ${{y1}} - ({{y0}}) = {{m}}$ → $m = {{m}}$.\n2. **Zurück zu $x = 0$**: Von $x = {{x0}}$ bis $x = 0$ sind es ${{x0}}$ Schritte nach links, also ${{x0}} \\cdot {{m}} = {{= x0 * m}}$ abziehen: $n = {{y0}} - ({{= x0 * m}}) = {{n}}$.\n\nOder mit der Gleichung: $n = y - m \\cdot x = {{y0}} - {{m}} \\cdot {{x0}} = {{n}}$.\n\nProbe: $y = {{m}}x {{= n | sign}}$ bei $x = {{= x0 + 3}}$: ${{= m * (x0 + 3)}} {{= n | sign}} = {{y3}}$ ✓" },
+      { "kind": "mistake", "body": "$n$ ist **nicht** einfach der erste $y$-Wert der Tabelle — das gilt nur, wenn die erste Spalte $x = 0$ ist. Hier beginnt die Tabelle bei $x = {{x0}}$." },
+      { "kind": "remember", "body": "$n = y - m \\cdot x$ mit irgendeinem Wertepaar aus der Tabelle. Oder: Schritt für Schritt bis $x = 0$ zurückgehen." },
+      { "kind": "answer", "body": "$n = {{n}}$" }
+    ],
+    "tags": ["funktion", "linear", "wertetabelle", "y-achsenabschnitt", "drill"],
+    "source": "Eigenerstellung nach Prüfungshefte MSA Mathe Berlin 2027, Training Funktionen",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "m": { "type": "choice", "values": [-4, -3, -2, -1, 1, 2, 3, 4] },
+        "n": { "type": "int", "min": -6, "max": 6 },
+        "x0": { "type": "int", "min": 1, "max": 3 }
+      },
+      "derived": {
+        "y0": "m * x0 + n",
+        "y1": "m * (x0 + 1) + n",
+        "y2": "m * (x0 + 2) + n",
+        "y3": "m * (x0 + 3) + n"
+      },
+      "constraints": ["n != 0", "n != y0"]
+    }
+  },
+  {
+    "id": "MATH_G12_TABLE_ZU_GRAPH_MCQ_T1",
+    "subject": "MATH",
+    "topicId": "MATH_FUNC_LINEAR_TABLE",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Im Koordinatensystem sind drei Geraden gezeichnet. Welche gehört zu dieser Wertetabelle?\n\n$$\\begin{array}{c|c|c|c|c} x & 0 & 1 & 2 & 3 \\\\ \\hline y & {{y0}} & {{y1}} & {{y2}} & {{y3}} \\end{array}$$",
+    "payload": {
+      "choices": ["Gerade $f$", "Gerade $g$", "Gerade $h$"],
+      "shuffle": false
+    },
+    "solution": { "correct_choice": "Gerade ${{w_lab}}$" },
+    "explanation": [
+      { "kind": "what", "body": "Jede Spalte der Tabelle ist ein Punkt $(x \\,|\\, y)$ des Graphen. Die passende Gerade muss durch **alle** diese Punkte gehen." },
+      { "kind": "steps", "body": "1. Spalte $x = 0$: $y = {{n}}$ → die Gerade schneidet die $y$-Achse bei ${{n}}$. Die Gerade, die die $y$-Achse bei ${{= -n}}$ schneidet, scheidet aus.\n2. Von $x = 0$ zu $x = 1$ ändert sich $y$ um ${{y1}} - ({{y0}}) = {{m}}$ → Steigung $m = {{m}}$: ein Schritt nach rechts → {{= m | abs}} nach oben (wenn $m$ positiv ist) bzw. nach unten (wenn $m$ negativ ist).\n3. Von den beiden Geraden durch $(0 \\,|\\, {{n}})$ passt nur Gerade ${{w_lab}}$. Kontrolle: Sie geht auch durch $(3 \\,|\\, {{y3}})$ ✓" },
+      { "kind": "mistake", "body": "Nur den Startwert vergleichen reicht nicht — zwei Geraden schneiden die $y$-Achse an derselben Stelle. Erst die **Richtung** (steigt oder fällt) entscheidet." },
+      { "kind": "remember", "body": "Tabelle → Graph: Spalte $x = 0$ gibt $n$, die Differenz zur nächsten Spalte gibt $m$. Steigt die Tabelle, steigt die Gerade." },
+      { "kind": "answer", "body": "Gerade ${{w_lab}}$" }
+    ],
+    "tags": ["funktion", "linear", "wertetabelle", "graph", "drill", "basisaufgabe"],
+    "source": "Eigenerstellung nach Prüfungshefte MSA Mathe Berlin 2027, Training Funktionen",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "m": { "type": "choice", "values": [-3, -2, -1.5, -1, -0.5, 0.5, 1, 1.5, 2, 3] },
+        "n": { "type": "int", "min": -4, "max": 4 },
+        "w": { "type": "pick", "from": [{ "lab": "f" }, { "lab": "g" }, { "lab": "h" }] }
+      },
+      "derived": {
+        "y0": "n",
+        "y1": "m + n",
+        "y2": "2 * m + n",
+        "y3": "3 * m + n",
+        "i0": "mod(3 - w, 3)",
+        "i1": "mod(4 - w, 3)",
+        "i2": "mod(5 - w, 3)",
+        "mf": "if(i0 == 1, -m, m)",
+        "nf": "if(i0 == 2, -n, n)",
+        "mg": "if(i1 == 1, -m, m)",
+        "ng": "if(i1 == 2, -n, n)",
+        "mh": "if(i2 == 1, -m, m)",
+        "nh": "if(i2 == 2, -n, n)"
+      },
+      "constraints": ["n != 0"]
+    },
+    "figure": {
+      "type": "coordinateSystem",
+      "xmin": -6, "xmax": 6, "ymin": -6, "ymax": 6, "width": 280, "height": 280,
+      "lines": [
+        { "m": "{{= mf | raw}}", "n": "{{= nf | raw}}", "label": "f" },
+        { "m": "{{= mg | raw}}", "n": "{{= ng | raw}}", "label": "g" },
+        { "m": "{{= mh | raw}}", "n": "{{= nh | raw}}", "label": "h" }
+      ]
+    }
+  },
+  {
+    "id": "MATH_G12_TABLE_TERM_ZU_TABELLE_MCQ_T1",
+    "subject": "MATH",
+    "topicId": "MATH_FUNC_LINEAR_TABLE",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Welche Wertepaare $(x \\,|\\, y)$ gehören zur Funktion $y = {{m}}x {{= n | sign}}$?",
+    "payload": {
+      "choices": [
+        "$(0 \\,|\\, {{n}}),\\; (1 \\,|\\, {{= m + n}}),\\; (2 \\,|\\, {{= 2 * m + n}})$",
+        "$(0 \\,|\\, {{m}}),\\; (1 \\,|\\, {{= m + n}}),\\; (2 \\,|\\, {{= 2 * n + m}})$",
+        "$(0 \\,|\\, {{n}}),\\; (1 \\,|\\, {{= n - m}}),\\; (2 \\,|\\, {{= n - 2 * m}})$",
+        "$(0 \\,|\\, {{n}}),\\; (1 \\,|\\, {{= m + n}}),\\; (2 \\,|\\, {{= 4 * m + n}})$"
+      ],
+      "shuffle": true
+    },
+    "solution": { "correct_choice": "$(0 \\,|\\, {{n}}),\\; (1 \\,|\\, {{= m + n}}),\\; (2 \\,|\\, {{= 2 * m + n}})$" },
+    "explanation": [
+      { "kind": "what", "body": "Eine Wertetabelle bekommst du durch **Einsetzen**: Für jedes $x$ den $y$-Wert ausrechnen. Bei einer linearen Funktion ändert sich $y$ von Spalte zu Spalte immer um $m$." },
+      { "kind": "steps", "body": "$x = 0$: $y = {{m}} \\cdot 0 {{= n | sign}} = {{n}}$\n\n$x = 1$: $y = {{m}} \\cdot 1 {{= n | sign}} = {{= m + n}}$\n\n$x = 2$: $y = {{m}} \\cdot 2 {{= n | sign}} = {{= 2 * m}} {{= n | sign}} = {{= 2 * m + n}}$\n\nKontrolle: Die $y$-Werte ändern sich pro Schritt um ${{m}}$ ✓" },
+      { "kind": "mistake", "body": "Bei $x = 0$ bleibt nur $n$ übrig — nicht $m$. Und $y$ ändert sich pro Schritt immer um **denselben** Betrag $m$; werden die Sprünge größer, ist es keine lineare Funktion." },
+      { "kind": "remember", "body": "Term → Tabelle: Start bei $x = 0$ mit $y = n$, dann pro Schritt $m$ dazu." },
+      { "kind": "answer", "body": "$(0 \\,|\\, {{n}}),\\; (1 \\,|\\, {{= m + n}}),\\; (2 \\,|\\, {{= 2 * m + n}})$" }
+    ],
+    "tags": ["funktion", "linear", "wertetabelle", "drill", "basisaufgabe"],
+    "source": "Eigenerstellung nach Prüfungshefte MSA Mathe Berlin 2027, Training Funktionen",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "m": { "type": "choice", "values": [-3, -2, -1.5, -0.5, 0.5, 1.5, 2, 3] },
+        "n": { "type": "int", "min": -6, "max": 6 }
+      },
+      "constraints": ["n != 0", "m != n"]
+    }
+  },
+  {
+    "id": "MATH_G12_TABLE_AUS_GRAPH_T1",
+    "subject": "MATH",
+    "topicId": "MATH_FUNC_LINEAR_TABLE",
+    "difficulty": 1,
+    "qtype": "SHORT",
+    "prompt": "Die Gerade $f$ ist gezeichnet. Lies den fehlenden Wert der Wertetabelle am Graphen ab.\n\n$$\\begin{array}{c|c|c|c} x & {{x0}} & {{x1}} & {{x2}} \\\\ \\hline y & {{y0}} & ? & {{y2}} \\end{array}$$",
+    "payload": { "answer_type": "number" },
+    "solution": { "kind": "computed", "expr": "y1" },
+    "explanation": [
+      { "kind": "what", "body": "Jede Spalte der Tabelle ist ein Punkt auf der Geraden. Den fehlenden $y$-Wert liest du am Graphen ab: bei $x = {{x1}}$ senkrecht hoch (oder runter) zur Geraden, dann waagerecht zur $y$-Achse." },
+      { "kind": "steps", "body": "1. Auf der $x$-Achse zu ${{x1}}$ gehen.\n2. Senkrecht bis zur Geraden $f$.\n3. Waagerecht zur $y$-Achse: $y = {{y1}}$.\n\nKontrolle über die Tabelle: Von $x = {{x0}}$ zu $x = {{x1}}$ ändert sich $y$ um ${{y1}} - ({{y0}}) = {{m}}$, von ${{x1}}$ zu ${{x2}}$ ebenfalls um ${{y2}} - ({{y1}}) = {{m}}$ ✓ (gleiche Differenzen — linear)." },
+      { "kind": "mistake", "body": "Nicht den $x$-Wert ${{x1}}$ als Antwort abschreiben — gesucht ist die **Höhe** des Punktes auf der Geraden. Und Vorzeichen prüfen: unterhalb der $x$-Achse ist $y$ negativ." },
+      { "kind": "remember", "body": "Graph → Tabelle: Für jedes $x$ den Punkt auf der Geraden suchen und seine Höhe $y$ ablesen." },
+      { "kind": "answer", "body": "$y = {{y1}}$" }
+    ],
+    "tags": ["funktion", "linear", "wertetabelle", "graph", "drill", "basisaufgabe"],
+    "source": "Eigenerstellung nach Prüfungshefte MSA Mathe Berlin 2027, Training Funktionen",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "m": { "type": "choice", "values": [-3, -2, -1, 1, 2, 3] },
+        "n": { "type": "int", "min": -4, "max": 4 },
+        "x0": { "type": "int", "min": -4, "max": 2 }
+      },
+      "derived": {
+        "x1": "x0 + 1",
+        "x2": "x0 + 2",
+        "y0": "m * x0 + n",
+        "y1": "m * x1 + n",
+        "y2": "m * x2 + n"
+      },
+      "constraints": ["abs(y0) <= 5", "abs(y2) <= 5", "x1 != 0"]
+    },
+    "figure": {
+      "type": "coordinateSystem",
+      "xmin": -6, "xmax": 6, "ymin": -6, "ymax": 6, "width": 280, "height": 280,
+      "lines": [{ "m": "{{= m | raw}}", "n": "{{= n | raw}}", "label": "f" }]
+    }
+  },
+
+  {
+    "id": "MATH_G12_WORD_HANDY_GLEICHUNG_MCQ_T1",
+    "subject": "MATH",
+    "topicId": "MATH_ALG_EQU_WORD",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Bei Lenas Handyvertrag kostet der Monat {{g}} € Grundgebühr, dazu {{= p | fixed:2}} € pro Gesprächsminute. Im März musste sie {{= z | fixed:2}} € bezahlen. Mit welcher Gleichung kann man berechnen, wie viele Minuten $x$ Lena telefoniert hat?",
+    "payload": {
+      "choices": [
+        "${{g}} + {{= p | fixed:2}} \\cdot x = {{= z | fixed:2}}$",
+        "${{g}} \\cdot x + {{= p | fixed:2}} = {{= z | fixed:2}}$",
+        "${{g}} + {{= p | fixed:2}} + x = {{= z | fixed:2}}$",
+        "${{= p | fixed:2}} \\cdot x - {{g}} = {{= z | fixed:2}}$"
+      ],
+      "shuffle": true
+    },
+    "solution": { "correct_choice": "${{g}} + {{= p | fixed:2}} \\cdot x = {{= z | fixed:2}}$" },
+    "explanation": [
+      { "kind": "what", "body": "Die **Grundgebühr** ist ein fester Betrag — sie fällt einmal im Monat an, egal wie viel telefoniert wird. Der **Minutenpreis** fällt pro Minute an, also **mal** die Anzahl der Minuten $x$." },
+      { "kind": "steps", "body": "Gesamtkosten = Grundgebühr + Minutenpreis · Minuten\n\n${{= z | fixed:2}} = {{g}} + {{= p | fixed:2}} \\cdot x$\n\nLinks und rechts darf man tauschen: ${{g}} + {{= p | fixed:2}} \\cdot x = {{= z | fixed:2}}$." },
+      { "kind": "mistake", "body": "Der feste Betrag wird **nicht** mit $x$ multipliziert — nur das, was **pro Minute** anfällt, bekommt das $x$. ${{g}} \\cdot x + {{= p | fixed:2}}$ würde bedeuten: {{g}} € pro Minute und einmalig {{= p | fixed:2}} €." },
+      { "kind": "remember", "body": "Sachaufgabe mit Tarif: **fester Betrag + (Preis pro Stück) · Anzahl = Gesamtbetrag**. Das $x$ steht immer bei dem, was sich pro Stück wiederholt." },
+      { "kind": "answer", "body": "${{g}} + {{= p | fixed:2}} \\cdot x = {{= z | fixed:2}}$" }
+    ],
+    "tags": ["gleichung", "sachaufgabe", "drill", "basisaufgabe"],
+    "source": "Eigenerstellung nach Prüfungshefte MSA Mathe Berlin 2027, Training Gleichungen und Sachaufgaben",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "g": { "type": "int", "min": 5, "max": 15 },
+        "p": { "type": "choice", "values": [0.05, 0.1, 0.15, 0.2, 0.25] },
+        "x": { "type": "int", "min": 40, "max": 300, "step": 10 }
+      },
+      "derived": {
+        "z": "g + p * x"
+      }
+    }
+  },
+  {
+    "id": "MATH_G12_WORD_HANDY_LOESEN_T1",
+    "subject": "MATH",
+    "topicId": "MATH_ALG_EQU_WORD",
+    "difficulty": 2,
+    "qtype": "SHORT",
+    "prompt": "Bei Lenas Handyvertrag kostet der Monat {{g}} € Grundgebühr, dazu {{= p | fixed:2}} € pro Gesprächsminute. Im März musste sie {{= z | fixed:2}} € bezahlen. Wie viele Minuten hat Lena telefoniert?",
+    "payload": { "answer_type": "number", "unit": "Minuten" },
+    "solution": { "kind": "computed", "expr": "x" },
+    "explanation": [
+      { "kind": "what", "body": "$x$ = Anzahl der Minuten. Kosten = Grundgebühr + Minutenpreis · $x$." },
+      { "kind": "steps", "body": "1. Gleichung aufstellen: ${{g}} + {{= p | fixed:2}} \\cdot x = {{= z | fixed:2}}$\n2. Grundgebühr abziehen: ${{= p | fixed:2}} \\cdot x = {{= z | fixed:2}} - {{g}} = {{= z - g | fixed:2}}$\n3. Durch den Minutenpreis teilen: $x = {{= z - g | fixed:2}} : {{= p | fixed:2}} = {{x}}$\n4. Probe: ${{g}} + {{= p | fixed:2}} \\cdot {{x}} = {{g}} + {{= p * x | fixed:2}} = {{= z | fixed:2}}$ ✓" },
+      { "kind": "mistake", "body": "Nicht den Gesamtbetrag durch den Minutenpreis teilen — **zuerst** die Grundgebühr abziehen, denn die hat nichts mit den Minuten zu tun." },
+      { "kind": "remember", "body": "Sachaufgabe: **Variable festlegen → Gleichung aufstellen → lösen → Probe im Text.** Antwort mit Einheit!" },
+      { "kind": "answer", "body": "Lena hat **{{x}} Minuten** telefoniert." }
+    ],
+    "tags": ["gleichung", "sachaufgabe", "drill"],
+    "source": "Eigenerstellung nach Prüfungshefte MSA Mathe Berlin 2027, Training Gleichungen und Sachaufgaben",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "g": { "type": "int", "min": 5, "max": 15 },
+        "p": { "type": "choice", "values": [0.05, 0.1, 0.15, 0.2, 0.25] },
+        "x": { "type": "int", "min": 40, "max": 300, "step": 10 }
+      },
+      "derived": {
+        "z": "g + p * x"
+      }
+    }
+  },
+  {
+    "id": "MATH_G12_WORD_ZAHLENRAETSEL_MCQ_T1",
+    "subject": "MATH",
+    "topicId": "MATH_ALG_EQU_WORD",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Das {{mult_w}} einer Zahl, {{op_w}} {{a}}, ergibt {{r}}. Mit welcher Gleichung findet man die Zahl $x$?",
+    "payload": {
+      "choices": [
+        "${{mult_f}}x {{= op_s * a | sign}} = {{r}}$",
+        "${{mult_f}}x {{= -op_s * a | sign}} = {{r}}$",
+        "${{mult_f}}(x {{= op_s * a | sign}}) = {{r}}$",
+        "$x {{= op_s * a | sign}} = {{mult_f}} \\cdot {{r}}$"
+      ],
+      "shuffle": true
+    },
+    "solution": { "correct_choice": "${{mult_f}}x {{= op_s * a | sign}} = {{r}}$" },
+    "explanation": [
+      { "kind": "what", "body": "Zahlenrätsel übersetzt man Wort für Wort: „eine Zahl“ → $x$, „das {{mult_w}}“ → ${{mult_f}} \\cdot x$, „vermindert um“ → $-$, „vermehrt um“ → $+$, „ergibt“ → $=$." },
+      { "kind": "steps", "body": "1. Die Zahl: $x$\n2. Das {{mult_w}} der Zahl: ${{mult_f}}x$\n3. {{op_w}} {{a}}: ${{mult_f}}x {{= op_s * a | sign}}$\n4. Ergibt {{r}}: ${{mult_f}}x {{= op_s * a | sign}} = {{r}}$" },
+      { "kind": "mistake", "body": "„Das {{mult_w}} einer Zahl, {{op_w}} {{a}}“ ist ${{mult_f}}x {{= op_s * a | sign}}$ — **ohne** Klammer. ${{mult_f}}(x {{= op_s * a | sign}})$ wäre „das {{mult_w}} von (der Zahl {{op_w}} {{a}})“, also etwas anderes." },
+      { "kind": "remember", "body": "Reihenfolge im Satz = Reihenfolge im Term. Das Doppelte/Dreifache/Vierfache = $2x$, $3x$, $4x$. Vermindert = minus, vermehrt = plus, ergibt = ist gleich." },
+      { "kind": "answer", "body": "${{mult_f}}x {{= op_s * a | sign}} = {{r}}$" }
+    ],
+    "tags": ["gleichung", "sachaufgabe", "zahlenraetsel", "drill", "basisaufgabe"],
+    "source": "Eigenerstellung nach Prüfungshefte MSA Mathe Berlin 2027, Training Gleichungen und Sachaufgaben",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "mult": { "type": "pick", "from": [{ "w": "Doppelte", "f": 2 }, { "w": "Dreifache", "f": 3 }, { "w": "Vierfache", "f": 4 }, { "w": "Fünffache", "f": 5 }] },
+        "op": { "type": "pick", "from": [{ "w": "vermindert um", "s": -1 }, { "w": "vermehrt um", "s": 1 }] },
+        "a": { "type": "int", "min": 2, "max": 9 },
+        "x": { "type": "int", "min": 3, "max": 12 }
+      },
+      "derived": {
+        "r": "mult_f * x + op_s * a"
+      }
+    }
+  },
+  {
+    "id": "MATH_G12_WORD_ZAHLENRAETSEL_LOESEN_T1",
+    "subject": "MATH",
+    "topicId": "MATH_ALG_EQU_WORD",
+    "difficulty": 2,
+    "qtype": "SHORT",
+    "prompt": "Das {{mult_w}} einer Zahl, {{op_w}} {{a}}, ergibt {{r}}. Wie heißt die Zahl?",
+    "payload": { "answer_type": "number" },
+    "solution": { "kind": "computed", "expr": "x" },
+    "explanation": [
+      { "kind": "steps", "body": "1. Gleichung aufstellen (die Zahl ist $x$): ${{mult_f}}x {{= op_s * a | sign}} = {{r}}$\n2. Die Zahl {{a}} auf die andere Seite: ${{mult_f}}x = {{r}} {{= -op_s * a | sign}} = {{= r - op_s * a}}$\n3. Durch {{mult_f}} teilen: $x = {{= r - op_s * a}} : {{mult_f}} = {{x}}$\n4. Probe im Text: Das {{mult_w}} von {{x}} ist {{= mult_f * x}}, {{op_w}} {{a}} ergibt {{r}} ✓" },
+      { "kind": "mistake", "body": "Beim Rüberbringen dreht sich das Vorzeichen um: Aus „{{op_w}} {{a}}“ auf der linken Seite wird auf der rechten Seite ${{= -op_s * a | sign}}$." },
+      { "kind": "remember", "body": "Zahlenrätsel: Satz in eine Gleichung übersetzen, dann wie gewohnt lösen ($x$ isolieren) und mit dem Text prüfen." },
+      { "kind": "answer", "body": "Die Zahl ist **{{x}}**." }
+    ],
+    "tags": ["gleichung", "sachaufgabe", "zahlenraetsel", "drill", "basisaufgabe"],
+    "source": "Eigenerstellung nach Prüfungshefte MSA Mathe Berlin 2027, Training Gleichungen und Sachaufgaben",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "mult": { "type": "pick", "from": [{ "w": "Doppelte", "f": 2 }, { "w": "Dreifache", "f": 3 }, { "w": "Vierfache", "f": 4 }, { "w": "Fünffache", "f": 5 }] },
+        "op": { "type": "pick", "from": [{ "w": "vermindert um", "s": -1 }, { "w": "vermehrt um", "s": 1 }] },
+        "a": { "type": "int", "min": 2, "max": 9 },
+        "x": { "type": "int", "min": 3, "max": 12 }
+      },
+      "derived": {
+        "r": "mult_f * x + op_s * a"
+      }
+    }
+  },
+  {
+    "id": "MATH_G12_WORD_FAHRRAD_MCQ_T1",
+    "subject": "MATH",
+    "topicId": "MATH_ALG_EQU_WORD",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "Zwei Fahrradverleihe: Verleih A verlangt {{g1}} € Grundpreis und {{p1}} € pro Stunde. Verleih B verlangt {{g2}} € Grundpreis und {{p2}} € pro Stunde. Mit welcher Gleichung kann man berechnen, für wie viele Stunden $x$ beide Verleihe gleich teuer sind?",
+    "payload": {
+      "choices": [
+        "${{g1}} + {{p1}}x = {{g2}} + {{p2}}x$",
+        "${{g1}}x + {{p1}} = {{g2}}x + {{p2}}$",
+        "${{g1}} + {{p1}} + x = {{g2}} + {{p2}} + x$",
+        "${{g1}} \\cdot {{p1}}x = {{g2}} \\cdot {{p2}}x$"
+      ],
+      "shuffle": true
+    },
+    "solution": { "correct_choice": "${{g1}} + {{p1}}x = {{g2}} + {{p2}}x$" },
+    "explanation": [
+      { "kind": "what", "body": "Für jeden Verleih gilt: **Kosten = Grundpreis + Stundenpreis · Stunden**. „Gleich teuer“ heißt: Die beiden Kosten-Terme werden **gleichgesetzt**." },
+      { "kind": "steps", "body": "Verleih A: ${{g1}} + {{p1}}x$\n\nVerleih B: ${{g2}} + {{p2}}x$\n\nGleich teuer: ${{g1}} + {{p1}}x = {{g2}} + {{p2}}x$" },
+      { "kind": "mistake", "body": "Das $x$ gehört zum **Stundenpreis** (der wiederholt sich pro Stunde), nicht zum Grundpreis. ${{g1}}x + {{p1}}$ würde bedeuten: {{g1}} € pro Stunde und einmalig {{p1}} €." },
+      { "kind": "remember", "body": "Zwei Tarife vergleichen: beide Kosten-Terme aufstellen (fest + pro Stunde · $x$) und **gleichsetzen**." },
+      { "kind": "answer", "body": "${{g1}} + {{p1}}x = {{g2}} + {{p2}}x$" }
+    ],
+    "tags": ["gleichung", "sachaufgabe", "drill"],
+    "source": "Eigenerstellung nach Prüfungshefte MSA Mathe Berlin 2027, Training Gleichungen und Sachaufgaben",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "x": { "type": "int", "min": 2, "max": 8 },
+        "p1": { "type": "int", "min": 2, "max": 6 },
+        "d": { "type": "choice", "values": [1, 2, 3] },
+        "g2": { "type": "int", "min": 2, "max": 8 }
+      },
+      "derived": {
+        "p2": "p1 + d",
+        "g1": "g2 + d * x"
+      }
+    }
+  },
+  {
+    "id": "MATH_G12_WORD_FAHRRAD_LOESEN_T1",
+    "subject": "MATH",
+    "topicId": "MATH_ALG_EQU_WORD",
+    "difficulty": 3,
+    "qtype": "SHORT",
+    "prompt": "Zwei Fahrradverleihe: Verleih A verlangt {{g1}} € Grundpreis und {{p1}} € pro Stunde. Verleih B verlangt {{g2}} € Grundpreis und {{p2}} € pro Stunde. Nach wie vielen Stunden kosten beide gleich viel?",
+    "payload": { "answer_type": "number", "unit": "Stunden" },
+    "solution": { "kind": "computed", "expr": "x" },
+    "explanation": [
+      { "kind": "what", "body": "$x$ = Anzahl der Stunden. Kosten A: ${{g1}} + {{p1}}x$, Kosten B: ${{g2}} + {{p2}}x$. Gesucht ist das $x$, bei dem beide gleich sind." },
+      { "kind": "steps", "body": "1. Gleichsetzen: ${{g1}} + {{p1}}x = {{g2}} + {{p2}}x$\n2. Alle $x$ auf eine Seite ($- {{p1}}x$): ${{g1}} = {{g2}} + {{d}}x$\n3. Zahlen auf die andere Seite ($- {{g2}}$): ${{= g1 - g2}} = {{d}}x$\n4. Teilen ($: {{d}}$): $x = {{x}}$\n5. Probe: A: ${{g1}} + {{p1}} \\cdot {{x}} = {{= g1 + p1 * x}}$ €, B: ${{g2}} + {{p2}} \\cdot {{x}} = {{= g2 + p2 * x}}$ € ✓ gleich" },
+      { "kind": "mistake", "body": "Beim Rüberbringen von ${{p1}}x$ auf die rechte Seite entsteht ${{p2}}x - {{p1}}x = {{d}}x$ — die Grundpreise bleiben, wo sie sind, bis du sie im nächsten Schritt sortierst." },
+      { "kind": "remember", "body": "Zwei Tarife: gleichsetzen, $x$ auf eine Seite, Zahlen auf die andere, teilen. Vor der Stundenzahl ist der günstigere Grundpreis besser, danach der günstigere Stundenpreis." },
+      { "kind": "answer", "body": "Nach **{{x}} Stunden** kosten beide gleich viel ({{= g1 + p1 * x}} €)." }
+    ],
+    "tags": ["gleichung", "sachaufgabe", "drill"],
+    "source": "Eigenerstellung nach Prüfungshefte MSA Mathe Berlin 2027, Training Gleichungen und Sachaufgaben",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "x": { "type": "int", "min": 2, "max": 8 },
+        "p1": { "type": "int", "min": 2, "max": 6 },
+        "d": { "type": "choice", "values": [1, 2, 3] },
+        "g2": { "type": "int", "min": 2, "max": 8 }
+      },
+      "derived": {
+        "p2": "p1 + d",
+        "g1": "g2 + d * x"
+      }
+    }
+  },
+  {
+    "id": "MATH_G12_WORD_TASCHENGELD_LOESEN_T1",
+    "subject": "MATH",
+    "topicId": "MATH_ALG_EQU_WORD",
+    "difficulty": 2,
+    "qtype": "SHORT",
+    "prompt": "Mia hat schon {{s}} € gespart. Jeden Monat bekommt sie {{t}} € Taschengeld und legt es komplett dazu. Sie spart auf einen Wunsch, der {{z}} € kostet. Nach wie vielen Monaten hat sie das Geld zusammen?",
+    "payload": { "answer_type": "number", "unit": "Monate" },
+    "solution": { "kind": "computed", "expr": "x" },
+    "explanation": [
+      { "kind": "what", "body": "$x$ = Anzahl der Monate. Gespartes Geld = Startbetrag + Taschengeld pro Monat · $x$. Das soll gleich dem Preis sein." },
+      { "kind": "steps", "body": "1. Gleichung: ${{s}} + {{t}}x = {{z}}$\n2. Startbetrag abziehen: ${{t}}x = {{z}} - {{s}} = {{= z - s}}$\n3. Durch das monatliche Taschengeld teilen: $x = {{= z - s}} : {{t}} = {{x}}$\n4. Probe: ${{s}} + {{t}} \\cdot {{x}} = {{s}} + {{= t * x}} = {{z}}$ ✓" },
+      { "kind": "mistake", "body": "Nicht den vollen Preis durch das Taschengeld teilen — das Ersparte zählt schon mit und wird **zuerst** abgezogen." },
+      { "kind": "remember", "body": "Sparen: **Start + monatlich · Monate = Ziel.** Variable festlegen, Gleichung aufstellen, lösen, Probe." },
+      { "kind": "answer", "body": "Nach **{{x}} Monaten** hat Mia {{z}} € zusammen." }
+    ],
+    "tags": ["gleichung", "sachaufgabe", "drill", "basisaufgabe"],
+    "source": "Eigenerstellung nach Prüfungshefte MSA Mathe Berlin 2027, Training Gleichungen und Sachaufgaben",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "x": { "type": "int", "min": 3, "max": 12 },
+        "t": { "type": "int", "min": 10, "max": 30, "step": 5 },
+        "s": { "type": "int", "min": 20, "max": 80, "step": 5 }
+      },
+      "derived": {
+        "z": "s + t * x"
+      }
+    }
+  },
+  {
+    "id": "MATH_G12_WORD_ALTER_MCQ_T1",
+    "subject": "MATH",
+    "topicId": "MATH_ALG_EQU_WORD",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "Frau Berger ist {{v}} Jahre alt, ihre Tochter Lea ist {{c}} Jahre alt. In $x$ Jahren wird Frau Berger {{kk_w}} so alt sein wie Lea. Mit welcher Gleichung kann man $x$ berechnen?",
+    "payload": {
+      "choices": [
+        "${{v}} + x = {{kk_f}} \\cdot ({{c}} + x)$",
+        "${{v}} + x = {{kk_f}} \\cdot {{c}} + x$",
+        "${{v}} = {{kk_f}} \\cdot ({{c}} + x)$",
+        "${{kk_f}} \\cdot ({{v}} + x) = {{c}} + x$"
+      ],
+      "shuffle": true
+    },
+    "solution": { "correct_choice": "${{v}} + x = {{kk_f}} \\cdot ({{c}} + x)$" },
+    "explanation": [
+      { "kind": "what", "body": "In $x$ Jahren sind **beide** um $x$ Jahre älter: Frau Berger ${{v}} + x$, Lea ${{c}} + x$. „{{kk_w}} so alt“ heißt: Das Alter der Mutter ist ${{kk_f}} \\cdot$ das Alter der Tochter." },
+      { "kind": "steps", "body": "Alter in $x$ Jahren: Frau Berger ${{v}} + x$, Lea ${{c}} + x$.\n\nBedingung: Mutter $= {{kk_f}} \\cdot$ Tochter\n\n${{v}} + x = {{kk_f}} \\cdot ({{c}} + x)$\n\nDie Klammer ist wichtig: Das **ganze** Alter von Lea in $x$ Jahren wird mit {{kk_f}} multipliziert." },
+      { "kind": "mistake", "body": "Die $x$ Jahre bei **beiden** Personen dazuzählen — nicht nur bei einer. Und die Klammer nicht vergessen: ${{kk_f}} \\cdot {{c}} + x$ wäre nur das heutige Alter mal {{kk_f}}." },
+      { "kind": "remember", "body": "Altersaufgaben: „in $x$ Jahren“ → bei **jeder** Person $+ x$. „$k$-mal so alt wie“ → $k \\cdot (\\ldots)$ mit Klammer um das ganze Alter." },
+      { "kind": "answer", "body": "${{v}} + x = {{kk_f}} \\cdot ({{c}} + x)$" }
+    ],
+    "tags": ["gleichung", "sachaufgabe", "drill"],
+    "source": "Eigenerstellung nach Prüfungshefte MSA Mathe Berlin 2027, Training Gleichungen und Sachaufgaben",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "x": { "type": "int", "min": 2, "max": 12 },
+        "kk": { "type": "pick", "from": [{ "w": "doppelt", "f": 2 }, { "w": "dreimal", "f": 3 }] },
+        "c": { "type": "int", "min": 4, "max": 14 }
+      },
+      "derived": {
+        "v": "kk_f * (c + x) - x"
+      },
+      "constraints": ["v - c >= 20", "v <= 60"]
+    }
+  },
+  {
+    "id": "MATH_G12_WORD_ALTER_LOESEN_T1",
+    "subject": "MATH",
+    "topicId": "MATH_ALG_EQU_WORD",
+    "difficulty": 3,
+    "qtype": "SHORT",
+    "prompt": "Frau Berger ist {{v}} Jahre alt, ihre Tochter Lea ist {{c}} Jahre alt. In wie vielen Jahren wird Frau Berger {{kk_w}} so alt sein wie Lea?",
+    "payload": { "answer_type": "number", "unit": "Jahre" },
+    "solution": { "kind": "computed", "expr": "x" },
+    "explanation": [
+      { "kind": "what", "body": "$x$ = Anzahl der Jahre. In $x$ Jahren ist Frau Berger ${{v}} + x$ und Lea ${{c}} + x$ Jahre alt. Bedingung: Mutter $= {{kk_f}} \\cdot$ Tochter." },
+      { "kind": "steps", "body": "1. Gleichung: ${{v}} + x = {{kk_f}} \\cdot ({{c}} + x)$\n2. Klammer auflösen: ${{v}} + x = {{= kk_f * c}} + {{kk_f}}x$\n3. $x$ auf eine Seite ($- x$): ${{v}} = {{= kk_f * c}} + {{= kk_f - 1}} \\cdot x$\n4. Zahlen auf die andere Seite ($- {{= kk_f * c}}$): ${{= v - kk_f * c}} = {{= kk_f - 1}} \\cdot x$\n5. Teilen: $x = {{= v - kk_f * c}} : {{= kk_f - 1}} = {{x}}$\n6. Probe: In {{x}} Jahren ist Frau Berger ${{= v + x}}$ und Lea ${{= c + x}}$ Jahre alt; ${{kk_f}} \\cdot {{= c + x}} = {{= v + x}}$ ✓" },
+      { "kind": "mistake", "body": "Beim Auflösen der Klammer **beide** Summanden mit {{kk_f}} multiplizieren: ${{kk_f}} \\cdot ({{c}} + x) = {{= kk_f * c}} + {{kk_f}}x$, nicht ${{= kk_f * c}} + x$." },
+      { "kind": "remember", "body": "Altersaufgabe: bei jeder Person $+ x$, Bedingung als Gleichung, Klammer auflösen, $x$ isolieren, Probe mit den Altersangaben." },
+      { "kind": "answer", "body": "In **{{x}} Jahren** (Frau Berger {{= v + x}}, Lea {{= c + x}})." }
+    ],
+    "tags": ["gleichung", "sachaufgabe", "drill"],
+    "source": "Eigenerstellung nach Prüfungshefte MSA Mathe Berlin 2027, Training Gleichungen und Sachaufgaben",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "x": { "type": "int", "min": 2, "max": 12 },
+        "kk": { "type": "pick", "from": [{ "w": "doppelt", "f": 2 }, { "w": "dreimal", "f": 3 }] },
+        "c": { "type": "int", "min": 4, "max": 14 }
+      },
+      "derived": {
+        "v": "kk_f * (c + x) - x"
+      },
+      "constraints": ["v - c >= 20", "v <= 60"]
+    }
+  }
+]

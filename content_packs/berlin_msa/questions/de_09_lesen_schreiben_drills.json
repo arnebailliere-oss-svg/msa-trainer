@@ -1,0 +1,736 @@
+[
+  {
+    "id": "DE_L9_ARG_BAUSTEIN_T1",
+    "subject": "DE",
+    "topicId": "DE_READ_ARGUMENT",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Ein Argument besteht aus **Behauptung**, **Begründung** und **Beispiel/Beleg**. Welcher Baustein ist das?\n\n„{{s_satz}}“",
+    "payload": { "choices": ["Behauptung", "Begründung", "Beispiel/Beleg"] },
+    "solution": { "correct_choice": "{{s_loesung}}" },
+    "explanation": [
+      { "kind": "what", "title": "Woran du es erkennst", "body": "{{s_hinweis}}" },
+      { "kind": "remember", "body": "Ein Argument hat drei Bausteine: **Behauptung** (*Schulkleidung ist gut.*) → **Begründung** (*…, weil niemand mehr mit Marken angeben muss.*) → **Beispiel/Beleg** (*An einer Hamburger Schule fühlten sich danach weniger Schüler ausgegrenzt.*). Signalwörter für die Begründung: *weil, denn, da, deshalb*. Signale für das Beispiel: *zum Beispiel, etwa, eine Befragung zeigte, eine Zahl, ein Name, eine bestimmte Schule*." },
+      { "kind": "mistake", "body": "Typische Falle: Ein **Beispiel** ist noch kein **Argument**. Wer in der Prüfung nur ein Beispiel nennt (*In Hamburg …*), hat das Warum nicht erklärt. Umgekehrt ist eine Behauptung ohne Begründung nur eine **Meinung**." }
+    ],
+    "tags": ["argumente", "lesen", "drill"],
+    "source": "Eigene Übungsaufgabe nach dem Aufgabenformat MSA Deutsch (Textverständnis, Argumente erkennen)",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "s": {
+          "type": "pick",
+          "from": [
+            { "satz": "Schulkleidung nimmt den Druck, jeden Tag mit teurer Markenkleidung zu glänzen.", "loesung": "Behauptung", "hinweis": "Der Satz **stellt etwas fest**, ohne zu sagen, warum, und ohne einen konkreten Fall zu nennen. Das ist die Behauptung, mit der ein Argument beginnt." },
+            { "satz": "…, weil sich niemand mehr teure Sneaker leisten muss, um dazuzugehören.", "loesung": "Begründung", "hinweis": "**weil** leitet das Warum ein. Der Satz erklärt, weshalb die Behauptung stimmen soll." },
+            { "satz": "Eine Befragung an einer Hamburger Schule zeigte, dass sich nach der Einführung weniger Jugendliche ausgegrenzt fühlten.", "loesung": "Beispiel/Beleg", "hinweis": "Ein **konkreter Fall** (eine bestimmte Schule, eine Befragung) macht die Begründung greifbar. Signal: *eine Befragung zeigte*." },
+            { "satz": "Ein späterer Schulbeginn verbessert die Leistung der Schülerinnen und Schüler.", "loesung": "Behauptung", "hinweis": "Feststellung ohne Warum und ohne konkreten Fall: Behauptung." },
+            { "satz": "…, denn wer müde ist, kann sich schlechter konzentrieren.", "loesung": "Begründung", "hinweis": "**denn** leitet wie *weil* eine Begründung ein: Der Satz nennt den Grund." },
+            { "satz": "Eine Schule in Niedersachsen berichtet seit der Umstellung auf 8:50 Uhr von besseren Noten.", "loesung": "Beispiel/Beleg", "hinweis": "Eine bestimmte Schule mit einer bestimmten Uhrzeit: ein konkreter Fall, also ein Beispiel." },
+            { "satz": "Ehrenamtliche Arbeit bringt Jugendliche mit anderen Menschen zusammen.", "loesung": "Behauptung", "hinweis": "Allgemeine Feststellung, kein Warum, kein konkreter Fall: Behauptung." },
+            { "satz": "…, da man in einem Verein regelmäßig dieselben Leute trifft.", "loesung": "Begründung", "hinweis": "**da** bedeutet hier *weil*: Der Satz begründet." },
+            { "satz": "Die 16-jährige Leonie hat inzwischen zwei Freundinnen zur Tafel mitgebracht.", "loesung": "Beispiel/Beleg", "hinweis": "Eine bestimmte Person tut etwas Bestimmtes: ein konkreter Fall, also ein Beispiel." },
+            { "satz": "Handys im Unterricht lenken vom Lernen ab.", "loesung": "Behauptung", "hinweis": "Kurz und allgemein, ohne Warum: die Behauptung." },
+            { "satz": "…, weil jede neue Nachricht die Aufmerksamkeit für einige Sekunden vom Thema wegzieht.", "loesung": "Begründung", "hinweis": "**weil** + Erklärung des Warum: Begründung." },
+            { "satz": "An der Gesamtschule Nord sind die Schülerinnen und Schüler seit der Handyregel deutlich konzentrierter, sagt die Schulleiterin.", "loesung": "Beispiel/Beleg", "hinweis": "Eine bestimmte Schule und die Aussage der Schulleiterin: ein konkreter Fall, also ein Beispiel bzw. Beleg." }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "DE_L9_ARG_SCHULKLEIDUNG_THESE",
+    "subject": "DE",
+    "topicId": "DE_READ_ARGUMENT",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Welche **These** vertritt die Autorin des Kommentars?",
+    "payload": {
+      "choices": [
+        "Schulkleidung sollte an der Gesamtschule Süd eingeführt werden.",
+        "Schulkleidung schränkt die Persönlichkeit der Jugendlichen ein.",
+        "Markenkleidung sollte an Schulen verboten werden.",
+        "Die Schülerinnen und Schüler sollten über die Schulkleidung abstimmen."
+      ]
+    },
+    "solution": { "correct_choice": "Schulkleidung sollte an der Gesamtschule Süd eingeführt werden." },
+    "explanation": [
+      { "kind": "what", "title": "Beleg", "body": "Absatz 1: „Ich finde: Das ist eine gute Idee.“ und Absatz 6: „Deshalb sollte die Schulkonferenz die Schulkleidung beschließen.“ Die These steht am Anfang und wird am Ende als Forderung wiederholt.\n\nDie Sorge um die **Persönlichkeit** ist das Gegenargument, das die Autorin in Absatz 5 entkräftet. Ein **Verbot von Markenkleidung** oder eine **Abstimmung der Schüler** kommt im Text nicht vor." },
+      { "kind": "remember", "body": "Die **These** ist der Standpunkt, den der ganze Text verteidigt. Suche nach *Ich finde*, *Deshalb sollte*, *Klar ist* am Anfang oder Ende des Textes." },
+      { "kind": "mistake", "body": "Typische Falle: Ein Satz aus dem Text (*die Persönlichkeit einschränkt*) ist nicht automatisch die Meinung der Autorin. Achte darauf, **wer** etwas sagt: *Manche befürchten …* ist die Gegenseite." }
+    ],
+    "tags": ["argumente", "lesen", "these"],
+    "source": "Eigene Übungsaufgabe nach dem Aufgabenformat MSA Deutsch (Textverständnis)",
+    "passage": "X_DE_SCHULKLEIDUNG"
+  },
+  {
+    "id": "DE_L9_ARG_SCHULKLEIDUNG_MATCH",
+    "subject": "DE",
+    "topicId": "DE_READ_ARGUMENT",
+    "difficulty": 4,
+    "qtype": "MATCH",
+    "prompt": "Ordne jeder **Behauptung** der Autorin das passende **Beispiel bzw. die Begründung** aus dem Text zu.",
+    "payload": {
+      "left": [
+        "Schulkleidung nimmt den Druck durch Markenkleidung.",
+        "Gemeinsame Kleidung stärkt das Gemeinschaftsgefühl.",
+        "Schulkleidung spart morgens Zeit und Nerven.",
+        "Schulkleidung schränkt die Persönlichkeit nicht ein."
+      ],
+      "right": [
+        "Befragung an einer Hamburger Schule: weniger Ausgrenzung wegen Kleidung",
+        "Vergleich mit einer Mannschaft im selben Trikot",
+        "Statt zwanzig Minuten vor dem Spiegel einfach zum Pullover greifen",
+        "Hose, Schuhe und Frisur bleiben frei wählbar"
+      ]
+    },
+    "solution": {
+      "pairs": [
+        ["Schulkleidung nimmt den Druck durch Markenkleidung.", "Befragung an einer Hamburger Schule: weniger Ausgrenzung wegen Kleidung"],
+        ["Gemeinsame Kleidung stärkt das Gemeinschaftsgefühl.", "Vergleich mit einer Mannschaft im selben Trikot"],
+        ["Schulkleidung spart morgens Zeit und Nerven.", "Statt zwanzig Minuten vor dem Spiegel einfach zum Pullover greifen"],
+        ["Schulkleidung schränkt die Persönlichkeit nicht ein.", "Hose, Schuhe und Frisur bleiben frei wählbar"]
+      ]
+    },
+    "explanation": [
+      { "kind": "steps", "title": "Absatz für Absatz", "body": "- Absatz 2: *Druck durch Markenkleidung* → Beleg: „eine Befragung an einer Hamburger Schule, dass sich … deutlich weniger Schülerinnen und Schüler wegen ihrer Kleidung ausgegrenzt fühlten“\n- Absatz 3: *Gemeinschaftsgefühl* → Beispiel: „ähnlich wie eine Mannschaft im selben Trikot“\n- Absatz 4: *Zeit und Nerven* → Beispiel: „Statt zwanzig Minuten vor dem Spiegel zu stehen, greift man einfach zum Schulpullover.“\n- Absatz 5: *Persönlichkeit nicht eingeschränkt* → Begründung: „lässt genug Raum für eigenen Stil bei Hose, Schuhen und Frisur“" },
+      { "kind": "remember", "body": "Jedes Argument steht in einem **eigenen Absatz**: erst die Behauptung, dann die Begründung, dann das Beispiel. Suche das Beispiel also immer im **selben Absatz** wie die Behauptung." },
+      { "kind": "mistake", "body": "Typische Falle: Beispiele nach Gefühl zuordnen. Prüfe: *Zeigt dieses Beispiel genau diese Behauptung?* Das Trikot zeigt Gemeinschaft, nicht Zeitersparnis." }
+    ],
+    "tags": ["argumente", "lesen", "zuordnen"],
+    "source": "Eigene Übungsaufgabe nach dem Aufgabenformat MSA Deutsch (Textverständnis, Argumente zuordnen)",
+    "passage": "X_DE_SCHULKLEIDUNG"
+  },
+  {
+    "id": "DE_L9_ARG_SCHULKLEIDUNG_GEGEN",
+    "subject": "DE",
+    "topicId": "DE_READ_ARGUMENT",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "In welchem Absatz nennt die Autorin ein **Gegenargument**, und wie geht sie damit um?",
+    "payload": {
+      "choices": [
+        "Absatz 5: Sie nennt die Sorge, dass Schulkleidung die Persönlichkeit einschränkt, und entkräftet sie.",
+        "Absatz 2: Sie gibt zu, dass Schulkleidung für viele Familien zu teuer ist.",
+        "Absatz 6: Sie räumt ein, dass die Schulkonferenz gegen Schulkleidung ist.",
+        "Der Kommentar enthält kein Gegenargument."
+      ]
+    },
+    "solution": { "correct_choice": "Absatz 5: Sie nennt die Sorge, dass Schulkleidung die Persönlichkeit einschränkt, und entkräftet sie." },
+    "explanation": [
+      { "kind": "what", "title": "Beleg", "body": "Absatz 5: „Natürlich gibt es auch Kritik. Manche befürchten, dass die Kleidung die Persönlichkeit einschränkt. Doch niemand verlangt einen Anzug …“ Das Signalwort **Doch** zeigt, dass die Autorin das Gegenargument **entkräftet**: Hose, Schuhe und Frisur bleiben frei.\n\nIn Absatz 2 geht es um Markenkleidung, nicht um die Kosten der Schulkleidung. In Absatz 6 fordert sie die Schulkonferenz auf, zu beschließen; von einer Ablehnung steht nichts." },
+      { "kind": "remember", "body": "Gute Kommentare nennen ein **Gegenargument** und entkräften es. Signalwörter: *Natürlich …, Manche meinen …, Zwar …* (Gegenargument) und *Doch …, Aber …, Allerdings …* (Entkräftung)." },
+      { "kind": "mistake", "body": "Typische Falle: Das Gegenargument für die Meinung der Autorin halten. *Manche befürchten* ist die Meinung **anderer**; die Autorin antwortet darauf mit *Doch*." }
+    ],
+    "tags": ["argumente", "lesen", "gegenargument"],
+    "source": "Eigene Übungsaufgabe nach dem Aufgabenformat MSA Deutsch (Textverständnis)",
+    "passage": "X_DE_SCHULKLEIDUNG"
+  },
+  {
+    "id": "DE_L9_ARG_SCHULBEGINN_MATCH",
+    "subject": "DE",
+    "topicId": "DE_READ_ARGUMENT",
+    "difficulty": 4,
+    "qtype": "MATCH",
+    "prompt": "Der Text nennt drei **Argumente** für einen späteren Schulbeginn. Ordne jedem Argument das passende **Beispiel** zu.",
+    "payload": {
+      "left": [
+        "Die innere Uhr verschiebt sich in der Pubertät nach hinten.",
+        "Die Leistung leidet unter dem frühen Start.",
+        "Schlafmangel wirkt sich auf die Stimmung aus."
+      ],
+      "right": [
+        "Das Schlafhormon Melatonin steigt bei 15-Jährigen oft erst gegen 23 Uhr an.",
+        "Eine Schule in Niedersachsen berichtet von besseren Noten in den ersten beiden Stunden.",
+        "Lehrkräfte beobachten weniger Konflikte in der ersten Stunde."
+      ]
+    },
+    "solution": {
+      "pairs": [
+        ["Die innere Uhr verschiebt sich in der Pubertät nach hinten.", "Das Schlafhormon Melatonin steigt bei 15-Jährigen oft erst gegen 23 Uhr an."],
+        ["Die Leistung leidet unter dem frühen Start.", "Eine Schule in Niedersachsen berichtet von besseren Noten in den ersten beiden Stunden."],
+        ["Schlafmangel wirkt sich auf die Stimmung aus.", "Lehrkräfte beobachten weniger Konflikte in der ersten Stunde."]
+      ]
+    },
+    "explanation": [
+      { "kind": "steps", "title": "Absatz für Absatz", "body": "- Absatz 2: *innere Uhr* → Beispiel: „So steigt das Schlafhormon Melatonin bei 15-Jährigen oft erst gegen 23 Uhr an“\n- Absatz 3: *Leistung* → Beispiel: „berichtet von besseren Noten in den ersten beiden Stunden und weniger Verspätungen“\n- Absatz 4: *Stimmung* → Beispiel: „Lehrkräfte derselben Schule beobachten seit der Umstellung weniger Konflikte in der ersten Stunde.“" },
+      { "kind": "remember", "body": "Der Text ist wie eine Liste gebaut: *Der erste Grund … Zweitens … Drittens …* Jeder Absatz = ein Argument mit Behauptung, Begründung und Beispiel. Solche **Ordnungswörter** zeigen dir, wo ein neues Argument beginnt." },
+      { "kind": "mistake", "body": "Typische Falle: *Noten* und *Konflikte* verwechseln. Noten gehören zur **Leistung**, Konflikte zur **Stimmung**. Lies das Beispiel im selben Absatz wie die Behauptung." }
+    ],
+    "tags": ["argumente", "lesen", "zuordnen"],
+    "source": "Eigene Übungsaufgabe nach dem Aufgabenformat MSA Deutsch (Textverständnis, Argumente zuordnen)",
+    "passage": "X_DE_SCHULBEGINN"
+  },
+  {
+    "id": "DE_L9_ARG_PRO_KONTRA_T1",
+    "subject": "DE",
+    "topicId": "DE_READ_ARGUMENT",
+    "difficulty": 3,
+    "qtype": "CLOZE",
+    "prompt": "Vorschlag: **{{s_thema}}**\n\nSpricht das Argument **dafür** (Pro) oder **dagegen** (Kontra)?",
+    "payload": {
+      "text_with_blanks": "„{{s_satz}}“ → ___",
+      "blanks": [{ "id": 1, "choices": ["Pro", "Kontra"] }]
+    },
+    "solution": { "answers": { "1": "{{s_loesung}}" } },
+    "explanation": [
+      { "kind": "what", "title": "Warum", "body": "{{s_hinweis}}" },
+      { "kind": "remember", "body": "**Pro** = spricht **für** den Vorschlag (Vorteil, Nutzen). **Kontra** = spricht **gegen** den Vorschlag (Nachteil, Problem, Kosten). Frag dich: *Würde dieser Satz jemanden überzeugen, JA zum Vorschlag zu sagen, oder NEIN?*" },
+      { "kind": "mistake", "body": "Typische Falle: Ein Satz klingt negativ (*müde, streiten, Nachricht lenkt ab*), spricht aber trotzdem **für** den Vorschlag, weil der Vorschlag genau dieses Problem löst. Entscheidend ist nicht die Stimmung des Satzes, sondern ob er den Vorschlag stützt oder angreift." }
+    ],
+    "tags": ["argumente", "lesen", "drill"],
+    "source": "Eigene Übungsaufgabe nach dem Aufgabenformat MSA Deutsch (Argumente sortieren)",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "s": {
+          "type": "pick",
+          "from": [
+            { "thema": "Schulkleidung einführen", "satz": "Niemand muss sich mehr teure Markenkleidung leisten, um dazuzugehören.", "loesung": "Pro", "hinweis": "Das ist ein Vorteil der Schulkleidung: Sie nimmt den Druck durch Marken. Ein Vorteil des Vorschlags = Pro." },
+            { "thema": "Schulkleidung einführen", "satz": "Alle sehen gleich aus, die eigene Persönlichkeit kommt zu kurz.", "loesung": "Kontra", "hinweis": "Der Satz nennt einen Nachteil (die Persönlichkeit kommt zu kurz). Nachteil des Vorschlags = Kontra." },
+            { "thema": "Schulbeginn um 9 Uhr", "satz": "Jugendliche werden in der Pubertät abends später müde und morgens später wach.", "loesung": "Pro", "hinweis": "Wenn Jugendliche später wach werden, passt ein späterer Beginn zu ihnen. Der Satz stützt den Vorschlag = Pro." },
+            { "thema": "Schulbeginn um 9 Uhr", "satz": "Der Nachmittag für Sport, Hobbys und Freunde wird kürzer.", "loesung": "Kontra", "hinweis": "Ein kürzerer Nachmittag ist ein Nachteil des späteren Beginns = Kontra." },
+            { "thema": "Handyverbot im Unterricht", "satz": "Jede neue Nachricht zieht die Aufmerksamkeit vom Unterricht weg.", "loesung": "Pro", "hinweis": "Der Satz beschreibt, was Handys im Unterricht anrichten. Das spricht für das Verbot = Pro." },
+            { "thema": "Handyverbot im Unterricht", "satz": "Mit dem Handy lassen sich unbekannte Wörter und Fakten in Sekunden nachschlagen.", "loesung": "Kontra", "hinweis": "Der Satz nennt einen Nutzen des Handys im Unterricht. Das spricht gegen ein Verbot = Kontra." },
+            { "thema": "Nachtbus für Jugendliche auf dem Land", "satz": "Jugendliche kommen nachts sicher nach Hause, ohne auf ihre Eltern angewiesen zu sein.", "loesung": "Pro", "hinweis": "Sicher nach Hause kommen ist ein Vorteil des Nachtbusses = Pro." },
+            { "thema": "Nachtbus für Jugendliche auf dem Land", "satz": "Ein fast leerer Bus kostet den Landkreis jede Nacht mehrere hundert Euro.", "loesung": "Kontra", "hinweis": "Hohe Kosten bei wenig Nutzen: ein Nachteil des Nachtbusses = Kontra." },
+            { "thema": "Schulkleidung einführen", "satz": "Morgens entfällt die Frage, was man anziehen soll.", "loesung": "Pro", "hinweis": "Zeit und Stress sparen: ein Vorteil der Schulkleidung = Pro." },
+            { "thema": "Schulkleidung einführen", "satz": "Ein Pullover mit Logo kostet extra, und man braucht gleich mehrere davon.", "loesung": "Kontra", "hinweis": "Zusätzliche Kosten sind ein Nachteil des Vorschlags = Kontra." },
+            { "thema": "Schulbeginn um 9 Uhr", "satz": "Ausgeschlafene Schüler konzentrieren sich besser und streiten weniger.", "loesung": "Pro", "hinweis": "Bessere Konzentration und weniger Streit sind Vorteile des späteren Beginns = Pro." },
+            { "thema": "Handyverbot im Unterricht", "satz": "Im Notfall können Eltern ihr Kind nicht mehr erreichen.", "loesung": "Kontra", "hinweis": "Der Satz nennt ein Problem, das das Verbot verursacht. Das spricht gegen das Verbot = Kontra." }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "DE_L9_ARG_EHRENAMT_STUETZT",
+    "subject": "DE",
+    "topicId": "DE_READ_ARGUMENT",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "These: **Vielen Jugendlichen fehlt der Zugang zum Ehrenamt.**\n\nWelche Aussage aus dem Text **stützt** diese These?",
+    "payload": {
+      "choices": [
+        "Absatz 4: „Wer keinen Verein in der Nähe hat, findet oft keinen Einstieg“",
+        "Absatz 2: Etwa jeder dritte Jugendliche engagiert sich regelmäßig freiwillig.",
+        "Absatz 3: Viele wollen etwas Sinnvolles tun und dabei Menschen treffen.",
+        "Absatz 6: Leonie hat inzwischen zwei Freundinnen mitgebracht."
+      ]
+    },
+    "solution": { "correct_choice": "Absatz 4: „Wer keinen Verein in der Nähe hat, findet oft keinen Einstieg“" },
+    "explanation": [
+      { "kind": "what", "title": "Beleg", "body": "Absatz 4 handelt von den **Hürden**: „Zudem wissen viele nicht, wo sie sich melden könnten.“ und „Wer keinen Verein in der Nähe hat, findet oft keinen Einstieg“. Genau das bedeutet *fehlender Zugang*.\n\nAbsatz 2 zeigt, dass sich viele engagieren (spricht eher **gegen** die These). Absatz 3 nennt **Gründe** für das Engagement. Absatz 6 zeigt, dass Leonie anderen den Zugang **ermöglicht** hat." },
+      { "kind": "remember", "body": "Eine Aussage **stützt** eine These, wenn sie **dasselbe** in anderen Worten sagt oder einen Grund dafür liefert. Frage: *Würde ich diesen Satz nennen, um die These zu beweisen?*" },
+      { "kind": "mistake", "body": "Typische Falle: Eine Aussage passt zum **Thema** (Ehrenamt), aber nicht zur **These** (fehlender Zugang). Zum Thema passen alle vier, zur These nur eine." }
+    ],
+    "tags": ["argumente", "lesen", "these"],
+    "source": "Eigene Übungsaufgabe nach dem Aufgabenformat MSA Deutsch (Textverständnis)",
+    "passage": "X_DE_EHRENAMT"
+  },
+  {
+    "id": "DE_L9_BELEG_ZITAT_T1",
+    "subject": "DE",
+    "topicId": "DE_READ_EVIDENCE",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "Im Text *{{s_text}}* steht in {{s_abs}}:\n\n*{{s_original}}*\n\nWelcher Textbeleg gibt die Stelle **korrekt** wieder?",
+    "payload": { "choices": ["{{s_a}}", "{{s_b}}", "{{s_c}}", "{{s_d}}"] },
+    "solution": { "correct_choice": "{{s_a}}" },
+    "explanation": [
+      { "kind": "what", "title": "Was bei den anderen falsch ist", "body": "{{s_hinweis}}" },
+      { "kind": "remember", "body": "Ein korrekter Textbeleg hat vier Merkmale: 1. **wörtlich** (kein Wort geändert), 2. **Anführungszeichen** „…“, 3. **Stellenangabe** (Z. 12) oder (Abs. 3), 4. Auslassungen mit **(…)** oder **[…]** gekennzeichnet.\n\nBeispiel: „62 Prozent finden die Regel gut“ (Satz 5)" },
+      { "kind": "mistake", "body": "Typische Falle: Der Sinn stimmt, aber der Wortlaut nicht. Ein Beleg mit eigenen Worten ist eine **Paraphrase**, kein Zitat, und bringt bei *Notieren Sie einen Textbeleg* keinen Punkt." }
+    ],
+    "tags": ["beleg", "lesen", "drill"],
+    "source": "Eigene Übungsaufgabe nach dem Aufgabenformat MSA Deutsch (Textbeleg, Zitierweise)",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "s": {
+          "type": "pick",
+          "from": [
+            { "text": "Ein Pullover für alle?", "abs": "Absatz 2", "original": "Wer sich keine Sneaker für 200 Euro leisten kann, fällt in einem einheitlichen Pullover nicht mehr auf.", "a": "„Wer sich keine Sneaker für 200 Euro leisten kann, fällt in einem einheitlichen Pullover nicht mehr auf.“ (Abs. 2)", "b": "Wer sich keine Sneaker für 200 Euro leisten kann, fällt in einem einheitlichen Pullover nicht mehr auf. (Abs. 2)", "c": "„Wer sich keine teuren Sneaker leisten kann, fällt im Pullover nicht auf.“ (Abs. 2)", "d": "„Wer sich keine Sneaker leisten kann, fällt nicht mehr auf.“ (Abs. 2)", "hinweis": "Korrekt ist nur der Beleg mit Anführungszeichen, wörtlichem Text und Absatzangabe. **Falsch**: der Beleg ohne Anführungszeichen (kein Zitat), der umformulierte Beleg (*teuren Sneaker*, *im Pullover*) und der Beleg, der *für 200 Euro* und *in einem einheitlichen Pullover* weglässt, ohne das mit (…) zu kennzeichnen." },
+            { "text": "Ein Pullover für alle?", "abs": "Absatz 6", "original": "Schule soll ein Ort sein, an dem es um Ideen geht und nicht um Preisschilder.", "a": "„Schule soll ein Ort sein, an dem es um Ideen geht und nicht um Preisschilder.“ (Abs. 6)", "b": "„Schule soll ein Ort sein, an dem es um Ideen geht und nicht um Preisschilder.“", "c": "„Schule soll ein Ort sein, an dem es um Ideen und nicht um Geld geht.“ (Abs. 6)", "d": "Schule soll ein Ort sein, an dem es um Ideen geht und nicht um Preisschilder (Abs. 6)", "hinweis": "Korrekt: wörtlich, Anführungszeichen, Absatzangabe. **Falsch**: der Beleg ohne Absatzangabe (der Leser findet die Stelle nicht), der umformulierte Beleg (*Geld* statt *Preisschilder*) und der Beleg ohne Anführungszeichen." },
+            { "text": "Engagiert statt gelangweilt", "abs": "Absatz 2", "original": "Vor zehn Jahren war es noch jeder vierte.", "a": "„Vor zehn Jahren war es noch jeder vierte.“ (Abs. 2)", "b": "Vor zehn Jahren war es noch jeder vierte. (Abs. 2)", "c": "„Vor zehn Jahren war es noch jeder dritte.“ (Abs. 2)", "d": "„Vor zehn Jahren war es noch jeder vierte.“ (Abs. 5)", "hinweis": "Korrekt: wörtlich, Anführungszeichen, richtige Absatzangabe. **Falsch**: ohne Anführungszeichen; *jeder dritte* statt *jeder vierte* (Wortlaut und sogar die Zahl verändert); Absatz 5 statt Absatz 2 (falsche Stellenangabe)." },
+            { "text": "Engagiert statt gelangweilt", "abs": "Absatz 4", "original": "Am häufigsten nennen Jugendliche Zeitmangel: Schule, Nachhilfe und Nebenjobs lassen wenig Raum.", "a": "„Am häufigsten nennen Jugendliche Zeitmangel: Schule, Nachhilfe und Nebenjobs lassen wenig Raum.“ (Abs. 4)", "b": "„Am häufigsten nennen Jugendliche Zeitmangel: Schule und Nebenjobs lassen wenig Raum.“ (Abs. 4)", "c": "Am häufigsten nennen Jugendliche Zeitmangel: Schule, Nachhilfe und Nebenjobs lassen wenig Raum. (Abs. 4)", "d": "„Jugendliche haben am häufigsten wegen Schule und Nebenjobs keine Zeit.“ (Abs. 4)", "hinweis": "Korrekt: wörtlich, Anführungszeichen, Absatzangabe. **Falsch**: *Nachhilfe* fehlt ohne (…); keine Anführungszeichen; der umformulierte Beleg in eigenen Worten ist kein Zitat mehr." },
+            { "text": "Warum die Schule später beginnen sollte", "abs": "Absatz 2", "original": "Das ist keine Faulheit, sondern Biologie.", "a": "„Das ist keine Faulheit, sondern Biologie.“ (Abs. 2)", "b": "„Das ist keine Faulheit, sondern Biologie.“ (Abs. 4)", "c": "„Das ist Biologie und keine Faulheit.“ (Abs. 2)", "d": "Das ist keine Faulheit, sondern Biologie. (Abs. 2)", "hinweis": "Korrekt: wörtlich, Anführungszeichen, richtige Absatzangabe. **Falsch**: Absatz 4 statt Absatz 2; umgestellter Wortlaut (*Biologie und keine Faulheit*); keine Anführungszeichen." },
+            { "text": "Warum die Schule später beginnen sollte", "abs": "Absatz 5", "original": "Viele Fachleute halten diese Probleme jedoch für lösbar, etwa durch eine offene Frühbetreuung.", "a": "„Viele Fachleute halten diese Probleme jedoch für lösbar, etwa durch eine offene Frühbetreuung.“ (Abs. 5)", "b": "„Viele Fachleute halten diese Probleme für lösbar, durch eine offene Frühbetreuung.“ (Abs. 5)", "c": "„Alle Fachleute halten diese Probleme für lösbar.“ (Abs. 5)", "d": "Viele Fachleute halten diese Probleme jedoch für lösbar, etwa durch eine offene Frühbetreuung. (Abs. 5)", "hinweis": "Korrekt: wörtlich, Anführungszeichen, Absatzangabe. **Falsch**: *jedoch* und *etwa* fehlen ohne (…); *Alle* statt *Viele* verändert die Aussage; keine Anführungszeichen." },
+            { "text": "Handys im Unterricht?", "abs": "Satz 1", "original": "Handys bleiben im Unterricht in der Tasche, dürfen aber in den Pausen benutzt werden.", "a": "„Handys bleiben im Unterricht in der Tasche, dürfen aber in den Pausen benutzt werden.“ (Satz 1)", "b": "„Handys bleiben in der Tasche, dürfen aber in den Pausen benutzt werden.“ (Satz 1)", "c": "„Handys bleiben im Unterricht in der Tasche und dürfen in den Pausen benutzt werden.“ (Satz 1)", "d": "Handys bleiben im Unterricht in der Tasche, dürfen aber in den Pausen benutzt werden. (Satz 1)", "hinweis": "Korrekt: wörtlich, Anführungszeichen, Satzangabe. **Falsch**: *im Unterricht* fehlt ohne (…); *und* statt *, aber* ist ein veränderter Wortlaut; keine Anführungszeichen." },
+            { "text": "Der letzte Bus", "abs": "Satz 6", "original": "Erst im Bus merkte sie, dass sie ihre Jacke auf der Party vergessen hatte.", "a": "„Erst im Bus merkte sie, dass sie ihre Jacke auf der Party vergessen hatte.“ (Satz 6)", "b": "„Erst im Bus merkte sie, dass sie ihre Jacke vergessen hatte.“ (Satz 6)", "c": "„Im Bus merkte Mara, dass ihre Jacke auf der Party lag.“ (Satz 6)", "d": "„Erst im Bus merkte sie, dass sie ihre Jacke auf der Party vergessen hatte.“ (Satz 2)", "hinweis": "Korrekt: wörtlich, Anführungszeichen, richtige Satzangabe. **Falsch**: *auf der Party* fehlt ohne (…); umformuliert (*Mara*, *lag*); Satz 2 statt Satz 6." },
+            { "text": "Warum die Schule später beginnen sollte", "abs": "Absatz 3", "original": "Wer müde ist, kann sich schlechter konzentrieren und vergisst Gelerntes schneller.", "a": "„Wer müde ist, kann sich schlechter konzentrieren und vergisst Gelerntes schneller.“ (Abs. 3)", "b": "„Wer müde ist, vergisst Gelerntes schneller.“ (Abs. 3)", "c": "„Wer müde ist, kann sich schlecht konzentrieren und vergisst alles schneller.“ (Abs. 3)", "d": "Wer müde ist, kann sich schlechter konzentrieren und vergisst Gelerntes schneller (Abs. 3)", "hinweis": "Korrekt: wörtlich, Anführungszeichen, Absatzangabe. **Falsch**: der Mittelteil fehlt ohne (…); *schlecht* und *alles* statt *schlechter* und *Gelerntes* (verändert); keine Anführungszeichen." },
+            { "text": "Ein Pullover für alle?", "abs": "Absatz 5", "original": "Manche befürchten, dass die Kleidung die Persönlichkeit einschränkt.", "a": "„Manche befürchten, dass die Kleidung die Persönlichkeit einschränkt.“ (Abs. 5)", "b": "„Manche befürchten, dass die Kleidung die Persönlichkeit einschränkt.“ (Abs. 2)", "c": "„Viele befürchten, dass die Kleidung die Freiheit einschränkt.“ (Abs. 5)", "d": "Manche befürchten, dass die Kleidung die Persönlichkeit einschränkt. (Abs. 5)", "hinweis": "Korrekt: wörtlich, Anführungszeichen, richtige Absatzangabe. **Falsch**: Absatz 2 statt Absatz 5; *Viele* und *Freiheit* statt *Manche* und *Persönlichkeit* (verändert); keine Anführungszeichen." }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "DE_L9_BELEG_SCHULKLEIDUNG_1",
+    "subject": "DE",
+    "topicId": "DE_READ_EVIDENCE",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "Aussage: **Die Autorin sieht in Markenkleidung eine Ursache für Ausgrenzung.**\n\nWelche Textstelle **belegt** diese Aussage?",
+    "payload": {
+      "choices": [
+        "Absatz 2: „… dass sich nach der Einführung deutlich weniger Schülerinnen und Schüler wegen ihrer Kleidung ausgegrenzt fühlten.“",
+        "Absatz 3: „… ähnlich wie eine Mannschaft im selben Trikot.“",
+        "Absatz 4: „… greift man einfach zum Schulpullover.“",
+        "Absatz 5: „Manche befürchten, dass die Kleidung die Persönlichkeit einschränkt.“"
+      ]
+    },
+    "solution": { "correct_choice": "Absatz 2: „… dass sich nach der Einführung deutlich weniger Schülerinnen und Schüler wegen ihrer Kleidung ausgegrenzt fühlten.“" },
+    "explanation": [
+      { "kind": "what", "title": "Beleg", "body": "Absatz 2 verbindet **Markenkleidung** („Sneaker für 200 Euro“) mit **Ausgrenzung** („wegen ihrer Kleidung ausgegrenzt“). Nur diese Stelle enthält beide Schlüsselwörter der Aussage.\n\nDas Trikot (Absatz 3) belegt Gemeinschaft, der Pullover (Absatz 4) Zeitersparnis, Absatz 5 ist das Gegenargument." },
+      { "kind": "steps", "title": "So findest du den Beleg", "body": "1. Schlüsselwörter der Aussage markieren: *Markenkleidung*, *Ausgrenzung*.\n2. Im Text nach diesen Wörtern oder Synonymen suchen: *Sneaker, ausgegrenzt*.\n3. Die Stelle wörtlich mit Absatzangabe notieren." },
+      { "kind": "remember", "body": "Ein Beleg muss die **Aussage selbst** stützen, nicht nur zum Thema passen. Beide Teile der Aussage (Ursache **und** Folge) müssen an der Stelle vorkommen." }
+    ],
+    "tags": ["beleg", "lesen", "textstelle"],
+    "source": "Eigene Übungsaufgabe nach dem Aufgabenformat MSA Deutsch (Textbeleg)",
+    "passage": "X_DE_SCHULKLEIDUNG"
+  },
+  {
+    "id": "DE_L9_BELEG_EHRENAMT_1",
+    "subject": "DE",
+    "topicId": "DE_READ_EVIDENCE",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "Aussage: **Für die meisten Jugendlichen ist der Lebenslauf nicht der Hauptgrund für ihr Engagement.**\n\nWelche Textstelle **belegt** diese Aussage?",
+    "payload": {
+      "choices": [
+        "Absatz 3: „Der Wunsch, etwas für den Lebenslauf zu tun, spielt nur bei wenigen die Hauptrolle.“",
+        "Absatz 1: „Am Anfang wollte ich nur Stunden für mein Sozialpraktikum sammeln“",
+        "Absatz 2: „Vor zehn Jahren war es noch jeder vierte.“",
+        "Absatz 5: „Die Nachfrage ist hoch.“"
+      ]
+    },
+    "solution": { "correct_choice": "Absatz 3: „Der Wunsch, etwas für den Lebenslauf zu tun, spielt nur bei wenigen die Hauptrolle.“" },
+    "explanation": [
+      { "kind": "what", "title": "Beleg", "body": "Absatz 3 sagt genau das: *nur bei wenigen die Hauptrolle* = *für die meisten nicht der Hauptgrund*. Aussage und Beleg sagen dasselbe mit anderen Worten.\n\nAbsatz 1 ist eine Falle: Leonie spricht von **ihrem** Anfang und vom **Sozialpraktikum**, nicht von den meisten Jugendlichen und nicht vom Lebenslauf. Ein Einzelfall belegt keine Aussage über *die meisten*." },
+      { "kind": "remember", "body": "Achte auf **Mengenwörter** in der Aussage: *die meisten, viele, wenige, alle*. Der Beleg muss dieselbe Menge meinen. *Nur bei wenigen* passt zu *für die meisten nicht*." },
+      { "kind": "mistake", "body": "Typische Falle: Das Zitat einer **Einzelperson** als Beleg für eine Aussage über **alle** nehmen. Leonies Satz zeigt nur, wie es bei ihr war." }
+    ],
+    "tags": ["beleg", "lesen", "textstelle"],
+    "source": "Eigene Übungsaufgabe nach dem Aufgabenformat MSA Deutsch (Textbeleg)",
+    "passage": "X_DE_EHRENAMT"
+  },
+  {
+    "id": "DE_L9_BELEG_FALSCH_EHRENAMT",
+    "subject": "DE",
+    "topicId": "DE_READ_EVIDENCE",
+    "difficulty": 4,
+    "qtype": "MCQ",
+    "prompt": "Ein Schüler hat vier Aussagen mit Textbelegen versehen. **Welcher Beleg ist falsch zugeordnet?**",
+    "payload": {
+      "choices": [
+        "Aussage: *Leonie will mit dem Ehrenamt aufhören.* → Absatz 6: „Aber aufhören will ich eigentlich nicht.“",
+        "Aussage: *Immer mehr Jugendliche engagieren sich.* → Absatz 2: „Vor zehn Jahren war es noch jeder vierte.“",
+        "Aussage: *Zeitmangel ist die häufigste Hürde.* → Absatz 4: „Am häufigsten nennen Jugendliche Zeitmangel“",
+        "Aussage: *Es gibt neue Angebote mit kurzen Einsätzen.* → Absatz 5: „Online-Börsen (…), auf denen Vereine kurze Einsätze ausschreiben“"
+      ]
+    },
+    "solution": { "correct_choice": "Aussage: *Leonie will mit dem Ehrenamt aufhören.* → Absatz 6: „Aber aufhören will ich eigentlich nicht.“" },
+    "explanation": [
+      { "kind": "what", "title": "Warum dieser Beleg falsch ist", "body": "Der Beleg sagt das **Gegenteil** der Aussage: „Aber aufhören will ich eigentlich nicht.“ Das Wort **nicht** dreht die Aussage um. Ein Beleg muss die Aussage stützen, nicht widerlegen. Richtig wäre die Aussage: *Leonie will nicht aufhören.*\n\nDie anderen drei passen: *jeder vierte* damals gegenüber *jeder dritte* heute belegt *immer mehr*; *Am häufigsten … Zeitmangel* belegt *häufigste Hürde*; die *Online-Börsen* mit *kurzen Einsätzen* belegen *neue Angebote*." },
+      { "kind": "remember", "body": "Beim Belegen immer die **Verneinung** prüfen: *nicht, kein, nie, kaum*. Ein einziges *nicht* dreht die Aussage um." },
+      { "kind": "mistake", "body": "Typische Falle: Der Beleg enthält das **Schlüsselwort** der Aussage (*aufhören*), also wirkt er passend. Lies den ganzen Satz, nicht nur das Wort." }
+    ],
+    "tags": ["beleg", "lesen", "textstelle"],
+    "source": "Eigene Übungsaufgabe nach dem Aufgabenformat MSA Deutsch (Textbeleg prüfen)",
+    "passage": "X_DE_EHRENAMT"
+  },
+  {
+    "id": "DE_L9_BELEG_SCHULBEGINN_1",
+    "subject": "DE",
+    "topicId": "DE_READ_EVIDENCE",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "Aussage: **Ein späterer Schulbeginn führt zu weniger Verspätungen.**\n\nWelche Textstelle **belegt** diese Aussage?",
+    "payload": {
+      "choices": [
+        "Absatz 3: „… berichtet von besseren Noten in den ersten beiden Stunden und weniger Verspätungen.“",
+        "Absatz 2: „Jugendliche werden abends später müde und wachen morgens später auf.“",
+        "Absatz 4: „Übermüdete Jugendliche sind gereizter und streiten häufiger.“",
+        "Absatz 6: „… kommt an einem späteren Schulbeginn kaum vorbei.“"
+      ]
+    },
+    "solution": { "correct_choice": "Absatz 3: „… berichtet von besseren Noten in den ersten beiden Stunden und weniger Verspätungen.“" },
+    "explanation": [
+      { "kind": "what", "title": "Beleg", "body": "Nur Absatz 3 nennt das Schlüsselwort **Verspätungen**, und zwar als Folge des späteren Beginns an der Schule in Niedersachsen („die ihren Unterricht seit 2019 um 8:50 Uhr beginnt“).\n\nAbsatz 2 erklärt die innere Uhr (eine **Ursache**, keine Folge), Absatz 4 die Stimmung, Absatz 6 ist das Fazit ohne konkreten Beleg." },
+      { "kind": "steps", "title": "Routine", "body": "1. Schlüsselwort der Aussage: *Verspätungen*.\n2. Im Text suchen: kommt nur in Absatz 3 vor.\n3. Prüfen, ob die Stelle wirklich die Aussage stützt: ja, *weniger Verspätungen* nach dem späteren Beginn." },
+      { "kind": "remember", "body": "Das **Schlüsselwort** der Aussage kommt oft wörtlich im Text vor. Suche zuerst danach, dann prüfe den Zusammenhang." }
+    ],
+    "tags": ["beleg", "lesen", "textstelle"],
+    "source": "Eigene Übungsaufgabe nach dem Aufgabenformat MSA Deutsch (Textbeleg)",
+    "passage": "X_DE_SCHULBEGINN"
+  },
+  {
+    "id": "DE_L9_BELEG_ZITIERREGELN",
+    "subject": "DE",
+    "topicId": "DE_READ_EVIDENCE",
+    "difficulty": 2,
+    "qtype": "CLOZE",
+    "prompt": "Ergänze die Regeln für einen **Textbeleg**.",
+    "payload": {
+      "text_with_blanks": "Ein Textbeleg wird ___ wiedergegeben, steht in ___ und braucht eine ___. Wenn du Wörter weglässt, kennzeichnest du das mit ___.",
+      "blanks": [
+        { "id": 1, "choices": ["wörtlich", "sinngemäß", "gekürzt"] },
+        { "id": 2, "choices": ["Anführungszeichen", "Sternchen", "Großbuchstaben"] },
+        { "id": 3, "choices": ["Zeilen- oder Absatzangabe", "Überschrift", "Unterschrift"] },
+        { "id": 4, "choices": ["(…)", "einem Komma", "einem Fragezeichen"] }
+      ]
+    },
+    "solution": { "answers": { "1": "wörtlich", "2": "Anführungszeichen", "3": "Zeilen- oder Absatzangabe", "4": "(…)" } },
+    "explanation": [
+      { "kind": "what", "body": "Ein Beleg zeigt der Prüferin, **wo genau** im Text etwas steht. Darum muss er **wörtlich** sein (sonst ist es deine Formulierung), in **Anführungszeichen** stehen (so erkennt man das Zitat) und eine **Zeilen- oder Absatzangabe** haben (so findet man die Stelle). Lässt du etwas weg, zeigst du das mit **(…)**, damit niemand denkt, der Satz sei so kurz gewesen." },
+      { "kind": "example", "body": "„62 Prozent finden die Regel gut“ (Satz 5)\n\n„Der Nachmittag wird kürzer, und Eltern (…) müssen ihre Kinder anders betreuen.“ (Abs. 5)" },
+      { "kind": "remember", "body": "Merksatz: **Wörtlich, Gänsefüßchen, Zeile, Pünktchen.** Fehlt eins davon, gibt es in der Prüfung Abzug." }
+    ],
+    "tags": ["beleg", "lesen", "zitieren"],
+    "source": "Eigene Übungsaufgabe nach dem Aufgabenformat MSA Deutsch (Zitierweise)"
+  },
+  {
+    "id": "DE_L9_BELEG_AUSLASSUNG",
+    "subject": "DE",
+    "topicId": "DE_READ_EVIDENCE",
+    "difficulty": 4,
+    "qtype": "MCQ",
+    "prompt": "Du willst aus Absatz 5 nur den Teil über die **Eltern** belegen. Der Satz lautet: *Der Nachmittag wird kürzer, und Eltern, die früh arbeiten, müssen ihre Kinder anders betreuen.*\n\nWelcher Beleg ist **korrekt**?",
+    "payload": {
+      "choices": [
+        "„Eltern, die früh arbeiten, müssen ihre Kinder anders betreuen“ (Abs. 5)",
+        "„Der Nachmittag wird kürzer, und Eltern müssen ihre Kinder anders betreuen“ (Abs. 5)",
+        "Eltern, die früh arbeiten, müssen ihre Kinder anders betreuen (Abs. 5)",
+        "„Eltern müssen ihre Kinder früh anders betreuen“ (Abs. 5)"
+      ]
+    },
+    "solution": { "correct_choice": "„Eltern, die früh arbeiten, müssen ihre Kinder anders betreuen“ (Abs. 5)" },
+    "explanation": [
+      { "kind": "what", "body": "Du darfst einen **Teil** eines Satzes zitieren, solange du den Teil **wörtlich** übernimmst und nichts **innerhalb** des Zitats weglässt. „Eltern, die früh arbeiten, müssen ihre Kinder anders betreuen“ steht genau so im Text.\n\n**Falsch**: Im Beleg mit *Der Nachmittag wird kürzer* fehlt *die früh arbeiten* mitten im Zitat, ohne (…). Der Beleg ohne Anführungszeichen ist kein Zitat. Der Beleg *früh anders betreuen* stellt Wörter um, das ist kein Zitat mehr." },
+      { "kind": "remember", "body": "Zitat **kürzen** geht so: Am Anfang oder Ende einfach abschneiden. **Mitten im Zitat** etwas weglassen nur mit **(…)**: „Der Nachmittag wird kürzer, und Eltern (…) müssen ihre Kinder anders betreuen.“" },
+      { "kind": "mistake", "body": "Typische Falle: Wörter weglassen und trotzdem Anführungszeichen setzen. Anführungszeichen versprechen: *So steht es da.*" }
+    ],
+    "tags": ["beleg", "lesen", "zitieren"],
+    "source": "Eigene Übungsaufgabe nach dem Aufgabenformat MSA Deutsch (Zitierweise, Auslassung)",
+    "passage": "X_DE_SCHULBEGINN"
+  },
+  {
+    "id": "DE_L9_BELEG_HANDYS_2",
+    "subject": "DE",
+    "topicId": "DE_READ_EVIDENCE",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Aussage: **Frau Voss sieht auch einen Nachteil der Handyregel.**\n\nWelche Textstelle **belegt** diese Aussage?",
+    "payload": {
+      "choices": [
+        "Satz 4: „In den Pausen sitzen aber viele allein über ihrem Bildschirm, statt miteinander zu reden.“",
+        "Satz 3: „Die Schülerinnen und Schüler sind im Unterricht deutlich konzentrierter“",
+        "Satz 5: „62 Prozent finden die Regel gut“",
+        "Satz 7: „Voss will im nächsten Schuljahr eine handyfreie Pause pro Tag testen.“"
+      ]
+    },
+    "solution": { "correct_choice": "Satz 4: „In den Pausen sitzen aber viele allein über ihrem Bildschirm, statt miteinander zu reden.“" },
+    "explanation": [
+      { "kind": "what", "title": "Beleg", "body": "Satz 4 ist Frau Voss' eigene Aussage (sie spricht in Satz 3 und 4) und nennt einen **Nachteil**: allein am Bildschirm statt miteinander reden. Das Signalwort **aber** zeigt den Gegensatz zum Vorteil in Satz 3.\n\nSatz 3 ist der **Vorteil**, Satz 5 die Umfrage des Schülerrats (nicht Frau Voss), Satz 7 ihr Plan, keine Bewertung." },
+      { "kind": "remember", "body": "Bei *X sieht / meint / sagt* musst du prüfen, **wer** an der Stelle spricht. Zitate stehen in Anführungszeichen; *sagt sie* verrät die Sprecherin." },
+      { "kind": "mistake", "body": "Typische Falle: Die Umfragezahl (Satz 5) als Meinung der Schulleiterin nehmen. Die Zahl stammt vom **Schülerrat**." }
+    ],
+    "tags": ["beleg", "lesen", "textstelle"],
+    "source": "Eigene Übungsaufgabe nach dem Aufgabenformat MSA Deutsch (Textbeleg)",
+    "passage": "X_DE_HANDYS"
+  },
+  {
+    "id": "DE_L9_ZUSF_SCHULKLEIDUNG_WAHL",
+    "subject": "DE",
+    "topicId": "DE_WRITE_SUMMARY",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "Welche **Zusammenfassung** des Kommentars ist korrekt, vollständig und sachlich?",
+    "payload": {
+      "choices": [
+        "Die Autorin spricht sich in ihrem Kommentar für die Einführung von Schulkleidung an der Gesamtschule Süd aus. Sie begründet das damit, dass Schulkleidung den Druck durch Markenkleidung nimmt, das Gemeinschaftsgefühl stärkt und morgens Zeit spart; die Sorge um die Persönlichkeit hält sie für unbegründet.",
+        "Die Autorin fordert Schulkleidung, und ich finde, sie hat völlig recht, weil Markenkleidung sowieso viel zu teuer ist.",
+        "Die Autorin schrieb: „Was ziehe ich an?“ Sie erzählte, dass Sneaker 200 Euro kosten und dass eine Schule in Hamburg eine Befragung gemacht hatte.",
+        "Der Kommentar handelt davon, dass Schulkleidung die Persönlichkeit einschränkt und deshalb von der Schulkonferenz abgelehnt werden sollte."
+      ]
+    },
+    "solution": { "correct_choice": "Die Autorin spricht sich in ihrem Kommentar für die Einführung von Schulkleidung an der Gesamtschule Süd aus. Sie begründet das damit, dass Schulkleidung den Druck durch Markenkleidung nimmt, das Gemeinschaftsgefühl stärkt und morgens Zeit spart; die Sorge um die Persönlichkeit hält sie für unbegründet." },
+    "explanation": [
+      { "kind": "what", "title": "Warum diese Zusammenfassung", "body": "Sie nennt **Textart** (Kommentar), **These** (für Schulkleidung), die **drei Argumente** (Markendruck, Gemeinschaft, Zeit) und den Umgang mit dem **Gegenargument**, alles im **Präsens** und in **eigenen Worten**.\n\n**Falsch**: *ich finde, sie hat völlig recht* ist deine Meinung. *schrieb, erzählte* ist Präteritum, dazu ein Zitat und nur Details (200 Euro, Hamburg). Die letzte Fassung verdreht die These: Die Autorin ist **für** Schulkleidung (Absatz 1 und 6)." },
+      { "kind": "remember", "body": "Zusammenfassung = **Satz 1**: Textart, Thema, Kernaussage/These. **Satz 2**: die wichtigsten Argumente. Regeln: Präsens, eigene Worte, keine Zitate, keine Meinung, keine Nebensächlichkeiten." },
+      { "kind": "mistake", "body": "Typische Falle: Details abschreiben (*200 Euro*, *zwanzig Minuten*) statt die Argumente zu **benennen** (*Markendruck*, *Zeitersparnis*). Die Zusammenfassung sagt, **was** der Text behauptet, nicht, wie er es ausschmückt." }
+    ],
+    "tags": ["zusammenfassung", "schreiben", "beurteilen"],
+    "source": "Eigene Übungsaufgabe nach dem Aufgabenformat MSA Deutsch (Zusammenfassung beurteilen)",
+    "passage": "X_DE_SCHULKLEIDUNG"
+  },
+  {
+    "id": "DE_L9_ZUSF_EHRENAMT_WAHL",
+    "subject": "DE",
+    "topicId": "DE_WRITE_SUMMARY",
+    "difficulty": 4,
+    "qtype": "MCQ",
+    "prompt": "Welche **Zusammenfassung** des Berichts ist korrekt, vollständig und sachlich?",
+    "payload": {
+      "choices": [
+        "Der Bericht handelt vom ehrenamtlichen Engagement Jugendlicher. Er zeigt am Beispiel der 16-jährigen Leonie, dass sich heute etwa jeder dritte Jugendliche freiwillig engagiert, nennt den Wunsch nach Sinn und Kontakten als Hauptgründe sowie Zeitmangel und fehlende Angebote als Hürden, auf die einige Bezirke mit Online-Börsen reagieren.",
+        "Leonie packt jeden Dienstag Gemüsekisten bei der Tafel und hat inzwischen zwei Freundinnen mitgebracht.",
+        "Der Bericht zeigt, dass Jugendliche heute viel zu wenig Zeit für andere haben und dass sich das dringend ändern muss.",
+        "Die Jugendforscherin Miriam Held sagte: „Viele wollen etwas Sinnvolles tun.“ Vor zehn Jahren war es jeder vierte, heute ist es jeder dritte."
+      ]
+    },
+    "solution": { "correct_choice": "Der Bericht handelt vom ehrenamtlichen Engagement Jugendlicher. Er zeigt am Beispiel der 16-jährigen Leonie, dass sich heute etwa jeder dritte Jugendliche freiwillig engagiert, nennt den Wunsch nach Sinn und Kontakten als Hauptgründe sowie Zeitmangel und fehlende Angebote als Hürden, auf die einige Bezirke mit Online-Börsen reagieren." },
+    "explanation": [
+      { "kind": "what", "title": "Warum diese Zusammenfassung", "body": "Sie nennt Textart und Thema, die **Kernaussage** (jeder dritte engagiert sich), die **Gründe** (Absatz 3), die **Hürden** (Absatz 4) und die **Reaktion** (Absatz 5), im Präsens und ohne Wertung. Leonie kommt nur als *Beispiel* vor, so wie im Text.\n\n**Falsch**: Der Leonie-Satz ist ein **Detail**, keine Zusammenfassung des ganzen Textes. *viel zu wenig Zeit, dringend ändern* ist eine **Wertung**, die der Text nicht enthält. Der letzte Vorschlag besteht aus einem **Zitat** im Präteritum und einer Zahl ohne Zusammenhang." },
+      { "kind": "remember", "body": "Prüfe eine Zusammenfassung mit drei Fragen: **Ganzer Text** oder nur ein Absatz? **Eigene Worte** oder Zitat? **Sachlich** oder Meinung?" },
+      { "kind": "mistake", "body": "Typische Falle: Die Einstiegsgeschichte (Leonie) für die Kernaussage halten. Reporter beginnen oft mit einem Einzelfall, die Kernaussage folgt danach (*Leonie ist kein Einzelfall.*)." }
+    ],
+    "tags": ["zusammenfassung", "schreiben", "beurteilen"],
+    "source": "Eigene Übungsaufgabe nach dem Aufgabenformat MSA Deutsch (Zusammenfassung beurteilen)",
+    "passage": "X_DE_EHRENAMT"
+  },
+  {
+    "id": "DE_L9_ZUSF_NICHT_DAZU",
+    "subject": "DE",
+    "topicId": "DE_WRITE_SUMMARY",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "Vier Sätze für eine Zusammenfassung des Textes. Welcher Satz gehört **nicht** hinein?",
+    "payload": {
+      "choices": [
+        "Ich persönlich würde auch viel lieber erst um neun Uhr anfangen.",
+        "Der Sachtext erklärt, warum ein späterer Schulbeginn für Jugendliche sinnvoll ist.",
+        "Als Gründe nennt er die verschobene innere Uhr, bessere Leistungen und eine bessere Stimmung.",
+        "Nachteile wie einen kürzeren Nachmittag hält der Text für lösbar."
+      ]
+    },
+    "solution": { "correct_choice": "Ich persönlich würde auch viel lieber erst um neun Uhr anfangen." },
+    "explanation": [
+      { "kind": "what", "body": "*Ich persönlich würde …* ist deine **eigene Meinung**. Eine Zusammenfassung gibt nur wieder, was **im Text** steht. Die anderen drei Sätze nennen die Kernaussage (Absatz 1), die drei Argumente (Absatz 2 bis 4) und die Nachteile mit Lösung (Absatz 5), alle sachlich und im Präsens." },
+      { "kind": "remember", "body": "In einer Zusammenfassung gibt es kein **ich finde**, **ich würde**, **meiner Meinung nach**. Deine Meinung kommt höchstens in eine **eigene Stellungnahme** danach, wenn die Aufgabe das verlangt." },
+      { "kind": "mistake", "body": "Typische Falle: *ich* auch dann schreiben, wenn man dem Text zustimmt. Zustimmung ist trotzdem Meinung." }
+    ],
+    "tags": ["zusammenfassung", "schreiben", "beurteilen"],
+    "source": "Eigene Übungsaufgabe nach dem Aufgabenformat MSA Deutsch (Zusammenfassung)",
+    "passage": "X_DE_SCHULBEGINN"
+  },
+  {
+    "id": "DE_L9_ZUSF_REIHENFOLGE",
+    "subject": "DE",
+    "topicId": "DE_WRITE_SUMMARY",
+    "difficulty": 4,
+    "qtype": "MATCH",
+    "prompt": "Die vier Sätze einer Zusammenfassung sind durcheinandergeraten. Ordne jedem Platz den passenden Satz zu.",
+    "payload": {
+      "left": ["Satz 1 (Einleitung)", "Satz 2", "Satz 3", "Satz 4 (Schluss)"],
+      "right": [
+        "Der Sachtext „Warum die Schule später beginnen sollte“ erklärt, dass Jugendliche besser lernen, wenn der Unterricht später anfängt.",
+        "Als ersten Grund nennt der Text die innere Uhr, die sich in der Pubertät nach hinten verschiebt.",
+        "Außerdem führt er bessere Leistungen und weniger Konflikte an, die eine Schule in Niedersachsen nach der Umstellung beobachtet hat.",
+        "Abschließend räumt der Text Nachteile für den Nachmittag und für Eltern ein, hält sie aber für lösbar."
+      ]
+    },
+    "solution": {
+      "pairs": [
+        ["Satz 1 (Einleitung)", "Der Sachtext „Warum die Schule später beginnen sollte“ erklärt, dass Jugendliche besser lernen, wenn der Unterricht später anfängt."],
+        ["Satz 2", "Als ersten Grund nennt der Text die innere Uhr, die sich in der Pubertät nach hinten verschiebt."],
+        ["Satz 3", "Außerdem führt er bessere Leistungen und weniger Konflikte an, die eine Schule in Niedersachsen nach der Umstellung beobachtet hat."],
+        ["Satz 4 (Schluss)", "Abschließend räumt der Text Nachteile für den Nachmittag und für Eltern ein, hält sie aber für lösbar."]
+      ]
+    },
+    "explanation": [
+      { "kind": "steps", "title": "Die Reihenfolge", "body": "1. **Einleitungssatz**: Textart, Titel, Kernaussage → *Der Sachtext „…“ erklärt, dass …*\n2. **Erstes Argument**: *Als ersten Grund nennt der Text …*\n3. **Weitere Argumente**: *Außerdem führt er … an*\n4. **Schluss**: *Abschließend räumt der Text … ein*\n\nDie Zusammenfassung folgt der **Reihenfolge des Textes**: Absatz 1 → Absatz 2 → Absatz 3 und 4 → Absatz 5." },
+      { "kind": "remember", "body": "**Verbindungswörter** verraten die Reihenfolge: *Als Erstes, zunächst* → *außerdem, zudem, darüber hinaus* → *abschließend, zuletzt, schließlich*. Der Einleitungssatz enthält immer Textart und Kernaussage." },
+      { "kind": "mistake", "body": "Typische Falle: Mit einem Detail beginnen (*Eine Schule in Niedersachsen …*). Der erste Satz muss den **ganzen Text** vorstellen." }
+    ],
+    "tags": ["zusammenfassung", "schreiben", "aufbau"],
+    "source": "Eigene Übungsaufgabe nach dem Aufgabenformat MSA Deutsch (Zusammenfassung ordnen)",
+    "passage": "X_DE_SCHULBEGINN"
+  },
+  {
+    "id": "DE_L9_ZUSF_CLOZE_SCHULKLEIDUNG",
+    "subject": "DE",
+    "topicId": "DE_WRITE_SUMMARY",
+    "difficulty": 2,
+    "qtype": "CLOZE",
+    "prompt": "Ergänze die Zusammenfassung des Kommentars.",
+    "payload": {
+      "text_with_blanks": "Der Kommentar ___ von der Frage, ob an der Gesamtschule Süd Schulkleidung eingeführt werden soll. Die Autorin vertritt die These, dass Schulkleidung ___. Sie begründet das unter anderem damit, dass ___.",
+      "blanks": [
+        { "id": 1, "choices": ["handelt", "handelte", "hat gehandelt"] },
+        { "id": 2, "choices": ["eine gute Idee ist", "die Persönlichkeit einschränkt", "zu teuer ist"] },
+        { "id": 3, "choices": ["der Druck durch Markenkleidung wegfällt", "die Schulkonferenz dafür ist", "alle einen Anzug tragen müssen"] }
+      ]
+    },
+    "solution": { "answers": { "1": "handelt", "2": "eine gute Idee ist", "3": "der Druck durch Markenkleidung wegfällt" } },
+    "explanation": [
+      { "kind": "what", "body": "**handelt**: Zusammenfassungen stehen im **Präsens**. **eine gute Idee ist**: Absatz 1: „Ich finde: Das ist eine gute Idee.“ **der Druck durch Markenkleidung wegfällt**: Absatz 2: „nimmt Schulkleidung den Druck, jeden Tag mit teurer Markenkleidung zu glänzen“.\n\n*Die Persönlichkeit einschränkt* ist das Gegenargument (Absatz 5), *zu teuer* steht nicht im Text, die Schulkonferenz soll erst noch beschließen (Absatz 6), und *niemand verlangt einen Anzug* (Absatz 5)." },
+      { "kind": "remember", "body": "Bausteine für den Einleitungssatz: *Der Text / Der Kommentar / Der Bericht* + *handelt von* / *thematisiert* / *beschreibt* + Thema. Dann: *Die Autorin vertritt die These, dass …* + *Sie begründet das damit, dass …*" },
+      { "kind": "mistake", "body": "Typische Falle: *handelte*. Der Text liegt vor dir und sagt es **jetzt**, also Präsens." }
+    ],
+    "tags": ["zusammenfassung", "schreiben", "formulieren"],
+    "source": "Eigene Übungsaufgabe nach dem Aufgabenformat MSA Deutsch (Zusammenfassung formulieren)",
+    "passage": "X_DE_SCHULKLEIDUNG"
+  },
+  {
+    "id": "DE_L9_ZUSF_CLOZE_EHRENAMT",
+    "subject": "DE",
+    "topicId": "DE_WRITE_SUMMARY",
+    "difficulty": 2,
+    "qtype": "CLOZE",
+    "prompt": "Ergänze die Zusammenfassung des Berichts.",
+    "payload": {
+      "text_with_blanks": "Der Bericht ___ von Jugendlichen, die sich ehrenamtlich engagieren. Laut Text engagiert sich heute etwa ___ Jugendliche regelmäßig; als häufigste Hürde nennt der Text ___.",
+      "blanks": [
+        { "id": 1, "choices": ["handelt", "handelte", "erzählte"] },
+        { "id": 2, "choices": ["jeder dritte", "jeder vierte", "jeder zweite"] },
+        { "id": 3, "choices": ["Zeitmangel", "fehlendes Interesse", "strenge Eltern"] }
+      ]
+    },
+    "solution": { "answers": { "1": "handelt", "2": "jeder dritte", "3": "Zeitmangel" } },
+    "explanation": [
+      { "kind": "what", "body": "**handelt**: Präsens. **jeder dritte**: Absatz 2: „engagiert sich etwa jeder dritte Jugendliche … regelmäßig freiwillig“; *jeder vierte* war es vor zehn Jahren. **Zeitmangel**: Absatz 4: „Am häufigsten nennen Jugendliche Zeitmangel“. *Fehlendes Interesse* und *strenge Eltern* stehen nicht im Text." },
+      { "kind": "mistake", "body": "Typische Falle: Die Zahl von **früher** (*jeder vierte*) mit der von **heute** verwechseln. Lies Zeitangaben genau: *Vor zehn Jahren war es noch …*" },
+      { "kind": "remember", "body": "Zahlen in der Zusammenfassung nur, wenn sie die **Kernaussage** tragen (hier: wie viele sich engagieren). Nebensächliche Zahlen (*2000 Befragte*, *16 Jahre*) bleiben draußen." }
+    ],
+    "tags": ["zusammenfassung", "schreiben", "formulieren"],
+    "source": "Eigene Übungsaufgabe nach dem Aufgabenformat MSA Deutsch (Zusammenfassung formulieren)",
+    "passage": "X_DE_EHRENAMT"
+  },
+  {
+    "id": "DE_L9_ZUSF_SATZ_T1",
+    "subject": "DE",
+    "topicId": "DE_WRITE_SUMMARY",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Zum Text *{{s_text}}*: Welcher Satz passt in eine **Zusammenfassung**?",
+    "payload": { "choices": ["{{s_a}}", "{{s_b}}", "{{s_c}}", "{{s_d}}"] },
+    "solution": { "correct_choice": "{{s_a}}" },
+    "explanation": [
+      { "kind": "what", "title": "Warum", "body": "{{s_hinweis}}" },
+      { "kind": "remember", "body": "Vier Regeln für die Zusammenfassung: **Präsens** (*Der Text zeigt*, nicht *zeigte*), **eigene Worte** (keine Anführungszeichen), **keine Meinung** (kein *ich finde*, *toll*, *Quatsch*), **Kernaussage statt Details**." },
+      { "kind": "mistake", "body": "Typische Falle: Das Präteritum, weil sich die Zusammenfassung wie ein Bericht über etwas Vergangenes anfühlt. Der Text liegt aber **vor dir**, also: *Der Text sagt …*" }
+    ],
+    "tags": ["zusammenfassung", "schreiben", "drill"],
+    "source": "Eigene Übungsaufgabe nach dem Aufgabenformat MSA Deutsch (Zusammenfassung, Merkmale)",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "s": {
+          "type": "pick",
+          "from": [
+            { "text": "Warum die Schule später beginnen sollte", "a": "Der Text erklärt, dass Jugendliche in der Pubertät abends später müde werden.", "b": "Ich finde, Jugendliche sollten einfach früher ins Bett gehen.", "c": "Im Text steht: „Das ist keine Faulheit, sondern Biologie.“", "d": "Der Text erklärte, dass Jugendliche in der Pubertät abends später müde wurden.", "hinweis": "Richtig ist der Satz im **Präsens**, in **eigenen Worten** und **ohne Meinung**. Falsch: *Ich finde …* (eigene Meinung), das wörtliche Zitat mit Anführungszeichen und der Satz im Präteritum (*erklärte, wurden*)." },
+            { "text": "Ein Pullover für alle?", "a": "Die Autorin spricht sich für Schulkleidung aus, weil sie den Druck durch Markenkleidung verringert.", "b": "Schulkleidung ist total sinnvoll, das sollte jede Schule so machen.", "c": "Die Autorin schreibt: „Ich finde: Das ist eine gute Idee.“", "d": "Die Autorin sprach sich für Schulkleidung aus, weil sie den Druck verringerte.", "hinweis": "Richtig: Präsens, eigene Worte, sachlich. Falsch: *total sinnvoll* ist eine Wertung; das Zitat gehört nicht in die Zusammenfassung; *sprach, verringerte* ist Präteritum." },
+            { "text": "Engagiert statt gelangweilt", "a": "Der Bericht stellt fest, dass sich etwa jeder dritte Jugendliche regelmäßig ehrenamtlich engagiert.", "b": "Es ist toll, dass so viele Jugendliche etwas für andere tun.", "c": "„Leonie ist kein Einzelfall“, heißt es im Bericht.", "d": "Leonie packte jeden Dienstag Gemüsekisten und brachte zwei Freundinnen mit.", "hinweis": "Richtig: sachliche Kernaussage im Präsens. Falsch: *toll* ist eine Wertung; das wörtliche Zitat; der Satz über Leonie ist ein Detail im Präteritum, keine Kernaussage." },
+            { "text": "Handys im Unterricht?", "a": "Der Text berichtet, dass die Handyregel an der Gesamtschule Nord gemischt bewertet wird.", "b": "Die Handyregel ist meiner Meinung nach viel zu streng.", "c": "Schulleiterin Voss sagt: „Die Schülerinnen und Schüler sind im Unterricht deutlich konzentrierter.“", "d": "62 Prozent fanden die Regel gut und 28 Prozent lehnten sie ab.", "hinweis": "Richtig: fasst die Kernaussage (*gemischte Bilanz*) sachlich im Präsens zusammen. Falsch: *meiner Meinung nach* (Meinung); wörtliches Zitat; die Prozentzahlen im Präteritum sind ein Detail." },
+            { "text": "Der letzte Bus", "a": "Die Erzählung handelt von Mara, die nachts den letzten Bus gerade noch erreicht.", "b": "Mara hätte einfach früher gehen sollen, dann wäre nichts passiert.", "c": "Im Text heißt es: „Hauptsache, sie war drin.“", "d": "Mara stand an der Haltestelle und sah auf die Anzeige „Linie 12, 23:40“.", "hinweis": "Richtig: Textart, Figur und Kern der Handlung im Präsens. Falsch: *hätte … sollen* ist eine Bewertung; das Zitat; der abgeschriebene erste Satz im Präteritum ist ein Detail." },
+            { "text": "Warum die Schule später beginnen sollte", "a": "Der Text nennt als Nachteil, dass der Nachmittag bei späterem Schulbeginn kürzer wird.", "b": "Ein kürzerer Nachmittag wäre mir egal, Hauptsache ausschlafen.", "c": "„Der Nachmittag wird kürzer“, heißt es im Text.", "d": "Der Text nannte als Nachteil, dass der Nachmittag kürzer wurde.", "hinweis": "Richtig: sachlich, Präsens, eigene Worte. Falsch: *wäre mir egal* ist Meinung; das Zitat; *nannte, wurde* ist Präteritum." },
+            { "text": "Engagiert statt gelangweilt", "a": "Laut Text reagieren einige Bezirke auf die Hürden mit Online-Börsen für kurze Einsätze.", "b": "Online-Börsen sind eine super Idee, das sollte es überall geben.", "c": "Im Text steht: „Die Nachfrage ist hoch.“", "d": "Vereine schrieben zum Beispiel eine Stunde Vorlesen im Seniorenheim aus.", "hinweis": "Richtig: Präsens, sachlich, mit *Laut Text* als Bezug. Falsch: *super Idee* ist Meinung; das Zitat; das Vorlesen im Seniorenheim ist ein Detail im Präteritum." },
+            { "text": "Ein Pullover für alle?", "a": "Die Autorin geht auf das Gegenargument ein, dass Schulkleidung die Persönlichkeit einschränke, und hält es für unbegründet.", "b": "Das Gegenargument mit der Persönlichkeit ist meiner Meinung nach Quatsch.", "c": "Sie schreibt: „Doch niemand verlangt einen Anzug.“", "d": "Die Autorin ging auf das Gegenargument ein und hielt es für unbegründet.", "hinweis": "Richtig: Präsens, sachlich; *einschränke* gibt die fremde Meinung in indirekter Rede wieder. Falsch: *Quatsch* ist Meinung; das Zitat; *ging, hielt* ist Präteritum." }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "DE_L9_ZUSF_EINLEITUNGSSATZ",
+    "subject": "DE",
+    "topicId": "DE_WRITE_SUMMARY",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "Welcher **Einleitungssatz** einer Zusammenfassung enthält alles Nötige: Textart, Thema und Kernaussage?",
+    "payload": {
+      "choices": [
+        "Der Sachtext „Warum die Schule später beginnen sollte“ erklärt, dass Jugendliche besser lernen, wenn der Unterricht später anfängt.",
+        "Der Text ist sehr interessant und handelt von der Schule.",
+        "In Deutschland beginnt der Unterricht meist um acht Uhr, an manchen Schulen sogar um halb acht.",
+        "Der Autor erzählte, dass Schlafforscher einen Fehler gefunden hatten."
+      ]
+    },
+    "solution": { "correct_choice": "Der Sachtext „Warum die Schule später beginnen sollte“ erklärt, dass Jugendliche besser lernen, wenn der Unterricht später anfängt." },
+    "explanation": [
+      { "kind": "what", "body": "Der richtige Satz nennt die **Textart** (Sachtext), den **Titel**, das **Thema** (späterer Schulbeginn) und die **Kernaussage** (besser lernen), im Präsens.\n\n*sehr interessant* ist eine Wertung, und *handelt von der Schule* ist zu ungenau. Der Satz mit *acht Uhr* ist der **abgeschriebene** erste Satz des Textes, keine Zusammenfassung. Der Satz mit *erzählte* steht im **Präteritum** und gibt die Kernaussage falsch wieder: Der Fehler ist der frühe Beginn, nicht etwas, das *gefunden* wurde." },
+      { "kind": "remember", "body": "Muster für den Einleitungssatz: *Der Sachtext/Kommentar/Bericht „Titel“ (von Autor) handelt von … / erklärt, dass … / spricht sich dafür aus, dass …*" },
+      { "kind": "mistake", "body": "Typische Falle: Den ersten Satz des Textes abschreiben. Der Text beginnt mit einem **Aufhänger**, nicht mit der Kernaussage." }
+    ],
+    "tags": ["zusammenfassung", "schreiben", "formulieren"],
+    "source": "Eigene Übungsaufgabe nach dem Aufgabenformat MSA Deutsch (Zusammenfassung, Einleitungssatz)",
+    "passage": "X_DE_SCHULBEGINN"
+  },
+  {
+    "id": "DE_L9_ZUSF_HANDYS_WAHL",
+    "subject": "DE",
+    "topicId": "DE_WRITE_SUMMARY",
+    "difficulty": 4,
+    "qtype": "MCQ",
+    "prompt": "Welche **Zusammenfassung** in zwei Sätzen ist korrekt, vollständig und sachlich?",
+    "payload": {
+      "choices": [
+        "Der Text berichtet über die Handyregel der Gesamtschule Nord, nach der Handys nur in den Pausen erlaubt sind. Die Schulleiterin zieht eine gemischte Bilanz: Im Unterricht sind die Schüler konzentrierter, in den Pausen aber oft allein am Bildschirm; die Mehrheit der Schüler findet die Regel trotzdem gut.",
+        "Der Text handelt von Handys. Die Schulleiterin findet, dass Handys schlecht sind, und will sie an der ganzen Schule verbieten.",
+        "Karin Voss sagte: „Die Schülerinnen und Schüler sind im Unterricht deutlich konzentrierter.“ 62 Prozent fanden die Regel gut.",
+        "Ich finde die Regel gut, weil Handys im Unterricht nur stören. Die handyfreie Pause ist aber übertrieben."
+      ]
+    },
+    "solution": { "correct_choice": "Der Text berichtet über die Handyregel der Gesamtschule Nord, nach der Handys nur in den Pausen erlaubt sind. Die Schulleiterin zieht eine gemischte Bilanz: Im Unterricht sind die Schüler konzentrierter, in den Pausen aber oft allein am Bildschirm; die Mehrheit der Schüler findet die Regel trotzdem gut." },
+    "explanation": [
+      { "kind": "what", "title": "Warum diese Zusammenfassung", "body": "Satz 1: Thema und Regel (Satz 1 des Textes). Satz 2: die **Kernaussage** *gemischte Bilanz* (Satz 2) mit Vorteil (Satz 3), Nachteil (Satz 4) und Umfrage (Satz 5), alles im Präsens und in eigenen Worten.\n\n**Falsch**: *Handys sind schlecht, ganz verbieten* steht nicht im Text (sie will nur **eine** handyfreie Pause testen, Satz 7). Der Zitat-Vorschlag ist wörtlich übernommen, im Präteritum und lässt den Nachteil weg. *Ich finde* ist Meinung." },
+      { "kind": "remember", "body": "Bei einem Text mit **Pro und Kontra** muss die Zusammenfassung **beide Seiten** nennen. Wer nur den Vorteil nennt, fasst nicht zusammen, sondern wählt aus." },
+      { "kind": "mistake", "body": "Typische Falle: Die Zusammenfassung *schärfer* machen als den Text (*verbieten* statt *testen*). Übertreibungen sind Fehler, auch wenn sie kürzer sind." }
+    ],
+    "tags": ["zusammenfassung", "schreiben", "beurteilen"],
+    "source": "Eigene Übungsaufgabe nach dem Aufgabenformat MSA Deutsch (Zusammenfassung beurteilen)",
+    "passage": "X_DE_HANDYS"
+  },
+  {
+    "id": "DE_L9_KERN_SCHULBEGINN",
+    "subject": "DE",
+    "topicId": "DE_READ_CORE",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "Was ist die **Kernaussage** des Sachtextes?",
+    "payload": {
+      "choices": [
+        "Jugendliche lernen besser, wenn der Unterricht später beginnt.",
+        "Jugendliche sind morgens faul und sollten früher schlafen gehen.",
+        "Eine Schule in Niedersachsen beginnt seit 2019 um 8:50 Uhr.",
+        "Eltern, die früh arbeiten, brauchen eine Frühbetreuung."
+      ]
+    },
+    "solution": { "correct_choice": "Jugendliche lernen besser, wenn der Unterricht später beginnt." },
+    "explanation": [
+      { "kind": "what", "title": "Kernaussage", "body": "Absatz 1: „Ihre Botschaft ist klar: Jugendliche lernen besser, wenn der Schultag später anfängt.“ Absatz 6 wiederholt das als Fazit. Die Absätze 2 bis 4 liefern die drei Gründe dafür.\n\n*Faul* widerspricht dem Text („Das ist keine Faulheit, sondern Biologie“, Absatz 2). Die Schule in Niedersachsen ist ein **Beispiel** (Absatz 3), die Frühbetreuung ein **Detail** aus Absatz 5." },
+      { "kind": "remember", "body": "Die Kernaussage steht oft am **Anfang** (nach dem Aufhänger) oder am **Ende** (Fazit). Sie gilt für den **ganzen** Text; ein Satz, der nur zu einem Absatz passt, ist ein Detail." },
+      { "kind": "mistake", "body": "Typische Falle: Das auffälligste **Beispiel** (eine konkrete Schule, eine Uhrzeit) für die Kernaussage halten. Beispiele belegen die Kernaussage, sie sind nicht die Kernaussage." }
+    ],
+    "tags": ["kernaussage", "lesen", "sachtext"],
+    "source": "Eigene Übungsaufgabe nach dem Aufgabenformat MSA Deutsch (Kernaussage)",
+    "passage": "X_DE_SCHULBEGINN"
+  },
+  {
+    "id": "DE_L9_INTENTION_EHRENAMT",
+    "subject": "DE",
+    "topicId": "DE_READ_CORE",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "Welche **Absicht** verfolgt der Bericht?",
+    "payload": {
+      "choices": [
+        "informieren: Er stellt Zahlen, Gründe und Hürden sachlich dar.",
+        "appellieren: Er fordert alle Jugendlichen auf, sich zu engagieren.",
+        "unterhalten: Er erzählt eine spannende Geschichte über Leonie.",
+        "kritisieren: Er wirft den Bezirken vor, zu wenig zu tun."
+      ]
+    },
+    "solution": { "correct_choice": "informieren: Er stellt Zahlen, Gründe und Hürden sachlich dar." },
+    "explanation": [
+      { "kind": "what", "body": "Der Text nennt **Zahlen** (jeder dritte, 2000 Befragte), zitiert eine **Fachfrau** (Miriam Held) und beschreibt Gründe und Hürden **ohne Wertung**. Es gibt keine Aufforderung (*Engagiert euch!*), keine Ansprache (*du*) und keine Kritik; die Bezirke werden sogar positiv erwähnt (Absatz 5). Leonie ist nur der **Einstieg**, keine spannende Handlung." },
+      { "kind": "remember", "body": "Textabsichten: **informieren** (Fakten, Zahlen, Zitate von Fachleuten, neutral), **appellieren** (Aufforderung, direkte Ansprache), **unterhalten** (Spannung, Humor), **kritisieren/überzeugen** (Wertungen, *ich finde*, *sollte*)." },
+      { "kind": "mistake", "body": "Typische Falle: Weil ein Bericht mit einer **Person** beginnt, ihn für eine Erzählung halten. Reporter nutzen Einzelfälle als Einstieg in einen Sachtext." }
+    ],
+    "tags": ["intention", "lesen", "sachtext"],
+    "source": "Eigene Übungsaufgabe nach dem Aufgabenformat MSA Deutsch (Textabsicht)",
+    "passage": "X_DE_EHRENAMT"
+  }
+]

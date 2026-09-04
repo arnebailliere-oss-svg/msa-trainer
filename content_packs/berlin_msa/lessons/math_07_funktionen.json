@@ -7,7 +7,8 @@
       "MATH_FUNC_PROP",
       "MATH_FUNC_LINEAR_GRAPH",
       "MATH_FUNC_LINEAR_TABLE",
-      "MATH_FUNC_QUAD"
+      "MATH_FUNC_QUAD",
+      "MATH_FUNC_EXP"
     ],
     "title": "Zuordnungen und Funktionen",
     "intro": "In den letzten Jahren gab es in jeder Prüfung mindestens eine Aufgabe zu funktionalen Zusammenhängen — weniger Fachbegriffe, mehr Verstehen und Anwenden: Tabelle, Graph und Gleichung ineinander übersetzen.",
@@ -96,6 +97,12 @@
         "kind": "example",
         "title": "Beispiel: f(x) = x² − 7x + 12",
         "body": "**Nullstellen** (pq-Formel): $x_{1,2} = 3{,}5 \\pm \\sqrt{12{,}25 - 12} = 3{,}5 \\pm 0{,}5 \\Rightarrow x_1 = 4,\\; x_2 = 3$\n\n**Scheitelpunkt**: $x_S = \\frac{4 + 3}{2} = 3{,}5$, $y_S = 3{,}5^2 - 7 \\cdot 3{,}5 + 12 = -0{,}25 \\Rightarrow S(3{,}5 \\,|\\, -0{,}25)$"
+      },
+      {
+        "kind": "formula",
+        "title": "Exponentielles Wachstum und Abnahme",
+        "body": "Bei **linearem** Wachstum kommt in jedem Schritt die **gleiche Zahl dazu** (z. B. + 50 € pro Monat). Bei **exponentiellem** Wachstum wird in jedem Schritt mit dem **gleichen Faktor multipliziert** (z. B. · 1,05 pro Jahr) — deshalb wird es immer schneller.\n\n**Wachstumsfaktor** $q = 1 + \\frac{p}{100}$ bei Zunahme um $p\\,\\%$, $q = 1 - \\frac{p}{100}$ bei Abnahme. Wert nach $n$ Schritten: $B(n) = B_0 \\cdot q^n$ — $B_0$ ist der Startwert. In einer Tabelle erkennst du exponentielles Wachstum daran, dass **Wert : Vorgängerwert** immer gleich ist.\n\nBeispiel: 800 € werden zu 3 % Zinseszins angelegt. $q = 1{,}03$, nach 5 Jahren: $800 \\cdot 1{,}03^5 \\approx 927{,}42$ €. Eine Bakterienkultur verdoppelt sich jede Stunde: $N(t) = 80 \\cdot 2^t$. Ein Auto verliert jährlich 20 % an Wert: $W(t) = 15\\,000 \\cdot 0{,}8^t$.\n\n**Merke:** linear = **plus** die gleiche Zahl, exponentiell = **mal** der gleiche Faktor. $q > 1$ Wachstum, $q < 1$ Abnahme. Der Faktor steht **hoch** $n$, nicht mal $n$.",
+        "primer": "P_MATH_FUNKTION"
       },
       {
         "kind": "mistake",

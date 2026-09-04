@@ -1,0 +1,193 @@
+[
+  {
+    "id": "P_EN_READING",
+    "subject": "EN",
+    "title": "Reading und Listening von Anfang an",
+    "teaser": "Was die drei Reading-Aufgaben von dir wollen, an echten Prüfungsaufgaben Schritt für Schritt gelöst, dazu die drei Hörfallen",
+    "hook": "Reading heißt lesen, Listening heißt hören. In der Prüfung musst du nichts übersetzen und keine Regel aufsagen. Du musst **Informationen finden**. Das ist eine Technik, keine Begabung. Wir üben sie an echten Aufgaben aus der Prüfung 2024, ganz langsam, eine Tafel nach der anderen.",
+    "outro": "Aufgabe lesen, Wünsche oder Schlüsselwörter markieren, die Stelle finden, genau vergleichen. Und nie eine Aufgabe leer lassen. Du hast gerade drei echte Prüfungsaufgaben gelöst. Jetzt die Wörter, dann das Quiz.",
+    "steps": [
+      {
+        "title": "Was die Prüfung von dir will",
+        "body": "**Reading**: Du bekommst Texte und dazu Aufgaben.\n\n**Listening**: Du hörst Texte, jeden **zweimal**, und dazu Aufgaben.\n\nKeine Grammatikfragen. Keine Übersetzung.",
+        "say": "Es gibt drei Reading-Aufgaben, und sie kommen jedes Jahr in derselben Form. Wir schauen uns jede an: erst, wie sie aussieht, dann, wie du sie löst."
+      },
+      {
+        "title": "Aufgabe 1 sieht so aus",
+        "body": "Fünf **Personen**, sieben **Angebote** (A bis G).\n\n*Hei-Lin is into nature and photography. She is not exactly a sportswoman. After a tour in the woods, she would like to taste the flavors of Quebec City.*\n\nWelches Angebot passt zu Hei-Lin?",
+        "say": "Das ist eine echte Aufgabe aus der Prüfung 2024. Bevor wir sie lösen, müssen wir wissen, was in so einem Personentext eigentlich drinsteckt."
+      },
+      {
+        "title": "Was ist ein Wunsch?",
+        "body": "Jeder Satz über eine Person versteckt einen **Wunsch**: etwas, das sie will oder nicht will.\n\nHei-Lin:\n\n1. **nature and photography**\n2. **not a sportswoman** → nichts Anstrengendes\n3. **taste the flavors** → gutes Essen",
+        "say": "Drei Sätze, drei Wünsche. Ich habe sie dir markiert. In der Prüfung markierst du sie mit dem Stift, sonst vergisst du einen."
+      },
+      {
+        "title": "Was ist ein Angebot?",
+        "body": "Ein Angebot ist ein kleiner **Werbetext**. Er verrät, für wen er gemacht ist.\n\n*F) Electric fat bike winter tour: experiencing **winter beauty**, plenty of opportunities to **stop for photos**. **Regardless of your fitness level**, the electric motor makes it easy.*",
+        "say": "Lies ein Angebot mit der Frage: Für wen ist das? Die fett gedruckten Wörter sind die Hinweise. Ein Angebot mit Fotos und ohne Anstrengung ist für jemanden, der fotografieren will und nicht sportlich ist."
+      },
+      {
+        "title": "Wunsch trifft Angebot",
+        "body": "Hei-Lin: *nature and photography* ↔ F: *winter beauty, stop for photos*\n\nHei-Lin: *not a sportswoman* ↔ F: *regardless of your fitness level*\n\n**Zwei Treffer. Hei-Lin → F.**",
+        "say": "Siehst du, was ich getan habe? Ich habe nicht geraten. Ich habe auf Wörter gezeigt. Das heißt belegen: Ich kann beweisen, warum F passt."
+      },
+      {
+        "title": "Die Falle: ein Wort passt, der Rest nicht",
+        "body": "*C) Ski-shoeing tour: peaceful **forest** landscapes, keep watch for **wildlife** … a mix that provides **intense exercise** … for people who are not afraid of a **true physical challenge**.*\n\nNature? Ja. Aber: **Hei-Lin ist keine Sportlerin.**\n\nAlso **nicht C**.",
+        "say": "Ein Wort allein reicht nie. Forest und wildlife klingen nach Hei-Lin. Aber C will Leute, die eine Herausforderung suchen. Ein Wunsch passt, einer passt nicht. Dann ist es das falsche Angebot."
+      },
+      {
+        "title": "Jetzt du: Frank",
+        "body": "*Frank is touring Canada **alone**. He wants to be around **other athletes**, **test his limits** and **explore the wild** around the city.*\n\n**C)** Ski-shoeing tour: *intense exercise, small group, true physical challenge, National Park*\n\n**D)** Virtual reality tour: *3D movie, learn about the city's past, fun for the whole family*",
+        "say": "Franks Wünsche sind schon markiert. Such die Wörter in C und in D. Welches Angebot kannst du belegen? Entscheide dich, dann klick auf Weiter."
+      },
+      {
+        "title": "Auflösung: Frank",
+        "body": "*other athletes, test his limits* ↔ C: *true physical challenge, intense exercise*\n\n*explore the wild* ↔ C: *National Park*\n\nD sagt *for the whole family*. Frank reist allein und will Sport. **Frank → C.**",
+        "say": "C, und du kannst jeden Wunsch mit einem Wort aus dem Angebot belegen. Das ist der ganze Unterschied zwischen Raten und Lösen."
+      },
+      {
+        "title": "Aufgabe 2 sieht so aus",
+        "body": "Ein kurzer Text: ein Schild, ein Zettel, eine Durchsage.\n\n*Hull Trains, passenger information: On-board catering is not available with standard class seats. First-class passengers may order from the menu at their seat.*\n\nDazu vier Sätze. **Genau einer** sagt dasselbe wie der Text.",
+        "say": "Das ist die zweite Aufgabe der Prüfung. Bevor du die vier Sätze liest, stell dem Text eine Frage. Welche, zeige ich dir auf der nächsten Tafel."
+      },
+      {
+        "title": "Was will der Text?",
+        "body": "Jedes Schild hängt aus einem **Grund**:\n\n- **warnen**: *danger, beware, careful*\n- **verbieten**: *do not, no, only*\n- **informieren**: *open, closed, not available*\n- **Bedingung stellen**: *only if, unless, first*\n\nHull Trains: *not available, may order* → **informieren**",
+        "say": "Frag zuerst: Warum hängt der Text da? Ein Text, der informiert, warnt nicht und verbietet nichts. Damit fallen schon Antworten weg."
+      },
+      {
+        "title": "Dasselbe in anderen Worten",
+        "body": "Text: *catering is **not available** with **standard class** seats*\n\nSatz a: *refreshments are **not available for everyone** on board*\n\n**catering = refreshments** · **standard class = nicht alle**\n\n→ gleiche Bedeutung, andere Wörter. **a ist richtig.**",
+        "say": "Die richtige Antwort wiederholt den Text fast nie wörtlich. Sie sagt es anders. Du vergleichst die Bedeutung, nicht die Buchstaben."
+      },
+      {
+        "title": "Die Falle: ein geklautes Wort",
+        "body": "Satz d: *Passengers get a **free coffee** when upgrading to first class.*\n\n**first class** steht im Text. **free coffee** steht nirgends.\n\n→ **falsch**, obwohl ein Wort passt.",
+        "say": "Falsche Antworten klauen gern ein Wort aus dem Text und bauen etwas Erfundenes darum. Wenn der Text es nicht sagt, ist es falsch. Egal, wie logisch es klingt."
+      },
+      {
+        "title": "Jetzt du: der Zettel",
+        "body": "*Note on an office door: Back in 10 minutes. Or 20. Honestly, I have the time management skills of a carrot.*\n\nThe person who wrote this note …\n\n**a)** is struggling to organize themselves.\n**b)** is asking for help with their work.\n**c)** will be back after lunch.",
+        "say": "Der Zettel ist lustig gemeint. Eine Karotte kann nichts planen. Was sagt die Person über sich selbst? Entscheide dich, dann Weiter."
+      },
+      {
+        "title": "Auflösung: der Zettel",
+        "body": "**a.** *time management skills of a carrot* = ich kann mich selbst nicht organisieren.\n\nb: Niemand bittet um Hilfe.\nc: *after lunch* steht nicht im Text.",
+        "say": "Selbstironie kommt in dieser Aufgabe gern vor. Der Text meint das Gegenteil von Lob. Wer das erkennt, hat den Punkt."
+      },
+      {
+        "title": "Aufgabe 3 sieht so aus",
+        "body": "Ein **langer Artikel**, oft eine ganze Seite, mit nummerierten Absätzen (1) bis (8).\n\nDazu Fragen wie:\n\n*17. Why do many people volunteer in poor countries?*\n\nmit vier Antworten zum Ankreuzen.",
+        "say": "Der Text ist lang. Wichtig: Du musst ihn nicht ganz verstehen. Du musst Stellen finden. Und dafür gibt es eine Reihenfolge, die ich dir jetzt zeige."
+      },
+      {
+        "title": "Zuerst die Frage, dann der Text",
+        "body": "*17. Why do many people **volunteer** in **poor countries**?*\n\nBevor du den Artikel liest: Frage lesen, wichtige Wörter markieren.\n\n**volunteer** · **poor countries** · **why** (= ein Grund wird gesucht)",
+        "say": "Lies die Frage, bevor du den Text liest. Dann weißt du, wonach du suchst. Wer erst den ganzen Text liest, hat die Hälfte wieder vergessen, wenn die Fragen kommen."
+      },
+      {
+        "title": "Schlüsselwort: Was ist das?",
+        "body": "Ein **Schlüsselwort** ist ein Wort aus der Frage, das wahrscheinlich auch im Text steht.\n\nGute Schlüsselwörter: **Nomen und Namen** → *volunteer, countries, Biddle, Tanzania*\n\nSchlechte: *the, is, of, many* → stehen überall.",
+        "say": "Nomen und Namen sind Schlüsselwörter. Die kleinen Wörter helfen dir nicht, die stehen in jedem Satz."
+      },
+      {
+        "title": "Die Stelle finden: Scanning",
+        "body": "Lass die Augen über den Text laufen und such **nur** nach *volunteer* und *poor*.\n\nAbsatz (1): *millions of people … travel to **poor countries**, hoping to **do good** … perhaps even to **improve their CV** … all seek **personal growth***\n\n**Gefunden.** Jetzt erst genau lesen.",
+        "say": "Das heißt scannen: wie eine Nummer in einer Liste suchen. Du liest nicht, du suchst. Erst wenn du die Stelle hast, liest du den Satz Wort für Wort."
+      },
+      {
+        "title": "Genau vergleichen",
+        "body": "**a)** *to do good and improve their CV* ↔ Text: *hoping to do good … improve their CV* ✓\n\n**b)** *to earn money* → Text: sie **bezahlen** dafür ✗\n\n**c)** *because charities force them* → steht nicht im Text ✗",
+        "say": "Jetzt vergleichst du jede Antwort mit dem Satz aus dem Text. Passt es Wort für Wort in der Bedeutung? Ankreuzen. Steht es nicht da oder sagt der Text das Gegenteil? Weg damit."
+      },
+      {
+        "title": "Jetzt du: Frage 18",
+        "body": "*18. Where does the word „voluntourism“ come from?*\n\nAbsatz (2): *Voluntourism is an **outgrowth of the ecotourism movement** of the 1990s. According to Pippa Biddle, author of a book on voluntourism, travellers rebelled against package trips …*\n\n**a)** from the ecotourism movement of the 1990s\n**b)** from a book by Pippa Biddle\n**c)** from package trips and resorts",
+        "say": "Schlüsselwörter: voluntourism und come from. Die Stelle habe ich dir schon gesucht. Welche Antwort kannst du belegen? Dann Weiter."
+      },
+      {
+        "title": "Auflösung: Frage 18",
+        "body": "**a.** *outgrowth of the ecotourism movement* = daraus gewachsen = kommt daher.\n\nb: Biddle **schreibt** über das Wort, sie hat es nicht erfunden.\nc: Gegen package trips haben die Reisenden **rebelliert**.",
+        "say": "a. Und wieder: anderes Wort, gleiche Bedeutung. Outgrowth heißt Auswuchs, etwas, das aus etwas anderem gewachsen ist. Antwort b klaut nur einen Namen aus dem Text."
+      },
+      {
+        "title": "Listening: was anders ist",
+        "body": "Beim Hören kannst du **nicht zurückblättern**.\n\nDafür: Du bekommst **Zeit**, die Aufgaben vorher zu lesen. Und du hörst jeden Text **zweimal**.\n\n1. Hören: grob. 2. Hören: genau.",
+        "say": "Nutze die Lesezeit vor dem Hören. Wenn du weißt, dass eine Uhrzeit gesucht wird, hörst du sie auch. Wer nicht weiß, wonach er hört, hört nichts."
+      },
+      {
+        "title": "Die drei Hörfallen",
+        "body": "**thir**teen (13) ≠ **thir**ty (30): bei *-teen* liegt die Betonung **hinten**\n\n**half past ten** = 10:30, **nicht** halb zehn!\n\n**oh** = 0: *oh-seven-seven-oh*",
+        "say": "An diesen drei Stellen gehen jedes Jahr Punkte verloren. Sag sie dir einmal laut vor: thir-TEEN, half past ten ist halb elf, oh ist null."
+      },
+      {
+        "title": "Jetzt du: die Durchsage",
+        "body": "Du hörst:\n\n*„The train to Leeds leaves at half past nine from platform fourteen.“*\n\nAufgabe: **Time: ___** · **Platform: ___**",
+        "say": "Wann fährt der Zug? Von welchem Gleis? Sag es dir, dann Weiter."
+      },
+      {
+        "title": "Auflösung: die Durchsage",
+        "body": "Time: **9:30** (nicht 8:30)\n\nPlatform: **14** (four-TEEN, nicht forty)",
+        "say": "Halb zehn wäre falsch, half past nine ist halb zehn auf Deutsch, also 9:30. Und fourteen erkennst du an der Betonung hinten."
+      },
+      {
+        "title": "Deine Routine, bei jeder Aufgabe",
+        "body": "1. **Aufgabe lesen**: Wünsche oder Schlüsselwörter markieren\n\n2. **Stelle finden**: lesen → scannen, hören → aufpassen\n\n3. **Genau vergleichen**: Bedeutung, nicht Wörter. Zahlen, Namen, *all / some / only*",
+        "say": "Drei Schritte, immer dieselben. Und wenn du unsicher bist: Kreuz trotzdem etwas an. Es gibt keine Minuspunkte, aber eine leere Aufgabe bringt sicher nichts."
+      }
+    ],
+    "vocab": [
+      { "term": "match", "plain": "Zuordnen: Person und Angebot zusammenbringen.", "example": "Match the people with the tours." },
+      { "term": "wish", "plain": "Wunsch: das, was eine Person will oder nicht will. Steckt in jedem Satz über sie.", "example": "not a sportswoman → nichts Anstrengendes" },
+      { "term": "offer", "plain": "Angebot: ein kleiner Werbetext, der verrät, für wen er gemacht ist.", "example": "regardless of your fitness level" },
+      { "term": "prove / belegen", "plain": "Auf das Wort zeigen, das die Antwort beweist. Nicht raten.", "example": "photos ↔ stop for photos" },
+      { "term": "sign / notice", "plain": "Schild, Aushang, Zettel: der kurze Text in Aufgabe 2.", "example": "Note on an office door" },
+      { "term": "statement", "plain": "Aussage: einer der vier Sätze, von denen genau einer stimmt.", "example": "The person is struggling to organize themselves." },
+      { "term": "key word", "plain": "Schlüsselwort: ein Nomen oder Name aus der Frage, den du im Text suchst.", "example": "volunteer, poor countries" },
+      { "term": "scan", "plain": "Gezielt nach einem Wort suchen, ohne zu lesen. Wie eine Nummer in einer Liste.", "example": "Scan the text for „volunteer“." },
+      { "term": "not in the text", "plain": "Steht nicht da. Klingt vielleicht logisch, ist trotzdem falsch.", "example": "free coffee" },
+      { "term": "twice", "plain": "Zweimal: so oft hörst du jeden Hörtext.", "example": "You will hear the text twice." }
+    ],
+    "quiz": [
+      {
+        "prompt": "Hei-Lin *is not exactly a sportswoman*. Welches Wort aus Angebot F belegt, dass F trotzdem passt?",
+        "choices": ["regardless of your fitness level", "true physical challenge", "minimum age is 18", "for the whole family"],
+        "correct": "regardless of your fitness level",
+        "explain": "Egal wie fit du bist: Genau das braucht jemand, der nicht sportlich ist. Physical challenge wäre das Gegenteil."
+      },
+      {
+        "prompt": "Schild: *No food or drink beyond this point.* Was will der Text?",
+        "choices": ["verbieten", "warnen", "werben", "informieren, wann es öffnet"],
+        "correct": "verbieten",
+        "explain": "No … = etwas ist nicht erlaubt. Das ist ein Verbot, keine Warnung vor Gefahr."
+      },
+      {
+        "prompt": "Text: *Last entry 4.30 pm.* Welche Aussage sagt dasselbe in anderen Worten?",
+        "choices": ["You cannot go in after 4.30 pm.", "The museum opens at 4.30 pm.", "Tickets cost more after 4.30 pm.", "The museum is closed on Mondays."],
+        "correct": "You cannot go in after 4.30 pm.",
+        "explain": "Last entry = letzter Einlass. Danach kommt niemand mehr rein. Die anderen Sätze erfinden Dinge, die nicht im Text stehen."
+      },
+      {
+        "prompt": "Frage: *How many students slept better?* Welche Wörter suchst du im Text?",
+        "choices": ["students, slept better", "how, many", "the, did", "better, the"],
+        "correct": "students, slept better",
+        "explain": "Nomen und wichtige Verben sind Schlüsselwörter. How many verrät dir nur: Eine Zahl wird gesucht."
+      },
+      {
+        "prompt": "Du hörst *half past ten*. Welche Uhrzeit ist das?",
+        "choices": ["10:30", "9:30", "10:15", "11:30"],
+        "correct": "10:30",
+        "explain": "half past = eine halbe Stunde nach der genannten Stunde. Nicht wie im Deutschen halb zehn."
+      },
+      {
+        "prompt": "Bei einer Aufgabe bist du unsicher. Was tust du?",
+        "choices": ["Trotzdem ankreuzen, es gibt keine Minuspunkte", "Leer lassen", "Zwei Antworten ankreuzen", "Den Text noch dreimal lesen"],
+        "correct": "Trotzdem ankreuzen, es gibt keine Minuspunkte",
+        "explain": "Falsche Antworten kosten nichts. Eine leere Aufgabe bringt sicher keinen Punkt."
+      }
+    ],
+    "source": "Beispiele aus MSA Berlin 2024 Englisch, Reading Part 1 (Quebec), Part 2 (Hull Trains, office note), Part 3 (Voluntourism); Aufbau nach Prüfungshefte MSA Englisch Berlin 2026"
+  }
+]

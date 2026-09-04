@@ -6,7 +6,8 @@
     "alsoFor": [
       "MATH_ALG_TERMS_SIMPLIFY",
       "MATH_ALG_BRACKETS",
-      "MATH_ALG_EQU_WORD"
+      "MATH_ALG_EQU_WORD",
+      "MATH_ALG_EQU_QUAD"
     ],
     "title": "Terme und Gleichungen",
     "primer": "P_MATH_TERME",

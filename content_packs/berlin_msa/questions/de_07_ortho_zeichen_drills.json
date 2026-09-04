@@ -1,0 +1,1186 @@
+[
+  {
+    "id": "DE_O7_SS_SZ_SATZ_MCQ_T1",
+    "subject": "DE",
+    "topicId": "DE_ORTHO_SS_SZ",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "Welcher Satz ist richtig geschrieben? Achte auf **ss** und **ß**.",
+    "payload": { "choices": ["{{s_a}}", "{{s_b}}", "{{s_c}}", "{{s_d}}"] },
+    "solution": { "correct_choice": "{{s_a}}" },
+    "explanation": [
+      { "kind": "steps", "title": "Wort für Wort prüfen", "body": "Sprich jedes Wort mit s-Laut laut aus und achte auf den Vokal davor.\n\n{{s_hinweis}}" },
+      { "kind": "remember", "body": "Nach **kurzem** Vokal: **ss** (*Klasse, Kuss, wissen, dass*). Nach **langem** Vokal oder **Doppellaut** (ei, au, eu, ie): **ß** (*Straße, Fuß, heiß, draußen, fließen*). Kurz und knapp → ss, lang gezogen → ß." },
+      { "kind": "mistake", "body": "„daß“, „muß“ und „Schluß“ sind **alte** Schreibweisen von vor der Rechtschreibreform. Heute gilt: kurzer Vokal → ss, also *dass, muss, Schluss*." }
+    ],
+    "tags": ["ss-sz", "rechtschreibung", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 3 (Richtig schreiben)",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "s": {
+          "type": "pick",
+          "from": [
+            { "a": "Draußen ist es heiß, also essen wir ein Eis.", "b": "Draussen ist es heiß, also essen wir ein Eis.", "c": "Draußen ist es heiss, also essen wir ein Eis.", "d": "Draußen ist es heiß, also eßen wir ein Eis.", "hinweis": "**draußen**: Doppellaut au → ß. **heiß**: Doppellaut ei → ß. **essen**: kurzes e → ss." },
+            { "a": "Ich muss noch die Straße überqueren.", "b": "Ich muß noch die Straße überqueren.", "c": "Ich muss noch die Strasse überqueren.", "d": "Ich muß noch die Strasse überqueren.", "hinweis": "**muss**: kurzes u → ss. **Straße**: langes a → ß." },
+            { "a": "Wir wissen, dass der Fluss kalt ist.", "b": "Wir wißen, dass der Fluss kalt ist.", "c": "Wir wissen, daß der Fluss kalt ist.", "d": "Wir wissen, dass der Fluß kalt ist.", "hinweis": "**wissen**, **dass**, **Fluss**: überall ein kurzer Vokal → ss. „daß“ ist seit der Rechtschreibreform falsch." },
+            { "a": "Der Spaß im Freibad war riesig, aber das Wasser war eiskalt.", "b": "Der Spass im Freibad war riesig, aber das Wasser war eiskalt.", "c": "Der Spaß im Freibad war riesig, aber das Waßer war eiskalt.", "d": "Der Spass im Freibad war riesig, aber das Waßer war eiskalt.", "hinweis": "**Spaß**: langes a → ß. **Wasser**: kurzes a → ss." },
+            { "a": "Mein Bruder isst gerade Süßes.", "b": "Mein Bruder ißt gerade Süßes.", "c": "Mein Bruder isst gerade Süsses.", "d": "Mein Bruder ist gerade Süßes.", "hinweis": "**isst** (von *essen*): kurzes i → ss. „ist“ wäre eine Form von *sein* und ergibt hier keinen Sinn. **Süßes**: langes ü → ß." },
+            { "a": "Beim Fußballtraining hat er sich verletzt und musste nach Hause.", "b": "Beim Fussballtraining hat er sich verletzt und musste nach Hause.", "c": "Beim Fußballtraining hat er sich verletzt und mußte nach Hause.", "d": "Beim Fussballtraining hat er sich verletzt und mußte nach Hause.", "hinweis": "**Fuß**: langes u → ß. **musste**: kurzes u → ss." },
+            { "a": "Der Schluss des Films war so gut, dass ich fast geweint habe.", "b": "Der Schluß des Films war so gut, dass ich fast geweint habe.", "c": "Der Schluss des Films war so gut, daß ich fast geweint habe.", "d": "Der Schluß des Films war so gut, daß ich fast geweint habe.", "hinweis": "**Schluss** und **dass**: beide Male ein kurzer Vokal → ss." },
+            { "a": "Bitte schließ das Fenster, draußen ist es nass.", "b": "Bitte schliess das Fenster, draußen ist es nass.", "c": "Bitte schließ das Fenster, draussen ist es nass.", "d": "Bitte schließ das Fenster, draußen ist es naß.", "hinweis": "**schließ**: langes ie → ß. **draußen**: Doppellaut au → ß. **nass**: kurzes a → ss." },
+            { "a": "Ich lasse mein Handy zu Hause, damit ich den Spaß im Freibad genießen kann.", "b": "Ich laße mein Handy zu Hause, damit ich den Spaß im Freibad genießen kann.", "c": "Ich lasse mein Handy zu Hause, damit ich den Spass im Freibad genießen kann.", "d": "Ich lasse mein Handy zu Hause, damit ich den Spaß im Freibad geniessen kann.", "hinweis": "**lasse**: kurzes a → ss. **Spaß**: langes a → ß. **genießen**: langes ie → ß." },
+            { "a": "Die Größe passt, aber die Farbe ist hässlich.", "b": "Die Grösse passt, aber die Farbe ist hässlich.", "c": "Die Größe paßt, aber die Farbe ist hässlich.", "d": "Die Größe passt, aber die Farbe ist häßlich.", "hinweis": "**Größe**: langes ö → ß. **passt**: kurzes a → ss. **hässlich**: kurzes ä → ss." },
+            { "a": "Wir saßen draußen und aßen Nüsse.", "b": "Wir sassen draußen und aßen Nüsse.", "c": "Wir saßen draußen und assen Nüsse.", "d": "Wir saßen draußen und aßen Nüße.", "hinweis": "**saßen**, **aßen**: langes a → ß. **draußen**: au → ß. **Nüsse**: kurzes ü → ss." },
+            { "a": "Der Kuss war süß, aber viel zu kurz.", "b": "Der Kuß war süß, aber viel zu kurz.", "c": "Der Kuss war süss, aber viel zu kurz.", "d": "Der Kuß war süss, aber viel zu kurz.", "hinweis": "**Kuss**: kurzes u → ss. **süß**: langes ü → ß." }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "DE_O7_SS_SZ_GRUND_MCQ_T1",
+    "subject": "DE",
+    "topicId": "DE_ORTHO_SS_SZ",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Warum schreibt man **{{s_wort}}** mit **{{s_schreib}}**?",
+    "payload": { "choices": ["Der Vokal davor ist kurz → ss", "Der Vokal davor ist lang → ß", "Davor steht ein Doppellaut (ei, au, eu) → ß", "Nach einem Konsonanten steht nur ein s"] },
+    "solution": { "correct_choice": "{{s_loesung}}" },
+    "explanation": [
+      { "kind": "what", "title": "Die Probe", "body": "{{s_hinweis}}" },
+      { "kind": "remember", "body": "Entscheidend ist der **Laut vor dem s**: **kurzer Vokal → ss** (*Fluss, müssen, Nuss*), **langer Vokal → ß** (*Fuß, groß, Straße*), **Doppellaut ei/au/eu → ß** (*heißen, draußen*). In der Prüfung wird oft nach dieser Begründung gefragt, nicht nur nach der Schreibweise." }
+    ],
+    "tags": ["ss-sz", "begruendung", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 3 (Richtig schreiben)",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "s": {
+          "type": "pick",
+          "from": [
+            { "wort": "Fluss", "schreib": "ss", "loesung": "Der Vokal davor ist kurz → ss", "hinweis": "Sprich es laut: *Fluss* – das u ist kurz und knapp, du kannst es nicht ziehen → **ss**." },
+            { "wort": "Fuß", "schreib": "ß", "loesung": "Der Vokal davor ist lang → ß", "hinweis": "*Fuuuß* – das u lässt sich lang ziehen → **ß**." },
+            { "wort": "heißen", "schreib": "ß", "loesung": "Davor steht ein Doppellaut (ei, au, eu) → ß", "hinweis": "*hei-ßen* – vor dem s-Laut steht der Doppellaut **ei** → **ß**." },
+            { "wort": "Schluss", "schreib": "ss", "loesung": "Der Vokal davor ist kurz → ss", "hinweis": "*Schluss* – kurzes, knappes u → **ss**." },
+            { "wort": "draußen", "schreib": "ß", "loesung": "Davor steht ein Doppellaut (ei, au, eu) → ß", "hinweis": "*drau-ßen* – vor dem s-Laut steht der Doppellaut **au** → **ß**." },
+            { "wort": "Straße", "schreib": "ß", "loesung": "Der Vokal davor ist lang → ß", "hinweis": "*Straaaße* – das a wird lang gesprochen → **ß**." },
+            { "wort": "müssen", "schreib": "ss", "loesung": "Der Vokal davor ist kurz → ss", "hinweis": "*müs-sen* – kurzes ü → **ss**." },
+            { "wort": "Fleiß", "schreib": "ß", "loesung": "Davor steht ein Doppellaut (ei, au, eu) → ß", "hinweis": "*Fleiß* – der Doppellaut **ei** steht vor dem s-Laut → **ß**." },
+            { "wort": "Nuss", "schreib": "ss", "loesung": "Der Vokal davor ist kurz → ss", "hinweis": "*Nuss* – kurzes u → **ss** (Plural: Nüs-se)." },
+            { "wort": "groß", "schreib": "ß", "loesung": "Der Vokal davor ist lang → ß", "hinweis": "*grooooß* – langes o → **ß**." },
+            { "wort": "essen", "schreib": "ss", "loesung": "Der Vokal davor ist kurz → ss", "hinweis": "*es-sen* – kurzes e → **ss**." },
+            { "wort": "außen", "schreib": "ß", "loesung": "Davor steht ein Doppellaut (ei, au, eu) → ß", "hinweis": "*au-ßen* – der Doppellaut **au** steht vor dem s-Laut → **ß**." },
+            { "wort": "Schloss", "schreib": "ss", "loesung": "Der Vokal davor ist kurz → ss", "hinweis": "*Schloss* – kurzes o → **ss** (Plural: Schlös-ser)." },
+            { "wort": "süß", "schreib": "ß", "loesung": "Der Vokal davor ist lang → ß", "hinweis": "*süüüß* – langes ü → **ß**." },
+            { "wort": "reißen", "schreib": "ß", "loesung": "Davor steht ein Doppellaut (ei, au, eu) → ß", "hinweis": "*rei-ßen* – der Doppellaut **ei** steht vor dem s-Laut → **ß**." },
+            { "wort": "wissen", "schreib": "ss", "loesung": "Der Vokal davor ist kurz → ss", "hinweis": "*wis-sen* – kurzes i → **ss**." }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "DE_O7_SS_SZ_LANG_KURZ",
+    "subject": "DE",
+    "topicId": "DE_ORTHO_SS_SZ",
+    "difficulty": 1,
+    "qtype": "MCQ",
+    "prompt": "In welchem Wort wird der Vokal vor dem s-Laut **lang** gesprochen und deshalb **ß** geschrieben?",
+    "payload": { "choices": ["Fuß", "Fluss", "Kuss", "Schluss"] },
+    "solution": { "correct_choice": "Fuß" },
+    "explanation": [
+      { "kind": "what", "title": "Laut sprechen", "body": "*Fuuuß* – das u lässt sich ziehen, es ist **lang** → ß.\n\n*Fluss*, *Kuss*, *Schluss* – das u ist kurz und knapp → ss." },
+      { "kind": "remember", "body": "Der Vokal vor dem s-Laut entscheidet: **kurz → ss**, **lang oder Doppellaut → ß**. Wenn du unsicher bist, sprich das Wort übertrieben langsam." },
+      { "kind": "mistake", "body": "*Fluss* und *Fuß* sehen sich ähnlich, klingen aber verschieden: Fl**u**ss (kurz) – F**uu**ß (lang)." }
+    ],
+    "tags": ["ss-sz", "rechtschreibung", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 3 (Richtig schreiben)"
+  },
+  {
+    "id": "DE_O7_SS_SZ_WORTFAMILIE",
+    "subject": "DE",
+    "topicId": "DE_ORTHO_SS_SZ",
+    "difficulty": 3,
+    "qtype": "CLOZE",
+    "prompt": "In einer Wortfamilie kann sich die Schreibweise ändern, weil der Vokal mal lang und mal kurz ist. Wähle ss oder ß.",
+    "payload": { "text_with_blanks": "Ich wei___ nicht, ob du das wirklich wi___t. Der Flu___ hier flie___t im Sommer ganz langsam.", "blanks": [{ "id": 1, "choices": ["ss", "ß"] }, { "id": 2, "choices": ["ss", "ß"] }, { "id": 3, "choices": ["ss", "ß"] }, { "id": 4, "choices": ["ss", "ß"] }] },
+    "solution": { "answers": { "1": "ß", "2": "ss", "3": "ss", "4": "ß" } },
+    "explanation": [
+      { "kind": "steps", "title": "Jedes Wort einzeln prüfen", "body": "1. **weiß**: Doppellaut ei → ß.\n2. **wisst**: kurzes i → ss. Gleiche Wortfamilie wie *weiß*, aber anderer Vokal, deshalb andere Schreibweise.\n3. **Fluss**: kurzes u → ss.\n4. **fließt**: langes ie → ß. Auch hier: verwandt mit *Fluss*, aber der Vokal ist lang." },
+      { "kind": "remember", "body": "Die Regel gilt **für jedes Wort einzeln**: kurzer Vokal → ss, langer Vokal oder Doppellaut → ß. Verwandte Wörter können deshalb unterschiedlich geschrieben werden: *wissen – weiß*, *Fluss – fließen*, *lassen – ließ*, *essen – aß*." },
+      { "kind": "mistake", "body": "Nicht von der Wortfamilie ableiten! *weiß* wird nicht wie *wissen* mit ss geschrieben, denn nach **ei** steht immer ß." }
+    ],
+    "tags": ["ss-sz", "wortfamilie", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 3 (Richtig schreiben)"
+  },
+  {
+    "id": "DE_O7_SS_SZ_FEHLER_MCQ",
+    "subject": "DE",
+    "topicId": "DE_ORTHO_SS_SZ",
+    "difficulty": 4,
+    "qtype": "MCQ",
+    "prompt": "In diesem Satz steckt genau **ein** ss/ß-Fehler. Welches Wort ist falsch geschrieben?\n\n„Nach dem Fussballspiel saßen wir draußen und aßen ein Eis, bis es dunkel wurde.“",
+    "payload": { "choices": ["Fussballspiel", "saßen", "draußen", "aßen"] },
+    "solution": { "correct_choice": "Fussballspiel" },
+    "explanation": [
+      { "kind": "steps", "title": "So findest du den Fehler", "body": "Suche alle Wörter mit s-Laut und sprich sie laut:\n\n- **Fußballspiel**: *Fuuuß* – langes u → ß. „Fussballspiel“ ist also **falsch**.\n- **saßen**: langes a → ß ✓\n- **draußen**: Doppellaut au → ß ✓\n- **aßen**: langes a → ß ✓" },
+      { "kind": "remember", "body": "Bei der Aufgabe *Text überarbeiten* zuerst alle s-Laute markieren, dann für jedes Wort die Vokallänge prüfen. Kurz → ss, lang oder Doppellaut → ß." },
+      { "kind": "mistake", "body": "In zusammengesetzten Wörtern bleibt die Schreibweise des Teils erhalten: *Fuß* → *Fußball* → *Fußballspiel*." }
+    ],
+    "tags": ["ss-sz", "fehler-finden", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 3 und 4 (Überarbeiten eines Textes)"
+  },
+  {
+    "id": "DE_O7_SS_SZ_TEXT_CLOZE",
+    "subject": "DE",
+    "topicId": "DE_ORTHO_SS_SZ",
+    "difficulty": 5,
+    "qtype": "CLOZE",
+    "prompt": "Überarbeite den Text: Wähle an jeder Lücke ss oder ß.",
+    "payload": { "text_with_blanks": "Am Samstag war es so hei___, dass wir den ganzen Tag im Freibad blieben. Das Wa___er war kalt, aber wir mu___ten trotzdem rein. Zum Schlu___ haben wir uns auf der Stra___e noch ein Eis geholt.", "blanks": [{ "id": 1, "choices": ["ss", "ß"] }, { "id": 2, "choices": ["ss", "ß"] }, { "id": 3, "choices": ["ss", "ß"] }, { "id": 4, "choices": ["ss", "ß"] }, { "id": 5, "choices": ["ss", "ß"] }] },
+    "solution": { "answers": { "1": "ß", "2": "ss", "3": "ss", "4": "ss", "5": "ß" } },
+    "explanation": [
+      { "kind": "steps", "title": "Lücke für Lücke", "body": "1. **heiß**: Doppellaut ei → ß.\n2. **Wasser**: kurzes a (Was-ser) → ss.\n3. **mussten**: kurzes u → ss.\n4. **Schluss**: kurzes u → ss.\n5. **Straße**: langes a → ß." },
+      { "kind": "remember", "body": "In einem Text gilt für jedes Wort dieselbe Probe: Vokal davor **kurz → ss**, **lang oder Doppellaut → ß**. Auch *dass* im Text ist ein Beispiel: kurzes a → ss." },
+      { "kind": "mistake", "body": "*mussten* kommt von *müssen* (kurzes ü → ss) und behält das ss. *Schluss* wird oft noch mit ß gesehen, das ist die alte Schreibweise." }
+    ],
+    "tags": ["ss-sz", "text-ueberarbeiten", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 3 und 4 (Überarbeiten eines Textes)"
+  },
+  {
+    "id": "DE_O7_DOPPEL_CLOZE_T1",
+    "subject": "DE",
+    "topicId": "DE_ORTHO_DOUBLE",
+    "difficulty": 2,
+    "qtype": "CLOZE",
+    "prompt": "Einfacher oder doppelter Konsonant? Sprich das Wort laut und wähle.",
+    "payload": { "text_with_blanks": "{{s_satz}}", "blanks": [{ "id": 1, "choices": ["{{s_einfach}}", "{{s_doppelt}}"] }] },
+    "solution": { "answers": { "1": "{{s_loesung}}" } },
+    "explanation": [
+      { "kind": "what", "title": "Die Probe", "body": "{{s_grund}}" },
+      { "kind": "remember", "body": "Nach **kurzem** Vokal steht ein **Doppelkonsonant** (ff, ll, mm, nn, tt, ss …): *Sommer, treffen, Teller*. Nach **langem** Vokal steht nur **ein** Konsonant: *Kabel, müde, Oma*. **Silbenprobe**: Zerlege das Wort. Endet die erste Silbe mit dem Konsonanten und beginnt die zweite damit (*Som-mer*), schreibst du ihn doppelt. Endet die erste Silbe auf den Vokal (*Ka-bel*), bleibt er einfach." },
+      { "kind": "mistake", "body": "Bei **einsilbigen** Wörtern (*Ball, voll*) klappt die Silbenprobe erst nach dem **Verlängern**: *Bäl-le*, *vol-ler* → ll." }
+    ],
+    "tags": ["doppelkonsonant", "silbenprobe", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 3 (Silbenprobe)",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "s": {
+          "type": "pick",
+          "from": [
+            { "satz": "Im So___er gehen wir jeden Tag ins Freibad.", "einfach": "m", "doppelt": "mm", "loesung": "mm", "grund": "Das o in *Sommer* ist kurz → Doppelkonsonant. Silbenprobe: **Som-mer**, das m gehört zu beiden Silben." },
+            { "satz": "Mein Bruder hat schon wieder mein Ka___el geklaut.", "einfach": "b", "doppelt": "bb", "loesung": "b", "grund": "Das a in *Kabel* ist lang → einfacher Konsonant. Silbenprobe: **Ka-bel**, die erste Silbe endet auf den Vokal." },
+            { "satz": "Wir tre___en uns um vier am Kiosk.", "einfach": "f", "doppelt": "ff", "loesung": "ff", "grund": "Das e in *treffen* ist kurz → ff. Silbenprobe: **tref-fen**." },
+            { "satz": "Die Mannschaft hat das Spiel verlo___en.", "einfach": "r", "doppelt": "rr", "loesung": "r", "grund": "Das o in *verloren* ist lang → ein r. Silbenprobe: **ver-lo-ren**." },
+            { "satz": "Auf dem Handy ist noch eine alte Nu___er gespeichert.", "einfach": "m", "doppelt": "mm", "loesung": "mm", "grund": "Das u in *Nummer* ist kurz → mm. Silbenprobe: **Num-mer**." },
+            { "satz": "Er hat den Ba___ viel zu weit geworfen.", "einfach": "l", "doppelt": "ll", "loesung": "ll", "grund": "Das a in *Ball* ist kurz. Einsilbiges Wort zuerst verlängern: **Bäl-le** → ll." },
+            { "satz": "Wir ha___en gestern ein Spiel gegen die 10b.", "einfach": "t", "doppelt": "tt", "loesung": "tt", "grund": "Das a in *hatten* ist kurz → tt. Silbenprobe: **hat-ten**." },
+            { "satz": "Ich war die ganze Nacht wach und bin jetzt total mü___e.", "einfach": "d", "doppelt": "dd", "loesung": "d", "grund": "Das ü in *müde* ist lang → ein d. Silbenprobe: **mü-de**." },
+            { "satz": "Wir ho___en, dass der Test leicht wird.", "einfach": "f", "doppelt": "ff", "loesung": "ff", "grund": "Das o in *hoffen* ist kurz → ff. Silbenprobe: **hof-fen**." },
+            { "satz": "Im Bus war es so vo___, dass ich stehen musste.", "einfach": "l", "doppelt": "ll", "loesung": "ll", "grund": "Das o in *voll* ist kurz. Verlängern: **vol-ler** → ll." },
+            { "satz": "Ich habe mir einen ganzen Te___er Nudeln genommen.", "einfach": "l", "doppelt": "ll", "loesung": "ll", "grund": "Das e in *Teller* ist kurz → ll. Silbenprobe: **Tel-ler**." },
+            { "satz": "Meine O___a schickt mir jeden Morgen ein Herz-Emoji.", "einfach": "m", "doppelt": "mm", "loesung": "m", "grund": "Das O in *Oma* ist lang → ein m. Silbenprobe: **O-ma**." },
+            { "satz": "Auf dem Schulhof steht eine riesige Ta___e.", "einfach": "n", "doppelt": "nn", "loesung": "nn", "grund": "Das a in *Tanne* ist kurz → nn. Silbenprobe: **Tan-ne**." },
+            { "satz": "Mein Opa hat noch einen alten Ro___er in der Garage.", "einfach": "l", "doppelt": "ll", "loesung": "ll", "grund": "Das o in *Roller* ist kurz → ll. Silbenprobe: **Rol-ler**." },
+            { "satz": "Am Wochenende schla___e ich immer bis elf.", "einfach": "f", "doppelt": "ff", "loesung": "f", "grund": "Das a in *schlafe* ist lang → ein f. Silbenprobe: **schla-fe**." },
+            { "satz": "Bi___e sei leise, ich telefoniere gerade.", "einfach": "t", "doppelt": "tt", "loesung": "tt", "grund": "Das i in *Bitte* ist kurz → tt. Silbenprobe: **Bit-te**." }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "DE_O7_DEHNUNG_CLOZE_T1",
+    "subject": "DE",
+    "topicId": "DE_ORTHO_DOUBLE",
+    "difficulty": 3,
+    "qtype": "CLOZE",
+    "prompt": "Der Vokal ist lang. Wie wird das Wort geschrieben? Wähle die richtige Form.",
+    "payload": { "text_with_blanks": "{{s_satz}}", "blanks": [{ "id": 1, "choices": ["{{s_opt1}}", "{{s_opt2}}"] }] },
+    "solution": { "answers": { "1": "{{s_loesung}}" } },
+    "explanation": [
+      { "kind": "what", "title": "Die Regel", "body": "{{s_grund}}" },
+      { "kind": "remember", "body": "Ein langer Vokal wird oft **markiert**: **Dehnungs-h** vor l, m, n, r (*Zahl, nehmen, wohnen, fahren*), **ie** für langes i (*Spiel, Brief*), **Doppelvokal** (*Meer, See, Boot*). Ein **Trennungs-h** steht zwischen zwei Vokalen (*sehen, ruhig, nähen*). Viele lange Vokale haben aber **gar kein** Zeichen (*Tafel, gut, Name*)." },
+      { "kind": "mistake", "body": "Ein Dehnungs-h ist **nur vor l, m, n, r** möglich. Vor t, f, g, s usw. steht nie ein h: *gut, Tafel, Tag*." }
+    ],
+    "tags": ["dehnung", "dehnungs-h", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 3 (Dehnung und Silbentrennung)",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "s": {
+          "type": "pick",
+          "from": [
+            { "satz": "Nach der Schule ___ wir den Bus zum Training.", "opt1": "nehmen", "opt2": "nemen", "loesung": "nehmen", "grund": "Langes e vor **m** → Dehnungs-h: neh-men." },
+            { "satz": "Wir ___ am Wochenende zu Oma nach Spandau.", "opt1": "faren", "opt2": "fahren", "loesung": "fahren", "grund": "Langes a vor **r** → Dehnungs-h: fah-ren." },
+            { "satz": "Lass mich mal kurz in ___, ich bin am Lernen.", "opt1": "Ruhe", "opt2": "Rue", "loesung": "Ruhe", "grund": "Zwischen u und e steht ein **Trennungs-h**: Ru-he. Es zeigt, dass die beiden Vokale getrennt gesprochen werden." },
+            { "satz": "Meine Schwester hat einen neuen ___ fürs Zimmer gekauft.", "opt1": "Stul", "opt2": "Stuhl", "loesung": "Stuhl", "grund": "Langes u vor **l** → Dehnungs-h: Stuhl (Plural: Stüh-le)." },
+            { "satz": "Das ___ gegen die 10a war richtig spannend.", "opt1": "Spiel", "opt2": "Spil", "loesung": "Spiel", "grund": "Langes i wird fast immer **ie** geschrieben: Spiel." },
+            { "satz": "Sie hat mir einen echten ___ geschrieben, auf Papier!", "opt1": "Brif", "opt2": "Brief", "loesung": "Brief", "grund": "Langes i → **ie**: Brief." },
+            { "satz": "Wir ___ uns nach dem Training am Kiosk.", "opt1": "sehen", "opt2": "seen", "loesung": "sehen", "grund": "Zwischen e und e steht ein **Trennungs-h**: se-hen." },
+            { "satz": "Das war ein richtig ___ Spiel.", "opt1": "guhtes", "opt2": "gutes", "loesung": "gutes", "grund": "Das u ist lang, aber danach kommt ein **t**. Ein Dehnungs-h steht nur vor l, m, n, r → kein h." },
+            { "satz": "Wo ___ du eigentlich?", "opt1": "wohnst", "opt2": "wonst", "loesung": "wohnst", "grund": "Langes o vor **n** → Dehnungs-h: woh-nen." },
+            { "satz": "Meine Oma kann richtig gut ___.", "opt1": "näen", "opt2": "nähen", "loesung": "nähen", "grund": "Zwischen ä und e steht ein **Trennungs-h**: nä-hen." },
+            { "satz": "Der Lehrer schreibt das Ergebnis an die ___.", "opt1": "Tafel", "opt2": "Tahfel", "loesung": "Tafel", "grund": "Das a ist lang, aber danach kommt ein **f**. Ein Dehnungs-h steht nur vor l, m, n, r → kein h." },
+            { "satz": "Ich muss noch die ___ für den Mathetest üben.", "opt1": "Zalen", "opt2": "Zahlen", "loesung": "Zahlen", "grund": "Langes a vor **l** → Dehnungs-h: Zah-len." },
+            { "satz": "Im Sommer fahren wir ans ___.", "opt1": "Meer", "opt2": "Mehr", "loesung": "Meer", "grund": "Langes e durch **Doppelvokal ee**: das Meer. Vorsicht: *mehr* (= zusätzlich) ist ein anderes Wort." },
+            { "satz": "Wir ___ jetzt nach Hause.", "opt1": "geen", "opt2": "gehen", "loesung": "gehen", "grund": "Zwischen e und e steht ein **Trennungs-h**: ge-hen." },
+            { "satz": "Die ___ hat uns heute gelobt.", "opt1": "Lehrerin", "opt2": "Lererin", "loesung": "Lehrerin", "grund": "Langes e vor **r** → Dehnungs-h: Leh-re-rin." },
+            { "satz": "Das ___ am Steg ist total wackelig.", "opt1": "Boht", "opt2": "Boot", "loesung": "Boot", "grund": "Langes o durch **Doppelvokal oo**: Boot. Ein Dehnungs-h vor t ist nicht möglich." }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "DE_O7_DOPPEL_KURZ_MCQ",
+    "subject": "DE",
+    "topicId": "DE_ORTHO_DOUBLE",
+    "difficulty": 1,
+    "qtype": "MCQ",
+    "prompt": "In welchem Wort ist der Vokal **kurz**, sodass ein Doppelkonsonant folgt?",
+    "payload": { "choices": ["Sonne", "Sohn", "Boot", "Dose"] },
+    "solution": { "correct_choice": "Sonne" },
+    "explanation": [
+      { "kind": "what", "title": "Laut sprechen", "body": "*Sonne*: das o ist kurz und knapp → **nn** (Silbenprobe: Son-ne).\n\n*Sohn*: langes o mit Dehnungs-h. *Boot*: langes o durch oo. *Dose*: langes o ohne Zeichen (Do-se)." },
+      { "kind": "remember", "body": "**Kurzer Vokal → Doppelkonsonant** (*Sonne, Bett, kommen*). **Langer Vokal → einfacher Konsonant**, oft mit Dehnungszeichen (*Sohn, Boot, Dose*)." }
+    ],
+    "tags": ["doppelkonsonant", "rechtschreibung", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 3 (Silbenprobe)"
+  },
+  {
+    "id": "DE_O7_DOPPEL_SILBEN_MCQ",
+    "subject": "DE",
+    "topicId": "DE_ORTHO_DOUBLE",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "Mit der **Silbenprobe** prüfst du Doppelkonsonanten. Welche Trennung ist richtig und zeigt, warum *rennen* mit **nn** geschrieben wird?",
+    "payload": { "choices": ["ren-nen", "re-nnen", "renn-en", "re-nen"] },
+    "solution": { "correct_choice": "ren-nen" },
+    "explanation": [
+      { "kind": "steps", "title": "So geht die Silbenprobe", "body": "1. Sprich das Wort langsam und klatsche die Silben: *ren – nen*.\n2. Die erste Silbe endet auf **n**, die zweite beginnt mit **n**.\n3. Ein Konsonant in beiden Silben → **doppelt**: ren-nen.\n\nZum Vergleich: *be-ten* – die erste Silbe endet auf den Vokal → ein t." },
+      { "kind": "remember", "body": "**Silbenprobe**: Bet-ten (nicht be-ten), Rat-ten (nicht ra-ten), But-ter, Was-ser, ken-nen. Der Doppelkonsonant wird bei der Trennung **aufgeteilt**." },
+      { "kind": "mistake", "body": "„re-nnen“ oder „renn-en“ sind keine echten Sprechsilben. Klatsche mit: Jede Silbe hat genau einen Vokal-Laut." }
+    ],
+    "tags": ["doppelkonsonant", "silbenprobe", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 3 (Silbenprobe)"
+  },
+  {
+    "id": "DE_O7_DOPPEL_FEHLER_MCQ",
+    "subject": "DE",
+    "topicId": "DE_ORTHO_DOUBLE",
+    "difficulty": 4,
+    "qtype": "MCQ",
+    "prompt": "In diesem Satz ist genau **ein** Wort falsch geschrieben. Welches?\n\n„Im Somer haben wir fast jeden Tag am See gechillt und Volleyball gespielt.“",
+    "payload": { "choices": ["Somer", "See", "gechillt", "Volleyball"] },
+    "solution": { "correct_choice": "Somer" },
+    "explanation": [
+      { "kind": "steps", "title": "Wort für Wort", "body": "- **Sommer**: kurzes o → Silbenprobe *Som-mer* → **mm**. „Somer“ ist falsch.\n- **See**: langes e durch Doppelvokal ee ✓\n- **gechillt**: kurzes i → ll (von *chillen*, chil-len) ✓\n- **Volleyball**: kurzes o in *Volley* → ll, kurzes a in *Ball* → ll ✓" },
+      { "kind": "remember", "body": "Beim Überarbeiten eines Textes: Wörter mit kurzem Vokal markieren und die Silbenprobe machen. Ein kurzer Vokal braucht den Doppelkonsonanten dahinter." },
+      { "kind": "mistake", "body": "Auch eingedeutschte Wörter wie *chillen* folgen der Regel: kurzes i → **ll**." }
+    ],
+    "tags": ["doppelkonsonant", "fehler-finden", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 3 und 4 (Überarbeiten eines Textes)"
+  },
+  {
+    "id": "DE_O7_DEHNUNG_TEXT_CLOZE",
+    "subject": "DE",
+    "topicId": "DE_ORTHO_DOUBLE",
+    "difficulty": 5,
+    "qtype": "CLOZE",
+    "prompt": "Überarbeite den Text: Wähle an jeder Lücke die richtig geschriebene Form.",
+    "payload": { "text_with_blanks": "Am Wochenende ___ wir mit dem Zug ans ___. Hoffentlich ist der Strand nicht so ___ wie letztes Jahr, sonst ___ wir gleich den nächsten Zug zurück.", "blanks": [{ "id": 1, "choices": ["fahren", "faren"] }, { "id": 2, "choices": ["Mehr", "Meer"] }, { "id": 3, "choices": ["vol", "voll"] }, { "id": 4, "choices": ["nehmen", "nemen"] }] },
+    "solution": { "answers": { "1": "fahren", "2": "Meer", "3": "voll", "4": "nehmen" } },
+    "explanation": [
+      { "kind": "steps", "title": "Lücke für Lücke", "body": "1. **fahren**: langes a vor r → Dehnungs-h.\n2. **Meer**: langes e durch Doppelvokal ee. *mehr* (= zusätzlich) wäre ein anderes Wort.\n3. **voll**: kurzes o → Doppelkonsonant (verlängern: vol-ler).\n4. **nehmen**: langes e vor m → Dehnungs-h." },
+      { "kind": "remember", "body": "Zwei Fragen pro Wort: Ist der Vokal **kurz**? → Doppelkonsonant. Ist er **lang**? → vielleicht Dehnungs-h (nur vor l, m, n, r), ie oder Doppelvokal." },
+      { "kind": "mistake", "body": "*Meer* und *mehr* klingen gleich. Das Nomen (die Nordsee, das Meer) schreibt man mit ee, das Mengenwort (*mehr Zeit*) mit h." }
+    ],
+    "tags": ["dehnung", "doppelkonsonant", "text-ueberarbeiten", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 3 und 4 (Überarbeiten eines Textes)"
+  },
+  {
+    "id": "DE_O7_GZ_GRUND_MCQ_T1",
+    "subject": "DE",
+    "topicId": "DE_ORTHO_SEP_JOIN",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "„{{s_satz}}“\n\nWarum schreibt man **{{s_wendung}}** so?",
+    "payload": { "choices": ["Präposition + Verb: zusammen", "Verb + Verb: getrennt", "Adjektiv + Verb: getrennt", "Nomen + Verb: getrennt", "Nominalisierung: zusammen und groß"] },
+    "solution": { "correct_choice": "{{s_loesung}}" },
+    "explanation": [
+      { "kind": "what", "title": "Woran du es erkennst", "body": "{{s_hinweis}}" },
+      { "kind": "remember", "body": "Frag dich: **Aus welchen Wortarten besteht die Verbindung?** **Zusammen**: Präposition + Verb (*hingehen, aufstehen, anmachen*), Nomen + Nomen (*Autobahn*), Nominalisierungen (*beim Essengehen*). **Getrennt**: Verb + Verb (*schwimmen gehen*), Adjektiv + Verb (*laut singen*), Nomen + Verb (*Klavier spielen*)." },
+      { "kind": "mistake", "body": "Sobald *beim, zum, das, vom* vor der Wortgruppe steht, wird sie zum **Nomen**: *Rad fahren* → *beim Radfahren*. Dann zusammen **und** groß." }
+    ],
+    "tags": ["getrennt-zusammen", "begruendung", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 3 (Getrennt oder zusammen)",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "s": {
+          "type": "pick",
+          "from": [
+            { "satz": "Ich muss noch mein Zimmer aufräumen.", "wendung": "aufräumen", "loesung": "Präposition + Verb: zusammen", "hinweis": "auf + räumen: Die Präposition verschmilzt mit dem Verb zu einem Wort, wie *aufstehen, anrufen, mitkommen*." },
+            { "satz": "Wir wollen nachher einkaufen gehen.", "wendung": "einkaufen gehen", "loesung": "Verb + Verb: getrennt", "hinweis": "einkaufen + gehen: Zwei Verben bleiben getrennt, wie *schwimmen gehen* oder *schlafen legen*." },
+            { "satz": "Kannst du eigentlich gut Rad fahren?", "wendung": "Rad fahren", "loesung": "Nomen + Verb: getrennt", "hinweis": "Rad + fahren: Das Nomen bleibt ein eigenes Wort und wird großgeschrieben, wie *Fußball spielen* oder *Schlange stehen*." },
+            { "satz": "Ihr sollt im Kino leise reden.", "wendung": "leise reden", "loesung": "Adjektiv + Verb: getrennt", "hinweis": "leise + reden: Das Adjektiv sagt, **wie** etwas getan wird, und bleibt getrennt, wie *laut singen* oder *schnell laufen*." },
+            { "satz": "Beim Radfahren trage ich immer einen Helm.", "wendung": "Radfahren", "loesung": "Nominalisierung: zusammen und groß", "hinweis": "*beim* (bei dem) macht die Wortgruppe zu einem Nomen: Aus *Rad fahren* wird *das Radfahren* → zusammen und groß." },
+            { "satz": "Willst du heute Abend mitkommen?", "wendung": "mitkommen", "loesung": "Präposition + Verb: zusammen", "hinweis": "mit + kommen: Präposition + Verb → ein Wort." },
+            { "satz": "Mein Opa hat stundenlang Schach gespielt.", "wendung": "Schach gespielt", "loesung": "Nomen + Verb: getrennt", "hinweis": "Schach + spielen: Nomen + Verb → getrennt, *Schach* wird großgeschrieben." },
+            { "satz": "Nach der Party müssen wir noch abwaschen.", "wendung": "abwaschen", "loesung": "Präposition + Verb: zusammen", "hinweis": "ab + waschen: Präposition + Verb → ein Wort." },
+            { "satz": "Lass uns am Samstag baden gehen!", "wendung": "baden gehen", "loesung": "Verb + Verb: getrennt", "hinweis": "baden + gehen: Zwei Verben → getrennt." },
+            { "satz": "Beim Schlangestehen vor der Mensa habe ich Lea getroffen.", "wendung": "Schlangestehen", "loesung": "Nominalisierung: zusammen und groß", "hinweis": "*beim* macht *Schlange stehen* zum Nomen *das Schlangestehen* → zusammen und groß." },
+            { "satz": "Du sollst nicht so laut lachen, wir sind in der Bibliothek.", "wendung": "laut lachen", "loesung": "Adjektiv + Verb: getrennt", "hinweis": "laut + lachen: Adjektiv + Verb → getrennt." },
+            { "satz": "Kannst du bitte das Fenster zumachen?", "wendung": "zumachen", "loesung": "Präposition + Verb: zusammen", "hinweis": "zu + machen: Präposition + Verb → ein Wort, wie *aufmachen* oder *anmachen*." },
+            { "satz": "Meine Cousine kann richtig gut Gitarre spielen.", "wendung": "Gitarre spielen", "loesung": "Nomen + Verb: getrennt", "hinweis": "Gitarre + spielen: Nomen + Verb → getrennt, *Gitarre* wird großgeschrieben." },
+            { "satz": "Nach dem Training soll man kalt duschen.", "wendung": "kalt duschen", "loesung": "Adjektiv + Verb: getrennt", "hinweis": "kalt + duschen: Adjektiv + Verb → getrennt." },
+            { "satz": "Das Spazierengehen mit dem Hund ist meine Aufgabe.", "wendung": "Spazierengehen", "loesung": "Nominalisierung: zusammen und groß", "hinweis": "Der Artikel *das* macht *spazieren gehen* zum Nomen → zusammen und groß." }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "DE_O7_GZ_NOMINALISIERUNG_CLOZE_T1",
+    "subject": "DE",
+    "topicId": "DE_ORTHO_SEP_JOIN",
+    "difficulty": 3,
+    "qtype": "CLOZE",
+    "prompt": "Als Verb getrennt, als Nomen zusammen? Wähle an **beiden** Lücken die richtige Schreibweise.",
+    "payload": { "text_with_blanks": "{{s_satz}}", "blanks": [{ "id": 1, "choices": ["{{s_getrennt}}", "{{s_zusammen}}"] }, { "id": 2, "choices": ["{{s_getrennt}}", "{{s_zusammen}}"] }] },
+    "solution": { "answers": { "1": "{{s_l1}}", "2": "{{s_l2}}" } },
+    "explanation": [
+      { "kind": "steps", "title": "Beide Lücken prüfen", "body": "{{s_hinweis}}" },
+      { "kind": "remember", "body": "**Nomen + Verb** bleibt als Verb getrennt: *Rad fahren, Zähne putzen, Schlange stehen*. Steht **beim, zum, das, vom** davor, wird die Wortgruppe zum **Nomen** und wandert zusammen: *beim Radfahren, das Zähneputzen*. Nomensignal erkannt → zusammen und groß." },
+      { "kind": "mistake", "body": "Nicht beide gleich schreiben! *Ich will Rad fahren* (Verb, getrennt), aber *beim Radfahren* (Nomen, zusammen). Der Artikel oder die Präposition mit Artikel ist das Signal." }
+    ],
+    "tags": ["getrennt-zusammen", "nominalisierung", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 3 (Getrennt oder zusammen, Ausnahme Nominalisierung)",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "s": {
+          "type": "pick",
+          "from": [
+            { "satz": "Ich muss noch ___. Beim ___ höre ich meistens Musik.", "getrennt": "Zähne putzen", "zusammen": "Zähneputzen", "l1": "Zähne putzen", "l2": "Zähneputzen", "hinweis": "1. *Ich muss noch Zähne putzen*: Nomen + Verb → getrennt.\n2. *Beim Zähneputzen*: *beim* macht daraus ein Nomen → zusammen und groß." },
+            { "satz": "Am Samstag wollen wir ___. Zum ___ nehme ich immer einen Helm mit.", "getrennt": "Rad fahren", "zusammen": "Radfahren", "l1": "Rad fahren", "l2": "Radfahren", "hinweis": "1. *wollen Rad fahren*: Nomen + Verb → getrennt.\n2. *Zum Radfahren*: *zum* (zu dem) → Nomen → zusammen und groß." },
+            { "satz": "Nach dem ___ hat Lea immer Riesenhunger. Sie will trotzdem jeden Tag ___.", "getrennt": "schwimmen gehen", "zusammen": "Schwimmengehen", "l1": "Schwimmengehen", "l2": "schwimmen gehen", "hinweis": "1. *Nach dem Schwimmengehen*: *dem* ist ein Artikel → Nomen → zusammen und groß.\n2. *will schwimmen gehen*: Verb + Verb → getrennt." },
+            { "satz": "Wir müssen vor dem Kino ___. Das ___ nervt total.", "getrennt": "Schlange stehen", "zusammen": "Schlangestehen", "l1": "Schlange stehen", "l2": "Schlangestehen", "hinweis": "1. *müssen Schlange stehen*: Nomen + Verb → getrennt.\n2. *Das Schlangestehen*: Artikel → Nomen → zusammen und groß." },
+            { "satz": "Beim ___ trägt Papa eine uralte Mütze. Er kann aber richtig gut ___.", "getrennt": "Ski fahren", "zusammen": "Skifahren", "l1": "Skifahren", "l2": "Ski fahren", "hinweis": "1. *Beim Skifahren*: *beim* → Nomen → zusammen und groß.\n2. *kann Ski fahren*: Nomen + Verb → getrennt." },
+            { "satz": "Ich darf jetzt endlich ___. Beim ___ hört mein Bruder immer laut Musik.", "getrennt": "Auto fahren", "zusammen": "Autofahren", "l1": "Auto fahren", "l2": "Autofahren", "hinweis": "1. *darf Auto fahren*: Nomen + Verb → getrennt.\n2. *Beim Autofahren*: *beim* → Nomen → zusammen und groß." },
+            { "satz": "Meine Oma will mit mir ___. Beim ___ erzählt sie immer alte Geschichten.", "getrennt": "Kaffee trinken", "zusammen": "Kaffeetrinken", "l1": "Kaffee trinken", "l2": "Kaffeetrinken", "hinweis": "1. *will Kaffee trinken*: Nomen + Verb → getrennt.\n2. *Beim Kaffeetrinken*: *beim* → Nomen → zusammen und groß." },
+            { "satz": "Beim ___ vergesse ich die Zeit. Am liebsten würde ich den ganzen Tag ___.", "getrennt": "Fußball spielen", "zusammen": "Fußballspielen", "l1": "Fußballspielen", "l2": "Fußball spielen", "hinweis": "1. *Beim Fußballspielen*: *beim* → Nomen → zusammen und groß.\n2. *würde Fußball spielen*: Nomen + Verb → getrennt." },
+            { "satz": "Wir wollen nach der Schule ___. Das ___ am Alex ist unser Ritual.", "getrennt": "Pizza essen", "zusammen": "Pizzaessen", "l1": "Pizza essen", "l2": "Pizzaessen", "hinweis": "1. *wollen Pizza essen*: Nomen + Verb → getrennt.\n2. *Das Pizzaessen*: Artikel → Nomen → zusammen und groß." },
+            { "satz": "Ich kann nicht gleichzeitig lernen und ___. Beim ___ schaue ich sonst ständig aufs Handy.", "getrennt": "Musik hören", "zusammen": "Musikhören", "l1": "Musik hören", "l2": "Musikhören", "hinweis": "1. *kann Musik hören*: Nomen + Verb → getrennt.\n2. *Beim Musikhören*: *beim* → Nomen → zusammen und groß." },
+            { "satz": "Beim ___ trägt sie Kopfhörer. Sie will jeden Tag zwei Stunden ___.", "getrennt": "Klavier spielen", "zusammen": "Klavierspielen", "l1": "Klavierspielen", "l2": "Klavier spielen", "hinweis": "1. *Beim Klavierspielen*: *beim* → Nomen → zusammen und groß.\n2. *will Klavier spielen*: Nomen + Verb → getrennt." },
+            { "satz": "Wir gehen mit dem Hund ___. Das ___ im Park macht sogar bei Regen Spaß.", "getrennt": "spazieren gehen", "zusammen": "Spazierengehen", "l1": "spazieren gehen", "l2": "Spazierengehen", "hinweis": "1. *gehen spazieren*: Verb + Verb → getrennt.\n2. *Das Spazierengehen*: Artikel → Nomen → zusammen und groß." }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "DE_O7_GZ_REGEL_MCQ",
+    "subject": "DE",
+    "topicId": "DE_ORTHO_SEP_JOIN",
+    "difficulty": 1,
+    "qtype": "MCQ",
+    "prompt": "Welche Verbindung wird **immer zusammen**geschrieben?",
+    "payload": { "choices": ["Präposition + Verb (an + rufen → anrufen)", "Verb + Verb (schwimmen + gehen)", "Nomen + Verb (Rad + fahren)", "Adjektiv + Verb (laut + singen)"] },
+    "solution": { "correct_choice": "Präposition + Verb (an + rufen → anrufen)" },
+    "explanation": [
+      { "kind": "what", "body": "Präposition + Verb wird zu **einem** Wort: *anrufen, aufstehen, hingehen, mitkommen, zumachen*. Die anderen drei Verbindungen bleiben getrennt: *schwimmen gehen* (Verb + Verb), *Rad fahren* (Nomen + Verb), *laut singen* (Adjektiv + Verb)." },
+      { "kind": "remember", "body": "Merksatz: **Eine kleine Präposition hängt sich ans Verb, alle anderen halten Abstand.** Ausnahme: Wird die Wortgruppe zum Nomen (*beim Radfahren*), rückt sie zusammen." }
+    ],
+    "tags": ["getrennt-zusammen", "regel", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 3 (Getrennt oder zusammen)"
+  },
+  {
+    "id": "DE_O7_GZ_LEICHTFALLEN_MCQ",
+    "subject": "DE",
+    "topicId": "DE_ORTHO_SEP_JOIN",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "Welche Schreibweise ist richtig?\n\n„Mathe ist ihr schon immer … .“",
+    "payload": { "choices": ["leichtgefallen", "leicht gefallen", "leicht-gefallen"] },
+    "solution": { "correct_choice": "leichtgefallen" },
+    "explanation": [
+      { "kind": "what", "title": "Die Bedeutung entscheidet", "body": "*leichtfallen* bedeutet hier **keine Mühe machen**. Das ist eine **neue Gesamtbedeutung**, die sich nicht mehr aus *leicht* + *fallen* ergibt, deshalb **zusammen**: *leichtgefallen*.\n\nGetrennt nur in der wörtlichen Bedeutung: *Die Feder ist leicht (= sanft) auf den Boden gefallen.*" },
+      { "kind": "remember", "body": "Adjektiv + Verb ist normalerweise getrennt (*laut singen*). **Ausnahme**: Entsteht eine neue, übertragene Bedeutung, schreibt man zusammen: *leichtfallen* (keine Mühe machen), *schwerfallen*, *freisprechen* (für unschuldig erklären), *zusammenfahren* (erschrecken). Probe: Kannst du das Adjektiv steigern oder ersetzen (*sehr leicht fallen*)? Dann ist es wörtlich gemeint → getrennt." },
+      { "kind": "mistake", "body": "Bindestriche gibt es bei solchen Verben nie. Und *zusammen fahren* (gemeinsam fahren) vs. *zusammenfahren* (erschrecken) zeigt: Die Betonung und die Bedeutung entscheiden." }
+    ],
+    "tags": ["getrennt-zusammen", "bedeutung", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 3 (Getrennt oder zusammen); MSA Berlin 2023/2024, Aufgabe 403"
+  },
+  {
+    "id": "DE_O7_GZ_FEHLER_MCQ",
+    "subject": "DE",
+    "topicId": "DE_ORTHO_SEP_JOIN",
+    "difficulty": 4,
+    "qtype": "MCQ",
+    "prompt": "In welchem Satz ist die Getrennt- oder Zusammenschreibung **falsch**?",
+    "payload": { "choices": ["Wir wollen morgen schwimmengehen.", "Ich muss noch mein Zimmer aufräumen.", "Kannst du gut Gitarre spielen?", "Beim Fußballspielen hat er sich verletzt."] },
+    "solution": { "correct_choice": "Wir wollen morgen schwimmengehen." },
+    "explanation": [
+      { "kind": "steps", "title": "Satz für Satz", "body": "- *schwimmen gehen*: Verb + Verb → **getrennt**. „schwimmengehen“ ist falsch.\n- *aufräumen*: Präposition + Verb → zusammen ✓\n- *Gitarre spielen*: Nomen + Verb → getrennt ✓\n- *beim Fußballspielen*: Nominalisierung → zusammen und groß ✓" },
+      { "kind": "remember", "body": "Für jede Verbindung die Wortarten bestimmen: Präposition + Verb zusammen, Verb + Verb / Adjektiv + Verb / Nomen + Verb getrennt, Nominalisierung zusammen und groß." },
+      { "kind": "mistake", "body": "*schwimmen gehen* wird nur dann zusammengeschrieben, wenn es ein Nomen ist: *das Schwimmengehen*. Als Verb bleibt es getrennt." }
+    ],
+    "tags": ["getrennt-zusammen", "fehler-finden", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 3 und 4 (Überarbeiten eines Textes)"
+  },
+  {
+    "id": "DE_O7_GZ_TEXT_CLOZE",
+    "subject": "DE",
+    "topicId": "DE_ORTHO_SEP_JOIN",
+    "difficulty": 5,
+    "qtype": "CLOZE",
+    "prompt": "Überarbeite den Text: Wähle an jeder Lücke getrennt oder zusammen.",
+    "payload": { "text_with_blanks": "Heute wollen wir endlich ___. Mama sagt, ich soll vorher mein Zimmer ___ und den Müll ___. Beim ___ muss ich einen Helm tragen, sonst darf ich nicht mit.", "blanks": [{ "id": 1, "choices": ["Rad fahren", "Radfahren"] }, { "id": 2, "choices": ["auf räumen", "aufräumen"] }, { "id": 3, "choices": ["rausbringen", "raus bringen"] }, { "id": 4, "choices": ["Rad fahren", "Radfahren"] }] },
+    "solution": { "answers": { "1": "Rad fahren", "2": "aufräumen", "3": "rausbringen", "4": "Radfahren" } },
+    "explanation": [
+      { "kind": "steps", "title": "Lücke für Lücke", "body": "1. *wollen Rad fahren*: Nomen + Verb → **getrennt**.\n2. *aufräumen*: Präposition + Verb → **zusammen**.\n3. *rausbringen*: *raus* (heraus) + Verb → **zusammen**, wie *reinkommen, runterladen*.\n4. *Beim Radfahren*: *beim* macht die Wortgruppe zum Nomen → **zusammen und groß**." },
+      { "kind": "remember", "body": "Dieselbe Wortgruppe kann im Text **zweimal verschieden** vorkommen: als Verb getrennt (*Rad fahren*), als Nomen zusammen (*beim Radfahren*). Immer auf das Signalwort davor achten." },
+      { "kind": "mistake", "body": "Umgangssprachliche Kurzformen wie *raus, rein, runter, rüber* verhalten sich wie Präpositionen: *rausbringen, reinkommen* → zusammen." }
+    ],
+    "tags": ["getrennt-zusammen", "text-ueberarbeiten", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 3 und 4 (Überarbeiten eines Textes)"
+  },
+  {
+    "id": "DE_O7_DD_ZWEI_CLOZE_T1",
+    "subject": "DE",
+    "topicId": "DE_ORTHO_DAS_DASS",
+    "difficulty": 3,
+    "qtype": "CLOZE",
+    "prompt": "das oder dass? Entscheide an **beiden** Lücken.",
+    "payload": { "text_with_blanks": "{{s_satz}}", "blanks": [{ "id": 1, "choices": ["das", "dass"] }, { "id": 2, "choices": ["das", "dass"] }] },
+    "solution": { "answers": { "1": "{{s_l1}}", "2": "{{s_l2}}" } },
+    "explanation": [
+      { "kind": "steps", "title": "Ersatzprobe für jede Lücke", "body": "{{s_hinweis}}" },
+      { "kind": "remember", "body": "Ersetze das Wort durch **dieses**, **jenes** oder **welches**. Passt es → **das** (Artikel, Pronomen oder Relativpronomen). Passt es nicht → **dass** (Konjunktion, leitet einen Nebensatz ein). Steht das Wort **direkt vor einem Nomen** (*das Spiel*), ist es der Artikel → immer *das*." },
+      { "kind": "mistake", "body": "Nach einem Komma kommt **nicht automatisch** *dass*. *Das Video, das du mir geschickt hast* → Relativpronomen, Probe mit *welches* klappt → *das*. Und direkt hintereinander ist *dass das* völlig normal: *Ich glaube, dass das Spiel ausfällt.*" }
+    ],
+    "tags": ["das-dass", "ersatzprobe", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 3 (das oder dass)",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "s": {
+          "type": "pick",
+          "from": [
+            { "satz": "Ich glaube, ___ ___ Spiel morgen ausfällt.", "l1": "dass", "l2": "das", "hinweis": "1. Lücke: „Ich glaube, welches …“ ergibt keinen Sinn → Konjunktion → **dass**.\n2. Lücke: steht direkt vor dem Nomen *Spiel* → Artikel → **das** (*dieses Spiel* passt)." },
+            { "satz": "Er sagt, ___ er ___ Referat schon fertig hat.", "l1": "dass", "l2": "das", "hinweis": "1. Lücke: „Er sagt, welches er …“ klappt nicht → **dass**.\n2. Lücke: *das Referat*, Artikel vor dem Nomen → **das**." },
+            { "satz": "Das Video, ___ du mir geschickt hast, war so lustig, ___ ich fast geheult habe.", "l1": "das", "l2": "dass", "hinweis": "1. Lücke: „Das Video, **welches** du mir geschickt hast“ passt → Relativpronomen → **das**.\n2. Lücke: „so lustig, welches ich …“ klappt nicht → **dass**." },
+            { "satz": "Mia hofft, ___ ___ Wetter am Samstag hält.", "l1": "dass", "l2": "das", "hinweis": "1. Lücke: „Mia hofft, welches …“ klappt nicht → **dass**.\n2. Lücke: *das Wetter*, Artikel → **das**." },
+            { "satz": "Ich finde es blöd, ___ ___ Konzert abgesagt wurde.", "l1": "dass", "l2": "das", "hinweis": "1. Lücke: „blöd, welches …“ klappt nicht → **dass**.\n2. Lücke: *das Konzert*, Artikel → **das**." },
+            { "satz": "Ist es wahr, ___ ihr ___ Spiel gewonnen habt?", "l1": "dass", "l2": "das", "hinweis": "1. Lücke: „Ist es wahr, welches ihr …“ klappt nicht → **dass**.\n2. Lücke: *das Spiel*, Artikel → **das**." },
+            { "satz": "Weißt du, ___ ___ Kino heute geschlossen ist?", "l1": "dass", "l2": "das", "hinweis": "1. Lücke: „Weißt du, welches …“ klappt nicht → **dass**.\n2. Lücke: *das Kino*, Artikel → **das**." },
+            { "satz": "Sie meint, ___ ___ nicht so schlimm ist.", "l1": "dass", "l2": "das", "hinweis": "1. Lücke: „Sie meint, welches …“ klappt nicht → **dass**.\n2. Lücke: „dass **dies** nicht so schlimm ist“ passt → Pronomen → **das**." },
+            { "satz": "Ich hoffe, ___ du ___ Foto nicht postest.", "l1": "dass", "l2": "das", "hinweis": "1. Lücke: „Ich hoffe, welches du …“ klappt nicht → **dass**.\n2. Lücke: *das Foto*, Artikel → **das**." },
+            { "satz": "Der Trainer sagt, ___ ___ Training heute ausfällt.", "l1": "dass", "l2": "das", "hinweis": "1. Lücke: „Der Trainer sagt, welches …“ klappt nicht → **dass**.\n2. Lücke: *das Training*, Artikel → **das**." },
+            { "satz": "Das Problem ist, ___ ich ___ Passwort vergessen habe.", "l1": "dass", "l2": "das", "hinweis": "1. Lücke: „Das Problem ist, welches ich …“ klappt nicht → **dass**.\n2. Lücke: *das Passwort*, Artikel → **das**." },
+            { "satz": "Es ist schön, ___ ___ endlich klappt.", "l1": "dass", "l2": "das", "hinweis": "1. Lücke: „Es ist schön, welches …“ klappt nicht → **dass**.\n2. Lücke: „dass **dies** endlich klappt“ passt → Pronomen → **das**." },
+            { "satz": "Ich weiß nicht, ob ___ stimmt, ___ Tim umzieht.", "l1": "das", "l2": "dass", "hinweis": "1. Lücke: „ob **dies** stimmt“ passt → Pronomen → **das**.\n2. Lücke: „welches Tim umzieht“ klappt nicht → **dass**." },
+            { "satz": "Alles, ___ du brauchst, ist ein Ladekabel, ___ auch wirklich funktioniert.", "l1": "das", "l2": "das", "hinweis": "Beide Male Relativpronomen: „Alles, **welches** du brauchst“ und „ein Ladekabel, **welches** funktioniert“ passen → zweimal **das**." }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "DE_O7_DD_SATZ_MCQ_T1",
+    "subject": "DE",
+    "topicId": "DE_ORTHO_DAS_DASS",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "Welcher Satz ist richtig geschrieben? Achte auf **das** und **dass**.",
+    "payload": { "choices": ["{{s_a}}", "{{s_b}}", "{{s_c}}", "{{s_d}}"] },
+    "solution": { "correct_choice": "{{s_a}}" },
+    "explanation": [
+      { "kind": "steps", "title": "Ersatzprobe", "body": "{{s_hinweis}}" },
+      { "kind": "remember", "body": "**das** = Artikel, Pronomen oder Relativpronomen: lässt sich durch **dieses/jenes/welches** ersetzen. **dass** = Konjunktion: leitet einen Nebensatz ein, die Ersatzprobe klappt **nicht**. Vor *dass* steht immer ein Komma, aber nicht nach jedem Komma kommt *dass*." }
+    ],
+    "tags": ["das-dass", "rechtschreibung", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 3 (das oder dass)",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "s": {
+          "type": "pick",
+          "from": [
+            { "a": "Mir ist egal, dass das Spiel verloren ging.", "b": "Mir ist egal, das dass Spiel verloren ging.", "c": "Mir ist egal, das das Spiel verloren ging.", "d": "Mir ist egal, dass dass Spiel verloren ging.", "hinweis": "Nach dem Komma: „egal, welches …“ klappt nicht → **dass**. Vor *Spiel* steht der Artikel → **das**." },
+            { "a": "Das Handy, das ich mir wünsche, ist zu teuer.", "b": "Das Handy, dass ich mir wünsche, ist zu teuer.", "c": "Dass Handy, das ich mir wünsche, ist zu teuer.", "d": "Dass Handy, dass ich mir wünsche, ist zu teuer.", "hinweis": "„Das Handy, **welches** ich mir wünsche“ passt → Relativpronomen → **das**. Am Anfang: Artikel vor *Handy* → **Das**." },
+            { "a": "Er weiß, dass er das Referat halten muss.", "b": "Er weiß, das er das Referat halten muss.", "c": "Er weiß, dass er dass Referat halten muss.", "d": "Er weiß, das er dass Referat halten muss.", "hinweis": "„Er weiß, welches er …“ klappt nicht → **dass**. Vor *Referat* steht der Artikel → **das**." },
+            { "a": "Das ist das Beste, was mir passieren konnte.", "b": "Dass ist das Beste, was mir passieren konnte.", "c": "Das ist dass Beste, was mir passieren konnte.", "d": "Dass ist dass Beste, was mir passieren konnte.", "hinweis": "„**Dies** ist das Beste“ passt → Pronomen → **Das**. *das Beste*: Artikel → **das**. Hier kommt gar kein *dass* vor, obwohl ein Komma im Satz steht." },
+            { "a": "Ich glaube, dass das Video viral geht.", "b": "Ich glaube, das das Video viral geht.", "c": "Ich glaube, dass dass Video viral geht.", "d": "Ich glaube, das dass Video viral geht.", "hinweis": "„Ich glaube, welches …“ klappt nicht → **dass**. Vor *Video* steht der Artikel → **das**." },
+            { "a": "Das Fahrrad, das vor der Tür steht, gehört Leon.", "b": "Das Fahrrad, dass vor der Tür steht, gehört Leon.", "c": "Dass Fahrrad, das vor der Tür steht, gehört Leon.", "d": "Dass Fahrrad, dass vor der Tür steht, gehört Leon.", "hinweis": "„Das Fahrrad, **welches** vor der Tür steht“ passt → Relativpronomen → **das**. Am Anfang Artikel → **Das**." },
+            { "a": "Sie sagt, dass sie das nicht war.", "b": "Sie sagt, das sie das nicht war.", "c": "Sie sagt, dass sie dass nicht war.", "d": "Sie sagt, das sie dass nicht war.", "hinweis": "„Sie sagt, welches sie …“ klappt nicht → **dass**. „dass sie **dies** nicht war“ passt → Pronomen → **das**." },
+            { "a": "Ich wusste nicht, dass das Kino heute zu hat.", "b": "Ich wusste nicht, das das Kino heute zu hat.", "c": "Ich wusste nicht, dass dass Kino heute zu hat.", "d": "Ich wusste nicht, das dass Kino heute zu hat.", "hinweis": "„Ich wusste nicht, welches …“ klappt nicht → **dass**. Vor *Kino* steht der Artikel → **das**." },
+            { "a": "Das Problem ist, dass niemand das Passwort kennt.", "b": "Dass Problem ist, dass niemand das Passwort kennt.", "c": "Das Problem ist, das niemand das Passwort kennt.", "d": "Das Problem ist, dass niemand dass Passwort kennt.", "hinweis": "*Das Problem*, *das Passwort*: Artikel → **das**. „Das Problem ist, welches niemand …“ klappt nicht → **dass**." },
+            { "a": "Kennst du das Lied, das gerade überall läuft?", "b": "Kennst du das Lied, dass gerade überall läuft?", "c": "Kennst du dass Lied, das gerade überall läuft?", "d": "Kennst du dass Lied, dass gerade überall läuft?", "hinweis": "*das Lied*: Artikel → **das**. „das Lied, **welches** gerade überall läuft“ passt → Relativpronomen → **das**." },
+            { "a": "Es stimmt, dass das Training länger dauert.", "b": "Es stimmt, das das Training länger dauert.", "c": "Es stimmt, dass dass Training länger dauert.", "d": "Es stimmt, das dass Training länger dauert.", "hinweis": "„Es stimmt, welches …“ klappt nicht → **dass**. Vor *Training* steht der Artikel → **das**." },
+            { "a": "Das Beste ist, dass wir morgen frei haben.", "b": "Dass Beste ist, dass wir morgen frei haben.", "c": "Das Beste ist, das wir morgen frei haben.", "d": "Dass Beste ist, das wir morgen frei haben.", "hinweis": "*Das Beste*: Artikel vor dem nominalisierten Adjektiv → **Das**. „Das Beste ist, welches wir …“ klappt nicht → **dass**." }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "DE_O7_DD_WORTART_MCQ",
+    "subject": "DE",
+    "topicId": "DE_ORTHO_DAS_DASS",
+    "difficulty": 1,
+    "qtype": "MCQ",
+    "prompt": "Welche Wortart ist **dass** (mit ss)?",
+    "payload": { "choices": ["Konjunktion (Bindewort): leitet einen Nebensatz ein", "Artikel: steht vor einem Nomen", "Relativpronomen: leitet einen Relativsatz ein", "Adverb: beschreibt, wie etwas geschieht"] },
+    "solution": { "correct_choice": "Konjunktion (Bindewort): leitet einen Nebensatz ein" },
+    "explanation": [
+      { "kind": "what", "body": "**dass** ist eine **Konjunktion**. Sie verbindet einen Hauptsatz mit einem Nebensatz: *Ich hoffe, **dass** du kommst.* Das Verb des Nebensatzes steht am Ende (*kommst*).\n\n**das** (mit einem s) kann dagegen Artikel (*das Handy*), Pronomen (*Das stimmt.*) oder Relativpronomen (*das Handy, das ich will*) sein." },
+      { "kind": "remember", "body": "In der Prüfung sollst du die **Wortart nennen** und die **Ersatzprobe** zeigen: *dass* lässt sich **nicht** durch dieses/jenes/welches ersetzen, *das* schon." }
+    ],
+    "tags": ["das-dass", "wortart", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 3 (das oder dass)"
+  },
+  {
+    "id": "DE_O7_DD_TEXT_CLOZE",
+    "subject": "DE",
+    "topicId": "DE_ORTHO_DAS_DASS",
+    "difficulty": 4,
+    "qtype": "CLOZE",
+    "prompt": "das oder dass? Wähle an allen vier Lücken, auch am Satzanfang.",
+    "payload": { "text_with_blanks": "___ du mir beim Referat hilfst, finde ich super. ___ Thema, ___ wir bekommen haben, ist nämlich ziemlich schwer, und ich fürchte, ___ ich es allein nicht schaffe.", "blanks": [{ "id": 1, "choices": ["Dass", "Das"] }, { "id": 2, "choices": ["Dass", "Das"] }, { "id": 3, "choices": ["das", "dass"] }, { "id": 4, "choices": ["das", "dass"] }] },
+    "solution": { "answers": { "1": "Dass", "2": "Das", "3": "das", "4": "dass" } },
+    "explanation": [
+      { "kind": "steps", "title": "Lücke für Lücke", "body": "1. **Dass** du mir hilfst: Nebensatz am Satzanfang, „Welches du mir hilfst“ ergibt keinen Sinn → Konjunktion.\n2. **Das** Thema: Artikel vor dem Nomen → das.\n3. das Thema, **das** wir bekommen haben: „welches wir bekommen haben“ passt → Relativpronomen.\n4. ich fürchte, **dass** ich es nicht schaffe: „ich fürchte, welches ich …“ klappt nicht → Konjunktion." },
+      { "kind": "remember", "body": "Auch **am Satzanfang** gilt die Ersatzprobe: *Dass du hilfst, finde ich super* (Nebensatz vorn, Komma danach). *Das Thema* dagegen ist Artikel + Nomen." },
+      { "kind": "mistake", "body": "Ein *dass*-Satz kann **vorn** stehen. Dann beginnt der Satz mit *Dass* und hinter dem Nebensatz steht ein Komma." }
+    ],
+    "tags": ["das-dass", "text-ueberarbeiten", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 3; vgl. MSA Berlin 2023/2024, Aufgabe 402"
+  },
+  {
+    "id": "DE_O7_DD_FEHLER_MCQ",
+    "subject": "DE",
+    "topicId": "DE_ORTHO_DAS_DASS",
+    "difficulty": 5,
+    "qtype": "MCQ",
+    "prompt": "Im Gruppenchat stehen diese vier Sätze. In welchem ist **das/dass** falsch?",
+    "payload": { "choices": ["Ich glaube, dass wir zu spät kommen.", "Das Spiel, dass wir sehen wollen, fängt um acht an.", "Das ist doch nicht so schlimm.", "Hauptsache, dass wir überhaupt noch reinkommen."] },
+    "solution": { "correct_choice": "Das Spiel, dass wir sehen wollen, fängt um acht an." },
+    "explanation": [
+      { "kind": "steps", "title": "Ersatzprobe in jedem Satz", "body": "- *Ich glaube, dass wir zu spät kommen*: „welches wir …“ klappt nicht → dass ✓\n- *Das Spiel, dass wir sehen wollen*: „Das Spiel, **welches** wir sehen wollen“ passt → Relativpronomen → muss **das** heißen ✗\n- *Das ist doch nicht so schlimm*: „**Dies** ist doch nicht so schlimm“ passt → das ✓\n- *Hauptsache, dass wir reinkommen*: „Hauptsache, welches wir …“ klappt nicht → dass ✓" },
+      { "kind": "remember", "body": "Der häufigste Fehler in der Prüfung: **dass nach einem Relativsatz-Komma**. Steht vor dem Komma ein Nomen (*das Spiel, das …*) und erklärt der Nebensatz dieses Nomen, ist es ein Relativpronomen → *das*." },
+      { "kind": "mistake", "body": "Nicht jedes Komma kündigt *dass* an. Frag: Erklärt der Nebensatz ein Nomen (→ *das*) oder sagt er, **was** jemand glaubt, hofft, weiß (→ *dass*)?" }
+    ],
+    "tags": ["das-dass", "fehler-finden", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 3 und 4 (Überarbeiten eines Textes)"
+  },
+  {
+    "id": "DE_O7_STRAT_PRUEFUNG_MCQ_T1",
+    "subject": "DE",
+    "topicId": "DE_ORTHO_STRATEGIES",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Welche Strategie wendest du an, um das Wort **{{s_wort}}** richtig zu schreiben?\n\n**{{s_frage}}**",
+    "payload": { "choices": ["Ich verlängere das Wort.", "Ich bilde ein stammverwandtes Wort.", "Ich zerlege das Wort in seine Silben.", "Ich prüfe, ob ein Dehnungs-h (vor l, m, n, r) oder ein Trennungs-h nötig ist."] },
+    "solution": { "correct_choice": "{{s_loesung}}" },
+    "explanation": [
+      { "kind": "steps", "title": "So geht die Probe", "body": "{{s_probe}}" },
+      { "kind": "remember", "body": "Die Frage verrät die Strategie: **b/p, d/t, g/k am Ende → verlängern** (Plural, Infinitiv, Komparativ). **ä/e, äu/eu → stammverwandtes Wort** (ableiten). **Doppelkonsonant? → Silben** zerlegen. **h? → Dehnungs-h** vor l, m, n, r oder **Trennungs-h** zwischen zwei Vokalen. Genau so ist die Aufgabe in der Prüfung formuliert." }
+    ],
+    "tags": ["strategie", "pruefungsformat", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 3 (Rechtschreibstrategien); Aufgabenformat MSA Berlin 2023/2024, Aufgabe 401",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "s": {
+          "type": "pick",
+          "from": [
+            { "wort": "gefährlich", "frage": "ä oder e?", "loesung": "Ich bilde ein stammverwandtes Wort.", "probe": "Stammverwandtes Wort: **Gefahr** → aus a wird ä → *gefährlich*." },
+            { "wort": "rennen", "frage": "n oder nn?", "loesung": "Ich zerlege das Wort in seine Silben.", "probe": "Silben: **ren-nen** → das n gehört zu beiden Silben → nn." },
+            { "wort": "Fahrrad", "frage": "mit oder ohne h?", "loesung": "Ich prüfe, ob ein Dehnungs-h (vor l, m, n, r) oder ein Trennungs-h nötig ist.", "probe": "Langes a vor **r** → Dehnungs-h: *fah-ren* → *Fahrrad*." },
+            { "wort": "bunt", "frage": "d oder t am Ende?", "loesung": "Ich verlängere das Wort.", "probe": "Verlängern: *bun**t**e* Farben → man hört das t → *bunt*." },
+            { "wort": "Räuber", "frage": "äu oder eu?", "loesung": "Ich bilde ein stammverwandtes Wort.", "probe": "Stammverwandtes Wort: **Raub** → aus au wird äu → *Räuber*." },
+            { "wort": "Mitte", "frage": "t oder tt?", "loesung": "Ich zerlege das Wort in seine Silben.", "probe": "Silben: **Mit-te** → tt." },
+            { "wort": "Zweig", "frage": "g oder k am Ende?", "loesung": "Ich verlängere das Wort.", "probe": "Verlängern: *Zwei**g**e* → man hört das g → *Zweig*." },
+            { "wort": "wohnen", "frage": "mit oder ohne h?", "loesung": "Ich prüfe, ob ein Dehnungs-h (vor l, m, n, r) oder ein Trennungs-h nötig ist.", "probe": "Langes o vor **n** → Dehnungs-h: *woh-nen*." },
+            { "wort": "Hälfte", "frage": "ä oder e?", "loesung": "Ich bilde ein stammverwandtes Wort.", "probe": "Stammverwandtes Wort: **halb** → aus a wird ä → *Hälfte*." },
+            { "wort": "Sonne", "frage": "n oder nn?", "loesung": "Ich zerlege das Wort in seine Silben.", "probe": "Silben: **Son-ne** → nn." },
+            { "wort": "Kleid", "frage": "d oder t am Ende?", "loesung": "Ich verlängere das Wort.", "probe": "Verlängern: *Klei**d**er* → man hört das d → *Kleid*." },
+            { "wort": "ruhig", "frage": "mit oder ohne h?", "loesung": "Ich prüfe, ob ein Dehnungs-h (vor l, m, n, r) oder ein Trennungs-h nötig ist.", "probe": "Zwischen u und i steht ein **Trennungs-h**: *ru-hig* (verwandt mit *Ruhe*)." },
+            { "wort": "Träume", "frage": "äu oder eu?", "loesung": "Ich bilde ein stammverwandtes Wort.", "probe": "Stammverwandtes Wort: **Traum** → aus au wird äu → *Träume*." },
+            { "wort": "Korb", "frage": "b oder p am Ende?", "loesung": "Ich verlängere das Wort.", "probe": "Verlängern: *Kör**b**e* → man hört das b → *Korb*." },
+            { "wort": "Rolle", "frage": "l oder ll?", "loesung": "Ich zerlege das Wort in seine Silben.", "probe": "Silben: **Rol-le** → ll." },
+            { "wort": "Mehl", "frage": "mit oder ohne h?", "loesung": "Ich prüfe, ob ein Dehnungs-h (vor l, m, n, r) oder ein Trennungs-h nötig ist.", "probe": "Langes e vor **l** → Dehnungs-h: *Mehl*." }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "DE_O7_STRAT_PROBEWORT_MCQ_T1",
+    "subject": "DE",
+    "topicId": "DE_ORTHO_STRATEGIES",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "**{{s_wort}}**: {{s_frage}}\n\nMit welchem Wort prüfst du das am besten?",
+    "payload": { "choices": ["{{s_a}}", "{{s_b}}", "{{s_c}}", "{{s_d}}"] },
+    "solution": { "correct_choice": "{{s_a}}" },
+    "explanation": [
+      { "kind": "what", "title": "Das richtige Probewort", "body": "{{s_hinweis}}" },
+      { "kind": "remember", "body": "Ein Probewort muss **zwei Bedingungen** erfüllen: Es ist mit dem Wort **verwandt** (gleicher Wortstamm) **und** an der fraglichen Stelle **hört oder sieht man die Lösung**. Beim **Verlängern** hängst du etwas an (*Wald → Wälder*), beim **Ableiten** suchst du die Grundform mit a oder au (*fällt → fallen*)." },
+      { "kind": "mistake", "body": "Wörter, die nur **ähnlich klingen** (*Feld* für *fällt*), sind keine Probewörter. Und ein Wort mit derselben unsicheren Stelle (*Bäckerei* für *Bäcker*) beweist nichts." }
+    ],
+    "tags": ["strategie", "probewort", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 3 (Verlängern, Ableiten)",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "s": {
+          "type": "pick",
+          "from": [
+            { "wort": "Wald", "frage": "d oder t am Ende?", "a": "Wälder", "b": "Waldweg", "c": "wild", "d": "Wal", "hinweis": "**Verlängern**: Plural *Wäl-der* → das d ist deutlich zu hören → *Wald*. *Waldweg* hilft nicht, weil das Wortende gleich bleibt; *wild* und *Wal* sind nicht verwandt." },
+            { "wort": "Zug", "frage": "g oder k am Ende?", "a": "Züge", "b": "Zucker", "c": "zurück", "d": "zack", "hinweis": "**Verlängern**: Plural *Zü-ge* → das g ist hörbar → *Zug*." },
+            { "wort": "fällt", "frage": "ä oder e?", "a": "fallen", "b": "Fell", "c": "Feld", "d": "fällig", "hinweis": "**Ableiten**: verwandtes Wort *fallen* mit a → ä → *fällt*. *Fell* und *Feld* klingen ähnlich, sind aber nicht verwandt." },
+            { "wort": "Bäcker", "frage": "ä oder e?", "a": "backen", "b": "Becken", "c": "Bett", "d": "Bäckerei", "hinweis": "**Ableiten**: *backen* mit a → ä → *Bäcker*. *Bäckerei* enthält dieselbe unsichere Stelle und beweist nichts." },
+            { "wort": "gibt", "frage": "b oder p?", "a": "geben", "b": "Gips", "c": "Gift", "d": "gibst", "hinweis": "**Verlängern**: Infinitiv *ge-ben* → das b ist hörbar → *gibt*. *gibst* hat dasselbe Problem wie *gibt*." },
+            { "wort": "Häuser", "frage": "äu oder eu?", "a": "Haus", "b": "heute", "c": "Heu", "d": "Hose", "hinweis": "**Ableiten**: *Haus* mit au → äu → *Häuser*. *heute* und *Heu* haben eu, sind aber nicht verwandt." },
+            { "wort": "Kälte", "frage": "ä oder e?", "a": "kalt", "b": "Keller", "c": "Kelle", "d": "Kalender", "hinweis": "**Ableiten**: *kalt* mit a → ä → *Kälte*." },
+            { "wort": "Krieg", "frage": "g oder k am Ende?", "a": "Kriege", "b": "kriechen", "c": "Krebs", "d": "Krähe", "hinweis": "**Verlängern**: Plural *Krie-ge* → das g ist hörbar → *Krieg*." },
+            { "wort": "läuft", "frage": "äu oder eu?", "a": "laufen", "b": "Leute", "c": "leuchten", "d": "Läufer", "hinweis": "**Ableiten**: *laufen* mit au → äu → *läuft*. *Läufer* hat dieselbe unsichere Stelle und beweist nichts." },
+            { "wort": "Dieb", "frage": "b oder p am Ende?", "a": "Diebe", "b": "Tipp", "c": "dies", "d": "Diät", "hinweis": "**Verlängern**: Plural *Die-be* → das b ist hörbar → *Dieb*." },
+            { "wort": "wärmen", "frage": "ä oder e?", "a": "warm", "b": "Wurm", "c": "werfen", "d": "Wermut", "hinweis": "**Ableiten**: *warm* mit a → ä → *wärmen*." },
+            { "wort": "Hemd", "frage": "d oder t am Ende?", "a": "Hemden", "b": "hemmen", "c": "Hammer", "d": "Held", "hinweis": "**Verlängern**: Plural *Hem-den* → das d ist hörbar → *Hemd*." }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "DE_O7_STRAT_VERLAENGERN_MCQ",
+    "subject": "DE",
+    "topicId": "DE_ORTHO_STRATEGIES",
+    "difficulty": 1,
+    "qtype": "MCQ",
+    "prompt": "Bei welcher Frage hilft dir die Strategie **Verlängern**?",
+    "payload": { "choices": ["Hund: d oder t am Ende?", "Stärke: ä oder e?", "Butter: t oder tt?", "fühlen: mit oder ohne h?"] },
+    "solution": { "correct_choice": "Hund: d oder t am Ende?" },
+    "explanation": [
+      { "kind": "what", "body": "Am **Wortende** klingen b/p, d/t und g/k gleich. Verlängerst du das Wort (*Hund → Hun**d**e*), rutscht der Buchstabe in die Wortmitte und du hörst ihn.\n\nDie anderen Fragen brauchen andere Strategien: *Stärke* → ableiten (*stark*), *Butter* → Silben (*But-ter*), *fühlen* → Dehnungs-h prüfen." },
+      { "kind": "remember", "body": "**Verlängern**: Nomen in den Plural (*Hund → Hunde*), Verb in den Infinitiv (*liebt → lieben*), Adjektiv steigern (*klug → klüger*)." }
+    ],
+    "tags": ["strategie", "verlaengern", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 3 (Verlängern)"
+  },
+  {
+    "id": "DE_O7_STRAT_MATCH",
+    "subject": "DE",
+    "topicId": "DE_ORTHO_STRATEGIES",
+    "difficulty": 4,
+    "qtype": "MATCH",
+    "prompt": "Ordne jeder Rechtschreibfrage die passende Strategie mit dem Probewort zu.",
+    "payload": {
+      "left": ["Räder: ä oder e?", "Sand: d oder t am Ende?", "Kanne: n oder nn?", "Bohne: mit oder ohne h?"],
+      "right": ["Ableiten: verwandtes Wort mit a suchen (Rad)", "Verlängern: ein längeres Wort bilden (sandig)", "Silbenprobe: Kan-ne", "Dehnungs-h prüfen: langes o vor n"]
+    },
+    "solution": { "pairs": [["Räder: ä oder e?", "Ableiten: verwandtes Wort mit a suchen (Rad)"], ["Sand: d oder t am Ende?", "Verlängern: ein längeres Wort bilden (sandig)"], ["Kanne: n oder nn?", "Silbenprobe: Kan-ne"], ["Bohne: mit oder ohne h?", "Dehnungs-h prüfen: langes o vor n"]] },
+    "explanation": [
+      { "kind": "steps", "body": "- **Räder**: ä oder e → verwandtes Wort *Rad* hat a → ä (Ableiten).\n- **Sand**: d oder t am Ende → ein längeres Wort bilden, in dem nach dem Laut ein Vokal folgt: *san**d**ig* → d (Verlängern).\n- **Kanne**: n oder nn → *Kan-ne*, das n in beiden Silben → nn (Silbenprobe).\n- **Bohne**: langes o vor n → Dehnungs-h möglich und hier nötig: *Boh-ne*." },
+      { "kind": "remember", "body": "Die Frage zeigt die Strategie: **Endlaut → verlängern**, **ä/äu → ableiten**, **Doppelkonsonant → Silben**, **langer Vokal → h prüfen**." },
+      { "kind": "mistake", "body": "Bei *Sand* hilft *Sandburg* nicht, weil *Sand* darin unverändert am Anfang steht und der Endlaut vor dem b bleibt. Nur ein Wort, bei dem nach dem d ein Vokal folgt (*sandig, Sande*), macht das d hörbar." }
+    ],
+    "tags": ["strategie", "zuordnen", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 3 (Rechtschreibstrategien)"
+  },
+  {
+    "id": "DE_O7_STRAT_TEXT_CLOZE",
+    "subject": "DE",
+    "topicId": "DE_ORTHO_STRATEGIES",
+    "difficulty": 5,
+    "qtype": "CLOZE",
+    "prompt": "Wähle an jeder Lücke die richtige Schreibweise und überlege, welche Strategie dir hilft.",
+    "payload": { "text_with_blanks": "Im ___ war es ___ als gedacht, und mein ___ hatte auch noch einen Platten. Ich musste erst mal in ___ durchatmen.", "blanks": [{ "id": 1, "choices": ["Walt", "Wald"] }, { "id": 2, "choices": ["kälter", "kelter"] }, { "id": 3, "choices": ["Renrad", "Rennrad"] }, { "id": 4, "choices": ["Ruhe", "Rue"] }] },
+    "solution": { "answers": { "1": "Wald", "2": "kälter", "3": "Rennrad", "4": "Ruhe" } },
+    "explanation": [
+      { "kind": "steps", "title": "Lücke für Lücke", "body": "1. **Wald**: d oder t? → **Verlängern**: *Wäl-der* → d.\n2. **kälter**: ä oder e? → **Ableiten**: *kalt* → ä.\n3. **Rennrad**: n oder nn? → **Silbenprobe** beim Grundwort: *ren-nen* → nn, also *Renn-rad*.\n4. **Ruhe**: h? → **Trennungs-h** zwischen u und e." },
+      { "kind": "remember", "body": "Vier Strategien, vier Fragen: **Verlängern** (Endlaut), **Ableiten** (ä/äu), **Silben** (Doppelkonsonant), **h prüfen** (langer Vokal oder zwei Vokale). Bei zusammengesetzten Wörtern (*Rennrad*) prüfst du jeden Teil einzeln." }
+    ],
+    "tags": ["strategie", "text-ueberarbeiten", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 3 (Rechtschreibstrategien)"
+  },
+  {
+    "id": "DE_O7_AUFZ_CLOZE_T1",
+    "subject": "DE",
+    "topicId": "DE_PUNCT_COMMA_LIST",
+    "difficulty": 2,
+    "qtype": "CLOZE",
+    "prompt": "Aufzählung: Komma oder kein Komma? Entscheide an **beiden** Lücken.",
+    "payload": { "text_with_blanks": "{{s_satz}}", "blanks": [{ "id": 1, "choices": ["Komma", "kein Komma"] }, { "id": 2, "choices": ["Komma", "kein Komma"] }] },
+    "solution": { "answers": { "1": "{{s_l1}}", "2": "{{s_l2}}" } },
+    "explanation": [
+      { "kind": "what", "title": "Die Regel", "body": "{{s_hinweis}}" },
+      { "kind": "answer", "body": "{{s_korrekt}}" },
+      { "kind": "remember", "body": "Die Glieder einer **Aufzählung** (Wörter oder Wortgruppen gleicher Art) werden durch **Kommas** getrennt. Vor **und**, **oder**, **sowie** und bei **weder … noch** steht **kein** Komma: *Affen, Elefanten und Zebras*." },
+      { "kind": "mistake", "body": "Komma vor *und* ist der häufigste Aufzählungsfehler: *Äpfel, Birnen, und Trauben* ✗. Das *und* ersetzt das Komma." }
+    ],
+    "tags": ["komma", "aufzaehlung", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 3 (Kommasetzung: Aufzählungen)",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "s": {
+          "type": "pick",
+          "from": [
+            { "satz": "Im Rucksack sind Hefte___ Stifte___ und ein Lineal.", "l1": "Komma", "l2": "kein Komma", "hinweis": "Drei gleichartige Glieder: *Hefte, Stifte, ein Lineal*. Zwischen die Glieder kommt ein Komma, vor **und** nicht.", "korrekt": "Im Rucksack sind Hefte, Stifte und ein Lineal." },
+            { "satz": "Wir brauchen Mehl___ Zucker___ Eier und Butter.", "l1": "Komma", "l2": "Komma", "hinweis": "Vier Zutaten: Kommas zwischen die Glieder, nur vor *und* keins.", "korrekt": "Wir brauchen Mehl, Zucker, Eier und Butter." },
+            { "satz": "Wir schauen einen Film___ spielen Karten___ oder gehen raus.", "l1": "Komma", "l2": "kein Komma", "hinweis": "Aufzählung von drei Tätigkeiten. Vor **oder** steht wie vor *und* kein Komma.", "korrekt": "Wir schauen einen Film, spielen Karten oder gehen raus." },
+            { "satz": "Lea___ Tim___ und ich fahren mit.", "l1": "Komma", "l2": "kein Komma", "hinweis": "Drei Personen werden aufgezählt: Komma nach *Lea*, vor *und* keins.", "korrekt": "Lea, Tim und ich fahren mit." },
+            { "satz": "Der Hund ist klein___ frech___ und total süß.", "l1": "Komma", "l2": "kein Komma", "hinweis": "Drei gleichrangige Adjektive (*klein und frech und süß* klappt): Komma dazwischen, vor *und* keins.", "korrekt": "Der Hund ist klein, frech und total süß." },
+            { "satz": "Ich habe heute Deutsch___ Mathe___ Englisch und Sport.", "l1": "Komma", "l2": "Komma", "hinweis": "Vier Fächer: Kommas zwischen die Glieder, nur vor *und* keins.", "korrekt": "Ich habe heute Deutsch, Mathe, Englisch und Sport." },
+            { "satz": "Nach der Schule esse ich___ chille kurz___ und mache dann Hausaufgaben.", "l1": "Komma", "l2": "kein Komma", "hinweis": "Auch Satzteile mit Verben werden aufgezählt: *esse, chille, mache*. Vor *und* kein Komma.", "korrekt": "Nach der Schule esse ich, chille kurz und mache dann Hausaufgaben." },
+            { "satz": "Sie spielt Gitarre___ singt___ und tanzt.", "l1": "Komma", "l2": "kein Komma", "hinweis": "Drei Tätigkeiten: Komma nach *Gitarre*, vor *und* keins.", "korrekt": "Sie spielt Gitarre, singt und tanzt." },
+            { "satz": "Zum Geburtstag wünsche ich mir Kopfhörer___ ein neues Spiel___ oder Geld.", "l1": "Komma", "l2": "kein Komma", "hinweis": "Drei Wünsche: Komma zwischen die Glieder, vor **oder** keins.", "korrekt": "Zum Geburtstag wünsche ich mir Kopfhörer, ein neues Spiel oder Geld." },
+            { "satz": "Wir waren im Kino___ im Park___ und am See.", "l1": "Komma", "l2": "kein Komma", "hinweis": "Drei Orte: Komma nach *Kino*, vor *und* keins.", "korrekt": "Wir waren im Kino, im Park und am See." },
+            { "satz": "Ich mag Pizza___ Pasta___ Sushi und Döner.", "l1": "Komma", "l2": "Komma", "hinweis": "Vier Gerichte: Kommas zwischen die Glieder, nur vor *und* keins.", "korrekt": "Ich mag Pizza, Pasta, Sushi und Döner." },
+            { "satz": "Der Lehrer war müde___ genervt___ und trotzdem freundlich.", "l1": "Komma", "l2": "kein Komma", "hinweis": "Drei Adjektive: Komma nach *müde*, vor *und* keins.", "korrekt": "Der Lehrer war müde, genervt und trotzdem freundlich." },
+            { "satz": "Ich kaufe Brot___ Käse___ sowie Tomaten.", "l1": "Komma", "l2": "kein Komma", "hinweis": "*sowie* bedeutet *und* und bekommt genauso **kein** Komma.", "korrekt": "Ich kaufe Brot, Käse sowie Tomaten." },
+            { "satz": "Sie trinkt weder Kaffee___ noch Tee___ noch Cola.", "l1": "kein Komma", "l2": "kein Komma", "hinweis": "*weder … noch* verbindet wie *und*: **kein** Komma, auch nicht vor dem zweiten *noch*.", "korrekt": "Sie trinkt weder Kaffee noch Tee noch Cola." },
+            { "satz": "Das Handy ist neu___ teuer___ und ständig leer.", "l1": "Komma", "l2": "kein Komma", "hinweis": "Drei Adjektive: Komma nach *neu*, vor *und* keins.", "korrekt": "Das Handy ist neu, teuer und ständig leer." },
+            { "satz": "Wir haben gelacht___ getanzt___ und viel zu laut gesungen.", "l1": "Komma", "l2": "kein Komma", "hinweis": "Drei Tätigkeiten: Komma nach *gelacht*, vor *und* keins.", "korrekt": "Wir haben gelacht, getanzt und viel zu laut gesungen." }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "DE_O7_AUFZ_SATZ_MCQ_T1",
+    "subject": "DE",
+    "topicId": "DE_PUNCT_COMMA_LIST",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "Welcher Satz hat die Kommas in der Aufzählung richtig gesetzt?",
+    "payload": { "choices": ["{{s_a}}", "{{s_b}}", "{{s_c}}", "{{s_d}}"] },
+    "solution": { "correct_choice": "{{s_a}}" },
+    "explanation": [
+      { "kind": "what", "title": "Woran du es erkennst", "body": "{{s_hinweis}}" },
+      { "kind": "remember", "body": "Zähle die Glieder der Aufzählung. Zwischen je zwei Glieder gehört ein Komma, **außer** dort, wo *und*, *oder*, *sowie* oder *noch* steht. Vor dem ersten Glied und nach dem letzten steht **nie** ein Aufzählungskomma." }
+    ],
+    "tags": ["komma", "aufzaehlung", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 3 (Kommasetzung: Aufzählungen)",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "s": {
+          "type": "pick",
+          "from": [
+            { "a": "Wir kaufen Chips, Cola und Eis.", "b": "Wir kaufen Chips, Cola, und Eis.", "c": "Wir kaufen Chips Cola und Eis.", "d": "Wir kaufen, Chips, Cola und Eis.", "hinweis": "Drei Glieder: Komma nach *Chips*, vor *und* keins. Vor dem ersten Glied steht nie ein Komma." },
+            { "a": "Im Zoo haben wir Affen, Zebras, Giraffen und Pinguine gesehen.", "b": "Im Zoo haben wir Affen, Zebras, Giraffen, und Pinguine gesehen.", "c": "Im Zoo haben wir Affen Zebras, Giraffen und Pinguine gesehen.", "d": "Im Zoo haben wir Affen, Zebras Giraffen und Pinguine gesehen.", "hinweis": "Vier Tiere: Kommas nach *Affen* und *Zebras*, vor *und* keins." },
+            { "a": "Mein Bruder ist laut, frech und trotzdem lustig.", "b": "Mein Bruder ist laut frech und trotzdem lustig.", "c": "Mein Bruder ist laut, frech, und trotzdem lustig.", "d": "Mein Bruder ist, laut, frech und trotzdem lustig.", "hinweis": "Drei Adjektive: Komma nach *laut*, vor *und* keins, kein Komma nach *ist*." },
+            { "a": "Ich muss noch lernen, aufräumen und den Hund ausführen.", "b": "Ich muss noch lernen aufräumen und den Hund ausführen.", "c": "Ich muss noch lernen, aufräumen, und den Hund ausführen.", "d": "Ich muss noch, lernen, aufräumen und den Hund ausführen.", "hinweis": "Drei Tätigkeiten: Komma nach *lernen*, vor *und* keins, kein Komma nach *noch*." },
+            { "a": "Zum Frühstück gibt es Müsli, Toast oder Obst.", "b": "Zum Frühstück gibt es Müsli, Toast, oder Obst.", "c": "Zum Frühstück gibt es Müsli Toast oder Obst.", "d": "Zum Frühstück gibt es, Müsli, Toast oder Obst.", "hinweis": "Drei Glieder: Komma nach *Müsli*, vor **oder** keins." },
+            { "a": "Auf der Klassenfahrt waren wir wandern, schwimmen und klettern.", "b": "Auf der Klassenfahrt waren wir wandern schwimmen und klettern.", "c": "Auf der Klassenfahrt waren wir wandern, schwimmen, und klettern.", "d": "Auf der Klassenfahrt waren wir, wandern, schwimmen und klettern.", "hinweis": "Drei Tätigkeiten: Komma nach *wandern*, vor *und* keins." },
+            { "a": "Sie hat rote Haare, grüne Augen und eine laute Stimme.", "b": "Sie hat rote Haare grüne Augen und eine laute Stimme.", "c": "Sie hat rote Haare, grüne Augen, und eine laute Stimme.", "d": "Sie hat, rote Haare, grüne Augen und eine laute Stimme.", "hinweis": "Drei Wortgruppen: Komma nach *Haare*, vor *und* keins." },
+            { "a": "Wir treffen uns am Bahnhof, im Park oder bei Tom.", "b": "Wir treffen uns am Bahnhof im Park oder bei Tom.", "c": "Wir treffen uns am Bahnhof, im Park, oder bei Tom.", "d": "Wir treffen uns, am Bahnhof, im Park oder bei Tom.", "hinweis": "Drei Orte: Komma nach *Bahnhof*, vor **oder** keins." },
+            { "a": "Der Film war lang, langweilig und viel zu laut.", "b": "Der Film war lang langweilig und viel zu laut.", "c": "Der Film war lang, langweilig, und viel zu laut.", "d": "Der Film war, lang, langweilig und viel zu laut.", "hinweis": "Drei Adjektive: Komma nach *lang*, vor *und* keins." },
+            { "a": "Er packte Trikot, Schuhe, Handtuch und eine Flasche Wasser ein.", "b": "Er packte Trikot, Schuhe, Handtuch, und eine Flasche Wasser ein.", "c": "Er packte Trikot Schuhe, Handtuch und eine Flasche Wasser ein.", "d": "Er packte Trikot, Schuhe Handtuch und eine Flasche Wasser ein.", "hinweis": "Vier Dinge: Kommas nach *Trikot* und *Schuhe*, vor *und* keins." },
+            { "a": "Leon isst weder Fleisch noch Fisch.", "b": "Leon isst weder Fleisch, noch Fisch.", "c": "Leon isst, weder Fleisch noch Fisch.", "d": "Leon isst weder, Fleisch noch Fisch.", "hinweis": "*weder … noch* wirkt wie *und*: **kein** Komma." },
+            { "a": "Wir haben Karten gespielt, Pizza bestellt und bis spät geredet.", "b": "Wir haben Karten gespielt Pizza bestellt und bis spät geredet.", "c": "Wir haben Karten gespielt, Pizza bestellt, und bis spät geredet.", "d": "Wir haben, Karten gespielt, Pizza bestellt und bis spät geredet.", "hinweis": "Drei Tätigkeiten: Komma nach *gespielt*, vor *und* keins." }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "DE_O7_AUFZ_UND_MCQ",
+    "subject": "DE",
+    "topicId": "DE_PUNCT_COMMA_LIST",
+    "difficulty": 1,
+    "qtype": "MCQ",
+    "prompt": "Wo steht in einer Aufzählung **kein** Komma?",
+    "payload": { "choices": ["Vor und / oder", "Zwischen dem ersten und dem zweiten Glied", "Zwischen dem zweiten und dem dritten Glied", "Nirgends, Aufzählungen brauchen keine Kommas"] },
+    "solution": { "correct_choice": "Vor und / oder" },
+    "explanation": [
+      { "kind": "what", "body": "*Affen, Elefanten und Zebras*: Zwischen *Affen* und *Elefanten* steht ein Komma. Vor *und* steht keins, weil das **und** die Glieder schon verbindet. Genauso bei *oder* und *sowie*." },
+      { "kind": "remember", "body": "**Komma zwischen die Glieder, kein Komma vor und/oder.** Im Englischen ist das anders (*apples, pears, and grapes*), im Deutschen nicht." }
+    ],
+    "tags": ["komma", "aufzaehlung", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 3 (Kommasetzung: Aufzählungen)"
+  },
+  {
+    "id": "DE_O7_AUFZ_ERKENNEN_MCQ",
+    "subject": "DE",
+    "topicId": "DE_PUNCT_COMMA_LIST",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "In welchem Satz steht das Komma wegen einer **Aufzählung**?",
+    "payload": { "choices": ["Wir kaufen Brot, Käse und Obst.", "Ich bleibe zu Hause, weil es regnet.", "Er spart, um ein Rad zu kaufen.", "„Ich komme“, sagte er."] },
+    "solution": { "correct_choice": "Wir kaufen Brot, Käse und Obst." },
+    "explanation": [
+      { "kind": "what", "title": "Regel benennen", "body": "*Brot, Käse und Obst*: drei gleichartige Wörter hintereinander → **Aufzählung**.\n\nDie anderen Kommas haben andere Gründe: *weil es regnet* → Nebensatz (Satzgefüge), *um ein Rad zu kaufen* → Infinitivgruppe mit *um*, *„Ich komme“, sagte er* → direkte Rede." },
+      { "kind": "remember", "body": "In der Prüfung musst du die **Regel benennen**. Aufzählung erkennst du daran, dass du die Glieder mit *und* verbinden könntest: *Brot und Käse und Obst*." }
+    ],
+    "tags": ["komma", "aufzaehlung", "regel", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 3 (Kommasetzung); Aufgabenformat MSA Berlin 2024, Aufgabe 155"
+  },
+  {
+    "id": "DE_O7_AUFZ_ADJEKTIV_CLOZE",
+    "subject": "DE",
+    "topicId": "DE_PUNCT_COMMA_LIST",
+    "difficulty": 3,
+    "qtype": "CLOZE",
+    "prompt": "Zwei Adjektive vor einem Nomen: Komma oder kein Komma? Mach die **und-Probe**.",
+    "payload": { "text_with_blanks": "Auf dem Festival spielte eine bekannte___ deutsche Band vor einem lauten___ begeisterten Publikum.", "blanks": [{ "id": 1, "choices": ["Komma", "kein Komma"] }, { "id": 2, "choices": ["Komma", "kein Komma"] }] },
+    "solution": { "answers": { "1": "kein Komma", "2": "Komma" } },
+    "explanation": [
+      { "kind": "steps", "title": "Die und-Probe", "body": "1. *eine bekannte **und** deutsche Band* → klingt falsch. *deutsche Band* ist eine Einheit, *bekannte* beschreibt diese Einheit. Die Adjektive sind **nicht gleichrangig** → **kein Komma**.\n2. *ein lautes **und** begeistertes Publikum* → passt. Beide Adjektive beschreiben das Publikum gleichwertig → **Komma**." },
+      { "kind": "remember", "body": "Zwischen **gleichrangigen** Adjektiven steht ein Komma (Aufzählung). Bildet das zweite Adjektiv mit dem Nomen eine feste Einheit (*deutsche Band, elektrische Zahnbürste, neue Schülerin*), steht **kein** Komma. Probe: Kannst du *und* dazwischen setzen oder die Adjektive vertauschen?" },
+      { "kind": "mistake", "body": "Nicht jedes Adjektivpaar ist eine Aufzählung. *die letzte große Party* → *die große letzte Party* klingt falsch → kein Komma." }
+    ],
+    "tags": ["komma", "aufzaehlung", "adjektive", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 3 (Kommasetzung: Aufzählungen)"
+  },
+  {
+    "id": "DE_O7_AUFZ_FEHLER_MCQ",
+    "subject": "DE",
+    "topicId": "DE_PUNCT_COMMA_LIST",
+    "difficulty": 4,
+    "qtype": "MCQ",
+    "prompt": "In welchem Satz ist ein Komma **falsch** gesetzt?",
+    "payload": { "choices": ["Im Kühlschrank sind Milch, Käse, und Joghurt.", "Wir fahren nach Hamburg, Bremen und Kiel.", "Sie ist klug, sportlich und hilfsbereit.", "Er liest, zockt oder schläft."] },
+    "solution": { "correct_choice": "Im Kühlschrank sind Milch, Käse, und Joghurt." },
+    "explanation": [
+      { "kind": "steps", "title": "Satz für Satz", "body": "- *Milch, Käse, und Joghurt*: Das Komma vor **und** ist falsch → *Milch, Käse und Joghurt*.\n- *Hamburg, Bremen und Kiel* ✓\n- *klug, sportlich und hilfsbereit* ✓\n- *liest, zockt oder schläft* ✓ (vor *oder* kein Komma)" },
+      { "kind": "remember", "body": "Beim Überarbeiten eines Textes: Jedes Komma vor *und* oder *oder* in einer Aufzählung ist ein **Zeichensetzungsfehler**." }
+    ],
+    "tags": ["komma", "aufzaehlung", "fehler-finden", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 3 und 4 (Überarbeiten eines Textes)"
+  },
+  {
+    "id": "DE_O7_AUFZ_TEXT_CLOZE",
+    "subject": "DE",
+    "topicId": "DE_PUNCT_COMMA_LIST",
+    "difficulty": 5,
+    "qtype": "CLOZE",
+    "prompt": "Überarbeite den Text: Komma oder kein Komma an den vier Lücken?",
+    "payload": { "text_with_blanks": "Für die Klassenfahrt packe ich Schlafsack___ Zahnbürste___ und Ladekabel ein. Dort wollen wir wandern___ schwimmen___ oder einfach chillen.", "blanks": [{ "id": 1, "choices": ["Komma", "kein Komma"] }, { "id": 2, "choices": ["Komma", "kein Komma"] }, { "id": 3, "choices": ["Komma", "kein Komma"] }, { "id": 4, "choices": ["Komma", "kein Komma"] }] },
+    "solution": { "answers": { "1": "Komma", "2": "kein Komma", "3": "Komma", "4": "kein Komma" } },
+    "explanation": [
+      { "kind": "steps", "title": "Lücke für Lücke", "body": "1. *Schlafsack, Zahnbürste*: zwei Glieder der Aufzählung → **Komma**.\n2. *Zahnbürste und Ladekabel*: vor **und** → **kein Komma**.\n3. *wandern, schwimmen*: zwei Glieder → **Komma**.\n4. *schwimmen oder chillen*: vor **oder** → **kein Komma**.\n\nRichtig: *Für die Klassenfahrt packe ich Schlafsack, Zahnbürste und Ladekabel ein. Dort wollen wir wandern, schwimmen oder einfach chillen.*" },
+      { "kind": "remember", "body": "Auch Verben lassen sich aufzählen (*wandern, schwimmen oder chillen*). Die Regel bleibt: Komma zwischen die Glieder, keins vor *und* / *oder*." }
+    ],
+    "tags": ["komma", "aufzaehlung", "text-ueberarbeiten", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 3 und 4 (Überarbeiten eines Textes)"
+  },
+  {
+    "id": "DE_O7_INF_CLOZE_T1",
+    "subject": "DE",
+    "topicId": "DE_PUNCT_INFINITIVE",
+    "difficulty": 3,
+    "qtype": "CLOZE",
+    "prompt": "Infinitivgruppe (zu + Verb): Komma oder kein Komma?",
+    "payload": { "text_with_blanks": "{{s_satz}}", "blanks": [{ "id": 1, "choices": ["Komma", "kein Komma"] }] },
+    "solution": { "answers": { "1": "{{s_loesung}}" } },
+    "explanation": [
+      { "kind": "what", "title": "Das Signal", "body": "{{s_hinweis}}" },
+      { "kind": "answer", "body": "{{s_korrekt}}" },
+      { "kind": "remember", "body": "Komma vor einer Infinitivgruppe bei **einem von drei Signalen**: 1. **einleitendes Wort** (um, ohne, anstatt, statt, als, außer), 2. **Bezug zu einem Nomen** (die Lust, die Idee, der Plan …), 3. **hinweisendes Wort** im Hauptsatz (es, das, daran, darauf, davon). Steht die Infinitivgruppe **vorn**, kommt das Komma **hinter** sie." },
+      { "kind": "mistake", "body": "**Kein** Komma, wenn *zu + Verb* mit **haben, sein, brauchen, scheinen** das Prädikat bildet: *Ich habe viel zu tun. Das ist leicht zu merken. Du brauchst nicht zu warten.* Das sind keine eigenen Infinitivgruppen, sondern Teile des Verbs." }
+    ],
+    "tags": ["komma", "infinitivgruppe", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 3 (Exkurs Kommas und Infinitivgruppen)",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "s": {
+          "type": "pick",
+          "from": [
+            { "satz": "Ich gehe früher los___ um den Bus nicht zu verpassen.", "loesung": "Komma", "hinweis": "Einleitendes Wort **um** → Komma.", "korrekt": "Ich gehe früher los, um den Bus nicht zu verpassen." },
+            { "satz": "Er hat das Video gepostet___ ohne mich zu fragen.", "loesung": "Komma", "hinweis": "Einleitendes Wort **ohne** → Komma.", "korrekt": "Er hat das Video gepostet, ohne mich zu fragen." },
+            { "satz": "Du brauchst nicht___ auf mich zu warten.", "loesung": "kein Komma", "hinweis": "*brauchen + zu* bildet mit dem Verb **ein Prädikat** (wie ein Modalverb: *du musst nicht warten*) → kein Komma.", "korrekt": "Du brauchst nicht auf mich zu warten." },
+            { "satz": "Ich habe keine Lust___ heute Vokabeln zu lernen.", "loesung": "Komma", "hinweis": "Die Infinitivgruppe hängt vom **Nomen** *Lust* ab → Komma.", "korrekt": "Ich habe keine Lust, heute Vokabeln zu lernen." },
+            { "satz": "Das Passwort ist leicht___ zu merken.", "loesung": "kein Komma", "hinweis": "*sein + zu* gehört zum Prädikat (*ist zu merken* = kann gemerkt werden) → kein Komma.", "korrekt": "Das Passwort ist leicht zu merken." },
+            { "satz": "Er liebt es___ beim Zocken laut zu schreien.", "loesung": "Komma", "hinweis": "Hinweisendes Wort **es** → Komma.", "korrekt": "Er liebt es, beim Zocken laut zu schreien." },
+            { "satz": "Anstatt zu lernen___ hat er die ganze Nacht gezockt.", "loesung": "Komma", "hinweis": "Einleitendes Wort **anstatt**. Die Infinitivgruppe steht vorn, das Komma steht **danach**.", "korrekt": "Anstatt zu lernen, hat er die ganze Nacht gezockt." },
+            { "satz": "Ich habe heute noch viel___ zu tun.", "loesung": "kein Komma", "hinweis": "*haben + zu* gehört zum Prädikat (*habe zu tun* = muss tun) → kein Komma.", "korrekt": "Ich habe heute noch viel zu tun." },
+            { "satz": "Mia hatte die Idee___ ein Video zu drehen.", "loesung": "Komma", "hinweis": "Die Infinitivgruppe hängt vom **Nomen** *Idee* ab → Komma.", "korrekt": "Mia hatte die Idee, ein Video zu drehen." },
+            { "satz": "Er scheint___ eingeschlafen zu sein.", "loesung": "kein Komma", "hinweis": "*scheinen + zu* gehört zum Prädikat → kein Komma (genau wie bei *brauchen* und *pflegen*).", "korrekt": "Er scheint eingeschlafen zu sein." },
+            { "satz": "Es ist wichtig___ vor dem Test genug zu schlafen.", "loesung": "Komma", "hinweis": "Hinweisendes Wort **es** → Komma.", "korrekt": "Es ist wichtig, vor dem Test genug zu schlafen." },
+            { "satz": "Wir trainieren jeden Tag___ um das Finale zu gewinnen.", "loesung": "Komma", "hinweis": "Einleitendes Wort **um** → Komma.", "korrekt": "Wir trainieren jeden Tag, um das Finale zu gewinnen." },
+            { "satz": "Denk daran___ das Ladekabel einzupacken.", "loesung": "Komma", "hinweis": "Hinweisendes Wort **daran** → Komma.", "korrekt": "Denk daran, das Ladekabel einzupacken." },
+            { "satz": "Statt zu antworten___ hat sie mich einfach geblockt.", "loesung": "Komma", "hinweis": "Einleitendes Wort **statt**, Infinitivgruppe vorn → Komma danach.", "korrekt": "Statt zu antworten, hat sie mich einfach geblockt." },
+            { "satz": "Sein Plan___ heimlich Pizza zu bestellen, ist aufgeflogen.", "loesung": "Komma", "hinweis": "Die Infinitivgruppe hängt vom **Nomen** *Plan* ab und ist eingeschoben → zwei Kommas.", "korrekt": "Sein Plan, heimlich Pizza zu bestellen, ist aufgeflogen." },
+            { "satz": "Die Aufgabe ist einfach___ zu lösen.", "loesung": "kein Komma", "hinweis": "*sein + zu* gehört zum Prädikat (*ist zu lösen* = kann gelöst werden) → kein Komma.", "korrekt": "Die Aufgabe ist einfach zu lösen." }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "DE_O7_INF_STELLE_MCQ_T1",
+    "subject": "DE",
+    "topicId": "DE_PUNCT_INFINITIVE",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "Wo gehört das Komma hin? Wähle den richtig gesetzten Satz.",
+    "payload": { "choices": ["{{s_a}}", "{{s_b}}", "{{s_c}}"] },
+    "solution": { "correct_choice": "{{s_a}}" },
+    "explanation": [
+      { "kind": "what", "title": "Die Grenze finden", "body": "{{s_hinweis}}" },
+      { "kind": "remember", "body": "Das Komma steht **an der Grenze** zwischen Hauptsatz und Infinitivgruppe. Die Infinitivgruppe beginnt beim einleitenden Wort (*um, ohne, anstatt*) oder beim ersten Wort, das zu *zu + Verb* gehört, und endet mit dem Infinitiv. Hinweisende Wörter (*darauf, daran, es*) gehören noch zum **Hauptsatz**." },
+      { "kind": "mistake", "body": "Steht die Infinitivgruppe **vorn** (*Um fit zu bleiben, …*), kommt das Komma hinter den Infinitiv. Ist sie **eingeschoben** (*Ihr Wunsch, in Berlin zu bleiben, ging …*), braucht sie **zwei** Kommas." }
+    ],
+    "tags": ["komma", "infinitivgruppe", "kommastelle", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 3 (Exkurs Kommas und Infinitivgruppen)",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "s": {
+          "type": "pick",
+          "from": [
+            { "a": "Ich freue mich darauf, dich zu sehen.", "b": "Ich freue mich, darauf dich zu sehen.", "c": "Ich freue mich darauf dich, zu sehen.", "hinweis": "Das hinweisende Wort **darauf** gehört zum Hauptsatz. Das Komma steht **direkt vor** der Infinitivgruppe *dich zu sehen*." },
+            { "a": "Um fit zu bleiben, gehe ich dreimal die Woche joggen.", "b": "Um fit zu bleiben gehe ich, dreimal die Woche joggen.", "c": "Um fit, zu bleiben gehe ich dreimal die Woche joggen.", "hinweis": "Die Infinitivgruppe mit **um** steht vorn und endet mit *bleiben*. Das Komma steht **hinter** ihr." },
+            { "a": "Ihr Wunsch, in Berlin zu bleiben, ging in Erfüllung.", "b": "Ihr Wunsch in Berlin zu bleiben, ging in Erfüllung.", "c": "Ihr Wunsch, in Berlin zu bleiben ging in Erfüllung.", "hinweis": "Die Infinitivgruppe hängt vom Nomen **Wunsch** ab und ist **eingeschoben** → zwei Kommas, vorn und hinten." },
+            { "a": "Er ging nach Hause, ohne sich zu verabschieden.", "b": "Er ging, nach Hause ohne sich zu verabschieden.", "c": "Er ging nach Hause ohne, sich zu verabschieden.", "hinweis": "**ohne** leitet die Infinitivgruppe ein, das Komma steht direkt **vor** *ohne*." },
+            { "a": "Es nervt, so früh aufzustehen.", "b": "Es nervt so früh, aufzustehen.", "c": "Es, nervt so früh aufzustehen.", "hinweis": "**es** ist das hinweisende Wort im Hauptsatz *Es nervt*. Die Infinitivgruppe *so früh aufzustehen* beginnt direkt danach → Komma nach *nervt*." },
+            { "a": "Die Chance, im Finale zu spielen, will er nutzen.", "b": "Die Chance im Finale, zu spielen will er nutzen.", "c": "Die Chance, im Finale zu spielen will er nutzen.", "hinweis": "Die Infinitivgruppe erklärt das Nomen **Chance** und ist eingeschoben → zwei Kommas." },
+            { "a": "Anstatt mir zu helfen, hat er nur gelacht.", "b": "Anstatt mir zu helfen hat er, nur gelacht.", "c": "Anstatt, mir zu helfen hat er nur gelacht.", "hinweis": "**anstatt** leitet die Infinitivgruppe ein, sie steht vorn und endet mit *helfen* → Komma danach." },
+            { "a": "Ich denke daran, dir morgen das Buch mitzubringen.", "b": "Ich denke, daran dir morgen das Buch mitzubringen.", "c": "Ich denke daran dir morgen, das Buch mitzubringen.", "hinweis": "**daran** gehört zum Hauptsatz und kündigt die Infinitivgruppe an → Komma nach *daran*." },
+            { "a": "Sie hat keine Zeit, mit uns ins Kino zu gehen.", "b": "Sie hat keine Zeit mit uns, ins Kino zu gehen.", "c": "Sie hat, keine Zeit mit uns ins Kino zu gehen.", "hinweis": "Die Infinitivgruppe hängt vom Nomen **Zeit** ab und beginnt mit *mit uns* → Komma nach *Zeit*." },
+            { "a": "Er spart schon lange, um sich ein E-Bike zu kaufen.", "b": "Er spart, schon lange um sich ein E-Bike zu kaufen.", "c": "Er spart schon lange um sich, ein E-Bike zu kaufen.", "hinweis": "**um** leitet die Infinitivgruppe ein → Komma direkt vor *um*." },
+            { "a": "Ohne zu klopfen, kam mein Bruder ins Zimmer.", "b": "Ohne zu klopfen kam mein Bruder, ins Zimmer.", "c": "Ohne, zu klopfen kam mein Bruder ins Zimmer.", "hinweis": "**ohne** leitet die Infinitivgruppe ein, sie steht vorn und endet mit *klopfen* → Komma danach." },
+            { "a": "Es ist verboten, im Unterricht das Handy zu benutzen.", "b": "Es ist verboten im Unterricht das Handy, zu benutzen.", "c": "Es, ist verboten im Unterricht das Handy zu benutzen.", "hinweis": "**es** ist das hinweisende Wort, der Hauptsatz endet mit *verboten* → Komma danach." }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "DE_O7_INF_ERKENNEN_MCQ",
+    "subject": "DE",
+    "topicId": "DE_PUNCT_INFINITIVE",
+    "difficulty": 1,
+    "qtype": "MCQ",
+    "prompt": "Woran erkennst du eine **Infinitivgruppe**?",
+    "payload": { "choices": ["zu + Verb im Infinitiv, ohne eigenes Subjekt (z. B. um zu gewinnen)", "Verb am Satzende nach weil, dass oder ob", "Zwei Hauptsätze nebeneinander", "Ein Nomen mit Artikel"] },
+    "solution": { "correct_choice": "zu + Verb im Infinitiv, ohne eigenes Subjekt (z. B. um zu gewinnen)" },
+    "explanation": [
+      { "kind": "what", "body": "Eine Infinitivgruppe enthält **zu + Verb in der Grundform** und hat **kein eigenes Subjekt**: *Sie trainiert hart, **um zu gewinnen**.* Wer trainiert und wer gewinnt, ist dieselbe Person.\n\n*weil, dass, ob* + Verb am Ende → das ist ein **Nebensatz** mit eigenem Subjekt." },
+      { "kind": "remember", "body": "Suche das Wort **zu** vor einem Verb (*zu lernen, aufzustehen, mitzukommen*). Bei trennbaren Verben steckt *zu* in der Mitte: *auf**zu**stehen*." }
+    ],
+    "tags": ["komma", "infinitivgruppe", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 3 (Exkurs Kommas und Infinitivgruppen)"
+  },
+  {
+    "id": "DE_O7_INF_KEIN_KOMMA_MCQ",
+    "subject": "DE",
+    "topicId": "DE_PUNCT_INFINITIVE",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "In allen vier Sätzen fehlt jedes Komma. Welcher Satz ist **ohne** Komma richtig?",
+    "payload": { "choices": ["Du brauchst nicht zu kommen.", "Ich freue mich darauf dich zu sehen.", "Er ging ohne zu bezahlen.", "Sie hat den Wunsch Ärztin zu werden."] },
+    "solution": { "correct_choice": "Du brauchst nicht zu kommen." },
+    "explanation": [
+      { "kind": "steps", "title": "Signale prüfen", "body": "- *Du brauchst nicht zu kommen*: *brauchen + zu* ist ein Prädikat wie ein Modalverb (*du musst nicht kommen*) → **kein Komma** ✓\n- *Ich freue mich darauf, dich zu sehen*: hinweisendes Wort **darauf** → Komma nötig.\n- *Er ging, ohne zu bezahlen*: einleitendes Wort **ohne** → Komma nötig.\n- *Sie hat den Wunsch, Ärztin zu werden*: Bezug zum Nomen **Wunsch** → Komma nötig." },
+      { "kind": "remember", "body": "Drei Signale erzwingen das Komma: **um/ohne/anstatt**, **Nomen**, **es/daran/darauf**. **haben, sein, brauchen, scheinen + zu** bilden dagegen mit dem Verb ein Prädikat → kein Komma." }
+    ],
+    "tags": ["komma", "infinitivgruppe", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 3 (Exkurs Kommas und Infinitivgruppen)"
+  },
+  {
+    "id": "DE_O7_INF_MATCH",
+    "subject": "DE",
+    "topicId": "DE_PUNCT_INFINITIVE",
+    "difficulty": 4,
+    "qtype": "MATCH",
+    "prompt": "Ordne jedem Satz die passende Begründung für das Komma (oder das fehlende Komma) zu.",
+    "payload": {
+      "left": ["Sie lernt jeden Abend, um den Test zu bestehen.", "Er hatte den Mut, vor der Klasse zu singen.", "Ich freue mich darauf, dich zu sehen.", "Du brauchst nicht zu warten."],
+      "right": ["Einleitendes Wort (um, ohne, anstatt)", "Bezug zu einem Nomen", "Hinweisendes Wort (es, daran, darauf)", "Kein Komma: brauchen/haben/sein + zu gehören zum Prädikat"]
+    },
+    "solution": { "pairs": [["Sie lernt jeden Abend, um den Test zu bestehen.", "Einleitendes Wort (um, ohne, anstatt)"], ["Er hatte den Mut, vor der Klasse zu singen.", "Bezug zu einem Nomen"], ["Ich freue mich darauf, dich zu sehen.", "Hinweisendes Wort (es, daran, darauf)"], ["Du brauchst nicht zu warten.", "Kein Komma: brauchen/haben/sein + zu gehören zum Prädikat"]] },
+    "explanation": [
+      { "kind": "steps", "body": "- *um den Test zu bestehen*: **um** leitet ein → einleitendes Wort.\n- *den Mut, vor der Klasse zu singen*: Die Infinitivgruppe erklärt das Nomen **Mut** → Bezug zu einem Nomen.\n- *darauf, dich zu sehen*: **darauf** im Hauptsatz kündigt sie an → hinweisendes Wort.\n- *brauchst nicht zu warten*: *brauchen + zu* = Prädikat (*musst nicht warten*) → kein Komma." },
+      { "kind": "remember", "body": "In der Prüfung heißt die Aufgabe *„Ordnen Sie den Sätzen die Begründung für die Kommasetzung zu.“* Für Infinitivgruppen sind es genau diese drei Signale, dazu die Ausnahme ohne Komma." }
+    ],
+    "tags": ["komma", "infinitivgruppe", "zuordnen", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 3 (Beispielaufgabe Infinitivgruppen); Aufgabenformat MSA Berlin 2023, Aufgabe 255"
+  },
+  {
+    "id": "DE_O7_INF_TEXT_CLOZE",
+    "subject": "DE",
+    "topicId": "DE_PUNCT_INFINITIVE",
+    "difficulty": 5,
+    "qtype": "CLOZE",
+    "prompt": "Überarbeite den Text: Komma oder kein Komma an den vier Lücken?",
+    "payload": { "text_with_blanks": "Leon hat den Plan gefasst___ jeden Tag zu joggen. Ohne zu frühstücken___ läuft er los___ um vor der Schule zurück zu sein. Ein solcher Plan ist schwer___ durchzuhalten.", "blanks": [{ "id": 1, "choices": ["Komma", "kein Komma"] }, { "id": 2, "choices": ["Komma", "kein Komma"] }, { "id": 3, "choices": ["Komma", "kein Komma"] }, { "id": 4, "choices": ["Komma", "kein Komma"] }] },
+    "solution": { "answers": { "1": "Komma", "2": "Komma", "3": "Komma", "4": "kein Komma" } },
+    "explanation": [
+      { "kind": "steps", "title": "Lücke für Lücke", "body": "1. *den Plan, jeden Tag zu joggen*: Bezug zum **Nomen** *Plan* → Komma.\n2. *Ohne zu frühstücken, läuft er los*: einleitendes Wort **ohne**, Infinitivgruppe vorn → Komma **danach**.\n3. *läuft er los, um … zurück zu sein*: einleitendes Wort **um** → Komma.\n4. *ist schwer durchzuhalten*: **sein + zu** gehört zum Prädikat → **kein** Komma." },
+      { "kind": "remember", "body": "Beim Überarbeiten: Jedes **zu + Verb** markieren und die Signale prüfen (um/ohne/anstatt, Nomen, es/daran). Bei *haben/sein/brauchen + zu* darf kein Komma stehen." }
+    ],
+    "tags": ["komma", "infinitivgruppe", "text-ueberarbeiten", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 3 und 4 (Überarbeiten eines Textes)"
+  },
+  {
+    "id": "DE_O7_REDE_ZEICHEN_CLOZE_T1",
+    "subject": "DE",
+    "topicId": "DE_PUNCT_SPEECH",
+    "difficulty": 2,
+    "qtype": "CLOZE",
+    "prompt": "Direkte Rede: Welches Zeichen gehört in die Lücke? (Wähle „kein Zeichen“, wenn dort nichts steht.)",
+    "payload": { "text_with_blanks": "{{s_satz}}", "blanks": [{ "id": 1, "choices": [":", ",", ".", "!", "?", "kein Zeichen"] }, { "id": 2, "choices": [":", ",", ".", "!", "?", "kein Zeichen"] }] },
+    "solution": { "answers": { "1": "{{s_l1}}", "2": "{{s_l2}}" } },
+    "explanation": [
+      { "kind": "what", "title": "Die Regel", "body": "{{s_hinweis}}" },
+      { "kind": "answer", "body": "{{s_korrekt}}" },
+      { "kind": "remember", "body": "Begleitsatz **vorn**: **Doppelpunkt**, dann „Rede.“ mit dem Satzzeichen **in** den Anführungszeichen. Begleitsatz **hinten**: Der **Punkt** der Rede fällt weg, **Frage- und Ausrufezeichen bleiben**; nach dem Anführungszeichen folgt immer ein **Komma**. Begleitsatz **eingeschoben**: Kommas **vor und nach** dem Begleitsatz." },
+      { "kind": "mistake", "body": "Das Komma gehört **nicht** in die Anführungszeichen: *„Ich komme,“ sagte sie* ✗ → *„Ich komme“, sagte sie* ✓" }
+    ],
+    "tags": ["direkte-rede", "zeichensetzung", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 2 und 3 (Direkte Rede)",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "s": {
+          "type": "pick",
+          "from": [
+            { "satz": "Lea sagte___ „Ich komme später___“", "l1": ":", "l2": ".", "hinweis": "Begleitsatz **vorn** → **Doppelpunkt**. Die Rede ist ein Aussagesatz → **Punkt**, und der steht **vor** dem schließenden Anführungszeichen.", "korrekt": "Lea sagte: „Ich komme später.“" },
+            { "satz": "„Ich komme später___“___ sagte Lea.", "l1": "kein Zeichen", "l2": ",", "hinweis": "Begleitsatz **hinten** → der Punkt der Rede **fällt weg**, nach dem Anführungszeichen folgt ein **Komma**.", "korrekt": "„Ich komme später“, sagte Lea." },
+            { "satz": "„Kommst du mit___“___ fragte Tim.", "l1": "?", "l2": ",", "hinweis": "Das **Fragezeichen** bleibt in der Rede. Trotzdem folgt nach dem Anführungszeichen ein **Komma** vor dem Begleitsatz.", "korrekt": "„Kommst du mit?“, fragte Tim." },
+            { "satz": "„Schneller, Leute!“___ rief der Trainer___", "l1": ",", "l2": ".", "hinweis": "Das Ausrufezeichen bleibt in der Rede, danach folgt trotzdem ein **Komma**. Der Begleitsatz endet mit einem **Punkt**.", "korrekt": "„Schneller, Leute!“, rief der Trainer." },
+            { "satz": "„Das war knapp“___ sagte Mia___", "l1": ",", "l2": ".", "hinweis": "Nach dem schließenden Anführungszeichen folgt ein **Komma**, dann der Begleitsatz, der mit einem **Punkt** endet.", "korrekt": "„Das war knapp“, sagte Mia." },
+            { "satz": "Mama fragte___ „Hast du deine Hausaufgaben gemacht___“", "l1": ":", "l2": "?", "hinweis": "Begleitsatz vorn → **Doppelpunkt**. Die Rede ist eine Frage → **Fragezeichen** in den Anführungszeichen.", "korrekt": "Mama fragte: „Hast du deine Hausaufgaben gemacht?“" },
+            { "satz": "„Warte mal“___ rief Leon___ „ich komme mit!“", "l1": ",", "l2": ",", "hinweis": "**Eingeschobener** Begleitsatz: Kommas **vor und nach** dem Begleitsatz, die Rede geht danach klein weiter.", "korrekt": "„Warte mal“, rief Leon, „ich komme mit!“" },
+            { "satz": "„Ich bin fertig“___ sagte er___ „wir können los.“", "l1": ",", "l2": ",", "hinweis": "**Eingeschobener** Begleitsatz: Komma nach dem ersten Redeteil, Komma vor dem zweiten.", "korrekt": "„Ich bin fertig“, sagte er, „wir können los.“" },
+            { "satz": "Sie flüsterte___ „Der Test ist morgen___“", "l1": ":", "l2": ".", "hinweis": "Begleitsatz vorn → **Doppelpunkt**, Punkt **in** den Anführungszeichen.", "korrekt": "Sie flüsterte: „Der Test ist morgen.“" },
+            { "satz": "Ben antwortete___ „Ich weiß es nicht___“", "l1": ":", "l2": ".", "hinweis": "Begleitsatz vorn → **Doppelpunkt**, Punkt **in** den Anführungszeichen.", "korrekt": "Ben antwortete: „Ich weiß es nicht.“" },
+            { "satz": "„Wo bleibst du denn___“___ fragte Anna.", "l1": "?", "l2": ",", "hinweis": "Die Rede ist eine Frage → **Fragezeichen** in den Anführungszeichen. Danach folgt das **Komma** vor dem Begleitsatz.", "korrekt": "„Wo bleibst du denn?“, fragte Anna." },
+            { "satz": "„Wir haben gewonnen“___ jubelte Tom___", "l1": ",", "l2": ".", "hinweis": "Der Punkt der Rede fällt weg → **Komma** nach dem Anführungszeichen, **Punkt** nach dem Begleitsatz.", "korrekt": "„Wir haben gewonnen“, jubelte Tom." },
+            { "satz": "„Ich habe Hunger“___ sagte Lena___ „gehen wir essen?“", "l1": ",", "l2": ",", "hinweis": "**Eingeschobener** Begleitsatz: Kommas vor und nach *sagte Lena*.", "korrekt": "„Ich habe Hunger“, sagte Lena, „gehen wir essen?“" },
+            { "satz": "Papa sagte___ „Um zehn bist du zu Hause___“", "l1": ":", "l2": ".", "hinweis": "Begleitsatz vorn → **Doppelpunkt**, Punkt **in** den Anführungszeichen.", "korrekt": "Papa sagte: „Um zehn bist du zu Hause.“" }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "DE_O7_REDE_UMSTELLEN_MCQ_T1",
+    "subject": "DE",
+    "topicId": "DE_PUNCT_SPEECH",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "Stelle die direkte Rede um: Begleitsatz **{{s_ziel}}**. Welche Version ist richtig?\n\n{{s_satz}}",
+    "payload": { "choices": ["{{s_a}}", "{{s_b}}", "{{s_c}}", "{{s_d}}"] },
+    "solution": { "correct_choice": "{{s_a}}" },
+    "explanation": [
+      { "kind": "steps", "title": "So gehst du vor", "body": "{{s_hinweis}}" },
+      { "kind": "remember", "body": "Drei Stellungen, drei Muster: **vorn** → *Er sagte: „…“* (Doppelpunkt, Punkt innen). **hinten** → *„…“, sagte er.* (Punkt weg, Komma außen, ? und ! bleiben). **eingeschoben** → *„…“, sagte er, „…“* (zwei Kommas)." }
+    ],
+    "tags": ["direkte-rede", "umstellen", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 2 und 3 (Direkte Rede)",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "s": {
+          "type": "pick",
+          "from": [
+            { "satz": "Tim sagte: „Ich habe keine Zeit.“", "ziel": "hinten", "a": "„Ich habe keine Zeit“, sagte Tim.", "b": "„Ich habe keine Zeit.“, sagte Tim.", "c": "„Ich habe keine Zeit“ sagte Tim.", "d": "„Ich habe keine Zeit,“ sagte Tim.", "hinweis": "Begleitsatz hinten: Der **Punkt** der Rede fällt weg, nach dem Anführungszeichen folgt das **Komma**, dann *sagte Tim*." },
+            { "satz": "„Ich komme gleich“, rief Mia.", "ziel": "vorn", "a": "Mia rief: „Ich komme gleich.“", "b": "Mia rief, „Ich komme gleich.“", "c": "Mia rief: „Ich komme gleich“.", "d": "Mia rief: „Ich komme gleich,“", "hinweis": "Begleitsatz vorn: **Doppelpunkt**, dann die Rede. Der Punkt steht **in** den Anführungszeichen." },
+            { "satz": "Lea fragte: „Kommst du morgen mit?“", "ziel": "hinten", "a": "„Kommst du morgen mit?“, fragte Lea.", "b": "„Kommst du morgen mit“, fragte Lea?", "c": "„Kommst du morgen mit?“ fragte Lea.", "d": "„Kommst du morgen mit,“ fragte Lea.", "hinweis": "Das **Fragezeichen** bleibt in der Rede, danach folgt trotzdem ein **Komma**." },
+            { "satz": "Tim sagte: „Ich habe keine Zeit, wir reden morgen.“", "ziel": "eingeschoben (nach „Zeit“)", "a": "„Ich habe keine Zeit“, sagte Tim, „wir reden morgen.“", "b": "„Ich habe keine Zeit,“ sagte Tim, „wir reden morgen.“", "c": "„Ich habe keine Zeit“, sagte Tim „wir reden morgen.“", "d": "„Ich habe keine Zeit“ sagte Tim, „wir reden morgen.“", "hinweis": "**Eingeschobener** Begleitsatz: Komma **nach** dem ersten Redeteil (außerhalb der Anführungszeichen) und Komma **vor** dem zweiten Redeteil." },
+            { "satz": "„Das schaffst du!“, rief der Trainer.", "ziel": "vorn", "a": "Der Trainer rief: „Das schaffst du!“", "b": "Der Trainer rief: „Das schaffst du“!", "c": "Der Trainer rief, „Das schaffst du!“", "d": "Der Trainer rief: „Das schaffst du!“.", "hinweis": "Begleitsatz vorn: Doppelpunkt. Das **Ausrufezeichen** steht in den Anführungszeichen, danach kommt **kein** Punkt mehr." },
+            { "satz": "Mama sagte: „Das Essen ist fertig.“", "ziel": "hinten", "a": "„Das Essen ist fertig“, sagte Mama.", "b": "„Das Essen ist fertig.“ sagte Mama.", "c": "„Das Essen ist fertig“ sagte Mama.", "d": "„Das Essen ist fertig,“ sagte Mama.", "hinweis": "Begleitsatz hinten: Punkt der Rede weg, **Komma** nach dem Anführungszeichen." },
+            { "satz": "„Wo ist mein Ladekabel?“, fragte Leon.", "ziel": "vorn", "a": "Leon fragte: „Wo ist mein Ladekabel?“", "b": "Leon fragte: „Wo ist mein Ladekabel“?", "c": "Leon fragte, „Wo ist mein Ladekabel?“", "d": "Leon fragte: „Wo ist mein Ladekabel?“.", "hinweis": "Doppelpunkt, **Fragezeichen in** den Anführungszeichen, danach nichts mehr." },
+            { "satz": "Sie flüsterte: „Der Lehrer kommt, seid leise.“", "ziel": "eingeschoben (nach „kommt“)", "a": "„Der Lehrer kommt“, flüsterte sie, „seid leise.“", "b": "„Der Lehrer kommt,“ flüsterte sie, „seid leise.“", "c": "„Der Lehrer kommt“, flüsterte sie „seid leise.“", "d": "„Der Lehrer kommt“ flüsterte sie, „seid leise.“", "hinweis": "**Eingeschobener** Begleitsatz: Komma nach *kommt“* und Komma nach *flüsterte sie*." },
+            { "satz": "„Ich habe verschlafen“, sagte Tom.", "ziel": "vorn", "a": "Tom sagte: „Ich habe verschlafen.“", "b": "Tom sagte: „Ich habe verschlafen“.", "c": "Tom sagte, „Ich habe verschlafen.“", "d": "Tom sagte „Ich habe verschlafen.“", "hinweis": "Begleitsatz vorn: **Doppelpunkt** (kein Komma, kein Nichts), Punkt **in** den Anführungszeichen." },
+            { "satz": "Anna sagte: „Wir treffen uns um vier.“", "ziel": "hinten", "a": "„Wir treffen uns um vier“, sagte Anna.", "b": "„Wir treffen uns um vier.“, sagte Anna.", "c": "„Wir treffen uns um vier“ sagte Anna.", "d": "„Wir treffen uns um vier,“ sagte Anna.", "hinweis": "Begleitsatz hinten: Punkt der Rede weg, **Komma** nach dem Anführungszeichen, dann *sagte Anna*." }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "DE_O7_REDE_ANFUEHRUNG_MCQ",
+    "subject": "DE",
+    "topicId": "DE_PUNCT_SPEECH",
+    "difficulty": 1,
+    "qtype": "MCQ",
+    "prompt": "Wie stehen die Anführungszeichen bei der direkten Rede im Deutschen?",
+    "payload": { "choices": ["Unten am Anfang („) und oben am Ende (“)", "Oben am Anfang und oben am Ende (wie im Englischen)", "Unten am Anfang und unten am Ende", "Gar nicht, der Doppelpunkt reicht aus"] },
+    "solution": { "correct_choice": "Unten am Anfang („) und oben am Ende (“)" },
+    "explanation": [
+      { "kind": "what", "body": "Im Deutschen beginnt die Rede mit Anführungszeichen **unten** („) und endet mit Anführungszeichen **oben** (“): *Sie sagte: „Ich komme morgen.“* Merkhilfe: **99 unten, 66 oben**." },
+      { "kind": "remember", "body": "Die Anführungszeichen markieren **genau die Wörter**, die jemand wirklich gesagt hat. Der Begleitsatz (*sie sagte*) steht immer **außerhalb**." }
+    ],
+    "tags": ["direkte-rede", "anfuehrungszeichen", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 2 (Direkte und indirekte Rede)"
+  },
+  {
+    "id": "DE_O7_REDE_PUNKT_MCQ",
+    "subject": "DE",
+    "topicId": "DE_PUNCT_SPEECH",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "„Ich komme gleich“, sagte Mia.\n\nWarum steht hier **kein Punkt** in den Anführungszeichen?",
+    "payload": { "choices": ["Steht der Begleitsatz hinten, fällt der Punkt der Rede weg; nach dem Anführungszeichen folgt ein Komma.", "Der Punkt wird bei direkter Rede immer durch einen Doppelpunkt ersetzt.", "In der direkten Rede stehen nie Satzzeichen in den Anführungszeichen.", "Weil der Begleitsatz mit einem Namen beginnt, ist kein Punkt nötig."] },
+    "solution": { "correct_choice": "Steht der Begleitsatz hinten, fällt der Punkt der Rede weg; nach dem Anführungszeichen folgt ein Komma." },
+    "explanation": [
+      { "kind": "what", "body": "Der Satz endet erst nach *sagte Mia*. Deshalb bekommt die Rede **keinen eigenen Punkt**, sondern wird mit einem **Komma** an den Begleitsatz angeschlossen: *„Ich komme gleich“, sagte Mia.*\n\nFrage- und Ausrufezeichen fallen dagegen **nicht** weg: *„Kommst du?“, fragte Mia.*" },
+      { "kind": "remember", "body": "Nur der **Punkt** verschwindet, wenn der Begleitsatz hinten steht. Steht er vorn, bleibt der Punkt in der Rede: *Mia sagte: „Ich komme gleich.“*" }
+    ],
+    "tags": ["direkte-rede", "zeichensetzung", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 2 und 3 (Direkte Rede)"
+  },
+  {
+    "id": "DE_O7_REDE_FORTSETZUNG_MCQ",
+    "subject": "DE",
+    "topicId": "DE_PUNCT_SPEECH",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "Der Begleitsatz ist eingeschoben. Welche Fortsetzung ist richtig?\n\n„Ich bin müde“, sagte Tom, …",
+    "payload": { "choices": ["„und gehe jetzt schlafen.“", "„Und gehe jetzt schlafen.“", "und gehe jetzt schlafen.", "„und gehe jetzt schlafen“."] },
+    "solution": { "correct_choice": "„und gehe jetzt schlafen.“" },
+    "explanation": [
+      { "kind": "steps", "body": "1. Nach dem eingeschobenen Begleitsatz steht ein **Komma**.\n2. Die Rede geht in **neuen Anführungszeichen** weiter.\n3. Sie wird **klein** fortgesetzt, weil es derselbe Satz ist (*Ich bin müde und gehe jetzt schlafen*).\n4. Der **Punkt** steht am Ende **in** den Anführungszeichen.\n\n*„Ich bin müde“, sagte Tom, „und gehe jetzt schlafen.“*" },
+      { "kind": "remember", "body": "Eingeschobener Begleitsatz: *„…“, sagte er, „…“* – zwei Kommas, zwei Paar Anführungszeichen, Fortsetzung klein, Schlusszeichen innen." },
+      { "kind": "mistake", "body": "Groß weiter (*„Und gehe …“*) wäre nur richtig, wenn nach dem Begleitsatz ein **neuer Satz** beginnt: *„Ich bin müde“, sagte Tom. „Ich gehe jetzt schlafen.“* Dann steht nach dem Begleitsatz ein Punkt." }
+    ],
+    "tags": ["direkte-rede", "eingeschoben", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 2 und 3 (Direkte Rede)"
+  },
+  {
+    "id": "DE_O7_REDE_FEHLER_MCQ",
+    "subject": "DE",
+    "topicId": "DE_PUNCT_SPEECH",
+    "difficulty": 4,
+    "qtype": "MCQ",
+    "prompt": "In welchem Satz sind die Zeichen bei der direkten Rede **falsch** gesetzt?",
+    "payload": { "choices": ["„Ich bin gleich da,“ schrieb Leon.", "Mia fragte: „Wo bleibst du?“", "„Keine Ahnung“, antwortete Tom, „vielleicht im Stau.“", "Sie rief: „Beeil dich!“"] },
+    "solution": { "correct_choice": "„Ich bin gleich da,“ schrieb Leon." },
+    "explanation": [
+      { "kind": "steps", "title": "Satz für Satz", "body": "- *„Ich bin gleich da,“ schrieb Leon*: Das Komma steht **in** den Anführungszeichen → falsch. Richtig: *„Ich bin gleich da“, schrieb Leon.*\n- *Mia fragte: „Wo bleibst du?“*: Doppelpunkt, Fragezeichen innen ✓\n- *„Keine Ahnung“, antwortete Tom, „vielleicht im Stau.“*: eingeschobener Begleitsatz mit zwei Kommas ✓\n- *Sie rief: „Beeil dich!“*: Doppelpunkt, Ausrufezeichen innen ✓" },
+      { "kind": "remember", "body": "Das Komma vor dem Begleitsatz steht **immer außerhalb** der Anführungszeichen. Innen stehen nur Frage- und Ausrufezeichen (und der Punkt, wenn der Begleitsatz vorn steht)." }
+    ],
+    "tags": ["direkte-rede", "fehler-finden", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 3 und 4 (Überarbeiten eines Textes)"
+  },
+  {
+    "id": "DE_O7_REDE_TEXT_CLOZE",
+    "subject": "DE",
+    "topicId": "DE_PUNCT_SPEECH",
+    "difficulty": 5,
+    "qtype": "CLOZE",
+    "prompt": "Überarbeite den Dialog: Welches Zeichen gehört an die vier Lücken?",
+    "payload": { "text_with_blanks": "Am Morgen fragte Mama___ „Hast du deinen Schlüssel___“ „Klar“___ antwortete ich___ „er liegt im Rucksack.“", "blanks": [{ "id": 1, "choices": [":", ",", ".", "!", "?", "kein Zeichen"] }, { "id": 2, "choices": [":", ",", ".", "!", "?", "kein Zeichen"] }, { "id": 3, "choices": [":", ",", ".", "!", "?", "kein Zeichen"] }, { "id": 4, "choices": [":", ",", ".", "!", "?", "kein Zeichen"] }] },
+    "solution": { "answers": { "1": ":", "2": "?", "3": ",", "4": "," } },
+    "explanation": [
+      { "kind": "steps", "title": "Lücke für Lücke", "body": "1. *fragte Mama:* Begleitsatz vorn → **Doppelpunkt**.\n2. *„Hast du deinen Schlüssel?“* Die Rede ist eine Frage → **Fragezeichen** in den Anführungszeichen.\n3. *„Klar“,* Begleitsatz folgt → **Komma** nach dem Anführungszeichen.\n4. *antwortete ich,* Begleitsatz ist eingeschoben, die Rede geht weiter → **Komma**.\n\n*Am Morgen fragte Mama: „Hast du deinen Schlüssel?“ „Klar“, antwortete ich, „er liegt im Rucksack.“*" },
+      { "kind": "remember", "body": "In einem Dialog wechseln die Muster: **vorn** (Doppelpunkt), **hinten** (Komma außen), **eingeschoben** (zwei Kommas). Jede Rede einzeln prüfen: Wo steht der Begleitsatz?" }
+    ],
+    "tags": ["direkte-rede", "text-ueberarbeiten", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 3 und 4 (Überarbeiten eines Textes)"
+  }
+]

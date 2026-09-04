@@ -1,0 +1,888 @@
+[
+  {
+    "id": "EN_MSA2023_R1_MATCH",
+    "subject": "EN",
+    "topicId": "EN_READ_MATCHING",
+    "difficulty": 3,
+    "qtype": "MATCH",
+    "passage": "X_EN_MSA2023_BOSTON",
+    "prompt": "**Reading Part 1.** These people are looking for something to do in and around Boston. Read the information about the people and the descriptions of the activities (A–G) above. Match each wish with the activity that fits. (In the exam every person gets **two** activities, and some of the activities can be chosen more than once.)",
+    "payload": {
+      "left": [
+        "Vanessa: loves the seaside location of Boston and would like to see the city from there – a great nightly sightseeing trip would be a perfect start for her weekend trip.",
+        "Ethan: if his partner takes the kids, he would love to do something on his own, for example improve his photography skills with the help of a professional.",
+        "Aubrey: exploring Boston at night could be interesting – she is looking for a tour where she can hear stories about the mysterious side of the city.",
+        "Kayla: would like to treat herself to a whole day full of good food and beautiful sights which she can take pictures of; she hopes her followers will \"like\" them.",
+        "Alessandro and his soccer team: first and foremost they want the athletic and fun part of the city – any activity that could prove a physical challenge for them."
+      ],
+      "right": [
+        "A Boston Odyssey Dinner Tour",
+        "B Photography Walking Tour",
+        "C Ghost and Gravestone Tour",
+        "E Boston Instagram Tour",
+        "G Skyline and Sunset Kayak Tour"
+      ]
+    },
+    "solution": {
+      "pairs": [
+        [
+          "Vanessa: loves the seaside location of Boston and would like to see the city from there – a great nightly sightseeing trip would be a perfect start for her weekend trip.",
+          "A Boston Odyssey Dinner Tour"
+        ],
+        [
+          "Ethan: if his partner takes the kids, he would love to do something on his own, for example improve his photography skills with the help of a professional.",
+          "B Photography Walking Tour"
+        ],
+        [
+          "Aubrey: exploring Boston at night could be interesting – she is looking for a tour where she can hear stories about the mysterious side of the city.",
+          "C Ghost and Gravestone Tour"
+        ],
+        [
+          "Kayla: would like to treat herself to a whole day full of good food and beautiful sights which she can take pictures of; she hopes her followers will \"like\" them.",
+          "E Boston Instagram Tour"
+        ],
+        [
+          "Alessandro and his soccer team: first and foremost they want the athletic and fun part of the city – any activity that could prove a physical challenge for them.",
+          "G Skyline and Sunset Kayak Tour"
+        ]
+      ]
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "Beleg im Text",
+        "body": "- Vanessa: *see the city from there* (from the sea), *nightly sightseeing trip* → A: *dinner cruise along the city's waterfront … enjoy the view of the illuminated Boston skyline at night*\n- Ethan: *improve his photography skills with the help of a professional* → B: *professional photographer guide … tips for how to get the best angle and perspective*\n- Aubrey: *at night … stories about the mysterious side of the city* → C: *evening tour of the city's spookiest corners … ghost tales*\n- Kayla: *whole day, good food, beautiful sights, take pictures, followers* → E: *all in one day … history, delicious food and a ton of great photos*\n- Alessandro: *athletic … physical challenge* → G: *rent a canoe or kayak and set out on the Charles River for the day*"
+      },
+      {
+        "kind": "remember",
+        "body": "Markiere in jeder Personenbeschreibung die Schlüsselwörter und suche in den Angeboten nach Synonymen dafür (*nightly* → *at night*, *professional* → *professional photographer guide*). In der Prüfung bekommt jede Person **zwei** Angebote – die zweiten Wünsche übst du in den Einzelaufgaben Nr. 2, 3, 5, 7 und 10."
+      }
+    ],
+    "tags": ["exam", "msa2023", "reading", "matching"],
+    "source": "MSA Berlin 2023 Englisch, Reading Part 1 (Nr. 1, 4, 6, 8, 9)"
+  },
+  {
+    "id": "EN_MSA2023_R1_02",
+    "subject": "EN",
+    "topicId": "EN_READ_MATCHING",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "passage": "X_EN_MSA2023_BOSTON",
+    "prompt": "**Reading Part 1, Nr. 2.** Each person does **two** activities (see A–G above). Which activity fits Vanessa's second wish?\n\n**But she is also here for the rich cultural heritage of the East Coast. Since she doesn't have much time, she would take a tour that offers as many different places of cultural interest as possible in one day.**",
+    "payload": {
+      "choices": ["D Museums Tour", "F Boston Tea Party Tour", "E Boston Instagram Tour", "C Ghost and Gravestone Tour"]
+    },
+    "solution": { "correct_choice": "D Museums Tour" },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "Beleg im Text",
+        "body": "*rich cultural heritage … as many different places of cultural interest as possible in one day* → D: *If you love museums, art, and culture … four more great locations in one … this all-day outing!* F ist nur ein einziger Ort, E setzt auf Fotos und Essen."
+      },
+      {
+        "kind": "remember",
+        "body": "Achte auf Mengen- und Zeitangaben im Wunsch (*as many … as possible*, *in one day*): Sie entscheiden zwischen ähnlichen Angeboten."
+      }
+    ],
+    "tags": ["exam", "msa2023", "reading", "matching"],
+    "source": "MSA Berlin 2023 Englisch, Reading Part 1, Nr. 2"
+  },
+  {
+    "id": "EN_MSA2023_R1_03",
+    "subject": "EN",
+    "topicId": "EN_READ_MATCHING",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "passage": "X_EN_MSA2023_BOSTON",
+    "prompt": "**Reading Part 1, Nr. 3.** Each person does **two** activities (see A–G above). Which activity fits Ethan's first wish?\n\n**Ethan's kids have already warned him that they won't go on another one of these guided sightseeing bus tours. Instead they want to be active. So he needs an activity that is fun and allows his family to get away from the crowds.**",
+    "payload": {
+      "choices": ["G Skyline and Sunset Kayak Tour", "F Boston Tea Party Tour", "D Museums Tour", "E Boston Instagram Tour"]
+    },
+    "solution": { "correct_choice": "G Skyline and Sunset Kayak Tour" },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "Beleg im Text",
+        "body": "*they want to be active … fun … get away from the crowds* → G: *Rent a canoe or kayak and set out on the Charles River … A leisurely way to spend the day with your family … those aged 8 and up can even operate their own kayak.* Die Fahrten mit Fahrzeug oder ins Museum (D, E) sind genau das, was die Kinder nicht mehr wollen."
+      },
+      {
+        "kind": "remember",
+        "body": "Verneinungen im Personentext (*won't go on another … bus tour*) schließen Angebote aus – streiche diese zuerst, dann bleibt weniger zur Auswahl."
+      }
+    ],
+    "tags": ["exam", "msa2023", "reading", "matching"],
+    "source": "MSA Berlin 2023 Englisch, Reading Part 1, Nr. 3"
+  },
+  {
+    "id": "EN_MSA2023_R1_05",
+    "subject": "EN",
+    "topicId": "EN_READ_MATCHING",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "passage": "X_EN_MSA2023_BOSTON",
+    "prompt": "**Reading Part 1, Nr. 5.** Each person does **two** activities (see A–G above). Which activity fits Aubrey's first wish?\n\n**Aubrey's motto is: pics or it didn't happen. So she wants to go on a tour that helps her remember Boston through the lens of her camera – with her in the center. And later perhaps she can even upload pictures of some hidden places.**",
+    "payload": {
+      "choices": ["E Boston Instagram Tour", "B Photography Walking Tour", "D Museums Tour", "A Boston Odyssey Dinner Tour"]
+    },
+    "solution": { "correct_choice": "E Boston Instagram Tour" },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "Beleg im Text",
+        "body": "*pics or it didn't happen … with her in the center … upload pictures of some hidden places* → E: *the most Instagrammable spots in Boston … secretly located spots*. B klingt ähnlich, dort lernt man aber selbst fotografieren – Aubrey will im Bild sein und posten."
+      },
+      {
+        "kind": "remember",
+        "body": "Wenn zwei Angebote zum selben Thema passen (hier: Fotos), entscheidet ein Detail: *hidden places* = *secretly located spots*."
+      }
+    ],
+    "tags": ["exam", "msa2023", "reading", "matching"],
+    "source": "MSA Berlin 2023 Englisch, Reading Part 1, Nr. 5"
+  },
+  {
+    "id": "EN_MSA2023_R1_07",
+    "subject": "EN",
+    "topicId": "EN_READ_MATCHING",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "passage": "X_EN_MSA2023_BOSTON",
+    "prompt": "**Reading Part 1, Nr. 7.** Each person does **two** activities (see A–G above). Which activity fits Kayla's first wish?\n\n**For Kayla getting to know a city starts with learning about its past. She would love to go on a tour offering exactly that but which is also interesting for her two younger children.**",
+    "payload": {
+      "choices": ["F Boston Tea Party Tour", "C Ghost and Gravestone Tour", "D Museums Tour", "B Photography Walking Tour"]
+    },
+    "solution": { "correct_choice": "F Boston Tea Party Tour" },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "Beleg im Text",
+        "body": "*learning about its past … also interesting for her two younger children* → F: *the famous event that started the course of independence of the USA … educational, entertaining and enlightening – an experience not to be missed by adults and especially children of all ages*. C bietet auch Geschichte, ist aber für Kinder unter 13 nur mit Vorbehalt geeignet (*parental guidance is recommended*)."
+      },
+      {
+        "kind": "remember",
+        "body": "Prüfe die Einschränkungen am Ende eines Angebots (Alter, Dauer, Zugänglichkeit): Sie kippen oft die naheliegende Wahl."
+      }
+    ],
+    "tags": ["exam", "msa2023", "reading", "matching"],
+    "source": "MSA Berlin 2023 Englisch, Reading Part 1, Nr. 7"
+  },
+  {
+    "id": "EN_MSA2023_R1_10",
+    "subject": "EN",
+    "topicId": "EN_READ_MATCHING",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "passage": "X_EN_MSA2023_BOSTON",
+    "prompt": "**Reading Part 1, Nr. 10.** Each person does **two** activities (see A–G above). Which activity fits Alessandro's second wish?\n\n**Later there should be no holding back on the dance floor if there is any tour that fits.**",
+    "payload": {
+      "choices": ["A Boston Odyssey Dinner Tour", "C Ghost and Gravestone Tour", "E Boston Instagram Tour", "G Skyline and Sunset Kayak Tour"]
+    },
+    "solution": { "correct_choice": "A Boston Odyssey Dinner Tour" },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "Beleg im Text",
+        "body": "*no holding back on the dance floor* → A: *head to the dance floor for music and fun in the ship's nightclub … a whole group of friends for a night to remember*."
+      },
+      {
+        "kind": "remember",
+        "body": "Ein Angebot darf mehrmals vorkommen (*Some of the activities can be chosen more than once*) – A passt hier auch für Vanessa. Lass dich davon nicht verunsichern."
+      }
+    ],
+    "tags": ["exam", "msa2023", "reading", "matching"],
+    "source": "MSA Berlin 2023 Englisch, Reading Part 1, Nr. 10"
+  },
+  {
+    "id": "EN_MSA2023_R2_11",
+    "subject": "EN",
+    "topicId": "EN_READ_SIGNS",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "**Reading Part 2, Nr. 11.** What does the text say? There is only one correct statement.\n\n*Sign at a swimming pool: POOL CAPACITY – Maximum number of swimmers or bathers allowed in this pool at one time: 12. POOL HOURS 10 am to 6 pm. Pool use is prohibited at any other time.*\n\n**Which of the following is allowed?**",
+    "payload": {
+      "choices": ["five swimmers at 11 in the morning", "pool party at 8 o'clock", "seven bathers at 10 in the evening", "14 swimmers at 1 in the afternoon"]
+    },
+    "solution": { "correct_choice": "five swimmers at 11 in the morning" },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "Beleg im Text",
+        "body": "*Maximum number … 12* und *Pool hours 10 am to 6 pm*: Fünf Schwimmer um 11 Uhr morgens liegen innerhalb der Öffnungszeit und unter der Höchstzahl. Eine Party um 8 Uhr (morgens vor 10 am, abends nach 6 pm) und sieben Badende um 10 Uhr abends verstoßen gegen *prohibited at any other time*; 14 Schwimmer überschreiten die Höchstzahl 12."
+      },
+      {
+        "kind": "remember",
+        "body": "Bei Schildern mit Zahlen prüfst du jede Aussage gegen **beide** Bedingungen (Uhrzeit **und** Anzahl) – nur eine Aussage überlebt beide Prüfungen."
+      }
+    ],
+    "tags": ["exam", "msa2023", "reading", "signs"],
+    "source": "MSA Berlin 2023 Englisch, Reading Part 2, Nr. 11"
+  },
+  {
+    "id": "EN_MSA2023_R2_12",
+    "subject": "EN",
+    "topicId": "EN_READ_SIGNS",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "**Reading Part 2, Nr. 12.** What does the text say? There is only one correct statement.\n\n*Text message from (206) 555-7765: Hi Jenna! Just a friendly reminder of your phone interview tomorrow with Hi5 Networks at 11 AM. If you need some last-minute help with prep, just reply to this message and we can figure out a time to chat right away. If I don't hear from you, good luck! I know you're going to do great. Marco L. at Seattle Staffing – Reply STOP at any time to unsubscribe*\n\n**The person who wrote this note …**",
+    "payload": {
+      "choices": ["is looking for a job.", "is accepting an invitation.", "is asking for an appointment.", "is offering assistance."]
+    },
+    "solution": { "correct_choice": "is offering assistance." },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "Beleg im Text",
+        "body": "*If you need some last-minute help with prep, just reply to this message and we can figure out a time to chat right away* → Marco bietet Hilfe an. Nicht **er** sucht einen Job – Jenna hat das Vorstellungsgespräch. Einen Termin fragt er nicht an, er erinnert nur an einen bestehenden."
+      },
+      {
+        "kind": "remember",
+        "body": "Frage dich bei Nachrichten: **Wer** schreibt an **wen** und **warum**? Die Aussagen beziehen sich auf den Absender (*the person who wrote this note*), nicht auf die Empfängerin."
+      }
+    ],
+    "tags": ["exam", "msa2023", "reading", "signs"],
+    "source": "MSA Berlin 2023 Englisch, Reading Part 2, Nr. 12"
+  },
+  {
+    "id": "EN_MSA2023_R2_13",
+    "subject": "EN",
+    "topicId": "EN_READ_SIGNS",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "**Reading Part 2, Nr. 13.** What does the text say? There is only one correct statement.\n\n*Notice in a supermarket (Tesco): PRODUCT RECALL – Allergen Issue – Milk. Tesco Cookie & Cream Biscuits 176g. We have detected that some packs may contain low traces of milk which is not declared on the label. The packaging therefore has incorrect allergen labelling information. Product recalled: Tesco Cookie & Cream Biscuits 176g. All date codes and batch codes affected. What you should do: Please return the affected products to store where a full refund will be given. No receipt is required. Tesco apologises to our customers for any inconvenience caused.*\n\n**The product shown in the picture …**",
+    "payload": {
+      "choices": ["is on special offer.", "is available for a limited time.", "has a new, improved recipe.", "may harm some consumers."]
+    },
+    "solution": { "correct_choice": "may harm some consumers." },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "Beleg im Text",
+        "body": "*Product recall – Allergen issue – Milk … some packs may contain low traces of milk which is not declared on the label* → für Menschen mit Milchallergie gefährlich, deshalb der Rückruf. Von einem Sonderangebot, einer Rezeptänderung oder einem befristeten Verkauf steht nichts im Text."
+      },
+      {
+        "kind": "remember",
+        "body": "Schlüsselwörter wie *recall*, *allergen*, *refund* verraten den Texttyp (Rückruf). Aussagen, die nicht zum Texttyp passen (Werbung!), kannst du sofort streichen."
+      }
+    ],
+    "tags": ["exam", "msa2023", "reading", "signs"],
+    "source": "MSA Berlin 2023 Englisch, Reading Part 2, Nr. 13"
+  },
+  {
+    "id": "EN_MSA2023_R2_14",
+    "subject": "EN",
+    "topicId": "EN_READ_SIGNS",
+    "difficulty": 4,
+    "qtype": "MCQ",
+    "prompt": "**Reading Part 2, Nr. 14.** What does the text say? There is only one correct statement.\n\n*Note in a shared kitchen: PLEASE WOULD THE PERSON WHO CLEANS THEIR PORRIDGE BOWL OUT EVERY DAY WITH THE SPONGE PLEASE STOP. PLEASE USE THE BRUSH. We are going through sponges quicker than they can be purchased. Thank you*\n\n**This note tells the reader …**",
+    "payload": {
+      "choices": ["save water.", "make porridge.", "wash the dishes.", "load the dishwasher."]
+    },
+    "solution": { "correct_choice": "wash the dishes." },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "Beleg im Text",
+        "body": "*cleans their porridge bowl out … with the sponge – please stop. Please use the brush* → es geht darum, **wie** man abwäscht (Bürste statt Schwamm). Porridge kochen, Wasser sparen oder eine Spülmaschine kommen im Text nicht vor."
+      },
+      {
+        "kind": "remember",
+        "body": "Bei Hinweiszetteln steckt die Kernaussage in der Aufforderung (*please stop … please use*); der Rest (*we are going through sponges …*) ist nur die Begründung."
+      }
+    ],
+    "tags": ["exam", "msa2023", "reading", "signs"],
+    "source": "MSA Berlin 2023 Englisch, Reading Part 2, Nr. 14"
+  },
+  {
+    "id": "EN_MSA2023_R2_15",
+    "subject": "EN",
+    "topicId": "EN_READ_SIGNS",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "**Reading Part 2, Nr. 15.** What does the text say? There is only one correct statement.\n\n*Notice on a vending machine: This Vending Machine has been repeatedly vandalized and has been the victim of repeated thefts. It will remain empty until the machine can be repaired, secured, and protected from further abuse. We apologize to those who used the machine correctly and honestly. Thank you for your understanding!*\n\n**The machine is empty because …**",
+    "payload": {
+      "choices": ["its products are sold out.", "it needs cleaning.", "it has been misused.", "it will be moved."]
+    },
+    "solution": { "correct_choice": "it has been misused." },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "Beleg im Text",
+        "body": "*repeatedly vandalized … victim of repeated thefts … protected from further abuse* → der Automat wurde missbraucht (*misused*). *Sold out* wäre ein ganz anderer Grund, von Reinigung oder Umzug steht nichts im Text."
+      },
+      {
+        "kind": "remember",
+        "body": "Übersetze die Schlüsselwörter im Kopf in einfache Wörter: *vandalized, thefts, abuse* = *misused*. Die richtige Aussage ist fast immer eine **Umschreibung**, keine Wortwiederholung aus dem Text."
+      }
+    ],
+    "tags": ["exam", "msa2023", "reading", "signs"],
+    "source": "MSA Berlin 2023 Englisch, Reading Part 2, Nr. 15"
+  },
+  {
+    "id": "EN_MSA2023_R2_16",
+    "subject": "EN",
+    "topicId": "EN_READ_SIGNS",
+    "difficulty": 4,
+    "qtype": "MCQ",
+    "prompt": "**Reading Part 2, Nr. 16.** What does the text say? There is only one correct statement.\n\n*From a newspaper: A young Nigerian refugee who made headlines aged eight, when he won the 2019 New York State chess championship while living in a homeless shelter in Manhattan, has now qualified as a national master. At ten, Tanitoluwa Adewumi – known as Tani – is the 28th-youngest person to become a chess master in the US. He had only been playing chess for a year when he won the New York contest. His story prompted \\$250,000 in donations to his family, who have now settled in Long Island, and started a foundation to help other homeless people and refugees.*\n\n**The boy Tani …**",
+    "payload": {
+      "choices": ["was awarded an important title in chess.", "won \\$ 250,000 in a chess tournament.", "is the youngest chess world champion ever.", "teaches refugees how to play chess."]
+    },
+    "solution": { "correct_choice": "was awarded an important title in chess." },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "Beleg im Text",
+        "body": "*has now qualified as a national master* → ein wichtiger Titel im Schach. Die 250 000 Dollar waren **Spenden** (*donations*), kein Preisgeld; er ist der *28th-youngest* Meister in den USA, nicht der jüngste Weltmeister; die Stiftung hilft Obdachlosen und Geflüchteten – von Schachunterricht steht nichts."
+      },
+      {
+        "kind": "remember",
+        "body": "Distraktoren kombinieren echte Zahlen und Wörter aus dem Text neu (*250,000*, *youngest*, *refugees*). Prüfe jede Aussage am ganzen Satz, nicht am Stichwort."
+      }
+    ],
+    "tags": ["exam", "msa2023", "reading", "signs"],
+    "source": "MSA Berlin 2023 Englisch, Reading Part 2, Nr. 16"
+  },
+  {
+    "id": "EN_MSA2023_R3_17",
+    "subject": "EN",
+    "topicId": "EN_READ_CORE",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "passage": "X_EN_MSA2023_PETS",
+    "prompt": "**17.** What is Henrietta doing at the pet trade show?",
+    "payload": {
+      "choices": ["She is tasting the pet food her company sells.", "She is buying food for her own dog.", "She is handing out free samples to visitors.", "She is cooking a meal for a crowd of onlookers."]
+    },
+    "solution": { "correct_choice": "She is tasting the pet food her company sells." },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "Beleg im Text",
+        "body": "Absatz 1: *plunges her spoon into a tin of slow-cooked lamb hotpot … then places the whole lot into her mouth. \"Delicious,\" she remarks.* Absatz 2 liefert den Grund: *Morrison has a point to prove … her company, Lily's Kitchen, sells the most expensive pet food on the market … the contents are \"proper food\".*"
+      },
+      {
+        "kind": "remember",
+        "body": "Die erste Frage zielt fast immer auf den Einstieg des Artikels. Lies Absatz 1 und 2 zusammen: **was** jemand tut (Absatz 1) und **warum** (Absatz 2)."
+      }
+    ],
+    "tags": ["exam", "msa2023", "reading", "article", "reconstructed"],
+    "source": "MSA Berlin 2023 Englisch, Reading Part 3, Nr. 17 – Frage original; Antwortoptionen rekonstruiert, weil im Prüfungsheft an dieser Stelle irrtümlich die Optionen von Nr. 16 abgedruckt sind"
+  },
+  {
+    "id": "EN_MSA2023_R3_18",
+    "subject": "EN",
+    "topicId": "EN_READ_CORE",
+    "difficulty": 4,
+    "qtype": "MCQ",
+    "passage": "X_EN_MSA2023_PETS",
+    "prompt": "**18.** What is the pet food industry being criticised for?",
+    "payload": {
+      "choices": ["Animals are abused for pet food commercials.", "Premium pet food is not sold in supermarkets.", "The quality of pet food is not always guaranteed.", "The production of pet food could be bad for the planet."]
+    },
+    "solution": { "correct_choice": "The production of pet food could be bad for the planet." },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "Beleg im Text",
+        "body": "Absatz 2: *But now the industry faces a new source of criticism: just what is the environmental impact of feeding the huge quantity of \"companion\" animals around the world?* → Umweltfolgen der Futterproduktion."
+      },
+      {
+        "kind": "remember",
+        "body": "*criticised for* → suche im Text das Wort *criticism* und lies den Satz dahinter bis zum Ende – dort steht der Vorwurf."
+      }
+    ],
+    "tags": ["exam", "msa2023", "reading", "article"],
+    "source": "MSA Berlin 2023 Englisch, Reading Part 3, Nr. 18"
+  },
+  {
+    "id": "EN_MSA2023_R3_19",
+    "subject": "EN",
+    "topicId": "EN_READ_CORE",
+    "difficulty": 4,
+    "qtype": "MCQ",
+    "passage": "X_EN_MSA2023_PETS",
+    "prompt": "**19.** In the book *Time to Eat the Dog?* it is stated that …",
+    "payload": {
+      "choices": ["eating dog meat can harm human health.", "dogs need large outdoor spaces to run around in.", "some dogs are worse for the planet than a big car.", "both A + B"]
+    },
+    "solution": { "correct_choice": "some dogs are worse for the planet than a big car." },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "Beleg im Text",
+        "body": "Absatz 3: *it takes 0.84 hectares of land to keep a medium-sized dog fed. In contrast, running a 4.6-litre Toyota Land Cruiser … requires 0.41 hectares.* Vom Essen von Hundefleisch oder von Auslauf ist nicht die Rede – der Buchtitel ist nur provokant gemeint."
+      },
+      {
+        "kind": "remember",
+        "body": "Bei *both A + B* müssen **beide** Aussagen im Text belegt sein. Fehlt schon eine, ist die Kombination falsch."
+      }
+    ],
+    "tags": ["exam", "msa2023", "reading", "article"],
+    "source": "MSA Berlin 2023 Englisch, Reading Part 3, Nr. 19"
+  },
+  {
+    "id": "EN_MSA2023_R3_20",
+    "subject": "EN",
+    "topicId": "EN_READ_CORE",
+    "difficulty": 4,
+    "qtype": "MCQ",
+    "passage": "X_EN_MSA2023_PETS",
+    "prompt": "**20.** The book also states that …",
+    "payload": {
+      "choices": ["pet cats need a safe environment to live in.", "the most environmentally friendly cars come from Asia.", "a pet can have a higher carbon footprint than a person.", "many people have become aware of their carbon footprint."]
+    },
+    "solution": { "correct_choice": "a pet can have a higher carbon footprint than a person." },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "Beleg im Text",
+        "body": "Absatz 3: *the average citizen of Vietnam had an ecological footprint of 0.76 hectares. For an Ethiopian, it was just 0.67 hectares* – ein mittelgroßer Hund braucht 0.84 Hektar. *… can we really justify keeping pets that take more than some people?*"
+      },
+      {
+        "kind": "remember",
+        "body": "Vergleiche die Zahlen im Text direkt miteinander (0,84 > 0,76 > 0,67) – die richtige Aussage fasst diesen Vergleich in Worte, ohne die Zahlen zu nennen."
+      }
+    ],
+    "tags": ["exam", "msa2023", "reading", "article"],
+    "source": "MSA Berlin 2023 Englisch, Reading Part 3, Nr. 20"
+  },
+  {
+    "id": "EN_MSA2023_R3_21",
+    "subject": "EN",
+    "topicId": "EN_READ_CORE",
+    "difficulty": 4,
+    "qtype": "MCQ",
+    "passage": "X_EN_MSA2023_PETS",
+    "prompt": "**21.** Michael Bellingham points out that …",
+    "payload": {
+      "choices": ["there are significant advantages to having a pet.", "pets can cause allergies in children.", "a lot of people treat their pets like human beings.", "pets are more and more affected by pollution."]
+    },
+    "solution": { "correct_choice": "there are significant advantages to having a pet." },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "Beleg im Text",
+        "body": "Absatz 4: *the benefits of pets need to be viewed more holistically … positive health benefits on children … stronger immune systems and take fewer days off school. People with pets make fewer visits to the doctor.* Allergien werden nicht erwähnt – im Gegenteil, das Immunsystem sei stärker."
+      },
+      {
+        "kind": "remember",
+        "body": "Namen sind Anker: Suche *Bellingham* im Text und lies nur seine Zitate. Die richtige Aussage fasst seine Argumente zusammen."
+      }
+    ],
+    "tags": ["exam", "msa2023", "reading", "article"],
+    "source": "MSA Berlin 2023 Englisch, Reading Part 3, Nr. 21"
+  },
+  {
+    "id": "EN_MSA2023_R3_22",
+    "subject": "EN",
+    "topicId": "EN_READ_CORE",
+    "difficulty": 4,
+    "qtype": "MCQ",
+    "passage": "X_EN_MSA2023_PETS",
+    "prompt": "**22.** Which idea(s) does the author put forward to deal with the problems of keeping pets?",
+    "payload": {
+      "choices": ["Feed pets vegetarian food", "Have fewer pets", "Choose a small pet", "all of them (A+B+C)"]
+    },
+    "solution": { "correct_choice": "Have fewer pets" },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "Beleg im Text",
+        "body": "Absatz 5: *But in order to reduce their impact on the environment, should there possibly be a limit to the number of pets we have?* Vegetarisches Futter oder kleine Tiere schlägt der Autor nirgends vor."
+      },
+      {
+        "kind": "remember",
+        "body": "*all of them* ist nur richtig, wenn du **jeden** einzelnen Vorschlag im Text findest. Hier steht nur einer – und zwar vorsichtig als Frage formuliert."
+      }
+    ],
+    "tags": ["exam", "msa2023", "reading", "article"],
+    "source": "MSA Berlin 2023 Englisch, Reading Part 3, Nr. 22"
+  },
+  {
+    "id": "EN_MSA2023_R3_23",
+    "subject": "EN",
+    "topicId": "EN_READ_CORE",
+    "difficulty": 4,
+    "qtype": "MCQ",
+    "passage": "X_EN_MSA2023_PETS",
+    "prompt": "**23.** What is said about cats as pets?",
+    "payload": {
+      "choices": ["They should be allowed to roam freely outside.", "They endanger local wildlife.", "They are choosy eaters.", "Their poo can harm other animals' health."]
+    },
+    "solution": { "correct_choice": "They endanger local wildlife." },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "Beleg im Text",
+        "body": "Absatz 6: *the population of domesticated cats is having a harmful impact on native fauna. As meat eaters, cats are, by instinct, opportunistic hunters … 131 cats returned home 358 animals.* *Native fauna* = einheimische Tierwelt = *local wildlife*. Der Kot (*faeces*) wird bei den Hunden erwähnt, nicht bei den Katzen."
+      },
+      {
+        "kind": "remember",
+        "body": "Achte darauf, welches Tier im Satz Subjekt ist: Der Absatz wechselt mittendrin von Katzen (*hunters*) zu Hunden (*faeces*)."
+      }
+    ],
+    "tags": ["exam", "msa2023", "reading", "article"],
+    "source": "MSA Berlin 2023 Englisch, Reading Part 3, Nr. 23"
+  },
+  {
+    "id": "EN_MSA2023_R3_24",
+    "subject": "EN",
+    "topicId": "EN_READ_CORE",
+    "difficulty": 4,
+    "qtype": "MCQ",
+    "passage": "X_EN_MSA2023_PETS",
+    "prompt": "**24.** Pet owners admit that their pets …",
+    "payload": {
+      "choices": ["need a lot of care.", "have a carbon footprint comparable to a child's.", "are treated as family members.", "all of them (A+B+C)"]
+    },
+    "solution": { "correct_choice": "need a lot of care." },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "Beleg im Text",
+        "body": "Absatz 7: *But they will also acknowledge just how much time, effort and money they can require* → *acknowledge* = *admit*. Den Vergleich mit einem Kind ziehen *some* (Absatz 8), nicht die Besitzer selbst; dass Haustiere Familienmitglieder sind, steht *in many owners' eyes* – als Sichtweise, nicht als Eingeständnis."
+      },
+      {
+        "kind": "remember",
+        "body": "*admit* → suche Synonyme wie *acknowledge*, *concede*. Was die Besitzer **zugeben**, steht direkt hinter diesem Verb."
+      }
+    ],
+    "tags": ["exam", "msa2023", "reading", "article"],
+    "source": "MSA Berlin 2023 Englisch, Reading Part 3, Nr. 24"
+  },
+  {
+    "id": "EN_MSA2023_R3_25",
+    "subject": "EN",
+    "topicId": "EN_READ_CORE",
+    "difficulty": 5,
+    "qtype": "MCQ",
+    "passage": "X_EN_MSA2023_PETS",
+    "prompt": "**25.** The focus of the text is on …",
+    "payload": {
+      "choices": ["dealing with the overpopulation of pets.", "exploring attitudes of pet owners.", "research on the environmental impact of pets.", "companies' attempts to sell luxurious pet products."]
+    },
+    "solution": { "correct_choice": "research on the environmental impact of pets." },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "Beleg im Text",
+        "body": "Der rote Faden: Absatz 2 (*environmental impact of feeding … animals*), Absatz 3 (Buch mit Flächenvergleich), Absatz 4 (*carbon pawprint*), Absatz 6 (Studie aus Bristol), Absatz 8 (*similar environmental impact to that of a small person*). Lily's Kitchen ist nur der Aufhänger."
+      },
+      {
+        "kind": "remember",
+        "body": "Für die Frage nach dem Schwerpunkt zählst du, welches Thema in den **meisten** Absätzen vorkommt – nicht, womit der Text beginnt."
+      }
+    ],
+    "tags": ["exam", "msa2023", "reading", "article"],
+    "source": "MSA Berlin 2023 Englisch, Reading Part 3, Nr. 25"
+  },
+  {
+    "id": "EN_MSA2023_W_P1_POINTS",
+    "subject": "EN",
+    "topicId": "EN_WRITE_GUIDED",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "**Writing Part 1: Your photo (5 P).** Original task:\n\n*You have sent this photo (fireworks over a city at night) to your friend. He texts back: \"That looks amazing! Where is this from? Did you take the picture yourself? What was the occasion?\" Answer your friend's questions. Write 30–50 words in total.*\n\nWelche Informationen **muss** deine Antwort enthalten, damit du volle Inhaltspunkte bekommst?",
+    "payload": {
+      "choices": [
+        "Wo das Foto entstanden ist, wer es aufgenommen hat und zu welchem Anlass das Feuerwerk stattfand.",
+        "Wo das Foto entstanden ist, wie teuer die Reise war und wann du wieder zu Hause bist.",
+        "Welche Kamera du benutzt hast, wie das Wetter war und wer alles dabei war.",
+        "Eine möglichst ausführliche Beschreibung der Farben und Formen des Feuerwerks."
+      ]
+    },
+    "solution": { "correct_choice": "Wo das Foto entstanden ist, wer es aufgenommen hat und zu welchem Anlass das Feuerwerk stattfand." },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "Beleg im Text",
+        "body": "Die drei Fragen des Freundes: *Where is this from?* (Ort), *Did you take the picture yourself?* (wer hat fotografiert), *What was the occasion?* (Anlass). Jede unbeantwortete Frage kostet Inhaltspunkte – eine Beschreibung des Feuerwerks ist nicht verlangt."
+      },
+      {
+        "kind": "example",
+        "title": "So könnte es aussehen",
+        "body": "Thanks! This is from Sydney, where we spent New Year's Eve with my cousins. My aunt took the photo from her balcony while I was filming. The fireworks were part of the New Year celebrations over the harbour. *(38 words)*"
+      },
+      {
+        "kind": "remember",
+        "body": "Unterstreiche in der Aufgabe jedes Fragezeichen und hake beim Schreiben jede Frage ab. Bei 30–50 Wörtern reicht ein Satz pro Frage."
+      }
+    ],
+    "tags": ["exam", "msa2023", "writing", "photo"],
+    "source": "MSA Berlin 2023 Englisch, Writing Part 1"
+  },
+  {
+    "id": "EN_MSA2023_W_P1_CHECK",
+    "subject": "EN",
+    "topicId": "EN_WRITE_GUIDED",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "**Writing Part 1: Your photo.** Original task: *\"That looks amazing! Where is this from? Did you take the picture yourself? What was the occasion?\" Answer your friend's questions. Write 30–50 words in total.*\n\nWhich answer fulfils **all** requirements (all three questions answered, 30–50 words)?",
+    "payload": {
+      "choices": [
+        "Thanks! This is from Sydney, where we spent New Year's Eve with my cousins. My aunt took the photo from her balcony while I was filming. The fireworks were part of the New Year celebrations over the harbour. (38 words)",
+        "Hi! It's from Sydney. My aunt took it from her balcony. It was so loud and colourful, you would have loved it. (22 words)",
+        "It's from Sydney and I took it myself with my new phone. We were there for two weeks, went surfing every day, ate lots of ice cream, visited the opera house and the zoo, and I even saw a koala. The weather was great and my cousins were really funny. Hope you are fine too. (55 words)",
+        "Isn't it amazing? I found it online, it shows fireworks somewhere in Asia. I don't know what the occasion was, but I love it. (24 words)"
+      ]
+    },
+    "solution": { "correct_choice": "Thanks! This is from Sydney, where we spent New Year's Eve with my cousins. My aunt took the photo from her balcony while I was filming. The fireworks were part of the New Year celebrations over the harbour. (38 words)" },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "Beleg im Text",
+        "body": "Nur die erste Antwort nennt Ort (*Sydney*), Fotografin (*my aunt*) und Anlass (*New Year celebrations*) und bleibt mit 38 Wörtern im Rahmen von 30–50. Die zweite ist zu kurz und lässt den Anlass weg; die dritte ist mit 55 Wörtern zu lang und beantwortet die Frage nach dem Anlass nicht; die vierte ist zu kurz und beantwortet weder Ort noch Anlass richtig."
+      },
+      {
+        "kind": "remember",
+        "body": "Zähle am Ende die Wörter (Zeilen × Wörter pro Zeile). Unter dem Minimum gibt es Abzug; weit darüber kostet Zeit und erhöht die Fehlerzahl."
+      }
+    ],
+    "tags": ["exam", "msa2023", "writing", "photo"],
+    "source": "MSA Berlin 2023 Englisch, Writing Part 1"
+  },
+  {
+    "id": "EN_MSA2023_W_P2_POINTS",
+    "subject": "EN",
+    "topicId": "EN_WRITE_EMAIL",
+    "difficulty": 4,
+    "qtype": "MCQ",
+    "prompt": "**Writing Part 2: Media and biases (12 P).** Original task: *Read what the blogger has written. Then write back, answering all of his questions. Write a minimum of 100 words.*\n\nBlog post:\n\n*Hey there! Recently, I started thinking about just how much the media we consume shapes our view of the world around us. I think most people have thought about this fact at some point, but still, so many are not aware of it in their own personal lives. Have you thought about it before?*\n\n*Personally, I have started trying to counteract this by consuming more content that I usually would not be interested in that much. I also try to make myself more aware of my own biases to become more open toward people with differing opinions and perspectives. Can you think of a situation where you read or watched something that you heavily disagreed with? And have you ever noticed a bias of yours?*\n\n*I really feel that we should all think more about what media and content we consume on a regular basis and how it affects our way of thinking. It makes it much easier to relate to other people's thoughts on different matters. Would you agree with me? If so, why, and if not, why not?*\n\nWelche Punkte muss deine Antwort abdecken?",
+    "payload": {
+      "choices": [
+        "Vier Fragen: ob du schon über den Einfluss der Medien nachgedacht hast; eine Situation, in der du mit etwas Gelesenem oder Gesehenem gar nicht einverstanden warst; ob du bei dir selbst schon einmal eine Voreingenommenheit (*bias*) bemerkt hast; ob du dem Blogger zustimmst – mit Begründung.",
+        "Zwei Fragen: ob du dem Blogger zustimmst und welche Medien du täglich nutzt.",
+        "Drei Fragen: welche Nachrichtenseiten du liest, ob du Social Media nutzt und ob du Werbung magst.",
+        "Eine Frage: ob du dem Blogger zustimmst – alles andere sind nur Erzählungen über ihn selbst."
+      ]
+    },
+    "solution": { "correct_choice": "Vier Fragen: ob du schon über den Einfluss der Medien nachgedacht hast; eine Situation, in der du mit etwas Gelesenem oder Gesehenem gar nicht einverstanden warst; ob du bei dir selbst schon einmal eine Voreingenommenheit (*bias*) bemerkt hast; ob du dem Blogger zustimmst – mit Begründung." },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "Beleg im Text",
+        "body": "Die Fragezeichen im Blogeintrag: (1) *Have you thought about it before?* (2) *Can you think of a situation where you read or watched something that you heavily disagreed with?* (3) *And have you ever noticed a bias of yours?* (4) *Would you agree with me? If so, why, and if not, why not?* – Für jede Frage gibt es Inhaltspunkte, die Begründung bei Frage 4 ist Pflicht."
+      },
+      {
+        "kind": "remember",
+        "body": "Nummeriere die Fragen im Aufgabentext (1–4) und beantworte sie in derselben Reihenfolge, je ein Absatz – so vergisst du keine und dein Text hat automatisch eine Struktur."
+      }
+    ],
+    "tags": ["exam", "msa2023", "writing", "blog"],
+    "source": "MSA Berlin 2023 Englisch, Writing Part 2"
+  },
+  {
+    "id": "EN_MSA2023_W_P2_FORMAL",
+    "subject": "EN",
+    "topicId": "EN_WRITE_EMAIL",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "**Writing Part 2: Media and biases.** The task says: *Then write back, answering all of his questions. Write a minimum of 100 words.* (Bewertung: Inhalt 6 P, Sprache 6 P.)\n\nWelche Aussage zu den formalen Anforderungen ist richtig?",
+    "payload": {
+      "choices": [
+        "Mindestens 100 Wörter; der Ton darf locker sein, weil der Blogger dich mit *Hey there!* anspricht – aber ganze Sätze, eine Anrede und ein Schluss gehören dazu.",
+        "Höchstens 100 Wörter; ein förmlicher Brief mit *Dear Sir or Madam* und *Yours faithfully*.",
+        "Genau 100 Wörter; Stichpunkte sind erlaubt, solange alle Fragen vorkommen.",
+        "Keine Wortvorgabe; es zählt nur, dass du dem Blogger zustimmst."
+      ]
+    },
+    "solution": { "correct_choice": "Mindestens 100 Wörter; der Ton darf locker sein, weil der Blogger dich mit *Hey there!* anspricht – aber ganze Sätze, eine Anrede und ein Schluss gehören dazu." },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "Beleg im Text",
+        "body": "*Write a minimum of 100 words* = **mindestens** 100, nach oben offen. Der Blogger schreibt informell (*Hey there!*, *I really feel*), also antwortest du im selben Register – aber Sprache wird mit 6 Punkten bewertet: vollständige Sätze, Absätze, Anrede und Grußformel."
+      },
+      {
+        "kind": "mistake",
+        "body": "Typischer Fehler: *minimum* als *maximum* lesen und bei 90 Wörtern aufhören – das kostet Punkte, obwohl der Inhalt stimmt. Ebenso: dem Blogger zustimmen, ohne *why* zu beantworten."
+      },
+      {
+        "kind": "remember",
+        "body": "Register spiegeln: Sprich den Schreiber so an, wie er dich anspricht (*Hey!* / *Hi!*), und schließe mit *Best wishes* oder *Take care* plus Vornamen."
+      }
+    ],
+    "tags": ["exam", "msa2023", "writing", "blog"],
+    "source": "MSA Berlin 2023 Englisch, Writing Part 2"
+  },
+  {
+    "id": "EN_MSA2023_W_P2_OPENING",
+    "subject": "EN",
+    "topicId": "EN_WRITE_EMAIL",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "**Writing Part 2: Media and biases.** You write back to the blogger who started with *Hey there!* and asked: *Have you thought about it before?*\n\nWhich opening fits the task best?",
+    "payload": {
+      "choices": [
+        "Hey! That's a really interesting point you're making. To be honest, I haven't thought much about this before, but your post made me realise how much my feed shapes my opinions.",
+        "Dear Sir or Madam, I am writing to you with reference to your recent blog post, which I have read with great interest.",
+        "Media bad, I agree. Everybody should think about it. Bye.",
+        "To whom it may concern: please find attached my answers to your four questions."
+      ]
+    },
+    "solution": { "correct_choice": "Hey! That's a really interesting point you're making. To be honest, I haven't thought much about this before, but your post made me realise how much my feed shapes my opinions." },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "Beleg im Text",
+        "body": "Die erste Eröffnung passt zum informellen Blog (*Hey there!* → *Hey!*), reagiert auf den Beitrag und beantwortet direkt die erste Frage (*Have you thought about it before?*). *Dear Sir or Madam* und *To whom it may concern* sind Formeln für Geschäftsbriefe; die dritte Variante hat keine ganzen Sätze und beantwortet nichts."
+      },
+      {
+        "kind": "remember",
+        "body": "Ein guter Einstieg = Anrede + kurze Reaktion auf den Text + Antwort auf die erste Frage. Danach pro Frage ein Absatz."
+      }
+    ],
+    "tags": ["exam", "msa2023", "writing", "blog"],
+    "source": "MSA Berlin 2023 Englisch, Writing Part 2"
+  },
+  {
+    "id": "EN_MSA2023_W_P3_TASK",
+    "subject": "EN",
+    "topicId": "EN_WRITE_MEDIATION",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "**Writing Part 3: ChatGPT (8 P).** Original task:\n\n*Your Irish friend Liam is interested in artificial intelligence and what it means for schools and students. He asked you for an interesting German article. Read the article (\"ChatGPT in der Bildung: Chancen und Herausforderungen im Umgang mit KI\"). Write an email to your friend telling him what the article is about and mention at least four aspects of AI affecting schools, students or teachers. Do not translate word for word. Write complete sentences.*\n\nWas genau ist deine Aufgabe?",
+    "payload": {
+      "choices": [
+        "Eine E-Mail an Liam, die in eigenen Worten erklärt, worum es im Artikel geht, und mindestens vier Aspekte nennt, wie KI Schulen, Schüler oder Lehrkräfte beeinflusst – in ganzen Sätzen.",
+        "Den deutschen Artikel möglichst genau Satz für Satz ins Englische übersetzen.",
+        "Einen Aufsatz über deine eigene Meinung zu ChatGPT schreiben, ohne auf den Artikel einzugehen.",
+        "Liam eine Stichpunktliste mit allen Zahlen, Namen und Daten aus dem Artikel schicken."
+      ]
+    },
+    "solution": { "correct_choice": "Eine E-Mail an Liam, die in eigenen Worten erklärt, worum es im Artikel geht, und mindestens vier Aspekte nennt, wie KI Schulen, Schüler oder Lehrkräfte beeinflusst – in ganzen Sätzen." },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "Beleg im Text",
+        "body": "*telling him what the article is about* = Thema in ein bis zwei Sätzen; *mention at least four aspects* = vier Inhaltspunkte (Inhalt 4 P); *Do not translate word for word* und *Write complete sentences* = Mediation, keine Übersetzung und keine Liste. Deine eigene Meinung ist nicht gefragt."
+      },
+      {
+        "kind": "remember",
+        "body": "Mediation heißt **Inhalte übertragen**: Lies den Artikel, markiere vier Aspekte, und erkläre sie Liam so, als hätte er den Text nie gesehen – mit einfachem Vokabular."
+      }
+    ],
+    "tags": ["exam", "msa2023", "writing", "mediation"],
+    "source": "MSA Berlin 2023 Englisch, Writing Part 3 (Aufgabentext nach der Musterlösung; im Aufgabenteil des Prüfungshefts ist ein Satz aus einer anderen Aufgabe abgedruckt)"
+  },
+  {
+    "id": "EN_MSA2023_W_P3_ASPECTS",
+    "subject": "EN",
+    "topicId": "EN_WRITE_MEDIATION",
+    "difficulty": 4,
+    "qtype": "MATCH",
+    "prompt": "**Writing Part 3: ChatGPT.** Für die E-Mail an Liam brauchst du mindestens vier Aspekte aus dem Artikel. Ordne jedem deutschen Aspekt die passende englische Wiedergabe zu (keine wörtliche Übersetzung).",
+    "payload": {
+      "left": [
+        "Der Chatbot kann Aufsätze schreiben, Gedichte analysieren, Texte zusammenfassen und sogar Computerprogramme erstellen.",
+        "Schülerinnen und Schüler verwenden ihn, um Hausaufgaben zu erledigen, Referate vorzubereiten und komplexe Themen zu recherchieren.",
+        "Es besteht das Risiko, dass Schüler den Bot zum Schummeln nutzen und ihre eigenen Denkfähigkeiten vernachlässigen.",
+        "ChatGPT gibt keineswegs fehlerfreie Ergebnisse heraus – Lehrkräfte sollten zum kritischen Hinterfragen ermutigen.",
+        "Statt Auswendiglernen sollten Lehrkräfte Projektarbeiten und problemorientiertes Lernen anbieten; die Prüfungskultur muss angepasst werden."
+      ],
+      "right": [
+        "The chatbot can write essays, analyse poems, summarise texts and even write computer programs.",
+        "Students use it to do their homework, prepare presentations and research difficult topics.",
+        "There is a risk that students use the bot to cheat and stop thinking for themselves.",
+        "ChatGPT often makes mistakes, so teachers should encourage students to check its answers critically.",
+        "Instead of memorising facts, schools should offer project work and problem-based learning and change the way they test."
+      ]
+    },
+    "solution": {
+      "pairs": [
+        [
+          "Der Chatbot kann Aufsätze schreiben, Gedichte analysieren, Texte zusammenfassen und sogar Computerprogramme erstellen.",
+          "The chatbot can write essays, analyse poems, summarise texts and even write computer programs."
+        ],
+        [
+          "Schülerinnen und Schüler verwenden ihn, um Hausaufgaben zu erledigen, Referate vorzubereiten und komplexe Themen zu recherchieren.",
+          "Students use it to do their homework, prepare presentations and research difficult topics."
+        ],
+        [
+          "Es besteht das Risiko, dass Schüler den Bot zum Schummeln nutzen und ihre eigenen Denkfähigkeiten vernachlässigen.",
+          "There is a risk that students use the bot to cheat and stop thinking for themselves."
+        ],
+        [
+          "ChatGPT gibt keineswegs fehlerfreie Ergebnisse heraus – Lehrkräfte sollten zum kritischen Hinterfragen ermutigen.",
+          "ChatGPT often makes mistakes, so teachers should encourage students to check its answers critically."
+        ],
+        [
+          "Statt Auswendiglernen sollten Lehrkräfte Projektarbeiten und problemorientiertes Lernen anbieten; die Prüfungskultur muss angepasst werden.",
+          "Instead of memorising facts, schools should offer project work and problem-based learning and change the way they test."
+        ]
+      ]
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "Beleg im Text",
+        "body": "Beleg im Artikel: Absatz 2 (*Aufsätze schreiben, Gedichte analysieren, Texte zusammenfassen und sogar Computerprogramme erstellen*), Absatz 3 (*Hausaufgaben zu erledigen, Referate vorzubereiten und komplexe Themen zu recherchieren*), Absatz 4 (*Werkzeug für Schummelei … eigenen Denkfähigkeiten vernachlässigen*), Absatz 5 (*keineswegs fehlerfreie Ergebnisse … kritisch zu hinterfragen*), Absatz 7–8 (*Projektarbeiten und problemorientiertes Lernen … Prüfungskultur entsprechend anzupassen*)."
+      },
+      {
+        "kind": "remember",
+        "body": "Für jeden Aspekt: die Kernaussage in einem englischen Satz mit einfachem Vokabular (*cheat*, *check*, *project work*). Vier klare Sätze bringen mehr Punkte als ein halb übersetzter Absatz."
+      }
+    ],
+    "tags": ["exam", "msa2023", "writing", "mediation"],
+    "source": "MSA Berlin 2023 Englisch, Writing Part 3; Aspekte aus dem deutschen Artikel \"ChatGPT in der Bildung\""
+  },
+  {
+    "id": "EN_MSA2023_W_P3_NOTINTEXT",
+    "subject": "EN",
+    "topicId": "EN_WRITE_MEDIATION",
+    "difficulty": 4,
+    "qtype": "MCQ",
+    "prompt": "**Writing Part 3: ChatGPT.** Liam soll erfahren, was **im Artikel** steht. Welcher dieser Aspekte steht **nicht** im Artikel und darf deshalb nicht als sein Inhalt wiedergegeben werden?",
+    "payload": {
+      "choices": [
+        "ChatGPT wird an deutschen Schulen ab dem nächsten Schuljahr verboten.",
+        "ChatGPT wurde im November 2022 von der US-Firma OpenAI veröffentlicht.",
+        "Lehrkräfte sollen erklären, wie solche Programme funktionieren, damit Schüler die Ergebnisse besser verstehen.",
+        "Schulen müssen ihre Bildungsinhalte und ihre Prüfungskultur an die KI anpassen."
+      ]
+    },
+    "solution": { "correct_choice": "ChatGPT wird an deutschen Schulen ab dem nächsten Schuljahr verboten." },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "Beleg im Text",
+        "body": "Der Artikel fragt zwar *Nutzen oder verbieten?*, entscheidet sich aber für einen bewussten Umgang: *sensibilisieren*, *aufklären, wie solche Programme funktionieren*, *Prüfungskultur entsprechend anpassen*. Ein Verbot wird nirgends beschlossen. Die drei anderen Aussagen stehen so im Text (Absatz 2, 6 und 8)."
+      },
+      {
+        "kind": "remember",
+        "body": "In der Mediation gibst du nur wieder, was im Text steht. Eigene Vermutungen oder Zuspitzungen (*verboten*) kosten Inhaltspunkte, weil sie den Artikel verfälschen."
+      }
+    ],
+    "tags": ["exam", "msa2023", "writing", "mediation"],
+    "source": "MSA Berlin 2023 Englisch, Writing Part 3"
+  },
+  {
+    "id": "EN_MSA2023_W_P3_FORMAT",
+    "subject": "EN",
+    "topicId": "EN_WRITE_MEDIATION",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "**Writing Part 3: ChatGPT.** The task: *Write an email to your friend Liam …* Which greeting and closing fit this email?",
+    "payload": {
+      "choices": [
+        "Hi Liam, … / Best wishes, Lea",
+        "Dear Mr Liam, … / Yours faithfully, L. Schmidt",
+        "Hello everybody, … / See you all soon",
+        "Dear Sir or Madam, … / Yours sincerely, Lea Schmidt"
+      ]
+    },
+    "solution": { "correct_choice": "Hi Liam, … / Best wishes, Lea" },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "Beleg im Text",
+        "body": "Liam ist dein Freund (*your Irish friend*) → informelle E-Mail: *Hi Liam* oder *Dear Liam*, Schluss mit *Best wishes* oder *Take care* und deinem Vornamen. *Yours faithfully* gehört nur zu *Dear Sir or Madam*; *Hello everybody* passt nicht für einen einzelnen Empfänger."
+      },
+      {
+        "kind": "remember",
+        "body": "Aufbau der E-Mail: Anrede – Grund des Schreibens (*I found an article about …*) – Hauptteil mit den vier Aspekten – Schluss (*Let me know what you think!*) – Grußformel. Fehlen Anrede oder Grußformel, gibt es Abzug bei Sprache."
+      }
+    ],
+    "tags": ["exam", "msa2023", "writing", "mediation"],
+    "source": "MSA Berlin 2023 Englisch, Writing Part 3"
+  }
+]

@@ -18,13 +18,16 @@ test("English lesson, drill and primer", async ({ page }) => {
   await page.getByRole("button", { name: /Jetzt üben/ }).click();
   await expect(page.getByText(/Thema üben · Englisch/)).toBeVisible();
   for (let i = 0; i < 3; i++) {
-    const select = page.getByRole("combobox").first();
+    const selects = page.getByRole("combobox");
     const radio = page.getByRole("radio").first();
-    const input = page.getByLabel(/Lücke 1/).first();
-    if (await select.isVisible().catch(() => false)) await select.selectOption({ index: 1 });
-    else if (await radio.isVisible().catch(() => false)) await radio.click();
-    else if (await input.isVisible().catch(() => false)) await input.fill("went");
-    else break;
+    const inputs = page.getByLabel(/Lücke \d/);
+    if ((await selects.count()) > 0) {
+      // Cloze tasks may have several blanks; every one must be filled before the check button enables.
+      for (let k = 0; k < (await selects.count()); k++) await selects.nth(k).selectOption({ index: 1 });
+    } else if (await radio.isVisible().catch(() => false)) await radio.click();
+    else if ((await inputs.count()) > 0) {
+      for (let k = 0; k < (await inputs.count()); k++) await inputs.nth(k).fill("went");
+    } else break;
     if (i === 0) await shot(page, "2-drill");
     await page.getByRole("button", { name: "Antwort prüfen" }).click();
     await expect(page.getByText(/Richtig!|Leider nicht richtig/)).toBeVisible();

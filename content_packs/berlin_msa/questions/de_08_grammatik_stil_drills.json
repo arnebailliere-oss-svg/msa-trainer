@@ -1,0 +1,1311 @@
+[
+  {
+    "id": "DE_G8_SATZART_REIHE_GEFUEGE_T1",
+    "subject": "DE",
+    "topicId": "DE_GRAM_SENTENCE_TYPES",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Satzreihe, Satzgefüge oder einfacher Satz?\n\n„{{s_satz}}“",
+    "payload": { "choices": ["Satzreihe (Hauptsatz + Hauptsatz)", "Satzgefüge (Hauptsatz + Nebensatz)", "einfacher Satz (nur ein Hauptsatz)"] },
+    "solution": { "correct_choice": "{{s_loesung}}" },
+    "explanation": [
+      { "kind": "what", "title": "Woran du es erkennst", "body": "{{s_hinweis}}" },
+      { "kind": "steps", "title": "So prüfst du es", "body": "1. Teile den Satz am Komma oder am Bindewort.\n2. Schau auf das **Verb** jedes Teils: Steht es an **zweiter** Stelle, ist der Teil ein Hauptsatz. Steht es **am Ende**, ist er ein Nebensatz.\n3. Zwei Hauptsätze → **Satzreihe**. Hauptsatz + Nebensatz → **Satzgefüge**. Nur ein Verb → einfacher Satz." },
+      { "kind": "remember", "body": "**Hauptsatz**: kann allein stehen, das Verb steht an zweiter Stelle. **Nebensatz**: beginnt mit *weil, dass, ob, wenn, obwohl, als, während* oder einem Relativpronomen (*der, die, das*), das Verb steht am Ende. Merkhilfe: **Reihe** = gleichrangig nebeneinander, **Gefüge** = einer hängt vom anderen ab." }
+    ],
+    "tags": ["satzarten", "grammatik", "drill"],
+    "source": "Rahmenlehrplan Deutsch Berlin, Sprachwissen; nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 3",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "s": {
+          "type": "pick",
+          "from": [
+            { "satz": "Ich habe Hunger, aber der Kühlschrank ist leer.", "loesung": "Satzreihe (Hauptsatz + Hauptsatz)", "hinweis": "Zwei Hauptsätze, verbunden mit *aber*: In beiden steht das Verb an zweiter Stelle (*habe*, *ist*)." },
+            { "satz": "Ich bleibe zu Hause, weil ich krank bin.", "loesung": "Satzgefüge (Hauptsatz + Nebensatz)", "hinweis": "*weil* leitet den Nebensatz ein, das Verb *bin* steht ganz am Ende." },
+            { "satz": "Die Sonne scheint und die Vögel singen.", "loesung": "Satzreihe (Hauptsatz + Hauptsatz)", "hinweis": "Zwei vollständige Hauptsätze mit *und*: *scheint* und *singen* stehen jeweils an zweiter Stelle." },
+            { "satz": "Ich weiß nicht, ob Lena heute kommt.", "loesung": "Satzgefüge (Hauptsatz + Nebensatz)", "hinweis": "*ob* leitet den Nebensatz ein, *kommt* steht am Ende." },
+            { "satz": "Wir gehen heute Abend ins Kino.", "loesung": "einfacher Satz (nur ein Hauptsatz)", "hinweis": "Nur ein Verb (*gehen*), kein Komma: ein einziger Hauptsatz." },
+            { "satz": "Als es klingelte, sprangen alle auf.", "loesung": "Satzgefüge (Hauptsatz + Nebensatz)", "hinweis": "*als* leitet den Nebensatz ein (*klingelte* am Ende); *sprangen alle auf* ist der Hauptsatz." },
+            { "satz": "Tom lernt für den Test, Mia schläft schon.", "loesung": "Satzreihe (Hauptsatz + Hauptsatz)", "hinweis": "Zwei Hauptsätze, nur durch ein Komma verbunden: *lernt* und *schläft* stehen an zweiter Stelle." },
+            { "satz": "Das Handy, das ich gestern gekauft habe, ist schon kaputt.", "loesung": "Satzgefüge (Hauptsatz + Nebensatz)", "hinweis": "Der Relativsatz *das ich gestern gekauft habe* ist ein Nebensatz (Verb *habe* am Ende), eingeschoben in den Hauptsatz." },
+            { "satz": "Meine Schwester spielt seit drei Jahren Gitarre.", "loesung": "einfacher Satz (nur ein Hauptsatz)", "hinweis": "Ein Verb, ein Subjekt, kein Komma: ein einfacher Hauptsatz." },
+            { "satz": "Entweder du hilfst mir, oder ich frage jemand anderen.", "loesung": "Satzreihe (Hauptsatz + Hauptsatz)", "hinweis": "*entweder … oder* verbindet zwei Hauptsätze (*hilfst* und *frage* an zweiter Stelle)." },
+            { "satz": "Obwohl es regnet, spielen wir draußen.", "loesung": "Satzgefüge (Hauptsatz + Nebensatz)", "hinweis": "*obwohl* leitet den Nebensatz ein, *regnet* steht am Ende; danach folgt der Hauptsatz." },
+            { "satz": "Er sagte, dass er müde sei.", "loesung": "Satzgefüge (Hauptsatz + Nebensatz)", "hinweis": "*dass* leitet den Nebensatz ein, *sei* steht am Ende." },
+            { "satz": "Der Zug hatte Verspätung, deshalb kamen wir zu spät.", "loesung": "Satzreihe (Hauptsatz + Hauptsatz)", "hinweis": "*deshalb* ist ein Adverb, kein Nebensatz-Wort: *kamen* steht direkt danach an zweiter Stelle. Also zwei Hauptsätze." }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "DE_G8_SATZART_VERBINDEN_T1",
+    "subject": "DE",
+    "topicId": "DE_GRAM_SENTENCE_TYPES",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "Verbinde die beiden Sätze mit **{{s_wort}}** zu einem Satzgefüge.\n\n„{{s_s1}}“ „{{s_s2}}“",
+    "payload": { "choices": ["{{s_a}}", "{{s_b}}", "{{s_c}}", "{{s_d}}"] },
+    "solution": { "correct_choice": "{{s_a}}" },
+    "explanation": [
+      { "kind": "steps", "title": "So gehst du vor", "body": "{{s_hinweis}}" },
+      { "kind": "remember", "body": "In einem **Nebensatz** wandert das gebeugte Verb **ans Ende**: *Ich bleibe zu Hause, weil ich krank **bin**.* Steht der Nebensatz **vorn**, folgt der Hauptsatz direkt mit dem Verb: *Weil ich krank bin, **bleibe** ich zu Hause.* Zwischen Hauptsatz und Nebensatz steht immer ein **Komma**." },
+      { "kind": "mistake", "body": "Typischer Fehler aus der gesprochenen Sprache: *weil ich bin krank*. Im geschriebenen Deutsch steht das Verb nach *weil* am Ende." }
+    ],
+    "tags": ["satzarten", "grammatik", "drill"],
+    "source": "Rahmenlehrplan Deutsch Berlin, Sprachwissen; nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 3",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "s": {
+          "type": "pick",
+          "from": [
+            { "s1": "Ich bleibe zu Hause.", "s2": "Ich bin krank.", "wort": "weil", "a": "Ich bleibe zu Hause, weil ich krank bin.", "b": "Ich bleibe zu Hause, weil ich bin krank.", "c": "Ich bleibe zu Hause weil ich krank bin.", "d": "Weil ich bin krank, bleibe ich zu Hause.", "hinweis": "*weil* leitet den Nebensatz ein → das Verb *bin* rückt ans Ende, davor steht ein Komma." },
+            { "s1": "Es regnet.", "s2": "Wir spielen draußen.", "wort": "obwohl", "a": "Obwohl es regnet, spielen wir draußen.", "b": "Obwohl es regnet, wir spielen draußen.", "c": "Obwohl regnet es, spielen wir draußen.", "d": "Wir spielen draußen, obwohl regnet es.", "hinweis": "Nebensatz vorn: *Obwohl es regnet* (Verb am Ende), Komma, dann beginnt der Hauptsatz sofort mit dem Verb: *spielen wir draußen*." },
+            { "s1": "Lea hofft.", "s2": "Sie besteht die Prüfung.", "wort": "dass", "a": "Lea hofft, dass sie die Prüfung besteht.", "b": "Lea hofft, dass sie besteht die Prüfung.", "c": "Lea hofft dass, sie die Prüfung besteht.", "d": "Lea hofft, das sie die Prüfung besteht.", "hinweis": "*dass* (mit ss!) leitet den Nebensatz ein, *besteht* steht am Ende. Das Komma steht **vor** *dass*." },
+            { "s1": "Ich rufe dich an.", "s2": "Ich bin zu Hause.", "wort": "sobald", "a": "Ich rufe dich an, sobald ich zu Hause bin.", "b": "Ich rufe dich an, sobald bin ich zu Hause.", "c": "Ich rufe dich an sobald ich zu Hause bin.", "d": "Sobald ich zu Hause bin, ich rufe dich an.", "hinweis": "*sobald* leitet den Nebensatz ein → *bin* ans Ende. In der letzten Variante fehlt nach dem vorangestellten Nebensatz das Verb an erster Stelle des Hauptsatzes (*rufe ich*)." },
+            { "s1": "Wir nehmen den Bus.", "s2": "Es ist zu kalt zum Radfahren.", "wort": "wenn", "a": "Wir nehmen den Bus, wenn es zu kalt zum Radfahren ist.", "b": "Wir nehmen den Bus, wenn es ist zu kalt zum Radfahren.", "c": "Wenn es zu kalt zum Radfahren ist, wir nehmen den Bus.", "d": "Wir nehmen den Bus wenn, es zu kalt zum Radfahren ist.", "hinweis": "*wenn* → Nebensatz, *ist* ans Ende. Die Variante mit dem Nebensatz vorn wäre nur richtig als *…, nehmen wir den Bus*." },
+            { "s1": "Tim kam zu spät.", "s2": "Er hatte verschlafen.", "wort": "weil", "a": "Tim kam zu spät, weil er verschlafen hatte.", "b": "Tim kam zu spät, weil er hatte verschlafen.", "c": "Tim kam zu spät weil er verschlafen hatte.", "d": "Weil er hatte verschlafen, kam Tim zu spät.", "hinweis": "Bei zweiteiligem Prädikat steht das **gebeugte** Verb ganz am Ende: *verschlafen **hatte***." },
+            { "s1": "Ich weiß nicht.", "s2": "Kommt Mia mit?", "wort": "ob", "a": "Ich weiß nicht, ob Mia mitkommt.", "b": "Ich weiß nicht, ob kommt Mia mit.", "c": "Ich weiß nicht ob Mia mitkommt.", "d": "Ich weiß nicht, ob Mia kommt mit.", "hinweis": "*ob* leitet den Nebensatz ein; das trennbare Verb *mitkommen* steht am Ende **zusammengeschrieben**: *mitkommt*." },
+            { "s1": "Sie packte den Koffer.", "s2": "Sie fuhr in den Urlaub.", "wort": "bevor", "a": "Sie packte den Koffer, bevor sie in den Urlaub fuhr.", "b": "Sie packte den Koffer, bevor fuhr sie in den Urlaub.", "c": "Sie packte den Koffer bevor sie in den Urlaub fuhr.", "d": "Bevor sie fuhr in den Urlaub, packte sie den Koffer.", "hinweis": "*bevor* → Nebensatz, *fuhr* ans Ende, Komma davor." },
+            { "s1": "Das ist das Café.", "s2": "Wir treffen uns dort immer.", "wort": "in dem", "a": "Das ist das Café, in dem wir uns immer treffen.", "b": "Das ist das Café, in dem treffen wir uns immer.", "c": "Das ist das Café in dem wir uns immer treffen.", "d": "Das ist das Café, in dem wir treffen uns immer.", "hinweis": "Relativsatz: *in dem* leitet ihn ein, *treffen* steht am Ende, Komma vor dem Relativsatz." },
+            { "s1": "Ich lerne jeden Tag.", "s2": "Ich will die Prüfung bestehen.", "wort": "damit", "a": "Ich lerne jeden Tag, damit ich die Prüfung bestehe.", "b": "Ich lerne jeden Tag, damit ich bestehe die Prüfung.", "c": "Ich lerne jeden Tag damit ich die Prüfung bestehe.", "d": "Damit ich die Prüfung bestehe, ich lerne jeden Tag.", "hinweis": "*damit* (Absicht) → Nebensatz, *bestehe* ans Ende. Das *will* fällt weg, weil *damit* die Absicht schon ausdrückt." }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "DE_G8_SATZART_VERBSTELLUNG_T1",
+    "subject": "DE",
+    "topicId": "DE_GRAM_SENTENCE_TYPES",
+    "difficulty": 3,
+    "qtype": "CLOZE",
+    "prompt": "Der Nebensatz steht vorn. Wie geht der Hauptsatz richtig weiter?",
+    "payload": { "text_with_blanks": "{{s_ns}}, ___ {{s_rest}}", "blanks": [{ "id": 1, "choices": ["{{s_a}}", "{{s_b}}"] }] },
+    "solution": { "answers": { "1": "{{s_loesung}}" } },
+    "explanation": [
+      { "kind": "what", "title": "Warum", "body": "{{s_hinweis}}" },
+      { "kind": "remember", "body": "Im Hauptsatz steht das Verb an **zweiter** Stelle. Steht ein Nebensatz vorn, ist er selbst die **erste** Stelle. Deshalb kommt nach dem Komma **sofort das Verb**, dann das Subjekt: *Wenn es regnet, **bleiben wir** drinnen.* Nicht: *Wenn es regnet, wir bleiben drinnen.*" },
+      { "kind": "mistake", "body": "Der Fehler *Weil ich krank war, ich blieb zu Hause* klingt nach Umgangssprache oder Englisch. Richtig: *…, blieb ich zu Hause.*" }
+    ],
+    "tags": ["satzarten", "verbstellung", "grammatik", "drill"],
+    "source": "Rahmenlehrplan Deutsch Berlin, Sprachwissen",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "s": {
+          "type": "pick",
+          "from": [
+            { "ns": "Obwohl es regnet", "rest": "Fußball.", "a": "spielen wir", "b": "wir spielen", "loesung": "spielen wir", "hinweis": "*Obwohl es regnet* besetzt die erste Position. Also folgt sofort das Verb: *spielen wir Fußball*." },
+            { "ns": "Weil der Bus nicht kam", "rest": "zu Fuß gegangen.", "a": "wir sind", "b": "sind wir", "loesung": "sind wir", "hinweis": "Nach dem Nebensatz kommt das gebeugte Verb *sind*, dann *wir*; das Partizip *gegangen* bleibt am Ende." },
+            { "ns": "Wenn du Zeit hast", "rest": "mich an.", "a": "rufst du", "b": "du rufst", "loesung": "rufst du", "hinweis": "*Wenn du Zeit hast* ist die erste Stelle → *rufst* kommt direkt danach, *du* dahinter." },
+            { "ns": "Als das Spiel zu Ende war", "rest": "nach Hause.", "a": "alle gingen", "b": "gingen alle", "loesung": "gingen alle", "hinweis": "Der Nebensatz mit *als* steht vorn, deshalb: Komma, Verb (*gingen*), Subjekt (*alle*)." },
+            { "ns": "Dass Mia gewonnen hat", "rest": "mich total.", "a": "freut", "b": "es freut", "loesung": "freut", "hinweis": "Der dass-Satz ist hier selbst das Subjekt (*Was* freut mich? Dass Mia gewonnen hat). Ein zusätzliches *es* wäre doppelt." },
+            { "ns": "Nachdem wir gegessen hatten", "rest": "Karten.", "a": "spielten wir", "b": "wir spielten", "loesung": "spielten wir", "hinweis": "Nebensatz vorn → Verb an zweiter Stelle des ganzen Satzes: *spielten wir*." },
+            { "ns": "Sobald die Ferien anfangen", "rest": "nach Polen.", "a": "ich fahre", "b": "fahre ich", "loesung": "fahre ich", "hinweis": "*Sobald die Ferien anfangen* ist Position eins, *fahre* Position zwei, dann *ich*." },
+            { "ns": "Während der Lehrer redete", "rest": "Nachrichten.", "a": "schrieb Tim", "b": "Tim schrieb", "loesung": "schrieb Tim", "hinweis": "Nach dem Nebensatz mit *während* folgt das Verb *schrieb*, erst dann das Subjekt *Tim*." },
+            { "ns": "Ob er kommt", "rest": "niemand.", "a": "es weiß", "b": "weiß", "loesung": "weiß", "hinweis": "*Ob er kommt* ist das Objekt von *weiß* (Was weiß niemand?). Nach dem Komma direkt das Verb, kein *es*." },
+            { "ns": "Da ich kein Geld hatte", "rest": "zu Hause.", "a": "blieb ich", "b": "ich blieb", "loesung": "blieb ich", "hinweis": "*Da* bedeutet hier *weil* und leitet den Nebensatz ein. Danach: Verb (*blieb*), Subjekt (*ich*)." },
+            { "ns": "Seit sie in Berlin wohnt", "rest": "uns selten.", "a": "wir sehen", "b": "sehen wir", "loesung": "sehen wir", "hinweis": "Nebensatz vorn → *sehen wir uns selten*, nicht *wir sehen uns selten*." },
+            { "ns": "Falls der Zug ausfällt", "rest": "ich mit dem Rad.", "a": "fahre", "b": "ich fahre", "loesung": "fahre", "hinweis": "Nach dem vorangestellten Nebensatz kommt das Verb zuerst: *fahre ich mit dem Rad*. Das *ich* steht schon im Rest des Satzes." }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "DE_G8_SATZART_NEBENSATZ_ERKENNEN",
+    "subject": "DE",
+    "topicId": "DE_GRAM_SENTENCE_TYPES",
+    "difficulty": 1,
+    "qtype": "MCQ",
+    "prompt": "Welcher dieser Satzteile ist ein **Nebensatz** (kann nicht allein stehen)?",
+    "payload": { "choices": ["weil ich heute keine Zeit habe", "Ich habe heute keine Zeit.", "Heute habe ich keine Zeit.", "Hast du heute Zeit?"] },
+    "solution": { "correct_choice": "weil ich heute keine Zeit habe" },
+    "explanation": [
+      { "kind": "what", "title": "Warum", "body": "*weil ich heute keine Zeit habe* beginnt mit dem Bindewort **weil**, das Verb **habe** steht ganz am Ende, und der Teil ergibt allein keinen vollständigen Satz. Er braucht einen Hauptsatz: *Ich komme nicht, weil ich heute keine Zeit habe.*\n\nDie anderen drei sind Hauptsätze: Sie stehen allein, das Verb steht an zweiter Stelle (bei der Frage an erster)." },
+      { "kind": "remember", "body": "**Nebensatz** = Einleitewort (*weil, dass, ob, wenn, obwohl, als* oder *der, die, das*) + Verb **am Ende** + kann **nicht allein** stehen. **Hauptsatz** = Verb an **zweiter** Stelle + steht allein." },
+      { "kind": "mistake", "body": "Ein Nebensatz kann lang sein und trotzdem kein ganzer Satz. Die Länge sagt nichts, nur **Einleitewort** und **Verbstellung** zählen." }
+    ],
+    "tags": ["satzarten", "grammatik", "drill"],
+    "source": "Rahmenlehrplan Deutsch Berlin, Sprachwissen"
+  },
+  {
+    "id": "DE_G8_SATZART_NEBENSATZARTEN_MATCH",
+    "subject": "DE",
+    "topicId": "DE_GRAM_SENTENCE_TYPES",
+    "difficulty": 3,
+    "qtype": "MATCH",
+    "prompt": "Ordne jedem Satzgefüge die Art des Nebensatzes zu.",
+    "payload": { "left": ["Das ist der Junge, der neben mir sitzt.", "Ich komme nicht, weil ich krank bin.", "Als der Wecker klingelte, war es schon hell.", "Wenn du fragst, helfe ich dir."], "right": ["Relativsatz (beschreibt ein Nomen näher)", "Kausalsatz (nennt den Grund: Warum?)", "Temporalsatz (nennt die Zeit: Wann?)", "Konditionalsatz (nennt die Bedingung: Unter welcher Bedingung?)"] },
+    "solution": { "pairs": [["Das ist der Junge, der neben mir sitzt.", "Relativsatz (beschreibt ein Nomen näher)"], ["Ich komme nicht, weil ich krank bin.", "Kausalsatz (nennt den Grund: Warum?)"], ["Als der Wecker klingelte, war es schon hell.", "Temporalsatz (nennt die Zeit: Wann?)"], ["Wenn du fragst, helfe ich dir.", "Konditionalsatz (nennt die Bedingung: Unter welcher Bedingung?)"]] },
+    "explanation": [
+      { "kind": "steps", "title": "Frag nach dem Einleitewort", "body": "- *der* (Relativpronomen) bezieht sich auf *der Junge* → **Relativsatz**\n- *weil* antwortet auf *Warum?* → **Kausalsatz**\n- *als* antwortet auf *Wann?* → **Temporalsatz**\n- *wenn* nennt eine Bedingung → **Konditionalsatz**" },
+      { "kind": "remember", "body": "Die Art des Nebensatzes erkennst du am **Einleitewort**: *weil, da* → Grund; *als, während, nachdem, bevor, seit* → Zeit; *wenn, falls* → Bedingung; *obwohl* → Gegengrund; *damit* → Absicht; *dass, ob* → Inhalt; *der, die, das, welcher* → Relativsatz." }
+    ],
+    "tags": ["satzarten", "nebensatzarten", "grammatik", "drill"],
+    "source": "Rahmenlehrplan Deutsch Berlin, Sprachwissen"
+  },
+  {
+    "id": "DE_G8_SATZART_ZAEHLEN",
+    "subject": "DE",
+    "topicId": "DE_GRAM_SENTENCE_TYPES",
+    "difficulty": 4,
+    "qtype": "MCQ",
+    "prompt": "Wie viele **Nebensätze** enthält dieser Satz?\n\n„Als ich gestern nach Hause kam, merkte ich, dass ich mein Handy, das ich morgens noch aufgeladen hatte, in der Schule vergessen hatte.“",
+    "payload": { "choices": ["1", "2", "3", "4"] },
+    "solution": { "correct_choice": "3" },
+    "explanation": [
+      { "kind": "steps", "title": "Einleitewörter und Verben am Ende suchen", "body": "1. *Als ich gestern nach Hause **kam*** → Temporalsatz\n2. *dass ich mein Handy … in der Schule vergessen **hatte*** → dass-Satz (Inhalt)\n3. *das ich morgens noch aufgeladen **hatte*** → Relativsatz, eingeschoben in den dass-Satz\n\nDer einzige Hauptsatz ist *merkte ich*. Also **3** Nebensätze." },
+      { "kind": "remember", "body": "Nebensätze können **ineinander** stecken. Zähle die **Einleitewörter** (*als, dass, das*), nicht die Kommas: Kommas markieren nur die Grenzen." },
+      { "kind": "mistake", "body": "Vier Kommas heißen nicht vier Nebensätze: Ein eingeschobener Nebensatz braucht **zwei** Kommas, eines davor und eines danach." }
+    ],
+    "tags": ["satzarten", "grammatik", "drill"],
+    "source": "Rahmenlehrplan Deutsch Berlin, Sprachwissen"
+  },
+  {
+    "id": "DE_G8_SATZART_EINGESCHOBEN",
+    "subject": "DE",
+    "topicId": "DE_GRAM_SENTENCE_TYPES",
+    "difficulty": 4,
+    "qtype": "MCQ",
+    "prompt": "In welchem Satz ist der Nebensatz in den Hauptsatz **eingeschoben**?",
+    "payload": { "choices": ["Das Handy, das ich gestern gekauft habe, ist schon kaputt.", "Ich weiß, dass das Handy kaputt ist.", "Weil das Handy kaputt ist, bin ich sauer.", "Das Handy ist kaputt, und ich bin sauer."] },
+    "solution": { "correct_choice": "Das Handy, das ich gestern gekauft habe, ist schon kaputt." },
+    "explanation": [
+      { "kind": "what", "title": "Warum", "body": "Im ersten Satz wird der Hauptsatz *Das Handy … ist schon kaputt* durch den Relativsatz *das ich gestern gekauft habe* **unterbrochen**. Der Nebensatz steht in der Mitte und braucht deshalb **zwei Kommas**.\n\nSatz 2: Nebensatz hinten. Satz 3: Nebensatz vorn. Satz 4: zwei Hauptsätze (Satzreihe), gar kein Nebensatz." },
+      { "kind": "remember", "body": "Ein Nebensatz kann **vorn**, **hinten** oder **in der Mitte** stehen. Eingeschobene Nebensätze (meist Relativsätze) werden von **zwei Kommas** eingerahmt. Probe: Nimm den eingeschobenen Teil heraus, der Rest muss ein vollständiger Satz bleiben: *Das Handy ist schon kaputt.*" }
+    ],
+    "tags": ["satzarten", "grammatik", "drill"],
+    "source": "Rahmenlehrplan Deutsch Berlin, Sprachwissen"
+  },
+  {
+    "id": "DE_G8_SATZGLIED_FINDEN_T1",
+    "subject": "DE",
+    "topicId": "DE_GRAM_SENTENCE_PARTS",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "Finde das **{{s_gesucht}}** im Satz.\n\n„{{s_satz}}“",
+    "payload": { "choices": ["{{s_a}}", "{{s_b}}", "{{s_c}}", "{{s_d}}"] },
+    "solution": { "correct_choice": "{{s_a}}" },
+    "explanation": [
+      { "kind": "what", "title": "Die Frageprobe", "body": "{{s_hinweis}}" },
+      { "kind": "remember", "body": "**Subjekt**: Wer oder was? **Akkusativobjekt**: Wen oder was? **Dativobjekt**: Wem? **Adverbiale Bestimmung**: Wo? Wann? Wie? Warum? Bau immer den ganzen Satz in die Frage ein: *Wem gibt Mia den Schlüssel?*" },
+      { "kind": "mistake", "body": "Das Subjekt steht **nicht immer vorn**! In *Den Schlüssel gibt Mia ihrer Oma* ist *Mia* das Subjekt (Wer gibt?), *den Schlüssel* das Akkusativobjekt." }
+    ],
+    "tags": ["satzglieder", "grammatik", "drill"],
+    "source": "Rahmenlehrplan Deutsch Berlin, Sprachwissen; nach Prüfungshefte MSA Deutsch Berlin 2026 (Sprachwissen)",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "s": {
+          "type": "pick",
+          "from": [
+            { "satz": "Nach der Schule gibt Mia ihrer Oma den Schlüssel.", "gesucht": "Dativobjekt", "a": "ihrer Oma", "b": "Mia", "c": "den Schlüssel", "d": "Nach der Schule", "hinweis": "*Wem* gibt Mia den Schlüssel? → **ihrer Oma**. Die Antwort auf *Wem?* ist das Dativobjekt." },
+            { "satz": "Nach der Schule gibt Mia ihrer Oma den Schlüssel.", "gesucht": "Subjekt", "a": "Mia", "b": "ihrer Oma", "c": "den Schlüssel", "d": "Nach der Schule", "hinweis": "*Wer* gibt den Schlüssel? → **Mia**. Das Subjekt steht hier nicht am Satzanfang, sondern hinter dem Verb." },
+            { "satz": "Nach der Schule gibt Mia ihrer Oma den Schlüssel.", "gesucht": "Akkusativobjekt", "a": "den Schlüssel", "b": "ihrer Oma", "c": "Mia", "d": "Nach der Schule", "hinweis": "*Wen oder was* gibt Mia ihrer Oma? → **den Schlüssel**." },
+            { "satz": "Nach der Schule gibt Mia ihrer Oma den Schlüssel.", "gesucht": "Adverbiale Bestimmung der Zeit", "a": "Nach der Schule", "b": "ihrer Oma", "c": "den Schlüssel", "d": "Mia", "hinweis": "*Wann* gibt Mia den Schlüssel? → **Nach der Schule**." },
+            { "satz": "Gestern hat der Hund im Park einen Ball gefunden.", "gesucht": "Subjekt", "a": "der Hund", "b": "einen Ball", "c": "im Park", "d": "Gestern", "hinweis": "*Wer oder was* hat gefunden? → **der Hund**." },
+            { "satz": "Gestern hat der Hund im Park einen Ball gefunden.", "gesucht": "Akkusativobjekt", "a": "einen Ball", "b": "der Hund", "c": "im Park", "d": "Gestern", "hinweis": "*Wen oder was* hat der Hund gefunden? → **einen Ball**." },
+            { "satz": "Gestern hat der Hund im Park einen Ball gefunden.", "gesucht": "Adverbiale Bestimmung des Ortes", "a": "im Park", "b": "Gestern", "c": "einen Ball", "d": "der Hund", "hinweis": "*Wo* hat der Hund den Ball gefunden? → **im Park**. (*Gestern* antwortet auf *Wann?*, ist also die Zeit.)" },
+            { "satz": "Wegen des Sturms fiel gestern der Unterricht aus.", "gesucht": "Adverbiale Bestimmung des Grundes", "a": "Wegen des Sturms", "b": "gestern", "c": "der Unterricht", "d": "fiel … aus", "hinweis": "*Warum* fiel der Unterricht aus? → **Wegen des Sturms**." },
+            { "satz": "Wegen des Sturms fiel gestern der Unterricht aus.", "gesucht": "Subjekt", "a": "der Unterricht", "b": "Wegen des Sturms", "c": "gestern", "d": "fiel … aus", "hinweis": "*Wer oder was* fiel aus? → **der Unterricht**. Das Subjekt steht hier ganz hinten." },
+            { "satz": "Der Trainer erklärt den Spielern geduldig die Taktik.", "gesucht": "Dativobjekt", "a": "den Spielern", "b": "die Taktik", "c": "geduldig", "d": "Der Trainer", "hinweis": "*Wem* erklärt der Trainer die Taktik? → **den Spielern**." },
+            { "satz": "Der Trainer erklärt den Spielern geduldig die Taktik.", "gesucht": "Adverbiale Bestimmung der Art und Weise", "a": "geduldig", "b": "den Spielern", "c": "die Taktik", "d": "Der Trainer", "hinweis": "*Wie* erklärt der Trainer die Taktik? → **geduldig**." },
+            { "satz": "Den letzten Keks hat mein Bruder gegessen.", "gesucht": "Subjekt", "a": "mein Bruder", "b": "Den letzten Keks", "c": "hat … gegessen", "d": "Keks", "hinweis": "*Wer* hat gegessen? → **mein Bruder**. *Den letzten Keks* steht vorn, ist aber das Akkusativobjekt (*Wen oder was* hat er gegessen?)." },
+            { "satz": "Den letzten Keks hat mein Bruder gegessen.", "gesucht": "Akkusativobjekt", "a": "Den letzten Keks", "b": "mein Bruder", "c": "hat … gegessen", "d": "Bruder", "hinweis": "*Wen oder was* hat mein Bruder gegessen? → **Den letzten Keks**. Der Artikel *den* zeigt den Akkusativ." }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "DE_G8_SATZGLIED_FRAGEPROBE_T1",
+    "subject": "DE",
+    "topicId": "DE_GRAM_SENTENCE_PARTS",
+    "difficulty": 2,
+    "qtype": "CLOZE",
+    "prompt": "Frageprobe: Mit welcher Frage findest du das markierte Satzglied, und wie heißt es?\n\n„{{s_satz}}“ — markiert: **{{s_teil}}**",
+    "payload": { "text_with_blanks": "Frage: ___ → Satzglied: ___", "blanks": [{ "id": 1, "choices": ["Wer oder was?", "Wen oder was?", "Wem?", "Wo? Wann? Wie? Warum?"] }, { "id": 2, "choices": ["Subjekt", "Akkusativobjekt", "Dativobjekt", "Adverbiale Bestimmung"] }] },
+    "solution": { "answers": { "1": "{{s_frage}}", "2": "{{s_glied}}" } },
+    "explanation": [
+      { "kind": "what", "title": "So fragst du", "body": "{{s_hinweis}}" },
+      { "kind": "remember", "body": "Jedes Satzglied hat **seine Frage**: *Wer oder was?* → **Subjekt**. *Wen oder was?* → **Akkusativobjekt**. *Wem?* → **Dativobjekt**. *Wo? Wann? Wie? Warum?* → **adverbiale Bestimmung**. Das Prädikat ist das Verb: *Was tut das Subjekt?*" }
+    ],
+    "tags": ["satzglieder", "frageprobe", "grammatik", "drill"],
+    "source": "Rahmenlehrplan Deutsch Berlin, Sprachwissen",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "s": {
+          "type": "pick",
+          "from": [
+            { "satz": "Lena schreibt ihrer Freundin eine Nachricht.", "teil": "ihrer Freundin", "frage": "Wem?", "glied": "Dativobjekt", "hinweis": "*Wem* schreibt Lena eine Nachricht? → ihrer Freundin. Die Antwort auf *Wem?* ist das Dativobjekt." },
+            { "satz": "Lena schreibt ihrer Freundin eine Nachricht.", "teil": "eine Nachricht", "frage": "Wen oder was?", "glied": "Akkusativobjekt", "hinweis": "*Wen oder was* schreibt Lena? → eine Nachricht. Antwort auf *Wen oder was?* = Akkusativobjekt." },
+            { "satz": "Lena schreibt ihrer Freundin eine Nachricht.", "teil": "Lena", "frage": "Wer oder was?", "glied": "Subjekt", "hinweis": "*Wer* schreibt? → Lena. Antwort auf *Wer oder was?* = Subjekt." },
+            { "satz": "Am Samstag trifft Ben seine Cousine.", "teil": "Am Samstag", "frage": "Wo? Wann? Wie? Warum?", "glied": "Adverbiale Bestimmung", "hinweis": "*Wann* trifft Ben seine Cousine? → Am Samstag. Antworten auf Wo/Wann/Wie/Warum sind adverbiale Bestimmungen." },
+            { "satz": "Am Samstag trifft Ben seine Cousine.", "teil": "seine Cousine", "frage": "Wen oder was?", "glied": "Akkusativobjekt", "hinweis": "*Wen* trifft Ben? → seine Cousine. Antwort auf *Wen oder was?* = Akkusativobjekt." },
+            { "satz": "Die Klasse dankt dem Hausmeister.", "teil": "dem Hausmeister", "frage": "Wem?", "glied": "Dativobjekt", "hinweis": "*Wem* dankt die Klasse? → dem Hausmeister. *danken* verlangt den Dativ." },
+            { "satz": "Der Bus kommt wegen des Schnees zu spät.", "teil": "wegen des Schnees", "frage": "Wo? Wann? Wie? Warum?", "glied": "Adverbiale Bestimmung", "hinweis": "*Warum* kommt der Bus zu spät? → wegen des Schnees. Antwort auf *Warum?* = adverbiale Bestimmung des Grundes." },
+            { "satz": "Im Sommer fahren meine Eltern nach Italien.", "teil": "meine Eltern", "frage": "Wer oder was?", "glied": "Subjekt", "hinweis": "*Wer* fährt nach Italien? → meine Eltern. Subjekt, auch wenn es hinter dem Verb steht." },
+            { "satz": "Im Sommer fahren meine Eltern nach Italien.", "teil": "nach Italien", "frage": "Wo? Wann? Wie? Warum?", "glied": "Adverbiale Bestimmung", "hinweis": "*Wohin* fahren meine Eltern? → nach Italien. Ortsangaben (Wo? Wohin? Woher?) sind adverbiale Bestimmungen." },
+            { "satz": "Der Lehrer lobt die Klasse laut.", "teil": "laut", "frage": "Wo? Wann? Wie? Warum?", "glied": "Adverbiale Bestimmung", "hinweis": "*Wie* lobt der Lehrer die Klasse? → laut. Antwort auf *Wie?* = adverbiale Bestimmung der Art und Weise." },
+            { "satz": "Mir gefällt das neue Lied.", "teil": "das neue Lied", "frage": "Wer oder was?", "glied": "Subjekt", "hinweis": "*Wer oder was* gefällt mir? → das neue Lied. Das Subjekt steht hier am Ende; *mir* ist das Dativobjekt." },
+            { "satz": "Mir gefällt das neue Lied.", "teil": "Mir", "frage": "Wem?", "glied": "Dativobjekt", "hinweis": "*Wem* gefällt das Lied? → mir. Auch ganz vorn im Satz bleibt *mir* ein Dativobjekt." }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "DE_G8_SATZGLIED_UMSTELLPROBE_T1",
+    "subject": "DE",
+    "topicId": "DE_GRAM_SENTENCE_PARTS",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "Umstellprobe: Welche Umstellung des Satzes ist richtig? (Satzglieder bleiben als Ganzes zusammen, das Verb bleibt an zweiter Stelle.)\n\n„{{s_satz}}“",
+    "payload": { "choices": ["{{s_a}}", "{{s_b}}", "{{s_c}}", "{{s_d}}"] },
+    "solution": { "correct_choice": "{{s_a}}" },
+    "explanation": [
+      { "kind": "what", "title": "Warum", "body": "{{s_hinweis}}" },
+      { "kind": "steps", "title": "So funktioniert die Umstellprobe", "body": "1. Nimm ein Satzglied und stelle es an den **Anfang**.\n2. Das gebeugte **Verb** bleibt an **zweiter** Stelle, das Subjekt rückt dahinter.\n3. Alles, was sich **nur als Block** verschieben lässt, ist **ein** Satzglied. Zerreißt der Satz, hast du ein Satzglied auseinandergerissen." },
+      { "kind": "remember", "body": "Satzglieder sind die **Bausteine** des Satzes. Was zusammen verschoben werden muss, gehört zusammen: *nach Berlin*, *ihrer Mutter*, *am Wochenende*. Vor dem Verb steht immer nur **ein** Satzglied." }
+    ],
+    "tags": ["satzglieder", "umstellprobe", "grammatik", "drill"],
+    "source": "Rahmenlehrplan Deutsch Berlin, Sprachwissen",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "s": {
+          "type": "pick",
+          "from": [
+            { "satz": "Wir fahren morgen nach Berlin.", "a": "Morgen fahren wir nach Berlin.", "b": "Morgen wir fahren nach Berlin.", "c": "Nach fahren wir morgen Berlin.", "d": "Morgen nach fahren wir Berlin.", "hinweis": "*Morgen* rückt nach vorn, *fahren* bleibt an zweiter Stelle, *wir* rutscht dahinter. *nach Berlin* darf nicht zerrissen werden." },
+            { "satz": "Lea schenkt ihrer Mutter Blumen.", "a": "Ihrer Mutter schenkt Lea Blumen.", "b": "Ihrer schenkt Lea Mutter Blumen.", "c": "Ihrer Mutter Lea schenkt Blumen.", "d": "Blumen Lea schenkt ihrer Mutter.", "hinweis": "*Ihrer Mutter* ist ein Block (Dativobjekt). Direkt danach muss das Verb *schenkt* kommen." },
+            { "satz": "Die Kinder spielen am Nachmittag im Garten.", "a": "Im Garten spielen die Kinder am Nachmittag.", "b": "Im spielen die Kinder Garten am Nachmittag.", "c": "Im Garten die Kinder spielen am Nachmittag.", "d": "Garten spielen die Kinder im am Nachmittag.", "hinweis": "*Im Garten* wandert als Ganzes nach vorn, *spielen* bleibt an zweiter Stelle." },
+            { "satz": "Tim liest abends gern Comics.", "a": "Abends liest Tim gern Comics.", "b": "Abends Tim liest gern Comics.", "c": "Gern abends liest Tim Comics.", "d": "Liest abends Tim gern Comics.", "hinweis": "Nur **ein** Satzglied darf vor dem Verb stehen (*Gern abends* wären zwei), und *liest* muss an zweiter Stelle bleiben (mit dem Verb vorn wäre es eine Frage)." },
+            { "satz": "Mein Vater kocht sonntags für die ganze Familie.", "a": "Sonntags kocht mein Vater für die ganze Familie.", "b": "Sonntags mein Vater kocht für die ganze Familie.", "c": "Für kocht mein Vater sonntags die ganze Familie.", "d": "Für die ganze kocht mein Vater sonntags Familie.", "hinweis": "*Sonntags* nach vorn, *kocht* an zweiter Stelle. *für die ganze Familie* ist ein Block und darf nicht zerrissen werden." },
+            { "satz": "Die Lehrerin erklärt der Klasse die Regel.", "a": "Der Klasse erklärt die Lehrerin die Regel.", "b": "Der erklärt die Lehrerin Klasse die Regel.", "c": "Der Klasse die Lehrerin erklärt die Regel.", "d": "Die Regel die Lehrerin erklärt der Klasse.", "hinweis": "*Der Klasse* (Dativobjekt) nach vorn, dann sofort das Verb *erklärt*, dann das Subjekt *die Lehrerin*." },
+            { "satz": "Ich habe gestern meinen Schlüssel verloren.", "a": "Gestern habe ich meinen Schlüssel verloren.", "b": "Gestern ich habe meinen Schlüssel verloren.", "c": "Meinen habe ich gestern Schlüssel verloren.", "d": "Gestern habe ich verloren meinen Schlüssel.", "hinweis": "Bei zweiteiligem Prädikat bleibt *habe* an zweiter Stelle und *verloren* am Ende. *meinen Schlüssel* bleibt zusammen." },
+            { "satz": "Wegen des Regens bleiben wir heute zu Hause.", "a": "Heute bleiben wir wegen des Regens zu Hause.", "b": "Heute wir bleiben wegen des Regens zu Hause.", "c": "Wegen bleiben wir des Regens heute zu Hause.", "d": "Zu bleiben wir heute wegen des Regens Hause.", "hinweis": "*Heute* nach vorn, *bleiben* an zweiter Stelle. *wegen des Regens* und *zu Hause* sind jeweils ein Block." },
+            { "satz": "Der Postbote bringt uns jeden Morgen die Zeitung.", "a": "Jeden Morgen bringt uns der Postbote die Zeitung.", "b": "Jeden bringt uns der Postbote Morgen die Zeitung.", "c": "Jeden Morgen der Postbote bringt uns die Zeitung.", "d": "Die Zeitung der Postbote bringt uns jeden Morgen.", "hinweis": "*Jeden Morgen* ist ein Satzglied (Wann?). Danach muss das Verb *bringt* folgen." },
+            { "satz": "Meine Oma backt zu Weihnachten immer Plätzchen.", "a": "Zu Weihnachten backt meine Oma immer Plätzchen.", "b": "Zu backt meine Oma Weihnachten immer Plätzchen.", "c": "Zu Weihnachten meine Oma backt immer Plätzchen.", "d": "Immer zu Weihnachten backt Oma meine Plätzchen.", "hinweis": "*Zu Weihnachten* als Block nach vorn, *backt* an zweiter Stelle, *meine Oma* bleibt zusammen." }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "DE_G8_SATZGLIED_MATCH_1",
+    "subject": "DE",
+    "topicId": "DE_GRAM_SENTENCE_PARTS",
+    "difficulty": 2,
+    "qtype": "MATCH",
+    "prompt": "„Gestern schenkte Tim seiner Schwester ein Buch.“\n\nOrdne jedem Satzteil das passende Satzglied zu.",
+    "payload": { "left": ["Tim", "schenkte", "seiner Schwester", "ein Buch", "Gestern"], "right": ["Subjekt (Wer oder was?)", "Prädikat (Was tut das Subjekt?)", "Dativobjekt (Wem?)", "Akkusativobjekt (Wen oder was?)", "Adverbiale Bestimmung der Zeit (Wann?)"] },
+    "solution": { "pairs": [["Tim", "Subjekt (Wer oder was?)"], ["schenkte", "Prädikat (Was tut das Subjekt?)"], ["seiner Schwester", "Dativobjekt (Wem?)"], ["ein Buch", "Akkusativobjekt (Wen oder was?)"], ["Gestern", "Adverbiale Bestimmung der Zeit (Wann?)"]] },
+    "explanation": [
+      { "kind": "steps", "title": "Frageprobe", "body": "- *Wer* schenkte? → **Tim** = Subjekt\n- Was tut Tim? → **schenkte** = Prädikat\n- *Wem* schenkte Tim ein Buch? → **seiner Schwester** = Dativobjekt\n- *Wen oder was* schenkte Tim? → **ein Buch** = Akkusativobjekt\n- *Wann* schenkte Tim das Buch? → **Gestern** = adverbiale Bestimmung der Zeit" },
+      { "kind": "remember", "body": "Zuerst das **Prädikat** (Verb) finden, dann mit *Wer?* das Subjekt. Danach die Objekte mit *Wem?* und *Wen oder was?*, zum Schluss die W-Fragen *Wo? Wann? Wie? Warum?* für die adverbialen Bestimmungen." }
+    ],
+    "tags": ["satzglieder", "grammatik", "drill"],
+    "source": "Rahmenlehrplan Deutsch Berlin, Sprachwissen"
+  },
+  {
+    "id": "DE_G8_SATZGLIED_ADVERBIALE_MATCH",
+    "subject": "DE",
+    "topicId": "DE_GRAM_SENTENCE_PARTS",
+    "difficulty": 3,
+    "qtype": "MATCH",
+    "prompt": "„Nach dem Training warteten wir wegen des Gewitters mit großer Geduld in der Sporthalle.“\n\nOrdne jeder adverbialen Bestimmung ihre Art zu.",
+    "payload": { "left": ["Nach dem Training", "wegen des Gewitters", "mit großer Geduld", "in der Sporthalle"], "right": ["Zeit (Wann?)", "Grund (Warum?)", "Art und Weise (Wie?)", "Ort (Wo?)"] },
+    "solution": { "pairs": [["Nach dem Training", "Zeit (Wann?)"], ["wegen des Gewitters", "Grund (Warum?)"], ["mit großer Geduld", "Art und Weise (Wie?)"], ["in der Sporthalle", "Ort (Wo?)"]] },
+    "explanation": [
+      { "kind": "steps", "title": "Die W-Fragen", "body": "- *Wann* warteten wir? → **Nach dem Training** (Zeit)\n- *Warum* warteten wir? → **wegen des Gewitters** (Grund)\n- *Wie* warteten wir? → **mit großer Geduld** (Art und Weise)\n- *Wo* warteten wir? → **in der Sporthalle** (Ort)" },
+      { "kind": "remember", "body": "Adverbiale Bestimmungen beantworten die **W-Fragen**: **Wann?** (Zeit), **Wo? Wohin? Woher?** (Ort), **Wie?** (Art und Weise), **Warum?** (Grund). Die Präposition hilft: *nach, vor, seit, am* → Zeit; *in, auf, bei* → Ort; *mit, ohne* → Art und Weise; *wegen, aus, vor* → Grund." },
+      { "kind": "mistake", "body": "*mit großer Geduld* ist **kein Objekt**: Es antwortet weder auf *Wem?* noch auf *Wen oder was?*, sondern auf *Wie?*" }
+    ],
+    "tags": ["satzglieder", "adverbiale", "grammatik", "drill"],
+    "source": "Rahmenlehrplan Deutsch Berlin, Sprachwissen"
+  },
+  {
+    "id": "DE_G8_SATZGLIED_ANZAHL",
+    "subject": "DE",
+    "topicId": "DE_GRAM_SENTENCE_PARTS",
+    "difficulty": 4,
+    "qtype": "MCQ",
+    "prompt": "Wie viele **Satzglieder** hat dieser Satz? (Tipp: Umstellprobe)\n\n„Am Wochenende zeigt meine Cousine ihren Freunden das neue Skateboard.“",
+    "payload": { "choices": ["4", "5", "6", "7"] },
+    "solution": { "correct_choice": "5" },
+    "explanation": [
+      { "kind": "steps", "title": "Blöcke verschieben", "body": "- *Am Wochenende* → Wann? (adverbiale Bestimmung)\n- *zeigt* → Prädikat\n- *meine Cousine* → Wer? (Subjekt)\n- *ihren Freunden* → Wem? (Dativobjekt)\n- *das neue Skateboard* → Wen oder was? (Akkusativobjekt)\n\nProbe: *Meine Cousine zeigt ihren Freunden am Wochenende das neue Skateboard.* funktioniert. *Das neue zeigt …* funktioniert nicht. Also **5** Satzglieder." },
+      { "kind": "mistake", "body": "*das neue Skateboard* sind drei Wörter, aber **ein** Satzglied: Das Adjektiv *neue* gehört zum Nomen und lässt sich nicht allein verschieben. Wörter zählen ist nicht Satzglieder zählen." },
+      { "kind": "remember", "body": "Ein Satzglied ist alles, was sich **als Ganzes** im Satz verschieben lässt. Das Prädikat zählt als eigenes Satzglied, auch wenn es zweiteilig ist (*hat … gezeigt*)." }
+    ],
+    "tags": ["satzglieder", "umstellprobe", "grammatik", "drill"],
+    "source": "Rahmenlehrplan Deutsch Berlin, Sprachwissen"
+  },
+  {
+    "id": "DE_G8_SATZGLIED_SUBJEKT_HINTEN",
+    "subject": "DE",
+    "topicId": "DE_GRAM_SENTENCE_PARTS",
+    "difficulty": 4,
+    "qtype": "MCQ",
+    "prompt": "Was ist das **Subjekt** in diesem Satz?\n\n„Den entscheidenden Elfmeter hält am Ende unser Torwart.“",
+    "payload": { "choices": ["unser Torwart", "Den entscheidenden Elfmeter", "am Ende", "hält"] },
+    "solution": { "correct_choice": "unser Torwart" },
+    "explanation": [
+      { "kind": "what", "title": "Frageprobe", "body": "*Wer oder was* hält den Elfmeter? → **unser Torwart**.\n\n*Den entscheidenden Elfmeter* steht zwar vorn, antwortet aber auf *Wen oder was hält der Torwart?* → Akkusativobjekt. *am Ende* → Wann? (adverbiale Bestimmung). *hält* → Prädikat." },
+      { "kind": "mistake", "body": "Das erste Satzglied ist **nicht automatisch** das Subjekt. Der Artikel verrät es: *den* (Akkusativ) kann nie zum Subjekt gehören, *der / unser* (Nominativ) schon." },
+      { "kind": "remember", "body": "Subjekt = Antwort auf **Wer oder was?** und immer im **Nominativ**. Wenn du unsicher bist: Stell den Satz um (*Unser Torwart hält am Ende den entscheidenden Elfmeter.*) und frag noch einmal." }
+    ],
+    "tags": ["satzglieder", "grammatik", "drill"],
+    "source": "Rahmenlehrplan Deutsch Berlin, Sprachwissen"
+  },
+  {
+    "id": "DE_G8_MODUS_FORM_T1",
+    "subject": "DE",
+    "topicId": "DE_GRAM_MODUS",
+    "difficulty": 3,
+    "qtype": "CLOZE",
+    "prompt": "Setze das Verb in Klammern in den **{{s_modus}}**.",
+    "payload": { "text_with_blanks": "{{s_satz}}", "blanks": [{ "id": 1, "choices": ["{{s_a}}", "{{s_b}}", "{{s_c}}"] }] },
+    "solution": { "answers": { "1": "{{s_loesung}}" } },
+    "explanation": [
+      { "kind": "what", "title": "Warum diese Form", "body": "{{s_hinweis}}" },
+      { "kind": "formula", "title": "Die Formen", "body": "- **Konjunktiv I**: Verbstamm + *-e*: *er gehe, sie habe, er komme*; *sein*: *er sei*.\n- **Konjunktiv II**: vom Präteritum, meist mit Umlaut: *hätte, wäre, käme, könnte, müsste*; sonst *würde* + Infinitiv.\n- **Imperativ**: *Geh! Kommt! Nimm! Sei!*\n- **Indikativ**: die normale Form: *er geht, sie hat*." },
+      { "kind": "remember", "body": "Klingt der Konjunktiv I genauso wie der Indikativ (*wir müssen, sie haben*), weicht man auf den **Konjunktiv II** aus (*wir müssten, sie hätten*) oder auf *würde*." }
+    ],
+    "tags": ["modus", "konjunktiv", "grammatik", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 2 (Die vier Hauptmodi)",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "s": {
+          "type": "pick",
+          "from": [
+            { "satz": "Er behauptet, er ___ (sein) unschuldig.", "modus": "Konjunktiv I", "a": "sei", "b": "wäre", "c": "ist", "loesung": "sei", "hinweis": "Indirekte Rede → Konjunktiv I von *sein*: *er sei*. *wäre* ist Konjunktiv II, *ist* Indikativ." },
+            { "satz": "Wenn ich mehr Geld ___ (haben), würde ich reisen.", "modus": "Konjunktiv II", "a": "habe", "b": "hätte", "c": "hatte", "loesung": "hätte", "hinweis": "Unwirkliche Bedingung → Konjunktiv II *hätte* (mit Umlaut). *hatte* ist Präteritum Indikativ, *habe* Konjunktiv I." },
+            { "satz": "Sie meinte, sie ___ (kommen) später.", "modus": "Konjunktiv I", "a": "kommt", "b": "käme", "c": "komme", "loesung": "komme", "hinweis": "Konjunktiv I: Stamm *komm-* + *-e* → *sie komme*. Indikativ wäre *kommt*, Konjunktiv II *käme*." },
+            { "satz": "Ich ___ (sein) jetzt gern am Meer.", "modus": "Konjunktiv II", "a": "wäre", "b": "sei", "c": "bin", "loesung": "wäre", "hinweis": "Ein Wunsch, der gerade nicht Wirklichkeit ist → Konjunktiv II *wäre*." },
+            { "satz": "Der Trainer sagte, wir ___ (müssen) mehr trainieren.", "modus": "Konjunktiv II (Ersatzform)", "a": "müssen", "b": "mussten", "c": "müssten", "loesung": "müssten", "hinweis": "Konjunktiv I von *müssen* wäre *wir müssen*, genau wie der Indikativ. Deshalb die Ersatzform Konjunktiv II: *müssten*." },
+            { "satz": "___ (kommen) bitte pünktlich, Leute!", "modus": "Imperativ", "a": "Kommt", "b": "Kommen", "c": "Kämt", "loesung": "Kommt", "hinweis": "Aufforderung an mehrere Personen (*ihr*) → Imperativ Plural *Kommt!*" },
+            { "satz": "Lea fragte, ob er Zeit ___ (haben).", "modus": "Konjunktiv I", "a": "hätte", "b": "habe", "c": "hatte", "loesung": "habe", "hinweis": "Indirekte Frage → Konjunktiv I: *er habe*. Der Indikativ wäre *hat*, also ist *habe* hier eindeutig." },
+            { "satz": "Wenn er hier ___ (sein), würde er helfen.", "modus": "Konjunktiv II", "a": "sei", "b": "ist", "c": "wäre", "loesung": "wäre", "hinweis": "Er ist nicht hier, die Bedingung ist unwirklich → Konjunktiv II *wäre*." },
+            { "satz": "Tim sagt, er ___ (können) heute nicht kommen.", "modus": "Konjunktiv I", "a": "könne", "b": "könnte", "c": "kann", "loesung": "könne", "hinweis": "Konjunktiv I von *können*: *er könne*. *könnte* ist Konjunktiv II, *kann* Indikativ." },
+            { "satz": "Sie sagte, er ___ (fahren) morgen nach Hamburg.", "modus": "Konjunktiv I", "a": "fährt", "b": "fahre", "c": "führe", "loesung": "fahre", "hinweis": "Konjunktiv I: *er fahre* (ohne Umlaut, mit *-e*). Indikativ *fährt*, Konjunktiv II *führe*." },
+            { "satz": "Ich ___ (werden) an deiner Stelle zum Arzt gehen.", "modus": "Konjunktiv II", "a": "würde", "b": "werde", "c": "wurde", "loesung": "würde", "hinweis": "Ein Rat für eine gedachte Situation → *würde* + Infinitiv. *wurde* ist Präteritum, *werde* Indikativ." },
+            { "satz": "___ (nehmen) dir ruhig noch ein Stück!", "modus": "Imperativ", "a": "Nehme", "b": "Nimm", "c": "Nähme", "loesung": "Nimm", "hinweis": "Imperativ Singular von *nehmen*: *Nimm!* (e wird zu i, wie bei *gib, lies, sprich*). *Nehme* ist ein häufiger Fehler." },
+            { "satz": "Wir ___ (haben) gestern den Zug verpasst.", "modus": "Indikativ", "a": "hätten", "b": "haben", "c": "habet", "loesung": "haben", "hinweis": "Eine Tatsache in der Vergangenheit → Indikativ Perfekt: *haben … verpasst*. *hätten* wäre nur richtig, wenn es nicht passiert wäre." }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "DE_G8_MODUS_FUNKTION_T1",
+    "subject": "DE",
+    "topicId": "DE_GRAM_MODUS",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "Was drückt der Modus in diesem Satz aus?\n\n„{{s_satz}}“",
+    "payload": { "choices": ["eine Tatsache (Indikativ)", "eine indirekte Wiedergabe (Konjunktiv I)", "etwas Gedachtes oder Unwirkliches (Konjunktiv II)", "eine höfliche Bitte (Konjunktiv II)", "einen Befehl oder eine Aufforderung (Imperativ)"] },
+    "solution": { "correct_choice": "{{s_loesung}}" },
+    "explanation": [
+      { "kind": "what", "title": "Woran du es erkennst", "body": "{{s_hinweis}}" },
+      { "kind": "remember", "body": "Der **Modus** zeigt, *wie* jemand zu seiner Aussage steht: **Indikativ** = so ist es. **Konjunktiv I** = so hat es jemand gesagt. **Konjunktiv II** = so wäre es (Wunsch, Bedingung, Rat) oder höflich (*Könntest du …?*). **Imperativ** = mach das!" }
+    ],
+    "tags": ["modus", "grammatik", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 2 (Die vier Hauptmodi)",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "s": {
+          "type": "pick",
+          "from": [
+            { "satz": "Könnten Sie mir bitte helfen?", "loesung": "eine höfliche Bitte (Konjunktiv II)", "hinweis": "*Könnten* ist Konjunktiv II. Hier macht er die Bitte höflich: nicht *Helfen Sie mir!*, sondern *Könnten Sie …?*" },
+            { "satz": "Wenn ich fliegen könnte, wäre ich schon in Spanien.", "loesung": "etwas Gedachtes oder Unwirkliches (Konjunktiv II)", "hinweis": "*könnte* und *wäre* sind Konjunktiv II: eine unwirkliche Bedingung, denn ich kann nicht fliegen." },
+            { "satz": "Mia sagte, sie habe Hunger.", "loesung": "eine indirekte Wiedergabe (Konjunktiv I)", "hinweis": "*habe* nach *sie* ist Konjunktiv I: Mias Worte werden berichtet, nicht wörtlich zitiert." },
+            { "satz": "Mach das Licht aus!", "loesung": "einen Befehl oder eine Aufforderung (Imperativ)", "hinweis": "*Mach* ist Imperativ: eine direkte Aufforderung, Verb vorn, kein Subjekt." },
+            { "satz": "Der Bus kommt um acht.", "loesung": "eine Tatsache (Indikativ)", "hinweis": "*kommt* ist Indikativ: eine Tatsache, so steht es im Fahrplan." },
+            { "satz": "Hätte ich doch gelernt!", "loesung": "etwas Gedachtes oder Unwirkliches (Konjunktiv II)", "hinweis": "*Hätte* ist Konjunktiv II: ein Wunsch, der nicht mehr erfüllbar ist." },
+            { "satz": "Würdest du mir das Salz reichen?", "loesung": "eine höfliche Bitte (Konjunktiv II)", "hinweis": "*Würdest* ist Konjunktiv II und macht die Frage zur höflichen Bitte." },
+            { "satz": "Der Arzt sagt, ich solle mehr schlafen.", "loesung": "eine indirekte Wiedergabe (Konjunktiv I)", "hinweis": "*solle* ist Konjunktiv I von *sollen*: Der Rat des Arztes wird berichtet." },
+            { "satz": "Wir treffen uns am Kiosk.", "loesung": "eine Tatsache (Indikativ)", "hinweis": "*treffen* ist Indikativ: eine feste Verabredung, als Tatsache formuliert." },
+            { "satz": "Seid bitte leise!", "loesung": "einen Befehl oder eine Aufforderung (Imperativ)", "hinweis": "*Seid* ist der Imperativ von *sein* (ihr-Form): eine Aufforderung, auch wenn *bitte* dabeisteht." },
+            { "satz": "An deiner Stelle würde ich absagen.", "loesung": "etwas Gedachtes oder Unwirkliches (Konjunktiv II)", "hinweis": "*würde* ist Konjunktiv II: eine gedachte Situation (ich bin nicht an deiner Stelle), ein Rat." },
+            { "satz": "Sie behauptet, sie sei nicht dabei gewesen.", "loesung": "eine indirekte Wiedergabe (Konjunktiv I)", "hinweis": "*sei … gewesen* ist Konjunktiv I in der Vergangenheit: Ihre Behauptung wird wiedergegeben, ohne dass der Sprecher sie bestätigt." }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "DE_G8_MODUS_IMPERATIV_T1",
+    "subject": "DE",
+    "topicId": "DE_GRAM_MODUS",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Wie lautet der **Imperativ** (du-Form) von **{{s_verb}}**?",
+    "payload": { "choices": ["{{s_a}}", "{{s_b}}", "{{s_c}}", "{{s_d}}"] },
+    "solution": { "correct_choice": "{{s_a}}" },
+    "explanation": [
+      { "kind": "what", "title": "Warum", "body": "{{s_hinweis}}" },
+      { "kind": "remember", "body": "Imperativ (du): Verbstamm **ohne -st** und ohne *du*: *du gehst* → *Geh!* Bei Verben mit **e → i** im Präsens bleibt das i: *du gibst* → *Gib!*, *du liest* → *Lies!* Verben mit **a → ä** verlieren den Umlaut: *du fährst* → *Fahr!* Sonderformen: *sein* → *Sei!*, *haben* → *Hab!*, *werden* → *Werde!*" },
+      { "kind": "mistake", "body": "*Nehme!*, *Lese!*, *Gebe!* sind falsch: Beim Imperativ von *nehmen, lesen, geben* bleibt das **i**: *Nimm! Lies! Gib!* Die Formen mit *-t* (*Nehmt!*) sind die ihr-Form." }
+    ],
+    "tags": ["modus", "imperativ", "grammatik", "drill"],
+    "source": "Rahmenlehrplan Deutsch Berlin, Sprachwissen",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "s": {
+          "type": "pick",
+          "from": [
+            { "verb": "lesen", "a": "Lies!", "b": "Lese!", "c": "Lest!", "d": "Liest!", "hinweis": "*du liest* → **Lies!** Das i aus dem Präsens bleibt, das *-st* fällt weg. *Lest!* wäre die ihr-Form." },
+            { "verb": "nehmen", "a": "Nimm!", "b": "Nehme!", "c": "Nehmt!", "d": "Nimmst!", "hinweis": "*du nimmst* → **Nimm!** Das i bleibt. *Nehme!* ist ein typischer Fehler." },
+            { "verb": "sein", "a": "Sei!", "b": "Bist!", "c": "Seid!", "d": "Sein!", "hinweis": "*Sei!* ist die Sonderform (*Sei leise!*). *Seid!* ist die ihr-Form." },
+            { "verb": "geben", "a": "Gib!", "b": "Gebe!", "c": "Gebt!", "d": "Gibst!", "hinweis": "*du gibst* → **Gib!** Das i bleibt, *-st* fällt weg." },
+            { "verb": "sprechen", "a": "Sprich!", "b": "Spreche!", "c": "Sprecht!", "d": "Sprichst!", "hinweis": "*du sprichst* → **Sprich!** e wird zu i." },
+            { "verb": "essen", "a": "Iss!", "b": "Esse!", "c": "Esst!", "d": "Isst!", "hinweis": "*du isst* → **Iss!** Das i bleibt, das *-t* fällt weg." },
+            { "verb": "laufen", "a": "Lauf!", "b": "Läuf!", "c": "Lauft!", "d": "Läufst!", "hinweis": "*du läufst* → **Lauf!** Der Umlaut aus dem Präsens fällt im Imperativ weg." },
+            { "verb": "fahren", "a": "Fahr!", "b": "Fähr!", "c": "Fahrt!", "d": "Fährst!", "hinweis": "*du fährst* → **Fahr!** Kein Umlaut im Imperativ." },
+            { "verb": "helfen", "a": "Hilf!", "b": "Helfe!", "c": "Helft!", "d": "Hilfst!", "hinweis": "*du hilfst* → **Hilf!** e wird zu i." },
+            { "verb": "haben", "a": "Hab!", "b": "Hast!", "c": "Habt!", "d": "Hätte!", "hinweis": "*Hab keine Angst!* Sonderform ohne *-st*. *Habt!* ist die ihr-Form, *hätte* Konjunktiv II." },
+            { "verb": "sehen", "a": "Sieh!", "b": "Sehe!", "c": "Seht!", "d": "Siehst!", "hinweis": "*du siehst* → **Sieh!** (*Sieh mal!*). e wird zu ie." },
+            { "verb": "werden", "a": "Werde!", "b": "Wird!", "c": "Werdet!", "d": "Wirst!", "hinweis": "*Werde!* ist die Sonderform (*Werde gesund!*), obwohl es *du wirst* heißt." }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "DE_G8_MODUS_ERSATZFORM",
+    "subject": "DE",
+    "topicId": "DE_GRAM_MODUS",
+    "difficulty": 4,
+    "qtype": "MCQ",
+    "prompt": "„Die Zwillinge sagten, sie **hätten** keine Zeit.“\n\nWarum steht hier *hätten* (Konjunktiv II), obwohl es indirekte Rede ist?",
+    "payload": { "choices": ["Weil der Konjunktiv I (*sie haben*) genauso klingt wie der Indikativ. Dann nimmt man die Ersatzform Konjunktiv II.", "Weil indirekte Rede immer im Konjunktiv II steht.", "Weil der Satz in der Vergangenheit spielt.", "Weil *hätten* der Indikativ Plural von *haben* ist."] },
+    "solution": { "correct_choice": "Weil der Konjunktiv I (*sie haben*) genauso klingt wie der Indikativ. Dann nimmt man die Ersatzform Konjunktiv II." },
+    "explanation": [
+      { "kind": "what", "title": "Warum", "body": "Konjunktiv I von *haben* in der 3. Person Plural lautet *sie haben*. Das ist dieselbe Form wie der Indikativ (*sie haben keine Zeit*). Niemand könnte erkennen, dass hier berichtet wird. Deshalb weicht man auf den Konjunktiv II aus: *sie **hätten***." },
+      { "kind": "steps", "title": "So entscheidest du", "body": "1. Bilde den Konjunktiv I: *er habe / sie haben*.\n2. Vergleiche mit dem Indikativ: *er hat / sie haben*.\n3. Gleich? → Ersatzform **Konjunktiv II** (*hätten*) oder *würde* + Infinitiv." },
+      { "kind": "remember", "body": "Im Singular ist der Konjunktiv I meist eindeutig (*er habe, sie sei, er gehe*). Im **Plural** und in der **1. Person** fällt er oft mit dem Indikativ zusammen (*wir gehen, sie haben*) → Konjunktiv II als Ersatz (*wir gingen, sie hätten*) oder *würde*." }
+    ],
+    "tags": ["modus", "konjunktiv", "grammatik", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 2 (Direkte und indirekte Rede)"
+  },
+  {
+    "id": "DE_G8_MODUS_IMPERATIV_ERKENNEN",
+    "subject": "DE",
+    "topicId": "DE_GRAM_MODUS",
+    "difficulty": 1,
+    "qtype": "MCQ",
+    "prompt": "Welcher Satz steht im **Imperativ**?",
+    "payload": { "choices": ["Mach die Tür zu!", "Er macht die Tür zu.", "Er sagte, er mache die Tür zu.", "Ich würde die Tür zumachen."] },
+    "solution": { "correct_choice": "Mach die Tür zu!" },
+    "explanation": [
+      { "kind": "what", "title": "Warum", "body": "*Mach die Tür zu!* ist eine Aufforderung an eine Person: Verb an erster Stelle, kein Subjekt, Ausrufezeichen. Das ist der Imperativ.\n\n*Er macht* → Indikativ (Tatsache). *er mache* → Konjunktiv I (Bericht). *Ich würde* → Konjunktiv II (Gedachtes)." },
+      { "kind": "remember", "body": "**Imperativ** erkennst du an drei Dingen: Verb **vorn**, **kein** Subjekt (*du / ihr* fehlt) und meist ein **Ausrufezeichen**. Höfliche Form mit *Sie*: *Machen Sie bitte die Tür zu!*" }
+    ],
+    "tags": ["modus", "imperativ", "grammatik", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 2 (Die vier Hauptmodi)"
+  },
+  {
+    "id": "DE_G8_MODUS_SEI_WAERE_IST",
+    "subject": "DE",
+    "topicId": "DE_GRAM_MODUS",
+    "difficulty": 2,
+    "qtype": "CLOZE",
+    "prompt": "Dreimal *müde*, drei Modi. Ordne zu.",
+    "payload": { "text_with_blanks": "Er **ist** müde → ___ · Er **sei** müde → ___ · Er **wäre** müde → ___", "blanks": [{ "id": 1, "choices": ["Indikativ", "Konjunktiv I", "Konjunktiv II"] }, { "id": 2, "choices": ["Indikativ", "Konjunktiv I", "Konjunktiv II"] }, { "id": 3, "choices": ["Indikativ", "Konjunktiv I", "Konjunktiv II"] }] },
+    "solution": { "answers": { "1": "Indikativ", "2": "Konjunktiv I", "3": "Konjunktiv II" } },
+    "explanation": [
+      { "kind": "what", "title": "Die drei Formen", "body": "- *ist* → **Indikativ**: Tatsache. Er ist wirklich müde.\n- *sei* → **Konjunktiv I**: Bericht. Jemand sagt, er sei müde.\n- *wäre* → **Konjunktiv II**: gedacht. Wenn er die Nacht durchgemacht hätte, wäre er müde." },
+      { "kind": "remember", "body": "Das Verb *sein* ist der beste Merkhelfer, weil alle drei Formen verschieden sind: **ist / sei / wäre**. Genauso: **hat / habe / hätte**, **kann / könne / könnte**, **geht / gehe / ginge**." }
+    ],
+    "tags": ["modus", "konjunktiv", "grammatik", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 2 (Die vier Hauptmodi)"
+  },
+  {
+    "id": "DE_G8_MODUS_HOEFLICH",
+    "subject": "DE",
+    "topicId": "DE_GRAM_MODUS",
+    "difficulty": 4,
+    "qtype": "MCQ",
+    "prompt": "Forme die Aufforderung in eine **höfliche Bitte im Konjunktiv II** um.\n\n„Mach das Fenster auf!“",
+    "payload": { "choices": ["Könntest du bitte das Fenster aufmachen?", "Kannst du das Fenster aufmachen?", "Er sagte, ich solle das Fenster aufmachen.", "Mach bitte das Fenster auf!"] },
+    "solution": { "correct_choice": "Könntest du bitte das Fenster aufmachen?" },
+    "explanation": [
+      { "kind": "what", "title": "Warum", "body": "*Könntest* ist Konjunktiv II von *können*. Als Frage formuliert wird aus dem Befehl eine höfliche Bitte.\n\n*Kannst du …?* ist Indikativ (schon freundlicher, aber kein Konjunktiv II). *Er sagte, ich solle …* ist indirekte Rede (Konjunktiv I). *Mach bitte …!* bleibt Imperativ, auch mit *bitte*." },
+      { "kind": "remember", "body": "Höfliche Bitten: **Könntest / Würdest / Hättest** du …? Der Konjunktiv II macht die Bitte weicher, weil er sie als bloße Möglichkeit formuliert. Das brauchst du auch für E-Mails und Briefe in der Prüfung: *Könnten Sie mir bitte mitteilen, …*" },
+      { "kind": "mistake", "body": "*Bitte* allein ändert den Modus nicht. *Mach bitte!* ist immer noch Imperativ." }
+    ],
+    "tags": ["modus", "konjunktiv", "grammatik", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 2 (Die vier Hauptmodi)"
+  },
+  {
+    "id": "DE_G8_MODUS_FORM_ERKENNEN",
+    "subject": "DE",
+    "topicId": "DE_GRAM_MODUS",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Welche dieser Formen von *kommen* ist **Konjunktiv II**?",
+    "payload": { "choices": ["käme", "kommt", "komme", "Komm!"] },
+    "solution": { "correct_choice": "käme" },
+    "explanation": [
+      { "kind": "what", "title": "Warum", "body": "*käme* hat den typischen **Umlaut** des Konjunktivs II (wie *hätte, wäre, ginge, wüsste*). *kommt* ist Indikativ, *komme* ist Konjunktiv I (*er komme*), *Komm!* ist der Imperativ." },
+      { "kind": "remember", "body": "Konjunktiv II erkennst du oft am **Umlaut** oder an *würde*: *käme, hätte, wäre, könnte, müsste, wüsste* oder *würde kommen*. Bei schwachen Verben (*lernen*) klingt er wie das Präteritum (*lernte*), deshalb sagt man lieber *würde lernen*." }
+    ],
+    "tags": ["modus", "konjunktiv", "grammatik", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 2 (Die vier Hauptmodi)"
+  },
+  {
+    "id": "DE_G8_PASSIV_ERKENNEN_T1",
+    "subject": "DE",
+    "topicId": "DE_GRAM_AKTIV_PASSIV",
+    "difficulty": 2,
+    "qtype": "CLOZE",
+    "prompt": "Aktiv oder Passiv? Achte auf *werden*: Nicht jedes *werden* ist Passiv!",
+    "payload": { "text_with_blanks": "„{{s_satz}}“ → Der Satz steht im ___.", "blanks": [{ "id": 1, "choices": ["Aktiv", "Passiv"] }] },
+    "solution": { "answers": { "1": "{{s_loesung}}" } },
+    "explanation": [
+      { "kind": "what", "title": "Woran du es erkennst", "body": "{{s_hinweis}}" },
+      { "kind": "remember", "body": "**Passiv** = Form von **werden** + **Partizip II** (*wird gebracht, wurde geschossen, ist repariert worden*). Alles andere ist Aktiv, auch wenn *werden* drinsteht: *werden* + **Infinitiv** = Futur (*wir werden aufräumen*), *werden* + **Nomen/Adjektiv** = Vollverb (*sie wird Klassensprecherin, es wird kalt*)." },
+      { "kind": "mistake", "body": "*Wir werden morgen aufräumen* ist **kein** Passiv: Nach *werden* steht der Infinitiv *aufräumen*, kein Partizip II." }
+    ],
+    "tags": ["aktiv-passiv", "grammatik", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 2 (Aktiv oder Passiv)",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "s": {
+          "type": "pick",
+          "from": [
+            { "satz": "Die Pizza wird vom Kurier gebracht.", "loesung": "Passiv", "hinweis": "*wird* + Partizip II *gebracht*: Die Pizza tut nichts, mit ihr passiert etwas. Der Täter steht bei *vom Kurier*." },
+            { "satz": "Der Kurier bringt die Pizza.", "loesung": "Aktiv", "hinweis": "Das Subjekt (*der Kurier*) handelt selbst: *bringt*. Kein *werden*, kein Partizip II." },
+            { "satz": "Das Tor wurde in der letzten Minute geschossen.", "loesung": "Passiv", "hinweis": "*wurde* + *geschossen*: Passiv im Präteritum. Wer geschossen hat, wird gar nicht genannt." },
+            { "satz": "Wir werden morgen das Zimmer aufräumen.", "loesung": "Aktiv", "hinweis": "*werden* + Infinitiv *aufräumen* = **Futur I**, kein Passiv. Wir handeln selbst." },
+            { "satz": "Mein Handy ist gestern repariert worden.", "loesung": "Passiv", "hinweis": "*ist … repariert worden*: Passiv im Perfekt (*worden* ist das Signal). Mit dem Handy wurde etwas gemacht." },
+            { "satz": "Die Klasse hat einen Ausflug geplant.", "loesung": "Aktiv", "hinweis": "*hat … geplant* ist Perfekt Aktiv (haben + Partizip II). Kein *werden* → kein Passiv." },
+            { "satz": "Hier wird nicht geraucht.", "loesung": "Passiv", "hinweis": "*wird* + *geraucht*: unpersönliches Passiv ohne Täter. Typisch für Verbote und Schilder." },
+            { "satz": "Meine Schwester wird nächstes Jahr Klassensprecherin.", "loesung": "Aktiv", "hinweis": "*werden* ist hier ein **Vollverb** (etwas werden) mit einem Nomen dahinter, kein Partizip II → Aktiv." },
+            { "satz": "Das Rezept wurde von meiner Oma aufgeschrieben.", "loesung": "Passiv", "hinweis": "*wurde* + *aufgeschrieben*, die Täterin steht bei *von meiner Oma*." },
+            { "satz": "Der Lehrer verteilt die Arbeitsblätter.", "loesung": "Aktiv", "hinweis": "Der Lehrer handelt: *verteilt*. Subjekt + Verb + Objekt." },
+            { "satz": "Die Straße wird gerade gesperrt.", "loesung": "Passiv", "hinweis": "*wird* + *gesperrt*: Mit der Straße geschieht etwas, der Täter fehlt." },
+            { "satz": "Ihr werdet das schon schaffen.", "loesung": "Aktiv", "hinweis": "*werdet* + Infinitiv *schaffen* = Futur I. Ihr handelt selbst." }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "DE_G8_PASSIV_ZEITFORM_T1",
+    "subject": "DE",
+    "topicId": "DE_GRAM_AKTIV_PASSIV",
+    "difficulty": 4,
+    "qtype": "MCQ",
+    "prompt": "„{{s_satz}}“ (Zeitform: {{s_zeit}})\n\nWie lautet der Satz im **Passiv**, wenn die Zeitform erhalten bleibt?",
+    "payload": { "choices": ["{{s_a}}", "{{s_b}}", "{{s_c}}", "{{s_d}}"] },
+    "solution": { "correct_choice": "{{s_a}}" },
+    "explanation": [
+      { "kind": "steps", "title": "So gehst du vor", "body": "{{s_hinweis}}" },
+      { "kind": "formula", "title": "Passiv in allen Zeitformen", "body": "- **Präsens**: wird gelöscht\n- **Präteritum**: wurde gelöscht\n- **Perfekt**: ist gelöscht **worden**\n- **Futur I**: wird gelöscht **werden**\n\nDie Form von *werden* trägt die Zeit, das Partizip II bleibt immer gleich." },
+      { "kind": "mistake", "body": "Beim Umformen die Zeitform wechseln: *löschte* (Präteritum) → *wird gelöscht* (Präsens) ist falsch. Richtig: *wurde gelöscht*." }
+    ],
+    "tags": ["aktiv-passiv", "zeitformen", "grammatik", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 2 (Aktiv oder Passiv)",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "s": {
+          "type": "pick",
+          "from": [
+            { "satz": "Die Feuerwehr löschte den Brand.", "zeit": "Präteritum", "a": "Der Brand wurde von der Feuerwehr gelöscht.", "b": "Der Brand wird von der Feuerwehr gelöscht.", "c": "Der Brand ist von der Feuerwehr gelöscht.", "d": "Die Feuerwehr wurde vom Brand gelöscht.", "hinweis": "1. Objekt *den Brand* wird Subjekt: *Der Brand*. 2. *löschte* ist Präteritum → *wurde* + *gelöscht*. 3. Täter mit *von*: *von der Feuerwehr*." },
+            { "satz": "Meine Schwester hat den Kuchen gebacken.", "zeit": "Perfekt", "a": "Der Kuchen ist von meiner Schwester gebacken worden.", "b": "Der Kuchen wurde von meiner Schwester gebacken.", "c": "Der Kuchen wird von meiner Schwester gebacken.", "d": "Der Kuchen hat meine Schwester gebacken.", "hinweis": "Perfekt Aktiv (*hat gebacken*) → Perfekt Passiv: *ist … gebacken **worden***. *wurde gebacken* wäre Präteritum, also eine andere Zeitform." },
+            { "satz": "Der DJ wird die Musik auflegen.", "zeit": "Futur I", "a": "Die Musik wird vom DJ aufgelegt werden.", "b": "Die Musik wird vom DJ aufgelegt.", "c": "Die Musik wurde vom DJ aufgelegt.", "d": "Der DJ wird von der Musik aufgelegt.", "hinweis": "Futur I Aktiv (*wird auflegen*) → Futur I Passiv: *wird … aufgelegt **werden***. Ohne das zweite *werden* wäre es Präsens." },
+            { "satz": "Die Schüler dekorieren die Aula.", "zeit": "Präsens", "a": "Die Aula wird von den Schülern dekoriert.", "b": "Die Aula wurde von den Schülern dekoriert.", "c": "Die Aula ist von den Schülern dekoriert worden.", "d": "Die Schüler werden von der Aula dekoriert.", "hinweis": "Präsens bleibt Präsens: *wird* + *dekoriert*. Täter: *von den Schülern*." },
+            { "satz": "Jemand hat mein Fahrrad gestohlen.", "zeit": "Perfekt", "a": "Mein Fahrrad ist gestohlen worden.", "b": "Mein Fahrrad wurde gestohlen.", "c": "Mein Fahrrad wird gestohlen.", "d": "Jemand ist von meinem Fahrrad gestohlen worden.", "hinweis": "*jemand* ist unbekannt und fällt im Passiv weg. Perfekt: *ist gestohlen worden*." },
+            { "satz": "Der Hausmeister schloss die Turnhalle ab.", "zeit": "Präteritum", "a": "Die Turnhalle wurde vom Hausmeister abgeschlossen.", "b": "Die Turnhalle wird vom Hausmeister abgeschlossen.", "c": "Die Turnhalle ist vom Hausmeister abgeschlossen worden.", "d": "Der Hausmeister wurde von der Turnhalle abgeschlossen.", "hinweis": "*schloss … ab* ist Präteritum → *wurde abgeschlossen*. Das trennbare Verb steht im Partizip II wieder zusammen." },
+            { "satz": "Man baut hier eine neue Schule.", "zeit": "Präsens", "a": "Hier wird eine neue Schule gebaut.", "b": "Hier wurde eine neue Schule gebaut.", "c": "Hier ist eine neue Schule gebaut worden.", "d": "Eine neue Schule baut hier man.", "hinweis": "*man* fällt im Passiv weg, es gibt kein *von man*. Präsens: *wird gebaut*." },
+            { "satz": "Die Polizei hat den Dieb gefasst.", "zeit": "Perfekt", "a": "Der Dieb ist von der Polizei gefasst worden.", "b": "Der Dieb wurde von der Polizei gefasst.", "c": "Der Dieb wird von der Polizei gefasst.", "d": "Die Polizei ist vom Dieb gefasst worden.", "hinweis": "Perfekt → *ist … gefasst worden*. Subjekt und Täter nicht vertauschen: Die Polizei fasst, der Dieb wird gefasst." },
+            { "satz": "Die Klasse wählt morgen den Klassensprecher.", "zeit": "Präsens", "a": "Der Klassensprecher wird morgen von der Klasse gewählt.", "b": "Der Klassensprecher wurde morgen von der Klasse gewählt.", "c": "Der Klassensprecher ist morgen von der Klasse gewählt worden.", "d": "Die Klasse wird morgen vom Klassensprecher gewählt.", "hinweis": "Präsens (auch für Zukünftiges): *wird gewählt*. *wurde* und *ist … worden* passen nicht zu *morgen*." },
+            { "satz": "Unsere Nachbarin fütterte die Katze.", "zeit": "Präteritum", "a": "Die Katze wurde von unserer Nachbarin gefüttert.", "b": "Die Katze wird von unserer Nachbarin gefüttert.", "c": "Die Katze ist von unserer Nachbarin gefüttert worden.", "d": "Unsere Nachbarin wurde von der Katze gefüttert.", "hinweis": "*fütterte* → Präteritum → *wurde gefüttert*. Täterin: *von unserer Nachbarin*." }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "DE_G8_PASSIV_BILDEN_T1",
+    "subject": "DE",
+    "topicId": "DE_GRAM_AKTIV_PASSIV",
+    "difficulty": 3,
+    "qtype": "CLOZE",
+    "prompt": "Bilde das Passiv ({{s_zeit}}): Form von *werden* + Partizip II.",
+    "payload": { "text_with_blanks": "{{s_satz}}", "blanks": [{ "id": 1, "choices": ["{{s_h1a}}", "{{s_h1b}}", "{{s_h1c}}"] }, { "id": 2, "choices": ["{{s_h2a}}", "{{s_h2b}}", "{{s_h2c}}"] }] },
+    "solution": { "answers": { "1": "{{s_l1}}", "2": "{{s_l2}}" } },
+    "explanation": [
+      { "kind": "what", "title": "Warum", "body": "{{s_hinweis}}" },
+      { "kind": "remember", "body": "Passiv = **werden** (angepasst an Person und Zeit) + **Partizip II** (ganz am Ende). *ich werde / du wirst / er wird / wir werden / ihr werdet / sie werden* + *gelesen*. Präteritum: *wurde / wurdest / wurden*." },
+      { "kind": "mistake", "body": "Am Ende steht das **Partizip II**, nicht der Infinitiv: *wird gelesen*, nicht *wird lesen* (das wäre Futur)." }
+    ],
+    "tags": ["aktiv-passiv", "grammatik", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 2 (Aktiv oder Passiv)",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "s": {
+          "type": "pick",
+          "from": [
+            { "satz": "Der Text ___ von der Klasse ___.", "zeit": "Präsens", "h1a": "wird", "h1b": "werden", "h1c": "ist", "l1": "wird", "h2a": "gelesen", "h2b": "lesen", "h2c": "las", "l2": "gelesen", "hinweis": "*Der Text* ist Singular → *wird*. Partizip II von *lesen*: *gelesen*." },
+            { "satz": "Die Fenster ___ jeden Freitag ___.", "zeit": "Präsens", "h1a": "wird", "h1b": "werden", "h1c": "sind", "l1": "werden", "h2a": "putzen", "h2b": "geputzt", "h2c": "putzt", "l2": "geputzt", "hinweis": "*Die Fenster* ist Plural → *werden*. Partizip II: *geputzt*." },
+            { "satz": "Das Spiel ___ gestern ___.", "zeit": "Präteritum", "h1a": "wurde", "h1b": "wird", "h1c": "war", "l1": "wurde", "h2a": "abgebrochen", "h2b": "abbrechen", "h2c": "abbrach", "l2": "abgebrochen", "hinweis": "Präteritum, Singular → *wurde*. Partizip II des trennbaren Verbs: *abgebrochen* (das *ge* steht in der Mitte)." },
+            { "satz": "Die Karten ___ letzte Woche ___.", "zeit": "Präteritum", "h1a": "wurde", "h1b": "waren", "h1c": "wurden", "l1": "wurden", "h2a": "verkauft", "h2b": "verkaufen", "h2c": "verkaufte", "l2": "verkauft", "hinweis": "Plural + Präteritum → *wurden*. Partizip II von *verkaufen*: *verkauft* (Verben mit *ver-* bekommen kein *ge-*)." },
+            { "satz": "Ich ___ vom Arzt ___.", "zeit": "Präsens", "h1a": "werde", "h1b": "wird", "h1c": "bin", "l1": "werde", "h2a": "untersuchen", "h2b": "untersuchte", "h2c": "untersucht", "l2": "untersucht", "hinweis": "1. Person → *ich werde*. Partizip II: *untersucht* (kein *ge-* bei *unter-*)." },
+            { "satz": "Du ___ heute zum Essen ___.", "zeit": "Präsens", "h1a": "wird", "h1b": "wirst", "h1c": "bist", "l1": "wirst", "h2a": "eingeladen", "h2b": "einladen", "h2c": "lädst ein", "l2": "eingeladen", "hinweis": "2. Person → *du wirst*. Partizip II: *eingeladen*." },
+            { "satz": "Wir ___ am Bahnhof ___.", "zeit": "Präteritum", "h1a": "wurden", "h1b": "wurde", "h1c": "waren", "l1": "wurden", "h2a": "abholen", "h2b": "abgeholt", "h2c": "holten ab", "l2": "abgeholt", "hinweis": "*wir* + Präteritum → *wurden*. Partizip II: *abgeholt*." },
+            { "satz": "Das Paket ___ morgen ___.", "zeit": "Präsens", "h1a": "ist", "h1b": "werden", "h1c": "wird", "l1": "wird", "h2a": "geliefert", "h2b": "liefern", "h2c": "lieferte", "l2": "geliefert", "hinweis": "Singular, Präsens (auch für die Zukunft) → *wird*. Partizip II: *geliefert*." },
+            { "satz": "Die Tore ___ von unserem Stürmer ___.", "zeit": "Präsens", "h1a": "werden", "h1b": "wird", "h1c": "sind", "l1": "werden", "h2a": "schießen", "h2b": "geschossen", "h2c": "schoss", "l2": "geschossen", "hinweis": "Plural → *werden*. Partizip II von *schießen*: *geschossen*." },
+            { "satz": "Der Film ___ 2019 ___.", "zeit": "Präteritum", "h1a": "wird", "h1b": "wurde", "h1c": "war", "l1": "wurde", "h2a": "drehen", "h2b": "drehte", "h2c": "gedreht", "l2": "gedreht", "hinweis": "Vergangenheit, Singular → *wurde*. Partizip II: *gedreht*." },
+            { "satz": "Ihr ___ von der Lehrerin ___.", "zeit": "Präsens", "h1a": "werdet", "h1b": "wird", "h1c": "seid", "l1": "werdet", "h2a": "gelobt", "h2b": "loben", "h2c": "lobt", "l2": "gelobt", "hinweis": "*ihr* → *werdet*. Partizip II: *gelobt*." }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "DE_G8_PASSIV_MERKMAL",
+    "subject": "DE",
+    "topicId": "DE_GRAM_AKTIV_PASSIV",
+    "difficulty": 1,
+    "qtype": "MCQ",
+    "prompt": "Woran erkennst du einen **Passivsatz**?",
+    "payload": { "choices": ["An einer Form von *werden* + Partizip II: *Die Katze wird gejagt.*", "An einer Form von *haben* + Partizip II: *Der Hund hat gejagt.*", "Daran, dass das Verb am Ende des Satzes steht.", "An einem *von* im Satz."] },
+    "solution": { "correct_choice": "An einer Form von *werden* + Partizip II: *Die Katze wird gejagt.*" },
+    "explanation": [
+      { "kind": "what", "title": "Warum", "body": "Passiv heißt: Das Subjekt **erleidet** die Handlung, statt sie auszuführen. Die Form dafür ist immer **werden + Partizip II**: *wird gejagt, wurde gebaut, ist repariert worden*.\n\n*haben* + Partizip II ist das Perfekt im Aktiv. Das Verb am Ende zeigt einen Nebensatz an. Ein *von* kann im Passiv den Täter nennen, muss aber nicht dastehen (*Die Straße wird gesperrt.*)." },
+      { "kind": "remember", "body": "**Aktiv**: Wer handelt, steht im Mittelpunkt. *Der Hund jagt die Katze.* **Passiv**: Die Handlung steht im Mittelpunkt. Das Objekt wird Subjekt + **werden** + **Partizip II**. *Die Katze wird (vom Hund) gejagt.*" }
+    ],
+    "tags": ["aktiv-passiv", "grammatik", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 2 (Aktiv oder Passiv)"
+  },
+  {
+    "id": "DE_G8_PASSIV_WARUM",
+    "subject": "DE",
+    "topicId": "DE_GRAM_AKTIV_PASSIV",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "Warum passt hier das Passiv besser als das Aktiv?\n\n„Mein Fahrrad wurde gestern vor der Schule gestohlen.“",
+    "payload": { "choices": ["Der Täter ist unbekannt; wichtig ist, was mit dem Fahrrad passiert ist.", "Weil der Satz in der Vergangenheit steht.", "Weil das Fahrrad die Handlung ausführt.", "Weil man im Passiv keinen Täter nennen darf."] },
+    "solution": { "correct_choice": "Der Täter ist unbekannt; wichtig ist, was mit dem Fahrrad passiert ist." },
+    "explanation": [
+      { "kind": "what", "title": "Warum", "body": "Im Aktiv müsste ein Täter genannt werden: *Jemand hat mein Fahrrad gestohlen.* Wer das war, weiß ich nicht, und es ist auch nicht der Punkt. Das Passiv stellt die **Handlung** und das **Betroffene** (mein Fahrrad) in den Mittelpunkt.\n\nDie Zeitform hat mit Aktiv/Passiv nichts zu tun. Das Fahrrad führt nichts aus, es *erleidet* etwas. Und einen Täter darf man im Passiv nennen (*von …*), man muss es nur nicht." },
+      { "kind": "remember", "body": "Passiv nutzt du, wenn der Täter **unbekannt**, **unwichtig** oder **selbstverständlich** ist: *Hier wird gebaut. Der Test wird morgen geschrieben. Das Gesetz wurde 2020 beschlossen.* Sachtexte und Anleitungen sind voll davon." }
+    ],
+    "tags": ["aktiv-passiv", "grammatik", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 2 (Aktiv oder Passiv)"
+  },
+  {
+    "id": "DE_G8_PASSIV_ZU_AKTIV_PERFEKT",
+    "subject": "DE",
+    "topicId": "DE_GRAM_AKTIV_PASSIV",
+    "difficulty": 4,
+    "qtype": "MCQ",
+    "prompt": "Forme den Satz in einen **Aktivsatz** um (Zeitform beibehalten).\n\n„Der Schulhof ist gestern von der 9b aufgeräumt worden.“",
+    "payload": { "choices": ["Die 9b hat gestern den Schulhof aufgeräumt.", "Die 9b räumte gestern den Schulhof auf.", "Der Schulhof hat gestern die 9b aufgeräumt.", "Die 9b wird gestern den Schulhof aufräumen."] },
+    "solution": { "correct_choice": "Die 9b hat gestern den Schulhof aufgeräumt." },
+    "explanation": [
+      { "kind": "steps", "title": "So gehst du vor", "body": "1. Täter suchen: *von der 9b* → wird Subjekt: *Die 9b*.\n2. Passiv-Subjekt wird Objekt: *den Schulhof* (Wen oder was?).\n3. Zeitform erkennen: *ist … worden* = **Perfekt** → Aktiv Perfekt: *hat … aufgeräumt*.\n\n*räumte auf* wäre Präteritum (andere Zeitform). *Der Schulhof hat die 9b aufgeräumt* vertauscht Täter und Betroffenes." },
+      { "kind": "remember", "body": "Perfekt Passiv erkennst du an **worden** am Ende (*ist gemacht worden*). Beim Umformen wird daraus Perfekt Aktiv mit **haben/sein** + Partizip II (*hat gemacht*)." }
+    ],
+    "tags": ["aktiv-passiv", "grammatik", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 2 (Aktiv oder Passiv)"
+  },
+  {
+    "id": "DE_G8_PASSIV_IM_TEXT",
+    "subject": "DE",
+    "topicId": "DE_GRAM_AKTIV_PASSIV",
+    "difficulty": 5,
+    "qtype": "MCQ",
+    "prompt": "In welchem Satz steht das Verb im **Passiv**?",
+    "payload": { "choices": ["Nächstes Jahr werden wir nach Kroatien fahren.", "Mein Bruder wird bald sechzehn.", "Die Tickets wurden schon im Januar gebucht.", "Wir haben das Hotel selbst ausgesucht."] },
+    "solution": { "correct_choice": "Die Tickets wurden schon im Januar gebucht." },
+    "explanation": [
+      { "kind": "what", "title": "Warum", "body": "*wurden … gebucht* = Form von *werden* + Partizip II → **Passiv**. Wer gebucht hat, bleibt offen.\n\nDie anderen drei enthalten Fallen:\n- *werden … fahren*: *werden* + Infinitiv = **Futur I** (Aktiv).\n- *wird sechzehn*: *werden* als **Vollverb** (etwas werden), kein Partizip.\n- *haben … ausgesucht*: **Perfekt Aktiv**, kein *werden*." },
+      { "kind": "remember", "body": "Drei Gesichter von *werden*: **Futur** (werden + Infinitiv), **Vollverb** (werden + Nomen/Adjektiv), **Passiv** (werden + Partizip II). Nur das dritte ist Passiv. Frag dich: Steht am Ende ein Partizip II (*ge-…-t / -en*)?" }
+    ],
+    "tags": ["aktiv-passiv", "grammatik", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 2 (Aktiv oder Passiv)"
+  },
+  {
+    "id": "DE_G8_INDIREKT_KONJUNKTIV_T1",
+    "subject": "DE",
+    "topicId": "DE_GRAM_INDIRECT",
+    "difficulty": 3,
+    "qtype": "CLOZE",
+    "prompt": "Setze das Verb in die richtige Form für die **indirekte Rede**.\n\nDirekt: {{s_direkt}}",
+    "payload": { "text_with_blanks": "{{s_indirekt}}", "blanks": [{ "id": 1, "choices": ["{{s_a}}", "{{s_b}}", "{{s_c}}"] }] },
+    "solution": { "answers": { "1": "{{s_loesung}}" } },
+    "explanation": [
+      { "kind": "what", "title": "Warum diese Form", "body": "{{s_hinweis}}" },
+      { "kind": "steps", "title": "Vier Schritte", "body": "1. Anführungszeichen und Doppelpunkt **weg**.\n2. **Pronomen anpassen**: ich → er/sie, wir → sie, mein → sein/ihr.\n3. Verb in den **Konjunktiv I**: gehe, habe, sei, könne. Vergangenheit: *habe/sei + Partizip II*.\n4. Klingt der Konjunktiv I wie der Indikativ (*wir haben*)? Dann **Konjunktiv II**: *hätten*." },
+      { "kind": "remember", "body": "Der Konjunktiv I ist das Signal für den Bericht: *Er sagte, er **gehe***. Der Indikativ (*er geht*) wäre keine indirekte Rede mehr, sondern eine Behauptung des Erzählers." }
+    ],
+    "tags": ["indirekte-rede", "konjunktiv", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 2 (Direkte und indirekte Rede)",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "s": {
+          "type": "pick",
+          "from": [
+            { "direkt": "Mia sagte: „Ich habe Hunger.“", "indirekt": "Mia sagte, sie ___ Hunger.", "a": "hat", "b": "habe", "c": "hätte", "loesung": "habe", "hinweis": "*ich habe* → *sie habe*: Konjunktiv I, 3. Person Singular. Der Indikativ *hat* wäre kein Bericht mehr." },
+            { "direkt": "Tom meinte: „Ich bin müde.“", "indirekt": "Tom meinte, er ___ müde.", "a": "sei", "b": "ist", "c": "wäre", "loesung": "sei", "hinweis": "*bin* → *sei*: Konjunktiv I von *sein*. *wäre* ist Konjunktiv II." },
+            { "direkt": "Lena rief: „Ich komme gleich!“", "indirekt": "Lena rief, sie ___ gleich.", "a": "kommt", "b": "käme", "c": "komme", "loesung": "komme", "hinweis": "*ich komme* → *sie komme*: Konjunktiv I (Stamm + *-e*)." },
+            { "direkt": "Der Lehrer sagte: „Der Test ist morgen.“", "indirekt": "Der Lehrer sagte, der Test ___ morgen.", "a": "ist", "b": "sei", "c": "wäre", "loesung": "sei", "hinweis": "*ist* → *sei*: Konjunktiv I. Das Subjekt (*der Test*) bleibt, weil kein Pronomen der 1. Person vorkommt." },
+            { "direkt": "Die Zwillinge sagten: „Wir haben keine Lust.“", "indirekt": "Die Zwillinge sagten, sie ___ keine Lust.", "a": "haben", "b": "hätten", "c": "hatten", "loesung": "hätten", "hinweis": "Konjunktiv I *sie haben* klingt wie der Indikativ → Ersatzform Konjunktiv II *hätten*." },
+            { "direkt": "Ben sagte: „Ich kann heute nicht.“", "indirekt": "Ben sagte, er ___ heute nicht.", "a": "könne", "b": "kann", "c": "könnte", "loesung": "könne", "hinweis": "*kann* → *könne*: Konjunktiv I von *können*." },
+            { "direkt": "Sie erzählte: „Ich habe den Bus verpasst.“", "indirekt": "Sie erzählte, sie ___ den Bus verpasst.", "a": "hat", "b": "hätte", "c": "habe", "loesung": "habe", "hinweis": "Perfekt in der direkten Rede → Konjunktiv I Perfekt: *habe … verpasst*. Das Partizip bleibt, nur das Hilfsverb wird zum Konjunktiv." },
+            { "direkt": "Er sagte: „Ich war gestern krank.“", "indirekt": "Er sagte, er ___ gestern krank gewesen.", "a": "sei", "b": "war", "c": "wäre", "loesung": "sei", "hinweis": "Präteritum *war* → in der indirekten Rede *sei … gewesen* (Konjunktiv I der Vergangenheit)." },
+            { "direkt": "Die Trainerin sagte: „Ihr müsst pünktlich sein.“", "indirekt": "Die Trainerin sagte, wir ___ pünktlich sein.", "a": "müssen", "b": "müssten", "c": "mussten", "loesung": "müssten", "hinweis": "*ihr* → *wir* (die Angesprochenen berichten). Konjunktiv I *wir müssen* = Indikativ → Ersatzform *müssten*." },
+            { "direkt": "Papa fragte: „Hat Tim Hausaufgaben?“", "indirekt": "Papa fragte, ob Tim Hausaufgaben ___.", "a": "hat", "b": "hätte", "c": "habe", "loesung": "habe", "hinweis": "Indirekte Frage mit *ob*, Verb am Ende im Konjunktiv I: *habe*." },
+            { "direkt": "Oma sagte: „Ich weiß das nicht.“", "indirekt": "Oma sagte, sie ___ das nicht.", "a": "weiß", "b": "wisse", "c": "wüsste", "loesung": "wisse", "hinweis": "Konjunktiv I von *wissen*: *sie wisse*. *wüsste* ist Konjunktiv II." },
+            { "direkt": "Mein Bruder sagte: „Ich will Pilot werden.“", "indirekt": "Mein Bruder sagte, er ___ Pilot werden.", "a": "will", "b": "wolle", "c": "wollte", "loesung": "wolle", "hinweis": "*will* → *wolle*: Konjunktiv I von *wollen*. *wollte* wäre Präteritum oder Konjunktiv II." }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "DE_G8_INDIREKT_ZU_DIREKT_T1",
+    "subject": "DE",
+    "topicId": "DE_GRAM_INDIRECT",
+    "difficulty": 4,
+    "qtype": "MCQ",
+    "prompt": "Formuliere den Satz so um, dass er **direkte Rede** enthält.\n\n{{s_satz}}",
+    "payload": { "choices": ["{{s_a}}", "{{s_b}}", "{{s_c}}", "{{s_d}}"] },
+    "solution": { "correct_choice": "{{s_a}}" },
+    "explanation": [
+      { "kind": "steps", "title": "So gehst du vor", "body": "{{s_hinweis}}" },
+      { "kind": "remember", "body": "Rückweg indirekt → direkt: 1. Begleitsatz + **Doppelpunkt**. 2. **Anführungszeichen** „…“. 3. Pronomen **zurück**: er/sie → ich, sie (Plural) → wir, ihr. 4. Konjunktiv → **Indikativ**: *er gehe* → *ich gehe*, *sie sei* → *ich bin*. 5. Aus *ob* wird eine **Frage** mit Fragezeichen." },
+      { "kind": "mistake", "body": "Das Pronomen vergessen: *Tom sagte: „Er kommt später.“* wäre eine Aussage über eine andere Person. Tom spricht von sich: *„Ich komme später.“*" }
+    ],
+    "tags": ["indirekte-rede", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Prüfung A, Aufgabe 153 (Satz ohne indirekte Rede)",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "s": {
+          "type": "pick",
+          "from": [
+            { "satz": "Tom sagte, er komme später.", "a": "Tom sagte: „Ich komme später.“", "b": "Tom sagte: „Er kommt später.“", "c": "Tom sagte: „Ich komme später“.", "d": "Tom sagte, „ich komme später.“", "hinweis": "er → ich, *komme* (Konjunktiv I) → *komme* (Indikativ 1. Person). Doppelpunkt, Anführungszeichen, der Punkt steht innen." },
+            { "satz": "Lea meinte, sie habe keine Zeit.", "a": "Lea meinte: „Ich habe keine Zeit.“", "b": "Lea meinte: „Sie hat keine Zeit.“", "c": "Lea meinte: „Ich hätte keine Zeit.“", "d": "Lea meinte: „Ich habe keine Zeit“.", "hinweis": "sie → ich, *habe* bleibt (jetzt Indikativ). *hätte* wäre Konjunktiv II und würde die Aussage verändern." },
+            { "satz": "Der Trainer sagte, wir hätten gut gespielt.", "a": "Der Trainer sagte: „Ihr habt gut gespielt.“", "b": "Der Trainer sagte: „Wir haben gut gespielt.“", "c": "Der Trainer sagte: „Ihr hättet gut gespielt.“", "d": "Der Trainer sagte: „Sie haben gut gespielt.“", "hinweis": "*wir hätten* berichtet aus Sicht der Spieler. Der Trainer hat sie angesprochen: *Ihr habt gut gespielt.* Der Konjunktiv II war nur die Ersatzform." },
+            { "satz": "Mia fragte, ob ich mitkomme.", "a": "Mia fragte: „Kommst du mit?“", "b": "Mia fragte: „Komme ich mit?“", "c": "Mia fragte: „Ob du mitkommst?“", "d": "Mia fragte: „Kommst du mit.“", "hinweis": "*ob* → Entscheidungsfrage mit dem Verb vorn und Fragezeichen. *ich* (die gefragte Person) → *du*." },
+            { "satz": "Sie erzählte, sie sei gestern im Kino gewesen.", "a": "Sie erzählte: „Ich war gestern im Kino.“", "b": "Sie erzählte: „Sie war gestern im Kino.“", "c": "Sie erzählte: „Ich bin gestern im Kino.“", "d": "Sie erzählte: „Ich wäre gestern im Kino gewesen.“", "hinweis": "*sei … gewesen* (Konjunktiv I Vergangenheit) → Indikativ Vergangenheit: *war*. sie → ich." },
+            { "satz": "Er fragte, wo der Bahnhof sei.", "a": "Er fragte: „Wo ist der Bahnhof?“", "b": "Er fragte: „Wo der Bahnhof ist?“", "c": "Er fragte: „Wo sei der Bahnhof?“", "d": "Er fragte: „Wo ist der Bahnhof.“", "hinweis": "Fragewort *wo* bleibt, das Verb rückt an die zweite Stelle: *Wo ist …?* Konjunktiv *sei* → Indikativ *ist*, Fragezeichen." },
+            { "satz": "Ben behauptete, er habe das nicht gewusst.", "a": "Ben behauptete: „Ich habe das nicht gewusst.“", "b": "Ben behauptete: „Er hat das nicht gewusst.“", "c": "Ben behauptete: „Ich hätte das nicht gewusst.“", "d": "Ben behauptete: „Ich weiß das nicht.“", "hinweis": "er → ich, *habe … gewusst* (Perfekt) bleibt Perfekt. *weiß* wäre Gegenwart und würde den Inhalt ändern." },
+            { "satz": "Anna sagte, ihr Bruder sei krank.", "a": "Anna sagte: „Mein Bruder ist krank.“", "b": "Anna sagte: „Ihr Bruder ist krank.“", "c": "Anna sagte: „Mein Bruder sei krank.“", "d": "Anna sagte: „Mein Bruder wäre krank.“", "hinweis": "*ihr Bruder* (aus Annas Sicht berichtet) → *mein Bruder*. *sei* → *ist*." },
+            { "satz": "Der Arzt sagte, ich solle viel trinken.", "a": "Der Arzt sagte: „Trinken Sie viel!“", "b": "Der Arzt sagte: „Ich soll viel trinken.“", "c": "Der Arzt sagte: „Er soll viel trinken.“", "d": "Der Arzt sagte: „Trinke ich viel?“", "hinweis": "*solle* gibt eine Aufforderung wieder → direkt als Imperativ (hier höflich mit *Sie*): *Trinken Sie viel!*" },
+            { "satz": "Die Kinder riefen, sie wollten nach Hause.", "a": "Die Kinder riefen: „Wir wollen nach Hause!“", "b": "Die Kinder riefen: „Sie wollen nach Hause!“", "c": "Die Kinder riefen: „Wir wollten nach Hause!“", "d": "Die Kinder riefen: „Ich will nach Hause!“", "hinweis": "sie (Plural) → wir. *wollten* war die Ersatzform für *wollen* (Konjunktiv I = Indikativ) → direkt: *wollen*." },
+            { "satz": "Lukas fragte, wann der Film anfange.", "a": "Lukas fragte: „Wann fängt der Film an?“", "b": "Lukas fragte: „Wann der Film anfängt?“", "c": "Lukas fragte: „Wann fange der Film an?“", "d": "Lukas fragte: „Der Film fängt wann an.“", "hinweis": "Fragewort bleibt, das trennbare Verb teilt sich in der Frage: *fängt … an*. Konjunktiv *anfange* → Indikativ." }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "DE_G8_INDIREKT_EINLEITUNG_T1",
+    "subject": "DE",
+    "topicId": "DE_GRAM_INDIRECT",
+    "difficulty": 3,
+    "qtype": "CLOZE",
+    "prompt": "Welche Einleitung braucht die indirekte Rede?\n\nDirekt: {{s_direkt}}",
+    "payload": { "text_with_blanks": "{{s_indirekt}}", "blanks": [{ "id": 1, "choices": ["{{s_a}}", "{{s_b}}", "{{s_c}}"] }] },
+    "solution": { "answers": { "1": "{{s_loesung}}" } },
+    "explanation": [
+      { "kind": "what", "title": "Warum", "body": "{{s_hinweis}}" },
+      { "kind": "remember", "body": "**Aussage** → *dass* (oder ohne Einleitung): *Er sagte, (dass) er müde sei.* **Entscheidungsfrage** (Antwort ja/nein) → **ob**: *Sie fragte, ob ich mitkomme.* **W-Frage** → das **Fragewort** bleibt: *Er fragte, wann der Bus fahre.* **Aufforderung** → *sollen* im Konjunktiv: *Sie sagte, ich solle aufräumen.*" },
+      { "kind": "mistake", "body": "*Sie fragte, dass ich mitkomme* ist falsch: Fragen werden nie mit *dass* eingeleitet." }
+    ],
+    "tags": ["indirekte-rede", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 2 (Direkte und indirekte Rede)",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "s": {
+          "type": "pick",
+          "from": [
+            { "direkt": "Lea fragte: „Kommst du mit?“", "indirekt": "Lea fragte, ___ ich mitkomme.", "a": "ob", "b": "dass", "c": "wenn", "loesung": "ob", "hinweis": "Entscheidungsfrage (Antwort ja oder nein) → *ob*." },
+            { "direkt": "Tim fragte: „Wann fängt der Film an?“", "indirekt": "Tim fragte, ___ der Film anfange.", "a": "ob", "b": "wann", "c": "dass", "loesung": "wann", "hinweis": "W-Frage: Das Fragewort *wann* leitet den Nebensatz ein, das Verb rückt ans Ende." },
+            { "direkt": "Er sagte: „Ich habe die Karten schon.“", "indirekt": "Er sagte, ___ er die Karten schon habe.", "a": "ob", "b": "dass", "c": "wann", "loesung": "dass", "hinweis": "Aussage → *dass*. (Man könnte das *dass* auch weglassen: *Er sagte, er habe …*)" },
+            { "direkt": "Mia fragte: „Wo ist die Sporthalle?“", "indirekt": "Mia fragte, ___ die Sporthalle sei.", "a": "ob", "b": "dass", "c": "wo", "loesung": "wo", "hinweis": "W-Frage → Fragewort *wo* bleibt als Einleitung." },
+            { "direkt": "Papa fragte: „Warum bist du so spät?“", "indirekt": "Papa fragte, ___ ich so spät sei.", "a": "warum", "b": "ob", "c": "dass", "loesung": "warum", "hinweis": "W-Frage → *warum* leitet ein. *du* → *ich*, weil die gefragte Person berichtet." },
+            { "direkt": "Mama sagte: „Räum dein Zimmer auf!“", "indirekt": "Mama sagte, ich ___ mein Zimmer aufräumen.", "a": "solle", "b": "sei", "c": "habe", "loesung": "solle", "hinweis": "Aufforderungen werden mit *sollen* im Konjunktiv I wiedergegeben: *ich solle*." },
+            { "direkt": "Ben fragte: „Hast du meinen Schlüssel gesehen?“", "indirekt": "Ben fragte, ___ ich seinen Schlüssel gesehen habe.", "a": "dass", "b": "ob", "c": "wo", "loesung": "ob", "hinweis": "Entscheidungsfrage → *ob*. *meinen* → *seinen*, weil über Ben berichtet wird." },
+            { "direkt": "Sie fragte: „Wie viel kostet das Ticket?“", "indirekt": "Sie fragte, ___ das Ticket koste.", "a": "ob", "b": "dass", "c": "wie viel", "loesung": "wie viel", "hinweis": "W-Frage → *wie viel* bleibt als Einleitung, *kostet* → *koste*." },
+            { "direkt": "Lena schrieb: „Ich bin um drei da.“", "indirekt": "Lena schrieb, ___ sie um drei da sei.", "a": "dass", "b": "ob", "c": "wann", "loesung": "dass", "hinweis": "Aussage → *dass* (oder ohne Einleitung)." },
+            { "direkt": "Der Trainer sagte: „Bringt Getränke mit!“", "indirekt": "Der Trainer sagte, wir ___ Getränke mitbringen.", "a": "sollten", "b": "seien", "c": "hätten", "loesung": "sollten", "hinweis": "Aufforderung → *sollen*. Konjunktiv I *wir sollen* = Indikativ, deshalb Ersatzform *sollten*." }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "DE_G8_INDIREKT_ERKENNEN",
+    "subject": "DE",
+    "topicId": "DE_GRAM_INDIRECT",
+    "difficulty": 1,
+    "qtype": "MCQ",
+    "prompt": "Welcher Satz enthält **direkte Rede**?",
+    "payload": { "choices": ["Sie sagte: „Ich bin müde.“", "Sie sagte, sie sei müde.", "Sie sagte, dass sie müde sei.", "Sie war müde."] },
+    "solution": { "correct_choice": "Sie sagte: „Ich bin müde.“" },
+    "explanation": [
+      { "kind": "what", "title": "Warum", "body": "Direkte Rede gibt die Worte **wörtlich** wieder: Doppelpunkt, Anführungszeichen, und die Sprecherin sagt *ich*. Die Sätze 2 und 3 **berichten** ihre Worte (indirekte Rede: Konjunktiv I *sei*, Pronomen *sie*, keine Anführungszeichen). Satz 4 ist gar keine Rede, sondern eine Feststellung des Erzählers." },
+      { "kind": "remember", "body": "Direkte Rede gibt die Worte **wörtlich** wieder (mit Anführungszeichen). Indirekte Rede **berichtet** sie: keine Anführungszeichen, Konjunktiv I, angepasste Pronomen." }
+    ],
+    "tags": ["indirekte-rede", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 2 (Direkte und indirekte Rede)"
+  },
+  {
+    "id": "DE_G8_INDIREKT_WAS_BLEIBT",
+    "subject": "DE",
+    "topicId": "DE_GRAM_INDIRECT",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Was ändert sich beim Umformen von direkter in indirekte Rede **nicht**?",
+    "payload": { "choices": ["der Inhalt der Aussage", "das Pronomen (ich → er/sie)", "der Modus des Verbs (Indikativ → Konjunktiv)", "die Anführungszeichen (fallen weg)"] },
+    "solution": { "correct_choice": "der Inhalt der Aussage" },
+    "explanation": [
+      { "kind": "what", "title": "Warum", "body": "Beim Umformen wechselt nur die **Form**: Pronomen, Modus, Zeichen. Der **Inhalt** muss exakt gleich bleiben. Aus *„Ich komme nicht“* darf nicht *er komme vielleicht* werden." },
+      { "kind": "remember", "body": "Drei Dinge ändern sich: **Zeichen** (Anführungszeichen und Doppelpunkt weg), **Pronomen** (ich → er/sie), **Modus** (Konjunktiv I). Eines bleibt: der **Inhalt**." }
+    ],
+    "tags": ["indirekte-rede", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 2 (Direkte und indirekte Rede)"
+  },
+  {
+    "id": "DE_G8_INDIREKT_VERGANGENHEIT",
+    "subject": "DE",
+    "topicId": "DE_GRAM_INDIRECT",
+    "difficulty": 4,
+    "qtype": "MCQ",
+    "prompt": "Forme in **indirekte Rede** um.\n\nLena erzählte: „Ich habe gestern den Bus verpasst.“",
+    "payload": { "choices": ["Lena erzählte, sie habe gestern den Bus verpasst.", "Lena erzählte, sie hat gestern den Bus verpasst.", "Lena erzählte, sie verpasse gestern den Bus.", "Lena erzählte, ich habe gestern den Bus verpasst."] },
+    "solution": { "correct_choice": "Lena erzählte, sie habe gestern den Bus verpasst." },
+    "explanation": [
+      { "kind": "steps", "title": "So gehst du vor", "body": "1. *ich* → *sie*.\n2. Zeitform: Perfekt (*habe verpasst*) → **Konjunktiv I Perfekt**: *habe … verpasst*. Das Hilfsverb wird zum Konjunktiv, das Partizip bleibt.\n3. Anführungszeichen weg.\n\n*sie hat* → Indikativ, keine indirekte Rede. *sie verpasse gestern* → Gegenwart, passt nicht zu *gestern*. *ich habe* → Pronomen nicht angepasst." },
+      { "kind": "remember", "body": "Alle Vergangenheitsformen (Präteritum, Perfekt, Plusquamperfekt) werden in der indirekten Rede zu **habe/sei + Partizip II**: *ich ging / bin gegangen / war gegangen* → *er sei gegangen*." }
+    ],
+    "tags": ["indirekte-rede", "konjunktiv", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 2 (Direkte und indirekte Rede)"
+  },
+  {
+    "id": "DE_G8_INDIREKT_ZWEI_TEILE",
+    "subject": "DE",
+    "topicId": "DE_GRAM_INDIRECT",
+    "difficulty": 5,
+    "qtype": "MCQ",
+    "prompt": "Forme in **indirekte Rede** um. (Die Spieler berichten, was der Trainer zu ihnen gesagt hat.)\n\nDer Trainer sagte: „Ihr habt gut gespielt, aber morgen müsst ihr früher aufstehen.“",
+    "payload": { "choices": ["Der Trainer sagte, wir hätten gut gespielt, aber morgen müssten wir früher aufstehen.", "Der Trainer sagte, ihr habt gut gespielt, aber morgen müsst ihr früher aufstehen.", "Der Trainer sagte, wir haben gut gespielt, aber morgen müssen wir früher aufstehen.", "Der Trainer sagte, dass wir gut gespielt hätten, aber morgen früher aufstehen."] },
+    "solution": { "correct_choice": "Der Trainer sagte, wir hätten gut gespielt, aber morgen müssten wir früher aufstehen." },
+    "explanation": [
+      { "kind": "steps", "title": "So gehst du vor", "body": "1. *ihr* → **wir** (die Angesprochenen berichten selbst).\n2. Konjunktiv I: *wir haben* und *wir müssen* klingen wie der Indikativ → **Ersatzform Konjunktiv II**: *hätten*, *müssten*.\n3. Beide Teilsätze umformen, *aber* bleibt.\n\nVariante 2 lässt *ihr* stehen. Variante 3 steht im Indikativ. Variante 4 hat im zweiten Teil kein gebeugtes Verb mehr." },
+      { "kind": "remember", "body": "Bei **mehreren** Teilsätzen jede Verbform einzeln prüfen. Bei *wir* ist fast immer die Ersatzform nötig: *wir hätten, wir müssten, wir würden*." },
+      { "kind": "mistake", "body": "*Wir haben gut gespielt* im Bericht klingt, als sei es die Meinung des Erzählers. Der Konjunktiv zeigt: Das hat der **Trainer** gesagt." }
+    ],
+    "tags": ["indirekte-rede", "konjunktiv", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 2 (Direkte und indirekte Rede)"
+  },
+  {
+    "id": "DE_G8_PARTIZIP_BILDEN_T1",
+    "subject": "DE",
+    "topicId": "DE_GRAM_PARTIZIP",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "Wie lautet das **Partizip {{s_typ}}** von **{{s_verb}}**?",
+    "payload": { "choices": ["{{s_a}}", "{{s_b}}", "{{s_c}}", "{{s_d}}"] },
+    "solution": { "correct_choice": "{{s_a}}" },
+    "explanation": [
+      { "kind": "what", "title": "Warum", "body": "{{s_hinweis}}" },
+      { "kind": "remember", "body": "**Partizip I** = Infinitiv + **-d**: *lachen → lachend, rennen → rennend*. Immer regelmäßig. **Partizip II** = **ge-** + Stamm + **-t** (schwache Verben: *gekauft*) oder **-en** (starke Verben: *gebacken*). Kein *ge-* bei Verben auf *-ieren* (*studiert*) und mit den Vorsilben *be-, ver-, er-, ent-, zer-* (*verloren, erzählt*). Bei trennbaren Verben steht *ge* in der Mitte: *eingekauft*." },
+      { "kind": "mistake", "body": "*gebackt, geschreibt, gebringt*: Starke Verben ändern oft den Vokal und enden auf *-en* oder sind unregelmäßig: *gebacken, geschrieben, gebracht*." }
+    ],
+    "tags": ["partizip", "grammatik", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Hinweise zur Deutschprüfung (Partizip I und II)",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "s": {
+          "type": "pick",
+          "from": [
+            { "verb": "lachen", "typ": "I", "a": "lachend", "b": "gelacht", "c": "lachte", "d": "lachen", "hinweis": "Partizip I: *lachen* + *-d* → *lachend*. *gelacht* ist das Partizip II." },
+            { "verb": "backen", "typ": "II", "a": "gebacken", "b": "backend", "c": "gebackt", "d": "bäckt", "hinweis": "Starkes Verb: *ge-* + *back* + *-en*. *gebackt* ist ein häufiger Fehler." },
+            { "verb": "schreiben", "typ": "II", "a": "geschrieben", "b": "geschreibt", "c": "schreibend", "d": "schrieb", "hinweis": "Starkes Verb mit Vokalwechsel: *geschrieben*. *schrieb* ist Präteritum." },
+            { "verb": "verlieren", "typ": "II", "a": "verloren", "b": "geverloren", "c": "verlierend", "d": "verlor", "hinweis": "Vorsilbe *ver-* → kein *ge-*: *verloren* (mit Vokalwechsel)." },
+            { "verb": "rennen", "typ": "I", "a": "rennend", "b": "gerannt", "c": "rennt", "d": "rannte", "hinweis": "Partizip I: *rennen* + *-d* → *rennend*. *gerannt* ist das Partizip II." },
+            { "verb": "essen", "typ": "II", "a": "gegessen", "b": "geesst", "c": "essend", "d": "geessen", "hinweis": "Sonderfall: *gegessen* (mit eingeschobenem g, damit es nicht *geessen* heißt)." },
+            { "verb": "studieren", "typ": "II", "a": "studiert", "b": "gestudiert", "c": "studierend", "d": "studierte", "hinweis": "Verben auf *-ieren* bilden das Partizip II ohne *ge-*: *studiert*." },
+            { "verb": "einkaufen", "typ": "II", "a": "eingekauft", "b": "geeinkauft", "c": "einkaufend", "d": "einkaufte", "hinweis": "Trennbares Verb: *ge* rutscht zwischen Vorsilbe und Stamm: *ein-ge-kauft*." },
+            { "verb": "schlafen", "typ": "I", "a": "schlafend", "b": "geschlafen", "c": "schläft", "d": "schlief", "hinweis": "Partizip I: *schlafen* + *-d*. *geschlafen* ist das Partizip II." },
+            { "verb": "bringen", "typ": "II", "a": "gebracht", "b": "gebringt", "c": "bringend", "d": "brachte", "hinweis": "Unregelmäßig: *gebracht* (wie *gedacht*). *brachte* ist Präteritum." },
+            { "verb": "singen", "typ": "I", "a": "singend", "b": "gesungen", "c": "singt", "d": "sang", "hinweis": "Partizip I: *singen* + *-d* → *singend*. *gesungen* ist das Partizip II." },
+            { "verb": "denken", "typ": "II", "a": "gedacht", "b": "gedenkt", "c": "denkend", "d": "dachte", "hinweis": "Unregelmäßig: *gedacht*. *gedenkt* gibt es nicht." }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "DE_G8_PARTIZIP_IM_SATZ_T1",
+    "subject": "DE",
+    "topicId": "DE_GRAM_PARTIZIP",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "Welches Wort in diesem Satz ist ein **Partizip {{s_typ}}**?\n\n„{{s_satz}}“",
+    "payload": { "choices": ["{{s_a}}", "{{s_b}}", "{{s_c}}", "{{s_d}}"] },
+    "solution": { "correct_choice": "{{s_a}}" },
+    "explanation": [
+      { "kind": "what", "title": "Warum", "body": "{{s_hinweis}}" },
+      { "kind": "remember", "body": "Partizipien stehen oft wie **Adjektive vor einem Nomen** und werden gebeugt: *die kichernd**en** Mädchen, das zerknittert**e** Foto*. Partizip I: Endung **-end** + Beugung. Partizip II: **ge-** oder Vorsilbe + **-t/-en** + Beugung. Das gebeugte Verb des Satzes (*zeigten*) ist **kein** Partizip." },
+      { "kind": "mistake", "body": "*zeigten, öffnete, stolperte* sind Präteritum-Formen, keine Partizipien. Ein Partizip II braucht *ge-* oder eine Vorsilbe wie *ver-, zer-, ein-* und steht als Attribut vor einem Nomen." }
+    ],
+    "tags": ["partizip", "grammatik", "drill"],
+    "source": "Adaptiert nach Prüfungshefte MSA Deutsch Berlin 2026, Prüfung A, Aufgabe 256 (Partizip I und II)",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "s": {
+          "type": "pick",
+          "from": [
+            { "satz": "Die kichernden Mädchen zeigten mir das zerknitterte Foto.", "typ": "I", "a": "kichernden", "b": "zerknitterte", "c": "zeigten", "d": "Foto", "hinweis": "*kichern* + *-d* + Beugung *-en*: Die Mädchen kichern gerade (Partizip I)." },
+            { "satz": "Die kichernden Mädchen zeigten mir das zerknitterte Foto.", "typ": "II", "a": "zerknitterte", "b": "kichernden", "c": "zeigten", "d": "Mädchen", "hinweis": "*zerknittert* = Partizip II von *zerknittern* (Vorsilbe *zer-*, deshalb kein *ge-*): Das Foto wurde zerknittert." },
+            { "satz": "Mit klopfendem Herzen öffnete ich den verschlossenen Brief.", "typ": "I", "a": "klopfendem", "b": "verschlossenen", "c": "öffnete", "d": "Herzen", "hinweis": "*klopfen* + *-d* + Beugung: Das Herz klopft gerade (Partizip I)." },
+            { "satz": "Mit klopfendem Herzen öffnete ich den verschlossenen Brief.", "typ": "II", "a": "verschlossenen", "b": "klopfendem", "c": "öffnete", "d": "Brief", "hinweis": "*verschlossen* = Partizip II von *verschließen* (Vorsilbe *ver-*, Vokalwechsel): Der Brief wurde verschlossen." },
+            { "satz": "Der gestresste Lehrer ignorierte die tuschelnden Schüler.", "typ": "I", "a": "tuschelnden", "b": "gestresste", "c": "ignorierte", "d": "Schüler", "hinweis": "*tuscheln* + *-d* + Beugung: Die Schüler tuscheln gerade (Partizip I)." },
+            { "satz": "Der gestresste Lehrer ignorierte die tuschelnden Schüler.", "typ": "II", "a": "gestresste", "b": "tuschelnden", "c": "ignorierte", "d": "Lehrer", "hinweis": "*gestresst* = *ge-* + *stress* + *-t*: Der Lehrer wurde gestresst (Partizip II). *ignorierte* ist Präteritum." },
+            { "satz": "Sie stolperte über die schlafende Katze und die zerbrochene Vase.", "typ": "I", "a": "schlafende", "b": "zerbrochene", "c": "stolperte", "d": "Vase", "hinweis": "*schlafen* + *-d* + Beugung: Die Katze schläft gerade (Partizip I)." },
+            { "satz": "Sie stolperte über die schlafende Katze und die zerbrochene Vase.", "typ": "II", "a": "zerbrochene", "b": "schlafende", "c": "stolperte", "d": "Katze", "hinweis": "*zerbrochen* = Partizip II von *zerbrechen* (*zer-*, Vokalwechsel): Die Vase wurde zerbrochen." },
+            { "satz": "Ein lächelnder Verkäufer reichte mir das eingepackte Geschenk.", "typ": "I", "a": "lächelnder", "b": "eingepackte", "c": "reichte", "d": "Geschenk", "hinweis": "*lächeln* + *-d* + Beugung: Der Verkäufer lächelt gerade (Partizip I)." },
+            { "satz": "Ein lächelnder Verkäufer reichte mir das eingepackte Geschenk.", "typ": "II", "a": "eingepackte", "b": "lächelnder", "c": "reichte", "d": "Verkäufer", "hinweis": "*eingepackt*: trennbares Verb, *ge* in der Mitte → Partizip II. Das Geschenk wurde eingepackt." },
+            { "satz": "Die vergessene Tasche lag neben dem wartenden Bus.", "typ": "I", "a": "wartenden", "b": "vergessene", "c": "lag", "d": "Tasche", "hinweis": "*warten* + *-d* + Beugung: Der Bus wartet gerade (Partizip I)." },
+            { "satz": "Die vergessene Tasche lag neben dem wartenden Bus.", "typ": "II", "a": "vergessene", "b": "wartenden", "c": "lag", "d": "Bus", "hinweis": "*vergessen* = Partizip II von *vergessen* (Vorsilbe *ver-*): Die Tasche wurde vergessen. *lag* ist Präteritum." }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "DE_G8_PARTIZIP_BEDEUTUNG_T1",
+    "subject": "DE",
+    "topicId": "DE_GRAM_PARTIZIP",
+    "difficulty": 4,
+    "qtype": "MCQ",
+    "prompt": "Was bedeutet **{{s_phrase}}**?",
+    "payload": { "choices": ["{{s_a}}", "{{s_b}}", "{{s_c}}"] },
+    "solution": { "correct_choice": "{{s_a}}" },
+    "explanation": [
+      { "kind": "what", "title": "Warum", "body": "{{s_hinweis}}" },
+      { "kind": "remember", "body": "Partizip I = **gleichzeitig und aktiv**: *die lachenden Kinder* = die Kinder, die (gerade) lachen. Partizip II = **abgeschlossen und meist passiv**: *das gebackene Brot* = das Brot, das gebacken wurde. Probe: Verwandle das Partizip in einen **Relativsatz**." }
+    ],
+    "tags": ["partizip", "grammatik", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Hinweise zur Deutschprüfung (Partizip I und II)",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "s": {
+          "type": "pick",
+          "from": [
+            { "phrase": "die lachenden Kinder", "a": "die Kinder, die gerade lachen", "b": "die Kinder, die ausgelacht wurden", "c": "die Kinder, die lachen werden", "hinweis": "Partizip I (*-end*): Die Kinder tun es selbst, und zwar jetzt." },
+            { "phrase": "das gebackene Brot", "a": "das Brot, das gebacken wurde", "b": "das Brot, das gerade backt", "c": "das Brot, das jemand backen will", "hinweis": "Partizip II: Die Handlung ist abgeschlossen, das Brot hat sie erlitten (passiv)." },
+            { "phrase": "der verlorene Schlüssel", "a": "der Schlüssel, der verloren wurde", "b": "der Schlüssel, der gerade etwas verliert", "c": "der Schlüssel, der verloren gehen wird", "hinweis": "Partizip II: abgeschlossen und passiv. Der Schlüssel tut nichts, mit ihm ist etwas passiert." },
+            { "phrase": "die wartenden Fans", "a": "die Fans, die gerade warten", "b": "die Fans, auf die gewartet wurde", "c": "die Fans, die gewartet haben", "hinweis": "Partizip I: aktiv und gleichzeitig. Die Fans warten selbst, jetzt." },
+            { "phrase": "das geparkte Auto", "a": "das Auto, das geparkt wurde", "b": "das Auto, das gerade parkt", "c": "das Auto, das parken wird", "hinweis": "Partizip II: Jemand hat das Auto geparkt, die Handlung ist vorbei." },
+            { "phrase": "der schreiende Fan", "a": "der Fan, der gerade schreit", "b": "der Fan, der angeschrien wurde", "c": "der Fan, der geschrien hat", "hinweis": "Partizip I: Der Fan schreit selbst, in diesem Moment." },
+            { "phrase": "die reparierte Konsole", "a": "die Konsole, die repariert wurde", "b": "die Konsole, die gerade repariert", "c": "die Konsole, die etwas repariert", "hinweis": "Partizip II (ohne *ge-*, weil *-ieren*): abgeschlossen und passiv." },
+            { "phrase": "die tanzende Menge", "a": "die Menge, die gerade tanzt", "b": "die Menge, die getanzt wurde", "c": "die Menge, die tanzen soll", "hinweis": "Partizip I: Die Menge tanzt selbst, jetzt." },
+            { "phrase": "das gepostete Video", "a": "das Video, das gepostet wurde", "b": "das Video, das gerade postet", "c": "das Video, das jemand posten will", "hinweis": "Partizip II: Das Video wurde gepostet, die Handlung ist vorbei." },
+            { "phrase": "der blinkende Cursor", "a": "der Cursor, der gerade blinkt", "b": "der Cursor, der geblinkt wurde", "c": "der Cursor, der blinken soll", "hinweis": "Partizip I: Der Cursor blinkt selbst, in diesem Moment." }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "DE_G8_PARTIZIP_MERKMAL",
+    "subject": "DE",
+    "topicId": "DE_GRAM_PARTIZIP",
+    "difficulty": 1,
+    "qtype": "MCQ",
+    "prompt": "Woran erkennst du ein **Partizip I**?",
+    "payload": { "choices": ["an der Endung *-end*: lachend, schlafend", "an der Vorsilbe *ge-*: gelacht, geschlafen", "daran, dass es am Satzende steht", "an einem Artikel davor"] },
+    "solution": { "correct_choice": "an der Endung *-end*: lachend, schlafend" },
+    "explanation": [
+      { "kind": "what", "title": "Warum", "body": "Das Partizip I wird aus dem Infinitiv + **-d** gebildet: *lachen* → *lachend*. Die Endung *-end* ist das sichere Zeichen. Die Vorsilbe *ge-* gehört zum **Partizip II** (*gelacht*)." },
+      { "kind": "remember", "body": "**Partizip I** = Verb + **-end** (*lachend, schlafend*): passiert gerade, aktiv. **Partizip II** = **ge-** … -t/-en (*gebacken, gelesen*): abgeschlossen, oft passiv. Beide können wie Adjektive vor einem Nomen stehen." }
+    ],
+    "tags": ["partizip", "grammatik", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Hinweise zur Deutschprüfung (Partizip I und II)"
+  },
+  {
+    "id": "DE_G8_PARTIZIP_MATCH",
+    "subject": "DE",
+    "topicId": "DE_GRAM_PARTIZIP",
+    "difficulty": 2,
+    "qtype": "MATCH",
+    "prompt": "Ordne jeder Form die richtige Bezeichnung zu.",
+    "payload": { "left": ["singend", "gesungen", "kaufend", "gekauft"], "right": ["Partizip I von singen", "Partizip II von singen", "Partizip I von kaufen", "Partizip II von kaufen"] },
+    "solution": { "pairs": [["singend", "Partizip I von singen"], ["gesungen", "Partizip II von singen"], ["kaufend", "Partizip I von kaufen"], ["gekauft", "Partizip II von kaufen"]] },
+    "explanation": [
+      { "kind": "terms", "body": "- *singend*, *kaufend*: Endung **-end** → Partizip I (passiert gerade)\n- *gesungen*: **ge-** … **-en** → Partizip II eines starken Verbs\n- *gekauft*: **ge-** … **-t** → Partizip II eines schwachen Verbs" },
+      { "kind": "remember", "body": "Partizip I ist immer regelmäßig (Infinitiv + *-d*). Beim Partizip II musst du wissen, ob das Verb stark (*-en*, oft Vokalwechsel) oder schwach (*-t*) ist." }
+    ],
+    "tags": ["partizip", "grammatik", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Hinweise zur Deutschprüfung (Partizip I und II)"
+  },
+  {
+    "id": "DE_G8_PARTIZIP_EXAM_STYLE",
+    "subject": "DE",
+    "topicId": "DE_GRAM_PARTIZIP",
+    "difficulty": 4,
+    "qtype": "MCQ",
+    "prompt": "Notiere aus dem Satz je ein **Partizip I** und ein **Partizip II**.\n\n„Die schnaufenden Läufer erreichten das hell erleuchtete Stadion.“",
+    "payload": { "choices": ["Partizip I: schnaufenden, Partizip II: erleuchtete", "Partizip I: erreichten, Partizip II: erleuchtete", "Partizip I: erleuchtete, Partizip II: schnaufenden", "Partizip I: schnaufenden, Partizip II: erreichten"] },
+    "solution": { "correct_choice": "Partizip I: schnaufenden, Partizip II: erleuchtete" },
+    "explanation": [
+      { "kind": "steps", "title": "So findest du beide", "body": "- *schnaufenden*: *schnaufen* + *-d* + Beugung → **Partizip I** (die Läufer schnaufen gerade).\n- *erleuchtete*: *er-* + *leucht* + *-et* + Beugung → **Partizip II** (das Stadion wurde erleuchtet). Vorsilbe *er-*, deshalb kein *ge-*.\n- *erreichten* sieht ähnlich aus, ist aber das **Prädikat** im Präteritum (*sie erreichten*). Ein Partizip steht als Attribut vor einem Nomen oder zusammen mit *haben/sein/werden*." },
+      { "kind": "remember", "body": "In der Prüfung heißt es: *Notieren Sie je ein Partizip I und ein Partizip II.* Suche zuerst die Wörter auf **-end** (Partizip I), dann die Wörter mit **ge-** oder einer Vorsilbe und **-t/-en**, die vor einem Nomen stehen (Partizip II)." },
+      { "kind": "mistake", "body": "Das Verb im Präteritum (*erreichten*) mit dem Partizip verwechseln. Test: Kann man *ge-* oder eine Vorsilbe abtrennen und bleibt ein Verbstamm mit *-t/-en*? *er-leucht-et* ja, *erreich-ten* nein (das *-ten* ist die Präteritum-Endung)." }
+    ],
+    "tags": ["partizip", "grammatik", "drill"],
+    "source": "Adaptiert nach Prüfungshefte MSA Deutsch Berlin 2026, Prüfung A, Aufgabe 256 (Partizip I und II)"
+  },
+  {
+    "id": "DE_G8_PARTIZIP_CLOZE_SATZ",
+    "subject": "DE",
+    "topicId": "DE_GRAM_PARTIZIP",
+    "difficulty": 3,
+    "qtype": "CLOZE",
+    "prompt": "Setze die passenden Partizipien ein.",
+    "payload": { "text_with_blanks": "Die ___ (lachen) Kinder rannten über den frisch ___ (mähen) Rasen.", "blanks": [{ "id": 1, "choices": ["lachenden", "gelachten"] }, { "id": 2, "choices": ["gemähten", "mähenden"] }] },
+    "solution": { "answers": { "1": "lachenden", "2": "gemähten" } },
+    "explanation": [
+      { "kind": "what", "title": "Warum", "body": "- *Die lachenden Kinder*: Die Kinder lachen **selbst und gerade** → Partizip I (*-end*). *gelachten* ginge nicht: Man kann Kinder nicht lachen.\n- *den frisch gemähten Rasen*: Der Rasen wurde gemäht, die Handlung ist **abgeschlossen** und der Rasen hat sie **erlitten** → Partizip II. *mähenden* würde bedeuten, der Rasen mäht selbst." },
+      { "kind": "remember", "body": "Frag dich: Tut das Nomen es **selbst, jetzt**? → Partizip I. Ist es **mit ihm gemacht** worden? → Partizip II." }
+    ],
+    "tags": ["partizip", "grammatik", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Hinweise zur Deutschprüfung (Partizip I und II)"
+  },
+  {
+    "id": "DE_G8_PARTIZIP_FEHLER",
+    "subject": "DE",
+    "topicId": "DE_GRAM_PARTIZIP",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "In welchem Satz ist das Partizip **falsch** gebildet?",
+    "payload": { "choices": ["Sie hat das Buch gelest.", "Der weinende Junge suchte seine Mutter.", "Das Fahrrad ist endlich repariert.", "Wir haben gestern gegrillt."] },
+    "solution": { "correct_choice": "Sie hat das Buch gelest." },
+    "explanation": [
+      { "kind": "what", "title": "Warum", "body": "*lesen* ist ein starkes Verb: Partizip II **gelesen** (mit *-en*). *gelest* wäre die schwache Bildung, die es bei *lesen* nicht gibt.\n\n*weinende* (Partizip I), *repariert* (Partizip II ohne *ge-*, weil *-ieren*) und *gegrillt* (schwach, *ge-…-t*) sind richtig." },
+      { "kind": "remember", "body": "Bei starken Verben (mit Vokalwechsel im Präteritum: *las, schrieb, sang*) endet das Partizip II auf **-en**: *gelesen, geschrieben, gesungen*. Bei schwachen Verben (*kaufte, grillte*) auf **-t**: *gekauft, gegrillt*." },
+      { "kind": "mistake", "body": "Typische Fehlformen in Aufsätzen: *gelest, gebackt, gefangt, geschreibt*. Richtig: *gelesen, gebacken, gefangen, geschrieben*. Das zählt in der Prüfung als **Grammatikfehler**." }
+    ],
+    "tags": ["partizip", "grammatik", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 4 (Überarbeiten eines Textes)"
+  },
+  {
+    "id": "DE_G8_REGISTER_WORT_T1",
+    "subject": "DE",
+    "topicId": "DE_STIL_REGISTER",
+    "difficulty": 1,
+    "qtype": "MCQ",
+    "prompt": "Welches Wort in diesem Satz ist **umgangssprachlich**?\n\n„{{s_satz}}“",
+    "payload": { "choices": ["{{s_a}}", "{{s_b}}", "{{s_c}}", "{{s_d}}"] },
+    "solution": { "correct_choice": "{{s_a}}" },
+    "explanation": [
+      { "kind": "what", "title": "Warum", "body": "{{s_hinweis}}" },
+      { "kind": "remember", "body": "Umgangssprache erkennst du an **Alltags- und Slang-Wörtern** (*voll, krass, Typ, Bock, kriegen, quatschen*), an **verkürzten Formen** (*hab, machste, ’n*) und an **Füllwörtern** (*halt, irgendwie, ähm*). In der Prüfung ersetzt du sie durch das **standardsprachliche** Wort: *kriegen* → *bekommen*, *voll* → *sehr*." }
+    ],
+    "tags": ["register", "umgangssprache", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 2 (Standard- und Umgangssprache)",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "s": {
+          "type": "pick",
+          "from": [
+            { "satz": "Der Film war voll langweilig.", "a": "voll", "b": "Film", "c": "langweilig", "d": "war", "hinweis": "*voll* als Verstärkung ist Umgangssprache. Standard: *sehr langweilig*." },
+            { "satz": "Mein Bruder hat ein neues Handy gekriegt.", "a": "gekriegt", "b": "Bruder", "c": "neues", "d": "Handy", "hinweis": "*kriegen* ist umgangssprachlich für *bekommen*: *hat … bekommen*." },
+            { "satz": "Wir haben die Prüfung locker geschafft.", "a": "locker", "b": "Prüfung", "c": "geschafft", "d": "haben", "hinweis": "*locker* im Sinn von *mühelos* ist Umgangssprache: *ohne Probleme bestanden*." },
+            { "satz": "Der Typ an der Kasse war unfreundlich.", "a": "Typ", "b": "Kasse", "c": "unfreundlich", "d": "war", "hinweis": "*Typ* ist Umgangssprache für *Mann* oder *Mitarbeiter*." },
+            { "satz": "Ich habe keinen Bock auf Sport.", "a": "Bock", "b": "Sport", "c": "keinen", "d": "habe", "hinweis": "*Bock haben* = *Lust haben*. Standard: *Ich habe keine Lust auf Sport.*" },
+            { "satz": "Die Klausur war mega schwer.", "a": "mega", "b": "Klausur", "c": "schwer", "d": "war", "hinweis": "*mega* ist Slang für *sehr*. Genau dieses Wort wurde in einer MSA-Prüfung als Ausdrucksfehler markiert." },
+            { "satz": "Meine Schwester quatscht die ganze Zeit.", "a": "quatscht", "b": "Schwester", "c": "ganze", "d": "Zeit", "hinweis": "*quatschen* → *reden* oder *sich unterhalten*." },
+            { "satz": "Das neue Album ist krass gut.", "a": "krass", "b": "Album", "c": "neue", "d": "gut", "hinweis": "*krass* ist Jugendsprache: *sehr gut* oder *beeindruckend*." },
+            { "satz": "Sie will ihr altes Fahrrad verticken.", "a": "verticken", "b": "altes", "c": "Fahrrad", "d": "will", "hinweis": "*verticken* → *verkaufen*." },
+            { "satz": "Die Party war ziemlich cool.", "a": "cool", "b": "Party", "c": "ziemlich", "d": "war", "hinweis": "*cool* ist ein Alltagswort: *schön, gelungen, toll*. *ziemlich* ist Standardsprache." },
+            { "satz": "Der Lehrer hat uns eine Stunde lang zugetextet.", "a": "zugetextet", "b": "Lehrer", "c": "Stunde", "d": "lang", "hinweis": "*zutexten* → *ununterbrochen auf jemanden einreden*." },
+            { "satz": "Ich muss noch Mathe pauken.", "a": "pauken", "b": "Mathe", "c": "muss", "d": "noch", "hinweis": "*pauken* → *lernen*, *üben*." }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "DE_G8_REGISTER_SITUATION_T1",
+    "subject": "DE",
+    "topicId": "DE_STIL_REGISTER",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Situation: {{s_situation}}\n\nWelche Formulierung passt zur Situation?",
+    "payload": { "choices": ["{{s_a}}", "{{s_b}}", "{{s_c}}"] },
+    "solution": { "correct_choice": "{{s_a}}" },
+    "explanation": [
+      { "kind": "what", "title": "Warum", "body": "{{s_hinweis}}" },
+      { "kind": "remember", "body": "**Standardsprache** für Schule, Prüfung, Bewerbung, Behörden und fremde Erwachsene: vollständige Sätze, höflich, sachlich, keine Füllwörter. **Umgangssprache** ist nicht falsch, sie gehört nur zu Freunden, Familie und Chats. Zu **förmlich** unter Freunden wirkt genauso unpassend wie zu locker in der Bewerbung." }
+    ],
+    "tags": ["register", "umgangssprache", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 2 (Standard- und Umgangssprache)",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "s": {
+          "type": "pick",
+          "from": [
+            { "situation": "Du schreibst eine Bewerbung für ein Praktikum.", "a": "Ich würde mich über eine Einladung zu einem Gespräch freuen.", "b": "Wär cool, wenn ihr euch mal meldet.", "c": "Meldet euch halt, wenn ihr wollt.", "hinweis": "Bewerbung = formell → Standardsprache, höfliche vollständige Sätze, Konjunktiv II *würde*." },
+            { "situation": "Du schreibst deinem besten Freund eine Nachricht.", "a": "Hast du Bock, nachher zu zocken?", "b": "Hättest du Interesse, am Nachmittag ein Computerspiel zu spielen?", "c": "Sehr geehrter Ben, ich möchte Sie zum Spielen einladen.", "hinweis": "Chat mit Freunden = privat → Umgangssprache ist hier ganz normal. Die förmlichen Sätze wirken unter Freunden komisch." },
+            { "situation": "Du sprichst die Schulleiterin auf dem Flur an.", "a": "Entschuldigen Sie, hätten Sie kurz Zeit für eine Frage?", "b": "Hey, haste mal ’ne Minute?", "c": "Ey, ich hab da mal ’ne Frage!", "hinweis": "Schulleitung = fremde Erwachsene → höfliche Standardsprache mit *Sie* und Konjunktiv II." },
+            { "situation": "Du schreibst den Schluss deiner Erörterung.", "a": "Zusammenfassend lässt sich sagen, dass ein Handyverbot wenig sinnvoll ist.", "b": "Also, Handyverbot ist echt Quatsch.", "c": "Handyverbot? Nee, lass mal.", "hinweis": "Erörterung = Prüfungstext → Standardsprache, sachlich, vollständige Sätze, keine Füllwörter." },
+            { "situation": "Du erzählst deiner Oma vom Wochenende.", "a": "Wir waren am Samstag im Kino, der Film war richtig gut.", "b": "Kino war krass, Alter.", "c": "Es fand ein Kinobesuch statt, welcher als gelungen zu bewerten ist.", "hinweis": "Familie = locker, aber ohne Slang, den Oma nicht versteht. Der Amtsdeutsch-Satz ist für ein Gespräch viel zu förmlich." },
+            { "situation": "Du schreibst eine E-Mail an deinen Lehrer, weil du krank bist.", "a": "Sehr geehrter Herr Kaya, ich bin krank und kann heute leider nicht zum Unterricht kommen.", "b": "Hi, bin krank, komm nicht.", "c": "Yo, bin raus heute.", "hinweis": "E-Mail an eine Lehrkraft = formell → Anrede, vollständiger Satz, *leider*." },
+            { "situation": "Du kommentierst das Video eines Freundes.", "a": "Haha, das Video ist mega, wie hast du das gedreht?", "b": "Ich möchte Ihnen zu diesem gelungenen Video gratulieren.", "c": "Sehr geehrter Freund, gute Arbeit.", "hinweis": "Kommentar unter Freunden = privat → Umgangssprache passt. *Sie* und *Sehr geehrter* sind hier unpassend." },
+            { "situation": "Du hältst ein Referat vor der Klasse.", "a": "Im Folgenden stelle ich euch die wichtigsten Ursachen des Klimawandels vor.", "b": "Okay, also, Klimawandel und so, ist halt wichtig.", "c": "Ähm, ja, Klimawandel, keine Ahnung, hört mal zu.", "hinweis": "Referat = Schule → Standardsprache, klare Gliederung, keine Füllwörter (*also, halt, ähm, und so*)." },
+            { "situation": "Du bestellst in einer Bäckerei.", "a": "Ich hätte gern zwei Brötchen, bitte.", "b": "Ey, gib mal zwei Brötchen.", "c": "Zwei Brötchen. Sofort.", "hinweis": "Fremde Person, öffentlicher Ort → höflich und standardsprachlich: *Ich hätte gern …, bitte.*" },
+            { "situation": "Du schreibst in den Klassenchat, dass du später kommst.", "a": "Komme zehn Minuten später, fangt schon mal an.", "b": "Hiermit teile ich Ihnen mit, dass ich mich um zehn Minuten verspäten werde.", "c": "Sehr geehrte Mitschülerinnen und Mitschüler, es ist mit einer Verspätung zu rechnen.", "hinweis": "Klassenchat = privat und schnell → knappe Umgangssprache ist in Ordnung. Amtsdeutsch wirkt hier lächerlich." }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "DE_G8_REGISTER_MERKMAL_T1",
+    "subject": "DE",
+    "topicId": "DE_STIL_REGISTER",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "prompt": "Welches Merkmal der Umgangssprache zeigt der Satz?\n\n„{{s_satz}}“",
+    "payload": { "choices": ["Füllwort ohne Bedeutung", "Slang- oder Alltagswort", "verkürzte Verbform oder verschmolzene Wörter", "unvollständiger Satz"] },
+    "solution": { "correct_choice": "{{s_loesung}}" },
+    "explanation": [
+      { "kind": "what", "title": "Warum", "body": "{{s_hinweis}}" },
+      { "kind": "remember", "body": "Vier typische Merkmale der Umgangssprache: **Füllwörter** (*halt, also, ähm, irgendwie, quasi*), **Slang und Alltagswörter** (*voll, checken, Typ*), **verkürzte oder verschmolzene Formen** (*hab, kommste, ’n*) und **unvollständige Sätze** (*Keine Ahnung.*). In der Standardsprache: streichen, ersetzen, ausschreiben, vervollständigen." }
+    ],
+    "tags": ["register", "umgangssprache", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 2 (Merkmale von Standard- und Umgangssprache)",
+    "variants": {
+      "enabled": true,
+      "variables": {
+        "s": {
+          "type": "pick",
+          "from": [
+            { "satz": "Das ist halt so.", "loesung": "Füllwort ohne Bedeutung", "hinweis": "*halt* hat keine eigene Bedeutung. Standard: *Das ist so.*" },
+            { "satz": "Machste mir ’n Tee?", "loesung": "verkürzte Verbform oder verschmolzene Wörter", "hinweis": "*machst du* → *machste*, *einen* → *’n*. Standard: *Machst du mir einen Tee?*" },
+            { "satz": "Der Typ ist voll nett.", "loesung": "Slang- oder Alltagswort", "hinweis": "*Typ* und *voll* sind Alltagswörter. Standard: *Der Mann ist sehr nett.*" },
+            { "satz": "Keine Ahnung, ehrlich.", "loesung": "unvollständiger Satz", "hinweis": "Subjekt und Verb fehlen. Standard: *Ich weiß es wirklich nicht.*" },
+            { "satz": "Ich habe das nicht gecheckt.", "loesung": "Slang- oder Alltagswort", "hinweis": "*checken* ist Slang für *verstehen*. Standard: *Ich habe das nicht verstanden.*" },
+            { "satz": "Also, ähm, ich meine, das geht schon.", "loesung": "Füllwort ohne Bedeutung", "hinweis": "*also, ähm, ich meine* füllen nur die Pause. Standard: *Das ist in Ordnung.*" },
+            { "satz": "Kommste morgen?", "loesung": "verkürzte Verbform oder verschmolzene Wörter", "hinweis": "*kommst du* → *kommste*. Standard: *Kommst du morgen?*" },
+            { "satz": "Bin gleich da.", "loesung": "unvollständiger Satz", "hinweis": "Das Subjekt *ich* fehlt. Standard: *Ich bin gleich da.*" },
+            { "satz": "Der Lehrer ist ein Ehrenmann.", "loesung": "Slang- oder Alltagswort", "hinweis": "*Ehrenmann* ist Jugendsprache für *ein sehr netter, fairer Mensch*." },
+            { "satz": "Ich habe das quasi vergessen.", "loesung": "Füllwort ohne Bedeutung", "hinweis": "*quasi* ist hier ein Füllwort ohne Inhalt. Standard: *Ich habe das vergessen.*" },
+            { "satz": "Willste mitkommen?", "loesung": "verkürzte Verbform oder verschmolzene Wörter", "hinweis": "*willst du* → *willste*. Standard: *Willst du mitkommen?*" },
+            { "satz": "Später vielleicht.", "loesung": "unvollständiger Satz", "hinweis": "Kein Verb, kein Subjekt. Standard: *Vielleicht komme ich später.*" }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "DE_G8_REGISTER_WO_OK",
+    "subject": "DE",
+    "topicId": "DE_STIL_REGISTER",
+    "difficulty": 1,
+    "qtype": "MCQ",
+    "prompt": "Wo ist **Umgangssprache** in Ordnung?",
+    "payload": { "choices": ["im Chat mit Freunden", "in der Erörterung in der MSA-Prüfung", "in einer Bewerbung", "in einer E-Mail an die Schulleitung"] },
+    "solution": { "correct_choice": "im Chat mit Freunden" },
+    "explanation": [
+      { "kind": "what", "title": "Warum", "body": "Umgangssprache gehört ins **Private**: Freunde, Familie, Chats. Prüfung, Bewerbung und E-Mails an Erwachsene in der Schule sind **formelle** Situationen, dort wird Standardsprache erwartet. In der Prüfung zählt Umgangssprache sogar als **Ausdrucksfehler** (A)." },
+      { "kind": "remember", "body": "**Standardsprache** (Hochdeutsch): formell, vollständige Sätze, sachlich, keine Füllwörter. Für Schule, Bewerbung, Prüfung. **Umgangssprache**: Alltagswörter, Slang, Füllwörter, verkürzte Formen. Für Freunde und Chats." }
+    ],
+    "tags": ["register", "umgangssprache", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 2 (Standard- und Umgangssprache)"
+  },
+  {
+    "id": "DE_G8_REGISTER_MATCH",
+    "subject": "DE",
+    "topicId": "DE_STIL_REGISTER",
+    "difficulty": 3,
+    "qtype": "MATCH",
+    "prompt": "Ordne jedem umgangssprachlichen Ausdruck die standardsprachliche Entsprechung zu.",
+    "payload": { "left": ["kriegen", "quatschen", "Bock haben", "kapieren", "abhauen"], "right": ["bekommen", "sich unterhalten", "Lust haben", "verstehen", "weggehen"] },
+    "solution": { "pairs": [["kriegen", "bekommen"], ["quatschen", "sich unterhalten"], ["Bock haben", "Lust haben"], ["kapieren", "verstehen"], ["abhauen", "weggehen"]] },
+    "explanation": [
+      { "kind": "terms", "body": "- *kriegen* → **bekommen**\n- *quatschen* → **sich unterhalten**, reden\n- *Bock haben* → **Lust haben**\n- *kapieren* → **verstehen**\n- *abhauen* → **weggehen**, verschwinden" },
+      { "kind": "remember", "body": "Für die Prüfungsaufgabe *Notieren Sie den Satz in Standardsprache* brauchst du solche Paare. Weitere: *checken* → *verstehen*, *zocken* → *spielen*, *voll / mega / krass* → *sehr*, *Typ* → *Mann*, *Pulli* → *Pullover*, *hab* → *habe*." }
+    ],
+    "tags": ["register", "umgangssprache", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 2 (Standard- und Umgangssprache)"
+  },
+  {
+    "id": "DE_G8_REGISTER_SATZ",
+    "subject": "DE",
+    "topicId": "DE_STIL_REGISTER",
+    "difficulty": 4,
+    "qtype": "MCQ",
+    "prompt": "Notiere den Satz in **Standardsprache**.\n\n„Guck mal, der hat den ganzen Tisch vollgekleckert und checkt es nicht mal.“",
+    "payload": { "choices": ["Sieh mal, er hat den ganzen Tisch bekleckert und bemerkt es nicht einmal.", "Guck mal, er hat den ganzen Tisch vollgekleckert und merkt es nicht.", "Sieh mal, der hat den ganzen Tisch vollgekleckert und checkt es nicht.", "Schau, der Tisch ist total dreckig, und er rafft es nicht."] },
+    "solution": { "correct_choice": "Sieh mal, er hat den ganzen Tisch bekleckert und bemerkt es nicht einmal." },
+    "explanation": [
+      { "kind": "steps", "title": "Wort für Wort prüfen", "body": "- *Guck mal* → *Sieh mal* (*gucken* ist umgangssprachlich)\n- *der* als Pronomen für eine Person → *er*\n- *vollgekleckert* → *bekleckert*\n- *checkt* → *bemerkt*\n- *nicht mal* → *nicht einmal*\n\nDie anderen Varianten lassen mindestens ein umgangssprachliches Wort stehen (*Guck, der, vollgekleckert, checkt, rafft, total*)." },
+      { "kind": "remember", "body": "Beim Umformen bleibt der **Inhalt** gleich, nur die Wörter werden ausgetauscht: Slang ersetzen, Abkürzungen ausschreiben, Füllwörter streichen. Prüfe am Ende **jedes** Wort noch einmal, in der Prüfung gibt es den Punkt nur für den ganz sauberen Satz." }
+    ],
+    "tags": ["register", "umgangssprache", "drill"],
+    "source": "Adaptiert nach Prüfungshefte MSA Deutsch Berlin 2026, Prüfung A, Aufgabe 251 (Textpassage in Standardsprache)"
+  },
+  {
+    "id": "DE_G8_REGISTER_INHALT",
+    "subject": "DE",
+    "topicId": "DE_STIL_REGISTER",
+    "difficulty": 5,
+    "qtype": "MCQ",
+    "prompt": "„Ich hab null Bock auf die Klassenfahrt.“\n\nWelche Umformung in Standardsprache ist **falsch**, weil sie den Inhalt verändert?",
+    "payload": { "choices": ["Ich freue mich sehr auf die Klassenfahrt.", "Ich habe keine Lust auf die Klassenfahrt.", "Ich habe überhaupt keine Lust auf die Klassenfahrt.", "Die Klassenfahrt reizt mich überhaupt nicht."] },
+    "solution": { "correct_choice": "Ich freue mich sehr auf die Klassenfahrt." },
+    "explanation": [
+      { "kind": "what", "title": "Warum", "body": "*null Bock haben* heißt *überhaupt keine Lust haben*. *Ich freue mich sehr* sagt das **Gegenteil**. Der Satz ist zwar perfekte Standardsprache, aber die Aufgabe verlangt nur einen Wechsel der **Sprachebene**, nicht der Aussage.\n\nDie drei anderen Sätze ersetzen *hab* → *habe*, *null Bock* → *(überhaupt) keine Lust* oder *reizt mich nicht* und behalten die Bedeutung." },
+      { "kind": "mistake", "body": "Beim Umformen in Standardsprache den **Inhalt** verändern. Nur die Sprache ändert sich. Auch die Stärke muss stimmen: *null Bock* ist stärker als *wenig Lust*." },
+      { "kind": "remember", "body": "Kontrolle nach dem Umformen: Würde die Person, die den Satz gesagt hat, deiner Version zustimmen? Wenn nicht, hast du den Inhalt verändert." }
+    ],
+    "tags": ["register", "umgangssprache", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 2 (Standard- und Umgangssprache)"
+  },
+  {
+    "id": "DE_G8_REGISTER_DEFINITION",
+    "subject": "DE",
+    "topicId": "DE_STIL_REGISTER",
+    "difficulty": 2,
+    "qtype": "MCQ",
+    "prompt": "Was ist **Standardsprache**?",
+    "payload": { "choices": ["die überregionale, korrekte Form der Sprache, die in Schule, Beruf und Prüfung erwartet wird", "die Sprache, die man nur in Berlin spricht", "die Sprache, die man in Chats und mit Freunden benutzt", "eine vereinfachte Sprache ohne Grammatikregeln"] },
+    "solution": { "correct_choice": "die überregionale, korrekte Form der Sprache, die in Schule, Beruf und Prüfung erwartet wird" },
+    "explanation": [
+      { "kind": "what", "title": "Warum", "body": "Standardsprache (auch *Hochdeutsch*) ist die Form, die **überall** in Deutschland verstanden wird und in Wörterbüchern steht. Sie gilt in formellen Situationen: Schule, Universität, Arbeit, Behörden. Dialekte und Umgangssprache sind **Varianten** davon, die je nach Region, Alter und Gruppe unterschiedlich sind." },
+      { "kind": "remember", "body": "Standardsprache = **formell** + **korrekt** + **überall verständlich**. Umgangssprache = **privat** + **locker** + **je nach Region und Gruppe verschieden**. Dein Aufsatz: Standardsprache. Deine Nachrichten: Umgangssprache." }
+    ],
+    "tags": ["register", "umgangssprache", "drill"],
+    "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 2 (Gut zu wissen: Standardsprache)"
+  }
+]
