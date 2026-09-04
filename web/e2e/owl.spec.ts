@@ -3,8 +3,7 @@
  * owl badges inside a lesson. Targets the running dev server like preview.spec.ts.
  */
 import { expect, test, type Page } from "@playwright/test";
-
-const DEV = "http://127.0.0.1:5173";
+import { createProfile, DEV } from "./helpers";
 const shot = async (page: Page, name: string) => {
   await page.waitForTimeout(700); // chalk-write animation
   await page.screenshot({ path: `e2e/screenshots/${test.info().project.name}-owl-${name}.png`, fullPage: true });
@@ -12,10 +11,7 @@ const shot = async (page: Page, name: string) => {
 
 test("Ferdinand chalkboard flow", async ({ page }) => {
   test.setTimeout(180_000);
-  await page.goto(`${DEV}/#/`);
-  await page.getByPlaceholder("z. B. Lea").fill("Eule");
-  await page.getByRole("button", { name: "Los geht's" }).click();
-  await page.getByText("Deine Themen").waitFor();
+  await createProfile(page, "Eule");
   await expect(page.getByRole("link", { name: /Frag Ferdinand/ })).toBeVisible();
 
   await page.goto(`${DEV}/#/eule`);

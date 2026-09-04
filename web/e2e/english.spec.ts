@@ -1,7 +1,6 @@
 /** Englisch: tenses lesson with owl card, a drill session, and the verb-forms primer. */
 import { expect, test, type Page } from "@playwright/test";
-
-const DEV = "http://127.0.0.1:5173";
+import { createProfile, DEV } from "./helpers";
 const shot = async (page: Page, name: string) => {
   await page.waitForTimeout(600);
   await page.screenshot({ path: `e2e/screenshots/${test.info().project.name}-en-${name}.png`, fullPage: true });
@@ -9,10 +8,7 @@ const shot = async (page: Page, name: string) => {
 
 test("English lesson, drill and primer", async ({ page }) => {
   test.setTimeout(120_000);
-  await page.goto(`${DEV}/#/`);
-  await page.getByPlaceholder("z. B. Lea").fill("English");
-  await page.getByRole("button", { name: "Los geht's" }).click();
-  await page.getByText("Deine Themen").waitFor();
+  await createProfile(page, "English");
 
   await page.goto(`${DEV}/#/topic/EN_USE_TENSES`);
   await expect(page.getByRole("heading", { name: /Tenses/ }).first()).toBeVisible();

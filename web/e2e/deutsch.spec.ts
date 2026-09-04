@@ -1,7 +1,6 @@
 /** Deutsch: lesson with owl card, a Komma drill (CLOZE with Komma/kein Komma), feedback, and a DE primer. */
 import { expect, test, type Page } from "@playwright/test";
-
-const DEV = "http://127.0.0.1:5173";
+import { createProfile, DEV, dismissTour } from "./helpers";
 const shot = async (page: Page, name: string) => {
   await page.waitForTimeout(600);
   await page.screenshot({ path: `e2e/screenshots/${test.info().project.name}-de-${name}.png`, fullPage: true });
@@ -9,11 +8,9 @@ const shot = async (page: Page, name: string) => {
 
 test("Deutsch lesson, drill and primer", async ({ page }) => {
   test.setTimeout(120_000);
-  await page.goto(`${DEV}/#/`);
-  await page.getByPlaceholder("z. B. Lea").fill("Deutsch");
-  await page.getByRole("button", { name: "Los geht's" }).click();
-  await page.getByText("Deine Themen").waitFor();
+  await createProfile(page, "Deutsch");
   await page.getByRole("button", { name: /Deutsch/ }).click();
+  await dismissTour(page);
   await shot(page, "1-dashboard");
 
   await page.goto(`${DEV}/#/topic/DE_PUNCT_COMMA_MAIN_SUB`);

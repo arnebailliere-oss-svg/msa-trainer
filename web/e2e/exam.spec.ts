@@ -3,15 +3,11 @@
  * per-task summary on the result page. Targets the running dev server like preview.spec.ts.
  */
 import { expect, test } from "@playwright/test";
-
-const DEV = "http://127.0.0.1:5173";
+import { createProfile, DEV } from "./helpers";
 
 test("exam mode: Basisaufgaben first, no calculator, per-task summary", async ({ page }) => {
   test.setTimeout(180_000);
-  await page.goto(`${DEV}/#/`);
-  await page.getByPlaceholder("z. B. Lea").fill("Exam");
-  await page.getByRole("button", { name: "Los geht's" }).click();
-  await page.getByText("Deine Themen").waitFor();
+  await createProfile(page, "Exam");
 
   await page.goto(`${DEV}/#/session/MSA/MATH`);
   await expect(page.getByText(/Prüfungs-Modus · Mathe/)).toBeVisible();
