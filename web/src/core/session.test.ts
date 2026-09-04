@@ -61,8 +61,8 @@ describe("SessionController", () => {
     const r0 = session.submit("definitely wrong")!;
     expect(r0.isCorrect).toBe(false);
     expect(r0.inRepairMode).toBe(true);
-    expect(r0.masteryDelta).toBeLessThanOrEqual(0); // fresh topic clamps at 0
-    expect(r0.newMasteryScore).toBe(0);
+    expect(r0.level).toBe(1); // Angefangen: attempted, not yet Geübt
+    expect(r0.levelUp).toBe(false); // a wrong answer never announces a level-up
     expect(r0.ampel).toBe("RED");
     expect(session.repairQueue?.topicId).toBe(q0.topicId);
 

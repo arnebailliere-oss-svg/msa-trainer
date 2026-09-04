@@ -44,6 +44,7 @@ export function ResultView() {
           {mode === "MSA" && items.length > 0 && ` · Ø ${avgSec} s pro Aufgabe`}
         </p>
         {mode === "MSA" && <p className="mt-2 text-sm text-ink-3">Prüfungs-Check mit Originalaufgaben aus den letzten MSA-Prüfungen. Schau dir unten jede Aufgabe an, die nicht geklappt hat.</p>}
+        {mode === "PLAN" && <p className="mt-2 text-sm text-ink-3">Tagesplan erledigt ✓ Deine Prüfungsreife siehst du auf der Startseite. Morgen wartet der nächste Plan.</p>}
       </div>
 
       {(stats.strengthenedTopics.length > 0 || stats.weakTopics.length > 0) && (
@@ -100,7 +101,7 @@ export function ResultView() {
 
       <div className="mt-8 grid gap-2 sm:grid-cols-2">
         <Button size="lg" onClick={again}>
-          Nochmal 🔁
+          {mode === "PLAN" ? "Extra-Runde 🔁" : "Nochmal 🔁"}
         </Button>
         <Button size="lg" variant="ghost" onClick={() => nav("/home")}>
           Zur Übersicht

@@ -18,42 +18,48 @@
     "subject": "MATH",
     "code": "MATH_NUM_FRAC_BASIC",
     "name": "Brüche Grundlagen (kürzen, erweitern, vergleichen)",
-    "parentId": "MATH_NUM"
+    "parentId": "MATH_NUM",
+    "priority": 2
   },
   {
     "id": "MATH_NUM_FRAC_OPS",
     "subject": "MATH",
     "code": "MATH_NUM_FRAC_OPS",
     "name": "Brüche Rechenarten",
-    "parentId": "MATH_NUM"
+    "parentId": "MATH_NUM",
+    "priority": 2
   },
   {
     "id": "MATH_NUM_DEC_CONV",
     "subject": "MATH",
     "code": "MATH_NUM_DEC_CONV",
     "name": "Dezimalzahlen und Umwandlungen",
-    "parentId": "MATH_NUM"
+    "parentId": "MATH_NUM",
+    "priority": 2
   },
   {
     "id": "MATH_NUM_PCT_BASIC",
     "subject": "MATH",
     "code": "MATH_NUM_PCT_BASIC",
     "name": "Prozentrechnung Grundlagen (W, G, p)",
-    "parentId": "MATH_NUM"
+    "parentId": "MATH_NUM",
+    "priority": 3
   },
   {
     "id": "MATH_NUM_PCT_CHANGE",
     "subject": "MATH",
     "code": "MATH_NUM_PCT_CHANGE",
     "name": "Prozentuale Veränderung (Zu, Abnahme)",
-    "parentId": "MATH_NUM"
+    "parentId": "MATH_NUM",
+    "priority": 3
   },
   {
     "id": "MATH_NUM_INTEREST",
     "subject": "MATH",
     "code": "MATH_NUM_INTEREST",
     "name": "Zinsrechnung einfach",
-    "parentId": "MATH_NUM"
+    "parentId": "MATH_NUM",
+    "priority": 1
   },
   {
     "id": "MATH_ALG",
@@ -67,49 +73,56 @@
     "subject": "MATH",
     "code": "MATH_ALG_TERMS_SIMPLIFY",
     "name": "Terme vereinfachen",
-    "parentId": "MATH_ALG"
+    "parentId": "MATH_ALG",
+    "priority": 2
   },
   {
     "id": "MATH_ALG_BRACKETS",
     "subject": "MATH",
     "code": "MATH_ALG_BRACKETS",
     "name": "Klammern auflösen und ausmultiplizieren",
-    "parentId": "MATH_ALG"
+    "parentId": "MATH_ALG",
+    "priority": 2
   },
   {
     "id": "MATH_ALG_EQU_LINEAR",
     "subject": "MATH",
     "code": "MATH_ALG_EQU_LINEAR",
     "name": "Lineare Gleichungen (eine Variable)",
-    "parentId": "MATH_ALG"
+    "parentId": "MATH_ALG",
+    "priority": 3
   },
   {
     "id": "MATH_ALG_EQU_WORD",
     "subject": "MATH",
     "code": "MATH_ALG_EQU_WORD",
     "name": "Sachaufgaben mit Gleichungen",
-    "parentId": "MATH_ALG"
+    "parentId": "MATH_ALG",
+    "priority": 3
   },
   {
     "id": "MATH_ALG_EQU_QUAD",
     "subject": "MATH",
     "code": "ALG_EQU_QUAD",
     "name": "Quadratische Gleichungen (pq-Formel)",
-    "parentId": "MATH_ALG"
+    "parentId": "MATH_ALG",
+    "priority": 2
   },
   {
     "id": "MATH_ALG_POW",
     "subject": "MATH",
     "code": "ALG_POW",
     "name": "Potenzen und Wurzeln",
-    "parentId": "MATH_ALG"
+    "parentId": "MATH_ALG",
+    "priority": 2
   },
   {
     "id": "MATH_ALG_LGS",
     "subject": "MATH",
     "code": "ALG_LGS",
     "name": "Lineare Gleichungssysteme",
-    "parentId": "MATH_ALG"
+    "parentId": "MATH_ALG",
+    "priority": 2
   },
   {
     "id": "MATH_FUNC",
@@ -123,42 +136,48 @@
     "subject": "MATH",
     "code": "MATH_FUNC_PROP",
     "name": "Proportionalität und Zuordnungen",
-    "parentId": "MATH_FUNC"
+    "parentId": "MATH_FUNC",
+    "priority": 3
   },
   {
     "id": "MATH_FUNC_LINEAR_FORM",
     "subject": "MATH",
     "code": "MATH_FUNC_LINEAR_FORM",
     "name": "Lineare Funktion (y = mx + b) verstehen",
-    "parentId": "MATH_FUNC"
+    "parentId": "MATH_FUNC",
+    "priority": 3
   },
   {
     "id": "MATH_FUNC_LINEAR_GRAPH",
     "subject": "MATH",
     "code": "MATH_FUNC_LINEAR_GRAPH",
     "name": "Graphen lesen und zeichnen (basis)",
-    "parentId": "MATH_FUNC"
+    "parentId": "MATH_FUNC",
+    "priority": 3
   },
   {
     "id": "MATH_FUNC_LINEAR_TABLE",
     "subject": "MATH",
     "code": "MATH_FUNC_LINEAR_TABLE",
     "name": "Tabelle <-> Term <-> Graph",
-    "parentId": "MATH_FUNC"
+    "parentId": "MATH_FUNC",
+    "priority": 2
   },
   {
     "id": "MATH_FUNC_QUAD",
     "subject": "MATH",
     "code": "MATH_FUNC_QUAD",
     "name": "Quadratische Funktionen (Parabel, Scheitel)",
-    "parentId": "MATH_FUNC"
+    "parentId": "MATH_FUNC",
+    "priority": 2
   },
   {
     "id": "MATH_FUNC_EXP",
     "subject": "MATH",
     "code": "MATH_FUNC_EXP",
     "name": "Exponentielles Wachstum und Abnahme",
-    "parentId": "MATH_FUNC"
+    "parentId": "MATH_FUNC",
+    "priority": 1
   },
   {
     "id": "MATH_GEO",
@@ -172,49 +191,56 @@
     "subject": "MATH",
     "code": "MATH_GEO_AREA_BASIC",
     "name": "Flächen und Umfang (Rechteck, Dreieck, Parallelogramm)",
-    "parentId": "MATH_GEO"
+    "parentId": "MATH_GEO",
+    "priority": 3
   },
   {
     "id": "MATH_GEO_CIRCLE",
     "subject": "MATH",
     "code": "MATH_GEO_CIRCLE",
     "name": "Kreis (Umfang, Fläche)",
-    "parentId": "MATH_GEO"
+    "parentId": "MATH_GEO",
+    "priority": 3
   },
   {
     "id": "MATH_GEO_VOLUME",
     "subject": "MATH",
     "code": "MATH_GEO_VOLUME",
     "name": "Volumen (Quader, Prisma, Zylinder)",
-    "parentId": "MATH_GEO"
+    "parentId": "MATH_GEO",
+    "priority": 2
   },
   {
     "id": "MATH_GEO_PYTH",
     "subject": "MATH",
     "code": "MATH_GEO_PYTH",
     "name": "Satz des Pythagoras (basis)",
-    "parentId": "MATH_GEO"
+    "parentId": "MATH_GEO",
+    "priority": 3
   },
   {
     "id": "MATH_GEO_TRIG",
     "subject": "MATH",
     "code": "MATH_GEO_TRIG",
     "name": "Trigonometrie (sin, cos, tan)",
-    "parentId": "MATH_GEO"
+    "parentId": "MATH_GEO",
+    "priority": 2
   },
   {
     "id": "MATH_GEO_VOLUME_ADV",
     "subject": "MATH",
     "code": "MATH_GEO_VOLUME_ADV",
     "name": "Volumen (Pyramide, Kegel, Kugel)",
-    "parentId": "MATH_GEO"
+    "parentId": "MATH_GEO",
+    "priority": 2
   },
   {
     "id": "MATH_GEO_UNITS",
     "subject": "MATH",
     "code": "MATH_GEO_UNITS",
     "name": "Einheiten umrechnen",
-    "parentId": "MATH_GEO"
+    "parentId": "MATH_GEO",
+    "priority": 3
   },
   {
     "id": "MATH_DATA",
@@ -228,21 +254,24 @@
     "subject": "MATH",
     "code": "MATH_DATA_STATS",
     "name": "Mittelwert, Median, Streuung basis",
-    "parentId": "MATH_DATA"
+    "parentId": "MATH_DATA",
+    "priority": 2
   },
   {
     "id": "MATH_DATA_CHARTS",
     "subject": "MATH",
     "code": "MATH_DATA_CHARTS",
     "name": "Diagramme lesen",
-    "parentId": "MATH_DATA"
+    "parentId": "MATH_DATA",
+    "priority": 3
   },
   {
     "id": "MATH_DATA_PROB",
     "subject": "MATH",
     "code": "MATH_DATA_PROB",
     "name": "Wahrscheinlichkeit Grundlagen",
-    "parentId": "MATH_DATA"
+    "parentId": "MATH_DATA",
+    "priority": 3
   },
   {
     "id": "DE",
@@ -263,28 +292,32 @@
     "subject": "DE",
     "code": "DE_ORTHO_CASE",
     "name": "Groß und Kleinschreibung",
-    "parentId": "DE_ORTHO"
+    "parentId": "DE_ORTHO",
+    "priority": 3
   },
   {
     "id": "DE_ORTHO_SS_SZ",
     "subject": "DE",
     "code": "DE_ORTHO_SS_SZ",
     "name": "ss und ß",
-    "parentId": "DE_ORTHO"
+    "parentId": "DE_ORTHO",
+    "priority": 3
   },
   {
     "id": "DE_ORTHO_DOUBLE",
     "subject": "DE",
     "code": "DE_ORTHO_DOUBLE",
     "name": "Doppelkonsonanten und Dehnung",
-    "parentId": "DE_ORTHO"
+    "parentId": "DE_ORTHO",
+    "priority": 2
   },
   {
     "id": "DE_ORTHO_SEP_JOIN",
     "subject": "DE",
     "code": "DE_ORTHO_SEP_JOIN",
     "name": "Getrennt- und Zusammenschreibung",
-    "parentId": "DE_ORTHO"
+    "parentId": "DE_ORTHO",
+    "priority": 2
   },
   {
     "id": "DE_PUNCT",
@@ -298,28 +331,32 @@
     "subject": "DE",
     "code": "DE_PUNCT_COMMA_MAIN_SUB",
     "name": "Komma bei Haupt und Nebensatz",
-    "parentId": "DE_PUNCT"
+    "parentId": "DE_PUNCT",
+    "priority": 3
   },
   {
     "id": "DE_PUNCT_COMMA_LIST",
     "subject": "DE",
     "code": "DE_PUNCT_COMMA_LIST",
     "name": "Komma bei Aufzählungen",
-    "parentId": "DE_PUNCT"
+    "parentId": "DE_PUNCT",
+    "priority": 2
   },
   {
     "id": "DE_PUNCT_INFINITIVE",
     "subject": "DE",
     "code": "DE_PUNCT_INFINITIVE",
     "name": "Komma bei Infinitivgruppen",
-    "parentId": "DE_PUNCT"
+    "parentId": "DE_PUNCT",
+    "priority": 2
   },
   {
     "id": "DE_PUNCT_SPEECH",
     "subject": "DE",
     "code": "DE_PUNCT_SPEECH",
     "name": "Direkte Rede (Anführungszeichen, Komma, Doppelpunkt)",
-    "parentId": "DE_PUNCT"
+    "parentId": "DE_PUNCT",
+    "priority": 2
   },
   {
     "id": "DE_GRAM",
@@ -333,28 +370,32 @@
     "subject": "DE",
     "code": "DE_GRAM_WORD_CLASSES",
     "name": "Wortarten",
-    "parentId": "DE_GRAM"
+    "parentId": "DE_GRAM",
+    "priority": 3
   },
   {
     "id": "DE_GRAM_TENSES",
     "subject": "DE",
     "code": "DE_GRAM_TENSES",
     "name": "Zeitformen",
-    "parentId": "DE_GRAM"
+    "parentId": "DE_GRAM",
+    "priority": 2
   },
   {
     "id": "DE_GRAM_SENTENCE_TYPES",
     "subject": "DE",
     "code": "DE_GRAM_SENTENCE_TYPES",
     "name": "Satzarten (Hauptsatz, Nebensatz)",
-    "parentId": "DE_GRAM"
+    "parentId": "DE_GRAM",
+    "priority": 2
   },
   {
     "id": "DE_GRAM_SENTENCE_PARTS",
     "subject": "DE",
     "code": "DE_GRAM_SENTENCE_PARTS",
     "name": "Satzglieder (Subjekt, Prädikat, Objekt, Adverbiale)",
-    "parentId": "DE_GRAM"
+    "parentId": "DE_GRAM",
+    "priority": 3
   },
   {
     "id": "DE_READ",
@@ -368,21 +409,24 @@
     "subject": "DE",
     "code": "DE_READ_CORE",
     "name": "Kernaussage und Intention",
-    "parentId": "DE_READ"
+    "parentId": "DE_READ",
+    "priority": 3
   },
   {
     "id": "DE_READ_ARGUMENT",
     "subject": "DE",
     "code": "DE_READ_ARGUMENT",
     "name": "Argumente erkennen und zuordnen",
-    "parentId": "DE_READ"
+    "parentId": "DE_READ",
+    "priority": 3
   },
   {
     "id": "DE_READ_EVIDENCE",
     "subject": "DE",
     "code": "DE_READ_EVIDENCE",
     "name": "Textbelege finden (Zitatstelle)",
-    "parentId": "DE_READ"
+    "parentId": "DE_READ",
+    "priority": 3
   },
   {
     "id": "DE_WRITE",
@@ -396,14 +440,16 @@
     "subject": "DE",
     "code": "DE_WRITE_REPHRASE",
     "name": "Sätze umformulieren",
-    "parentId": "DE_WRITE"
+    "parentId": "DE_WRITE",
+    "priority": 2
   },
   {
     "id": "DE_WRITE_SUMMARY",
     "subject": "DE",
     "code": "DE_WRITE_SUMMARY",
     "name": "Mini Zusammenfassung (1 bis 2 Sätze)",
-    "parentId": "DE_WRITE"
+    "parentId": "DE_WRITE",
+    "priority": 2
   },
   {
     "id": "EN",
@@ -424,28 +470,32 @@
     "subject": "EN",
     "code": "EN_USE_TENSES",
     "name": "Tenses (Zeitformen) und unregelmäßige Verben",
-    "parentId": "EN_USE"
+    "parentId": "EN_USE",
+    "priority": 3
   },
   {
     "id": "EN_USE_QUEST_NEG",
     "subject": "EN",
     "code": "EN_USE_QUEST_NEG",
     "name": "Questions and negations (do/does/did)",
-    "parentId": "EN_USE"
+    "parentId": "EN_USE",
+    "priority": 3
   },
   {
     "id": "EN_USE_MODALS",
     "subject": "EN",
     "code": "EN_USE_MODALS",
     "name": "Modal verbs (can, must, should …)",
-    "parentId": "EN_USE"
+    "parentId": "EN_USE",
+    "priority": 2
   },
   {
     "id": "EN_USE_COMPARISON",
     "subject": "EN",
     "code": "EN_USE_COMPARISON",
     "name": "Adjectives and comparison (Steigerung)",
-    "parentId": "EN_USE"
+    "parentId": "EN_USE",
+    "priority": 2
   },
   {
     "id": "EN_VOCAB",
@@ -459,28 +509,32 @@
     "subject": "EN",
     "code": "EN_VOCAB_SCHOOL",
     "name": "Vocabulary: school, jobs and applications",
-    "parentId": "EN_VOCAB"
+    "parentId": "EN_VOCAB",
+    "priority": 1
   },
   {
     "id": "EN_VOCAB_DAILYLIFE",
     "subject": "EN",
     "code": "EN_VOCAB_DAILYLIFE",
     "name": "Vocabulary: daily life, technology, social networks",
-    "parentId": "EN_VOCAB"
+    "parentId": "EN_VOCAB",
+    "priority": 1
   },
   {
     "id": "EN_VOCAB_TRAVEL",
     "subject": "EN",
     "code": "EN_VOCAB_TRAVEL",
     "name": "Vocabulary: travel, living and nature",
-    "parentId": "EN_VOCAB"
+    "parentId": "EN_VOCAB",
+    "priority": 1
   },
   {
     "id": "EN_VOCAB_OPINIONS",
     "subject": "EN",
     "code": "EN_VOCAB_OPINIONS",
     "name": "Vocabulary: opinions and feelings",
-    "parentId": "EN_VOCAB"
+    "parentId": "EN_VOCAB",
+    "priority": 2
   },
   {
     "id": "EN_READ",
@@ -494,14 +548,16 @@
     "subject": "EN",
     "code": "EN_READ_CORE",
     "name": "Reading: articles and longer texts",
-    "parentId": "EN_READ"
+    "parentId": "EN_READ",
+    "priority": 3
   },
   {
     "id": "EN_READ_EMAILS",
     "subject": "EN",
     "code": "EN_READ_EMAILS",
     "name": "Reading: e-mails and everyday texts",
-    "parentId": "EN_READ"
+    "parentId": "EN_READ",
+    "priority": 2
   },
   {
     "id": "EN_WRITE",
@@ -515,56 +571,64 @@
     "subject": "EN",
     "code": "EN_WRITE_GUIDED",
     "name": "Writing: Bildbeschreibung und Aufbau",
-    "parentId": "EN_WRITE"
+    "parentId": "EN_WRITE",
+    "priority": 2
   },
   {
     "id": "EN_WRITE_ERRORFIX",
     "subject": "EN",
     "code": "EN_WRITE_ERRORFIX",
     "name": "Writing: typische Fehler korrigieren",
-    "parentId": "EN_WRITE"
+    "parentId": "EN_WRITE",
+    "priority": 2
   },
   {
     "id": "DE_ORTHO_DAS_DASS",
     "subject": "DE",
     "code": "DE_ORTHO_DAS_DASS",
     "name": "das oder dass",
-    "parentId": "DE_ORTHO"
+    "parentId": "DE_ORTHO",
+    "priority": 3
   },
   {
     "id": "DE_ORTHO_STRATEGIES",
     "subject": "DE",
     "code": "DE_ORTHO_STRATEGIES",
     "name": "Rechtschreibstrategien (verlängern, ableiten, Silben, h)",
-    "parentId": "DE_ORTHO"
+    "parentId": "DE_ORTHO",
+    "priority": 2
   },
   {
     "id": "DE_GRAM_MODUS",
     "subject": "DE",
     "code": "DE_GRAM_MODUS",
     "name": "Modus (Indikativ, Konjunktiv I und II, Imperativ)",
-    "parentId": "DE_GRAM"
+    "parentId": "DE_GRAM",
+    "priority": 2
   },
   {
     "id": "DE_GRAM_AKTIV_PASSIV",
     "subject": "DE",
     "code": "DE_GRAM_AKTIV_PASSIV",
     "name": "Aktiv und Passiv",
-    "parentId": "DE_GRAM"
+    "parentId": "DE_GRAM",
+    "priority": 2
   },
   {
     "id": "DE_GRAM_INDIRECT",
     "subject": "DE",
     "code": "DE_GRAM_INDIRECT",
     "name": "Direkte und indirekte Rede",
-    "parentId": "DE_GRAM"
+    "parentId": "DE_GRAM",
+    "priority": 2
   },
   {
     "id": "DE_GRAM_PARTIZIP",
     "subject": "DE",
     "code": "DE_GRAM_PARTIZIP",
     "name": "Partizip I und II",
-    "parentId": "DE_GRAM"
+    "parentId": "DE_GRAM",
+    "priority": 1
   },
   {
     "id": "DE_STIL",
@@ -578,35 +642,40 @@
     "subject": "DE",
     "code": "DE_STIL_MITTEL",
     "name": "Stilmittel (rhetorische Mittel)",
-    "parentId": "DE_STIL"
+    "parentId": "DE_STIL",
+    "priority": 2
   },
   {
     "id": "DE_STIL_REGISTER",
     "subject": "DE",
     "code": "DE_STIL_REGISTER",
     "name": "Standard- und Umgangssprache",
-    "parentId": "DE_STIL"
+    "parentId": "DE_STIL",
+    "priority": 2
   },
   {
     "id": "DE_STIL_FEHLER",
     "subject": "DE",
     "code": "DE_STIL_FEHLER",
     "name": "Fehlerarten erkennen (Text überarbeiten)",
-    "parentId": "DE_STIL"
+    "parentId": "DE_STIL",
+    "priority": 3
   },
   {
     "id": "DE_WRITE_EROERTERUNG",
     "subject": "DE",
     "code": "DE_WRITE_EROERTERUNG",
     "name": "Erörterung: Schreibplan und Aufbau",
-    "parentId": "DE_WRITE"
+    "parentId": "DE_WRITE",
+    "priority": 3
   },
   {
     "id": "EN_USE_IF",
     "subject": "EN",
     "code": "EN_USE_IF",
     "name": "If-clauses (Typ I, II, III)",
-    "parentId": "EN_USE"
+    "parentId": "EN_USE",
+    "priority": 2
   },
   {
     "id": "EN_LISTEN",
@@ -620,34 +689,39 @@
     "subject": "EN",
     "code": "EN_LISTEN_NUMBERS",
     "name": "Listening: Uhrzeiten, Daten, Telefonnummern",
-    "parentId": "EN_LISTEN"
+    "parentId": "EN_LISTEN",
+    "priority": 2
   },
   {
     "id": "EN_READ_SIGNS",
     "subject": "EN",
     "code": "EN_READ_SIGNS",
     "name": "Reading: Schilder und Kurztexte",
-    "parentId": "EN_READ"
+    "parentId": "EN_READ",
+    "priority": 3
   },
   {
     "id": "EN_READ_MATCHING",
     "subject": "EN",
     "code": "EN_READ_MATCHING",
     "name": "Reading: Personen und Angebote zuordnen",
-    "parentId": "EN_READ"
+    "parentId": "EN_READ",
+    "priority": 3
   },
   {
     "id": "EN_WRITE_EMAIL",
     "subject": "EN",
     "code": "EN_WRITE_EMAIL",
     "name": "Writing: E-Mail, Brief, Blog-Antwort",
-    "parentId": "EN_WRITE"
+    "parentId": "EN_WRITE",
+    "priority": 3
   },
   {
     "id": "EN_WRITE_MEDIATION",
     "subject": "EN",
     "code": "EN_WRITE_MEDIATION",
     "name": "Writing: Mediation (Inhalte übertragen)",
-    "parentId": "EN_WRITE"
+    "parentId": "EN_WRITE",
+    "priority": 3
   }
 ]

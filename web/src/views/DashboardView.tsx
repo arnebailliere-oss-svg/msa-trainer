@@ -1,8 +1,11 @@
 import { useMemo, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useApp } from "@/app/state";
-import { ampelFor } from "@/core/mastery";
-import type { AmpelState, Subject, Topic } from "@/core/types";
+import { LEVEL_WINDOW, READY_PERCENT } from "@/core/constants";
+import { LEVEL_LABEL } from "@/core/levels";
+import { ampelForLevel } from "@/core/mastery";
+import { readiness } from "@/core/readiness";
+import type { AmpelState, Level, Subject, Topic } from "@/core/types";
 import { Ampel, AMPEL_LABEL, Button, Chip, Ring, SUBJECT_EMOJI, SUBJECT_LABEL } from "@/ui/primitives";
 import { WelcomeTour } from "@/ui/WelcomeTour";
 
@@ -29,6 +32,15 @@ function streakDays(dates: string[]): number {
   }
 }
 
+interface TopicRow {
+  topic: Topic;
+  level: Level;
+  ampel: AmpelState;
+  priority: number;
+  count: number;
+  hasLesson: boolean;
+}
+
 export function DashboardView() {
   const { content, profile, store, progressVersion } = useApp();
   const nav = useNavigate();
@@ -51,26 +63,26 @@ export function DashboardView() {
   const data = useMemo(() => {
     if (!content || !store || !profile) return null;
     void progressVersion;
-    const leaves = content.practicableTopics(subject);
-    const groups = new Map<string, { parent: Topic | undefined; topics: { topic: Topic; ampel: AmpelState; mastery: number; count: number; hasLesson: boolean }[] }>();
-    for (const t of leaves) {
-      const parentId = t.parentId ?? "";
+    const r = readiness(content, store, profile.id, subject);
+    const groups = new Map<string, { parent: Topic | undefined; topics: TopicRow[] }>();
+    for (const t of r.topics) {
+      const parentId = t.topic.parentId ?? "";
       const g = groups.get(parentId) ?? { parent: content.topicById(parentId), topics: [] };
-      const m = store.getMastery(profile.id, t.id);
-      g.topics.push({ topic: t, ampel: ampelFor(m), mastery: m?.masteryScore ?? 0, count: content.questionsOf(t.id).length, hasLesson: !!content.lessonFor(t.id) });
+      g.topics.push({ topic: t.topic, level: t.info.level, ampel: ampelForLevel(t.info.level), priority: t.priority, count: content.questionsOf(t.topic.id).length, hasLesson: !!content.lessonFor(t.topic.id) });
       groups.set(parentId, g);
     }
     const all = [...groups.values()].flatMap((g) => g.topics);
-    const green = all.filter((t) => t.ampel === "GREEN").length;
+    const green = all.filter((t) => t.level >= 3).length;
     const attempts = store.attempts(profile.id, undefined, 2000);
     const today = new Date().toISOString().slice(0, 10);
     const todayCount = attempts.filter((a) => a.createdAt.slice(0, 10) === today).length;
-    const errorTopics = all.filter((t) => t.ampel === "RED" && (store.getMastery(profile.id, t.topic.id)?.attempts ?? 0) > 0).length;
-    return { groups: [...groups.values()], all, green, streak: streakDays(attempts.map((a) => a.createdAt)), todayCount, errorTopics };
+    const errorTopics = r.topics.filter((t) => t.info.level === 1 && store.errorRate(profile.id, t.topic.id, LEVEL_WINDOW) > 0).length;
+    return { groups: [...groups.values()], all, green, streak: streakDays(attempts.map((a) => a.createdAt)), todayCount, errorTopics, r };
   }, [content, store, profile, subject, progressVersion]);
 
   if (!content || !profile || !data) return null;
-  const pct = data.all.length ? data.green / data.all.length : 0;
+  const { r } = data;
+  const planDone = r.doneToday >= r.goal;
 
   return (
     <div className={`subject-${subject} mx-auto max-w-5xl px-4 pb-16`}>
@@ -88,15 +100,21 @@ export function DashboardView() {
             </div>
           </div>
         </div>
-        <div className="flex items-center gap-4">
-          <Ring value={pct} size={72} color="var(--green)">
-            {Math.round(pct * 100)}%
+        <div className="flex items-center gap-4" data-testid="readiness">
+          <Ring value={r.percent} size={72} color={r.ready ? "var(--green)" : "var(--brand-2)"}>
+            {Math.round(r.percent * 100)}%
           </Ring>
           <div className="text-sm text-ink-2">
-            <div className="font-semibold text-ink">
-              {data.green} von {data.all.length} Themen sicher
-            </div>
-            in {SUBJECT_LABEL[subject]}
+            <div className="font-semibold text-ink">{r.ready ? "Prüfungsreif ✓" : `Prüfungsreife in ${SUBJECT_LABEL[subject]}`}</div>
+            {r.ready ? (
+              <span>Alle wichtigen Themen sicher, Prüfungs-Check bestanden.</span>
+            ) : (
+              <span>
+                reif ab {Math.round(READY_PERCENT * 100)} % · {data.green} von {data.all.length} Themen sicher
+                <br />
+                noch ca. {r.remainingTasks} Aufgaben, {r.remainingDays} {r.remainingDays === 1 ? "Tag" : "Tage"} bei {r.goal} pro Tag
+              </span>
+            )}
           </div>
         </div>
       </div>
@@ -113,10 +131,17 @@ export function DashboardView() {
       </div>
 
       {/* Modes */}
-      <div className="mt-5 grid gap-3 sm:grid-cols-3">
-        <ModeCard title="Schnelltraining" desc="10 Aufgaben, passend zu deinen Schwächen" emoji="⚡" onClick={() => nav(`/session/QUICK/${subject}`)} primary />
+      <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+        <ModeCard
+          title={planDone ? "Heute geschafft ✓" : `Heute: ${r.goal} Aufgaben`}
+          desc={planDone ? "Tagesziel erreicht. Lust auf eine Extra-Runde?" : `${r.doneToday} von ${r.goal} gemacht · Checks, Fehler, nächste Themen`}
+          emoji="📅"
+          onClick={() => nav(`/session/PLAN/${subject}`)}
+          primary
+        />
+        <ModeCard title="Schnelltraining" desc="10 Aufgaben, passend zu deinen Schwächen" emoji="⚡" onClick={() => nav(`/session/QUICK/${subject}`)} />
         <ModeCard title="Fehler-Training" desc={data.errorTopics ? `${data.errorTopics} Themen mit Fehlern üben` : "Noch keine Fehler — super!"} emoji="🩹" onClick={() => nav(`/session/ERRORS/${subject}`)} />
-        <ModeCard title="Prüfungs-Modus" desc="Schwere Aufgaben wie im MSA, ohne Hilfe" emoji="🏁" onClick={() => nav(`/session/MSA/${subject}`)} />
+        <ModeCard title="Prüfungs-Modus" desc={r.examPassed ? "Bestanden ✓ · nochmal wie im MSA" : "Schwere Aufgaben wie im MSA, ohne Hilfe"} emoji="🏁" onClick={() => nav(`/session/MSA/${subject}`)} />
       </div>
 
       <div className="mt-3 flex flex-wrap items-center gap-3">
@@ -154,13 +179,20 @@ export function DashboardView() {
         <section key={g.parent?.id ?? "root"} className="mt-5">
           <h3 className="mb-2 text-sm font-bold uppercase tracking-wider text-ink-3">{g.parent?.name ?? "Weitere"}</h3>
           <div className="grid gap-2.5 sm:grid-cols-2">
-            {g.topics.map(({ topic, ampel, mastery, count, hasLesson }) => (
+            {g.topics.map(({ topic, ampel, level, priority, count, hasLesson }) => (
               <div key={topic.id} className="glass flex items-center gap-3 p-3.5 transition-colors hover:bg-surface-2">
                 <Ampel state={ampel} />
                 <Link to={`/topic/${topic.id}`} className="min-w-0 flex-1">
-                  <div className="truncate font-semibold">{topic.name}</div>
+                  <div className="truncate font-semibold">
+                    {topic.name}
+                    {priority === 3 && (
+                      <span className="ml-1 text-xs" title="wichtig für die Prüfung" aria-label="wichtig für die Prüfung">
+                        ⭐
+                      </span>
+                    )}
+                  </div>
                   <div className="text-xs text-ink-3">
-                    {Math.round(mastery * 100)} % · {count} Aufgaben{hasLesson ? " · 📘 Lektion" : ""}
+                    {LEVEL_LABEL[level]} · {count} Aufgaben{hasLesson ? " · 📘 Lektion" : ""}
                   </div>
                 </Link>
                 <Button size="sm" variant="accent" onClick={() => nav(`/session/TOPIC/${subject}/${topic.id}`)}>

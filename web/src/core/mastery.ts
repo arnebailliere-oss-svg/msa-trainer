@@ -1,49 +1,35 @@
-/** Mastery engine — see docs/ALGORITHM.md §2–3. */
+/**
+ * Mastery state — a projection of the Nachweis-Modell level (levels.ts) onto the stored numbers,
+ * so the Ampel, selection and every view keep working. See docs/ALGORITHM.md §2–3.
+ */
 
-import {
-  AMPEL_GREEN_STABILITY,
-  AMPEL_RED_THRESHOLD,
-  AMPEL_YELLOW_THRESHOLD,
-  CORRECT_MASTERY_DELTA,
-  CORRECT_STABILITY_DELTA,
-  INCORRECT_MASTERY_DELTA,
-  INCORRECT_STABILITY_DELTA,
-  SPEED_BONUS,
-  TARGET_TIMES_MS,
-} from "./constants";
-import type { AmpelState, MasteryState } from "./types";
-
-const clamp01 = (v: number) => Math.max(0, Math.min(1, v));
+import { AMPEL_GREEN_STABILITY, AMPEL_RED_THRESHOLD, AMPEL_YELLOW_THRESHOLD, LEVEL_MASTERY } from "./constants";
+import type { LevelInfo } from "./levels";
+import type { AmpelState, Level, MasteryState } from "./types";
 
 export function newMasteryState(userId: string, topicId: string): MasteryState {
   return { userId, topicId, masteryScore: 0, stability: 0, lastPracticedAt: null, attempts: 0 };
 }
 
-export function updateMastery(
-  state: MasteryState,
-  isCorrect: boolean,
-  difficulty: number,
-  responseTimeMs: number,
-  now: Date = new Date(),
-): MasteryState {
-  let mastery = state.masteryScore;
-  let stability = state.stability;
-  if (isCorrect) {
-    mastery += CORRECT_MASTERY_DELTA;
-    stability += CORRECT_STABILITY_DELTA;
-    const target = TARGET_TIMES_MS[difficulty] ?? TARGET_TIMES_MS[3]!;
-    if (responseTimeMs < target) mastery += SPEED_BONUS;
-  } else {
-    mastery += INCORRECT_MASTERY_DELTA;
-    stability += INCORRECT_STABILITY_DELTA;
-  }
+/** masteryScore by level; stability 1 from "Sicher" on, 0.5 for "Geübt", 0.2 below. */
+export function masteryFromLevel(state: MasteryState, info: LevelInfo, now: Date, attempts: number): MasteryState {
   return {
     ...state,
-    masteryScore: clamp01(mastery),
-    stability: clamp01(stability),
-    lastPracticedAt: now.toISOString(),
-    attempts: state.attempts + 1,
+    masteryScore: LEVEL_MASTERY[info.level],
+    stability: info.level >= 3 ? 1 : info.level === 2 ? 0.5 : 0.2,
+    lastPracticedAt: info.lastPracticedAt ?? now.toISOString(),
+    attempts,
   };
+}
+
+/** Inverse of masteryFromLevel for views that only hold the stored state. */
+export function levelFromMastery(state: MasteryState | undefined): Level {
+  if (!state) return 0;
+  const m = state.masteryScore;
+  if (m >= LEVEL_MASTERY[4]) return 4;
+  if (m >= LEVEL_MASTERY[3]) return 3;
+  if (m >= LEVEL_MASTERY[2]) return 2;
+  return state.attempts > 0 ? 1 : 0;
 }
 
 export function computeAmpel(masteryScore: number, stability: number): AmpelState {
@@ -57,7 +43,6 @@ export function ampelFor(state: MasteryState | undefined): AmpelState {
   return computeAmpel(state.masteryScore, state.stability);
 }
 
-export function masteryDelta(isCorrect: boolean, speedBonus = false): number {
-  if (!isCorrect) return INCORRECT_MASTERY_DELTA;
-  return CORRECT_MASTERY_DELTA + (speedBonus ? SPEED_BONUS : 0);
+export function ampelForLevel(level: Level): AmpelState {
+  return level >= 3 ? "GREEN" : level === 2 ? "YELLOW" : "RED";
 }

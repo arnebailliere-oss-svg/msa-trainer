@@ -29,6 +29,8 @@ test("exam mode: Basisaufgaben first, no calculator, per-task summary", async ({
     }
     await page.getByRole("button", { name: "Antwort prüfen" }).click();
     await page.getByRole("button", { name: /Weiter/ }).click();
+    // Either the next question or (after the last one) the result page — never race the navigation.
+    await expect(page.getByText("Deine Aufgaben").or(page.getByRole("button", { name: "Antwort prüfen" }))).toBeVisible();
     if (await page.getByText("Deine Aufgaben").isVisible().catch(() => false)) break;
   }
 

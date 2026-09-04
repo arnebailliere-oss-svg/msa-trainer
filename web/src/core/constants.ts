@@ -1,10 +1,35 @@
-/** Algorithm constants — see docs/ALGORITHM.md. Mirror of legacy `core/constants.py`. */
+/** Algorithm constants — see docs/ALGORITHM.md. */
 
-export const CORRECT_MASTERY_DELTA = 0.03;
-export const CORRECT_STABILITY_DELTA = 0.02;
-export const SPEED_BONUS = 0.01;
-export const INCORRECT_MASTERY_DELTA = -0.06;
-export const INCORRECT_STABILITY_DELTA = -0.04;
+// --- Nachweis-Modell (topic levels from recent evidence) ---------------------
+/** Attempts considered per topic. */
+export const LEVEL_WINDOW = 6;
+/** "Geübt": correct answers within the window. */
+export const GEUEBT_MIN_CORRECT = 4;
+/** "Sicher": correct answers within the window … */
+export const SICHER_MIN_CORRECT = 5;
+/** … of which at least this many at exam difficulty … */
+export const SICHER_MIN_HARD = 2;
+/** … spread over at least this many different days. */
+export const SICHER_MIN_DAYS = 2;
+/** Difficulty that counts as "exam level". */
+export const EXAM_DIFFICULTY = 3;
+/** "Prüfungsfest": a correct exam-level answer this many days after reaching "Sicher". */
+export const CHECK_AFTER_DAYS = 3;
+/** A "Sicher" topic idle for longer drops to "Geübt" and gets a check. */
+export const STALE_DAYS = 14;
+/** masteryScore per level (keeps the Ampel thresholds and the old views working). */
+export const LEVEL_MASTERY = [0, 0.2, 0.6, 0.85, 1] as const;
+
+// --- Tagesplan --------------------------------------------------------------------
+export const PLAN_SIZE = 12;
+export const PLAN_MAX_CHECKS = 3;
+export const PLAN_MAX_REPAIR_SLOTS = 4;
+/** Prüfungsreife: priority-weighted share of topics at "Sicher" or better. */
+export const READY_PERCENT = 0.85;
+/** A Prüfungs-Modus run counts as passed at this share of correct answers … */
+export const EXAM_PASS_RATIO = 0.6;
+/** … with at least this many tasks on that day. */
+export const EXAM_MIN_TASKS = 8;
 
 export const AMPEL_RED_THRESHOLD = 0.45;
 export const AMPEL_YELLOW_THRESHOLD = 0.75;

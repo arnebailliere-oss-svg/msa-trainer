@@ -2,7 +2,8 @@ import { useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { exportAll, importAll } from "@/app/db";
 import { useApp } from "@/app/state";
-import { ampelFor } from "@/core/mastery";
+import { LEVEL_LABEL } from "@/core/levels";
+import { ampelFor, levelFromMastery } from "@/core/mastery";
 import type { Subject } from "@/core/types";
 import { Ampel, Button, PageTitle, SUBJECT_LABEL } from "@/ui/primitives";
 
@@ -66,8 +67,7 @@ export function OverviewView() {
                   <tr>
                     <th className="px-4 py-2">Thema</th>
                     <th className="px-2 py-2">Ampel</th>
-                    <th className="px-2 py-2 text-right">Können</th>
-                    <th className="px-2 py-2 text-right">Stabilität</th>
+                    <th className="px-2 py-2">Stufe</th>
                     <th className="px-2 py-2 text-right">Versuche</th>
                     <th className="px-4 py-2 text-right">Zuletzt</th>
                   </tr>
@@ -83,8 +83,10 @@ export function OverviewView() {
                       <td className="px-2 py-2">
                         <Ampel state={ampelFor(m)} size={10} />
                       </td>
-                      <td className="px-2 py-2 text-right tabular-nums">{Math.round((m?.masteryScore ?? 0) * 100)} %</td>
-                      <td className="px-2 py-2 text-right tabular-nums">{Math.round((m?.stability ?? 0) * 100)} %</td>
+                      <td className="px-2 py-2">
+                        {LEVEL_LABEL[levelFromMastery(m)]}
+                        {t.priority === 3 && <span title="wichtig für die Prüfung"> ⭐</span>}
+                      </td>
                       <td className="px-2 py-2 text-right tabular-nums">{m?.attempts ?? 0}</td>
                       <td className="px-4 py-2 text-right text-ink-3">{m?.lastPracticedAt ? new Date(m.lastPracticedAt).toLocaleDateString("de-DE") : "–"}</td>
                     </tr>

@@ -5,8 +5,10 @@
 
 export type Subject = "MATH" | "DE" | "EN";
 export type QuestionType = "MCQ" | "CLOZE" | "MATCH" | "SHORT" | "WRITE";
-export type TrainingMode = "QUICK" | "TOPIC" | "ERRORS" | "MSA";
+export type TrainingMode = "QUICK" | "TOPIC" | "ERRORS" | "MSA" | "PLAN";
 export type AmpelState = "RED" | "YELLOW" | "GREEN";
+/** Nachweis-Modell: 0 Neu · 1 Angefangen · 2 Geübt · 3 Sicher · 4 Prüfungsfest (levels.ts). */
+export type Level = 0 | 1 | 2 | 3 | 4;
 
 export const SUBJECTS: readonly Subject[] = ["MATH", "DE", "EN"];
 
@@ -16,6 +18,8 @@ export interface Topic {
   code: string;
   name: string;
   parentId: string | null;
+  /** Exam weight: 3 = in every MSA, 2 = usual, 1 = rare. Default 2. */
+  priority?: 1 | 2 | 3;
 }
 
 /** A variable in a question template. */
@@ -298,6 +302,10 @@ export interface Attempt {
   userAnswer: string;
   vars: Record<string, number | string>;
   createdAt: string; // ISO
+  /** Question difficulty at the time (older attempts resolve it via the question). */
+  difficulty?: number;
+  /** Training mode of the session (older attempts carry it inside variantId). */
+  mode?: TrainingMode;
 }
 
 export interface AttemptResult {
@@ -308,6 +316,10 @@ export interface AttemptResult {
   masteryDelta: number;
   newMasteryScore: number;
   ampel: AmpelState;
+  /** Topic level after this answer (Nachweis-Modell). */
+  level: Level;
+  /** The answer lifted the topic to a higher level. */
+  levelUp: boolean;
   /** Optional evaluator hint, e.g. "Der Bruch ist noch nicht gekürzt." */
   hint?: string;
   inRepairMode: boolean;

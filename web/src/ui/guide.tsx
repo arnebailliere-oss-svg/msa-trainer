@@ -115,13 +115,13 @@ function AmpelLegend() {
       </Ring>
       <div className="grid gap-1.5 text-sm">
         <span className="flex items-center gap-2">
-          <Ampel state="RED" /> {AMPEL_LABEL.RED} — unter 45 %
+          <Ampel state="RED" /> {AMPEL_LABEL.RED} — Neu oder Angefangen
         </span>
         <span className="flex items-center gap-2">
-          <Ampel state="YELLOW" /> {AMPEL_LABEL.YELLOW} — dazwischen
+          <Ampel state="YELLOW" /> {AMPEL_LABEL.YELLOW} — Geübt: 4 der letzten 6 richtig
         </span>
         <span className="flex items-center gap-2">
-          <Ampel state="GREEN" /> {AMPEL_LABEL.GREEN} — ab 75 %, wenn es auch hält
+          <Ampel state="GREEN" /> {AMPEL_LABEL.GREEN} — 5 der letzten 6 richtig, 2 davon auf Prüfungsniveau, an 2 Tagen
         </span>
       </div>
     </div>
@@ -294,8 +294,8 @@ export const GUIDE: GuideSection[] = [
   {
     id: "ampel",
     emoji: "🚦",
-    title: "Ampel und Können-Prozente",
-    lead: "Neben jedem Thema steht ein Punkt: rot, gelb oder grün. Er zeigt, wie sicher du in diesem Thema bist. Die Prozentzahl daneben ist dein „Können“ — sie steigt bei richtigen Antworten und fällt bei falschen.",
+    title: "Ampel, Stufen und Prüfungsreife",
+    lead: "Neben jedem Thema steht ein Punkt: rot, gelb oder grün, und eine Stufe: Neu, Angefangen, Geübt, Sicher oder Prüfungsfest. Die Stufe zählt nur, was du zuletzt gezeigt hast — deine letzten 6 Antworten im Thema — nicht, wie viele Aufgaben du insgesamt gemacht hast.",
     demo: (
       <Demo>
         <AmpelLegend />
@@ -304,10 +304,10 @@ export const GUIDE: GuideSection[] = [
     more: (
       <>
         <p>
-          Eine richtige Antwort bringt etwa 3 Punkte, eine schnelle richtige Antwort einen extra dazu. Eine falsche kostet 6. Deshalb geht es beim Raten nach unten und beim ehrlichen Üben nach oben — genau so ist es gedacht.
+          <strong>Sicher</strong> wirst du, wenn 5 deiner letzten 6 Antworten richtig sind, mindestens 2 davon auf Prüfungsniveau, und das an zwei verschiedenen Tagen. Wer ein Thema kann, schafft das in 6 bis 8 Aufgaben. <strong>Prüfungsfest</strong> wird es, wenn du ein paar Tage später noch einmal eine schwere Aufgabe richtig löst. Lässt du ein sicheres Thema zwei Wochen liegen, fragt der Tagesplan mit einer kurzen Kontrollaufgabe nach.
         </p>
         <p className="mt-2">
-          Grün wird ein Thema erst, wenn du nicht nur einmal richtig lagst, sondern <em>mehrmals hintereinander</em>. Der Ring oben auf der Startseite zählt, wie viele Themen im aktuellen Fach schon grün sind. Alle Zahlen im Detail — auch Stabilität, Versuche und wann du zuletzt geübt hast — stehen unter <strong>Fortschritt</strong>.
+          Der Ring oben auf der Startseite ist deine <strong>Prüfungsreife</strong>: der Anteil der Themen, die sicher sind — wichtige Prüfungsthemen (⭐) zählen mehr. Ab 85 %, wenn alle ⭐-Themen sicher sind und du einen Prüfungs-Modus bestanden hast, bist du <strong>prüfungsreif</strong>. Daneben steht, wie viele Aufgaben und Tage ungefähr noch fehlen. Der Weg dorthin ist die Karte <strong>📅 Heute</strong>: 12 Aufgaben pro Tag, von der App zusammengestellt — fällige Kontrollen, deine Fehler, dann die nächsten Themen.
         </p>
       </>
     ),

@@ -1,7 +1,10 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import { useApp } from "@/app/state";
-import { formatNumber } from "@/core/format";
+import { PLAN_SIZE } from "@/core/constants";
+import { LEVEL_LABEL } from "@/core/levels";
+import { buildDailyPlan } from "@/core/plan";
+import { readiness } from "@/core/readiness";
 import { SessionController } from "@/core/session";
 import type { AttemptResult, RenderedQuestion, Subject, TrainingMode, WriteCheck } from "@/core/types";
 import { Calculator } from "@/ui/Calculator";
@@ -12,7 +15,7 @@ import { AskOwl } from "@/ui/Owl";
 import { Button, Chip, ProgressBar, SUBJECT_LABEL } from "@/ui/primitives";
 import { isAnswerReady, QuestionRenderer } from "@/ui/renderers";
 
-const MODE_LABEL: Record<TrainingMode, string> = { QUICK: "Schnelltraining", TOPIC: "Thema üben", ERRORS: "Fehler-Training", MSA: "Prüfungs-Modus" };
+const MODE_LABEL: Record<TrainingMode, string> = { PLAN: "Tagesplan", QUICK: "Schnelltraining", TOPIC: "Thema üben", ERRORS: "Fehler-Training", MSA: "Prüfungs-Modus" };
 
 /** WRITE feedback: the scored checks (Inhalt, Aufbau) and the unscored language hints. */
 export function WriteChecklist({ checks }: { checks: WriteCheck[] }) {
@@ -46,7 +49,7 @@ export function WriteChecklist({ checks }: { checks: WriteCheck[] }) {
     </div>
   );
 }
-const COUNT: Record<TrainingMode, number> = { QUICK: 10, TOPIC: 8, ERRORS: 10, MSA: 10 };
+const COUNT: Record<TrainingMode, number> = { PLAN: PLAN_SIZE, QUICK: 10, TOPIC: 8, ERRORS: 10, MSA: 10 };
 const fmtTime = (s: number) => `${Math.floor(s / 60)}:${String(s % 60).padStart(2, "0")}`;
 
 export function SessionView() {
@@ -69,7 +72,15 @@ export function SessionView() {
 
   useEffect(() => {
     if (!content || !profile || !store) return;
-    const c = new SessionController({ userId: profile.id, subject, mode, topicId, questionCount: COUNT[mode], index: content, store });
+    let questionCount = COUNT[mode];
+    let plan;
+    if (mode === "PLAN") {
+      // Tagesplan: what is left of today's goal (a finished day gets an extra round of the same size).
+      const r = readiness(content, store, profile.id, subject);
+      questionCount = Math.max(4, r.doneToday >= r.goal ? r.goal : r.goal - r.doneToday);
+      plan = buildDailyPlan(content, store, profile.id, subject, questionCount);
+    }
+    const c = new SessionController({ userId: profile.id, subject, mode, topicId, questionCount, index: content, store, plan });
     ctrl.current = c;
     startedAt.current = Date.now();
     setElapsed(0);
@@ -236,11 +247,8 @@ export function SessionView() {
               {result.hint && <div className="mt-1 text-sm text-ink-2">💬 {result.hint}</div>}
               {result.checks && <WriteChecklist checks={result.checks} />}
               <div className="mt-1 text-sm text-ink-3">
-                Können in „{topic?.name}“: {formatNumber(result.newMasteryScore * 100, 0)} %{" "}
-                <span className={result.masteryDelta >= 0 ? "text-green" : "text-red"}>
-                  ({result.masteryDelta >= 0 ? "+" : ""}
-                  {formatNumber(result.masteryDelta * 100, 0)})
-                </span>
+                „{topic?.name}“: <strong className="text-ink">{LEVEL_LABEL[result.level]}</strong>
+                {result.levelUp && <span className="ml-2 font-semibold text-green">⬆ Aufgestiegen!</span>}
               </div>
             </div>
           </div>

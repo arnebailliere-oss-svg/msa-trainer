@@ -1,10 +1,11 @@
 import { Link, useNavigate, useParams } from "react-router-dom";
 import { useApp } from "@/app/state";
-import { ampelFor } from "@/core/mastery";
+import { LEVEL_LABEL } from "@/core/levels";
+import { ampelFor, levelFromMastery } from "@/core/mastery";
 import { ExplanationBlocks } from "@/ui/Explanation";
 import { MathText } from "@/ui/MathText";
 import { AskOwl } from "@/ui/Owl";
-import { Ampel, AMPEL_LABEL, Button, Chip, PageTitle, Ring } from "@/ui/primitives";
+import { Ampel, Button, Chip, PageTitle, Ring } from "@/ui/primitives";
 
 /** Topic page: lesson (if any) + practice entry point. */
 export function TopicView() {
@@ -17,6 +18,7 @@ export function TopicView() {
   const lesson = content.lessonFor(topic.id);
   const mastery = store.getMastery(profile.id, topic.id);
   const ampel = ampelFor(mastery);
+  const level = levelFromMastery(mastery);
   const questions = content.questionsInSubtree(topic.id).length;
   const parent = topic.parentId ? content.topicById(topic.parentId) : undefined;
 
@@ -31,15 +33,16 @@ export function TopicView() {
       <PageTitle
         title={topic.name}
         right={
-          <Ring value={mastery?.masteryScore ?? 0} size={64} color={`var(--${ampel.toLowerCase()})`}>
-            {Math.round((mastery?.masteryScore ?? 0) * 100)}%
+          <Ring value={level / 4} size={64} color={`var(--${ampel.toLowerCase()})`}>
+            <span className="text-sm font-bold">{level}/4</span>
           </Ring>
         }
       />
       <div className="mb-6 flex flex-wrap gap-2">
         <Chip tone={ampel === "RED" ? "red" : ampel === "YELLOW" ? "yellow" : "green"}>
-          <Ampel state={ampel} size={8} /> {AMPEL_LABEL[ampel]}
+          <Ampel state={ampel} size={8} /> {LEVEL_LABEL[level]}
         </Chip>
+        {topic.priority === 3 && <Chip tone="brand">⭐ wichtig für die Prüfung</Chip>}
         <Chip>{questions} Aufgaben</Chip>
         {mastery && <Chip>{mastery.attempts} mal geübt</Chip>}
       </div>

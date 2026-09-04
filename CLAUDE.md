@@ -55,7 +55,8 @@ content_packs/schema.v2.json
 
 ## Engine rules (docs/ALGORITHM.md)
 
-- Mastery: correct +0.03 (+0.01 speed bonus), wrong −0.06; stability +0.02 / −0.04; Ampel red < 0.45, green > 0.75 with stability > 0.55.
-- Selection priority = 0.45·weakness + 0.25·error rate + 0.20·recency + 0.10·(1 − stability).
+- Nachweis-Modell (`core/levels.ts`): a topic's level is recomputed from its last 6 attempts, never accumulated — Neu → Angefangen → Geübt (4 of 6) → Sicher (5 of 6, ≥ 2 at difficulty ≥ 3, on 2 days) → Prüfungsfest (correct exam-level answer ≥ 3 days after Sicher); idle > 14 days shows as Geübt with a check due. `masteryScore` is the projection [0, 0.2, 0.6, 0.85, 1] so the Ampel (red < 0.45, green > 0.75 with stability > 0.55) keeps working.
+- Tagesplan (`core/plan.ts`, mode PLAN, 12 tasks): due checks → repairs → next ladder topics in topics.json order (priority ≥ 2 first) → keep-warm. Prüfungsreife (`core/readiness.ts`) = priority-weighted share of topics ≥ Sicher; ready at ≥ 85 % + all priority-3 topics Sicher + one passed Prüfungs-Modus day (≥ 8 tasks, ≥ 60 %).
+- Schnelltraining selection priority = 0.45·weakness + 0.25·error rate + 0.20·recency + 0.10·(1 − stability).
 - Repair mode after a wrong answer: 2 same-topic questions (difficulty ≤ current), then 1 transfer question from sibling topics; correct transfer exits, wrong transfer restarts one level easier. Repair overrides selection. Attempt is persisted before mastery is updated.
 - Variants: seed = SHA-256(user|subject|topic|question|date|mode|counter); local RNG only; trig in degrees.

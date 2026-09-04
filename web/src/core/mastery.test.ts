@@ -1,32 +1,24 @@
 import { describe, expect, it } from "vitest";
-import { CORRECT_MASTERY_DELTA, CORRECT_STABILITY_DELTA, INCORRECT_MASTERY_DELTA, INCORRECT_STABILITY_DELTA, SPEED_BONUS, TARGET_TIMES_MS } from "./constants";
-import { computeAmpel, updateMastery } from "./mastery";
-import type { MasteryState } from "./types";
+import { LEVEL_MASTERY } from "./constants";
+import { EMPTY_LEVEL } from "./levels";
+import { ampelForLevel, computeAmpel, levelFromMastery, masteryFromLevel, newMasteryState } from "./mastery";
+import type { Level } from "./types";
 
-const base = (): MasteryState => ({ userId: "u", topicId: "t", masteryScore: 0.5, stability: 0.5, lastPracticedAt: null, attempts: 0 });
+const NOW = new Date("2026-09-02T12:00:00Z");
 
-describe("updateMastery", () => {
-  it("correct answer adds +0.03 / +0.02", () => {
-    const s = updateMastery(base(), true, 2, 40_000);
-    expect(s.masteryScore).toBeCloseTo(0.5 + CORRECT_MASTERY_DELTA);
-    expect(s.stability).toBeCloseTo(0.5 + CORRECT_STABILITY_DELTA);
-    expect(s.attempts).toBe(1);
-    expect(s.lastPracticedAt).not.toBeNull();
+describe("masteryFromLevel", () => {
+  it.each([0, 1, 2, 3, 4] as Level[])("level %i projects onto masteryScore and stability so the Ampel matches", (level) => {
+    const attempts = level === 0 ? 0 : 5;
+    const s = masteryFromLevel(newMasteryState("u", "t"), { ...EMPTY_LEVEL, level, lastPracticedAt: NOW.toISOString() }, NOW, attempts);
+    expect(s.masteryScore).toBe(LEVEL_MASTERY[level]);
+    expect(s.attempts).toBe(attempts);
+    expect(s.lastPracticedAt).toBe(NOW.toISOString());
+    expect(computeAmpel(s.masteryScore, s.stability)).toBe(ampelForLevel(level));
+    expect(levelFromMastery(s)).toBe(level);
   });
-  it("fast correct answer gets the speed bonus", () => {
-    const s = updateMastery(base(), true, 2, TARGET_TIMES_MS[2]! - 5000);
-    expect(s.masteryScore).toBeCloseTo(0.5 + CORRECT_MASTERY_DELTA + SPEED_BONUS);
-  });
-  it("incorrect answer subtracts 0.06 / 0.04", () => {
-    const s = updateMastery(base(), false, 2, 40_000);
-    expect(s.masteryScore).toBeCloseTo(0.5 + INCORRECT_MASTERY_DELTA);
-    expect(s.stability).toBeCloseTo(0.5 + INCORRECT_STABILITY_DELTA);
-  });
-  it("clamps to [0, 1]", () => {
-    expect(updateMastery({ ...base(), masteryScore: 0.99, stability: 0.99 }, true, 1, 1000).masteryScore).toBe(1);
-    expect(updateMastery({ ...base(), masteryScore: 0.99, stability: 0.99 }, true, 1, 1000).stability).toBe(1);
-    expect(updateMastery({ ...base(), masteryScore: 0.02, stability: 0.02 }, false, 1, 1000).masteryScore).toBe(0);
-    expect(updateMastery({ ...base(), masteryScore: 0.02, stability: 0.02 }, false, 1, 1000).stability).toBe(0);
+  it("a fresh topic with one attempt reads back as Angefangen", () => {
+    expect(levelFromMastery(undefined)).toBe(0);
+    expect(levelFromMastery({ ...newMasteryState("u", "t"), attempts: 1, masteryScore: LEVEL_MASTERY[1] })).toBe(1);
   });
 });
 

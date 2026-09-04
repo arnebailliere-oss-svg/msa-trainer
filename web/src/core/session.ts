@@ -6,7 +6,9 @@
 import { AVOID_RECENT_QUESTIONS } from "./constants";
 import type { ContentIndex } from "./contentIndex";
 import { evaluate } from "./evaluators";
-import { ampelFor, computeAmpel, newMasteryState, updateMastery } from "./mastery";
+import { topicLevel } from "./levels";
+import { ampelFor, computeAmpel, levelFromMastery, masteryFromLevel, newMasteryState } from "./mastery";
+import { difficultyResolver, type PlanSlot } from "./plan";
 import type { ProgressStore } from "./progress";
 import { randomRng, type Rng } from "./rng";
 import { activateRepair, isTransferQuestion, nextRepairQuestion, onRepairAnswer } from "./repair";
@@ -29,6 +31,8 @@ export interface SessionConfig {
   now?: () => Date;
   /** Exam mode: no repair loop, difficulty floor. */
   minDifficulty?: number;
+  /** PLAN mode: the Tagesplan slots, consumed in order (repair mode still overrides). */
+  plan?: PlanSlot[];
 }
 
 export class SessionController {
@@ -45,6 +49,7 @@ export class SessionController {
   private asked: string[] = [];
   private items: SessionItem[] = [];
   private lastResult: AttemptResult | null = null;
+  private planIndex = 0;
 
   constructor(private readonly cfg: SessionConfig) {
     this.rng = cfg.rng ?? randomRng();
@@ -107,11 +112,15 @@ export class SessionController {
       userAnswer: evaluation.normalizedAnswer,
       vars: q.vars,
       createdAt: now.toISOString(),
+      difficulty: q.difficulty,
+      mode: this.cfg.mode,
     };
     this.cfg.store.addAttempt(attempt);
 
+    // Nachweis-Modell: the level is recomputed from the recent attempts and projected onto the stored state.
     const before = this.cfg.store.getMastery(this.cfg.userId, q.topicId) ?? newMasteryState(this.cfg.userId, q.topicId);
-    const after = updateMastery(before, evaluation.isCorrect, q.difficulty, responseTimeMs, now);
+    const info = topicLevel(this.cfg.store.attempts(this.cfg.userId, q.topicId, 40), difficultyResolver(this.cfg.index), now);
+    const after = masteryFromLevel(before, info, now, before.attempts + 1);
     this.cfg.store.upsertMastery(after);
 
     this.answered += 1;
@@ -138,6 +147,9 @@ export class SessionController {
       masteryDelta: after.masteryScore - before.masteryScore,
       newMasteryScore: after.masteryScore,
       ampel: computeAmpel(after.masteryScore, after.stability),
+      level: info.level,
+      // Announced only for correct answers: Neu → Angefangen after a wrong answer is no achievement.
+      levelUp: evaluation.isCorrect && info.level > levelFromMastery(before),
       hint: evaluation.hint,
       inRepairMode: this.repair !== null,
       checks: evaluation.checks,
@@ -221,6 +233,18 @@ export class SessionController {
     const { index, store, userId, subject, mode } = this.cfg;
     let pool: Question[] = [];
     let topicId: string | undefined;
+
+    if (mode === "PLAN" && this.cfg.plan) {
+      // Tagesplan: take the slots in order; a slot whose topic has no fitting question is skipped.
+      while (this.planIndex < this.cfg.plan.length) {
+        const slot = this.cfg.plan[this.planIndex++]!;
+        let candidates = index.questionsByDifficulty(slot.topicId, slot.minDifficulty, slot.maxDifficulty).filter((q) => !avoid.has(q.id));
+        if (candidates.length === 0) candidates = index.questionsOf(slot.topicId).filter((q) => !avoid.has(q.id));
+        if (candidates.length === 0) candidates = index.questionsOf(slot.topicId);
+        if (candidates.length > 0) return this.rng.choice(candidates);
+      }
+      // Plan exhausted (repairs used up the count): continue like Schnelltraining.
+    }
 
     if (mode === "TOPIC" && this.cfg.topicId) {
       topicId = this.cfg.topicId;
