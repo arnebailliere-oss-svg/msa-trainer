@@ -299,8 +299,10 @@ export function SessionView() {
           )}
         </div>
       </div>
+      {/* Calculator — phones: a bottom sheet across the screen, never taller than the visible viewport (100dvh excludes
+          the browser chrome), scrolling inside so the display field stays reachable; desktop: floating bottom right. */}
       {showCalc && !noCalc && (
-        <div className="fixed bottom-20 right-3 z-30 anim-pop">
+        <div className="fixed inset-x-2 bottom-20 z-30 max-h-[calc(100dvh-6.5rem)] overflow-y-auto rounded-3xl anim-pop sm:inset-x-auto sm:right-3">
           <Calculator onClose={() => setShowCalc(false)} />
         </div>
       )}

@@ -56,6 +56,21 @@ test("no horizontal overflow on the main screens", async ({ page }) => {
   await page.goto(`${DEV}/#/session/PLAN/MATH`);
   await expect(page.getByText(/Tagesplan/)).toBeVisible();
   await check(page, "session");
+  // The calculator must open with its display field on screen (it used to hide behind the browser's address bar).
+  const calcButton = page.getByRole("button", { name: "Taschenrechner" });
+  if (await calcButton.isEnabled().catch(() => false)) {
+    const original = page.viewportSize();
+    await page.setViewportSize({ width: 375, height: 620 }); // small iPhone with the browser bars showing
+    await calcButton.click();
+    const display = page.getByLabel("Ausdruck");
+    await expect(display).toBeVisible();
+    const box = (await display.boundingBox())!;
+    expect(box.y, "calculator display above the viewport").toBeGreaterThanOrEqual(0);
+    expect(box.y + box.height, "calculator display below the viewport").toBeLessThanOrEqual(620);
+    await page.screenshot({ path: `e2e/screenshots/${test.info().project.name}-overflow-calculator.png` });
+    await page.getByRole("button", { name: "Schließen" }).click();
+    if (original) await page.setViewportSize(original);
+  }
   await page.goto(`${DEV}/#/eule/P_MATH_ZEICHEN`);
   await check(page, "eule");
   await page.goto(`${DEV}/#/hilfe`);

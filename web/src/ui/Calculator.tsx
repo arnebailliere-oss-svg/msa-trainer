@@ -83,7 +83,7 @@ export function Calculator({ onClose }: { onClose?: () => void }) {
             <button
               key={k}
               onClick={() => press(ins)}
-              className={`rounded-xl py-2.5 text-lg font-semibold transition-colors ${k === "=" ? "bg-linear-to-r from-brand to-brand-2 text-white" : op ? "bg-surface-2 hover:bg-line" : "bg-surface hover:bg-surface-2"}`}
+              className={`rounded-xl py-2 text-lg font-semibold transition-colors sm:py-2.5 ${k === "=" ? "bg-linear-to-r from-brand to-brand-2 text-white" : op ? "bg-surface-2 hover:bg-line" : "bg-surface hover:bg-surface-2"}`}
             >
               {k}
             </button>
