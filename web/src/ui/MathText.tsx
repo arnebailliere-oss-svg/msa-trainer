@@ -1,7 +1,7 @@
 /**
  * Rich text renderer for prompts, explanations and lessons.
  * Supports: paragraphs (blank line), "- " bullets, "1. " numbered steps, **bold**,
- * `$inline$` and `$$display$$` KaTeX, and preserved line breaks.
+ * `$inline$` and `$$display$$` KaTeX, `\$` for a literal dollar sign, and preserved line breaks.
  */
 
 import katex from "katex";
@@ -25,19 +25,25 @@ export function renderTex(tex: string, display: boolean): string {
 
 const ITALIC_RE = /(?<![*\w])\*(?!\*)([^*\n]+?)\*(?![*\w])/g;
 
+/** Placeholder for an escaped dollar (`\$`, e.g. "$30,000" in an English text) while math is detected. */
+const ESC_DOLLAR = "\uE000";
+const ESC_DOLLAR_RE = /\uE000/g;
+
 /** Math segments first (so `$…$` never gets mangled), then bold/italic inside the text runs. */
 function math(text: string, keyBase: string): ReactNode[] {
   const out: ReactNode[] = [];
+  const src = text.replace(/\\\$/g, ESC_DOLLAR);
+  const plain = (s: string) => s.replace(ESC_DOLLAR_RE, "$$");
   let last = 0;
   let k = 0;
-  for (const m of text.matchAll(MATH_RE)) {
-    if (m.index! > last) out.push(<Fragment key={`${keyBase}-t${k++}`}>{text.slice(last, m.index)}</Fragment>);
+  for (const m of src.matchAll(MATH_RE)) {
+    if (m.index! > last) out.push(<Fragment key={`${keyBase}-t${k++}`}>{plain(src.slice(last, m.index))}</Fragment>);
     const display = m[1] !== undefined;
-    const tex = m[1] ?? m[2] ?? "";
+    const tex = (m[1] ?? m[2] ?? "").replace(ESC_DOLLAR_RE, "\\$$");
     out.push(<span key={`${keyBase}-m${k++}`} className={display ? "block my-1" : undefined} dangerouslySetInnerHTML={{ __html: renderTex(tex, display) }} />);
     last = m.index! + m[0].length;
   }
-  if (last < text.length) out.push(<Fragment key={`${keyBase}-t${k++}`}>{text.slice(last)}</Fragment>);
+  if (last < src.length) out.push(<Fragment key={`${keyBase}-t${k++}`}>{plain(src.slice(last))}</Fragment>);
   return out;
 }
 

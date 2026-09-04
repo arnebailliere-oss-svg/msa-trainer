@@ -101,7 +101,8 @@ for (const t of topics) if (t.parentId && !topicById.has(t.parentId)) error(`top
 
 const MATH_INLINE = /\$\$([\s\S]+?)\$\$|\$([^$\n]+?)\$/g;
 function checkTex(where: string, text: string) {
-  for (const m of text.matchAll(MATH_INLINE)) {
+  // `\$` is a literal dollar sign (currency in English texts), never a math delimiter.
+  for (const m of text.replace(/\\\$/g, "").matchAll(MATH_INLINE)) {
     const tex = (m[1] ?? m[2] ?? "").replace(/(\d),(\d)/g, "$1{,}$2");
     // KaTeX reports missing glyphs (€, ‰ …) via console.warn — surface them per item instead.
     const warnings: string[] = [];
