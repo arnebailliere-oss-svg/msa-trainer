@@ -8,6 +8,7 @@ import { Calculator } from "@/ui/Calculator";
 import { ExplanationBlocks } from "@/ui/Explanation";
 import { FormulaSheetDrawer } from "@/ui/FormulaSheet";
 import { MathText } from "@/ui/MathText";
+import { AskOwl } from "@/ui/Owl";
 import { Button, Chip, ProgressBar, SUBJECT_LABEL } from "@/ui/primitives";
 import { isAnswerReady, QuestionRenderer } from "@/ui/renderers";
 
@@ -99,6 +100,13 @@ export function SessionView() {
 
   const topic = useMemo(() => (question && content ? content.topicById(question.topicId) : undefined), [question, content]);
   const lesson = useMemo(() => (question && content ? content.lessonFor(question.topicId) : undefined), [question, content]);
+  // Proactive Ferdinand: after two wrong answers in a row on this topic, offer the primer right in the feedback.
+  const owlPrimer = useMemo(() => {
+    if (!result || result.isCorrect || !lesson || !store || !profile || !question || mode === "MSA") return undefined;
+    const last = store.attempts(profile.id, question.topicId, 2);
+    if (last.length < 2 || last.some((a) => a.isCorrect)) return undefined;
+    return lesson.primer ?? lesson.sections.find((s) => s.primer)?.primer;
+  }, [result, lesson, store, profile, question, mode]);
 
   if (!content || !profile) return null;
   const c = ctrl.current;
@@ -194,6 +202,11 @@ export function SessionView() {
               </div>
             </div>
           </div>
+          {owlPrimer && (
+            <div className="mt-4">
+              <AskOwl primerId={owlPrimer} variant="card" eyebrow="Zweimal daneben? Kein Problem." />
+            </div>
+          )}
           <div className="mt-4">
             <ExplanationBlocks sections={result.explanation} />
           </div>
@@ -210,11 +223,11 @@ export function SessionView() {
         <div className="mx-auto flex max-w-3xl items-center gap-2">
           {subject === "MATH" && (
             <>
-              <Button variant="ghost" onClick={() => setShowCalc((v) => !v)} aria-pressed={showCalc} aria-label="Taschenrechner" disabled={noCalc} title={noCalc ? "Basisaufgabe: ohne Taschenrechner" : undefined}>
-                🧮
+              <Button variant="ghost" onClick={() => setShowCalc((v) => !v)} aria-pressed={showCalc} aria-label="Taschenrechner" disabled={noCalc} title={noCalc ? "Basisaufgabe: ohne Taschenrechner" : "Taschenrechner öffnen"}>
+                🧮 <span className="hidden text-sm sm:inline">Rechner</span>
               </Button>
-              <Button variant="ghost" onClick={() => setShowFormulas(true)} aria-label="Formelblatt">
-                📐
+              <Button variant="ghost" onClick={() => setShowFormulas(true)} aria-label="Formelblatt" title="Formelblatt öffnen">
+                📐 <span className="hidden text-sm sm:inline">Formeln</span>
               </Button>
             </>
           )}

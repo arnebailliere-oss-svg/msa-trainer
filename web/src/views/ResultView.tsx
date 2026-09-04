@@ -43,7 +43,7 @@ export function ResultView() {
           {stats.correctCount} von {stats.totalQuestions} richtig · {minutes < 1 ? "unter 1 Minute" : `${minutes} Min.`}
           {mode === "MSA" && items.length > 0 && ` · Ø ${avgSec} s pro Aufgabe`}
         </p>
-        {mode === "MSA" && <p className="mt-2 text-sm text-ink-3">Prüfungs-Check: Originalaufgaben aus MSA 2023–2025. Schau dir unten jede Aufgabe an, die nicht geklappt hat.</p>}
+        {mode === "MSA" && <p className="mt-2 text-sm text-ink-3">Prüfungs-Check mit Originalaufgaben aus den letzten MSA-Prüfungen. Schau dir unten jede Aufgabe an, die nicht geklappt hat.</p>}
       </div>
 
       {(stats.strengthenedTopics.length > 0 || stats.weakTopics.length > 0) && (

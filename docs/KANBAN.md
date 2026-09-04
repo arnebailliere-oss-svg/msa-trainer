@@ -1,6 +1,6 @@
 # MSA Trainer — Project Board
 
-> Source of truth for progress. Updated by Claude as work moves. Last update: 2026-09-04 01:30
+> Source of truth for progress. Updated by Claude as work moves. Last update: 2026-09-04 10:30
 >
 > Columns: **Backlog** → **In Progress** → **Review** (built, needs verification) → **Done** (verified).
 
@@ -25,6 +25,8 @@ teach → drill (fresh variants) → repeat (mastery + repair), Math first from 
 - E1 · Core port to TS (115 unit tests), persistence
 - E2-1 … E2-3 · Schema v2, validator (schema + semantics + 60-render template exercise + KaTeX + figure rendering), legacy migration with 3 fixes
 - E3-1 … E3-15 · All 16 Training sections of the 2027 e-book: 11 lessons, 139 templated drills, per-question sources
+- E3-21 · **Deutsch Prüfungs-Modus**: 31 original items from MSA Deutsch 2024 (Sprachwissen 151–160 and 251–257, Richtig schreiben 401–404, Überarbeiten 501–510) transcribed with Musterlösung, tagged exam/msa2024; free-text tasks turned into MCQ/CLOZE/MATCH with the original wording kept
+- E7-4 · **Proactive Ferdinand**: after two wrong answers in a row on a topic, the feedback shows the owl card for the primer of that topic (not in exam mode)
 - E3-18 · **Deutsch and Englisch built from the 2026 e-books**: engine gets `pick` variables (sentence banks → fresh variants, constraints, validator checks); 18 new topics; DE 6 lessons (Kommasetzung, Rechtschreibung, Sprachwissen, Stil/Fehler, Textverständnis, Erörterung) + 3 primers (Hauptsatz/Nebensatz, das/dass, Wortarten) + 22 bank drills + reading texts; EN 4 lessons (Tenses, Modals/if/questions/comparison, Listening/Reading, Writing/Mediation/Vocab) + 2 primers (Verbformen, Zeitformen) + 16 bank drills + matching/signs/article/vocab items; cloze parts render inline; e2e `deutsch.spec.ts`, `english.spec.ts`
 - E7-2 · **All 14 Eulen-Lektionen** (Zeichen, Brüche, Prozent, Terme/Rechengesetze, Gleichungen, Potenzen, LGS, Stochastik, Funktionen, Parabel/pq, Einheiten, Fläche/Umfang/Winkel, Pythagoras/Trig, Körper): 150 boards with Ferdinand lines, 100 vocab cards, 73 quiz questions; every lesson has the owl card and 26 dense sections carry badges
 - E7-3 · **Figure galleries in lessons**: sections may carry `figures: [{caption, figure}]`; 19 sections now draw every shape they mention (Rechteck, Quadrat, Parallelogramm, Dreieck mit Höhe, Trapez, Kreis, 5 Winkelarten, Konstruktionsdreieck, Quader, Zylinder, Pyramide, Kegel, Kugel, Baumdiagramm, Säulen/Kreisdiagramm, Geraden/Punkte); new generators `angle`, `pyramid`, `cone`, `sphere`; lesson figures now render in TopicView too; e2e `lessons.spec.ts`
@@ -48,7 +50,7 @@ teach → drill (fresh variants) → repeat (mastery + repair), Math first from 
 
 ### Content
 - E3-20 · DE: Ferdinand primers for Stilmittel and Erörterung; EN: primer for e-mail writing · M
-- E3-21 · DE/EN exam-tagged originals for the Prüfungs-Modus (currently math only) · M
+- E3-21b · DE exam 2023 (Simulation B) Sprachwissen/Rechtschreiben items; EN exam 2023/2024 reading tasks (signs, matching) as exam items · M
 - E3-19 · Optional: exam 2022 (text already extracted in scratch) · S
 
 ### UI

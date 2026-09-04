@@ -30,7 +30,7 @@ export function OwlBubble({ children, className = "" }: { children: React.ReactN
   );
 }
 
-export function AskOwl({ primerId, variant = "inline" }: { primerId: string; variant?: "inline" | "card" }) {
+export function AskOwl({ primerId, variant = "inline", eyebrow }: { primerId: string; variant?: "inline" | "card"; eyebrow?: string }) {
   const { content, profile, store } = useApp();
   const { pathname } = useLocation();
   const nav = useNavigate();
@@ -45,7 +45,7 @@ export function AskOwl({ primerId, variant = "inline" }: { primerId: string; var
       <div className="mb-5 flex items-start gap-3 rounded-3xl border border-yellow/40 bg-yellow-soft p-4 sm:gap-4 sm:p-5 anim-pop">
         <OwlAvatar size={56} />
         <div className="min-w-0 flex-1">
-          <div className="text-xs font-bold uppercase tracking-wide text-ink-3">Frag {OWL_NAME} · Grundlagen zuerst</div>
+          <div className="text-xs font-bold uppercase tracking-wide text-ink-3">{eyebrow ?? `Frag ${OWL_NAME} · Grundlagen zuerst`}</div>
           <div className="mt-0.5 text-lg font-bold">{primer.title}</div>
           <p className="mt-1 text-ink-2">{primer.teaser}</p>
           <div className="mt-3 flex flex-wrap items-center gap-3">
