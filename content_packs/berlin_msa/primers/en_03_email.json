@@ -1,0 +1,69 @@
+[
+  {
+    "id": "P_EN_EMAIL",
+    "subject": "EN",
+    "title": "Eine E-Mail auf Englisch: der Bauplan",
+    "teaser": "Die sechs Bausteine jeder E-Mail, formell oder informell, und was in der Prüfung Punkte bringt",
+    "hook": "In der Englischprüfung schreibst du fast immer eine E-Mail: an einen Freund, an eine Firma, als Antwort auf einen Blog. Alle diese E-Mails haben denselben Bauplan. Wenn du ihn einmal gesehen hast, musst du nur noch die Lücken füllen.",
+    "outro": "Subject, Greeting, Opening, Main part, Closing, Name. Formell oder informell entscheidet der Empfänger. Und am Ende die Wörter zählen. Jetzt in die Lektion.",
+    "steps": [
+      {
+        "title": "Sechs Bausteine",
+        "body": "**Subject** → **Dear …,** → erster Satz → Hauptteil → Schlussformel → Name",
+        "say": "Sechs Bausteine. Wer sie kennt, kann jede E-Mail-Aufgabe der Prüfung lösen."
+      },
+      {
+        "title": "Subject: der Betreff",
+        "body": "*Application for the internship*\n\n*Your project*\n\nKurz. Sagt, worum es geht.",
+        "say": "Ein Betreff ist kein Satz. Zwei bis fünf Wörter reichen."
+      },
+      {
+        "title": "Die Anrede",
+        "body": "**Dear Mr Brown,** (formell, Name bekannt)\n\n**Dear Sir or Madam,** (formell, Name unbekannt)\n\n**Hi Sarah,** / **Hey Tom,** (Freunde)",
+        "say": "Nach der Anrede kommt ein Komma. Die nächste Zeile beginnt trotzdem groß."
+      },
+      {
+        "title": "Der erste Satz",
+        "body": "formell: *I am writing to ask about …*\n\ninformell: *I hope you're doing well! Thanks for your mail.*",
+        "say": "Der erste Satz sagt, warum du schreibst. Oder er ist einfach freundlich."
+      },
+      {
+        "title": "Der Hauptteil",
+        "body": "Alle **Fragen** der Aufgabe beantworten.\n\nEin **Absatz** pro Punkt.\n\nEigene Fragen stellen: *What about you?*",
+        "say": "Lies die Aufgabe zweimal und hake jeden Punkt ab. Vergessene Punkte kosten am meisten."
+      },
+      {
+        "title": "Formell oder informell?",
+        "body": "Freund → **informell**: *I'm, don't, Thanks a lot, That sounds great!*\n\nFirma, Lehrer, Unbekannte → **formell**: *I am, do not, Could you please …, I would be grateful if …*",
+        "say": "Nie Chat-Sprache: kein wanna, gotta, u. Auch nicht an Freunde."
+      },
+      {
+        "title": "Die Schlussformel",
+        "body": "formell: **Yours sincerely,** (Name bekannt) · **Yours faithfully,** (Sir or Madam) · **Kind regards,**\n\ninformell: **Best wishes,** · **Take care,** · **See you soon,**",
+        "say": "Dann eine neue Zeile und dein Name. Fertig."
+      },
+      {
+        "title": "Die Wortzahl",
+        "body": "*Write 30–50 words.* / *Write at least 100 words.*\n\nZähle am Ende nach.\n\nZu kurz = Punkte weg.",
+        "say": "Lieber ein Satz mehr als einer zu wenig. Aber nicht mit leeren Sätzen auffüllen."
+      }
+    ],
+    "vocab": [
+      { "term": "subject", "plain": "Betreff, das Thema in wenigen Wörtern.", "example": "Application for the internship" },
+      { "term": "greeting", "plain": "Anrede.", "example": "Dear Mr Brown, / Hi Sarah," },
+      { "term": "opening sentence", "plain": "Der erste Satz: Grund oder freundlicher Einstieg.", "example": "I am writing to …" },
+      { "term": "main part", "plain": "Hauptteil: alle Punkte der Aufgabe.", "example": "ein Absatz pro Punkt" },
+      { "term": "closing phrase", "plain": "Schlussformel.", "example": "Yours sincerely, / Best wishes," },
+      { "term": "signature", "plain": "Dein Name am Ende.", "example": "Joe" },
+      { "term": "formal", "plain": "Förmlich: keine Kurzformen, höfliche Bitten.", "example": "I would be grateful if …" },
+      { "term": "informal", "plain": "Locker, an Freunde.", "example": "Thanks a lot for your mail!" }
+    ],
+    "quiz": [
+      { "prompt": "Welche Anrede passt an eine unbekannte Firma?", "choices": ["Dear Sir or Madam,", "Hey!", "Hi company,", "Dear all guys,"], "correct": "Dear Sir or Madam,", "explain": "Name unbekannt, formell: Dear Sir or Madam." },
+      { "prompt": "Welche Schlussformel ist formell?", "choices": ["Yours sincerely,", "Cheers,", "See ya,", "Love,"], "correct": "Yours sincerely,", "explain": "Yours sincerely nach einer Anrede mit Namen, Yours faithfully nach Dear Sir or Madam." },
+      { "prompt": "Was steht im Betreff (subject)?", "choices": ["Kurz das Thema der E-Mail", "Ein ganzer Satz mit Gruß", "Dein Name", "Das Datum"], "correct": "Kurz das Thema der E-Mail", "explain": "Zwei bis fünf Wörter, kein Satz." },
+      { "prompt": "Welche Formulierung ist informell?", "choices": ["Thanks a lot for your mail!", "I am writing to inquire about …", "I would be grateful if you could …", "Please find attached …"], "correct": "Thanks a lot for your mail!", "explain": "Kurz, freundlich, an einen Freund." },
+      { "prompt": "Was ist der häufigste Fehler im Hauptteil?", "choices": ["Fragen der Aufgabe vergessen", "Zu viele Absätze", "Zu höflich sein", "Zu kurze Wörter"], "correct": "Fragen der Aufgabe vergessen", "explain": "Jeder vergessene Punkt kostet Inhaltspunkte. Vorher abhaken." }
+    ]
+  }
+]

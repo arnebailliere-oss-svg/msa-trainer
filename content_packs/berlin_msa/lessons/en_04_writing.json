@@ -3,7 +3,17 @@
     "id": "L_EN_WRITING",
     "subject": "EN",
     "topicId": "EN_WRITE_EMAIL",
-    "alsoFor": ["EN_WRITE_GUIDED", "EN_WRITE_ERRORFIX", "EN_WRITE_MEDIATION", "EN_WRITE", "EN_VOCAB", "EN_VOCAB_SCHOOL", "EN_VOCAB_DAILYLIFE", "EN_VOCAB_TRAVEL", "EN_VOCAB_OPINIONS"],
+    "alsoFor": [
+      "EN_WRITE_GUIDED",
+      "EN_WRITE_ERRORFIX",
+      "EN_WRITE_MEDIATION",
+      "EN_WRITE",
+      "EN_VOCAB",
+      "EN_VOCAB_SCHOOL",
+      "EN_VOCAB_DAILYLIFE",
+      "EN_VOCAB_TRAVEL",
+      "EN_VOCAB_OPINIONS"
+    ],
     "title": "Writing: E-Mail, Bildbeschreibung, Mediation",
     "intro": "Im dritten Prüfungsteil schreibst du selbst: eine **Bildbeschreibung**, eine **E-Mail oder einen Brief** oder eine **Antwort auf einen Blog**. Oft steckt eine **Mediation** darin: ein deutscher Text, dessen Inhalt du auf Englisch weitergibst. Punkte gibt es für **Inhalt und Sprache**.",
     "source": "Adaptiert nach Prüfungshefte MSA Englisch Berlin 2026, Prüfungsteil 3 (Writing) und Checkliste Wortschatz",
@@ -16,12 +26,14 @@
       {
         "kind": "formula",
         "title": "Aufbau einer E-Mail",
-        "body": "**To:** Empfänger · **From:** du · **Subject:** kurz und sachlich\n\n**Greeting**: *Dear Mr Brown,* (formell) · *Hi Sarah,* / *Hey Tom,* (informell)\n\n**Opening sentence**: *I am writing to …* (formell) · *I hope you're doing well! Thanks for your mail.* (informell)\n\n**Main part**: Fragen beantworten, eigene Fragen stellen, Inhalte erklären. Ein Absatz pro Punkt.\n\n**Closing phrase**: *Yours sincerely, / Kind regards,* (formell) · *Best wishes, / Take care,* (informell)\n\n**Signature**: dein Name\n\nBei einem **Brief** kommt oben die Adresse des Empfängers dazu, sonst gleicher Aufbau."
+        "body": "**To:** Empfänger · **From:** du · **Subject:** kurz und sachlich\n\n**Greeting**: *Dear Mr Brown,* (formell) · *Hi Sarah,* / *Hey Tom,* (informell)\n\n**Opening sentence**: *I am writing to …* (formell) · *I hope you're doing well! Thanks for your mail.* (informell)\n\n**Main part**: Fragen beantworten, eigene Fragen stellen, Inhalte erklären. Ein Absatz pro Punkt.\n\n**Closing phrase**: *Yours sincerely, / Kind regards,* (formell) · *Best wishes, / Take care,* (informell)\n\n**Signature**: dein Name\n\nBei einem **Brief** kommt oben die Adresse des Empfängers dazu, sonst gleicher Aufbau.",
+        "primer": "P_EN_EMAIL"
       },
       {
         "kind": "formula",
         "title": "Formell oder informell?",
-        "body": "**Formell** (Bewerbung um ein Praktikum, unbekannte Person, Firma): keine Abkürzungen (*I am*, nicht *I'm*), höfliche Bitten (*Could you please …?*, *I would be grateful if …*), *Dear Sir or Madam* → *Yours faithfully*, *Dear Mr Brown* → *Yours sincerely*.\n\n**Informell** (Freund, Familie): *Hey!*, Kurzformen (*I'm, don't*), *Thanks a lot*, *That sounds great*, *Write back soon!*\n\nAber: **nie** völlig umgangssprachlich (*wanna, gotta, u, ya*). Grammatik bleibt korrekt, sonst gehen Sprachpunkte verloren."
+        "body": "**Formell** (Bewerbung um ein Praktikum, unbekannte Person, Firma): keine Abkürzungen (*I am*, nicht *I'm*), höfliche Bitten (*Could you please …?*, *I would be grateful if …*), *Dear Sir or Madam* → *Yours faithfully*, *Dear Mr Brown* → *Yours sincerely*.\n\n**Informell** (Freund, Familie): *Hey!*, Kurzformen (*I'm, don't*), *Thanks a lot*, *That sounds great*, *Write back soon!*\n\nAber: **nie** völlig umgangssprachlich (*wanna, gotta, u, ya*). Grammatik bleibt korrekt, sonst gehen Sprachpunkte verloren.",
+        "primer": "P_EN_EMAIL"
       },
       {
         "kind": "steps",
@@ -58,6 +70,7 @@
         "title": "Merke",
         "body": "**Inhalt + Sprache + Wortzahl.** E-Mail: Subject, Greeting, Opening, Main, Closing, Name. Bild: Überblick, Details, Deutung. Mediation: Sinn, nicht Wörter. Blog: alle Fragen + eigene Meinung mit Begründung."
       }
-    ]
+    ],
+    "primer": "P_EN_EMAIL"
   }
 ]

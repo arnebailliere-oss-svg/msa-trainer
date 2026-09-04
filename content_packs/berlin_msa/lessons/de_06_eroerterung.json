@@ -3,7 +3,11 @@
     "id": "L_DE_EROERTERUNG",
     "subject": "DE",
     "topicId": "DE_WRITE_EROERTERUNG",
-    "alsoFor": ["DE_WRITE_REPHRASE", "DE_WRITE_SUMMARY", "DE_WRITE"],
+    "alsoFor": [
+      "DE_WRITE_REPHRASE",
+      "DE_WRITE_SUMMARY",
+      "DE_WRITE"
+    ],
     "title": "Die Erörterung: Schreibplan und Aufbau",
     "intro": "Der letzte Prüfungsteil ist ein eigener Text: meist eine **dialektische Erörterung** zu einem vorgegebenen Thema. Der **Schreibplan** ist oft selbst Teil der Aufgabe und bringt Punkte. Wer den Aufbau kennt, kann nicht viel falsch machen.",
     "source": "Adaptiert nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 5 (Erörterung)",
@@ -16,12 +20,14 @@
       {
         "kind": "formula",
         "title": "Der Aufbau",
-        "body": "**Einleitung**\n\n- Anlass: ein Fakt, eine Statistik, ein Zitat oder eine kurze Anekdote, die Interesse weckt\n- Hinführung zum Thema und klare Fragestellung\n- Überleitung zum Hauptteil\n\n**Hauptteil**\n\n- **These** (eine Seite) mit Argumenten\n- **Gegenthese** (andere Seite) mit Argumenten\n- Jedes Argument: **Behauptung → Begründung → Beispiel/Beleg**\n\n**Schluss**\n\n- Eigene Position: pro oder kontra\n- Fazit\n- Ausblick, Empfehlung oder Appell"
+        "body": "**Einleitung**\n\n- Anlass: ein Fakt, eine Statistik, ein Zitat oder eine kurze Anekdote, die Interesse weckt\n- Hinführung zum Thema und klare Fragestellung\n- Überleitung zum Hauptteil\n\n**Hauptteil**\n\n- **These** (eine Seite) mit Argumenten\n- **Gegenthese** (andere Seite) mit Argumenten\n- Jedes Argument: **Behauptung → Begründung → Beispiel/Beleg**\n\n**Schluss**\n\n- Eigene Position: pro oder kontra\n- Fazit\n- Ausblick, Empfehlung oder Appell",
+        "primer": "P_DE_EROERTERUNG"
       },
       {
         "kind": "formula",
         "title": "Ein Argument, drei Bausteine",
-        "body": "**Behauptung**: *Soziale Medien fördern die Vereinsamung.*\n\n**Begründung**: *Viele kommunizieren lieber online, als sich persönlich zu treffen, und verlieren dabei soziale Kompetenz.*\n\n**Beispiel/Beleg**: *Studien zeigen, dass Jugendliche mit hoher Nutzungsdauer seltener Freunde treffen.*\n\nOhne Begründung ist eine Behauptung nur eine Meinung. Ohne Beispiel bleibt sie abstrakt."
+        "body": "**Behauptung**: *Soziale Medien fördern die Vereinsamung.*\n\n**Begründung**: *Viele kommunizieren lieber online, als sich persönlich zu treffen, und verlieren dabei soziale Kompetenz.*\n\n**Beispiel/Beleg**: *Studien zeigen, dass Jugendliche mit hoher Nutzungsdauer seltener Freunde treffen.*\n\nOhne Begründung ist eine Behauptung nur eine Meinung. Ohne Beispiel bleibt sie abstrakt.",
+        "primer": "P_DE_EROERTERUNG"
       },
       {
         "kind": "steps",
@@ -53,6 +59,7 @@
         "title": "Merke",
         "body": "**Einleitung** (Anlass, Frage) → **Hauptteil** (These + 3 Argumente, Gegenthese + 3 Argumente, jedes: Behauptung, Begründung, Beispiel) → **Schluss** (Position, Fazit, Empfehlung). Präsens, Absätze, Überleitungen, stärkstes Argument zuletzt."
       }
-    ]
+    ],
+    "primer": "P_DE_EROERTERUNG"
   }
 ]

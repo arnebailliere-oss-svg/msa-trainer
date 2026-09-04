@@ -1,0 +1,77 @@
+[
+  {
+    "id": "P_DE_STILMITTEL",
+    "subject": "DE",
+    "title": "Stilmittel: die Tricks der Sprache",
+    "teaser": "Was ein Stilmittel überhaupt ist, die sieben Tricks dahinter und wie du sie in drei Fragen findest",
+    "hook": "Werbung, Reden, Songtexte, Gedichte: Überall stecken kleine sprachliche Tricks, damit ein Satz auffällt. Diese Tricks heißen Stilmittel. In der Prüfung sollst du sie erkennen und beim Namen nennen. Wir fangen bei null an.",
+    "outro": "Wiederholung, Bild, Übertreibung, Frage, Form, Widerspruch. Sechs Familien, ein paar Namen. Jetzt kannst du die große Tabelle in der Lektion lesen.",
+    "steps": [
+      {
+        "title": "Was ist ein Stilmittel?",
+        "body": "Ein **Stilmittel** ist ein sprachlicher Trick.\n\nEr macht einen Satz **auffälliger**: schöner, stärker, lustiger.",
+        "say": "Der Satz sagt nicht mehr, aber er wirkt mehr. Darum benutzen Werbung und Politik diese Tricks ständig."
+      },
+      {
+        "title": "Trick 1: Wiederholen",
+        "body": "**Alliteration**: gleicher Anfangslaut\n\n*Milch macht müde Männer munter.*\n\n**Anapher**: gleiches Wort am Satzanfang\n\n*Wer war das? Wer hat das getan?*",
+        "say": "Wiederholung fällt auf und bleibt im Ohr. Das ist der älteste Trick von allen."
+      },
+      {
+        "title": "Trick 2: Bilder",
+        "body": "**Vergleich** mit *wie*: *stark wie ein Bär*\n\n**Metapher** ohne *wie*: *Er ist ein Bär.*",
+        "say": "Steht ein wie da, ist es ein Vergleich. Fehlt das wie, ist es eine Metapher. Das ist die häufigste Prüfungsfrage."
+      },
+      {
+        "title": "Trick 3: Dinge werden lebendig",
+        "body": "**Personifikation**\n\n*Die Sonne lacht.* *Der Wind flüstert.*\n\nEin Ding tut etwas, das nur Menschen können.",
+        "say": "Die Sonne kann nicht lachen. Genau das macht den Satz lebendig."
+      },
+      {
+        "title": "Trick 4: Übertreiben und Beschönigen",
+        "body": "**Hyperbel** (Übertreibung): *Ich habe dir das tausendmal gesagt.*\n\n**Euphemismus** (Beschönigung): *Seniorenresidenz* statt *Altersheim*",
+        "say": "Übertreiben macht stark, beschönigen macht sanft. Beide verändern die Wirkung, nicht die Tatsache."
+      },
+      {
+        "title": "Trick 5: Fragen ohne Antwort",
+        "body": "**Rhetorische Frage**\n\n*Wollen wir das wirklich?*\n\nDie Antwort ist klar. Die Frage soll nur wirken.",
+        "say": "Wenn jemand fragt und gar keine Antwort will, ist die Frage rhetorisch."
+      },
+      {
+        "title": "Trick 6: Die Form des Satzes",
+        "body": "**Klimax**, Steigerung: *Ich kam, sah, siegte.*\n\n**Parallelismus**, gleicher Satzbau: *Der Mensch läuft, der Fisch schwimmt.*\n\n**Ellipse**, etwas fehlt: *Erst die Arbeit, dann das Vergnügen.*",
+        "say": "Hier geht es nicht um einzelne Wörter, sondern darum, wie der Satz gebaut ist."
+      },
+      {
+        "title": "Trick 7: Widersprüche",
+        "body": "**Antithese**, Gegensatz: *Jung und Alt, Gut und Böse*\n\n**Oxymoron**, Widerspruch in einem Ausdruck: *alter Jüngling, Flüssiggas*",
+        "say": "Gegensätze machen neugierig. Darum stehen sie so oft in Überschriften."
+      },
+      {
+        "title": "So findest du es",
+        "body": "1. **Wiederholt** sich etwas?\n\n2. Ist es ein **Bild**? Mit *wie* → Vergleich. Ohne *wie* → Metapher. Ein Ding handelt → Personifikation.\n\n3. **Übertrieben, beschönigt, Frage, Widerspruch, Steigerung?**",
+        "say": "Drei Fragen, und du hast das Stilmittel. In der Prüfung: Namen nennen und die Stelle zitieren."
+      }
+    ],
+    "vocab": [
+      { "term": "Stilmittel", "plain": "Ein sprachlicher Trick, der einen Satz auffälliger macht.", "example": "Metapher, Vergleich, Anapher …" },
+      { "term": "Alliteration", "plain": "Gleicher Anfangslaut.", "example": "Milch macht müde Männer munter" },
+      { "term": "Anapher", "plain": "Gleiches Wort am Anfang mehrerer Sätze.", "example": "Wer? Wer? Wer?" },
+      { "term": "Vergleich", "plain": "Zwei Dinge mit *wie* verbunden.", "example": "stark wie ein Bär" },
+      { "term": "Metapher", "plain": "Ein Bild ohne *wie*.", "example": "Er ist ein Bär." },
+      { "term": "Personifikation", "plain": "Ein Ding handelt wie ein Mensch.", "example": "Die Sonne lacht." },
+      { "term": "Hyperbel", "plain": "Übertreibung.", "example": "tausendmal gesagt" },
+      { "term": "Euphemismus", "plain": "Beschönigung.", "example": "Seniorenresidenz" },
+      { "term": "Rhetorische Frage", "plain": "Frage ohne erwartete Antwort.", "example": "Wollen wir das wirklich?" },
+      { "term": "Klimax", "plain": "Steigerung.", "example": "Ich kam, sah, siegte." },
+      { "term": "Ellipse", "plain": "Unvollständiger Satz.", "example": "Erst die Arbeit, dann das Vergnügen." }
+    ],
+    "quiz": [
+      { "prompt": "„stark wie ein Bär“ ist …", "choices": ["ein Vergleich", "eine Metapher", "eine Personifikation", "eine Anapher"], "correct": "ein Vergleich", "explain": "Das Wort *wie* verrät den Vergleich." },
+      { "prompt": "„Die Sonne lacht.“ ist …", "choices": ["eine Personifikation", "ein Vergleich", "eine Ellipse", "eine Klimax"], "correct": "eine Personifikation", "explain": "Ein Ding (Sonne) tut etwas Menschliches (lachen)." },
+      { "prompt": "„Milch macht müde Männer munter.“ ist …", "choices": ["eine Alliteration", "eine Metapher", "eine Hyperbel", "eine Antithese"], "correct": "eine Alliteration", "explain": "Alle Wörter beginnen mit m." },
+      { "prompt": "„Ich warte schon eine Ewigkeit.“ ist …", "choices": ["eine Hyperbel", "ein Euphemismus", "ein Vergleich", "eine Ellipse"], "correct": "eine Hyperbel", "explain": "Eine Ewigkeit wartet niemand: Übertreibung." },
+      { "prompt": "Woran erkennst du einen Vergleich?", "choices": ["Am Wort wie", "Am Fragezeichen", "Am Komma", "An der Großschreibung"], "correct": "Am Wort wie", "explain": "Vergleich = mit *wie*. Metapher = ohne *wie*." }
+    ]
+  }
+]

@@ -1,0 +1,75 @@
+[
+  {
+    "id": "P_DE_EROERTERUNG",
+    "subject": "DE",
+    "title": "Die Erörterung von Anfang an",
+    "teaser": "Was eine Erörterung ist, was These und Argument bedeuten und wie der Text von der Einleitung bis zum Schluss gebaut wird",
+    "hook": "Eine Erörterung klingt nach etwas Großem. Dabei ist sie nur ein Text, der eine Frage von zwei Seiten anschaut und am Ende entscheidet, wie ein Richter. Wenn du den Bauplan kennst, kann dir beim Schreiben wenig passieren.",
+    "outro": "Einleitung, Pro, Kontra, Schluss. These, Argument, Begründung, Beispiel. Mit diesen Wörtern kannst du jetzt die Lektion und jeden Schreibplan lesen.",
+    "steps": [
+      {
+        "title": "Was ist eine Erörterung?",
+        "body": "Ein Text, in dem du eine **Frage** von **zwei Seiten** betrachtest.\n\n*Sind soziale Medien gut für uns?*\n\nDafür. Dagegen. Und am Ende: deine Meinung.",
+        "say": "Kein Aufsatz über deine Gefühle. Ein Text, der abwägt wie ein Richter."
+      },
+      {
+        "title": "Drei Teile",
+        "body": "**Einleitung**: Warum reden wir darüber?\n\n**Hauptteil**: Pro und Kontra\n\n**Schluss**: deine Meinung und ein Fazit",
+        "say": "Jede Erörterung hat diese drei Teile. Wer sie sauber hat, hat schon die halbe Note."
+      },
+      {
+        "title": "Die Einleitung",
+        "body": "Ein **Aufhänger**: eine Zahl, ein Zitat, eine kleine Geschichte.\n\nDann die **Frage**.\n\n*Jeder Zweite schaut vor dem Frühstück aufs Handy. Aber tut uns das gut?*",
+        "say": "Die Einleitung soll neugierig machen. Und sie verrät noch nicht, was du denkst."
+      },
+      {
+        "title": "Was ist eine These?",
+        "body": "Eine **These** ist eine Behauptung, die man begründen kann.\n\n*Soziale Medien sind eine Bereicherung.*\n\nDie **Gegenthese** sagt das Gegenteil.",
+        "say": "These heißt nur: Standpunkt. Nicht Wahrheit. Darum braucht sie Argumente."
+      },
+      {
+        "title": "Was ist ein Argument?",
+        "body": "**Behauptung**: Soziale Medien fördern Einsamkeit.\n\n**Begründung**: weil viele lieber online chatten, als sich zu treffen.\n\n**Beispiel**: Studien zeigen, dass Vielnutzer seltener Freunde treffen.",
+        "say": "Drei B: Behauptung, Begründung, Beispiel. Ohne Begründung ist es nur eine Meinung."
+      },
+      {
+        "title": "Der Hauptteil",
+        "body": "These + 3 Argumente\n\nGegenthese + 3 Argumente\n\nJedes Argument ein **eigener Absatz**.\n\nDas stärkste Argument **zuletzt**.",
+        "say": "Das Letzte bleibt hängen. Darum kommt das stärkste Argument ganz ans Ende jeder Seite."
+      },
+      {
+        "title": "Der Schluss",
+        "body": "Jetzt erst: **deine Meinung**.\n\nEin **Fazit**: Was wiegt schwerer?\n\nEine **Empfehlung**: Was sollte man tun?",
+        "say": "Im Schluss darfst du endlich Ich sagen. Vorher bleibst du neutral."
+      },
+      {
+        "title": "Der Schreibplan",
+        "body": "Bevor du schreibst: eine **Tabelle**.\n\nEinleitung · These + 3 Argumente · Gegenthese + 3 Argumente · Schluss\n\nDer Plan gibt in der Prüfung **eigene Punkte**.",
+        "say": "Fünf Minuten Plan sparen zwanzig Minuten Chaos. Und der Plan wird sogar bezahlt."
+      },
+      {
+        "title": "Wörter, die verbinden",
+        "body": "*Ein weiterer Vorteil ist …*\n\n*Jedoch …* · *Andererseits …*\n\n*Zu guter Letzt …*\n\n*Insgesamt …*",
+        "say": "Überleitungen sind die Brücken zwischen deinen Absätzen. Ohne sie holpert der Text."
+      }
+    ],
+    "vocab": [
+      { "term": "Erörterung", "plain": "Text, der eine Frage von zwei Seiten abwägt.", "example": "dialektisch = Pro und Kontra" },
+      { "term": "These", "plain": "Ein Standpunkt, den man begründen kann.", "example": "Soziale Medien sind eine Bereicherung." },
+      { "term": "Gegenthese", "plain": "Der entgegengesetzte Standpunkt.", "example": "Soziale Medien schaden." },
+      { "term": "Argument", "plain": "Behauptung + Begründung + Beispiel.", "example": "die drei B" },
+      { "term": "Begründung", "plain": "Das Warum hinter einer Behauptung.", "example": "…, weil …" },
+      { "term": "Beispiel / Beleg", "plain": "Etwas Konkretes, das die Begründung zeigt.", "example": "eine Studie, eine Zahl, eine Erfahrung" },
+      { "term": "Fazit", "plain": "Das Ergebnis am Ende.", "example": "Insgesamt überwiegen …" },
+      { "term": "Schreibplan", "plain": "Die Tabelle vor dem Schreiben.", "example": "Gliederungsraster" },
+      { "term": "Überleitung", "plain": "Ein Satz, der Absätze verbindet.", "example": "Ein weiterer Vorteil ist …" }
+    ],
+    "quiz": [
+      { "prompt": "Aus welchen drei Teilen besteht eine Erörterung?", "choices": ["Einleitung, Hauptteil, Schluss", "These, Beispiel, Fazit", "Frage, Antwort, Meinung", "Anfang, Mitte, Appell"], "correct": "Einleitung, Hauptteil, Schluss", "explain": "Diese drei Teile hat jede Erörterung." },
+      { "prompt": "Was ist eine These?", "choices": ["Eine Behauptung, die man begründen kann", "Eine Frage", "Ein Beispiel", "Eine Zusammenfassung"], "correct": "Eine Behauptung, die man begründen kann", "explain": "Ein Standpunkt, kein Beweis. Darum braucht sie Argumente." },
+      { "prompt": "Welcher Satz ist eine Begründung?", "choices": ["…, weil viele lieber online chatten, als sich zu treffen.", "Soziale Medien sind schlecht.", "Ich finde Handys toll.", "Man sollte Handys verbieten."], "correct": "…, weil viele lieber online chatten, als sich zu treffen.", "explain": "Eine Begründung erklärt das Warum, oft mit *weil*." },
+      { "prompt": "Wo steht deine eigene Meinung?", "choices": ["Im Schluss", "In der Einleitung", "Im ersten Argument", "In jedem Absatz"], "correct": "Im Schluss", "explain": "Vorher bleibst du neutral und wägst ab." },
+      { "prompt": "Welches Argument kommt zuletzt?", "choices": ["Das stärkste", "Das schwächste", "Das kürzeste", "Das ist egal"], "correct": "Das stärkste", "explain": "Das Letzte bleibt beim Leser hängen." }
+    ]
+  }
+]

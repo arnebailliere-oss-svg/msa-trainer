@@ -1,6 +1,6 @@
 # MSA Trainer — Project Board
 
-> Source of truth for progress. Updated by Claude as work moves. Last update: 2026-09-04 10:30
+> Source of truth for progress. Updated by Claude as work moves. Last update: 2026-09-04
 >
 > Columns: **Backlog** → **In Progress** → **Review** (built, needs verification) → **Done** (verified).
 
@@ -21,10 +21,14 @@ teach → drill (fresh variants) → repeat (mastery + repair), Math first from 
 - E4-12 · PWA install/offline on a real phone · S
 
 ## Done
+- E4-19 · **Onboarding: Willkommens-Tour + Hilfeseite** — the app now explains itself. One source of truth (`web/src/ui/guide.tsx`, 11 chapters with non-interactive replicas of the real controls) rendered twice: as a 7-step modal tour Ferdinand shows every new profile once (`ui/WelcomeTour.tsx`, keyboard-driven, „seen“ per profile in localStorage, replayable) and as the permanent page `#/hilfe` (`views/HelpView.tsx`) with a chapter jump bar. Covers: Fach wechseln, Frag Ferdinand, Eule→Lektion→Aufgaben, die vier Trainings, Ampel/Können-%, Taschenrechner (mit Syntax-Tabelle) + Formelblatt, Reparatur-Modus, Tastatur, Sicherung, PWA-Installation. Entry points: ❓ Hilfe im Header (auch ohne Profil), „So funktioniert's“ auf der Startseite und im Dashboard. Dazu: Label „Fach wählen“ über den Fach-Tabs, Textlabels „Rechner“/„Formeln“ an den Session-Werkzeugen; e2e `help.spec.ts`.
 - E0 · Repo, scaffold, board
 - E1 · Core port to TS (115 unit tests), persistence
 - E2-1 … E2-3 · Schema v2, validator (schema + semantics + 60-render template exercise + KaTeX + figure rendering), legacy migration with 3 fixes
 - E3-1 … E3-15 · All 16 Training sections of the 2027 e-book: 11 lessons, 139 templated drills, per-question sources
+- E3-21b · **Deutsch exam 2023**: 26 original items (Sprachwissen 151–156 and 251–256, Richtig schreiben 401–404, Überarbeiten 501–508, 510) with Musterlösung, tagged exam/msa2023
+- E3-22a · **Englisch Prüfungs-Modus**: MSA 2024 Reading Part 1 (Quebec tours: MATCH + 5 second-tour items), Part 2 (6 short texts reconstructed around the key sentences, statements original), Part 3 (Voluntourism article with all 9 questions) tagged exam/msa2024
+- E3-20 · **Primers** Stilmittel, Erörterung (DE) and E-Mail (EN) with badges on their lessons: 22 Eulen-Lektionen in total
 - E3-21 · **Deutsch Prüfungs-Modus**: 31 original items from MSA Deutsch 2024 (Sprachwissen 151–160 and 251–257, Richtig schreiben 401–404, Überarbeiten 501–510) transcribed with Musterlösung, tagged exam/msa2024; free-text tasks turned into MCQ/CLOZE/MATCH with the original wording kept
 - E7-4 · **Proactive Ferdinand**: after two wrong answers in a row on a topic, the feedback shows the owl card for the primer of that topic (not in exam mode)
 - E3-18 · **Deutsch and Englisch built from the 2026 e-books**: engine gets `pick` variables (sentence banks → fresh variants, constraints, validator checks); 18 new topics; DE 6 lessons (Kommasetzung, Rechtschreibung, Sprachwissen, Stil/Fehler, Textverständnis, Erörterung) + 3 primers (Hauptsatz/Nebensatz, das/dass, Wortarten) + 22 bank drills + reading texts; EN 4 lessons (Tenses, Modals/if/questions/comparison, Listening/Reading, Writing/Mediation/Vocab) + 2 primers (Verbformen, Zeitformen) + 16 bank drills + matching/signs/article/vocab items; cloze parts render inline; e2e `deutsch.spec.ts`, `english.spec.ts`
@@ -49,12 +53,13 @@ teach → drill (fresh variants) → repeat (mastery + repair), Math first from 
 ## Backlog
 
 ### Content
-- E3-20 · DE: Ferdinand primers for Stilmittel and Erörterung; EN: primer for e-mail writing · M
-- E3-21b · DE exam 2023 (Simulation B) Sprachwissen/Rechtschreiben items; EN exam 2023/2024 reading tasks (signs, matching) as exam items · M
+- E3-22 · EN exam 2023 reading tasks (Boston matching, signs, article) · M
+- E3-23 · Passage feature: several exam questions share one long text instead of repeating it · S
 - E3-19 · Optional: exam 2022 (text already extracted in scratch) · S
 
 ### UI
 - E4-13 · Accessibility pass: focus states, contrast, keyboard for MATCH · S
+- E4-20 · **Mobile layout viewport**: on an emulated phone the dashboard forces `innerWidth` 593 px (start page: 412), i.e. Chromium zooms the page out — some element's min-content is too wide. Costs readability on phones and breaks Playwright hit-testing for overlays (the mobile half of `help.spec.ts` skips one test because of it). Pre-existing, found 2026-09-04. · S
 
 ### Release
 - E5-6b · PWA install + offline check on a real phone against the live URL · S
