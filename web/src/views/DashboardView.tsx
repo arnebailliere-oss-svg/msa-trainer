@@ -131,7 +131,7 @@ export function DashboardView() {
       </div>
 
       {/* Modes */}
-      <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="mt-5 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4">
         <ModeCard
           title={planDone ? "Heute geschafft ✓" : `Heute: ${r.goal} Aufgaben`}
           desc={planDone ? "Tagesziel erreicht. Lust auf eine Extra-Runde?" : `${r.doneToday} von ${r.goal} gemacht · Checks, Fehler, nächste Themen`}
@@ -178,7 +178,9 @@ export function DashboardView() {
       {data.groups.map((g) => (
         <section key={g.parent?.id ?? "root"} className="mt-5">
           <h3 className="mb-2 text-sm font-bold uppercase tracking-wider text-ink-3">{g.parent?.name ?? "Weitere"}</h3>
-          <div className="grid gap-2.5 sm:grid-cols-2">
+          {/* grid-cols-1 = minmax(0, 1fr): without it the auto track takes the cards' min-content width
+              (the truncated title) and widens the phone's layout viewport. */}
+          <div className="grid grid-cols-1 gap-2.5 sm:grid-cols-2">
             {g.topics.map(({ topic, ampel, level, priority, count, hasLesson }) => (
               <div key={topic.id} className="glass flex items-center gap-3 p-3.5 transition-colors hover:bg-surface-2">
                 <Ampel state={ampel} />

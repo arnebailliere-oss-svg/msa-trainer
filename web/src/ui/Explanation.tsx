@@ -37,7 +37,7 @@ export function ExplanationBlocks({ sections, compact = false }: { sections: Con
         const title = s.title ?? m.title;
         const figureSvg = s.figureSvg ?? safeFigure(s.figure);
         return (
-          <section key={i} className={`rounded-2xl border-l-4 bg-surface px-4 py-3 ${m.tone} anim-pop`} style={{ animationDelay: `${Math.min(i, 6) * 40}ms` }}>
+          <section key={i} className={`overflow-x-auto rounded-2xl border-l-4 bg-surface px-4 py-3 ${m.tone} anim-pop`} style={{ animationDelay: `${Math.min(i, 6) * 40}ms` }}>
             {(title || m.icon) && (
               <h3 className="mb-1 flex flex-wrap items-center gap-2 text-sm font-bold uppercase tracking-wide text-ink-2">
                 {m.icon && <span aria-hidden>{m.icon}</span>}
