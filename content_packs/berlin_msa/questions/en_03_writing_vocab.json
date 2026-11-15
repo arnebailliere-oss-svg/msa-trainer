@@ -6,10 +6,51 @@
     "difficulty": 1,
     "qtype": "MATCH",
     "prompt": "Match the parts of an e-mail with the examples.",
-    "payload": { "left": ["Subject", "Greeting", "Opening sentence", "Closing phrase"], "right": ["An example for your project", "Dear Ms Smith, / Hey Sarah,", "I hope you're doing well! I'm writing because …", "Best wishes, / Kind regards,"] },
-    "solution": { "pairs": [["Subject", "An example for your project"], ["Greeting", "Dear Ms Smith, / Hey Sarah,"], ["Opening sentence", "I hope you're doing well! I'm writing because …"], ["Closing phrase", "Best wishes, / Kind regards,"]] },
-    "explanation": [{ "kind": "what", "body": "Aufbau: **To / From / Subject** → **Greeting** (Dear …) → **Opening sentence** → **Main part** (Antworten, Fragen, Erklärung) → **Closing phrase** → **Signature** (Name)." }],
-    "tags": ["writing", "email"],
+    "payload": {
+      "left": [
+        "Subject",
+        "Greeting",
+        "Opening sentence",
+        "Closing phrase"
+      ],
+      "right": [
+        "An example for your project",
+        "Dear Ms Smith, / Hey Sarah,",
+        "I hope you're doing well! I'm writing because …",
+        "Best wishes, / Kind regards,"
+      ]
+    },
+    "solution": {
+      "pairs": [
+        [
+          "Subject",
+          "An example for your project"
+        ],
+        [
+          "Greeting",
+          "Dear Ms Smith, / Hey Sarah,"
+        ],
+        [
+          "Opening sentence",
+          "I hope you're doing well! I'm writing because …"
+        ],
+        [
+          "Closing phrase",
+          "Best wishes, / Kind regards,"
+        ]
+      ]
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "Die sechs Teile einer E-Mail",
+        "body": "| Teil | Beispiel |\n| --- | --- |\n| Subject (Betreff) | *An example for your project* |\n| Greeting (Anrede) | *Dear Ms Smith,* oder *Hey Sarah,* |\n| Opening sentence (erster Satz) | *I hope you're doing well!* |\n| Main part (Hauptteil) | die Antworten, ein Absatz pro Frage |\n| Closing phrase (Schluss) | *Best wishes,* oder *Kind regards,* |\n| Name | dein Name in einer eigenen Zeile |"
+      }
+    ],
+    "tags": [
+      "writing",
+      "email"
+    ],
     "source": "Nach Prüfungshefte MSA Englisch Berlin 2026, Prüfungsteil 3 Writing (Bestandteile einer E-Mail)"
   },
   {
@@ -19,13 +60,33 @@
     "difficulty": 2,
     "qtype": "MCQ",
     "prompt": "Is this phrase **formal** or **informal**?\n\n„{{s_phrase}}“",
-    "payload": { "choices": ["formal", "informal", "It is not correct English"] },
-    "solution": { "correct_choice": "{{s_loesung}}" },
+    "payload": {
+      "choices": [
+        "formal",
+        "informal",
+        "It is not correct English"
+      ]
+    },
+    "solution": {
+      "correct_choice": "{{s_loesung}}"
+    },
     "explanation": [
-      { "kind": "what", "body": "{{s_grund}}" },
-      { "kind": "remember", "body": "**Formal** (Bewerbung, Behörde, unbekannte Person): *Dear Sir or Madam, I am writing to …, I would be grateful if …, Yours sincerely*. **Informal** (Freunde, Familie): *Hey!, Thanks a lot for your mail, wanna, gotta, Cheers*. In der Prüfung nie **völlig** umgangssprachlich." }
+      {
+        "kind": "what",
+        "title": "Warum",
+        "body": "{{s_grund}}"
+      },
+      {
+        "kind": "remember",
+        "title": "Formell oder informell?",
+        "body": "|  | Formell (an Fremde) | Informell (an Freunde) |\n| --- | --- | --- |\n| Anrede | *Dear Sir or Madam,* | *Hi Emma,* |\n| Erster Satz | *I am writing to …* | *Thanks for your e-mail!* |\n| Bitte | *I would be grateful if …* | *Can you …?* |\n| Schluss | *Yours sincerely,* | *Best wishes,* |\n\nChat-Sprache wie *u*, *thx* oder *wanna* ist in der Prüfung immer falsch, auch an Freunde."
+      }
     ],
-    "tags": ["writing", "register", "drill"],
+    "tags": [
+      "writing",
+      "register",
+      "drill"
+    ],
     "source": "Nach Prüfungshefte MSA Englisch Berlin 2026, Writing (Exkurs formelle und informelle Sprache)",
     "variants": {
       "enabled": true,
@@ -33,18 +94,66 @@
         "s": {
           "type": "pick",
           "from": [
-            { "phrase": "Dear Sir or Madam,", "loesung": "formal", "grund": "Anrede an eine unbekannte Person in einem offiziellen Brief." },
-            { "phrase": "Hey there!", "loesung": "informal", "grund": "Lockere Begrüßung unter Freunden." },
-            { "phrase": "I am writing to apply for the internship advertised on your website.", "loesung": "formal", "grund": "Bewerbungssatz, vollständig und sachlich." },
-            { "phrase": "Wanna come over on Saturday?", "loesung": "informal", "grund": "*wanna* = want to, Umgangssprache." },
-            { "phrase": "Yours sincerely,", "loesung": "formal", "grund": "Formelle Schlussformel nach einer Anrede mit Namen (Dear Mr Brown)." },
-            { "phrase": "Cheers, Tom", "loesung": "informal", "grund": "*Cheers* als Schluss ist locker und britisch-umgangssprachlich." },
-            { "phrase": "I would be grateful if you could send me further information.", "loesung": "formal", "grund": "Höfliche, förmliche Bitte." },
-            { "phrase": "Gotta go, see ya!", "loesung": "informal", "grund": "*gotta*, *see ya*: Chat-Sprache." },
-            { "phrase": "Please find attached my CV.", "loesung": "formal", "grund": "Standardsatz in Bewerbungs-E-Mails." },
-            { "phrase": "That's so cool!", "loesung": "informal", "grund": "Ausruf unter Freunden." },
-            { "phrase": "I look forward to hearing from you.", "loesung": "formal", "grund": "Förmlicher Schlusssatz (beachte: *to hearing*, -ing-Form)." },
-            { "phrase": "Thanks a lot for your mail!", "loesung": "informal", "grund": "Freundlich-locker, passt an einen Freund." }
+            {
+              "phrase": "Dear Sir or Madam,",
+              "loesung": "formal",
+              "grund": "So beginnt eine E-Mail an eine Person, deren Namen man nicht kennt, zum Beispiel an eine Firma. Das ist formell."
+            },
+            {
+              "phrase": "Hey there!",
+              "loesung": "informal",
+              "grund": "So begrüßt man Freunde. In einer E-Mail an einen Fremden wäre das zu locker."
+            },
+            {
+              "phrase": "I am writing to apply for the internship advertised on your website.",
+              "loesung": "formal",
+              "grund": "Der Satz ist vollständig, sachlich und ohne Kurzformen. So schreibt man in einer Bewerbung."
+            },
+            {
+              "phrase": "Do you want to come over on Saturday?",
+              "loesung": "informal",
+              "grund": "Das ist eine direkte Einladung an einen Freund. In einer formellen E-Mail würde man *Would you like to …?* schreiben."
+            },
+            {
+              "phrase": "Yours sincerely,",
+              "loesung": "formal",
+              "grund": "Mit *Yours sincerely* endet eine formelle E-Mail, die mit *Dear Mr …* oder *Dear Ms …* begonnen hat."
+            },
+            {
+              "phrase": "Cheers, Tom",
+              "loesung": "informal",
+              "grund": "*Cheers* ist ein lockerer britischer Gruß unter Freunden."
+            },
+            {
+              "phrase": "I would be grateful if you could send me further information.",
+              "loesung": "formal",
+              "grund": "*I would be grateful if …* bedeutet: Ich wäre dankbar, wenn … Das ist eine sehr höfliche Bitte."
+            },
+            {
+              "phrase": "See you soon!",
+              "loesung": "informal",
+              "grund": "So verabschiedet man sich von Freunden. Formell wäre *I look forward to hearing from you.*"
+            },
+            {
+              "phrase": "Please find attached my CV.",
+              "loesung": "formal",
+              "grund": "Dieser Satz steht in Bewerbungen. Er bedeutet: Im Anhang finden Sie meinen Lebenslauf."
+            },
+            {
+              "phrase": "That's so cool!",
+              "loesung": "informal",
+              "grund": "Das ist ein Ausruf unter Freunden. In einer formellen E-Mail hat er keinen Platz."
+            },
+            {
+              "phrase": "I look forward to hearing from you.",
+              "loesung": "formal",
+              "grund": "So endet eine formelle E-Mail. Der Satz bedeutet: Ich freue mich auf Ihre Antwort. Nach *to* steht hier die Form mit -ing."
+            },
+            {
+              "phrase": "Thanks a lot for your mail!",
+              "loesung": "informal",
+              "grund": "Das ist freundlich und locker. Formell würde man *Thank you for your e-mail* schreiben."
+            }
           ]
         }
       }
@@ -57,12 +166,29 @@
     "difficulty": 2,
     "qtype": "MCQ",
     "prompt": "Welche Formulierung passt in eine **{{s_art}}** E-Mail als **{{s_teil}}**?",
-    "payload": { "choices": ["{{s_a}}", "{{s_b}}", "{{s_c}}", "{{s_d}}"] },
-    "solution": { "correct_choice": "{{s_a}}" },
+    "payload": {
+      "choices": [
+        "{{s_a}}",
+        "{{s_b}}",
+        "{{s_c}}",
+        "{{s_d}}"
+      ]
+    },
+    "solution": {
+      "correct_choice": "{{s_a}}"
+    },
     "explanation": [
-      { "kind": "what", "body": "{{s_grund}}" }
+      {
+        "kind": "what",
+        "title": "Warum",
+        "body": "{{s_grund}}"
+      }
     ],
-    "tags": ["writing", "email", "drill"],
+    "tags": [
+      "writing",
+      "email",
+      "drill"
+    ],
     "source": "Nach Prüfungshefte MSA Englisch Berlin 2026, Writing (Struktur von E-Mails und Briefen)",
     "variants": {
       "enabled": true,
@@ -70,16 +196,96 @@
         "s": {
           "type": "pick",
           "from": [
-            { "art": "formelle", "teil": "Anrede", "a": "Dear Mr Brown,", "b": "Hi Brown!", "c": "Hey you,", "d": "Dear Mr Brown!", "grund": "Formell: *Dear* + Titel + Nachname, danach ein Komma." },
-            { "art": "informelle", "teil": "Anrede", "a": "Hi Sarah,", "b": "Dear Sir or Madam,", "c": "To whom it may concern,", "d": "Dear Ms Sarah Doe,", "grund": "An eine Freundin: *Hi* oder *Hey* + Vorname." },
-            { "art": "formelle", "teil": "Schlussformel", "a": "Yours sincerely, Joe Müller", "b": "Cheers, Joe", "c": "See ya, Joe", "d": "Love, Joe", "grund": "Formell: *Yours sincerely* (bei Anrede mit Namen) oder *Yours faithfully* (bei Dear Sir or Madam)." },
-            { "art": "informelle", "teil": "Schlussformel", "a": "Best wishes, Joe", "b": "Yours faithfully, Joe Müller", "c": "Sincerely yours, Mr J. Müller", "d": "With respect, J. Müller", "grund": "An Freunde: *Best wishes*, *All the best*, *Take care*." },
-            { "art": "formelle", "teil": "erster Satz", "a": "I am writing to ask about the summer language course.", "b": "Hey, what's up with the summer course?", "c": "So, the summer course, right?", "d": "Wanna tell me about the course?", "grund": "Formell: *I am writing to …* + Grund der E-Mail." },
-            { "art": "informelle", "teil": "erster Satz", "a": "I hope you're doing well! Thanks for your last mail.", "b": "I am writing with reference to your correspondence.", "c": "Dear Sir, I hereby respond.", "d": "To whom it may concern: thanks.", "grund": "An Freunde: freundlicher Einstieg, Bezug auf die letzte Mail." },
-            { "art": "formelle", "teil": "Bitte", "a": "Could you please send me more information?", "b": "Send me the info, ok?", "c": "Gimme the info!", "d": "I want the info now.", "grund": "Höfliche Bitte mit *Could you please …?* oder *I would be grateful if …*." },
-            { "art": "informelle", "teil": "Frage", "a": "Do you want to come to the concert with me?", "b": "Would you be so kind as to consider attending the concert?", "c": "I request your presence at the concert.", "d": "Please confirm your attendance at the concert.", "grund": "Direkte, freundliche Frage an einen Freund." },
-            { "art": "formelle", "teil": "Betreffzeile", "a": "Application for the internship (summer 2026)", "b": "hey!!!", "c": "question", "d": "u there?", "grund": "Der Betreff nennt kurz und sachlich das Thema." },
-            { "art": "informelle", "teil": "letzter Satz vor dem Gruß", "a": "Hope to hear from you soon!", "b": "I look forward to your prompt reply.", "c": "Awaiting your response.", "d": "Kindly revert at the earliest.", "grund": "Locker und freundlich: *Hope to hear from you soon!* oder *Write back soon!*" }
+            {
+              "art": "formelle",
+              "teil": "Anrede",
+              "a": "Dear Mr Brown,",
+              "b": "Hi Brown!",
+              "c": "Hey you,",
+              "d": "Dear Mr Brown!",
+              "grund": "Formell schreibt man *Dear*, dann *Mr* oder *Ms* und den Nachnamen. Danach steht ein Komma und kein Ausrufezeichen."
+            },
+            {
+              "art": "informelle",
+              "teil": "Anrede",
+              "a": "Hi Sarah,",
+              "b": "Dear Sir or Madam,",
+              "c": "To whom it may concern,",
+              "d": "Dear Ms Sarah Doe,",
+              "grund": "An eine Freundin schreibt man *Hi* oder *Hey* und den Vornamen. *Dear Sir or Madam* ist für Fremde."
+            },
+            {
+              "art": "formelle",
+              "teil": "Schlussformel",
+              "a": "Yours sincerely, Joe Müller",
+              "b": "Cheers, Joe",
+              "c": "See ya, Joe",
+              "d": "Love, Joe",
+              "grund": "Nach einer Anrede mit Namen endet eine formelle E-Mail mit *Yours sincerely*. *Cheers* und *Love* sind für Freunde."
+            },
+            {
+              "art": "informelle",
+              "teil": "Schlussformel",
+              "a": "Best wishes, Joe",
+              "b": "Yours faithfully, Joe Müller",
+              "c": "Sincerely yours, Mr J. Müller",
+              "d": "With respect, J. Müller",
+              "grund": "An Freunde passen *Best wishes* oder *Take care*. *Yours faithfully* gehört in eine formelle E-Mail."
+            },
+            {
+              "art": "formelle",
+              "teil": "erster Satz",
+              "a": "I am writing to ask about the summer language course.",
+              "b": "Hey, what's up with the summer course?",
+              "c": "So, the summer course, right?",
+              "d": "Wanna tell me about the course?",
+              "grund": "Eine formelle E-Mail beginnt mit *I am writing to …* und nennt den Grund. Die anderen Sätze sind zu locker oder Chat-Sprache."
+            },
+            {
+              "art": "informelle",
+              "teil": "erster Satz",
+              "a": "I hope you're doing well! Thanks for your last mail.",
+              "b": "I am writing with reference to your correspondence.",
+              "c": "Dear Sir, I hereby respond.",
+              "d": "To whom it may concern: thanks.",
+              "grund": "An Freunde beginnt man freundlich und bezieht sich auf die letzte Nachricht. Die anderen Sätze klingen wie ein Brief an eine Behörde."
+            },
+            {
+              "art": "formelle",
+              "teil": "Bitte",
+              "a": "Could you please send me more information?",
+              "b": "Send me the info, ok?",
+              "c": "Gimme the info!",
+              "d": "I want the info now.",
+              "grund": "Eine höfliche Bitte beginnt mit *Could you please …?* Die anderen Sätze sind Befehle oder Chat-Sprache."
+            },
+            {
+              "art": "informelle",
+              "teil": "Frage",
+              "a": "Do you want to come to the concert with me?",
+              "b": "Would you be so kind as to consider attending the concert?",
+              "c": "I request your presence at the concert.",
+              "d": "Please confirm your attendance at the concert.",
+              "grund": "An einen Freund stellt man eine direkte, freundliche Frage. Die anderen Sätze klingen wie eine Einladung von einer Firma."
+            },
+            {
+              "art": "formelle",
+              "teil": "Betreffzeile",
+              "a": "Application for the internship (summer 2026)",
+              "b": "hey!!!",
+              "c": "question",
+              "d": "u there?",
+              "grund": "Der Betreff nennt kurz und sachlich das Thema. Ein Betreff wie *question* sagt zu wenig, und Chat-Sprache ist falsch."
+            },
+            {
+              "art": "informelle",
+              "teil": "letzter Satz vor dem Gruß",
+              "a": "Hope to hear from you soon!",
+              "b": "I look forward to your prompt reply.",
+              "c": "Awaiting your response.",
+              "d": "Kindly revert at the earliest.",
+              "grund": "Unter Freunden schreibt man *Hope to hear from you soon!* Die anderen Sätze gehören in eine geschäftliche E-Mail."
+            }
           ]
         }
       }
@@ -92,13 +298,34 @@
     "difficulty": 2,
     "qtype": "MCQ",
     "prompt": "Which sentence is correct English?",
-    "payload": { "choices": ["{{s_a}}", "{{s_b}}", "{{s_c}}", "{{s_d}}"] },
-    "solution": { "correct_choice": "{{s_a}}" },
+    "payload": {
+      "choices": [
+        "{{s_a}}",
+        "{{s_b}}",
+        "{{s_c}}",
+        "{{s_d}}"
+      ]
+    },
+    "solution": {
+      "correct_choice": "{{s_a}}"
+    },
     "explanation": [
-      { "kind": "what", "body": "{{s_grund}}" },
-      { "kind": "remember", "body": "Typische deutsche Fehler: *I have 15 years* ✗, *since five years* ✗, *at Monday* ✗, *I did a mistake* ✗, *She said me* ✗, *interested for* ✗, *look forward to hear* ✗." }
+      {
+        "kind": "what",
+        "title": "Warum",
+        "body": "{{s_grund}}"
+      },
+      {
+        "kind": "remember",
+        "title": "Typische Fehler aus dem Deutschen",
+        "body": "| Falsch | Richtig |\n| --- | --- |\n| *I have 15 years.* | *I am 15.* |\n| *since five years* | *for five years* |\n| *at Monday* | *on Monday* |\n| *I did a mistake.* | *I made a mistake.* |\n| *She said me …* | *She told me …* |\n| *interested for* | *interested in* |\n| *look forward to hear* | *look forward to hearing* |"
+      }
     ],
-    "tags": ["writing", "errors", "drill"],
+    "tags": [
+      "writing",
+      "errors",
+      "drill"
+    ],
     "source": "Typische Fehler deutscher Lernender (Rahmenlehrplan Englisch, Schreiben)",
     "variants": {
       "enabled": true,
@@ -106,20 +333,104 @@
         "s": {
           "type": "pick",
           "from": [
-            { "a": "I am 15 years old.", "b": "I have 15 years.", "c": "I am 15 years.", "d": "I have 15 years old.", "grund": "Alter mit **be**: *I am 15 (years old)*." },
-            { "a": "She is interested in music.", "b": "She is interested for music.", "c": "She is interested on music.", "d": "She interests for music.", "grund": "*interested **in***." },
-            { "a": "He has lived in Berlin since 2019.", "b": "Since 2019 he lives in Berlin.", "c": "He lives in Berlin since 2019.", "d": "He is living in Berlin since 2019.", "grund": "*since* + Zeitpunkt → **Present Perfect**." },
-            { "a": "I look forward to hearing from you.", "b": "I look forward to hear from you.", "c": "I look forward hearing from you.", "d": "I am looking forward hear from you.", "grund": "*look forward to* + **-ing**." },
-            { "a": "Can you help me with my homework?", "b": "Can you help me by my homework?", "c": "Can you help me at my homework?", "d": "Can you help me for my homework?", "grund": "*help somebody **with** something*." },
-            { "a": "I made a mistake.", "b": "I did a mistake.", "c": "I maked a mistake.", "d": "I have did a mistake.", "grund": "*make a mistake* (nicht do), Simple Past: **made**." },
-            { "a": "She told me that she was tired.", "b": "She said me that she was tired.", "c": "She told to me that she was tired.", "d": "She said to me she is tired that.", "grund": "*tell **somebody*** oder *say **to** somebody*." },
-            { "a": "There are many people in the park.", "b": "There is many people in the park.", "c": "It has many people in the park.", "d": "There have many people in the park.", "grund": "Mehrzahl: *there **are***. „Es gibt“ = *there is/are*, nicht *it has*." },
-            { "a": "I have been learning English for five years.", "b": "I learn English since five years.", "c": "I am learning English since five years.", "d": "I have been learning English since five years.", "grund": "Dauer → **for**; bis jetzt → Present Perfect (Progressive)." },
-            { "a": "On Monday we have a test.", "b": "At Monday we have a test.", "c": "In Monday we have a test.", "d": "Monday we have test.", "grund": "Wochentage: **on** Monday. Uhrzeiten: at 6 pm. Monate: in May." },
-            { "a": "Let's meet at 6 pm at the station.", "b": "Let's meet us at 6 pm at the station.", "c": "Let's meet at 6 pm on the station.", "d": "Let's meet at 6 pm in station.", "grund": "*meet* ohne *us*; *at* the station." },
-            { "a": "I don't have any money.", "b": "I haven't no money.", "c": "I don't have no money.", "d": "I have not any money no.", "grund": "Nur **eine** Verneinung: *don't have any* (oder *have no money*)." },
-            { "a": "My brother is taller than me.", "b": "My brother is more tall than me.", "c": "My brother is taller as me.", "d": "My brother is taller then me.", "grund": "Kurzes Adjektiv + **-er**, Vergleich mit **than** (nicht as, nicht then)." },
-            { "a": "I'm looking for my keys.", "b": "I'm searching my keys.", "c": "I'm looking my keys.", "d": "I'm looking after my keys.", "grund": "*look **for*** = suchen. (*look after* = sich kümmern um)" }
+            {
+              "a": "I am 15 years old.",
+              "b": "I have 15 years.",
+              "c": "I am 15 years.",
+              "d": "I have 15 years old.",
+              "grund": "Das Alter sagt man im Englischen mit *am*. Dazu passt die Zahl allein oder die Zahl mit *years old*. *I have 15 years* ist Wort für Wort übertragen und falsch."
+            },
+            {
+              "a": "She is interested in music.",
+              "b": "She is interested for music.",
+              "c": "She is interested on music.",
+              "d": "She interests for music.",
+              "grund": "*Interested* und *in* gehören fest zusammen, auch wenn es im Deutschen für heißt."
+            },
+            {
+              "a": "He has lived in Berlin since 2019.",
+              "b": "Since 2019 he lives in Berlin.",
+              "c": "He lives in Berlin since 2019.",
+              "d": "He is living in Berlin since 2019.",
+              "grund": "*Since 2019* nennt den Anfang, und er wohnt immer noch dort. Dafür steht das Present Perfect: *has lived*. *Lives since* ist die deutsche Denkweise."
+            },
+            {
+              "a": "I look forward to hearing from you.",
+              "b": "I look forward to hear from you.",
+              "c": "I look forward hearing from you.",
+              "d": "I am looking forward hear from you.",
+              "grund": "Nach *look forward to* steht die Form mit -ing: *hearing*. Das *to* gehört hier fest zu *look forward*."
+            },
+            {
+              "a": "Can you help me with my homework?",
+              "b": "Can you help me by my homework?",
+              "c": "Can you help me at my homework?",
+              "d": "Can you help me for my homework?",
+              "grund": "Im Englischen hilft man jemandem *with* etwas. *By* und *at* sind aus dem Deutschen übertragen."
+            },
+            {
+              "a": "I made a mistake.",
+              "b": "I did a mistake.",
+              "c": "I maked a mistake.",
+              "d": "I have did a mistake.",
+              "grund": "Einen Fehler macht man mit *make*, und die Vergangenheit von *make* heißt *made*. *Did a mistake* ist falsch."
+            },
+            {
+              "a": "She told me that she was tired.",
+              "b": "She said me that she was tired.",
+              "c": "She told to me that she was tired.",
+              "d": "She said to me she is tired that.",
+              "grund": "Nach *tell* steht direkt die Person: *told me*. Nach *say* kann die Person nicht direkt stehen."
+            },
+            {
+              "a": "There are many people in the park.",
+              "b": "There is many people in the park.",
+              "c": "It has many people in the park.",
+              "d": "There have many people in the park.",
+              "grund": "*People* sind mehrere, deshalb heißt es *there are*. Das deutsche es gibt übersetzt man nicht mit *it has*."
+            },
+            {
+              "a": "I have been learning English for five years.",
+              "b": "I learn English since five years.",
+              "c": "I am learning English since five years.",
+              "d": "I have been learning English since five years.",
+              "grund": "Fünf Jahre sind eine Dauer, deshalb *for*. Und weil es bis jetzt andauert, steht das Present Perfect Progressive."
+            },
+            {
+              "a": "On Monday we have a test.",
+              "b": "At Monday we have a test.",
+              "c": "In Monday we have a test.",
+              "d": "Monday we have test.",
+              "grund": "Wochentage bekommen *on*. *At* steht bei Uhrzeiten und *in* bei Monaten."
+            },
+            {
+              "a": "Let's meet at 6 pm at the station.",
+              "b": "Let's meet us at 6 pm at the station.",
+              "c": "Let's meet at 6 pm on the station.",
+              "d": "Let's meet at 6 pm in station.",
+              "grund": "*Meet* braucht im Englischen kein *us*. Und am Bahnhof heißt *at the station*."
+            },
+            {
+              "a": "I don't have any money.",
+              "b": "I haven't no money.",
+              "c": "I don't have no money.",
+              "d": "I have not any money no.",
+              "grund": "Im Englischen gibt es in einem Satz nur eine Verneinung. Nach *don't* steht deshalb *any* und nicht *no*."
+            },
+            {
+              "a": "My brother is taller than me.",
+              "b": "My brother is more tall than me.",
+              "c": "My brother is taller as me.",
+              "d": "My brother is taller then me.",
+              "grund": "*Tall* ist kurz und bekommt -er. Das deutsche als heißt beim Vergleich *than*, nicht *as* und nicht *then*."
+            },
+            {
+              "a": "I'm looking for my keys.",
+              "b": "I'm searching my keys.",
+              "c": "I'm looking my keys.",
+              "d": "I'm looking after my keys.",
+              "grund": "Suchen heißt *look for*. *Look after* bedeutet sich kümmern um, und nach *search* müsste ebenfalls *for* stehen."
+            }
           ]
         }
       }
@@ -132,10 +443,28 @@
     "difficulty": 1,
     "qtype": "MCQ",
     "prompt": "Wofür gibt es beim Schreiben Punkte?",
-    "payload": { "choices": ["Für Inhalt und für Sprache", "Nur für richtige Grammatik", "Nur für die Länge des Textes", "Nur für schöne Handschrift"] },
-    "solution": { "correct_choice": "Für Inhalt und für Sprache" },
-    "explanation": [{ "kind": "what", "body": "**Inhalt**: alle Punkte der Aufgabe bearbeitet, klar strukturiert, passend zum Adressaten. **Sprache**: verständlich, wenige Fehler, abwechslungsreicher Wortschatz, einfache und komplexe Sätze. Und: die **Mindestwortzahl** einhalten." }],
-    "tags": ["writing", "bewertung"],
+    "payload": {
+      "choices": [
+        "Für Inhalt und für Sprache",
+        "Nur für richtige Grammatik",
+        "Nur für die Länge des Textes",
+        "Nur für schöne Handschrift"
+      ]
+    },
+    "solution": {
+      "correct_choice": "Für Inhalt und für Sprache"
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "Warum",
+        "body": "| Dafür gibt es Punkte | Das heißt für dich |\n| --- | --- |\n| Inhalt | Alle Fragen und Punkte der Aufgabe sind beantwortet. |\n| Sprache | Man versteht dich, und die Sätze sind richtig gebaut. |\n| Länge | Die verlangte Wortzahl ist erreicht. |\n\nGrammatik allein reicht also nicht. Und die Handschrift wird nicht bewertet, solange man sie lesen kann."
+      }
+    ],
+    "tags": [
+      "writing",
+      "bewertung"
+    ],
     "source": "Nach Prüfungshefte MSA Englisch Berlin 2026, Writing (Hinweise zur Bewertung)"
   },
   {
@@ -145,10 +474,28 @@
     "difficulty": 2,
     "qtype": "MCQ",
     "prompt": "Was ist bei einer **Mediation** (Übertragungsaufgabe) gefragt?",
-    "payload": { "choices": ["Die wichtigsten Informationen in eigenen Worten auf Englisch wiedergeben", "Den deutschen Text Wort für Wort übersetzen", "Den Text auf Deutsch zusammenfassen", "Nur die Überschrift übersetzen"] },
-    "solution": { "correct_choice": "Die wichtigsten Informationen in eigenen Worten auf Englisch wiedergeben" },
-    "explanation": [{ "kind": "what", "body": "Mediation ist **keine** Übersetzung. Du überträgst den **Inhalt** (z. B. vier Aspekte aus einem Artikel) in vollständigen englischen Sätzen, meist als E-Mail an einen Freund." }],
-    "tags": ["writing", "mediation"],
+    "payload": {
+      "choices": [
+        "Die wichtigsten Informationen in eigenen Worten auf Englisch wiedergeben",
+        "Den deutschen Text Wort für Wort übersetzen",
+        "Den Text auf Deutsch zusammenfassen",
+        "Nur die Überschrift übersetzen"
+      ]
+    },
+    "solution": {
+      "correct_choice": "Die wichtigsten Informationen in eigenen Worten auf Englisch wiedergeben"
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "Warum",
+        "body": "Bei der Mediation gibst du den Inhalt weiter und nicht die einzelnen Wörter. Du sagst die verlangten Punkte in einfachen englischen Sätzen, meistens in einer E-Mail an einen Freund.\n\nEine Übersetzung Wort für Wort ist nicht verlangt und führt zu Fehlern. Eine Zusammenfassung auf Deutsch hilft dem englischen Freund nicht."
+      }
+    ],
+    "tags": [
+      "writing",
+      "mediation"
+    ],
     "source": "Nach Prüfungshefte MSA Englisch Berlin 2026, Writing (Mediation)"
   },
   {
@@ -158,13 +505,33 @@
     "difficulty": 3,
     "qtype": "MCQ",
     "prompt": "Mediation: Wie gibst du diesen Satz **sinngemäß** auf Englisch wieder?\n\n„{{s_de}}“",
-    "payload": { "choices": ["{{s_a}}", "{{s_b}}", "{{s_c}}", "{{s_d}}"] },
-    "solution": { "correct_choice": "{{s_a}}" },
+    "payload": {
+      "choices": [
+        "{{s_a}}",
+        "{{s_b}}",
+        "{{s_c}}",
+        "{{s_d}}"
+      ]
+    },
+    "solution": {
+      "correct_choice": "{{s_a}}"
+    },
     "explanation": [
-      { "kind": "what", "body": "{{s_grund}}" },
-      { "kind": "remember", "body": "Nicht Wort für Wort: Suche den **Sinn** und sag ihn mit einfachen, richtigen englischen Sätzen. Lieber ein kurzer korrekter Satz als eine wörtliche Übersetzung mit Fehlern." }
+      {
+        "kind": "what",
+        "title": "Warum",
+        "body": "{{s_grund}}"
+      },
+      {
+        "kind": "remember",
+        "body": "- Frag dich zuerst auf Deutsch: Was ist eigentlich gemeint?\n- Sag diesen Sinn dann in einem kurzen, einfachen englischen Satz.\n- Ein kurzer richtiger Satz ist besser als eine wörtliche Übertragung mit Fehlern."
+      }
     ],
-    "tags": ["writing", "mediation", "drill"],
+    "tags": [
+      "writing",
+      "mediation",
+      "drill"
+    ],
     "source": "Nach Prüfungshefte MSA Englisch Berlin 2026, Writing (Mediation, Artikel Lennart Wronkowitz)",
     "variants": {
       "enabled": true,
@@ -172,14 +539,70 @@
         "s": {
           "type": "pick",
           "from": [
-            { "de": "Lennart hat sich autodidaktisch weitergebildet.", "a": "Lennart taught himself.", "b": "Lennart has himself autodidactically further educated.", "c": "Lennart learned by a teacher.", "d": "Lennart made an education.", "grund": "*autodidaktisch* = selbst beigebracht → *taught himself*." },
-            { "de": "Er sticht durch seine extravagante Kleidung hervor.", "a": "He stands out because of his extravagant clothes.", "b": "He stings out through his clothes.", "c": "He is standing outside with clothes.", "d": "His clothes are sticking out of him.", "grund": "*hervorstechen* = auffallen → *stand out*." },
-            { "de": "Das Feedback auf den Auftritt war überwältigend.", "a": "The feedback on the show was overwhelming.", "b": "The feedback was over-walling.", "c": "The feedback of the appearance was too much.", "d": "The show got an overwhelming.", "grund": "*überwältigend* = *overwhelming*; *Auftritt* = show/appearance." },
-            { "de": "Er erwägt, die Schule kurz vor dem Abitur zu verlassen.", "a": "He is thinking about leaving school shortly before his final exams.", "b": "He weighs to leave the school short before Abitur.", "c": "He considers the school leaving before the Abitur short.", "d": "He wants to leave the school before he has exam.", "grund": "*erwägen* = *think about / consider*; *Abitur* = *final exams* (A-levels)." },
-            { "de": "Sein Ziel ist es, den Modeolymp zu erklimmen.", "a": "His goal is to make it to the top of the fashion world.", "b": "His goal is to climb the fashion Olympus mountain.", "c": "He wants to climb on the mode.", "d": "His aim is the Olympic Games of fashion.", "grund": "Bild auflösen: *Modeolymp erklimmen* = ganz nach oben in der Modewelt." },
-            { "de": "An Selbstbewusstsein mangelt es ihm nicht.", "a": "He is not short of self-confidence.", "b": "At self-consciousness it lacks him not.", "c": "He has no self-conscious.", "d": "He is missing self-confidence.", "grund": "*es mangelt nicht an* = er hat genug → *is not short of* / *has plenty of*. Vorsicht: *self-conscious* heißt *befangen*." },
-            { "de": "Mit 14 entdeckte er seine Leidenschaft für Design.", "a": "At the age of 14 he discovered his passion for design.", "b": "With 14 he discovered his passion for design.", "c": "In 14 years he found his passion.", "d": "He discovered with 14 design.", "grund": "*mit 14* = *at the age of 14* (nicht *with 14*)." },
-            { "de": "Seine T-Shirts sind besonders gefragt.", "a": "His T-shirts are especially popular.", "b": "His T-shirts are especially asked.", "c": "His T-shirts are much questioned.", "d": "His T-shirts get many questions.", "grund": "*gefragt sein* = beliebt → *popular / in demand*, nicht *asked*." }
+            {
+              "de": "Lennart hat sich autodidaktisch weitergebildet.",
+              "a": "Lennart taught himself.",
+              "b": "Lennart has himself autodidactically further educated.",
+              "c": "Lennart learned by a teacher.",
+              "d": "Lennart made an education.",
+              "grund": "Autodidaktisch bedeutet, dass er es sich selbst beigebracht hat. Das sagst du einfach: *taught himself*. Die wörtliche Übertragung versteht niemand."
+            },
+            {
+              "de": "Er sticht durch seine extravagante Kleidung hervor.",
+              "a": "He stands out because of his extravagant clothes.",
+              "b": "He stings out through his clothes.",
+              "c": "He is standing outside with clothes.",
+              "d": "His clothes are sticking out of him.",
+              "grund": "Hervorstechen bedeutet auffallen. Dafür gibt es *stand out*. Das deutsche Bild Wort für Wort zu übertragen ergibt keinen Sinn."
+            },
+            {
+              "de": "Das Feedback auf den Auftritt war überwältigend.",
+              "a": "The feedback on the show was overwhelming.",
+              "b": "The feedback was over-walling.",
+              "c": "The feedback of the appearance was too much.",
+              "d": "The show got an overwhelming.",
+              "grund": "Überwältigend heißt *overwhelming*, und der Auftritt ist hier *the show*. Die anderen Sätze sind wörtlich übertragen oder unvollständig."
+            },
+            {
+              "de": "Er erwägt, die Schule kurz vor dem Abitur zu verlassen.",
+              "a": "He is thinking about leaving school shortly before his final exams.",
+              "b": "He weighs to leave the school short before Abitur.",
+              "c": "He considers the school leaving before the Abitur short.",
+              "d": "He wants to leave the school before he has exam.",
+              "grund": "Erwägen bedeutet über etwas nachdenken: *think about*. Das Abitur umschreibst du als *final exams*, weil es das Wort im Englischen nicht gibt."
+            },
+            {
+              "de": "Sein Ziel ist es, den Modeolymp zu erklimmen.",
+              "a": "His goal is to make it to the top of the fashion world.",
+              "b": "His goal is to climb the fashion Olympus mountain.",
+              "c": "He wants to climb on the mode.",
+              "d": "His aim is the Olympic Games of fashion.",
+              "grund": "Den Modeolymp erklimmen ist ein Bild. Gemeint ist, in der Modewelt ganz nach oben zu kommen. Diesen Sinn gibst du weiter."
+            },
+            {
+              "de": "An Selbstbewusstsein mangelt es ihm nicht.",
+              "a": "He is not short of self-confidence.",
+              "b": "At self-consciousness it lacks him not.",
+              "c": "He has no self-conscious.",
+              "d": "He is missing self-confidence.",
+              "grund": "Es mangelt ihm nicht bedeutet: Er hat genug davon. Vorsicht: *self-conscious* heißt befangen und ist das Gegenteil von selbstbewusst."
+            },
+            {
+              "de": "Mit 14 entdeckte er seine Leidenschaft für Design.",
+              "a": "At the age of 14 he discovered his passion for design.",
+              "b": "With 14 he discovered his passion for design.",
+              "c": "In 14 years he found his passion.",
+              "d": "He discovered with 14 design.",
+              "grund": "Mit 14 heißt im Englischen *at the age of 14*. *With 14* ist Wort für Wort aus dem Deutschen übertragen."
+            },
+            {
+              "de": "Seine T-Shirts sind besonders gefragt.",
+              "a": "His T-shirts are especially popular.",
+              "b": "His T-shirts are especially asked.",
+              "c": "His T-shirts are much questioned.",
+              "d": "His T-shirts get many questions.",
+              "grund": "Gefragt sein bedeutet hier beliebt sein: *popular*. Mit fragen hat das nichts zu tun."
+            }
           ]
         }
       }
@@ -192,13 +615,34 @@
     "difficulty": 2,
     "qtype": "MCQ",
     "prompt": "Bildbeschreibung: Wie sagst du **{{s_de}}** auf Englisch?",
-    "payload": { "choices": ["{{s_a}}", "{{s_b}}", "{{s_c}}", "{{s_d}}"] },
-    "solution": { "correct_choice": "{{s_a}}" },
+    "payload": {
+      "choices": [
+        "{{s_a}}",
+        "{{s_b}}",
+        "{{s_c}}",
+        "{{s_d}}"
+      ]
+    },
+    "solution": {
+      "correct_choice": "{{s_a}}"
+    },
     "explanation": [
-      { "kind": "what", "body": "**{{s_a}}** {{s_grund}}" },
-      { "kind": "remember", "body": "Aufbau einer Bildbeschreibung: 1. **Überblick** (*The photo shows …*), 2. **Details** (*in the foreground / background, on the left / right, in the middle*), 3. **Deutung** (*It looks like …, I think …, maybe …*), 4. **Bezug zur Aufgabe** (Fragen beantworten, eigene Meinung)." }
+      {
+        "kind": "what",
+        "title": "Warum",
+        "body": "{{s_grund}}"
+      },
+      {
+        "kind": "remember",
+        "title": "Ein Foto beschreiben",
+        "body": "- Zuerst der Überblick: *The photo shows …*\n- Dann, wo etwas ist: *in the foreground, in the background, on the left*\n- Zum Schluss dein Gedanke: *It looks like …* oder *I think …*"
+      }
     ],
-    "tags": ["writing", "picture", "drill"],
+    "tags": [
+      "writing",
+      "picture",
+      "drill"
+    ],
     "source": "Nach Prüfungshefte MSA Englisch Berlin 2026, Writing (Bild- und Fotobeschreibung)",
     "variants": {
       "enabled": true,
@@ -206,14 +650,70 @@
         "s": {
           "type": "pick",
           "from": [
-            { "de": "im Vordergrund", "a": "in the foreground", "b": "in the front ground", "c": "on the foreground", "d": "at the forehead", "grund": "= vorne im Bild." },
-            { "de": "im Hintergrund", "a": "in the background", "b": "on the background", "c": "in the back", "d": "behind ground", "grund": "= hinten im Bild." },
-            { "de": "auf der linken Seite", "a": "on the left", "b": "in the left", "c": "at left side", "d": "on the left hand", "grund": "*on the left / on the right*." },
-            { "de": "Das Foto zeigt …", "a": "The photo shows …", "b": "The photo is showing me …", "c": "On the photo it gives …", "d": "The photo sees …", "grund": "Standard-Einstieg einer Bildbeschreibung." },
-            { "de": "Es sieht aus, als ob …", "a": "It looks like …", "b": "It sees as if …", "c": "It looks as …", "d": "It is looking out …", "grund": "Für Deutungen: *It looks like they are having fun.*" },
-            { "de": "in der Mitte des Bildes", "a": "in the middle of the picture", "b": "in the picture's mid", "c": "at the centre from the picture", "d": "on the middle picture", "grund": "*in the middle of / in the centre of*." },
-            { "de": "Ich glaube, dass …", "a": "I think that …", "b": "I believe me that …", "c": "I mean that …", "d": "I think me that …", "grund": "*I think / I believe / I guess* für die eigene Deutung." },
-            { "de": "Auf dem Bild sieht man …", "a": "In the picture you can see …", "b": "On the picture one sees …", "c": "At the picture you see …", "d": "In the picture it can be seen you …", "grund": "**in** the picture, *you can see*." }
+            {
+              "de": "im Vordergrund",
+              "a": "in the foreground",
+              "b": "in the front ground",
+              "c": "on the foreground",
+              "d": "at the forehead",
+              "grund": "Der Vordergrund ist das, was vorn im Bild ist. Es heißt *in the foreground*, mit *in*."
+            },
+            {
+              "de": "im Hintergrund",
+              "a": "in the background",
+              "b": "on the background",
+              "c": "in the back",
+              "d": "behind ground",
+              "grund": "Der Hintergrund ist das, was hinten im Bild ist. Es heißt *in the background*, mit *in*."
+            },
+            {
+              "de": "auf der linken Seite",
+              "a": "on the left",
+              "b": "in the left",
+              "c": "at left side",
+              "d": "on the left hand",
+              "grund": "Links und rechts stehen mit *on*: *on the left* und *on the right*."
+            },
+            {
+              "de": "Das Foto zeigt …",
+              "a": "The photo shows …",
+              "b": "The photo is showing me …",
+              "c": "On the photo it gives …",
+              "d": "The photo sees …",
+              "grund": "*The photo shows …* ist der übliche erste Satz einer Bildbeschreibung. *On the photo it gives* ist Wort für Wort aus dem Deutschen übertragen."
+            },
+            {
+              "de": "Es sieht aus, als ob …",
+              "a": "It looks like …",
+              "b": "It sees as if …",
+              "c": "It looks as …",
+              "d": "It is looking out …",
+              "grund": "Mit *It looks like …* sagst du, wie etwas auf dich wirkt. Zum Beispiel: *It looks like they are having fun.*"
+            },
+            {
+              "de": "in der Mitte des Bildes",
+              "a": "in the middle of the picture",
+              "b": "in the picture's mid",
+              "c": "at the centre from the picture",
+              "d": "on the middle picture",
+              "grund": "Es heißt *in the middle of the picture*. Man kann auch *in the centre of* sagen."
+            },
+            {
+              "de": "Ich glaube, dass …",
+              "a": "I think that …",
+              "b": "I believe me that …",
+              "c": "I mean that …",
+              "d": "I think me that …",
+              "grund": "Für die eigene Vermutung nimmst du *I think* oder *I believe*. *I mean* bedeutet ich meine damit und passt hier nicht."
+            },
+            {
+              "de": "Auf dem Bild sieht man …",
+              "a": "In the picture you can see …",
+              "b": "On the picture one sees …",
+              "c": "At the picture you see …",
+              "d": "In the picture it can be seen you …",
+              "grund": "Im Englischen ist etwas *in the picture*, nicht *on*. Und für man sieht sagt man *you can see*."
+            }
           ]
         }
       }
@@ -226,10 +726,50 @@
     "difficulty": 2,
     "qtype": "MATCH",
     "prompt": "Jobs and applications: match the English words with the German meaning.",
-    "payload": { "left": ["to apply for a job", "internship", "CV", "employer"], "right": ["sich um eine Stelle bewerben", "Praktikum", "Lebenslauf", "Arbeitgeber"] },
-    "solution": { "pairs": [["to apply for a job", "sich um eine Stelle bewerben"], ["internship", "Praktikum"], ["CV", "Lebenslauf"], ["employer", "Arbeitgeber"]] },
-    "explanation": [{ "kind": "terms", "body": "Weitere Wörter: *application* (Bewerbung), *job interview* (Vorstellungsgespräch), *employee* (Arbeitnehmer), *salary* (Gehalt), *part-time job* (Teilzeitjob), *skills* (Fähigkeiten)." }],
-    "tags": ["vocabulary", "jobs"],
+    "payload": {
+      "left": [
+        "to apply for a job",
+        "internship",
+        "CV",
+        "employer"
+      ],
+      "right": [
+        "sich um eine Stelle bewerben",
+        "Praktikum",
+        "Lebenslauf",
+        "Arbeitgeber"
+      ]
+    },
+    "solution": {
+      "pairs": [
+        [
+          "to apply for a job",
+          "sich um eine Stelle bewerben"
+        ],
+        [
+          "internship",
+          "Praktikum"
+        ],
+        [
+          "CV",
+          "Lebenslauf"
+        ],
+        [
+          "employer",
+          "Arbeitgeber"
+        ]
+      ]
+    },
+    "explanation": [
+      {
+        "kind": "terms",
+        "body": "Weitere Wörter: *application* (Bewerbung), *job interview* (Vorstellungsgespräch), *employee* (Arbeitnehmer), *salary* (Gehalt), *part-time job* (Teilzeitjob), *skills* (Fähigkeiten)."
+      }
+    ],
+    "tags": [
+      "vocabulary",
+      "jobs"
+    ],
     "source": "Nach Prüfungshefte MSA Englisch Berlin 2026, Checkliste Wortschatz (Jobs, applications)"
   },
   {
@@ -239,10 +779,50 @@
     "difficulty": 2,
     "qtype": "MATCH",
     "prompt": "Technology and social networks: match the words.",
-    "payload": { "left": ["device", "screen time", "to download", "to post a comment"], "right": ["Gerät", "Bildschirmzeit", "herunterladen", "einen Kommentar veröffentlichen"] },
-    "solution": { "pairs": [["device", "Gerät"], ["screen time", "Bildschirmzeit"], ["to download", "herunterladen"], ["to post a comment", "einen Kommentar veröffentlichen"]] },
-    "explanation": [{ "kind": "terms", "body": "Weitere Wörter: *password* (Passwort), *to share* (teilen), *follower*, *to scroll*, *online / offline*, *app*, *to update* (aktualisieren), *addicted to* (süchtig nach)." }],
-    "tags": ["vocabulary", "technology"],
+    "payload": {
+      "left": [
+        "device",
+        "screen time",
+        "to download",
+        "to post a comment"
+      ],
+      "right": [
+        "Gerät",
+        "Bildschirmzeit",
+        "herunterladen",
+        "einen Kommentar veröffentlichen"
+      ]
+    },
+    "solution": {
+      "pairs": [
+        [
+          "device",
+          "Gerät"
+        ],
+        [
+          "screen time",
+          "Bildschirmzeit"
+        ],
+        [
+          "to download",
+          "herunterladen"
+        ],
+        [
+          "to post a comment",
+          "einen Kommentar veröffentlichen"
+        ]
+      ]
+    },
+    "explanation": [
+      {
+        "kind": "terms",
+        "body": "Weitere Wörter: *password* (Passwort), *to share* (teilen), *follower*, *to scroll*, *online / offline*, *app*, *to update* (aktualisieren), *addicted to* (süchtig nach)."
+      }
+    ],
+    "tags": [
+      "vocabulary",
+      "technology"
+    ],
     "source": "Nach Prüfungshefte MSA Englisch Berlin 2026, Checkliste Wortschatz (Social networks, technology)"
   },
   {
@@ -252,10 +832,51 @@
     "difficulty": 2,
     "qtype": "MATCH",
     "prompt": "Travel, living and nature: match the words.",
-    "payload": { "left": ["accommodation", "return ticket", "environment", "wildlife"], "right": ["Unterkunft", "Rückfahrkarte", "Umwelt", "Tierwelt"] },
-    "solution": { "pairs": [["accommodation", "Unterkunft"], ["return ticket", "Rückfahrkarte"], ["environment", "Umwelt"], ["wildlife", "Tierwelt"]] },
-    "explanation": [{ "kind": "terms", "body": "Weitere Wörter: *journey / trip* (Reise), *sightseeing* (Besichtigung), *to book* (buchen), *flat* (Wohnung), *neighbourhood* (Nachbarschaft), *pollution* (Verschmutzung), *to protect* (schützen), *countryside* (Land)." }],
-    "tags": ["vocabulary", "travel", "nature"],
+    "payload": {
+      "left": [
+        "accommodation",
+        "return ticket",
+        "environment",
+        "wildlife"
+      ],
+      "right": [
+        "Unterkunft",
+        "Rückfahrkarte",
+        "Umwelt",
+        "Tierwelt"
+      ]
+    },
+    "solution": {
+      "pairs": [
+        [
+          "accommodation",
+          "Unterkunft"
+        ],
+        [
+          "return ticket",
+          "Rückfahrkarte"
+        ],
+        [
+          "environment",
+          "Umwelt"
+        ],
+        [
+          "wildlife",
+          "Tierwelt"
+        ]
+      ]
+    },
+    "explanation": [
+      {
+        "kind": "terms",
+        "body": "Weitere Wörter: *journey / trip* (Reise), *sightseeing* (Besichtigung), *to book* (buchen), *flat* (Wohnung), *neighbourhood* (Nachbarschaft), *pollution* (Verschmutzung), *to protect* (schützen), *countryside* (Land)."
+      }
+    ],
+    "tags": [
+      "vocabulary",
+      "travel",
+      "nature"
+    ],
     "source": "Nach Prüfungshefte MSA Englisch Berlin 2026, Checkliste Wortschatz (Living, tourism, vacations, nature)"
   },
   {
@@ -265,10 +886,50 @@
     "difficulty": 2,
     "qtype": "MATCH",
     "prompt": "Opinions: match the phrases.",
-    "payload": { "left": ["In my opinion …", "I agree with you.", "I'm not sure about that.", "That's a good point."] , "right": ["Meiner Meinung nach …", "Ich stimme dir zu.", "Da bin ich mir nicht sicher.", "Das ist ein guter Punkt."] },
-    "solution": { "pairs": [["In my opinion …", "Meiner Meinung nach …"], ["I agree with you.", "Ich stimme dir zu."], ["I'm not sure about that.", "Da bin ich mir nicht sicher."], ["That's a good point.", "Das ist ein guter Punkt."]] },
-    "explanation": [{ "kind": "terms", "body": "Weitere Wendungen: *I think / I believe*, *In my view*, *I disagree*, *On the one hand … on the other hand*, *However*, *That's why*, *For example*." }],
-    "tags": ["vocabulary", "opinions"],
+    "payload": {
+      "left": [
+        "In my opinion …",
+        "I agree with you.",
+        "I'm not sure about that.",
+        "That's a good point."
+      ],
+      "right": [
+        "Meiner Meinung nach …",
+        "Ich stimme dir zu.",
+        "Da bin ich mir nicht sicher.",
+        "Das ist ein guter Punkt."
+      ]
+    },
+    "solution": {
+      "pairs": [
+        [
+          "In my opinion …",
+          "Meiner Meinung nach …"
+        ],
+        [
+          "I agree with you.",
+          "Ich stimme dir zu."
+        ],
+        [
+          "I'm not sure about that.",
+          "Da bin ich mir nicht sicher."
+        ],
+        [
+          "That's a good point.",
+          "Das ist ein guter Punkt."
+        ]
+      ]
+    },
+    "explanation": [
+      {
+        "kind": "terms",
+        "body": "Weitere Wendungen: *I think / I believe*, *In my view*, *I disagree*, *On the one hand … on the other hand*, *However*, *That's why*, *For example*."
+      }
+    ],
+    "tags": [
+      "vocabulary",
+      "opinions"
+    ],
     "source": "Rahmenlehrplan Englisch Berlin, Sprechen und Schreiben"
   },
   {
@@ -278,12 +939,35 @@
     "difficulty": 2,
     "qtype": "CLOZE",
     "prompt": "Choose the word that fits.",
-    "payload": { "text_with_blanks": "{{s_satz}}", "blanks": [{ "id": 1, "choices": ["{{s_a}}", "{{s_b}}", "{{s_c}}"] }] },
-    "solution": { "answers": { "1": "{{s_a}}" } },
+    "payload": {
+      "text_with_blanks": "{{s_satz}}",
+      "blanks": [
+        {
+          "id": 1,
+          "choices": [
+            "{{s_a}}",
+            "{{s_b}}",
+            "{{s_c}}"
+          ]
+        }
+      ]
+    },
+    "solution": {
+      "answers": {
+        "1": "{{s_a}}"
+      }
+    },
     "explanation": [
-      { "kind": "what", "body": "**{{s_a}}** = {{s_de}}. {{s_grund}}" }
+      {
+        "kind": "what",
+        "title": "Warum",
+        "body": "{{s_grund}}"
+      }
     ],
-    "tags": ["vocabulary", "drill"],
+    "tags": [
+      "vocabulary",
+      "drill"
+    ],
     "source": "Nach Prüfungshefte MSA Englisch Berlin 2026, Checkliste Wortschatz",
     "variants": {
       "enabled": true,
@@ -291,22 +975,150 @@
         "s": {
           "type": "pick",
           "from": [
-            { "satz": "I want to ___ for a summer job at the café.", "a": "apply", "b": "employ", "c": "attend", "d": "", "de": "sich bewerben", "grund": "*apply for a job*." },
-            { "satz": "She did a two-week ___ at a newspaper.", "a": "internship", "b": "interview", "c": "income", "d": "", "de": "Praktikum", "grund": "*internship* = Praktikum." },
-            { "satz": "Please attach your ___ to the e-mail.", "a": "CV", "b": "TV", "c": "GPS", "d": "", "de": "Lebenslauf", "grund": "*CV* (curriculum vitae) = Lebenslauf." },
-            { "satz": "We booked cheap ___ near the beach.", "a": "accommodation", "b": "application", "c": "communication", "d": "", "de": "Unterkunft", "grund": "*accommodation* = Unterkunft (Hotel, Hostel, Wohnung)." },
-            { "satz": "A ___ ticket is cheaper than two single tickets.", "a": "return", "b": "back", "c": "double", "d": "", "de": "Rückfahr-", "grund": "*return ticket* = Hin- und Rückfahrkarte." },
-            { "satz": "Too much ___ can be bad for your sleep.", "a": "screen time", "b": "screen saver", "c": "screen play", "d": "", "de": "Bildschirmzeit", "grund": "*screen time* = Zeit vor dem Bildschirm." },
-            { "satz": "You need a ___ to log in.", "a": "password", "b": "passport", "c": "password key", "d": "", "de": "Passwort", "grund": "*password* = Passwort, *passport* = Reisepass." },
-            { "satz": "Plastic waste is a big problem for the ___.", "a": "environment", "b": "government", "c": "entertainment", "d": "", "de": "Umwelt", "grund": "*environment* = Umwelt." },
-            { "satz": "Cars and factories cause air ___.", "a": "pollution", "b": "population", "c": "solution", "d": "", "de": "Verschmutzung", "grund": "*pollution* = Verschmutzung." },
-            { "satz": "In my ___, school should start later.", "a": "opinion", "b": "option", "c": "operation", "d": "", "de": "Meinung", "grund": "*in my opinion* = meiner Meinung nach." },
-            { "satz": "We went ___ in London and saw Big Ben.", "a": "sightseeing", "b": "sightshowing", "c": "sightlooking", "d": "", "de": "Sehenswürdigkeiten besichtigen", "grund": "*go sightseeing*." },
-            { "satz": "My aunt lives in a small ___ on the third floor.", "a": "flat", "b": "float", "c": "flight", "d": "", "de": "Wohnung", "grund": "*flat* (BE) / *apartment* (AE) = Wohnung." },
-            { "satz": "The zoo protects endangered ___.", "a": "species", "b": "spices", "c": "specials", "d": "", "de": "Arten", "grund": "*species* = Tierarten, *spices* = Gewürze." },
-            { "satz": "He is ___ to his phone. He checks it every minute.", "a": "addicted", "b": "attached", "c": "adapted", "d": "", "de": "süchtig", "grund": "*addicted to* = süchtig nach." },
-            { "satz": "Could you ___ the photo with me?", "a": "share", "b": "shave", "c": "shape", "d": "", "de": "teilen", "grund": "*share* = teilen (auch in sozialen Netzwerken)." },
-            { "satz": "The ___ of the company gave me a job interview.", "a": "employer", "b": "employee", "c": "employment", "d": "", "de": "Arbeitgeber", "grund": "*employer* = Arbeitgeber, *employee* = Arbeitnehmer." }
+            {
+              "satz": "I want to ___ for a summer job at the café.",
+              "a": "apply",
+              "b": "employ",
+              "c": "attend",
+              "d": "",
+              "de": "sich bewerben",
+              "grund": "*To apply for a job* bedeutet sich um eine Stelle bewerben. *Employ* heißt jemanden einstellen."
+            },
+            {
+              "satz": "She did a two-week ___ at a newspaper.",
+              "a": "internship",
+              "b": "interview",
+              "c": "income",
+              "d": "",
+              "de": "Praktikum",
+              "grund": "*Internship* bedeutet Praktikum. Ein *interview* ist ein Gespräch, und *income* ist das Einkommen."
+            },
+            {
+              "satz": "Please attach your ___ to the e-mail.",
+              "a": "CV",
+              "b": "TV",
+              "c": "GPS",
+              "d": "",
+              "de": "Lebenslauf",
+              "grund": "*CV* bedeutet Lebenslauf. Den hängt man an eine Bewerbung an."
+            },
+            {
+              "satz": "We booked cheap ___ near the beach.",
+              "a": "accommodation",
+              "b": "application",
+              "c": "communication",
+              "d": "",
+              "de": "Unterkunft",
+              "grund": "*Accommodation* bedeutet Unterkunft, also ein Hotel, ein Hostel oder eine Ferienwohnung. *Application* ist eine Bewerbung."
+            },
+            {
+              "satz": "A ___ ticket is cheaper than two single tickets.",
+              "a": "return",
+              "b": "back",
+              "c": "double",
+              "d": "",
+              "de": "Rückfahr-",
+              "grund": "Ein *return ticket* ist eine Fahrkarte für die Hin- und Rückfahrt. Eine einfache Fahrt heißt *single ticket*."
+            },
+            {
+              "satz": "Too much ___ can be bad for your sleep.",
+              "a": "screen time",
+              "b": "screen saver",
+              "c": "screen play",
+              "d": "",
+              "de": "Bildschirmzeit",
+              "grund": "*Screen time* ist die Zeit, die man vor einem Bildschirm verbringt."
+            },
+            {
+              "satz": "You need a ___ to log in.",
+              "a": "password",
+              "b": "passport",
+              "c": "password key",
+              "d": "",
+              "de": "Passwort",
+              "grund": "*Password* bedeutet Passwort. Ein *passport* ist ein Reisepass."
+            },
+            {
+              "satz": "Plastic waste is a big problem for the ___.",
+              "a": "environment",
+              "b": "government",
+              "c": "entertainment",
+              "d": "",
+              "de": "Umwelt",
+              "grund": "*Environment* bedeutet Umwelt. *Government* ist die Regierung."
+            },
+            {
+              "satz": "Cars and factories cause air ___.",
+              "a": "pollution",
+              "b": "population",
+              "c": "solution",
+              "d": "",
+              "de": "Verschmutzung",
+              "grund": "*Pollution* bedeutet Verschmutzung. *Population* ist die Bevölkerung, und *solution* ist die Lösung."
+            },
+            {
+              "satz": "In my ___, school should start later.",
+              "a": "opinion",
+              "b": "option",
+              "c": "operation",
+              "d": "",
+              "de": "Meinung",
+              "grund": "*In my opinion* bedeutet meiner Meinung nach. *Option* ist eine Möglichkeit."
+            },
+            {
+              "satz": "We went ___ in London and saw Big Ben.",
+              "a": "sightseeing",
+              "b": "sightshowing",
+              "c": "sightlooking",
+              "d": "",
+              "de": "Sehenswürdigkeiten besichtigen",
+              "grund": "*To go sightseeing* bedeutet Sehenswürdigkeiten besichtigen. Die anderen beiden Wörter gibt es nicht."
+            },
+            {
+              "satz": "My aunt lives in a small ___ on the third floor.",
+              "a": "flat",
+              "b": "float",
+              "c": "flight",
+              "d": "",
+              "de": "Wohnung",
+              "grund": "*Flat* bedeutet Wohnung. Ein *flight* ist ein Flug."
+            },
+            {
+              "satz": "The zoo protects endangered ___.",
+              "a": "species",
+              "b": "spices",
+              "c": "specials",
+              "d": "",
+              "de": "Arten",
+              "grund": "*Species* bedeutet Arten, hier Tierarten. *Spices* sind Gewürze."
+            },
+            {
+              "satz": "He is ___ to his phone. He checks it every minute.",
+              "a": "addicted",
+              "b": "attached",
+              "c": "adapted",
+              "d": "",
+              "de": "süchtig",
+              "grund": "*Addicted to* bedeutet süchtig nach. *Attached* heißt angehängt."
+            },
+            {
+              "satz": "Could you ___ the photo with me?",
+              "a": "share",
+              "b": "shave",
+              "c": "shape",
+              "d": "",
+              "de": "teilen",
+              "grund": "*To share* bedeutet teilen. *Shave* heißt rasieren, und *shape* ist eine Form."
+            },
+            {
+              "satz": "The ___ of the company gave me a job interview.",
+              "a": "employer",
+              "b": "employee",
+              "c": "employment",
+              "d": "",
+              "de": "Arbeitgeber",
+              "grund": "Der *employer* ist der Arbeitgeber. Der *employee* ist der Arbeitnehmer, also der, der dort arbeitet."
+            }
           ]
         }
       }

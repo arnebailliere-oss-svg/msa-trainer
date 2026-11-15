@@ -1,0 +1,335 @@
+[
+  {
+    "id": "P_EN_MEDIATION",
+    "subject": "EN",
+    "title": "Mediation: einen deutschen Text auf Englisch weitergeben",
+    "teaser": "Du bekommst einen deutschen Text und erzählst jemandem auf Englisch, was darin steht. Du lernst, nur das Verlangte auszuwählen, schwierige Wörter zu umschreiben und in kurzen, einfachen Sätzen zu schreiben.",
+    "hook": "Stell dir vor, ein Freund aus England ist zu Besuch und zeigt auf einen deutschen Zeitungsartikel. Er fragt dich, worum es da geht. Du würdest ihm den Artikel nicht Wort für Wort vorlesen. Du würdest ihm in ein paar Sätzen sagen, was drinsteht. Genau das ist diese Aufgabe.",
+    "outro": "Du weißt jetzt, was Mediation von dir verlangt. Du gibst den Sinn weiter und nicht die einzelnen Wörter. Du wählst nur aus, wonach die Aufgabe fragt. Und wenn dir ein Wort fehlt, sagst du mit einfachen Wörtern, was es bedeutet.",
+    "standard": 2,
+    "requires": [
+      "P_EN_VERBFORMEN"
+    ],
+    "steps": [
+      {
+        "chapter": "Was Mediation ist",
+        "title": "Die Situation",
+        "body": "Dein englischer Freund versteht kein Deutsch.\n\nDu hast einen deutschen Text gelesen.\n\nDu erzählst ihm auf Englisch, **was darin steht**.",
+        "say": "Das kennst du aus dem Alltag. Jemand versteht eine Sprache nicht, und du hilfst ihm. Du bist in diesem Moment eine Brücke zwischen zwei Sprachen. Dabei kommt es nicht auf schöne Wörter an, sondern darauf, dass der andere versteht, worum es geht."
+      },
+      {
+        "title": "Das nennt man Mediation",
+        "body": "Du gibst den **Inhalt** weiter, nicht die Wörter.\n\nDiese Aufgabe heißt **Mediation**.",
+        "say": "Mediation bedeutet Vermittlung. Du vermittelst zwischen einem deutschen Text und einem Leser, der nur Englisch kann. Das ist etwas anderes als eine Übersetzung. Bei einer Übersetzung zählt jedes Wort. Bei der Mediation zählt nur, was gemeint ist."
+      },
+      {
+        "title": "Nicht Wort für Wort",
+        "body": "Deutsch: *Die Suppenküche platzt donnerstags aus allen Nähten.*\n\nWort für Wort ergibt das auf Englisch keinen Sinn.\n\nDer Sinn: *The soup kitchen is very full on Thursdays.*",
+        "tasks": [
+          {
+            "text": "Bei der Mediation gibst du ___ weiter.",
+            "choices": [
+              "den Sinn",
+              "jedes einzelne Wort"
+            ],
+            "correct": "den Sinn",
+            "why": "Es zählt, was gemeint ist. Die einzelnen Wörter dürfen andere sein.",
+            "hint": "Was will dein Freund wissen: jedes Wort oder worum es geht?"
+          }
+        ],
+        "say": "Schau dir den deutschen Satz an. Aus allen Nähten platzen ist ein Bild. Es bedeutet einfach, dass es sehr voll ist. Wenn du das Bild Wort für Wort ins Englische bringst, versteht es niemand. Du fragst dich also: Was ist gemeint? Und das schreibst du."
+      },
+      {
+        "title": "Die Aufgabe sagt dir, was wichtig ist",
+        "body": "*Tell your friend: Who helps there? What do they do? Why do they do it?*\n\nDu brauchst **nur** die Antworten auf diese Fragen.",
+        "tasks": [
+          {
+            "text": "Im Text steht auch, wann das Haus gebaut wurde. Die Aufgabe fragt nicht danach. Du ___.",
+            "choices": [
+              "lässt es weg",
+              "schreibst es trotzdem auf"
+            ],
+            "correct": "lässt es weg",
+            "why": "Du gibst nur weiter, wonach gefragt ist. Alles andere kostet Zeit und Wörter.",
+            "hint": "Hat dein Freund danach gefragt? Schau auf die Punkte in der Aufgabe."
+          }
+        ],
+        "say": "Der deutsche Text ist immer länger als das, was du schreiben sollst. Du musst also auswählen. Die Aufgabe hilft dir dabei, denn sie nennt die Punkte, die dein Freund wissen will. Alles andere im Text darfst du weglassen."
+      },
+      {
+        "title": "Drei Schritte",
+        "body": "(1) Lies die Aufgabe und zähl die Punkte.\n\n(2) Markiere im deutschen Text die Stellen dazu.\n\n(3) Sag jeden Punkt in einem einfachen englischen Satz.",
+        "say": "So gehst du jede Mediation an. Zuerst liest du die Aufgabe, noch vor dem Text. Dann suchst du im Text nur die Stellen, die zu den Punkten gehören. Zum Schluss schreibst du für jeden Punkt ein bis zwei einfache Sätze."
+      },
+      {
+        "chapter": "Einfach sagen, was gemeint ist",
+        "title": "Wenn dir ein Wort fehlt",
+        "body": "Im Text steht: *ehrenamtlich*.\n\nDu kennst das englische Wort nicht.\n\nDu sagst, was es bedeutet: *They work there without getting money.*",
+        "say": "Das passiert in jeder Mediation, und es ist kein Problem. Du brauchst das genaue Wort nicht. Du erklärst einfach mit Wörtern, die du kennst, was gemeint ist. Ehrenamtlich bedeutet, dass jemand arbeitet und kein Geld dafür bekommt."
+      },
+      {
+        "title": "Die Frage, die immer hilft",
+        "body": "Frag dich: Was **heißt** das eigentlich?\n\nAltersheim: *a home for old people*\nSchulleiterin: *the boss of the school*",
+        "tasks": [
+          {
+            "text": "Du kennst das Wort für Tierarzt nicht. Du schreibst: ___",
+            "choices": [
+              "a doctor for animals",
+              "an animal man"
+            ],
+            "correct": "a doctor for animals",
+            "why": "Ein Tierarzt ist ein Arzt für Tiere. Das versteht jeder.",
+            "hint": "Was macht ein Tierarzt? Sag es mit ganz einfachen Wörtern."
+          }
+        ],
+        "say": "Mit dieser einen Frage kommst du fast immer weiter. Ein Altersheim ist ein Zuhause für alte Menschen. Eine Schulleiterin ist die Chefin der Schule. Das klingt einfach, und genau so soll es klingen. Der Leser versteht es sofort."
+      },
+      {
+        "title": "Bilder auflösen",
+        "body": "Deutsch: *Sie hat alle Hände voll zu tun.*\n\nGemeint ist: Sie hat sehr viel Arbeit.\n\nEnglisch: *She is very busy.*",
+        "tasks": [
+          {
+            "text": "Er ist ein alter Hase. = ___",
+            "choices": [
+              "He has a lot of experience.",
+              "He is an old rabbit."
+            ],
+            "correct": "He has a lot of experience.",
+            "why": "Gemeint ist, dass er viel Erfahrung hat. Mit einem Hasen hat das nichts zu tun.",
+            "hint": "Was ist mit dem Bild gemeint? Geht es wirklich um ein Tier?"
+          }
+        ],
+        "say": "Deutsche Texte sind voller Bilder. Alle Hände voll zu tun haben, auf Wolke sieben schweben, ins kalte Wasser springen. Kein Engländer versteht diese Bilder, wenn du sie Wort für Wort überträgst. Du löst das Bild zuerst auf Deutsch auf und schreibst dann den einfachen Satz."
+      },
+      {
+        "title": "Kurze Sätze sind gute Sätze",
+        "body": "Deutsch: *Die Schüler, die jeden Donnerstag kommen, kochen Suppe.*\n\nEnglisch: *The students come every Thursday. They cook soup.*",
+        "say": "Deutsche Sätze sind oft lang und verschachtelt. Du musst das nicht nachbauen. Mach aus einem langen deutschen Satz zwei kurze englische. Kurze Sätze haben weniger Fehler, und sie sind leichter zu lesen. Dafür gibt es keinen Abzug."
+      },
+      {
+        "title": "Namen und Zahlen übernimmst du",
+        "body": "*40 portions*\n*every Thursday*\n*class 9b*",
+        "tasks": [
+          {
+            "text": "Im Text steht: jeden Donnerstag. Du schreibst: ___",
+            "choices": [
+              "every Thursday",
+              "on a day"
+            ],
+            "correct": "every Thursday",
+            "why": "Der Wochentag ist eine genaue Angabe. Du überträgst ihn so, wie er ist.",
+            "hint": "Ist der Wochentag eine genaue Angabe, die dein Freund braucht?"
+          }
+        ],
+        "say": "Nicht alles musst du umformen. Namen von Menschen und Orten bleiben gleich. Zahlen, Wochentage und Uhrzeiten überträgst du einfach. Sie sind sogar besonders wichtig, weil dein Freund genau solche Angaben wissen will."
+      },
+      {
+        "title": "Jetzt du: umschreiben",
+        "body": "Tipp bei jedem Satz auf die passende Umschreibung.",
+        "tasks": [
+          {
+            "text": "Bäckerei: a shop where you can buy ___",
+            "choices": [
+              "bread",
+              "books"
+            ],
+            "correct": "bread",
+            "why": "In einer Bäckerei kauft man Brot.",
+            "hint": "Was kaufst du in einer Bäckerei?"
+          },
+          {
+            "text": "Sie ist arbeitslos. = She ___.",
+            "choices": [
+              "has no job",
+              "is workless"
+            ],
+            "correct": "has no job",
+            "why": "Arbeitslos bedeutet, dass jemand keine Arbeit hat.",
+            "hint": "Was heißt arbeitslos eigentlich? Sag es mit einfachen Wörtern."
+          },
+          {
+            "text": "Das Projekt kam gut an. = People ___ the project.",
+            "choices": [
+              "liked",
+              "came"
+            ],
+            "correct": "liked",
+            "why": "Gut ankommen bedeutet hier, dass es den Leuten gefallen hat.",
+            "hint": "Was ist mit dem Bild gemeint? Ist wirklich jemand irgendwo angekommen?"
+          }
+        ],
+        "say": "Bei jeder Aufgabe fehlt dir das genaue englische Wort. Frag dich jedes Mal: Was heißt das eigentlich? Dann findest du die Umschreibung, die jeder versteht."
+      },
+      {
+        "chapter": "Der Rahmen um deinen Text",
+        "title": "Meistens ist es eine E-Mail",
+        "body": "*Hi Tom,*\n*I read an article about a school project.*\n…\n*Best wishes,*\n*Lena*",
+        "say": "Fast immer sollst du deine Mediation als E-Mail an einen Freund schreiben. Dann braucht sie eine Anrede am Anfang und einen Gruß am Ende, so wie du es aus der Lektion über E-Mails kennst. Dazwischen stehen deine Punkte."
+      },
+      {
+        "title": "Der Satz, der alles einleitet",
+        "body": "*I read an interesting article about a school project.*\n*The article is **about** a soup kitchen.*",
+        "tasks": [
+          {
+            "text": "The article is ___ a soup kitchen.",
+            "choices": [
+              "about",
+              "over"
+            ],
+            "correct": "about",
+            "why": "Worum es in einem Text geht, sagt man im Englischen mit diesem Wort.",
+            "hint": "Schau auf den zweiten Satz der Tafel. Welches Wort steht dort?"
+          }
+        ],
+        "say": "Mit einem dieser Sätze sagst du deinem Freund, woher du die Informationen hast. The article is about bedeutet: In dem Artikel geht es um. Pass auf das Wort about auf. Im Deutschen sagst du über, aber over wäre im Englischen falsch."
+      },
+      {
+        "title": "Jetzt du: die Vorgehensweise",
+        "body": "Tipp bei jedem Satz auf die richtige Lösung.",
+        "tasks": [
+          {
+            "text": "Was machst du zuerst? ___",
+            "choices": [
+              "Die Aufgabe lesen und die Punkte zählen",
+              "Den ganzen Text übersetzen"
+            ],
+            "correct": "Die Aufgabe lesen und die Punkte zählen",
+            "why": "Die Aufgabe sagt dir, welche Stellen im Text du überhaupt brauchst.",
+            "hint": "Woher weißt du, was dein Freund wissen will?"
+          },
+          {
+            "text": "Der Text hat 300 Wörter, du sollst 80 schreiben. Du ___.",
+            "choices": [
+              "wählst aus",
+              "übersetzt alles"
+            ],
+            "correct": "wählst aus",
+            "why": "Du gibst nur das weiter, wonach gefragt ist.",
+            "hint": "Passen 300 Wörter in einen Text von 80 Wörtern?"
+          }
+        ],
+        "say": "Zum Schluss prüfen wir, ob die Reihenfolge sitzt. Denk an die drei Schritte vom Anfang der Lektion."
+      },
+      {
+        "title": "Das nimmst du mit",
+        "body": "(1) Aufgabe lesen, Punkte zählen.\n\n(2) Nur das Verlangte auswählen.\n\n(3) Den **Sinn** in kurzen Sätzen sagen.\n\n(4) Fehlt ein Wort, dann umschreiben.",
+        "tasks": [
+          {
+            "text": "Dir fehlt ein englisches Wort. Du ___.",
+            "choices": [
+              "umschreibst es mit einfachen Wörtern",
+              "lässt den ganzen Punkt weg"
+            ],
+            "correct": "umschreibst es mit einfachen Wörtern",
+            "why": "Wer umschreibt, bekommt den Punkt für den Inhalt trotzdem.",
+            "hint": "Was hast du in dieser Lektion mit ehrenamtlich und Tierarzt gemacht?"
+          }
+        ],
+        "say": "Mit diesen vier Punkten schaffst du jede Mediation. Du brauchst dafür keinen großen Wortschatz. Du brauchst nur den Mut, einfach zu schreiben. Gleich kommen die Wörter zum Nachlesen und ein kleines Quiz."
+      }
+    ],
+    "vocab": [
+      {
+        "term": "Mediation",
+        "plain": "Den Inhalt eines Textes in einer anderen Sprache weitergeben, ohne ihn Wort für Wort zu übersetzen."
+      },
+      {
+        "term": "umschreiben",
+        "plain": "Mit einfachen Wörtern sagen, was ein Wort bedeutet, das man nicht kennt.",
+        "example": "Tierarzt: a doctor for animals"
+      },
+      {
+        "term": "The article is about …",
+        "plain": "In dem Artikel geht es um … Mit about, nicht mit over."
+      },
+      {
+        "term": "without getting money",
+        "plain": "Ohne Geld zu bekommen. So umschreibt man ehrenamtlich."
+      },
+      {
+        "term": "busy",
+        "plain": "Beschäftigt, mit viel Arbeit.",
+        "example": "She is very busy."
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Was ist bei einer Mediation deine Aufgabe?",
+        "choices": [
+          "Den Inhalt in einfachen Sätzen weitergeben",
+          "Jedes Wort genau übersetzen",
+          "Den Text auf Deutsch zusammenfassen",
+          "Möglichst schwierige Wörter benutzen"
+        ],
+        "correct": "Den Inhalt in einfachen Sätzen weitergeben",
+        "explain": "Bei der Mediation zählt der Sinn. Der Leser soll verstehen, worum es geht."
+      },
+      {
+        "prompt": "Was liest du zuerst?",
+        "choices": [
+          "Die Aufgabe mit den verlangten Punkten",
+          "Den letzten Absatz des Textes",
+          "Nur die Überschrift",
+          "Gar nichts, ich schreibe sofort"
+        ],
+        "correct": "Die Aufgabe mit den verlangten Punkten",
+        "explain": "Die Aufgabe sagt dir, welche Informationen dein Freund braucht. Danach suchst du im Text."
+      },
+      {
+        "prompt": "Du kennst das Wort für Krankenhaus nicht. Was schreibst du?",
+        "choices": [
+          "a place where doctors help ill people",
+          "a sick house",
+          "Krankenhaus",
+          "Ich lasse den Satz weg."
+        ],
+        "correct": "a place where doctors help ill people",
+        "explain": "Du umschreibst mit einfachen Wörtern, was gemeint ist. Eine wörtliche Übersetzung versteht niemand."
+      },
+      {
+        "prompt": "Im Text steht: Der Verein steckt noch in den Kinderschuhen. Was ist gemeint?",
+        "choices": [
+          "The club is still very new.",
+          "The club is in children's shoes.",
+          "The club sells shoes.",
+          "The club is for children."
+        ],
+        "correct": "The club is still very new.",
+        "explain": "Das Bild bedeutet, dass etwas noch ganz am Anfang steht. Diesen Sinn gibst du weiter."
+      },
+      {
+        "prompt": "Welcher Satz ist richtig?",
+        "choices": [
+          "The article is about a school project.",
+          "The article is over a school project.",
+          "The article goes about a school project.",
+          "The article is from a school project about."
+        ],
+        "correct": "The article is about a school project.",
+        "explain": "Worum es in einem Text geht, sagt man mit about. Over wäre eine wörtliche Übertragung aus dem Deutschen."
+      },
+      {
+        "prompt": "Im deutschen Text steht ein Satz mit drei Kommas. Was machst du daraus?",
+        "choices": [
+          "Zwei oder drei kurze englische Sätze",
+          "Einen genauso langen englischen Satz",
+          "Ich lasse ihn weg.",
+          "Ich schreibe ihn auf Deutsch ab."
+        ],
+        "correct": "Zwei oder drei kurze englische Sätze",
+        "explain": "Kurze Sätze sind leichter zu schreiben und zu lesen. Dafür gibt es keinen Abzug."
+      },
+      {
+        "prompt": "Im Text steht: am 12. Mai um 15 Uhr. Was machst du damit?",
+        "choices": [
+          "Ich übernehme Datum und Uhrzeit genau.",
+          "Ich schreibe nur bald.",
+          "Ich lasse es weg.",
+          "Ich schreibe eine andere Zeit."
+        ],
+        "correct": "Ich übernehme Datum und Uhrzeit genau.",
+        "explain": "Namen, Zahlen und Zeiten sind genaue Angaben. Die überträgst du, wenn die Aufgabe danach fragt."
+      }
+    ]
+  }
+]

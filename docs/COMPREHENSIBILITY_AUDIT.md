@@ -1,4 +1,4 @@
-# Comprehensibility audit and fix checklist
+| ☑ | P_EN_READING | 19 → standard | rebuilt 2026-11-15 as four lessons | P_EN_READ_MATCH (16), P_EN_READ_SIGNS (15), P_EN_READING (17, with true/false/not in the text), P_EN_LISTENING (21). Short own texts, all glossed. half-past contradiction gone || ☑ | P_EN_EMAIL | 16 → standard | rebuilt 2026-11-15 | 18 boards; every English phrase glossed in German by Ferdinand; formal and informal practised by tapping || ☑ | P_EN_ZEITFORMEN | 14 → standard | rebuilt 2026-11-15 as three lessons | Zeiten 1 (22 boards), P_EN_ZEIT_VORBEI (24), P_EN_ZEIT_WEITER (23); every tense has tasks; timeline drawings; pressure wording removed || ☑ | P_EN_VERBFORMEN | 20 → standard | done 2026-11-15, approved by Arne | 43 boards, 7 chapters, 18 boards with tasks; all six audit points fixed || ☑ | L_EN_WRITING | 7 → standard | done 2026-11-15 | Spickzettel with 10 cards; guided: P_EN_EMAIL, P_EN_BLOG, P_EN_PHOTO, P_EN_MEDIATION, P_EN_FEHLER. Passes the check || ☑ | L_EN_LISTENING_READING | 10 → standard | done 2026-11-15 | Spickzettel with 9 cards; guided: P_EN_LISTENING, P_EN_READ_MATCH, P_EN_READ_SIGNS, P_EN_READING. Time error (quarter past nine) corrected. Passes the check || ☑ | L_EN_GRAMMAR | 4 → standard | done 2026-11-15 | Spickzettel with 8 cards; one guided lesson per topic: P_EN_FRAGEN, P_EN_MODALS, P_EN_IF, P_EN_COMPARISON. Passes the check || ☑ | L_EN_TENSES | 5 → standard | done 2026-11-15 | Spickzettel with 9 cards; guided: P_EN_VERBFORMEN, P_EN_ZEITFORMEN, P_EN_ZEIT_VORBEI, P_EN_ZEIT_WEITER. Passes the check |# Comprehensibility audit and fix checklist
 
 Baseline: 2026-11-15. Three independent read-throughs (one per subject) of all 22 lessons, all 24 owl lessons and 207 of 655 sampled question explanations, scored against 12 criteria. This file is the single checklist for "is it comprehensible"; an item is done only when its row is ticked with evidence.
 
@@ -94,11 +94,17 @@ App support added: chapters with a pause board and remembered position, hint aft
 | ☐ | P_MATH_PYTH_TRIG | 14 | revise, split | Trig rearranging skipped; "picture" board has no figure |
 | ☐ | P_MATH_KOERPER | 17 | revise | Notation differs from the lesson |
 
+New English guided lessons written 2026-11-15 (all pass the check): P_EN_ZEIT_VORBEI, P_EN_ZEIT_WEITER, P_EN_READ_MATCH, P_EN_READ_SIGNS, P_EN_LISTENING, P_EN_FRAGEN, P_EN_MODALS, P_EN_IF, P_EN_COMPARISON, P_EN_BLOG, P_EN_PHOTO, P_EN_MEDIATION, P_EN_FEHLER. Sources: `tools/lessons/*.cjs`.
+
+Evidence for English: `npm run content` reports 17 of 17 English Eulen-Lektionen and 4 of 4 English lesson pages at the standard, 0 errors · `web/e2e/primers-en.spec.ts` walks every English lesson from the first board to the quiz on desktop and phone (all boards render, no sideways overflow, no page errors) · unit tests 151/151.
+
+Still open in English: no guided lesson for vocabulary (the four vocabulary topics have word tables on the writing Spickzettel only) and none for reading e-mails (EN_READ_EMAILS, 8 questions) · question explanations in the exam files and in en_02, en_04, en_05 were not rewritten (they were not on the weak list) · human read-through for tone and correctness by Arne.
+
 ## Content errors to verify and fix
 
-- ☐ P_EN_READING, board "Auflösung: die Durchsage": Ferdinand's line on "half past nine" contradicts itself.
-- ☐ L_EN_LISTENING_READING: "quarter past nine (21:15 abends)" conflates 9:15 and 21:15.
-- ☐ EN_FORMAL_INFORMAL_MCQ_T1 accepts "wanna" as informal; lesson and P_EN_EMAIL forbid it.
+- ☑ P_EN_READING, "half past nine": lesson rewritten; half past is now taught in P_EN_LISTENING with its own boards and tasks.
+- ☑ L_EN_LISTENING_READING: time table rewritten (quarter past nine = 9:15).
+- ☑ EN_FORMAL_INFORMAL_MCQ_T1: the two chat-language phrases replaced by plain informal ones; chat language is now taught as wrong everywhere.
 - ☐ P_DE_SATZ, board "Die Signalwörter": "Davor kommt ein Komma" with der/die/das and als in the list.
 - ☐ DE_MSA2023_404: "Eines SONNTAGS" explained as an adverb; check against the original paper.
 - ☐ P_DE_WORTARTEN: "mein, dein, sein" listed as standing in place of a noun; Präposition and Adverb share one description.
@@ -122,7 +128,7 @@ Maths: calculating with negative numbers · rounding (40 questions say "Runde") 
 
 | Subject | Sampled | Explain the reasoning | Weak files |
 |---|---|---|---|
-| English | 62 of 159 | 44 | en_01_grammar, en_03_writing_vocab (one-line reason plus a generic block) |
+| English | 62 of 159 | 44 | en_01_grammar, en_03_writing_vocab: ☑ rewritten 2026-11-15 (17 questions, about 200 sentence records: why right, why the tempting wrong one is wrong; "Merke" as table or list) |
 | German | 77 of 236 | 67 | de_01–de_04 templates; de_exam_2023/2024 (one sentence, no wrong option discussed) |
 | Maths | 68 of 260 | 57 | exam files (median 34–41 words) |
 

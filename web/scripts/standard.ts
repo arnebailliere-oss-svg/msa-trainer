@@ -155,7 +155,7 @@ export function checkPrimerStandard(p: Primer, terms: string[], primerById: Map<
   });
   const allText = strip(steps.map((s) => `${s.title}\n${s.body}\n${s.say ?? ""}`).join("\n")).toLowerCase();
   for (const voc of p.vocab) {
-    const head = strip(voc.term).split(/[,(/]/)[0]!.trim().toLowerCase();
+    const head = strip(voc.term).split(/[,(/]/)[0]!.replace(/[…?.! ]+$/, "").trim().toLowerCase();
     if (head && !allText.includes(head)) v.push(`word list: "${voc.term}" never appears on a board`);
   }
   return v;

@@ -45,6 +45,8 @@ export function PrimerView() {
   const primer = content?.primerById(id);
 
   const [pos, setPos] = useState<Pos>({ phase: "intro", step: 0, qi: 0 });
+  /** The lesson `pos` belongs to; guards against saving a position into a lesson the address just switched to. */
+  const [posId, setPosId] = useState(id);
   const [picked, setPicked] = useState<string | null>(null);
   const [score, setScore] = useState(0);
   const [wiping, setWiping] = useState(false);
@@ -71,12 +73,13 @@ export function PrimerView() {
   const savedStep = profile && store && primer ? Math.min(store.primerPos(profile.id, primer.id), primer.steps.length - 1) : 0;
 
   useEffect(() => {
-    if (!profile || !store || !primer) return;
+    if (!profile || !store || !primer || posId !== primer.id) return;
     if (pos.phase === "steps" || pos.phase === "pause") store.setPrimerPos(profile.id, primer.id, pos.step);
-  }, [pos, profile, store, primer]);
+  }, [pos, posId, profile, store, primer]);
 
   useEffect(() => {
     setPos({ phase: "intro", step: 0, qi: 0 });
+    setPosId(id);
     setPicked(null);
     setScore(0);
     setWiping(false);

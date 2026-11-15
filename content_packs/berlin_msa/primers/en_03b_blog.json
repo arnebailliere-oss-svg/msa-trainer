@@ -1,0 +1,357 @@
+[
+  {
+    "id": "P_EN_BLOG",
+    "subject": "EN",
+    "title": "Deine Meinung schreiben: die Blog-Antwort",
+    "teaser": "Wie du auf einen Blogbeitrag antwortest: Meinung, Grund, Beispiel und Schluss. Dazu die kleinen Wörter, die Sätze verbinden, und wie du höflich zustimmst oder widersprichst.",
+    "hook": "In dieser Schreibaufgabe fragt dich jemand nach deiner Meinung. Das klingt schwieriger, als es ist. Eine Meinung auf Englisch besteht aus vier Bausteinen, und für jeden gibt es ein paar feste Wörter. Wenn du diese Bausteine kennst, setzt du sie einfach hintereinander.",
+    "outro": "Du kannst jetzt auf einen Blogbeitrag antworten. Du sagst deine Meinung, nennst einen Grund mit because, gibst ein Beispiel von dir und schließt freundlich ab. Mit Wörtern wie but, so und however verbindest du deine Sätze, und du weißt, wie man höflich zustimmt oder widerspricht.",
+    "standard": 2,
+    "requires": [
+      "P_EN_VERBFORMEN"
+    ],
+    "steps": [
+      {
+        "chapter": "Die Aufgabe verstehen",
+        "title": "Was ist ein Blog?",
+        "body": "Ein **Blog** ist eine Seite im Internet, auf der jemand über ein Thema schreibt.\n\nAm Ende stellt er oft **Fragen** an seine Leser.\n\nDu schreibst ihm eine **Antwort**.",
+        "say": "In der Prüfung bekommst du einen kurzen Beitrag aus so einem Blog. Die Themen sind immer aus deinem Alltag: Handys, Schule, Essen, Freizeit. Deine Aufgabe ist es, dem Schreiber zu antworten, so wie in einem Kommentar unter seinem Beitrag."
+      },
+      {
+        "title": "Ein Beispiel",
+        "body": "*Sam writes: I spend five hours a day on my phone. My parents say that's too much. What do you think? How much time do you spend online?*",
+        "say": "Auf Deutsch schreibt Sam: Ich verbringe fünf Stunden am Tag an meinem Handy. Meine Eltern sagen, das ist zu viel. Was denkst du? Wie viel Zeit verbringst du im Internet? Lies den Beitrag in Ruhe. Was will Sam von dir wissen?"
+      },
+      {
+        "title": "Zwei Fragen, zwei Antworten",
+        "body": "(1) *What do you think?*\nSam fragt nach deiner **Meinung**.\n\n(2) *How much time do you spend online?*\nSam fragt nach deiner **Erfahrung**.",
+        "tasks": [
+          {
+            "text": "What do you think? fragt nach ___.",
+            "choices": [
+              "deiner Meinung",
+              "einer Uhrzeit"
+            ],
+            "correct": "deiner Meinung",
+            "why": "To think heißt denken. Sam will wissen, was du darüber denkst.",
+            "hint": "Was bedeutet das Wort think auf Deutsch?"
+          }
+        ],
+        "say": "Wie bei der E-Mail zählst du zuerst die Fragen. Hier sind es zwei. Die erste fragt, was du über das Thema denkst. Die zweite fragt, wie es bei dir selbst ist. Beide Fragen musst du beantworten, sonst fehlen dir Punkte für den Inhalt."
+      },
+      {
+        "title": "Wie lang soll die Antwort sein?",
+        "body": "Meistens steht dabei: *Write at least 100 words.*\n\nMit **vier Bausteinen** erreichst du diese Länge ohne Mühe.",
+        "tasks": [
+          {
+            "text": "Verlangt sind at least 100 words. Du schreibst 70. Das gibt ___.",
+            "choices": [
+              "einen Abzug",
+              "volle Punkte"
+            ],
+            "correct": "einen Abzug",
+            "why": "At least heißt mindestens. Ein zu kurzer Text kostet Punkte.",
+            "hint": "Was bedeutet at least? Sind 70 Wörter genug?"
+          }
+        ],
+        "say": "Hundert Wörter klingen nach viel. Wenn du aber weißt, was du schreiben sollst, sind sie schnell erreicht. Du brauchst eine Meinung, einen Grund, ein Beispiel von dir und einen freundlichen Schluss. Diese vier Bausteine schauen wir uns jetzt einzeln an."
+      },
+      {
+        "chapter": "Die vier Bausteine",
+        "title": "Baustein 1: die Meinung",
+        "body": "***In my opinion**, five hours is too much.*\n\nSo kannst du auch anfangen: *I think …* oder *I believe …*",
+        "say": "Mit dem ersten Satz sagst du klar, was du denkst. In my opinion bedeutet meiner Meinung nach. I think heißt ich denke, und I believe heißt ich glaube. Such dir eine dieser drei Wendungen aus. Dahinter kommt deine Meinung in einem einfachen Satz."
+      },
+      {
+        "title": "Baustein 2: der Grund",
+        "body": "*… **because** you have no time for friends or sport.*\n\nbecause = weil\n\nEine Meinung ohne Grund ist nur eine Behauptung.",
+        "tasks": [
+          {
+            "text": "I think phones are useful ___ you can learn with them.",
+            "choices": [
+              "because",
+              "but"
+            ],
+            "correct": "because",
+            "why": "Der zweite Teil nennt den Grund. Dafür steht das Wort für weil.",
+            "hint": "Nennt der zweite Teil einen Grund oder einen Gegensatz?"
+          }
+        ],
+        "say": "Jetzt erklärst du, warum du so denkst. Dafür brauchst du das Wort because. Dieser Baustein ist der wichtigste, denn für eine begründete Meinung gibt es die Punkte. Frag dich nach jedem Satz mit I think: Habe ich auch gesagt, warum?"
+      },
+      {
+        "title": "Baustein 3: das Beispiel von dir",
+        "body": "***For example**, I use my phone for about two hours a day.*\n\nfor example = zum Beispiel",
+        "say": "Mit dem dritten Baustein beantwortest du Sams zweite Frage. Du erzählst von dir selbst. Das macht deinen Text lebendig und bringt viele Wörter. Es muss nichts Besonderes sein. Ein ehrlicher Satz aus deinem Alltag reicht völlig."
+      },
+      {
+        "title": "Die andere Seite zeigen",
+        "body": "***On the one hand**, phones are useful.*\n\n***On the other hand**, they can take too much time.*",
+        "say": "Manchmal gibt es gute Gründe für beide Seiten. Dann kannst du beide nennen. On the one hand bedeutet einerseits, on the other hand bedeutet andererseits. Mit diesem Paar zeigst du, dass du über das Thema nachgedacht hast."
+      },
+      {
+        "title": "Wörter, die Sätze verbinden",
+        "body": "**and** = und\n**but** = aber\n**because** = weil\n**so** = deshalb\n**however** = jedoch\n**also** = auch",
+        "tasks": [
+          {
+            "text": "It was late, ___ I went home.",
+            "choices": [
+              "so",
+              "because"
+            ],
+            "correct": "so",
+            "why": "Das Heimgehen ist die Folge davon, dass es spät war.",
+            "hint": "Was kam zuerst: dass es spät war, oder dass ich ging? Welches Wort zeigt die Folge?"
+          }
+        ],
+        "say": "Kurze Sätze hintereinander klingen abgehackt. Mit diesen kleinen Wörtern verbindest du sie. But zeigt einen Gegensatz. So zeigt eine Folge. However bedeutet dasselbe wie but, steht aber am Satzanfang und bekommt ein Komma dahinter."
+      },
+      {
+        "title": "Baustein 4: der Schluss",
+        "body": "*What about you?*\n*Thanks for your post!*\n\nEin freundlicher letzter Satz, gern mit einer Frage zurück.",
+        "say": "Am Ende schreibst du noch einen freundlichen Satz. What about you bedeutet: Und wie ist es bei dir? Damit gibst du die Frage zurück, wie in einem echten Gespräch. A post ist ein Beitrag in einem Blog."
+      },
+      {
+        "title": "Jetzt du: die Bausteine erkennen",
+        "body": "Tipp bei jedem Satz auf die richtige Lösung.",
+        "tasks": [
+          {
+            "text": "In my opinion, … leitet ___ ein.",
+            "choices": [
+              "die Meinung",
+              "das Beispiel"
+            ],
+            "correct": "die Meinung",
+            "why": "Opinion heißt Meinung. So beginnt Baustein eins.",
+            "hint": "Was bedeutet das Wort opinion auf Deutsch?"
+          },
+          {
+            "text": "For example, … leitet ___ ein.",
+            "choices": [
+              "ein Beispiel",
+              "einen Grund"
+            ],
+            "correct": "ein Beispiel",
+            "why": "Example heißt Beispiel. So beginnt Baustein drei.",
+            "hint": "Welches deutsche Wort steckt in example?"
+          },
+          {
+            "text": "I like games, ___ I don't play every day.",
+            "choices": [
+              "but",
+              "because"
+            ],
+            "correct": "but",
+            "why": "Der zweite Teil ist ein Gegensatz zum ersten. Dafür steht das Wort für aber.",
+            "hint": "Passt der zweite Teil zum ersten, oder ist er ein Gegensatz?"
+          }
+        ],
+        "say": "Hier siehst du Satzanfänge und Verbindungswörter. Überleg bei jedem, welche Aufgabe er im Text hat. Leitet er eine Meinung ein, einen Grund, ein Beispiel oder einen Gegensatz?"
+      },
+      {
+        "chapter": "Zustimmen und widersprechen",
+        "title": "Zustimmen",
+        "body": "*I agree with you.*\n= Ich stimme dir zu.\n\n*You are right.*\n= Du hast recht.\n\n*That's a good point.*\n= Das ist ein gutes Argument.",
+        "say": "Oft möchtest du auf das eingehen, was der Schreiber gesagt hat. Wenn du derselben Meinung bist, nimmst du einen dieser Sätze. To agree bedeutet zustimmen. Danach sagst du wieder mit because, warum du zustimmst."
+      },
+      {
+        "title": "Höflich widersprechen",
+        "body": "*I don't agree.*\n= Ich stimme nicht zu.\n\n*I see your point, but …*\n= Ich verstehe, was du meinst, aber …\n\n*I'm not sure about that.*\n= Da bin ich mir nicht sicher.",
+        "tasks": [
+          {
+            "text": "Ich stimme dir zu. = ___",
+            "choices": [
+              "I agree with you.",
+              "I am agree with you."
+            ],
+            "correct": "I agree with you.",
+            "why": "Agree ist schon das Verb. Ein am davor ist falsch.",
+            "hint": "Ist agree ein Verb? Braucht ein Verb noch ein am davor?"
+          }
+        ],
+        "say": "Du darfst auch anderer Meinung sein. Das ist sogar interessanter zu lesen. Wichtig ist, dass du höflich bleibst. Mit I see your point, but zeigst du zuerst Verständnis und sagst dann deine eigene Sicht."
+      },
+      {
+        "title": "Die Falle: I am agree",
+        "body": "Falsch: *I am agree.*\n\nRichtig: *I **agree**.*\n\nAgree ist selbst das Verb.",
+        "say": "Dieser Fehler kommt vom Deutschen. Dort sagt man: Ich bin einverstanden. Deshalb möchte man I am agree schreiben. Im Englischen ist agree aber ein Verb wie play oder like. Du sagst ja auch nicht I am play."
+      },
+      {
+        "title": "Jetzt du: ein kleiner Text",
+        "body": "Bau den Text zusammen. Tipp bei jeder Lücke auf das passende Wort.",
+        "tasks": [
+          {
+            "text": "___, school should start later.",
+            "choices": [
+              "In my opinion",
+              "For example"
+            ],
+            "correct": "In my opinion",
+            "why": "Der Satz sagt, was der Schreiber denkt. Das ist die Meinung.",
+            "hint": "Was sagt dieser Satz: eine Meinung oder ein Beispiel?"
+          },
+          {
+            "text": "Teenagers need more sleep, ___ they are often tired.",
+            "choices": [
+              "so",
+              "but"
+            ],
+            "correct": "so",
+            "why": "Die Müdigkeit ist die Folge davon, dass Schlaf fehlt.",
+            "hint": "Ist der zweite Teil eine Folge oder ein Gegensatz?"
+          },
+          {
+            "text": "___, I am always tired at eight o'clock.",
+            "choices": [
+              "For example",
+              "On the other hand"
+            ],
+            "correct": "For example",
+            "why": "Der Schreiber erzählt von sich. Das ist das Beispiel.",
+            "hint": "Erzählt der Schreiber hier von sich selbst, oder nennt er die Gegenseite?"
+          }
+        ],
+        "say": "Das Thema ist: Sollte die Schule später anfangen? Die drei Sätze gehören zusammen und bilden eine kleine Antwort. Überleg bei jeder Lücke, welcher Baustein dort gebraucht wird."
+      },
+      {
+        "title": "Deine Checkliste",
+        "body": "(1) Alle Fragen beantwortet?\n\n(2) Meinung mit **because** begründet?\n\n(3) Ein Beispiel von dir?\n\n(4) Ein freundlicher Schluss?\n\n(5) Wörter gezählt?",
+        "tasks": [
+          {
+            "text": "Der wichtigste Baustein nach der Meinung ist ___.",
+            "choices": [
+              "der Grund",
+              "die Anrede"
+            ],
+            "correct": "der Grund",
+            "why": "Für eine begründete Meinung gibt es die Punkte.",
+            "hint": "Was macht aus einer Behauptung eine überzeugende Meinung?"
+          }
+        ],
+        "say": "Mit diesen fünf Punkten prüfst du deine Antwort, bevor du sie abgibst. Wenn dir noch Wörter fehlen, schreib einen zweiten Grund oder ein zweites Beispiel dazu. Gleich kommen die Wörter zum Nachlesen und ein kleines Quiz."
+      }
+    ],
+    "vocab": [
+      {
+        "term": "Blog",
+        "plain": "Eine Seite im Internet, auf der jemand regelmäßig über ein Thema schreibt."
+      },
+      {
+        "term": "In my opinion",
+        "plain": "Meiner Meinung nach. So beginnt eine Meinung.",
+        "example": "In my opinion, five hours is too much."
+      },
+      {
+        "term": "because",
+        "plain": "Weil. So nennst du einen Grund."
+      },
+      {
+        "term": "For example",
+        "plain": "Zum Beispiel."
+      },
+      {
+        "term": "On the one hand / On the other hand",
+        "plain": "Einerseits und andererseits."
+      },
+      {
+        "term": "but, so, however",
+        "plain": "Aber, deshalb, jedoch. Wörter, die Sätze verbinden."
+      },
+      {
+        "term": "I agree",
+        "plain": "Ich stimme zu. Ohne am davor.",
+        "example": "I agree with you."
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Sam schreibt: What do you think? Was will er wissen?",
+        "choices": [
+          "deine Meinung",
+          "deinen Namen",
+          "die Uhrzeit",
+          "dein Alter"
+        ],
+        "correct": "deine Meinung",
+        "explain": "To think heißt denken. Sam fragt, was du über das Thema denkst."
+      },
+      {
+        "prompt": "Mit welchen Wörtern kannst du eine Meinung beginnen?",
+        "choices": [
+          "In my opinion,",
+          "For example,",
+          "Because",
+          "Yours sincerely,"
+        ],
+        "correct": "In my opinion,",
+        "explain": "In my opinion bedeutet meiner Meinung nach. For example leitet ein Beispiel ein, because einen Grund."
+      },
+      {
+        "prompt": "I like my phone ___ I can talk to my friends.",
+        "choices": [
+          "because",
+          "but",
+          "so",
+          "however"
+        ],
+        "correct": "because",
+        "explain": "Der zweite Teil nennt den Grund, warum der Schreiber sein Handy mag. Dafür steht because."
+      },
+      {
+        "prompt": "I was tired, ___ I went to bed early.",
+        "choices": [
+          "so",
+          "because",
+          "but",
+          "for example"
+        ],
+        "correct": "so",
+        "explain": "Früh ins Bett zu gehen ist die Folge der Müdigkeit. Eine Folge zeigt man mit so."
+      },
+      {
+        "prompt": "Welcher Satz ist richtig?",
+        "choices": [
+          "I agree with you.",
+          "I am agree with you.",
+          "I agree you.",
+          "I am agreeing you with."
+        ],
+        "correct": "I agree with you.",
+        "explain": "Agree ist ein Verb und braucht kein am. Nach agree steht with und dann die Person."
+      },
+      {
+        "prompt": "Was bedeutet On the other hand?",
+        "choices": [
+          "andererseits",
+          "zum Beispiel",
+          "deshalb",
+          "meiner Meinung nach"
+        ],
+        "correct": "andererseits",
+        "explain": "On the one hand heißt einerseits, on the other hand heißt andererseits. So zeigt man zwei Seiten."
+      },
+      {
+        "prompt": "Welcher Satz passt als Schluss einer Blog-Antwort?",
+        "choices": [
+          "What about you?",
+          "Dear Sir or Madam,",
+          "Subject: Phones",
+          "I am writing to ask about prices."
+        ],
+        "correct": "What about you?",
+        "explain": "Am Ende gibt man die Frage freundlich zurück. Die anderen Sätze gehören in eine formelle E-Mail."
+      },
+      {
+        "prompt": "Welcher Baustein fehlt? In my opinion, homework is important. For example, I learn a lot from it.",
+        "choices": [
+          "der Grund mit because",
+          "die Meinung",
+          "das Beispiel",
+          "die Anrede"
+        ],
+        "correct": "der Grund mit because",
+        "explain": "Der Text hat eine Meinung und ein Beispiel. Es fehlt der Satz, der mit because erklärt, warum."
+      }
+    ]
+  }
+]

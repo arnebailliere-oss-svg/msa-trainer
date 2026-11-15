@@ -81,6 +81,12 @@ primer(
         { tasks: [k("You look tired. You ___ go to bed.", "should", ["must not"], "Wer müde aussieht, bekommt einen Rat: Geh lieber ins Bett.", "Wird hier etwas verboten, oder gibt jemand einen freundlichen Rat?")] },
       ),
       b(
+        "Vier weitere, die du erkennen solltest",
+        [L("**needn't** = nicht müssen, wie don't have to", "**might** = könnte vielleicht", "**Shall I …?** = Soll ich …?", "**Would you …?** = Würdest du …?")],
+        "Diese vier kommen in Übungen und Texten vor. Needn't bedeutet dasselbe wie don't have to. Might ist eine vorsichtige Vermutung. Mit Shall I bietest du deine Hilfe an, und mit Would you bittest du höflich um etwas.",
+        { tasks: [k("___ I carry your bag? (ein Angebot)", "Shall", ["Must"], "Mit dieser Frage bietet man seine Hilfe an: Soll ich …?", "Welches der Wörter auf der Tafel bedeutet soll ich?")] },
+      ),
+      b(
         "Jetzt du: Was ist gemeint?",
         "Tipp bei jedem Satz auf das passende Modalverb.",
         "Überleg bei jedem Satz zuerst auf Deutsch, was gemeint ist. Ist es ein Verbot, ein Rat, oder ist etwas einfach nicht nötig? Dann findest du das passende englische Wort.",

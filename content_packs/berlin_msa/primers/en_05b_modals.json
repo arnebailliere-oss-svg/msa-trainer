@@ -157,6 +157,23 @@
         "say": "Mit should gibst du jemandem einen Rat. Du befiehlst nichts, du empfiehlst nur etwas. Shouldn't ist die Kurzform von should not. In Schreibaufgaben brauchst du should oft, wenn du jemandem einen Tipp gibst."
       },
       {
+        "title": "Vier weitere, die du erkennen solltest",
+        "body": "**needn't** = nicht müssen, wie don't have to\n**might** = könnte vielleicht\n**Shall I …?** = Soll ich …?\n**Would you …?** = Würdest du …?",
+        "tasks": [
+          {
+            "text": "___ I carry your bag? (ein Angebot)",
+            "choices": [
+              "Shall",
+              "Must"
+            ],
+            "correct": "Shall",
+            "why": "Mit dieser Frage bietet man seine Hilfe an: Soll ich …?",
+            "hint": "Welches der Wörter auf der Tafel bedeutet soll ich?"
+          }
+        ],
+        "say": "Diese vier kommen in Übungen und Texten vor. Needn't bedeutet dasselbe wie don't have to. Might ist eine vorsichtige Vermutung. Mit Shall I bietest du deine Hilfe an, und mit Would you bittest du höflich um etwas."
+      },
+      {
         "title": "Jetzt du: Was ist gemeint?",
         "body": "Tipp bei jedem Satz auf das passende Modalverb.",
         "tasks": [

@@ -1,0 +1,364 @@
+[
+  {
+    "id": "P_EN_PHOTO",
+    "subject": "EN",
+    "title": "Ein Foto beschreiben",
+    "teaser": "Die kurze Schreibaufgabe mit dem Foto: sagen, was das Bild zeigt, wo etwas zu sehen ist und was du darüber denkst. Mit den Wörtern für vorn, hinten, links und rechts.",
+    "hook": "Stell dir vor, du schickst einer Freundin ein Foto aus dem Urlaub und schreibst zwei, drei Sätze dazu. Genau das ist diese Aufgabe. Der Text ist kurz, meistens nur 30 bis 50 Wörter. Du brauchst dafür drei Schritte und ein paar Wörter, die dir sagen, wo auf dem Bild etwas ist.",
+    "outro": "Du kannst jetzt ein Foto auf Englisch beschreiben. Du sagst zuerst, was es zeigt, dann wo etwas zu sehen ist, und am Ende, was du darüber denkst. Du weißt, dass es in the picture heißt und dass das, was auf dem Foto passiert, im Present Progressive steht.",
+    "standard": 2,
+    "requires": [
+      "P_EN_VERBFORMEN",
+      "P_EN_ZEITFORMEN"
+    ],
+    "steps": [
+      {
+        "chapter": "Die Aufgabe und der erste Satz",
+        "title": "Die Aufgabe",
+        "body": "*You are on holiday. Send a photo to your friend and write a short message about it. Write 30 to 50 words.*",
+        "say": "Auf Deutsch: Du bist im Urlaub. Schick deinem Freund ein Foto und schreib eine kurze Nachricht dazu. Das Foto ist in der Prüfung abgedruckt. Du tust so, als hättest du es selbst gemacht."
+      },
+      {
+        "title": "Drei Schritte",
+        "body": "(1) Was zeigt das Foto?\n\n(2) Was ist wo zu sehen?\n\n(3) Was denkst oder fühlst du dabei?",
+        "tasks": [
+          {
+            "text": "Die Aufgabe sagt 30 to 50 words. Dein Text ist also ___.",
+            "choices": [
+              "kurz",
+              "eine ganze Seite lang"
+            ],
+            "correct": "kurz",
+            "why": "Fünfzig Wörter sind ungefähr fünf Sätze.",
+            "hint": "Wie viele Sätze sind ungefähr fünfzig Wörter?"
+          }
+        ],
+        "say": "Für jeden dieser drei Schritte schreibst du ein bis zwei Sätze. Mehr braucht es nicht. Der Text ist absichtlich kurz. Du musst also nicht jedes Blatt und jeden Stein beschreiben, sondern nur das Wichtigste."
+      },
+      {
+        "title": "Schritt 1: der Überblick",
+        "body": "*The photo shows a skate park.*\n= Das Foto zeigt einen Skatepark.\n\n*In the picture you can see my cousin.*\n= Auf dem Bild sieht man meine Cousine.",
+        "say": "Mit dem ersten Satz sagst du, was auf dem Foto zu sehen ist. Dafür gibt es zwei Anfänge, die immer passen. The photo shows bedeutet das Foto zeigt. In the picture you can see bedeutet auf dem Bild sieht man."
+      },
+      {
+        "title": "in the picture, nicht on",
+        "body": "Richtig: ***in** the picture*\n\nFalsch: *on the picture*\n\nIm Deutschen sagst du **auf** dem Bild. Im Englischen sagt man **in**.",
+        "tasks": [
+          {
+            "text": "___ the photo you can see my dog.",
+            "choices": [
+              "In",
+              "On"
+            ],
+            "correct": "In",
+            "why": "Was auf einem Foto abgebildet ist, ist im Englischen in dem Foto.",
+            "hint": "Liegt der Hund oben auf dem Papier, oder ist er darin abgebildet?"
+          }
+        ],
+        "say": "Das ist der häufigste Fehler in dieser Aufgabe. Im Deutschen ist etwas auf dem Bild. Im Englischen ist es in dem Bild, so als würde man hineinschauen. On the picture würde bedeuten, dass etwas oben auf dem Foto liegt, zum Beispiel eine Tasse."
+      },
+      {
+        "chapter": "Wo ist was?",
+        "title": "Vorn und hinten",
+        "body": "**in the foreground** = im Vordergrund\nDas ist vorn, nah bei dir.\n\n**in the background** = im Hintergrund\nDas ist hinten, weit weg.",
+        "say": "Jedes Foto hat einen vorderen und einen hinteren Teil. Was nah an der Kamera ist, ist im Vordergrund. Was weit weg ist, ist im Hintergrund. Mit diesen beiden Ausdrücken bringst du sofort Ordnung in deine Beschreibung."
+      },
+      {
+        "title": "Links, rechts und in der Mitte",
+        "body": "**on the left** = links\n**on the right** = rechts\n**in the middle** = in der Mitte",
+        "tasks": [
+          {
+            "text": "im Hintergrund = in the ___",
+            "choices": [
+              "background",
+              "foreground"
+            ],
+            "correct": "background",
+            "why": "Back bedeutet hinten. Der Hintergrund ist das, was weit weg ist.",
+            "hint": "In welchem der beiden Wörter steckt das englische Wort für hinten?"
+          }
+        ],
+        "say": "Auch die Seiten kannst du benennen. Achte auf die kleinen Wörter davor. Bei left und right steht on. Bei middle, foreground und background steht in. Das musst du dir einfach so merken."
+      },
+      {
+        "title": "Neben, hinter, vor und zwischen",
+        "body": "**next to** = neben\n**behind** = hinter\n**in front of** = vor\n**between** = zwischen",
+        "tasks": [
+          {
+            "text": "The dog is ___ the tree. (hinter)",
+            "choices": [
+              "behind",
+              "next to"
+            ],
+            "correct": "behind",
+            "why": "Das ist das englische Wort für hinter.",
+            "hint": "Schau in die zweite Zeile der Tafel."
+          }
+        ],
+        "say": "Mit diesen vier Ausdrücken sagst du, wo eine Sache im Verhältnis zu einer anderen ist. The dog is next to the girl heißt: Der Hund ist neben dem Mädchen. In front of besteht aus drei Wörtern, die zusammengehören."
+      },
+      {
+        "title": "Was passiert gerade?",
+        "body": "*Mia **is riding** her board.*\n\n*Two boys **are watching**.*\n\nWas auf dem Foto passiert, steht im **Present Progressive**.",
+        "tasks": [
+          {
+            "text": "In the photo a girl ___.",
+            "choices": [
+              "is jumping",
+              "jumps"
+            ],
+            "correct": "is jumping",
+            "why": "Ein Foto zeigt einen Moment. Dafür steht das Present Progressive.",
+            "hint": "Zeigt ein Foto eine Gewohnheit oder einen einzelnen Moment?"
+          }
+        ],
+        "say": "Ein Foto hält einen Moment fest. Alles, was darauf passiert, passiert für dich gerade jetzt. Deshalb benutzt du das Present Progressive, also am, is oder are und das Verb mit ing. Das Simple Present wäre hier falsch."
+      },
+      {
+        "title": "there is und there are",
+        "body": "***There is** a tree.*\nDas sagst du bei einer Sache.\n\n***There are** two dogs.*\nDas sagst du bei mehreren.",
+        "tasks": [
+          {
+            "text": "There ___ three people in the photo.",
+            "choices": [
+              "are",
+              "is"
+            ],
+            "correct": "are",
+            "why": "Drei Leute sind mehrere. Dann steht die Form für mehrere.",
+            "hint": "Wie viele Leute sind es? Ist das einer oder sind es mehrere?"
+          }
+        ],
+        "say": "Mit there is und there are sagst du, dass etwas da ist. Im Deutschen heißt das es gibt oder da ist. Bei einer einzelnen Sache nimmst du there is. Bei mehreren nimmst du there are. Schau also immer auf das Wort, das danach kommt."
+      },
+      {
+        "title": "Jetzt du: das Foto am Strand",
+        "body": "Stell dir ein Foto vor: vorn deine Schwester mit einem Eis, hinten das Meer.",
+        "tasks": [
+          {
+            "text": "___ the foreground you can see my sister.",
+            "choices": [
+              "In",
+              "On"
+            ],
+            "correct": "In",
+            "why": "Vor foreground und background steht dieses kleine Wort.",
+            "hint": "Welches kleine Wort stand auf der Tafel vor foreground?"
+          },
+          {
+            "text": "She ___ an ice cream.",
+            "choices": [
+              "is eating",
+              "eat"
+            ],
+            "correct": "is eating",
+            "why": "Es passiert gerade auf dem Foto. She bekommt is, das Verb bekommt ing.",
+            "hint": "In welcher Zeit steht das, was auf einem Foto passiert?"
+          },
+          {
+            "text": "The sea is in the ___.",
+            "choices": [
+              "background",
+              "foreground"
+            ],
+            "correct": "background",
+            "why": "Das Meer ist hinten, weit weg von der Kamera.",
+            "hint": "Ist das Meer nah bei der Kamera oder weit weg?"
+          }
+        ],
+        "say": "Jetzt beschreibst du dieses Foto. Achte auf die kleinen Wörter vor foreground und background. Und denk daran, in welcher Zeit das steht, was auf einem Foto passiert."
+      },
+      {
+        "chapter": "Was du denkst, und der Schluss",
+        "title": "Schritt 3: deine Gedanken",
+        "body": "*It looks like fun.*\n= Es sieht nach Spaß aus.\n\n*I think she is very brave.*\n= Ich finde, sie ist sehr mutig.\n\n*Maybe they are friends.*\n= Vielleicht sind sie Freunde.",
+        "say": "Zum Schluss sagst du, was du über das Foto denkst. Das macht aus einer Aufzählung eine persönliche Nachricht. It looks like bedeutet es sieht aus wie. Maybe bedeutet vielleicht. Damit darfst du auch vermuten, was du nicht genau weißt."
+      },
+      {
+        "title": "Ein Gruß zum Schluss",
+        "body": "*I wish you were here!*\n= Ich wünschte, du wärst hier!\n\n*See you soon!*\n= Bis bald!",
+        "say": "Weil es eine Nachricht an einen Freund ist, endet sie mit einem kurzen Gruß. I wish you were here ist ein Satz, den Engländer oft auf Postkarten schreiben. Du kannst ihn einfach als Ganzes lernen."
+      },
+      {
+        "title": "Ein fertiger Text",
+        "body": "*Hi! This is the skate park in Leeds. In the foreground you can see Mia on her board. She is practising a new trick. I think she is really brave. I wish you were here!*",
+        "tasks": [
+          {
+            "text": "Der Satz I think she is really brave ist ___.",
+            "choices": [
+              "ein Gedanke",
+              "der Überblick"
+            ],
+            "correct": "ein Gedanke",
+            "why": "I think leitet ein, was der Schreiber über das Foto denkt.",
+            "hint": "Mit welchen zwei Wörtern beginnt der Satz? Was bedeuten sie?"
+          }
+        ],
+        "say": "Das sind 34 Wörter. Schau, wie die drei Schritte darin stecken. Zuerst der Überblick: ein Skatepark. Dann, was wo zu sehen ist und was Mia gerade tut. Am Ende ein Gedanke und der Gruß."
+      },
+      {
+        "title": "Jetzt du: die Reihenfolge",
+        "body": "Tipp bei jedem Satz an, zu welchem Schritt er gehört.",
+        "tasks": [
+          {
+            "text": "The photo shows a market in Spain. Das ist ___.",
+            "choices": [
+              "der Überblick",
+              "ein Gedanke"
+            ],
+            "correct": "der Überblick",
+            "why": "Der Satz sagt, was das Foto als Ganzes zeigt.",
+            "hint": "Sagt der Satz, was das ganze Foto zeigt, oder was der Schreiber fühlt?"
+          },
+          {
+            "text": "On the left there is a fruit stall. Der Satz sagt, ___.",
+            "choices": [
+              "wo etwas ist",
+              "was der Schreiber denkt"
+            ],
+            "correct": "wo etwas ist",
+            "why": "On the left bedeutet links. Der Satz beschreibt einen Ort im Bild.",
+            "hint": "Was bedeutet on the left auf Deutsch? Ist das ein Ort im Bild?"
+          },
+          {
+            "text": "It looks like a lovely place. Das ist ___.",
+            "choices": [
+              "ein Gedanke",
+              "der Überblick"
+            ],
+            "correct": "ein Gedanke",
+            "why": "It looks like sagt, wie das Foto auf den Schreiber wirkt.",
+            "hint": "Beschreibt der Satz, was zu sehen ist, oder wie es wirkt?"
+          }
+        ],
+        "say": "Hier siehst du drei Sätze aus einer Fotobeschreibung. Überleg bei jedem, welche Aufgabe er hat. Gibt er den Überblick, sagt er, wo etwas ist, oder ist er ein Gedanke?"
+      },
+      {
+        "title": "Das nimmst du mit",
+        "body": "(1) *The photo shows …*\n\n(2) *In the foreground … In the background …*\n\n(3) *I think …* und ein Gruß\n\nEs heißt **in** the picture, und es steht das **Present Progressive**.",
+        "tasks": [
+          {
+            "text": "___ the picture you can see two children.",
+            "choices": [
+              "In",
+              "On"
+            ],
+            "correct": "In",
+            "why": "Was abgebildet ist, ist im Englischen in dem Bild.",
+            "hint": "Welcher Fehler ist in dieser Aufgabe der häufigste?"
+          }
+        ],
+        "say": "Das ist alles für die Fotobeschreibung. Drei Schritte, ein paar Wörter für den Ort und die richtige Zeit. Gleich kommen die Wörter zum Nachlesen und ein kleines Quiz."
+      }
+    ],
+    "vocab": [
+      {
+        "term": "The photo shows …",
+        "plain": "Das Foto zeigt … So beginnt der Überblick."
+      },
+      {
+        "term": "in the picture",
+        "plain": "Auf dem Bild. Im Englischen mit in, nicht mit on."
+      },
+      {
+        "term": "in the foreground / in the background",
+        "plain": "Im Vordergrund, also vorn. Im Hintergrund, also hinten."
+      },
+      {
+        "term": "on the left / on the right",
+        "plain": "Links und rechts."
+      },
+      {
+        "term": "next to, behind, in front of, between",
+        "plain": "Neben, hinter, vor, zwischen."
+      },
+      {
+        "term": "there is / there are",
+        "plain": "Es gibt, da ist. There is bei einer Sache, there are bei mehreren."
+      },
+      {
+        "term": "It looks like …",
+        "plain": "Es sieht aus wie … So sagst du, wie das Foto wirkt."
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Welcher Satz ist richtig?",
+        "choices": [
+          "In the picture you can see a dog.",
+          "On the picture you can see a dog.",
+          "At the picture you can see a dog.",
+          "In the picture you can seeing a dog."
+        ],
+        "correct": "In the picture you can see a dog.",
+        "explain": "Im Englischen ist etwas in dem Bild. Nach can steht außerdem die Grundform see."
+      },
+      {
+        "prompt": "Was bedeutet in the foreground?",
+        "choices": [
+          "im Vordergrund, also vorn",
+          "im Hintergrund, also hinten",
+          "auf der linken Seite",
+          "in der Mitte"
+        ],
+        "correct": "im Vordergrund, also vorn",
+        "explain": "Fore bedeutet vorn. Der Vordergrund ist das, was nah an der Kamera ist."
+      },
+      {
+        "prompt": "In the photo two boys ___ football.",
+        "choices": [
+          "are playing",
+          "play",
+          "plays",
+          "is playing"
+        ],
+        "correct": "are playing",
+        "explain": "Was auf einem Foto passiert, steht im Present Progressive. Two boys sind mehrere, also are."
+      },
+      {
+        "prompt": "There ___ a big tree in the background.",
+        "choices": [
+          "is",
+          "are",
+          "be",
+          "am"
+        ],
+        "correct": "is",
+        "explain": "A big tree ist eine einzelne Sache. Dann heißt es there is."
+      },
+      {
+        "prompt": "The cat is ___ the sofa. (hinter)",
+        "choices": [
+          "behind",
+          "next to",
+          "in front of",
+          "between"
+        ],
+        "correct": "behind",
+        "explain": "Behind ist das englische Wort für hinter. Next to heißt neben, in front of heißt vor."
+      },
+      {
+        "prompt": "Mit welchem Satz sagst du, was du über das Foto denkst?",
+        "choices": [
+          "It looks like fun.",
+          "The photo shows a beach.",
+          "On the left there is a boat.",
+          "There are two people."
+        ],
+        "correct": "It looks like fun.",
+        "explain": "It looks like sagt, wie das Foto auf dich wirkt. Die anderen Sätze beschreiben nur, was zu sehen ist."
+      },
+      {
+        "prompt": "Was kommt in einer Fotobeschreibung zuerst?",
+        "choices": [
+          "Der Überblick: was das Foto zeigt",
+          "Der Gruß",
+          "Deine Gedanken",
+          "Die Wörter zählen"
+        ],
+        "correct": "Der Überblick: was das Foto zeigt",
+        "explain": "Du beginnst mit dem Überblick, beschreibst dann die Einzelheiten und sagst am Ende, was du denkst."
+      }
+    ]
+  }
+]

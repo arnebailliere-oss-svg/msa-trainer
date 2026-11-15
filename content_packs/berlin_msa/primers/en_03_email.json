@@ -2,156 +2,385 @@
   {
     "id": "P_EN_EMAIL",
     "subject": "EN",
-    "title": "Eine E-Mail auf Englisch: vom leeren Blatt zur fertigen Mail",
-    "teaser": "Wir bauen eine echte Prüfungs-E-Mail Stück für Stück zusammen, Teil für Teil, Frage für Frage, bis sie volle Punktzahl hat",
-    "hook": "In der Englischprüfung schreibst du fast immer eine E-Mail: an eine Freundin, an eine Firma, als Antwort auf einen Blog. Viele starren dann auf das leere Blatt. Das passiert dir nicht mehr. Wir bauen jetzt zusammen eine komplette E-Mail, ein Teil nach dem anderen, und du siehst genau, wo jeder Punkt herkommt.",
-    "outro": "Fragen zählen, sechs Teile, ein Absatz pro Frage, Ton passend zum Empfänger, Wörter zählen. Du hast gerade eine E-Mail mit voller Punktzahl gebaut. Jetzt die Wörter, dann das Quiz.",
+    "title": "Eine E-Mail auf Englisch schreiben",
+    "teaser": "Vom leeren Blatt zur fertigen E-Mail: die Aufgabe lesen, die Fragen zählen, die sechs Teile einer E-Mail nacheinander schreiben. Dazu der Unterschied zwischen einer Mail an eine Freundin und einer höflichen Mail an einen Fremden.",
+    "hook": "Vor einem leeren Blatt zu sitzen ist kein schönes Gefühl. Bei einer E-Mail muss das aber nicht sein, denn sie hat immer dieselben sechs Teile. Wenn du die kennst, füllst du sie einfach von oben nach unten aus. Wir bauen jetzt gemeinsam eine E-Mail, Teil für Teil.",
+    "outro": "Du weißt jetzt, wie du an eine E-Mail herangehst. Du zählst zuerst die Fragen, schreibst dann die sechs Teile von oben nach unten und zählst am Ende deine Wörter. Du kennst den lockeren Ton für Freunde und den höflichen Ton für Fremde, und du weißt, welche Anrede zu welchem Schluss gehört.",
+    "standard": 2,
+    "requires": [
+      "P_EN_VERBFORMEN"
+    ],
     "steps": [
       {
+        "chapter": "Die Aufgabe verstehen",
         "title": "Die Aufgabe",
-        "body": "*Your English friend Emma wants to visit you in Berlin in July. She asks: **What can we do there? Where can I stay? What is the weather like?** Write an e-mail to Emma. Write at least 80 words.*\n\n**Drei Fragen.** Die brauchen wir alle.",
-        "say": "Bevor du ein Wort schreibst: Wie viele Fragen stellt die Aufgabe? Zähl sie und hak sie ab. Jede vergessene Frage kostet in der Prüfung Punkte, egal wie schön der Rest ist."
+        "body": "*Your English friend Emma wants to visit you in July. She asks: What can we do? Where can I stay? What is the weather like? Write an e-mail. Write at least 80 words.*",
+        "say": "So sieht eine typische Aufgabe aus. Auf Deutsch: Deine englische Freundin Emma möchte dich im Juli besuchen. Sie fragt, was ihr unternehmen könnt, wo sie schlafen kann und wie das Wetter ist. Du sollst ihr eine E-Mail schreiben."
       },
       {
-        "title": "Eine E-Mail hat sechs Teile",
-        "body": "1. **Subject** (Betreff)\n2. **Greeting** (Anrede)\n3. **Erster Satz**\n4. **Hauptteil** (die Antworten)\n5. **Schlussformel**\n6. **Name**\n\nNoch ist alles leer. Wir füllen es von oben nach unten.",
-        "say": "Das ist der Bauplan. Er ist bei jeder E-Mail gleich, ob an eine Freundin oder an eine Firma. Wenn du ihn kennst, gibt es kein leeres Blatt mehr, nur noch Lücken."
+        "title": "Zuerst zählen: Wie viele Fragen?",
+        "body": "(1) *What can we do?*\n(2) *Where can I stay?*\n(3) *What is the weather like?*\n\n**Drei Fragen.** Jede braucht eine Antwort.",
+        "tasks": [
+          {
+            "text": "Du beantwortest nur zwei der drei Fragen. Dann fehlen dir ___.",
+            "choices": [
+              "Punkte für den Inhalt",
+              "gar keine Punkte"
+            ],
+            "correct": "Punkte für den Inhalt",
+            "why": "Jede Frage ist ein Punkt, den die Aufgabe verlangt.",
+            "hint": "Wofür bekommst du Punkte, wenn du eine Frage beantwortest?"
+          }
+        ],
+        "say": "Bevor du auch nur ein Wort schreibst, zählst du die Fragen. Das ist der wichtigste Schritt. Für jede beantwortete Frage bekommst du Punkte für den Inhalt. Wer eine Frage vergisst, verschenkt diese Punkte, egal wie schön der Rest geschrieben ist."
+      },
+      {
+        "title": "at least 80 words",
+        "body": "**at least** = mindestens\n\nDu darfst mehr schreiben, aber nicht weniger.",
+        "tasks": [
+          {
+            "text": "at least 80 words = ___ 80 Wörter",
+            "choices": [
+              "mindestens",
+              "höchstens"
+            ],
+            "correct": "mindestens",
+            "why": "At least ist die untere Grenze. Weniger darf es nicht sein.",
+            "hint": "Darfst du mehr als 80 Wörter schreiben, oder ist das die obere Grenze?"
+          }
+        ],
+        "say": "In jeder Schreibaufgabe steht, wie viele Wörter du mindestens schreiben sollst. At least bedeutet mindestens. Wenn dein Text kürzer ist, gibt es einen Abzug. Deshalb zählst du am Ende nach. Das dauert eine Minute und kann Punkte retten."
+      },
+      {
+        "title": "An wen schreibst du?",
+        "body": "Emma ist eine **Freundin**. Der Ton ist locker.\n\nAn einen Fremden oder eine Firma schreibst du **höflich**.",
+        "tasks": [
+          {
+            "text": "Du schreibst an den Leiter einer Jugendherberge. Der Ton ist ___.",
+            "choices": [
+              "höflich",
+              "locker"
+            ],
+            "correct": "höflich",
+            "why": "Den Leiter kennst du nicht. An Fremde schreibt man höflich.",
+            "hint": "Kennst du diese Person, oder ist sie fremd für dich?"
+          }
+        ],
+        "say": "Die letzte Frage vor dem Schreiben lautet: Wer bekommt die E-Mail? An eine Freundin schreibst du so, wie du mit ihr sprichst. An jemanden, den du nicht kennst, schreibst du höflicher. Das verändert die Anrede und den Schluss."
+      },
+      {
+        "chapter": "Die sechs Teile einer E-Mail",
+        "title": "Sechs Teile, von oben nach unten",
+        "body": "(1) Betreff\n(2) Anrede\n(3) Erster Satz\n(4) Hauptteil\n(5) Schlussformel\n(6) Name",
+        "say": "Jede E-Mail hat diese sechs Teile, immer in dieser Reihenfolge. Noch ist alles leer. Auf den nächsten Tafeln füllen wir einen Teil nach dem anderen. Wenn du die sechs Teile auswendig kennst, weißt du in der Prüfung immer, was als Nächstes kommt."
       },
       {
         "title": "Teil 1: der Betreff",
-        "body": "**Subject: Your visit in July**\n\nKurz. Sagt, worum es geht. **Kein ganzer Satz.**\n\n✗ *Subject: Hi Emma, I want to tell you about Berlin!*",
-        "say": "Zwei bis fünf Wörter. Der Betreff ist wie die Überschrift auf einem Ordner: Man muss sofort sehen, was drin ist."
+        "body": "**Subject: Your visit in July**\n\nKurz. Kein ganzer Satz. Er sagt, worum es geht.",
+        "tasks": [
+          {
+            "text": "Welcher Betreff ist gut? ___",
+            "choices": [
+              "Your visit in July",
+              "Hi Emma, I want to tell you something"
+            ],
+            "correct": "Your visit in July",
+            "why": "Ein Betreff ist kurz und nennt nur das Thema.",
+            "hint": "Welcher der beiden ist kurz und kein ganzer Satz?"
+          }
+        ],
+        "say": "Subject ist das englische Wort für Betreff. Der Betreff steht ganz oben und besteht nur aus wenigen Wörtern. Er nennt das Thema der E-Mail. Hier ist es Emmas Besuch im Juli. Mehr gehört dort nicht hin."
       },
       {
         "title": "Teil 2: die Anrede",
-        "body": "An eine Freundin: **Hi Emma,**\n\nNach der Anrede ein **Komma**. Die nächste Zeile beginnt trotzdem **groß**.\n\nAn eine fremde Person: *Dear Mrs Miller,* · an eine Firma: *Dear Sir or Madam,*",
-        "say": "Wer die Mail bekommt, entscheidet, wie du grüßt. Emma ist deine Freundin, also Hi Emma. An eine Firma schreibst du nie Hi."
+        "body": "**Hi Emma,**\n\nNach der Anrede steht ein Komma.\n\nDie nächste Zeile beginnt trotzdem mit einem großen Buchstaben.",
+        "say": "An eine Freundin schreibst du Hi oder Hello und den Vornamen. Dahinter kommt ein Komma. Im Deutschen würde es nach dem Komma klein weitergehen. Im Englischen beginnt die nächste Zeile groß. Das ist eine Kleinigkeit, die oft falsch gemacht wird."
       },
       {
         "title": "Teil 3: der erste Satz",
-        "body": "**Thanks for your mail! Great that you want to come to Berlin.**\n\nDer erste Satz sagt, **warum** du schreibst, oder er freut sich einfach.\n\nFormell: *I am writing to ask about …*",
-        "say": "Nicht gleich mit der ersten Antwort loslegen. Ein freundlicher Satz zuerst, dann geht es los. Das ist ein Punkt für die passende Textform."
+        "body": "**Thanks for your e-mail! It's great that you want to come.**\n\nDer erste Satz bedankt sich oder freut sich.",
+        "say": "Mit dem ersten Satz zeigst du, dass du Emmas Nachricht gelesen hast. Du bedankst dich oder sagst, dass du dich freust. Das klingt freundlich und bringt dir schon die ersten Wörter. Erst danach kommen die Antworten."
       },
       {
-        "title": "Teil 4: Frage 1 beantworten",
-        "body": "Emma: *What can we do there?*\n\n**We could go to the zoo and have a picnic in the park. In the evening there is an open-air cinema near my school.**\n\nEine Frage → ein **Absatz**.",
-        "say": "Ich beantworte die Frage und gebe eine Idee dazu. Das bringt die Punkte für weitere Aspekte. Eine Antwort mit nur drei Wörtern bekommt die nicht."
+        "title": "Teil 4: eine Frage, ein Absatz",
+        "body": "Emma: *What can we do?*\n**We could go to the zoo and have a picnic in the park.**\n\nEmma: *Where can I stay?*\n**You can stay at my place. My brother's room is free.**",
+        "tasks": [
+          {
+            "text": "Für jede Frage schreibst du ___.",
+            "choices": [
+              "einen eigenen Absatz",
+              "alles in einen Satz"
+            ],
+            "correct": "einen eigenen Absatz",
+            "why": "So bleibt der Text übersichtlich, und keine Antwort geht unter.",
+            "hint": "Wie erkennt man am schnellsten, dass alle Fragen beantwortet sind?"
+          }
+        ],
+        "say": "Jetzt beantwortest du die Fragen, eine nach der anderen. Für jede Frage beginnst du einen neuen Absatz. So sieht die Lehrerin sofort, dass du nichts vergessen hast. At my place bedeutet bei mir zu Hause."
       },
       {
-        "title": "Frage 2 beantworten",
-        "body": "Emma: *Where can I stay?*\n\n**You can stay at my place. My brother is away in July, so his room is free.**\n\nWieder ein eigener Absatz.",
-        "say": "Absatz heißt: eine Leerzeile. Der Prüfer sieht sofort: Hier kommt die Antwort auf die zweite Frage. Das macht Korrigieren leicht, und das mögen Prüfer."
+        "title": "Die dritte Frage",
+        "body": "Emma: *What is the weather like?*\n**In July it is usually warm, but bring a rain jacket.**\n\nJetzt sind alle drei Fragen beantwortet.",
+        "say": "Hier kommt die dritte Antwort. Geh an dieser Stelle im Kopf noch einmal die Liste durch. Die Frage nach den Ausflügen ist beantwortet. Die Frage nach dem Schlafplatz ist beantwortet. Und das Wetter ist jetzt auch dabei. Erst wenn alle Fragen abgehakt sind, gehst du zum Schluss."
       },
       {
-        "title": "Frage 3 beantworten",
-        "body": "Emma: *What is the weather like?*\n\n**In July it is usually warm, about 25 degrees, but bring a rain jacket, because it sometimes rains in the evening.**\n\nAlle drei Fragen: ✓ ✓ ✓",
-        "say": "Dritte Frage, dritter Absatz. Jetzt ist der Hauptteil fertig, und alle Fragen sind abgehakt. Das ist die Hälfte der Punkte: der Inhalt."
+        "title": "Teil 5 und 6: Schluss und Name",
+        "body": "**Write back soon!**\n**Best wishes,**\n**Lena**\n\nDer Name steht in einer eigenen Zeile, ohne Punkt.",
+        "tasks": [
+          {
+            "text": "Welcher Schluss passt an eine Freundin? ___",
+            "choices": [
+              "Best wishes,",
+              "Yours faithfully,"
+            ],
+            "correct": "Best wishes,",
+            "why": "Das ist ein lockerer, freundlicher Gruß.",
+            "hint": "Welcher der beiden Grüße klingt nach einem Brief an eine Firma?"
+          }
+        ],
+        "say": "Am Ende steht eine Schlussformel. Best wishes bedeutet viele Grüße. An Freunde passen auch Take care oder See you soon. Danach kommt ein Komma, und in der nächsten Zeile steht nur dein Vorname."
       },
       {
-        "title": "Teil 5: die Schlussformel",
-        "body": "An eine Freundin:\n\n**Write back soon!**\n**Best wishes,**\n\nAuch möglich: *See you soon,* · *Take care,* · *Love,*\n\nAn eine Firma: *Yours sincerely,* (Name bekannt) · *Yours faithfully,* (Sir or Madam)",
-        "say": "Die Schlussformel steht in einer eigenen Zeile, mit Komma. Bei Freunden locker, bei Firmen förmlich. Nie mischen: Hi Emma mit Yours faithfully sieht komisch aus."
+        "title": "Am Ende: nachzählen",
+        "body": "Zähl am Ende deine Wörter.\n\nIst der Text zu kurz, schreib zu jeder Antwort **einen Satz mehr**.",
+        "tasks": [
+          {
+            "text": "Dein Text hat 65 Wörter, verlangt sind 80. Du ___.",
+            "choices": [
+              "schreibst zu den Antworten noch etwas dazu",
+              "gibst ihn so ab"
+            ],
+            "correct": "schreibst zu den Antworten noch etwas dazu",
+            "why": "Mit einem Satz mehr pro Antwort erreichst du die verlangte Länge.",
+            "hint": "Was passiert, wenn ein Text kürzer ist als verlangt?"
+          }
+        ],
+        "say": "Die Aufgabe verlangt mindestens 80 Wörter. Wenn dir noch welche fehlen, musst du nichts Neues erfinden. Schreib zu jeder Antwort einen zweiten Satz dazu, zum Beispiel einen Grund oder ein Beispiel. So wächst der Text, ohne dass er durcheinandergerät."
       },
       {
-        "title": "Teil 6: dein Name",
-        "body": "**Lena**\n\nEine eigene Zeile. Ohne Punkt. Fertig.",
-        "say": "Der Name ist der letzte Baustein. Viele vergessen ihn in der Eile. Er kostet dich eine Sekunde."
+        "chapter": "Höflich schreiben",
+        "title": "Eine andere Aufgabe",
+        "body": "*Write an e-mail to Mr Brown, the manager of a youth hostel. Ask about prices and breakfast.*\n\nAn Fremde schreibst du **formell**, an Freunde **informell**.",
+        "say": "Jetzt schreibst du an Mr Brown, den Leiter einer Jugendherberge. Du kennst ihn nicht. Solche höflichen E-Mails nennt man formell. Die lockeren Mails an Freunde nennt man informell. Die sechs Teile bleiben gleich, nur die Wörter ändern sich."
       },
       {
-        "title": "Die fertige Mail",
-        "body": "**Subject: Your visit in July**\n\nHi Emma,\n\nThanks for your mail! Great that you want to come to Berlin.\n\nWe could go to the zoo and have a picnic in the park. In the evening there is an open-air cinema near my school.\n\nYou can stay at my place. My brother is away in July, so his room is free.\n\nIn July it is usually warm, about 25 degrees, but bring a rain jacket, because it sometimes rains in the evening.\n\nWrite back soon!\n\nBest wishes,\nLena",
-        "say": "Das ist sie. Sechs Teile, drei Fragen, jede in ihrem Absatz. Genau so sieht eine E-Mail mit voller Punktzahl aus. Nichts davon war schwer."
+        "title": "Anrede und Schluss gehören zusammen",
+        "body": "*Dear Mr Brown,* und *Yours sincerely,*\n*Dear Sir or Madam,* und *Yours faithfully,*\n*Hi Emma,* und *Best wishes,*",
+        "tasks": [
+          {
+            "text": "Die Mail beginnt mit Dear Sir or Madam. Sie endet mit ___",
+            "choices": [
+              "Yours faithfully,",
+              "Love,"
+            ],
+            "correct": "Yours faithfully,",
+            "why": "Zu dieser Anrede ohne Namen gehört dieser Schluss.",
+            "hint": "Schau in die zweite Zeile der Tafel. Welches Paar steht dort?"
+          }
+        ],
+        "say": "Im Englischen gibt es feste Paare. Kennst du den Namen, schreibst du Dear Mr Brown und am Ende Yours sincerely. Kennst du den Namen nicht, schreibst du Dear Sir or Madam und am Ende Yours faithfully. Das bedeutet beides: mit freundlichen Grüßen."
       },
       {
-        "title": "Nachzählen",
-        "body": "Aufgabe: *at least 80 words* = **mindestens 80 Wörter**\n\nUnsere Mail: **82 Wörter** ✓\n\nZu kurz = Abzug, **egal wie gut** der Text ist.",
-        "say": "Zähl am Ende die Wörter. Lieber ein Satz mehr als einer zu wenig. Aber nicht mit leeren Sätzen auffüllen, die merkt der Prüfer."
+        "title": "Höfliche Sätze",
+        "body": "*I am writing to ask about …*\n*Could you please tell me …?*\n*I would be grateful if …*\n*I look forward to hearing from you.*",
+        "say": "Diese vier Sätze passen in fast jede formelle E-Mail. Der erste heißt: Ich schreibe, um nach etwas zu fragen. Der zweite: Könnten Sie mir bitte sagen. Der dritte: Ich wäre dankbar, wenn. Der vierte: Ich freue mich auf Ihre Antwort."
       },
       {
-        "title": "Dieselbe Mail, formell",
-        "body": "An ein Hotel, das Emma fragen soll:\n\n**Dear Sir or Madam,**\n**I am writing to ask** whether you have a room available in July. **I would be grateful if** you could tell me the price.\n**Yours faithfully,**\nLena Berger\n\nKeine Kurzformen: *I am*, nicht *I'm*.",
-        "say": "Gleicher Bauplan, anderer Ton. Formell heißt: keine Abkürzungen, höfliche Bitten, voller Name. Der Bauplan bleibt immer gleich."
+        "title": "Keine Kurzformen, keine Chat-Sprache",
+        "body": "Formell: *I am*, nicht *I'm*.\n\nNie, auch nicht an Freunde: *u, thx, wanna, gonna*.",
+        "tasks": [
+          {
+            "text": "In einer formellen E-Mail schreibst du ___.",
+            "choices": [
+              "I am interested",
+              "I'm interested"
+            ],
+            "correct": "I am interested",
+            "why": "In formellen Texten schreibt man alle Wörter aus.",
+            "hint": "Welche der beiden Formen ist eine Kurzform mit Apostroph?"
+          }
+        ],
+        "say": "In einer formellen E-Mail schreibst du alle Wörter aus. An Freunde darfst du Kurzformen wie I'm oder don't benutzen. Chat-Sprache ist aber in beiden Fällen falsch. In der Prüfung zählt sie als Fehler, auch wenn du sie jeden Tag im Handy tippst."
       },
       {
-        "title": "Jetzt du: die Anrede",
-        "body": "Aufgabe: *Write an e-mail to **Mr Brown**, the manager of a youth hostel.*\n\nWelche Anrede?\n\n**a)** Hi Brown,\n**b)** Dear Mr Brown,\n**c)** Hello Mr!",
-        "say": "Ein Manager, den du nicht kennst, mit Namen. Entscheide dich, dann Weiter."
-      },
-      {
-        "title": "Auflösung: die Anrede",
-        "body": "**b) Dear Mr Brown,**\n\nName bekannt und fremde Person → *Dear Mr …* und am Ende *Yours sincerely,*\n\na ist zu locker, c ist kein Englisch.",
-        "say": "Dear plus Mr und Nachname. Und weil du den Namen kennst, endet die Mail mit Yours sincerely. Yours faithfully wäre nur für Sir or Madam."
-      },
-      {
-        "title": "Jetzt du: Was fehlt?",
-        "body": "Antwort an Emma:\n\n*Hi Emma, thanks for your mail! We could go to the zoo and to the open-air cinema. You can sleep in my brother's room, he is away in July. Best wishes, Lena*\n\nEmma fragte: **Was tun? Wo schlafen? Wie ist das Wetter?**",
-        "say": "Lies die Antwort und vergleich sie mit den drei Fragen. Welche fehlt? Dann Weiter."
-      },
-      {
-        "title": "Auflösung: Was fehlt?",
-        "body": "**Das Wetter.** Frage 3 ist nicht beantwortet.\n\nFolge: ein **Inhaltspunkt weg**. Dazu: keine Absätze, unter 80 Wörtern.\n\nDrei Fehler, die alle vermeidbar sind.",
-        "say": "Genau das kostet in der Prüfung die meisten Punkte: nicht die Grammatik, sondern eine vergessene Frage. Vor dem Abgeben alle Fragen abhaken."
-      },
-      {
-        "title": "Die drei Todsünden",
-        "body": "1. Eine **Frage vergessen** → Inhaltspunkt weg\n\n2. **Zu kurz** → Abzug\n\n3. **Chat-Sprache**: *u, thx, wanna, gonna* → Sprachpunkte weg, auch an Freunde",
-        "say": "Alles drei hat nichts mit Können zu tun, nur mit Sorgfalt. Wer die drei vermeidet, ist schon besser als die Hälfte der Klasse."
+        "title": "Jetzt du: Welcher Ton passt?",
+        "body": "Tipp bei jedem Satz auf die passende Lösung.",
+        "tasks": [
+          {
+            "text": "Anrede an den Leiter der Jugendherberge: ___",
+            "choices": [
+              "Dear Mr Brown,",
+              "Hi Brown,"
+            ],
+            "correct": "Dear Mr Brown,",
+            "why": "An einen Fremden mit bekanntem Namen schreibt man Dear und den Nachnamen.",
+            "hint": "Ist das ein Freund oder ein Fremder? Welche Anrede ist höflich?"
+          },
+          {
+            "text": "Could you ___ send me the prices?",
+            "choices": [
+              "please",
+              "now"
+            ],
+            "correct": "please",
+            "why": "Zu einer höflichen Bitte gehört im Englischen dieses kleine Wort.",
+            "hint": "Welches Wort macht aus einer Aufforderung eine Bitte?"
+          },
+          {
+            "text": "Erster Satz an Emma: ___",
+            "choices": [
+              "Thanks for your e-mail!",
+              "I am writing to complain."
+            ],
+            "correct": "Thanks for your e-mail!",
+            "why": "An eine Freundin beginnt man freundlich und bedankt sich.",
+            "hint": "Welcher Satz klingt nach einer Freundin und welcher nach einer Beschwerde?"
+          }
+        ],
+        "say": "Überleg bei jeder Aufgabe zuerst, an wen die E-Mail geht. Ist es jemand Fremdes, dann brauchst du den höflichen Ton. Ist es eine Freundin, dann den lockeren."
       },
       {
         "title": "Deine Checkliste",
-        "body": "1. Fragen **zählen** und abhaken\n2. **Sechs Teile** vorhanden?\n3. Ein **Absatz** pro Frage\n4. **Ton** passt zum Empfänger?\n5. **Wörter** gezählt?",
-        "say": "Fünf Punkte, dreißig Sekunden. Geh sie vor dem Abgeben durch, jedes Mal. Jetzt die Wörter, dann das Quiz."
+        "body": "(1) Alle Fragen gezählt und beantwortet?\n\n(2) Alle sechs Teile da?\n\n(3) Ein Absatz pro Frage?\n\n(4) Passt der Ton zum Empfänger?\n\n(5) Wörter gezählt?",
+        "tasks": [
+          {
+            "text": "Womit fängst du an, bevor du schreibst? ___",
+            "choices": [
+              "Ich zähle die Fragen in der Aufgabe.",
+              "Ich schreibe sofort die Anrede."
+            ],
+            "correct": "Ich zähle die Fragen in der Aufgabe.",
+            "why": "Nur wer die Fragen kennt, kann alle beantworten.",
+            "hint": "Was musst du wissen, bevor du den Hauptteil planen kannst?"
+          }
+        ],
+        "say": "Diese fünf Fragen gehst du durch, bevor du abgibst. Sie kosten dich zwei Minuten. Die meisten Punkte gehen nicht durch schwierige Grammatik verloren, sondern durch eine vergessene Frage oder einen zu kurzen Text."
       }
     ],
     "vocab": [
-      { "term": "subject", "plain": "Betreff: das Thema in zwei bis fünf Wörtern, kein Satz.", "example": "Subject: Your visit in July" },
-      { "term": "greeting", "plain": "Anrede. Freunde: Hi …, Fremde: Dear Mr …, Firma: Dear Sir or Madam.", "example": "Hi Emma," },
-      { "term": "opening sentence", "plain": "Der erste Satz: warum du schreibst, oder ein freundlicher Einstieg.", "example": "Thanks for your mail!" },
-      { "term": "main part", "plain": "Hauptteil: jede Frage der Aufgabe in einem eigenen Absatz.", "example": "Frage 1 → Absatz 1" },
-      { "term": "closing", "plain": "Schlussformel, eigene Zeile mit Komma.", "example": "Best wishes, / Yours sincerely," },
-      { "term": "signature", "plain": "Dein Name in der letzten Zeile.", "example": "Lena" },
-      { "term": "formal", "plain": "Förmlich: keine Kurzformen, höfliche Bitten, voller Name.", "example": "I would be grateful if …" },
-      { "term": "informal", "plain": "Locker, an Freunde. Aber keine Chat-Sprache.", "example": "Write back soon!" },
-      { "term": "at least", "plain": "Mindestens. Steht bei der Wortzahl in jeder Aufgabe.", "example": "Write at least 80 words." }
+      {
+        "term": "Subject",
+        "plain": "Der Betreff: wenige Wörter, die das Thema der E-Mail nennen.",
+        "example": "Subject: Your visit in July"
+      },
+      {
+        "term": "at least",
+        "plain": "Mindestens.",
+        "example": "Write at least 80 words."
+      },
+      {
+        "term": "formell",
+        "plain": "Höflich, an Fremde oder an eine Firma. Ohne Kurzformen.",
+        "example": "Dear Mr Brown, … Yours sincerely,"
+      },
+      {
+        "term": "informell",
+        "plain": "Locker, an Freunde und Familie.",
+        "example": "Hi Emma, … Best wishes,"
+      },
+      {
+        "term": "Yours sincerely / Yours faithfully",
+        "plain": "Mit freundlichen Grüßen. Sincerely, wenn du den Namen kennst. Faithfully nach Dear Sir or Madam."
+      },
+      {
+        "term": "Could you please",
+        "plain": "Könnten Sie bitte. So beginnt eine höfliche Bitte.",
+        "example": "Could you please tell me the price?"
+      },
+      {
+        "term": "I look forward to hearing from you.",
+        "plain": "Ich freue mich auf Ihre Antwort. Ein höflicher letzter Satz."
+      }
     ],
     "quiz": [
       {
-        "prompt": "Was machst du als Allererstes bei einer E-Mail-Aufgabe?",
-        "choices": ["Die Fragen der Aufgabe zählen", "Den Betreff schreiben", "Die Wörter zählen", "Mit dem Hauptteil anfangen"],
-        "correct": "Die Fragen der Aufgabe zählen",
-        "explain": "Erst wissen, was alles beantwortet werden muss. Vergessene Fragen kosten die meisten Punkte."
+        "prompt": "Was machst du zuerst, wenn du eine E-Mail-Aufgabe bekommst?",
+        "choices": [
+          "Die Fragen in der Aufgabe zählen",
+          "Die Anrede schreiben",
+          "Die Wörter zählen",
+          "Den Namen schreiben"
+        ],
+        "correct": "Die Fragen in der Aufgabe zählen",
+        "explain": "Jede Frage ist ein Punkt für den Inhalt. Nur wer sie vorher zählt, vergisst keine."
       },
       {
-        "prompt": "Welche Anrede passt an eine Firma, deren Namen du nicht kennst?",
-        "choices": ["Dear Sir or Madam,", "Hi company,", "Hey!", "Dear all guys,"],
+        "prompt": "Was bedeutet at least 80 words?",
+        "choices": [
+          "mindestens 80 Wörter",
+          "höchstens 80 Wörter",
+          "genau 80 Wörter",
+          "ungefähr 8 Sätze"
+        ],
+        "correct": "mindestens 80 Wörter",
+        "explain": "At least nennt die untere Grenze. Der Text darf länger sein, aber nicht kürzer."
+      },
+      {
+        "prompt": "Welcher Betreff ist richtig?",
+        "choices": [
+          "Subject: Your visit in July",
+          "Subject: Hi Emma, how are you today?",
+          "Subject: I want to write you an e-mail.",
+          "Subject: Best wishes, Lena"
+        ],
+        "correct": "Subject: Your visit in July",
+        "explain": "Ein Betreff ist kurz, kein ganzer Satz, und nennt nur das Thema."
+      },
+      {
+        "prompt": "Du schreibst an eine Firma und kennst keinen Namen. Welche Anrede passt?",
+        "choices": [
+          "Dear Sir or Madam,",
+          "Hi there,",
+          "Hello Firma,",
+          "Dear Friend,"
+        ],
         "correct": "Dear Sir or Madam,",
-        "explain": "Name unbekannt und formell: Dear Sir or Madam. Am Ende dann Yours faithfully."
+        "explain": "Ohne Namen schreibt man Dear Sir or Madam. Dazu gehört am Ende Yours faithfully."
       },
       {
-        "prompt": "Emma stellt drei Fragen. Wie viele Absätze hat dein Hauptteil?",
-        "choices": ["Drei, einen pro Frage", "Einen langen", "Sechs", "So viele wie Sätze"],
-        "correct": "Drei, einen pro Frage",
-        "explain": "Eine Frage, ein Absatz. So sieht der Prüfer sofort, dass alles beantwortet ist."
-      },
-      {
-        "prompt": "Welche Schlussformel passt nach *Dear Mr Brown,*?",
-        "choices": ["Yours sincerely,", "Love,", "See ya,", "Yours faithfully,"],
+        "prompt": "Die E-Mail beginnt mit Dear Mr Brown. Welcher Schluss gehört dazu?",
+        "choices": [
+          "Yours sincerely,",
+          "Love,",
+          "See you,",
+          "Yours faithfully,"
+        ],
         "correct": "Yours sincerely,",
-        "explain": "Name bekannt: Yours sincerely. Yours faithfully nur nach Dear Sir or Madam. Love und See ya sind für Freunde."
+        "explain": "Kennt man den Namen, endet die formelle E-Mail mit Yours sincerely."
       },
       {
-        "prompt": "Die Aufgabe sagt *at least 100 words*. Deine Mail hat 85. Was passiert?",
-        "choices": ["Abzug, egal wie gut der Text ist", "Nichts, wenn der Text gut ist", "Bonuspunkte für Kürze", "Die Mail wird nicht gelesen"],
-        "correct": "Abzug, egal wie gut der Text ist",
-        "explain": "Die Mindestwortzahl ist Pflicht. Darum am Ende nachzählen."
+        "prompt": "Welcher Satz passt in eine formelle E-Mail?",
+        "choices": [
+          "Could you please send me the prices?",
+          "Send me the prices!",
+          "Can u send me the prices?",
+          "I wanna know the prices."
+        ],
+        "correct": "Could you please send me the prices?",
+        "explain": "Could you please ist eine höfliche Bitte. Chat-Sprache und Befehle passen nicht."
       },
       {
-        "prompt": "Welcher Satz gehört NICHT in eine Mail an eine Freundin?",
-        "choices": ["thx 4 ur mail, wanna come?", "Thanks a lot for your mail!", "Write back soon!", "Great that you want to come."],
-        "correct": "thx 4 ur mail, wanna come?",
-        "explain": "Chat-Sprache kostet Sprachpunkte, auch an Freunde. Locker ja, Abkürzungen nein."
+        "prompt": "Emma stellt drei Fragen. Wie viele Absätze hat dein Hauptteil am besten?",
+        "choices": [
+          "drei",
+          "einen",
+          "sechs",
+          "keinen"
+        ],
+        "correct": "drei",
+        "explain": "Für jede Frage schreibst du einen eigenen Absatz. So geht keine Antwort unter."
+      },
+      {
+        "prompt": "Was ist auch in einer Mail an Freunde falsch?",
+        "choices": [
+          "thx 4 ur mail",
+          "Thanks for your e-mail!",
+          "I'm happy you can come.",
+          "See you soon!"
+        ],
+        "correct": "thx 4 ur mail",
+        "explain": "Chat-Sprache zählt in der Prüfung immer als Fehler. Kurzformen wie I'm sind an Freunde dagegen erlaubt."
       }
-    ],
-    "source": "Aufbau nach Prüfungshefte MSA Englisch Berlin 2026, Exkurs Struktur von E-Mails; Beispielaufgabe im Format von Writing Part 2"
+    ]
   }
 ]
