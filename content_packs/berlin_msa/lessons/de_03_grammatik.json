@@ -3,62 +3,78 @@
     "id": "L_DE_GRAMMATIK",
     "subject": "DE",
     "topicId": "DE_GRAM_MODUS",
-    "alsoFor": ["DE_GRAM_AKTIV_PASSIV", "DE_GRAM_INDIRECT", "DE_GRAM_PARTIZIP", "DE_GRAM_WORD_CLASSES", "DE_GRAM_TENSES", "DE_GRAM_SENTENCE_PARTS"],
-    "title": "Sprachwissen: Modus, Aktiv/Passiv, indirekte Rede",
-    "primer": "P_DE_WORTARTEN",
-    "intro": "Der Prüfungsteil *Sprachwissen und Sprachbewusstsein* fragt nach **Grammatik zum Anfassen**: In welchem Modus steht der Satz? Forme ins Passiv um. Gib die Aussage in indirekter Rede wieder. Alles davon lässt sich in ein paar Handgriffen lernen.",
-    "source": "Adaptiert nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 2 (Sprachwissen)",
+    "alsoFor": [
+      "DE_GRAM_AKTIV_PASSIV",
+      "DE_GRAM_INDIRECT",
+      "DE_GRAM_PARTIZIP",
+      "DE_GRAM_WORD_CLASSES",
+      "DE_GRAM_TENSES",
+      "DE_GRAM_SENTENCE_PARTS"
+    ],
+    "title": "Grammatik",
+    "sheet": true,
+    "guided": [
+      "P_DE_WORTARTEN",
+      "P_DE_WORTARTEN2",
+      "P_DE_SATZGLIEDER",
+      "P_DE_ZEITFORMEN",
+      "P_DE_MODUS",
+      "P_DE_PARTIZIP",
+      "P_DE_PASSIV",
+      "P_DE_INDIREKT"
+    ],
+    "intro": "Das hier ist dein Spickzettel zur Grammatik. Hier schaust du nach, wie eine Wortart heißt, welche Frage zu welchem Satzglied gehört oder wie eine Zeitform gebaut ist. Gelernt wird oben in den Lektionen mit Ferdinand, jedes Thema in einer eigenen Lektion. Tipp auf eine Karte, um sie zu öffnen.",
+    "source": "Eigene Darstellung nach den Anforderungen des MSA Deutsch",
     "sections": [
       {
-        "kind": "what",
-        "title": "Was die Prüfung fragt",
-        "body": "- „Kreuzen Sie an, in welchem **Modus** die Sätze stehen.“\n- „Formen Sie den **Passivsatz** in einen **Aktivsatz** um“ (und umgekehrt).\n- „Formulieren Sie den Satz so um, dass er **keine direkte Rede** enthält.“\n- Dazu: Wortarten, Satzglieder, Zeitformen und Partizip I/II benennen."
+        "kind": "terms",
+        "title": "Die acht Wortarten",
+        "body": "| Wortart | Daran erkennst du sie | Beispiel |\n| --- | --- | --- |\n| Nomen | der, die oder das passt davor; großgeschrieben | *der Hund, die Freude* |\n| Verb | verändert sich mit Person und Zeit | *ich gehe, er ging* |\n| Adjektiv | lässt sich steigern | *schnell, schneller* |\n| Artikel | begleitet ein Nomen | *der, die, das, ein* |\n| Pronomen | steht für ein Nomen oder zeigt, wem etwas gehört | *er, sie, mein* |\n| Präposition | steht vor einem Nomen | *auf dem Tisch* |\n| Konjunktion | verbindet Wörter und Sätze | *und, weil, dass* |\n| Adverb | sagt wann, wo, wie und bleibt immer gleich | *heute, dort, gern* |"
       },
       {
         "kind": "terms",
-        "title": "Wortarten in 60 Sekunden",
-        "primer": "P_DE_WORTARTEN",
-        "body": "- **Nomen**: Artikelprobe (*der, die, das* davor), groß. *die Freude*\n- **Verb**: verändert sich nach der Person. *ich gehe, du gehst*\n- **Adjektiv**: sagt, wie etwas ist, lässt sich steigern. *schnell, schneller*\n- **Artikel**: *der, die, das, ein, eine*\n- **Pronomen**: steht anstelle eines Nomens. *er, sie, mein, dieser*\n- **Präposition**: Verhältniswort. *in, auf, mit, nach, vor*\n- **Konjunktion**: Bindewort. *und, aber, weil, dass*\n- **Adverb**: unveränderlich, sagt wo/wann/wie. *heute, dort, sehr*"
+        "title": "Satzglieder und ihre Fragen",
+        "body": "| Satzglied | Frage | Beispiel |\n| --- | --- | --- |\n| Prädikat | Was geschieht? | Der Hund ***jagt*** die Katze. |\n| Subjekt | Wer oder was? | ***Der Hund*** jagt die Katze. |\n| Akkusativobjekt | Wen oder was? | Der Hund jagt ***die Katze***. |\n| Dativobjekt | Wem? | Ich helfe ***meinem Bruder***. |\n| adverbiale Bestimmung | Wo? Wann? Wie? Warum? | Wir fahren ***morgen*** ***nach Berlin***. |\n\nMit der Umstellprobe findest du heraus, welche Wörter ein Satzglied bilden: Was beim Umstellen zusammen wandert, gehört zusammen."
       },
       {
         "kind": "terms",
-        "title": "Satzglieder: die Fragen",
-        "body": "- **Subjekt**: *Wer oder was?* → *Der Hund* jagt die Katze.\n- **Prädikat**: *Was tut das Subjekt?* → Der Hund *jagt* die Katze. Kann zweiteilig sein: *hat … bestanden*.\n- **Objekt**: *Wen oder was?* (Akkusativ), *Wem?* (Dativ), *Wessen?* (Genitiv) → Der Hund jagt *die Katze*.\n- **Adverbiale Bestimmung**: *Wo? Wann? Wie? Warum?* → Wir fahren *morgen* *nach Berlin*.\n\nUmstellprobe: Ein Satzglied lässt sich als Ganzes an den Satzanfang stellen. *Morgen fahren wir nach Berlin.*"
+        "title": "Die vier Fälle",
+        "body": "| Fall | Frage | Beispiel |\n| --- | --- | --- |\n| Nominativ | Wer oder was? | *der Hund* |\n| Genitiv | Wessen? | *des Hundes* |\n| Dativ | Wem? | *dem Hund* |\n| Akkusativ | Wen oder was? | *den Hund* |"
       },
       {
         "kind": "formula",
-        "title": "Zeitformen",
-        "body": "- **Präsens**: ich gehe\n- **Präteritum**: ich ging (Erzählzeit, eine Verbform)\n- **Perfekt**: ich bin gegangen (haben/sein + Partizip II, gesprochene Vergangenheit)\n- **Plusquamperfekt**: ich war gegangen (hatte/war + Partizip II, Vorvergangenheit: *Als ich ankam, war der Zug abgefahren.*)\n- **Futur I**: ich werde gehen"
+        "title": "Die Zeitformen",
+        "body": "| Zeitform | So ist sie gebaut | Beispiel |\n| --- | --- | --- |\n| Präsens | ein Verbteil | *ich gehe* |\n| Präteritum | ein Verbteil | *ich ging* |\n| Perfekt | habe oder bin und Partizip II | *ich bin gegangen* |\n| Plusquamperfekt | hatte oder war und Partizip II | *ich war gegangen* |\n| Futur | werde und Infinitiv | *ich werde gehen* |\n\nBei zwei Verbteilen verrät dir der erste Teil die Zeitform."
       },
       {
         "kind": "formula",
-        "title": "Die vier Modi",
-        "body": "- **Indikativ**: Wirklichkeit, Tatsachen, Gewohnheiten. *Er geht jeden Tag zur Arbeit.*\n- **Konjunktiv I**: indirekte Rede, formelle Wünsche. Formen: *er gehe, sie habe, er sei, sie komme*. *Er sagte, er gehe zur Arbeit.*\n- **Konjunktiv II**: Unwirkliches, Wünsche, höfliche Bitten. Formen: *hätte, wäre, würde, könnte, käme*. *Wenn ich Zeit hätte, würde ich reisen.* *Könntest du mir helfen?*\n- **Imperativ**: Befehl, Aufforderung, Rat. *Geh zum Supermarkt! Kauft Milch!*\n\nTrick: Klingt der Konjunktiv I wie der Indikativ (*wir müssen*), weicht man auf Konjunktiv II aus (*sie müssten*)."
-      },
-      {
-        "kind": "formula",
-        "title": "Aktiv und Passiv",
-        "body": "**Aktiv**: Wer handelt, steht im Mittelpunkt. Subjekt + Verb + Objekt.\n\n*Der Hund jagt die Katze.*\n\n**Passiv**: Die Handlung steht im Mittelpunkt, der Täter ist unwichtig oder unbekannt. Das Objekt wird Subjekt + Form von **werden** + **Partizip II**. Der Täter kann mit **von** genannt werden oder wegfallen.\n\n*Die Katze wird (vom Hund) gejagt.*\n\n**Zurück ins Aktiv**: Täter (*von …*) wird Subjekt. Fehlt er, nimm *jemand* oder *man*: *Ich wurde in den Hinterhof gerufen.* → *Jemand rief mich in den Hinterhof.* Zeitform beibehalten!"
-      },
-      {
-        "kind": "steps",
-        "title": "Direkte → indirekte Rede in vier Schritten",
-        "body": "*Herr Schenck meinte: „Ohne Jagdtourismus müssen wir einige Naturregionen opfern.“*\n\n1. **Wörtliche Rede finden** (Anführungszeichen).\n2. **Anführungszeichen und Doppelpunkt entfernen**, Begleitsatz behalten: *Herr Schenck meinte, …*\n3. **Konjunktiv** setzen, **Pronomen und Zeitform anpassen**: *wir müssen* → *sie müssten* (Konjunktiv II, weil Konjunktiv I wie Indikativ klingt), *ich* → *er/sie*, *mein* → *sein/ihr*.\n4. **Einleitung** wählen: *… meinte, dass …* / *… fragte, ob …* / Fragewort.\n\n→ *Herr Schenck meinte, dass sie ohne Jagdtourismus einige Naturregionen opfern müssten.*"
+        "title": "Der Modus",
+        "body": "| Modus | Bedeutung | Erkennungszeichen | Beispiel |\n| --- | --- | --- | --- |\n| Indikativ | So ist es. | die normale Form | *Er geht.* |\n| Imperativ | Tu das! | das Verb steht vorn | *Geh!* |\n| Konjunktiv I | Jemand hat es gesagt. | sei, habe, gehe | *Er sagt, er gehe.* |\n| Konjunktiv II | nur vorgestellt, Wunsch, höfliche Bitte | wäre, hätte, würde | *Er würde gehen.* |\n\nKlingt der Konjunktiv I wie die normale Form, nimmt man den Konjunktiv II: *Sie sagen, sie hätten Zeit.*"
       },
       {
         "kind": "terms",
         "title": "Partizip I und II",
-        "body": "- **Partizip I** = Verb + **-end**: *lachend, schlafend, laufend*. Die Handlung passiert **gerade**, aktiv. *die lachenden Kinder*\n- **Partizip II** = **ge-** … **-t/-en**: *gebacken, gelesen, geöffnet*. Die Handlung ist **abgeschlossen**, oft passiv. *das gebackene Brot*\n\nBeide können wie Adjektive vor einem Nomen stehen und werden dann gebeugt: *die lachend**en** Kinder, das gebacken**e** Brot*."
+        "body": "|  | So wird es gebildet | Bedeutung | Beispiel |\n| --- | --- | --- | --- |\n| Partizip I | Infinitiv und d | Es geschieht gerade. | *das kochende Wasser* |\n| Partizip II | meistens ge und -t oder -en | Es ist fertig. | *das gekochte Ei* |\n\nVerben auf -ieren und Verben mit be, ver, er, ent, zer bilden das Partizip II ohne ge: *telefoniert, besucht, verstanden*."
+      },
+      {
+        "kind": "formula",
+        "title": "Aktiv und Passiv",
+        "body": "|  | Wer steht im Mittelpunkt? | Beispiel |\n| --- | --- | --- |\n| Aktiv | der, der etwas tut | *Der Hund jagt die Katze.* |\n| Passiv | das, womit etwas geschieht | *Die Katze wird vom Hund gejagt.* |\n\nSo formst du um: Das Objekt wird zum Subjekt. Das Verb wird zu werden und Partizip II. Der Handelnde kommt mit von dazu oder fällt weg. Die Zeitform bleibt dieselbe.\n\nFehlt im Passivsatz der Handelnde, nimmst du im Aktivsatz *jemand* oder *man*."
+      },
+      {
+        "kind": "steps",
+        "title": "Von der direkten zur indirekten Rede",
+        "body": "(1) Doppelpunkt und Anführungszeichen entfernen. Nach dem Begleitsatz steht ein Komma.\n\n(2) Die Person anpassen: Aus ich wird er oder sie, aus mein wird sein oder ihr.\n\n(3) Das Verb in den Konjunktiv I setzen.\n\n| Direkte Rede | Indirekte Rede |\n| --- | --- |\n| Lena sagt: „Ich bin krank.“ | Lena sagt, sie sei krank. |\n| Er fragt: „Kommst du mit?“ | Er fragt, ob ich mitkomme. |\n| Sie fragt: „Wo wohnst du?“ | Sie fragt, wo ich wohne. |\n| Er sagt: „Komm her!“ | Er sagt, ich solle herkommen. |"
       },
       {
         "kind": "mistake",
         "title": "Typische Fehler",
-        "body": "- Konjunktiv I und II verwechseln: *er gehe* (K I, indirekte Rede) vs. *er ginge / würde gehen* (K II, unwirklich).\n- Beim Passiv die **Zeitform** wechseln: *jagt* → *wird gejagt* (Präsens bleibt Präsens).\n- In der indirekten Rede das **ich** stehen lassen: *Er sagte, **ich** gehe* ✗ → *er gehe* ✓\n- Subjekt und Objekt verwechseln: Wer handelt? (Subjekt) Wen trifft es? (Objekt)"
+        "body": "| Fehler | Richtig | Warum? |\n| --- | --- | --- |\n| Beim Passiv die Zeit wechseln: *jagte* wird zu *wird gejagt* | *wurde gejagt* | Die Zeitform bleibt gleich. |\n| *Er sagte, ich gehe.* | *Er sagte, er gehe.* | Die Person wird angepasst. |\n| *wird regnen* als Passiv benennen | Futur | Nach werden steht ein Infinitiv. |\n| Das Subjekt immer vorn suchen | Mit Wer oder was? fragen | Die Frage entscheidet, nicht der Platz. |"
       },
       {
         "kind": "remember",
         "title": "Merke",
-        "body": "Modus: **Indikativ** (Wirklichkeit), **K I** (indirekte Rede: gehe, habe, sei), **K II** (hätte, wäre, würde), **Imperativ** (Geh!). Passiv = **werden + Partizip II**. Indirekte Rede = Anführungszeichen weg, Pronomen anpassen, Konjunktiv."
+        "body": "- Jede Wortart hat eine Probe: Artikel davor, Vergangenheit bilden, steigern.\n- Satzglieder findest du mit Fragen, und du fängst beim Prädikat an.\n- Bei zwei Verbteilen zeigt der erste Teil die Zeitform.\n- Passiv erkennst du an werden und einem Partizip II.\n- In der indirekten Rede steht das Verb im Konjunktiv I."
       }
     ]
   }

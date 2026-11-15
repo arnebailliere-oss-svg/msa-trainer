@@ -1,0 +1,387 @@
+[
+  {
+    "id": "P_DE_MODUS",
+    "subject": "DE",
+    "title": "Wirklich, befohlen oder nur vorgestellt: der Modus",
+    "teaser": "Die vier Aussageweisen des Verbs: Indikativ für die Wirklichkeit, Imperativ für Aufforderungen, Konjunktiv II für das, was man sich nur vorstellt, und Konjunktiv I für das, was jemand anders gesagt hat.",
+    "hook": "Ein Verb zeigt nicht nur, wann etwas passiert. Es kann auch zeigen, ob etwas wirklich so ist, ob es jemand befiehlt oder ob man es sich nur ausmalt. Wenn du sagst ich wäre gern am Meer, weiß jeder sofort, dass du nicht am Meer bist. Wie das Verb das schafft, sehen wir uns jetzt an.",
+    "outro": "Du kennst jetzt die vier Aussageweisen des Verbs. Der Indikativ sagt, was wirklich ist. Der Imperativ fordert jemanden auf. Der Konjunktiv II zeigt, dass etwas nur vorgestellt ist, und du erkennst ihn an wäre, hätte und würde. Der Konjunktiv I zeigt, dass du weitergibst, was jemand anders gesagt hat.",
+    "standard": 2,
+    "requires": [
+      "P_DE_WORTARTEN"
+    ],
+    "steps": [
+      {
+        "chapter": "Wirklichkeit und Aufforderung",
+        "title": "Derselbe Gedanke, drei Bedeutungen",
+        "body": "Du **kommst** mit.\n**Komm** mit!\nDu **kämest** mit, wenn du Zeit hättest.",
+        "say": "Lies die drei Sätze langsam. Im ersten Satz kommst du wirklich mit. Im zweiten fordert dich jemand dazu auf. Im dritten kommst du gar nicht mit, es ist nur ein Gedanke. Das Verb ist jedes Mal kommen, aber seine Form sagt etwas Verschiedenes."
+      },
+      {
+        "title": "Das nennt man Modus",
+        "body": "Die Form des Verbs zeigt, **wie** etwas gemeint ist.\n\nDiese Aussageweise heißt Modus. Es gibt vier davon.",
+        "say": "Modus ist ein lateinisches Wort und bedeutet Art und Weise. Der Modus sagt also, auf welche Art ein Satz gemeint ist: als Tatsache, als Aufforderung oder als bloße Vorstellung. In der Prüfung sollst du ankreuzen, in welchem Modus ein Satz steht."
+      },
+      {
+        "title": "Indikativ: So ist es",
+        "body": "*Er **geht** jeden Tag zur Schule.*\n\nDer Satz sagt, was wirklich ist.\n\nDieser Modus heißt **Indikativ**.",
+        "say": "Der Indikativ ist die ganz normale Form des Verbs. Du benutzt ihn für alles, was wirklich geschieht, geschehen ist oder geschehen wird. Fast alle Sätze, die du sprichst, stehen im Indikativ. Man nennt ihn deshalb auch Wirklichkeitsform."
+      },
+      {
+        "title": "Imperativ: Tu das!",
+        "body": "**Geh** nach Hause!\n**Kommt** bitte herein!\n**Nehmen Sie** Platz!\n\nDieser Modus heißt **Imperativ**.",
+        "tasks": [
+          {
+            "text": "___ bitte das Fenster zu!",
+            "choices": [
+              "Mach",
+              "Machst"
+            ],
+            "correct": "Mach",
+            "why": "In einer Aufforderung steht das Verb vorn, ohne die Endung st.",
+            "hint": "Wie sagst du es, wenn du einen Freund direkt aufforderst?"
+          }
+        ],
+        "say": "Mit dem Imperativ forderst du jemanden auf, etwas zu tun. Das kann ein Befehl sein, eine Bitte oder ein Rat. Du erkennst ihn daran, dass das Verb ganz vorn steht und meistens die Person fehlt. Am Ende steht oft ein Ausrufezeichen."
+      },
+      {
+        "title": "Jetzt du: Indikativ oder Imperativ?",
+        "body": "Tipp bei jedem Satz auf den richtigen Modus.",
+        "tasks": [
+          {
+            "text": "Sie lacht laut. Das ist ___.",
+            "choices": [
+              "Indikativ",
+              "Imperativ"
+            ],
+            "correct": "Indikativ",
+            "why": "Der Satz stellt fest, was wirklich geschieht.",
+            "hint": "Wird hier etwas festgestellt oder jemand aufgefordert?"
+          },
+          {
+            "text": "Hör mir bitte zu! Das ist ___.",
+            "choices": [
+              "Imperativ",
+              "Indikativ"
+            ],
+            "correct": "Imperativ",
+            "why": "Jemand wird aufgefordert, und das Verb steht ganz vorn.",
+            "hint": "Wo steht das Verb, und welches Zeichen steht am Ende?"
+          },
+          {
+            "text": "Morgen schreiben wir einen Test. Das ist ___.",
+            "choices": [
+              "Indikativ",
+              "Imperativ"
+            ],
+            "correct": "Indikativ",
+            "why": "Der Satz sagt, was wirklich geschehen wird.",
+            "hint": "Wird hier jemand aufgefordert, oder wird etwas mitgeteilt?"
+          }
+        ],
+        "say": "Frag dich bei jedem Satz: Wird hier etwas festgestellt, oder wird jemand zu etwas aufgefordert? Achte darauf, wo das Verb steht."
+      },
+      {
+        "chapter": "Konjunktiv II: nur vorgestellt",
+        "title": "Wenn ich reich wäre",
+        "body": "*Wenn ich reich **wäre**, **würde** ich um die Welt reisen.*\n\nDas ist nicht wirklich so. Man stellt es sich nur vor.\n\nDieser Modus heißt **Konjunktiv** II.",
+        "say": "Der Sprecher ist nicht reich, und er reist nicht um die Welt. Er malt sich nur aus, wie es wäre. Für solche Gedanken gibt es eine eigene Form des Verbs. Sie heißt Konjunktiv II. Man nennt sie auch Möglichkeitsform."
+      },
+      {
+        "title": "Die wichtigsten Formen",
+        "body": "sein: ich **wäre**\nhaben: ich **hätte**\nkönnen: ich **könnte**\nkommen: ich **käme**\nwissen: ich **wüsste**",
+        "say": "Diese fünf Formen brauchst du am häufigsten. Schau genau hin: Fast alle haben zwei Punkte auf einem Buchstaben. Aus war wird wäre, aus hatte wird hätte, aus konnte wird könnte. Daran erkennst du den Konjunktiv II meistens sofort."
+      },
+      {
+        "title": "würde hilft immer",
+        "body": "ich **würde** gehen, ich **würde** lachen, ich **würde** helfen\n\nMit würde und dem Infinitiv kannst du jedes Verb in den Konjunktiv II setzen.",
+        "tasks": [
+          {
+            "text": "Wenn ich mehr Zeit ___, würde ich öfter lesen.",
+            "choices": [
+              "hätte",
+              "habe"
+            ],
+            "correct": "hätte",
+            "why": "Der Sprecher hat die Zeit nicht. Es ist nur vorgestellt.",
+            "hint": "Hat der Sprecher wirklich mehr Zeit? Welche Form zeigt, dass es nur ein Gedanke ist?"
+          }
+        ],
+        "say": "Bei vielen Verben klingt die eigentliche Form veraltet. Niemand sagt heute ich hülfe. Deshalb nimmt man meistens würde und hängt das Verb in der Grundform an. Das ist richtig und klingt natürlich. Nur bei sein, haben und können benutzt man die kurze Form."
+      },
+      {
+        "title": "Drei Aufgaben des Konjunktivs II",
+        "body": "**Unwirkliches**: *Wenn ich fliegen könnte …*\n**Wünsche**: *Ich hätte gern ein Eis.*\n**Höfliche Bitten**: *Könntest du mir helfen?*",
+        "tasks": [
+          {
+            "text": "___ du mir bitte das Salz geben?",
+            "choices": [
+              "Könntest",
+              "Kannst"
+            ],
+            "correct": "Könntest",
+            "why": "Mit dieser Form klingt die Bitte besonders höflich.",
+            "hint": "Welche der beiden Formen hat zwei Punkte auf einem Buchstaben und klingt höflicher?"
+          }
+        ],
+        "say": "Der Konjunktiv II hat drei Aufgaben. Er zeigt, dass etwas nicht wirklich ist. Er drückt Wünsche aus. Und er macht Bitten höflicher. Kannst du mir helfen klingt direkt. Könntest du mir helfen klingt freundlicher, weil es dem anderen die Wahl lässt."
+      },
+      {
+        "title": "Jetzt du: Konjunktiv II",
+        "body": "Tipp bei jedem Satz auf die richtige Lösung.",
+        "tasks": [
+          {
+            "text": "Wenn ich ein Vogel ___, würde ich nach Süden fliegen.",
+            "choices": [
+              "wäre",
+              "bin"
+            ],
+            "correct": "wäre",
+            "why": "Niemand ist wirklich ein Vogel. Es ist nur vorgestellt.",
+            "hint": "Ist der Sprecher wirklich ein Vogel?"
+          },
+          {
+            "text": "Ich hätte gern eine Pizza. Das ist ___.",
+            "choices": [
+              "Konjunktiv II",
+              "Imperativ"
+            ],
+            "correct": "Konjunktiv II",
+            "why": "Das Wort hätte drückt hier einen Wunsch aus.",
+            "hint": "Welches Wort im Satz hat zwei Punkte auf einem Buchstaben?"
+          },
+          {
+            "text": "An deiner Stelle ___ ich mehr schlafen.",
+            "choices": [
+              "würde",
+              "werde"
+            ],
+            "correct": "würde",
+            "why": "Der Sprecher ist nicht an der Stelle des anderen. Es ist nur vorgestellt.",
+            "hint": "Ist der Sprecher wirklich an der Stelle des anderen?"
+          }
+        ],
+        "say": "Frag dich bei jedem Satz, ob etwas wirklich so ist oder ob es nur vorgestellt, gewünscht oder höflich erbeten wird. Achte auf wäre, hätte, könnte und würde."
+      },
+      {
+        "chapter": "Konjunktiv I: Was jemand gesagt hat",
+        "title": "Etwas weitersagen",
+        "body": "Tom sagt: „Ich bin müde.“\nTom sagt, er **sei** müde.\n\nIm zweiten Satz gibst du nur weiter, was Tom gesagt hat. Das nennt man **indirekte Rede**.",
+        "say": "Manchmal erzählst du, was jemand anders gesagt hat. Du benutzt dann nicht seine genauen Worte in Anführungszeichen, sondern gibst sie in eigenen Sätzen wieder. Dafür gibt es eine besondere Form des Verbs, den Konjunktiv I. Aus ich bin wird er sei."
+      },
+      {
+        "title": "Die wichtigsten Formen",
+        "body": "sein: er **sei**\nhaben: er **habe**\ngehen: er **gehe**\nkommen: er **komme**\nkönnen: er **könne**",
+        "say": "Die Form bildest du ganz einfach. Du nimmst den Infinitiv und lässt das n am Ende weg. Aus gehen wird er gehe, aus kommen wird er komme. Nur sein ist unregelmäßig und heißt er sei. Diese Formen stehen fast immer mit er, sie oder es."
+      },
+      {
+        "title": "Wozu das gut ist",
+        "body": "*Der Minister sagt, die Lage **sei** ernst.*\n\nDer Konjunktiv I zeigt: Das sage nicht ich. Das hat jemand anders gesagt.",
+        "tasks": [
+          {
+            "text": "Die Lehrerin sagt, der Test ___ leicht.",
+            "choices": [
+              "sei",
+              "war gewesen"
+            ],
+            "correct": "sei",
+            "why": "Hier wird weitergegeben, was die Lehrerin gesagt hat.",
+            "hint": "Wessen Meinung ist das? Welche Form zeigt, dass du nur weitergibst?"
+          }
+        ],
+        "say": "Mit dem Konjunktiv I hältst du Abstand. Du zeigst, dass du nur berichtest und nicht selbst behauptest, dass es stimmt. Deshalb findest du ihn in jeder Zeitung. Die Journalistin sagt nicht, dass die Lage ernst ist. Sie sagt nur, dass der Minister das gesagt hat."
+      },
+      {
+        "title": "Wenn man keinen Unterschied hört",
+        "body": "*Sie sagen, sie **haben** Zeit.*\nDas klingt wie eine Tatsache.\n\n*Sie sagen, sie **hätten** Zeit.*\nJetzt hört man, dass es weitergegeben wird.",
+        "tasks": [
+          {
+            "text": "Die Kinder sagen, sie ___ keine Lust.",
+            "choices": [
+              "hätten",
+              "haben"
+            ],
+            "correct": "hätten",
+            "why": "Bei sie in der Mehrzahl nimmt man den Konjunktiv II als Ersatz.",
+            "hint": "Bei welcher Form hört man, dass etwas nur weitergegeben wird?"
+          }
+        ],
+        "say": "Bei wir und sie in der Mehrzahl sieht der Konjunktiv I genauso aus wie der Indikativ. Dann merkt niemand, dass du nur berichtest. In diesem Fall nimmst du den Konjunktiv II als Ersatz. Aus haben wird hätten, aus müssen wird müssten."
+      },
+      {
+        "title": "Jetzt du: Welcher Modus?",
+        "body": "Tipp bei jedem Satz auf den richtigen Modus.",
+        "tasks": [
+          {
+            "text": "Sei bitte leise! Das ist ___.",
+            "choices": [
+              "Imperativ",
+              "Konjunktiv I"
+            ],
+            "correct": "Imperativ",
+            "why": "Jemand wird aufgefordert, und das Verb steht ganz vorn.",
+            "hint": "Wird hier etwas weitergegeben, oder wird jemand aufgefordert?"
+          },
+          {
+            "text": "Er sagt, er komme später. Das ist ___.",
+            "choices": [
+              "Konjunktiv I",
+              "Indikativ"
+            ],
+            "correct": "Konjunktiv I",
+            "why": "Es wird weitergegeben, was er gesagt hat. Die Form endet auf e.",
+            "hint": "Wird hier berichtet, was jemand gesagt hat?"
+          },
+          {
+            "text": "Ich würde gern verreisen. Das ist ___.",
+            "choices": [
+              "Konjunktiv II",
+              "Indikativ"
+            ],
+            "correct": "Konjunktiv II",
+            "why": "Würde zeigt einen Wunsch, der nicht Wirklichkeit ist.",
+            "hint": "Welches Wort zeigt, dass es nur ein Wunsch ist?"
+          }
+        ],
+        "say": "Jetzt kommen alle vier Aussageweisen vor. Frag dich: Ist es eine Tatsache, eine Aufforderung, etwas nur Vorgestelltes oder etwas Weitergegebenes?"
+      },
+      {
+        "title": "Das nimmst du mit",
+        "body": "**Indikativ**: So ist es. *Er geht.*\n**Imperativ**: Tu das! *Geh!*\n**Konjunktiv I**: Jemand hat es gesagt. *Er gehe.*\n**Konjunktiv II**: nur vorgestellt. *Er ginge, er würde gehen.*",
+        "tasks": [
+          {
+            "text": "Woran erkennst du den Konjunktiv II am leichtesten? ___",
+            "choices": [
+              "an wäre, hätte und würde",
+              "am Ausrufezeichen"
+            ],
+            "correct": "an wäre, hätte und würde",
+            "why": "Diese drei Formen zeigen, dass etwas nur vorgestellt ist.",
+            "hint": "Welche Wörter stehen in Sätzen über Wünsche und Vorstellungen?"
+          }
+        ],
+        "say": "Das sind die vier Aussageweisen mit je einem Beispiel. Achte auf die Erkennungszeichen: das Verb ganz vorn beim Imperativ, sei und habe beim Konjunktiv I, wäre, hätte und würde beim Konjunktiv II. Gleich kommen die Wörter und das Quiz."
+      }
+    ],
+    "vocab": [
+      {
+        "term": "Modus",
+        "plain": "Die Aussageweise des Verbs. Sie zeigt, wie ein Satz gemeint ist."
+      },
+      {
+        "term": "Indikativ",
+        "plain": "Die Wirklichkeitsform. Sie sagt, was ist, war oder sein wird.",
+        "example": "Er geht zur Schule."
+      },
+      {
+        "term": "Imperativ",
+        "plain": "Die Aufforderungsform. Das Verb steht vorn.",
+        "example": "Geh! Kommt! Nehmen Sie Platz!"
+      },
+      {
+        "term": "Konjunktiv II",
+        "plain": "Zeigt, dass etwas nur vorgestellt, gewünscht oder höflich erbeten ist.",
+        "example": "wäre, hätte, könnte, würde gehen"
+      },
+      {
+        "term": "Konjunktiv I",
+        "plain": "Zeigt, dass man weitergibt, was jemand anders gesagt hat.",
+        "example": "er sei, er habe, er gehe"
+      },
+      {
+        "term": "indirekte Rede",
+        "plain": "Man gibt in eigenen Sätzen wieder, was jemand gesagt hat, ohne Anführungszeichen."
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "In welchem Modus steht: Wir fahren morgen nach Hamburg?",
+        "choices": [
+          "Indikativ",
+          "Imperativ",
+          "Konjunktiv I",
+          "Konjunktiv II"
+        ],
+        "correct": "Indikativ",
+        "explain": "Der Satz teilt mit, was wirklich geschehen wird. Das ist die normale Form des Verbs."
+      },
+      {
+        "prompt": "In welchem Modus steht: Räum bitte dein Zimmer auf?",
+        "choices": [
+          "Imperativ",
+          "Indikativ",
+          "Konjunktiv I",
+          "Konjunktiv II"
+        ],
+        "correct": "Imperativ",
+        "explain": "Jemand wird zu etwas aufgefordert, und das Verb steht am Satzanfang."
+      },
+      {
+        "prompt": "In welchem Modus steht: Wenn ich Flügel hätte, würde ich fliegen?",
+        "choices": [
+          "Konjunktiv II",
+          "Indikativ",
+          "Imperativ",
+          "Konjunktiv I"
+        ],
+        "correct": "Konjunktiv II",
+        "explain": "Hätte und würde zeigen, dass es nur vorgestellt ist. Der Sprecher hat keine Flügel."
+      },
+      {
+        "prompt": "In welchem Modus steht: Sie sagt, sie habe keine Zeit?",
+        "choices": [
+          "Konjunktiv I",
+          "Indikativ",
+          "Imperativ",
+          "Konjunktiv II"
+        ],
+        "correct": "Konjunktiv I",
+        "explain": "Es wird weitergegeben, was sie gesagt hat. Die Form habe statt hat zeigt das an."
+      },
+      {
+        "prompt": "Wie heißt der Konjunktiv II von sein in der ersten Person?",
+        "choices": [
+          "ich wäre",
+          "ich sei",
+          "ich bin",
+          "ich war"
+        ],
+        "correct": "ich wäre",
+        "explain": "Aus war wird mit zwei Punkten wäre. Ich sei ist der Konjunktiv I."
+      },
+      {
+        "prompt": "Welcher Satz ist die höflichste Bitte?",
+        "choices": [
+          "Könnten Sie mir bitte helfen?",
+          "Helfen Sie mir!",
+          "Sie helfen mir.",
+          "Sie müssen mir helfen."
+        ],
+        "correct": "Könnten Sie mir bitte helfen?",
+        "explain": "Der Konjunktiv II macht eine Bitte höflich, weil er dem anderen die Wahl lässt."
+      },
+      {
+        "prompt": "Wie bildest du den Konjunktiv I von kommen für er?",
+        "choices": [
+          "er komme",
+          "er kommt",
+          "er käme",
+          "er kam"
+        ],
+        "correct": "er komme",
+        "explain": "Du nimmst den Infinitiv und lässt das n weg. Er käme wäre der Konjunktiv II."
+      },
+      {
+        "prompt": "Wozu benutzt eine Zeitung den Konjunktiv I?",
+        "choices": [
+          "Um zu zeigen, dass sie nur wiedergibt, was jemand gesagt hat",
+          "Um einen Befehl zu geben",
+          "Um einen Wunsch zu äußern",
+          "Um über die Zukunft zu schreiben"
+        ],
+        "correct": "Um zu zeigen, dass sie nur wiedergibt, was jemand gesagt hat",
+        "explain": "Mit dem Konjunktiv I hält man Abstand. Man berichtet, ohne selbst zu behaupten, dass es stimmt."
+      }
+    ]
+  }
+]

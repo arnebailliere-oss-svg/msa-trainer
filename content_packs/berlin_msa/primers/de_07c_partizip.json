@@ -1,0 +1,354 @@
+[
+  {
+    "id": "P_DE_PARTIZIP",
+    "subject": "DE",
+    "title": "Partizip I und Partizip II",
+    "teaser": "Zwei besondere Formen des Verbs: lachend und gelacht. Du lernst, wie sie gebildet werden, was sie bedeuten und wie du sie in einem Satz unterscheidest.",
+    "hook": "Das Wort Partizip klingt nach schwieriger Grammatik. Dabei benutzt du beide Formen ständig. Wenn du sagst, das kochende Wasser oder das gekochte Ei, dann sind das die zwei Partizipien. Der Unterschied zwischen ihnen ist klein und sehr logisch. Du wirst ihn in wenigen Minuten verstanden haben.",
+    "outro": "Du kennst jetzt beide Partizipien. Das Partizip I endet auf end und bedeutet, dass etwas gerade geschieht. Das Partizip II beginnt meistens mit ge und bedeutet, dass etwas fertig ist. Beide können wie ein Adjektiv vor einem Nomen stehen und bekommen dann eine Endung.",
+    "standard": 2,
+    "requires": [
+      "P_DE_WORTARTEN",
+      "P_DE_ZEITFORMEN"
+    ],
+    "steps": [
+      {
+        "chapter": "Das Partizip II",
+        "title": "Du kennst es schon",
+        "body": "ich habe **gelacht**\n\nich bin **gegangen**\n\nDiese Form heißt genauer **Partizip** II.",
+        "say": "In der Lektion über die Zeitformen ist dir diese Form schon begegnet. Sie steht im Perfekt hinter haben oder sein. Weil es zwei Partizipien gibt, bekommt dieses die Nummer zwei. Wir fangen mit ihm an, weil du es am besten kennst."
+      },
+      {
+        "title": "So wird es gebildet",
+        "body": "lachen: **ge**lach**t**\nSchwache Verben enden auf -t.\n\ngehen: **ge**gang**en**\nStarke Verben enden auf -en.",
+        "tasks": [
+          {
+            "text": "Das Partizip II von kaufen heißt ___.",
+            "choices": [
+              "gekauft",
+              "gekaufen"
+            ],
+            "correct": "gekauft",
+            "why": "Kaufen ist ein schwaches Verb. Sein Partizip II endet auf t.",
+            "hint": "Wie sagst du es im Perfekt: Ich habe etwas …?"
+          }
+        ],
+        "say": "Das Partizip II hat fast immer die zwei Buchstaben ge am Anfang. Am Ende steht bei schwachen Verben ein t und bei starken Verben ein en. Bei den starken Verben ändert sich oft auch der Laut in der Mitte: gehen, gegangen. Singen, gesungen."
+      },
+      {
+        "title": "Manchmal ohne ge",
+        "body": "telefonieren: **telefoniert**\nbesuchen: **besucht**\nverstehen: **verstanden**\nerzählen: **erzählt**",
+        "tasks": [
+          {
+            "text": "Das Partizip II von besuchen heißt ___.",
+            "choices": [
+              "besucht",
+              "gebesucht"
+            ],
+            "correct": "besucht",
+            "why": "Verben, die mit be beginnen, bekommen kein ge.",
+            "hint": "Sprich beide Formen laut. Welche klingt richtig?"
+          }
+        ],
+        "say": "Zwei Gruppen von Verben bekommen kein ge. Die erste Gruppe sind Verben, die auf ieren enden. Die zweite Gruppe sind Verben, die mit be, ver, er, ent oder zer beginnen. Niemand sagt gebesucht. Dein Sprachgefühl hilft dir hier zuverlässig."
+      },
+      {
+        "title": "Es bedeutet: Das ist fertig",
+        "body": "das **gebackene** Brot\n\ndas **gekochte** Ei\n\nDas Backen und das Kochen sind abgeschlossen.",
+        "say": "Das Partizip II kann auch vor einem Nomen stehen, so wie ein Adjektiv. Dann bekommt es eine Endung. Es sagt dir, dass etwas schon geschehen ist. Das Brot ist fertig gebacken. Das Ei ist fertig gekocht. Niemand ist mehr dabei, es zu tun."
+      },
+      {
+        "title": "Jetzt du: Partizip II bilden",
+        "body": "Tipp bei jedem Verb auf das richtige Partizip II.",
+        "tasks": [
+          {
+            "text": "schreiben: Ich habe einen Brief ___.",
+            "choices": [
+              "geschrieben",
+              "geschreibt"
+            ],
+            "correct": "geschrieben",
+            "why": "Schreiben ist ein starkes Verb. Sein Partizip II endet auf en.",
+            "hint": "Wie sagst du es ganz natürlich im Perfekt?"
+          },
+          {
+            "text": "spielen: Wir haben Fußball ___.",
+            "choices": [
+              "gespielt",
+              "gespielen"
+            ],
+            "correct": "gespielt",
+            "why": "Spielen ist ein schwaches Verb. Sein Partizip II endet auf t.",
+            "hint": "Wie sagst du es ganz natürlich im Perfekt?"
+          },
+          {
+            "text": "vergessen: Ich habe es ___.",
+            "choices": [
+              "vergessen",
+              "gevergessen"
+            ],
+            "correct": "vergessen",
+            "why": "Verben, die mit ver beginnen, bekommen kein ge.",
+            "hint": "Beginnt das Verb mit be, ver oder er? Was gilt dann?"
+          }
+        ],
+        "say": "Überleg bei jedem Verb, wie du im Perfekt sagen würdest. Ich habe etwas getan. Die Form am Ende ist das Partizip II."
+      },
+      {
+        "chapter": "Das Partizip I",
+        "title": "Die lachenden Kinder",
+        "body": "Die Kinder **lachen**.\n\ndie **lachenden** Kinder\n\nDie Form mit -end heißt Partizip I.",
+        "say": "Jetzt kommt das zweite Partizip. Es entsteht, wenn du aus einem Verb ein Wort machst, das ein Nomen beschreibt. Was für Kinder sind es? Lachende Kinder. Sie lachen in diesem Moment. Das Partizip I zeigt immer, dass jemand gerade dabei ist."
+      },
+      {
+        "title": "So wird es gebildet",
+        "body": "lachen: lachen**d**\nschlafen: schlafen**d**\nlaufen: laufen**d**\n\nDu hängst an den Infinitiv ein **d**.",
+        "tasks": [
+          {
+            "text": "Das Partizip I von schlafen heißt ___.",
+            "choices": [
+              "schlafend",
+              "geschlafen"
+            ],
+            "correct": "schlafend",
+            "why": "An den Infinitiv wird ein d gehängt.",
+            "hint": "Welche der beiden Formen endet auf end?"
+          }
+        ],
+        "say": "Das Partizip I ist ganz leicht zu bilden. Du nimmst die Grundform des Verbs und hängst ein d an. Das funktioniert bei jedem Verb gleich. Es gibt hier keine starken und schwachen Verben und keine Ausnahmen."
+      },
+      {
+        "title": "Es bedeutet: Das geschieht gerade",
+        "body": "das **kochende** Wasser\nEs kocht in diesem Moment.\n\ndas **gekochte** Ei\nEs ist fertig gekocht.",
+        "tasks": [
+          {
+            "text": "Das Wasser kocht gerade. Es ist ___ Wasser.",
+            "choices": [
+              "kochendes",
+              "gekochtes"
+            ],
+            "correct": "kochendes",
+            "why": "Es geschieht in diesem Moment. Dafür steht das Partizip I.",
+            "hint": "Kocht das Wasser noch, oder ist es schon fertig?"
+          }
+        ],
+        "say": "Hier siehst du beide Partizipien nebeneinander. Das kochende Wasser sprudelt gerade im Topf. Das gekochte Ei liegt fertig auf dem Teller. Der Unterschied ist also die Zeit: gerade dabei oder schon fertig."
+      },
+      {
+        "title": "Es verhält sich wie ein Adjektiv",
+        "body": "ein lachend**es** Kind\ndie lachend**en** Kinder\nder bellend**e** Hund",
+        "say": "Vor einem Nomen bekommt das Partizip dieselben Endungen wie ein Adjektiv. Es wird auch kleingeschrieben wie ein Adjektiv. Das gilt für beide Partizipien. Die Endung richtet sich nach dem Nomen, das danach kommt."
+      },
+      {
+        "title": "Jetzt du: Partizip I oder II?",
+        "body": "Tipp bei jedem Ausdruck auf das richtige Partizip.",
+        "tasks": [
+          {
+            "text": "der schlafende Hund: Das ist Partizip ___.",
+            "choices": [
+              "I",
+              "II"
+            ],
+            "correct": "I",
+            "why": "Der Hund schläft gerade, und die Form endet auf end.",
+            "hint": "Schläft der Hund noch? Wie endet der Kern des Wortes?"
+          },
+          {
+            "text": "die geöffnete Tür: Das ist Partizip ___.",
+            "choices": [
+              "II",
+              "I"
+            ],
+            "correct": "II",
+            "why": "Das Öffnen ist abgeschlossen, und die Form beginnt mit ge.",
+            "hint": "Ist das Öffnen schon vorbei? Womit beginnt das Wort?"
+          },
+          {
+            "text": "ein weinendes Kind: Das ist Partizip ___.",
+            "choices": [
+              "I",
+              "II"
+            ],
+            "correct": "I",
+            "why": "Das Kind weint in diesem Moment, und die Form endet auf end.",
+            "hint": "Weint das Kind gerade, oder hat es schon aufgehört?"
+          }
+        ],
+        "say": "Frag dich bei jedem Ausdruck: Geschieht es gerade, oder ist es schon fertig? Schau auch auf die Form. Endet das Wort auf end, oder beginnt es mit ge?"
+      },
+      {
+        "chapter": "Beide unterscheiden",
+        "title": "Der Unterschied auf einen Blick",
+        "body": "**Partizip I**: Infinitiv und d\nEs geschieht gerade: *lachend*\n\n**Partizip II**: meistens ge und -t oder -en\nEs ist fertig: *gelacht*",
+        "say": "Hier siehst du beide noch einmal nebeneinander. Du hast zwei Erkennungszeichen. Das erste ist die Form: end am Ende oder ge am Anfang. Das zweite ist die Bedeutung: gerade dabei oder schon fertig. Meistens zeigen beide Zeichen in dieselbe Richtung."
+      },
+      {
+        "title": "Beide in einem Satz",
+        "body": "*Der **bellende** Hund jagte die **erschrockene** Katze.*\n\nbellend: Der Hund bellt dabei.\nerschrocken: Der Schreck ist schon geschehen.",
+        "tasks": [
+          {
+            "text": "die erschrockene Katze: Das ist Partizip ___.",
+            "choices": [
+              "II",
+              "I"
+            ],
+            "correct": "II",
+            "why": "Der Schreck ist schon geschehen. Das Verb erschrecken bekommt kein ge.",
+            "hint": "Ist der Schreck schon geschehen? Endet das Wort auf end?"
+          }
+        ],
+        "say": "In diesem Satz stehen beide Partizipien. Der Hund bellt, während er jagt, also Partizip I. Die Katze ist bereits erschrocken, also Partizip II. Erschrocken hat kein ge, weil das Verb mit er beginnt. Das hast du in dieser Lektion schon gelernt."
+      },
+      {
+        "title": "Jetzt du: gemischt",
+        "body": "Tipp bei jedem Satz auf die richtige Form.",
+        "tasks": [
+          {
+            "text": "Das ___ Baby wurde in den Arm genommen.",
+            "choices": [
+              "schreiende",
+              "geschriene"
+            ],
+            "correct": "schreiende",
+            "why": "Das Baby schreit in diesem Moment.",
+            "hint": "Schreit das Baby noch, während man es nimmt?"
+          },
+          {
+            "text": "Der ___ Kuchen stand auf dem Tisch.",
+            "choices": [
+              "gebackene",
+              "backende"
+            ],
+            "correct": "gebackene",
+            "why": "Der Kuchen ist fertig. Niemand backt ihn mehr.",
+            "hint": "Ist der Kuchen schon fertig, oder wird er gerade gebacken?"
+          },
+          {
+            "text": "Sie sah den ___ Zug nur noch von hinten.",
+            "choices": [
+              "abfahrenden",
+              "abgefahrenen und stehenden"
+            ],
+            "correct": "abfahrenden",
+            "why": "Der Zug fährt in diesem Moment ab.",
+            "hint": "Fährt der Zug gerade los, während sie ihn sieht?"
+          }
+        ],
+        "say": "Überleg bei jedem Satz, ob etwas gerade geschieht oder schon abgeschlossen ist. Danach wählst du die passende Form."
+      },
+      {
+        "title": "Das nimmst du mit",
+        "body": "(1) **Partizip I**: Infinitiv und d. Es geschieht gerade.\n\n(2) **Partizip II**: ge und -t oder -en. Es ist fertig.\n\n(3) Vor einem Nomen bekommen beide eine Endung wie ein Adjektiv.",
+        "tasks": [
+          {
+            "text": "Woran erkennst du das Partizip I? ___",
+            "choices": [
+              "Es endet auf end.",
+              "Es beginnt mit ge."
+            ],
+            "correct": "Es endet auf end.",
+            "why": "An den Infinitiv wird ein d gehängt, zum Beispiel lachend.",
+            "hint": "Welche Form hast du bei lachend und schlafend gesehen?"
+          }
+        ],
+        "say": "Das ist alles, was du über die Partizipien wissen musst. In der Prüfung sollst du sie meistens nur erkennen und benennen. Gleich kommen noch die Wörter zum Nachlesen und ein kleines Quiz."
+      }
+    ],
+    "vocab": [
+      {
+        "term": "Partizip I",
+        "plain": "Infinitiv und d. Es zeigt, dass etwas gerade geschieht.",
+        "example": "lachend, schlafend"
+      },
+      {
+        "term": "Partizip II",
+        "plain": "Meistens ge am Anfang und -t oder -en am Ende. Es zeigt, dass etwas fertig ist.",
+        "example": "gelacht, gegangen"
+      },
+      {
+        "term": "ohne ge",
+        "plain": "Verben auf ieren und Verben mit be, ver, er, ent, zer bilden das Partizip II ohne ge.",
+        "example": "telefoniert, besucht, verstanden"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Welche Form ist das Partizip I von singen?",
+        "choices": [
+          "singend",
+          "gesungen",
+          "sang",
+          "singt"
+        ],
+        "correct": "singend",
+        "explain": "Das Partizip I bildest du aus dem Infinitiv und einem d: singen, singend."
+      },
+      {
+        "prompt": "Welche Form ist das Partizip II von singen?",
+        "choices": [
+          "gesungen",
+          "singend",
+          "gesingt",
+          "sang"
+        ],
+        "correct": "gesungen",
+        "explain": "Singen ist ein starkes Verb. Sein Partizip II beginnt mit ge und endet auf en."
+      },
+      {
+        "prompt": "die untergehende Sonne: Welches Partizip ist das?",
+        "choices": [
+          "Partizip I",
+          "Partizip II",
+          "kein Partizip",
+          "ein Infinitiv"
+        ],
+        "correct": "Partizip I",
+        "explain": "Die Sonne geht in diesem Moment unter, und die Form endet auf end."
+      },
+      {
+        "prompt": "das gestohlene Fahrrad: Welches Partizip ist das?",
+        "choices": [
+          "Partizip II",
+          "Partizip I",
+          "kein Partizip",
+          "ein Nomen"
+        ],
+        "correct": "Partizip II",
+        "explain": "Der Diebstahl ist schon geschehen, und die Form beginnt mit ge."
+      },
+      {
+        "prompt": "Welches Partizip II ist richtig?",
+        "choices": [
+          "verloren",
+          "geverloren",
+          "verlorend",
+          "verlierend"
+        ],
+        "correct": "verloren",
+        "explain": "Verlieren beginnt mit ver. Solche Verben bilden das Partizip II ohne ge."
+      },
+      {
+        "prompt": "Was bedeutet das Partizip I?",
+        "choices": [
+          "Etwas geschieht gerade.",
+          "Etwas ist schon fertig.",
+          "Etwas wird befohlen.",
+          "Etwas ist nur vorgestellt."
+        ],
+        "correct": "Etwas geschieht gerade.",
+        "explain": "Lachend, laufend, kochend: Jemand ist in diesem Moment dabei."
+      },
+      {
+        "prompt": "Wie wird ein Partizip vor einem Nomen geschrieben?",
+        "choices": [
+          "klein und mit Endung, wie ein Adjektiv",
+          "groß, wie ein Nomen",
+          "immer ohne Endung",
+          "zusammen mit dem Nomen"
+        ],
+        "correct": "klein und mit Endung, wie ein Adjektiv",
+        "explain": "Vor einem Nomen verhält sich das Partizip wie ein Adjektiv: die lachenden Kinder."
+      }
+    ]
+  }
+]

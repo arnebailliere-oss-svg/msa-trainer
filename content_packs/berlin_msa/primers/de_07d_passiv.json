@@ -1,0 +1,366 @@
+[
+  {
+    "id": "P_DE_PASSIV",
+    "subject": "DE",
+    "title": "Aktiv und Passiv",
+    "teaser": "Zwei Blickrichtungen auf dasselbe Geschehen: Im Aktiv steht der im Mittelpunkt, der etwas tut. Im Passiv steht das im Mittelpunkt, womit etwas geschieht. Du lernst, beide zu erkennen und einen Satz in die andere Form zu bringen.",
+    "hook": "Der Hund jagt die Katze. Die Katze wird vom Hund gejagt. Beide Sätze erzählen genau dasselbe, aber sie schauen aus verschiedenen Richtungen darauf. Für diese beiden Richtungen gibt es zwei Fachwörter, die du gleich kennenlernst. In der Prüfung sollst du einen Satz von der einen Richtung in die andere bringen. Das geht in drei festen Schritten.",
+    "outro": "Du kannst jetzt Aktiv und Passiv unterscheiden. Im Aktiv tut das Subjekt etwas. Im Passiv geschieht etwas mit dem Subjekt, und du erkennst es an werden und dem Partizip II. Beim Umformen tauschen Subjekt und Objekt die Plätze, und die Zeitform bleibt dieselbe.",
+    "standard": 2,
+    "requires": [
+      "P_DE_WORTARTEN",
+      "P_DE_SATZGLIEDER",
+      "P_DE_ZEITFORMEN",
+      "P_DE_PARTIZIP"
+    ],
+    "steps": [
+      {
+        "chapter": "Wer tut etwas?",
+        "title": "Zwei Blickrichtungen",
+        "body": "*Der Hund **jagt** die Katze.*\n\n*Die Katze **wird** vom Hund **gejagt**.*\n\nBeide Sätze beschreiben dasselbe Geschehen.",
+        "say": "Stell dir die Szene wie ein Foto vor. Im ersten Satz schaust du auf den Hund und siehst, was er tut. Im zweiten Satz schaust du auf die Katze und siehst, was mit ihr passiert. Das Foto ist dasselbe. Nur dein Blick ist ein anderer."
+      },
+      {
+        "title": "Aktiv: Das Subjekt handelt",
+        "body": "***Der Hund** jagt die Katze.*\n\nDas Subjekt tut selbst etwas.\n\nDiese Form heißt **Aktiv**.",
+        "say": "Im Aktiv ist das Subjekt der Handelnde. Auf die Frage, wer jagt, lautet die Antwort der Hund. Er ist aktiv, er tut etwas. Die meisten Sätze, die du sprichst und schreibst, stehen im Aktiv. Es ist die normale, direkte Art zu erzählen."
+      },
+      {
+        "title": "Passiv: Mit dem Subjekt geschieht etwas",
+        "body": "***Die Katze** wird gejagt.*\n\nDas Subjekt tut selbst nichts. Etwas geschieht mit ihm.\n\nDiese Form heißt **Passiv**.",
+        "tasks": [
+          {
+            "text": "Das Fenster wird geöffnet. Tut das Fenster selbst etwas? ___",
+            "choices": [
+              "Nein",
+              "Ja"
+            ],
+            "correct": "Nein",
+            "why": "Jemand öffnet das Fenster. Das Fenster selbst tut nichts.",
+            "hint": "Kann ein Fenster sich selbst öffnen, oder macht das jemand?"
+          }
+        ],
+        "say": "Im Passiv ist das Subjekt nicht der Handelnde. Die Katze jagt niemanden. Sie wird gejagt. Passiv bedeutet untätig. Das Subjekt erleidet etwas oder es wird etwas mit ihm gemacht. Deshalb nannte man das Passiv früher auch Leideform."
+      },
+      {
+        "title": "So erkennst du das Passiv",
+        "body": "**werden** und **Partizip II**\n\nwird gejagt\nwird geöffnet\nwerden gebaut",
+        "tasks": [
+          {
+            "text": "Das Haus ___ gerade gebaut.",
+            "choices": [
+              "wird",
+              "hat"
+            ],
+            "correct": "wird",
+            "why": "Das Haus baut sich nicht selbst. Dafür braucht man eine Form von werden.",
+            "hint": "Schau auf die Beispiele der Tafel. Welches kleine Wort steht jedes Mal vorn?"
+          }
+        ],
+        "say": "Das Passiv hat ein sicheres Erkennungszeichen. Es besteht aus einer Form von werden und dem Partizip II. Wird, werden, wurde, wurden und dahinter ein Wort wie gejagt oder gebaut. Wenn du diese Kombination siehst, ist es Passiv."
+      },
+      {
+        "title": "Jetzt du: Aktiv oder Passiv?",
+        "body": "Tipp bei jedem Satz auf die richtige Form.",
+        "tasks": [
+          {
+            "text": "Die Lehrerin erklärt die Aufgabe. Das ist ___.",
+            "choices": [
+              "Aktiv",
+              "Passiv"
+            ],
+            "correct": "Aktiv",
+            "why": "Die Lehrerin tut selbst etwas: Sie erklärt.",
+            "hint": "Wer ist das Subjekt, und tut es selbst etwas?"
+          },
+          {
+            "text": "Die Aufgabe wird erklärt. Das ist ___.",
+            "choices": [
+              "Passiv",
+              "Aktiv"
+            ],
+            "correct": "Passiv",
+            "why": "Mit der Aufgabe geschieht etwas. Im Satz stehen wird und ein Partizip II.",
+            "hint": "Erklärt die Aufgabe selbst etwas? Welche zwei Verbteile siehst du?"
+          },
+          {
+            "text": "Der Brief wurde gestern abgeschickt. Das ist ___.",
+            "choices": [
+              "Passiv",
+              "Aktiv"
+            ],
+            "correct": "Passiv",
+            "why": "Der Brief schickt sich nicht selbst ab. Im Satz stehen wurde und ein Partizip II.",
+            "hint": "Tut der Brief selbst etwas? Welche Form von werden steht im Satz?"
+          }
+        ],
+        "say": "Frag dich bei jedem Satz: Tut das Subjekt selbst etwas, oder geschieht etwas mit ihm? Such außerdem nach werden und einem Partizip II."
+      },
+      {
+        "chapter": "Einen Satz umformen",
+        "title": "Vom Aktiv ins Passiv",
+        "body": "Aktiv: *Der Hund jagt **die Katze**.*\n\nPassiv: ***Die Katze** wird vom Hund gejagt.*\n\nDas Objekt wird zum Subjekt.",
+        "say": "Schau, was mit der Katze passiert. Im Aktiv ist sie das Objekt: Wen jagt der Hund? Im Passiv rückt sie nach vorn und wird zum Subjekt. Das ist der erste Schritt beim Umformen. Du nimmst das Objekt und stellst es an den Anfang."
+      },
+      {
+        "title": "Die drei Schritte",
+        "body": "(1) Das Objekt wird zum Subjekt.\n\n(2) Das Verb wird zu **werden** und Partizip II.\n\n(3) Der Handelnde kommt mit **von** dazu oder fällt weg.",
+        "say": "Mit diesen drei Schritten formst du jeden Satz um. Aus die Katze wird das neue Subjekt. Aus jagt wird wird gejagt. Und der Hund, der vorher Subjekt war, kommt mit von dazu: vom Hund. Vom ist die Kurzform von von dem."
+      },
+      {
+        "title": "Die Zeitform bleibt gleich",
+        "body": "jagt: **wird** gejagt\nBeides ist Präsens.\n\njagte: **wurde** gejagt\nBeides ist Präteritum.",
+        "tasks": [
+          {
+            "text": "Der Dieb stahl das Fahrrad. Im Passiv: Das Fahrrad ___ gestohlen.",
+            "choices": [
+              "wurde",
+              "wird"
+            ],
+            "correct": "wurde",
+            "why": "Stahl ist Präteritum. Also steht auch werden im Präteritum.",
+            "hint": "In welcher Zeitform steht das Verb im Aktivsatz?"
+          }
+        ],
+        "say": "Das ist der Punkt, an dem die meisten Fehler passieren. Beim Umformen darfst du die Zeit nicht ändern. Steht der Aktivsatz im Präsens, steht auch werden im Präsens. Steht er im Präteritum, heißt es wurde. Schau deshalb zuerst, in welcher Zeit der Satz steht."
+      },
+      {
+        "title": "Vom Passiv zurück ins Aktiv",
+        "body": "Passiv: *Die Katze wird **vom Hund** gejagt.*\n\nAktiv: ***Der Hund** jagt die Katze.*\n\nDer Handelnde nach von wird wieder zum Subjekt.",
+        "say": "Zurück geht es genauso, nur umgekehrt. Du suchst den Handelnden. Er steht hinter dem Wort von. Ihn machst du zum Subjekt. Das alte Subjekt wird wieder zum Objekt, und aus wird gejagt wird jagt."
+      },
+      {
+        "title": "Wenn der Handelnde fehlt",
+        "body": "Passiv: *Das Auto wurde gestohlen.*\n\nAktiv: ***Jemand** stahl das Auto.*\n\nFehlt der Handelnde, nimmst du **jemand** oder **man**.",
+        "tasks": [
+          {
+            "text": "Der Schlüssel wurde gefunden. Im Aktiv: ___ fand den Schlüssel.",
+            "choices": [
+              "Jemand",
+              "Der Schlüssel"
+            ],
+            "correct": "Jemand",
+            "why": "Der Handelnde wird im Passivsatz nicht genannt. Dafür steht dieses Wort.",
+            "hint": "Wird im Passivsatz gesagt, wer es getan hat?"
+          }
+        ],
+        "say": "Oft steht im Passivsatz gar nicht, wer es getan hat. Dann fehlt dir für den Aktivsatz ein Subjekt. In diesem Fall setzt du jemand oder man ein. Beides ist richtig. Vergiss dabei nicht, die Zeitform beizubehalten."
+      },
+      {
+        "title": "Jetzt du: umformen",
+        "body": "Tipp bei jedem Satz auf die richtige Umformung.",
+        "tasks": [
+          {
+            "text": "Die Mutter weckt das Kind. Im Passiv: Das Kind ___ von der Mutter geweckt.",
+            "choices": [
+              "wird",
+              "wurde"
+            ],
+            "correct": "wird",
+            "why": "Weckt ist Präsens. Also steht auch werden im Präsens.",
+            "hint": "In welcher Zeitform steht das Verb im Aktivsatz?"
+          },
+          {
+            "text": "Die Schüler schrieben einen Test. Im Passiv: Ein Test ___ von den Schülern geschrieben.",
+            "choices": [
+              "wurde",
+              "wird"
+            ],
+            "correct": "wurde",
+            "why": "Schrieben ist Präteritum. Also steht auch werden im Präteritum.",
+            "hint": "In welcher Zeitform steht das Verb im Aktivsatz?"
+          },
+          {
+            "text": "Das Tor wird vom Hausmeister geöffnet. Im Aktiv: ___ öffnet das Tor.",
+            "choices": [
+              "Der Hausmeister",
+              "Das Tor"
+            ],
+            "correct": "Der Hausmeister",
+            "why": "Der Handelnde steht hinter von. Er wird zum Subjekt.",
+            "hint": "Wer steht im Passivsatz hinter dem Wort von?"
+          }
+        ],
+        "say": "Geh bei jedem Satz die drei Schritte durch. Achte besonders auf die Zeitform. Sie muss im neuen Satz dieselbe sein wie im alten."
+      },
+      {
+        "chapter": "Wozu das Passiv gut ist",
+        "title": "Wenn der Handelnde unwichtig ist",
+        "body": "*Die Straße wird gesperrt.*\n\n*Der Müll wird montags abgeholt.*\n\nWer es tut, ist hier nicht wichtig.",
+        "say": "Das Passiv benutzt man, wenn es nicht darauf ankommt, wer etwas tut. Bei der gesperrten Straße interessiert dich nur, dass sie gesperrt ist. Deshalb findest du das Passiv oft in Nachrichten, Gebrauchsanweisungen und Regeln."
+      },
+      {
+        "title": "Aufpassen: werden hat mehrere Aufgaben",
+        "body": "*Es **wird** regnen.*\nwerden und Infinitiv: Das ist Futur.\n\n*Das Haus **wird** gebaut.*\nwerden und Partizip II: Das ist Passiv.",
+        "tasks": [
+          {
+            "text": "Es wird bald schneien. Das ist ___.",
+            "choices": [
+              "Futur",
+              "Passiv"
+            ],
+            "correct": "Futur",
+            "why": "Nach werden steht ein Infinitiv. Es geht um die Zukunft.",
+            "hint": "Welche Form folgt auf werden: ein Infinitiv oder ein Partizip II?"
+          }
+        ],
+        "say": "Das Verb werden kann dich täuschen, denn es steht auch im Futur. Du unterscheidest die beiden an dem Wort, das dazugehört. Folgt ein Infinitiv wie regnen, ist es Futur. Folgt ein Partizip II wie gebaut, ist es Passiv."
+      },
+      {
+        "title": "Jetzt du: gemischt",
+        "body": "Tipp bei jedem Satz auf die richtige Lösung.",
+        "tasks": [
+          {
+            "text": "Die Brücke wurde 1990 gebaut. Das ist ___.",
+            "choices": [
+              "Passiv",
+              "Futur"
+            ],
+            "correct": "Passiv",
+            "why": "Auf wurde folgt ein Partizip II. Die Brücke baute sich nicht selbst.",
+            "hint": "Welche Form folgt auf wurde: ein Infinitiv oder ein Partizip II?"
+          },
+          {
+            "text": "Wir werden morgen kommen. Das ist ___.",
+            "choices": [
+              "Futur",
+              "Passiv"
+            ],
+            "correct": "Futur",
+            "why": "Auf werden folgt ein Infinitiv. Wir tun selbst etwas.",
+            "hint": "Tut das Subjekt selbst etwas? Welche Form folgt auf werden?"
+          },
+          {
+            "text": "Man baut eine neue Schule. Im Passiv: Eine neue Schule ___ gebaut.",
+            "choices": [
+              "wird",
+              "wurde"
+            ],
+            "correct": "wird",
+            "why": "Baut ist Präsens. Das Wort man fällt im Passiv einfach weg.",
+            "hint": "In welcher Zeitform steht das Verb im Aktivsatz?"
+          }
+        ],
+        "say": "Jetzt kommt alles aus dieser Lektion vor. Schau zuerst, ob werden im Satz steht und welche Form darauf folgt."
+      },
+      {
+        "title": "Das nimmst du mit",
+        "body": "(1) **Aktiv**: Das Subjekt tut etwas.\n\n(2) **Passiv**: werden und Partizip II. Mit dem Subjekt geschieht etwas.\n\n(3) Beim Umformen bleibt die **Zeitform** gleich.\n\n(4) Fehlt der Handelnde, nimmst du jemand oder man.",
+        "tasks": [
+          {
+            "text": "Woran erkennst du das Passiv? ___",
+            "choices": [
+              "an werden und einem Partizip II",
+              "an haben und einem Infinitiv"
+            ],
+            "correct": "an werden und einem Partizip II",
+            "why": "Diese Kombination zeigt, dass mit dem Subjekt etwas geschieht.",
+            "hint": "Aus welchen zwei Teilen besteht wird gejagt?"
+          }
+        ],
+        "say": "Das sind die vier Punkte, die du für die Prüfung brauchst. Wenn du einen Satz umformen sollst, schau immer zuerst auf die Zeitform. Gleich kommen noch die Wörter zum Nachlesen und ein kleines Quiz."
+      }
+    ],
+    "vocab": [
+      {
+        "term": "Aktiv",
+        "plain": "Das Subjekt tut selbst etwas.",
+        "example": "Der Hund jagt die Katze."
+      },
+      {
+        "term": "Passiv",
+        "plain": "Mit dem Subjekt geschieht etwas. Werden und Partizip II.",
+        "example": "Die Katze wird gejagt."
+      },
+      {
+        "term": "von",
+        "plain": "Mit diesem Wort wird im Passiv der Handelnde genannt.",
+        "example": "vom Hund gejagt"
+      },
+      {
+        "term": "jemand, man",
+        "plain": "Das Subjekt im Aktivsatz, wenn der Passivsatz den Handelnden nicht nennt.",
+        "example": "Jemand stahl das Auto."
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Welcher Satz steht im Passiv?",
+        "choices": [
+          "Das Zimmer wird aufgeräumt.",
+          "Ich räume das Zimmer auf.",
+          "Ich werde das Zimmer aufräumen.",
+          "Das Zimmer ist groß."
+        ],
+        "correct": "Das Zimmer wird aufgeräumt.",
+        "explain": "Im Satz stehen wird und das Partizip II aufgeräumt. Mit dem Zimmer geschieht etwas."
+      },
+      {
+        "prompt": "Wie heißt das Passiv von: Der Koch brät das Fleisch?",
+        "choices": [
+          "Das Fleisch wird vom Koch gebraten.",
+          "Das Fleisch wurde vom Koch gebraten.",
+          "Der Koch wird das Fleisch braten.",
+          "Das Fleisch brät den Koch."
+        ],
+        "correct": "Das Fleisch wird vom Koch gebraten.",
+        "explain": "Brät ist Präsens, also steht wird. Das Objekt wird zum Subjekt, und der Handelnde kommt mit von dazu."
+      },
+      {
+        "prompt": "Wie heißt das Passiv von: Die Polizei fasste den Dieb?",
+        "choices": [
+          "Der Dieb wurde von der Polizei gefasst.",
+          "Der Dieb wird von der Polizei gefasst.",
+          "Die Polizei wurde vom Dieb gefasst.",
+          "Der Dieb fasste die Polizei."
+        ],
+        "correct": "Der Dieb wurde von der Polizei gefasst.",
+        "explain": "Fasste ist Präteritum, also steht wurde. Die Zeitform bleibt beim Umformen gleich."
+      },
+      {
+        "prompt": "Wie heißt das Aktiv von: Der Ball wurde gefunden?",
+        "choices": [
+          "Jemand fand den Ball.",
+          "Der Ball fand jemanden.",
+          "Der Ball wird gefunden.",
+          "Jemand findet den Ball."
+        ],
+        "correct": "Jemand fand den Ball.",
+        "explain": "Der Handelnde fehlt, also steht jemand. Wurde ist Präteritum, deshalb heißt es fand."
+      },
+      {
+        "prompt": "Es wird regnen. Was ist das?",
+        "choices": [
+          "Futur",
+          "Passiv",
+          "Perfekt",
+          "Imperativ"
+        ],
+        "correct": "Futur",
+        "explain": "Auf wird folgt der Infinitiv regnen. Werden und Infinitiv bilden das Futur."
+      },
+      {
+        "prompt": "Was wird beim Umformen ins Passiv zum Subjekt?",
+        "choices": [
+          "das Objekt des Aktivsatzes",
+          "das Verb",
+          "der Handelnde",
+          "die Zeitangabe"
+        ],
+        "correct": "das Objekt des Aktivsatzes",
+        "explain": "Das Satzglied, das im Aktiv auf Wen oder was antwortet, rückt im Passiv nach vorn."
+      },
+      {
+        "prompt": "Warum benutzt man das Passiv?",
+        "choices": [
+          "Weil unwichtig oder unbekannt ist, wer etwas tut",
+          "Weil es kürzer ist",
+          "Weil es höflicher ist",
+          "Weil es die Zukunft zeigt"
+        ],
+        "correct": "Weil unwichtig oder unbekannt ist, wer etwas tut",
+        "explain": "Im Passiv steht das Geschehen im Mittelpunkt. Der Handelnde kann wegfallen."
+      }
+    ]
+  }
+]

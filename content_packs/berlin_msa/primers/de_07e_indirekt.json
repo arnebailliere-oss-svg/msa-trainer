@@ -1,0 +1,336 @@
+[
+  {
+    "id": "P_DE_INDIREKT",
+    "subject": "DE",
+    "title": "Direkte und indirekte Rede",
+    "teaser": "Wie du wiedergibst, was jemand gesagt hat, ohne seine Worte in Anführungszeichen zu setzen. In vier Schritten vom wörtlichen Satz zur indirekten Rede, dazu Fragen und Aufforderungen.",
+    "hook": "Stell dir vor, deine Freundin erzählt dir etwas, und du sagst es später jemand anderem weiter. Du wiederholst nicht ihre genauen Worte, sondern berichtest, was sie gesagt hat. Das machst du jeden Tag. In der Prüfung sollst du genau das schriftlich tun, und dafür gibt es vier feste Schritte.",
+    "outro": "Du kannst jetzt einen wörtlichen Satz in einen berichteten Satz verwandeln. Die Zeichen fallen weg, die Person wird angepasst, und das Verb steht im Konjunktiv I. Wenn man den Konjunktiv I nicht hört, nimmst du den Konjunktiv II. Fragen bekommen ob oder ihr Fragewort, Aufforderungen bekommen sollen.",
+    "standard": 2,
+    "requires": [
+      "P_DE_WORTARTEN",
+      "P_DE_SATZ",
+      "P_DE_KOMMA2",
+      "P_DE_MODUS"
+    ],
+    "steps": [
+      {
+        "chapter": "Zwei Arten, etwas wiederzugeben",
+        "title": "Wörtlich oder berichtet",
+        "body": "Lena sagt: „Ich bin krank.“\nDas ist die wörtliche Rede. Man nennt sie auch **direkte Rede**.\n\nLena sagt, sie sei krank.\nDas ist die indirekte Rede.",
+        "say": "Beide Sätze geben wieder, was Lena gesagt hat. Im ersten Satz hörst du Lena selbst sprechen. Ihre Worte stehen in Anführungszeichen. Im zweiten Satz berichtet jemand anders darüber. Lenas Worte sind in den Satz des Berichtenden eingebaut."
+      },
+      {
+        "title": "Was sich ändert",
+        "body": "(1) Doppelpunkt und Anführungszeichen fallen weg.\n\n(2) Aus **ich** wird **sie**.\n\n(3) Aus **bin** wird **sei**.",
+        "say": "Halte die beiden Sätze von eben nebeneinander. Drei Dinge haben sich verändert. Die Zeichen sind verschwunden, und an ihrer Stelle steht ein Komma. Lena sagt ich, aber wer über sie berichtet, muss sie sagen. Und das Verb steht im Konjunktiv I, weil der Berichtende nur weitergibt."
+      },
+      {
+        "title": "Wozu du das brauchst",
+        "body": "In Zeitungsberichten und Protokollen.\n\nIn jeder Zusammenfassung eines Textes.\n\nIn der Prüfung: *Formulieren Sie den Satz so um, dass er keine direkte Rede enthält.*",
+        "tasks": [
+          {
+            "text": "In der indirekten Rede stehen ___ Anführungszeichen.",
+            "choices": [
+              "keine",
+              "zwei"
+            ],
+            "correct": "keine",
+            "why": "Die Worte sind in den Satz des Berichtenden eingebaut. Die Zeichen fallen weg.",
+            "hint": "Hörst du in der indirekten Rede die Person selbst sprechen?"
+          }
+        ],
+        "say": "Die indirekte Rede brauchst du immer dann, wenn du über etwas berichtest, das jemand gesagt hat. In einer Zusammenfassung darfst du zum Beispiel keine wörtlichen Zitate aneinanderreihen. Und in der Prüfung gibt es dazu eine eigene Aufgabe."
+      },
+      {
+        "title": "Jetzt du: direkt oder indirekt?",
+        "body": "Tipp bei jedem Satz auf die richtige Lösung.",
+        "tasks": [
+          {
+            "text": "Tom ruft: „Ich habe gewonnen!“ Das ist ___.",
+            "choices": [
+              "direkte Rede",
+              "indirekte Rede"
+            ],
+            "correct": "direkte Rede",
+            "why": "Toms genaue Worte stehen in Anführungszeichen.",
+            "hint": "Schau genau hin: Stehen im Satz Anführungszeichen oder nicht?"
+          },
+          {
+            "text": "Tom sagt, er habe gewonnen. Das ist ___.",
+            "choices": [
+              "indirekte Rede",
+              "direkte Rede"
+            ],
+            "correct": "indirekte Rede",
+            "why": "Es gibt keine Anführungszeichen, und das Verb steht im Konjunktiv I.",
+            "hint": "Spricht Tom hier selbst, oder berichtet jemand über ihn?"
+          }
+        ],
+        "say": "Schau bei jedem Satz, ob Anführungszeichen dastehen und ob das Verb im Konjunktiv I steht. Daran erkennst du die beiden Arten."
+      },
+      {
+        "chapter": "Umformen in vier Schritten",
+        "title": "Schritt 1: die Zeichen entfernen",
+        "body": "Tom sagt**:** **„**Ich habe Hunger.**“**\n\nTom sagt**,** …\n\nAus dem Doppelpunkt wird ein Komma.",
+        "say": "Du fängst mit dem Einfachsten an. Der Begleitsatz bleibt, wie er ist. Der Doppelpunkt wird zu einem Komma, und die Anführungszeichen streichst du. Jetzt hast du den Anfang deines neuen Satzes: Tom sagt, und dann geht es weiter."
+      },
+      {
+        "title": "Schritt 2: die Person anpassen",
+        "body": "ich wird zu **er** oder **sie**\nmein wird zu **sein** oder **ihr**\nwir wird zu **sie**",
+        "tasks": [
+          {
+            "text": "Mia sagt: „Ich bin müde.“ In der indirekten Rede wird aus ich das Wort ___.",
+            "choices": [
+              "sie",
+              "ich"
+            ],
+            "correct": "sie",
+            "why": "Jemand anders spricht über Mia, und Mia ist ein Mädchen.",
+            "hint": "Wer berichtet hier, und über wen wird berichtet?"
+          }
+        ],
+        "say": "Tom sagt ich, aber du bist nicht Tom. Du musst also er sagen. Dasselbe gilt für alle Wörter, die auf den Sprecher zeigen. Aus mein Bruder wird sein Bruder. Aus wir wird sie. Frag dich immer: Wer ist mit dem Wort gemeint?"
+      },
+      {
+        "title": "Schritt 3: das Verb in den Konjunktiv I setzen",
+        "body": "ich bin: er **sei**\nich habe: er **habe**\nich komme: er **komme**",
+        "tasks": [
+          {
+            "text": "Tom sagt, er ___ Hunger.",
+            "choices": [
+              "habe",
+              "hat"
+            ],
+            "correct": "habe",
+            "why": "In der indirekten Rede steht das Verb im Konjunktiv I.",
+            "hint": "Welche der beiden Formen zeigt, dass du nur weitergibst, was Tom gesagt hat?"
+          }
+        ],
+        "say": "Jetzt kommt das Verb. Du setzt es in den Konjunktiv I, den du aus der Lektion über den Modus kennst. Meistens nimmst du den Infinitiv und lässt das n weg. Nur sein ist anders und heißt sei. Damit zeigst du, dass du nur weitergibst."
+      },
+      {
+        "title": "Schritt 4: Du darfst dass benutzen",
+        "body": "*Tom sagt, er habe Hunger.*\n\n*Tom sagt, **dass** er Hunger habe.*\n\nBeides ist richtig. Mit dass rückt das Verb ans Ende.",
+        "say": "Du kannst den berichteten Teil mit dass beginnen. Dann wird er zu einem Nebensatz, und das Verb wandert ans Ende. Ohne dass bleibt das Verb an zweiter Stelle. Beide Formen sind in der Prüfung richtig. Such dir die aus, die dir leichter fällt."
+      },
+      {
+        "title": "Ein Beispiel, Schritt für Schritt",
+        "body": "Lena sagt: „Ich gehe mit meinem Bruder ins Kino.“\n\nLena sagt, **sie gehe** mit **ihrem** Bruder ins Kino.",
+        "say": "Ich gehe den Satz für dich durch. Zuerst nehme ich Doppelpunkt und Anführungszeichen weg und setze ein Komma. Dann mache ich aus ich sie und aus meinem ihrem. Zum Schluss setze ich das Verb in den Konjunktiv I: aus gehe wird gehe, die Form bleibt hier gleich."
+      },
+      {
+        "title": "Wenn man den Konjunktiv I nicht hört",
+        "body": "Die Kinder sagen: „Wir haben Hunger.“\n\nDie Kinder sagen, sie **hätten** Hunger.\n\nHier nimmt man den Konjunktiv II als Ersatz.",
+        "tasks": [
+          {
+            "text": "Die Eltern sagen: „Wir müssen los.“ Indirekt: Die Eltern sagen, sie ___ los.",
+            "choices": [
+              "müssten",
+              "müssen"
+            ],
+            "correct": "müssten",
+            "why": "Bei sie in der Mehrzahl nimmt man den Konjunktiv II als Ersatz.",
+            "hint": "Bei welcher Form hört man, dass etwas nur weitergegeben wird?"
+          }
+        ],
+        "say": "Bei sie in der Mehrzahl sieht der Konjunktiv I aus wie die normale Form: sie haben. Niemand würde merken, dass du nur berichtest. Deshalb nimmst du dann den Konjunktiv II. Aus haben wird hätten, aus müssen wird müssten, aus kommen wird kämen oder würden kommen."
+      },
+      {
+        "title": "Jetzt du: umformen",
+        "body": "Tipp bei jedem Satz auf die richtige Umformung.",
+        "tasks": [
+          {
+            "text": "Ben sagt: „Ich bin fertig.“ Indirekt: Ben sagt, er ___ fertig.",
+            "choices": [
+              "sei",
+              "bin"
+            ],
+            "correct": "sei",
+            "why": "Aus bin wird im Konjunktiv I diese Form.",
+            "hint": "Dieses Verb ist unregelmäßig. Schau in die erste Zeile der Tafel zu Schritt 3."
+          },
+          {
+            "text": "Sara sagt: „Mein Hund ist krank.“ Indirekt: Sara sagt, ___ Hund sei krank.",
+            "choices": [
+              "ihr",
+              "mein"
+            ],
+            "correct": "ihr",
+            "why": "Der Hund gehört Sara. Wer über sie berichtet, muss das Wort anpassen.",
+            "hint": "Wem gehört der Hund? Wie sagt das jemand, der über Sara berichtet?"
+          },
+          {
+            "text": "Paul sagt: „Ich komme später.“ Indirekt: Paul sagt, er ___ später.",
+            "choices": [
+              "komme",
+              "kommt"
+            ],
+            "correct": "komme",
+            "why": "Im Konjunktiv I endet die Form auf e.",
+            "hint": "Nimm den Infinitiv und lass das n weg. Was bleibt übrig?"
+          }
+        ],
+        "say": "Geh bei jedem Satz die vier Schritte durch. Zeichen weg, Person anpassen, Verb in den Konjunktiv. Achte darauf, wer spricht und über wen berichtet wird."
+      },
+      {
+        "chapter": "Fragen und Aufforderungen",
+        "title": "Fragen ohne Fragewort bekommen ob",
+        "body": "Er fragt: „Kommst du mit?“\n\nEr fragt, **ob** ich mitkomme.",
+        "say": "Auch Fragen kann man berichten. Wenn die Frage mit dem Verb beginnt und man mit ja oder nein antworten kann, brauchst du das Wort ob. Das Fragezeichen fällt weg, denn der neue Satz ist keine Frage mehr. Er ist ein Bericht über eine Frage."
+      },
+      {
+        "title": "Fragen mit Fragewort behalten es",
+        "body": "Sie fragt: „Wo wohnst du?“\n\nSie fragt, **wo** ich wohne.",
+        "tasks": [
+          {
+            "text": "Sie fragt: „Hast du Zeit?“ Indirekt: Sie fragt, ___ ich Zeit habe.",
+            "choices": [
+              "ob",
+              "dass"
+            ],
+            "correct": "ob",
+            "why": "Die Frage beginnt mit dem Verb und hat kein Fragewort.",
+            "hint": "Beginnt die Frage mit einem Fragewort oder mit dem Verb?"
+          }
+        ],
+        "say": "Beginnt die Frage mit einem Fragewort wie wo, wann, warum oder wie, behältst du dieses Wort. Es leitet dann den Nebensatz ein, und das Verb rückt ans Ende. Auch hier steht am Schluss ein Punkt und kein Fragezeichen."
+      },
+      {
+        "title": "Aufforderungen bekommen sollen",
+        "body": "Er sagt: „Komm her!“\n\nEr sagt, ich **solle** herkommen.",
+        "tasks": [
+          {
+            "text": "Die Lehrerin sagt: „Seid leise!“ Indirekt: Sie sagt, wir ___ leise sein.",
+            "choices": [
+              "sollten",
+              "sind"
+            ],
+            "correct": "sollten",
+            "why": "Eine Aufforderung gibt man mit einer Form von sollen wieder.",
+            "hint": "Welches Verb drückt aus, dass jemand etwas tun soll?"
+          }
+        ],
+        "say": "Einen Befehl kannst du nicht einfach in den Konjunktiv setzen. Du brauchst das Verb sollen. Aus Komm her wird: ich solle herkommen. Das Ausrufezeichen fällt weg. Bei einer höflichen Bitte kannst du auch mögen nehmen: Er bat, ich möge warten."
+      },
+      {
+        "title": "Das nimmst du mit",
+        "body": "(1) Doppelpunkt und Anführungszeichen entfernen.\n\n(2) Die Person anpassen: aus ich wird er oder sie.\n\n(3) Das Verb in den **Konjunktiv I** setzen.\n\n(4) Fragen mit **ob** oder Fragewort, Aufforderungen mit **sollen**.",
+        "tasks": [
+          {
+            "text": "Welches Zeichen steht in der indirekten Rede nach dem Begleitsatz? ___",
+            "choices": [
+              "ein Komma",
+              "ein Doppelpunkt"
+            ],
+            "correct": "ein Komma",
+            "why": "Der Doppelpunkt der direkten Rede wird durch dieses Zeichen ersetzt.",
+            "hint": "Was wird aus dem Doppelpunkt, wenn die Anführungszeichen wegfallen?"
+          }
+        ],
+        "say": "Das sind die vier Schritte auf einen Blick. Wenn du sie der Reihe nach abarbeitest, kann wenig schiefgehen. Gleich kommen noch die Wörter zum Nachlesen und ein kleines Quiz."
+      }
+    ],
+    "vocab": [
+      {
+        "term": "direkte Rede",
+        "plain": "Die genauen Worte einer Person in Anführungszeichen. Dasselbe wie wörtliche Rede.",
+        "example": "Lena sagt: „Ich bin krank.“"
+      },
+      {
+        "term": "indirekte Rede",
+        "plain": "Man berichtet, was jemand gesagt hat, ohne Anführungszeichen und mit dem Konjunktiv I.",
+        "example": "Lena sagt, sie sei krank."
+      },
+      {
+        "term": "ob",
+        "plain": "Leitet eine berichtete Frage ein, die kein Fragewort hat.",
+        "example": "Er fragt, ob ich mitkomme."
+      },
+      {
+        "term": "sollen",
+        "plain": "Mit diesem Verb gibt man eine Aufforderung wieder.",
+        "example": "Er sagt, ich solle herkommen."
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Wie heißt die indirekte Rede zu: Anna sagt: „Ich bin müde.“?",
+        "choices": [
+          "Anna sagt, sie sei müde.",
+          "Anna sagt, ich bin müde.",
+          "Anna sagt: sie ist müde.",
+          "Anna sagt, sie war müde."
+        ],
+        "correct": "Anna sagt, sie sei müde.",
+        "explain": "Die Zeichen fallen weg, aus ich wird sie, und das Verb steht im Konjunktiv I: sei."
+      },
+      {
+        "prompt": "Wie heißt die indirekte Rede zu: Er sagt: „Ich habe keine Zeit.“?",
+        "choices": [
+          "Er sagt, er habe keine Zeit.",
+          "Er sagt, ich habe keine Zeit.",
+          "Er sagt, er hat gehabt keine Zeit.",
+          "Er sagt: „Er habe keine Zeit.“"
+        ],
+        "correct": "Er sagt, er habe keine Zeit.",
+        "explain": "Aus ich wird er, und aus habe wird der Konjunktiv I habe. Die Anführungszeichen entfallen."
+      },
+      {
+        "prompt": "Sie fragt: „Kommst du morgen?“ Wie berichtest du das?",
+        "choices": [
+          "Sie fragt, ob ich morgen komme.",
+          "Sie fragt, dass ich morgen komme.",
+          "Sie fragt, kommst du morgen.",
+          "Sie fragt, wo ich morgen komme."
+        ],
+        "correct": "Sie fragt, ob ich morgen komme.",
+        "explain": "Die Frage hat kein Fragewort. Dann leitet ob den berichteten Teil ein."
+      },
+      {
+        "prompt": "Er fragt: „Wann beginnt der Film?“ Wie berichtest du das?",
+        "choices": [
+          "Er fragt, wann der Film beginne.",
+          "Er fragt, ob der Film beginne.",
+          "Er fragt, dass der Film beginnt wann.",
+          "Er fragt: wann beginnt der Film."
+        ],
+        "correct": "Er fragt, wann der Film beginne.",
+        "explain": "Das Fragewort wann bleibt erhalten, und das Verb rückt ans Ende."
+      },
+      {
+        "prompt": "Die Schüler sagen: „Wir haben das verstanden.“ Welche Form ist richtig?",
+        "choices": [
+          "Die Schüler sagen, sie hätten das verstanden.",
+          "Die Schüler sagen, sie haben das verstanden.",
+          "Die Schüler sagen, wir hätten das verstanden.",
+          "Die Schüler sagen, sie habe das verstanden."
+        ],
+        "correct": "Die Schüler sagen, sie hätten das verstanden.",
+        "explain": "Bei sie in der Mehrzahl klingt der Konjunktiv I wie die normale Form. Deshalb nimmt man den Konjunktiv II."
+      },
+      {
+        "prompt": "Der Trainer sagt: „Lauft schneller!“ Wie berichtest du das?",
+        "choices": [
+          "Der Trainer sagt, wir sollten schneller laufen.",
+          "Der Trainer sagt, lauft schneller.",
+          "Der Trainer sagt, dass wir schneller liefen.",
+          "Der Trainer sagt, ob wir schneller laufen."
+        ],
+        "correct": "Der Trainer sagt, wir sollten schneller laufen.",
+        "explain": "Eine Aufforderung gibt man mit einer Form von sollen wieder."
+      },
+      {
+        "prompt": "Was passiert mit dem Doppelpunkt der direkten Rede?",
+        "choices": [
+          "Er wird zu einem Komma.",
+          "Er bleibt stehen.",
+          "Er wird zu einem Punkt.",
+          "Er wird zu einem Fragezeichen."
+        ],
+        "correct": "Er wird zu einem Komma.",
+        "explain": "Der Begleitsatz bleibt, und nach ihm steht in der indirekten Rede ein Komma."
+      }
+    ]
+  }
+]

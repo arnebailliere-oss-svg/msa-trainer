@@ -1,0 +1,431 @@
+[
+  {
+    "id": "P_DE_ZEITFORMEN",
+    "subject": "DE",
+    "title": "Die Zeitformen des Verbs",
+    "teaser": "Präsens, Präteritum, Perfekt, Plusquamperfekt und Futur: was jede Zeitform bedeutet, wie sie gebaut ist und woran du sie in einem Satz erkennst.",
+    "hook": "Du benutzt die deutschen Zeitformen jeden Tag richtig, ohne darüber nachzudenken. Niemand muss dir beibringen, dass es gestern ging ich heißt. Was dir vielleicht fehlt, sind die Namen und ein klarer Blick dafür, wie die Formen gebaut sind. Genau das schauen wir uns jetzt an.",
+    "outro": "Du kennst jetzt die fünf Zeitformen, die in der Prüfung vorkommen. Präsens und Präteritum bestehen aus einem Verbteil. Perfekt, Plusquamperfekt und Futur bestehen aus zwei Teilen, und der erste Teil verrät dir die Zeitform. Mehr brauchst du nicht, um jede Form sicher zu benennen.",
+    "standard": 2,
+    "requires": [
+      "P_DE_WORTARTEN"
+    ],
+    "steps": [
+      {
+        "chapter": "Jetzt und früher",
+        "title": "Das Verb zeigt die Zeit",
+        "body": "ich **gehe**\nich **ging**\nich **werde gehen**\n\nDiese Formen nennt man Zeitformen. Das Fachwort heißt **Tempus**.",
+        "say": "Dreimal dasselbe Verb, und jedes Mal ist eine andere Zeit gemeint. Im ersten Satz ist es jetzt, im zweiten war es früher, im dritten kommt es noch. Das Verb ist die einzige Wortart, die so etwas kann. Tempus ist das lateinische Wort für Zeit."
+      },
+      {
+        "title": "Präsens: die Gegenwart",
+        "body": "ich **gehe**, du **lachst**, sie **schläft**\n\nDiese Zeitform heißt **Präsens**.",
+        "say": "Das Präsens benutzt du für alles, was jetzt gerade passiert. Du benutzt es auch für Dinge, die immer gelten: Die Erde dreht sich um die Sonne. Es ist die einfachste Form des Verbs, und sie besteht aus einem einzigen Wort."
+      },
+      {
+        "title": "Präteritum: die erzählte Vergangenheit",
+        "body": "ich **ging**, du **lachtest**, sie **schlief**\n\nDiese Zeitform heißt **Präteritum**.",
+        "tasks": [
+          {
+            "text": "Gestern ___ es den ganzen Tag.",
+            "choices": [
+              "regnete",
+              "regnet"
+            ],
+            "correct": "regnete",
+            "why": "Gestern ist vorbei. Die Vergangenheit in einem Wort ist das Präteritum.",
+            "hint": "Ist gestern jetzt oder früher? Welche Form passt zu früher?"
+          }
+        ],
+        "say": "Das Präteritum ist eine Vergangenheit, die aus einem einzigen Wort besteht. Du findest sie vor allem in Büchern, Märchen und Berichten. Es war einmal ein König ist Präteritum. Beim Sprechen benutzt man sie seltener, außer bei war und hatte."
+      },
+      {
+        "title": "Schwache und starke Verben",
+        "body": "lachen: ich lach**te**\nHier kommt nur -te dazu.\n\ngehen: ich **ging**\nHier ändert sich der **Vokal**, also der Laut in der Mitte.",
+        "tasks": [
+          {
+            "text": "Das Präteritum von singen heißt: ich ___.",
+            "choices": [
+              "sang",
+              "singte"
+            ],
+            "correct": "sang",
+            "why": "Singen ist ein starkes Verb. Der Vokal ändert sich.",
+            "hint": "Wie würdest du in einem Märchen schreiben, was der Vogel gestern tat?"
+          }
+        ],
+        "say": "Es gibt zwei Sorten von Verben. Die einen bilden das Präteritum ganz regelmäßig mit te. Man nennt sie schwache Verben. Die anderen ändern ihren Vokal: gehen, ging. Singen, sang. Man nennt sie starke Verben. Die starken musst du kennen, aber die meisten kennst du schon."
+      },
+      {
+        "title": "Perfekt: die gesprochene Vergangenheit",
+        "body": "ich **habe** gelacht\n\nich **bin** gegangen\n\nDiese Zeitform heißt **Perfekt**.",
+        "say": "Das Perfekt ist die Vergangenheit, die du beim Sprechen benutzt. Es besteht aus zwei Teilen. Der erste Teil ist eine Form von haben oder sein. Der zweite Teil ist eine besondere Form des Verbs, die meistens mit ge beginnt. Sie heißt **Partizip**."
+      },
+      {
+        "title": "haben oder sein?",
+        "body": "ich **bin** gegangen, gefahren, aufgewacht\nBei Bewegung und Veränderung steht sein.\n\nich **habe** gelacht, gegessen, gelesen\nBei fast allen anderen Verben steht haben.",
+        "tasks": [
+          {
+            "text": "Wir ___ nach Hause gelaufen.",
+            "choices": [
+              "sind",
+              "haben"
+            ],
+            "correct": "sind",
+            "why": "Laufen ist eine Bewegung von einem Ort zum anderen.",
+            "hint": "Bewegt man sich bei diesem Verb von einem Ort zum anderen?"
+          }
+        ],
+        "say": "Die meisten Verben bilden das Perfekt mit haben. Sein steht nur bei zwei Gruppen. Die erste sind Verben, bei denen man sich von einem Ort zum anderen bewegt: gehen, fahren, laufen. Die zweite sind Verben, bei denen sich ein Zustand ändert: aufwachen, einschlafen, wachsen."
+      },
+      {
+        "title": "Jetzt du: Präsens, Präteritum oder Perfekt?",
+        "body": "Tipp bei jedem Satz auf die richtige Zeitform.",
+        "tasks": [
+          {
+            "text": "Ich habe den Film gesehen. Das ist ___.",
+            "choices": [
+              "Perfekt",
+              "Präteritum"
+            ],
+            "correct": "Perfekt",
+            "why": "Das Verb besteht aus zwei Teilen: habe und gesehen.",
+            "hint": "Aus wie vielen Teilen besteht das Verb in diesem Satz?"
+          },
+          {
+            "text": "Der König lebte in einem Schloss. Das ist ___.",
+            "choices": [
+              "Präteritum",
+              "Perfekt"
+            ],
+            "correct": "Präteritum",
+            "why": "Das Verb besteht aus einem Wort und erzählt von früher.",
+            "hint": "Aus wie vielen Teilen besteht das Verb? Geht es um jetzt oder um früher?"
+          },
+          {
+            "text": "Meine Schwester liest ein Buch. Das ist ___.",
+            "choices": [
+              "Präsens",
+              "Präteritum"
+            ],
+            "correct": "Präsens",
+            "why": "Das geschieht jetzt, und das Verb besteht aus einem Wort.",
+            "hint": "Geschieht das jetzt oder ist es schon vorbei?"
+          }
+        ],
+        "say": "Schau bei jedem Satz zuerst, aus wie vielen Teilen das Verb besteht. Ein Teil bedeutet Präsens oder Präteritum. Zwei Teile mit haben oder sein bedeuten Perfekt."
+      },
+      {
+        "chapter": "Noch früher und später",
+        "title": "Plusquamperfekt: die Vorvergangenheit",
+        "body": "*Als ich ankam, **war** der Zug schon **abgefahren**.*\n\nDiese Zeitform heißt **Plusquamperfekt**.",
+        "say": "Manchmal erzählst du von zwei Dingen in der Vergangenheit, und eins davon war noch früher. Erst fuhr der Zug ab, dann kam ich an. Für das, was zuerst geschah, gibt es eine eigene Zeitform. Sie besteht aus hatte oder war und dem Partizip."
+      },
+      {
+        "title": "Zwei Zeiten in einem Satz",
+        "body": "*Nachdem ich **gegessen hatte**, **ging** ich hinaus.*\n\nZuerst: das Essen. Das ist Plusquamperfekt.\nDanach: das Hinausgehen. Das ist Präteritum.",
+        "tasks": [
+          {
+            "text": "Nachdem er die Hausaufgaben ___, spielte er Fußball.",
+            "choices": [
+              "gemacht hatte",
+              "gemacht hat"
+            ],
+            "correct": "gemacht hatte",
+            "why": "Die Hausaufgaben waren zuerst. Für das Frühere steht hatte.",
+            "hint": "Was geschah zuerst? In welcher Zeit steht das Spätere?"
+          }
+        ],
+        "say": "Das Plusquamperfekt steht fast nie allein. Es braucht eine zweite Handlung, die später geschah. Besonders oft findest du es nach den Wörtern nachdem und als. Das Frühere bekommt hatte oder war, das Spätere steht im Präteritum."
+      },
+      {
+        "title": "Futur: die Zukunft",
+        "body": "ich **werde** gehen, es **wird** regnen\n\nDiese Zeitform heißt **Futur**.",
+        "tasks": [
+          {
+            "text": "Morgen ___ es regnen.",
+            "choices": [
+              "wird",
+              "wurde"
+            ],
+            "correct": "wird",
+            "why": "Morgen kommt noch. Für die Zukunft steht eine Form von werden im Präsens.",
+            "hint": "Liegt morgen in der Zukunft oder in der Vergangenheit?"
+          }
+        ],
+        "say": "Für das, was noch kommt, gibt es das Futur. Es besteht aus einer Form von werden und dem Verb im Infinitiv. Ich werde gehen, du wirst gehen, er wird gehen. Den Infinitiv kennst du schon als die Grundform des Verbs."
+      },
+      {
+        "title": "Zukunft ohne Futur",
+        "body": "*Morgen **fahre** ich nach Köln.*\n\nHier steht das Präsens, obwohl es um morgen geht.",
+        "say": "Im Alltag benutzt man für die Zukunft meistens das Präsens. Das Wort morgen zeigt schon, dass es noch nicht geschehen ist. In der Prüfung benennst du trotzdem die Form, die du siehst. Fahre ist Präsens, auch wenn die Fahrt erst morgen stattfindet."
+      },
+      {
+        "title": "Jetzt du: Welche Zeitform?",
+        "body": "Tipp bei jedem Satz auf die richtige Zeitform.",
+        "tasks": [
+          {
+            "text": "Wir werden pünktlich ankommen. Das ist ___.",
+            "choices": [
+              "Futur",
+              "Perfekt"
+            ],
+            "correct": "Futur",
+            "why": "Der erste Verbteil ist eine Form von werden, danach steht der Infinitiv.",
+            "hint": "Welches Wort ist der erste Teil des Verbs?"
+          },
+          {
+            "text": "Sie hatte den Schlüssel vergessen. Das ist ___.",
+            "choices": [
+              "Plusquamperfekt",
+              "Perfekt"
+            ],
+            "correct": "Plusquamperfekt",
+            "why": "Der erste Verbteil heißt hatte. Das zeigt die Vorvergangenheit.",
+            "hint": "Heißt der erste Verbteil hat oder hatte?"
+          },
+          {
+            "text": "Morgen schreiben wir einen Test. Das ist ___.",
+            "choices": [
+              "Präsens",
+              "Futur"
+            ],
+            "correct": "Präsens",
+            "why": "Das Verb besteht aus einem Wort in der Gegenwartsform. Nur das Wort morgen zeigt auf die Zukunft.",
+            "hint": "Steht im Satz eine Form von werden?"
+          }
+        ],
+        "say": "Achte bei zwei Verbteilen auf den ersten Teil. Hatte oder war zeigen das Plusquamperfekt. Werde, wirst oder wird zeigen das Futur."
+      },
+      {
+        "chapter": "Alle Zeitformen auf einen Blick",
+        "title": "Der Zeitstrahl",
+        "body": "Von links nach rechts: Plusquamperfekt, Präteritum und Perfekt, Präsens, Futur.",
+        "figure": {
+          "type": "timeline",
+          "points": [
+            {
+              "at": -0.85,
+              "label": "war gegangen"
+            },
+            {
+              "at": -0.4,
+              "label": "ging"
+            },
+            {
+              "at": 0,
+              "label": "gehe"
+            },
+            {
+              "at": 0.6,
+              "label": "werde gehen"
+            }
+          ]
+        },
+        "say": "Hier siehst du alle Zeitformen mit dem Verb gehen auf einer Linie. Ganz links steht das, was am weitesten zurückliegt. In der Mitte steht jetzt. Rechts steht, was noch kommt. Präteritum und Perfekt liegen an derselben Stelle, denn beide meinen einfach früher."
+      },
+      {
+        "title": "So erkennst du die Zeitform",
+        "body": "**Ein Verbteil**: Präsens oder Präteritum\n**habe** oder **bin** und Partizip: Perfekt\n**hatte** oder **war** und Partizip: Plusquamperfekt\n**werde** und Infinitiv: Futur",
+        "tasks": [
+          {
+            "text": "Der erste Verbteil heißt war, der zweite ist ein Partizip. Das ist ___.",
+            "choices": [
+              "Plusquamperfekt",
+              "Perfekt"
+            ],
+            "correct": "Plusquamperfekt",
+            "why": "War und hatte zeigen die Vorvergangenheit an.",
+            "hint": "Schau in die dritte Zeile der Tafel."
+          }
+        ],
+        "say": "Mit dieser kleinen Liste benennst du jede Form. Zähl zuerst die Verbteile. Bei zwei Teilen schaust du nur auf den ersten. Er verrät dir alles. Habe und bin gehören zum Perfekt, hatte und war zum Plusquamperfekt, und werde gehört zum Futur."
+      },
+      {
+        "title": "Jetzt du: gemischt",
+        "body": "Tipp bei jedem Satz auf die richtige Lösung.",
+        "tasks": [
+          {
+            "text": "Er ist gestern angekommen. Das ist ___.",
+            "choices": [
+              "Perfekt",
+              "Plusquamperfekt"
+            ],
+            "correct": "Perfekt",
+            "why": "Der erste Verbteil heißt ist. Das gehört zum Perfekt.",
+            "hint": "Heißt der erste Verbteil ist oder war?"
+          },
+          {
+            "text": "Das Kind schlief tief. Das ist ___.",
+            "choices": [
+              "Präteritum",
+              "Präsens"
+            ],
+            "correct": "Präteritum",
+            "why": "Das Verb besteht aus einem Wort und erzählt von früher. Im Präsens hieße es schläft.",
+            "hint": "Wie hieße das Verb, wenn es jetzt geschähe?"
+          },
+          {
+            "text": "Setz ins Perfekt: Ich lese ein Buch. Ich ___ ein Buch gelesen.",
+            "choices": [
+              "habe",
+              "bin"
+            ],
+            "correct": "habe",
+            "why": "Lesen ist keine Bewegung von Ort zu Ort. Deshalb steht haben.",
+            "hint": "Ist Lesen eine Bewegung von einem Ort zum anderen?"
+          }
+        ],
+        "say": "Jetzt kommen alle fünf Zeitformen vor. Geh jedes Mal gleich vor: Verbteile zählen, bei zwei Teilen auf den ersten schauen."
+      },
+      {
+        "title": "Das nimmst du mit",
+        "body": "**Präsens**: ich gehe\n**Präteritum**: ich ging\n**Perfekt**: ich bin gegangen\n**Plusquamperfekt**: ich war gegangen\n**Futur**: ich werde gehen",
+        "tasks": [
+          {
+            "text": "Welche Zeitform steht in Märchen und Erzählungen? ___",
+            "choices": [
+              "Präteritum",
+              "Futur"
+            ],
+            "correct": "Präteritum",
+            "why": "Es war einmal: So beginnen Märchen, und das ist diese Zeitform.",
+            "hint": "In welcher Zeit steht der Satz: Es war einmal ein König?"
+          }
+        ],
+        "say": "Das sind die fünf Zeitformen mit je einem Beispiel. Wenn du dir diese fünf Zeilen merkst, kannst du jede andere Form daran messen. Gleich kommen noch die Wörter zum Nachlesen und ein kleines Quiz."
+      }
+    ],
+    "vocab": [
+      {
+        "term": "Tempus",
+        "plain": "Das Fachwort für Zeitform."
+      },
+      {
+        "term": "Präsens",
+        "plain": "Die Gegenwart. Ein Verbteil.",
+        "example": "ich gehe"
+      },
+      {
+        "term": "Präteritum",
+        "plain": "Die erzählte Vergangenheit. Ein Verbteil.",
+        "example": "ich ging"
+      },
+      {
+        "term": "Perfekt",
+        "plain": "Die gesprochene Vergangenheit. Haben oder sein und das Partizip.",
+        "example": "ich bin gegangen"
+      },
+      {
+        "term": "Plusquamperfekt",
+        "plain": "Die Vorvergangenheit. Hatte oder war und das Partizip.",
+        "example": "ich war gegangen"
+      },
+      {
+        "term": "Futur",
+        "plain": "Die Zukunft. Werden und der Infinitiv.",
+        "example": "ich werde gehen"
+      },
+      {
+        "term": "Partizip",
+        "plain": "Die Form des Verbs, die im Perfekt steht. Sie beginnt meistens mit ge.",
+        "example": "gelacht, gegangen"
+      },
+      {
+        "term": "schwache und starke Verben",
+        "plain": "Schwache Verben bilden das Präteritum mit te. Starke Verben ändern ihren Vokal.",
+        "example": "lachte; ging"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "In welcher Zeitform steht: Wir sind ans Meer gefahren?",
+        "choices": [
+          "Perfekt",
+          "Präteritum",
+          "Plusquamperfekt",
+          "Futur"
+        ],
+        "correct": "Perfekt",
+        "explain": "Das Verb besteht aus zwei Teilen: sind und gefahren. Der erste Teil ist eine Form von sein im Präsens."
+      },
+      {
+        "prompt": "In welcher Zeitform steht: Der Hund bellte laut?",
+        "choices": [
+          "Präteritum",
+          "Perfekt",
+          "Präsens",
+          "Futur"
+        ],
+        "correct": "Präteritum",
+        "explain": "Das Verb besteht aus einem Wort und erzählt von früher. Die Endung te zeigt ein schwaches Verb im Präteritum."
+      },
+      {
+        "prompt": "In welcher Zeitform steht: Sie hatte schon gegessen?",
+        "choices": [
+          "Plusquamperfekt",
+          "Perfekt",
+          "Präteritum",
+          "Präsens"
+        ],
+        "correct": "Plusquamperfekt",
+        "explain": "Der erste Verbteil heißt hatte. Hatte oder war mit dem Partizip ist das Plusquamperfekt."
+      },
+      {
+        "prompt": "In welcher Zeitform steht: Ich werde dich anrufen?",
+        "choices": [
+          "Futur",
+          "Präsens",
+          "Perfekt",
+          "Präteritum"
+        ],
+        "correct": "Futur",
+        "explain": "Werde und der Infinitiv anrufen bilden zusammen das Futur."
+      },
+      {
+        "prompt": "Welche Form ist das Präteritum von kommen?",
+        "choices": [
+          "ich kam",
+          "ich kommte",
+          "ich bin gekommen",
+          "ich komme"
+        ],
+        "correct": "ich kam",
+        "explain": "Kommen ist ein starkes Verb. Im Präteritum ändert sich der Vokal: kam."
+      },
+      {
+        "prompt": "Ich ___ gestern früh aufgewacht.",
+        "choices": [
+          "bin",
+          "habe",
+          "werde",
+          "hatte"
+        ],
+        "correct": "bin",
+        "explain": "Aufwachen ist eine Veränderung des Zustands. Solche Verben bilden das Perfekt mit sein."
+      },
+      {
+        "prompt": "Nachdem es ___, kam die Sonne heraus.",
+        "choices": [
+          "geregnet hatte",
+          "geregnet hat",
+          "regnet",
+          "regnen wird"
+        ],
+        "correct": "geregnet hatte",
+        "explain": "Der Regen war zuerst. Das Frühere steht im Plusquamperfekt, das Spätere im Präteritum."
+      },
+      {
+        "prompt": "Was bedeutet das Wort Tempus?",
+        "choices": [
+          "Zeitform",
+          "Wortart",
+          "Satzglied",
+          "Fall"
+        ],
+        "correct": "Zeitform",
+        "explain": "Tempus ist das lateinische Wort für Zeit. In der Grammatik meint es die Zeitform des Verbs."
+      }
+    ]
+  }
+]
