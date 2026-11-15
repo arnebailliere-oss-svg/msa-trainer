@@ -1,0 +1,389 @@
+[
+  {
+    "id": "P_DE_WORTARTEN2",
+    "subject": "DE",
+    "title": "Wortarten 2: die kleinen Wörter",
+    "teaser": "Präpositionen, Konjunktionen und Adverbien: die kurzen Wörter, die einen Satz zusammenhalten. Du lernst, wie du sie unterscheidest und warum sie für die Kommas so wichtig sind.",
+    "hook": "In der ersten Lektion ging es um die großen Wörter, die man leicht bemerkt. Jetzt kommen die kleinen dazu: in, auf, weil, und, heute, dort. Sie fallen kaum auf, aber ohne sie hält kein Satz zusammen. Und an einer Gruppe von ihnen erkennst du später, wo ein Komma hingehört.",
+    "outro": "Jetzt kennst du alle acht Wortarten. Präpositionen zeigen, wie Dinge zueinander stehen. Konjunktionen verbinden Wörter und Sätze. Adverbien sagen, wann, wo und wie etwas geschieht, und sie verändern sich nie. Mit diesem Wissen bist du bereit für die Satzglieder und die Kommas.",
+    "standard": 2,
+    "requires": [
+      "P_DE_WORTARTEN"
+    ],
+    "steps": [
+      {
+        "chapter": "Präpositionen",
+        "title": "Ein kleines Wort ändert alles",
+        "body": "Die Katze sitzt **auf** dem Tisch.\n\nDie Katze sitzt **unter** dem Tisch.\n\nNur ein Wort ist anders, und die Katze ist woanders.",
+        "say": "Lies die beiden Sätze und stell sie dir vor. Im ersten Satz sitzt die Katze oben, im zweiten unten. Alle anderen Wörter sind gleich geblieben. Es sind die kleinen Wörter auf und unter, die den ganzen Unterschied machen."
+      },
+      {
+        "title": "Das ist eine Präposition",
+        "body": "*in, auf, unter, mit, nach, vor, bei*\n\nEine **Präposition** zeigt, wie zwei Dinge zueinander stehen.",
+        "tasks": [
+          {
+            "text": "Das Buch liegt ___ dem Bett.",
+            "choices": [
+              "unter",
+              "und",
+              "schnell"
+            ],
+            "correct": "unter",
+            "why": "Das Wort zeigt, wo das Buch im Verhältnis zum Bett liegt.",
+            "hint": "Welches der drei Wörter sagt, wo etwas liegt?"
+          }
+        ],
+        "say": "Solche Wörter heißen Präpositionen. Man sagt auch Verhältniswort dazu, weil sie ein Verhältnis zeigen: wo etwas ist, wann etwas passiert oder womit jemand etwas tut. Die Katze und der Tisch stehen in einem Verhältnis, und die Präposition sagt, in welchem."
+      },
+      {
+        "title": "Wo, wann und womit",
+        "body": "**in** der Schule: Das sagt, wo.\n**nach** dem Essen: Das sagt, wann.\n**mit** dem Bus: Das sagt, womit.",
+        "say": "Präpositionen zeigen nicht nur einen Ort. Sie können auch eine Zeit zeigen, wie nach dem Essen oder vor der Schule. Und sie können zeigen, womit oder mit wem etwas geschieht. Es sind immer kurze Wörter, die man leicht überliest."
+      },
+      {
+        "title": "Präpositionen stehen vor einem Nomen",
+        "body": "**auf** dem Tisch\n**mit** meiner Schwester\n**nach** der Schule\n\nNach der Präposition kommt ein Begleiter und dann ein Nomen.",
+        "tasks": [
+          {
+            "text": "Wir fahren mit dem Zug. Die Präposition heißt: ___",
+            "choices": [
+              "mit",
+              "fahren",
+              "Zug"
+            ],
+            "correct": "mit",
+            "why": "Das Wort steht vor dem Artikel und dem Nomen und sagt, womit wir fahren.",
+            "hint": "Welches kurze Wort steht direkt vor dem Artikel dem?"
+          }
+        ],
+        "say": "Daran erkennst du eine Präposition am sichersten. Sie steht fast nie allein. Nach ihr kommt ein Artikel oder ein Pronomen und dann ein Nomen. Auf dem Tisch, mit meiner Schwester, nach der Schule. Die drei Wörter gehören fest zusammen."
+      },
+      {
+        "title": "Jetzt du: Präpositionen finden",
+        "body": "Tipp in jedem Satz auf die Präposition.",
+        "tasks": [
+          {
+            "text": "Der Hund schläft neben dem Sofa. ___",
+            "choices": [
+              "neben",
+              "schläft",
+              "Sofa"
+            ],
+            "correct": "neben",
+            "why": "Das Wort sagt, wo der Hund im Verhältnis zum Sofa liegt.",
+            "hint": "Welches Wort steht direkt vor dem Artikel dem?"
+          },
+          {
+            "text": "Vor dem Frühstück dusche ich. ___",
+            "choices": [
+              "Vor",
+              "Frühstück",
+              "dusche"
+            ],
+            "correct": "Vor",
+            "why": "Das Wort sagt, wann geduscht wird. Es steht vor Artikel und Nomen.",
+            "hint": "Welches Wort sagt, wann etwas passiert, und steht vor einem Artikel?"
+          },
+          {
+            "text": "Sie schreibt mit einem Bleistift. ___",
+            "choices": [
+              "mit",
+              "schreibt",
+              "Bleistift"
+            ],
+            "correct": "mit",
+            "why": "Das Wort sagt, womit sie schreibt.",
+            "hint": "Welches Wort steht direkt vor dem Artikel einem?"
+          }
+        ],
+        "say": "Such in jedem Satz das kurze Wort, das vor einem Artikel und einem Nomen steht. Es sagt dir, wo, wann oder womit etwas geschieht."
+      },
+      {
+        "chapter": "Konjunktionen",
+        "title": "Wörter, die verbinden",
+        "body": "Tom **und** Lena lachen.\n\nIch komme, **weil** ich Zeit habe.\n\nSolche Wörter heißen **Konjunktionen**.",
+        "say": "Eine Konjunktion verbindet etwas. Man nennt sie deshalb auch Bindewort. Im ersten Satz verbindet und zwei Namen. Im zweiten Satz verbindet weil zwei ganze Sätze: Ich komme, und ich habe Zeit. Ohne Konjunktionen könntest du nur ganz kurze Sätze bilden."
+      },
+      {
+        "title": "Zwei Gruppen",
+        "body": "**und, oder, aber, denn**\nSie verbinden gleichwertige Teile.\n\n**weil, dass, wenn, obwohl, als**\nSie hängen einen Satz an einen anderen an.",
+        "tasks": [
+          {
+            "text": "Ich bleibe zu Hause, ___ ich krank bin.",
+            "choices": [
+              "weil",
+              "auf",
+              "schnell"
+            ],
+            "correct": "weil",
+            "why": "Das Wort verbindet zwei Sätze und nennt den Grund.",
+            "hint": "Welches der drei Wörter kann zwei Sätze miteinander verbinden?"
+          }
+        ],
+        "say": "Die erste Gruppe stellt zwei Dinge nebeneinander: Tom und Lena, Tee oder Kaffee. Die zweite Gruppe macht mehr. Sie hängt einen Satz an einen anderen, und dieser angehängte Satz kann nicht allein stehen. Weil ich Zeit habe ist für sich allein kein fertiger Satz."
+      },
+      {
+        "title": "Warum das für Kommas wichtig ist",
+        "body": "Ich glaube**,** dass es regnet.\n\nWir gehen raus**,** obwohl es kalt ist.\n\nVor weil, dass, wenn und obwohl steht ein Komma.",
+        "say": "Hier siehst du, wozu du die Konjunktionen brauchst. Die Wörter der zweiten Gruppe sind wie ein Warnschild. Wenn du eins davon siehst, weißt du: Davor gehört ein Komma. Wer diese Wörter erkennt, hat die meisten Kommas schon gefunden."
+      },
+      {
+        "title": "Präposition oder Konjunktion?",
+        "body": "**nach** dem Essen\nPräposition: Danach kommt ein Nomen.\n\n**nachdem** wir gegessen hatten\nKonjunktion: Danach kommt ein Satz mit Verb.",
+        "tasks": [
+          {
+            "text": "Sie lachte, ___ sie den Witz hörte.",
+            "choices": [
+              "als",
+              "auf"
+            ],
+            "correct": "als",
+            "why": "Danach folgt ein Satz mit eigenem Verb. Dafür braucht man eine Konjunktion.",
+            "hint": "Folgt nach der Lücke ein Satz mit Verb oder nur ein Nomen?"
+          }
+        ],
+        "say": "Manche Wörter sehen sich ähnlich. Der Unterschied liegt in dem, was danach kommt. Nach einer Präposition steht ein Nomen. Nach einer Konjunktion steht ein ganzer Satz mit einem eigenen Verb. Schau also immer, ob danach ein Verb folgt."
+      },
+      {
+        "title": "Jetzt du: Welche Wortart?",
+        "body": "Tipp bei jedem Satz auf die richtige Wortart des fett gemeinten Wortes.",
+        "tasks": [
+          {
+            "text": "Wir warten vor der Schule. Das Wort vor ist ___.",
+            "choices": [
+              "eine Präposition",
+              "eine Konjunktion"
+            ],
+            "correct": "eine Präposition",
+            "why": "Danach kommt ein Artikel und ein Nomen: der Schule.",
+            "hint": "Was folgt nach dem Wort: ein Nomen oder ein Satz mit Verb?"
+          },
+          {
+            "text": "Ich esse, wenn ich Hunger habe. Das Wort wenn ist ___.",
+            "choices": [
+              "eine Konjunktion",
+              "eine Präposition"
+            ],
+            "correct": "eine Konjunktion",
+            "why": "Danach folgt ein ganzer Satz mit dem Verb habe.",
+            "hint": "Was folgt nach dem Wort: ein Nomen oder ein Satz mit Verb?"
+          },
+          {
+            "text": "Äpfel oder Birnen? Das Wort oder ist ___.",
+            "choices": [
+              "eine Konjunktion",
+              "eine Präposition"
+            ],
+            "correct": "eine Konjunktion",
+            "why": "Es verbindet zwei gleichwertige Teile miteinander.",
+            "hint": "Zeigt das Wort einen Ort, oder verbindet es zwei Dinge?"
+          }
+        ],
+        "say": "Überleg bei jedem Wort, was danach kommt. Steht ein Nomen dahinter, ist es eine Präposition. Folgt ein Satz mit Verb oder verbindet das Wort zwei gleiche Teile, ist es eine Konjunktion."
+      },
+      {
+        "chapter": "Adverbien",
+        "title": "Wann, wo und wie",
+        "body": "*heute, dort, gern, sehr, oft*\n\nEin **Adverb** sagt genauer, wann, wo oder wie etwas geschieht.",
+        "say": "Ein Adverb gibt einem Satz mehr Genauigkeit. Ich komme ist ein fertiger Satz. Ich komme heute sagt zusätzlich, wann. Ich komme gern sagt, wie. Das Wort Adverb bedeutet beim Verb, weil es meistens etwas über das Verb aussagt."
+      },
+      {
+        "title": "Adverbien bleiben immer gleich",
+        "body": "heute, heute, heute\n\nEin Adverb bekommt nie eine Endung.\n\nEs hat keinen Plural, und du kannst es nicht steigern.",
+        "tasks": [
+          {
+            "text": "Welches Wort ist ein Adverb? ___",
+            "choices": [
+              "gestern",
+              "schnelles",
+              "laufen"
+            ],
+            "correct": "gestern",
+            "why": "Das Wort sagt, wann etwas war, und es verändert sich nie.",
+            "hint": "Welches der drei Wörter sieht in jedem Satz gleich aus?"
+          }
+        ],
+        "say": "Das ist das wichtigste Merkmal. Nomen haben einen Plural, Verben verändern sich mit der Person, Adjektive bekommen Endungen. Ein Adverb sieht immer gleich aus. Heute bleibt heute, egal in welchem Satz. Niemand sagt heuter oder am heutesten."
+      },
+      {
+        "title": "Adverb oder Adjektiv?",
+        "body": "Er läuft **schnell**.\nSchnell kannst du steigern: schneller. Es ist ein Adjektiv.\n\nEr läuft **dort**.\nDort kannst du nicht steigern. Es ist ein Adverb.",
+        "tasks": [
+          {
+            "text": "Kannst du das Wort dort steigern? ___",
+            "choices": [
+              "Nein",
+              "Ja"
+            ],
+            "correct": "Nein",
+            "why": "Es gibt keine zweite Stufe davon. Deshalb ist es ein Adverb.",
+            "hint": "Probier es aus: Gibt es eine Form mit -er am Ende?"
+          }
+        ],
+        "say": "Diese beiden werden oft verwechselt, weil sie an derselben Stelle stehen können. Die Probe kennst du schon: das Steigern. Schnell, schneller, am schnellsten funktioniert. Dort, dorter funktioniert nicht. Was du nicht steigern kannst und was sich nie verändert, ist ein Adverb."
+      },
+      {
+        "title": "Typische Adverbien",
+        "body": "**Zeit**: heute, gestern, oft, nie, bald\n**Ort**: hier, dort, draußen, oben\n**Art**: gern, leider, sehr, vielleicht",
+        "say": "Diese Wörter solltest du als Adverbien wiedererkennen. Die erste Zeile antwortet auf die Frage wann. Die zweite antwortet auf die Frage wo. Die dritte sagt etwas darüber, wie jemand etwas findet oder wie sicher etwas ist."
+      },
+      {
+        "title": "Jetzt du: die kleinen Wörter gemischt",
+        "body": "Tipp bei jedem Satz auf die richtige Wortart.",
+        "tasks": [
+          {
+            "text": "Wir treffen uns morgen. Das Wort morgen ist ___.",
+            "choices": [
+              "ein Adverb",
+              "eine Präposition",
+              "eine Konjunktion"
+            ],
+            "correct": "ein Adverb",
+            "why": "Es sagt, wann wir uns treffen, und verändert sich nie.",
+            "hint": "Auf welche Frage antwortet das Wort: wo, wann oder wie?"
+          },
+          {
+            "text": "Der Ball liegt hinter dem Tor. Das Wort hinter ist ___.",
+            "choices": [
+              "eine Präposition",
+              "ein Adverb",
+              "eine Konjunktion"
+            ],
+            "correct": "eine Präposition",
+            "why": "Danach kommen ein Artikel und ein Nomen: dem Tor.",
+            "hint": "Was steht direkt nach dem Wort?"
+          },
+          {
+            "text": "Ich lerne, aber ich bin müde. Das Wort aber ist ___.",
+            "choices": [
+              "eine Konjunktion",
+              "ein Adverb",
+              "eine Präposition"
+            ],
+            "correct": "eine Konjunktion",
+            "why": "Es verbindet zwei ganze Sätze miteinander.",
+            "hint": "Was steht links und rechts von dem Wort?"
+          }
+        ],
+        "say": "Jetzt sind alle drei Wortarten dieser Lektion gemischt. Frag dich bei jedem Wort: Steht es vor einem Nomen? Verbindet es etwas? Oder sagt es wann, wo oder wie und bleibt immer gleich?"
+      },
+      {
+        "title": "Alle acht Wortarten",
+        "body": "Nomen, Verb, Adjektiv\nArtikel, Pronomen\n**Präposition**: steht vor einem Nomen.\n**Konjunktion**: verbindet Wörter und Sätze.\n**Adverb**: sagt wann, wo, wie und bleibt immer gleich.",
+        "tasks": [
+          {
+            "text": "Vor welchen Konjunktionen steht ein Komma? ___",
+            "choices": [
+              "weil, dass, wenn, obwohl",
+              "und, oder"
+            ],
+            "correct": "weil, dass, wenn, obwohl",
+            "why": "Diese Wörter hängen einen Satz an einen anderen an.",
+            "hint": "Welche Gruppe hängt einen Satz an, der nicht allein stehen kann?"
+          }
+        ],
+        "say": "Mit den drei neuen sind es zusammen acht Wortarten. Mehr musst du für die Prüfung nicht kennen. Jedes deutsche Wort gehört zu einer dieser Gruppen. Gleich kommen noch die Wörter zum Nachlesen und ein kleines Quiz."
+      }
+    ],
+    "vocab": [
+      {
+        "term": "Präposition",
+        "plain": "Ein kurzes Wort, das zeigt, wie Dinge zueinander stehen. Es steht vor einem Nomen.",
+        "example": "auf dem Tisch, nach der Schule"
+      },
+      {
+        "term": "Konjunktion",
+        "plain": "Ein Bindewort. Es verbindet Wörter oder Sätze.",
+        "example": "und, aber, weil, dass"
+      },
+      {
+        "term": "Adverb",
+        "plain": "Sagt genauer, wann, wo oder wie etwas geschieht. Es verändert sich nie.",
+        "example": "heute, dort, gern"
+      },
+      {
+        "term": "weil, dass, wenn, obwohl",
+        "plain": "Konjunktionen, die einen Satz an einen anderen anhängen. Vor ihnen steht ein Komma."
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Die Tasche steht neben der Tür. Welche Wortart ist neben?",
+        "choices": [
+          "Präposition",
+          "Konjunktion",
+          "Adverb",
+          "Adjektiv"
+        ],
+        "correct": "Präposition",
+        "explain": "Das Wort steht vor einem Artikel und einem Nomen und sagt, wo die Tasche steht."
+      },
+      {
+        "prompt": "Ich komme, weil ich Zeit habe. Welche Wortart ist weil?",
+        "choices": [
+          "Konjunktion",
+          "Präposition",
+          "Adverb",
+          "Pronomen"
+        ],
+        "correct": "Konjunktion",
+        "explain": "Weil verbindet zwei Sätze. Danach folgt ein Satz mit dem eigenen Verb habe."
+      },
+      {
+        "prompt": "Welches Wort ist ein Adverb?",
+        "choices": [
+          "oft",
+          "unter",
+          "weil",
+          "freundlich"
+        ],
+        "correct": "oft",
+        "explain": "Oft sagt, wie häufig etwas geschieht, und verändert sich nie. Freundlich kannst du steigern, es ist ein Adjektiv."
+      },
+      {
+        "prompt": "Woran erkennst du ein Adverb?",
+        "choices": [
+          "Es verändert sich nie.",
+          "Es steht immer vor einem Nomen.",
+          "Es wird großgeschrieben.",
+          "Es verbindet zwei Sätze."
+        ],
+        "correct": "Es verändert sich nie.",
+        "explain": "Ein Adverb hat keine Endung, keinen Plural und keine Steigerung. Es sieht in jedem Satz gleich aus."
+      },
+      {
+        "prompt": "Vor welchem Wort steht ein Komma?",
+        "choices": [
+          "obwohl",
+          "und",
+          "oder",
+          "auf"
+        ],
+        "correct": "obwohl",
+        "explain": "Obwohl hängt einen Satz an einen anderen an. Vor solchen Konjunktionen steht ein Komma."
+      },
+      {
+        "prompt": "Nach dem Training duschen wir. Welche Wortart ist nach?",
+        "choices": [
+          "Präposition",
+          "Konjunktion",
+          "Adverb",
+          "Verb"
+        ],
+        "correct": "Präposition",
+        "explain": "Danach kommen ein Artikel und ein Nomen: dem Training. Das ist das Zeichen für eine Präposition."
+      },
+      {
+        "prompt": "Er spricht leise. Welche Probe zeigt, dass leise ein Adjektiv ist?",
+        "choices": [
+          "Man kann es steigern: leiser.",
+          "Man kann der davorsetzen.",
+          "Es verändert sich nie.",
+          "Es steht vor einem Nomen."
+        ],
+        "correct": "Man kann es steigern: leiser.",
+        "explain": "Was sich steigern lässt, ist ein Adjektiv, auch wenn es bei einem Verb steht."
+      }
+    ]
+  }
+]

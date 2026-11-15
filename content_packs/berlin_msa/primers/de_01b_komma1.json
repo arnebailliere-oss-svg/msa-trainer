@@ -1,0 +1,408 @@
+[
+  {
+    "id": "P_DE_KOMMA1",
+    "subject": "DE",
+    "title": "Kommas 1: Aufzählung, Hauptsatz und Nebensatz",
+    "teaser": "Die vier häufigsten Gründe für ein Komma: die Aufzählung, die Grenze zwischen Hauptsatz und Nebensatz, zwei Hauptsätze nebeneinander und die Wörter aber und sondern. Jede Regel einzeln, mit Übungen.",
+    "hook": "Viele setzen Kommas nach Gefühl, dort, wo man beim Sprechen eine kleine Pause macht. Das geht oft schief. Dabei gibt es nur eine Handvoll Gründe für ein Komma, und jeden davon kann man lernen. In dieser Lektion nehmen wir uns die vier häufigsten vor, einen nach dem anderen.",
+    "outro": "Du kennst jetzt vier Gründe für ein Komma. Es steht zwischen den Teilen einer Aufzählung, zwischen Hauptsatz und Nebensatz, zwischen zwei Hauptsätzen und vor aber und sondern. Ein eingeschobener Nebensatz bekommt zwei Kommas. In der nächsten Lektion kommen die Gruppen mit zu und die wörtliche Rede dazu.",
+    "standard": 2,
+    "requires": [
+      "P_DE_WORTARTEN",
+      "P_DE_WORTARTEN2",
+      "P_DE_SATZ"
+    ],
+    "steps": [
+      {
+        "chapter": "Was ein Komma tut",
+        "title": "Ein Komma kann Leben retten",
+        "body": "*Komm, wir essen, Opa!*\n\n*Komm, wir essen Opa!*\n\nEin einziges Komma macht den Unterschied.",
+        "say": "Lies die beiden Sätze und stell sie dir vor. Im ersten Satz wird Opa zum Essen gerufen. Im zweiten Satz steht Opa auf dem Speiseplan. Das Komma zeigt dem Leser, welche Wörter zusammengehören. Es ist also nicht nur eine Vorschrift, sondern eine Hilfe beim Verstehen."
+      },
+      {
+        "title": "Ein Komma ist eine Grenze",
+        "body": "Das Komma zeigt, wo ein Teil des Satzes **aufhört** und der nächste **anfängt**.\n\nEs gibt nur wenige Arten von solchen Grenzen.",
+        "say": "Stell dir das Komma wie einen kleinen Zaun vor. Er steht an der Grenze zwischen zwei Teilen eines Satzes. Wenn du die Teile erkennst, weißt du, wo der Zaun hingehört. Deshalb haben wir uns in der letzten Lektion so genau mit Hauptsatz und Nebensatz beschäftigt."
+      },
+      {
+        "title": "Nicht nach Gefühl",
+        "body": "Ein Komma steht **nicht** dort, wo man beim Sprechen Luft holt.\n\nEs steht dort, wo eine **Regel** es verlangt.",
+        "tasks": [
+          {
+            "text": "Ein Komma setzt du, ___.",
+            "choices": [
+              "weil eine Regel es verlangt",
+              "wo du beim Lesen Luft holst"
+            ],
+            "correct": "weil eine Regel es verlangt",
+            "why": "Jedes Komma hat einen Grund, den man benennen kann.",
+            "hint": "Kannst du dich beim Kommasetzen auf dein Ohr verlassen?"
+          }
+        ],
+        "say": "Beim Sprechen machst du an vielen Stellen kleine Pausen. Nicht jede Pause ist ein Komma, und nicht jedes Komma hört man als Pause. Verlass dich deshalb nicht auf dein Ohr. Frag dich bei jedem Komma: Welche Regel steckt dahinter?"
+      },
+      {
+        "title": "Der erste Schritt: die Verben suchen",
+        "body": "*Ich **lese**, während du **kochst**.*\n\nZwei Verben, also zwei Teilsätze.\n\nAn der Grenze dazwischen steht das Komma.",
+        "tasks": [
+          {
+            "text": "Wir warten, bis der Bus kommt. Der Satz hat ___ Teilsätze.",
+            "choices": [
+              "zwei",
+              "drei"
+            ],
+            "correct": "zwei",
+            "why": "Es gibt zwei Verben: warten und kommt.",
+            "hint": "Zähl die Verben im Satz. Wie viele sind es?"
+          }
+        ],
+        "say": "Das kennst du aus der letzten Lektion. Du suchst die Verben und weißt dann, wie viele Teilsätze der Satz hat. Zwischen zwei Teilsätzen steht fast immer ein Komma. Mit diesem einen Schritt findest du schon die meisten Kommas."
+      },
+      {
+        "chapter": "Die Aufzählung",
+        "title": "Dinge aufzählen",
+        "body": "*Im Zoo gibt es Affen**,** Elefanten und Zebras.*\n\nZwischen den Teilen einer **Aufzählung** steht ein Komma.",
+        "say": "Wenn du mehrere gleichartige Dinge hintereinander nennst, ist das eine Aufzählung. Die einzelnen Teile trennst du durch Kommas. Das ist die Regel, die du schon seit der Grundschule kennst. An einer Stelle wird sie aber sehr oft falsch gemacht."
+      },
+      {
+        "title": "Vor und steht kein Komma",
+        "body": "*Äpfel, Birnen **und** Trauben*\n\nDas Wort und ersetzt das letzte Komma.\n\nDasselbe gilt für das Wort oder.",
+        "tasks": [
+          {
+            "text": "Welche Schreibung ist richtig? Wir brauchen Mehl, Eier ___ Zucker.",
+            "choices": [
+              "und",
+              ", und"
+            ],
+            "correct": "und",
+            "why": "Das Wort ersetzt das Komma. Beides zusammen ist zu viel.",
+            "hint": "Was übernimmt in einer Aufzählung die Aufgabe des letzten Kommas?"
+          }
+        ],
+        "say": "Vor dem letzten Teil einer Aufzählung steht meistens und oder oder. Dieses Wort übernimmt die Aufgabe des Kommas. Du brauchst also nicht beides. Äpfel, Birnen, und Trauben ist falsch. Das ist der häufigste Kommafehler überhaupt."
+      },
+      {
+        "title": "Nicht nur Dinge",
+        "body": "*ein kalter**,** nasser**,** grauer Tag*\n\n*Sie lacht**,** tanzt und singt.*\n\nAuch Adjektive und Verben kann man aufzählen.",
+        "say": "Eine Aufzählung muss nicht aus Nomen bestehen. Im ersten Beispiel werden drei Adjektive aufgezählt, die alle den Tag beschreiben. Im zweiten Beispiel werden drei Verben aufgezählt. Die Regel bleibt dieselbe: Kommas dazwischen, aber keins vor und."
+      },
+      {
+        "title": "Jetzt du: Aufzählungen",
+        "body": "Tipp bei jeder Aufgabe auf die richtige Lösung.",
+        "tasks": [
+          {
+            "text": "Ich packe Hose Hemd Socken und Schuhe ein. Es fehlen ___ Kommas.",
+            "choices": [
+              "zwei",
+              "drei"
+            ],
+            "correct": "zwei",
+            "why": "Nach Hose und nach Hemd fehlt je ein Komma. Vor und steht keins.",
+            "hint": "Zähl die Lücken zwischen den Teilen. Lass die Stelle vor und aus."
+          },
+          {
+            "text": "Welcher Satz ist richtig? ___",
+            "choices": [
+              "Er kaufte Brot, Käse und Wurst.",
+              "Er kaufte Brot, Käse, und Wurst."
+            ],
+            "correct": "Er kaufte Brot, Käse und Wurst.",
+            "why": "Vor und steht in einer Aufzählung kein Komma.",
+            "hint": "Schau auf die Stelle vor dem Wort und."
+          },
+          {
+            "text": "Es war ein langer schöner Tag. Ein Komma gehört nach dem Wort ___.",
+            "choices": [
+              "langer",
+              "war"
+            ],
+            "correct": "langer",
+            "why": "Zwei Adjektive werden aufgezählt: lang und schön.",
+            "hint": "Welche beiden Wörter beschreiben den Tag?"
+          }
+        ],
+        "say": "Such in jedem Satz die Teile, die aufgezählt werden. Zwischen ihnen steht ein Komma. Vor und oder oder steht keins."
+      },
+      {
+        "chapter": "Hauptsatz und Nebensatz",
+        "title": "Das Komma an der Grenze",
+        "body": "*Sie bleibt zu Hause**,** weil sie krank ist.*\n\nZwischen Hauptsatz und Nebensatz steht **immer** ein Komma.",
+        "say": "Das ist die wichtigste Kommaregel. Sie gilt ohne Ausnahme. Sobald ein Satz aus einem Hauptsatz und einem Nebensatz besteht, kommt an die Grenze ein Komma. Hier endet der Hauptsatz nach Hause, und der Nebensatz beginnt mit weil."
+      },
+      {
+        "title": "Auch wenn der Nebensatz vorn steht",
+        "body": "*Weil sie krank ist**,** bleibt sie zu Hause.*\n\nDie Grenze liegt jetzt hinter dem Nebensatz.",
+        "tasks": [
+          {
+            "text": "Wenn es regnet bleiben wir drinnen. Das Komma fehlt nach dem Wort ___.",
+            "choices": [
+              "regnet",
+              "bleiben"
+            ],
+            "correct": "regnet",
+            "why": "Dort endet der Nebensatz mit seinem Verb. Danach beginnt der Hauptsatz.",
+            "hint": "Wo endet der Nebensatz? Such sein Verb am Ende."
+          }
+        ],
+        "say": "Der Nebensatz kann auch am Anfang stehen. Dann endet er mit seinem Verb, hier mit ist. Direkt danach kommt das Komma, und dann beginnt der Hauptsatz. Du findest die Stelle leicht, weil zwei Verben nebeneinanderstehen: ist und bleibt."
+      },
+      {
+        "title": "Der Einschub: zwei Kommas",
+        "body": "*Das Haus**,** das alt war**,** wurde verkauft.*\n\nEin Nebensatz mitten im Hauptsatz bekommt **vorn und hinten** ein Komma.",
+        "say": "Manchmal steht der Nebensatz weder vorn noch hinten, sondern in der Mitte. Er unterbricht den Hauptsatz. Dann hat er zwei Grenzen, eine am Anfang und eine am Ende. Stell dir die beiden Kommas wie eine Klammer vor."
+      },
+      {
+        "title": "Das zweite Komma nicht vergessen",
+        "body": "Falsch: *Der Hund, der bellt gehört mir.*\n\nRichtig: *Der Hund, der bellt**,** gehört mir.*",
+        "tasks": [
+          {
+            "text": "Die Frau, die dort steht ist meine Lehrerin. Das zweite Komma fehlt nach dem Wort ___.",
+            "choices": [
+              "steht",
+              "Frau"
+            ],
+            "correct": "steht",
+            "why": "Dort endet der eingeschobene Nebensatz mit seinem Verb.",
+            "hint": "Mit welchem Wort endet der eingeschobene Nebensatz?"
+          }
+        ],
+        "say": "Das erste Komma setzen fast alle. Das zweite wird sehr oft vergessen. Du findest die Stelle wieder über das Verb. Der eingeschobene Nebensatz endet mit seinem Verb, hier mit bellt. Danach kommt das zweite Komma, und der Hauptsatz geht weiter."
+      },
+      {
+        "title": "Wörter, die ein Komma ankündigen",
+        "body": "*weil, dass, wenn, obwohl, als, ob, während, nachdem, damit*\n\nJedes dieser Wörter ist ein **Signalwort**: Hier beginnt ein Nebensatz.",
+        "say": "Diese Konjunktionen leiten Nebensätze ein. Wenn du eine von ihnen siehst, weißt du, dass dort ein Nebensatz anfängt. Vor ihr steht dann ein Komma. Bei der, die und das musst du genauer hinschauen: Ein Komma steht nur davor, wenn ein Relativsatz beginnt."
+      },
+      {
+        "title": "Jetzt du: Hauptsatz und Nebensatz",
+        "body": "Tipp bei jedem Satz auf die richtige Lösung.",
+        "tasks": [
+          {
+            "text": "Ich glaube dass er recht hat. Das Komma fehlt vor dem Wort ___.",
+            "choices": [
+              "dass",
+              "er"
+            ],
+            "correct": "dass",
+            "why": "Mit diesem Wort beginnt der Nebensatz.",
+            "hint": "Mit welchem Wort beginnt der Nebensatz in diesem Satz?"
+          },
+          {
+            "text": "Obwohl es spät war gingen wir spazieren. Das Komma fehlt nach dem Wort ___.",
+            "choices": [
+              "war",
+              "spät"
+            ],
+            "correct": "war",
+            "why": "Der Nebensatz endet mit seinem Verb. Danach beginnt der Hauptsatz.",
+            "hint": "Wo endet der Nebensatz? Such sein Verb."
+          },
+          {
+            "text": "Mein Bruder, der in Köln wohnt kommt morgen. Es fehlt ein Komma nach ___.",
+            "choices": [
+              "wohnt",
+              "Bruder"
+            ],
+            "correct": "wohnt",
+            "why": "Der eingeschobene Relativsatz endet mit seinem Verb und braucht ein zweites Komma.",
+            "hint": "Welches Wort ist das Verb des eingeschobenen Teils?"
+          }
+        ],
+        "say": "Such in jedem Satz zuerst die Verben und dann die Grenze zwischen den Teilsätzen. Denk daran, dass ein eingeschobener Nebensatz zwei Kommas braucht."
+      },
+      {
+        "chapter": "Zwei Hauptsätze, aber und sondern",
+        "title": "Zwei Hauptsätze nebeneinander",
+        "body": "*Tim spielt Fußball**,** Lea liest.*\n\nBeide Sätze könnten allein stehen.\n\nZwischen ihnen steht ein Komma.",
+        "say": "Auch zwei Hauptsätze kann man zu einem Satz verbinden. Jeder von ihnen wäre allein vollständig. Wenn sie ohne Bindewort nebeneinanderstehen, trennt sie ein Komma. Du erkennst diesen Fall wieder an den zwei Verben."
+      },
+      {
+        "title": "Mit und darf das Komma fehlen",
+        "body": "*Das Licht geht aus und die Vorstellung beginnt.*\n\nVerbindet und oder oder zwei Hauptsätze, ist das Komma **freiwillig**.",
+        "say": "Hier gibt es eine Erleichterung. Steht zwischen zwei Hauptsätzen ein und oder ein oder, darfst du das Komma weglassen. Du darfst es auch setzen. Beides ist richtig. In der Prüfung wird an dieser Stelle deshalb kein Komma verlangt."
+      },
+      {
+        "title": "aber, sondern und doch",
+        "body": "*Er ist nicht dumm**,** sondern faul.*\n\n*Sie spielt gern Tennis**,** aber sie hasst Fußball.*\n\nVor aber, sondern, doch und jedoch steht ein Komma.",
+        "tasks": [
+          {
+            "text": "Welche Schreibung ist richtig? Das ist nicht mein Hund ___ der Hund meiner Nachbarin.",
+            "choices": [
+              ", sondern",
+              "sondern"
+            ],
+            "correct": ", sondern",
+            "why": "Vor diesem Wort steht immer ein Komma, weil es einen Gegensatz anzeigt.",
+            "hint": "Zeigt das Wort einen Gegensatz an? Was gilt dann für das Komma?"
+          }
+        ],
+        "say": "Diese vier Wörter zeigen einen Gegensatz an. Der zweite Teil sagt etwas, das zum ersten nicht passt oder ihn einschränkt. Vor ihnen steht immer ein Komma, auch wenn danach gar kein ganzer Satz folgt, wie im ersten Beispiel."
+      },
+      {
+        "title": "Jetzt du: alles gemischt",
+        "body": "Tipp bei jedem Satz auf die richtige Lösung.",
+        "tasks": [
+          {
+            "text": "Ich wollte kommen aber ich hatte keine Zeit. Das Komma fehlt vor ___.",
+            "choices": [
+              "aber",
+              "ich"
+            ],
+            "correct": "aber",
+            "why": "Das Wort zeigt einen Gegensatz an. Davor steht ein Komma.",
+            "hint": "Welches Wort im Satz zeigt einen Gegensatz an?"
+          },
+          {
+            "text": "Sie kaufte Tomaten, Gurken ___ Paprika.",
+            "choices": [
+              "und",
+              ", und"
+            ],
+            "correct": "und",
+            "why": "In einer Aufzählung ersetzt das Wort das letzte Komma.",
+            "hint": "Ist das eine Aufzählung? Was gilt vor dem letzten Teil?"
+          },
+          {
+            "text": "Wir bleiben hier bis der Regen aufhört. Das Komma fehlt vor ___.",
+            "choices": [
+              "bis",
+              "der"
+            ],
+            "correct": "bis",
+            "why": "Mit diesem Wort beginnt der Nebensatz. Sein Verb steht am Ende.",
+            "hint": "Mit welchem Wort beginnt der Teilsatz, dessen Verb am Ende steht?"
+          }
+        ],
+        "say": "Jetzt kommen alle Regeln dieser Lektion vor. Frag dich bei jedem Satz: Ist es eine Aufzählung, ein Nebensatz oder ein Gegensatz mit aber oder sondern?"
+      },
+      {
+        "title": "Deine Reihenfolge",
+        "body": "(1) Die Verben suchen.\n\n(2) Beginnt ein Nebensatz? Dann Komma an die Grenze.\n\n(3) Ist es eine Aufzählung? Dann Kommas dazwischen, keins vor und.\n\n(4) Steht aber oder sondern da? Dann Komma davor.",
+        "tasks": [
+          {
+            "text": "Ein Nebensatz steht mitten im Hauptsatz. Er bekommt ___.",
+            "choices": [
+              "zwei Kommas",
+              "ein Komma"
+            ],
+            "correct": "zwei Kommas",
+            "why": "Er hat eine Grenze am Anfang und eine am Ende.",
+            "hint": "Wie viele Grenzen hat ein Teil, der in der Mitte steht?"
+          }
+        ],
+        "say": "In dieser Reihenfolge gehst du jeden Satz durch. Fang immer bei den Verben an. Wenn du für ein Komma keinen dieser Gründe findest, gehört es wahrscheinlich nicht dorthin. Gleich kommen die Wörter zum Nachlesen und ein kleines Quiz."
+      }
+    ],
+    "vocab": [
+      {
+        "term": "Aufzählung",
+        "plain": "Mehrere gleichartige Wörter oder Wortgruppen hintereinander. Zwischen ihnen steht ein Komma, aber keins vor und.",
+        "example": "Affen, Elefanten und Zebras"
+      },
+      {
+        "term": "Signalwort",
+        "plain": "Ein Wort, das einen Nebensatz ankündigt. Davor steht ein Komma.",
+        "example": "weil, dass, wenn, obwohl"
+      },
+      {
+        "term": "Einschub",
+        "plain": "Ein Nebensatz mitten im Hauptsatz. Er bekommt vorn und hinten ein Komma.",
+        "example": "Das Haus, das alt war, wurde verkauft."
+      },
+      {
+        "term": "aber, sondern, doch, jedoch",
+        "plain": "Wörter, die einen Gegensatz anzeigen. Vor ihnen steht ein Komma."
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Welcher Satz ist richtig?",
+        "choices": [
+          "Wir kauften Äpfel, Birnen und Trauben.",
+          "Wir kauften Äpfel, Birnen, und Trauben.",
+          "Wir kauften Äpfel Birnen und Trauben.",
+          "Wir kauften, Äpfel, Birnen und Trauben."
+        ],
+        "correct": "Wir kauften Äpfel, Birnen und Trauben.",
+        "explain": "In einer Aufzählung stehen Kommas zwischen den Teilen. Vor und steht kein Komma."
+      },
+      {
+        "prompt": "Ich komme später weil ich noch lernen muss. Wo fehlt das Komma?",
+        "choices": [
+          "vor weil",
+          "nach weil",
+          "vor später",
+          "nach lernen"
+        ],
+        "correct": "vor weil",
+        "explain": "Mit weil beginnt der Nebensatz. Das Komma steht an der Grenze, also davor."
+      },
+      {
+        "prompt": "Als wir ankamen war das Haus leer. Wo fehlt das Komma?",
+        "choices": [
+          "nach ankamen",
+          "nach Als",
+          "nach war",
+          "vor leer"
+        ],
+        "correct": "nach ankamen",
+        "explain": "Der Nebensatz steht vorn und endet mit seinem Verb ankamen. Danach beginnt der Hauptsatz."
+      },
+      {
+        "prompt": "Das Buch, das ich lese ist spannend. Was fehlt?",
+        "choices": [
+          "ein Komma nach lese",
+          "ein Komma nach ist",
+          "ein Komma nach Das",
+          "nichts"
+        ],
+        "correct": "ein Komma nach lese",
+        "explain": "Der Relativsatz ist eingeschoben und braucht zwei Kommas: eines vorn und eines nach seinem Verb."
+      },
+      {
+        "prompt": "Er ist nicht krank sondern nur müde. Wo fehlt das Komma?",
+        "choices": [
+          "vor sondern",
+          "nach sondern",
+          "nach ist",
+          "nirgends"
+        ],
+        "correct": "vor sondern",
+        "explain": "Sondern zeigt einen Gegensatz an. Vor sondern, aber, doch und jedoch steht ein Komma."
+      },
+      {
+        "prompt": "Vor welchem Wort steht in einer Aufzählung kein Komma?",
+        "choices": [
+          "und",
+          "weil",
+          "aber",
+          "dass"
+        ],
+        "correct": "und",
+        "explain": "Das Wort und ersetzt in einer Aufzählung das letzte Komma. Dasselbe gilt für oder."
+      },
+      {
+        "prompt": "Woran erkennst du, wie viele Teilsätze ein Satz hat?",
+        "choices": [
+          "an der Zahl der Verben",
+          "an der Zahl der Wörter",
+          "an den Pausen beim Sprechen",
+          "an der Zahl der Nomen"
+        ],
+        "correct": "an der Zahl der Verben",
+        "explain": "Zu jedem Verb gehört ein Teilsatz. Zwischen den Teilsätzen stehen die Kommas."
+      },
+      {
+        "prompt": "Das Licht ging aus und der Film begann. Muss hier ein Komma stehen?",
+        "choices": [
+          "Nein, es ist freiwillig.",
+          "Ja, immer.",
+          "Ja, zwei Kommas.",
+          "Nein, es wäre ein Fehler."
+        ],
+        "correct": "Nein, es ist freiwillig.",
+        "explain": "Verbindet und zwei Hauptsätze, darf das Komma stehen oder fehlen. Beides ist richtig."
+      }
+    ]
+  }
+]

@@ -1,0 +1,395 @@
+[
+  {
+    "id": "P_DE_KOMMA2",
+    "subject": "DE",
+    "title": "Kommas 2: Gruppen mit zu und die wörtliche Rede",
+    "teaser": "Wann eine Gruppe mit zu und einem Verb ein Komma bekommt, wie die Zeichen bei der wörtlichen Rede stehen und wie die Kommaregeln heißen, damit du sie in der Prüfung benennen kannst.",
+    "hook": "Die häufigsten Kommas kennst du schon. Jetzt kommen zwei Fälle dazu, die in der Prüfung besonders gern gefragt werden. Der erste sind kleine Gruppen mit dem Wort zu. Der zweite ist die wörtliche Rede mit ihren Anführungszeichen. Beide folgen klaren Regeln, die wir uns in Ruhe ansehen.",
+    "outro": "Du kennst jetzt alle Kommaregeln, die im MSA vorkommen. Bei einer Gruppe mit zu achtest du auf die drei Signale. Bei der wörtlichen Rede steht vorn ein Doppelpunkt und hinten ein Komma nach dem Anführungszeichen. Und du kannst jede Regel beim Namen nennen.",
+    "standard": 2,
+    "requires": [
+      "P_DE_WORTARTEN",
+      "P_DE_WORTARTEN2",
+      "P_DE_SATZGLIEDER",
+      "P_DE_SATZ",
+      "P_DE_KOMMA1"
+    ],
+    "steps": [
+      {
+        "chapter": "Gruppen mit zu und einem Verb",
+        "title": "zu und ein Verb",
+        "body": "*Er hofft, den Zug **zu erreichen**.*\n\nEine Gruppe mit zu und einem Verb im Infinitiv heißt **Infinitivgruppe**.",
+        "say": "Schau auf das Ende des Satzes. Dort steht zu und dahinter ein Verb in der Grundform. Alles, was dazugehört, bildet zusammen eine Gruppe: den Zug zu erreichen. Diese Gruppe hat einen eigenen Namen, weil sie eigene Kommaregeln hat."
+      },
+      {
+        "title": "Sie hat kein eigenes Subjekt",
+        "body": "*… den Zug zu erreichen*\n\nWer den Zug erreichen will, steht in dieser Gruppe nicht.\n\nDeshalb ist sie kein Nebensatz.",
+        "say": "Das unterscheidet die Infinitivgruppe von einem Nebensatz. In einem Nebensatz steht, wer etwas tut: weil er den Zug erreicht. In der Infinitivgruppe fehlt diese Person. Das Verb gehört zu niemandem und steht deshalb im Infinitiv."
+      },
+      {
+        "title": "Signal 1: um, ohne, anstatt",
+        "body": "*Er spart, **um** ein Fahrrad zu kaufen.*\n\n*Sie ging, **ohne** sich zu verabschieden.*\n\nBeginnt die Gruppe mit um, ohne, statt, anstatt, außer oder als, steht ein Komma.",
+        "tasks": [
+          {
+            "text": "Welche Schreibung ist richtig? Er rannte ___ den Bus zu erreichen.",
+            "choices": [
+              ", um",
+              "um"
+            ],
+            "correct": ", um",
+            "why": "Die Gruppe beginnt mit einem einleitenden Wort. Davor steht ein Komma.",
+            "hint": "Mit welchem Wort beginnt die Gruppe? Ist das eines der Signale?"
+          }
+        ],
+        "say": "Es gibt drei Signale, die ein Komma verlangen. Das erste ist ein einleitendes Wort am Anfang der Gruppe. Am häufigsten ist um. Wenn du um und weiter hinten zu siehst, gehört vor um ein Komma. Bei ohne und anstatt ist es genauso."
+      },
+      {
+        "title": "Signal 2: ein Nomen davor",
+        "body": "*Ihr **Plan**, im Ausland zu studieren, ist mutig.*\n\nDie Gruppe erklärt das Nomen Plan.\n\nDann steht ein Komma, hier sogar zwei.",
+        "say": "Das zweite Signal ist ein Nomen direkt vor der Gruppe. Die Gruppe sagt genauer, was mit dem Nomen gemeint ist. Welcher Plan? Der Plan, im Ausland zu studieren. Weil die Gruppe hier mitten im Satz steht, bekommt sie vorn und hinten ein Komma."
+      },
+      {
+        "title": "Signal 3: ein Hinweiswort",
+        "body": "*Er liebt **es**, früh aufzustehen.*\n\n*Ich freue mich **darauf**, dich zu sehen.*\n\nDie Wörter es, das, daran, darauf und davon weisen auf die Gruppe hin.",
+        "tasks": [
+          {
+            "text": "Ich denke daran das Fenster zu schließen. Das Komma fehlt nach dem Wort ___.",
+            "choices": [
+              "daran",
+              "Fenster"
+            ],
+            "correct": "daran",
+            "why": "Das Hinweiswort weist auf die Gruppe voraus. Danach steht ein Komma.",
+            "hint": "Welches Wort im Hauptsatz weist auf die Gruppe mit zu voraus?"
+          }
+        ],
+        "say": "Das dritte Signal ist ein kleines Wort im Hauptsatz, das auf die Gruppe vorausweist. Im ersten Beispiel liebt er es, und dieses es steht für das frühe Aufstehen. Wenn so ein Hinweiswort dasteht, gehört vor die Infinitivgruppe ein Komma."
+      },
+      {
+        "title": "Ohne Signal ist das Komma freiwillig",
+        "body": "*Er hofft zu gewinnen.*\n\n*Er hofft, zu gewinnen.*\n\nBeides ist richtig.",
+        "say": "Wenn keines der drei Signale da ist, darfst du das Komma setzen oder weglassen. In der Prüfung wird dann kein Komma verlangt. Du musst dir also nur die drei Signale merken: ein einleitendes Wort, ein Nomen davor oder ein Hinweiswort."
+      },
+      {
+        "title": "Jetzt du: Welches Signal ist es?",
+        "body": "Tipp bei jedem Satz auf das Signal, das ein Komma verlangt.",
+        "tasks": [
+          {
+            "text": "Sie kam, um uns zu helfen. Das Signal ist ___.",
+            "choices": [
+              "das einleitende Wort um",
+              "das Wort uns"
+            ],
+            "correct": "das einleitende Wort um",
+            "why": "Die Gruppe beginnt mit um. Das ist das erste Signal.",
+            "hint": "Mit welchem Wort beginnt die Gruppe nach dem Komma?"
+          },
+          {
+            "text": "Sein Wunsch, Pilot zu werden, ist alt. Das Signal ist ___.",
+            "choices": [
+              "das Nomen Wunsch",
+              "das Wort zu"
+            ],
+            "correct": "das Nomen Wunsch",
+            "why": "Die Gruppe erklärt genauer, welcher Wunsch gemeint ist.",
+            "hint": "Welches Wort steht direkt vor dem ersten Komma?"
+          },
+          {
+            "text": "Vergiss es nicht, die Tür abzuschließen. Das Signal ist ___.",
+            "choices": [
+              "das Hinweiswort es",
+              "das Wort nicht"
+            ],
+            "correct": "das Hinweiswort es",
+            "why": "Das kleine Wort weist auf die Gruppe voraus.",
+            "hint": "Welches kleine Wort im ersten Teil steht für die ganze Gruppe danach?"
+          }
+        ],
+        "say": "In jedem Satz steht eine Gruppe mit zu, und das Komma ist schon gesetzt. Deine Aufgabe ist es zu sagen, warum es dort steht. Such nach einem der drei Signale."
+      },
+      {
+        "chapter": "Die wörtliche Rede",
+        "title": "Was jemand genau sagt",
+        "body": "*Lena sagt: „Ich komme morgen.“*\n\nIn den **Anführungszeichen** steht genau das, was Lena sagt.\n\nDas nennt man **wörtliche Rede**.",
+        "say": "Wenn du aufschreibst, was jemand wörtlich gesagt hat, setzt du es in Anführungszeichen. Am Anfang stehen sie unten, am Ende stehen sie oben. Alles dazwischen sind die Worte der Person, genau so, wie sie gesprochen wurden."
+      },
+      {
+        "title": "Der Begleitsatz",
+        "body": "***Lena sagt:** „Ich komme morgen.“*\n\nDer Teil, der verrät, wer spricht, heißt **Begleitsatz**.",
+        "say": "Zur wörtlichen Rede gehört fast immer ein kleiner Satz, der sagt, wer spricht. Er begleitet die Rede, daher sein Name. Der Begleitsatz kann vor der Rede stehen oder danach. Davon hängt ab, welche Zeichen du setzt."
+      },
+      {
+        "title": "Begleitsatz vorn: Doppelpunkt",
+        "body": "*Lena sagt**:** „Ich komme morgen.“*\n\nNach dem Begleitsatz steht ein Doppelpunkt.\n\nDie Rede beginnt mit einem großen Buchstaben.",
+        "tasks": [
+          {
+            "text": "Tom fragt „Wo bist du?“ Nach dem Wort fragt fehlt ___.",
+            "choices": [
+              "ein Doppelpunkt",
+              "ein Komma"
+            ],
+            "correct": "ein Doppelpunkt",
+            "why": "Der Begleitsatz steht vorn und kündigt die Rede an.",
+            "hint": "Steht der Begleitsatz vor oder nach der Rede? Welches Zeichen kündigt etwas an?"
+          }
+        ],
+        "say": "Steht der Begleitsatz vorn, kündigt er die Rede an. Dafür nimmst du einen Doppelpunkt. Danach kommen die Anführungszeichen, und das erste Wort der Rede schreibst du groß. Der Punkt am Ende gehört zur Rede und steht vor dem Anführungszeichen."
+      },
+      {
+        "title": "Begleitsatz hinten: Komma",
+        "body": "*„Ich komme morgen“**,** sagt Lena.*\n\nDer Punkt der Rede fällt weg.\n\nNach dem Anführungszeichen steht ein Komma.",
+        "say": "Steht der Begleitsatz hinten, ändert sich zweierlei. Der Punkt am Ende der Rede verschwindet. Dafür kommt nach dem schließenden Anführungszeichen ein Komma. Der Begleitsatz beginnt dann mit einem kleinen Buchstaben, weil der ganze Satz noch weitergeht."
+      },
+      {
+        "title": "Fragezeichen und Ausrufezeichen bleiben",
+        "body": "*„Kommst du mit?“**,** fragt er.*\n\n*„Pass auf!“**,** ruft sie.*\n\nDas Komma kommt trotzdem dazu.",
+        "tasks": [
+          {
+            "text": "„Wo bist du?“ fragt Tom. Nach dem Anführungszeichen fehlt ___.",
+            "choices": [
+              "ein Komma",
+              "nichts"
+            ],
+            "correct": "ein Komma",
+            "why": "Der Begleitsatz steht hinten. Das Komma kommt auch nach einem Fragezeichen.",
+            "hint": "Wo steht der Begleitsatz? Welches Zeichen trennt ihn dann von der Rede?"
+          }
+        ],
+        "say": "Ein Punkt fällt weg, aber ein Fragezeichen oder ein Ausrufezeichen bleibt stehen. Sonst wüsste man ja nicht mehr, dass es eine Frage oder ein Ruf war. Das Komma nach dem Anführungszeichen setzt du trotzdem. Es stehen dann drei Zeichen hintereinander."
+      },
+      {
+        "title": "Das Komma steht außen",
+        "body": "Falsch: *„Ich komme,“ sagte sie.*\n\nRichtig: *„Ich komme“**,** sagte sie.*",
+        "say": "Dieser Fehler kommt oft aus englischen Büchern, denn dort steht das Komma innen. Im Deutschen steht es außen, also nach dem schließenden Anführungszeichen. Das Komma gehört nicht zu dem, was die Person gesagt hat. Es trennt die Rede vom Begleitsatz."
+      },
+      {
+        "title": "Jetzt du: wörtliche Rede",
+        "body": "Tipp bei jeder Aufgabe auf den richtig geschriebenen Satz.",
+        "tasks": [
+          {
+            "text": "Welcher Satz ist richtig? ___",
+            "choices": [
+              "Mia ruft: „Warte auf mich!“",
+              "Mia ruft, „Warte auf mich!“"
+            ],
+            "correct": "Mia ruft: „Warte auf mich!“",
+            "why": "Der Begleitsatz steht vorn. Dann folgt ein Doppelpunkt.",
+            "hint": "Wo steht der Begleitsatz in diesem Satz?"
+          },
+          {
+            "text": "Welcher Satz ist richtig? ___",
+            "choices": [
+              "„Ich bin müde“, sagt Ben.",
+              "„Ich bin müde.“ sagt Ben."
+            ],
+            "correct": "„Ich bin müde“, sagt Ben.",
+            "why": "Der Punkt fällt weg, und das Komma steht nach dem Anführungszeichen.",
+            "hint": "Was passiert mit dem Punkt der Rede, wenn der Begleitsatz hinten steht?"
+          },
+          {
+            "text": "Welcher Satz ist richtig? ___",
+            "choices": [
+              "„Hast du Zeit?“, fragt sie.",
+              "„Hast du Zeit“, fragt sie."
+            ],
+            "correct": "„Hast du Zeit?“, fragt sie.",
+            "why": "Das Fragezeichen bleibt stehen, und das Komma kommt dazu.",
+            "hint": "Darf das Fragezeichen wegfallen, wenn der Begleitsatz hinten steht?"
+          }
+        ],
+        "say": "Schau bei jedem Satz zuerst, ob der Begleitsatz vorn oder hinten steht. Vorn kommt ein Doppelpunkt. Hinten kommt ein Komma, und zwar nach dem Anführungszeichen."
+      },
+      {
+        "chapter": "Die Regeln beim Namen nennen",
+        "title": "Die Namen der Regeln",
+        "body": "**Aufzählung**: *Äpfel, Birnen und Trauben*\n**Satzreihe**: zwei Hauptsätze\n**Satzgefüge**: Hauptsatz und Nebensatz\n**Einschub**: ein Nebensatz in der Mitte\n**Infinitivgruppe**: Gruppe mit zu\n**Entgegenstellung**: aber, sondern",
+        "say": "In der Prüfung sollst du manchmal nicht nur das Komma setzen, sondern auch die Regel nennen. Dafür brauchst du diese sechs Namen. Zwei davon sind neu: Eine Satzreihe sind zwei Hauptsätze nebeneinander. Ein Satzgefüge ist ein Hauptsatz mit einem Nebensatz."
+      },
+      {
+        "title": "Jetzt du: die Regel benennen",
+        "body": "Tipp bei jedem Satz auf den Namen der Regel.",
+        "tasks": [
+          {
+            "text": "Ich lese, weil es regnet. Die Regel heißt ___.",
+            "choices": [
+              "Satzgefüge",
+              "Aufzählung"
+            ],
+            "correct": "Satzgefüge",
+            "why": "Ein Hauptsatz und ein Nebensatz stehen zusammen.",
+            "hint": "Welche zwei Arten von Teilsätzen stehen hier nebeneinander?"
+          },
+          {
+            "text": "Wir kaufen Brot, Milch und Käse. Die Regel heißt ___.",
+            "choices": [
+              "Aufzählung",
+              "Satzreihe"
+            ],
+            "correct": "Aufzählung",
+            "why": "Drei gleichartige Dinge werden hintereinander genannt.",
+            "hint": "Werden hier Dinge hintereinander genannt, oder stehen zwei Sätze da?"
+          },
+          {
+            "text": "Er ist nicht müde, sondern hungrig. Die Regel heißt ___.",
+            "choices": [
+              "Entgegenstellung",
+              "Einschub"
+            ],
+            "correct": "Entgegenstellung",
+            "why": "Das Wort sondern zeigt einen Gegensatz an.",
+            "hint": "Welches Wort steht direkt nach dem Komma?"
+          }
+        ],
+        "say": "Das Komma steht schon da. Überleg bei jedem Satz, welcher der sechs Gründe dahintersteckt. Die Tafel davor hilft dir, wenn du unsicher bist."
+      },
+      {
+        "title": "Ein ganzer Satz, Schritt für Schritt",
+        "body": "*Als es klingelte, lief Mia, die gerade kochte, zur Tür.*\n\nErstes Komma: Satzgefüge.\nZweites und drittes Komma: Einschub.",
+        "say": "Ich gehe den Satz einmal für dich durch. Ich finde drei Verben: klingelte, lief und kochte. Als es klingelte ist ein Nebensatz, der vorn steht. Danach kommt ein Komma. Die gerade kochte ist ein Relativsatz mitten im Hauptsatz. Er bekommt zwei Kommas."
+      },
+      {
+        "title": "Das nimmst du mit",
+        "body": "(1) Gruppe mit zu: Komma bei **um, ohne, anstatt**, bei einem **Nomen** davor oder bei einem **Hinweiswort**.\n\n(2) Begleitsatz vorn: **Doppelpunkt**.\n\n(3) Begleitsatz hinten: **Komma** nach dem Anführungszeichen.",
+        "tasks": [
+          {
+            "text": "Sie ging, ohne ein Wort zu sagen. Das Komma steht wegen des Wortes ___.",
+            "choices": [
+              "ohne",
+              "Wort"
+            ],
+            "correct": "ohne",
+            "why": "Das ist eines der einleitenden Wörter, die ein Komma verlangen.",
+            "hint": "Mit welchem Wort beginnt die Gruppe nach dem Komma?"
+          }
+        ],
+        "say": "Das waren die letzten beiden Kommaregeln. Zusammen mit der ersten Lektion hast du jetzt alles, was die Prüfung zu den Kommas verlangt. Gleich kommen noch die Wörter zum Nachlesen und ein kleines Quiz."
+      }
+    ],
+    "vocab": [
+      {
+        "term": "Infinitivgruppe",
+        "plain": "Eine Gruppe mit zu und einem Verb im Infinitiv. Sie hat kein eigenes Subjekt.",
+        "example": "den Zug zu erreichen"
+      },
+      {
+        "term": "um, ohne, anstatt",
+        "plain": "Einleitende Wörter. Beginnt eine Infinitivgruppe mit einem von ihnen, steht ein Komma."
+      },
+      {
+        "term": "Hinweiswort",
+        "plain": "Ein kleines Wort wie es, das, daran oder darauf, das auf die Infinitivgruppe vorausweist."
+      },
+      {
+        "term": "wörtliche Rede",
+        "plain": "Genau das, was jemand sagt. Sie steht in Anführungszeichen."
+      },
+      {
+        "term": "Begleitsatz",
+        "plain": "Der Teil, der verrät, wer spricht.",
+        "example": "Lena sagt:"
+      },
+      {
+        "term": "Satzreihe",
+        "plain": "Zwei Hauptsätze nebeneinander."
+      },
+      {
+        "term": "Satzgefüge",
+        "plain": "Ein Hauptsatz zusammen mit einem Nebensatz."
+      },
+      {
+        "term": "Entgegenstellung",
+        "plain": "Ein Gegensatz mit aber, sondern, doch oder jedoch."
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Er übt jeden Tag um besser zu werden. Wo fehlt das Komma?",
+        "choices": [
+          "vor um",
+          "nach um",
+          "vor besser",
+          "nirgends"
+        ],
+        "correct": "vor um",
+        "explain": "Die Infinitivgruppe beginnt mit dem einleitenden Wort um. Davor steht ein Komma."
+      },
+      {
+        "prompt": "Ihr Traum, Ärztin zu werden, wurde wahr. Warum stehen hier Kommas?",
+        "choices": [
+          "Die Gruppe erklärt das Nomen Traum.",
+          "Wegen des Wortes um.",
+          "Weil es eine Aufzählung ist.",
+          "Wegen der wörtlichen Rede."
+        ],
+        "correct": "Die Gruppe erklärt das Nomen Traum.",
+        "explain": "Vor der Infinitivgruppe steht ein Nomen, das sie genauer erklärt. Weil sie mitten im Satz steht, bekommt sie zwei Kommas."
+      },
+      {
+        "prompt": "Er hofft zu gewinnen. Muss hier ein Komma stehen?",
+        "choices": [
+          "Nein, es ist freiwillig.",
+          "Ja, vor zu.",
+          "Ja, nach hofft und nach zu.",
+          "Nein, es wäre falsch."
+        ],
+        "correct": "Nein, es ist freiwillig.",
+        "explain": "Es gibt kein Signal: kein einleitendes Wort, kein Nomen davor und kein Hinweiswort. Dann ist das Komma freiwillig."
+      },
+      {
+        "prompt": "Welcher Satz ist richtig?",
+        "choices": [
+          "Paul sagt: „Ich habe Hunger.“",
+          "Paul sagt, „Ich habe Hunger.“",
+          "Paul sagt „Ich habe Hunger.“",
+          "Paul sagt: „ich habe Hunger.“"
+        ],
+        "correct": "Paul sagt: „Ich habe Hunger.“",
+        "explain": "Steht der Begleitsatz vorn, folgt ein Doppelpunkt. Die Rede beginnt mit einem großen Buchstaben."
+      },
+      {
+        "prompt": "Welcher Satz ist richtig?",
+        "choices": [
+          "„Ich habe Hunger“, sagt Paul.",
+          "„Ich habe Hunger,“ sagt Paul.",
+          "„Ich habe Hunger.“ sagt Paul.",
+          "„Ich habe Hunger“ sagt Paul."
+        ],
+        "correct": "„Ich habe Hunger“, sagt Paul.",
+        "explain": "Steht der Begleitsatz hinten, fällt der Punkt weg. Das Komma steht nach dem schließenden Anführungszeichen."
+      },
+      {
+        "prompt": "„Kommst du mit?“ fragt Lea. Was fehlt?",
+        "choices": [
+          "ein Komma nach dem Anführungszeichen",
+          "ein Doppelpunkt",
+          "ein Punkt",
+          "nichts"
+        ],
+        "correct": "ein Komma nach dem Anführungszeichen",
+        "explain": "Das Fragezeichen bleibt stehen, aber das Komma zwischen Rede und Begleitsatz kommt trotzdem dazu."
+      },
+      {
+        "prompt": "Wie heißt die Kommaregel in: Ich weiß, dass du recht hast?",
+        "choices": [
+          "Satzgefüge",
+          "Satzreihe",
+          "Aufzählung",
+          "Entgegenstellung"
+        ],
+        "correct": "Satzgefüge",
+        "explain": "Ein Hauptsatz und ein Nebensatz bilden zusammen ein Satzgefüge."
+      },
+      {
+        "prompt": "Wie heißt die Kommaregel in: Tim malt, Lea liest?",
+        "choices": [
+          "Satzreihe",
+          "Satzgefüge",
+          "Einschub",
+          "Infinitivgruppe"
+        ],
+        "correct": "Satzreihe",
+        "explain": "Zwei Hauptsätze stehen nebeneinander. Das nennt man Satzreihe."
+      }
+    ]
+  }
+]

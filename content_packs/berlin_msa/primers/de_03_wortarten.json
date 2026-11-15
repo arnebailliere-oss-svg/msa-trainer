@@ -2,81 +2,593 @@
   {
     "id": "P_DE_WORTARTEN",
     "subject": "DE",
-    "title": "Wortarten und Satzglieder von Anfang an",
-    "teaser": "Welche Jobs Wörter im Satz haben, wie du sie erkennst und welche Fragen die Satzglieder finden",
-    "hook": "Nomen, Verb, Adjektiv: Diese Wörter hast du schon hundertmal gehört. Aber was tun sie eigentlich? Ich zeige es dir wie bei einer Mannschaft: Jeder hat seinen Job, und am Job erkennst du ihn.",
-    "outro": "Artikelprobe, Steigerungsprobe, Stellvertreter, Verhältniswort, Bindewort. Und für die Satzglieder die vier Fragen. Damit kannst du jede Grammatikaufgabe lesen.",
+    "title": "Wortarten 1: die großen drei und ihre Begleiter",
+    "teaser": "Was eine Wortart ist und wie du Nomen, Verben und Adjektive sicher erkennst. Dazu die Artikel und die Pronomen. Für jede Wortart gibt es eine einfache Probe.",
+    "hook": "Diese Fachwörter hast du im Unterricht schon hundertmal gehört. Vielleicht hat dir aber nie jemand in Ruhe gezeigt, was dahintersteckt. Das holen wir jetzt nach. Wir fangen bei einem einzigen kurzen Satz an und schauen uns an, was jedes Wort darin eigentlich tut.",
+    "outro": "Du kennst jetzt fünf Wortarten und für jede eine Probe. Ein Nomen erkennst du daran, dass der, die oder das davor passt. Ein Verb verändert sich mit der Person und der Zeit. Ein Adjektiv kannst du steigern. In der nächsten Lektion kommen die kleinen Wörter dazu, die Sätze zusammenhalten.",
+    "standard": 2,
     "steps": [
       {
-        "title": "Wörter haben Jobs",
-        "body": "Jedes Wort im Satz hat einen **Job**.\n\nDer Job heißt **Wortart**.",
-        "say": "Wie in einer Mannschaft: Torwart, Verteidiger, Stürmer. Wer was macht, erkennt man an der Aufgabe."
+        "chapter": "Wörter haben Aufgaben",
+        "title": "Ein Satz ist wie eine Mannschaft",
+        "body": "*Der kleine Hund bellt laut.*\n\nFünf Wörter, und jedes hat eine andere **Aufgabe**.\n\nDie Aufgabe eines Wortes nennt man seine **Wortart**.",
+        "say": "Stell dir eine Fußballmannschaft vor. Da gibt es einen Torwart, Verteidiger und Stürmer. Jeder hat seine Aufgabe, und an der Aufgabe erkennst du ihn. Bei den Wörtern in einem Satz ist es genauso. Jedes Wort hat eine Aufgabe, und danach bekommt es seinen Namen."
       },
       {
-        "title": "Nomen: Dinge, Menschen, Tiere, Gefühle",
-        "body": "**Hund**, **Lehrerin**, **Freude**, **Berlin**\n\nMan kann **der, die, das** davorsetzen.\n\nImmer **groß**.",
-        "say": "Artikelprobe: Passt der, die oder das davor? Dann ist es ein Nomen. Auch bei Gefühlen wie die Freude."
+        "title": "Drei Wortarten zuerst",
+        "body": "**Nomen** geben etwas einen Namen.\n\n**Verben** sagen, was passiert.\n\n**Adjektive** sagen, wie etwas ist.",
+        "tasks": [
+          {
+            "text": "Der kleine Hund bellt. Welches Wort sagt, was passiert? ___",
+            "choices": [
+              "bellt",
+              "Hund",
+              "kleine"
+            ],
+            "correct": "bellt",
+            "why": "Das Bellen ist das, was in diesem Satz geschieht.",
+            "hint": "Frag dich: Was tut der Hund? Das Wort, das darauf antwortet, suchst du."
+          }
+        ],
+        "say": "Mit diesen drei fangen wir an, weil sie die wichtigsten sind. Im Satz von eben ist Hund das Nomen, denn es benennt ein Tier. Bellt ist das Verb, denn es sagt, was passiert. Und klein ist ein Adjektiv, denn es sagt, wie der Hund ist."
       },
       {
-        "title": "Verb: was passiert",
-        "body": "**laufen**, **denken**, **sein**, **haben**\n\nVerben verändern sich:\n\nich lauf**e**, du läuf**st**, er lief",
-        "say": "Das Verb ist das Herz des Satzes. Ohne Verb kein Satz."
+        "title": "Wozu du das brauchst",
+        "body": "Wer Nomen erkennt, schreibt richtig **groß**.\n\nWer Verben findet, setzt die **Kommas** richtig.\n\nUnd die Prüfung fragt direkt danach.",
+        "say": "Wortarten sind kein Selbstzweck. Fast jede Regel der deutschen Rechtschreibung hängt an ihnen. Nomen schreibt man groß, also musst du sie erkennen. Kommas stehen zwischen Satzteilen, und die findest du über die Verben. Es lohnt sich deshalb, hier genau zu sein."
       },
       {
-        "title": "Adjektiv: wie etwas ist",
-        "body": "**schnell**, **rot**, **müde**\n\nSteht oft vor dem Nomen: das rot**e** Auto\n\nKann gesteigert werden: schnell, schneller, am schnellsten",
-        "say": "Steigerungsprobe: Kann man es steigern? Dann ist es ein Adjektiv."
+        "title": "Jetzt du: ein erstes Sortieren",
+        "body": "Tipp bei jedem Satz auf das gesuchte Wort.",
+        "tasks": [
+          {
+            "text": "Die Katze schläft. Welches Wort gibt etwas einen Namen? ___",
+            "choices": [
+              "Katze",
+              "schläft"
+            ],
+            "correct": "Katze",
+            "why": "Katze benennt ein Tier. Schläft sagt, was das Tier tut.",
+            "hint": "Welches der beiden Wörter kannst du streicheln?"
+          },
+          {
+            "text": "Das Wasser war kalt. Welches Wort sagt, wie etwas war? ___",
+            "choices": [
+              "kalt",
+              "Wasser",
+              "war"
+            ],
+            "correct": "kalt",
+            "why": "Das Wort beschreibt eine Eigenschaft des Wassers.",
+            "hint": "Frag dich: Wie war das Wasser? Welches Wort antwortet darauf?"
+          },
+          {
+            "text": "Tom rennt schnell. Welches Wort sagt, was passiert? ___",
+            "choices": [
+              "rennt",
+              "Tom",
+              "schnell"
+            ],
+            "correct": "rennt",
+            "why": "Das Rennen ist das, was Tom tut.",
+            "hint": "Frag dich: Was tut Tom gerade?"
+          }
+        ],
+        "say": "Du brauchst noch keine Fachwörter. Frag dich bei jedem Satz nur: Welches Wort gibt etwas einen Namen? Welches sagt, was passiert? Und welches sagt, wie etwas ist?"
       },
       {
-        "title": "Artikel: die Begleiter",
-        "body": "**der, die, das** (bestimmt)\n\n**ein, eine** (unbestimmt)\n\nSie stehen vor Nomen.",
-        "say": "Kleine Wörter mit großem Nutzen: Sie verraten dir das Nomen."
+        "chapter": "Das Nomen",
+        "title": "Nomen geben Namen",
+        "body": "*Hund, Lehrerin, Tisch, Berlin*\n\nEin **Nomen** gibt Lebewesen, Dingen und Orten einen Namen.",
+        "say": "Alles, was es auf der Welt gibt, hat einen Namen. Dein Hund, deine Lehrerin, der Tisch vor dir und die Stadt, in der du wohnst. Diese Namen sind Nomen. Manche sagen dazu auch Hauptwort oder Namenwort. Gemeint ist immer dasselbe."
       },
       {
-        "title": "Pronomen: Stellvertreter",
-        "body": "**ich, du, er, sie, wir**\n\n**mein, dein, sein**\n\n**dieser, jener, welcher**\n\nStehen **anstelle** eines Nomens.",
-        "say": "Pro-nomen heißt: für das Nomen. Statt „Tom lacht“ sagst du „Er lacht“."
+        "title": "Auch was man nicht anfassen kann",
+        "body": "*Freude, Angst, Zeit, Idee*\n\nAuch Gefühle und Gedanken haben Namen.\n\nEs sind ebenfalls Nomen.",
+        "tasks": [
+          {
+            "text": "Welches Wort ist ein Nomen? ___",
+            "choices": [
+              "Mut",
+              "mutig",
+              "wagen"
+            ],
+            "correct": "Mut",
+            "why": "Das Wort ist der Name für eine Eigenschaft, die jemand hat.",
+            "hint": "Welches der drei Wörter ist ein Name für etwas? Achte auch auf den Anfangsbuchstaben."
+          }
+        ],
+        "say": "Hier wird es etwas schwieriger. Einen Hund kannst du sehen und anfassen. Freude kannst du nicht anfassen. Trotzdem hat dieses Gefühl einen Namen, und deshalb ist auch Freude ein Nomen. Dasselbe gilt für Angst, Zeit, Glück und Idee."
       },
       {
-        "title": "Präposition: Verhältniswörter",
-        "body": "**in, auf, unter, mit, nach, vor, zu**\n\nSagen, **wo**, **wann** oder **wie**:\n\n*auf* dem Tisch, *nach* der Schule, *mit* dem Bus",
-        "say": "Präpositionen stehen vor Nomen oder Pronomen. Kleine Wörter, große Wirkung."
+        "title": "Die Probe: der, die, das",
+        "body": "**der** Hund, **die** Freude, **das** Haus\n\nPasst der, die oder das davor, ist es ein Nomen.\n\nDiese kleinen Wörter heißen **Artikel**.",
+        "say": "Wenn du unsicher bist, machst du die Probe mit dem Artikel. Du stellst der, die oder das vor das Wort. Der Hund klingt richtig. Die Freude auch. Der schnell klingt dagegen falsch. Also ist schnell kein Nomen. Diese Probe funktioniert fast immer."
       },
       {
-        "title": "Konjunktion: Bindewörter",
-        "body": "**und, oder, aber, weil, dass, wenn, obwohl**\n\nVerbinden Wörter oder Sätze.",
-        "say": "Weil, dass, wenn und obwohl leiten Nebensätze ein. Vor ihnen steht ein Komma."
+        "title": "Nomen schreibt man groß",
+        "body": "der **H**und, die **F**reude, das **H**aus\n\nIm Deutschen beginnt jedes Nomen mit einem großen Buchstaben.",
+        "tasks": [
+          {
+            "text": "Wir hatten große ___.",
+            "choices": [
+              "Angst",
+              "angst"
+            ],
+            "correct": "Angst",
+            "why": "Die Probe passt: die Angst. Es ist ein Nomen und wird großgeschrieben.",
+            "hint": "Mach die Probe: Passt der, die oder das vor das Wort?"
+          }
+        ],
+        "say": "Das ist eine Besonderheit der deutschen Sprache. In den meisten anderen Sprachen schreibt man nur Namen von Menschen und Orten groß. Im Deutschen schreibt man alle Nomen groß. Deshalb ist es so wichtig, dass du sie erkennst."
       },
       {
-        "title": "Adverb: nähere Umstände",
-        "body": "**heute, dort, sehr, gern, leider**\n\nVerändern sich **nicht**.\n\nSagen wo, wann, wie.",
-        "say": "Adverbien sehen manchmal wie Adjektive aus. Unterschied: Man kann sie nicht beugen und nicht steigern."
+        "title": "Einzahl und Mehrzahl",
+        "body": "ein Hund, zwei Hund**e**\n\nDie Einzahl heißt **Singular**.\n\nDie Mehrzahl heißt **Plural**.",
+        "tasks": [
+          {
+            "text": "Der Plural von Haus heißt ___.",
+            "choices": [
+              "Häuser",
+              "Hause"
+            ],
+            "correct": "Häuser",
+            "why": "Aus einem Haus werden mehrere, und das a bekommt zwei Punkte.",
+            "hint": "Wie sagst du, wenn es drei davon gibt?"
+          }
+        ],
+        "say": "Von fast jedem Nomen gibt es zwei Formen. Eine für ein einzelnes Ding und eine für mehrere. Der Singular ist die Einzahl, der Plural ist die Mehrzahl. Diese beiden Fachwörter begegnen dir in der Schule ständig, auch im Englischunterricht."
       },
       {
-        "title": "Satzglieder: die vier Fragen",
-        "body": "**Wer oder was?** → Subjekt\n\n**Was tut es?** → Prädikat (das Verb)\n\n**Wen oder was? Wem?** → Objekt\n\n**Wo, wann, wie, warum?** → Adverbiale",
-        "say": "Satzglieder sind größer als Wortarten: ganze Wortgruppen. Diese Fragen findest du in jeder Prüfung."
+        "title": "Jetzt du: Nomen finden",
+        "body": "Tipp in jedem Satz auf das Nomen.",
+        "tasks": [
+          {
+            "text": "Morgen schreiben wir einen Test. ___",
+            "choices": [
+              "Test",
+              "Morgen",
+              "schreiben"
+            ],
+            "correct": "Test",
+            "why": "Die Probe passt: der Test. Morgen sagt hier nur, wann es passiert.",
+            "hint": "Vor welches der Wörter passt hier der, die oder das?"
+          },
+          {
+            "text": "Ihre Hoffnung war groß. ___",
+            "choices": [
+              "Hoffnung",
+              "groß",
+              "war"
+            ],
+            "correct": "Hoffnung",
+            "why": "Die Probe passt: die Hoffnung. Es ist der Name für ein Gefühl.",
+            "hint": "Welches Wort ist der Name für ein Gefühl?"
+          },
+          {
+            "text": "Leise fiel der Schnee. ___",
+            "choices": [
+              "Schnee",
+              "Leise",
+              "fiel"
+            ],
+            "correct": "Schnee",
+            "why": "Der Artikel steht sogar schon davor: der Schnee.",
+            "hint": "Vor welchem Wort steht schon ein Artikel?"
+          }
+        ],
+        "say": "In jedem Satz steckt genau ein Nomen. Mach bei jedem Wort die Probe mit dem Artikel, wenn du unsicher bist. Und denk daran, dass auch Gefühle Nomen sein können."
+      },
+      {
+        "chapter": "Das Verb",
+        "title": "Verben sagen, was passiert",
+        "body": "*laufen, lachen, schlafen, regnen*\n\nEin **Verb** sagt, was jemand tut oder was geschieht.",
+        "say": "Das Verb ist das Herz jedes Satzes. Ohne Verb passiert in einem Satz nichts. In der Grundschule hieß es Tuwort oder Tunwort. Es sagt, was jemand tut, zum Beispiel laufen oder lachen. Es sagt auch, was einfach geschieht, zum Beispiel regnen."
+      },
+      {
+        "title": "Auch sein und haben sind Verben",
+        "body": "Ich **bin** müde.\n\nSie **hat** Hunger.\n\nHier tut niemand etwas. Trotzdem sind es Verben.",
+        "tasks": [
+          {
+            "text": "Der Himmel ist blau. Das Verb heißt: ___",
+            "choices": [
+              "ist",
+              "blau",
+              "Himmel"
+            ],
+            "correct": "ist",
+            "why": "Das Wort gehört zu sein. Es verändert sich, wenn du den Satz in die Vergangenheit setzt.",
+            "hint": "Setz den Satz in die Vergangenheit. Welches Wort verändert sich dabei?"
+          }
+        ],
+        "say": "Diese beiden werden oft übersehen, weil niemand dabei etwas tut. Sein und haben sind aber Verben, sogar die häufigsten der deutschen Sprache. Sie haben viele Formen: bin, bist, ist, sind, war, hat, hatte. Wenn du nach dem Verb suchst, vergiss sie nicht."
+      },
+      {
+        "title": "Verben verändern sich",
+        "body": "ich lach**e**\ndu lach**st**\ner lach**t**\n\nGestern lach**te** ich.\n\nDas Verb passt sich an die Person und an die Zeit an.",
+        "say": "Daran erkennst du ein Verb am sichersten. Es sieht bei jeder Person anders aus, und es verändert sich mit der Zeit. Kein Nomen und kein Adjektiv macht das. Wenn du also nicht weißt, welches Wort das Verb ist, setz den Satz in die Vergangenheit und schau, was sich ändert."
+      },
+      {
+        "title": "Die Grundform",
+        "body": "*lachen, gehen, sein*\n\nSo steht das Verb im Wörterbuch.\n\nDiese Form heißt **Infinitiv**. Sie endet fast immer auf -en.",
+        "tasks": [
+          {
+            "text": "Er lief nach Hause. Der Infinitiv des Verbs heißt ___.",
+            "choices": [
+              "laufen",
+              "lief"
+            ],
+            "correct": "laufen",
+            "why": "Das ist die Grundform, wie sie im Wörterbuch steht.",
+            "hint": "Unter welchem Wort würdest du im Wörterbuch nachschlagen?"
+          }
+        ],
+        "say": "Jedes Verb hat eine Grundform, in der es noch zu keiner Person gehört. Das ist der Infinitiv. Im Wörterbuch findest du ein Verb immer unter dieser Form. Du suchst also nicht läuft, sondern laufen."
+      },
+      {
+        "title": "Jetzt du: Verben finden",
+        "body": "Tipp in jedem Satz auf das Verb.",
+        "tasks": [
+          {
+            "text": "Meine Schwester singt gern. ___",
+            "choices": [
+              "singt",
+              "Schwester",
+              "gern"
+            ],
+            "correct": "singt",
+            "why": "Das Singen ist das, was sie tut. Gestern hieße es sang.",
+            "hint": "Was tut die Schwester? Welches Wort würde sich in der Vergangenheit ändern?"
+          },
+          {
+            "text": "Wir haben keine Zeit. ___",
+            "choices": [
+              "haben",
+              "Zeit",
+              "keine"
+            ],
+            "correct": "haben",
+            "why": "Das Wort gehört zu den häufigsten Verben. Gestern hieße es hatten.",
+            "hint": "Setz den Satz in die Vergangenheit. Welches Wort ändert sich?"
+          },
+          {
+            "text": "Draußen regnet es. ___",
+            "choices": [
+              "regnet",
+              "Draußen",
+              "es"
+            ],
+            "correct": "regnet",
+            "why": "Hier tut niemand etwas, aber es geschieht etwas.",
+            "hint": "Was geschieht draußen? Welches Wort sagt das?"
+          }
+        ],
+        "say": "Such in jedem Satz das Wort, das sich verändern würde, wenn du den Satz in eine andere Zeit setzt. Denk auch an sein und haben."
+      },
+      {
+        "chapter": "Das Adjektiv",
+        "title": "Adjektive sagen, wie etwas ist",
+        "body": "*schnell, rot, müde, freundlich*\n\nEin **Adjektiv** beschreibt eine Eigenschaft.",
+        "say": "Mit einem Adjektiv sagst du genauer, wie jemand oder etwas ist. Das Auto ist schnell, die Jacke ist rot, das Kind ist müde. In der Grundschule hieß das Wiewort, weil es auf die Frage wie antwortet. Wie ist das Auto? Schnell."
+      },
+      {
+        "title": "Zwei Plätze im Satz",
+        "body": "das **rote** Auto\nHier steht das Adjektiv vor dem Nomen.\n\nDas Auto ist **rot**.\nHier steht es nach dem Verb sein.",
+        "tasks": [
+          {
+            "text": "Der Tee war heiß. Das Adjektiv heißt: ___",
+            "choices": [
+              "heiß",
+              "Tee",
+              "war"
+            ],
+            "correct": "heiß",
+            "why": "Das Wort beschreibt, wie der Tee war.",
+            "hint": "Frag dich: Wie war der Tee? Welches Wort antwortet darauf?"
+          }
+        ],
+        "say": "Ein Adjektiv kann an zwei Stellen stehen. Vor einem Nomen bekommt es eine Endung: das rote Auto, ein roter Ball. Nach sein bleibt es ohne Endung: Das Auto ist rot. In beiden Fällen ist es dasselbe Adjektiv."
+      },
+      {
+        "title": "Die Probe: steigern",
+        "body": "*schnell, schneller, am schnellsten*\n\nKannst du ein Wort so steigern, ist es ein Adjektiv.",
+        "tasks": [
+          {
+            "text": "Welches Wort kannst du steigern? ___",
+            "choices": [
+              "klein",
+              "Tisch",
+              "laufen"
+            ],
+            "correct": "klein",
+            "why": "Es gibt eine zweite und eine dritte Stufe davon. Das geht nur bei Adjektiven.",
+            "hint": "Probier bei jedem Wort, ob es eine Stufe mit -er am Ende gibt."
+          }
+        ],
+        "say": "Auch für Adjektive gibt es eine Probe. Du versuchst, das Wort zu steigern. Schnell, schneller, am schnellsten: Das geht. Tisch, tischer, am tischsten: Das geht nicht. Also ist Tisch kein Adjektiv. Diese Probe hilft dir vor allem dann, wenn ein Wort auch ein Verb sein könnte."
+      },
+      {
+        "title": "Adjektive schreibt man klein",
+        "body": "Das war ein **s**chöner Tag.\nSchöner ist ein Adjektiv.\n\nDie **S**chönheit der Berge.\nSchönheit ist ein Nomen.",
+        "tasks": [
+          {
+            "text": "Das war ein ___ Tag.",
+            "choices": [
+              "schöner",
+              "Schöner"
+            ],
+            "correct": "schöner",
+            "why": "Das Wort beschreibt den Tag. Es ist ein Adjektiv und wird kleingeschrieben.",
+            "hint": "Sagt das Wort, wie der Tag war? Und passt ein Artikel davor?"
+          }
+        ],
+        "say": "Adjektive beginnen mit einem kleinen Buchstaben. Pass aber auf Wörter auf, die sich ähnlich sehen. Schön ist ein Adjektiv. Die Schönheit ist ein Nomen, denn der Artikel passt davor. Mach im Zweifel immer beide Proben."
+      },
+      {
+        "title": "Jetzt du: alle drei gemischt",
+        "body": "Tipp bei jedem Wort auf die richtige Wortart.",
+        "tasks": [
+          {
+            "text": "Die Suppe schmeckt salzig. Das Wort salzig ist ___.",
+            "choices": [
+              "ein Adjektiv",
+              "ein Nomen",
+              "ein Verb"
+            ],
+            "correct": "ein Adjektiv",
+            "why": "Du kannst es steigern: salzig, salziger, am salzigsten.",
+            "hint": "Kannst du das Wort steigern, so wie schnell und schneller?"
+          },
+          {
+            "text": "Die Suppe schmeckt salzig. Das Wort schmeckt ist ___.",
+            "choices": [
+              "ein Verb",
+              "ein Nomen",
+              "ein Adjektiv"
+            ],
+            "correct": "ein Verb",
+            "why": "In der Vergangenheit hieße es schmeckte. Es verändert sich mit der Zeit.",
+            "hint": "Welches Wort ändert sich, wenn die Suppe gestern auf dem Tisch stand?"
+          },
+          {
+            "text": "Die Suppe schmeckt salzig. Das Wort Suppe ist ___.",
+            "choices": [
+              "ein Nomen",
+              "ein Verb",
+              "ein Adjektiv"
+            ],
+            "correct": "ein Nomen",
+            "why": "Der Artikel steht schon davor, und es wird großgeschrieben.",
+            "hint": "Vor welchem Wort steht der Artikel die?"
+          }
+        ],
+        "say": "Jetzt sind Nomen, Verben und Adjektive gemischt. Du hast für jede Wortart eine Probe: den Artikel, die Vergangenheit und das Steigern. Probier sie der Reihe nach aus."
+      },
+      {
+        "chapter": "Artikel und Pronomen",
+        "title": "Artikel begleiten das Nomen",
+        "body": "**der, die, das**\nDas sind die bestimmten Artikel.\n\n**ein, eine**\nDas sind die unbestimmten Artikel.",
+        "say": "Die Artikel kennst du schon von der Probe für Nomen. Sie stehen vor einem Nomen und begleiten es. Der bestimmte Artikel meint etwas Bestimmtes: der Hund von nebenan. Der unbestimmte Artikel meint irgendeinen: ein Hund."
+      },
+      {
+        "title": "Pronomen stehen für ein Nomen",
+        "body": "*Tom lacht. **Er** lacht.*\n\nStatt den Namen zu wiederholen, sagst du er.\n\nSo ein Wort heißt **Pronomen**.",
+        "tasks": [
+          {
+            "text": "Lena liest ein Buch. ___ liest ein Buch.",
+            "choices": [
+              "Sie",
+              "Er"
+            ],
+            "correct": "Sie",
+            "why": "Lena ist ein Mädchen. Für ein Mädchen steht dieses Pronomen.",
+            "hint": "Welches kleine Wort benutzt du, wenn du über ein Mädchen sprichst?"
+          }
+        ],
+        "say": "Pro bedeutet für. Ein Pronomen steht also für ein Nomen. Ohne Pronomen müsstest du jeden Namen ständig wiederholen. Tom lacht, Tom steht auf, Tom geht. Mit Pronomen klingt es viel besser: Tom lacht, er steht auf, er geht."
+      },
+      {
+        "title": "Pronomen, die zeigen, wem etwas gehört",
+        "body": "**mein** Hund, **dein** Buch, **ihr** Fahrrad\n\nDiese Pronomen stehen vor dem Nomen, wie ein Artikel.\n\nSie zeigen, wem etwas gehört.",
+        "say": "Es gibt verschiedene Arten von Pronomen. Ich, du, er und sie stehen allein. Mein, dein, sein und ihr stehen vor einem Nomen und sagen, wem etwas gehört. Beide Arten heißen Pronomen. In der Prüfung reicht dieser eine Name."
+      },
+      {
+        "title": "Jetzt du: Artikel und Pronomen",
+        "body": "Tipp bei jedem Satz auf die richtige Lösung.",
+        "tasks": [
+          {
+            "text": "Der Hund bellt. ___ bellt.",
+            "choices": [
+              "Er",
+              "Es"
+            ],
+            "correct": "Er",
+            "why": "Es heißt der Hund. Dazu passt dieses Pronomen.",
+            "hint": "Welcher Artikel steht vor Hund? Welches Pronomen gehört dazu?"
+          },
+          {
+            "text": "Welches Wort ist ein Artikel? ___",
+            "choices": [
+              "eine",
+              "ich",
+              "schnell"
+            ],
+            "correct": "eine",
+            "why": "Das Wort begleitet ein Nomen, zum Beispiel vor Katze oder Blume.",
+            "hint": "Welches der drei Wörter kannst du vor Katze oder Blume setzen?"
+          },
+          {
+            "text": "Das Fahrrad gehört mir. Es ist ___ Fahrrad.",
+            "choices": [
+              "mein",
+              "ich"
+            ],
+            "correct": "mein",
+            "why": "Dieses Pronomen zeigt, dass etwas dem Sprecher gehört.",
+            "hint": "Wie sagst du, wenn dir etwas gehört?"
+          }
+        ],
+        "say": "Überleg bei jeder Aufgabe, welche Aufgabe das gesuchte Wort hat. Begleitet es ein Nomen, steht es für ein Nomen, oder zeigt es, wem etwas gehört?"
+      },
+      {
+        "title": "Das nimmst du mit",
+        "body": "**Nomen**: der, die oder das passt davor.\n**Verb**: Es verändert sich mit Person und Zeit.\n**Adjektiv**: Du kannst es steigern.\n**Artikel**: Er begleitet ein Nomen.\n**Pronomen**: Es steht für ein Nomen.",
+        "tasks": [
+          {
+            "text": "Mit welcher Probe erkennst du ein Adjektiv? ___",
+            "choices": [
+              "Ich steigere das Wort.",
+              "Ich setze der, die oder das davor."
+            ],
+            "correct": "Ich steigere das Wort.",
+            "why": "Nur Adjektive haben eine zweite und dritte Stufe.",
+            "hint": "Welche Probe gehört zu schnell, schneller, am schnellsten?"
+          }
+        ],
+        "say": "Das sind die fünf Wortarten dieser Lektion mit ihren Proben. Lies die Liste einmal langsam durch. Gleich kommen noch die Wörter zum Nachlesen und ein kleines Quiz. Danach kennst du schon mehr als die Hälfte aller Wortarten."
       }
     ],
     "vocab": [
-      { "term": "Wortart", "plain": "Der Job eines Wortes im Satz.", "example": "Nomen, Verb, Adjektiv …" },
-      { "term": "Nomen", "plain": "Dinge, Menschen, Tiere, Gefühle. Artikelprobe, groß.", "example": "die Freude" },
-      { "term": "Verb", "plain": "Was passiert. Verändert sich nach der Person.", "example": "ich gehe, du gehst" },
-      { "term": "Adjektiv", "plain": "Wie etwas ist. Steigerbar.", "example": "schnell, schneller" },
-      { "term": "Artikel", "plain": "Begleiter des Nomens.", "example": "der, die, das, ein" },
-      { "term": "Pronomen", "plain": "Stellvertreter für ein Nomen.", "example": "er, sie, mein, dieser" },
-      { "term": "Präposition", "plain": "Verhältniswort: wo, wann, wie.", "example": "in, auf, mit, nach" },
-      { "term": "Konjunktion", "plain": "Bindewort.", "example": "und, weil, dass" },
-      { "term": "Subjekt", "plain": "Wer oder was?", "example": "**Der Hund** bellt." },
-      { "term": "Prädikat", "plain": "Was tut das Subjekt? Das Verb.", "example": "Der Hund **bellt**." },
-      { "term": "Objekt", "plain": "Wen oder was? Wem?", "example": "Er sieht **den Hund**." }
+      {
+        "term": "Wortart",
+        "plain": "Die Aufgabe, die ein Wort im Satz hat. Danach bekommt es seinen Namen."
+      },
+      {
+        "term": "Nomen",
+        "plain": "Gibt Lebewesen, Dingen, Orten, Gefühlen und Gedanken einen Namen. Wird großgeschrieben.",
+        "example": "der Hund, die Freude"
+      },
+      {
+        "term": "Verb",
+        "plain": "Sagt, was jemand tut oder was geschieht. Verändert sich mit Person und Zeit.",
+        "example": "lachen, sein, haben"
+      },
+      {
+        "term": "Adjektiv",
+        "plain": "Sagt, wie jemand oder etwas ist. Lässt sich steigern.",
+        "example": "schnell, schneller, am schnellsten"
+      },
+      {
+        "term": "Artikel",
+        "plain": "Begleitet ein Nomen.",
+        "example": "der, die, das, ein, eine"
+      },
+      {
+        "term": "Pronomen",
+        "plain": "Steht für ein Nomen oder zeigt, wem etwas gehört.",
+        "example": "er, sie, mein, dein"
+      },
+      {
+        "term": "Infinitiv",
+        "plain": "Die Grundform des Verbs, wie sie im Wörterbuch steht.",
+        "example": "laufen"
+      },
+      {
+        "term": "Singular / Plural",
+        "plain": "Einzahl und Mehrzahl.",
+        "example": "ein Hund, zwei Hunde"
+      }
     ],
     "quiz": [
-      { "prompt": "Welche Wortart ist „Freude“?", "choices": ["Nomen", "Verb", "Adjektiv", "Pronomen"], "correct": "Nomen", "explain": "Artikelprobe: die Freude. Und es ist großgeschrieben." },
-      { "prompt": "Welche Wortart ist „schnell“ in „ein schnelles Auto“?", "choices": ["Adjektiv", "Nomen", "Verb", "Artikel"], "correct": "Adjektiv", "explain": "Es sagt, wie das Auto ist, und lässt sich steigern." },
-      { "prompt": "„Er lacht.“ Welche Wortart ist „er“?", "choices": ["Pronomen", "Nomen", "Artikel", "Adverb"], "correct": "Pronomen", "explain": "Es steht anstelle eines Namens." },
-      { "prompt": "Mit welcher Frage findest du das Subjekt?", "choices": ["Wer oder was?", "Wen oder was?", "Wo?", "Wann?"], "correct": "Wer oder was?", "explain": "Wer oder was tut etwas? Das ist das Subjekt." },
-      { "prompt": "Welches Wort ist eine Konjunktion?", "choices": ["weil", "auf", "schnell", "Hund"], "correct": "weil", "explain": "weil verbindet Sätze und leitet einen Nebensatz ein." }
+      {
+        "prompt": "Welche Wortart ist das Wort Freude?",
+        "choices": [
+          "Nomen",
+          "Verb",
+          "Adjektiv",
+          "Pronomen"
+        ],
+        "correct": "Nomen",
+        "explain": "Die Probe mit dem Artikel passt: die Freude. Auch Gefühle haben einen Namen und sind Nomen."
+      },
+      {
+        "prompt": "Mit welcher Probe erkennst du ein Nomen?",
+        "choices": [
+          "Ich setze der, die oder das davor.",
+          "Ich steigere das Wort.",
+          "Ich setze es in die Vergangenheit.",
+          "Ich zähle die Buchstaben."
+        ],
+        "correct": "Ich setze der, die oder das davor.",
+        "explain": "Vor ein Nomen passt ein Artikel. Steigern kann man nur Adjektive, und nur Verben haben eine Vergangenheit."
+      },
+      {
+        "prompt": "Wir waren gestern im Kino. Welches Wort ist das Verb?",
+        "choices": [
+          "waren",
+          "gestern",
+          "Kino",
+          "im"
+        ],
+        "correct": "waren",
+        "explain": "Waren gehört zu sein. Sein und haben sind Verben, auch wenn dabei niemand etwas tut."
+      },
+      {
+        "prompt": "Welche Wortart ist schnell in dem Satz: Ein schnelles Auto fuhr vorbei?",
+        "choices": [
+          "Adjektiv",
+          "Nomen",
+          "Verb",
+          "Artikel"
+        ],
+        "correct": "Adjektiv",
+        "explain": "Das Wort sagt, wie das Auto ist, und du kannst es steigern: schnell, schneller, am schnellsten."
+      },
+      {
+        "prompt": "Er lacht. Welche Wortart ist das Wort er?",
+        "choices": [
+          "Pronomen",
+          "Artikel",
+          "Nomen",
+          "Adjektiv"
+        ],
+        "correct": "Pronomen",
+        "explain": "Er steht für ein Nomen, zum Beispiel für Tom. Wörter, die für ein Nomen stehen, sind Pronomen."
+      },
+      {
+        "prompt": "Wie heißt die Grundform eines Verbs?",
+        "choices": [
+          "Infinitiv",
+          "Plural",
+          "Singular",
+          "Artikel"
+        ],
+        "correct": "Infinitiv",
+        "explain": "Der Infinitiv ist die Form, unter der du ein Verb im Wörterbuch findest, zum Beispiel laufen."
+      },
+      {
+        "prompt": "Welches Wort musst du großschreiben?",
+        "choices": [
+          "die Hoffnung",
+          "hoffen",
+          "hoffnungsvoll",
+          "hoffentlich"
+        ],
+        "correct": "die Hoffnung",
+        "explain": "Hoffnung ist ein Nomen, denn der Artikel passt davor. Nomen schreibt man im Deutschen groß."
+      },
+      {
+        "prompt": "Welches Wort ist ein Artikel?",
+        "choices": [
+          "das",
+          "wir",
+          "groß",
+          "Haus"
+        ],
+        "correct": "das",
+        "explain": "Ein Artikel begleitet ein Nomen: das Haus. Wir ist ein Pronomen, groß ein Adjektiv und Haus ein Nomen."
+      },
+      {
+        "prompt": "Mein Bruder schläft. Welche Aufgabe hat das Wort mein?",
+        "choices": [
+          "Es zeigt, wem etwas gehört.",
+          "Es sagt, was passiert.",
+          "Es sagt, wie etwas ist.",
+          "Es ist der Name für ein Ding."
+        ],
+        "correct": "Es zeigt, wem etwas gehört.",
+        "explain": "Mein ist ein Pronomen, das vor einem Nomen steht. Es zeigt, zu wem der Bruder gehört."
+      }
     ]
   }
 ]

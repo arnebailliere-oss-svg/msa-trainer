@@ -2,79 +2,370 @@
   {
     "id": "P_DE_SATZ",
     "subject": "DE",
-    "title": "Hauptsatz, Nebensatz, Komma",
-    "teaser": "Was ein Satzteil ist, woran du einen Nebensatz erkennst und warum das Komma genau dort sitzt",
-    "hook": "Kommas sind kein Ratespiel. Ein Satz besteht aus Teilen, und das Komma sitzt an der Grenze zwischen zwei Teilen. Wenn du die Teile findest, findest du das Komma. Ich zeige dir, wie man sie findet.",
-    "outro": "Verben zählen, Signalwörter suchen, Komma an die Grenze. Jetzt kannst du die sechs Regeln in der Lektion lesen, ohne dass sie wie Zauberei klingen.",
+    "title": "Hauptsatz und Nebensatz",
+    "teaser": "Wie du einen Satz in seine Teile zerlegst, woran du einen Hauptsatz und einen Nebensatz erkennst und was ein Relativsatz ist. Das ist die Grundlage für alle Kommaregeln.",
+    "hook": "Viele Sätze bestehen aus mehreren Teilen, und zwischen diesen Teilen stehen später die Kommas. Bevor wir aber über Kommas reden, musst du die Teile sehen können. Das ist gar nicht schwer, denn es gibt ein Wort, das dir jeden Teil verrät. Du kennst es schon aus der Lektion über die Wortarten.",
+    "outro": "Du kannst jetzt einen Satz in Teilsätze zerlegen, indem du die Verben zählst. Du weißt, dass ein Hauptsatz allein stehen kann und dass im Nebensatz das Verb am Ende steht. Und du erkennst einen Relativsatz daran, dass er ein Nomen genauer erklärt. Damit bist du bereit für die Kommas.",
+    "standard": 2,
+    "requires": [
+      "P_DE_WORTARTEN",
+      "P_DE_WORTARTEN2"
+    ],
     "steps": [
       {
-        "title": "Ein Satz braucht ein Verb",
-        "body": "Jeder Satz hat ein **Verb** (Tuwort).\n\nIch **lese**. Der Hund **bellt**.\n\nOhne Verb ist es kein Satz.",
-        "say": "Das Verb sagt, was passiert. Wenn du Kommas setzen willst, musst du als Erstes die Verben finden."
+        "chapter": "Ein Verb, ein Teilsatz",
+        "title": "Jeder Satz braucht ein Verb",
+        "body": "Ich **lese**.\n\nDer Hund **bellt**.\n\nOhne Verb gibt es keinen Satz.",
+        "say": "Fangen wir mit dem Kleinsten an. Ein Satz kann aus nur zwei Wörtern bestehen, aber eins davon muss ein Verb sein. Das Verb sagt, was geschieht. Wenn du einen Satz untersuchen willst, suchst du deshalb immer zuerst das Verb."
       },
       {
-        "title": "Ein Verb, ein Satzteil",
-        "body": "Ich lese ein Buch, weil es regnet.\n\nZwei Verben: **lese**, **regnet**\n\nAlso zwei Teilsätze.",
-        "say": "Zähl die Verben. So viele Teilsätze hat der Satz. Und zwischen Teilsätze gehört meistens ein Komma."
+        "title": "Zwei Verben, zwei Teile",
+        "body": "Ich **lese** ein Buch, weil es **regnet**.\n\nHier stehen zwei Verben, also hat der Satz zwei Teile.\n\nJeder Teil heißt **Teilsatz**.",
+        "tasks": [
+          {
+            "text": "Ich gehe raus, wenn die Sonne scheint. Der Satz hat ___ Teilsätze.",
+            "choices": [
+              "zwei",
+              "drei"
+            ],
+            "correct": "zwei",
+            "why": "Es gibt zwei Verben: gehe und scheint. Zu jedem gehört ein Teilsatz.",
+            "hint": "Zähl die Verben im Satz. Wie viele findest du?"
+          }
+        ],
+        "say": "In diesem Satz passieren zwei Dinge. Ich lese, und es regnet. Zu jedem Verb gehört ein eigener Teil des Satzes. So einen Teil nennt man Teilsatz. Die Regel ist ganz einfach: So viele Verben, so viele Teilsätze."
       },
       {
+        "title": "Aufpassen bei zweiteiligen Verben",
+        "body": "Ich **habe** lange **geschlafen**.\n\nDas sind zwei Wörter, aber nur **ein** Verb: schlafen.\n\nDer Satz hat einen Teilsatz.",
+        "say": "Hier musst du genau hinschauen. Habe und geschlafen gehören zusammen und bilden gemeinsam die Vergangenheit von schlafen. Du zählst sie als ein Verb. Frag dich immer: Wie viele verschiedene Dinge geschehen in diesem Satz? Hier ist es nur eins."
+      },
+      {
+        "title": "Jetzt du: Teilsätze zählen",
+        "body": "Tipp bei jedem Satz auf die richtige Zahl.",
+        "tasks": [
+          {
+            "text": "Tom lacht laut. Der Satz hat ___.",
+            "choices": [
+              "einen Teilsatz",
+              "zwei Teilsätze"
+            ],
+            "correct": "einen Teilsatz",
+            "why": "Es gibt nur ein Verb: lacht. Also gibt es nur einen Teilsatz.",
+            "hint": "Wie viele Dinge geschehen in diesem kurzen Satz?"
+          },
+          {
+            "text": "Sie sagt, dass sie müde ist. Der Satz hat ___.",
+            "choices": [
+              "zwei Teilsätze",
+              "einen Teilsatz"
+            ],
+            "correct": "zwei Teilsätze",
+            "why": "Es gibt zwei Verben: sagt und ist. Zu jedem gehört ein Teilsatz.",
+            "hint": "Zähl die Verben. Denk daran, dass auch sein ein Verb ist."
+          },
+          {
+            "text": "Wir sind gestern ins Kino gegangen. Der Satz hat ___.",
+            "choices": [
+              "einen Teilsatz",
+              "zwei Teilsätze"
+            ],
+            "correct": "einen Teilsatz",
+            "why": "Sind und gegangen gehören zusammen. Es geschieht nur eine Sache.",
+            "hint": "Gehören die beiden Verbteile zusammen, oder geschehen zwei verschiedene Dinge?"
+          }
+        ],
+        "say": "Such in jedem Satz die Verben. Zähl dabei, wie viele verschiedene Dinge geschehen. Wörter wie habe und ist können zu einem zweiten Wort am Satzende gehören."
+      },
+      {
+        "chapter": "Hauptsatz und Nebensatz",
         "title": "Der Hauptsatz",
-        "body": "Ein **Hauptsatz** kann allein stehen.\n\n*Ich lese ein Buch.*\n\nDas Verb steht an **zweiter** Stelle.",
-        "say": "Hauptsatz heißt: Er braucht niemanden. Er ist fertig, so wie er ist."
+        "body": "*Ich lese ein Buch.*\n\nDieser Satz kann **allein** stehen.\n\nEr heißt **Hauptsatz**.",
+        "say": "Lies den Satz und frag dich, ob etwas fehlt. Es fehlt nichts. Der Satz ist fertig und verständlich. So einen Satz nennt man Hauptsatz. Er braucht keinen anderen Satz neben sich."
+      },
+      {
+        "title": "Im Hauptsatz steht das Verb an zweiter Stelle",
+        "body": "Ich | **lese** | ein Buch.\n\nHeute | **lese** | ich ein Buch.\n\nEgal, was vorn steht: Das Verb kommt als Zweites.",
+        "tasks": [
+          {
+            "text": "Im Hauptsatz steht das Verb an ___ Stelle.",
+            "choices": [
+              "zweiter",
+              "letzter"
+            ],
+            "correct": "zweiter",
+            "why": "Vor dem Verb steht genau ein Satzglied, danach kommt der Rest.",
+            "hint": "Schau auf die beiden Beispiele. An welcher Stelle steht lese?"
+          }
+        ],
+        "say": "Das ist das Erkennungszeichen des Hauptsatzes. Du kannst den Satz umstellen, wie du willst. Das Verb bleibt immer an der zweiten Stelle. Vorn kann ich stehen oder heute oder im Garten, aber danach kommt sofort das Verb."
       },
       {
         "title": "Der Nebensatz",
-        "body": "Ein **Nebensatz** kann nicht allein stehen.\n\n*… weil es regnet.*\n\nDas Verb steht ganz am **Ende**.",
-        "say": "Sag mal nur „weil es regnet“. Da fehlt etwas. Genau das ist ein Nebensatz."
+        "body": "*… weil es regnet.*\n\nSag das einmal ganz allein. Es fehlt etwas.\n\nDieser Teil heißt **Nebensatz**.",
+        "say": "Probier es aus und sag nur: weil es regnet. Dein Gegenüber wartet darauf, dass du weitersprichst. Ein Nebensatz ist allein nicht vollständig. Er braucht einen Hauptsatz, an den er sich anlehnen kann."
       },
       {
-        "title": "Die Signalwörter",
-        "body": "Nebensätze beginnen mit:\n\n**weil, dass, ob, wenn, obwohl, während, als, nachdem, damit**\n\noder mit **der, die, das** (Relativsatz).",
-        "say": "Siehst du eins dieser Wörter, weißt du: Hier beginnt ein Nebensatz. Davor kommt ein Komma."
+        "title": "Im Nebensatz steht das Verb am Ende",
+        "body": "… weil es **regnet**.\n\n… dass sie müde **ist**.\n\n… wenn ich Zeit **habe**.",
+        "tasks": [
+          {
+            "text": "Welcher Nebensatz ist richtig gebaut? ___",
+            "choices": [
+              "weil ich müde bin",
+              "weil ich bin müde"
+            ],
+            "correct": "weil ich müde bin",
+            "why": "Im Nebensatz steht das Verb ganz am Ende.",
+            "hint": "An welcher Stelle muss das Verb im Nebensatz stehen?"
+          }
+        ],
+        "say": "Das ist das Erkennungszeichen des Nebensatzes. Das Verb wandert ganz ans Ende. Halte den Hauptsatz daneben: Ich habe Zeit. Im Nebensatz heißt es: wenn ich Zeit habe. Wenn du das Verb am Ende eines Teilsatzes findest, ist es ein Nebensatz."
       },
       {
-        "title": "Das Komma dazwischen",
-        "body": "Ich lese ein Buch**,** weil es regnet.\n\nWeil es regnet**,** lese ich ein Buch.\n\nHauptsatz und Nebensatz werden **immer** durch ein Komma getrennt.",
-        "say": "Egal, welcher vorne steht. Das Komma sitzt an der Grenze."
+        "title": "Drei Zeichen für einen Nebensatz",
+        "body": "(1) Er beginnt oft mit **weil, dass, wenn, obwohl, als** oder **ob**.\n\n(2) Das Verb steht am Ende.\n\n(3) Er kann nicht allein stehen.",
+        "say": "Mit diesen drei Zeichen erkennst du jeden Nebensatz. Das erste Wort ist meistens eine Konjunktion. Das Verb steht am Ende. Und wenn du den Teil allein sprichst, klingt er unfertig. Meistens treffen alle drei Zeichen gleichzeitig zu."
       },
       {
-        "title": "Zwei Hauptsätze",
-        "body": "Tim spielt Fußball**,** Lea liest.\n\nZwei Sätze, die allein stehen könnten.\n\nAuch dazwischen: Komma.",
-        "say": "Das nennt man Satzreihe. Mit „und“ dazwischen darf das Komma auch wegfallen."
+        "title": "Der Nebensatz kann vorn stehen",
+        "body": "***Weil es regnet,** lese ich ein Buch.*\n\nDer Nebensatz steht jetzt am Anfang.\n\nDer Hauptsatz danach beginnt mit dem Verb.",
+        "say": "Nebensätze müssen nicht hinten stehen. Sie können auch ganz vorn stehen. An den drei Zeichen ändert das nichts. Weil es regnet beginnt mit einer Konjunktion, das Verb steht am Ende, und allein ist der Teil unfertig."
       },
       {
-        "title": "Die Aufzählung",
-        "body": "Äpfel**,** Birnen**,** Bananen **und** Trauben\n\nZwischen die Dinge: Komma.\n\nVor **und**: **kein** Komma.",
-        "say": "Das kennst du seit der Grundschule. Der einzige Fehler, den alle machen: ein Komma vor und."
+        "title": "Jetzt du: Hauptsatz oder Nebensatz?",
+        "body": "Tipp bei jedem Teil auf die richtige Lösung.",
+        "tasks": [
+          {
+            "text": "obwohl er krank war: Das ist ein ___.",
+            "choices": [
+              "Nebensatz",
+              "Hauptsatz"
+            ],
+            "correct": "Nebensatz",
+            "why": "Der Teil beginnt mit einer Konjunktion, und das Verb steht am Ende.",
+            "hint": "Sprich den Teil allein. Klingt er fertig?"
+          },
+          {
+            "text": "Er ging trotzdem zur Schule: Das ist ein ___.",
+            "choices": [
+              "Hauptsatz",
+              "Nebensatz"
+            ],
+            "correct": "Hauptsatz",
+            "why": "Der Satz kann allein stehen, und das Verb steht an zweiter Stelle.",
+            "hint": "An welcher Stelle steht das Verb ging?"
+          },
+          {
+            "text": "dass du heute kommst: Das ist ein ___.",
+            "choices": [
+              "Nebensatz",
+              "Hauptsatz"
+            ],
+            "correct": "Nebensatz",
+            "why": "Der Teil beginnt mit dass, und das Verb steht am Ende.",
+            "hint": "Mit welchem Wort beginnt der Teil, und wo steht das Verb?"
+          }
+        ],
+        "say": "Prüf bei jedem Teil die drei Zeichen. Wo steht das Verb? Mit welchem Wort beginnt der Teil? Und klingt er fertig, wenn du ihn allein sprichst?"
       },
       {
-        "title": "Der Einschub",
-        "body": "Das Haus**,** das alt war**,** wurde verkauft.\n\nEin Nebensatz **mitten** im Hauptsatz bekommt **zwei** Kommas.",
-        "say": "Wie eine Klammer: vorne eins, hinten eins. Das zweite vergisst man am liebsten."
+        "chapter": "Der Relativsatz",
+        "title": "Ein Nebensatz, der ein Nomen erklärt",
+        "body": "*Das Buch, **das ich lese**, ist spannend.*\n\nDer fette Teil sagt, welches Buch gemeint ist.\n\nSo ein Nebensatz heißt **Relativsatz**.",
+        "say": "Es gibt eine besondere Art von Nebensatz. Er hängt nicht an einem ganzen Satz, sondern an einem einzelnen Nomen. Er erklärt dieses Nomen genauer. Welches Buch ist spannend? Das, das ich gerade lese. Das Verb steht auch hier am Ende."
       },
       {
-        "title": "Die Infinitivgruppe",
-        "body": "**zu + Verb**: *… um ein Fahrrad zu kaufen*\n\nKein eigenes Subjekt.\n\nKomma bei **um, ohne, anstatt** oder wenn ein Nomen oder ein Hinweiswort (es, das, daran) davor steht.",
-        "say": "Das ist der Sonderfall, den die Prüfung liebt. Die Lektion zeigt dir die drei Fälle genau."
+        "title": "Er beginnt mit der, die oder das",
+        "body": "Der Mann, **der** dort steht\nDie Frau, **die** lacht\nDas Kind, **das** spielt\n\nDiese Wörter heißen hier **Relativpronomen**.",
+        "say": "Ein Relativsatz beginnt nicht mit weil oder dass. Er beginnt mit der, die oder das. Das Wort richtet sich nach dem Nomen davor. Der Mann, der. Die Frau, die. Das Kind, das. In dieser Aufgabe heißen diese Wörter Relativpronomen."
+      },
+      {
+        "title": "Artikel oder Relativpronomen?",
+        "body": "***Das** Buch ist gut.*\nHier ist das ein Artikel. Es steht vor einem Nomen.\n\n*Das Buch, **das** ich lese*\nHier ist das ein Relativpronomen. Es leitet einen Nebensatz ein.",
+        "tasks": [
+          {
+            "text": "Das Auto ist neu. Das erste Wort ist hier ___.",
+            "choices": [
+              "ein Artikel",
+              "ein Relativpronomen"
+            ],
+            "correct": "ein Artikel",
+            "why": "Danach folgt direkt ein Nomen: Auto.",
+            "hint": "Was folgt direkt nach dem Wort: ein Nomen oder ein Nebensatz?"
+          }
+        ],
+        "say": "Der, die und das sehen als Artikel und als Relativpronomen gleich aus. Du unterscheidest sie an dem, was danach kommt. Nach dem Artikel folgt ein Nomen. Nach dem Relativpronomen folgt ein Nebensatz, in dem das Verb am Ende steht. Nur vor dem Relativpronomen steht ein Komma."
+      },
+      {
+        "title": "Die Probe mit welcher, welche, welches",
+        "body": "*Das Buch, **welches** ich lese*\n\nPasst welches, welcher oder welche, dann ist es ein Relativpronomen.",
+        "tasks": [
+          {
+            "text": "Die Tasche, die dort liegt, gehört mir. Kannst du für das zweite die das Wort welche einsetzen? ___",
+            "choices": [
+              "Ja",
+              "Nein"
+            ],
+            "correct": "Ja",
+            "why": "Die Tasche, welche dort liegt: Das klingt richtig. Es ist ein Relativpronomen.",
+            "hint": "Sprich den Satz mit welche. Klingt er immer noch richtig?"
+          }
+        ],
+        "say": "Wenn du unsicher bist, machst du diese Probe. Du ersetzt der, die oder das durch welcher, welche oder welches. Klingt der Satz dann immer noch richtig, hast du ein Relativpronomen vor dir. Beim Artikel funktioniert das nicht: Welches Buch ist gut wäre eine Frage."
+      },
+      {
+        "title": "Jetzt du: Relativsätze finden",
+        "body": "Tipp bei jedem Satz auf die richtige Lösung.",
+        "tasks": [
+          {
+            "text": "Der Hund, der dort bellt, gehört mir. Der Relativsatz heißt: ___",
+            "choices": [
+              "der dort bellt",
+              "gehört mir"
+            ],
+            "correct": "der dort bellt",
+            "why": "Dieser Teil erklärt, welcher Hund gemeint ist. Das Verb steht am Ende.",
+            "hint": "Welcher Teil sagt, welcher Hund gemeint ist?"
+          },
+          {
+            "text": "Ich mag die Lehrerin, die uns Mathe erklärt. Der Relativsatz erklärt das Nomen ___.",
+            "choices": [
+              "Lehrerin",
+              "Mathe"
+            ],
+            "correct": "Lehrerin",
+            "why": "Der Relativsatz sagt, welche Lehrerin gemeint ist.",
+            "hint": "Welches Nomen steht direkt vor dem Komma?"
+          }
+        ],
+        "say": "Such in jedem Satz den Teil, der ein Nomen genauer erklärt. Er beginnt mit der, die oder das, und sein Verb steht am Ende."
+      },
+      {
+        "title": "Das nimmst du mit",
+        "body": "(1) So viele Verben, so viele **Teilsätze**.\n\n(2) **Hauptsatz**: Er steht allein, das Verb an zweiter Stelle.\n\n(3) **Nebensatz**: Er steht nicht allein, das Verb am Ende.\n\n(4) **Relativsatz**: Er erklärt ein Nomen.",
+        "tasks": [
+          {
+            "text": "Woran erkennst du einen Nebensatz am sichersten? ___",
+            "choices": [
+              "Das Verb steht am Ende.",
+              "Er ist kürzer als der Hauptsatz."
+            ],
+            "correct": "Das Verb steht am Ende.",
+            "why": "Die Länge sagt nichts aus. Die Stellung des Verbs ist das sichere Zeichen.",
+            "hint": "Was unterscheidet weil ich Zeit habe von ich habe Zeit?"
+          }
+        ],
+        "say": "Diese vier Punkte brauchst du für jede Kommaregel. Wenn du einen Satz vor dir hast, such zuerst die Verben. Schau dann, wo sie stehen. Gleich kommen noch die Wörter zum Nachlesen und ein kleines Quiz."
       }
     ],
     "vocab": [
-      { "term": "Verb", "plain": "Das Tuwort. Sagt, was passiert.", "example": "lesen, bellen, regnen" },
-      { "term": "Teilsatz", "plain": "Ein Stück Satz mit eigenem Verb.", "example": "Ich lese ein Buch | weil es regnet" },
-      { "term": "Hauptsatz", "plain": "Kann allein stehen, Verb an zweiter Stelle.", "example": "Ich lese ein Buch." },
-      { "term": "Nebensatz", "plain": "Kann nicht allein stehen, Verb am Ende.", "example": "… weil es regnet." },
-      { "term": "Konjunktion", "plain": "Bindewort, leitet oft einen Nebensatz ein.", "example": "weil, dass, ob, wenn, obwohl" },
-      { "term": "Relativsatz", "plain": "Nebensatz, der mit der/die/das beginnt und ein Nomen erklärt.", "example": "das Haus, das alt war" },
-      { "term": "Satzreihe", "plain": "Zwei Hauptsätze nebeneinander.", "example": "Tim spielt, Lea liest." },
-      { "term": "Satzgefüge", "plain": "Hauptsatz + Nebensatz.", "example": "Ich lese, weil es regnet." },
-      { "term": "Infinitivgruppe", "plain": "zu + Verb ohne eigenes Subjekt.", "example": "um ein Fahrrad zu kaufen" }
+      {
+        "term": "Teilsatz",
+        "plain": "Ein Teil eines Satzes mit einem eigenen Verb."
+      },
+      {
+        "term": "Hauptsatz",
+        "plain": "Ein Satz, der allein stehen kann. Das Verb steht an zweiter Stelle.",
+        "example": "Ich lese ein Buch."
+      },
+      {
+        "term": "Nebensatz",
+        "plain": "Ein Teilsatz, der nicht allein stehen kann. Das Verb steht am Ende.",
+        "example": "weil es regnet"
+      },
+      {
+        "term": "Relativsatz",
+        "plain": "Ein Nebensatz, der ein Nomen genauer erklärt.",
+        "example": "das Buch, das ich lese"
+      },
+      {
+        "term": "Relativpronomen",
+        "plain": "Der, die oder das am Anfang eines Relativsatzes. Man kann welcher, welche, welches einsetzen."
+      },
+      {
+        "term": "weil, dass, wenn, obwohl, als, ob",
+        "plain": "Konjunktionen, mit denen viele Nebensätze beginnen."
+      }
     ],
     "quiz": [
-      { "prompt": "Wie viele Teilsätze hat: „Ich gehe raus, wenn die Sonne scheint.“?", "choices": ["2", "1", "3", "0"], "correct": "2", "explain": "Zwei Verben: **gehe** und **scheint**. Also zwei Teilsätze." },
-      { "prompt": "Welcher Teil ist der Nebensatz?", "choices": ["wenn die Sonne scheint", "Ich gehe raus", "die Sonne", "raus"], "correct": "wenn die Sonne scheint", "explain": "„wenn“ am Anfang, „scheint“ am Ende, kann nicht allein stehen." },
-      { "prompt": "Wo steht das Verb im Nebensatz?", "choices": ["Am Ende", "An zweiter Stelle", "Am Anfang", "Egal"], "correct": "Am Ende", "explain": "… weil es **regnet**. Im Hauptsatz steht es an zweiter Stelle." },
-      { "prompt": "Kommt ein Komma vor „und“ in „Äpfel, Birnen und Trauben“?", "choices": ["Nein", "Ja", "Nur bei drei Dingen", "Nur am Satzende"], "correct": "Nein", "explain": "In einer Aufzählung steht vor „und“ kein Komma." },
-      { "prompt": "„Das Haus, das alt war, wurde verkauft.“ Wie viele Kommas?", "choices": ["Zwei", "Eins", "Keins", "Drei"], "correct": "Zwei", "explain": "Der Nebensatz steht mittendrin: vorne ein Komma, hinten ein Komma." }
+      {
+        "prompt": "Wie viele Teilsätze hat der Satz: Ich rufe dich an, sobald ich zu Hause bin?",
+        "choices": [
+          "zwei",
+          "einen",
+          "drei",
+          "vier"
+        ],
+        "correct": "zwei",
+        "explain": "Es gibt zwei Verben: rufe an und bin. Zu jedem Verb gehört ein Teilsatz."
+      },
+      {
+        "prompt": "Wir haben den ganzen Tag gespielt. Wie viele Teilsätze hat der Satz?",
+        "choices": [
+          "einen",
+          "zwei",
+          "drei",
+          "keinen"
+        ],
+        "correct": "einen",
+        "explain": "Haben und gespielt gehören zusammen und bilden ein Verb. Es geschieht nur eine Sache."
+      },
+      {
+        "prompt": "Woran erkennst du einen Hauptsatz?",
+        "choices": [
+          "Er kann allein stehen, und das Verb steht an zweiter Stelle.",
+          "Er ist immer der längere Teil.",
+          "Er beginnt mit weil.",
+          "Das Verb steht am Ende."
+        ],
+        "correct": "Er kann allein stehen, und das Verb steht an zweiter Stelle.",
+        "explain": "Ein Hauptsatz ist allein vollständig. Sein Verb steht immer an der zweiten Stelle."
+      },
+      {
+        "prompt": "Welcher Teil ist der Nebensatz? Ich bleibe zu Hause, weil ich krank bin.",
+        "choices": [
+          "weil ich krank bin",
+          "Ich bleibe zu Hause",
+          "zu Hause",
+          "Ich bleibe"
+        ],
+        "correct": "weil ich krank bin",
+        "explain": "Der Teil beginnt mit der Konjunktion weil, und das Verb bin steht am Ende."
+      },
+      {
+        "prompt": "Wo steht das Verb im Nebensatz?",
+        "choices": [
+          "am Ende",
+          "an zweiter Stelle",
+          "am Anfang",
+          "in der Mitte"
+        ],
+        "correct": "am Ende",
+        "explain": "Im Nebensatz wandert das Verb ans Ende: weil ich Zeit habe."
+      },
+      {
+        "prompt": "Das Fahrrad, das dort steht, ist neu. Was ist das dort steht?",
+        "choices": [
+          "ein Relativsatz",
+          "ein Hauptsatz",
+          "eine Aufzählung",
+          "ein Artikel mit Nomen"
+        ],
+        "correct": "ein Relativsatz",
+        "explain": "Der Teil erklärt das Nomen Fahrrad genauer, beginnt mit das und hat das Verb am Ende."
+      },
+      {
+        "prompt": "Wie prüfst du, ob das ein Relativpronomen ist?",
+        "choices": [
+          "Ich setze welches ein.",
+          "Ich steigere es.",
+          "Ich zähle die Buchstaben.",
+          "Ich setze der davor."
+        ],
+        "correct": "Ich setze welches ein.",
+        "explain": "Passt welches an die Stelle, ist es ein Relativpronomen: das Buch, welches ich lese."
+      }
     ]
   }
 ]

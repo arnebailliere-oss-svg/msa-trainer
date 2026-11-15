@@ -1,0 +1,462 @@
+[
+  {
+    "id": "P_DE_SATZGLIEDER",
+    "subject": "DE",
+    "title": "Satzglieder: Wer tut was?",
+    "teaser": "Was ein Satzglied ist und wie du es mit der Umstellprobe findest. Dann die vier wichtigsten: Subjekt, Prädikat, Objekt und adverbiale Bestimmung, jedes mit seiner Frage. Dazu die vier Fälle.",
+    "hook": "Bei den Wortarten ging es um einzelne Wörter. Jetzt schauen wir auf Gruppen von Wörtern, die im Satz zusammengehören. Das klingt schwieriger, ist aber eigentlich leichter. Du brauchst dafür nur ein paar Fragen, die du schon als kleines Kind gestellt hast, zum Beispiel wer etwas tut und wo es passiert.",
+    "outro": "Du kannst jetzt einen Satz in seine Glieder zerlegen. Du findest das Prädikat über das Verb und das Subjekt mit der Frage Wer oder was. Du kennst die Fragen für die Objekte und für die adverbialen Bestimmungen. Und du weißt, dass die Frage entscheidet und nicht die Stelle im Satz.",
+    "standard": 2,
+    "requires": [
+      "P_DE_WORTARTEN",
+      "P_DE_WORTARTEN2"
+    ],
+    "steps": [
+      {
+        "chapter": "Was ein Satzglied ist",
+        "title": "Wörter in Gruppen",
+        "body": "*Der kleine Hund | jagt | die Katze.*\n\nSechs Wörter, aber nur drei Gruppen.\n\nSo eine Gruppe heißt **Satzglied**.",
+        "say": "Schau dir an, wo die Striche stehen. Der kleine Hund gehört zusammen, denn alle drei Wörter meinen dasselbe Tier. Die Katze gehört auch zusammen. Ein Satzglied kann also aus einem Wort bestehen oder aus mehreren, die zusammengehören."
+      },
+      {
+        "title": "Die Umstellprobe",
+        "body": "*Heute | fährt | mein Bruder | nach Hamburg.*\n\n*Mein Bruder | fährt | heute | nach Hamburg.*\n\nWas zusammen wandert, ist ein Satzglied.",
+        "tasks": [
+          {
+            "text": "Die Wörter nach Hamburg wandern immer zusammen. Sie sind ___.",
+            "choices": [
+              "ein Satzglied",
+              "zwei Satzglieder"
+            ],
+            "correct": "ein Satzglied",
+            "why": "Was beim Umstellen zusammenbleibt, ist ein einziges Satzglied.",
+            "hint": "Kannst du die beiden Wörter beim Umstellen voneinander trennen?"
+          }
+        ],
+        "say": "So findest du heraus, was zusammengehört. Du stellst den Satz um und schaust, welche Wörter gemeinsam ihren Platz wechseln. Mein Bruder bleibt immer zusammen. Nach Hamburg auch. Du kannst nicht sagen: Nach fährt mein Bruder Hamburg. Diese Probe heißt Umstellprobe."
+      },
+      {
+        "title": "Wortart oder Satzglied?",
+        "body": "**Wortart**: Was für ein Wort ist es?\n*Hund* ist ein Nomen.\n\n**Satzglied**: Welche Aufgabe hat die Gruppe im Satz?\n*Der kleine Hund* ist die Gruppe, die etwas tut.",
+        "say": "Das sind zwei verschiedene Fragen an denselben Satz. Bei der Wortart schaust du auf ein einzelnes Wort. Beim Satzglied schaust du auf eine ganze Gruppe und fragst, welche Rolle sie im Satz spielt. In der Prüfung musst du beides auseinanderhalten."
+      },
+      {
+        "title": "Jetzt du: Satzglieder zählen",
+        "body": "Die Striche zeigen dir die Gruppen. Tipp auf die richtige Antwort.",
+        "tasks": [
+          {
+            "text": "Morgen | schreiben | wir | einen Test. Der Satz hat ___ Satzglieder.",
+            "choices": [
+              "vier",
+              "fünf"
+            ],
+            "correct": "vier",
+            "why": "Es sind vier Gruppen. Einen Test zählt als ein Satzglied.",
+            "hint": "Zähl die Gruppen zwischen den Strichen und nicht die Wörter."
+          },
+          {
+            "text": "Meine große Schwester | lacht. Der Satz hat ___ Satzglieder.",
+            "choices": [
+              "zwei",
+              "vier"
+            ],
+            "correct": "zwei",
+            "why": "Meine große Schwester ist eine Gruppe, lacht ist die zweite.",
+            "hint": "Wie viele Gruppen trennt der eine Strich voneinander?"
+          }
+        ],
+        "say": "Zähl die Gruppen zwischen den Strichen, nicht die einzelnen Wörter. Jede Gruppe ist ein Satzglied, auch wenn sie nur aus einem Wort besteht."
+      },
+      {
+        "chapter": "Prädikat und Subjekt",
+        "title": "Das Prädikat",
+        "body": "*Der Hund **bellt**.*\n\nDas Satzglied mit dem Verb heißt **Prädikat**.",
+        "say": "Das Prädikat findest du am leichtesten, weil du das Verb schon kennst. Das Verb ist die Wortart. Prädikat ist der Name für seine Aufgabe im Satz. Es sagt, was geschieht. Jeder Satz hat ein Prädikat, und mit ihm fängst du immer an."
+      },
+      {
+        "title": "Das Prädikat kann zwei Teile haben",
+        "body": "*Tom **hat** den Test **bestanden**.*\n\n*Wir **stehen** um sechs **auf**.*\n\nBeide Teile zusammen sind das Prädikat.",
+        "tasks": [
+          {
+            "text": "Sie hat gestern lange geschlafen. Das Prädikat heißt: ___",
+            "choices": [
+              "hat geschlafen",
+              "hat",
+              "gestern"
+            ],
+            "correct": "hat geschlafen",
+            "why": "Die beiden Teile gehören zusammen, auch wenn Wörter dazwischenstehen.",
+            "hint": "Schau bis zum Satzende. Gehört dort noch ein Teil zum Verb?"
+          }
+        ],
+        "say": "Oft besteht das Prädikat aus zwei Teilen, die weit auseinanderstehen. Im ersten Satz gehören hat und bestanden zusammen. Im zweiten Satz gehören stehen und auf zusammen, denn das Verb heißt aufstehen. Such deshalb immer bis zum Satzende nach dem zweiten Teil."
+      },
+      {
+        "title": "Das Subjekt: Wer oder was?",
+        "body": "***Der Hund** bellt.*\n\nWer bellt? Der Hund.\n\nDas Satzglied, das auf **Wer oder was?** antwortet, heißt **Subjekt**.",
+        "say": "Wenn du das Prädikat hast, stellst du die erste Frage: Wer oder was tut das? Hier fragst du, wer bellt, und die Antwort lautet der Hund. Das ist das Subjekt. Das Subjekt ist der, der etwas tut, oder das, worum es im Satz geht."
+      },
+      {
+        "title": "Das Subjekt steht nicht immer vorn",
+        "body": "*Heute bellt **der Hund**.*\n\n*Im Garten spielen **die Kinder**.*\n\nDie Frage entscheidet, nicht der Platz im Satz.",
+        "tasks": [
+          {
+            "text": "Im Garten spielen die Kinder. Das Subjekt heißt: ___",
+            "choices": [
+              "die Kinder",
+              "im Garten"
+            ],
+            "correct": "die Kinder",
+            "why": "Wer spielt? Darauf antwortet diese Gruppe.",
+            "hint": "Frag: Wer oder was spielt? Welche Gruppe antwortet darauf?"
+          }
+        ],
+        "say": "Viele denken, das Subjekt steht immer am Anfang. Das stimmt nicht. Im Deutschen kann fast jedes Satzglied vorn stehen. Verlass dich deshalb nie auf die Stelle. Stell immer die Frage: Wer oder was? Die Antwort ist das Subjekt."
+      },
+      {
+        "title": "Subjekt und Prädikat passen zusammen",
+        "body": "*Der Hund bell**t**.*\n\n*Die Hunde bell**en**.*\n\nÄndert sich das Subjekt, ändert sich auch das Verb.",
+        "say": "Das ist eine zweite Probe für das Subjekt. Setz das Satzglied in den Plural und schau, ob sich das Verb mitverändert. Aus der Hund bellt wird die Hunde bellen. Das Verb richtet sich immer nach dem Subjekt, nie nach einem anderen Satzglied."
+      },
+      {
+        "title": "Jetzt du: Subjekt und Prädikat",
+        "body": "Tipp bei jedem Satz auf die richtige Lösung.",
+        "tasks": [
+          {
+            "text": "Am Montag kommt meine Tante. Das Subjekt heißt: ___",
+            "choices": [
+              "meine Tante",
+              "am Montag"
+            ],
+            "correct": "meine Tante",
+            "why": "Wer kommt? Darauf antwortet diese Gruppe.",
+            "hint": "Stell die Frage: Wer oder was kommt am Montag?"
+          },
+          {
+            "text": "Der Zug ist pünktlich abgefahren. Das Prädikat heißt: ___",
+            "choices": [
+              "ist abgefahren",
+              "abgefahren",
+              "pünktlich"
+            ],
+            "correct": "ist abgefahren",
+            "why": "Beide Teile gehören zum Verb abfahren.",
+            "hint": "Welches kleine Wort gehört noch zu dem Verb am Satzende?"
+          },
+          {
+            "text": "Den ganzen Tag schien die Sonne. Das Subjekt heißt: ___",
+            "choices": [
+              "die Sonne",
+              "den ganzen Tag"
+            ],
+            "correct": "die Sonne",
+            "why": "Was schien? Darauf antwortet diese Gruppe.",
+            "hint": "Stell die Frage: Wer oder was schien den ganzen Tag?"
+          }
+        ],
+        "say": "Such zuerst das Prädikat, also das Verb mit allen seinen Teilen. Frag danach: Wer oder was tut das? Die Antwort ist das Subjekt."
+      },
+      {
+        "chapter": "Die Objekte und die vier Fälle",
+        "title": "Wen oder was?",
+        "body": "*Der Hund jagt **die Katze**.*\n\nWen jagt der Hund? Die Katze.\n\nDieses Satzglied heißt **Objekt**.",
+        "say": "Das Objekt ist das Satzglied, auf das sich die Handlung richtet. Der Hund jagt, und die Katze ist das Ziel der Jagd. Du findest es mit der Frage Wen oder was. Weil es auf diese Frage antwortet, heißt es genauer Akkusativobjekt."
+      },
+      {
+        "title": "Wem?",
+        "body": "*Ich helfe **meinem Bruder**.*\n\nWem helfe ich? Meinem Bruder.\n\nAuch das ist ein Objekt. Es antwortet auf **Wem?**",
+        "tasks": [
+          {
+            "text": "Ich schenke meiner Oma Blumen. Auf die Frage Wem? antwortet: ___",
+            "choices": [
+              "meiner Oma",
+              "Blumen"
+            ],
+            "correct": "meiner Oma",
+            "why": "Wem schenke ich etwas? Darauf antwortet diese Gruppe.",
+            "hint": "Stell die Frage laut: Wem schenke ich die Blumen?"
+          }
+        ],
+        "say": "Es gibt ein zweites Objekt, das auf eine andere Frage antwortet. Wem helfe ich? Wem gehört das? Wem schenkst du etwas? Dieses Objekt heißt Dativobjekt. Du erkennst es oft an Endungen wie dem, einem oder meiner."
+      },
+      {
+        "title": "Zwei Objekte in einem Satz",
+        "body": "*Ich schenke **meiner Oma** **Blumen**.*\n\nWem? Meiner Oma.\nWas? Blumen.",
+        "say": "Ein Satz kann beide Objekte haben. Das kommt bei Verben wie schenken, geben, zeigen und erzählen vor. Es gibt immer jemanden, der etwas bekommt, und etwas, das er bekommt. Stell beide Fragen nacheinander, dann findest du beide Objekte."
+      },
+      {
+        "title": "Die vier Fälle",
+        "body": "**Nominativ**: Wer oder was?\n**Genitiv**: Wessen?\n**Dativ**: Wem?\n**Akkusativ**: Wen oder was?",
+        "tasks": [
+          {
+            "text": "Mit der Frage Wem? findest du den ___.",
+            "choices": [
+              "Dativ",
+              "Akkusativ"
+            ],
+            "correct": "Dativ",
+            "why": "Wem gehört zu diesem Fall. Wen oder was gehört zum anderen.",
+            "hint": "Schau in die dritte Zeile der Tafel."
+          }
+        ],
+        "say": "Zu jeder dieser Fragen gehört ein Fall. Das Subjekt steht immer im Nominativ. Die Objekte stehen im Dativ oder im Akkusativ. Der Genitiv antwortet auf Wessen, zum Beispiel das Fahrrad meines Bruders. Du musst die vier Namen kennen und die Frage dazu."
+      },
+      {
+        "title": "Subjekt oder Objekt?",
+        "body": "*Den Hund beißt der Mann.*\n\nWer beißt? Der Mann. Das ist das Subjekt.\nWen beißt er? Den Hund. Das ist das Objekt.",
+        "tasks": [
+          {
+            "text": "Den Ball fängt Lena. Das Subjekt heißt: ___",
+            "choices": [
+              "Lena",
+              "den Ball"
+            ],
+            "correct": "Lena",
+            "why": "Wer fängt? Darauf antwortet der Name. Den Ball antwortet auf Wen oder was.",
+            "hint": "Stell die Frage: Wer fängt hier etwas, und was wird gefangen?"
+          }
+        ],
+        "say": "Dieser Satz ist ungewöhnlich, und genau deshalb zeigt er etwas Wichtiges. Der Hund steht vorn, aber er ist nicht das Subjekt. Das kleine Wort den verrät den Akkusativ. Stell immer die Fragen. Die Reihenfolge der Wörter kann dich täuschen."
+      },
+      {
+        "title": "Jetzt du: Objekte finden",
+        "body": "Tipp bei jedem Satz auf die richtige Lösung.",
+        "tasks": [
+          {
+            "text": "Der Lehrer erklärt die Aufgabe. Auf Wen oder was? antwortet: ___",
+            "choices": [
+              "die Aufgabe",
+              "der Lehrer"
+            ],
+            "correct": "die Aufgabe",
+            "why": "Was erklärt der Lehrer? Darauf antwortet diese Gruppe.",
+            "hint": "Frag: Wen oder was erklärt der Lehrer?"
+          },
+          {
+            "text": "Das Buch gehört meinem Freund. Meinem Freund steht im ___.",
+            "choices": [
+              "Dativ",
+              "Akkusativ"
+            ],
+            "correct": "Dativ",
+            "why": "Wem gehört das Buch? Die Frage Wem gehört zu diesem Fall.",
+            "hint": "Welche Frage stellst du: Wem oder Wen?"
+          },
+          {
+            "text": "Ich sehe einen Vogel. Einen Vogel steht im ___.",
+            "choices": [
+              "Akkusativ",
+              "Dativ"
+            ],
+            "correct": "Akkusativ",
+            "why": "Wen oder was sehe ich? Diese Frage gehört zu diesem Fall.",
+            "hint": "Welche Frage stellst du: Wem oder Wen oder was?"
+          }
+        ],
+        "say": "Such zuerst Prädikat und Subjekt. Was dann übrig bleibt, prüfst du mit den Fragen Wem und Wen oder was."
+      },
+      {
+        "chapter": "Wo, wann, wie und warum",
+        "title": "Die adverbiale Bestimmung",
+        "body": "*Wir fahren **morgen** **nach Berlin**.*\n\nWann? Morgen.\nWohin? Nach Berlin.\n\nSolche Satzglieder heißen **adverbiale Bestimmung**.",
+        "say": "Der Satz Wir fahren wäre schon vollständig. Die beiden zusätzlichen Satzglieder sagen genauer, wann und wohin. Sie bestimmen die Umstände näher. Daher kommt der lange Name. In der Schule sagt man oft kurz Adverbiale dazu."
+      },
+      {
+        "title": "Vier Fragen, vier Arten",
+        "body": "**Wo? Wohin?** Das ist der Ort: *im Park*\n**Wann? Wie lange?** Das ist die Zeit: *am Montag*\n**Wie?** Das ist die Art und Weise: *mit Freude*\n**Warum?** Das ist der Grund: *wegen des Regens*",
+        "tasks": [
+          {
+            "text": "wegen des Regens antwortet auf die Frage ___",
+            "choices": [
+              "Warum?",
+              "Wo?"
+            ],
+            "correct": "Warum?",
+            "why": "Die Gruppe nennt den Grund, aus dem etwas geschieht.",
+            "hint": "Nennt die Gruppe einen Ort oder einen Grund?"
+          }
+        ],
+        "say": "Es gibt vier Arten von adverbialen Bestimmungen, und jede hat ihre Frage. Ort, Zeit, Art und Weise und Grund. Wenn ein Satzglied auf keine der Fragen nach Subjekt und Objekt antwortet, probierst du diese vier."
+      },
+      {
+        "title": "Jetzt du: ein ganzer Satz",
+        "body": "*Am Abend liest Mia ihrem Bruder ein Buch vor.*",
+        "tasks": [
+          {
+            "text": "Wer liest vor? Das Subjekt heißt: ___",
+            "choices": [
+              "Mia",
+              "ihrem Bruder",
+              "am Abend"
+            ],
+            "correct": "Mia",
+            "why": "Der Name antwortet auf die Frage Wer oder was.",
+            "hint": "Welche Gruppe antwortet auf Wer oder was?"
+          },
+          {
+            "text": "ein Buch ist ___.",
+            "choices": [
+              "ein Akkusativobjekt",
+              "ein Dativobjekt",
+              "das Subjekt"
+            ],
+            "correct": "ein Akkusativobjekt",
+            "why": "Was liest sie vor? Die Frage Wen oder was gehört zum Akkusativ.",
+            "hint": "Mit welcher Frage findest du diese Gruppe: Wem oder Wen oder was?"
+          },
+          {
+            "text": "Am Abend ist ___.",
+            "choices": [
+              "eine adverbiale Bestimmung der Zeit",
+              "ein Objekt"
+            ],
+            "correct": "eine adverbiale Bestimmung der Zeit",
+            "why": "Die Gruppe antwortet auf die Frage Wann.",
+            "hint": "Auf welche Frage antwortet die Gruppe: Wann oder Wen?"
+          }
+        ],
+        "say": "Jetzt zerlegst du einen ganzen Satz. Das Prädikat heißt liest vor. Stell nacheinander die Fragen, die du gelernt hast, und tipp auf die richtige Antwort."
+      },
+      {
+        "title": "Die Fragen auf einen Blick",
+        "body": "**Prädikat**: Was geschieht?\n**Subjekt**: Wer oder was?\n**Dativobjekt**: Wem?\n**Akkusativobjekt**: Wen oder was?\n**Adverbiale Bestimmung**: Wo? Wann? Wie? Warum?",
+        "tasks": [
+          {
+            "text": "Womit fängst du an, wenn du einen Satz zerlegst? ___",
+            "choices": [
+              "mit dem Prädikat",
+              "mit dem ersten Wort"
+            ],
+            "correct": "mit dem Prädikat",
+            "why": "Das Verb findest du am leichtesten, und alle Fragen gehen von ihm aus.",
+            "hint": "Welches Satzglied kennst du schon aus der Lektion über die Wortarten?"
+          }
+        ],
+        "say": "Mit diesen fünf Zeilen zerlegst du jeden Satz. Fang immer beim Prädikat an und geh dann die Fragen der Reihe nach durch. Gleich kommen noch die Wörter zum Nachlesen und ein kleines Quiz."
+      }
+    ],
+    "vocab": [
+      {
+        "term": "Satzglied",
+        "plain": "Eine Gruppe von Wörtern, die im Satz zusammengehört und beim Umstellen zusammenbleibt."
+      },
+      {
+        "term": "Umstellprobe",
+        "plain": "Den Satz umstellen und schauen, welche Wörter gemeinsam wandern."
+      },
+      {
+        "term": "Prädikat",
+        "plain": "Das Satzglied mit dem Verb. Es kann aus zwei Teilen bestehen.",
+        "example": "hat bestanden, steht auf"
+      },
+      {
+        "term": "Subjekt",
+        "plain": "Antwortet auf Wer oder was? Es steht im Nominativ.",
+        "example": "Der Hund bellt."
+      },
+      {
+        "term": "Objekt",
+        "plain": "Das Satzglied, auf das sich die Handlung richtet. Wem? ist das Dativobjekt, Wen oder was? das Akkusativobjekt."
+      },
+      {
+        "term": "Nominativ, Genitiv, Dativ, Akkusativ",
+        "plain": "Die vier Fälle mit den Fragen: Wer oder was? Wessen? Wem? Wen oder was?"
+      },
+      {
+        "term": "adverbiale Bestimmung",
+        "plain": "Sagt genauer, wo, wann, wie oder warum etwas geschieht.",
+        "example": "morgen, im Park, wegen des Regens"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Mit welcher Frage findest du das Subjekt?",
+        "choices": [
+          "Wer oder was?",
+          "Wen oder was?",
+          "Wem?",
+          "Wo?"
+        ],
+        "correct": "Wer oder was?",
+        "explain": "Das Subjekt antwortet auf Wer oder was. Wen oder was fragt nach dem Akkusativobjekt."
+      },
+      {
+        "prompt": "Morgen besucht uns mein Onkel. Was ist das Subjekt?",
+        "choices": [
+          "mein Onkel",
+          "morgen",
+          "uns",
+          "besucht"
+        ],
+        "correct": "mein Onkel",
+        "explain": "Wer besucht uns? Mein Onkel. Das Subjekt muss nicht am Satzanfang stehen."
+      },
+      {
+        "prompt": "Wir haben den Film gesehen. Was ist das Prädikat?",
+        "choices": [
+          "haben gesehen",
+          "haben",
+          "den Film",
+          "gesehen"
+        ],
+        "correct": "haben gesehen",
+        "explain": "Das Prädikat besteht hier aus zwei Teilen, die zusammengehören: haben und gesehen."
+      },
+      {
+        "prompt": "Ich gebe dem Hund einen Knochen. Was ist dem Hund?",
+        "choices": [
+          "ein Dativobjekt",
+          "das Subjekt",
+          "ein Akkusativobjekt",
+          "eine adverbiale Bestimmung"
+        ],
+        "correct": "ein Dativobjekt",
+        "explain": "Wem gebe ich den Knochen? Dem Hund. Die Frage Wem gehört zum Dativ."
+      },
+      {
+        "prompt": "Ich gebe dem Hund einen Knochen. Was ist einen Knochen?",
+        "choices": [
+          "ein Akkusativobjekt",
+          "ein Dativobjekt",
+          "das Subjekt",
+          "das Prädikat"
+        ],
+        "correct": "ein Akkusativobjekt",
+        "explain": "Was gebe ich? Einen Knochen. Die Frage Wen oder was gehört zum Akkusativ."
+      },
+      {
+        "prompt": "Wir treffen uns im Park. Was ist im Park?",
+        "choices": [
+          "eine adverbiale Bestimmung des Ortes",
+          "ein Objekt",
+          "das Subjekt",
+          "das Prädikat"
+        ],
+        "correct": "eine adverbiale Bestimmung des Ortes",
+        "explain": "Wo treffen wir uns? Im Park. Die Frage Wo gehört zur adverbialen Bestimmung des Ortes."
+      },
+      {
+        "prompt": "Wie findest du heraus, welche Wörter ein Satzglied bilden?",
+        "choices": [
+          "Mit der Umstellprobe",
+          "Mit der Steigerung",
+          "Mit dem Artikel",
+          "Mit dem Zählen der Buchstaben"
+        ],
+        "correct": "Mit der Umstellprobe",
+        "explain": "Was beim Umstellen des Satzes zusammen wandert, ist ein Satzglied."
+      },
+      {
+        "prompt": "Welcher Fall antwortet auf die Frage Wessen?",
+        "choices": [
+          "Genitiv",
+          "Dativ",
+          "Akkusativ",
+          "Nominativ"
+        ],
+        "correct": "Genitiv",
+        "explain": "Wessen Fahrrad ist das? Das Fahrrad meines Bruders. Wessen gehört zum Genitiv."
+      }
+    ]
+  }
+]
