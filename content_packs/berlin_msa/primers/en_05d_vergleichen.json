@@ -1,0 +1,443 @@
+[
+  {
+    "id": "P_EN_COMPARISON",
+    "subject": "EN",
+    "title": "Vergleichen: big, bigger, the biggest",
+    "teaser": "Wie du im Englischen Dinge und Menschen vergleichst: kurze Wörter mit -er und -est, lange Wörter mit more und most, die drei unregelmäßigen Wörter und der Vergleich mit as … as.",
+    "hook": "Mein Bruder ist größer als ich. Das war der beste Film des Jahres. Vergleichen gehört zu den Dingen, die man in jeder Schreibaufgabe braucht. Im Englischen geht es fast genauso wie im Deutschen. Es gibt nur eine einzige Entscheidung, die du treffen musst, und die hängt von der Länge des Wortes ab.",
+    "outro": "Du kannst jetzt auf Englisch vergleichen. Kurze Wörter bekommen -er und -est, lange Wörter bekommen more und most. Good, bad und many haben eigene Formen. Und wenn zwei Dinge gleich sind, benutzt du as … as.",
+    "standard": 2,
+    "requires": [
+      "P_EN_VERBFORMEN"
+    ],
+    "steps": [
+      {
+        "chapter": "Kurze Wörter: -er und -est",
+        "title": "Vergleichen auf Deutsch",
+        "body": "Tom ist **groß**.\nBen ist **größer**.\nAli ist **am größten**.\n\nWörter wie groß sagen, **wie** jemand oder etwas ist. Sie heißen **Adjektive**.",
+        "say": "Wir fangen wieder auf Deutsch an. Groß, klein, schnell und teuer sind Adjektive. Man nennt sie auch Wie-Wörter, weil sie sagen, wie etwas ist. Wenn du vergleichst, verändert sich das Adjektiv. Aus groß wird größer und am größten."
+      },
+      {
+        "title": "Dasselbe auf Englisch",
+        "body": "tall\ntall**er**\nthe tall**est**\n\nWie im Deutschen: groß, größ**er**, am größ**ten**.",
+        "say": "Im Englischen passiert genau dasselbe. An das Adjektiv kommt er, wenn du zwei vergleichst. Es kommt est, wenn einer ganz vorn liegt. Vor der Form mit est steht fast immer the. Tall bedeutet groß, wenn man von Menschen spricht."
+      },
+      {
+        "title": "Die Namen der Formen",
+        "body": "tall**er**: der **Komparativ**\nZwei werden verglichen.\n\nthe tall**est**: der **Superlativ**\nEiner liegt ganz vorn.",
+        "say": "Diese beiden Wörter hörst du im Unterricht oft. Der Komparativ ist die Form für den Vergleich zwischen zweien. Der Superlativ ist die Form für den, der alle anderen übertrifft. Du musst die Namen nicht lieben, aber du solltest sie wiedererkennen."
+      },
+      {
+        "title": "than heißt als",
+        "body": "*Ben is taller **than** Tom.*\n\n= Ben ist größer als Tom.\n\nNicht verwechseln: **then** heißt dann.",
+        "tasks": [
+          {
+            "text": "My brother is older ___ me.",
+            "choices": [
+              "than",
+              "then",
+              "as"
+            ],
+            "correct": "than",
+            "why": "Nach einem Komparativ steht das Wort für als, geschrieben mit a.",
+            "hint": "Welches der Wörter bedeutet als? Achte auf den Buchstaben in der Mitte."
+          }
+        ],
+        "say": "Nach dem Komparativ kommt than. Das ist das englische Wort für als. Pass auf die Schreibweise auf. Than mit a ist das Wort für den Vergleich. Then mit e bedeutet dann und hat mit Vergleichen nichts zu tun."
+      },
+      {
+        "title": "Drei kleine Schreibregeln",
+        "body": "big wird zu bi**gg**er: Der letzte Buchstabe wird verdoppelt.\n\nnice wird zu nice**r**: Das e ist schon da.\n\nhappy wird zu happ**ier**: Aus y wird i.",
+        "tasks": [
+          {
+            "text": "Today is ___ than yesterday. (hot)",
+            "choices": [
+              "hotter",
+              "hoter"
+            ],
+            "correct": "hotter",
+            "why": "Hot ist ein kurzes Wort. Der letzte Buchstabe wird verdoppelt.",
+            "hint": "Schau auf die erste Regel der Tafel. Ist hot ein kurzes Wort wie big?"
+          }
+        ],
+        "say": "Diese Regeln kennst du in ähnlicher Form schon von den Verben. Bei kurzen Wörtern wie big oder hot wird der letzte Buchstabe verdoppelt. Endet das Wort schon auf e, hängst du nur ein r an. Und aus einem y am Ende wird ein i."
+      },
+      {
+        "title": "Jetzt du: -er oder -est?",
+        "body": "Tipp bei jedem Satz auf die richtige Form.",
+        "tasks": [
+          {
+            "text": "A car is ___ than a bike.",
+            "choices": [
+              "faster",
+              "fastest"
+            ],
+            "correct": "faster",
+            "why": "Than zeigt: Zwei werden verglichen. Dann steht der Komparativ.",
+            "hint": "Welches kleine Wort steht hinter der Lücke? Was zeigt es an?"
+          },
+          {
+            "text": "Mount Everest is the ___ mountain in the world.",
+            "choices": [
+              "highest",
+              "higher"
+            ],
+            "correct": "highest",
+            "why": "The vor der Lücke und in the world zeigen: Einer liegt ganz vorn.",
+            "hint": "Wird der Berg mit einem anderen verglichen oder mit allen auf der Welt?"
+          },
+          {
+            "text": "My bag is ___ than yours. (heavy)",
+            "choices": [
+              "heavier",
+              "heavyer"
+            ],
+            "correct": "heavier",
+            "why": "Heavy endet auf y. Aus dem y wird ein i.",
+            "hint": "Womit endet heavy? Welche der drei Schreibregeln gilt dann?"
+          }
+        ],
+        "say": "Überleg bei jedem Satz: Werden zwei verglichen, oder liegt einer ganz vorn? Das Wort than zeigt dir einen Vergleich zwischen zweien. Das Wort the vor der Lücke zeigt dir den Superlativ."
+      },
+      {
+        "chapter": "Lange Wörter: more und most",
+        "title": "Was ist eine Silbe?",
+        "body": "tall: 1 **Silbe**\nhap-py: 2 Silben\nex-pen-sive: 3 Silben\n\nEine Silbe ist ein Klatscher, wenn du ein Wort klatschst.",
+        "tasks": [
+          {
+            "text": "Das Wort beautiful hat ___ Silben.",
+            "choices": [
+              "drei",
+              "zwei"
+            ],
+            "correct": "drei",
+            "why": "Beau-ti-ful: Das sind drei Klatscher, also drei Silben.",
+            "hint": "Sprich das Wort langsam und klatsch bei jedem Teil mit."
+          }
+        ],
+        "say": "Um zu entscheiden, wie du ein Adjektiv veränderst, musst du seine Länge kennen. Man misst sie in Silben. Sprich das Wort langsam und klatsch dabei mit. Jeder Klatscher ist eine Silbe. Probier es unten gleich aus."
+      },
+      {
+        "title": "Lange Wörter bleiben, wie sie sind",
+        "body": "expensive\n**more** expensive\nthe **most** expensive\n\nFalsch wäre: *expensiver*.",
+        "say": "Lange Adjektive bekommen kein er und kein est. Das würde man kaum aussprechen können. Stattdessen stellst du more oder most davor. More heißt mehr, most heißt am meisten. Das Adjektiv selbst verändert sich dabei überhaupt nicht."
+      },
+      {
+        "title": "Die Faustregel",
+        "body": "1 Silbe: **-er, -est**. Beispiel: *tall*\n\n2 Silben mit y am Ende: **-ier, -iest**. Beispiel: *happy*\n\nAlle anderen ab 2 Silben: **more, most**. Beispiel: *boring, expensive*",
+        "tasks": [
+          {
+            "text": "This book is ___ than that one.",
+            "choices": [
+              "more interesting",
+              "interestinger"
+            ],
+            "correct": "more interesting",
+            "why": "Interesting hat vier Silben. Lange Wörter bekommen more.",
+            "hint": "Wie viele Silben hat interesting? Was gilt für lange Wörter?"
+          }
+        ],
+        "say": "Mit diesen drei Zeilen kommst du fast überall durch. Ein kurzes Wort mit einer Silbe bekommt die Endung. Ein Wort mit zwei Silben und einem y am Ende bekommt sie auch. Alles, was länger ist, bekommt more und most."
+      },
+      {
+        "title": "Nie beides zusammen",
+        "body": "Falsch: *more taller*\n\nFalsch: *more better*\n\nEntweder die Endung **oder** more. Nie beides.",
+        "tasks": [
+          {
+            "text": "She is ___ than her sister.",
+            "choices": [
+              "taller",
+              "more taller"
+            ],
+            "correct": "taller",
+            "why": "Tall hat eine Silbe und bekommt die Endung. Ein more davor ist zu viel.",
+            "hint": "Hat das Wort schon eine Endung? Darf dann noch more davor stehen?"
+          }
+        ],
+        "say": "Das ist ein Fehler, der sehr oft vorkommt. Man will es besonders deutlich sagen und nimmt beides. Im Englischen ist das falsch. Taller ist bereits der Komparativ. Ein zusätzliches more davor hat keinen Platz."
+      },
+      {
+        "title": "Jetzt du: Endung oder more?",
+        "body": "Tipp bei jedem Satz auf die richtige Form.",
+        "tasks": [
+          {
+            "text": "This is the ___ film I know.",
+            "choices": [
+              "most boring",
+              "boringest"
+            ],
+            "correct": "most boring",
+            "why": "Boring hat zwei Silben und endet nicht auf y. Dann steht most davor.",
+            "hint": "Wie viele Silben hat boring? Endet es auf y?"
+          },
+          {
+            "text": "Maths is ___ than art.",
+            "choices": [
+              "more difficult",
+              "difficulter"
+            ],
+            "correct": "more difficult",
+            "why": "Difficult hat drei Silben. Lange Wörter bekommen more.",
+            "hint": "Klatsch das Wort difficult. Wie viele Silben zählst du?"
+          },
+          {
+            "text": "She is the ___ girl in our class.",
+            "choices": [
+              "funniest",
+              "most funny"
+            ],
+            "correct": "funniest",
+            "why": "Funny hat zwei Silben und endet auf y. Dann wird aus y ein i, und est kommt dazu.",
+            "hint": "Womit endet funny? Welche Zeile der Faustregel passt?"
+          }
+        ],
+        "say": "Zähl bei jedem Adjektiv zuerst die Silben. Schau dann, ob es auf y endet. Danach weißt du, ob es die Endung bekommt oder more und most."
+      },
+      {
+        "chapter": "Unregelmäßige Wörter und as … as",
+        "title": "Drei Wörter machen nicht mit",
+        "body": "good, **better**, the **best**\nbad, **worse**, the **worst**\nmuch / many, **more**, the **most**",
+        "say": "Drei sehr häufige Wörter halten sich an keine Regel. Im Deutschen ist das genauso: gut, besser, am besten. Niemand sagt guter. Lies die drei Zeilen ein paarmal laut. Good, better, best kennst du vielleicht schon aus Liedern."
+      },
+      {
+        "title": "Jetzt du: unregelmäßig",
+        "body": "Tipp bei jedem Satz auf die richtige Form.",
+        "tasks": [
+          {
+            "text": "This pizza is ___ than the last one.",
+            "choices": [
+              "better",
+              "gooder"
+            ],
+            "correct": "better",
+            "why": "Good ist unregelmäßig. Der Komparativ hat eine eigene Form.",
+            "hint": "Wie heißt es auf Deutsch: guter oder besser? Im Englischen ist es ähnlich."
+          },
+          {
+            "text": "It was the ___ day of my life.",
+            "choices": [
+              "worst",
+              "baddest"
+            ],
+            "correct": "worst",
+            "why": "Bad ist unregelmäßig. Der Superlativ hat eine eigene Form.",
+            "hint": "Schau in die zweite Zeile der Tafel davor. Welche Form steht hinter the?"
+          },
+          {
+            "text": "I have ___ books than you.",
+            "choices": [
+              "more",
+              "manyer"
+            ],
+            "correct": "more",
+            "why": "Der Komparativ von many heißt so. Bücher kann man zählen.",
+            "hint": "Schau in die dritte Zeile der Tafel davor."
+          }
+        ],
+        "say": "Alle drei Sätze brauchen eins der unregelmäßigen Wörter. Blättere ruhig eine Tafel zurück, wenn du nachsehen möchtest. Das ist kein Schummeln, das ist Lernen."
+      },
+      {
+        "title": "Genauso wie: as … as",
+        "body": "*Tom is **as tall as** Ben.*\n\n= Tom ist so groß wie Ben.\n\nZwischen as und as steht das Adjektiv **ohne Endung**.",
+        "tasks": [
+          {
+            "text": "She is as ___ as her mother.",
+            "choices": [
+              "tall",
+              "taller"
+            ],
+            "correct": "tall",
+            "why": "Zwischen as und as steht das Adjektiv ohne Endung.",
+            "hint": "Sind die beiden gleich groß? Welche Form steht dann zwischen as und as?"
+          }
+        ],
+        "say": "Manchmal sind zwei Dinge gleich. Dann brauchst du keinen Komparativ. Du stellst das Adjektiv einfach zwischen zwei as. Wichtig ist, dass das Adjektiv dabei unverändert bleibt. Es heißt as tall as und nicht as taller as."
+      },
+      {
+        "title": "Nicht so … wie",
+        "body": "*A bike is **not as fast as** a car.*\n\n= Ein Fahrrad ist nicht so schnell wie ein Auto.",
+        "say": "Mit einem not davor sagst du, dass etwas weniger ist. Das ist eine praktische zweite Möglichkeit zu vergleichen. A car is faster than a bike und a bike is not as fast as a car bedeuten dasselbe. In einer Schreibaufgabe kannst du so abwechseln."
+      },
+      {
+        "title": "Jetzt du: gemischt",
+        "body": "Tipp bei jedem Satz auf die richtige Form.",
+        "tasks": [
+          {
+            "text": "London is ___ than Berlin.",
+            "choices": [
+              "bigger",
+              "more big"
+            ],
+            "correct": "bigger",
+            "why": "Big hat eine Silbe. Es bekommt die Endung, und das g wird verdoppelt.",
+            "hint": "Wie viele Silben hat big? Bekommt es dann more oder die Endung?"
+          },
+          {
+            "text": "My phone is as ___ as yours.",
+            "choices": [
+              "good",
+              "better"
+            ],
+            "correct": "good",
+            "why": "Zwischen as und as steht das Adjektiv ohne Veränderung.",
+            "hint": "Welche Wörter stehen vor und hinter der Lücke?"
+          },
+          {
+            "text": "This is the ___ restaurant in town.",
+            "choices": [
+              "most expensive",
+              "expensivest"
+            ],
+            "correct": "most expensive",
+            "why": "Expensive hat drei Silben. Mit the davor steht der Superlativ mit most.",
+            "hint": "Zähl die Silben. Und welches kleine Wort steht vor der Lücke?"
+          }
+        ],
+        "say": "Jetzt kommt alles zusammen: Endung, more, unregelmäßige Wörter und as … as. Schau bei jedem Satz zuerst auf die kleinen Wörter um die Lücke herum."
+      },
+      {
+        "title": "Das nimmst du mit",
+        "body": "(1) Kurze Wörter: **-er**, **-est**\n\n(2) Lange Wörter: **more**, **most**\n\n(3) good, better, best und bad, worse, worst\n\n(4) Gleich: **as … as**",
+        "tasks": [
+          {
+            "text": "Ben is taller ___ Tom.",
+            "choices": [
+              "than",
+              "then"
+            ],
+            "correct": "than",
+            "why": "Nach dem Komparativ steht das Wort für als, geschrieben mit a.",
+            "hint": "Welches Wort bedeutet als und welches dann?"
+          }
+        ],
+        "say": "Das sind die vier Dinge, die du zum Vergleichen brauchst. Wenn du unsicher bist, klatsch das Wort und zähl die Silben. Gleich kommen die Wörter zum Nachlesen und ein kleines Quiz."
+      }
+    ],
+    "vocab": [
+      {
+        "term": "Adjektiv",
+        "plain": "Ein Wie-Wort. Es sagt, wie jemand oder etwas ist.",
+        "example": "tall, happy, expensive"
+      },
+      {
+        "term": "Komparativ",
+        "plain": "Die Form für den Vergleich zwischen zweien.",
+        "example": "taller, more expensive"
+      },
+      {
+        "term": "Superlativ",
+        "plain": "Die Form für den, der ganz vorn liegt.",
+        "example": "the tallest, the most expensive"
+      },
+      {
+        "term": "Silbe",
+        "plain": "Ein Teil eines Wortes, den man einzeln klatschen kann.",
+        "example": "hap-py hat zwei Silben"
+      },
+      {
+        "term": "than",
+        "plain": "Als, nach einem Komparativ. Nicht verwechseln mit then, das dann bedeutet.",
+        "example": "taller than Tom"
+      },
+      {
+        "term": "as … as",
+        "plain": "So … wie, wenn zwei Dinge gleich sind.",
+        "example": "as tall as Ben"
+      },
+      {
+        "term": "better / worse",
+        "plain": "Besser und schlechter. Die unregelmäßigen Komparative von good und bad."
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "My sister is ___ than me.",
+        "choices": [
+          "older",
+          "oldest",
+          "more old",
+          "old"
+        ],
+        "correct": "older",
+        "explain": "Than zeigt, dass zwei verglichen werden. Old hat eine Silbe und bekommt deshalb die Endung er."
+      },
+      {
+        "prompt": "This is the ___ book I have ever read.",
+        "choices": [
+          "most interesting",
+          "interestingest",
+          "more interesting",
+          "interestinger"
+        ],
+        "correct": "most interesting",
+        "explain": "The vor der Lücke zeigt den Superlativ. Interesting ist ein langes Wort und bekommt deshalb most."
+      },
+      {
+        "prompt": "Welche Form ist richtig?",
+        "choices": [
+          "happier",
+          "more happy",
+          "happyer",
+          "more happier"
+        ],
+        "correct": "happier",
+        "explain": "Happy hat zwei Silben und endet auf y. Aus dem y wird ein i, und die Endung er kommt dazu."
+      },
+      {
+        "prompt": "Today the weather is ___ than yesterday.",
+        "choices": [
+          "worse",
+          "badder",
+          "worst",
+          "more bad"
+        ],
+        "correct": "worse",
+        "explain": "Bad ist unregelmäßig. Der Komparativ heißt worse, der Superlativ heißt worst."
+      },
+      {
+        "prompt": "He is as ___ as his father.",
+        "choices": [
+          "tall",
+          "taller",
+          "tallest",
+          "more tall"
+        ],
+        "correct": "tall",
+        "explain": "Zwischen as und as steht das Adjektiv ohne Endung. Der Satz sagt, dass beide gleich groß sind."
+      },
+      {
+        "prompt": "Welcher Satz ist richtig?",
+        "choices": [
+          "She is taller than me.",
+          "She is more taller than me.",
+          "She is taller then me.",
+          "She is tallest than me."
+        ],
+        "correct": "She is taller than me.",
+        "explain": "Tall bekommt die Endung er, ohne more davor. Und das Wort für als schreibt man than."
+      },
+      {
+        "prompt": "Wie viele Silben hat das Wort expensive?",
+        "choices": [
+          "drei",
+          "zwei",
+          "vier",
+          "eine"
+        ],
+        "correct": "drei",
+        "explain": "Ex-pen-sive: Das sind drei Klatscher. Deshalb bekommt das Wort more und most."
+      },
+      {
+        "prompt": "This is the ___ pizza in town.",
+        "choices": [
+          "best",
+          "goodest",
+          "better",
+          "most good"
+        ],
+        "correct": "best",
+        "explain": "Good ist unregelmäßig. Mit the davor brauchst du den Superlativ, und der heißt best."
+      }
+    ]
+  }
+]

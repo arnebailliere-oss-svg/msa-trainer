@@ -3,41 +3,61 @@
     "id": "L_EN_GRAMMAR",
     "subject": "EN",
     "topicId": "EN_USE_MODALS",
-    "alsoFor": ["EN_USE_IF", "EN_USE_QUEST_NEG", "EN_USE_COMPARISON"],
-    "title": "Modal verbs, if-clauses, questions, comparison",
-    "primer": "P_EN_VERBFORMEN",
-    "intro": "Vier Grammatik-Bausteine, die in jedem Lese- und Schreibteil vorkommen: **Modalverben** (must, should, may …), **if-clauses**, **Fragen und Verneinungen** mit do/does/did und die **Steigerung** der Adjektive.",
-    "source": "Adaptiert nach Prüfungshefte MSA Englisch Berlin 2026, Training Grammatik (Modalverben, If-clauses)",
+    "alsoFor": [
+      "EN_USE_IF",
+      "EN_USE_QUEST_NEG",
+      "EN_USE_COMPARISON"
+    ],
+    "title": "Grammatik: Fragen, Modalverben, if-Sätze, Vergleichen",
+    "sheet": true,
+    "guided": [
+      "P_EN_FRAGEN",
+      "P_EN_MODALS",
+      "P_EN_IF",
+      "P_EN_COMPARISON"
+    ],
+    "intro": "Das hier ist dein Spickzettel zu vier Grammatikthemen. Hier schaust du nach, wenn du ein Muster vergessen hast. Gelernt wird oben in den Lektionen mit Ferdinand, jedes Thema in einer eigenen Lektion. Tipp auf eine Karte, um sie zu öffnen.",
+    "source": "Eigene Darstellung nach den Anforderungen des MSA Englisch",
     "sections": [
       {
-        "kind": "formula",
-        "title": "Modalverben: Bedeutung und Ersatzformen",
-        "body": "Modalverben haben in der 3. Person **kein -s** (*he can*, nicht *he cans*), das Vollverb steht in der **Grundform**, Fragen brauchen **kein do** (*Can I …?*).\n\n- **can / could**: Fähigkeit, Erlaubnis, Bitte, Angebot, Möglichkeit. *I can swim. Could I call grandma?* Ersatz: *be able to, be allowed to*\n- **may / might**: Möglichkeit (might = unwahrscheinlicher), höfliche Erlaubnis. *It may be sunny. May I help you?*\n- **must**: Pflicht, starke Empfehlung, Wahrscheinlichkeit. *You must call grandma. You must be angry.* Ersatz: *have to*\n- **must not / may not**: **Verbot**. *You mustn't smoke here.* Ersatz: *not be allowed to*\n- **need not**: nicht nötig. *You needn't call.* Ersatz: *don't have to*\n- **shall / should / ought to**: Angebot (*Shall I …?*), Ratschlag, Verpflichtung, Vermutung (*He should arrive any moment*).\n- **will / would**: Wunsch, Aufforderung, Versprechen, spontaner Entschluss; would = höflicher (*Would you please …?*).\n\nAchtung: **mustn't** ist **nicht** das Gegenteil von must. Das Gegenteil (nicht müssen) ist **needn't / don't have to**."
+        "kind": "terms",
+        "title": "Fragewörter",
+        "body": "| Englisch | Deutsch | Die Antwort ist |\n| --- | --- | --- |\n| who | wer | ein Mensch |\n| what | was | eine Sache |\n| where | wo | ein Ort |\n| when | wann | eine Zeit |\n| why | warum | ein Grund (because …) |\n| how | wie | eine Art und Weise |\n| how many | wie viele | eine Zahl (zählbar) |\n| how much | wie viel | eine Menge (nicht zählbar) |\n\nVorsicht: *who* bedeutet wer, und *where* bedeutet wo."
+      },
+      {
+        "kind": "steps",
+        "title": "So baust du eine Frage",
+        "body": "Die Reihenfolge ist immer gleich: Fragewort, Helfer, Person, Verb.\n\n| Wann? | Beispiel |\n| --- | --- |\n| jetzt, I / you / we / they | *Where **do** you live?* |\n| jetzt, he / she / it | *Where **does** she live?* |\n| Vergangenheit | *Where **did** you live?* |\n| mit be | *Where **is** the station?* |\n| mit einem anderen Helfer | *What **can** we do?* |\n| Frage nach dem, der etwas tut | *Who **broke** the window?* |\n\nNach do, does und did steht das Verb in der Grundform."
+      },
+      {
+        "kind": "terms",
+        "title": "Modalverben",
+        "body": "| Englisch | Deutsch | Beispiel |\n| --- | --- | --- |\n| can | können | *She can swim.* |\n| must | müssen | *I must go.* |\n| should | sollte (ein Rat) | *You should see a doctor.* |\n| may | dürfen, oder: vielleicht | *May I go?* |\n| could | könnte, konnte | *Could you help me?* |\n| must not | nicht dürfen (verboten) | *You must not park here.* |\n| don't have to | nicht müssen (nicht nötig) | *You don't have to come.* |\n\nFür alle Modalverben gilt: Sie bekommen kein -s, danach steht die Grundform ohne to, und Fragen bildet man ohne do."
+      },
+      {
+        "kind": "terms",
+        "title": "Modalverben: gestern und morgen",
+        "body": "| Heute | Gestern | Morgen |\n| --- | --- | --- |\n| can | could / was able to | will be able to |\n| must / have to | had to | will have to |\n| may | was allowed to | will be allowed to |\n\nDie Ersatzformen brauchst du, weil es Formen wie *will can* oder *musted* nicht gibt."
       },
       {
         "kind": "formula",
-        "title": "If-clauses: die drei Typen",
-        "body": "- **Typ I** (möglich, wahrscheinlich): if + **Simple Present**, Hauptsatz **will** + Grundform. *If it rains today, I won't go outside.* Warnung, Folge, Verhandlung, Aberglaube.\n- **Typ II** (möglich, aber unwahrscheinlich): if + **Simple Past**, Hauptsatz **would/could/might** + Grundform. *If I had time, I would come.* *If I were you, I would wait.* Ratschlag, hypothetische Frage, Entschuldigung.\n- **Typ III** (unmöglich, Vergangenheit): if + **Past Perfect**, Hauptsatz **would have** + 3. Form. *If I had woken up early, I would not have missed the train.* Bedauern, Kritik.\n\n**Komma**: nur wenn der if-Satz **vorne** steht. **Nie will im if-Satz.**"
+        "title": "if-Sätze",
+        "body": "| Typ | Wann? | Teil mit if | Anderer Teil |\n| --- | --- | --- | --- |\n| 1 | Es kann gut passieren. | Simple Present | will + Grundform |\n| 2 | Es ist nur vorgestellt. | Simple Past | would + Grundform |\n| 3 | Es ist vorbei. | had + 3. Form | would have + 3. Form |\n\nTyp 1: *If it rains, I will stay at home.*\nTyp 2: *If I had more time, I would learn Spanish.*\nTyp 3: *If I had studied, I would have passed.*\n\nIm Teil mit if steht nie *will* oder *would*. Steht if am Satzanfang, trennt ein Komma die beiden Teile."
       },
       {
-        "kind": "formula",
-        "title": "Fragen und Verneinungen",
-        "body": "Vollverben brauchen **do / does / did**, danach die **Grundform**:\n\n- *Do you like pizza? – I don't like pizza.*\n- *Does she play tennis? – She doesn't play tennis.* (das -s steckt in does)\n- *Did he go to school? – He didn't go.* (nicht *went*)\n- Fragewort davor: *Where does she live? Why didn't you call?*\n\n**Ohne do**: *be* (*Is he …? We weren't …*), **Modalverben** (*Can you …? You can't …*), *have* als Hilfsverb (*Have you ever been …?*), Progressive (*Is he playing …?*)."
-      },
-      {
-        "kind": "formula",
-        "title": "Steigerung der Adjektive",
-        "body": "- **Kurze Adjektive** (1 Silbe, 2 Silben auf -y): **-er / the -est**. *tall – taller – the tallest*, *easy – easier – the easiest*, Konsonant verdoppeln: *big – bigger*, *hot – hotter*\n- **Lange Adjektive**: **more / the most**. *interesting – more interesting – the most interesting*\n- **Unregelmäßig**: *good – better – best*, *bad – worse – worst*, *far – farther – farthest*, *much/many – more – most*\n- Vergleich: *… than*. Gleichheit: *as … as*. *He is as old as me.*"
+        "kind": "terms",
+        "title": "Vergleichen",
+        "body": "| Das Adjektiv hat | Komparativ | Superlativ |\n| --- | --- | --- |\n| 1 Silbe (*tall*) | taller | the tallest |\n| 2 Silben mit y (*happy*) | happier | the happiest |\n| 2 und mehr Silben (*expensive*) | more expensive | the most expensive |\n| *good* | better | the best |\n| *bad* | worse | the worst |\n| *much, many* | more | the most |\n\n*Ben is taller **than** Tom.* Das Wort than bedeutet als.\n*Tom is **as tall as** Ben.* Das bedeutet: so groß wie."
       },
       {
         "kind": "mistake",
         "title": "Typische Fehler",
-        "body": "- *he cans* ✗ → *he can* ✓ (Modalverben ohne -s)\n- *mustn't* für „muss nicht“ ✗ → *needn't / doesn't have to* ✓\n- *If it will rain* ✗ → *If it rains* ✓\n- *Did you went?* ✗ → *Did you go?* ✓\n- *more big* ✗ → *bigger* ✓, *goodest* ✗ → *best* ✓"
+        "body": "| Falsch | Richtig | Warum? |\n| --- | --- | --- |\n| *Where you live?* | *Where do you live?* | Der Helfer fehlt. |\n| *What does she likes?* | *What does she like?* | Das -s steht schon bei does. |\n| *She cans swim.* | *She can swim.* | Modalverben bekommen kein -s. |\n| *If it will rain, …* | *If it rains, …* | Kein will im Teil mit if. |\n| *more taller* | *taller* | Endung oder more, nie beides. |\n| *taller then me* | *taller than me* | than heißt als, then heißt dann. |"
       },
       {
         "kind": "remember",
         "title": "Merke",
-        "body": "Modalverb + Grundform, kein -s, kein do. If I: Present + will · II: Past + would · III: Past Perfect + would have. Fragen: do/does/did + Grundform. Kurz: -er/-est, lang: more/most."
+        "body": "- Eine Frage baust du aus Fragewort, Helfer, Person und Verb.\n- Das Wort must not bedeutet nicht dürfen, und don't have to bedeutet nicht müssen.\n- Im Teil mit if steht weder will noch would.\n- Kurze Adjektive bekommen -er und -est, lange bekommen more und most."
       }
     ]
   }

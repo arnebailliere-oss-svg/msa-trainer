@@ -1,0 +1,428 @@
+[
+  {
+    "id": "P_EN_IF",
+    "subject": "EN",
+    "title": "if-Sätze: wenn, dann",
+    "teaser": "Sätze mit if, Schritt für Schritt: Typ 1 für das, was gut passieren kann, Typ 2 für das, was du dir nur vorstellst, und ein Blick auf Typ 3 für das, was sich nicht mehr ändern lässt.",
+    "hook": "Wenn es regnet, bleibe ich zu Hause. Wenn ich reich wäre, würde ich um die Welt reisen. Solche Sätze mit wenn sagst du ständig. Im Englischen beginnen sie mit if. Es gibt davon drei Sorten, und jede hat ein festes Muster. Wir bauen sie nacheinander auf.",
+    "outro": "Du kennst jetzt die drei Sorten von if-Sätzen. Bei Typ 1 kann etwas gut passieren, bei Typ 2 stellst du es dir nur vor, und bei Typ 3 ist es zu spät. Und du weißt, was in allen drei Fällen gilt: Im Teil mit if steht weder will noch would.",
+    "standard": 2,
+    "requires": [
+      "P_EN_VERBFORMEN",
+      "P_EN_ZEITFORMEN"
+    ],
+    "steps": [
+      {
+        "chapter": "Typ 1: Das kann gut passieren",
+        "title": "Wenn, dann",
+        "body": "Wenn es regnet, bleibe ich zu Hause.\n\nDer Satz hat **zwei Teile**: eine **Bedingung** und eine **Folge**.",
+        "say": "Schau dir den deutschen Satz an. Der erste Teil nennt eine Bedingung: Es muss regnen. Der zweite Teil sagt, was dann passiert: Ich bleibe zu Hause. Ohne die Bedingung gibt es die Folge nicht. Genau so sind die englischen Sätze gebaut."
+      },
+      {
+        "title": "Im Englischen: if",
+        "body": "***If** it rains, I will stay at home.*\n\nDer Teil mit if ist die Bedingung.\n\nSo ein Satz heißt **if-Satz**.",
+        "say": "If bedeutet hier wenn oder falls. Der Teil mit if nennt die Bedingung, der andere Teil nennt die Folge. Schau genau hin, welche Formen in den beiden Teilen stehen. Auf der nächsten Tafel sehen wir uns das Muster an."
+      },
+      {
+        "title": "Das Muster von Typ 1",
+        "body": "Teil mit if: **Simple Present**\nAnderer Teil: **will** + Grundform\n\n*If it **rains**, I **will stay** at home.*",
+        "tasks": [
+          {
+            "text": "If you hurry, you ___ the bus.",
+            "choices": [
+              "will catch",
+              "caught"
+            ],
+            "correct": "will catch",
+            "why": "Im Teil ohne if steht will und die Grundform.",
+            "hint": "Welche Form gehört in den Teil ohne if? Schau auf das Muster."
+          }
+        ],
+        "say": "Diesen ersten Typ benutzt du, wenn etwas gut passieren kann. Vielleicht regnet es morgen wirklich. Im Teil mit if steht das Simple Present, obwohl es um die Zukunft geht. Im anderen Teil steht will und die Grundform."
+      },
+      {
+        "title": "Die Falle: kein will nach if",
+        "body": "Falsch: *If it will rain, I will stay at home.*\n\nRichtig: *If it **rains**, I will stay at home.*\n\nIm Teil mit if steht **nie** will.",
+        "tasks": [
+          {
+            "text": "If she ___, I will be happy.",
+            "choices": [
+              "comes",
+              "will come"
+            ],
+            "correct": "comes",
+            "why": "Im Teil mit if steht das Simple Present. Bei she kommt das s dazu.",
+            "hint": "In welchem Teil des Satzes steht die Lücke? Darf dort will stehen?"
+          }
+        ],
+        "say": "Im Deutschen kannst du sagen: Wenn es regnen wird. Deshalb möchte man im Englischen auch nach if ein will setzen. Das ist aber falsch. Merk dir diesen einen Satz, er gilt für alle if-Sätze: Im Teil mit if steht kein will."
+      },
+      {
+        "title": "Jetzt du: Typ 1",
+        "body": "Tipp bei jedem Satz auf die richtige Form.",
+        "tasks": [
+          {
+            "text": "If I ___ time, I will help you.",
+            "choices": [
+              "have",
+              "will have"
+            ],
+            "correct": "have",
+            "why": "Die Lücke steht im Teil mit if. Dort steht das Simple Present.",
+            "hint": "Steht die Lücke im Teil mit if oder im anderen Teil?"
+          },
+          {
+            "text": "If you don't study, you ___ the test.",
+            "choices": [
+              "will fail",
+              "failed"
+            ],
+            "correct": "will fail",
+            "why": "Die Lücke steht im Teil ohne if. Dort steht will und die Grundform.",
+            "hint": "In welchem Teil fehlt etwas? Welche Form gehört dorthin?"
+          },
+          {
+            "text": "We will go swimming if the sun ___.",
+            "choices": [
+              "shines",
+              "will shine"
+            ],
+            "correct": "shines",
+            "why": "Der Teil mit if steht hier hinten. Auch dort gilt: kein will.",
+            "hint": "Wo steht das Wort if in diesem Satz? Gilt die Regel dort auch?"
+          }
+        ],
+        "say": "Schau bei jedem Satz zuerst, in welchem Teil die Lücke steht. Ist es der Teil mit if, dann brauchst du das Simple Present. Ist es der andere Teil, dann brauchst du will."
+      },
+      {
+        "chapter": "Typ 2: Stell dir vor",
+        "title": "Ein Traum",
+        "body": "*If I **won** the lottery, I **would buy** a house.*\n\n= Wenn ich im Lotto gewinnen würde, würde ich ein Haus kaufen.\n\nDas ist **nicht wirklich** so. Man stellt es sich nur vor.",
+        "say": "Jetzt kommt die zweite Sorte. Hier geht es um etwas, das nicht wahr ist oder sehr unwahrscheinlich. Du hast nicht im Lotto gewonnen. Du malst dir nur aus, was dann wäre. Im Deutschen erkennst du das an würde und wäre."
+      },
+      {
+        "title": "Das Muster von Typ 2",
+        "body": "Teil mit if: **Simple Past**\nAnderer Teil: **would** + Grundform\n\n*If I **had** more time, I **would learn** Spanish.*",
+        "say": "Beide Teile rücken sozusagen einen Schritt zurück. Aus dem Simple Present wird das Simple Past. Aus will wird would. Would ist das englische Wort für würde. Auch hier steht would nur im Teil ohne if."
+      },
+      {
+        "title": "Vergangenheit, aber nicht gestern",
+        "body": "*If I **had** a dog, I would go for walks.*\n\nDas Simple Past zeigt hier nicht gestern.\n\nEs zeigt: Das ist **nur vorgestellt**.",
+        "tasks": [
+          {
+            "text": "If I had a dog, I would go for walks. Hat der Sprecher einen Hund? ___",
+            "choices": [
+              "Nein",
+              "Ja"
+            ],
+            "correct": "Nein",
+            "why": "Der Satz stellt sich nur vor, wie es mit einem Hund wäre.",
+            "hint": "Ist das ein Bericht über die Wirklichkeit, oder malt sich jemand etwas aus?"
+          }
+        ],
+        "say": "Das verwirrt viele. Had ist die Vergangenheit von have, aber der Satz spricht nicht über früher. Er spricht über jetzt, nur eben über etwas, das nicht stimmt. Im Deutschen ist es ähnlich: Wenn ich einen Hund hätte."
+      },
+      {
+        "title": "If I were you",
+        "body": "*If I **were** you, I **would** tell her.*\n\n= An deiner Stelle würde ich es ihr sagen.\n\nNach if sagt man **were**, auch bei I, he, she, it.",
+        "tasks": [
+          {
+            "text": "If I ___ rich, I would travel.",
+            "choices": [
+              "were",
+              "am"
+            ],
+            "correct": "were",
+            "why": "Der Satz ist nur vorgestellt. Nach if steht dann diese Form für alle Personen.",
+            "hint": "Ist der Sprecher wirklich reich? Welche Form steht dann nach if?"
+          }
+        ],
+        "say": "Das ist ein Satz, den du in Schreibaufgaben gut gebrauchen kannst, wenn du einen Rat gibst. Normalerweise heißt es I was. In diesen vorgestellten Sätzen sagt man aber were für alle Personen. If I were you ist eine feste Wendung."
+      },
+      {
+        "title": "Kein would nach if",
+        "body": "Falsch: *If I would have time, I would help.*\n\nRichtig: *If I **had** time, I would help.*",
+        "say": "Hier ist die Falle dieselbe wie bei Typ 1. Im Deutschen sagst du: Wenn ich Zeit haben würde. Im Englischen steht im Teil mit if kein would. Dort steht das Simple Past. Would gehört nur in den anderen Teil."
+      },
+      {
+        "title": "Jetzt du: Typ 2",
+        "body": "Tipp bei jedem Satz auf die richtige Form.",
+        "tasks": [
+          {
+            "text": "If I ___ a car, I would drive to school.",
+            "choices": [
+              "had",
+              "would have"
+            ],
+            "correct": "had",
+            "why": "Die Lücke steht im Teil mit if. Dort steht das Simple Past.",
+            "hint": "In welchem Teil steht die Lücke? Darf dort would stehen?"
+          },
+          {
+            "text": "If she lived here, we ___ her every day.",
+            "choices": [
+              "would see",
+              "will see"
+            ],
+            "correct": "would see",
+            "why": "Im Teil mit if steht das Simple Past. Dazu gehört im anderen Teil would.",
+            "hint": "Welche Zeit steht im Teil mit if? Welches Wort gehört dann in den anderen Teil?"
+          },
+          {
+            "text": "If I were you, I ___ that.",
+            "choices": [
+              "wouldn't do",
+              "don't do"
+            ],
+            "correct": "wouldn't do",
+            "why": "If I were you leitet einen Rat ein. Im anderen Teil steht would, hier mit not.",
+            "hint": "Mit welcher Wendung beginnt der Satz? Was folgt darauf immer?"
+          }
+        ],
+        "say": "Alle drei Sätze sind nur vorgestellt. Schau wieder zuerst, in welchem Teil die Lücke steht. Im Teil mit if brauchst du das Simple Past, im anderen Teil would."
+      },
+      {
+        "chapter": "Typ 1 oder Typ 2, und ein Blick auf Typ 3",
+        "title": "Kann es passieren, oder stellst du es dir nur vor?",
+        "body": "**Typ 1**: Es kann gut passieren.\n*If it rains, I will stay in.*\n\n**Typ 2**: Es ist nur vorgestellt.\n*If I were a bird, I would fly.*",
+        "tasks": [
+          {
+            "text": "Wenn ich ein Vogel wäre, würde ich fliegen. Das ist ___.",
+            "choices": [
+              "nur vorgestellt",
+              "gut möglich"
+            ],
+            "correct": "nur vorgestellt",
+            "why": "Ein Mensch kann kein Vogel werden. Der Satz malt sich etwas aus.",
+            "hint": "Kann das wirklich passieren? Achte auf das Wort wäre."
+          }
+        ],
+        "say": "Mit dieser einen Frage unterscheidest du die beiden Typen. Regen kann morgen wirklich kommen. Ein Vogel wirst du dagegen nie sein. Im Deutschen hörst du den Unterschied auch: wenn es regnet gegen wenn ich wäre."
+      },
+      {
+        "title": "Die Paare gehören zusammen",
+        "body": "Typ 1: **Simple Present** und **will**\nTyp 2: **Simple Past** und **would**",
+        "tasks": [
+          {
+            "text": "If I had wings, I ___.",
+            "choices": [
+              "would fly",
+              "will fly"
+            ],
+            "correct": "would fly",
+            "why": "Had ist Simple Past. Dazu gehört would.",
+            "hint": "Welche Zeit steht im Teil mit if? Welches Wort ist ihr Partner?"
+          }
+        ],
+        "say": "Wenn du einen Teil des Satzes siehst, kennst du den anderen. Steht im Teil mit if das Simple Present, gehört will dazu. Steht dort das Simple Past, gehört would dazu. Die Paare werden nie gemischt."
+      },
+      {
+        "title": "Typ 3: Es ist zu spät",
+        "body": "*If I **had studied**, I **would have passed**.*\n\n= Wenn ich gelernt hätte, hätte ich bestanden.\n\nEs ist **vorbei**. Man kann es nicht mehr ändern.",
+        "say": "Die dritte Sorte spricht über die Vergangenheit. Die Prüfung ist geschrieben, und man hat nicht gelernt. Jetzt kann man sich nur noch ausmalen, wie es anders gelaufen wäre. Im Deutschen erkennst du das an hätte und wäre mit einem zweiten Verb."
+      },
+      {
+        "title": "Das Muster von Typ 3",
+        "body": "Teil mit if: **had** + 3. Form\nAnderer Teil: **would have** + 3. Form",
+        "tasks": [
+          {
+            "text": "If we had left earlier, we ___ the train.",
+            "choices": [
+              "would have caught",
+              "will catch"
+            ],
+            "correct": "would have caught",
+            "why": "Im Teil mit if steht had und die 3. Form. Dazu gehört would have.",
+            "hint": "Was steht im Teil mit if? Welcher Partner gehört zu diesem Muster?"
+          }
+        ],
+        "say": "Auch hier rücken beide Teile wieder einen Schritt zurück. Typ 3 kommt im MSA seltener vor als die anderen beiden. Es reicht, wenn du ihn erkennst. Zwei Zeichen helfen dir dabei: had im Teil mit if und would have im anderen Teil."
+      },
+      {
+        "title": "Der Teil mit if kann auch hinten stehen",
+        "body": "*If it rains, I will stay at home.*\n\n*I will stay at home if it rains.*\n\nSteht if vorn, kommt ein Komma. Steht if hinten, kommt keins.",
+        "say": "Beide Sätze bedeuten genau dasselbe. Du darfst die zwei Teile tauschen. Nur das Komma ändert sich. Wenn der Satz mit if beginnt, trennst du die beiden Teile durch ein Komma. Steht if in der Mitte, brauchst du keins."
+      },
+      {
+        "title": "Jetzt du: gemischt",
+        "body": "Tipp bei jedem Satz auf die richtige Form.",
+        "tasks": [
+          {
+            "text": "If it is sunny tomorrow, we ___ to the beach.",
+            "choices": [
+              "will go",
+              "would go"
+            ],
+            "correct": "will go",
+            "why": "Is ist Simple Present. Dazu gehört will.",
+            "hint": "Welche Zeit steht im Teil mit if? Welcher Partner gehört dazu?"
+          },
+          {
+            "text": "If I ___ you, I would say sorry.",
+            "choices": [
+              "were",
+              "am"
+            ],
+            "correct": "were",
+            "why": "Would im anderen Teil zeigt Typ 2. Und es ist die feste Wendung für einen Rat.",
+            "hint": "Welches Wort steht im anderen Teil? Welcher Typ ist das?"
+          },
+          {
+            "text": "If he ___ harder, he will pass.",
+            "choices": [
+              "works",
+              "worked"
+            ],
+            "correct": "works",
+            "why": "Will im anderen Teil zeigt Typ 1. Dann steht nach if das Simple Present.",
+            "hint": "Welches Wort steht im Teil ohne if? Was ist sein Partner?"
+          }
+        ],
+        "say": "Jetzt sind alle Typen gemischt. Schau zuerst auf den Teil, der vollständig ist. Er verrät dir den Typ. Dann weißt du, welcher Partner in die Lücke gehört."
+      },
+      {
+        "title": "Das nimmst du mit",
+        "body": "Typ 1: if + Simple Present, will\nTyp 2: if + Simple Past, would\nTyp 3: if + had + 3. Form, would have\n\nIm Teil mit if steht **nie** will oder would.",
+        "tasks": [
+          {
+            "text": "If I ___ time tomorrow, I will call you.",
+            "choices": [
+              "have",
+              "will have"
+            ],
+            "correct": "have",
+            "why": "Im Teil mit if steht nie will, auch wenn es um morgen geht.",
+            "hint": "In welchem Teil steht die Lücke? Welche Regel gilt dort immer?"
+          }
+        ],
+        "say": "Das sind die drei Muster auf einen Blick. Du findest sie auch auf dem Spickzettel zur Grammatik. Der letzte Satz auf der Tafel ist der wichtigste, denn mit ihm vermeidest du den häufigsten Fehler. Gleich kommen die Wörter und das Quiz."
+      }
+    ],
+    "vocab": [
+      {
+        "term": "if-Satz",
+        "plain": "Ein Satz mit if. Er hat zwei Teile: die Bedingung mit if und die Folge.",
+        "example": "If it rains, I will stay at home."
+      },
+      {
+        "term": "if",
+        "plain": "Wenn oder falls."
+      },
+      {
+        "term": "Typ 1",
+        "plain": "Etwas kann gut passieren. If und Simple Present, im anderen Teil will.",
+        "example": "If you hurry, you will catch the bus."
+      },
+      {
+        "term": "Typ 2",
+        "plain": "Etwas ist nur vorgestellt. If und Simple Past, im anderen Teil would.",
+        "example": "If I had a car, I would drive."
+      },
+      {
+        "term": "Typ 3",
+        "plain": "Etwas ist vorbei und nicht mehr zu ändern. If und had mit 3. Form, im anderen Teil would have.",
+        "example": "If I had studied, I would have passed."
+      },
+      {
+        "term": "would",
+        "plain": "Würde.",
+        "example": "I would buy a house."
+      },
+      {
+        "term": "If I were you",
+        "plain": "An deiner Stelle. So beginnt ein Rat.",
+        "example": "If I were you, I would tell her."
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "If it rains, we ___ at home.",
+        "choices": [
+          "will stay",
+          "stayed",
+          "would stay",
+          "stays"
+        ],
+        "correct": "will stay",
+        "explain": "Rains ist Simple Present, also Typ 1. Im anderen Teil steht dann will und die Grundform."
+      },
+      {
+        "prompt": "Welcher Satz ist richtig?",
+        "choices": [
+          "If she comes, I will be happy.",
+          "If she will come, I will be happy.",
+          "If she comes, I am be happy.",
+          "If she will comes, I am happy."
+        ],
+        "correct": "If she comes, I will be happy.",
+        "explain": "Im Teil mit if steht nie will. Dort steht das Simple Present, und im anderen Teil steht will."
+      },
+      {
+        "prompt": "If I ___ a million euros, I would buy a boat.",
+        "choices": [
+          "had",
+          "have",
+          "will have",
+          "would have"
+        ],
+        "correct": "had",
+        "explain": "Would im anderen Teil zeigt Typ 2. Im Teil mit if steht dann das Simple Past."
+      },
+      {
+        "prompt": "If I were you, I ___ more.",
+        "choices": [
+          "would sleep",
+          "will sleep",
+          "sleep",
+          "slept"
+        ],
+        "correct": "would sleep",
+        "explain": "If I were you leitet einen Rat ein. Das ist Typ 2, und im anderen Teil steht would."
+      },
+      {
+        "prompt": "If I were a bird, I would fly. Was bedeutet der Satz?",
+        "choices": [
+          "Der Sprecher stellt es sich nur vor.",
+          "Der Sprecher ist ein Vogel.",
+          "Es wird morgen so sein.",
+          "Es war gestern so."
+        ],
+        "correct": "Der Sprecher stellt es sich nur vor.",
+        "explain": "Typ 2 beschreibt etwas, das nicht wirklich so ist. Man malt es sich nur aus."
+      },
+      {
+        "prompt": "If he had studied, he ___ the test.",
+        "choices": [
+          "would have passed",
+          "will pass",
+          "passes",
+          "would pass"
+        ],
+        "correct": "would have passed",
+        "explain": "Had studied zeigt Typ 3. Dazu gehört im anderen Teil would have und die 3. Form."
+      },
+      {
+        "prompt": "Wo steht das Komma richtig?",
+        "choices": [
+          "If you call me, I will come.",
+          "If you call me I will, come.",
+          "I will come, if, you call me.",
+          "If, you call me I will come."
+        ],
+        "correct": "If you call me, I will come.",
+        "explain": "Beginnt der Satz mit if, trennt ein Komma die beiden Teile. Steht if in der Mitte, braucht man keins."
+      },
+      {
+        "prompt": "We will miss the train if we ___.",
+        "choices": [
+          "don't hurry",
+          "won't hurry",
+          "wouldn't hurry",
+          "didn't hurried"
+        ],
+        "correct": "don't hurry",
+        "explain": "Auch wenn der Teil mit if hinten steht, gilt die Regel: kein will nach if, sondern Simple Present."
+      }
+    ]
+  }
+]

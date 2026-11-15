@@ -20,7 +20,7 @@ const lesson = {
   alsoFor: ["EN_USE"],
   title: "Tenses: die englischen Zeiten",
   sheet: true,
-  guided: ["P_EN_VERBFORMEN", "P_EN_ZEITFORMEN", "P_EN_ZEIT_VORBEI"],
+  guided: ["P_EN_VERBFORMEN", "P_EN_ZEITFORMEN", "P_EN_ZEIT_VORBEI", "P_EN_ZEIT_WEITER"],
   intro: "Das hier ist dein Spickzettel. Hier lernst du nichts Neues, hier schaust du nach, wenn du dir bei einer Zeit nicht sicher bist. Gelernt wird oben in den Lektionen mit Ferdinand. Tipp auf eine Karte, um sie zu öffnen.",
   source: "Eigene Darstellung; Auswahl der Zeiten und Verben nach den Anforderungen des MSA Englisch",
   sections: [

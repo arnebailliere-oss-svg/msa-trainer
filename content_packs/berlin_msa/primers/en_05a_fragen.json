@@ -1,0 +1,401 @@
+[
+  {
+    "id": "P_EN_FRAGEN",
+    "subject": "EN",
+    "title": "Fragen stellen mit Fragewörtern",
+    "teaser": "Who, what, where, when, why und how: was die Fragewörter bedeuten, wie du daraus eine richtige englische Frage baust und wie du kurz darauf antwortest.",
+    "hook": "Fragen mit do, does und did kennst du schon aus der Lektion über die Verbformen. Auf solche Fragen antwortet man mit ja oder nein. Jetzt kommen die Fragen dazu, auf die man mehr antworten muss: wer, was, wo, wann und warum. Dafür brauchst du nur ein Wort mehr am Anfang.",
+    "outro": "Du kennst jetzt die englischen Fragewörter und weißt, dass who wer bedeutet und where wo. Du kannst eine Frage in der richtigen Reihenfolge bauen: Fragewort, Helfer, Person, Verb. Und du weißt, wann du do brauchst und wann nicht.",
+    "standard": 2,
+    "requires": [
+      "P_EN_VERBFORMEN"
+    ],
+    "steps": [
+      {
+        "chapter": "Die Fragewörter",
+        "title": "Zwei Arten von Fragen",
+        "body": "*Do you like pizza?*\nAntwort: Yes. Oder: No.\n\n*What do you like?*\nAntwort: Pizza.\n\nDie zweite Frage beginnt mit einem **Fragewort**.",
+        "say": "Schau dir die beiden Fragen an. Auf die erste kannst du nur mit ja oder nein antworten. Auf die zweite musst du etwas nennen. Der einzige Unterschied ist das Wort what am Anfang. So ein Wort heißt Fragewort, im Deutschen genauso wie im Englischen."
+      },
+      {
+        "title": "Die sechs wichtigsten",
+        "body": "**who** = wer\n**what** = was\n**where** = wo\n**when** = wann\n**why** = warum\n**how** = wie",
+        "tasks": [
+          {
+            "text": "when = ___",
+            "choices": [
+              "wann",
+              "wer",
+              "wo"
+            ],
+            "correct": "wann",
+            "why": "When fragt nach einer Zeit, also nach dem Wann.",
+            "hint": "Schau in die vierte Zeile der Tafel."
+          }
+        ],
+        "say": "Das sind die sechs Fragewörter, die du am häufigsten brauchst. Fünf davon beginnen mit wh, deshalb nennt man sie im Englischen auch wh-questions. Lies sie einmal langsam von oben nach unten. Unten kannst du gleich eins ausprobieren."
+      },
+      {
+        "title": "Die Falle mit who und where",
+        "body": "**who** = wer\nEs klingt wie das deutsche wo, bedeutet aber wer.\n\n**where** = wo\nEs klingt wie das deutsche wer, bedeutet aber wo.",
+        "tasks": [
+          {
+            "text": "___ is your teacher? – Mrs Brown.",
+            "choices": [
+              "Who",
+              "Where"
+            ],
+            "correct": "Who",
+            "why": "Die Antwort ist ein Mensch. Nach einem Menschen fragst du mit diesem Wort.",
+            "hint": "Schau auf die Antwort. Ist Mrs Brown ein Ort oder ein Mensch?"
+          }
+        ],
+        "say": "Diese beiden Wörter verwechseln fast alle, die Deutsch sprechen. Das liegt am Klang. Who klingt wie wo, und where klingt wie wer. Die Bedeutung ist aber genau umgekehrt. Merk dir: Auf who antwortest du mit einem Menschen, auf where mit einem Ort."
+      },
+      {
+        "title": "Fragen mit how",
+        "body": "**how many** = wie viele\n**how much** = wie viel\n**how old** = wie alt\n**how often** = wie oft\n**how long** = wie lange",
+        "say": "Mit how kannst du viele weitere Fragen bauen. Du hängst einfach ein zweites Wort an. How many nimmst du für Dinge, die man zählen kann, zum Beispiel Bücher. How much nimmst du für Dinge, die man nicht zählt, zum Beispiel Geld oder Wasser."
+      },
+      {
+        "title": "Jetzt du: Welches Fragewort passt?",
+        "body": "Schau auf die Antwort und tipp auf das passende Fragewort.",
+        "tasks": [
+          {
+            "text": "___ do you live? – In Berlin.",
+            "choices": [
+              "Where",
+              "Who",
+              "When"
+            ],
+            "correct": "Where",
+            "why": "Berlin ist ein Ort. Nach einem Ort fragst du mit diesem Wort.",
+            "hint": "Was ist Berlin: ein Mensch, eine Zeit oder ein Ort?"
+          },
+          {
+            "text": "___ are you late? – Because I missed the bus.",
+            "choices": [
+              "Why",
+              "What"
+            ],
+            "correct": "Why",
+            "why": "Because heißt weil. Die Antwort nennt einen Grund.",
+            "hint": "Die Antwort beginnt mit because. Wonach wurde also gefragt?"
+          },
+          {
+            "text": "___ brothers do you have? – Two.",
+            "choices": [
+              "How many",
+              "How much"
+            ],
+            "correct": "How many",
+            "why": "Brüder kann man zählen. Dafür nimmst du die Frage nach der Anzahl.",
+            "hint": "Kann man Brüder zählen? Welche der beiden Fragen passt dann?"
+          }
+        ],
+        "say": "Bei jeder Frage steht die Antwort schon dabei. Sie verrät dir, wonach gefragt wird. Ist die Antwort ein Ort, eine Zahl oder ein Grund? Dann weißt du, welches Fragewort du brauchst."
+      },
+      {
+        "chapter": "So baust du die Frage",
+        "title": "Die Reihenfolge",
+        "body": "**Fragewort** + **Helfer** + **Person** + **Verb**\n\n***Where** **do** **you** **live**?*",
+        "say": "Eine englische Frage hat eine feste Reihenfolge. Zuerst kommt das Fragewort. Dann kommt der Helfer do, den du schon kennst. Danach kommt die Person und zum Schluss das Verb in der Grundform. Im Deutschen ist das anders, deshalb lohnt es sich, die Reihenfolge einmal laut zu sagen."
+      },
+      {
+        "title": "Der Helfer zeigt Person und Zeit",
+        "body": "*Where **do** you live?*\n*Where **does** she live?*\n*Where **did** you live?*",
+        "tasks": [
+          {
+            "text": "Where ___ he work?",
+            "choices": [
+              "does",
+              "do"
+            ],
+            "correct": "does",
+            "why": "He gehört zu he, she, it. Dann bekommt der Helfer das s.",
+            "hint": "Zu welcher Gruppe gehört he? Was passiert dann mit dem Helfer?"
+          }
+        ],
+        "say": "Der Helfer verändert sich genauso wie in den Fragen ohne Fragewort. Bei he, she, it heißt er does. Für die Vergangenheit heißt er did. Das Verb live bleibt in allen drei Fragen gleich, weil der Helfer schon alles zeigt."
+      },
+      {
+        "title": "Mit be brauchst du kein do",
+        "body": "*Where **is** the station?*\n*How old **are** you?*\n*Why **was** he late?*",
+        "tasks": [
+          {
+            "text": "Where ___ my keys?",
+            "choices": [
+              "are",
+              "do"
+            ],
+            "correct": "are",
+            "why": "Keys sind mehrere, also they. Und be braucht keinen Helfer.",
+            "hint": "Fehlt hier ein Verb für sein? Und sind die Schlüssel einer oder mehrere?"
+          }
+        ],
+        "say": "Wenn das Verb im Satz eine Form von be ist, brauchst du kein do. Am, is, are, was und were können selbst an die zweite Stelle rücken. Es heißt also where is the station und nicht where does the station be."
+      },
+      {
+        "title": "Wenn schon ein Helfer da ist",
+        "body": "*What **are** you doing?*\n*Where **have** you been?*\n*What **will** you do?*\n*When **can** we go?*",
+        "say": "Dasselbe gilt für alle anderen Helfer. Steht im Satz schon are, have, will oder can, dann rückt dieser Helfer hinter das Fragewort. Do ist nur der Ersatzhelfer. Er springt ein, wenn sonst keiner da ist."
+      },
+      {
+        "title": "Wer hat das getan?",
+        "body": "Richtig: ***Who** broke the window?*\n\nFalsch: *Who did break the window?*\n\nFragst du nach dem, der etwas **tut**, brauchst du kein do.",
+        "tasks": [
+          {
+            "text": "Who ___ here?",
+            "choices": [
+              "lives",
+              "does live"
+            ],
+            "correct": "lives",
+            "why": "Gefragt wird nach der Person, die etwas tut. Dann steht das Verb direkt nach who.",
+            "hint": "Wird nach der Person gefragt, die etwas tut? Braucht man dann einen Helfer?"
+          }
+        ],
+        "say": "Hier gibt es eine Ausnahme. Wenn who nach der Person fragt, die etwas getan hat, steht das Verb direkt dahinter. Der Satz ist dann gebaut wie eine normale Aussage, nur steht who dort, wo sonst der Name stünde."
+      },
+      {
+        "title": "Jetzt du: Fragen bauen",
+        "body": "Tipp bei jeder Frage auf die richtige Ergänzung.",
+        "tasks": [
+          {
+            "text": "___ you go yesterday?",
+            "choices": [
+              "Where did",
+              "Where do"
+            ],
+            "correct": "Where did",
+            "why": "Yesterday ist vorbei. Für die Vergangenheit heißt der Helfer did.",
+            "hint": "Welches Wort am Ende verrät dir die Zeit?"
+          },
+          {
+            "text": "What ___ she doing now?",
+            "choices": [
+              "is",
+              "does"
+            ],
+            "correct": "is",
+            "why": "Doing ist die ing-Form. Davor steht eine Form von be, und zu she gehört is.",
+            "hint": "Schau auf doing. Welches kleine Wort steht immer vor der ing-Form?"
+          },
+          {
+            "text": "How often ___ you play football?",
+            "choices": [
+              "do",
+              "are"
+            ],
+            "correct": "do",
+            "why": "Play ist ein normales Verb ohne Helfer. Dann springt do ein.",
+            "hint": "Steht play in der ing-Form? Wenn nicht, welcher Helfer springt ein?"
+          }
+        ],
+        "say": "Schau bei jeder Frage zuerst, ob schon ein Helfer oder eine Form von be im Satz steht. Wenn nicht, brauchst du do, does oder did. Achte dabei auf die Person und auf die Zeit."
+      },
+      {
+        "chapter": "Antworten und typische Fehler",
+        "title": "Kurze Antworten",
+        "body": "*Do you like tea?*\n*Yes, I **do**.* oder *No, I **don't**.*\n\n*Is she at home?*\n*Yes, she **is**.* oder *No, she **isn't**.*",
+        "say": "Auf eine Frage ohne Fragewort antwortet man im Englischen selten nur mit yes oder no. Das klingt etwas unhöflich. Man hängt die Person und den Helfer aus der Frage an. Der Helfer aus der Frage kommt also in der Antwort wieder."
+      },
+      {
+        "title": "Jetzt du: kurz antworten",
+        "body": "Tipp bei jeder Antwort auf den richtigen Helfer.",
+        "tasks": [
+          {
+            "text": "Can you swim? – Yes, I ___.",
+            "choices": [
+              "can",
+              "do"
+            ],
+            "correct": "can",
+            "why": "Die Frage beginnt mit can. Derselbe Helfer kommt in die Antwort.",
+            "hint": "Mit welchem Wort beginnt die Frage?"
+          },
+          {
+            "text": "Did he call? – No, he ___.",
+            "choices": [
+              "didn't",
+              "doesn't"
+            ],
+            "correct": "didn't",
+            "why": "Die Frage beginnt mit did. Im Nein-Satz wird daraus die Kurzform mit not.",
+            "hint": "Mit welchem Helfer beginnt die Frage? In welcher Zeit steht er?"
+          },
+          {
+            "text": "Are they here? – Yes, they ___.",
+            "choices": [
+              "are",
+              "do"
+            ],
+            "correct": "are",
+            "why": "Die Frage beginnt mit are. Derselbe Helfer kommt in die Antwort.",
+            "hint": "Mit welchem Wort beginnt die Frage?"
+          }
+        ],
+        "say": "Such in jeder Frage das erste Wort. Das ist der Helfer. Genau dieser Helfer gehört auch in die Antwort."
+      },
+      {
+        "title": "Höflich fragen",
+        "body": "*Can I have some water, please?*\n*Could you help me, please?*\n\ncould ist höflicher als can.",
+        "say": "In der Prüfung musst du manchmal eine höfliche Bitte schreiben, zum Beispiel in einer E-Mail. Mit could klingt deine Frage freundlicher als mit can. Und das kleine Wort please am Ende gehört im Englischen fast immer dazu."
+      },
+      {
+        "title": "Zwei typische Fehler",
+        "body": "Falsch: *Where you live?*\nRichtig: *Where **do** you live?*\n\nFalsch: *What does she likes?*\nRichtig: *What does she **like**?*",
+        "tasks": [
+          {
+            "text": "Why ___ you cry yesterday?",
+            "choices": [
+              "did",
+              "do"
+            ],
+            "correct": "did",
+            "why": "Yesterday ist vorbei. Der Helfer für die Vergangenheit fehlt hier.",
+            "hint": "Welches Wort am Ende zeigt dir die Zeit?"
+          }
+        ],
+        "say": "Der erste Fehler ist, den Helfer zu vergessen. Der zweite Fehler ist, dem Verb trotz does noch ein s zu geben. Du weißt schon, warum das falsch ist: Das s gibt es in einem Satz nur einmal, und does hat es bereits."
+      },
+      {
+        "title": "Das nimmst du mit",
+        "body": "(1) **who** = wer, **where** = wo\n\n(2) Fragewort + Helfer + Person + Verb\n\n(3) Mit be oder einem anderen Helfer brauchst du kein do.",
+        "tasks": [
+          {
+            "text": "___ does the film start? – At eight.",
+            "choices": [
+              "When",
+              "Where",
+              "Who"
+            ],
+            "correct": "When",
+            "why": "At eight ist eine Uhrzeit. Nach einer Zeit fragst du mit diesem Wort.",
+            "hint": "Was ist at eight: ein Ort, ein Mensch oder eine Zeit?"
+          }
+        ],
+        "say": "Das ist alles, was du für englische Fragen brauchst. Gleich kommen noch die Wörter zum Nachlesen und ein kleines Quiz. Vorher kannst du unten eine letzte Frage bauen."
+      }
+    ],
+    "vocab": [
+      {
+        "term": "Fragewort",
+        "plain": "Ein Wort am Anfang einer Frage, das sagt, wonach gefragt wird.",
+        "example": "who, what, where"
+      },
+      {
+        "term": "who",
+        "plain": "Wer. Die Antwort ist ein Mensch."
+      },
+      {
+        "term": "where",
+        "plain": "Wo. Die Antwort ist ein Ort."
+      },
+      {
+        "term": "why",
+        "plain": "Warum. Die Antwort beginnt oft mit because, also weil."
+      },
+      {
+        "term": "how many / how much",
+        "plain": "Wie viele bei Dingen, die man zählen kann. Wie viel bei Dingen, die man nicht zählt.",
+        "example": "How many books? How much money?"
+      },
+      {
+        "term": "could",
+        "plain": "Die höfliche Form von can in einer Bitte.",
+        "example": "Could you help me, please?"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Was bedeutet who?",
+        "choices": [
+          "wer",
+          "wo",
+          "wie",
+          "wann"
+        ],
+        "correct": "wer",
+        "explain": "Who klingt wie das deutsche wo, bedeutet aber wer. Die Antwort auf who ist immer ein Mensch."
+      },
+      {
+        "prompt": "___ do you go to school? – By bus.",
+        "choices": [
+          "How",
+          "Who",
+          "When",
+          "Where"
+        ],
+        "correct": "How",
+        "explain": "By bus heißt mit dem Bus. Die Antwort sagt, auf welche Weise jemand zur Schule kommt, also wie."
+      },
+      {
+        "prompt": "Welche Frage ist richtig?",
+        "choices": [
+          "Where does she live?",
+          "Where she lives?",
+          "Where does she lives?",
+          "Where do she live?"
+        ],
+        "correct": "Where does she live?",
+        "explain": "Nach dem Fragewort kommt der Helfer does, weil she zu he, she, it gehört. Das Verb steht dann in der Grundform."
+      },
+      {
+        "prompt": "What ___ you do last weekend?",
+        "choices": [
+          "did",
+          "do",
+          "does",
+          "are"
+        ],
+        "correct": "did",
+        "explain": "Last weekend ist vorbei. Für Fragen in der Vergangenheit brauchst du den Helfer did."
+      },
+      {
+        "prompt": "Where ___ the station?",
+        "choices": [
+          "is",
+          "does",
+          "do",
+          "did"
+        ],
+        "correct": "is",
+        "explain": "Hier ist das Verb eine Form von be. Mit be brauchst du kein do, und the station ist ein it."
+      },
+      {
+        "prompt": "Are you tired? – Yes, I ___.",
+        "choices": [
+          "am",
+          "do",
+          "are",
+          "is"
+        ],
+        "correct": "am",
+        "explain": "Der Helfer aus der Frage kommt in der Antwort wieder. Zu I gehört die Form am."
+      },
+      {
+        "prompt": "___ books have you got? – Ten.",
+        "choices": [
+          "How many",
+          "How much",
+          "How old",
+          "Who"
+        ],
+        "correct": "How many",
+        "explain": "Bücher kann man zählen. Für Dinge, die man zählen kann, fragst du mit how many."
+      },
+      {
+        "prompt": "Welche Bitte klingt am höflichsten?",
+        "choices": [
+          "Could you open the window, please?",
+          "Open the window.",
+          "You open the window?",
+          "Can you the window open?"
+        ],
+        "correct": "Could you open the window, please?",
+        "explain": "Could ist die höfliche Form, und please gehört zu einer freundlichen Bitte dazu."
+      }
+    ]
+  }
+]
