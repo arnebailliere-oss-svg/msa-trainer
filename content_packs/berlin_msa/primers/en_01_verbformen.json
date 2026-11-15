@@ -3,71 +3,832 @@
     "id": "P_EN_VERBFORMEN",
     "subject": "EN",
     "title": "Verbformen von Anfang an",
-    "teaser": "Die fünf Gestalten eines Verbs, die drei Helfer be, have, do und wie Fragen und Verneinungen gebaut werden",
-    "hook": "Alle englischen Zeitformen sind aus denselben Bausteinen gemacht: ein Verb in einer seiner Formen, manchmal mit einem Helfer davor. Wenn du die Bausteine kennst, kannst du jede Zeit bauen. Wir fangen ganz vorn an.",
-    "outro": "Grundform, -s, -ing, 2. Form, 3. Form. Plus be, have, do. Mehr Material brauchst du für keine einzige Zeitform.",
+    "teaser": "Was ein Verb ist, welche fünf Formen es im Englischen hat und wie die drei Helfer be, have und do Fragen und Verneinungen bauen. In sieben kurzen Kapiteln, mit Übungen auf fast jeder Tafel.",
+    "hook": "In dieser Lektion musst du nichts können und nichts wissen. Wir fangen bei der Frage an, was ein Tu-Wort überhaupt ist, und gehen dann in kleinen Schritten weiter. Lass dir bei jeder Tafel so viel Zeit, wie du brauchst. Du kannst jederzeit zurückblättern.",
+    "outro": "Du kennst jetzt die fünf Formen eines englischen Verbs und die drei Helfer be, have und do. Daraus ist jede Zeitform gebaut, die du in der Schule lernst. Wenn etwas noch wackelt, geh die Tafeln einfach noch einmal durch. Wiederholen ist kein Rückschritt, so lernt jeder Mensch.",
     "steps": [
       {
-        "title": "Ein Verb, fünf Gestalten",
-        "body": "**go** – **goes** – **going** – **went** – **gone**\n\nGrundform, -s-Form, -ing-Form, 2. Form, 3. Form",
-        "say": "Fünf Gestalten, ein Verb. Jede Zeitform benutzt eine davon. Wer die Formen kennt, kann jede Zeit bauen."
+        "chapter": "Was ein Verb ist",
+        "title": "Was ist ein Verb?",
+        "body": "Lena **spielt**. Tom **isst**. Der Hund **schläft**.\n\nDas fette Wort sagt, **was jemand tut**.\n\nSo ein Wort heißt **Verb**.",
+        "say": "Wir fangen ganz vorn an. Ein Verb ist ein Tu-Wort. Es sagt, was jemand tut: spielen, essen, schlafen. In jedem Satz steckt ein Verb. Ohne Verb passiert in einem Satz nichts."
       },
       {
+        "title": "Jetzt du: Finde das Verb",
+        "body": "Tipp in jedem Satz auf das Wort, das sagt, was jemand tut.",
+        "tasks": [
+          {
+            "text": "Mia lacht laut. Das Verb ist: ___",
+            "choices": [
+              "Mia",
+              "lacht",
+              "laut"
+            ],
+            "correct": "lacht",
+            "why": "Lacht sagt, was Mia tut. Deshalb ist lacht das Verb.",
+            "hint": "Frag dich: Was tut Mia? Das Wort, das darauf antwortet, ist das Verb."
+          },
+          {
+            "text": "Der Bus kommt spät. Das Verb ist: ___",
+            "choices": [
+              "Bus",
+              "kommt",
+              "spät"
+            ],
+            "correct": "kommt",
+            "why": "Kommt sagt, was der Bus tut. Auch Dinge können etwas tun.",
+            "hint": "Frag dich: Was tut der Bus? Genau dieses Wort suchst du."
+          },
+          {
+            "text": "Wir essen Pizza. Das Verb ist: ___",
+            "choices": [
+              "Wir",
+              "essen",
+              "Pizza"
+            ],
+            "correct": "essen",
+            "why": "Essen sagt, was wir tun. Pizza ist nur das, was auf dem Teller liegt.",
+            "hint": "Frag dich: Was tun wir? Such das Wort für die Tätigkeit."
+          }
+        ],
+        "say": "Das probierst du gleich selbst aus. In jedem Satz steckt genau ein Verb. Frag dich bei jedem Satz: Was tut hier jemand? Tipp dann auf das Wort. Wenn du danebenliegst, ist das nicht schlimm. Du probierst es einfach noch einmal."
+      },
+      {
+        "title": "Verben verändern sich – das kennst du schon",
+        "body": "ich **gehe** · er **geht**\n\nich **ging** · ich bin **gegangen**\n\nViermal dasselbe Verb. Viermal sieht es anders aus.",
+        "say": "Im Deutschen machst du das jeden Tag, ohne darüber nachzudenken. Du sagst nicht: Gestern ich gehen nach Hause. Du sagst: Gestern ging ich nach Hause. Das Verb verändert sich, je nachdem, wer etwas tut und wann es passiert."
+      },
+      {
+        "title": "Im Englischen ist es genauso",
+        "body": "**go** · **goes** · **going** · **went** · **gone**\n\nFünfmal *gehen*.\n\nMehr Formen hat ein englisches Verb nicht.",
+        "say": "Jetzt die gute Nachricht: Ein englisches Verb hat nur fünf Formen. Im Deutschen sind es viel mehr. Du musst dir diese fünf jetzt noch nicht merken. Wir schauen uns jede einzeln an, eine nach der anderen.",
+        "tasks": [
+          {
+            "text": "Ein englisches Verb hat ___ Formen.",
+            "choices": [
+              "zwei",
+              "fünf",
+              "zwölf"
+            ],
+            "correct": "fünf",
+            "why": "Genau fünf Formen gibt es: go, goes, going, went und gone.",
+            "hint": "Zähl die Wörter in der ersten Zeile der Tafel noch einmal in Ruhe durch."
+          }
+        ]
+      },
+      {
+        "chapter": "Die Grundform und die s-Form",
         "title": "Die Grundform",
-        "body": "to go, to play, to be\n\nNach **to**, nach **Modalverben** (*can go*), nach **do / does / did** (*Did you go?*)",
-        "say": "Die Grundform steht im Wörterbuch. Mit to davor heißt sie Infinitiv."
+        "body": "**go** · **play** · **see** · **write**\n\nSo steht das Verb im **Wörterbuch**.\n\nDiese Form heißt **Grundform**. Nichts hängt dran.",
+        "say": "Die erste Form heißt Grundform. Das ist das Verb, so wie du es im Wörterbuch findest. Play heißt spielen, go heißt gehen. Von dieser Form aus bauen wir alle anderen."
+      },
+      {
+        "title": "Wann nimmst du die Grundform?",
+        "body": "**I play** football. **You play** football.\n\n**We play** football. **They play** football.\n\nBei *I, you, we, they* bleibt das Verb, wie es ist.",
+        "say": "Wenn du sagen willst, was jemand immer oder oft macht, nimmst du einfach die Grundform. Im Deutschen heißt es ich spiele, du spielst, wir spielen. Im Englischen heißt es jedes Mal nur play. Das ist leichter als im Deutschen."
       },
       {
         "title": "Die -s-Form",
-        "body": "he / she / it → **plays**, **goes**, **watches**\n\nNur im Simple Present.",
-        "say": "He, she, it, das s muss mit. Der häufigste Fehler in jeder Klassenarbeit."
+        "body": "I play. → **Tom** play**s**.\n\nI like pizza. → **She** like**s** pizza.\n\nEs geht um **eine** andere Person: Ein **-s** kommt ans Verb.",
+        "say": "Jetzt passiert zum ersten Mal etwas mit dem Verb. Schau dir die beiden Sätze in Ruhe an. Sobald du über genau eine andere Person sprichst, hängt sich ein s an das Verb. Aus play wird plays. Aus like wird likes."
       },
       {
+        "title": "he, she, it – wer ist das?",
+        "body": "**he** = er: Tom, my brother, the teacher\n\n**she** = sie: Lena, my mum\n\n**it** = es: the dog, the bus, my phone",
+        "say": "Diese eine andere Person nennt man im Englischen he, she oder it. Dazu gehören auch Dinge und Tiere. Du kannst es immer so prüfen: Kann ich dafür he, she oder it sagen? My brother, das ist he. The bus, das ist it. Dann braucht das Verb sein s.",
+        "tasks": [
+          {
+            "text": "my mum = ___",
+            "choices": [
+              "he",
+              "she",
+              "it"
+            ],
+            "correct": "she",
+            "why": "My mum ist eine Frau. Für eine Frau oder ein Mädchen sagst du she.",
+            "hint": "Meine Mutter ist eine Frau. Welches der drei kleinen Wörter heißt auf Deutsch sie?"
+          },
+          {
+            "text": "the bus = ___",
+            "choices": [
+              "he",
+              "she",
+              "it"
+            ],
+            "correct": "it",
+            "why": "Der Bus ist eine Sache, und für Sachen sagst du it.",
+            "hint": "Ein Bus ist eine Sache und kein Mensch. Welches Wort steht für Sachen?"
+          }
+        ]
+      },
+      {
+        "title": "Jetzt du: mit s oder ohne?",
+        "body": "Tipp bei jedem Satz auf die richtige Form.",
+        "say": "Jetzt bist du dran. Tipp bei jedem Satz auf die Form, die du für richtig hältst. Frag dich: Ist das eine einzelne Person oder Sache, also he, she oder it? Oder sind es mehrere? Nimm dir Zeit. Wenn etwas falsch ist, probierst du es einfach noch einmal.",
+        "tasks": [
+          {
+            "text": "My sister ___ music.",
+            "choices": [
+              "like",
+              "likes"
+            ],
+            "correct": "likes",
+            "why": "My sister ist eine Person, also she. Das Verb bekommt sein s.",
+            "hint": "Frag dich zuerst: Ist my sister eine einzelne Person? Welches kleine Wort passt für sie?"
+          },
+          {
+            "text": "My friends ___ music.",
+            "choices": [
+              "like",
+              "likes"
+            ],
+            "correct": "like",
+            "why": "My friends sind mehrere, also they. Da bleibt die Grundform, ohne s.",
+            "hint": "Zähl einmal nach: Ist my friends eine Person, oder sind es mehrere?"
+          },
+          {
+            "text": "The bus ___ here.",
+            "choices": [
+              "stops",
+              "stop"
+            ],
+            "correct": "stops",
+            "why": "Der Bus ist eine Sache, also it. Das Verb bekommt sein s.",
+            "hint": "Der Bus ist eine einzelne Sache. Welches kleine Wort passt dafür: he, she oder it?"
+          }
+        ]
+      },
+      {
+        "title": "Auflösung: mit s oder ohne?",
+        "body": "(1) My sister **likes** music. → *my sister* = she\n\n(2) My friends **like** music. → *my friends* = they, mehrere\n\n(3) The bus **stops** here. → *the bus* = it",
+        "say": "My sister ist eine Person, also she. Das Verb bekommt sein s. My friends sind mehrere, also they. Da bleibt die Grundform, ohne s. Und der Bus ist eine Sache, also it, mit s. Wenn du Satz zwei falsch hattest: Das geht fast allen so. Jetzt weißt du, worauf du achtest."
+      },
+      {
+        "title": "Manchmal reicht ein s nicht",
+        "body": "She watch**es** TV. (watch)\n\nHe wash**es** the car. (wash)\n\nNach **ch, sh, s** und **x** kommt **-es** statt -s.",
+        "say": "Sprich einmal watchs aus. Das geht kaum, die Zunge bleibt hängen. Deshalb schiebt das Englische ein e dazwischen: watches. Das passiert immer dann, wenn das Verb schon mit einem Zischen endet. Zwei ganz kurze Verben machen es genauso: Go wird zu goes, und do wird zu does."
+      },
+      {
+        "title": "Wenn das Verb auf y endet",
+        "body": "stu**dy**: She stud**ies**.\n\npl**ay**: She play**s**.\n\nSteht vor dem y ein **a, e, o** oder **u**, bleibt das y. Sonst wird daraus **ies**.",
+        "tasks": [
+          {
+            "text": "He ___ TV every evening.",
+            "choices": [
+              "watchs",
+              "watches"
+            ],
+            "correct": "watches",
+            "why": "Watch endet auf ch, also auf ein Zischen. Deshalb kommt es statt s.",
+            "hint": "Sprich beide Wörter leise aus. Welches kannst du gut aussprechen?"
+          },
+          {
+            "text": "She ___ English.",
+            "choices": [
+              "studys",
+              "studies"
+            ],
+            "correct": "studies",
+            "why": "Vor dem y steht ein d. Dann wird aus dem y ein ies.",
+            "hint": "Schau auf den Buchstaben vor dem y. Ist es a, e, o oder u?"
+          },
+          {
+            "text": "Tom ___ football.",
+            "choices": [
+              "plays",
+              "plaies"
+            ],
+            "correct": "plays",
+            "why": "Vor dem y steht ein a. Dann bleibt das y, und es kommt nur ein s dazu.",
+            "hint": "Schau auf den Buchstaben vor dem y. Ist es a, e, o oder u?"
+          }
+        ],
+        "say": "Noch eine kleine Schreibregel, dann hast du die s-Form ganz. Schau auf den Buchstaben vor dem y. Bei study ist das ein d. Dann wird aus dem y ein ies. Bei play steht vor dem y ein a. Dann bleibt alles, wie es ist. Probier es gleich unten aus."
+      },
+      {
+        "chapter": "Die ing-Form: was gerade passiert",
         "title": "Die -ing-Form",
-        "body": "play → play**ing**\n\nrun → run**n**ing\n\nwrite → writ**ing**\n\nFür alle Progressive-Zeiten: am / is / are / was / were + -ing",
-        "say": "Kurzer Vokal, Konsonant verdoppeln: running. Stummes e fällt weg: writing."
+        "body": "Look! Tom **is** play**ing** football.\n\n= Tom spielt **gerade jetzt** Fußball.\n\nGrundform + **ing**. Davor steht **is**.",
+        "say": "Manchmal willst du sagen: Das passiert genau jetzt, in diesem Moment. Stell dir vor, du schaust aus dem Fenster und siehst Tom auf dem Platz. Dafür hängst du ing an das Verb. Und schau genau hin: Vor playing steht noch ein kleines Wort, nämlich is."
       },
       {
-        "title": "Die 2. Form: Simple Past",
-        "body": "regelmäßig: play → play**ed**\n\nunregelmäßig: go → **went**, see → **saw**",
-        "say": "Die zweite Form steht allein, ohne Hilfsverb: I went home."
+        "title": "am, is oder are?",
+        "body": "**I am** playing.\n\n**He / she / it is** playing.\n\n**You / we / they are** playing.",
+        "say": "Die ing-Form steht nie allein. Vor ihr steht immer am, is oder are. Das sind die drei Formen von be. Be heißt sein, wie im Deutschen ich bin, er ist, wir sind. Zu I gehört am. Zu he, she, it gehört is. Zu allen anderen gehört are.",
+        "tasks": [
+          {
+            "text": "We ___ playing.",
+            "choices": [
+              "am",
+              "is",
+              "are"
+            ],
+            "correct": "are",
+            "why": "We sind mehrere, und zu you, we und they gehört are.",
+            "hint": "Schau auf die dritte Zeile der Tafel. Zu welcher Gruppe gehört we?"
+          }
+        ]
       },
       {
-        "title": "Die 3. Form: past participle",
-        "body": "regelmäßig: play**ed** (wie die 2. Form)\n\nunregelmäßig: **gone**, **seen**, **written**\n\nImmer mit **have / has / had**.",
-        "say": "Have gone, has seen, had written. Nie allein. Wenn du have siehst, kommt die dritte Form."
+        "title": "Zwei kleine Schreibregeln für -ing",
+        "body": "writ**e** → writ**ing**: Das **e** am Ende fällt weg.\n\nru**n** → ru**nn**ing: Der letzte Buchstabe wird **verdoppelt**.",
+        "say": "Sprich die Wörter einmal leise aus. Bei write hörst du das e am Ende gar nicht. Deshalb fällt es weg, wenn ing dazukommt. Run ist ein kurzes Wort mit einem einzelnen kurzen u und einem einzelnen n am Ende. Nur bei solchen kurzen Wörtern schreibst du den letzten Buchstaben doppelt, so wie bei swimming und sitting. Bei reading oder playing wird nichts verdoppelt."
       },
       {
-        "title": "Die drei Helfer",
-        "body": "**be**: am, is, are / was, were\n\n**have**: have, has / had\n\n**do**: do, does / did",
-        "say": "Diese drei bauen Fragen, Verneinungen und Zeitformen. Lern ihre Formen wie ein Gedicht."
+        "title": "Jetzt du: Was passiert gerade?",
+        "body": "Tipp bei jedem Satz auf die richtige Form.",
+        "say": "Tipp bei jedem Satz auf die richtige Form. Achte auf zwei Dinge: Gehört am, is oder are dazu? Und ist das Verb mit ing richtig geschrieben? Denk an die beiden Schreibregeln von eben.",
+        "tasks": [
+          {
+            "text": "She ___ an e-mail.",
+            "choices": [
+              "is writeing",
+              "is writing",
+              "are writing"
+            ],
+            "correct": "is writing",
+            "why": "She bekommt is. Und bei writing fällt das e von write weg.",
+            "hint": "Prüf zwei Dinge: Welches Wort gehört zu she? Und was passiert mit dem e am Ende, wenn ing dazukommt?"
+          },
+          {
+            "text": "They ___ to the bus.",
+            "choices": [
+              "are running",
+              "are runing",
+              "is running"
+            ],
+            "correct": "are running",
+            "why": "They bekommt are. Run ist ein kurzes Wort, deshalb wird das n verdoppelt.",
+            "hint": "Prüf zwei Dinge: Welches Wort gehört zu they? Und wird der letzte Buchstabe bei diesem kurzen Wort verdoppelt?"
+          },
+          {
+            "text": "I ___ a game.",
+            "choices": [
+              "is playing",
+              "are playing",
+              "am playing"
+            ],
+            "correct": "am playing",
+            "why": "Zu I gehört immer am, und zu keiner anderen Person.",
+            "hint": "Schau auf das erste Wort im Satz. Welches der drei kleinen Wörter gehört zu I?"
+          }
+        ]
       },
       {
-        "title": "Fragen mit do",
-        "body": "You like pizza. → **Do** you like pizza?\n\nShe likes pizza. → **Does** she like pizza?\n\nDas -s wandert zu **does**.",
-        "say": "Bei does und did steht das Verb wieder in der Grundform. Niemals „does she likes“."
+        "title": "Auflösung: Was passiert gerade?",
+        "body": "(1) She **is writing** an e-mail.\n\n(2) They **are running** to the bus.\n\n(3) I **am playing** a game.",
+        "say": "She bekommt is, they bekommt are, I bekommt am. Hast du bei writing das e weggelassen und bei running das n verdoppelt? Wenn nicht, ist das kein Problem. Blättere eine Tafel zurück und schau dir die beiden Regeln noch einmal an."
       },
       {
-        "title": "Verneinen mit not",
-        "body": "I do **not** (don't) like it.\n\nShe does**n't** like it. He did**n't** come.\n\nI **am not**, he **isn't**, they **can't**.",
-        "say": "Bei be und Modalverben kommt not direkt dahinter. Bei allen anderen Verben brauchst du do."
+        "title": "Kurz zurückschauen",
+        "body": "**play** – Grundform: *I play.*\n\n**plays** – -s-Form: *She plays.*\n\n**playing** – -ing-Form: *She is playing.*",
+        "say": "Bevor wir weitergehen, schauen wir kurz zurück. Drei von fünf Formen kennst du jetzt. Die Grundform für I, you, we, they. Die s-Form für he, she, it. Und die ing-Form für das, was gerade jetzt passiert. Lies die drei Beispielsätze einmal in Ruhe.",
+        "tasks": [
+          {
+            "text": "Every day she ___ football.",
+            "choices": [
+              "play",
+              "plays",
+              "playing"
+            ],
+            "correct": "plays",
+            "why": "Every day heißt jeden Tag. Es passiert also oft, und she bekommt dann die s-Form.",
+            "hint": "Passiert das gerade jetzt, oder passiert es jeden Tag? Und wer tut es?"
+          }
+        ]
+      },
+      {
+        "chapter": "Die Vergangenheit",
+        "title": "Die Vergangenheit: die 2. Form",
+        "body": "Heute: I **play** football.\n\nGestern: I **played** football.\n\nGrundform + **ed**: Es ist **vorbei**.",
+        "say": "Jetzt gehen wir in die Vergangenheit. Etwas ist gestern passiert, oder letzte Woche. Es ist vorbei. Dann hängst du ed an das Verb. Aus play wird played. Diese Form heißt **Simple Past**, das bedeutet einfache Vergangenheit. In Verblisten steht sie an zweiter Stelle. Deshalb nennt man sie auch die 2. Form."
+      },
+      {
+        "title": "Die 2. Form ist für alle gleich",
+        "body": "**I** played. **She** played. **They** played.\n\nKein -s. Kein Wort davor.\n\nDas Verb steht **allein**.",
+        "say": "Hier wird es wieder leichter. In der Vergangenheit ist es egal, wer etwas getan hat. Es gibt kein s für he, she, it. Es steht auch kein am, is oder are davor. Es ist immer dieselbe Form, für alle.",
+        "tasks": [
+          {
+            "text": "Yesterday she ___ tennis.",
+            "choices": [
+              "plays",
+              "played",
+              "playeds"
+            ],
+            "correct": "played",
+            "why": "Gestern ist vorbei, also ed. Und in der Vergangenheit gibt es kein s, auch nicht bei she.",
+            "hint": "Zwei Fragen: Ist es vorbei? Und gibt es in der Vergangenheit ein s für she?"
+          }
+        ]
+      },
+      {
+        "title": "Manche Verben machen nicht mit",
+        "body": "go → nicht *goed*, sondern **went**\n\nsee → nicht *seed*, sondern **saw**\n\nwrite → nicht *writed*, sondern **wrote**",
+        "say": "Einige Verben halten sich nicht an die Regel mit ed. Man nennt sie unregelmäßige Verben. Im Deutschen gibt es das auch. Du sagst ich ging und nicht ich gehte. Für diese Formen gibt es leider keinen Trick. Man lernt sie nach und nach, und die wichtigsten begegnen dir ständig."
+      },
+      {
+        "title": "Jetzt du: Was war gestern?",
+        "body": "Tipp bei jedem Satz auf die richtige Form.",
+        "say": "Tipp auf die richtige Form. Überleg bei jedem Verb zuerst: Ist es ein normales Verb, das ed bekommt? Oder ist es eins von den drei Verben auf der letzten Tafel, die nicht mitmachen?",
+        "tasks": [
+          {
+            "text": "Yesterday we ___ cards.",
+            "choices": [
+              "plays",
+              "played",
+              "playing"
+            ],
+            "correct": "played",
+            "why": "Play ist ein normales Verb. In der Vergangenheit bekommt es ed.",
+            "hint": "Gestern ist vorbei. Was hängst du bei einem normalen Verb an, wenn etwas vorbei ist?"
+          },
+          {
+            "text": "Last week I ___ to Hamburg.",
+            "choices": [
+              "goed",
+              "gone",
+              "went"
+            ],
+            "correct": "went",
+            "why": "Go ist unregelmäßig. Die 2. Form heißt went.",
+            "hint": "Dieses Verb gehört zu denen, die nicht mitmachen. Blättere ruhig eine Tafel zurück und schau nach."
+          },
+          {
+            "text": "She ___ a film on Sunday.",
+            "choices": [
+              "saw",
+              "saws",
+              "seed"
+            ],
+            "correct": "saw",
+            "why": "See ist unregelmäßig, die 2. Form heißt saw. In der Vergangenheit gibt es kein s, auch nicht bei she.",
+            "hint": "Zwei Fragen helfen dir: Gibt es in der Vergangenheit ein s? Und macht dieses Verb bei der Regel mit ed mit?"
+          }
+        ]
+      },
+      {
+        "title": "Auflösung: Was war gestern?",
+        "body": "(1) Yesterday we **played** cards. → regelmäßig, mit *ed*\n\n(2) Last week I **went** to Hamburg. → *go* ist unregelmäßig\n\n(3) She **saw** a film on Sunday. → *see* ist unregelmäßig",
+        "say": "Play ist ein normales Verb und bekommt ed. Go und see sind unregelmäßig, also went und saw. Vielleicht wolltest du bei Satz drei ein s anhängen, weil dort she steht. In der Vergangenheit gibt es aber kein s. Es heißt einfach she saw."
+      },
+      {
+        "title": "be in der Vergangenheit: was und were",
+        "body": "Heute: I **am** at home.\nGestern: I **was** at home.\n\n**I / he / she / it was**\n\n**you / we / they were**",
+        "tasks": [
+          {
+            "text": "Yesterday I ___ at school.",
+            "choices": [
+              "was",
+              "were"
+            ],
+            "correct": "was",
+            "why": "Zu I gehört was, genau wie zu he, she und it.",
+            "hint": "Schau auf die Tafel: In welcher der beiden Zeilen steht I?"
+          },
+          {
+            "text": "We ___ late.",
+            "choices": [
+              "was",
+              "were"
+            ],
+            "correct": "were",
+            "why": "We sind mehrere. Zu you, we und they gehört were.",
+            "hint": "We sind mehrere Personen. In welcher Zeile der Tafel stehen sie?"
+          },
+          {
+            "text": "My dog ___ ill last week.",
+            "choices": [
+              "was",
+              "were"
+            ],
+            "correct": "was",
+            "why": "My dog ist ein einzelnes Tier, also it. Zu it gehört was.",
+            "hint": "Kannst du für my dog he, she oder it sagen? Schau dann in die passende Zeile."
+          }
+        ],
+        "say": "Ein Verb fehlt noch, und es ist das häufigste von allen: be, also sein. In der Vergangenheit hat es zwei Formen. Was gehört zu I, he, she und it. Were gehört zu you, we und they. Im Deutschen ist es ähnlich: ich war, wir waren. Tipp unten die passende Form an."
+      },
+      {
+        "chapter": "Die 3. Form nach have",
+        "title": "Die 3. Form",
+        "body": "I **have** play**ed** this game before.\n\n= Ich **habe** dieses Spiel schon einmal **gespielt**.\n\nNach *have* steht die **3. Form**.",
+        "say": "Jetzt kommt die letzte Form. Du brauchst sie, wenn du sagst, was jemand schon einmal gemacht hat. Vergleich den englischen Satz mit dem deutschen darunter. Ich habe gespielt. I have played. Die beiden Sätze sind gleich gebaut: erst haben, dann das Verb in der dritten Form."
+      },
+      {
+        "title": "Die 3. Form steht nie allein",
+        "body": "I **have** seen it. She **has** seen it.\n\nNicht: *She seen it.*\n\nDavor steht immer **have**. Bei he, she, it: **has**.",
+        "say": "Auch das ist wie im Deutschen. Du sagst nicht: Ich gesehen den Film. Du sagst: Ich habe den Film gesehen. Have ist der Helfer, und die dritte Form kommt danach. Bei he, she, it wird aus have ein has. Da ist es wieder, das s von vorhin.",
+        "tasks": [
+          {
+            "text": "He ___ seen it.",
+            "choices": [
+              "have",
+              "has"
+            ],
+            "correct": "has",
+            "why": "He gehört zu he, she, it. Da wird aus have ein has.",
+            "hint": "Wer hat hier etwas gesehen? Gehört diese Person zu he, she, it?"
+          }
+        ]
+      },
+      {
+        "title": "Regelmäßig: 2. und 3. Form sehen gleich aus",
+        "body": "play – play**ed** – play**ed**\n\nwatch – watch**ed** – watch**ed**\n\nHier gibt es nichts Neues zu lernen.",
+        "say": "Bei allen normalen Verben sieht die dritte Form genauso aus wie die zweite. Beide enden auf ed. Woran erkennst du dann den Unterschied? An dem Wort davor. Steht have oder has davor, ist es die dritte Form. Steht das Verb allein, ist es die zweite."
+      },
+      {
+        "title": "Unregelmäßig: drei Formen als Päckchen",
+        "body": "go – **went** – **gone**\n\nsee – **saw** – **seen**\n\nwrite – **wrote** – **written**",
+        "say": "Unregelmäßige Verben lernt man immer zu dritt, wie einen kleinen Reim. Go, went, gone. See, saw, seen. Sag sie dir ruhig ein paarmal laut vor. In der Schule zählt man dabei so: go ist die 1. Form, went die 2. Form und gone die 3. Form. Eine Liste mit den wichtigsten Verben findest du später auf dem Spickzettel."
+      },
+      {
+        "title": "Jetzt du: 2. oder 3. Form?",
+        "body": "Tipp bei jedem Satz auf die richtige Form.",
+        "say": "Tipp auf die richtige Form. Schau zuerst, ob vor der Lücke have oder has steht. Wenn ja, brauchst du die dritte Form. Wenn das Verb allein steht, brauchst du die zweite Form.",
+        "tasks": [
+          {
+            "text": "I have ___ this film.",
+            "choices": [
+              "saw",
+              "seen"
+            ],
+            "correct": "seen",
+            "why": "Davor steht have. Nach have kommt die 3. Form: seen.",
+            "hint": "Schau auf das Wort vor der Lücke. Steht dort ein Helfer, oder steht das Verb allein?"
+          },
+          {
+            "text": "I ___ this film yesterday.",
+            "choices": [
+              "saw",
+              "seen"
+            ],
+            "correct": "saw",
+            "why": "Das Verb steht allein, ohne have. Also die 2. Form: saw.",
+            "hint": "Schau auf das Wort vor der Lücke. Steht dort have, oder steht das Verb ganz allein?"
+          },
+          {
+            "text": "She has ___ home.",
+            "choices": [
+              "went",
+              "gone"
+            ],
+            "correct": "gone",
+            "why": "Davor steht has. Nach has kommt die 3. Form: gone.",
+            "hint": "Vor der Lücke steht has. Welche Form kommt nach diesem Helfer, die zweite oder die dritte?"
+          }
+        ]
+      },
+      {
+        "title": "Auflösung: 2. oder 3. Form?",
+        "body": "(1) I have **seen** this film. → nach *have*: 3. Form\n\n(2) I **saw** this film yesterday. → allein: 2. Form\n\n(3) She has **gone** home. → nach *has*: 3. Form",
+        "say": "Das ist die wichtigste Unterscheidung in dieser Lektion. Steht der Helfer have oder has davor, kommt die dritte Form. Steht kein Helfer davor, kommt die zweite Form. Wenn du das verstanden hast, hast du heute viel geschafft."
+      },
+      {
+        "title": "Alle fünf Formen auf einen Blick",
+        "body": "**go**: *I go.*\n**goes**: *She goes.*\n**going**: *She is going.*\n**went**: *She went.*\n**gone**: *She has gone.*",
+        "say": "Jetzt kennst du alle fünf. Jede hat ihre eigene Aufgabe. Die Grundform und die s-Form sind für das, was oft passiert. Die ing-Form ist für gerade jetzt. Die zweite Form ist für gestern. Die dritte Form steht nach have. Probier unten noch einen Satz aus, bevor es mit den Helfern weitergeht.",
+        "tasks": [
+          {
+            "text": "Look! He is ___ home.",
+            "choices": [
+              "go",
+              "goes",
+              "going"
+            ],
+            "correct": "going",
+            "why": "Vor der Lücke steht is. Nach am, is und are kommt die ing-Form.",
+            "hint": "Schau auf das kleine Wort vor der Lücke. Welche Form steht immer nach am, is oder are?"
+          }
+        ]
+      },
+      {
+        "chapter": "Die drei Helfer und die Fragen",
+        "title": "Helfer: kleine Verben, die anderen helfen",
+        "body": "She **is** playing. She **has** played.\n\n*is* und *has* helfen hier dem Verb *play*.\n\nSolche Wörter heißen **Hilfsverben**.",
+        "say": "Zwei Helfer hast du schon benutzt, ohne dass ich das Wort gesagt habe. Der erste ist be, mit seinen Formen am, is und are. Der zweite ist have, mit have und has. Sie stehen vor dem eigentlichen Verb und helfen ihm. Es gibt noch einen dritten Helfer. Den brauchst du für Fragen."
+      },
+      {
+        "title": "Der dritte Helfer: do",
+        "body": "Aussage: You like pizza.\n\nFrage: **Do** you like pizza?\n\nFür die Frage kommt **Do** an den Anfang. Der Rest bleibt stehen.",
+        "say": "Im Deutschen drehst du für eine Frage den Satz um: Du magst Pizza wird zu Magst du Pizza? Im Englischen geht das nicht. Like you pizza ist falsch. Stattdessen stellst du das kleine Wort do an den Anfang. Alles andere bleibt genau so, wie es war."
+      },
+      {
+        "title": "Bei he, she, it: does",
+        "body": "Aussage: She like**s** pizza.\n\nFrage: **Does** she **like** pizza?\n\nDas **-s** wandert vom Verb zum Helfer: *do* wird *does*.",
+        "say": "Schau genau, wohin das s geht. In der Aussage hängt es an like. In der Frage hängt es am Helfer, aus do wird does. In einem Satz gibt es dieses s nur einmal. Wenn does es schon hat, braucht like es nicht mehr. Deshalb heißt es does she like und nicht does she likes.",
+        "tasks": [
+          {
+            "text": "___ he like pizza?",
+            "choices": [
+              "Do",
+              "Does"
+            ],
+            "correct": "Does",
+            "why": "He gehört zu he, she, it. Deshalb bekommt der Helfer das s und heißt does.",
+            "hint": "Wer mag hier Pizza? Gehört diese Person zu he, she, it?"
+          }
+        ]
+      },
+      {
+        "title": "Nach gestern fragen: did",
+        "body": "Aussage: She **went** home.\n\nFrage: **Did** she **go** home?\n\n*did* zeigt die Vergangenheit. Das Verb steht wieder in der **Grundform**.",
+        "say": "Hier gilt derselbe Gedanke. Did ist die Vergangenheit von do. Did zeigt also schon, dass es um gestern geht. Das Verb dahinter muss das nicht noch einmal zeigen und geht zurück in die Grundform. Es heißt did she go und nicht did she went."
+      },
+      {
+        "title": "Jetzt du: Mach eine Frage daraus",
+        "body": "Tipp bei jedem Satz auf die richtige Form.",
+        "say": "Aus jedem Satz soll eine Frage werden. Tipp auf den richtigen Anfang. Überleg dir: Welcher Helfer gehört nach vorn, do, does oder did? Und in welcher Form steht das Verb danach?",
+        "tasks": [
+          {
+            "text": "They play tennis. → ___ tennis?",
+            "choices": [
+              "Do they play",
+              "Does they play",
+              "Do they plays"
+            ],
+            "correct": "Do they play",
+            "why": "Bei they heißt der Helfer do. Play bleibt in der Grundform.",
+            "hint": "Überleg zuerst: Sind they eine Person oder mehrere? Welcher Helfer gehört dann nach vorn?"
+          },
+          {
+            "text": "He plays tennis. → ___ tennis?",
+            "choices": [
+              "Does he plays",
+              "Do he play",
+              "Does he play"
+            ],
+            "correct": "Does he play",
+            "why": "Bei he heißt der Helfer does. Das s ist jetzt bei does, also steht play in der Grundform.",
+            "hint": "In einem Satz gibt es das s nur einmal. Wenn der Helfer es schon hat, was passiert dann mit dem Verb?"
+          },
+          {
+            "text": "He played tennis. → ___ tennis?",
+            "choices": [
+              "Did he played",
+              "Did he play",
+              "Does he play"
+            ],
+            "correct": "Did he play",
+            "why": "Für die Vergangenheit heißt der Helfer did. Play steht wieder in der Grundform.",
+            "hint": "Der Satz spricht von früher. Welcher Helfer zeigt die Vergangenheit, und in welcher Form steht das Verb danach?"
+          }
+        ]
+      },
+      {
+        "title": "Auflösung: Mach eine Frage daraus",
+        "body": "(1) **Do** they **play** tennis?\n\n(2) **Does** he **play** tennis?\n\n(3) **Did** he **play** tennis?",
+        "say": "Dreimal steht play in der Grundform. Der Helfer vorn trägt die ganze Information. Do für I, you, we, they. Does für he, she, it. Did für die Vergangenheit. Das Verb selbst bleibt immer gleich."
+      },
+      {
+        "chapter": "Nein sagen",
+        "title": "Nein sagen mit not",
+        "body": "I like it. → I **do not** like it.\n\nShe likes it. → She **does not** like it.\n\nHe came. → He **did not** come.",
+        "say": "Wenn du etwas verneinen willst, brauchst du denselben Helfer. Do, does oder did kommt vor das Verb, und das Wort not stellt sich direkt dahinter. Und wie bei den Fragen steht das Verb danach wieder in der Grundform: does not like, did not come."
+      },
+      {
+        "title": "Kurz gesprochen: don't, doesn't, didn't",
+        "body": "do not = **don't**\n\ndoes not = **doesn't**\n\ndid not = **didn't**",
+        "say": "Beim Sprechen und in Nachrichten an Freunde zieht man die beiden Wörter zusammen. So ein zusammengezogenes Wort nennt man **Kurzform**. Der kleine Strich oben heißt Apostroph. Er steht genau dort, wo das o von not weggefallen ist. Beide Schreibweisen sind richtig.",
+        "tasks": [
+          {
+            "text": "She does not like it. = She ___ like it.",
+            "choices": [
+              "don't",
+              "doesn't",
+              "didn't"
+            ],
+            "correct": "doesn't",
+            "why": "Does not wird zu doesn't zusammengezogen. Der Apostroph steht dort, wo das o fehlt.",
+            "hint": "Schau auf das Wort vor not im ersten Satz. Zu welcher Kurzform auf der Tafel gehört es?"
+          }
+        ]
+      },
+      {
+        "title": "Wenn schon ein Helfer im Satz steht",
+        "body": "She **is** playing.\n\nShe **is not** playing. · **Is** she playing?\n\nSteht schon *am, is, are* oder *have, has* da, brauchst du **kein do**.",
+        "say": "Do ist nur der Ersatzhelfer. Er springt ein, wenn im Satz noch kein Helfer steht. Wenn schon ein is oder ein has da ist, übernimmt dieser Helfer die Arbeit. Das not stellt sich hinter ihn. Und für die Frage geht er an den Anfang."
+      },
+      {
+        "title": "Jetzt du: Sag nein",
+        "body": "Tipp bei jedem Satz auf die richtige Form.",
+        "say": "Jetzt verneinst du die Sätze. Tipp auf die richtige Form. Schau bei jedem Satz zuerst, ob schon ein Helfer da ist. Wenn ja, kommt nur not dazu. Wenn nein, brauchst du don't oder doesn't.",
+        "tasks": [
+          {
+            "text": "We play cards. → We ___ cards.",
+            "choices": [
+              "doesn't play",
+              "don't play",
+              "not play"
+            ],
+            "correct": "don't play",
+            "why": "Bei we heißt der Helfer do. Mit not wird daraus don't.",
+            "hint": "Im Satz steht noch kein Helfer. Welcher Ersatzhelfer gehört zu we?"
+          },
+          {
+            "text": "Tom likes fish. → Tom ___ fish.",
+            "choices": [
+              "doesn't likes",
+              "don't like",
+              "doesn't like"
+            ],
+            "correct": "doesn't like",
+            "why": "Tom ist he, also doesn't. Das s ist schon bei does, deshalb steht like ohne s.",
+            "hint": "Tom ist eine einzelne Person. Welcher Helfer gehört dazu, und wer bekommt dann das s?"
+          },
+          {
+            "text": "She is sleeping. → She ___ sleeping.",
+            "choices": [
+              "doesn't",
+              "is not",
+              "don't is"
+            ],
+            "correct": "is not",
+            "why": "Is ist schon ein Helfer. Da kommt nur not dazu, kein do.",
+            "hint": "Schau genau hin: Steht in dem Satz schon ein Helfer vor sleeping?"
+          }
+        ]
+      },
+      {
+        "title": "Auflösung: Sag nein",
+        "body": "(1) We **don't play** cards.\n\n(2) Tom **doesn't like** fish. → kein -s an *like*\n\n(3) She **is not** sleeping. → *is* ist schon da",
+        "say": "In Satz eins und zwei gab es keinen Helfer, also springt do ein. Bei Tom wird daraus doesn't, und like verliert sein s. In Satz drei steht schon is. Da brauchst du kein do, nur not."
+      },
+      {
+        "title": "Dein Werkzeugkasten",
+        "body": "**5 Formen**: go · goes · going · went · gone\n\n**3 Helfer**: be · have · do\n\nDaraus ist jede englische **Zeitform** gebaut.",
+        "say": "Das war alles. Fünf Formen und drei Helfer, mehr Material gibt es nicht. Eine Zeitform zeigt, wann etwas passiert: jetzt, gestern oder morgen. Jede Zeitform, die du in der Schule lernst, ist aus diesen Teilen zusammengesetzt. Gleich kommen noch ein paar Wörter zum Nachlesen und ein kleines Quiz. Du schaffst das."
       }
     ],
     "vocab": [
-      { "term": "Grundform (Infinitiv)", "plain": "Die Form aus dem Wörterbuch.", "example": "go, to go" },
-      { "term": "-s-Form", "plain": "he/she/it im Simple Present.", "example": "she goes" },
-      { "term": "-ing-Form", "plain": "Für alle Progressive-Zeiten, nach be.", "example": "is going" },
-      { "term": "2. Form (Simple Past)", "plain": "Vergangenheit, steht allein.", "example": "went, played" },
-      { "term": "3. Form (past participle)", "plain": "Immer mit have/has/had.", "example": "has gone" },
-      { "term": "Hilfsverb", "plain": "Helfer: be, have, do.", "example": "is, has, did" },
-      { "term": "unregelmäßig", "plain": "Kein -ed, muss man lernen.", "example": "go – went – gone" }
+      {
+        "term": "Verb",
+        "plain": "Ein Tu-Wort. Es sagt, was jemand tut.",
+        "example": "play, go, see"
+      },
+      {
+        "term": "Grundform",
+        "plain": "Das Verb, so wie es im Wörterbuch steht. Für I, you, we, they.",
+        "example": "I go"
+      },
+      {
+        "term": "-s-Form",
+        "plain": "Grundform mit s. Nur bei he, she, it, wenn etwas immer oder oft passiert.",
+        "example": "she goes"
+      },
+      {
+        "term": "-ing-Form",
+        "plain": "Grundform mit ing. Für das, was gerade jetzt passiert. Davor steht immer am, is oder are.",
+        "example": "she is going"
+      },
+      {
+        "term": "2. Form (Simple Past)",
+        "plain": "Die Vergangenheit: gestern, letzte Woche. Sie steht allein und ist für alle Personen gleich.",
+        "example": "she went, she played"
+      },
+      {
+        "term": "3. Form (past participle)",
+        "plain": "Die Form nach have oder has. Wie im Deutschen gespielt oder gesehen.",
+        "example": "she has gone"
+      },
+      {
+        "term": "was / were",
+        "plain": "Die Vergangenheit von be (sein). Was bei I, he, she, it. Were bei you, we, they.",
+        "example": "I was at home. We were late."
+      },
+      {
+        "term": "regelmäßig",
+        "plain": "Ein Verb, das die 2. und 3. Form mit ed bildet.",
+        "example": "play – played – played"
+      },
+      {
+        "term": "unregelmäßig",
+        "plain": "Ein Verb, das sich nicht an die Regel mit ed hält. Man lernt seine drei Formen zusammen.",
+        "example": "go – went – gone"
+      },
+      {
+        "term": "Hilfsverb",
+        "plain": "Ein Helfer, der vor dem eigentlichen Verb steht: be, have oder do.",
+        "example": "is playing, has played, Do you play?"
+      },
+      {
+        "term": "don't / doesn't / didn't",
+        "plain": "Die kurzen Formen von do not, does not und did not.",
+        "example": "She doesn't like it."
+      }
     ],
     "quiz": [
-      { "prompt": "he/she/it im Simple Present: She ___ (play).", "choices": ["plays", "play", "playing", "played"], "correct": "plays", "explain": "he, she, it: das s muss mit." },
-      { "prompt": "Die -ing-Form von run?", "choices": ["running", "runing", "runnning", "runeing"], "correct": "running", "explain": "Kurzer Vokal, Konsonant verdoppeln." },
-      { "prompt": "Die 3. Form von go?", "choices": ["gone", "went", "goed", "going"], "correct": "gone", "explain": "go – went – gone. Die dritte Form steht nach have." },
-      { "prompt": "Frage: ___ she like pizza?", "choices": ["Does", "Do", "Is", "Has"], "correct": "Does", "explain": "he/she/it → does, danach die Grundform like." },
-      { "prompt": "Welche Form steht nach have?", "choices": ["3. Form (past participle)", "Grundform", "-ing-Form", "2. Form"], "correct": "3. Form (past participle)", "explain": "have gone, has seen, had written." }
-    ]
+      {
+        "prompt": "My brother ___ (play) the guitar.",
+        "choices": [
+          "plays",
+          "play",
+          "playing",
+          "played"
+        ],
+        "correct": "plays",
+        "explain": "My brother ist eine Person, also he. Bei he, she, it bekommt das Verb ein s."
+      },
+      {
+        "prompt": "My friends ___ (like) pizza.",
+        "choices": [
+          "like",
+          "likes",
+          "liking",
+          "is like"
+        ],
+        "correct": "like",
+        "explain": "My friends sind mehrere, also they. Da bleibt die Grundform ohne s."
+      },
+      {
+        "prompt": "Look! She ___ an e-mail.",
+        "choices": [
+          "is writing",
+          "is writeing",
+          "writing",
+          "are writing"
+        ],
+        "correct": "is writing",
+        "explain": "Es passiert gerade jetzt: is + Verb mit ing. Das e von write fällt weg."
+      },
+      {
+        "prompt": "Yesterday I ___ (go) to school by bus.",
+        "choices": [
+          "went",
+          "goed",
+          "gone",
+          "go"
+        ],
+        "correct": "went",
+        "explain": "Gestern ist Vergangenheit, also die 2. Form. Go ist unregelmäßig: go – went – gone."
+      },
+      {
+        "prompt": "I have ___ (see) this film.",
+        "choices": [
+          "seen",
+          "saw",
+          "see",
+          "seeing"
+        ],
+        "correct": "seen",
+        "explain": "Vor der Lücke steht have. Nach have kommt die 3. Form: see – saw – seen."
+      },
+      {
+        "prompt": "She likes cats. Wie heißt die Frage?",
+        "choices": [
+          "Does she like cats?",
+          "Does she likes cats?",
+          "Do she like cats?",
+          "Likes she cats?"
+        ],
+        "correct": "Does she like cats?",
+        "explain": "Bei she heißt der Helfer does. Das s ist jetzt bei does, also steht like in der Grundform."
+      },
+      {
+        "prompt": "He came. Wie heißt die Verneinung?",
+        "choices": [
+          "He didn't come.",
+          "He didn't came.",
+          "He doesn't came.",
+          "He not came."
+        ],
+        "correct": "He didn't come.",
+        "explain": "Vergangenheit: did not, kurz didn't. Danach steht das Verb in der Grundform: come."
+      },
+      {
+        "prompt": "He ___ (watch) TV every evening.",
+        "choices": [
+          "watches",
+          "watchs",
+          "watch",
+          "watching"
+        ],
+        "correct": "watches",
+        "explain": "He bekommt die s-Form. Weil watch auf ch endet, also auf ein Zischen, kommt es statt s."
+      },
+      {
+        "prompt": "Yesterday we ___ at home.",
+        "choices": [
+          "were",
+          "was",
+          "are",
+          "be"
+        ],
+        "correct": "were",
+        "explain": "Yesterday ist Vergangenheit, und we sind mehrere. Zu you, we und they gehört were."
+      },
+      {
+        "prompt": "___ she play tennis every week?",
+        "choices": [
+          "Does",
+          "Do",
+          "Is",
+          "Has"
+        ],
+        "correct": "Does",
+        "explain": "Für die Frage brauchst du den Helfer do. Bei she bekommt er das s und heißt does."
+      }
+    ],
+    "source": "Eigene Lektion; Stoffauswahl nach dem Aufgabenformat MSA Englisch (Grammatik-Grundlagen)",
+    "standard": 2
   }
 ]

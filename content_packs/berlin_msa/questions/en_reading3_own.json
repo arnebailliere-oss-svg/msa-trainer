@@ -1,0 +1,682 @@
+[
+  {
+    "id": "EN_MSA2024_R3_17",
+    "subject": "EN",
+    "topicId": "EN_READ_CORE",
+    "difficulty": 4,
+    "qtype": "MCQ",
+    "passage": "X_EN_ART_STREETLIGHTS",
+    "prompt": "**17.** Why did the council first think about switching off the street lights?",
+    "payload": {
+      "choices": [
+        "to spend less money",
+        "to make the stars visible again",
+        "to protect insects",
+        "because villagers had complained about the light"
+      ]
+    },
+    "solution": {
+      "correct_choice": "to spend less money"
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "Beleg im Text",
+        "body": "Absatz 2: *The idea did not come from star lovers. It came from the village council's accountant … lighting the empty streets … was costing more than the council spent on its library.* Sterne und Insekten kommen erst später im Text, als Folge."
+      },
+      {
+        "kind": "remember",
+        "body": "Teile den Artikel in Abschnitte ein, markiere die Schlüsselwörter der Frage (*council, first*) und suche sie im passenden Abschnitt."
+      }
+    ],
+    "tags": [
+      "exam",
+      "eigen",
+      "reading",
+      "article"
+    ],
+    "source": "Eigene Aufgabe im Format MSA Englisch, Reading Part 3"
+  },
+  {
+    "id": "EN_MSA2024_R3_18",
+    "subject": "EN",
+    "topicId": "EN_READ_CORE",
+    "difficulty": 4,
+    "qtype": "MCQ",
+    "passage": "X_EN_ART_STREETLIGHTS",
+    "prompt": "**18.** The money saved during the trial was meant to …",
+    "payload": {
+      "choices": [
+        "support places for readers and young people.",
+        "pay the council's accountant.",
+        "buy modern street lamps.",
+        "repair the road to the pub."
+      ]
+    },
+    "solution": {
+      "correct_choice": "support places for readers and young people."
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "Beleg im Text",
+        "body": "Absatz 2: *The money saved would go to the library and the youth club.* → *library* = Ort für Leser, *youth club* = Ort für junge Leute."
+      },
+      {
+        "kind": "remember",
+        "body": "Die richtige Antwort wiederholt den Text selten wörtlich. Sie sagt dasselbe mit anderen Wörtern."
+      }
+    ],
+    "tags": [
+      "exam",
+      "eigen",
+      "reading",
+      "article"
+    ],
+    "source": "Eigene Aufgabe im Format MSA Englisch, Reading Part 3"
+  },
+  {
+    "id": "EN_MSA2024_R3_19",
+    "subject": "EN",
+    "topicId": "EN_READ_CORE",
+    "difficulty": 4,
+    "qtype": "MCQ",
+    "passage": "X_EN_ART_STREETLIGHTS",
+    "prompt": "**19.** Sam Okoro was against the plan because …",
+    "payload": {
+      "choices": [
+        "he was worried about his employees' way home.",
+        "he feared he would lose customers.",
+        "the people affected had not been asked.",
+        "both A + C"
+      ]
+    },
+    "solution": {
+      "correct_choice": "both A + C"
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "Beleg im Text",
+        "body": "Absatz 3: *My staff walk home after closing time* (A) **und** *Nobody asked them how they feel* (C). Von Gästen, die wegbleiben, sagt er nichts."
+      },
+      {
+        "kind": "remember",
+        "body": "Bei *both A + C* müssen **beide** Aussagen im Text belegt sein. Prüfe jede einzeln."
+      }
+    ],
+    "tags": [
+      "exam",
+      "eigen",
+      "reading",
+      "article"
+    ],
+    "source": "Eigene Aufgabe im Format MSA Englisch, Reading Part 3"
+  },
+  {
+    "id": "EN_MSA2024_R3_20",
+    "subject": "EN",
+    "topicId": "EN_READ_CORE",
+    "difficulty": 4,
+    "qtype": "MCQ",
+    "passage": "X_EN_ART_STREETLIGHTS",
+    "prompt": "**20.** According to the police, …",
+    "payload": {
+      "choices": [
+        "the darkness did not lead to more crime.",
+        "burglars prefer to work at night.",
+        "there were fewer break-ins than before.",
+        "thieves often carry torches in the afternoon."
+      ]
+    },
+    "solution": {
+      "correct_choice": "the darkness did not lead to more crime."
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "Beleg im Text",
+        "body": "Absatz 4: *the number of break-ins … did not rise; it stayed exactly the same, at three.* Achtung: **gleich viele**, nicht weniger. Und: *Most burglaries … happen in the afternoon*, also gerade nicht nachts."
+      },
+      {
+        "kind": "remember",
+        "body": "Zahlenfalle: *did not rise* heißt nicht *fell*. Lies genau, ob etwas steigt, sinkt oder gleich bleibt."
+      }
+    ],
+    "tags": [
+      "exam",
+      "eigen",
+      "reading",
+      "article"
+    ],
+    "source": "Eigene Aufgabe im Format MSA Englisch, Reading Part 3"
+  },
+  {
+    "id": "EN_MSA2024_R3_21",
+    "subject": "EN",
+    "topicId": "EN_READ_CORE",
+    "difficulty": 4,
+    "qtype": "MCQ",
+    "passage": "X_EN_ART_STREETLIGHTS",
+    "prompt": "**21.** Dr Whitlock found out that …",
+    "payload": {
+      "choices": [
+        "the dark nights were good for insects.",
+        "moths are more important than bees.",
+        "bats avoid villages without lamps.",
+        "street lamps help moths to find flowers."
+      ]
+    },
+    "solution": {
+      "correct_choice": "the dark nights were good for insects."
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "Beleg im Text",
+        "body": "Absatz 5: *In the dark year we caught nearly twice as many moths in our traps.* Lampen **hindern** die Falter am Fressen (*instead of feeding and visiting flowers*). Dass Falter wichtiger als Bienen sind, sagt sie nicht – nur, dass auch nachts bestäubt wird."
+      },
+      {
+        "kind": "remember",
+        "body": "Namen sind Anker: Suche *Whitlock* im Text und lies nur, was sie sagt."
+      }
+    ],
+    "tags": [
+      "exam",
+      "eigen",
+      "reading",
+      "article"
+    ],
+    "source": "Eigene Aufgabe im Format MSA Englisch, Reading Part 3"
+  },
+  {
+    "id": "EN_MSA2024_R3_22",
+    "subject": "EN",
+    "topicId": "EN_READ_CORE",
+    "difficulty": 4,
+    "qtype": "MCQ",
+    "passage": "X_EN_ART_STREETLIGHTS",
+    "prompt": "**22.** What does Whitlock say about the sleep survey?",
+    "payload": {
+      "choices": [
+        "Its result should not be trusted too much.",
+        "It proves that darkness improves sleep.",
+        "Too few villagers took part in it.",
+        "It was carried out by doctors."
+      ]
+    },
+    "solution": {
+      "correct_choice": "Its result should not be trusted too much."
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "Beleg im Text",
+        "body": "Absatz 6: *Whitlock is careful with this number … People who like the project may simply want it to be true. We asked for opinions. We did not measure anybody's sleep.* → Meinungen sind kein Beweis."
+      },
+      {
+        "kind": "remember",
+        "body": "Achte auf Signalwörter wie *though, however, careful*: Danach kommt eine Einschränkung."
+      }
+    ],
+    "tags": [
+      "exam",
+      "eigen",
+      "reading",
+      "article"
+    ],
+    "source": "Eigene Aufgabe im Format MSA Englisch, Reading Part 3"
+  },
+  {
+    "id": "EN_MSA2024_R3_23",
+    "subject": "EN",
+    "topicId": "EN_READ_CORE",
+    "difficulty": 4,
+    "qtype": "MCQ",
+    "passage": "X_EN_ART_STREETLIGHTS",
+    "prompt": "**23.** How was the conflict in the village solved?",
+    "payload": {
+      "choices": [
+        "Some lamps now switch on only when they are needed.",
+        "All lamps were switched on again.",
+        "The pub now closes earlier.",
+        "The council pays for taxis after midnight."
+      ]
+    },
+    "solution": {
+      "correct_choice": "Some lamps now switch on only when they are needed."
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "Beleg im Text",
+        "body": "Absatz 7: *The lamps on the road between the pub and the bus stop were fitted with sensors: they now stay off until somebody walks by, then light up for three minutes.*"
+      }
+    ],
+    "tags": [
+      "exam",
+      "eigen",
+      "reading",
+      "article"
+    ],
+    "source": "Eigene Aufgabe im Format MSA Englisch, Reading Part 3"
+  },
+  {
+    "id": "EN_MSA2024_R3_24",
+    "subject": "EN",
+    "topicId": "EN_READ_CORE",
+    "difficulty": 4,
+    "qtype": "MCQ",
+    "passage": "X_EN_ART_STREETLIGHTS",
+    "prompt": "**24.** At the end of the trial, Sam Okoro …",
+    "payload": {
+      "choices": [
+        "accepts the solution.",
+        "still criticises how the decision was made.",
+        "wants to start a new petition.",
+        "both A + B"
+      ]
+    },
+    "solution": {
+      "correct_choice": "both A + B"
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "Beleg im Text",
+        "body": "Absatz 7: *Okoro took down his petition … my staff get home safely* (A) **und** *I still think they should have talked to us first* (B). Eine neue Unterschriftenliste plant er nicht."
+      },
+      {
+        "kind": "remember",
+        "body": "*still* zeigt: Etwas hat sich nicht geändert. *But* danach zeigt, was sich doch geändert hat."
+      }
+    ],
+    "tags": [
+      "exam",
+      "eigen",
+      "reading",
+      "article"
+    ],
+    "source": "Eigene Aufgabe im Format MSA Englisch, Reading Part 3"
+  },
+  {
+    "id": "EN_MSA2024_R3_25",
+    "subject": "EN",
+    "topicId": "EN_READ_CORE",
+    "difficulty": 4,
+    "qtype": "MCQ",
+    "passage": "X_EN_ART_STREETLIGHTS",
+    "prompt": "**25.** Another title for this article could be …",
+    "payload": {
+      "choices": [
+        "Lights out: how a village learned to like the dark",
+        "Why modern villages need more street lamps",
+        "The end of crime in the countryside",
+        "A beginner's guide to watching the stars"
+      ]
+    },
+    "solution": {
+      "correct_choice": "Lights out: how a village learned to like the dark"
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "Beleg im Text",
+        "body": "Der ganze Artikel erzählt den Versuch von Anfang (Absatz 1–2) über den Streit (3) und die Ergebnisse (4–6) bis zur Einigung (7–8). Kriminalität und Sterne sind nur einzelne Abschnitte."
+      },
+      {
+        "kind": "remember",
+        "body": "Ein Titel muss zum **ganzen** Text passen, nicht nur zu einem Absatz."
+      }
+    ],
+    "tags": [
+      "exam",
+      "eigen",
+      "reading",
+      "article"
+    ],
+    "source": "Eigene Aufgabe im Format MSA Englisch, Reading Part 3"
+  },
+  {
+    "id": "EN_MSA2023_R3_17",
+    "subject": "EN",
+    "topicId": "EN_READ_CORE",
+    "difficulty": 3,
+    "qtype": "MCQ",
+    "passage": "X_EN_ART_SECONDHAND",
+    "prompt": "**17.** What has changed at Threadbare over the last fifteen years?",
+    "payload": {
+      "choices": [
+        "Customers are no longer embarrassed to shop there.",
+        "The shop now sells only new clothes.",
+        "Older customers have replaced the young ones.",
+        "Filming inside the shop is no longer allowed."
+      ]
+    },
+    "solution": {
+      "correct_choice": "Customers are no longer embarrassed to shop there."
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "Beleg im Text",
+        "body": "Absatz 1: *Fifteen years ago, people came in here quietly and hoped nobody from school would see them … Now they film themselves at the till.* Früher heimlich, heute zeigen sie es allen."
+      },
+      {
+        "kind": "remember",
+        "body": "Die erste Frage zielt fast immer auf den Einstieg des Artikels. Suche das Gegensatzpaar *Fifteen years ago … Now …*."
+      }
+    ],
+    "tags": [
+      "exam",
+      "eigen",
+      "reading",
+      "article"
+    ],
+    "source": "Eigene Aufgabe im Format MSA Englisch, Reading Part 3"
+  },
+  {
+    "id": "EN_MSA2023_R3_18",
+    "subject": "EN",
+    "topicId": "EN_READ_CORE",
+    "difficulty": 4,
+    "qtype": "MCQ",
+    "passage": "X_EN_ART_SECONDHAND",
+    "prompt": "**18.** Which reason(s) for buying second-hand clothes does the text mention?",
+    "payload": {
+      "choices": [
+        "low prices",
+        "good quality",
+        "the wish to look different from others",
+        "all of them (A+B+C)"
+      ]
+    },
+    "solution": {
+      "correct_choice": "all of them (A+B+C)"
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "Beleg im Text",
+        "body": "Absatz 2: *costs a fraction of a new one* (A), *often better made than the cheap fashion* (B), *unlikely that anyone else in class will turn up wearing the same thing* (C)."
+      },
+      {
+        "kind": "remember",
+        "body": "*all of them* ist nur richtig, wenn du **jeden** einzelnen Punkt im Text findest. Hake sie einzeln ab."
+      }
+    ],
+    "tags": [
+      "exam",
+      "eigen",
+      "reading",
+      "article"
+    ],
+    "source": "Eigene Aufgabe im Format MSA Englisch, Reading Part 3"
+  },
+  {
+    "id": "EN_MSA2023_R3_19",
+    "subject": "EN",
+    "topicId": "EN_READ_CORE",
+    "difficulty": 4,
+    "qtype": "MCQ",
+    "passage": "X_EN_ART_SECONDHAND",
+    "prompt": "**19.** For many young shoppers, the most important reason is that second-hand clothes …",
+    "payload": {
+      "choices": [
+        "are better for the environment.",
+        "are easy to find online.",
+        "are worn by celebrities.",
+        "can be sold again later."
+      ]
+    },
+    "solution": {
+      "correct_choice": "are better for the environment."
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "Beleg im Text",
+        "body": "Absatz 2: *the strongest argument is a different one: every item that is worn again is one that does not have to be produced, transported and … thrown away.* → weniger Herstellung, Transport und Müll."
+      },
+      {
+        "kind": "remember",
+        "body": "*most important* → suche im Text ein Wort mit gleicher Bedeutung: *the strongest argument*."
+      }
+    ],
+    "tags": [
+      "exam",
+      "eigen",
+      "reading",
+      "article"
+    ],
+    "source": "Eigene Aufgabe im Format MSA Englisch, Reading Part 3"
+  },
+  {
+    "id": "EN_MSA2023_R3_20",
+    "subject": "EN",
+    "topicId": "EN_READ_CORE",
+    "difficulty": 4,
+    "qtype": "MCQ",
+    "passage": "X_EN_ART_SECONDHAND",
+    "prompt": "**20.** Callum Reid …",
+    "payload": {
+      "choices": [
+        "has almost completely stopped buying new clothes.",
+        "works at Threadbare on Saturdays.",
+        "sells his old jeans on apps.",
+        "only shops online."
+      ]
+    },
+    "solution": {
+      "correct_choice": "has almost completely stopped buying new clothes."
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "Beleg im Text",
+        "body": "Absatz 3: *He has not bought anything new for a year, apart from socks and underwear.* → fast nichts Neues. Auf Apps **kauft** er, vom Verkaufen steht nichts da; und die meisten Sachen findet er im Laden."
+      },
+      {
+        "kind": "remember",
+        "body": "Kleine Wörter entscheiden: *apart from* (außer), *most* (die meisten), *the rest* (der Rest)."
+      }
+    ],
+    "tags": [
+      "exam",
+      "eigen",
+      "reading",
+      "article"
+    ],
+    "source": "Eigene Aufgabe im Format MSA Englisch, Reading Part 3"
+  },
+  {
+    "id": "EN_MSA2023_R3_21",
+    "subject": "EN",
+    "topicId": "EN_READ_CORE",
+    "difficulty": 4,
+    "qtype": "MCQ",
+    "passage": "X_EN_ART_SECONDHAND",
+    "prompt": "**21.** What does Priya Nair criticise about some app users?",
+    "payload": {
+      "choices": [
+        "They leave nothing for people with little money.",
+        "They break the law.",
+        "They sell fake brand clothes.",
+        "They steal from charity shops."
+      ]
+    },
+    "solution": {
+      "correct_choice": "They leave nothing for people with little money."
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "Beleg im Text",
+        "body": "Absatz 4: *the people who really need a warm coat for five pounds now find an empty rail.* Ausdrücklich: *They are not doing anything illegal.*"
+      },
+      {
+        "kind": "remember",
+        "body": "Wenn eine Antwort das Gegenteil eines Satzes im Text behauptet, ist sie falsch – auch wenn das Wort (*illegal*) im Text vorkommt."
+      }
+    ],
+    "tags": [
+      "exam",
+      "eigen",
+      "reading",
+      "article"
+    ],
+    "source": "Eigene Aufgabe im Format MSA Englisch, Reading Part 3"
+  },
+  {
+    "id": "EN_MSA2023_R3_22",
+    "subject": "EN",
+    "topicId": "EN_READ_CORE",
+    "difficulty": 4,
+    "qtype": "MCQ",
+    "passage": "X_EN_ART_SECONDHAND",
+    "prompt": "**22.** Dr Hofmann's study shows that teenagers who buy second-hand …",
+    "payload": {
+      "choices": [
+        "often buy more than they need.",
+        "own fewer clothes than other teenagers.",
+        "wear every item many times.",
+        "spend more money than others."
+      ]
+    },
+    "solution": {
+      "correct_choice": "often buy more than they need."
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "Beleg im Text",
+        "body": "Absatz 5: *Those who mostly bought second-hand owned more items, not fewer … One in four pieces had been worn only once or never.*"
+      },
+      {
+        "kind": "remember",
+        "body": "*more items, not fewer*: Der Text betont den Vergleich selbst. Solche Stellen werden gern abgefragt."
+      }
+    ],
+    "tags": [
+      "exam",
+      "eigen",
+      "reading",
+      "article"
+    ],
+    "source": "Eigene Aufgabe im Format MSA Englisch, Reading Part 3"
+  },
+  {
+    "id": "EN_MSA2023_R3_23",
+    "subject": "EN",
+    "topicId": "EN_READ_CORE",
+    "difficulty": 4,
+    "qtype": "MCQ",
+    "passage": "X_EN_ART_SECONDHAND",
+    "prompt": "**23.** Why is the boom a problem for charity shops?",
+    "payload": {
+      "choices": [
+        "They are given a lot of clothes they cannot sell.",
+        "Dealing with useless donations costs them money.",
+        "They no longer receive enough donations.",
+        "both A + B"
+      ]
+    },
+    "solution": {
+      "correct_choice": "both A + B"
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "Beleg im Text",
+        "body": "Absatz 6: *much of it is cheap fashion that … cannot be sold again* (A) **und** *Sorting it and getting rid of it costs the shops money* (B). C ist das Gegenteil: *more donations than ever*."
+      },
+      {
+        "kind": "remember",
+        "body": "Bei *both A + B* müssen **beide** Aussagen belegt sein. Fehlt schon eine, ist die Kombination falsch."
+      }
+    ],
+    "tags": [
+      "exam",
+      "eigen",
+      "reading",
+      "article"
+    ],
+    "source": "Eigene Aufgabe im Format MSA Englisch, Reading Part 3"
+  },
+  {
+    "id": "EN_MSA2023_R3_24",
+    "subject": "EN",
+    "topicId": "EN_READ_CORE",
+    "difficulty": 4,
+    "qtype": "MCQ",
+    "passage": "X_EN_ART_SECONDHAND",
+    "prompt": "**24.** What does Hofmann recommend?",
+    "payload": {
+      "choices": [
+        "thinking carefully before buying something",
+        "buying new clothes again",
+        "staying away from charity shops",
+        "paying the full price for used clothes"
+      ]
+    },
+    "solution": {
+      "correct_choice": "thinking carefully before buying something"
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "Beleg im Text",
+        "body": "Absatz 7: *Her advice is simply to ask one question before paying: would I buy this at full price?* Sie rät nicht, den vollen Preis zu zahlen – die Frage ist nur ein Test. Und: *Buying used is still far better than buying new.*"
+      },
+      {
+        "kind": "remember",
+        "body": "*recommend* → suche *advice, should, suggest*. Dahinter steht der Rat."
+      }
+    ],
+    "tags": [
+      "exam",
+      "eigen",
+      "reading",
+      "article"
+    ],
+    "source": "Eigene Aufgabe im Format MSA Englisch, Reading Part 3"
+  },
+  {
+    "id": "EN_MSA2023_R3_25",
+    "subject": "EN",
+    "topicId": "EN_READ_CORE",
+    "difficulty": 5,
+    "qtype": "MCQ",
+    "passage": "X_EN_ART_SECONDHAND",
+    "prompt": "**25.** The focus of the text is on …",
+    "payload": {
+      "choices": [
+        "the good and bad sides of a fashion trend.",
+        "the history of a second-hand shop.",
+        "how to earn money with used clothes.",
+        "the amount of water needed to make jeans."
+      ]
+    },
+    "solution": {
+      "correct_choice": "the good and bad sides of a fashion trend."
+    },
+    "explanation": [
+      {
+        "kind": "what",
+        "title": "Beleg im Text",
+        "body": "Der rote Faden: Absatz 1–3 zeigen, warum gebrauchte Kleidung beliebt ist; Absatz 4–6 zeigen die Probleme (Weiterverkäufer, zu viel kaufen, unbrauchbare Spenden); Absatz 7–8 ziehen ein Fazit. Threadbare ist nur der Aufhänger."
+      },
+      {
+        "kind": "remember",
+        "body": "Für die Frage nach dem Schwerpunkt zählst du, welches Thema in den **meisten** Absätzen vorkommt – nicht, womit der Text beginnt."
+      }
+    ],
+    "tags": [
+      "exam",
+      "eigen",
+      "reading",
+      "article"
+    ],
+    "source": "Eigene Aufgabe im Format MSA Englisch, Reading Part 3"
+  }
+]

@@ -182,7 +182,7 @@ export const GUIDE: GuideSection[] = [
     id: "willkommen",
     emoji: "👋",
     title: "Willkommen im MSA Trainer",
-    lead: "Hier übst du für den Mittleren Schulabschluss in Berlin — Mathe, Deutsch und Englisch. Du bekommst eine Aufgabe, tippst deine Antwort ein und siehst sofort, ob es stimmt, mit der Lösung Schritt für Schritt.",
+    lead: "Hier übst du für den Mittleren Schulabschluss (MSA) — Mathe, Deutsch und Englisch. Du bekommst eine Aufgabe, tippst deine Antwort ein und siehst sofort, ob es stimmt, mit der Lösung Schritt für Schritt.",
     more: (
       <>
         <p>

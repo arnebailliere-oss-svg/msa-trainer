@@ -19,7 +19,7 @@ test("Ferdinand chalkboard flow", async ({ page }) => {
   await shot(page, "1-index");
 
   await page.goto(`${DEV}/#/eule/P_MATH_ZEICHEN`);
-  await expect(page.getByText("Die Zeichen der Mathematik").first()).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Die Zeichen der Mathematik" })).toBeVisible();
   await shot(page, "2-intro");
 
   const next = () => page.getByRole("button", { name: /Los geht's|Weiter|Zu den Wörtern|Zum Quiz|Nächste Frage|Auswertung/ });

@@ -13,6 +13,7 @@ import { join, resolve } from "node:path";
 import { evaluate } from "../src/core/evaluators";
 import { parseFraction, reduceFraction } from "../src/core/normalizers";
 import type { ClozePayload, ContentPack, ContentSection, Lesson, MatchPayload, McqPayload, Passage, Primer, Question, ShortPayload, Topic, WritePayload } from "../src/core/types";
+import { checkPrimerStandard, checkSheetStandard, type TermList } from "./standard";
 import { hasPlaceholder, parseExplanation, renderFigureSpec, renderPreview } from "../src/core/variants";
 
 const ROOT = resolve(import.meta.dirname, "../..");
@@ -20,6 +21,9 @@ const PACK_DIR = join(ROOT, "content_packs", "berlin_msa");
 const SCHEMA_PATH = join(ROOT, "content_packs", "schema.v2.json");
 const OUT_DIR = join(ROOT, "web", "public", "content");
 const CHECK_ONLY = process.argv.includes("--check");
+/** `--standard` lists what every not-yet-migrated lesson is missing; `--standard=P_X` only for one. */
+const STANDARD_ARG = process.argv.find((a) => a.startsWith("--standard"));
+const STANDARD_ONLY = STANDARD_ARG?.split("=")[1];
 const PREVIEWS = 60;
 const MIN_QUESTIONS_PER_TOPIC = 6;
 
@@ -62,6 +66,7 @@ const primers: Primer[] = [];
 for (const file of listJson(join(PACK_DIR, "primers"))) primers.push(...readJson<Primer[]>(file));
 const passages: Passage[] = [];
 for (const file of listJson(join(PACK_DIR, "passages"))) passages.push(...readJson<Passage[]>(file));
+const termList = readJson<TermList>(join(PACK_DIR, "terms.json"));
 
 // --- schema -------------------------------------------------------------------
 
@@ -330,6 +335,13 @@ for (const p of primers) {
         error(`${where} step ${i + 1}`, `figure failed: ${(e as Error).message}`);
       }
     }
+    (s.tasks ?? []).forEach((t, ti) => {
+      const w = `${where} step ${i + 1} task ${ti + 1}`;
+      if (t.text.split("___").length !== 2) error(w, "text needs exactly one ___ gap");
+      if (!t.choices.includes(t.correct)) error(w, `correct "${t.correct}" not among choices`);
+      if (new Set(t.choices).size !== t.choices.length) error(w, "duplicate choices");
+      checkTex(w, t.why ?? "");
+    });
   });
   for (const v of p.vocab) for (const t of [v.term, v.plain, v.example ?? ""]) checkTex(where, t);
   p.quiz.forEach((q, i) => {
@@ -338,7 +350,27 @@ for (const p of primers) {
     if (!q.choices.includes(q.correct)) error(w, `correct "${q.correct}" not among choices`);
     if (new Set(q.choices).size !== q.choices.length) error(w, "duplicate choices");
   });
-  if (!primerUsed.has(p.id)) warn(where, "not referenced by any lesson or section");
+  if (!primerUsed.has(p.id) && !lessons.some((l) => l.guided?.includes(p.id))) warn(where, "not referenced by any lesson or section");
+}
+
+// Comprehensibility standard: binding for migrated lessons, counted for the rest.
+const pending: { id: string; violations: string[] }[] = [];
+for (const p of primers) {
+  const violations = checkPrimerStandard(p, termList[p.subject] ?? [], primerById);
+  if (p.standard === 2) for (const m of violations) error(`primer ${p.id}`, `standard: ${m}`);
+  else pending.push({ id: p.id, violations });
+}
+for (const l of lessons) {
+  const violations = checkSheetStandard(l, primerById);
+  if (l.sheet) for (const m of violations) error(`lesson ${l.id}`, `standard: ${m}`);
+  else pending.push({ id: l.id, violations });
+}
+if (STANDARD_ARG) {
+  for (const p of pending) {
+    if (STANDARD_ONLY && p.id !== STANDARD_ONLY) continue;
+    console.log(`\n  ${p.id}: ${p.violations.length} open points`);
+    for (const m of p.violations) console.log(`    - ${m}`);
+  }
 }
 for (const p of passages) {
   checkTex(`passage ${p.id}`, p.body);
@@ -358,12 +390,15 @@ for (const t of topics) {
 // --- report -------------------------------------------------------------------
 
 const errors = issues.filter((i) => i.level === "error");
+const atStandard = primers.filter((p) => p.standard === 2).length;
+const sheets = lessons.filter((l) => l.sheet).length;
 const warnings = issues.filter((i) => i.level === "warn");
 for (const i of warnings) console.log(`  warn  ${i.where}: ${i.message}`);
 for (const i of errors) console.log(`  ERROR ${i.where}: ${i.message}`);
 const bySubject = (s: string) => questions.filter((q) => q.subject === s).length;
 console.log(
-  `\ncontent: ${topics.length} topics, ${questions.length} questions (MATH ${bySubject("MATH")}, DE ${bySubject("DE")}, EN ${bySubject("EN")}), ` +
+  `\nstandard: ${atStandard} of ${primers.length} Eulen-Lektionen and ${sheets} of ${lessons.length} lesson pages meet the comprehensibility standard` +
+    `\ncontent: ${topics.length} topics, ${questions.length} questions (MATH ${bySubject("MATH")}, DE ${bySubject("DE")}, EN ${bySubject("EN")}), ` +
     `${questions.filter((q) => q.variants?.enabled).length} templated, ${lessons.length} lessons, ${primers.length} Eulen-Lektionen, ${passages.length} passages — ${errors.length} errors, ${warnings.length} warnings`,
 );
 if (errors.length > 0) {

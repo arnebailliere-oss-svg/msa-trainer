@@ -95,6 +95,45 @@ export const MathText = memo(function MathText({ text, pre = false, inline: asIn
     <div className={className}>
       {blocks.map((block, bi) => {
         const lines = block.split("\n");
+        // Table: every line starts with "|". "|---|---|" after the first line marks a header row;
+        // a row whose only filled cell is the first one is a sub-heading across the table.
+        if (lines.length > 0 && lines.every((l) => /^\s*\|/.test(l))) {
+          const rows = lines.map((l) => l.trim().replace(/^\|/, "").replace(/\|\s*$/, "").split("|").map((c) => c.trim()));
+          const isSep = (r: string[]) => r.every((c) => /^:?-{2,}:?$/.test(c));
+          const hasHead = rows.length > 1 && isSep(rows[1]!);
+          const body = rows.filter((r, i) => !isSep(r) && !(hasHead && i === 0));
+          const cols = Math.max(...rows.map((r) => r.length));
+          return (
+            <div key={bi} className="my-2 overflow-x-auto">
+              <table className="sheet-table w-full border-collapse text-left">
+                {hasHead && (
+                  <thead>
+                    <tr>
+                      {rows[0]!.map((c, ci) => (
+                        <th key={ci}>{inline(c, `${bi}-h${ci}`)}</th>
+                      ))}
+                    </tr>
+                  </thead>
+                )}
+                <tbody>
+                  {body.map((r, ri) =>
+                    r.length > 1 && r.slice(1).every((c) => !c) ? (
+                      <tr key={ri} className="sheet-sub">
+                        <th colSpan={cols}>{inline(r[0]!, `${bi}-s${ri}`)}</th>
+                      </tr>
+                    ) : (
+                      <tr key={ri}>
+                        {r.map((c, ci) => (
+                          <td key={ci}>{inline(c, `${bi}-${ri}-${ci}`)}</td>
+                        ))}
+                      </tr>
+                    ),
+                  )}
+                </tbody>
+              </table>
+            </div>
+          );
+        }
         const isList = lines.length > 0 && lines.every((l) => /^\s*(-|•|\d+[.)])\s+/.test(l) || l.trim() === "");
         if (isList) {
           const ordered = /^\s*\d+[.)]/.test(lines[0] ?? "");

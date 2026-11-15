@@ -70,10 +70,26 @@ export interface ContentSection {
 }
 
 /** One chalkboard of an Eulen-Lektion: one idea, a few chalk lines, optionally a figure. */
+/** One tap-to-answer gap on a "Jetzt du" board: a sentence with one ___ gap and a few choices. Not scored. */
+export interface PrimerTask {
+  /** Plain text with exactly one ___ gap. */
+  text: string;
+  choices: string[];
+  correct: string;
+  /** What Ferdinand says once the right choice is tapped. */
+  why?: string;
+  /** What Ferdinand says after a wrong tap: a nudge towards the thinking, never the answer. */
+  hint?: string;
+}
+
 export interface PrimerStep {
+  /** Set on the first board of a chapter: the chapter's title. Chapters are pause points. */
+  chapter?: string;
   title: string;
   body: string;
   figure?: FigureSpec;
+  /** Tap-to-answer gaps shown on the board under the body. */
+  tasks?: PrimerTask[];
   /** What Ferdinand says while this board is shown. */
   say?: string;
 }
@@ -105,6 +121,10 @@ export interface Primer {
   hook: string;
   /** Ferdinand's closing line after a passed quiz. */
   outro?: string;
+  /** 2 = written to the comprehensibility standard; the content check enforces its rules. */
+  standard?: 2;
+  /** Earlier Eulen-Lektionen whose words this one may use without explaining them again. */
+  requires?: string[];
   steps: PrimerStep[];
   vocab: PrimerVocab[];
   quiz: PrimerQuizItem[];
@@ -272,6 +292,10 @@ export interface Lesson {
   source?: string;
   /** Eulen-Lektion recommended before this lesson ("Grundlagen zuerst"). */
   primer?: string;
+  /** The page is a Spickzettel (look-up sheet); the teaching happens in `guided`. */
+  sheet?: boolean;
+  /** Guided lessons (Eulen-Lektionen) that teach this topic, in learning order. */
+  guided?: string[];
 }
 
 export interface Profile {

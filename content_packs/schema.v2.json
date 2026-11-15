@@ -51,6 +51,8 @@
         "teaser": { "type": "string", "minLength": 1 },
         "hook": { "type": "string", "minLength": 1 },
         "outro": { "type": "string" },
+        "standard": { "type": "integer", "enum": [2] },
+        "requires": { "type": "array", "items": { "type": "string", "pattern": "^P_[A-Z][A-Za-z0-9_]+$" } },
         "steps": {
           "type": "array",
           "minItems": 3,
@@ -58,7 +60,7 @@
             "type": "object",
             "additionalProperties": false,
             "required": ["title", "body"],
-            "properties": { "title": { "type": "string", "minLength": 1 }, "body": { "type": "string", "minLength": 1 }, "figure": { "$ref": "#/definitions/figure" }, "say": { "type": "string" } }
+            "properties": { "chapter": { "type": "string", "minLength": 1 }, "title": { "type": "string", "minLength": 1 }, "body": { "type": "string", "minLength": 1 }, "figure": { "$ref": "#/definitions/figure" }, "say": { "type": "string" }, "tasks": { "type": "array", "minItems": 1, "maxItems": 4, "items": { "type": "object", "additionalProperties": false, "required": ["text", "choices", "correct"], "properties": { "text": { "type": "string", "minLength": 1 }, "choices": { "type": "array", "minItems": 2, "maxItems": 4, "items": { "type": "string", "minLength": 1 } }, "correct": { "type": "string", "minLength": 1 }, "why": { "type": "string" }, "hint": { "type": "string" } } } } }
           }
         },
         "vocab": {
@@ -186,7 +188,9 @@
         "intro": { "type": "string" },
         "sections": { "type": "array", "minItems": 1, "items": { "$ref": "#/definitions/section" } },
         "source": { "type": "string" },
-        "primer": { "type": "string", "pattern": "^P_[A-Z][A-Za-z0-9_]+$" }
+        "primer": { "type": "string", "pattern": "^P_[A-Z][A-Za-z0-9_]+$" },
+        "sheet": { "type": "boolean" },
+        "guided": { "type": "array", "minItems": 1, "items": { "type": "string", "pattern": "^P_[A-Z][A-Za-z0-9_]+$" } }
       }
     }
   },

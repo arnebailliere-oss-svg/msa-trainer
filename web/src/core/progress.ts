@@ -12,6 +12,8 @@ export interface ProgressSnapshot {
   counters: Record<string, number>;
   /** Completed Eulen-Lektionen: "userId|primerId" → ISO date. */
   primers?: Record<string, string>;
+  /** Where a student stopped inside an Eulen-Lektion: "userId|primerId" → board index. */
+  primerPos?: Record<string, number>;
 }
 
 export interface ProgressStore {
@@ -26,6 +28,9 @@ export interface ProgressStore {
   primerDone(userId: string, primerId: string): boolean;
   primersDone(userId: string): string[];
   markPrimerDone(userId: string, primerId: string): void;
+  /** Board index the student last saw (0 = not started). */
+  primerPos(userId: string, primerId: string): number;
+  setPrimerPos(userId: string, primerId: string, step: number): void;
   snapshot(): ProgressSnapshot;
 }
 
@@ -38,6 +43,7 @@ export class InMemoryProgressStore implements ProgressStore {
   private attemptList: Attempt[] = [];
   private counters = new Map<string, number>();
   private primers = new Map<string, string>();
+  private primerPosMap = new Map<string, number>();
 
   constructor(
     initial?: Partial<ProgressSnapshot>,
@@ -47,6 +53,7 @@ export class InMemoryProgressStore implements ProgressStore {
     this.attemptList = [...(initial?.attempts ?? [])].sort((a, b) => a.createdAt.localeCompare(b.createdAt));
     for (const [k, v] of Object.entries(initial?.counters ?? {})) this.counters.set(k, v);
     for (const [k, v] of Object.entries(initial?.primers ?? {})) this.primers.set(k, v);
+    for (const [k, v] of Object.entries(initial?.primerPos ?? {})) this.primerPosMap.set(k, v);
   }
 
   primerDone(userId: string, primerId: string): boolean {
@@ -61,6 +68,18 @@ export class InMemoryProgressStore implements ProgressStore {
     const key = `${userId}|${primerId}`;
     this.primers.set(key, new Date().toISOString());
     this.onChange("primer", { key });
+  }
+
+  primerPos(userId: string, primerId: string): number {
+    return this.primerPosMap.get(`${userId}|${primerId}`) ?? 0;
+  }
+
+  setPrimerPos(userId: string, primerId: string, step: number): void {
+    const key = `${userId}|${primerId}`;
+    if ((this.primerPosMap.get(key) ?? 0) === step) return;
+    if (step <= 0) this.primerPosMap.delete(key);
+    else this.primerPosMap.set(key, step);
+    this.onChange("primer", { key, step });
   }
 
   getMastery(userId: string, topicId: string): MasteryState | undefined {
@@ -110,6 +129,7 @@ export class InMemoryProgressStore implements ProgressStore {
       attempts: [...this.attemptList],
       counters: Object.fromEntries(this.counters),
       primers: Object.fromEntries(this.primers),
+      primerPos: Object.fromEntries(this.primerPosMap),
     };
   }
 }

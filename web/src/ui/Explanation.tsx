@@ -29,13 +29,39 @@ const META: Record<ContentSection["kind"], { icon: string; title: string; tone: 
   text: { icon: "", title: "", tone: "border-line", pre: false },
 };
 
-export function ExplanationBlocks({ sections, compact = false }: { sections: ContentSection[]; compact?: boolean }) {
+/**
+ * `collapsible` (Spickzettel): every section is a card that opens on tap, so the page is a
+ * list of headings to look something up in, not a wall of text. The first card starts open.
+ */
+export function ExplanationBlocks({ sections, compact = false, collapsible = false }: { sections: ContentSection[]; compact?: boolean; collapsible?: boolean }) {
   return (
     <div className={`grid gap-3 ${compact ? "" : "sm:gap-4"}`}>
       {sections.map((s, i) => {
         const m = META[s.kind];
         const title = s.title ?? m.title;
         const figureSvg = s.figureSvg ?? safeFigure(s.figure);
+        if (collapsible) {
+          return (
+            <details key={i} open={i === 0 || s.kind === "remember"} className={`sheet-card min-w-0 rounded-2xl border-l-4 bg-surface ${m.tone}`}>
+              <summary className="flex cursor-pointer list-none items-center gap-2 px-4 py-3 text-base font-bold text-ink">
+                {m.icon && <span aria-hidden>{m.icon}</span>}
+                <span className="min-w-0 flex-1">{title}</span>
+                <span className="sheet-chevron text-ink-3" aria-hidden>
+                  ▾
+                </span>
+              </summary>
+              <div className="min-w-0 overflow-x-auto px-4 pb-4">
+                {s.kind === "widget" ? <LessonWidget id={s.body.trim()} /> : <MathText text={s.body} className="text-[1.02rem] leading-relaxed" />}
+                {figureSvg && <div className="mt-3 flex justify-center [&_svg]:max-w-full [&_svg]:h-auto" dangerouslySetInnerHTML={{ __html: figureSvg }} />}
+                {s.primer && (
+                  <div className="mt-3">
+                    <AskOwl primerId={s.primer} />
+                  </div>
+                )}
+              </div>
+            </details>
+          );
+        }
         return (
           <section key={i} className={`overflow-x-auto rounded-2xl border-l-4 bg-surface px-4 py-3 ${m.tone} anim-pop`} style={{ animationDelay: `${Math.min(i, 6) * 40}ms` }}>
             {(title || m.icon) && (

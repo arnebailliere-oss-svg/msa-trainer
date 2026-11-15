@@ -10,8 +10,8 @@ const shot = async (page: Page, name: string) => {
 test("passage panel in preview and English exam run", async ({ page }) => {
   test.setTimeout(120_000);
   await page.goto(`${DEV}/#/preview/EN_MSA2024_R3_17`);
-  await expect(page.getByText("The business of voluntourism")).toBeVisible();
-  await expect(page.getByText(/Why do many people volunteer/)).toBeVisible();
+  await expect(page.getByText("The village that switched off the night")).toBeVisible();
+  await expect(page.getByText(/Why did the council first think/)).toBeVisible();
   await shot(page, "1-preview");
 
   await createProfile(page, "Passage");

@@ -69,48 +69,48 @@
       },
       {
         "title": "Jetzt du: der Zettel",
-        "body": "*Note on an office door: Back in 10 minutes. Or 20. Honestly, I have the time management skills of a carrot.*\n\nThe person who wrote this note …\n\n**a)** is struggling to organize themselves.\n**b)** is asking for help with their work.\n**c)** will be back after lunch.",
-        "say": "Der Zettel ist lustig gemeint. Eine Karotte kann nichts planen. Was sagt die Person über sich selbst? Entscheide dich, dann Weiter."
+        "body": "*Note on a classroom door: Gone to look for the key. Again. Honestly, I would lose my own head if it wasn't attached.*\n\nThe person who wrote this note …\n\n**a)** often cannot find their things.\n**b)** wants the students to look for the key.\n**c)** will be back after the break.",
+        "say": "Der Zettel ist lustig gemeint. Niemand verliert wirklich seinen Kopf. Was sagt die Person über sich selbst? Entscheide dich, dann Weiter."
       },
       {
         "title": "Auflösung: der Zettel",
-        "body": "**a.** *time management skills of a carrot* = ich kann mich selbst nicht organisieren.\n\nb: Niemand bittet um Hilfe.\nc: *after lunch* steht nicht im Text.",
+        "body": "**a.** *I would lose my own head* = ich verliere ständig alles. Und *Again* zeigt: Das passiert oft.\n\nb: Niemand wird um Hilfe gebeten.\nc: *after the break* steht nicht im Text.",
         "say": "Selbstironie kommt in dieser Aufgabe gern vor. Der Text meint das Gegenteil von Lob. Wer das erkennt, hat den Punkt."
       },
       {
         "title": "Aufgabe 3 sieht so aus",
-        "body": "Ein **langer Artikel**, oft eine ganze Seite, mit nummerierten Absätzen (1) bis (8).\n\nDazu Fragen wie:\n\n*17. Why do many people volunteer in poor countries?*\n\nmit vier Antworten zum Ankreuzen.",
+        "body": "Ein **langer Artikel**, oft eine ganze Seite, mit nummerierten Absätzen (1) bis (8).\n\nDazu Fragen wie:\n\n*17. Why did the council first think about switching off the street lights?*\n\nmit vier Antworten zum Ankreuzen.",
         "say": "Der Text ist lang. Wichtig: Du musst ihn nicht ganz verstehen. Du musst Stellen finden. Und dafür gibt es eine Reihenfolge, die ich dir jetzt zeige."
       },
       {
         "title": "Zuerst die Frage, dann der Text",
-        "body": "*17. Why do many people **volunteer** in **poor countries**?*\n\nBevor du den Artikel liest: Frage lesen, wichtige Wörter markieren.\n\n**volunteer** · **poor countries** · **why** (= ein Grund wird gesucht)",
+        "body": "*17. Why did the **council** first think about switching off the **street lights**?*\n\nBevor du den Artikel liest: Frage lesen, wichtige Wörter markieren.\n\n**council** · **street lights** · **why** (= ein Grund wird gesucht)",
         "say": "Lies die Frage, bevor du den Text liest. Dann weißt du, wonach du suchst. Wer erst den ganzen Text liest, hat die Hälfte wieder vergessen, wenn die Fragen kommen."
       },
       {
         "title": "Schlüsselwort: Was ist das?",
-        "body": "Ein **Schlüsselwort** ist ein Wort aus der Frage, das wahrscheinlich auch im Text steht.\n\nGute Schlüsselwörter: **Nomen und Namen** → *volunteer, countries, Biddle, Tanzania*\n\nSchlechte: *the, is, of, many* → stehen überall.",
+        "body": "Ein **Schlüsselwort** ist ein Wort aus der Frage, das wahrscheinlich auch im Text steht.\n\nGute Schlüsselwörter: **Nomen und Namen** → *council, street lights, Okoro, police*\n\nSchlechte: *the, is, of, many* → stehen überall.",
         "say": "Nomen und Namen sind Schlüsselwörter. Die kleinen Wörter helfen dir nicht, die stehen in jedem Satz."
       },
       {
         "title": "Die Stelle finden: Scanning",
-        "body": "Lass die Augen über den Text laufen und such **nur** nach *volunteer* und *poor*.\n\nAbsatz (1): *millions of people … travel to **poor countries**, hoping to **do good** … perhaps even to **improve their CV** … all seek **personal growth***\n\n**Gefunden.** Jetzt erst genau lesen.",
+        "body": "Lass die Augen über den Text laufen und such **nur** nach *council*.\n\nAbsatz (2): *The idea did not come from star lovers. It came from the village **council's** accountant … lighting the empty streets … was **costing more** than the council spent on its library.*\n\n**Gefunden.** Jetzt erst genau lesen.",
         "say": "Das heißt scannen: wie eine Nummer in einer Liste suchen. Du liest nicht, du suchst. Erst wenn du die Stelle hast, liest du den Satz Wort für Wort."
       },
       {
         "title": "Genau vergleichen",
-        "body": "**a)** *to do good and improve their CV* ↔ Text: *hoping to do good … improve their CV* ✓\n\n**b)** *to earn money* → Text: sie **bezahlen** dafür ✗\n\n**c)** *because charities force them* → steht nicht im Text ✗",
+        "body": "**a)** *to spend less money* ↔ Text: *was costing more than … its library* ✓\n\n**b)** *to make the stars visible again* → Text: *did **not** come from star lovers* ✗\n\n**c)** *because villagers had complained* → steht nicht im Text ✗",
         "say": "Jetzt vergleichst du jede Antwort mit dem Satz aus dem Text. Passt es Wort für Wort in der Bedeutung? Ankreuzen. Steht es nicht da oder sagt der Text das Gegenteil? Weg damit."
       },
       {
-        "title": "Jetzt du: Frage 18",
-        "body": "*18. Where does the word „voluntourism“ come from?*\n\nAbsatz (2): *Voluntourism is an **outgrowth of the ecotourism movement** of the 1990s. According to Pippa Biddle, author of a book on voluntourism, travellers rebelled against package trips …*\n\n**a)** from the ecotourism movement of the 1990s\n**b)** from a book by Pippa Biddle\n**c)** from package trips and resorts",
-        "say": "Schlüsselwörter: voluntourism und come from. Die Stelle habe ich dir schon gesucht. Welche Antwort kannst du belegen? Dann Weiter."
+        "title": "Jetzt du: Frage 20",
+        "body": "*20. According to the police, …*\n\nAbsatz (4): *the number of break-ins … **did not rise**; it **stayed exactly the same**, at three. … Most burglaries happen **in the afternoon**, when houses are empty.*\n\n**a)** the darkness did not lead to more crime.\n**b)** there were fewer break-ins than before.\n**c)** burglars prefer to work at night.",
+        "say": "Schlüsselwort: police. Die Stelle habe ich dir schon gesucht. Welche Antwort kannst du belegen? Dann Weiter."
       },
       {
-        "title": "Auflösung: Frage 18",
-        "body": "**a.** *outgrowth of the ecotourism movement* = daraus gewachsen = kommt daher.\n\nb: Biddle **schreibt** über das Wort, sie hat es nicht erfunden.\nc: Gegen package trips haben die Reisenden **rebelliert**.",
-        "say": "a. Und wieder: anderes Wort, gleiche Bedeutung. Outgrowth heißt Auswuchs, etwas, das aus etwas anderem gewachsen ist. Antwort b klaut nur einen Namen aus dem Text."
+        "title": "Auflösung: Frage 20",
+        "body": "**a.** *did not rise* = nicht mehr geworden = *not more crime*.\n\nb: Es waren **gleich viele** (*stayed the same*), nicht weniger.\nc: Der Text sagt *in the afternoon*, also das Gegenteil.",
+        "say": "a. Und wieder: andere Wörter, gleiche Bedeutung. Antwort b ist die gemeine: nicht gestiegen heißt noch lange nicht gesunken. Lies bei Zahlen immer zweimal."
       },
       {
         "title": "Listening: was anders ist",
@@ -139,55 +139,125 @@
       }
     ],
     "vocab": [
-      { "term": "match", "plain": "Zuordnen: Person und Angebot zusammenbringen.", "example": "Match the people with the tours." },
-      { "term": "wish", "plain": "Wunsch: das, was eine Person will oder nicht will. Steckt in jedem Satz über sie.", "example": "not a sportswoman → nichts Anstrengendes" },
-      { "term": "offer", "plain": "Angebot: ein kleiner Werbetext, der verrät, für wen er gemacht ist.", "example": "regardless of your fitness level" },
-      { "term": "prove / belegen", "plain": "Auf das Wort zeigen, das die Antwort beweist. Nicht raten.", "example": "photos ↔ stop for photos" },
-      { "term": "sign / notice", "plain": "Schild, Aushang, Zettel: der kurze Text in Aufgabe 2.", "example": "Note on an office door" },
-      { "term": "statement", "plain": "Aussage: einer der vier Sätze, von denen genau einer stimmt.", "example": "The person is struggling to organize themselves." },
-      { "term": "key word", "plain": "Schlüsselwort: ein Nomen oder Name aus der Frage, den du im Text suchst.", "example": "volunteer, poor countries" },
-      { "term": "scan", "plain": "Gezielt nach einem Wort suchen, ohne zu lesen. Wie eine Nummer in einer Liste.", "example": "Scan the text for „volunteer“." },
-      { "term": "not in the text", "plain": "Steht nicht da. Klingt vielleicht logisch, ist trotzdem falsch.", "example": "free coffee" },
-      { "term": "twice", "plain": "Zweimal: so oft hörst du jeden Hörtext.", "example": "You will hear the text twice." }
+      {
+        "term": "match",
+        "plain": "Zuordnen: Person und Angebot zusammenbringen.",
+        "example": "Match the people with the tours."
+      },
+      {
+        "term": "wish",
+        "plain": "Wunsch: das, was eine Person will oder nicht will. Steckt in jedem Satz über sie.",
+        "example": "not a sportswoman → nichts Anstrengendes"
+      },
+      {
+        "term": "offer",
+        "plain": "Angebot: ein kleiner Werbetext, der verrät, für wen er gemacht ist.",
+        "example": "regardless of your fitness level"
+      },
+      {
+        "term": "prove / belegen",
+        "plain": "Auf das Wort zeigen, das die Antwort beweist. Nicht raten.",
+        "example": "photos ↔ stop for photos"
+      },
+      {
+        "term": "sign / notice",
+        "plain": "Schild, Aushang, Zettel: der kurze Text in Aufgabe 2.",
+        "example": "Note on a classroom door"
+      },
+      {
+        "term": "statement",
+        "plain": "Aussage: einer der vier Sätze, von denen genau einer stimmt.",
+        "example": "The person often cannot find their things."
+      },
+      {
+        "term": "key word",
+        "plain": "Schlüsselwort: ein Nomen oder Name aus der Frage, den du im Text suchst.",
+        "example": "council, street lights"
+      },
+      {
+        "term": "scan",
+        "plain": "Gezielt nach einem Wort suchen, ohne zu lesen. Wie eine Nummer in einer Liste.",
+        "example": "Scan the text for „council“."
+      },
+      {
+        "term": "not in the text",
+        "plain": "Steht nicht da. Klingt vielleicht logisch, ist trotzdem falsch.",
+        "example": "free coffee"
+      },
+      {
+        "term": "twice",
+        "plain": "Zweimal: so oft hörst du jeden Hörtext.",
+        "example": "You will hear the text twice."
+      }
     ],
     "quiz": [
       {
         "prompt": "Hei-Lin *is not exactly a sportswoman*. Welches Wort aus Angebot F belegt, dass F trotzdem passt?",
-        "choices": ["regardless of your fitness level", "true physical challenge", "minimum age is 18", "for the whole family"],
+        "choices": [
+          "regardless of your fitness level",
+          "true physical challenge",
+          "minimum age is 18",
+          "for the whole family"
+        ],
         "correct": "regardless of your fitness level",
         "explain": "Egal wie fit du bist: Genau das braucht jemand, der nicht sportlich ist. Physical challenge wäre das Gegenteil."
       },
       {
         "prompt": "Schild: *No food or drink beyond this point.* Was will der Text?",
-        "choices": ["verbieten", "warnen", "werben", "informieren, wann es öffnet"],
+        "choices": [
+          "verbieten",
+          "warnen",
+          "werben",
+          "informieren, wann es öffnet"
+        ],
         "correct": "verbieten",
         "explain": "No … = etwas ist nicht erlaubt. Das ist ein Verbot, keine Warnung vor Gefahr."
       },
       {
         "prompt": "Text: *Last entry 4.30 pm.* Welche Aussage sagt dasselbe in anderen Worten?",
-        "choices": ["You cannot go in after 4.30 pm.", "The museum opens at 4.30 pm.", "Tickets cost more after 4.30 pm.", "The museum is closed on Mondays."],
+        "choices": [
+          "You cannot go in after 4.30 pm.",
+          "The museum opens at 4.30 pm.",
+          "Tickets cost more after 4.30 pm.",
+          "The museum is closed on Mondays."
+        ],
         "correct": "You cannot go in after 4.30 pm.",
         "explain": "Last entry = letzter Einlass. Danach kommt niemand mehr rein. Die anderen Sätze erfinden Dinge, die nicht im Text stehen."
       },
       {
         "prompt": "Frage: *How many students slept better?* Welche Wörter suchst du im Text?",
-        "choices": ["students, slept better", "how, many", "the, did", "better, the"],
+        "choices": [
+          "students, slept better",
+          "how, many",
+          "the, did",
+          "better, the"
+        ],
         "correct": "students, slept better",
         "explain": "Nomen und wichtige Verben sind Schlüsselwörter. How many verrät dir nur: Eine Zahl wird gesucht."
       },
       {
         "prompt": "Du hörst *half past ten*. Welche Uhrzeit ist das?",
-        "choices": ["10:30", "9:30", "10:15", "11:30"],
+        "choices": [
+          "10:30",
+          "9:30",
+          "10:15",
+          "11:30"
+        ],
         "correct": "10:30",
         "explain": "half past = eine halbe Stunde nach der genannten Stunde. Nicht wie im Deutschen halb zehn."
       },
       {
         "prompt": "Bei einer Aufgabe bist du unsicher. Was tust du?",
-        "choices": ["Trotzdem ankreuzen, es gibt keine Minuspunkte", "Leer lassen", "Zwei Antworten ankreuzen", "Den Text noch dreimal lesen"],
+        "choices": [
+          "Trotzdem ankreuzen, es gibt keine Minuspunkte",
+          "Leer lassen",
+          "Zwei Antworten ankreuzen",
+          "Den Text noch dreimal lesen"
+        ],
         "correct": "Trotzdem ankreuzen, es gibt keine Minuspunkte",
         "explain": "Falsche Antworten kosten nichts. Eine leere Aufgabe bringt sicher keinen Punkt."
       }
     ],
-    "source": "Beispiele aus MSA Berlin 2024 Englisch, Reading Part 1 (Quebec), Part 2 (Hull Trains, office note), Part 3 (Voluntourism); Aufbau nach Prüfungshefte MSA Englisch Berlin 2026"
+    "source": "Beispiele aus MSA Berlin 2024 Englisch, Reading Part 1 (Quebec) und Part 2 (Hull Trains); Zettel und Artikel-Beispiele (Reading Part 3) eigene Texte; Aufbau nach Prüfungshefte MSA Englisch Berlin 2026"
   }
 ]

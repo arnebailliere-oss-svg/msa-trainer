@@ -12,7 +12,7 @@ test("English lesson, drill and primer", async ({ page }) => {
 
   await page.goto(`${DEV}/#/topic/EN_USE_TENSES`);
   await expect(page.getByRole("heading", { name: /Tenses/ }).first()).toBeVisible();
-  await expect(page.getByText("Grundlagen zuerst")).toBeVisible();
+  await expect(page.getByRole("heading", { name: /Lernen mit Ferdinand/ })).toBeVisible();
   await shot(page, "1-lesson-tenses");
 
   await page.getByRole("button", { name: /Jetzt üben/ }).click();
@@ -41,6 +41,6 @@ test("English lesson, drill and primer", async ({ page }) => {
   await shot(page, "4-lesson-reading");
 
   await page.goto(`${DEV}/#/eule/P_EN_VERBFORMEN`);
-  await expect(page.getByText("Verbformen von Anfang an").first()).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Verbformen von Anfang an" })).toBeVisible();
   await shot(page, "5-primer");
 });

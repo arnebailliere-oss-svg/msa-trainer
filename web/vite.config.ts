@@ -26,9 +26,9 @@ export default defineConfig({
       registerType: "autoUpdate",
       includeAssets: ["icons/*.png", "icons/*.svg"],
       manifest: {
-        name: "MSA Trainer Berlin",
+        name: "MSA Trainer",
         short_name: "MSA Trainer",
-        description: "Übungs-App für den Mittleren Schulabschluss (Klasse 9/10, Berlin)",
+        description: "Übungs-App für den Mittleren Schulabschluss (Klasse 9/10)",
         lang: "de",
         start_url: base,
         scope: base,

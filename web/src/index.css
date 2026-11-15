@@ -159,6 +159,37 @@ textarea {
   border-radius: var(--radius);
   box-shadow: var(--shadow), var(--glow);
 }
+/* Spickzettel: look-up tables and cards that open on tap */
+.sheet-table th,
+.sheet-table td {
+  padding: 0.45rem 0.7rem 0.45rem 0;
+  vertical-align: top;
+  border-bottom: 1px solid var(--line);
+}
+.sheet-table thead th {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--ink-3);
+}
+.sheet-table .sheet-sub th {
+  padding-top: 1rem;
+  font-weight: 700;
+  color: var(--ink);
+  border-bottom: 2px solid var(--line);
+}
+.sheet-table tr:last-child td {
+  border-bottom: 0;
+}
+.sheet-card > summary::-webkit-details-marker {
+  display: none;
+}
+.sheet-card[open] .sheet-chevron {
+  transform: rotate(180deg);
+}
+.sheet-chevron {
+  transition: transform 0.15s ease;
+}
 .gradient-text {
   background: linear-gradient(90deg, var(--brand), var(--brand-2));
   -webkit-background-clip: text;
@@ -288,6 +319,21 @@ textarea {
   background: rgba(255, 255, 255, 0.1);
   border-color: var(--chalk);
 }
+.chalk-chip {
+  padding: 0.15rem 0.9rem;
+  min-height: 2.6rem;
+}
+.chalk-chip[data-state="wrong"] {
+  opacity: 0.55;
+  text-decoration: line-through;
+}
+.chalk-gap {
+  display: inline-block;
+  width: 3.2em;
+  margin: 0 0.25em;
+  border-bottom: 3px solid var(--chalk-yellow);
+  vertical-align: baseline;
+}
 .chalk-box[data-state="right"] {
   border-color: #a6f5c4;
   background: rgba(166, 245, 196, 0.18);
@@ -407,5 +453,38 @@ textarea {
   .chalk-out,
   .confetti {
     animation: none;
+  }
+}
+
+/* ---------- Eulen-Lektion on tablets and desktops: a roomier board ------------ */
+@media (min-width: 768px) {
+  .chalkboard {
+    padding: 1.75rem 2rem 2rem;
+    min-height: 340px;
+  }
+}
+@media (min-width: 1024px) {
+  .chalkboard {
+    padding: 2.25rem 2.5rem 2.25rem;
+    min-height: 30rem;
+    margin-bottom: 34px;
+  }
+  .chalk {
+    font-size: 1.7rem;
+    display: flex;
+    flex-direction: column;
+    min-height: calc(30rem - 4.5rem);
+  }
+  .chalk > .chalk-small:last-child {
+    margin-top: auto;
+    padding-top: 1.25rem;
+  }
+  .chalk-title {
+    font-size: 2.5rem;
+    margin-bottom: 1.1rem;
+  }
+  .chalk-chip {
+    padding: 0.3rem 1.2rem;
+    min-height: 3rem;
   }
 }

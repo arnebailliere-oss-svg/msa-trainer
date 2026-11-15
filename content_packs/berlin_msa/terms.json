@@ -1,0 +1,26 @@
+{
+  "_comment": "Fachwörter je Fach. Die Inhaltsprüfung verlangt: Ein Fachwort wird auf der Tafel, auf der es zum ersten Mal vorkommt, fett erklärt, oder die Lektion nennt unter requires die Lektion, die es erklärt.",
+  "EN": [
+    "Verb", "Hilfsverb", "Vollverb", "Modalverb", "Grundform", "Infinitiv", "Partizip", "Subjekt", "Objekt", "Nomen", "Pronomen", "Adjektiv", "Adverb", "Artikel", "Präposition", "Konjunktion",
+    "Signalwort", "Zeitform", "Zeitstrahl", "Verlaufsform", "Simple Present", "Present Progressive", "Simple Past", "Past Progressive", "Present Perfect", "Present Perfect Progressive", "Past Perfect", "will-future", "going to-future",
+    "Singular", "Plural", "Hauptsatz", "Nebensatz", "Relativsatz", "Relativpronomen", "if-Satz", "Bedingungssatz", "Passiv", "Aktiv", "Komparativ", "Superlativ", "Steigerung", "Silbe", "Vokal", "Konsonant",
+    "Register", "Skimming", "Scanning", "Schlüsselwort", "Mediation", "Kurzform", "Verneinung", "indirekte Rede"
+  ],
+  "DE": [
+    "Verb", "Hilfsverb", "Modalverb", "Infinitiv", "Partizip", "Subjekt", "Prädikat", "Objekt", "Nomen", "Pronomen", "Adjektiv", "Adverb", "Artikel", "Präposition", "Konjunktion", "Numerale",
+    "Hauptsatz", "Nebensatz", "Relativsatz", "Relativpronomen", "Satzgefüge", "Satzreihe", "Begleitsatz", "Apposition", "Infinitivgruppe", "Aufzählung", "Signalwort",
+    "Kasus", "Nominativ", "Genitiv", "Dativ", "Akkusativ", "Singular", "Plural", "Tempus", "Präsens", "Präteritum", "Perfekt", "Plusquamperfekt", "Futur", "Konjunktiv", "Indikativ", "Imperativ", "Passiv", "Aktiv", "indirekte Rede",
+    "Nominalisierung", "Suffix", "Präfix", "Silbe", "Vokal", "Konsonant", "Umlaut", "Wortstamm", "Wortfamilie",
+    "Metapher", "Vergleich", "Personifikation", "Alliteration", "Anapher", "Hyperbel", "Ironie", "rhetorische Frage", "Ellipse", "Antithese", "Euphemismus", "Klimax", "Parallelismus",
+    "These", "Argument", "Beleg", "Erörterung", "Schreibplan", "Fazit", "Textsorte", "Erzähler", "Sachtext"
+  ],
+  "MATH": [
+    "Term", "Variable", "Gleichung", "Ungleichung", "Summe", "Differenz", "Produkt", "Quotient", "Faktor", "Koeffizient", "Klammer", "Vorzeichen", "Betrag",
+    "Bruch", "Zähler", "Nenner", "Hauptnenner", "Kehrwert", "kgV", "ggT", "Dezimalzahl", "Prozentsatz", "Prozentwert", "Grundwert", "Zinssatz", "Kapital",
+    "Potenz", "Basis", "Exponent", "Wurzel", "Quadratzahl", "Zehnerpotenz",
+    "Funktion", "Steigung", "Achsenabschnitt", "Wertetabelle", "Koordinatensystem", "Parabel", "Scheitelpunkt", "Nullstelle", "proportional", "antiproportional", "Dreisatz", "Wachstumsfaktor",
+    "Gleichungssystem", "Einsetzungsverfahren", "Additionsverfahren", "Gleichsetzungsverfahren", "Lösungsmenge",
+    "Hypotenuse", "Kathete", "Sinus", "Kosinus", "Tangens", "Radius", "Durchmesser", "Umfang", "Flächeninhalt", "Volumen", "Oberfläche", "Mantelfläche", "Grundfläche", "Prisma", "Zylinder", "Pyramide", "Kegel", "Kugel",
+    "Mittelwert", "Median", "Spannweite", "Wahrscheinlichkeit", "Ereignis", "Baumdiagramm", "relative Häufigkeit", "absolute Häufigkeit"
+  ]
+}

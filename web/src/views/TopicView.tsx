@@ -4,7 +4,7 @@ import { LEVEL_LABEL } from "@/core/levels";
 import { ampelFor, levelFromMastery } from "@/core/mastery";
 import { ExplanationBlocks } from "@/ui/Explanation";
 import { MathText } from "@/ui/MathText";
-import { AskOwl } from "@/ui/Owl";
+import { AskOwl, OWL_NAME, OwlAvatar } from "@/ui/Owl";
 import { Ampel, Button, Chip, PageTitle, Ring } from "@/ui/primitives";
 
 /** Topic page: lesson (if any) + practice entry point. */
@@ -47,7 +47,48 @@ export function TopicView() {
         {mastery && <Chip>{mastery.attempts} mal geübt</Chip>}
       </div>
 
-      {lesson ? (
+      {lesson?.sheet ? (
+        <>
+          {/* Learning happens in the guided lessons; the page below is only for looking things up. */}
+          <section className="mb-8 anim-pop">
+            <h2 className="mb-1 text-2xl font-bold">Lernen mit {OWL_NAME}</h2>
+            <p className="mb-4 text-ink-2">Schritt für Schritt, mit Übungen auf den Tafeln. Fang oben an und lass dir Zeit.</p>
+            <ol className="grid gap-3">
+              {(lesson.guided ?? []).map((pid, i) => {
+                const p = content.primerById(pid);
+                if (!p) return null;
+                const done = store.primerDone(profile.id, pid);
+                const at = store.primerPos(profile.id, pid);
+                const chapters = p.steps.filter((s, si) => s.chapter || si === 0).length;
+                return (
+                  <li key={pid}>
+                    <Link to={`/eule/${pid}`} state={{ from: `/topic/${topic.id}` }} data-guided={pid} className="card-solid flex items-center gap-4 p-4 transition hover:-translate-y-0.5">
+                      <span className={`grid h-11 w-11 shrink-0 place-items-center rounded-full text-base font-extrabold ${done ? "bg-green text-[#062b1c]" : "accent-gradient text-white"}`}>{done ? "✓" : i + 1}</span>
+                      <div className="min-w-0 flex-1">
+                        <div className="text-lg font-bold leading-snug">{p.title}</div>
+                        <div className="mt-0.5 text-sm text-ink-2">{p.teaser}</div>
+                        <div className="mt-1 text-xs text-ink-3">
+                          {chapters > 1 ? `${chapters} Kapitel · ` : ""}
+                          {p.steps.length} Tafeln
+                          {done ? <span className="font-semibold text-green"> · geschafft</span> : at > 0 ? <span className="font-semibold text-ink-2"> · angefangen, du kannst weitermachen</span> : null}
+                        </div>
+                      </div>
+                      <OwlAvatar size={40} />
+                    </Link>
+                  </li>
+                );
+              })}
+            </ol>
+          </section>
+          <article className="anim-pop">
+            <div className="text-xs font-bold uppercase tracking-wide text-ink-3">Spickzettel zum Nachschlagen</div>
+            <h2 className="mb-1 text-2xl font-bold">{lesson.title}</h2>
+            {lesson.intro && <MathText text={lesson.intro} className="mb-4 text-ink-2" />}
+            <ExplanationBlocks sections={lesson.sections} collapsible />
+            {lesson.source && <p className="mt-3 text-xs text-ink-3">Quelle: {lesson.source}</p>}
+          </article>
+        </>
+      ) : lesson ? (
         <article className="anim-pop">
           <h2 className="mb-1 text-2xl font-bold">📘 {lesson.title}</h2>
           {lesson.intro && <MathText text={lesson.intro} className="mb-4 text-ink-2" />}

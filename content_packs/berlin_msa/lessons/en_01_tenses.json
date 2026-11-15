@@ -3,48 +3,62 @@
     "id": "L_EN_TENSES",
     "subject": "EN",
     "topicId": "EN_USE_TENSES",
-    "alsoFor": ["EN_USE"],
-    "title": "Tenses: Welche Zeitform wann?",
-    "primer": "P_EN_VERBFORMEN",
-    "intro": "Die Englischprüfung fragt **keine Grammatikregeln** ab. Aber jede Schreibaufgabe und jeder Lesetext lebt von den Zeitformen. Wer die **Signalwörter** kennt, findet die richtige Form in drei Sekunden.",
-    "source": "Adaptiert nach Prüfungshefte MSA Englisch Berlin 2026, Training Grammatik (Zeitformen, unregelmäßige Verben)",
+    "alsoFor": [
+      "EN_USE"
+    ],
+    "title": "Tenses: die englischen Zeiten",
+    "sheet": true,
+    "guided": [
+      "P_EN_VERBFORMEN"
+    ],
+    "intro": "Das hier ist dein Spickzettel. Hier lernst du nichts Neues, hier schaust du nach, wenn du dir bei einer Zeit nicht sicher bist. Gelernt wird oben in den Lektionen mit Ferdinand. Tipp auf eine Karte, um sie zu öffnen.",
+    "source": "Eigene Darstellung; Auswahl der Zeiten und Verben nach den Anforderungen des MSA Englisch",
     "sections": [
       {
-        "kind": "terms",
-        "title": "Die Formen auf einen Blick",
-        "primer": "P_EN_VERBFORMEN",
-        "body": "- **Simple Present**: Grundform, bei he/she/it **-s**. *I watch, she watches*\n- **Present Progressive**: am/is/are + **-ing**. *They are calling.*\n- **Simple Past**: **-ed** oder 2. Form. *He walked, I went.*\n- **Past Progressive**: was/were + **-ing**. *She was cooking.*\n- **Present Perfect**: have/has + **3. Form**. *He has lived here since 2003.*\n- **Present Perfect Progressive**: have/has **been** + -ing. *She has been watching TV all day.*\n- **Past Perfect**: **had** + 3. Form. *He had finished by 10 pm.*\n- **will-future**: **will** + Grundform. *It will rain.*\n- **going to-future**: am/is/are **going to** + Grundform. *I am going to marry her.*"
-      },
-      {
-        "kind": "formula",
-        "title": "Wann welche Zeit? Die Signalwörter",
+        "kind": "what",
+        "title": "So findest du die richtige Zeit",
         "primer": "P_EN_ZEITFORMEN",
-        "body": "- **Simple Present**: Gewohnheiten, Fakten, Fahrpläne. *usually, always, often, never, every day, sometimes*\n- **Present Progressive**: gerade jetzt, feste Pläne mit Zeitangabe. *now, at the moment, right now, Look!, this week*\n- **Simple Past**: abgeschlossen, Reihenfolge. *yesterday, the other day, last week, a month ago, in 1997, then*\n- **Past Progressive**: gleichzeitig oder unterbrochen. *while, as, when*\n- **Present Perfect**: Vergangenheit mit Folge in der Gegenwart, begann früher und dauert an. *just, already, yet, ever, never, since, for, so far, up to now*\n- **Present Perfect Progressive**: Betonung auf der Dauer. *for, since, all day, the whole day*\n- **Past Perfect**: vor einem anderen Punkt in der Vergangenheit. *before, after, by, when, until that day*\n- **will-future**: Vorhersage, Versprechen, spontaner Entschluss. *tomorrow, next week, I think, I promise*\n- **going to**: feste Pläne, logische Schlussfolgerung. *Look at those clouds, it is going to rain.*"
+        "body": "Geh in drei Schritten vor.\n\n(1) Such im Satz ein **Signalwort**. Das ist ein Wort wie *yesterday* oder *now*, das verrät, wann etwas passiert.\n\n(2) Überleg, wann es passiert: früher, jetzt oder später.\n\n(3) Frag dich: Läuft es gerade, oder ist es fertig? Was gerade läuft, bekommt eine Form mit *-ing*.\n\nIn den Karten darunter findest du jede Zeit mit Bau, Beispiel und Signalwörtern."
       },
       {
-        "kind": "steps",
-        "title": "In drei Schritten zur Zeitform",
-        "body": "1. **Signalwort** suchen (*yesterday, since, now …*).\n2. **Wann** auf dem Zeitstrahl? Vorher, jetzt, später? Oder noch weiter zurück?\n3. **Verlauf oder Ergebnis?** Läuft es gerade oder dauert es an → **-ing**. Ist es fertig oder zählt das Ergebnis → einfache Form oder Perfect.\n\n*I have lost my key. I can't get in.* → Ergebnis jetzt → Present Perfect.\n*I lost my key yesterday.* → abgeschlossen, Zeitangabe → Simple Past."
+        "kind": "terms",
+        "title": "Gegenwart: was jetzt oder immer gilt",
+        "body": "| **Simple Present** |  |\n| Wann? | Etwas passiert immer, oft oder nie. Auch Fakten und Fahrpläne. |\n| Bau | Grundform. Bei he, she, it kommt ein **-s** dazu. |\n| Beispiel | *She plays tennis every Monday.* |\n| Signalwörter | always, usually, often, sometimes, never, every day |\n| **Present Progressive** |  |\n| Wann? | Etwas passiert genau jetzt. Auch feste Pläne mit Zeitangabe. |\n| Bau | am, is oder are + Verb mit **-ing** |\n| Beispiel | *Look! They are playing tennis.* |\n| Signalwörter | now, at the moment, right now, Look!, this week |"
+      },
+      {
+        "kind": "terms",
+        "title": "Vergangenheit: was vorbei ist",
+        "body": "| **Simple Past** |  |\n| Wann? | Etwas ist vorbei und abgeschlossen. Oft steht dabei, wann es war. |\n| Bau | Verb mit **-ed** oder die 2. Form |\n| Beispiel | *I went to London last week.* |\n| Signalwörter | yesterday, last week, a month ago, in 1997, then |\n| **Past Progressive** |  |\n| Wann? | Etwas lief gerade, als etwas anderes passierte. |\n| Bau | was oder were + Verb mit **-ing** |\n| Beispiel | *She was cooking when I came home.* |\n| Signalwörter | while, when, as |\n| **Past Perfect** |  |\n| Wann? | Etwas war schon vorher passiert, vor einem anderen Moment in der Vergangenheit. |\n| Bau | **had** + 3. Form |\n| Beispiel | *When I arrived, he had already left.* |\n| Signalwörter | before, after, already, by then |"
+      },
+      {
+        "kind": "terms",
+        "title": "Present Perfect: früher passiert, heute noch wichtig",
+        "body": "| **Present Perfect** |  |\n| Wann? | Etwas ist früher passiert, und die Folge zählt jetzt. Oder es hat früher angefangen und dauert noch an. |\n| Bau | have oder has + **3. Form** |\n| Beispiel | *I have lost my key. I can't get in.* |\n| Signalwörter | just, already, yet, ever, never, since, for, so far |\n| **Present Perfect Progressive** |  |\n| Wann? | Etwas dauert schon eine Weile an, und die Dauer ist wichtig. |\n| Bau | have oder has + **been** + Verb mit **-ing** |\n| Beispiel | *She has been waiting for two hours.* |\n| Signalwörter | for, since, all day |\n\nSo unterscheidest du es vom Simple Past: Steht eine abgeschlossene Zeitangabe wie *yesterday* im Satz, nimmst du das Simple Past. Es heißt also *I lost my key yesterday.*"
+      },
+      {
+        "kind": "terms",
+        "title": "Zukunft: was noch kommt",
+        "body": "| **will-future** |  |\n| Wann? | Vorhersagen, Versprechen und Dinge, die du dir gerade erst überlegst. |\n| Bau | **will** + Grundform |\n| Beispiel | *I think it will rain tomorrow.* |\n| Signalwörter | tomorrow, next week, I think, I promise |\n| **going to-future** |  |\n| Wann? | Feste Pläne. Auch dann, wenn man schon sieht, was gleich passiert. |\n| Bau | am, is oder are + **going to** + Grundform |\n| Beispiel | *Look at those clouds. It is going to rain.* |\n| Signalwörter | tonight, next summer, Look! |"
       },
       {
         "kind": "formula",
-        "title": "since und for",
-        "body": "**since** + Zeit**punkt**: *since 2003, since Monday, since I was five*\n\n**for** + Zeit**dauer**: *for two hours, for three years, for a long time*\n\nBeide gehören zum **Present Perfect** (oder Present Perfect Progressive): *He has lived here since 2003. He has been waiting for two hours.*"
+        "title": "since oder for?",
+        "body": "**since** nennt den Zeitpunkt, an dem etwas angefangen hat: *since 2003, since Monday, since I was five*.\n\n**for** nennt die Dauer, also wie lange etwas schon geht: *for two hours, for three years, for a long time*.\n\nBeide Wörter stehen beim Present Perfect: *He has lived here since 2003. He has been waiting for two hours.*"
+      },
+      {
+        "kind": "mistake",
+        "title": "Fünf typische Fehler",
+        "body": "| Falsch | Richtig | Warum? |\n| --- | --- | --- |\n| *she play* | *she plays* | Bei he, she, it bekommt das Verb ein -s. |\n| *I have seen him yesterday.* | *I saw him yesterday.* | *yesterday* ist abgeschlossen. Dann steht das Simple Past. |\n| *since two hours* | *for two hours* | Zwei Stunden sind eine Dauer. Dazu gehört *for*. |\n| *Did you went?* | *Did you go?* | Nach *did* steht das Verb in der Grundform. |\n| *If it will rain, …* | *If it rains, …* | Im Satzteil mit *if* steht kein *will*. |"
       },
       {
         "kind": "terms",
         "title": "Unregelmäßige Verben: die wichtigsten",
-        "body": "be – was/were – been · become – became – become · begin – began – begun · break – broke – broken · bring – brought – brought · build – built – built · buy – bought – bought · catch – caught – caught · choose – chose – chosen · come – came – come · cost – cost – cost · cut – cut – cut · do – did – done · drive – drove – driven · eat – ate – eaten · fall – fell – fallen · feel – felt – felt · find – found – found · forget – forgot – forgotten · get – got – gotten/got · give – gave – given · go – went – gone · have – had – had · hear – heard – heard · keep – kept – kept · know – knew – known · leave – left – left · lose – lost – lost · mean – meant – meant · meet – met – met · pay – paid – paid · put – put – put · read – read – read · ride – rode – ridden · run – ran – run · say – said – said · see – saw – seen · sell – sold – sold · send – sent – sent · show – showed – shown · sit – sat – sat · sleep – slept – slept · speak – spoke – spoken · spend – spent – spent · stand – stood – stood · take – took – taken · tell – told – told · think – thought – thought · wake up – woke up – woken up · wear – wore – worn · write – wrote – written"
-      },
-      {
-        "kind": "mistake",
-        "title": "Typische Fehler",
-        "body": "- Das **-s** bei he/she/it vergessen: *she play* ✗ → *she plays* ✓\n- Present Perfect mit **yesterday**: *I have seen him yesterday* ✗ → *I saw him yesterday* ✓\n- **since** und **for** vertauschen: *since two hours* ✗ → *for two hours* ✓\n- Nach **did** die 2. Form: *Did you went?* ✗ → *Did you go?* ✓\n- **will** im if-Satz: *If it will rain* ✗ → *If it rains* ✓"
+        "body": "Diese Verben bilden ihre 2. und 3. Form nicht mit *-ed*. Sie sind hier nach Mustern sortiert, weil man sich Gruppen leichter merkt als eine lange Liste.\n\n**Alle drei Formen sind gleich**\n\n| Grundform | 2. Form | 3. Form | Deutsch |\n| --- | --- | --- | --- |\n| cost | cost | cost | kosten |\n| cut | cut | cut | schneiden |\n| hit | hit | hit | schlagen, treffen |\n| let | let | let | lassen |\n| put | put | put | legen, stellen |\n| read | read | read | lesen (2. und 3. Form spricht man wie *red*) |\n\n**2. und 3. Form sind gleich und enden auf -ought oder -aught**\n\n| Grundform | 2. Form | 3. Form | Deutsch |\n| --- | --- | --- | --- |\n| bring | brought | brought | bringen |\n| buy | bought | bought | kaufen |\n| think | thought | thought | denken |\n| catch | caught | caught | fangen |\n| teach | taught | taught | unterrichten |\n\n**2. und 3. Form sind gleich**\n\n| Grundform | 2. Form | 3. Form | Deutsch |\n| --- | --- | --- | --- |\n| build | built | built | bauen |\n| feel | felt | felt | fühlen |\n| find | found | found | finden |\n| get | got | got | bekommen |\n| have | had | had | haben |\n| hear | heard | heard | hören |\n| keep | kept | kept | behalten |\n| leave | left | left | weggehen, verlassen |\n| lose | lost | lost | verlieren |\n| make | made | made | machen |\n| mean | meant | meant | bedeuten, meinen |\n| meet | met | met | treffen |\n\n| Grundform | 2. Form | 3. Form | Deutsch |\n| --- | --- | --- | --- |\n| pay | paid | paid | bezahlen |\n| say | said | said | sagen |\n| sell | sold | sold | verkaufen |\n| send | sent | sent | schicken |\n| sit | sat | sat | sitzen |\n| sleep | slept | slept | schlafen |\n| spend | spent | spent | ausgeben, verbringen |\n| stand | stood | stood | stehen |\n| tell | told | told | erzählen, sagen |\n| win | won | won | gewinnen |\n\n**Grundform und 3. Form sind gleich**\n\n| Grundform | 2. Form | 3. Form | Deutsch |\n| --- | --- | --- | --- |\n| become | became | become | werden |\n| come | came | come | kommen |\n| run | ran | run | rennen |\n\n**Alle drei Formen sind verschieden**\n\n| Grundform | 2. Form | 3. Form | Deutsch |\n| --- | --- | --- | --- |\n| be | was / were | been | sein |\n| begin | began | begun | anfangen |\n| break | broke | broken | zerbrechen |\n| choose | chose | chosen | wählen |\n| do | did | done | tun, machen |\n| drive | drove | driven | fahren |\n| eat | ate | eaten | essen |\n| fall | fell | fallen | fallen |\n| forget | forgot | forgotten | vergessen |\n| give | gave | given | geben |\n| go | went | gone | gehen |\n| know | knew | known | wissen, kennen |\n\n| Grundform | 2. Form | 3. Form | Deutsch |\n| --- | --- | --- | --- |\n| ride | rode | ridden | reiten, Rad fahren |\n| see | saw | seen | sehen |\n| show | showed | shown | zeigen |\n| speak | spoke | spoken | sprechen |\n| take | took | taken | nehmen |\n| wake up | woke up | woken up | aufwachen |\n| wear | wore | worn | tragen (Kleidung) |\n| write | wrote | written | schreiben |"
       },
       {
         "kind": "remember",
         "title": "Merke",
-        "body": "**Signalwort → Zeitstrahl → Verlauf oder Ergebnis.** he/she/it + -s. have + 3. Form. since = Zeitpunkt, for = Dauer. Unregelmäßige Verben auswendig."
+        "body": "- Such immer zuerst das Signalwort im Satz. Es verrät dir die Zeit.\n- Bei he, she und it bekommt das Verb im Simple Present ein -s.\n- Nach have und has steht immer die 3. Form.\n- Das Wort since nennt den Zeitpunkt, das Wort for nennt die Dauer.\n- Nach did steht das Verb wieder in der Grundform."
       }
     ]
   }

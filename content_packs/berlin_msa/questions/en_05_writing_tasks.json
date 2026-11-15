@@ -240,29 +240,29 @@
     "topicId": "EN_WRITE_MEDIATION",
     "difficulty": 4,
     "qtype": "WRITE",
-    "passage": "X_EN_MED_TREPPE_2024",
+    "passage": "X_EN_MED_SUPPE",
     "prompt": "**Writing Part 3: Mediation — Neighbourhood project.** Your Irish friend Kim and her friend want to start a neighbourhood project and are looking for ideas. You found the German article above.\n\n- Write an **e-mail** to Kim telling her what the project is about.\n- Mention **at least four important aspects**.\n- Do **not** translate word for word. Write complete sentences.",
     "payload": {
       "form": "mediation",
       "min_words": 80,
       "content_points": [
-        { "label": "General information: a pop-up café in the stairwell of a building", "keywords": ["stair", "café", "cafe", "coffee"] },
-        { "label": "Aspect: neighbours get to know each other / against anonymity", "keywords": ["neighbour", "neighbor", "know each other", "anonym", "meet"] },
-        { "label": "Aspect: someone from the house has to invite the team", "keywords": ["invite", "invitation"] },
-        { "label": "Aspect: funded by grants and volunteers / students", "keywords": ["volunteer", "fund", "grant", "student", "free"] },
-        { "label": "Aspect: posters, ringing every doorbell, older people benefit", "keywords": ["poster", "doorbell", "ring", "older people", "elderly", "old people"] }
+        { "label": "General information: neighbours cook and eat soup together in the courtyard every Thursday", "keywords": ["soup"] },
+        { "label": "Aspect: neighbours get to know each other", "keywords": ["get to know", "know each other", "meet each other", "meet their neighbo"] },
+        { "label": "Aspect: everyone brings one ingredient, cooking together", "keywords": ["ingredient", "vegetable", "brings", "bring one", "bring a"] },
+        { "label": "Aspect: free for everyone / paid for by donations, bread from the bakery", "keywords": ["free", "donat", "bakery", "bread"] },
+        { "label": "Aspect: flyers from the children, older people who live alone benefit", "keywords": ["flyer", "leaflet", "older people", "elderly", "old people", "live alone", "lonely"] }
       ],
       "required": ["greeting", "closing", "paragraphs:3"]
     },
     "solution": {
-      "model": "Hi Kim,\n\nI hope you are fine! I just read about a great neighbourhood project from Berlin that could be perfect for you and your friend.\n\nIt is called \"Auf halber Treppe\" (\"halfway up the stairs\"). A team sets up a small pop-up café in the stairwell of an apartment building for two or three hours. The idea is that neighbours who live in the same house finally get to know each other over coffee and cake — in a big city most people don't even know who lives next door.\n\nHere is how it works: someone from the house has to invite the team, because they don't want to force anything on people. The project is paid for by grants and run by student volunteers. Before the café opens, the team hangs up posters in the stairwell, sends invitations to every flat and rings every doorbell once more. Especially older people, who often don't go out any more, really enjoy it.\n\nAll you need is a table, coffee, cake and some candles. Maybe you could start with your own building?\n\nLots of love,\nMia"
+      "model": "Hi Kim,\n\nI hope you are well! I have just read about a lovely neighbourhood project from Leipzig that could be perfect for you and your friend.\n\nIt is called \"Suppe am Donnerstag\" (\"Soup on Thursday\"). Every Thursday evening neighbours cook a big pot of vegetable soup together in the courtyard of their building, and everybody who comes by gets a plate for free. A retired cook started it because she hardly knew anyone in her house after thirty years. The idea is that neighbours get to know each other while they eat.\n\nThe rule is simple: everyone brings one ingredient, for example an onion or a few potatoes. The bakery on the corner donates bread, and the gas is paid for with small donations. Children from the house put flyers into all the letterboxes, so now about forty people come every week. Older people who live alone enjoy it most.\n\nMaybe you could try this in your own street?\n\nLots of love,\nMia"
     },
     "explanation": [
-      { "kind": "steps", "title": "Vier Aspekte finden", "body": "Lies den Artikel mit der Frage: *Was muss Kim wissen, um das nachzumachen?*\n1. Was ist es? (Pop-up-Café im Treppenhaus)\n2. Wozu? (Nachbarn kennenlernen)\n3. Wie läuft es? (Einladung, Plakate, Klingeln)\n4. Wer bezahlt? (Fördergelder, Ehrenamt)" },
-      { "kind": "terms", "title": "Wörter, die du brauchst", "body": "Treppenhaus → *stairwell* · Nachbarschaft → *neighbourhood* · ehrenamtlich → *voluntary / volunteers* · Fördergelder → *grants / funding* · einladen → *to invite*" },
+      { "kind": "steps", "title": "Vier Aspekte finden", "body": "Lies den Artikel mit der Frage: *Was muss Kim wissen, um das nachzumachen?*\n1. Was ist es? (gemeinsam Suppe kochen im Hinterhof, jeden Donnerstag)\n2. Wozu? (Nachbarn kennenlernen)\n3. Wie läuft es? (jeder bringt eine Zutat, Handzettel)\n4. Wer bezahlt? (kostenlos, Spenden, Brot von der Bäckerei)" },
+      { "kind": "terms", "title": "Wörter, die du brauchst", "body": "Hinterhof → *courtyard* · Nachbarn → *neighbours* · Zutat → *ingredient* · spenden → *to donate* · Spende → *donation* · Handzettel → *flyer* · kostenlos → *free*" },
       { "kind": "remember", "body": "Deutsche Namen und Zitate darfst du übernehmen, aber **erkläre** sie kurz auf Englisch." }
     ],
-    "tags": ["writing", "mediation", "email", "exam", "msa2024"],
-    "source": "MSA Berlin 2024 Englisch, Writing Part 3 (10 P)"
+    "tags": ["writing", "mediation", "email", "exam", "eigen"],
+    "source": "Eigene Aufgabe im Format MSA Englisch, Writing Part 3 (Mediation)"
   }
 ]
