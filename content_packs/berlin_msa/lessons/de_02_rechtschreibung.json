@@ -3,57 +3,68 @@
     "id": "L_DE_RECHTSCHREIBUNG",
     "subject": "DE",
     "topicId": "DE_ORTHO_STRATEGIES",
-    "alsoFor": ["DE_ORTHO_DAS_DASS", "DE_ORTHO_CASE", "DE_ORTHO_SEP_JOIN", "DE_ORTHO_SS_SZ", "DE_ORTHO_DOUBLE"],
-    "title": "Richtig schreiben: Strategien, das/dass, groß/klein",
-    "primer": "P_DE_DAS_DASS",
-    "intro": "Im Prüfungsteil *Richtig Schreiben* geht es nicht darum, jedes Wort auswendig zu kennen. Gefragt sind **Strategien**: Wie prüfst du, ob *Hund* mit d oder t endet? Dazu kommen jedes Jahr **das/dass**, **Groß- und Kleinschreibung** und **Getrennt- und Zusammenschreibung**.",
-    "source": "Adaptiert nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 3 (Richtig Schreiben)",
+    "alsoFor": [
+      "DE_ORTHO_DAS_DASS",
+      "DE_ORTHO_CASE",
+      "DE_ORTHO_SEP_JOIN",
+      "DE_ORTHO_SS_SZ",
+      "DE_ORTHO_DOUBLE"
+    ],
+    "title": "Rechtschreibung",
+    "sheet": true,
+    "guided": [
+      "P_DE_STRATEGIEN",
+      "P_DE_DAS_DASS",
+      "P_DE_GROSS_KLEIN",
+      "P_DE_GETRENNT"
+    ],
+    "intro": "Das hier ist dein Spickzettel zur Rechtschreibung. Hier schaust du nach, welche Strategie bei welchem Zweifel hilft oder was großgeschrieben wird. Gelernt wird oben in den Lektionen mit Ferdinand, jedes Thema in einer eigenen Lektion. Tipp auf eine Karte, um sie zu öffnen.",
+    "source": "Eigene Darstellung nach den Anforderungen des MSA Deutsch",
     "sections": [
       {
         "kind": "what",
-        "title": "Was die Prüfung fragt",
-        "body": "Typische Aufgabe: *„Welche Strategie wenden Sie an, um das Wort **eifersüchtig** an den markierten Stellen richtig zu schreiben? Kreuzen Sie an.“*\n\nDu musst also nicht nur richtig schreiben, sondern **sagen können, warum**. Dafür gibt es vier Strategien und drei Dauerbrenner."
+        "title": "Was die Prüfung von dir will",
+        "body": "Du sollst ein Wort nicht nur richtig schreiben. Du sollst auch sagen können, wie du auf die richtige Schreibung kommst.\n\nEine typische Aufgabe lautet: Welche Strategie wenden Sie an, um das Wort an der markierten Stelle richtig zu schreiben? Dafür gibt es vier Strategien und drei Themen, die jedes Jahr vorkommen."
       },
       {
-        "kind": "formula",
+        "kind": "terms",
         "title": "Die vier Strategien",
-        "body": "- **Verlängern** bei b/p, d/t, g/k am Wortende: Nomen in den Plural, Verb in den Infinitiv, Adjektiv steigern. *Hund → Hunde*, *liebt → lieben*, *klug → klüger*.\n- **Ableiten** bei e/ä und eu/äu: ein verwandtes Wort suchen. *Stärke → stark*, *häufig → Haufen*.\n- **Silbenprobe** bei Doppelkonsonanten (ff, ll, mm, nn, ss, tt): das Wort in Silben zerlegen. *Bet-ten* (nicht *be-ten*), *Was-ser*, *ken-nen*.\n- **h prüfen**: **Dehnungs-h** vor l, m, n, r nach langem Vokal (*fühlen, Zahl, Bahn*), **Trennungs-h** zwischen zwei Vokalen (*stehen, sehen*)."
-      },
-      {
-        "kind": "example",
-        "title": "Beispiel: eifersüchtig",
-        "body": "**i oder ü?** → stammverwandtes Wort suchen: *Eifer**sucht*** → **ü** (Ableiten).\n\n**g oder k am Ende?** → verlängern: *eifersüchti**g**er* → **g** (Verlängern)."
+        "body": "| Strategie | Sie hilft bei | Beispiel |\n| --- | --- | --- |\n| verlängern | d oder t, b oder p, g oder k am Wortende | *Hund*, denn es heißt *Hunde* |\n| ableiten | ä oder e, äu oder eu | *Häuser*, denn es kommt von *Haus* |\n| in Silben sprechen | doppelten Konsonanten | *Bet-ten*, *Was-ser* |\n| das h prüfen | h vor l, m, n, r und zwischen zwei Vokalen | *fahren*, *Zahl*, *se-hen* |\n\nSo verlängerst du: Ein Nomen setzt du in den Plural, ein Adjektiv steigerst du, bei einem Verb bildest du den Infinitiv."
       },
       {
         "kind": "formula",
-        "title": "das oder dass: die Ersatzprobe",
-        "primer": "P_DE_DAS_DASS",
-        "body": "Ersetze das Wort durch **dieses**, **jenes** oder **welches**.\n\n- Passt es → **das** (Artikel, Pronomen oder Relativpronomen). *Das Buch, **das** ich lese* → *welches ich lese* ✓\n- Passt es nicht → **dass** (Konjunktion, leitet einen Nebensatz ein). *Ich glaube, **dass** der Film gut wird* → *welches der Film gut wird* ✗\n\nVor **dass** steht **immer** ein Komma. Begründung in der Prüfung: Wortart nennen **und** die Ersatzprobe zeigen."
+        "title": "Kurzer oder langer Vokal",
+        "body": "| Der Vokal davor ist | Dann schreibst du | Beispiele |\n| --- | --- | --- |\n| kurz | einen doppelten Konsonanten | *offen, Mitte, kennen* |\n| lang | einen einzelnen Konsonanten | *Ofen, beten, raten* |\n| kurz | ss | *Klasse, Fluss, essen* |\n| lang | ß | *Straße, Fuß, groß* |\n| ei, au, eu, äu | ß | *heiß, draußen, Sträuße* |\n\nSprich das Wort laut und hör, ob du den Vokal in die Länge ziehen kannst."
       },
       {
         "kind": "formula",
-        "title": "Groß oder klein: die Top 10",
-        "body": "**Groß:**\n\n1. Nomen (*die Schülerin*), erkennbar an **Nomensignalen**: Artikel, Zahlwort, Adjektiv oder Pronomen davor und an den **Suffixen** -ung, -keit, -heit, -lein, -chen, -tion, -schaft, -nis, -tum, -ling.\n2. Satzanfänge, auch nach einem Doppelpunkt, wenn ein ganzer Satz folgt.\n3. Eigennamen und Herkunftsbezeichnungen (*Berliner Staatsoper*).\n4. **Nominalisierungen**: Verben und Adjektive mit Artikel oder nach *beim, zum, ins, alles, etwas, nichts* (*das Schwimmen, beim Essen, alles Gute*).\n5. Höfliche Anrede **Sie, Ihnen, Ihr**.\n6. Wochentage und Tageszeiten als Nomen (*der Montag, heute Morgen*).\n\n**Klein:**\n\n7. Verben und Adjektive, erkennbar an -ig, -bar, -isch, -sam, -lich, -haft, -los.\n8. Superlativ mit **am** (*am schönsten*).\n9. Adverbien: *montags, morgen, heute, gestern*.\n10. Pronomen: *nichts, etwas, jemand, man*."
+        "title": "das oder dass",
+        "body": "Mach die Ersatzprobe: Setz *dieses* oder *welches* an die Stelle.\n\n| Die Probe | Du schreibst | Beispiel |\n| --- | --- | --- |\n| *dieses* passt | das | *Das gefällt mir.* |\n| *welches* passt | das | *das Buch, das ich lese* |\n| keins von beiden passt | dass | *Ich glaube, dass es klappt.* |\n\nVor dem Wort mit zwei s steht immer ein Komma. In der Prüfung begründest du mit der Wortart und der Probe."
       },
       {
-        "kind": "formula",
+        "kind": "terms",
+        "title": "Groß oder klein",
+        "body": "|  | Regel | Beispiel |\n| --- | --- | --- |\n| **Groß** | Nomen mit einem Begleiter davor | *der Hund, mein Buch, viel Spaß* |\n| **Groß** | Nomen mit den Endungen -ung, -heit, -keit, -schaft, -nis | *die Hoffnung, die Freiheit* |\n| **Groß** | Verb oder Adjektiv mit Artikel, auch nach beim, zum, etwas, nichts, alles | *das Laufen, beim Essen, etwas Neues* |\n| **Groß** | die höfliche Anrede | *Können Sie mir helfen?* |\n| **Klein** | Verben und Adjektive ohne Artikel davor | *Ich will laufen. Das Auto ist schnell.* |\n| **Klein** | die höchste Stufe mit am | *am schnellsten* |\n| **Klein** | Zeitangaben auf -s und heute, morgen, gestern | *montags, abends, bis morgen* |"
+      },
+      {
+        "kind": "terms",
         "title": "Getrennt oder zusammen",
-        "body": "**Zusammen:**\n\n- Präposition + Verb: *hingehen, aufstehen, anmachen*\n- Nomen + Nomen: *Autobahn*\n- Adverb + Verb, Betonung auf dem Adverb: *wiedersehen* (= erneut treffen)\n- Nominalisierungen: *beim Essengehen*\n\n**Getrennt:**\n\n- Verb + Verb: *schwimmen gehen, spazieren gehen*\n- Adjektiv + Verb: *laut singen, fertig lesen*\n- Nomen + Verb: *Klavier spielen, Fußball spielen*\n- Adverb + Verb, beide betont: *zusammen fahren* (= gemeinsam)"
+        "body": "Die Grundregel: Wörter stehen getrennt. Zusammen schreibt man nur, wenn ein neues Wort entsteht.\n\n| Was zusammenkommt | Schreibung | Beispiel |\n| --- | --- | --- |\n| Nomen und Nomen | zusammen | *Autobahn, Haustür* |\n| kurzes Wort und Verb | zusammen | *aufstehen, anmachen, mitkommen* |\n| Nomen und Verb | getrennt | *Rad fahren, Klavier spielen* |\n| Verb und Verb | getrennt | *spazieren gehen, schwimmen gehen* |\n| Adjektiv und Verb | meistens getrennt | *laut singen, schnell laufen* |\n| Verbindung mit Artikel | zusammen und groß | *das Radfahren, beim Spazierengehen* |\n\nHörst du nur eine Betonung, ist es ein Wort: *wiedersehen*. Hörst du zwei, sind es zwei Wörter: *wieder sehen*."
       },
       {
-        "kind": "formula",
-        "title": "ss oder ß, Doppelkonsonanten",
-        "body": "Sprich das Wort laut.\n\n- **Kurzer** Vokal → **ss** oder anderer Doppelkonsonant: *Klasse, Kuss, wissen, Betten, kennen*\n- **Langer** Vokal oder **Doppellaut** (ei, au, eu, ie) → **ß**: *Straße, Füße, heiß, draußen, fließen*"
+        "kind": "terms",
+        "title": "Wörter zum Merken",
+        "body": "| Getrennt | Zusammen |\n| --- | --- |\n| gar nicht | irgendwo |\n| auf einmal | irgendwie |\n| ein bisschen | überhaupt |\n| vor allem | vielleicht |\n| noch einmal | zusammen |"
       },
       {
         "kind": "mistake",
         "title": "Typische Fehler",
-        "body": "- *dass* nach einem Relativsatz-Komma: *Das Buch, **dass** ich lese* ✗ → Ersatzprobe: *welches ich lese* ✓ → **das**\n- Nominalisierungen klein: *beim **e**ssen* ✗ → *beim **E**ssen* ✓\n- Superlativ groß: *am **S**chnellsten* ✗ → *am **s**chnellsten* ✓\n- *wiedersehen* (erneut treffen) und *wieder sehen* (noch einmal sehen) verwechseln: Die Betonung entscheidet."
+        "body": "| Falsch | Richtig | Warum? |\n| --- | --- | --- |\n| *Das Buch, dass ich lese* | *Das Buch, das ich lese* | Hier passt welches. Also ein s. |\n| *beim essen* | *beim Essen* | In beim steckt ein Artikel. |\n| *am Schnellsten* | *am schnellsten* | Die höchste Stufe mit am bleibt klein. |\n| *Montags* | *montags* | Mit s am Ende ist es ein Adverb. |\n| *Strasse* | *Straße* | Das a ist lang. |\n| *garnicht* | *gar nicht* | Es sind immer zwei Wörter. |"
       },
       {
         "kind": "remember",
         "title": "Merke",
-        "body": "**Verlängern, ableiten, Silben, h.** das/dass → **dieses/welches**-Probe. Groß: Nomen, Nominalisierung, Sie, Satzanfang. Klein: Verb, Adjektiv, *am* + Superlativ, *montags*. Kurzer Vokal → ss, langer → ß."
+        "body": "- Sprich das Wort laut: Nach einem kurzen Vokal steht ein doppelter Konsonant oder ss.\n- Verlängere ein Wort, wenn du sein Ende nicht sicher hörst.\n- Passt dieses oder welches, schreibst du das mit einem s.\n- Steht ein Begleiter davor, ist es ein Nomen und wird großgeschrieben.\n- Wörter stehen getrennt, außer es entsteht ein neues Wort."
       }
     ]
   }

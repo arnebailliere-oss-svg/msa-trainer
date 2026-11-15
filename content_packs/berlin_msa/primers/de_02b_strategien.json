@@ -1,0 +1,503 @@
+[
+  {
+    "id": "P_DE_STRATEGIEN",
+    "subject": "DE",
+    "title": "Richtig schreiben: die vier Strategien",
+    "teaser": "Wie du hörst, ob ein Laut kurz oder lang ist, wann du einen Buchstaben verdoppelst und wann du ss oder ß schreibst. Dazu die vier Strategien, nach denen die Prüfung fragt: verlängern, ableiten, in Silben sprechen und das h prüfen.",
+    "hook": "Niemand kann die Schreibung aller deutschen Wörter auswendig. Das muss auch niemand. Für die meisten Zweifelsfälle gibt es einen kleinen Trick, mit dem du die richtige Schreibung selbst herausfindest. Die Prüfung fragt sogar ausdrücklich nach diesen Tricks. Es sind vier, und wir lernen sie der Reihe nach.",
+    "outro": "Du hast jetzt vier Werkzeuge für schwierige Wörter. Du hörst, ob ein Laut kurz oder lang ist. Du verlängerst ein Wort, um sein Ende zu hören. Du suchst ein verwandtes Wort, wenn du bei ä oder äu unsicher bist. Und du sprichst in Silben, um doppelte Buchstaben und das h zu finden.",
+    "standard": 2,
+    "requires": [
+      "P_DE_WORTARTEN"
+    ],
+    "steps": [
+      {
+        "chapter": "Kurz oder lang?",
+        "title": "Zwei Sorten von Buchstaben",
+        "body": "*a, e, i, o, u* und *ä, ö, ü* heißen **Vokale**.\n\nAlle anderen Buchstaben heißen **Konsonanten**.",
+        "say": "Bevor wir anfangen, brauchen wir zwei Wörter. Vokale sind die Laute, die du lange singen kannst: aaa, ooo, iii. In der Grundschule hießen sie Selbstlaute. Konsonanten sind alle anderen, zum Beispiel b, t, m und s. Sie hießen Mitlaute."
+      },
+      {
+        "title": "Ein Vokal kann kurz oder lang sein",
+        "body": "*Ofen*: Das o ist lang.\n*offen*: Das o ist kurz.",
+        "tasks": [
+          {
+            "text": "Im Wort Mitte ist das i ___.",
+            "choices": [
+              "kurz",
+              "lang"
+            ],
+            "correct": "kurz",
+            "why": "Du springst sofort zum t. Der Vokal wird nicht gedehnt.",
+            "hint": "Sprich das Wort laut. Kannst du das i in die Länge ziehen, ohne dass es falsch klingt?"
+          }
+        ],
+        "say": "Sprich beide Wörter laut und langsam. Beim Ofen ziehst du das o in die Länge. Bei offen ist es ganz kurz, und du springst sofort zum f. Diesen Unterschied musst du hören können, denn von ihm hängt die Schreibung ab."
+      },
+      {
+        "title": "Nach einem kurzen Vokal: doppelter Konsonant",
+        "body": "*o**ff**en, Mi**tt**e, ke**nn**en, Bu**tt**er*\n\nNach einem kurzen Vokal wird der Konsonant **verdoppelt**.",
+        "say": "Das ist die erste Regel. Wenn der Vokal kurz ist, schreibst du den Konsonanten danach zweimal. Der doppelte Buchstabe ist wie ein Schild für den Leser. Er sagt: Sprich den Vokal davor kurz. Ohne dieses Schild würde man offen wie Ofen lesen."
+      },
+      {
+        "title": "Nach einem langen Vokal: nur einer",
+        "body": "*be**t**en*: Das e ist lang.\n*Be**tt**en*: Das e ist kurz.",
+        "tasks": [
+          {
+            "text": "Welches Wort hat einen kurzen Vokal? ___",
+            "choices": [
+              "Betten",
+              "beten"
+            ],
+            "correct": "Betten",
+            "why": "Die beiden t zeigen an, dass das e davor kurz gesprochen wird.",
+            "hint": "Sprich beide Wörter laut. Bei welchem springst du schnell zum t?"
+          }
+        ],
+        "say": "Beten und Betten bestehen fast aus denselben Buchstaben. Der einzige Unterschied ist die Länge des Vokals. Beim Beten in der Kirche ist das e lang, also steht nur ein t. Bei den Betten zum Schlafen ist das e kurz, also stehen zwei."
+      },
+      {
+        "title": "Jetzt du: verdoppeln oder nicht?",
+        "body": "Sprich jedes Wort leise und tipp auf die richtige Schreibung.",
+        "tasks": [
+          {
+            "text": "Wir ___ uns schon lange.",
+            "choices": [
+              "kennen",
+              "kenen"
+            ],
+            "correct": "kennen",
+            "why": "Das e ist kurz. Danach wird der Konsonant verdoppelt.",
+            "hint": "Ist das e in dem Wort kurz oder lang?"
+          },
+          {
+            "text": "Die ___ scheint.",
+            "choices": [
+              "Sonne",
+              "Sone"
+            ],
+            "correct": "Sonne",
+            "why": "Das o ist kurz. Danach wird der Konsonant verdoppelt.",
+            "hint": "Ist das o in dem Wort kurz oder lang?"
+          },
+          {
+            "text": "Er hat einen ___ Hut auf.",
+            "choices": [
+              "roten",
+              "rotten"
+            ],
+            "correct": "roten",
+            "why": "Das o ist lang. Nach einem langen Vokal steht nur ein Konsonant.",
+            "hint": "Kannst du das o in die Länge ziehen?"
+          }
+        ],
+        "say": "Hör bei jedem Wort auf den Vokal vor dem fraglichen Buchstaben. Ist er kurz, wird der Konsonant danach verdoppelt. Ist er lang, steht nur einer."
+      },
+      {
+        "chapter": "ss oder ß?",
+        "title": "Dieselbe Frage noch einmal",
+        "body": "*Kla**ss**e*: Das a ist kurz.\n*Stra**ß**e*: Das a ist lang.",
+        "say": "Bei ss und ß stellst du genau dieselbe Frage wie eben. Ist der Vokal davor kurz oder lang? Sprich Klasse und Straße laut. Bei Klasse ist das a kurz, bei Straße ziehst du es in die Länge. Daran entscheidet sich die Schreibung."
+      },
+      {
+        "title": "Die Regel",
+        "body": "Nach einem **kurzen** Vokal steht **ss**.\n\nNach einem **langen** Vokal steht **ß**.",
+        "tasks": [
+          {
+            "text": "Der ___ tut mir weh.",
+            "choices": [
+              "Fuß",
+              "Fuss"
+            ],
+            "correct": "Fuß",
+            "why": "Das u ist lang. Nach einem langen Vokal steht dieser Buchstabe.",
+            "hint": "Sprich das Wort laut. Ist das u kurz oder lang?"
+          }
+        ],
+        "say": "Das ist schon die ganze Regel. Sie passt genau zu dem, was du über doppelte Konsonanten weißt. Das ss ist ein doppelter Konsonant, also steht es nach einem kurzen Vokal. Das ß ist ein einzelner Buchstabe, also steht es nach einem langen."
+      },
+      {
+        "title": "Nach ei, au und eu steht auch ß",
+        "body": "*hei**ß**, drau**ß**en, flei**ß**ig*\n\nZwei Vokale hintereinander zählen wie ein langer Vokal.",
+        "tasks": [
+          {
+            "text": "Heute ist es sehr ___.",
+            "choices": [
+              "heiß",
+              "heiss"
+            ],
+            "correct": "heiß",
+            "why": "Vor dem fraglichen Laut steht ei. Danach schreibt man diesen Buchstaben.",
+            "hint": "Welche zwei Vokale stehen vor dem fraglichen Laut?"
+          }
+        ],
+        "say": "Es gibt Laute, die aus zwei Vokalen bestehen: ei, au, eu und äu. Sie sind immer lang, denn du brauchst Zeit, um von einem zum anderen zu gleiten. Deshalb steht nach ihnen ebenfalls ß und nie ss."
+      },
+      {
+        "title": "Jetzt du: ss oder ß?",
+        "body": "Sprich jedes Wort leise und tipp auf die richtige Schreibung.",
+        "tasks": [
+          {
+            "text": "Ich ___ es nicht.",
+            "choices": [
+              "weiß",
+              "weiss"
+            ],
+            "correct": "weiß",
+            "why": "Davor steht ei. Nach zwei Vokalen schreibt man ß.",
+            "hint": "Welche zwei Vokale stehen vor dem fraglichen Laut?"
+          },
+          {
+            "text": "Der ___ fließt ins Meer.",
+            "choices": [
+              "Fluss",
+              "Fluß"
+            ],
+            "correct": "Fluss",
+            "why": "Das u ist kurz. Nach einem kurzen Vokal steht ss.",
+            "hint": "Sprich das Wort laut. Ist das u kurz oder lang?"
+          },
+          {
+            "text": "Wir ___ heute Pizza.",
+            "choices": [
+              "essen",
+              "eßen"
+            ],
+            "correct": "essen",
+            "why": "Das e ist kurz. Nach einem kurzen Vokal steht ss.",
+            "hint": "Ist das erste e in dem Wort kurz oder lang?"
+          }
+        ],
+        "say": "Hör wieder auf den Vokal davor. Ist er kurz, schreibst du ss. Ist er lang oder besteht er aus zwei Vokalen, schreibst du ß."
+      },
+      {
+        "chapter": "Verlängern und ableiten",
+        "title": "Das Problem am Wortende",
+        "body": "*Hun**d*** klingt wie *Hunt*.\n\nAm Ende eines Wortes hörst du nicht, ob dort d oder t steht.\n\nBei b und p, g und k ist es genauso.",
+        "say": "Sprich das Wort Hund laut. Am Ende hörst du ein hartes t. Geschrieben wird es aber mit d. Im Deutschen klingen d, b und g am Wortende hart. Dein Ohr hilft dir hier also nicht weiter. Dafür gibt es die erste Strategie."
+      },
+      {
+        "title": "Strategie 1: verlängern",
+        "body": "Hun**d**: die Hun**d**e\nklu**g**: klü**g**er\ner lie**b**t: lie**b**en",
+        "tasks": [
+          {
+            "text": "Berg oder Berk? Die Verlängerung heißt Berge. Richtig ist ___.",
+            "choices": [
+              "Berg",
+              "Berk"
+            ],
+            "correct": "Berg",
+            "why": "In der längeren Form hörst du das weiche g deutlich.",
+            "hint": "Welchen Buchstaben hörst du in der Mitte der längeren Form?"
+          }
+        ],
+        "say": "Du machst das Wort länger. Dann steht der fragliche Buchstabe nicht mehr am Ende, und du hörst ihn deutlich. Aus Hund wird Hunde, und jetzt hörst du das weiche d. Diese Strategie heißt verlängern."
+      },
+      {
+        "title": "So verlängerst du",
+        "body": "**Nomen**: den Plural bilden.\n**Adjektiv**: steigern.\n**Verb**: den Infinitiv bilden.",
+        "tasks": [
+          {
+            "text": "rund oder runt? Gesteigert heißt es runder. Richtig ist ___.",
+            "choices": [
+              "rund",
+              "runt"
+            ],
+            "correct": "rund",
+            "why": "In der gesteigerten Form hörst du das weiche d.",
+            "hint": "Welchen Buchstaben hörst du in der gesteigerten Form?"
+          }
+        ],
+        "say": "Je nach Wortart verlängerst du auf eine andere Weise. Bei einem Nomen nimmst du die Mehrzahl. Bei einem Adjektiv steigerst du. Bei einem Verb suchst du die Grundform. Alle drei Wege führen zu einer längeren Form, in der du den Buchstaben hörst."
+      },
+      {
+        "title": "Strategie 2: ableiten",
+        "body": "H**äu**ser kommt von H**au**s.\nk**ä**lter kommt von k**a**lt.\ns**ü**chtig kommt von S**u**cht.",
+        "say": "Die Laute ä und e klingen oft gleich, ebenso äu und eu. Hier hilft ein verwandtes Wort. Gibt es ein verwandtes Wort mit a, schreibst du ä. Gibt es eins mit au, schreibst du äu. Genauso kommt ö von o und ü von u. Diese Strategie heißt ableiten."
+      },
+      {
+        "title": "Verwandte Wörter",
+        "body": "*fahren, Fahrer, Fahrt, Gefährte*\n\nWörter, die zusammengehören, bilden eine **Wortfamilie**.",
+        "tasks": [
+          {
+            "text": "Bäume oder Beume? Das Wort kommt von Baum. Richtig ist ___.",
+            "choices": [
+              "Bäume",
+              "Beume"
+            ],
+            "correct": "Bäume",
+            "why": "Im verwandten Wort steht au. Daraus wird in der Mehrzahl äu.",
+            "hint": "Welche Buchstaben stehen im verwandten Wort an dieser Stelle?"
+          }
+        ],
+        "say": "Wörter haben Verwandte, so wie Menschen. Fahren, Fahrer und Fahrt gehören zu einer Familie und teilen sich einen gemeinsamen Kern. Wenn du bei einem Wort unsicher bist, schaust du bei seinen Verwandten nach. Gefährte schreibt man mit ä, weil es von fahren kommt."
+      },
+      {
+        "title": "Jetzt du: verlängern und ableiten",
+        "body": "Tipp bei jedem Wort auf die richtige Schreibung.",
+        "tasks": [
+          {
+            "text": "das ___",
+            "choices": [
+              "Kind",
+              "Kint"
+            ],
+            "correct": "Kind",
+            "why": "Die Mehrzahl heißt Kinder. Dort hörst du das weiche d.",
+            "hint": "Bilde die Mehrzahl. Welchen Buchstaben hörst du?"
+          },
+          {
+            "text": "meine ___",
+            "choices": [
+              "Hände",
+              "Hende"
+            ],
+            "correct": "Hände",
+            "why": "Das verwandte Wort heißt Hand, mit a. Deshalb schreibt man ä.",
+            "hint": "Wie heißt die Einzahl? Welcher Vokal steht dort?"
+          },
+          {
+            "text": "Sie ___ schnell weg.",
+            "choices": [
+              "läuft",
+              "leuft"
+            ],
+            "correct": "läuft",
+            "why": "Der Infinitiv heißt laufen, mit au. Daraus wird äu.",
+            "hint": "Wie heißt die Grundform des Verbs? Welche Buchstaben stehen dort?"
+          }
+        ],
+        "say": "Überleg bei jedem Wort, welche der beiden Strategien hilft. Geht es um das Wortende, verlängerst du. Geht es um ä oder äu, suchst du ein verwandtes Wort."
+      },
+      {
+        "chapter": "Silben und das h",
+        "title": "Was ist eine Silbe?",
+        "body": "*Was-ser, ken-nen, Bet-ten*\n\nEine **Silbe** ist ein Klatscher, wenn du ein Wort klatschst.",
+        "say": "Sprich ein Wort langsam und klatsch dabei mit. Jeder Klatscher ist eine Silbe. Wasser hat zwei: Was und ser. An der Stelle, an der du die Hände wieder öffnest, liegt die Grenze zwischen zwei Silben."
+      },
+      {
+        "title": "Strategie 3: in Silben sprechen",
+        "body": "*Bet-ten*: Du hörst das t zweimal.\n*be-ten*: Du hörst es nur einmal.",
+        "tasks": [
+          {
+            "text": "Sprich in Silben: Him-mel. Das m hörst du ___.",
+            "choices": [
+              "zweimal",
+              "einmal"
+            ],
+            "correct": "zweimal",
+            "why": "Die erste Silbe endet mit m, die zweite beginnt mit m.",
+            "hint": "Mit welchem Laut endet die erste Silbe, und mit welchem beginnt die zweite?"
+          }
+        ],
+        "say": "Wenn du ein Wort in Silben sprichst, hörst du doppelte Konsonanten. Bei Bet-ten endet die erste Silbe mit t, und die zweite beginnt wieder mit t. Bei be-ten gehört das t nur zur zweiten Silbe. Diese Strategie nennt man Silbenprobe."
+      },
+      {
+        "title": "Strategie 4: das h prüfen",
+        "body": "*fa**h**ren, Za**h**l, wo**h**nen, Le**h**rer*\n\nVor **l, m, n** und **r** steht nach einem langen Vokal oft ein **h**.",
+        "say": "Dieses h hörst du nicht. Es hat nur eine Aufgabe: Es zeigt, dass der Vokal davor lang ist. Man nennt es deshalb Dehnungs-h. Es steht fast nur vor den vier Buchstaben l, m, n und r. Leider steht es nicht bei jedem Wort, deshalb muss man viele davon einfach kennen."
+      },
+      {
+        "title": "Das h zwischen zwei Vokalen",
+        "body": "*se-**h**en, ge-**h**en, Ru-**h**e*\n\nSprich in Silben. Dann hörst du das h.",
+        "tasks": [
+          {
+            "text": "Wir ___ heute ins Kino.",
+            "choices": [
+              "gehen",
+              "geen"
+            ],
+            "correct": "gehen",
+            "why": "In Silben gesprochen hörst du das h am Anfang der zweiten Silbe.",
+            "hint": "Sprich das Wort in zwei Silben. Womit beginnt die zweite?"
+          }
+        ],
+        "say": "Es gibt noch ein zweites h. Es steht zwischen zwei Vokalen und trennt sie voneinander. Wenn du das Wort in Silben sprichst, hörst du es am Anfang der zweiten Silbe: se-hen, ge-hen. Auch bei verwandten Wörtern bleibt es: Er sieht, weil es von sehen kommt."
+      },
+      {
+        "title": "Ein Beispiel aus der Prüfung",
+        "body": "Das Wort: *eifersüchtig*\n\n**ü oder i?** Das verwandte Wort heißt Eifers**u**cht. Also ü. Das ist ableiten.\n**g oder k?** Gesteigert heißt es eifersüchti**g**er. Also g. Das ist verlängern.",
+        "say": "So sieht eine echte Aufgabe aus. Du bekommst ein Wort mit zwei schwierigen Stellen und sollst sagen, welche Strategie hilft. Für jede Stelle fragst du dich: Geht es um das Wortende, um einen Vokal wie ä oder ü, oder um einen doppelten Buchstaben?"
+      },
+      {
+        "title": "Jetzt du: Welche Strategie hilft?",
+        "body": "Tipp bei jedem Zweifelsfall auf die passende Strategie.",
+        "tasks": [
+          {
+            "text": "Hund oder Hunt? Es hilft: ___",
+            "choices": [
+              "verlängern",
+              "in Silben sprechen"
+            ],
+            "correct": "verlängern",
+            "why": "Der Zweifel liegt am Wortende. Die Mehrzahl Hunde macht das d hörbar.",
+            "hint": "An welcher Stelle im Wort liegt der Zweifel?"
+          },
+          {
+            "text": "Häuser oder Heuser? Es hilft: ___",
+            "choices": [
+              "ableiten",
+              "verlängern"
+            ],
+            "correct": "ableiten",
+            "why": "Das verwandte Wort Haus zeigt, dass äu richtig ist.",
+            "hint": "Geht es um das Wortende oder um die Laute in der Mitte?"
+          },
+          {
+            "text": "Betten oder Beten zum Schlafen? Es hilft: ___",
+            "choices": [
+              "in Silben sprechen",
+              "ableiten"
+            ],
+            "correct": "in Silben sprechen",
+            "why": "Bei Bet-ten hörst du das t zweimal.",
+            "hint": "Geht es um einen doppelten Buchstaben? Wie machst du ihn hörbar?"
+          }
+        ],
+        "say": "Hier musst du nicht das Wort schreiben, sondern die Strategie nennen. Schau, an welcher Stelle der Zweifel liegt. Das verrät dir, welches Werkzeug du brauchst."
+      },
+      {
+        "title": "Das nimmst du mit",
+        "body": "**Verlängern**: bei d oder t, b oder p, g oder k am Wortende.\n**Ableiten**: bei ä oder e, äu oder eu.\n**In Silben sprechen**: bei doppelten Konsonanten.\n**Das h prüfen**: vor l, m, n, r und zwischen zwei Vokalen.",
+        "tasks": [
+          {
+            "text": "Nach einem langen Vokal schreibst du ___.",
+            "choices": [
+              "ß",
+              "ss"
+            ],
+            "correct": "ß",
+            "why": "Das ss ist ein doppelter Konsonant und steht nur nach einem kurzen Vokal.",
+            "hint": "Welches von beiden ist ein doppelter Konsonant? Wo stehen doppelte Konsonanten?"
+          }
+        ],
+        "say": "Das sind die vier Strategien mit ihren Einsatzorten. Dazu kommt die Grundfrage, ob ein Vokal kurz oder lang ist. Sie entscheidet über doppelte Konsonanten und über ss oder ß. Gleich kommen die Wörter zum Nachlesen und ein kleines Quiz."
+      }
+    ],
+    "vocab": [
+      {
+        "term": "Vokal",
+        "plain": "Ein Laut, den man lange singen kann: a, e, i, o, u und ä, ö, ü. Er kann kurz oder lang sein."
+      },
+      {
+        "term": "Konsonant",
+        "plain": "Jeder Buchstabe, der kein Vokal ist, zum Beispiel b, t, m, s."
+      },
+      {
+        "term": "verlängern",
+        "plain": "Ein Wort länger machen, um den Buchstaben am Ende zu hören.",
+        "example": "Hund: Hunde"
+      },
+      {
+        "term": "ableiten",
+        "plain": "Ein verwandtes Wort suchen, um ä oder äu zu erklären.",
+        "example": "Häuser kommt von Haus"
+      },
+      {
+        "term": "Wortfamilie",
+        "plain": "Wörter, die miteinander verwandt sind und einen gemeinsamen Kern haben.",
+        "example": "fahren, Fahrer, Fahrt"
+      },
+      {
+        "term": "Silbe",
+        "plain": "Ein Teil eines Wortes, den man einzeln klatschen kann.",
+        "example": "Was-ser"
+      },
+      {
+        "term": "ss / ß",
+        "plain": "Nach einem kurzen Vokal steht ss, nach einem langen Vokal und nach ei, au, eu steht ß.",
+        "example": "Klasse, Straße, heiß"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Welches Wort ist richtig geschrieben?",
+        "choices": [
+          "Wasser",
+          "Waser",
+          "Waßer",
+          "Wahser"
+        ],
+        "correct": "Wasser",
+        "explain": "Das a ist kurz. Nach einem kurzen Vokal steht ss."
+      },
+      {
+        "prompt": "Welches Wort ist richtig geschrieben?",
+        "choices": [
+          "Straße",
+          "Strasse",
+          "Strase",
+          "Strahse"
+        ],
+        "correct": "Straße",
+        "explain": "Das a ist lang. Nach einem langen Vokal steht ß."
+      },
+      {
+        "prompt": "Du weißt nicht, ob am Ende d oder t steht. Welche Strategie hilft?",
+        "choices": [
+          "verlängern",
+          "ableiten",
+          "das h prüfen",
+          "raten"
+        ],
+        "correct": "verlängern",
+        "explain": "Wenn du das Wort verlängerst, steht der Buchstabe nicht mehr am Ende, und du hörst ihn deutlich."
+      },
+      {
+        "prompt": "Träume oder Treume? Wie findest du es heraus?",
+        "choices": [
+          "Ich suche das verwandte Wort Traum.",
+          "Ich spreche in Silben.",
+          "Ich verlängere das Wort.",
+          "Ich prüfe das h."
+        ],
+        "correct": "Ich suche das verwandte Wort Traum.",
+        "explain": "Im verwandten Wort steht au. Deshalb schreibt man in der Mehrzahl äu. Das ist ableiten."
+      },
+      {
+        "prompt": "Warum schreibt man kommen mit zwei m?",
+        "choices": [
+          "Weil das o kurz ist.",
+          "Weil das o lang ist.",
+          "Weil es ein Verb ist.",
+          "Weil es von Kamm kommt."
+        ],
+        "correct": "Weil das o kurz ist.",
+        "explain": "Nach einem kurzen Vokal wird der Konsonant verdoppelt. In Silben gesprochen hörst du es: kom-men."
+      },
+      {
+        "prompt": "Welches Wort ist richtig geschrieben?",
+        "choices": [
+          "draußen",
+          "draussen",
+          "drausen",
+          "drauhsen"
+        ],
+        "correct": "draußen",
+        "explain": "Davor steht au. Nach zwei Vokalen hintereinander schreibt man ß."
+      },
+      {
+        "prompt": "Wie verlängerst du ein Adjektiv?",
+        "choices": [
+          "Ich steigere es.",
+          "Ich bilde den Plural.",
+          "Ich bilde den Infinitiv.",
+          "Ich setze einen Artikel davor."
+        ],
+        "correct": "Ich steigere es.",
+        "explain": "Ein Adjektiv verlängert man durch Steigern: klug, klüger. Den Plural bildet man bei Nomen."
+      },
+      {
+        "prompt": "Vor welchen Buchstaben steht oft ein h, das man nicht hört?",
+        "choices": [
+          "vor l, m, n und r",
+          "vor a, e, i und o",
+          "vor b, d und g",
+          "vor s und ß"
+        ],
+        "correct": "vor l, m, n und r",
+        "explain": "Das Dehnungs-h steht nach einem langen Vokal vor l, m, n oder r, zum Beispiel in fahren und Zahl."
+      }
+    ]
+  }
+]

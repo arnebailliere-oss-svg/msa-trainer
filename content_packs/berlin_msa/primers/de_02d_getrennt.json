@@ -1,0 +1,388 @@
+[
+  {
+    "id": "P_DE_GETRENNT",
+    "subject": "DE",
+    "title": "Getrennt oder zusammen?",
+    "teaser": "Wann zwei Wörter zusammengeschrieben werden und wann nicht. Du lernst die Grundregel, die wichtigsten Verbindungen mit Verben und die Wörter, die besonders oft falsch geschrieben werden.",
+    "hook": "Rad fahren oder radfahren? Gar nicht oder garnicht? Bei dieser Frage sind sogar viele Erwachsene unsicher. Die gute Nachricht ist, dass es eine klare Grundregel gibt. Und für die häufigsten Fälle musst du dir nur ein paar Gruppen merken.",
+    "outro": "Du kennst jetzt die Grundregel: Wörter stehen getrennt, außer es entsteht ein neues Wort. Nomen und Verb sowie Verb und Verb schreibst du getrennt. Kleine Wörter wie auf, an und mit verbinden sich mit dem Verb. Und bei Paaren wie wiedersehen hilft dir die Betonung.",
+    "standard": 2,
+    "requires": [
+      "P_DE_WORTARTEN",
+      "P_DE_WORTARTEN2",
+      "P_DE_GROSS_KLEIN"
+    ],
+    "steps": [
+      {
+        "chapter": "Zwei Wörter oder eins?",
+        "title": "Worum es geht",
+        "body": "*Wir wollen heute **Fußball spielen**.*\n\n*Das **Fußballspiel** beginnt um drei.*\n\nEinmal zwei Wörter, einmal ein Wort.",
+        "say": "Schau dir die beiden Sätze an. Im ersten Satz stehen Fußball und spielen getrennt. Im zweiten Satz sind sie zu einem einzigen Wort zusammengewachsen. Warum das so ist, lässt sich mit wenigen Regeln erklären."
+      },
+      {
+        "title": "Die Grundregel",
+        "body": "Wörter schreibt man **getrennt**.\n\nZusammen schreibt man nur, wenn ein **neues Wort** entsteht.",
+        "say": "Das ist der wichtigste Satz der Lektion. Jedes Wort steht erst einmal für sich. Nur wenn zwei Wörter so eng zusammengehören, dass sie eine neue, eigene Sache bezeichnen, schreibt man sie zusammen. Eine Autobahn ist etwas anderes als ein Auto und eine Bahn."
+      },
+      {
+        "title": "Nomen und Nomen: zusammen",
+        "body": "Auto und Bahn: **Autobahn**\nHaus und Tür: **Haustür**\nFuß und Ball: **Fußball**",
+        "tasks": [
+          {
+            "text": "Bitte schließ die ___.",
+            "choices": [
+              "Haustür",
+              "Haus Tür"
+            ],
+            "correct": "Haustür",
+            "why": "Zwei Nomen benennen zusammen ein neues Ding.",
+            "hint": "Benennen die beiden Wörter zusammen eine einzige Sache?"
+          }
+        ],
+        "say": "Wenn zwei Nomen zusammen ein neues Ding benennen, schreibt man sie als ein Wort. Das ist im Deutschen sehr häufig und macht die Wörter manchmal lang. Im Englischen stehen solche Wörter oft getrennt. Lass dich davon nicht verwirren."
+      },
+      {
+        "title": "Jetzt du: zusammengesetzte Nomen",
+        "body": "Tipp bei jedem Satz auf die richtige Schreibung.",
+        "tasks": [
+          {
+            "text": "Wir treffen uns auf dem ___.",
+            "choices": [
+              "Fußballplatz",
+              "Fußball Platz"
+            ],
+            "correct": "Fußballplatz",
+            "why": "Es ist ein einziger Ort. Die Nomen bilden zusammen ein neues Wort.",
+            "hint": "Ist ein einziger Ort gemeint, auf den du zeigen kannst?"
+          },
+          {
+            "text": "Das ___ ist im zweiten Stock.",
+            "choices": [
+              "Klassenzimmer",
+              "Klassen Zimmer"
+            ],
+            "correct": "Klassenzimmer",
+            "why": "Es ist ein einziger Raum. Die Nomen bilden zusammen ein neues Wort.",
+            "hint": "Ist ein einziger Raum gemeint, oder sind es zwei verschiedene Dinge?"
+          }
+        ],
+        "say": "In jedem Satz geht es um zwei Nomen, die zusammen ein neues Ding benennen. Überleg, ob du auf dieses eine Ding zeigen kannst."
+      },
+      {
+        "chapter": "Verbindungen mit Verben",
+        "title": "Nomen und Verb: getrennt",
+        "body": "**Klavier spielen**, **Rad fahren**, **Fußball spielen**\n\nDas Nomen bleibt groß, das Verb bleibt klein.",
+        "tasks": [
+          {
+            "text": "Meine Schwester kann ___.",
+            "choices": [
+              "Klavier spielen",
+              "klavierspielen"
+            ],
+            "correct": "Klavier spielen",
+            "why": "Ein Nomen und ein Verb bleiben zwei Wörter.",
+            "hint": "Welche beiden Wortarten stehen hier direkt nebeneinander?"
+          }
+        ],
+        "say": "Wenn ein Nomen und ein Verb zusammen etwas beschreiben, bleiben sie zwei Wörter. Das Nomen sagt, womit oder was, und das Verb sagt, was man tut. Du schreibst das Nomen groß und das Verb klein, wie immer."
+      },
+      {
+        "title": "Verb und Verb: getrennt",
+        "body": "**spazieren gehen**, **schwimmen gehen**, **einkaufen gehen**\n\nZwei Verben bleiben zwei Wörter.",
+        "tasks": [
+          {
+            "text": "Am Wochenende wollen wir ___.",
+            "choices": [
+              "schwimmen gehen",
+              "schwimmengehen"
+            ],
+            "correct": "schwimmen gehen",
+            "why": "Zwei Verben hintereinander bleiben zwei Wörter.",
+            "hint": "Welche Wortart sind die beiden Wörter?"
+          }
+        ],
+        "say": "Auch zwei Verben hintereinander schreibst du getrennt. Das kommt besonders oft mit gehen vor. Wir gehen schwimmen, wir wollen schwimmen gehen. Jedes Verb behält seinen eigenen Platz."
+      },
+      {
+        "title": "Adjektiv und Verb: meistens getrennt",
+        "body": "**laut singen**, **schnell laufen**, **fertig lesen**\n\nDas Adjektiv sagt, wie etwas getan wird.",
+        "say": "Ein Adjektiv vor einem Verb beschreibt, wie jemand etwas tut. Wie singt sie? Laut. Beide Wörter behalten ihre eigene Bedeutung und bleiben getrennt. Es gibt Ausnahmen, aber für die Prüfung reicht diese Regel."
+      },
+      {
+        "title": "Kleine Wörter vorn: zusammen",
+        "body": "**auf**stehen, **an**machen, **hin**gehen, **weg**laufen, **mit**kommen\n\nEin kurzes Wort vor dem Verb wächst mit ihm zusammen.",
+        "tasks": [
+          {
+            "text": "Ich muss morgen früh ___.",
+            "choices": [
+              "aufstehen",
+              "auf stehen"
+            ],
+            "correct": "aufstehen",
+            "why": "Das kurze Wort wächst mit dem Verb zu einem neuen Wort zusammen.",
+            "hint": "Bedeutet das Wort mit dem kurzen Wort davor etwas anderes als das Verb allein?"
+          }
+        ],
+        "say": "Hier ist es umgekehrt. Kurze Wörter wie auf, an, aus, ein, mit, weg und hin verbinden sich mit dem Verb zu einem neuen Wort. Aufstehen ist etwas anderes als stehen. Diese Wörter erkennst du daran, dass sie allein kaum etwas bedeuten."
+      },
+      {
+        "title": "Im Satz trennt sich das Verb wieder",
+        "body": "Ich **stehe** früh **auf**.\nHier stehen die Teile getrennt.\n\nIch muss früh **aufstehen**.\nHier stehen sie zusammen.",
+        "say": "Das verwirrt manchmal. In einem einfachen Satz wandert das kurze Wort ans Ende, und das Verb steht an zweiter Stelle. Sobald beide wieder nebeneinanderstehen, schreibst du sie zusammen. Das passiert nach müssen, wollen, können und nach zu."
+      },
+      {
+        "title": "Wenn ein Nomen daraus wird",
+        "body": "Wir wollen **Rad fahren**.\nDas sind zwei Wörter.\n\n**Das Radfahren** macht Spaß.\nDas ist ein Nomen: zusammen und groß.",
+        "tasks": [
+          {
+            "text": "Beim ___ habe ich Tom getroffen.",
+            "choices": [
+              "Spazierengehen",
+              "spazieren gehen"
+            ],
+            "correct": "Spazierengehen",
+            "why": "In beim steckt ein Artikel. Die Verbindung wird zum Nomen und zu einem Wort.",
+            "hint": "Welches Wort steht vor der Lücke? Steckt ein Artikel darin?"
+          }
+        ],
+        "say": "Du weißt schon, dass aus einem Verb ein Nomen werden kann, wenn ein Artikel davorsteht. Dann wächst die ganze Verbindung zu einem Wort zusammen. Aus Rad fahren wird das Radfahren. Aus spazieren gehen wird beim Spazierengehen."
+      },
+      {
+        "title": "Jetzt du: Verbindungen mit Verben",
+        "body": "Tipp bei jedem Satz auf die richtige Schreibung.",
+        "tasks": [
+          {
+            "text": "Kannst du bitte das Licht ___?",
+            "choices": [
+              "anmachen",
+              "an machen"
+            ],
+            "correct": "anmachen",
+            "why": "Das kurze Wort an wächst mit dem Verb zusammen.",
+            "hint": "Steht vor dem Verb ein kurzes Wort wie auf, an oder mit?"
+          },
+          {
+            "text": "Wir wollen heute ___.",
+            "choices": [
+              "Rad fahren",
+              "radfahren"
+            ],
+            "correct": "Rad fahren",
+            "why": "Ein Nomen und ein Verb bleiben zwei Wörter.",
+            "hint": "Welche beiden Wortarten stehen hier direkt nebeneinander?"
+          },
+          {
+            "text": "Nach der Schule müssen wir noch ___.",
+            "choices": [
+              "einkaufen gehen",
+              "einkaufengehen"
+            ],
+            "correct": "einkaufen gehen",
+            "why": "Zwei Verben hintereinander schreibt man getrennt.",
+            "hint": "Welche Wortart sind die beiden Wörter am Ende?"
+          }
+        ],
+        "say": "Schau bei jedem Satz, welche Wortarten zusammenkommen. Nomen und Verb sowie Verb und Verb bleiben getrennt. Ein kurzes Wort vor dem Verb wächst mit ihm zusammen."
+      },
+      {
+        "chapter": "Die Betonung und Wörter zum Merken",
+        "title": "Die Bedeutung ändert sich",
+        "body": "Wir werden uns **wiedersehen**.\nDas bedeutet: Wir treffen uns noch einmal.\n\nNach der Operation kann er **wieder sehen**.\nDas bedeutet: Er kann erneut sehen.",
+        "say": "Manchmal gibt es beide Schreibungen, und sie bedeuten etwas Verschiedenes. Zusammen ist es ein eigenes Wort mit einer eigenen Bedeutung. Getrennt behält jedes Wort seine normale Bedeutung. Du musst also wissen, was gemeint ist."
+      },
+      {
+        "title": "Hör auf die Betonung",
+        "body": "**WIE**dersehen: eine Betonung, ein Wort\nwieder **SE**hen: zwei Betonungen, zwei Wörter",
+        "tasks": [
+          {
+            "text": "Tschüss und auf ___!",
+            "choices": [
+              "Wiedersehen",
+              "Wieder sehen"
+            ],
+            "correct": "Wiedersehen",
+            "why": "Gemeint ist das erneute Treffen. Es ist ein Wort mit einer Betonung.",
+            "hint": "Wie viele Betonungen hörst du, wenn du den Gruß sprichst?"
+          }
+        ],
+        "say": "Sprich beide laut aus. Beim Abschiedsgruß betonst du nur den Anfang. Beim Sehen nach der Operation betonst du beide Wörter. Das ist eine gute Faustregel: Hörst du nur eine Betonung, schreibst du zusammen. Hörst du zwei, schreibst du getrennt."
+      },
+      {
+        "title": "Häufige Wörter zum Merken",
+        "body": "**Getrennt**: gar nicht, auf einmal, ein bisschen, vor allem, noch einmal\n**Zusammen**: irgendwo, irgendwie, überhaupt, zusammen, vielleicht",
+        "tasks": [
+          {
+            "text": "Das ist ___ schlimm.",
+            "choices": [
+              "gar nicht",
+              "garnicht"
+            ],
+            "correct": "gar nicht",
+            "why": "Diese beiden Wörter schreibt man immer getrennt.",
+            "hint": "Schau in die erste Zeile der Tafel."
+          }
+        ],
+        "say": "Einige Wörter werden so oft falsch geschrieben, dass du sie am besten einfach lernst. Gar nicht wird gar nicht zusammengeschrieben. Mit diesem Satz merkst du dir das wichtigste davon. Alles, was mit irgend beginnt, schreibst du dagegen zusammen."
+      },
+      {
+        "title": "Jetzt du: gemischt",
+        "body": "Tipp bei jedem Satz auf die richtige Schreibung.",
+        "tasks": [
+          {
+            "text": "Hast du ___ meinen Schlüssel gesehen?",
+            "choices": [
+              "irgendwo",
+              "irgend wo"
+            ],
+            "correct": "irgendwo",
+            "why": "Alles, was mit irgend beginnt, schreibt man zusammen.",
+            "hint": "Womit beginnt das Wort? Was gilt für diese Wörter?"
+          },
+          {
+            "text": "Plötzlich wurde es ___ dunkel.",
+            "choices": [
+              "auf einmal",
+              "aufeinmal"
+            ],
+            "correct": "auf einmal",
+            "why": "Diese beiden Wörter schreibt man immer getrennt.",
+            "hint": "Schau auf die Liste der Wörter zum Merken."
+          },
+          {
+            "text": "Der ___ kommt in zehn Minuten.",
+            "choices": [
+              "Schulbus",
+              "Schul Bus"
+            ],
+            "correct": "Schulbus",
+            "why": "Zwei Nomen benennen zusammen ein neues Ding.",
+            "hint": "Benennen die beiden Wörter zusammen eine einzige Sache?"
+          }
+        ],
+        "say": "Jetzt kommt alles aus dieser Lektion vor. Frag dich bei jedem Fall: Welche Wortarten kommen zusammen? Entsteht ein neues Wort? Und wie viele Betonungen höre ich?"
+      },
+      {
+        "title": "Das nimmst du mit",
+        "body": "**Zusammen**: Nomen und Nomen, kurzes Wort und Verb\n**Getrennt**: Nomen und Verb, Verb und Verb, Adjektiv und Verb\n\nEine Betonung: ein Wort. Zwei Betonungen: zwei Wörter.",
+        "tasks": [
+          {
+            "text": "Ich komme ___ etwas später.",
+            "choices": [
+              "vielleicht",
+              "viel leicht"
+            ],
+            "correct": "vielleicht",
+            "why": "Das Wort hat nur eine Betonung und ist ein eigenes Wort.",
+            "hint": "Wie viele Betonungen hörst du, wenn du es sprichst?"
+          }
+        ],
+        "say": "Das sind die Regeln auf einen Blick. Wenn du unsicher bist, sprich die Wörter laut und hör auf die Betonung. Gleich kommen noch die Wörter zum Nachlesen und ein kleines Quiz."
+      }
+    ],
+    "vocab": [
+      {
+        "term": "Grundregel",
+        "plain": "Wörter schreibt man getrennt. Zusammen schreibt man nur, wenn ein neues Wort entsteht."
+      },
+      {
+        "term": "aufstehen, anmachen, mitkommen",
+        "plain": "Ein kurzes Wort vor dem Verb wächst mit ihm zusammen."
+      },
+      {
+        "term": "Rad fahren, Klavier spielen",
+        "plain": "Nomen und Verb bleiben zwei Wörter."
+      },
+      {
+        "term": "spazieren gehen, einkaufen gehen",
+        "plain": "Zwei Verben hintereinander bleiben zwei Wörter."
+      },
+      {
+        "term": "gar nicht",
+        "plain": "Wird immer getrennt geschrieben."
+      },
+      {
+        "term": "wiedersehen / wieder sehen",
+        "plain": "Zusammen: sich erneut treffen. Getrennt: erneut sehen können."
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Welche Schreibung ist richtig?",
+        "choices": [
+          "Ich kann Gitarre spielen.",
+          "Ich kann gitarrespielen.",
+          "Ich kann Gitarrespielen.",
+          "Ich kann gitarre spielen."
+        ],
+        "correct": "Ich kann Gitarre spielen.",
+        "explain": "Ein Nomen und ein Verb bleiben zwei Wörter. Das Nomen wird großgeschrieben."
+      },
+      {
+        "prompt": "Welche Schreibung ist richtig?",
+        "choices": [
+          "Wir müssen jetzt losgehen.",
+          "Wir müssen jetzt los gehen.",
+          "Wir müssen jetzt Los gehen.",
+          "Wir müssen jetzt Losgehen."
+        ],
+        "correct": "Wir müssen jetzt losgehen.",
+        "explain": "Das kurze Wort los wächst mit dem Verb zu einem neuen Wort zusammen."
+      },
+      {
+        "prompt": "Welche Schreibung ist richtig?",
+        "choices": [
+          "Das ist gar nicht wahr.",
+          "Das ist garnicht wahr.",
+          "Das ist Garnicht wahr.",
+          "Das ist gar-nicht wahr."
+        ],
+        "correct": "Das ist gar nicht wahr.",
+        "explain": "Gar nicht schreibt man immer in zwei Wörtern."
+      },
+      {
+        "prompt": "Welche Schreibung ist richtig?",
+        "choices": [
+          "die Bushaltestelle",
+          "die Bus Haltestelle",
+          "die Bus haltestelle",
+          "die bushaltestelle"
+        ],
+        "correct": "die Bushaltestelle",
+        "explain": "Die Nomen benennen zusammen einen einzigen Ort. Sie bilden ein Wort, und es wird großgeschrieben."
+      },
+      {
+        "prompt": "Welche Schreibung ist richtig?",
+        "choices": [
+          "Wir wollen spazieren gehen.",
+          "Wir wollen spazierengehen.",
+          "Wir wollen Spazieren gehen.",
+          "Wir wollen spazieren Gehen."
+        ],
+        "correct": "Wir wollen spazieren gehen.",
+        "explain": "Zwei Verben hintereinander bleiben zwei Wörter und werden kleingeschrieben."
+      },
+      {
+        "prompt": "Beim ___ ist er gestürzt.",
+        "choices": [
+          "Radfahren",
+          "Rad fahren",
+          "rad fahren",
+          "radfahren"
+        ],
+        "correct": "Radfahren",
+        "explain": "In beim steckt ein Artikel. Die Verbindung wird zum Nomen: zusammen und groß."
+      },
+      {
+        "prompt": "Auf ___! Was ist gemeint und wie schreibt man es?",
+        "choices": [
+          "Wiedersehen: sich erneut treffen",
+          "Wieder sehen: erneut sehen können",
+          "wieder Sehen: ein Fehler",
+          "wiedersehen: ein Verb"
+        ],
+        "correct": "Wiedersehen: sich erneut treffen",
+        "explain": "Der Gruß meint das erneute Treffen. Es ist ein Wort mit einer Betonung und wird hier als Nomen großgeschrieben."
+      }
+    ]
+  }
+]

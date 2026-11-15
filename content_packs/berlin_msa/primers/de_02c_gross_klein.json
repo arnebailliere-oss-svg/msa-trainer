@@ -1,0 +1,456 @@
+[
+  {
+    "id": "P_DE_GROSS_KLEIN",
+    "subject": "DE",
+    "title": "Groß oder klein?",
+    "teaser": "Was im Deutschen großgeschrieben wird und was klein bleibt. Du lernst, Nomen an ihren Begleitern und Endungen zu erkennen, und du lernst die Stellen kennen, an denen fast alle Fehler passieren: beim Essen, etwas Neues, am schnellsten, montags.",
+    "hook": "Deutsch ist eine der wenigen Sprachen, in denen man mitten im Satz große Buchstaben schreibt. Das macht Texte gut lesbar, aber es macht auch Arbeit. Die Grundregel ist einfach und du kennst sie schon. Schwierig sind nur ein paar besondere Stellen. Die nehmen wir uns einzeln vor.",
+    "outro": "Du weißt jetzt, woran du ein Nomen erkennst: an seinem Begleiter und an seiner Endung. Du weißt, dass aus Verben und Adjektiven Nomen werden können, wenn ein Artikel davorsteht. Und du kennst die Wörter, die klein bleiben: der Superlativ mit am und Zeitangaben wie montags, heute und morgen.",
+    "standard": 2,
+    "requires": [
+      "P_DE_WORTARTEN",
+      "P_DE_WORTARTEN2"
+    ],
+    "steps": [
+      {
+        "chapter": "Nomen sicher erkennen",
+        "title": "Drei sichere Fälle",
+        "body": "(1) Das erste Wort eines Satzes.\n\n(2) Alle Nomen.\n\n(3) Namen von Menschen, Orten und Ländern.",
+        "say": "Diese drei Fälle kennst du seit der Grundschule. Am Satzanfang schreibst du groß, egal welches Wort dort steht. Namen wie Lena, Berlin und Italien schreibst du immer groß. Die meiste Arbeit machen die Nomen, denn die musst du erst einmal erkennen."
+      },
+      {
+        "title": "Nomen haben Begleiter",
+        "body": "**der** Hund, **ein** Haus\n**mein** Buch, **dieses** Lied\n**drei** Äpfel, **viele** Leute",
+        "tasks": [
+          {
+            "text": "Wir hatten viel ___.",
+            "choices": [
+              "Spaß",
+              "spaß"
+            ],
+            "correct": "Spaß",
+            "why": "Davor steht ein Wort für eine Menge. Danach folgt ein Nomen.",
+            "hint": "Welches Wort steht direkt vor der Lücke? Ist es ein Begleiter?"
+          }
+        ],
+        "say": "Ein Nomen steht selten allein. Vor ihm steht fast immer ein Begleiter. Das kann ein Artikel sein, ein Pronomen wie mein oder dieses, oder ein Wort für eine Menge wie drei, viele oder kein. Wenn du so einen Begleiter siehst, folgt ein Nomen."
+      },
+      {
+        "title": "Dazwischen kann ein Adjektiv stehen",
+        "body": "der **kleine** Hund\n\nmein **neues** Fahrrad\n\nGroß wird nur das Nomen am Ende der Gruppe.",
+        "tasks": [
+          {
+            "text": "Heute ist schönes ___.",
+            "choices": [
+              "Wetter",
+              "wetter"
+            ],
+            "correct": "Wetter",
+            "why": "Schönes ist das Adjektiv. Das Wort danach ist das Nomen, das es beschreibt.",
+            "hint": "Welches der beiden Wörter kannst du mit einem Artikel verbinden?"
+          }
+        ],
+        "say": "Zwischen dem Begleiter und dem Nomen steht oft noch ein Adjektiv. Lass dich davon nicht täuschen. Der Begleiter gehört zu dem Nomen am Ende der Gruppe. Das Adjektiv dazwischen bleibt klein. Es heißt der kleine Hund und nicht der Kleine Hund."
+      },
+      {
+        "title": "Nomen haben typische Endungen",
+        "body": "*die Hoffn**ung**, die Frei**heit**, die Fröhlich**keit***\n\n*die Freund**schaft**, das Ergeb**nis**, das Eigen**tum***",
+        "tasks": [
+          {
+            "text": "Unsere ___ ist schon alt.",
+            "choices": [
+              "Freundschaft",
+              "freundschaft"
+            ],
+            "correct": "Freundschaft",
+            "why": "Das Wort endet auf schaft. Wörter mit dieser Endung sind Nomen.",
+            "hint": "Schau auf das Ende des Wortes. Kennst du diese Endung von der Tafel?"
+          }
+        ],
+        "say": "Viele Nomen erkennst du auch an ihrem Ende. Wörter auf ung, heit, keit, schaft, nis und tum sind immer Nomen. Das ist besonders nützlich bei Wörtern für Gefühle und Gedanken, die man nicht anfassen kann."
+      },
+      {
+        "title": "Jetzt du: Nomen erkennen",
+        "body": "Tipp bei jedem Satz auf die richtige Schreibung.",
+        "tasks": [
+          {
+            "text": "Ich habe keine ___.",
+            "choices": [
+              "Zeit",
+              "zeit"
+            ],
+            "correct": "Zeit",
+            "why": "Kein ist ein Begleiter. Danach folgt ein Nomen.",
+            "hint": "Welches Wort steht direkt vor der Lücke?"
+          },
+          {
+            "text": "Das war eine große ___.",
+            "choices": [
+              "Überraschung",
+              "überraschung"
+            ],
+            "correct": "Überraschung",
+            "why": "Das Wort endet auf ung und hat den Begleiter eine.",
+            "hint": "Schau auf die Endung des Wortes und auf den Begleiter."
+          },
+          {
+            "text": "Der Hund ist sehr ___.",
+            "choices": [
+              "freundlich",
+              "Freundlich"
+            ],
+            "correct": "freundlich",
+            "why": "Das Wort sagt, wie der Hund ist. Es ist ein Adjektiv und bleibt klein.",
+            "hint": "Steht ein Begleiter direkt davor? Was beschreibt das Wort?"
+          }
+        ],
+        "say": "Such bei jedem Wort nach einem Begleiter davor oder nach einer typischen Endung. Wenn du eins von beiden findest, ist es ein Nomen und wird großgeschrieben."
+      },
+      {
+        "chapter": "Wenn aus Verben und Adjektiven Nomen werden",
+        "title": "Das Schwimmen",
+        "body": "Ich **schwimme** gern.\nHier ist es ein Verb.\n\n**Das Schwimmen** macht Spaß.\nHier ist es ein Nomen.",
+        "say": "Jetzt wird es interessant. Dasselbe Wort kann einmal ein Verb sein und einmal ein Nomen. Im zweiten Satz steht ein Artikel davor, und das Schwimmen ist der Name für eine Tätigkeit. Wenn aus einem Verb oder Adjektiv ein Nomen wird, nennt man das **Nominalisierung**."
+      },
+      {
+        "title": "beim, zum, im und vom",
+        "body": "**beim** Essen, **zum** Lachen, **im** Stehen\n\nIn diesen Wörtern steckt ein Artikel: *beim* ist *bei dem*.",
+        "tasks": [
+          {
+            "text": "Beim ___ höre ich Musik.",
+            "choices": [
+              "Laufen",
+              "laufen"
+            ],
+            "correct": "Laufen",
+            "why": "In dem Wort davor steckt ein Artikel. Aus dem Verb ist ein Nomen geworden.",
+            "hint": "Welcher Artikel steckt in dem Wort vor der Lücke?"
+          }
+        ],
+        "say": "Diese kleinen Wörter sind versteckte Artikel. Beim bedeutet bei dem, zum bedeutet zu dem, und im bedeutet in dem. Wenn danach ein Verb folgt, ist es zu einem Nomen geworden. Du schreibst es groß: beim Essen, zum Lachen."
+      },
+      {
+        "title": "Auch Adjektive werden zu Nomen",
+        "body": "das **Gute** daran\n\netwas **Neues**, nichts **Besonderes**\n\nviel **Schönes**, alles **Gute**",
+        "tasks": [
+          {
+            "text": "Ich wünsche dir alles ___.",
+            "choices": [
+              "Gute",
+              "gute"
+            ],
+            "correct": "Gute",
+            "why": "Nach alles wird das Adjektiv zum Nomen und großgeschrieben.",
+            "hint": "Welches Wort steht vor der Lücke? Wirkt es wie ein Begleiter?"
+          }
+        ],
+        "say": "Dasselbe passiert mit Adjektiven. Mit einem Artikel davor wird gut zu das Gute. Auch nach den Wörtern etwas, nichts, viel, wenig und alles wird ein Adjektiv zum Nomen. Diese Wörter wirken wie Begleiter. Es heißt etwas Neues und alles Gute."
+      },
+      {
+        "title": "Die Probe",
+        "body": "Wir **lachen**.\nHier passt kein Artikel davor.\n\nIch höre **das Lachen**.\nHier steht ein Artikel davor.",
+        "say": "Die Probe ist dieselbe wie bei jedem Nomen. Steht ein Artikel davor, oder steckt einer in dem Wort davor? Dann ist es ein Nomen. Wenn du unsicher bist, versuch, einen Artikel einzufügen. Klingt der Satz danach noch richtig, schreibst du groß."
+      },
+      {
+        "title": "Die Falle mit zu",
+        "body": "Ich habe keine Lust **zu laufen**.\nHier bleibt das Verb klein.\n\nIch gehe **zum Laufen**.\nHier wird es großgeschrieben.",
+        "tasks": [
+          {
+            "text": "Es ist schwer zu ___.",
+            "choices": [
+              "verstehen",
+              "Verstehen"
+            ],
+            "correct": "verstehen",
+            "why": "Davor steht nur zu, ohne versteckten Artikel. Das Verb bleibt klein.",
+            "hint": "Steht vor der Lücke zu oder zum? Steckt ein Artikel darin?"
+          }
+        ],
+        "say": "Pass auf den Unterschied zwischen zu und zum auf. Nach zu allein folgt ein ganz normales Verb, und das bleibt klein. Nur in zum steckt ein Artikel, nämlich zu dem. Erst dann wird das Verb zum Nomen."
+      },
+      {
+        "title": "Jetzt du: Verb oder Nomen?",
+        "body": "Tipp bei jedem Satz auf die richtige Schreibung.",
+        "tasks": [
+          {
+            "text": "Das ___ der Vögel weckte mich.",
+            "choices": [
+              "Singen",
+              "singen"
+            ],
+            "correct": "Singen",
+            "why": "Davor steht der Artikel das. Das Verb ist zum Nomen geworden.",
+            "hint": "Welches Wort steht direkt vor der Lücke?"
+          },
+          {
+            "text": "Heute gibt es nichts ___.",
+            "choices": [
+              "Neues",
+              "neues"
+            ],
+            "correct": "Neues",
+            "why": "Nach nichts wird das Adjektiv zum Nomen.",
+            "hint": "Welches Wort steht vor der Lücke? Wirkt es wie ein Begleiter?"
+          },
+          {
+            "text": "Wir ___ jeden Tag zusammen.",
+            "choices": [
+              "essen",
+              "Essen"
+            ],
+            "correct": "essen",
+            "why": "Hier tut jemand etwas. Es ist ein Verb, und kein Artikel steht davor.",
+            "hint": "Sagt das Wort, was jemand tut? Steht ein Artikel davor?"
+          }
+        ],
+        "say": "Such bei jedem Satz nach einem Artikel, einem versteckten Artikel oder einem Wort wie etwas, nichts und alles. Nur dann wird großgeschrieben."
+      },
+      {
+        "chapter": "Was klein bleibt",
+        "title": "Verben und Adjektive",
+        "body": "*Sie **läuft** sehr **schnell**.*\n\nVerben und Adjektive schreibt man klein, solange kein Artikel davorsteht.",
+        "say": "Das ist die Gegenseite der Regel. Ein Verb, das sagt, was jemand tut, bleibt klein. Ein Adjektiv, das sagt, wie etwas ist, bleibt klein. Großgeschrieben werden sie nur in dem besonderen Fall, den du gerade gelernt hast."
+      },
+      {
+        "title": "Die höchste Stufe mit am",
+        "body": "am **schnellsten**, am **besten**, am **schönsten**\n\nDie höchste Stufe eines Adjektivs mit am bleibt **klein**.",
+        "tasks": [
+          {
+            "text": "Sie singt am ___.",
+            "choices": [
+              "schönsten",
+              "Schönsten"
+            ],
+            "correct": "schönsten",
+            "why": "Es ist die höchste Stufe beim Steigern. Du kannst mit wie danach fragen.",
+            "hint": "Kannst du nach dem Wort mit wie fragen?"
+          }
+        ],
+        "say": "Das ist eine beliebte Falle. Am sieht aus wie ein versteckter Artikel, nämlich an dem. Trotzdem bleibt die höchste Stufe beim Steigern klein. Du kannst es mit der Frage prüfen: Wie läuft sie? Am schnellsten. Wenn du mit wie fragen kannst, schreibst du klein."
+      },
+      {
+        "title": "Wochentage und Tageszeiten",
+        "body": "**der Montag**, **am Abend**\nDas sind Nomen.\n\n**montags**, **abends**, **morgens**\nMit s am Ende bleiben sie klein.",
+        "tasks": [
+          {
+            "text": "Wir trainieren immer ___.",
+            "choices": [
+              "montags",
+              "Montags"
+            ],
+            "correct": "montags",
+            "why": "Mit s am Ende bedeutet es jeden Montag. Es ist ein Adverb und bleibt klein.",
+            "hint": "Hat das Wort ein s am Ende? Was bedeutet es dann?"
+          }
+        ],
+        "say": "Wochentage und Tageszeiten sind zunächst Nomen: der Montag, der Abend. Hängst du aber ein s an, bedeutet das Wort jeden Montag oder an jedem Abend. Dann ist es ein Adverb und bleibt klein. Achte also auf das s am Ende."
+      },
+      {
+        "title": "heute, morgen und gestern",
+        "body": "Bis **morgen**!\nDas ist der Tag nach heute. Es bleibt klein.\n\nAm **Morgen** war es kalt.\nDas ist die Tageszeit. Sie wird großgeschrieben.\n\nAuch: heute **Abend**, gestern **Mittag**",
+        "tasks": [
+          {
+            "text": "Wir sehen uns ___ in der Schule.",
+            "choices": [
+              "morgen",
+              "Morgen"
+            ],
+            "correct": "morgen",
+            "why": "Gemeint ist der Tag nach heute. Das ist ein Adverb.",
+            "hint": "Ist der Tag nach heute gemeint oder die Tageszeit am Anfang des Tages?"
+          }
+        ],
+        "say": "Heute, morgen und gestern sind Adverbien und bleiben klein. Morgen gibt es aber zweimal. Der Tag nach heute bleibt klein. Die Tageszeit ist ein Nomen und wird großgeschrieben. Steht eine Tageszeit nach heute oder gestern, schreibst du sie ebenfalls groß."
+      },
+      {
+        "title": "Die höfliche Anrede",
+        "body": "*Können **Sie** mir helfen?*\n\n*Ich danke **Ihnen** für **Ihre** Antwort.*\n\nIn der höflichen Anrede schreibt man Sie, Ihnen und Ihr groß.",
+        "tasks": [
+          {
+            "text": "Können ___ mir bitte helfen, Herr Müller?",
+            "choices": [
+              "Sie",
+              "sie"
+            ],
+            "correct": "Sie",
+            "why": "Herr Müller wird höflich angesprochen. Die Anrede wird großgeschrieben.",
+            "hint": "Wird hier jemand höflich angesprochen, oder spricht man über andere Leute?"
+          }
+        ],
+        "say": "Wenn du jemanden siezt, schreibst du Sie, Ihnen und Ihr groß. Das zeigt Respekt, und es verhindert Verwechslungen. Mit kleinem s wären mehrere Leute gemeint, über die man spricht. In einer Bewerbung oder einem Brief an eine Firma ist das besonders wichtig."
+      },
+      {
+        "title": "Jetzt du: gemischt",
+        "body": "Tipp bei jedem Satz auf die richtige Schreibung.",
+        "tasks": [
+          {
+            "text": "Er rennt am ___.",
+            "choices": [
+              "schnellsten",
+              "Schnellsten"
+            ],
+            "correct": "schnellsten",
+            "why": "Die höchste Stufe mit am bleibt klein.",
+            "hint": "Kannst du mit wie nach dem Wort fragen?"
+          },
+          {
+            "text": "Zum ___ treffen wir uns im Park.",
+            "choices": [
+              "Spielen",
+              "spielen"
+            ],
+            "correct": "Spielen",
+            "why": "In zum steckt ein Artikel. Aus dem Verb ist ein Nomen geworden.",
+            "hint": "Welcher Artikel steckt in dem Wort vor der Lücke?"
+          },
+          {
+            "text": "Heute ___ gehen wir ins Kino.",
+            "choices": [
+              "Abend",
+              "abend"
+            ],
+            "correct": "Abend",
+            "why": "Nach heute steht die Tageszeit als Nomen.",
+            "hint": "Ist das Wort eine Tageszeit? Hat es ein s am Ende?"
+          }
+        ],
+        "say": "Jetzt kommen alle Fälle aus dieser Lektion vor. Frag dich bei jedem Wort: Ist es ein Nomen mit Begleiter? Ist es eine höchste Stufe mit am? Hat es ein s am Ende wie montags?"
+      },
+      {
+        "title": "Das nimmst du mit",
+        "body": "**Groß**: Nomen mit Begleiter\n**Groß**: Verb oder Adjektiv mit Artikel, auch nach beim, zum, etwas, nichts\n**Groß**: Sie und Ihnen in der Anrede\n\n**Klein**: Verben und Adjektive ohne Artikel\n**Klein**: am schnellsten, montags, heute, morgen",
+        "tasks": [
+          {
+            "text": "Ich habe etwas ___ gesehen.",
+            "choices": [
+              "Schönes",
+              "schönes"
+            ],
+            "correct": "Schönes",
+            "why": "Nach etwas wird das Adjektiv zum Nomen.",
+            "hint": "Welches Wort steht vor der Lücke? Wirkt es wie ein Begleiter?"
+          }
+        ],
+        "say": "Das ist die ganze Lektion auf einer Tafel. Die wichtigste Frage bleibt: Steht ein Begleiter davor? Wenn ja, schreibst du groß. Gleich kommen noch die Wörter zum Nachlesen und ein kleines Quiz."
+      }
+    ],
+    "vocab": [
+      {
+        "term": "Begleiter",
+        "plain": "Ein Wort, das vor einem Nomen steht: ein Artikel, ein Pronomen oder ein Wort für eine Menge.",
+        "example": "der, mein, drei, viele, kein"
+      },
+      {
+        "term": "Nominalisierung",
+        "plain": "Aus einem Verb oder Adjektiv wird ein Nomen, weil ein Artikel davorsteht. Dann schreibt man es groß.",
+        "example": "das Schwimmen, etwas Neues"
+      },
+      {
+        "term": "beim, zum, im, vom",
+        "plain": "Wörter, in denen ein Artikel steckt: bei dem, zu dem, in dem, von dem."
+      },
+      {
+        "term": "am schnellsten",
+        "plain": "Die höchste Stufe beim Steigern mit am. Sie bleibt klein."
+      },
+      {
+        "term": "montags, abends",
+        "plain": "Zeitangaben mit s am Ende. Sie bedeuten jeden Montag, jeden Abend und bleiben klein."
+      },
+      {
+        "term": "Sie, Ihnen, Ihr",
+        "plain": "Die höfliche Anrede. Sie wird großgeschrieben."
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Welche Schreibung ist richtig?",
+        "choices": [
+          "beim Essen",
+          "beim essen",
+          "Beim essen",
+          "bei Essen"
+        ],
+        "correct": "beim Essen",
+        "explain": "In beim steckt der Artikel dem. Deshalb ist Essen hier ein Nomen und wird großgeschrieben."
+      },
+      {
+        "prompt": "Welche Schreibung ist richtig?",
+        "choices": [
+          "etwas Neues",
+          "etwas neues",
+          "Etwas neues",
+          "etwas Neu"
+        ],
+        "correct": "etwas Neues",
+        "explain": "Nach etwas, nichts, viel und alles wird ein Adjektiv zum Nomen."
+      },
+      {
+        "prompt": "Welche Schreibung ist richtig?",
+        "choices": [
+          "am schnellsten",
+          "am Schnellsten",
+          "Am Schnellsten",
+          "am Schnellste"
+        ],
+        "correct": "am schnellsten",
+        "explain": "Die höchste Stufe mit am bleibt klein. Du kannst mit wie danach fragen."
+      },
+      {
+        "prompt": "Wir treffen uns ___ im Schwimmbad.",
+        "choices": [
+          "freitags",
+          "Freitags",
+          "Freitag's",
+          "freitag"
+        ],
+        "correct": "freitags",
+        "explain": "Mit s am Ende bedeutet das Wort jeden Freitag. Es ist ein Adverb und bleibt klein."
+      },
+      {
+        "prompt": "Woran erkennst du ein Nomen am sichersten?",
+        "choices": [
+          "An einem Begleiter davor",
+          "An seiner Länge",
+          "An der Stelle im Satz",
+          "Am ersten Buchstaben"
+        ],
+        "correct": "An einem Begleiter davor",
+        "explain": "Vor einem Nomen steht ein Artikel, ein Pronomen oder ein Wort für eine Menge."
+      },
+      {
+        "prompt": "Welches Wort ist ein Nomen?",
+        "choices": [
+          "Sauberkeit",
+          "sauber",
+          "säubern",
+          "sauberer"
+        ],
+        "correct": "Sauberkeit",
+        "explain": "Die Endung keit zeigt ein Nomen an. Sauber ist ein Adjektiv, säubern ein Verb."
+      },
+      {
+        "prompt": "Ich habe keine Lust zu ___.",
+        "choices": [
+          "lernen",
+          "Lernen",
+          "lernens",
+          "Lernung"
+        ],
+        "correct": "lernen",
+        "explain": "Nach zu allein folgt ein normales Verb. Nur nach zum wird es zum Nomen."
+      },
+      {
+        "prompt": "Sehr geehrte Frau Schmidt, ich danke ___ für die Nachricht.",
+        "choices": [
+          "Ihnen",
+          "ihnen",
+          "Sie",
+          "ihr"
+        ],
+        "correct": "Ihnen",
+        "explain": "In der höflichen Anrede schreibt man Sie, Ihnen und Ihr groß."
+      }
+    ]
+  }
+]
