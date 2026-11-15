@@ -3,57 +3,70 @@
     "id": "L_EN_LISTENING_READING",
     "subject": "EN",
     "topicId": "EN_READ_CORE",
-    "alsoFor": ["EN_READ_SIGNS", "EN_READ_MATCHING", "EN_READ_EMAILS", "EN_READ", "EN_LISTEN_NUMBERS", "EN_LISTEN"],
-    "title": "Listening und Reading: So läuft die Prüfung",
-    "intro": "Die Englischprüfung besteht immer aus drei Teilen: **Listening**, **Reading**, **Writing**. Es werden keine Grammatikregeln abgefragt. Was zählt, ist, ob du die Aufgabenformate kennst und mit **Schlüsselwörtern** arbeitest.",
-    "source": "Adaptiert nach Prüfungshefte MSA Englisch Berlin 2026, Prüfungsteil 1 (Listening) und 2 (Reading)",
+    "alsoFor": [
+      "EN_READ_SIGNS",
+      "EN_READ_MATCHING",
+      "EN_READ_EMAILS",
+      "EN_READ",
+      "EN_LISTEN_NUMBERS",
+      "EN_LISTEN"
+    ],
+    "title": "Listening und Reading",
+    "sheet": true,
+    "guided": [
+      "P_EN_LISTENING",
+      "P_EN_READ_MATCH",
+      "P_EN_READ_SIGNS",
+      "P_EN_READING"
+    ],
+    "intro": "Das hier ist dein Spickzettel zum Hören und Lesen. Hier schaust du nach, wie eine Aufgabe aufgebaut ist oder wie man eine Uhrzeit sagt. Gelernt wird oben in den Lektionen mit Ferdinand. Tipp auf eine Karte, um sie zu öffnen.",
+    "source": "Eigene Darstellung nach dem Aufbau des MSA Englisch",
     "sections": [
       {
         "kind": "what",
-        "title": "Der Aufbau",
-        "body": "- **Listening**: 4 bis 5 Hörtexte, jeder wird **zweimal** abgespielt. Aufgaben: ankreuzen, Lücken ausfüllen, zuordnen.\n- **Reading**: meist 3 Aufgaben: 1. **Personen und Angebote zuordnen**, 2. **Schilder und Kurztexte** verstehen, 3. ein **längerer Artikel** mit Single-Choice-Fragen.\n- **Writing**: Bildbeschreibung, E-Mail oder Brief, Antwort auf einen Blog, oft mit Mediation.\n\nEs werden **keine Punkte abgezogen** für falsche Antworten: im Zweifel immer ankreuzen."
+        "title": "So ist die Prüfung aufgebaut",
+        "body": "| Teil | Was du bekommst | Was du tust |\n| --- | --- | --- |\n| Listening | 4 bis 5 Hörtexte, jeder zweimal | ankreuzen, Lücken füllen, zuordnen |\n| Reading 1 | 5 Personen, 7 Angebote | zuordnen |\n| Reading 2 | Schilder und kurze Texte | den Satz finden, der dasselbe sagt |\n| Reading 3 | ein langer Artikel | Fragen dazu ankreuzen |\n| Writing | kurze Schreibaufgaben | zum Beispiel eine E-Mail schreiben |\n\nFür falsche Antworten wird nichts abgezogen. Kreuz deshalb immer etwas an, auch wenn du unsicher bist."
       },
       {
         "kind": "steps",
-        "title": "Listening: so gehst du vor",
-        "body": "1. **Vor dem Hören** die Aufgaben lesen und markieren: Wird eine **Zahl**, ein **Name**, eine **Uhrzeit**, ein **Ort** gesucht?\n2. **Erstes Hören**: Überblick, erste Antworten in Bleistift.\n3. **Zweites Hören**: Lücken füllen, Antworten prüfen.\n4. Unbekanntes Wort? Nicht hängen bleiben, den **Kontext** nutzen. Hintergrundgeräusche und Akzente ausblenden, auf die markierten Informationen hören."
+        "title": "Hören: in dieser Reihenfolge",
+        "body": "(1) Lies vor dem Hören die Aufgabe. Wird eine Uhrzeit, eine Zahl, ein Name oder ein Ort gesucht?\n\n(2) Beim ersten Hören verstehst du, worum es geht, und notierst die ersten Antworten.\n\n(3) Beim zweiten Hören füllst du die Lücken und prüfst deine Antworten.\n\nWenn du ein Wort nicht kennst, hör einfach weiter. Die Stelle kommt beim zweiten Hören noch einmal."
       },
       {
-        "kind": "formula",
-        "title": "Listening: Uhrzeiten, Daten, Telefonnummern",
-        "body": "**Uhrzeiten** werden fast immer im 12-Stunden-System gesprochen: *six pm* (18:00), *ten thirty am* (10:30), *quarter past nine* (21:15 abends). **half past ten** = 10:30, nicht halb zehn! *12 pm* = Mittag, *12 am* = Mitternacht. Die 0 ist **oh**: *five oh-nine*.\n\n**Daten**: *1st May* → *the first of May*, *May 1st* → *May the first*. Jahreszahlen zweigeteilt: *1917* → *nineteen seventeen*, *1809* → *eighteen oh-nine*, aber *2009* → *two thousand and nine*. *v. Chr.* = **BC/BCE** (nach der Zahl), *n. Chr.* = **AD** (vor der Zahl) oder **CE**.\n\n**Telefonnummern** Ziffer für Ziffer, 0 = *oh*, betont wird die letzte Ziffer jeder Gruppe: *503-567-5647* → *five-oh-three, five-six-seven, five-six-four-seven*."
+        "kind": "terms",
+        "title": "Uhrzeiten",
+        "body": "| Du hörst | Es ist |\n| --- | --- |\n| half past ten | 10:30 (auf Deutsch: halb elf) |\n| quarter past nine | 9:15 |\n| quarter to nine | 8:45 |\n| ten past four | 4:10 |\n| twenty to five | 4:40 |\n| six fifteen | 6:15 |\n| five oh-nine | 5:09 |\n| 7 am | 7 Uhr morgens |\n| 7 pm | 19 Uhr |\n| 12 pm | 12 Uhr mittags |\n| 12 am | Mitternacht |\n\nDas Wort past bedeutet nach, das Wort to bedeutet vor."
       },
       {
-        "kind": "formula",
-        "title": "Reading 1: Personen zuordnen",
-        "body": "Etwa 5 Personen, 7 Angebote (Aktivitäten, Apps, Reisen). Jede Person bekommt meist **zwei** Angebote, ein Angebot kann **mehrfach** passen.\n\nStrategie: In jeder Personenbeschreibung die **Schlüsselwörter** markieren (*nature, animals* / *history* / *food* / *music*), dann in den Angeboten dieselben oder verwandte Wörter suchen (*zoo, gardens* / *museum, palace* / *restaurant, market* / *opera, concert*). Nicht raten, belegen."
+        "kind": "terms",
+        "title": "Zahlen, Preise und Daten",
+        "body": "| Du hörst | Es ist | Darauf achtest du |\n| --- | --- | --- |\n| thirTEEN | 13 | Das Ende ist betont und lang. |\n| THIRty | 30 | Der Anfang ist betont, das Ende ist kurz. |\n| oh-seven-double four | 0744 | Die Null heißt oh, double heißt doppelt. |\n| four pounds fifty | £4.50 | Erst die Pfund, dann die Pence. |\n| the first of May | 1. Mai | Auch möglich: May the first. |\n| the third of June | 3. Juni | first, second, third, danach mit -th. |\n| nineteen ninety-eight | 1998 | Man teilt die Jahreszahl in der Mitte. |\n| two thousand and nine | 2009 | Die Jahre 2000 bis 2009 sagt man mit thousand. |"
       },
       {
-        "kind": "formula",
-        "title": "Reading 2: Schilder und Kurztexte",
-        "body": "Ein Schild oder Aushang, vier Aussagen, **genau eine** ist richtig. Frage dich: Was will das Schild **bewirken**? Warnen (*danger, beware, careful*), verbieten (*do not, no, only*), informieren (*open, closed, last entry*), Bedingungen stellen (*first, before, unless*). Manche Schilder sind **ironisch** (*the worst coffee on Tripadvisor*): Dann ist die Absicht Werbung mit Humor."
+        "kind": "steps",
+        "title": "Lesen 1: Personen und Angebote zuordnen",
+        "body": "(1) Lies die Sätze über die Person und unterstreiche jeden Wunsch.\n\n(2) Geh mit jedem Wunsch durch die Angebote und streich, was dagegen spricht.\n\n(3) Prüf beim letzten Angebot jeden Wunsch noch einmal.\n\nEin Angebot passt nur, wenn kein einziger Wunsch dagegen spricht. Das Angebot benutzt oft andere Wörter als die Person: Bei der Person steht *animals*, im Angebot steht *goats* oder *wildlife*."
       },
       {
-        "kind": "formula",
-        "title": "Reading 3: der Artikel",
-        "body": "1. **Fragen zuerst lesen**, Schlüsselwörter markieren.\n2. Den Artikel überfliegen und in **Themenabschnitte** einteilen (Absätze, Zwischenüberschriften).\n3. Mit den Schlüsselwörtern der Frage die passende Stelle finden und **genau** vergleichen: Zahlen, Namen, *all / some / only*.\n4. Bei *Both A + B*-Antworten prüfen, ob **beide** Aussagen belegt sind.\n\nSchlüsselwörter sind meist **Nomen, die sich wiederholen** und oft schon in der Überschrift stehen."
+        "kind": "terms",
+        "title": "Lesen 2: Schilder und kurze Texte",
+        "body": "Frag zuerst: Was will das Schild?\n\n| Das Schild will | Daran erkennst du es |\n| --- | --- |\n| verbieten | no, do not, not allowed |\n| warnen | danger, beware, caution |\n| informieren | open, closed, last entry |\n| eine Bedingung nennen | only, unless, must |\n\nDer richtige Satz sagt dasselbe mit anderen Wörtern. Ein Satz ist falsch, wenn er nur ein Wort vom Schild übernimmt oder wenn er etwas behauptet, das nicht auf dem Schild steht."
       },
       {
-        "kind": "example",
-        "title": "Beispiel: Schlüsselwörter finden",
-        "body": "*This year, selfie sticks were banned at several music festivals. In some countries, using a selfie stick in dangerous places can even lead to arrest, after fatal accidents happened …*\n\nSchlüsselwörter: **selfie sticks, banned, arrest, dangerous, accidents** → Thema: die Gefahren von Selfie-Sticks. Mit dem Thema im Kopf liest du den Rest doppelt so schnell."
+        "kind": "steps",
+        "title": "Lesen 3: der lange Artikel",
+        "body": "(1) Lies zuerst die Frage und markiere ein Schlüsselwort, am besten einen Namen oder ein Ding.\n\n(2) Such dieses Wort im Artikel, ohne alles zu lesen.\n\n(3) Lies die Stelle genau und vergleiche sie mit jeder Antwort.\n\n| Kleines Wort | Bedeutung |\n| --- | --- |\n| not | nicht: dreht die Aussage um |\n| all / some | alle / einige |\n| only | nur |\n| more / fewer | mehr / weniger |\n\nBei den drei Kästchen bedeutet *false*, dass der Text etwas anderes sagt. *Not in the text* bedeutet, dass der Text dazu gar nichts sagt."
       },
       {
         "kind": "mistake",
         "title": "Typische Fehler",
-        "body": "- Beim Listening erst nach dem Hören die Aufgaben lesen.\n- *half past ten* als halb zehn verstehen (es ist 10:30).\n- Beim Zuordnen nach Gefühl statt nach Schlüsselwörtern arbeiten.\n- Eine Antwort ankreuzen, die ein Wort aus dem Text enthält, aber etwas anderes aussagt.\n- Aufgaben leer lassen: Es gibt keine Minuspunkte."
+        "body": "| Fehler | Besser so |\n| --- | --- |\n| Die Aufgabe erst nach dem Hören lesen | Die Aufgabe vor dem Hören lesen |\n| *half past ten* als halb zehn verstehen | Es ist 10:30, also halb elf |\n| Nach Gefühl zuordnen | Jeden Wunsch mit einem Wort belegen |\n| Eine Antwort wählen, weil ein Wort aus dem Text darin vorkommt | Die ganze Aussage vergleichen |\n| Eine Aufgabe leer lassen | Immer etwas ankreuzen |"
       },
       {
         "kind": "remember",
         "title": "Merke",
-        "body": "Aufgaben **zuerst** lesen, **Schlüsselwörter** markieren, zweimal hören, genau vergleichen, im Zweifel ankreuzen. *half past ten* = 10:30, 12 pm = Mittag, 0 = *oh*."
+        "body": "- Lies immer zuerst die Aufgabe und erst danach den Text.\n- Die richtige Antwort benutzt meistens andere Wörter als der Text.\n- Was nicht im Text steht, ist keine richtige Antwort.\n- Die Uhrzeit half past ten ist halb elf und nicht halb zehn.\n- Kreuz immer etwas an, denn für falsche Antworten wird nichts abgezogen."
       }
-    ],
-    "primer": "P_EN_READING"
+    ]
   }
 ]

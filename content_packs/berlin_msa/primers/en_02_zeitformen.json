@@ -2,161 +2,498 @@
   {
     "id": "P_EN_ZEITFORMEN",
     "subject": "EN",
-    "title": "Welche Zeit wann? Die Signalwörter",
-    "teaser": "Der Zeitstrahl, jede Zeitform in kleinen Schritten mit einem Beispiel zuerst, und die Wörter, die sie verraten. Mit Aufgaben zum Selbermachen",
-    "hook": "Im Deutschen kommst du im Alltag mit drei Zeiten aus. Englisch hat mehr, weil es auch zeigt, ob etwas gerade läuft oder schon fertig ist. Klingt nach viel. Ist es nicht, wenn du den Zeitstrahl vor dir siehst und jede Zeit einzeln kennenlernst. Genau das machen wir jetzt.",
-    "outro": "Signalwort, Zeitstrahl, läuft es oder ist es fertig. Drei Fragen, und du hast die Zeitform. Du hast jede Zeit an einem Beispiel gesehen und selbst ausprobiert. In der Lektion steht die ganze Tabelle.",
+    "title": "Zeiten 1: immer oder gerade jetzt?",
+    "teaser": "Der Zeitstrahl, das Simple Present für alles, was immer wieder passiert, und das Present Progressive für das, was gerade jetzt passiert. Mit den Wörtern, die dir die richtige Zeit verraten.",
+    "hook": "Im Deutschen sagst du ich spiele, egal ob du das jeden Samstag tust oder genau in diesem Moment. Englisch macht daraus zwei verschiedene Formen. Das klingt erst einmal umständlich. Es ist aber leicht, sobald du weißt, worauf du achten musst. Wir gehen es in Ruhe durch, eine Tafel nach der anderen.",
+    "outro": "Du kannst jetzt zwei Zeiten auseinanderhalten: das Simple Present für alles, was immer wieder passiert, und das Present Progressive für das, was gerade jetzt passiert. Und du weißt, dass kleine Wörter wie always oder now dir die Zeit verraten. In der nächsten Lektion geht es in die Vergangenheit.",
+    "standard": 2,
+    "requires": [
+      "P_EN_VERBFORMEN"
+    ],
     "steps": [
       {
-        "title": "Drei Zeiten, ein Zeitstrahl",
-        "body": "**Past** ← **Present** → **Future**\n\nVorher, jetzt, später.\n\nJede englische Zeitform sitzt auf diesem Strahl.",
-        "say": "Wir gehen die Zeitformen von der Mitte aus durch: erst jetzt, dann vorher, dann später. Und jede bekommt zuerst ein Beispiel, dann erst die Regel."
+        "chapter": "Wann passiert etwas?",
+        "title": "Das Verb zeigt die Zeit",
+        "body": "Gestern **war** ich müde.\n\nJetzt **bin** ich wach.\n\nMorgen **werde** ich fit sein.\n\nAm Verb erkennst du, **wann** etwas passiert.",
+        "say": "Wir fangen mit etwas an, das du längst kannst. Lies die drei deutschen Sätze. Es geht jedes Mal um dich, aber einmal um gestern, einmal um jetzt und einmal um morgen. Das Verb verändert sich und zeigt dir damit die Zeit."
       },
       {
-        "title": "Simple Present: immer und normal",
-        "body": "*I **play** football every Saturday.*\n\nDas passiert **immer wieder**. Eine Gewohnheit.\n\nSignalwörter: **every day, always, usually, often, never**",
-        "say": "Every Saturday: Das tue ich jede Woche. Für Dinge, die immer so sind, nimmst du das Verb in der Grundform. Nichts dran, nichts davor."
+        "title": "Der Zeitstrahl",
+        "body": "Links ist **früher**, in der Mitte ist **jetzt**, rechts ist **später**.\n\nDieses Bild heißt **Zeitstrahl**.",
+        "figure": {
+          "type": "timeline"
+        },
+        "tasks": [
+          {
+            "text": "Yesterday heißt gestern. Auf dem Zeitstrahl liegt das ___.",
+            "choices": [
+              "links",
+              "in der Mitte",
+              "rechts"
+            ],
+            "correct": "links",
+            "why": "Gestern ist schon vorbei. Alles, was vorbei ist, liegt links von jetzt.",
+            "hint": "Ist gestern schon gewesen, oder kommt es erst noch? Such die passende Seite."
+          }
+        ],
+        "say": "Stell dir die Zeit wie eine lange Linie vor. Du stehst in der Mitte, das ist jetzt. Alles, was schon war, liegt links von dir. Alles, was noch kommt, liegt rechts. Dieses Bild benutzen wir immer wieder. Probier es gleich einmal aus."
       },
       {
-        "title": "Das s bei he, she, it",
-        "body": "*I play.* *You play.* *We play.*\n\n*She play**s**.* *He go**es**.* *It rain**s**.*\n\nNur bei **he / she / it**, nur im **Simple Present**.",
-        "say": "Das ist der häufigste Fehler in jeder Klassenarbeit: das vergessene s. Merk dir: he, she, it, das s muss mit."
+        "title": "Englisch fragt genauer nach",
+        "body": "Ich **spiele** Fußball. (jeden Samstag)\n\nIch **spiele** Fußball. (in diesem Moment)\n\nIm Deutschen ist das dieselbe Form. Englisch hat dafür **zwei** Formen.",
+        "say": "Schau dir die beiden deutschen Sätze an. Das Verb ist beide Male gleich. Im Englischen musst du dich entscheiden: Passiert etwas immer wieder, oder passiert es genau jetzt? Für jede der beiden Möglichkeiten gibt es eine eigene Form. Um diese beiden Formen geht es in dieser Lektion."
       },
       {
-        "title": "Present Progressive: gerade jetzt",
-        "body": "*Look! I **am playing** football right now.*\n\nDas passiert **in diesem Moment**.\n\n**am / is / are + -ing**\n\nSignalwörter: **now, at the moment, Look!, Listen!**",
-        "say": "Right now: Ich bin mittendrin. Dafür baust du die Form aus einer Form von be und dem Verb mit -ing. Look und Listen sind die Signalwörter, weil man nur auf etwas zeigen kann, das gerade passiert."
+        "title": "Jetzt du: immer wieder oder gerade jetzt?",
+        "body": "Hier ist noch alles auf Deutsch. Tipp bei jedem Satz an, was gemeint ist.",
+        "tasks": [
+          {
+            "text": "Ich putze mir jeden Morgen die Zähne. Das passiert ___.",
+            "choices": [
+              "immer wieder",
+              "gerade jetzt"
+            ],
+            "correct": "immer wieder",
+            "why": "Jeden Morgen bedeutet: Es wiederholt sich, Tag für Tag.",
+            "hint": "Achte auf die Wörter jeden Morgen. Passiert das einmal oder oft?"
+          },
+          {
+            "text": "Psst! Das Baby schläft. Das passiert ___.",
+            "choices": [
+              "gerade jetzt",
+              "immer wieder"
+            ],
+            "correct": "gerade jetzt",
+            "why": "Psst sagt man nur, wenn jemand in diesem Moment schläft.",
+            "hint": "Warum sagt jemand Psst? Was ist in diesem Augenblick los?"
+          },
+          {
+            "text": "Mein Vater arbeitet in einer Bank. Das gilt ___.",
+            "choices": [
+              "immer",
+              "nur heute"
+            ],
+            "correct": "immer",
+            "why": "Das ist sein Beruf. Es gilt an jedem Arbeitstag, nicht nur heute.",
+            "hint": "Ist das sein Beruf, oder macht er das nur in diesem einen Moment?"
+          }
+        ],
+        "say": "Bevor wir Englisch sprechen, üben wir nur das Hinhören. Lies jeden Satz und frag dich: Tut jemand das regelmäßig, oder passiert es in diesem Augenblick? Lass dir Zeit dabei."
       },
       {
-        "title": "Jetzt du",
-        "body": "1. *Listen! The baby ___ (cry).*\n\n2. *My dad ___ (work) in a bank.*\n\nGewohnheit oder gerade jetzt?",
-        "say": "Such das Signalwort. Frag dich: Passiert das jetzt gerade, oder ist es immer so? Entscheide dich für beide Sätze, dann Weiter."
+        "chapter": "Simple Present: was immer wieder passiert",
+        "title": "Jeden Samstag",
+        "body": "*I **play** football every Saturday.*\n\n= Ich spiele jeden Samstag Fußball.\n\nDas passiert **immer wieder**. Diese Zeitform heißt **Simple Present**.",
+        "say": "Every Saturday heißt jeden Samstag. Es geht also nicht um einen bestimmten Tag, sondern um eine Gewohnheit. Für Gewohnheiten nimmt das Englische das Simple Present. Simple bedeutet einfach, und present bedeutet Gegenwart."
       },
       {
-        "title": "Auflösung",
-        "body": "1. *Listen! The baby **is crying**.* → Listen! = jetzt gerade → Progressive\n\n2. *My dad **works** in a bank.* → immer so, Fakt → Simple Present, **he + s**",
-        "say": "Beim Baby zeigt Listen auf den Moment. Beim Vater ist es sein Job, jeden Tag, also Simple Present. Und weil er ein he ist: works mit s."
+        "title": "So baust du das Simple Present",
+        "body": "I / you / we / they **play**.\n\nHe / she / it **plays**.\n\nDu nimmst die Grundform. Bei he, she, it kommt ein **-s** dazu.",
+        "tasks": [
+          {
+            "text": "My sister ___ tennis every Monday.",
+            "choices": [
+              "plays",
+              "play"
+            ],
+            "correct": "plays",
+            "why": "My sister ist eine Person, also she. Das Verb bekommt sein s.",
+            "hint": "Für wen kannst du my sister einsetzen: für they oder für she?"
+          }
+        ],
+        "say": "Das kennst du schon aus der Lektion über die Verbformen. Das Simple Present ist einfach die Grundform. Nur bei he, she und it hängt sich ein s an das Verb. Mehr brauchst du für diese Zeit nicht. Probier es unten gleich aus."
       },
       {
-        "title": "Simple Past: vorbei und abgeschlossen",
-        "body": "*I **played** football yesterday.*\n\n*I **went** home.* (unregelmäßig)\n\n**-ed** oder die **2. Form**\n\nSignalwörter: **yesterday, last week, two years ago, in 2019**",
-        "say": "Gestern, letzte Woche, vor drei Jahren, 2019. Es ist passiert, es ist fertig, Punkt. Das ist die Zeit für Geschichten und alles, was ein Datum hat."
+        "title": "Kleine Wörter verraten die Zeit",
+        "body": "*I **always** get up at six.*\n\n*She **never** eats fish.*\n\nAlways heißt immer, never heißt nie. So ein Wort heißt **Signalwort**.",
+        "say": "In vielen Sätzen steht ein kleines Wort, das dir die Zeitform verrät. Man nennt es Signalwort, weil es dir ein Signal gibt. Wenn du always oder never liest, weißt du sofort: Hier geht es um etwas, das immer oder nie passiert. Also steht das Simple Present."
       },
       {
-        "title": "Present Perfect, Schritt 1: das Bild",
-        "body": "*She **has lost** her key.*\n\nDer Schlüssel ist **immer noch weg**.\n\nVergangenheit, aber die **Folge zählt jetzt**.",
-        "say": "Das ist die schwierigste Zeitform, darum machen wir sie in drei kleinen Schritten. Erst das Bild: Etwas ist passiert, und du merkst es jetzt noch. Sie steht vor der Tür und kommt nicht rein."
+        "title": "Die Signalwörter für immer wieder",
+        "body": "**always** = immer\n**usually** = normalerweise\n**often** = oft\n**sometimes** = manchmal\n**never** = nie\n**every day** = jeden Tag",
+        "tasks": [
+          {
+            "text": "usually = ___",
+            "choices": [
+              "normalerweise",
+              "nie",
+              "gerade jetzt"
+            ],
+            "correct": "normalerweise",
+            "why": "Usually heißt normalerweise. Es beschreibt, was meistens so ist.",
+            "hint": "Schau in die zweite Zeile der Tafel. Dort steht das Wort."
+          }
+        ],
+        "say": "Das sind die sechs wichtigsten. Lies sie einmal langsam von oben nach unten. Sie gehen von immer bis nie. Every kannst du mit jedem Zeitwort verbinden: every day, every week, every Saturday. Unten kannst du prüfen, ob eins schon sitzt."
       },
       {
-        "title": "Present Perfect, Schritt 2: die Form",
-        "body": "**have / has + 3. Form**\n\n*I **have played**.* *She **has gone**.* *We **have seen** it.*\n\nDie 3. Form: *played, gone, seen, lost, written*",
-        "say": "Have oder has, und dahinter die dritte Form des Verbs. Bei regelmäßigen Verben ist das -ed, bei unregelmäßigen die dritte Spalte der Liste. Wenn du have siehst, kommt die dritte Form."
+        "title": "Auch Tatsachen stehen im Simple Present",
+        "body": "*The sun **rises** in the east.*\n\n= Die Sonne geht im Osten auf.\n\n*My dad **works** in a bank.*\n\nDas ist **immer** so. Es ist eine Tatsache.",
+        "say": "Manchmal steht gar kein Signalwort im Satz. Dann hilft dir die Bedeutung. Die Sonne geht jeden Tag im Osten auf, das ändert sich nie. Und der Beruf deines Vaters gilt auch morgen noch. Für solche Tatsachen nimmst du ebenfalls das Simple Present."
       },
       {
-        "title": "Present Perfect, Schritt 3: die Signalwörter",
-        "body": "*I **have just** eaten.* (gerade eben)\n\n*She **has already** finished.* (schon)\n\n***Have** you **ever** been to London?* (jemals)\n\nSignalwörter: **just, already, yet, ever, never**",
-        "say": "Fünf kleine Wörter, und alle zeigen auf etwas, das bis jetzt gilt. Just: gerade eben. Already: schon. Yet: noch nicht, in Fragen und Verneinungen. Ever und never: jemals und nie im Leben."
+        "title": "Jetzt du: Simple Present",
+        "body": "Tipp bei jedem Satz auf die richtige Form.",
+        "tasks": [
+          {
+            "text": "We ___ pizza every Friday.",
+            "choices": [
+              "eat",
+              "eats"
+            ],
+            "correct": "eat",
+            "why": "We sind mehrere. Da bleibt die Grundform ohne s.",
+            "hint": "Wer isst hier? Ist das eine einzelne Person oder sind es mehrere?"
+          },
+          {
+            "text": "Tom often ___ late.",
+            "choices": [
+              "comes",
+              "come"
+            ],
+            "correct": "comes",
+            "why": "Tom ist eine Person, also he. Das Verb bekommt sein s.",
+            "hint": "Tom ist ein einzelner Junge. Welches kleine Wort passt für ihn?"
+          },
+          {
+            "text": "The bus ___ at eight every morning.",
+            "choices": [
+              "leaves",
+              "leave"
+            ],
+            "correct": "leaves",
+            "why": "Der Bus ist eine Sache, also it. Auch bei it kommt das s dazu.",
+            "hint": "Ein Bus ist eine einzelne Sache. Was passiert bei it mit dem Verb?"
+          }
+        ],
+        "say": "Jetzt bist du dran. Schau bei jedem Satz, wer etwas tut. Ist es he, she oder it, dann braucht das Verb sein s. Wenn du danebentippst, ist das nicht schlimm. Du bekommst einen Hinweis und probierst es noch einmal."
       },
       {
-        "title": "since und for",
-        "body": "*I have lived here **since** 2019.* → seit einem **Zeitpunkt**\n\n*I have lived here **for** five years.* → seit einer **Dauer**\n\nBeide → **Present Perfect**",
-        "say": "Since ist ein Datum oder ein Moment. For ist eine Menge Zeit. Und Vorsicht, die Deutsch-Falle: since five years ist falsch. Seit fünf Jahren heißt for five years."
+        "chapter": "Present Progressive: was gerade jetzt passiert",
+        "title": "Schau mal!",
+        "body": "*Look! Tom **is playing** football.*\n\n= Schau mal! Tom spielt gerade Fußball.\n\nDas passiert **genau jetzt**. Diese Zeitform heißt **Present Progressive**.",
+        "say": "Stell dir vor, du stehst am Fenster und zeigst auf den Sportplatz. Tom spielt in diesem Augenblick. Dafür hat das Englische eine eigene Zeitform, das Present Progressive. Progressive bedeutet, dass etwas gerade im Gang ist. Im Deutschen hilfst du dir oft mit dem Wort gerade."
       },
       {
-        "title": "Jetzt du",
-        "body": "1. *We ___ (watch) a film yesterday.*\n\n2. *I ___ (lose) my keys. I can't get in!*\n\nFertig und vorbei, oder Folge jetzt?",
-        "say": "Satz eins hat ein Signalwort. Satz zwei hat keins, aber eine Folge im zweiten Satz. Entscheide dich, dann Weiter."
+        "title": "So baust du das Present Progressive",
+        "body": "**am / is / are** + Verb mit **-ing**\n\nI **am** play**ing**.\nShe **is** play**ing**.\nThey **are** play**ing**.",
+        "tasks": [
+          {
+            "text": "They ___ playing.",
+            "choices": [
+              "are",
+              "is",
+              "am"
+            ],
+            "correct": "are",
+            "why": "They sind mehrere. Zu you, we und they gehört are.",
+            "hint": "Schau auf die dritte Zeile der Tafel. Welches Wort steht dort bei they?"
+          }
+        ],
+        "say": "Diese Zeit besteht immer aus zwei Teilen. Der erste Teil ist am, is oder are. Der zweite Teil ist das Verb mit ing. Auch das kennst du schon aus der Lektion über die Verbformen. Zu I gehört am, zu he, she, it gehört is, und zu allen anderen gehört are."
       },
       {
-        "title": "Auflösung",
-        "body": "1. *We **watched** a film yesterday.* → yesterday → Simple Past\n\n2. *I **have lost** my keys. I can't get in!* → Folge jetzt (ich komme nicht rein) → Present Perfect",
-        "say": "Yesterday macht es leicht: Simple Past. Bei den Schlüsseln fragst du: Hat es jetzt noch eine Folge? Ja, ich stehe draußen. Also Present Perfect."
+        "title": "Die Signalwörter für gerade jetzt",
+        "body": "**now** = jetzt\n**right now** = genau jetzt\n**at the moment** = im Moment\n**Look!** = Schau mal!\n**Listen!** = Hör mal!",
+        "say": "Auch diese Zeit hat ihre Signalwörter. Now und at the moment sind leicht zu verstehen. Look und Listen sind etwas versteckter. Überleg einmal: Du kannst nur auf etwas zeigen, das gerade passiert. Deshalb folgt nach Look oder Listen fast immer das Present Progressive."
       },
       {
-        "title": "Past Progressive: es lief, als …",
-        "body": "*I **was playing** football **when** it started to rain.*\n\nEine **lange** Handlung, die von einer **kurzen** unterbrochen wird.\n\n**was / were + -ing** · Signalwörter: **while, when, as**",
-        "say": "Stell dir einen Film vor: Du spielst, spielst, spielst, und plötzlich fängt es an zu regnen. Das lange Spielen bekommt was playing, der kurze Regen bekommt Simple Past."
+        "title": "Beide Teile müssen da sein",
+        "body": "Falsch: *She playing tennis.*\n\nFalsch: *She is play tennis.*\n\nRichtig: *She **is playing** tennis.*",
+        "tasks": [
+          {
+            "text": "Listen! The baby ___.",
+            "choices": [
+              "is crying",
+              "crying",
+              "is cry"
+            ],
+            "correct": "is crying",
+            "why": "Beide Teile sind da: is und das Verb mit ing.",
+            "hint": "Zähl die Teile. Du brauchst zwei: das kleine Wort und das Verb mit ing."
+          }
+        ],
+        "say": "Der häufigste Fehler bei dieser Zeit ist, dass ein Teil fehlt. Im ersten Satz fehlt das is. Im zweiten Satz fehlt das ing. Prüf deshalb immer beide Teile: Steht am, is oder are da? Und hat das Verb sein ing?"
       },
       {
-        "title": "Past Perfect: noch weiter zurück",
-        "body": "*She **had gone** jogging **before** she went to bed.*\n\nZwei Dinge in der Vergangenheit. Das **frühere** bekommt **had**.\n\n**had + 3. Form** · Signalwörter: **before, after, by the time**",
-        "say": "Erst das Joggen, dann das Bett. Beides ist vorbei, aber das Joggen war noch früher. Dafür gibt es had plus dritte Form. Vor-Vergangenheit."
+        "title": "Jetzt du: Present Progressive",
+        "body": "Tipp bei jedem Satz auf die richtige Form.",
+        "tasks": [
+          {
+            "text": "Look! It ___.",
+            "choices": [
+              "is raining",
+              "rains",
+              "raining"
+            ],
+            "correct": "is raining",
+            "why": "Look zeigt auf diesen Moment. Zu it gehört is, und das Verb bekommt ing.",
+            "hint": "Look ist ein Signalwort. Welche Zeit folgt darauf, und aus wie vielen Teilen besteht sie?"
+          },
+          {
+            "text": "I ___ my homework at the moment.",
+            "choices": [
+              "am doing",
+              "do",
+              "is doing"
+            ],
+            "correct": "am doing",
+            "why": "At the moment heißt im Moment. Zu I gehört am.",
+            "hint": "Achte auf at the moment. Und welches kleine Wort gehört zu I?"
+          },
+          {
+            "text": "Be quiet! They ___.",
+            "choices": [
+              "are sleeping",
+              "sleep",
+              "is sleeping"
+            ],
+            "correct": "are sleeping",
+            "why": "Sie schlafen in diesem Moment. Zu they gehört are.",
+            "hint": "Warum soll jemand leise sein? Und welches kleine Wort gehört zu they?"
+          }
+        ],
+        "say": "In allen drei Sätzen passiert etwas genau jetzt. Deine Aufgabe ist es, die Form richtig zusammenzubauen. Schau, wer etwas tut, und such dann das passende kleine Wort dazu aus."
       },
       {
-        "title": "Zukunft mit will",
-        "body": "*It **will** rain tomorrow.* (Vorhersage)\n\n*I **will** help you.* (Versprechen, spontan)\n\n**will + Grundform**",
-        "say": "Will nimmst du, wenn du etwas vermutest, versprichst oder gerade spontan entscheidest. Jemand lässt etwas fallen, du sagst: I will help you."
+        "title": "Kurz zurückschauen",
+        "body": "**Simple Present**: immer wieder\n*She plays tennis every week.*\n\n**Present Progressive**: gerade jetzt\n*She is playing tennis now.*",
+        "figure": {
+          "type": "timeline",
+          "spans": [
+            {
+              "from": -0.9,
+              "to": 0.9,
+              "label": "plays (immer wieder)"
+            }
+          ],
+          "points": [
+            {
+              "at": 0,
+              "label": "is playing"
+            }
+          ]
+        },
+        "tasks": [
+          {
+            "text": "She ___ tennis every week.",
+            "choices": [
+              "plays",
+              "is playing"
+            ],
+            "correct": "plays",
+            "why": "Every week heißt jede Woche. Es passiert immer wieder, also Simple Present.",
+            "hint": "Schau auf every week. Ist das ein einzelner Moment oder eine Gewohnheit?"
+          }
+        ],
+        "say": "Bevor wir weitergehen, legen wir beide Zeiten nebeneinander. Im Bild siehst du den Unterschied. Das Simple Present gilt für viele Tage, früher, heute und später. Das Present Progressive gilt nur für diesen einen Moment in der Mitte."
       },
       {
-        "title": "Zukunft mit going to",
-        "body": "*I **am going to** visit my aunt on Sunday.* (fester Plan)\n\n*Look at those clouds! It **is going to** rain.* (es kündigt sich an)\n\n**am / is / are going to + Grundform**",
-        "say": "Going to nimmst du für Pläne, die schon feststehen, und für Dinge, die man kommen sieht. Die Wolken sind da, also going to rain."
+        "chapter": "Welche Zeit ist es?",
+        "title": "Zwei Fragen helfen dir",
+        "body": "(1) Steht ein **Signalwort** im Satz?\n\n(2) Passiert es **immer wieder**, oder passiert es **gerade jetzt**?",
+        "say": "Jetzt mischen wir beide Zeiten. Dafür brauchst du nur zwei Fragen, immer in dieser Reihenfolge. Zuerst suchst du ein Signalwort. Wenn keins da ist, überlegst du, was der Satz bedeutet. Auf den nächsten beiden Tafeln machen wir das gemeinsam."
       },
       {
-        "title": "Jetzt du",
-        "body": "1. *Look at those dark clouds! It ___ (rain).*\n\n2. *Don't worry, I promise I ___ (call) you tonight.*\n\nKündigt sich an, oder Versprechen?",
-        "say": "Beim ersten Satz siehst du etwas kommen. Beim zweiten steht sogar das Wort promise. Entscheide dich, dann Weiter."
+        "title": "Ein Beispiel mit Signalwort",
+        "body": "*Listen! The baby ___ (cry).*\n\nSignalwort: **Listen!**\n\nAlso passiert es gerade jetzt.\n\n*The baby **is crying**.*",
+        "say": "Ich denke einmal laut für dich. Zuerst suche ich ein Signalwort und finde Listen. Listen bedeutet: Es passiert in diesem Moment. Also brauche ich das Present Progressive. The baby ist ein it, dazu gehört is. Und cry bekommt sein ing."
       },
       {
-        "title": "Auflösung",
-        "body": "1. *It **is going to** rain.* → die Wolken sind da, es kündigt sich an\n\n2. *I promise I **will** call you.* → Versprechen → will",
-        "say": "Dunkle Wolken: going to. Ein Versprechen: will. Wenn beides möglich scheint, ist das Signalwort dein Freund: promise, I think, probably heißen will."
+        "title": "Ein Beispiel ohne Signalwort",
+        "body": "*My dad ___ (work) in a bank.*\n\nKein Signalwort.\n\nAber es ist sein Beruf. Das gilt **immer**.\n\n*My dad **works** in a bank.*",
+        "say": "Hier finde ich kein Signalwort. Dann stelle ich die zweite Frage: Was bedeutet der Satz? Er beschreibt den Beruf des Vaters, also eine Tatsache. Das ist Simple Present. My dad ist ein he, deshalb bekommt work sein s."
       },
       {
-        "title": "Der Trick: drei Fragen",
-        "body": "1. **Signalwort** suchen\n\n2. **Wann** auf dem Zeitstrahl? Vorher, jetzt, später?\n\n3. Läuft es gerade (**-ing**) oder ist es fertig?",
-        "say": "Drei Fragen, und du hast die Zeitform. Genau in dieser Reihenfolge. Jetzt die Wörter, dann das Quiz."
+        "title": "Jetzt du: Welche Zeit passt?",
+        "body": "Tipp bei jedem Satz auf die richtige Form.",
+        "tasks": [
+          {
+            "text": "She usually ___ to school by bus.",
+            "choices": [
+              "goes",
+              "is going"
+            ],
+            "correct": "goes",
+            "why": "Usually heißt normalerweise. Das ist eine Gewohnheit, also Simple Present.",
+            "hint": "Such das Signalwort. Was bedeutet usually auf Deutsch?"
+          },
+          {
+            "text": "Look! She ___ to school by bike today.",
+            "choices": [
+              "is going",
+              "goes"
+            ],
+            "correct": "is going",
+            "why": "Look zeigt auf diesen Moment. Heute ist es anders als sonst, und es passiert gerade.",
+            "hint": "Achte auf das erste Wort im Satz. Worauf kann man zeigen?"
+          },
+          {
+            "text": "Water ___ at 100 degrees.",
+            "choices": [
+              "boils",
+              "is boiling"
+            ],
+            "correct": "boils",
+            "why": "Wasser kocht immer bei 100 Grad. Das ist eine Tatsache, also Simple Present.",
+            "hint": "Gilt das nur in diesem Moment, oder ist das immer so?"
+          }
+        ],
+        "say": "Jetzt entscheidest du selbst. Stell dir bei jedem Satz die beiden Fragen. Gibt es ein Signalwort? Und wenn nicht: Passiert es immer wieder, oder passiert es gerade jetzt?"
+      },
+      {
+        "title": "Eine Falle: Verben ohne -ing",
+        "body": "Richtig: *I **like** pizza.*\n\nFalsch: *I am liking pizza.*\n\n**like, love, know, want** und **need** stehen fast nie mit -ing.",
+        "tasks": [
+          {
+            "text": "I ___ the answer.",
+            "choices": [
+              "know",
+              "am knowing"
+            ],
+            "correct": "know",
+            "why": "Wissen ist nichts, was gerade abläuft. Deshalb steht es ohne ing.",
+            "hint": "Gehört dieses Verb zu der Liste auf der Tafel?"
+          }
+        ],
+        "say": "Einige Verben beschreiben nichts, was man tut. Sie beschreiben, was man mag, weiß oder will. So etwas läuft nicht ab wie ein Fußballspiel. Deshalb stehen diese Verben im Simple Present, auch wenn es um jetzt geht."
+      },
+      {
+        "title": "Das nimmst du mit",
+        "body": "**Simple Present**: immer wieder, Tatsachen.\nSignalwörter: always, often, never, every day\n\n**Present Progressive**: gerade jetzt.\nSignalwörter: now, at the moment, Look!",
+        "tasks": [
+          {
+            "text": "He ___ football at the moment.",
+            "choices": [
+              "is playing",
+              "plays"
+            ],
+            "correct": "is playing",
+            "why": "At the moment heißt im Moment. Es passiert gerade, also Present Progressive.",
+            "hint": "Such das Signalwort am Ende des Satzes. Was bedeutet es?"
+          }
+        ],
+        "say": "Das war die ganze Lektion. Zwei Zeiten, und für jede ein paar Signalwörter. Wenn du unsicher bist, stell dir wieder die zwei Fragen. Gleich kommen noch die Wörter zum Nachlesen und ein kleines Quiz. Vorher darfst du unten noch einen letzten Satz ausprobieren."
       }
     ],
     "vocab": [
-      { "term": "Simple Present", "plain": "Immer, normal, Fakten. he/she/it + -s.", "example": "She plays every day." },
-      { "term": "Present Progressive", "plain": "Gerade jetzt. am/is/are + -ing.", "example": "I am playing now." },
-      { "term": "Simple Past", "plain": "Vorbei, abgeschlossen. -ed oder 2. Form.", "example": "I went home yesterday." },
-      { "term": "Present Perfect", "plain": "Vorbei, zählt aber jetzt. have/has + 3. Form.", "example": "I have lost my key." },
-      { "term": "Past Progressive", "plain": "Lief, als etwas passierte. was/were + -ing.", "example": "I was cooking when …" },
-      { "term": "Past Perfect", "plain": "Noch früher als etwas anderes. had + 3. Form.", "example": "She had gone before …" },
-      { "term": "will-future", "plain": "Vorhersage, Versprechen, spontan.", "example": "It will rain." },
-      { "term": "going to-future", "plain": "Plan, kündigt sich an.", "example": "I am going to visit her." },
-      { "term": "Signalwort", "plain": "Ein Wort, das die Zeitform verrät.", "example": "yesterday → Simple Past" }
+      {
+        "term": "Zeitstrahl",
+        "plain": "Eine Linie für die Zeit: links früher, in der Mitte jetzt, rechts später."
+      },
+      {
+        "term": "Signalwort",
+        "plain": "Ein kleines Wort im Satz, das dir die Zeitform verrät.",
+        "example": "always, now, Look!"
+      },
+      {
+        "term": "Simple Present",
+        "plain": "Die Zeit für alles, was immer wieder passiert, und für Tatsachen. Grundform, bei he, she, it mit s.",
+        "example": "She plays tennis every week."
+      },
+      {
+        "term": "Present Progressive",
+        "plain": "Die Zeit für das, was genau jetzt passiert. Am, is oder are und das Verb mit ing.",
+        "example": "She is playing tennis now."
+      },
+      {
+        "term": "always, usually, often, sometimes, never",
+        "plain": "Signalwörter für das Simple Present: immer, normalerweise, oft, manchmal, nie."
+      },
+      {
+        "term": "now, at the moment, Look!, Listen!",
+        "plain": "Signalwörter für das Present Progressive: jetzt, im Moment, Schau mal!, Hör mal!"
+      }
     ],
     "quiz": [
       {
         "prompt": "She ___ to school every day.",
-        "choices": ["goes", "is going", "went", "has gone"],
+        "choices": [
+          "goes",
+          "go",
+          "is going",
+          "going"
+        ],
         "correct": "goes",
-        "explain": "every day = Gewohnheit → Simple Present, she + -s."
+        "explain": "Every day heißt jeden Tag. Das ist eine Gewohnheit, also Simple Present. Bei she kommt das s dazu."
       },
       {
         "prompt": "Look! It ___.",
-        "choices": ["is raining", "rains", "rained", "has rained"],
+        "choices": [
+          "is raining",
+          "rains",
+          "rain",
+          "raining"
+        ],
         "correct": "is raining",
-        "explain": "Look! = gerade jetzt → Present Progressive."
+        "explain": "Look zeigt auf diesen Moment. Dafür brauchst du das Present Progressive mit beiden Teilen: is und raining."
       },
       {
-        "prompt": "We ___ a film yesterday.",
-        "choices": ["watched", "have watched", "watch", "were watching"],
-        "correct": "watched",
-        "explain": "yesterday → Simple Past."
+        "prompt": "Was bedeutet das Signalwort usually?",
+        "choices": [
+          "normalerweise",
+          "nie",
+          "genau jetzt",
+          "gestern"
+        ],
+        "correct": "normalerweise",
+        "explain": "Usually heißt normalerweise. Es steht für etwas, das meistens so ist, und gehört zum Simple Present."
       },
       {
-        "prompt": "I ___ my keys. I can't open the door.",
-        "choices": ["have lost", "lost", "lose", "had lost"],
-        "correct": "have lost",
-        "explain": "Folge jetzt (kann nicht rein) → Present Perfect."
+        "prompt": "My friends often ___ computer games.",
+        "choices": [
+          "play",
+          "plays",
+          "are play",
+          "playing"
+        ],
+        "correct": "play",
+        "explain": "Often heißt oft, also Simple Present. My friends sind mehrere, deshalb bleibt die Grundform ohne s."
       },
       {
-        "prompt": "They have lived here ___ 2010.",
-        "choices": ["since", "for", "ago", "before"],
-        "correct": "since",
-        "explain": "2010 ist ein Zeitpunkt → since. Eine Dauer wie five years → for."
+        "prompt": "Be quiet! The baby ___.",
+        "choices": [
+          "is sleeping",
+          "sleeps",
+          "sleeping",
+          "are sleeping"
+        ],
+        "correct": "is sleeping",
+        "explain": "Das Baby schläft in diesem Moment, deshalb soll man leise sein. The baby ist ein it, dazu gehört is."
       },
       {
-        "prompt": "Versprechen: I ___ call you tonight.",
-        "choices": ["will", "am going to", "would", "did"],
-        "correct": "will",
-        "explain": "Versprechen und spontane Entschlüsse → will."
+        "prompt": "Welcher Satz ist richtig?",
+        "choices": [
+          "I like this song.",
+          "I am liking this song.",
+          "I liking this song.",
+          "I am like this song."
+        ],
+        "correct": "I like this song.",
+        "explain": "Like beschreibt, was man mag. Solche Verben stehen fast nie mit ing, sondern im Simple Present."
+      },
+      {
+        "prompt": "The train ___ at 7:15 every morning.",
+        "choices": [
+          "leaves",
+          "is leaving",
+          "leave",
+          "leaving"
+        ],
+        "correct": "leaves",
+        "explain": "Every morning heißt jeden Morgen. Fahrpläne stehen im Simple Present, und the train ist ein it."
+      },
+      {
+        "prompt": "I ___ my homework right now.",
+        "choices": [
+          "am doing",
+          "do",
+          "is doing",
+          "doing"
+        ],
+        "correct": "am doing",
+        "explain": "Right now heißt genau jetzt. Zu I gehört am, und das Verb bekommt ing."
       }
-    ],
-    "source": "Nach Prüfungshefte MSA Englisch Berlin 2026, Grammar (Tenses); Aufbau als Eulen-Lektion"
+    ]
   }
 ]

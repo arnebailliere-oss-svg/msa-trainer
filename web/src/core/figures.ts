@@ -521,6 +521,39 @@ export function sphere(spec: FigureSpec): string {
   return svg(W, H, body, "Kugel");
 }
 
+/**
+ * Timeline for tenses and other "when" ideas: an arrow from earlier to later with "now" in the
+ * middle. `points` are moments (at: -1 … 1, 0 = now), `spans` are stretches of time.
+ */
+export function timeline(spec: FigureSpec): string {
+  const W = 440;
+  const H = 150;
+  const y = 92;
+  const x = (at: number) => 30 + ((Math.max(-1, Math.min(1, at)) + 1) / 2) * (W - 60);
+  const labels = (spec.labels ?? ["früher", "jetzt", "später"]) as unknown[];
+  const points = (spec.points ?? []) as Record<string, unknown>[];
+  const spans = (spec.spans ?? []) as Record<string, unknown>[];
+  let body = line(14, y, W - 18, y, { width: 3 });
+  body += `<path d='M ${W - 18} ${y - 7} L ${W - 4} ${y} L ${W - 18} ${y + 7} Z' fill='currentColor'/>`;
+  body += line(x(0), y - 12, x(0), y + 12, { width: 3, color: ACCENT4 });
+  body += text(x(-0.8), y + 34, str(labels[0]), { size: 14 });
+  body += text(x(0), y + 34, str(labels[1]), { size: 14, bold: true, fill: ACCENT4 });
+  body += text(x(0.8), y + 34, str(labels[2]), { size: 14 });
+  spans.forEach((sp, i) => {
+    const a = x(num(sp.from));
+    const b = x(num(sp.to));
+    const yy = y - 14 - (i % 2) * 30;
+    body += line(a, yy, b, yy, { width: 8, color: i % 2 ? ACCENT3 : ACCENT2 });
+    body += text((a + b) / 2, yy - 10, str(sp.label), { size: 13, bold: true });
+  });
+  points.forEach((p, i) => {
+    const px = x(num(p.at));
+    body += `<circle cx='${f(px)}' cy='${y}' r='7' fill='${i % 2 ? ACCENT2 : ACCENT3}' stroke='currentColor' stroke-width='1.5'/>`;
+    body += text(px, y - 16 - (spans.length ? 44 : 0) - (i % 2) * 18, str(p.label), { size: 13, bold: true });
+  });
+  return svg(W, H, body, "Zeitstrahl");
+}
+
 // --- registry ---------------------------------------------------------------------
 
 const GENERATORS: Record<string, (spec: FigureSpec) => string> = {
@@ -540,6 +573,7 @@ const GENERATORS: Record<string, (spec: FigureSpec) => string> = {
   treeDiagram,
   box,
   cylinder,
+  timeline,
 };
 
 export const FIGURE_TYPES = Object.keys(GENERATORS);

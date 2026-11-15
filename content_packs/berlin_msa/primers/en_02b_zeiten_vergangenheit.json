@@ -1,0 +1,541 @@
+[
+  {
+    "id": "P_EN_ZEIT_VORBEI",
+    "subject": "EN",
+    "title": "Zeiten 2: vorbei oder noch wichtig?",
+    "teaser": "Das Simple Past für alles, was vorbei ist, und das Present Perfect für das, was früher passiert ist und jetzt noch zählt. Dazu since und for, die beiden englischen Wörter für seit.",
+    "hook": "Im Deutschen sagst du fast immer ich habe gespielt, wenn etwas vorbei ist. Im Englischen gibt es dafür zwei Zeiten, und sie bedeuten nicht dasselbe. Das ist die Stelle, an der die meisten stolpern. Deshalb nehmen wir uns hier besonders viel Zeit. Am Ende reicht dir eine einzige Frage, um die richtige Zeit zu finden.",
+    "outro": "Du kennst jetzt den Unterschied, an dem viele scheitern. Steht da, wann etwas war, nimmst du das Simple Past. Zählt die Folge jetzt, oder dauert etwas noch an, nimmst du das Present Perfect. Und für seit hast du zwei Wörter: since für den Anfang und for für die Dauer.",
+    "standard": 2,
+    "requires": [
+      "P_EN_VERBFORMEN",
+      "P_EN_ZEITFORMEN"
+    ],
+    "steps": [
+      {
+        "chapter": "Simple Past: vorbei und abgeschlossen",
+        "title": "Gestern",
+        "body": "*I **played** football yesterday.*\n\n= Ich habe gestern Fußball gespielt.\n\nEs ist **vorbei**. Diese Zeitform kennst du schon: das **Simple Past**.",
+        "figure": {
+          "type": "timeline",
+          "points": [
+            {
+              "at": -0.6,
+              "label": "played"
+            }
+          ]
+        },
+        "say": "Wir fangen mit dem an, was du schon kennst. Gestern hast du Fußball gespielt. Das Spiel ist zu Ende, der Tag ist vorbei. Auf dem Zeitstrahl liegt es links von jetzt, als ein einzelner Punkt. Für so etwas nimmt das Englische das Simple Past."
+      },
+      {
+        "title": "So baust du das Simple Past",
+        "body": "Regelmäßig: play wird zu play**ed**.\n\nUnregelmäßig: go wird zu **went**.\n\nDie Form ist für alle Personen gleich.",
+        "tasks": [
+          {
+            "text": "She ___ to London last year.",
+            "choices": [
+              "went",
+              "goed",
+              "goes"
+            ],
+            "correct": "went",
+            "why": "Go ist unregelmäßig. Die zweite Form heißt went.",
+            "hint": "Last year ist vorbei. Und dieses Verb hält sich nicht an die Regel mit ed."
+          }
+        ],
+        "say": "Das ist die zweite Form des Verbs aus der Lektion über die Verbformen. Normale Verben bekommen ed. Unregelmäßige Verben haben eine eigene Form, die du lernen musst. Ein s für he, she, it gibt es in der Vergangenheit nicht."
+      },
+      {
+        "title": "Die Signalwörter für vorbei",
+        "body": "**yesterday** = gestern\n**last week** = letzte Woche\n**two days ago** = vor zwei Tagen\n**in 2019** = im Jahr 2019",
+        "tasks": [
+          {
+            "text": "two days ago = ___",
+            "choices": [
+              "vor zwei Tagen",
+              "in zwei Tagen",
+              "seit zwei Tagen"
+            ],
+            "correct": "vor zwei Tagen",
+            "why": "Ago heißt vor, und es blickt zurück in die Vergangenheit.",
+            "hint": "Schau in die dritte Zeile der Tafel. Blickt ago nach vorn oder zurück?"
+          }
+        ],
+        "say": "Alle diese Wörter haben etwas gemeinsam. Sie nennen einen Zeitpunkt, der vorbei ist. Wenn du so ein Wort im Satz findest, weißt du: Hier steht das Simple Past. Ago steht immer hinter der Zeitangabe, anders als das deutsche vor."
+      },
+      {
+        "title": "Eine Falle aus dem Deutschen",
+        "body": "Deutsch: Ich **habe** gestern Fußball **gespielt**.\n\nEnglisch: *I **played** football yesterday.*\n\nFalsch: *I have played football yesterday.*",
+        "say": "Im Deutschen benutzt du für die Vergangenheit meistens haben und ein zweites Wort: ich habe gespielt. Deshalb möchte man im Englischen have played sagen. Mit yesterday ist das aber falsch. Sobald dasteht, wann es war, nimmst du nur das Simple Past."
+      },
+      {
+        "title": "Fragen und Nein-Sätze",
+        "body": "***Did** you **play** yesterday?*\n\n*I **didn't play** yesterday.*\n\nNach did steht das Verb in der Grundform.",
+        "tasks": [
+          {
+            "text": "___ you see the film last night?",
+            "choices": [
+              "Did",
+              "Do",
+              "Have"
+            ],
+            "correct": "Did",
+            "why": "Last night ist vorbei. Für Fragen in der Vergangenheit brauchst du den Helfer did.",
+            "hint": "Last night ist vorbei. Welcher Helfer zeigt die Vergangenheit?"
+          }
+        ],
+        "say": "Auch das kennst du schon. Für Fragen und für Nein-Sätze brauchst du den Helfer did. Did zeigt bereits die Vergangenheit. Das Verb dahinter geht deshalb zurück in die Grundform. Es heißt did you play und nicht did you played."
+      },
+      {
+        "title": "Jetzt du: Simple Past",
+        "body": "Tipp bei jedem Satz auf die richtige Form.",
+        "tasks": [
+          {
+            "text": "We ___ a film yesterday.",
+            "choices": [
+              "watched",
+              "watch",
+              "have watched"
+            ],
+            "correct": "watched",
+            "why": "Yesterday ist vorbei. Watch ist regelmäßig und bekommt ed.",
+            "hint": "Welches Signalwort steht am Ende? Und was hängst du an ein normales Verb an?"
+          },
+          {
+            "text": "I ___ my grandma last weekend.",
+            "choices": [
+              "visited",
+              "visit",
+              "have visited"
+            ],
+            "correct": "visited",
+            "why": "Last weekend ist vorbei. Visit ist regelmäßig und bekommt ed.",
+            "hint": "Das Wochenende ist vorbei. Denk an die Falle von eben: mit Zeitangabe kein have."
+          },
+          {
+            "text": "He ___ his homework two hours ago.",
+            "choices": [
+              "did",
+              "does",
+              "done"
+            ],
+            "correct": "did",
+            "why": "Ago blickt zurück. Die zweite Form von do heißt did.",
+            "hint": "Dieses Verb ist unregelmäßig. Du brauchst seine zweite Form, die allein stehen kann."
+          }
+        ],
+        "say": "In jedem der drei Sätze steht ein Signalwort für vorbei. Such es zuerst. Überleg dann, ob das Verb regelmäßig ist und ed bekommt, oder ob es eine eigene zweite Form hat."
+      },
+      {
+        "chapter": "Present Perfect: passiert, und jetzt noch wichtig",
+        "title": "Der verlorene Schlüssel",
+        "body": "*She **has lost** her key.*\n\nSie steht vor der Tür und kommt **nicht hinein**.\n\nEs ist früher passiert. Die **Folge** spürt sie jetzt.",
+        "say": "Stell dir das Bild genau vor. Ein Mädchen steht vor der Haustür und sucht in allen Taschen. Wann sie den Schlüssel verloren hat, weiß niemand. Das ist auch nicht wichtig. Wichtig ist, dass der Schlüssel jetzt weg ist und sie draußen steht."
+      },
+      {
+        "title": "Das ist das Present Perfect",
+        "body": "Etwas ist **früher** passiert.\n\nWann genau, ist nicht wichtig.\n\nWichtig ist, was **jetzt** daraus folgt.\n\nDiese Zeitform heißt **Present Perfect**.",
+        "figure": {
+          "type": "timeline",
+          "spans": [
+            {
+              "from": -0.55,
+              "to": 0,
+              "label": "Folge bis jetzt"
+            }
+          ],
+          "points": [
+            {
+              "at": -0.55,
+              "label": "has lost"
+            }
+          ]
+        },
+        "say": "Schau auf den Zeitstrahl. Der Punkt liegt in der Vergangenheit, aber ein Band reicht von dort bis zu jetzt. Das Present Perfect ist eine Brücke zwischen früher und jetzt. Im Namen steckt present, also Gegenwart. Es geht immer auch um jetzt."
+      },
+      {
+        "title": "So baust du das Present Perfect",
+        "body": "**have / has** + **3. Form**\n\nI **have** play**ed**.\nShe **has** **gone**.",
+        "tasks": [
+          {
+            "text": "He ___ finished his homework.",
+            "choices": [
+              "has",
+              "have"
+            ],
+            "correct": "has",
+            "why": "He gehört zu he, she, it. Da wird aus have ein has.",
+            "hint": "Wer ist fertig geworden? Gehört diese Person zu he, she, it?"
+          }
+        ],
+        "say": "Auch diese Zeit besteht aus zwei Teilen. Der erste Teil ist have, bei he, she, it ist es has. Der zweite Teil ist die dritte Form des Verbs. Bei normalen Verben endet sie auf ed. Bei unregelmäßigen Verben ist es die dritte Form aus der Liste."
+      },
+      {
+        "title": "Woran erkennst du die Folge?",
+        "body": "*I have broken my leg.*\nFolge: Ich kann jetzt nicht laufen.\n\n*We have missed the bus.*\nFolge: Wir stehen noch an der Haltestelle.",
+        "tasks": [
+          {
+            "text": "I have eaten. Was folgt daraus? Ich bin jetzt ___.",
+            "choices": [
+              "satt",
+              "hungrig"
+            ],
+            "correct": "satt",
+            "why": "Wer gegessen hat, hat jetzt keinen Hunger mehr. Das ist die Folge.",
+            "hint": "Wie fühlst du dich, wenn du gerade gegessen hast?"
+          }
+        ],
+        "say": "Bei jedem Satz im Present Perfect kannst du fragen: Und was heißt das für jetzt? Das Bein ist gebrochen, also kann ich nicht laufen. Der Bus ist weg, also stehen wir noch hier. Wenn du so eine Folge findest, passt das Present Perfect."
+      },
+      {
+        "title": "Signalwörter: just, already, yet",
+        "body": "*I have **just** eaten.*\njust = gerade eben\n\n*She has **already** finished.*\nalready = schon\n\n*I haven't finished **yet**.*\nnot … yet = noch nicht",
+        "say": "Auch das Present Perfect hat Signalwörter. Just bedeutet, dass etwas gerade eben passiert ist. Already bedeutet schon. Yet steht am Ende von Nein-Sätzen und Fragen und bedeutet noch nicht oder schon. Alle drei schauen auf den Stand bis jetzt."
+      },
+      {
+        "title": "Signalwörter: ever und never",
+        "body": "*Have you **ever** been to London?*\never = jemals\n\n*I have **never** been to London.*\nnever = noch nie\n\nEs geht um dein ganzes Leben **bis jetzt**.",
+        "tasks": [
+          {
+            "text": "already = ___",
+            "choices": [
+              "schon",
+              "noch nie",
+              "gestern"
+            ],
+            "correct": "schon",
+            "why": "Already bedeutet, dass etwas bereits erledigt ist.",
+            "hint": "Schau auf die Tafel davor zurück, wenn du unsicher bist. Es steht in der zweiten Zeile."
+          }
+        ],
+        "say": "Mit ever fragst du, ob jemand etwas irgendwann in seinem Leben gemacht hat. Mit never sagst du, dass es bis heute nicht passiert ist. Wann genau, spielt keine Rolle. Es zählt nur die Erfahrung, die jemand bis jetzt hat."
+      },
+      {
+        "title": "Jetzt du: Present Perfect",
+        "body": "Tipp bei jedem Satz auf die richtige Form.",
+        "tasks": [
+          {
+            "text": "I have just ___ my homework.",
+            "choices": [
+              "finished",
+              "finish",
+              "finishing"
+            ],
+            "correct": "finished",
+            "why": "Nach have kommt die dritte Form. Bei finish endet sie auf ed.",
+            "hint": "Welche Form des Verbs steht immer nach have?"
+          },
+          {
+            "text": "She ___ never seen snow.",
+            "choices": [
+              "has",
+              "have"
+            ],
+            "correct": "has",
+            "why": "She gehört zu he, she, it. Deshalb heißt der Helfer has.",
+            "hint": "Schau auf das erste Wort im Satz. Welche Form gehört zu dieser Person?"
+          },
+          {
+            "text": "Have you ever ___ sushi?",
+            "choices": [
+              "eaten",
+              "ate",
+              "eat"
+            ],
+            "correct": "eaten",
+            "why": "Nach have kommt die dritte Form: eat, ate, eaten.",
+            "hint": "Sag dir die drei Formen dieses Verbs vor. Du brauchst die letzte."
+          }
+        ],
+        "say": "In jedem Satz steht ein Signalwort für das Present Perfect. Prüf dann die beiden Teile. Passt have oder has zur Person? Und steht das Verb in der dritten Form?"
+      },
+      {
+        "title": "Kurz zurückschauen",
+        "body": "**Simple Past**: vorbei, mit Zeitangabe.\n*I lost my key yesterday.*\n\n**Present Perfect**: Die Folge zählt jetzt.\n*I have lost my key.*",
+        "tasks": [
+          {
+            "text": "I ___ my key yesterday.",
+            "choices": [
+              "lost",
+              "have lost"
+            ],
+            "correct": "lost",
+            "why": "Yesterday sagt, wann es war. Dann steht das Simple Past.",
+            "hint": "Steht im Satz, wann es passiert ist? Denk an die Falle aus dem Deutschen."
+          }
+        ],
+        "say": "Jetzt liegen beide Zeiten nebeneinander. Im ersten Satz erzählst du, was gestern war. Im zweiten Satz sagst du, was jetzt los ist: Der Schlüssel ist weg. Derselbe Schlüssel, aber zwei verschiedene Blickrichtungen."
+      },
+      {
+        "chapter": "Simple Past oder Present Perfect?",
+        "title": "Die eine Frage, die entscheidet",
+        "body": "Steht im Satz, **wann** es war?\n\nJa: **Simple Past**.\n*I lost my key **yesterday**.*\n\nNein, aber die Folge zählt jetzt: **Present Perfect**.\n*I **have lost** my key.*",
+        "say": "Mehr als diese eine Frage brauchst du nicht. Such im Satz nach einer Zeitangabe, die vorbei ist. Findest du eine, ist es das Simple Past. Findest du keine, dann schau, ob es eine Folge für jetzt gibt. Das probieren wir an zwei Beispielen aus."
+      },
+      {
+        "title": "Ein Beispiel mit Zeitangabe",
+        "body": "*We ___ (watch) a film yesterday.*\n\nZeitangabe: **yesterday**\n\nEs steht da, wann es war.\n\n*We **watched** a film yesterday.*",
+        "say": "Ich denke wieder laut für dich. Ich suche eine Zeitangabe und finde yesterday. Damit ist die Sache entschieden. Es ist das Simple Past. Watch ist ein normales Verb, also hänge ich ed an."
+      },
+      {
+        "title": "Ein Beispiel ohne Zeitangabe",
+        "body": "*I ___ (lose) my keys. I can't get in!*\n\nKeine Zeitangabe.\n\nAber eine Folge: Ich komme nicht hinein.\n\n*I **have lost** my keys.*",
+        "say": "Hier finde ich keine Zeitangabe. Dafür steht ein zweiter Satz dabei: I can't get in. Das ist die Folge für jetzt. Also nehme ich das Present Perfect. Zu I gehört have, und die dritte Form von lose heißt lost."
+      },
+      {
+        "title": "Jetzt du: Welche Zeit passt?",
+        "body": "Tipp bei jedem Satz auf die richtige Form.",
+        "tasks": [
+          {
+            "text": "I ___ him last week.",
+            "choices": [
+              "saw",
+              "have seen"
+            ],
+            "correct": "saw",
+            "why": "Last week sagt, wann es war. Dann steht das Simple Past.",
+            "hint": "Such die Zeitangabe im Satz. Ist diese Zeit schon vorbei?"
+          },
+          {
+            "text": "Oh no! I ___ my phone. I can't call you.",
+            "choices": [
+              "have lost",
+              "lost"
+            ],
+            "correct": "have lost",
+            "why": "Es steht keine Zeitangabe da. Die Folge zählt jetzt: Ich kann nicht anrufen.",
+            "hint": "Gibt es eine Zeitangabe? Und was verrät dir der zweite Satz?"
+          },
+          {
+            "text": "She ___ in Paris in 2019.",
+            "choices": [
+              "was",
+              "has been"
+            ],
+            "correct": "was",
+            "why": "In 2019 sagt, wann es war. Dann steht das Simple Past.",
+            "hint": "Schau auf das Ende des Satzes. Ist dieses Jahr schon vorbei?"
+          }
+        ],
+        "say": "Stell dir bei jedem Satz die eine Frage: Steht da, wann es war? Wenn ja, ist es das Simple Past. Wenn nein, such nach der Folge für jetzt."
+      },
+      {
+        "chapter": "since und for: zwei Wörter für seit",
+        "title": "Etwas dauert noch an",
+        "body": "*I **have lived** here for five years.*\n\n= Ich wohne seit fünf Jahren hier.\n\nEs hat früher angefangen und **dauert noch an**.",
+        "figure": {
+          "type": "timeline",
+          "spans": [
+            {
+              "from": -0.7,
+              "to": 0,
+              "label": "have lived"
+            }
+          ]
+        },
+        "say": "Das Present Perfect hat noch eine zweite Aufgabe. Du brauchst es, wenn etwas früher angefangen hat und immer noch so ist. Schau auf den deutschen Satz: Dort steht wohne, also Gegenwart. Im Englischen steht hier das Present Perfect, weil die Zeit bis jetzt reicht."
+      },
+      {
+        "title": "since: der Anfang",
+        "body": "**since** 2019\n**since** Monday\n**since** my birthday\n\nNach since steht der **Zeitpunkt**, an dem es angefangen hat.",
+        "say": "Ein Zeitpunkt ist ein Punkt auf dem Zeitstrahl. Du kannst mit dem Finger darauf zeigen: genau hier hat es angefangen. Ein Jahr, ein Wochentag oder ein Geburtstag sind solche Punkte. Vor ihnen steht since."
+      },
+      {
+        "title": "for: die Dauer",
+        "body": "**for** five years\n**for** two hours\n**for** a long time\n\nNach for steht die **Dauer**. Sie sagt, wie lange etwas schon geht.",
+        "tasks": [
+          {
+            "text": "Two hours ist ___.",
+            "choices": [
+              "eine Dauer",
+              "ein Zeitpunkt"
+            ],
+            "correct": "eine Dauer",
+            "why": "Zwei Stunden kann man zählen. Das ist eine Strecke und kein einzelner Punkt.",
+            "hint": "Kannst du auf dem Zeitstrahl darauf zeigen, oder musst du es zählen?"
+          }
+        ],
+        "say": "Eine Dauer ist kein Punkt, sondern eine Strecke auf dem Zeitstrahl. Du kannst sie zählen: fünf Jahre, zwei Stunden, drei Wochen. Davor steht for. Frag dich also immer, ob du einen Anfang nennst oder eine Menge an Zeit."
+      },
+      {
+        "title": "Die Falle mit seit",
+        "body": "Deutsch: **seit** 2019\nEnglisch: **since** 2019\n\nDeutsch: **seit** fünf Jahren\nEnglisch: **for** five years\n\nFalsch: *since five years*",
+        "say": "Im Deutschen gibt es nur ein Wort, nämlich seit. Im Englischen musst du wählen. Das ist einer der häufigsten Fehler in Klassenarbeiten. Since five years klingt für deutsche Ohren richtig, ist aber falsch. Fünf Jahre sind eine Dauer."
+      },
+      {
+        "title": "Jetzt du: since oder for?",
+        "body": "Tipp bei jedem Satz auf das richtige Wort.",
+        "tasks": [
+          {
+            "text": "I have known her ___ 2020.",
+            "choices": [
+              "since",
+              "for"
+            ],
+            "correct": "since",
+            "why": "2020 ist ein Zeitpunkt. Damals hat es angefangen.",
+            "hint": "Ist 2020 ein Punkt auf dem Zeitstrahl oder eine Menge an Zeit?"
+          },
+          {
+            "text": "We have waited ___ twenty minutes.",
+            "choices": [
+              "for",
+              "since"
+            ],
+            "correct": "for",
+            "why": "Zwanzig Minuten sind eine Dauer. Man kann sie zählen.",
+            "hint": "Kannst du auf zwanzig Minuten zeigen, oder zählst du sie?"
+          },
+          {
+            "text": "He has been ill ___ Monday.",
+            "choices": [
+              "since",
+              "for"
+            ],
+            "correct": "since",
+            "why": "Monday ist ein Zeitpunkt. An diesem Tag hat es angefangen.",
+            "hint": "Ist ein Wochentag ein Anfang oder eine Menge an Zeit?"
+          }
+        ],
+        "say": "Frag dich bei jedem Satz: Steht hinter der Lücke ein Anfang, auf den ich zeigen kann? Oder steht dort eine Menge an Zeit, die ich zählen kann?"
+      },
+      {
+        "title": "Das nimmst du mit",
+        "body": "Steht da, wann es war: **Simple Past**.\nZählt die Folge jetzt: **Present Perfect**.\n\n**since** + Anfang\n**for** + Dauer",
+        "tasks": [
+          {
+            "text": "I ___ my homework. Here it is!",
+            "choices": [
+              "have finished",
+              "finished yesterday"
+            ],
+            "correct": "have finished",
+            "why": "Die Folge zählt jetzt: Die Hausaufgabe ist fertig und liegt hier.",
+            "hint": "Was will der Sprecher mit dem zweiten Satz zeigen?"
+          }
+        ],
+        "say": "Das war die schwierigste Stelle der englischen Zeiten, und du bist durch. Wenn du in einer Aufgabe unsicher bist, stell dir die eine Frage: Steht da, wann es war? Gleich kommen die Wörter zum Nachlesen und ein kleines Quiz."
+      }
+    ],
+    "vocab": [
+      {
+        "term": "Simple Past",
+        "plain": "Die Zeit für alles, was vorbei ist. Oft steht dabei, wann es war.",
+        "example": "I lost my key yesterday."
+      },
+      {
+        "term": "Present Perfect",
+        "plain": "Die Zeit für etwas, das früher passiert ist und jetzt noch zählt, oder das bis jetzt andauert. Have oder has und die 3. Form.",
+        "example": "I have lost my key."
+      },
+      {
+        "term": "yesterday, last week, ago",
+        "plain": "Signalwörter für das Simple Past. Sie nennen eine Zeit, die vorbei ist."
+      },
+      {
+        "term": "just, already, yet, ever, never",
+        "plain": "Signalwörter für das Present Perfect: gerade eben, schon, noch nicht, jemals, noch nie."
+      },
+      {
+        "term": "since",
+        "plain": "Seit einem Zeitpunkt, also seit einem Anfang.",
+        "example": "since 2019, since Monday"
+      },
+      {
+        "term": "for",
+        "plain": "Seit einer Dauer, also seit einer Menge an Zeit.",
+        "example": "for five years, for two hours"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "We ___ a film yesterday.",
+        "choices": [
+          "watched",
+          "have watched",
+          "watch",
+          "has watched"
+        ],
+        "correct": "watched",
+        "explain": "Yesterday sagt, wann es war. Sobald eine abgeschlossene Zeitangabe dasteht, nimmst du das Simple Past."
+      },
+      {
+        "prompt": "I ___ my keys. I can't open the door.",
+        "choices": [
+          "have lost",
+          "lost yesterday",
+          "lose",
+          "am losing"
+        ],
+        "correct": "have lost",
+        "explain": "Es steht keine Zeitangabe da, aber eine Folge für jetzt: Die Tür bleibt zu. Das ist das Present Perfect."
+      },
+      {
+        "prompt": "They have lived here ___ 2010.",
+        "choices": [
+          "since",
+          "for",
+          "ago",
+          "last"
+        ],
+        "correct": "since",
+        "explain": "2010 ist ein Zeitpunkt, an dem es angefangen hat. Vor einem Zeitpunkt steht since."
+      },
+      {
+        "prompt": "She has worked there ___ three years.",
+        "choices": [
+          "for",
+          "since",
+          "ago",
+          "in"
+        ],
+        "correct": "for",
+        "explain": "Drei Jahre sind eine Dauer, die man zählen kann. Vor einer Dauer steht for."
+      },
+      {
+        "prompt": "Have you ever ___ to London?",
+        "choices": [
+          "been",
+          "was",
+          "be",
+          "were"
+        ],
+        "correct": "been",
+        "explain": "Nach have steht die dritte Form. Die drei Formen von be heißen be, was oder were, been."
+      },
+      {
+        "prompt": "Welcher Satz ist richtig?",
+        "choices": [
+          "I saw him last week.",
+          "I have seen him last week.",
+          "I seen him last week.",
+          "I have saw him last week."
+        ],
+        "correct": "I saw him last week.",
+        "explain": "Last week ist eine abgeschlossene Zeitangabe. Dazu passt nur das Simple Past, also saw."
+      },
+      {
+        "prompt": "He ___ just finished his homework.",
+        "choices": [
+          "has",
+          "have",
+          "is",
+          "did"
+        ],
+        "correct": "has",
+        "explain": "Just ist ein Signalwort für das Present Perfect. Zu he gehört der Helfer has."
+      },
+      {
+        "prompt": "___ you see Tom yesterday?",
+        "choices": [
+          "Did",
+          "Have",
+          "Do",
+          "Has"
+        ],
+        "correct": "Did",
+        "explain": "Yesterday ist vorbei. Für eine Frage im Simple Past brauchst du den Helfer did."
+      }
+    ]
+  }
+]

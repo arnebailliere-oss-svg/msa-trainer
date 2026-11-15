@@ -94,7 +94,7 @@
       "type": "object",
       "required": ["type"],
       "properties": {
-        "type": { "type": "string", "enum": ["rightTriangle", "triangle", "rectangle", "parallelogram", "trapezoid", "circle", "coordinateSystem", "barChart", "pieChart", "treeDiagram", "box", "cylinder", "angle", "pyramid", "cone", "sphere"] }
+        "type": { "type": "string", "enum": ["rightTriangle", "triangle", "rectangle", "parallelogram", "trapezoid", "circle", "coordinateSystem", "barChart", "pieChart", "treeDiagram", "box", "cylinder", "angle", "pyramid", "cone", "sphere", "timeline"] }
       }
     },
     "explanation": {

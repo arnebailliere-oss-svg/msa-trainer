@@ -1,0 +1,357 @@
+[
+  {
+    "id": "P_EN_READ_MATCH",
+    "subject": "EN",
+    "title": "Lesen 1: Wer passt zu welchem Angebot?",
+    "teaser": "Die erste Leseaufgabe der Prüfung: Personen und Angebote zusammenbringen. Du lernst, die Wünsche einer Person zu finden und mit Wörtern aus dem Angebot zu belegen, statt zu raten.",
+    "hook": "Reading heißt lesen. In der Prüfung musst du dabei nichts übersetzen und keine Regel aufsagen. Du musst nur etwas finden. Das ist eine Technik, und eine Technik kann jeder lernen. Wir fangen mit der ersten Aufgabe an und gehen sie ganz langsam durch.",
+    "outro": "Du weißt jetzt, wie die erste Leseaufgabe funktioniert. Du suchst die Wünsche einer Person, gehst damit durch die Angebote und zeigst auf die Wörter, die passen. Ein einziger Wunsch, der dagegen spricht, reicht, um ein Angebot zu streichen. So wird aus Raten ein sicheres Vorgehen.",
+    "standard": 2,
+    "steps": [
+      {
+        "chapter": "Was die Aufgabe von dir will",
+        "title": "So sieht die Aufgabe aus",
+        "body": "Du bekommst **fünf Personen** und **sieben Angebote**.\n\nZu jeder Person passt ein Angebot.\n\nZwei Angebote bleiben am Ende übrig.",
+        "say": "Die Angebote sind zum Beispiel Ausflüge, Kurse oder Apps. Über jede Person stehen zwei oder drei Sätze da. Deine Aufgabe ist es, herauszufinden, welches Angebot zu welcher Person passt. Wir schauen uns zuerst an, was in so einem Text über eine Person steckt."
+      },
+      {
+        "title": "Eine Person",
+        "body": "*Mia loves animals. She has only one hour. She doesn't want to spend much money.*",
+        "say": "Lies die drei Sätze in Ruhe. Auf Deutsch heißt das: Mia liebt Tiere. Sie hat nur eine Stunde Zeit. Und sie möchte nicht viel Geld ausgeben. Mehr erfährst du über Mia nicht. Das ist auch gar nicht nötig."
+      },
+      {
+        "title": "Jeder Satz ist ein Wunsch",
+        "body": "(1) **animals** = Tiere\n(2) **only one hour** = nur eine Stunde\n(3) **not much money** = wenig Geld\n\nDrei Sätze, drei **Wünsche**.",
+        "tasks": [
+          {
+            "text": "She has only one hour. Mia sucht also etwas ___.",
+            "choices": [
+              "Kurzes",
+              "Langes"
+            ],
+            "correct": "Kurzes",
+            "why": "Wer nur eine Stunde hat, kann nichts machen, das den halben Tag dauert.",
+            "hint": "Wie viel Zeit hat Mia? Passt dazu ein langer Ausflug?"
+          }
+        ],
+        "say": "In jedem Satz über eine Person steckt ein Wunsch. Ein Wunsch ist etwas, das die Person will oder nicht will. Bei Mia sind es drei. In der Prüfung unterstreichst du diese Wörter mit dem Stift, damit du keinen Wunsch vergisst."
+      },
+      {
+        "title": "Ein Angebot",
+        "body": "*A) City Farm: meet goats and rabbits. Open every day. Visits take about 45 minutes. Entry is free.*\n\nEin **Angebot** ist ein kleiner Werbetext.",
+        "say": "Jetzt ein Angebot. Auf Deutsch: ein Bauernhof in der Stadt mit Ziegen und Kaninchen. Er ist jeden Tag geöffnet. Ein Besuch dauert ungefähr 45 Minuten, und der Eintritt kostet nichts. Lies jedes Angebot mit der Frage: Für wen ist das gemacht?"
+      },
+      {
+        "title": "Wunsch trifft Angebot",
+        "body": "animals: *goats and rabbits*\none hour: *about 45 minutes*\nnot much money: *entry is free*\n\nDrei Wünsche, drei Treffer. Mia passt zu **A**.",
+        "tasks": [
+          {
+            "text": "Zum Wunsch not much money passt im Angebot das Wort ___.",
+            "choices": [
+              "free",
+              "every day",
+              "goats"
+            ],
+            "correct": "free",
+            "why": "Free heißt kostenlos. Das passt zu jemandem, der wenig Geld ausgeben will.",
+            "hint": "Welches der drei Wörter hat etwas mit Geld zu tun?"
+          }
+        ],
+        "say": "Schau, was hier passiert ist. Zu jedem Wunsch von Mia gibt es im Angebot ein Wort, das passt. Ziegen und Kaninchen sind Tiere. 45 Minuten sind weniger als eine Stunde. Und free bedeutet, dass es kein Geld kostet."
+      },
+      {
+        "chapter": "Belegen statt raten",
+        "title": "Was heißt belegen?",
+        "body": "Du zeigst auf die **Wörter im Text**, die beweisen, dass es passt.\n\nDas nennt man **belegen**.\n\nRaten heißt dagegen nur: Es klingt irgendwie richtig.",
+        "say": "Das ist der wichtigste Gedanke der ganzen Lektion. Eine Antwort ist erst dann sicher, wenn du mit dem Finger auf die Stelle zeigen kannst. Bei Mia konnten wir das dreimal. Wer nur nach Gefühl ankreuzt, fällt auf die Fallen herein, die gleich kommen."
+      },
+      {
+        "title": "Andere Wörter, gleiche Bedeutung",
+        "body": "Person: *not much money*\nAngebot: *free, cheap, low prices*\n\nPerson: *animals*\nAngebot: *goats, wildlife, zoo*",
+        "tasks": [
+          {
+            "text": "Person: She loves music. Im Angebot suchst du ein Wort wie ___.",
+            "choices": [
+              "concert",
+              "museum",
+              "market"
+            ],
+            "correct": "concert",
+            "why": "Ein Konzert hat mit Musik zu tun. Das Wort ist anders, die Bedeutung passt.",
+            "hint": "Wo hört man Musik? Such das Wort, das dazu gehört."
+          }
+        ],
+        "say": "Die Angebote benutzen fast nie dasselbe Wort wie die Person. Sie sagen dasselbe mit anderen Wörtern. Bei der Person steht animals, im Angebot steht goats. Du vergleichst also die Bedeutung und nicht die Buchstaben."
+      },
+      {
+        "title": "Die Falle: Ein Wunsch passt, ein anderer nicht",
+        "body": "*B) Wildlife Park: see deer and owls on a four-hour guided walk. Tickets £25.*\n\nTiere? Ja.\nEine Stunde? Nein.\nWenig Geld? Nein.",
+        "say": "Dieses Angebot klingt zuerst gut für Mia, denn es gibt Rehe und Eulen. Aber lies weiter. Die Führung dauert vier Stunden, und die Karte kostet 25 Pfund. Zwei von Mias Wünschen sprechen dagegen. Also ist B nicht ihr Angebot."
+      },
+      {
+        "title": "Die Regel dazu",
+        "body": "Ein Angebot passt nur, wenn **kein Wunsch dagegen spricht**.\n\nEin einziges Nein reicht, und das Angebot fällt weg.",
+        "tasks": [
+          {
+            "text": "Mia hat nur eine Stunde. Das Angebot dauert vier Stunden. Das Angebot ___.",
+            "choices": [
+              "fällt weg",
+              "passt trotzdem"
+            ],
+            "correct": "fällt weg",
+            "why": "Ein Wunsch spricht dagegen. Das reicht, um das Angebot zu streichen.",
+            "hint": "Wie viele Wünsche müssen dagegen sprechen, damit ein Angebot nicht passt?"
+          }
+        ],
+        "say": "Merk dir diese Regel gut, denn sie rettet dir Punkte. Die Prüfung baut absichtlich Angebote ein, bei denen ein Wort wunderbar passt. Darauf sollst du hereinfallen. Prüf deshalb immer alle Wünsche, bevor du dich entscheidest."
+      },
+      {
+        "title": "Jetzt du: Jonas",
+        "body": "*Jonas is travelling alone. He wants to meet other young people and do something sporty.*\n\n*C) Beach volleyball: join a team, ages 14 to 20.*\n\n*D) Castle tour: a quiet walk for families.*",
+        "tasks": [
+          {
+            "text": "Zu other young people passt in Angebot C: ___",
+            "choices": [
+              "ages 14 to 20",
+              "join a team"
+            ],
+            "correct": "ages 14 to 20",
+            "why": "Dort sind Jugendliche zwischen 14 und 20 Jahren. Das sind andere junge Leute.",
+            "hint": "Welche Stelle im Angebot sagt etwas darüber, wie alt die Leute sind?"
+          },
+          {
+            "text": "Zu something sporty passt das Wort ___.",
+            "choices": [
+              "volleyball",
+              "quiet walk"
+            ],
+            "correct": "volleyball",
+            "why": "Das ist ein Sport. Ein ruhiger Spaziergang ist nichts Sportliches.",
+            "hint": "Bei welchem der beiden Wörter kommt man ins Schwitzen?"
+          },
+          {
+            "text": "Jonas passt zu Angebot ___.",
+            "choices": [
+              "C",
+              "D"
+            ],
+            "correct": "C",
+            "why": "Beide Wünsche lassen sich in C belegen. D ist für Familien und ruhig.",
+            "hint": "Für welches Angebot hast du gerade zwei passende Wörter gefunden?"
+          }
+        ],
+        "say": "Jonas reist allein. Er möchte andere junge Leute treffen und etwas Sportliches machen. Darunter stehen zwei Angebote. Such für jeden Wunsch das Wort, das passt, und entscheide dich dann."
+      },
+      {
+        "chapter": "Deine Reihenfolge in der Prüfung",
+        "title": "Schritt 1: die Wünsche markieren",
+        "body": "(1) Lies die Sätze über die Person.\n\n(2) Unterstreiche jeden Wunsch.\n\n(3) Achte besonders auf **not**, **only** und **without**.",
+        "say": "Fang immer bei der Person an und nicht bei den Angeboten. Die Person hat wenige Sätze, das geht schnell. Die kleinen Wörter not, only und without sind wichtig, weil sie sagen, was jemand gerade nicht will. Without bedeutet ohne."
+      },
+      {
+        "title": "Schritt 2: die Angebote absuchen",
+        "body": "Geh mit dem ersten Wunsch durch alle Angebote.\n\nStreich jedes Angebot, das dagegen spricht.\n\nMach dasselbe mit dem nächsten Wunsch.",
+        "say": "Du musst die Angebote dafür nicht Wort für Wort lesen. Du suchst nur nach Wörtern, die zu dem Wunsch passen oder dagegen sprechen. Nach jedem Wunsch bleiben weniger Angebote übrig. Am Ende steht meistens nur noch eins da."
+      },
+      {
+        "title": "Schritt 3: noch einmal prüfen",
+        "body": "Bleibt ein Angebot übrig? Prüf jeden Wunsch noch einmal daran.\n\nBleiben zwei übrig? Lies beide jetzt ganz genau.",
+        "tasks": [
+          {
+            "text": "Was machst du in der Prüfung zuerst? ___",
+            "choices": [
+              "Die Wünsche der Person markieren",
+              "Alle Angebote genau lesen"
+            ],
+            "correct": "Die Wünsche der Person markieren",
+            "why": "Die Person hat nur wenige Sätze. Mit ihren Wünschen suchst du danach gezielt.",
+            "hint": "Welcher Text ist kürzer: der über die Person oder alle sieben Angebote?"
+          }
+        ],
+        "say": "Erst jetzt liest du genau, und nur noch ein oder zwei kurze Texte. Das spart viel Zeit. Wenn du für jeden Wunsch auf ein Wort zeigen kannst, ist die Antwort sicher. Unten kannst du prüfen, ob du die Reihenfolge noch weißt."
+      },
+      {
+        "title": "Wörter, die in Angeboten oft vorkommen",
+        "body": "**on a budget** = mit wenig Geld\n**outdoors** = draußen\n**suitable for** = geeignet für\n**beginner** = Anfänger\n**book in advance** = vorher buchen",
+        "tasks": [
+          {
+            "text": "on a budget = ___",
+            "choices": [
+              "mit wenig Geld",
+              "draußen",
+              "für Anfänger"
+            ],
+            "correct": "mit wenig Geld",
+            "why": "Ein Budget ist das Geld, das man ausgeben kann. On a budget heißt: Es ist knapp.",
+            "hint": "Schau in die erste Zeile der Tafel. Dort steht die Lösung."
+          }
+        ],
+        "say": "Diese fünf Ausdrücke stehen in fast jeder Prüfung irgendwo. Lies sie einmal langsam durch. Du musst sie nicht sofort auswendig können. Es hilft schon, wenn du sie wiedererkennst, sobald sie in einem Angebot auftauchen."
+      },
+      {
+        "title": "Jetzt du: Aylin",
+        "body": "*Aylin is a beginner. She wants to learn something outdoors.*\n\n*E) Surf school: first lessons for beginners on the beach.*\n\n*F) Climbing hall: for experienced climbers only.*",
+        "tasks": [
+          {
+            "text": "Zu outdoors passt die Stelle ___.",
+            "choices": [
+              "on the beach",
+              "climbing hall"
+            ],
+            "correct": "on the beach",
+            "why": "Ein Strand ist draußen. Eine Halle ist drinnen.",
+            "hint": "Welcher der beiden Orte hat kein Dach?"
+          },
+          {
+            "text": "In F spricht gegen Aylin die Stelle ___.",
+            "choices": [
+              "experienced climbers only",
+              "climbing hall is open"
+            ],
+            "correct": "experienced climbers only",
+            "why": "Nur für Erfahrene heißt: nichts für Anfänger. Dieser Wunsch spricht dagegen.",
+            "hint": "Such in F das kleine Wort, das andere Leute ausschließt."
+          },
+          {
+            "text": "Aylin passt zu Angebot ___.",
+            "choices": [
+              "E",
+              "F"
+            ],
+            "correct": "E",
+            "why": "In E lassen sich beide Wünsche belegen: für Anfänger und am Strand.",
+            "hint": "Bei welchem Angebot spricht kein Wunsch dagegen?"
+          }
+        ],
+        "say": "Aylin ist Anfängerin und möchte draußen etwas lernen. Experienced bedeutet erfahren, also das Gegenteil von Anfänger. Geh wieder Wunsch für Wunsch vor und zeig auf die Wörter."
+      },
+      {
+        "title": "Das nimmst du mit",
+        "body": "(1) Wünsche markieren.\n\n(2) Angebote absuchen und streichen.\n\n(3) Jeden Wunsch **belegen**.",
+        "tasks": [
+          {
+            "text": "Ein Wort passt perfekt, aber ein anderer Wunsch spricht dagegen. Das Angebot ___.",
+            "choices": [
+              "fällt weg",
+              "ist richtig"
+            ],
+            "correct": "fällt weg",
+            "why": "Ein einziger Wunsch, der dagegen spricht, reicht aus.",
+            "hint": "Denk an Mia und den Wildpark. Wie ging das aus?"
+          }
+        ],
+        "say": "Drei Schritte, immer in dieser Reihenfolge. Und wenn du am Ende bei einer Person unsicher bist, kreuzt du trotzdem etwas an. Für eine falsche Antwort wird nichts abgezogen. Eine leere Zeile bringt dagegen sicher keinen Punkt."
+      }
+    ],
+    "vocab": [
+      {
+        "term": "Wunsch",
+        "plain": "Das, was eine Person will oder nicht will. In jedem Satz über sie steckt einer."
+      },
+      {
+        "term": "Angebot",
+        "plain": "Ein kleiner Werbetext, zum Beispiel für einen Ausflug oder einen Kurs."
+      },
+      {
+        "term": "belegen",
+        "plain": "Auf die Wörter im Text zeigen, die beweisen, dass eine Antwort stimmt."
+      },
+      {
+        "term": "free",
+        "plain": "Kostenlos.",
+        "example": "Entry is free."
+      },
+      {
+        "term": "on a budget",
+        "plain": "Mit wenig Geld."
+      },
+      {
+        "term": "outdoors",
+        "plain": "Draußen, im Freien."
+      },
+      {
+        "term": "beginner",
+        "plain": "Anfänger oder Anfängerin. Das Gegenteil ist experienced, also erfahren."
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Über eine Person steht da: She is on a budget. Was wünscht sie sich?",
+        "choices": [
+          "Etwas, das wenig kostet",
+          "Etwas, das draußen stattfindet",
+          "Etwas für Anfänger",
+          "Etwas mit Tieren"
+        ],
+        "correct": "Etwas, das wenig kostet",
+        "explain": "On a budget heißt, dass das Geld knapp ist. Sie sucht also ein Angebot, das billig oder kostenlos ist."
+      },
+      {
+        "prompt": "Person: He loves animals. Welches Wort in einem Angebot passt dazu?",
+        "choices": [
+          "wildlife",
+          "castle",
+          "concert",
+          "market"
+        ],
+        "correct": "wildlife",
+        "explain": "Wildlife sind wild lebende Tiere. Das Wort ist ein anderes als animals, aber die Bedeutung passt."
+      },
+      {
+        "prompt": "Was bedeutet belegen?",
+        "choices": [
+          "Auf die Wörter zeigen, die die Antwort beweisen",
+          "Die Antwort nehmen, die am besten klingt",
+          "Den Text ins Deutsche übersetzen",
+          "Alle Angebote zweimal lesen"
+        ],
+        "correct": "Auf die Wörter zeigen, die die Antwort beweisen",
+        "explain": "Belegen heißt, dass du für jede Antwort eine Stelle im Text nennen kannst. Nur dann ist sie sicher."
+      },
+      {
+        "prompt": "Ein Angebot passt zu zwei Wünschen, aber der dritte Wunsch spricht dagegen. Was tust du?",
+        "choices": [
+          "Ich streiche das Angebot.",
+          "Ich nehme es, zwei von drei reichen.",
+          "Ich lasse die Aufgabe leer.",
+          "Ich kreuze zwei Angebote an."
+        ],
+        "correct": "Ich streiche das Angebot.",
+        "explain": "Ein Angebot passt nur, wenn kein Wunsch dagegen spricht. Ein einziges Nein reicht aus."
+      },
+      {
+        "prompt": "Tom is a beginner. Welches Angebot fällt weg?",
+        "choices": [
+          "For experienced players only",
+          "First lessons for everyone",
+          "No experience needed",
+          "Suitable for all levels"
+        ],
+        "correct": "For experienced players only",
+        "explain": "Experienced heißt erfahren, und only heißt nur. Das Angebot schließt Anfänger aus."
+      },
+      {
+        "prompt": "Womit fängst du in der Prüfung an?",
+        "choices": [
+          "Mit den Wünschen der Person",
+          "Mit dem längsten Angebot",
+          "Mit dem letzten Angebot",
+          "Mit der Überschrift"
+        ],
+        "correct": "Mit den Wünschen der Person",
+        "explain": "Die Person hat nur wenige Sätze. Wenn du ihre Wünsche kennst, suchst du in den Angeboten gezielt danach."
+      },
+      {
+        "prompt": "Du bist bei einer Person unsicher. Was machst du?",
+        "choices": [
+          "Trotzdem ein Angebot ankreuzen",
+          "Die Zeile leer lassen",
+          "Zwei Angebote ankreuzen",
+          "Die Aufgabe durchstreichen"
+        ],
+        "correct": "Trotzdem ein Angebot ankreuzen",
+        "explain": "Für falsche Antworten wird nichts abgezogen. Eine leere Zeile bringt aber sicher keinen Punkt."
+      }
+    ]
+  }
+]

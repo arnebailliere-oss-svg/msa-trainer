@@ -12,7 +12,7 @@ test("help page is reachable without a profile", async ({ page }) => {
   await expect(page.getByRole("heading", { name: "So funktioniert der MSA Trainer" })).toBeVisible();
 
   // Every chapter the students were promised is there.
-  for (const heading of [/Fach wechseln/, /Frag Ferdinand/, /Die vier Arten zu üben/, /Ampel und Können/, /Taschenrechner und Formelblatt/]) {
+  for (const heading of [/Fach wechseln/, /Frag Ferdinand/, /Die vier Arten zu üben/, /Ampel, Stufen/, /Taschenrechner und Formelblatt/]) {
     await expect(page.getByRole("heading", { name: heading })).toBeVisible();
   }
   await expect(page.getByRole("button", { name: /Profil anlegen/ })).toBeVisible();

@@ -2,230 +2,283 @@
   {
     "id": "P_EN_READING",
     "subject": "EN",
-    "title": "Reading und Listening von Anfang an",
-    "teaser": "Was die drei Reading-Aufgaben von dir wollen, an echten Prüfungsaufgaben Schritt für Schritt gelöst, dazu die drei Hörfallen",
-    "hook": "Reading heißt lesen, Listening heißt hören. In der Prüfung musst du nichts übersetzen und keine Regel aufsagen. Du musst **Informationen finden**. Das ist eine Technik, keine Begabung. Wir üben sie an echten Aufgaben aus der Prüfung 2024, ganz langsam, eine Tafel nach der anderen.",
-    "outro": "Aufgabe lesen, Wünsche oder Schlüsselwörter markieren, die Stelle finden, genau vergleichen. Und nie eine Aufgabe leer lassen. Du hast gerade drei echte Prüfungsaufgaben gelöst. Jetzt die Wörter, dann das Quiz.",
+    "title": "Lesen 3: der lange Artikel",
+    "teaser": "Die dritte Leseaufgabe der Prüfung: ein langer Artikel mit Fragen zum Ankreuzen. Du lernst, mit einem Schlüsselwort die richtige Stelle zu finden und Antwort und Text genau zu vergleichen. Dazu die Aufgabe richtig, falsch oder steht nicht im Text.",
+    "hook": "Ein englischer Artikel über eine ganze Seite sieht erst einmal nach sehr viel aus. Viele fangen oben an zu lesen und sind nach dem dritten Absatz müde. Das musst du nicht. Für diese Aufgabe liest du nicht den ganzen Artikel. Du suchst darin, so wie du in einem Schrank nach einer bestimmten Jacke suchst.",
+    "outro": "Du weißt jetzt, wie du mit einem langen Artikel umgehst. Du liest zuerst die Frage, suchst mit einem Schlüsselwort die passende Stelle und vergleichst dann genau. Du achtest auf kleine Wörter wie not, all und only. Und du kennst den Unterschied zwischen falsch und steht nicht im Text.",
+    "standard": 2,
     "steps": [
       {
-        "title": "Was die Prüfung von dir will",
-        "body": "**Reading**: Du bekommst Texte und dazu Aufgaben.\n\n**Listening**: Du hörst Texte, jeden **zweimal**, und dazu Aufgaben.\n\nKeine Grammatikfragen. Keine Übersetzung.",
-        "say": "Es gibt drei Reading-Aufgaben, und sie kommen jedes Jahr in derselben Form. Wir schauen uns jede an: erst, wie sie aussieht, dann, wie du sie löst."
+        "chapter": "Du musst nicht alles verstehen",
+        "title": "So sieht die Aufgabe aus",
+        "body": "Du bekommst einen **langen Artikel**, oft eine ganze Seite.\n\nDie Absätze sind nummeriert.\n\nDazu kommen Fragen mit mehreren Antworten zum Ankreuzen.",
+        "say": "Ein Absatz ist ein Stück Text, vor und nach dem eine kleine Lücke ist. Die Nummern an den Absätzen sind eine Hilfe für dich. Die Fragen kommen fast immer in derselben Reihenfolge wie der Artikel. Die Antwort auf die erste Frage steht also weit oben."
       },
       {
-        "title": "Aufgabe 1 sieht so aus",
-        "body": "Fünf **Personen**, sieben **Angebote** (A bis G).\n\n*Hei-Lin is into nature and photography. She is not exactly a sportswoman. After a tour in the woods, she would like to taste the flavors of Quebec City.*\n\nWelches Angebot passt zu Hei-Lin?",
-        "say": "Das ist eine echte Aufgabe aus der Prüfung 2024. Bevor wir sie lösen, müssen wir wissen, was in so einem Personentext eigentlich drinsteckt."
-      },
-      {
-        "title": "Was ist ein Wunsch?",
-        "body": "Jeder Satz über eine Person versteckt einen **Wunsch**: etwas, das sie will oder nicht will.\n\nHei-Lin:\n\n1. **nature and photography**\n2. **not a sportswoman** → nichts Anstrengendes\n3. **taste the flavors** → gutes Essen",
-        "say": "Drei Sätze, drei Wünsche. Ich habe sie dir markiert. In der Prüfung markierst du sie mit dem Stift, sonst vergisst du einen."
-      },
-      {
-        "title": "Was ist ein Angebot?",
-        "body": "Ein Angebot ist ein kleiner **Werbetext**. Er verrät, für wen er gemacht ist.\n\n*F) Electric fat bike winter tour: experiencing **winter beauty**, plenty of opportunities to **stop for photos**. **Regardless of your fitness level**, the electric motor makes it easy.*",
-        "say": "Lies ein Angebot mit der Frage: Für wen ist das? Die fett gedruckten Wörter sind die Hinweise. Ein Angebot mit Fotos und ohne Anstrengung ist für jemanden, der fotografieren will und nicht sportlich ist."
-      },
-      {
-        "title": "Wunsch trifft Angebot",
-        "body": "Hei-Lin: *nature and photography* ↔ F: *winter beauty, stop for photos*\n\nHei-Lin: *not a sportswoman* ↔ F: *regardless of your fitness level*\n\n**Zwei Treffer. Hei-Lin → F.**",
-        "say": "Siehst du, was ich getan habe? Ich habe nicht geraten. Ich habe auf Wörter gezeigt. Das heißt belegen: Ich kann beweisen, warum F passt."
-      },
-      {
-        "title": "Die Falle: ein Wort passt, der Rest nicht",
-        "body": "*C) Ski-shoeing tour: peaceful **forest** landscapes, keep watch for **wildlife** … a mix that provides **intense exercise** … for people who are not afraid of a **true physical challenge**.*\n\nNature? Ja. Aber: **Hei-Lin ist keine Sportlerin.**\n\nAlso **nicht C**.",
-        "say": "Ein Wort allein reicht nie. Forest und wildlife klingen nach Hei-Lin. Aber C will Leute, die eine Herausforderung suchen. Ein Wunsch passt, einer passt nicht. Dann ist es das falsche Angebot."
-      },
-      {
-        "title": "Jetzt du: Frank",
-        "body": "*Frank is touring Canada **alone**. He wants to be around **other athletes**, **test his limits** and **explore the wild** around the city.*\n\n**C)** Ski-shoeing tour: *intense exercise, small group, true physical challenge, National Park*\n\n**D)** Virtual reality tour: *3D movie, learn about the city's past, fun for the whole family*",
-        "say": "Franks Wünsche sind schon markiert. Such die Wörter in C und in D. Welches Angebot kannst du belegen? Entscheide dich, dann klick auf Weiter."
-      },
-      {
-        "title": "Auflösung: Frank",
-        "body": "*other athletes, test his limits* ↔ C: *true physical challenge, intense exercise*\n\n*explore the wild* ↔ C: *National Park*\n\nD sagt *for the whole family*. Frank reist allein und will Sport. **Frank → C.**",
-        "say": "C, und du kannst jeden Wunsch mit einem Wort aus dem Angebot belegen. Das ist der ganze Unterschied zwischen Raten und Lösen."
-      },
-      {
-        "title": "Aufgabe 2 sieht so aus",
-        "body": "Ein kurzer Text: ein Schild, ein Zettel, eine Durchsage.\n\n*Hull Trains, passenger information: On-board catering is not available with standard class seats. First-class passengers may order from the menu at their seat.*\n\nDazu vier Sätze. **Genau einer** sagt dasselbe wie der Text.",
-        "say": "Das ist die zweite Aufgabe der Prüfung. Bevor du die vier Sätze liest, stell dem Text eine Frage. Welche, zeige ich dir auf der nächsten Tafel."
-      },
-      {
-        "title": "Was will der Text?",
-        "body": "Jedes Schild hängt aus einem **Grund**:\n\n- **warnen**: *danger, beware, careful*\n- **verbieten**: *do not, no, only*\n- **informieren**: *open, closed, not available*\n- **Bedingung stellen**: *only if, unless, first*\n\nHull Trains: *not available, may order* → **informieren**",
-        "say": "Frag zuerst: Warum hängt der Text da? Ein Text, der informiert, warnt nicht und verbietet nichts. Damit fallen schon Antworten weg."
-      },
-      {
-        "title": "Dasselbe in anderen Worten",
-        "body": "Text: *catering is **not available** with **standard class** seats*\n\nSatz a: *refreshments are **not available for everyone** on board*\n\n**catering = refreshments** · **standard class = nicht alle**\n\n→ gleiche Bedeutung, andere Wörter. **a ist richtig.**",
-        "say": "Die richtige Antwort wiederholt den Text fast nie wörtlich. Sie sagt es anders. Du vergleichst die Bedeutung, nicht die Buchstaben."
-      },
-      {
-        "title": "Die Falle: ein geklautes Wort",
-        "body": "Satz d: *Passengers get a **free coffee** when upgrading to first class.*\n\n**first class** steht im Text. **free coffee** steht nirgends.\n\n→ **falsch**, obwohl ein Wort passt.",
-        "say": "Falsche Antworten klauen gern ein Wort aus dem Text und bauen etwas Erfundenes darum. Wenn der Text es nicht sagt, ist es falsch. Egal, wie logisch es klingt."
-      },
-      {
-        "title": "Jetzt du: der Zettel",
-        "body": "*Note on a classroom door: Gone to look for the key. Again. Honestly, I would lose my own head if it wasn't attached.*\n\nThe person who wrote this note …\n\n**a)** often cannot find their things.\n**b)** wants the students to look for the key.\n**c)** will be back after the break.",
-        "say": "Der Zettel ist lustig gemeint. Niemand verliert wirklich seinen Kopf. Was sagt die Person über sich selbst? Entscheide dich, dann Weiter."
-      },
-      {
-        "title": "Auflösung: der Zettel",
-        "body": "**a.** *I would lose my own head* = ich verliere ständig alles. Und *Again* zeigt: Das passiert oft.\n\nb: Niemand wird um Hilfe gebeten.\nc: *after the break* steht nicht im Text.",
-        "say": "Selbstironie kommt in dieser Aufgabe gern vor. Der Text meint das Gegenteil von Lob. Wer das erkennt, hat den Punkt."
-      },
-      {
-        "title": "Aufgabe 3 sieht so aus",
-        "body": "Ein **langer Artikel**, oft eine ganze Seite, mit nummerierten Absätzen (1) bis (8).\n\nDazu Fragen wie:\n\n*17. Why did the council first think about switching off the street lights?*\n\nmit vier Antworten zum Ankreuzen.",
-        "say": "Der Text ist lang. Wichtig: Du musst ihn nicht ganz verstehen. Du musst Stellen finden. Und dafür gibt es eine Reihenfolge, die ich dir jetzt zeige."
+        "title": "Die gute Nachricht",
+        "body": "Du musst den Artikel **nicht ganz verstehen**.\n\nDu musst nur die **Stelle finden**, an der die Antwort steht.",
+        "tasks": [
+          {
+            "text": "Ein Wort im Artikel kennst du nicht. Das ist ___.",
+            "choices": [
+              "meistens kein Problem",
+              "das Ende der Aufgabe"
+            ],
+            "correct": "meistens kein Problem",
+            "why": "Für die Antwort brauchst du nur die passende Stelle und nicht jedes einzelne Wort.",
+            "hint": "Wie viele Sätze aus dem Artikel brauchst du für eine Frage?"
+          }
+        ],
+        "say": "In jedem Artikel stehen Wörter, die du nicht kennst. Das ist so gewollt und ganz normal. Für die Fragen brauchst du meistens nur einen oder zwei Sätze aus dem ganzen Text. Alles andere darfst du überfliegen, ohne ein schlechtes Gewissen zu haben."
       },
       {
         "title": "Zuerst die Frage, dann der Text",
-        "body": "*17. Why did the **council** first think about switching off the **street lights**?*\n\nBevor du den Artikel liest: Frage lesen, wichtige Wörter markieren.\n\n**council** · **street lights** · **why** (= ein Grund wird gesucht)",
-        "say": "Lies die Frage, bevor du den Text liest. Dann weißt du, wonach du suchst. Wer erst den ganzen Text liest, hat die Hälfte wieder vergessen, wenn die Fragen kommen."
+        "body": "Frage: *Why did the council think about switching off the street lights?*\n\nLies die Frage **vor** dem Artikel. Dann weißt du, wonach du suchst.",
+        "say": "Auf Deutsch heißt die Frage: Warum dachte der Gemeinderat darüber nach, die Straßenlaternen auszuschalten? The council ist der Gemeinderat, und street lights sind Straßenlaternen. Wer zuerst die Frage liest, liest den Artikel mit einem Ziel."
       },
       {
-        "title": "Schlüsselwort: Was ist das?",
-        "body": "Ein **Schlüsselwort** ist ein Wort aus der Frage, das wahrscheinlich auch im Text steht.\n\nGute Schlüsselwörter: **Nomen und Namen** → *council, street lights, Okoro, police*\n\nSchlechte: *the, is, of, many* → stehen überall.",
-        "say": "Nomen und Namen sind Schlüsselwörter. Die kleinen Wörter helfen dir nicht, die stehen in jedem Satz."
+        "title": "Was ist ein Schlüsselwort?",
+        "body": "Ein **Schlüsselwort** ist ein Wort aus der Frage, das wahrscheinlich auch im Artikel steht.\n\nGut: Namen und Dinge wie *council, street lights*.\nSchlecht: *the, is, of*. Die stehen überall.",
+        "say": "Mit einem Schlüssel öffnest du eine Tür. Mit einem Schlüsselwort öffnest du die richtige Stelle im Text. Gute Schlüsselwörter sind Namen, Zahlen und Dinge. Kleine Wörter wie the oder is helfen dir nicht, weil sie in jedem Satz vorkommen."
       },
       {
-        "title": "Die Stelle finden: Scanning",
-        "body": "Lass die Augen über den Text laufen und such **nur** nach *council*.\n\nAbsatz (2): *The idea did not come from star lovers. It came from the village **council's** accountant … lighting the empty streets … was **costing more** than the council spent on its library.*\n\n**Gefunden.** Jetzt erst genau lesen.",
-        "say": "Das heißt scannen: wie eine Nummer in einer Liste suchen. Du liest nicht, du suchst. Erst wenn du die Stelle hast, liest du den Satz Wort für Wort."
+        "title": "Jetzt du: Schlüsselwörter finden",
+        "body": "Tipp bei jeder Frage auf das Wort, das dir beim Suchen hilft.",
+        "tasks": [
+          {
+            "text": "How many students slept better? Ein gutes Schlüsselwort ist ___.",
+            "choices": [
+              "students",
+              "how",
+              "the"
+            ],
+            "correct": "students",
+            "why": "Students ist ein Ding, nach dem du im Text suchen kannst.",
+            "hint": "Welches der drei Wörter kommt nicht in jedem beliebigen Satz vor?"
+          },
+          {
+            "text": "What did the police say about break-ins? Ein gutes Schlüsselwort ist ___.",
+            "choices": [
+              "police",
+              "what",
+              "about"
+            ],
+            "correct": "police",
+            "why": "Police steht nur an wenigen Stellen im Artikel. Dort suchst du.",
+            "hint": "Welches Wort nennt jemanden, der im Artikel etwas sagt?"
+          },
+          {
+            "text": "Das Fragewort why sagt dir: Gesucht ist ___.",
+            "choices": [
+              "ein Grund",
+              "eine Zahl",
+              "ein Ort"
+            ],
+            "correct": "ein Grund",
+            "why": "Why heißt warum. Auf warum antwortet man mit einem Grund.",
+            "hint": "Was bedeutet why auf Deutsch? Womit antwortet man darauf?"
+          }
+        ],
+        "say": "Hier siehst du nur Fragen, noch keinen Artikel. Überleg bei jeder Frage, welches Wort du im Text suchen würdest. Denk daran: Namen und Dinge sind gut, kleine Wörter helfen nicht."
       },
       {
-        "title": "Genau vergleichen",
-        "body": "**a)** *to spend less money* ↔ Text: *was costing more than … its library* ✓\n\n**b)** *to make the stars visible again* → Text: *did **not** come from star lovers* ✗\n\n**c)** *because villagers had complained* → steht nicht im Text ✗",
-        "say": "Jetzt vergleichst du jede Antwort mit dem Satz aus dem Text. Passt es Wort für Wort in der Bedeutung? Ankreuzen. Steht es nicht da oder sagt der Text das Gegenteil? Weg damit."
+        "chapter": "Die Stelle finden und vergleichen",
+        "title": "Suchen statt lesen",
+        "body": "Lass die Augen über den Artikel laufen.\n\nSuch **nur** das Schlüsselwort.\n\nDas nennt man **Scanning**.",
+        "say": "Scanning funktioniert so, wie wenn du deinen Namen auf einer langen Liste suchst. Du liest nicht jede Zeile. Deine Augen springen über das Papier, bis sie an dem einen Wort hängen bleiben. Genau so suchst du jetzt das Wort council."
       },
       {
-        "title": "Jetzt du: Frage 20",
-        "body": "*20. According to the police, …*\n\nAbsatz (4): *the number of break-ins … **did not rise**; it **stayed exactly the same**, at three. … Most burglaries happen **in the afternoon**, when houses are empty.*\n\n**a)** the darkness did not lead to more crime.\n**b)** there were fewer break-ins than before.\n**c)** burglars prefer to work at night.",
-        "say": "Schlüsselwort: police. Die Stelle habe ich dir schon gesucht. Welche Antwort kannst du belegen? Dann Weiter."
+        "title": "Gefunden",
+        "body": "Absatz 2: *The idea came from the village **council's** accountant. Lighting the empty streets was costing more than the library.*\n\nErst jetzt liest du **genau**.",
+        "say": "Da ist das Schlüsselwort. Jetzt liest du diese zwei Sätze langsam, Wort für Wort. An accountant ist ein Buchhalter, also jemand, der auf das Geld achtet. Der zweite Satz sagt: Die leeren Straßen zu beleuchten kostete mehr als die Bücherei."
       },
       {
-        "title": "Auflösung: Frage 20",
-        "body": "**a.** *did not rise* = nicht mehr geworden = *not more crime*.\n\nb: Es waren **gleich viele** (*stayed the same*), nicht weniger.\nc: Der Text sagt *in the afternoon*, also das Gegenteil.",
-        "say": "a. Und wieder: andere Wörter, gleiche Bedeutung. Antwort b ist die gemeine: nicht gestiegen heißt noch lange nicht gesunken. Lies bei Zahlen immer zweimal."
+        "title": "Antwort und Text vergleichen",
+        "body": "Antwort a: *to spend less money*\nText: *was costing more than the library*\n\nEs war zu teuer. Also wollte man Geld sparen. **a passt.**",
+        "say": "Jetzt nimmst du jede Antwort einzeln und hältst sie neben die Stelle im Text. Antwort a heißt: um weniger Geld auszugeben. Im Text steht, dass die Laternen sehr viel kosteten. Die Wörter sind andere, aber die Bedeutung ist dieselbe."
       },
       {
-        "title": "Listening: was anders ist",
-        "body": "Beim Hören kannst du **nicht zurückblättern**.\n\nDafür: Du bekommst **Zeit**, die Aufgaben vorher zu lesen. Und du hörst jeden Text **zweimal**.\n\n1. Hören: grob. 2. Hören: genau.",
-        "say": "Nutze die Lesezeit vor dem Hören. Wenn du weißt, dass eine Uhrzeit gesucht wird, hörst du sie auch. Wer nicht weiß, wonach er hört, hört nichts."
+        "title": "Eine Antwort, die das Gegenteil sagt",
+        "body": "Antwort b: *to make the stars visible again*\nText: *The idea did **not** come from star lovers.*\n\nDer Text sagt das **Gegenteil**. b ist falsch.",
+        "tasks": [
+          {
+            "text": "Im Text steht not. Die Antwort sagt dasselbe ohne not. Die Antwort ist ___.",
+            "choices": [
+              "falsch",
+              "richtig"
+            ],
+            "correct": "falsch",
+            "why": "Das Wort not dreht den Satz um. Ohne not bedeutet er das Gegenteil.",
+            "hint": "Was macht das kleine Wort not mit einem Satz?"
+          }
+        ],
+        "say": "Antwort b klingt schön: damit man die Sterne wieder sehen kann. Im Artikel steht aber ausdrücklich, dass die Idee nicht von Sternfreunden kam. Achte auf das kleine Wort not. Es dreht die ganze Aussage um."
       },
       {
-        "title": "Die drei Hörfallen",
-        "body": "**thir**teen (13) ≠ **thir**ty (30): bei *-teen* liegt die Betonung **hinten**\n\n**half past ten** = 10:30, **nicht** halb zehn!\n\n**oh** = 0: *oh-seven-seven-oh*",
-        "say": "An diesen drei Stellen gehen jedes Jahr Punkte verloren. Sag sie dir einmal laut vor: thir-TEEN, half past ten ist halb elf, oh ist null."
+        "title": "Eine Antwort, die nicht im Text steht",
+        "body": "Antwort c: *because villagers had complained*\n\nVon Beschwerden steht in dem Absatz **nichts**.\n\nc ist falsch, auch wenn es logisch klingt.",
+        "say": "Antwort c heißt: weil sich Dorfbewohner beschwert hatten. Das könnte gut sein, so etwas passiert ja. Im Absatz steht davon aber kein Wort. Wie bei den Schildern gilt: Es zählt nur, was der Text sagt."
       },
       {
-        "title": "Jetzt du: die Durchsage",
-        "body": "Du hörst:\n\n*„The train to Leeds leaves at half past nine from platform fourteen.“*\n\nAufgabe: **Time: ___** · **Platform: ___**",
-        "say": "Wann fährt der Zug? Von welchem Gleis? Sag es dir, dann Weiter."
+        "title": "Kleine Wörter, große Wirkung",
+        "body": "**all** = alle\n**some** = einige\n**only** = nur\n**never** = nie\n**more** = mehr\n**fewer** = weniger",
+        "tasks": [
+          {
+            "text": "Text: Some shops closed. Antwort: All shops closed. Die Antwort ist ___.",
+            "choices": [
+              "falsch",
+              "richtig"
+            ],
+            "correct": "falsch",
+            "why": "Einige Läden sind nicht alle Läden. Die Antwort übertreibt.",
+            "hint": "Vergleich die beiden ersten Wörter. Bedeuten sie dasselbe?"
+          }
+        ],
+        "say": "An diesen kleinen Wörtern unterscheiden sich richtige und falsche Antworten oft. Im Text steht einige, in der Antwort steht alle. Das ist dann nicht mehr dasselbe. Lies deshalb bei jeder Antwort genau, ob diese Wörter zum Text passen."
       },
       {
-        "title": "Auflösung: die Durchsage",
-        "body": "Time: **9:30** (nicht 8:30)\n\nPlatform: **14** (four-TEEN, nicht forty)",
-        "say": "Halb zehn wäre falsch, half past nine ist halb zehn auf Deutsch, also 9:30. Und fourteen erkennst du an der Betonung hinten."
+        "title": "Jetzt du: Was sagt die Polizei?",
+        "body": "Absatz 4: *The number of break-ins did not rise. It stayed exactly the same, at three.*",
+        "tasks": [
+          {
+            "text": "It stayed exactly the same heißt: Die Zahl ist ___.",
+            "choices": [
+              "gleich geblieben",
+              "gesunken"
+            ],
+            "correct": "gleich geblieben",
+            "why": "The same bedeutet dasselbe. Es waren vorher drei und nachher drei.",
+            "hint": "Was bedeutet the same? Hat sich die Zahl verändert?"
+          },
+          {
+            "text": "Welche Antwort passt? ___",
+            "choices": [
+              "The darkness did not lead to more crime.",
+              "There were fewer break-ins than before.",
+              "Burglars prefer to work at night."
+            ],
+            "correct": "The darkness did not lead to more crime.",
+            "why": "Nicht gestiegen heißt: nicht mehr Einbrüche. Weniger waren es aber auch nicht.",
+            "hint": "Achte auf more und fewer. Welches der beiden Wörter passt zu gleich geblieben?"
+          }
+        ],
+        "say": "Break-ins sind Einbrüche. To rise bedeutet steigen. Lies die beiden Sätze langsam und überleg, was mit der Zahl der Einbrüche passiert ist. Dann suchst du die Antwort, die genau das sagt."
       },
       {
-        "title": "Deine Routine, bei jeder Aufgabe",
-        "body": "1. **Aufgabe lesen**: Wünsche oder Schlüsselwörter markieren\n\n2. **Stelle finden**: lesen → scannen, hören → aufpassen\n\n3. **Genau vergleichen**: Bedeutung, nicht Wörter. Zahlen, Namen, *all / some / only*",
-        "say": "Drei Schritte, immer dieselben. Und wenn du unsicher bist: Kreuz trotzdem etwas an. Es gibt keine Minuspunkte, aber eine leere Aufgabe bringt sicher nichts."
+        "chapter": "Richtig, falsch oder steht nicht im Text",
+        "title": "Eine andere Art von Aufgabe",
+        "body": "Manchmal bekommst du Aussagen mit drei Kästchen:\n\n**true** = richtig\n**false** = falsch\n**not in the text** = steht nicht im Text",
+        "say": "Diese Aufgabe sieht anders aus, aber du gehst genauso vor. Du suchst mit einem Schlüsselwort die Stelle im Artikel und vergleichst. Neu ist nur das dritte Kästchen. Es ist für Aussagen gedacht, zu denen der Artikel einfach schweigt."
+      },
+      {
+        "title": "Falsch oder steht nicht da?",
+        "body": "**false**: Der Text sagt etwas **anderes**.\n**not in the text**: Der Text sagt dazu **gar nichts**.",
+        "say": "Das ist der Unterschied, den du dir merken musst. Bei false findest du eine Stelle, und sie widerspricht der Aussage. Bei not in the text suchst du und findest keine Stelle. Du kannst weder beweisen, dass es stimmt, noch dass es nicht stimmt."
+      },
+      {
+        "title": "Ein Beispiel",
+        "body": "Text: *It stayed exactly the same, at three.*\n\n*There were three break-ins.* Das ist **true**.\n*There were five break-ins.* Das ist **false**.\n*The burglars were caught.* Das ist **not in the text**.",
+        "say": "Schau dir die drei Aussagen der Reihe nach an. Drei Einbrüche stehen so im Text. Fünf Einbrüche widersprechen dem Text, denn dort steht drei. Und ob die Einbrecher gefasst wurden, erfährst du nirgends. Darüber sagt der Satz nichts."
+      },
+      {
+        "title": "Jetzt du: die Laternen",
+        "body": "Text: *The lights go off at midnight and come on again at five.*",
+        "tasks": [
+          {
+            "text": "The lights are off for five hours. ___",
+            "choices": [
+              "true",
+              "false",
+              "not in the text"
+            ],
+            "correct": "true",
+            "why": "Von Mitternacht bis fünf Uhr sind es genau fünf Stunden.",
+            "hint": "Rechne nach: Wie viele Stunden liegen zwischen Mitternacht und fünf Uhr?"
+          },
+          {
+            "text": "The lights go off at ten. ___",
+            "choices": [
+              "false",
+              "true",
+              "not in the text"
+            ],
+            "correct": "false",
+            "why": "Im Text steht midnight, also zwölf Uhr und nicht zehn.",
+            "hint": "Such im Text die Uhrzeit, zu der die Laternen ausgehen."
+          },
+          {
+            "text": "People in the village like the dark. ___",
+            "choices": [
+              "not in the text",
+              "true",
+              "false"
+            ],
+            "correct": "not in the text",
+            "why": "Der Satz sagt nichts darüber, was die Leute mögen oder nicht mögen.",
+            "hint": "Steht im Satz irgendetwas über die Meinung der Leute?"
+          }
+        ],
+        "say": "Midnight ist Mitternacht, also zwölf Uhr nachts. Go off heißt ausgehen, come on heißt angehen. Prüf jede Aussage am Text. Frag dich: Steht es so da, steht es anders da, oder steht dazu gar nichts da?"
+      },
+      {
+        "title": "Das nimmst du mit",
+        "body": "(1) Frage lesen und ein **Schlüsselwort** markieren.\n\n(2) Die Stelle im Artikel suchen.\n\n(3) Antwort und Text genau vergleichen.\n\n(4) Auf **not, all, some** und **only** achten.",
+        "tasks": [
+          {
+            "text": "Du findest im Artikel keine Stelle zu einer Aussage. Du kreuzt an: ___",
+            "choices": [
+              "not in the text",
+              "false"
+            ],
+            "correct": "not in the text",
+            "why": "Wenn der Artikel dazu schweigt, kannst du die Aussage weder beweisen noch widerlegen.",
+            "hint": "Widerspricht der Artikel der Aussage, oder sagt er gar nichts dazu?"
+          }
+        ],
+        "say": "Mit diesen vier Schritten löst du jede Frage zu einem langen Artikel. Du brauchst dafür keine Angst vor unbekannten Wörtern zu haben. Und wenn du unsicher bist, kreuzt du trotzdem etwas an, denn für falsche Antworten wird nichts abgezogen."
       }
     ],
     "vocab": [
       {
-        "term": "match",
-        "plain": "Zuordnen: Person und Angebot zusammenbringen.",
-        "example": "Match the people with the tours."
+        "term": "Schlüsselwort",
+        "plain": "Ein Wort aus der Frage, das wahrscheinlich auch im Artikel steht. Am besten ein Name, eine Zahl oder ein Ding."
       },
       {
-        "term": "wish",
-        "plain": "Wunsch: das, was eine Person will oder nicht will. Steckt in jedem Satz über sie.",
-        "example": "not a sportswoman → nichts Anstrengendes"
+        "term": "Scanning",
+        "plain": "Den Text mit den Augen nach einem bestimmten Wort absuchen, ohne alles zu lesen."
       },
       {
-        "term": "offer",
-        "plain": "Angebot: ein kleiner Werbetext, der verrät, für wen er gemacht ist.",
-        "example": "regardless of your fitness level"
-      },
-      {
-        "term": "prove / belegen",
-        "plain": "Auf das Wort zeigen, das die Antwort beweist. Nicht raten.",
-        "example": "photos ↔ stop for photos"
-      },
-      {
-        "term": "sign / notice",
-        "plain": "Schild, Aushang, Zettel: der kurze Text in Aufgabe 2.",
-        "example": "Note on a classroom door"
-      },
-      {
-        "term": "statement",
-        "plain": "Aussage: einer der vier Sätze, von denen genau einer stimmt.",
-        "example": "The person often cannot find their things."
-      },
-      {
-        "term": "key word",
-        "plain": "Schlüsselwort: ein Nomen oder Name aus der Frage, den du im Text suchst.",
-        "example": "council, street lights"
-      },
-      {
-        "term": "scan",
-        "plain": "Gezielt nach einem Wort suchen, ohne zu lesen. Wie eine Nummer in einer Liste.",
-        "example": "Scan the text for „council“."
+        "term": "true / false",
+        "plain": "Richtig oder falsch. Bei false sagt der Text etwas anderes."
       },
       {
         "term": "not in the text",
-        "plain": "Steht nicht da. Klingt vielleicht logisch, ist trotzdem falsch.",
-        "example": "free coffee"
+        "plain": "Steht nicht im Text. Der Artikel sagt zu dieser Aussage gar nichts."
       },
       {
-        "term": "twice",
-        "plain": "Zweimal: so oft hörst du jeden Hörtext.",
-        "example": "You will hear the text twice."
+        "term": "all / some / only",
+        "plain": "Alle, einige, nur. An diesen Wörtern unterscheiden sich richtige und falsche Antworten oft."
+      },
+      {
+        "term": "more / fewer",
+        "plain": "Mehr und weniger.",
+        "example": "fewer break-ins = weniger Einbrüche"
       }
     ],
     "quiz": [
       {
-        "prompt": "Hei-Lin *is not exactly a sportswoman*. Welches Wort aus Angebot F belegt, dass F trotzdem passt?",
+        "prompt": "Was machst du zuerst, wenn du einen langen Artikel mit Fragen bekommst?",
         "choices": [
-          "regardless of your fitness level",
-          "true physical challenge",
-          "minimum age is 18",
-          "for the whole family"
+          "Die Fragen lesen",
+          "Den ganzen Artikel zweimal lesen",
+          "Alle unbekannten Wörter unterstreichen",
+          "Sofort die erste Antwort ankreuzen"
         ],
-        "correct": "regardless of your fitness level",
-        "explain": "Egal wie fit du bist: Genau das braucht jemand, der nicht sportlich ist. Physical challenge wäre das Gegenteil."
+        "correct": "Die Fragen lesen",
+        "explain": "Wer zuerst die Fragen liest, weiß, wonach er im Artikel suchen muss, und liest mit einem Ziel."
       },
       {
-        "prompt": "Schild: *No food or drink beyond this point.* Was will der Text?",
-        "choices": [
-          "verbieten",
-          "warnen",
-          "werben",
-          "informieren, wann es öffnet"
-        ],
-        "correct": "verbieten",
-        "explain": "No … = etwas ist nicht erlaubt. Das ist ein Verbot, keine Warnung vor Gefahr."
-      },
-      {
-        "prompt": "Text: *Last entry 4.30 pm.* Welche Aussage sagt dasselbe in anderen Worten?",
-        "choices": [
-          "You cannot go in after 4.30 pm.",
-          "The museum opens at 4.30 pm.",
-          "Tickets cost more after 4.30 pm.",
-          "The museum is closed on Mondays."
-        ],
-        "correct": "You cannot go in after 4.30 pm.",
-        "explain": "Last entry = letzter Einlass. Danach kommt niemand mehr rein. Die anderen Sätze erfinden Dinge, die nicht im Text stehen."
-      },
-      {
-        "prompt": "Frage: *How many students slept better?* Welche Wörter suchst du im Text?",
+        "prompt": "Frage: How many students slept better? Welche Wörter suchst du im Text?",
         "choices": [
           "students, slept better",
           "how, many",
@@ -233,31 +286,64 @@
           "better, the"
         ],
         "correct": "students, slept better",
-        "explain": "Nomen und wichtige Verben sind Schlüsselwörter. How many verrät dir nur: Eine Zahl wird gesucht."
+        "explain": "Dinge und wichtige Tätigkeiten sind gute Schlüsselwörter. How many verrät dir nur, dass eine Zahl gesucht wird."
       },
       {
-        "prompt": "Du hörst *half past ten*. Welche Uhrzeit ist das?",
+        "prompt": "Was bedeutet Scanning?",
         "choices": [
-          "10:30",
-          "9:30",
-          "10:15",
-          "11:30"
+          "Mit den Augen ein bestimmtes Wort suchen",
+          "Jeden Satz übersetzen",
+          "Den Text laut vorlesen",
+          "Die Absätze zählen"
         ],
-        "correct": "10:30",
-        "explain": "half past = eine halbe Stunde nach der genannten Stunde. Nicht wie im Deutschen halb zehn."
+        "correct": "Mit den Augen ein bestimmtes Wort suchen",
+        "explain": "Beim Scanning liest du nicht. Du suchst ein Wort, so wie du deinen Namen auf einer Liste suchst."
       },
       {
-        "prompt": "Bei einer Aufgabe bist du unsicher. Was tust du?",
+        "prompt": "Text: The number did not rise. Welche Aussage passt?",
         "choices": [
-          "Trotzdem ankreuzen, es gibt keine Minuspunkte",
-          "Leer lassen",
-          "Zwei Antworten ankreuzen",
-          "Den Text noch dreimal lesen"
+          "The number was not higher than before.",
+          "The number was lower than before.",
+          "The number was much higher.",
+          "Nobody counted."
         ],
-        "correct": "Trotzdem ankreuzen, es gibt keine Minuspunkte",
-        "explain": "Falsche Antworten kosten nichts. Eine leere Aufgabe bringt sicher keinen Punkt."
+        "correct": "The number was not higher than before.",
+        "explain": "Nicht gestiegen heißt nur, dass es nicht mehr wurden. Ob es weniger wurden, sagt der Satz nicht."
+      },
+      {
+        "prompt": "Text: Some villagers were angry. Aussage: All villagers were angry. Die Aussage ist",
+        "choices": [
+          "false",
+          "true",
+          "not in the text",
+          "fast richtig, also true"
+        ],
+        "correct": "false",
+        "explain": "Some heißt einige, all heißt alle. Der Text sagt etwas anderes als die Aussage, also ist sie false."
+      },
+      {
+        "prompt": "Du suchst und findest im Artikel nichts zu einer Aussage. Was kreuzt du an?",
+        "choices": [
+          "not in the text",
+          "false",
+          "true",
+          "nichts"
+        ],
+        "correct": "not in the text",
+        "explain": "False bedeutet, dass der Text widerspricht. Wenn er dazu schweigt, ist es not in the text."
+      },
+      {
+        "prompt": "Eine Antwort klingt logisch, steht aber nicht im Absatz. Sie ist",
+        "choices": [
+          "falsch",
+          "richtig",
+          "wahrscheinlich richtig",
+          "die beste Wahl"
+        ],
+        "correct": "falsch",
+        "explain": "Es zählt nur, was im Text steht. Was du dir selbst dazudenkst, ist kein Beleg."
       }
     ],
-    "source": "Beispiele aus MSA Berlin 2024 Englisch, Reading Part 1 (Quebec) und Part 2 (Hull Trains); Zettel und Artikel-Beispiele (Reading Part 3) eigene Texte; Aufbau nach Prüfungshefte MSA Englisch Berlin 2026"
+    "source": "Beispielsätze aus dem eigenen Artikel „The village that switched off the night“"
   }
 ]

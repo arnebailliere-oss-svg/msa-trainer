@@ -1,0 +1,472 @@
+[
+  {
+    "id": "P_EN_LISTENING",
+    "subject": "EN",
+    "title": "Hören: Uhrzeiten, Zahlen und Daten",
+    "teaser": "Wie die Höraufgaben ablaufen und worauf du beim ersten und zweiten Hören achtest. Dazu die Stellen, an denen die meisten Punkte verloren gehen: half past, thirteen und thirty, Telefonnummern, Preise und Daten.",
+    "hook": "Listening heißt hören. Beim Hören kannst du nicht zurückblättern, und das macht viele nervös. Dabei geht es in der Prüfung fast immer um dieselben Dinge: eine Uhrzeit, eine Zahl, ein Datum oder einen Namen. Wenn du weißt, wie die Engländer das sagen, hörst du es auch.",
+    "outro": "Du weißt jetzt, wie du an eine Höraufgabe herangehst: erst lesen, dann zweimal hören. Du kennst die Falle mit half past und kannst thirteen von thirty unterscheiden. Auch Telefonnummern, Preise und Daten klingen für dich nicht mehr fremd.",
+    "standard": 2,
+    "steps": [
+      {
+        "chapter": "So läuft das Hören ab",
+        "title": "Was beim Hören anders ist",
+        "body": "Du hörst jeden Text **zweimal**.\n\nVorher bekommst du Zeit, die Aufgaben zu **lesen**.\n\nZurückblättern kannst du nicht.",
+        "say": "Beim Lesen kannst du eine Stelle so oft ansehen, wie du willst. Beim Hören ist das Wort vorbei, sobald es gesprochen ist. Dafür hilft dir die Prüfung an zwei Stellen. Du darfst die Aufgaben vorher lesen, und du hörst alles ein zweites Mal."
+      },
+      {
+        "title": "Erst lesen, dann hören",
+        "body": "Aufgabe: *The train leaves at ___.*\n\nJetzt weißt du schon vor dem Hören: Gesucht ist eine **Uhrzeit**.",
+        "tasks": [
+          {
+            "text": "Die Aufgabe fragt nach einer phone number. Beim Hören achtest du auf ___.",
+            "choices": [
+              "Zahlen",
+              "Namen",
+              "Farben"
+            ],
+            "correct": "Zahlen",
+            "why": "Eine Telefonnummer besteht aus Ziffern. Darauf richtest du dein Ohr.",
+            "hint": "Woraus besteht eine Telefonnummer? Genau darauf hörst du."
+          }
+        ],
+        "say": "Nutze die Lesezeit vor dem Hören. In der Aufgabe steht, was du suchen sollst. Wer weiß, dass eine Uhrzeit kommt, hört sie auch. Wer nicht weiß, wonach er hört, hört am Ende nur ein Rauschen aus vielen Wörtern."
+      },
+      {
+        "title": "Zweimal hören, zwei Aufgaben",
+        "body": "**Erstes Hören**: verstehen, worum es geht,\nund die ersten Antworten notieren.\n\n**Zweites Hören**: die Lücken füllen\nund die Antworten prüfen.",
+        "say": "Du musst beim ersten Mal nicht alles schaffen. Schreib auf, was du sicher gehört hast, und lass den Rest offen. Beim zweiten Hören weißt du schon, an welcher Stelle die fehlende Antwort kommt. Dann kannst du genau dort aufpassen."
+      },
+      {
+        "title": "Wenn du ein Wort nicht kennst",
+        "body": "Bleib nicht daran hängen.\n\nHör weiter, sonst verpasst du die nächste Antwort.\n\nBeim zweiten Hören kommt die Stelle noch einmal.",
+        "tasks": [
+          {
+            "text": "Du verstehst ein Wort nicht. Du ___.",
+            "choices": [
+              "hörst weiter",
+              "denkst lange darüber nach"
+            ],
+            "correct": "hörst weiter",
+            "why": "Der Text läuft weiter. Wer weiterhört, verpasst die nächste Antwort nicht.",
+            "hint": "Was passiert mit dem Text, während du über ein Wort grübelst?"
+          }
+        ],
+        "say": "Das passiert jedem, auch guten Schülern. Ein unbekanntes Wort ist kein Grund zur Sorge. Meistens brauchst du es für die Aufgabe gar nicht. Gefährlich wird es nur, wenn du darüber nachdenkst und dabei die nächsten zwei Sätze verpasst."
+      },
+      {
+        "chapter": "Uhrzeiten",
+        "title": "am und pm",
+        "body": "**7 am** = 7 Uhr morgens\n**7 pm** = 19 Uhr\n\nam ist die Zeit **vor** dem Mittag, pm ist die Zeit **nach** dem Mittag.",
+        "tasks": [
+          {
+            "text": "3 pm = ___ Uhr",
+            "choices": [
+              "15",
+              "3"
+            ],
+            "correct": "15",
+            "why": "Pm ist nach dem Mittag. Drei plus zwölf ergibt fünfzehn.",
+            "hint": "Ist pm vor oder nach dem Mittag? Was rechnest du dann dazu?"
+          }
+        ],
+        "say": "Im Englischen zählt man die Stunden meistens nur bis zwölf. Damit man weiß, ob der Morgen oder der Abend gemeint ist, kommt am oder pm dazu. Für die Zeit nach dem Mittag rechnest du einfach zwölf dazu. Aus 7 pm wird so 19 Uhr."
+      },
+      {
+        "title": "half past",
+        "body": "**half past ten** = 10:30\n\nWörtlich heißt das: eine halbe Stunde **nach** zehn.",
+        "say": "Past bedeutet nach. Half past ten ist also eine halbe Stunde nach zehn Uhr. Das klingt einfach. Trotzdem ist das die Stelle, an der in jeder Prüfung die meisten Fehler passieren. Warum das so ist, siehst du auf der nächsten Tafel."
+      },
+      {
+        "title": "Die Falle mit halb",
+        "body": "Englisch: *half past ten* = 10:30\nDeutsch: *halb elf* = 10:30\n\nDas Englische nennt die Stunde, die **schon vorbei** ist.",
+        "tasks": [
+          {
+            "text": "half past nine = ___",
+            "choices": [
+              "9:30",
+              "8:30",
+              "10:30"
+            ],
+            "correct": "9:30",
+            "why": "Eine halbe Stunde nach neun. Auf Deutsch ist das halb zehn.",
+            "hint": "Past heißt nach. Eine halbe Stunde nach welcher Stunde?"
+          }
+        ],
+        "say": "Im Deutschen sagst du halb elf und nennst damit die Stunde, die noch kommt. Im Englischen nennt man die Stunde, die schon angefangen hat. Wenn du half past ten hörst, darfst du also nicht halb zehn denken. Es ist halb elf."
+      },
+      {
+        "title": "quarter past und quarter to",
+        "body": "**quarter past nine** = 9:15\n**quarter to nine** = 8:45\n\npast bedeutet **nach**, to bedeutet **vor**.",
+        "tasks": [
+          {
+            "text": "quarter to six = ___",
+            "choices": [
+              "5:45",
+              "6:15",
+              "6:45"
+            ],
+            "correct": "5:45",
+            "why": "To heißt vor. Eine Viertelstunde vor sechs ist Viertel vor sechs.",
+            "hint": "Bedeutet to nach oder vor? Liegt die Zeit dann vor oder nach sechs Uhr?"
+          }
+        ],
+        "say": "A quarter ist ein Viertel, also eine Viertelstunde. Quarter past nine ist eine Viertelstunde nach neun. Quarter to nine ist eine Viertelstunde vor neun, also noch in der achten Stunde. Achte deshalb genau auf das kleine Wort in der Mitte."
+      },
+      {
+        "title": "Minuten mit past und to",
+        "body": "**ten past four** = 4:10\n**twenty to five** = 4:40\n\nBis zur halben Stunde sagt man **past**, danach **to**.",
+        "say": "Dieselben beiden Wörter benutzt man auch für einzelne Minuten. Ten past four sind zehn Minuten nach vier. Twenty to five sind zwanzig Minuten vor fünf. In der ersten halben Stunde zählt man von der Stunde weg, in der zweiten zählt man auf die nächste Stunde zu."
+      },
+      {
+        "title": "Die kurze Art",
+        "body": "**ten thirty** = 10:30\n**six fifteen** = 6:15\n**five oh-nine** = 5:09\n\nDie Null spricht man **oh**.",
+        "tasks": [
+          {
+            "text": "seven forty-five = ___",
+            "choices": [
+              "7:45",
+              "7:54"
+            ],
+            "correct": "7:45",
+            "why": "Zuerst kommt die Stunde, dann kommen die Minuten: sieben und fünfundvierzig.",
+            "hint": "Im Englischen sagt man die Zehner zuerst. Forty kommt vor five."
+          }
+        ],
+        "say": "Oft sagen Engländer die Uhrzeit auch einfach als zwei Zahlen hintereinander, so wie sie auf einer Digitaluhr steht. Das ist für dich die leichtere Form. Nur bei der Null musst du aufpassen. Man sagt meistens oh, wie den Buchstaben."
+      },
+      {
+        "title": "Jetzt du: Uhrzeiten",
+        "body": "Tipp bei jedem Satz auf die richtige Uhrzeit.",
+        "tasks": [
+          {
+            "text": "The film starts at half past seven. = ___",
+            "choices": [
+              "7:30",
+              "6:30"
+            ],
+            "correct": "7:30",
+            "why": "Eine halbe Stunde nach sieben. Auf Deutsch ist das halb acht.",
+            "hint": "Welche Stunde nennt das Englische: die vergangene oder die kommende?"
+          },
+          {
+            "text": "We meet at quarter past three. = ___",
+            "choices": [
+              "3:15",
+              "2:45"
+            ],
+            "correct": "3:15",
+            "why": "Past heißt nach. Eine Viertelstunde nach drei.",
+            "hint": "Steht in der Mitte past oder to? Was bedeutet das Wort?"
+          },
+          {
+            "text": "The shop opens at 8 am. = ___ Uhr",
+            "choices": [
+              "8",
+              "20"
+            ],
+            "correct": "8",
+            "why": "Am ist vor dem Mittag, also morgens. Da rechnest du nichts dazu.",
+            "hint": "Ist am die Zeit vor dem Mittag oder danach?"
+          }
+        ],
+        "say": "Drei Sätze, wie sie in einer Höraufgabe vorkommen. Lies sie dir am besten leise vor, damit du den Klang im Ohr hast. Achte auf half, quarter, past und to."
+      },
+      {
+        "chapter": "Zahlen, die ähnlich klingen",
+        "title": "thirteen oder thirty?",
+        "body": "thir**teen** = 13\n**thir**ty = 30\n\nBei -teen ist das **Ende** betont und lang.",
+        "say": "Diese beiden Zahlen klingen fast gleich, und das gilt für alle Paare von 13 und 30 bis 19 und 90. Der Unterschied liegt in der Betonung. Bei thirteen ist das Ende lang und kräftig. Bei thirty ist der Anfang kräftig, und das Ende ist ganz kurz."
+      },
+      {
+        "title": "So hörst du den Unterschied",
+        "body": "four**TEEN** = 14\n**FOR**ty = 40\n\nsix**TEEN** = 16\n**SIX**ty = 60",
+        "tasks": [
+          {
+            "text": "Du hörst SEVENty, mit Betonung am Anfang. Das ist ___.",
+            "choices": [
+              "70",
+              "17"
+            ],
+            "correct": "70",
+            "why": "Ist der Anfang betont und das Ende kurz, dann ist es die Zehnerzahl.",
+            "hint": "Welcher Teil des Wortes ist kräftig gesprochen: der Anfang oder das Ende?"
+          }
+        ],
+        "say": "Sprich die Paare einmal laut und übertreibe dabei ruhig. FourTEEN mit einem langen Ende. FORty mit einem kurzen Ende. Wenn du den Unterschied selbst sprechen kannst, hörst du ihn auch. Beim zweiten Hören achtest du dann genau auf diese Stelle."
+      },
+      {
+        "title": "Telefonnummern",
+        "body": "Jede Ziffer wird einzeln gesprochen.\n\nDie **0** heißt **oh**.\n\nZwei gleiche Ziffern: **double five** = 55.\n\n*oh-seven-double four* = 0744",
+        "tasks": [
+          {
+            "text": "double three = ___",
+            "choices": [
+              "33",
+              "23"
+            ],
+            "correct": "33",
+            "why": "Double heißt doppelt. Die Drei kommt also zweimal.",
+            "hint": "Was bedeutet double auf Deutsch? Wie oft kommt die Ziffer dann?"
+          }
+        ],
+        "say": "Telefonnummern liest man im Englischen Ziffer für Ziffer vor. Niemand sagt siebenhundertvierundvierzig. Die Null ist meistens oh. Und wenn dieselbe Ziffer zweimal hintereinander kommt, sagt man double davor. Double bedeutet doppelt."
+      },
+      {
+        "title": "Preise",
+        "body": "**£4.50** = *four pounds fifty*\n**£15** = *fifteen pounds*\n**50p** = *fifty pence*",
+        "say": "In Großbritannien bezahlt man mit Pfund und Pence. Das Zeichen für Pfund sieht aus wie ein geschwungenes L. Bei einem Preis sagt man zuerst die Pfund und dann einfach die Zahl für die Pence. Achte auch hier auf fifteen und fifty."
+      },
+      {
+        "title": "Jetzt du: Zahlen",
+        "body": "Tipp bei jedem Satz auf die richtige Zahl.",
+        "tasks": [
+          {
+            "text": "Platform fourTEEN = Gleis ___",
+            "choices": [
+              "14",
+              "40"
+            ],
+            "correct": "14",
+            "why": "Das Ende ist betont und lang. Dann ist es die Zahl mit -teen.",
+            "hint": "Welcher Teil ist groß geschrieben, also betont?"
+          },
+          {
+            "text": "It costs three pounds twenty. = ___",
+            "choices": [
+              "£3.20",
+              "£320",
+              "£3.02"
+            ],
+            "correct": "£3.20",
+            "why": "Erst kommen die Pfund, dann die Pence: drei Pfund und zwanzig Pence.",
+            "hint": "Was kommt nach dem Wort pounds: wieder Pfund oder die Pence?"
+          },
+          {
+            "text": "oh-two-nine = ___",
+            "choices": [
+              "029",
+              "209"
+            ],
+            "correct": "029",
+            "why": "Oh ist die Null. Die Ziffern kommen in der Reihenfolge, in der du sie hörst.",
+            "hint": "Welche Ziffer ist mit oh gemeint, und an welcher Stelle steht sie?"
+          }
+        ],
+        "say": "Jetzt kommen Zahlen, wie du sie in einer Durchsage oder am Telefon hörst. Die großen Buchstaben zeigen dir, welcher Teil betont ist. Lies dir jede Zeile leise vor."
+      },
+      {
+        "chapter": "Daten und Jahre",
+        "title": "Der Tag im Monat",
+        "body": "**1st** = first\n**2nd** = second\n**3rd** = third\n\nAb der 4 hängt man **-th** an: fourth, fifth, sixth.\n\n*the fifth of May* = 5. Mai",
+        "say": "Für ein Datum braucht man die Zahlen, mit denen man eine Reihenfolge angibt: der erste, der zweite, der dritte. Die ersten drei haben eigene Wörter. Alle anderen bekommen ein th ans Ende, das wie ein weiches s mit der Zunge zwischen den Zähnen klingt."
+      },
+      {
+        "title": "Zwei Arten, ein Datum zu sagen",
+        "body": "*the first of May*\n*May the first*\n\nBeides bedeutet: **1. Mai**.",
+        "tasks": [
+          {
+            "text": "the third of June = ___",
+            "choices": [
+              "3. Juni",
+              "30. Juni",
+              "13. Juni"
+            ],
+            "correct": "3. Juni",
+            "why": "Third heißt der dritte. Thirtieth wäre der dreißigste.",
+            "hint": "Schau auf die Tafel davor. Welche Zahl gehört zu third?"
+          }
+        ],
+        "say": "Im Englischen kann der Tag vor dem Monat stehen oder dahinter. Beides ist richtig, und beides kommt in Hörtexten vor. Du musst also auf zwei Wörter achten: auf den Monat und auf die Zahl mit dem th am Ende."
+      },
+      {
+        "title": "Jahreszahlen",
+        "body": "**1998** = *nineteen ninety-eight*\n**2015** = *twenty fifteen*\n**2009** = *two thousand and nine*\n\nMeistens teilt man die Zahl in der Mitte.",
+        "tasks": [
+          {
+            "text": "nineteen eighty-four = ___",
+            "choices": [
+              "1984",
+              "1948"
+            ],
+            "correct": "1984",
+            "why": "Neunzehn und vierundachtzig. Im Englischen kommen die Zehner zuerst: eighty, dann four.",
+            "hint": "Welches Wort kommt zuerst: eighty oder four?"
+          }
+        ],
+        "say": "Eine Jahreszahl spricht man fast immer als zwei Zahlen. Aus 1998 wird neunzehn und achtundneunzig. Nur die Jahre von 2000 bis 2009 sagt man mit thousand, weil twenty nine sonst wie neunundzwanzig klingen würde."
+      },
+      {
+        "title": "Jetzt du: die Durchsage",
+        "body": "Du hörst am Bahnhof:\n\n*The train to Leeds leaves at half past nine from platform fourteen.*",
+        "tasks": [
+          {
+            "text": "Time: ___",
+            "choices": [
+              "9:30",
+              "8:30",
+              "10:30"
+            ],
+            "correct": "9:30",
+            "why": "Half past nine ist eine halbe Stunde nach neun, also halb zehn.",
+            "hint": "Welche Stunde nennt das Englische bei half past: die vergangene oder die kommende?"
+          },
+          {
+            "text": "Platform: ___",
+            "choices": [
+              "14",
+              "40"
+            ],
+            "correct": "14",
+            "why": "Fourteen endet auf -teen. Das Ende ist lang und betont.",
+            "hint": "Endet das Wort auf -teen oder auf -ty?"
+          }
+        ],
+        "say": "Das ist eine typische Höraufgabe. Gefragt sind zwei Dinge: die Abfahrtszeit und das Gleis. In diesem einen Satz stecken gleich zwei der Fallen, die du jetzt kennst. Lass dir Zeit."
+      },
+      {
+        "title": "Das nimmst du mit",
+        "body": "(1) Aufgabe lesen: Was wird gesucht?\n\n(2) **half past ten** ist halb elf.\n\n(3) **-teen** ist hinten betont, **-ty** vorn.\n\n(4) Die Null heißt **oh**.",
+        "tasks": [
+          {
+            "text": "quarter to eight = ___",
+            "choices": [
+              "7:45",
+              "8:15"
+            ],
+            "correct": "7:45",
+            "why": "To heißt vor. Eine Viertelstunde vor acht.",
+            "hint": "Bedeutet das Wort in der Mitte vor oder nach?"
+          }
+        ],
+        "say": "Mit diesen vier Punkten vermeidest du die häufigsten Fehler beim Hören. Und wie beim Lesen gilt: Wenn du unsicher bist, schreib trotzdem etwas hin. Eine leere Lücke bringt sicher keinen Punkt. Gleich kommen die Wörter und das Quiz."
+      }
+    ],
+    "vocab": [
+      {
+        "term": "am / pm",
+        "plain": "Am ist die Zeit vor dem Mittag, pm die Zeit nach dem Mittag.",
+        "example": "7 pm = 19 Uhr"
+      },
+      {
+        "term": "half past",
+        "plain": "Eine halbe Stunde nach der genannten Stunde.",
+        "example": "half past ten = 10:30"
+      },
+      {
+        "term": "quarter past / quarter to",
+        "plain": "Eine Viertelstunde nach oder vor der genannten Stunde.",
+        "example": "quarter to nine = 8:45"
+      },
+      {
+        "term": "oh",
+        "plain": "So spricht man die Null in Uhrzeiten und Telefonnummern.",
+        "example": "five oh-nine = 5:09"
+      },
+      {
+        "term": "double",
+        "plain": "Doppelt: dieselbe Ziffer zweimal hintereinander.",
+        "example": "double five = 55"
+      },
+      {
+        "term": "pounds / pence",
+        "plain": "Das britische Geld. Ein Pfund hat hundert Pence.",
+        "example": "four pounds fifty = £4.50"
+      },
+      {
+        "term": "first, second, third",
+        "plain": "Der erste, der zweite, der dritte. Ab dem vierten mit th am Ende."
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Du hörst half past ten. Welche Uhrzeit ist das?",
+        "choices": [
+          "10:30",
+          "9:30",
+          "10:15",
+          "11:30"
+        ],
+        "correct": "10:30",
+        "explain": "Half past bedeutet eine halbe Stunde nach der genannten Stunde. Im Deutschen sagst du dazu halb elf."
+      },
+      {
+        "prompt": "Du hörst quarter to seven. Welche Uhrzeit ist das?",
+        "choices": [
+          "6:45",
+          "7:15",
+          "7:45",
+          "6:15"
+        ],
+        "correct": "6:45",
+        "explain": "To heißt vor. Eine Viertelstunde vor sieben liegt noch in der sechsten Stunde."
+      },
+      {
+        "prompt": "6 pm ist auf Deutsch",
+        "choices": [
+          "18 Uhr",
+          "6 Uhr morgens",
+          "16 Uhr",
+          "12 Uhr"
+        ],
+        "correct": "18 Uhr",
+        "explain": "Pm ist die Zeit nach dem Mittag. Du rechnest zwölf Stunden dazu."
+      },
+      {
+        "prompt": "Du hörst fifTEEN, mit einem langen, betonten Ende. Welche Zahl ist das?",
+        "choices": [
+          "15",
+          "50",
+          "5",
+          "55"
+        ],
+        "correct": "15",
+        "explain": "Bei den Zahlen auf -teen ist das Ende betont. Bei fifty wäre der Anfang betont und das Ende kurz."
+      },
+      {
+        "prompt": "Du hörst oh-seven-double two. Welche Nummer ist das?",
+        "choices": [
+          "0722",
+          "0702",
+          "722",
+          "0727"
+        ],
+        "correct": "0722",
+        "explain": "Oh ist die Null, und double two bedeutet, dass die Zwei zweimal kommt."
+      },
+      {
+        "prompt": "Du hörst the second of March. Welches Datum ist das?",
+        "choices": [
+          "2. März",
+          "22. März",
+          "12. März",
+          "2. Mai"
+        ],
+        "correct": "2. März",
+        "explain": "Second heißt der zweite. March ist der März, May wäre der Mai."
+      },
+      {
+        "prompt": "Du hörst twenty twelve. Welches Jahr ist das?",
+        "choices": [
+          "2012",
+          "2020",
+          "1212",
+          "2112"
+        ],
+        "correct": "2012",
+        "explain": "Jahreszahlen teilt man in der Mitte. Twenty ist die erste Hälfte, twelve die zweite."
+      },
+      {
+        "prompt": "Was machst du in der Lesezeit vor dem Hören?",
+        "choices": [
+          "Die Aufgaben lesen und schauen, was gesucht wird",
+          "Die Augen schließen und warten",
+          "Schon einmal raten",
+          "Den Aufgabenzettel umdrehen"
+        ],
+        "correct": "Die Aufgaben lesen und schauen, was gesucht wird",
+        "explain": "Wer weiß, ob eine Uhrzeit, eine Zahl oder ein Name gesucht wird, hört diese Stelle viel leichter heraus."
+      }
+    ]
+  }
+]
