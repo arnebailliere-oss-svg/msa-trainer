@@ -1,0 +1,438 @@
+[
+  {
+    "id": "P_DE_STILMITTEL2",
+    "subject": "DE",
+    "title": "Stilmittel 2: Klang, Übertreibung und Satzbau",
+    "teaser": "Zehn weitere Stilmittel in drei Gruppen: Wiederholungen wie Alliteration und Anapher, Kunstgriffe wie Hyperbel, Euphemismus und rhetorische Frage, und Stilmittel, die im Bau des Satzes stecken. Dazu drei Fragen, mit denen du jedes Stilmittel findest.",
+    "hook": "In der letzten Lektion ging es um Bilder. Sprache kann aber noch auf andere Weise auffallen. Sie kann etwas wiederholen, bis es im Ohr bleibt. Sie kann übertreiben oder verharmlosen. Und sie kann einen Satz ungewöhnlich bauen. Das sind viele Namen auf einmal, deshalb gehen wir in drei kleinen Gruppen vor.",
+    "outro": "Du kennst jetzt die wichtigsten Stilmittel, die in der Prüfung vorkommen. Mit drei Fragen findest du sie: Wiederholt sich etwas? Ist es ein Bild? Ist es übertrieben, beschönigt, eine Scheinfrage oder ein Gegensatz? Denk daran, dass in einem Satz oft zwei Stilmittel gleichzeitig stecken.",
+    "standard": 2,
+    "requires": [
+      "P_DE_STILMITTEL"
+    ],
+    "steps": [
+      {
+        "chapter": "Wiederholungen",
+        "title": "Was sich wiederholt, bleibt im Ohr",
+        "body": "*Milch macht müde Männer munter.*\n\nSprich den Satz laut. Was fällt dir auf?",
+        "say": "Du hast es bestimmt gehört. Fast jedes Wort beginnt mit demselben Laut. Das klingt wie ein kleiner Trommelschlag, und der Satz geht einem nicht mehr aus dem Kopf. Wiederholung ist der älteste Kunstgriff der Sprache. Es gibt drei Arten davon."
+      },
+      {
+        "title": "Die Alliteration",
+        "body": "***M**ilch **m**acht **m**üde **M**änner **m**unter.*\n\nMehrere Wörter hintereinander beginnen mit demselben Laut.\n\nDieses Stilmittel heißt **Alliteration**.",
+        "tasks": [
+          {
+            "text": "Fischers Fritz fischt frische Fische. Das ist ___.",
+            "choices": [
+              "eine Alliteration",
+              "eine Metapher"
+            ],
+            "correct": "eine Alliteration",
+            "why": "Alle Wörter beginnen mit demselben Laut.",
+            "hint": "Mit welchem Buchstaben beginnt jedes Wort in diesem Satz?"
+          }
+        ],
+        "say": "Bei der Alliteration wiederholt sich der Anfangslaut. Zwei Wörter reichen schon: Haus und Hof, Kind und Kegel, frisch und fröhlich. Viele Werbesprüche und Zungenbrecher arbeiten damit. Du erkennst sie, indem du auf die ersten Buchstaben schaust."
+      },
+      {
+        "title": "Die Anapher",
+        "body": "***Wer** war das? **Wer** hat das getan? **Wer** steckt dahinter?*\n\nMehrere Sätze beginnen mit demselben Wort.\n\nDieses Stilmittel heißt **Anapher**.",
+        "say": "Bei der Anapher wiederholt sich kein Laut, sondern ein ganzes Wort. Es steht jedes Mal am Anfang eines Satzes oder Satzteils. Das wirkt eindringlich, fast wie ein Hammer, der immer wieder auf dieselbe Stelle schlägt. Reden benutzen dieses Mittel sehr gern."
+      },
+      {
+        "title": "Der Parallelismus",
+        "body": "*Der Mensch läuft, der Fisch schwimmt, der Vogel fliegt.*\n\nMehrere Sätze sind genau gleich gebaut.\n\nDieses Stilmittel heißt **Parallelismus**.",
+        "tasks": [
+          {
+            "text": "Ich will leben. Ich will lachen. Ich will tanzen. Dreimal dasselbe Wort am Satzanfang: Das ist ___.",
+            "choices": [
+              "eine Anapher",
+              "eine Alliteration"
+            ],
+            "correct": "eine Anapher",
+            "why": "Jeder Satz beginnt mit demselben Wort.",
+            "hint": "Was wiederholt sich hier: ein einzelner Laut oder ein ganzes Wort am Anfang?"
+          }
+        ],
+        "say": "Hier wiederholt sich der Bau des Satzes. Jeder Teil besteht aus denselben Bausteinen in derselben Reihenfolge: ein Lebewesen und das, was es tut. Parallel bedeutet nebeneinander in gleicher Richtung. Die Sätze laufen wie Schienen nebeneinander her."
+      },
+      {
+        "title": "Jetzt du: Was wiederholt sich?",
+        "body": "Tipp bei jedem Satz auf das richtige Stilmittel.",
+        "tasks": [
+          {
+            "text": "Wind und Wetter. Das ist ___.",
+            "choices": [
+              "eine Alliteration",
+              "eine Anapher"
+            ],
+            "correct": "eine Alliteration",
+            "why": "Beide Wörter beginnen mit demselben Laut.",
+            "hint": "Schau auf die ersten Buchstaben der beiden Wörter."
+          },
+          {
+            "text": "Heute lernen wir. Heute lachen wir. Heute feiern wir. Das ist ___.",
+            "choices": [
+              "eine Anapher",
+              "eine Alliteration"
+            ],
+            "correct": "eine Anapher",
+            "why": "Jeder Satz beginnt mit demselben Wort.",
+            "hint": "Mit welchem Wort beginnt jeder der drei Sätze?"
+          },
+          {
+            "text": "Die Sonne scheint, der Wind weht, der Regen fällt. Das ist ___.",
+            "choices": [
+              "ein Parallelismus",
+              "eine Anapher"
+            ],
+            "correct": "ein Parallelismus",
+            "why": "Alle drei Teile sind genau gleich gebaut, aber sie beginnen mit verschiedenen Wörtern.",
+            "hint": "Beginnen die Teile mit demselben Wort, oder sind sie nur gleich gebaut?"
+          }
+        ],
+        "say": "Frag dich bei jedem Beispiel, was genau sich wiederholt. Ist es der Anfangslaut, ein Wort am Satzanfang oder der Bau des ganzen Satzes?"
+      },
+      {
+        "chapter": "Übertreiben, beschönigen und fragen",
+        "title": "Die Hyperbel",
+        "body": "*Ich habe dir das **tausendmal** gesagt.*\n\n*Ich sterbe vor Hunger.*\n\nEine starke Übertreibung heißt **Hyperbel**.",
+        "say": "Niemand sagt etwas wirklich tausendmal, und niemand stirbt vor dem Abendessen. Solche Übertreibungen benutzt du jeden Tag. Sie machen deutlich, wie stark ein Gefühl ist. Du erkennst eine Hyperbel daran, dass sie wörtlich genommen unmöglich ist."
+      },
+      {
+        "title": "Der Euphemismus",
+        "body": "*Seniorenresidenz* für Altersheim\n*von uns gegangen* für gestorben\n\nEtwas Unangenehmes wird schöner gesagt.\n\nDieses Stilmittel heißt **Euphemismus**.",
+        "tasks": [
+          {
+            "text": "Der Wagen ist nicht mehr ganz neu, sagt der Händler über ein Wrack. Das ist ___.",
+            "choices": [
+              "ein Euphemismus",
+              "eine Hyperbel"
+            ],
+            "correct": "ein Euphemismus",
+            "why": "Etwas Unangenehmes wird freundlicher ausgedrückt, als es ist.",
+            "hint": "Macht der Händler die Sache größer oder kleiner, als sie ist?"
+          }
+        ],
+        "say": "Der Euphemismus ist das Gegenteil der Hyperbel. Er macht etwas kleiner oder freundlicher, als es ist. Man benutzt ihn, um niemanden zu verletzen oder um etwas Unschönes zu verstecken. Auf Deutsch sagt man auch Beschönigung dazu."
+      },
+      {
+        "title": "Die rhetorische Frage",
+        "body": "*Wollen wir das wirklich?*\n\n*Bin ich etwa dein Diener?*\n\nEine Frage, auf die niemand eine Antwort erwartet, heißt **rhetorische Frage**.",
+        "tasks": [
+          {
+            "text": "Wer möchte schon gern krank sein? Das ist ___.",
+            "choices": [
+              "eine rhetorische Frage",
+              "eine echte Frage"
+            ],
+            "correct": "eine rhetorische Frage",
+            "why": "Die Antwort ist klar: niemand. Es wird keine Antwort erwartet.",
+            "hint": "Erwartet der Sprecher wirklich eine Antwort? Ist sie nicht schon klar?"
+          }
+        ],
+        "say": "Eine rhetorische Frage sieht aus wie eine Frage, ist aber eigentlich eine Aussage. Die Antwort ist von vornherein klar. Wer fragt: Bin ich etwa dein Diener, meint: Ich bin nicht dein Diener. Die Frageform macht die Aussage nur stärker."
+      },
+      {
+        "title": "Die Ironie",
+        "body": "*Na toll, jetzt regnet es auch noch.*\n\nMan sagt das Gegenteil von dem, was man meint.\n\nDieses Stilmittel heißt **Ironie**.",
+        "say": "Niemand findet Regen im falschen Moment toll. Der Sprecher meint das Gegenteil, und jeder versteht das. Bei der Ironie hilft der Zusammenhang. Wenn eine Aussage offensichtlich nicht zur Lage passt, ist sie wahrscheinlich ironisch gemeint."
+      },
+      {
+        "title": "Jetzt du: Welcher Kunstgriff?",
+        "body": "Tipp bei jedem Satz auf das richtige Stilmittel.",
+        "tasks": [
+          {
+            "text": "Die Tasche wiegt eine Tonne. Das ist ___.",
+            "choices": [
+              "eine Hyperbel",
+              "ein Euphemismus"
+            ],
+            "correct": "eine Hyperbel",
+            "why": "Keine Schultasche wiegt wirklich eine Tonne. Der Satz übertreibt stark.",
+            "hint": "Kann eine Tasche wirklich so viel wiegen?"
+          },
+          {
+            "text": "Du bist ja heute wieder früh dran, sagt die Lehrerin zu einem Schüler, der zu spät kommt. Das ist ___.",
+            "choices": [
+              "Ironie",
+              "eine Hyperbel"
+            ],
+            "correct": "Ironie",
+            "why": "Gemeint ist das Gegenteil: Der Schüler ist zu spät.",
+            "hint": "Passt die Aussage zur Lage, oder meint die Lehrerin das Gegenteil?"
+          },
+          {
+            "text": "Wir mussten uns von drei Mitarbeitern trennen, sagt der Chef über Entlassungen. Das ist ___.",
+            "choices": [
+              "ein Euphemismus",
+              "Ironie"
+            ],
+            "correct": "ein Euphemismus",
+            "why": "Eine Entlassung wird hier freundlicher ausgedrückt, als sie ist.",
+            "hint": "Klingt sich trennen freundlicher oder härter als entlassen?"
+          }
+        ],
+        "say": "Frag dich bei jedem Satz: Wird etwas größer gemacht, als es ist? Wird etwas schöner gesagt? Ist es eine Frage ohne Antwort? Oder ist das Gegenteil gemeint?"
+      },
+      {
+        "chapter": "Der Bau des Satzes",
+        "title": "Die Antithese",
+        "body": "*Jung und Alt, Tag und Nacht, Himmel und Hölle*\n\nZwei Gegensätze stehen direkt nebeneinander.\n\nDieses Stilmittel heißt **Antithese**.",
+        "say": "Gegensätze ziehen Aufmerksamkeit an. Wenn zwei Dinge nebeneinanderstehen, die nicht zusammenpassen, fällt das sofort auf. Anti bedeutet gegen. Bei einer Antithese steht also etwas gegen etwas anderes. Überschriften arbeiten sehr gern damit."
+      },
+      {
+        "title": "Die Klimax",
+        "body": "*Ich kam, ich sah, ich siegte.*\n\n*Es dauerte Tage, Wochen, Monate.*\n\nEine Steigerung in Stufen heißt **Klimax**.",
+        "tasks": [
+          {
+            "text": "Er bat, er bettelte, er flehte. Das ist ___.",
+            "choices": [
+              "eine Klimax",
+              "eine Antithese"
+            ],
+            "correct": "eine Klimax",
+            "why": "Jedes Wort ist stärker als das davor.",
+            "hint": "Werden die drei Wörter von links nach rechts stärker?"
+          }
+        ],
+        "say": "Bei der Klimax wird etwas Schritt für Schritt größer oder stärker. Tage, Wochen, Monate: Jedes Wort ist mehr als das davor. Klimax ist das griechische Wort für Leiter. Du steigst sozusagen Sprosse um Sprosse nach oben."
+      },
+      {
+        "title": "Die Ellipse",
+        "body": "*Erst die Arbeit, dann das Vergnügen.*\n\n*Ende gut, alles gut.*\n\nEin Satz, in dem etwas fehlt, heißt **Ellipse**.",
+        "tasks": [
+          {
+            "text": "Je früher, desto besser. In diesem Satz fehlt ___.",
+            "choices": [
+              "das Wort, das sagt, was geschieht",
+              "ein Komma"
+            ],
+            "correct": "das Wort, das sagt, was geschieht",
+            "why": "Vollständig hieße es etwa: Je früher es geschieht, desto besser ist es.",
+            "hint": "Kannst du in dem Satz ein Wort finden, das sagt, was geschieht?"
+          }
+        ],
+        "say": "In diesen Sätzen fehlt das Wort, das sagt, was geschieht. Vollständig hieße es: Erst kommt die Arbeit, dann kommt das Vergnügen. Trotzdem versteht jeder den Satz. Durch die Kürze klingt er knapp und einprägsam, fast wie ein Sprichwort."
+      },
+      {
+        "title": "Drei Fragen, mit denen du jedes Stilmittel findest",
+        "body": "(1) **Wiederholt** sich etwas? Ein Laut, ein Wort, der Satzbau?\n\n(2) Ist es ein **Bild**? Mit wie, ohne wie, oder handelt ein Ding?\n\n(3) Ist es **übertrieben, beschönigt, eine Scheinfrage oder ein Gegensatz**?",
+        "say": "Mit diesen drei Fragen gehst du an jeden Satz heran. Sie führen dich zu den drei Gruppen, die du kennst. Die erste Frage führt zu Alliteration, Anapher und Parallelismus. Die zweite führt zu den Sprachbildern. Die dritte führt zu den Kunstgriffen und zum Satzbau."
+      },
+      {
+        "title": "Zwei Stilmittel in einem Satz",
+        "body": "*Ist der Mensch nur ein nackter Affe?*\n\nEine Frage ohne Antwort: rhetorische Frage.\nDer Mensch wird als Affe bezeichnet: Metapher.",
+        "tasks": [
+          {
+            "text": "Stark wie ein Stier und sanft wie ein Lamm. Hier stecken ein Gegensatz und ___.",
+            "choices": [
+              "zwei Vergleiche",
+              "eine Ellipse"
+            ],
+            "correct": "zwei Vergleiche",
+            "why": "Zweimal steht das Wort wie. Stark und sanft bilden außerdem einen Gegensatz.",
+            "hint": "Welches kleine Wort kommt in dem Satz zweimal vor?"
+          }
+        ],
+        "say": "In der Prüfung heißt es oft: Notieren Sie zwei Stilmittel. Dann stecken tatsächlich zwei in einem Satz. Geh einfach alle drei Fragen durch und hör nicht nach dem ersten Fund auf. Hier findest du eine rhetorische Frage und zugleich eine Metapher."
+      },
+      {
+        "title": "Jetzt du: alles gemischt",
+        "body": "Tipp bei jedem Satz auf das richtige Stilmittel.",
+        "tasks": [
+          {
+            "text": "Heiß geliebt und kalt getrunken. Das ist ___.",
+            "choices": [
+              "eine Antithese",
+              "eine Klimax"
+            ],
+            "correct": "eine Antithese",
+            "why": "Heiß und kalt sind Gegensätze, die direkt nebeneinanderstehen.",
+            "hint": "Welche beiden Wörter in dem Satz sind Gegensätze?"
+          },
+          {
+            "text": "Ohne Fleiß kein Preis. Das ist ___.",
+            "choices": [
+              "eine Ellipse",
+              "eine Hyperbel"
+            ],
+            "correct": "eine Ellipse",
+            "why": "Im Satz fehlt das Wort, das sagt, was geschieht.",
+            "hint": "Ist der Satz vollständig, oder fehlt etwas?"
+          },
+          {
+            "text": "Der Berg ruft. Das ist ___.",
+            "choices": [
+              "eine Personifikation",
+              "eine Alliteration"
+            ],
+            "correct": "eine Personifikation",
+            "why": "Rufen können nur Lebewesen. Der Berg wird wie eine Person behandelt.",
+            "hint": "Kann ein Berg wirklich rufen, so wie ein Mensch es tut?"
+          }
+        ],
+        "say": "Jetzt kommen Stilmittel aus beiden Lektionen vor. Geh die drei Fragen der Reihe nach durch. Lass dir Zeit, es sind viele Namen."
+      },
+      {
+        "title": "Das nimmst du mit",
+        "body": "**Wiederholung**: Alliteration, Anapher, Parallelismus\n**Kunstgriffe**: Hyperbel, Euphemismus, rhetorische Frage, Ironie\n**Satzbau**: Antithese, Klimax, Ellipse",
+        "tasks": [
+          {
+            "text": "Eine Steigerung in Stufen heißt ___.",
+            "choices": [
+              "Klimax",
+              "Ellipse"
+            ],
+            "correct": "Klimax",
+            "why": "Das Wort bedeutet Leiter. Es geht Stufe für Stufe nach oben.",
+            "hint": "Welches der beiden Wörter bedeutet Leiter?"
+          }
+        ],
+        "say": "Das sind die zehn Stilmittel dieser Lektion in ihren drei Gruppen. Du musst sie nicht alle heute sicher können. Auf dem Spickzettel findest du jedes mit einem Beispiel wieder. Gleich kommen die Wörter zum Nachlesen und ein kleines Quiz."
+      }
+    ],
+    "vocab": [
+      {
+        "term": "Alliteration",
+        "plain": "Mehrere Wörter hintereinander beginnen mit demselben Laut.",
+        "example": "Milch macht müde Männer munter."
+      },
+      {
+        "term": "Anapher",
+        "plain": "Mehrere Sätze beginnen mit demselben Wort.",
+        "example": "Wer war das? Wer hat das getan?"
+      },
+      {
+        "term": "Parallelismus",
+        "plain": "Mehrere Sätze sind gleich gebaut.",
+        "example": "Der Mensch läuft, der Fisch schwimmt."
+      },
+      {
+        "term": "Hyperbel",
+        "plain": "Eine starke Übertreibung.",
+        "example": "Ich habe dir das tausendmal gesagt."
+      },
+      {
+        "term": "Euphemismus",
+        "plain": "Eine Beschönigung: Etwas Unangenehmes wird freundlicher gesagt.",
+        "example": "Seniorenresidenz"
+      },
+      {
+        "term": "rhetorische Frage",
+        "plain": "Eine Frage, auf die keine Antwort erwartet wird.",
+        "example": "Wollen wir das wirklich?"
+      },
+      {
+        "term": "Ironie",
+        "plain": "Man sagt das Gegenteil von dem, was man meint.",
+        "example": "Na toll, es regnet."
+      },
+      {
+        "term": "Antithese",
+        "plain": "Zwei Gegensätze stehen nebeneinander.",
+        "example": "Jung und Alt"
+      },
+      {
+        "term": "Klimax",
+        "plain": "Eine Steigerung in Stufen.",
+        "example": "Tage, Wochen, Monate"
+      },
+      {
+        "term": "Ellipse",
+        "plain": "Ein Satz, in dem etwas fehlt.",
+        "example": "Erst die Arbeit, dann das Vergnügen."
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Haus und Hof: Welches Stilmittel ist das?",
+        "choices": [
+          "eine Alliteration",
+          "eine Anapher",
+          "eine Antithese",
+          "eine Ellipse"
+        ],
+        "correct": "eine Alliteration",
+        "explain": "Beide Wörter beginnen mit demselben Laut. Das ist das Kennzeichen der Alliteration."
+      },
+      {
+        "prompt": "Ich warte schon eine Ewigkeit. Welches Stilmittel ist das?",
+        "choices": [
+          "eine Hyperbel",
+          "ein Euphemismus",
+          "eine Klimax",
+          "eine Anapher"
+        ],
+        "correct": "eine Hyperbel",
+        "explain": "Niemand wartet wirklich ewig. Der Satz übertreibt stark."
+      },
+      {
+        "prompt": "Wer will das schon? Welches Stilmittel ist das?",
+        "choices": [
+          "eine rhetorische Frage",
+          "eine Ellipse",
+          "eine Alliteration",
+          "ein Parallelismus"
+        ],
+        "correct": "eine rhetorische Frage",
+        "explain": "Die Antwort ist klar: niemand. Die Frage erwartet keine Antwort."
+      },
+      {
+        "prompt": "Er weinte, er schluchzte, er brüllte. Welches Stilmittel ist das?",
+        "choices": [
+          "eine Klimax",
+          "eine Antithese",
+          "ein Euphemismus",
+          "eine Ironie"
+        ],
+        "correct": "eine Klimax",
+        "explain": "Jedes Wort ist stärker als das davor. Das ist eine Steigerung in Stufen."
+      },
+      {
+        "prompt": "Was ist ein Euphemismus?",
+        "choices": [
+          "Etwas Unangenehmes wird freundlicher gesagt.",
+          "Etwas wird stark übertrieben.",
+          "Ein Laut wiederholt sich.",
+          "Zwei Gegensätze stehen nebeneinander."
+        ],
+        "correct": "Etwas Unangenehmes wird freundlicher gesagt.",
+        "explain": "Ein Euphemismus beschönigt. Die Seniorenresidenz klingt freundlicher als das Altersheim."
+      },
+      {
+        "prompt": "Arm und Reich, Groß und Klein: Welches Stilmittel ist das?",
+        "choices": [
+          "eine Antithese",
+          "eine Klimax",
+          "eine Anapher",
+          "eine Hyperbel"
+        ],
+        "correct": "eine Antithese",
+        "explain": "Arm und reich sind Gegensätze, groß und klein auch. Sie stehen jeweils direkt nebeneinander."
+      },
+      {
+        "prompt": "Was fehlt in einer Ellipse?",
+        "choices": [
+          "ein Teil des Satzes, meistens das Wort für das Geschehen",
+          "das Satzzeichen am Ende",
+          "der große Anfangsbuchstabe",
+          "das Wort wie"
+        ],
+        "correct": "ein Teil des Satzes, meistens das Wort für das Geschehen",
+        "explain": "Erst die Arbeit, dann das Vergnügen: Vollständig stünde dort zweimal kommt."
+      },
+      {
+        "prompt": "Du sollst zwei Stilmittel in einem Satz finden. Wie gehst du vor?",
+        "choices": [
+          "Ich gehe alle drei Fragen durch und höre nach dem ersten Fund nicht auf.",
+          "Ich nenne dasselbe Stilmittel zweimal.",
+          "Ich rate.",
+          "Ich zähle die Wörter."
+        ],
+        "correct": "Ich gehe alle drei Fragen durch und höre nach dem ersten Fund nicht auf.",
+        "explain": "In einem Satz können mehrere Stilmittel gleichzeitig stecken. Die drei Fragen führen dich zu allen."
+      }
+    ]
+  }
+]

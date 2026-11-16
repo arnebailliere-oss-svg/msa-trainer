@@ -1,0 +1,353 @@
+[
+  {
+    "id": "P_DE_REGISTER",
+    "subject": "DE",
+    "title": "Standardsprache und Umgangssprache",
+    "teaser": "Warum du mit deinen Freunden anders sprichst als in einer Bewerbung, woran du Umgangssprache erkennst und wie du einen lockeren Satz in drei Handgriffen in Standardsprache umformst.",
+    "hook": "Du sprichst mehrere Arten von Deutsch, ohne es zu merken. Auf dem Schulhof redest du anders als im Gespräch mit der Schulleiterin, und einer Freundin schreibst du anders als einer Firma. Das ist kein Fehler, das können alle Menschen. In der Prüfung sollst du zeigen, dass du bewusst von der einen Art in die andere wechseln kannst.",
+    "outro": "Du kannst jetzt Umgangssprache erkennen: an Füllwörtern, an verkürzten Formen und an lockeren Wörtern. Und du kannst sie in Standardsprache umformen, indem du Füllwörter streichst, lockere Wörter ersetzt und verkürzte Formen ausschreibst. Dabei bleibt der Inhalt immer derselbe.",
+    "standard": 2,
+    "steps": [
+      {
+        "chapter": "Zwei Arten zu sprechen",
+        "title": "Derselbe Gedanke, zweimal gesagt",
+        "body": "„Ey, das Konzert war voll krass!“\n\n„Das Konzert war sehr beeindruckend.“\n\nBeide Sätze sagen dasselbe.",
+        "say": "Stell dir vor, du erzählst von einem Konzert. Deiner besten Freundin sagst du den ersten Satz. In einem Aufsatz schreibst du den zweiten. Der Inhalt ist gleich: Das Konzert hat dir gut gefallen. Verschieden ist nur die Art, wie du es ausdrückst."
+      },
+      {
+        "title": "Die Umgangssprache",
+        "body": "So sprichst du mit Freunden und in der Familie.\n\nSie ist locker, schnell und persönlich.\n\nDiese Art zu sprechen heißt **Umgangssprache**.",
+        "say": "Umgangssprache ist die Sprache des Alltags. Du benutzt sie, wenn du mit Menschen sprichst, die du gut kennst. Sie hat kurze Sätze, lockere Wörter und viele kleine Füllwörter. In Chats und Sprachnachrichten ist sie ganz normal."
+      },
+      {
+        "title": "Die Standardsprache",
+        "body": "So schreibst du in der Schule, in einer Bewerbung und in der Prüfung.\n\nSie hat vollständige Sätze und sachliche Wörter.\n\nDiese Art heißt **Standardsprache**.",
+        "tasks": [
+          {
+            "text": "Eine Bewerbung schreibst du in ___.",
+            "choices": [
+              "Standardsprache",
+              "Umgangssprache"
+            ],
+            "correct": "Standardsprache",
+            "why": "Eine Firma kennst du nicht persönlich. Dort schreibt man sachlich und vollständig.",
+            "hint": "Kennst du die Menschen in der Firma persönlich?"
+          }
+        ],
+        "say": "Standardsprache ist die Sprache, die überall in Deutschland verstanden wird. Man nennt sie auch Hochdeutsch. Zeitungen sind in ihr geschrieben, und Nachrichten werden in ihr gesprochen. Sie wirkt sachlich und zeigt Respekt gegenüber dem Leser."
+      },
+      {
+        "title": "Keine von beiden ist falsch",
+        "body": "Jede Sprache hat ihren Ort.\n\nFalsch ist nur die falsche Sprache am falschen Ort.",
+        "say": "Es wäre seltsam, mit deinen Freunden wie ein Nachrichtensprecher zu reden. Genauso seltsam ist es, eine Bewerbung im Ton eines Chats zu schreiben. Es geht also nicht um gutes oder schlechtes Deutsch. Es geht darum, die passende Sprache für die Situation zu wählen."
+      },
+      {
+        "title": "Jetzt du: Welche Sprache passt?",
+        "body": "Tipp bei jeder Situation auf die passende Sprache.",
+        "tasks": [
+          {
+            "text": "Du schreibst deinem besten Freund eine Nachricht. Es passt: ___",
+            "choices": [
+              "Umgangssprache",
+              "Standardsprache"
+            ],
+            "correct": "Umgangssprache",
+            "why": "Mit guten Freunden spricht und schreibt man locker.",
+            "hint": "Wie gut kennst du die Person, der du schreibst?"
+          },
+          {
+            "text": "Du schreibst in der Prüfung einen Aufsatz. Es passt: ___",
+            "choices": [
+              "Standardsprache",
+              "Umgangssprache"
+            ],
+            "correct": "Standardsprache",
+            "why": "In der Prüfung wird ein sachlicher Text erwartet.",
+            "hint": "Ist eine Prüfung eine persönliche oder eine offizielle Lage?"
+          },
+          {
+            "text": "Du schreibst eine E-Mail an die Stadtverwaltung. Es passt: ___",
+            "choices": [
+              "Standardsprache",
+              "Umgangssprache"
+            ],
+            "correct": "Standardsprache",
+            "why": "Eine Behörde ist eine offizielle Stelle, die du nicht persönlich kennst.",
+            "hint": "Ist die Stadtverwaltung ein Freund von dir?"
+          }
+        ],
+        "say": "Überleg bei jeder Situation, wer deinen Text liest oder hört. Kennst du die Person gut, oder ist es eine offizielle Lage?"
+      },
+      {
+        "chapter": "Woran du Umgangssprache erkennst",
+        "title": "Füllwörter",
+        "body": "*halt, eben, irgendwie, sozusagen, also, ähm*\n\nDas sind Wörter, die nichts zum Inhalt beitragen.\n\nMan nennt sie Füllwörter.",
+        "tasks": [
+          {
+            "text": "Das ist halt irgendwie schwierig. Der Satz enthält ___ Füllwörter.",
+            "choices": [
+              "zwei",
+              "keine"
+            ],
+            "correct": "zwei",
+            "why": "Ohne die beiden Wörter bedeutet der Satz dasselbe: Das ist schwierig.",
+            "hint": "Welche Wörter kannst du streichen, ohne dass sich der Sinn ändert?"
+          }
+        ],
+        "say": "Füllwörter rutschen beim Sprechen einfach mit heraus. Sie geben dir Zeit zum Nachdenken, aber sie sagen nichts aus. Du erkennst sie mit einer Probe: Streich das Wort. Wenn der Satz danach dasselbe bedeutet, war es ein Füllwort."
+      },
+      {
+        "title": "Verkürzte Formen",
+        "body": "*hab* für habe\n*is* für ist\n*nix* für nichts\n*'ne* für eine\n*haste* für hast du",
+        "say": "Beim schnellen Sprechen verschluckt man Laute. Aus ich habe wird ich hab, aus hast du wird haste. In der Standardsprache schreibst du jedes Wort vollständig aus. Das ist der leichteste Teil beim Umformen, denn du musst nur die fehlenden Buchstaben ergänzen."
+      },
+      {
+        "title": "Lockere Wörter",
+        "body": "*voll, mega, total*: sehr\n*krass*: beeindruckend, heftig\n*Bock*: Lust\n*kapieren, checken*: verstehen\n*Klamotten*: Kleidung\n*kaputt machen*: beschädigen, zerstören",
+        "tasks": [
+          {
+            "text": "Ich habe keinen Bock. In Standardsprache: Ich habe keine ___.",
+            "choices": [
+              "Lust",
+              "Laune dazu, ey"
+            ],
+            "correct": "Lust",
+            "why": "Das ist das sachliche Wort für dasselbe Gefühl.",
+            "hint": "Schau in die dritte Zeile der Tafel."
+          }
+        ],
+        "say": "Viele Wörter gehören nur in die Umgangssprache. Für jedes davon gibt es ein sachliches Wort in der Standardsprache. Auf der Tafel siehst du die häufigsten Paare. In der Prüfung musst du für ein lockeres Wort das passende sachliche finden."
+      },
+      {
+        "title": "Auch der Satzbau verrät es",
+        "body": "Umgangssprache: *Keine Ahnung. War halt so.*\n\nStandardsprache: *Das weiß ich nicht. Es ist so gewesen.*",
+        "say": "In der Umgangssprache fehlen oft Teile des Satzes. Keine Ahnung ist kein vollständiger Satz, aber jeder versteht ihn. In der Standardsprache braucht jeder Satz mindestens jemanden, der etwas tut, und ein Wort, das sagt, was geschieht."
+      },
+      {
+        "title": "Jetzt du: Umgangssprache finden",
+        "body": "Tipp in jedem Satz auf das Wort, das zur Umgangssprache gehört.",
+        "tasks": [
+          {
+            "text": "Der Film war echt spannend. ___",
+            "choices": [
+              "echt",
+              "spannend"
+            ],
+            "correct": "echt",
+            "why": "Das Wort dient hier nur als Verstärkung und ist ein lockeres Füllwort.",
+            "hint": "Welches Wort kannst du streichen, ohne dass der Sinn sich ändert?"
+          },
+          {
+            "text": "Ich habe die Aufgabe nicht gecheckt. ___",
+            "choices": [
+              "gecheckt",
+              "Aufgabe"
+            ],
+            "correct": "gecheckt",
+            "why": "Das ist ein lockeres Wort für verstanden.",
+            "hint": "Welches Wort würdest du in einer Prüfung durch ein sachliches ersetzen?"
+          },
+          {
+            "text": "Sie trägt immer coole Klamotten. ___",
+            "choices": [
+              "Klamotten",
+              "trägt"
+            ],
+            "correct": "Klamotten",
+            "why": "Das ist ein lockeres Wort für Kleidung.",
+            "hint": "Welches der beiden Wörter hat ein sachliches Ersatzwort?"
+          }
+        ],
+        "say": "In jedem Satz steckt genau ein Wort, das nicht in einen sachlichen Text gehört. Frag dich: Welches Wort würde ich in einer Bewerbung nicht schreiben?"
+      },
+      {
+        "chapter": "In Standardsprache umformen",
+        "title": "Drei Handgriffe",
+        "body": "(1) **Füllwörter** streichen.\n\n(2) **Lockere Wörter** durch sachliche ersetzen.\n\n(3) **Verkürzte Formen** ausschreiben.",
+        "say": "Mit diesen drei Handgriffen formst du jeden umgangssprachlichen Satz um. Du gehst sie am besten in dieser Reihenfolge durch. Zuerst fliegt alles Überflüssige hinaus. Dann tauschst du Wörter aus. Zum Schluss ergänzt du, was verschluckt wurde."
+      },
+      {
+        "title": "Ein Beispiel, Schritt für Schritt",
+        "body": "Umgangssprache: *Naturschutz is halt voll wichtig.*\n\n(1) *halt* streichen.\n(2) *voll* durch *sehr* ersetzen.\n(3) *is* zu *ist* ausschreiben.\n\nStandardsprache: *Naturschutz ist sehr wichtig.*",
+        "say": "Ich gehe den Satz für dich durch. Halt ist ein Füllwort, ich streiche es. Voll ist ein lockeres Wort für sehr, ich ersetze es. Is ist eine verkürzte Form, ich schreibe ist. Am Ende steht ein sachlicher Satz mit demselben Inhalt."
+      },
+      {
+        "title": "Der Inhalt bleibt gleich",
+        "body": "Beim Umformen ändert sich **nur die Sprache**.\n\nDu fügst nichts hinzu und lässt nichts Wichtiges weg.",
+        "tasks": [
+          {
+            "text": "Beim Umformen in Standardsprache ändert sich ___.",
+            "choices": [
+              "nur die Sprache",
+              "auch der Inhalt"
+            ],
+            "correct": "nur die Sprache",
+            "why": "Die Aussage des Satzes muss dieselbe bleiben.",
+            "hint": "Darf der neue Satz etwas anderes behaupten als der alte?"
+          }
+        ],
+        "say": "Das ist ein häufiger Fehler. Manche schreiben beim Umformen einen ganz neuen Satz mit einer anderen Aussage. Das gibt Abzug. Der neue Satz muss genau dasselbe sagen wie der alte, nur in einer anderen Sprache. Prüf am Ende, ob die Aussage noch stimmt."
+      },
+      {
+        "title": "Jetzt du: umformen",
+        "body": "Tipp bei jedem Satz auf das passende Wort der Standardsprache.",
+        "tasks": [
+          {
+            "text": "Der Film war voll langweilig. In Standardsprache: Der Film war ___ langweilig.",
+            "choices": [
+              "sehr",
+              "mega"
+            ],
+            "correct": "sehr",
+            "why": "Sehr ist das sachliche Wort für eine Verstärkung.",
+            "hint": "Welches der beiden Wörter würde in einer Zeitung stehen?"
+          },
+          {
+            "text": "Ich hab das nicht kapiert. In Standardsprache: Ich habe das nicht ___.",
+            "choices": [
+              "verstanden",
+              "gecheckt"
+            ],
+            "correct": "verstanden",
+            "why": "Verstanden ist das sachliche Wort für dasselbe.",
+            "hint": "Welches der beiden Wörter gehört nicht in die Umgangssprache?"
+          },
+          {
+            "text": "Zu viele Autos machen die Luft kaputt. In Standardsprache: Zu viele Autos ___ die Luft.",
+            "choices": [
+              "verschmutzen",
+              "ruinieren total"
+            ],
+            "correct": "verschmutzen",
+            "why": "Das ist ein sachliches, genaues Wort für das, was mit der Luft geschieht.",
+            "hint": "Welches Wort beschreibt genau und sachlich, was mit der Luft geschieht?"
+          }
+        ],
+        "say": "Such in jedem Satz das lockere Wort und überleg, welches sachliche Wort dasselbe bedeutet. Achte darauf, dass der Inhalt gleich bleibt."
+      },
+      {
+        "title": "Das nimmst du mit",
+        "body": "(1) **Umgangssprache** für Freunde, **Standardsprache** für Schule und Prüfung.\n\n(2) Füllwörter streichen, lockere Wörter ersetzen, verkürzte Formen ausschreiben.\n\n(3) Der Inhalt bleibt derselbe.",
+        "tasks": [
+          {
+            "text": "Woran erkennst du ein Füllwort? ___",
+            "choices": [
+              "Ich kann es streichen, und der Sinn bleibt gleich.",
+              "Es steht am Satzanfang."
+            ],
+            "correct": "Ich kann es streichen, und der Sinn bleibt gleich.",
+            "why": "Füllwörter tragen nichts zum Inhalt bei.",
+            "hint": "Was passiert mit dem Satz, wenn du das Wort weglässt?"
+          }
+        ],
+        "say": "Das ist alles, was du für diese Aufgabe brauchst. Denk auch bei deinen eigenen Texten in der Prüfung daran. Ein einziges voll oder halt in einem Aufsatz gilt als Fehler im Ausdruck. Gleich kommen die Wörter und ein kleines Quiz."
+      }
+    ],
+    "vocab": [
+      {
+        "term": "Umgangssprache",
+        "plain": "Die lockere Sprache des Alltags, für Freunde und Familie.",
+        "example": "Das war voll krass!"
+      },
+      {
+        "term": "Standardsprache",
+        "plain": "Die sachliche Sprache für Schule, Prüfung und Bewerbung. Auch Hochdeutsch genannt.",
+        "example": "Das war sehr beeindruckend."
+      },
+      {
+        "term": "Füllwörter",
+        "plain": "Wörter ohne Inhalt, die man streichen kann.",
+        "example": "halt, eben, irgendwie, sozusagen"
+      },
+      {
+        "term": "verkürzte Formen",
+        "plain": "Wörter, bei denen Laute verschluckt sind.",
+        "example": "hab, is, nix"
+      },
+      {
+        "term": "lockere Wörter",
+        "plain": "Wörter, die nur in die Umgangssprache gehören.",
+        "example": "voll, krass, Bock, kapieren"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Welcher Satz steht in Standardsprache?",
+        "choices": [
+          "Das Ergebnis hat mich sehr überrascht.",
+          "Das Ergebnis hat mich voll geflasht.",
+          "Krass, das Ergebnis!",
+          "Das Ergebnis war halt mega."
+        ],
+        "correct": "Das Ergebnis hat mich sehr überrascht.",
+        "explain": "Der Satz ist vollständig und benutzt sachliche Wörter. Die anderen enthalten lockere Wörter oder Füllwörter."
+      },
+      {
+        "prompt": "Welches Wort ist ein Füllwort?",
+        "choices": [
+          "irgendwie",
+          "wichtig",
+          "Naturschutz",
+          "schützen"
+        ],
+        "correct": "irgendwie",
+        "explain": "Du kannst es streichen, ohne dass sich der Sinn des Satzes ändert."
+      },
+      {
+        "prompt": "Wie heißt Ich hab nix verstanden in Standardsprache?",
+        "choices": [
+          "Ich habe nichts verstanden.",
+          "Ich hab nichts gecheckt.",
+          "Ich habe nix kapiert.",
+          "Hab nichts verstanden."
+        ],
+        "correct": "Ich habe nichts verstanden.",
+        "explain": "Die verkürzten Formen hab und nix werden ausgeschrieben, und der Satz bleibt vollständig."
+      },
+      {
+        "prompt": "Welches sachliche Wort passt für krass?",
+        "choices": [
+          "beeindruckend",
+          "mega",
+          "voll",
+          "geil"
+        ],
+        "correct": "beeindruckend",
+        "explain": "Beeindruckend gehört zur Standardsprache. Die anderen drei Wörter sind selbst Umgangssprache."
+      },
+      {
+        "prompt": "Wo passt Umgangssprache?",
+        "choices": [
+          "in einer Nachricht an eine Freundin",
+          "in einer Bewerbung",
+          "in einem Aufsatz",
+          "in einem Brief an eine Behörde"
+        ],
+        "correct": "in einer Nachricht an eine Freundin",
+        "explain": "Mit Menschen, die man gut kennt, spricht und schreibt man locker."
+      },
+      {
+        "prompt": "Was darf sich beim Umformen in Standardsprache nicht ändern?",
+        "choices": [
+          "der Inhalt",
+          "die Wörter",
+          "die Länge des Satzes",
+          "die Satzzeichen"
+        ],
+        "correct": "der Inhalt",
+        "explain": "Der neue Satz muss dieselbe Aussage haben wie der alte. Nur die Sprache wird sachlicher."
+      },
+      {
+        "prompt": "Die Party war mega. Wie formst du um?",
+        "choices": [
+          "Die Party war sehr schön.",
+          "Die Party war mega schön.",
+          "Mega Party.",
+          "Die Party war halt gut."
+        ],
+        "correct": "Die Party war sehr schön.",
+        "explain": "Mega ist ein lockeres Wort. In der Standardsprache sagt man genau, was gemeint ist."
+      }
+    ]
+  }
+]

@@ -2,76 +2,353 @@
   {
     "id": "P_DE_STILMITTEL",
     "subject": "DE",
-    "title": "Stilmittel: die Tricks der Sprache",
-    "teaser": "Was ein Stilmittel überhaupt ist, die sieben Tricks dahinter und wie du sie in drei Fragen findest",
-    "hook": "Werbung, Reden, Songtexte, Gedichte: Überall stecken kleine sprachliche Tricks, damit ein Satz auffällt. Diese Tricks heißen Stilmittel. In der Prüfung sollst du sie erkennen und beim Namen nennen. Wir fangen bei null an.",
-    "outro": "Wiederholung, Bild, Übertreibung, Frage, Form, Widerspruch. Sechs Familien, ein paar Namen. Jetzt kannst du die große Tabelle in der Lektion lesen.",
+    "title": "Stilmittel 1: Sprachbilder",
+    "teaser": "Was ein Stilmittel ist und warum Werbung, Reden und Gedichte voll davon sind. Dann die vier wichtigsten Sprachbilder: Vergleich, Metapher, Personifikation und Symbol, jedes mit einer einfachen Probe.",
+    "hook": "Manche Sätze vergisst man sofort, und manche bleiben im Kopf hängen. Der Unterschied liegt oft nicht in dem, was gesagt wird, sondern darin, wie es gesagt wird. Dahinter stecken kleine sprachliche Kunstgriffe, die Menschen seit Jahrtausenden benutzen. In der Prüfung sollst du sie erkennen und benennen. Wir fangen mit den Bildern an.",
+    "outro": "Du kennst jetzt vier Sprachbilder. Beim Vergleich steht das Wort wie. Bei der Metapher fehlt es. Bei der Personifikation tut ein Ding etwas, das nur Menschen können. Ein Symbol ist ein festes Zeichen, das für etwas anderes steht. In der nächsten Lektion kommen die Stilmittel dazu, die mit Klang und Satzbau arbeiten.",
+    "standard": 2,
     "steps": [
       {
-        "title": "Was ist ein Stilmittel?",
-        "body": "Ein **Stilmittel** ist ein sprachlicher Trick.\n\nEr macht einen Satz **auffälliger**: schöner, stärker, lustiger.",
-        "say": "Der Satz sagt nicht mehr, aber er wirkt mehr. Darum benutzen Werbung und Politik diese Tricks ständig."
+        "chapter": "Was ein Stilmittel ist",
+        "title": "Zwei Arten, dasselbe zu sagen",
+        "body": "Er ist sehr stark.\n\nEr ist stark wie ein Bär.\n\nDer zweite Satz bleibt eher im Kopf.",
+        "say": "Beide Sätze bedeuten dasselbe. Trotzdem wirken sie ganz verschieden. Beim ersten Satz erfährst du nur eine Tatsache. Beim zweiten Satz siehst du sofort ein Bild vor dir: einen großen, kräftigen Bären. Genau diese Wirkung ist gewollt."
       },
       {
-        "title": "Trick 1: Wiederholen",
-        "body": "**Alliteration**: gleicher Anfangslaut\n\n*Milch macht müde Männer munter.*\n\n**Anapher**: gleiches Wort am Satzanfang\n\n*Wer war das? Wer hat das getan?*",
-        "say": "Wiederholung fällt auf und bleibt im Ohr. Das ist der älteste Trick von allen."
+        "title": "Das nennt man ein Stilmittel",
+        "body": "Ein **Stilmittel** ist eine besondere Art, etwas zu sagen.\n\nEs macht einen Satz auffälliger, stärker oder schöner.",
+        "say": "Ein Stilmittel ändert nicht, was ein Satz sagt. Es ändert, wie er wirkt. Man nennt es auch sprachliches Mittel oder rhetorisches Mittel. Es gibt viele davon, und jedes hat einen Namen. Die wichtigsten lernst du in dieser und der nächsten Lektion."
       },
       {
-        "title": "Trick 2: Bilder",
-        "body": "**Vergleich** mit *wie*: *stark wie ein Bär*\n\n**Metapher** ohne *wie*: *Er ist ein Bär.*",
-        "say": "Steht ein wie da, ist es ein Vergleich. Fehlt das wie, ist es eine Metapher. Das ist die häufigste Prüfungsfrage."
+        "title": "Wo du sie findest",
+        "body": "In der Werbung, in Reden und in Liedtexten.\n\nIn Gedichten und in Überschriften.\n\nIn der Prüfung: *Notieren Sie zwei Stilmittel aus dem Satz.*",
+        "tasks": [
+          {
+            "text": "Ein Stilmittel verändert vor allem ___.",
+            "choices": [
+              "die Wirkung eines Satzes",
+              "die Rechtschreibung"
+            ],
+            "correct": "die Wirkung eines Satzes",
+            "why": "Der Inhalt bleibt gleich. Der Satz wirkt nur stärker oder auffälliger.",
+            "hint": "Was war bei den beiden Sätzen über den starken Mann verschieden?"
+          }
+        ],
+        "say": "Überall, wo jemand deine Aufmerksamkeit will, findest du Stilmittel. Werbung benutzt sie, damit du dir ein Produkt merkst. Politiker benutzen sie, damit eine Rede überzeugt. In der Prüfung bekommst du einen Satz und sollst sagen, welche Stilmittel darin stecken."
       },
       {
-        "title": "Trick 3: Dinge werden lebendig",
-        "body": "**Personifikation**\n\n*Die Sonne lacht.* *Der Wind flüstert.*\n\nEin Ding tut etwas, das nur Menschen können.",
-        "say": "Die Sonne kann nicht lachen. Genau das macht den Satz lebendig."
+        "title": "Jetzt du: auffällig oder gewöhnlich?",
+        "body": "Tipp bei jedem Paar auf den Satz, der ein Stilmittel enthält.",
+        "tasks": [
+          {
+            "text": "Welcher Satz enthält ein Stilmittel? ___",
+            "choices": [
+              "Die Sonne lacht.",
+              "Die Sonne scheint."
+            ],
+            "correct": "Die Sonne lacht.",
+            "why": "Eine Sonne kann nicht wirklich lachen. Der Satz malt ein Bild.",
+            "hint": "Welcher Satz sagt etwas, das wörtlich genommen gar nicht geht?"
+          },
+          {
+            "text": "Welcher Satz enthält ein Stilmittel? ___",
+            "choices": [
+              "Ich habe tausendmal angerufen.",
+              "Ich habe dreimal angerufen."
+            ],
+            "correct": "Ich habe tausendmal angerufen.",
+            "why": "Niemand ruft wirklich tausendmal an. Der Satz übertreibt.",
+            "hint": "Welche der beiden Zahlen ist glaubwürdig und welche nicht?"
+          }
+        ],
+        "say": "Lies beide Sätze und frag dich, welcher von ihnen ungewöhnlicher klingt. Welcher erzeugt ein Bild in deinem Kopf oder übertreibt? Du musst das Stilmittel noch nicht benennen."
       },
       {
-        "title": "Trick 4: Übertreiben und Beschönigen",
-        "body": "**Hyperbel** (Übertreibung): *Ich habe dir das tausendmal gesagt.*\n\n**Euphemismus** (Beschönigung): *Seniorenresidenz* statt *Altersheim*",
-        "say": "Übertreiben macht stark, beschönigen macht sanft. Beide verändern die Wirkung, nicht die Tatsache."
+        "chapter": "Vergleich und Metapher",
+        "title": "Der Vergleich",
+        "body": "stark **wie** ein Bär\nschnell **wie** der Wind\n\nZwei Dinge werden mit dem Wort wie nebeneinandergestellt.\n\nDieses Stilmittel heißt **Vergleich**.",
+        "say": "Beim Vergleich sagst du, dass etwas so ist wie etwas anderes. Der Mann ist so stark wie ein Bär. Das Wort wie verbindet die beiden. Manchmal steht statt wie auch als ob. Am Wort wie erkennst du einen Vergleich sofort."
       },
       {
-        "title": "Trick 5: Fragen ohne Antwort",
-        "body": "**Rhetorische Frage**\n\n*Wollen wir das wirklich?*\n\nDie Antwort ist klar. Die Frage soll nur wirken.",
-        "say": "Wenn jemand fragt und gar keine Antwort will, ist die Frage rhetorisch."
+        "title": "Die Metapher",
+        "body": "Er **ist** ein Bär.\nDas Leben ist eine Reise.\n\nHier fehlt das Wort wie.\n\nDieses Stilmittel heißt **Metapher**.",
+        "say": "Die Metapher geht einen Schritt weiter. Sie sagt nicht, dass etwas wie etwas anderes ist. Sie sagt, es ist das andere. Er ist ein Bär. Natürlich ist er kein Tier. Das Bild wird einfach direkt an die Stelle des Gemeinten gesetzt."
       },
       {
-        "title": "Trick 6: Die Form des Satzes",
-        "body": "**Klimax**, Steigerung: *Ich kam, sah, siegte.*\n\n**Parallelismus**, gleicher Satzbau: *Der Mensch läuft, der Fisch schwimmt.*\n\n**Ellipse**, etwas fehlt: *Erst die Arbeit, dann das Vergnügen.*",
-        "say": "Hier geht es nicht um einzelne Wörter, sondern darum, wie der Satz gebaut ist."
+        "title": "Der Unterschied ist ein einziges Wort",
+        "body": "Mit **wie**: Vergleich\n*Sie ist schlau wie ein Fuchs.*\n\nOhne **wie**: Metapher\n*Sie ist ein schlauer Fuchs.*",
+        "tasks": [
+          {
+            "text": "Er kämpfte wie ein Löwe. Das ist ___.",
+            "choices": [
+              "ein Vergleich",
+              "eine Metapher"
+            ],
+            "correct": "ein Vergleich",
+            "why": "Im Satz steht das Wort wie. Zwei Dinge werden nebeneinandergestellt.",
+            "hint": "Welches kleine Wort steht zwischen kämpfte und ein Löwe?"
+          }
+        ],
+        "say": "Das ist die häufigste Frage in der Prüfung zu diesem Thema. Zum Glück ist sie leicht zu beantworten. Such nach dem Wort wie. Steht es da, ist es ein Vergleich. Fehlt es und steht trotzdem ein Bild da, ist es eine Metapher."
       },
       {
-        "title": "Trick 7: Widersprüche",
-        "body": "**Antithese**, Gegensatz: *Jung und Alt, Gut und Böse*\n\n**Oxymoron**, Widerspruch in einem Ausdruck: *alter Jüngling, Flüssiggas*",
-        "say": "Gegensätze machen neugierig. Darum stehen sie so oft in Überschriften."
+        "title": "Metaphern stecken überall",
+        "body": "*Tischbein, Flussarm, Warteschlange*\n\n*Du bist mein Sonnenschein.*\n\nViele Metaphern bemerkt man gar nicht mehr.",
+        "tasks": [
+          {
+            "text": "Du bist mein Sonnenschein. Das ist ___.",
+            "choices": [
+              "eine Metapher",
+              "ein Vergleich"
+            ],
+            "correct": "eine Metapher",
+            "why": "Ein Mensch wird direkt als Sonnenschein bezeichnet. Das Wort wie fehlt.",
+            "hint": "Steht im Satz das Wort wie?"
+          }
+        ],
+        "say": "Ein Tisch hat keine Beine, und vor der Kasse steht keine Schlange. Trotzdem versteht das jeder. Unsere Sprache ist voller Bilder, die so alt sind, dass sie niemandem mehr auffallen. In der Prüfung geht es aber meistens um frische, auffällige Bilder."
       },
       {
-        "title": "So findest du es",
-        "body": "1. **Wiederholt** sich etwas?\n\n2. Ist es ein **Bild**? Mit *wie* → Vergleich. Ohne *wie* → Metapher. Ein Ding handelt → Personifikation.\n\n3. **Übertrieben, beschönigt, Frage, Widerspruch, Steigerung?**",
-        "say": "Drei Fragen, und du hast das Stilmittel. In der Prüfung: Namen nennen und die Stelle zitieren."
+        "title": "Sag auch, was das Bild bedeutet",
+        "body": "*Er ist ein Bär.*\n\nGemeint ist: Er ist sehr stark.\n\nIn der Prüfung nennst du das Stilmittel **und** erklärst es.",
+        "say": "Oft reicht es nicht, nur den Namen zu nennen. Du sollst auch sagen, was mit dem Bild gemeint ist oder wie es wirkt. Frag dich dafür: Welche Eigenschaft haben die beiden Dinge gemeinsam? Ein Bär ist stark. Also ist der Mann stark."
+      },
+      {
+        "title": "Jetzt du: Vergleich oder Metapher?",
+        "body": "Tipp bei jedem Satz auf das richtige Stilmittel.",
+        "tasks": [
+          {
+            "text": "Die Stadt war ein Hexenkessel. Das ist ___.",
+            "choices": [
+              "eine Metapher",
+              "ein Vergleich"
+            ],
+            "correct": "eine Metapher",
+            "why": "Die Stadt wird direkt als Kessel bezeichnet. Das Wort wie fehlt.",
+            "hint": "Steht im Satz das Wort wie?"
+          },
+          {
+            "text": "Sie sang wie eine Nachtigall. Das ist ___.",
+            "choices": [
+              "ein Vergleich",
+              "eine Metapher"
+            ],
+            "correct": "ein Vergleich",
+            "why": "Im Satz steht das Wort wie.",
+            "hint": "Welches kleine Wort steht vor eine Nachtigall?"
+          },
+          {
+            "text": "Sein Zimmer ist ein Schlachtfeld. Gemeint ist: Das Zimmer ist ___.",
+            "choices": [
+              "sehr unordentlich",
+              "sehr groß"
+            ],
+            "correct": "sehr unordentlich",
+            "why": "Auf einem Schlachtfeld liegt alles durcheinander. Das haben beide gemeinsam.",
+            "hint": "Wie sieht es auf einem Schlachtfeld aus? Was hat das mit einem Zimmer zu tun?"
+          }
+        ],
+        "say": "Such in jedem Satz zuerst nach dem Wort wie. Wenn du es findest, ist es ein Vergleich. Wenn nicht, schau, ob etwas direkt als etwas anderes bezeichnet wird."
+      },
+      {
+        "chapter": "Personifikation und Symbol",
+        "title": "Die Personifikation",
+        "body": "Die Sonne **lacht**.\nDer Wind **flüstert**.\n\nEin Ding tut etwas, das nur Menschen können.\n\nDieses Stilmittel heißt **Personifikation**.",
+        "say": "In dem Wort steckt Person. Bei einer Personifikation wird ein Ding, ein Tier oder ein Gedanke wie eine Person behandelt. Die Sonne bekommt ein Gesicht und lacht. Der Wind bekommt eine Stimme und flüstert. Das macht einen Text lebendig."
+      },
+      {
+        "title": "So erkennst du sie",
+        "body": "Frag dich: **Kann das Ding das wirklich?**\n\nKann eine Sonne lachen? Nein.\n\nDann ist es eine Personifikation.",
+        "tasks": [
+          {
+            "text": "Der Himmel weint. Das ist ___.",
+            "choices": [
+              "eine Personifikation",
+              "ein Vergleich"
+            ],
+            "correct": "eine Personifikation",
+            "why": "Weinen können nur Lebewesen. Der Himmel wird wie eine Person behandelt.",
+            "hint": "Kann ein Himmel wirklich weinen, so wie ein Mensch es tut?"
+          }
+        ],
+        "say": "Die Probe ist ganz einfach. Du schaust auf das Wort, das sagt, was geschieht, und fragst dich, ob das Ding so etwas überhaupt tun kann. Lachen, flüstern, weinen, schlafen und tanzen können nur Lebewesen. Wenn ein Ding es tut, hast du eine Personifikation gefunden."
+      },
+      {
+        "title": "Das Symbol",
+        "body": "die weiße Taube: Frieden\ndas rote Herz: Liebe\ndie Waage: Gerechtigkeit\n\nEin Symbol ist ein festes Zeichen, das für etwas anderes steht.",
+        "tasks": [
+          {
+            "text": "Ein rotes Herz steht für ___.",
+            "choices": [
+              "Liebe",
+              "Hunger"
+            ],
+            "correct": "Liebe",
+            "why": "Dieses Zeichen versteht fast jeder Mensch auf dieselbe Weise.",
+            "hint": "Wofür malt man ein Herz auf eine Karte?"
+          }
+        ],
+        "say": "Ein Symbol ist ein Bild, das alle kennen und gleich verstehen. Niemand muss erklären, was ein rotes Herz bedeutet. Der Unterschied zur Metapher ist, dass ein Symbol fest ist. Es bedeutet immer dasselbe, egal in welchem Text es vorkommt."
+      },
+      {
+        "title": "Jetzt du: alle vier gemischt",
+        "body": "Tipp bei jedem Satz auf das richtige Stilmittel.",
+        "tasks": [
+          {
+            "text": "Die Blätter tanzen im Wind. Das ist ___.",
+            "choices": [
+              "eine Personifikation",
+              "eine Metapher"
+            ],
+            "correct": "eine Personifikation",
+            "why": "Tanzen können nur Lebewesen. Die Blätter werden wie Personen behandelt.",
+            "hint": "Können Blätter wirklich tanzen, so wie Menschen es tun?"
+          },
+          {
+            "text": "Der Junge ist flink wie ein Wiesel. Das ist ___.",
+            "choices": [
+              "ein Vergleich",
+              "eine Personifikation"
+            ],
+            "correct": "ein Vergleich",
+            "why": "Im Satz steht das Wort wie.",
+            "hint": "Welches kleine Wort verbindet flink und ein Wiesel?"
+          },
+          {
+            "text": "Sie ist der Fels in der Brandung. Das ist ___.",
+            "choices": [
+              "eine Metapher",
+              "ein Vergleich"
+            ],
+            "correct": "eine Metapher",
+            "why": "Ein Mensch wird direkt als Fels bezeichnet. Das Wort wie fehlt.",
+            "hint": "Steht im Satz das Wort wie? Wird etwas direkt als etwas anderes bezeichnet?"
+          }
+        ],
+        "say": "Jetzt kommen alle vier Sprachbilder vor. Geh die Proben durch: Steht ein wie da? Tut ein Ding etwas Menschliches? Wird etwas direkt als etwas anderes bezeichnet?"
+      },
+      {
+        "title": "Das nimmst du mit",
+        "body": "**Vergleich**: mit dem Wort wie\n**Metapher**: ein Bild ohne wie\n**Personifikation**: Ein Ding handelt wie ein Mensch.\n**Symbol**: ein festes Zeichen für etwas anderes",
+        "tasks": [
+          {
+            "text": "Woran erkennst du einen Vergleich sicher? ___",
+            "choices": [
+              "am Wort wie",
+              "am Ausrufezeichen"
+            ],
+            "correct": "am Wort wie",
+            "why": "Das Wort stellt zwei Dinge nebeneinander.",
+            "hint": "Welches Wort stand in stark wie ein Bär?"
+          }
+        ],
+        "say": "Das sind die vier Sprachbilder mit ihren Erkennungszeichen. Wenn du in einem Satz ein Bild entdeckst, gehst du diese vier Zeilen durch. Gleich kommen noch die Wörter zum Nachlesen und ein kleines Quiz."
       }
     ],
     "vocab": [
-      { "term": "Stilmittel", "plain": "Ein sprachlicher Trick, der einen Satz auffälliger macht.", "example": "Metapher, Vergleich, Anapher …" },
-      { "term": "Alliteration", "plain": "Gleicher Anfangslaut.", "example": "Milch macht müde Männer munter" },
-      { "term": "Anapher", "plain": "Gleiches Wort am Anfang mehrerer Sätze.", "example": "Wer? Wer? Wer?" },
-      { "term": "Vergleich", "plain": "Zwei Dinge mit *wie* verbunden.", "example": "stark wie ein Bär" },
-      { "term": "Metapher", "plain": "Ein Bild ohne *wie*.", "example": "Er ist ein Bär." },
-      { "term": "Personifikation", "plain": "Ein Ding handelt wie ein Mensch.", "example": "Die Sonne lacht." },
-      { "term": "Hyperbel", "plain": "Übertreibung.", "example": "tausendmal gesagt" },
-      { "term": "Euphemismus", "plain": "Beschönigung.", "example": "Seniorenresidenz" },
-      { "term": "Rhetorische Frage", "plain": "Frage ohne erwartete Antwort.", "example": "Wollen wir das wirklich?" },
-      { "term": "Klimax", "plain": "Steigerung.", "example": "Ich kam, sah, siegte." },
-      { "term": "Ellipse", "plain": "Unvollständiger Satz.", "example": "Erst die Arbeit, dann das Vergnügen." }
+      {
+        "term": "Stilmittel",
+        "plain": "Eine besondere Art, etwas zu sagen. Sie verändert die Wirkung eines Satzes, nicht seinen Inhalt."
+      },
+      {
+        "term": "Vergleich",
+        "plain": "Zwei Dinge werden mit dem Wort wie nebeneinandergestellt.",
+        "example": "stark wie ein Bär"
+      },
+      {
+        "term": "Metapher",
+        "plain": "Ein Sprachbild ohne das Wort wie. Etwas wird direkt als etwas anderes bezeichnet.",
+        "example": "Er ist ein Bär."
+      },
+      {
+        "term": "Personifikation",
+        "plain": "Ein Ding tut etwas, das nur Menschen können.",
+        "example": "Die Sonne lacht."
+      },
+      {
+        "term": "Symbol",
+        "plain": "Ein festes Zeichen, das für etwas anderes steht.",
+        "example": "weiße Taube: Frieden"
+      }
     ],
     "quiz": [
-      { "prompt": "„stark wie ein Bär“ ist …", "choices": ["ein Vergleich", "eine Metapher", "eine Personifikation", "eine Anapher"], "correct": "ein Vergleich", "explain": "Das Wort *wie* verrät den Vergleich." },
-      { "prompt": "„Die Sonne lacht.“ ist …", "choices": ["eine Personifikation", "ein Vergleich", "eine Ellipse", "eine Klimax"], "correct": "eine Personifikation", "explain": "Ein Ding (Sonne) tut etwas Menschliches (lachen)." },
-      { "prompt": "„Milch macht müde Männer munter.“ ist …", "choices": ["eine Alliteration", "eine Metapher", "eine Hyperbel", "eine Antithese"], "correct": "eine Alliteration", "explain": "Alle Wörter beginnen mit m." },
-      { "prompt": "„Ich warte schon eine Ewigkeit.“ ist …", "choices": ["eine Hyperbel", "ein Euphemismus", "ein Vergleich", "eine Ellipse"], "correct": "eine Hyperbel", "explain": "Eine Ewigkeit wartet niemand: Übertreibung." },
-      { "prompt": "Woran erkennst du einen Vergleich?", "choices": ["Am Wort wie", "Am Fragezeichen", "Am Komma", "An der Großschreibung"], "correct": "Am Wort wie", "explain": "Vergleich = mit *wie*. Metapher = ohne *wie*." }
+      {
+        "prompt": "stark wie ein Bär: Welches Stilmittel ist das?",
+        "choices": [
+          "ein Vergleich",
+          "eine Metapher",
+          "eine Personifikation",
+          "ein Symbol"
+        ],
+        "correct": "ein Vergleich",
+        "explain": "Das Wort wie stellt zwei Dinge nebeneinander. Daran erkennst du den Vergleich."
+      },
+      {
+        "prompt": "Die Sonne lacht. Welches Stilmittel ist das?",
+        "choices": [
+          "eine Personifikation",
+          "ein Vergleich",
+          "eine Metapher",
+          "ein Symbol"
+        ],
+        "correct": "eine Personifikation",
+        "explain": "Lachen können nur Lebewesen. Die Sonne wird wie eine Person behandelt."
+      },
+      {
+        "prompt": "Das Leben ist eine Achterbahn. Welches Stilmittel ist das?",
+        "choices": [
+          "eine Metapher",
+          "ein Vergleich",
+          "eine Personifikation",
+          "ein Symbol"
+        ],
+        "correct": "eine Metapher",
+        "explain": "Das Leben wird direkt als Achterbahn bezeichnet. Das Wort wie fehlt."
+      },
+      {
+        "prompt": "Woran unterscheidest du Vergleich und Metapher?",
+        "choices": [
+          "Beim Vergleich steht das Wort wie.",
+          "Die Metapher ist immer länger.",
+          "Der Vergleich steht nur in Gedichten.",
+          "Die Metapher hat ein Ausrufezeichen."
+        ],
+        "correct": "Beim Vergleich steht das Wort wie.",
+        "explain": "Mit wie ist es ein Vergleich, ohne wie eine Metapher. Mehr brauchst du dafür nicht."
+      },
+      {
+        "prompt": "Was bedeutet die Metapher: Sein Zimmer ist ein Schlachtfeld?",
+        "choices": [
+          "Das Zimmer ist sehr unordentlich.",
+          "Im Zimmer wird gekämpft.",
+          "Das Zimmer ist sehr groß.",
+          "Das Zimmer ist sehr alt."
+        ],
+        "correct": "Das Zimmer ist sehr unordentlich.",
+        "explain": "Auf einem Schlachtfeld liegt alles durcheinander. Diese Eigenschaft wird auf das Zimmer übertragen."
+      },
+      {
+        "prompt": "Wofür steht die weiße Taube?",
+        "choices": [
+          "für den Frieden",
+          "für den Hunger",
+          "für die Schule",
+          "für das Wetter"
+        ],
+        "correct": "für den Frieden",
+        "explain": "Die weiße Taube ist ein Symbol. Sie bedeutet in jedem Text dasselbe."
+      },
+      {
+        "prompt": "Die Uhr rennt. Wie prüfst du, ob das eine Personifikation ist?",
+        "choices": [
+          "Ich frage, ob eine Uhr wirklich rennen kann.",
+          "Ich suche das Wort wie.",
+          "Ich zähle die Wörter.",
+          "Ich suche ein Komma."
+        ],
+        "correct": "Ich frage, ob eine Uhr wirklich rennen kann.",
+        "explain": "Rennen können nur Lebewesen. Wenn ein Ding etwas Menschliches tut, ist es eine Personifikation."
+      }
     ]
   }
 ]

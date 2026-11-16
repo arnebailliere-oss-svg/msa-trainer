@@ -8,48 +8,67 @@
       "DE_STIL_FEHLER",
       "DE_STIL"
     ],
-    "title": "Stilmittel, Sprachebenen, Fehler finden",
-    "intro": "Drei Aufgaben, die in fast jeder Prüfung auftauchen: *Notieren Sie zwei Stilmittel*, *Formulieren Sie den Satz in Standardsprache* und *Benennen Sie die Fehlerart*. Alle drei brauchen dasselbe: ein Auge für **Sprache**, nicht nur für Inhalt.",
-    "source": "Adaptiert nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 2 und Part 4",
+    "title": "Sprache und Stil",
+    "sheet": true,
+    "guided": [
+      "P_DE_STILMITTEL",
+      "P_DE_STILMITTEL2",
+      "P_DE_REGISTER",
+      "P_DE_FEHLERARTEN"
+    ],
+    "intro": "Das hier ist dein Spickzettel zu Sprache und Stil. Hier schaust du nach, wie ein Stilmittel heißt, welches sachliche Wort zu einem lockeren passt oder welche Fehlerart gemeint ist. Gelernt wird oben in den Lektionen mit Ferdinand. Tipp auf eine Karte, um sie zu öffnen.",
+    "source": "Eigene Darstellung nach den Anforderungen des MSA Deutsch",
     "sections": [
       {
         "kind": "what",
-        "title": "Was die Prüfung fragt",
-        "body": "- „Notieren Sie **zwei Stilmittel**, die in folgendem Satz verwendet werden.“\n- „Notieren Sie den Satz in **Standardsprache**.“\n- „**Benennen** Sie die Fehler im Text: Rechtschreib-, Zeichensetzungs-, Grammatik- oder Ausdrucksfehler.“"
+        "title": "Was die Prüfung von dir will",
+        "body": "Zu diesem Bereich gibt es drei Arten von Aufgaben:\n\n- Du nennst zwei Stilmittel, die in einem Satz vorkommen.\n- Du schreibst einen umgangssprachlichen Satz in Standardsprache um.\n- Du benennst die Fehler in einem Text: Rechtschreibung, Zeichensetzung, Grammatik oder Ausdruck."
       },
       {
         "kind": "terms",
-        "title": "Die wichtigsten Stilmittel",
-        "body": "- **Alliteration**: gleicher Anfangslaut. *frisch und fröhlich*\n- **Anapher**: Wiederholung am Satzanfang. *Wer war das? Wer hat das getan?*\n- **Antithese**: Gegensatz. *Jung und Alt*\n- **Asyndeton**: Reihe ohne Bindewort. *Wasser, Luft, Erde, Feuer*\n- **Chiasmus**: Überkreuzstellung. *Er ist jung, alt bist du.*\n- **Ellipse**: unvollständiger Satz. *Erst die Arbeit, dann das Vergnügen.*\n- **Euphemismus**: Beschönigung. *Seniorenresidenz*\n- **Hyperbel**: Übertreibung. *im Schneckentempo, tausendmal gesagt*\n- **Klimax**: Steigerung. *Ich kam, sah, siegte.*\n- **Metapher**: Bild ohne *wie*. *ein Löwe im Kampf*\n- **Oxymoron**: innerer Widerspruch. *alter Jüngling*\n- **Parallelismus**: gleicher Satzbau. *Der Mensch läuft, der Fisch schwimmt.*\n- **Personifikation**: Dinge handeln wie Menschen. *Die Sonne lacht.*\n- **Pleonasmus**: Doppelung. *weißer Schimmel*\n- **Rhetorische Frage**: Scheinfrage. *Wollen wir das wirklich?*\n- **Symbol**: festes Bild. *weiße Taube = Frieden*\n- **Vergleich**: mit *wie*. *klein wie eine Maus*",
-        "primer": "P_DE_STILMITTEL"
+        "title": "Sprachbilder",
+        "body": "| Stilmittel | Daran erkennst du es | Beispiel |\n| --- | --- | --- |\n| Vergleich | das Wort wie | *stark wie ein Bär* |\n| Metapher | ein Bild ohne wie | *Er ist ein Bär.* |\n| Personifikation | Ein Ding tut etwas Menschliches. | *Die Sonne lacht.* |\n| Symbol | ein festes Zeichen für etwas anderes | *weiße Taube: Frieden* |"
+      },
+      {
+        "kind": "terms",
+        "title": "Wiederholungen",
+        "body": "| Stilmittel | Was sich wiederholt | Beispiel |\n| --- | --- | --- |\n| Alliteration | der Anfangslaut | *Milch macht müde Männer munter.* |\n| Anapher | ein Wort am Satzanfang | *Wer war das? Wer hat das getan?* |\n| Parallelismus | der Bau des Satzes | *Der Mensch läuft, der Fisch schwimmt.* |"
+      },
+      {
+        "kind": "terms",
+        "title": "Kunstgriffe und Satzbau",
+        "body": "| Stilmittel | Was es tut | Beispiel |\n| --- | --- | --- |\n| Hyperbel | übertreibt stark | *Ich habe es tausendmal gesagt.* |\n| Euphemismus | beschönigt | *Seniorenresidenz* |\n| rhetorische Frage | fragt, ohne eine Antwort zu erwarten | *Wollen wir das wirklich?* |\n| Ironie | sagt das Gegenteil des Gemeinten | *Na toll, es regnet.* |\n| Antithese | stellt Gegensätze nebeneinander | *Jung und Alt* |\n| Klimax | steigert in Stufen | *Tage, Wochen, Monate* |\n| Ellipse | lässt einen Teil des Satzes weg | *Erst die Arbeit, dann das Vergnügen.* |"
+      },
+      {
+        "kind": "terms",
+        "title": "Vier seltenere Stilmittel",
+        "body": "| Stilmittel | Was es tut | Beispiel |\n| --- | --- | --- |\n| Oxymoron | verbindet zwei Wörter, die sich widersprechen | *bittersüß, alter Knabe* |\n| Pleonasmus | sagt dasselbe doppelt | *weißer Schimmel, runde Kugel* |\n| Asyndeton | reiht ohne Bindewort | *Wasser, Luft, Erde, Feuer* |\n| Chiasmus | stellt zwei Satzteile über Kreuz | *Er ist jung, alt bist du.* |\n\nDiese vier kommen seltener vor. Es reicht, wenn du sie wiedererkennst."
       },
       {
         "kind": "steps",
-        "title": "Stilmittel finden in drei Schritten",
-        "body": "1. **Wiederholt sich etwas?** Anfangslaut → Alliteration, Wort am Satzanfang → Anapher, Satzbau → Parallelismus.\n2. **Ist es ein Bild?** Mit *wie* → Vergleich, ohne *wie* → Metapher, Ding wird menschlich → Personifikation, festes Zeichen → Symbol.\n3. **Ist es übertrieben, beschönigt, widersprüchlich oder eine Scheinfrage?** → Hyperbel, Euphemismus, Oxymoron, rhetorische Frage.\n\nBeispiel aus dem Training: *„Sind wir als vernunftbegabter nackter Affe nur eine Laune der Natur?“* → **rhetorische Frage**, **Personifikation** (die Natur hat eine Laune), **Vergleich/Metapher** (Mensch als Affe).",
-        "primer": "P_DE_STILMITTEL"
+        "title": "Drei Fragen, mit denen du jedes Stilmittel findest",
+        "body": "(1) Wiederholt sich etwas? Ein Laut, ein Wort oder der Bau des Satzes?\n\n(2) Ist es ein Bild? Steht ein wie da, fehlt es, oder handelt ein Ding wie ein Mensch?\n\n(3) Ist es übertrieben, beschönigt, eine Scheinfrage oder ein Gegensatz?\n\nIn einem Satz stecken oft zwei Stilmittel. Hör deshalb nach dem ersten Fund nicht auf."
       },
       {
-        "kind": "formula",
-        "title": "Standard- und Umgangssprache",
-        "body": "**Standardsprache** (Hochdeutsch): formell, vollständige Sätze, sachlich, keine Füllwörter. Für Schule, Bewerbung, Prüfung.\n\n**Umgangssprache**: Alltagswörter, Slang, Füllwörter (*ähm, halt, also*), verkürzte Formen (*hab, machste, Pulli*). Für Freunde und Chats.\n\nUmformen: Füllwörter **streichen**, Slang-Wörter **ersetzen** (*voll* → *sehr*, *krass* → *beeindruckend*, *Bock* → *Lust*), Abkürzungen **ausschreiben** (*hab* → *habe*), höfliche vollständige Sätze bilden.\n\n*Das war ihr ausgeleierter Rollkragenpulli.* → *Das war ihr oft getragener Rollkragenpullover.*"
+        "kind": "terms",
+        "title": "Von der Umgangssprache zur Standardsprache",
+        "body": "Du streichst die Füllwörter, ersetzt die lockeren Wörter und schreibst verkürzte Formen aus. Der Inhalt bleibt gleich.\n\n| Umgangssprache | Standardsprache |\n| --- | --- |\n| voll, mega, total | sehr |\n| krass | beeindruckend, heftig |\n| Bock | Lust |\n| kapieren, checken | verstehen |\n| Klamotten | Kleidung |\n| kaputt machen | beschädigen, zerstören |\n| hab, is, nix | habe, ist, nichts |\n| halt, eben, irgendwie | (streichen) |"
       },
       {
-        "kind": "formula",
+        "kind": "terms",
         "title": "Die vier Fehlerarten",
-        "body": "1. **Rechtschreibfehler** (R): *warscheinlich* → *wahrscheinlich*, *das* statt *dass*.\n2. **Zeichensetzungsfehler** (Z): fehlendes Komma, fehlende Anführungszeichen.\n3. **Grammatikfehler** (G): falscher Fall (*ein Film* → *einen Film*), falsche Verbform (*gefangt* → *gefangen*), *wegen dem* → *wegen des*.\n4. **Ausdrucksfehler** (A): Umgangssprache, Füllwörter, unpassende Wortwahl. *Naturreservate sind **voll** wichtig, aber zu viel Tourismus kann die Natur **halt** auch **kaputt machen**.* → *Naturreservate sind für den Naturschutz von großer Bedeutung, aber übermäßiger Tourismus kann die Natur schädigen.*"
+        "body": "| Zeichen | Fehlerart | Die Frage dazu | Beispiel |\n| --- | --- | --- | --- |\n| R | Rechtschreibung | Ist ein Wort falsch geschrieben? | *warscheinlich, Strasse* |\n| Z | Zeichensetzung | Fehlt ein Satzzeichen, oder ist eins zu viel? | *Ich glaube dass …* |\n| G | Grammatik | Hat ein Wort die falsche Form? | *ein Film sehen, gefangt* |\n| A | Ausdruck | Passt ein Wort nicht in einen sachlichen Text? | *voll gut, halt* |\n\nDie Verwechslung von das und dass zählt als Rechtschreibfehler. *Größer wie* statt *größer als* zählt als Grammatikfehler."
       },
       {
         "kind": "mistake",
         "title": "Typische Fehler",
-        "body": "- Metapher und Vergleich verwechseln: Steht **wie** da, ist es ein Vergleich.\n- Nur **ein** Stilmittel nennen, wenn zwei verlangt sind.\n- Beim Umformen in Standardsprache den **Inhalt** verändern. Nur die Sprache ändert sich.\n- *das/dass* als Grammatikfehler einordnen: Es ist ein **Rechtschreibfehler**."
+        "body": "| Fehler | Besser so |\n| --- | --- |\n| Metapher und Vergleich verwechseln | Steht das Wort wie da, ist es ein Vergleich. |\n| Nur ein Stilmittel nennen, wenn zwei verlangt sind | Alle drei Fragen durchgehen |\n| Beim Umformen den Inhalt verändern | Nur die Sprache ändern |\n| das und dass als Grammatikfehler einordnen | Es ist ein Rechtschreibfehler. |"
       },
       {
         "kind": "remember",
         "title": "Merke",
-        "body": "Stilmittel: **Wiederholung? Bild? Übertreibung/Frage?** Standardsprache: Füllwörter weg, Slang ersetzen, vollständige Sätze. Fehlerarten: **R, Z, G, A**."
+        "body": "- Ein Vergleich hat das Wort wie, eine Metapher hat es nicht.\n- Frag bei jedem Satz: Wiederholung, Bild oder Kunstgriff?\n- Beim Umformen in Standardsprache bleibt der Inhalt derselbe.\n- Jede Fehlerart hat ihre Frage: Schreibung, Zeichen, Form oder Wortwahl."
       }
-    ],
-    "primer": "P_DE_STILMITTEL"
+    ]
   }
 ]

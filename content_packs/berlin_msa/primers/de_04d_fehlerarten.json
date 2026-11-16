@@ -1,0 +1,417 @@
+[
+  {
+    "id": "P_DE_FEHLERARTEN",
+    "subject": "DE",
+    "title": "Fehler erkennen und benennen",
+    "teaser": "Die vier Fehlerarten der Prüfung: Rechtschreibung, Zeichensetzung, Grammatik und Ausdruck. Du lernst, sie mit vier Fragen zu unterscheiden, und kennst danach die Stellen, an denen sie leicht verwechselt werden.",
+    "hook": "In einer Aufgabe der Prüfung bekommst du einen kurzen Text, in dem Fehler markiert sind. Du sollst sie nicht nur verbessern, sondern auch sagen, um welche Art von Fehler es sich handelt. Es gibt nur vier Arten. Wenn du für jede eine einfache Frage kennst, ordnest du jeden Fehler richtig ein.",
+    "outro": "Du kennst jetzt die vier Fehlerarten und die vier Fragen dazu. Ist ein Wort falsch geschrieben, ist es ein Rechtschreibfehler. Fehlt ein Zeichen, ist es ein Zeichensetzungsfehler. Ist die Form eines Wortes falsch, ist es ein Grammatikfehler. Und passt ein Wort nicht in einen sachlichen Text, ist es ein Ausdrucksfehler.",
+    "standard": 2,
+    "requires": [
+      "P_DE_WORTARTEN",
+      "P_DE_SATZGLIEDER",
+      "P_DE_SATZ",
+      "P_DE_KOMMA1",
+      "P_DE_KOMMA2",
+      "P_DE_STRATEGIEN",
+      "P_DE_REGISTER"
+    ],
+    "steps": [
+      {
+        "chapter": "Rechtschreibung und Zeichensetzung",
+        "title": "Die Aufgabe",
+        "body": "Du bekommst einen Text mit markierten Fehlern.\n\nDu sollst jeden Fehler **verbessern**.\n\nUnd du sollst sagen, **welche Art** von Fehler es ist.",
+        "say": "Diese Aufgabe prüft, ob du deine eigenen Texte überarbeiten kannst. Dafür reicht es nicht, einen Fehler zu spüren. Du musst wissen, was genau falsch ist. Erst dann kannst du ihn sicher verbessern und denselben Fehler beim nächsten Mal vermeiden."
+      },
+      {
+        "title": "Die vier Fehlerarten",
+        "body": "**R**: Rechtschreibfehler\n**Z**: Zeichensetzungsfehler\n**G**: Grammatikfehler\n**A**: Ausdrucksfehler",
+        "say": "Lehrerinnen und Lehrer benutzen diese vier Buchstaben am Rand deiner Arbeiten. Wahrscheinlich hast du sie schon oft gesehen. R steht für die Schreibung der Wörter, Z für die Satzzeichen, G für die Formen der Wörter und A für die Wahl der Wörter."
+      },
+      {
+        "title": "R: der Rechtschreibfehler",
+        "body": "*warscheinlich* statt wahrscheinlich\n*Strasse* statt Straße\n*beim essen* statt beim Essen\n\nEin Wort ist **falsch geschrieben**.",
+        "tasks": [
+          {
+            "text": "Wir gehen heute schwimen. Der Fehler ist ein ___.",
+            "choices": [
+              "Rechtschreibfehler",
+              "Grammatikfehler"
+            ],
+            "correct": "Rechtschreibfehler",
+            "why": "Im Wort fehlt ein Buchstabe. Es ist falsch geschrieben.",
+            "hint": "Ist ein einzelnes Wort anders geschrieben als im Wörterbuch?"
+          }
+        ],
+        "say": "Ein Rechtschreibfehler betrifft immer ein einzelnes Wort. Ein Buchstabe fehlt, ist zu viel oder ist falsch. Auch die Groß- und Kleinschreibung gehört dazu. Die Frage lautet: Ist dieses Wort so geschrieben, wie es im Wörterbuch steht?"
+      },
+      {
+        "title": "Z: der Zeichensetzungsfehler",
+        "body": "*Ich glaube dass er kommt.*\nHier fehlt ein Komma.\n\n*Er sagt: Ich komme.*\nHier fehlen die Anführungszeichen.",
+        "tasks": [
+          {
+            "text": "Wir bleiben hier weil es regnet. Der Fehler ist ein ___.",
+            "choices": [
+              "Zeichensetzungsfehler",
+              "Ausdrucksfehler"
+            ],
+            "correct": "Zeichensetzungsfehler",
+            "why": "Vor weil fehlt ein Komma. Alle Wörter sind richtig.",
+            "hint": "Sind alle Wörter richtig geschrieben? Was fehlt zwischen den beiden Teilen?"
+          }
+        ],
+        "say": "Ein Zeichensetzungsfehler betrifft kein Wort, sondern ein Satzzeichen. Ein Komma fehlt, ein Punkt ist vergessen, oder die Anführungszeichen sind nicht da. Die Wörter selbst sind alle richtig. Die Frage lautet: Fehlt ein Zeichen, oder steht eins zu viel?"
+      },
+      {
+        "title": "Jetzt du: R oder Z?",
+        "body": "Tipp bei jedem Satz auf die richtige Fehlerart.",
+        "tasks": [
+          {
+            "text": "Morgen fahren wir nach Hamburg, Köln, und Bonn. Der Fehler ist ein ___.",
+            "choices": [
+              "Zeichensetzungsfehler",
+              "Rechtschreibfehler"
+            ],
+            "correct": "Zeichensetzungsfehler",
+            "why": "Vor und steht in einer Aufzählung kein Komma. Ein Zeichen ist zu viel.",
+            "hint": "Sind alle Wörter richtig geschrieben? Schau auf die Stelle vor und."
+          },
+          {
+            "text": "Das war ein grosser Erfolg. Der Fehler ist ein ___.",
+            "choices": [
+              "Rechtschreibfehler",
+              "Zeichensetzungsfehler"
+            ],
+            "correct": "Rechtschreibfehler",
+            "why": "Nach einem langen Vokal schreibt man ß. Das Wort ist falsch geschrieben.",
+            "hint": "Welches Wort ist anders geschrieben als im Wörterbuch?"
+          },
+          {
+            "text": "„Komm her“ rief sie. Der Fehler ist ein ___.",
+            "choices": [
+              "Zeichensetzungsfehler",
+              "Rechtschreibfehler"
+            ],
+            "correct": "Zeichensetzungsfehler",
+            "why": "Nach dem Anführungszeichen fehlt ein Komma.",
+            "hint": "Was steht zwischen der Rede und dem Begleitsatz?"
+          }
+        ],
+        "say": "Frag dich bei jedem Satz: Ist ein Wort falsch geschrieben, oder fehlt ein Satzzeichen? Schau dir jedes Wort einzeln an und dann die Stellen zwischen den Wörtern."
+      },
+      {
+        "chapter": "Grammatik und Ausdruck",
+        "title": "G: der Grammatikfehler",
+        "body": "*Ich sehe ein Film.* Richtig: einen Film\n*Er hat den Ball gefangt.* Richtig: gefangen\n*Die Kinder spielt.* Richtig: spielen",
+        "say": "Bei einem Grammatikfehler ist das Wort an sich richtig geschrieben. Falsch ist seine Form. Ein steht im Wörterbuch, aber an dieser Stelle muss es einen heißen. Die Frage lautet: Hat das Wort die richtige Form für diese Stelle im Satz?"
+      },
+      {
+        "title": "Drei häufige Grammatikfehler",
+        "body": "(1) Der **Fall** ist falsch: *wegen dem Regen* statt wegen des Regens.\n\n(2) Die **Verbform** ist falsch: *gefangt* statt gefangen.\n\n(3) Subjekt und Verb **passen nicht zusammen**: *Die Kinder spielt.*",
+        "tasks": [
+          {
+            "text": "Meine Freunde kommt morgen. Der Fehler ist ein ___.",
+            "choices": [
+              "Grammatikfehler",
+              "Rechtschreibfehler"
+            ],
+            "correct": "Grammatikfehler",
+            "why": "Das Subjekt steht in der Mehrzahl, das Verb in der Einzahl. Die Form passt nicht.",
+            "hint": "Passen das Subjekt und das Verb zusammen?"
+          }
+        ],
+        "say": "Die meisten Grammatikfehler gehören zu einer dieser drei Gruppen. Beim ersten stimmt der Fall nicht. Beim zweiten ist die Form des Verbs falsch gebildet. Beim dritten steht das Subjekt in der Mehrzahl und das Verb in der Einzahl oder umgekehrt."
+      },
+      {
+        "title": "A: der Ausdrucksfehler",
+        "body": "*Das Buch ist voll gut.*\nRichtig: Das Buch ist sehr gut.\n\nSchreibung und Grammatik stimmen. Aber das Wort **passt nicht** in einen sachlichen Text.",
+        "tasks": [
+          {
+            "text": "Der Roman ist mega spannend. Der Fehler ist ein ___.",
+            "choices": [
+              "Ausdrucksfehler",
+              "Grammatikfehler"
+            ],
+            "correct": "Ausdrucksfehler",
+            "why": "Das Wort mega gehört zur Umgangssprache und passt nicht in einen sachlichen Text.",
+            "hint": "Welches Wort würdest du in einer Zeitung nicht finden?"
+          }
+        ],
+        "say": "Ein Ausdrucksfehler ist am schwersten zu erkennen, weil nichts im engeren Sinn falsch ist. Das Wort ist richtig geschrieben, und der Satz ist richtig gebaut. Trotzdem gehört das Wort nicht hierher. Meistens ist es Umgangssprache oder ein Füllwort."
+      },
+      {
+        "title": "Die Falle: das und dass",
+        "body": "*Ich weiß, das er kommt.*\n\nRichtig: *Ich weiß, **dass** er kommt.*\n\nDas ist ein **Rechtschreibfehler**, kein Grammatikfehler.",
+        "tasks": [
+          {
+            "text": "Sie hofft, das alles gut geht. Der Fehler ist ein ___.",
+            "choices": [
+              "Rechtschreibfehler",
+              "Grammatikfehler"
+            ],
+            "correct": "Rechtschreibfehler",
+            "why": "Die Verwechslung von einem und zwei s zählt zur Rechtschreibung.",
+            "hint": "Wie wird diese Verwechslung in der Prüfung eingeordnet?"
+          }
+        ],
+        "say": "Diese Stelle wird in der Prüfung sehr oft falsch eingeordnet. Viele halten sie für Grammatik, weil es zwei verschiedene Wortarten sind. In der Bewertung zählt sie aber zur Rechtschreibung, denn es geht um die Schreibung mit einem oder zwei s."
+      },
+      {
+        "title": "Die Falle: als und wie",
+        "body": "*Er ist größer wie ich.*\n\nRichtig: *Er ist größer **als** ich.*\n\nDas ist ein **Grammatikfehler**.",
+        "say": "Nach einer Steigerungsform wie größer, schneller oder besser steht als. Das Wort wie steht nur, wenn zwei Dinge gleich sind: so groß wie ich. Beide Wörter sind richtig geschrieben. Falsch ist, dass an dieser Stelle das falsche von beiden steht."
+      },
+      {
+        "title": "Jetzt du: G oder A?",
+        "body": "Tipp bei jedem Satz auf die richtige Fehlerart.",
+        "tasks": [
+          {
+            "text": "Ich habe ein neuen Computer. Der Fehler ist ein ___.",
+            "choices": [
+              "Grammatikfehler",
+              "Ausdrucksfehler"
+            ],
+            "correct": "Grammatikfehler",
+            "why": "Es muss einen heißen. Die Form des Wortes passt nicht zu seiner Stelle im Satz.",
+            "hint": "Wen oder was habe ich? Welche Form muss das Wort dann haben?"
+          },
+          {
+            "text": "Die Umwelt ist halt wichtig. Der Fehler ist ein ___.",
+            "choices": [
+              "Ausdrucksfehler",
+              "Grammatikfehler"
+            ],
+            "correct": "Ausdrucksfehler",
+            "why": "Das Wort halt ist ein Füllwort der Umgangssprache.",
+            "hint": "Welches Wort kannst du streichen, ohne dass sich der Sinn ändert?"
+          },
+          {
+            "text": "Sie hat den Brief geschreibt. Der Fehler ist ein ___.",
+            "choices": [
+              "Grammatikfehler",
+              "Rechtschreibfehler"
+            ],
+            "correct": "Grammatikfehler",
+            "why": "Die Form des Verbs ist falsch gebildet. Richtig heißt es geschrieben.",
+            "hint": "Ist das Wort nur falsch geschrieben, oder ist die Form des Verbs falsch gebildet?"
+          }
+        ],
+        "say": "Frag dich bei jedem Satz: Hat ein Wort die falsche Form, oder passt ein Wort nicht in einen sachlichen Text?"
+      },
+      {
+        "chapter": "Alle vier unterscheiden",
+        "title": "Vier Fragen in fester Reihenfolge",
+        "body": "(1) Ist ein Wort **falsch geschrieben**? Dann R.\n\n(2) **Fehlt** ein Satzzeichen, oder steht eins zu viel? Dann Z.\n\n(3) Hat ein Wort die **falsche Form**? Dann G.\n\n(4) **Passt** ein Wort nicht in einen sachlichen Text? Dann A.",
+        "say": "Geh bei jedem markierten Fehler diese vier Fragen durch. Die Reihenfolge hilft dir, denn sie geht vom Sichtbaren zum Feinen. Zuerst schaust du auf Buchstaben und Zeichen. Danach auf die Form der Wörter. Erst zum Schluss fragst du, ob ein Wort unpassend ist."
+      },
+      {
+        "title": "Ein Satz mit drei Fehlern",
+        "body": "*Naturreservate sind voll wichtig weil sie die Tiere schützt.*\n\n*voll*: Ausdrucksfehler\nkein Komma vor *weil*: Zeichensetzungsfehler\n*schützt* statt schützen: Grammatikfehler",
+        "say": "Ich gehe den Satz für dich durch. Alle Wörter sind richtig geschrieben, es gibt also kein R. Vor weil fehlt ein Komma, das ist Z. Sie meint die Reservate in der Mehrzahl, also muss es schützen heißen, das ist G. Und voll ist Umgangssprache, das ist A."
+      },
+      {
+        "title": "Jetzt du: alle vier gemischt",
+        "body": "Tipp bei jedem Satz auf die richtige Fehlerart.",
+        "tasks": [
+          {
+            "text": "Das Wetter war gestern sehr schön aber kalt. Der Fehler ist ein ___.",
+            "choices": [
+              "Zeichensetzungsfehler",
+              "Grammatikfehler"
+            ],
+            "correct": "Zeichensetzungsfehler",
+            "why": "Vor aber fehlt ein Komma. Alle Wörter sind richtig.",
+            "hint": "Sind alle Wörter richtig geschrieben und richtig geformt? Was fehlt vor aber?"
+          },
+          {
+            "text": "Wegen dem Stau kamen wir zu spät. Der Fehler ist ein ___.",
+            "choices": [
+              "Grammatikfehler",
+              "Ausdrucksfehler"
+            ],
+            "correct": "Grammatikfehler",
+            "why": "Nach wegen steht der Genitiv: wegen des Staus. Der Fall ist falsch.",
+            "hint": "Welcher Fall steht nach dem Wort wegen?"
+          },
+          {
+            "text": "Die Lehrerin erklärte uns die aufgabe. Der Fehler ist ein ___.",
+            "choices": [
+              "Rechtschreibfehler",
+              "Zeichensetzungsfehler"
+            ],
+            "correct": "Rechtschreibfehler",
+            "why": "Aufgabe ist ein Nomen und wird großgeschrieben.",
+            "hint": "Welches Wort ist ein Nomen und beginnt trotzdem mit einem kleinen Buchstaben?"
+          }
+        ],
+        "say": "Jetzt kommen alle vier Arten vor. Geh die vier Fragen der Reihe nach durch. In jedem Satz steckt genau ein Fehler."
+      },
+      {
+        "title": "Jetzt du: verbessern",
+        "body": "Tipp bei jedem Satz auf die richtige Verbesserung.",
+        "tasks": [
+          {
+            "text": "Ich habe kein Bock auf Mathe. Besser: Ich habe keine ___ auf Mathe.",
+            "choices": [
+              "Lust",
+              "Böcke"
+            ],
+            "correct": "Lust",
+            "why": "Bock ist Umgangssprache. Das sachliche Wort bedeutet dasselbe.",
+            "hint": "Welches sachliche Wort bedeutet dasselbe wie das lockere Wort?"
+          },
+          {
+            "text": "Er hat den Zug verpasst weil er verschlafen hat. Das Komma gehört vor ___.",
+            "choices": [
+              "weil",
+              "er"
+            ],
+            "correct": "weil",
+            "why": "Mit weil beginnt der Nebensatz. Davor steht ein Komma.",
+            "hint": "Mit welchem Wort beginnt der zweite Teil des Satzes?"
+          },
+          {
+            "text": "Sie ist schneller wie ihr Bruder. Richtig: Sie ist schneller ___ ihr Bruder.",
+            "choices": [
+              "als",
+              "so wie"
+            ],
+            "correct": "als",
+            "why": "Nach einer Steigerungsform steht dieses Wort.",
+            "hint": "Welches Wort steht nach größer, schneller und besser?"
+          }
+        ],
+        "say": "Jetzt verbesserst du die Fehler. Überleg zuerst, welche Art von Fehler es ist. Dann weißt du auch, was du ändern musst."
+      },
+      {
+        "title": "Das nimmst du mit",
+        "body": "**R**: Ein Wort ist falsch geschrieben.\n**Z**: Ein Satzzeichen fehlt oder ist zu viel.\n**G**: Ein Wort hat die falsche Form.\n**A**: Ein Wort passt nicht in einen sachlichen Text.",
+        "tasks": [
+          {
+            "text": "das statt dass zu schreiben ist ein ___.",
+            "choices": [
+              "Rechtschreibfehler",
+              "Grammatikfehler"
+            ],
+            "correct": "Rechtschreibfehler",
+            "why": "Die Verwechslung von einem und zwei s zählt zur Rechtschreibung.",
+            "hint": "Wie wurde diese Verwechslung auf der Tafel mit der Falle eingeordnet?"
+          }
+        ],
+        "say": "Das sind die vier Fehlerarten mit ihren Fragen. Benutze sie auch für deine eigenen Texte. Lies deinen Aufsatz am Ende viermal durch, jedes Mal mit einer der vier Fragen im Kopf. Gleich kommen die Wörter und das Quiz."
+      }
+    ],
+    "vocab": [
+      {
+        "term": "Rechtschreibfehler",
+        "plain": "Ein Wort ist falsch geschrieben. Auch groß und klein sowie das und dass gehören dazu.",
+        "example": "warscheinlich, Strasse"
+      },
+      {
+        "term": "Zeichensetzungsfehler",
+        "plain": "Ein Satzzeichen fehlt oder steht zu viel da.",
+        "example": "Ich glaube dass er kommt."
+      },
+      {
+        "term": "Grammatikfehler",
+        "plain": "Ein Wort hat die falsche Form: falscher Fall, falsche Verbform, oder Subjekt und Verb passen nicht.",
+        "example": "ein Film, gefangt, die Kinder spielt"
+      },
+      {
+        "term": "Ausdrucksfehler",
+        "plain": "Ein Wort passt nicht in einen sachlichen Text, zum Beispiel Umgangssprache oder ein Füllwort.",
+        "example": "voll gut, halt"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Er hat den Hund gefüttern. Welche Fehlerart ist das?",
+        "choices": [
+          "Grammatikfehler",
+          "Rechtschreibfehler",
+          "Zeichensetzungsfehler",
+          "Ausdrucksfehler"
+        ],
+        "correct": "Grammatikfehler",
+        "explain": "Die Form des Verbs ist falsch gebildet. Richtig heißt es gefüttert."
+      },
+      {
+        "prompt": "Wir essen Brot Käse und Tomaten. Welche Fehlerart ist das?",
+        "choices": [
+          "Zeichensetzungsfehler",
+          "Rechtschreibfehler",
+          "Grammatikfehler",
+          "Ausdrucksfehler"
+        ],
+        "correct": "Zeichensetzungsfehler",
+        "explain": "Zwischen Brot und Käse fehlt das Komma der Aufzählung. Alle Wörter sind richtig."
+      },
+      {
+        "prompt": "Das Konzert war voll cool. Welche Fehlerart ist das?",
+        "choices": [
+          "Ausdrucksfehler",
+          "Rechtschreibfehler",
+          "Grammatikfehler",
+          "Zeichensetzungsfehler"
+        ],
+        "correct": "Ausdrucksfehler",
+        "explain": "Voll und cool gehören zur Umgangssprache. In einem sachlichen Text passen sie nicht."
+      },
+      {
+        "prompt": "Ich glaube, das er recht hat. Welche Fehlerart ist das?",
+        "choices": [
+          "Rechtschreibfehler",
+          "Grammatikfehler",
+          "Zeichensetzungsfehler",
+          "Ausdrucksfehler"
+        ],
+        "correct": "Rechtschreibfehler",
+        "explain": "Es muss dass heißen. Die Verwechslung von einem und zwei s zählt zur Rechtschreibung."
+      },
+      {
+        "prompt": "Mein Bruder ist älter wie ich. Welche Fehlerart ist das?",
+        "choices": [
+          "Grammatikfehler",
+          "Ausdrucksfehler",
+          "Rechtschreibfehler",
+          "Zeichensetzungsfehler"
+        ],
+        "correct": "Grammatikfehler",
+        "explain": "Nach einer Steigerungsform steht als. Beide Wörter sind richtig geschrieben, aber hier steht das falsche."
+      },
+      {
+        "prompt": "Mit welcher Frage findest du einen Ausdrucksfehler?",
+        "choices": [
+          "Passt das Wort in einen sachlichen Text?",
+          "Ist das Wort richtig geschrieben?",
+          "Fehlt ein Komma?",
+          "Steht das Verb am Ende?"
+        ],
+        "correct": "Passt das Wort in einen sachlichen Text?",
+        "explain": "Beim Ausdruck geht es um die Wahl der Wörter. Umgangssprache und Füllwörter passen nicht."
+      },
+      {
+        "prompt": "Die schüler lernen für die Prüfung. Welche Fehlerart ist das?",
+        "choices": [
+          "Rechtschreibfehler",
+          "Grammatikfehler",
+          "Ausdrucksfehler",
+          "Zeichensetzungsfehler"
+        ],
+        "correct": "Rechtschreibfehler",
+        "explain": "Schüler ist ein Nomen und muss großgeschrieben werden. Groß und klein gehört zur Rechtschreibung."
+      },
+      {
+        "prompt": "Wegen den Hausaufgaben hatte ich keine Zeit. Welche Fehlerart ist das?",
+        "choices": [
+          "Grammatikfehler",
+          "Rechtschreibfehler",
+          "Ausdrucksfehler",
+          "Zeichensetzungsfehler"
+        ],
+        "correct": "Grammatikfehler",
+        "explain": "Nach wegen steht der Genitiv: wegen der Hausaufgaben. Der Fall ist falsch."
+      }
+    ]
+  }
+]
