@@ -1,0 +1,359 @@
+[
+  {
+    "id": "P_DE_ARGUMENT",
+    "subject": "DE",
+    "title": "Argumente erkennen",
+    "teaser": "Wie ein Text aufgebaut ist, der überzeugen will: These, Argument und Beispiel. Du lernst, die drei auseinanderzuhalten, Argumente der Pro- und der Kontra-Seite zuzuordnen und die Meinung des Autors zu finden.",
+    "hook": "Viele Texte in der Prüfung wollen dich von etwas überzeugen. Sie behaupten etwas, begründen es und zeigen es an einem Fall. In den Aufgaben sollst du diese Teile wiederfinden und ordnen. Das ist wie bei einem Haus: Wenn du weißt, wo das Fundament, die Wände und das Dach sind, verstehst du den ganzen Bau.",
+    "outro": "Du kannst jetzt die drei Bausteine eines überzeugenden Textes unterscheiden. Die These ist der Standpunkt. Das Argument sagt, warum er stimmen soll. Das Beispiel zeigt es an einem Fall. Du erkennst außerdem, auf welcher Seite ein Argument steht und wo der Autor seine eigene Meinung sagt.",
+    "standard": 2,
+    "requires": [
+      "P_DE_LESEN"
+    ],
+    "steps": [
+      {
+        "chapter": "Die drei Bausteine",
+        "title": "Jemand will dich überzeugen",
+        "body": "*Schulkleidung ist eine gute Idee.*\n\nSo beginnt ein Kommentar in einer Schülerzeitung.\n\nStimmt das? Das weißt du noch nicht.",
+        "say": "Der Satz ist eine Behauptung. Jemand sagt, wie er eine Sache sieht. Ob du ihm glaubst, hängt davon ab, was danach kommt. Ein guter Text lässt eine Behauptung nicht allein stehen. Er begründet sie, und er zeigt sie an einem Fall."
+      },
+      {
+        "title": "Die These",
+        "body": "*Schulkleidung ist eine gute Idee.*\n\nEine Behauptung, die man begründen muss, heißt **These**.",
+        "say": "Eine These ist ein Standpunkt. Sie ist noch kein Beweis. Man kann ihr zustimmen oder widersprechen. Du erkennst sie daran, dass sie eine Wertung enthält: gut, schlecht, sinnvoll, gefährlich, notwendig. Meistens steht sie am Anfang des Textes."
+      },
+      {
+        "title": "Das Argument",
+        "body": "*Schulkleidung ist eine gute Idee, **weil** niemand mehr mit teurer Kleidung angeben muss.*\n\nEin Satz, der sagt, **warum** die These stimmt, heißt **Argument**.",
+        "tasks": [
+          {
+            "text": "Welcher Satz ist ein Argument für Schulkleidung? ___",
+            "choices": [
+              "Familien sparen Geld, denn teure Markenkleidung wird unnötig.",
+              "Schulkleidung ist eine tolle Sache."
+            ],
+            "correct": "Familien sparen Geld, denn teure Markenkleidung wird unnötig.",
+            "why": "Der Satz nennt einen Grund. Der andere wiederholt nur die Behauptung.",
+            "hint": "Welcher der beiden Sätze antwortet auf die Frage warum?"
+          }
+        ],
+        "say": "Das Argument liefert den Grund. Es antwortet auf die Frage warum. Du erkennst es oft an kleinen Wörtern wie weil, denn, da und deshalb. Wenn du in einem Text nach Argumenten suchst, such nach diesen Wörtern und nach der Antwort auf warum."
+      },
+      {
+        "title": "Das Beispiel",
+        "body": "*An einer Hamburger Schule fühlten sich danach weniger Kinder ausgegrenzt.*\n\nEin **Beispiel** zeigt das Argument an einem bestimmten Fall.",
+        "say": "Das Beispiel macht ein Argument anschaulich. Es nennt einen Ort, eine Person, eine Zahl oder eine Untersuchung. Du kannst es dir vorstellen. Typische Signale sind zum Beispiel, etwa, so zeigt eine Studie. Ein Beispiel beweist das Argument, aber es ist nicht das Argument selbst."
+      },
+      {
+        "title": "Die Kette",
+        "body": "**These**: Schulkleidung ist gut.\n**Argument**: Der Druck durch Markenkleidung fällt weg.\n**Beispiel**: In Hamburg fühlten sich weniger Kinder ausgegrenzt.",
+        "tasks": [
+          {
+            "text": "Eine Zahl aus einer Umfrage ist in einem Text meistens ___.",
+            "choices": [
+              "ein Beispiel",
+              "eine These"
+            ],
+            "correct": "ein Beispiel",
+            "why": "Eine Zahl zeigt etwas an einem bestimmten Fall. Sie ist kein Standpunkt.",
+            "hint": "Ist eine Zahl ein Standpunkt, oder zeigt sie etwas an einem Fall?"
+          }
+        ],
+        "say": "Die drei gehören zusammen wie Glieder einer Kette. Zuerst kommt der Standpunkt. Darauf folgt die Frage warum, und das Argument antwortet. Darauf folgt die Bitte zeig es mir, und das Beispiel antwortet. Merk dir diese Reihenfolge."
+      },
+      {
+        "title": "Jetzt du: These, Argument oder Beispiel?",
+        "body": "Das Thema ist: Handys in der Schule. Tipp bei jedem Satz auf den richtigen Baustein.",
+        "tasks": [
+          {
+            "text": "Handys sollten im Unterricht verboten sein. Das ist ___.",
+            "choices": [
+              "eine These",
+              "ein Beispiel"
+            ],
+            "correct": "eine These",
+            "why": "Der Satz ist ein Standpunkt, dem man zustimmen oder widersprechen kann.",
+            "hint": "Enthält der Satz eine Forderung oder Wertung?"
+          },
+          {
+            "text": "Denn sie lenken vom Lernen ab. Das ist ___.",
+            "choices": [
+              "ein Argument",
+              "eine These"
+            ],
+            "correct": "ein Argument",
+            "why": "Der Satz nennt den Grund und beginnt mit denn.",
+            "hint": "Mit welchem Wort beginnt der Satz? Worauf antwortet er?"
+          },
+          {
+            "text": "An einer Schule in Bremen stiegen die Noten nach dem Verbot. Das ist ___.",
+            "choices": [
+              "ein Beispiel",
+              "ein Argument"
+            ],
+            "correct": "ein Beispiel",
+            "why": "Der Satz nennt einen bestimmten Ort und ein bestimmtes Ergebnis.",
+            "hint": "Nennt der Satz einen bestimmten Ort oder Fall?"
+          }
+        ],
+        "say": "Frag dich bei jedem Satz: Ist es ein Standpunkt mit einer Wertung? Nennt er einen Grund? Oder zeigt er etwas an einem bestimmten Fall?"
+      },
+      {
+        "chapter": "Dafür und dagegen",
+        "title": "Zwei Seiten: Pro und Kontra",
+        "body": "**Pro**: Argumente, die für die These sprechen.\n**Kontra**: Argumente, die gegen die These sprechen.",
+        "say": "Die meisten Texte in der Prüfung zeigen beide Seiten eines Themas. Pro bedeutet dafür, Kontra bedeutet dagegen. Eine häufige Aufgabe lautet: Ordnen Sie die Argumente der richtigen Seite zu. Dafür musst du bei jedem Argument erkennen, in welche Richtung es zeigt."
+      },
+      {
+        "title": "Wörter, die die Gegenseite ankündigen",
+        "body": "*allerdings, jedoch, andererseits, dagegen spricht, Kritiker meinen*\n\nNach diesen Wörtern wechselt der Text die Seite.",
+        "tasks": [
+          {
+            "text": "Allerdings kostet Schulkleidung die Eltern Geld. Das ist ein Argument ___ Schulkleidung.",
+            "choices": [
+              "gegen",
+              "für"
+            ],
+            "correct": "gegen",
+            "why": "Das Wort allerdings kündigt die Gegenseite an, und Kosten sind ein Nachteil.",
+            "hint": "Welches Wort steht am Satzanfang? Ist Geld ausgeben ein Vorteil oder ein Nachteil?"
+          }
+        ],
+        "say": "Ein Text springt nicht ohne Vorwarnung von Pro zu Kontra. Er kündigt den Wechsel an. Wenn du eines dieser Wörter liest, weißt du: Jetzt kommt die andere Seite. Unterstreiche diese Stellen. Sie teilen den Text in seine beiden Hälften."
+      },
+      {
+        "title": "So ordnest du ein Argument zu",
+        "body": "Frag dich: Würde das jemand sagen, der **dafür** ist?\n\nOder würde das jemand sagen, der **dagegen** ist?",
+        "say": "Stell dir zwei Menschen vor, die über das Thema streiten. Der eine ist dafür, die andere ist dagegen. Lies das Argument und überleg, wem von beiden du es in den Mund legen würdest. So findest du die richtige Seite, auch wenn keines der ankündigenden Wörter dasteht."
+      },
+      {
+        "title": "Die Meinung des Autors",
+        "body": "*Ich finde …, Meiner Meinung nach …, Deshalb sollte …*\n\nSie steht meistens am **Ende** des Textes.",
+        "tasks": [
+          {
+            "text": "Kritiker sagen, Schulkleidung sei teuer. Ist das die Meinung des Autors? ___",
+            "choices": [
+              "Nein, er gibt nur wieder, was andere sagen.",
+              "Ja, denn es steht im Text."
+            ],
+            "correct": "Nein, er gibt nur wieder, was andere sagen.",
+            "why": "Der Autor berichtet, was Kritiker sagen. Seine eigene Meinung ist das nicht unbedingt.",
+            "hint": "Wer sagt das laut dem Satz: der Autor selbst oder jemand anders?"
+          }
+        ],
+        "say": "Ein Autor zeigt oft erst beide Seiten und sagt zum Schluss, was er selbst denkt. Du erkennst seine Meinung an Wörtern wie ich finde oder meiner Meinung nach. Pass auf: Nicht jedes Argument im Text ist die Meinung des Autors. Manchmal gibt er nur wieder, was andere sagen."
+      },
+      {
+        "title": "Jetzt du: Pro oder Kontra?",
+        "body": "Die These lautet: Die Schule sollte später beginnen. Tipp bei jedem Argument auf die richtige Seite.",
+        "tasks": [
+          {
+            "text": "Jugendliche sind morgens noch nicht richtig wach. Das ist ___.",
+            "choices": [
+              "Pro",
+              "Kontra"
+            ],
+            "correct": "Pro",
+            "why": "Wer morgens müde ist, lernt schlecht. Das spricht für einen späteren Beginn.",
+            "hint": "Würde das jemand sagen, der für den späteren Beginn ist?"
+          },
+          {
+            "text": "Dann endet der Unterricht erst am späten Nachmittag. Das ist ___.",
+            "choices": [
+              "Kontra",
+              "Pro"
+            ],
+            "correct": "Kontra",
+            "why": "Ein später Schulschluss ist ein Nachteil. Das spricht dagegen.",
+            "hint": "Ist ein späterer Schulschluss ein Vorteil oder ein Nachteil?"
+          },
+          {
+            "text": "Ausgeschlafene Schüler haben bessere Noten. Das ist ___.",
+            "choices": [
+              "Pro",
+              "Kontra"
+            ],
+            "correct": "Pro",
+            "why": "Bessere Noten sind ein Vorteil des späteren Beginns.",
+            "hint": "Sind bessere Noten ein Vorteil oder ein Nachteil?"
+          }
+        ],
+        "say": "Stell dir bei jedem Satz die beiden Menschen vor, die streiten. Wem würdest du den Satz in den Mund legen?"
+      },
+      {
+        "chapter": "Vollständige und unvollständige Argumente",
+        "title": "Eine Behauptung ist noch kein Argument",
+        "body": "*Handys stören einfach.*\n\nHier fehlt der Grund, und es fehlt ein Fall.\n\nDas ist nur eine **Behauptung**.",
+        "say": "Viele Sätze klingen wie ein Argument, sind aber keins. Wenn jemand nur sagt, dass etwas stört, hat er noch nichts begründet. Du erkennst das mit der Frage warum. Wenn der Satz darauf keine Antwort gibt, ist er nur eine Behauptung."
+      },
+      {
+        "title": "Ein vollständiges Argument",
+        "body": "*Handys stören den Unterricht, **weil** jede Nachricht die Aufmerksamkeit unterbricht. **So** brauchen Schüler nach einer Nachricht mehrere Minuten, um sich wieder zu konzentrieren.*",
+        "tasks": [
+          {
+            "text": "Hausaufgaben sind sinnlos. Mehr steht nicht da. Das ist ___.",
+            "choices": [
+              "nur eine Behauptung",
+              "ein vollständiges Argument"
+            ],
+            "correct": "nur eine Behauptung",
+            "why": "Es fehlt der Grund, und es fehlt ein Beispiel.",
+            "hint": "Antwortet der Satz auf die Frage warum?"
+          }
+        ],
+        "say": "Hier ist alles da. Zuerst kommt die Behauptung. Nach weil folgt der Grund. Und nach so folgt ein Fall, der den Grund anschaulich macht. In der Prüfung wirst du manchmal gefragt, welcher Teil in einem Argument fehlt. Dann gehst du die drei Teile durch."
+      },
+      {
+        "title": "Jetzt du: Was fehlt?",
+        "body": "Tipp bei jeder Aufgabe auf die richtige Lösung.",
+        "tasks": [
+          {
+            "text": "Sport ist wichtig, weil er gesund hält. Hier fehlt noch ___.",
+            "choices": [
+              "ein Beispiel",
+              "der Grund"
+            ],
+            "correct": "ein Beispiel",
+            "why": "Die Behauptung und der Grund sind da. Ein bestimmter Fall fehlt.",
+            "hint": "Welcher der drei Teile kommt nach weil? Was fehlt danach noch?"
+          },
+          {
+            "text": "Viele Kinder essen morgens nichts. In einer Umfrage waren es vier von zehn. Der zweite Satz ist ___.",
+            "choices": [
+              "ein Beispiel",
+              "eine These"
+            ],
+            "correct": "ein Beispiel",
+            "why": "Der Satz nennt eine Zahl aus einer Umfrage.",
+            "hint": "Nennt der zweite Satz eine Zahl oder einen Standpunkt?"
+          }
+        ],
+        "say": "Geh bei jedem kleinen Text die drei Teile durch: Behauptung, Grund und Beispiel. Welcher ist da, und welcher fehlt?"
+      },
+      {
+        "title": "Das nimmst du mit",
+        "body": "**These**: der Standpunkt\n**Argument**: der Grund. Signale: weil, denn, da\n**Beispiel**: ein bestimmter Fall, eine Zahl, eine Studie\n\nWechsel zur Gegenseite: allerdings, jedoch, andererseits",
+        "tasks": [
+          {
+            "text": "Welches Wort kündigt die Gegenseite an? ___",
+            "choices": [
+              "allerdings",
+              "denn"
+            ],
+            "correct": "allerdings",
+            "why": "Nach diesem Wort wechselt ein Text meistens von Pro zu Kontra.",
+            "hint": "Welches der beiden Wörter nennt einen Grund, und welches leitet einen Einwand ein?"
+          }
+        ],
+        "say": "Das sind die Bausteine und ihre Erkennungszeichen. Wenn du einen Text liest, der überzeugen will, such zuerst die These. Frag dann warum und danach zeig es mir. Gleich kommen noch die Wörter zum Nachlesen und ein kleines Quiz."
+      }
+    ],
+    "vocab": [
+      {
+        "term": "These",
+        "plain": "Ein Standpunkt, den man begründen muss.",
+        "example": "Schulkleidung ist eine gute Idee."
+      },
+      {
+        "term": "Argument",
+        "plain": "Der Grund, warum eine These stimmen soll. Oft mit weil, denn oder da.",
+        "example": "… weil niemand mehr mit teurer Kleidung angeben muss."
+      },
+      {
+        "term": "Beispiel",
+        "plain": "Ein bestimmter Fall, der ein Argument anschaulich macht: ein Ort, eine Zahl, eine Studie."
+      },
+      {
+        "term": "Pro und Kontra",
+        "plain": "Dafür und dagegen."
+      },
+      {
+        "term": "allerdings, jedoch, andererseits",
+        "plain": "Wörter, die den Wechsel zur Gegenseite ankündigen."
+      },
+      {
+        "term": "Behauptung",
+        "plain": "Ein Satz ohne Grund und ohne Beispiel."
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Was ist eine These?",
+        "choices": [
+          "ein Standpunkt, den man begründen muss",
+          "eine Zahl aus einer Umfrage",
+          "ein Zitat",
+          "eine Überschrift"
+        ],
+        "correct": "ein Standpunkt, den man begründen muss",
+        "explain": "Eine These ist eine Behauptung mit einer Wertung. Sie braucht Argumente, damit man ihr glaubt."
+      },
+      {
+        "prompt": "Welcher Satz ist ein Argument?",
+        "choices": [
+          "Lesen ist wichtig, weil es den Wortschatz erweitert.",
+          "Lesen ist wichtig.",
+          "In unserer Klasse lesen 12 Kinder täglich.",
+          "Ich lese gern."
+        ],
+        "correct": "Lesen ist wichtig, weil es den Wortschatz erweitert.",
+        "explain": "Der Satz nennt einen Grund und antwortet auf die Frage warum."
+      },
+      {
+        "prompt": "Welcher Satz ist ein Beispiel?",
+        "choices": [
+          "In einer Studie lasen Kinder mit Bücherregal zu Hause doppelt so viel.",
+          "Lesen bildet.",
+          "Bücher sind besser als Filme.",
+          "Man sollte mehr lesen."
+        ],
+        "correct": "In einer Studie lasen Kinder mit Bücherregal zu Hause doppelt so viel.",
+        "explain": "Der Satz nennt eine Untersuchung und ein bestimmtes Ergebnis. Das ist ein Fall, der etwas zeigt."
+      },
+      {
+        "prompt": "Jedoch fehlt vielen Familien das Geld für Bücher. Auf welcher Seite steht das, wenn die These lautet: Alle Kinder sollten viel lesen?",
+        "choices": [
+          "Kontra",
+          "Pro",
+          "auf keiner Seite",
+          "auf beiden Seiten"
+        ],
+        "correct": "Kontra",
+        "explain": "Jedoch kündigt einen Einwand an, und fehlendes Geld ist ein Hindernis."
+      },
+      {
+        "prompt": "Woran erkennst du die Meinung des Autors?",
+        "choices": [
+          "an Wendungen wie ich finde oder meiner Meinung nach",
+          "an den Zeilennummern",
+          "an Zahlen",
+          "an Anführungszeichen"
+        ],
+        "correct": "an Wendungen wie ich finde oder meiner Meinung nach",
+        "explain": "Der Autor zeigt seine Meinung mit solchen Wendungen, meistens am Ende des Textes."
+      },
+      {
+        "prompt": "Welches Wort leitet meistens ein Argument ein?",
+        "choices": [
+          "weil",
+          "allerdings",
+          "zum Beispiel",
+          "jedoch"
+        ],
+        "correct": "weil",
+        "explain": "Weil nennt einen Grund. Allerdings und jedoch kündigen die Gegenseite an."
+      },
+      {
+        "prompt": "Schule ist langweilig. Was ist das?",
+        "choices": [
+          "nur eine Behauptung",
+          "ein vollständiges Argument",
+          "ein Beispiel",
+          "ein Beleg"
+        ],
+        "correct": "nur eine Behauptung",
+        "explain": "Der Satz nennt keinen Grund und keinen Fall. Er antwortet nicht auf die Frage warum."
+      }
+    ]
+  }
+]

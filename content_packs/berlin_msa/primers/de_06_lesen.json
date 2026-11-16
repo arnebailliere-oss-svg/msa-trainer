@@ -2,99 +2,430 @@
   {
     "id": "P_DE_LESEN",
     "subject": "DE",
-    "title": "Einen Text richtig lesen",
-    "teaser": "Was ein Sachtext ist, wie du Kernaussage, These, Argument und Beispiel auseinanderhältst, wie du richtig zitierst und in zwei Sätzen zusammenfasst",
-    "hook": "Die Leseaufgaben sehen nach viel Text aus. Aber es sind immer dieselben Handgriffe: Frage lesen, Stelle finden, genau hinschauen. Wer die Wörter kennt, mit denen die Aufgaben gestellt werden, hat den größten Teil schon geschafft.",
-    "outro": "Kernaussage, These, Argument, Beispiel, Beleg, Zusammenfassung. Und die Routine: Frage lesen, Schlüsselwörter, Absatz suchen. Damit kannst du jetzt die Lektion und jede Leseaufgabe angehen.",
+    "title": "Einen Sachtext richtig lesen",
+    "teaser": "Wie du an eine Leseaufgabe herangehst: erst die Frage, dann die Stelle im Text, dann genau vergleichen. Dazu die Kernaussage, die Aufgabe richtig, falsch oder steht nicht im Text, und das richtige Zitieren mit Zeilenangabe.",
+    "hook": "Die Leseaufgaben sehen nach viel Text aus, und viele fangen an zu lesen und hoffen, dass etwas hängen bleibt. Das ist anstrengend und unsicher. Es geht viel leichter, wenn du weißt, wonach du suchst. Dann liest du nicht mehr alles gleich genau, sondern findest gezielt die Stelle, die du brauchst.",
+    "outro": "Du hast jetzt eine feste Vorgehensweise für Leseaufgaben. Du liest zuerst die Frage, suchst die Stelle im Text und vergleichst genau. Du kannst die Kernaussage von Einzelheiten unterscheiden. Du weißt, was der Unterschied zwischen falsch und steht nicht im Text ist. Und du kannst eine Textstelle richtig zitieren.",
+    "standard": 2,
     "steps": [
       {
-        "title": "Was ist ein Sachtext?",
-        "body": "Ein Text über eine **Sache** aus der Wirklichkeit.\n\nZeitungsartikel, Bericht, Kommentar, Lexikoneintrag.\n\nEr will **informieren** oder **überzeugen**. Keine erfundene Geschichte.",
-        "say": "Ein Sachtext erzählt dir keine Geschichte. Er will dir etwas erklären oder dich von etwas überzeugen. Das ist der ganze Unterschied zum Roman."
+        "chapter": "Erst die Frage, dann der Text",
+        "title": "Texte über die Wirklichkeit",
+        "body": "Zeitungsartikel, Berichte und Kommentare\n\nEin Text, der über etwas Wirkliches informiert, heißt **Sachtext**.",
+        "say": "In der Prüfung bekommst du meistens einen Sachtext. Das ist ein Text über ein Thema aus der Wirklichkeit, zum Beispiel über Schule, Umwelt oder Medien. Er erzählt keine erfundene Geschichte. Er will dir etwas erklären oder dich von etwas überzeugen."
       },
       {
-        "title": "Kernaussage oder Detail?",
-        "body": "**Kernaussage**: das, was der Text **insgesamt** sagen will. Ein Satz.\n\n**Detail**: eine Zahl, ein Name, ein Beispiel.\n\n*Kernaussage: Jugendliche lernen besser, wenn die Schule später beginnt.*\n\n*Detail: Eine Schule in Niedersachsen startet um 8:50 Uhr.*",
-        "say": "Stell dir vor, du dürftest nur einen Satz behalten. Welcher wäre es? Das ist die Kernaussage. Alles andere sind Details."
+        "title": "Drei Schritte für jede Frage",
+        "body": "(1) Die **Frage** lesen.\n\n(2) Die **Stelle** im Text suchen.\n\n(3) Genau **vergleichen**.",
+        "say": "Diese drei Schritte sind das Wichtigste der ganzen Lektion. Du gehst sie bei jeder einzelnen Frage durch. Du beginnst nie mit dem Text, sondern immer mit der Frage. Sie sagt dir, wonach du suchen sollst."
       },
       {
-        "title": "Wo steckt die Kernaussage?",
-        "body": "Meist am **Anfang** oder am **Ende**.\n\nSignale: *Deshalb …*, *Insgesamt …*, *Ich finde …*, *Klar ist: …*\n\nUnd: die **Überschrift** lesen. Sie verrät viel.",
-        "say": "Der Anfang stellt die Frage, das Ende gibt die Antwort. Schau zuerst dort nach, bevor du den ganzen Text durchsuchst."
+        "title": "Die Frage genau lesen",
+        "body": "Frage: *Welche Hürde nennen Jugendliche am häufigsten?*\n\nWichtige Wörter: **Hürde** und **am häufigsten**",
+        "tasks": [
+          {
+            "text": "Was liest du bei einer Leseaufgabe zuerst? ___",
+            "choices": [
+              "die Frage",
+              "den ganzen Text, zweimal"
+            ],
+            "correct": "die Frage",
+            "why": "Die Frage sagt dir, wonach du im Text suchen sollst.",
+            "hint": "Woher weißt du, welche Stelle im Text wichtig ist?"
+          }
+        ],
+        "say": "Unterstreiche in der Frage die Wörter, die wirklich etwas bedeuten. Hier sind es Hürde und am häufigsten. Eine Hürde ist ein Hindernis. Am häufigsten sagt dir, dass nicht irgendein Hindernis gesucht ist, sondern das, das am meisten genannt wird."
       },
       {
-        "title": "Die These",
-        "body": "Eine **These** ist eine Behauptung, die man **begründen** muss.\n\n*Schulkleidung ist eine gute Idee.*\n\nNoch ohne Beweis. Nur ein Standpunkt.",
-        "say": "Eine These ist ein Standpunkt, kein Beweis. Darum braucht sie Argumente. Sonst ist es nur eine Meinung."
+        "title": "Die Stelle finden",
+        "body": "Im Text steht: *Es gibt allerdings auch Hürden. Am häufigsten nennen Jugendliche Zeitmangel.*\n\nDie Wörter aus der Frage stehen fast genauso im Text.",
+        "tasks": [
+          {
+            "text": "Die Antwort auf die Frage lautet: ___",
+            "choices": [
+              "Zeitmangel",
+              "Geldmangel"
+            ],
+            "correct": "Zeitmangel",
+            "why": "Dieses Wort steht im Text direkt nach am häufigsten nennen Jugendliche.",
+            "hint": "Welches Wort folgt im Text auf am häufigsten nennen Jugendliche?"
+          }
+        ],
+        "say": "Jetzt lässt du die Augen über den Text wandern und suchst nur die unterstrichenen Wörter. Du musst dabei nicht jeden Satz verstehen. Sobald du die Stelle gefunden hast, liest du sie langsam und genau. Meistens steht die Antwort direkt daneben."
       },
       {
-        "title": "Das Argument",
-        "body": "Ein **Argument** sagt, **warum** die These stimmt.\n\n*Schulkleidung ist eine gute Idee, **weil** niemand mehr mit teurer Markenkleidung angeben muss.*\n\nSignale: *weil, denn, da, deshalb*",
-        "say": "Such nach dem Warum. Steht ein weil oder ein denn im Satz, hast du meistens ein Argument in der Hand."
+        "title": "Zeilen und Absätze",
+        "body": "Am Rand des Textes stehen **Zeilennummern**.\n\nEin Abschnitt zwischen zwei Lücken heißt **Absatz**.\n\nSo kannst du genau sagen, wo etwas steht: *(Z. 12)*",
+        "say": "Prüfungstexte haben am Rand kleine Zahlen. Sie zählen die Zeilen. Mit ihnen kannst du eine Stelle genau angeben, zum Beispiel Zeile zwölf. Die Fragen folgen fast immer der Reihenfolge des Textes. Die Antwort auf die erste Frage steht also meistens weit oben."
       },
       {
-        "title": "Das Beispiel",
-        "body": "Ein **Beispiel** zeigt das Argument an einem **konkreten Fall**.\n\n*An einer Hamburger Schule fühlten sich nach der Einführung weniger Schüler ausgegrenzt.*\n\nSignale: *zum Beispiel, etwa, so zeigt, eine Studie, eine Zahl, ein Name*",
-        "say": "Ein Beispiel kann man sich vorstellen: eine Schule, eine Person, eine Zahl. Es beweist das Argument. Aber es ist nicht das Argument selbst."
+        "chapter": "Kernaussage und Absicht",
+        "title": "Kernaussage oder Einzelheit?",
+        "body": "**Kernaussage**: Jugendliche lernen besser, wenn die Schule später beginnt.\n**Einzelheit**: Eine Schule in Niedersachsen beginnt um 8:50 Uhr.",
+        "say": "Die Kernaussage ist das, was der Text insgesamt sagen will. Sie passt zum ganzen Text. Eine Einzelheit ist eine Zahl, ein Name oder ein Beispiel. Sie passt nur zu einer Stelle. In der Prüfung wird oft nach der Kernaussage gefragt, und unter den Antworten stehen viele Einzelheiten."
       },
       {
-        "title": "Alle drei auf einen Blick",
-        "body": "**These**: Schulkleidung ist gut.\n\n**Argument**: … weil der Druck durch Markenkleidung wegfällt.\n\n**Beispiel**: In Hamburg fühlten sich danach weniger Schüler ausgegrenzt.\n\nThese → Warum? → Zeig es mir!",
-        "say": "Merk dir die Kette: These, Warum, Zeig es mir. Wenn du die drei auseinanderhalten kannst, ist die halbe Leseaufgabe geschafft."
+        "title": "Die Probe mit dem einen Satz",
+        "body": "Stell dir vor, du dürftest nur **einen Satz** behalten.\n\nWelcher würde den ganzen Text am besten zusammenfassen?",
+        "say": "Mit dieser Frage findest du die Kernaussage. Geh die Antworten durch und frag dich bei jeder: Fasst dieser Satz den ganzen Text zusammen, oder gilt er nur für einen Absatz? Wenn er nur für eine Stelle gilt, ist er eine Einzelheit und nicht die Kernaussage."
       },
       {
-        "title": "Was ist ein Beleg?",
-        "body": "Ein **Beleg** ist die Stelle im Text, die **beweist**, dass eine Aussage stimmt.\n\nAussage: *Die Mehrheit findet die Regel gut.*\n\nBeleg: *„62 Prozent finden die Regel gut“ (Z. 5)*",
-        "say": "Belegen heißt: Zeig mir, wo es steht. Nicht ungefähr, sondern genau. Mit Zeile."
+        "title": "Wo die Kernaussage oft steht",
+        "body": "In der **Überschrift**.\n\nAm **Anfang** oder am **Ende** des Textes.\n\nNach Wörtern wie *insgesamt, deshalb, klar ist*.",
+        "tasks": [
+          {
+            "text": "Eine Schule in Niedersachsen beginnt um 8:50 Uhr. Das ist ___.",
+            "choices": [
+              "eine Einzelheit",
+              "die Kernaussage"
+            ],
+            "correct": "eine Einzelheit",
+            "why": "Der Satz nennt ein einzelnes Beispiel mit Ort und Uhrzeit.",
+            "hint": "Gilt der Satz für den ganzen Text oder nur für ein Beispiel?"
+          }
+        ],
+        "say": "Die Überschrift verrät oft schon das Thema und manchmal sogar die Meinung. Der Anfang stellt meistens die Frage, das Ende gibt die Antwort. Schau deshalb zuerst an diesen drei Stellen nach, bevor du den ganzen Text absuchst."
+      },
+      {
+        "title": "Was der Text will",
+        "body": "**informieren**: Tatsachen, Zahlen, sachlicher Ton\n**überzeugen**: Meinung, Forderung, direkte Ansprache\n**unterhalten**: Spannung, Humor",
+        "tasks": [
+          {
+            "text": "Ein Text fordert: Die Schule muss endlich später beginnen! Der Text will ___.",
+            "choices": [
+              "überzeugen",
+              "unterhalten"
+            ],
+            "correct": "überzeugen",
+            "why": "Eine Forderung mit Ausrufezeichen zeigt eine Meinung, für die der Text wirbt.",
+            "hint": "Bleibt der Satz neutral, oder fordert er etwas?"
+          }
+        ],
+        "say": "Jeder Text wird mit einer Absicht geschrieben. Ein Bericht will informieren und bleibt neutral. Ein Kommentar will überzeugen und sagt deutlich seine Meinung. Du erkennst die Absicht an der Sprache: Stehen Forderungen und Wertungen im Text, oder nur Tatsachen?"
+      },
+      {
+        "title": "Jetzt du: Kernaussage und Absicht",
+        "body": "Tipp bei jeder Aufgabe auf die richtige Lösung.",
+        "tasks": [
+          {
+            "text": "Ein Text handelt davon, dass Jugendliche zu wenig schlafen. Seine Kernaussage könnte lauten: ___",
+            "choices": [
+              "Jugendliche brauchen mehr Schlaf, als sie bekommen.",
+              "Lisa geht um 23 Uhr ins Bett."
+            ],
+            "correct": "Jugendliche brauchen mehr Schlaf, als sie bekommen.",
+            "why": "Der Satz fasst das ganze Thema zusammen. Der andere ist ein einzelnes Beispiel.",
+            "hint": "Welcher der beiden Sätze gilt für den ganzen Text?"
+          },
+          {
+            "text": "In einem Text steht: 62 Prozent der Befragten stimmten zu. Das ist ___.",
+            "choices": [
+              "eine Einzelheit",
+              "die Kernaussage"
+            ],
+            "correct": "eine Einzelheit",
+            "why": "Eine einzelne Zahl ist eine Einzelheit, die etwas belegt.",
+            "hint": "Fasst eine einzelne Zahl einen ganzen Text zusammen?"
+          },
+          {
+            "text": "Ein Bericht nennt nur Zahlen und Tatsachen und wertet nicht. Er will ___.",
+            "choices": [
+              "informieren",
+              "überzeugen"
+            ],
+            "correct": "informieren",
+            "why": "Ein neutraler Text ohne Meinung will Wissen weitergeben.",
+            "hint": "Steht in dem Text eine Meinung oder eine Forderung?"
+          }
+        ],
+        "say": "Frag dich bei den ersten beiden Aufgaben, ob der Satz für den ganzen Text gelten kann. Bei der dritten achtest du darauf, ob der Text neutral bleibt."
+      },
+      {
+        "chapter": "Richtig, falsch oder steht nicht im Text",
+        "title": "Drei Kästchen",
+        "body": "Zu jeder Aussage kreuzt du eines an:\n\n**richtig**\n**falsch**\n**steht nicht im Text**",
+        "say": "Diese Aufgabe kommt sehr oft vor. Du bekommst mehrere Aussagen und sollst jede am Text prüfen. Das dritte Kästchen macht die Aufgabe schwieriger, als sie aussieht. Viele verwechseln falsch und steht nicht im Text. Den Unterschied sehen wir uns jetzt genau an."
+      },
+      {
+        "title": "richtig: Der Text sagt dasselbe",
+        "body": "Text: *62 Prozent finden die Regel gut.*\n\nAussage: *Die Mehrheit ist für die Regel.*\n\nDie Wörter sind anders, die Bedeutung ist gleich.",
+        "say": "Eine richtige Aussage wiederholt den Text fast nie wörtlich. Sie sagt dasselbe mit anderen Wörtern. 62 Prozent sind mehr als die Hälfte, also die Mehrheit. Du vergleichst deshalb immer die Bedeutung und nicht die einzelnen Wörter."
+      },
+      {
+        "title": "falsch: Der Text sagt etwas anderes",
+        "body": "Text: *62 Prozent finden die Regel gut.*\n\nAussage: *Fast alle finden die Regel gut.*\n\n62 Prozent sind nicht fast alle. Die Aussage ist **falsch**.",
+        "tasks": [
+          {
+            "text": "Text: Der Versuch dauerte zwei Wochen. Aussage: Der Versuch dauerte zwei Monate. Die Aussage ist ___.",
+            "choices": [
+              "falsch",
+              "richtig"
+            ],
+            "correct": "falsch",
+            "why": "Der Text nennt eine andere Dauer. Er widerspricht der Aussage.",
+            "hint": "Steht im Text dieselbe Dauer wie in der Aussage?"
+          }
+        ],
+        "say": "Bei falsch findest du eine Stelle im Text, und sie widerspricht der Aussage. Das kann das genaue Gegenteil sein. Es kann aber auch nur eine Übertreibung sein, wie hier. Fast alle wären neunzig Prozent oder mehr. Der Text nennt eine andere Zahl."
+      },
+      {
+        "title": "steht nicht im Text: Der Text schweigt dazu",
+        "body": "Text: *62 Prozent finden die Regel gut.*\n\nAussage: *Die Lehrkräfte finden die Regel schlecht.*\n\nÜber die Lehrkräfte sagt der Text **gar nichts**.",
+        "tasks": [
+          {
+            "text": "Du suchst und findest im Text keine Stelle zu einer Aussage. Du kreuzt an: ___",
+            "choices": [
+              "steht nicht im Text",
+              "falsch"
+            ],
+            "correct": "steht nicht im Text",
+            "why": "Falsch heißt, dass der Text widerspricht. Hier sagt er einfach nichts dazu.",
+            "hint": "Widerspricht der Text der Aussage, oder sagt er gar nichts dazu?"
+          }
+        ],
+        "say": "Hier findest du im Text keine Stelle, die zu der Aussage passt. Du kannst sie weder bestätigen noch widerlegen. Vielleicht stimmt sie sogar. Trotzdem darfst du nicht richtig ankreuzen, denn es zählt nur, was im Text steht. Eigene Vermutungen zählen nicht."
+      },
+      {
+        "title": "Vorsicht bei immer, nie, alle und nur",
+        "body": "Text: *Viele Schüler sind morgens müde.*\n\nAussage: ***Alle** Schüler sind morgens müde.*\n\nViele sind nicht alle. Die Aussage ist **falsch**.",
+        "tasks": [
+          {
+            "text": "Text: Manche Eltern sind dagegen. Aussage: Die Eltern sind dagegen. Die Aussage ist ___.",
+            "choices": [
+              "falsch",
+              "richtig"
+            ],
+            "correct": "falsch",
+            "why": "Manche Eltern sind nicht alle Eltern. Die Aussage macht mehr daraus, als der Text sagt.",
+            "hint": "Sagt der Text etwas über alle Eltern oder nur über einen Teil?"
+          }
+        ],
+        "say": "Kleine Wörter wie immer, nie, alle, niemand und nur machen eine Aussage sehr streng. Schon eine einzige Ausnahme reicht, und sie stimmt nicht mehr. Die Prüfung tauscht gern ein vorsichtiges Wort aus dem Text gegen ein strenges aus. Achte deshalb genau auf diese Wörter."
+      },
+      {
+        "title": "Jetzt du: drei Aussagen zu einem Text",
+        "body": "Text: *Die Schule testete den späteren Beginn vier Wochen lang. Danach kamen weniger Schüler zu spät.*",
+        "tasks": [
+          {
+            "text": "Der Test dauerte einen Monat. ___",
+            "choices": [
+              "richtig",
+              "falsch",
+              "steht nicht im Text"
+            ],
+            "correct": "richtig",
+            "why": "Vier Wochen sind ein Monat. Die Wörter sind anders, die Bedeutung ist gleich.",
+            "hint": "Wie lange sind vier Wochen, anders ausgedrückt?"
+          },
+          {
+            "text": "Nach dem Test kamen mehr Schüler zu spät. ___",
+            "choices": [
+              "falsch",
+              "richtig",
+              "steht nicht im Text"
+            ],
+            "correct": "falsch",
+            "why": "Im Text steht weniger. Die Aussage sagt das Gegenteil.",
+            "hint": "Steht im Text mehr oder weniger?"
+          },
+          {
+            "text": "Die Noten wurden nach dem Test besser. ___",
+            "choices": [
+              "steht nicht im Text",
+              "richtig",
+              "falsch"
+            ],
+            "correct": "steht nicht im Text",
+            "why": "Über Noten sagt der kleine Text kein Wort.",
+            "hint": "Kommt das Wort Noten oder etwas Ähnliches im Text vor?"
+          }
+        ],
+        "say": "Lies den kleinen Text langsam. Prüf dann jede Aussage einzeln daran. Frag dich jedes Mal: Sagt der Text dasselbe, sagt er etwas anderes, oder sagt er dazu gar nichts?"
+      },
+      {
+        "chapter": "Belegen und zitieren",
+        "title": "Was ein Beleg ist",
+        "body": "Ein **Beleg** ist die Stelle im Text, die **beweist**, dass deine Antwort stimmt.",
+        "say": "Manchmal reicht ein Kreuz nicht. Die Aufgabe verlangt dann, dass du deine Antwort mit dem Text belegst. Das bedeutet: Du zeigst genau, wo es steht. Du schreibst die Stelle ab und gibst an, in welcher Zeile sie zu finden ist."
       },
       {
         "title": "So zitierst du richtig",
-        "body": "1. **Wörtlich** abschreiben, kein Wort ändern\n\n2. In **Anführungszeichen** „…“ setzen\n\n3. **Zeile** oder Absatz dazu: (Z. 12) oder (Abs. 3)\n\n4. Etwas weglassen? Dann **(…)** an die Stelle",
-        "say": "Vier Dinge: wörtlich, Anführungszeichen, Zeile, Auslassung markieren. Fehlt eins, gibt es Abzug. So einfach und so streng ist das."
+        "body": "(1) Die Stelle **wörtlich** abschreiben.\n\n(2) In **Anführungszeichen** setzen.\n\n(3) Die **Zeile** angeben: *(Z. 5)*\n\n(4) Eine Auslassung mit **(…)** kennzeichnen.",
+        "say": "Ein Zitat ist eine wörtlich abgeschriebene Textstelle. Du darfst kein Wort verändern. Wenn du etwas weglässt, weil die Stelle zu lang ist, setzt du drei Punkte in Klammern. Diese vier Dinge gehören zusammen. Fehlt eines davon, gibt es einen Abzug."
       },
       {
-        "title": "Die Zusammenfassung: zwei Sätze",
-        "body": "**Satz 1**: Textart, Titel, Thema, Kernaussage\n\n*Der Kommentar „Ein Pullover für alle?“ spricht sich für Schulkleidung aus.*\n\n**Satz 2**: die wichtigsten Argumente\n\n*Als Gründe nennt die Autorin den Markendruck, die Gemeinschaft und die Zeitersparnis.*",
-        "say": "Zwei Sätze reichen: Worum geht es, und was sind die Hauptgründe. Mehr will niemand lesen."
+        "title": "Ein Beispiel",
+        "body": "Aussage: *Die Mehrheit findet die Regel gut.*\n\nBeleg: *„62 Prozent finden die Regel gut“ (Z. 5)*",
+        "tasks": [
+          {
+            "text": "62 Prozent finden die Regel gut (Z. 5). Bei diesem Beleg fehlen ___.",
+            "choices": [
+              "die Anführungszeichen",
+              "die Zeilenangaben"
+            ],
+            "correct": "die Anführungszeichen",
+            "why": "Eine wörtlich übernommene Stelle muss in Anführungszeichen stehen.",
+            "hint": "Woran erkennt man, dass etwas wörtlich aus dem Text übernommen ist?"
+          }
+        ],
+        "say": "So sieht ein vollständiger Beleg aus. Die Stelle ist wörtlich abgeschrieben. Sie steht in Anführungszeichen. Dahinter steht in Klammern die Zeile. Mehr brauchst du nicht zu schreiben. Der Leser kann jetzt selbst nachsehen, ob es stimmt."
       },
       {
-        "title": "Regeln für die Zusammenfassung",
-        "body": "**Präsens**: *Der Text zeigt …* (nicht *zeigte*)\n\n**Keine Meinung**: kein *ich finde*\n\n**Keine Zitate**: eigene Worte\n\n**Keine Details**: keine Zahlen und Namen, die nicht wichtig sind",
-        "say": "Eine Zusammenfassung ist wie ein Spiegel: Sie zeigt den Text, nicht dich. Deine Meinung bleibt draußen."
+        "title": "Der Beleg muss die Aussage stützen",
+        "body": "Aussage: *Die Mehrheit findet die Regel gut.*\n\nKein Beleg: *„Die Regel gilt seit August“ (Z. 2)*\n\nDie Stelle passt zum Thema, beweist aber nichts.",
+        "tasks": [
+          {
+            "text": "Aussage: Der Test war erfolgreich. Welche Stelle belegt das? ___",
+            "choices": [
+              "„Danach kamen weniger Schüler zu spät“",
+              "„Der Test dauerte vier Wochen“"
+            ],
+            "correct": "„Danach kamen weniger Schüler zu spät“",
+            "why": "Diese Stelle zeigt ein gutes Ergebnis. Die andere nennt nur die Dauer.",
+            "hint": "Welche der beiden Stellen sagt etwas über das Ergebnis des Tests?"
+          }
+        ],
+        "say": "Ein Beleg muss genau das beweisen, was du behauptest. Es reicht nicht, dass in der Stelle dasselbe Thema vorkommt. Frag dich bei jedem Beleg: Würde jemand, der nur diese Stelle liest, meiner Aussage zustimmen müssen?"
       },
       {
-        "title": "Die Drei-Schritte-Routine",
-        "body": "1. **Frage lesen**: Was genau wird gefragt?\n\n2. **Schlüsselwörter** in der Frage markieren\n\n3. **Absatz suchen**, in dem diese Wörter vorkommen, und genau lesen",
-        "say": "Erst die Frage, dann der Text. Wer den ganzen Text liest und dann aus dem Gedächtnis rät, verliert Zeit und Punkte."
-      },
-      {
-        "title": "Die Routine in Aktion",
-        "body": "Frage: *Welche Hürde nennen Jugendliche am häufigsten?*\n\nSchlüsselwörter: **Hürde**, **am häufigsten**\n\nIm Text: *„Es gibt allerdings auch Hürden. Am häufigsten nennen Jugendliche Zeitmangel“*\n\nAntwort: Zeitmangel (Abs. 4)",
-        "say": "Siehst du? Das Wort aus der Frage steht fast genauso im Text. Du musst es nur finden. Das ist kein Rätsel, das ist Suchen."
-      },
-      {
-        "title": "Drei Fallen",
-        "body": "*Plausibel* ist nicht *richtig*: Steht es nicht da, steht es nicht da.\n\nAbsolute Wörter: *immer, nie, alle, gar nicht*. Oft falsch.\n\n**Beispiel ≠ Argument**: Ein Beispiel allein erklärt kein Warum.",
-        "say": "Die Prüfung testet, ob du genau liest. Nicht, ob du gut rätst. Lieber einmal mehr nachschauen."
+        "title": "Das nimmst du mit",
+        "body": "(1) Erst die Frage, dann die Stelle, dann vergleichen.\n\n(2) Die **Kernaussage** gilt für den ganzen Text.\n\n(3) **falsch**: Der Text widerspricht. **steht nicht im Text**: Er schweigt.\n\n(4) Ein **Beleg** braucht Anführungszeichen und Zeile.",
+        "tasks": [
+          {
+            "text": "Eine Aussage klingt vernünftig, aber im Text steht nichts dazu. Du kreuzt an: ___",
+            "choices": [
+              "steht nicht im Text",
+              "richtig"
+            ],
+            "correct": "steht nicht im Text",
+            "why": "Es zählt nur der Text. Was du selbst für wahrscheinlich hältst, zählt nicht.",
+            "hint": "Was zählt in dieser Aufgabe: dein Wissen oder der Text?"
+          }
+        ],
+        "say": "Das sind die vier Dinge, die du aus dieser Lektion mitnimmst. Wenn du in der Prüfung unsicher wirst, geh zurück zu den drei Schritten. Gleich kommen noch die Wörter zum Nachlesen und ein kleines Quiz."
       }
     ],
     "vocab": [
-      { "term": "Sachtext", "plain": "Text über eine echte Sache; informiert oder überzeugt.", "example": "Zeitungsartikel, Bericht, Kommentar" },
-      { "term": "Kernaussage", "plain": "Das, was der Text insgesamt sagen will.", "example": "Jugendliche lernen besser, wenn die Schule später beginnt." },
-      { "term": "These", "plain": "Standpunkt, den man begründen muss.", "example": "Schulkleidung ist eine gute Idee." },
-      { "term": "Argument", "plain": "Das Warum hinter der These.", "example": "…, weil niemand mit Marken angeben muss." },
-      { "term": "Beispiel", "plain": "Konkreter Fall, der das Argument zeigt.", "example": "eine Schule, eine Studie, eine Zahl" },
-      { "term": "Beleg", "plain": "Wörtliche Textstelle mit Zeilenangabe, die eine Aussage beweist.", "example": "„62 Prozent finden die Regel gut“ (Z. 5)" },
-      { "term": "Zitat", "plain": "Wörtlich übernommene Stelle in Anführungszeichen.", "example": "Auslassungen: (…)" },
-      { "term": "Zusammenfassung", "plain": "Kernaussage und Hauptargumente in eigenen Worten, im Präsens, ohne Meinung.", "example": "Der Text handelt von … Die Autorin vertritt die These, dass …" }
+      {
+        "term": "Sachtext",
+        "plain": "Ein Text, der über etwas aus der Wirklichkeit informiert oder davon überzeugen will.",
+        "example": "Zeitungsartikel, Bericht, Kommentar"
+      },
+      {
+        "term": "Kernaussage",
+        "plain": "Das, was ein Text insgesamt sagen will. Sie gilt für den ganzen Text."
+      },
+      {
+        "term": "Einzelheit",
+        "plain": "Eine Zahl, ein Name oder ein Beispiel. Sie gilt nur für eine Stelle."
+      },
+      {
+        "term": "Absicht",
+        "plain": "Was ein Text erreichen will: informieren, überzeugen oder unterhalten."
+      },
+      {
+        "term": "steht nicht im Text",
+        "plain": "Der Text sagt zu einer Aussage gar nichts. Das ist etwas anderes als falsch."
+      },
+      {
+        "term": "Beleg",
+        "plain": "Die Stelle im Text, die eine Antwort beweist."
+      },
+      {
+        "term": "Zitat",
+        "plain": "Eine wörtlich abgeschriebene Textstelle in Anführungszeichen mit Zeilenangabe.",
+        "example": "„62 Prozent finden die Regel gut“ (Z. 5)"
+      }
     ],
     "quiz": [
-      { "prompt": "Was ist die Kernaussage eines Textes?", "choices": ["Das, was der Text insgesamt sagen will", "Der erste Satz des Textes", "Die größte Zahl im Text", "Das längste Beispiel"], "correct": "Das, was der Text insgesamt sagen will", "explain": "Die Kernaussage gilt für den ganzen Text. Erster Satz, Zahlen und Beispiele sind Details." },
-      { "prompt": "Welcher Satz ist ein Argument?", "choices": ["Schulkleidung ist gut, weil niemand mit Markenkleidung angeben muss.", "Schulkleidung ist gut.", "An einer Hamburger Schule fühlten sich weniger Schüler ausgegrenzt.", "Ich mag Pullover."], "correct": "Schulkleidung ist gut, weil niemand mit Markenkleidung angeben muss.", "explain": "Das Argument nennt das Warum (*weil*). Ohne Warum ist es eine These, die Hamburger Schule ist ein Beispiel." },
-      { "prompt": "Was gehört zu einem korrekten Beleg?", "choices": ["Anführungszeichen und Zeilenangabe", "Nur die Zeilenangabe", "Eigene Worte ohne Zeile", "Ein Ausrufezeichen"], "correct": "Anführungszeichen und Zeilenangabe", "explain": "Wörtlich, in Anführungszeichen, mit Zeile. Das sind die Pflichtteile." },
-      { "prompt": "Welcher Satz gehört NICHT in eine Zusammenfassung?", "choices": ["Ich finde, die Autorin hat recht.", "Der Text handelt von Schulkleidung.", "Die Autorin nennt drei Gründe.", "Sie hält das Gegenargument für unbegründet."], "correct": "Ich finde, die Autorin hat recht.", "explain": "Deine Meinung bleibt draußen. Die Zusammenfassung zeigt nur, was im Text steht." },
-      { "prompt": "In welcher Zeitform steht eine Zusammenfassung?", "choices": ["Präsens", "Präteritum", "Futur", "Perfekt"], "correct": "Präsens", "explain": "Der Text liegt vor dir und sagt es jetzt: *Der Text zeigt …*" },
-      { "prompt": "Was machst du als Erstes bei einer Leseaufgabe?", "choices": ["Die Frage lesen und Schlüsselwörter markieren", "Den Text auswendig lernen", "Sofort eine Antwort raten", "Die Überschrift abschreiben"], "correct": "Die Frage lesen und Schlüsselwörter markieren", "explain": "Erst die Frage, dann der Absatz mit den Schlüsselwörtern. So findest du die Stelle schnell." }
+      {
+        "prompt": "Was machst du bei einer Leseaufgabe zuerst?",
+        "choices": [
+          "Ich lese die Frage und unterstreiche die wichtigen Wörter.",
+          "Ich lese den Text dreimal.",
+          "Ich kreuze nach Gefühl an.",
+          "Ich zähle die Absätze."
+        ],
+        "correct": "Ich lese die Frage und unterstreiche die wichtigen Wörter.",
+        "explain": "Die Frage sagt dir, wonach du suchen sollst. Erst danach gehst du in den Text."
+      },
+      {
+        "prompt": "Was ist die Kernaussage eines Textes?",
+        "choices": [
+          "das, was der Text insgesamt sagen will",
+          "die erste Zahl im Text",
+          "der längste Satz",
+          "das letzte Wort"
+        ],
+        "correct": "das, was der Text insgesamt sagen will",
+        "explain": "Die Kernaussage gilt für den ganzen Text. Eine Zahl oder ein Beispiel ist nur eine Einzelheit."
+      },
+      {
+        "prompt": "Text: Etwa die Hälfte der Klasse fährt mit dem Rad. Aussage: Die ganze Klasse fährt mit dem Rad. Was kreuzt du an?",
+        "choices": [
+          "falsch",
+          "richtig",
+          "steht nicht im Text",
+          "beides"
+        ],
+        "correct": "falsch",
+        "explain": "Die Hälfte ist nicht die ganze Klasse. Der Text sagt etwas anderes als die Aussage."
+      },
+      {
+        "prompt": "Text: Etwa die Hälfte der Klasse fährt mit dem Rad. Aussage: Die Räder sind alle neu. Was kreuzt du an?",
+        "choices": [
+          "steht nicht im Text",
+          "richtig",
+          "falsch",
+          "beides"
+        ],
+        "correct": "steht nicht im Text",
+        "explain": "Über den Zustand der Räder sagt der Text nichts. Er widerspricht nicht, er schweigt."
+      },
+      {
+        "prompt": "Was gehört zu einem richtigen Zitat?",
+        "choices": [
+          "Anführungszeichen und Zeilenangabe",
+          "nur eine eigene Zusammenfassung",
+          "ein Ausrufezeichen",
+          "die Überschrift des Textes"
+        ],
+        "correct": "Anführungszeichen und Zeilenangabe",
+        "explain": "Ein Zitat ist wörtlich abgeschrieben, steht in Anführungszeichen und nennt die Zeile."
+      },
+      {
+        "prompt": "Woran erkennst du, dass ein Text überzeugen will?",
+        "choices": [
+          "an Meinungen und Forderungen",
+          "an vielen Zahlen",
+          "an der Länge",
+          "an den Zeilennummern"
+        ],
+        "correct": "an Meinungen und Forderungen",
+        "explain": "Wer überzeugen will, wertet und fordert. Ein Text, der nur informiert, bleibt neutral."
+      },
+      {
+        "prompt": "Welches Wort in einer Aussage solltest du besonders genau prüfen?",
+        "choices": [
+          "alle",
+          "der",
+          "und",
+          "ist"
+        ],
+        "correct": "alle",
+        "explain": "Wörter wie alle, immer, nie und nur machen eine Aussage sehr streng. Eine Ausnahme reicht, und sie ist falsch."
+      },
+      {
+        "prompt": "Wo steht die Kernaussage besonders oft?",
+        "choices": [
+          "in der Überschrift, am Anfang oder am Ende",
+          "genau in der Mitte",
+          "nur in Zeile 10",
+          "in den Fußnoten"
+        ],
+        "correct": "in der Überschrift, am Anfang oder am Ende",
+        "explain": "Die Überschrift nennt das Thema, der Anfang stellt die Frage und das Ende gibt oft die Antwort."
+      }
     ]
   }
 ]

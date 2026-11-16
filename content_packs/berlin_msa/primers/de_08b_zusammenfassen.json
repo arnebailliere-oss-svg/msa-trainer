@@ -1,0 +1,351 @@
+[
+  {
+    "id": "P_DE_ZUSAMMENFASSEN",
+    "subject": "DE",
+    "title": "Einen Text zusammenfassen",
+    "teaser": "Wie du einen Text in zwei Sätzen wiedergibst: ein Einleitungssatz mit Textart, Titel und Kernaussage, und ein zweiter Satz mit den wichtigsten Punkten. Dazu die vier Regeln, an denen die meisten Zusammenfassungen scheitern.",
+    "hook": "Jemand fragt dich nach einem Film, und du erzählst ihm in zwei Sätzen, worum es geht. Du erzählst nicht jede Szene nach. Genau das ist eine Zusammenfassung. In der Prüfung machst du dasselbe mit einem Text. Es gibt dafür ein festes Muster, das du nur ausfüllen musst.",
+    "outro": "Du kannst jetzt einen Text in zwei Sätzen zusammenfassen. Der erste Satz nennt Textart, Titel und Kernaussage. Der zweite nennt die wichtigsten Punkte. Du schreibst in der Gegenwart, in eigenen Worten und ohne deine Meinung. Einzelheiten wie Zahlen und Namen lässt du weg.",
+    "standard": 2,
+    "requires": [
+      "P_DE_LESEN",
+      "P_DE_ARGUMENT",
+      "P_DE_ZEITFORMEN"
+    ],
+    "steps": [
+      {
+        "chapter": "Was eine Zusammenfassung ist",
+        "title": "Kurz sagen, worum es geht",
+        "body": "Ein Text hat 400 Wörter.\n\nDeine Zusammenfassung hat **zwei Sätze**.\n\nSie enthält nur das Wichtigste.",
+        "say": "Eine Zusammenfassung ist eine sehr kurze Fassung eines Textes. Sie hilft jemandem, der den Text nicht gelesen hat. Nach deinen zwei Sätzen soll er wissen, worum es geht und was der Text sagen will. Mehr braucht er nicht."
+      },
+      {
+        "title": "Zusammenfassen ist nicht nacherzählen",
+        "body": "**Nacherzählen**: alles der Reihe nach, mit vielen Einzelheiten.\n**Zusammenfassen**: nur das, was für den ganzen Text gilt.",
+        "tasks": [
+          {
+            "text": "Eine Zusammenfassung enthält ___.",
+            "choices": [
+              "nur das Wichtigste",
+              "jede Einzelheit"
+            ],
+            "correct": "nur das Wichtigste",
+            "why": "Sie soll kurz sein und für den ganzen Text gelten.",
+            "hint": "Ist eine Zusammenfassung länger oder kürzer als der Text selbst?"
+          }
+        ],
+        "say": "Das ist der häufigste Irrtum. Viele schreiben ab, was im ersten Absatz steht, dann was im zweiten steht, und so weiter. Das ist eine Nacherzählung. Bei einer Zusammenfassung trittst du einen Schritt zurück und fragst: Was sagt der Text als Ganzes?"
+      },
+      {
+        "title": "Das Muster aus zwei Sätzen",
+        "body": "**Satz 1**: Was für ein Text ist es, und was sagt er?\n\n**Satz 2**: Welches sind die wichtigsten Punkte?",
+        "say": "Mit diesem Muster kannst du fast jeden Text zusammenfassen. Der erste Satz stellt den Text vor. Der zweite Satz liefert die wichtigsten Gründe oder Informationen nach. Auf den nächsten Tafeln bauen wir beide Sätze Schritt für Schritt."
+      },
+      {
+        "title": "Jetzt du: Zusammenfassung oder Nacherzählung?",
+        "body": "Tipp bei jedem Satz auf die richtige Lösung.",
+        "tasks": [
+          {
+            "text": "Der Text zeigt, warum Jugendliche mehr Schlaf brauchen. Das klingt nach ___.",
+            "choices": [
+              "einer Zusammenfassung",
+              "einer Nacherzählung"
+            ],
+            "correct": "einer Zusammenfassung",
+            "why": "Der Satz gilt für den ganzen Text.",
+            "hint": "Gilt der Satz für den ganzen Text oder nur für eine Stelle?"
+          },
+          {
+            "text": "Zuerst steht Lisa um sechs auf, dann frühstückt sie, dann geht sie los. Das klingt nach ___.",
+            "choices": [
+              "einer Nacherzählung",
+              "einer Zusammenfassung"
+            ],
+            "correct": "einer Nacherzählung",
+            "why": "Der Satz zählt Einzelheiten der Reihe nach auf.",
+            "hint": "Zählt der Satz einzelne Schritte der Reihe nach auf?"
+          }
+        ],
+        "say": "Frag dich bei jedem Satz, ob er für den ganzen Text gilt oder nur eine einzelne Stelle wiedergibt."
+      },
+      {
+        "chapter": "Der Einleitungssatz",
+        "title": "Was in den ersten Satz gehört",
+        "body": "(1) Die **Textart**: Kommentar, Bericht, Interview\n\n(2) Der **Titel** in Anführungszeichen\n\n(3) Die **Kernaussage**",
+        "say": "Der erste Satz hat drei Aufgaben. Er sagt, was für ein Text es ist. Er nennt den Titel. Und er sagt in wenigen Worten, was der Text insgesamt aussagt. Wenn der Name des Autors bekannt ist, kannst du ihn ebenfalls nennen."
+      },
+      {
+        "title": "Ein Beispiel",
+        "body": "*Der Kommentar „Ein Pullover für alle?“ spricht sich für Schulkleidung aus.*\n\nTextart: Kommentar\nTitel: „Ein Pullover für alle?“\nKernaussage: Er ist für Schulkleidung.",
+        "say": "So sieht ein vollständiger Einleitungssatz aus. Er ist kurz, und trotzdem steckt alles darin. Schau, wie die drei Teile nacheinander kommen. Wer nur diesen einen Satz liest, weiß schon, was für ein Text es ist und welche Meinung er vertritt."
+      },
+      {
+        "title": "Die Textart erkennen",
+        "body": "**Bericht**: informiert sachlich.\n**Kommentar**: sagt eine Meinung.\n**Interview**: Fragen und Antworten.",
+        "tasks": [
+          {
+            "text": "Ein Text sagt deutlich seine Meinung und fordert etwas. Es ist ___.",
+            "choices": [
+              "ein Kommentar",
+              "ein Bericht"
+            ],
+            "correct": "ein Kommentar",
+            "why": "Ein Bericht bliebe neutral. Hier wird gewertet und gefordert.",
+            "hint": "Bleibt der Text neutral, oder wertet er?"
+          }
+        ],
+        "say": "Die Textart steht oft schon in der Aufgabe. Wenn nicht, erkennst du sie an der Absicht des Textes. Ein Bericht bleibt neutral. Ein Kommentar will überzeugen und wertet. Ein Interview besteht aus Fragen und Antworten. Diese drei kommen in der Prüfung am häufigsten vor."
+      },
+      {
+        "title": "Verben für den ersten Satz",
+        "body": "Der Text **zeigt**, dass …\nDer Bericht **informiert** über …\nDer Kommentar **spricht sich für** … **aus**.\nDie Autorin **fordert**, dass …",
+        "say": "Mit diesen Verben kannst du den ersten Satz leicht bilden. Wähl das Verb passend zur Textart. Ein Bericht informiert. Ein Kommentar fordert, kritisiert oder spricht sich für etwas aus. Vermeide das blasse es geht um. Es sagt nicht, was der Text will."
+      },
+      {
+        "title": "Jetzt du: der Einleitungssatz",
+        "body": "Tipp bei jeder Aufgabe auf die richtige Lösung.",
+        "tasks": [
+          {
+            "text": "Welcher Einleitungssatz ist vollständig? ___",
+            "choices": [
+              "Der Bericht „Helfen macht Schule“ informiert über Jugendliche, die sich freiwillig engagieren.",
+              "In dem Text geht es um Jugendliche."
+            ],
+            "correct": "Der Bericht „Helfen macht Schule“ informiert über Jugendliche, die sich freiwillig engagieren.",
+            "why": "Der Satz nennt Textart, Titel und Kernaussage.",
+            "hint": "In welchem der beiden Sätze stehen Textart und Titel?"
+          },
+          {
+            "text": "Der Kommentar spricht sich für Schulkleidung aus. Was fehlt in diesem Satz? ___",
+            "choices": [
+              "der Titel",
+              "die Textart"
+            ],
+            "correct": "der Titel",
+            "why": "Textart und Kernaussage sind da. Der Titel in Anführungszeichen fehlt.",
+            "hint": "Welcher der drei Teile steht nicht im Satz?"
+          }
+        ],
+        "say": "Prüf bei jedem Satz, ob Textart, Titel und Kernaussage da sind. Fehlt eines davon, ist der Einleitungssatz unvollständig."
+      },
+      {
+        "chapter": "Der zweite Satz und die vier Regeln",
+        "title": "Der zweite Satz",
+        "body": "*Als Gründe nennt die Autorin den Druck durch Markenkleidung, das Gemeinschaftsgefühl und die Zeitersparnis am Morgen.*\n\nEr nennt die **wichtigsten Punkte**, ohne sie auszuführen.",
+        "say": "Im zweiten Satz zählst du die wichtigsten Argumente oder Informationen auf. Du nennst sie nur mit einem Stichwort. Du erklärst sie nicht und bringst keine Beispiele. Meistens sind es zwei oder drei Punkte, die du mit Kommas und einem und verbindest."
+      },
+      {
+        "title": "Regel 1: in der Gegenwart",
+        "body": "Richtig: *Der Text **zeigt** …*\n\nFalsch: *Der Text zeigte …*",
+        "tasks": [
+          {
+            "text": "Der Kommentar ___ sich gegen Hausaufgaben aus.",
+            "choices": [
+              "spricht",
+              "sprach"
+            ],
+            "correct": "spricht",
+            "why": "Eine Zusammenfassung steht in der Gegenwart.",
+            "hint": "In welcher Zeitform schreibst du über einen Text, der vor dir liegt?"
+          }
+        ],
+        "say": "Eine Zusammenfassung steht immer im Präsens. Der Text liegt ja jetzt vor dir, und er sagt jetzt etwas aus. Das gilt auch dann, wenn der Text selbst von etwas Vergangenem berichtet. Du schreibst also: Der Bericht informiert, die Autorin fordert."
+      },
+      {
+        "title": "Regel 2: ohne eigene Meinung",
+        "body": "Falsch: *Ich finde, die Autorin hat recht.*\n\nDie Zusammenfassung zeigt den **Text**, nicht dich.",
+        "say": "Deine Meinung ist hier nicht gefragt. Eine Zusammenfassung ist wie ein Spiegel. Sie zeigt, was im Text steht, und sonst nichts. Sätze mit ich finde oder meiner Meinung nach gehören nicht hinein. Auch Wertungen wie leider oder zum Glück lässt du weg."
+      },
+      {
+        "title": "Regel 3: in eigenen Worten",
+        "body": "Falsch: *Im Text steht: „Das ist keine Faulheit, sondern Biologie.“*\n\nRichtig: *Der Text erklärt die Müdigkeit mit der körperlichen Entwicklung.*",
+        "tasks": [
+          {
+            "text": "Welcher Satz passt in eine Zusammenfassung? ___",
+            "choices": [
+              "Der Text erklärt, warum Jugendliche abends später müde werden.",
+              "Im Text steht: „Jugendliche werden später müde.“"
+            ],
+            "correct": "Der Text erklärt, warum Jugendliche abends später müde werden.",
+            "why": "Der Satz gibt den Inhalt in eigenen Worten wieder, ohne Anführungszeichen.",
+            "hint": "In welchem der beiden Sätze steht ein wörtliches Zitat?"
+          }
+        ],
+        "say": "In einer Zusammenfassung stehen keine wörtlichen Zitate. Du gibst den Inhalt mit deinen eigenen Worten wieder. Das zeigt, dass du den Text verstanden hast. Wer nur Sätze abschreibt, hat nicht zusammengefasst, sondern kopiert."
+      },
+      {
+        "title": "Regel 4: ohne Einzelheiten",
+        "body": "Falsch: *Eine Schule in Niedersachsen beginnt um 8:50 Uhr.*\n\nZahlen, Namen und Beispiele lässt du weg.",
+        "tasks": [
+          {
+            "text": "62 Prozent der Befragten waren dafür. Gehört dieser Satz in eine Zusammenfassung? ___",
+            "choices": [
+              "Nein, es ist eine Einzelheit.",
+              "Ja, Zahlen sind wichtig."
+            ],
+            "correct": "Nein, es ist eine Einzelheit.",
+            "why": "Eine einzelne Zahl gilt nur für eine Stelle im Text.",
+            "hint": "Gilt eine einzelne Zahl für den ganzen Text?"
+          }
+        ],
+        "say": "Einzelheiten machen einen Text anschaulich, aber sie gehören nicht in die Zusammenfassung. Eine einzelne Schule, eine Uhrzeit oder ein Prozentwert gelten nur für eine Stelle. Du nennst stattdessen den Gedanken, für den dieses Beispiel steht."
+      },
+      {
+        "title": "Jetzt du: Welcher Satz gehört nicht hinein?",
+        "body": "Tipp bei jeder Aufgabe auf die richtige Lösung.",
+        "tasks": [
+          {
+            "text": "Welcher Satz gehört nicht in eine Zusammenfassung? ___",
+            "choices": [
+              "Ich finde das Thema sehr spannend.",
+              "Der Bericht stellt ein Schulprojekt vor."
+            ],
+            "correct": "Ich finde das Thema sehr spannend.",
+            "why": "Der Satz enthält eine eigene Meinung.",
+            "hint": "In welchem Satz spricht der Schreiber über sich selbst?"
+          },
+          {
+            "text": "Welcher Satz gehört nicht in eine Zusammenfassung? ___",
+            "choices": [
+              "Tom, 15, hilft jeden Dienstag von 16 bis 18 Uhr.",
+              "Viele Jugendliche helfen in ihrer Freizeit."
+            ],
+            "correct": "Tom, 15, hilft jeden Dienstag von 16 bis 18 Uhr.",
+            "why": "Der Satz nennt Einzelheiten: einen Namen, ein Alter und Uhrzeiten.",
+            "hint": "Welcher Satz nennt einen Namen und genaue Uhrzeiten?"
+          },
+          {
+            "text": "Welcher Satz ist richtig für eine Zusammenfassung? ___",
+            "choices": [
+              "Die Autorin fordert einen späteren Schulbeginn.",
+              "Die Autorin forderte einen späteren Schulbeginn."
+            ],
+            "correct": "Die Autorin fordert einen späteren Schulbeginn.",
+            "why": "Der Satz steht in der Gegenwart.",
+            "hint": "In welcher Zeitform steht jeder der beiden Sätze?"
+          }
+        ],
+        "say": "Prüf jeden Satz an den vier Regeln: Gegenwart, keine Meinung, eigene Worte, keine Einzelheiten."
+      },
+      {
+        "title": "Das nimmst du mit",
+        "body": "**Satz 1**: Textart, Titel, Kernaussage\n\n**Satz 2**: die wichtigsten Punkte\n\nGegenwart.\nKeine eigene Meinung.\nEigene Worte.\nKeine Einzelheiten.",
+        "tasks": [
+          {
+            "text": "Was gehört in den ersten Satz einer Zusammenfassung? ___",
+            "choices": [
+              "Textart, Titel und Kernaussage",
+              "alle Zahlen aus dem Text"
+            ],
+            "correct": "Textart, Titel und Kernaussage",
+            "why": "Der erste Satz stellt den Text vor und sagt, was er aussagt.",
+            "hint": "Was muss jemand wissen, der den Text nicht kennt?"
+          }
+        ],
+        "say": "Das ist das ganze Muster. Zwei Sätze und vier Regeln. Wenn du deine Zusammenfassung fertig hast, geh die vier Regeln einmal durch. Gleich kommen noch die Wörter zum Nachlesen und ein kleines Quiz."
+      }
+    ],
+    "vocab": [
+      {
+        "term": "Zusammenfassung",
+        "plain": "Eine sehr kurze Fassung eines Textes, die nur das Wichtigste enthält."
+      },
+      {
+        "term": "Nacherzählung",
+        "plain": "Alles der Reihe nach, mit Einzelheiten. Das ist keine Zusammenfassung."
+      },
+      {
+        "term": "Einleitungssatz",
+        "plain": "Der erste Satz: Textart, Titel und Kernaussage.",
+        "example": "Der Kommentar „Ein Pullover für alle?“ spricht sich für Schulkleidung aus."
+      },
+      {
+        "term": "Textart",
+        "plain": "Was für ein Text es ist: Bericht, Kommentar, Interview."
+      },
+      {
+        "term": "zeigt, informiert, fordert, spricht sich aus",
+        "plain": "Verben, mit denen du sagst, was ein Text tut."
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Was gehört in den Einleitungssatz einer Zusammenfassung?",
+        "choices": [
+          "Textart, Titel und Kernaussage",
+          "deine Meinung",
+          "alle Beispiele",
+          "ein wörtliches Zitat"
+        ],
+        "correct": "Textart, Titel und Kernaussage",
+        "explain": "Der erste Satz stellt den Text vor und sagt in wenigen Worten, was er insgesamt aussagt."
+      },
+      {
+        "prompt": "In welcher Zeitform steht eine Zusammenfassung?",
+        "choices": [
+          "im Präsens",
+          "im Präteritum",
+          "im Perfekt",
+          "im Futur"
+        ],
+        "correct": "im Präsens",
+        "explain": "Der Text liegt vor dir und sagt jetzt etwas aus. Deshalb schreibst du in der Gegenwart."
+      },
+      {
+        "prompt": "Welcher Satz gehört nicht in eine Zusammenfassung?",
+        "choices": [
+          "Ich finde, die Autorin hat recht.",
+          "Der Kommentar spricht sich für Schulkleidung aus.",
+          "Die Autorin nennt drei Gründe.",
+          "Der Text richtet sich an Eltern und Lehrkräfte."
+        ],
+        "correct": "Ich finde, die Autorin hat recht.",
+        "explain": "Die eigene Meinung hat in einer Zusammenfassung keinen Platz. Sie zeigt nur den Text."
+      },
+      {
+        "prompt": "Was ist der Unterschied zwischen zusammenfassen und nacherzählen?",
+        "choices": [
+          "Eine Zusammenfassung nennt nur das Wichtigste.",
+          "Eine Zusammenfassung ist länger.",
+          "Eine Nacherzählung hat keine Sätze.",
+          "Es gibt keinen Unterschied."
+        ],
+        "correct": "Eine Zusammenfassung nennt nur das Wichtigste.",
+        "explain": "Beim Nacherzählen gibt man alles der Reihe nach wieder. Beim Zusammenfassen nur das, was für den ganzen Text gilt."
+      },
+      {
+        "prompt": "Darf in einer Zusammenfassung ein wörtliches Zitat stehen?",
+        "choices": [
+          "Nein, man schreibt in eigenen Worten.",
+          "Ja, möglichst viele.",
+          "Ja, aber ohne Anführungszeichen.",
+          "Nur am Anfang."
+        ],
+        "correct": "Nein, man schreibt in eigenen Worten.",
+        "explain": "Eigene Worte zeigen, dass du den Text verstanden hast."
+      },
+      {
+        "prompt": "Welcher Einleitungssatz ist am besten?",
+        "choices": [
+          "Der Kommentar „Später aufstehen!“ fordert einen späteren Schulbeginn.",
+          "Es geht um Schule.",
+          "Ich habe einen Text gelesen.",
+          "Der Text ist interessant."
+        ],
+        "correct": "Der Kommentar „Später aufstehen!“ fordert einen späteren Schulbeginn.",
+        "explain": "Der Satz nennt Textart, Titel und Kernaussage. Die anderen sagen fast nichts über den Text."
+      },
+      {
+        "prompt": "Was gehört in den zweiten Satz?",
+        "choices": [
+          "die wichtigsten Punkte in Stichworten",
+          "ein langes Beispiel",
+          "der Lebenslauf der Autorin",
+          "die Zeilennummern"
+        ],
+        "correct": "die wichtigsten Punkte in Stichworten",
+        "explain": "Der zweite Satz zählt die zwei oder drei wichtigsten Gründe oder Informationen auf, ohne sie auszuführen."
+      }
+    ]
+  }
+]

@@ -3,47 +3,65 @@
     "id": "L_DE_LESEN",
     "subject": "DE",
     "topicId": "DE_READ_CORE",
-    "alsoFor": ["DE_READ_ARGUMENT", "DE_READ_EVIDENCE", "DE_READ"],
-    "title": "Textverständnis: lesen, markieren, belegen",
-    "intro": "Der erste Teil der Deutschprüfung prüft dein **Text- und Leseverständnis**: ein Sachtext, ein literarischer Text oder ein Diagramm, dazu Aufgaben wie *richtig oder falsch*, *Kernaussage*, *Textbeleg mit Zeilenangabe*. Hier zählt nicht Tempo, sondern ein **fester Ablauf**.",
-    "source": "Adaptiert nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 1 (Textverständnis)",
+    "alsoFor": [
+      "DE_READ_ARGUMENT",
+      "DE_READ_EVIDENCE",
+      "DE_READ"
+    ],
+    "title": "Lesen und Verstehen",
+    "sheet": true,
+    "guided": [
+      "P_DE_LESEN",
+      "P_DE_ARGUMENT"
+    ],
+    "intro": "Das hier ist dein Spickzettel zum Lesen. Hier schaust du nach, wie du an eine Leseaufgabe herangehst, was die drei Kästchen bedeuten oder wie ein Zitat aussehen muss. Gelernt wird oben in den Lektionen mit Ferdinand. Tipp auf eine Karte, um sie zu öffnen.",
+    "source": "Eigene Darstellung nach den Anforderungen des MSA Deutsch",
     "sections": [
       {
         "kind": "terms",
-        "title": "Die drei Textarten",
-        "body": "- **Sachtext** (z. B. Zeitungsartikel): informiert, nennt Fakten, Zahlen, Zitate von Fachleuten.\n- **Literarischer Text** (z. B. Buchauszug): erzählt, zeigt Gefühle oft **zwischen den Zeilen** (Herzklopfen statt „sie hatte Angst“).\n- **Diskontinuierlicher Text** (Grafik, Tabelle, Diagramm): Zahlen, die du **ablesen und vergleichen** musst."
+        "title": "Die drei Arten von Texten",
+        "body": "| Textart | Was sie tut | Darauf achtest du |\n| --- | --- | --- |\n| Sachtext | informiert oder will überzeugen | Tatsachen, Zahlen, Meinungen von Fachleuten |\n| literarischer Text | erzählt eine Geschichte | Gefühle stehen oft zwischen den Zeilen |\n| Grafik oder Tabelle | zeigt Zahlen | Überschrift, Einheit, größter und kleinster Wert |"
       },
       {
         "kind": "steps",
-        "title": "Der Ablauf in vier Schritten",
-        "body": "1. **Lesevorgang 1**: Text **überfliegen**. Worum geht es? Wer spricht?\n2. **Aufgaben lesen** und **Schlüsselwörter markieren**: meist Nomen, die sich wiederholen (Thema Umweltschutz → *Umwelt, Abfall, Recycling*). Auch die **Signalwörter** in der Aufgabe markieren (*umzäunt, Zoologe, freiwillig*).\n3. **Lesevorgang 2**: gründlich lesen, die Stellen zu den Signalwörtern **markieren**.\n4. **Aufgaben bearbeiten**: zur markierten Stelle springen, genau vergleichen, **Beleg mit Zeilenangabe** notieren."
+        "title": "Drei Schritte für jede Frage",
+        "body": "(1) Lies zuerst die Frage und unterstreiche die wichtigen Wörter.\n\n(2) Such diese Wörter im Text. Du musst dafür nicht alles lesen.\n\n(3) Lies die gefundene Stelle genau und vergleiche sie mit der Frage.\n\nDie Fragen folgen meistens der Reihenfolge des Textes."
+      },
+      {
+        "kind": "terms",
+        "title": "Kernaussage und Absicht",
+        "body": "Die Kernaussage gilt für den ganzen Text. Eine Zahl, ein Name oder ein Beispiel ist nur eine Einzelheit. Die Kernaussage steht oft in der Überschrift, am Anfang oder am Ende.\n\n| Der Text will | Daran erkennst du es |\n| --- | --- |\n| informieren | Tatsachen, Zahlen, neutraler Ton |\n| überzeugen | Meinung, Forderung, direkte Ansprache |\n| unterhalten | Spannung, Humor |"
       },
       {
         "kind": "formula",
         "title": "Richtig, falsch, steht nicht im Text",
-        "body": "Die Aussage wird Wort für Wort mit dem Text verglichen.\n\n- **richtig**: Der Text sagt genau das (auch in anderen Worten).\n- **falsch**: Der Text sagt das **Gegenteil** oder etwas **anderes** (*eine Pause* ≠ *ganzer Tag*, *nur gibt es leider auch schwarze Schafe* ≠ *Jäger schützen immer die Natur*).\n- **steht nicht im Text**: klingt plausibel, kommt aber nicht vor. Vermutungen zählen nicht.\n\nAchte auf **absolute Wörter** in der Aussage: *immer, nie, alle, gar nicht, nur*. Sie machen eine Aussage oft falsch."
+        "body": "| Du kreuzt an | Wenn … | Beispiel zum Text: 62 Prozent finden die Regel gut. |\n| --- | --- | --- |\n| richtig | der Text dasselbe sagt, auch mit anderen Wörtern | *Die Mehrheit ist für die Regel.* |\n| falsch | der Text etwas anderes sagt | *Fast alle sind für die Regel.* |\n| steht nicht im Text | der Text dazu gar nichts sagt | *Die Lehrkräfte sind dagegen.* |\n\nPrüf Wörter wie immer, nie, alle und nur besonders genau. Schon eine Ausnahme macht eine solche Aussage falsch."
       },
       {
-        "kind": "formula",
-        "title": "Kernaussage und Absicht",
-        "body": "**Kernaussage**: Was sagt der Text **insgesamt**? Suche das Wort oder den Satz, der alles zusammenhält (*gemischte Bilanz*, *Trophäenjäger als Naturschützer*). Antworten, die nur zu einem einzelnen Satz passen, sind keine Kernaussage.\n\n**Absicht (Intention)**: **informieren** (Fakten, neutral), **appellieren/überzeugen** (Meinung, Aufforderung, direkte Ansprache *Und du?*), **unterhalten** (Spannung, Humor), **erzählen** (Handlung, Figuren)."
+        "kind": "terms",
+        "title": "These, Argument, Beispiel",
+        "body": "| Baustein | Was er tut | Signale | Beispiel |\n| --- | --- | --- | --- |\n| These | nennt den Standpunkt | gut, schlecht, sollte | *Schulkleidung ist eine gute Idee.* |\n| Argument | sagt, warum | weil, denn, da | *… weil der Druck durch Markenkleidung wegfällt.* |\n| Beispiel | zeigt es an einem Fall | zum Beispiel, eine Studie, eine Zahl | *In Hamburg fühlten sich weniger Kinder ausgegrenzt.* |\n\nWörter wie allerdings, jedoch und andererseits kündigen an, dass der Text zur Gegenseite wechselt."
       },
       {
-        "kind": "formula",
+        "kind": "steps",
         "title": "Belegen und zitieren",
-        "body": "Ein Beleg ist eine **wörtliche Textstelle** mit **Zeilenangabe**:\n\n*„… der durch keinen Zaun getrennt … steht.“ (Z. 4/5)*\n\n- Anführungszeichen setzen, Auslassungen mit *(…)* kennzeichnen.\n- Der Beleg muss die **Aussage selbst** stützen, nicht nur zum Thema passen.\n- Bei Diagrammen: Zahlen nennen und rechnen (*17 von 26, also mehr als die Hälfte*)."
+        "body": "(1) Schreib die Stelle wörtlich ab und verändere kein Wort.\n\n(2) Setz sie in Anführungszeichen.\n\n(3) Gib die Zeile an, zum Beispiel (Z. 5).\n\n(4) Kennzeichne eine Auslassung mit drei Punkten in Klammern.\n\nSo sieht es aus: *„62 Prozent finden die Regel gut“ (Z. 5)*. Der Beleg muss genau das beweisen, was du behauptest."
+      },
+      {
+        "kind": "steps",
+        "title": "Eine Grafik oder Tabelle lesen",
+        "body": "(1) Lies die Überschrift: Worum geht es?\n\n(2) Lies die Beschriftungen: Was steht an den Achsen oder in den Spalten, und in welcher Einheit?\n\n(3) Such den größten und den kleinsten Wert.\n\n(4) Rechne, wenn die Frage es verlangt: Für mehr als die Hälfte brauchst du die Summe aller Werte."
       },
       {
         "kind": "mistake",
         "title": "Typische Fehler",
-        "body": "- Nur **einmal** lesen und aus dem Gedächtnis antworten.\n- *Plausibel* mit *richtig* verwechseln: Was nicht dasteht, ist **steht nicht im Text**.\n- Beleg ohne Zeilenangabe oder ohne Anführungszeichen.\n- Beim Diagramm die **Einheit** und das **Ganze** übersehen (*mehr als die Hälfte* braucht die Summe)."
+        "body": "| Fehler | Besser so |\n| --- | --- |\n| Erst den ganzen Text lesen und dann aus dem Gedächtnis antworten | Erst die Frage lesen, dann die Stelle suchen |\n| Eine Aussage ankreuzen, weil sie vernünftig klingt | Nur ankreuzen, was im Text steht |\n| Ein Zitat ohne Zeile oder ohne Anführungszeichen | Immer beides angeben |\n| Ein Beispiel für ein Argument halten | Fragen: Antwortet der Satz auf warum? |"
       },
       {
         "kind": "remember",
         "title": "Merke",
-        "body": "Überfliegen → Aufgaben + Schlüsselwörter → gründlich lesen + markieren → belegen mit **Zeilenangabe**. Absolute Wörter (*immer, nie, alle*) sind Warnsignale."
+        "body": "- Lies immer zuerst die Frage und dann den Text.\n- Die Kernaussage gilt für den ganzen Text, eine Einzelheit nur für eine Stelle.\n- Falsch bedeutet, dass der Text widerspricht, und steht nicht im Text bedeutet, dass er schweigt.\n- Ein Zitat braucht Anführungszeichen und eine Zeilenangabe."
       }
-    ],
-    "primer": "P_DE_LESEN"
+    ]
   }
 ]

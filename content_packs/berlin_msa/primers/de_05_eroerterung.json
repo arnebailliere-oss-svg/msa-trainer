@@ -2,74 +2,451 @@
   {
     "id": "P_DE_EROERTERUNG",
     "subject": "DE",
-    "title": "Die Erörterung von Anfang an",
-    "teaser": "Was eine Erörterung ist, was These und Argument bedeuten und wie der Text von der Einleitung bis zum Schluss gebaut wird",
-    "hook": "Eine Erörterung klingt nach etwas Großem. Dabei ist sie nur ein Text, der eine Frage von zwei Seiten anschaut und am Ende entscheidet, wie ein Richter. Wenn du den Bauplan kennst, kann dir beim Schreiben wenig passieren.",
-    "outro": "Einleitung, Pro, Kontra, Schluss. These, Argument, Begründung, Beispiel. Mit diesen Wörtern kannst du jetzt die Lektion und jeden Schreibplan lesen.",
+    "title": "Die Erörterung: vom Plan zum Text",
+    "teaser": "Wie du eine Frage von zwei Seiten betrachtest und am Ende deine Meinung sagst. Zuerst der Schreibplan, der in der Prüfung eigene Punkte bringt, dann der Text: Einleitung, Hauptteil und Schluss, mit einem Beispiel, wie aus einer Zeile im Plan ein ganzer Absatz wird.",
+    "hook": "Der längste Text, den du in der Deutschprüfung schreibst, hat einen Namen, der viele einschüchtert. Dabei ist er nichts anderes als ein geordnetes Nachdenken auf Papier. Du schaust dir eine Frage von zwei Seiten an und entscheidest am Ende, was du selbst denkst. Wenn du den Bauplan kennst, musst du nur noch die Fächer füllen.",
+    "outro": "Du kennst jetzt den ganzen Weg. Zuerst füllst du den Schreibplan aus: Einleitung, zwei Seiten mit je drei Argumenten, Schluss. Dann machst du aus jeder Zeile einen Absatz mit Behauptung, Begründung und Beispiel. Deine eigene Meinung sagst du erst im Schluss. Und du schreibst in Standardsprache und in der Gegenwart.",
+    "standard": 2,
+    "requires": [
+      "P_DE_LESEN",
+      "P_DE_ARGUMENT",
+      "P_DE_ZEITFORMEN",
+      "P_DE_REGISTER"
+    ],
     "steps": [
       {
-        "title": "Was ist eine Erörterung?",
-        "body": "Ein Text, in dem du eine **Frage** von **zwei Seiten** betrachtest.\n\n*Sind soziale Medien gut für uns?*\n\nDafür. Dagegen. Und am Ende: deine Meinung.",
-        "say": "Kein Aufsatz über deine Gefühle. Ein Text, der abwägt wie ein Richter."
+        "chapter": "Was von dir verlangt wird",
+        "title": "Eine Frage, zwei Seiten",
+        "body": "*Sind soziale Medien gut für uns?*\n\nEiniges spricht dafür.\nEiniges spricht dagegen.\n\nEin Text, der beide Seiten abwägt, heißt **Erörterung**.",
+        "say": "Bei einer Erörterung bekommst du eine Frage, auf die es keine einfache Antwort gibt. Du sollst zeigen, was dafür spricht und was dagegen. Erst ganz am Ende sagst du, wie du selbst die Sache siehst. Du arbeitest wie ein Richter, der beide Seiten anhört, bevor er urteilt."
       },
       {
-        "title": "Drei Teile",
-        "body": "**Einleitung**: Warum reden wir darüber?\n\n**Hauptteil**: Pro und Kontra\n\n**Schluss**: deine Meinung und ein Fazit",
-        "say": "Jede Erörterung hat diese drei Teile. Wer sie sauber hat, hat schon die halbe Note."
+        "title": "Zwei Aufgaben, zweimal Punkte",
+        "body": "(1) Der **Schreibplan**: eine Tabelle mit Stichpunkten.\n\n(2) Der **Text**: die ausgeschriebene Erörterung.\n\nBeides wird bewertet.",
+        "say": "In der Prüfung bekommst du zuerst eine leere Tabelle. In sie trägst du in Stichpunkten ein, was du schreiben willst. Das ist der Schreibplan, und er bringt fast so viele Punkte wie der Text selbst. Lass ihn deshalb nie aus, auch wenn du lieber gleich losschreiben würdest."
       },
       {
+        "title": "Die drei Teile des Textes",
+        "body": "**Einleitung**: Worum geht es?\n**Hauptteil**: Was spricht dafür, was dagegen?\n**Schluss**: Was denke ich?",
+        "tasks": [
+          {
+            "text": "In welchem Teil sagst du deine eigene Meinung? ___",
+            "choices": [
+              "im Schluss",
+              "in der Einleitung"
+            ],
+            "correct": "im Schluss",
+            "why": "Zuerst zeigst du beide Seiten. Erst danach urteilst du.",
+            "hint": "Wann spricht ein Richter sein Urteil: am Anfang oder am Ende?"
+          }
+        ],
+        "say": "Jede Erörterung hat diese drei Teile. Die Einleitung führt zum Thema hin. Der Hauptteil ist der längste Teil und enthält alle Argumente beider Seiten. Im Schluss sagst du deine eigene Meinung. Wenn diese drei Teile klar erkennbar sind, ist schon viel gewonnen."
+      },
+      {
+        "title": "Jetzt du: die drei Teile",
+        "body": "Tipp bei jedem Satz auf den Teil, in den er gehört.",
+        "tasks": [
+          {
+            "text": "Jeder Zweite schaut schon vor dem Frühstück auf sein Handy. Der Satz gehört ___.",
+            "choices": [
+              "in die Einleitung",
+              "in den Schluss"
+            ],
+            "correct": "in die Einleitung",
+            "why": "Der Satz weckt Interesse und führt zum Thema hin.",
+            "hint": "Ist das ein Urteil, oder führt der Satz zum Thema hin?"
+          },
+          {
+            "text": "Ich bin der Ansicht, dass die Nachteile überwiegen. Der Satz gehört ___.",
+            "choices": [
+              "in den Schluss",
+              "in die Einleitung"
+            ],
+            "correct": "in den Schluss",
+            "why": "Hier urteilt der Schreiber und sagt seine eigene Meinung.",
+            "hint": "Wessen Meinung steht in dem Satz?"
+          }
+        ],
+        "say": "Überleg bei jedem Satz, welche Aufgabe er hat. Führt er zum Thema hin, nennt er ein Argument, oder ist er ein Urteil?"
+      },
+      {
+        "chapter": "Der Schreibplan",
+        "title": "Die Felder der Tabelle",
+        "body": "Einleitung\n**These** mit drei Argumenten\n**Gegenthese** mit drei Argumenten\nSchluss",
+        "say": "So sieht der Schreibplan aus. Die These ist der eine Standpunkt, zum Beispiel: Soziale Medien sind eine Bereicherung. Die Gegenthese ist der entgegengesetzte Standpunkt. Zu jedem der beiden trägst du drei Argumente ein. Dazu kommen ein Feld für die Einleitung und eins für den Schluss."
+      },
+      {
+        "title": "Stichpunkte reichen",
+        "body": "*Vereinsamung: lieber online als treffen; Studie zu Vielnutzern*\n\nIm Plan schreibst du **keine ganzen Sätze**.",
+        "say": "Im Schreibplan sparst du Zeit. Du notierst nur die Gedanken, nicht die fertigen Sätze. Ein Wort für die Behauptung, ein paar Wörter für den Grund und ein Hinweis auf dein Beispiel. Ausformuliert wird erst im Text."
+      },
+      {
+        "title": "Ein Argument hat drei Teile",
+        "body": "**Behauptung**: Soziale Medien machen einsam.\n**Begründung**: Viele schreiben lieber, als sich zu treffen.\n**Beispiel**: Vielnutzer treffen seltener Freunde.",
+        "tasks": [
+          {
+            "text": "Im Plan steht nur: Soziale Medien sind schlecht. Es fehlen ___.",
+            "choices": [
+              "Begründung und Beispiel",
+              "Einleitung und Schluss"
+            ],
+            "correct": "Begründung und Beispiel",
+            "why": "Der Satz ist nur eine Behauptung. Ein Argument braucht noch zwei Teile.",
+            "hint": "Aus welchen drei Teilen besteht ein Argument? Welcher steht schon da?"
+          }
+        ],
+        "say": "Das kennst du aus der Lektion über Argumente. Eine Behauptung allein überzeugt niemanden. Sie braucht einen Grund, und der Grund braucht einen Fall, an dem man ihn sieht. Achte schon im Plan darauf, dass jedes Argument alle drei Teile hat."
+      },
+      {
+        "title": "Gleich viele auf beiden Seiten",
+        "body": "Drei Argumente dafür.\n\nDrei Argumente dagegen.\n\nDer Text soll **ausgewogen** sein.",
+        "say": "Eine Erörterung soll beide Seiten ernst nehmen. Wenn du fünf Argumente für eine Seite hast und nur eins für die andere, wirkt der Text einseitig. Such deshalb so lange, bis beide Seiten gleich stark besetzt sind. Auch für die Seite, die du selbst nicht vertrittst."
+      },
+      {
+        "title": "Das stärkste Argument kommt zuletzt",
+        "body": "Ordne die Argumente jeder Seite: vom schwächsten zum **stärksten**.\n\nWas zuletzt kommt, bleibt im Kopf.",
+        "tasks": [
+          {
+            "text": "Dein stärkstes Argument steht in der Reihe ___.",
+            "choices": [
+              "an letzter Stelle",
+              "an erster Stelle"
+            ],
+            "correct": "an letzter Stelle",
+            "why": "Was der Leser zuletzt liest, bleibt ihm am besten im Kopf.",
+            "hint": "Woran erinnert man sich nach dem Lesen am besten?"
+          }
+        ],
+        "say": "Menschen erinnern sich am besten an das, was sie zuletzt gelesen haben. Deshalb steht dein stärkstes Argument am Ende. Die Seite, für die du dich im Schluss entscheidest, behandelst du im Hauptteil als zweite. So führt der Text ganz natürlich zu deinem Urteil."
+      },
+      {
+        "title": "Jetzt du: den Plan füllen",
+        "body": "Die Frage lautet: Sollte die Schule später beginnen? Tipp auf die richtige Lösung.",
+        "tasks": [
+          {
+            "text": "Jugendliche morgens müde, lernen schlechter. Der Stichpunkt gehört ___.",
+            "choices": [
+              "zu den Argumenten dafür",
+              "in den Schluss"
+            ],
+            "correct": "zu den Argumenten dafür",
+            "why": "Müdigkeit am Morgen spricht für einen späteren Beginn.",
+            "hint": "Spricht dieser Gedanke für oder gegen den späteren Beginn?"
+          },
+          {
+            "text": "Unterricht bis in den späten Nachmittag. Der Stichpunkt gehört ___.",
+            "choices": [
+              "zu den Argumenten dagegen",
+              "zu den Argumenten dafür"
+            ],
+            "correct": "zu den Argumenten dagegen",
+            "why": "Ein später Schulschluss ist ein Nachteil.",
+            "hint": "Ist ein später Schulschluss ein Vorteil oder ein Nachteil?"
+          },
+          {
+            "text": "Meine Meinung: später Beginn, aber nur eine halbe Stunde. Der Stichpunkt gehört ___.",
+            "choices": [
+              "in den Schluss",
+              "in die Einleitung"
+            ],
+            "correct": "in den Schluss",
+            "why": "Die eigene Meinung steht erst am Ende.",
+            "hint": "In welchem Teil steht dein eigenes Urteil?"
+          }
+        ],
+        "say": "Hier siehst du Stichpunkte für einen Schreibplan. Überleg bei jedem, in welches Feld der Tabelle er gehört."
+      },
+      {
+        "chapter": "Vom Plan zum Text",
         "title": "Die Einleitung",
-        "body": "Ein **Aufhänger**: eine Zahl, ein Zitat, eine kleine Geschichte.\n\nDann die **Frage**.\n\n*Jeder Zweite schaut vor dem Frühstück aufs Handy. Aber tut uns das gut?*",
-        "say": "Die Einleitung soll neugierig machen. Und sie verrät noch nicht, was du denkst."
+        "body": "*Jeder Zweite schaut schon vor dem Frühstück auf sein Handy. Doch tut uns das gut?*\n\nErst ein Aufhänger, dann die **Frage**.\n\nDeine Meinung verrätst du hier noch nicht.",
+        "say": "Die Einleitung ist kurz, zwei bis vier Sätze reichen. Sie beginnt mit etwas, das neugierig macht: einer Zahl, einer Beobachtung oder einer kleinen Szene. Danach nennst du die Frage, um die es geht. Was du selbst denkst, bleibt noch dein Geheimnis."
       },
       {
-        "title": "Was ist eine These?",
-        "body": "Eine **These** ist eine Behauptung, die man begründen kann.\n\n*Soziale Medien sind eine Bereicherung.*\n\nDie **Gegenthese** sagt das Gegenteil.",
-        "say": "These heißt nur: Standpunkt. Nicht Wahrheit. Darum braucht sie Argumente."
+        "title": "Aus einer Zeile wird ein Absatz",
+        "body": "Im Plan: *Vereinsamung: lieber online als treffen; Vielnutzer*\n\nIm Text: *Soziale Medien können einsam machen. Viele schreiben lieber Nachrichten, als sich zu verabreden. So treffen Jugendliche, die sehr viel online sind, ihre Freunde seltener.*",
+        "say": "Schau genau, was hier passiert ist. Aus dem ersten Stichwort wurde der Satz mit der Behauptung. Aus dem zweiten wurde die Begründung. Aus dem dritten wurde das Beispiel. Drei Stichpunkte, drei Sätze, ein Absatz. So verfährst du mit jeder Zeile deines Plans."
       },
       {
-        "title": "Was ist ein Argument?",
-        "body": "**Behauptung**: Soziale Medien fördern Einsamkeit.\n\n**Begründung**: weil viele lieber online chatten, als sich zu treffen.\n\n**Beispiel**: Studien zeigen, dass Vielnutzer seltener Freunde treffen.",
-        "say": "Drei B: Behauptung, Begründung, Beispiel. Ohne Begründung ist es nur eine Meinung."
-      },
-      {
-        "title": "Der Hauptteil",
-        "body": "These + 3 Argumente\n\nGegenthese + 3 Argumente\n\nJedes Argument ein **eigener Absatz**.\n\nDas stärkste Argument **zuletzt**.",
-        "say": "Das Letzte bleibt hängen. Darum kommt das stärkste Argument ganz ans Ende jeder Seite."
-      },
-      {
-        "title": "Der Schluss",
-        "body": "Jetzt erst: **deine Meinung**.\n\nEin **Fazit**: Was wiegt schwerer?\n\nEine **Empfehlung**: Was sollte man tun?",
-        "say": "Im Schluss darfst du endlich Ich sagen. Vorher bleibst du neutral."
-      },
-      {
-        "title": "Der Schreibplan",
-        "body": "Bevor du schreibst: eine **Tabelle**.\n\nEinleitung · These + 3 Argumente · Gegenthese + 3 Argumente · Schluss\n\nDer Plan gibt in der Prüfung **eigene Punkte**.",
-        "say": "Fünf Minuten Plan sparen zwanzig Minuten Chaos. Und der Plan wird sogar bezahlt."
+        "title": "Ein Argument, ein Absatz",
+        "body": "Jedes Argument bekommt einen **eigenen Absatz**.\n\nZwischen den Absätzen lässt du eine Zeile frei oder rückst ein.",
+        "tasks": [
+          {
+            "text": "Im Plan stehen drei Argumente dafür und drei dagegen. Der Hauptteil hat ___ Absätze.",
+            "choices": [
+              "sechs",
+              "zwei"
+            ],
+            "correct": "sechs",
+            "why": "Jedes Argument bekommt einen eigenen Absatz.",
+            "hint": "Wie viele Argumente sind es zusammen?"
+          }
+        ],
+        "say": "Absätze machen deinen Text übersichtlich. Der Leser sieht sofort, wo ein Gedanke aufhört und der nächste anfängt. Bei drei Argumenten auf jeder Seite hat dein Hauptteil also sechs Absätze. Dazu kommen einer für die Einleitung und einer für den Schluss."
       },
       {
         "title": "Wörter, die verbinden",
-        "body": "*Ein weiterer Vorteil ist …*\n\n*Jedoch …* · *Andererseits …*\n\n*Zu guter Letzt …*\n\n*Insgesamt …*",
-        "say": "Überleitungen sind die Brücken zwischen deinen Absätzen. Ohne sie holpert der Text."
+        "body": "Ein weiteres Argument: *Außerdem …, Hinzu kommt …*\nDie Gegenseite: *Allerdings …, Andererseits …*\nDas stärkste Argument: *Vor allem …, Am wichtigsten ist …*",
+        "tasks": [
+          {
+            "text": "Du wechselst von den Vorteilen zu den Nachteilen. Der Absatz beginnt mit ___.",
+            "choices": [
+              "Allerdings",
+              "Außerdem"
+            ],
+            "correct": "Allerdings",
+            "why": "Das Wort kündigt an, dass jetzt die andere Seite kommt.",
+            "hint": "Welches der beiden Wörter kündigt einen Einwand an?"
+          }
+        ],
+        "say": "Ohne Verbindungen stehen deine Absätze wie einzelne Klötze nebeneinander. Mit einem kleinen Wort am Anfang zeigst du, wie der neue Gedanke zum vorigen passt. Besonders wichtig ist die Stelle, an der du von der einen Seite zur anderen wechselst. Dort gehört ein deutliches Signal hin."
+      },
+      {
+        "title": "Der Schluss",
+        "body": "(1) Deine **Meinung**: *Meiner Ansicht nach überwiegen …*\n\n(2) Der wichtigste Grund dafür.\n\n(3) Ein Vorschlag oder ein Ausblick.",
+        "say": "Jetzt darfst du endlich ich sagen. Du nennst deine Entscheidung und sagst, welches Argument dich am meisten überzeugt hat. Diese Zusammenfassung mit Urteil nennt man **Fazit**. Zum Abschluss kannst du einen Vorschlag machen, was man tun sollte."
+      },
+      {
+        "title": "Im Schluss kommt nichts Neues",
+        "body": "Der Schluss **wiederholt** das stärkste Argument.\n\nEr bringt **kein neues** Argument.",
+        "tasks": [
+          {
+            "text": "Beim Schluss fällt dir ein neues Argument ein. Es gehört ___.",
+            "choices": [
+              "in den Hauptteil",
+              "in den Schluss"
+            ],
+            "correct": "in den Hauptteil",
+            "why": "Im Schluss wird nur noch geurteilt und zusammengefasst.",
+            "hint": "In welchem Teil stehen alle Argumente?"
+          }
+        ],
+        "say": "Das ist ein häufiger Fehler. Beim Schreiben des Schlusses fällt einem plötzlich noch ein guter Gedanke ein, und man schreibt ihn dazu. Im Schluss wird aber nur noch geurteilt. Ein neues Argument gehört in den Hauptteil. Wenn dir eins einfällt, trag es dort nach."
+      },
+      {
+        "title": "Jetzt du: Was passt wohin?",
+        "body": "Tipp bei jedem Satz auf die richtige Lösung.",
+        "tasks": [
+          {
+            "text": "Hinzu kommt, dass man online leicht neue Leute kennenlernt. Der Satz steht ___.",
+            "choices": [
+              "im Hauptteil",
+              "im Schluss"
+            ],
+            "correct": "im Hauptteil",
+            "why": "Hinzu kommt leitet ein weiteres Argument ein.",
+            "hint": "Was kündigen die Wörter hinzu kommt an?"
+          },
+          {
+            "text": "Welcher Satz passt in eine Einleitung? ___",
+            "choices": [
+              "Fast jeder Jugendliche hat heute ein Smartphone.",
+              "Deshalb bin ich dagegen."
+            ],
+            "correct": "Fast jeder Jugendliche hat heute ein Smartphone.",
+            "why": "Der Satz führt zum Thema hin und verrät noch keine Meinung.",
+            "hint": "Welcher der beiden Sätze verrät noch keine eigene Meinung?"
+          },
+          {
+            "text": "Welcher Satz passt in einen Schluss? ___",
+            "choices": [
+              "Insgesamt überzeugen mich die Vorteile mehr.",
+              "Ein weiterer Nachteil ist die Ablenkung."
+            ],
+            "correct": "Insgesamt überzeugen mich die Vorteile mehr.",
+            "why": "Der Satz fällt ein Urteil. Der andere bringt ein neues Argument.",
+            "hint": "Welcher der beiden Sätze bringt ein neues Argument und gehört deshalb nicht in den Schluss?"
+          }
+        ],
+        "say": "Frag dich bei jedem Satz, ob er ein Thema eröffnet, ein Argument verbindet oder ein Urteil spricht."
+      },
+      {
+        "chapter": "Sprache und Kontrolle",
+        "title": "So schreibst du",
+        "body": "(1) Im **Präsens**: *Soziale Medien verbinden Menschen.*\n\n(2) In **Standardsprache**, ohne Füllwörter.\n\n(3) **Sachlich**, bis zum Schluss ohne ich.",
+        "say": "Eine Erörterung steht in der Gegenwart, denn sie spricht über etwas, das jetzt gilt. Du schreibst sachlich und in ganzen Sätzen. Wörter wie voll, halt und irgendwie haben hier keinen Platz. Das Wort ich benutzt du erst im Schluss."
+      },
+      {
+        "title": "Die Kontrolle am Ende",
+        "body": "(1) Sind Einleitung, Hauptteil und Schluss erkennbar?\n\n(2) Hat jedes Argument Behauptung, Begründung und Beispiel?\n\n(3) Steht die eigene Meinung nur im Schluss?\n\n(4) Stimmen Kommas und Großschreibung?",
+        "tasks": [
+          {
+            "text": "Soziale Medien sind halt voll praktisch. Was stört an diesem Satz in einer Erörterung? ___",
+            "choices": [
+              "die Umgangssprache",
+              "die Länge"
+            ],
+            "correct": "die Umgangssprache",
+            "why": "Halt und voll gehören nicht in einen sachlichen Text.",
+            "hint": "Welche Wörter in dem Satz würdest du in einer Zeitung nicht finden?"
+          }
+        ],
+        "say": "Plane für diese Kontrolle fünf Minuten ein. Lies deinen Text einmal nur auf den Aufbau durch und einmal nur auf die Sprache. Die meisten Punkte gehen nicht durch fehlende Ideen verloren. Sie gehen durch fehlende Begründungen und durch Fehler verloren, die man beim Durchlesen gefunden hätte."
+      },
+      {
+        "title": "Jetzt du: Fehler im Aufbau finden",
+        "body": "Tipp bei jeder Aufgabe auf die richtige Lösung.",
+        "tasks": [
+          {
+            "text": "Eine Erörterung beginnt mit: Ich finde soziale Medien schlecht. Der Fehler ist: ___",
+            "choices": [
+              "Die Meinung steht schon in der Einleitung.",
+              "Der Satz ist zu kurz."
+            ],
+            "correct": "Die Meinung steht schon in der Einleitung.",
+            "why": "Die eigene Meinung gehört erst in den Schluss.",
+            "hint": "In welchem Teil darf die eigene Meinung stehen?"
+          },
+          {
+            "text": "Ein Text nennt fünf Vorteile und keinen Nachteil. Der Fehler ist: ___",
+            "choices": [
+              "Er ist nicht ausgewogen.",
+              "Er ist zu lang."
+            ],
+            "correct": "Er ist nicht ausgewogen.",
+            "why": "Eine Erörterung soll beide Seiten zeigen.",
+            "hint": "Wie viele Seiten einer Frage soll eine Erörterung zeigen?"
+          }
+        ],
+        "say": "Denk an das, was du über die drei Teile, die Argumente und die Sprache gelernt hast."
+      },
+      {
+        "title": "Das nimmst du mit",
+        "body": "(1) Erst der **Schreibplan**, dann der Text.\n\n(2) Jedes Argument: Behauptung, Begründung, Beispiel, ein Absatz.\n\n(3) Das stärkste Argument zuletzt.\n\n(4) Die eigene Meinung erst im Schluss.",
+        "tasks": [
+          {
+            "text": "Womit beginnst du in der Prüfung? ___",
+            "choices": [
+              "mit dem Schreibplan",
+              "mit dem ersten Satz des Textes"
+            ],
+            "correct": "mit dem Schreibplan",
+            "why": "Der Plan ordnet deine Gedanken und bringt eigene Punkte.",
+            "hint": "Was bringt eigene Punkte und spart dir später Zeit?"
+          }
+        ],
+        "say": "Das sind die vier Regeln, die deine Erörterung tragen. Wenn du in der Prüfung nervös wirst, halt dich an den Plan. Er führt dich Schritt für Schritt durch den Text. Gleich kommen noch die Wörter zum Nachlesen und ein kleines Quiz."
       }
     ],
     "vocab": [
-      { "term": "Erörterung", "plain": "Text, der eine Frage von zwei Seiten abwägt.", "example": "dialektisch = Pro und Kontra" },
-      { "term": "These", "plain": "Ein Standpunkt, den man begründen kann.", "example": "Soziale Medien sind eine Bereicherung." },
-      { "term": "Gegenthese", "plain": "Der entgegengesetzte Standpunkt.", "example": "Soziale Medien schaden." },
-      { "term": "Argument", "plain": "Behauptung + Begründung + Beispiel.", "example": "die drei B" },
-      { "term": "Begründung", "plain": "Das Warum hinter einer Behauptung.", "example": "…, weil …" },
-      { "term": "Beispiel / Beleg", "plain": "Etwas Konkretes, das die Begründung zeigt.", "example": "eine Studie, eine Zahl, eine Erfahrung" },
-      { "term": "Fazit", "plain": "Das Ergebnis am Ende.", "example": "Insgesamt überwiegen …" },
-      { "term": "Schreibplan", "plain": "Die Tabelle vor dem Schreiben.", "example": "Gliederungsraster" },
-      { "term": "Überleitung", "plain": "Ein Satz, der Absätze verbindet.", "example": "Ein weiterer Vorteil ist …" }
+      {
+        "term": "Erörterung",
+        "plain": "Ein Text, der eine Frage von zwei Seiten betrachtet und am Ende urteilt."
+      },
+      {
+        "term": "Schreibplan",
+        "plain": "Eine Tabelle mit Stichpunkten: Einleitung, These mit Argumenten, Gegenthese mit Argumenten, Schluss."
+      },
+      {
+        "term": "Gegenthese",
+        "plain": "Der Standpunkt, der der These widerspricht."
+      },
+      {
+        "term": "Behauptung, Begründung, Beispiel",
+        "plain": "Die drei Teile eines Arguments."
+      },
+      {
+        "term": "Fazit",
+        "plain": "Die Zusammenfassung mit Urteil im Schluss."
+      },
+      {
+        "term": "ausgewogen",
+        "plain": "Beide Seiten haben gleich viele Argumente."
+      },
+      {
+        "term": "Außerdem, Allerdings, Vor allem",
+        "plain": "Wörter, die Absätze verbinden: ein weiteres Argument, die Gegenseite, das stärkste Argument."
+      }
     ],
     "quiz": [
-      { "prompt": "Aus welchen drei Teilen besteht eine Erörterung?", "choices": ["Einleitung, Hauptteil, Schluss", "These, Beispiel, Fazit", "Frage, Antwort, Meinung", "Anfang, Mitte, Appell"], "correct": "Einleitung, Hauptteil, Schluss", "explain": "Diese drei Teile hat jede Erörterung." },
-      { "prompt": "Was ist eine These?", "choices": ["Eine Behauptung, die man begründen kann", "Eine Frage", "Ein Beispiel", "Eine Zusammenfassung"], "correct": "Eine Behauptung, die man begründen kann", "explain": "Ein Standpunkt, kein Beweis. Darum braucht sie Argumente." },
-      { "prompt": "Welcher Satz ist eine Begründung?", "choices": ["…, weil viele lieber online chatten, als sich zu treffen.", "Soziale Medien sind schlecht.", "Ich finde Handys toll.", "Man sollte Handys verbieten."], "correct": "…, weil viele lieber online chatten, als sich zu treffen.", "explain": "Eine Begründung erklärt das Warum, oft mit *weil*." },
-      { "prompt": "Wo steht deine eigene Meinung?", "choices": ["Im Schluss", "In der Einleitung", "Im ersten Argument", "In jedem Absatz"], "correct": "Im Schluss", "explain": "Vorher bleibst du neutral und wägst ab." },
-      { "prompt": "Welches Argument kommt zuletzt?", "choices": ["Das stärkste", "Das schwächste", "Das kürzeste", "Das ist egal"], "correct": "Das stärkste", "explain": "Das Letzte bleibt beim Leser hängen." }
+      {
+        "prompt": "Aus welchen drei Teilen besteht eine Erörterung?",
+        "choices": [
+          "Einleitung, Hauptteil, Schluss",
+          "These, Zitat, Quelle",
+          "Frage, Antwort, Beispiel",
+          "Plan, Text, Korrektur"
+        ],
+        "correct": "Einleitung, Hauptteil, Schluss",
+        "explain": "Die Einleitung führt zum Thema, der Hauptteil nennt die Argumente beider Seiten, und der Schluss urteilt."
+      },
+      {
+        "prompt": "Wo steht deine eigene Meinung?",
+        "choices": [
+          "im Schluss",
+          "in der Einleitung",
+          "in jedem Absatz",
+          "im Schreibplan ganz oben"
+        ],
+        "correct": "im Schluss",
+        "explain": "Zuerst zeigst du sachlich beide Seiten. Erst am Ende sagst du, wie du selbst urteilst."
+      },
+      {
+        "prompt": "Welche drei Teile hat ein Argument?",
+        "choices": [
+          "Behauptung, Begründung, Beispiel",
+          "Einleitung, Hauptteil, Schluss",
+          "Frage, Meinung, Ausblick",
+          "These, Gegenthese, Fazit"
+        ],
+        "correct": "Behauptung, Begründung, Beispiel",
+        "explain": "Die Behauptung sagt, was gilt. Die Begründung sagt, warum. Das Beispiel zeigt es an einem Fall."
+      },
+      {
+        "prompt": "Welches Argument steht am Ende einer Seite?",
+        "choices": [
+          "das stärkste",
+          "das schwächste",
+          "das kürzeste",
+          "das erste, das dir einfällt"
+        ],
+        "correct": "das stärkste",
+        "explain": "Was der Leser zuletzt liest, bleibt ihm am besten im Kopf."
+      },
+      {
+        "prompt": "Was gehört in die Einleitung?",
+        "choices": [
+          "ein Aufhänger und die Frage",
+          "deine Meinung",
+          "das stärkste Argument",
+          "das Fazit"
+        ],
+        "correct": "ein Aufhänger und die Frage",
+        "explain": "Die Einleitung macht neugierig und nennt das Thema. Die Meinung bleibt bis zum Schluss offen."
+      },
+      {
+        "prompt": "In welcher Zeitform schreibst du eine Erörterung?",
+        "choices": [
+          "im Präsens",
+          "im Präteritum",
+          "im Plusquamperfekt",
+          "im Futur"
+        ],
+        "correct": "im Präsens",
+        "explain": "Eine Erörterung spricht über etwas, das jetzt gilt. Deshalb steht sie in der Gegenwart."
+      },
+      {
+        "prompt": "Mit welchem Wort leitest du zur Gegenseite über?",
+        "choices": [
+          "Allerdings",
+          "Außerdem",
+          "Zum Beispiel",
+          "Hinzu kommt"
+        ],
+        "correct": "Allerdings",
+        "explain": "Allerdings kündigt einen Einwand an. Außerdem und hinzu kommt reihen ein weiteres Argument derselben Seite an."
+      },
+      {
+        "prompt": "Was darf im Schluss nicht stehen?",
+        "choices": [
+          "ein neues Argument",
+          "deine Meinung",
+          "ein Vorschlag",
+          "das wichtigste Argument noch einmal"
+        ],
+        "correct": "ein neues Argument",
+        "explain": "Im Schluss wird nur geurteilt und zusammengefasst. Neue Argumente gehören in den Hauptteil."
+      }
     ]
   }
 ]

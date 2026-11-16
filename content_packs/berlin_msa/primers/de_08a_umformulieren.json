@@ -1,0 +1,367 @@
+[
+  {
+    "id": "P_DE_UMFORMULIEREN",
+    "subject": "DE",
+    "title": "Wörter und Sätze umformulieren",
+    "teaser": "Dasselbe mit anderen Worten sagen: ein Wort durch ein gleichbedeutendes ersetzen, ein Fremdwort auf Deutsch ausdrücken, eine Redewendung auflösen und einen Satz gezielt verändern, zum Beispiel aus einer Vermutung eine Tatsache machen.",
+    "hook": "In der Prüfung gibt es eine Reihe kleiner Aufgaben, die alle dasselbe verlangen: Sag es anders. Mal sollst du ein Wort ersetzen, mal eine Redewendung erklären, mal einen Satz ein kleines Stück verändern. Das wirkt wie ein bunter Haufen. Dahinter steckt aber immer dieselbe Frage: Was ist hier eigentlich gemeint?",
+    "outro": "Du kannst jetzt auf mehrere Arten umformulieren. Für ein Wort findest du ein gleichbedeutendes, das in den Satz passt. Eine Redewendung löst du auf, indem du sagst, was gemeint ist. Und einen Satz veränderst du gezielt, indem du genau das eine Wort streichst oder ersetzt, das die Einschränkung oder die Vermutung trägt.",
+    "standard": 2,
+    "requires": [
+      "P_DE_WORTARTEN"
+    ],
+    "steps": [
+      {
+        "chapter": "Ein Wort ersetzen",
+        "title": "Wörter mit gleicher Bedeutung",
+        "body": "beginnen und anfangen\nschnell und rasch\nFehler und Irrtum\n\nEin Wort mit gleicher oder fast gleicher Bedeutung heißt **Synonym**.",
+        "say": "Für die meisten Wörter gibt es ein zweites, das dasselbe bedeutet. Solche Wortpaare nennt man Synonyme. In der Prüfung sollst du für ein unterstrichenes Wort ein Synonym finden. Das ist leichter, als es klingt, wenn du den ganzen Satz im Blick behältst."
+      },
+      {
+        "title": "Der Satz entscheidet",
+        "body": "*Er bewahrt einen **kühlen** Kopf.*\nGemeint ist: einen ruhigen Kopf.\n\n*Bei der **kühlen** Witterung kann er nicht bauen.*\nGemeint ist: bei der kalten Witterung.",
+        "tasks": [
+          {
+            "text": "Das war ein scharfer Ton. Ein passendes Synonym für scharf ist hier ___.",
+            "choices": [
+              "unfreundlich",
+              "spitz geschliffen"
+            ],
+            "correct": "unfreundlich",
+            "why": "Ein Ton kann nicht geschliffen sein. Gemeint ist die Art, wie jemand spricht.",
+            "hint": "Geht es um ein Messer oder um die Art, wie jemand spricht?"
+          }
+        ],
+        "say": "Dasselbe Wort kann in zwei Sätzen etwas Verschiedenes bedeuten. Ein kühler Kopf ist kein kalter Kopf, sondern ein ruhiger. Lies deshalb immer den ganzen Satz, bevor du ein Ersatzwort wählst. Es muss zu dem passen, was der Satz sagen will."
+      },
+      {
+        "title": "Die Probe: einsetzen",
+        "body": "Setz dein Wort in den Satz ein.\n\nKlingt der Satz richtig, und bedeutet er noch dasselbe?",
+        "say": "So prüfst du jedes Ersatzwort. Du liest den Satz mit dem neuen Wort leise vor. Wenn er sich richtig anhört und dieselbe Aussage hat, ist dein Wort gut. Wenn er seltsam klingt oder etwas anderes bedeutet, suchst du weiter."
+      },
+      {
+        "title": "Fremdwörter auf Deutsch sagen",
+        "body": "Konsum: Verbrauch\nProjekt: Vorhaben\nKooperation: Zusammenarbeit\nResonanz: Rückmeldung",
+        "tasks": [
+          {
+            "text": "Kooperation bedeutet auf Deutsch ___.",
+            "choices": [
+              "Zusammenarbeit",
+              "Aufstand"
+            ],
+            "correct": "Zusammenarbeit",
+            "why": "Wer kooperiert, arbeitet mit anderen zusammen.",
+            "hint": "Was tun zwei Firmen, wenn sie kooperieren?"
+          }
+        ],
+        "say": "Ein Fremdwort ist ein Wort, das aus einer anderen Sprache ins Deutsche gekommen ist. Für die meisten gibt es ein deutsches Wort mit derselben Bedeutung. In der Prüfung ordnest du beide einander zu. Viele Fremdwörter kennst du aus dem Alltag, ohne darüber nachzudenken."
+      },
+      {
+        "title": "Jetzt du: das passende Wort",
+        "body": "Tipp bei jedem Satz auf das Wort, das dasselbe bedeutet.",
+        "tasks": [
+          {
+            "text": "Das Smartphone übertrifft alles. Dasselbe bedeutet: Es ___ alles.",
+            "choices": [
+              "schlägt",
+              "stoppt"
+            ],
+            "correct": "schlägt",
+            "why": "Wer etwas übertrifft, ist besser als das andere.",
+            "hint": "Welches der beiden Wörter bedeutet besser sein als?"
+          },
+          {
+            "text": "Sie betrachtet ihn verstohlen. Dasselbe bedeutet: Sie betrachtet ihn ___.",
+            "choices": [
+              "heimlich",
+              "bewundernd"
+            ],
+            "correct": "heimlich",
+            "why": "Verstohlen bedeutet, dass niemand es bemerken soll.",
+            "hint": "Soll der andere merken, dass er betrachtet wird?"
+          },
+          {
+            "text": "Flexibilität bedeutet auf Deutsch ___.",
+            "choices": [
+              "Beweglichkeit",
+              "Verbrauch"
+            ],
+            "correct": "Beweglichkeit",
+            "why": "Wer flexibel ist, kann sich leicht umstellen und bewegen.",
+            "hint": "Was kann ein flexibler Mensch besonders gut?"
+          }
+        ],
+        "say": "Lies jeden Satz ganz. Setz dann beide Möglichkeiten nacheinander ein und hör, welche dieselbe Aussage ergibt."
+      },
+      {
+        "chapter": "Redewendungen auflösen",
+        "title": "Was eine Redewendung ist",
+        "body": "*die Hand ins Feuer legen*\n\nNiemand legt wirklich seine Hand ins Feuer.\n\nEin festes Sprachbild, das alle kennen, heißt **Redewendung**.",
+        "say": "Redewendungen sind feste Bilder, die man als Ganzes lernt. Man kann sie nicht Wort für Wort verstehen. Wer sagt, er lege für jemanden die Hand ins Feuer, meint: Ich bin mir ganz sicher, dass er ehrlich ist. Er garantiert für ihn."
+      },
+      {
+        "title": "Die Frage: Was ist gemeint?",
+        "body": "*Er hat einen Vogel.*\nGemeint ist: Er ist verrückt.\n\n*Sie hat alle Hände voll zu tun.*\nGemeint ist: Sie hat sehr viel Arbeit.",
+        "tasks": [
+          {
+            "text": "Er lässt den Kopf hängen. Ohne Redewendung: Er ist ___.",
+            "choices": [
+              "mutlos",
+              "sehr groß"
+            ],
+            "correct": "mutlos",
+            "why": "Wer den Kopf hängen lässt, hat die Hoffnung verloren.",
+            "hint": "Wie fühlt sich jemand, der mit gesenktem Kopf dasitzt?"
+          }
+        ],
+        "say": "In der Prüfung sollst du einen Satz so umschreiben, dass er keine Redewendung mehr enthält. Dafür stellst du dir eine einzige Frage: Was ist eigentlich gemeint? Die Antwort schreibst du in einfachen, sachlichen Worten hin. Das Bild verschwindet, der Sinn bleibt."
+      },
+      {
+        "title": "Nicht am Bild kleben bleiben",
+        "body": "*Ein Handwerker kann seine Hand dafür nicht ins Feuer legen.*\n\nFalsch: *Ein Handwerker verbrennt sich nicht die Hand.*\n\nRichtig: *Ein Handwerker kann dafür nicht garantieren.*",
+        "say": "Die falschen Antworten in der Prüfung nehmen das Bild wörtlich. Sie sprechen von Feuer und von Händen. Lass dich davon nicht verleiten. In der richtigen Antwort kommt das Bild überhaupt nicht mehr vor. Dort steht nur noch, was gemeint ist."
+      },
+      {
+        "title": "Jetzt du: Was ist gemeint?",
+        "body": "Tipp bei jeder Redewendung auf ihre Bedeutung.",
+        "tasks": [
+          {
+            "text": "Das ist nicht mein Bier. Gemeint ist: ___",
+            "choices": [
+              "Das geht mich nichts an.",
+              "Ich trinke kein Bier."
+            ],
+            "correct": "Das geht mich nichts an.",
+            "why": "Die Redewendung hat mit einem Getränk nichts zu tun.",
+            "hint": "In welcher Antwort kommt das Bild nicht mehr vor?"
+          },
+          {
+            "text": "Sie fällt mit der Tür ins Haus. Gemeint ist: ___",
+            "choices": [
+              "Sie kommt ohne Umschweife zur Sache.",
+              "Sie stolpert an der Haustür."
+            ],
+            "correct": "Sie kommt ohne Umschweife zur Sache.",
+            "why": "Gemeint ist, dass jemand sofort sagt, was er will.",
+            "hint": "Geht es wirklich um eine Tür, oder um die Art, wie jemand spricht?"
+          },
+          {
+            "text": "Er steht auf dem Schlauch. Gemeint ist: ___",
+            "choices": [
+              "Er versteht gerade nichts.",
+              "Er steht im Garten."
+            ],
+            "correct": "Er versteht gerade nichts.",
+            "why": "Wie bei einem geknickten Schlauch fließt nichts: Er begreift es nicht.",
+            "hint": "In welcher Antwort kommt der Schlauch nicht mehr vor?"
+          }
+        ],
+        "say": "Stell dir bei jeder Redewendung die Frage: Was will die Person damit sagen? Die richtige Antwort enthält das Bild nicht mehr."
+      },
+      {
+        "chapter": "Einen Satz gezielt verändern",
+        "title": "Eine Einschränkung streichen",
+        "body": "*Eigentlich habe ich immer gute Rückmeldungen bekommen.*\n\nOhne Einschränkung: *Ich habe immer gute Rückmeldungen bekommen.*\n\nDas Wort **eigentlich** schränkt ein.",
+        "say": "Manche kleinen Wörter machen eine Aussage vorsichtiger: eigentlich, fast, meistens, ziemlich, im Grunde. Sie schränken ein. Wenn die Aufgabe einen Satz ohne Einschränkung verlangt, streichst du genau dieses eine Wort. Den Rest des Satzes lässt du unverändert."
+      },
+      {
+        "title": "Aus einer Vermutung eine Tatsache machen",
+        "body": "Vermutung: *Sie **scheinen** Filmfans **zu sein**.*\n\nTatsache: *Sie **sind** Filmfans.*",
+        "tasks": [
+          {
+            "text": "Er ist vermutlich krank. Als Tatsache: ___",
+            "choices": [
+              "Er ist krank.",
+              "Er könnte krank sein."
+            ],
+            "correct": "Er ist krank.",
+            "why": "Das Wort der Unsicherheit ist gestrichen. Der Satz stellt jetzt fest.",
+            "hint": "In welchem der beiden Sätze steckt noch eine Unsicherheit?"
+          }
+        ],
+        "say": "Eine Vermutung ist etwas, das man nur annimmt. Du erkennst sie an Wörtern wie scheinen, vielleicht, wohl, vermutlich und könnte. Eine Tatsache steht einfach fest. Um aus der Vermutung eine Tatsache zu machen, entfernst du das Wort der Unsicherheit und setzt das Verb in die normale Form."
+      },
+      {
+        "title": "Aus gleich wird ungleich",
+        "body": "Gleichheit: *Er ist **so** groß **wie** ich.*\n\nUngleichheit: *Er ist größ**er als** ich.*",
+        "tasks": [
+          {
+            "text": "Sie ist so schnell wie ihr Bruder. Als Ungleichheit: Sie ist schneller ___ ihr Bruder.",
+            "choices": [
+              "als",
+              "wie"
+            ],
+            "correct": "als",
+            "why": "Nach einer gesteigerten Form steht dieses Wort.",
+            "hint": "Welches Wort stand auf der Tafel nach größer?"
+          }
+        ],
+        "say": "Wenn zwei Dinge gleich sind, sagst du so und wie. Wenn sie ungleich sind, steigerst du das Adjektiv und sagst als. Aus so groß wie wird größer als. Pass auf das letzte Wort auf: Nach der Steigerung steht immer als und nie wie."
+      },
+      {
+        "title": "Nur das Nötige ändern",
+        "body": "Ändere **genau das**, was die Aufgabe verlangt.\n\nAlles andere bleibt, wie es ist.",
+        "say": "Bei diesen Aufgaben ist weniger mehr. Wenn du eine Einschränkung streichen sollst, streichst du ein Wort. Du schreibst keinen neuen Satz. Jede zusätzliche Änderung ist eine Gelegenheit für einen Fehler. Halte am Ende deinen Satz neben den ursprünglichen."
+      },
+      {
+        "title": "Jetzt du: gezielt verändern",
+        "body": "Tipp bei jeder Aufgabe auf den richtig veränderten Satz.",
+        "tasks": [
+          {
+            "text": "Das Spiel war fast ausverkauft. Ohne Einschränkung: ___",
+            "choices": [
+              "Das Spiel war ausverkauft.",
+              "Das Spiel war beinahe ausverkauft."
+            ],
+            "correct": "Das Spiel war ausverkauft.",
+            "why": "Das Wort fast schränkt ein. Es wird gestrichen.",
+            "hint": "In welchem der beiden Sätze steckt noch eine Einschränkung?"
+          },
+          {
+            "text": "Vielleicht kommt sie morgen. Als Tatsache: ___",
+            "choices": [
+              "Sie kommt morgen.",
+              "Sie könnte morgen kommen."
+            ],
+            "correct": "Sie kommt morgen.",
+            "why": "Das Wort vielleicht drückt Unsicherheit aus. Ohne es steht die Sache fest.",
+            "hint": "In welchem der beiden Sätze ist die Sache sicher?"
+          },
+          {
+            "text": "Mein Rad ist so alt wie deins. Als Ungleichheit: ___",
+            "choices": [
+              "Mein Rad ist älter als deins.",
+              "Mein Rad ist älter wie deins."
+            ],
+            "correct": "Mein Rad ist älter als deins.",
+            "why": "Das Adjektiv wird gesteigert, und danach steht als.",
+            "hint": "Welches Wort folgt auf eine gesteigerte Form: als oder wie?"
+          }
+        ],
+        "say": "Such in jedem Satz zuerst das eine Wort, das die Einschränkung oder die Vermutung trägt. Genau dieses Wort muss verschwinden oder ersetzt werden."
+      },
+      {
+        "title": "Das nimmst du mit",
+        "body": "(1) Ein **Synonym** muss in den Satz passen.\n\n(2) Bei einer **Redewendung** fragst du: Was ist gemeint?\n\n(3) Du änderst nur das eine Wort, das die Aufgabe verlangt.",
+        "tasks": [
+          {
+            "text": "Im Grunde war der Test leicht. Welches Wort schränkt ein? ___",
+            "choices": [
+              "Im Grunde",
+              "leicht"
+            ],
+            "correct": "Im Grunde",
+            "why": "Ohne diese beiden Wörter gilt die Aussage ohne Vorbehalt.",
+            "hint": "Welche Wörter kannst du streichen, damit der Satz ohne Vorbehalt gilt?"
+          }
+        ],
+        "say": "Das sind die drei Dinge, die du für alle Aufgaben zum Umformulieren brauchst. Die wichtigste Frage bleibt immer dieselbe: Was ist hier eigentlich gemeint? Gleich kommen noch die Wörter zum Nachlesen und ein kleines Quiz."
+      }
+    ],
+    "vocab": [
+      {
+        "term": "Synonym",
+        "plain": "Ein Wort mit gleicher oder fast gleicher Bedeutung.",
+        "example": "beginnen und anfangen"
+      },
+      {
+        "term": "Fremdwort",
+        "plain": "Ein Wort aus einer anderen Sprache, für das es meist ein deutsches gibt.",
+        "example": "Kooperation: Zusammenarbeit"
+      },
+      {
+        "term": "Redewendung",
+        "plain": "Ein festes Sprachbild, das man nicht wörtlich verstehen darf.",
+        "example": "die Hand ins Feuer legen: garantieren"
+      },
+      {
+        "term": "Einschränkung",
+        "plain": "Ein Wort, das eine Aussage vorsichtiger macht.",
+        "example": "eigentlich, fast, meistens"
+      },
+      {
+        "term": "Vermutung",
+        "plain": "Etwas, das man nur annimmt. Erkennbar an scheinen, vielleicht, wohl, könnte."
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Was ist ein Synonym?",
+        "choices": [
+          "ein Wort mit gleicher oder fast gleicher Bedeutung",
+          "ein Wort mit gegenteiliger Bedeutung",
+          "ein Fremdwort",
+          "ein sehr langes Wort"
+        ],
+        "correct": "ein Wort mit gleicher oder fast gleicher Bedeutung",
+        "explain": "Synonyme bedeuten dasselbe, zum Beispiel beginnen und anfangen."
+      },
+      {
+        "prompt": "Sie hat ein gutes Händchen für Pflanzen. Was ist gemeint?",
+        "choices": [
+          "Sie kann gut mit Pflanzen umgehen.",
+          "Sie hat kleine Hände.",
+          "Sie trägt Handschuhe.",
+          "Sie verkauft Pflanzen."
+        ],
+        "correct": "Sie kann gut mit Pflanzen umgehen.",
+        "explain": "Die Redewendung bedeutet, dass jemand für etwas Geschick hat. Mit der Größe der Hand hat sie nichts zu tun."
+      },
+      {
+        "prompt": "Projekt bedeutet auf Deutsch",
+        "choices": [
+          "Vorhaben",
+          "Verbrauch",
+          "Aufstand",
+          "Nachwort"
+        ],
+        "correct": "Vorhaben",
+        "explain": "Ein Projekt ist etwas, das man sich vornimmt und plant."
+      },
+      {
+        "prompt": "Ich habe eigentlich keine Zeit. Wie lautet der Satz ohne Einschränkung?",
+        "choices": [
+          "Ich habe keine Zeit.",
+          "Ich habe fast keine Zeit.",
+          "Ich habe eigentlich nie Zeit.",
+          "Ich hätte keine Zeit."
+        ],
+        "correct": "Ich habe keine Zeit.",
+        "explain": "Das Wort eigentlich schränkt ein. Es wird gestrichen, und der Rest bleibt gleich."
+      },
+      {
+        "prompt": "Das scheint ein Fehler zu sein. Wie lautet der Satz als Tatsache?",
+        "choices": [
+          "Das ist ein Fehler.",
+          "Das könnte ein Fehler sein.",
+          "Das ist vielleicht ein Fehler.",
+          "Das wäre ein Fehler."
+        ],
+        "correct": "Das ist ein Fehler.",
+        "explain": "Scheint drückt eine Vermutung aus. Als Tatsache steht das Verb in der normalen Form."
+      },
+      {
+        "prompt": "Sie ist so alt wie ich. Wie drückst du Ungleichheit aus?",
+        "choices": [
+          "Sie ist älter als ich.",
+          "Sie ist älter wie ich.",
+          "Sie ist so alt als ich.",
+          "Sie ist genauso alt wie ich."
+        ],
+        "correct": "Sie ist älter als ich.",
+        "explain": "Das Adjektiv wird gesteigert, und nach der Steigerung steht als."
+      },
+      {
+        "prompt": "Wie prüfst du, ob ein Ersatzwort passt?",
+        "choices": [
+          "Ich setze es in den Satz ein und lese ihn.",
+          "Ich zähle seine Buchstaben.",
+          "Ich schaue, ob es großgeschrieben wird.",
+          "Ich nehme das längste Wort."
+        ],
+        "correct": "Ich setze es in den Satz ein und lese ihn.",
+        "explain": "Der Satz muss mit dem neuen Wort richtig klingen und dasselbe bedeuten."
+      }
+    ]
+  }
+]
