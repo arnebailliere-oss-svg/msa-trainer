@@ -76,6 +76,7 @@ test("quick training runs through repair mode", async ({ page }) => {
   await page.goto("/#/");
   await page.getByPlaceholder("z. B. Lea").fill("Repair");
   await page.getByRole("button", { name: "Los geht's" }).click();
+  await page.getByText("Deine Themen").waitFor(); // the tour opens once the dashboard is up
   await dismissTour(page);
   await page.getByRole("button", { name: /Schnelltraining/ }).click();
   await expect(page.getByText(/Schnelltraining · Mathe/)).toBeVisible();

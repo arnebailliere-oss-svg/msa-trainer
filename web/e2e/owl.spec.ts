@@ -26,7 +26,9 @@ test("Ferdinand chalkboard flow", async ({ page }) => {
   await next().click(); // → board 1
   await expect(page.getByText("Tafel 1 von")).toBeVisible();
   await shot(page, "3-board1");
-  for (let i = 0; i < 7; i++) {
+  // boards 2 to 8; a pause board sits between two chapters, so count boards, not clicks
+  for (let i = 0; i < 12; i++) {
+    if (await page.getByText("Tafel 8 von").isVisible().catch(() => false)) break;
     await next().click();
     await page.waitForTimeout(350);
   }
@@ -61,7 +63,10 @@ test("Ferdinand chalkboard flow", async ({ page }) => {
 
   // Lesson page shows the owl card and inline badges
   await page.goto(`${DEV}/#/topic/MATH_ALG_EQU_LINEAR`);
-  await expect(page.getByText("Grundlagen zuerst")).toBeVisible();
-  await expect(page.getByText(/Zu schwer\? Frag Ferdinand/).first()).toBeVisible();
+  await expect(page.getByRole("heading", { name: /Lernen mit Ferdinand/ })).toBeVisible();
+  // the badges sit inside the Spickzettel cards, which are closed until tapped
+  const badge = page.getByText(/Zu schwer\? Frag Ferdinand/);
+  await page.locator("details", { has: badge }).first().locator("summary").first().click();
+  await expect(badge.first()).toBeVisible();
   await shot(page, "9-lesson-badges");
 });
