@@ -5,67 +5,343 @@
     "title": "Volumen und Oberfläche",
     "teaser": "Was Volumen und Oberfläche unterscheidet, was Grundfläche und Mantel sind und warum Liter dazugehören",
     "hook": "Ein Körper ist eine Form, die man anfassen kann: Würfel, Dose, Kugel. Die Prüfung fragt zwei Dinge: Wie viel passt rein? Und wie viel Verpackung braucht es?",
-    "outro": "Füllmenge und Verpackung. Boden mal Höhe, und bei spitzen Körpern ein Drittel. Jetzt kannst du das Formelblatt lesen.",
+    "outro": "Das Volumen ist die Füllmenge, und die Oberfläche ist die Verpackung. Bei Körpern mit geraden Wänden rechnest du Boden mal Höhe. Bei spitzen Körpern nimmst du davon ein Drittel. Damit kannst du jetzt das Formelblatt lesen.",
+    "standard": 2,
+    "requires": [
+      "P_MATH_ZEICHEN",
+      "P_MATH_BRUCH",
+      "P_MATH_POTENZ",
+      "P_MATH_EINHEITEN",
+      "P_MATH_GEO_BEGRIFFE"
+    ],
     "steps": [
       {
+        "chapter": "Volumen und Oberfläche",
         "title": "Volumen: wie viel passt rein",
         "body": "Quader 4 · 3 · 2:\n\n$V = 4 \\cdot 3 \\cdot 2 = 24\\ \\text{cm}^3$\n\n24 Würfel von 1 cm Kante.",
-        "figure": { "type": "box", "a": 4, "b": 3, "c": 2, "labels": { "a": "4 cm", "b": "3 cm", "c": "2 cm" } },
-        "say": "Volumen ist die Füllmenge. Die Einheit hat eine kleine 3, weil drei Längen multipliziert werden."
+        "figure": {
+          "type": "box",
+          "a": 4,
+          "b": 3,
+          "c": 2,
+          "labels": {
+            "a": "4 cm",
+            "b": "3 cm",
+            "c": "2 cm"
+          }
+        },
+        "say": "Das Volumen ist die Füllmenge, also das, was in einen Körper hineinpasst. Beim Quader nimmst du Länge, Breite und Höhe miteinander mal. Die Einheit hat eine kleine 3, weil drei Längen malgenommen werden.",
+        "tasks": [
+          {
+            "text": "Quader mit 2 cm, 2 cm und 5 cm. $V = $ ___",
+            "choices": [
+              "$20\\ \\text{cm}^3$",
+              "$9\\ \\text{cm}^3$"
+            ],
+            "correct": "$20\\ \\text{cm}^3$",
+            "why": "2 mal 2 ist 4, und 4 mal 5 ergibt 20.",
+            "hint": "Nimm die drei Längen miteinander mal."
+          }
+        ]
       },
       {
         "title": "Oberfläche: die Verpackung",
-        "body": "Alle Flächen außen zusammen.\n\nQuader: 6 Rechtecke, je zwei gleich\n\n$O = 2 \\cdot (4 \\cdot 3 + 4 \\cdot 2 + 3 \\cdot 2) = 52\\ \\text{cm}^2$",
-        "say": "Oberfläche ist Fläche, also cm². Stell dir vor, du packst den Körper in Papier ein."
+        "body": "Die **Oberfläche** sind alle Flächen außen zusammen.\n\nQuader: 6 Rechtecke, je zwei gleich\n\n$O = 2 \\cdot (4 \\cdot 3 + 4 \\cdot 2 + 3 \\cdot 2) = 52\\ \\text{cm}^2$",
+        "say": "Stell dir vor, du packst den Körper in Geschenkpapier ein. Die Menge Papier, die du brauchst, ist die Oberfläche. Ein Quader hat sechs Seiten, und gegenüberliegende Seiten sind gleich groß. Weil es eine Fläche ist, steht dahinter Quadratzentimeter.",
+        "tasks": [
+          {
+            "text": "Die Oberfläche wird gemessen in ___.",
+            "choices": [
+              "$\\text{cm}^2$",
+              "$\\text{cm}^3$"
+            ],
+            "correct": "$\\text{cm}^2$",
+            "why": "Die Oberfläche ist eine Fläche. Flächen haben die kleine 2.",
+            "hint": "Die Verpackung ist flach wie Papier. Welche kleine Hochzahl gehört zu Flächen?"
+          }
+        ]
       },
       {
         "title": "Liter",
         "body": "$1\\ \\text{cm}^3 = 1\\ \\text{ml}$\n\n$1000\\ \\text{cm}^3 = 1\\ \\text{l}$\n\n$V = 24\\ \\text{cm}^3 = 24\\ \\text{ml}$",
-        "say": "Sobald es um Wasser, Saft oder Farbe geht, taucht Liter auf. Das ist nur cm³ mit einem anderen Namen."
+        "say": "Sobald es in einer Aufgabe um Wasser, Saft oder Farbe geht, taucht das Wort Liter auf. Das ist nur ein anderer Name für dieselbe Sache. Ein Milliliter ist ein Kubikzentimeter, und tausend davon ergeben einen Liter.",
+        "tasks": [
+          {
+            "text": "$2000\\ \\text{cm}^3$ sind ___.",
+            "choices": [
+              "2 Liter",
+              "20 Liter"
+            ],
+            "correct": "2 Liter",
+            "why": "Tausend Kubikzentimeter sind ein Liter. Zweitausend sind dann zwei.",
+            "hint": "Wie viele Kubikzentimeter ergeben zusammen einen ganzen Liter?"
+          }
+        ]
       },
       {
         "title": "Grundfläche mal Höhe",
-        "body": "Quader, Zylinder, Prisma:\n\n$V = G \\cdot h$\n\n$G$ = Grundfläche (unten), $h$ = Höhe",
-        "say": "Alle Körper mit geraden Wänden haben dieselbe Formel: Boden mal Höhe. Nur der Boden sieht anders aus."
+        "body": "Quader, **Zylinder** (eine Dose) und **Prisma** (eine Säule mit eckigem Boden):\n\n$V = G \\cdot h$\n\n$G$ ist die **Grundfläche**, also der Boden. $h$ ist die Höhe.",
+        "say": "Alle Körper mit geraden Wänden haben dieselbe Formel. Du rechnest zuerst aus, wie groß der Boden ist. Dann nimmst du diese Fläche mal die Höhe. Nur der Boden sieht je nach Körper anders aus: mal ein Rechteck, mal ein Kreis, mal ein Dreieck.",
+        "tasks": [
+          {
+            "text": "Die Grundfläche ist $12\\ \\text{cm}^2$, die Höhe 5 cm. $V = $ ___",
+            "choices": [
+              "$60\\ \\text{cm}^3$",
+              "$17\\ \\text{cm}^3$"
+            ],
+            "correct": "$60\\ \\text{cm}^3$",
+            "why": "Boden mal Höhe: 12 mal 5 ergibt 60.",
+            "hint": "Die Formel heißt Boden mal Höhe. Rechnest du plus oder mal?"
+          }
+        ]
       },
       {
+        "chapter": "Dose, Pyramide, Kegel und Kugel",
         "title": "Der Zylinder",
-        "body": "Boden ist ein Kreis: $G = \\pi \\cdot r^2$\n\n$V = \\pi \\cdot 3^2 \\cdot 10 \\approx 283\\ \\text{cm}^3$",
-        "figure": { "type": "cylinder", "r": 3, "h": 10, "labels": { "r": "r = 3 cm", "h": "h = 10 cm" } },
-        "say": "Eine Dose. Kreisfläche mal Höhe. Radius ist der halbe Durchmesser, nicht verwechseln."
+        "body": "Der Boden ist ein Kreis: $G = \\pi \\cdot r^2$\n\nDer **Radius** $r$ reicht von der Mitte zum Rand. Der **Durchmesser** ist doppelt so lang.\n\n$V = \\pi \\cdot 3^2 \\cdot 10 \\approx 283\\ \\text{cm}^3$",
+        "figure": {
+          "type": "cylinder",
+          "r": 3,
+          "h": 10,
+          "labels": {
+            "r": "r = 3 cm",
+            "h": "h = 10 cm"
+          }
+        },
+        "say": "Ein Zylinder ist eine Dose. Du rechnest die Fläche des Kreises aus und nimmst sie mal die Höhe. Das Zeichen in der Formel heißt Pi und steht für die Zahl 3,14. Dein Taschenrechner hat dafür eine eigene Taste. Achte darauf, ob in der Aufgabe der Radius oder der Durchmesser steht.",
+        "tasks": [
+          {
+            "text": "Der Durchmesser einer Dose ist 10 cm. Der Radius ist ___.",
+            "choices": [
+              "5 cm",
+              "20 cm"
+            ],
+            "correct": "5 cm",
+            "why": "Der Radius ist die Hälfte vom Durchmesser.",
+            "hint": "Der Radius reicht nur von der Mitte bis zum Rand."
+          }
+        ]
       },
       {
         "title": "Der Mantel",
         "body": "Der **Mantel** ist die Wand außen herum, ohne Deckel und Boden.\n\nAbgerollt ein Rechteck: $M = U \\cdot h = 2\\pi r \\cdot h$",
-        "say": "Schneide das Etikett einer Dose auf und rolle es flach: ein Rechteck. Breite ist der Kreisumfang, Höhe ist die Dosenhöhe."
+        "say": "Schneide in Gedanken das Etikett einer Dose auf und leg es flach auf den Tisch. Du siehst ein Rechteck. Seine Breite ist der Umfang des Kreises, und seine Höhe ist die Höhe der Dose. Deshalb rechnest du für den Mantel Umfang mal Höhe.",
+        "tasks": [
+          {
+            "text": "Das abgerollte Etikett einer Dose ist ___.",
+            "choices": [
+              "ein Rechteck",
+              "ein Kreis"
+            ],
+            "correct": "ein Rechteck",
+            "why": "Flach hingelegt hat das Etikett vier Ecken und gerade Kanten.",
+            "hint": "Stell dir vor, du schneidest das Etikett auf und legst es flach hin."
+          }
+        ]
       },
       {
         "title": "Spitze Körper: ein Drittel",
-        "body": "Pyramide, Kegel:\n\n$V = \\frac{1}{3} \\cdot G \\cdot h$",
-        "say": "In einen Quader passen genau drei Pyramiden mit gleichem Boden und gleicher Höhe. Darum ein Drittel."
+        "body": "Eine **Pyramide** hat einen eckigen Boden und eine Spitze.\n\nEin **Kegel** hat einen runden Boden und eine Spitze.\n\n$V = \\frac{1}{3} \\cdot G \\cdot h$",
+        "say": "Ein Kegel sieht aus wie eine Eistüte. In einen Quader passen genau drei Pyramiden mit demselben Boden und derselben Höhe. Deshalb steht in der Formel ein Drittel. Du rechnest also Boden mal Höhe und teilst das Ergebnis durch 3.",
+        "tasks": [
+          {
+            "text": "Ein Kegel hat $G = 30\\ \\text{cm}^2$ und $h = 10$ cm. $V = $ ___",
+            "choices": [
+              "$100\\ \\text{cm}^3$",
+              "$300\\ \\text{cm}^3$"
+            ],
+            "correct": "$100\\ \\text{cm}^3$",
+            "why": "Boden mal Höhe ergibt 300. Ein Drittel davon ist 100.",
+            "hint": "Boden mal Höhe ergibt 300. Was fehlt noch bei spitzen Körpern?"
+          }
+        ]
       },
       {
         "title": "Die Kugel",
         "body": "$V = \\frac{4}{3} \\cdot \\pi \\cdot r^3$\n\n$O = 4 \\cdot \\pi \\cdot r^2$",
-        "say": "Die musst du nicht verstehen, nur vom Formelblatt ablesen können. Wichtig: bei V steht r hoch 3, bei O steht r hoch 2."
+        "say": "Diese beiden Formeln musst du nicht herleiten können. Es reicht, wenn du sie auf dem Formelblatt findest und richtig abliest. Achte auf die Hochzahl: Beim Volumen steht r hoch 3, bei der Oberfläche steht r hoch 2. Das passt zu den Einheiten.",
+        "tasks": [
+          {
+            "text": "In der Formel für das Volumen der Kugel steht ___.",
+            "choices": [
+              "$r^3$",
+              "$r^2$"
+            ],
+            "correct": "$r^3$",
+            "why": "Das Volumen hat die Einheit mit der kleinen 3. Dazu passt r hoch 3.",
+            "hint": "Welche kleine Hochzahl hat die Einheit beim Volumen?"
+          }
+        ]
+      },
+      {
+        "title": "Jetzt du: Was wird gesucht?",
+        "body": "Tipp bei jeder Aufgabe auf das Richtige.",
+        "tasks": [
+          {
+            "text": "Wie viel Papier braucht man, um einen Karton einzupacken? Gesucht ist ___.",
+            "choices": [
+              "die Oberfläche",
+              "das Volumen"
+            ],
+            "correct": "die Oberfläche",
+            "why": "Das Papier bedeckt den Karton von außen. Das ist die Verpackung.",
+            "hint": "Geht es um die Hülle oder um das, was hineinpasst?"
+          },
+          {
+            "text": "Wie viel Suppe passt in eine Dose? Du rechnest ___.",
+            "choices": [
+              "$V = G \\cdot h$",
+              "$V = \\frac{1}{3} \\cdot G \\cdot h$"
+            ],
+            "correct": "$V = G \\cdot h$",
+            "why": "Eine Dose hat gerade Wände. Dafür gilt Boden mal Höhe.",
+            "hint": "Hat eine Dose gerade Wände oder eine Spitze?"
+          },
+          {
+            "text": "Wie viel Luft ist in einem Zelt in Form einer Pyramide? Du rechnest ___.",
+            "choices": [
+              "$V = \\frac{1}{3} \\cdot G \\cdot h$",
+              "$V = G \\cdot h$"
+            ],
+            "correct": "$V = \\frac{1}{3} \\cdot G \\cdot h$",
+            "why": "Eine Pyramide läuft spitz zu. Deshalb kommt das Drittel dazu.",
+            "hint": "Hat das Zelt gerade Wände oder läuft es oben zusammen?"
+          }
+        ],
+        "say": "In Textaufgaben musst du zuerst herausfinden, was gesucht ist. Geht es darum, was hineinpasst, dann brauchst du das Volumen. Geht es um die Hülle, dann brauchst du die Oberfläche. Danach schaust du, ob der Körper gerade Wände oder eine Spitze hat."
+      },
+      {
+        "title": "Das nimmst du mit",
+        "body": "(1) Volumen: was hineinpasst, in $\\text{cm}^3$.\n\n(2) Oberfläche: die Verpackung, in $\\text{cm}^2$.\n\n(3) Gerade Wände: Boden mal Höhe.\n\n(4) Spitze Körper: ein Drittel davon.\n\n(5) 1000 $\\text{cm}^3$ sind ein Liter.",
+        "tasks": [
+          {
+            "text": "In einen Eimer passen 10 Liter. Das ist sein ___.",
+            "choices": [
+              "Volumen",
+              "Mantel"
+            ],
+            "correct": "Volumen",
+            "why": "Was in einen Körper hineinpasst, ist sein Volumen.",
+            "hint": "Geht es um das, was hineinpasst, oder um die Wand außen?"
+          }
+        ],
+        "say": "Das sind die fünf Dinge, die du aus dieser Lektion brauchst. Die Formeln selbst stehen auf dem Formelblatt. Deine Aufgabe ist es, die richtige auszuwählen und die Zahlen einzusetzen. Gleich kommen die Wörter und ein kleines Quiz."
       }
     ],
     "vocab": [
-      { "term": "Körper", "plain": "Eine Form mit Volumen: Würfel, Dose, Kugel.", "example": "Quader, Zylinder, Pyramide" },
-      { "term": "Volumen V", "plain": "Wie viel reinpasst. In cm³ oder Litern.", "example": "$V = G \\cdot h$" },
-      { "term": "Oberfläche O", "plain": "Alle Flächen außen zusammen. In cm².", "example": "die Verpackung" },
-      { "term": "Grundfläche G", "plain": "Der Boden des Körpers.", "example": "Zylinder: $\\pi r^2$" },
-      { "term": "Höhe h", "plain": "Von Boden bis Deckel, senkrecht.", "example": "h = 10 cm" },
-      { "term": "Mantel M", "plain": "Die Wand außen herum, ohne Boden und Deckel.", "example": "Zylinder: $2\\pi r \\cdot h$" },
-      { "term": "Zylinder", "plain": "Eine Dose: Kreis als Boden.", "example": "$V = \\pi r^2 h$" },
-      { "term": "Pyramide / Kegel", "plain": "Spitze Körper: ein Drittel von Boden mal Höhe.", "example": "$V = \\frac{1}{3} G h$" }
+      {
+        "term": "Körper",
+        "plain": "Eine Form mit Volumen: Würfel, Dose, Kugel.",
+        "example": "Quader, Zylinder, Pyramide"
+      },
+      {
+        "term": "Volumen",
+        "plain": "Wie viel reinpasst. In cm³ oder Litern.",
+        "example": "$V = G \\cdot h$"
+      },
+      {
+        "term": "Oberfläche",
+        "plain": "Alle Flächen außen zusammen. In cm².",
+        "example": "die Verpackung"
+      },
+      {
+        "term": "Grundfläche",
+        "plain": "Der Boden des Körpers.",
+        "example": "Zylinder: $\\pi r^2$"
+      },
+      {
+        "term": "Höhe",
+        "plain": "Von Boden bis Deckel, senkrecht.",
+        "example": "h = 10 cm"
+      },
+      {
+        "term": "Mantel",
+        "plain": "Die Wand außen herum, ohne Boden und Deckel.",
+        "example": "Zylinder: $2\\pi r \\cdot h$"
+      },
+      {
+        "term": "Zylinder",
+        "plain": "Eine Dose: Kreis als Boden.",
+        "example": "$V = \\pi r^2 h$"
+      },
+      {
+        "term": "Pyramide",
+        "plain": "Spitze Körper: ein Drittel von Boden mal Höhe.",
+        "example": "$V = \\frac{1}{3} G h$"
+      },
+      {
+        "term": "Kegel",
+        "plain": "Ein spitzer Körper mit einem Kreis als Boden, wie eine Eistüte.",
+        "example": "$V = \\frac{1}{3} G h$"
+      }
     ],
     "quiz": [
-      { "prompt": "Volumen eines Quaders 5 · 2 · 3?", "choices": ["30 cm³", "10 cm³", "30 cm²", "62 cm³"], "correct": "30 cm³", "explain": "$5 \\cdot 2 \\cdot 3 = 30$, in Kubikzentimetern." },
-      { "prompt": "Welche Einheit hat die Oberfläche?", "choices": ["cm²", "cm³", "cm", "Liter"], "correct": "cm²", "explain": "Oberfläche ist Fläche, also Quadrat-Einheit." },
-      { "prompt": "500 cm³ sind …", "choices": ["0,5 l", "5 l", "50 ml", "500 l"], "correct": "0,5 l", "explain": "1000 cm³ sind 1 Liter, also sind 500 cm³ ein halber." },
-      { "prompt": "Der Mantel eines Zylinders ist …", "choices": ["die Wand außen herum", "der Deckel", "der Boden", "das Volumen"], "correct": "die Wand außen herum", "explain": "Ohne Deckel und Boden. Abgerollt ein Rechteck." },
-      { "prompt": "Volumen einer Pyramide?", "choices": ["$\\frac{1}{3} \\cdot G \\cdot h$", "$G \\cdot h$", "$2 \\cdot G \\cdot h$", "$\\pi \\cdot r^2$"], "correct": "$\\frac{1}{3} \\cdot G \\cdot h$", "explain": "Spitze Körper: ein Drittel von Boden mal Höhe." }
+      {
+        "prompt": "Volumen eines Quaders 5 · 2 · 3?",
+        "choices": [
+          "30 cm³",
+          "10 cm³",
+          "30 cm²",
+          "62 cm³"
+        ],
+        "correct": "30 cm³",
+        "explain": "Du nimmst die drei Längen miteinander mal: 5 mal 2 mal 3 ergibt 30 Kubikzentimeter."
+      },
+      {
+        "prompt": "Welche Einheit hat die Oberfläche?",
+        "choices": [
+          "cm²",
+          "cm³",
+          "cm",
+          "Liter"
+        ],
+        "correct": "cm²",
+        "explain": "Die Oberfläche ist eine Fläche. Flächen werden in Quadratzentimetern gemessen."
+      },
+      {
+        "prompt": "500 cm³ sind …",
+        "choices": [
+          "0,5 l",
+          "5 l",
+          "50 ml",
+          "500 l"
+        ],
+        "correct": "0,5 l",
+        "explain": "1000 cm³ sind 1 Liter, also sind 500 cm³ ein halber."
+      },
+      {
+        "prompt": "Der Mantel eines Zylinders ist …",
+        "choices": [
+          "die Wand außen herum",
+          "der Deckel",
+          "der Boden",
+          "das Volumen"
+        ],
+        "correct": "die Wand außen herum",
+        "explain": "Der Mantel ist die Wand ohne Deckel und Boden. Abgerollt ist er ein Rechteck."
+      },
+      {
+        "prompt": "Volumen einer Pyramide?",
+        "choices": [
+          "$\\frac{1}{3} \\cdot G \\cdot h$",
+          "$G \\cdot h$",
+          "$2 \\cdot G \\cdot h$",
+          "$\\pi \\cdot r^2$"
+        ],
+        "correct": "$\\frac{1}{3} \\cdot G \\cdot h$",
+        "explain": "Spitze Körper: ein Drittel von Boden mal Höhe."
+      },
+      {
+        "prompt": "Ein Zylinder hat die Grundfläche 20 cm² und die Höhe 6 cm. Wie groß ist sein Volumen?",
+        "choices": [
+          "120 cm³",
+          "40 cm³",
+          "26 cm³",
+          "120 cm²"
+        ],
+        "correct": "120 cm³",
+        "explain": "Bei geraden Wänden rechnest du Boden mal Höhe. 20 mal 6 ergibt 120 Kubikzentimeter."
+      }
     ]
   }
 ]

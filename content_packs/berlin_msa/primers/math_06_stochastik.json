@@ -4,85 +4,367 @@
     "subject": "MATH",
     "title": "Wahrscheinlichkeit und Statistik",
     "teaser": "Was Wahrscheinlichkeit wirklich heißt, wie ein Baumdiagramm funktioniert und was Mittelwert, Median und Spannweite sind",
-    "hook": "Würfel, Glücksrad, Lostrommel: Wahrscheinlichkeit ist nur die Frage „Wie viele von allen?“. Und Statistik ist die Frage „Was ist typisch?“. Beides schaffst du in elf Tafeln.",
-    "outro": "Günstig durch möglich, Pfade mal, Zweige plus. Und für Statistik: sortieren, dann Mitte suchen. Jetzt in die Lektion.",
+    "hook": "Würfel, Glücksrad, Lostrommel: Bei allen geht es um dieselbe Frage, nämlich „Wie viele von allen?“. Im zweiten Teil geht es um Listen von Zahlen und die Frage „Was ist typisch?“. Beides sehen wir uns in Ruhe an, eine Tafel nach der anderen.",
+    "outro": "Du teilst die günstigen Fälle durch alle möglichen. Entlang eines Weges im Baum nimmst du mal, und mehrere passende Wege zählst du zusammen. Für die Statistik sortierst du zuerst und suchst dann die Mitte. Damit kannst du jetzt die Lektion lesen.",
+    "standard": 2,
+    "requires": [
+      "P_MATH_ZEICHEN",
+      "P_MATH_BRUCH",
+      "P_MATH_PROZENT"
+    ],
     "steps": [
       {
+        "chapter": "Was Wahrscheinlichkeit bedeutet",
         "title": "Wie viele von allen?",
-        "body": "Würfel: 6 Seiten, eine davon ist die 6.\n\n$P(6) = \\frac{1}{6}$\n\n**günstig** durch **möglich**",
-        "say": "P steht für Wahrscheinlichkeit, von probability. Oben, was du willst, unten, was alles passieren kann."
+        "body": "Würfel: 6 Seiten, eine davon ist die 6.\n\n$P(6) = \\frac{1}{6}$\n\nDas ist die **Wahrscheinlichkeit** für eine 6: **günstig** durch **möglich**.\n\nDas, worauf du hoffst, heißt **Ereignis**.",
+        "say": "Der Buchstabe P kommt vom englischen Wort probability. Oben im Bruch steht, wie viele Fälle du dir wünschst. Unten steht, wie viele Fälle es überhaupt gibt. Beim Würfel gibt es sechs Seiten, und nur eine davon zeigt die 6.",
+        "tasks": [
+          {
+            "text": "Ein Würfel. $P(3) = $ ___",
+            "choices": [
+              "$\\frac{1}{6}$",
+              "$\\frac{3}{6}$"
+            ],
+            "correct": "$\\frac{1}{6}$",
+            "why": "Nur eine der sechs Seiten zeigt die 3.",
+            "hint": "Wie viele Seiten des Würfels zeigen eine Drei?"
+          }
+        ]
       },
       {
         "title": "Als Bruch, Dezimalzahl, Prozent",
         "body": "$P = \\frac{1}{4} = 0{,}25 = 25\\,\\%$\n\nImmer zwischen 0 (nie) und 1 (sicher).",
-        "say": "Eine Wahrscheinlichkeit von 1,5 gibt es nicht. Mehr als sicher geht nicht."
+        "say": "Du kannst das Ergebnis auf drei Arten schreiben, und alle drei bedeuten dasselbe. Der Wert liegt immer zwischen 0 und 1. Bei 0 passiert etwas nie, bei 1 passiert es sicher. Ein Wert von 1,5 kann nicht stimmen, denn mehr als sicher geht nicht.",
+        "tasks": [
+          {
+            "text": "Du rechnest $P = 1{,}2$ aus. Das ist ___.",
+            "choices": [
+              "sicher ein Fehler",
+              "sehr wahrscheinlich"
+            ],
+            "correct": "sicher ein Fehler",
+            "why": "Der Wert kann nie größer als 1 sein. Bei 1 ist etwas schon sicher.",
+            "hint": "Welches ist der größte Wert, den es hier geben kann?"
+          }
+        ]
       },
       {
         "title": "Beispiel Beutel",
         "body": "3 rote und 7 blaue Kugeln.\n\n$P(\\text{rot}) = \\frac{3}{10} = 30\\,\\%$",
-        "say": "Drei günstige Kugeln, zehn Kugeln insgesamt. Fertig."
+        "say": "Im Beutel liegen zehn Kugeln, und drei davon sind rot. Günstig sind also drei, möglich sind zehn. Drei Zehntel sind dasselbe wie 30 Prozent.",
+        "tasks": [
+          {
+            "text": "2 rote und 8 blaue Kugeln. $P(\\text{rot}) = $ ___",
+            "choices": [
+              "$\\frac{2}{10}$",
+              "$\\frac{2}{8}$"
+            ],
+            "correct": "$\\frac{2}{10}$",
+            "why": "Unten stehen alle Kugeln zusammen, also 2 plus 8.",
+            "hint": "Wie viele Kugeln liegen insgesamt im Beutel?"
+          }
+        ]
       },
       {
         "title": "Das Gegenereignis",
-        "body": "$P(\\text{nicht rot}) = 1 - \\frac{3}{10} = \\frac{7}{10}$\n\nAlle Wahrscheinlichkeiten zusammen sind **1**.",
-        "say": "Was nicht rot ist, ist blau. Das Gegenteil hat den Rest bis 1."
+        "body": "$P(\\text{nicht rot}) = 1 - \\frac{3}{10} = \\frac{7}{10}$\n\nAlle Wahrscheinlichkeiten zusammen sind **1**.\n\nDas Gegenteil eines Ereignisses heißt **Gegenereignis**.",
+        "say": "Im Beutel ist jede Kugel entweder rot oder blau. Was nicht rot ist, muss also blau sein. Das Gegenteil bekommt immer den Rest bis 1. Das ist praktisch, wenn sich das Gegenteil leichter ausrechnen lässt.",
+        "tasks": [
+          {
+            "text": "$P(\\text{Regen}) = 0{,}3$. Dann ist $P(\\text{kein Regen}) = $ ___",
+            "choices": [
+              "$0{,}7$",
+              "$0{,}3$"
+            ],
+            "correct": "$0{,}7$",
+            "why": "Das Gegenteil bekommt den Rest bis 1, und 1 minus 0,3 ist 0,7.",
+            "hint": "Wie viel fehlt von 0,3 bis zur 1?"
+          }
+        ]
       },
       {
+        "chapter": "Zweimal ziehen",
         "title": "Zweimal ziehen: der Baum",
-        "body": "Zweimal ziehen **mit Zurücklegen**.\n\nJeder Ast hat seine Wahrscheinlichkeit.",
-        "figure": { "type": "treeDiagram", "a": "R", "b": "B", "pa": "3/10", "pb": "7/10", "stages": 2 },
-        "say": "Ein Baumdiagramm zeigt alle Wege. Jeder Weg von links nach rechts ist ein möglicher Ausgang."
+        "body": "Zweimal ziehen **mit Zurücklegen**.\n\nSo ein Bild heißt **Baumdiagramm**. Jeder Ast hat seine Wahrscheinlichkeit.",
+        "figure": {
+          "type": "treeDiagram",
+          "a": "R",
+          "b": "B",
+          "pa": "3/10",
+          "pb": "7/10",
+          "stages": 2
+        },
+        "say": "Mit Zurücklegen bedeutet: Du legst die Kugel nach dem ersten Ziehen wieder in den Beutel. Beim zweiten Ziehen ist also alles wie am Anfang. Der Baum zeigt alle Wege, die es gibt. Jeder Weg von links nach rechts ist ein möglicher Ausgang.",
+        "tasks": [
+          {
+            "text": "Wie viele Wege von links nach rechts zeigt der Baum? ___",
+            "choices": [
+              "4",
+              "2"
+            ],
+            "correct": "4",
+            "why": "Rot-rot, rot-blau, blau-rot und blau-blau: Das sind vier Wege.",
+            "hint": "Zähl die Enden ganz rechts im Bild."
+          }
+        ]
       },
       {
         "title": "Pfadregel: mal",
         "body": "Zweimal rot:\n\n$\\frac{3}{10} \\cdot \\frac{3}{10} = \\frac{9}{100}$\n\nEntlang eines Pfades wird **multipliziert**.",
-        "say": "Und ohne Zurücklegen? Dann ändert sich der zweite Bruch, weil eine Kugel fehlt: 3/10 mal 2/9."
+        "say": "Ein Weg durch den Baum heißt auch Pfad. Für zweimal rot gehst du zweimal den roten Ast entlang. Die beiden Brüche auf diesem Weg nimmst du miteinander mal. Das Ergebnis ist kleiner als jeder einzelne Bruch, und das passt: Zweimal Glück ist seltener als einmal.",
+        "tasks": [
+          {
+            "text": "Zweimal blau: $\\frac{7}{10} \\cdot \\frac{7}{10} = $ ___",
+            "choices": [
+              "$\\frac{49}{100}$",
+              "$\\frac{14}{10}$"
+            ],
+            "correct": "$\\frac{49}{100}$",
+            "why": "Entlang eines Weges wird malgenommen: 7 mal 7 oben, 10 mal 10 unten.",
+            "hint": "Rechnest du entlang eines Weges mal oder plus?"
+          }
+        ]
+      },
+      {
+        "title": "Ohne Zurücklegen",
+        "body": "Die erste Kugel bleibt draußen.\n\nErste Kugel rot: $\\frac{3}{10}$\n\nJetzt sind noch 9 Kugeln da, 2 davon rot: $\\frac{2}{9}$\n\nZweimal rot: $\\frac{3}{10} \\cdot \\frac{2}{9} = \\frac{6}{90}$",
+        "tasks": [
+          {
+            "text": "5 Kugeln, 2 davon rot. Eine rote wird gezogen und bleibt draußen. Für die nächste rote gilt: ___",
+            "choices": [
+              "$\\frac{1}{4}$",
+              "$\\frac{2}{5}$"
+            ],
+            "correct": "$\\frac{1}{4}$",
+            "why": "Es sind noch vier Kugeln im Beutel, und nur noch eine davon ist rot.",
+            "hint": "Wie viele Kugeln sind noch da, und wie viele davon sind rot?"
+          }
+        ],
+        "say": "Manchmal wird die Kugel nicht zurückgelegt. Dann fehlt beim zweiten Ziehen eine Kugel im Beutel. Unten steht deshalb eine 9 statt einer 10. Und weil eine rote Kugel fehlt, steht oben eine 2 statt einer 3. Lies in der Aufgabe immer genau, ob zurückgelegt wird."
       },
       {
         "title": "Summenregel: plus",
         "body": "Genau einmal rot: rot-blau **oder** blau-rot\n\n$\\frac{3}{10} \\cdot \\frac{7}{10} + \\frac{7}{10} \\cdot \\frac{3}{10} = \\frac{42}{100}$",
-        "say": "Mehrere Pfade, die passen? Ihre Wahrscheinlichkeiten werden addiert."
+        "say": "Genau einmal rot kann auf zwei Wegen passieren: erst rot und dann blau, oder erst blau und dann rot. Du rechnest jeden Weg für sich aus, so wie eben. Danach zählst du die beiden Ergebnisse zusammen, weil beide Wege zu deinem Ereignis passen.",
+        "tasks": [
+          {
+            "text": "Zwei verschiedene Wege passen zu deinem Ereignis. Ihre Ergebnisse werden ___.",
+            "choices": [
+              "zusammengezählt",
+              "malgenommen"
+            ],
+            "correct": "zusammengezählt",
+            "why": "Mehrere passende Wege werden zusammengezählt. Mal nimmst du nur entlang eines Weges.",
+            "hint": "Wird das Ereignis wahrscheinlicher oder seltener, wenn mehr Wege dazu passen?"
+          }
+        ]
       },
       {
+        "chapter": "Listen von Zahlen",
         "title": "Statistik: der Mittelwert",
-        "body": "Noten: 2, 3, 3, 4\n\n$\\frac{2 + 3 + 3 + 4}{4} = \\frac{12}{4} = 3$\n\nAlles zusammen, geteilt durch die Anzahl.",
-        "say": "Der Mittelwert ist der Durchschnitt. Den kennst du vom Zeugnis."
+        "body": "Noten: 2, 3, 3, 4\n\n$\\frac{2 + 3 + 3 + 4}{4} = \\frac{12}{4} = 3$\n\nAlles zusammen, geteilt durch die Anzahl: Das ist der **Mittelwert**.",
+        "say": "Jetzt geht es um Listen von Zahlen. Der Mittelwert ist das, was du im Alltag Durchschnitt nennst. Du kennst ihn vom Zeugnis. Du zählst alle Werte zusammen und teilst durch die Anzahl der Werte.",
+        "tasks": [
+          {
+            "text": "Der Mittelwert von 2, 4 und 9 ist ___.",
+            "choices": [
+              "5",
+              "15"
+            ],
+            "correct": "5",
+            "why": "Zusammen sind es 15. Geteilt durch drei Werte ergibt das 5.",
+            "hint": "Du hast die Summe. Durch wie viele Werte teilst du noch?"
+          }
+        ]
       },
       {
         "title": "Der Median",
-        "body": "Sortieren: 1, 3, **5**, 8, 20\n\nDer Median ist der in der **Mitte**: 5",
-        "say": "Der Median ist unempfindlich gegen Ausreißer. Die 20 stört ihn nicht, den Mittelwert schon."
+        "body": "Sortieren: 1, 3, **5**, 8, 20\n\nDer **Median** ist der Wert in der **Mitte**: 5",
+        "say": "Für den Median sortierst du die Werte zuerst der Größe nach. Dann nimmst du den Wert, der genau in der Mitte steht. Die 20 ist hier ein Ausreißer, also ein Wert, der weit weg von den anderen liegt. Den Median stört das nicht, den Mittelwert würde es stark nach oben ziehen.",
+        "tasks": [
+          {
+            "text": "Der Median von 7, 2, 9 ist ___.",
+            "choices": [
+              "7",
+              "2"
+            ],
+            "correct": "7",
+            "why": "Sortiert heißt die Liste 2, 7, 9. In der Mitte steht die 7.",
+            "hint": "Hast du die Zahlen zuerst der Größe nach sortiert?"
+          }
+        ]
       },
       {
         "title": "Median bei gerader Anzahl",
         "body": "6, 8, **10, 12**, 14, 15\n\nZwei in der Mitte: $\\frac{10 + 12}{2} = 11$",
-        "say": "Wenn keiner genau in der Mitte steht, nimmst du die Mitte der beiden mittleren."
+        "say": "Bei sechs Werten steht keiner genau in der Mitte, sondern zwei teilen sich den Platz. Dann nimmst du die Mitte zwischen diesen beiden. Du zählst sie zusammen und teilst durch 2.",
+        "tasks": [
+          {
+            "text": "Der Median von 2, 4, 6, 8 ist ___.",
+            "choices": [
+              "5",
+              "4"
+            ],
+            "correct": "5",
+            "why": "In der Mitte stehen 4 und 6. Die Mitte zwischen beiden ist 5.",
+            "hint": "Welche zwei Werte stehen in der Mitte? Was liegt genau dazwischen?"
+          }
+        ]
       },
       {
         "title": "Modus und Spannweite",
-        "body": "3, 5, 5, 7, 9\n\n**Modus**: der häufigste Wert → 5\n\n**Spannweite**: größter minus kleinster → $9 - 3 = 6$",
-        "say": "Modus heißt Mode: was am häufigsten vorkommt. Spannweite: wie weit die Werte auseinanderliegen."
+        "body": "3, 5, 5, 7, 9\n\n**Modus**: der häufigste Wert, hier 5\n\n**Spannweite**: größter minus kleinster Wert, hier $9 - 3 = 6$",
+        "say": "Modus erinnert an das Wort Mode: Es ist der Wert, der am häufigsten vorkommt. Die Spannweite sagt dir, wie weit die Werte auseinanderliegen. Dafür ziehst du den kleinsten Wert vom größten ab.",
+        "tasks": [
+          {
+            "text": "Die Spannweite von 4, 6, 10 ist ___.",
+            "choices": [
+              "6",
+              "10"
+            ],
+            "correct": "6",
+            "why": "Der größte Wert ist 10, der kleinste 4. 10 minus 4 ergibt 6.",
+            "hint": "Welcher Wert ist der größte und welcher der kleinste? Zieh sie voneinander ab."
+          }
+        ]
+      },
+      {
+        "title": "Das nimmst du mit",
+        "body": "(1) Wahrscheinlichkeit: günstig durch möglich.\n\n(2) Das Gegenteil hat den Rest bis 1.\n\n(3) Entlang eines Weges: mal. Mehrere Wege: plus.\n\n(4) Mittelwert: alles zusammen, geteilt durch die Anzahl.\n\n(5) Median: erst sortieren, dann die Mitte.",
+        "tasks": [
+          {
+            "text": "Für den Median musst du die Werte zuerst ___.",
+            "choices": [
+              "sortieren",
+              "zusammenzählen"
+            ],
+            "correct": "sortieren",
+            "why": "Erst wenn die Werte der Größe nach stehen, findest du den in der Mitte.",
+            "hint": "Was machst du mit der Liste, bevor du die Mitte suchst?"
+          }
+        ],
+        "say": "Das sind die fünf Dinge, die du aus dieser Lektion brauchst. Bei jeder Aufgabe mit Kugeln oder Losen schaust du zuerst, ob zurückgelegt wird. Bei jeder Liste von Zahlen sortierst du zuerst. Gleich kommen die Wörter und ein kleines Quiz."
       }
     ],
     "vocab": [
-      { "term": "Wahrscheinlichkeit P", "plain": "Günstig durch möglich. Zwischen 0 und 1.", "example": "$P(6) = \\frac{1}{6}$" },
-      { "term": "Ereignis", "plain": "Das, was du willst.", "example": "„eine gerade Zahl“" },
-      { "term": "Gegenereignis", "plain": "Das Gegenteil. Hat den Rest bis 1.", "example": "$1 - P$" },
-      { "term": "Baumdiagramm", "plain": "Alle Wege bei mehreren Zügen.", "example": "erst rot, dann blau" },
-      { "term": "Pfadregel", "plain": "Entlang eines Weges: mal.", "example": "$\\frac{3}{10} \\cdot \\frac{3}{10}$" },
-      { "term": "Summenregel", "plain": "Mehrere passende Wege: plus.", "example": "rot-blau plus blau-rot" },
-      { "term": "Mittelwert", "plain": "Alles zusammen, geteilt durch die Anzahl.", "example": "Durchschnitt" },
-      { "term": "Median", "plain": "Sortieren, dann der Wert in der Mitte.", "example": "1, 3, **5**, 8, 20" },
-      { "term": "Modus", "plain": "Der häufigste Wert.", "example": "3, 5, 5, 7 → 5" },
-      { "term": "Spannweite", "plain": "Größter minus kleinster Wert.", "example": "$9 - 3 = 6$" }
+      {
+        "term": "Wahrscheinlichkeit",
+        "plain": "Günstig durch möglich. Zwischen 0 und 1.",
+        "example": "$P(6) = \\frac{1}{6}$"
+      },
+      {
+        "term": "Ereignis",
+        "plain": "Das, was du willst.",
+        "example": "„eine gerade Zahl“"
+      },
+      {
+        "term": "Gegenereignis",
+        "plain": "Das Gegenteil. Hat den Rest bis 1.",
+        "example": "$1 - P$"
+      },
+      {
+        "term": "Baumdiagramm",
+        "plain": "Alle Wege bei mehreren Zügen.",
+        "example": "erst rot, dann blau"
+      },
+      {
+        "term": "Pfadregel",
+        "plain": "Entlang eines Weges: mal.",
+        "example": "$\\frac{3}{10} \\cdot \\frac{3}{10}$"
+      },
+      {
+        "term": "Summenregel",
+        "plain": "Mehrere passende Wege: plus.",
+        "example": "rot-blau plus blau-rot"
+      },
+      {
+        "term": "Mittelwert",
+        "plain": "Alles zusammen, geteilt durch die Anzahl.",
+        "example": "Durchschnitt"
+      },
+      {
+        "term": "Median",
+        "plain": "Sortieren, dann der Wert in der Mitte.",
+        "example": "1, 3, **5**, 8, 20"
+      },
+      {
+        "term": "Modus",
+        "plain": "Der häufigste Wert.",
+        "example": "3, 5, 5, 7 → 5"
+      },
+      {
+        "term": "Spannweite",
+        "plain": "Größter minus kleinster Wert.",
+        "example": "$9 - 3 = 6$"
+      }
     ],
     "quiz": [
-      { "prompt": "Ein Würfel. Wie groß ist $P(\\text{gerade Zahl})$?", "choices": ["$\\frac{1}{2}$", "$\\frac{1}{6}$", "$\\frac{1}{3}$", "$\\frac{2}{3}$"], "correct": "$\\frac{1}{2}$", "explain": "2, 4, 6 sind günstig: 3 von 6." },
-      { "prompt": "4 rote, 6 blaue Kugeln. $P(\\text{blau})$?", "choices": ["60 %", "40 %", "6 %", "10 %"], "correct": "60 %", "explain": "6 von 10 sind blau: $\\frac{6}{10} = 60\\,\\%$." },
-      { "prompt": "Zweimal Kopf beim Münzwurf?", "choices": ["$\\frac{1}{4}$", "$\\frac{1}{2}$", "1", "$\\frac{2}{2}$"], "correct": "$\\frac{1}{4}$", "explain": "Pfadregel: $\\frac{1}{2} \\cdot \\frac{1}{2}$." },
-      { "prompt": "Median von 4, 9, 1, 7, 3?", "choices": ["4", "9", "1", "5"], "correct": "4", "explain": "Sortiert: 1, 3, 4, 7, 9. In der Mitte steht 4." },
-      { "prompt": "Mittelwert von 2, 4, 6?", "choices": ["4", "12", "3", "6"], "correct": "4", "explain": "$(2 + 4 + 6) : 3 = 4$." },
-      { "prompt": "Spannweite von 3, 8, 15, 4?", "choices": ["12", "15", "3", "7"], "correct": "12", "explain": "Größter minus kleinster: $15 - 3 = 12$." }
+      {
+        "prompt": "Ein Würfel. Wie groß ist $P(\\text{gerade Zahl})$?",
+        "choices": [
+          "$\\frac{1}{2}$",
+          "$\\frac{1}{6}$",
+          "$\\frac{1}{3}$",
+          "$\\frac{2}{3}$"
+        ],
+        "correct": "$\\frac{1}{2}$",
+        "explain": "Die Zahlen 2, 4 und 6 sind gerade. Das sind 3 günstige von 6 möglichen Seiten, also die Hälfte."
+      },
+      {
+        "prompt": "4 rote, 6 blaue Kugeln. $P(\\text{blau})$?",
+        "choices": [
+          "60 %",
+          "40 %",
+          "6 %",
+          "10 %"
+        ],
+        "correct": "60 %",
+        "explain": "6 von 10 Kugeln sind blau. Sechs Zehntel sind dasselbe wie 60 Prozent."
+      },
+      {
+        "prompt": "Zweimal Kopf beim Münzwurf?",
+        "choices": [
+          "$\\frac{1}{4}$",
+          "$\\frac{1}{2}$",
+          "1",
+          "$\\frac{2}{2}$"
+        ],
+        "correct": "$\\frac{1}{4}$",
+        "explain": "Entlang eines Weges wird malgenommen. Ein Halb mal ein Halb ergibt ein Viertel."
+      },
+      {
+        "prompt": "Median von 4, 9, 1, 7, 3?",
+        "choices": [
+          "4",
+          "9",
+          "1",
+          "5"
+        ],
+        "correct": "4",
+        "explain": "Sortiert heißt die Liste 1, 3, 4, 7, 9. In der Mitte steht die 4."
+      },
+      {
+        "prompt": "Mittelwert von 2, 4, 6?",
+        "choices": [
+          "4",
+          "12",
+          "3",
+          "6"
+        ],
+        "correct": "4",
+        "explain": "Zusammen ergeben die drei Werte 12. Geteilt durch 3 ist das 4."
+      },
+      {
+        "prompt": "Spannweite von 3, 8, 15, 4?",
+        "choices": [
+          "12",
+          "15",
+          "3",
+          "7"
+        ],
+        "correct": "12",
+        "explain": "Du ziehst den kleinsten Wert vom größten ab: 15 minus 3 ergibt 12."
+      }
     ]
   }
 ]

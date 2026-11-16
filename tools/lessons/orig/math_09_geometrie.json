@@ -1,0 +1,77 @@
+[
+  {
+    "id": "P_MATH_GEO_BEGRIFFE",
+    "subject": "MATH",
+    "title": "Fläche, Umfang, Winkel",
+    "teaser": "Was Umfang und Fläche unterscheidet, wie man Dreiecke beschriftet und was ein Winkel ist",
+    "hook": "In der Geometrie geht es um Formen. Aber die Prüfung fragt nach Zahlen: Umfang, Fläche, Winkel. Und die drei verwechselt man leicht. Also einmal sauber sortieren.",
+    "outro": "Zaun, Gras, Drehung. Und Seite a gegenüber von Ecke A. Damit kannst du jede Figur in der Lektion lesen.",
+    "steps": [
+      {
+        "title": "Umfang: einmal außen rum",
+        "body": "Rechteck 5 cm mal 3 cm.\n\nUmfang $U = 5 + 3 + 5 + 3 = 16$ cm\n\nDer **Zaun** um die Wiese.",
+        "figure": { "type": "rectangle", "a": 5, "b": 3, "labels": { "a": "5 cm", "b": "3 cm" } },
+        "say": "Umfang ist eine Länge, also in cm. Stell dir vor, du läufst einmal außen herum."
+      },
+      {
+        "title": "Fläche: was drin ist",
+        "body": "$A = 5 \\cdot 3 = 15\\ \\text{cm}^2$\n\nDas **Gras** auf der Wiese.\n\nIn **Quadrat**-Zentimetern.",
+        "say": "Fläche ist immer „hoch 2“: cm², m². Weil man Länge mal Breite rechnet."
+      },
+      {
+        "title": "Die kleine 2",
+        "body": "$15\\ \\text{cm}^2$ = 15 Quadrate von 1 cm mal 1 cm.\n\nUmfang: cm. Fläche: cm².",
+        "say": "Wenn du in der Prüfung cm² siehst, weißt du: Fläche. Bei cm: Länge oder Umfang."
+      },
+      {
+        "title": "Das Dreieck beschriften",
+        "body": "Ecken: **A, B, C** (groß)\n\nSeiten: **a, b, c** (klein), jede **gegenüber** ihrer Ecke\n\nWinkel: **α, β, γ** an A, B, C",
+        "figure": { "type": "triangle", "alpha": 60, "beta": 50, "labels": { "a": "a", "b": "b", "c": "c", "alpha": "α", "beta": "β", "gamma": "γ" } },
+        "say": "Seite a liegt gegenüber von Ecke A. Das ist die Regel, die alles ordnet."
+      },
+      {
+        "title": "Was ist ein Winkel?",
+        "body": "Ein Winkel ist eine **Drehung**.\n\nEinmal ganz herum: 360°\n\nEin Viertel davon: 90°, der **rechte Winkel**",
+        "say": "Grad ist die Einheit, das kleine Kreis-Zeichen. 90 Grad ist die Ecke von jedem Blatt Papier."
+      },
+      {
+        "title": "Winkel-Sorten",
+        "body": "**spitz**: unter 90°\n\n**rechter** Winkel: genau 90°\n\n**stumpf**: über 90°\n\n**gestreckt**: 180°, eine gerade Linie",
+        "say": "Spitz wie eine Pizzaspitze, stumpf wie ein aufgeklappter Laptop."
+      },
+      {
+        "title": "Winkelsumme im Dreieck",
+        "body": "$\\alpha + \\beta + \\gamma = 180°$\n\n$\\alpha = 70°$, $\\beta = 60°$ → $\\gamma = 180° - 130° = 50°$",
+        "say": "In jedem Dreieck, egal wie es aussieht. Zwei Winkel kennen heißt den dritten kennen."
+      },
+      {
+        "title": "Die Höhe",
+        "body": "Die **Höhe** $h$ steht **senkrecht** auf der Grundseite $g$.\n\nDreieck: $A = \\frac{g \\cdot h}{2}$",
+        "figure": { "type": "triangle", "alpha": 50.2, "beta": 50.2, "labels": { "c": "g", "h": "h" } },
+        "say": "Warum halbe? Weil ein Dreieck ein halbes Rechteck ist. Zeichne die andere Hälfte dazu und du siehst es."
+      },
+      {
+        "title": "Gleichschenklig und gleichseitig",
+        "body": "**gleichschenklig**: zwei gleiche Seiten, zwei gleiche Winkel\n\n**gleichseitig**: drei gleiche Seiten, alle Winkel 60°",
+        "say": "Bei gleichschenklig sind die beiden Basiswinkel gleich. Das nutzen sie in der Prüfung fast jedes Jahr."
+      }
+    ],
+    "vocab": [
+      { "term": "Umfang U", "plain": "Einmal außen herum. Eine Länge.", "example": "16 cm" },
+      { "term": "Flächeninhalt A", "plain": "Was drin ist. In Quadrat-Einheiten.", "example": "15 cm²" },
+      { "term": "Winkel", "plain": "Eine Drehung, gemessen in Grad.", "example": "90° ist ein rechter Winkel" },
+      { "term": "Höhe h", "plain": "Senkrecht auf der Grundseite.", "example": "$A = \\frac{g \\cdot h}{2}$" },
+      { "term": "Grundseite g", "plain": "Die Seite, auf der die Höhe steht.", "example": "meist die untere" },
+      { "term": "gleichschenklig", "plain": "Zwei gleiche Seiten, zwei gleiche Basiswinkel.", "example": "$\\alpha = \\beta$" },
+      { "term": "gleichseitig", "plain": "Drei gleiche Seiten, alle Winkel 60°.", "example": "$a = b = c$" },
+      { "term": "Winkelsumme", "plain": "Im Dreieck immer 180°.", "example": "$\\alpha + \\beta + \\gamma = 180°$" }
+    ],
+    "quiz": [
+      { "prompt": "Rechteck 4 cm mal 2 cm. Umfang?", "choices": ["12 cm", "8 cm", "8 cm²", "6 cm"], "correct": "12 cm", "explain": "$4 + 2 + 4 + 2 = 12$ cm. Einmal außen herum." },
+      { "prompt": "Rechteck 4 cm mal 2 cm. Fläche?", "choices": ["8 cm²", "12 cm", "8 cm", "6 cm²"], "correct": "8 cm²", "explain": "$4 \\cdot 2 = 8$, in Quadratzentimetern." },
+      { "prompt": "Welche Seite liegt gegenüber von Ecke B?", "choices": ["b", "a", "c", "β"], "correct": "b", "explain": "Jede Seite liegt gegenüber der Ecke mit demselben Buchstaben." },
+      { "prompt": "$\\alpha = 90°$, $\\beta = 35°$. Wie groß ist $\\gamma$?", "choices": ["55°", "45°", "125°", "65°"], "correct": "55°", "explain": "$180° - 90° - 35° = 55°$." },
+      { "prompt": "Ein Winkel von 120° ist …", "choices": ["stumpf", "spitz", "ein rechter Winkel", "gestreckt"], "correct": "stumpf", "explain": "Über 90° heißt stumpf." }
+    ]
+  }
+]

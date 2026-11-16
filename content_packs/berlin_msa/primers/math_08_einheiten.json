@@ -5,65 +5,320 @@
     "title": "Einheiten: kilo, zenti, milli",
     "teaser": "Was die Vorsilben bedeuten, warum bei Flächen die 100 auftaucht und warum die Zeit anders tickt",
     "hook": "Einheiten umrechnen ist kein Rechnen, sondern Wörter verstehen. Kilo heißt tausend, zenti heißt hundertstel. Wer das weiß, braucht keine Tabelle.",
-    "outro": "Kilo, zenti, milli. Länge mal 10, Fläche mal 100, Volumen mal 1000. Und Zeit läuft in Sechzigern. Das reicht für jede Umrechnung.",
+    "outro": "Du kennst jetzt die Vorsilben kilo, dezi, zenti und milli. Bei Längen rechnest du von Stufe zu Stufe mal 10, bei Flächen mal 100 und bei Volumen mal 1000. Nur die Zeit läuft in Sechzigern. Das reicht für jede Umrechnung.",
+    "standard": 2,
+    "requires": [
+      "P_MATH_ZEICHEN",
+      "P_MATH_BRUCH",
+      "P_MATH_POTENZ"
+    ],
     "steps": [
       {
+        "chapter": "Vorsilben und Längen",
         "title": "Die Vorsilben",
-        "body": "**kilo** = tausend: 1 km = 1000 m\n\n**zenti** = hundertstel: 1 cm = $\\frac{1}{100}$ m\n\n**milli** = tausendstel: 1 mm = $\\frac{1}{1000}$ m",
-        "say": "Griechisch und lateinisch, aber nur drei Wörter. Kilo, zenti, milli."
+        "body": "**kilo** = tausend: 1 km = 1000 m\n\n**dezi** = zehntel: 1 dm = $\\frac{1}{10}$ m\n\n**zenti** = hundertstel: 1 cm = $\\frac{1}{100}$ m\n\n**milli** = tausendstel: 1 mm = $\\frac{1}{1000}$ m",
+        "say": "Diese vier kleinen Wörter kommen aus dem Griechischen und Lateinischen. Sie stehen vor der Einheit und sagen, wie groß sie ist. Ein Kilometer sind tausend Meter. Ein Zentimeter ist ein Hundertstel von einem Meter. Mehr musst du dir nicht merken.",
+        "tasks": [
+          {
+            "text": "Die Vorsilbe kilo bedeutet ___.",
+            "choices": [
+              "tausend",
+              "hundert"
+            ],
+            "correct": "tausend",
+            "why": "Ein Kilometer sind 1000 Meter, und ein Kilogramm sind 1000 Gramm.",
+            "hint": "Wie viele Meter hat ein Kilometer?"
+          }
+        ]
       },
       {
         "title": "Die Längen-Leiter",
-        "body": "km → m → dm → cm → mm\n\nJede Stufe: **mal 10**\n\nNur km → m: **mal 1000**",
-        "say": "Nach unten mal, nach oben geteilt. 2,5 m sind 25 dm sind 250 cm."
+        "body": "Von groß nach klein: km, m, dm, cm, mm\n\nVon m bis mm ist jede Stufe **mal 10**.\n\nNur von km zu m: **mal 1000**",
+        "say": "Stell dir die Einheiten wie eine Leiter vor. Gehst du eine Stufe hinunter zur kleineren Einheit, rechnest du mal. Gehst du hinauf zur größeren, teilst du. So werden aus 2,5 Metern erst 25 Dezimeter und dann 250 Zentimeter.",
+        "tasks": [
+          {
+            "text": "Von m zu dm rechnest du ___.",
+            "choices": [
+              "mal 10",
+              "mal 100"
+            ],
+            "correct": "mal 10",
+            "why": "Der Dezimeter ist die nächste Stufe unter dem Meter. Jede Stufe ist mal 10.",
+            "hint": "Wie viele Dezimeter passen in einen Meter?"
+          }
+        ]
       },
       {
         "title": "Beispiel",
         "body": "$3{,}5\\ \\text{m} = 350\\ \\text{cm}$\n\n$4200\\ \\text{m} = 4{,}2\\ \\text{km}$",
-        "say": "Größere Einheit, kleinere Zahl. Kleinere Einheit, größere Zahl. Das ist die Kontrolle."
+        "say": "Mit einer einfachen Frage kannst du jedes Ergebnis prüfen. Wird die Einheit größer, muss die Zahl kleiner werden. Wird die Einheit kleiner, muss die Zahl größer werden. Von kleinen Schritten brauchst du schließlich mehr als von großen.",
+        "tasks": [
+          {
+            "text": "Du rechnest von m in km um. Die Zahl wird ___.",
+            "choices": [
+              "kleiner",
+              "größer"
+            ],
+            "correct": "kleiner",
+            "why": "Der Kilometer ist die größere Einheit. Davon brauchst du weniger.",
+            "hint": "Brauchst du von großen Schritten mehr oder weniger als von kurzen?"
+          }
+        ]
       },
       {
+        "title": "Jetzt du: Längen umrechnen",
+        "body": "Tipp bei jeder Aufgabe auf das richtige Ergebnis.",
+        "tasks": [
+          {
+            "text": "$7\\ \\text{cm} = $ ___",
+            "choices": [
+              "70 mm",
+              "700 mm"
+            ],
+            "correct": "70 mm",
+            "why": "Von cm zu mm ist es eine Stufe nach unten, also mal 10.",
+            "hint": "Wie viele Stufen liegen auf der Leiter zwischen cm und mm?"
+          },
+          {
+            "text": "$5000\\ \\text{m} = $ ___",
+            "choices": [
+              "5 km",
+              "50 km"
+            ],
+            "correct": "5 km",
+            "why": "Kilo heißt tausend. 5000 geteilt durch 1000 ergibt 5.",
+            "hint": "Durch welche Zahl teilst du, wenn du von Metern zu Kilometern gehst?"
+          },
+          {
+            "text": "$1{,}2\\ \\text{m} = $ ___",
+            "choices": [
+              "120 cm",
+              "12 cm"
+            ],
+            "correct": "120 cm",
+            "why": "Von m zu cm sind es zwei Stufen, also mal 100.",
+            "hint": "Wie viele Zentimeter hat ein ganzer Meter?"
+          }
+        ],
+        "say": "Überleg bei jeder Aufgabe zuerst, ob die neue Einheit größer oder kleiner ist. Dann weißt du schon, ob die Zahl wachsen oder schrumpfen muss. Danach zählst du die Stufen auf der Leiter."
+      },
+      {
+        "chapter": "Flächen, Volumen, Gewicht und Zeit",
         "title": "Fläche: alles mal 100",
-        "body": "1 m = 100 cm\n\n$1\\ \\text{m}^2 = 100 \\cdot 100 = 10\\,000\\ \\text{cm}^2$\n\nBei Flächen: jede Stufe **mal 100**.",
-        "figure": { "type": "rectangle", "a": 100, "b": 100, "labels": { "a": "100 cm", "b": "100 cm" } },
-        "say": "Ein Quadratmeter ist ein Quadrat von 1 m mal 1 m. In Zentimetern: 100 mal 100."
+        "body": "1 m = 100 cm\n\n$1\\ \\text{m}^2 = 100 \\cdot 100 = 10\\,000\\ \\text{cm}^2$\n\nVon einer Stufe zur nächsten, etwa von $\\text{dm}^2$ zu $\\text{cm}^2$: **mal 100**.\n\nVon $\\text{m}^2$ zu $\\text{cm}^2$ sind es zwei Stufen.",
+        "figure": {
+          "type": "rectangle",
+          "a": 100,
+          "b": 100,
+          "labels": {
+            "a": "100 cm",
+            "b": "100 cm"
+          }
+        },
+        "say": "Ein Quadratmeter ist ein Quadrat, das einen Meter lang und einen Meter breit ist. In Zentimetern sind das 100 mal 100. Bei Flächen zählt jede Stufe der Leiter also doppelt: einmal für die Länge und einmal für die Breite. Deshalb ist jede Stufe mal 100.",
+        "tasks": [
+          {
+            "text": "$1\\ \\text{dm}^2 = $ ___",
+            "choices": [
+              "$100\\ \\text{cm}^2$",
+              "$10\\ \\text{cm}^2$"
+            ],
+            "correct": "$100\\ \\text{cm}^2$",
+            "why": "Ein Dezimeter sind 10 cm. Das Quadrat hat 10 mal 10 kleine Quadrate.",
+            "hint": "Das Quadrat ist 10 cm lang und 10 cm breit. Rechne mal."
+          }
+        ]
       },
       {
         "title": "Volumen: alles mal 1000",
-        "body": "$1\\ \\text{m}^3 = 100 \\cdot 100 \\cdot 100 = 1\\,000\\,000\\ \\text{cm}^3$\n\nBei Volumen: jede Stufe **mal 1000**.",
-        "say": "Länge hoch 1: mal 10. Fläche hoch 2: mal 100. Volumen hoch 3: mal 1000. Die kleine Hochzahl verrät es."
+        "body": "Das **Volumen** sagt, wie viel in etwas hineinpasst.\n\n$1\\ \\text{m}^3 = 100 \\cdot 100 \\cdot 100 = 1\\,000\\,000\\ \\text{cm}^3$\n\nVon einer Stufe zur nächsten: **mal 1000**.",
+        "say": "Die kleine Hochzahl an der Einheit verrät dir die Regel. Bei Längen steht keine Hochzahl, dort ist jede Stufe mal 10. Bei Flächen steht eine 2, dort ist es mal 100. Beim Volumen steht eine 3, und jede Stufe ist mal 1000.",
+        "tasks": [
+          {
+            "text": "$1\\ \\text{dm}^3 = $ ___",
+            "choices": [
+              "$1000\\ \\text{cm}^3$",
+              "$100\\ \\text{cm}^3$"
+            ],
+            "correct": "$1000\\ \\text{cm}^3$",
+            "why": "Es ist eine Stufe nach unten, und beim Volumen ist jede Stufe mal 1000.",
+            "hint": "Rechne 10 mal 10 mal 10 aus."
+          }
+        ]
       },
       {
         "title": "Liter",
         "body": "$1\\ \\text{l} = 1\\ \\text{dm}^3$\n\n$1\\ \\text{ml} = 1\\ \\text{cm}^3$\n\n$1\\ \\text{m}^3 = 1000\\ \\text{l}$",
-        "say": "Ein Liter ist ein Würfel mit 10 cm Kante. Merk dir das Bild vom Milchkarton."
+        "say": "Ein Liter ist genau so viel, wie in einen Würfel mit 10 Zentimetern Kantenlänge passt. Denk an einen Milchkarton. Ein Milliliter ist ein winziger Würfel mit einem Zentimeter Kantenlänge.",
+        "tasks": [
+          {
+            "text": "2 Liter sind ___.",
+            "choices": [
+              "$2\\ \\text{dm}^3$",
+              "$2\\ \\text{cm}^3$"
+            ],
+            "correct": "$2\\ \\text{dm}^3$",
+            "why": "Ein Liter ist ein Würfel mit 10 cm Kantenlänge, also ein Kubikdezimeter.",
+            "hint": "Wie lang ist die Kante des Würfels, in den ein Liter passt?"
+          }
+        ]
       },
       {
         "title": "Gewicht",
         "body": "1 t = 1000 kg\n\n1 kg = 1000 g\n\n1 g = 1000 mg\n\nImmer **mal 1000**.",
-        "say": "Beim Gewicht gibt es nur die Tausender-Schritte. Einfacher als Länge."
+        "say": "Beim Gewicht gibt es nur Schritte von tausend. Eine Tonne sind tausend Kilogramm, und ein Kilogramm sind tausend Gramm. Das ist einfacher als bei den Längen, weil keine Zwischenstufen vorkommen.",
+        "tasks": [
+          {
+            "text": "$3\\ \\text{kg} = $ ___",
+            "choices": [
+              "3000 g",
+              "300 g"
+            ],
+            "correct": "3000 g",
+            "why": "Kilo heißt tausend. 3 mal 1000 ergibt 3000.",
+            "hint": "Was bedeutet die Vorsilbe kilo noch einmal?"
+          }
+        ]
       },
       {
         "title": "Zeit ist die Ausnahme",
         "body": "1 h = **60** min\n\n1 min = **60** s\n\n1 h = 3600 s\n\n1,5 h sind **90** min, nicht 150!",
-        "say": "Zeit läuft in Sechzigern, nicht in Zehnern. 0,5 Stunden sind 30 Minuten."
+        "say": "Die Zeit läuft in Sechzigern und nicht in Zehnern. Eine halbe Stunde sind deshalb 30 Minuten und nicht 50. Das Komma bei Stunden führt leicht in die Irre. Rechne die Stunden immer mal 60, dann bist du sicher.",
+        "tasks": [
+          {
+            "text": "2,5 h sind ___.",
+            "choices": [
+              "150 min",
+              "250 min"
+            ],
+            "correct": "150 min",
+            "why": "Zwei Stunden sind 120 Minuten, und die halbe Stunde bringt noch 30 dazu.",
+            "hint": "Wie viele Minuten hat eine halbe Stunde?"
+          }
+        ]
+      },
+      {
+        "title": "Das nimmst du mit",
+        "body": "(1) kilo heißt tausend, zenti hundertstel, milli tausendstel.\n\n(2) Länge: jede Stufe mal 10.\n\n(3) Fläche: jede Stufe mal 100.\n\n(4) Volumen: jede Stufe mal 1000.\n\n(5) Zeit: mal 60.",
+        "tasks": [
+          {
+            "text": "$3\\ \\text{m}^2$ in $\\text{dm}^2$: Du rechnest ___.",
+            "choices": [
+              "mal 100",
+              "mal 10"
+            ],
+            "correct": "mal 100",
+            "why": "Es geht um eine Fläche. Dort ist jede Stufe mal 100.",
+            "hint": "Geht es hier um eine Länge oder um eine Fläche?"
+          }
+        ],
+        "say": "Das sind die fünf Dinge, die du zum Umrechnen brauchst. Prüf dein Ergebnis am Ende immer mit der einfachen Frage: Ist die neue Einheit kleiner, dann muss die Zahl größer sein. Gleich kommen die Wörter und ein kleines Quiz."
       }
     ],
     "vocab": [
-      { "term": "kilo", "plain": "Tausend.", "example": "1 km = 1000 m, 1 kg = 1000 g" },
-      { "term": "zenti", "plain": "Ein Hundertstel.", "example": "100 cm = 1 m" },
-      { "term": "milli", "plain": "Ein Tausendstel.", "example": "1000 mm = 1 m, 1000 ml = 1 l" },
-      { "term": "dezi", "plain": "Ein Zehntel.", "example": "10 dm = 1 m" },
-      { "term": "Quadrat-Einheit (m²)", "plain": "Fläche. Jede Stufe mal 100.", "example": "$1\\ \\text{m}^2 = 10\\,000\\ \\text{cm}^2$" },
-      { "term": "Kubik-Einheit (m³)", "plain": "Volumen. Jede Stufe mal 1000.", "example": "$1\\ \\text{dm}^3 = 1000\\ \\text{cm}^3$" },
-      { "term": "Liter", "plain": "Ein Würfel mit 10 cm Kante, also 1 dm³.", "example": "1 l = 1000 ml" }
+      {
+        "term": "kilo",
+        "plain": "Tausend.",
+        "example": "1 km = 1000 m, 1 kg = 1000 g"
+      },
+      {
+        "term": "zenti",
+        "plain": "Ein Hundertstel.",
+        "example": "100 cm = 1 m"
+      },
+      {
+        "term": "milli",
+        "plain": "Ein Tausendstel.",
+        "example": "1000 mm = 1 m, 1000 ml = 1 l"
+      },
+      {
+        "term": "dezi",
+        "plain": "Ein Zehntel.",
+        "example": "10 dm = 1 m"
+      },
+      {
+        "term": "Quadratmeter",
+        "plain": "Fläche. Jede Stufe mal 100.",
+        "example": "$1\\ \\text{m}^2 = 10\\,000\\ \\text{cm}^2$"
+      },
+      {
+        "term": "Volumen",
+        "plain": "Volumen. Jede Stufe mal 1000.",
+        "example": "$1\\ \\text{dm}^3 = 1000\\ \\text{cm}^3$"
+      },
+      {
+        "term": "Liter",
+        "plain": "Ein Würfel mit 10 cm Kante, also 1 dm³.",
+        "example": "1 l = 1000 ml"
+      }
     ],
     "quiz": [
-      { "prompt": "2,5 km in Metern?", "choices": ["2500 m", "250 m", "25 m", "25 000 m"], "correct": "2500 m", "explain": "Kilo heißt tausend: $2{,}5 \\cdot 1000$." },
-      { "prompt": "1 m² sind wie viele cm²?", "choices": ["10 000", "100", "1000", "1 000 000"], "correct": "10 000", "explain": "100 cm mal 100 cm." },
-      { "prompt": "1 Liter ist …", "choices": ["1 dm³", "1 cm³", "1 m³", "10 cm"], "correct": "1 dm³", "explain": "Ein Würfel mit 10 cm Kante." },
-      { "prompt": "1,5 Stunden sind …", "choices": ["90 Minuten", "150 Minuten", "1 Stunde 50 Minuten", "15 Minuten"], "correct": "90 Minuten", "explain": "Eine Stunde hat 60 Minuten, eine halbe 30." },
-      { "prompt": "42 000 mm² in cm²?", "choices": ["420 cm²", "4200 cm²", "42 cm²", "4,2 cm²"], "correct": "420 cm²", "explain": "Fläche: eine Stufe nach oben heißt geteilt durch 100." }
+      {
+        "prompt": "2,5 km in Metern?",
+        "choices": [
+          "2500 m",
+          "250 m",
+          "25 m",
+          "25 000 m"
+        ],
+        "correct": "2500 m",
+        "explain": "Kilo heißt tausend. 2,5 mal 1000 ergibt 2500 Meter."
+      },
+      {
+        "prompt": "1 m² sind wie viele cm²?",
+        "choices": [
+          "10 000",
+          "100",
+          "1000",
+          "1 000 000"
+        ],
+        "correct": "10 000",
+        "explain": "Ein Meter sind 100 cm. Das Quadrat hat also 100 mal 100 kleine Quadrate, das sind 10 000."
+      },
+      {
+        "prompt": "1 Liter ist …",
+        "choices": [
+          "1 dm³",
+          "1 cm³",
+          "1 m³",
+          "10 cm"
+        ],
+        "correct": "1 dm³",
+        "explain": "Ein Liter passt genau in einen Würfel mit 10 cm Kantenlänge. Das ist ein Kubikdezimeter."
+      },
+      {
+        "prompt": "1,5 Stunden sind …",
+        "choices": [
+          "90 Minuten",
+          "150 Minuten",
+          "1 Stunde 50 Minuten",
+          "15 Minuten"
+        ],
+        "correct": "90 Minuten",
+        "explain": "Eine Stunde hat 60 Minuten, eine halbe Stunde 30. Zusammen sind das 90 Minuten."
+      },
+      {
+        "prompt": "42 000 mm² in cm²?",
+        "choices": [
+          "420 cm²",
+          "4200 cm²",
+          "42 cm²",
+          "4,2 cm²"
+        ],
+        "correct": "420 cm²",
+        "explain": "Bei Flächen bedeutet eine Stufe nach oben geteilt durch 100. 42 000 geteilt durch 100 ergibt 420."
+      },
+      {
+        "prompt": "0,25 Stunden sind wie viele Minuten?",
+        "choices": [
+          "15 Minuten",
+          "25 Minuten",
+          "2,5 Minuten",
+          "40 Minuten"
+        ],
+        "correct": "15 Minuten",
+        "explain": "Die Zeit läuft in Sechzigern. Ein Viertel von 60 Minuten sind 15 Minuten."
+      }
     ]
   }
 ]

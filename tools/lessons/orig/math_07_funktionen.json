@@ -1,0 +1,88 @@
+[
+  {
+    "id": "P_MATH_FUNKTION",
+    "subject": "MATH",
+    "title": "Funktionen: die Zahlenmaschine",
+    "teaser": "Was eine Funktion ist, wie du ein Koordinatensystem liest und was Steigung wirklich bedeutet",
+    "hook": "Eine Funktion ist eine Maschine: Vorne kommt eine Zahl rein, hinten kommt eine Zahl raus. Immer nach derselben Regel. Mehr ist es nicht.",
+    "outro": "Maschine, Tabelle, Bild. Steigung und Startwert. Damit kannst du jede Gerade in der Lektion lesen.",
+    "steps": [
+      {
+        "title": "Die Maschine",
+        "body": "Regel: **verdopple und plus 1**\n\n$x = 2$ rein → $5$ raus\n\n$x = 3$ rein → $7$ raus\n\n$y = 2x + 1$",
+        "say": "x ist, was reinkommt. y ist, was rauskommt. Die Regel dazwischen ist die Funktion."
+      },
+      {
+        "title": "Schreibweisen",
+        "body": "$y = 2x + 1$ oder $f(x) = 2x + 1$\n\n$f(3) = 2 \\cdot 3 + 1 = 7$\n\n„f von 3 ist 7“",
+        "say": "f(3) ist keine Multiplikation. Es heißt: Steck die 3 in die Maschine f."
+      },
+      {
+        "title": "Die Wertetabelle",
+        "body": "$x$: 0, 1, 2, 3\n\n$y$: 1, 3, 5, 7\n\nJedes $x$ bekommt **genau ein** $y$.",
+        "say": "So sieht die Maschine auf Papier aus: links rein, rechts raus."
+      },
+      {
+        "title": "Das Koordinatensystem",
+        "body": "Waagerecht: **x-Achse** (rechts ist plus)\n\nSenkrecht: **y-Achse** (oben ist plus)\n\nPunkt $(2\\,|\\,5)$: 2 nach rechts, 5 nach oben",
+        "figure": { "type": "coordinateSystem", "xmin": -1, "xmax": 6, "ymin": -1, "ymax": 8, "width": 300, "height": 300, "points": [{ "x": 2, "y": 5, "label": "(2|5)" }] },
+        "say": "Erst x, dann y. Erst laufen, dann klettern. So merkt man sich die Reihenfolge."
+      },
+      {
+        "title": "Punkte werden ein Bild",
+        "body": "Alle Punkte der Tabelle liegen auf einer **Geraden**.\n\nDas ist der **Graph** von $y = 2x + 1$.",
+        "figure": { "type": "coordinateSystem", "xmin": -1, "xmax": 6, "ymin": -1, "ymax": 8, "width": 300, "height": 300, "lines": [{ "m": 2, "n": 1, "label": "y = 2x + 1" }], "points": [{ "x": 0, "y": 1 }, { "x": 1, "y": 3 }, { "x": 2, "y": 5 }, { "x": 3, "y": 7 }] },
+        "say": "Verbinde die Punkte und du siehst die ganze Maschine auf einmal."
+      },
+      {
+        "title": "Was ist die Steigung?",
+        "body": "$y = 2x + 1$: Die **2** ist die Steigung $m$.\n\nEin Schritt nach rechts → **2** Schritte nach oben.",
+        "say": "Steigung heißt: Wie viel klettert die Gerade pro Schritt nach rechts? Bei 2 ist sie ziemlich steil."
+      },
+      {
+        "title": "Negative Steigung",
+        "body": "$y = -x + 4$: Steigung $-1$\n\nEin Schritt nach rechts → 1 Schritt nach **unten**.\n\nDie Gerade **fällt**.",
+        "figure": { "type": "coordinateSystem", "xmin": -2, "xmax": 6, "ymin": -2, "ymax": 6, "width": 300, "height": 300, "lines": [{ "m": -1, "n": 4, "label": "y = −x + 4" }] },
+        "say": "Plus vor dem x: bergauf. Minus: bergab. Immer von links nach rechts gelesen."
+      },
+      {
+        "title": "Der Startwert n",
+        "body": "$y = 2x + 1$: Die **1** ist der y-Achsenabschnitt $n$.\n\nBei $x = 0$ ist $y = 1$. Dort schneidet die Gerade die y-Achse.",
+        "say": "n ist der Startpunkt auf der y-Achse. Von da aus geht es mit der Steigung los."
+      },
+      {
+        "title": "Die allgemeine Form",
+        "body": "$y = m \\cdot x + n$\n\n$m$ = Steigung\n\n$n$ = Startwert auf der y-Achse",
+        "say": "Diese Zeile steht auf dem Formelblatt. Jetzt weißt du, was die Buchstaben tun."
+      },
+      {
+        "title": "Punktprobe",
+        "body": "Liegt $(3\\,|\\,7)$ auf $y = 2x + 1$?\n\n$2 \\cdot 3 + 1 = 7$ ✓ Ja.\n\n$(3\\,|\\,8)$? $7 \\neq 8$ ✗ Nein.",
+        "say": "x einsetzen, ausrechnen, mit y vergleichen. Das ist die Punktprobe, und sie kommt in jeder Prüfung vor."
+      },
+      {
+        "title": "Nullstelle",
+        "body": "Wo ist $y = 0$?\n\n$2x + 1 = 0 \\quad | -1 \\quad | :2$\n\n$x = -0{,}5$\n\nDort schneidet die Gerade die x-Achse.",
+        "say": "Nullstelle heißt: Die Maschine gibt 0 raus. Du setzt y = 0 und löst nach x."
+      }
+    ],
+    "vocab": [
+      { "term": "Funktion", "plain": "Eine Regel: Jedes x bekommt genau ein y.", "example": "$f(x) = 2x + 1$" },
+      { "term": "x", "plain": "Die Eingabe, was in die Maschine geht.", "example": "$x = 3$" },
+      { "term": "y oder f(x)", "plain": "Die Ausgabe, was rauskommt.", "example": "$f(3) = 7$" },
+      { "term": "Wertetabelle", "plain": "x und y in einer Tabelle.", "example": "0 → 1, 1 → 3, 2 → 5" },
+      { "term": "Graph", "plain": "Das Bild der Funktion im Koordinatensystem.", "example": "Bei $y = mx + n$ eine Gerade." },
+      { "term": "Steigung m", "plain": "Wie viel es pro Schritt nach rechts nach oben (oder unten) geht.", "example": "$m = 2$" },
+      { "term": "y-Achsenabschnitt n", "plain": "Wo die Gerade die y-Achse schneidet.", "example": "$n = 1$" },
+      { "term": "Nullstelle", "plain": "Wo $y = 0$ ist, also der Schnitt mit der x-Achse.", "example": "$x = -0{,}5$" },
+      { "term": "Punktprobe", "plain": "Prüfen, ob ein Punkt auf dem Graphen liegt.", "example": "x einsetzen, y vergleichen" }
+    ],
+    "quiz": [
+      { "prompt": "$f(x) = 3x - 2$. Was ist $f(2)$?", "choices": ["4", "6", "1", "8"], "correct": "4", "explain": "$3 \\cdot 2 - 2 = 4$." },
+      { "prompt": "Bei $y = 5x + 3$: Was ist die Steigung?", "choices": ["5", "3", "8", "$x$"], "correct": "5", "explain": "Die Zahl vor dem x ist die Steigung m." },
+      { "prompt": "Bei $y = 5x + 3$: Wo schneidet die Gerade die y-Achse?", "choices": ["Bei $y = 3$", "Bei $y = 5$", "Bei $y = 8$", "Bei $y = 0$"], "correct": "Bei $y = 3$", "explain": "Bei $x = 0$ bleibt nur die 3 übrig. Das ist n." },
+      { "prompt": "Der Punkt $(4\\,|\\,1)$: Wie liest du ihn?", "choices": ["4 nach rechts, 1 nach oben", "1 nach rechts, 4 nach oben", "4 nach oben, 1 nach rechts", "4 mal 1"], "correct": "4 nach rechts, 1 nach oben", "explain": "Erst x, dann y. Erst laufen, dann klettern." },
+      { "prompt": "Eine Gerade mit Steigung $-2$ …", "choices": ["fällt", "steigt", "ist waagerecht", "gibt es nicht"], "correct": "fällt", "explain": "Minus vor dem x heißt bergab, von links nach rechts." }
+    ]
+  }
+]
