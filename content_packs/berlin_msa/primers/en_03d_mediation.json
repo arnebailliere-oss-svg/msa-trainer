@@ -27,14 +27,14 @@
         "body": "Deutsch: *Die Suppenküche platzt donnerstags aus allen Nähten.*\n\nWort für Wort ergibt das auf Englisch keinen Sinn.\n\nDer Sinn: *The soup kitchen is very full on Thursdays.*",
         "tasks": [
           {
-            "text": "Bei der Mediation gibst du ___ weiter.",
+            "text": "Es regnet in Strömen. Welcher englische Satz gibt den Sinn wieder? ___",
             "choices": [
-              "den Sinn",
-              "jedes einzelne Wort"
+              "It is raining very hard.",
+              "It is raining in streams."
             ],
-            "correct": "den Sinn",
-            "why": "Es zählt, was gemeint ist. Die einzelnen Wörter dürfen andere sein.",
-            "hint": "Was will dein Freund wissen: jedes Wort oder worum es geht?"
+            "correct": "It is raining very hard.",
+            "why": "Wort für Wort ergibt das Bild auf Englisch keinen Sinn. Gemeint ist: Es regnet sehr stark.",
+            "hint": "Was ist mit dem Bild gemeint? Sag es zuerst in einfachem Deutsch."
           }
         ],
         "say": "Schau dir den deutschen Satz an. Aus allen Nähten platzen ist ein Bild. Es bedeutet einfach, dass es sehr voll ist. Wenn du das Bild Wort für Wort ins Englische bringst, versteht es niemand. Du fragst dich also: Was ist gemeint? Und das schreibst du."
@@ -188,14 +188,14 @@
         "body": "Tipp bei jedem Satz auf die richtige Lösung.",
         "tasks": [
           {
-            "text": "Was machst du zuerst? ___",
+            "text": "In der Aufgabe steht: Tell your friend when the café is open and what it costs. Wie viele Punkte musst du nennen? ___",
             "choices": [
-              "Die Aufgabe lesen und die Punkte zählen",
-              "Den ganzen Text übersetzen"
+              "zwei",
+              "alle aus dem Text"
             ],
-            "correct": "Die Aufgabe lesen und die Punkte zählen",
-            "why": "Die Aufgabe sagt dir, welche Stellen im Text du überhaupt brauchst.",
-            "hint": "Woher weißt du, was dein Freund wissen will?"
+            "correct": "zwei",
+            "why": "Die Aufgabe nennt zwei Dinge: die Öffnungszeiten und den Preis.",
+            "hint": "Lies den englischen Satz genau. Nach welchen Dingen fragt er?"
           },
           {
             "text": "Der Text hat 300 Wörter, du sollst 80 schreiben. Du ___.",

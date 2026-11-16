@@ -11,7 +11,7 @@ migrate("primers/math_02_prozent.json", (p, h) => {
   h.tasks("Prozent als Bruch und Dezimalzahl", k("$30\\,\\% = $ ___", "$0{,}3$", ["$3$"], "30 geteilt durch 100 ist 0,3. Das Komma rückt zwei Stellen nach links.", "Prozent heißt von hundert. Was ist 30 geteilt durch 100?"));
   h.tasks("Drei Zahlen, immer", k("Von 80 Kindern haben 20 ein Haustier. Das Ganze ist ___.", "80", ["20"], "Alle Kinder zusammen sind das Ganze. Die 20 sind nur ein Teil davon.", "Welche Zahl steht für alle Kinder zusammen?"));
   h.say("Die Namen", "Für die drei Zahlen gibt es Fachwörter, die in Aufgaben oft vorkommen. Der Grundwert ist das Ganze, also der ganze Preis, alle Schüler oder das ganze Geld. Er entspricht immer 100 Prozent. Der Prozentwert ist der Teil, und der Prozentsatz ist die Zahl mit dem Prozentzeichen.");
-  h.tasks("Die Namen", k("Der Teil vom Ganzen heißt ___.", "Prozentwert", ["Grundwert"], "Der Grundwert ist das Ganze. Der Teil davon ist der Prozentwert.", "Welches der beiden Wörter steht für das Ganze, also für 100 Prozent?"));
+  h.tasks("Die Namen", k("Von 30 Schülern kommen 12 mit dem Bus. Die 12 ist der ___.", "Prozentwert", ["Grundwert"], "Die 12 Schüler sind ein Teil von allen. Der Teil hat diesen Namen.", "Ist die 12 das Ganze oder nur ein Teil davon?"));
 
   // --- chapter 2 ---
   h.tasks("Der Teil vom Ganzen", k("10 % von 200 sind ___.", "20", ["2"], "200 mal 0,1 ergibt 20.", "Wie schreibst du 10 Prozent als Zahl mit Komma? Rechne dann mal."));

@@ -10,7 +10,7 @@ migrate("primers/math_08_einheiten.json", (p, h) => {
   // --- chapter 1 ---
   h.body("Die Vorsilben", "**kilo** = tausend: 1 km = 1000 m", "**dezi** = zehntel: 1 dm = $\\frac{1}{10}$ m", "**zenti** = hundertstel: 1 cm = $\\frac{1}{100}$ m", "**milli** = tausendstel: 1 mm = $\\frac{1}{1000}$ m");
   h.say("Die Vorsilben", "Diese vier kleinen Wörter kommen aus dem Griechischen und Lateinischen. Sie stehen vor der Einheit und sagen, wie groß sie ist. Ein Kilometer sind tausend Meter. Ein Zentimeter ist ein Hundertstel von einem Meter. Mehr musst du dir nicht merken.");
-  h.tasks("Die Vorsilben", k("Die Vorsilbe kilo bedeutet ___.", "tausend", ["hundert"], "Ein Kilometer sind 1000 Meter, und ein Kilogramm sind 1000 Gramm.", "Wie viele Meter hat ein Kilometer?"));
+  h.tasks("Die Vorsilben", k("$3\\ \\text{km} = $ ___", "3000 m", ["300 m"], "Kilo heißt tausend. 3 mal 1000 ergibt 3000.", "Schau in die erste Zeile der Tafel. Was bedeutet die Vorsilbe?"));
   h.body("Die Längen-Leiter", "Von groß nach klein: km, m, dm, cm, mm", "Von m bis mm ist jede Stufe **mal 10**.", "Nur von km zu m: **mal 1000**");
   h.say("Die Längen-Leiter", "Stell dir die Einheiten wie eine Leiter vor. Gehst du eine Stufe hinunter zur kleineren Einheit, rechnest du mal. Gehst du hinauf zur größeren, teilst du. So werden aus 2,5 Metern erst 25 Dezimeter und dann 250 Zentimeter.");
   h.tasks("Die Längen-Leiter", k("Von m zu dm rechnest du ___.", "mal 10", ["mal 100"], "Der Dezimeter ist die nächste Stufe unter dem Meter. Jede Stufe ist mal 10.", "Wie viele Dezimeter passen in einen Meter?"));

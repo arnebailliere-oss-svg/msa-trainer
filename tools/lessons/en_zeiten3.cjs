@@ -111,7 +111,7 @@ primer(
         "will ist für alle gleich",
         [L("I **will** go. She **will** go. They **will** go.", "Kurzform: I**'ll** go. She**'ll** go.", "Nein-Satz: I **won't** go. (will not)")],
         "Auch diese Form ist leicht. Will bleibt für jede Person gleich und bekommt nie ein s. Dahinter steht das Verb in der Grundform. Beim Sprechen hörst du fast immer die Kurzform mit dem Apostroph. Won't ist die Kurzform von will not.",
-        { tasks: [k("She ___ call you tomorrow.", "will", ["wills"], "Diese Form bekommt nie ein s, auch nicht bei she.", "Verändert sich das Wort bei he, she, it? Schau in die erste Zeile der Tafel.")] },
+        { tasks: [k("She ___ you tomorrow.", "will call", ["wills call"], "Will bekommt nie ein s, auch nicht bei she. Dahinter steht die Grundform.", "Verändert sich das erste Wort bei he, she, it? Schau in die erste Zeile der Tafel.")] },
       ),
       b(
         "going to: ein fester Plan",
@@ -153,7 +153,7 @@ primer(
         "Der ganze Zeitstrahl",
         [L("noch früher: *had left*", "früher: *left, was leaving*", "bis jetzt: *has left*", "jetzt: *leaves, is leaving*", "später: *will leave, is going to leave*")],
         "Hier siehst du alle Zeiten mit demselben Verb, von links nach rechts. Ganz links steht das Past Perfect. Dann kommen die beiden Zeiten für früher. Das Present Perfect reicht bis jetzt. In der Mitte stehen die beiden Zeiten für jetzt, und rechts die Zukunft.",
-        { tasks: [k("had left liegt auf dem Zeitstrahl ___.", "ganz links", ["in der Mitte", "rechts"], "Das Past Perfect ist die Zeit für das, was am weitesten zurückliegt.", "Wofür ist had und die 3. Form da: für jetzt, für später oder für noch früher?")] },
+        { tasks: [k("When I arrived, the bus ___. (Der Bus war da schon weg.)", "had left", ["leaves"], "Der Bus fuhr ab, bevor ich ankam. Für das, was noch früher war, steht had mit der 3. Form.", "Was passierte zuerst: die Abfahrt oder meine Ankunft? Such die Zeile für noch früher.")] },
       ),
       b(
         "Drei Fragen für jede Aufgabe",

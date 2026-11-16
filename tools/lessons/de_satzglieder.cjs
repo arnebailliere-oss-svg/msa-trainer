@@ -107,7 +107,7 @@ primer(
         "Die vier Fälle",
         [L("**Nominativ**: Wer oder was?", "**Genitiv**: Wessen?", "**Dativ**: Wem?", "**Akkusativ**: Wen oder was?")],
         "Zu jeder dieser Fragen gehört ein Fall. Das Subjekt steht immer im Nominativ. Die Objekte stehen im Dativ oder im Akkusativ. Der Genitiv antwortet auf Wessen, zum Beispiel das Fahrrad meines Bruders. Du musst die vier Namen kennen und die Frage dazu.",
-        { tasks: [k("Mit der Frage Wem? findest du den ___.", "Dativ", ["Akkusativ"], "Wem gehört zu diesem Fall. Wen oder was gehört zum anderen.", "Schau in die dritte Zeile der Tafel.")] },
+        { tasks: [k("Ich helfe meinem Bruder. Meinem Bruder steht im ___.", "Dativ", ["Akkusativ"], "Du fragst: Wem helfe ich? Die Frage Wem gehört zu diesem Fall.", "Mit welcher Frage findest du meinem Bruder: Wem oder Wen?")] },
       ),
       b(
         "Subjekt oder Objekt?",
@@ -157,7 +157,7 @@ primer(
         "Die Fragen auf einen Blick",
         [L("**Prädikat**: Was geschieht?", "**Subjekt**: Wer oder was?", "**Dativobjekt**: Wem?", "**Akkusativobjekt**: Wen oder was?", "**Adverbiale Bestimmung**: Wo? Wann? Wie? Warum?")],
         "Mit diesen fünf Zeilen zerlegst du jeden Satz. Fang immer beim Prädikat an und geh dann die Fragen der Reihe nach durch. Gleich kommen noch die Wörter zum Nachlesen und ein kleines Quiz.",
-        { tasks: [k("Womit fängst du an, wenn du einen Satz zerlegst? ___", "mit dem Prädikat", ["mit dem ersten Wort"], "Das Verb findest du am leichtesten, und alle Fragen gehen von ihm aus.", "Welches Satzglied kennst du schon aus der Lektion über die Wortarten?")] },
+        { tasks: [k("Gestern hat Tom seiner Schwester ein Eis gekauft. Du suchst zuerst das Prädikat. Es heißt: ___", "hat gekauft", ["Gestern"], "Das Prädikat sagt, was geschieht. Hier besteht es aus zwei Teilen.", "Welche Wörter sagen, was geschieht? Es sind zwei.")] },
       ),
     ),
   ],

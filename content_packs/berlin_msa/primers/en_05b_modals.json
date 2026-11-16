@@ -105,12 +105,12 @@
         "body": "*You **don't have to** come.*\n\n= Du **musst nicht** kommen.\n\nDu darfst kommen. Es ist nur nicht nötig.",
         "tasks": [
           {
-            "text": "Tomorrow is Sunday. You ___ get up early.",
+            "text": "Tomorrow is Sunday. You ___ early.",
             "choices": [
-              "don't have to",
-              "must not"
+              "don't have to get up",
+              "must not get up"
             ],
-            "correct": "don't have to",
+            "correct": "don't have to get up",
             "why": "Am Sonntag ist frühes Aufstehen nicht nötig. Verboten ist es aber nicht.",
             "hint": "Ist frühes Aufstehen am Sonntag verboten, oder ist es nur nicht nötig?"
           }
@@ -144,12 +144,12 @@
         "body": "*You **should** see a doctor.*\n= Du solltest zum Arzt gehen.\n\n*You **shouldn't** eat so much sugar.*\n= Du solltest nicht so viel Zucker essen.",
         "tasks": [
           {
-            "text": "You look tired. You ___ go to bed.",
+            "text": "You look tired. You ___ to bed.",
             "choices": [
-              "should",
-              "must not"
+              "should go",
+              "must not go"
             ],
-            "correct": "should",
+            "correct": "should go",
             "why": "Wer müde aussieht, bekommt einen Rat: Geh lieber ins Bett.",
             "hint": "Wird hier etwas verboten, oder gibt jemand einen freundlichen Rat?"
           }

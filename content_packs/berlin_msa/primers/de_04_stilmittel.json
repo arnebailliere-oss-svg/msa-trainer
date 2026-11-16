@@ -24,14 +24,14 @@
         "body": "In der Werbung, in Reden und in Liedtexten.\n\nIn Gedichten und in Überschriften.\n\nIn der Prüfung: *Notieren Sie zwei Stilmittel aus dem Satz.*",
         "tasks": [
           {
-            "text": "Ein Stilmittel verändert vor allem ___.",
+            "text": "Welche Überschrift fällt mehr auf? ___",
             "choices": [
-              "die Wirkung eines Satzes",
-              "die Rechtschreibung"
+              "Die Stadt schläft nie",
+              "Die Stadt ist nachts belebt"
             ],
-            "correct": "die Wirkung eines Satzes",
-            "why": "Der Inhalt bleibt gleich. Der Satz wirkt nur stärker oder auffälliger.",
-            "hint": "Was war bei den beiden Sätzen über den starken Mann verschieden?"
+            "correct": "Die Stadt schläft nie",
+            "why": "Eine Stadt kann nicht schlafen. Das Bild macht den Satz auffällig, und genau das tut ein Stilmittel.",
+            "hint": "In welchem Satz tut ein Ding etwas, das eigentlich nur Menschen tun?"
           }
         ],
         "say": "Überall, wo jemand deine Aufmerksamkeit will, findest du Stilmittel. Werbung benutzt sie, damit du dir ein Produkt merkst. Politiker benutzen sie, damit eine Rede überzeugt. In der Prüfung bekommst du einen Satz und sollst sagen, welche Stilmittel darin stecken."
@@ -232,14 +232,14 @@
         "body": "**Vergleich**: mit dem Wort wie\n**Metapher**: ein Bild ohne wie\n**Personifikation**: Ein Ding handelt wie ein Mensch.\n**Symbol**: ein festes Zeichen für etwas anderes",
         "tasks": [
           {
-            "text": "Woran erkennst du einen Vergleich sicher? ___",
+            "text": "Die Zeit rennt. Das ist ___.",
             "choices": [
-              "am Wort wie",
-              "am Ausrufezeichen"
+              "eine Personifikation",
+              "ein Vergleich"
             ],
-            "correct": "am Wort wie",
-            "why": "Das Wort stellt zwei Dinge nebeneinander.",
-            "hint": "Welches Wort stand in stark wie ein Bär?"
+            "correct": "eine Personifikation",
+            "why": "Die Zeit handelt hier wie ein Mensch. Das Wort wie kommt im Satz nicht vor.",
+            "hint": "Kann die Zeit wirklich rennen? Wer kann das sonst?"
           }
         ],
         "say": "Das sind die vier Sprachbilder mit ihren Erkennungszeichen. Wenn du in einem Satz ein Bild entdeckst, gehst du diese vier Zeilen durch. Gleich kommen noch die Wörter zum Nachlesen und ein kleines Quiz."

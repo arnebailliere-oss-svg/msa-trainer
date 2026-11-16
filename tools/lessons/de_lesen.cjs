@@ -28,7 +28,7 @@ primer(
         "Die Frage genau lesen",
         ["Frage: *Welche Hürde nennen Jugendliche am häufigsten?*", "Wichtige Wörter: **Hürde** und **am häufigsten**"],
         "Unterstreiche in der Frage die Wörter, die wirklich etwas bedeuten. Hier sind es Hürde und am häufigsten. Eine Hürde ist ein Hindernis. Am häufigsten sagt dir, dass nicht irgendein Hindernis gesucht ist, sondern das, das am meisten genannt wird.",
-        { tasks: [k("Was liest du bei einer Leseaufgabe zuerst? ___", "die Frage", ["den ganzen Text, zweimal"], "Die Frage sagt dir, wonach du im Text suchen sollst.", "Woher weißt du, welche Stelle im Text wichtig ist?")] },
+        { tasks: [k("Frage: Wie viele Schulen nehmen an dem Projekt teil? Du suchst im Text nach ___.", "einer Zahl", ["einem Grund"], "Wie viele fragt nach einer Anzahl. Also suchst du im Text eine Zahl.", "Welche Art von Antwort verlangen die Wörter wie viele?")] },
       ),
       b(
         "Die Stelle finden",
@@ -95,13 +95,13 @@ primer(
         "falsch: Der Text sagt etwas anderes",
         ["Text: *62 Prozent finden die Regel gut.*", "Aussage: *Fast alle finden die Regel gut.*", "62 Prozent sind nicht fast alle. Die Aussage ist **falsch**."],
         "Bei falsch findest du eine Stelle im Text, und sie widerspricht der Aussage. Das kann das genaue Gegenteil sein. Es kann aber auch nur eine Übertreibung sein, wie hier. Fast alle wären neunzig Prozent oder mehr. Der Text nennt eine andere Zahl.",
-        { tasks: [k("Text: Der Versuch dauerte zwei Wochen. Aussage: Der Versuch dauerte zwei Monate. Die Aussage ist ___.", "falsch", ["richtig"], "Der Text nennt eine andere Dauer. Er widerspricht der Aussage.", "Steht im Text dieselbe Dauer wie in der Aussage?")] },
+        { tasks: [k("Text: Der Versuch dauerte zwei Wochen. Aussage: Der Versuch dauerte zwei Monate. Die Aussage ___.", "widerspricht dem Text", ["steht so im Text"], "Der Text nennt Wochen, die Aussage nennt Monate. Sie sagt also etwas anderes als der Text.", "Halte die beiden Zeitangaben nebeneinander. Sind sie gleich?")] },
       ),
       b(
         "steht nicht im Text: Der Text schweigt dazu",
         ["Text: *62 Prozent finden die Regel gut.*", "Aussage: *Die Lehrkräfte finden die Regel schlecht.*", "Über die Lehrkräfte sagt der Text **gar nichts**."],
         "Hier findest du im Text keine Stelle, die zu der Aussage passt. Du kannst sie weder bestätigen noch widerlegen. Vielleicht stimmt sie sogar. Trotzdem darfst du nicht richtig ankreuzen, denn es zählt nur, was im Text steht. Eigene Vermutungen zählen nicht.",
-        { tasks: [k("Du suchst und findest im Text keine Stelle zu einer Aussage. Du kreuzt an: ___", "steht nicht im Text", ["falsch"], "Falsch heißt, dass der Text widerspricht. Hier sagt er einfach nichts dazu.", "Widerspricht der Text der Aussage, oder sagt er gar nichts dazu?")] },
+        { tasks: [k("Text: Die Schule hat 600 Schüler. Aussage: Die Schule hat 40 Lehrkräfte. Die Aussage ist ___.", "nicht im Text zu finden", ["falsch"], "Über die Lehrkräfte sagt der Text nichts. Falsch wäre die Aussage nur, wenn der Text etwas anderes sagte.", "Sagt der Text überhaupt irgendetwas über die Lehrkräfte?")] },
       ),
       b(
         "Vorsicht bei immer, nie, alle und nur",

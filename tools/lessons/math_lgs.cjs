@@ -16,7 +16,7 @@ migrate("primers/math_05_lgs.json", (p, h) => {
   h.tasks("Die Lösung ist ein Paar", k("Im Paar $(6\\,|\\,4)$ steht die 4 für ___.", "$y$", ["$x$"], "In der Klammer steht zuerst das x und danach das y.", "Welcher Buchstabe kommt in der Klammer an zweiter Stelle?"));
   h.body("Was heißt „System“?", "System heißt nur: **mehrere Gleichungen, die zusammengehören**.", "Zusammen nennt man sie **Gleichungssystem**, kurz LGS.", "Man nummeriert sie: (I) und (II).");
   h.say("Was heißt „System“?", "Das Wort klingt groß, aber es bedeutet nur, dass die Zeilen zusammengehören. Die römischen Zahlen I und II sind einfach Namen für die erste und die zweite Zeile. So kannst du später kurz sagen, mit welcher Zeile du gerade rechnest.");
-  h.tasks("Was heißt „System“?", k("Mit (II) ist ___ gemeint.", "die zweite Zeile", ["die Zahl 2"], "Die römische Zwei ist nur der Name der zweiten Zeile.", "Wofür stehen die römischen Zahlen vor den Zeilen?"));
+  h.tasks("Was heißt „System“?", k("(I) $x + y = 7$ und (II) $x - y = 1$. In welcher Zeile wird abgezogen? ___", "in (II)", ["in (I)"], "In der zweiten Zeile steht ein Minus zwischen x und y.", "In welcher der beiden Zeilen steht ein Minuszeichen?"));
   h.after(
     "Was heißt „System“?",
     b("Jetzt du: Passt das Paar?", ["(I) $x + y = 8$", "(II) $x - y = 2$", "Ein Paar ist nur dann die Lösung, wenn es in **beide** Zeilen passt."], "Du musst hier noch nichts ausrechnen. Setz die zwei Zahlen in die erste Zeile ein und dann in die zweite. Nur wenn beide Male das Richtige herauskommt, ist das Paar die Lösung.", {
@@ -51,7 +51,7 @@ migrate("primers/math_05_lgs.json", (p, h) => {
     }),
   );
   h.say("Das Bild dazu", "Jede der beiden Zeilen kannst du als gerade Linie zeichnen. Alle Punkte auf einer Linie passen zu ihrer Zeile. Die beiden Linien schneiden sich in genau einem Punkt, und nur dieser Punkt passt zu beiden Zeilen. Deshalb ist er die Lösung.");
-  h.tasks("Das Bild dazu", k("Die Lösung im Bild ist ___.", "der Schnittpunkt", ["die längere Linie"], "Nur dort, wo sich beide Linien treffen, passen beide Zeilen gleichzeitig.", "An welcher Stelle im Bild liegen beide Linien übereinander?"));
+  h.tasks("Das Bild dazu", k("Im Bild schneiden sich die beiden Geraden im Punkt $(6\\,|\\,4)$. Die Lösung des Systems ist ___.", "$x = 6$ und $y = 4$", ["$x = 4$ und $y = 6$"], "Der Schnittpunkt ist die Lösung. Die erste Zahl ist das x, die zweite das y.", "Welche Zahl steht im Punkt vorn: das x oder das y?"));
   h.body("Keine oder unendlich viele", "Die Geraden laufen nebeneinander her und treffen sich nie: **keine** Lösung.", "Dieselbe Gerade zweimal: **unendlich viele** Lösungen.");
   h.say("Keine oder unendlich viele", "In der Prüfung wird gern gefragt, wie viele Lösungen ein System hat. Denk dann an die zwei Linien. Treffen sie sich nie, gibt es keine Lösung. Liegen sie genau aufeinander, passt jeder Punkt, und es gibt unendlich viele Lösungen.");
   h.tasks("Keine oder unendlich viele", k("Zwei Geraden schneiden sich in einem Punkt. Das System hat ___.", "eine Lösung", ["keine Lösung"], "Der eine Punkt, in dem sich die Linien treffen, ist die Lösung.", "Wie viele gemeinsame Punkte haben die beiden Linien dann?"));

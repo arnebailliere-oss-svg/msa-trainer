@@ -241,14 +241,14 @@
         "body": "(1) **Partizip I**: Infinitiv und d. Es geschieht gerade.\n\n(2) **Partizip II**: ge und -t oder -en. Es ist fertig.\n\n(3) Vor einem Nomen bekommen beide eine Endung wie ein Adjektiv.",
         "tasks": [
           {
-            "text": "Woran erkennst du das Partizip I? ___",
+            "text": "das lachende Kind: Lacht das Kind in diesem Moment, oder ist es schon fertig? ___",
             "choices": [
-              "Es endet auf end.",
-              "Es beginnt mit ge."
+              "Es lacht gerade.",
+              "Es hat aufgehört."
             ],
-            "correct": "Es endet auf end.",
-            "why": "An den Infinitiv wird ein d gehängt, zum Beispiel lachend.",
-            "hint": "Welche Form hast du bei lachend und schlafend gesehen?"
+            "correct": "Es lacht gerade.",
+            "why": "Lachend ist ein Partizip I. Es zeigt, dass etwas gerade geschieht.",
+            "hint": "Schau auf die Endung des Wortes. Was sagt Punkt eins der Tafel dazu?"
           }
         ],
         "say": "Das ist alles, was du über die Partizipien wissen musst. In der Prüfung sollst du sie meistens nur erkennen und benennen. Gleich kommen noch die Wörter zum Nachlesen und ein kleines Quiz."

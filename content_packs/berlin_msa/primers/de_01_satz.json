@@ -23,13 +23,13 @@
         "body": "Ich **lese** ein Buch, weil es **regnet**.\n\nHier stehen zwei Verben, also hat der Satz zwei Teile.\n\nJeder Teil heißt **Teilsatz**.",
         "tasks": [
           {
-            "text": "Ich gehe raus, wenn die Sonne scheint. Der Satz hat ___ Teilsätze.",
+            "text": "Ich gehe raus, wenn die Sonne scheint. Der Satz hat ___.",
             "choices": [
-              "zwei",
-              "drei"
+              "zwei Teilsätze",
+              "drei Teilsätze"
             ],
-            "correct": "zwei",
-            "why": "Es gibt zwei Verben: gehe und scheint. Zu jedem gehört ein Teilsatz.",
+            "correct": "zwei Teilsätze",
+            "why": "Der Satz hat zwei Verben, gehe und scheint. Zu jedem Verb gehört ein Teilsatz.",
             "hint": "Zähl die Verben im Satz. Wie viele findest du?"
           }
         ],
@@ -88,14 +88,14 @@
         "body": "Ich | **lese** | ein Buch.\n\nHeute | **lese** | ich ein Buch.\n\nEgal, was vorn steht: Das Verb kommt als Zweites.",
         "tasks": [
           {
-            "text": "Im Hauptsatz steht das Verb an ___ Stelle.",
+            "text": "Morgen | ___ | wir ins Kino. Welches Wort gehört an die zweite Stelle?",
             "choices": [
-              "zweiter",
-              "letzter"
+              "gehen",
+              "wir"
             ],
-            "correct": "zweiter",
-            "why": "Vor dem Verb steht genau ein Satzglied, danach kommt der Rest.",
-            "hint": "Schau auf die beiden Beispiele. An welcher Stelle steht lese?"
+            "correct": "gehen",
+            "why": "Im Hauptsatz steht das Verb an zweiter Stelle, auch wenn vorn Morgen steht.",
+            "hint": "Welches der beiden Wörter sagt, was geschieht?"
           }
         ],
         "say": "Das ist das Erkennungszeichen des Hauptsatzes. Du kannst den Satz umstellen, wie du willst. Das Verb bleibt immer an der zweiten Stelle. Vorn kann ich stehen oder heute oder im Garten, aber danach kommt sofort das Verb."
@@ -246,14 +246,14 @@
         "body": "(1) So viele Verben, so viele **Teilsätze**.\n\n(2) **Hauptsatz**: Er steht allein, das Verb an zweiter Stelle.\n\n(3) **Nebensatz**: Er steht nicht allein, das Verb am Ende.\n\n(4) **Relativsatz**: Er erklärt ein Nomen.",
         "tasks": [
           {
-            "text": "Woran erkennst du einen Nebensatz am sichersten? ___",
+            "text": "weil sie den Bus verpasst hat: Das ist ___.",
             "choices": [
-              "Das Verb steht am Ende.",
-              "Er ist kürzer als der Hauptsatz."
+              "ein Nebensatz",
+              "ein Hauptsatz"
             ],
-            "correct": "Das Verb steht am Ende.",
-            "why": "Die Länge sagt nichts aus. Die Stellung des Verbs ist das sichere Zeichen.",
-            "hint": "Was unterscheidet weil ich Zeit habe von ich habe Zeit?"
+            "correct": "ein Nebensatz",
+            "why": "Das Verb hat steht ganz am Ende, und der Teil kann nicht allein stehen.",
+            "hint": "Wo steht das Verb hat: an zweiter Stelle oder am Ende?"
           }
         ],
         "say": "Diese vier Punkte brauchst du für jede Kommaregel. Wenn du einen Satz vor dir hast, such zuerst die Verben. Schau dann, wo sie stehen. Gleich kommen noch die Wörter zum Nachlesen und ein kleines Quiz."

@@ -36,14 +36,14 @@
         "say": "Links liegt die unbekannte Menge, rechts liegen 11. Die Waage steht gerade.",
         "tasks": [
           {
-            "text": "Das Gleichheitszeichen sagt: Links und rechts steht ___.",
+            "text": "$7 + 3 = $ ___ $+ 4$. Welche Zahl gehört in die Lücke?",
             "choices": [
-              "derselbe Wert",
-              "etwas Verschiedenes"
+              "6",
+              "10"
             ],
-            "correct": "derselbe Wert",
-            "why": "Wie bei einer Waage im Gleichgewicht ist auf beiden Seiten gleich viel.",
-            "hint": "Was zeigt eine Waage an, wenn sie gerade steht?"
+            "correct": "6",
+            "why": "Links steht 10. Rechts muss auch 10 herauskommen, und 6 plus 4 ergibt 10.",
+            "hint": "Rechne die linke Seite aus. Was fehlt rechts bis zu diesem Wert?"
           }
         ]
       },

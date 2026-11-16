@@ -95,7 +95,7 @@ primer(
         "Schritt 3: noch einmal prüfen",
         ["Bleibt ein Angebot übrig? Prüf jeden Wunsch noch einmal daran.", "Bleiben zwei übrig? Lies beide jetzt ganz genau."],
         "Erst jetzt liest du genau, und nur noch ein oder zwei kurze Texte. Das spart viel Zeit. Wenn du für jeden Wunsch auf ein Wort zeigen kannst, ist die Antwort sicher. Unten kannst du prüfen, ob du die Reihenfolge noch weißt.",
-        { tasks: [k("Was machst du in der Prüfung zuerst? ___", "Die Wünsche der Person markieren", ["Alle Angebote genau lesen"], "Die Person hat nur wenige Sätze. Mit ihren Wünschen suchst du danach gezielt.", "Welcher Text ist kürzer: der über die Person oder alle sieben Angebote?")] },
+        { tasks: [k("Zwei Angebote bleiben übrig. In Angebot A steht: adults only. Die Person ist 15. Du wählst ___.", "das andere Angebot", ["Angebot A"], "Adults only heißt nur für Erwachsene. Mit 15 darf die Person dort nicht teilnehmen.", "Was bedeutet adults only? Passt das zu einem Alter von 15?")] },
       ),
       b(
         "Wörter, die in Angeboten oft vorkommen",

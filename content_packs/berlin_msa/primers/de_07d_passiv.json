@@ -248,14 +248,14 @@
         "body": "(1) **Aktiv**: Das Subjekt tut etwas.\n\n(2) **Passiv**: werden und Partizip II. Mit dem Subjekt geschieht etwas.\n\n(3) Beim Umformen bleibt die **Zeitform** gleich.\n\n(4) Fehlt der Handelnde, nimmst du jemand oder man.",
         "tasks": [
           {
-            "text": "Woran erkennst du das Passiv? ___",
+            "text": "Die Fenster wurden geputzt. Wer hat geputzt? ___",
             "choices": [
-              "an werden und einem Partizip II",
-              "an haben und einem Infinitiv"
+              "Das sagt der Satz nicht.",
+              "die Fenster"
             ],
-            "correct": "an werden und einem Partizip II",
-            "why": "Diese Kombination zeigt, dass mit dem Subjekt etwas geschieht.",
-            "hint": "Aus welchen zwei Teilen besteht wird gejagt?"
+            "correct": "Das sagt der Satz nicht.",
+            "why": "Im Passiv geschieht etwas mit dem Subjekt. Wer es tut, kann fehlen.",
+            "hint": "Tun die Fenster selbst etwas, oder geschieht etwas mit ihnen?"
           }
         ],
         "say": "Das sind die vier Punkte, die du für die Prüfung brauchst. Wenn du einen Satz umformen sollst, schau immer zuerst auf die Zeitform. Gleich kommen noch die Wörter zum Nachlesen und ein kleines Quiz."

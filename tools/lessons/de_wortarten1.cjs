@@ -195,7 +195,7 @@ primer(
         "Das nimmst du mit",
         [L("**Nomen**: der, die oder das passt davor.", "**Verb**: Es verändert sich mit Person und Zeit.", "**Adjektiv**: Du kannst es steigern.", "**Artikel**: Er begleitet ein Nomen.", "**Pronomen**: Es steht für ein Nomen.")],
         "Das sind die fünf Wortarten dieser Lektion mit ihren Proben. Lies die Liste einmal langsam durch. Gleich kommen noch die Wörter zum Nachlesen und ein kleines Quiz. Danach kennst du schon mehr als die Hälfte aller Wortarten.",
-        { tasks: [k("Mit welcher Probe erkennst du ein Adjektiv? ___", "Ich steigere das Wort.", ["Ich setze der, die oder das davor."], "Nur Adjektive haben eine zweite und dritte Stufe.", "Welche Probe gehört zu schnell, schneller, am schnellsten?")] },
+        { tasks: [k("Der Zug ist schnell. Du kannst sagen: schnell, schneller, am schnellsten. Das Wort schnell ist also ___.", "ein Adjektiv", ["ein Nomen"], "Ein Wort, das du steigern kannst, gehört zu dieser Wortart.", "Welche Wortart kannst du steigern? Schau in die dritte Zeile der Tafel.")] },
       ),
     ),
   ],

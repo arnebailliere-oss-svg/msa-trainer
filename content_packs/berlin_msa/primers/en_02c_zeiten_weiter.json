@@ -238,14 +238,14 @@
         "body": "I **will** go. She **will** go. They **will** go.\nKurzform: I**'ll** go. She**'ll** go.\nNein-Satz: I **won't** go. (will not)",
         "tasks": [
           {
-            "text": "She ___ call you tomorrow.",
+            "text": "She ___ you tomorrow.",
             "choices": [
-              "will",
-              "wills"
+              "will call",
+              "wills call"
             ],
-            "correct": "will",
-            "why": "Diese Form bekommt nie ein s, auch nicht bei she.",
-            "hint": "Verändert sich das Wort bei he, she, it? Schau in die erste Zeile der Tafel."
+            "correct": "will call",
+            "why": "Will bekommt nie ein s, auch nicht bei she. Dahinter steht die Grundform.",
+            "hint": "Verändert sich das erste Wort bei he, she, it? Schau in die erste Zeile der Tafel."
           }
         ],
         "say": "Auch diese Form ist leicht. Will bleibt für jede Person gleich und bekommt nie ein s. Dahinter steht das Verb in der Grundform. Beim Sprechen hörst du fast immer die Kurzform mit dem Apostroph. Won't ist die Kurzform von will not."
@@ -325,15 +325,14 @@
         "body": "noch früher: *had left*\nfrüher: *left, was leaving*\nbis jetzt: *has left*\njetzt: *leaves, is leaving*\nspäter: *will leave, is going to leave*",
         "tasks": [
           {
-            "text": "had left liegt auf dem Zeitstrahl ___.",
+            "text": "When I arrived, the bus ___. (Der Bus war da schon weg.)",
             "choices": [
-              "ganz links",
-              "in der Mitte",
-              "rechts"
+              "had left",
+              "leaves"
             ],
-            "correct": "ganz links",
-            "why": "Das Past Perfect ist die Zeit für das, was am weitesten zurückliegt.",
-            "hint": "Wofür ist had und die 3. Form da: für jetzt, für später oder für noch früher?"
+            "correct": "had left",
+            "why": "Der Bus fuhr ab, bevor ich ankam. Für das, was noch früher war, steht had mit der 3. Form.",
+            "hint": "Was passierte zuerst: die Abfahrt oder meine Ankunft? Such die Zeile für noch früher."
           }
         ],
         "say": "Hier siehst du alle Zeiten mit demselben Verb, von links nach rechts. Ganz links steht das Past Perfect. Dann kommen die beiden Zeiten für früher. Das Present Perfect reicht bis jetzt. In der Mitte stehen die beiden Zeiten für jetzt, und rechts die Zukunft."

@@ -54,14 +54,14 @@
         "say": "Das Wort klingt groß, aber es bedeutet nur, dass die Zeilen zusammengehören. Die römischen Zahlen I und II sind einfach Namen für die erste und die zweite Zeile. So kannst du später kurz sagen, mit welcher Zeile du gerade rechnest.",
         "tasks": [
           {
-            "text": "Mit (II) ist ___ gemeint.",
+            "text": "(I) $x + y = 7$ und (II) $x - y = 1$. In welcher Zeile wird abgezogen? ___",
             "choices": [
-              "die zweite Zeile",
-              "die Zahl 2"
+              "in (II)",
+              "in (I)"
             ],
-            "correct": "die zweite Zeile",
-            "why": "Die römische Zwei ist nur der Name der zweiten Zeile.",
-            "hint": "Wofür stehen die römischen Zahlen vor den Zeilen?"
+            "correct": "in (II)",
+            "why": "In der zweiten Zeile steht ein Minus zwischen x und y.",
+            "hint": "In welcher der beiden Zeilen steht ein Minuszeichen?"
           }
         ]
       },
@@ -215,14 +215,14 @@
         "say": "Jede der beiden Zeilen kannst du als gerade Linie zeichnen. Alle Punkte auf einer Linie passen zu ihrer Zeile. Die beiden Linien schneiden sich in genau einem Punkt, und nur dieser Punkt passt zu beiden Zeilen. Deshalb ist er die Lösung.",
         "tasks": [
           {
-            "text": "Die Lösung im Bild ist ___.",
+            "text": "Im Bild schneiden sich die beiden Geraden im Punkt $(6\\,|\\,4)$. Die Lösung des Systems ist ___.",
             "choices": [
-              "der Schnittpunkt",
-              "die längere Linie"
+              "$x = 6$ und $y = 4$",
+              "$x = 4$ und $y = 6$"
             ],
-            "correct": "der Schnittpunkt",
-            "why": "Nur dort, wo sich beide Linien treffen, passen beide Zeilen gleichzeitig.",
-            "hint": "An welcher Stelle im Bild liegen beide Linien übereinander?"
+            "correct": "$x = 6$ und $y = 4$",
+            "why": "Der Schnittpunkt ist die Lösung. Die erste Zahl ist das x, die zweite das y.",
+            "hint": "Welche Zahl steht im Punkt vorn: das x oder das y?"
           }
         ]
       },

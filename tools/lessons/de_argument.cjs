@@ -40,7 +40,7 @@ primer(
         "Die Kette",
         [L("**These**: Schulkleidung ist gut.", "**Argument**: Der Druck durch Markenkleidung fällt weg.", "**Beispiel**: In Hamburg fühlten sich weniger Kinder ausgegrenzt.")],
         "Die drei gehören zusammen wie Glieder einer Kette. Zuerst kommt der Standpunkt. Darauf folgt die Frage warum, und das Argument antwortet. Darauf folgt die Bitte zeig es mir, und das Beispiel antwortet. Merk dir diese Reihenfolge.",
-        { tasks: [k("Eine Zahl aus einer Umfrage ist in einem Text meistens ___.", "ein Beispiel", ["eine These"], "Eine Zahl zeigt etwas an einem bestimmten Fall. Sie ist kein Standpunkt.", "Ist eine Zahl ein Standpunkt, oder zeigt sie etwas an einem Fall?")] },
+        { tasks: [k("In einer Umfrage sagten 7 von 10 Schülern, sie seien morgens müde. Das ist ___.", "ein Beispiel", ["eine These"], "Eine Zahl aus einer Umfrage ist ein bestimmter Fall. Sie stützt ein Argument.", "Ist das ein Standpunkt oder ein bestimmter Fall mit einer Zahl?")] },
       ),
       b(
         "Jetzt du: These, Argument oder Beispiel?",
@@ -66,7 +66,7 @@ primer(
         "Wörter, die die Gegenseite ankündigen",
         ["*allerdings, jedoch, andererseits, dagegen spricht, Kritiker meinen*", "Nach diesen Wörtern wechselt der Text die Seite."],
         "Ein Text springt nicht ohne Vorwarnung von Pro zu Kontra. Er kündigt den Wechsel an. Wenn du eines dieser Wörter liest, weißt du: Jetzt kommt die andere Seite. Unterstreiche diese Stellen. Sie teilen den Text in seine beiden Hälften.",
-        { tasks: [k("Allerdings kostet Schulkleidung die Eltern Geld. Das ist ein Argument ___ Schulkleidung.", "gegen", ["für"], "Das Wort allerdings kündigt die Gegenseite an, und Kosten sind ein Nachteil.", "Welches Wort steht am Satzanfang? Ist Geld ausgeben ein Vorteil oder ein Nachteil?")] },
+        { tasks: [k("Allerdings kostet Schulkleidung die Eltern Geld. Dieser Satz spricht ___.", "dagegen", ["dafür"], "Allerdings kündigt die Gegenseite an, und hohe Kosten sind ein Nachteil.", "Ist es gut oder schlecht, wenn etwas die Eltern Geld kostet?")] },
       ),
       b(
         "So ordnest du ein Argument zu",
@@ -120,7 +120,7 @@ primer(
         "Das nimmst du mit",
         [L("**These**: der Standpunkt", "**Argument**: der Grund. Signale: weil, denn, da", "**Beispiel**: ein bestimmter Fall, eine Zahl, eine Studie"), "Wechsel zur Gegenseite: allerdings, jedoch, andererseits"],
         "Das sind die Bausteine und ihre Erkennungszeichen. Wenn du einen Text liest, der überzeugen will, such zuerst die These. Frag dann warum und danach zeig es mir. Gleich kommen noch die Wörter zum Nachlesen und ein kleines Quiz.",
-        { tasks: [k("Welches Wort kündigt die Gegenseite an? ___", "allerdings", ["denn"], "Nach diesem Wort wechselt ein Text meistens von Pro zu Kontra.", "Welches der beiden Wörter nennt einen Grund, und welches leitet einen Einwand ein?")] },
+        { tasks: [k("Schulkleidung spart morgens Zeit. ___ ist sie für viele Familien teuer. Welches Wort passt?", "Allerdings", ["Denn"], "Der zweite Satz spricht dagegen. Dieses Wort kündigt den Wechsel zur Gegenseite an.", "Spricht der zweite Satz dafür oder dagegen? Welches Wort zeigt einen Wechsel?")] },
       ),
     ),
   ],

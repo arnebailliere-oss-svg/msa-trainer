@@ -283,14 +283,14 @@
         "body": "**Präsens**: ich gehe\n**Präteritum**: ich ging\n**Perfekt**: ich bin gegangen\n**Plusquamperfekt**: ich war gegangen\n**Futur**: ich werde gehen",
         "tasks": [
           {
-            "text": "Welche Zeitform steht in Märchen und Erzählungen? ___",
+            "text": "Es war einmal ein König, der ___ in einem Schloss.",
             "choices": [
-              "Präteritum",
-              "Futur"
+              "lebte",
+              "hat gelebt"
             ],
-            "correct": "Präteritum",
-            "why": "Es war einmal: So beginnen Märchen, und das ist diese Zeitform.",
-            "hint": "In welcher Zeit steht der Satz: Es war einmal ein König?"
+            "correct": "lebte",
+            "why": "Märchen und Erzählungen stehen im Präteritum. Das ist hier die Form mit -te.",
+            "hint": "Welche der beiden Formen klingt nach einem Märchen?"
           }
         ],
         "say": "Das sind die fünf Zeitformen mit je einem Beispiel. Wenn du dir diese fünf Zeilen merkst, kannst du jede andere Form daran messen. Gleich kommen noch die Wörter zum Nachlesen und ein kleines Quiz."

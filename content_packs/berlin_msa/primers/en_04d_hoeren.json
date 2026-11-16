@@ -42,14 +42,14 @@
         "body": "Bleib nicht daran hängen.\n\nHör weiter, sonst verpasst du die nächste Antwort.\n\nBeim zweiten Hören kommt die Stelle noch einmal.",
         "tasks": [
           {
-            "text": "Du verstehst ein Wort nicht. Du ___.",
+            "text": "Du hörst: The express train to Leeds leaves at ten. Die Frage lautet: When does the train leave? Musst du express verstehen? ___",
             "choices": [
-              "hörst weiter",
-              "denkst lange darüber nach"
+              "Nein, gefragt ist nur die Uhrzeit.",
+              "Ja, sonst fehlt die Antwort."
             ],
-            "correct": "hörst weiter",
-            "why": "Der Text läuft weiter. Wer weiterhört, verpasst die nächste Antwort nicht.",
-            "hint": "Was passiert mit dem Text, während du über ein Wort grübelst?"
+            "correct": "Nein, gefragt ist nur die Uhrzeit.",
+            "why": "Die Frage will wissen, wann der Zug fährt. Das sagt at ten, und dafür brauchst du das andere Wort nicht.",
+            "hint": "Wonach fragt die Frage? Welche Stelle im Satz antwortet darauf?"
           }
         ],
         "say": "Das passiert jedem, auch guten Schülern. Ein unbekanntes Wort ist kein Grund zur Sorge. Meistens brauchst du es für die Aufgabe gar nicht. Gefährlich wird es nur, wenn du darüber nachdenkst und dabei die nächsten zwei Sätze verpasst."

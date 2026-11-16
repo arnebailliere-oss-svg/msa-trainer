@@ -176,14 +176,14 @@
         "say": "Kommutieren heißt tauschen. Bei Plus und Mal darfst du die Reihenfolge ändern, es kommt dasselbe raus.",
         "tasks": [
           {
-            "text": "Bei Plus und Mal darfst du ___.",
+            "text": "$7 \\cdot 4$ ist dasselbe wie ___.",
             "choices": [
-              "die Reihenfolge tauschen",
-              "nie etwas ändern"
+              "$4 \\cdot 7$",
+              "$7 + 4$"
             ],
-            "correct": "die Reihenfolge tauschen",
-            "why": "3 plus 5 und 5 plus 3 ergeben beide 8.",
-            "hint": "Was haben die beiden Rechnungen auf der Tafel gemeinsam?"
+            "correct": "$4 \\cdot 7$",
+            "why": "Bei Mal darfst du die Reihenfolge tauschen. Beide Male kommt 28 heraus.",
+            "hint": "Rechne beide Möglichkeiten aus. Welche ergibt auch 28?"
           }
         ]
       },

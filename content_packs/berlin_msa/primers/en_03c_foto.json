@@ -23,14 +23,14 @@
         "body": "(1) Was zeigt das Foto?\n\n(2) Was ist wo zu sehen?\n\n(3) Was denkst oder fühlst du dabei?",
         "tasks": [
           {
-            "text": "Die Aufgabe sagt 30 to 50 words. Dein Text ist also ___.",
+            "text": "I think they are having a great day. Zu welchem Schritt gehört dieser Satz? ___",
             "choices": [
-              "kurz",
-              "eine ganze Seite lang"
+              "zu Schritt 3",
+              "zu Schritt 1"
             ],
-            "correct": "kurz",
-            "why": "Fünfzig Wörter sind ungefähr fünf Sätze.",
-            "hint": "Wie viele Sätze sind ungefähr fünfzig Wörter?"
+            "correct": "zu Schritt 3",
+            "why": "I think leitet einen Gedanken ein. Das ist der dritte Schritt.",
+            "hint": "Sagt der Satz, was zu sehen ist, oder was der Schreiber denkt?"
           }
         ],
         "say": "Für jeden dieser drei Schritte schreibst du ein bis zwei Sätze. Mehr braucht es nicht. Der Text ist absichtlich kurz. Du musst also nicht jedes Blatt und jeden Stein beschreiben, sondern nur das Wichtigste."

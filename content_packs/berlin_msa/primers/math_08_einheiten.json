@@ -20,14 +20,14 @@
         "say": "Diese vier kleinen Wörter kommen aus dem Griechischen und Lateinischen. Sie stehen vor der Einheit und sagen, wie groß sie ist. Ein Kilometer sind tausend Meter. Ein Zentimeter ist ein Hundertstel von einem Meter. Mehr musst du dir nicht merken.",
         "tasks": [
           {
-            "text": "Die Vorsilbe kilo bedeutet ___.",
+            "text": "$3\\ \\text{km} = $ ___",
             "choices": [
-              "tausend",
-              "hundert"
+              "3000 m",
+              "300 m"
             ],
-            "correct": "tausend",
-            "why": "Ein Kilometer sind 1000 Meter, und ein Kilogramm sind 1000 Gramm.",
-            "hint": "Wie viele Meter hat ein Kilometer?"
+            "correct": "3000 m",
+            "why": "Kilo heißt tausend. 3 mal 1000 ergibt 3000.",
+            "hint": "Schau in die erste Zeile der Tafel. Was bedeutet die Vorsilbe?"
           }
         ]
       },

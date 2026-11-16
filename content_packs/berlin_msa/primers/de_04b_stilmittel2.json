@@ -279,14 +279,14 @@
         "body": "**Wiederholung**: Alliteration, Anapher, Parallelismus\n**Kunstgriffe**: Hyperbel, Euphemismus, rhetorische Frage, Ironie\n**Satzbau**: Antithese, Klimax, Ellipse",
         "tasks": [
           {
-            "text": "Eine Steigerung in Stufen heißt ___.",
+            "text": "Ich kam, ich sah, ich siegte. Das ist ___.",
             "choices": [
-              "Klimax",
-              "Ellipse"
+              "eine Klimax",
+              "eine Ellipse"
             ],
-            "correct": "Klimax",
-            "why": "Das Wort bedeutet Leiter. Es geht Stufe für Stufe nach oben.",
-            "hint": "Welches der beiden Wörter bedeutet Leiter?"
+            "correct": "eine Klimax",
+            "why": "Die drei Teile steigern sich von Stufe zu Stufe bis zum Sieg.",
+            "hint": "Wird der Satz von Teil zu Teil stärker, oder fehlt ein Wort?"
           }
         ],
         "say": "Das sind die zehn Stilmittel dieser Lektion in ihren drei Gruppen. Du musst sie nicht alle heute sicher können. Auf dem Spickzettel findest du jedes mit einem Beispiel wieder. Gleich kommen die Wörter zum Nachlesen und ein kleines Quiz."

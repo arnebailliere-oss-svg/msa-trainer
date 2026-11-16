@@ -61,7 +61,7 @@ primer(
         "Nicht müssen heißt don't have to",
         ["*You **don't have to** come.*", "= Du **musst nicht** kommen.", "Du darfst kommen. Es ist nur nicht nötig."],
         "Wenn du sagen willst, dass etwas nicht nötig ist, brauchst du eine andere Form. Sie heißt don't have to. Bei he, she, it heißt sie doesn't have to. Niemand verbietet hier etwas. Man sagt nur, dass man es lassen kann.",
-        { tasks: [k("Tomorrow is Sunday. You ___ get up early.", "don't have to", ["must not"], "Am Sonntag ist frühes Aufstehen nicht nötig. Verboten ist es aber nicht.", "Ist frühes Aufstehen am Sonntag verboten, oder ist es nur nicht nötig?")] },
+        { tasks: [k("Tomorrow is Sunday. You ___ early.", "don't have to get up", ["must not get up"], "Am Sonntag ist frühes Aufstehen nicht nötig. Verboten ist es aber nicht.", "Ist frühes Aufstehen am Sonntag verboten, oder ist es nur nicht nötig?")] },
       ),
       b(
         "Beide nebeneinander",
@@ -78,7 +78,7 @@ primer(
         "should: ein guter Rat",
         [L("*You **should** see a doctor.*", "= Du solltest zum Arzt gehen."), L("*You **shouldn't** eat so much sugar.*", "= Du solltest nicht so viel Zucker essen.")],
         "Mit should gibst du jemandem einen Rat. Du befiehlst nichts, du empfiehlst nur etwas. Shouldn't ist die Kurzform von should not. In Schreibaufgaben brauchst du should oft, wenn du jemandem einen Tipp gibst.",
-        { tasks: [k("You look tired. You ___ go to bed.", "should", ["must not"], "Wer müde aussieht, bekommt einen Rat: Geh lieber ins Bett.", "Wird hier etwas verboten, oder gibt jemand einen freundlichen Rat?")] },
+        { tasks: [k("You look tired. You ___ to bed.", "should go", ["must not go"], "Wer müde aussieht, bekommt einen Rat: Geh lieber ins Bett.", "Wird hier etwas verboten, oder gibt jemand einen freundlichen Rat?")] },
       ),
       b(
         "Vier weitere, die du erkennen solltest",

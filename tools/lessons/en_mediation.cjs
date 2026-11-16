@@ -29,7 +29,7 @@ primer(
         "Nicht Wort für Wort",
         ["Deutsch: *Die Suppenküche platzt donnerstags aus allen Nähten.*", "Wort für Wort ergibt das auf Englisch keinen Sinn.", "Der Sinn: *The soup kitchen is very full on Thursdays.*"],
         "Schau dir den deutschen Satz an. Aus allen Nähten platzen ist ein Bild. Es bedeutet einfach, dass es sehr voll ist. Wenn du das Bild Wort für Wort ins Englische bringst, versteht es niemand. Du fragst dich also: Was ist gemeint? Und das schreibst du.",
-        { tasks: [k("Bei der Mediation gibst du ___ weiter.", "den Sinn", ["jedes einzelne Wort"], "Es zählt, was gemeint ist. Die einzelnen Wörter dürfen andere sein.", "Was will dein Freund wissen: jedes Wort oder worum es geht?")] },
+        { tasks: [k("Es regnet in Strömen. Welcher englische Satz gibt den Sinn wieder? ___", "It is raining very hard.", ["It is raining in streams."], "Wort für Wort ergibt das Bild auf Englisch keinen Sinn. Gemeint ist: Es regnet sehr stark.", "Was ist mit dem Bild gemeint? Sag es zuerst in einfachem Deutsch.")] },
       ),
       b(
         "Die Aufgabe sagt dir, was wichtig ist",
@@ -105,7 +105,7 @@ primer(
         "Zum Schluss prüfen wir, ob die Reihenfolge sitzt. Denk an die drei Schritte vom Anfang der Lektion.",
         {
           tasks: [
-            k("Was machst du zuerst? ___", "Die Aufgabe lesen und die Punkte zählen", ["Den ganzen Text übersetzen"], "Die Aufgabe sagt dir, welche Stellen im Text du überhaupt brauchst.", "Woher weißt du, was dein Freund wissen will?"),
+            k("In der Aufgabe steht: Tell your friend when the café is open and what it costs. Wie viele Punkte musst du nennen? ___", "zwei", ["alle aus dem Text"], "Die Aufgabe nennt zwei Dinge: die Öffnungszeiten und den Preis.", "Lies den englischen Satz genau. Nach welchen Dingen fragt er?"),
             k("Der Text hat 300 Wörter, du sollst 80 schreiben. Du ___.", "wählst aus", ["übersetzt alles"], "Du gibst nur das weiter, wonach gefragt ist.", "Passen 300 Wörter in einen Text von 80 Wörtern?"),
           ],
         },

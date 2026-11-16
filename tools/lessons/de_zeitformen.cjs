@@ -128,7 +128,7 @@ primer(
         "Das nimmst du mit",
         [L("**Präsens**: ich gehe", "**Präteritum**: ich ging", "**Perfekt**: ich bin gegangen", "**Plusquamperfekt**: ich war gegangen", "**Futur**: ich werde gehen")],
         "Das sind die fünf Zeitformen mit je einem Beispiel. Wenn du dir diese fünf Zeilen merkst, kannst du jede andere Form daran messen. Gleich kommen noch die Wörter zum Nachlesen und ein kleines Quiz.",
-        { tasks: [k("Welche Zeitform steht in Märchen und Erzählungen? ___", "Präteritum", ["Futur"], "Es war einmal: So beginnen Märchen, und das ist diese Zeitform.", "In welcher Zeit steht der Satz: Es war einmal ein König?")] },
+        { tasks: [k("Es war einmal ein König, der ___ in einem Schloss.", "lebte", ["hat gelebt"], "Märchen und Erzählungen stehen im Präteritum. Das ist hier die Form mit -te.", "Welche der beiden Formen klingt nach einem Märchen?")] },
       ),
     ),
   ],

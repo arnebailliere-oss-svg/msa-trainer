@@ -34,7 +34,7 @@ primer(
         "than heißt als",
         ["*Ben is taller **than** Tom.*", "= Ben ist größer als Tom.", "Nicht verwechseln: **then** heißt dann."],
         "Nach dem Komparativ kommt than. Das ist das englische Wort für als. Pass auf die Schreibweise auf. Than mit a ist das Wort für den Vergleich. Then mit e bedeutet dann und hat mit Vergleichen nichts zu tun.",
-        { tasks: [k("My brother is older ___ me.", "than", ["then", "as"], "Nach einem Komparativ steht das Wort für als, geschrieben mit a.", "Welches der Wörter bedeutet als? Achte auf den Buchstaben in der Mitte.")] },
+        { tasks: [k("My brother is ___ me.", "older than", ["older then","older as"], "Nach einem Komparativ steht das Wort für als, geschrieben mit a.", "Welches der Wörter bedeutet als? Achte auf den Buchstaben in der Mitte.")] },
       ),
       b(
         "Drei kleine Schreibregeln",

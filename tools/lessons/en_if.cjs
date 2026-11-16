@@ -72,7 +72,7 @@ primer(
         "If I were you",
         ["*If I **were** you, I **would** tell her.*", "= An deiner Stelle würde ich es ihr sagen.", "Nach if sagt man **were**, auch bei I, he, she, it."],
         "Das ist ein Satz, den du in Schreibaufgaben gut gebrauchen kannst, wenn du einen Rat gibst. Normalerweise heißt es I was. In diesen vorgestellten Sätzen sagt man aber were für alle Personen. If I were you ist eine feste Wendung.",
-        { tasks: [k("If I ___ rich, I would travel.", "were", ["am"], "Der Satz ist nur vorgestellt. Nach if steht dann diese Form für alle Personen.", "Ist der Sprecher wirklich reich? Welche Form steht dann nach if?")] },
+        { tasks: [k("If I ___, I would travel.", "were rich", ["am rich"], "Der Satz ist nur vorgestellt. Nach if steht dann were für alle Personen.", "Ist der Sprecher wirklich reich? Welche Form steht dann nach if?")] },
       ),
       b(
         "Kein would nach if",

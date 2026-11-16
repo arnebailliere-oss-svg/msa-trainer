@@ -109,7 +109,7 @@ primer(
         "So begründest du in der Prüfung",
         ["Nenne die **Wortart** und zeige die **Probe**.", "*Es ist ein Relativpronomen, denn man kann welches einsetzen.*", "*Es ist eine Konjunktion, denn weder dieses noch welches passt.*"],
         "Manchmal sollst du deine Entscheidung begründen. Dafür reichen zwei Dinge: der Name der Wortart und die Probe. Die beiden Sätze auf der Tafel kannst du fast wörtlich übernehmen. Mehr wird nicht verlangt.",
-        { tasks: [k("Das Wort mit zwei s gehört zu der Wortart ___.", "Konjunktion", ["Artikel"], "Es verbindet zwei Sätze. Wörter, die verbinden, sind Konjunktionen.", "Welche Aufgabe hat das Wort: begleiten oder verbinden?")] },
+        { tasks: [k("Ich hoffe, dass du kommst. Welche Begründung stimmt? ___", "Es ist eine Konjunktion, denn weder dieses noch welches passt.", ["Es ist ein Relativpronomen, denn man kann welches einsetzen."], "Ich hoffe, welches du kommst klingt falsch. Also ist es die Konjunktion mit zwei s.", "Setz probeweise dieses und welches ein. Klingt der Satz dann noch richtig?")] },
       ),
       b(
         "Jetzt du: gemischt",

@@ -119,7 +119,7 @@ primer(
         "Deine Checkliste",
         ["(1) Alle Fragen beantwortet?", "(2) Meinung mit **because** begründet?", "(3) Ein Beispiel von dir?", "(4) Ein freundlicher Schluss?", "(5) Wörter gezählt?"],
         "Mit diesen fünf Punkten prüfst du deine Antwort, bevor du sie abgibst. Wenn dir noch Wörter fehlen, schreib einen zweiten Grund oder ein zweites Beispiel dazu. Gleich kommen die Wörter zum Nachlesen und ein kleines Quiz.",
-        { tasks: [k("Der wichtigste Baustein nach der Meinung ist ___.", "der Grund", ["die Anrede"], "Für eine begründete Meinung gibt es die Punkte.", "Was macht aus einer Behauptung eine überzeugende Meinung?")] },
+        { tasks: [k("I think school uniforms are a good idea. Was fehlt diesem Satz noch? ___", "ein Grund mit because", ["eine Anrede"], "Die Meinung steht schon da. Ohne Begründung bleibt sie eine bloße Behauptung.", "Schau auf Punkt zwei der Checkliste. Was gehört zu jeder Meinung?")] },
       ),
     ),
   ],

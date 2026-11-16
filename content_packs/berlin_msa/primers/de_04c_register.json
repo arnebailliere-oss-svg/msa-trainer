@@ -24,14 +24,14 @@
         "body": "So schreibst du in der Schule, in einer Bewerbung und in der Prüfung.\n\nSie hat vollständige Sätze und sachliche Wörter.\n\nDiese Art heißt **Standardsprache**.",
         "tasks": [
           {
-            "text": "Eine Bewerbung schreibst du in ___.",
+            "text": "Ich hab voll Bock auf den Job. Passt dieser Satz in eine Bewerbung? ___",
             "choices": [
-              "Standardsprache",
-              "Umgangssprache"
+              "Nein, er ist Umgangssprache.",
+              "Ja, er klingt freundlich."
             ],
-            "correct": "Standardsprache",
-            "why": "Eine Firma kennst du nicht persönlich. Dort schreibt man sachlich und vollständig.",
-            "hint": "Kennst du die Menschen in der Firma persönlich?"
+            "correct": "Nein, er ist Umgangssprache.",
+            "why": "Hab, voll und Bock sind locker. Eine Bewerbung verlangt Standardsprache.",
+            "hint": "Würdest du so mit der Chefin einer Firma sprechen?"
           }
         ],
         "say": "Standardsprache ist die Sprache, die überall in Deutschland verstanden wird. Man nennt sie auch Hochdeutsch. Zeitungen sind in ihr geschrieben, und Nachrichten werden in ihr gesprochen. Sie wirkt sachlich und zeigt Respekt gegenüber dem Leser."
@@ -176,14 +176,14 @@
         "body": "Beim Umformen ändert sich **nur die Sprache**.\n\nDu fügst nichts hinzu und lässt nichts Wichtiges weg.",
         "tasks": [
           {
-            "text": "Beim Umformen in Standardsprache ändert sich ___.",
+            "text": "Das Konzert war mega laut. Welche Umformung ist richtig? ___",
             "choices": [
-              "nur die Sprache",
-              "auch der Inhalt"
+              "Das Konzert war sehr laut.",
+              "Das Konzert war sehr laut und schlecht."
             ],
-            "correct": "nur die Sprache",
-            "why": "Die Aussage des Satzes muss dieselbe bleiben.",
-            "hint": "Darf der neue Satz etwas anderes behaupten als der alte?"
+            "correct": "Das Konzert war sehr laut.",
+            "why": "Nur das lockere Wort wird ersetzt. Über schlecht sagt der erste Satz nichts.",
+            "hint": "In welchem Satz ist etwas dazugekommen, das vorher nicht dastand?"
           }
         ],
         "say": "Das ist ein häufiger Fehler. Manche schreiben beim Umformen einen ganz neuen Satz mit einer anderen Aussage. Das gibt Abzug. Der neue Satz muss genau dasselbe sagen wie der alte, nur in einer anderen Sprache. Prüf am Ende, ob die Aussage noch stimmt."
@@ -230,14 +230,14 @@
         "body": "(1) **Umgangssprache** für Freunde, **Standardsprache** für Schule und Prüfung.\n\n(2) Füllwörter streichen, lockere Wörter ersetzen, verkürzte Formen ausschreiben.\n\n(3) Der Inhalt bleibt derselbe.",
         "tasks": [
           {
-            "text": "Woran erkennst du ein Füllwort? ___",
+            "text": "Das ist ja eigentlich ganz einfach. Welches Wort kannst du streichen, ohne dass sich der Sinn ändert? ___",
             "choices": [
-              "Ich kann es streichen, und der Sinn bleibt gleich.",
-              "Es steht am Satzanfang."
+              "eigentlich",
+              "einfach"
             ],
-            "correct": "Ich kann es streichen, und der Sinn bleibt gleich.",
-            "why": "Füllwörter tragen nichts zum Inhalt bei.",
-            "hint": "Was passiert mit dem Satz, wenn du das Wort weglässt?"
+            "correct": "eigentlich",
+            "why": "Ohne eigentlich sagt der Satz dasselbe. Ohne einfach fehlt die Aussage.",
+            "hint": "Lies den Satz zweimal, jedes Mal ohne eines der beiden Wörter."
           }
         ],
         "say": "Das ist alles, was du für diese Aufgabe brauchst. Denk auch bei deinen eigenen Texten in der Prüfung daran. Ein einziges voll oder halt in einem Aufsatz gilt als Fehler im Ausdruck. Gleich kommen die Wörter und ein kleines Quiz."

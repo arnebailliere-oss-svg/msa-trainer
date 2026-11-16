@@ -34,7 +34,7 @@ primer(
         "Wenn du ein Wort nicht kennst",
         ["Bleib nicht daran hängen.", "Hör weiter, sonst verpasst du die nächste Antwort.", "Beim zweiten Hören kommt die Stelle noch einmal."],
         "Das passiert jedem, auch guten Schülern. Ein unbekanntes Wort ist kein Grund zur Sorge. Meistens brauchst du es für die Aufgabe gar nicht. Gefährlich wird es nur, wenn du darüber nachdenkst und dabei die nächsten zwei Sätze verpasst.",
-        { tasks: [k("Du verstehst ein Wort nicht. Du ___.", "hörst weiter", ["denkst lange darüber nach"], "Der Text läuft weiter. Wer weiterhört, verpasst die nächste Antwort nicht.", "Was passiert mit dem Text, während du über ein Wort grübelst?")] },
+        { tasks: [k("Du hörst: The express train to Leeds leaves at ten. Die Frage lautet: When does the train leave? Musst du express verstehen? ___", "Nein, gefragt ist nur die Uhrzeit.", ["Ja, sonst fehlt die Antwort."], "Die Frage will wissen, wann der Zug fährt. Das sagt at ten, und dafür brauchst du das andere Wort nicht.", "Wonach fragt die Frage? Welche Stelle im Satz antwortet darauf?")] },
       ),
     ),
     ch(

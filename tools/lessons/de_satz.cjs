@@ -24,7 +24,7 @@ primer(
         "Zwei Verben, zwei Teile",
         ["Ich **lese** ein Buch, weil es **regnet**.", "Hier stehen zwei Verben, also hat der Satz zwei Teile.", "Jeder Teil heißt **Teilsatz**."],
         "In diesem Satz passieren zwei Dinge. Ich lese, und es regnet. Zu jedem Verb gehört ein eigener Teil des Satzes. So einen Teil nennt man Teilsatz. Die Regel ist ganz einfach: So viele Verben, so viele Teilsätze.",
-        { tasks: [k("Ich gehe raus, wenn die Sonne scheint. Der Satz hat ___ Teilsätze.", "zwei", ["drei"], "Es gibt zwei Verben: gehe und scheint. Zu jedem gehört ein Teilsatz.", "Zähl die Verben im Satz. Wie viele findest du?")] },
+        { tasks: [k("Ich gehe raus, wenn die Sonne scheint. Der Satz hat ___.", "zwei Teilsätze", ["drei Teilsätze"], "Der Satz hat zwei Verben, gehe und scheint. Zu jedem Verb gehört ein Teilsatz.", "Zähl die Verben im Satz. Wie viele findest du?")] },
       ),
       b(
         "Aufpassen bei zweiteiligen Verben",
@@ -55,7 +55,7 @@ primer(
         "Im Hauptsatz steht das Verb an zweiter Stelle",
         ["Ich | **lese** | ein Buch.", "Heute | **lese** | ich ein Buch.", "Egal, was vorn steht: Das Verb kommt als Zweites."],
         "Das ist das Erkennungszeichen des Hauptsatzes. Du kannst den Satz umstellen, wie du willst. Das Verb bleibt immer an der zweiten Stelle. Vorn kann ich stehen oder heute oder im Garten, aber danach kommt sofort das Verb.",
-        { tasks: [k("Im Hauptsatz steht das Verb an ___ Stelle.", "zweiter", ["letzter"], "Vor dem Verb steht genau ein Satzglied, danach kommt der Rest.", "Schau auf die beiden Beispiele. An welcher Stelle steht lese?")] },
+        { tasks: [k("Morgen | ___ | wir ins Kino. Welches Wort gehört an die zweite Stelle?", "gehen", ["wir"], "Im Hauptsatz steht das Verb an zweiter Stelle, auch wenn vorn Morgen steht.", "Welches der beiden Wörter sagt, was geschieht?")] },
       ),
       b(
         "Der Nebensatz",
@@ -130,7 +130,7 @@ primer(
         "Das nimmst du mit",
         ["(1) So viele Verben, so viele **Teilsätze**.", "(2) **Hauptsatz**: Er steht allein, das Verb an zweiter Stelle.", "(3) **Nebensatz**: Er steht nicht allein, das Verb am Ende.", "(4) **Relativsatz**: Er erklärt ein Nomen."],
         "Diese vier Punkte brauchst du für jede Kommaregel. Wenn du einen Satz vor dir hast, such zuerst die Verben. Schau dann, wo sie stehen. Gleich kommen noch die Wörter zum Nachlesen und ein kleines Quiz.",
-        { tasks: [k("Woran erkennst du einen Nebensatz am sichersten? ___", "Das Verb steht am Ende.", ["Er ist kürzer als der Hauptsatz."], "Die Länge sagt nichts aus. Die Stellung des Verbs ist das sichere Zeichen.", "Was unterscheidet weil ich Zeit habe von ich habe Zeit?")] },
+        { tasks: [k("weil sie den Bus verpasst hat: Das ist ___.", "ein Nebensatz", ["ein Hauptsatz"], "Das Verb hat steht ganz am Ende, und der Teil kann nicht allein stehen.", "Wo steht das Verb hat: an zweiter Stelle oder am Ende?")] },
       ),
     ),
   ],

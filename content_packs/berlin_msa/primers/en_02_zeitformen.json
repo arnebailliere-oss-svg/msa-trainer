@@ -70,10 +70,10 @@
           {
             "text": "Mein Vater arbeitet in einer Bank. Das gilt ___.",
             "choices": [
-              "immer",
-              "nur heute"
+              "an jedem Arbeitstag",
+              "nur in diesem Moment"
             ],
-            "correct": "immer",
+            "correct": "an jedem Arbeitstag",
             "why": "Das ist sein Beruf. Es gilt an jedem Arbeitstag, nicht nur heute.",
             "hint": "Ist das sein Beruf, oder macht er das nur in diesem einen Moment?"
           }

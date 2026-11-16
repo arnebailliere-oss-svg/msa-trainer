@@ -20,7 +20,7 @@ migrate("primers/math_07_funktionen.json", (p, h) => {
   h.say("Das Koordinatensystem", "In diesem Gitter hat jeder Punkt zwei Zahlen. Die erste sagt, wie weit du nach rechts gehst. Die zweite sagt, wie weit du nach oben gehst. Merk dir: erst laufen, dann klettern. So verwechselst du die Reihenfolge nicht.");
   h.tasks("Das Koordinatensystem", k("Der Punkt $(4\\,|\\,1)$ liegt ___.", "4 nach rechts und 1 nach oben", ["1 nach rechts und 4 nach oben"], "Die erste Zahl ist das x. Sie sagt, wie weit es nach rechts geht.", "Erst laufen, dann klettern. Welche Zahl steht vorn?"));
   h.say("Punkte werden ein Bild", "Jedes Paar aus der Tabelle ist ein Punkt im Gitter. Wenn du alle Punkte einträgst und verbindest, entsteht eine gerade Linie. Dieses Bild zeigt die ganze Maschine auf einmal, auch für alle Zahlen dazwischen.");
-  h.tasks("Punkte werden ein Bild", k("Das Bild einer Funktion im Koordinatensystem heißt ___.", "Graph", ["Wertetabelle"], "Der Graph ist das Bild. Die Wertetabelle ist die Liste der Zahlenpaare.", "Welches der beiden Wörter steht fett auf dieser Tafel?"));
+  h.tasks("Punkte werden ein Bild", k("Zu $x = 3$ gehört in der Tabelle $y = 7$. Welcher Punkt liegt also auf dem Graphen? ___", "$(3\\,|\\,7)$", ["$(7\\,|\\,3)$"], "Jedes Paar aus der Tabelle ist ein Punkt. Die erste Zahl ist das x, die zweite das y.", "Welche Zahl steht im Punkt vorn: das x oder das y?"));
 
   // --- chapter 2 ---
   h.body("Was ist die Steigung?", "$y = 2x + 1$: Die **2** ist die **Steigung** $m$.", "Ein Schritt nach rechts → **2** Schritte nach oben.");
@@ -32,7 +32,7 @@ migrate("primers/math_07_funktionen.json", (p, h) => {
   h.say("Der Startwert n", "Das lange Wort bedeutet nur: die Stelle, an der die Gerade die senkrechte Achse schneidet. Du kannst dir diese Zahl als Startwert vorstellen. Von dort aus geht es mit der Steigung los, nach rechts hinauf oder hinunter.");
   h.tasks("Der Startwert n", k("$y = 4x + 3$ schneidet die y-Achse bei ___.", "$y = 3$", ["$y = 4$"], "Bei x gleich 0 bleibt nur die 3 übrig. Das ist der Startwert.", "Was bleibt von der Regel übrig, wenn du für x eine Null einsetzt?"));
   h.say("Die allgemeine Form", "Diese Zeile steht auf dem Formelblatt. Die Buchstaben m und n sind Platzhalter für die zwei Zahlen, die eine Gerade festlegen. Du weißt jetzt, was beide tun: m ist die Steigung, und n ist der Startwert.");
-  h.tasks("Die allgemeine Form", k("In $y = m \\cdot x + n$ steht das $m$ für ___.", "die Steigung", ["den Startwert"], "Das m steht vor dem x, und die Zahl vor dem x ist die Steigung.", "Welcher der beiden Buchstaben steht direkt vor dem x?"));
+  h.tasks("Die allgemeine Form", k("$y = 5x + 2$. Hier ist $m = $ ___", "5", ["2"], "Das m ist die Zahl vor dem x. Hier ist das die 5.", "Welche Zahl steht in der Gleichung direkt vor dem x?"));
 
   // --- chapter 3 ---
   h.after(
@@ -50,7 +50,7 @@ migrate("primers/math_07_funktionen.json", (p, h) => {
   h.tasks("Punktprobe", k("Liegt $(2\\,|\\,5)$ auf $y = 2x + 1$? ___", "Ja", ["Nein"], "2 mal 2 plus 1 ergibt 5. Das ist genau die zweite Zahl des Punktes.", "Setz die 2 für x ein. Kommt die zweite Zahl des Punktes heraus?"));
   h.body("Nullstelle", "Wo ist $y = 0$?", "$2x + 1 = 0 \\quad | -1 \\quad | :2$", "$x = -0{,}5$", "Dort schneidet die Gerade die x-Achse. Diese Stelle heißt **Nullstelle**.");
   h.say("Nullstelle", "An der Nullstelle gibt die Maschine eine Null heraus. Um sie zu finden, schreibst du für y eine 0 und löst die Gleichung nach x auf. Das kannst du schon: erst die Zahl ohne x wegräumen, dann teilen.");
-  h.tasks("Nullstelle", k("Für die Nullstelle setzt du ___.", "$y = 0$", ["$x = 0$"], "An der Nullstelle kommt eine Null heraus, und was herauskommt, ist das y.", "Welcher Buchstabe steht für die Zahl, die aus der Maschine herauskommt?"));
+  h.tasks("Nullstelle", k("Nullstelle von $y = x - 4$: Aus $x - 4 = 0$ folgt $x = $ ___", "4", ["$-4$"], "Auf beiden Seiten plus 4 ergibt x gleich 4. Dort schneidet die Gerade die x-Achse.", "Welche Rechnung macht aus minus 4 eine Null?"));
   h.after(
     "Nullstelle",
     b("Das nimmst du mit", ["(1) Eine Funktion gibt jedem $x$ genau ein $y$.", "(2) Punkt lesen: erst nach rechts, dann nach oben.", "(3) Die Zahl vor dem $x$ ist die Steigung.", "(4) Die Zahl ohne $x$ ist der Startwert auf der y-Achse.", "(5) Punktprobe: $x$ einsetzen, mit $y$ vergleichen."], "Das sind die fünf Dinge, die du über Geraden wissen musst. Wenn du unsicher bist, mach dir eine kleine Tabelle mit zwei oder drei Zahlen. Dann siehst du sofort, wie die Gerade verläuft. Gleich kommen die Wörter und ein kleines Quiz.", {

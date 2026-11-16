@@ -24,14 +24,14 @@
         "body": "Frage: *Welche Hürde nennen Jugendliche am häufigsten?*\n\nWichtige Wörter: **Hürde** und **am häufigsten**",
         "tasks": [
           {
-            "text": "Was liest du bei einer Leseaufgabe zuerst? ___",
+            "text": "Frage: Wie viele Schulen nehmen an dem Projekt teil? Du suchst im Text nach ___.",
             "choices": [
-              "die Frage",
-              "den ganzen Text, zweimal"
+              "einer Zahl",
+              "einem Grund"
             ],
-            "correct": "die Frage",
-            "why": "Die Frage sagt dir, wonach du im Text suchen sollst.",
-            "hint": "Woher weißt du, welche Stelle im Text wichtig ist?"
+            "correct": "einer Zahl",
+            "why": "Wie viele fragt nach einer Anzahl. Also suchst du im Text eine Zahl.",
+            "hint": "Welche Art von Antwort verlangen die Wörter wie viele?"
           }
         ],
         "say": "Unterstreiche in der Frage die Wörter, die wirklich etwas bedeuten. Hier sind es Hürde und am häufigsten. Eine Hürde ist ein Hindernis. Am häufigsten sagt dir, dass nicht irgendein Hindernis gesucht ist, sondern das, das am meisten genannt wird."
@@ -156,14 +156,14 @@
         "body": "Text: *62 Prozent finden die Regel gut.*\n\nAussage: *Fast alle finden die Regel gut.*\n\n62 Prozent sind nicht fast alle. Die Aussage ist **falsch**.",
         "tasks": [
           {
-            "text": "Text: Der Versuch dauerte zwei Wochen. Aussage: Der Versuch dauerte zwei Monate. Die Aussage ist ___.",
+            "text": "Text: Der Versuch dauerte zwei Wochen. Aussage: Der Versuch dauerte zwei Monate. Die Aussage ___.",
             "choices": [
-              "falsch",
-              "richtig"
+              "widerspricht dem Text",
+              "steht so im Text"
             ],
-            "correct": "falsch",
-            "why": "Der Text nennt eine andere Dauer. Er widerspricht der Aussage.",
-            "hint": "Steht im Text dieselbe Dauer wie in der Aussage?"
+            "correct": "widerspricht dem Text",
+            "why": "Der Text nennt Wochen, die Aussage nennt Monate. Sie sagt also etwas anderes als der Text.",
+            "hint": "Halte die beiden Zeitangaben nebeneinander. Sind sie gleich?"
           }
         ],
         "say": "Bei falsch findest du eine Stelle im Text, und sie widerspricht der Aussage. Das kann das genaue Gegenteil sein. Es kann aber auch nur eine Übertreibung sein, wie hier. Fast alle wären neunzig Prozent oder mehr. Der Text nennt eine andere Zahl."
@@ -173,14 +173,14 @@
         "body": "Text: *62 Prozent finden die Regel gut.*\n\nAussage: *Die Lehrkräfte finden die Regel schlecht.*\n\nÜber die Lehrkräfte sagt der Text **gar nichts**.",
         "tasks": [
           {
-            "text": "Du suchst und findest im Text keine Stelle zu einer Aussage. Du kreuzt an: ___",
+            "text": "Text: Die Schule hat 600 Schüler. Aussage: Die Schule hat 40 Lehrkräfte. Die Aussage ist ___.",
             "choices": [
-              "steht nicht im Text",
+              "nicht im Text zu finden",
               "falsch"
             ],
-            "correct": "steht nicht im Text",
-            "why": "Falsch heißt, dass der Text widerspricht. Hier sagt er einfach nichts dazu.",
-            "hint": "Widerspricht der Text der Aussage, oder sagt er gar nichts dazu?"
+            "correct": "nicht im Text zu finden",
+            "why": "Über die Lehrkräfte sagt der Text nichts. Falsch wäre die Aussage nur, wenn der Text etwas anderes sagte.",
+            "hint": "Sagt der Text überhaupt irgendetwas über die Lehrkräfte?"
           }
         ],
         "say": "Hier findest du im Text keine Stelle, die zu der Aussage passt. Du kannst sie weder bestätigen noch widerlegen. Vielleicht stimmt sie sogar. Trotzdem darfst du nicht richtig ankreuzen, denn es zählt nur, was im Text steht. Eigene Vermutungen zählen nicht."

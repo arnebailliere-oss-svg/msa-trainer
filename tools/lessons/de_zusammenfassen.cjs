@@ -24,7 +24,7 @@ primer(
         "Zusammenfassen ist nicht nacherzählen",
         [L("**Nacherzählen**: alles der Reihe nach, mit vielen Einzelheiten.", "**Zusammenfassen**: nur das, was für den ganzen Text gilt.")],
         "Das ist der häufigste Irrtum. Viele schreiben ab, was im ersten Absatz steht, dann was im zweiten steht, und so weiter. Das ist eine Nacherzählung. Bei einer Zusammenfassung trittst du einen Schritt zurück und fragst: Was sagt der Text als Ganzes?",
-        { tasks: [k("Eine Zusammenfassung enthält ___.", "nur das Wichtigste", ["jede Einzelheit"], "Sie soll kurz sein und für den ganzen Text gelten.", "Ist eine Zusammenfassung länger oder kürzer als der Text selbst?")] },
+        { tasks: [k("Welcher Satz fasst zusammen? ___", "Der Text beschreibt, wie eine Klasse ein Schulfest plant.", ["Zuerst kauft Ben Luftballons, dann bläst Mia sie auf."], "Dieser Satz gilt für den ganzen Text. Der andere erzählt nur eine Einzelheit nach.", "Welcher Satz gilt für den ganzen Text und nicht nur für einen Moment?")] },
       ),
       b(
         "Das Muster aus zwei Sätzen",
@@ -124,7 +124,7 @@ primer(
         "Das nimmst du mit",
         ["**Satz 1**: Textart, Titel, Kernaussage", "**Satz 2**: die wichtigsten Punkte", L("Gegenwart.", "Keine eigene Meinung.", "Eigene Worte.", "Keine Einzelheiten.")],
         "Das ist das ganze Muster. Zwei Sätze und vier Regeln. Wenn du deine Zusammenfassung fertig hast, geh die vier Regeln einmal durch. Gleich kommen noch die Wörter zum Nachlesen und ein kleines Quiz.",
-        { tasks: [k("Was gehört in den ersten Satz einer Zusammenfassung? ___", "Textart, Titel und Kernaussage", ["alle Zahlen aus dem Text"], "Der erste Satz stellt den Text vor und sagt, was er aussagt.", "Was muss jemand wissen, der den Text nicht kennt?")] },
+        { tasks: [k("Der Text handelt von Müll im Meer. Was fehlt in diesem ersten Satz? ___", "Textart und Titel", ["die eigene Meinung"], "Der erste Satz nennt Textart, Titel und Kernaussage. Hier steht nur die Kernaussage.", "Halte den Satz neben die erste Zeile der Tafel. Was steht schon da?")] },
       ),
     ),
   ],

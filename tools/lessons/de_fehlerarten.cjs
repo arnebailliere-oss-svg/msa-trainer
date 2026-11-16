@@ -29,13 +29,13 @@ primer(
         "R: der Rechtschreibfehler",
         [L("*warscheinlich* statt wahrscheinlich", "*Strasse* statt Straße", "*beim essen* statt beim Essen"), "Ein Wort ist **falsch geschrieben**."],
         "Ein Rechtschreibfehler betrifft immer ein einzelnes Wort. Ein Buchstabe fehlt, ist zu viel oder ist falsch. Auch die Groß- und Kleinschreibung gehört dazu. Die Frage lautet: Ist dieses Wort so geschrieben, wie es im Wörterbuch steht?",
-        { tasks: [k("Wir gehen heute schwimen. Der Fehler ist ein ___.", "Rechtschreibfehler", ["Grammatikfehler"], "Im Wort fehlt ein Buchstabe. Es ist falsch geschrieben.", "Ist ein einzelnes Wort anders geschrieben als im Wörterbuch?")] },
+        { tasks: [k("Wir gehen heute schwimen. Richtig geschrieben heißt das Wort ___.", "schwimmen", ["schwiemen"], "Das i ist kurz. Deshalb wird das m verdoppelt.", "Sprich das Wort in Silben. Wie oft hörst du das m?")] },
       ),
       b(
         "Z: der Zeichensetzungsfehler",
         [L("*Ich glaube dass er kommt.*", "Hier fehlt ein Komma."), L("*Er sagt: Ich komme.*", "Hier fehlen die Anführungszeichen.")],
         "Ein Zeichensetzungsfehler betrifft kein Wort, sondern ein Satzzeichen. Ein Komma fehlt, ein Punkt ist vergessen, oder die Anführungszeichen sind nicht da. Die Wörter selbst sind alle richtig. Die Frage lautet: Fehlt ein Zeichen, oder steht eins zu viel?",
-        { tasks: [k("Wir bleiben hier weil es regnet. Der Fehler ist ein ___.", "Zeichensetzungsfehler", ["Ausdrucksfehler"], "Vor weil fehlt ein Komma. Alle Wörter sind richtig.", "Sind alle Wörter richtig geschrieben? Was fehlt zwischen den beiden Teilen?")] },
+        { tasks: [k("Wir bleiben hier weil es regnet. Das fehlende Komma gehört vor das Wort ___.", "weil", ["hier"], "Mit diesem Wort beginnt der Nebensatz. An der Grenze steht das Komma.", "Mit welchem Wort beginnt hier der Nebensatz?")] },
       ),
       b(
         "Jetzt du: R oder Z?",
@@ -61,13 +61,13 @@ primer(
         "Drei häufige Grammatikfehler",
         ["(1) Der **Fall** ist falsch: *wegen dem Regen* statt wegen des Regens.", "(2) Die **Verbform** ist falsch: *gefangt* statt gefangen.", "(3) Subjekt und Verb **passen nicht zusammen**: *Die Kinder spielt.*"],
         "Die meisten Grammatikfehler gehören zu einer dieser drei Gruppen. Beim ersten stimmt der Fall nicht. Beim zweiten ist die Form des Verbs falsch gebildet. Beim dritten steht das Subjekt in der Mehrzahl und das Verb in der Einzahl oder umgekehrt.",
-        { tasks: [k("Meine Freunde kommt morgen. Der Fehler ist ein ___.", "Grammatikfehler", ["Rechtschreibfehler"], "Das Subjekt steht in der Mehrzahl, das Verb in der Einzahl. Die Form passt nicht.", "Passen das Subjekt und das Verb zusammen?")] },
+        { tasks: [k("Meine Freunde kommt morgen. Richtig heißt es: Meine Freunde ___ morgen.", "kommen", ["kamen"], "Freunde sind mehrere. Dazu passt die Verbform für die Mehrzahl.", "Sind die Freunde einer oder mehrere? Welche Form passt dazu?")] },
       ),
       b(
         "A: der Ausdrucksfehler",
         [L("*Das Buch ist voll gut.*", "Richtig: Das Buch ist sehr gut."), "Schreibung und Grammatik stimmen. Aber das Wort **passt nicht** in einen sachlichen Text."],
         "Ein Ausdrucksfehler ist am schwersten zu erkennen, weil nichts im engeren Sinn falsch ist. Das Wort ist richtig geschrieben, und der Satz ist richtig gebaut. Trotzdem gehört das Wort nicht hierher. Meistens ist es Umgangssprache oder ein Füllwort.",
-        { tasks: [k("Der Roman ist mega spannend. Der Fehler ist ein ___.", "Ausdrucksfehler", ["Grammatikfehler"], "Das Wort mega gehört zur Umgangssprache und passt nicht in einen sachlichen Text.", "Welches Wort würdest du in einer Zeitung nicht finden?")] },
+        { tasks: [k("Der Roman ist mega spannend. In einem sachlichen Text schreibst du: Der Roman ist ___ spannend.", "sehr", ["voll"], "Mega und voll sind Umgangssprache. In einen sachlichen Text passt das neutrale Wort.", "Welches der beiden Wörter würdest du in einer Bewerbung schreiben?")] },
       ),
       b(
         "Die Falle: das und dass",

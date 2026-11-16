@@ -116,7 +116,7 @@ primer(
         "Das nimmst du mit",
         ["(1) **Partizip I**: Infinitiv und d. Es geschieht gerade.", "(2) **Partizip II**: ge und -t oder -en. Es ist fertig.", "(3) Vor einem Nomen bekommen beide eine Endung wie ein Adjektiv."],
         "Das ist alles, was du über die Partizipien wissen musst. In der Prüfung sollst du sie meistens nur erkennen und benennen. Gleich kommen noch die Wörter zum Nachlesen und ein kleines Quiz.",
-        { tasks: [k("Woran erkennst du das Partizip I? ___", "Es endet auf end.", ["Es beginnt mit ge."], "An den Infinitiv wird ein d gehängt, zum Beispiel lachend.", "Welche Form hast du bei lachend und schlafend gesehen?")] },
+        { tasks: [k("das lachende Kind: Lacht das Kind in diesem Moment, oder ist es schon fertig? ___", "Es lacht gerade.", ["Es hat aufgehört."], "Lachend ist ein Partizip I. Es zeigt, dass etwas gerade geschieht.", "Schau auf die Endung des Wortes. Was sagt Punkt eins der Tafel dazu?")] },
       ),
     ),
   ],

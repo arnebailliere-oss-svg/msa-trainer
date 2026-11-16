@@ -158,14 +158,14 @@
         "body": "Bleibt ein Angebot übrig? Prüf jeden Wunsch noch einmal daran.\n\nBleiben zwei übrig? Lies beide jetzt ganz genau.",
         "tasks": [
           {
-            "text": "Was machst du in der Prüfung zuerst? ___",
+            "text": "Zwei Angebote bleiben übrig. In Angebot A steht: adults only. Die Person ist 15. Du wählst ___.",
             "choices": [
-              "Die Wünsche der Person markieren",
-              "Alle Angebote genau lesen"
+              "das andere Angebot",
+              "Angebot A"
             ],
-            "correct": "Die Wünsche der Person markieren",
-            "why": "Die Person hat nur wenige Sätze. Mit ihren Wünschen suchst du danach gezielt.",
-            "hint": "Welcher Text ist kürzer: der über die Person oder alle sieben Angebote?"
+            "correct": "das andere Angebot",
+            "why": "Adults only heißt nur für Erwachsene. Mit 15 darf die Person dort nicht teilnehmen.",
+            "hint": "Was bedeutet adults only? Passt das zu einem Alter von 15?"
           }
         ],
         "say": "Erst jetzt liest du genau, und nur noch ein oder zwei kurze Texte. Das spart viel Zeit. Wenn du für jeden Wunsch auf ein Wort zeigen kannst, ist die Antwort sicher. Unten kannst du prüfen, ob du die Reihenfolge noch weißt."

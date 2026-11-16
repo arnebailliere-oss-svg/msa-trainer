@@ -25,7 +25,7 @@ primer(
         "Die gute Nachricht",
         ["Du musst den Artikel **nicht ganz verstehen**.", "Du musst nur die **Stelle finden**, an der die Antwort steht."],
         "In jedem Artikel stehen Wörter, die du nicht kennst. Das ist so gewollt und ganz normal. Für die Fragen brauchst du meistens nur einen oder zwei Sätze aus dem ganzen Text. Alles andere darfst du überfliegen, ohne ein schlechtes Gewissen zu haben.",
-        { tasks: [k("Ein Wort im Artikel kennst du nicht. Das ist ___.", "meistens kein Problem", ["das Ende der Aufgabe"], "Für die Antwort brauchst du nur die passende Stelle und nicht jedes einzelne Wort.", "Wie viele Sätze aus dem Artikel brauchst du für eine Frage?")] },
+        { tasks: [k("Frage: When does the shop open? Im Text steht: The shop, a charming old building, opens at nine. Du kennst charming nicht. Findest du die Antwort trotzdem? ___", "Ja, sie steht bei opens at nine.", ["Nein, ohne das Wort geht es nicht."], "Die Frage will eine Uhrzeit. Die steht am Ende des Satzes, und das unbekannte Wort brauchst du dafür nicht.", "Wonach fragt die Frage? Such im Satz nur diese eine Angabe.")] },
       ),
       b(
         "Zuerst die Frage, dann der Text",

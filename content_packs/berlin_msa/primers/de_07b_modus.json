@@ -141,14 +141,14 @@
             "hint": "Ist der Sprecher wirklich ein Vogel?"
           },
           {
-            "text": "Ich hätte gern eine Pizza. Das ist ___.",
+            "text": "Ich hätte gern eine Pizza. Der Sprecher ___.",
             "choices": [
-              "Konjunktiv II",
-              "Imperativ"
+              "äußert höflich einen Wunsch",
+              "gibt einen Befehl"
             ],
-            "correct": "Konjunktiv II",
-            "why": "Das Wort hätte drückt hier einen Wunsch aus.",
-            "hint": "Welches Wort im Satz hat zwei Punkte auf einem Buchstaben?"
+            "correct": "äußert höflich einen Wunsch",
+            "why": "Hätte gern ist die höfliche Form für einen Wunsch. Ein Befehl klänge anders.",
+            "hint": "Klingt der Satz höflich oder wie ein Kommando?"
           },
           {
             "text": "An deiner Stelle ___ ich mehr schlafen.",
@@ -250,14 +250,14 @@
         "body": "**Indikativ**: So ist es. *Er geht.*\n**Imperativ**: Tu das! *Geh!*\n**Konjunktiv I**: Jemand hat es gesagt. *Er gehe.*\n**Konjunktiv II**: nur vorgestellt. *Er ginge, er würde gehen.*",
         "tasks": [
           {
-            "text": "Woran erkennst du den Konjunktiv II am leichtesten? ___",
+            "text": "Wenn ich reich wäre, würde ich ein Boot kaufen. Der Sprecher ist ___.",
             "choices": [
-              "an wäre, hätte und würde",
-              "am Ausrufezeichen"
+              "nicht reich",
+              "reich"
             ],
-            "correct": "an wäre, hätte und würde",
-            "why": "Diese drei Formen zeigen, dass etwas nur vorgestellt ist.",
-            "hint": "Welche Wörter stehen in Sätzen über Wünsche und Vorstellungen?"
+            "correct": "nicht reich",
+            "why": "Wäre und würde zeigen: Das ist nur vorgestellt. In Wirklichkeit ist es anders.",
+            "hint": "Was zeigen die Wörter wäre und würde: Wirklichkeit oder Vorstellung?"
           }
         ],
         "say": "Das sind die vier Aussageweisen mit je einem Beispiel. Achte auf die Erkennungszeichen: das Verb ganz vorn beim Imperativ, sei und habe beim Konjunktiv I, wäre, hätte und würde beim Konjunktiv II. Gleich kommen die Wörter und das Quiz."

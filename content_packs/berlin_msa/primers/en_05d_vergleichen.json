@@ -32,13 +32,13 @@
         "body": "*Ben is taller **than** Tom.*\n\n= Ben ist größer als Tom.\n\nNicht verwechseln: **then** heißt dann.",
         "tasks": [
           {
-            "text": "My brother is older ___ me.",
+            "text": "My brother is ___ me.",
             "choices": [
-              "than",
-              "then",
-              "as"
+              "older than",
+              "older then",
+              "older as"
             ],
-            "correct": "than",
+            "correct": "older than",
             "why": "Nach einem Komparativ steht das Wort für als, geschrieben mit a.",
             "hint": "Welches der Wörter bedeutet als? Achte auf den Buchstaben in der Mitte."
           }

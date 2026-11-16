@@ -70,14 +70,14 @@
         "say": "Für die drei Zahlen gibt es Fachwörter, die in Aufgaben oft vorkommen. Der Grundwert ist das Ganze, also der ganze Preis, alle Schüler oder das ganze Geld. Er entspricht immer 100 Prozent. Der Prozentwert ist der Teil, und der Prozentsatz ist die Zahl mit dem Prozentzeichen.",
         "tasks": [
           {
-            "text": "Der Teil vom Ganzen heißt ___.",
+            "text": "Von 30 Schülern kommen 12 mit dem Bus. Die 12 ist der ___.",
             "choices": [
               "Prozentwert",
               "Grundwert"
             ],
             "correct": "Prozentwert",
-            "why": "Der Grundwert ist das Ganze. Der Teil davon ist der Prozentwert.",
-            "hint": "Welches der beiden Wörter steht für das Ganze, also für 100 Prozent?"
+            "why": "Die 12 Schüler sind ein Teil von allen. Der Teil hat diesen Namen.",
+            "hint": "Ist die 12 das Ganze oder nur ein Teil davon?"
           }
         ]
       },

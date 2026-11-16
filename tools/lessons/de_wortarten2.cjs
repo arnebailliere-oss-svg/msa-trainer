@@ -127,7 +127,7 @@ primer(
         "Alle acht Wortarten",
         [L("Nomen, Verb, Adjektiv", "Artikel, Pronomen", "**Präposition**: steht vor einem Nomen.", "**Konjunktion**: verbindet Wörter und Sätze.", "**Adverb**: sagt wann, wo, wie und bleibt immer gleich.")],
         "Mit den drei neuen sind es zusammen acht Wortarten. Mehr musst du für die Prüfung nicht kennen. Jedes deutsche Wort gehört zu einer dieser Gruppen. Gleich kommen noch die Wörter zum Nachlesen und ein kleines Quiz.",
-        { tasks: [k("Vor welchen Konjunktionen steht ein Komma? ___", "weil, dass, wenn, obwohl", ["und, oder"], "Diese Wörter hängen einen Satz an einen anderen an.", "Welche Gruppe hängt einen Satz an, der nicht allein stehen kann?")] },
+        { tasks: [k("Wir bleiben zu Hause, weil es regnet. Das Wort weil ist ___.", "eine Konjunktion", ["eine Präposition"], "Weil verbindet zwei Sätze miteinander. Eine Präposition stünde vor einem Nomen.", "Verbindet das Wort zwei Sätze, oder steht es vor einem Nomen?")] },
       ),
     ),
   ],

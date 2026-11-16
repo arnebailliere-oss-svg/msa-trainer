@@ -189,14 +189,14 @@
         "body": "**Nominativ**: Wer oder was?\n**Genitiv**: Wessen?\n**Dativ**: Wem?\n**Akkusativ**: Wen oder was?",
         "tasks": [
           {
-            "text": "Mit der Frage Wem? findest du den ___.",
+            "text": "Ich helfe meinem Bruder. Meinem Bruder steht im ___.",
             "choices": [
               "Dativ",
               "Akkusativ"
             ],
             "correct": "Dativ",
-            "why": "Wem gehört zu diesem Fall. Wen oder was gehört zum anderen.",
-            "hint": "Schau in die dritte Zeile der Tafel."
+            "why": "Du fragst: Wem helfe ich? Die Frage Wem gehört zu diesem Fall.",
+            "hint": "Mit welcher Frage findest du meinem Bruder: Wem oder Wen?"
           }
         ],
         "say": "Zu jeder dieser Fragen gehört ein Fall. Das Subjekt steht immer im Nominativ. Die Objekte stehen im Dativ oder im Akkusativ. Der Genitiv antwortet auf Wessen, zum Beispiel das Fahrrad meines Bruders. Du musst die vier Namen kennen und die Frage dazu."
@@ -322,14 +322,14 @@
         "body": "**Prädikat**: Was geschieht?\n**Subjekt**: Wer oder was?\n**Dativobjekt**: Wem?\n**Akkusativobjekt**: Wen oder was?\n**Adverbiale Bestimmung**: Wo? Wann? Wie? Warum?",
         "tasks": [
           {
-            "text": "Womit fängst du an, wenn du einen Satz zerlegst? ___",
+            "text": "Gestern hat Tom seiner Schwester ein Eis gekauft. Du suchst zuerst das Prädikat. Es heißt: ___",
             "choices": [
-              "mit dem Prädikat",
-              "mit dem ersten Wort"
+              "hat gekauft",
+              "Gestern"
             ],
-            "correct": "mit dem Prädikat",
-            "why": "Das Verb findest du am leichtesten, und alle Fragen gehen von ihm aus.",
-            "hint": "Welches Satzglied kennst du schon aus der Lektion über die Wortarten?"
+            "correct": "hat gekauft",
+            "why": "Das Prädikat sagt, was geschieht. Hier besteht es aus zwei Teilen.",
+            "hint": "Welche Wörter sagen, was geschieht? Es sind zwei."
           }
         ],
         "say": "Mit diesen fünf Zeilen zerlegst du jeden Satz. Fang immer beim Prädikat an und geh dann die Fragen der Reihe nach durch. Gleich kommen noch die Wörter zum Nachlesen und ein kleines Quiz."

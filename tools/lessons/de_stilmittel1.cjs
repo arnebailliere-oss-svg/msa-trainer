@@ -28,7 +28,7 @@ primer(
         "Wo du sie findest",
         ["In der Werbung, in Reden und in Liedtexten.", "In Gedichten und in Überschriften.", "In der Prüfung: *Notieren Sie zwei Stilmittel aus dem Satz.*"],
         "Überall, wo jemand deine Aufmerksamkeit will, findest du Stilmittel. Werbung benutzt sie, damit du dir ein Produkt merkst. Politiker benutzen sie, damit eine Rede überzeugt. In der Prüfung bekommst du einen Satz und sollst sagen, welche Stilmittel darin stecken.",
-        { tasks: [k("Ein Stilmittel verändert vor allem ___.", "die Wirkung eines Satzes", ["die Rechtschreibung"], "Der Inhalt bleibt gleich. Der Satz wirkt nur stärker oder auffälliger.", "Was war bei den beiden Sätzen über den starken Mann verschieden?")] },
+        { tasks: [k("Welche Überschrift fällt mehr auf? ___", "Die Stadt schläft nie", ["Die Stadt ist nachts belebt"], "Eine Stadt kann nicht schlafen. Das Bild macht den Satz auffällig, und genau das tut ein Stilmittel.", "In welchem Satz tut ein Ding etwas, das eigentlich nur Menschen tun?")] },
       ),
       b(
         "Jetzt du: auffällig oder gewöhnlich?",
@@ -119,7 +119,7 @@ primer(
         "Das nimmst du mit",
         [L("**Vergleich**: mit dem Wort wie", "**Metapher**: ein Bild ohne wie", "**Personifikation**: Ein Ding handelt wie ein Mensch.", "**Symbol**: ein festes Zeichen für etwas anderes")],
         "Das sind die vier Sprachbilder mit ihren Erkennungszeichen. Wenn du in einem Satz ein Bild entdeckst, gehst du diese vier Zeilen durch. Gleich kommen noch die Wörter zum Nachlesen und ein kleines Quiz.",
-        { tasks: [k("Woran erkennst du einen Vergleich sicher? ___", "am Wort wie", ["am Ausrufezeichen"], "Das Wort stellt zwei Dinge nebeneinander.", "Welches Wort stand in stark wie ein Bär?")] },
+        { tasks: [k("Die Zeit rennt. Das ist ___.", "eine Personifikation", ["ein Vergleich"], "Die Zeit handelt hier wie ein Mensch. Das Wort wie kommt im Satz nicht vor.", "Kann die Zeit wirklich rennen? Wer kann das sonst?")] },
       ),
     ),
   ],

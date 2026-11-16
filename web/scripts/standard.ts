@@ -112,6 +112,13 @@ export function checkPrimerStandard(p: Primer, terms: string[], primerById: Map<
       if (!t.hint || words(t.hint) < LIMITS.hintWordsMin) v.push(`${w}: "hint" (help after a wrong tap) missing or shorter than ${LIMITS.hintWordsMin} words`);
       if (t.hint && t.hint.includes(t.correct) && t.correct.length > 2) v.push(`${w}: the hint gives the answer away`);
       for (const l of arrowChains(`${t.why ?? ""}\n${t.hint ?? ""}`)) v.push(`${w}: arrow chain "${l.trim().slice(0, 60)}"`);
+      // A task must make the student use the idea, not repeat a sentence that is already in front of them.
+      const flat = (x: string) => x.toLowerCase().replace(/[*$_\\{}.,:;!?„“”"()]/g, " ").replace(/\s+/g, " ").trim();
+      const answer = flat(t.correct);
+      // A title that names both choices ("since oder for?") is fine; a title that names only the answer gives it away.
+      const others = t.choices.filter((c) => c !== t.correct).map(flat);
+      if (answer.length >= 4 && flat(s.title).includes(answer) && !others.some((o) => flat(s.title).includes(o)))
+        v.push(`${w}: the board title already gives the answer "${t.correct}" (ask for a new example instead of a repetition)`);
     });
   });
 

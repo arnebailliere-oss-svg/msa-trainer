@@ -29,7 +29,7 @@ primer(
         "Wozu du das brauchst",
         ["In Zeitungsberichten und Protokollen.", "In jeder Zusammenfassung eines Textes.", "In der Prüfung: *Formulieren Sie den Satz so um, dass er keine direkte Rede enthält.*"],
         "Die indirekte Rede brauchst du immer dann, wenn du über etwas berichtest, das jemand gesagt hat. In einer Zusammenfassung darfst du zum Beispiel keine wörtlichen Zitate aneinanderreihen. Und in der Prüfung gibt es dazu eine eigene Aufgabe.",
-        { tasks: [k("In der indirekten Rede stehen ___ Anführungszeichen.", "keine", ["zwei"], "Die Worte sind in den Satz des Berichtenden eingebaut. Die Zeichen fallen weg.", "Hörst du in der indirekten Rede die Person selbst sprechen?")] },
+        { tasks: [k("Welcher Satz enthält keine direkte Rede? ___", "Lea sagt, sie komme später.", ["Lea sagt: „Ich komme später.“"], "In diesem Satz fehlen Doppelpunkt und Anführungszeichen. Leas Worte werden nur wiedergegeben.", "In welchem Satz stehen Anführungszeichen? Der andere ist gesucht.")] },
       ),
       b(
         "Jetzt du: direkt oder indirekt?",
@@ -114,7 +114,7 @@ primer(
         "Das nimmst du mit",
         ["(1) Doppelpunkt und Anführungszeichen entfernen.", "(2) Die Person anpassen: aus ich wird er oder sie.", "(3) Das Verb in den **Konjunktiv I** setzen.", "(4) Fragen mit **ob** oder Fragewort, Aufforderungen mit **sollen**."],
         "Das sind die vier Schritte auf einen Blick. Wenn du sie der Reihe nach abarbeitest, kann wenig schiefgehen. Gleich kommen noch die Wörter zum Nachlesen und ein kleines Quiz.",
-        { tasks: [k("Welches Zeichen steht in der indirekten Rede nach dem Begleitsatz? ___", "ein Komma", ["ein Doppelpunkt"], "Der Doppelpunkt der direkten Rede wird durch dieses Zeichen ersetzt.", "Was wird aus dem Doppelpunkt, wenn die Anführungszeichen wegfallen?")] },
+        { tasks: [k("Jan sagt: „Ich habe Hunger.“ Indirekt: ___", "Jan sagt, er habe Hunger.", ["Jan sagt, ich habe Hunger."], "Aus ich wird er, und das Verb steht im Konjunktiv I.", "Wer hat Hunger? Welches Wort muss deshalb für ich stehen?")] },
       ),
     ),
   ],

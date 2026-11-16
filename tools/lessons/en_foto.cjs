@@ -24,7 +24,7 @@ primer(
         "Drei Schritte",
         ["(1) Was zeigt das Foto?", "(2) Was ist wo zu sehen?", "(3) Was denkst oder fühlst du dabei?"],
         "Für jeden dieser drei Schritte schreibst du ein bis zwei Sätze. Mehr braucht es nicht. Der Text ist absichtlich kurz. Du musst also nicht jedes Blatt und jeden Stein beschreiben, sondern nur das Wichtigste.",
-        { tasks: [k("Die Aufgabe sagt 30 to 50 words. Dein Text ist also ___.", "kurz", ["eine ganze Seite lang"], "Fünfzig Wörter sind ungefähr fünf Sätze.", "Wie viele Sätze sind ungefähr fünfzig Wörter?")] },
+        { tasks: [k("I think they are having a great day. Zu welchem Schritt gehört dieser Satz? ___", "zu Schritt 3", ["zu Schritt 1"], "I think leitet einen Gedanken ein. Das ist der dritte Schritt.", "Sagt der Satz, was zu sehen ist, oder was der Schreiber denkt?")] },
       ),
       b(
         "Schritt 1: der Überblick",

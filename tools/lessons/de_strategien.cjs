@@ -170,7 +170,7 @@ primer(
         "Das nimmst du mit",
         [L("**Verlängern**: bei d oder t, b oder p, g oder k am Wortende.", "**Ableiten**: bei ä oder e, äu oder eu.", "**In Silben sprechen**: bei doppelten Konsonanten.", "**Das h prüfen**: vor l, m, n, r und zwischen zwei Vokalen.")],
         "Das sind die vier Strategien mit ihren Einsatzorten. Dazu kommt die Grundfrage, ob ein Vokal kurz oder lang ist. Sie entscheidet über doppelte Konsonanten und über ss oder ß. Gleich kommen die Wörter zum Nachlesen und ein kleines Quiz.",
-        { tasks: [k("Nach einem langen Vokal schreibst du ___.", "ß", ["ss"], "Das ss ist ein doppelter Konsonant und steht nur nach einem kurzen Vokal.", "Welches von beiden ist ein doppelter Konsonant? Wo stehen doppelte Konsonanten?")] },
+        { tasks: [k("Wald oder Walt? Welche Strategie hilft? ___", "verlängern: die Wälder", ["in Silben sprechen"], "In Wälder hörst du das d deutlich. Am Wortende klingt es wie ein t.", "Welcher Buchstabe ist unsicher, und wo steht er im Wort?")] },
       ),
     ),
   ],

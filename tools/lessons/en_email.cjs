@@ -24,7 +24,7 @@ primer(
         "Zuerst zählen: Wie viele Fragen?",
         [L("(1) *What can we do?*", "(2) *Where can I stay?*", "(3) *What is the weather like?*"), "**Drei Fragen.** Jede braucht eine Antwort."],
         "Bevor du auch nur ein Wort schreibst, zählst du die Fragen. Das ist der wichtigste Schritt. Für jede beantwortete Frage bekommst du Punkte für den Inhalt. Wer eine Frage vergisst, verschenkt diese Punkte, egal wie schön der Rest geschrieben ist.",
-        { tasks: [k("Du beantwortest nur zwei der drei Fragen. Dann fehlen dir ___.", "Punkte für den Inhalt", ["gar keine Punkte"], "Jede Frage ist ein Punkt, den die Aufgabe verlangt.", "Wofür bekommst du Punkte, wenn du eine Frage beantwortest?")] },
+        { tasks: [k("Emma schreibt: When do you get up? What do you eat for breakfast? Wie viele Antworten braucht deine E-Mail? ___", "zwei", ["eine"], "In Emmas Text stehen zwei Fragezeichen. Jede Frage braucht ihre eigene Antwort.", "Zähl einmal die Fragezeichen in Emmas Text.")] },
       ),
       b(
         "at least 80 words",
@@ -66,7 +66,7 @@ primer(
         "Teil 4: eine Frage, ein Absatz",
         [L("Emma: *What can we do?*", "**We could go to the zoo and have a picnic in the park.**"), L("Emma: *Where can I stay?*", "**You can stay at my place. My brother's room is free.**")],
         "Jetzt beantwortest du die Fragen, eine nach der anderen. Für jede Frage beginnst du einen neuen Absatz. So sieht die Lehrerin sofort, dass du nichts vergessen hast. At my place bedeutet bei mir zu Hause.",
-        { tasks: [k("Für jede Frage schreibst du ___.", "einen eigenen Absatz", ["alles in einen Satz"], "So bleibt der Text übersichtlich, und keine Antwort geht unter.", "Wie erkennt man am schnellsten, dass alle Fragen beantwortet sind?")] },
+        { tasks: [k("Emma stellt in ihrer E-Mail drei Fragen. Dein Hauptteil hat dann ___.", "drei Absätze", ["einen langen Absatz"], "Jede Frage bekommt ihren eigenen Absatz. Bei drei Fragen sind das drei.", "Wie viele Fragen sind es? Jede bekommt ihren eigenen Platz.")] },
       ),
       b(
         "Die dritte Frage",
@@ -126,7 +126,7 @@ primer(
         "Deine Checkliste",
         ["(1) Alle Fragen gezählt und beantwortet?", "(2) Alle sechs Teile da?", "(3) Ein Absatz pro Frage?", "(4) Passt der Ton zum Empfänger?", "(5) Wörter gezählt?"],
         "Diese fünf Fragen gehst du durch, bevor du abgibst. Sie kosten dich zwei Minuten. Die meisten Punkte gehen nicht durch schwierige Grammatik verloren, sondern durch eine vergessene Frage oder einen zu kurzen Text.",
-        { tasks: [k("Womit fängst du an, bevor du schreibst? ___", "Ich zähle die Fragen in der Aufgabe.", ["Ich schreibe sofort die Anrede."], "Nur wer die Fragen kennt, kann alle beantworten.", "Was musst du wissen, bevor du den Hauptteil planen kannst?")] },
+        { tasks: [k("Dein Text ist fertig. Emma hat drei Fragen gestellt, du hast zwei Absätze geschrieben. Was ist passiert? ___", "Eine Frage ist noch nicht beantwortet.", ["Der Text ist zu lang."], "Für jede Frage gibt es einen Absatz. Bei drei Fragen und zwei Absätzen fehlt eine Antwort.", "Vergleich die Zahl der Fragen mit der Zahl der Absätze.")] },
       ),
     ),
   ],

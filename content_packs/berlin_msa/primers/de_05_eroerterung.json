@@ -30,14 +30,14 @@
         "body": "**Einleitung**: Worum geht es?\n**Hauptteil**: Was spricht dafür, was dagegen?\n**Schluss**: Was denke ich?",
         "tasks": [
           {
-            "text": "In welchem Teil sagst du deine eigene Meinung? ___",
+            "text": "Ein Vorteil ist, dass die Schüler ausgeschlafen sind. Der Satz gehört ___.",
             "choices": [
-              "im Schluss",
-              "in der Einleitung"
+              "in den Hauptteil",
+              "in den Schluss"
             ],
-            "correct": "im Schluss",
-            "why": "Zuerst zeigst du beide Seiten. Erst danach urteilst du.",
-            "hint": "Wann spricht ein Richter sein Urteil: am Anfang oder am Ende?"
+            "correct": "in den Hauptteil",
+            "why": "Der Satz nennt etwas, das dafür spricht. Solche Sätze stehen im Hauptteil.",
+            "hint": "Nennt der Satz einen Grund, oder sagt er die eigene Meinung?"
           }
         ],
         "say": "Jede Erörterung hat diese drei Teile. Die Einleitung führt zum Thema hin. Der Hauptteil ist der längste Teil und enthält alle Argumente beider Seiten. Im Schluss sagst du deine eigene Meinung. Wenn diese drei Teile klar erkennbar sind, ist schon viel gewonnen."
@@ -107,14 +107,14 @@
         "body": "Ordne die Argumente jeder Seite: vom schwächsten zum **stärksten**.\n\nWas zuletzt kommt, bleibt im Kopf.",
         "tasks": [
           {
-            "text": "Dein stärkstes Argument steht in der Reihe ___.",
+            "text": "Drei Argumente für Schulkleidung: (a) Sie sieht ordentlich aus. (b) Niemand wird wegen seiner Kleidung ausgegrenzt. (c) Morgens geht das Anziehen schneller. Welches kommt zuletzt? ___",
             "choices": [
-              "an letzter Stelle",
-              "an erster Stelle"
+              "(b)",
+              "(c)"
             ],
-            "correct": "an letzter Stelle",
-            "why": "Was der Leser zuletzt liest, bleibt ihm am besten im Kopf.",
-            "hint": "Woran erinnert man sich nach dem Lesen am besten?"
+            "correct": "(b)",
+            "why": "Dass niemand ausgegrenzt wird, wiegt am schwersten. Das stärkste Argument steht am Ende.",
+            "hint": "Welches der drei Argumente ist für die Schüler das wichtigste?"
           }
         ],
         "say": "Menschen erinnern sich am besten an das, was sie zuletzt gelesen haben. Deshalb steht dein stärkstes Argument am Ende. Die Seite, für die du dich im Schluss entscheidest, behandelst du im Hauptteil als zweite. So führt der Text ganz natürlich zu deinem Urteil."
@@ -315,14 +315,14 @@
         "body": "(1) Erst der **Schreibplan**, dann der Text.\n\n(2) Jedes Argument: Behauptung, Begründung, Beispiel, ein Absatz.\n\n(3) Das stärkste Argument zuletzt.\n\n(4) Die eigene Meinung erst im Schluss.",
         "tasks": [
           {
-            "text": "Womit beginnst du in der Prüfung? ___",
+            "text": "Im Hauptteil steht: Ich finde, das Handyverbot ist richtig. Was ist hier falsch? ___",
             "choices": [
-              "mit dem Schreibplan",
-              "mit dem ersten Satz des Textes"
+              "Die eigene Meinung steht zu früh.",
+              "Der Satz ist zu kurz."
             ],
-            "correct": "mit dem Schreibplan",
-            "why": "Der Plan ordnet deine Gedanken und bringt eigene Punkte.",
-            "hint": "Was bringt eigene Punkte und spart dir später Zeit?"
+            "correct": "Die eigene Meinung steht zu früh.",
+            "why": "Die eigene Meinung kommt erst im Schluss. Im Hauptteil stehen nur die Argumente.",
+            "hint": "Schau auf Punkt vier der Tafel. Wo hat die Meinung ihren Platz?"
           }
         ],
         "say": "Das sind die vier Regeln, die deine Erörterung tragen. Wenn du in der Prüfung nervös wirst, halt dich an den Plan. Er führt dich Schritt für Schritt durch den Text. Gleich kommen noch die Wörter zum Nachlesen und ein kleines Quiz."

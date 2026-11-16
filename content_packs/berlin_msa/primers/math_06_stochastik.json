@@ -148,14 +148,14 @@
         "say": "Genau einmal rot kann auf zwei Wegen passieren: erst rot und dann blau, oder erst blau und dann rot. Du rechnest jeden Weg für sich aus, so wie eben. Danach zählst du die beiden Ergebnisse zusammen, weil beide Wege zu deinem Ereignis passen.",
         "tasks": [
           {
-            "text": "Zwei verschiedene Wege passen zu deinem Ereignis. Ihre Ergebnisse werden ___.",
+            "text": "Weg 1 hat $\\frac{2}{10}$, Weg 2 hat $\\frac{3}{10}$. Beide passen zu deinem Ereignis. Zusammen sind das ___.",
             "choices": [
-              "zusammengezählt",
-              "malgenommen"
+              "$\\frac{5}{10}$",
+              "$\\frac{6}{100}$"
             ],
-            "correct": "zusammengezählt",
-            "why": "Mehrere passende Wege werden zusammengezählt. Mal nimmst du nur entlang eines Weges.",
-            "hint": "Wird das Ereignis wahrscheinlicher oder seltener, wenn mehr Wege dazu passen?"
+            "correct": "$\\frac{5}{10}$",
+            "why": "Mehrere passende Wege werden zusammengezählt: 2 Zehntel plus 3 Zehntel.",
+            "hint": "Wird das Ereignis wahrscheinlicher oder seltener, wenn zwei Wege dazu passen?"
           }
         ]
       },
@@ -233,14 +233,14 @@
         "body": "(1) Wahrscheinlichkeit: günstig durch möglich.\n\n(2) Das Gegenteil hat den Rest bis 1.\n\n(3) Entlang eines Weges: mal. Mehrere Wege: plus.\n\n(4) Mittelwert: alles zusammen, geteilt durch die Anzahl.\n\n(5) Median: erst sortieren, dann die Mitte.",
         "tasks": [
           {
-            "text": "Für den Median musst du die Werte zuerst ___.",
+            "text": "Der Median von 9, 1, 5 ist ___.",
             "choices": [
-              "sortieren",
-              "zusammenzählen"
+              "5",
+              "1"
             ],
-            "correct": "sortieren",
-            "why": "Erst wenn die Werte der Größe nach stehen, findest du den in der Mitte.",
-            "hint": "Was machst du mit der Liste, bevor du die Mitte suchst?"
+            "correct": "5",
+            "why": "Sortiert heißt die Liste 1, 5, 9. In der Mitte steht die 5.",
+            "hint": "Sortier die drei Zahlen zuerst der Größe nach."
           }
         ],
         "say": "Das sind die fünf Dinge, die du aus dieser Lektion brauchst. Bei jeder Aufgabe mit Kugeln oder Losen schaust du zuerst, ob zurückgelegt wird. Bei jeder Liste von Zahlen sortierst du zuerst. Gleich kommen die Wörter und ein kleines Quiz."

@@ -42,7 +42,7 @@ primer(
           tasks: [
             k("Ich putze mir jeden Morgen die Zähne. Das passiert ___.", "immer wieder", ["gerade jetzt"], "Jeden Morgen bedeutet: Es wiederholt sich, Tag für Tag.", "Achte auf die Wörter jeden Morgen. Passiert das einmal oder oft?"),
             k("Psst! Das Baby schläft. Das passiert ___.", "gerade jetzt", ["immer wieder"], "Psst sagt man nur, wenn jemand in diesem Moment schläft.", "Warum sagt jemand Psst? Was ist in diesem Augenblick los?"),
-            k("Mein Vater arbeitet in einer Bank. Das gilt ___.", "immer", ["nur heute"], "Das ist sein Beruf. Es gilt an jedem Arbeitstag, nicht nur heute.", "Ist das sein Beruf, oder macht er das nur in diesem einen Moment?"),
+            k("Mein Vater arbeitet in einer Bank. Das gilt ___.", "an jedem Arbeitstag", ["nur in diesem Moment"], "Das ist sein Beruf. Es gilt an jedem Arbeitstag, nicht nur heute.", "Ist das sein Beruf, oder macht er das nur in diesem einen Moment?"),
           ],
         },
       ),

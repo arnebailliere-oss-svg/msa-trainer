@@ -32,7 +32,7 @@ migrate("primers/math_06_stochastik.json", (p, h) => {
     }),
   );
   h.say("Summenregel: plus", "Genau einmal rot kann auf zwei Wegen passieren: erst rot und dann blau, oder erst blau und dann rot. Du rechnest jeden Weg für sich aus, so wie eben. Danach zählst du die beiden Ergebnisse zusammen, weil beide Wege zu deinem Ereignis passen.");
-  h.tasks("Summenregel: plus", k("Zwei verschiedene Wege passen zu deinem Ereignis. Ihre Ergebnisse werden ___.", "zusammengezählt", ["malgenommen"], "Mehrere passende Wege werden zusammengezählt. Mal nimmst du nur entlang eines Weges.", "Wird das Ereignis wahrscheinlicher oder seltener, wenn mehr Wege dazu passen?"));
+  h.tasks("Summenregel: plus", k("Weg 1 hat $\\frac{2}{10}$, Weg 2 hat $\\frac{3}{10}$. Beide passen zu deinem Ereignis. Zusammen sind das ___.", "$\\frac{5}{10}$", ["$\\frac{6}{100}$"], "Mehrere passende Wege werden zusammengezählt: 2 Zehntel plus 3 Zehntel.", "Wird das Ereignis wahrscheinlicher oder seltener, wenn zwei Wege dazu passen?"));
 
   // --- chapter 3 ---
   h.body("Statistik: der Mittelwert", "Noten: 2, 3, 3, 4", "$\\frac{2 + 3 + 3 + 4}{4} = \\frac{12}{4} = 3$", "Alles zusammen, geteilt durch die Anzahl: Das ist der **Mittelwert**.");
@@ -49,7 +49,7 @@ migrate("primers/math_06_stochastik.json", (p, h) => {
   h.after(
     "Modus und Spannweite",
     b("Das nimmst du mit", ["(1) Wahrscheinlichkeit: günstig durch möglich.", "(2) Das Gegenteil hat den Rest bis 1.", "(3) Entlang eines Weges: mal. Mehrere Wege: plus.", "(4) Mittelwert: alles zusammen, geteilt durch die Anzahl.", "(5) Median: erst sortieren, dann die Mitte."], "Das sind die fünf Dinge, die du aus dieser Lektion brauchst. Bei jeder Aufgabe mit Kugeln oder Losen schaust du zuerst, ob zurückgelegt wird. Bei jeder Liste von Zahlen sortierst du zuerst. Gleich kommen die Wörter und ein kleines Quiz.", {
-      tasks: [k("Für den Median musst du die Werte zuerst ___.", "sortieren", ["zusammenzählen"], "Erst wenn die Werte der Größe nach stehen, findest du den in der Mitte.", "Was machst du mit der Liste, bevor du die Mitte suchst?")],
+      tasks: [k("Der Median von 9, 1, 5 ist ___.", "5", ["1"], "Sortiert heißt die Liste 1, 5, 9. In der Mitte steht die 5.", "Sortier die drei Zahlen zuerst der Größe nach.")],
     }),
   );
 

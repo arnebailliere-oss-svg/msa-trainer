@@ -22,14 +22,14 @@
         "body": "(1) *What can we do?*\n(2) *Where can I stay?*\n(3) *What is the weather like?*\n\n**Drei Fragen.** Jede braucht eine Antwort.",
         "tasks": [
           {
-            "text": "Du beantwortest nur zwei der drei Fragen. Dann fehlen dir ___.",
+            "text": "Emma schreibt: When do you get up? What do you eat for breakfast? Wie viele Antworten braucht deine E-Mail? ___",
             "choices": [
-              "Punkte für den Inhalt",
-              "gar keine Punkte"
+              "zwei",
+              "eine"
             ],
-            "correct": "Punkte für den Inhalt",
-            "why": "Jede Frage ist ein Punkt, den die Aufgabe verlangt.",
-            "hint": "Wofür bekommst du Punkte, wenn du eine Frage beantwortest?"
+            "correct": "zwei",
+            "why": "In Emmas Text stehen zwei Fragezeichen. Jede Frage braucht ihre eigene Antwort.",
+            "hint": "Zähl einmal die Fragezeichen in Emmas Text."
           }
         ],
         "say": "Bevor du auch nur ein Wort schreibst, zählst du die Fragen. Das ist der wichtigste Schritt. Für jede beantwortete Frage bekommst du Punkte für den Inhalt. Wer eine Frage vergisst, verschenkt diese Punkte, egal wie schön der Rest geschrieben ist."
@@ -106,14 +106,14 @@
         "body": "Emma: *What can we do?*\n**We could go to the zoo and have a picnic in the park.**\n\nEmma: *Where can I stay?*\n**You can stay at my place. My brother's room is free.**",
         "tasks": [
           {
-            "text": "Für jede Frage schreibst du ___.",
+            "text": "Emma stellt in ihrer E-Mail drei Fragen. Dein Hauptteil hat dann ___.",
             "choices": [
-              "einen eigenen Absatz",
-              "alles in einen Satz"
+              "drei Absätze",
+              "einen langen Absatz"
             ],
-            "correct": "einen eigenen Absatz",
-            "why": "So bleibt der Text übersichtlich, und keine Antwort geht unter.",
-            "hint": "Wie erkennt man am schnellsten, dass alle Fragen beantwortet sind?"
+            "correct": "drei Absätze",
+            "why": "Jede Frage bekommt ihren eigenen Absatz. Bei drei Fragen sind das drei.",
+            "hint": "Wie viele Fragen sind es? Jede bekommt ihren eigenen Platz."
           }
         ],
         "say": "Jetzt beantwortest du die Fragen, eine nach der anderen. Für jede Frage beginnst du einen neuen Absatz. So sieht die Lehrerin sofort, dass du nichts vergessen hast. At my place bedeutet bei mir zu Hause."
@@ -244,14 +244,14 @@
         "body": "(1) Alle Fragen gezählt und beantwortet?\n\n(2) Alle sechs Teile da?\n\n(3) Ein Absatz pro Frage?\n\n(4) Passt der Ton zum Empfänger?\n\n(5) Wörter gezählt?",
         "tasks": [
           {
-            "text": "Womit fängst du an, bevor du schreibst? ___",
+            "text": "Dein Text ist fertig. Emma hat drei Fragen gestellt, du hast zwei Absätze geschrieben. Was ist passiert? ___",
             "choices": [
-              "Ich zähle die Fragen in der Aufgabe.",
-              "Ich schreibe sofort die Anrede."
+              "Eine Frage ist noch nicht beantwortet.",
+              "Der Text ist zu lang."
             ],
-            "correct": "Ich zähle die Fragen in der Aufgabe.",
-            "why": "Nur wer die Fragen kennt, kann alle beantworten.",
-            "hint": "Was musst du wissen, bevor du den Hauptteil planen kannst?"
+            "correct": "Eine Frage ist noch nicht beantwortet.",
+            "why": "Für jede Frage gibt es einen Absatz. Bei drei Fragen und zwei Absätzen fehlt eine Antwort.",
+            "hint": "Vergleich die Zahl der Fragen mit der Zahl der Absätze."
           }
         ],
         "say": "Diese fünf Fragen gehst du durch, bevor du abgibst. Sie kosten dich zwei Minuten. Die meisten Punkte gehen nicht durch schwierige Grammatik verloren, sondern durch eine vergessene Frage oder einen zu kurzen Text."

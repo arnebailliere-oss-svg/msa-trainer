@@ -183,14 +183,14 @@
         "body": "Nenne die **Wortart** und zeige die **Probe**.\n\n*Es ist ein Relativpronomen, denn man kann welches einsetzen.*\n\n*Es ist eine Konjunktion, denn weder dieses noch welches passt.*",
         "tasks": [
           {
-            "text": "Das Wort mit zwei s gehört zu der Wortart ___.",
+            "text": "Ich hoffe, dass du kommst. Welche Begründung stimmt? ___",
             "choices": [
-              "Konjunktion",
-              "Artikel"
+              "Es ist eine Konjunktion, denn weder dieses noch welches passt.",
+              "Es ist ein Relativpronomen, denn man kann welches einsetzen."
             ],
-            "correct": "Konjunktion",
-            "why": "Es verbindet zwei Sätze. Wörter, die verbinden, sind Konjunktionen.",
-            "hint": "Welche Aufgabe hat das Wort: begleiten oder verbinden?"
+            "correct": "Es ist eine Konjunktion, denn weder dieses noch welches passt.",
+            "why": "Ich hoffe, welches du kommst klingt falsch. Also ist es die Konjunktion mit zwei s.",
+            "hint": "Setz probeweise dieses und welches ein. Klingt der Satz dann noch richtig?"
           }
         ],
         "say": "Manchmal sollst du deine Entscheidung begründen. Dafür reichen zwei Dinge: der Name der Wortart und die Probe. Die beiden Sätze auf der Tafel kannst du fast wörtlich übernehmen. Mehr wird nicht verlangt."

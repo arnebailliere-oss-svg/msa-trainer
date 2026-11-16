@@ -9,7 +9,7 @@ migrate("primers/math_03b_gleichung.json", (p, h) => {
   // --- chapter 1 ---
   h.body("Ein Rätsel", "Ich denke mir eine Zahl. Das Doppelte plus 3 ergibt 11.", "$2x + 3 = 11$", "So ein Zahlenrätsel heißt **Gleichung**.");
   h.tasks("Ein Rätsel", k("Ich denke mir eine Zahl. Plus 4 ergibt 10. Als Gleichung: ___", "$x + 4 = 10$", ["$x \\cdot 4 = 10$"], "Das x steht für die gedachte Zahl, und plus 4 wird genau so hingeschrieben.", "Welches Rechenzeichen steht im Rätsel: plus oder mal?"));
-  h.tasks("Das Gleichheitszeichen", k("Das Gleichheitszeichen sagt: Links und rechts steht ___.", "derselbe Wert", ["etwas Verschiedenes"], "Wie bei einer Waage im Gleichgewicht ist auf beiden Seiten gleich viel.", "Was zeigt eine Waage an, wenn sie gerade steht?"));
+  h.tasks("Das Gleichheitszeichen", k("$7 + 3 = $ ___ $+ 4$. Welche Zahl gehört in die Lücke?", "6", ["10"], "Links steht 10. Rechts muss auch 10 herauskommen, und 6 plus 4 ergibt 10.", "Rechne die linke Seite aus. Was fehlt rechts bis zu diesem Wert?"));
   h.tasks("Was heißt „lösen“?", k("Ist $x = 3$ eine Lösung von $x + 5 = 8$? ___", "Ja", ["Nein"], "3 plus 5 ergibt 8. Die Gleichung stimmt mit dieser Zahl.", "Setz die 3 für das x ein und rechne die linke Seite aus."));
   h.after(
     "Was heißt „lösen“?",

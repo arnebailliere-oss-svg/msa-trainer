@@ -121,7 +121,7 @@ primer(
         "Das nimmst du mit",
         ["(1) **Aktiv**: Das Subjekt tut etwas.", "(2) **Passiv**: werden und Partizip II. Mit dem Subjekt geschieht etwas.", "(3) Beim Umformen bleibt die **Zeitform** gleich.", "(4) Fehlt der Handelnde, nimmst du jemand oder man."],
         "Das sind die vier Punkte, die du für die Prüfung brauchst. Wenn du einen Satz umformen sollst, schau immer zuerst auf die Zeitform. Gleich kommen noch die Wörter zum Nachlesen und ein kleines Quiz.",
-        { tasks: [k("Woran erkennst du das Passiv? ___", "an werden und einem Partizip II", ["an haben und einem Infinitiv"], "Diese Kombination zeigt, dass mit dem Subjekt etwas geschieht.", "Aus welchen zwei Teilen besteht wird gejagt?")] },
+        { tasks: [k("Die Fenster wurden geputzt. Wer hat geputzt? ___", "Das sagt der Satz nicht.", ["die Fenster"], "Im Passiv geschieht etwas mit dem Subjekt. Wer es tut, kann fehlen.", "Tun die Fenster selbst etwas, oder geschieht etwas mit ihnen?")] },
       ),
     ),
   ],

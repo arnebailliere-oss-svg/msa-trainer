@@ -28,7 +28,7 @@ primer(
         "Die Standardsprache",
         ["So schreibst du in der Schule, in einer Bewerbung und in der Prüfung.", "Sie hat vollständige Sätze und sachliche Wörter.", "Diese Art heißt **Standardsprache**."],
         "Standardsprache ist die Sprache, die überall in Deutschland verstanden wird. Man nennt sie auch Hochdeutsch. Zeitungen sind in ihr geschrieben, und Nachrichten werden in ihr gesprochen. Sie wirkt sachlich und zeigt Respekt gegenüber dem Leser.",
-        { tasks: [k("Eine Bewerbung schreibst du in ___.", "Standardsprache", ["Umgangssprache"], "Eine Firma kennst du nicht persönlich. Dort schreibt man sachlich und vollständig.", "Kennst du die Menschen in der Firma persönlich?")] },
+        { tasks: [k("Ich hab voll Bock auf den Job. Passt dieser Satz in eine Bewerbung? ___", "Nein, er ist Umgangssprache.", ["Ja, er klingt freundlich."], "Hab, voll und Bock sind locker. Eine Bewerbung verlangt Standardsprache.", "Würdest du so mit der Chefin einer Firma sprechen?")] },
       ),
       b(
         "Keine von beiden ist falsch",
@@ -101,7 +101,7 @@ primer(
         "Der Inhalt bleibt gleich",
         ["Beim Umformen ändert sich **nur die Sprache**.", "Du fügst nichts hinzu und lässt nichts Wichtiges weg."],
         "Das ist ein häufiger Fehler. Manche schreiben beim Umformen einen ganz neuen Satz mit einer anderen Aussage. Das gibt Abzug. Der neue Satz muss genau dasselbe sagen wie der alte, nur in einer anderen Sprache. Prüf am Ende, ob die Aussage noch stimmt.",
-        { tasks: [k("Beim Umformen in Standardsprache ändert sich ___.", "nur die Sprache", ["auch der Inhalt"], "Die Aussage des Satzes muss dieselbe bleiben.", "Darf der neue Satz etwas anderes behaupten als der alte?")] },
+        { tasks: [k("Das Konzert war mega laut. Welche Umformung ist richtig? ___", "Das Konzert war sehr laut.", ["Das Konzert war sehr laut und schlecht."], "Nur das lockere Wort wird ersetzt. Über schlecht sagt der erste Satz nichts.", "In welchem Satz ist etwas dazugekommen, das vorher nicht dastand?")] },
       ),
       b(
         "Jetzt du: umformen",
@@ -119,7 +119,7 @@ primer(
         "Das nimmst du mit",
         ["(1) **Umgangssprache** für Freunde, **Standardsprache** für Schule und Prüfung.", "(2) Füllwörter streichen, lockere Wörter ersetzen, verkürzte Formen ausschreiben.", "(3) Der Inhalt bleibt derselbe."],
         "Das ist alles, was du für diese Aufgabe brauchst. Denk auch bei deinen eigenen Texten in der Prüfung daran. Ein einziges voll oder halt in einem Aufsatz gilt als Fehler im Ausdruck. Gleich kommen die Wörter und ein kleines Quiz.",
-        { tasks: [k("Woran erkennst du ein Füllwort? ___", "Ich kann es streichen, und der Sinn bleibt gleich.", ["Es steht am Satzanfang."], "Füllwörter tragen nichts zum Inhalt bei.", "Was passiert mit dem Satz, wenn du das Wort weglässt?")] },
+        { tasks: [k("Das ist ja eigentlich ganz einfach. Welches Wort kannst du streichen, ohne dass sich der Sinn ändert? ___", "eigentlich", ["einfach"], "Ohne eigentlich sagt der Satz dasselbe. Ohne einfach fehlt die Aussage.", "Lies den Satz zweimal, jedes Mal ohne eines der beiden Wörter.")] },
       ),
     ),
   ],

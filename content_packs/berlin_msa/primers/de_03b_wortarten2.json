@@ -272,14 +272,14 @@
         "body": "Nomen, Verb, Adjektiv\nArtikel, Pronomen\n**Präposition**: steht vor einem Nomen.\n**Konjunktion**: verbindet Wörter und Sätze.\n**Adverb**: sagt wann, wo, wie und bleibt immer gleich.",
         "tasks": [
           {
-            "text": "Vor welchen Konjunktionen steht ein Komma? ___",
+            "text": "Wir bleiben zu Hause, weil es regnet. Das Wort weil ist ___.",
             "choices": [
-              "weil, dass, wenn, obwohl",
-              "und, oder"
+              "eine Konjunktion",
+              "eine Präposition"
             ],
-            "correct": "weil, dass, wenn, obwohl",
-            "why": "Diese Wörter hängen einen Satz an einen anderen an.",
-            "hint": "Welche Gruppe hängt einen Satz an, der nicht allein stehen kann?"
+            "correct": "eine Konjunktion",
+            "why": "Weil verbindet zwei Sätze miteinander. Eine Präposition stünde vor einem Nomen.",
+            "hint": "Verbindet das Wort zwei Sätze, oder steht es vor einem Nomen?"
           }
         ],
         "say": "Mit den drei neuen sind es zusammen acht Wortarten. Mehr musst du für die Prüfung nicht kennen. Jedes deutsche Wort gehört zu einer dieser Gruppen. Gleich kommen noch die Wörter zum Nachlesen und ein kleines Quiz."

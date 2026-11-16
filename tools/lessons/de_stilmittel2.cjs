@@ -133,7 +133,7 @@ primer(
         "Das nimmst du mit",
         [L("**Wiederholung**: Alliteration, Anapher, Parallelismus", "**Kunstgriffe**: Hyperbel, Euphemismus, rhetorische Frage, Ironie", "**Satzbau**: Antithese, Klimax, Ellipse")],
         "Das sind die zehn Stilmittel dieser Lektion in ihren drei Gruppen. Du musst sie nicht alle heute sicher können. Auf dem Spickzettel findest du jedes mit einem Beispiel wieder. Gleich kommen die Wörter zum Nachlesen und ein kleines Quiz.",
-        { tasks: [k("Eine Steigerung in Stufen heißt ___.", "Klimax", ["Ellipse"], "Das Wort bedeutet Leiter. Es geht Stufe für Stufe nach oben.", "Welches der beiden Wörter bedeutet Leiter?")] },
+        { tasks: [k("Ich kam, ich sah, ich siegte. Das ist ___.", "eine Klimax", ["eine Ellipse"], "Die drei Teile steigern sich von Stufe zu Stufe bis zum Sieg.", "Wird der Satz von Teil zu Teil stärker, oder fehlt ein Wort?")] },
       ),
     ),
   ],

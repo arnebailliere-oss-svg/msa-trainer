@@ -31,7 +31,7 @@ migrate("primers/math_03_terme.json", (p, h) => {
   );
 
   // --- chapter 3 ---
-  h.tasks("Vertauschen ist erlaubt", k("Bei Plus und Mal darfst du ___.", "die Reihenfolge tauschen", ["nie etwas ändern"], "3 plus 5 und 5 plus 3 ergeben beide 8.", "Was haben die beiden Rechnungen auf der Tafel gemeinsam?"));
+  h.tasks("Vertauschen ist erlaubt", k("$7 \\cdot 4$ ist dasselbe wie ___.", "$4 \\cdot 7$", ["$7 + 4$"], "Bei Mal darfst du die Reihenfolge tauschen. Beide Male kommt 28 heraus.", "Rechne beide Möglichkeiten aus. Welche ergibt auch 28?"));
   h.tasks("Aber nicht bei Minus!", k("$10 - 4$ ist dasselbe wie $4 - 10$. Das ist ___.", "falsch", ["richtig"], "10 minus 4 ist 6, aber 4 minus 10 ist minus 6.", "Rechne beide Aufgaben aus. Kommt dasselbe heraus?"));
   h.tasks("Der Trick damit", k("$5 \\cdot 13 \\cdot 2$: Was rechnest du am besten zuerst? ___", "$5 \\cdot 2$", ["$13 \\cdot 2$"], "5 mal 2 ist 10, und mit 10 rechnet es sich leicht weiter.", "Welche zwei Zahlen ergeben zusammen eine glatte Zahl?"));
   h.tasks("Verteilen", k("$3 \\cdot (x + 4) = $ ___", "$3x + 12$", ["$3x + 4$"], "Die 3 wird auf beide verteilt: 3 mal x und 3 mal 4.", "Bekommt auch die 4 in der Klammer die 3 davor?"));

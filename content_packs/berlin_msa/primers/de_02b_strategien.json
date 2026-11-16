@@ -361,14 +361,14 @@
         "body": "**Verlängern**: bei d oder t, b oder p, g oder k am Wortende.\n**Ableiten**: bei ä oder e, äu oder eu.\n**In Silben sprechen**: bei doppelten Konsonanten.\n**Das h prüfen**: vor l, m, n, r und zwischen zwei Vokalen.",
         "tasks": [
           {
-            "text": "Nach einem langen Vokal schreibst du ___.",
+            "text": "Wald oder Walt? Welche Strategie hilft? ___",
             "choices": [
-              "ß",
-              "ss"
+              "verlängern: die Wälder",
+              "in Silben sprechen"
             ],
-            "correct": "ß",
-            "why": "Das ss ist ein doppelter Konsonant und steht nur nach einem kurzen Vokal.",
-            "hint": "Welches von beiden ist ein doppelter Konsonant? Wo stehen doppelte Konsonanten?"
+            "correct": "verlängern: die Wälder",
+            "why": "In Wälder hörst du das d deutlich. Am Wortende klingt es wie ein t.",
+            "hint": "Welcher Buchstabe ist unsicher, und wo steht er im Wort?"
           }
         ],
         "say": "Das sind die vier Strategien mit ihren Einsatzorten. Dazu kommt die Grundfrage, ob ein Vokal kurz oder lang ist. Sie entscheidet über doppelte Konsonanten und über ss oder ß. Gleich kommen die Wörter zum Nachlesen und ein kleines Quiz."

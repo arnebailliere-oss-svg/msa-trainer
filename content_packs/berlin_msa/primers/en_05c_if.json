@@ -127,13 +127,13 @@
         "body": "*If I **were** you, I **would** tell her.*\n\n= An deiner Stelle würde ich es ihr sagen.\n\nNach if sagt man **were**, auch bei I, he, she, it.",
         "tasks": [
           {
-            "text": "If I ___ rich, I would travel.",
+            "text": "If I ___, I would travel.",
             "choices": [
-              "were",
-              "am"
+              "were rich",
+              "am rich"
             ],
-            "correct": "were",
-            "why": "Der Satz ist nur vorgestellt. Nach if steht dann diese Form für alle Personen.",
+            "correct": "were rich",
+            "why": "Der Satz ist nur vorgestellt. Nach if steht dann were für alle Personen.",
             "hint": "Ist der Sprecher wirklich reich? Welche Form steht dann nach if?"
           }
         ],

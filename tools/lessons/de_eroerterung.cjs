@@ -29,7 +29,7 @@ primer(
         "Die drei Teile des Textes",
         [L("**Einleitung**: Worum geht es?", "**Hauptteil**: Was spricht dafür, was dagegen?", "**Schluss**: Was denke ich?")],
         "Jede Erörterung hat diese drei Teile. Die Einleitung führt zum Thema hin. Der Hauptteil ist der längste Teil und enthält alle Argumente beider Seiten. Im Schluss sagst du deine eigene Meinung. Wenn diese drei Teile klar erkennbar sind, ist schon viel gewonnen.",
-        { tasks: [k("In welchem Teil sagst du deine eigene Meinung? ___", "im Schluss", ["in der Einleitung"], "Zuerst zeigst du beide Seiten. Erst danach urteilst du.", "Wann spricht ein Richter sein Urteil: am Anfang oder am Ende?")] },
+        { tasks: [k("Ein Vorteil ist, dass die Schüler ausgeschlafen sind. Der Satz gehört ___.", "in den Hauptteil", ["in den Schluss"], "Der Satz nennt etwas, das dafür spricht. Solche Sätze stehen im Hauptteil.", "Nennt der Satz einen Grund, oder sagt er die eigene Meinung?")] },
       ),
       b(
         "Jetzt du: die drei Teile",
@@ -70,7 +70,7 @@ primer(
         "Das stärkste Argument kommt zuletzt",
         ["Ordne die Argumente jeder Seite: vom schwächsten zum **stärksten**.", "Was zuletzt kommt, bleibt im Kopf."],
         "Menschen erinnern sich am besten an das, was sie zuletzt gelesen haben. Deshalb steht dein stärkstes Argument am Ende. Die Seite, für die du dich im Schluss entscheidest, behandelst du im Hauptteil als zweite. So führt der Text ganz natürlich zu deinem Urteil.",
-        { tasks: [k("Dein stärkstes Argument steht in der Reihe ___.", "an letzter Stelle", ["an erster Stelle"], "Was der Leser zuletzt liest, bleibt ihm am besten im Kopf.", "Woran erinnert man sich nach dem Lesen am besten?")] },
+        { tasks: [k("Drei Argumente für Schulkleidung: (a) Sie sieht ordentlich aus. (b) Niemand wird wegen seiner Kleidung ausgegrenzt. (c) Morgens geht das Anziehen schneller. Welches kommt zuletzt? ___", "(b)", ["(c)"], "Dass niemand ausgegrenzt wird, wiegt am schwersten. Das stärkste Argument steht am Ende.", "Welches der drei Argumente ist für die Schüler das wichtigste?")] },
       ),
       b(
         "Jetzt du: den Plan füllen",
@@ -161,7 +161,7 @@ primer(
         "Das nimmst du mit",
         ["(1) Erst der **Schreibplan**, dann der Text.", "(2) Jedes Argument: Behauptung, Begründung, Beispiel, ein Absatz.", "(3) Das stärkste Argument zuletzt.", "(4) Die eigene Meinung erst im Schluss."],
         "Das sind die vier Regeln, die deine Erörterung tragen. Wenn du in der Prüfung nervös wirst, halt dich an den Plan. Er führt dich Schritt für Schritt durch den Text. Gleich kommen noch die Wörter zum Nachlesen und ein kleines Quiz.",
-        { tasks: [k("Womit beginnst du in der Prüfung? ___", "mit dem Schreibplan", ["mit dem ersten Satz des Textes"], "Der Plan ordnet deine Gedanken und bringt eigene Punkte.", "Was bringt eigene Punkte und spart dir später Zeit?")] },
+        { tasks: [k("Im Hauptteil steht: Ich finde, das Handyverbot ist richtig. Was ist hier falsch? ___", "Die eigene Meinung steht zu früh.", ["Der Satz ist zu kurz."], "Die eigene Meinung kommt erst im Schluss. Im Hauptteil stehen nur die Argumente.", "Schau auf Punkt vier der Tafel. Wo hat die Meinung ihren Platz?")] },
       ),
     ),
   ],

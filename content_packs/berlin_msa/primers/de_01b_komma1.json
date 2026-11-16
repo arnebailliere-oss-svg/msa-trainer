@@ -29,14 +29,14 @@
         "body": "Ein Komma steht **nicht** dort, wo man beim Sprechen Luft holt.\n\nEs steht dort, wo eine **Regel** es verlangt.",
         "tasks": [
           {
-            "text": "Ein Komma setzt du, ___.",
+            "text": "Meine kleine Schwester und ihr bester Freund aus dem Kindergarten spielen im Garten. Beim Vorlesen holst du nach Kindergarten Luft. Steht dort ein Komma? ___",
             "choices": [
-              "weil eine Regel es verlangt",
-              "wo du beim Lesen Luft holst"
+              "Nein",
+              "Ja"
             ],
-            "correct": "weil eine Regel es verlangt",
-            "why": "Jedes Komma hat einen Grund, den man benennen kann.",
-            "hint": "Kannst du dich beim Kommasetzen auf dein Ohr verlassen?"
+            "correct": "Nein",
+            "why": "Eine Atempause ist kein Grund für ein Komma. Hier verlangt keine Regel eines.",
+            "hint": "Gibt es hier eine Regel, die ein Komma verlangt, oder nur eine Pause?"
           }
         ],
         "say": "Beim Sprechen machst du an vielen Stellen kleine Pausen. Nicht jede Pause ist ein Komma, und nicht jedes Komma hört man als Pause. Verlass dich deshalb nicht auf dein Ohr. Frag dich bei jedem Komma: Welche Regel steckt dahinter?"
@@ -280,14 +280,14 @@
         "body": "(1) Die Verben suchen.\n\n(2) Beginnt ein Nebensatz? Dann Komma an die Grenze.\n\n(3) Ist es eine Aufzählung? Dann Kommas dazwischen, keins vor und.\n\n(4) Steht aber oder sondern da? Dann Komma davor.",
         "tasks": [
           {
-            "text": "Ein Nebensatz steht mitten im Hauptsatz. Er bekommt ___.",
+            "text": "Das Buch das ich gerade lese ist spannend. In diesem Satz fehlen ___.",
             "choices": [
               "zwei Kommas",
               "ein Komma"
             ],
             "correct": "zwei Kommas",
-            "why": "Er hat eine Grenze am Anfang und eine am Ende.",
-            "hint": "Wie viele Grenzen hat ein Teil, der in der Mitte steht?"
+            "why": "Der Nebensatz das ich gerade lese steht mitten im Hauptsatz. Er bekommt vorn und hinten ein Komma.",
+            "hint": "Wo beginnt der eingeschobene Teil, und wo hört er wieder auf?"
           }
         ],
         "say": "In dieser Reihenfolge gehst du jeden Satz durch. Fang immer bei den Verben an. Wenn du für ein Komma keinen dieser Gründe findest, gehört es wahrscheinlich nicht dorthin. Gleich kommen die Wörter zum Nachlesen und ein kleines Quiz."

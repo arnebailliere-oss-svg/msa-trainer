@@ -24,14 +24,14 @@
         "body": "**Nacherzählen**: alles der Reihe nach, mit vielen Einzelheiten.\n**Zusammenfassen**: nur das, was für den ganzen Text gilt.",
         "tasks": [
           {
-            "text": "Eine Zusammenfassung enthält ___.",
+            "text": "Welcher Satz fasst zusammen? ___",
             "choices": [
-              "nur das Wichtigste",
-              "jede Einzelheit"
+              "Der Text beschreibt, wie eine Klasse ein Schulfest plant.",
+              "Zuerst kauft Ben Luftballons, dann bläst Mia sie auf."
             ],
-            "correct": "nur das Wichtigste",
-            "why": "Sie soll kurz sein und für den ganzen Text gelten.",
-            "hint": "Ist eine Zusammenfassung länger oder kürzer als der Text selbst?"
+            "correct": "Der Text beschreibt, wie eine Klasse ein Schulfest plant.",
+            "why": "Dieser Satz gilt für den ganzen Text. Der andere erzählt nur eine Einzelheit nach.",
+            "hint": "Welcher Satz gilt für den ganzen Text und nicht nur für einen Moment?"
           }
         ],
         "say": "Das ist der häufigste Irrtum. Viele schreiben ab, was im ersten Absatz steht, dann was im zweiten steht, und so weiter. Das ist eine Nacherzählung. Bei einer Zusammenfassung trittst du einen Schritt zurück und fragst: Was sagt der Text als Ganzes?"
@@ -232,14 +232,14 @@
         "body": "**Satz 1**: Textart, Titel, Kernaussage\n\n**Satz 2**: die wichtigsten Punkte\n\nGegenwart.\nKeine eigene Meinung.\nEigene Worte.\nKeine Einzelheiten.",
         "tasks": [
           {
-            "text": "Was gehört in den ersten Satz einer Zusammenfassung? ___",
+            "text": "Der Text handelt von Müll im Meer. Was fehlt in diesem ersten Satz? ___",
             "choices": [
-              "Textart, Titel und Kernaussage",
-              "alle Zahlen aus dem Text"
+              "Textart und Titel",
+              "die eigene Meinung"
             ],
-            "correct": "Textart, Titel und Kernaussage",
-            "why": "Der erste Satz stellt den Text vor und sagt, was er aussagt.",
-            "hint": "Was muss jemand wissen, der den Text nicht kennt?"
+            "correct": "Textart und Titel",
+            "why": "Der erste Satz nennt Textart, Titel und Kernaussage. Hier steht nur die Kernaussage.",
+            "hint": "Halte den Satz neben die erste Zeile der Tafel. Was steht schon da?"
           }
         ],
         "say": "Das ist das ganze Muster. Zwei Sätze und vier Regeln. Wenn du deine Zusammenfassung fertig hast, geh die vier Regeln einmal durch. Gleich kommen noch die Wörter zum Nachlesen und ein kleines Quiz."

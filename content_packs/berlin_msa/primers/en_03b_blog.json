@@ -218,14 +218,14 @@
         "body": "(1) Alle Fragen beantwortet?\n\n(2) Meinung mit **because** begründet?\n\n(3) Ein Beispiel von dir?\n\n(4) Ein freundlicher Schluss?\n\n(5) Wörter gezählt?",
         "tasks": [
           {
-            "text": "Der wichtigste Baustein nach der Meinung ist ___.",
+            "text": "I think school uniforms are a good idea. Was fehlt diesem Satz noch? ___",
             "choices": [
-              "der Grund",
-              "die Anrede"
+              "ein Grund mit because",
+              "eine Anrede"
             ],
-            "correct": "der Grund",
-            "why": "Für eine begründete Meinung gibt es die Punkte.",
-            "hint": "Was macht aus einer Behauptung eine überzeugende Meinung?"
+            "correct": "ein Grund mit because",
+            "why": "Die Meinung steht schon da. Ohne Begründung bleibt sie eine bloße Behauptung.",
+            "hint": "Schau auf Punkt zwei der Checkliste. Was gehört zu jeder Meinung?"
           }
         ],
         "say": "Mit diesen fünf Punkten prüfst du deine Antwort, bevor du sie abgibst. Wenn dir noch Wörter fehlen, schreib einen zweiten Grund oder ein zweites Beispiel dazu. Gleich kommen die Wörter zum Nachlesen und ein kleines Quiz."

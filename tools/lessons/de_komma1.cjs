@@ -29,7 +29,7 @@ primer(
         "Nicht nach Gefühl",
         ["Ein Komma steht **nicht** dort, wo man beim Sprechen Luft holt.", "Es steht dort, wo eine **Regel** es verlangt."],
         "Beim Sprechen machst du an vielen Stellen kleine Pausen. Nicht jede Pause ist ein Komma, und nicht jedes Komma hört man als Pause. Verlass dich deshalb nicht auf dein Ohr. Frag dich bei jedem Komma: Welche Regel steckt dahinter?",
-        { tasks: [k("Ein Komma setzt du, ___.", "weil eine Regel es verlangt", ["wo du beim Lesen Luft holst"], "Jedes Komma hat einen Grund, den man benennen kann.", "Kannst du dich beim Kommasetzen auf dein Ohr verlassen?")] },
+        { tasks: [k("Meine kleine Schwester und ihr bester Freund aus dem Kindergarten spielen im Garten. Beim Vorlesen holst du nach Kindergarten Luft. Steht dort ein Komma? ___", "Nein", ["Ja"], "Eine Atempause ist kein Grund für ein Komma. Hier verlangt keine Regel eines.", "Gibt es hier eine Regel, die ein Komma verlangt, oder nur eine Pause?")] },
       ),
       b(
         "Der erste Schritt: die Verben suchen",
@@ -145,7 +145,7 @@ primer(
         "Deine Reihenfolge",
         ["(1) Die Verben suchen.", "(2) Beginnt ein Nebensatz? Dann Komma an die Grenze.", "(3) Ist es eine Aufzählung? Dann Kommas dazwischen, keins vor und.", "(4) Steht aber oder sondern da? Dann Komma davor."],
         "In dieser Reihenfolge gehst du jeden Satz durch. Fang immer bei den Verben an. Wenn du für ein Komma keinen dieser Gründe findest, gehört es wahrscheinlich nicht dorthin. Gleich kommen die Wörter zum Nachlesen und ein kleines Quiz.",
-        { tasks: [k("Ein Nebensatz steht mitten im Hauptsatz. Er bekommt ___.", "zwei Kommas", ["ein Komma"], "Er hat eine Grenze am Anfang und eine am Ende.", "Wie viele Grenzen hat ein Teil, der in der Mitte steht?")] },
+        { tasks: [k("Das Buch das ich gerade lese ist spannend. In diesem Satz fehlen ___.", "zwei Kommas", ["ein Komma"], "Der Nebensatz das ich gerade lese steht mitten im Hauptsatz. Er bekommt vorn und hinten ein Komma.", "Wo beginnt der eingeschobene Teil, und wo hört er wieder auf?")] },
       ),
     ),
   ],

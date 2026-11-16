@@ -64,15 +64,14 @@
         "say": "Jetzt die gute Nachricht: Ein englisches Verb hat nur fünf Formen. Im Deutschen sind es viel mehr. Du musst dir diese fünf jetzt noch nicht merken. Wir schauen uns jede einzeln an, eine nach der anderen.",
         "tasks": [
           {
-            "text": "Ein englisches Verb hat ___ Formen.",
+            "text": "Welches Wort ist eine Form von go? ___",
             "choices": [
-              "zwei",
-              "fünf",
-              "zwölf"
+              "went",
+              "want"
             ],
-            "correct": "fünf",
-            "why": "Genau fünf Formen gibt es: go, goes, going, went und gone.",
-            "hint": "Zähl die Wörter in der ersten Zeile der Tafel noch einmal in Ruhe durch."
+            "correct": "went",
+            "why": "Went ist die Form von go für die Vergangenheit. Want ist ein anderes Verb und bedeutet wollen.",
+            "hint": "Eines der beiden Wörter steht auf der Tafel. Such es dort."
           }
         ]
       },

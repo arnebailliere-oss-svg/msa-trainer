@@ -80,7 +80,7 @@ primer(
         {
           tasks: [
             k("Wenn ich ein Vogel ___, würde ich nach Süden fliegen.", "wäre", ["bin"], "Niemand ist wirklich ein Vogel. Es ist nur vorgestellt.", "Ist der Sprecher wirklich ein Vogel?"),
-            k("Ich hätte gern eine Pizza. Das ist ___.", "Konjunktiv II", ["Imperativ"], "Das Wort hätte drückt hier einen Wunsch aus.", "Welches Wort im Satz hat zwei Punkte auf einem Buchstaben?"),
+            k("Ich hätte gern eine Pizza. Der Sprecher ___.", "äußert höflich einen Wunsch", ["gibt einen Befehl"], "Hätte gern ist die höfliche Form für einen Wunsch. Ein Befehl klänge anders.", "Klingt der Satz höflich oder wie ein Kommando?"),
             k("An deiner Stelle ___ ich mehr schlafen.", "würde", ["werde"], "Der Sprecher ist nicht an der Stelle des anderen. Es ist nur vorgestellt.", "Ist der Sprecher wirklich an der Stelle des anderen?"),
           ],
         },
@@ -126,7 +126,7 @@ primer(
         "Das nimmst du mit",
         [L("**Indikativ**: So ist es. *Er geht.*", "**Imperativ**: Tu das! *Geh!*", "**Konjunktiv I**: Jemand hat es gesagt. *Er gehe.*", "**Konjunktiv II**: nur vorgestellt. *Er ginge, er würde gehen.*")],
         "Das sind die vier Aussageweisen mit je einem Beispiel. Achte auf die Erkennungszeichen: das Verb ganz vorn beim Imperativ, sei und habe beim Konjunktiv I, wäre, hätte und würde beim Konjunktiv II. Gleich kommen die Wörter und das Quiz.",
-        { tasks: [k("Woran erkennst du den Konjunktiv II am leichtesten? ___", "an wäre, hätte und würde", ["am Ausrufezeichen"], "Diese drei Formen zeigen, dass etwas nur vorgestellt ist.", "Welche Wörter stehen in Sätzen über Wünsche und Vorstellungen?")] },
+        { tasks: [k("Wenn ich reich wäre, würde ich ein Boot kaufen. Der Sprecher ist ___.", "nicht reich", ["reich"], "Wäre und würde zeigen: Das ist nur vorgestellt. In Wirklichkeit ist es anders.", "Was zeigen die Wörter wäre und würde: Wirklichkeit oder Vorstellung?")] },
       ),
     ),
   ],
