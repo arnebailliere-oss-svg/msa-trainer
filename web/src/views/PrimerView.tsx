@@ -347,9 +347,15 @@ export function PrimerView() {
                       <li key={ti} data-task={ti}>
                         <div>
                           <span className="chalk-small mr-2">({ti + 1})</span>
-                          {before}
-                          {done ? <strong>{t.correct}</strong> : <span className="chalk-gap" aria-label="Lücke" />}
-                          {after}
+                          <MathText inline text={before ?? ""} />
+                          {done ? (
+                            <strong>
+                              <MathText inline text={t.correct} />
+                            </strong>
+                          ) : (
+                            <span className="chalk-gap" aria-label="Lücke" />
+                          )}
+                          <MathText inline text={after ?? ""} />
                           {done && <span className="ml-2">✓</span>}
                         </div>
                         {!done && (
@@ -358,7 +364,7 @@ export function PrimerView() {
                               const wrong = (tried[ti] ?? []).includes(c);
                               return (
                                 <button key={c} type="button" disabled={wrong} data-state={wrong ? "wrong" : undefined} onClick={() => pickTask(ti, c)} className="chalk-box chalk-chip">
-                                  {c}
+                                  <MathText inline text={c} />
                                 </button>
                               );
                             })}

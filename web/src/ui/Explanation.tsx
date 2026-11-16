@@ -53,6 +53,20 @@ export function ExplanationBlocks({ sections, compact = false, collapsible = fal
               <div className="min-w-0 overflow-x-auto px-4 pb-4">
                 {s.kind === "widget" ? <LessonWidget id={s.body.trim()} /> : <MathText text={s.body} className="text-[1.02rem] leading-relaxed" />}
                 {figureSvg && <div className="mt-3 flex justify-center [&_svg]:max-w-full [&_svg]:h-auto" dangerouslySetInnerHTML={{ __html: figureSvg }} />}
+                {s.figures && s.figures.length > 0 && (
+                  <div className={`mt-3 grid gap-3 ${s.figures.length === 1 ? "" : "sm:grid-cols-2"}`}>
+                    {s.figures.map((g, j) => {
+                      const svg = safeFigure(g.figure);
+                      if (!svg) return null;
+                      return (
+                        <figure key={j} className="rounded-2xl bg-surface-2/60 p-2 text-center">
+                          <div className="flex justify-center [&_svg]:max-w-full [&_svg]:h-auto" dangerouslySetInnerHTML={{ __html: svg }} />
+                          {g.caption && <MathText text={g.caption} className="mt-1 text-sm text-ink-2" />}
+                        </figure>
+                      );
+                    })}
+                  </div>
+                )}
                 {s.primer && (
                   <div className="mt-3">
                     <AskOwl primerId={s.primer} />

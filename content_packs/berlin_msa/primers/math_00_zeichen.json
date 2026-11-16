@@ -3,104 +3,424 @@
     "id": "P_MATH_ZEICHEN",
     "subject": "MATH",
     "title": "Die Zeichen der Mathematik",
-    "teaser": "Was Plus, Mal, Geteilt, Hochzahl, Wurzel, Klammern und Prozent wirklich bedeuten",
+    "teaser": "Was Plus, Mal, Geteilt, Hochzahl, Wurzel, Klammern und Prozent wirklich bedeuten. In vier kurzen Kapiteln, mit einer kleinen Aufgabe auf fast jeder Tafel.",
     "hook": "Hallo, ich bin **Ferdinand**. Bevor wir irgendetwas rechnen, schauen wir uns die Zeichen an. Mathe ist eine Sprache, und jedes Zeichen ist ein Wort. Wer die Wörter kennt, versteht plötzlich die Sätze. Eine Tafel nach der anderen, ganz ohne Eile.",
     "outro": "Jetzt kannst du jedes Zeichen auf dem Formelblatt lesen. Wenn dir eins wieder entfällt: Ich bin nur einen Klick entfernt.",
+    "standard": 2,
     "steps": [
       {
+        "chapter": "Die Rechenzeichen",
         "title": "Mathe ist eine Sprache",
         "body": "Jedes Zeichen ist ein **Wort**.\n\n$+ \\quad - \\quad \\cdot \\quad : \\quad = \\quad x \\quad \\sqrt{\\;} \\quad \\%$\n\nWenn du die Wörter kennst, verstehst du die Sätze.",
         "say": "Ich zeige dir jedes Zeichen einzeln. Klick auf Weiter, wenn du eine Tafel gelesen hast."
       },
       {
         "title": "Plus und Minus",
-        "body": "$+$ heißt **dazu**.\n\n$-$ heißt **weg**.\n\n$12 + 5 = 17$\n\n$12 - 5 = 7$",
-        "say": "Plus und Minus kennst du. Die nächste Tafel hat trotzdem eine kleine Überraschung."
+        "body": "$+$ heißt **dazu**. $-$ heißt **weg**.\n\n$12 + 5 = 17$\n\n$12 - 5 = 7$\n\nDas Ergebnis von Plus heißt **Summe**, das Ergebnis von Minus heißt **Differenz**.",
+        "say": "Plus und Minus kennst du seit der ersten Klasse. Neu sind vielleicht nur die beiden Fachwörter für das Ergebnis. Sie tauchen in Aufgaben oft auf, deshalb lohnt es sich, sie zu kennen. Probier es unten gleich aus.",
+        "tasks": [
+          {
+            "text": "$12 - 5 = 7$. Die 7 ist die ___.",
+            "choices": [
+              "Differenz",
+              "Summe"
+            ],
+            "correct": "Differenz",
+            "why": "Das Ergebnis einer Minus-Aufgabe heißt Differenz.",
+            "hint": "Ist das eine Plus-Aufgabe oder eine Minus-Aufgabe?"
+          }
+        ]
       },
       {
         "title": "Minus vor einer Zahl",
         "body": "$-3$ ist eine Zahl **unter null**.\n\nThermometer: $-3\\,°C$\n\nKonto: $-3$ Euro heißt 3 Euro Schulden.\n\n$5 - 12 = -7$",
-        "say": "Du hast 5 Euro und gibst 12 aus. Dann bist du mit 7 Euro im Minus. Genau das ist −7."
+        "say": "Du hast 5 Euro und gibst 12 aus. Dann bist du mit 7 Euro im Minus. Genau das ist −7.",
+        "tasks": [
+          {
+            "text": "$3 - 8 = $ ___",
+            "choices": [
+              "$-5$",
+              "$5$"
+            ],
+            "correct": "$-5$",
+            "why": "Du nimmst mehr weg, als da ist. Das Ergebnis liegt 5 unter null.",
+            "hint": "Du hast 3 Euro und gibst 8 aus. Bist du danach im Plus oder im Minus?"
+          }
+        ]
       },
       {
         "title": "Mal ist ein Punkt",
-        "body": "$3 \\cdot 4$ heißt **3 mal 4**.\n\n$4 + 4 + 4 = 12$\n\nMal ist nur eine **Abkürzung** für Plus.",
-        "say": "Das Kreuz × sieht aus wie ein x. Darum schreibt man in der Schule den Punkt. Auf dem Taschenrechner bleibt es die ×-Taste."
+        "body": "$3 \\cdot 4$ heißt **3 mal 4**.\n\n$4 + 4 + 4 = 12$\n\nMal ist nur eine **Abkürzung** für Plus. Das Ergebnis heißt **Produkt**.",
+        "say": "Das Kreuz × sieht aus wie ein x. Darum schreibt man in der Schule den Punkt. Auf dem Taschenrechner bleibt es die ×-Taste.",
+        "tasks": [
+          {
+            "text": "$4 \\cdot 5$ ist dasselbe wie ___.",
+            "choices": [
+              "$5 + 5 + 5 + 5$",
+              "$4 + 5$"
+            ],
+            "correct": "$5 + 5 + 5 + 5$",
+            "why": "Viermal die 5 zusammengezählt ergibt 20.",
+            "hint": "Wie oft steht die 5 da, wenn du vier mal fünf rechnest?"
+          }
+        ]
       },
       {
         "title": "Der Punkt darf verschwinden",
         "body": "$3a$ heißt $3 \\cdot a$.\n\n$2x$ heißt $2 \\cdot x$.\n\nZwischen Zahl und Buchstabe schreibt keiner den Punkt.",
-        "say": "Wenn du irgendwo 3a siehst: still „drei mal a“ lesen. Dann ist es nicht mehr komisch."
+        "say": "Wenn du irgendwo 3a siehst: still „drei mal a“ lesen. Dann ist es nicht mehr komisch.",
+        "tasks": [
+          {
+            "text": "$5b$ heißt ___.",
+            "choices": [
+              "$5 \\cdot b$",
+              "$5 + b$"
+            ],
+            "correct": "$5 \\cdot b$",
+            "why": "Zwischen Zahl und Buchstabe steht ein unsichtbarer Malpunkt.",
+            "hint": "Welches Zeichen lässt man zwischen Zahl und Buchstabe weg?"
+          }
+        ]
       },
       {
         "title": "Geteilt: drei Schreibweisen",
-        "body": "$12 : 4 \\qquad 12 / 4 \\qquad \\frac{12}{4}$\n\nAlle drei heißen: **12 in 4 gleiche Teile.**\n\nErgebnis: 3",
-        "say": "Der Bruchstrich ist also nur ein Geteilt-Zeichen, das liegt. Auf dem Taschenrechner ist es die ÷-Taste."
+        "body": "$12 : 4 \\qquad 12 / 4 \\qquad \\frac{12}{4}$\n\nAlle drei heißen: **12 in 4 gleiche Teile.**\n\nDas Ergebnis ist 3. Es heißt **Quotient**.",
+        "say": "Der Bruchstrich ist also nur ein Geteilt-Zeichen, das liegt. Auf dem Taschenrechner ist es die ÷-Taste.",
+        "tasks": [
+          {
+            "text": "$\\frac{20}{5} = $ ___",
+            "choices": [
+              "4",
+              "15"
+            ],
+            "correct": "4",
+            "why": "Der Bruchstrich bedeutet geteilt. 20 geteilt durch 5 ist 4.",
+            "hint": "Was bedeutet der waagerechte Strich zwischen den beiden Zahlen?"
+          }
+        ]
       },
       {
+        "chapter": "Hochzahl und Wurzel",
         "title": "Hochzahlen",
         "body": "$5^2 = 5 \\cdot 5 = 25$\n\n$5^3 = 5 \\cdot 5 \\cdot 5 = 125$\n\nDie kleine Zahl oben sagt: **so oft steht die 5 da.**",
-        "say": "Vorsicht, die Falle: 5² ist nicht 5 mal 2. Es ist 5 mal 5."
+        "say": "Vorsicht, die Falle: 5² ist nicht 5 mal 2. Es ist 5 mal 5.",
+        "tasks": [
+          {
+            "text": "$2^3 = $ ___",
+            "choices": [
+              "8",
+              "6"
+            ],
+            "correct": "8",
+            "why": "Die 2 steht dreimal da: 2 mal 2 mal 2.",
+            "hint": "Wie oft steht die 2 da? Rechne mal, nicht plus."
+          }
+        ]
       },
       {
         "title": "Warum heißt es „Quadrat“?",
         "body": "Ein Quadrat mit Seite 5 hat die Fläche $5 \\cdot 5 = 25$.\n\nDarum heißt $5^2$ auch **5 Quadrat**.",
-        "figure": { "type": "rectangle", "a": 5, "b": 5, "labels": { "a": "5", "b": "5" } },
+        "figure": {
+          "type": "rectangle",
+          "a": 5,
+          "b": 5,
+          "labels": {
+            "a": "5",
+            "b": "5"
+          }
+        },
         "say": "Und 5 hoch 3 ist ein Würfel mit Kante 5. Man sagt auch „fünf Kubik“."
       },
       {
         "title": "Die Wurzel",
-        "body": "$\\sqrt{25} = 5$, weil $5 \\cdot 5 = 25$\n\nDie Wurzel fragt:\n\n**Welche Zahl mal sich selbst ergibt das?**",
-        "say": "Wurzel ist das Gegenteil von Hochzahl. So wie Minus das Gegenteil von Plus ist. Das Zeichen ist ein verschnörkeltes kleines r, von radix, lateinisch für Wurzel."
+        "body": "Das Zeichen $\\sqrt{\\;}$ heißt **Wurzel**.\n\n$\\sqrt{25} = 5$, weil $5 \\cdot 5 = 25$\n\nDie Wurzel fragt: **Welche Zahl mal sich selbst ergibt das?**",
+        "say": "Wurzel ist das Gegenteil von Hochzahl. So wie Minus das Gegenteil von Plus ist. Das Zeichen ist ein verschnörkeltes kleines r, von radix, lateinisch für Wurzel.",
+        "tasks": [
+          {
+            "text": "$\\sqrt{49} = $ ___",
+            "choices": [
+              "7",
+              "24,5"
+            ],
+            "correct": "7",
+            "why": "7 mal 7 ergibt 49. Also ist die Wurzel 7.",
+            "hint": "Welche Zahl ergibt 49, wenn du sie mit sich selbst malnimmst?"
+          }
+        ]
       },
       {
+        "title": "Jetzt du: Hochzahl und Wurzel",
+        "body": "Tipp bei jeder Aufgabe auf das richtige Ergebnis.",
+        "tasks": [
+          {
+            "text": "$3^2 = $ ___",
+            "choices": [
+              "9",
+              "6"
+            ],
+            "correct": "9",
+            "why": "Die 3 steht zweimal da: 3 mal 3.",
+            "hint": "Die kleine Zahl oben sagt, wie oft die 3 dasteht."
+          },
+          {
+            "text": "$10^3 = $ ___",
+            "choices": [
+              "1000",
+              "30"
+            ],
+            "correct": "1000",
+            "why": "10 mal 10 mal 10 ergibt 1000.",
+            "hint": "Wie oft steht die 10 da? Rechne mal, nicht plus."
+          },
+          {
+            "text": "$\\sqrt{100} = $ ___",
+            "choices": [
+              "10",
+              "50"
+            ],
+            "correct": "10",
+            "why": "10 mal 10 ergibt 100. Also ist die Wurzel 10.",
+            "hint": "Welche Zahl ergibt 100, wenn du sie mit sich selbst malnimmst?"
+          }
+        ],
+        "say": "Hier kommen drei kurze Aufgaben zu den letzten Tafeln. Denk bei der Hochzahl daran, dass sie sagt, wie oft die Zahl dasteht. Bei der Wurzel suchst du die Zahl, die mit sich selbst malgenommen das Ergebnis liefert."
+      },
+      {
+        "chapter": "Vergleichen und die Reihenfolge beim Rechnen",
         "title": "Gleich, ungefähr, ungleich",
         "body": "$=$ **genau gleich**: $3 + 4 = 7$\n\n$\\approx$ **ungefähr**, nach dem Runden: $\\pi \\approx 3{,}14$\n\n$\\neq$ **nicht gleich**: $3 \\neq 4$",
-        "say": "Das Wellen-Gleich benutzt du immer, wenn du gerundet hast. Damit sagst du ehrlich: ungefähr."
+        "say": "Das Wellen-Gleich benutzt du immer, wenn du gerundet hast. Damit sagst du ehrlich: ungefähr.",
+        "tasks": [
+          {
+            "text": "Du hast ein Ergebnis gerundet. Du schreibst davor ___.",
+            "choices": [
+              "$\\approx$",
+              "$=$"
+            ],
+            "correct": "$\\approx$",
+            "why": "Das Wellenzeichen sagt ehrlich: Das ist nur ungefähr so viel.",
+            "hint": "Ist ein gerundetes Ergebnis genau oder nur ungefähr richtig?"
+          }
+        ]
       },
       {
         "title": "Kleiner und größer",
         "body": "$3 < 7$ heißt: 3 ist **kleiner** als 7.\n\n$7 > 3$ heißt: 7 ist **größer** als 3.\n\nDie Spitze zeigt zur kleinen Zahl.",
-        "say": "Merk dir das Krokodil: Das Maul schnappt immer nach der größeren Zahl."
+        "say": "Merk dir das Krokodil: Das Maul schnappt immer nach der größeren Zahl.",
+        "tasks": [
+          {
+            "text": "$9$ ___ $4$",
+            "choices": [
+              "$>$",
+              "$<$"
+            ],
+            "correct": "$>$",
+            "why": "9 ist größer als 4. Die Spitze zeigt zur kleineren Zahl.",
+            "hint": "Auf welche der beiden Zahlen muss die Spitze zeigen?"
+          }
+        ]
       },
       {
         "title": "Klammern zuerst",
         "body": "$2 \\cdot (3 + 4) = 2 \\cdot 7 = 14$\n\n$2 \\cdot 3 + 4 = 6 + 4 = 10$\n\nWas in der **Klammer** steht, rechnest du **zuerst**.",
-        "say": "Ohne Klammer gilt: Punkt vor Strich. Mal und Geteilt kommen vor Plus und Minus."
+        "say": "Ohne Klammer gilt: Punkt vor Strich. Mal und Geteilt kommen vor Plus und Minus.",
+        "tasks": [
+          {
+            "text": "$3 \\cdot (2 + 4) = $ ___",
+            "choices": [
+              "18",
+              "10"
+            ],
+            "correct": "18",
+            "why": "Zuerst die Klammer: 2 plus 4 ist 6. Dann 3 mal 6.",
+            "hint": "Was steht in der Klammer? Das rechnest du zuerst aus."
+          }
+        ]
       },
       {
+        "title": "Punkt vor Strich",
+        "body": "$2 + 3 \\cdot 4$\n\nZuerst mal: $3 \\cdot 4 = 12$\n\nDann plus: $2 + 12 = 14$\n\nMal und Geteilt kommen **vor** Plus und Minus.",
+        "tasks": [
+          {
+            "text": "$10 - 2 \\cdot 3 = $ ___",
+            "choices": [
+              "4",
+              "24"
+            ],
+            "correct": "4",
+            "why": "Zuerst 2 mal 3, das ist 6. Dann 10 minus 6.",
+            "hint": "Welche der beiden Rechnungen ist eine Punktrechnung und kommt zuerst?"
+          }
+        ],
+        "say": "Wenn keine Klammer da ist, gibt es eine feste Reihenfolge. Mal und Geteilt werden mit Punkten geschrieben, Plus und Minus mit Strichen. Deshalb heißt die Regel Punkt vor Strich. Wer einfach von links nach rechts rechnet, bekommt hier 20 heraus, und das ist falsch."
+      },
+      {
+        "chapter": "Buchstaben und Prozent",
         "title": "Buchstaben sind Kisten",
-        "body": "$x$ ist eine **Kiste**. Darin liegt eine Zahl, die du noch nicht kennst.\n\n$3x + 2$ mit $x = 4$:\n\n$3 \\cdot 4 + 2 = 14$",
-        "say": "Nichts Magisches. Ein Buchstabe ist nur ein Platz für eine Zahl."
+        "body": "$x$ ist eine **Kiste**. Darin liegt eine Zahl, die du noch nicht kennst.\n\nSo ein Buchstabe heißt **Variable**.\n\n$3x + 2$ mit $x = 4$: $3 \\cdot 4 + 2 = 14$",
+        "say": "Nichts Magisches. Ein Buchstabe ist nur ein Platz für eine Zahl.",
+        "tasks": [
+          {
+            "text": "$2x + 1$ mit $x = 5$ ergibt ___.",
+            "choices": [
+              "11",
+              "8"
+            ],
+            "correct": "11",
+            "why": "2 mal 5 ist 10, und dazu kommt 1.",
+            "hint": "Setz die 5 für das x ein. Was bedeutet 2x?"
+          }
+        ]
       },
       {
         "title": "Griechische Buchstaben",
-        "body": "$\\alpha$ alpha, $\\beta$ beta, $\\gamma$ gamma → **Winkel**\n\n$\\pi$ pi $\\approx 3{,}14$ → die **Kreiszahl**",
-        "say": "Die stehen auf dem Formelblatt. Jetzt kannst du sie wenigstens aussprechen."
+        "body": "$\\alpha$ alpha, $\\beta$ beta, $\\gamma$ gamma: So heißen **Winkel**.\n\n$\\pi$ pi $\\approx 3{,}14$: Das ist die **Kreiszahl**.",
+        "say": "Diese Buchstaben stehen auf dem Formelblatt. Du musst kein Griechisch können. Es reicht, wenn du sie aussprechen kannst und weißt, wofür sie stehen. Alpha, Beta und Gamma sind Namen für Winkel, und Pi ist eine feste Zahl, die du beim Kreis brauchst."
       },
       {
         "title": "Prozent heißt „von hundert“",
         "body": "$25\\,\\%$ = 25 von 100 = $\\frac{25}{100}$ = $0{,}25$\n\n$\\%$ = pro **cent**um = von **hundert**",
-        "say": "Und Promille ‰ heißt von tausend. Das war's mit den Zeichen. Jetzt die Wörter."
+        "say": "Prozent kommt aus dem Lateinischen und bedeutet von hundert. Es gibt auch Promille, das bedeutet von tausend. Probier unten noch eine Aufgabe. Danach kommt eine letzte Tafel, die alles zusammenfasst.",
+        "tasks": [
+          {
+            "text": "$7\\,\\%$ bedeutet 7 von ___.",
+            "choices": [
+              "100",
+              "10"
+            ],
+            "correct": "100",
+            "why": "Das Wort Prozent bedeutet von hundert.",
+            "hint": "Was bedeutet das Wort Prozent auf Deutsch?"
+          }
+        ]
+      },
+      {
+        "title": "Das nimmst du mit",
+        "body": "Jedes Zeichen ist ein Wort.\n\n$3a$ heißt $3 \\cdot a$.\n\n$5^2$ heißt $5 \\cdot 5$.\n\nKlammern zuerst, dann Punkt vor Strich.",
+        "tasks": [
+          {
+            "text": "$4^2$ heißt ___.",
+            "choices": [
+              "$4 \\cdot 4$",
+              "$4 \\cdot 2$"
+            ],
+            "correct": "$4 \\cdot 4$",
+            "why": "Die Hochzahl sagt, wie oft die 4 dasteht.",
+            "hint": "Was sagt die kleine Zahl oben: mal wie viel, oder wie oft?"
+          }
+        ],
+        "say": "Das waren alle Zeichen, die du für die Prüfung brauchst. Wenn dir später in einer Formel ein Zeichen begegnet, das dir fremd vorkommt, kannst du hierher zurückkommen. Gleich kommen noch die Wörter zum Nachlesen und ein kleines Quiz."
       }
     ],
     "vocab": [
-      { "term": "Summe", "plain": "Das Ergebnis von Plus.", "example": "$3 + 4 = 7$. Die 3 und die 4 heißen Summanden." },
-      { "term": "Differenz", "plain": "Das Ergebnis von Minus, also der Unterschied.", "example": "$9 - 4 = 5$" },
-      { "term": "Produkt", "plain": "Das Ergebnis von Mal. Die Zahlen davor heißen Faktoren.", "example": "$3 \\cdot 4 = 12$" },
-      { "term": "Quotient", "plain": "Das Ergebnis von Geteilt.", "example": "$12 : 4 = 3$" },
-      { "term": "Hochzahl (Exponent)", "plain": "Die kleine Zahl oben. Sagt, wie oft die Zahl da steht.", "example": "$2^3 = 2 \\cdot 2 \\cdot 2 = 8$" },
-      { "term": "Wurzel", "plain": "Das Gegenteil vom Hoch-2-Nehmen.", "example": "$\\sqrt{49} = 7$" },
-      { "term": "Variable", "plain": "Ein Buchstabe als Platz für eine Zahl.", "example": "$3x$ mit $x = 5$ ergibt 15." },
-      { "term": "Runden (≈)", "plain": "Eine Zahl kürzer machen. Dann schreibt man ≈ statt =.", "example": "$\\frac{1}{3} \\approx 0{,}33$" }
+      {
+        "term": "Summe",
+        "plain": "Das Ergebnis von Plus.",
+        "example": "$3 + 4 = 7$. Die 3 und die 4 heißen Summanden."
+      },
+      {
+        "term": "Differenz",
+        "plain": "Das Ergebnis von Minus, also der Unterschied.",
+        "example": "$9 - 4 = 5$"
+      },
+      {
+        "term": "Produkt",
+        "plain": "Das Ergebnis von Mal. Die Zahlen davor heißen Faktoren.",
+        "example": "$3 \\cdot 4 = 12$"
+      },
+      {
+        "term": "Quotient",
+        "plain": "Das Ergebnis von Geteilt.",
+        "example": "$12 : 4 = 3$"
+      },
+      {
+        "term": "Hochzahl (Exponent)",
+        "plain": "Die kleine Zahl oben. Sagt, wie oft die Zahl da steht.",
+        "example": "$2^3 = 2 \\cdot 2 \\cdot 2 = 8$"
+      },
+      {
+        "term": "Wurzel",
+        "plain": "Das Gegenteil vom Hoch-2-Nehmen.",
+        "example": "$\\sqrt{49} = 7$"
+      },
+      {
+        "term": "Variable",
+        "plain": "Ein Buchstabe als Platz für eine Zahl.",
+        "example": "$3x$ mit $x = 5$ ergibt 15."
+      },
+      {
+        "term": "Runden (≈)",
+        "plain": "Eine Zahl kürzer machen. Dann schreibt man ≈ statt =.",
+        "example": "$\\frac{1}{3} \\approx 0{,}33$"
+      }
     ],
     "quiz": [
-      { "prompt": "Was bedeutet $4^2$?", "choices": ["$4 \\cdot 4$", "$4 \\cdot 2$", "$4 + 4$", "$4 + 2$"], "correct": "$4 \\cdot 4$", "explain": "Die kleine 2 sagt: 4 mal sich selbst. $4 \\cdot 4 = 16$." },
-      { "prompt": "Was rechnest du zuerst bei $5 \\cdot (2 + 3)$?", "choices": ["$2 + 3$", "$5 \\cdot 2$", "$5 \\cdot 3$", "Ist egal"], "correct": "$2 + 3$", "explain": "Klammer zuerst: $2 + 3 = 5$, dann $5 \\cdot 5 = 25$." },
-      { "prompt": "Was heißt $3a$?", "choices": ["$3 \\cdot a$", "$3 + a$", "$3$ hoch $a$", "$a$ geteilt durch 3"], "correct": "$3 \\cdot a$", "explain": "Zwischen Zahl und Buchstabe lässt man den Malpunkt weg." },
-      { "prompt": "Welches Zeichen heißt „ungefähr gleich“?", "choices": ["$\\approx$", "$\\neq$", "$\\leq$", "$=$"], "correct": "$\\approx$", "explain": "≈ benutzt man nach dem Runden, zum Beispiel $\\pi \\approx 3{,}14$." },
-      { "prompt": "Wie viel ist $\\sqrt{36}$?", "choices": ["6", "18", "12", "72"], "correct": "6", "explain": "Welche Zahl mal sich selbst gibt 36? $6 \\cdot 6 = 36$." },
-      { "prompt": "Was bedeutet $40\\,\\%$?", "choices": ["40 von 100", "40 von 10", "40 von 1000", "40 mal 100"], "correct": "40 von 100", "explain": "Prozent heißt „von hundert“: $40\\,\\% = \\frac{40}{100} = 0{,}4$." }
+      {
+        "prompt": "Was bedeutet $4^2$?",
+        "choices": [
+          "$4 \\cdot 4$",
+          "$4 \\cdot 2$",
+          "$4 + 4$",
+          "$4 + 2$"
+        ],
+        "correct": "$4 \\cdot 4$",
+        "explain": "Die Hochzahl 2 sagt, dass die 4 zweimal dasteht. Also rechnest du 4 mal 4 und nicht 4 mal 2."
+      },
+      {
+        "prompt": "Was rechnest du zuerst bei $5 \\cdot (2 + 3)$?",
+        "choices": [
+          "$2 + 3$",
+          "$5 \\cdot 2$",
+          "$5 \\cdot 3$",
+          "Ist egal"
+        ],
+        "correct": "$2 + 3$",
+        "explain": "Was in der Klammer steht, wird zuerst ausgerechnet. Hier ist das 2 plus 3, also 5. Danach kommt 5 mal 5."
+      },
+      {
+        "prompt": "Was heißt $3a$?",
+        "choices": [
+          "$3 \\cdot a$",
+          "$3 + a$",
+          "$3$ hoch $a$",
+          "$a$ geteilt durch 3"
+        ],
+        "correct": "$3 \\cdot a$",
+        "explain": "Zwischen einer Zahl und einem Buchstaben steht ein unsichtbarer Malpunkt. 3a bedeutet also 3 mal a."
+      },
+      {
+        "prompt": "Welches Zeichen heißt „ungefähr gleich“?",
+        "choices": [
+          "$\\approx$",
+          "$\\neq$",
+          "$\\leq$",
+          "$=$"
+        ],
+        "correct": "$\\approx$",
+        "explain": "Das Zeichen mit den zwei Wellen bedeutet ungefähr gleich. Man benutzt es nach dem Runden."
+      },
+      {
+        "prompt": "Wie viel ist $\\sqrt{36}$?",
+        "choices": [
+          "6",
+          "18",
+          "12",
+          "72"
+        ],
+        "correct": "6",
+        "explain": "Die Wurzel fragt, welche Zahl mit sich selbst malgenommen 36 ergibt. Das ist 6, denn 6 mal 6 ist 36."
+      },
+      {
+        "prompt": "Was bedeutet $40\\,\\%$?",
+        "choices": [
+          "40 von 100",
+          "40 von 10",
+          "40 von 1000",
+          "40 mal 100"
+        ],
+        "correct": "40 von 100",
+        "explain": "Prozent bedeutet von hundert. 40 Prozent sind also 40 von 100."
+      }
     ]
   }
 ]

@@ -3,45 +3,165 @@
     "id": "P_MATH_BRUCH",
     "subject": "MATH",
     "title": "Brüche verstehen",
-    "teaser": "Was Zähler und Nenner sind, was Kürzen und Erweitern wirklich heißen und warum ½ + ⅓ nicht ⅖ ist",
-    "hook": "Brüche machen vielen Angst. Dabei ist ein Bruch nur eine Pizza, die man teilt. Wenn du das Bild im Kopf hast, ist der Rest Handwerk.",
+    "teaser": "Was Zähler und Nenner sind, was Kürzen und Erweitern wirklich heißen, wie du einen gemeinsamen Nenner findest und warum ein Halbes plus ein Drittel nicht zwei Fünftel ist.",
+    "hook": "Zahlen mit einem Strich in der Mitte machen vielen Angst. Dabei steckt dahinter nur eine Pizza, die man teilt. Wenn du dieses Bild im Kopf hast, ist der Rest Handwerk. Wir gehen es in Ruhe durch, ein Stück nach dem anderen.",
     "outro": "Pizza, Stücke, gleich groß schneiden: Das ist alles, was hinter Brüchen steckt. Jetzt kannst du in die Lektion.",
+    "standard": 2,
     "steps": [
       {
+        "chapter": "Was ein Bruch ist",
         "title": "Eine Pizza in Stücken",
-        "body": "Eine Pizza wird in 4 gleiche Stücke geteilt.\n\nDu isst 3 davon: $\\frac{3}{4}$\n\nDrei **von** vier.",
-        "figure": { "type": "pieChart", "categories": ["gegessen", "übrig"], "values": [3, 1] },
+        "body": "Eine Pizza wird in 4 gleiche Stücke geteilt.\n\nDu isst 3 davon: $\\frac{3}{4}$\n\nDas heißt: drei **von** vier. So eine Zahl heißt **Bruch**.",
+        "figure": {
+          "type": "pieChart",
+          "categories": [
+            "gegessen",
+            "übrig"
+          ],
+          "values": [
+            3,
+            1
+          ]
+        },
         "say": "Ein Bruch ist immer „so viele von so vielen“. Unten steht, in wie viele Stücke geteilt wurde, oben, wie viele du nimmst."
       },
       {
         "title": "Zähler und Nenner",
         "body": "$\\frac{3}{4}$\n\nOben: **Zähler**, er zählt die Stücke.\n\nUnten: **Nenner**, er nennt die Größe der Stücke.",
-        "say": "Merkhilfe: Der Nenner steht unten wie der Boden, und er benennt, wie groß ein Stück ist."
+        "say": "Merkhilfe: Der Nenner steht unten wie der Boden, und er benennt, wie groß ein Stück ist.",
+        "tasks": [
+          {
+            "text": "Bei $\\frac{2}{5}$ ist die 5 der ___.",
+            "choices": [
+              "Nenner",
+              "Zähler"
+            ],
+            "correct": "Nenner",
+            "why": "Die Zahl unten nennt, in wie viele Stücke geteilt wurde.",
+            "hint": "Steht die 5 oben oder unten? Welcher Name gehört zu dieser Stelle?"
+          }
+        ]
       },
       {
         "title": "Der Bruchstrich ist Geteilt",
-        "body": "$\\frac{3}{4} = 3 : 4 = 0{,}75$\n\n$\\frac{1}{2} = 1 : 2 = 0{,}5$",
-        "say": "Mit dem Taschenrechner kannst du jeden Bruch in eine Dezimalzahl verwandeln: oben geteilt durch unten."
+        "body": "$\\frac{3}{4} = 3 : 4 = 0{,}75$\n\n$\\frac{1}{2} = 1 : 2 = 0{,}5$\n\nEine Zahl mit Komma heißt **Dezimalzahl**.",
+        "say": "Mit dem Taschenrechner kannst du jeden Bruch in eine Dezimalzahl verwandeln: oben geteilt durch unten.",
+        "tasks": [
+          {
+            "text": "$\\frac{1}{4}$ $= 1 : 4 = $ ___",
+            "choices": [
+              "$0{,}25$",
+              "$0{,}4$"
+            ],
+            "correct": "$0{,}25$",
+            "why": "Eins geteilt durch vier ergibt 0,25. Das ist ein Viertel.",
+            "hint": "Rechne oben geteilt durch unten. Wie viel ist ein Viertel von einem Euro?"
+          }
+        ]
       },
       {
         "title": "Großer Nenner, kleines Stück",
         "body": "$\\frac{1}{2}$ ist eine halbe Pizza.\n\n$\\frac{1}{8}$ ist ein Achtel, ein kleines Stück.\n\nAlso: $\\frac{1}{2} > \\frac{1}{8}$",
-        "say": "Das fühlt sich falsch an, weil 8 größer als 2 ist. Aber je mehr Leute sich die Pizza teilen, desto weniger bekommt jeder."
+        "say": "Das fühlt sich falsch an, weil 8 größer als 2 ist. Aber je mehr Leute sich die Pizza teilen, desto weniger bekommt jeder.",
+        "tasks": [
+          {
+            "text": "Welches Stück ist größer? ___",
+            "choices": [
+              "$\\frac{1}{3}$",
+              "$\\frac{1}{6}$"
+            ],
+            "correct": "$\\frac{1}{3}$",
+            "why": "Bei drei Leuten bekommt jeder mehr Pizza als bei sechs Leuten.",
+            "hint": "Bei welcher Zahl teilen sich weniger Leute die Pizza?"
+          }
+        ]
       },
       {
+        "chapter": "Erweitern und Kürzen",
         "title": "Erweitern: mehr Stücke, gleiche Pizza",
         "body": "$\\frac{1}{2} = \\frac{2}{4} = \\frac{4}{8}$\n\nOben **und** unten mal die gleiche Zahl.\n\nDer Wert bleibt gleich.",
-        "say": "Du schneidest die Stücke nur kleiner. Die Menge Pizza ändert sich nicht."
+        "say": "Du schneidest die Stücke nur kleiner. Die Menge Pizza ändert sich nicht.",
+        "tasks": [
+          {
+            "text": "$\\frac{1}{3}$ erweitert mit 2 ergibt ___.",
+            "choices": [
+              "$\\frac{2}{6}$",
+              "$\\frac{2}{3}$"
+            ],
+            "correct": "$\\frac{2}{6}$",
+            "why": "Oben und unten wird mit 2 malgenommen.",
+            "hint": "Was musst du beim Erweitern mit der Zahl unten tun?"
+          }
+        ]
       },
       {
         "title": "Kürzen: rückwärts",
         "body": "$\\frac{6}{8} = \\frac{3}{4}$\n\nOben und unten durch die gleiche Zahl (hier 2).\n\n**Kürzen macht den Bruch einfacher, nicht kleiner.**",
-        "say": "In der Prüfung heißt es oft: „so weit wie möglich gekürzt“. Dann teilst du, bis nichts mehr geht."
+        "say": "In der Prüfung heißt es oft: „so weit wie möglich gekürzt“. Dann teilst du, bis nichts mehr geht.",
+        "tasks": [
+          {
+            "text": "$\\frac{4}{10}$ gekürzt mit 2 ergibt ___.",
+            "choices": [
+              "$\\frac{2}{5}$",
+              "$\\frac{2}{10}$"
+            ],
+            "correct": "$\\frac{2}{5}$",
+            "why": "Oben und unten wird durch 2 geteilt.",
+            "hint": "Was musst du beim Kürzen mit der Zahl unten tun?"
+          }
+        ]
       },
       {
+        "title": "Wann ist ein Bruch fertig gekürzt?",
+        "body": "$\\frac{12}{18}$\n\nGeteilt durch 2: $\\frac{6}{9}$\n\nGeteilt durch 3: $\\frac{2}{3}$\n\nJetzt gibt es keine Zahl mehr, durch die sich beide teilen lassen.",
+        "tasks": [
+          {
+            "text": "$\\frac{6}{8}$ so weit wie möglich gekürzt ist ___.",
+            "choices": [
+              "$\\frac{3}{4}$",
+              "$\\frac{6}{8}$"
+            ],
+            "correct": "$\\frac{3}{4}$",
+            "why": "Beide Zahlen lassen sich durch 2 teilen. Danach geht es nicht weiter.",
+            "hint": "Gibt es eine Zahl, durch die sich 6 und 8 beide teilen lassen?"
+          }
+        ],
+        "say": "Manchmal musst du mehrmals kürzen. Du suchst immer wieder eine Zahl, durch die sich Zähler und Nenner beide teilen lassen. Wenn du keine mehr findest, ist der Bruch so weit wie möglich gekürzt. Das wird in der Prüfung oft verlangt."
+      },
+      {
+        "title": "Mehr als ein Ganzes",
+        "body": "$\\frac{5}{4}$ ist mehr als eine ganze Pizza.\n\n$\\frac{5}{4}$ $= 1\\frac{1}{4}$\n\nEine ganze Zahl mit einem Bruch daneben heißt **gemischte Zahl**.",
+        "tasks": [
+          {
+            "text": "$\\frac{7}{4}$ $= $ ___",
+            "choices": [
+              "$1\\frac{3}{4}$",
+              "$7\\frac{1}{4}$"
+            ],
+            "correct": "$1\\frac{3}{4}$",
+            "why": "Vier Viertel sind ein Ganzes. Drei Viertel bleiben übrig.",
+            "hint": "Wie viele Viertel ergeben eine ganze Pizza? Wie viele bleiben dann übrig?"
+          }
+        ],
+        "say": "Fünf Viertel sind eine ganze Pizza und noch ein Viertel dazu. Vier Viertel ergeben nämlich ein Ganzes. Das schreibt man als gemischte Zahl: eins und ein Viertel. Beide Schreibweisen bedeuten genau dieselbe Menge."
+      },
+      {
+        "chapter": "Plus und Minus",
         "title": "Gleichnamig: gleicher Nenner",
         "body": "$\\frac{1}{4} + \\frac{2}{4} = \\frac{3}{4}$\n\nGleiche Stückgröße: einfach die Stücke zählen.\n\nDer Nenner bleibt 4!",
-        "say": "Ein Viertel plus zwei Viertel sind drei Viertel. Wie ein Apfel plus zwei Äpfel."
+        "say": "Ein Viertel plus zwei Viertel sind drei Viertel. Wie ein Apfel plus zwei Äpfel.",
+        "tasks": [
+          {
+            "text": "$\\frac{2}{7}$ $+$ $\\frac{3}{7}$ $= $ ___",
+            "choices": [
+              "$\\frac{5}{7}$",
+              "$\\frac{5}{14}$"
+            ],
+            "correct": "$\\frac{5}{7}$",
+            "why": "Die Stücke sind gleich groß. Du zählst nur die Zähler zusammen.",
+            "hint": "Ändert sich die Größe der Stücke, wenn du sie zusammenzählst?"
+          }
+        ]
       },
       {
         "title": "Ungleiche Nenner: erst gleich machen",
@@ -49,43 +169,223 @@
         "say": "Halbe und Drittel kann man nicht direkt zählen, die Stücke sind verschieden groß. Erst gleich groß schneiden, dann zählen."
       },
       {
+        "title": "So findest du den gemeinsamen Nenner",
+        "body": "$\\frac{1}{4}$ $+$ $\\frac{1}{6}$\n\nVielfache von 4: 4, 8, **12**\n\nVielfache von 6: 6, **12**\n\nDie erste gemeinsame Zahl ist 12. Sie wird der neue Nenner.",
+        "tasks": [
+          {
+            "text": "Der gemeinsame Nenner von $\\frac{1}{2}$ und $\\frac{1}{5}$ ist ___.",
+            "choices": [
+              "10",
+              "7"
+            ],
+            "correct": "10",
+            "why": "Die Zehn steht in der Reihe der Zwei und in der Reihe der Fünf.",
+            "hint": "Welche Zahl kommt in der Zweierreihe und in der Fünferreihe zuerst gemeinsam vor?"
+          }
+        ],
+        "say": "Du brauchst eine Stückgröße, in die sich beide Brüche umschneiden lassen. Schreib dafür die Reihe von jedem Nenner auf, wie beim Einmaleins. Die erste Zahl, die in beiden Reihen vorkommt, ist dein gemeinsamer Nenner. Man nennt sie das kleinste gemeinsame Vielfache, kurz **kgV**."
+      },
+      {
+        "title": "Dann erweitern und zusammenzählen",
+        "body": "$\\frac{1}{4}$ $=$ $\\frac{3}{12}$, denn oben und unten mal 3\n\n$\\frac{1}{6}$ $=$ $\\frac{2}{12}$, denn oben und unten mal 2\n\n$\\frac{3}{12}$ $+$ $\\frac{2}{12}$ $=$ $\\frac{5}{12}$",
+        "tasks": [
+          {
+            "text": "$\\frac{1}{2}$ $+$ $\\frac{1}{5}$ $=$ $\\frac{5}{10}$ $+$ $\\frac{2}{10}$ $= $ ___",
+            "choices": [
+              "$\\frac{7}{10}$",
+              "$\\frac{2}{7}$"
+            ],
+            "correct": "$\\frac{7}{10}$",
+            "why": "Fünf Zehntel und zwei Zehntel sind sieben Zehntel.",
+            "hint": "Die Stücke sind jetzt gleich groß. Was zählst du zusammen?"
+          }
+        ],
+        "say": "Jetzt bringst du beide Brüche auf den neuen Nenner. Du überlegst jedes Mal, mit welcher Zahl du malnehmen musst, damit unten 12 steht. Mit derselben Zahl nimmst du auch oben mal. Danach sind die Stücke gleich groß, und du zählst sie zusammen."
+      },
+      {
         "title": "Der berühmte Fehler",
         "body": "$\\frac{1}{2} + \\frac{1}{3}$ ist **nicht** $\\frac{2}{5}$.\n\nOben plus oben, unten plus unten: **verboten**.",
         "say": "Zwei Fünftel sind sogar weniger als eine halbe Pizza. Das kann nicht stimmen, wenn du eine halbe und noch etwas isst."
       },
       {
+        "chapter": "Mal, Geteilt und Umwandeln",
         "title": "Mal: einfach durch",
         "body": "$\\frac{2}{3} \\cdot \\frac{3}{4} = \\frac{2 \\cdot 3}{3 \\cdot 4} = \\frac{6}{12} = \\frac{1}{2}$\n\nZähler mal Zähler, Nenner mal Nenner.",
-        "say": "Malnehmen ist bei Brüchen das Leichteste. Am Ende kürzen."
+        "say": "Malnehmen ist bei Brüchen das Leichteste. Am Ende kürzen.",
+        "tasks": [
+          {
+            "text": "$\\frac{1}{2}$ $\\cdot$ $\\frac{3}{5}$ $= $ ___",
+            "choices": [
+              "$\\frac{3}{10}$",
+              "$\\frac{4}{7}$"
+            ],
+            "correct": "$\\frac{3}{10}$",
+            "why": "Zähler mal Zähler und Nenner mal Nenner.",
+            "hint": "Was rechnest du beim Malnehmen mit den beiden Zahlen unten?"
+          }
+        ]
       },
       {
         "title": "Geteilt: umdrehen und mal",
-        "body": "$\\frac{1}{2} : \\frac{1}{4} = \\frac{1}{2} \\cdot \\frac{4}{1} = \\frac{4}{2} = 2$\n\nDen zweiten Bruch **umdrehen**, dann mal.",
-        "say": "Frage: Wie oft passt ein Viertel in eine Hälfte? Zweimal. Genau das kommt raus."
+        "body": "$\\frac{1}{2} : \\frac{1}{4} = \\frac{1}{2} \\cdot \\frac{4}{1} = \\frac{4}{2} = 2$\n\nDen zweiten Bruch **umdrehen**, dann mal.\n\nDer umgedrehte Bruch heißt **Kehrwert**.",
+        "say": "Frage: Wie oft passt ein Viertel in eine Hälfte? Zweimal. Genau das kommt raus.",
+        "tasks": [
+          {
+            "text": "Der Kehrwert von $\\frac{2}{3}$ ist ___.",
+            "choices": [
+              "$\\frac{3}{2}$",
+              "$\\frac{1}{3}$"
+            ],
+            "correct": "$\\frac{3}{2}$",
+            "why": "Beim Kehrwert tauschen Zähler und Nenner die Plätze.",
+            "hint": "Was passiert mit oben und unten, wenn du einen Bruch umdrehst?"
+          }
+        ]
       },
       {
         "title": "Bruch, Dezimalzahl, Prozent",
         "body": "$\\frac{1}{2} = 0{,}5 = 50\\,\\%$\n\n$\\frac{1}{4} = 0{,}25 = 25\\,\\%$\n\n$\\frac{3}{4} = 0{,}75 = 75\\,\\%$",
-        "say": "Drei Schreibweisen für dieselbe Menge. Die solltest du auswendig kennen."
+        "say": "Drei Schreibweisen für dieselbe Menge. Die solltest du auswendig kennen.",
+        "tasks": [
+          {
+            "text": "$\\frac{1}{4}$ $= $ ___",
+            "choices": [
+              "25 %",
+              "4 %"
+            ],
+            "correct": "25 %",
+            "why": "Ein Viertel von hundert sind 25.",
+            "hint": "Wie viel ist ein Viertel von 100?"
+          }
+        ]
+      },
+      {
+        "title": "Das nimmst du mit",
+        "body": "Oben steht der Zähler, unten der Nenner.\n\nErweitern und Kürzen ändern den Wert nicht.\n\nPlus und Minus: erst gleiche Nenner.\n\nMal: oben mal oben, unten mal unten.\n\nGeteilt: mal den Kehrwert.",
+        "tasks": [
+          {
+            "text": "$\\frac{1}{2}$ $+$ $\\frac{1}{3}$: Was machst du zuerst? ___",
+            "choices": [
+              "Ich bringe beide auf denselben Nenner.",
+              "Ich zähle oben und unten zusammen."
+            ],
+            "correct": "Ich bringe beide auf denselben Nenner.",
+            "why": "Halbe und Drittel sind verschieden groß. Erst gleich große Stücke kann man zählen.",
+            "hint": "Sind die Stücke gleich groß? Was muss vorher geschehen?"
+          }
+        ],
+        "say": "Das sind die fünf Dinge, die du über Brüche wissen musst. Wenn du unsicher wirst, denk an die Pizza. Stücke kann man nur zusammenzählen, wenn sie gleich groß sind. Gleich kommen noch die Wörter zum Nachlesen und ein kleines Quiz."
       }
     ],
     "vocab": [
-      { "term": "Bruch", "plain": "So viele von so vielen gleichen Stücken.", "example": "$\\frac{3}{4}$" },
-      { "term": "Zähler", "plain": "Die Zahl oben. Zählt die Stücke.", "example": "Bei $\\frac{3}{4}$ ist 3 der Zähler." },
-      { "term": "Nenner", "plain": "Die Zahl unten. Nennt, wie groß ein Stück ist.", "example": "Bei $\\frac{3}{4}$ ist 4 der Nenner." },
-      { "term": "Erweitern", "plain": "Oben und unten mal dieselbe Zahl. Wert bleibt.", "example": "$\\frac{1}{2} = \\frac{3}{6}$" },
-      { "term": "Kürzen", "plain": "Oben und unten durch dieselbe Zahl. Wert bleibt.", "example": "$\\frac{6}{8} = \\frac{3}{4}$" },
-      { "term": "Gleichnamig", "plain": "Gleicher Nenner. Erst dann darf man plus und minus rechnen.", "example": "$\\frac{1}{6} + \\frac{2}{6}$" },
-      { "term": "Kehrwert", "plain": "Der Bruch auf den Kopf gestellt.", "example": "Kehrwert von $\\frac{2}{3}$ ist $\\frac{3}{2}$." },
-      { "term": "Gemischte Zahl", "plain": "Ganze plus Bruch.", "example": "$1\\frac{1}{2} = \\frac{3}{2}$" }
+      {
+        "term": "Bruch",
+        "plain": "So viele von so vielen gleichen Stücken.",
+        "example": "$\\frac{3}{4}$"
+      },
+      {
+        "term": "Zähler",
+        "plain": "Die Zahl oben. Zählt die Stücke.",
+        "example": "Bei $\\frac{3}{4}$ ist 3 der Zähler."
+      },
+      {
+        "term": "Nenner",
+        "plain": "Die Zahl unten. Nennt, wie groß ein Stück ist.",
+        "example": "Bei $\\frac{3}{4}$ ist 4 der Nenner."
+      },
+      {
+        "term": "Erweitern",
+        "plain": "Oben und unten mal dieselbe Zahl. Wert bleibt.",
+        "example": "$\\frac{1}{2} = \\frac{3}{6}$"
+      },
+      {
+        "term": "Kürzen",
+        "plain": "Oben und unten durch dieselbe Zahl. Wert bleibt.",
+        "example": "$\\frac{6}{8} = \\frac{3}{4}$"
+      },
+      {
+        "term": "Gleichnamig",
+        "plain": "Gleicher Nenner. Erst dann darf man plus und minus rechnen.",
+        "example": "$\\frac{1}{6} + \\frac{2}{6}$"
+      },
+      {
+        "term": "Kehrwert",
+        "plain": "Der Bruch auf den Kopf gestellt.",
+        "example": "Kehrwert von $\\frac{2}{3}$ ist $\\frac{3}{2}$."
+      },
+      {
+        "term": "Gemischte Zahl",
+        "plain": "Ganze plus Bruch.",
+        "example": "$1\\frac{1}{2} = \\frac{3}{2}$"
+      }
     ],
     "quiz": [
-      { "prompt": "Bei $\\frac{3}{5}$: Welche Zahl ist der Nenner?", "choices": ["5", "3", "8", "15"], "correct": "5", "explain": "Der Nenner steht unten und nennt die Stückgröße: Fünftel." },
-      { "prompt": "Welcher Bruch ist gleich $\\frac{1}{2}$?", "choices": ["$\\frac{4}{8}$", "$\\frac{2}{3}$", "$\\frac{1}{4}$", "$\\frac{3}{5}$"], "correct": "$\\frac{4}{8}$", "explain": "Oben und unten mal 4: $\\frac{1}{2} = \\frac{4}{8}$. Erweitern ändert den Wert nicht." },
-      { "prompt": "$\\frac{1}{4} + \\frac{2}{4} = ?$", "choices": ["$\\frac{3}{4}$", "$\\frac{3}{8}$", "$\\frac{2}{16}$", "$\\frac{3}{16}$"], "correct": "$\\frac{3}{4}$", "explain": "Gleicher Nenner: Stücke zählen, Nenner bleibt." },
-      { "prompt": "Kürze $\\frac{6}{9}$ so weit wie möglich.", "choices": ["$\\frac{2}{3}$", "$\\frac{3}{4}$", "$\\frac{1}{3}$", "Geht nicht"], "correct": "$\\frac{2}{3}$", "explain": "Oben und unten durch 3." },
-      { "prompt": "Welches Stück ist größer?", "choices": ["$\\frac{1}{3}$", "$\\frac{1}{5}$", "Beide gleich", "Kann man nicht sagen"], "correct": "$\\frac{1}{3}$", "explain": "Je größer der Nenner, desto kleiner das Stück. Ein Drittel ist mehr als ein Fünftel." },
-      { "prompt": "$\\frac{3}{4}$ als Prozent?", "choices": ["75 %", "34 %", "43 %", "0,75 %"], "correct": "75 %", "explain": "$3 : 4 = 0{,}75 = 75\\,\\%$." }
+      {
+        "prompt": "Bei $\\frac{3}{5}$: Welche Zahl ist der Nenner?",
+        "choices": [
+          "5",
+          "3",
+          "8",
+          "15"
+        ],
+        "correct": "5",
+        "explain": "Der Nenner steht unten. Er nennt, in wie viele Stücke geteilt wurde. Hier ist das die 5."
+      },
+      {
+        "prompt": "Welcher Bruch ist gleich $\\frac{1}{2}$?",
+        "choices": [
+          "$\\frac{4}{8}$",
+          "$\\frac{2}{3}$",
+          "$\\frac{1}{4}$",
+          "$\\frac{3}{5}$"
+        ],
+        "correct": "$\\frac{4}{8}$",
+        "explain": "Wenn du bei einem Halben oben und unten mit 4 malnimmst, bekommst du vier Achtel. Der Wert bleibt dabei gleich."
+      },
+      {
+        "prompt": "$\\frac{1}{4} + \\frac{2}{4} = ?$",
+        "choices": [
+          "$\\frac{3}{4}$",
+          "$\\frac{3}{8}$",
+          "$\\frac{2}{16}$",
+          "$\\frac{3}{16}$"
+        ],
+        "correct": "$\\frac{3}{4}$",
+        "explain": "Die Stücke sind gleich groß, also zählst du nur die Zähler zusammen. Der Nenner bleibt 4."
+      },
+      {
+        "prompt": "Kürze $\\frac{6}{9}$ so weit wie möglich.",
+        "choices": [
+          "$\\frac{2}{3}$",
+          "$\\frac{3}{4}$",
+          "$\\frac{1}{3}$",
+          "Geht nicht"
+        ],
+        "correct": "$\\frac{2}{3}$",
+        "explain": "Zähler und Nenner lassen sich beide durch 3 teilen. Danach gibt es keine gemeinsame Zahl mehr, durch die du kürzen könntest."
+      },
+      {
+        "prompt": "Welches Stück ist größer?",
+        "choices": [
+          "$\\frac{1}{3}$",
+          "$\\frac{1}{5}$",
+          "Beide gleich",
+          "Kann man nicht sagen"
+        ],
+        "correct": "$\\frac{1}{3}$",
+        "explain": "Je weniger Leute sich eine Pizza teilen, desto größer ist jedes Stück. Ein Drittel ist deshalb größer als ein Fünftel."
+      },
+      {
+        "prompt": "$\\frac{3}{4}$ als Prozent?",
+        "choices": [
+          "75 %",
+          "34 %",
+          "43 %",
+          "0,75 %"
+        ],
+        "correct": "75 %",
+        "explain": "Drei geteilt durch vier ist 0,75. Das sind 75 von 100, also 75 Prozent."
+      }
     ]
   }
 ]
