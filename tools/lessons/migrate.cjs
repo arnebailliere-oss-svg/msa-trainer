@@ -70,6 +70,21 @@ function migrate(file, fn) {
     quiz(...items) {
       p.quiz.push(...items);
     },
+    /** Rename entries of the word list: { old: new }. */
+    renameVocab(map) {
+      for (const [old, neu] of Object.entries(map)) {
+        const e = p.vocab.find((x) => x.term === old);
+        if (!e) throw new Error(`${p.id}: word not found: ${old}`);
+        e.term = neu;
+      }
+    },
+    dropVocab(...terms) {
+      for (const t of terms) {
+        const i = p.vocab.findIndex((x) => x.term === t);
+        if (i < 0) throw new Error(`${p.id}: word not found: ${t}`);
+        p.vocab.splice(i, 1);
+      }
+    },
     /** Replace the word list. */
     vocab(...items) {
       p.vocab = items;

@@ -1,0 +1,100 @@
+[
+  {
+    "id": "P_MATH_TERME",
+    "subject": "MATH",
+    "title": "Terme, Variablen und die Rechengesetze",
+    "teaser": "Was ein x ist, was ein Term ist, und was Vertauschen, Klammern versetzen und Verteilen wirklich heißen",
+    "hook": "Die Rechengesetze klingen wie Paragrafen aus dem Gesetzbuch. In Wahrheit sind es drei Dinge, die du seit der Grundschule kannst. Ich zeige dir, was dahintersteckt, Tafel für Tafel.",
+    "outro": "Kommutativ, assoziativ, distributiv: Jetzt weißt du, dass das nur Vertauschen, Umgruppieren und Verteilen heißt. Damit kannst du in die Lektion.",
+    "steps": [
+      {
+        "title": "Eine Kiste namens x",
+        "body": "$x$ ist ein **Platzhalter**.\n\nEin Ticket kostet $x$ Euro.\n\n3 Tickets kosten $3 \\cdot x = 3x$ Euro.",
+        "say": "Du weißt noch nicht, was ein Ticket kostet. Also schreibst du x. Später setzt du die richtige Zahl ein."
+      },
+      {
+        "title": "Variable heißt veränderlich",
+        "body": "Für $x$ darfst du **jede Zahl** einsetzen.\n\n$x = 5$: $3x = 15$\n\n$x = 10$: $3x = 30$",
+        "say": "Das Wort kommt von variieren, sich verändern. Die Kiste bleibt, der Inhalt wechselt."
+      },
+      {
+        "title": "Was ist ein Term?",
+        "body": "Ein **Term** ist ein Rechenausdruck.\n\n$3x + 5 \\qquad 2 \\cdot (a + b) \\qquad 7$\n\nOhne Gleichheitszeichen!",
+        "say": "Term heißt einfach: eine Rechnung, die du ausrechnen könntest, sobald du die Zahlen kennst."
+      },
+      {
+        "title": "Einsetzen",
+        "body": "$3x + 5$ mit $x = 4$:\n\n$3 \\cdot 4 + 5 = 12 + 5 = 17$",
+        "say": "Kiste auf, Zahl rein, ausrechnen. Mehr ist Einsetzen nicht."
+      },
+      {
+        "title": "Äpfel zu Äpfeln",
+        "body": "$3a + 2a = 5a$\n\n3 Äpfel + 2 Äpfel = 5 Äpfel",
+        "say": "Gleiche Buchstaben darfst du zusammenzählen. Das nennt man Zusammenfassen."
+      },
+      {
+        "title": "Äpfel und Birnen",
+        "body": "$3a + 2b$ bleibt $3a + 2b$.\n\nAuch $x^2$ und $x$ sind **verschieden**:\n\n$x^2 + x$ bleibt so.",
+        "say": "Äpfel und Birnen kann man nicht zu fünf Äpfeln machen. Das ist der häufigste Fehler überhaupt."
+      },
+      {
+        "title": "Vertauschen ist erlaubt",
+        "body": "$3 + 5 = 5 + 3$\n\n$3 \\cdot 5 = 5 \\cdot 3$\n\nDas heißt **Kommutativgesetz**.",
+        "say": "Kommutieren heißt tauschen. Bei Plus und Mal darfst du die Reihenfolge ändern, es kommt dasselbe raus."
+      },
+      {
+        "title": "Aber nicht bei Minus!",
+        "body": "$5 - 3 = 2$\n\n$3 - 5 = -2$\n\nMinus und Geteilt darf man **nicht** vertauschen.",
+        "say": "Darum gilt die Regel nur für Plus und Mal. Bei Minus wird es ein anderes Ergebnis."
+      },
+      {
+        "title": "Klammern versetzen",
+        "body": "$(2 + 3) + 7 = 2 + (3 + 7)$\n\n$5 + 7 = 2 + 10$\n\nBeides 12. Das heißt **Assoziativgesetz**.",
+        "say": "Bei drei Zahlen ist es egal, welche zwei du zuerst zusammenfasst."
+      },
+      {
+        "title": "Der Trick damit",
+        "body": "$25 \\cdot 4 \\cdot 7$\n\nErst $25 \\cdot 4 = 100$\n\nDann $100 \\cdot 7 = 700$",
+        "say": "Du darfst dir die leichte Rechnung zuerst rauspicken. Genau dafür ist das Gesetz da."
+      },
+      {
+        "title": "Verteilen",
+        "body": "$2 \\cdot (x + 3) = 2 \\cdot x + 2 \\cdot 3 = 2x + 6$\n\nDie 2 wird auf **jeden** in der Klammer verteilt.\n\nDas heißt **Distributivgesetz**.",
+        "say": "Distribuieren heißt verteilen. Stell dir 2 Tüten vor, in jeder ein x und drei Bonbons. Zusammen: 2x und 6 Bonbons."
+      },
+      {
+        "title": "Der klassische Fehler",
+        "body": "$2 \\cdot (x + 3)$ ist **nicht** $2x + 3$.\n\nDie 3 bekommt auch ihre 2:\n\n$2x + 6$ ✓",
+        "say": "Jeder in der Klammer bekommt die Zahl davor. Keiner geht leer aus."
+      },
+      {
+        "title": "Ausklammern = rückwärts",
+        "body": "$4x + 8 = 4 \\cdot (x + 2)$\n\nWas steckt in beiden? Die 4.\n\nDie kommt **vor die Klammer**.",
+        "say": "Probe: wieder ausmultiplizieren. 4 mal x plus 4 mal 2 ist 4x + 8. Passt."
+      },
+      {
+        "title": "Minus vor der Klammer",
+        "body": "$-(x - 3) = -x + 3$\n\nDas Minus **dreht jedes Vorzeichen** in der Klammer um.",
+        "say": "Minus-Klammer: alles umdrehen. Das brauchst du bei Gleichungen ständig."
+      }
+    ],
+    "vocab": [
+      { "term": "Variable", "plain": "Ein Buchstabe als Platzhalter für eine Zahl.", "example": "$x$, $a$, $y$" },
+      { "term": "Term", "plain": "Ein Rechenausdruck ohne Gleichheitszeichen.", "example": "$3x + 5$" },
+      { "term": "Koeffizient", "plain": "Die Zahl vor der Variable.", "example": "Bei $7x$ ist 7 der Koeffizient." },
+      { "term": "Zusammenfassen", "plain": "Gleiche Buchstaben zusammenzählen.", "example": "$3a + 2a = 5a$" },
+      { "term": "Ausmultiplizieren", "plain": "Die Zahl vor der Klammer auf jeden in der Klammer verteilen.", "example": "$2(x + 3) = 2x + 6$" },
+      { "term": "Ausklammern", "plain": "Das Gemeinsame vor die Klammer ziehen, also rückwärts.", "example": "$4x + 8 = 4(x + 2)$" },
+      { "term": "Kommutativ", "plain": "Vertauschen erlaubt (Plus und Mal).", "example": "$a + b = b + a$" },
+      { "term": "Assoziativ", "plain": "Klammern versetzen erlaubt (Plus und Mal).", "example": "$(a + b) + c = a + (b + c)$" },
+      { "term": "Distributiv", "plain": "Verteilen: Mal auf eine Klammer.", "example": "$a(b + c) = ab + ac$" }
+    ],
+    "quiz": [
+      { "prompt": "Was ist $3a + 4a$?", "choices": ["$7a$", "$12a$", "$7a^2$", "Das kann man nicht zusammenfassen"], "correct": "$7a$", "explain": "3 Äpfel plus 4 Äpfel sind 7 Äpfel. Gleiche Buchstaben darf man zusammenzählen." },
+      { "prompt": "Welche Rechnung ist richtig?", "choices": ["$2 \\cdot (x + 5) = 2x + 10$", "$2 \\cdot (x + 5) = 2x + 5$", "$2 \\cdot (x + 5) = 2x + 7$", "$2 \\cdot (x + 5) = x + 10$"], "correct": "$2 \\cdot (x + 5) = 2x + 10$", "explain": "Die 2 wird auf beide verteilt: $2 \\cdot x$ und $2 \\cdot 5$." },
+      { "prompt": "Was heißt es, dass Plus kommutativ ist?", "choices": ["Man darf die Summanden vertauschen", "Man darf die Klammer weglassen", "Man darf durch 0 teilen", "Plus ist stärker als Mal"], "correct": "Man darf die Summanden vertauschen", "explain": "Kommutieren heißt tauschen: $3 + 5 = 5 + 3$." },
+      { "prompt": "Klammere aus: $6x + 9$", "choices": ["$3 \\cdot (2x + 3)$", "$6 \\cdot (x + 9)$", "$3 \\cdot (2x + 9)$", "$9 \\cdot (6x + 1)$"], "correct": "$3 \\cdot (2x + 3)$", "explain": "In 6x und 9 steckt die 3. Probe: $3 \\cdot 2x + 3 \\cdot 3 = 6x + 9$." },
+      { "prompt": "Was ist $-(a - 4)$?", "choices": ["$-a + 4$", "$-a - 4$", "$a - 4$", "$a + 4$"], "correct": "$-a + 4$", "explain": "Minus vor der Klammer dreht jedes Vorzeichen um." }
+    ]
+  }
+]

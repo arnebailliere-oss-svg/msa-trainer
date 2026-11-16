@@ -6,46 +6,203 @@
     "teaser": "Was ein x ist, was ein Term ist, und was Vertauschen, Klammern versetzen und Verteilen wirklich heißen",
     "hook": "Die Rechengesetze klingen wie Paragrafen aus dem Gesetzbuch. In Wahrheit sind es drei Dinge, die du seit der Grundschule kannst. Ich zeige dir, was dahintersteckt, Tafel für Tafel.",
     "outro": "Kommutativ, assoziativ, distributiv: Jetzt weißt du, dass das nur Vertauschen, Umgruppieren und Verteilen heißt. Damit kannst du in die Lektion.",
+    "standard": 2,
+    "requires": [
+      "P_MATH_ZEICHEN"
+    ],
     "steps": [
       {
+        "chapter": "Was ein x ist",
         "title": "Eine Kiste namens x",
-        "body": "$x$ ist ein **Platzhalter**.\n\nEin Ticket kostet $x$ Euro.\n\n3 Tickets kosten $3 \\cdot x = 3x$ Euro.",
-        "say": "Du weißt noch nicht, was ein Ticket kostet. Also schreibst du x. Später setzt du die richtige Zahl ein."
+        "body": "$x$ ist ein **Platzhalter**. Ein Ticket kostet $x$ Euro.\n\n3 Tickets kosten $3 \\cdot x = 3x$ Euro.\n\nDie Zahl vor dem $x$ heißt **Koeffizient**.",
+        "say": "Du weißt noch nicht, was ein Ticket kostet. Also schreibst du x. Später setzt du die richtige Zahl ein.",
+        "tasks": [
+          {
+            "text": "5 Tickets kosten ___ Euro.",
+            "choices": [
+              "$5x$",
+              "$x + 5$"
+            ],
+            "correct": "$5x$",
+            "why": "Fünf Tickets kosten fünfmal den Preis eines Tickets.",
+            "hint": "Rechnest du bei mehreren gleichen Tickets plus oder mal?"
+          }
+        ]
       },
       {
         "title": "Variable heißt veränderlich",
-        "body": "Für $x$ darfst du **jede Zahl** einsetzen.\n\n$x = 5$: $3x = 15$\n\n$x = 10$: $3x = 30$",
-        "say": "Das Wort kommt von variieren, sich verändern. Die Kiste bleibt, der Inhalt wechselt."
+        "body": "Für $x$ darfst du **jede Zahl** einsetzen. Deshalb heißt $x$ eine **Variable**.\n\n$x = 5$: $3x = 15$\n\n$x = 10$: $3x = 30$",
+        "say": "Das Wort kommt von variieren, sich verändern. Die Kiste bleibt, der Inhalt wechselt.",
+        "tasks": [
+          {
+            "text": "$3x$ mit $x = 2$ ergibt ___.",
+            "choices": [
+              "6",
+              "32"
+            ],
+            "correct": "6",
+            "why": "3x bedeutet 3 mal x, also 3 mal 2.",
+            "hint": "Welches Zeichen steht unsichtbar zwischen der 3 und dem x?"
+          }
+        ]
       },
       {
         "title": "Was ist ein Term?",
         "body": "Ein **Term** ist ein Rechenausdruck.\n\n$3x + 5 \\qquad 2 \\cdot (a + b) \\qquad 7$\n\nOhne Gleichheitszeichen!",
-        "say": "Term heißt einfach: eine Rechnung, die du ausrechnen könntest, sobald du die Zahlen kennst."
+        "say": "Term heißt einfach: eine Rechnung, die du ausrechnen könntest, sobald du die Zahlen kennst.",
+        "tasks": [
+          {
+            "text": "Welcher Ausdruck ist ein Term? ___",
+            "choices": [
+              "$4x + 1$",
+              "$4x + 1 = 9$"
+            ],
+            "correct": "$4x + 1$",
+            "why": "Ein Term hat kein Gleichheitszeichen. Er ist nur ein Rechenausdruck.",
+            "hint": "In welchem der beiden Ausdrücke steht ein Gleichheitszeichen?"
+          }
+        ]
       },
       {
         "title": "Einsetzen",
         "body": "$3x + 5$ mit $x = 4$:\n\n$3 \\cdot 4 + 5 = 12 + 5 = 17$",
-        "say": "Kiste auf, Zahl rein, ausrechnen. Mehr ist Einsetzen nicht."
+        "say": "Kiste auf, Zahl rein, ausrechnen. Mehr ist Einsetzen nicht.",
+        "tasks": [
+          {
+            "text": "$2x + 3$ mit $x = 5$ ergibt ___.",
+            "choices": [
+              "13",
+              "28"
+            ],
+            "correct": "13",
+            "why": "2 mal 5 ist 10, und dazu kommt 3.",
+            "hint": "Rechne zuerst 2 mal 5. Was kommt danach dazu?"
+          }
+        ]
       },
       {
+        "chapter": "Zusammenfassen",
         "title": "Äpfel zu Äpfeln",
         "body": "$3a + 2a = 5a$\n\n3 Äpfel + 2 Äpfel = 5 Äpfel",
-        "say": "Gleiche Buchstaben darfst du zusammenzählen. Das nennt man Zusammenfassen."
+        "say": "Gleiche Buchstaben darfst du zusammenzählen. Das nennt man Zusammenfassen.",
+        "tasks": [
+          {
+            "text": "$4b + 3b = $ ___",
+            "choices": [
+              "$7b$",
+              "$12b$"
+            ],
+            "correct": "$7b$",
+            "why": "Vier b und drei b sind zusammen sieben b.",
+            "hint": "Wie viele Äpfel hast du, wenn du vier und drei zusammenlegst?"
+          }
+        ]
       },
       {
         "title": "Äpfel und Birnen",
         "body": "$3a + 2b$ bleibt $3a + 2b$.\n\nAuch $x^2$ und $x$ sind **verschieden**:\n\n$x^2 + x$ bleibt so.",
-        "say": "Äpfel und Birnen kann man nicht zu fünf Äpfeln machen. Das ist der häufigste Fehler überhaupt."
+        "say": "Äpfel und Birnen kann man nicht zu fünf Äpfeln machen. Das ist der häufigste Fehler überhaupt.",
+        "tasks": [
+          {
+            "text": "$2a + 5b$ ___",
+            "choices": [
+              "lässt sich nicht zusammenfassen",
+              "ergibt $7ab$"
+            ],
+            "correct": "lässt sich nicht zusammenfassen",
+            "why": "Die Buchstaben sind verschieden. Äpfel und Birnen bleiben getrennt.",
+            "hint": "Sind die beiden Buchstaben gleich oder verschieden?"
+          }
+        ]
       },
       {
+        "title": "Erst sortieren, dann zusammenfassen",
+        "body": "$3a + 2b + 4a$\n\nErst alle $a$: $3a + 4a = 7a$\n\nDann alle $b$: $2b$\n\nErgebnis: $7a + 2b$",
+        "tasks": [
+          {
+            "text": "$5x + 2y + x = $ ___",
+            "choices": [
+              "$6x + 2y$",
+              "$8xy$"
+            ],
+            "correct": "$6x + 2y$",
+            "why": "Fünf x und ein x sind sechs x. Die zwei y bleiben für sich.",
+            "hint": "Welche Teile haben denselben Buchstaben? Zähl nur die zusammen."
+          }
+        ],
+        "say": "Wenn in einem Term mehrere Buchstaben durcheinanderstehen, sortierst du zuerst. Du suchst alle Teile mit a und zählst sie zusammen. Dann machst du dasselbe mit b. Am Ende stehen die Sorten nebeneinander, jede nur noch einmal."
+      },
+      {
+        "title": "Jetzt du: zusammenfassen",
+        "body": "Tipp bei jedem Term auf das richtige Ergebnis.",
+        "tasks": [
+          {
+            "text": "$6a - 2a = $ ___",
+            "choices": [
+              "$4a$",
+              "$4$"
+            ],
+            "correct": "$4a$",
+            "why": "Sechs a minus zwei a sind vier a. Der Buchstabe bleibt.",
+            "hint": "Was bleibt von sechs Äpfeln, wenn du zwei wegnimmst?"
+          },
+          {
+            "text": "$x^2 + x^2 = $ ___",
+            "choices": [
+              "$2x^2$",
+              "$x^4$"
+            ],
+            "correct": "$2x^2$",
+            "why": "Zweimal dieselbe Sorte ergibt zwei davon. Die Hochzahl ändert sich nicht.",
+            "hint": "Wie viele Kisten derselben Sorte liegen da?"
+          },
+          {
+            "text": "$3x + 4 + 2x = $ ___",
+            "choices": [
+              "$5x + 4$",
+              "$9x$"
+            ],
+            "correct": "$5x + 4$",
+            "why": "Drei x und zwei x sind fünf x. Die 4 hat keinen Buchstaben und bleibt für sich.",
+            "hint": "Welche Teile haben ein x und welcher hat keins?"
+          }
+        ],
+        "say": "Schau bei jedem Term, welche Teile zur selben Sorte gehören. Nur die darfst du zusammenzählen oder voneinander abziehen. Eine Zahl ohne Buchstaben ist eine eigene Sorte."
+      },
+      {
+        "chapter": "Die drei Rechengesetze",
         "title": "Vertauschen ist erlaubt",
         "body": "$3 + 5 = 5 + 3$\n\n$3 \\cdot 5 = 5 \\cdot 3$\n\nDas heißt **Kommutativgesetz**.",
-        "say": "Kommutieren heißt tauschen. Bei Plus und Mal darfst du die Reihenfolge ändern, es kommt dasselbe raus."
+        "say": "Kommutieren heißt tauschen. Bei Plus und Mal darfst du die Reihenfolge ändern, es kommt dasselbe raus.",
+        "tasks": [
+          {
+            "text": "Bei Plus und Mal darfst du ___.",
+            "choices": [
+              "die Reihenfolge tauschen",
+              "nie etwas ändern"
+            ],
+            "correct": "die Reihenfolge tauschen",
+            "why": "3 plus 5 und 5 plus 3 ergeben beide 8.",
+            "hint": "Was haben die beiden Rechnungen auf der Tafel gemeinsam?"
+          }
+        ]
       },
       {
         "title": "Aber nicht bei Minus!",
         "body": "$5 - 3 = 2$\n\n$3 - 5 = -2$\n\nMinus und Geteilt darf man **nicht** vertauschen.",
-        "say": "Darum gilt die Regel nur für Plus und Mal. Bei Minus wird es ein anderes Ergebnis."
+        "say": "Darum gilt die Regel nur für Plus und Mal. Bei Minus wird es ein anderes Ergebnis.",
+        "tasks": [
+          {
+            "text": "$10 - 4$ ist dasselbe wie $4 - 10$. Das ist ___.",
+            "choices": [
+              "falsch",
+              "richtig"
+            ],
+            "correct": "falsch",
+            "why": "10 minus 4 ist 6, aber 4 minus 10 ist minus 6.",
+            "hint": "Rechne beide Aufgaben aus. Kommt dasselbe heraus?"
+          }
+        ]
       },
       {
         "title": "Klammern versetzen",
@@ -55,14 +212,39 @@
       {
         "title": "Der Trick damit",
         "body": "$25 \\cdot 4 \\cdot 7$\n\nErst $25 \\cdot 4 = 100$\n\nDann $100 \\cdot 7 = 700$",
-        "say": "Du darfst dir die leichte Rechnung zuerst rauspicken. Genau dafür ist das Gesetz da."
+        "say": "Du darfst dir die leichte Rechnung zuerst rauspicken. Genau dafür ist das Gesetz da.",
+        "tasks": [
+          {
+            "text": "$5 \\cdot 13 \\cdot 2$: Was rechnest du am besten zuerst? ___",
+            "choices": [
+              "$5 \\cdot 2$",
+              "$13 \\cdot 2$"
+            ],
+            "correct": "$5 \\cdot 2$",
+            "why": "5 mal 2 ist 10, und mit 10 rechnet es sich leicht weiter.",
+            "hint": "Welche zwei Zahlen ergeben zusammen eine glatte Zahl?"
+          }
+        ]
       },
       {
         "title": "Verteilen",
         "body": "$2 \\cdot (x + 3) = 2 \\cdot x + 2 \\cdot 3 = 2x + 6$\n\nDie 2 wird auf **jeden** in der Klammer verteilt.\n\nDas heißt **Distributivgesetz**.",
-        "say": "Distribuieren heißt verteilen. Stell dir 2 Tüten vor, in jeder ein x und drei Bonbons. Zusammen: 2x und 6 Bonbons."
+        "say": "Distribuieren heißt verteilen. Stell dir 2 Tüten vor, in jeder ein x und drei Bonbons. Zusammen: 2x und 6 Bonbons.",
+        "tasks": [
+          {
+            "text": "$3 \\cdot (x + 4) = $ ___",
+            "choices": [
+              "$3x + 12$",
+              "$3x + 4$"
+            ],
+            "correct": "$3x + 12$",
+            "why": "Die 3 wird auf beide verteilt: 3 mal x und 3 mal 4.",
+            "hint": "Bekommt auch die 4 in der Klammer die 3 davor?"
+          }
+        ]
       },
       {
+        "chapter": "Klammern auflösen",
         "title": "Der klassische Fehler",
         "body": "$2 \\cdot (x + 3)$ ist **nicht** $2x + 3$.\n\nDie 3 bekommt auch ihre 2:\n\n$2x + 6$ ✓",
         "say": "Jeder in der Klammer bekommt die Zahl davor. Keiner geht leer aus."
@@ -70,31 +252,186 @@
       {
         "title": "Ausklammern = rückwärts",
         "body": "$4x + 8 = 4 \\cdot (x + 2)$\n\nWas steckt in beiden? Die 4.\n\nDie kommt **vor die Klammer**.",
-        "say": "Probe: wieder ausmultiplizieren. 4 mal x plus 4 mal 2 ist 4x + 8. Passt."
+        "say": "Probe: wieder ausmultiplizieren. 4 mal x plus 4 mal 2 ist 4x + 8. Passt.",
+        "tasks": [
+          {
+            "text": "$5x + 10 = $ ___",
+            "choices": [
+              "$5 \\cdot (x + 2)$",
+              "$5 \\cdot (x + 10)$"
+            ],
+            "correct": "$5 \\cdot (x + 2)$",
+            "why": "In 5x und in 10 steckt die 5. In der Klammer bleiben x und 2.",
+            "hint": "Was bleibt von der 10 übrig, wenn du die 5 herausziehst?"
+          }
+        ]
+      },
+      {
+        "title": "Warum dreht ein Minus alles um?",
+        "body": "$10 - (4 + 1)$\n\nMit Klammer: $10 - 5 = 5$\n\nOhne Klammer: $10 - 4 - 1 = 5$\n\nDu nimmst die 4 weg **und** die 1 weg.",
+        "tasks": [
+          {
+            "text": "$8 - (3 + 2) = $ ___",
+            "choices": [
+              "3",
+              "7"
+            ],
+            "correct": "3",
+            "why": "3 plus 2 ist 5, und 8 minus 5 ist 3.",
+            "hint": "Rechne zuerst die Klammer aus. Was ziehst du dann von 8 ab?"
+          }
+        ],
+        "say": "Schau dir das an einem Beispiel mit Zahlen an. Wenn du 4 plus 1 abziehen sollst, ziehst du beides ab. Aus dem Plus vor der 1 wird also ein Minus. Deshalb dreht ein Minus vor der Klammer alles um, was darin steht."
       },
       {
         "title": "Minus vor der Klammer",
         "body": "$-(x - 3) = -x + 3$\n\nDas Minus **dreht jedes Vorzeichen** in der Klammer um.",
-        "say": "Minus-Klammer: alles umdrehen. Das brauchst du bei Gleichungen ständig."
+        "say": "Das Vorzeichen ist das Plus oder Minus, das vor einer Zahl oder einem Buchstaben steht. Ein Minus vor der Klammer dreht jedes Vorzeichen in der Klammer um. Aus x wird minus x, und aus minus 3 wird plus 3. Das brauchst du später beim Rechnen ständig.",
+        "tasks": [
+          {
+            "text": "$-(x + 5) = $ ___",
+            "choices": [
+              "$-x - 5$",
+              "$-x + 5$"
+            ],
+            "correct": "$-x - 5$",
+            "why": "Beide Vorzeichen drehen sich um: aus plus x wird minus x, aus plus 5 wird minus 5.",
+            "hint": "Drehen sich alle Vorzeichen in der Klammer um, oder nur das erste?"
+          }
+        ]
+      },
+      {
+        "title": "Das nimmst du mit",
+        "body": "(1) Gleiche Sorten zusammenfassen.\n\n(2) Bei Plus und Mal darfst du tauschen.\n\n(3) Die Zahl vor der Klammer geht an **jeden** in der Klammer.\n\n(4) Ein Minus vor der Klammer dreht alles um.",
+        "tasks": [
+          {
+            "text": "$2 \\cdot (x + 6) = $ ___",
+            "choices": [
+              "$2x + 12$",
+              "$2x + 6$"
+            ],
+            "correct": "$2x + 12$",
+            "why": "Die 2 wird auf beide verteilt: 2 mal x und 2 mal 6.",
+            "hint": "Bekommt auch die 6 in der Klammer die 2 davor?"
+          }
+        ],
+        "say": "Das sind die vier Regeln, mit denen du jeden Term vereinfachen kannst. Wenn du unsicher bist, setz für den Buchstaben eine einfache Zahl ein und prüf, ob vorher und nachher dasselbe herauskommt. Gleich kommen die Wörter und ein kleines Quiz."
       }
     ],
     "vocab": [
-      { "term": "Variable", "plain": "Ein Buchstabe als Platzhalter für eine Zahl.", "example": "$x$, $a$, $y$" },
-      { "term": "Term", "plain": "Ein Rechenausdruck ohne Gleichheitszeichen.", "example": "$3x + 5$" },
-      { "term": "Koeffizient", "plain": "Die Zahl vor der Variable.", "example": "Bei $7x$ ist 7 der Koeffizient." },
-      { "term": "Zusammenfassen", "plain": "Gleiche Buchstaben zusammenzählen.", "example": "$3a + 2a = 5a$" },
-      { "term": "Ausmultiplizieren", "plain": "Die Zahl vor der Klammer auf jeden in der Klammer verteilen.", "example": "$2(x + 3) = 2x + 6$" },
-      { "term": "Ausklammern", "plain": "Das Gemeinsame vor die Klammer ziehen, also rückwärts.", "example": "$4x + 8 = 4(x + 2)$" },
-      { "term": "Kommutativ", "plain": "Vertauschen erlaubt (Plus und Mal).", "example": "$a + b = b + a$" },
-      { "term": "Assoziativ", "plain": "Klammern versetzen erlaubt (Plus und Mal).", "example": "$(a + b) + c = a + (b + c)$" },
-      { "term": "Distributiv", "plain": "Verteilen: Mal auf eine Klammer.", "example": "$a(b + c) = ab + ac$" }
+      {
+        "term": "Variable",
+        "plain": "Ein Buchstabe als Platzhalter für eine Zahl.",
+        "example": "$x$, $a$, $y$"
+      },
+      {
+        "term": "Term",
+        "plain": "Ein Rechenausdruck ohne Gleichheitszeichen.",
+        "example": "$3x + 5$"
+      },
+      {
+        "term": "Koeffizient",
+        "plain": "Die Zahl vor der Variable.",
+        "example": "Bei $7x$ ist 7 der Koeffizient."
+      },
+      {
+        "term": "Zusammenfassen",
+        "plain": "Gleiche Buchstaben zusammenzählen.",
+        "example": "$3a + 2a = 5a$"
+      },
+      {
+        "term": "Ausmultiplizieren",
+        "plain": "Die Zahl vor der Klammer auf jeden in der Klammer verteilen.",
+        "example": "$2(x + 3) = 2x + 6$"
+      },
+      {
+        "term": "Ausklammern",
+        "plain": "Das Gemeinsame vor die Klammer ziehen, also rückwärts.",
+        "example": "$4x + 8 = 4(x + 2)$"
+      },
+      {
+        "term": "Kommutativ",
+        "plain": "Vertauschen erlaubt (Plus und Mal).",
+        "example": "$a + b = b + a$"
+      },
+      {
+        "term": "Assoziativ",
+        "plain": "Klammern versetzen erlaubt (Plus und Mal).",
+        "example": "$(a + b) + c = a + (b + c)$"
+      },
+      {
+        "term": "Distributiv",
+        "plain": "Verteilen: Mal auf eine Klammer.",
+        "example": "$a(b + c) = ab + ac$"
+      }
     ],
     "quiz": [
-      { "prompt": "Was ist $3a + 4a$?", "choices": ["$7a$", "$12a$", "$7a^2$", "Das kann man nicht zusammenfassen"], "correct": "$7a$", "explain": "3 Äpfel plus 4 Äpfel sind 7 Äpfel. Gleiche Buchstaben darf man zusammenzählen." },
-      { "prompt": "Welche Rechnung ist richtig?", "choices": ["$2 \\cdot (x + 5) = 2x + 10$", "$2 \\cdot (x + 5) = 2x + 5$", "$2 \\cdot (x + 5) = 2x + 7$", "$2 \\cdot (x + 5) = x + 10$"], "correct": "$2 \\cdot (x + 5) = 2x + 10$", "explain": "Die 2 wird auf beide verteilt: $2 \\cdot x$ und $2 \\cdot 5$." },
-      { "prompt": "Was heißt es, dass Plus kommutativ ist?", "choices": ["Man darf die Summanden vertauschen", "Man darf die Klammer weglassen", "Man darf durch 0 teilen", "Plus ist stärker als Mal"], "correct": "Man darf die Summanden vertauschen", "explain": "Kommutieren heißt tauschen: $3 + 5 = 5 + 3$." },
-      { "prompt": "Klammere aus: $6x + 9$", "choices": ["$3 \\cdot (2x + 3)$", "$6 \\cdot (x + 9)$", "$3 \\cdot (2x + 9)$", "$9 \\cdot (6x + 1)$"], "correct": "$3 \\cdot (2x + 3)$", "explain": "In 6x und 9 steckt die 3. Probe: $3 \\cdot 2x + 3 \\cdot 3 = 6x + 9$." },
-      { "prompt": "Was ist $-(a - 4)$?", "choices": ["$-a + 4$", "$-a - 4$", "$a - 4$", "$a + 4$"], "correct": "$-a + 4$", "explain": "Minus vor der Klammer dreht jedes Vorzeichen um." }
+      {
+        "prompt": "Was ist $3a + 4a$?",
+        "choices": [
+          "$7a$",
+          "$12a$",
+          "$7a^2$",
+          "Das kann man nicht zusammenfassen"
+        ],
+        "correct": "$7a$",
+        "explain": "Gleiche Buchstaben darfst du zusammenzählen: 3 a und 4 a sind 7 a. Der Buchstabe selbst ändert sich dabei nicht."
+      },
+      {
+        "prompt": "Welche Rechnung ist richtig?",
+        "choices": [
+          "$2 \\cdot (x + 5) = 2x + 10$",
+          "$2 \\cdot (x + 5) = 2x + 5$",
+          "$2 \\cdot (x + 5) = 2x + 7$",
+          "$2 \\cdot (x + 5) = x + 10$"
+        ],
+        "correct": "$2 \\cdot (x + 5) = 2x + 10$",
+        "explain": "Die 2 wird auf jeden Teil in der Klammer verteilt: 2 mal x und 2 mal 5. Die 5 darf nicht leer ausgehen."
+      },
+      {
+        "prompt": "Was heißt es, dass Plus kommutativ ist?",
+        "choices": [
+          "Man darf die Summanden vertauschen",
+          "Man darf die Klammer weglassen",
+          "Man darf durch 0 teilen",
+          "Plus ist stärker als Mal"
+        ],
+        "correct": "Man darf die Summanden vertauschen",
+        "explain": "Kommutativ bedeutet vertauschbar. Bei Plus kommt dasselbe heraus, egal welche Zahl vorn steht."
+      },
+      {
+        "prompt": "Klammere aus: $6x + 9$",
+        "choices": [
+          "$3 \\cdot (2x + 3)$",
+          "$6 \\cdot (x + 9)$",
+          "$3 \\cdot (2x + 9)$",
+          "$9 \\cdot (6x + 1)$"
+        ],
+        "correct": "$3 \\cdot (2x + 3)$",
+        "explain": "In 6x und in 9 steckt beide Male die 3. Sie kommt vor die Klammer, und in der Klammer bleibt 2x plus 3."
+      },
+      {
+        "prompt": "Was ist $-(a - 4)$?",
+        "choices": [
+          "$-a + 4$",
+          "$-a - 4$",
+          "$a - 4$",
+          "$a + 4$"
+        ],
+        "correct": "$-a + 4$",
+        "explain": "Das Minus vor der Klammer dreht jedes Vorzeichen um. Aus a wird minus a, und aus minus 4 wird plus 4."
+      },
+      {
+        "prompt": "Was ist $2a + 3b + a$?",
+        "choices": [
+          "$3a + 3b$",
+          "$6ab$",
+          "$5a + b$",
+          "$3a + 3$"
+        ],
+        "correct": "$3a + 3b$",
+        "explain": "Zuerst sortierst du: 2 a und 1 a sind 3 a. Die 3 b sind eine andere Sorte und bleiben für sich."
+      }
     ]
   }
 ]

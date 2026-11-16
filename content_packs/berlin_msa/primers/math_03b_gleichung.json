@@ -4,70 +4,361 @@
     "subject": "MATH",
     "title": "Gleichungen: die Waage",
     "teaser": "Was eine Gleichung ist, was „lösen“ heißt und warum man auf beiden Seiten das Gleiche tun muss",
-    "hook": "Eine Gleichung ist ein Rätsel: „Ich denke mir eine Zahl. Das Doppelte plus 3 ergibt 11. Welche Zahl?“ Genau das ist $2x + 3 = 11$. Lösen heißt nur: das Rätsel knacken. Und dafür gibt es einen sicheren Weg.",
+    "hook": "Ich denke mir eine Zahl. Das Doppelte plus 3 ergibt 11. Welche Zahl ist es? So ein Rätsel kann man ganz kurz aufschreiben: $2x + 3 = 11$. Lösen heißt nur, das Rätsel zu knacken. Und dafür gibt es einen sicheren Weg, den wir uns Schritt für Schritt ansehen.",
     "outro": "Waage, beide Seiten, Probe. Mehr steckt in keiner Gleichung, auch nicht in den langen. Jetzt in die Lektion.",
+    "standard": 2,
+    "requires": [
+      "P_MATH_ZEICHEN",
+      "P_MATH_TERME"
+    ],
     "steps": [
       {
+        "chapter": "Was eine Gleichung ist",
         "title": "Ein Rätsel",
-        "body": "Ich denke mir eine Zahl.\n\nDas Doppelte plus 3 ergibt 11.\n\n$2x + 3 = 11$",
-        "say": "Das ist alles, was eine Gleichung ist: ein Zahlenrätsel in kurzer Schreibweise. Das x ist die gesuchte Zahl."
+        "body": "Ich denke mir eine Zahl. Das Doppelte plus 3 ergibt 11.\n\n$2x + 3 = 11$\n\nSo ein Zahlenrätsel heißt **Gleichung**.",
+        "say": "Das ist alles, was eine Gleichung ist: ein Zahlenrätsel in kurzer Schreibweise. Das x ist die gesuchte Zahl.",
+        "tasks": [
+          {
+            "text": "Ich denke mir eine Zahl. Plus 4 ergibt 10. Als Gleichung: ___",
+            "choices": [
+              "$x + 4 = 10$",
+              "$x \\cdot 4 = 10$"
+            ],
+            "correct": "$x + 4 = 10$",
+            "why": "Das x steht für die gedachte Zahl, und plus 4 wird genau so hingeschrieben.",
+            "hint": "Welches Rechenzeichen steht im Rätsel: plus oder mal?"
+          }
+        ]
       },
       {
         "title": "Das Gleichheitszeichen",
         "body": "$=$ heißt: links und rechts ist **derselbe Wert**.\n\nWie eine **Waage** im Gleichgewicht.",
-        "say": "Links liegt die unbekannte Menge, rechts liegen 11. Die Waage steht gerade."
+        "say": "Links liegt die unbekannte Menge, rechts liegen 11. Die Waage steht gerade.",
+        "tasks": [
+          {
+            "text": "Das Gleichheitszeichen sagt: Links und rechts steht ___.",
+            "choices": [
+              "derselbe Wert",
+              "etwas Verschiedenes"
+            ],
+            "correct": "derselbe Wert",
+            "why": "Wie bei einer Waage im Gleichgewicht ist auf beiden Seiten gleich viel.",
+            "hint": "Was zeigt eine Waage an, wenn sie gerade steht?"
+          }
+        ]
       },
       {
         "title": "Was heißt „lösen“?",
         "body": "Die **Lösung** ist die Zahl, die das Rätsel wahr macht.\n\n$x = 4$: $2 \\cdot 4 + 3 = 11$ ✓\n\n$x = 5$: $2 \\cdot 5 + 3 = 13$ ✗",
-        "say": "Du könntest raten. Aber es gibt einen sicheren Weg. Nächste Tafel."
+        "say": "Du könntest raten. Aber es gibt einen sicheren Weg. Nächste Tafel.",
+        "tasks": [
+          {
+            "text": "Ist $x = 3$ eine Lösung von $x + 5 = 8$? ___",
+            "choices": [
+              "Ja",
+              "Nein"
+            ],
+            "correct": "Ja",
+            "why": "3 plus 5 ergibt 8. Die Gleichung stimmt mit dieser Zahl.",
+            "hint": "Setz die 3 für das x ein und rechne die linke Seite aus."
+          }
+        ]
       },
       {
+        "title": "Jetzt du: Ist das die Lösung?",
+        "body": "Setz die Zahl ein und tipp an, ob die Gleichung dann stimmt.",
+        "tasks": [
+          {
+            "text": "$2x = 10$ mit $x = 5$: Das ___.",
+            "choices": [
+              "stimmt",
+              "stimmt nicht"
+            ],
+            "correct": "stimmt",
+            "why": "2 mal 5 ergibt 10, genau wie auf der rechten Seite.",
+            "hint": "Was ergibt 2 mal 5? Steht das auch rechts?"
+          },
+          {
+            "text": "$x - 4 = 3$ mit $x = 6$: Das ___.",
+            "choices": [
+              "stimmt nicht",
+              "stimmt"
+            ],
+            "correct": "stimmt nicht",
+            "why": "6 minus 4 ergibt 2 und nicht 3.",
+            "hint": "Was ergibt 6 minus 4? Steht das auch rechts?"
+          }
+        ],
+        "say": "Du musst hier noch nichts umformen. Setz die Zahl für das x ein und rechne die linke Seite aus. Kommt dasselbe heraus wie rechts, ist die Zahl eine Lösung."
+      },
+      {
+        "chapter": "Der sichere Weg zur Lösung",
         "title": "Auf beiden Seiten das Gleiche",
         "body": "Nimmst du links 3 weg, musst du rechts auch 3 wegnehmen.\n\n$2x + 3 = 11 \\quad | -3$\n\n$2x = 8$",
-        "say": "Sonst kippt die Waage. Der senkrechte Strich bedeutet: auf beiden Seiten minus 3."
+        "say": "Stell dir wieder die Waage vor. Wenn du nur links etwas wegnimmst, kippt sie. Deshalb machst du auf beiden Seiten immer dasselbe. Der senkrechte Strich bedeutet: Das, was dahinter steht, geschieht auf beiden Seiten. Fachleute nennen so einen Schritt Äquivalenzumformung.",
+        "tasks": [
+          {
+            "text": "$x + 7 = 12 \\quad | -7$ ergibt ___.",
+            "choices": [
+              "$x = 5$",
+              "$x = 19$"
+            ],
+            "correct": "$x = 5$",
+            "why": "Auf beiden Seiten werden 7 abgezogen: 12 minus 7 ist 5.",
+            "hint": "Was passiert mit der 12, wenn du auf beiden Seiten 7 abziehst?"
+          }
+        ]
       },
       {
         "title": "Dann teilen",
         "body": "$2x = 8$ heißt: 2 mal $x$ ist 8.\n\n$2x = 8 \\quad | :2$\n\n$x = 4$",
-        "say": "Erst die Zahlen wegräumen, dann durch die Zahl vor dem x teilen. Fertig."
+        "say": "Jetzt steht nur noch 2 mal x auf der linken Seite. Um das Mal loszuwerden, teilst du auf beiden Seiten durch 2. Das Ziel ist immer, dass das x am Ende ganz allein steht. Man sagt dazu auch: das x isolieren.",
+        "tasks": [
+          {
+            "text": "$3x = 12 \\quad | :3$ ergibt ___.",
+            "choices": [
+              "$x = 4$",
+              "$x = 9$"
+            ],
+            "correct": "$x = 4$",
+            "why": "Auf beiden Seiten wird durch 3 geteilt: 12 geteilt durch 3 ist 4.",
+            "hint": "Was passiert mit der 12, wenn du auf beiden Seiten durch 3 teilst?"
+          }
+        ]
       },
       {
         "title": "Die Probe",
         "body": "Lösung einsetzen:\n\n$2 \\cdot 4 + 3 = 8 + 3 = 11$ ✓",
-        "say": "Mit der Probe merkst du jeden Fehler selbst. In der Prüfung ist das Gold wert."
+        "say": "Mit der Probe merkst du jeden Fehler selbst. In der Prüfung ist das Gold wert.",
+        "tasks": [
+          {
+            "text": "Probe für $x = 2$ in $4x + 1 = 9$: $4 \\cdot 2 + 1 = $ ___",
+            "choices": [
+              "9",
+              "7"
+            ],
+            "correct": "9",
+            "why": "4 mal 2 ist 8, und plus 1 ergibt 9. Die Lösung stimmt.",
+            "hint": "Rechne zuerst 4 mal 2. Was kommt danach dazu?"
+          }
+        ]
       },
       {
         "title": "„Rüberbringen“",
-        "body": "Viele sagen: „Die 3 rüberbringen, dann wird sie minus.“\n\nDas ist **dasselbe** wie $| -3$ auf beiden Seiten.",
-        "say": "Beim Seitenwechsel dreht sich das Zeichen um: Plus wird Minus, Mal wird Geteilt."
+        "body": "Manche sagen: „Die 3 auf die andere Seite bringen.“\n\nGemeint ist **dasselbe** wie $| -3$ auf beiden Seiten.",
+        "say": "Diesen Spruch hörst du im Unterricht oft. Er ist nur eine Abkürzung für das, was du schon kannst: auf beiden Seiten dasselbe tun. Wenn du unsicher bist, schreib lieber den Strich und die Rechnung dahinter. Dann siehst du immer genau, was auf beiden Seiten passiert."
       },
       {
+        "title": "Jetzt du: zwei Schritte",
+        "body": "$2x + 1 = 9$\n\nLöse die Gleichung in zwei Schritten.",
+        "tasks": [
+          {
+            "text": "Erster Schritt: ___",
+            "choices": [
+              "$| -1$",
+              "$| :2$"
+            ],
+            "correct": "$| -1$",
+            "why": "Zuerst wird die Zahl ohne x weggeräumt.",
+            "hint": "Was räumst du zuerst weg: die Zahl ohne x oder die Zahl vor dem x?"
+          },
+          {
+            "text": "Danach steht da: ___",
+            "choices": [
+              "$2x = 8$",
+              "$x = 8$"
+            ],
+            "correct": "$2x = 8$",
+            "why": "9 minus 1 ist 8. Links bleibt 2x stehen.",
+            "hint": "Was bleibt links übrig, wenn die 1 weg ist?"
+          },
+          {
+            "text": "Der letzte Schritt ergibt ___.",
+            "choices": [
+              "$x = 4$",
+              "$x = 16$"
+            ],
+            "correct": "$x = 4$",
+            "why": "8 geteilt durch 2 ist 4.",
+            "hint": "Du teilst auf beiden Seiten durch 2. Was wird aus der 8?"
+          }
+        ],
+        "say": "Jetzt löst du selbst eine Gleichung. Räum zuerst die Zahl ohne x weg. Danach teilst du durch die Zahl vor dem x. Tipp unten bei jedem Schritt auf das Richtige."
+      },
+      {
+        "chapter": "Schwierigere Gleichungen",
         "title": "x auf beiden Seiten",
         "body": "$5x + 3 = 3x + 11 \\quad | -3x$\n\n$2x + 3 = 11 \\quad | -3$\n\n$2x = 8 \\quad | :2$\n\n$x = 4$",
-        "say": "Erst alle x auf eine Seite. Dann wie gewohnt. Das Ziel ist immer: x steht allein."
+        "say": "Erst alle x auf eine Seite. Dann wie gewohnt. Das Ziel ist immer: x steht allein.",
+        "tasks": [
+          {
+            "text": "$4x = x + 9$. Der erste Schritt ist ___.",
+            "choices": [
+              "$| -x$",
+              "$| +9$"
+            ],
+            "correct": "$| -x$",
+            "why": "Zuerst kommen alle x auf eine Seite.",
+            "hint": "Auf welcher Seite stört das x noch? Wie bekommst du es dort weg?"
+          }
+        ]
+      },
+      {
+        "title": "Erst die Klammer auflösen",
+        "body": "$2 \\cdot (x + 1) = 10$\n\nKlammer auflösen: $2x + 2 = 10$\n\n$| -2$: $2x = 8$\n\n$| :2$: $x = 4$",
+        "tasks": [
+          {
+            "text": "$3 \\cdot (x + 2) = 15$. Nach dem Auflösen der Klammer: ___",
+            "choices": [
+              "$3x + 6 = 15$",
+              "$3x + 2 = 15$"
+            ],
+            "correct": "$3x + 6 = 15$",
+            "why": "Die 3 wird auf beide verteilt: 3 mal x und 3 mal 2.",
+            "hint": "Bekommt auch die 2 in der Klammer die 3 davor?"
+          }
+        ],
+        "say": "Wenn in einer Gleichung eine Klammer steht, löst du sie zuerst auf. Das kennst du aus der Lektion über Terme: Die 2 wird auf jeden in der Klammer verteilt. Danach sieht die Gleichung aus wie alle anderen, und du gehst den gewohnten Weg."
       },
       {
         "title": "Wie viele Lösungen?",
-        "body": "$x + 1 = x + 1$ → **immer** wahr\n\n$x = x + 1$ → **nie** wahr\n\n$x^2 = 9$ → $x = 3$ oder $x = -3$",
-        "say": "Meistens gibt es genau eine Lösung. Aber nicht immer, und genau das fragen sie gern."
+        "body": "$x + 1 = x + 1$: **immer** wahr\n\n$x = x + 1$: **nie** wahr\n\n$x^2 = 9$: $x = 3$ oder $x = -3$\n\nAlle Lösungen zusammen heißen **Lösungsmenge**.",
+        "say": "Meistens gibt es genau eine Lösung. Aber nicht immer, und genau das fragen sie gern.",
+        "tasks": [
+          {
+            "text": "$x^2 = 16$ hat ___.",
+            "choices": [
+              "zwei Lösungen",
+              "eine Lösung"
+            ],
+            "correct": "zwei Lösungen",
+            "why": "4 mal 4 ist 16, und minus 4 mal minus 4 ist auch 16.",
+            "hint": "Was ergibt minus 4 mal minus 4?"
+          }
+        ]
+      },
+      {
+        "title": "Das nimmst du mit",
+        "body": "(1) Auf beiden Seiten immer dasselbe tun.\n\n(2) Erst die Zahl ohne $x$ wegräumen, dann teilen.\n\n(3) Klammern zuerst auflösen.\n\n(4) Am Ende die Probe machen.",
+        "tasks": [
+          {
+            "text": "$5x - 2 = 13$. Der erste Schritt ist ___.",
+            "choices": [
+              "$| +2$",
+              "$| :5$"
+            ],
+            "correct": "$| +2$",
+            "why": "Zuerst wird die Zahl ohne x weggeräumt. Minus 2 verschwindet durch plus 2.",
+            "hint": "Welche Rechnung macht aus minus 2 eine Null?"
+          }
+        ],
+        "say": "Mit diesen vier Schritten löst du jede Gleichung, die im MSA vorkommt. Die Probe kostet dich nur ein paar Sekunden und zeigt dir jeden Fehler. Gleich kommen noch die Wörter zum Nachlesen und ein kleines Quiz."
       }
     ],
     "vocab": [
-      { "term": "Gleichung", "plain": "Zwei Terme mit einem Gleichheitszeichen dazwischen.", "example": "$2x + 3 = 11$" },
-      { "term": "Lösung", "plain": "Die Zahl, die die Gleichung wahr macht.", "example": "$x = 4$" },
-      { "term": "Lösungsmenge L", "plain": "Alle Lösungen zusammen, in geschweiften Klammern.", "example": "$L = \\{4\\}$" },
-      { "term": "Äquivalenzumformung", "plain": "Ein erlaubter Schritt auf beiden Seiten, der die Lösung nicht ändert.", "example": "$| -3$ oder $| :2$" },
-      { "term": "Probe", "plain": "Lösung einsetzen und nachrechnen.", "example": "$2 \\cdot 4 + 3 = 11$ ✓" },
-      { "term": "Isolieren", "plain": "Das x allein auf eine Seite stellen.", "example": "$x = 4$" },
-      { "term": "Unbekannte", "plain": "Ein anderes Wort für die gesuchte Variable.", "example": "meist $x$" }
+      {
+        "term": "Gleichung",
+        "plain": "Zwei Terme mit einem Gleichheitszeichen dazwischen.",
+        "example": "$2x + 3 = 11$"
+      },
+      {
+        "term": "Lösung",
+        "plain": "Die Zahl, die die Gleichung wahr macht.",
+        "example": "$x = 4$"
+      },
+      {
+        "term": "Lösungsmenge",
+        "plain": "Alle Lösungen zusammen, in geschweiften Klammern.",
+        "example": "$L = \\{4\\}$"
+      },
+      {
+        "term": "Äquivalenzumformung",
+        "plain": "Ein erlaubter Schritt auf beiden Seiten, der die Lösung nicht ändert.",
+        "example": "$| -3$ oder $| :2$"
+      },
+      {
+        "term": "Probe",
+        "plain": "Lösung einsetzen und nachrechnen.",
+        "example": "$2 \\cdot 4 + 3 = 11$ ✓"
+      },
+      {
+        "term": "Isolieren",
+        "plain": "Das x allein auf eine Seite stellen.",
+        "example": "$x = 4$"
+      },
+      {
+        "term": "Unbekannte",
+        "plain": "Ein anderes Wort für die gesuchte Variable.",
+        "example": "meist $x$"
+      }
     ],
     "quiz": [
-      { "prompt": "Welche Zahl löst $x + 5 = 12$?", "choices": ["7", "17", "5", "12"], "correct": "7", "explain": "$7 + 5 = 12$. Oder: auf beiden Seiten minus 5." },
-      { "prompt": "$2x + 3 = 11$. Was machst du zuerst?", "choices": ["Auf beiden Seiten $-3$", "Auf beiden Seiten $:2$", "Links $-3$, rechts nichts", "$x = 11 - 2$"], "correct": "Auf beiden Seiten $-3$", "explain": "Erst die Zahlen wegräumen, und immer auf beiden Seiten. Dann $2x = 8$." },
-      { "prompt": "Was bedeutet der Strich in „$| -4$“?", "choices": ["Auf beiden Seiten 4 abziehen", "Nur links 4 abziehen", "Durch 4 teilen", "4 dazuzählen"], "correct": "Auf beiden Seiten 4 abziehen", "explain": "Der Strich heißt: Das Folgende passiert links und rechts." },
-      { "prompt": "$x = 3$ soll Lösung von $4x - 2 = 10$ sein. Wie prüfst du das?", "choices": ["Einsetzen: $4 \\cdot 3 - 2 = 10$ ✓", "Die Gleichung nochmal lösen", "3 durch 4 teilen", "Gar nicht, das sieht man"], "correct": "Einsetzen: $4 \\cdot 3 - 2 = 10$ ✓", "explain": "Probe heißt einsetzen und nachrechnen. $12 - 2 = 10$, stimmt." },
-      { "prompt": "Wie viele Lösungen hat $x^2 = 16$?", "choices": ["Zwei: 4 und $-4$", "Eine: 4", "Eine: 8", "Keine"], "correct": "Zwei: 4 und $-4$", "explain": "$4 \\cdot 4 = 16$ und $(-4) \\cdot (-4) = 16$." }
+      {
+        "prompt": "Welche Zahl löst $x + 5 = 12$?",
+        "choices": [
+          "7",
+          "17",
+          "5",
+          "12"
+        ],
+        "correct": "7",
+        "explain": "Welche Zahl plus 5 ergibt 12? Du ziehst auf beiden Seiten 5 ab und bekommst 7."
+      },
+      {
+        "prompt": "$2x + 3 = 11$. Was machst du zuerst?",
+        "choices": [
+          "Auf beiden Seiten $-3$",
+          "Auf beiden Seiten $:2$",
+          "Links $-3$, rechts nichts",
+          "$x = 11 - 2$"
+        ],
+        "correct": "Auf beiden Seiten $-3$",
+        "explain": "Zuerst räumst du die Zahl ohne x weg, also auf beiden Seiten minus 3. Erst danach teilst du durch 2."
+      },
+      {
+        "prompt": "Was bedeutet der Strich in „$| -4$“?",
+        "choices": [
+          "Auf beiden Seiten 4 abziehen",
+          "Nur links 4 abziehen",
+          "Durch 4 teilen",
+          "4 dazuzählen"
+        ],
+        "correct": "Auf beiden Seiten 4 abziehen",
+        "explain": "Der senkrechte Strich bedeutet, dass die Rechnung dahinter auf beiden Seiten gemacht wird. Hier werden auf beiden Seiten 4 abgezogen."
+      },
+      {
+        "prompt": "$x = 3$ soll Lösung von $4x - 2 = 10$ sein. Wie prüfst du das?",
+        "choices": [
+          "Einsetzen: $4 \\cdot 3 - 2 = 10$ ✓",
+          "Die Gleichung nochmal lösen",
+          "3 durch 4 teilen",
+          "Gar nicht, das sieht man"
+        ],
+        "correct": "Einsetzen: $4 \\cdot 3 - 2 = 10$ ✓",
+        "explain": "Bei der Probe setzt du die Lösung für x ein und rechnest die linke Seite aus. Kommt 10 heraus, stimmt die Lösung."
+      },
+      {
+        "prompt": "Wie viele Lösungen hat $x^2 = 16$?",
+        "choices": [
+          "Zwei: 4 und $-4$",
+          "Eine: 4",
+          "Eine: 8",
+          "Keine"
+        ],
+        "correct": "Zwei: 4 und $-4$",
+        "explain": "4 mal 4 ist 16, und minus 4 mal minus 4 ist ebenfalls 16. Deshalb gibt es zwei Lösungen."
+      },
+      {
+        "prompt": "Löse $3x - 4 = 11$.",
+        "choices": [
+          "$x = 5$",
+          "$x = 7$",
+          "$x = 15$",
+          "$x = \\frac{7}{3}$"
+        ],
+        "correct": "$x = 5$",
+        "explain": "Zuerst auf beiden Seiten plus 4, dann steht 3x gleich 15 da. Geteilt durch 3 ergibt das 5."
+      }
     ]
   }
 ]

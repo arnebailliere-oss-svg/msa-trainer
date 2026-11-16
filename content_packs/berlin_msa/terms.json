@@ -15,12 +15,12 @@
     "These", "Argument", "Beleg", "Erörterung", "Schreibplan", "Fazit", "Textsorte", "Erzähler", "Sachtext"
   ],
   "MATH": [
-    "Term", "Variable", "Gleichung", "Ungleichung", "Summe", "Differenz", "Produkt", "Quotient", "Faktor", "Koeffizient", "Klammer", "Vorzeichen", "Betrag",
+    "Term", "Variable", "Gleichung", "Ungleichung", "Summe", "Differenz", "Produkt", "Quotient", "Faktor", "Koeffizient", "Klammer", "Vorzeichen",
     "Bruch", "Zähler", "Nenner", "Hauptnenner", "Kehrwert", "kgV", "ggT", "Dezimalzahl", "Prozentsatz", "Prozentwert", "Grundwert", "Zinssatz", "Kapital",
     "Potenz", "Basis", "Exponent", "Wurzel", "Quadratzahl", "Zehnerpotenz",
     "Funktion", "Steigung", "Achsenabschnitt", "Wertetabelle", "Koordinatensystem", "Parabel", "Scheitelpunkt", "Nullstelle", "proportional", "antiproportional", "Dreisatz", "Wachstumsfaktor",
     "Gleichungssystem", "Einsetzungsverfahren", "Additionsverfahren", "Gleichsetzungsverfahren", "Lösungsmenge",
-    "Hypotenuse", "Kathete", "Sinus", "Kosinus", "Tangens", "Radius", "Durchmesser", "Umfang", "Flächeninhalt", "Volumen", "Oberfläche", "Mantelfläche", "Grundfläche", "Prisma", "Zylinder", "Pyramide", "Kegel", "Kugel",
+    "Hypotenuse", "Kathete", "Sinus", "Kosinus", "Tangens", "Radius", "Durchmesser", "Umfang", "Flächeninhalt", "Volumen", "Oberfläche", "Mantelfläche", "Grundfläche", "Prisma", "Zylinder", "Pyramide", "Kegel",
     "Mittelwert", "Median", "Spannweite", "Wahrscheinlichkeit", "Ereignis", "Baumdiagramm", "relative Häufigkeit", "absolute Häufigkeit"
   ]
 }
