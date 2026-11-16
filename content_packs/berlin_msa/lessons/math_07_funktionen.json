@@ -101,7 +101,7 @@
       {
         "kind": "formula",
         "title": "Exponentielles Wachstum und Abnahme",
-        "body": "Bei **linearem** Wachstum kommt in jedem Schritt die **gleiche Zahl dazu** (z. B. + 50 € pro Monat). Bei **exponentiellem** Wachstum wird in jedem Schritt mit dem **gleichen Faktor multipliziert** (z. B. · 1,05 pro Jahr) — deshalb wird es immer schneller.\n\n**Wachstumsfaktor** $q = 1 + \\frac{p}{100}$ bei Zunahme um $p\\,\\%$, $q = 1 - \\frac{p}{100}$ bei Abnahme. Wert nach $n$ Schritten: $B(n) = B_0 \\cdot q^n$ — $B_0$ ist der Startwert. In einer Tabelle erkennst du exponentielles Wachstum daran, dass **Wert : Vorgängerwert** immer gleich ist.\n\nBeispiel: 800 € werden zu 3 % Zinseszins angelegt. $q = 1{,}03$, nach 5 Jahren: $800 \\cdot 1{,}03^5 \\approx 927{,}42$ €. Eine Bakterienkultur verdoppelt sich jede Stunde: $N(t) = 80 \\cdot 2^t$. Ein Auto verliert jährlich 20 % an Wert: $W(t) = 15\\,000 \\cdot 0{,}8^t$.\n\n**Merke:** linear = **plus** die gleiche Zahl, exponentiell = **mal** der gleiche Faktor. $q > 1$ Wachstum, $q < 1$ Abnahme. Der Faktor steht **hoch** $n$, nicht mal $n$.",
+        "body": "Bei **linearem** Wachstum kommt in jedem Schritt die **gleiche Zahl dazu** (z. B. + 50 € pro Monat). Bei **exponentiellem** Wachstum wird in jedem Schritt mit dem **gleichen Faktor multipliziert** (z. B. · 1,05 pro Jahr) — deshalb wird es immer schneller.\n\n**Wachstumsfaktor** $q = 1 + \\frac{p}{100}$ bei Zunahme um $p\\,\\%$, $q = 1 - \\frac{p}{100}$ bei Abnahme. Wert nach $n$ Schritten: $B(n) = B_0 \\cdot q^n$ — $B_0$ ist der Startwert. In einer Tabelle erkennst du exponentielles Wachstum daran, dass **Wert : Vorgängerwert** immer gleich ist.\n\n| Beispiel | Rechnung |\n|---|---|\n| 800 € zu 3 % Zinseszins, nach 5 Jahren | $800 \\cdot 1{,}03^5 \\approx 927{,}42$ € |\n| Bakterien verdoppeln sich jede Stunde | $N(t) = 80 \\cdot 2^t$ |\n| Ein Auto verliert jährlich 20 % an Wert | $W(t) = 15\\,000 \\cdot 0{,}8^t$ |\n\n**Merke:** linear = **plus** die gleiche Zahl, exponentiell = **mal** der gleiche Faktor. $q > 1$ Wachstum, $q < 1$ Abnahme. Der Faktor steht **hoch** $n$, nicht mal $n$.",
         "primer": "P_MATH_FUNKTION"
       },
       {
@@ -112,9 +112,14 @@
       {
         "kind": "remember",
         "title": "Merke",
-        "body": "Gerade: $y = mx + n$ — $m$ Steigung, $n$ Schnitt mit der $y$-Achse. Parabel: $a(x - d)^2 + e$ — Scheitel $S(d \\,|\\, e)$. Nullstelle = $y$ gleich **0** setzen."
+        "body": "- Eine Gerade hat die Form $y = mx + n$. Dabei ist $m$ die Steigung und $n$ der Schnitt mit der $y$-Achse.\n- Eine Parabel hat die Form $a(x - d)^2 + e$. Ihr Scheitelpunkt ist $S(d \\,|\\, e)$.\n- Für die Nullstelle setzt du $y$ gleich **0**."
       }
     ],
-    "primer": "P_MATH_FUNKTION"
+    "primer": "P_MATH_FUNKTION",
+    "sheet": true,
+    "guided": [
+      "P_MATH_FUNKTION",
+      "P_MATH_QUADRAT"
+    ]
   }
 ]

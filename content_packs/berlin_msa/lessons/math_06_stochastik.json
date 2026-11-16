@@ -92,9 +92,13 @@
       {
         "kind": "remember",
         "title": "Merke",
-        "body": "**Günstig durch möglich.** Entlang des Pfades **mal**, über Pfade **plus**. Median = Mitte der **sortierten** Reihe. Kreisdiagramm: Anteil **· 360°**."
+        "body": "- Die Wahrscheinlichkeit ist **günstig durch möglich**.\n- Entlang eines Pfades nimmst du **mal**, mehrere Pfade zählst du **zusammen**.\n- Der Median ist die Mitte der **sortierten** Reihe.\n- Im Kreisdiagramm ist der Winkel der Anteil **mal 360°**."
       }
     ],
-    "primer": "P_MATH_STOCHASTIK"
+    "primer": "P_MATH_STOCHASTIK",
+    "sheet": true,
+    "guided": [
+      "P_MATH_STOCHASTIK"
+    ]
   }
 ]

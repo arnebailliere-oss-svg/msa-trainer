@@ -81,7 +81,7 @@
       {
         "title": "Grundfläche mal Höhe",
         "body": "Quader, **Zylinder** (eine Dose) und **Prisma** (eine Säule mit eckigem Boden):\n\n$V = G \\cdot h$\n\n$G$ ist die **Grundfläche**, also der Boden. $h$ ist die Höhe.",
-        "say": "Alle Körper mit geraden Wänden haben dieselbe Formel. Du rechnest zuerst aus, wie groß der Boden ist. Dann nimmst du diese Fläche mal die Höhe. Nur der Boden sieht je nach Körper anders aus: mal ein Rechteck, mal ein Kreis, mal ein Dreieck.",
+        "say": "Alle Körper mit geraden Wänden haben dieselbe Formel. Du rechnest zuerst aus, wie groß der Boden ist. Dann nimmst du diese Fläche mal die Höhe. Nur der Boden sieht je nach Körper anders aus: mal ein Rechteck, mal ein Kreis, mal ein Dreieck. Auf dem Formelblatt heißt die Grundfläche A mit einem kleinen G und die Oberfläche A mit einem kleinen O.",
         "tasks": [
           {
             "text": "Die Grundfläche ist $12\\ \\text{cm}^2$, die Höhe 5 cm. $V = $ ___",

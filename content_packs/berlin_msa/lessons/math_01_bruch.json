@@ -52,7 +52,7 @@
       {
         "kind": "formula",
         "title": "Bruch, Dezimalzahl und Prozent umwandeln",
-        "body": "Bruch, Dezimalzahl und Prozent sind **drei Schreibweisen für dieselbe Zahl**: $\\frac{1}{4} = 0{,}25 = 25\\,\\%$.\n\n- **Bruch → Dezimalzahl**: Zähler durch Nenner teilen: $\\frac{3}{8} = 3 : 8 = 0{,}375$. Oder auf den Nenner 10, 100, 1000 erweitern: $\\frac{3}{5} = \\frac{6}{10} = 0{,}6$.\n- **Dezimalzahl → Bruch**: Nachkommastellen zählen — so viele Nullen bekommt der Nenner: $0{,}45 = \\frac{45}{100} = \\frac{9}{20}$, am Ende kürzen.\n- **Prozent** heißt „von Hundert“: $35\\,\\% = \\frac{35}{100} = 0{,}35$. Umgekehrt Dezimalzahl mal 100: $0{,}08 = 8\\,\\%$.\n\nBeispiel: Welche Zahl ist größer, $\\frac{5}{8}$ oder $0{,}6$? $\\frac{5}{8} = 5 : 8 = 0{,}625$, und $0{,}625 > 0{,}6$ — also ist $\\frac{5}{8}$ größer.\n\n**Merke:** Bruch → Dezimalzahl: **teilen**. Dezimalzahl → Bruch: **Nachkommastellen zählen** (1 Stelle → Zehntel, 2 Stellen → Hundertstel). Prozent = **Hundertstel**. Auswendig: $\\frac{1}{2} = 0{,}5$, $\\frac{1}{4} = 0{,}25$, $\\frac{3}{4} = 0{,}75$, $\\frac{1}{5} = 0{,}2$, $\\frac{1}{8} = 0{,}125$, $\\frac{1}{3} = 0{,}\\overline{3}$."
+        "body": "Bruch, Dezimalzahl und Prozent sind **drei Schreibweisen für dieselbe Zahl**: $\\frac{1}{4} = 0{,}25 = 25\\,\\%$.\n\n- **Bruch → Dezimalzahl**: Zähler durch Nenner teilen: $\\frac{3}{8} = 3 : 8 = 0{,}375$. Oder auf den Nenner 10, 100, 1000 erweitern: $\\frac{3}{5} = \\frac{6}{10} = 0{,}6$.\n- **Dezimalzahl → Bruch**: Nachkommastellen zählen — so viele Nullen bekommt der Nenner: $0{,}45 = \\frac{45}{100} = \\frac{9}{20}$, am Ende kürzen.\n- **Prozent** heißt „von Hundert“: $35\\,\\% = \\frac{35}{100} = 0{,}35$. Umgekehrt Dezimalzahl mal 100: $0{,}08 = 8\\,\\%$.\n\nBeispiel: Welche Zahl ist größer, $\\frac{5}{8}$ oder $0{,}6$? $\\frac{5}{8} = 5 : 8 = 0{,}625$, und $0{,}625 > 0{,}6$ — also ist $\\frac{5}{8}$ größer.\n\nDiese Werte solltest du auswendig kennen:\n\n| Bruch | Dezimalzahl |\n|---|---|\n| $\\frac{1}{2}$ | $0{,}5$ |\n| $\\frac{1}{4}$ | $0{,}25$ |\n| $\\frac{3}{4}$ | $0{,}75$ |\n| $\\frac{1}{5}$ | $0{,}2$ |\n| $\\frac{1}{8}$ | $0{,}125$ |\n| $\\frac{1}{3}$ | $0{,}\\overline{3}$ |"
       },
       {
         "kind": "mistake",
@@ -62,9 +62,13 @@
       {
         "kind": "remember",
         "title": "Merke",
-        "body": "**Erweitern und Kürzen** ändern nur die Schreibweise, nicht den Wert. **Plus und Minus** brauchen den gleichen Nenner. **Mal**: oben mal oben, unten mal unten. **Geteilt**: mit dem Kehrwert malnehmen. Am Ende immer kürzen!"
+        "body": "- Erweitern und Kürzen ändern nur die Schreibweise, nicht den Wert.\n- Plus und Minus brauchen den **gleichen Nenner**.\n- Mal: Du rechnest oben mal oben und unten mal unten.\n- Geteilt: Du nimmst mit dem **Kehrwert** mal.\n- Am Ende kürzt du das Ergebnis."
       }
     ],
-    "primer": "P_MATH_BRUCH"
+    "primer": "P_MATH_BRUCH",
+    "sheet": true,
+    "guided": [
+      "P_MATH_BRUCH"
+    ]
   }
 ]

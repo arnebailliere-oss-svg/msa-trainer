@@ -70,9 +70,13 @@
       {
         "kind": "remember",
         "title": "Merke",
-        "body": "Steht $y = \\ldots$ da → **einsetzen** oder **gleichsetzen**. Stehen beide in der Form $ax + by = c$ → **Additionsverfahren**. Lösung immer als Paar $(x \\,|\\, y)$ angeben."
+        "body": "- Steht in einer Gleichung schon $y = \\ldots$, dann nimmst du das **Einsetzen** oder das **Gleichsetzen**.\n- Haben beide Gleichungen die Form $ax + by = c$, dann nimmst du das **Additionsverfahren**.\n- Die Lösung gibst du immer als Paar $(x \\,|\\, y)$ an."
       }
     ],
-    "primer": "P_MATH_LGS"
+    "primer": "P_MATH_LGS",
+    "sheet": true,
+    "guided": [
+      "P_MATH_LGS"
+    ]
   }
 ]

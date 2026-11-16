@@ -265,10 +265,14 @@
       {
         "kind": "remember",
         "title": "Merke",
-        "body": "Rechteck $a \\cdot b$ · Dreieck $\\frac{1}{2} a h$ · Kreis $\\pi r^2$ und $2 \\pi r$ · Dreieckswinkel **180°** · Punkt: **erst $x$, dann $y$**."
+        "body": "- Rechteck: Die Fläche ist $a \\cdot b$.\n- Dreieck: Die Fläche ist $\\frac{1}{2} a h$.\n- Kreis: Die Fläche ist $\\pi r^2$, und der Umfang ist $2 \\pi r$.\n- Die Winkel im Dreieck ergeben zusammen **180°**.\n- Bei einem Punkt steht **erst $x$, dann $y$**."
       }
     ],
-    "primer": "P_MATH_GEO_BEGRIFFE"
+    "primer": "P_MATH_GEO_BEGRIFFE",
+    "sheet": true,
+    "guided": [
+      "P_MATH_GEO_BEGRIFFE"
+    ]
   },
   {
     "id": "L_MATH_GEO_PYTH_TRIG",
@@ -329,7 +333,7 @@
       {
         "kind": "steps",
         "title": "So rechnest du",
-        "body": "1. Rechten Winkel finden, Hypotenuse markieren.\n2. Vom gegebenen Winkel aus: welche Seite ist gegeben, welche gesucht? → passende Funktion wählen.\n3. Gleichung aufstellen, umstellen, Taschenrechner (auf **DEG** stellen!).\n\n$\\alpha = 90°$, $\\beta = 55°$, $a = 8$ (Hypotenuse), $c$ gesucht (Ankathete von $\\beta$): $\\cos\\beta = \\frac{c}{a} \\Rightarrow c = a \\cdot \\cos 55° \\approx 4{,}59$\n\nWinkel gesucht: $\\tan\\alpha = \\frac{4}{8} \\Rightarrow \\alpha = \\tan^{-1}(0{,}5) \\approx 26{,}6°$"
+        "body": "1. Rechten Winkel finden, Hypotenuse markieren.\n2. Vom gegebenen Winkel aus: Welche Seite ist gegeben, welche ist gesucht? Danach wählst du sin, cos oder tan.\n3. Gleichung aufstellen, umstellen, Taschenrechner (auf **DEG** stellen!).\n\n**Beispiel 1, Seite gesucht:** Der rechte Winkel liegt hier bei $\\alpha$. Deshalb ist $a = 8$ die Hypotenuse. Gegeben ist $\\beta = 55°$, gesucht ist $c$, die Ankathete von $\\beta$.\n\n$\\cos 55° = \\frac{c}{8}$, also $c = 8 \\cdot \\cos 55° \\approx 4{,}59$\n\n**Beispiel 2, Winkel gesucht:** Die Gegenkathete ist 4, die Ankathete ist 8.\n\n$\\tan\\alpha = \\frac{4}{8} = 0{,}5$, also $\\alpha = \\tan^{-1}(0{,}5) \\approx 26{,}6°$"
       },
       {
         "kind": "formula",
@@ -358,10 +362,14 @@
       {
         "kind": "remember",
         "title": "Merke",
-        "body": "**$a^2 + b^2 = c^2$**, $c$ gegenüber vom rechten Winkel. **GAGA HüHnerHof AG**. Winkel gesucht → $\\sin^{-1}$, $\\cos^{-1}$, $\\tan^{-1}$. Kein rechter Winkel → Sinussatz oder Kosinussatz (Formelblatt)."
+        "body": "- Im rechtwinkligen Dreieck gilt **$a^2 + b^2 = c^2$**. Dabei liegt $c$ gegenüber vom rechten Winkel.\n- Für sin, cos und tan hilft das Merkwort **GAGA HüHnerHof AG**.\n- Ist ein Winkel gesucht, nimmst du $\\sin^{-1}$, $\\cos^{-1}$ oder $\\tan^{-1}$.\n- Ohne rechten Winkel nimmst du den Sinussatz oder den Kosinussatz vom Formelblatt."
       }
     ],
-    "primer": "P_MATH_PYTH_TRIG"
+    "primer": "P_MATH_PYTH_TRIG",
+    "sheet": true,
+    "guided": [
+      "P_MATH_PYTH_TRIG"
+    ]
   },
   {
     "id": "L_MATH_GEO_KOERPER",
@@ -493,9 +501,13 @@
       {
         "kind": "remember",
         "title": "Merke",
-        "body": "Gerade Körper: **Grundfläche mal Höhe**. Spitze Körper: **ein Drittel** davon. Oberfläche = Mantel **+** Grundfläche(n). Liter = dm³."
+        "body": "- Gerade Körper: Das Volumen ist **Grundfläche mal Höhe**.\n- Spitze Körper: Das Volumen ist **ein Drittel** davon.\n- Die Oberfläche ist der Mantel **plus** die Grundflächen.\n- Ein Liter ist ein Kubikdezimeter: $1\\,\\text{l} = 1\\,\\text{dm}^3$"
       }
     ],
-    "primer": "P_MATH_KOERPER"
+    "primer": "P_MATH_KOERPER",
+    "sheet": true,
+    "guided": [
+      "P_MATH_KOERPER"
+    ]
   }
 ]

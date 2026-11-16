@@ -106,6 +106,14 @@ Evidence for German: `npm run content` reports 24 of 24 German Eulen-Lektionen a
 
 Still open in German: no guided lesson for reading diagrams and tables or for literary texts (both are on the reading Spickzettel only) · explanations in de_05 to de_09 were not on the weak list and are unchanged · human read-through for tone and correctness by Arne.
 
+Maths, 2026-11-16, upgraded in place (owner's instruction: keep what is there, nothing redrawn, because the lessons move to Android later). All 14 owl lessons keep their boards, examples and figures. Added everywhere: chapters with a pause point, a tap task with a hint on every board, terms in bold where they first appear plus `requires`, Ferdinand's lines in full sentences, quiz explanations, a summary board "Das nimmst du mit". Added only where a step was skipped: fully reducing, mixed numbers, common denominator (BRUCH) · which of the three numbers is asked, increase, um/auf, Zinseszins (PROZENT) · sorting, why a minus flips the bracket (TERME) · checking a solution, brackets first (GLEICHUNG) · why hoch 0 is 1, only with the same base (POTENZ) · checking a pair, when nothing cancels (LGS) · without putting back (STOCHASTIK) · plus-minus before the formula, pq formula step by step, how many solutions (QUADRAT). Sources: `tools/lessons/math_*.cjs`; each one re-applies its changes to the untouched original in `tools/lessons/orig/`.
+
+The 12 maths lesson pages are now Spickzettel linked to their owl lessons. Formulas, examples, figures and widgets are unchanged; changed are the "Merke" boxes (short lists of full sentences), six arrow chains and one card that was too long. Source: `tools/lessons/math_sheets.cjs`.
+
+Evidence for Maths: `npm run content` reports 55 of 55 Eulen-Lektionen and 22 of 22 lesson pages at the standard, 0 errors · `PRIMER_SUBJECT=MATH` walk-through of every maths lesson on desktop and phone passed (all boards render, no sideways overflow, no page errors) · unit tests 151/151.
+
+Still open in Maths: no owl boards for rule of three, exponential growth, circle and π, charts, word problems, binomial formulas, Gleichsetzungsverfahren, Sinus-/Kosinussatz, slope triangle, rounding, negative numbers (they are on the Spickzettel or in drills only) · explanations in math_01 to math_12 and legacy_math were not on the weak list and are unchanged (126 of 358 still use arrow notation) · human read-through for tone and correctness by Arne.
+
 ## Content errors to verify and fix
 
 - ☑ P_EN_READING, "half past nine": lesson rewritten; half past is now taught in P_EN_LISTENING with its own boards and tasks.
@@ -116,10 +124,12 @@ Still open in German: no guided lesson for reading diagrams and tables or for li
 - ☑ P_DE_WORTARTEN: both corrected in the rebuilt lessons.
 - ☑ P_DE_STILMITTEL: rebuilt; the count mismatch is gone.
 - ☑ L_DE_RECHTSCHREIBUNG: the rule now includes ö from o and ü from u (P_DE_STRATEGIEN board "Strategie 2: ableiten"), so the example fits the rule.
-- ☐ L_MATH_FORMELBLATT: vertex form written as (x + d)² + e with S(−d|e); lessons use (x − d)² + e with S(d|e). Kosinussatz referenced but absent.
-- ☐ L_MATH_GEO_PYTH_TRIG: worked example names a as hypotenuse after c was taught.
-- ☐ P_MATH_EINHEITEN board 4: 1 m² = 10 000 cm² next to "jede Stufe mal 100".
-- ☐ Maths notation drift: G/O/M/U vs A_G/A_O/A_M/u; W/p = G/100 vs W/G = p/100.
+- ☑ L_MATH_FORMELBLATT: the sheet keeps its own notation, (x + d)² + e with S(−d|e), and now says that the lessons write the same form as (x − d)² + e with S(d|e). Kosinussatz added (a² = b² + c² − 2bc·cos α, the formula the trig page already uses). Not compared with the official printed formula sheet.
+- ☑ L_MATH_GEO_PYTH_TRIG: both worked examples now say which angle is the right angle and which side is the hypotenuse, one step per line.
+- ☑ P_MATH_EINHEITEN: the area and volume boards now say "from one step to the next: mal 100 / mal 1000" and that m² to cm² is two steps.
+- ☑ Maths notation: not unified (the Formelblatt keeps its letters), but bridged: the Formelblatt names the lesson's form of the percent formula, and P_MATH_KOERPER says that the sheet writes A_G and A_O.
+- ☑ MSA2025_4A_RAMPE_T: the explanation ended with a stray "— 1" or "— 0" (an unformatted condition). Removed.
+- ☑ MSA2023_5C_DOSE_ABFALL: the steps said 24,6 %, the answer line said 24,5 %. Both now say 24,6 % (the accepted value 24,5 ± 0,3 is unchanged).
 - ☑ Maths owl quizzes: correct answer is listed first in all 73 items. The app did not shuffle; it now shuffles quiz and task choices on every visit (PrimerView, 2026-11-15).
 
 ## Taught nowhere (drills exist or the material assumes it)
@@ -136,7 +146,7 @@ Maths: calculating with negative numbers · rounding (40 questions say "Runde") 
 |---|---|---|---|
 | English | 62 of 159 | 44 | en_01_grammar, en_03_writing_vocab: ☑ rewritten 2026-11-15 (17 questions, about 200 sentence records: why right, why the tempting wrong one is wrong; "Merke" as table or list) |
 | German | 77 of 236 | 67 | de_01–de_04 and de_exam_2023/2024: ☑ rewritten 2026-11-16 (24 template questions with 309 sentence records, 61 exam questions; full sentences, no arrows, "Merke" as table or list). Also fixed: DE_SS_SZ_T1 record "Fla___" → "Fa___" |
-| Maths | 68 of 260 | 57 | exam files (median 34–41 words) |
+| Maths | 68 of 260 | 57 | exam files 2023–2025: ☑ 2026-11-16, 51 of 82 explanations rewritten (step by step, one sentence of reason per step, no arrows); the other 31 were already in full sentences and are unchanged. Structure (steps / mistake / remember / answer) kept. Source: `tools/lessons/math_exam_explanations.cjs` |
 
 Models to copy: en_04_drills, de_07/08/09 drill files, math_12_graphen_tabellen_sach.
 

@@ -41,14 +41,18 @@
       {
         "kind": "mistake",
         "title": "Typische Fehler",
-        "body": "- **„um“ und „auf“ verwechseln:** *um 20 % erhöht* → Faktor 1,2. *auf 20 % gesenkt* → Faktor 0,2!\n- Beim **Grundwert** nicht den Prozentwert mit dem Prozentsatz multiplizieren, sondern **dividieren**: $G = W : \\frac{p}{100}$.\n- Erst +20 %, dann −20 % ergibt **nicht** den Ausgangswert: $1{,}2 \\cdot 0{,}8 = 0{,}96$ — es fehlen 4 %.\n- Prozentsatz immer auf den **Grundwert** beziehen, nie auf den Prozentwert."
+        "body": "- **„um“ und „auf“ verwechseln:** *Um 20 % erhöht* bedeutet Faktor 1,2. *Auf 20 % gesenkt* bedeutet Faktor 0,2.\n- Beim **Grundwert** nicht den Prozentwert mit dem Prozentsatz multiplizieren, sondern **dividieren**: $G = W : \\frac{p}{100}$.\n- Erst +20 %, dann −20 % ergibt **nicht** den Ausgangswert: $1{,}2 \\cdot 0{,}8 = 0{,}96$ — es fehlen 4 %.\n- Prozentsatz immer auf den **Grundwert** beziehen, nie auf den Prozentwert."
       },
       {
         "kind": "remember",
         "title": "Merke",
-        "body": "**Prozent = Hundertstel.** Eine Formel: $\\frac{W}{G} = \\frac{p}{100}$. Änderungen rechnest du mit dem **Faktor** $1 \\pm \\frac{p}{100}$; bei Zinseszins kommt der Faktor **hoch n**."
+        "body": "- Prozent bedeutet **Hundertstel**.\n- Eine Formel reicht für alle Aufgaben: $\\frac{W}{G} = \\frac{p}{100}$\n- Änderungen rechnest du mit dem **Faktor** $1 \\pm \\frac{p}{100}$.\n- Bei Zinseszins steht der Faktor **hoch n**."
       }
     ],
-    "primer": "P_MATH_PROZENT"
+    "primer": "P_MATH_PROZENT",
+    "sheet": true,
+    "guided": [
+      "P_MATH_PROZENT"
+    ]
   }
 ]

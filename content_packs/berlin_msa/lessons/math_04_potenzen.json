@@ -37,9 +37,13 @@
       {
         "kind": "remember",
         "title": "Merke",
-        "body": "Mal → Exponenten **plus**. Geteilt → Exponenten **minus**. Potenz hoch Potenz → Exponenten **mal**. Negativer Exponent → **Kehrwert**. Wurzel = Potenz mit **Bruch** im Exponenten."
+        "body": "- Bei Mal werden die Exponenten **zusammengezählt**.\n- Bei Geteilt werden die Exponenten **abgezogen**.\n- Bei Potenz hoch Potenz werden die Exponenten **malgenommen**.\n- Ein negativer Exponent bedeutet den **Kehrwert**.\n- Eine Wurzel ist eine Potenz mit einem **Bruch** im Exponenten."
       }
     ],
-    "primer": "P_MATH_POTENZ"
+    "primer": "P_MATH_POTENZ",
+    "sheet": true,
+    "guided": [
+      "P_MATH_POTENZ"
+    ]
   }
 ]

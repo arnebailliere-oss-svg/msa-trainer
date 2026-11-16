@@ -45,7 +45,7 @@
       {
         "kind": "formula",
         "title": "Quadratische Gleichungen: die pq-Formel",
-        "body": "Steht $x^2$ in der Gleichung, bringst du sie zuerst in die **Normalform** $x^2 + px + q = 0$ (alles auf eine Seite, dann durch den Faktor vor $x^2$ teilen). Dann:\n\n$$x_{1,2} = -\\frac{p}{2} \\pm \\sqrt{\\left(\\frac{p}{2}\\right)^2 - q}$$\n\nUnter der Wurzel negativ → **keine** Lösung. Null → **eine** Lösung. Positiv → **zwei** Lösungen.\n\nBeispiel: $x^2 + 14x - 15 = 0$: $x_{1,2} = -7 \\pm \\sqrt{49 + 15} = -7 \\pm 8 \\Rightarrow x_1 = 1,\\; x_2 = -15$",
+        "body": "Steht $x^2$ in der Gleichung, bringst du sie zuerst in die **Normalform** $x^2 + px + q = 0$ (alles auf eine Seite, dann durch den Faktor vor $x^2$ teilen). Dann:\n\n$$x_{1,2} = -\\frac{p}{2} \\pm \\sqrt{\\left(\\frac{p}{2}\\right)^2 - q}$$\n\nDie Zahl unter der Wurzel zeigt, wie viele Lösungen es gibt:\n\n- Sie ist negativ: **keine** Lösung.\n- Sie ist null: **eine** Lösung.\n- Sie ist positiv: **zwei** Lösungen.\n\nBeispiel: $x^2 + 14x - 15 = 0$: $x_{1,2} = -7 \\pm \\sqrt{49 + 15} = -7 \\pm 8$, also $x_1 = 1$ und $x_2 = -15$",
         "primer": "P_MATH_QUADRAT"
       },
       {
@@ -56,8 +56,14 @@
       {
         "kind": "remember",
         "title": "Merke",
-        "body": "Gleichung = **Waage**. Klammern auf, zusammenfassen, $x$ isolieren, Probe. Bei $x^2$: Normalform, dann **pq-Formel**."
+        "body": "- Eine Gleichung ist wie eine **Waage**: Du tust auf beiden Seiten dasselbe.\n- Die Reihenfolge ist: Klammern auflösen, zusammenfassen, $x$ isolieren, Probe machen.\n- Steht ein $x^2$ da, bringst du die Gleichung in die Normalform und nimmst die **pq-Formel**."
       }
+    ],
+    "sheet": true,
+    "guided": [
+      "P_MATH_TERME",
+      "P_MATH_GLEICHUNG",
+      "P_MATH_QUADRAT"
     ]
   }
 ]

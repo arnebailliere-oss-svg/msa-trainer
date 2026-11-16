@@ -10,7 +10,7 @@
       {
         "kind": "formula",
         "title": "Prozent- und Zinsrechnung",
-        "body": "**Grundformel**: $\\frac{W}{p} = \\frac{G}{100}$ — $G$ Grundwert, $W$ Prozentwert, $p\\,\\%$ Prozentsatz\n\n**Kapital nach $n$ Jahren**: $K_n = K_0 \\cdot \\left(1 + \\frac{p}{100}\\right)^n$\n\n**Zinssatz**: $\\frac{p}{100} = \\sqrt[n]{\\frac{K_n}{K_0}} - 1$"
+        "body": "**Grundformel**: $\\frac{W}{p} = \\frac{G}{100}$ — $G$ Grundwert, $W$ Prozentwert, $p\\,\\%$ Prozentsatz\n\nIn der Lektion steht dieselbe Formel als $\\frac{W}{G} = \\frac{p}{100}$. Beide Schreibweisen führen zum selben Ergebnis.\n\n**Kapital nach $n$ Jahren**: $K_n = K_0 \\cdot \\left(1 + \\frac{p}{100}\\right)^n$\n\n**Zinssatz**: $\\frac{p}{100} = \\sqrt[n]{\\frac{K_n}{K_0}} - 1$"
       },
       {
         "kind": "formula",
@@ -25,7 +25,7 @@
       {
         "kind": "formula",
         "title": "Quadratische Funktionen und Gleichungen",
-        "body": "**Scheitelpunktform**: $f(x) = (x + d)^2 + e$ mit Scheitelpunkt $S(-d \\,|\\, e)$\n\n**Normalform**: $0 = x^2 + px + q$\n\n**Lösungsformel (pq-Formel)**: $x_{1,2} = -\\frac{p}{2} \\pm \\sqrt{\\left(\\frac{p}{2}\\right)^2 - q}$"
+        "body": "**Scheitelpunktform**: $f(x) = (x + d)^2 + e$ mit Scheitelpunkt $S(-d \\,|\\, e)$\n\nIn den Lektionen steht dieselbe Form als $(x - d)^2 + e$ mit $S(d \\,|\\, e)$. Beides sagt dasselbe: Die Zahl in der Klammer wechselt ihr Vorzeichen.\n\nIn den Lektionen steht dieselbe Form als $(x - d)^2 + e$ mit $S(d \\,|\\, e)$. Beides sagt dasselbe: Die Zahl in der Klammer wechselt ihr Vorzeichen.\n\n**Normalform**: $0 = x^2 + px + q$\n\n**Lösungsformel (pq-Formel)**: $x_{1,2} = -\\frac{p}{2} \\pm \\sqrt{\\left(\\frac{p}{2}\\right)^2 - q}$"
       },
       {
         "kind": "formula",
@@ -47,7 +47,7 @@
       {
         "kind": "formula",
         "title": "Beliebiges Dreieck",
-        "body": "**Sinussatz**: $\\frac{a}{\\sin\\alpha} = \\frac{b}{\\sin\\beta} = \\frac{c}{\\sin\\gamma}$\n\n**Umfang**: $u = a + b + c$ · **Fläche**: $A = \\frac{1}{2} c \\cdot h_c = \\frac{1}{2} a \\cdot b \\cdot \\sin\\gamma$",
+        "body": "**Sinussatz**: $\\frac{a}{\\sin\\alpha} = \\frac{b}{\\sin\\beta} = \\frac{c}{\\sin\\gamma}$\n\n**Kosinussatz**: $a^2 = b^2 + c^2 - 2bc \\cdot \\cos\\alpha$\n\n**Umfang**: $u = a + b + c$ · **Fläche**: $A = \\frac{1}{2} c \\cdot h_c = \\frac{1}{2} a \\cdot b \\cdot \\sin\\gamma$",
         "figure": {
           "type": "triangle",
           "alpha": 70,
@@ -171,6 +171,17 @@
         ]
       }
     ],
-    "primer": "P_MATH_ZEICHEN"
+    "primer": "P_MATH_ZEICHEN",
+    "sheet": true,
+    "guided": [
+      "P_MATH_PROZENT",
+      "P_MATH_POTENZ",
+      "P_MATH_FUNKTION",
+      "P_MATH_QUADRAT",
+      "P_MATH_STOCHASTIK",
+      "P_MATH_GEO_BEGRIFFE",
+      "P_MATH_PYTH_TRIG",
+      "P_MATH_KOERPER"
+    ]
   }
 ]

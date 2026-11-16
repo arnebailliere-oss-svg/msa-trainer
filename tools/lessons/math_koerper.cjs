@@ -16,7 +16,7 @@ migrate("primers/math_09c_koerper.json", (p, h) => {
   h.say("Liter", "Sobald es in einer Aufgabe um Wasser, Saft oder Farbe geht, taucht das Wort Liter auf. Das ist nur ein anderer Name für dieselbe Sache. Ein Milliliter ist ein Kubikzentimeter, und tausend davon ergeben einen Liter.");
   h.tasks("Liter", k("$2000\\ \\text{cm}^3$ sind ___.", "2 Liter", ["20 Liter"], "Tausend Kubikzentimeter sind ein Liter. Zweitausend sind dann zwei.", "Wie viele Kubikzentimeter ergeben zusammen einen ganzen Liter?"));
   h.body("Grundfläche mal Höhe", "Quader, **Zylinder** (eine Dose) und **Prisma** (eine Säule mit eckigem Boden):", "$V = G \\cdot h$", "$G$ ist die **Grundfläche**, also der Boden. $h$ ist die Höhe.");
-  h.say("Grundfläche mal Höhe", "Alle Körper mit geraden Wänden haben dieselbe Formel. Du rechnest zuerst aus, wie groß der Boden ist. Dann nimmst du diese Fläche mal die Höhe. Nur der Boden sieht je nach Körper anders aus: mal ein Rechteck, mal ein Kreis, mal ein Dreieck.");
+  h.say("Grundfläche mal Höhe", "Alle Körper mit geraden Wänden haben dieselbe Formel. Du rechnest zuerst aus, wie groß der Boden ist. Dann nimmst du diese Fläche mal die Höhe. Nur der Boden sieht je nach Körper anders aus: mal ein Rechteck, mal ein Kreis, mal ein Dreieck. Auf dem Formelblatt heißt die Grundfläche A mit einem kleinen G und die Oberfläche A mit einem kleinen O.");
   h.tasks("Grundfläche mal Höhe", k("Die Grundfläche ist $12\\ \\text{cm}^2$, die Höhe 5 cm. $V = $ ___", "$60\\ \\text{cm}^3$", ["$17\\ \\text{cm}^3$"], "Boden mal Höhe: 12 mal 5 ergibt 60.", "Die Formel heißt Boden mal Höhe. Rechnest du plus oder mal?"));
 
   // --- chapter 2 ---
