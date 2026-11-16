@@ -14,8 +14,8 @@ test("Deutsch lesson, drill and primer", async ({ page }) => {
   await shot(page, "1-dashboard");
 
   await page.goto(`${DEV}/#/topic/DE_PUNCT_COMMA_MAIN_SUB`);
-  await expect(page.getByRole("heading", { name: /Kommasetzung/ })).toBeVisible();
-  await expect(page.getByText("Grundlagen zuerst")).toBeVisible();
+  await expect(page.getByRole("heading", { name: /Kommas und Satzarten/ })).toBeVisible();
+  await expect(page.getByRole("heading", { name: /Lernen mit Ferdinand/ })).toBeVisible();
   await shot(page, "2-lesson-komma");
 
   await page.getByRole("button", { name: /Jetzt üben/ }).click();
@@ -40,6 +40,6 @@ test("Deutsch lesson, drill and primer", async ({ page }) => {
   }
 
   await page.goto(`${DEV}/#/eule/P_DE_SATZ`);
-  await expect(page.getByText("Hauptsatz, Nebensatz, Komma").first()).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Hauptsatz und Nebensatz" })).toBeVisible();
   await shot(page, "5-primer");
 });
