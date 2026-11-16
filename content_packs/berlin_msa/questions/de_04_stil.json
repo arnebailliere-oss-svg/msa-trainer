@@ -6,13 +6,33 @@
     "difficulty": 3,
     "qtype": "MCQ",
     "prompt": "Welches Stilmittel steckt in\n\n„{{s_bsp}}“?",
-    "payload": { "choices": ["{{s_a}}", "{{s_b}}", "{{s_c}}", "{{s_d}}"] },
-    "solution": { "correct_choice": "{{s_a}}" },
+    "payload": {
+      "choices": [
+        "{{s_a}}",
+        "{{s_b}}",
+        "{{s_c}}",
+        "{{s_d}}"
+      ]
+    },
+    "solution": {
+      "correct_choice": "{{s_a}}"
+    },
     "explanation": [
-      { "kind": "what", "title": "{{s_a}}", "body": "{{s_hinweis}}" },
-      { "kind": "remember", "body": "Häufig in der Prüfung: **Alliteration** (gleicher Anfangslaut), **Anapher** (Wiederholung am Satzanfang), **Metapher** (Bild ohne *wie*), **Vergleich** (mit *wie*), **Personifikation** (Dinge handeln wie Menschen), **Hyperbel** (Übertreibung), **rhetorische Frage** (keine Antwort erwartet), **Klimax** (Steigerung), **Parallelismus** (gleicher Satzbau)." }
+      {
+        "kind": "what",
+        "title": "{{s_a}}",
+        "body": "{{s_hinweis}}"
+      },
+      {
+        "kind": "remember",
+        "title": "Häufige Stilmittel",
+        "body": "| Stilmittel | Daran erkennst du es |\n| --- | --- |\n| Alliteration | gleicher Anfangslaut |\n| Anapher | dasselbe Wort am Satzanfang |\n| Parallelismus | gleicher Satzbau |\n| Vergleich | ein Bild mit dem Wort wie |\n| Metapher | ein Bild ohne wie |\n| Personifikation | Ein Ding handelt wie ein Mensch. |\n| Hyperbel | starke Übertreibung |\n| Euphemismus | Beschönigung |\n| rhetorische Frage | eine Frage, auf die keine Antwort erwartet wird |\n| Klimax | Steigerung in Stufen |"
+      }
     ],
-    "tags": ["stilmittel", "drill"],
+    "tags": [
+      "stilmittel",
+      "drill"
+    ],
     "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 2 (Stilmittel-Übersicht)",
     "variants": {
       "enabled": true,
@@ -20,24 +40,150 @@
         "s": {
           "type": "pick",
           "from": [
-            { "bsp": "frisch und fröhlich", "a": "Alliteration", "b": "Anapher", "c": "Metapher", "d": "Vergleich", "hinweis": "Zwei aufeinanderfolgende Wörter mit demselben Anfangslaut (f)." },
-            { "bsp": "Wer war das? Wer hat das getan? Wer wusste davon?", "a": "Anapher", "b": "Alliteration", "c": "Klimax", "d": "Ellipse", "hinweis": "Dasselbe Wort (Wer) wiederholt sich am Anfang jedes Satzes." },
-            { "bsp": "Jung und Alt, Gut und Böse", "a": "Antithese", "b": "Oxymoron", "c": "Pleonasmus", "d": "Symbol", "hinweis": "Gedankliche Gegensätze werden gegenübergestellt." },
-            { "bsp": "Wasser, Luft, Erde, Feuer: Das sind die Elemente.", "a": "Asyndeton", "b": "Parallelismus", "c": "Metapher", "d": "Hyperbel", "hinweis": "Eine Reihe gleichwertiger Wörter ohne Bindewort (kein und)." },
-            { "bsp": "Erst die Arbeit, dann das Vergnügen.", "a": "Ellipse", "b": "Antithese", "c": "Chiasmus", "d": "Metapher", "hinweis": "Unvollständiger Satz: Das Verb (kommt) ist ausgelassen." },
-            { "bsp": "Seniorenresidenz (statt Altersheim)", "a": "Euphemismus", "b": "Hyperbel", "c": "Symbol", "d": "Anapher", "hinweis": "Beschönigende Umschreibung." },
-            { "bsp": "Das Auto fährt im Schneckentempo.", "a": "Hyperbel", "b": "Euphemismus", "c": "Anapher", "d": "Ellipse", "hinweis": "Starke Untertreibung (Übertreibung nach unten)." },
-            { "bsp": "Ich kam, sah, siegte.", "a": "Klimax", "b": "Antithese", "c": "Euphemismus", "d": "Vergleich", "hinweis": "Aufsteigende Steigerung von Schritt zu Schritt." },
-            { "bsp": "Er ist ein Löwe im Kampf.", "a": "Metapher", "b": "Vergleich", "c": "Personifikation", "d": "Symbol", "hinweis": "Bildliche Übertragung ohne *wie*: Er ist kein Löwe, er kämpft wie einer." },
-            { "bsp": "Flüssiggas, alter Jüngling", "a": "Oxymoron", "b": "Pleonasmus", "c": "Antithese", "d": "Euphemismus", "hinweis": "Innerer Widerspruch in einem Ausdruck." },
-            { "bsp": "Der Mensch läuft, der Fisch schwimmt, der Adler fliegt.", "a": "Parallelismus", "b": "Chiasmus", "c": "Klimax", "d": "Metapher", "hinweis": "Gleicher Satzbau in drei Teilen (Subjekt, Verb)." },
-            { "bsp": "Die Sonne lacht am Himmel.", "a": "Personifikation", "b": "Metapher", "c": "Vergleich", "d": "Hyperbel", "hinweis": "Ein Ding (Sonne) bekommt eine menschliche Eigenschaft (lachen)." },
-            { "bsp": "weißer Schimmel, nasser Regen", "a": "Pleonasmus", "b": "Oxymoron", "c": "Antithese", "d": "Alliteration", "hinweis": "Doppelung: Beide Wörter sagen dasselbe (ein Schimmel ist immer weiß)." },
-            { "bsp": "Sehe ich wirklich so blöd aus?", "a": "Rhetorische Frage", "b": "Ellipse", "c": "Anapher", "d": "Hyperbel", "hinweis": "Scheinfrage, auf die keine Antwort erwartet wird." },
-            { "bsp": "die weiße Taube (für Frieden)", "a": "Symbol", "b": "Metapher", "c": "Personifikation", "d": "Vergleich", "hinweis": "Ein Bild, das eine feste Bedeutung auslöst." },
-            { "bsp": "klein wie eine Maus", "a": "Vergleich", "b": "Metapher", "c": "Hyperbel", "d": "Symbol", "hinweis": "Zwei Dinge werden mit *wie* verknüpft." },
-            { "bsp": "Er ist jung, alt bist du.", "a": "Chiasmus", "b": "Parallelismus", "c": "Antithese", "d": "Anapher", "hinweis": "Überkreuzstellung: Subjekt-Verb-Adjektiv, dann Adjektiv-Verb-Subjekt." },
-            { "bsp": "Ich habe dir das schon tausendmal gesagt!", "a": "Hyperbel", "b": "Klimax", "c": "Anapher", "d": "Ellipse", "hinweis": "Starke Übertreibung." }
+            {
+              "bsp": "frisch und fröhlich",
+              "a": "Alliteration",
+              "b": "Anapher",
+              "c": "Metapher",
+              "d": "Vergleich",
+              "hinweis": "Zwei aufeinanderfolgende Wörter mit demselben Anfangslaut (f)."
+            },
+            {
+              "bsp": "Wer war das? Wer hat das getan? Wer wusste davon?",
+              "a": "Anapher",
+              "b": "Alliteration",
+              "c": "Klimax",
+              "d": "Ellipse",
+              "hinweis": "Dasselbe Wort (Wer) wiederholt sich am Anfang jedes Satzes."
+            },
+            {
+              "bsp": "Jung und Alt, Gut und Böse",
+              "a": "Antithese",
+              "b": "Oxymoron",
+              "c": "Pleonasmus",
+              "d": "Symbol",
+              "hinweis": "Gedankliche Gegensätze werden gegenübergestellt."
+            },
+            {
+              "bsp": "Wasser, Luft, Erde, Feuer: Das sind die Elemente.",
+              "a": "Asyndeton",
+              "b": "Parallelismus",
+              "c": "Metapher",
+              "d": "Hyperbel",
+              "hinweis": "Eine Reihe gleichwertiger Wörter ohne Bindewort (kein und)."
+            },
+            {
+              "bsp": "Erst die Arbeit, dann das Vergnügen.",
+              "a": "Ellipse",
+              "b": "Antithese",
+              "c": "Chiasmus",
+              "d": "Metapher",
+              "hinweis": "Unvollständiger Satz: Das Verb (kommt) ist ausgelassen."
+            },
+            {
+              "bsp": "Seniorenresidenz (statt Altersheim)",
+              "a": "Euphemismus",
+              "b": "Hyperbel",
+              "c": "Symbol",
+              "d": "Anapher",
+              "hinweis": "Beschönigende Umschreibung."
+            },
+            {
+              "bsp": "Das Auto fährt im Schneckentempo.",
+              "a": "Hyperbel",
+              "b": "Euphemismus",
+              "c": "Anapher",
+              "d": "Ellipse",
+              "hinweis": "Starke Untertreibung (Übertreibung nach unten)."
+            },
+            {
+              "bsp": "Ich kam, sah, siegte.",
+              "a": "Klimax",
+              "b": "Antithese",
+              "c": "Euphemismus",
+              "d": "Vergleich",
+              "hinweis": "Aufsteigende Steigerung von Schritt zu Schritt."
+            },
+            {
+              "bsp": "Er ist ein Löwe im Kampf.",
+              "a": "Metapher",
+              "b": "Vergleich",
+              "c": "Personifikation",
+              "d": "Symbol",
+              "hinweis": "Bildliche Übertragung ohne *wie*: Er ist kein Löwe, er kämpft wie einer."
+            },
+            {
+              "bsp": "Flüssiggas, alter Jüngling",
+              "a": "Oxymoron",
+              "b": "Pleonasmus",
+              "c": "Antithese",
+              "d": "Euphemismus",
+              "hinweis": "Innerer Widerspruch in einem Ausdruck."
+            },
+            {
+              "bsp": "Der Mensch läuft, der Fisch schwimmt, der Adler fliegt.",
+              "a": "Parallelismus",
+              "b": "Chiasmus",
+              "c": "Klimax",
+              "d": "Metapher",
+              "hinweis": "Gleicher Satzbau in drei Teilen (Subjekt, Verb)."
+            },
+            {
+              "bsp": "Die Sonne lacht am Himmel.",
+              "a": "Personifikation",
+              "b": "Metapher",
+              "c": "Vergleich",
+              "d": "Hyperbel",
+              "hinweis": "Ein Ding (Sonne) bekommt eine menschliche Eigenschaft (lachen)."
+            },
+            {
+              "bsp": "weißer Schimmel, nasser Regen",
+              "a": "Pleonasmus",
+              "b": "Oxymoron",
+              "c": "Antithese",
+              "d": "Alliteration",
+              "hinweis": "Doppelung: Beide Wörter sagen dasselbe (ein Schimmel ist immer weiß)."
+            },
+            {
+              "bsp": "Sehe ich wirklich so blöd aus?",
+              "a": "Rhetorische Frage",
+              "b": "Ellipse",
+              "c": "Anapher",
+              "d": "Hyperbel",
+              "hinweis": "Scheinfrage, auf die keine Antwort erwartet wird."
+            },
+            {
+              "bsp": "die weiße Taube (für Frieden)",
+              "a": "Symbol",
+              "b": "Metapher",
+              "c": "Personifikation",
+              "d": "Vergleich",
+              "hinweis": "Ein Bild, das eine feste Bedeutung auslöst."
+            },
+            {
+              "bsp": "klein wie eine Maus",
+              "a": "Vergleich",
+              "b": "Metapher",
+              "c": "Hyperbel",
+              "d": "Symbol",
+              "hinweis": "Zwei Dinge werden mit *wie* verknüpft."
+            },
+            {
+              "bsp": "Er ist jung, alt bist du.",
+              "a": "Chiasmus",
+              "b": "Parallelismus",
+              "c": "Antithese",
+              "d": "Anapher",
+              "hinweis": "Überkreuzstellung: Subjekt-Verb-Adjektiv, dann Adjektiv-Verb-Subjekt."
+            },
+            {
+              "bsp": "Ich habe dir das schon tausendmal gesagt!",
+              "a": "Hyperbel",
+              "b": "Klimax",
+              "c": "Anapher",
+              "d": "Ellipse",
+              "hinweis": "Starke Übertreibung."
+            }
           ]
         }
       }
@@ -50,12 +196,49 @@
     "difficulty": 2,
     "qtype": "MATCH",
     "prompt": "Ordne jedem Stilmittel das passende Beispiel zu.",
-    "payload": { "left": ["Alliteration", "Metapher", "Personifikation", "Vergleich"], "right": ["frisch und fröhlich", "ein Löwe im Kampf", "Die Sonne lacht.", "stark wie ein Bär"] },
-    "solution": { "pairs": [["Alliteration", "frisch und fröhlich"], ["Metapher", "ein Löwe im Kampf"], ["Personifikation", "Die Sonne lacht."], ["Vergleich", "stark wie ein Bär"]] },
+    "payload": {
+      "left": [
+        "Alliteration",
+        "Metapher",
+        "Personifikation",
+        "Vergleich"
+      ],
+      "right": [
+        "frisch und fröhlich",
+        "ein Löwe im Kampf",
+        "Die Sonne lacht.",
+        "stark wie ein Bär"
+      ]
+    },
+    "solution": {
+      "pairs": [
+        [
+          "Alliteration",
+          "frisch und fröhlich"
+        ],
+        [
+          "Metapher",
+          "ein Löwe im Kampf"
+        ],
+        [
+          "Personifikation",
+          "Die Sonne lacht."
+        ],
+        [
+          "Vergleich",
+          "stark wie ein Bär"
+        ]
+      ]
+    },
     "explanation": [
-      { "kind": "terms", "body": "- **Alliteration**: gleicher Anfangslaut (f…f)\n- **Metapher**: Bild ohne *wie*\n- **Personifikation**: ein Ding handelt wie ein Mensch\n- **Vergleich**: mit *wie*" }
+      {
+        "kind": "terms",
+        "body": "| Stilmittel | Daran erkennst du es | Beispiel |\n| --- | --- | --- |\n| Alliteration | gleicher Anfangslaut | *frisch und fröhlich* |\n| Metapher | ein Bild ohne wie | *ein Löwe im Kampf* |\n| Personifikation | Ein Ding handelt wie ein Mensch. | *Die Sonne lacht.* |\n| Vergleich | ein Bild mit wie | *stark wie ein Bär* |"
+      }
     ],
-    "tags": ["stilmittel"],
+    "tags": [
+      "stilmittel"
+    ],
     "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 2"
   },
   {
@@ -65,12 +248,49 @@
     "difficulty": 3,
     "qtype": "MATCH",
     "prompt": "Ordne jedem Stilmittel das passende Beispiel zu.",
-    "payload": { "left": ["Anapher", "Hyperbel", "Rhetorische Frage", "Euphemismus"], "right": ["Wer war das? Wer hat das getan?", "Ich warte schon eine Ewigkeit.", "Wollen wir das wirklich wagen?", "Seniorenresidenz statt Altersheim"] },
-    "solution": { "pairs": [["Anapher", "Wer war das? Wer hat das getan?"], ["Hyperbel", "Ich warte schon eine Ewigkeit."], ["Rhetorische Frage", "Wollen wir das wirklich wagen?"], ["Euphemismus", "Seniorenresidenz statt Altersheim"]] },
+    "payload": {
+      "left": [
+        "Anapher",
+        "Hyperbel",
+        "Rhetorische Frage",
+        "Euphemismus"
+      ],
+      "right": [
+        "Wer war das? Wer hat das getan?",
+        "Ich warte schon eine Ewigkeit.",
+        "Wollen wir das wirklich wagen?",
+        "Seniorenresidenz statt Altersheim"
+      ]
+    },
+    "solution": {
+      "pairs": [
+        [
+          "Anapher",
+          "Wer war das? Wer hat das getan?"
+        ],
+        [
+          "Hyperbel",
+          "Ich warte schon eine Ewigkeit."
+        ],
+        [
+          "Rhetorische Frage",
+          "Wollen wir das wirklich wagen?"
+        ],
+        [
+          "Euphemismus",
+          "Seniorenresidenz statt Altersheim"
+        ]
+      ]
+    },
     "explanation": [
-      { "kind": "terms", "body": "- **Anapher**: Wiederholung am Anfang\n- **Hyperbel**: Übertreibung\n- **Rhetorische Frage**: Scheinfrage ohne erwartete Antwort\n- **Euphemismus**: beschönigende Umschreibung" }
+      {
+        "kind": "terms",
+        "body": "| Stilmittel | Daran erkennst du es | Beispiel |\n| --- | --- | --- |\n| Anapher | dasselbe Wort am Satzanfang | *Wer war das? Wer hat das getan?* |\n| Hyperbel | starke Übertreibung | *Ich warte schon eine Ewigkeit.* |\n| rhetorische Frage | keine Antwort erwartet | *Wollen wir das wirklich wagen?* |\n| Euphemismus | Beschönigung | *Seniorenresidenz statt Altersheim* |"
+      }
     ],
-    "tags": ["stilmittel"],
+    "tags": [
+      "stilmittel"
+    ],
     "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 2"
   },
   {
@@ -80,13 +300,34 @@
     "difficulty": 2,
     "qtype": "MCQ",
     "prompt": "Wie lautet der Satz in **Standardsprache**?\n\n„{{s_satz}}“",
-    "payload": { "choices": ["{{s_a}}", "{{s_b}}", "{{s_c}}", "{{s_d}}"] },
-    "solution": { "correct_choice": "{{s_a}}" },
+    "payload": {
+      "choices": [
+        "{{s_a}}",
+        "{{s_b}}",
+        "{{s_c}}",
+        "{{s_d}}"
+      ]
+    },
+    "solution": {
+      "correct_choice": "{{s_a}}"
+    },
     "explanation": [
-      { "kind": "what", "body": "{{s_hinweis}}" },
-      { "kind": "remember", "body": "**Standardsprache**: vollständige Sätze, sachlich, keine Füllwörter (*ähm, halt, also*), keine Slang-Wörter (*voll, krass, Bock*), keine Abkürzungen (*hab, Pulli*). Sie gehört in jeden Aufsatz und jede Prüfung." }
+      {
+        "kind": "what",
+        "title": "Was sich ändert",
+        "body": "{{s_hinweis}} Der Inhalt des Satzes bleibt dabei derselbe."
+      },
+      {
+        "kind": "remember",
+        "title": "In Standardsprache umformen",
+        "body": "- Füllwörter wie halt, also und ähm streichst du.\n- Lockere Wörter wie voll, krass und Bock ersetzt du durch sachliche.\n- Verkürzte Formen wie hab und Pulli schreibst du aus."
+      }
     ],
-    "tags": ["register", "umgangssprache", "drill"],
+    "tags": [
+      "register",
+      "umgangssprache",
+      "drill"
+    ],
     "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 2 (Standard- und Umgangssprache)",
     "variants": {
       "enabled": true,
@@ -94,14 +335,70 @@
         "s": {
           "type": "pick",
           "from": [
-            { "satz": "Das war ihr ausgeleierter Rollkragenpulli.", "a": "Das war ihr oft getragener Rollkragenpullover.", "b": "Das war ihr voll alter Rollkragenpulli.", "c": "Das war halt ihr Pulli.", "d": "Ihr Rollkragenpulli war echt ausgeleiert.", "hinweis": "*ausgeleiert* → *oft getragen*, *Pulli* → *Pullover*." },
-            { "satz": "Naturreservate sind voll wichtig.", "a": "Naturreservate sind von großer Bedeutung.", "b": "Naturreservate sind mega wichtig.", "c": "Naturreservate sind halt wichtig.", "d": "Naturreservate sind voll bedeutend.", "hinweis": "*voll* ist umgangssprachlich für *sehr*: *sehr wichtig* oder *von großer Bedeutung*." },
-            { "satz": "Zu viel Tourismus kann die Natur halt kaputt machen.", "a": "Übermäßiger Tourismus kann die Natur schädigen.", "b": "Zu viel Tourismus macht die Natur echt kaputt.", "c": "Tourismus macht halt alles kaputt.", "d": "Übermäßiger Tourismus kann die Natur kaputt machen.", "hinweis": "*halt* weglassen, *zu viel* → *übermäßig*, *kaputt machen* → *schädigen*." },
-            { "satz": "Machste mal das Fenster auf?", "a": "Könntest du bitte das Fenster öffnen?", "b": "Mach mal das Fenster auf!", "c": "Fenster auf, ja?", "d": "Machst du mal das Fenster auf?", "hinweis": "Vollständiger, höflicher Satz: *Könntest du bitte … öffnen?*" },
-            { "satz": "Ich hab keinen Bock auf die Hausaufgaben.", "a": "Ich habe keine Lust auf die Hausaufgaben.", "b": "Ich hab null Bock auf Hausaufgaben.", "c": "Hausaufgaben nerven halt.", "d": "Ich habe keinen Bock auf die Hausaufgaben.", "hinweis": "*hab* → *habe*, *Bock* → *Lust*." },
-            { "satz": "Der Film war echt krass.", "a": "Der Film war sehr beeindruckend.", "b": "Der Film war echt heftig.", "c": "Der Film war voll krass.", "d": "Der Film war krass gut.", "hinweis": "*echt krass* → *sehr beeindruckend* (oder *sehr spannend*)." },
-            { "satz": "Ähm, also, ich denk, das passt schon.", "a": "Ich denke, das ist in Ordnung.", "b": "Also, ich denk, passt schon.", "c": "Ähm, das passt.", "d": "Ich denk, das passt halt.", "hinweis": "Füllwörter (*ähm, also*) streichen, *denk* → *denke*, *passt schon* → *ist in Ordnung*." },
-            { "satz": "Der Typ hat mich voll abgezockt.", "a": "Der Mann hat mich betrogen.", "b": "Der Typ hat mich echt abgezogen.", "c": "Der hat mich halt abgezockt.", "d": "Der Mann hat mich voll betrogen.", "hinweis": "*Typ* → *Mann*, *voll abgezockt* → *betrogen*." }
+            {
+              "satz": "Das war ihr ausgeleierter Rollkragenpulli.",
+              "a": "Das war ihr oft getragener Rollkragenpullover.",
+              "b": "Das war ihr voll alter Rollkragenpulli.",
+              "c": "Das war halt ihr Pulli.",
+              "d": "Ihr Rollkragenpulli war echt ausgeleiert.",
+              "hinweis": "Ausgeleiert ist ein lockeres Wort für oft getragen. Pulli ist die Kurzform von Pullover."
+            },
+            {
+              "satz": "Naturreservate sind voll wichtig.",
+              "a": "Naturreservate sind von großer Bedeutung.",
+              "b": "Naturreservate sind mega wichtig.",
+              "c": "Naturreservate sind halt wichtig.",
+              "d": "Naturreservate sind voll bedeutend.",
+              "hinweis": "Voll ist Umgangssprache für sehr. Sachlich heißt es sehr wichtig oder von großer Bedeutung."
+            },
+            {
+              "satz": "Zu viel Tourismus kann die Natur halt kaputt machen.",
+              "a": "Übermäßiger Tourismus kann die Natur schädigen.",
+              "b": "Zu viel Tourismus macht die Natur echt kaputt.",
+              "c": "Tourismus macht halt alles kaputt.",
+              "d": "Übermäßiger Tourismus kann die Natur kaputt machen.",
+              "hinweis": "Das Füllwort halt fällt weg. Für zu viel steht übermäßig, und für kaputt machen steht schädigen."
+            },
+            {
+              "satz": "Machste mal das Fenster auf?",
+              "a": "Könntest du bitte das Fenster öffnen?",
+              "b": "Mach mal das Fenster auf!",
+              "c": "Fenster auf, ja?",
+              "d": "Machst du mal das Fenster auf?",
+              "hinweis": "Machste ist eine verkürzte Form von machst du. Eine höfliche Bitte in Standardsprache beginnt mit Könntest du bitte."
+            },
+            {
+              "satz": "Ich hab keinen Bock auf die Hausaufgaben.",
+              "a": "Ich habe keine Lust auf die Hausaufgaben.",
+              "b": "Ich hab null Bock auf Hausaufgaben.",
+              "c": "Hausaufgaben nerven halt.",
+              "d": "Ich habe keinen Bock auf die Hausaufgaben.",
+              "hinweis": "Hab wird zu habe ausgeschrieben. Für Bock steht das sachliche Wort Lust."
+            },
+            {
+              "satz": "Der Film war echt krass.",
+              "a": "Der Film war sehr beeindruckend.",
+              "b": "Der Film war echt heftig.",
+              "c": "Der Film war voll krass.",
+              "d": "Der Film war krass gut.",
+              "hinweis": "Echt und krass sind Umgangssprache. Sachlich heißt es sehr beeindruckend."
+            },
+            {
+              "satz": "Ähm, also, ich denk, das passt schon.",
+              "a": "Ich denke, das ist in Ordnung.",
+              "b": "Also, ich denk, passt schon.",
+              "c": "Ähm, das passt.",
+              "d": "Ich denk, das passt halt.",
+              "hinweis": "Die Füllwörter ähm und also fallen weg. Denk wird zu denke ausgeschrieben, und für passt schon steht ist in Ordnung."
+            },
+            {
+              "satz": "Der Typ hat mich voll abgezockt.",
+              "a": "Der Mann hat mich betrogen.",
+              "b": "Der Typ hat mich echt abgezogen.",
+              "c": "Der hat mich halt abgezockt.",
+              "d": "Der Mann hat mich voll betrogen.",
+              "hinweis": "Typ ist ein lockeres Wort für Mann. Voll abgezockt bedeutet in Standardsprache betrogen."
+            }
           ]
         }
       }
@@ -114,13 +411,34 @@
     "difficulty": 3,
     "qtype": "MCQ",
     "prompt": "Welche **Fehlerart** steckt in diesem Satz?\n\n„{{s_satz}}“",
-    "payload": { "choices": ["Rechtschreibfehler", "Zeichensetzungsfehler", "Grammatikfehler", "Ausdrucksfehler"] },
-    "solution": { "correct_choice": "{{s_loesung}}" },
+    "payload": {
+      "choices": [
+        "Rechtschreibfehler",
+        "Zeichensetzungsfehler",
+        "Grammatikfehler",
+        "Ausdrucksfehler"
+      ]
+    },
+    "solution": {
+      "correct_choice": "{{s_loesung}}"
+    },
     "explanation": [
-      { "kind": "what", "title": "Der Fehler", "body": "{{s_hinweis}}" },
-      { "kind": "remember", "body": "**Rechtschreibung** (R): ein Wort ist falsch geschrieben. **Zeichensetzung** (Z): Komma, Punkt, Anführungszeichen fehlen oder stehen falsch. **Grammatik** (G): Fall, Verbform, Artikel oder Satzbau stimmen nicht. **Ausdruck** (A): Umgangssprache, Füllwörter, unpassende oder ungenaue Wörter." }
+      {
+        "kind": "what",
+        "title": "Der Fehler",
+        "body": "{{s_hinweis}}"
+      },
+      {
+        "kind": "remember",
+        "title": "Die vier Fehlerarten",
+        "body": "| Zeichen | Fehlerart | Die Frage dazu |\n| --- | --- | --- |\n| R | Rechtschreibung | Ist ein Wort falsch geschrieben? |\n| Z | Zeichensetzung | Fehlt ein Satzzeichen, oder ist eins zu viel? |\n| G | Grammatik | Hat ein Wort die falsche Form? |\n| A | Ausdruck | Passt ein Wort nicht in einen sachlichen Text? |"
+      }
     ],
-    "tags": ["fehlerarten", "ueberarbeiten", "drill"],
+    "tags": [
+      "fehlerarten",
+      "ueberarbeiten",
+      "drill"
+    ],
     "source": "Nach Prüfungshefte MSA Deutsch Berlin 2026, Training Part 4 (Überarbeiten eines Textes)",
     "variants": {
       "enabled": true,
@@ -128,22 +446,86 @@
         "s": {
           "type": "pick",
           "from": [
-            { "satz": "Ich glaube, das er kommt.", "loesung": "Rechtschreibfehler", "hinweis": "*das* → *dass* (Ersatzprobe: *welches er kommt* passt nicht)." },
-            { "satz": "Ich weiß nicht ob er kommt.", "loesung": "Zeichensetzungsfehler", "hinweis": "Vor dem Nebensatz mit *ob* fehlt das Komma." },
-            { "satz": "Wir haben gestern ein Film gesehen.", "loesung": "Grammatikfehler", "hinweis": "Falscher Fall: *einen Film* (Wen oder was? Akkusativ)." },
-            { "satz": "Das Museum war voll interessant.", "loesung": "Ausdrucksfehler", "hinweis": "*voll* ist Umgangssprache: *sehr interessant*." },
-            { "satz": "Sie hat den Ball gefangt.", "loesung": "Grammatikfehler", "hinweis": "Falsche Verbform: *gefangen*." },
-            { "satz": "Er kauft Äpfel Birnen und Bananen.", "loesung": "Zeichensetzungsfehler", "hinweis": "In der Aufzählung fehlt das Komma: *Äpfel, Birnen und Bananen*." },
-            { "satz": "Die Stadt ist warscheinlich sehr alt.", "loesung": "Rechtschreibfehler", "hinweis": "*wahrscheinlich* (mit h: Ableitung von *wahr*)." },
-            { "satz": "Der Text ist halt irgendwie langweilig.", "loesung": "Ausdrucksfehler", "hinweis": "*halt* und *irgendwie* sind Füllwörter: *Der Text ist langweilig, weil …*" },
-            { "satz": "Mir gefällt dem Film.", "loesung": "Grammatikfehler", "hinweis": "Falscher Fall: *der Film* (Wer oder was gefällt mir? Nominativ)." },
-            { "satz": "Er sagte: Ich komme morgen.", "loesung": "Zeichensetzungsfehler", "hinweis": "Die direkte Rede braucht Anführungszeichen: *Er sagte: „Ich komme morgen.“*" },
-            { "satz": "Das Wetter war heute ser schön.", "loesung": "Rechtschreibfehler", "hinweis": "*sehr* (Dehnungs-h)." },
-            { "satz": "Die Aufführung war mega.", "loesung": "Ausdrucksfehler", "hinweis": "*mega* ist Slang: *großartig, beeindruckend*." },
-            { "satz": "Wegen dem Regen blieben wir zu Hause.", "loesung": "Grammatikfehler", "hinweis": "*wegen* verlangt in der Standardsprache den Genitiv: *wegen des Regens*." },
-            { "satz": "Das Kind spielt im Garten, und lacht.", "loesung": "Zeichensetzungsfehler", "hinweis": "Kein Komma vor *und*, wenn nur Verben aufgezählt werden." },
-            { "satz": "Ich habe die Prüfung geschaft.", "loesung": "Rechtschreibfehler", "hinweis": "*geschafft* (Silbenprobe: schaf-fen → ff)." },
-            { "satz": "Die Leute im Stadion haben voll abgefeiert.", "loesung": "Ausdrucksfehler", "hinweis": "Umgangssprache: *haben begeistert gefeiert*." }
+            {
+              "satz": "Ich glaube, das er kommt.",
+              "loesung": "Rechtschreibfehler",
+              "hinweis": "Es muss dass heißen, denn weder dieses noch welches passt. Die Verwechslung von das und dass zählt zur Rechtschreibung."
+            },
+            {
+              "satz": "Ich weiß nicht ob er kommt.",
+              "loesung": "Zeichensetzungsfehler",
+              "hinweis": "Vor dem Nebensatz mit ob fehlt das Komma. Alle Wörter sind richtig geschrieben."
+            },
+            {
+              "satz": "Wir haben gestern ein Film gesehen.",
+              "loesung": "Grammatikfehler",
+              "hinweis": "Es muss einen Film heißen. Auf die Frage Wen oder was antwortet der Akkusativ, also ist der Fall falsch."
+            },
+            {
+              "satz": "Das Museum war voll interessant.",
+              "loesung": "Ausdrucksfehler",
+              "hinweis": "Voll ist Umgangssprache. In einem sachlichen Text heißt es sehr interessant."
+            },
+            {
+              "satz": "Sie hat den Ball gefangt.",
+              "loesung": "Grammatikfehler",
+              "hinweis": "Die Form des Verbs ist falsch gebildet. Richtig heißt es gefangen."
+            },
+            {
+              "satz": "Er kauft Äpfel Birnen und Bananen.",
+              "loesung": "Zeichensetzungsfehler",
+              "hinweis": "In der Aufzählung fehlt das Komma zwischen Äpfel und Birnen."
+            },
+            {
+              "satz": "Die Stadt ist warscheinlich sehr alt.",
+              "loesung": "Rechtschreibfehler",
+              "hinweis": "Richtig heißt es wahrscheinlich, mit h, denn das Wort kommt von wahr."
+            },
+            {
+              "satz": "Der Text ist halt irgendwie langweilig.",
+              "loesung": "Ausdrucksfehler",
+              "hinweis": "Halt und irgendwie sind Füllwörter. Sie gehören nicht in einen sachlichen Text."
+            },
+            {
+              "satz": "Mir gefällt dem Film.",
+              "loesung": "Grammatikfehler",
+              "hinweis": "Es muss der Film heißen. Auf die Frage Wer oder was gefällt mir antwortet der Nominativ."
+            },
+            {
+              "satz": "Er sagte: Ich komme morgen.",
+              "loesung": "Zeichensetzungsfehler",
+              "hinweis": "Die wörtliche Rede braucht Anführungszeichen: Er sagte: „Ich komme morgen.“"
+            },
+            {
+              "satz": "Das Wetter war heute ser schön.",
+              "loesung": "Rechtschreibfehler",
+              "hinweis": "Richtig heißt es sehr, mit einem h nach dem e."
+            },
+            {
+              "satz": "Die Aufführung war mega.",
+              "loesung": "Ausdrucksfehler",
+              "hinweis": "Mega ist Umgangssprache. Sachlich heißt es großartig oder beeindruckend."
+            },
+            {
+              "satz": "Wegen dem Regen blieben wir zu Hause.",
+              "loesung": "Grammatikfehler",
+              "hinweis": "Nach wegen steht in der Standardsprache der Genitiv: wegen des Regens."
+            },
+            {
+              "satz": "Das Kind spielt im Garten, und lacht.",
+              "loesung": "Zeichensetzungsfehler",
+              "hinweis": "Vor und steht kein Komma, wenn nur zwei Verben verbunden werden. Hier ist ein Komma zu viel."
+            },
+            {
+              "satz": "Ich habe die Prüfung geschaft.",
+              "loesung": "Rechtschreibfehler",
+              "hinweis": "Richtig heißt es geschafft, mit ff. In Silben gesprochen hörst du es: schaf-fen."
+            },
+            {
+              "satz": "Die Leute im Stadion haben voll abgefeiert.",
+              "loesung": "Ausdrucksfehler",
+              "hinweis": "Abgefeiert ist Umgangssprache. Sachlich heißt es: haben begeistert gefeiert."
+            }
           ]
         }
       }

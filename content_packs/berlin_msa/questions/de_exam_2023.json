@@ -6,10 +6,29 @@
     "difficulty": 3,
     "qtype": "MCQ",
     "prompt": "Formulieren Sie den folgenden Satz so, dass er **keine Redewendung** enthält.\n\n*Ein Handwerker kann seine Hand dafür nicht ins Feuer legen.*",
-    "payload": { "choices": ["Ein Handwerker kann dafür nicht garantieren.", "Ein Handwerker darf nicht mit Feuer arbeiten.", "Ein Handwerker verbrennt sich nicht die Hand.", "Ein Handwerker legt keine Hand an."] },
-    "solution": { "correct_choice": "Ein Handwerker kann dafür nicht garantieren." },
-    "explanation": [{ "kind": "answer", "body": "*die Hand ins Feuer legen* = für etwas garantieren, sich ganz sicher sein. Ohne Redewendung: *Ein Handwerker kann dafür nicht garantieren.*" }],
-    "tags": ["exam", "msa2023", "redewendung"],
+    "payload": {
+      "choices": [
+        "Ein Handwerker kann dafür nicht garantieren.",
+        "Ein Handwerker darf nicht mit Feuer arbeiten.",
+        "Ein Handwerker verbrennt sich nicht die Hand.",
+        "Ein Handwerker legt keine Hand an."
+      ]
+    },
+    "solution": {
+      "correct_choice": "Ein Handwerker kann dafür nicht garantieren."
+    },
+    "explanation": [
+      {
+        "kind": "answer",
+        "title": "Warum",
+        "body": "Die Hand für etwas ins Feuer legen ist eine Redewendung. Sie bedeutet, für etwas zu garantieren. In der richtigen Antwort kommt das Bild nicht mehr vor. Die anderen Antworten nehmen das Feuer und die Hand wörtlich."
+      }
+    ],
+    "tags": [
+      "exam",
+      "msa2023",
+      "redewendung"
+    ],
     "source": "MSA Berlin 2023 Deutsch, Aufgabe 151 (1 P)"
   },
   {
@@ -19,10 +38,58 @@
     "difficulty": 3,
     "qtype": "MATCH",
     "prompt": "Ordnen Sie den Fremdwörtern jeweils ihre deutsche Bezeichnung zu.",
-    "payload": { "left": ["Konsum", "Resonanz", "Minimalismus", "Projekt", "Flexibilität"], "right": ["Verbrauch", "Rückmeldung", "Beschränkung auf das Wesentliche", "Vorhaben", "Beweglichkeit"] },
-    "solution": { "pairs": [["Konsum", "Verbrauch"], ["Resonanz", "Rückmeldung"], ["Minimalismus", "Beschränkung auf das Wesentliche"], ["Projekt", "Vorhaben"], ["Flexibilität", "Beweglichkeit"]] },
-    "explanation": [{ "kind": "terms", "body": "- **Konsum** → Verbrauch (lat. *consumere* = verbrauchen)\n- **Resonanz** → Rückmeldung (wörtlich: Widerhall)\n- **Minimalismus** → Beschränkung auf das Wesentliche (*minimal* = so wenig wie möglich)\n- **Projekt** → Vorhaben\n- **Flexibilität** → Beweglichkeit (*flexibel* = biegsam)" }],
-    "tags": ["exam", "msa2023", "fremdwoerter"],
+    "payload": {
+      "left": [
+        "Konsum",
+        "Resonanz",
+        "Minimalismus",
+        "Projekt",
+        "Flexibilität"
+      ],
+      "right": [
+        "Verbrauch",
+        "Rückmeldung",
+        "Beschränkung auf das Wesentliche",
+        "Vorhaben",
+        "Beweglichkeit"
+      ]
+    },
+    "solution": {
+      "pairs": [
+        [
+          "Konsum",
+          "Verbrauch"
+        ],
+        [
+          "Resonanz",
+          "Rückmeldung"
+        ],
+        [
+          "Minimalismus",
+          "Beschränkung auf das Wesentliche"
+        ],
+        [
+          "Projekt",
+          "Vorhaben"
+        ],
+        [
+          "Flexibilität",
+          "Beweglichkeit"
+        ]
+      ]
+    },
+    "explanation": [
+      {
+        "kind": "terms",
+        "title": "Warum",
+        "body": "| Fremdwort | Deutsch | Merkhilfe |\n| --- | --- | --- |\n| Konsum | Verbrauch | Wer konsumiert, verbraucht etwas. |\n| Resonanz | Rückmeldung | wörtlich: Widerhall |\n| Minimalismus | Beschränkung auf das Wesentliche | minimal bedeutet so wenig wie möglich |\n| Projekt | Vorhaben | etwas, das man plant |\n| Flexibilität | Beweglichkeit | flexibel bedeutet biegsam |"
+      }
+    ],
+    "tags": [
+      "exam",
+      "msa2023",
+      "fremdwoerter"
+    ],
     "source": "MSA Berlin 2023 Deutsch, Aufgabe 152 (2 P)"
   },
   {
@@ -32,10 +99,46 @@
     "difficulty": 3,
     "qtype": "MATCH",
     "prompt": "Ordnen Sie den Sätzen die entsprechende **Begründung für die Kommasetzung** zu.",
-    "payload": { "left": ["Das Internet war eine wichtige Quelle, nirgendwo sonst gab es so viel zu lesen.", "Was er für einen Weg einschlagen will, weiß er noch nicht.", "Er baute eine Website, drehte einen Film und schrieb Texte."], "right": ["Satzreihe", "Satzgefüge", "Aufzählung"] },
-    "solution": { "pairs": [["Das Internet war eine wichtige Quelle, nirgendwo sonst gab es so viel zu lesen.", "Satzreihe"], ["Was er für einen Weg einschlagen will, weiß er noch nicht.", "Satzgefüge"], ["Er baute eine Website, drehte einen Film und schrieb Texte.", "Aufzählung"]] },
-    "explanation": [{ "kind": "steps", "body": "- Zwei vollständige Hauptsätze nebeneinander (*war … Quelle* / *gab es …*) → **Satzreihe**\n- *Was er … will* ist ein Nebensatz (Verb *will* am Ende) vor dem Hauptsatz → **Satzgefüge**\n- *baute, drehte, schrieb*: drei gleichartige Glieder → **Aufzählung**" }],
-    "tags": ["exam", "msa2023", "komma"],
+    "payload": {
+      "left": [
+        "Das Internet war eine wichtige Quelle, nirgendwo sonst gab es so viel zu lesen.",
+        "Was er für einen Weg einschlagen will, weiß er noch nicht.",
+        "Er baute eine Website, drehte einen Film und schrieb Texte."
+      ],
+      "right": [
+        "Satzreihe",
+        "Satzgefüge",
+        "Aufzählung"
+      ]
+    },
+    "solution": {
+      "pairs": [
+        [
+          "Das Internet war eine wichtige Quelle, nirgendwo sonst gab es so viel zu lesen.",
+          "Satzreihe"
+        ],
+        [
+          "Was er für einen Weg einschlagen will, weiß er noch nicht.",
+          "Satzgefüge"
+        ],
+        [
+          "Er baute eine Website, drehte einen Film und schrieb Texte.",
+          "Aufzählung"
+        ]
+      ]
+    },
+    "explanation": [
+      {
+        "kind": "answer",
+        "title": "Warum",
+        "body": "Im ersten Satz stehen zwei vollständige Hauptsätze nebeneinander. Das ist eine Satzreihe.\n\nIm zweiten Satz steht vorn ein Nebensatz, dessen Verb will am Ende steht. Hauptsatz und Nebensatz zusammen sind ein Satzgefüge.\n\nIm dritten Satz werden drei gleichartige Tätigkeiten genannt: baute, drehte und schrieb. Das ist eine Aufzählung."
+      }
+    ],
+    "tags": [
+      "exam",
+      "msa2023",
+      "komma"
+    ],
     "source": "MSA Berlin 2023 Deutsch, Aufgabe 153 (3 P)"
   },
   {
@@ -45,10 +148,29 @@
     "difficulty": 3,
     "qtype": "MCQ",
     "prompt": "Formen Sie den folgenden Satz in **indirekte Rede** um.\n\n*„Ich stehe Menschen mit Rat und Tat zur Seite“, sagt er.*",
-    "payload": { "choices": ["Er sagt, er stehe Menschen mit Rat und Tat zur Seite.", "Er sagt, ich stehe Menschen mit Rat und Tat zur Seite.", "Er sagt, dass er Menschen mit Rat und Tat zur Seite steht.", "Er sagte, er stünde Menschen mit Rat und Tat zur Seite."] },
-    "solution": { "correct_choice": "Er sagt, er stehe Menschen mit Rat und Tat zur Seite." },
-    "explanation": [{ "kind": "steps", "body": "*ich* → *er*, *stehe* bleibt als **Konjunktiv I** (*er stehe*), Anführungszeichen weg, der Begleitsatz bleibt im Präsens (*sagt*)." }],
-    "tags": ["exam", "msa2023", "indirekte-rede"],
+    "payload": {
+      "choices": [
+        "Er sagt, er stehe Menschen mit Rat und Tat zur Seite.",
+        "Er sagt, ich stehe Menschen mit Rat und Tat zur Seite.",
+        "Er sagt, dass er Menschen mit Rat und Tat zur Seite steht.",
+        "Er sagte, er stünde Menschen mit Rat und Tat zur Seite."
+      ]
+    },
+    "solution": {
+      "correct_choice": "Er sagt, er stehe Menschen mit Rat und Tat zur Seite."
+    },
+    "explanation": [
+      {
+        "kind": "answer",
+        "title": "Warum",
+        "body": "Die Anführungszeichen fallen weg, und aus ich wird er. Das Verb steht im Konjunktiv I: er stehe. Der Begleitsatz bleibt im Präsens. Die Antwort mit steht benutzt die normale Form und zeigt deshalb nicht, dass nur berichtet wird."
+      }
+    ],
+    "tags": [
+      "exam",
+      "msa2023",
+      "indirekte-rede"
+    ],
     "source": "MSA Berlin 2023 Deutsch, Aufgabe 154 (1 P)"
   },
   {
@@ -58,10 +180,29 @@
     "difficulty": 2,
     "qtype": "MCQ",
     "prompt": "Formulieren Sie den folgenden Satz so um, dass er **keine Einschränkung** enthält.\n\n*Eigentlich habe ich die ganze Zeit positives Feedback bekommen.*",
-    "payload": { "choices": ["Ich habe die ganze Zeit positives Feedback bekommen.", "Eigentlich habe ich manchmal positives Feedback bekommen.", "Ich habe meistens positives Feedback bekommen.", "Eigentlich habe ich immer nur positives Feedback bekommen."] },
-    "solution": { "correct_choice": "Ich habe die ganze Zeit positives Feedback bekommen." },
-    "explanation": [{ "kind": "answer", "body": "*eigentlich* schränkt die Aussage ein. Ohne Einschränkung fällt es weg: *Ich habe die ganze Zeit positives Feedback bekommen.*" }],
-    "tags": ["exam", "msa2023", "umformulieren"],
+    "payload": {
+      "choices": [
+        "Ich habe die ganze Zeit positives Feedback bekommen.",
+        "Eigentlich habe ich manchmal positives Feedback bekommen.",
+        "Ich habe meistens positives Feedback bekommen.",
+        "Eigentlich habe ich immer nur positives Feedback bekommen."
+      ]
+    },
+    "solution": {
+      "correct_choice": "Ich habe die ganze Zeit positives Feedback bekommen."
+    },
+    "explanation": [
+      {
+        "kind": "answer",
+        "title": "Warum",
+        "body": "Das Wort eigentlich schränkt die Aussage ein. Ohne Einschränkung wird genau dieses Wort gestrichen, und der Rest bleibt gleich. Die Antworten mit manchmal und meistens verändern die Aussage, statt die Einschränkung zu entfernen."
+      }
+    ],
+    "tags": [
+      "exam",
+      "msa2023",
+      "umformulieren"
+    ],
     "source": "MSA Berlin 2023 Deutsch, Aufgabe 155 (1 P)"
   },
   {
@@ -71,10 +212,29 @@
     "difficulty": 2,
     "qtype": "MCQ",
     "prompt": "Notieren Sie für das unterstrichene Adjektiv ein passendes **Synonym**.\n\n*Er bewahrt einen **kühlen** Kopf.*",
-    "payload": { "choices": ["ruhigen / klaren", "kalten", "leeren", "frischen"] },
-    "solution": { "correct_choice": "ruhigen / klaren" },
-    "explanation": [{ "kind": "answer", "body": "*einen kühlen Kopf bewahren* = ruhig und klar denken. Hier ist *kühl* übertragen gemeint, nicht als Temperatur." }],
-    "tags": ["exam", "msa2023", "synonym"],
+    "payload": {
+      "choices": [
+        "ruhigen / klaren",
+        "kalten",
+        "leeren",
+        "frischen"
+      ]
+    },
+    "solution": {
+      "correct_choice": "ruhigen / klaren"
+    },
+    "explanation": [
+      {
+        "kind": "answer",
+        "title": "Warum",
+        "body": "Einen kühlen Kopf bewahren bedeutet, ruhig und klar zu denken. Das Wort kühl ist hier nicht als Temperatur gemeint. Deshalb passt kalt nicht."
+      }
+    ],
+    "tags": [
+      "exam",
+      "msa2023",
+      "synonym"
+    ],
     "source": "MSA Berlin 2023 Deutsch, Aufgabe 156a (1 P)"
   },
   {
@@ -84,10 +244,29 @@
     "difficulty": 2,
     "qtype": "MCQ",
     "prompt": "Notieren Sie für das unterstrichene Adjektiv ein passendes **Synonym**.\n\n*Er kann bei der **kühlen** Witterung nicht bauen.*",
-    "payload": { "choices": ["kalten", "ruhigen", "klaren", "trockenen"] },
-    "solution": { "correct_choice": "kalten" },
-    "explanation": [{ "kind": "answer", "body": "Bei der *Witterung* ist *kühl* wörtlich gemeint: *kalt*. Dasselbe Wort, zwei Bedeutungen (vergleiche *kühler Kopf*)." }],
-    "tags": ["exam", "msa2023", "synonym"],
+    "payload": {
+      "choices": [
+        "kalten",
+        "ruhigen",
+        "klaren",
+        "trockenen"
+      ]
+    },
+    "solution": {
+      "correct_choice": "kalten"
+    },
+    "explanation": [
+      {
+        "kind": "answer",
+        "title": "Warum",
+        "body": "Bei der Witterung, also beim Wetter, ist kühl wörtlich gemeint. Das passende Wort ist kalt. Dasselbe Wort hat hier eine andere Bedeutung als im Ausdruck kühler Kopf."
+      }
+    ],
+    "tags": [
+      "exam",
+      "msa2023",
+      "synonym"
+    ],
     "source": "MSA Berlin 2023 Deutsch, Aufgabe 156b (1 P)"
   },
   {
@@ -97,10 +276,29 @@
     "difficulty": 2,
     "qtype": "MCQ",
     "prompt": "Erklären Sie die Bedeutung des folgenden Satzes.\n\n*Das T-Shirt riecht streng.*",
-    "payload": { "choices": ["Das T-Shirt riecht unangenehm und intensiv.", "Das T-Shirt riecht nach Waschmittel.", "Das T-Shirt riecht nach gar nichts.", "Das T-Shirt riecht nach einer strengen Person."] },
-    "solution": { "correct_choice": "Das T-Shirt riecht unangenehm und intensiv." },
-    "explanation": [{ "kind": "answer", "body": "*streng riechen* = unangenehm, scharf, intensiv riechen." }],
-    "tags": ["exam", "msa2023", "wortbedeutung"],
+    "payload": {
+      "choices": [
+        "Das T-Shirt riecht unangenehm und intensiv.",
+        "Das T-Shirt riecht nach Waschmittel.",
+        "Das T-Shirt riecht nach gar nichts.",
+        "Das T-Shirt riecht nach einer strengen Person."
+      ]
+    },
+    "solution": {
+      "correct_choice": "Das T-Shirt riecht unangenehm und intensiv."
+    },
+    "explanation": [
+      {
+        "kind": "answer",
+        "title": "Warum",
+        "body": "Streng riechen bedeutet, unangenehm und stark zu riechen. Mit einer strengen Person hat das Wort hier nichts zu tun."
+      }
+    ],
+    "tags": [
+      "exam",
+      "msa2023",
+      "wortbedeutung"
+    ],
     "source": "MSA Berlin 2023 Deutsch, Aufgabe 251 (1 P)"
   },
   {
@@ -110,10 +308,29 @@
     "difficulty": 3,
     "qtype": "MCQ",
     "prompt": "Notieren Sie das **Bezugswort** des unterstrichenen Wortes.\n\n*Ein Bäcker rührt den ganzen Tag die **leckersten** Teige.*",
-    "payload": { "choices": ["Teige", "Bäcker", "Tag", "rührt"] },
-    "solution": { "correct_choice": "Teige" },
-    "explanation": [{ "kind": "answer", "body": "*leckersten* ist ein Adjektiv und beschreibt das Nomen, zu dem es gehört: *die leckersten **Teige***." }],
-    "tags": ["exam", "msa2023", "bezugswort"],
+    "payload": {
+      "choices": [
+        "Teige",
+        "Bäcker",
+        "Tag",
+        "rührt"
+      ]
+    },
+    "solution": {
+      "correct_choice": "Teige"
+    },
+    "explanation": [
+      {
+        "kind": "answer",
+        "title": "Warum",
+        "body": "Leckersten ist ein Adjektiv. Ein Adjektiv beschreibt das Nomen, vor dem es steht. Hier sind es die Teige: die leckersten Teige."
+      }
+    ],
+    "tags": [
+      "exam",
+      "msa2023",
+      "bezugswort"
+    ],
     "source": "MSA Berlin 2023 Deutsch, Aufgabe 252a (1 P)"
   },
   {
@@ -123,10 +340,29 @@
     "difficulty": 3,
     "qtype": "MCQ",
     "prompt": "Notieren Sie das **Bezugswort** des unterstrichenen Wortes.\n\n*Da stand die Kiste, **die** die Fotos enthielt.*",
-    "payload": { "choices": ["Kiste", "Fotos", "stand", "Da"] },
-    "solution": { "correct_choice": "Kiste" },
-    "explanation": [{ "kind": "answer", "body": "Das Relativpronomen *die* leitet den Relativsatz ein und bezieht sich auf das Nomen davor: *die **Kiste**, die die Fotos enthielt*." }],
-    "tags": ["exam", "msa2023", "bezugswort"],
+    "payload": {
+      "choices": [
+        "Kiste",
+        "Fotos",
+        "stand",
+        "Da"
+      ]
+    },
+    "solution": {
+      "correct_choice": "Kiste"
+    },
+    "explanation": [
+      {
+        "kind": "answer",
+        "title": "Warum",
+        "body": "Das Wort die leitet einen Relativsatz ein. Ein Relativpronomen bezieht sich auf das Nomen direkt davor. Hier ist es die Kiste: die Kiste, die die Fotos enthielt."
+      }
+    ],
+    "tags": [
+      "exam",
+      "msa2023",
+      "bezugswort"
+    ],
     "source": "MSA Berlin 2023 Deutsch, Aufgabe 252b (1 P)"
   },
   {
@@ -136,10 +372,29 @@
     "difficulty": 2,
     "qtype": "MCQ",
     "prompt": "Notieren Sie die Bedeutung der Redewendung **„keine Rolle spielen“**.",
-    "payload": { "choices": ["keine Bedeutung oder keinen Einfluss haben", "nicht im Theater auftreten", "keine Aufgabe übernehmen wollen", "sich nicht verstellen"] },
-    "solution": { "correct_choice": "keine Bedeutung oder keinen Einfluss haben" },
-    "explanation": [{ "kind": "answer", "body": "*Das spielt keine Rolle* = das ist unwichtig, das hat keinen Einfluss." }],
-    "tags": ["exam", "msa2023", "redewendung"],
+    "payload": {
+      "choices": [
+        "keine Bedeutung oder keinen Einfluss haben",
+        "nicht im Theater auftreten",
+        "keine Aufgabe übernehmen wollen",
+        "sich nicht verstellen"
+      ]
+    },
+    "solution": {
+      "correct_choice": "keine Bedeutung oder keinen Einfluss haben"
+    },
+    "explanation": [
+      {
+        "kind": "answer",
+        "title": "Warum",
+        "body": "Wenn etwas keine Rolle spielt, ist es unwichtig und hat keinen Einfluss. Die Redewendung kommt aus dem Theater, meint aber heute etwas ganz anderes."
+      }
+    ],
+    "tags": [
+      "exam",
+      "msa2023",
+      "redewendung"
+    ],
     "source": "MSA Berlin 2023 Deutsch, Aufgabe 253 (1 P)"
   },
   {
@@ -149,10 +404,45 @@
     "difficulty": 3,
     "qtype": "CLOZE",
     "prompt": "Ordnen Sie den Sätzen das jeweils entsprechende **sprachliche Mittel** zu.",
-    "payload": { "text_with_blanks": "(a) *Dann tauchte er in Paulas Duft ein.* → ___ (b) *Tills Lieblingsspeise sind warme Wiener Würstchen.* → ___", "blanks": [{ "id": 1, "choices": ["Alliteration", "Metapher", "Vergleich"] }, { "id": 2, "choices": ["Alliteration", "Metapher", "Vergleich"] }] },
-    "solution": { "answers": { "1": "Metapher", "2": "Alliteration" } },
-    "explanation": [{ "kind": "answer", "body": "(a) In einen Duft kann man nicht wirklich eintauchen: bildhaft, ohne *wie* → **Metapher**. (b) *warme Wiener Würstchen*: dreimal derselbe Anfangslaut → **Alliteration**." }],
-    "tags": ["exam", "msa2023", "stilmittel"],
+    "payload": {
+      "text_with_blanks": "(a) *Dann tauchte er in Paulas Duft ein.* → ___ (b) *Tills Lieblingsspeise sind warme Wiener Würstchen.* → ___",
+      "blanks": [
+        {
+          "id": 1,
+          "choices": [
+            "Alliteration",
+            "Metapher",
+            "Vergleich"
+          ]
+        },
+        {
+          "id": 2,
+          "choices": [
+            "Alliteration",
+            "Metapher",
+            "Vergleich"
+          ]
+        }
+      ]
+    },
+    "solution": {
+      "answers": {
+        "1": "Metapher",
+        "2": "Alliteration"
+      }
+    },
+    "explanation": [
+      {
+        "kind": "answer",
+        "title": "Warum",
+        "body": "Im ersten Satz taucht jemand in einen Duft ein. Das geht nicht wirklich. Es ist ein Bild ohne das Wort wie, also eine Metapher.\n\nIm zweiten Satz beginnen drei Wörter hintereinander mit demselben Laut: warme Wiener Würstchen. Das ist eine Alliteration."
+      }
+    ],
+    "tags": [
+      "exam",
+      "msa2023",
+      "stilmittel"
+    ],
     "source": "MSA Berlin 2023 Deutsch, Aufgabe 254 (2 P)"
   },
   {
@@ -162,10 +452,45 @@
     "difficulty": 3,
     "qtype": "CLOZE",
     "prompt": "Ordnen Sie den Sätzen die entsprechende **Begründung für die Kommasetzung** zu.",
-    "payload": { "text_with_blanks": "(a) *Sie bückte sich, um die Hose aufzuheben.* → ___ (b) *Seine Mutter, die gerade aus dem Zimmer gehen wollte, blieb stehen.* → ___", "blanks": [{ "id": 1, "choices": ["Satzgefüge", "Satzreihe", "Infinitivgruppe mit Einleitewort"] }, { "id": 2, "choices": ["Satzgefüge", "Satzreihe", "Infinitivgruppe mit Einleitewort"] }] },
-    "solution": { "answers": { "1": "Infinitivgruppe mit Einleitewort", "2": "Satzgefüge" } },
-    "explanation": [{ "kind": "answer", "body": "(a) *um … aufzuheben*: zu + Verb mit dem Einleitewort *um* → **Infinitivgruppe mit Einleitewort**. (b) *die gerade … wollte* ist ein eingeschobener Relativsatz (Nebensatz) → **Satzgefüge**." }],
-    "tags": ["exam", "msa2023", "komma"],
+    "payload": {
+      "text_with_blanks": "(a) *Sie bückte sich, um die Hose aufzuheben.* → ___ (b) *Seine Mutter, die gerade aus dem Zimmer gehen wollte, blieb stehen.* → ___",
+      "blanks": [
+        {
+          "id": 1,
+          "choices": [
+            "Satzgefüge",
+            "Satzreihe",
+            "Infinitivgruppe mit Einleitewort"
+          ]
+        },
+        {
+          "id": 2,
+          "choices": [
+            "Satzgefüge",
+            "Satzreihe",
+            "Infinitivgruppe mit Einleitewort"
+          ]
+        }
+      ]
+    },
+    "solution": {
+      "answers": {
+        "1": "Infinitivgruppe mit Einleitewort",
+        "2": "Satzgefüge"
+      }
+    },
+    "explanation": [
+      {
+        "kind": "answer",
+        "title": "Warum",
+        "body": "Im ersten Satz beginnt die Gruppe mit zu mit dem einleitenden Wort um. Das ist eine Infinitivgruppe mit Einleitewort.\n\nIm zweiten Satz ist ein Relativsatz eingeschoben, dessen Verb wollte am Ende steht. Hauptsatz und Nebensatz bilden zusammen ein Satzgefüge."
+      }
+    ],
+    "tags": [
+      "exam",
+      "msa2023",
+      "komma"
+    ],
     "source": "MSA Berlin 2023 Deutsch, Aufgabe 255 (2 P)"
   },
   {
@@ -175,10 +500,45 @@
     "difficulty": 2,
     "qtype": "CLOZE",
     "prompt": "Notieren Sie für das unterstrichene Wort die **deutsche Entsprechung**.",
-    "payload": { "text_with_blanks": "(a) *Das war ihr vorläufiges **Highlight** des Jahres.* → ___ (b) *Sie haben ein **Faible** für Freikörperkultur.* → ___", "blanks": [{ "id": 1, "choices": ["Höhepunkt", "Vorliebe", "Tiefpunkt"] }, { "id": 2, "choices": ["Vorliebe", "Höhepunkt", "Abneigung"] }] },
-    "solution": { "answers": { "1": "Höhepunkt", "2": "Vorliebe" } },
-    "explanation": [{ "kind": "answer", "body": "*Highlight* (engl.) = **Höhepunkt**. *Faible* (franz.) = **Vorliebe**, Schwäche für etwas." }],
-    "tags": ["exam", "msa2023", "fremdwoerter"],
+    "payload": {
+      "text_with_blanks": "(a) *Das war ihr vorläufiges **Highlight** des Jahres.* → ___ (b) *Sie haben ein **Faible** für Freikörperkultur.* → ___",
+      "blanks": [
+        {
+          "id": 1,
+          "choices": [
+            "Höhepunkt",
+            "Vorliebe",
+            "Tiefpunkt"
+          ]
+        },
+        {
+          "id": 2,
+          "choices": [
+            "Vorliebe",
+            "Höhepunkt",
+            "Abneigung"
+          ]
+        }
+      ]
+    },
+    "solution": {
+      "answers": {
+        "1": "Höhepunkt",
+        "2": "Vorliebe"
+      }
+    },
+    "explanation": [
+      {
+        "kind": "answer",
+        "title": "Warum",
+        "body": "Highlight kommt aus dem Englischen und bedeutet Höhepunkt. Faible kommt aus dem Französischen und bedeutet Vorliebe, also eine besondere Schwäche für etwas."
+      }
+    ],
+    "tags": [
+      "exam",
+      "msa2023",
+      "fremdwoerter"
+    ],
     "source": "MSA Berlin 2023 Deutsch, Aufgabe 256 (2 P)"
   },
   {
@@ -188,10 +548,28 @@
     "difficulty": 2,
     "qtype": "MCQ",
     "prompt": "Welche Strategie wenden Sie an, um das Wort **geräumig** richtig zu schreiben?\n\n(a) **ä oder e?**",
-    "payload": { "choices": ["Ich bilde ein stammverwandtes Wort.", "Ich erkenne ein typisches Adjektivsuffix.", "Ich zerlege das Wort in seine Silben."] },
-    "solution": { "correct_choice": "Ich bilde ein stammverwandtes Wort." },
-    "explanation": [{ "kind": "answer", "body": "Stammverwandtes Wort: **Raum** → au wird zu äu → *geräumig* (Ableiten)." }],
-    "tags": ["exam", "msa2023", "strategie"],
+    "payload": {
+      "choices": [
+        "Ich bilde ein stammverwandtes Wort.",
+        "Ich erkenne ein typisches Adjektivsuffix.",
+        "Ich zerlege das Wort in seine Silben."
+      ]
+    },
+    "solution": {
+      "correct_choice": "Ich bilde ein stammverwandtes Wort."
+    },
+    "explanation": [
+      {
+        "kind": "answer",
+        "title": "Warum",
+        "body": "Bei ä oder e hilft ein verwandtes Wort. Geräumig kommt von Raum. Aus au wird äu, deshalb schreibt man ä. Diese Strategie heißt ableiten."
+      }
+    ],
+    "tags": [
+      "exam",
+      "msa2023",
+      "strategie"
+    ],
     "source": "MSA Berlin 2023 Deutsch, Aufgabe 401a (1 P)"
   },
   {
@@ -201,10 +579,28 @@
     "difficulty": 2,
     "qtype": "MCQ",
     "prompt": "Welche Strategie wenden Sie an, um das Wort **geräumig** richtig zu schreiben?\n\n(b) **g oder ch am Ende?**",
-    "payload": { "choices": ["Ich verlängere das Wort.", "Ich zerlege das Wort in seine Silben.", "Ich bilde ein stammverwandtes Wort."] },
-    "solution": { "correct_choice": "Ich verlängere das Wort." },
-    "explanation": [{ "kind": "answer", "body": "Verlängern: *geräumi**g**e Wohnung* → man hört das g → *geräumig*." }],
-    "tags": ["exam", "msa2023", "strategie"],
+    "payload": {
+      "choices": [
+        "Ich verlängere das Wort.",
+        "Ich zerlege das Wort in seine Silben.",
+        "Ich bilde ein stammverwandtes Wort."
+      ]
+    },
+    "solution": {
+      "correct_choice": "Ich verlängere das Wort."
+    },
+    "explanation": [
+      {
+        "kind": "answer",
+        "title": "Warum",
+        "body": "Am Wortende hört man nicht, ob dort g oder ch steht. Wenn du das Wort verlängerst, hörst du es: eine geräumige Wohnung. Deshalb schreibt man g."
+      }
+    ],
+    "tags": [
+      "exam",
+      "msa2023",
+      "strategie"
+    ],
     "source": "MSA Berlin 2023 Deutsch, Aufgabe 401b (1 P)"
   },
   {
@@ -214,10 +610,43 @@
     "difficulty": 3,
     "qtype": "CLOZE",
     "prompt": "„Das“ oder „dass“? Kreuzen Sie an, welche Schreibweise richtig ist.",
-    "payload": { "text_with_blanks": "___ er noch viel reisen will, ___ steht schon fest.", "blanks": [{ "id": 1, "choices": ["Dass", "Das"] }, { "id": 2, "choices": ["dass", "das"] }] },
-    "solution": { "answers": { "1": "Dass", "2": "das" } },
-    "explanation": [{ "kind": "steps", "body": "**Dass** er noch viel reisen will: Konjunktion, leitet den Nebensatz ein, *dieses er noch viel reisen will* ergibt keinen Sinn.\n\n**das** steht schon fest: Pronomen, *dies/jenes steht schon fest* passt.\n\nStrategie: **Ersatzprobe** mit dies/jenes/welches, dazu die Wortart bestimmen." }],
-    "tags": ["exam", "msa2023", "das-dass"],
+    "payload": {
+      "text_with_blanks": "___ er noch viel reisen will, ___ steht schon fest.",
+      "blanks": [
+        {
+          "id": 1,
+          "choices": [
+            "Dass",
+            "Das"
+          ]
+        },
+        {
+          "id": 2,
+          "choices": [
+            "dass",
+            "das"
+          ]
+        }
+      ]
+    },
+    "solution": {
+      "answers": {
+        "1": "Dass",
+        "2": "das"
+      }
+    },
+    "explanation": [
+      {
+        "kind": "answer",
+        "title": "Warum",
+        "body": "Das erste Wort leitet einen Nebensatz ein. Weder dieses noch welches passt an seine Stelle. Es ist die Konjunktion mit zwei s: dass.\n\nDas zweite Wort kannst du durch dies ersetzen: Dies steht schon fest. Es ist ein Pronomen mit einem s: das."
+      }
+    ],
+    "tags": [
+      "exam",
+      "msa2023",
+      "das-dass"
+    ],
     "source": "MSA Berlin 2023 Deutsch, Aufgabe 402 (3 P)"
   },
   {
@@ -227,10 +656,43 @@
     "difficulty": 3,
     "qtype": "CLOZE",
     "prompt": "Getrennt oder zusammen? Wählen Sie die richtige Schreibweise.",
-    "payload": { "text_with_blanks": "(a) Die Autos sind ins Rutschen gekommen und ___. (b) Vor Schreck bin ich gleich ___.", "blanks": [{ "id": 1, "choices": ["zusammen gefahren", "zusammengefahren"] }, { "id": 2, "choices": ["zusammen gefahren", "zusammengefahren"] }] },
-    "solution": { "answers": { "1": "zusammengefahren", "2": "zusammengefahren" } },
-    "explanation": [{ "kind": "answer", "body": "Beide Male **zusammen**: (a) *zusammenfahren* = zusammenstoßen, (b) *zusammenfahren* = erschrocken zucken. Beides sind feste Verben mit Betonung auf *zusammen*. Getrennt wäre nur *gemeinsam fahren*: *Möchtest du mit uns zusammen fahren?*" }],
-    "tags": ["exam", "msa2023", "getrennt-zusammen"],
+    "payload": {
+      "text_with_blanks": "(a) Die Autos sind ins Rutschen gekommen und ___. (b) Vor Schreck bin ich gleich ___.",
+      "blanks": [
+        {
+          "id": 1,
+          "choices": [
+            "zusammen gefahren",
+            "zusammengefahren"
+          ]
+        },
+        {
+          "id": 2,
+          "choices": [
+            "zusammen gefahren",
+            "zusammengefahren"
+          ]
+        }
+      ]
+    },
+    "solution": {
+      "answers": {
+        "1": "zusammengefahren",
+        "2": "zusammengefahren"
+      }
+    },
+    "explanation": [
+      {
+        "kind": "answer",
+        "title": "Warum",
+        "body": "Beide Male wird zusammengeschrieben. Im ersten Satz bedeutet zusammenfahren, dass die Autos zusammenstoßen. Im zweiten Satz bedeutet es, vor Schreck zu zucken. In beiden Fällen liegt die Betonung nur auf zusammen. Getrennt schreibt man nur, wenn gemeinsam fahren gemeint ist."
+      }
+    ],
+    "tags": [
+      "exam",
+      "msa2023",
+      "getrennt-zusammen"
+    ],
     "source": "MSA Berlin 2023 Deutsch, Aufgabe 403 (2 P)"
   },
   {
@@ -240,11 +702,47 @@
     "difficulty": 3,
     "qtype": "MATCH",
     "prompt": "Ordnen Sie der Schreibung der markierten Wörter die jeweilige Rechtschreibregel zu.",
-    "payload": { "left": ["Diese Bettwäsche war nur die DRITTPEINLICHSTE.", "Er wollte bei diesem Projekt nicht den KÜRZEREN ziehen.", "Eines SONNTAGS kam Paula zu Besuch."], "right": ["Adjektive werden kleingeschrieben.", "Nominalisierte Adjektive werden großgeschrieben.", "Adverbien werden kleingeschrieben."] },
-    "solution": { "pairs": [["Diese Bettwäsche war nur die DRITTPEINLICHSTE.", "Adjektive werden kleingeschrieben."], ["Er wollte bei diesem Projekt nicht den KÜRZEREN ziehen.", "Nominalisierte Adjektive werden großgeschrieben."], ["Eines SONNTAGS kam Paula zu Besuch.", "Adverbien werden kleingeschrieben."]] },
-    "explanation": [{ "kind": "answer", "body": "*die drittpeinlichste (Bettwäsche)*: Adjektiv zum Nomen *Bettwäsche* → klein. *den Kürzeren ziehen*: Artikel *den* + Adjektiv als Nomen → groß. *eines Sonntags*: Zeitadverb (Antwort auf *wann?*) → klein." }],
-    "tags": ["exam", "msa2023", "gross-klein"],
-    "source": "MSA Berlin 2023 Deutsch, Aufgabe 404 (3 P)"
+    "payload": {
+      "left": [
+        "Diese Bettwäsche war nur die DRITTPEINLICHSTE.",
+        "Er wollte bei diesem Projekt nicht den KÜRZEREN ziehen.",
+        "SONNTAGS kam Paula oft zu Besuch."
+      ],
+      "right": [
+        "Adjektive werden kleingeschrieben.",
+        "Nominalisierte Adjektive werden großgeschrieben.",
+        "Adverbien werden kleingeschrieben."
+      ]
+    },
+    "solution": {
+      "pairs": [
+        [
+          "Diese Bettwäsche war nur die DRITTPEINLICHSTE.",
+          "Adjektive werden kleingeschrieben."
+        ],
+        [
+          "Er wollte bei diesem Projekt nicht den KÜRZEREN ziehen.",
+          "Nominalisierte Adjektive werden großgeschrieben."
+        ],
+        [
+          "SONNTAGS kam Paula oft zu Besuch.",
+          "Adverbien werden kleingeschrieben."
+        ]
+      ]
+    },
+    "explanation": [
+      {
+        "kind": "answer",
+        "title": "Warum",
+        "body": "Drittpeinlichste beschreibt die Bettwäsche. Es ist ein Adjektiv und bleibt klein.\n\nDen Kürzeren ziehen: Vor dem Wort steht der Artikel den. Das Adjektiv ist zum Nomen geworden und wird großgeschrieben.\n\nSonntags mit s am Ende bedeutet an jedem Sonntag. Es ist ein Adverb und bleibt klein."
+      }
+    ],
+    "tags": [
+      "exam",
+      "msa2023",
+      "gross-klein"
+    ],
+    "source": "MSA Berlin 2023 Deutsch, Aufgabe 404 (3 P); dritter Satz angepasst"
   },
   {
     "id": "DE_MSA2023_501",
@@ -253,10 +751,29 @@
     "difficulty": 3,
     "qtype": "MCQ",
     "prompt": "Überarbeiten: Der Satz enthält einen **Grammatikfehler (Kasus)**. Wie lautet die Korrektur?\n\n*Der Mount Everest ist mit eine Höhe von 8848 Metern der höchste Berg der Erde und befindet sich im Himalaya-Gebirge.*",
-    "payload": { "choices": ["mit eine Höhe → mit einer Höhe", "der Erde → die Erde", "im Himalaya-Gebirge → in Himalaya-Gebirge", "8848 Metern → 8848 Meter"] },
-    "solution": { "correct_choice": "mit eine Höhe → mit einer Höhe" },
-    "explanation": [{ "kind": "answer", "body": "*mit* verlangt den Dativ: *mit **einer** Höhe*." }],
-    "tags": ["exam", "msa2023", "ueberarbeiten"],
+    "payload": {
+      "choices": [
+        "mit eine Höhe → mit einer Höhe",
+        "der Erde → die Erde",
+        "im Himalaya-Gebirge → in Himalaya-Gebirge",
+        "8848 Metern → 8848 Meter"
+      ]
+    },
+    "solution": {
+      "correct_choice": "mit eine Höhe → mit einer Höhe"
+    },
+    "explanation": [
+      {
+        "kind": "answer",
+        "title": "Warum",
+        "body": "Nach mit steht der Dativ. Deshalb heißt es mit einer Höhe und nicht mit eine Höhe."
+      }
+    ],
+    "tags": [
+      "exam",
+      "msa2023",
+      "ueberarbeiten"
+    ],
     "source": "MSA Berlin 2023 Deutsch, Aufgabe 501 (1 P)"
   },
   {
@@ -266,10 +783,29 @@
     "difficulty": 2,
     "qtype": "MCQ",
     "prompt": "Überarbeiten: Der Satz enthält einen **Rechtschreibfehler (R)**. Wie lautet die Korrektur?\n\n*Der erste erfolgreiche Aufstig wurde von Sir Edmund Hillary aus Neuseeland und Tenzing Norgay aus Nepal durchgeführt.*",
-    "payload": { "choices": ["Aufstig → Aufstieg", "erfolgreiche → erfolgreihe", "durchgeführt → durch geführt", "Neuseeland → Neu Seeland"] },
-    "solution": { "correct_choice": "Aufstig → Aufstieg" },
-    "explanation": [{ "kind": "answer", "body": "Langes i wird als **ie** geschrieben: *Aufstieg* (wie *steigen*)." }],
-    "tags": ["exam", "msa2023", "ueberarbeiten"],
+    "payload": {
+      "choices": [
+        "Aufstig → Aufstieg",
+        "erfolgreiche → erfolgreihe",
+        "durchgeführt → durch geführt",
+        "Neuseeland → Neu Seeland"
+      ]
+    },
+    "solution": {
+      "correct_choice": "Aufstig → Aufstieg"
+    },
+    "explanation": [
+      {
+        "kind": "answer",
+        "title": "Warum",
+        "body": "Ein langes i schreibt man meistens ie. Aufstieg kommt von steigen, und dort hörst du das lange i deutlich."
+      }
+    ],
+    "tags": [
+      "exam",
+      "msa2023",
+      "ueberarbeiten"
+    ],
     "source": "MSA Berlin 2023 Deutsch, Aufgabe 502 (1 P)"
   },
   {
@@ -279,10 +815,29 @@
     "difficulty": 3,
     "qtype": "MCQ",
     "prompt": "Überarbeiten: Der Satz enthält einen **Grammatikfehler (Konjunktion)**. Wie lautet die Korrektur?\n\n*Seit dem ersten erfolgreichen Besteigen hat es mehr wie 4000 erfolgreiche Besteigungen des Mount Everest gegeben, aber auch mehr als 300 Todesfälle.*",
-    "payload": { "choices": ["mehr wie 4000 → mehr als 4000", "aber auch → sondern auch", "Seit dem → Seid dem", "gegeben → gegebt"] },
-    "solution": { "correct_choice": "mehr wie 4000 → mehr als 4000" },
-    "explanation": [{ "kind": "answer", "body": "Beim Komparativ (*mehr*) steht **als**, nicht *wie*. *wie* nur bei Gleichheit (*so viel wie*)." }],
-    "tags": ["exam", "msa2023", "ueberarbeiten"],
+    "payload": {
+      "choices": [
+        "mehr wie 4000 → mehr als 4000",
+        "aber auch → sondern auch",
+        "Seit dem → Seid dem",
+        "gegeben → gegebt"
+      ]
+    },
+    "solution": {
+      "correct_choice": "mehr wie 4000 → mehr als 4000"
+    },
+    "explanation": [
+      {
+        "kind": "answer",
+        "title": "Warum",
+        "body": "Nach einer Steigerungsform wie mehr steht als. Das Wort wie steht nur, wenn zwei Dinge gleich sind: so viel wie."
+      }
+    ],
+    "tags": [
+      "exam",
+      "msa2023",
+      "ueberarbeiten"
+    ],
     "source": "MSA Berlin 2023 Deutsch, Aufgabe 503 (1 P)"
   },
   {
@@ -292,10 +847,29 @@
     "difficulty": 2,
     "qtype": "MCQ",
     "prompt": "Überarbeiten: Der Satz enthält einen **Ausdrucksfehler (Umgangssprache)**. Wie lautet die Korrektur?\n\n*Der Mount Everest ist ein beliebtes Ziel für Bergsteiger aus der ganzen Welt, aber die Besteigung ist mega gefährlich und erfordert sowohl körperliche Fitness als auch erfahrene Führung.*",
-    "payload": { "choices": ["mega gefährlich → sehr gefährlich", "beliebtes Ziel → geiles Ziel", "erfahrene Führung → krasse Führung", "Bergsteiger → Kletterer"] },
-    "solution": { "correct_choice": "mega gefährlich → sehr gefährlich" },
-    "explanation": [{ "kind": "answer", "body": "*mega* ist Umgangssprache. Standardsprache: *sehr gefährlich* oder *äußerst gefährlich*." }],
-    "tags": ["exam", "msa2023", "ueberarbeiten"],
+    "payload": {
+      "choices": [
+        "mega gefährlich → sehr gefährlich",
+        "beliebtes Ziel → geiles Ziel",
+        "erfahrene Führung → krasse Führung",
+        "Bergsteiger → Kletterer"
+      ]
+    },
+    "solution": {
+      "correct_choice": "mega gefährlich → sehr gefährlich"
+    },
+    "explanation": [
+      {
+        "kind": "answer",
+        "title": "Warum",
+        "body": "Mega ist Umgangssprache und passt nicht in einen sachlichen Text. In Standardsprache heißt es sehr gefährlich oder äußerst gefährlich."
+      }
+    ],
+    "tags": [
+      "exam",
+      "msa2023",
+      "ueberarbeiten"
+    ],
     "source": "MSA Berlin 2023 Deutsch, Aufgabe 504 (1 P)"
   },
   {
@@ -305,10 +879,29 @@
     "difficulty": 2,
     "qtype": "MCQ",
     "prompt": "Überarbeiten: Der Satz enthält einen **Rechtschreibfehler (R)**. Wie lautet die Korrektur?\n\n*Der Berg ist Teil des Mahalangur-Gebirgszugs und besteht hauptsechlich aus Kalkstein und Granit.*",
-    "payload": { "choices": ["hauptsechlich → hauptsächlich", "Kalkstein → Kalk Stein", "Teil → teil", "besteht → bestet"] },
-    "solution": { "correct_choice": "hauptsechlich → hauptsächlich" },
-    "explanation": [{ "kind": "answer", "body": "Ableiten: *Sache* → **ä** → *hauptsächlich*." }],
-    "tags": ["exam", "msa2023", "ueberarbeiten"],
+    "payload": {
+      "choices": [
+        "hauptsechlich → hauptsächlich",
+        "Kalkstein → Kalk Stein",
+        "Teil → teil",
+        "besteht → bestet"
+      ]
+    },
+    "solution": {
+      "correct_choice": "hauptsechlich → hauptsächlich"
+    },
+    "explanation": [
+      {
+        "kind": "answer",
+        "title": "Warum",
+        "body": "Bei ä oder e hilft ein verwandtes Wort. Hauptsächlich kommt von Sache. Aus a wird ä."
+      }
+    ],
+    "tags": [
+      "exam",
+      "msa2023",
+      "ueberarbeiten"
+    ],
     "source": "MSA Berlin 2023 Deutsch, Aufgabe 505 (1 P)"
   },
   {
@@ -318,10 +911,29 @@
     "difficulty": 2,
     "qtype": "MCQ",
     "prompt": "Überarbeiten: Der Satz enthält einen **Rechtschreibfehler (R)**. Wie lautet die Korrektur?\n\n*Der Gipfel befindet sich in einer Höhe von ca. 8.848 Metern über dem Meerespiegel und die Basis des Berges liegt bei ca. 2.848 Metern.*",
-    "payload": { "choices": ["Meerespiegel → Meeresspiegel", "Gipfel → Gipfl", "Basis → Bahsis", "befindet → befindet sich nicht"] },
-    "solution": { "correct_choice": "Meerespiegel → Meeresspiegel" },
-    "explanation": [{ "kind": "answer", "body": "Zusammensetzung *Meer-es* + *Spiegel* → **Meeresspiegel** mit zwei s (Fugen-s + Spiegel)." }],
-    "tags": ["exam", "msa2023", "ueberarbeiten"],
+    "payload": {
+      "choices": [
+        "Meerespiegel → Meeresspiegel",
+        "Gipfel → Gipfl",
+        "Basis → Bahsis",
+        "befindet → befindet sich nicht"
+      ]
+    },
+    "solution": {
+      "correct_choice": "Meerespiegel → Meeresspiegel"
+    },
+    "explanation": [
+      {
+        "kind": "answer",
+        "title": "Warum",
+        "body": "Das Wort ist aus Meeres und Spiegel zusammengesetzt. Das erste s gehört zu Meeres, das zweite zu Spiegel. Deshalb stehen zwei s hintereinander."
+      }
+    ],
+    "tags": [
+      "exam",
+      "msa2023",
+      "ueberarbeiten"
+    ],
     "source": "MSA Berlin 2023 Deutsch, Aufgabe 506 (1 P)"
   },
   {
@@ -331,10 +943,29 @@
     "difficulty": 2,
     "qtype": "MCQ",
     "prompt": "Überarbeiten: Der Satz enthält einen **Rechtschreibfehler (R)**. Wie lautet die Korrektur?\n\n*Der Mount Everest ist teil des Himalaya-Gebirges und hat eine Gesamtlänge von ca. 1500 Kilometern.*",
-    "payload": { "choices": ["teil → Teil", "Gesamtlänge → Gesamt Länge", "Kilometern → Kilometer", "Himalaya-Gebirges → Himalayagebirges"] },
-    "solution": { "correct_choice": "teil → Teil" },
-    "explanation": [{ "kind": "answer", "body": "*Teil* ist hier ein Nomen (*ein Teil des Gebirges*) → groß." }],
-    "tags": ["exam", "msa2023", "ueberarbeiten"],
+    "payload": {
+      "choices": [
+        "teil → Teil",
+        "Gesamtlänge → Gesamt Länge",
+        "Kilometern → Kilometer",
+        "Himalaya-Gebirges → Himalayagebirges"
+      ]
+    },
+    "solution": {
+      "correct_choice": "teil → Teil"
+    },
+    "explanation": [
+      {
+        "kind": "answer",
+        "title": "Warum",
+        "body": "Teil ist hier ein Nomen: ein Teil des Gebirges. Nomen werden großgeschrieben."
+      }
+    ],
+    "tags": [
+      "exam",
+      "msa2023",
+      "ueberarbeiten"
+    ],
     "source": "MSA Berlin 2023 Deutsch, Aufgabe 507 (1 P)"
   },
   {
@@ -344,10 +975,29 @@
     "difficulty": 3,
     "qtype": "MCQ",
     "prompt": "Überarbeiten: Der Satz enthält einen **Zeichensetzungsfehler (Z)**. Wo fehlt das Komma?\n\n*Um ihn zu besteigen eignet sich die Hauptsaison von April bis Mai.*",
-    "payload": { "choices": ["Um ihn zu besteigen, eignet sich …", "Um ihn, zu besteigen …", "… die Hauptsaison, von April bis Mai", "… von April, bis Mai"] },
-    "solution": { "correct_choice": "Um ihn zu besteigen, eignet sich …" },
-    "explanation": [{ "kind": "answer", "body": "*Um ihn zu besteigen* ist eine **Infinitivgruppe mit einleitendem Wort** (um) → Komma danach." }],
-    "tags": ["exam", "msa2023", "ueberarbeiten"],
+    "payload": {
+      "choices": [
+        "Um ihn zu besteigen, eignet sich …",
+        "Um ihn, zu besteigen …",
+        "… die Hauptsaison, von April bis Mai",
+        "… von April, bis Mai"
+      ]
+    },
+    "solution": {
+      "correct_choice": "Um ihn zu besteigen, eignet sich …"
+    },
+    "explanation": [
+      {
+        "kind": "answer",
+        "title": "Warum",
+        "body": "Die Gruppe mit zu beginnt mit dem einleitenden Wort um. Sie steht am Satzanfang und endet mit besteigen. Danach steht das Komma."
+      }
+    ],
+    "tags": [
+      "exam",
+      "msa2023",
+      "ueberarbeiten"
+    ],
     "source": "MSA Berlin 2023 Deutsch, Aufgabe 508 (1 P)"
   },
   {
@@ -357,10 +1007,29 @@
     "difficulty": 3,
     "qtype": "MCQ",
     "prompt": "Überarbeiten: Der Satz enthält einen **Grammatikfehler (Kasus)**. Wie lautet die Korrektur?\n\n*Der Mount Everest ist wegen seiner Höhe und der damit einhergehenden Umweltbedingungen ein sehr schwieriger Berg zu besteigen und erfordert sowohl körperliche als auch mentales Stärke und Ausdauer von den Bergsteigern.*",
-    "payload": { "choices": ["mentales Stärke → mentale Stärke", "seiner Höhe → seine Höhe", "von den Bergsteigern → von die Bergsteiger", "körperliche → körperliches"] },
-    "solution": { "correct_choice": "mentales Stärke → mentale Stärke" },
-    "explanation": [{ "kind": "answer", "body": "*Stärke* ist weiblich: *mental**e** Stärke* (wie *körperlich**e** Stärke*)." }],
-    "tags": ["exam", "msa2023", "ueberarbeiten"],
+    "payload": {
+      "choices": [
+        "mentales Stärke → mentale Stärke",
+        "seiner Höhe → seine Höhe",
+        "von den Bergsteigern → von die Bergsteiger",
+        "körperliche → körperliches"
+      ]
+    },
+    "solution": {
+      "correct_choice": "mentales Stärke → mentale Stärke"
+    },
+    "explanation": [
+      {
+        "kind": "answer",
+        "title": "Warum",
+        "body": "Stärke ist ein weibliches Nomen: die Stärke. Das Adjektiv davor bekommt deshalb die Endung e: mentale Stärke, genauso wie körperliche Stärke."
+      }
+    ],
+    "tags": [
+      "exam",
+      "msa2023",
+      "ueberarbeiten"
+    ],
     "source": "MSA Berlin 2023 Deutsch, Aufgabe 510 (1 P)"
   }
 ]
