@@ -908,7 +908,7 @@
               "grund": "Im Teil mit if steht *had*, also Simple Past. Das ist Typ 2, eine nur vorgestellte Situation. Dazu gehört *would*."
             },
             {
-              "satz": "If you don't do your homework, your teacher ___ very angry.",
+              "satz": "If you don't do your homework tonight, your teacher ___ very angry tomorrow.",
               "a": "will be",
               "b": "would be",
               "c": "is",
@@ -1034,7 +1034,7 @@
       },
       {
         "kind": "remember",
-        "body": "- Fragen und Nein-Sätze brauchen den Helfer do, does oder did.\n- Nach dem Helfer steht das Verb in der Grundform.\n- Mit be, have und den Modalverben brauchst du kein do: *Is he …? Can you …?*"
+        "body": "- Fragen und Nein-Sätze brauchen den Helfer do, does oder did.\n- Nach dem Helfer steht das Verb in der Grundform.\n- Mit be, have got und den Modalverben brauchst du kein do: *Is he …? Have you got …? Can you …?*\n- Auch das Present Perfect braucht kein do: *Have you ever been …?*\n- *Have* als einziges Verb braucht do: *Do you have a pen?*"
       }
     ],
     "tags": [

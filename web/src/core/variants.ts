@@ -98,7 +98,11 @@ export function sampleVariables(spec: VariantSpec, rng: Rng, maxTries = 2000): V
 
 /**
  * Placeholders: {{x}}, {{= expr}}, {{= expr | filter}}, {{= expr | fixed:2}}.
- * Filters: num (default), fixed:n, frac, fractex, euro, raw, sign, abs, int.
+ * Filters: num (default), fixed:n, frac, fractex, euro, raw, sign, abs, int, and for readable sentences:
+ *   paren          a negative number in brackets: 5, but (−5), so "3 · (−5)" and never "3 · −5"
+ *   coef           a factor in front of a letter: 1 is left out ("x"), −1 becomes "−" ("−x"), else the number
+ *   pick:ja,nein   a word instead of a number: the first word if the value is not 0, else the second
+ *   pl:Tag,Tage    singular if the value is 1 or −1, else plural
  */
 // Body may not contain braces so `\frac{{{a}}}{{{b}}}` (TeX brace + placeholder) still works.
 const PLACEHOLDER = /\{\{\s*=?\s*([^{}|]+?)\s*(?:\|\s*([a-z]+)(?::([^}\s]+))?\s*)?\}\}/g;
@@ -135,6 +139,16 @@ function applyFilter(value: number | string, filter?: string, arg?: string): str
       return formatNumber(Math.abs(value));
     case "int":
       return formatNumber(roundHalfUp(value, 0));
+    case "paren":
+      return value < 0 ? `(${formatNumber(value)})` : formatNumber(value);
+    case "coef":
+      return value === 1 ? "" : value === -1 ? "−" : formatNumber(value);
+    case "pick":
+    case "pl": {
+      const [first = "", second = ""] = (arg ?? "").split(",");
+      const useFirst = filter === "pick" ? value !== 0 : Math.abs(value) === 1;
+      return (useFirst ? first : second).replace(/_/g, " ");
+    }
     default:
       throw new Error(`renderTemplate: unknown filter "${filter}"`);
   }

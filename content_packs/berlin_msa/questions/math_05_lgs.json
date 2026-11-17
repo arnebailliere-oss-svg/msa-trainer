@@ -20,7 +20,7 @@
       },
       {
         "kind": "steps",
-        "body": "1. (1) in (2) einsetzen: $x + ({{a}}x {{= b | sign}}) = {{s}}$\n2. Zusammenfassen: ${{= a+1}}x {{= b | sign}} = {{s}} \\;|\\; {{= -b | sign}}$\n3. ${{= a+1}}x = {{= s - b}} \\;|\\; : {{= a+1}}$ → $x = {{x}}$\n4. $x = {{x}}$ in (1): $y = {{a}} \\cdot {{x}} {{= b | sign}} = {{y}}$\n5. Probe in (2): ${{x}} + {{y}} = {{s}}$ ✓"
+        "body": "1. (1) in (2) einsetzen: $x + ({{a}}x {{= b | sign}}) = {{s}}$\n2. Zusammenfassen: ${{= a+1}}x {{= b | sign}} = {{s}} \\;|\\; {{= -b | sign}}$\n3. ${{= a+1}}x = {{= s - b}} \\;|\\; : {{= a+1}}$ → $x = {{x}}$\n4. $x = {{x}}$ in (1): $y = {{a}} \\cdot {{x | paren}} {{= b | sign}} = {{y}}$\n5. Probe in (2): ${{x}} + {{y | paren}} = {{s}}$ ✓"
       },
       {
         "kind": "answer",
@@ -70,7 +70,7 @@
     "topicId": "MATH_ALG_LGS",
     "difficulty": 3,
     "qtype": "MCQ",
-    "prompt": "Wo schneiden sich die Geraden?\n\n(1) $y = {{a}}x {{= b | sign}}$\n(2) $y = {{c}}x {{= d | sign}}$",
+    "prompt": "Wo schneiden sich die Geraden?\n\n(1) $y = {{a | coef}}x {{= b | sign}}$\n(2) $y = {{c | coef}}x {{= d | sign}}$",
     "payload": {
       "choices": [
         "$S({{x}} \\,|\\, {{y}})$",
@@ -90,7 +90,7 @@
       },
       {
         "kind": "steps",
-        "body": "1. Gleichsetzen: ${{a}}x {{= b | sign}} = {{c}}x {{= d | sign}}$\n2. $x$ sammeln: ${{= a - c}}x = {{= d - b}}$ → $x = {{x}}$\n3. In (1): $y = {{a}} \\cdot {{x}} {{= b | sign}} = {{y}}$\n4. Probe in (2): ${{c}} \\cdot {{x}} {{= d | sign}} = {{y}}$ ✓"
+        "body": "1. Gleichsetzen: ${{a | coef}}x {{= b | sign}} = {{c | coef}}x {{= d | sign}}$\n2. $x$ sammeln: ${{= a - c | coef}}x = {{= d - b}}$. Das ergibt $x = {{x}}$.\n3. In (1): $y = {{a | coef}} {{= if(abs(a) == 1, 0, 1) | pick:\\cdot,}} {{x | paren}} {{= b | sign}} = {{y}}$\n4. Probe in (2): ${{c | coef}} {{= if(abs(c) == 1, 0, 1) | pick:\\cdot,}} {{x | paren}} {{= d | sign}} = {{y}}$ ✓"
       },
       {
         "kind": "mistake",
@@ -154,7 +154,7 @@
     "topicId": "MATH_ALG_LGS",
     "difficulty": 3,
     "qtype": "SHORT",
-    "prompt": "Löse mit dem Additionsverfahren und gib $x$ an:\n\n(1) ${{a}}x + {{b}}y = {{e}}$\n(2) ${{c}}x - {{b}}y = {{f}}$",
+    "prompt": "Löse mit dem Additionsverfahren und gib $x$ an:\n\n(1) ${{a | coef}}x + {{b}}y = {{e}}$\n(2) ${{c | coef}}x - {{b}}y = {{f}}$",
     "payload": {
       "answer_type": "number"
     },
@@ -169,7 +169,7 @@
       },
       {
         "kind": "steps",
-        "body": "1. (1) + (2): ${{a}}x + {{c}}x + {{b}}y - {{b}}y = {{e}} {{= f | sign}}$\n2. ${{= a + c}}x = {{= e + f}} \\;|\\; : {{= a + c}}$ → $x = {{x}}$\n3. $x = {{x}}$ in (1): ${{= a*x}} + {{b}}y = {{e}}$ → ${{b}}y = {{= e - a*x}}$ → $y = {{y}}$\n4. Probe in (2): ${{c}} \\cdot {{x}} - {{b}} \\cdot {{y}} = {{f}}$ ✓"
+        "body": "1. (1) + (2): ${{a | coef}}x + {{c | coef}}x + {{b}}y - {{b}}y = {{e}} {{= f | sign}}$\n2. ${{= a + c}}x = {{= e + f}} \\;|\\; : {{= a + c}}$. Das ergibt $x = {{x}}$.\n3. $x = {{x}}$ in (1): ${{= a*x}} + {{b}}y = {{e}}$. Also ist ${{b}}y = {{= e - a*x}}$ und $y = {{y}}$.\n4. Probe in (2): ${{c | coef}} {{= if(abs(c) == 1, 0, 1) | pick:\\cdot,}} {{x | paren}} - {{b}} \\cdot {{y | paren}} = {{= c*x}} {{= -b*y | sign}} = {{f}}$ ✓"
       },
       {
         "kind": "answer",
@@ -229,7 +229,7 @@
     "topicId": "MATH_ALG_LGS",
     "difficulty": 4,
     "qtype": "SHORT",
-    "prompt": "Löse mit dem Additionsverfahren und gib $y$ an:\n\n(1) ${{a}}x + {{b}}y = {{e}}$\n(2) ${{c}}x + {{d}}y = {{f}}$",
+    "prompt": "Löse mit dem Additionsverfahren und gib $y$ an:\n\n(1) ${{a}}x + {{b | coef}}y = {{e}}$\n(2) ${{c}}x + {{d | coef}}y = {{f}}$",
     "payload": {
       "answer_type": "number"
     },
@@ -244,7 +244,7 @@
       },
       {
         "kind": "steps",
-        "body": "1. (1) $\\cdot\\, {{c}}$: ${{= a*c}}x + {{= b*c}}y = {{= e*c}}$\n2. (2) $\\cdot\\, (-{{a}})$: ${{= -a*c}}x {{= -d*a | sign}}y = {{= -f*a}}$\n3. Addieren: ${{= b*c - d*a}}y = {{= e*c - f*a}}$ → $y = {{y}}$\n4. $y = {{y}}$ in (1): ${{a}}x + {{= b*y}} = {{e}}$ → $x = {{x}}$\n5. Probe in (2): ${{c}} \\cdot {{x}} + {{d}} \\cdot {{y}} = {{f}}$ ✓"
+        "body": "1. (1) $\\cdot\\, {{c}}$: ${{= a*c}}x + {{= b*c}}y = {{= e*c}}$\n2. (2) $\\cdot\\, (-{{a}})$: ${{= -a*c}}x {{= -d*a | sign}}y = {{= -f*a}}$\n3. Addieren: ${{= b*c - d*a | coef}}y = {{= e*c - f*a}}$. Das ergibt $y = {{y}}$.\n4. $y = {{y}}$ in (1): ${{a}}x {{= b*y | sign}} = {{e}}$. Das ergibt $x = {{x}}$.\n5. Probe in (2): ${{c}} \\cdot {{x | paren}} + {{d | coef}} {{= if(abs(d) == 1, 0, 1) | pick:\\cdot,}} {{y | paren}} = {{= c*x}} {{= d*y | sign}} = {{f}}$ ✓"
       },
       {
         "kind": "mistake",

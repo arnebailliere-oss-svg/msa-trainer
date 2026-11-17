@@ -1220,7 +1220,7 @@
     "explanation": [
       {
         "kind": "steps",
-        "body": "$N(24) = 80 \\cdot 1{,}4^{24} \\approx 80 \\cdot 3217 \\approx 257\\,000$.\n\nDas ist mehr als 250 000 — die Aussage ist **wahr**."
+        "body": "$N(24) = 80 \\cdot 1{,}4^{24} \\approx 80 \\cdot 3214 \\approx 257\\,000$.\n\nDas ist mehr als 250 000 — die Aussage ist **wahr**."
       },
       {
         "kind": "mistake",

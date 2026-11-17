@@ -1,0 +1,787 @@
+[
+ {
+  "id": "MATH_POW_BERECHNE_T1",
+  "why": "The product showed a stray digit and one step too many; it now writes exactly as many factors as the exponent says.",
+  "ops": [
+   {
+    "op": "section",
+    "index": 1,
+    "body": "Der Exponent {{n}} sagt: Die {{a}} steht {{n}}-mal als Faktor da.\n\n${{a}}^{{{n}}} = {{a}} \\cdot {{a}} {{= if(n > 2, 1, 0) | pick:\\cdot,}} {{= if(n > 2, a, 1) | coef}} {{= if(n > 3, 1, 0) | pick:\\cdot,}} {{= if(n > 3, a, 1) | coef}} = {{= a^n}}$\n\nRechne Schritt für Schritt: ${{a}} \\cdot {{a}} = {{= a*a}} {{= if(n > 2, 1, 0) | pick:\\qquad,}} {{= if(n > 2, a*a, 1) | coef}} {{= if(n > 2, 1, 0) | pick:\\cdot,}} {{= if(n > 2, a, 1) | coef}} {{= if(n > 2, 1, 0) | pick:=,}} {{= if(n > 2, a*a*a, 1) | coef}} {{= if(n > 3, 1, 0) | pick:\\qquad,}} {{= if(n > 3, a*a*a, 1) | coef}} {{= if(n > 3, 1, 0) | pick:\\cdot,}} {{= if(n > 3, a, 1) | coef}} {{= if(n > 3, 1, 0) | pick:=,}} {{= if(n > 3, a*a*a*a, 1) | coef}}$"
+   }
+  ]
+ },
+ {
+  "id": "MATH_EQU_QUAD_PQ_MCQ_T1",
+  "why": "A negative solution was inserted without brackets in the check; a coefficient 1 in front of x is no longer written.",
+  "ops": [
+   {
+    "op": "replace",
+    "in": "explanation",
+    "from": "${{r1}}^2 {{= p | sign}} \\cdot {{r1}} {{= q | sign}}",
+    "to": "${{r1 | paren}}^2 {{= p | sign}} \\cdot {{r1 | paren}} {{= q | sign}}"
+   },
+   {
+    "op": "prompt",
+    "text": "Löse mit der pq-Formel: $x^2 {{= if(p > 0, 1, 0) | pick:+,−}} {{= abs(p) | coef}}x {{= q | sign}} = 0$"
+   }
+  ]
+ },
+ {
+  "id": "MATH_EQU_AXB_T1",
+  "why": "A negative solution stood without brackets after the multiplication dot in the check.",
+  "ops": [
+   {
+    "op": "replace",
+    "in": "explanation",
+    "from": "{{a}} \\cdot {{= (c-b)/a}} {{= b | sign}}",
+    "to": "{{a}} \\cdot {{= (c-b)/a | paren}} {{= b | sign}}"
+   }
+  ]
+ },
+ {
+  "id": "MATH_EQU_BOTH_SIDES_T1",
+  "why": "A negative solution stood without brackets after the multiplication dot in the check; a coefficient 1 in front of x is no longer written.",
+  "ops": [
+   {
+    "op": "replace",
+    "in": "explanation",
+    "from": "\\cdot {{= (d-b)/(a-c)}}",
+    "to": "\\cdot {{= (d-b)/(a-c) | paren}}"
+   },
+   {
+    "op": "prompt",
+    "text": "Löse die Gleichung: ${{a}}x {{= b | sign}} = {{c | coef}}x {{= d | sign}}$"
+   },
+   {
+    "op": "replace",
+    "in": "explanation",
+    "from": "$| {{= -c | sign}}x$",
+    "to": "$| - {{c | coef}}x$"
+   },
+   {
+    "op": "replace",
+    "in": "explanation",
+    "from": "${{= a - c}}x",
+    "to": "${{= a - c | coef}}x"
+   },
+   {
+    "op": "replace",
+    "in": "explanation",
+    "from": "rechts ${{c}} \\cdot {{= (d-b)/(a-c) | paren}}",
+    "to": "rechts ${{c | coef}} {{= if(c == 1, 0, 1) | pick:\\cdot,}} {{= (d-b)/(a-c) | paren}}"
+   }
+  ]
+ },
+ {
+  "id": "MATH_PCT_ZINSESZINS_T1",
+  "why": "The shown calculation used a rounded factor and did not give the stated result; it now keeps the exact factor.",
+  "ops": [
+   {
+    "op": "section",
+    "index": 2,
+    "body": "1. Faktor pro Jahr: $1 + \\frac{{{p}}}{100} = {{= 1 + p/100}}$\n2. Für {{n}} Jahre: ${{= 1 + p/100}}^{{{n}}} \\approx {{= (1+p/100)^n | fixed:5}}$. Runde diesen Faktor nicht. Lass ihn im Taschenrechner stehen.\n3. Mal Anfangskapital: ${{k}} \\cdot {{= 1 + p/100}}^{{{n}}} \\approx {{= k*(1+p/100)^n | fixed:2}}$ €"
+   }
+  ]
+ },
+ {
+  "id": "MATH_TERM_AUSKLAMMERN_T1",
+  "why": "The bracket showed '1x' in the steps, the answer and the stored solution; it now shows 'x'.",
+  "ops": [
+   {
+    "op": "replace",
+    "in": "all",
+    "from": "{{m}}x",
+    "to": "{{m | coef}}x"
+   }
+  ]
+ },
+ {
+  "id": "MATH_EQU_WORD_ALTER_T1",
+  "why": "Family words were inserted like names without articles and in pairs that do not fit; now fixed pairs with correct articles and plausible ages.",
+  "ops": [
+   {
+    "op": "set",
+    "path": [
+     "variants"
+    ],
+    "value": {
+     "enabled": true,
+     "variables": {
+      "k": {
+       "type": "int",
+       "min": 2,
+       "max": 5
+      },
+      "x": {
+       "type": "int",
+       "min": 4,
+       "max": 22
+      },
+      "paar": {
+       "type": "pick",
+       "from": [
+        {
+         "alt": "Der Vater",
+         "altklein": "der Vater",
+         "jung": "sein Sohn",
+         "kind": "der Sohn",
+         "kindgross": "Der Sohn",
+         "gen": "des Sohnes"
+        },
+        {
+         "alt": "Die Mutter",
+         "altklein": "die Mutter",
+         "jung": "ihre Tochter",
+         "kind": "die Tochter",
+         "kindgross": "Die Tochter",
+         "gen": "der Tochter"
+        },
+        {
+         "alt": "Die Tante",
+         "altklein": "die Tante",
+         "jung": "ihre Nichte",
+         "kind": "die Nichte",
+         "kindgross": "Die Nichte",
+         "gen": "der Nichte"
+        },
+        {
+         "alt": "Der Onkel",
+         "altklein": "der Onkel",
+         "jung": "sein Neffe",
+         "kind": "der Neffe",
+         "kindgross": "Der Neffe",
+         "gen": "des Neffen"
+        }
+       ]
+      }
+     },
+     "derived": {
+      "s": "x * (k + 1)"
+     },
+     "constraints": [
+      "k * x <= 66",
+      "(k - 1) * x >= 20"
+     ]
+    }
+   },
+   {
+    "op": "prompt",
+    "text": "{{paar_alt}} ist {{k}}-mal so alt wie {{paar_jung}}. Zusammen sind sie {{s}} Jahre alt. Wie alt ist {{paar_kind}}?"
+   },
+   {
+    "op": "section",
+    "index": 0,
+    "body": "1. Variable festlegen: $x$ = Alter {{paar_gen}}. Dann ist {{paar_altklein}} ${{k}}x$ Jahre alt.\n2. Gleichung aufstellen: $x + {{k}}x = {{s}}$\n3. Zusammenfassen: ${{= k+1}}x = {{s}}$\n4. Teilen: $x = {{s}} : {{= k+1}} = {{= s/(k+1)}}$\n5. Probe: {{paar_kindgross}} ist {{= s/(k+1)}} Jahre alt. {{paar_alt}} ist ${{k}} \\cdot {{= s/(k+1)}} = {{= k*s/(k+1)}}$ Jahre alt. Zusammen sind das ${{= s/(k+1)}} + {{= k*s/(k+1)}} = {{s}}$ Jahre ✓"
+   },
+   {
+    "op": "section",
+    "index": 2,
+    "body": "{{paar_kindgross}} ist **{{= s/(k+1)}} Jahre** alt."
+   }
+  ]
+ },
+ {
+  "id": "MATH_PROB_ZWEI_WUERFEL_T1",
+  "why": "The range sentence named impossible sums for 'at least 12' and 'at least 11'; each case now has its own sentence.",
+  "ops": [
+   {
+    "op": "set",
+    "path": [
+     "variants"
+    ],
+    "value": {
+     "enabled": true,
+     "variables": {
+      "w": {
+       "type": "pick",
+       "from": [
+        {
+         "s": 8,
+         "heisst": "Augensumme mindestens 8 heißt: 8, 9, 10, 11 oder 12. Mehr als 12 geht mit zwei Würfeln nicht.",
+         "liste": "- Summe 8: (2|6), (3|5), (4|4), (5|3), (6|2). Das sind 5 Paare.\n- Summe 9: (3|6), (4|5), (5|4), (6|3). Das sind 4 Paare.\n- Summe 10: (4|6), (5|5), (6|4). Das sind 3 Paare.\n- Summe 11: (5|6), (6|5). Das sind 2 Paare.\n- Summe 12: (6|6). Das ist 1 Paar.\n\nZusammen: $5 + 4 + 3 + 2 + 1 = 15$ günstige Paare."
+        },
+        {
+         "s": 9,
+         "heisst": "Augensumme mindestens 9 heißt: 9, 10, 11 oder 12. Mehr als 12 geht mit zwei Würfeln nicht.",
+         "liste": "- Summe 9: (3|6), (4|5), (5|4), (6|3). Das sind 4 Paare.\n- Summe 10: (4|6), (5|5), (6|4). Das sind 3 Paare.\n- Summe 11: (5|6), (6|5). Das sind 2 Paare.\n- Summe 12: (6|6). Das ist 1 Paar.\n\nZusammen: $4 + 3 + 2 + 1 = 10$ günstige Paare."
+        },
+        {
+         "s": 10,
+         "heisst": "Augensumme mindestens 10 heißt: 10, 11 oder 12. Mehr als 12 geht mit zwei Würfeln nicht.",
+         "liste": "- Summe 10: (4|6), (5|5), (6|4). Das sind 3 Paare.\n- Summe 11: (5|6), (6|5). Das sind 2 Paare.\n- Summe 12: (6|6). Das ist 1 Paar.\n\nZusammen: $3 + 2 + 1 = 6$ günstige Paare."
+        },
+        {
+         "s": 11,
+         "heisst": "Augensumme mindestens 11 heißt: 11 oder 12. Mehr als 12 geht mit zwei Würfeln nicht.",
+         "liste": "- Summe 11: (5|6), (6|5). Das sind 2 Paare.\n- Summe 12: (6|6). Das ist 1 Paar.\n\nZusammen: $2 + 1 = 3$ günstige Paare."
+        },
+        {
+         "s": 12,
+         "heisst": "Augensumme mindestens 12 heißt: genau 12. Mehr als 12 geht mit zwei Würfeln nicht.",
+         "liste": "- Summe 12: nur (6|6). Das ist 1 Paar.\n\nEs gibt also nur 1 günstiges Paar."
+        }
+       ]
+      }
+     },
+     "derived": {
+      "s": "w_s"
+     }
+    }
+   },
+   {
+    "op": "replace",
+    "in": "explanation",
+    "from": "Augensumme mindestens {{s}} heißt {{s}}, {{= s+1 | int}}, … bis 12.",
+    "to": "{{w_heisst}}"
+   }
+  ]
+ },
+ {
+  "id": "MATH_PROB_ZWEI_WUERFEL_T1",
+  "why": "The number of favourable pairs was stated without the counting; all pairs are now listed sum by sum.",
+  "ops": [
+   {
+    "op": "replace",
+    "in": "explanation",
+    "from": "Günstige Paare: **{{= (13-s)*(14-s)/2}}** (z. B. Summe 12 nur (6|6); Summe 11: (5|6) und (6|5) …)",
+    "to": "Zähle die günstigen Paare:\n\n{{w_liste}}"
+   }
+  ]
+ },
+ {
+  "id": "MATH_PROB_ZWEI_WUERFEL_T1",
+  "why": "A fraction that cannot be reduced was printed twice with an equals sign.",
+  "ops": [
+   {
+    "op": "replace",
+    "in": "explanation",
+    "from": "$P = \\frac{{{= (13-s)*(14-s)/2}}}{36} = {{= (13-s)*(14-s)/72 | fractex}}$",
+    "to": "$P = \\frac{{{= (13-s)*(14-s)/2}}}{36}$\n\n{{= if(gcd((13-s)*(14-s)/2, 36) > 1, 1, 0) | pick:Kürze_den_Bruch:_Teile_Zähler_und_Nenner_durch_,Dieser_Bruch_lässt_sich_nicht_kürzen.}}{{= gcd((13-s)*(14-s)/2, 36) | coef}}{{= if(gcd((13-s)*(14-s)/2, 36) > 1, 1, 0) | pick:.,}}\n\nErgebnis: $P = {{= (13-s)*(14-s)/72 | fractex}}$"
+   }
+  ]
+ },
+ {
+  "id": "MATH_FUNC_ANTIPROP_T1",
+  "why": "The check always said '1 mehr'; it now compares the workers and the days in words, with 'Tag' for one day.",
+  "ops": [
+   {
+    "op": "section",
+    "index": 1,
+    "body": "1. Gesamtarbeit: ${{a}} \\cdot {{t}} = {{= a*t}}$ Arbeiter-Tage\n2. Mit {{a2}} Arbeitern: ${{= a*t}} : {{a2}} = {{= a*t/a2}}$ {{= a*t/a2 | pl:Tag,Tage}}\n\nKontrolle: {{a2}} Arbeiter sind mehr als {{a}} Arbeiter. Also muss es schneller gehen. {{= a*t/a2}} {{= a*t/a2 | pl:Tag_ist,Tage_sind}} weniger als {{t}} Tage ✓"
+   },
+   {
+    "op": "section",
+    "index": 3,
+    "body": "{{= a*t/a2}} {{= a*t/a2 | pl:Tag,Tage}}"
+   }
+  ]
+ },
+ {
+  "id": "MATH_FUNC_STEIGUNG_T1",
+  "why": "The direction word was missing and a 0 or 1 was printed instead; brackets now stand only around negative numbers.",
+  "ops": [
+   {
+    "op": "section",
+    "index": 1,
+    "body": "$m = \\frac{{{y2}} - {{y1 | paren}}}{{{x2}} - {{x1 | paren}}} = \\frac{{{= y2 - y1}}}{{{= x2 - x1}}} = {{= (y2-y1)/(x2-x1)}}$\n\nBedeutung: Gehst du einen Schritt nach rechts, dann geht die Gerade um {{= m | abs}} nach {{= if(m > 0, 1, 0) | pick:oben,unten}}. Denn $m$ ist {{= if(m > 0, 1, 0) | pick:positiv,negativ}}."
+   }
+  ]
+ },
+ {
+  "id": "MATH_UNITS_MIN_H_T1",
+  "why": "For whole hours the warning contradicted itself; it now uses one fixed example that is true for every value.",
+  "ops": [
+   {
+    "op": "section",
+    "index": 1,
+    "body": "Achtung bei Kommazahlen: $0{,}5$ h sind **nicht** 50 min. Es sind 30 min. Denn eine Stunde hat 60 Minuten und nicht 100."
+   }
+  ]
+ },
+ {
+  "id": "MATH_FUNC_PROP_ODER_ANTI_MCQ_T1",
+  "why": "'Desto schneller' did not name the second quantity and could be read as proportional; the sentence now names the time.",
+  "ops": [
+   {
+    "op": "set",
+    "path": [
+     "variants",
+     "variables",
+     "situation",
+     "values",
+     0
+    ],
+    "value": "Je mehr Pumpen ein Becken leeren, desto weniger Zeit brauchen sie dafür."
+   }
+  ]
+ },
+ {
+  "id": "MATH_PROB_QUALITAET_T1",
+  "why": "The prompt did not say how to round although the key has two decimals.",
+  "ops": [
+   {
+    "op": "prompt",
+    "text": "Bei einer Qualitätskontrolle fallen erfahrungsgemäß {{p}} % der Bauteile durch. Ein Prüfer entnimmt zufällig 3 Bauteile. Berechne die Wahrscheinlichkeit in Prozent, dass **alle drei** einwandfrei sind. Runde auf zwei Stellen nach dem Komma."
+   }
+  ]
+ },
+ {
+  "id": "MATH_CHARTS_SAEULEN_LESEN_T1",
+  "why": "The prompt did not say how to round although the key has one decimal.",
+  "ops": [
+   {
+    "op": "prompt",
+    "text": "Das Säulendiagramm zeigt die Lieblingseissorten einer Klasse. Wie viel Prozent der Kinder haben **Vanille** gewählt? Runde auf eine Stelle nach dem Komma."
+   }
+  ]
+ },
+ {
+  "id": "MATH_CHARTS_KREIS_WINKEL_T1",
+  "why": "The share was rounded to four decimals and then multiplied, which does not give the stated angle; it now calculates with the fraction.",
+  "ops": [
+   {
+    "op": "section",
+    "index": 1,
+    "body": "1. Anteil: $\\frac{{{k}}}{{{n}}}$ der Kinder wählen {{sorte}}.\n2. Der ganze Kreis hat 360°. Auf jedes Kind kommen $360° : {{n}} = {{= 360/n}}°$.\n3. Winkel für {{k}} Kinder: ${{k}} \\cdot {{= 360/n}}° = {{= k/n*360}}°$\n\nKurz: $\\frac{{{k}}}{{{n}}} \\cdot 360° = {{= k/n*360}}°$"
+   }
+  ]
+ },
+ {
+  "id": "MATH_FUNC_QUAD_NULLSTELLE_T1",
+  "why": "The pq formula was used without being written down and the root step was skipped; every step is now shown.",
+  "ops": [
+   {
+    "op": "section",
+    "index": 0,
+    "body": "Nullstellen: Setze $f(x) = 0$. Das ergibt $x^2 {{= if(p > 0, 1, 0) | pick:+,−}} {{= abs(p) | coef}}x {{= q | sign}} = 0$.\n\npq-Formel: $x_{1,2} = -\\frac{p}{2} \\pm \\sqrt{\\left(\\frac{p}{2}\\right)^2 - q}$\n\nHier ist $p = {{p}}$ (die Zahl vor $x$) und $q = {{q}}$ (die Zahl ohne $x$).\n\n1. Vor der Wurzel: $-\\frac{p}{2} = {{= -p/2}}$\n2. Unter der Wurzel: $\\left(\\frac{p}{2}\\right)^2 - q = {{= (p/2)^2}} - {{q | paren}} = {{= (p/2)^2 - q}}$\n3. Wurzel ziehen: $\\sqrt{{{= (p/2)^2 - q}}} = {{= sqrt((p/2)^2 - q)}}$\n4. Einsetzen: $x_1 = {{= -p/2}} + {{= sqrt((p/2)^2 - q)}} = {{r1}}$ und $x_2 = {{= -p/2}} - {{= sqrt((p/2)^2 - q)}} = {{r2}}$\n\nDie kleinere Nullstelle ist ${{r2}}$."
+   }
+  ]
+ },
+ {
+  "id": "MATH_FUNC_QUAD_NULLSTELLE_T1",
+  "why": "A negative number followed a plus sign without brackets; a coefficient 1 in front of x is no longer written.",
+  "ops": [
+   {
+    "op": "replace",
+    "in": "explanation",
+    "from": "\\frac{{{r1}} + {{r2}}}{2}",
+    "to": "\\frac{{{r1}} + {{r2 | paren}}}{2}"
+   },
+   {
+    "op": "prompt",
+    "text": "Gegeben ist $f(x) = x^2 {{= if(p > 0, 1, 0) | pick:+,−}} {{= abs(p) | coef}}x {{= q | sign}}$. Berechne die **kleinere** Nullstelle."
+   }
+  ]
+ },
+ {
+  "id": "MATH_PROB_SUMMENREGEL_T1",
+  "why": "'1 blaue Kugeln': singular number with a plural noun.",
+  "ops": [
+   {
+    "op": "prompt",
+    "text": "In einer Urne sind {{r}} rote {{r | pl:Kugel,Kugeln}} und {{b}} blaue {{b | pl:Kugel,Kugeln}}. Es werden zwei Kugeln **mit Zurücklegen** gezogen. Wie groß ist die Wahrscheinlichkeit, eine rote und eine blaue Kugel zu ziehen (Reihenfolge egal)? (Bruch, vollständig gekürzt)"
+   }
+  ]
+ },
+ {
+  "id": "MATH_PROB_SUMMENREGEL_T1",
+  "why": "A fraction that cannot be reduced was printed twice with an equals sign.",
+  "ops": [
+   {
+    "op": "replace",
+    "in": "explanation",
+    "from": "Summe: $\\frac{{{= 2*r*b}}}{{{= n*n}}} = {{= 2*r*b/(n*n) | fractex}} \\approx {{= 2*r*b/(n*n)*100 | fixed:1}}\\,\\%$",
+    "to": "Summe: $\\frac{{{= r*b}}}{{{= n*n}}} + \\frac{{{= r*b}}}{{{= n*n}}} = \\frac{{{= 2*r*b}}}{{{= n*n}}}$\n\n{{= if(gcd(2*r*b, n*n) > 1, 1, 0) | pick:Kürze_den_Bruch:_Teile_Zähler_und_Nenner_durch_,Dieser_Bruch_lässt_sich_nicht_kürzen.}}{{= gcd(2*r*b, n*n) | coef}}{{= if(gcd(2*r*b, n*n) > 1, 1, 0) | pick:.,}}\n\nErgebnis: $P = {{= 2*r*b/(n*n) | fractex}}$. Das sind {{= isint((2*r*b/(n*n))*1000) | pick:genau,etwa}} {{= round((2*r*b/(n*n))*100, 1)}} %."
+   }
+  ]
+ },
+ {
+  "id": "MATH_FUNC_PROP_DREISATZ_T1",
+  "why": "Prices were written with one decimal; they now have two decimals everywhere.",
+  "ops": [
+   {
+    "op": "prompt",
+    "text": "{{k}} {{ding}} kosten {{= p | fixed:2}} €. Wie viel kosten {{k2}} {{ding}}?"
+   },
+   {
+    "op": "section",
+    "index": 1,
+    "body": "1. ${{k}}$ {{ding}} kosten ${{= p | fixed:2}}$ €.\n2. $1$ Stück kostet ${{= p | fixed:2}} : {{k}} = {{= p/k | fixed:2}}$ €.\n3. ${{k2}}$ Stück kosten ${{= p/k | fixed:2}} \\cdot {{k2}} = {{= p/k*k2 | fixed:2}}$ €.\n\nKontrolle: {{k2}} ist mehr als {{k}}. Also muss der Preis größer sein ✓"
+   }
+  ]
+ },
+ {
+  "id": "MATH_LGS_EINSETZEN_T1",
+  "why": "Negative numbers stood without brackets after an operator.",
+  "ops": [
+   {
+    "op": "replace",
+    "in": "explanation",
+    "from": "$y = {{a}} \\cdot {{x}} {{= b | sign}}",
+    "to": "$y = {{a}} \\cdot {{x | paren}} {{= b | sign}}"
+   },
+   {
+    "op": "replace",
+    "in": "explanation",
+    "from": "${{x}} + {{y}} = {{s}}$",
+    "to": "${{x}} + {{y | paren}} = {{s}}$"
+   }
+  ]
+ },
+ {
+  "id": "MATH_LGS_GLEICHSETZEN_MCQ_T1",
+  "why": "Negative numbers stood without brackets after the multiplication dot and a coefficient 1 was written out.",
+  "ops": [
+   {
+    "op": "prompt",
+    "text": "Wo schneiden sich die Geraden?\n\n(1) $y = {{a | coef}}x {{= b | sign}}$\n(2) $y = {{c | coef}}x {{= d | sign}}$"
+   },
+   {
+    "op": "section",
+    "index": 1,
+    "body": "1. Gleichsetzen: ${{a | coef}}x {{= b | sign}} = {{c | coef}}x {{= d | sign}}$\n2. $x$ sammeln: ${{= a - c | coef}}x = {{= d - b}}$. Das ergibt $x = {{x}}$.\n3. In (1): $y = {{a | coef}} {{= if(abs(a) == 1, 0, 1) | pick:\\cdot,}} {{x | paren}} {{= b | sign}} = {{y}}$\n4. Probe in (2): ${{c | coef}} {{= if(abs(c) == 1, 0, 1) | pick:\\cdot,}} {{x | paren}} {{= d | sign}} = {{y}}$ ✓"
+   }
+  ]
+ },
+ {
+  "id": "MATH_LGS_ADDITION_T1",
+  "why": "Negative numbers stood without brackets after the multiplication dot and a coefficient 1 was written out.",
+  "ops": [
+   {
+    "op": "prompt",
+    "text": "Löse mit dem Additionsverfahren und gib $x$ an:\n\n(1) ${{a | coef}}x + {{b}}y = {{e}}$\n(2) ${{c | coef}}x - {{b}}y = {{f}}$"
+   },
+   {
+    "op": "section",
+    "index": 1,
+    "body": "1. (1) + (2): ${{a | coef}}x + {{c | coef}}x + {{b}}y - {{b}}y = {{e}} {{= f | sign}}$\n2. ${{= a + c}}x = {{= e + f}} \\;|\\; : {{= a + c}}$. Das ergibt $x = {{x}}$.\n3. $x = {{x}}$ in (1): ${{= a*x}} + {{b}}y = {{e}}$. Also ist ${{b}}y = {{= e - a*x}}$ und $y = {{y}}$.\n4. Probe in (2): ${{c | coef}} {{= if(abs(c) == 1, 0, 1) | pick:\\cdot,}} {{x | paren}} - {{b}} \\cdot {{y | paren}} = {{= c*x}} {{= -b*y | sign}} = {{f}}$ ✓"
+   }
+  ]
+ },
+ {
+  "id": "MATH_LGS_ADDITION_T2",
+  "why": "Negative numbers stood without brackets after an operator and a coefficient 1 was written out.",
+  "ops": [
+   {
+    "op": "prompt",
+    "text": "Löse mit dem Additionsverfahren und gib $y$ an:\n\n(1) ${{a}}x + {{b | coef}}y = {{e}}$\n(2) ${{c}}x + {{d | coef}}y = {{f}}$"
+   },
+   {
+    "op": "section",
+    "index": 1,
+    "body": "1. (1) $\\cdot\\, {{c}}$: ${{= a*c}}x + {{= b*c}}y = {{= e*c}}$\n2. (2) $\\cdot\\, (-{{a}})$: ${{= -a*c}}x {{= -d*a | sign}}y = {{= -f*a}}$\n3. Addieren: ${{= b*c - d*a | coef}}y = {{= e*c - f*a}}$. Das ergibt $y = {{y}}$.\n4. $y = {{y}}$ in (1): ${{a}}x {{= b*y | sign}} = {{e}}$. Das ergibt $x = {{x}}$.\n5. Probe in (2): ${{c}} \\cdot {{x | paren}} + {{d | coef}} {{= if(abs(d) == 1, 0, 1) | pick:\\cdot,}} {{y | paren}} = {{= c*x}} {{= d*y | sign}} = {{f}}$ ✓"
+   }
+  ]
+ },
+ {
+  "id": "MATH_FUNC_LIN_WERT_T1",
+  "why": "The negative x value was inserted without brackets; a coefficient −1 in the prompt is written as a minus sign.",
+  "ops": [
+   {
+    "op": "replace",
+    "in": "explanation",
+    "from": "$y = {{m}} \\cdot {{x}} {{= n | sign}}",
+    "to": "$y = {{m}} \\cdot {{x | paren}} {{= n | sign}}"
+   },
+   {
+    "op": "prompt",
+    "text": "Gegeben ist die lineare Funktion $y = {{m | coef}}x {{= n | sign}}$. Welcher $y$-Wert gehört zu $x = {{x}}$?"
+   }
+  ]
+ },
+ {
+  "id": "MATH_FUNC_NULLSTELLE_T1",
+  "why": "Division by a negative number was written without brackets.",
+  "ops": [
+   {
+    "op": "replace",
+    "in": "explanation",
+    "from": "\\;|\\; : {{m}}$",
+    "to": "\\;|\\; : {{m | paren}}$"
+   }
+  ]
+ },
+ {
+  "id": "MATH_FUNC_PUNKTPROBE_JA_MCQ_T1",
+  "why": "The negative x value was inserted without brackets.",
+  "ops": [
+   {
+    "op": "replace",
+    "in": "explanation",
+    "from": "$y = {{m}} \\cdot {{px}} {{= n | sign}}",
+    "to": "$y = {{m}} \\cdot {{px | paren}} {{= n | sign}}"
+   }
+  ]
+ },
+ {
+  "id": "MATH_FUNC_PUNKTPROBE_NEIN_MCQ_T1",
+  "why": "The negative x value was inserted without brackets and the intermediate step was missing.",
+  "ops": [
+   {
+    "op": "replace",
+    "in": "explanation",
+    "from": "$y = {{m}} \\cdot {{px}} {{= n | sign}} = {{= m*px + n}}$",
+    "to": "$y = {{m}} \\cdot {{px | paren}} {{= n | sign}} = {{= m*px}} {{= n | sign}} = {{= m*px + n}}$"
+   }
+  ]
+ },
+ {
+  "id": "MATH_FUNC_GLEICHUNG_MCQ_T1",
+  "why": "A coefficient 1 was written in front of x in the choices and the explanation.",
+  "ops": [
+   {
+    "op": "choices",
+    "choices": [
+     "$y = {{m | coef}}x {{= n | sign}}$",
+     "$y = {{n | coef}}x {{= m | sign}}$",
+     "$y = {{m | coef}}x {{= -n | sign}}$",
+     "$y = {{= -m | coef}}x {{= n | sign}}$"
+    ],
+    "correct": "$y = {{m | coef}}x {{= n | sign}}$"
+   },
+   {
+    "op": "replace",
+    "in": "explanation",
+    "from": "$y = {{m}}x {{= n | sign}}$",
+    "to": "$y = {{m | coef}}x {{= n | sign}}$"
+   }
+  ]
+ },
+ {
+  "id": "MATH_PROB_URNE_T1",
+  "why": "A fraction that cannot be reduced was printed twice with an equals sign, and an exact percentage was marked as approximate.",
+  "ops": [
+   {
+    "op": "section",
+    "index": 1,
+    "body": "1. Alle Kugeln: ${{b}} + {{r}} + {{g}} = {{= b+r+g}}$\n2. Günstig (grün): {{g}}\n3. $P(\\text{grün}) = \\frac{{{g}}}{{{= b+r+g}}}$\n4. {{= if(gcd(g, b+r+g) > 1, 1, 0) | pick:Kürze_den_Bruch:_Teile_Zähler_und_Nenner_durch_,Dieser_Bruch_lässt_sich_nicht_kürzen.}}{{= gcd(g, b+r+g) | coef}}{{= if(gcd(g, b+r+g) > 1, 1, 0) | pick:.,}}\n5. Ergebnis: $P(\\text{grün}) = {{= g/(b+r+g) | fractex}}$. Das sind {{= isint((g/(b+r+g))*1000) | pick:genau,etwa}} {{= round((g/(b+r+g))*100, 1)}} %."
+   }
+  ]
+ },
+ {
+  "id": "MATH_PROB_GEGENEREIGNIS_T1",
+  "why": "A fraction that cannot be reduced was printed twice with an equals sign.",
+  "ops": [
+   {
+    "op": "section",
+    "index": 1,
+    "body": "Alle: ${{= b+r+g}}$, nicht rot: ${{b}} + {{g}} = {{= b+g}}$\n\n$P(\\text{nicht rot}) = \\frac{{{= b+g}}}{{{= b+r+g}}}$\n\nOder: $1 - \\frac{{{r}}}{{{= b+r+g}}} = \\frac{{{= b+g}}}{{{= b+r+g}}}$\n\n{{= if(gcd(b+g, b+r+g) > 1, 1, 0) | pick:Kürze_den_Bruch:_Teile_Zähler_und_Nenner_durch_,Dieser_Bruch_lässt_sich_nicht_kürzen.}}{{= gcd(b+g, b+r+g) | coef}}{{= if(gcd(b+g, b+r+g) > 1, 1, 0) | pick:.,}}\n\nErgebnis: $P(\\text{nicht rot}) = {{= (b+g)/(b+r+g) | fractex}}$"
+   }
+  ]
+ },
+ {
+  "id": "MATH_PROB_GLUECKSRAD_GERADE_T1",
+  "why": "A fraction that cannot be reduced was printed twice with an equals sign; the list of even numbers named 6 even for five fields.",
+  "ops": [
+   {
+    "op": "section",
+    "index": 0,
+    "body": "Gerade Zahlen von 1 bis {{n}}: {{= floor(n/2)}} Stück. Die erste ist 2, die letzte ist {{= 2*floor(n/2)}}. Alle Felder: {{n}}.\n\n$P(\\text{gerade}) = \\frac{{{= floor(n/2)}}}{{{n}}}$\n\n{{= if(gcd(floor(n/2), n) > 1, 1, 0) | pick:Kürze_den_Bruch:_Teile_Zähler_und_Nenner_durch_,Dieser_Bruch_lässt_sich_nicht_kürzen.}}{{= gcd(floor(n/2), n) | coef}}{{= if(gcd(floor(n/2), n) > 1, 1, 0) | pick:.,}}\n\nErgebnis: $P(\\text{gerade}) = {{= floor(n/2)/n | fractex}}$"
+   }
+  ]
+ },
+ {
+  "id": "MATH_POW_POTENZ_MCQ_T1",
+  "why": "The product ended with '· …' even for two factors and the wording was hard to follow; it now writes exactly the factors that are there.",
+  "ops": [
+   {
+    "op": "section",
+    "index": 1,
+    "body": "$(x^{{{m}}})^{{{n}}} = x^{{{m}} \\cdot {{n}}} = x^{{{= m*n}}}$\n\nWarum? $(x^{{{m}}})^{{{n}}}$ heißt: $x^{{{m}}}$ steht {{n}}-mal als Faktor da. Also: $x^{{{m}}} \\cdot x^{{{m}}} {{= if(n > 2, 1, 0) | pick:\\cdot,}} {{= if(n > 2, 1, 0) | pick:x^,}}{{= if(n > 2, m, 1) | coef}} {{= if(n > 3, 1, 0) | pick:\\cdot,}} {{= if(n > 3, 1, 0) | pick:x^,}}{{= if(n > 3, m, 1) | coef}} {{= if(n > 4, 1, 0) | pick:\\cdot,}} {{= if(n > 4, 1, 0) | pick:x^,}}{{= if(n > 4, m, 1) | coef}}$\n\nBeim Multiplizieren werden die Exponenten addiert: ${{m}} + {{m}} {{= if(n > 2, 1, 0) | pick:+,}} {{= if(n > 2, m, 1) | coef}} {{= if(n > 3, 1, 0) | pick:+,}} {{= if(n > 3, m, 1) | coef}} {{= if(n > 4, 1, 0) | pick:+,}} {{= if(n > 4, m, 1) | coef}} = {{n}} \\cdot {{m}} = {{= m*n}}$"
+   }
+  ]
+ },
+ {
+  "id": "MATH_GEO_KREIS_FLAECHE_AUS_UMFANG_T1",
+  "why": "The stored value came from a radius rounded to a whole number; value and explanation now follow the exact calculation from the given circumference.",
+  "ops": [
+   {
+    "op": "set",
+    "path": [
+     "variants",
+     "derived"
+    ],
+    "value": {
+     "u": "round(2 * pi * r, 1)"
+    }
+   },
+   {
+    "op": "key",
+    "set": {
+     "expr": "u^2 / (4 * pi)"
+    }
+   },
+   {
+    "op": "replace",
+    "in": "all",
+    "from": "{{= 2*pi*r | fixed:1}}",
+    "to": "{{= u | fixed:1}}"
+   },
+   {
+    "op": "section",
+    "index": 1,
+    "body": "1. Stelle $u = 2\\pi r$ nach $r$ um: $r = \\frac{u}{2\\pi} = \\frac{{{= u | fixed:1}}}{2\\pi} \\approx {{= u/(2*pi) | fixed:2}}$ cm\n2. Lass den Wert von $r$ im Taschenrechner stehen. Runde ihn nicht.\n3. $A = \\pi \\cdot r^2 \\approx {{= u*u/(4*pi) | fixed:0}}\\,\\text{cm}^2$\n\nMit dem gerundeten Radius kann das Ergebnis um 1 cm² abweichen."
+   },
+   {
+    "op": "section",
+    "index": 2,
+    "body": "≈ {{= u*u/(4*pi) | fixed:0}} cm²"
+   }
+  ]
+ },
+ {
+  "id": "MATH_GEO_KOORDINATEN_MCQ_T1",
+  "why": "A 1 or 0 was printed where the direction word belongs.",
+  "ops": [
+   {
+    "op": "section",
+    "index": 0,
+    "body": "1. Zähle vom Ursprung aus **waagerecht**: {{= x | abs}} Kästchen nach {{= if(x > 0, 1, 0) | pick:rechts,links}}. Also ist $x = {{x}}$.\n2. Zähle dann **senkrecht**: {{= y | abs}} Kästchen nach {{= if(y > 0, 1, 0) | pick:oben,unten}}. Also ist $y = {{y}}$.\n3. Schreibweise: **erst $x$, dann $y$**: $P({{x}} \\,|\\, {{y}})$"
+   }
+  ]
+ },
+ {
+  "id": "MATH_GEO_KONSTRUKTION_MCQ",
+  "why": "With c = 10 cm and a = 7 cm the arc meets the ray twice; with c = 7 cm and a = 10 cm the construction is unique.",
+  "ops": [
+   {
+    "op": "prompt",
+    "text": "Du sollst ein Dreieck mit $c = 7$ cm, $\\alpha = 40°$ und $a = 10$ cm konstruieren. Welcher Schritt kommt **nach** dem Zeichnen von $c$ und dem Abmessen von $\\alpha$?"
+   },
+   {
+    "op": "choices",
+    "choices": [
+     "Um $B$ einen Kreisbogen mit Radius $a = 10$ cm zeichnen (Zirkel).",
+     "Um $A$ einen Kreisbogen mit Radius $a = 10$ cm zeichnen.",
+     "Den Winkel $\\beta$ schätzen und einzeichnen.",
+     "Die Seite $b$ mit dem Lineal beliebig lang zeichnen."
+    ],
+    "correct": "Um $B$ einen Kreisbogen mit Radius $a = 10$ cm zeichnen (Zirkel)."
+   },
+   {
+    "op": "section",
+    "index": 0,
+    "body": "Seite $a$ liegt **gegenüber** von $A$, also geht sie von $B$ nach $C$. Deshalb: Zirkel in $B$ einstechen, Radius 10 cm, Kreisbogen — wo er die Hilfslinie von $\\alpha$ schneidet, liegt $C$."
+   },
+   {
+    "op": "section",
+    "index": 2,
+    "body": "Kreisbogen um $B$ mit $r = a = 10$ cm."
+   }
+  ]
+ },
+ {
+  "id": "MATH_TRIG_SINUSSATZ_T1",
+  "why": "The line with sine values rounded to four decimals does not give the stated result; the calculation now stays exact until the end.",
+  "ops": [
+   {
+    "op": "section",
+    "index": 1,
+    "body": "$a = \\frac{\\sin\\alpha}{\\sin\\beta} \\cdot b = \\frac{\\sin {{al}}°}{\\sin {{be}}°} \\cdot {{b}} \\approx {{= sin(al)/sin(be)*b | fixed:2}}$ cm\n\nTippe die ganze Rechnung in den Taschenrechner ein. Runde erst am Ende. Zur Kontrolle: $\\sin {{al}}° \\approx {{= sin(al) | fixed:4}}$ und $\\sin {{be}}° \\approx {{= sin(be) | fixed:4}}$."
+   }
+  ]
+ },
+ {
+  "id": "MATH_KOERPER_ZYLINDER_V_T1",
+  "why": "The volume line multiplied the rounded base area, which does not give the stated result; it now uses the exact value.",
+  "ops": [
+   {
+    "op": "section",
+    "index": 1,
+    "body": "1. Grundfläche: $A_G = \\pi \\cdot {{r}}^2 = \\pi \\cdot {{= r*r}} \\approx {{= pi*r*r | fixed:2}}\\,\\text{cm}^2$\n2. Volumen: $V = \\pi \\cdot {{= r*r}} \\cdot {{h}} \\approx {{= pi*r*r*h | fixed:1}}\\,\\text{cm}^3$\n\nRechne mit dem genauen Wert weiter. Nimm nicht die gerundete Grundfläche. Runde erst am Ende."
+   }
+  ]
+ },
+ {
+  "id": "MATH_G12_TABLE_FEHLENDER_WERT_T1",
+  "why": "The warning about a negative x showed a positive x in brackets; brackets now stand only around negative numbers and a coefficient 1 is not written.",
+  "ops": [
+   {
+    "op": "section",
+    "index": 2,
+    "body": "Ist das eingesetzte $x$ negativ, dann gehört es in eine Klammer. Ein Beispiel: $4 \\cdot (-2) = -8$. Achte dabei auf die Vorzeichenregel. Außerdem wird $n$ nur **einmal** addiert. $n$ wird nicht mit $x$ multipliziert."
+   },
+   {
+    "op": "replace",
+    "in": "explanation",
+    "from": "{{m}} \\cdot ({{x3}})",
+    "to": "{{m}} \\cdot {{x3 | paren}}"
+   },
+   {
+    "op": "replace",
+    "in": "explanation",
+    "from": "${{s}} \\cdot {{m}} = {{= m * s}}$",
+    "to": "${{s}} \\cdot {{m | paren}} = {{= m * s}}$"
+   },
+   {
+    "op": "replace",
+    "in": "prompt",
+    "from": "$y = {{m}}x {{= n | sign}}$",
+    "to": "$y = {{m | coef}}x {{= n | sign}}$"
+   }
+  ]
+ },
+ {
+  "id": "MATH_G12_TABLE_MUSTER_T1",
+  "why": "The section called taking the middle between the neighbours a mistake, although it gives the right value for a linear table; brackets now stand only around negative numbers.",
+  "ops": [
+   {
+    "op": "section",
+    "index": 2,
+    "body": "Nicht raten, sondern **rechnen**: Bestimme die Differenz aus zwei bekannten Nachbarspalten. Addiere sie zum Wert davor. Zur Kontrolle: Der fehlende Wert liegt genau in der Mitte zwischen seinen beiden Nachbarn. Bei einer negativen Differenz werden die Werte kleiner."
+   },
+   {
+    "op": "replace",
+    "in": "explanation",
+    "from": "${{y1}} - ({{y0}}) = {{m}}$",
+    "to": "${{y1}} - {{y0 | paren}} = {{m}}$"
+   },
+   {
+    "op": "replace",
+    "in": "explanation",
+    "from": "${{y2}} - ({{y1}}) = {{m}}$",
+    "to": "${{y2}} - {{y1 | paren}} = {{m}}$"
+   }
+  ]
+ },
+ {
+  "id": "MATH_G12_TABLE_STEIGUNG_T1",
+  "why": "For x steps of 1 the sentence read 'nicht um 1, sondern um 1' and wrongly said the y difference is not the slope; brackets now stand only around negative numbers.",
+  "ops": [
+   {
+    "op": "section",
+    "index": 2,
+    "body": "Hier wachsen die $x$-Werte um ${{s}}$. {{= if(s == 1, 1, 0) | pick:Deshalb_ist_die_$y$-Differenz_hier_direkt_die_Steigung.,Deshalb_ist_die_$y$-Differenz_**noch_nicht**_die_Steigung.}} Allgemein gilt: Teile die $y$-Differenz immer durch die $x$-Differenz. Halte die Reihenfolge oben und unten gleich (zweiter Wert minus erster Wert)."
+   },
+   {
+    "op": "replace",
+    "in": "explanation",
+    "from": "${{x1}} - ({{x0}}) = {{s}}$",
+    "to": "${{x1}} - {{x0 | paren}} = {{s}}$"
+   },
+   {
+    "op": "replace",
+    "in": "explanation",
+    "from": "${{y1}} - ({{y0}}) = {{dy}}$",
+    "to": "${{y1}} - {{y0 | paren}} = {{dy}}$"
+   },
+   {
+    "op": "replace",
+    "in": "explanation",
+    "from": "${{y2}} - ({{y1}}) = {{dy}}$",
+    "to": "${{y2}} - {{y1 | paren}} = {{dy}}$"
+   }
+  ]
+ },
+ {
+  "id": "MATH_G12_TABLE_YABSCHNITT_T1",
+  "why": "'1 Schritte' and negative numbers without brackets after an operator.",
+  "ops": [
+   {
+    "op": "section",
+    "index": 1,
+    "body": "1. **Steigung** aus zwei Nachbarspalten: ${{y1}} - {{y0 | paren}} = {{m}}$. Also ist $m = {{m}}$.\n2. **Zurück zu $x = 0$**: Von $x = {{x0}}$ bis $x = 0$ {{x0 | pl:ist_es,sind_es}} ${{x0}}$ {{x0 | pl:Schritt,Schritte}} nach links. Ziehe also ${{x0}} \\cdot {{m | paren}} = {{= x0 * m}}$ ab: $n = {{y0}} - {{= x0 * m | paren}} = {{n}}$.\n\nOder mit der Gleichung: $n = y - m \\cdot x = {{y0}} - {{m | paren}} \\cdot {{x0}} = {{n}}$.\n\nProbe: $y = {{m | coef}}x {{= n | sign}}$ bei $x = {{= x0 + 3}}$: ${{= m * (x0 + 3)}} {{= n | sign}} = {{y3}}$ ✓"
+   }
+  ]
+ }
+]

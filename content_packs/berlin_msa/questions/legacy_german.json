@@ -22,27 +22,27 @@
       {
         "kind": "what",
         "title": "Was ist das",
-        "body": "Komma zwischen Hauptsatz und Nebensatz."
+        "body": "Es geht um das Komma zwischen Hauptsatz und Nebensatz."
       },
       {
         "kind": "terms",
         "title": "Die Begriffe",
-        "body": "• Hauptsatz = kann alleine stehen ('Ich glaube')\n• Nebensatz = braucht den Hauptsatz ('dass er heute kommt')\n• Signalwort = zeigt Nebensatz an ('dass')"
+        "body": "Ein Hauptsatz kann allein stehen. Hier ist das: *Ich glaube*.\n\nEin Nebensatz braucht den Hauptsatz. Hier ist das: *dass er heute kommt*.\n\nEin Signalwort zeigt den Nebensatz an. Hier ist es das Wort *dass*."
       },
       {
         "kind": "formula",
         "title": "Die Regel",
-        "body": "VOR dem Signalwort kommt ein Komma!"
+        "body": "Vor dem Signalwort steht ein Komma."
       },
       {
         "kind": "steps",
         "title": "Anwendung",
-        "body": "'Ich glaube' = Hauptsatz\n'dass er heute kommt' = Nebensatz\n→ Komma VOR 'dass'"
+        "body": "Der Hauptsatz ist *Ich glaube*. Der Nebensatz ist *dass er heute kommt*. Das Komma steht also vor *dass*: *Ich glaube, dass er heute kommt.*"
       },
       {
         "kind": "remember",
-        "title": "SIGNALWÖRTER für Nebensätze",
-        "body": "dass, weil, obwohl, wenn, als, damit, ob"
+        "title": "Signalwörter für Nebensätze",
+        "body": "Wörter, die einen Nebensatz einleiten, sind zum Beispiel: dass, weil, obwohl, wenn, als, damit, ob."
       },
       {
         "kind": "answer",
@@ -79,12 +79,12 @@
       {
         "kind": "what",
         "title": "Was ist das",
-        "body": "Komma vor 'weil' - ein häufiges Signalwort."
+        "body": "Es geht um das Komma vor *weil*. Dieses Wort leitet sehr oft einen Nebensatz ein."
       },
       {
         "kind": "terms",
-        "title": "Regel",
-        "body": "'weil' leitet einen Nebensatz ein.\nVOR 'weil' steht immer ein Komma!"
+        "title": "Die Regel",
+        "body": "Das Wort *weil* leitet einen Nebensatz ein. Vor dem Nebensatz steht ein Komma."
       },
       {
         "kind": "steps",
@@ -94,12 +94,12 @@
       {
         "kind": "text",
         "title": "Vorstellung",
-        "body": "Stell dir eine Grenze vor:\n[Hauptsatz] | [Nebensatz]\nEr kam nicht | weil er krank war\nDas Komma markiert diese Grenze."
+        "body": "Stell dir eine Grenze zwischen Hauptsatz und Nebensatz vor. Der Hauptsatz ist *Er kam nicht*. Der Nebensatz ist *weil er krank war*. Das Komma markiert diese Grenze."
       },
       {
         "kind": "remember",
         "title": "Ähnliche Wörter",
-        "body": "weil, obwohl, wenn, als, damit, sodass\n→ IMMER Komma davor!"
+        "body": "Wörter wie weil, obwohl, wenn, damit und sodass leiten einen Nebensatz ein. Vor dem Nebensatz steht ein Komma.\n\nAuch *als* kann einen Nebensatz einleiten: *Als er kam, regnete es.* In einem einfachen Vergleich steht vor *als* aber kein Komma: *Er ist größer als ich.*"
       },
       {
         "kind": "answer",
@@ -136,27 +136,27 @@
       {
         "kind": "what",
         "title": "Was ist das",
-        "body": "Komma nach einem vorangestellten Nebensatz."
+        "body": "Es geht um das Komma nach einem Nebensatz, der vorn steht."
       },
       {
         "kind": "terms",
-        "title": "Regel",
-        "body": "Wenn der Nebensatz ZUERST kommt:\nKomma am ENDE des Nebensatzes!"
+        "title": "Die Regel",
+        "body": "Wenn der Nebensatz zuerst kommt, steht das Komma am Ende des Nebensatzes."
       },
       {
         "kind": "steps",
-        "title": "Struktur",
-        "body": "[Nebensatz], [Hauptsatz]\nObwohl es regnete, ging sie spazieren.\n        ↑\n    Komma hier!"
+        "title": "Aufbau",
+        "body": "Der Nebensatz ist hier: *Obwohl es regnete*. Danach folgt der Hauptsatz: *ging sie spazieren*. Das Komma steht zwischen beiden: *Obwohl es regnete, ging sie spazieren.*"
       },
       {
         "kind": "text",
         "title": "Vorstellung",
-        "body": "Der Nebensatz 'wartet' auf den Hauptsatz.\nDas Komma trennt die beiden."
+        "body": "Der Nebensatz wartet auf den Hauptsatz. Das Komma trennt die beiden."
       },
       {
         "kind": "remember",
         "title": "Merke",
-        "body": "• Nebensatz am Anfang → Komma am Ende des Nebensatzes\n• Nebensatz am Ende → Komma vor dem Nebensatz"
+        "body": "Steht der Nebensatz vorn, steht das Komma am Ende des Nebensatzes. Steht der Nebensatz hinten, steht das Komma vor dem Nebensatz."
       },
       {
         "kind": "answer",
@@ -193,27 +193,27 @@
       {
         "kind": "what",
         "title": "Was ist das",
-        "body": "Komma bei Nebensatz + 'und' bei Hauptsätzen."
+        "body": "Es geht um zwei Dinge: das Komma nach einem Nebensatz und das Wort *und* zwischen zwei Hauptsätzen."
       },
       {
         "kind": "terms",
-        "title": "Analyse",
-        "body": "'Als ich aufwachte' = Nebensatz (Signalwort 'als')\n'schien die Sonne' = Hauptsatz 1\n'und die Vögel sangen' = Hauptsatz 2"
+        "title": "Die Teile des Satzes",
+        "body": "Der Nebensatz ist *Als ich aufwachte*. Sein Signalwort ist *als*.\n\nDer erste Hauptsatz ist *schien die Sonne*.\n\nDer zweite Hauptsatz ist *und die Vögel sangen*."
       },
       {
         "kind": "formula",
-        "title": "Regeln",
-        "body": "1. Nach Nebensatz → Komma ✓\n2. Vor 'und' bei Hauptsätzen → KEIN Komma!"
+        "title": "Die Regeln",
+        "body": "1. Nach dem Nebensatz steht ein Komma.\n2. Vor *und* zwischen zwei Hauptsätzen braucht man kein Komma."
       },
       {
         "kind": "steps",
         "title": "Richtig",
-        "body": "Als ich aufwachte, schien die Sonne und die Vögel sangen.\n                ↑\n           nur hier!"
+        "body": "Als ich aufwachte, schien die Sonne und die Vögel sangen.\n\nDas Komma steht nur nach *aufwachte*."
       },
       {
         "kind": "remember",
         "title": "Merke",
-        "body": "• Nebensatz-Grenze: IMMER Komma\n• Hauptsatz + und + Hauptsatz: KEIN Komma"
+        "body": "An der Grenze zwischen Nebensatz und Hauptsatz steht ein Komma. Sind zwei Hauptsätze mit *und* verbunden, braucht man kein Komma."
       },
       {
         "kind": "answer",
@@ -250,27 +250,27 @@
       {
         "kind": "what",
         "title": "Was ist das",
-        "body": "Komma bei Aufzählungen."
+        "body": "Es geht um das Komma bei Aufzählungen."
       },
       {
         "kind": "terms",
         "title": "Die Regel",
-        "body": "Zwischen den Teilen einer Aufzählung steht ein Komma.\nABER: Vor 'und' oder 'oder' KEIN Komma!"
+        "body": "Zwischen den Teilen einer Aufzählung steht ein Komma. Vor *und* und vor *oder* steht in der Aufzählung kein Komma."
       },
       {
         "kind": "steps",
-        "title": "Struktur",
-        "body": "Teil 1, Teil 2, Teil 3 und Teil 4\n     ↑      ↑         ↑\n  Komma  Komma   KEIN Komma!"
+        "title": "Aufbau",
+        "body": "Eine Aufzählung sieht so aus: Teil 1, Teil 2, Teil 3 und Teil 4. Zwischen den ersten Teilen steht ein Komma. Vor *und* steht kein Komma."
       },
       {
         "kind": "text",
         "title": "Beispiel",
-        "body": "Äpfel, Birnen und Bananen\n    ↑         ↑\n Komma    'und' ersetzt Komma"
+        "body": "Das Beispiel heißt: *Äpfel, Birnen und Bananen*. Nach *Äpfel* steht ein Komma. Vor *Bananen* steht das Wort *und*. Es ersetzt das Komma."
       },
       {
         "kind": "mistake",
         "title": "Achtung",
-        "body": "Im Englischen steht oft Komma vor 'and'.\nIm DEUTSCHEN nicht!"
+        "body": "Im Englischen steht vor *and* oft ein Komma. Im Deutschen steht vor *und* in der Aufzählung kein Komma."
       },
       {
         "kind": "answer",
@@ -307,27 +307,27 @@
       {
         "kind": "what",
         "title": "Was ist das",
-        "body": "Aufzählung von Adjektiven."
+        "body": "Es geht um eine Aufzählung von Adjektiven."
       },
       {
         "kind": "terms",
-        "title": "Analyse",
-        "body": "klug, fleißig und freundlich\n= 3 gleichwertige Adjektive"
+        "title": "Die Teile des Satzes",
+        "body": "Die Wörter *klug*, *fleißig* und *freundlich* sind drei gleichrangige Adjektive. Sie bilden eine Aufzählung."
       },
       {
         "kind": "formula",
-        "title": "Regel",
-        "body": "Zwischen gleichwertigen Adjektiven: Komma\nVor 'und': KEIN Komma"
+        "title": "Die Regel",
+        "body": "Zwischen gleichrangigen Adjektiven steht ein Komma. Vor *und* steht kein Komma."
       },
       {
         "kind": "steps",
         "title": "Richtig",
-        "body": "Er ist klug, fleißig und freundlich.\n        ↑\n    1 Komma fehlt"
+        "body": "Er ist klug, fleißig und freundlich.\n\nZwischen *klug* und *fleißig* fehlt ein Komma. Es fehlt also 1 Komma."
       },
       {
         "kind": "remember",
         "title": "Test",
-        "body": "Kann man 'und' dazwischen setzen?\n'klug und fleißig und freundlich'\n→ Ja! Also sind sie gleichwertig → Komma!"
+        "body": "Kannst du das Wort *und* zwischen die Adjektive setzen? Die Probe *klug und fleißig und freundlich* klingt richtig. Also sind die Adjektive gleichrangig, und zwischen ihnen steht ein Komma."
       },
       {
         "kind": "answer",
@@ -364,27 +364,27 @@
       {
         "kind": "what",
         "title": "Was ist das",
-        "body": "Nominalisierung - ein Adjektiv wird zum Nomen."
+        "body": "Es geht um eine Nominalisierung: Ein Adjektiv wird zum Nomen."
       },
       {
         "kind": "terms",
         "title": "Die Regel",
-        "body": "Nach 'im', 'am', 'zum', 'beim' wird das Wort GROSS geschrieben!"
+        "body": "In *im* steckt der Artikel *dem* (in dem). Steht vor einem Adjektiv ein Artikel und folgt kein Nomen, dann ist das Adjektiv zum Nomen geworden. Man schreibt es groß."
       },
       {
         "kind": "steps",
         "title": "Warum",
-        "body": "'im Allgemeinen' = 'in dem Allgemeinen'\n                        ↑\n                   Das ist ein NOMEN!"
+        "body": "Die Wendung *im Allgemeinen* bedeutet *in dem Allgemeinen*. Das Wort *Allgemeinen* ist hier ein Nomen."
       },
       {
         "kind": "remember",
         "title": "Mehr Beispiele",
-        "body": "• im Folgenden\n• am Besten? NEIN! → am besten (Superlativ!)\n• zum Glück? JA! → zum Glück (Nomen)"
+        "body": "- *im Folgenden*: groß, denn es ist ein Nomen.\n- *zum Glück*: groß, denn *Glück* ist ein Nomen.\n- *am besten*: klein, denn es ist eine Steigerungsform."
       },
       {
         "kind": "mistake",
         "title": "Achtung",
-        "body": "'am besten/schnellsten' = KLEIN\n(Das sind Superlative, keine Nomen!)"
+        "body": "Die höchste Steigerungsstufe mit *am* bleibt klein: *am besten, am schnellsten*. Das sind keine Nomen."
       },
       {
         "kind": "answer",
@@ -421,27 +421,27 @@
       {
         "kind": "what",
         "title": "Was ist das",
-        "body": "Tageszeiten als Nomen."
+        "body": "Es geht um Tageszeiten als Nomen."
       },
       {
         "kind": "terms",
         "title": "Die Regel",
-        "body": "Tageszeiten sind NOMEN → GROSS!\n'heute' ist ein ADVERB → klein!"
+        "body": "Tageszeiten sind Nomen. Man schreibt sie groß. Das Wort *heute* ist ein Adverb. Es bleibt klein."
       },
       {
         "kind": "steps",
-        "title": "Struktur",
-        "body": "heute + Morgen\n  ↓       ↓\nklein   GROSS"
+        "title": "Aufbau",
+        "body": "Die Wendung *heute Morgen* besteht aus zwei Wörtern. Das Wort *heute* schreibt man klein, das Wort *Morgen* schreibt man groß."
       },
       {
         "kind": "remember",
         "title": "Mehr Beispiele",
-        "body": "• heute Abend\n• gestern Nacht\n• morgen Mittag"
+        "body": "- heute Abend\n- gestern Nacht\n- morgen Mittag"
       },
       {
         "kind": "mistake",
         "title": "Achtung: Verwechslungsgefahr",
-        "body": "• 'morgen' (= der nächste Tag) → klein\n• 'Morgen' (= Tageszeit) → gross\n\n'Morgen früh' vs 'morgen früh'?\n→ morgen früh (der nächste Tag, früh)"
+        "body": "Das Wort *morgen* (= der nächste Tag) schreibt man klein. Das Wort *Morgen* (= die Tageszeit) schreibt man groß.\n\nMan schreibt *morgen früh*, denn gemeint ist der nächste Tag."
       },
       {
         "kind": "answer",
@@ -464,46 +464,46 @@
     "prompt": "Welche Schreibweise ist richtig?",
     "payload": {
       "choices": [
-        "Sie hat recht.",
-        "Sie hat Recht.",
-        "sie hat recht.",
-        "Sie hat RECHT."
+        "Sie ist im Recht.",
+        "Sie ist im recht.",
+        "Sie ist Im Recht.",
+        "sie ist im Recht."
       ],
       "shuffle": true
     },
     "solution": {
-      "correct_choice": "Sie hat recht."
+      "correct_choice": "Sie ist im Recht."
     },
     "explanation": [
       {
         "kind": "what",
         "title": "Was ist das",
-        "body": "Feste Wendungen mit 'recht/Recht'."
+        "body": "Es geht um das Wort *Recht* nach *im*."
       },
       {
         "kind": "terms",
         "title": "Die Regel",
-        "body": "'recht haben' = mit kleinem 'r'!\n(Es ist hier ein Adjektiv/Adverb)"
+        "body": "Vor *Recht* steht *im* (= in dem). Mit Artikel ist *Recht* ein Nomen. Man schreibt es groß."
       },
       {
         "kind": "steps",
-        "title": "Aber",
-        "body": "'das Recht' = gross (Nomen für Gesetz)"
+        "title": "Die anderen Wörter",
+        "body": "Das Wort *im* steht mitten im Satz und bleibt klein. Das Wort *Sie* steht am Satzanfang. Deshalb schreibt man es groß."
       },
       {
         "kind": "remember",
         "title": "Unterscheide",
-        "body": "• Sie hat recht. (= Sie liegt richtig)\n• Sie hat ein Recht darauf. (= einen Anspruch)\n• Das ist nicht recht. (= nicht fair/okay)"
+        "body": "- Sie ist im Recht. (= Sie liegt richtig.)\n- Sie hat ein Recht darauf. (= Sie hat einen Anspruch.)\n- Das ist nicht recht. (= Das ist nicht in Ordnung.)"
       },
       {
         "kind": "mistake",
         "title": "Ähnliche Fälle",
-        "body": "• recht haben → klein\n• Unrecht haben → klein\n• im Recht sein → GROSS (Nomen!)"
+        "body": "Bei *recht haben* darf man klein oder groß schreiben: *Sie hat recht.* oder *Sie hat Recht.* Bei *unrecht haben* ist es genauso."
       },
       {
         "kind": "answer",
         "title": "Antwort",
-        "body": "Sie hat recht."
+        "body": "Sie ist im Recht."
       }
     ],
     "tags": [
@@ -535,32 +535,32 @@
       {
         "kind": "what",
         "title": "Was ist das",
-        "body": "ss oder ß? Eine wichtige Rechtschreibregel!"
+        "body": "Es geht um die Frage: ss oder ß? Das ist eine wichtige Rechtschreibregel."
       },
       {
         "kind": "terms",
         "title": "Die Regel",
-        "body": "Nach KURZEM Vokal → ss\nNach LANGEM Vokal → ß"
+        "body": "Nach einem kurzen Vokal schreibt man ss. Nach einem langen Vokal schreibt man ß."
       },
       {
         "kind": "steps",
-        "title": "TEST für 'muss'",
-        "body": "Wie sprichst du das 'u'?\n→ kurz! Also: ss"
+        "title": "Test für „muss“",
+        "body": "Wie sprichst du das u? Du sprichst es kurz. Deshalb schreibt man ss."
       },
       {
         "kind": "text",
         "title": "Vorstellung",
-        "body": "Sag 'muuuuuss' - geht nicht!\nDer Vokal ist kurz → ss"
+        "body": "Versuche, das u lang zu ziehen: *muuuuuss*. Das geht nicht. Der Vokal ist kurz, also schreibt man ss."
       },
       {
         "kind": "remember",
         "title": "Merke",
-        "body": "• muss, dass, Fluss, Schluss (kurz → ss)\n• Fuß, Gruß, groß, Straße (lang → ß)"
+        "body": "- muss, dass, Fluss, Schluss: kurzer Vokal, also ss\n- Fuß, Gruß, groß, Straße: langer Vokal, also ß"
       },
       {
         "kind": "mistake",
         "title": "Schweiz",
-        "body": "In der Schweiz gibt es kein ß!\nDort schreibt man immer ss."
+        "body": "In der Schweiz gibt es kein ß. Dort schreibt man immer ss."
       },
       {
         "kind": "answer",
@@ -597,27 +597,27 @@
       {
         "kind": "what",
         "title": "Was ist das",
-        "body": "ss oder ß nach langem Vokal."
+        "body": "Es geht um die Frage: ss oder ß nach einem langen Vokal?"
       },
       {
         "kind": "terms",
         "title": "Die Regel",
-        "body": "Nach LANGEM Vokal oder Diphthong → ß"
+        "body": "Nach einem langen Vokal und nach einem Doppellaut schreibt man nie ss. Für den scharfen s-Laut schreibt man dort ß."
       },
       {
         "kind": "steps",
-        "title": "TEST für 'Straße'",
-        "body": "Wie sprichst du das 'a'?\n→ lang! (Straaaaaße) Also: ß"
+        "title": "Test für „Straße“",
+        "body": "Wie sprichst du das a? Du sprichst es lang: *Straaaaaße*. Deshalb schreibt man ß."
       },
       {
         "kind": "text",
         "title": "Vorstellung",
-        "body": "Kannst du den Vokal lang ziehen?\n• Straaaaaße → JA → ß\n• muuuuuss → NEIN → ss"
+        "body": "Kannst du den Vokal lang ziehen? Bei *Straaaaaße* geht das, also schreibt man ß. Bei *muuuuuss* geht das nicht, also schreibt man ss."
       },
       {
         "kind": "remember",
-        "title": "DIPHTHONGE (Doppellaute)",
-        "body": "au, ei, eu → danach immer ß!\n• draußen, heißen, reißen"
+        "title": "Doppellaute",
+        "body": "Doppellaute sind au, ei, eu und äu. Nach ihnen schreibt man nie ss.\n\nBleibt der s-Laut beim Verlängern scharf, schreibt man ß: *draußen, heißen, reißen*.\n\nWird der s-Laut beim Verlängern weich, schreibt man s: *Haus* (Häuser), *Eis* (eisig)."
       },
       {
         "kind": "answer",
@@ -694,13 +694,13 @@
     "topicId": "DE_ORTHO_DOUBLE",
     "difficulty": 2,
     "qtype": "MCQ",
-    "prompt": "Welche Schreibweise ist richtig?",
+    "prompt": "Welche Schreibweise ist richtig? „Wir ___ morgen zu dir.“",
     "payload": {
       "choices": [
         "kommen",
         "komen",
         "kommmen",
-        "Kommen"
+        "kohmen"
       ],
       "shuffle": true
     },
@@ -711,32 +711,32 @@
       {
         "kind": "what",
         "title": "Was ist das",
-        "body": "Doppelkonsonanten nach kurzem Vokal."
+        "body": "Es geht um doppelte Konsonanten nach einem kurzen Vokal."
       },
       {
         "kind": "terms",
         "title": "Die Regel",
-        "body": "Nach KURZEM Vokal folgt oft ein Doppelkonsonant."
+        "body": "Nach einem kurzen Vokal folgt oft ein doppelter Konsonant."
       },
       {
         "kind": "steps",
-        "title": "TEST für 'kommen'",
-        "body": "Wie sprichst du das 'o'?\n→ kurz! (nicht 'koooomen')\nAlso: Doppel-m!"
+        "title": "Test für „kommen“",
+        "body": "Wie sprichst du das o? Du sprichst es kurz, nicht lang wie in *koooomen*. Deshalb schreibt man zwei m."
       },
       {
         "kind": "text",
         "title": "Vorstellung",
-        "body": "Der kurze Vokal braucht 'Schutz'.\nDie Doppelkonsonanten sind wie eine Mauer."
+        "body": "Der kurze Vokal braucht Schutz. Die beiden Konsonanten sind wie eine Mauer."
       },
       {
         "kind": "remember",
         "title": "Mehr Beispiele",
-        "body": "• Sommer, Sonne, Tanne\n• rennen, Wasser, Butter\n• Mutter, Teller, fallen"
+        "body": "- Sommer, Sonne, Tanne\n- rennen, Wasser, Butter\n- Mutter, Teller, fallen"
       },
       {
         "kind": "mistake",
         "title": "Aber",
-        "body": "Nach langem Vokal: KEIN Doppelkonsonant!\n• Vater (langes a), Boden (langes o)"
+        "body": "Nach einem langen Vokal steht kein doppelter Konsonant: *Vater* (langes a), *Boden* (langes o)."
       },
       {
         "kind": "answer",
@@ -773,27 +773,27 @@
       {
         "kind": "what",
         "title": "Was ist das",
-        "body": "Wortarten erkennen - Adjektive."
+        "body": "Es geht darum, Wortarten zu erkennen. Hier geht es um Adjektive."
       },
       {
         "kind": "terms",
         "title": "Die Begriffe",
-        "body": "• Adjektiv = WIE-Wort (beschreibt Eigenschaften)\n• Nomen = Namenwort (Personen, Dinge)\n• Verb = Tu-Wort (Handlungen)\n• Artikel = Begleiter (der, die, das)"
+        "body": "- Ein Adjektiv ist ein Wie-Wort. Es beschreibt Eigenschaften.\n- Ein Nomen ist ein Namenwort. Es bezeichnet Personen und Dinge.\n- Ein Verb ist ein Tu-Wort. Es bezeichnet Handlungen.\n- Ein Artikel ist ein Begleiter: der, die, das."
       },
       {
         "kind": "steps",
         "title": "Test",
-        "body": "Wie ist der Zug? → schnell\n'Wie?' = Frage nach Adjektiv!"
+        "body": "Frage: Wie ist der Zug? Antwort: schnell. Mit der Frage *Wie?* fragst du nach einem Adjektiv."
       },
       {
         "kind": "text",
-        "title": "Adjektiv-erkennung",
-        "body": "• Kann vor einem Nomen stehen: der schnelle Zug\n• Kann gesteigert werden: schnell - schneller - am schnellsten\n• Beantwortet 'Wie?'"
+        "title": "Adjektive erkennen",
+        "body": "- Ein Adjektiv kann vor einem Nomen stehen: der schnelle Zug.\n- Man kann es steigern: schnell, schneller, am schnellsten.\n- Es antwortet auf die Frage *Wie?*"
       },
       {
         "kind": "remember",
         "title": "Merke",
-        "body": "Adjektive beschreiben EIGENSCHAFTEN."
+        "body": "Adjektive beschreiben Eigenschaften."
       },
       {
         "kind": "answer",
@@ -844,7 +844,7 @@
       },
       {
         "kind": "text",
-        "title": "Verb-erkennung",
+        "title": "Verben erkennen",
         "body": "• Kann konjugiert werden: ich gehe, du gehst, er geht\n• Endet im Infinitiv oft auf -en: gehen, laufen, spielen\n• Beantwortet 'Was tut/macht jemand?'"
       },
       {
@@ -887,32 +887,32 @@
       {
         "kind": "what",
         "title": "Was ist das",
-        "body": "Wortarten erkennen - Nomen."
+        "body": "Es geht darum, Wortarten zu erkennen. Hier geht es um Nomen."
       },
       {
         "kind": "terms",
         "title": "Die Begriffe",
-        "body": "• Nomen = Namenwort, Hauptwort\n• Bezeichnet: Personen, Tiere, Dinge, Gefühle"
+        "body": "Ein Nomen heißt auch Namenwort oder Hauptwort. Es bezeichnet Personen, Tiere, Dinge und Gefühle."
       },
       {
         "kind": "steps",
         "title": "Erkennungsmerkmale",
-        "body": "• GROSS geschrieben\n• Hat einen Artikel: DER Tisch\n• Hat einen Plural: die Tische"
+        "body": "- Ein Nomen schreibt man groß.\n- Es hat einen Artikel: der Tisch.\n- Es hat einen Plural: die Tische."
       },
       {
         "kind": "text",
-        "title": "Nomen-test",
-        "body": "Kann ich 'der/die/das' davor setzen?\nDer Tisch → JA! → Nomen"
+        "title": "Der Nomen-Test",
+        "body": "Kann ich der, die oder das davorsetzen? *Der Tisch* passt. Also ist *Tisch* ein Nomen."
       },
       {
         "kind": "remember",
-        "title": "Nomen-typen",
-        "body": "• Konkret: Tisch, Hund, Apfel\n• Abstrakt: Liebe, Glück, Freiheit\n• Eigennamen: Berlin, Anna, Montag"
+        "title": "Arten von Nomen",
+        "body": "- Konkrete Nomen: Tisch, Hund, Apfel\n- Abstrakte Nomen: Liebe, Glück, Freiheit\n- Eigennamen: Berlin, Anna, Spree"
       },
       {
         "kind": "mistake",
         "title": "Achtung",
-        "body": "Nomen sind IMMER gross!"
+        "body": "Nomen schreibt man immer groß."
       },
       {
         "kind": "answer",
@@ -949,32 +949,32 @@
       {
         "kind": "what",
         "title": "Was ist das",
-        "body": "Zeitformen erkennen - Präteritum."
+        "body": "Es geht darum, Zeitformen zu erkennen. Hier geht es um das Präteritum."
       },
       {
         "kind": "terms",
         "title": "Die Begriffe",
-        "body": "• Präteritum = einfache Vergangenheit\n• Wird in SCHRIFTLICHEN Texten verwendet\n• Auch: 'Imperfekt' oder '1. Vergangenheit'"
+        "body": "Das Präteritum ist die einfache Vergangenheit. Man benutzt es vor allem in geschriebenen Texten. Es heißt auch Imperfekt oder 1. Vergangenheit."
       },
       {
         "kind": "steps",
-        "title": "Erkennung",
-        "body": "EIN Wort für die Vergangenheit!\ngehen → ging"
+        "title": "So erkennst du es",
+        "body": "Ein einziges Verb drückt die Vergangenheit aus. Aus *gehen* wird *ging*."
       },
       {
         "kind": "text",
         "title": "Vergleich",
-        "body": "• Präsens: Ich gehe.\n• Präteritum: Ich ging. (1 Wort)\n• Perfekt: Ich bin gegangen. (2 Wörter)"
+        "body": "- Präsens: Ich gehe.\n- Präteritum: Ich ging. (1 Wort)\n- Perfekt: Ich bin gegangen. (2 Wörter)"
       },
       {
         "kind": "remember",
-        "title": "Typische Präteritum-Endungen",
-        "body": "• ich ging, ich sah, ich kam (starke Verben)\n• ich spielte, ich machte (schwache Verben: -te)"
+        "title": "Typische Formen im Präteritum",
+        "body": "- Starke Verben: ich ging, ich sah, ich kam\n- Schwache Verben mit -te: ich spielte, ich machte"
       },
       {
         "kind": "mistake",
-        "title": "Mündlich",
-        "body": "Oft Perfekt statt Präteritum\n'Ich bin gegangen' statt 'Ich ging'"
+        "title": "Beim Sprechen",
+        "body": "Beim Sprechen benutzt man oft das Perfekt statt des Präteritums: *Ich bin gegangen* statt *Ich ging*."
       },
       {
         "kind": "answer",
@@ -1011,27 +1011,27 @@
       {
         "kind": "what",
         "title": "Was ist das",
-        "body": "Zeitformen erkennen - Perfekt."
+        "body": "Es geht darum, Zeitformen zu erkennen. Hier geht es um das Perfekt."
       },
       {
         "kind": "terms",
         "title": "Die Begriffe",
-        "body": "• Perfekt = vollendete Gegenwart\n• Wird im MÜNDLICHEN häufig verwendet\n• Auch: '2. Vergangenheit'"
+        "body": "Das Perfekt heißt auch vollendete Gegenwart oder 2. Vergangenheit. Man benutzt es vor allem beim Sprechen."
       },
       {
         "kind": "steps",
-        "title": "Erkennung",
-        "body": "ZWEI Teile: haben/sein + Partizip II\nhabe ... gelesen\n  ↓         ↓\nHilfsverb  ge-...-en"
+        "title": "So erkennst du es",
+        "body": "Das Perfekt besteht aus zwei Teilen: einer Form von *haben* oder *sein* und dem Partizip II. Hier ist *habe* das Hilfsverb und *gelesen* das Partizip II."
       },
       {
         "kind": "text",
-        "title": "Struktur",
-        "body": "[haben/sein] + [ge-STAMM-t/en]\n• Ich habe gespielt\n• Ich bin gegangen"
+        "title": "Aufbau",
+        "body": "Das Partizip II beginnt meist mit ge- und endet auf -t oder -en.\n\n- Ich habe gespielt.\n- Ich bin gegangen."
       },
       {
         "kind": "remember",
-        "title": "WANN 'sein'",
-        "body": "Bei Bewegung/Zustandsänderung:\n• gehen, laufen, fahren → bin gegangen\n• schlafen, spielen → habe geschlafen"
+        "title": "Wann steht „sein“?",
+        "body": "Das Hilfsverb *sein* steht bei Verben der Bewegung oder der Zustandsänderung: gehen, laufen, fahren. Beispiel: *Ich bin gegangen.*\n\nSonst steht *haben*: schlafen, spielen. Beispiel: *Ich habe geschlafen.*"
       },
       {
         "kind": "answer",
@@ -1068,32 +1068,32 @@
       {
         "kind": "what",
         "title": "Was ist das",
-        "body": "Zeitformen erkennen - Futur I."
+        "body": "Es geht darum, Zeitformen zu erkennen. Hier geht es um das Futur I."
       },
       {
         "kind": "terms",
         "title": "Die Begriffe",
-        "body": "• Futur I = Zukunft\n• Drückt aus, was passieren WIRD"
+        "body": "Das Futur I ist die Zeitform für die Zukunft. Es drückt aus, was geschehen wird."
       },
       {
         "kind": "steps",
-        "title": "Erkennung",
-        "body": "'werden' + Infinitiv\nwerde ... gehen\n  ↓         ↓\nwerde   Infinitiv"
+        "title": "So erkennst du es",
+        "body": "Das Futur I besteht aus einer Form von *werden* und dem Infinitiv. Hier ist das: *werde … gehen*."
       },
       {
         "kind": "text",
-        "title": "Struktur",
-        "body": "[werden] + [Infinitiv]\n• Ich werde spielen\n• Du wirst kommen\n• Er wird lernen"
+        "title": "Aufbau",
+        "body": "- Ich werde spielen.\n- Du wirst kommen.\n- Er wird lernen."
       },
       {
         "kind": "remember",
         "title": "Auch möglich",
-        "body": "Präsens + Zeitangabe für Zukunft:\n'Morgen gehe ich ins Kino.'\n(Häufiger im Deutschen!)"
+        "body": "Auch das Präsens mit einer Zeitangabe kann die Zukunft ausdrücken: *Morgen gehe ich ins Kino.* Das ist im Deutschen sogar häufiger."
       },
       {
         "kind": "mistake",
         "title": "Achtung",
-        "body": "Futur I kann auch Vermutung ausdrücken:\n'Er wird wohl krank sein.'"
+        "body": "Das Futur I kann auch eine Vermutung ausdrücken: *Er wird wohl krank sein.*"
       },
       {
         "kind": "answer",
@@ -1130,27 +1130,27 @@
       {
         "kind": "what",
         "title": "Was ist das",
-        "body": "Hauptsatz vs. Nebensatz."
+        "body": "Es geht um den Unterschied zwischen Hauptsatz und Nebensatz."
       },
       {
         "kind": "terms",
         "title": "Die Begriffe",
-        "body": "• Hauptsatz = kann ALLEINE stehen, ergibt Sinn\n• Nebensatz = braucht einen Hauptsatz, um Sinn zu ergeben"
+        "body": "Ein Hauptsatz kann allein stehen und ergibt für sich einen Sinn. Ein Nebensatz braucht einen Hauptsatz, damit er einen Sinn ergibt."
       },
       {
         "kind": "text",
         "title": "Beispiele",
-        "body": "• 'Ich gehe nach Hause.' → Hauptsatz ✓\n  (Ergibt alleine Sinn!)\n• 'weil ich müde bin' → Nebensatz ✗\n  (Was ist mit 'weil ich müde bin'? Unvollständig!)"
+        "body": "Ein Hauptsatz ist: *Ich gehe nach Hause.* Er ergibt allein einen Sinn.\n\nEin Nebensatz ist: *weil ich müde bin*. Allein ist er unvollständig."
       },
       {
         "kind": "steps",
         "title": "Erkennungsmerkmale",
-        "body": "Hauptsatz: Verb an Position 2\nNebensatz: Verb am ENDE + Signalwort"
+        "body": "Im Hauptsatz steht das gebeugte Verb an zweiter Stelle. Im Nebensatz steht es am Ende. Außerdem beginnt der Nebensatz mit einem Signalwort."
       },
       {
         "kind": "remember",
-        "title": "SIGNALWÖRTER für Nebensätze",
-        "body": "weil, dass, wenn, obwohl, als, damit"
+        "title": "Signalwörter für Nebensätze",
+        "body": "Nebensätze beginnen oft mit Wörtern wie weil, dass, wenn, obwohl, als oder damit."
       },
       {
         "kind": "answer",
@@ -1170,7 +1170,7 @@
     "topicId": "DE_READ_CORE",
     "difficulty": 3,
     "qtype": "MCQ",
-    "prompt": "In einem Sachtext werden 3 Gründe genannt, warum Jugendliche weniger schlafen. Was ist am ehesten die Kernaussage?",
+    "prompt": "Lies: „Viele Jugendliche schlafen zu wenig. Ein Grund ist der frühe Schulbeginn. Dazu kommen Hausaufgaben am Abend. Außerdem liegt das Handy oft bis spät in die Nacht im Bett.“ Was ist am ehesten die Kernaussage?",
     "payload": {
       "choices": [
         "Jugendliche schlafen weniger, weil mehrere Alltagsfaktoren zusammenwirken.",
@@ -1187,32 +1187,32 @@
       {
         "kind": "what",
         "title": "Was ist das",
-        "body": "Kernaussage finden - die HAUPTBOTSCHAFT eines Textes."
+        "body": "Es geht darum, die Kernaussage zu finden. Die Kernaussage ist die wichtigste Botschaft eines Textes."
       },
       {
         "kind": "terms",
         "title": "Die Begriffe",
-        "body": "• Kernaussage = Was will der Text vor allem sagen?\n• Nicht: einzelne Details oder Meinungen"
+        "body": "Die Kernaussage beantwortet die Frage: Was will der Text vor allem sagen? Einzelne Details oder Meinungen sind keine Kernaussage."
       },
       {
         "kind": "steps",
-        "title": "Wie finde ich die Kernaussage",
-        "body": "1. Was ist das THEMA? (Schlafmangel bei Jugendlichen)\n2. Was sagt der Text INSGESAMT dazu? (mehrere Faktoren)\n3. Keine Wertung, neutral formuliert!"
+        "title": "So findest du die Kernaussage",
+        "body": "1. Was ist das Thema? Hier ist es: Jugendliche schlafen zu wenig.\n2. Was sagt der Text insgesamt dazu? Er nennt drei Gründe aus dem Alltag: Schulbeginn, Hausaufgaben und Handy.\n3. Die Kernaussage ist neutral formuliert. Sie wertet nicht."
       },
       {
         "kind": "text",
-        "title": "Ausschluss",
-        "body": "• 'weil sie faul sind' → Wertung, zu einseitig\n• 'Schulen zu leicht' → im Text nicht erwähnt\n• 'Sport verboten' → im Text nicht erwähnt"
+        "title": "Die anderen Antworten",
+        "body": "Dass Jugendliche faul sind, ist eine Wertung und steht nicht im Text. Dass die Schule zu leicht ist oder dass Sport verboten ist, steht auch nicht im Text."
       },
       {
         "kind": "remember",
-        "title": "Kernaussage-merkmale",
-        "body": "• Neutral formuliert\n• Fasst den GESAMTEN Text zusammen\n• Keine erfundenen Details"
+        "title": "Merkmale der Kernaussage",
+        "body": "- Sie ist neutral formuliert.\n- Sie fasst den ganzen Text zusammen.\n- Sie enthält keine erfundenen Details."
       },
       {
         "kind": "answer",
         "title": "Antwort",
-        "body": "...weil mehrere Alltagsfaktoren zusammenwirken."
+        "body": "Jugendliche schlafen weniger, weil mehrere Alltagsfaktoren zusammenwirken."
       }
     ],
     "tags": [
@@ -1244,27 +1244,27 @@
       {
         "kind": "what",
         "title": "Was ist das",
-        "body": "Textabsicht erkennen - WARUM wurde der Text geschrieben?"
+        "body": "Es geht darum, die Textabsicht zu erkennen. Die Frage lautet: Warum wurde der Text geschrieben?"
       },
       {
         "kind": "terms",
         "title": "Textabsichten",
-        "body": "• Informieren = Fakten mitteilen\n• Appellieren = zum Handeln auffordern\n• Unterhalten = amüsieren\n• Überzeugen = Meinung ändern"
+        "body": "- Informieren: Der Text teilt Fakten mit.\n- Appellieren: Der Text fordert zum Handeln auf.\n- Unterhalten: Der Text soll Spaß machen.\n- Überzeugen: Der Text will eine Meinung ändern."
       },
       {
         "kind": "steps",
-        "title": "Analyse",
-        "body": "• 'Laut einer Studie' → Fakten, sachlich\n• 'Experten warnen' → Problem wird benannt\n→ Text INFORMIERT über ein Problem!"
+        "title": "Der Text Schritt für Schritt",
+        "body": "Der Text nennt eine Studie und eine Zahl. Das sind sachliche Angaben. Außerdem warnen Experten vor Folgen. Der Text informiert also über ein Problem."
       },
       {
         "kind": "text",
-        "title": "Ausschluss",
-        "body": "• 'verkaufen' → keine Werbung\n• 'loben' → eher Warnung\n• 'kritisieren' → Experten werden zitiert, nicht kritisiert"
+        "title": "Die anderen Antworten",
+        "body": "Der Text wirbt nicht für Smartphones. Er lobt die Jugendlichen nicht, sondern er warnt eher. Die Experten werden zitiert, nicht kritisiert."
       },
       {
         "kind": "remember",
-        "title": "SIGNALWÖRTER für Information",
-        "body": "Studie, Prozent, Experten, Forscher"
+        "title": "Signalwörter für Information",
+        "body": "Wörter wie Studie, Prozent, Experten und Forscher zeigen oft, dass ein Text informieren will."
       },
       {
         "kind": "answer",
@@ -1301,27 +1301,27 @@
       {
         "kind": "what",
         "title": "Was ist das",
-        "body": "Sätze umformulieren - gleiche Bedeutung, andere Worte."
+        "body": "Es geht darum, einen Satz umzuformulieren: gleiche Bedeutung, andere Wörter."
       },
       {
         "kind": "terms",
-        "title": "Analyse",
-        "body": "'Er hat keine Zeit' bedeutet:\n→ Er kann sich nicht um etwas kümmern\n→ Er hat andere Dinge zu tun\n→ Er ist BESCHÄFTIGT!"
+        "title": "Was der Satz bedeutet",
+        "body": "Wer keine Zeit hat, kann sich nicht um etwas kümmern. Er hat andere Dinge zu tun. Er ist also beschäftigt."
       },
       {
         "kind": "steps",
-        "title": "Ausschluss",
-        "body": "• 'nicht da' = physisch abwesend (≠ keine Zeit)\n• 'müde' = erschöpft (≠ keine Zeit)\n• 'froh' = glücklich (≠ keine Zeit)"
+        "title": "Die anderen Antworten",
+        "body": "- *Er ist nicht da* bedeutet: Er ist abwesend.\n- *Er ist müde* bedeutet: Er ist erschöpft.\n- *Er ist froh* bedeutet: Er ist glücklich.\n\nDas alles sagt nichts über die Zeit."
       },
       {
         "kind": "remember",
         "title": "Umformulieren heißt",
-        "body": "• Gleicher SINN\n• Andere WÖRTER\n• Passendes SYNONYM finden"
+        "body": "Der Sinn bleibt gleich, aber die Wörter sind andere. Du suchst also ein passendes Synonym."
       },
       {
         "kind": "mistake",
         "title": "Vorsicht",
-        "body": "Ähnlich klingende Wörter sind nicht immer Synonyme!"
+        "body": "Wörter, die ähnlich klingen, sind nicht immer Synonyme."
       },
       {
         "kind": "answer",
@@ -1415,27 +1415,27 @@
       {
         "kind": "what",
         "title": "Was ist das",
-        "body": "Direkte Rede - jemandes Worte wörtlich wiedergeben."
+        "body": "Es geht um die direkte Rede. Sie gibt die Worte einer Person wörtlich wieder."
       },
       {
         "kind": "terms",
         "title": "Die Regeln",
-        "body": "1. Doppelpunkt nach dem Redebegleitsatz\n2. Anführungszeichen um die wörtliche Rede\n3. Punkt/Fragezeichen VOR dem letzten Anführungszeichen"
+        "body": "1. Nach dem Begleitsatz steht ein Doppelpunkt.\n2. Die wörtliche Rede steht in Anführungszeichen.\n3. Der Punkt oder das Fragezeichen steht vor dem letzten Anführungszeichen."
       },
       {
         "kind": "steps",
-        "title": "Struktur",
-        "body": "Sie sagte: \"Ich komme morgen.\"\n        ↑  ↑              ↑  ↑\n    Doppelpunkt  Anf.zeichen  Punkt  Anf.zeichen"
+        "title": "Aufbau",
+        "body": "Sie sagte: \"Ich komme morgen.\"\n\nNach *Sie sagte* steht der Doppelpunkt. Dann folgt das erste Anführungszeichen. Am Ende steht erst der Punkt und dann das zweite Anführungszeichen."
       },
       {
         "kind": "remember",
-        "title": "Varianten",
-        "body": "• \"Ich komme\", sagte sie. (Rede zuerst → Komma)\n• \"Ich komme!\" sagte sie. (Bei ! oder ? kein Komma)"
+        "title": "Rede zuerst",
+        "body": "- \"Ich komme\", sagte sie. Steht die Rede zuerst, folgt nach dem Anführungszeichen ein Komma. Der Punkt der Rede fällt weg.\n- \"Ich komme!\", sagte sie. Auch nach einem Ausrufezeichen oder Fragezeichen steht das Komma."
       },
       {
         "kind": "mistake",
         "title": "Typische Fehler",
-        "body": "• Doppelpunkt vergessen\n• Anführungszeichen vergessen\n• Punkt nach den Anführungszeichen"
+        "body": "- Der Doppelpunkt fehlt.\n- Die Anführungszeichen fehlen.\n- Der Punkt steht nach den Anführungszeichen."
       },
       {
         "kind": "answer",
@@ -1472,27 +1472,27 @@
       {
         "kind": "what",
         "title": "Was ist das",
-        "body": "Rechtschreibstrategie: ABLEITEN"
+        "body": "Es geht um eine Rechtschreibstrategie: das Ableiten."
       },
       {
         "kind": "terms",
         "title": "Die Regel",
-        "body": "Bei der Frage 'e oder ä?' oder 'i oder ü?' hilft die ABLEITUNGSPROBE.\nSuche ein verwandtes Wort!"
+        "body": "Bei der Frage e oder ä, eu oder äu, i oder ü hilft die Ableitungsprobe. Suche ein verwandtes Wort."
       },
       {
         "kind": "steps",
         "title": "Beispiel",
-        "body": "eifersüchtig → Sucht (stammverwandtes Wort)\nIn 'Sucht' hört man das U deutlich!\nAlso: eifersüchtig mit Ü"
+        "body": "Zu *eifersüchtig* gehört das Wort *Sucht*. In *Sucht* hörst du das u deutlich. Also schreibt man *eifersüchtig* mit ü."
       },
       {
         "kind": "remember",
         "title": "Weitere Beispiele",
-        "body": "• häufig → Haufen (a → ä)\n• Stärke → stark (a → ä)\n• Bäume → Baum (au → äu)"
+        "body": "- häufig gehört zu Haufen: Aus au wird äu.\n- Stärke gehört zu stark: Aus a wird ä.\n- Bäume gehört zu Baum: Aus au wird äu."
       },
       {
         "kind": "mistake",
         "title": "Merke",
-        "body": "ABLEITEN hilft bei:\n• e oder ä?\n• eu oder äu?\n• i oder ü?"
+        "body": "Das Ableiten hilft bei diesen Fragen:\n\n- e oder ä?\n- eu oder äu?\n- i oder ü?"
       },
       {
         "kind": "answer",
@@ -1531,32 +1531,32 @@
       {
         "kind": "what",
         "title": "Was ist das",
-        "body": "Rechtschreibstrategie: VERLÄNGERN"
+        "body": "Es geht um eine Rechtschreibstrategie: das Verlängern."
       },
       {
         "kind": "terms",
         "title": "Die Regel",
-        "body": "Bei der Frage 'g oder k?', 'd oder t?', 'b oder p?' hilft VERLÄNGERN."
+        "body": "Bei der Frage g oder k, d oder t, b oder p hilft das Verlängern. Am Wortende hört man den Unterschied nicht."
       },
       {
         "kind": "steps",
-        "title": "Wie verlängert man",
-        "body": "• Nomen → Plural bilden\n• Verben → Infinitiv bilden\n• Adjektive → steigern (Komparativ)"
+        "title": "So verlängerst du",
+        "body": "- Bei Nomen bildest du den Plural.\n- Bei Verben bildest du den Infinitiv.\n- Adjektive steigerst du."
       },
       {
         "kind": "steps",
         "title": "Beispiel",
-        "body": "eifersüchtig → eifersüchtiger (Komparativ)\nJetzt hört man das G deutlich!\nAlso: eifersüchtig mit G"
+        "body": "Verlängere *eifersüchtig* zu *eifersüchtiger*. Jetzt hörst du das g deutlich. Also schreibt man *eifersüchtig* mit g."
       },
       {
         "kind": "remember",
         "title": "Weitere Beispiele",
-        "body": "• Hund oder Hunt? → Hunde → Hund\n• klug oder kluk? → klüger → klug\n• liebt oder liept? → lieben → liebt"
+        "body": "- Hund oder Hunt? Verlängere zu Hunde. Also: Hund.\n- klug oder kluk? Verlängere zu klüger. Also: klug.\n- liebt oder liept? Der Infinitiv heißt lieben. Also: liebt."
       },
       {
         "kind": "mistake",
         "title": "Merke",
-        "body": "VERLÄNGERN hilft bei:\n• g oder k?\n• d oder t?\n• b oder p?"
+        "body": "Das Verlängern hilft bei diesen Fragen:\n\n- g oder k?\n- d oder t?\n- b oder p?"
       },
       {
         "kind": "answer",
@@ -1595,32 +1595,32 @@
       {
         "kind": "what",
         "title": "Was ist das",
-        "body": "Rechtschreibung mit Umlaut (ä)."
+        "body": "Es geht um die Rechtschreibung mit dem Umlaut ä."
       },
       {
         "kind": "terms",
         "title": "Die Strategie",
-        "body": "ABLEITEN\nSuche ein verwandtes Wort ohne Umlaut!"
+        "body": "Die Strategie heißt Ableiten: Suche ein verwandtes Wort ohne Umlaut."
       },
       {
         "kind": "steps",
         "title": "Ableitung",
-        "body": "Stärke → stark\nIn 'stark' steht ein A.\nAlso wird 'Stärke' mit Ä geschrieben!"
+        "body": "Das Wort *Stärke* gehört zu *stark*. In *stark* steht ein a. Deshalb schreibt man *Stärke* mit ä."
       },
       {
         "kind": "remember",
-        "title": "Regel",
-        "body": "Wenn das Grundwort ein A hat,\nschreibt man im abgeleiteten Wort Ä (nicht E)."
+        "title": "Die Regel",
+        "body": "Hat das Grundwort ein a, dann schreibt man im abgeleiteten Wort ä und nicht e."
       },
       {
         "kind": "text",
         "title": "Weitere Beispiele",
-        "body": "• Bäcker → backen\n• Händler → Handel\n• Länge → lang\n• kälter → kalt"
+        "body": "- Bäcker gehört zu backen.\n- Händler gehört zu Handel.\n- Länge gehört zu lang.\n- kälter gehört zu kalt."
       },
       {
         "kind": "mistake",
         "title": "Achtung",
-        "body": "Auch wenn Ä und E gleich klingen,\nmusst du das Grundwort suchen!"
+        "body": "Auch wenn ä und e gleich klingen, musst du das Grundwort suchen."
       },
       {
         "kind": "answer",
@@ -1659,32 +1659,32 @@
       {
         "kind": "what",
         "title": "Was ist das",
-        "body": "Rechtschreibung mit äu oder eu."
+        "body": "Es geht um die Rechtschreibung mit äu oder eu."
       },
       {
         "kind": "terms",
         "title": "Die Strategie",
-        "body": "ABLEITEN\nSuche ein verwandtes Wort!"
+        "body": "Die Strategie heißt Ableiten: Suche ein verwandtes Wort."
       },
       {
         "kind": "steps",
         "title": "Ableitung",
-        "body": "häufig → Haufen\nIn 'Haufen' steht AU.\nAlso wird 'häufig' mit ÄU geschrieben!"
+        "body": "Das Wort *häufig* gehört zu *Haufen*. In *Haufen* steht au. Deshalb schreibt man *häufig* mit äu."
       },
       {
         "kind": "remember",
-        "title": "Regel",
-        "body": "Wenn das Grundwort AU hat,\nschreibt man im abgeleiteten Wort ÄU (nicht EU)."
+        "title": "Die Regel",
+        "body": "Hat das Grundwort au, dann schreibt man im abgeleiteten Wort äu und nicht eu."
       },
       {
         "kind": "text",
         "title": "Weitere Beispiele",
-        "body": "• Bäume → Baum (au → äu)\n• träumen → Traum (au → äu)\n• Mäuse → Maus (au → äu)\n• läuft → laufen (au → äu)"
+        "body": "- Bäume gehört zu Baum.\n- träumen gehört zu Traum.\n- Mäuse gehört zu Maus.\n- läuft gehört zu laufen."
       },
       {
         "kind": "mistake",
         "title": "Aber",
-        "body": "• heute → kein Grundwort mit au → EU\n• neu → kein Grundwort mit au → EU"
+        "body": "Zu *heute* und *neu* gibt es kein verwandtes Wort mit au. Deshalb schreibt man sie mit eu."
       },
       {
         "kind": "answer",
@@ -1706,11 +1706,11 @@
     "topicId": "DE_GRAM_WORD_CLASSES",
     "difficulty": 1,
     "qtype": "MCQ",
-    "prompt": "Welches Stilmittel wird hier verwendet? 'Veni, vidi, vici' (Ich kam, ich sah, ich siegte)",
+    "prompt": "Welches Stilmittel wird hier verwendet? 'Veni, vidi, vici.' (Der Satz ist lateinisch. Achte auf die Wortanfänge.)",
     "payload": {
       "choices": [
         "Alliteration",
-        "Anapher",
+        "Vergleich",
         "Antithese",
         "Metapher"
       ],
@@ -1723,27 +1723,27 @@
       {
         "kind": "what",
         "title": "Was ist das",
-        "body": "Stilmittel erkennen: ALLITERATION"
+        "body": "Es geht darum, ein Stilmittel zu erkennen: die Alliteration."
       },
       {
         "kind": "terms",
         "title": "Definition",
-        "body": "Alliteration = Mindestens zwei aufeinanderfolgende Wörter beginnen mit dem GLEICHEN ANFANGSLAUT."
+        "body": "Bei einer Alliteration beginnen mindestens zwei aufeinanderfolgende Wörter mit demselben Laut."
       },
       {
         "kind": "steps",
-        "title": "Analyse",
-        "body": "Veni, Vidi, Vici\n↓     ↓     ↓\nV     V     V\n\nAlle drei Wörter beginnen mit V!\n= Alliteration"
+        "title": "Die Wörter prüfen",
+        "body": "Die drei Wörter heißen veni, vidi und vici. Alle drei beginnen mit v. Das ist eine Alliteration."
       },
       {
         "kind": "remember",
         "title": "Weitere Beispiele",
-        "body": "• 'frisch und fröhlich' (f-f)\n• 'Kind und Kegel' (k-k)\n• 'Mann und Maus' (m-m)\n• 'mit Rat und Tat' (r-t? Nein!)"
+        "body": "- frisch und fröhlich\n- Kind und Kegel\n- Mann und Maus"
       },
       {
         "kind": "mistake",
         "title": "Wichtig",
-        "body": "Es geht um den LAUT, nicht den Buchstaben!\n'Chemie und Charme' ist KEINE Alliteration\n(Ch klingt unterschiedlich)"
+        "body": "Es kommt auf den Laut an, nicht auf den Buchstaben. *Chemie und Charme* ist keine Alliteration, denn das Ch klingt in beiden Wörtern verschieden."
       },
       {
         "kind": "answer",
@@ -1782,32 +1782,32 @@
       {
         "kind": "what",
         "title": "Was ist das",
-        "body": "Stilmittel erkennen: ANAPHER"
+        "body": "Es geht darum, ein Stilmittel zu erkennen: die Anapher."
       },
       {
         "kind": "terms",
         "title": "Definition",
-        "body": "Anapher = Wiederholung eines Wortes oder einer Wortgruppe am ANFANG aufeinanderfolgender Sätze."
+        "body": "Bei einer Anapher wird ein Wort oder eine Wortgruppe am Anfang aufeinanderfolgender Sätze wiederholt."
       },
       {
         "kind": "steps",
-        "title": "Analyse",
-        "body": "'Wer war das?'\n'Wer hat das getan?'\n'Wer ist schuld?'\n ↓\nJeder Satz beginnt mit 'Wer'!\n= Anapher"
+        "title": "Die Sätze prüfen",
+        "body": "Die drei Sätze heißen: *Wer war das? Wer hat das getan? Wer ist schuld?* Jeder Satz beginnt mit *Wer*. Das ist eine Anapher."
       },
       {
         "kind": "remember",
         "title": "Weitere Beispiele",
-        "body": "• 'Ich fordere Mut. Ich fordere Tatkraft. Ich fordere Einheit.'\n• 'Das Wasser rauscht. Das Wasser schwoll.'"
+        "body": "- Ich fordere Mut. Ich fordere Tatkraft. Ich fordere Einheit.\n- Das Wasser rauscht. Das Wasser schwoll."
       },
       {
         "kind": "mistake",
         "title": "Unterschied zur Alliteration",
-        "body": "Alliteration = gleicher Anfangslaut in Wörtern\nAnapher = gleiches Wort am Satzanfang"
+        "body": "Bei der Alliteration beginnen Wörter mit demselben Laut. Bei der Anapher steht dasselbe Wort am Satzanfang."
       },
       {
         "kind": "text",
         "title": "Wirkung",
-        "body": "Anaphen verstärken die Aussage\nund erzeugen einen Rhythmus."
+        "body": "Anaphern verstärken die Aussage und erzeugen einen Rhythmus."
       },
       {
         "kind": "answer",
@@ -1846,32 +1846,32 @@
       {
         "kind": "what",
         "title": "Was ist das",
-        "body": "Stilmittel erkennen: ANTITHESE"
+        "body": "Es geht darum, ein Stilmittel zu erkennen: die Antithese."
       },
       {
         "kind": "terms",
         "title": "Definition",
-        "body": "Antithese = Gegenüberstellung von GEGENSÄTZEN."
+        "body": "Eine Antithese stellt Gegensätze nebeneinander."
       },
       {
         "kind": "steps",
-        "title": "Analyse",
-        "body": "'Jung und Alt'\n  ↓       ↓\nGegensatz!\nJung ≠ Alt\n= Antithese"
+        "title": "Die Wörter prüfen",
+        "body": "Die Wörter *Jung* und *Alt* sind Gegensätze. Das ist eine Antithese."
       },
       {
         "kind": "remember",
         "title": "Weitere Beispiele",
-        "body": "• 'Gut und Böse'\n• 'Himmel und Hölle'\n• 'Krieg und Frieden'\n• 'Tag und Nacht'\n• 'Arm und Reich'"
+        "body": "- Gut und Böse\n- Himmel und Hölle\n- Krieg und Frieden\n- Tag und Nacht\n- Arm und Reich"
       },
       {
         "kind": "text",
         "title": "Wirkung",
-        "body": "Antithesen betonen Kontraste\nund machen Texte lebendiger."
+        "body": "Antithesen betonen Gegensätze und machen Texte lebendiger."
       },
       {
         "kind": "mistake",
         "title": "Verwechslungsgefahr",
-        "body": "'Wasser, Luft, Erde, Feuer'\n= KEIN Gegensatz, sondern Aufzählung!"
+        "body": "Die Reihe *Wasser, Luft, Erde, Feuer* ist kein Gegensatz, sondern eine Aufzählung."
       },
       {
         "kind": "answer",
@@ -1910,32 +1910,32 @@
       {
         "kind": "what",
         "title": "Was ist das",
-        "body": "Stilmittel erkennen: ASYNDETON"
+        "body": "Es geht darum, ein Stilmittel zu erkennen: das Asyndeton."
       },
       {
         "kind": "terms",
         "title": "Definition",
-        "body": "Asyndeton = Aufzählung OHNE Bindewörter (wie 'und', 'oder')."
+        "body": "Ein Asyndeton ist eine Aufzählung ohne Bindewort wie *und* oder *oder*."
       },
       {
         "kind": "steps",
-        "title": "Analyse",
-        "body": "'Wasser, Luft, Erde, Feuer'\n       ↓\nKommas statt 'und'!\n= Asyndeton\n\nNormal wäre:\n'Wasser, Luft, Erde UND Feuer'"
+        "title": "Die Aufzählung prüfen",
+        "body": "In der Reihe *Wasser, Luft, Erde, Feuer* stehen nur Kommas. Das Wort *und* fehlt. Das ist ein Asyndeton.\n\nÜblich wäre: *Wasser, Luft, Erde und Feuer*."
       },
       {
         "kind": "remember",
         "title": "Weitere Beispiele",
-        "body": "• 'Er kam, sah, siegte.' (statt: kam, sah und siegte)\n• 'Groß, klein, dick, dünn - alle waren da.'"
+        "body": "- Er kam, sah, siegte. (statt: Er kam, sah und siegte.)\n- Groß, klein, dick, dünn: Alle waren da."
       },
       {
         "kind": "text",
         "title": "Wirkung",
-        "body": "• Erzeugt Tempo und Dynamik\n• Wirkt eindringlich\n• Hebt die Aufzählung hervor"
+        "body": "- Es erzeugt Tempo.\n- Es wirkt eindringlich.\n- Es hebt die Aufzählung hervor."
       },
       {
         "kind": "mistake",
         "title": "Gegenteil",
-        "body": "Polysyndeton = Aufzählung MIT vielen 'und'\n'Wasser und Luft und Erde und Feuer'"
+        "body": "Das Gegenteil heißt Polysyndeton. Das ist eine Aufzählung mit vielen *und*: *Wasser und Luft und Erde und Feuer*."
       },
       {
         "kind": "answer",
@@ -2033,27 +2033,27 @@
       {
         "kind": "what",
         "title": "Was ist das",
-        "body": "Komma zwischen Haupt- und Nebensatz."
+        "body": "Es geht um das Komma zwischen Hauptsatz und Nebensatz."
       },
       {
         "kind": "terms",
         "title": "Die Regel",
-        "body": "Vor NEBENSATZ-EINLEITENDEN WÖRTERN steht ein Komma!"
+        "body": "Vor einem Wort, das einen Nebensatz einleitet, steht ein Komma."
       },
       {
         "kind": "steps",
-        "title": "Analyse",
-        "body": "'Ich gehe nach Hause' = Hauptsatz (kann alleine stehen)\n'weil ich müde bin' = Nebensatz (beginnt mit 'weil')\n\nZwischen Hauptsatz und Nebensatz → KOMMA!"
+        "title": "Die Teile des Satzes",
+        "body": "Der Hauptsatz ist *Ich gehe nach Hause*. Er kann allein stehen.\n\nDer Nebensatz ist *weil ich müde bin*. Er beginnt mit *weil*.\n\nZwischen Hauptsatz und Nebensatz steht das Komma."
       },
       {
         "kind": "remember",
         "title": "Signalwörter für Nebensätze",
-        "body": "• weil, da, obwohl, wenn, falls\n• dass, ob\n• der, die, das (Relativpronomen)\n• als, nachdem, bevor, während"
+        "body": "- weil, da, obwohl, wenn, falls\n- dass, ob\n- der, die, das (Relativpronomen)\n- als, nachdem, bevor, während"
       },
       {
         "kind": "text",
         "title": "Tipp",
-        "body": "Das Verb steht im Nebensatz am ENDE!\n'...weil ich müde BIN' ✓"
+        "body": "Im Nebensatz steht das gebeugte Verb am Ende: *weil ich müde bin*."
       },
       {
         "kind": "answer",
@@ -2092,27 +2092,27 @@
       {
         "kind": "what",
         "title": "Was ist das",
-        "body": "Zeitform (Tempus) erkennen."
+        "body": "Es geht darum, die Zeitform (das Tempus) zu erkennen."
       },
       {
         "kind": "terms",
-        "title": "Erkennungsmerkmal Perfekt",
-        "body": "Hilfsverb (haben/sein) + Partizip II (ge-...-t/en)"
+        "title": "So erkennst du das Perfekt",
+        "body": "Das Perfekt besteht aus einem Hilfsverb (haben oder sein) und dem Partizip II. Das Partizip II beginnt meist mit ge- und endet auf -t oder -en."
       },
       {
         "kind": "steps",
-        "title": "Analyse",
-        "body": "'Ich HABE gestern Fußball GESPIELT.'\n     ↓                      ↓\n  Hilfsverb              Partizip II\n  (haben)               (ge-spiel-t)\n\n= PERFEKT!"
+        "title": "Den Satz prüfen",
+        "body": "Hier ist *habe* das Hilfsverb und *gespielt* das Partizip II. Der Satz steht also im Perfekt."
       },
       {
         "kind": "remember",
         "title": "Übersicht Zeitformen",
-        "body": "• Präsens: Ich spiele. (jetzt)\n• Präteritum: Ich spielte. (erzählende Vergangenheit)\n• Perfekt: Ich habe gespielt. (Vergangenheit, gesprochen)\n• Futur: Ich werde spielen. (Zukunft)"
+        "body": "- Präsens: Ich spiele. (jetzt)\n- Präteritum: Ich spielte. (Vergangenheit, vor allem beim Erzählen)\n- Perfekt: Ich habe gespielt. (Vergangenheit, vor allem beim Sprechen)\n- Futur: Ich werde spielen. (Zukunft)"
       },
       {
         "kind": "mistake",
-        "title": "UNTERSCHIED PERFEKT vs. PRÄTERITUM",
-        "body": "Perfekt: 'Ich habe gespielt' (mündlich bevorzugt)\nPräteritum: 'Ich spielte' (schriftlich/Erzählung)"
+        "title": "Unterschied zwischen Perfekt und Präteritum",
+        "body": "Das Perfekt benutzt man vor allem beim Sprechen: *Ich habe gespielt.* Das Präteritum benutzt man vor allem beim Schreiben und Erzählen: *Ich spielte.*"
       },
       {
         "kind": "answer",
@@ -2134,7 +2134,7 @@
     "topicId": "DE_READ_CORE",
     "difficulty": 2,
     "qtype": "MCQ",
-    "prompt": "Was ist die KERNAUSSAGE eines Textes?",
+    "prompt": "Was ist die Kernaussage eines Textes?",
     "payload": {
       "choices": [
         "Die zentrale Botschaft oder Hauptidee des Textes",
@@ -2151,27 +2151,27 @@
       {
         "kind": "what",
         "title": "Was ist das",
-        "body": "Definition der Kernaussage."
+        "body": "Es geht um die Definition der Kernaussage."
       },
       {
         "kind": "terms",
-        "title": "Kernaussage =",
-        "body": "Die ZENTRALE BOTSCHAFT oder HAUPTIDEE,\ndie der Autor vermitteln möchte."
+        "title": "Die Kernaussage",
+        "body": "Die Kernaussage ist die zentrale Botschaft oder Hauptidee, die der Autor vermitteln möchte."
       },
       {
         "kind": "steps",
         "title": "Wie findet man sie",
-        "body": "1. Lies den Text ganz durch\n2. Frage: 'Worum geht es hauptsächlich?'\n3. Fasse in 1-2 Sätzen zusammen\n4. Prüfe: Deckt deine Zusammenfassung das Wichtigste ab?"
+        "body": "1. Lies den Text ganz durch.\n2. Frage dich: Worum geht es hauptsächlich?\n3. Fasse den Text in 1 bis 2 Sätzen zusammen.\n4. Prüfe: Deckt deine Zusammenfassung das Wichtigste ab?"
       },
       {
         "kind": "remember",
-        "title": "Die Kernaussage ist nicht",
-        "body": "• Der erste Satz (kann Einleitung sein)\n• Die Überschrift (ist oft nur ein Hinweis)\n• Ein wörtliches Zitat (ist nur ein Teil)"
+        "title": "Was die Kernaussage nicht ist",
+        "body": "- Sie ist nicht der erste Satz. Er kann die Einleitung sein.\n- Sie ist nicht die Überschrift. Die Überschrift ist oft nur ein Hinweis.\n- Sie ist kein wörtliches Zitat. Ein Zitat ist nur ein Teil des Textes."
       },
       {
         "kind": "text",
         "title": "Beispiel",
-        "body": "Text über Umweltschutz mit vielen Details.\nKernaussage: 'Jeder kann durch kleine Handlungen zum Umweltschutz beitragen.'"
+        "body": "Ein Text über Umweltschutz enthält viele Details. Seine Kernaussage kann lauten: *Jeder kann durch kleine Handlungen zum Umweltschutz beitragen.*"
       },
       {
         "kind": "answer",
@@ -2210,7 +2210,7 @@
       {
         "kind": "what",
         "title": "Die vier Modi",
-        "body": ""
+        "body": "Es gibt vier Modi: den Indikativ (Wirklichkeit), den Konjunktiv I (indirekte Rede), den Konjunktiv II (Wunsch, höfliche Bitte, Unwirkliches) und den Imperativ (Aufforderung)."
       },
       {
         "kind": "terms",
@@ -2220,7 +2220,7 @@
       {
         "kind": "steps",
         "title": "Erkennungszeichen",
-        "body": "'könntest' ist die Konjunktiv II-Form von 'können'"
+        "body": "*Könntest* ist die Konjunktiv-II-Form von *können*."
       },
       {
         "kind": "remember",
@@ -2316,7 +2316,7 @@
       {
         "kind": "what",
         "title": "Imperativ - Befehlsform",
-        "body": ""
+        "body": "Der Imperativ ist die Befehlsform."
       },
       {
         "kind": "terms",
@@ -2331,7 +2331,12 @@
       {
         "kind": "remember",
         "title": "Beispiele",
-        "body": "• 'Geh!' / 'Komm!' / 'Los!'\n• 'Auf die Plätze, fertig, los!'"
+        "body": "- Geh!\n- Komm!\n- Lauft!"
+      },
+      {
+        "kind": "text",
+        "title": "Der Satz in der Aufgabe",
+        "body": "Der Ausruf *Auf die Plätze, fertig, los!* enthält kein Verb. Er ist aber ein Befehl. Gemeint ist: *Geht auf die Plätze, macht euch fertig, lauft los!* Deshalb wird er dem Imperativ zugeordnet."
       },
       {
         "kind": "answer",
@@ -2484,7 +2489,7 @@
       {
         "kind": "steps",
         "title": "Analyse",
-        "body": "'Frisch und Fröhlich'\n→ F-F (gleicher Anfangsbuchstabe)"
+        "body": "Die Wörter *frisch* und *fröhlich* beginnen beide mit dem Laut f. Zwei aufeinanderfolgende Wörter mit demselben Anfangslaut sind eine Alliteration."
       },
       {
         "kind": "remember",
@@ -2583,22 +2588,22 @@
       {
         "kind": "terms",
         "title": "Definition",
-        "body": "Dopplung - zwei Begriffe mit derselben Bedeutung werden verwendet."
+        "body": "Ein Pleonasmus ist eine Dopplung: Zwei Wörter sagen dasselbe."
       },
       {
         "kind": "steps",
-        "title": "Analyse",
-        "body": "'weißer Schimmel'\n→ Ein Schimmel ist IMMER weiß!\n→ 'weiß' ist überflüssig, aber verstärkend"
+        "title": "Die Wörter prüfen",
+        "body": "Ein Schimmel ist immer ein weißes Pferd. Das Wort *weiß* sagt also nichts Neues. Es ist überflüssig, verstärkt aber die Aussage."
       },
       {
         "kind": "remember",
         "title": "Weitere Beispiele",
-        "body": "• 'nasser Regen'\n• 'großer Riese'\n• 'runde Kugel'"
+        "body": "- nasser Regen\n- großer Riese\n- runde Kugel"
       },
       {
         "kind": "mistake",
         "title": "Unterschied zum Oxymoron",
-        "body": "Oxymoron = Widerspruch ('alter Jüngling')\nPleonasmus = Dopplung ('weißer Schimmel')"
+        "body": "Ein Oxymoron ist ein Widerspruch: *alter Jüngling*. Ein Pleonasmus ist eine Dopplung: *weißer Schimmel*."
       },
       {
         "kind": "answer",
@@ -2674,7 +2679,7 @@
     "payload": {
       "choices": [
         "Hyperbel",
-        "Metapher",
+        "Alliteration",
         "Vergleich",
         "Personifikation"
       ],
@@ -2744,17 +2749,17 @@
       {
         "kind": "terms",
         "title": "Definition",
-        "body": "Wiederholung eines Wortes oder einer Wortgruppe am ANFANG aufeinanderfolgender Sätze/Verse."
+        "body": "Bei einer Anapher wird ein Wort oder eine Wortgruppe am Anfang aufeinanderfolgender Sätze oder Verse wiederholt."
       },
       {
         "kind": "steps",
-        "title": "Analyse",
-        "body": "'WER war das? WER hat das getan?'\n→ 'Wer' wird am Satzanfang wiederholt"
+        "title": "Die Sätze prüfen",
+        "body": "Hier beginnen beide Sätze mit *Wer*."
       },
       {
         "kind": "remember",
         "title": "Weitere Beispiele",
-        "body": "• 'Ich will leben. Ich will lieben. Ich will lachen.'\n• 'Das ist mein Haus. Das ist mein Garten.'"
+        "body": "- Ich will leben. Ich will lieben. Ich will lachen.\n- Das ist mein Haus. Das ist mein Garten."
       },
       {
         "kind": "answer",
@@ -2774,7 +2779,7 @@
     "topicId": "DE_ORTHO_CASE",
     "difficulty": 2,
     "qtype": "MCQ",
-    "prompt": "Welches Wort ist RICHTIG großgeschrieben?",
+    "prompt": "Welches Wort ist richtig großgeschrieben?",
     "payload": {
       "choices": [
         "das Schwimmen",
@@ -2801,12 +2806,12 @@
       {
         "kind": "steps",
         "title": "Erkennungszeichen",
-        "body": "• Artikel davor: 'DAS Schwimmen'\n• Adjektiv davor: 'langes Schwimmen'"
+        "body": "- Ein Artikel steht davor: das Schwimmen.\n- Ein Adjektiv steht davor: langes Schwimmen."
       },
       {
         "kind": "remember",
         "title": "Beispiele",
-        "body": "• 'Schwimmen macht Spaß' → Verb (klein)\n• 'Das Schwimmen ist gesund' → Nomen (groß)"
+        "body": "- Wir gehen schwimmen. Hier ist es ein Verb, also klein.\n- Das Schwimmen ist gesund. Hier ist es ein Nomen, also groß.\n- Ich finde, dass Schwimmen Spaß macht. Hier ist es ein Nomen, also groß, auch ohne Artikel."
       },
       {
         "kind": "answer",
@@ -2826,7 +2831,7 @@
     "topicId": "DE_ORTHO_CASE",
     "difficulty": 2,
     "qtype": "MCQ",
-    "prompt": "Welche Schreibweise ist RICHTIG: 'Wie geht es ___?'",
+    "prompt": "Welche Schreibweise ist richtig: 'Wie geht es ___?'",
     "payload": {
       "choices": [
         "Ihnen",
@@ -2848,7 +2853,7 @@
       {
         "kind": "terms",
         "title": "Regel",
-        "body": "Anredepronomen in der höflichen Anrede werden GROSS geschrieben."
+        "body": "In der höflichen Anrede schreibt man *Sie*, *Ihnen* und *Ihr* groß."
       },
       {
         "kind": "steps",
@@ -2858,7 +2863,7 @@
       {
         "kind": "mistake",
         "title": "Aber",
-        "body": "'ihnen' (klein) = 3. Person Plural normal\n'Sie begrüßen ihnen' → falsch\n'Sie begrüßen sie' → richtig (normale 3.P.Pl.)"
+        "body": "Wenn man über mehrere andere Personen spricht, bleibt *ihnen* klein: *Die Kinder haben Hunger. Ich gebe ihnen ein Brot.*"
       },
       {
         "kind": "answer",
@@ -2878,7 +2883,7 @@
     "topicId": "DE_ORTHO_CASE",
     "difficulty": 2,
     "qtype": "MCQ",
-    "prompt": "Welche Schreibweise ist RICHTIG?",
+    "prompt": "Welche Schreibweise ist richtig?",
     "payload": {
       "choices": [
         "am Montag",
@@ -2899,23 +2904,23 @@
       },
       {
         "kind": "terms",
-        "title": "Regel",
-        "body": "Wochentage werden GROSSgeschrieben, wenn sie als Nomen verwendet werden."
+        "title": "Die Regel",
+        "body": "Wochentage werden großgeschrieben, wenn sie Nomen sind."
       },
       {
         "kind": "steps",
         "title": "Erkennungszeichen",
-        "body": "• Artikel/Präposition davor: 'am Montag', 'der Dienstag'"
+        "body": "Vor dem Wochentag steht ein Artikel oder eine Präposition: *am Montag, der Dienstag*."
       },
       {
         "kind": "mistake",
         "title": "Aber",
-        "body": "Als Adverb KLEINgeschrieben:\n• 'montags' (= jeden Montag)\n• 'dienstags'"
+        "body": "Als Adverb mit s am Ende schreibt man sie klein: *montags* (= jeden Montag), *dienstags*."
       },
       {
         "kind": "remember",
         "title": "Vergleich",
-        "body": "• 'Am Montag gehe ich...' → Nomen (groß)\n• 'Montags gehe ich immer...' → Adverb (klein)"
+        "body": "- Ich gehe am Montag … Hier ist es ein Nomen, also groß.\n- Ich gehe montags immer … Hier ist es ein Adverb, also klein."
       },
       {
         "kind": "answer",
@@ -3008,13 +3013,13 @@
       },
       {
         "kind": "terms",
-        "title": "KOMMA MUSS gesetzt werden, wenn",
-        "body": "1. Einleitendes Wort vorhanden (um, ohne, statt, anstatt, außer, als)\n2. Die Infinitivgruppe von einem Nomen abhängt\n3. Sie mit einem hinweisenden Wort angekündigt wird"
+        "title": "Ein Komma muss stehen, wenn …",
+        "body": "1. die Infinitivgruppe ein einleitendes Wort hat (um, ohne, statt, anstatt, außer, als),\n2. die Infinitivgruppe von einem Nomen abhängt,\n3. ein hinweisendes Wort die Infinitivgruppe ankündigt."
       },
       {
         "kind": "steps",
         "title": "Beispiele",
-        "body": "• 'Ich gehe los, UM einzukaufen.' (einleitendes 'um')\n• 'Die Absicht, zu helfen, ist lobenswert.' (hängt von 'Absicht' ab)"
+        "body": "- Ich gehe los, um einzukaufen. (einleitendes Wort *um*)\n- Die Absicht, zu helfen, ist lobenswert. (hängt vom Nomen *Absicht* ab)"
       },
       {
         "kind": "answer",
@@ -3160,17 +3165,17 @@
       {
         "kind": "terms",
         "title": "Definition",
-        "body": "Aufsteigende Steigerung von Begriffen oder Aussagen."
+        "body": "Eine Klimax ist eine Steigerung: Jedes Glied ist stärker oder wichtiger als das davor."
       },
       {
         "kind": "steps",
-        "title": "Analyse",
-        "body": "'Ich kam, sah, siegte.'\nkommen → sehen → siegen\n→ Steigerung der Intensität!"
+        "title": "Den Satz prüfen",
+        "body": "Erst kommt er nur an, dann sieht er sich um, am Ende siegt er. Die Handlung wird also von Glied zu Glied wichtiger."
       },
       {
         "kind": "remember",
-        "title": "ANTIKLIMAX wäre das Gegenteil",
-        "body": "Abfallende Steigerung\nz.B. 'Großmutter, Mutter, Kind'"
+        "title": "Das Gegenteil: Antiklimax",
+        "body": "Bei einer Antiklimax werden die Glieder schwächer oder kleiner, zum Beispiel: *Könige, Fürsten, Bürger*."
       },
       {
         "kind": "answer",

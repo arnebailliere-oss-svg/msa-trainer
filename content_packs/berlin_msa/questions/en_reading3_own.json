@@ -85,11 +85,12 @@
     "prompt": "**19.** Sam Okoro was against the plan because …",
     "payload": {
       "choices": [
-        "he was worried about his employees' way home.",
-        "he feared he would lose customers.",
-        "the people affected had not been asked.",
+        "A  he was worried about his employees' way home.",
+        "B  he feared he would lose customers.",
+        "C  the people affected had not been asked.",
         "both A + C"
-      ]
+      ],
+      "shuffle": false
     },
     "solution": {
       "correct_choice": "both A + C"
@@ -98,7 +99,7 @@
       {
         "kind": "what",
         "title": "Beleg im Text",
-        "body": "Absatz 3: *My staff walk home after closing time* (A) **und** *Nobody asked them how they feel* (C). Von Gästen, die wegbleiben, sagt er nichts."
+        "body": "Absatz 3: *My staff walk home after closing time* (A) **und** *Nobody asked them how they feel* (C). Von Gästen, die wegbleiben (B), sagt er nichts."
       },
       {
         "kind": "remember",
@@ -271,11 +272,12 @@
     "prompt": "**24.** At the end of the trial, Sam Okoro …",
     "payload": {
       "choices": [
-        "accepts the solution.",
-        "still criticises how the decision was made.",
-        "wants to start a new petition.",
+        "A  accepts the solution.",
+        "B  still criticises how the decision was made.",
+        "C  wants to start a new petition.",
         "both A + B"
-      ]
+      ],
+      "shuffle": false
     },
     "solution": {
       "correct_choice": "both A + B"
@@ -284,7 +286,7 @@
       {
         "kind": "what",
         "title": "Beleg im Text",
-        "body": "Absatz 7: *Okoro took down his petition … my staff get home safely* (A) **und** *I still think they should have talked to us first* (B). Eine neue Unterschriftenliste plant er nicht."
+        "body": "Absatz 7: *Okoro took down his petition … my staff get home safely* (A) **und** *I still think they should have talked to us first* (B). Eine neue Unterschriftenliste (C) plant er nicht."
       },
       {
         "kind": "remember",
@@ -385,11 +387,12 @@
     "prompt": "**18.** Which reason(s) for buying second-hand clothes does the text mention?",
     "payload": {
       "choices": [
-        "low prices",
-        "good quality",
-        "the wish to look different from others",
+        "A  low prices",
+        "B  good quality",
+        "C  the wish to look different from others",
         "all of them (A+B+C)"
-      ]
+      ],
+      "shuffle": false
     },
     "solution": {
       "correct_choice": "all of them (A+B+C)"
@@ -575,11 +578,12 @@
     "prompt": "**23.** Why is the boom a problem for charity shops?",
     "payload": {
       "choices": [
-        "They are given a lot of clothes they cannot sell.",
-        "Dealing with useless donations costs them money.",
-        "They no longer receive enough donations.",
+        "A  They are given a lot of clothes they cannot sell.",
+        "B  Dealing with useless donations costs them money.",
+        "C  They no longer receive enough donations.",
         "both A + B"
-      ]
+      ],
+      "shuffle": false
     },
     "solution": {
       "correct_choice": "both A + B"

@@ -5,7 +5,7 @@
     "topicId": "MATH_FUNC_PROP",
     "difficulty": 2,
     "qtype": "SHORT",
-    "prompt": "{{k}} {{ding}} kosten {{p}} €. Wie viel kosten {{k2}} {{ding}}?",
+    "prompt": "{{k}} {{ding}} kosten {{= p | fixed:2}} €. Wie viel kosten {{k2}} {{ding}}?",
     "payload": {
       "answer_type": "number",
       "unit": "€",
@@ -23,7 +23,7 @@
       },
       {
         "kind": "steps",
-        "body": "1. ${{k}}$ {{ding}} → ${{p}}$ €\n2. $1$ Stück → ${{p}} : {{k}} = {{= p/k}}$ €\n3. ${{k2}}$ Stück → ${{= p/k}} \\cdot {{k2}} = {{= p/k*k2 | fixed:2}}$ €\n\nKontrolle: {{k2}} ist mehr als {{k}}, der Preis muss größer sein ✓"
+        "body": "1. ${{k}}$ {{ding}} kosten ${{= p | fixed:2}}$ €.\n2. $1$ Stück kostet ${{= p | fixed:2}} : {{k}} = {{= p/k | fixed:2}}$ €.\n3. ${{k2}}$ Stück kosten ${{= p/k | fixed:2}} \\cdot {{k2}} = {{= p/k*k2 | fixed:2}}$ €.\n\nKontrolle: {{k2}} ist mehr als {{k}}. Also muss der Preis größer sein ✓"
       },
       {
         "kind": "answer",
@@ -106,7 +106,7 @@
       },
       {
         "kind": "steps",
-        "body": "1. Gesamtarbeit: ${{a}} \\cdot {{t}} = {{= a*t}}$ Arbeiter-Tage\n2. Mit {{a2}} Arbeitern: ${{= a*t}} : {{a2}} = {{= a*t/a2}}$ Tage\n\nKontrolle: {{a2}} Arbeiter sind {{= if(a2 > a, 1, 0) | raw}} mehr als {{a}} → es muss schneller gehen ✓"
+        "body": "1. Gesamtarbeit: ${{a}} \\cdot {{t}} = {{= a*t}}$ Arbeiter-Tage\n2. Mit {{a2}} Arbeitern: ${{= a*t}} : {{a2}} = {{= a*t/a2}}$ {{= a*t/a2 | pl:Tag,Tage}}\n\nKontrolle: {{a2}} Arbeiter sind mehr als {{a}} Arbeiter. Also muss es schneller gehen. {{= a*t/a2}} {{= a*t/a2 | pl:Tag_ist,Tage_sind}} weniger als {{t}} Tage ✓"
       },
       {
         "kind": "mistake",
@@ -114,7 +114,7 @@
       },
       {
         "kind": "answer",
-        "body": "{{= a*t/a2}} Tage"
+        "body": "{{= a*t/a2}} {{= a*t/a2 | pl:Tag,Tage}}"
       }
     ],
     "tags": [
@@ -193,7 +193,7 @@
         "situation": {
           "type": "choice",
           "values": [
-            "Je mehr Pumpen ein Becken leeren, desto schneller ist es leer.",
+            "Je mehr Pumpen ein Becken leeren, desto weniger Zeit brauchen sie dafür.",
             "Je mehr Personen sich eine Pizza teilen, desto kleiner ist jedes Stück.",
             "Je schneller ein Auto fährt, desto weniger Zeit braucht es für 100 km.",
             "Je mehr Helfer beim Umzug sind, desto weniger Stunden dauert er.",
@@ -323,7 +323,7 @@
     "topicId": "MATH_FUNC_LINEAR_TABLE",
     "difficulty": 1,
     "qtype": "SHORT",
-    "prompt": "Gegeben ist die lineare Funktion $y = {{m}}x {{= n | sign}}$. Welcher $y$-Wert gehört zu $x = {{x}}$?",
+    "prompt": "Gegeben ist die lineare Funktion $y = {{m | coef}}x {{= n | sign}}$. Welcher $y$-Wert gehört zu $x = {{x}}$?",
     "payload": {
       "answer_type": "number"
     },
@@ -334,7 +334,7 @@
     "explanation": [
       {
         "kind": "steps",
-        "body": "$y = {{m}} \\cdot {{x}} {{= n | sign}} = {{= m*x}} {{= n | sign}} = {{= m*x + n}}$\n\nDer Punkt $({{x}} \\,|\\, {{= m*x+n}})$ liegt auf der Geraden."
+        "body": "$y = {{m}} \\cdot {{x | paren}} {{= n | sign}} = {{= m*x}} {{= n | sign}} = {{= m*x + n}}$\n\nDer Punkt $({{x}} \\,|\\, {{= m*x+n}})$ liegt auf der Geraden."
       },
       {
         "kind": "answer",
@@ -405,7 +405,7 @@
       },
       {
         "kind": "steps",
-        "body": "${{m}}x {{= n | sign}} = 0 \\;|\\; {{= -n | sign}}$\n\n${{m}}x = {{= -n}} \\;|\\; : {{m}}$\n\n$x = {{= -n/m}}$\n\nDie Nullstelle liegt bei $x = {{= -n/m}}$, also im Punkt $({{= -n/m}} \\,|\\, 0)$."
+        "body": "${{m}}x {{= n | sign}} = 0 \\;|\\; {{= -n | sign}}$\n\n${{m}}x = {{= -n}} \\;|\\; : {{m | paren}}$\n\n$x = {{= -n/m}}$\n\nDie Nullstelle liegt bei $x = {{= -n/m}}$, also im Punkt $({{= -n/m}} \\,|\\, 0)$."
       },
       {
         "kind": "answer",
@@ -489,7 +489,7 @@
     "explanation": [
       {
         "kind": "steps",
-        "body": "**Punktprobe**: $x = {{px}}$ einsetzen.\n\n$y = {{m}} \\cdot {{px}} {{= n | sign}} = {{= m*px}} {{= n | sign}} = {{= m*px + n}}$\n\nDas ist genau der $y$-Wert von $P$ → der Punkt liegt **auf** der Geraden."
+        "body": "**Punktprobe**: $x = {{px}}$ einsetzen.\n\n$y = {{m}} \\cdot {{px | paren}} {{= n | sign}} = {{= m*px}} {{= n | sign}} = {{= m*px + n}}$\n\nDas ist genau der $y$-Wert von $P$ → der Punkt liegt **auf** der Geraden."
       },
       {
         "kind": "answer",
@@ -561,7 +561,7 @@
     "explanation": [
       {
         "kind": "steps",
-        "body": "**Punktprobe**: $x = {{px}}$ einsetzen.\n\n$y = {{m}} \\cdot {{px}} {{= n | sign}} = {{= m*px + n}}$\n\nAber $P$ hat $y = {{py}}$, und ${{= m*px+n}} \\neq {{py}}$ → der Punkt liegt **nicht** auf der Geraden."
+        "body": "**Punktprobe**: $x = {{px}}$ einsetzen.\n\n$y = {{m}} \\cdot {{px | paren}} {{= n | sign}} = {{= m*px}} {{= n | sign}} = {{= m*px + n}}$\n\nAber $P$ hat $y = {{py}}$, und ${{= m*px+n}} \\neq {{py}}$ → der Punkt liegt **nicht** auf der Geraden."
       },
       {
         "kind": "answer",
@@ -644,7 +644,7 @@
       },
       {
         "kind": "steps",
-        "body": "$m = \\frac{{{y2}} - ({{y1}})}{{{x2}} - ({{x1}})} = \\frac{{{= y2 - y1}}}{{{= x2 - x1}}} = {{= (y2-y1)/(x2-x1)}}$\n\nBedeutung: ein Schritt nach rechts → {{= (y2-y1)/(x2-x1) | abs}} nach {{= if((y2-y1)/(x2-x1) > 0, 1, 0) | raw}}."
+        "body": "$m = \\frac{{{y2}} - {{y1 | paren}}}{{{x2}} - {{x1 | paren}}} = \\frac{{{= y2 - y1}}}{{{= x2 - x1}}} = {{= (y2-y1)/(x2-x1)}}$\n\nBedeutung: Gehst du einen Schritt nach rechts, dann geht die Gerade um {{= m | abs}} nach {{= if(m > 0, 1, 0) | pick:oben,unten}}. Denn $m$ ist {{= if(m > 0, 1, 0) | pick:positiv,negativ}}."
       },
       {
         "kind": "mistake",
@@ -738,15 +738,15 @@
     "prompt": "Eine Gerade hat die Steigung $m = {{m}}$ und schneidet die $y$-Achse bei $y = {{n}}$. Welche Gleichung gehört zu ihr?",
     "payload": {
       "choices": [
-        "$y = {{m}}x {{= n | sign}}$",
-        "$y = {{n}}x {{= m | sign}}$",
-        "$y = {{m}}x {{= -n | sign}}$",
-        "$y = {{= -m}}x {{= n | sign}}$"
+        "$y = {{m | coef}}x {{= n | sign}}$",
+        "$y = {{n | coef}}x {{= m | sign}}$",
+        "$y = {{m | coef}}x {{= -n | sign}}$",
+        "$y = {{= -m | coef}}x {{= n | sign}}$"
       ],
       "shuffle": true
     },
     "solution": {
-      "correct_choice": "$y = {{m}}x {{= n | sign}}$"
+      "correct_choice": "$y = {{m | coef}}x {{= n | sign}}$"
     },
     "explanation": [
       {
@@ -755,11 +755,11 @@
       },
       {
         "kind": "steps",
-        "body": "$m = {{m}}$ → vor das $x$. $n = {{n}}$ → als Konstante dazu.\n\n$y = {{m}}x {{= n | sign}}$\n\nProbe: bei $x = 0$ ist $y = {{n}}$ ✓"
+        "body": "$m = {{m}}$ → vor das $x$. $n = {{n}}$ → als Konstante dazu.\n\n$y = {{m | coef}}x {{= n | sign}}$\n\nProbe: bei $x = 0$ ist $y = {{n}}$ ✓"
       },
       {
         "kind": "answer",
-        "body": "$y = {{m}}x {{= n | sign}}$"
+        "body": "$y = {{m | coef}}x {{= n | sign}}$"
       }
     ],
     "tags": [
@@ -886,7 +886,7 @@
     "topicId": "MATH_FUNC_QUAD",
     "difficulty": 3,
     "qtype": "SHORT",
-    "prompt": "Gegeben ist $f(x) = x^2 {{= p | sign}}x {{= q | sign}}$. Berechne die **kleinere** Nullstelle.",
+    "prompt": "Gegeben ist $f(x) = x^2 {{= if(p > 0, 1, 0) | pick:+,−}} {{= abs(p) | coef}}x {{= q | sign}}$. Berechne die **kleinere** Nullstelle.",
     "payload": {
       "answer_type": "number"
     },
@@ -897,11 +897,11 @@
     "explanation": [
       {
         "kind": "steps",
-        "body": "Nullstellen: $f(x) = 0$ → $x^2 {{= p | sign}}x {{= q | sign}} = 0$, pq-Formel mit $p = {{p}}$, $q = {{q}}$:\n\n$x_{1,2} = {{= -p/2}} \\pm \\sqrt{{{= (p/2)^2}} {{= -q | sign}}} = {{= -p/2}} \\pm {{= sqrt((p/2)^2 - q)}}$\n\n$x_1 = {{r1}}$, $x_2 = {{r2}}$ → die kleinere ist ${{r2}}$."
+        "body": "Nullstellen: Setze $f(x) = 0$. Das ergibt $x^2 {{= if(p > 0, 1, 0) | pick:+,−}} {{= abs(p) | coef}}x {{= q | sign}} = 0$.\n\npq-Formel: $x_{1,2} = -\\frac{p}{2} \\pm \\sqrt{\\left(\\frac{p}{2}\\right)^2 - q}$\n\nHier ist $p = {{p}}$ (die Zahl vor $x$) und $q = {{q}}$ (die Zahl ohne $x$).\n\n1. Vor der Wurzel: $-\\frac{p}{2} = {{= -p/2}}$\n2. Unter der Wurzel: $\\left(\\frac{p}{2}\\right)^2 - q = {{= (p/2)^2}} - {{q | paren}} = {{= (p/2)^2 - q}}$\n3. Wurzel ziehen: $\\sqrt{{{= (p/2)^2 - q}}} = {{= sqrt((p/2)^2 - q)}}$\n4. Einsetzen: $x_1 = {{= -p/2}} + {{= sqrt((p/2)^2 - q)}} = {{r1}}$ und $x_2 = {{= -p/2}} - {{= sqrt((p/2)^2 - q)}} = {{r2}}$\n\nDie kleinere Nullstelle ist ${{r2}}$."
       },
       {
         "kind": "remember",
-        "body": "Der Scheitel liegt genau in der Mitte: $x_S = \\frac{{{r1}} + {{r2}}}{2} = {{= (r1+r2)/2}}$."
+        "body": "Der Scheitel liegt genau in der Mitte: $x_S = \\frac{{{r1}} + {{r2 | paren}}}{2} = {{= (r1+r2)/2}}$."
       },
       {
         "kind": "answer",

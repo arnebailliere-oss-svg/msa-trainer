@@ -114,3 +114,24 @@ describe("renderVariant", () => {
     expect(prompts.size).toBeGreaterThan(3);
   });
 });
+
+describe("template filters for readable sentences", () => {
+  it("paren puts negative numbers in brackets", () => {
+    expect(renderTemplate("3 · {{= a | paren}}", { a: -5 })).toBe("3 · (−5)");
+    expect(renderTemplate("3 · {{= a | paren}}", { a: 5 })).toBe("3 · 5");
+  });
+  it("coef leaves out a factor of 1", () => {
+    expect(renderTemplate("{{= a | coef}}x", { a: 1 })).toBe("x");
+    expect(renderTemplate("{{= a | coef}}x", { a: -1 })).toBe("−x");
+    expect(renderTemplate("{{= a | coef}}x", { a: 4 })).toBe("4x");
+  });
+  it("pick prints a word instead of 1 or 0", () => {
+    expect(renderTemplate("nach {{= if(x > 0, 1, 0) | pick:rechts,links}}", { x: 3 })).toBe("nach rechts");
+    expect(renderTemplate("nach {{= if(x > 0, 1, 0) | pick:rechts,links}}", { x: -3 })).toBe("nach links");
+    expect(renderTemplate("{{= if(a > b, 1, 0) | pick:mehr,weniger}}", { a: 2, b: 6 })).toBe("weniger");
+  });
+  it("pl chooses singular or plural", () => {
+    expect(renderTemplate("{{n}} {{= n | pl:Schritt,Schritte}}", { n: 1 })).toBe("1 Schritt");
+    expect(renderTemplate("{{n}} {{= n | pl:Schritt,Schritte}}", { n: 3 })).toBe("3 Schritte");
+  });
+});

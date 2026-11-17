@@ -1,0 +1,323 @@
+[
+  {
+    "id": "EN_D4_GUIDED_TASK_MCQ_1",
+    "why": "The student's answer has 40 words, not 42.",
+    "ops": [
+      { "op": "replace", "in": "explanation", "from": "hier 42 Wörter", "to": "hier 40 Wörter" }
+    ]
+  },
+  {
+    "id": "EN_D4_IF_MIXED_MCQ_T1",
+    "why": "Hints named the shuffled choices by letter; they now quote the choice text.",
+    "ops": [
+      { "op": "set", "path": ["variants", "variables", "s", "from", 0, "hinweis"], "value": "Typ I: Im Teil mit if steht *rains* (Simple Present), im anderen Teil *will stay*. Der Satz mit *If it will rain* ist falsch, weil im Teil mit if nie *will* steht. Die Sätze mit *we would stay* und mit *If it rained* mischen Typ I und Typ II." },
+      { "op": "set", "path": ["variants", "variables", "s", "from", 1, "hinweis"], "value": "Typ II: Im Teil mit if steht *had* (Simple Past), im anderen Teil *would learn*. Der Satz mit *If I would have* ist falsch, weil im Teil mit if nie *would* steht. Die Sätze mit *will learn* und mit *If I have* mischen zwei Typen." },
+      { "op": "set", "path": ["variants", "variables", "s", "from", 2, "hinweis"], "value": "Typ III: Im Teil mit if steht *had seen*, im anderen Teil *wouldn't have parked*. Der Satz mit *If she would have seen* ist falsch, weil im Teil mit if nie *would* steht. Die Sätze mit *If she saw* und mit *she wouldn't park there* mischen zwei Typen." },
+      { "op": "set", "path": ["variants", "variables", "s", "from", 5, "hinweis"], "value": "Typ III: *would have won* und *had practised* gehören zusammen. Im Satz mit *You would won* fehlt *have*. Die Sätze mit *if you practised more* und mit *You will have won* mischen zwei Typen." },
+      { "op": "set", "path": ["variants", "variables", "s", "from", 6, "hinweis"], "value": "Typ I: Im Teil mit if steht *leave* (Simple Present), im anderen Teil *won't be*. Der Satz mit *If we will leave* ist falsch, weil im Teil mit if nie *will* steht. Die Sätze mit *If we left* und mit *we wouldn't be late* mischen zwei Typen." },
+      { "op": "set", "path": ["variants", "variables", "s", "from", 8, "hinweis"], "value": "Typ III: Im Teil mit if steht *had invited*, im anderen Teil *would have gone*. Der Satz mit *If they invited me* mischt zwei Typen. Im Satz mit *I had gone* fehlt *would*. Der Satz mit *If they would have invited me* ist falsch, weil im Teil mit if nie *would* steht." }
+    ]
+  },
+  {
+    "id": "EN_D4_IF_REWRITE_T1",
+    "why": "Hint named a shuffled choice by the letter d; it now quotes the sentence.",
+    "ops": [
+      { "op": "set", "path": ["variants", "variables", "s", "from", 7, "hinweis"], "value": "Die Situation ist Vergangenheit und vorbei, also **Typ III**: *hadn't eaten* + *wouldn't have felt*. Der Satz mit *If you wouldn't have eaten* ist falsch, weil im Teil mit if nie *would* steht." }
+    ]
+  },
+  {
+    "id": "EN_D4_GUIDED_INTRO_T1",
+    "why": "Hints named the shuffled choices by letter; they now quote the sentences.",
+    "ops": [
+      { "op": "set", "path": ["variants", "variables", "s", "from", 0, "hinweis"], "value": "*The photo shows …* gibt den **Überblick**. *In the background there is a red bus.* und *The man on the left is probably the owner.* sind Details. *That's all I can say about the photo.* ist ein Schluss." },
+      { "op": "set", "path": ["variants", "variables", "s", "from", 1, "hinweis"], "value": "Eine Frage an den Leser und *Write back soon!* runden den Text ab. *Hi there, thanks for your post!* ist ein Anfang. *First of all, …* und *In my opinion, …* gehören in die Mitte." },
+      { "op": "set", "path": ["variants", "variables", "s", "from", 3, "hinweis"], "value": "*On the right …* beschreibt ein **Detail** mit Ortsangabe. *The photo shows my family.* ist ein Überblick. *I think this photo is about summer holidays.* ist eine Deutung. *Hope you like it!* ist ein Schluss." },
+      { "op": "set", "path": ["variants", "variables", "s", "from", 5, "hinweis"], "value": "Das ist ein freundlicher Schlusssatz vor dem Gruß. *Dear Tom, how are you?* und *I am writing to ask about your holiday.* sind Anfänge. *In the picture you can see my dog.* gehört in die Mitte." }
+    ]
+  },
+  {
+    "id": "EN_D4_VOC_OPIN_MCQ_1",
+    "why": "Explanation numbered the shuffled choices; it now quotes them.",
+    "ops": [
+      { "op": "section", "index": 0, "body": "Nur dieser Satz hat beides: eine **Meinung** (*I think school should start later*) und einen **Grund** (*because teenagers need more sleep*). *School starts at 8 o'clock in Berlin.* ist eine Tatsache. *I think school should start later.* ist eine Meinung ohne Grund. *Does school start too early?* ist eine Frage." }
+    ]
+  },
+  {
+    "id": "EN_TIME_DATE_MCQ_T1",
+    "why": "'twenty-one fifteen' is also a correct way to say 21:15, so it cannot be a wrong choice.",
+    "ops": [
+      { "op": "set", "path": ["variants", "variables", "s", "from", 2, "frage"], "value": "Wie sagt man **21:15** im Alltag (12-Stunden-System)?" },
+      { "op": "set", "path": ["variants", "variables", "s", "from", 2, "c"], "value": "quarter past eleven" },
+      { "op": "set", "path": ["variants", "variables", "s", "from", 2, "grund"], "value": "Im Alltag sagt man die Uhrzeit im 12-Stunden-System. 21:15 ist am Abend, also *quarter past nine* oder *nine fifteen pm*." }
+    ]
+  },
+  {
+    "id": "EN_ERRORFIX_MCQ_T1",
+    "why": "'I'm looking after my keys.' is correct English with another meaning, so it is replaced by a clearly wrong sentence.",
+    "ops": [
+      { "op": "set", "path": ["variants", "variables", "s", "from", 13, "d"], "value": "I'm looking to my keys." },
+      { "op": "set", "path": ["variants", "variables", "s", "from", 13, "grund"], "value": "Suchen heißt *look for*. Ohne *for* oder mit *to* ist der Satz falsch. Auch nach *search* müsste *for* stehen." }
+    ]
+  },
+  {
+    "id": "EN_VOCAB_CLOZE_T1",
+    "why": "'The employer of the company' is poor English and 'employee' fitted the old sentence better than the key.",
+    "ops": [
+      { "op": "set", "path": ["variants", "variables", "s", "from", 15, "satz"], "value": "My new ___ is friendly. She pays me £9 an hour." },
+      { "op": "set", "path": ["variants", "variables", "s", "from", 15, "grund"], "value": "Der *employer* ist der Arbeitgeber. Er bezahlt den Lohn. Der *employee* ist der Arbeitnehmer, also der, der dort arbeitet." }
+    ]
+  },
+  {
+    "id": "EN_IF_CLAUSE_T1",
+    "why": "Without a time word 'is' also gives a correct sentence (general rule); 'tonight' and 'tomorrow' make it a single future case.",
+    "ops": [
+      { "op": "set", "path": ["variants", "variables", "s", "from", 11, "satz"], "value": "If you don't do your homework tonight, your teacher ___ very angry tomorrow." }
+    ]
+  },
+  {
+    "id": "EN_D4_SHORTNOTES_T1",
+    "why": "'Please confirm' did not say to whom, so 'Sarah should call Dad' was defensible.",
+    "ops": [
+      { "op": "set", "path": ["variants", "variables", "s", "from", 1, "text"], "value": "Sarah, the dentist called. Your appointment is now on Thursday at 3.30, not Wednesday. Please call the dentist to confirm. Dad" },
+      { "op": "set", "path": ["variants", "variables", "s", "from", 1, "hinweis"], "value": "*To confirm* heißt bestätigen. *Please call the dentist to confirm* bedeutet: Sarah soll beim Zahnarzt anrufen und sagen, dass Donnerstag passt." }
+    ]
+  },
+  {
+    "id": "EN_QUESTION_NEG_MCQ_T1",
+    "why": "The rule 'have needs no do' is wrong for have as a main verb (Do you have a pen?).",
+    "ops": [
+      { "op": "section", "index": 1, "body": "- Fragen und Nein-Sätze brauchen den Helfer do, does oder did.\n- Nach dem Helfer steht das Verb in der Grundform.\n- Mit be, have got und den Modalverben brauchst du kein do: *Is he …? Have you got …? Can you …?*\n- Auch das Present Perfect braucht kein do: *Have you ever been …?*\n- *Have* als einziges Verb braucht do: *Do you have a pen?*" }
+    ]
+  },
+  {
+    "id": "EN_D4_COMP_ASAS_T1",
+    "why": "'a bit' weakens a comparative, it does not strengthen it.",
+    "ops": [
+      { "op": "section", "index": 1, "body": "Drei Muster: **as … as** (genauso wie, Grundform), **-er / more … than** (Vergleich von zweien), **the -est / the most …** (Superlativ, der/die/das …-ste). Verstärken mit *much / a lot + -er* (viel …-er), abschwächen mit *a bit + -er* (ein bisschen …-er). Weniger: *less … than*." }
+    ]
+  },
+  {
+    "id": "EN_D4_LISTEN_DATE_T1",
+    "why": "'June the twenty-second' is British too (American is 'June twenty-second'), and 2012 is also said 'twenty twelve'.",
+    "ops": [
+      { "op": "section", "index": 1, "body": "Daten: *the twenty-second of June* oder *June the twenty-second* = 22 June. Beides ist britisches Englisch. Im amerikanischen Englisch sagt man *June twenty-second* ohne *the*. Ordnungszahlen: *first, second, third, fifth, twelfth, twentieth, twenty-first, thirtieth*. Jahre spricht man zweigeteilt: *nineteen ninety-eight* (1998), *eighteen oh-five* (1805). Die Jahre 2000 bis 2009 sind anders: *two thousand and nine* (2009). Für 2012 hört man *twenty twelve* oder *two thousand and twelve*." },
+      { "op": "set", "path": ["variants", "variables", "s", "from", 1, "hinweis"], "value": "*March the third* nennt den Monat zuerst. Gemeint ist der 3. März." }
+    ]
+  },
+  {
+    "id": "EN_D4_VOC_OPIN_MATCH_1",
+    "why": "The embarrassed/pregnant mix-up exists for Spanish speakers only and confuses German learners.",
+    "ops": [
+      { "op": "section", "index": 2, "body": "*embarrassed* (etwas ist mir peinlich) nicht mit *ashamed* (ich schäme mich für etwas Falsches) verwechseln. Und *sensible* heißt „vernünftig“, nicht „sensibel“ (= *sensitive*)." }
+    ]
+  },
+  {
+    "id": "EN_D4_VOC_DAILY_MATCH_1",
+    "why": "The sentence about 'to post' contradicted itself.",
+    "ops": [
+      { "op": "section", "index": 2, "body": "*to like* als Verb im Netz heißt liken, aber *I like it* heißt nur „ich mag es“. *to post* hat zwei Bedeutungen: im Netz etwas veröffentlichen, und im britischen Englisch einen Brief abschicken (*to post a letter*)." }
+    ]
+  },
+  {
+    "id": "EN_WRITING_ASSESSMENT_MCQ_1",
+    "why": "The table listed length as a third criterion although the key (and the Berlin grid) names content and language only.",
+    "ops": [
+      { "op": "section", "index": 0, "body": "| Dafür gibt es Punkte | Das heißt für dich |\n| --- | --- |\n| Inhalt | Alle Fragen und Punkte der Aufgabe sind beantwortet, und die verlangte Wortzahl ist erreicht. |\n| Sprache | Man versteht dich, und die Sätze sind richtig gebaut. |\n\nGrammatik allein reicht also nicht. Und die Handschrift wird nicht bewertet, solange man sie lesen kann." }
+    ]
+  },
+  {
+    "id": "EN_FORMAL_INFORMAL_MCQ_T1",
+    "why": "'mail' for e-mail is a German habit; the question's own table writes e-mail.",
+    "ops": [
+      { "op": "set", "path": ["variants", "variables", "s", "from", 11, "phrase"], "value": "Thanks a lot for your e-mail!" }
+    ]
+  },
+  {
+    "id": "EN_D4_GUIDED_ORDER_2",
+    "why": "Same 'mail' for e-mail as in EN_FORMAL_INFORMAL_MCQ_T1 (named in that finding).",
+    "ops": [
+      { "op": "replace", "in": "all", "from": "Thanks for your mail!", "to": "Thanks for your e-mail!" }
+    ]
+  },
+  {
+    "id": "EN_MSA2023_W_P3_NOTINTEXT",
+    "why": "The question had no reading text and two choices were not in the shortened article of the pack; the article is attached and the choices follow it.",
+    "ops": [
+      { "op": "set", "path": ["passage"], "value": "X_EN_MED_CHATGPT_2023" },
+      { "op": "choices", "choices": [
+        "ChatGPT wird an deutschen Schulen ab dem nächsten Schuljahr verboten.",
+        "ChatGPT wurde im November 2022 von der US-Firma OpenAI veröffentlicht.",
+        "Einige Schülerinnen und Schüler nutzen ChatGPT für Hausaufgaben, Referate und Recherche.",
+        "Viele Schulen entwickeln Regeln: KI als Werkzeug ja, als Ersatz für das eigene Denken nein."
+      ], "correct": "ChatGPT wird an deutschen Schulen ab dem nächsten Schuljahr verboten." },
+      { "op": "section", "index": 0, "body": "Der Artikel fragt zwar *Nutzen oder verbieten?*. Ein Verbot wird aber nirgends beschlossen. Die drei anderen Aussagen stehen im Text: *ChatGPT wurde im November 2022 von der US-Firma OpenAI veröffentlicht.* Dann: *Sie verwenden ihn, um Hausaufgaben zu erledigen, Referate vorzubereiten und komplexe Themen zu recherchieren.* Und am Ende: *Viele Schulen entwickeln deshalb Regeln: KI als Werkzeug ja — als Ersatz für das eigene Denken nein.*" }
+    ]
+  },
+  {
+    "id": "EN_MSA2023_W_P3_ASPECTS",
+    "why": "The explanation cited paragraph numbers of an article the learner did not see; numbers removed and the pack's article attached.",
+    "ops": [
+      { "op": "set", "path": ["passage"], "value": "X_EN_MED_CHATGPT_2023" },
+      { "op": "section", "index": 0, "title": "Warum", "body": "Jeder englische Satz gibt die Kernaussage des deutschen Satzes mit einfachen Wörtern wieder. Aus *Schummeln* wird zum Beispiel *cheat*, und aus *kritisch hinterfragen* wird *check them critically*. Der Artikel oben ist gekürzt. Die Aspekte zu den Fehlern von ChatGPT und zu den Projektarbeiten stehen nur im vollständigen Prüfungstext." }
+    ]
+  },
+  {
+    "id": "EN_MSA2023_W_P3_ASPECTS",
+    "why": "'often makes mistakes' overstates 'keineswegs fehlerfreie Ergebnisse'.",
+    "ops": [
+      { "op": "replace", "in": "all", "from": "ChatGPT often makes mistakes, so teachers should encourage students to check its answers critically.", "to": "ChatGPT's answers are not always correct, so teachers should encourage students to check them critically." }
+    ]
+  },
+  {
+    "id": "EN_WRITE_MED_CHATGPT_2023",
+    "why": "The article says 'einige' students and speaks of a risk; the model answer turned that into 'many' and into a fact.",
+    "ops": [
+      { "op": "replace", "in": "solution", "from": "an AI chatbot that many students in Germany already use", "to": "an AI chatbot that some students in Germany already use" },
+      { "op": "replace", "in": "solution", "from": "some students use it to cheat, and many stop thinking critically for themselves", "to": "students could use it to cheat and stop thinking critically for themselves" },
+      { "op": "replace", "in": "payload", "from": "ChatGPT is an AI chatbot many German students use", "to": "ChatGPT is an AI chatbot some German students already use" }
+    ]
+  },
+  {
+    "id": "EN_WRITE_MED_JULIAN_2022",
+    "why": "In English the text after the greeting starts with a capital letter.",
+    "ops": [
+      { "op": "replace", "in": "solution", "from": "Hi Kim,\n\nyou asked me for a story", "to": "Hi Kim,\n\nYou asked me for a story" },
+      { "op": "replace", "in": "explanation", "from": "(*you asked me for a story …*)", "to": "(*You asked me for a story …*)" }
+    ]
+  },
+  {
+    "id": "EN_WRITE_MED_JULIAN_2022",
+    "why": "'reported about him' is a Germanism (report on), and the sentence read as 'invited to podcasts and newspapers'.",
+    "ops": [
+      { "op": "replace", "in": "solution", "from": "he was invited to podcasts and newspapers and radio stations reported about him", "to": "he was invited to podcasts, and newspapers and radio stations reported on him" },
+      { "op": "replace", "in": "payload", "from": "Aspect: podcasts, radio, newspapers reported about him", "to": "Aspect: podcasts, radio and newspapers reported on him" }
+    ]
+  },
+  {
+    "id": "EN_MSA2023_R2_14",
+    "why": "Stem and choices did not form an English sentence, and the note says how to wash up, not that one should.",
+    "ops": [
+      { "op": "replace", "in": "prompt", "from": "**This note tells the reader …**", "to": "**This note tells the reader how to …**" }
+    ]
+  },
+  {
+    "id": "EN_MSA2023_R2_13",
+    "why": "The stem pointed to a picture that the task does not show.",
+    "ops": [
+      { "op": "replace", "in": "prompt", "from": "**The product shown in the picture …**", "to": "**The product in this notice …**" }
+    ]
+  },
+  {
+    "id": "EN_MSA2024_R3_19",
+    "why": "The combination choice refers to letters, so the choices carry letters and are no longer shuffled.",
+    "ops": [
+      { "op": "choices", "choices": [
+        "A  he was worried about his employees' way home.",
+        "B  he feared he would lose customers.",
+        "C  the people affected had not been asked.",
+        "both A + C"
+      ], "correct": "both A + C" },
+      { "op": "payload", "set": { "shuffle": false } },
+      { "op": "section", "index": 0, "body": "Absatz 3: *My staff walk home after closing time* (A) **und** *Nobody asked them how they feel* (C). Von Gästen, die wegbleiben (B), sagt er nichts." }
+    ]
+  },
+  {
+    "id": "EN_MSA2024_R3_24",
+    "why": "The combination choice refers to letters, so the choices carry letters and are no longer shuffled.",
+    "ops": [
+      { "op": "choices", "choices": [
+        "A  accepts the solution.",
+        "B  still criticises how the decision was made.",
+        "C  wants to start a new petition.",
+        "both A + B"
+      ], "correct": "both A + B" },
+      { "op": "payload", "set": { "shuffle": false } },
+      { "op": "section", "index": 0, "body": "Absatz 7: *Okoro took down his petition … my staff get home safely* (A) **und** *I still think they should have talked to us first* (B). Eine neue Unterschriftenliste (C) plant er nicht." }
+    ]
+  },
+  {
+    "id": "EN_MSA2023_R3_18",
+    "why": "The combination choice refers to letters, so the choices carry letters and are no longer shuffled.",
+    "ops": [
+      { "op": "choices", "choices": [
+        "A  low prices",
+        "B  good quality",
+        "C  the wish to look different from others",
+        "all of them (A+B+C)"
+      ], "correct": "all of them (A+B+C)" },
+      { "op": "payload", "set": { "shuffle": false } }
+    ]
+  },
+  {
+    "id": "EN_MSA2023_R3_23",
+    "why": "The combination choice refers to letters, so the choices carry letters and are no longer shuffled.",
+    "ops": [
+      { "op": "choices", "choices": [
+        "A  They are given a lot of clothes they cannot sell.",
+        "B  Dealing with useless donations costs them money.",
+        "C  They no longer receive enough donations.",
+        "both A + B"
+      ], "correct": "both A + B" },
+      { "op": "payload", "set": { "shuffle": false } }
+    ]
+  },
+  {
+    "id": "EN_D4_EMAIL_BLOG_MCQ_1",
+    "why": "Explanation named the shuffled choices by position; it now quotes them.",
+    "ops": [
+      { "op": "section", "index": 0, "body": "Im Blog stehen drei Fragen. **How do you get to school?** Die Antwort ist *I usually take the tram*. **Would you cycle if …?** Die Antwort ist *I wouldn't cycle in winter, but in summer maybe*. **What could schools do?** Die Antwort ist *safe bike parking* und *cycling lessons*. Die Antwort mit *My bike is red …* beantwortet keine der Fragen ausdrücklich. Die Antwort mit *I think cycling is healthy and cheap …* beantwortet nur die erste Frage. Die Antwort mit *My cousin cycles to school …* beantwortet nur die dritte Frage." },
+      { "op": "section", "index": 2, "body": "Eine Antwort schreiben, die zum **Thema** passt, aber nicht zu den **Fragen** (wie die Antwort mit dem roten Fahrrad). Thema getroffen heißt nicht Aufgabe erfüllt." }
+    ]
+  },
+  {
+    "id": "EN_D4_EMAIL_BLOG_MCQ_1",
+    "why": "The right reply contradicted itself (too far to cycle, then 'if my school were far away'), and 'answers no question' was too strong for the red-bike reply.",
+    "ops": [
+      { "op": "choices", "choices": [
+        "I usually take the tram because it's faster. If my school were far away, I wouldn't cycle in winter, but in summer maybe. Schools could build safe bike parking and organise cycling lessons.",
+        "Cycling is great! I cycle every day and I love it. My bike is red and I got it for my birthday. Everybody should cycle.",
+        "I take the tram because my school is far away. I think cycling is healthy and cheap, and I agree with you that it's good for the environment.",
+        "Schools should definitely do more for cyclists, for example safe bike parking. My cousin cycles to school every day and she loves it."
+      ], "correct": "I usually take the tram because it's faster. If my school were far away, I wouldn't cycle in winter, but in summer maybe. Schools could build safe bike parking and organise cycling lessons." },
+      { "op": "replace", "in": "explanation", "from": "beantwortet keine der Fragen ausdrücklich", "to": "sagt nur indirekt, wie die Person zur Schule kommt, und lässt die zweite und dritte Frage aus" }
+    ]
+  },
+  {
+    "id": "EN_D4_MED_SENT_T1",
+    "why": "Hints named the shuffled choices by letter; they now quote the sentences.",
+    "ops": [
+      { "op": "set", "path": ["variants", "variables", "s", "from", 0, "hinweis"], "value": "*mit zwölf* heißt *when he was twelve* oder *at the age of twelve*, nie *with twelve*. Der Satz *Julian became a programmer at twelve.* ändert den Inhalt." },
+      { "op": "set", "path": ["variants", "variables", "s", "from", 5, "hinweis"], "value": "*Praktikum* heißt *internship* oder *work placement*. Dazu gehört das Verb **do**, nicht make. Der Satz *She worked as a journalist.* übertreibt." },
+      { "op": "set", "path": ["variants", "variables", "s", "from", 6, "hinweis"], "value": "*Halbjahr* heißt *term*. Der Satz *The school started the project last term.* ändert die Information." },
+      { "op": "set", "path": ["variants", "variables", "s", "from", 9, "hinweis"], "value": "*hätte … nicht geschafft* heißt *couldn't have done it* (Typ III). Die Sätze *His mother did it for him.* und *He didn't manage it without his mother.* ändern den Sinn." }
+    ]
+  },
+  {
+    "id": "EN_D4_MED_TASK_MCQ_1",
+    "why": "Explanation counted the shuffled choices as sentence 1 to 4; it now quotes them.",
+    "ops": [
+      { "op": "section", "index": 0, "body": "Die richtige Antwort hat beides: **what** (*built a website that helped thousands of people find vaccination appointments*) und **why** (*because his grandfather couldn't get one*), in eigenen, richtigen Worten. Die lange Antwort mit *millionfold* übersetzt Wort für Wort, mit Fehlern (*millionfold*, *was presented*) und mit Überflüssigem. Die Antwort *Julian is a boy who likes computers …* ist zu vage. *Likes computers* steht nicht im Text. Die Antwort *There is a website in Esslingen …* nennt weder Julian noch den Grund." }
+    ]
+  },
+  {
+    "id": "EN_MSA2023_W_P1_CHECK",
+    "why": "Explanation named the shuffled choices by position; it now names them by their word count.",
+    "ops": [
+      { "op": "section", "index": 0, "body": "Nur die Antwort mit 38 Wörtern nennt den Ort (*Sydney*), die Fotografin (*my aunt*) und den Anlass (*New Year celebrations*). Sie bleibt auch im Rahmen von 30–50 Wörtern. Die Antwort mit 22 Wörtern ist zu kurz und lässt den Anlass weg. Die Antwort mit 55 Wörtern ist zu lang und beantwortet die Frage nach dem Anlass nicht. Die Antwort mit 24 Wörtern ist zu kurz und nennt weder einen genauen Ort noch den Anlass." }
+    ]
+  },
+  {
+    "id": "EN_MSA2023_W_P2_OPENING",
+    "why": "Explanation named the shuffled choices by position; it now quotes them.",
+    "ops": [
+      { "op": "section", "index": 0, "body": "Die Eröffnung mit *Hey! That's a really interesting point …* passt zum informellen Blog, denn der Blogger schreibt selbst *Hey there!*. Sie reagiert auf den Beitrag und beantwortet direkt die erste Frage (*Have you thought about it before?*). *Dear Sir or Madam* und *To whom it may concern* sind Formeln für Geschäftsbriefe. Die Variante *Media bad, I agree.* hat keine ganzen Sätze und beantwortet nichts." }
+    ]
+  },
+  {
+    "id": "EN_D4_MATCH_BRIGHTON_1",
+    "why": "The prompt said two activities are not needed, but the answer field offers only the five needed ones (the checker requires equal list lengths).",
+    "ops": [
+      { "op": "replace", "in": "prompt", "from": "Two activities are not needed.", "to": "Two activities (F and G) fit nobody, so they are not in the list of answers." }
+    ]
+  }
+]

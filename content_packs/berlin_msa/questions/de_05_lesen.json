@@ -25,7 +25,7 @@
       },
       {
         "kind": "remember",
-        "body": "Bei richtig/falsch-Aufgaben: **Signalwörter** der Aussage im Text suchen (hier: *Handys, benutzt*) und die Stelle genau lesen. Ein Wort wie *gar nicht* oder *immer* entscheidet oft."
+        "body": "Bei Richtig-falsch-Aufgaben: **Signalwörter** der Aussage im Text suchen (hier: *Handys, benutzt*) und die Stelle genau lesen. Ein Wort wie *gar nicht* oder *immer* entscheidet oft."
       }
     ],
     "tags": [
@@ -99,7 +99,7 @@
       },
       {
         "kind": "mistake",
-        "body": "Typische Falle: Die Aussage enthält ein Wort aus dem Text (*handyfrei*), aber der **Umfang** stimmt nicht (*eine Pause* ≠ *ganzer Schultag*)."
+        "body": "Typische Falle: Die Aussage greift einen Gedanken aus dem Text auf (Zeit ohne Handy), aber der **Umfang** stimmt nicht. Im Text geht es um *eine Pause*, in der Aussage um den *ganzen Schultag*."
       }
     ],
     "tags": [
@@ -151,7 +151,7 @@
     "topicId": "DE_READ_CORE",
     "difficulty": 2,
     "qtype": "MCQ",
-    "prompt": "Aussage: **Mara ist nervös, weil sie den Bus verpassen könnte.**",
+    "prompt": "Aussage: **Mara ist nervös, während sie auf den Bus wartet.**",
     "payload": {
       "choices": [
         "richtig",
@@ -167,7 +167,7 @@
       {
         "kind": "what",
         "title": "Beleg",
-        "body": "Satz 3: „hörte nur ihr eigenes Herz“ und Satz 5: „als hätte sie eine Stunde die Luft angehalten“. Die Nervosität wird nicht **gesagt**, sondern **gezeigt**. Das ist typisch für literarische Texte."
+        "body": "Satz 3: „hörte nur ihr eigenes Herz“ und Satz 5: „als hätte sie eine Stunde die Luft angehalten“. Die Nervosität wird nicht **gesagt**, sondern **gezeigt**. Das ist typisch für literarische Texte. Den Grund deutet Satz 4 an: Sie hat ihrer Mutter versprochen, um Mitternacht zu Hause zu sein."
       },
       {
         "kind": "remember",

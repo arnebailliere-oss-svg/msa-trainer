@@ -522,5 +522,16 @@ sec("L_MATH_DATA", "Häufigkeit und Wahrscheinlichkeit").primer = "P_MATH_STOCHA
 sec("L_MATH_DATA", "Diagramme").primer = "P_MATH_STOCHASTIK";
 sec("L_MATH_NUM_PCT", "Prozentuale Änderung (Rabatt, Erhöhung, Zinsen)").primer = "P_MATH_PROZENT";
 
+// Construction example: with c = 10 cm, α = 40°, a = 7 cm the arc cuts the helper line twice (two triangles).
+// With c = 7 cm and a = 10 cm there is exactly one.
+{
+  const l = lessons["L_MATH_GEO_FLAECHE"];
+  const s = l.sections.find((x) => x.title.startsWith("Dreieck konstruieren"));
+  if (!s) throw new Error("construction card not found");
+  s.title = "Dreieck konstruieren (z. B. c = 7 cm, α = 40°, a = 10 cm)";
+  s.body = s.body.replace("Radius $a = 7$ cm", "Radius $a = 10$ cm");
+  s.figure = { type: "triangle", alpha: 40, beta: 113.3, labels: { c: "c = 7 cm", a: "a = 10 cm", alpha: "α = 40°" } };
+}
+
 for (const f of Object.keys(files)) fs.writeFileSync(path.join(dir, f), JSON.stringify(files[f], null, 2) + "\n");
 console.log("letters explained on the maths Spickzettel");

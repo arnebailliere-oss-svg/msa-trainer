@@ -20,7 +20,7 @@
       },
       {
         "kind": "steps",
-        "body": "${{a}}^{{{n}}} = {{a}} \\cdot {{a}}{{= if(n > 2, 1, 0) | raw}}$ … $= {{= a^n}}$\n\nSchrittweise: ${{a}} \\cdot {{a}} = {{= a*a}}$, ${{= a*a}} \\cdot {{a}} = {{= a*a*a}}$"
+        "body": "Der Exponent {{n}} sagt: Die {{a}} steht {{n}}-mal als Faktor da.\n\n${{a}}^{{{n}}} = {{a}} \\cdot {{a}} {{= if(n > 2, 1, 0) | pick:\\cdot,}} {{= if(n > 2, a, 1) | coef}} {{= if(n > 3, 1, 0) | pick:\\cdot,}} {{= if(n > 3, a, 1) | coef}} = {{= a^n}}$\n\nRechne Schritt für Schritt: ${{a}} \\cdot {{a}} = {{= a*a}} {{= if(n > 2, 1, 0) | pick:\\qquad,}} {{= if(n > 2, a*a, 1) | coef}} {{= if(n > 2, 1, 0) | pick:\\cdot,}} {{= if(n > 2, a, 1) | coef}} {{= if(n > 2, 1, 0) | pick:=,}} {{= if(n > 2, a*a*a, 1) | coef}} {{= if(n > 3, 1, 0) | pick:\\qquad,}} {{= if(n > 3, a*a*a, 1) | coef}} {{= if(n > 3, 1, 0) | pick:\\cdot,}} {{= if(n > 3, a, 1) | coef}} {{= if(n > 3, 1, 0) | pick:=,}} {{= if(n > 3, a*a*a*a, 1) | coef}}$"
       },
       {
         "kind": "mistake",
@@ -352,7 +352,7 @@
       },
       {
         "kind": "steps",
-        "body": "$(x^{{{m}}})^{{{n}}} = x^{{{m}} \\cdot {{n}}} = x^{{{= m*n}}}$\n\nWarum? $(x^{{{m}}})^{{{n}}}$ heißt {{n}}-mal $x^{{{m}}}$ multiplizieren: $x^{{{m}}} \\cdot x^{{{m}}} \\cdot \\ldots$ — und beim Multiplizieren werden {{n}}-mal {{m}} addiert."
+        "body": "$(x^{{{m}}})^{{{n}}} = x^{{{m}} \\cdot {{n}}} = x^{{{= m*n}}}$\n\nWarum? $(x^{{{m}}})^{{{n}}}$ heißt: $x^{{{m}}}$ steht {{n}}-mal als Faktor da. Also: $x^{{{m}}} \\cdot x^{{{m}}} {{= if(n > 2, 1, 0) | pick:\\cdot,}} {{= if(n > 2, 1, 0) | pick:x^,}}{{= if(n > 2, m, 1) | coef}} {{= if(n > 3, 1, 0) | pick:\\cdot,}} {{= if(n > 3, 1, 0) | pick:x^,}}{{= if(n > 3, m, 1) | coef}} {{= if(n > 4, 1, 0) | pick:\\cdot,}} {{= if(n > 4, 1, 0) | pick:x^,}}{{= if(n > 4, m, 1) | coef}}$\n\nBeim Multiplizieren werden die Exponenten addiert: ${{m}} + {{m}} {{= if(n > 2, 1, 0) | pick:+,}} {{= if(n > 2, m, 1) | coef}} {{= if(n > 3, 1, 0) | pick:+,}} {{= if(n > 3, m, 1) | coef}} {{= if(n > 4, 1, 0) | pick:+,}} {{= if(n > 4, m, 1) | coef}} = {{n}} \\cdot {{m}} = {{= m*n}}$"
       },
       {
         "kind": "answer",

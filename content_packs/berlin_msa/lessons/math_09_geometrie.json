@@ -244,15 +244,15 @@
       },
       {
         "kind": "steps",
-        "title": "Dreieck konstruieren (z. B. c = 10 cm, α = 40°, a = 7 cm)",
-        "body": "1. Seite $c$ mit dem Lineal zeichnen, Endpunkte $A$ und $B$.\n2. Bei $A$ den Winkel $\\alpha = 40°$ mit dem Geodreieck abmessen, Hilfslinie zeichnen.\n3. Um $B$ einen Kreisbogen mit dem Zirkel, Radius $a = 7$ cm.\n4. Schnittpunkt mit der Hilfslinie ist $C$ — Strecken ergänzen, Ecken beschriften.\n\nStrecken: Lineal. Winkel: Geodreieck. Längen abtragen: Zirkel.",
+        "title": "Dreieck konstruieren (z. B. c = 7 cm, α = 40°, a = 10 cm)",
+        "body": "1. Seite $c$ mit dem Lineal zeichnen, Endpunkte $A$ und $B$.\n2. Bei $A$ den Winkel $\\alpha = 40°$ mit dem Geodreieck abmessen, Hilfslinie zeichnen.\n3. Um $B$ einen Kreisbogen mit dem Zirkel, Radius $a = 10$ cm.\n4. Schnittpunkt mit der Hilfslinie ist $C$ — Strecken ergänzen, Ecken beschriften.\n\nStrecken: Lineal. Winkel: Geodreieck. Längen abtragen: Zirkel.",
         "figure": {
           "type": "triangle",
           "alpha": 40,
-          "beta": 73.3,
+          "beta": 113.3,
           "labels": {
-            "c": "c = 10 cm",
-            "a": "a = 7 cm",
+            "c": "c = 7 cm",
+            "a": "a = 10 cm",
             "alpha": "α = 40°"
           }
         }

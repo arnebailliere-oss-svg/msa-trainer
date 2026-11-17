@@ -1,0 +1,1879 @@
+[
+ {
+  "id": "MSA2023_5C_DOSE_ABFALL",
+  "why": "Loss is (800 - 192·π) : 800 = 24.60 %, so the key rounded to one decimal is 24.6, not 24.5.",
+  "ops": [
+   {
+    "op": "key",
+    "set": {
+     "value": 24.6
+    }
+   }
+  ]
+ },
+ {
+  "id": "MSA2023_5C_DOSE_ABFALL",
+  "why": "The explanation answered a 25 % requirement that the task never states; sentence removed.",
+  "ops": [
+   {
+    "op": "section",
+    "index": 0,
+    "body": "1. Ein Deckel hat den Durchmesser 8 cm. Auf 100 cm passen $100 : 8 = 12{,}5$, also **12** ganze Deckel.\n2. Fläche eines Deckels: $\\pi \\cdot 4^2 \\approx 50{,}3\\,\\text{cm}^2$. Für 12 Deckel sind das etwa $603{,}2\\,\\text{cm}^2$.\n3. Fläche des Streifens: $8 \\cdot 100 = 800\\,\\text{cm}^2$\n4. Verlust: $\\frac{800 - 603{,}2}{800} \\approx 24{,}6\\,\\%$"
+   },
+   {
+    "op": "section",
+    "index": 1,
+    "body": "≈ 24,6 %"
+   }
+  ]
+ },
+ {
+  "id": "MSA2023_2A_TRAPEZ_WINKEL",
+  "why": "The two angles on one leg of a trapezium are not 'Nebenwinkel'; wrong term replaced by the plain rule.",
+  "ops": [
+   {
+    "op": "replace",
+    "in": "explanation",
+    "from": "(Oder: Nebenwinkel an den Parallelen: $180° - 56° = 124°$.)",
+    "to": "(Oder: Die beiden Winkel an einem Schenkel ergeben zusammen 180°, weil die Grundseiten parallel sind: $180° - 56° = 124°$.)"
+   }
+  ]
+ },
+ {
+  "id": "MSA2025_7B_BAKTERIEN_24H",
+  "why": "1.4^24 is about 3214, not 3217.",
+  "ops": [
+   {
+    "op": "replace",
+    "in": "explanation",
+    "from": "80 \\cdot 3217",
+    "to": "80 \\cdot 3214"
+   }
+  ]
+ },
+ {
+  "id": "MATH_NUM_FRAC_BASIC_002",
+  "why": "18 : 6 is 3, not 6.",
+  "ops": [
+   {
+    "op": "section",
+    "index": 2,
+    "body": "12/18 = ?\n\nWelche Zahl passt in 12 und in 18?\nDie 6 passt.\n\n12 : 6 = 2\n18 : 6 = 3\n\nAlso: 12/18 = 2/3"
+   }
+  ]
+ },
+ {
+  "id": "MATH_NUM_FRAC_BASIC_002",
+  "why": "A section had only a capitalised heading and no text; the note is now the body.",
+  "ops": [
+   {
+    "op": "section",
+    "index": 4,
+    "kind": "mistake",
+    "title": "Achtung",
+    "body": "4/6 und 6/9 haben zwar denselben Wert wie 12/18, sind aber nicht vollständig gekürzt.\nBeide lassen sich noch weiter kürzen, bis 2/3 herauskommt."
+   }
+  ]
+ },
+ {
+  "id": "MATH_ALG_BRACKETS_001",
+  "why": "x is not 'no number'; it stands for a number we do not know yet.",
+  "ops": [
+   {
+    "op": "section",
+    "index": 1,
+    "title": "Was ist x",
+    "body": "x ist ein Buchstabe. Er steht für eine Zahl, die wir noch nicht kennen.\nDeshalb bleibt x stehen. Wir rechnen es nicht aus."
+   }
+  ]
+ },
+ {
+  "id": "MATH_ALG_BRACKETS_001",
+  "why": "Explanation shouted in capitals; rewritten in plain sentences.",
+  "ops": [
+   {
+    "op": "explanation",
+    "sections": [
+     {
+      "kind": "what",
+      "title": "Was bedeutet das",
+      "body": "„Vereinfache“ heißt: Schreib es kürzer, ohne die Klammer."
+     },
+     {
+      "kind": "text",
+      "title": "Was ist x",
+      "body": "x ist ein Buchstabe. Er steht für eine Zahl, die wir noch nicht kennen.\nDeshalb bleibt x stehen. Wir rechnen es nicht aus."
+     },
+     {
+      "kind": "text",
+      "title": "Stell dir vor",
+      "body": "x ist eine Kiste. Wir wissen nicht, was darin ist.\n3(x + 2) bedeutet: 3 mal (1 Kiste und 2 Äpfel).\nDas sind 3 Kisten und 6 Äpfel.\nAlso: 3x + 6"
+     },
+     {
+      "kind": "steps",
+      "title": "So geht's",
+      "body": "Schritt 1: 3 · x = 3x (drei Kisten)\nSchritt 2: 3 · 2 = 6 (sechs Äpfel)\nSchritt 3: Zusammen: 3x + 6"
+     },
+     {
+      "kind": "mistake",
+      "title": "Typischer Fehler",
+      "body": "Viele rechnen nur 3 · 2 = 6 und vergessen das x.\nFalsch: 6 (nur die Äpfel)\nRichtig: 3x + 6 (Kisten und Äpfel)"
+     },
+     {
+      "kind": "answer",
+      "title": "Antwort",
+      "body": "3x+6"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "MATH_ALG_BRACKETS_002",
+  "why": "'Minus vergessen' did not match the example 5a - 3; both typical mistakes are now named correctly.",
+  "ops": [
+   {
+    "op": "section",
+    "index": 3,
+    "title": "Typische Fehler",
+    "body": "Die 5 nur mit dem a multiplizieren.\nFalsch: 5a - 3 (die 3 wurde nicht mit 5 multipliziert)\nFalsch: 5a + 15 (das Minus ist verloren gegangen)\nRichtig: 5a - 15"
+   }
+  ]
+ },
+ {
+  "id": "MATH_ALG_BRACKETS_002",
+  "why": "Explanation shouted in capitals; rewritten in plain sentences.",
+  "ops": [
+   {
+    "op": "explanation",
+    "sections": [
+     {
+      "kind": "what",
+      "title": "Was bedeutet das",
+      "body": "Die 5 muss mit jedem Teil in der Klammer multipliziert werden."
+     },
+     {
+      "kind": "text",
+      "title": "Stell dir vor",
+      "body": "a ist eine Kiste.\n5(a - 3) bedeutet: 5 mal (1 Kiste minus 3 Äpfel)."
+     },
+     {
+      "kind": "steps",
+      "title": "So geht's",
+      "body": "Schritt 1: 5 · a = 5a\nSchritt 2: 5 · (-3) = -15 (Achtung: Das Minus bleibt.)\nSchritt 3: Zusammen: 5a - 15"
+     },
+     {
+      "kind": "mistake",
+      "title": "Typische Fehler",
+      "body": "Die 5 nur mit dem a multiplizieren.\nFalsch: 5a - 3 (die 3 wurde nicht mit 5 multipliziert)\nFalsch: 5a + 15 (das Minus ist verloren gegangen)\nRichtig: 5a - 15"
+     },
+     {
+      "kind": "answer",
+      "title": "Antwort",
+      "body": "5a - 15"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "MATH_GEO_AREA_BASIC_003",
+  "why": "A triangle is not in general half a rectangle made by doubling it; it has half the area of the rectangle with sides g and h.",
+  "ops": [
+   {
+    "op": "section",
+    "index": 3,
+    "title": "Warum geteilt durch 2",
+    "body": "Ein Dreieck ist halb so groß wie das Rechteck mit der Länge g und der Breite h."
+   },
+   {
+    "op": "section",
+    "index": 5,
+    "body": "Zeichne um das Dreieck ein Rechteck mit den Seiten 10 cm und 6 cm.\nDas Rechteck hat 60 cm².\nDas Dreieck füllt genau die Hälfte davon aus, also 30 cm²."
+   }
+  ]
+ },
+ {
+  "id": "MATH_NUM_PCT_BASIC_004",
+  "why": "Noun 'Trick' must be capitalised in the heading.",
+  "ops": [
+   {
+    "op": "section",
+    "index": 1,
+    "title": "Super-Trick"
+   }
+  ]
+ },
+ {
+  "id": "MATH_NUM_PCT_BASIC_003",
+  "why": "Explanation shouted in capitals; rewritten in plain sentences.",
+  "ops": [
+   {
+    "op": "explanation",
+    "sections": [
+     {
+      "kind": "what",
+      "title": "Was ist das",
+      "body": "Wir suchen einen Teil (25 %) von einer Zahl (200)."
+     },
+     {
+      "kind": "remember",
+      "title": "Trick für 25 %",
+      "body": "25 % sind ein Viertel."
+     },
+     {
+      "kind": "steps",
+      "title": "Rechnung",
+      "body": "Methode 1 (Viertel): 200 : 4 = 50\n\nMethode 2 (Formel):\n1. 25 % = 0,25\n2. 0,25 · 200 = 50"
+     },
+     {
+      "kind": "text",
+      "title": "Vorstellung",
+      "body": "Du hast 200 Gummibärchen.\n25 % bedeutet: jedes 4. Gummibärchen.\nDas sind 50 Gummibärchen."
+     },
+     {
+      "kind": "answer",
+      "title": "Antwort",
+      "body": "50"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "MATH_NUM_PCT_BASIC_004",
+  "why": "Explanation shouted in capitals; rewritten in plain sentences.",
+  "ops": [
+   {
+    "op": "explanation",
+    "sections": [
+     {
+      "kind": "what",
+      "title": "Was ist das",
+      "body": "50 % sind die Hälfte."
+     },
+     {
+      "kind": "remember",
+      "title": "Super-Trick",
+      "body": "50 % bedeutet: geteilt durch 2."
+     },
+     {
+      "kind": "steps",
+      "title": "Rechnung",
+      "body": "84 : 2 = 42"
+     },
+     {
+      "kind": "text",
+      "title": "Vorstellung",
+      "body": "Du hast 84 Süßigkeiten.\n50 % davon sind die Hälfte.\nDas sind 42 Süßigkeiten."
+     },
+     {
+      "kind": "mistake",
+      "title": "Merke dir",
+      "body": "• 50 % = die Hälfte (geteilt durch 2)\n• 25 % = ein Viertel (geteilt durch 4)\n• 10 % = ein Zehntel (geteilt durch 10)"
+     },
+     {
+      "kind": "answer",
+      "title": "Antwort",
+      "body": "42"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "MATH_NUM_PCT_BASIC_005",
+  "why": "Explanation shouted in capitals; rewritten in plain sentences.",
+  "ops": [
+   {
+    "op": "explanation",
+    "sections": [
+     {
+      "kind": "what",
+      "title": "Was ist das",
+      "body": "10 % sind ein Zehntel."
+     },
+     {
+      "kind": "remember",
+      "title": "Super-Trick für 10 %",
+      "body": "Schiebe das Komma um eine Stelle nach links.\nAus 350 wird 35,0. Das ist 35."
+     },
+     {
+      "kind": "steps",
+      "title": "Rechnung",
+      "body": "350 : 10 = 35\n\nOder: 0,1 · 350 = 35"
+     },
+     {
+      "kind": "mistake",
+      "title": "Merke",
+      "body": "10 %: Komma eine Stelle nach links\n1 %: Komma zwei Stellen nach links"
+     },
+     {
+      "kind": "answer",
+      "title": "Antwort",
+      "body": "35"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "MATH_NUM_PCT_BASIC_006",
+  "why": "Explanation shouted in capitals; rewritten in plain sentences.",
+  "ops": [
+   {
+    "op": "explanation",
+    "sections": [
+     {
+      "kind": "what",
+      "title": "Was ist das",
+      "body": "Wir berechnen, wie viel Geld wir sparen (den Rabatt in Euro)."
+     },
+     {
+      "kind": "terms",
+      "title": "Die Begriffe",
+      "body": "• Rabatt = Preisnachlass, Ersparnis\n• 15 % Rabatt = du zahlst 15 % weniger"
+     },
+     {
+      "kind": "steps",
+      "title": "Rechnung",
+      "body": "1. 15 % = 0,15\n2. Rabatt = 0,15 · 400 € = 60 €"
+     },
+     {
+      "kind": "text",
+      "title": "Schritt für Schritt",
+      "body": "10 % von 400 € = 40 €\n5 % von 400 € = 20 € (die Hälfte von 10 %)\n15 % = 10 % + 5 % = 40 € + 20 € = 60 €"
+     },
+     {
+      "kind": "mistake",
+      "title": "Achtung",
+      "body": "Gefragt ist nach dem Rabatt, nicht nach dem Endpreis."
+     },
+     {
+      "kind": "answer",
+      "title": "Antwort",
+      "body": "60€ Rabatt"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "MATH_NUM_PCT_BASIC_007",
+  "why": "Explanation shouted in capitals; rewritten in plain sentences.",
+  "ops": [
+   {
+    "op": "explanation",
+    "sections": [
+     {
+      "kind": "what",
+      "title": "Was ist das",
+      "body": "Wir suchen den Prozentsatz p. Das heißt: Welcher Anteil von 120 ist 30?"
+     },
+     {
+      "kind": "terms",
+      "title": "Die Begriffe",
+      "body": "• W = Prozentwert (30), der Teil\n• G = Grundwert (120), das Ganze\n• p = Prozentsatz, das suchen wir"
+     },
+     {
+      "kind": "formula",
+      "title": "Die Formel",
+      "body": "p = W : G · 100\np = 30 : 120 · 100"
+     },
+     {
+      "kind": "steps",
+      "title": "Rechnung",
+      "body": "1. Teilen: 30 : 120 = 0,25\n2. In Prozent: 0,25 · 100 = 25 %"
+     },
+     {
+      "kind": "text",
+      "title": "Vorstellung",
+      "body": "In der Schule sind 120 Schüler.\n30 Schüler spielen Fußball.\nDas sind 25 %, also ein Viertel der Schüler."
+     },
+     {
+      "kind": "answer",
+      "title": "Antwort",
+      "body": "25%"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "MATH_NUM_PCT_BASIC_008",
+  "why": "Explanation shouted in capitals; rewritten in plain sentences.",
+  "ops": [
+   {
+    "op": "explanation",
+    "sections": [
+     {
+      "kind": "what",
+      "title": "Was ist das",
+      "body": "Wir suchen den Grundwert G. Das ist die ursprüngliche Zahl."
+     },
+     {
+      "kind": "terms",
+      "title": "Die Begriffe",
+      "body": "• W = Prozentwert (45), der Teil, den wir kennen\n• p = Prozentsatz (20 %)\n• G = Grundwert, das suchen wir"
+     },
+     {
+      "kind": "formula",
+      "title": "Die Formel",
+      "body": "G = W : p · 100\nG = 45 : 20 · 100"
+     },
+     {
+      "kind": "steps",
+      "title": "Rechnung",
+      "body": "1. 45 : 20 = 2,25\n2. 2,25 · 100 = 225"
+     },
+     {
+      "kind": "text",
+      "title": "Probe",
+      "body": "20 % von 225 = 0,2 · 225 = 45 ✓"
+     },
+     {
+      "kind": "remember",
+      "title": "Denkweise",
+      "body": "45 sind 20 %, also ein Fünftel.\nDann ist das Ganze 5 · 45 = 225."
+     },
+     {
+      "kind": "answer",
+      "title": "Antwort",
+      "body": "G = 225"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "MATH_NUM_PCT_CHANGE_001",
+  "why": "Explanation shouted in capitals; rewritten in plain sentences.",
+  "ops": [
+   {
+    "op": "explanation",
+    "sections": [
+     {
+      "kind": "what",
+      "title": "Was ist das",
+      "body": "Prozentuale Änderung: Um wie viel Prozent hat sich etwas verändert?"
+     },
+     {
+      "kind": "terms",
+      "title": "Die Begriffe",
+      "body": "• Alter Wert = Startwert (50 €)\n• Neuer Wert = Endwert (60 €)\n• Änderung = Unterschied zwischen beiden"
+     },
+     {
+      "kind": "formula",
+      "title": "Die Formel",
+      "body": "Änderung in % = (Neu - Alt) : Alt · 100\nImmer durch den alten Wert teilen."
+     },
+     {
+      "kind": "steps",
+      "title": "Rechnung",
+      "body": "1. Änderung: 60 € - 50 € = 10 €\n2. Durch den alten Wert teilen: 10 : 50 = 0,2\n3. In Prozent: 0,2 · 100 = 20 %"
+     },
+     {
+      "kind": "mistake",
+      "title": "Achtung",
+      "body": "Nicht durch 60 teilen."
+     },
+     {
+      "kind": "answer",
+      "title": "Antwort",
+      "body": "20%"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "MATH_NUM_PCT_CHANGE_002",
+  "why": "Explanation shouted in capitals; rewritten in plain sentences.",
+  "ops": [
+   {
+    "op": "explanation",
+    "sections": [
+     {
+      "kind": "what",
+      "title": "Was ist das",
+      "body": "Prozentuale Abnahme: Um wie viel Prozent ist etwas weniger geworden?"
+     },
+     {
+      "kind": "terms",
+      "title": "Die Begriffe",
+      "body": "• Alter Preis = 80 € (vorher)\n• Neuer Preis = 60 € (nachher)\n• Reduzierung = um wie viel es weniger wurde"
+     },
+     {
+      "kind": "formula",
+      "title": "Die Formel",
+      "body": "Abnahme in % = (Alt - Neu) : Alt · 100\nImmer durch den alten Wert teilen."
+     },
+     {
+      "kind": "steps",
+      "title": "Rechnung",
+      "body": "1. Differenz: 80 € - 60 € = 20 €\n2. Durch den alten Wert teilen: 20 : 80 = 0,25\n3. In Prozent: 0,25 · 100 = 25 %"
+     },
+     {
+      "kind": "mistake",
+      "title": "Achtung",
+      "body": "Nicht durch 60 teilen."
+     },
+     {
+      "kind": "answer",
+      "title": "Antwort",
+      "body": "25% Reduzierung"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "MATH_NUM_PCT_CHANGE_003",
+  "why": "Explanation shouted in capitals; rewritten in plain sentences.",
+  "ops": [
+   {
+    "op": "explanation",
+    "sections": [
+     {
+      "kind": "what",
+      "title": "Was ist das",
+      "body": "Wir berechnen den neuen Preis nach einer Erhöhung."
+     },
+     {
+      "kind": "terms",
+      "title": "Die Begriffe",
+      "body": "• Alter Preis = 40 €\n• Erhöhung = 10 %\n• Neuer Preis = das suchen wir"
+     },
+     {
+      "kind": "steps",
+      "title": "Rechnung",
+      "body": "Schritt 1: Erhöhung berechnen\n10 % von 40 € = 0,1 · 40 € = 4 €\n\nSchritt 2: Zum alten Preis addieren\n40 € + 4 € = 44 €"
+     },
+     {
+      "kind": "remember",
+      "title": "Schnellere Methode",
+      "body": "100 % + 10 % = 110 %\n110 % von 40 € = 1,1 · 40 € = 44 €"
+     },
+     {
+      "kind": "answer",
+      "title": "Antwort",
+      "body": "44€"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "MATH_NUM_FRAC_OPS_001",
+  "why": "Explanation shouted in capitals; rewritten in plain sentences.",
+  "ops": [
+   {
+    "op": "explanation",
+    "sections": [
+     {
+      "kind": "what",
+      "title": "Was ist das",
+      "body": "Brüche mit gleichem Nenner addieren."
+     },
+     {
+      "kind": "formula",
+      "title": "Die Regel",
+      "body": "Bei gleichem Nenner: Die Zähler addieren. Der Nenner bleibt."
+     },
+     {
+      "kind": "steps",
+      "title": "Rechnung",
+      "body": "1/4 + 2/4\n= (1+2)/4\n= 3/4"
+     },
+     {
+      "kind": "text",
+      "title": "Vorstellung",
+      "body": "Eine Pizza hat 4 Stücke.\nDu nimmst 1 Stück und 2 Stücke. Das sind 3 Stücke.\nDas sind 3/4 der Pizza."
+     },
+     {
+      "kind": "mistake",
+      "title": "Typischer Fehler",
+      "body": "Die Nenner nicht addieren.\nFalsch: 1/4 + 2/4 = 3/8\nRichtig: 1/4 + 2/4 = 3/4"
+     },
+     {
+      "kind": "answer",
+      "title": "Antwort",
+      "body": "3/4"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "MATH_NUM_FRAC_OPS_002",
+  "why": "Explanation shouted in capitals; rewritten in plain sentences.",
+  "ops": [
+   {
+    "op": "explanation",
+    "sections": [
+     {
+      "kind": "what",
+      "title": "Was ist das",
+      "body": "Brüche mit verschiedenem Nenner addieren."
+     },
+     {
+      "kind": "formula",
+      "title": "Die Regel",
+      "body": "Bei verschiedenen Nennern: Zuerst gleichnamig machen."
+     },
+     {
+      "kind": "steps",
+      "title": "Rechnung",
+      "body": "1/2 + 1/4\n\nSchritt 1: Gemeinsamen Nenner finden\nFür 2 und 4 ist der gemeinsame Nenner 4.\n\nSchritt 2: Erweitern\n1/2 = 2/4 (oben und unten mal 2)\n\nSchritt 3: Addieren\n2/4 + 1/4 = 3/4"
+     },
+     {
+      "kind": "text",
+      "title": "Vorstellung",
+      "body": "1/2 Pizza = 2/4 Pizza\nDazu kommt 1/4 Pizza.\nZusammen sind das 3/4 Pizza."
+     },
+     {
+      "kind": "answer",
+      "title": "Antwort",
+      "body": "3/4"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "MATH_NUM_FRAC_OPS_003",
+  "why": "Explanation shouted in capitals; rewritten in plain sentences.",
+  "ops": [
+   {
+    "op": "explanation",
+    "sections": [
+     {
+      "kind": "what",
+      "title": "Was ist das",
+      "body": "Brüche multiplizieren."
+     },
+     {
+      "kind": "formula",
+      "title": "Die Regel",
+      "body": "Zähler mal Zähler\nNenner mal Nenner"
+     },
+     {
+      "kind": "steps",
+      "title": "Rechnung",
+      "body": "2/3 · 3/4\n= (2 · 3)/(3 · 4)\n= 6/12\n= 1/2 (gekürzt)"
+     },
+     {
+      "kind": "remember",
+      "title": "Trick",
+      "body": "Vorher kürzen spart Arbeit.\n2/3 · 3/4\nDie 3 oben und die 3 unten kürzen sich weg.\nEs bleibt 2/4 = 1/2."
+     },
+     {
+      "kind": "text",
+      "title": "Vorstellung",
+      "body": "2/3 von 3/4 einer Pizza\nsind die Hälfte der Pizza."
+     },
+     {
+      "kind": "answer",
+      "title": "Antwort",
+      "body": "1/2"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "MATH_ALG_BRACKETS_003",
+  "why": "Explanation shouted in capitals; rewritten in plain sentences.",
+  "ops": [
+   {
+    "op": "explanation",
+    "sections": [
+     {
+      "kind": "what",
+      "title": "Was bedeutet das",
+      "body": "Zuerst die Klammer auflösen, dann vereinfachen."
+     },
+     {
+      "kind": "steps",
+      "title": "So geht's",
+      "body": "Schritt 1: Klammer auflösen\n2 · 3x = 6x\n2 · 4 = 8\nAlso: 2(3x + 4) = 6x + 8\n\nSchritt 2: 5 abziehen\n6x + 8 - 5 = 6x + 3"
+     },
+     {
+      "kind": "text",
+      "title": "Vorstellung",
+      "body": "2 mal (3 Kisten + 4 Äpfel) minus 5 Äpfel\n= 6 Kisten + 8 Äpfel - 5 Äpfel\n= 6 Kisten + 3 Äpfel\n= 6x + 3"
+     },
+     {
+      "kind": "mistake",
+      "title": "Reihenfolge",
+      "body": "1. Zuerst die Klammer auflösen.\n2. Dann addieren oder subtrahieren."
+     },
+     {
+      "kind": "answer",
+      "title": "Antwort",
+      "body": "6x+3"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "MATH_ALG_TERMS_SIMPLIFY_001",
+  "why": "Explanation shouted in capitals; rewritten in plain sentences.",
+  "ops": [
+   {
+    "op": "explanation",
+    "sections": [
+     {
+      "kind": "what",
+      "title": "Was bedeutet das",
+      "body": "Gleiche Variablen zusammenfassen."
+     },
+     {
+      "kind": "text",
+      "title": "Vorstellung",
+      "body": "4x = 4 Kisten\n3x = 3 Kisten\n4 Kisten + 3 Kisten = 7 Kisten = 7x"
+     },
+     {
+      "kind": "formula",
+      "title": "Die Regel",
+      "body": "Nur gleiche Buchstaben dürfen addiert werden.\n\n• 4x + 3x = 7x ✓\n• 4x + 3y = 4x + 3y (bleibt so)"
+     },
+     {
+      "kind": "mistake",
+      "title": "Typische Fehler",
+      "body": "Falsch: 4x + 3x = 12x (multipliziert statt addiert)\nFalsch: 4x + 3x = 7x² (x² ist etwas anderes)\nRichtig: 4x + 3x = 7x"
+     },
+     {
+      "kind": "answer",
+      "title": "Antwort",
+      "body": "7x"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "MATH_ALG_TERMS_SIMPLIFY_002",
+  "why": "Explanation shouted in capitals; rewritten in plain sentences.",
+  "ops": [
+   {
+    "op": "explanation",
+    "sections": [
+     {
+      "kind": "what",
+      "title": "Was bedeutet das",
+      "body": "Gleiche Variablen subtrahieren."
+     },
+     {
+      "kind": "text",
+      "title": "Vorstellung",
+      "body": "8a = 8 Äpfel\n3a = 3 Äpfel\n8 Äpfel - 3 Äpfel = 5 Äpfel = 5a"
+     },
+     {
+      "kind": "steps",
+      "title": "Rechnung",
+      "body": "8a - 3a = (8-3)a = 5a"
+     },
+     {
+      "kind": "remember",
+      "title": "Merke",
+      "body": "Die Zahl vor dem Buchstaben heißt Koeffizient.\n8 - 3 = 5, der Buchstabe bleibt."
+     },
+     {
+      "kind": "answer",
+      "title": "Antwort",
+      "body": "5a"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "MATH_ALG_EQU_LINEAR_002",
+  "why": "Heading shouted in capitals; explanation rewritten in plain sentences.",
+  "ops": [
+   {
+    "op": "explanation",
+    "sections": [
+     {
+      "kind": "what",
+      "title": "Was ist das",
+      "body": "Einfache Gleichung: x soll allein stehen."
+     },
+     {
+      "kind": "formula",
+      "title": "Die Regel (Waage)",
+      "body": "Was auf einer Seite passiert, muss auch auf der anderen passieren."
+     },
+     {
+      "kind": "text",
+      "title": "Vorstellung",
+      "body": "Eine Waage ist im Gleichgewicht:\n[x + 7] = [12]\n\nWenn ich links 7 wegnehme, muss ich rechts auch 7 wegnehmen."
+     },
+     {
+      "kind": "steps",
+      "title": "Rechnung",
+      "body": "x + 7 = 12    | -7 auf beiden Seiten\nx = 12 - 7\nx = 5"
+     },
+     {
+      "kind": "text",
+      "title": "Probe",
+      "body": "5 + 7 = 12 ✓"
+     },
+     {
+      "kind": "answer",
+      "title": "Antwort",
+      "body": "x = 5"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "MATH_ALG_EQU_LINEAR_005",
+  "why": "Explanation shouted in capitals; rewritten in plain sentences.",
+  "ops": [
+   {
+    "op": "explanation",
+    "sections": [
+     {
+      "kind": "what",
+      "title": "Was ist das",
+      "body": "Gleichung mit x auf beiden Seiten."
+     },
+     {
+      "kind": "formula",
+      "title": "Strategie",
+      "body": "1. Alle x auf eine Seite bringen\n2. Alle Zahlen auf die andere Seite bringen\n3. Durch die Zahl vor x teilen"
+     },
+     {
+      "kind": "steps",
+      "title": "Rechnung",
+      "body": "5x + 3 = 3x + 11    | -3x auf beiden Seiten\n2x + 3 = 11         | -3 auf beiden Seiten\n2x = 8              | :2 auf beiden Seiten\nx = 4"
+     },
+     {
+      "kind": "text",
+      "title": "Vorstellung",
+      "body": "Links: 5 Kisten + 3 Äpfel\nRechts: 3 Kisten + 11 Äpfel\nDie Waage ist im Gleichgewicht."
+     },
+     {
+      "kind": "text",
+      "title": "Probe",
+      "body": "Links: 5 · 4 + 3 = 23\nRechts: 3 · 4 + 11 = 23 ✓"
+     },
+     {
+      "kind": "answer",
+      "title": "Antwort",
+      "body": "x = 4"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "MATH_FUNC_LINEAR_FORM_001",
+  "why": "Explanation shouted in capitals; rewritten in plain sentences without arrows.",
+  "ops": [
+   {
+    "op": "explanation",
+    "sections": [
+     {
+      "kind": "what",
+      "title": "Was ist das",
+      "body": "Lineare Funktion: eine Gerade im Koordinatensystem."
+     },
+     {
+      "kind": "terms",
+      "title": "Die Begriffe",
+      "body": "• y = der y-Wert (hoch oder runter)\n• x = der x-Wert (links oder rechts)\n• m = Steigung (wie steil ist die Gerade?)\n• b = y-Achsenabschnitt (wo kreuzt die Gerade die y-Achse?)"
+     },
+     {
+      "kind": "formula",
+      "title": "Die Formel",
+      "body": "y = m·x + b\nHier: y = 2x - 3, also m = 2 und b = -3"
+     },
+     {
+      "kind": "text",
+      "title": "Wo steht was",
+      "body": "• m steht direkt vor dem x, hier: 2\n• b steht ohne x, hier: -3"
+     },
+     {
+      "kind": "answer",
+      "title": "Antwort",
+      "body": "m = 2"
+     },
+     {
+      "kind": "remember",
+      "title": "Das bedeutet",
+      "body": "Geht x um 1 nach rechts, geht y um 2 nach oben."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "MATH_FUNC_LINEAR_FORM_003",
+  "why": "Explanation shouted in capitals; rewritten in plain sentences without arrows.",
+  "ops": [
+   {
+    "op": "explanation",
+    "sections": [
+     {
+      "kind": "what",
+      "title": "Was ist das",
+      "body": "Funktionswert berechnen: x einsetzen und y ausrechnen."
+     },
+     {
+      "kind": "terms",
+      "title": "Die Begriffe",
+      "body": "• x = 3 ist der Eingabewert\n• y = ? ist der Ausgabewert (den suchen wir)"
+     },
+     {
+      "kind": "steps",
+      "title": "Rechnung",
+      "body": "y = 2x + 1\ny = 2 · 3 + 1\ny = 6 + 1\ny = 7"
+     },
+     {
+      "kind": "text",
+      "title": "Vorstellung",
+      "body": "Die Funktion ist wie eine Maschine:\nDu gibst 3 hinein. Die Maschine verdoppelt die Zahl und addiert 1. Heraus kommt 7."
+     },
+     {
+      "kind": "text",
+      "title": "Als Punkt",
+      "body": "Der Punkt (3|7) liegt auf der Geraden."
+     },
+     {
+      "kind": "answer",
+      "title": "Antwort",
+      "body": "y = 7"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "MATH_GEO_CIRCLE_002",
+  "why": "Explanation shouted in capitals; rewritten in plain sentences.",
+  "ops": [
+   {
+    "op": "explanation",
+    "sections": [
+     {
+      "kind": "what",
+      "title": "Was ist das",
+      "body": "Kreisfläche: Wie viel Platz ist im Kreis?"
+     },
+     {
+      "kind": "terms",
+      "title": "Die Begriffe",
+      "body": "• r = Radius (von der Mitte zum Rand) = 5 cm\n• π (Pi) ≈ 3,14\n• r² = r · r (Radius zum Quadrat)"
+     },
+     {
+      "kind": "formula",
+      "title": "Die Formel",
+      "body": "A = π · r²"
+     },
+     {
+      "kind": "steps",
+      "title": "Rechnung",
+      "body": "1. r² berechnen: 5² = 5 · 5 = 25\n2. Mit π multiplizieren: 3,14 · 25 = 78,5 cm²"
+     },
+     {
+      "kind": "mistake",
+      "title": "Achtung",
+      "body": "Zuerst r² ausrechnen, dann mit π multiplizieren.\nNicht: (π · r)²"
+     },
+     {
+      "kind": "remember",
+      "title": "Merke",
+      "body": "• Umfang: 2πr (r einfach)\n• Fläche: πr² (r zum Quadrat)"
+     },
+     {
+      "kind": "answer",
+      "title": "Antwort",
+      "body": "78,5 cm²"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "MATH_GEO_PYTH_001",
+  "why": "Explanation shouted in capitals; rewritten in plain sentences without arrows.",
+  "ops": [
+   {
+    "op": "explanation",
+    "sections": [
+     {
+      "kind": "what",
+      "title": "Was ist das",
+      "body": "Satz des Pythagoras: Er hilft, die fehlende Seite in einem rechtwinkligen Dreieck zu finden."
+     },
+     {
+      "kind": "terms",
+      "title": "Die Begriffe",
+      "body": "• Rechtwinkliges Dreieck = hat einen Winkel von 90°\n• Katheten (a, b) = die zwei kurzen Seiten am rechten Winkel\n• Hypotenuse (c) = die längste Seite, gegenüber vom rechten Winkel"
+     },
+     {
+      "kind": "formula",
+      "title": "Die Formel",
+      "body": "a² + b² = c²\n6² + 8² = c²"
+     },
+     {
+      "kind": "steps",
+      "title": "Rechnung",
+      "body": "1. Quadrate: 6² = 36 und 8² = 64\n2. Addieren: 36 + 64 = 100\n3. Wurzel: c = √100 = 10"
+     },
+     {
+      "kind": "answer",
+      "title": "Antwort",
+      "body": "c = 10 cm"
+     },
+     {
+      "kind": "remember",
+      "title": "Merke",
+      "body": "3-4-5 und 6-8-10 sind bekannte Dreiecke."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "MATH_GEO_PYTH_002",
+  "why": "Explanation shouted in capitals; rewritten in plain sentences.",
+  "ops": [
+   {
+    "op": "explanation",
+    "sections": [
+     {
+      "kind": "what",
+      "title": "Was ist das",
+      "body": "Eine Kathete berechnen, wenn die Hypotenuse gegeben ist."
+     },
+     {
+      "kind": "terms",
+      "title": "Die Begriffe",
+      "body": "• a = Kathete (5 cm), bekannt\n• c = Hypotenuse (13 cm), bekannt\n• b = Kathete, das suchen wir"
+     },
+     {
+      "kind": "formula",
+      "title": "Die Formel (umgestellt)",
+      "body": "a² + b² = c²\nb² = c² - a²\nb = √(c² - a²)"
+     },
+     {
+      "kind": "steps",
+      "title": "Rechnung",
+      "body": "1. c² = 13² = 169\n2. a² = 5² = 25\n3. b² = 169 - 25 = 144\n4. b = √144 = 12"
+     },
+     {
+      "kind": "mistake",
+      "title": "Achtung",
+      "body": "Bei der Kathete: minus (c² - a²)\nBei der Hypotenuse: plus (a² + b²)"
+     },
+     {
+      "kind": "remember",
+      "title": "Merke",
+      "body": "5-12-13 ist ein bekanntes Dreieck."
+     },
+     {
+      "kind": "answer",
+      "title": "Antwort",
+      "body": "b = 12 cm"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "MATH_GEO_CIRCLE_004",
+  "why": "Decision: circumference changed to 37,7 cm so that r is 6,00 cm and the key 113 cm² is correct.",
+  "ops": [
+   {
+    "op": "prompt",
+    "text": "Ein Kreis hat den Umfang U = 37,7 cm. Wie groß ist der Flächeninhalt A? (Runde auf ganze Zahl)"
+   },
+   {
+    "op": "section",
+    "index": 1,
+    "body": "Radius finden\nAus U = 2 · π · r folgt: r = U : (2 · π)\nr = 37,7 : (2 · π) ≈ 37,7 : 6,283 ≈ 6 cm"
+   },
+   {
+    "op": "section",
+    "index": 2,
+    "body": "Fläche berechnen\nA = π · r²\nA = π · 6² = π · 36\nA ≈ 113,1 cm² ≈ 113 cm²"
+   }
+  ]
+ },
+ {
+  "id": "MATH_GEO_PYTH_MSA2022_001",
+  "why": "The choice 'opposite the hypotenuse is the right angle' was also true; replaced by a false statement.",
+  "ops": [
+   {
+    "op": "choices",
+    "choices": [
+     "Der Flächeninhalt des Hypotenusenquadrates ist gleich der Summe der beiden Kathetenquadrate",
+     "Gegenüber einer Kathete befindet sich der rechte Winkel",
+     "c - a = b",
+     "Die Hypotenuse ist die kürzeste Seite"
+    ],
+    "correct": "Der Flächeninhalt des Hypotenusenquadrates ist gleich der Summe der beiden Kathetenquadrate"
+   }
+  ]
+ },
+ {
+  "id": "MATH_GEO_PYTH_MSA2022_001",
+  "why": "The explanation called a true statement false; the list of wrong answers now matches the choices.",
+  "ops": [
+   {
+    "op": "section",
+    "index": 3,
+    "body": "• „Gegenüber einer Kathete befindet sich der rechte Winkel“ ist falsch. Der rechte Winkel liegt zwischen den beiden Katheten und gegenüber der Hypotenuse.\n• „c - a = b“ ist falsch. Richtig ist c² = a² + b².\n• „Die Hypotenuse ist die kürzeste Seite“ ist falsch. Sie ist die längste Seite."
+   }
+  ]
+ },
+ {
+  "id": "MATH_GEO_PYTH_004",
+  "why": "The choice 'opposite the hypotenuse is the right angle' was also true; replaced by a false statement.",
+  "ops": [
+   {
+    "op": "choices",
+    "choices": [
+     "Der Flächeninhalt des Hypotenusenquadrates ist gleich der Summe der beiden Kathetenquadrate.",
+     "Die Hypotenuse ist die kürzeste Seite.",
+     "Die Formel lautet c - a = b",
+     "Er gilt für alle Dreiecke."
+    ],
+    "correct": "Der Flächeninhalt des Hypotenusenquadrates ist gleich der Summe der beiden Kathetenquadrate."
+   }
+  ]
+ },
+ {
+  "id": "MATH_GEO_PYTH_004",
+  "why": "The explanation tried to call a true statement false with a meaningless sentence; rewritten to match the choices.",
+  "ops": [
+   {
+    "op": "section",
+    "index": 2,
+    "body": "• „Die Hypotenuse ist die kürzeste Seite.“ ist falsch. Sie ist die längste Seite.\n• „c - a = b“ stimmt nicht. Richtig ist c² = a² + b².\n• Der Satz gilt nur für rechtwinklige Dreiecke, nicht für alle Dreiecke."
+   }
+  ]
+ },
+ {
+  "id": "MATH_TRIG_ANGLE_001",
+  "why": "The task asks for sin(α) (key 0,5) but the explanation went on to the angle and answered 30.",
+  "ops": [
+   {
+    "op": "explanation",
+    "sections": [
+     {
+      "kind": "text",
+      "title": "Begriffe",
+      "body": "• Gegenkathete = die Seite gegenüber vom Winkel α\n• Hypotenuse = die längste Seite im Dreieck"
+     },
+     {
+      "kind": "formula",
+      "title": "Sinus berechnen",
+      "body": "sin(α) = Gegenkathete : Hypotenuse"
+     },
+     {
+      "kind": "text",
+      "title": "Schritt für Schritt",
+      "body": "sin(α) = 4 cm : 8 cm = 0,5"
+     },
+     {
+      "kind": "remember",
+      "title": "Merke",
+      "body": "Zu sin(α) = 0,5 gehört der Winkel α = 30°."
+     },
+     {
+      "kind": "answer",
+      "title": "Antwort",
+      "body": "0,5"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "MATH_VOL_ZYLINDER_REAL_001",
+  "why": "3,14 · 1056,25 · 75 is 248.746,875, not 248.718,75.",
+  "ops": [
+   {
+    "op": "section",
+    "index": 2,
+    "body": "1. r = 65 : 2 = 32,5 cm\n2. r² = 32,5 · 32,5 = 1056,25\n3. V = 3,14 · 1056,25 · 75\n4. V ≈ 248.746,9 cm³\n5. In Liter: 248.746,9 : 1000 ≈ 249 Liter"
+   }
+  ]
+ },
+ {
+  "id": "MATH_VOL_KUGEL_001",
+  "why": "4,19 · 27 is 113,13, not 113,04; the calculation now goes 4 · 3,14 · 27 : 3 = 113,04.",
+  "ops": [
+   {
+    "op": "section",
+    "index": 4,
+    "body": "1. r³ = 3³ = 3 · 3 · 3 = 27\n2. V = 4 · 3,14 · 27 : 3\n3. V = 339,12 : 3\n4. V = 113,04 cm³ ≈ 113 cm³"
+   }
+  ]
+ },
+ {
+  "id": "MATH_MSA_PCT_2009N_001",
+  "why": "Wrong rule: the numerator is divided by the denominator, not the fraction.",
+  "ops": [
+   {
+    "op": "section",
+    "index": 1,
+    "body": "Zähler : Nenner · 100 = Prozent"
+   }
+  ]
+ },
+ {
+  "id": "MATH_NUM_PCT_BASIC_TRAIN_002",
+  "why": "A rise by 174 % is not 'almost double'; the picture now says a rise to 174 % is the 1,74-fold.",
+  "ops": [
+   {
+    "op": "section",
+    "index": 5,
+    "body": "Wenn dein Taschengeld auf 174 % steigt,\nbekommst du das 1,74-Fache: Aus 10 € werden 17,40 €."
+   }
+  ]
+ },
+ {
+  "id": "MATH_FUNC_LINEAR_FORM_MSA2023_001",
+  "why": "The check contained thinking aloud and skipped the point (2|-11); now all four points are checked cleanly.",
+  "ops": [
+   {
+    "op": "section",
+    "index": 2,
+    "body": "Punkt (-4|31):\nf(-4) = -7 · (-4) + 3 = 28 + 3 = 31 ✓\n\nPunkt (-1|10):\nf(-1) = -7 · (-1) + 3 = 7 + 3 = 10 ✓\n\nPunkt (2|-11):\nf(2) = -7 · 2 + 3 = -14 + 3 = -11 ✓\n\nPunkt (3|-24):\nf(3) = -7 · 3 + 3 = -21 + 3 = -18\nDas ist nicht -24. Also liegt dieser Punkt nicht auf der Geraden."
+   },
+   {
+    "op": "removeSection",
+    "match": "(3|-24): f(3) = -18"
+   }
+  ]
+ },
+ {
+  "id": "MATH_FUNC_EXP_MSA_001",
+  "why": "The task did not say that interest is compounded, so the linear formula was defensible too.",
+  "ops": [
+   {
+    "op": "prompt",
+    "text": "Ein Kapital von 1000 € wird zu 5 % Zinsen pro Jahr angelegt. Die Zinsen bleiben auf dem Konto und werden mitverzinst (Zinseszins). Welche Formel beschreibt das Kapital K nach n Jahren?"
+   }
+  ]
+ },
+ {
+  "id": "MATH_GEO_TRIG_MSA2023_001",
+  "why": "Without a drawing it was unclear which angle γ is; the trapezium is now named and the explanation uses the angles on one leg.",
+  "ops": [
+   {
+    "op": "prompt",
+    "text": "In einem gleichschenkligen Trapez ABCD (AB ist parallel zu CD) sind die Winkel α bei A und β bei B jeweils 56° groß. Wie groß ist der Winkel γ bei C?"
+   },
+   {
+    "op": "section",
+    "index": 1,
+    "body": "1. Die Winkelsumme im Viereck ist 360°.\n2. Im gleichschenkligen Trapez sind die beiden Winkel an einer Grundseite gleich groß.\n3. Zwei Winkel am selben Schenkel ergeben zusammen 180°, weil die Grundseiten parallel sind."
+   },
+   {
+    "op": "section",
+    "index": 2,
+    "body": "Methode 1 (Winkel am selben Schenkel):\nDie Winkel β und γ liegen am selben Schenkel BC zwischen den parallelen Seiten.\nSie ergeben zusammen 180°.\n56° + γ = 180°\nγ = 180° - 56° = 124°\n\nMethode 2 (Winkelsumme):\nDie Winkel bei C und D sind gleich groß. Beide sind γ.\n56° + 56° + γ + γ = 360°\n112° + 2γ = 360°\n2γ = 248°\nγ = 124°"
+   }
+  ]
+ },
+ {
+  "id": "MATH_GEO_VOLUME_MSA2022_001",
+  "why": "Rounding was not stated and the prompt held two tasks for one number.",
+  "ops": [
+   {
+    "op": "prompt",
+    "text": "Eine zylinderförmige Dose hat die Höhe h = 6 cm und den Radius r = 2,8 cm. Berechne das Volumen in cm³. Runde auf eine Dezimalstelle. (So siehst du auch, ob 100 ml Farbe hineinpassen: 1 cm³ = 1 ml.)"
+   }
+  ]
+ },
+ {
+  "id": "MATH_GEO_PYTH_MSA2022_002",
+  "why": "Unit and rounding of the answer were not stated although the check needs 11,2 ± 0,1.",
+  "ops": [
+   {
+    "op": "prompt",
+    "text": "Ein Rührholz steht diagonal in einer zylindrischen Dose (h=6cm, r=2,8cm). 3 cm des Rührholzes ragen heraus. Wie lang ist das Rührholz in cm? Runde auf eine Dezimalstelle."
+   }
+  ]
+ },
+ {
+  "id": "MATH_VOL_PYRAMIDE_REAL_001",
+  "why": "The task did not say that the base is a square, which the calculation G = 8² needs.",
+  "ops": [
+   {
+    "op": "prompt",
+    "text": "Die Karlsruher Pyramide ist 6,8 m hoch. Ihre Grundfläche ist ein Quadrat mit der Kantenlänge 8 m. Berechne das Volumen."
+   }
+  ]
+ },
+ {
+  "id": "MATH_VOL_PYRAMIDE_001",
+  "why": "Three equal pyramids cannot be put together to a cuboid; only the volume statement is true.",
+  "ops": [
+   {
+    "op": "section",
+    "index": 3,
+    "body": "Eine Pyramide hat nur ein Drittel des Volumens eines Quaders mit derselben Grundfläche und derselben Höhe.\nDrei solche Pyramiden fassen zusammen genauso viel wie dieser Quader."
+   }
+  ]
+ },
+ {
+  "id": "MATH_TRIG_SIN_001",
+  "why": "The mnemonic 'GÄHH' did not match its own letters; replaced by a plain one.",
+  "ops": [
+   {
+    "op": "section",
+    "index": 2,
+    "body": "Sinus = Gegenkathete geteilt durch Hypotenuse.\nMerke dir „G durch H“: Die Gegenkathete steht oben, die Hypotenuse steht unten."
+   }
+  ]
+ },
+ {
+  "id": "MATH_TRIG_COS_001",
+  "why": "The mnemonic 'KAHH' did not match its own letters; replaced by a plain one.",
+  "ops": [
+   {
+    "op": "section",
+    "index": 2,
+    "body": "Kosinus = Ankathete geteilt durch Hypotenuse.\nMerke dir „A durch H“: Die Ankathete steht oben, die Hypotenuse steht unten."
+   }
+  ]
+ },
+ {
+  "id": "MATH_TRIG_TAN_001",
+  "why": "The mnemonic 'GAGA' did not match its own letters; replaced by a plain one.",
+  "ops": [
+   {
+    "op": "section",
+    "index": 3,
+    "body": "Tangens = Gegenkathete geteilt durch Ankathete.\nMerke dir „G durch A“: Die Gegenkathete steht oben, die Ankathete steht unten.\nDie Hypotenuse kommt nicht vor."
+   }
+  ]
+ },
+ {
+  "id": "MATH_MSA_PCT_2014N_002",
+  "why": "The counting pattern for ERDBEERE was misspelt; E stands at places 1, 5, 6 and 8.",
+  "ops": [
+   {
+    "op": "replace",
+    "in": "explanation",
+    "from": "(E_D_EE_E)",
+    "to": "(E _ _ _ E E _ E)"
+   }
+  ]
+ },
+ {
+  "id": "MATH_VOL_MANTEL_ZYL_001",
+  "why": "Typo 'Manteläche'.",
+  "ops": [
+   {
+    "op": "replace",
+    "in": "explanation",
+    "from": "Manteläche",
+    "to": "Mantelfläche"
+   }
+  ]
+ },
+ {
+  "id": "MATH_STATS_MEDIAN_ODD_001",
+  "why": "Typo 'IMMMER' and shouting in capitals.",
+  "ops": [
+   {
+    "op": "section",
+    "index": 4,
+    "body": "Immer zuerst sortieren."
+   }
+  ]
+ },
+ {
+  "id": "MATH_MSA_PCT_2011_001",
+  "why": "'Einviertel' is not a German word and the last line was shorthand.",
+  "ops": [
+   {
+    "op": "section",
+    "index": 4,
+    "body": "75 % = drei Viertel = 90 €\n25 % = ein Viertel = 90 € : 3 = 30 €\n100 % = vier Viertel = 30 € · 4 = 120 €"
+   }
+  ]
+ },
+ {
+  "id": "MATH_EXP_SALMONELLEN_001",
+  "why": "Heading with a lower-case noun after the hyphen.",
+  "ops": [
+   {
+    "op": "section",
+    "index": 4,
+    "title": "Hygiene-Hinweis"
+   }
+  ]
+ },
+ {
+  "id": "MATH_EXP_DECAY_001",
+  "why": "Heading with a lower-case noun after the hyphen.",
+  "ops": [
+   {
+    "op": "section",
+    "index": 2,
+    "title": "Abnahmefaktor"
+   }
+  ]
+ },
+ {
+  "id": "MATH_FUNC_QUAD_MSA2022_001",
+  "why": "Heading with a lower-case noun.",
+  "ops": [
+   {
+    "op": "section",
+    "index": 3,
+    "title": "Achtung: Vorzeichen!"
+   }
+  ]
+ },
+ {
+  "id": "MATH_GEO_AREA_BASIC_005",
+  "why": "Heading with a lower-case noun after the hyphen.",
+  "ops": [
+   {
+    "op": "section",
+    "index": 0,
+    "title": "Parallelogrammfläche"
+   }
+  ]
+ },
+ {
+  "id": "MATH_GEO_VOLUME_003",
+  "why": "Heading with a lower-case noun after the hyphen.",
+  "ops": [
+   {
+    "op": "section",
+    "index": 0,
+    "title": "Zylindervolumen"
+   }
+  ]
+ },
+ {
+  "id": "MATH_GEO_TRIG_004",
+  "why": "First sentence of the prompt had no verb.",
+  "ops": [
+   {
+    "op": "prompt",
+    "text": "Ein rechtwinkliges Dreieck hat die Winkel α = 90° und β = 55° und die Seite a = 8. Berechne c mit: c = cos(β) · a. Was ist c? (Runde auf zwei Dezimalstellen)"
+   },
+   {
+    "op": "section",
+    "index": 1,
+    "body": "β = 55°, a = 8\ncos(β) = c : a, also c = cos(β) · a"
+   },
+   {
+    "op": "section",
+    "index": 2,
+    "body": "c = cos(55°) · 8\nc = 0,5736 · 8\nc ≈ 4,59"
+   }
+  ]
+ },
+ {
+  "id": "MATH_NUM_FRAC_BASIC_TRAIN_001",
+  "why": "Heading or emphasised word in capitals; written in normal case.",
+  "ops": [
+   {
+    "op": "section",
+    "index": 1,
+    "title": "Methode 1: Erweitern auf 100"
+   },
+   {
+    "op": "section",
+    "index": 2,
+    "title": "Methode 2: Division"
+   }
+  ]
+ },
+ {
+  "id": "MATH_NUM_PCT_CHANGE_TRAIN_002",
+  "why": "Heading or emphasised word in capitals; written in normal case.",
+  "ops": [
+   {
+    "op": "section",
+    "index": 2,
+    "title": "Methode 1 (Rabatt berechnen)"
+   },
+   {
+    "op": "section",
+    "index": 3,
+    "title": "Methode 2 (schneller)"
+   }
+  ]
+ },
+ {
+  "id": "MATH_NUM_PCT_CHANGE_TRAIN_001",
+  "why": "Heading or emphasised word in capitals; written in normal case.",
+  "ops": [
+   {
+    "op": "section",
+    "index": 2,
+    "title": "Rechnung Methode 1"
+   },
+   {
+    "op": "section",
+    "index": 3,
+    "title": "Rechnung Methode 2 (schneller)"
+   }
+  ]
+ },
+ {
+  "id": "MATH_FUNC_PROP_MSA2022_001",
+  "why": "Heading or emphasised word in capitals; written in normal case.",
+  "ops": [
+   {
+    "op": "section",
+    "index": 2,
+    "title": "Rechnung (Dreisatz)"
+   },
+   {
+    "op": "section",
+    "index": 3,
+    "title": "Alternativ (Verhältnis)"
+   }
+  ]
+ },
+ {
+  "id": "MATH_FUNC_PROP_MSA2023_001",
+  "why": "Heading or emphasised word in capitals; written in normal case.",
+  "ops": [
+   {
+    "op": "section",
+    "index": 2,
+    "title": "Rechnung (Dreisatz)"
+   }
+  ]
+ },
+ {
+  "id": "MATH_NUM_PCT_BASIC_MSA2023_001",
+  "why": "Heading or emphasised word in capitals; written in normal case.",
+  "ops": [
+   {
+    "op": "section",
+    "index": 2,
+    "title": "Rechnung (Dreisatz)"
+   }
+  ]
+ },
+ {
+  "id": "MATH_NUM_PCT_BASIC_TRAIN_004",
+  "why": "Heading or emphasised word in capitals; written in normal case.",
+  "ops": [
+   {
+    "op": "section",
+    "index": 3,
+    "title": "Alternativ (Bruch)"
+   }
+  ]
+ },
+ {
+  "id": "MATH_NUM_PCT_BASIC_TRAIN_006",
+  "why": "Heading or emphasised word in capitals; written in normal case.",
+  "ops": [
+   {
+    "op": "section",
+    "index": 3,
+    "title": "Alternativ (Bruch)"
+   }
+  ]
+ },
+ {
+  "id": "MATH_NUM_PCT_BASIC_MSA2022_002",
+  "why": "Heading or emphasised word in capitals; written in normal case.",
+  "ops": [
+   {
+    "op": "section",
+    "index": 3,
+    "title": "Merkhilfe: Die wichtigsten Brüche"
+   }
+  ]
+ },
+ {
+  "id": "MATH_ALG_TERMS_SIMPLIFY_TRAIN_001",
+  "why": "Heading or emphasised word in capitals; written in normal case.",
+  "ops": [
+   {
+    "op": "section",
+    "index": 3,
+    "title": "Wichtige 2er-Potenzen"
+   }
+  ]
+ },
+ {
+  "id": "MATH_ALG_TERMS_SIMPLIFY_TRAIN_003",
+  "why": "Heading or emphasised word in capitals; written in normal case.",
+  "ops": [
+   {
+    "op": "section",
+    "index": 2,
+    "title": "Rechnung (elegant)"
+   },
+   {
+    "op": "section",
+    "index": 3,
+    "title": "Rechnung (ausführlich)"
+   },
+   {
+    "op": "section",
+    "index": 5,
+    "body": "Diese Regel gilt nur bei gleichem Exponenten."
+   }
+  ]
+ },
+ {
+  "id": "MATH_ALG_TERMS_SIMPLIFY_TRAIN_005",
+  "why": "Heading or emphasised word in capitals; written in normal case.",
+  "ops": [
+   {
+    "op": "section",
+    "index": 1,
+    "body": "(aⁿ)ᵐ = aⁿ·ᵐ\n\nBei „Potenz hoch Potenz“ werden die Exponenten multipliziert."
+   },
+   {
+    "op": "section",
+    "index": 2,
+    "title": "Rechnung (mit Regel)"
+   },
+   {
+    "op": "section",
+    "index": 3,
+    "title": "Rechnung (ausführlich)"
+   }
+  ]
+ },
+ {
+  "id": "MATH_DATA_STATS_TRAIN_002",
+  "why": "Heading or emphasised word in capitals; written in normal case.",
+  "ops": [
+   {
+    "op": "section",
+    "index": 3,
+    "title": "Median und Mittelwert im Vergleich"
+   }
+  ]
+ },
+ {
+  "id": "MATH_VOL_QUADER_OBERFL_001",
+  "why": "Heading or emphasised word in capitals; written in normal case.",
+  "ops": [
+   {
+    "op": "section",
+    "index": 4,
+    "title": "Oberfläche = alle 6 Seiten zusammen"
+   }
+  ]
+ },
+ {
+  "id": "MATH_FUNC_LINEAR_TABLE_MSA_001",
+  "why": "Heading or emphasised word in capitals; written in normal case.",
+  "ops": [
+   {
+    "op": "section",
+    "index": 1,
+    "title": "Was bedeutet f(2)"
+   },
+   {
+    "op": "section",
+    "index": 4,
+    "title": "Wertetabelle für f(x) = x² - 1"
+   }
+  ]
+ },
+ {
+  "id": "MATH_FUNC_EXP_009",
+  "why": "1,4^24 is about 3214, not 4907, so N(24) is about 257.136, not 392.545; the prompt now says that t is in hours.",
+  "ops": [
+   {
+    "op": "prompt",
+    "text": "Bakterien wachsen nach N(t) = 80 · 1,4^t (t in Stunden). Wie viele sind es nach 24 Stunden?"
+   },
+   {
+    "op": "explanation",
+    "sections": [
+     {
+      "kind": "what",
+      "title": "Exponentielles Wachstum berechnen",
+      "body": ""
+     },
+     {
+      "kind": "formula",
+      "title": "Formel",
+      "body": "N(t) = 80 · 1,4^t"
+     },
+     {
+      "kind": "steps",
+      "title": "Rechnung für t = 24",
+      "body": "N(24) = 80 · 1,4^24\nMit dem Taschenrechner: 1,4^24 ≈ 3214,2\nN(24) ≈ 80 · 3214,2 ≈ 257.136"
+     },
+     {
+      "kind": "remember",
+      "title": "Vergleich",
+      "body": "257.136 > 250.000 ✓"
+     },
+     {
+      "kind": "mistake",
+      "title": "Exponentielles Wachstum",
+      "body": "Die Zahl wächst sehr schnell.\nNach 24 Stunden sind es rund 257.000 Bakterien."
+     },
+     {
+      "kind": "answer",
+      "title": "Antwort",
+      "body": "Mehr als 250.000"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "MATH_GEO_VOLUME_007",
+  "why": "The task did not say which side of the unrolled rectangle 'a' is, so 'ca. 8 cm' was defensible.",
+  "ops": [
+   {
+    "op": "prompt",
+    "text": "Die Mantelfläche eines Zylinders (r = 4 cm, h = 8 cm) wird abgewickelt. Es entsteht ein Rechteck. Eine Seite ist so lang wie die Höhe des Zylinders (8 cm). Wie lang ist die andere Seite a?"
+   },
+   {
+    "op": "section",
+    "index": 1,
+    "body": "Die Mantelfläche wird zu einem Rechteck.\n\n• Eine Seite ist die Höhe h = 8 cm.\n• Die andere Seite a ist der Umfang des Kreises: a = 2 · π · r"
+   },
+   {
+    "op": "section",
+    "index": 2,
+    "body": "a = 2 · π · 4 = 8π ≈ 25,13 cm"
+   }
+  ]
+ },
+ {
+  "id": "MATH_FUNC_QUAD_003",
+  "why": "Heading misspelt ('Pq-formel') and the pq formula was used without naming it or p and q.",
+  "ops": [
+   {
+    "op": "section",
+    "index": 2,
+    "title": "pq-Formel",
+    "body": "x₁,₂ = -p/2 ± √((p/2)² - q)\nHier ist p = 2 und q = -15.\n\nx₁,₂ = -1 ± √(1 + 15)\nx₁,₂ = -1 ± √16\nx₁,₂ = -1 ± 4\n\nx₁ = -1 + 4 = 3\nx₂ = -1 - 4 = -5"
+   }
+  ]
+ },
+ {
+  "id": "MATH_GEO_VOLUME_006",
+  "why": "Heading with a lower-case noun after the hyphen.",
+  "ops": [
+   {
+    "op": "section",
+    "index": 0,
+    "title": "Zylindervolumen"
+   }
+  ]
+ },
+ {
+  "id": "MATH_GEO_AREA_BASIC_010",
+  "why": "Grammar ('die Seite' for two sides) and an area that is not needed for the answer.",
+  "ops": [
+   {
+    "op": "prompt",
+    "text": "Ein Rechteck hat die Seiten a = 240 cm und b = 7 dm. Berechne den Umfang in dm. U = ? dm"
+   }
+  ]
+ },
+ {
+  "id": "MATH_DATA_CHARTS_002",
+  "why": "Verb must be plural with '19 %', and '19% × 3,6°' multiplied a percent sign by degrees.",
+  "ops": [
+   {
+    "op": "prompt",
+    "text": "In einem Kreisdiagramm sollen 19 % dargestellt werden. Welchen Winkel hat dieser Sektor?"
+   },
+   {
+    "op": "section",
+    "index": 2,
+    "body": "Winkel = 19 · 3,6°\nWinkel = 68,4°"
+   }
+  ]
+ },
+ {
+  "id": "MATH_DATA_STATS_013",
+  "why": "A whole sentence stood as a capitalised heading of an empty section.",
+  "ops": [
+   {
+    "op": "section",
+    "index": 4,
+    "kind": "remember",
+    "title": "Merke",
+    "body": "Die Spannweite zeigt, wie weit die Werte auseinanderliegen."
+   }
+  ]
+ },
+ {
+  "id": "MATH_FUNC_LINEAR_FORM_006",
+  "why": "Heading or emphasised word in capitals; written in normal case.",
+  "ops": [
+   {
+    "op": "section",
+    "index": 2,
+    "body": "y-Achsenabschnitt heißt: x = 0.\nAlso ist es der Punkt (0|-2), nicht (-2|0)."
+   },
+   {
+    "op": "section",
+    "index": 3,
+    "title": "Prüfung für (1|2)",
+    "body": "f(1) = 4 · 1 - 2 = 2 ✓"
+   },
+   {
+    "op": "section",
+    "index": 4,
+    "body": "Die y-Achse wird im Punkt (0|-2) geschnitten, nicht im Punkt (-2|0)."
+   },
+   {
+    "op": "section",
+    "index": 5,
+    "body": "Die Aussage „Die Gerade schneidet die y-Achse im Punkt (-2|0)“ ist falsch."
+   }
+  ]
+ },
+ {
+  "id": "MATH_DATA_PROB_005",
+  "why": "Heading or emphasised word in capitals; written in normal case.",
+  "ops": [
+   {
+    "op": "section",
+    "index": 3,
+    "body": "Auf einem Pfad werden die Wahrscheinlichkeiten multipliziert."
+   }
+  ]
+ },
+ {
+  "id": "MATH_FUNC_EXP_008",
+  "why": "Heading or emphasised word in capitals; written in normal case.",
+  "ops": [
+   {
+    "op": "section",
+    "index": 3,
+    "body": "Der Wachstumsfaktor ist konstant."
+   }
+  ]
+ },
+ {
+  "id": "MATH_NUM_PCT_CHANGE_006",
+  "why": "Heading or emphasised word in capitals; written in normal case.",
+  "ops": [
+   {
+    "op": "section",
+    "index": 3,
+    "body": "Immer durch den alten Wert teilen."
+   }
+  ]
+ }
+]

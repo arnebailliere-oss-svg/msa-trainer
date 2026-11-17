@@ -147,7 +147,7 @@
     "topicId": "DE_GRAM_INDIRECT",
     "difficulty": 3,
     "qtype": "MCQ",
-    "prompt": "Formen Sie den folgenden Satz in **indirekte Rede** um.\n\n*„Ich stehe Menschen mit Rat und Tat zur Seite“, sagt er.*",
+    "prompt": "Formen Sie den folgenden Satz in **indirekte Rede** um. Verwenden Sie den **Konjunktiv I**.\n\n*„Ich stehe Menschen mit Rat und Tat zur Seite“, sagt er.*",
     "payload": {
       "choices": [
         "Er sagt, er stehe Menschen mit Rat und Tat zur Seite.",
@@ -798,7 +798,7 @@
       {
         "kind": "answer",
         "title": "Warum",
-        "body": "Ein langes i schreibt man meistens ie. Aufstieg kommt von steigen, und dort hörst du das lange i deutlich."
+        "body": "Ein langes i schreibt man meistens ie. In Aufstieg hörst du ein langes i. Das Wort gehört zu steigen. In der Vergangenheit heißt es: er stieg. Auch dort steht ie."
       }
     ],
     "tags": [

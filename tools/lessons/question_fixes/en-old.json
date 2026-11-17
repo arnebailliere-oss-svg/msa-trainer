@@ -1,0 +1,2776 @@
+[
+  {
+    "id": "EN_USE_QUEST_NEG_004",
+    "why": "Explanation was English running text with capitals; rewritten in plain German, English examples kept.",
+    "ops": [
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Worum geht es",
+            "body": "Es geht um Kurzantworten im Englischen."
+          },
+          {
+            "kind": "terms",
+            "title": "Die Regel",
+            "body": "In der Kurzantwort wiederholst du das **Hilfsverb** aus der Frage."
+          },
+          {
+            "kind": "steps",
+            "title": "Das Muster",
+            "body": "- Do you ...? Yes, I do. / No, I don't.\n- Does she ...? Yes, she does. / No, she doesn't.\n- Did they ...? Yes, they did. / No, they didn't."
+          },
+          {
+            "kind": "text",
+            "title": "Warum Kurzantworten",
+            "body": "Im Englischen klingt ein bloßes *Yes* oder *No* unvollständig. *Yes* allein ist in Ordnung, aber *Yes, I do.* ist besser."
+          },
+          {
+            "kind": "mistake",
+            "title": "Typische Fehler",
+            "body": "- *Yes, I speak.* ist falsch. In der Kurzantwort steht das Hilfsverb aus der Frage, nicht das Vollverb: *Yes, I do.*\n- *Yes, I am.* ist falsch. Die Frage beginnt mit *Do*, deshalb passt *am* nicht."
+          },
+          {
+            "kind": "remember",
+            "title": "Merke",
+            "body": "Das Hilfsverb der Frage ist auch das Hilfsverb der Antwort."
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "I do"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EN_USE_QUEST_NEG_004",
+    "why": "The explanation called the wrong choice 'I speak' not wrong; it now says clearly that it is wrong.",
+    "ops": [
+      {
+        "op": "section",
+        "index": 4,
+        "kind": "mistake",
+        "title": "Typische Fehler",
+        "body": "- *Yes, I speak.* ist falsch. In der Kurzantwort steht das Hilfsverb aus der Frage, nicht das Vollverb: *Yes, I do.*\n- *Yes, I am.* ist falsch. Die Frage beginnt mit *Do*, deshalb passt *am* nicht."
+      }
+    ]
+  },
+  {
+    "id": "EN_USE_TENSES_003",
+    "why": "Explanation was English running text with capitals; rewritten in plain German, English examples kept.",
+    "ops": [
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Worum geht es",
+            "body": "Das Simple Past steht für abgeschlossene Handlungen in der Vergangenheit."
+          },
+          {
+            "kind": "terms",
+            "title": "Die Regel",
+            "body": "*yesterday* bedeutet Vergangenheit. Deshalb brauchst du das **Simple Past**."
+          },
+          {
+            "kind": "steps",
+            "title": "Die Bildung",
+            "body": "Regelmäßige Verben bekommen die Endung -ed:\n\n- walk – walked\n- play – played"
+          },
+          {
+            "kind": "text",
+            "title": "Signalwörter",
+            "body": "Bei *yesterday*, *last week*, *ago* und *in 2020* steht das Simple Past."
+          },
+          {
+            "kind": "remember",
+            "title": "Merke",
+            "body": "Das Simple Past ist für alle Personen gleich: I walked, you walked, he walked, we walked."
+          },
+          {
+            "kind": "mistake",
+            "title": "Typische Fehler",
+            "body": "- *I walk ... yesterday*: Das ist Gegenwart statt Vergangenheit.\n- *I walks*: Die Endung -s gibt es nur bei he, she, it in der Gegenwart.\n- *I am walking ... yesterday*: Die Verlaufsform der Gegenwart passt nicht zu *yesterday*."
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "I walked to school yesterday."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EN_USE_TENSES_003",
+    "why": "The mistake section named an error that is not among the choices; it now explains the three wrong choices.",
+    "ops": [
+      {
+        "op": "section",
+        "index": 5,
+        "kind": "mistake",
+        "title": "Typische Fehler",
+        "body": "- *I walk ... yesterday*: Das ist Gegenwart statt Vergangenheit.\n- *I walks*: Die Endung -s gibt es nur bei he, she, it in der Gegenwart.\n- *I am walking ... yesterday*: Die Verlaufsform der Gegenwart passt nicht zu *yesterday*."
+      }
+    ]
+  },
+  {
+    "id": "EN_USE_MODALS_002",
+    "why": "Explanation was English running text with capitals; rewritten in plain German, English examples kept.",
+    "ops": [
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Worum geht es",
+            "body": "Es geht um Modalverben. Mit *can* drückst du eine Bitte oder eine Fähigkeit aus."
+          },
+          {
+            "kind": "terms",
+            "title": "So benutzt du can",
+            "body": "1. Fähigkeit: I can swim. (Ich kann schwimmen.)\n2. Erlaubnis: Can I go? (Darf ich gehen?)\n3. Bitte: Can you help? (Kannst du helfen?)"
+          },
+          {
+            "kind": "steps",
+            "title": "Hier",
+            "body": "Du bittest jemanden um Hilfe. Das ist eine höfliche Bitte: *Can you help me?*"
+          },
+          {
+            "kind": "text",
+            "title": "Vergleich",
+            "body": "- *Can you ...?* ist eine freundliche Bitte.\n- *Must you ...?* passt nicht zu einer Bitte.\n- *Could you ...?* ist förmlicher und noch höflicher."
+          },
+          {
+            "kind": "mistake",
+            "title": "Nicht verwechseln",
+            "body": "*can* (können) ist nicht dasselbe wie *must* (müssen)."
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "Can"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EN_USE_MODALS_002",
+    "why": "German verbs were capitalised (Können, Müssen); now lower case.",
+    "ops": [
+      {
+        "op": "section",
+        "index": 4,
+        "kind": "mistake",
+        "title": "Nicht verwechseln",
+        "body": "*can* (können) ist nicht dasselbe wie *must* (müssen)."
+      }
+    ]
+  },
+  {
+    "id": "EN_USE_MODALS_003",
+    "why": "Explanation was English running text with capitals; rewritten in plain German, English examples kept.",
+    "ops": [
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Worum geht es",
+            "body": "Es geht um Modalverben. Mit *should* gibst du einen Rat."
+          },
+          {
+            "kind": "terms",
+            "title": "should = Ratschlag",
+            "body": "Etwas ist eine gute Idee, aber keine feste Regel."
+          },
+          {
+            "kind": "steps",
+            "title": "Der Zusammenhang",
+            "body": "In der Aufgabe gibt dir ein Freund einen Rat. Auch *It's good for your health* zeigt: Das ist eine Empfehlung. Deshalb passt **should**."
+          },
+          {
+            "kind": "text",
+            "title": "Vergleich",
+            "body": "- *must*: Du musst es tun (Pflicht).\n- *should*: Es ist eine gute Idee (Empfehlung).\n- *can*: Du bist dazu fähig (Fähigkeit)."
+          },
+          {
+            "kind": "remember",
+            "title": "Übersetzung",
+            "body": "- should = sollte\n- must = muss"
+          },
+          {
+            "kind": "mistake",
+            "title": "Hinweis",
+            "body": "*should* ist schwächer als *must*."
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "should"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EN_USE_MODALS_003",
+    "why": "Without 'best option' and the advice context, 'must' was also a possible answer.",
+    "ops": [
+      {
+        "op": "prompt",
+        "text": "Choose the best option. Your friend gives you some advice: 'You ___ eat more vegetables. It's good for your health.'"
+      }
+    ]
+  },
+  {
+    "id": "EN_USE_COMPARISON_001",
+    "why": "Explanation was English running text with capitals; rewritten in plain German, English examples kept.",
+    "ops": [
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Worum geht es",
+            "body": "Es geht um den Komparativ. Damit vergleichst du zwei Dinge."
+          },
+          {
+            "kind": "terms",
+            "title": "Die Regel",
+            "body": "Einsilbige Adjektive und zweisilbige Adjektive auf -y bekommen **-er**:\n\n- fast – faster\n- tall – taller\n- happy – happier"
+          },
+          {
+            "kind": "steps",
+            "title": "Der Satzbau",
+            "body": "Nach dem Adjektiv mit -er steht *than*: A car is faster than a bike."
+          },
+          {
+            "kind": "text",
+            "title": "Rechtschreibung",
+            "body": "- fast – faster\n- big – bigger (der letzte Konsonant wird verdoppelt)\n- happy – happier (aus y wird i)"
+          },
+          {
+            "kind": "mistake",
+            "title": "Längere Adjektive",
+            "body": "Alle anderen Adjektive mit zwei oder mehr Silben steigerst du mit **more**:\n\n- boring – more boring\n- famous – more famous\n- beautiful – more beautiful\n\nDie Form *beautifuler* gibt es nicht."
+          },
+          {
+            "kind": "remember",
+            "title": "Merke",
+            "body": "Vergleichst du zwei Dinge, nimmst du -er oder *more*. Für den Superlativ (*the best*) nimmst du -est oder *most*."
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "faster"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EN_USE_COMPARISON_001",
+    "why": "The rule '1-2 syllables take -er, 3+ take more' was wrong for most two-syllable adjectives.",
+    "ops": [
+      {
+        "op": "section",
+        "index": 1,
+        "kind": "terms",
+        "title": "Die Regel",
+        "body": "Einsilbige Adjektive und zweisilbige Adjektive auf -y bekommen **-er**:\n\n- fast – faster\n- tall – taller\n- happy – happier"
+      },
+      {
+        "op": "section",
+        "index": 4,
+        "kind": "mistake",
+        "title": "Längere Adjektive",
+        "body": "Alle anderen Adjektive mit zwei oder mehr Silben steigerst du mit **more**:\n\n- boring – more boring\n- famous – more famous\n- beautiful – more beautiful\n\nDie Form *beautifuler* gibt es nicht."
+      }
+    ]
+  },
+  {
+    "id": "EN_USE_COMPARISON_TRAIN_001",
+    "why": "Explanation was English running text with capitals; rewritten in plain German, English examples kept.",
+    "ops": [
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Worum geht es",
+            "body": "Es geht um den Komparativ. Damit vergleichst du zwei Dinge."
+          },
+          {
+            "kind": "terms",
+            "title": "Die Regel für kurze Adjektive",
+            "body": "Du hängst -er an das Adjektiv."
+          },
+          {
+            "kind": "steps",
+            "title": "Die Bildung",
+            "body": "big – bigger"
+          },
+          {
+            "kind": "mistake",
+            "title": "Rechtschreibregel",
+            "body": "Endet ein kurzes Adjektiv auf Konsonant, Vokal, Konsonant, dann verdoppelst du den letzten Konsonanten:\n\n- big – bigger (nicht *biger*)\n- hot – hotter\n- thin – thinner"
+          },
+          {
+            "kind": "remember",
+            "title": "Weitere kurze Adjektive",
+            "body": "- small – smaller\n- tall – taller\n- fast – faster\n- old – older"
+          },
+          {
+            "kind": "text",
+            "title": "Längere Adjektive",
+            "body": "Adjektive mit zwei oder mehr Silben steigerst du mit *more*:\n\n- boring – more boring\n- beautiful – more beautiful\n- interesting – more interesting\n\nDie Ausnahme sind zweisilbige Adjektive auf -y. Sie bekommen -er: happy – happier."
+          },
+          {
+            "kind": "text",
+            "title": "Die falschen Antworten",
+            "body": "- *more big*: *big* ist kurz, deshalb nimmst du -er.\n- *biger*: Das g muss verdoppelt werden.\n- *biggest*: Das ist der Superlativ (am größten)."
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "bigger"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EN_USE_COMPARISON_TRAIN_001",
+    "why": "'more' is used from two syllables on (except -y), not only from three syllables.",
+    "ops": [
+      {
+        "op": "section",
+        "index": 5,
+        "kind": "text",
+        "title": "Längere Adjektive",
+        "body": "Adjektive mit zwei oder mehr Silben steigerst du mit *more*:\n\n- boring – more boring\n- beautiful – more beautiful\n- interesting – more interesting\n\nDie Ausnahme sind zweisilbige Adjektive auf -y. Sie bekommen -er: happy – happier."
+      }
+    ]
+  },
+  {
+    "id": "EN_USE_COMPARISON_006",
+    "why": "Explanation was English running text with capitals; rewritten in plain German, English examples kept.",
+    "ops": [
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Worum geht es",
+            "body": "Es geht um die Steigerung langer Adjektive."
+          },
+          {
+            "kind": "formula",
+            "title": "Die Regel",
+            "body": "Adjektive mit zwei oder mehr Silben (außer auf -y) steigerst du so:\n\n- Komparativ: *more* + Adjektiv\n- Superlativ: *the most* + Adjektiv"
+          },
+          {
+            "kind": "steps",
+            "title": "beautiful (drei Silben: beau-ti-ful)",
+            "body": "- beautiful\n- more beautiful\n- the most beautiful"
+          },
+          {
+            "kind": "mistake",
+            "title": "Typischer Fehler",
+            "body": "Hänge hier nicht -er oder -est an. Die Formen *the beautifulest* und *beautifuller* gibt es nicht."
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "the most beautiful"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EN_USE_COMPARISON_006",
+    "why": "'beautiful' has three syllables, not four; the rule and the named wrong forms now match the choices.",
+    "ops": [
+      {
+        "op": "section",
+        "index": 1,
+        "kind": "formula",
+        "title": "Die Regel",
+        "body": "Adjektive mit zwei oder mehr Silben (außer auf -y) steigerst du so:\n\n- Komparativ: *more* + Adjektiv\n- Superlativ: *the most* + Adjektiv"
+      },
+      {
+        "op": "section",
+        "index": 2,
+        "kind": "steps",
+        "title": "beautiful (drei Silben: beau-ti-ful)",
+        "body": "- beautiful\n- more beautiful\n- the most beautiful"
+      },
+      {
+        "op": "section",
+        "index": 3,
+        "kind": "mistake",
+        "title": "Typischer Fehler",
+        "body": "Hänge hier nicht -er oder -est an. Die Formen *the beautifulest* und *beautifuller* gibt es nicht."
+      }
+    ]
+  },
+  {
+    "id": "EN_USE_TENSES_TRAIN_009",
+    "why": "Explanation was English running text with capitals; rewritten in plain German, English examples kept.",
+    "ops": [
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Worum geht es",
+            "body": "*speak* ist ein unregelmäßiges Verb: speak – spoke – spoken."
+          },
+          {
+            "kind": "terms",
+            "title": "Die drei Formen",
+            "body": "1. Grundform (Infinitive): speak\n2. Simple Past: spoke\n3. Past Participle (3. Form): spoken"
+          },
+          {
+            "kind": "steps",
+            "title": "So benutzt du die Formen",
+            "body": "- Simple Past: I spoke to him yesterday.\n- Present Perfect: I have spoken to him.\n- Passiv: English is spoken here."
+          },
+          {
+            "kind": "remember",
+            "title": "Ähnliches Muster",
+            "body": "- speak – spoke – spoken\n- break – broke – broken\n- steal – stole – stolen\n- choose – chose – chosen"
+          },
+          {
+            "kind": "mistake",
+            "title": "Typischer Fehler",
+            "body": "*speaked* ist falsch, denn *speak* ist unregelmäßig."
+          },
+          {
+            "kind": "text",
+            "title": "Tipp",
+            "body": "Lerne diese Verben als Gruppe: speak – spoke – spoken, break – broke – broken, steal – stole – stolen.\n\nAchtung: Das Muster gilt nicht für alle Verben mit *ea*. Zum Beispiel: eat – ate – eaten, read – read – read."
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "spoken"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EN_USE_TENSES_TRAIN_009",
+    "why": "The tip 'many verbs with ea follow ea-o-o' is true for very few verbs; replaced by a learning group with a warning.",
+    "ops": [
+      {
+        "op": "section",
+        "index": 5,
+        "kind": "text",
+        "title": "Tipp",
+        "body": "Lerne diese Verben als Gruppe: speak – spoke – spoken, break – broke – broken, steal – stole – stolen.\n\nAchtung: Das Muster gilt nicht für alle Verben mit *ea*. Zum Beispiel: eat – ate – eaten, read – read – read."
+      }
+    ]
+  },
+  {
+    "id": "EN_USE_TENSES_029",
+    "why": "Explanation was English running text with capitals; rewritten in plain German, English examples kept.",
+    "ops": [
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Worum geht es",
+            "body": "Es geht um das Present Perfect und die Wortstellung."
+          },
+          {
+            "kind": "formula",
+            "title": "Der Satzbau",
+            "body": "Subjekt + have/has + (already/just/never) + 3. Form (Past Participle)"
+          },
+          {
+            "kind": "steps",
+            "title": "Schritt für Schritt",
+            "body": "- *She* ist 3. Person Singular. Deshalb steht *has*, nicht *have*.\n- Die 3. Form von *finish* ist *finished*.\n- *already* steht zwischen *has* und der 3. Form: She has already finished ..."
+          },
+          {
+            "kind": "mistake",
+            "title": "Die falschen Sätze",
+            "body": "- *She have ...*: falsches Hilfsverb.\n- *She has already finish ...*: Die Endung -ed fehlt.\n- *She has finished already her homework.*: falsche Wortstellung. *already* darf nicht zwischen dem Verb und *her homework* stehen."
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "She has already finished her homework."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EN_USE_TENSES_029",
+    "why": "'She already has finished her homework.' is possible English; replaced by a clearly wrong word order.",
+    "ops": [
+      {
+        "op": "choices",
+        "choices": [
+          "She has already finished her homework.",
+          "She have already finished her homework.",
+          "She has already finish her homework.",
+          "She has finished already her homework."
+        ],
+        "correct": "She has already finished her homework."
+      },
+      {
+        "op": "section",
+        "index": 3,
+        "kind": "mistake",
+        "title": "Die falschen Sätze",
+        "body": "- *She have ...*: falsches Hilfsverb.\n- *She has already finish ...*: Die Endung -ed fehlt.\n- *She has finished already her homework.*: falsche Wortstellung. *already* darf nicht zwischen dem Verb und *her homework* stehen."
+      }
+    ]
+  },
+  {
+    "id": "EN_READ_CORE_005",
+    "why": "Explanation was English running text with capitals; rewritten in plain German, English examples kept.",
+    "ops": [
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Worum geht es",
+            "body": "Es geht um Leseverstehen: Du sollst ein Schild verstehen."
+          },
+          {
+            "kind": "terms",
+            "title": "Wichtige Wörter",
+            "body": "- *throws objects* = wirft mit Gegenständen\n- *beware* = Vorsicht!\n- *his aim is accurate* = er zielt genau, er trifft"
+          },
+          {
+            "kind": "steps",
+            "title": "Die Bedeutung",
+            "body": "Das Tier wirft mit Gegenständen und zielt genau. Es könnte dich also treffen. Das Schild ist eine **Warnung**."
+          },
+          {
+            "kind": "remember",
+            "title": "Tipp",
+            "body": "Achte auf die wichtigen Wörter. Sie zeigen dir, was der Text bedeutet."
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "Be careful - this animal could hit you"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EN_READ_CORE_005",
+    "why": "'aim is accurate' was translated as 'Ziel ist genau'; it means he aims well and hits.",
+    "ops": [
+      {
+        "op": "section",
+        "index": 1,
+        "kind": "terms",
+        "title": "Wichtige Wörter",
+        "body": "- *throws objects* = wirft mit Gegenständen\n- *beware* = Vorsicht!\n- *his aim is accurate* = er zielt genau, er trifft"
+      }
+    ]
+  },
+  {
+    "id": "EN_USE_TENSES_TRAIN_002",
+    "why": "Explanation was English running text with capitals; rewritten in plain German, English examples kept.",
+    "ops": [
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Worum geht es",
+            "body": "Du sollst das Present Perfect erkennen."
+          },
+          {
+            "kind": "terms",
+            "title": "Wann steht das Present Perfect",
+            "body": "- Eine Handlung ist gerade abgeschlossen.\n- Eine Handlung aus der Vergangenheit hat ein Ergebnis in der Gegenwart.\n- Jemand spricht über eine Erfahrung."
+          },
+          {
+            "kind": "steps",
+            "title": "Die Bildung",
+            "body": "have/has + 3. Form (Past Participle)"
+          },
+          {
+            "kind": "steps",
+            "title": "Im Satz",
+            "body": "*I have just arrived*: Hier stehen *have* und die 3. Form *arrived*. Das ist das **Present Perfect**."
+          },
+          {
+            "kind": "remember",
+            "title": "Signalwörter",
+            "body": "- just (gerade eben), recently (vor Kurzem)\n- yet, already\n- since, for\n- ever, never"
+          },
+          {
+            "kind": "text",
+            "title": "Beispiele",
+            "body": "- I have just finished. (gerade fertig)\n- She has lived here since 2010. (seit)\n- Have you ever been to London? (jemals)"
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "Present Perfect"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EN_USE_TENSES_TRAIN_002",
+    "why": "The task asks which tense the sentence uses, not which tense is 'correct'.",
+    "ops": [
+      {
+        "op": "prompt",
+        "text": "Which tense is used in this sentence? 'I have just arrived at the airport.'"
+      }
+    ]
+  },
+  {
+    "id": "EN_USE_TENSES_TRAIN_003",
+    "why": "Explanation was English running text with capitals; rewritten in plain German, English examples kept.",
+    "ops": [
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Worum geht es",
+            "body": "Du sollst das Present Progressive erkennen."
+          },
+          {
+            "kind": "terms",
+            "title": "Wann steht das Present Progressive",
+            "body": "- Etwas passiert gerade jetzt.\n- Etwas gilt nur vorübergehend.\n- Jemand hat einen festen Plan."
+          },
+          {
+            "kind": "steps",
+            "title": "Die Bildung",
+            "body": "am/is/are + Verb mit -ing"
+          },
+          {
+            "kind": "steps",
+            "title": "Im Satz",
+            "body": "*They are calling their grandma right now.* Hier stehen *are* und *calling* mit -ing. Das ist das **Present Progressive**."
+          },
+          {
+            "kind": "remember",
+            "title": "Signalwörter",
+            "body": "- right now, now\n- at the moment\n- currently\n- Look! Listen!"
+          },
+          {
+            "kind": "text",
+            "title": "Beispiele",
+            "body": "- I am studying right now. (gerade jetzt)\n- She is working at the moment. (im Moment)\n- Look! It is raining! (Schau!)"
+          },
+          {
+            "kind": "mistake",
+            "title": "Nicht das Simple Present",
+            "body": "- *They call* bedeutet: Sie tun es regelmäßig.\n- *They are calling* bedeutet: Sie tun es gerade jetzt."
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "Present Progressive"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EN_USE_TENSES_TRAIN_003",
+    "why": "The task asks which tense the sentence uses, not which tense is 'correct'.",
+    "ops": [
+      {
+        "op": "prompt",
+        "text": "Which tense is used in this sentence? 'They are calling their grandma right now.'"
+      }
+    ]
+  },
+  {
+    "id": "EN_USE_TENSES_001",
+    "why": "Explanation was English running text with capitals; rewritten in plain German, English examples kept.",
+    "ops": [
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Worum geht es",
+            "body": "Das Simple Present steht für Gewohnheiten und für Dinge, die regelmäßig passieren."
+          },
+          {
+            "kind": "terms",
+            "title": "Die Regel",
+            "body": "Bei he, she, it bekommt das Verb ein **-s** oder -es."
+          },
+          {
+            "kind": "steps",
+            "title": "So geht es",
+            "body": "Aus *I go* wird *She goes*. Bei *I* steht kein -s. Bei *she* kommt -es dazu."
+          },
+          {
+            "kind": "text",
+            "title": "Signalwörter",
+            "body": "*every day* zeigt eine Gewohnheit. Deshalb steht das Simple Present."
+          },
+          {
+            "kind": "remember",
+            "title": "Merke",
+            "body": "- I, you, we, they: go\n- he, she, it: goes"
+          },
+          {
+            "kind": "mistake",
+            "title": "Typische Fehler",
+            "body": "- *She go*: Das -s fehlt.\n- *She is go*: Diese Form gibt es nicht.\n- *She going*: Für die Verlaufsform fehlt *is*."
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "She goes to school every day."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EN_USE_TENSES_002",
+    "why": "Explanation was English running text with capitals; rewritten in plain German, English examples kept.",
+    "ops": [
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Worum geht es",
+            "body": "Das Present Progressive steht für Handlungen, die gerade jetzt passieren."
+          },
+          {
+            "kind": "terms",
+            "title": "Die Regel",
+            "body": "*Look!* zeigt: Etwas passiert in diesem Moment. Deshalb brauchst du das **Present Progressive**: am/is/are + Verb mit -ing."
+          },
+          {
+            "kind": "steps",
+            "title": "Der Satzbau",
+            "body": "am/is/are + Verb mit -ing\n\nThe cat is sleeping. Hier stehen *is* und *sleeping* mit -ing."
+          },
+          {
+            "kind": "text",
+            "title": "Signalwörter",
+            "body": "Bei *Look!*, *Listen!*, *right now* und *at the moment* steht das Present Progressive."
+          },
+          {
+            "kind": "remember",
+            "title": "Vergleich",
+            "body": "- *every day*: Simple Present (Gewohnheit)\n- *right now*: Present Progressive (gerade jetzt)"
+          },
+          {
+            "kind": "mistake",
+            "title": "Typischer Fehler",
+            "body": "Viele nehmen das Simple Present für etwas, das gerade jetzt passiert. Das ist falsch."
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "Look! The cat is sleeping on the sofa."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EN_USE_TENSES_004",
+    "why": "Explanation was English running text with capitals; rewritten in plain German, English examples kept.",
+    "ops": [
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Worum geht es",
+            "body": "Es geht um das Simple Past mit einem unregelmäßigen Verb. *Yesterday* verlangt die Vergangenheit, und aus *do* wird *did*."
+          },
+          {
+            "kind": "terms",
+            "title": "Unregelmäßige Verben",
+            "body": "Manche Verben bekommen kein -ed:\n\n- do – did (nicht *doed*)\n- see – saw\n- go – went"
+          },
+          {
+            "kind": "steps",
+            "title": "Regelmäßig und unregelmäßig",
+            "body": "- watch – watched: regelmäßig, mit -ed\n- do – did: unregelmäßig, die Form ändert sich ganz"
+          },
+          {
+            "kind": "remember",
+            "title": "Häufige unregelmäßige Verben",
+            "body": "- do – did\n- go – went\n- see – saw\n- have – had\n- make – made\n- get – got"
+          },
+          {
+            "kind": "mistake",
+            "title": "Wichtig",
+            "body": "Unregelmäßige Verben musst du auswendig lernen."
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "did / watched"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EN_USE_TENSES_005",
+    "why": "Explanation was English running text with capitals; rewritten in plain German, English examples kept.",
+    "ops": [
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Worum geht es",
+            "body": "Signalwörter helfen dir, die richtige Zeitform zu finden. Das Present Simple heißt auch Simple Present."
+          },
+          {
+            "kind": "terms",
+            "title": "Signalwörter im Überblick",
+            "body": "Jede Zeitform hat ihre eigenen Signalwörter."
+          },
+          {
+            "kind": "steps",
+            "title": "Simple Present (Gewohnheiten)",
+            "body": "- every day, every week, every Monday\n- always, usually, often\n- sometimes, never"
+          },
+          {
+            "kind": "text",
+            "title": "Present Progressive (gerade jetzt)",
+            "body": "- right now\n- at the moment\n- Look! Listen!"
+          },
+          {
+            "kind": "remember",
+            "title": "Simple Past (abgeschlossen)",
+            "body": "- yesterday\n- last week, last year\n- ago\n- in 2020"
+          },
+          {
+            "kind": "mistake",
+            "title": "Tipp",
+            "body": "*every ...* zeigt eine Gewohnheit. Deshalb steht das Simple Present."
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "every Monday"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EN_USE_TENSES_006",
+    "why": "Explanation was English running text with capitals; rewritten in plain German, English examples kept.",
+    "ops": [
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Worum geht es",
+            "body": "Es geht um die Verneinung im Simple Present bei he, she, it."
+          },
+          {
+            "kind": "terms",
+            "title": "Die Regel",
+            "body": "Bei he, she, it steht **doesn't** + Grundform. *don't* ist hier falsch."
+          },
+          {
+            "kind": "steps",
+            "title": "Der Satzbau",
+            "body": "doesn't + Grundform ohne -s\n\nShe doesn't like pizza. Nach *doesn't* bekommt das Verb kein -s."
+          },
+          {
+            "kind": "text",
+            "title": "Das ganze Muster",
+            "body": "- I, you, we, they don't like\n- he, she, it doesn't like"
+          },
+          {
+            "kind": "mistake",
+            "title": "Typische Fehler",
+            "body": "- *She don't like*: falsches Hilfsverb.\n- *She doesn't likes*: Das -s steht doppelt."
+          },
+          {
+            "kind": "remember",
+            "title": "Merke",
+            "body": "Das -s steckt schon in *doesn't*. Das Verb bekommt keins."
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "doesn't like"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EN_USE_QUEST_NEG_001",
+    "why": "Explanation was English running text with capitals; rewritten in plain German, English examples kept.",
+    "ops": [
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Worum geht es",
+            "body": "Es geht um Ja/Nein-Fragen im Simple Present."
+          },
+          {
+            "kind": "terms",
+            "title": "Die Regel",
+            "body": "Do/Does + Subjekt + Grundform?"
+          },
+          {
+            "kind": "steps",
+            "title": "Der Satzbau",
+            "body": "Do you like pizza? Zuerst kommt *Do*, dann das Subjekt *you*, dann das Verb *like* in der Grundform."
+          },
+          {
+            "kind": "text",
+            "title": "Do oder Does",
+            "body": "- I, you, we, they: Do you like ...?\n- he, she, it: Does she like ...?"
+          },
+          {
+            "kind": "mistake",
+            "title": "Typische Fehler",
+            "body": "- *Like you pizza?*: *Do* fehlt.\n- *Does you like ...?*: *Does* passt nicht zu *you*.\n- *Do you likes ...?*: Das Verb bekommt kein -s."
+          },
+          {
+            "kind": "remember",
+            "title": "Die Wortstellung",
+            "body": "- Aussage: You like pizza.\n- Frage: Do you like pizza?"
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "Do you like pizza?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EN_USE_QUEST_NEG_002",
+    "why": "Explanation was English running text with capitals; rewritten in plain German, English examples kept.",
+    "ops": [
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Worum geht es",
+            "body": "Es geht um Fragen mit he, she, it im Simple Present."
+          },
+          {
+            "kind": "terms",
+            "title": "Die Regel",
+            "body": "Bei he, she, it steht **Does** + Subjekt + Grundform ohne -s."
+          },
+          {
+            "kind": "steps",
+            "title": "Der Satzbau",
+            "body": "Does she like coffee? Zuerst kommt *Does*, dann *she*, dann *like* in der Grundform (nicht *likes*)."
+          },
+          {
+            "kind": "text",
+            "title": "Wo steht das -s",
+            "body": "Das -s steckt schon in *Does*. Deshalb heißt es *like*, nicht *likes*."
+          },
+          {
+            "kind": "mistake",
+            "title": "Typische Fehler",
+            "body": "- *Does she likes ...?*: Das -s steht doppelt.\n- *Do she like ...?*: *Do* passt nicht zu *she*."
+          },
+          {
+            "kind": "remember",
+            "title": "Vergleich",
+            "body": "- Aussage: She likes coffee.\n- Frage: Does she like coffee?\n\nDas -s ist vom Verb zu *Does* gewandert."
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "Does she like coffee?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EN_USE_QUEST_NEG_003",
+    "why": "Explanation was English running text with capitals; rewritten in plain German, English examples kept.",
+    "ops": [
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Worum geht es",
+            "body": "Es geht um Fragen im Simple Past."
+          },
+          {
+            "kind": "terms",
+            "title": "Die Regel",
+            "body": "Did + Subjekt + Grundform?"
+          },
+          {
+            "kind": "steps",
+            "title": "Der Satzbau",
+            "body": "Did you go to Berlin? Zuerst kommt *Did*, dann *you*, dann *go* in der Grundform (nicht *went*)."
+          },
+          {
+            "kind": "text",
+            "title": "Wichtig",
+            "body": "*Did* zeigt schon die Vergangenheit. Deshalb steht das Vollverb wieder in der Grundform: Aus *went* wird *go*."
+          },
+          {
+            "kind": "mistake",
+            "title": "Typische Fehler",
+            "body": "- *Did you went ...?*: Die Vergangenheit steht doppelt.\n- *Do you went ...?*: falsche Zeitform."
+          },
+          {
+            "kind": "remember",
+            "title": "Vergleich",
+            "body": "- Aussage: You went to Berlin.\n- Frage: Did you go to Berlin?\n\nIn der Frage steht das Verb wieder in der Grundform."
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "Did you go to Berlin?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EN_USE_MODALS_001",
+    "why": "Explanation was English running text with capitals; rewritten in plain German, English examples kept.",
+    "ops": [
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Worum geht es",
+            "body": "Es geht um Modalverben. *must* steht für Regeln und Pflichten."
+          },
+          {
+            "kind": "terms",
+            "title": "Was die Modalverben bedeuten",
+            "body": "- can = können (Fähigkeit)\n- must = müssen (Pflicht, Regel)\n- should = sollte (Rat)\n- might = vielleicht (Möglichkeit)"
+          },
+          {
+            "kind": "steps",
+            "title": "Der Zusammenhang",
+            "body": "Ein Helm beim Radfahren ist eine Sicherheitsregel. Deshalb passt **must**: Du musst es tun."
+          },
+          {
+            "kind": "text",
+            "title": "Der Satzbau",
+            "body": "Nach einem Modalverb steht die Grundform ohne *to*: You must wear. Falsch ist *You must to wear*."
+          },
+          {
+            "kind": "mistake",
+            "title": "Typische Fehler",
+            "body": "- *You must to wear*: Hier steht kein *to*.\n- *can* für eine Regel: *can* nennt eine Fähigkeit, keine Regel."
+          },
+          {
+            "kind": "remember",
+            "title": "Merke",
+            "body": "Modalverben verändern sich nie: he must, she must, they must. Die Form *musts* gibt es nicht."
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "must"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EN_VOCAB_TRAVEL_001",
+    "why": "Explanation was English running text with capitals; rewritten in plain German, English examples kept.",
+    "ops": [
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Worum geht es",
+            "body": "Es geht um wichtige Wörter für Reisen."
+          },
+          {
+            "kind": "terms",
+            "title": "Die Wörter",
+            "body": "ticket, luggage, platform"
+          },
+          {
+            "kind": "steps",
+            "title": "ticket",
+            "body": "= Fahrkarte, Eintrittskarte\n\na paper or digital pass to travel or enter"
+          },
+          {
+            "kind": "text",
+            "title": "luggage",
+            "body": "= Gepäck\n\nbags and suitcases you take on a trip"
+          },
+          {
+            "kind": "remember",
+            "title": "platform",
+            "body": "= Bahnsteig\n\nthe place at a train station where you wait"
+          },
+          {
+            "kind": "mistake",
+            "title": "Aussprache",
+            "body": "- luggage = /ˈlʌɡɪdʒ/\n- platform = /ˈplætfɔːm/"
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "- ticket = a paper or digital pass\n- luggage = bags and suitcases\n- platform = a place to wait for a train"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EN_VOCAB_TRAVEL_002",
+    "why": "Explanation was English running text with capitals; rewritten in plain German, English examples kept.",
+    "ops": [
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Worum geht es",
+            "body": "Es geht um zwei Reisewörter."
+          },
+          {
+            "kind": "terms",
+            "title": "Die Wörter",
+            "body": "*departure* und *arrival*"
+          },
+          {
+            "kind": "steps",
+            "title": "departure (Abfahrt, Abflug)",
+            "body": "Das ist der Moment, in dem du losfährst (*when you leave*).\n\n- departure time = Abfahrtszeit\n- departure gate = Abflug-Gate"
+          },
+          {
+            "kind": "text",
+            "title": "arrival (Ankunft)",
+            "body": "Das ist der Moment, in dem du ankommst (*when you arrive*).\n\n- arrival time = Ankunftszeit"
+          },
+          {
+            "kind": "remember",
+            "title": "Merkhilfe",
+            "body": "- *depart* = abfahren. Die Vorsilbe de- bedeutet so viel wie „weg“.\n- *arrive* = ankommen. Beide Wörter beginnen mit a."
+          },
+          {
+            "kind": "mistake",
+            "title": "Am Flughafen",
+            "body": "- *Departures*: Hier checkst du ein, wenn du abfliegst.\n- *Arrivals*: Hier kommen die Leute von ihren Flügen an."
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "when you leave"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EN_VOCAB_SCHOOL_001",
+    "why": "Explanation was English running text with capitals; rewritten in plain German, English examples kept.",
+    "ops": [
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Worum geht es",
+            "body": "Es geht um Schulwörter."
+          },
+          {
+            "kind": "terms",
+            "title": "timetable (Stundenplan)",
+            "body": "Ein *timetable* ist ein Plan. Er zeigt, wann welche Stunde oder Veranstaltung stattfindet."
+          },
+          {
+            "kind": "steps",
+            "title": "Beispiel",
+            "body": "- Monday 8:00 – Math\n- Monday 9:00 – English\n\nDas ist ein *timetable*."
+          },
+          {
+            "kind": "text",
+            "title": "Verwandte Wörter",
+            "body": "- schedule = Zeitplan\n- lesson = Unterrichtsstunde\n- subject = Schulfach\n- break = Pause"
+          },
+          {
+            "kind": "remember",
+            "title": "Auch bei Bus und Bahn",
+            "body": "- bus timetable = Busfahrplan\n- train timetable = Zugfahrplan"
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "a schedule showing when lessons happen"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EN_VOCAB_DAILYLIFE_001",
+    "why": "Explanation was English running text with capitals; rewritten in plain German, English examples kept.",
+    "ops": [
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Worum geht es",
+            "body": "Es geht um Wörter aus dem Alltag: die Mahlzeiten."
+          },
+          {
+            "kind": "terms",
+            "title": "Die Mahlzeiten am Tag",
+            "body": "breakfast, lunch, dinner, snack"
+          },
+          {
+            "kind": "steps",
+            "title": "breakfast (Frühstück)",
+            "body": "Das ist die erste Mahlzeit am Tag, also am Morgen. Das Wort besteht aus *break* (brechen) und *fast* (Fasten)."
+          },
+          {
+            "kind": "text",
+            "title": "lunch (Mittagessen)",
+            "body": "Das ist die Mahlzeit am Mittag, etwa um 12 Uhr."
+          },
+          {
+            "kind": "remember",
+            "title": "dinner (Abendessen)",
+            "body": "Das ist die Mahlzeit am Abend, etwa zwischen 18 und 20 Uhr."
+          },
+          {
+            "kind": "mistake",
+            "title": "snack (Zwischenmahlzeit)",
+            "body": "Das ist eine Kleinigkeit zwischen den Mahlzeiten."
+          },
+          {
+            "kind": "remember",
+            "title": "Merkhilfe",
+            "body": "*breakfast* ist die erste Mahlzeit. Im Schlaf isst du nichts, du fastest also. Am Morgen brichst du das Fasten: *break* + *fast*."
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "breakfast"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EN_READ_CORE_001",
+    "why": "Explanation was English running text with capitals; rewritten in plain German, English examples kept.",
+    "ops": [
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Worum geht es",
+            "body": "Es geht um Leseverstehen: Du suchst Tatsachen im Text."
+          },
+          {
+            "kind": "terms",
+            "title": "Was im Text steht",
+            "body": "- *Tom missed the bus*: Er hat den Bus verpasst und kam deshalb zu spät.\n- *arrived late*: Das bestätigt, dass er zu spät kam.\n- *not angry because Tom had a note*: Er hatte eine Entschuldigung."
+          },
+          {
+            "kind": "steps",
+            "title": "Jede Antwort prüfen",
+            "body": "- *Tom arrived early.*: falsch, im Text steht *late*.\n- *Tom arrived late and had an excuse.*: richtig.\n- *The teacher was angry.*: falsch, im Text steht *not angry*.\n- *Tom missed the train.*: falsch, im Text steht *bus*."
+          },
+          {
+            "kind": "remember",
+            "title": "Lesetipp",
+            "body": "Achte auf die genauen Wörter im Text. *bus* ist nicht *train*, und *not angry* ist nicht *angry*."
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "Tom arrived late and had an excuse."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EN_READ_CORE_002",
+    "why": "Explanation was English running text with capitals; rewritten in plain German, English examples kept.",
+    "ops": [
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Worum geht es",
+            "body": "Es geht um Leseverstehen: Du sollst eine Nachricht verstehen."
+          },
+          {
+            "kind": "terms",
+            "title": "Was im Text steht",
+            "body": "Im Text stehen diese zwei Sätze:\n\n- I can't come to your party on Saturday.\n- I have to visit my grandmother.\n\nDer Grund steht also deutlich im Text."
+          },
+          {
+            "kind": "steps",
+            "title": "So gehst du vor",
+            "body": "Suche den **Grund**. *I can't come* sagt, was Anna nicht kann. *I have to ...* sagt, warum das so ist."
+          },
+          {
+            "kind": "text",
+            "title": "Die Textsorte",
+            "body": "Das ist eine kurze, persönliche Nachricht.\n\n- *Dear Lisa* ist die Anrede.\n- *Love, Anna* ist der Gruß am Ende."
+          },
+          {
+            "kind": "remember",
+            "title": "Tipp",
+            "body": "In kurzen Texten steht die Antwort meistens wörtlich im Text."
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "She has to visit her grandmother."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EN_READ_EMAILS_001",
+    "why": "Explanation was English running text with capitals; rewritten in plain German, English examples kept.",
+    "ops": [
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Worum geht es",
+            "body": "Es geht um das Lesen von E-Mails: Du suchst eine bestimmte Information."
+          },
+          {
+            "kind": "terms",
+            "title": "Der Aufbau der E-Mail",
+            "body": "- Betreff: *Meeting tomorrow*\n- Anrede: *Hi team*\n- Hauptteil: Uhrzeit, Ort und eine Bitte\n- Gruß am Ende: *Best, Mr. Smith*"
+          },
+          {
+            "kind": "steps",
+            "title": "Die Informationen finden",
+            "body": "- Uhrzeit: *at 10 a.m.*\n- Ort: *in Room 5*\n- Bitte: *Please bring your notes*"
+          },
+          {
+            "kind": "text",
+            "title": "Lesetipp für E-Mails",
+            "body": "Suche gezielt nach wichtigen Wörtern:\n\n- Zahlen (10, 5)\n- Zeitwörter (a.m., p.m.)\n- Ortswörter (Room, office)"
+          },
+          {
+            "kind": "remember",
+            "title": "Achtung",
+            "body": "*Room 5* ist der Ort, nicht die Uhrzeit."
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "10 a.m."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EN_WRITE_ERRORFIX_001",
+    "why": "Explanation was English running text with capitals; rewritten in plain German, English examples kept.",
+    "ops": [
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Worum geht es",
+            "body": "Es geht um Fehlerkorrektur: die Verneinung im Simple Present."
+          },
+          {
+            "kind": "terms",
+            "title": "Der Fehler",
+            "body": "In *He dont like* stecken zwei Fehler:\n\n1. Bei he, she, it heißt es *doesn't*, nicht *don't*.\n2. Der Apostroph fehlt."
+          },
+          {
+            "kind": "steps",
+            "title": "Die richtige Form",
+            "body": "he, she, it + doesn't + Grundform\n\nHe doesn't like football. Nach *doesn't* bekommt das Verb kein -s."
+          },
+          {
+            "kind": "mistake",
+            "title": "Typische Fehler",
+            "body": "- *doesn't likes*: Das -s steht doppelt.\n- *don't* bei he, she, it: falsches Hilfsverb.\n- *not like*: Das Hilfsverb fehlt."
+          },
+          {
+            "kind": "remember",
+            "title": "Die Regel",
+            "body": "Das -s steckt in *doesn't*. Das Vollverb bekommt keins."
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "He doesn't like football."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EN_WRITE_ERRORFIX_002",
+    "why": "Explanation was English running text with capitals; rewritten in plain German, English examples kept.",
+    "ops": [
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Worum geht es",
+            "body": "Es geht um Fehlerkorrektur: das Simple Past."
+          },
+          {
+            "kind": "terms",
+            "title": "Der Fehler",
+            "body": "*Yesterday* nennt eine Zeit in der Vergangenheit. *go* ist aber eine Form der Gegenwart. Die Zeitform passt also nicht."
+          },
+          {
+            "kind": "steps",
+            "title": "Die Korrektur",
+            "body": "Aus *go* wird *went*. Das Verb ist unregelmäßig."
+          },
+          {
+            "kind": "text",
+            "title": "Das unregelmäßige Verb",
+            "body": "go – went – gone\n\nDie Form *goed* gibt es nicht."
+          },
+          {
+            "kind": "mistake",
+            "title": "Typische Fehler",
+            "body": "- Gegenwart bei einem Zeitwort der Vergangenheit\n- *goed*: *go* ist unregelmäßig."
+          },
+          {
+            "kind": "remember",
+            "title": "Signalwort prüfen",
+            "body": "*Yesterday* bedeutet Vergangenheit. Also brauchst du eine Form der Vergangenheit."
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "Yesterday I went to the cinema."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EN_WRITE_ERRORFIX_003",
+    "why": "Explanation was English running text with capitals; rewritten in plain German, English examples kept.",
+    "ops": [
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Worum geht es",
+            "body": "Es geht um Fehlerkorrektur: Modalverben."
+          },
+          {
+            "kind": "terms",
+            "title": "Der Fehler",
+            "body": "In *can to swim* ist *to* falsch. Nach Modalverben steht kein *to*."
+          },
+          {
+            "kind": "steps",
+            "title": "Der richtige Satzbau",
+            "body": "Modalverb + Grundform ohne *to*\n\nShe can swim. Es heißt *swim*, nicht *to swim*."
+          },
+          {
+            "kind": "text",
+            "title": "Die Modalverben",
+            "body": "can, must, should, will, would, might\n\nNach allen steht die Grundform ohne *to*."
+          },
+          {
+            "kind": "mistake",
+            "title": "Typische Fehler",
+            "body": "- *can to swim*: Streiche *to*.\n- *cans swim*: Modalverben bekommen kein -s.\n- *can swims*: Das Verb steht in der Grundform, ohne -s."
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "She can swim very well."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EN_WRITE_GUIDED_001",
+    "why": "Explanation was English running text with capitals; rewritten in plain German, English examples kept.",
+    "ops": [
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Worum geht es",
+            "body": "Es geht um das Verb *to be* (sein)."
+          },
+          {
+            "kind": "terms",
+            "title": "Die Formen von be",
+            "body": "- I am\n- you are\n- he/she/it is\n- we are\n- they are"
+          },
+          {
+            "kind": "steps",
+            "title": "Hier",
+            "body": "*My name* ist eine Sache, also wie *it*. Deshalb heißt es: My name is Lisa."
+          },
+          {
+            "kind": "text",
+            "title": "Häufige Sätze",
+            "body": "- My name is ...\n- I am ... years old.\n- I am from ..."
+          },
+          {
+            "kind": "remember",
+            "title": "Kurzregel",
+            "body": "Bei einer einzelnen Person oder Sache (he, she, it) nimmst du *is*."
+          },
+          {
+            "kind": "mistake",
+            "title": "Das ist falsch",
+            "body": "- My name am Lisa.\n- My name are Lisa."
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "is"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EN_USE_COMPARISON_002",
+    "why": "Explanation was English running text with capitals; rewritten in plain German, English examples kept.",
+    "ops": [
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Worum geht es",
+            "body": "Es geht um den Superlativ eines unregelmäßigen Adjektivs."
+          },
+          {
+            "kind": "terms",
+            "title": "the vor der Lücke: Superlativ",
+            "body": "Vergleichst du mehr als zwei Dinge, brauchst du den Superlativ: *the* + Form mit -est."
+          },
+          {
+            "kind": "steps",
+            "title": "Unregelmäßige Formen",
+            "body": "- good – better – best\n- bad – worse – worst\n- many – more – most"
+          },
+          {
+            "kind": "text",
+            "title": "Der Satzbau",
+            "body": "*the* + Superlativ: the best book"
+          },
+          {
+            "kind": "mistake",
+            "title": "Typische Fehler",
+            "body": "- *the most good*: falsch, denn *good* ist unregelmäßig.\n- *the better*: falsch, das ist der Komparativ.\n- *more good*: falsch, denn *good* ist unregelmäßig."
+          },
+          {
+            "kind": "remember",
+            "title": "Lerne auswendig",
+            "body": "- good – better – best\n- bad – worse – worst"
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "best"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EN_USE_TENSES_TRAIN_001",
+    "why": "Explanation was English running text with capitals; rewritten in plain German, English examples kept.",
+    "ops": [
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Worum geht es",
+            "body": "Du sollst das Simple Present erkennen."
+          },
+          {
+            "kind": "terms",
+            "title": "Wann steht das Simple Present",
+            "body": "- bei Gewohnheiten\n- bei allgemeinen Tatsachen\n- bei regelmäßigen Handlungen"
+          },
+          {
+            "kind": "steps",
+            "title": "Die Bildung",
+            "body": "Du nimmst die Grundform. Bei he, she, it kommt -s oder -es dazu: I watch, he watches."
+          },
+          {
+            "kind": "remember",
+            "title": "Signalwörter",
+            "body": "- usually, sometimes, always\n- every day, often, never\n- on Mondays, in the morning"
+          },
+          {
+            "kind": "text",
+            "title": "Beispiele",
+            "body": "- I usually watch TV. (Gewohnheit)\n- The sun rises in the east. (Tatsache)\n- She works in Berlin. (regelmäßig)"
+          },
+          {
+            "kind": "mistake",
+            "title": "Nicht verwechseln",
+            "body": "- Das Present Progressive steht für etwas, das gerade jetzt passiert.\n- Das Present Perfect verbindet die Vergangenheit mit der Gegenwart."
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "Simple Present"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EN_USE_TENSES_TRAIN_004",
+    "why": "Explanation was English running text with capitals; rewritten in plain German, English examples kept.",
+    "ops": [
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Worum geht es",
+            "body": "Es geht um das Simple Present bei he, she, it."
+          },
+          {
+            "kind": "terms",
+            "title": "Die Regel",
+            "body": "Im Simple Present bekommt das Verb bei he, she, it ein -s oder -es."
+          },
+          {
+            "kind": "steps",
+            "title": "Warum goes",
+            "body": "1. *every day* ist ein Signalwort für das Simple Present.\n2. *She* ist 3. Person Singular.\n3. Aus *go* wird *goes* (mit -es)."
+          },
+          {
+            "kind": "remember",
+            "title": "Schreibregeln für -s und -es",
+            "body": "- Die meisten Verben bekommen -s: play – plays.\n- Verben auf -s, -sh, -ch, -x oder -o bekommen -es: go – goes, watch – watches, wash – washes.\n- Bei Konsonant + y wird aus dem y die Endung -ies: study – studies, try – tries."
+          },
+          {
+            "kind": "mistake",
+            "title": "Die falschen Antworten",
+            "body": "- *is going* ist Present Progressive (gerade jetzt).\n- *has gone* ist Present Perfect."
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "goes"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EN_USE_TENSES_TRAIN_005",
+    "why": "Explanation was English running text with capitals; rewritten in plain German, English examples kept.",
+    "ops": [
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Worum geht es",
+            "body": "*go* ist ein unregelmäßiges Verb: go – went – gone."
+          },
+          {
+            "kind": "terms",
+            "title": "Unregelmäßige Verben",
+            "body": "Sie bekommen nicht die Endung -ed. Du musst sie auswendig lernen."
+          },
+          {
+            "kind": "steps",
+            "title": "Die Formen von go",
+            "body": "- Simple Present: go, goes\n- Simple Past: went\n- Past Participle (3. Form): gone"
+          },
+          {
+            "kind": "remember",
+            "title": "So benutzt du die Formen",
+            "body": "- I went to school yesterday. (Simple Past)\n- I have gone home. (Present Perfect)"
+          },
+          {
+            "kind": "mistake",
+            "title": "Typischer Fehler",
+            "body": "*goed* ist falsch. *go* ist unregelmäßig, die Form heißt *went*."
+          },
+          {
+            "kind": "text",
+            "title": "Weitere unregelmäßige Verben",
+            "body": "- see – saw – seen\n- come – came – come\n- take – took – taken\n- write – wrote – written"
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "went"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EN_USE_TENSES_TRAIN_006",
+    "why": "Explanation was English running text with capitals; rewritten in plain German, English examples kept.",
+    "ops": [
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Worum geht es",
+            "body": "*write* ist ein unregelmäßiges Verb: write – wrote – written."
+          },
+          {
+            "kind": "terms",
+            "title": "Die drei Formen",
+            "body": "1. Grundform (Infinitive): write\n2. Simple Past: wrote\n3. Past Participle (3. Form): written"
+          },
+          {
+            "kind": "steps",
+            "title": "Wann brauchst du die 3. Form",
+            "body": "- Present Perfect: I have written a letter.\n- Past Perfect: I had written a letter.\n- Passiv: The letter was written."
+          },
+          {
+            "kind": "remember",
+            "title": "Ähnliches Muster (Endung -en)",
+            "body": "- write – wrote – written\n- drive – drove – driven\n- ride – rode – ridden\n- rise – rose – risen"
+          },
+          {
+            "kind": "mistake",
+            "title": "Typischer Fehler",
+            "body": "*writed* ist falsch. Unregelmäßige Verben bekommen kein -ed."
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "written"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EN_USE_TENSES_TRAIN_007",
+    "why": "Explanation was English running text with capitals; rewritten in plain German, English examples kept.",
+    "ops": [
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Worum geht es",
+            "body": "Es geht um die Simple-Past-Formen unregelmäßiger Verben."
+          },
+          {
+            "kind": "terms",
+            "title": "Die Paare",
+            "body": "- see – saw (sehen – sah)\n- take – took (nehmen – nahm)\n- know – knew (wissen – wusste)\n- tell – told (erzählen – erzählte)"
+          },
+          {
+            "kind": "remember",
+            "title": "Alle drei Formen",
+            "body": "- see – saw – seen\n- take – took – taken\n- know – knew – known\n- tell – told – told"
+          },
+          {
+            "kind": "text",
+            "title": "Lerntipp",
+            "body": "Lerne Verben in Gruppen mit ähnlichem Muster.\n\nGruppe 1: Simple Past und 3. Form sind gleich.\n\n- tell – told – told\n- sell – sold – sold\n- send – sent – sent\n\nGruppe 2: Der Vokal ändert sich.\n\n- see – saw – seen\n- know – knew – known"
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "- see – saw\n- take – took\n- know – knew\n- tell – told"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EN_USE_TENSES_TRAIN_008",
+    "why": "Explanation was English running text with capitals; rewritten in plain German, English examples kept.",
+    "ops": [
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Worum geht es",
+            "body": "Es geht um das Present Perfect mit *since*."
+          },
+          {
+            "kind": "terms",
+            "title": "Die Regel",
+            "body": "- *since* + Zeitpunkt: Present Perfect\n- *for* + Zeitraum: Present Perfect"
+          },
+          {
+            "kind": "steps",
+            "title": "Die vier Sätze",
+            "body": "Prüfe jeden Satz einzeln."
+          },
+          {
+            "kind": "text",
+            "title": "I have lived here since 2020.",
+            "body": "Present Perfect mit *since*: Das ist richtig."
+          },
+          {
+            "kind": "text",
+            "title": "I have lived here yesterday.",
+            "body": "*yesterday* nennt eine abgeschlossene Zeit. Hier brauchst du das Simple Past."
+          },
+          {
+            "kind": "text",
+            "title": "I lived here since 2020.",
+            "body": "*since* verlangt das Present Perfect."
+          },
+          {
+            "kind": "text",
+            "title": "I am living here since 2020.",
+            "body": "*since* verlangt das Present Perfect, nicht die Verlaufsform."
+          },
+          {
+            "kind": "remember",
+            "title": "since oder for",
+            "body": "- *since* + Zeitpunkt: since 2020, since Monday, since 3 p.m.\n- *for* + Zeitraum: for 5 years, for 2 hours, for a week"
+          },
+          {
+            "kind": "text",
+            "title": "Beispiele",
+            "body": "- I have worked here since January.\n- I have worked here for 6 months."
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "I have lived here since 2020."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EN_USE_QUEST_NEG_TRAIN_001",
+    "why": "Explanation was English running text with capitals; rewritten in plain German, English examples kept.",
+    "ops": [
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Worum geht es",
+            "body": "Es geht um Fragen im Simple Present."
+          },
+          {
+            "kind": "terms",
+            "title": "Die Regel",
+            "body": "Do/Does + Subjekt + Grundform (ohne -s)?"
+          },
+          {
+            "kind": "steps",
+            "title": "Die Bildung",
+            "body": "- Aussage: She likes pizza.\n- Frage: Does she like pizza?"
+          },
+          {
+            "kind": "remember",
+            "title": "Do oder Does",
+            "body": "- *Do* bei I, you, we, they\n- *Does* bei he, she, it"
+          },
+          {
+            "kind": "mistake",
+            "title": "Wichtig",
+            "body": "Mit *Does* verliert das Vollverb sein -s. Aus *She likes* wird *Does she like?* Falsch ist *Does she likes?*"
+          },
+          {
+            "kind": "text",
+            "title": "Weitere Beispiele",
+            "body": "- He plays tennis. Frage: Does he play tennis?\n- They work here. Frage: Do they work here?\n- You speak German. Frage: Do you speak German?"
+          },
+          {
+            "kind": "text",
+            "title": "Die falschen Antworten",
+            "body": "- *Do she like ...?*: falsches Hilfsverb.\n- *Is she like ...?*: *be* steht nur bei Sätzen mit *be* und in der Verlaufsform.\n- *Like she ...?*: *Do* oder *Does* fehlt."
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "Does she like pizza?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EN_USE_QUEST_NEG_TRAIN_002",
+    "why": "Explanation was English running text with capitals; rewritten in plain German, English examples kept.",
+    "ops": [
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Worum geht es",
+            "body": "Es geht um die Verneinung im Simple Present."
+          },
+          {
+            "kind": "terms",
+            "title": "Die Regel",
+            "body": "Subjekt + do/does + not + Grundform"
+          },
+          {
+            "kind": "steps",
+            "title": "Die Bildung",
+            "body": "- Aussage: I like spinach.\n- Verneinung: I do not like spinach.\n- Kurzform: I don't like spinach."
+          },
+          {
+            "kind": "remember",
+            "title": "don't oder doesn't",
+            "body": "- *don't* (do not) bei I, you, we, they\n- *doesn't* (does not) bei he, she, it"
+          },
+          {
+            "kind": "text",
+            "title": "Beispiele",
+            "body": "- I don't like spinach. (I)\n- She doesn't like spinach. (she)\n- They don't work here. (they)\n- He doesn't play tennis. (he)"
+          },
+          {
+            "kind": "text",
+            "title": "Die falschen Antworten",
+            "body": "- *I doesn't like*: falsches Hilfsverb für *I*.\n- *I not like*: *do* fehlt.\n- *I no like*: Mit *no* verneinst du kein Verb."
+          },
+          {
+            "kind": "mistake",
+            "title": "Kurzformen",
+            "body": "- do not = don't\n- does not = doesn't"
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "I don't like spinach."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EN_USE_MODALS_TRAIN_001",
+    "why": "Explanation was English running text with capitals; rewritten in plain German, English examples kept.",
+    "ops": [
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Worum geht es",
+            "body": "Es geht um Modalverben und ihre Bedeutung."
+          },
+          {
+            "kind": "terms",
+            "title": "can = Fähigkeit (können)",
+            "body": "Mit *can* sagst du, was jemand kann."
+          },
+          {
+            "kind": "steps",
+            "title": "Beispiele",
+            "body": "- I can swim. (Ich kann schwimmen.)\n- She can speak German. (Sie kann Deutsch sprechen.)\n- Can you help me? (Kannst du mir helfen?)"
+          },
+          {
+            "kind": "remember",
+            "title": "Die Modalverben im Überblick",
+            "body": "- can = können (Fähigkeit, Möglichkeit)\n- must = müssen (Pflicht, Notwendigkeit)\n- should = sollte (Rat, Empfehlung)\n- may = dürfen, könnte (Erlaubnis, Möglichkeit)"
+          },
+          {
+            "kind": "text",
+            "title": "Weitere Beispiele",
+            "body": "- You must wear a seatbelt. (Pflicht)\n- You should study more. (Rat)\n- May I go to the toilet? (Erlaubnis)"
+          },
+          {
+            "kind": "mistake",
+            "title": "Grammatikregel",
+            "body": "Nach dem Modalverb steht die Grundform ohne *to*.\n\n- Richtig: I can swim.\n- Falsch: I can to swim."
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "can"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EN_VOCAB_SCHOOL_TRAIN_001",
+    "why": "Explanation was English running text with capitals; rewritten in plain German, English examples kept.",
+    "ops": [
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Worum geht es",
+            "body": "Es geht um Schulwörter."
+          },
+          {
+            "kind": "terms",
+            "title": "Die Paare",
+            "body": "- homework = Hausaufgaben\n- exam = Prüfung\n- teacher = Lehrer/in\n- subject = Schulfach"
+          },
+          {
+            "kind": "remember",
+            "title": "Weitere Schulwörter",
+            "body": "- classroom = Klassenzimmer\n- student/pupil = Schüler/in\n- lesson = Unterrichtsstunde\n- timetable = Stundenplan\n- break = Pause\n- grade/mark = Note"
+          },
+          {
+            "kind": "text",
+            "title": "Beispielsätze",
+            "body": "- I have to do my homework.\n- The math exam is next week.\n- My favorite subject is English.\n- Our teacher is very nice."
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "- homework = Hausaufgaben\n- exam = Prüfung\n- teacher = Lehrer/in\n- subject = Schulfach"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EN_WRITE_ERRORFIX_TRAIN_001",
+    "why": "Explanation was English running text with capitals; rewritten in plain German, English examples kept.",
+    "ops": [
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Worum geht es",
+            "body": "Es geht um Fehlerkorrektur: *don't* und *doesn't* in der Verneinung."
+          },
+          {
+            "kind": "terms",
+            "title": "Die Regel",
+            "body": "- *don't* bei I, you, we, they\n- *doesn't* bei he, she, it"
+          },
+          {
+            "kind": "steps",
+            "title": "Der Fehler",
+            "body": "*She don't like coffee.* ist falsch. *She* ist 3. Person Singular und braucht *doesn't*."
+          },
+          {
+            "kind": "steps",
+            "title": "Der richtige Satz",
+            "body": "She doesn't like coffee."
+          },
+          {
+            "kind": "remember",
+            "title": "Warum nicht likes",
+            "body": "Nach *doesn't* steht die Grundform.\n\n- Richtig: She doesn't like.\n- Falsch: She doesn't likes."
+          },
+          {
+            "kind": "text",
+            "title": "Weitere Beispiele",
+            "body": "- He doesn't work here.\n- It doesn't matter.\n- They don't know.\n- I don't understand."
+          },
+          {
+            "kind": "mistake",
+            "title": "Häufiger Fehler in der MSA-Prüfung",
+            "body": "*don't* und *doesn't* werden sehr oft verwechselt. Merke dir: Bei he, she, it steht *doesn't*."
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "don't should be doesn't"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EN_USE_TENSES_020",
+    "why": "Explanation was English running text with capitals; rewritten in plain German, English examples kept.",
+    "ops": [
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Worum geht es",
+            "body": "Es geht um das Simple Present."
+          },
+          {
+            "kind": "terms",
+            "title": "Die Verwendung",
+            "body": "Es steht für Gewohnheiten und regelmäßige Handlungen."
+          },
+          {
+            "kind": "steps",
+            "title": "Signalwörter",
+            "body": "- usually, always, often\n- every day, sometimes\n- never"
+          },
+          {
+            "kind": "remember",
+            "title": "Im Satz",
+            "body": "*I usually watch TV*: *usually* zeigt eine Gewohnheit. Deshalb ist es das Simple Present."
+          },
+          {
+            "kind": "formula",
+            "title": "Die Bildung",
+            "body": "Grundform, bei he, she, it mit -s oder -es"
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "Simple Present"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EN_USE_TENSES_021",
+    "why": "Explanation was English running text with capitals; rewritten in plain German, English examples kept.",
+    "ops": [
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Worum geht es",
+            "body": "Es geht um das Present Progressive."
+          },
+          {
+            "kind": "terms",
+            "title": "Die Verwendung",
+            "body": "Es steht für Handlungen, die gerade jetzt passieren."
+          },
+          {
+            "kind": "steps",
+            "title": "Signalwörter",
+            "body": "- right now, now\n- at the moment\n- Look! Listen!"
+          },
+          {
+            "kind": "remember",
+            "title": "Im Satz",
+            "body": "*They are calling ... right now*: Die Handlung passiert gerade jetzt. Deshalb ist es das Present Progressive."
+          },
+          {
+            "kind": "formula",
+            "title": "Die Bildung",
+            "body": "am/is/are + Verb mit -ing"
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "Present Progressive"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EN_USE_TENSES_022",
+    "why": "Explanation was English running text with capitals; rewritten in plain German, English examples kept.",
+    "ops": [
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Worum geht es",
+            "body": "Es geht um das Present Perfect."
+          },
+          {
+            "kind": "terms",
+            "title": "Die Verwendung",
+            "body": "Eine Handlung hat in der Vergangenheit begonnen und dauert bis jetzt an."
+          },
+          {
+            "kind": "steps",
+            "title": "Signalwörter",
+            "body": "- since, for\n- already, yet\n- just, recently\n- ever, never"
+          },
+          {
+            "kind": "remember",
+            "title": "Im Satz",
+            "body": "*He has lived here since 2003*: Er ist 2003 eingezogen und wohnt immer noch dort. Deshalb ist es das Present Perfect."
+          },
+          {
+            "kind": "formula",
+            "title": "Die Bildung",
+            "body": "have/has + 3. Form (Past Participle)"
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "Present Perfect"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EN_USE_TENSES_023",
+    "why": "Explanation was English running text with capitals; rewritten in plain German, English examples kept.",
+    "ops": [
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Worum geht es",
+            "body": "Es geht um die Bildung des Present Perfect."
+          },
+          {
+            "kind": "formula",
+            "title": "Die Regel",
+            "body": "have/has + 3. Form (Past Participle)"
+          },
+          {
+            "kind": "steps",
+            "title": "Hier",
+            "body": "- Das Subjekt ist *I*. Deshalb steht *have*, nicht *has*.\n- Die 3. Form von *arrive* ist *arrived*."
+          },
+          {
+            "kind": "remember",
+            "title": "just = gerade eben",
+            "body": "*just* ist ein typisches Signalwort für das Present Perfect."
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "I have just arrived at the airport."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EN_USE_TENSES_024",
+    "why": "Explanation was English running text with capitals; rewritten in plain German, English examples kept.",
+    "ops": [
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Unregelmäßiges Verb",
+            "body": "go"
+          },
+          {
+            "kind": "formula",
+            "title": "Die Formen",
+            "body": "- Simple Present: go\n- Simple Past: went\n- Past Participle (3. Form): gone"
+          },
+          {
+            "kind": "mistake",
+            "title": "Typischer Fehler",
+            "body": "*goed* gibt es nicht. *go* ist unregelmäßig."
+          },
+          {
+            "kind": "remember",
+            "title": "Beispiele",
+            "body": "- Yesterday I went to school. (Simple Past)\n- I have gone to school. (Present Perfect)"
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "went"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EN_USE_TENSES_025",
+    "why": "Explanation was English running text with capitals; rewritten in plain German, English examples kept.",
+    "ops": [
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Unregelmäßiges Verb",
+            "body": "write"
+          },
+          {
+            "kind": "formula",
+            "title": "Die Formen",
+            "body": "- Simple Present: write\n- Simple Past: wrote\n- Past Participle (3. Form): written"
+          },
+          {
+            "kind": "remember",
+            "title": "Beispiele",
+            "body": "- Simple Past: She wrote a letter yesterday.\n- Present Perfect: She has written a letter."
+          },
+          {
+            "kind": "mistake",
+            "title": "Merke",
+            "body": "write – wrote – written\n\nAlle drei Formen sind verschieden."
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "written"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EN_USE_TENSES_026",
+    "why": "Explanation was English running text with capitals; rewritten in plain German, English examples kept.",
+    "ops": [
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Unregelmäßiges Verb",
+            "body": "see"
+          },
+          {
+            "kind": "formula",
+            "title": "Die Formen",
+            "body": "- Simple Present: see\n- Simple Past: saw\n- Past Participle (3. Form): seen"
+          },
+          {
+            "kind": "remember",
+            "title": "Beispiele",
+            "body": "- I saw him yesterday. (Simple Past)\n- I have seen this movie before. (Present Perfect)"
+          },
+          {
+            "kind": "mistake",
+            "title": "Achtung",
+            "body": "- *seed* ist ein Nomen und bedeutet Samen.\n- *sawed* kommt von dem Verb *to saw* (sägen)."
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "saw"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EN_USE_TENSES_027",
+    "why": "Explanation was English running text with capitals; rewritten in plain German, English examples kept.",
+    "ops": [
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Unregelmäßiges Verb",
+            "body": "speak"
+          },
+          {
+            "kind": "formula",
+            "title": "Die Formen",
+            "body": "- Simple Present: speak\n- Simple Past: spoke\n- Past Participle (3. Form): spoken"
+          },
+          {
+            "kind": "remember",
+            "title": "Beispiele",
+            "body": "- She spoke to him yesterday.\n- She has spoken to him already."
+          },
+          {
+            "kind": "mistake",
+            "title": "Das Muster",
+            "body": "speak – spoke – spoken\n\nGenauso geht: break – broke – broken."
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "spoken"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EN_USE_TENSES_028",
+    "why": "Explanation was English running text with capitals; rewritten in plain German, English examples kept.",
+    "ops": [
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Unregelmäßiges Verb",
+            "body": "put"
+          },
+          {
+            "kind": "formula",
+            "title": "Die Formen",
+            "body": "- Simple Present: put\n- Simple Past: put\n- Past Participle (3. Form): put"
+          },
+          {
+            "kind": "remember",
+            "title": "Alle Formen sind gleich",
+            "body": "put – put – put"
+          },
+          {
+            "kind": "terms",
+            "title": "Ähnliche Verben",
+            "body": "- cut – cut – cut\n- shut – shut – shut\n- hurt – hurt – hurt"
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "put - put"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EN_USE_TENSES_030",
+    "why": "Explanation was English running text with capitals; rewritten in plain German, English examples kept.",
+    "ops": [
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Worum geht es",
+            "body": "Es geht um Signalwörter. Jede Zeitform hat ihre eigenen."
+          },
+          {
+            "kind": "terms",
+            "title": "Present Perfect",
+            "body": "- since, for\n- already, yet\n- just, recently\n- ever, never\n- so far, up to now"
+          },
+          {
+            "kind": "terms",
+            "title": "Simple Past",
+            "body": "- yesterday\n- last week, last month, last year\n- ago"
+          },
+          {
+            "kind": "terms",
+            "title": "Simple Present",
+            "body": "- every day, always\n- usually, often"
+          },
+          {
+            "kind": "terms",
+            "title": "Present Progressive",
+            "body": "- now, at the moment"
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "since (Present Perfect)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EN_USE_TENSES_031",
+    "why": "Explanation was English running text with capitals; rewritten in plain German, English examples kept.",
+    "ops": [
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Unregelmäßiges Verb",
+            "body": "think"
+          },
+          {
+            "kind": "formula",
+            "title": "Die Formen",
+            "body": "- Simple Present: think\n- Simple Past: thought\n- Past Participle (3. Form): thought"
+          },
+          {
+            "kind": "mistake",
+            "title": "Typischer Fehler",
+            "body": "*thinked* gibt es nicht."
+          },
+          {
+            "kind": "remember",
+            "title": "Ähnliches Muster",
+            "body": "- think – thought – thought\n- bring – brought – brought\n- buy – bought – bought"
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "thought"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EN_USE_MODALS_005",
+    "why": "Explanation was English running text with capitals; rewritten in plain German, English examples kept.",
+    "ops": [
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Worum geht es",
+            "body": "Es geht um Modalverben. Gesucht ist das Verb für eine Pflicht (*obligation*)."
+          },
+          {
+            "kind": "terms",
+            "title": "must",
+            "body": "*must* drückt eine starke Pflicht oder Notwendigkeit aus. *You must wear a seatbelt* bedeutet: Es ist vorgeschrieben."
+          },
+          {
+            "kind": "terms",
+            "title": "Vergleich",
+            "body": "- must = starke Pflicht\n- should = Rat\n- can = Fähigkeit oder Erlaubnis\n- might, could = Möglichkeit"
+          },
+          {
+            "kind": "remember",
+            "title": "Tipp",
+            "body": "*must* steht oft bei Regeln und Gesetzen."
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "must"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EN_USE_MODALS_006",
+    "why": "Explanation was English running text with capitals; rewritten in plain German, English examples kept.",
+    "ops": [
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Worum geht es",
+            "body": "Es geht um Modalverben. Gesucht ist das Verb für eine Fähigkeit (*ability*)."
+          },
+          {
+            "kind": "terms",
+            "title": "can",
+            "body": "*can* drückt eine Fähigkeit aus. Es sagt, was jemand kann.\n\n*She can speak three languages* bedeutet: Sie kann drei Sprachen sprechen."
+          },
+          {
+            "kind": "terms",
+            "title": "Vergleich",
+            "body": "- can = Fähigkeit jetzt\n- could = Fähigkeit in der Vergangenheit\n- will be able to = Fähigkeit in der Zukunft"
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "can"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EN_USE_COMPARISON_005",
+    "why": "Explanation was English running text with capitals; rewritten in plain German, English examples kept.",
+    "ops": [
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Worum geht es",
+            "body": "Es geht um eine unregelmäßige Steigerung."
+          },
+          {
+            "kind": "formula",
+            "title": "Die Formen von good",
+            "body": "- Grundform: good\n- Komparativ: better\n- Superlativ: best"
+          },
+          {
+            "kind": "mistake",
+            "title": "Unregelmäßig",
+            "body": "*gooder* und *more good* gibt es nicht."
+          },
+          {
+            "kind": "remember",
+            "title": "Ähnlich",
+            "body": "- bad – worse – worst\n- much/many – more – most\n- little – less – least"
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "better"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EN_VOCAB_DAILYLIFE_005",
+    "why": "Explanation was English running text with capitals; rewritten in plain German, English examples kept.",
+    "ops": [
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Worum geht es",
+            "body": "Es geht um das Wort *spend*."
+          },
+          {
+            "kind": "terms",
+            "title": "to spend hat zwei Bedeutungen",
+            "body": "1. spend money = Geld ausgeben\n2. spend time = Zeit verbringen"
+          },
+          {
+            "kind": "remember",
+            "title": "Beispiele",
+            "body": "- I spent 50 euros on shoes. (ausgeben)\n- I spent the weekend with friends. (verbringen)"
+          },
+          {
+            "kind": "formula",
+            "title": "Unregelmäßig",
+            "body": "spend – spent – spent"
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "Geld ausgeben"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EN_VOCAB_DAILYLIFE_006",
+    "why": "Explanation was English running text with capitals; rewritten in plain German, English examples kept.",
+    "ops": [
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Worum geht es",
+            "body": "Es geht um das Wort *lose*."
+          },
+          {
+            "kind": "terms",
+            "title": "Die Bedeutung",
+            "body": "*to lose* bedeutet verlieren."
+          },
+          {
+            "kind": "remember",
+            "title": "Beispiele",
+            "body": "- I lost my keys. (Schlüssel verloren)\n- We lost the game. (Spiel verloren)"
+          },
+          {
+            "kind": "formula",
+            "title": "Unregelmäßig",
+            "body": "lose – lost – lost"
+          },
+          {
+            "kind": "mistake",
+            "title": "Nicht verwechseln",
+            "body": "- lose = verlieren\n- leave = verlassen\n- forget = vergessen"
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "verlieren"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EN_USE_QUEST_NEG_005",
+    "why": "Explanation was English running text with capitals; rewritten in plain German, English examples kept.",
+    "ops": [
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Worum geht es",
+            "body": "Es geht um Fragen im Simple Present."
+          },
+          {
+            "kind": "formula",
+            "title": "Die Regel",
+            "body": "Do/Does + Subjekt + Grundform (ohne -s)?"
+          },
+          {
+            "kind": "steps",
+            "title": "Schritt für Schritt",
+            "body": "- *she* ist 3. Person Singular. Deshalb steht *Does*.\n- Nach *Does* steht die Grundform ohne -s.\n- Es heißt also *like*, nicht *likes*."
+          },
+          {
+            "kind": "mistake",
+            "title": "Typischer Fehler",
+            "body": "*Does she likes ...?* ist falsch. Das -s steckt schon in *Does*."
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "Does she like pizza?"
+          }
+        ]
+      }
+    ]
+  }
+]

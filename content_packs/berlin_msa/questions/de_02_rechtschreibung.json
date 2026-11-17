@@ -31,7 +31,7 @@
       },
       {
         "kind": "remember",
-        "body": "| Die Probe | Du schreibst | Wortart |\n| --- | --- | --- |\n| dieses oder welches passt | das | Artikel, Pronomen oder Relativpronomen |\n| keins von beiden passt | dass | Konjunktion, davor steht ein Komma |"
+        "body": "| Die Probe | Du schreibst | Wortart |\n| --- | --- | --- |\n| dieses oder welches passt | das | Artikel, Pronomen oder Relativpronomen |\n| keins von beiden passt | dass | Konjunktion, mitten im Satz steht davor meistens ein Komma |"
       }
     ],
     "tags": [
@@ -436,7 +436,7 @@
       {
         "kind": "what",
         "title": "Warum",
-        "body": "Das Wort **{{s_wort}}** endet auf **{{s_a}}**. {{s_grund}}"
+        "body": "In **{{s_wort}}** steckt die Endung **{{s_a}}**. {{s_grund}}"
       },
       {
         "kind": "remember",
@@ -462,7 +462,7 @@
               "b": "-en",
               "c": "-ist",
               "d": "-lei",
-              "grund": "Diese Endung zeigt ein Nomen an, also schreibst du groß."
+              "grund": "Das -en dahinter zeigt nur die Mehrzahl an. Die Endung -ung zeigt ein Nomen an, also schreibst du groß."
             },
             {
               "wort": "gefährlich",
@@ -478,7 +478,7 @@
               "b": "-en",
               "c": "-krank",
               "d": "-eit",
-              "grund": "Diese Endung zeigt ein Nomen an, also schreibst du groß."
+              "grund": "Das -en dahinter zeigt nur die Mehrzahl an. Die Endung -heit zeigt ein Nomen an, also schreibst du groß."
             },
             {
               "wort": "freundlich",

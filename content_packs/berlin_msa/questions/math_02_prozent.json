@@ -804,7 +804,7 @@
       },
       {
         "kind": "steps",
-        "body": "1. Faktor pro Jahr: $1 + \\frac{{{p}}}{100} = {{= 1 + p/100}}$\n2. Für {{n}} Jahre: ${{= 1 + p/100}}^{{{n}}} \\approx {{= (1+p/100)^n | fixed:4}}$\n3. Mal Anfangskapital: ${{k}} \\cdot {{= (1+p/100)^n | fixed:4}} \\approx {{= k*(1+p/100)^n | fixed:2}}$ €"
+        "body": "1. Faktor pro Jahr: $1 + \\frac{{{p}}}{100} = {{= 1 + p/100}}$\n2. Für {{n}} Jahre: ${{= 1 + p/100}}^{{{n}}} \\approx {{= (1+p/100)^n | fixed:5}}$. Runde diesen Faktor nicht. Lass ihn im Taschenrechner stehen.\n3. Mal Anfangskapital: ${{k}} \\cdot {{= 1 + p/100}}^{{{n}}} \\approx {{= k*(1+p/100)^n | fixed:2}}$ €"
       },
       {
         "kind": "mistake",

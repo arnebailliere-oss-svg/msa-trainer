@@ -129,7 +129,7 @@
     "explanation": [
       {
         "kind": "steps",
-        "body": "1. Zahl auf die andere Seite: ${{a}}x {{= b | sign}} = {{c}} \\quad | {{= -b | sign}}$\n   ${{a}}x = {{= c - b}}$\n2. Durch den Faktor vor $x$ teilen: $| : {{a}}$\n   $x = \\frac{{{= c - b}}}{{{a}}} = {{= (c - b) / a}}$\n3. Probe: ${{a}} \\cdot {{= (c-b)/a}} {{= b | sign}} = {{c}}$ ✓"
+        "body": "1. Zahl auf die andere Seite: ${{a}}x {{= b | sign}} = {{c}} \\quad | {{= -b | sign}}$\n   ${{a}}x = {{= c - b}}$\n2. Durch den Faktor vor $x$ teilen: $| : {{a}}$\n   $x = \\frac{{{= c - b}}}{{{a}}} = {{= (c - b) / a}}$\n3. Probe: ${{a}} \\cdot {{= (c-b)/a | paren}} {{= b | sign}} = {{c}}$ ✓"
       },
       {
         "kind": "mistake",
@@ -180,7 +180,7 @@
     "topicId": "MATH_ALG_EQU_LINEAR",
     "difficulty": 3,
     "qtype": "SHORT",
-    "prompt": "Löse die Gleichung: ${{a}}x {{= b | sign}} = {{c}}x {{= d | sign}}$",
+    "prompt": "Löse die Gleichung: ${{a}}x {{= b | sign}} = {{c | coef}}x {{= d | sign}}$",
     "payload": {
       "answer_type": "number"
     },
@@ -191,7 +191,7 @@
     "explanation": [
       {
         "kind": "steps",
-        "body": "1. Alle $x$ auf eine Seite: $| {{= -c | sign}}x$\n   ${{= a - c}}x {{= b | sign}} = {{d}}$\n2. Alle Zahlen auf die andere Seite: $| {{= -b | sign}}$\n   ${{= a - c}}x = {{= d - b}}$\n3. Durch ${{= a - c}}$ teilen:\n   $x = \\frac{{{= d - b}}}{{{= a - c}}} = {{= (d - b) / (a - c)}}$\n4. Probe: links ${{a}} \\cdot {{= (d-b)/(a-c)}} {{= b | sign}} = {{= a*(d-b)/(a-c) + b}}$, rechts ${{c}} \\cdot {{= (d-b)/(a-c)}} {{= d | sign}} = {{= c*(d-b)/(a-c) + d}}$ ✓"
+        "body": "1. Alle $x$ auf eine Seite: $| - {{c | coef}}x$\n   ${{= a - c | coef}}x {{= b | sign}} = {{d}}$\n2. Alle Zahlen auf die andere Seite: $| {{= -b | sign}}$\n   ${{= a - c | coef}}x = {{= d - b}}$\n3. Durch ${{= a - c}}$ teilen:\n   $x = \\frac{{{= d - b}}}{{{= a - c}}} = {{= (d - b) / (a - c)}}$\n4. Probe: links ${{a}} \\cdot {{= (d-b)/(a-c) | paren}} {{= b | sign}} = {{= a*(d-b)/(a-c) + b}}$, rechts ${{c | coef}} {{= if(c == 1, 0, 1) | pick:\\cdot,}} {{= (d-b)/(a-c) | paren}} {{= d | sign}} = {{= c*(d-b)/(a-c) + d}}$ ✓"
       },
       {
         "kind": "remember",
@@ -689,7 +689,7 @@
       "answer_type": "term"
     },
     "solution": {
-      "value": "{{a}}({{m}}x+{{n}})"
+      "value": "{{a}}({{m | coef}}x+{{n}})"
     },
     "explanation": [
       {
@@ -698,11 +698,11 @@
       },
       {
         "kind": "steps",
-        "body": "1. Größter gemeinsamer Teiler von {{= a*m}} und {{= a*n}}: **{{a}}**\n2. Beide Glieder durch {{a}} teilen: ${{= a*m}}x : {{a}} = {{m}}x$ und ${{= a*n}} : {{a}} = {{n}}$\n3. ${{= a*m}}x + {{= a*n}} = {{a}} \\cdot ({{m}}x + {{n}})$\n\nProbe durch Ausmultiplizieren: ${{a}} \\cdot {{m}}x + {{a}} \\cdot {{n}} = {{= a*m}}x + {{= a*n}}$ ✓"
+        "body": "1. Größter gemeinsamer Teiler von {{= a*m}} und {{= a*n}}: **{{a}}**\n2. Beide Glieder durch {{a}} teilen: ${{= a*m}}x : {{a}} = {{m | coef}}x$ und ${{= a*n}} : {{a}} = {{n}}$\n3. ${{= a*m}}x + {{= a*n}} = {{a}} \\cdot ({{m | coef}}x + {{n}})$\n\nProbe durch Ausmultiplizieren: ${{a}} \\cdot {{m | coef}}x + {{a}} \\cdot {{n}} = {{= a*m}}x + {{= a*n}}$ ✓"
       },
       {
         "kind": "answer",
-        "body": "${{a}}({{m}}x + {{n}})$"
+        "body": "${{a}}({{m | coef}}x + {{n}})$"
       }
     ],
     "tags": [
@@ -740,7 +740,7 @@
     "topicId": "MATH_ALG_EQU_QUAD",
     "difficulty": 3,
     "qtype": "MCQ",
-    "prompt": "Löse mit der pq-Formel: $x^2 {{= p | sign}}x {{= q | sign}} = 0$",
+    "prompt": "Löse mit der pq-Formel: $x^2 {{= if(p > 0, 1, 0) | pick:+,−}} {{= abs(p) | coef}}x {{= q | sign}} = 0$",
     "payload": {
       "choices": [
         "$L = \\{{{r1}}; {{r2}}\\}$",
@@ -764,7 +764,7 @@
       },
       {
         "kind": "steps",
-        "body": "$x_{1,2} = {{= -p/2}} \\pm \\sqrt{{{= (p/2)^2}} {{= -q | sign}}} = {{= -p/2}} \\pm \\sqrt{{{= (p/2)^2 - q}}} = {{= -p/2}} \\pm {{= sqrt((p/2)^2 - q)}}$\n\n$x_1 = {{= -p/2}} + {{= sqrt((p/2)^2 - q)}} = {{r1}}$, $x_2 = {{= -p/2}} - {{= sqrt((p/2)^2 - q)}} = {{r2}}$\n\nProbe mit $x_1$: ${{r1}}^2 {{= p | sign}} \\cdot {{r1}} {{= q | sign}} = {{= r1*r1}} {{= p*r1 | sign}} {{= q | sign}} = 0$ ✓"
+        "body": "$x_{1,2} = {{= -p/2}} \\pm \\sqrt{{{= (p/2)^2}} {{= -q | sign}}} = {{= -p/2}} \\pm \\sqrt{{{= (p/2)^2 - q}}} = {{= -p/2}} \\pm {{= sqrt((p/2)^2 - q)}}$\n\n$x_1 = {{= -p/2}} + {{= sqrt((p/2)^2 - q)}} = {{r1}}$, $x_2 = {{= -p/2}} - {{= sqrt((p/2)^2 - q)}} = {{r2}}$\n\nProbe mit $x_1$: ${{r1 | paren}}^2 {{= p | sign}} \\cdot {{r1 | paren}} {{= q | sign}} = {{= r1*r1}} {{= p*r1 | sign}} {{= q | sign}} = 0$ ✓"
       },
       {
         "kind": "remember",
@@ -1000,7 +1000,7 @@
     "topicId": "MATH_ALG_EQU_WORD",
     "difficulty": 3,
     "qtype": "SHORT",
-    "prompt": "{{name1}} ist {{k}}-mal so alt wie {{name2}}. Zusammen sind sie {{s}} Jahre alt. Wie alt ist {{name2}}?",
+    "prompt": "{{paar_alt}} ist {{k}}-mal so alt wie {{paar_jung}}. Zusammen sind sie {{s}} Jahre alt. Wie alt ist {{paar_kind}}?",
     "payload": {
       "answer_type": "number",
       "unit": "Jahre"
@@ -1012,7 +1012,7 @@
     "explanation": [
       {
         "kind": "steps",
-        "body": "1. Variable festlegen: $x$ = Alter von {{name2}}. Dann ist {{name1}} ${{k}}x$ Jahre alt.\n2. Gleichung aufstellen: $x + {{k}}x = {{s}}$\n3. Zusammenfassen: ${{= k+1}}x = {{s}}$\n4. Teilen: $x = {{s}} : {{= k+1}} = {{= s/(k+1)}}$\n5. Probe: {{name2}} {{= s/(k+1)}}, {{name1}} ${{k}} \\cdot {{= s/(k+1)}} = {{= k*s/(k+1)}}$, zusammen ${{= s/(k+1)}} + {{= k*s/(k+1)}} = {{s}}$ ✓"
+        "body": "1. Variable festlegen: $x$ = Alter {{paar_gen}}. Dann ist {{paar_altklein}} ${{k}}x$ Jahre alt.\n2. Gleichung aufstellen: $x + {{k}}x = {{s}}$\n3. Zusammenfassen: ${{= k+1}}x = {{s}}$\n4. Teilen: $x = {{s}} : {{= k+1}} = {{= s/(k+1)}}$\n5. Probe: {{paar_kindgross}} ist {{= s/(k+1)}} Jahre alt. {{paar_alt}} ist ${{k}} \\cdot {{= s/(k+1)}} = {{= k*s/(k+1)}}$ Jahre alt. Zusammen sind das ${{= s/(k+1)}} + {{= k*s/(k+1)}} = {{s}}$ Jahre ✓"
       },
       {
         "kind": "remember",
@@ -1020,7 +1020,7 @@
       },
       {
         "kind": "answer",
-        "body": "{{name2}} ist **{{= s/(k+1)}} Jahre** alt."
+        "body": "{{paar_kindgross}} ist **{{= s/(k+1)}} Jahre** alt."
       }
     ],
     "tags": [
@@ -1039,30 +1039,53 @@
         "x": {
           "type": "int",
           "min": 4,
-          "max": 16
+          "max": 22
         },
-        "name1": {
-          "type": "choice",
-          "values": [
-            "Der Vater",
-            "Die Mutter",
-            "Die Tante",
-            "Der Trainer"
-          ]
-        },
-        "name2": {
-          "type": "choice",
-          "values": [
-            "Sohn",
-            "Tochter",
-            "Neffe",
-            "Nichte"
+        "paar": {
+          "type": "pick",
+          "from": [
+            {
+              "alt": "Der Vater",
+              "altklein": "der Vater",
+              "jung": "sein Sohn",
+              "kind": "der Sohn",
+              "kindgross": "Der Sohn",
+              "gen": "des Sohnes"
+            },
+            {
+              "alt": "Die Mutter",
+              "altklein": "die Mutter",
+              "jung": "ihre Tochter",
+              "kind": "die Tochter",
+              "kindgross": "Die Tochter",
+              "gen": "der Tochter"
+            },
+            {
+              "alt": "Die Tante",
+              "altklein": "die Tante",
+              "jung": "ihre Nichte",
+              "kind": "die Nichte",
+              "kindgross": "Die Nichte",
+              "gen": "der Nichte"
+            },
+            {
+              "alt": "Der Onkel",
+              "altklein": "der Onkel",
+              "jung": "sein Neffe",
+              "kind": "der Neffe",
+              "kindgross": "Der Neffe",
+              "gen": "des Neffen"
+            }
           ]
         }
       },
       "derived": {
         "s": "x * (k + 1)"
-      }
+      },
+      "constraints": [
+        "k * x <= 66",
+        "(k - 1) * x >= 20"
+      ]
     }
   }
 ]

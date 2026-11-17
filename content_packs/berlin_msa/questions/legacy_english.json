@@ -21,37 +21,37 @@
     "explanation": [
       {
         "kind": "what",
-        "title": "What is this",
-        "body": "Present Simple - for habits and routines."
+        "title": "Worum geht es",
+        "body": "Das Simple Present steht für Gewohnheiten und für Dinge, die regelmäßig passieren."
       },
       {
         "kind": "terms",
-        "title": "The rule",
-        "body": "With he/she/it → add -s or -es to the verb!"
+        "title": "Die Regel",
+        "body": "Bei he, she, it bekommt das Verb ein **-s** oder -es."
       },
       {
         "kind": "steps",
-        "title": "How it works",
-        "body": "I go → She goes\n   ↑        ↑\n  (no s)   (+s)"
+        "title": "So geht es",
+        "body": "Aus *I go* wird *She goes*. Bei *I* steht kein -s. Bei *she* kommt -es dazu."
       },
       {
         "kind": "text",
-        "title": "Signal words",
-        "body": "'every day' = routine = Present Simple"
+        "title": "Signalwörter",
+        "body": "*every day* zeigt eine Gewohnheit. Deshalb steht das Simple Present."
       },
       {
         "kind": "remember",
-        "title": "Remember",
-        "body": "I/you/we/they → go\nhe/she/it → goes"
+        "title": "Merke",
+        "body": "- I, you, we, they: go\n- he, she, it: goes"
       },
       {
         "kind": "mistake",
-        "title": "Common mistakes",
-        "body": "• 'She go' (missing -s)\n• 'She is go' (wrong structure)\n• 'She going' (missing 'is' for continuous)"
+        "title": "Typische Fehler",
+        "body": "- *She go*: Das -s fehlt.\n- *She is go*: Diese Form gibt es nicht.\n- *She going*: Für die Verlaufsform fehlt *is*."
       },
       {
         "kind": "answer",
-        "title": "Answer",
+        "title": "Antwort",
         "body": "She goes to school every day."
       }
     ],
@@ -83,37 +83,37 @@
     "explanation": [
       {
         "kind": "what",
-        "title": "What is this",
-        "body": "Present Continuous - for actions happening RIGHT NOW."
+        "title": "Worum geht es",
+        "body": "Das Present Progressive steht für Handlungen, die gerade jetzt passieren."
       },
       {
         "kind": "terms",
-        "title": "The rule",
-        "body": "'Look!' = something is happening NOW\n→ Use Present Continuous: am/is/are + verb-ing"
+        "title": "Die Regel",
+        "body": "*Look!* zeigt: Etwas passiert in diesem Moment. Deshalb brauchst du das **Present Progressive**: am/is/are + Verb mit -ing."
       },
       {
         "kind": "steps",
-        "title": "Structure",
-        "body": "[am/is/are] + [verb + ing]\nThe cat is sleeping\n      ↑     ↑\n     is   -ing"
+        "title": "Der Satzbau",
+        "body": "am/is/are + Verb mit -ing\n\nThe cat is sleeping. Hier stehen *is* und *sleeping* mit -ing."
       },
       {
         "kind": "text",
-        "title": "Signal words",
-        "body": "Look! Listen! Right now! At the moment!\n→ Present Continuous!"
+        "title": "Signalwörter",
+        "body": "Bei *Look!*, *Listen!*, *right now* und *at the moment* steht das Present Progressive."
       },
       {
         "kind": "remember",
-        "title": "Comparison",
-        "body": "• Every day → Present Simple (habit)\n• Right now → Present Continuous (now)"
+        "title": "Vergleich",
+        "body": "- *every day*: Simple Present (Gewohnheit)\n- *right now*: Present Progressive (gerade jetzt)"
       },
       {
         "kind": "mistake",
-        "title": "Common mistake",
-        "body": "Using Present Simple for current actions!"
+        "title": "Typischer Fehler",
+        "body": "Viele nehmen das Simple Present für etwas, das gerade jetzt passiert. Das ist falsch."
       },
       {
         "kind": "answer",
-        "title": "Answer",
+        "title": "Antwort",
         "body": "Look! The cat is sleeping on the sofa."
       }
     ],
@@ -145,37 +145,37 @@
     "explanation": [
       {
         "kind": "what",
-        "title": "What is this",
-        "body": "Past Simple - for completed actions in the past."
+        "title": "Worum geht es",
+        "body": "Das Simple Past steht für abgeschlossene Handlungen in der Vergangenheit."
       },
       {
         "kind": "terms",
-        "title": "The rule",
-        "body": "'yesterday' = past = Past Simple"
+        "title": "Die Regel",
+        "body": "*yesterday* bedeutet Vergangenheit. Deshalb brauchst du das **Simple Past**."
       },
       {
         "kind": "steps",
-        "title": "How to form",
-        "body": "Regular verbs: add -ed\nwalk → walked\nplay → played"
+        "title": "Die Bildung",
+        "body": "Regelmäßige Verben bekommen die Endung -ed:\n\n- walk – walked\n- play – played"
       },
       {
         "kind": "text",
-        "title": "Signal words",
-        "body": "yesterday, last week, ago, in 2020\n→ Past Simple!"
+        "title": "Signalwörter",
+        "body": "Bei *yesterday*, *last week*, *ago* und *in 2020* steht das Simple Past."
       },
       {
         "kind": "remember",
-        "title": "Remember",
-        "body": "Past Simple is the SAME for all persons:\nI walked, you walked, he walked, we walked"
+        "title": "Merke",
+        "body": "Das Simple Past ist für alle Personen gleich: I walked, you walked, he walked, we walked."
       },
       {
         "kind": "mistake",
-        "title": "Common mistakes",
-        "body": "• 'I walk yesterday' (wrong tense)\n• 'I was walked' (wrong structure)"
+        "title": "Typische Fehler",
+        "body": "- *I walk ... yesterday*: Das ist Gegenwart statt Vergangenheit.\n- *I walks*: Die Endung -s gibt es nur bei he, she, it in der Gegenwart.\n- *I am walking ... yesterday*: Die Verlaufsform der Gegenwart passt nicht zu *yesterday*."
       },
       {
         "kind": "answer",
-        "title": "Answer",
+        "title": "Antwort",
         "body": "I walked to school yesterday."
       }
     ],
@@ -207,32 +207,32 @@
     "explanation": [
       {
         "kind": "what",
-        "title": "What is this",
-        "body": "Past Simple with irregular verb (do → did)."
+        "title": "Worum geht es",
+        "body": "Es geht um das Simple Past mit einem unregelmäßigen Verb. *Yesterday* verlangt die Vergangenheit, und aus *do* wird *did*."
       },
       {
         "kind": "terms",
-        "title": "Irregular verbs",
-        "body": "Some verbs don't add -ed!\ndo → did (NOT 'doed'!)\nsee → saw\ngo → went"
+        "title": "Unregelmäßige Verben",
+        "body": "Manche Verben bekommen kein -ed:\n\n- do – did (nicht *doed*)\n- see – saw\n- go – went"
       },
       {
         "kind": "steps",
-        "title": "REGULAR vs IRREGULAR",
-        "body": "• watch → watched (regular: +ed)\n• do → did (irregular: changes completely)"
+        "title": "Regelmäßig und unregelmäßig",
+        "body": "- watch – watched: regelmäßig, mit -ed\n- do – did: unregelmäßig, die Form ändert sich ganz"
       },
       {
         "kind": "remember",
-        "title": "Common irregular verbs",
-        "body": "do → did\ngo → went\nsee → saw\nhave → had\nmake → made\nget → got"
+        "title": "Häufige unregelmäßige Verben",
+        "body": "- do – did\n- go – went\n- see – saw\n- have – had\n- make – made\n- get – got"
       },
       {
         "kind": "mistake",
-        "title": "Important",
-        "body": "You MUST memorize irregular verbs!"
+        "title": "Wichtig",
+        "body": "Unregelmäßige Verben musst du auswendig lernen."
       },
       {
         "kind": "answer",
-        "title": "Answer",
+        "title": "Antwort",
         "body": "did / watched"
       }
     ],
@@ -265,37 +265,37 @@
     "explanation": [
       {
         "kind": "what",
-        "title": "What is this",
-        "body": "Signal words help you choose the right tense!"
+        "title": "Worum geht es",
+        "body": "Signalwörter helfen dir, die richtige Zeitform zu finden. Das Present Simple heißt auch Simple Present."
       },
       {
         "kind": "terms",
-        "title": "Signal word guide",
-        "body": ""
+        "title": "Signalwörter im Überblick",
+        "body": "Jede Zeitform hat ihre eigenen Signalwörter."
       },
       {
         "kind": "steps",
-        "title": "PRESENT SIMPLE (habits)",
-        "body": "• every day/week/Monday\n• always, usually, often\n• sometimes, never"
+        "title": "Simple Present (Gewohnheiten)",
+        "body": "- every day, every week, every Monday\n- always, usually, often\n- sometimes, never"
       },
       {
         "kind": "text",
-        "title": "PRESENT CONTINUOUS (now)",
-        "body": "• right now\n• at the moment\n• Look! Listen!"
+        "title": "Present Progressive (gerade jetzt)",
+        "body": "- right now\n- at the moment\n- Look! Listen!"
       },
       {
         "kind": "remember",
-        "title": "PAST SIMPLE (finished)",
-        "body": "• yesterday\n• last week/year\n• ago\n• in 2020"
+        "title": "Simple Past (abgeschlossen)",
+        "body": "- yesterday\n- last week, last year\n- ago\n- in 2020"
       },
       {
         "kind": "mistake",
-        "title": "Trick",
-        "body": "'every...' = routine = Present Simple"
+        "title": "Tipp",
+        "body": "*every ...* zeigt eine Gewohnheit. Deshalb steht das Simple Present."
       },
       {
         "kind": "answer",
-        "title": "Answer",
+        "title": "Antwort",
         "body": "every Monday"
       }
     ],
@@ -327,37 +327,37 @@
     "explanation": [
       {
         "kind": "what",
-        "title": "What is this",
-        "body": "Present Simple negative with he/she/it."
+        "title": "Worum geht es",
+        "body": "Es geht um die Verneinung im Simple Present bei he, she, it."
       },
       {
         "kind": "terms",
-        "title": "The rule",
-        "body": "he/she/it → doesn't + base verb\n(NOT 'don't'!)"
+        "title": "Die Regel",
+        "body": "Bei he, she, it steht **doesn't** + Grundform. *don't* ist hier falsch."
       },
       {
         "kind": "steps",
-        "title": "Structure",
-        "body": "[doesn't] + [verb (no s!)]\nShe doesn't like\n     ↑         ↑\n  doesn't   no 's'!"
+        "title": "Der Satzbau",
+        "body": "doesn't + Grundform ohne -s\n\nShe doesn't like pizza. Nach *doesn't* bekommt das Verb kein -s."
       },
       {
         "kind": "text",
-        "title": "Full pattern",
-        "body": "I/you/we/they don't like\nhe/she/it doesn't like"
+        "title": "Das ganze Muster",
+        "body": "- I, you, we, they don't like\n- he, she, it doesn't like"
       },
       {
         "kind": "mistake",
-        "title": "Common mistakes",
-        "body": "• 'She don't like' (wrong helper)\n• 'She doesn't likes' (double s!)"
+        "title": "Typische Fehler",
+        "body": "- *She don't like*: falsches Hilfsverb.\n- *She doesn't likes*: Das -s steht doppelt."
       },
       {
         "kind": "remember",
-        "title": "Remember",
-        "body": "The 's' goes to 'doesn't', NOT to the verb!"
+        "title": "Merke",
+        "body": "Das -s steckt schon in *doesn't*. Das Verb bekommt keins."
       },
       {
         "kind": "answer",
-        "title": "Answer",
+        "title": "Antwort",
         "body": "doesn't like"
       }
     ],
@@ -390,37 +390,37 @@
     "explanation": [
       {
         "kind": "what",
-        "title": "What is this",
-        "body": "Yes/No questions in Present Simple."
+        "title": "Worum geht es",
+        "body": "Es geht um Ja/Nein-Fragen im Simple Present."
       },
       {
         "kind": "terms",
-        "title": "The rule",
-        "body": "[Do/Does] + [subject] + [base verb]?"
+        "title": "Die Regel",
+        "body": "Do/Does + Subjekt + Grundform?"
       },
       {
         "kind": "steps",
-        "title": "Structure",
-        "body": "Do you like pizza?\n↓   ↓    ↓\nDo  you  like (base form!)"
+        "title": "Der Satzbau",
+        "body": "Do you like pizza? Zuerst kommt *Do*, dann das Subjekt *you*, dann das Verb *like* in der Grundform."
       },
       {
         "kind": "text",
-        "title": "When to use which",
-        "body": "• I/you/we/they → DO you like?\n• he/she/it → DOES she like?"
+        "title": "Do oder Does",
+        "body": "- I, you, we, they: Do you like ...?\n- he, she, it: Does she like ...?"
       },
       {
         "kind": "mistake",
-        "title": "Common mistakes",
-        "body": "• 'Like you pizza?' (missing Do)\n• 'Does you like?' (wrong match: Does + you)\n• 'Do you likes?' (verb shouldn't have -s)"
+        "title": "Typische Fehler",
+        "body": "- *Like you pizza?*: *Do* fehlt.\n- *Does you like ...?*: *Does* passt nicht zu *you*.\n- *Do you likes ...?*: Das Verb bekommt kein -s."
       },
       {
         "kind": "remember",
-        "title": "Word order",
-        "body": "Statement: You like pizza.\nQuestion: Do you like pizza?"
+        "title": "Die Wortstellung",
+        "body": "- Aussage: You like pizza.\n- Frage: Do you like pizza?"
       },
       {
         "kind": "answer",
-        "title": "Answer",
+        "title": "Antwort",
         "body": "Do you like pizza?"
       }
     ],
@@ -452,37 +452,37 @@
     "explanation": [
       {
         "kind": "what",
-        "title": "What is this",
-        "body": "Questions with he/she/it in Present Simple."
+        "title": "Worum geht es",
+        "body": "Es geht um Fragen mit he, she, it im Simple Present."
       },
       {
         "kind": "terms",
-        "title": "The rule",
-        "body": "he/she/it → DOES + base verb (no -s!)"
+        "title": "Die Regel",
+        "body": "Bei he, she, it steht **Does** + Subjekt + Grundform ohne -s."
       },
       {
         "kind": "steps",
-        "title": "Structure",
-        "body": "Does she like coffee?\n  ↓    ↓    ↓\nDoes  she  like (NOT likes!)"
+        "title": "Der Satzbau",
+        "body": "Does she like coffee? Zuerst kommt *Does*, dann *she*, dann *like* in der Grundform (nicht *likes*)."
       },
       {
         "kind": "text",
-        "title": "Remember",
-        "body": "The 's' is already in 'Does'!\nDoes + like (NOT likes)"
+        "title": "Wo steht das -s",
+        "body": "Das -s steckt schon in *Does*. Deshalb heißt es *like*, nicht *likes*."
       },
       {
         "kind": "mistake",
-        "title": "Common mistakes",
-        "body": "• 'Does she likes?' (double -s!)\n• 'Do she like?' (wrong: Do + she)"
+        "title": "Typische Fehler",
+        "body": "- *Does she likes ...?*: Das -s steht doppelt.\n- *Do she like ...?*: *Do* passt nicht zu *she*."
       },
       {
         "kind": "remember",
-        "title": "Comparison",
-        "body": "Statement: She likes coffee.\nQuestion: Does she like coffee?\n          ↑ The 's' moved to 'Does'!"
+        "title": "Vergleich",
+        "body": "- Aussage: She likes coffee.\n- Frage: Does she like coffee?\n\nDas -s ist vom Verb zu *Does* gewandert."
       },
       {
         "kind": "answer",
-        "title": "Answer",
+        "title": "Antwort",
         "body": "Does she like coffee?"
       }
     ],
@@ -514,37 +514,37 @@
     "explanation": [
       {
         "kind": "what",
-        "title": "What is this",
-        "body": "Past Simple questions."
+        "title": "Worum geht es",
+        "body": "Es geht um Fragen im Simple Past."
       },
       {
         "kind": "terms",
-        "title": "The rule",
-        "body": "[Did] + [subject] + [base verb]?"
+        "title": "Die Regel",
+        "body": "Did + Subjekt + Grundform?"
       },
       {
         "kind": "steps",
-        "title": "Structure",
-        "body": "Did you go to Berlin?\n ↓   ↓   ↓\nDid  you  go (BASE form, not 'went'!)"
+        "title": "Der Satzbau",
+        "body": "Did you go to Berlin? Zuerst kommt *Did*, dann *you*, dann *go* in der Grundform (nicht *went*)."
       },
       {
         "kind": "text",
-        "title": "Important",
-        "body": "'Did' already shows past tense!\nThe main verb goes back to BASE form:\nwent → go"
+        "title": "Wichtig",
+        "body": "*Did* zeigt schon die Vergangenheit. Deshalb steht das Vollverb wieder in der Grundform: Aus *went* wird *go*."
       },
       {
         "kind": "mistake",
-        "title": "Common mistakes",
-        "body": "• 'Did you went?' (double past!)\n• 'Do you went?' (wrong tense)"
+        "title": "Typische Fehler",
+        "body": "- *Did you went ...?*: Die Vergangenheit steht doppelt.\n- *Do you went ...?*: falsche Zeitform."
       },
       {
         "kind": "remember",
-        "title": "Comparison",
-        "body": "Statement: You went to Berlin.\nQuestion: Did you go to Berlin?\n               ↑ Back to base form!"
+        "title": "Vergleich",
+        "body": "- Aussage: You went to Berlin.\n- Frage: Did you go to Berlin?\n\nIn der Frage steht das Verb wieder in der Grundform."
       },
       {
         "kind": "answer",
-        "title": "Answer",
+        "title": "Antwort",
         "body": "Did you go to Berlin?"
       }
     ],
@@ -577,37 +577,37 @@
     "explanation": [
       {
         "kind": "what",
-        "title": "What is this",
-        "body": "Short answers in English."
+        "title": "Worum geht es",
+        "body": "Es geht um Kurzantworten im Englischen."
       },
       {
         "kind": "terms",
-        "title": "The rule",
-        "body": "Answer with the SAME helper verb!"
+        "title": "Die Regel",
+        "body": "In der Kurzantwort wiederholst du das **Hilfsverb** aus der Frage."
       },
       {
         "kind": "steps",
-        "title": "Pattern",
-        "body": "Do you...? → Yes, I do. / No, I don't.\nDoes she...? → Yes, she does. / No, she doesn't.\nDid they...? → Yes, they did. / No, they didn't."
+        "title": "Das Muster",
+        "body": "- Do you ...? Yes, I do. / No, I don't.\n- Does she ...? Yes, she does. / No, she doesn't.\n- Did they ...? Yes, they did. / No, they didn't."
       },
       {
         "kind": "text",
-        "title": "Why short answers",
-        "body": "In English, just 'Yes/No' sounds incomplete!\n'Yes' is okay, but 'Yes, I do' is better."
+        "title": "Warum Kurzantworten",
+        "body": "Im Englischen klingt ein bloßes *Yes* oder *No* unvollständig. *Yes* allein ist in Ordnung, aber *Yes, I do.* ist besser."
       },
       {
         "kind": "mistake",
-        "title": "Common mistakes",
-        "body": "• 'Yes, I speak' (not wrong, but not natural)\n• 'Yes, I am' (wrong helper verb)"
+        "title": "Typische Fehler",
+        "body": "- *Yes, I speak.* ist falsch. In der Kurzantwort steht das Hilfsverb aus der Frage, nicht das Vollverb: *Yes, I do.*\n- *Yes, I am.* ist falsch. Die Frage beginnt mit *Do*, deshalb passt *am* nicht."
       },
       {
         "kind": "remember",
-        "title": "Remember",
-        "body": "The helper verb in the question = helper verb in answer!"
+        "title": "Merke",
+        "body": "Das Hilfsverb der Frage ist auch das Hilfsverb der Antwort."
       },
       {
         "kind": "answer",
-        "title": "Answer",
+        "title": "Antwort",
         "body": "I do"
       }
     ],
@@ -639,37 +639,37 @@
     "explanation": [
       {
         "kind": "what",
-        "title": "What is this",
-        "body": "Modal verbs - 'must' for rules and obligations."
+        "title": "Worum geht es",
+        "body": "Es geht um Modalverben. *must* steht für Regeln und Pflichten."
       },
       {
         "kind": "terms",
-        "title": "Modal meanings",
-        "body": "• can = ability (Ich kann...)\n• must = obligation/rule (Ich muss...)\n• should = advice (Ich sollte...)\n• might = possibility (vielleicht)"
+        "title": "Was die Modalverben bedeuten",
+        "body": "- can = können (Fähigkeit)\n- must = müssen (Pflicht, Regel)\n- should = sollte (Rat)\n- might = vielleicht (Möglichkeit)"
       },
       {
         "kind": "steps",
-        "title": "Context",
-        "body": "Helmet when riding = safety RULE\n→ must (you HAVE to!)"
+        "title": "Der Zusammenhang",
+        "body": "Ein Helm beim Radfahren ist eine Sicherheitsregel. Deshalb passt **must**: Du musst es tun."
       },
       {
         "kind": "text",
-        "title": "Structure",
-        "body": "Modal verbs + BASE VERB (no 'to'!)\nYou must wear (NOT 'to wear')"
+        "title": "Der Satzbau",
+        "body": "Nach einem Modalverb steht die Grundform ohne *to*: You must wear. Falsch ist *You must to wear*."
       },
       {
         "kind": "mistake",
-        "title": "Common mistakes",
-        "body": "• 'You must to wear' (no 'to' needed!)\n• Using 'can' for rules (can = ability, not rule)"
+        "title": "Typische Fehler",
+        "body": "- *You must to wear*: Hier steht kein *to*.\n- *can* für eine Regel: *can* nennt eine Fähigkeit, keine Regel."
       },
       {
         "kind": "remember",
-        "title": "Remember",
-        "body": "Modals never change: he must, she must, they must (NOT 'musts'!)"
+        "title": "Merke",
+        "body": "Modalverben verändern sich nie: he must, she must, they must. Die Form *musts* gibt es nicht."
       },
       {
         "kind": "answer",
-        "title": "Answer",
+        "title": "Antwort",
         "body": "must"
       }
     ],
@@ -701,32 +701,32 @@
     "explanation": [
       {
         "kind": "what",
-        "title": "What is this",
-        "body": "Modal verbs - 'can' for requests and ability."
+        "title": "Worum geht es",
+        "body": "Es geht um Modalverben. Mit *can* drückst du eine Bitte oder eine Fähigkeit aus."
       },
       {
         "kind": "terms",
-        "title": "'can' uses",
-        "body": "1. Ability: I can swim. (Ich kann schwimmen.)\n2. Permission: Can I go? (Darf ich gehen?)\n3. Request: Can you help? (Kannst du helfen?)"
+        "title": "So benutzt du can",
+        "body": "1. Fähigkeit: I can swim. (Ich kann schwimmen.)\n2. Erlaubnis: Can I go? (Darf ich gehen?)\n3. Bitte: Can you help? (Kannst du helfen?)"
       },
       {
         "kind": "steps",
-        "title": "Here",
-        "body": "Asking for help = polite request\n→ Can you help me?"
+        "title": "Hier",
+        "body": "Du bittest jemanden um Hilfe. Das ist eine höfliche Bitte: *Can you help me?*"
       },
       {
         "kind": "text",
-        "title": "Comparison",
-        "body": "• Can you...? = friendly request\n• Must you...? = not natural for requests\n• Could you...? = more formal/polite"
+        "title": "Vergleich",
+        "body": "- *Can you ...?* ist eine freundliche Bitte.\n- *Must you ...?* passt nicht zu einer Bitte.\n- *Could you ...?* ist förmlicher und noch höflicher."
       },
       {
         "kind": "mistake",
-        "title": "Don't confuse",
-        "body": "'Can' (Können) ≠ 'Must' (Müssen)"
+        "title": "Nicht verwechseln",
+        "body": "*can* (können) ist nicht dasselbe wie *must* (müssen)."
       },
       {
         "kind": "answer",
-        "title": "Answer",
+        "title": "Antwort",
         "body": "Can"
       }
     ],
@@ -743,7 +743,7 @@
     "topicId": "EN_USE_MODALS",
     "difficulty": 3,
     "qtype": "MCQ",
-    "prompt": "'You ___ eat more vegetables. It's good for your health.'",
+    "prompt": "Choose the best option. Your friend gives you some advice: 'You ___ eat more vegetables. It's good for your health.'",
     "payload": {
       "choices": [
         "can",
@@ -759,37 +759,37 @@
     "explanation": [
       {
         "kind": "what",
-        "title": "What is this",
-        "body": "Modal verbs - 'should' for advice."
+        "title": "Worum geht es",
+        "body": "Es geht um Modalverben. Mit *should* gibst du einen Rat."
       },
       {
         "kind": "terms",
-        "title": "'SHOULD' = Advice (Ratschlag)",
-        "body": "It's a GOOD IDEA, but not a strict rule."
+        "title": "should = Ratschlag",
+        "body": "Etwas ist eine gute Idee, aber keine feste Regel."
       },
       {
         "kind": "steps",
-        "title": "Context",
-        "body": "'good for your health' = advice, recommendation\n→ should (you SHOULD do this)"
+        "title": "Der Zusammenhang",
+        "body": "In der Aufgabe gibt dir ein Freund einen Rat. Auch *It's good for your health* zeigt: Das ist eine Empfehlung. Deshalb passt **should**."
       },
       {
         "kind": "text",
-        "title": "Comparison",
-        "body": "• must = you HAVE to (Pflicht)\n• should = it's a good idea (Empfehlung)\n• can = you are able to (Fähigkeit)"
+        "title": "Vergleich",
+        "body": "- *must*: Du musst es tun (Pflicht).\n- *should*: Es ist eine gute Idee (Empfehlung).\n- *can*: Du bist dazu fähig (Fähigkeit)."
       },
       {
         "kind": "remember",
-        "title": "German translation",
-        "body": "should ≈ sollte\nmust ≈ muss"
+        "title": "Übersetzung",
+        "body": "- should = sollte\n- must = muss"
       },
       {
         "kind": "mistake",
-        "title": "Note",
-        "body": "'Should' is softer than 'must'!"
+        "title": "Hinweis",
+        "body": "*should* ist schwächer als *must*."
       },
       {
         "kind": "answer",
-        "title": "Answer",
+        "title": "Antwort",
         "body": "should"
       }
     ],
@@ -838,38 +838,38 @@
     "explanation": [
       {
         "kind": "what",
-        "title": "What is this",
-        "body": "Travel vocabulary - essential words for journeys."
+        "title": "Worum geht es",
+        "body": "Es geht um wichtige Wörter für Reisen."
       },
       {
         "kind": "terms",
-        "title": "The words",
-        "body": ""
+        "title": "Die Wörter",
+        "body": "ticket, luggage, platform"
       },
       {
         "kind": "steps",
-        "title": "Ticket",
-        "body": "= Fahrkarte, Eintrittskarte\na paper or digital pass to travel or enter"
+        "title": "ticket",
+        "body": "= Fahrkarte, Eintrittskarte\n\na paper or digital pass to travel or enter"
       },
       {
         "kind": "text",
-        "title": "Luggage",
-        "body": "= Gepäck\nbags and suitcases you take on a trip"
+        "title": "luggage",
+        "body": "= Gepäck\n\nbags and suitcases you take on a trip"
       },
       {
         "kind": "remember",
-        "title": "Platform",
-        "body": "= Bahnsteig\nthe place at a train station where you wait"
+        "title": "platform",
+        "body": "= Bahnsteig\n\nthe place at a train station where you wait"
       },
       {
         "kind": "mistake",
-        "title": "Pronunciation",
-        "body": "• luggage = /ˈlʌɡɪdʒ/\n• platform = /ˈplætfɔːm/"
+        "title": "Aussprache",
+        "body": "- luggage = /ˈlʌɡɪdʒ/\n- platform = /ˈplætfɔːm/"
       },
       {
         "kind": "answer",
-        "title": "Matches",
-        "body": "ticket → a paper or digital pass\nluggage → bags and suitcases\nplatform → a place to wait for a train"
+        "title": "Antwort",
+        "body": "- ticket = a paper or digital pass\n- luggage = bags and suitcases\n- platform = a place to wait for a train"
       }
     ],
     "tags": [
@@ -900,37 +900,37 @@
     "explanation": [
       {
         "kind": "what",
-        "title": "What is this",
-        "body": "Travel vocabulary - departure vs arrival."
+        "title": "Worum geht es",
+        "body": "Es geht um zwei Reisewörter."
       },
       {
         "kind": "terms",
-        "title": "The words",
-        "body": ""
+        "title": "Die Wörter",
+        "body": "*departure* und *arrival*"
       },
       {
         "kind": "steps",
-        "title": "DEPARTURE (Abfahrt/Abflug)",
-        "body": "= when you LEAVE\n• departure time = Abfahrtszeit\n• departure gate = Abflug-Gate"
+        "title": "departure (Abfahrt, Abflug)",
+        "body": "Das ist der Moment, in dem du losfährst (*when you leave*).\n\n- departure time = Abfahrtszeit\n- departure gate = Abflug-Gate"
       },
       {
         "kind": "text",
-        "title": "ARRIVAL (Ankunft)",
-        "body": "= when you ARRIVE\n• arrival time = Ankunftszeit"
+        "title": "arrival (Ankunft)",
+        "body": "Das ist der Moment, in dem du ankommst (*when you arrive*).\n\n- arrival time = Ankunftszeit"
       },
       {
         "kind": "remember",
-        "title": "Memory trick",
-        "body": "• DEpart = leave (DE- like 'weg-')\n• ARrive = come (like 'ankommen')"
+        "title": "Merkhilfe",
+        "body": "- *depart* = abfahren. Die Vorsilbe de- bedeutet so viel wie „weg“.\n- *arrive* = ankommen. Beide Wörter beginnen mit a."
       },
       {
         "kind": "mistake",
-        "title": "At airports",
-        "body": "Departures = where you check in to LEAVE\nArrivals = where people COME from flights"
+        "title": "Am Flughafen",
+        "body": "- *Departures*: Hier checkst du ein, wenn du abfliegst.\n- *Arrivals*: Hier kommen die Leute von ihren Flügen an."
       },
       {
         "kind": "answer",
-        "title": "Answer",
+        "title": "Antwort",
         "body": "when you leave"
       }
     ],
@@ -962,32 +962,32 @@
     "explanation": [
       {
         "kind": "what",
-        "title": "What is this",
-        "body": "School vocabulary."
+        "title": "Worum geht es",
+        "body": "Es geht um Schulwörter."
       },
       {
         "kind": "terms",
-        "title": "TIMETABLE (Stundenplan)",
-        "body": "= a schedule showing when lessons/events happen"
+        "title": "timetable (Stundenplan)",
+        "body": "Ein *timetable* ist ein Plan. Er zeigt, wann welche Stunde oder Veranstaltung stattfindet."
       },
       {
         "kind": "steps",
-        "title": "Example",
-        "body": "Monday 8:00 - Math\nMonday 9:00 - English\n→ This is a timetable!"
+        "title": "Beispiel",
+        "body": "- Monday 8:00 – Math\n- Monday 9:00 – English\n\nDas ist ein *timetable*."
       },
       {
         "kind": "text",
-        "title": "Related words",
-        "body": "• schedule = Zeitplan\n• lesson = Unterrichtsstunde\n• subject = Schulfach\n• break = Pause"
+        "title": "Verwandte Wörter",
+        "body": "- schedule = Zeitplan\n- lesson = Unterrichtsstunde\n- subject = Schulfach\n- break = Pause"
       },
       {
         "kind": "remember",
-        "title": "Also used for",
-        "body": "• bus timetable = Busfahrplan\n• train timetable = Zugfahrplan"
+        "title": "Auch bei Bus und Bahn",
+        "body": "- bus timetable = Busfahrplan\n- train timetable = Zugfahrplan"
       },
       {
         "kind": "answer",
-        "title": "Answer",
+        "title": "Antwort",
         "body": "a schedule showing when lessons happen"
       }
     ],
@@ -1019,42 +1019,42 @@
     "explanation": [
       {
         "kind": "what",
-        "title": "What is this",
-        "body": "Daily life vocabulary - meals."
+        "title": "Worum geht es",
+        "body": "Es geht um Wörter aus dem Alltag: die Mahlzeiten."
       },
       {
         "kind": "terms",
-        "title": "Meals of the day",
-        "body": ""
+        "title": "Die Mahlzeiten am Tag",
+        "body": "breakfast, lunch, dinner, snack"
       },
       {
         "kind": "steps",
-        "title": "BREAKFAST (Frühstück)",
-        "body": "= the FIRST meal of the day (morning)\nbreak + fast = 'breaking the fast' from sleeping"
+        "title": "breakfast (Frühstück)",
+        "body": "Das ist die erste Mahlzeit am Tag, also am Morgen. Das Wort besteht aus *break* (brechen) und *fast* (Fasten)."
       },
       {
         "kind": "text",
-        "title": "LUNCH (Mittagessen)",
-        "body": "= midday meal (around 12:00)"
+        "title": "lunch (Mittagessen)",
+        "body": "Das ist die Mahlzeit am Mittag, etwa um 12 Uhr."
       },
       {
         "kind": "remember",
-        "title": "DINNER (Abendessen)",
-        "body": "= evening meal (around 18:00-20:00)"
+        "title": "dinner (Abendessen)",
+        "body": "Das ist die Mahlzeit am Abend, etwa zwischen 18 und 20 Uhr."
       },
       {
         "kind": "mistake",
-        "title": "SNACK (Snack/Zwischenmahlzeit)",
-        "body": "= small food between meals"
+        "title": "snack (Zwischenmahlzeit)",
+        "body": "Das ist eine Kleinigkeit zwischen den Mahlzeiten."
       },
       {
         "kind": "remember",
-        "title": "Memory trick",
-        "body": "Break-FAST = first meal, you 'break' your 'fast' (not eating while sleeping)"
+        "title": "Merkhilfe",
+        "body": "*breakfast* ist die erste Mahlzeit. Im Schlaf isst du nichts, du fastest also. Am Morgen brichst du das Fasten: *break* + *fast*."
       },
       {
         "kind": "answer",
-        "title": "Answer",
+        "title": "Antwort",
         "body": "breakfast"
       }
     ],
@@ -1086,27 +1086,27 @@
     "explanation": [
       {
         "kind": "what",
-        "title": "What is this",
-        "body": "Reading comprehension - finding facts in a text."
+        "title": "Worum geht es",
+        "body": "Es geht um Leseverstehen: Du suchst Tatsachen im Text."
       },
       {
         "kind": "terms",
-        "title": "Text analysis",
-        "body": "'Tom missed the bus' → He was late\n'arrived late' → confirms he was late\n'not angry because Tom had a note' → he had an excuse"
+        "title": "Was im Text steht",
+        "body": "- *Tom missed the bus*: Er hat den Bus verpasst und kam deshalb zu spät.\n- *arrived late*: Das bestätigt, dass er zu spät kam.\n- *not angry because Tom had a note*: Er hatte eine Entschuldigung."
       },
       {
         "kind": "steps",
-        "title": "Check each answer",
-        "body": "• 'arrived early' → FALSE (text says 'late')\n• 'arrived late and had an excuse' → TRUE ✓\n• 'teacher was angry' → FALSE (text says 'not angry')\n• 'missed the train' → FALSE (text says 'bus')"
+        "title": "Jede Antwort prüfen",
+        "body": "- *Tom arrived early.*: falsch, im Text steht *late*.\n- *Tom arrived late and had an excuse.*: richtig.\n- *The teacher was angry.*: falsch, im Text steht *not angry*.\n- *Tom missed the train.*: falsch, im Text steht *bus*."
       },
       {
         "kind": "remember",
-        "title": "Reading tip",
-        "body": "Look for EXACT words in the text!\n'bus' ≠ 'train'\n'not angry' ≠ 'angry'"
+        "title": "Lesetipp",
+        "body": "Achte auf die genauen Wörter im Text. *bus* ist nicht *train*, und *not angry* ist nicht *angry*."
       },
       {
         "kind": "answer",
-        "title": "Answer",
+        "title": "Antwort",
         "body": "Tom arrived late and had an excuse."
       }
     ],
@@ -1138,32 +1138,32 @@
     "explanation": [
       {
         "kind": "what",
-        "title": "What is this",
-        "body": "Reading comprehension - understanding a message."
+        "title": "Worum geht es",
+        "body": "Es geht um Leseverstehen: Du sollst eine Nachricht verstehen."
       },
       {
         "kind": "terms",
-        "title": "Text analysis",
-        "body": "'I can't come to your party'\n'I have to visit my grandmother'\n→ The reason is clearly stated!"
+        "title": "Was im Text steht",
+        "body": "Im Text stehen diese zwei Sätze:\n\n- I can't come to your party on Saturday.\n- I have to visit my grandmother.\n\nDer Grund steht also deutlich im Text."
       },
       {
         "kind": "steps",
-        "title": "Reading strategy",
-        "body": "Find the REASON:\n'I can't come' = what she can't do\n'I have to...' = why (the reason)"
+        "title": "So gehst du vor",
+        "body": "Suche den **Grund**. *I can't come* sagt, was Anna nicht kann. *I have to ...* sagt, warum das so ist."
       },
       {
         "kind": "text",
-        "title": "Text type",
-        "body": "This is a short MESSAGE (informal note).\n• 'Dear Lisa' = greeting\n• 'Love, Anna' = closing"
+        "title": "Die Textsorte",
+        "body": "Das ist eine kurze, persönliche Nachricht.\n\n- *Dear Lisa* ist die Anrede.\n- *Love, Anna* ist der Gruß am Ende."
       },
       {
         "kind": "remember",
-        "title": "TIP",
-        "body": "In short texts, the answer is usually directly stated!"
+        "title": "Tipp",
+        "body": "In kurzen Texten steht die Antwort meistens wörtlich im Text."
       },
       {
         "kind": "answer",
-        "title": "Answer",
+        "title": "Antwort",
         "body": "She has to visit her grandmother."
       }
     ],
@@ -1195,32 +1195,32 @@
     "explanation": [
       {
         "kind": "what",
-        "title": "What is this",
-        "body": "Reading emails - finding specific information."
+        "title": "Worum geht es",
+        "body": "Es geht um das Lesen von E-Mails: Du suchst eine bestimmte Information."
       },
       {
         "kind": "terms",
-        "title": "Email structure",
-        "body": "• Subject line: 'Meeting tomorrow'\n• Greeting: 'Hi team'\n• Body: time, place, request\n• Closing: 'Best, Mr. Smith'"
+        "title": "Der Aufbau der E-Mail",
+        "body": "- Betreff: *Meeting tomorrow*\n- Anrede: *Hi team*\n- Hauptteil: Uhrzeit, Ort und eine Bitte\n- Gruß am Ende: *Best, Mr. Smith*"
       },
       {
         "kind": "steps",
-        "title": "Finding information",
-        "body": "Time: 'at 10 a.m.'\nPlace: 'in Room 5'\nRequest: 'Please bring your notes'"
+        "title": "Die Informationen finden",
+        "body": "- Uhrzeit: *at 10 a.m.*\n- Ort: *in Room 5*\n- Bitte: *Please bring your notes*"
       },
       {
         "kind": "text",
-        "title": "Email reading tip",
-        "body": "Scan for KEY WORDS:\n• Numbers (10, 5)\n• Time words (a.m., p.m.)\n• Place words (Room, office)"
+        "title": "Lesetipp für E-Mails",
+        "body": "Suche gezielt nach wichtigen Wörtern:\n\n- Zahlen (10, 5)\n- Zeitwörter (a.m., p.m.)\n- Ortswörter (Room, office)"
       },
       {
         "kind": "remember",
-        "title": "Careful",
-        "body": "'Room 5' is the PLACE, not the time!"
+        "title": "Achtung",
+        "body": "*Room 5* ist der Ort, nicht die Uhrzeit."
       },
       {
         "kind": "answer",
-        "title": "Answer",
+        "title": "Antwort",
         "body": "10 a.m."
       }
     ],
@@ -1252,32 +1252,32 @@
     "explanation": [
       {
         "kind": "what",
-        "title": "What is this",
-        "body": "Error correction - Present Simple negative."
+        "title": "Worum geht es",
+        "body": "Es geht um Fehlerkorrektur: die Verneinung im Simple Present."
       },
       {
         "kind": "terms",
-        "title": "The error",
-        "body": "'He dont like' → TWO mistakes!\n1. 'dont' should be 'doesn't' (he/she/it)\n2. Missing apostrophe"
+        "title": "Der Fehler",
+        "body": "In *He dont like* stecken zwei Fehler:\n\n1. Bei he, she, it heißt es *doesn't*, nicht *don't*.\n2. Der Apostroph fehlt."
       },
       {
         "kind": "steps",
-        "title": "Correct form",
-        "body": "he/she/it + doesn't + base verb\nHe doesn't like\n     ↑         ↑\n  doesn't   no -s!"
+        "title": "Die richtige Form",
+        "body": "he, she, it + doesn't + Grundform\n\nHe doesn't like football. Nach *doesn't* bekommt das Verb kein -s."
       },
       {
         "kind": "mistake",
-        "title": "Common mistakes",
-        "body": "• 'doesn't likes' → double marking!\n• 'don't' with he/she/it → wrong helper\n• 'not like' → missing helper verb"
+        "title": "Typische Fehler",
+        "body": "- *doesn't likes*: Das -s steht doppelt.\n- *don't* bei he, she, it: falsches Hilfsverb.\n- *not like*: Das Hilfsverb fehlt."
       },
       {
         "kind": "remember",
-        "title": "Rule",
-        "body": "The -s goes to 'doesn't', NOT the main verb!"
+        "title": "Die Regel",
+        "body": "Das -s steckt in *doesn't*. Das Vollverb bekommt keins."
       },
       {
         "kind": "answer",
-        "title": "Answer",
+        "title": "Antwort",
         "body": "He doesn't like football."
       }
     ],
@@ -1309,37 +1309,37 @@
     "explanation": [
       {
         "kind": "what",
-        "title": "What is this",
-        "body": "Error correction - Past Simple."
+        "title": "Worum geht es",
+        "body": "Es geht um Fehlerkorrektur: das Simple Past."
       },
       {
         "kind": "terms",
-        "title": "The error",
-        "body": "'Yesterday' = past time\n'go' = present form\n→ Tense mismatch!"
+        "title": "Der Fehler",
+        "body": "*Yesterday* nennt eine Zeit in der Vergangenheit. *go* ist aber eine Form der Gegenwart. Die Zeitform passt also nicht."
       },
       {
         "kind": "steps",
-        "title": "Correction",
-        "body": "go → went (irregular verb!)"
+        "title": "Die Korrektur",
+        "body": "Aus *go* wird *went*. Das Verb ist unregelmäßig."
       },
       {
         "kind": "text",
-        "title": "Irregular verb",
-        "body": "go - went - gone\nNOT: go - goed - goed!"
+        "title": "Das unregelmäßige Verb",
+        "body": "go – went – gone\n\nDie Form *goed* gibt es nicht."
       },
       {
         "kind": "mistake",
-        "title": "Common mistakes",
-        "body": "• Using present tense with past time words\n• 'goed' (go is irregular!)"
+        "title": "Typische Fehler",
+        "body": "- Gegenwart bei einem Zeitwort der Vergangenheit\n- *goed*: *go* ist unregelmäßig."
       },
       {
         "kind": "remember",
-        "title": "Signal word check",
-        "body": "Yesterday = PAST → use PAST tense!"
+        "title": "Signalwort prüfen",
+        "body": "*Yesterday* bedeutet Vergangenheit. Also brauchst du eine Form der Vergangenheit."
       },
       {
         "kind": "answer",
-        "title": "Answer",
+        "title": "Antwort",
         "body": "Yesterday I went to the cinema."
       }
     ],
@@ -1372,32 +1372,32 @@
     "explanation": [
       {
         "kind": "what",
-        "title": "What is this",
-        "body": "Error correction - Modal verbs."
+        "title": "Worum geht es",
+        "body": "Es geht um Fehlerkorrektur: Modalverben."
       },
       {
         "kind": "terms",
-        "title": "The error",
-        "body": "'can to swim' → 'to' is wrong!\nModal verbs DON'T use 'to'!"
+        "title": "Der Fehler",
+        "body": "In *can to swim* ist *to* falsch. Nach Modalverben steht kein *to*."
       },
       {
         "kind": "steps",
-        "title": "Correct structure",
-        "body": "[modal] + [base verb] (NO 'to'!)\nShe can swim\n    ↑    ↑\n  can  swim (not 'to swim')"
+        "title": "Der richtige Satzbau",
+        "body": "Modalverb + Grundform ohne *to*\n\nShe can swim. Es heißt *swim*, nicht *to swim*."
       },
       {
         "kind": "text",
-        "title": "Modal verbs",
-        "body": "can, must, should, will, would, might\n→ ALL followed by BASE VERB, no 'to'!"
+        "title": "Die Modalverben",
+        "body": "can, must, should, will, would, might\n\nNach allen steht die Grundform ohne *to*."
       },
       {
         "kind": "mistake",
-        "title": "Common mistakes",
-        "body": "• 'can to swim' → remove 'to'\n• 'cans swim' → modals don't add -s!\n• 'can swims' → base verb, no -s!"
+        "title": "Typische Fehler",
+        "body": "- *can to swim*: Streiche *to*.\n- *cans swim*: Modalverben bekommen kein -s.\n- *can swims*: Das Verb steht in der Grundform, ohne -s."
       },
       {
         "kind": "answer",
-        "title": "Answer",
+        "title": "Antwort",
         "body": "She can swim very well."
       }
     ],
@@ -1430,37 +1430,37 @@
     "explanation": [
       {
         "kind": "what",
-        "title": "What is this",
-        "body": "The verb 'to be' - basic introduction."
+        "title": "Worum geht es",
+        "body": "Es geht um das Verb *to be* (sein)."
       },
       {
         "kind": "terms",
-        "title": "'be' forms",
-        "body": "• I am\n• you are\n• he/she/it is\n• we are\n• they are"
+        "title": "Die Formen von be",
+        "body": "- I am\n- you are\n- he/she/it is\n- we are\n- they are"
       },
       {
         "kind": "steps",
-        "title": "Here",
-        "body": "'My name' = it (a thing)\n→ My name IS Lisa"
+        "title": "Hier",
+        "body": "*My name* ist eine Sache, also wie *it*. Deshalb heißt es: My name is Lisa."
       },
       {
         "kind": "text",
-        "title": "Common phrases",
-        "body": "• My name is...\n• I am... years old\n• I am from..."
+        "title": "Häufige Sätze",
+        "body": "- My name is ...\n- I am ... years old.\n- I am from ..."
       },
       {
         "kind": "remember",
-        "title": "Shortcut",
-        "body": "If it's not I/you/we/they, use 'is'!"
+        "title": "Kurzregel",
+        "body": "Bei einer einzelnen Person oder Sache (he, she, it) nimmst du *is*."
       },
       {
         "kind": "mistake",
-        "title": "Don't say",
-        "body": "'My name am Lisa' ✗\n'My name are Lisa' ✗"
+        "title": "Das ist falsch",
+        "body": "- My name am Lisa.\n- My name are Lisa."
       },
       {
         "kind": "answer",
-        "title": "Answer",
+        "title": "Antwort",
         "body": "is"
       }
     ],
@@ -1493,37 +1493,37 @@
     "explanation": [
       {
         "kind": "what",
-        "title": "What is this",
-        "body": "Comparatives - comparing two things."
+        "title": "Worum geht es",
+        "body": "Es geht um den Komparativ. Damit vergleichst du zwei Dinge."
       },
       {
         "kind": "terms",
-        "title": "The rule",
-        "body": "Short adjectives (1-2 syllables) → add -er\nfast → faster\ntall → taller"
+        "title": "Die Regel",
+        "body": "Einsilbige Adjektive und zweisilbige Adjektive auf -y bekommen **-er**:\n\n- fast – faster\n- tall – taller\n- happy – happier"
       },
       {
         "kind": "steps",
-        "title": "Structure",
-        "body": "[adjective + er] + than\nA car is faster than a bike."
+        "title": "Der Satzbau",
+        "body": "Nach dem Adjektiv mit -er steht *than*: A car is faster than a bike."
       },
       {
         "kind": "text",
-        "title": "Spelling rules",
-        "body": "• fast → faster\n• big → bigger (double consonant)\n• happy → happier (y → i)"
+        "title": "Rechtschreibung",
+        "body": "- fast – faster\n- big – bigger (der letzte Konsonant wird verdoppelt)\n- happy – happier (aus y wird i)"
       },
       {
         "kind": "mistake",
-        "title": "Long adjectives",
-        "body": "3+ syllables → more + adjective\n• beautiful → more beautiful\n• NOT 'beautifuler'!"
+        "title": "Längere Adjektive",
+        "body": "Alle anderen Adjektive mit zwei oder mehr Silben steigerst du mit **more**:\n\n- boring – more boring\n- famous – more famous\n- beautiful – more beautiful\n\nDie Form *beautifuler* gibt es nicht."
       },
       {
         "kind": "remember",
-        "title": "Remember",
-        "body": "Comparing TWO things = -er or 'more'\nSuperlative (THE best) = -est or 'most'"
+        "title": "Merke",
+        "body": "Vergleichst du zwei Dinge, nimmst du -er oder *more*. Für den Superlativ (*the best*) nimmst du -est oder *most*."
       },
       {
         "kind": "answer",
-        "title": "Answer",
+        "title": "Antwort",
         "body": "faster"
       }
     ],
@@ -1555,37 +1555,37 @@
     "explanation": [
       {
         "kind": "what",
-        "title": "What is this",
-        "body": "Superlative + irregular adjective."
+        "title": "Worum geht es",
+        "body": "Es geht um den Superlativ eines unregelmäßigen Adjektivs."
       },
       {
         "kind": "terms",
-        "title": "'the ___' = superlative",
-        "body": "Comparing more than 2 → superlative (the -est)"
+        "title": "the vor der Lücke: Superlativ",
+        "body": "Vergleichst du mehr als zwei Dinge, brauchst du den Superlativ: *the* + Form mit -est."
       },
       {
         "kind": "steps",
-        "title": "Irregular forms",
-        "body": "good → better → best\nbad → worse → worst\nmany → more → most"
+        "title": "Unregelmäßige Formen",
+        "body": "- good – better – best\n- bad – worse – worst\n- many – more – most"
       },
       {
         "kind": "text",
-        "title": "Structure",
-        "body": "the + superlative\n'the best book'"
+        "title": "Der Satzbau",
+        "body": "*the* + Superlativ: the best book"
       },
       {
         "kind": "mistake",
-        "title": "Common mistakes",
-        "body": "• 'the most good' ✗ (good is irregular!)\n• 'the better' ✗ (that's comparative)\n• 'more good' ✗ (irregular!)"
+        "title": "Typische Fehler",
+        "body": "- *the most good*: falsch, denn *good* ist unregelmäßig.\n- *the better*: falsch, das ist der Komparativ.\n- *more good*: falsch, denn *good* ist unregelmäßig."
       },
       {
         "kind": "remember",
-        "title": "Memorize",
-        "body": "good - better - best\nbad - worse - worst"
+        "title": "Lerne auswendig",
+        "body": "- good – better – best\n- bad – worse – worst"
       },
       {
         "kind": "answer",
-        "title": "Answer",
+        "title": "Antwort",
         "body": "best"
       }
     ],
@@ -1618,37 +1618,37 @@
     "explanation": [
       {
         "kind": "what",
-        "title": "What is this",
-        "body": "Identifying the Simple Present tense."
+        "title": "Worum geht es",
+        "body": "Du sollst das Simple Present erkennen."
       },
       {
         "kind": "terms",
-        "title": "Simple present - uses",
-        "body": "• Habits and routines (Gewohnheiten)\n• General facts (Fakten)\n• Regular actions (regelmäßige Handlungen)"
+        "title": "Wann steht das Simple Present",
+        "body": "- bei Gewohnheiten\n- bei allgemeinen Tatsachen\n- bei regelmäßigen Handlungen"
       },
       {
         "kind": "steps",
-        "title": "Formation",
-        "body": "Infinitive (+ -s/-es for he/she/it)\nI watch → He watches"
+        "title": "Die Bildung",
+        "body": "Du nimmst die Grundform. Bei he, she, it kommt -s oder -es dazu: I watch, he watches."
       },
       {
         "kind": "remember",
-        "title": "Signal words",
-        "body": "• usually, sometimes, always\n• every day, often, never\n• on Mondays, in the morning"
+        "title": "Signalwörter",
+        "body": "- usually, sometimes, always\n- every day, often, never\n- on Mondays, in the morning"
       },
       {
         "kind": "text",
-        "title": "Examples",
-        "body": "• I usually watch TV. (Gewohnheit)\n• The sun rises in the east. (Fakt)\n• She works in Berlin. (regelmäßig)"
+        "title": "Beispiele",
+        "body": "- I usually watch TV. (Gewohnheit)\n- The sun rises in the east. (Tatsache)\n- She works in Berlin. (regelmäßig)"
       },
       {
         "kind": "mistake",
-        "title": "NOT",
-        "body": "• Present Progressive = NOW (gerade jetzt)\n• Present Perfect = connection past-present"
+        "title": "Nicht verwechseln",
+        "body": "- Das Present Progressive steht für etwas, das gerade jetzt passiert.\n- Das Present Perfect verbindet die Vergangenheit mit der Gegenwart."
       },
       {
         "kind": "answer",
-        "title": "Answer",
+        "title": "Antwort",
         "body": "Simple Present"
       }
     ],
@@ -1666,7 +1666,7 @@
     "topicId": "EN_USE_TENSES",
     "difficulty": 2,
     "qtype": "MCQ",
-    "prompt": "Which tense is correct? 'I have just arrived at the airport.'",
+    "prompt": "Which tense is used in this sentence? 'I have just arrived at the airport.'",
     "payload": {
       "choices": [
         "Present Perfect",
@@ -1682,37 +1682,37 @@
     "explanation": [
       {
         "kind": "what",
-        "title": "What is this",
-        "body": "Identifying the Present Perfect tense."
+        "title": "Worum geht es",
+        "body": "Du sollst das Present Perfect erkennen."
       },
       {
         "kind": "terms",
-        "title": "Present perfect - uses",
-        "body": "• Action just completed (gerade abgeschlossen)\n• Past action with present result\n• Experience (Erfahrung)"
+        "title": "Wann steht das Present Perfect",
+        "body": "- Eine Handlung ist gerade abgeschlossen.\n- Eine Handlung aus der Vergangenheit hat ein Ergebnis in der Gegenwart.\n- Jemand spricht über eine Erfahrung."
       },
       {
         "kind": "steps",
-        "title": "Formation",
-        "body": "have/has + past participle (3rd form)"
+        "title": "Die Bildung",
+        "body": "have/has + 3. Form (Past Participle)"
       },
       {
         "kind": "steps",
-        "title": "Analysis",
-        "body": "'I HAVE just ARRIVED'\n  ↓           ↓\nhave    +  past participle\n= PRESENT PERFECT"
+        "title": "Im Satz",
+        "body": "*I have just arrived*: Hier stehen *have* und die 3. Form *arrived*. Das ist das **Present Perfect**."
       },
       {
         "kind": "remember",
-        "title": "Signal words",
-        "body": "• just, recently (gerade)\n• yet, already, still\n• since, for\n• ever, never"
+        "title": "Signalwörter",
+        "body": "- just (gerade eben), recently (vor Kurzem)\n- yet, already\n- since, for\n- ever, never"
       },
       {
         "kind": "text",
-        "title": "Examples",
-        "body": "• I have just finished. (gerade fertig)\n• She has lived here since 2010. (seit)\n• Have you ever been to London? (jemals)"
+        "title": "Beispiele",
+        "body": "- I have just finished. (gerade fertig)\n- She has lived here since 2010. (seit)\n- Have you ever been to London? (jemals)"
       },
       {
         "kind": "answer",
-        "title": "Answer",
+        "title": "Antwort",
         "body": "Present Perfect"
       }
     ],
@@ -1730,7 +1730,7 @@
     "topicId": "EN_USE_TENSES",
     "difficulty": 2,
     "qtype": "MCQ",
-    "prompt": "Which tense is correct? 'They are calling their grandma right now.'",
+    "prompt": "Which tense is used in this sentence? 'They are calling their grandma right now.'",
     "payload": {
       "choices": [
         "Present Progressive",
@@ -1746,42 +1746,42 @@
     "explanation": [
       {
         "kind": "what",
-        "title": "What is this",
-        "body": "Identifying the Present Progressive tense."
+        "title": "Worum geht es",
+        "body": "Du sollst das Present Progressive erkennen."
       },
       {
         "kind": "terms",
-        "title": "Present progressive - uses",
-        "body": "• Action happening NOW (jetzt gerade)\n• Temporary situation\n• Fixed plans (feste Pläne)"
+        "title": "Wann steht das Present Progressive",
+        "body": "- Etwas passiert gerade jetzt.\n- Etwas gilt nur vorübergehend.\n- Jemand hat einen festen Plan."
       },
       {
         "kind": "steps",
-        "title": "Formation",
-        "body": "to be (am/is/are) + verb + -ing"
+        "title": "Die Bildung",
+        "body": "am/is/are + Verb mit -ing"
       },
       {
         "kind": "steps",
-        "title": "Analysis",
-        "body": "'They ARE CALLING their grandma right now.'\n      ↓    ↓\n   are + calling (-ing)\n= PRESENT PROGRESSIVE"
+        "title": "Im Satz",
+        "body": "*They are calling their grandma right now.* Hier stehen *are* und *calling* mit -ing. Das ist das **Present Progressive**."
       },
       {
         "kind": "remember",
-        "title": "Signal words",
-        "body": "• right now, now\n• at the moment\n• currently\n• Look! Listen!"
+        "title": "Signalwörter",
+        "body": "- right now, now\n- at the moment\n- currently\n- Look! Listen!"
       },
       {
         "kind": "text",
-        "title": "Examples",
-        "body": "• I am studying right now. (gerade jetzt)\n• She is working at the moment. (im Moment)\n• Look! It is raining! (Schau!)"
+        "title": "Beispiele",
+        "body": "- I am studying right now. (gerade jetzt)\n- She is working at the moment. (im Moment)\n- Look! It is raining! (Schau!)"
       },
       {
         "kind": "mistake",
-        "title": "NOT Simple Present",
-        "body": "'They call' = habit/regularly\n'They are calling' = right now"
+        "title": "Nicht das Simple Present",
+        "body": "- *They call* bedeutet: Sie tun es regelmäßig.\n- *They are calling* bedeutet: Sie tun es gerade jetzt."
       },
       {
         "kind": "answer",
-        "title": "Answer",
+        "title": "Antwort",
         "body": "Present Progressive"
       }
     ],
@@ -1822,32 +1822,32 @@
     "explanation": [
       {
         "kind": "what",
-        "title": "What is this",
-        "body": "Simple Present with he/she/it."
+        "title": "Worum geht es",
+        "body": "Es geht um das Simple Present bei he, she, it."
       },
       {
         "kind": "terms",
-        "title": "The rule",
-        "body": "Simple Present + he/she/it → add -s or -es"
+        "title": "Die Regel",
+        "body": "Im Simple Present bekommt das Verb bei he, she, it ein -s oder -es."
       },
       {
         "kind": "steps",
-        "title": "Why 'goes'",
-        "body": "1. 'every day' = Signal for Simple Present ✓\n2. 'She' = 3rd person singular\n3. go → goes (add -es)"
+        "title": "Warum goes",
+        "body": "1. *every day* ist ein Signalwort für das Simple Present.\n2. *She* ist 3. Person Singular.\n3. Aus *go* wird *goes* (mit -es)."
       },
       {
         "kind": "remember",
-        "title": "Spelling rules for -s/-es",
-        "body": "• Most verbs: add -s (play → plays)\n• Verbs ending in -s, -sh, -ch, -x, -o: add -es\n  go → goes\n  watch → watches\n  wash → washes\n• Verbs ending in consonant + y: y → ies\n  study → studies\n  try → tries"
+        "title": "Schreibregeln für -s und -es",
+        "body": "- Die meisten Verben bekommen -s: play – plays.\n- Verben auf -s, -sh, -ch, -x oder -o bekommen -es: go – goes, watch – watches, wash – washes.\n- Bei Konsonant + y wird aus dem y die Endung -ies: study – studies, try – tries."
       },
       {
         "kind": "mistake",
-        "title": "NOT",
-        "body": "• 'is going' = Present Progressive (NOW)\n• 'has gone' = Present Perfect"
+        "title": "Die falschen Antworten",
+        "body": "- *is going* ist Present Progressive (gerade jetzt).\n- *has gone* ist Present Perfect."
       },
       {
         "kind": "answer",
-        "title": "Answer",
+        "title": "Antwort",
         "body": "goes"
       }
     ],
@@ -1881,37 +1881,37 @@
     "explanation": [
       {
         "kind": "what",
-        "title": "What is this",
-        "body": "Irregular verb: go - went - gone"
+        "title": "Worum geht es",
+        "body": "*go* ist ein unregelmäßiges Verb: go – went – gone."
       },
       {
         "kind": "terms",
-        "title": "Irregular verbs",
-        "body": "They don't follow the regular -ed pattern!\nYou must memorize them."
+        "title": "Unregelmäßige Verben",
+        "body": "Sie bekommen nicht die Endung -ed. Du musst sie auswendig lernen."
       },
       {
         "kind": "steps",
-        "title": "GO (irregular verb)",
-        "body": "Simple Present: go/goes\nSimple Past: went\nPast Participle: gone"
+        "title": "Die Formen von go",
+        "body": "- Simple Present: go, goes\n- Simple Past: went\n- Past Participle (3. Form): gone"
       },
       {
         "kind": "remember",
-        "title": "Usage",
-        "body": "• 'I went to school yesterday.' (Simple Past)\n• 'I have gone home.' (Present Perfect)"
+        "title": "So benutzt du die Formen",
+        "body": "- I went to school yesterday. (Simple Past)\n- I have gone home. (Present Perfect)"
       },
       {
         "kind": "mistake",
-        "title": "Common mistake",
-        "body": "'goed' is WRONG! ❌\n'go' is irregular → 'went'"
+        "title": "Typischer Fehler",
+        "body": "*goed* ist falsch. *go* ist unregelmäßig, die Form heißt *went*."
       },
       {
         "kind": "text",
-        "title": "More irregular verbs",
-        "body": "• see → saw → seen\n• come → came → come\n• take → took → taken\n• write → wrote → written"
+        "title": "Weitere unregelmäßige Verben",
+        "body": "- see – saw – seen\n- come – came – come\n- take – took – taken\n- write – wrote – written"
       },
       {
         "kind": "answer",
-        "title": "Answer",
+        "title": "Antwort",
         "body": "went"
       }
     ],
@@ -1945,32 +1945,32 @@
     "explanation": [
       {
         "kind": "what",
-        "title": "What is this",
-        "body": "Irregular verb: write - wrote - written"
+        "title": "Worum geht es",
+        "body": "*write* ist ein unregelmäßiges Verb: write – wrote – written."
       },
       {
         "kind": "terms",
-        "title": "The three forms",
-        "body": "1. Infinitive/Simple Present: write\n2. Simple Past: wrote\n3. Past Participle: written"
+        "title": "Die drei Formen",
+        "body": "1. Grundform (Infinitive): write\n2. Simple Past: wrote\n3. Past Participle (3. Form): written"
       },
       {
         "kind": "steps",
-        "title": "When do we use past participle",
-        "body": "• Present Perfect: I have written a letter.\n• Past Perfect: I had written a letter.\n• Passive: The letter was written."
+        "title": "Wann brauchst du die 3. Form",
+        "body": "- Present Perfect: I have written a letter.\n- Past Perfect: I had written a letter.\n- Passiv: The letter was written."
       },
       {
         "kind": "remember",
-        "title": "SIMILAR PATTERN (-en ending)",
-        "body": "• write → wrote → written\n• drive → drove → driven\n• ride → rode → ridden\n• rise → rose → risen"
+        "title": "Ähnliches Muster (Endung -en)",
+        "body": "- write – wrote – written\n- drive – drove – driven\n- ride – rode – ridden\n- rise – rose – risen"
       },
       {
         "kind": "mistake",
-        "title": "Common mistake",
-        "body": "'writed' is WRONG! ❌\nIrregular verbs don't use -ed!"
+        "title": "Typischer Fehler",
+        "body": "*writed* ist falsch. Unregelmäßige Verben bekommen kein -ed."
       },
       {
         "kind": "answer",
-        "title": "Answer",
+        "title": "Antwort",
         "body": "written"
       }
     ],
@@ -2026,28 +2026,28 @@
     "explanation": [
       {
         "kind": "what",
-        "title": "What is this",
-        "body": "Irregular verbs - Simple Past forms."
+        "title": "Worum geht es",
+        "body": "Es geht um die Simple-Past-Formen unregelmäßiger Verben."
       },
       {
         "kind": "terms",
-        "title": "The matches",
-        "body": "• see → saw (sehen → sah)\n• take → took (nehmen → nahm)\n• know → knew (wissen → wusste)\n• tell → told (erzählen → erzählte)"
+        "title": "Die Paare",
+        "body": "- see – saw (sehen – sah)\n- take – took (nehmen – nahm)\n- know – knew (wissen – wusste)\n- tell – told (erzählen – erzählte)"
       },
       {
         "kind": "remember",
-        "title": "Full forms",
-        "body": "• see - saw - seen\n• take - took - taken\n• know - knew - known\n• tell - told - told"
+        "title": "Alle drei Formen",
+        "body": "- see – saw – seen\n- take – took – taken\n- know – knew – known\n- tell – told – told"
       },
       {
         "kind": "text",
-        "title": "Learning tip",
-        "body": "Learn verbs in groups with similar patterns!\n\nGroup 1 (same Past & Participle):\ntell → told → told\nsell → sold → sold\nsend → sent → sent\n\nGroup 2 (vowel change):\nsee → saw → seen\nknow → knew → known"
+        "title": "Lerntipp",
+        "body": "Lerne Verben in Gruppen mit ähnlichem Muster.\n\nGruppe 1: Simple Past und 3. Form sind gleich.\n\n- tell – told – told\n- sell – sold – sold\n- send – sent – sent\n\nGruppe 2: Der Vokal ändert sich.\n\n- see – saw – seen\n- know – knew – known"
       },
       {
         "kind": "answer",
-        "title": "All pairs matched correctly!",
-        "body": ""
+        "title": "Antwort",
+        "body": "- see – saw\n- take – took\n- know – knew\n- tell – told"
       }
     ],
     "tags": [
@@ -2080,52 +2080,52 @@
     "explanation": [
       {
         "kind": "what",
-        "title": "What is this",
-        "body": "Correct use of Present Perfect with 'since'."
+        "title": "Worum geht es",
+        "body": "Es geht um das Present Perfect mit *since*."
       },
       {
         "kind": "terms",
-        "title": "The rule",
-        "body": "SINCE + point in time → PRESENT PERFECT\nFOR + duration → PRESENT PERFECT"
+        "title": "Die Regel",
+        "body": "- *since* + Zeitpunkt: Present Perfect\n- *for* + Zeitraum: Present Perfect"
       },
       {
         "kind": "steps",
-        "title": "Analysis",
-        "body": ""
+        "title": "Die vier Sätze",
+        "body": "Prüfe jeden Satz einzeln."
       },
       {
         "kind": "text",
-        "title": "'I have lived here since 2020.'",
-        "body": "Present Perfect + since = CORRECT!"
+        "title": "I have lived here since 2020.",
+        "body": "Present Perfect mit *since*: Das ist richtig."
       },
       {
         "kind": "text",
-        "title": "'I have lived here yesterday.'",
-        "body": "yesterday = finished time → Simple Past needed!"
+        "title": "I have lived here yesterday.",
+        "body": "*yesterday* nennt eine abgeschlossene Zeit. Hier brauchst du das Simple Past."
       },
       {
         "kind": "text",
-        "title": "'I lived here since 2020.'",
-        "body": "since = needs Present Perfect!"
+        "title": "I lived here since 2020.",
+        "body": "*since* verlangt das Present Perfect."
       },
       {
         "kind": "text",
-        "title": "'I am living here since 2020.'",
-        "body": "since = needs Present Perfect, not Progressive!"
+        "title": "I am living here since 2020.",
+        "body": "*since* verlangt das Present Perfect, nicht die Verlaufsform."
       },
       {
         "kind": "remember",
-        "title": "SINCE vs. FOR",
-        "body": "• SINCE + point: since 2020, since Monday, since 3pm\n• FOR + duration: for 5 years, for 2 hours, for a week"
+        "title": "since oder for",
+        "body": "- *since* + Zeitpunkt: since 2020, since Monday, since 3 p.m.\n- *for* + Zeitraum: for 5 years, for 2 hours, for a week"
       },
       {
         "kind": "text",
-        "title": "Examples",
-        "body": "• I have worked here since January.\n• I have worked here for 6 months."
+        "title": "Beispiele",
+        "body": "- I have worked here since January.\n- I have worked here for 6 months."
       },
       {
         "kind": "answer",
-        "title": "Answer",
+        "title": "Antwort",
         "body": "I have lived here since 2020."
       }
     ],
@@ -2159,42 +2159,42 @@
     "explanation": [
       {
         "kind": "what",
-        "title": "What is this",
-        "body": "Forming questions in Simple Present."
+        "title": "Worum geht es",
+        "body": "Es geht um Fragen im Simple Present."
       },
       {
         "kind": "terms",
-        "title": "The rule",
-        "body": "Do/Does + subject + infinitive (without -s)?"
+        "title": "Die Regel",
+        "body": "Do/Does + Subjekt + Grundform (ohne -s)?"
       },
       {
         "kind": "steps",
-        "title": "Formation",
-        "body": "Statement: She likes pizza.\nQuestion: Does she like pizza?"
+        "title": "Die Bildung",
+        "body": "- Aussage: She likes pizza.\n- Frage: Does she like pizza?"
       },
       {
         "kind": "remember",
-        "title": "DO vs. DOES",
-        "body": "• DO for I, you, we, they\n• DOES for he, she, it"
+        "title": "Do oder Does",
+        "body": "- *Do* bei I, you, we, they\n- *Does* bei he, she, it"
       },
       {
         "kind": "mistake",
-        "title": "Important",
-        "body": "When using DOES, the main verb loses the -s!\n• She likes → Does she like? ✓\n• NOT: Does she likes? ❌"
+        "title": "Wichtig",
+        "body": "Mit *Does* verliert das Vollverb sein -s. Aus *She likes* wird *Does she like?* Falsch ist *Does she likes?*"
       },
       {
         "kind": "text",
-        "title": "More examples",
-        "body": "• He plays tennis. → Does he play tennis?\n• They work here. → Do they work here?\n• You speak German. → Do you speak German?"
+        "title": "Weitere Beispiele",
+        "body": "- He plays tennis. Frage: Does he play tennis?\n- They work here. Frage: Do they work here?\n- You speak German. Frage: Do you speak German?"
       },
       {
         "kind": "text",
-        "title": "Wrong forms",
-        "body": "• 'Do she like?' - wrong helper\n• 'Is she like?' - 'be' only for be-verbs/progressive\n• 'Like she?' - missing do/does"
+        "title": "Die falschen Antworten",
+        "body": "- *Do she like ...?*: falsches Hilfsverb.\n- *Is she like ...?*: *be* steht nur bei Sätzen mit *be* und in der Verlaufsform.\n- *Like she ...?*: *Do* oder *Does* fehlt."
       },
       {
         "kind": "answer",
-        "title": "Answer",
+        "title": "Antwort",
         "body": "Does she like pizza?"
       }
     ],
@@ -2228,42 +2228,42 @@
     "explanation": [
       {
         "kind": "what",
-        "title": "What is this",
-        "body": "Forming negations in Simple Present."
+        "title": "Worum geht es",
+        "body": "Es geht um die Verneinung im Simple Present."
       },
       {
         "kind": "terms",
-        "title": "The rule",
-        "body": "Subject + do/does + not + infinitive"
+        "title": "Die Regel",
+        "body": "Subjekt + do/does + not + Grundform"
       },
       {
         "kind": "steps",
-        "title": "Formation",
-        "body": "Positive: I like spinach.\nNegative: I do not like spinach.\nShort form: I don't like spinach."
+        "title": "Die Bildung",
+        "body": "- Aussage: I like spinach.\n- Verneinung: I do not like spinach.\n- Kurzform: I don't like spinach."
       },
       {
         "kind": "remember",
-        "title": "DON'T vs. DOESN'T",
-        "body": "• DON'T (do not) for I, you, we, they\n• DOESN'T (does not) for he, she, it"
+        "title": "don't oder doesn't",
+        "body": "- *don't* (do not) bei I, you, we, they\n- *doesn't* (does not) bei he, she, it"
       },
       {
         "kind": "text",
-        "title": "Examples",
-        "body": "• I don't like spinach. (I)\n• She doesn't like spinach. (she)\n• They don't work here. (they)\n• He doesn't play tennis. (he)"
+        "title": "Beispiele",
+        "body": "- I don't like spinach. (I)\n- She doesn't like spinach. (she)\n- They don't work here. (they)\n- He doesn't play tennis. (he)"
       },
       {
         "kind": "text",
-        "title": "Wrong forms",
-        "body": "• 'I doesn't like' - wrong helper for 'I'\n• 'I not like' - missing do/does\n• 'I no like' - 'no' is not for verbs"
+        "title": "Die falschen Antworten",
+        "body": "- *I doesn't like*: falsches Hilfsverb für *I*.\n- *I not like*: *do* fehlt.\n- *I no like*: Mit *no* verneinst du kein Verb."
       },
       {
         "kind": "mistake",
-        "title": "Short forms",
-        "body": "• do not = don't\n• does not = doesn't"
+        "title": "Kurzformen",
+        "body": "- do not = don't\n- does not = doesn't"
       },
       {
         "kind": "answer",
-        "title": "Answer",
+        "title": "Antwort",
         "body": "I don't like spinach."
       }
     ],
@@ -2297,37 +2297,37 @@
     "explanation": [
       {
         "kind": "what",
-        "title": "What is this",
-        "body": "Modal verbs and their meanings."
+        "title": "Worum geht es",
+        "body": "Es geht um Modalverben und ihre Bedeutung."
       },
       {
         "kind": "terms",
-        "title": "CAN = ABILITY (Fähigkeit/Können)",
-        "body": ""
+        "title": "can = Fähigkeit (können)",
+        "body": "Mit *can* sagst du, was jemand kann."
       },
       {
         "kind": "steps",
-        "title": "Examples",
-        "body": "• I can swim. (Ich kann schwimmen.)\n• She can speak German. (Sie kann Deutsch sprechen.)\n• Can you help me? (Kannst du mir helfen?)"
+        "title": "Beispiele",
+        "body": "- I can swim. (Ich kann schwimmen.)\n- She can speak German. (Sie kann Deutsch sprechen.)\n- Can you help me? (Kannst du mir helfen?)"
       },
       {
         "kind": "remember",
-        "title": "Overview of modals",
-        "body": "• CAN = ability, possibility (können)\n• MUST = obligation, necessity (müssen)\n• SHOULD = advice, recommendation (sollte)\n• MAY = permission, possibility (dürfen, könnte)"
+        "title": "Die Modalverben im Überblick",
+        "body": "- can = können (Fähigkeit, Möglichkeit)\n- must = müssen (Pflicht, Notwendigkeit)\n- should = sollte (Rat, Empfehlung)\n- may = dürfen, könnte (Erlaubnis, Möglichkeit)"
       },
       {
         "kind": "text",
-        "title": "More examples",
-        "body": "• You must wear a seatbelt. (Pflicht)\n• You should study more. (Rat)\n• May I go to the toilet? (Erlaubnis)"
+        "title": "Weitere Beispiele",
+        "body": "- You must wear a seatbelt. (Pflicht)\n- You should study more. (Rat)\n- May I go to the toilet? (Erlaubnis)"
       },
       {
         "kind": "mistake",
-        "title": "Grammar rule",
-        "body": "Modal + infinitive WITHOUT 'to'!\n• I can swim. ✓\n• I can to swim. ❌"
+        "title": "Grammatikregel",
+        "body": "Nach dem Modalverb steht die Grundform ohne *to*.\n\n- Richtig: I can swim.\n- Falsch: I can to swim."
       },
       {
         "kind": "answer",
-        "title": "Answer",
+        "title": "Antwort",
         "body": "can"
       }
     ],
@@ -2361,42 +2361,42 @@
     "explanation": [
       {
         "kind": "what",
-        "title": "What is this",
-        "body": "Comparative adjectives - comparing two things."
+        "title": "Worum geht es",
+        "body": "Es geht um den Komparativ. Damit vergleichst du zwei Dinge."
       },
       {
         "kind": "terms",
-        "title": "The rule for short adjectives",
-        "body": "Adjective + -er"
+        "title": "Die Regel für kurze Adjektive",
+        "body": "Du hängst -er an das Adjektiv."
       },
       {
         "kind": "steps",
-        "title": "Formation",
-        "body": "big → bigger"
+        "title": "Die Bildung",
+        "body": "big – bigger"
       },
       {
         "kind": "mistake",
-        "title": "Spelling rule",
-        "body": "Short adjective ending in consonant-vowel-consonant:\nDouble the last consonant!\nbig → bigger (not biger!)\nhot → hotter\nthin → thinner"
+        "title": "Rechtschreibregel",
+        "body": "Endet ein kurzes Adjektiv auf Konsonant, Vokal, Konsonant, dann verdoppelst du den letzten Konsonanten:\n\n- big – bigger (nicht *biger*)\n- hot – hotter\n- thin – thinner"
       },
       {
         "kind": "remember",
-        "title": "More short adjectives",
-        "body": "• small → smaller\n• tall → taller\n• fast → faster\n• old → older"
+        "title": "Weitere kurze Adjektive",
+        "body": "- small – smaller\n- tall – taller\n- fast – faster\n- old – older"
       },
       {
         "kind": "text",
-        "title": "LONG ADJECTIVES (3+ syllables)",
-        "body": "Use 'more' + adjective\n• beautiful → more beautiful\n• interesting → more interesting"
+        "title": "Längere Adjektive",
+        "body": "Adjektive mit zwei oder mehr Silben steigerst du mit *more*:\n\n- boring – more boring\n- beautiful – more beautiful\n- interesting – more interesting\n\nDie Ausnahme sind zweisilbige Adjektive auf -y. Sie bekommen -er: happy – happier."
       },
       {
         "kind": "text",
-        "title": "Wrong forms",
-        "body": "• 'more big' - big is short, use -er\n• 'biger' - need to double the g\n• 'biggest' - that's superlative (best of all)"
+        "title": "Die falschen Antworten",
+        "body": "- *more big*: *big* ist kurz, deshalb nimmst du -er.\n- *biger*: Das g muss verdoppelt werden.\n- *biggest*: Das ist der Superlativ (am größten)."
       },
       {
         "kind": "answer",
-        "title": "Answer",
+        "title": "Antwort",
         "body": "bigger"
       }
     ],
@@ -2452,28 +2452,28 @@
     "explanation": [
       {
         "kind": "what",
-        "title": "What is this",
-        "body": "School vocabulary (Schulvokabeln)."
+        "title": "Worum geht es",
+        "body": "Es geht um Schulwörter."
       },
       {
         "kind": "terms",
-        "title": "The matches",
-        "body": "• homework = Hausaufgaben\n• exam = Prüfung\n• teacher = Lehrer/in\n• subject = Schulfach"
+        "title": "Die Paare",
+        "body": "- homework = Hausaufgaben\n- exam = Prüfung\n- teacher = Lehrer/in\n- subject = Schulfach"
       },
       {
         "kind": "remember",
-        "title": "More school vocabulary",
-        "body": "• classroom = Klassenzimmer\n• student/pupil = Schüler/in\n• lesson = Unterrichtsstunde\n• timetable = Stundenplan\n• break = Pause\n• grade/mark = Note"
+        "title": "Weitere Schulwörter",
+        "body": "- classroom = Klassenzimmer\n- student/pupil = Schüler/in\n- lesson = Unterrichtsstunde\n- timetable = Stundenplan\n- break = Pause\n- grade/mark = Note"
       },
       {
         "kind": "text",
-        "title": "Example sentences",
-        "body": "• I have to do my homework.\n• The math exam is next week.\n• My favorite subject is English.\n• Our teacher is very nice."
+        "title": "Beispielsätze",
+        "body": "- I have to do my homework.\n- The math exam is next week.\n- My favorite subject is English.\n- Our teacher is very nice."
       },
       {
         "kind": "answer",
-        "title": "All pairs matched correctly!",
-        "body": ""
+        "title": "Antwort",
+        "body": "- homework = Hausaufgaben\n- exam = Prüfung\n- teacher = Lehrer/in\n- subject = Schulfach"
       }
     ],
     "tags": [
@@ -2506,37 +2506,37 @@
     "explanation": [
       {
         "kind": "what",
-        "title": "What is this",
-        "body": "Irregular verb: speak - spoke - spoken"
+        "title": "Worum geht es",
+        "body": "*speak* ist ein unregelmäßiges Verb: speak – spoke – spoken."
       },
       {
         "kind": "terms",
-        "title": "The three forms",
-        "body": "1. Infinitive: speak\n2. Simple Past: spoke\n3. Past Participle: spoken"
+        "title": "Die drei Formen",
+        "body": "1. Grundform (Infinitive): speak\n2. Simple Past: spoke\n3. Past Participle (3. Form): spoken"
       },
       {
         "kind": "steps",
-        "title": "Usage",
-        "body": "• Simple Past: I spoke to him yesterday.\n• Present Perfect: I have spoken to him.\n• Passive: English is spoken here."
+        "title": "So benutzt du die Formen",
+        "body": "- Simple Past: I spoke to him yesterday.\n- Present Perfect: I have spoken to him.\n- Passiv: English is spoken here."
       },
       {
         "kind": "remember",
-        "title": "Similar pattern",
-        "body": "• speak → spoke → spoken\n• break → broke → broken\n• steal → stole → stolen\n• choose → chose → chosen"
+        "title": "Ähnliches Muster",
+        "body": "- speak – spoke – spoken\n- break – broke – broken\n- steal – stole – stolen\n- choose – chose – chosen"
       },
       {
         "kind": "mistake",
-        "title": "Common mistake",
-        "body": "'speaked' is WRONG! ❌\n'speak' is irregular!"
+        "title": "Typischer Fehler",
+        "body": "*speaked* ist falsch, denn *speak* ist unregelmäßig."
       },
       {
         "kind": "text",
-        "title": "TIP",
-        "body": "Many verbs with 'ea' follow this pattern:\nea → o → o (with -en)"
+        "title": "Tipp",
+        "body": "Lerne diese Verben als Gruppe: speak – spoke – spoken, break – broke – broken, steal – stole – stolen.\n\nAchtung: Das Muster gilt nicht für alle Verben mit *ea*. Zum Beispiel: eat – ate – eaten, read – read – read."
       },
       {
         "kind": "answer",
-        "title": "Answer",
+        "title": "Antwort",
         "body": "spoken"
       }
     ],
@@ -2570,42 +2570,42 @@
     "explanation": [
       {
         "kind": "what",
-        "title": "What is this",
-        "body": "Error correction - do/does in negations."
+        "title": "Worum geht es",
+        "body": "Es geht um Fehlerkorrektur: *don't* und *doesn't* in der Verneinung."
       },
       {
         "kind": "terms",
-        "title": "The rule",
-        "body": "• DON'T for I, you, we, they\n• DOESN'T for he, she, it"
+        "title": "Die Regel",
+        "body": "- *don't* bei I, you, we, they\n- *doesn't* bei he, she, it"
       },
       {
         "kind": "steps",
-        "title": "The error",
-        "body": "'She don't like coffee.' ❌\n'She' = 3rd person singular → needs DOESN'T"
+        "title": "Der Fehler",
+        "body": "*She don't like coffee.* ist falsch. *She* ist 3. Person Singular und braucht *doesn't*."
       },
       {
         "kind": "steps",
-        "title": "Correct sentence",
-        "body": "'She doesn't like coffee.' ✓"
+        "title": "Der richtige Satz",
+        "body": "She doesn't like coffee."
       },
       {
         "kind": "remember",
-        "title": "Why not 'likes'",
-        "body": "After doesn't, use the infinitive (base form)!\n• She doesn't like ✓\n• She doesn't likes ❌"
+        "title": "Warum nicht likes",
+        "body": "Nach *doesn't* steht die Grundform.\n\n- Richtig: She doesn't like.\n- Falsch: She doesn't likes."
       },
       {
         "kind": "text",
-        "title": "More examples",
-        "body": "• He doesn't work here. ✓\n• It doesn't matter. ✓\n• They don't know. ✓\n• I don't understand. ✓"
+        "title": "Weitere Beispiele",
+        "body": "- He doesn't work here.\n- It doesn't matter.\n- They don't know.\n- I don't understand."
       },
       {
         "kind": "mistake",
-        "title": "Common msa mistake",
-        "body": "Mixing up don't/doesn't is very common!\nRemember: he/she/it → DOESN'T"
+        "title": "Häufiger Fehler in der MSA-Prüfung",
+        "body": "*don't* und *doesn't* werden sehr oft verwechselt. Merke dir: Bei he, she, it steht *doesn't*."
       },
       {
         "kind": "answer",
-        "title": "Answer",
+        "title": "Antwort",
         "body": "don't should be doesn't"
       }
     ],
@@ -2639,32 +2639,32 @@
     "explanation": [
       {
         "kind": "what",
-        "title": "Simple present",
-        "body": ""
+        "title": "Worum geht es",
+        "body": "Es geht um das Simple Present."
       },
       {
         "kind": "terms",
-        "title": "USE",
-        "body": "For habits and regular actions."
+        "title": "Die Verwendung",
+        "body": "Es steht für Gewohnheiten und regelmäßige Handlungen."
       },
       {
         "kind": "steps",
-        "title": "Signal words",
-        "body": "• usually, always, often\n• every day, sometimes\n• never"
+        "title": "Signalwörter",
+        "body": "- usually, always, often\n- every day, sometimes\n- never"
       },
       {
         "kind": "remember",
-        "title": "Example",
-        "body": "'I USUALLY watch TV'\n→ 'usually' = habit/regular action\n→ Simple Present!"
+        "title": "Im Satz",
+        "body": "*I usually watch TV*: *usually* zeigt eine Gewohnheit. Deshalb ist es das Simple Present."
       },
       {
         "kind": "formula",
-        "title": "Formation",
-        "body": "Infinitive (+ -s/-es for he/she/it)"
+        "title": "Die Bildung",
+        "body": "Grundform, bei he, she, it mit -s oder -es"
       },
       {
         "kind": "answer",
-        "title": "Answer",
+        "title": "Antwort",
         "body": "Simple Present"
       }
     ],
@@ -2696,32 +2696,32 @@
     "explanation": [
       {
         "kind": "what",
-        "title": "Present progressive",
-        "body": ""
+        "title": "Worum geht es",
+        "body": "Es geht um das Present Progressive."
       },
       {
         "kind": "terms",
-        "title": "USE",
-        "body": "For actions happening RIGHT NOW."
+        "title": "Die Verwendung",
+        "body": "Es steht für Handlungen, die gerade jetzt passieren."
       },
       {
         "kind": "steps",
-        "title": "Signal words",
-        "body": "• right now, now\n• at the moment\n• Look! Listen!"
+        "title": "Signalwörter",
+        "body": "- right now, now\n- at the moment\n- Look! Listen!"
       },
       {
         "kind": "remember",
-        "title": "Example",
-        "body": "'They ARE CALLING right now'\n→ Action is happening NOW\n→ Present Progressive!"
+        "title": "Im Satz",
+        "body": "*They are calling ... right now*: Die Handlung passiert gerade jetzt. Deshalb ist es das Present Progressive."
       },
       {
         "kind": "formula",
-        "title": "Formation",
-        "body": "am/is/are + verb + -ing"
+        "title": "Die Bildung",
+        "body": "am/is/are + Verb mit -ing"
       },
       {
         "kind": "answer",
-        "title": "Answer",
+        "title": "Antwort",
         "body": "Present Progressive"
       }
     ],
@@ -2753,32 +2753,32 @@
     "explanation": [
       {
         "kind": "what",
-        "title": "Present perfect",
-        "body": ""
+        "title": "Worum geht es",
+        "body": "Es geht um das Present Perfect."
       },
       {
         "kind": "terms",
-        "title": "USE",
-        "body": "Action started in the past and continues to the present."
+        "title": "Die Verwendung",
+        "body": "Eine Handlung hat in der Vergangenheit begonnen und dauert bis jetzt an."
       },
       {
         "kind": "steps",
-        "title": "Signal words",
-        "body": "• since, for\n• already, yet\n• just, recently\n• ever, never"
+        "title": "Signalwörter",
+        "body": "- since, for\n- already, yet\n- just, recently\n- ever, never"
       },
       {
         "kind": "remember",
-        "title": "Example",
-        "body": "'He HAS LIVED here SINCE 2003'\n→ Started in 2003, still living there now\n→ Present Perfect!"
+        "title": "Im Satz",
+        "body": "*He has lived here since 2003*: Er ist 2003 eingezogen und wohnt immer noch dort. Deshalb ist es das Present Perfect."
       },
       {
         "kind": "formula",
-        "title": "Formation",
-        "body": "have/has + past participle"
+        "title": "Die Bildung",
+        "body": "have/has + 3. Form (Past Participle)"
       },
       {
         "kind": "answer",
-        "title": "Answer",
+        "title": "Antwort",
         "body": "Present Perfect"
       }
     ],
@@ -2827,28 +2827,28 @@
     "explanation": [
       {
         "kind": "what",
-        "title": "Present perfect formation",
-        "body": ""
+        "title": "Worum geht es",
+        "body": "Es geht um die Bildung des Present Perfect."
       },
       {
         "kind": "formula",
-        "title": "Rule",
-        "body": "have/has + past participle"
+        "title": "Die Regel",
+        "body": "have/has + 3. Form (Past Participle)"
       },
       {
         "kind": "steps",
-        "title": "Here",
-        "body": "• Subject 'I' → use 'have' (not 'has')\n• 'arrive' → past participle: 'arrived'"
+        "title": "Hier",
+        "body": "- Das Subjekt ist *I*. Deshalb steht *have*, nicht *has*.\n- Die 3. Form von *arrive* ist *arrived*."
       },
       {
         "kind": "remember",
-        "title": "'JUST' = very recently",
-        "body": "→ Typical Present Perfect signal word!"
+        "title": "just = gerade eben",
+        "body": "*just* ist ein typisches Signalwort für das Present Perfect."
       },
       {
         "kind": "answer",
-        "title": "Answer",
-        "body": "I HAVE just ARRIVED at the airport."
+        "title": "Antwort",
+        "body": "I have just arrived at the airport."
       }
     ],
     "tags": [
@@ -2880,27 +2880,27 @@
     "explanation": [
       {
         "kind": "what",
-        "title": "Irregular verb",
-        "body": "GO"
+        "title": "Unregelmäßiges Verb",
+        "body": "go"
       },
       {
         "kind": "formula",
-        "title": "Forms",
-        "body": "• Simple Present: go\n• Simple Past: WENT\n• Past Participle: gone"
+        "title": "Die Formen",
+        "body": "- Simple Present: go\n- Simple Past: went\n- Past Participle (3. Form): gone"
       },
       {
         "kind": "mistake",
-        "title": "Common mistake",
-        "body": "'goed' does NOT exist!\n'go' is irregular!"
+        "title": "Typischer Fehler",
+        "body": "*goed* gibt es nicht. *go* ist unregelmäßig."
       },
       {
         "kind": "remember",
-        "title": "Example",
-        "body": "• Yesterday I WENT to school.\n• I have GONE to school. (Present Perfect)"
+        "title": "Beispiele",
+        "body": "- Yesterday I went to school. (Simple Past)\n- I have gone to school. (Present Perfect)"
       },
       {
         "kind": "answer",
-        "title": "Answer",
+        "title": "Antwort",
         "body": "went"
       }
     ],
@@ -2932,27 +2932,27 @@
     "explanation": [
       {
         "kind": "what",
-        "title": "Irregular verb",
-        "body": "WRITE"
+        "title": "Unregelmäßiges Verb",
+        "body": "write"
       },
       {
         "kind": "formula",
-        "title": "Forms",
-        "body": "• Simple Present: write\n• Simple Past: wrote\n• Past Participle: WRITTEN"
+        "title": "Die Formen",
+        "body": "- Simple Present: write\n- Simple Past: wrote\n- Past Participle (3. Form): written"
       },
       {
         "kind": "remember",
-        "title": "USE",
-        "body": "• Simple Past: She WROTE a letter yesterday.\n• Present Perfect: She has WRITTEN a letter."
+        "title": "Beispiele",
+        "body": "- Simple Past: She wrote a letter yesterday.\n- Present Perfect: She has written a letter."
       },
       {
         "kind": "mistake",
-        "title": "Remember",
-        "body": "write - wrote - written\n(all different!)"
+        "title": "Merke",
+        "body": "write – wrote – written\n\nAlle drei Formen sind verschieden."
       },
       {
         "kind": "answer",
-        "title": "Answer",
+        "title": "Antwort",
         "body": "written"
       }
     ],
@@ -2984,27 +2984,27 @@
     "explanation": [
       {
         "kind": "what",
-        "title": "Irregular verb",
-        "body": "SEE"
+        "title": "Unregelmäßiges Verb",
+        "body": "see"
       },
       {
         "kind": "formula",
-        "title": "Forms",
-        "body": "• Simple Present: see\n• Simple Past: SAW\n• Past Participle: seen"
+        "title": "Die Formen",
+        "body": "- Simple Present: see\n- Simple Past: saw\n- Past Participle (3. Form): seen"
       },
       {
         "kind": "remember",
-        "title": "Examples",
-        "body": "• I SAW him yesterday. (Simple Past)\n• I have SEEN this movie before. (Present Perfect)"
+        "title": "Beispiele",
+        "body": "- I saw him yesterday. (Simple Past)\n- I have seen this movie before. (Present Perfect)"
       },
       {
         "kind": "mistake",
-        "title": "Careful",
-        "body": "'seed' is a noun (Samen)!\n'sawed' is from 'saw' (sägen)!"
+        "title": "Achtung",
+        "body": "- *seed* ist ein Nomen und bedeutet Samen.\n- *sawed* kommt von dem Verb *to saw* (sägen)."
       },
       {
         "kind": "answer",
-        "title": "Answer",
+        "title": "Antwort",
         "body": "saw"
       }
     ],
@@ -3036,27 +3036,27 @@
     "explanation": [
       {
         "kind": "what",
-        "title": "Irregular verb",
-        "body": "SPEAK"
+        "title": "Unregelmäßiges Verb",
+        "body": "speak"
       },
       {
         "kind": "formula",
-        "title": "Forms",
-        "body": "• Simple Present: speak\n• Simple Past: spoke\n• Past Participle: SPOKEN"
+        "title": "Die Formen",
+        "body": "- Simple Present: speak\n- Simple Past: spoke\n- Past Participle (3. Form): spoken"
       },
       {
         "kind": "remember",
-        "title": "Examples",
-        "body": "• She SPOKE to him yesterday.\n• She has SPOKEN to him already."
+        "title": "Beispiele",
+        "body": "- She spoke to him yesterday.\n- She has spoken to him already."
       },
       {
         "kind": "mistake",
-        "title": "Pattern",
-        "body": "speak - spoke - spoken\n(like break - broke - broken)"
+        "title": "Das Muster",
+        "body": "speak – spoke – spoken\n\nGenauso geht: break – broke – broken."
       },
       {
         "kind": "answer",
-        "title": "Answer",
+        "title": "Antwort",
         "body": "spoken"
       }
     ],
@@ -3088,27 +3088,27 @@
     "explanation": [
       {
         "kind": "what",
-        "title": "Irregular verb",
-        "body": "PUT"
+        "title": "Unregelmäßiges Verb",
+        "body": "put"
       },
       {
         "kind": "formula",
-        "title": "Forms",
-        "body": "• Simple Present: put\n• Simple Past: PUT\n• Past Participle: PUT"
+        "title": "Die Formen",
+        "body": "- Simple Present: put\n- Simple Past: put\n- Past Participle (3. Form): put"
       },
       {
         "kind": "remember",
-        "title": "All forms are the same!",
-        "body": "put - put - put"
+        "title": "Alle Formen sind gleich",
+        "body": "put – put – put"
       },
       {
         "kind": "terms",
-        "title": "Similar verbs",
-        "body": "• cut - cut - cut\n• shut - shut - shut\n• hurt - hurt - hurt"
+        "title": "Ähnliche Verben",
+        "body": "- cut – cut – cut\n- shut – shut – shut\n- hurt – hurt – hurt"
       },
       {
         "kind": "answer",
-        "title": "Answer",
+        "title": "Antwort",
         "body": "put - put"
       }
     ],
@@ -3130,7 +3130,7 @@
         "She has already finished her homework.",
         "She have already finished her homework.",
         "She has already finish her homework.",
-        "She already has finished her homework."
+        "She has finished already her homework."
       ],
       "shuffle": true
     },
@@ -3140,27 +3140,27 @@
     "explanation": [
       {
         "kind": "what",
-        "title": "Present perfect - word order",
-        "body": ""
+        "title": "Worum geht es",
+        "body": "Es geht um das Present Perfect und die Wortstellung."
       },
       {
         "kind": "formula",
-        "title": "Structure",
-        "body": "Subject + have/has + (already/just/never) + past participle"
+        "title": "Der Satzbau",
+        "body": "Subjekt + have/has + (already/just/never) + 3. Form (Past Participle)"
       },
       {
         "kind": "steps",
-        "title": "Analysis",
-        "body": "• 'She' (3rd person) → 'has' (not 'have')\n• 'finish' → past participle: 'finished'\n• 'already' comes AFTER have/has"
+        "title": "Schritt für Schritt",
+        "body": "- *She* ist 3. Person Singular. Deshalb steht *has*, nicht *have*.\n- Die 3. Form von *finish* ist *finished*.\n- *already* steht zwischen *has* und der 3. Form: She has already finished ..."
       },
       {
         "kind": "mistake",
-        "title": "Wrong",
-        "body": "• 'She have...' (wrong auxiliary)\n• 'She has finish...' (missing -ed)\n• 'She already has...' (wrong word order)"
+        "title": "Die falschen Sätze",
+        "body": "- *She have ...*: falsches Hilfsverb.\n- *She has already finish ...*: Die Endung -ed fehlt.\n- *She has finished already her homework.*: falsche Wortstellung. *already* darf nicht zwischen dem Verb und *her homework* stehen."
       },
       {
         "kind": "answer",
-        "title": "Answer",
+        "title": "Antwort",
         "body": "She has already finished her homework."
       }
     ],
@@ -3193,32 +3193,32 @@
     "explanation": [
       {
         "kind": "what",
-        "title": "Signal words",
-        "body": ""
+        "title": "Worum geht es",
+        "body": "Es geht um Signalwörter. Jede Zeitform hat ihre eigenen."
       },
       {
         "kind": "terms",
-        "title": "Present perfect",
-        "body": "• since, for\n• already, yet\n• just, recently\n• ever, never\n• so far, up to now"
+        "title": "Present Perfect",
+        "body": "- since, for\n- already, yet\n- just, recently\n- ever, never\n- so far, up to now"
       },
       {
         "kind": "terms",
-        "title": "Simple past",
-        "body": "• yesterday\n• last week/month/year\n• ago"
+        "title": "Simple Past",
+        "body": "- yesterday\n- last week, last month, last year\n- ago"
       },
       {
         "kind": "terms",
-        "title": "Simple present",
-        "body": "• every day, always\n• usually, often"
+        "title": "Simple Present",
+        "body": "- every day, always\n- usually, often"
       },
       {
         "kind": "terms",
-        "title": "Present progressive",
-        "body": "• now, at the moment"
+        "title": "Present Progressive",
+        "body": "- now, at the moment"
       },
       {
         "kind": "answer",
-        "title": "Answer",
+        "title": "Antwort",
         "body": "since (Present Perfect)"
       }
     ],
@@ -3250,27 +3250,27 @@
     "explanation": [
       {
         "kind": "what",
-        "title": "Modal verbs",
-        "body": "OBLIGATION"
+        "title": "Worum geht es",
+        "body": "Es geht um Modalverben. Gesucht ist das Verb für eine Pflicht (*obligation*)."
       },
       {
         "kind": "terms",
-        "title": "Must",
-        "body": "Expresses strong obligation/necessity.\n'You MUST wear a seatbelt' = It's required!"
+        "title": "must",
+        "body": "*must* drückt eine starke Pflicht oder Notwendigkeit aus. *You must wear a seatbelt* bedeutet: Es ist vorgeschrieben."
       },
       {
         "kind": "terms",
-        "title": "Comparison",
-        "body": "• must = strong obligation\n• should = advice\n• can = ability/permission\n• might/could = possibility"
+        "title": "Vergleich",
+        "body": "- must = starke Pflicht\n- should = Rat\n- can = Fähigkeit oder Erlaubnis\n- might, could = Möglichkeit"
       },
       {
         "kind": "remember",
-        "title": "TIP",
-        "body": "'must' is often used for rules and laws."
+        "title": "Tipp",
+        "body": "*must* steht oft bei Regeln und Gesetzen."
       },
       {
         "kind": "answer",
-        "title": "Answer",
+        "title": "Antwort",
         "body": "must"
       }
     ],
@@ -3303,22 +3303,22 @@
     "explanation": [
       {
         "kind": "what",
-        "title": "Modal verbs",
-        "body": "ABILITY"
+        "title": "Worum geht es",
+        "body": "Es geht um Modalverben. Gesucht ist das Verb für eine Fähigkeit (*ability*)."
       },
       {
         "kind": "terms",
-        "title": "CAN",
-        "body": "Expresses ability (what someone is able to do).\n\n'She CAN speak three languages'\n= She is able to speak them."
+        "title": "can",
+        "body": "*can* drückt eine Fähigkeit aus. Es sagt, was jemand kann.\n\n*She can speak three languages* bedeutet: Sie kann drei Sprachen sprechen."
       },
       {
         "kind": "terms",
-        "title": "Comparison",
-        "body": "• can = ability NOW\n• could = ability in the PAST\n• will be able to = ability in FUTURE"
+        "title": "Vergleich",
+        "body": "- can = Fähigkeit jetzt\n- could = Fähigkeit in der Vergangenheit\n- will be able to = Fähigkeit in der Zukunft"
       },
       {
         "kind": "answer",
-        "title": "Answer",
+        "title": "Antwort",
         "body": "can"
       }
     ],
@@ -3351,27 +3351,27 @@
     "explanation": [
       {
         "kind": "what",
-        "title": "Irregular comparison",
-        "body": ""
+        "title": "Worum geht es",
+        "body": "Es geht um eine unregelmäßige Steigerung."
       },
       {
         "kind": "formula",
-        "title": "Forms of 'good'",
-        "body": "• Positive: good\n• Comparative: BETTER\n• Superlative: best"
+        "title": "Die Formen von good",
+        "body": "- Grundform: good\n- Komparativ: better\n- Superlativ: best"
       },
       {
         "kind": "mistake",
-        "title": "Irregular!",
-        "body": "'gooder' and 'more good' do NOT exist!"
+        "title": "Unregelmäßig",
+        "body": "*gooder* und *more good* gibt es nicht."
       },
       {
         "kind": "remember",
-        "title": "Similar",
-        "body": "• bad - worse - worst\n• much/many - more - most\n• little - less - least"
+        "title": "Ähnlich",
+        "body": "- bad – worse – worst\n- much/many – more – most\n- little – less – least"
       },
       {
         "kind": "answer",
-        "title": "Answer",
+        "title": "Antwort",
         "body": "better"
       }
     ],
@@ -3403,27 +3403,27 @@
     "explanation": [
       {
         "kind": "what",
-        "title": "Comparison",
-        "body": "LONG ADJECTIVES"
+        "title": "Worum geht es",
+        "body": "Es geht um die Steigerung langer Adjektive."
       },
       {
         "kind": "formula",
-        "title": "Rule",
-        "body": "Adjectives with 3+ syllables:\n• Comparative: more + adjective\n• Superlative: most + adjective"
+        "title": "Die Regel",
+        "body": "Adjektive mit zwei oder mehr Silben (außer auf -y) steigerst du so:\n\n- Komparativ: *more* + Adjektiv\n- Superlativ: *the most* + Adjektiv"
       },
       {
         "kind": "steps",
-        "title": "'BEAUTIFUL' (4 syllables)",
-        "body": "• beautiful\n• more beautiful\n• THE MOST beautiful"
+        "title": "beautiful (drei Silben: beau-ti-ful)",
+        "body": "- beautiful\n- more beautiful\n- the most beautiful"
       },
       {
         "kind": "mistake",
-        "title": "DON'T ADD -er/-est!",
-        "body": "'beautifuler' is WRONG!"
+        "title": "Typischer Fehler",
+        "body": "Hänge hier nicht -er oder -est an. Die Formen *the beautifulest* und *beautifuller* gibt es nicht."
       },
       {
         "kind": "answer",
-        "title": "Answer",
+        "title": "Antwort",
         "body": "the most beautiful"
       }
     ],
@@ -3455,27 +3455,27 @@
     "explanation": [
       {
         "kind": "what",
-        "title": "Vocabulary",
-        "body": "SPEND"
+        "title": "Worum geht es",
+        "body": "Es geht um das Wort *spend*."
       },
       {
         "kind": "terms",
-        "title": "'to spend' has TWO meanings",
-        "body": "1. spend MONEY = Geld AUSGEBEN\n2. spend TIME = Zeit VERBRINGEN"
+        "title": "to spend hat zwei Bedeutungen",
+        "body": "1. spend money = Geld ausgeben\n2. spend time = Zeit verbringen"
       },
       {
         "kind": "remember",
-        "title": "Examples",
-        "body": "• I spent 50 euros on shoes. (ausgeben)\n• I spent the weekend with friends. (verbringen)"
+        "title": "Beispiele",
+        "body": "- I spent 50 euros on shoes. (ausgeben)\n- I spent the weekend with friends. (verbringen)"
       },
       {
         "kind": "formula",
-        "title": "Irregular",
-        "body": "spend - spent - spent"
+        "title": "Unregelmäßig",
+        "body": "spend – spent – spent"
       },
       {
         "kind": "answer",
-        "title": "Answer",
+        "title": "Antwort",
         "body": "Geld ausgeben"
       }
     ],
@@ -3507,32 +3507,32 @@
     "explanation": [
       {
         "kind": "what",
-        "title": "Vocabulary",
-        "body": "LOSE"
+        "title": "Worum geht es",
+        "body": "Es geht um das Wort *lose*."
       },
       {
         "kind": "terms",
-        "title": "'to lose' = verlieren",
-        "body": ""
+        "title": "Die Bedeutung",
+        "body": "*to lose* bedeutet verlieren."
       },
       {
         "kind": "remember",
-        "title": "Examples",
-        "body": "• I lost my keys. (Schlüssel verloren)\n• We lost the game. (Spiel verloren)"
+        "title": "Beispiele",
+        "body": "- I lost my keys. (Schlüssel verloren)\n- We lost the game. (Spiel verloren)"
       },
       {
         "kind": "formula",
-        "title": "Irregular",
-        "body": "lose - lost - lost"
+        "title": "Unregelmäßig",
+        "body": "lose – lost – lost"
       },
       {
         "kind": "mistake",
-        "title": "Don't confuse",
-        "body": "• lose = verlieren\n• leave = verlassen\n• forget = vergessen"
+        "title": "Nicht verwechseln",
+        "body": "- lose = verlieren\n- leave = verlassen\n- forget = vergessen"
       },
       {
         "kind": "answer",
-        "title": "Answer",
+        "title": "Antwort",
         "body": "verlieren"
       }
     ],
@@ -3564,27 +3564,27 @@
     "explanation": [
       {
         "kind": "what",
-        "title": "Reading comprehension",
-        "body": ""
+        "title": "Worum geht es",
+        "body": "Es geht um Leseverstehen: Du sollst ein Schild verstehen."
       },
       {
         "kind": "terms",
-        "title": "Key words",
-        "body": "• 'throws objects' = wirft Gegenstände\n• 'beware' = Vorsicht\n• 'aim is accurate' = Ziel ist genau"
+        "title": "Wichtige Wörter",
+        "body": "- *throws objects* = wirft mit Gegenständen\n- *beware* = Vorsicht!\n- *his aim is accurate* = er zielt genau, er trifft"
       },
       {
         "kind": "steps",
-        "title": "Meaning",
-        "body": "The animal throws things AND can aim well!\n→ It could hit you!\n→ This is a WARNING sign."
+        "title": "Die Bedeutung",
+        "body": "Das Tier wirft mit Gegenständen und zielt genau. Es könnte dich also treffen. Das Schild ist eine **Warnung**."
       },
       {
         "kind": "remember",
-        "title": "TIP",
-        "body": "Look for KEY WORDS to understand the meaning!"
+        "title": "Tipp",
+        "body": "Achte auf die wichtigen Wörter. Sie zeigen dir, was der Text bedeutet."
       },
       {
         "kind": "answer",
-        "title": "Answer",
+        "title": "Antwort",
         "body": "Be careful - this animal could hit you"
       }
     ],
@@ -3616,27 +3616,27 @@
     "explanation": [
       {
         "kind": "what",
-        "title": "Questions in simple present",
-        "body": ""
+        "title": "Worum geht es",
+        "body": "Es geht um Fragen im Simple Present."
       },
       {
         "kind": "formula",
-        "title": "Rule",
-        "body": "Do/Does + subject + infinitive (WITHOUT -s)?"
+        "title": "Die Regel",
+        "body": "Do/Does + Subjekt + Grundform (ohne -s)?"
       },
       {
         "kind": "steps",
-        "title": "Analysis",
-        "body": "• 'she' (3rd person) → use 'Does'\n• After 'Does' → infinitive WITHOUT -s!\n• 'like' (not 'likes'!)"
+        "title": "Schritt für Schritt",
+        "body": "- *she* ist 3. Person Singular. Deshalb steht *Does*.\n- Nach *Does* steht die Grundform ohne -s.\n- Es heißt also *like*, nicht *likes*."
       },
       {
         "kind": "mistake",
-        "title": "Common mistake",
-        "body": "'Does she likes...' is WRONG!\nThe -s is already in 'Does'!"
+        "title": "Typischer Fehler",
+        "body": "*Does she likes ...?* ist falsch. Das -s steckt schon in *Does*."
       },
       {
         "kind": "answer",
-        "title": "Answer",
+        "title": "Antwort",
         "body": "Does she like pizza?"
       }
     ],
@@ -3668,27 +3668,27 @@
     "explanation": [
       {
         "kind": "what",
-        "title": "Irregular verb",
-        "body": "THINK"
+        "title": "Unregelmäßiges Verb",
+        "body": "think"
       },
       {
         "kind": "formula",
-        "title": "Forms",
-        "body": "• Simple Present: think\n• Simple Past: THOUGHT\n• Past Participle: thought"
+        "title": "Die Formen",
+        "body": "- Simple Present: think\n- Simple Past: thought\n- Past Participle (3. Form): thought"
       },
       {
         "kind": "mistake",
-        "title": "'thinked' does NOT exist!",
-        "body": ""
+        "title": "Typischer Fehler",
+        "body": "*thinked* gibt es nicht."
       },
       {
         "kind": "remember",
-        "title": "Similar pattern",
-        "body": "• think - thought - thought\n• bring - brought - brought\n• buy - bought - bought"
+        "title": "Ähnliches Muster",
+        "body": "- think – thought – thought\n- bring – brought – brought\n- buy – bought – bought"
       },
       {
         "kind": "answer",
-        "title": "Answer",
+        "title": "Antwort",
         "body": "thought"
       }
     ],

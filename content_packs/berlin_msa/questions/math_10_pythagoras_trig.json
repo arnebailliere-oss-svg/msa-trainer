@@ -614,7 +614,7 @@
       },
       {
         "kind": "steps",
-        "body": "$a = \\frac{\\sin\\alpha}{\\sin\\beta} \\cdot b = \\frac{\\sin {{al}}°}{\\sin {{be}}°} \\cdot {{b}} = \\frac{{{= sin(al) | fixed:4}}}{{{= sin(be) | fixed:4}}} \\cdot {{b}} \\approx {{= sin(al)/sin(be)*b | fixed:2}}$ cm"
+        "body": "$a = \\frac{\\sin\\alpha}{\\sin\\beta} \\cdot b = \\frac{\\sin {{al}}°}{\\sin {{be}}°} \\cdot {{b}} \\approx {{= sin(al)/sin(be)*b | fixed:2}}$ cm\n\nTippe die ganze Rechnung in den Taschenrechner ein. Runde erst am Ende. Zur Kontrolle: $\\sin {{al}}° \\approx {{= sin(al) | fixed:4}}$ und $\\sin {{be}}° \\approx {{= sin(be) | fixed:4}}$."
       },
       {
         "kind": "remember",

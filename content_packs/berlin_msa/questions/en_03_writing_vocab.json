@@ -150,7 +150,7 @@
               "grund": "So endet eine formelle E-Mail. Der Satz bedeutet: Ich freue mich auf Ihre Antwort. Nach *to* steht hier die Form mit -ing."
             },
             {
-              "phrase": "Thanks a lot for your mail!",
+              "phrase": "Thanks a lot for your e-mail!",
               "loesung": "informal",
               "grund": "Das ist freundlich und locker. Formell würde man *Thank you for your e-mail* schreiben."
             }
@@ -428,8 +428,8 @@
               "a": "I'm looking for my keys.",
               "b": "I'm searching my keys.",
               "c": "I'm looking my keys.",
-              "d": "I'm looking after my keys.",
-              "grund": "Suchen heißt *look for*. *Look after* bedeutet sich kümmern um, und nach *search* müsste ebenfalls *for* stehen."
+              "d": "I'm looking to my keys.",
+              "grund": "Suchen heißt *look for*. Ohne *for* oder mit *to* ist der Satz falsch. Auch nach *search* müsste *for* stehen."
             }
           ]
         }
@@ -458,7 +458,7 @@
       {
         "kind": "what",
         "title": "Warum",
-        "body": "| Dafür gibt es Punkte | Das heißt für dich |\n| --- | --- |\n| Inhalt | Alle Fragen und Punkte der Aufgabe sind beantwortet. |\n| Sprache | Man versteht dich, und die Sätze sind richtig gebaut. |\n| Länge | Die verlangte Wortzahl ist erreicht. |\n\nGrammatik allein reicht also nicht. Und die Handschrift wird nicht bewertet, solange man sie lesen kann."
+        "body": "| Dafür gibt es Punkte | Das heißt für dich |\n| --- | --- |\n| Inhalt | Alle Fragen und Punkte der Aufgabe sind beantwortet, und die verlangte Wortzahl ist erreicht. |\n| Sprache | Man versteht dich, und die Sätze sind richtig gebaut. |\n\nGrammatik allein reicht also nicht. Und die Handschrift wird nicht bewertet, solange man sie lesen kann."
       }
     ],
     "tags": [
@@ -1111,13 +1111,13 @@
               "grund": "*To share* bedeutet teilen. *Shave* heißt rasieren, und *shape* ist eine Form."
             },
             {
-              "satz": "The ___ of the company gave me a job interview.",
+              "satz": "My new ___ is friendly. She pays me £9 an hour.",
               "a": "employer",
               "b": "employee",
               "c": "employment",
               "d": "",
               "de": "Arbeitgeber",
-              "grund": "Der *employer* ist der Arbeitgeber. Der *employee* ist der Arbeitnehmer, also der, der dort arbeitet."
+              "grund": "Der *employer* ist der Arbeitgeber. Er bezahlt den Lohn. Der *employee* ist der Arbeitnehmer, also der, der dort arbeitet."
             }
           ]
         }

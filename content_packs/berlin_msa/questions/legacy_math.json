@@ -120,22 +120,22 @@
       {
         "kind": "what",
         "title": "Was ist das",
-        "body": "Wir suchen einen Teil (25%) von einer Zahl (200)."
+        "body": "Wir suchen einen Teil (25 %) von einer Zahl (200)."
       },
       {
         "kind": "remember",
-        "title": "Trick für 25%",
-        "body": "25% = ein VIERTEL!"
+        "title": "Trick für 25 %",
+        "body": "25 % sind ein Viertel."
       },
       {
         "kind": "steps",
         "title": "Rechnung",
-        "body": "Methode 1 (Viertel): 200 ÷ 4 = 50\n\nMethode 2 (Formel):\n1. 25% = 0,25\n2. 0,25 × 200 = 50"
+        "body": "Methode 1 (Viertel): 200 : 4 = 50\n\nMethode 2 (Formel):\n1. 25 % = 0,25\n2. 0,25 · 200 = 50"
       },
       {
         "kind": "text",
         "title": "Vorstellung",
-        "body": "200 Gummibärchen.\n25% = jedes 4. Gummibärchen\n= 50 Gummibärchen"
+        "body": "Du hast 200 Gummibärchen.\n25 % bedeutet: jedes 4. Gummibärchen.\nDas sind 50 Gummibärchen."
       },
       {
         "kind": "answer",
@@ -166,27 +166,27 @@
       {
         "kind": "what",
         "title": "Was ist das",
-        "body": "50% = DIE HÄLFTE!"
+        "body": "50 % sind die Hälfte."
       },
       {
         "kind": "remember",
-        "title": "Super-trick",
-        "body": "50% = ÷ 2"
+        "title": "Super-Trick",
+        "body": "50 % bedeutet: geteilt durch 2."
       },
       {
         "kind": "steps",
         "title": "Rechnung",
-        "body": "84 ÷ 2 = 42"
+        "body": "84 : 2 = 42"
       },
       {
         "kind": "text",
         "title": "Vorstellung",
-        "body": "Du hast 84 Süßigkeiten.\n50% davon = die Hälfte\n= 42 Süßigkeiten"
+        "body": "Du hast 84 Süßigkeiten.\n50 % davon sind die Hälfte.\nDas sind 42 Süßigkeiten."
       },
       {
         "kind": "mistake",
         "title": "Merke dir",
-        "body": "• 50% = Hälfte (÷2)\n• 25% = Viertel (÷4)\n• 10% = Zehntel (÷10)"
+        "body": "• 50 % = die Hälfte (geteilt durch 2)\n• 25 % = ein Viertel (geteilt durch 4)\n• 10 % = ein Zehntel (geteilt durch 10)"
       },
       {
         "kind": "answer",
@@ -223,22 +223,22 @@
       {
         "kind": "what",
         "title": "Was ist das",
-        "body": "10% = EIN ZEHNTEL!"
+        "body": "10 % sind ein Zehntel."
       },
       {
         "kind": "remember",
-        "title": "SUPER-TRICK für 10%",
-        "body": "Einfach das Komma um EINE Stelle nach links!\n350 → 35,0 → 35"
+        "title": "Super-Trick für 10 %",
+        "body": "Schiebe das Komma um eine Stelle nach links.\nAus 350 wird 35,0. Das ist 35."
       },
       {
         "kind": "steps",
         "title": "Rechnung",
-        "body": "350 ÷ 10 = 35\n\nODER: 0,1 × 350 = 35"
+        "body": "350 : 10 = 35\n\nOder: 0,1 · 350 = 35"
       },
       {
         "kind": "mistake",
         "title": "Merke",
-        "body": "10% = Komma nach links\n1% = Komma ZWEI Stellen nach links"
+        "body": "10 %: Komma eine Stelle nach links\n1 %: Komma zwei Stellen nach links"
       },
       {
         "kind": "answer",
@@ -274,22 +274,22 @@
       {
         "kind": "terms",
         "title": "Die Begriffe",
-        "body": "• Rabatt = Preisnachlass, Ersparnis\n• 15% Rabatt = du zahlst 15% WENIGER"
+        "body": "• Rabatt = Preisnachlass, Ersparnis\n• 15 % Rabatt = du zahlst 15 % weniger"
       },
       {
         "kind": "steps",
         "title": "Rechnung",
-        "body": "1. 15% = 0,15\n2. Rabatt = 0,15 × 400€ = 60€"
+        "body": "1. 15 % = 0,15\n2. Rabatt = 0,15 · 400 € = 60 €"
       },
       {
         "kind": "text",
         "title": "Schritt für Schritt",
-        "body": "10% von 400€ = 40€\n5% von 400€ = 20€ (die Hälfte von 10%)\n15% = 10% + 5% = 40€ + 20€ = 60€"
+        "body": "10 % von 400 € = 40 €\n5 % von 400 € = 20 € (die Hälfte von 10 %)\n15 % = 10 % + 5 % = 40 € + 20 € = 60 €"
       },
       {
         "kind": "mistake",
         "title": "Achtung",
-        "body": "Die Frage ist nach dem RABATT, nicht nach dem Endpreis!"
+        "body": "Gefragt ist nach dem Rabatt, nicht nach dem Endpreis."
       },
       {
         "kind": "answer",
@@ -326,27 +326,27 @@
       {
         "kind": "what",
         "title": "Was ist das",
-        "body": "Wir suchen den Prozentsatz p - also welcher Anteil 30 von 120 ist."
+        "body": "Wir suchen den Prozentsatz p. Das heißt: Welcher Anteil von 120 ist 30?"
       },
       {
         "kind": "terms",
         "title": "Die Begriffe",
-        "body": "• W = Prozentwert (30) - der Teil\n• G = Grundwert (120) - das Ganze\n• p = Prozentsatz - DAS SUCHEN WIR"
+        "body": "• W = Prozentwert (30), der Teil\n• G = Grundwert (120), das Ganze\n• p = Prozentsatz, das suchen wir"
       },
       {
         "kind": "formula",
         "title": "Die Formel",
-        "body": "p = W ÷ G × 100\n↓   ↓   ↓\n?  = 30 ÷ 120 × 100"
+        "body": "p = W : G · 100\np = 30 : 120 · 100"
       },
       {
         "kind": "steps",
         "title": "Rechnung",
-        "body": "1. Teilen: 30 ÷ 120 = 0,25\n2. In Prozent: 0,25 × 100 = 25%"
+        "body": "1. Teilen: 30 : 120 = 0,25\n2. In Prozent: 0,25 · 100 = 25 %"
       },
       {
         "kind": "text",
         "title": "Vorstellung",
-        "body": "120 Schüler in der Schule.\n30 Schüler spielen Fußball.\nDas sind 25% = ein Viertel der Schüler."
+        "body": "In der Schule sind 120 Schüler.\n30 Schüler spielen Fußball.\nDas sind 25 %, also ein Viertel der Schüler."
       },
       {
         "kind": "answer",
@@ -377,32 +377,32 @@
       {
         "kind": "what",
         "title": "Was ist das",
-        "body": "Wir suchen den Grundwert G - also die ursprüngliche Zahl."
+        "body": "Wir suchen den Grundwert G. Das ist die ursprüngliche Zahl."
       },
       {
         "kind": "terms",
         "title": "Die Begriffe",
-        "body": "• W = Prozentwert (45) - der Teil, den wir kennen\n• p = Prozentsatz (20%)\n• G = Grundwert - DAS SUCHEN WIR"
+        "body": "• W = Prozentwert (45), der Teil, den wir kennen\n• p = Prozentsatz (20 %)\n• G = Grundwert, das suchen wir"
       },
       {
         "kind": "formula",
         "title": "Die Formel",
-        "body": "G = W ÷ p × 100\n↓   ↓   ↓\n?  = 45 ÷ 20 × 100"
+        "body": "G = W : p · 100\nG = 45 : 20 · 100"
       },
       {
         "kind": "steps",
         "title": "Rechnung",
-        "body": "1. 45 ÷ 20 = 2,25\n2. 2,25 × 100 = 225"
+        "body": "1. 45 : 20 = 2,25\n2. 2,25 · 100 = 225"
       },
       {
         "kind": "text",
         "title": "Probe",
-        "body": "20% von 225 = 0,2 × 225 = 45 ✓"
+        "body": "20 % von 225 = 0,2 · 225 = 45 ✓"
       },
       {
         "kind": "remember",
         "title": "Denkweise",
-        "body": "Wenn 45 schon 20% (ein Fünftel) sind,\ndann ist das Ganze 5 × 45 = 225"
+        "body": "45 sind 20 %, also ein Fünftel.\nDann ist das Ganze 5 · 45 = 225."
       },
       {
         "kind": "answer",
@@ -439,27 +439,27 @@
       {
         "kind": "what",
         "title": "Was ist das",
-        "body": "Prozentuale Änderung - um wie viel % hat sich etwas verändert?"
+        "body": "Prozentuale Änderung: Um wie viel Prozent hat sich etwas verändert?"
       },
       {
         "kind": "terms",
         "title": "Die Begriffe",
-        "body": "• Alter Wert = Startwert (50€)\n• Neuer Wert = Endwert (60€)\n• Änderung = Unterschied zwischen beiden"
+        "body": "• Alter Wert = Startwert (50 €)\n• Neuer Wert = Endwert (60 €)\n• Änderung = Unterschied zwischen beiden"
       },
       {
         "kind": "formula",
         "title": "Die Formel",
-        "body": "Änderung in % = (Neu - Alt) ÷ Alt × 100\n                    ↓\n           IMMER durch den ALTEN Wert teilen!"
+        "body": "Änderung in % = (Neu - Alt) : Alt · 100\nImmer durch den alten Wert teilen."
       },
       {
         "kind": "steps",
         "title": "Rechnung",
-        "body": "1. Änderung: 60€ - 50€ = 10€\n2. Durch alten Wert: 10 ÷ 50 = 0,2\n3. In Prozent: 0,2 × 100 = 20%"
+        "body": "1. Änderung: 60 € - 50 € = 10 €\n2. Durch den alten Wert teilen: 10 : 50 = 0,2\n3. In Prozent: 0,2 · 100 = 20 %"
       },
       {
         "kind": "mistake",
         "title": "Achtung",
-        "body": "Nicht durch 60 teilen!"
+        "body": "Nicht durch 60 teilen."
       },
       {
         "kind": "answer",
@@ -489,27 +489,27 @@
       {
         "kind": "what",
         "title": "Was ist das",
-        "body": "Prozentuale ABNAHME - um wie viel % ist etwas WENIGER geworden?"
+        "body": "Prozentuale Abnahme: Um wie viel Prozent ist etwas weniger geworden?"
       },
       {
         "kind": "terms",
         "title": "Die Begriffe",
-        "body": "• Alter Preis = 80€ (VORHER)\n• Neuer Preis = 60€ (NACHHER)\n• Reduzierung = um wie viel es weniger wurde"
+        "body": "• Alter Preis = 80 € (vorher)\n• Neuer Preis = 60 € (nachher)\n• Reduzierung = um wie viel es weniger wurde"
       },
       {
         "kind": "formula",
         "title": "Die Formel",
-        "body": "Abnahme in % = (Alt - Neu) ÷ Alt × 100\n                    ↓\n         IMMER durch den ALTEN Wert teilen!"
+        "body": "Abnahme in % = (Alt - Neu) : Alt · 100\nImmer durch den alten Wert teilen."
       },
       {
         "kind": "steps",
         "title": "Rechnung",
-        "body": "1. Differenz: 80€ - 60€ = 20€\n2. Durch alten Wert: 20 ÷ 80 = 0,25\n3. In Prozent: 0,25 × 100 = 25%"
+        "body": "1. Differenz: 80 € - 60 € = 20 €\n2. Durch den alten Wert teilen: 20 : 80 = 0,25\n3. In Prozent: 0,25 · 100 = 25 %"
       },
       {
         "kind": "mistake",
         "title": "Achtung",
-        "body": "Nicht durch 60 teilen!"
+        "body": "Nicht durch 60 teilen."
       },
       {
         "kind": "answer",
@@ -546,22 +546,22 @@
       {
         "kind": "what",
         "title": "Was ist das",
-        "body": "Wir berechnen den NEUEN Preis nach einer Erhöhung."
+        "body": "Wir berechnen den neuen Preis nach einer Erhöhung."
       },
       {
         "kind": "terms",
         "title": "Die Begriffe",
-        "body": "• Alter Preis = 40€\n• Erhöhung = 10%\n• Neuer Preis = das suchen wir"
+        "body": "• Alter Preis = 40 €\n• Erhöhung = 10 %\n• Neuer Preis = das suchen wir"
       },
       {
         "kind": "steps",
         "title": "Rechnung",
-        "body": "Schritt 1: Erhöhung berechnen\n10% von 40€ = 0,1 × 40€ = 4€\n\nSchritt 2: Zum alten Preis addieren\n40€ + 4€ = 44€"
+        "body": "Schritt 1: Erhöhung berechnen\n10 % von 40 € = 0,1 · 40 € = 4 €\n\nSchritt 2: Zum alten Preis addieren\n40 € + 4 € = 44 €"
       },
       {
         "kind": "remember",
         "title": "Schnellere Methode",
-        "body": "100% + 10% = 110%\n110% von 40€ = 1,1 × 40€ = 44€"
+        "body": "100 % + 10 % = 110 %\n110 % von 40 € = 1,1 · 40 € = 44 €"
       },
       {
         "kind": "answer",
@@ -665,7 +665,7 @@
       {
         "kind": "steps",
         "title": "Rechnung",
-        "body": "12/18 = ?\n\nWelche Zahl passt in 12 UND in 18?\n→ 6 passt!\n\n12 ÷ 6 = 2\n18 ÷ 6 = 6\n\nAlso: 12/18 = 2/3"
+        "body": "12/18 = ?\n\nWelche Zahl passt in 12 und in 18?\nDie 6 passt.\n\n12 : 6 = 2\n18 : 6 = 3\n\nAlso: 12/18 = 2/3"
       },
       {
         "kind": "text",
@@ -674,8 +674,8 @@
       },
       {
         "kind": "mistake",
-        "title": "4/6 und 6/9 sind NICHT vollständig gekürzt!",
-        "body": ""
+        "title": "Achtung",
+        "body": "4/6 und 6/9 haben zwar denselben Wert wie 12/18, sind aber nicht vollständig gekürzt.\nBeide lassen sich noch weiter kürzen, bis 2/3 herauskommt."
       },
       {
         "kind": "answer",
@@ -712,12 +712,12 @@
       {
         "kind": "what",
         "title": "Was ist das",
-        "body": "Brüche addieren mit gleichem Nenner."
+        "body": "Brüche mit gleichem Nenner addieren."
       },
       {
         "kind": "formula",
         "title": "Die Regel",
-        "body": "Gleicher Nenner? → Zähler addieren, Nenner bleibt!"
+        "body": "Bei gleichem Nenner: Die Zähler addieren. Der Nenner bleibt."
       },
       {
         "kind": "steps",
@@ -727,12 +727,12 @@
       {
         "kind": "text",
         "title": "Vorstellung",
-        "body": "Eine Pizza in 4 Stücke.\nDu nimmst 1 Stück + 2 Stücke = 3 Stücke\n= 3/4 der Pizza"
+        "body": "Eine Pizza hat 4 Stücke.\nDu nimmst 1 Stück und 2 Stücke. Das sind 3 Stücke.\nDas sind 3/4 der Pizza."
       },
       {
         "kind": "mistake",
         "title": "Typischer Fehler",
-        "body": "Nenner NICHT addieren!\nFALSCH: 1/4 + 2/4 = 3/8\nRICHTIG: 1/4 + 2/4 = 3/4"
+        "body": "Die Nenner nicht addieren.\nFalsch: 1/4 + 2/4 = 3/8\nRichtig: 1/4 + 2/4 = 3/4"
       },
       {
         "kind": "answer",
@@ -764,22 +764,22 @@
       {
         "kind": "what",
         "title": "Was ist das",
-        "body": "Brüche addieren mit VERSCHIEDENEM Nenner."
+        "body": "Brüche mit verschiedenem Nenner addieren."
       },
       {
         "kind": "formula",
         "title": "Die Regel",
-        "body": "Verschiedener Nenner? → Erst gleichnamig machen!"
+        "body": "Bei verschiedenen Nennern: Zuerst gleichnamig machen."
       },
       {
         "kind": "steps",
         "title": "Rechnung",
-        "body": "1/2 + 1/4\n\nSchritt 1: Gemeinsamen Nenner finden\n2 und 4 → gemeinsamer Nenner: 4\n\nSchritt 2: Erweitern\n1/2 = 2/4 (×2 oben und unten)\n\nSchritt 3: Addieren\n2/4 + 1/4 = 3/4"
+        "body": "1/2 + 1/4\n\nSchritt 1: Gemeinsamen Nenner finden\nFür 2 und 4 ist der gemeinsame Nenner 4.\n\nSchritt 2: Erweitern\n1/2 = 2/4 (oben und unten mal 2)\n\nSchritt 3: Addieren\n2/4 + 1/4 = 3/4"
       },
       {
         "kind": "text",
         "title": "Vorstellung",
-        "body": "1/2 Pizza = 2/4 Pizza\nPlus 1/4 Pizza\n= 3/4 Pizza"
+        "body": "1/2 Pizza = 2/4 Pizza\nDazu kommt 1/4 Pizza.\nZusammen sind das 3/4 Pizza."
       },
       {
         "kind": "answer",
@@ -821,22 +821,22 @@
       {
         "kind": "formula",
         "title": "Die Regel",
-        "body": "Zähler × Zähler\nNenner × Nenner"
+        "body": "Zähler mal Zähler\nNenner mal Nenner"
       },
       {
         "kind": "steps",
         "title": "Rechnung",
-        "body": "2/3 × 3/4\n= (2×3)/(3×4)\n= 6/12\n= 1/2 (gekürzt)"
+        "body": "2/3 · 3/4\n= (2 · 3)/(3 · 4)\n= 6/12\n= 1/2 (gekürzt)"
       },
       {
         "kind": "remember",
         "title": "Trick",
-        "body": "VORHER kürzen spart Arbeit!\n2/3 × 3/4\nDie 3 oben und die 3 unten kürzen sich weg!\n= 2/4 = 1/2"
+        "body": "Vorher kürzen spart Arbeit.\n2/3 · 3/4\nDie 3 oben und die 3 unten kürzen sich weg.\nEs bleibt 2/4 = 1/2."
       },
       {
         "kind": "text",
         "title": "Vorstellung",
-        "body": "2/3 von 3/4 einer Pizza\n= die Hälfte der Pizza"
+        "body": "2/3 von 3/4 einer Pizza\nsind die Hälfte der Pizza."
       },
       {
         "kind": "answer",
@@ -867,27 +867,27 @@
       {
         "kind": "what",
         "title": "Was bedeutet das",
-        "body": "'Vereinfache' heißt: Schreib es kürzer, OHNE die Klammer."
+        "body": "„Vereinfache“ heißt: Schreib es kürzer, ohne die Klammer."
       },
       {
         "kind": "text",
-        "title": "WAS IST x",
-        "body": "x ist ein BUCHSTABE, keine Zahl!\nx bleibt x - wir rechnen es NICHT aus."
+        "title": "Was ist x",
+        "body": "x ist ein Buchstabe. Er steht für eine Zahl, die wir noch nicht kennen.\nDeshalb bleibt x stehen. Wir rechnen es nicht aus."
       },
       {
         "kind": "text",
         "title": "Stell dir vor",
-        "body": "x = eine Kiste (wir wissen nicht was drin ist)\n3(x + 2) = 3 mal (1 Kiste + 2 Äpfel)\n= 3 Kisten + 6 Äpfel\n= 3x + 6"
+        "body": "x ist eine Kiste. Wir wissen nicht, was darin ist.\n3(x + 2) bedeutet: 3 mal (1 Kiste und 2 Äpfel).\nDas sind 3 Kisten und 6 Äpfel.\nAlso: 3x + 6"
       },
       {
         "kind": "steps",
         "title": "So geht's",
-        "body": "Schritt 1: 3 × x = 3x (drei Kisten)\nSchritt 2: 3 × 2 = 6 (sechs Äpfel)\nSchritt 3: Zusammen: 3x + 6"
+        "body": "Schritt 1: 3 · x = 3x (drei Kisten)\nSchritt 2: 3 · 2 = 6 (sechs Äpfel)\nSchritt 3: Zusammen: 3x + 6"
       },
       {
         "kind": "mistake",
         "title": "Typischer Fehler",
-        "body": "Nur 3×2=6 rechnen und x vergessen!\nFALSCH: 6 (nur die Äpfel!)\nRICHTIG: 3x + 6 (Kisten UND Äpfel)"
+        "body": "Viele rechnen nur 3 · 2 = 6 und vergessen das x.\nFalsch: 6 (nur die Äpfel)\nRichtig: 3x + 6 (Kisten und Äpfel)"
       },
       {
         "kind": "answer",
@@ -924,22 +924,22 @@
       {
         "kind": "what",
         "title": "Was bedeutet das",
-        "body": "Die 5 muss mit JEDEM Teil in der Klammer multipliziert werden."
+        "body": "Die 5 muss mit jedem Teil in der Klammer multipliziert werden."
       },
       {
         "kind": "text",
         "title": "Stell dir vor",
-        "body": "a = eine Kiste\n5(a - 3) = 5 mal (1 Kiste minus 3 Äpfel)"
+        "body": "a ist eine Kiste.\n5(a - 3) bedeutet: 5 mal (1 Kiste minus 3 Äpfel)."
       },
       {
         "kind": "steps",
         "title": "So geht's",
-        "body": "Schritt 1: 5 × a = 5a\nSchritt 2: 5 × (-3) = -15\n         (ACHTUNG: Das Minus bleibt!)\nSchritt 3: Zusammen: 5a - 15"
+        "body": "Schritt 1: 5 · a = 5a\nSchritt 2: 5 · (-3) = -15 (Achtung: Das Minus bleibt.)\nSchritt 3: Zusammen: 5a - 15"
       },
       {
         "kind": "mistake",
-        "title": "Typischer Fehler",
-        "body": "Das Minus vergessen!\nFALSCH: 5a - 3 (die 3 nicht multipliziert)\nRICHTIG: 5a - 15"
+        "title": "Typische Fehler",
+        "body": "Die 5 nur mit dem a multiplizieren.\nFalsch: 5a - 3 (die 3 wurde nicht mit 5 multipliziert)\nFalsch: 5a + 15 (das Minus ist verloren gegangen)\nRichtig: 5a - 15"
       },
       {
         "kind": "answer",
@@ -970,12 +970,12 @@
       {
         "kind": "what",
         "title": "Was bedeutet das",
-        "body": "Erst Klammer auflösen, dann vereinfachen."
+        "body": "Zuerst die Klammer auflösen, dann vereinfachen."
       },
       {
         "kind": "steps",
         "title": "So geht's",
-        "body": "Schritt 1: Klammer auflösen\n2 × 3x = 6x\n2 × 4 = 8\n→ 2(3x + 4) = 6x + 8\n\nSchritt 2: -5 rechnen\n6x + 8 - 5 = 6x + 3"
+        "body": "Schritt 1: Klammer auflösen\n2 · 3x = 6x\n2 · 4 = 8\nAlso: 2(3x + 4) = 6x + 8\n\nSchritt 2: 5 abziehen\n6x + 8 - 5 = 6x + 3"
       },
       {
         "kind": "text",
@@ -985,7 +985,7 @@
       {
         "kind": "mistake",
         "title": "Reihenfolge",
-        "body": "1. ERST Klammer auflösen\n2. DANN addieren/subtrahieren"
+        "body": "1. Zuerst die Klammer auflösen.\n2. Dann addieren oder subtrahieren."
       },
       {
         "kind": "answer",
@@ -1032,12 +1032,12 @@
       {
         "kind": "formula",
         "title": "Die Regel",
-        "body": "Nur GLEICHE Buchstaben dürfen addiert werden!\n• 4x + 3x = 7x ✓\n• 4x + 3y = 4x + 3y (bleibt so!)"
+        "body": "Nur gleiche Buchstaben dürfen addiert werden.\n\n• 4x + 3x = 7x ✓\n• 4x + 3y = 4x + 3y (bleibt so)"
       },
       {
         "kind": "mistake",
-        "title": "Typischer Fehler",
-        "body": "FALSCH: 4x + 3x = 12x (multipliziert statt addiert)\nFALSCH: 4x + 3x = 7x² (x² ist was anderes!)\nRICHTIG: 4x + 3x = 7x"
+        "title": "Typische Fehler",
+        "body": "Falsch: 4x + 3x = 12x (multipliziert statt addiert)\nFalsch: 4x + 3x = 7x² (x² ist etwas anderes)\nRichtig: 4x + 3x = 7x"
       },
       {
         "kind": "answer",
@@ -1083,7 +1083,7 @@
       {
         "kind": "remember",
         "title": "Merke",
-        "body": "Die Zahl vor dem Buchstaben heißt KOEFFIZIENT.\n8 - 3 = 5, der Buchstabe bleibt."
+        "body": "Die Zahl vor dem Buchstaben heißt Koeffizient.\n8 - 3 = 5, der Buchstabe bleibt."
       },
       {
         "kind": "answer",
@@ -1170,17 +1170,17 @@
       {
         "kind": "what",
         "title": "Was ist das",
-        "body": "Einfache Gleichung - x alleine bringen."
+        "body": "Einfache Gleichung: x soll allein stehen."
       },
       {
         "kind": "formula",
-        "title": "DIE REGEL (Waage!)",
+        "title": "Die Regel (Waage)",
         "body": "Was auf einer Seite passiert, muss auch auf der anderen passieren."
       },
       {
         "kind": "text",
         "title": "Vorstellung",
-        "body": "Eine Waage ist im Gleichgewicht:\n[x + 7] = [12]\n\nWenn ich links 7 wegnehme, muss ich rechts auch 7 wegnehmen!"
+        "body": "Eine Waage ist im Gleichgewicht:\n[x + 7] = [12]\n\nWenn ich links 7 wegnehme, muss ich rechts auch 7 wegnehmen."
       },
       {
         "kind": "steps",
@@ -1328,17 +1328,17 @@
       {
         "kind": "what",
         "title": "Was ist das",
-        "body": "Gleichung mit x auf BEIDEN Seiten."
+        "body": "Gleichung mit x auf beiden Seiten."
       },
       {
         "kind": "formula",
         "title": "Strategie",
-        "body": "1. Alle x auf eine Seite bringen\n2. Alle Zahlen auf die andere Seite\n3. Durch die Zahl vor x teilen"
+        "body": "1. Alle x auf eine Seite bringen\n2. Alle Zahlen auf die andere Seite bringen\n3. Durch die Zahl vor x teilen"
       },
       {
         "kind": "steps",
         "title": "Rechnung",
-        "body": "5x + 3 = 3x + 11    | -3x auf beiden Seiten\n2x + 3 = 11         | -3 auf beiden Seiten\n2x = 8              | ÷2 auf beiden Seiten\nx = 4"
+        "body": "5x + 3 = 3x + 11    | -3x auf beiden Seiten\n2x + 3 = 11         | -3 auf beiden Seiten\n2x = 8              | :2 auf beiden Seiten\nx = 4"
       },
       {
         "kind": "text",
@@ -1348,7 +1348,7 @@
       {
         "kind": "text",
         "title": "Probe",
-        "body": "Links: 5×4 + 3 = 23\nRechts: 3×4 + 11 = 23 ✓"
+        "body": "Links: 5 · 4 + 3 = 23\nRechts: 3 · 4 + 11 = 23 ✓"
       },
       {
         "kind": "answer",
@@ -1384,22 +1384,22 @@
       {
         "kind": "what",
         "title": "Was ist das",
-        "body": "Lineare Funktion - eine Gerade im Koordinatensystem."
+        "body": "Lineare Funktion: eine Gerade im Koordinatensystem."
       },
       {
         "kind": "terms",
         "title": "Die Begriffe",
-        "body": "• y = der y-Wert (hoch/runter)\n• x = der x-Wert (links/rechts)\n• m = Steigung (wie steil ist die Gerade?)\n• b = y-Achsenabschnitt (wo kreuzt die Gerade die y-Achse?)"
+        "body": "• y = der y-Wert (hoch oder runter)\n• x = der x-Wert (links oder rechts)\n• m = Steigung (wie steil ist die Gerade?)\n• b = y-Achsenabschnitt (wo kreuzt die Gerade die y-Achse?)"
       },
       {
         "kind": "formula",
         "title": "Die Formel",
-        "body": "y = m·x + b\n    ↓     ↓\n    2    -3"
+        "body": "y = m·x + b\nHier: y = 2x - 3, also m = 2 und b = -3"
       },
       {
         "kind": "text",
         "title": "Wo steht was",
-        "body": "• m steht DIREKT VOR dem x → hier: 2\n• b steht OHNE x → hier: -3"
+        "body": "• m steht direkt vor dem x, hier: 2\n• b steht ohne x, hier: -3"
       },
       {
         "kind": "answer",
@@ -1508,22 +1508,22 @@
       {
         "kind": "what",
         "title": "Was ist das",
-        "body": "Funktionswert berechnen - x einsetzen und y ausrechnen."
+        "body": "Funktionswert berechnen: x einsetzen und y ausrechnen."
       },
       {
         "kind": "terms",
         "title": "Die Begriffe",
-        "body": "• x = 3 ist der EINGABEWERT\n• y = ? ist der AUSGABEWERT (den suchen wir)"
+        "body": "• x = 3 ist der Eingabewert\n• y = ? ist der Ausgabewert (den suchen wir)"
       },
       {
         "kind": "steps",
         "title": "Rechnung",
-        "body": "y = 2x + 1\ny = 2×3 + 1\ny = 6 + 1\ny = 7"
+        "body": "y = 2x + 1\ny = 2 · 3 + 1\ny = 6 + 1\ny = 7"
       },
       {
         "kind": "text",
         "title": "Vorstellung",
-        "body": "Die Funktion ist wie eine Maschine:\nDu gibst 3 rein → sie verdoppelt (×2) → addiert 1 → raus kommt 7"
+        "body": "Die Funktion ist wie eine Maschine:\nDu gibst 3 hinein. Die Maschine verdoppelt die Zahl und addiert 1. Heraus kommt 7."
       },
       {
         "kind": "text",
@@ -1716,8 +1716,8 @@
       },
       {
         "kind": "remember",
-        "title": "Warum ÷ 2",
-        "body": "Ein Dreieck ist ein HALBES Rechteck!"
+        "title": "Warum geteilt durch 2",
+        "body": "Ein Dreieck ist halb so groß wie das Rechteck mit der Länge g und der Breite h."
       },
       {
         "kind": "steps",
@@ -1727,7 +1727,7 @@
       {
         "kind": "text",
         "title": "Vorstellung",
-        "body": "Zeichne das Dreieck.\nVerdopple es → es wird ein Rechteck!\nDas Rechteck hat 60 cm².\nDas Dreieck ist die Hälfte = 30 cm²."
+        "body": "Zeichne um das Dreieck ein Rechteck mit den Seiten 10 cm und 6 cm.\nDas Rechteck hat 60 cm².\nDas Dreieck füllt genau die Hälfte davon aus, also 30 cm²."
       },
       {
         "kind": "answer",
@@ -1837,27 +1837,27 @@
       {
         "kind": "what",
         "title": "Was ist das",
-        "body": "Kreisfläche - wie viel Platz ist im Kreis?"
+        "body": "Kreisfläche: Wie viel Platz ist im Kreis?"
       },
       {
         "kind": "terms",
         "title": "Die Begriffe",
-        "body": "• r = Radius (Mitte → Rand) = 5 cm\n• π (Pi) ≈ 3,14\n• r² = r × r (Radius zum Quadrat)"
+        "body": "• r = Radius (von der Mitte zum Rand) = 5 cm\n• π (Pi) ≈ 3,14\n• r² = r · r (Radius zum Quadrat)"
       },
       {
         "kind": "formula",
         "title": "Die Formel",
-        "body": "A = π × r²"
+        "body": "A = π · r²"
       },
       {
         "kind": "steps",
         "title": "Rechnung",
-        "body": "1. r² berechnen: 5² = 5 × 5 = 25\n2. Mit π multiplizieren: 3,14 × 25 = 78,5 cm²"
+        "body": "1. r² berechnen: 5² = 5 · 5 = 25\n2. Mit π multiplizieren: 3,14 · 25 = 78,5 cm²"
       },
       {
         "kind": "mistake",
         "title": "Achtung",
-        "body": "ERST r², DANN × π!\nNicht: (π × r)²"
+        "body": "Zuerst r² ausrechnen, dann mit π multiplizieren.\nNicht: (π · r)²"
       },
       {
         "kind": "remember",
@@ -1906,17 +1906,17 @@
       {
         "kind": "what",
         "title": "Was ist das",
-        "body": "Satz des Pythagoras - findet die fehlende Seite in einem rechtwinkligen Dreieck."
+        "body": "Satz des Pythagoras: Er hilft, die fehlende Seite in einem rechtwinkligen Dreieck zu finden."
       },
       {
         "kind": "terms",
         "title": "Die Begriffe",
-        "body": "• Rechtwinkliges Dreieck = hat einen 90° Winkel\n• Katheten (a, b) = die zwei kurzen Seiten AM rechten Winkel\n• Hypotenuse (c) = die LÄNGSTE Seite, GEGENÜBER vom rechten Winkel"
+        "body": "• Rechtwinkliges Dreieck = hat einen Winkel von 90°\n• Katheten (a, b) = die zwei kurzen Seiten am rechten Winkel\n• Hypotenuse (c) = die längste Seite, gegenüber vom rechten Winkel"
       },
       {
         "kind": "formula",
         "title": "Die Formel",
-        "body": "a² + b² = c²\n↓    ↓    ↓\n6²  + 8² = c²"
+        "body": "a² + b² = c²\n6² + 8² = c²"
       },
       {
         "kind": "steps",
@@ -1931,7 +1931,7 @@
       {
         "kind": "remember",
         "title": "Merke",
-        "body": "3-4-5 und 6-8-10 sind bekannte Dreiecke!"
+        "body": "3-4-5 und 6-8-10 sind bekannte Dreiecke."
       }
     ],
     "tags": [
@@ -1966,16 +1966,16 @@
       {
         "kind": "what",
         "title": "Was ist das",
-        "body": "Kathete berechnen, wenn Hypotenuse gegeben ist."
+        "body": "Eine Kathete berechnen, wenn die Hypotenuse gegeben ist."
       },
       {
         "kind": "terms",
         "title": "Die Begriffe",
-        "body": "• a = Kathete (5 cm) - bekannt\n• c = Hypotenuse (13 cm) - bekannt\n• b = Kathete - DAS SUCHEN WIR"
+        "body": "• a = Kathete (5 cm), bekannt\n• c = Hypotenuse (13 cm), bekannt\n• b = Kathete, das suchen wir"
       },
       {
         "kind": "formula",
-        "title": "DIE FORMEL (umgestellt)",
+        "title": "Die Formel (umgestellt)",
         "body": "a² + b² = c²\nb² = c² - a²\nb = √(c² - a²)"
       },
       {
@@ -1986,12 +1986,12 @@
       {
         "kind": "mistake",
         "title": "Achtung",
-        "body": "Bei Kathete: MINUS (c² - a²)\nBei Hypotenuse: PLUS (a² + b²)"
+        "body": "Bei der Kathete: minus (c² - a²)\nBei der Hypotenuse: plus (a² + b²)"
       },
       {
         "kind": "remember",
         "title": "Merke",
-        "body": "5-12-13 ist ein bekanntes Dreieck!"
+        "body": "5-12-13 ist ein bekanntes Dreieck."
       },
       {
         "kind": "answer",
@@ -2862,7 +2862,7 @@
       {
         "kind": "remember",
         "title": "Denkweise",
-        "body": "75% = Dreiviertel = 90€\n25% = Einviertel = 30€ (90÷3)\n100% = Viertel × 4 = 120€"
+        "body": "75 % = drei Viertel = 90 €\n25 % = ein Viertel = 90 € : 3 = 30 €\n100 % = vier Viertel = 30 € · 4 = 120 €"
       },
       {
         "kind": "text",
@@ -2917,7 +2917,7 @@
       {
         "kind": "steps",
         "title": "Zählen",
-        "body": "1. Wie viele Buchstaben? 8\n2. Wie viele E? 4 (E_D_EE_E)"
+        "body": "1. Wie viele Buchstaben? 8\n2. Wie viele E? 4 (E _ _ _ E E _ E)"
       },
       {
         "kind": "formula",
@@ -2971,7 +2971,7 @@
       {
         "kind": "formula",
         "title": "Die Methode",
-        "body": "Bruch ÷ Nenner × 100 = Prozent"
+        "body": "Zähler : Nenner · 100 = Prozent"
       },
       {
         "kind": "steps",
@@ -3229,7 +3229,7 @@
       {
         "kind": "remember",
         "title": "Eselsbrücke",
-        "body": "\"GÄHH\"\nG-egenkathete A-uf H-ypotenuse = H-ypotenuse\n(Klingt wie \"Gähn\" 😴)"
+        "body": "Sinus = Gegenkathete geteilt durch Hypotenuse.\nMerke dir „G durch H“: Die Gegenkathete steht oben, die Hypotenuse steht unten."
       },
       {
         "kind": "answer",
@@ -3289,7 +3289,7 @@
       {
         "kind": "remember",
         "title": "Eselsbrücke",
-        "body": "\"KAHH\"\n(K)osinus = A-nkathete A-uf H-ypotenuse = H-ypotenuse"
+        "body": "Kosinus = Ankathete geteilt durch Hypotenuse.\nMerke dir „A durch H“: Die Ankathete steht oben, die Hypotenuse steht unten."
       },
       {
         "kind": "answer",
@@ -3354,7 +3354,7 @@
       {
         "kind": "remember",
         "title": "Eselsbrücke",
-        "body": "\"GAGA\"\n(T)angens = G-egenkathete A-uf A-nkathete\n(Tangens macht dich GAGA 🤪)"
+        "body": "Tangens = Gegenkathete geteilt durch Ankathete.\nMerke dir „G durch A“: Die Gegenkathete steht oben, die Ankathete steht unten.\nDie Hypotenuse kommt nicht vor."
       },
       {
         "kind": "answer",
@@ -3518,27 +3518,27 @@
       {
         "kind": "text",
         "title": "Begriffe",
-        "body": "• Gegenkathete = Seite GEGENÜBER vom gesuchten Winkel\n• Hypotenuse = LÄNGSTE Seite im Dreieck\n• arcsin = \"Umkehrung\" von sin (findet den Winkel)"
+        "body": "• Gegenkathete = die Seite gegenüber vom Winkel α\n• Hypotenuse = die längste Seite im Dreieck"
       },
       {
         "kind": "formula",
-        "title": "Winkel berechnen mit Sinus",
-        "body": "Wenn du Gegenkathete und Hypotenuse kennst:\n1. sin(α) = Gegenkathete / Hypotenuse\n2. α = arcsin(Gegenkathete / Hypotenuse)"
+        "title": "Sinus berechnen",
+        "body": "sin(α) = Gegenkathete : Hypotenuse"
       },
       {
         "kind": "text",
         "title": "Schritt für Schritt",
-        "body": "1. sin(α) = 4 / 8 = 0,5\n2. α = arcsin(0,5)\n3. α = 30°"
+        "body": "sin(α) = 4 cm : 8 cm = 0,5"
       },
       {
         "kind": "remember",
         "title": "Merke",
-        "body": "sin(30°) = 0,5 (auswendig lernen!)"
+        "body": "Zu sin(α) = 0,5 gehört der Winkel α = 30°."
       },
       {
         "kind": "answer",
         "title": "Antwort",
-        "body": "30"
+        "body": "0,5"
       }
     ],
     "tags": [
@@ -3757,7 +3757,7 @@
       },
       {
         "kind": "mistake",
-        "title": "Hygiene-hinweis",
+        "title": "Hygiene-Hinweis",
         "body": "Deshalb Lebensmittel schnell kühlen!\nBakterien vermehren sich bei Zimmertemperatur extrem schnell."
       },
       {
@@ -3869,7 +3869,7 @@
       },
       {
         "kind": "formula",
-        "title": "Abnahme-faktor",
+        "title": "Abnahmefaktor",
         "body": "10% Verlust bedeutet:\nNeuer Wert = 100% - 10% = 90% = 0,9"
       },
       {
@@ -4059,7 +4059,7 @@
       },
       {
         "kind": "remember",
-        "title": "OBERFLÄCHE = alle 6 Seiten zusammen",
+        "title": "Oberfläche = alle 6 Seiten zusammen",
         "body": "(Wie viel Geschenkpapier brauchst du?)"
       },
       {
@@ -4238,7 +4238,7 @@
       {
         "kind": "steps",
         "title": "Rechnung",
-        "body": "1. r = 65 ÷ 2 = 32,5 cm\n2. r² = 1056,25\n3. V = 3,14 × 1056,25 × 75\n4. V = 248.718,75 cm³\n5. In Liter: 248.718,75 ÷ 1000 ≈ 249 Liter"
+        "body": "1. r = 65 : 2 = 32,5 cm\n2. r² = 32,5 · 32,5 = 1056,25\n3. V = 3,14 · 1056,25 · 75\n4. V ≈ 248.746,9 cm³\n5. In Liter: 248.746,9 : 1000 ≈ 249 Liter"
       },
       {
         "kind": "remember",
@@ -4298,7 +4298,7 @@
       {
         "kind": "remember",
         "title": "Warum 1/3",
-        "body": "Eine Pyramide ist wie ein 'Drittel-Prisma'.\nDrei Pyramiden ergeben zusammen einen Quader!"
+        "body": "Eine Pyramide hat nur ein Drittel des Volumens eines Quaders mit derselben Grundfläche und derselben Höhe.\nDrei solche Pyramiden fassen zusammen genauso viel wie dieser Quader."
       },
       {
         "kind": "steps",
@@ -4328,7 +4328,7 @@
     "topicId": "MATH_GEO_VOLUME_ADV",
     "difficulty": 3,
     "qtype": "MCQ",
-    "prompt": "Die Karlsruher Pyramide ist 6,8 m hoch mit Grundkantenlänge 8 m. Berechne das Volumen.",
+    "prompt": "Die Karlsruher Pyramide ist 6,8 m hoch. Ihre Grundfläche ist ein Quadrat mit der Kantenlänge 8 m. Berechne das Volumen.",
     "payload": {
       "choices": [
         "ca. 145 m³",
@@ -4481,7 +4481,7 @@
       {
         "kind": "steps",
         "title": "Rechnung",
-        "body": "1. r³ = 3³ = 27\n2. (4/3) × π = 4,19 (ungefähr)\n3. V = 4,19 × 27 = 113,04 cm³\n\nODER genauer:\nV = (4/3) × 3,14 × 27\nV = 4,19 × 27\nV ≈ 113 cm³"
+        "body": "1. r³ = 3³ = 3 · 3 · 3 = 27\n2. V = 4 · 3,14 · 27 : 3\n3. V = 339,12 : 3\n4. V = 113,04 cm³ ≈ 113 cm³"
       },
       {
         "kind": "answer",
@@ -4513,7 +4513,7 @@
       {
         "kind": "what",
         "title": "Was ist das",
-        "body": "Manteläche - die 'Außenhaut' ohne Deckel und Boden."
+        "body": "Mantelfläche - die 'Außenhaut' ohne Deckel und Boden."
       },
       {
         "kind": "terms",
@@ -4753,7 +4753,7 @@
       {
         "kind": "mistake",
         "title": "Nicht vergessen",
-        "body": "IMMMER erst sortieren!"
+        "body": "Immer zuerst sortieren."
       },
       {
         "kind": "answer",
@@ -4904,7 +4904,7 @@
       },
       {
         "kind": "remember",
-        "title": "MERKHILFE - Die wichtigsten Brüche",
+        "title": "Merkhilfe: Die wichtigsten Brüche",
         "body": "• 1/2 = 50%\n• 1/4 = 25%\n• 1/5 = 20%\n• 1/10 = 10%"
       },
       {
@@ -4951,12 +4951,12 @@
       },
       {
         "kind": "steps",
-        "title": "RECHNUNG (Dreisatz)",
+        "title": "Rechnung (Dreisatz)",
         "body": "600 g → 2,40 €\n1 g → 2,40 € ÷ 600 = 0,004 €\n1000 g → 0,004 € × 1000 = 4,00 €"
       },
       {
         "kind": "remember",
-        "title": "ALTERNATIV (Verhältnis)",
+        "title": "Alternativ (Verhältnis)",
         "body": "1000 g ÷ 600 g = 5/3\n2,40 € × 5/3 = 12/3 = 4,00 €"
       },
       {
@@ -5158,7 +5158,7 @@
     "payload": {
       "choices": [
         "Der Flächeninhalt des Hypotenusenquadrates ist gleich der Summe der beiden Kathetenquadrate",
-        "Gegenüber der Hypotenuse befindet sich der rechte Winkel",
+        "Gegenüber einer Kathete befindet sich der rechte Winkel",
         "c - a = b",
         "Die Hypotenuse ist die kürzeste Seite"
       ],
@@ -5186,7 +5186,7 @@
       {
         "kind": "text",
         "title": "Falsche Antworten",
-        "body": "• 'Gegenüber der Hypotenuse ist der rechte Winkel' - FALSCH! Der rechte Winkel liegt ZWISCHEN den Katheten\n• 'c - a = b' - FALSCH! Richtig wäre c² = a² + b²"
+        "body": "• „Gegenüber einer Kathete befindet sich der rechte Winkel“ ist falsch. Der rechte Winkel liegt zwischen den beiden Katheten und gegenüber der Hypotenuse.\n• „c - a = b“ ist falsch. Richtig ist c² = a² + b².\n• „Die Hypotenuse ist die kürzeste Seite“ ist falsch. Sie ist die längste Seite."
       },
       {
         "kind": "answer",
@@ -5471,7 +5471,7 @@
       {
         "kind": "text",
         "title": "Vorstellung",
-        "body": "Wenn dein Taschengeld um 174% steigt,\nbekommst du fast das Doppelte!"
+        "body": "Wenn dein Taschengeld auf 174 % steigt,\nbekommst du das 1,74-Fache: Aus 10 € werden 17,40 €."
       },
       {
         "kind": "answer",
@@ -5507,12 +5507,12 @@
       },
       {
         "kind": "terms",
-        "title": "METHODE 1 - Erweitern auf 100",
+        "title": "Methode 1: Erweitern auf 100",
         "body": "3/20 = ?/100\n20 × 5 = 100\nAlso: 3 × 5 = 15\n3/20 = 15/100 = 15%"
       },
       {
         "kind": "terms",
-        "title": "METHODE 2 - Division",
+        "title": "Methode 2: Division",
         "body": "3 ÷ 20 = 0,15\n0,15 × 100 = 15%"
       },
       {
@@ -5628,7 +5628,7 @@
       },
       {
         "kind": "remember",
-        "title": "ALTERNATIV (Bruch)",
+        "title": "Alternativ (Bruch)",
         "body": "5/20 = 1/4 = 25%"
       },
       {
@@ -5675,12 +5675,12 @@
       },
       {
         "kind": "steps",
-        "title": "RECHNUNG Methode 1",
+        "title": "Rechnung Methode 1",
         "body": "Zunahme = 107.700 × 21%\n= 107.700 × 0,21\n= 22.617\n\nNeue Anzahl = 107.700 + 22.617 = 130.317"
       },
       {
         "kind": "steps",
-        "title": "RECHNUNG Methode 2 (schneller)",
+        "title": "Rechnung Methode 2 (schneller)",
         "body": "121% vom alten Wert = neuer Wert\n107.700 × 1,21 = 130.317"
       },
       {
@@ -5777,12 +5777,12 @@
       },
       {
         "kind": "steps",
-        "title": "METHODE 1 (Rabatt berechnen)",
+        "title": "Methode 1 (Rabatt berechnen)",
         "body": "Rabatt = 200 € × 20%\n= 200 × 0,20 = 40 €\n\nNeuer Preis = 200 € - 40 € = 160 €"
       },
       {
         "kind": "steps",
-        "title": "METHODE 2 (schneller)",
+        "title": "Methode 2 (schneller)",
         "body": "20% Rabatt = du zahlst nur 80%\n200 € × 80% = 200 × 0,80 = 160 €"
       },
       {
@@ -5898,7 +5898,7 @@
       },
       {
         "kind": "remember",
-        "title": "ALTERNATIV (Bruch)",
+        "title": "Alternativ (Bruch)",
         "body": "8/25 = ?/100\n25 × 4 = 100\n8 × 4 = 32\nAlso: 8/25 = 32/100 = 32%"
       },
       {
@@ -6010,7 +6010,7 @@
       },
       {
         "kind": "remember",
-        "title": "WICHTIGE 2er-POTENZEN",
+        "title": "Wichtige 2er-Potenzen",
         "body": "2¹ = 2\n2² = 4\n2³ = 8\n2⁴ = 16\n2⁵ = 32\n2¹⁰ = 1024"
       },
       {
@@ -6121,12 +6121,12 @@
       },
       {
         "kind": "steps",
-        "title": "RECHNUNG (elegant)",
+        "title": "Rechnung (elegant)",
         "body": "8⁴ ÷ 4⁴ = (8 ÷ 4)⁴\n        = 2⁴\n        = 16"
       },
       {
         "kind": "steps",
-        "title": "RECHNUNG (ausführlich)",
+        "title": "Rechnung (ausführlich)",
         "body": "8⁴ = 4096\n4⁴ = 256\n4096 ÷ 256 = 16"
       },
       {
@@ -6137,7 +6137,7 @@
       {
         "kind": "mistake",
         "title": "Wichtig",
-        "body": "Diese Regel gilt nur bei GLEICHEM Exponenten!"
+        "body": "Diese Regel gilt nur bei gleichem Exponenten."
       },
       {
         "kind": "answer",
@@ -6228,16 +6228,16 @@
       {
         "kind": "terms",
         "title": "Die Regel",
-        "body": "(aⁿ)ᵐ = aⁿ×ᵐ\n\nBei 'Potenz hoch Potenz' werden die Exponenten MULTIPLIZIERT!"
+        "body": "(aⁿ)ᵐ = aⁿ·ᵐ\n\nBei „Potenz hoch Potenz“ werden die Exponenten multipliziert."
       },
       {
         "kind": "steps",
-        "title": "RECHNUNG (mit Regel)",
+        "title": "Rechnung (mit Regel)",
         "body": "(2³)² = 2³ˣ²\n     = 2⁶\n     = 64"
       },
       {
         "kind": "steps",
-        "title": "RECHNUNG (ausführlich)",
+        "title": "Rechnung (ausführlich)",
         "body": "(2³)² = (2³) × (2³)\n     = 8 × 8\n     = 64"
       },
       {
@@ -6394,7 +6394,7 @@
       },
       {
         "kind": "remember",
-        "title": "MEDIAN vs. MITTELWERT",
+        "title": "Median und Mittelwert im Vergleich",
         "body": "Mittelwert: (13+13+17+43+1000)÷5 = 217,2\nMedian: 17\n\nDer Median ist robuster gegen Ausreißer!\n(1000 beeinflusst den Median nicht)"
       },
       {
@@ -6687,7 +6687,7 @@
       },
       {
         "kind": "steps",
-        "title": "RECHNUNG (Dreisatz)",
+        "title": "Rechnung (Dreisatz)",
         "body": "4 km → 25 min\n1 km → 25 ÷ 4 = 6,25 min\n6 km → 6,25 × 6 = 37,5 min"
       },
       {
@@ -6734,7 +6734,7 @@
       },
       {
         "kind": "steps",
-        "title": "RECHNUNG (Dreisatz)",
+        "title": "Rechnung (Dreisatz)",
         "body": "25% → 200€\n1% → 200 ÷ 25 = 8€\n100% → 8 × 100 = 800€"
       },
       {
@@ -7101,12 +7101,7 @@
       {
         "kind": "steps",
         "title": "Prüfung",
-        "body": "Punkt (-1|10):\nf(-1) = -7·(-1) + 3 = 7 + 3 = 10 ✓\n\nPunkt (3|-24):\nf(3) = -7·3 + 3 = -21 + 3 = -18 ≠ -24 ?\nWarte, nochmal: -7·3 = -21, -21+3 = -18\nAber der Punkt sagt -24... ❌\n\nPunkt (-4|31):\nf(-4) = -7·(-4) + 3 = 28 + 3 = 31 ✓"
-      },
-      {
-        "kind": "mistake",
-        "title": "Korrektur der Prüfung zeigt",
-        "body": "(3|-24): f(3) = -18 ≠ -24"
+        "body": "Punkt (-4|31):\nf(-4) = -7 · (-4) + 3 = 28 + 3 = 31 ✓\n\nPunkt (-1|10):\nf(-1) = -7 · (-1) + 3 = 7 + 3 = 10 ✓\n\nPunkt (2|-11):\nf(2) = -7 · 2 + 3 = -14 + 3 = -11 ✓\n\nPunkt (3|-24):\nf(3) = -7 · 3 + 3 = -21 + 3 = -18\nDas ist nicht -24. Also liegt dieser Punkt nicht auf der Geraden."
       },
       {
         "kind": "answer",
@@ -7199,7 +7194,7 @@
     "topicId": "MATH_GEO_VOLUME",
     "difficulty": 2,
     "qtype": "SHORT",
-    "prompt": "Eine zylinderförmige Dose hat Höhe h = 6 cm und Radius r = 2,8 cm. Zeige, dass mindestens 100 ml Farbe in die Dose passen. Berechne das Volumen in cm³. (1 cm³ = 1 ml)",
+    "prompt": "Eine zylinderförmige Dose hat die Höhe h = 6 cm und den Radius r = 2,8 cm. Berechne das Volumen in cm³. Runde auf eine Dezimalstelle. (So siehst du auch, ob 100 ml Farbe hineinpassen: 1 cm³ = 1 ml.)",
     "payload": {
       "answer_type": "number",
       "tolerance": 0.2
@@ -7315,7 +7310,7 @@
     "topicId": "MATH_GEO_PYTH",
     "difficulty": 3,
     "qtype": "SHORT",
-    "prompt": "Ein Rührholz steht diagonal in einer zylindrischen Dose (h=6cm, r=2,8cm). 3 cm des Rührholzes ragen heraus. Wie lang ist das Rührholz?",
+    "prompt": "Ein Rührholz steht diagonal in einer zylindrischen Dose (h=6cm, r=2,8cm). 3 cm des Rührholzes ragen heraus. Wie lang ist das Rührholz in cm? Runde auf eine Dezimalstelle.",
     "payload": {
       "answer_type": "number",
       "tolerance": 0.1
@@ -7463,7 +7458,7 @@
       },
       {
         "kind": "mistake",
-        "title": "Achtung auf vorzeichen!",
+        "title": "Achtung: Vorzeichen!",
         "body": "(x - 1)² bedeutet d = +1\n(x + 1)² würde d = -1 bedeuten"
       },
       {
@@ -7544,7 +7539,7 @@
     "topicId": "MATH_GEO_AREA_BASIC",
     "difficulty": 3,
     "qtype": "SHORT",
-    "prompt": "In einem Trapez sind die Basiswinkel jeweils 56°. Wie groß ist der gegenüberliegende Winkel γ?",
+    "prompt": "In einem gleichschenkligen Trapez ABCD (AB ist parallel zu CD) sind die Winkel α bei A und β bei B jeweils 56° groß. Wie groß ist der Winkel γ bei C?",
     "payload": {
       "answer_type": "number"
     },
@@ -7560,12 +7555,12 @@
       {
         "kind": "terms",
         "title": "Regeln für Trapeze",
-        "body": "1. Winkelsumme im Viereck = 360°\n2. Bei gleichschenkligem Trapez: Basiswinkel gleich groß\n3. Nebeneinanderliegende Winkel = 180° (an parallelen Seiten)"
+        "body": "1. Die Winkelsumme im Viereck ist 360°.\n2. Im gleichschenkligen Trapez sind die beiden Winkel an einer Grundseite gleich groß.\n3. Zwei Winkel am selben Schenkel ergeben zusammen 180°, weil die Grundseiten parallel sind."
       },
       {
         "kind": "steps",
         "title": "Rechnung",
-        "body": "Methode 1 - Nebenwinkelsumme:\nα + γ = 180° (da an paralleler Seite)\n56° + γ = 180°\nγ = 180° - 56° = 124°\n\nMethode 2 - Winkelsumme:\n56° + 56° + γ + γ = 360°\n112° + 2γ = 360°\n2γ = 248°\nγ = 124°"
+        "body": "Methode 1 (Winkel am selben Schenkel):\nDie Winkel β und γ liegen am selben Schenkel BC zwischen den parallelen Seiten.\nSie ergeben zusammen 180°.\n56° + γ = 180°\nγ = 180° - 56° = 124°\n\nMethode 2 (Winkelsumme):\nDie Winkel bei C und D sind gleich groß. Beide sind γ.\n56° + 56° + γ + γ = 360°\n112° + 2γ = 360°\n2γ = 248°\nγ = 124°"
       },
       {
         "kind": "answer",
@@ -7938,7 +7933,7 @@
       },
       {
         "kind": "terms",
-        "title": "WAS BEDEUTET f(2)",
+        "title": "Was bedeutet f(2)",
         "body": "Setze x = 2 in die Funktion ein."
       },
       {
@@ -7953,7 +7948,7 @@
       },
       {
         "kind": "text",
-        "title": "WERTETABELLE für f(x) = x² - 1",
+        "title": "Wertetabelle für f(x) = x² - 1",
         "body": "x:    -2  -1   0   1   2\nf(x):  3   0  -1   0   3"
       },
       {
@@ -7985,7 +7980,7 @@
     "topicId": "MATH_FUNC_EXP",
     "difficulty": 3,
     "qtype": "MCQ",
-    "prompt": "Ein Kapital von 1000€ wird mit 5% Zinsen angelegt. Welche Formel beschreibt das Kapital K nach n Jahren?",
+    "prompt": "Ein Kapital von 1000 € wird zu 5 % Zinsen pro Jahr angelegt. Die Zinsen bleiben auf dem Konto und werden mitverzinst (Zinseszins). Welche Formel beschreibt das Kapital K nach n Jahren?",
     "payload": {
       "choices": [
         "K = 1000 · 1,05ⁿ",
@@ -8451,7 +8446,7 @@
     "explanation": [
       {
         "kind": "what",
-        "title": "Parallelogramm-fläche",
+        "title": "Parallelogrammfläche",
         "body": ""
       },
       {
@@ -8555,7 +8550,7 @@
     "topicId": "MATH_GEO_CIRCLE",
     "difficulty": 3,
     "qtype": "MCQ",
-    "prompt": "Ein Kreis hat den Umfang U = 38 cm. Wie groß ist der Flächeninhalt A? (Runde auf ganze Zahl)",
+    "prompt": "Ein Kreis hat den Umfang U = 37,7 cm. Wie groß ist der Flächeninhalt A? (Runde auf ganze Zahl)",
     "payload": {
       "choices": [
         "113 cm²",
@@ -8577,12 +8572,12 @@
       {
         "kind": "formula",
         "title": "Schritt 1",
-        "body": "Radius finden\nU = 2πr → r = U ÷ (2π)\nr = 38 ÷ (2 × π) ≈ 38 ÷ 6,28 ≈ 6 cm"
+        "body": "Radius finden\nAus U = 2 · π · r folgt: r = U : (2 · π)\nr = 37,7 : (2 · π) ≈ 37,7 : 6,283 ≈ 6 cm"
       },
       {
         "kind": "formula",
         "title": "Schritt 2",
-        "body": "Fläche berechnen\nA = π × r²\nA = π × 6² = π × 36\nA ≈ 113,1 cm² ≈ 113 cm²"
+        "body": "Fläche berechnen\nA = π · r²\nA = π · 6² = π · 36\nA ≈ 113,1 cm² ≈ 113 cm²"
       },
       {
         "kind": "answer",
@@ -8669,7 +8664,7 @@
     "payload": {
       "choices": [
         "Der Flächeninhalt des Hypotenusenquadrates ist gleich der Summe der beiden Kathetenquadrate.",
-        "Gegenüber der Hypotenuse befindet sich der rechte Winkel.",
+        "Die Hypotenuse ist die kürzeste Seite.",
         "Die Formel lautet c - a = b",
         "Er gilt für alle Dreiecke."
       ],
@@ -8692,7 +8687,7 @@
       {
         "kind": "text",
         "title": "Falsch",
-        "body": "• Gegenüber der Hypotenuse ist der RECHTE WINKEL, nicht die Hypotenuse!\n• c - a = b ist FALSCH\n• Gilt NUR für RECHTWINKLIGE Dreiecke!"
+        "body": "• „Die Hypotenuse ist die kürzeste Seite.“ ist falsch. Sie ist die längste Seite.\n• „c - a = b“ stimmt nicht. Richtig ist c² = a² + b².\n• Der Satz gilt nur für rechtwinklige Dreiecke, nicht für alle Dreiecke."
       },
       {
         "kind": "answer",
@@ -8712,7 +8707,7 @@
     "topicId": "MATH_GEO_TRIG",
     "difficulty": 3,
     "qtype": "MCQ",
-    "prompt": "Im rechtwinkligen Dreieck mit α = 90°, β = 55° und a = 8. Berechne c mit: c = cos(β) × a. Was ist c? (Runde auf zwei Dezimalstellen)",
+    "prompt": "Ein rechtwinkliges Dreieck hat die Winkel α = 90° und β = 55° und die Seite a = 8. Berechne c mit: c = cos(β) · a. Was ist c? (Runde auf zwei Dezimalstellen)",
     "payload": {
       "choices": [
         "4,59",
@@ -8734,12 +8729,12 @@
       {
         "kind": "formula",
         "title": "Gegeben",
-        "body": "β = 55°, a = 8\ncos(β) = c/a → c = cos(β) × a"
+        "body": "β = 55°, a = 8\ncos(β) = c : a, also c = cos(β) · a"
       },
       {
         "kind": "steps",
         "title": "Rechnung",
-        "body": "c = cos(55°) × 8\nc = 0,5736 × 8\nc ≈ 4,59"
+        "body": "c = cos(55°) · 8\nc = 0,5736 · 8\nc ≈ 4,59"
       },
       {
         "kind": "remember",
@@ -8793,7 +8788,7 @@
     "explanation": [
       {
         "kind": "what",
-        "title": "Zylinder-volumen",
+        "title": "Zylindervolumen",
         "body": ""
       },
       {
@@ -9174,7 +9169,7 @@
     "topicId": "MATH_GEO_AREA_BASIC",
     "difficulty": 3,
     "qtype": "SHORT",
-    "prompt": "Ein Rechteck hat den Flächeninhalt A = 168 dm² und die Seite a = 240 cm, b = 7 dm. Berechne den Umfang in dm. U = ? dm",
+    "prompt": "Ein Rechteck hat die Seiten a = 240 cm und b = 7 dm. Berechne den Umfang in dm. U = ? dm",
     "payload": {
       "answer_type": "number"
     },
@@ -9246,7 +9241,7 @@
     "explanation": [
       {
         "kind": "what",
-        "title": "Zylinder-volumen",
+        "title": "Zylindervolumen",
         "body": ""
       },
       {
@@ -9292,7 +9287,7 @@
     "topicId": "MATH_GEO_VOLUME",
     "difficulty": 3,
     "qtype": "MCQ",
-    "prompt": "Die Mantelfläche eines Zylinders (r = 4 cm, h = 8 cm) wird abgewickelt. Welche Länge a hat das Rechteck?",
+    "prompt": "Die Mantelfläche eines Zylinders (r = 4 cm, h = 8 cm) wird abgewickelt. Es entsteht ein Rechteck. Eine Seite ist so lang wie die Höhe des Zylinders (8 cm). Wie lang ist die andere Seite a?",
     "payload": {
       "choices": [
         "ca. 25,1 cm",
@@ -9314,12 +9309,12 @@
       {
         "kind": "terms",
         "title": "Beim Abwickeln",
-        "body": "Die Mantelfläche wird zu einem Rechteck!\n• Länge a = Umfang des Kreises = 2πr\n• Breite b = Höhe h"
+        "body": "Die Mantelfläche wird zu einem Rechteck.\n\n• Eine Seite ist die Höhe h = 8 cm.\n• Die andere Seite a ist der Umfang des Kreises: a = 2 · π · r"
       },
       {
         "kind": "steps",
         "title": "Rechnung",
-        "body": "a = 2 × π × 4 = 8π ≈ 25,13 cm"
+        "body": "a = 2 · π · 4 = 8π ≈ 25,13 cm"
       },
       {
         "kind": "remember",
@@ -9486,22 +9481,22 @@
       {
         "kind": "mistake",
         "title": "Achtung",
-        "body": "y-Achsenabschnitt heißt x = 0!\nAlso Punkt (0|-2), NICHT (-2|0)!"
+        "body": "y-Achsenabschnitt heißt: x = 0.\nAlso ist es der Punkt (0|-2), nicht (-2|0)."
       },
       {
         "kind": "steps",
-        "title": "PRÜFUNG für (1|2)",
-        "body": "f(1) = 4×1 - 2 = 2 ✓"
+        "title": "Prüfung für (1|2)",
+        "body": "f(1) = 4 · 1 - 2 = 2 ✓"
       },
       {
         "kind": "text",
         "title": "Falsch",
-        "body": "Die y-Achse wird im Punkt (0|-2) geschnitten, nicht (-2|0)!"
+        "body": "Die y-Achse wird im Punkt (0|-2) geschnitten, nicht im Punkt (-2|0)."
       },
       {
         "kind": "answer",
         "title": "Antwort",
-        "body": "y-Achse bei (-2|0) ist FALSCH"
+        "body": "Die Aussage „Die Gerade schneidet die y-Achse im Punkt (-2|0)“ ist falsch."
       }
     ],
     "tags": [
@@ -9611,8 +9606,8 @@
       },
       {
         "kind": "formula",
-        "title": "Pq-formel",
-        "body": "x₁,₂ = -1 ± √(1 + 15)\nx₁,₂ = -1 ± √16\nx₁,₂ = -1 ± 4\n\nx₁ = -1 + 4 = 3\nx₂ = -1 - 4 = -5"
+        "title": "pq-Formel",
+        "body": "x₁,₂ = -p/2 ± √((p/2)² - q)\nHier ist p = 2 und q = -15.\n\nx₁,₂ = -1 ± √(1 + 15)\nx₁,₂ = -1 ± √16\nx₁,₂ = -1 ± 4\n\nx₁ = -1 + 4 = 3\nx₂ = -1 - 4 = -5"
       },
       {
         "kind": "answer",
@@ -9738,8 +9733,8 @@
       },
       {
         "kind": "remember",
-        "title": "DIE SPANNWEITE zeigt, wie weit die Werte auseinander liegen.",
-        "body": ""
+        "title": "Merke",
+        "body": "Die Spannweite zeigt, wie weit die Werte auseinanderliegen."
       },
       {
         "kind": "answer",
@@ -9792,7 +9787,7 @@
       {
         "kind": "remember",
         "title": "Pfadregel",
-        "body": "Auf einem Pfad werden Wahrscheinlichkeiten MULTIPLIZIERT!"
+        "body": "Auf einem Pfad werden die Wahrscheinlichkeiten multipliziert."
       },
       {
         "kind": "answer",
@@ -9912,7 +9907,7 @@
       {
         "kind": "remember",
         "title": "Bei exponentiellem Wachstum",
-        "body": "Der Wachstumsfaktor ist KONSTANT!"
+        "body": "Der Wachstumsfaktor ist konstant."
       },
       {
         "kind": "formula",
@@ -9938,7 +9933,7 @@
     "topicId": "MATH_FUNC_EXP",
     "difficulty": 3,
     "qtype": "MCQ",
-    "prompt": "Bakterien wachsen nach N(t) = 80 × 1,4^t. Wie viele nach 24 Stunden?",
+    "prompt": "Bakterien wachsen nach N(t) = 80 · 1,4^t (t in Stunden). Wie viele sind es nach 24 Stunden?",
     "payload": {
       "choices": [
         "Mehr als 250.000",
@@ -9960,22 +9955,22 @@
       {
         "kind": "formula",
         "title": "Formel",
-        "body": "N(t) = 80 × 1,4^t"
+        "body": "N(t) = 80 · 1,4^t"
       },
       {
         "kind": "steps",
-        "title": "RECHNUNG für t = 24",
-        "body": "N(24) = 80 × 1,4^24\n1,4^24 ≈ 4907 (mit Taschenrechner)\nN(24) = 80 × 4907 ≈ 392.545"
+        "title": "Rechnung für t = 24",
+        "body": "N(24) = 80 · 1,4^24\nMit dem Taschenrechner: 1,4^24 ≈ 3214,2\nN(24) ≈ 80 · 3214,2 ≈ 257.136"
       },
       {
         "kind": "remember",
         "title": "Vergleich",
-        "body": "392.545 > 250.000 ✓"
+        "body": "257.136 > 250.000 ✓"
       },
       {
         "kind": "mistake",
         "title": "Exponentielles Wachstum",
-        "body": "Wächst SEHR SCHNELL!\nNach 24h: fast 400.000 Bakterien!"
+        "body": "Die Zahl wächst sehr schnell.\nNach 24 Stunden sind es rund 257.000 Bakterien."
       },
       {
         "kind": "answer",
@@ -9996,7 +9991,7 @@
     "topicId": "MATH_DATA_CHARTS",
     "difficulty": 2,
     "qtype": "MCQ",
-    "prompt": "In einem Kreisdiagramm soll 19% dargestellt werden. Welchen Winkel hat dieser Sektor?",
+    "prompt": "In einem Kreisdiagramm sollen 19 % dargestellt werden. Welchen Winkel hat dieser Sektor?",
     "payload": {
       "choices": [
         "68,4°",
@@ -10023,7 +10018,7 @@
       {
         "kind": "steps",
         "title": "Rechnung",
-        "body": "Winkel = 19% × 3,6°\nWinkel = 68,4°"
+        "body": "Winkel = 19 · 3,6°\nWinkel = 68,4°"
       },
       {
         "kind": "remember",
@@ -10139,7 +10134,7 @@
       {
         "kind": "mistake",
         "title": "Achtung",
-        "body": "Immer durch den ALTEN Wert teilen!"
+        "body": "Immer durch den alten Wert teilen."
       },
       {
         "kind": "answer",

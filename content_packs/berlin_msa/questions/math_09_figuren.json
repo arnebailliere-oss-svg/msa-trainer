@@ -530,7 +530,7 @@
     "topicId": "MATH_GEO_CIRCLE",
     "difficulty": 4,
     "qtype": "SHORT",
-    "prompt": "Ein Kreis hat den Umfang $u = {{= 2*pi*r | fixed:1}}$ cm. Berechne seinen Flächeninhalt. (Runde auf ganze cm².)",
+    "prompt": "Ein Kreis hat den Umfang $u = {{= u | fixed:1}}$ cm. Berechne seinen Flächeninhalt. (Runde auf ganze cm².)",
     "payload": {
       "answer_type": "number",
       "unit": "cm²",
@@ -538,7 +538,7 @@
     },
     "solution": {
       "kind": "computed",
-      "expr": "pi * r^2",
+      "expr": "u^2 / (4 * pi)",
       "round": 0
     },
     "explanation": [
@@ -548,11 +548,11 @@
       },
       {
         "kind": "steps",
-        "body": "1. $u = 2\\pi r \\Rightarrow r = \\frac{u}{2\\pi} = \\frac{{{= 2*pi*r | fixed:1}}}{2\\pi} \\approx {{r}}$ cm\n2. $A = \\pi r^2 = \\pi \\cdot {{r}}^2 = \\pi \\cdot {{= r*r}} \\approx {{= pi*r*r | fixed:0}}\\,\\text{cm}^2$"
+        "body": "1. Stelle $u = 2\\pi r$ nach $r$ um: $r = \\frac{u}{2\\pi} = \\frac{{{= u | fixed:1}}}{2\\pi} \\approx {{= u/(2*pi) | fixed:2}}$ cm\n2. Lass den Wert von $r$ im Taschenrechner stehen. Runde ihn nicht.\n3. $A = \\pi \\cdot r^2 \\approx {{= u*u/(4*pi) | fixed:0}}\\,\\text{cm}^2$\n\nMit dem gerundeten Radius kann das Ergebnis um 1 cm² abweichen."
       },
       {
         "kind": "answer",
-        "body": "≈ {{= pi*r*r | fixed:0}} cm²"
+        "body": "≈ {{= u*u/(4*pi) | fixed:0}} cm²"
       }
     ],
     "tags": [
@@ -571,12 +571,15 @@
           "min": 2,
           "max": 15
         }
+      },
+      "derived": {
+        "u": "round(2 * pi * r, 1)"
       }
     },
     "figure": {
       "type": "circle",
       "labels": {
-        "u": "u = {{= 2*pi*r | fixed:1}} cm",
+        "u": "u = {{= u | fixed:1}} cm",
         "r": "r = ?"
       }
     }
@@ -799,7 +802,7 @@
     "explanation": [
       {
         "kind": "steps",
-        "body": "1. Vom Ursprung **waagerecht** zählen: {{= x | abs}} Kästchen nach {{= if(x > 0, 1, 0) | raw}} → $x = {{x}}$\n2. Dann **senkrecht**: {{= y | abs}} Kästchen nach {{= if(y > 0, 1, 0) | raw}} → $y = {{y}}$\n3. Schreibweise: **erst $x$, dann $y$**: $P({{x}} \\,|\\, {{y}})$"
+        "body": "1. Zähle vom Ursprung aus **waagerecht**: {{= x | abs}} Kästchen nach {{= if(x > 0, 1, 0) | pick:rechts,links}}. Also ist $x = {{x}}$.\n2. Zähle dann **senkrecht**: {{= y | abs}} Kästchen nach {{= if(y > 0, 1, 0) | pick:oben,unten}}. Also ist $y = {{y}}$.\n3. Schreibweise: **erst $x$, dann $y$**: $P({{x}} \\,|\\, {{y}})$"
       },
       {
         "kind": "mistake",
@@ -843,23 +846,23 @@
     "topicId": "MATH_GEO_AREA_BASIC",
     "difficulty": 2,
     "qtype": "MCQ",
-    "prompt": "Du sollst ein Dreieck mit $c = 10$ cm, $\\alpha = 40°$ und $a = 7$ cm konstruieren. Welcher Schritt kommt **nach** dem Zeichnen von $c$ und dem Abmessen von $\\alpha$?",
+    "prompt": "Du sollst ein Dreieck mit $c = 7$ cm, $\\alpha = 40°$ und $a = 10$ cm konstruieren. Welcher Schritt kommt **nach** dem Zeichnen von $c$ und dem Abmessen von $\\alpha$?",
     "payload": {
       "choices": [
-        "Um $B$ einen Kreisbogen mit Radius $a = 7$ cm zeichnen (Zirkel).",
-        "Um $A$ einen Kreisbogen mit Radius $a = 7$ cm zeichnen.",
+        "Um $B$ einen Kreisbogen mit Radius $a = 10$ cm zeichnen (Zirkel).",
+        "Um $A$ einen Kreisbogen mit Radius $a = 10$ cm zeichnen.",
         "Den Winkel $\\beta$ schätzen und einzeichnen.",
         "Die Seite $b$ mit dem Lineal beliebig lang zeichnen."
       ],
       "shuffle": true
     },
     "solution": {
-      "correct_choice": "Um $B$ einen Kreisbogen mit Radius $a = 7$ cm zeichnen (Zirkel)."
+      "correct_choice": "Um $B$ einen Kreisbogen mit Radius $a = 10$ cm zeichnen (Zirkel)."
     },
     "explanation": [
       {
         "kind": "steps",
-        "body": "Seite $a$ liegt **gegenüber** von $A$, also geht sie von $B$ nach $C$. Deshalb: Zirkel in $B$ einstechen, Radius 7 cm, Kreisbogen — wo er die Hilfslinie von $\\alpha$ schneidet, liegt $C$."
+        "body": "Seite $a$ liegt **gegenüber** von $A$, also geht sie von $B$ nach $C$. Deshalb: Zirkel in $B$ einstechen, Radius 10 cm, Kreisbogen — wo er die Hilfslinie von $\\alpha$ schneidet, liegt $C$."
       },
       {
         "kind": "remember",
@@ -867,7 +870,7 @@
       },
       {
         "kind": "answer",
-        "body": "Kreisbogen um $B$ mit $r = a = 7$ cm."
+        "body": "Kreisbogen um $B$ mit $r = a = 10$ cm."
       }
     ],
     "tags": [

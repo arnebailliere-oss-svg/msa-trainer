@@ -1,0 +1,2240 @@
+[
+  {
+    "id": "DE_O7_SS_SZ_WORTFAMILIE",
+    "why": "The stored solution produced 'du wisst', which is not a German verb form.",
+    "ops": [
+      {
+        "op": "replace",
+        "in": "payload",
+        "from": "ob du das wirklich",
+        "to": "ob ihr das wirklich"
+      }
+    ]
+  },
+  {
+    "id": "DE_O7_GZ_NOMINALISIERUNG_CLOZE_T1",
+    "why": "The solution produced 'gehen ... spazieren gehen' with a doubled verb, and the hint named a form that is not in the sentence.",
+    "ops": [
+      {
+        "op": "replace",
+        "in": "variants",
+        "from": "Wir gehen mit dem Hund ___.",
+        "to": "Wir wollen mit dem Hund ___."
+      },
+      {
+        "op": "replace",
+        "in": "variants",
+        "from": "1. *gehen spazieren*: Verb + Verb → getrennt.",
+        "to": "1. *wollen spazieren gehen*: Das sind zwei Verben. Sie bleiben getrennt."
+      }
+    ]
+  },
+  {
+    "id": "DE_O7_DD_ZWEI_CLOZE_T1",
+    "why": "After 'alles' standard German uses 'was', so the key 'das' was wrong; the sentence now starts with a neuter noun.",
+    "ops": [
+      {
+        "op": "replace",
+        "in": "variants",
+        "from": "Alles, ___ du brauchst,",
+        "to": "Das Teil, ___ du brauchst,"
+      },
+      {
+        "op": "set",
+        "path": [
+          "variants",
+          "variables",
+          "s",
+          "from",
+          13,
+          "hinweis"
+        ],
+        "value": "Beide Lücken sind Relativpronomen. „Das Teil, **welches** du brauchst“ passt. „Ein Ladekabel, **welches** auch wirklich funktioniert“ passt auch. Also schreibst du zweimal **das**."
+      }
+    ]
+  },
+  {
+    "id": "DE_O7_DD_SATZ_MCQ_T1",
+    "why": "The rule 'always a comma before dass' is wrong at the start of a sentence.",
+    "ops": [
+      {
+        "op": "replace",
+        "in": "explanation",
+        "from": "Vor *dass* steht immer ein Komma, aber nicht nach jedem Komma kommt *dass*.",
+        "to": "Steht *dass* mitten im Satz, steht davor fast immer ein Komma. Aber nicht nach jedem Komma kommt *dass*."
+      }
+    ]
+  },
+  {
+    "id": "DE_DAS_DASS_T1",
+    "why": "The table claimed there is always a comma before dass.",
+    "ops": [
+      {
+        "op": "replace",
+        "in": "explanation",
+        "from": "Konjunktion, davor steht ein Komma",
+        "to": "Konjunktion, mitten im Satz steht davor meistens ein Komma"
+      }
+    ]
+  },
+  {
+    "id": "DE_O7_SS_SZ_SATZ_MCQ_T1",
+    "why": "'ie' is a long vowel, not a diphthong.",
+    "ops": [
+      {
+        "op": "replace",
+        "in": "explanation",
+        "from": "Nach **langem** Vokal oder **Doppellaut** (ei, au, eu, ie): **ß** (*Straße, Fuß, heiß, draußen, fließen*).",
+        "to": "Nach **langem** Vokal (auch ie) oder **Doppellaut** (ei, au, eu, äu): **ß** (*Straße, Fuß, fließen, heiß, draußen*)."
+      }
+    ]
+  },
+  {
+    "id": "DE_O7_SS_SZ_WORTFAMILIE",
+    "why": "'After ei always ß' is wrong (Eis, Reise); correct is that ss never follows ei.",
+    "ops": [
+      {
+        "op": "replace",
+        "in": "explanation",
+        "from": "denn nach **ei** steht immer ß.",
+        "to": "denn nach **ei** steht nie ss."
+      }
+    ]
+  },
+  {
+    "id": "DE_O7_DEHNUNG_CLOZE_T1",
+    "why": "'Never an h before t' is too absolute (geht, Naht, Draht).",
+    "ops": [
+      {
+        "op": "section",
+        "index": 2,
+        "body": "Ein Dehnungs-h steht fast nur vor l, m, n, r. Vor t, f, g, s steht normalerweise kein h: *gut, Tafel, Tag*. Ein h vor t gibt es nur, wenn es schon zum Wortstamm gehört: *geht* (von gehen), *Naht* (von nähen), *Draht* (von drehen)."
+      },
+      {
+        "op": "replace",
+        "in": "variants",
+        "from": "Ein Dehnungs-h vor t ist nicht möglich.",
+        "to": "Ein Dehnungs-h steht hier nicht."
+      }
+    ]
+  },
+  {
+    "id": "DE_INDIREKTE_REDE_MCQ_T1",
+    "why": "The hint described a change from 'hat', but the direct speech contains 'habe'.",
+    "ops": [
+      {
+        "op": "replace",
+        "in": "variants",
+        "from": "Aus hat wird im Konjunktiv I **habe**.",
+        "to": "Das Verb steht im Konjunktiv I: sie **habe** (nicht: sie hat). Die Form sieht hier zufällig so aus wie *ich habe*."
+      }
+    ]
+  },
+  {
+    "id": "DE_SUFFIX_MCQ_T1",
+    "why": "Plural words such as Krankheiten and Leistungen do not end in the suffix itself.",
+    "ops": [
+      {
+        "op": "section",
+        "index": 0,
+        "body": "In **{{s_wort}}** steckt die Endung **{{s_a}}**. {{s_grund}}"
+      },
+      {
+        "op": "set",
+        "path": [
+          "variants",
+          "variables",
+          "s",
+          "from",
+          0,
+          "grund"
+        ],
+        "value": "Das -en dahinter zeigt nur die Mehrzahl an. Die Endung -ung zeigt ein Nomen an, also schreibst du groß."
+      },
+      {
+        "op": "set",
+        "path": [
+          "variants",
+          "variables",
+          "s",
+          "from",
+          2,
+          "grund"
+        ],
+        "value": "Das -en dahinter zeigt nur die Mehrzahl an. Die Endung -heit zeigt ein Nomen an, also schreibst du groß."
+      }
+    ]
+  },
+  {
+    "id": "DE_KOMMA_INFINITIV_MCQ_T1",
+    "why": "The comma is not always before the infinitive group, 'das' points back instead of announcing, and 'Traum' suggested the noun answer.",
+    "ops": [
+      {
+        "op": "prompt",
+        "text": "Warum wird die Infinitivgruppe hier durch ein Komma abgetrennt?\n\n„{{s_satz}}“"
+      },
+      {
+        "op": "replace",
+        "in": "all",
+        "from": "Ein hinweisendes Wort (es, das, daran …) kündigt sie an",
+        "to": "Ein hinweisendes Wort (es, das, daran …) weist auf sie hin"
+      },
+      {
+        "op": "replace",
+        "in": "variants",
+        "from": "Ein eigenes Buch zu schreiben, das war sein größter Traum.",
+        "to": "Ein eigenes Buch zu schreiben, das wollte er schon immer."
+      },
+      {
+        "op": "section",
+        "index": 0,
+        "body": "{{s_hinweis}} Das ist eines der drei Signale, bei denen eine Gruppe mit zu durch ein Komma abgetrennt werden muss."
+      }
+    ]
+  },
+  {
+    "id": "DE_SATZART_MCQ_T1",
+    "why": "The prompt named only two of the three answer options.",
+    "ops": [
+      {
+        "op": "replace",
+        "in": "prompt",
+        "from": "ein Hauptsatz oder ein Nebensatz?",
+        "to": "ein Hauptsatz, ein Nebensatz oder eine Infinitivgruppe?"
+      }
+    ]
+  },
+  {
+    "id": "DE_LESEN_LITERARISCH_2A",
+    "why": "The text shows that Mara is nervous but does not state the reason given in the statement.",
+    "ops": [
+      {
+        "op": "prompt",
+        "text": "Aussage: **Mara ist nervös, während sie auf den Bus wartet.**"
+      },
+      {
+        "op": "section",
+        "index": 0,
+        "body": "Satz 3: „hörte nur ihr eigenes Herz“ und Satz 5: „als hätte sie eine Stunde die Luft angehalten“. Die Nervosität wird nicht **gesagt**, sondern **gezeigt**. Das ist typisch für literarische Texte. Den Grund deutet Satz 4 an: Sie hat ihrer Mutter versprochen, um Mitternacht zu Hause zu sein."
+      }
+    ]
+  },
+  {
+    "id": "DE_LESEN_SACHTEXT_1C",
+    "why": "The explanation said the statement contains the word 'handyfrei', which it does not.",
+    "ops": [
+      {
+        "op": "section",
+        "index": 1,
+        "body": "Typische Falle: Die Aussage greift einen Gedanken aus dem Text auf (Zeit ohne Handy), aber der **Umfang** stimmt nicht. Im Text geht es um *eine Pause*, in der Aussage um den *ganzen Schultag*."
+      }
+    ]
+  },
+  {
+    "id": "DE_LESEN_SACHTEXT_1A",
+    "why": "A hyphenated compound starts with a capital letter.",
+    "ops": [
+      {
+        "op": "replace",
+        "in": "explanation",
+        "from": "Bei richtig/falsch-Aufgaben:",
+        "to": "Bei Richtig-falsch-Aufgaben:"
+      }
+    ]
+  },
+  {
+    "id": "DE_DIREKTE_REDE_MCQ_T1",
+    "why": "'kein Nichts' is not correct German.",
+    "ops": [
+      {
+        "op": "replace",
+        "in": "variants",
+        "from": "Begleitsatz vorn: **Doppelpunkt** (kein Semikolon, kein Nichts), Punkt **vor** dem schließenden Anführungszeichen.",
+        "to": "Steht der Begleitsatz vorn, folgt ein **Doppelpunkt**. Ein Semikolon ist falsch, und das Zeichen darf auch nicht fehlen. Der Punkt steht **vor** dem schließenden Anführungszeichen."
+      }
+    ]
+  },
+  {
+    "id": "DE_O7_GZ_REGEL_MCQ",
+    "why": "'hin' is an adverb, not a preposition, so 'hingehen' was a wrong example.",
+    "ops": [
+      {
+        "op": "replace",
+        "in": "explanation",
+        "from": "*anrufen, aufstehen, hingehen, mitkommen, zumachen*",
+        "to": "*anrufen, aufstehen, ausgehen, mitkommen, zumachen*"
+      }
+    ]
+  },
+  {
+    "id": "DE_O7_GZ_GRUND_MCQ_T1",
+    "why": "Same wrong example 'hingehen' for preposition + verb (named in the finding for DE_O7_GZ_REGEL_MCQ).",
+    "ops": [
+      {
+        "op": "replace",
+        "in": "explanation",
+        "from": "(*hingehen, aufstehen, anmachen*)",
+        "to": "(*ausgehen, aufstehen, anmachen*)"
+      }
+    ]
+  },
+  {
+    "id": "DE_O7_GZ_LEICHTFALLEN_MCQ",
+    "why": "A graded or extended adjective is written separately even in the figurative meaning, so the test's reasoning was wrong.",
+    "ops": [
+      {
+        "op": "replace",
+        "in": "explanation",
+        "from": "Probe: Kannst du das Adjektiv steigern oder ersetzen (*sehr leicht fallen*)? Dann ist es wörtlich gemeint → getrennt.",
+        "to": "Achtung: Wird das Adjektiv gesteigert oder erweitert, schreibt man getrennt, auch bei übertragener Bedeutung: *Das ist ihr leichter gefallen. Das ist ihr sehr leicht gefallen.*"
+      }
+    ]
+  },
+  {
+    "id": "DE_O7_REDE_ZEICHEN_CLOZE_T1",
+    "why": "The quoted sentence was a command, so the exclamation mark was also correct; it is now a neutral statement.",
+    "ops": [
+      {
+        "op": "replace",
+        "in": "variants",
+        "from": "Um zehn bist du zu Hause",
+        "to": "Der Bus fährt um zehn"
+      }
+    ]
+  },
+  {
+    "id": "DE_O7_REDE_FEHLER_MCQ",
+    "why": "The full stop is also inside the quotation marks after an inserted reporting clause.",
+    "ops": [
+      {
+        "op": "section",
+        "index": 1,
+        "body": "Das Komma vor dem Begleitsatz steht **immer außerhalb** der Anführungszeichen. Innen stehen Frage- und Ausrufezeichen. Auch der Punkt steht innen, wenn die Rede am Satzende steht (Begleitsatz vorn oder eingeschoben)."
+      }
+    ]
+  },
+  {
+    "id": "DE_WRITE_PLAN_SOZIALE_MEDIEN",
+    "why": "The number of points (17) did not match the 19 fields; no number is stated any more.",
+    "ops": [
+      {
+        "op": "replace",
+        "in": "prompt",
+        "from": "In der Prüfung gibt es **1 Punkt pro Feld**.",
+        "to": "In der Prüfung gibt es Punkte für die ausgefüllten Felder."
+      },
+      {
+        "op": "section",
+        "index": 1,
+        "body": "Ein Argument ohne Beleg ist nur eine Behauptung. Auch für das Beleg-Feld gibt es Punkte."
+      },
+      {
+        "op": "section",
+        "index": 2,
+        "body": "In der Prüfung gibt es Punkte für die ausgefüllten Felder. Stichpunkte genügen, aber jedes Feld muss etwas Konkretes enthalten."
+      }
+    ]
+  },
+  {
+    "id": "DE_WRITE_EROERTERUNG_ESCOOTER_2024",
+    "why": "The explanation asks for a headline and an address to the readers, but the model text had neither.",
+    "ops": [
+      {
+        "op": "replace",
+        "in": "solution",
+        "from": "Die Mobilität unserer Zeit befindet sich im Wandel.",
+        "to": "E-Scooter: praktisch oder gefährlich?\n\nLiebe Mitschülerinnen und Mitschüler, die Mobilität unserer Zeit befindet sich im Wandel."
+      },
+      {
+        "op": "section",
+        "index": 0,
+        "body": "1. **Überschrift** und Leseransprache in der Einleitung (*Liebe Mitschülerinnen und Mitschüler, …*).\n2. Sonst wie eine Erörterung: Vorteile, Nachteile, jeweils mit Beleg.\n3. Schluss mit klarer **Empfehlung an die Schule**."
+      }
+    ]
+  },
+  {
+    "id": "DE_G8_MODUS_FORM_ERKENNEN",
+    "why": "'ginge' has no umlaut and is not an example of the umlaut in Konjunktiv II.",
+    "ops": [
+      {
+        "op": "replace",
+        "in": "explanation",
+        "from": "(wie *hätte, wäre, ginge, wüsste*)",
+        "to": "(wie *hätte, wäre, könnte, wüsste*)"
+      }
+    ]
+  },
+  {
+    "id": "DE_G8_INDIREKT_EINLEITUNG_T1",
+    "why": "The prompt asked for the introducing word, but in the command variants a verb form is missing.",
+    "ops": [
+      {
+        "op": "prompt",
+        "text": "Aus der direkten Rede wird indirekte Rede. Welches Wort fehlt in der Lücke?\n\nDirekt: {{s_direkt}}"
+      }
+    ]
+  },
+  {
+    "id": "DE_G8_PARTIZIP_IM_SATZ_T1",
+    "why": "The fixed text named 'zeigten' as the verb of the sentence, which fits only some variants.",
+    "ops": [
+      {
+        "op": "replace",
+        "in": "explanation",
+        "from": "(*zeigten*) ist **kein** Partizip",
+        "to": "(zum Beispiel *lag* oder *zeigten*) ist **kein** Partizip"
+      }
+    ]
+  },
+  {
+    "id": "DE_G8_PARTIZIP_IM_SATZ_T1",
+    "why": "'ein-' does not replace 'ge-' (eingekauft), and a Partizip II does not always stand before a noun.",
+    "ops": [
+      {
+        "op": "section",
+        "index": 2,
+        "body": "*zeigten, öffnete, stolperte* sind Präteritum-Formen, keine Partizipien. Ein Partizip II hat *ge-* (*gekauft, eingekauft*) oder eine Vorsilbe wie *ver-, zer-, be-, er-* (*vergessen, zerknittert*). In diesen Sätzen steht es wie ein Adjektiv vor einem Nomen."
+      }
+    ]
+  },
+  {
+    "id": "DE_G8_PARTIZIP_EXAM_STYLE",
+    "why": "The form test does not work (die erreichten Ziele); the function in the sentence decides.",
+    "ops": [
+      {
+        "op": "section",
+        "index": 2,
+        "body": "Verwechsle das Verb im Präteritum (*erreichten*) nicht mit einem Partizip. Test: Welche Aufgabe hat das Wort im Satz? *erreichten* ist das Prädikat. Frage: Was taten die Läufer? Sie *erreichten* das Stadion. *erleuchtete* steht wie ein Adjektiv vor dem Nomen *Stadion*. Also ist es ein Partizip."
+      }
+    ]
+  },
+  {
+    "id": "DE_G8_REGISTER_WORT_T1",
+    "why": "'Mathe' is colloquial too, so the sentence had two defensible answers.",
+    "ops": [
+      {
+        "op": "replace",
+        "in": "variants",
+        "from": "Ich muss noch Mathe pauken.",
+        "to": "Ich muss noch Vokabeln pauken."
+      },
+      {
+        "op": "set",
+        "path": [
+          "variants",
+          "variables",
+          "s",
+          "from",
+          11,
+          "b"
+        ],
+        "value": "Vokabeln"
+      }
+    ]
+  },
+  {
+    "id": "DE_MSA2023_502",
+    "why": "'steigen' has ei, not a long i, so the reason given was wrong.",
+    "ops": [
+      {
+        "op": "section",
+        "index": 0,
+        "body": "Ein langes i schreibt man meistens ie. In Aufstieg hörst du ein langes i. Das Wort gehört zu steigen. In der Vergangenheit heißt es: er stieg. Auch dort steht ie."
+      }
+    ]
+  },
+  {
+    "id": "DE_MSA2023_154",
+    "why": "Indirect speech with dass and indicative is also correct unless the task asks for Konjunktiv I.",
+    "ops": [
+      {
+        "op": "replace",
+        "in": "prompt",
+        "from": "in **indirekte Rede** um.",
+        "to": "in **indirekte Rede** um. Verwenden Sie den **Konjunktiv I**."
+      }
+    ]
+  },
+  {
+    "id": "DE_MSA2024_403",
+    "why": "'zusammengeschrieben' is itself written as one word.",
+    "ops": [
+      {
+        "op": "replace",
+        "in": "explanation",
+        "from": "Zusammen geschrieben",
+        "to": "Zusammengeschrieben"
+      }
+    ]
+  },
+  {
+    "id": "DE_PUNCT_COMMA_MAIN_SUB_001",
+    "why": "Explanation shouted in capitals and used keywords with arrows instead of sentences.",
+    "ops": [
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Was ist das",
+            "body": "Es geht um das Komma zwischen Hauptsatz und Nebensatz."
+          },
+          {
+            "kind": "terms",
+            "title": "Die Begriffe",
+            "body": "Ein Hauptsatz kann allein stehen. Hier ist das: *Ich glaube*.\n\nEin Nebensatz braucht den Hauptsatz. Hier ist das: *dass er heute kommt*.\n\nEin Signalwort zeigt den Nebensatz an. Hier ist es das Wort *dass*."
+          },
+          {
+            "kind": "formula",
+            "title": "Die Regel",
+            "body": "Vor dem Signalwort steht ein Komma."
+          },
+          {
+            "kind": "steps",
+            "title": "Anwendung",
+            "body": "Der Hauptsatz ist *Ich glaube*. Der Nebensatz ist *dass er heute kommt*. Das Komma steht also vor *dass*: *Ich glaube, dass er heute kommt.*"
+          },
+          {
+            "kind": "remember",
+            "title": "Signalwörter für Nebensätze",
+            "body": "Wörter, die einen Nebensatz einleiten, sind zum Beispiel: dass, weil, obwohl, wenn, als, damit, ob."
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "Ich glaube, dass"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "DE_PUNCT_COMMA_MAIN_SUB_002",
+    "why": "'Always a comma before als' is wrong in comparisons; the explanation also shouted in capitals.",
+    "ops": [
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Was ist das",
+            "body": "Es geht um das Komma vor *weil*. Dieses Wort leitet sehr oft einen Nebensatz ein."
+          },
+          {
+            "kind": "terms",
+            "title": "Die Regel",
+            "body": "Das Wort *weil* leitet einen Nebensatz ein. Vor dem Nebensatz steht ein Komma."
+          },
+          {
+            "kind": "steps",
+            "title": "Richtig",
+            "body": "Er kam nicht, weil er krank war."
+          },
+          {
+            "kind": "text",
+            "title": "Vorstellung",
+            "body": "Stell dir eine Grenze zwischen Hauptsatz und Nebensatz vor. Der Hauptsatz ist *Er kam nicht*. Der Nebensatz ist *weil er krank war*. Das Komma markiert diese Grenze."
+          },
+          {
+            "kind": "remember",
+            "title": "Ähnliche Wörter",
+            "body": "Wörter wie weil, obwohl, wenn, damit und sodass leiten einen Nebensatz ein. Vor dem Nebensatz steht ein Komma.\n\nAuch *als* kann einen Nebensatz einleiten: *Als er kam, regnete es.* In einem einfachen Vergleich steht vor *als* aber kein Komma: *Er ist größer als ich.*"
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "nach 'nicht'"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "DE_PUNCT_COMMA_MAIN_SUB_003",
+    "why": "Explanation shouted in capitals and used keywords with arrows instead of sentences.",
+    "ops": [
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Was ist das",
+            "body": "Es geht um das Komma nach einem Nebensatz, der vorn steht."
+          },
+          {
+            "kind": "terms",
+            "title": "Die Regel",
+            "body": "Wenn der Nebensatz zuerst kommt, steht das Komma am Ende des Nebensatzes."
+          },
+          {
+            "kind": "steps",
+            "title": "Aufbau",
+            "body": "Der Nebensatz ist hier: *Obwohl es regnete*. Danach folgt der Hauptsatz: *ging sie spazieren*. Das Komma steht zwischen beiden: *Obwohl es regnete, ging sie spazieren.*"
+          },
+          {
+            "kind": "text",
+            "title": "Vorstellung",
+            "body": "Der Nebensatz wartet auf den Hauptsatz. Das Komma trennt die beiden."
+          },
+          {
+            "kind": "remember",
+            "title": "Merke",
+            "body": "Steht der Nebensatz vorn, steht das Komma am Ende des Nebensatzes. Steht der Nebensatz hinten, steht das Komma vor dem Nebensatz."
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "Obwohl es regnete, ging sie spazieren."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "DE_PUNCT_COMMA_MAIN_SUB_004",
+    "why": "Explanation shouted in capitals, used arrows, and said a comma before 'und' is forbidden although it is only unnecessary.",
+    "ops": [
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Was ist das",
+            "body": "Es geht um zwei Dinge: das Komma nach einem Nebensatz und das Wort *und* zwischen zwei Hauptsätzen."
+          },
+          {
+            "kind": "terms",
+            "title": "Die Teile des Satzes",
+            "body": "Der Nebensatz ist *Als ich aufwachte*. Sein Signalwort ist *als*.\n\nDer erste Hauptsatz ist *schien die Sonne*.\n\nDer zweite Hauptsatz ist *und die Vögel sangen*."
+          },
+          {
+            "kind": "formula",
+            "title": "Die Regeln",
+            "body": "1. Nach dem Nebensatz steht ein Komma.\n2. Vor *und* zwischen zwei Hauptsätzen braucht man kein Komma."
+          },
+          {
+            "kind": "steps",
+            "title": "Richtig",
+            "body": "Als ich aufwachte, schien die Sonne und die Vögel sangen.\n\nDas Komma steht nur nach *aufwachte*."
+          },
+          {
+            "kind": "remember",
+            "title": "Merke",
+            "body": "An der Grenze zwischen Nebensatz und Hauptsatz steht ein Komma. Sind zwei Hauptsätze mit *und* verbunden, braucht man kein Komma."
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "1 Komma"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "DE_PUNCT_COMMA_LIST_001",
+    "why": "Explanation shouted in capitals and used arrow sketches instead of sentences.",
+    "ops": [
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Was ist das",
+            "body": "Es geht um das Komma bei Aufzählungen."
+          },
+          {
+            "kind": "terms",
+            "title": "Die Regel",
+            "body": "Zwischen den Teilen einer Aufzählung steht ein Komma. Vor *und* und vor *oder* steht in der Aufzählung kein Komma."
+          },
+          {
+            "kind": "steps",
+            "title": "Aufbau",
+            "body": "Eine Aufzählung sieht so aus: Teil 1, Teil 2, Teil 3 und Teil 4. Zwischen den ersten Teilen steht ein Komma. Vor *und* steht kein Komma."
+          },
+          {
+            "kind": "text",
+            "title": "Beispiel",
+            "body": "Das Beispiel heißt: *Äpfel, Birnen und Bananen*. Nach *Äpfel* steht ein Komma. Vor *Bananen* steht das Wort *und*. Es ersetzt das Komma."
+          },
+          {
+            "kind": "mistake",
+            "title": "Achtung",
+            "body": "Im Englischen steht vor *and* oft ein Komma. Im Deutschen steht vor *und* in der Aufzählung kein Komma."
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "Ich kaufe Äpfel, Birnen und Bananen."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "DE_PUNCT_COMMA_LIST_002",
+    "why": "Explanation shouted in capitals and used shorthand with arrows.",
+    "ops": [
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Was ist das",
+            "body": "Es geht um eine Aufzählung von Adjektiven."
+          },
+          {
+            "kind": "terms",
+            "title": "Die Teile des Satzes",
+            "body": "Die Wörter *klug*, *fleißig* und *freundlich* sind drei gleichrangige Adjektive. Sie bilden eine Aufzählung."
+          },
+          {
+            "kind": "formula",
+            "title": "Die Regel",
+            "body": "Zwischen gleichrangigen Adjektiven steht ein Komma. Vor *und* steht kein Komma."
+          },
+          {
+            "kind": "steps",
+            "title": "Richtig",
+            "body": "Er ist klug, fleißig und freundlich.\n\nZwischen *klug* und *fleißig* fehlt ein Komma. Es fehlt also 1 Komma."
+          },
+          {
+            "kind": "remember",
+            "title": "Test",
+            "body": "Kannst du das Wort *und* zwischen die Adjektive setzen? Die Probe *klug und fleißig und freundlich* klingt richtig. Also sind die Adjektive gleichrangig, und zwischen ihnen steht ein Komma."
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "1 Komma fehlt"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "DE_ORTHO_CASE_001",
+    "why": "The rule 'capital after im, am, zum, beim' is wrong (am besten), and the explanation shouted in capitals.",
+    "ops": [
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Was ist das",
+            "body": "Es geht um eine Nominalisierung: Ein Adjektiv wird zum Nomen."
+          },
+          {
+            "kind": "terms",
+            "title": "Die Regel",
+            "body": "In *im* steckt der Artikel *dem* (in dem). Steht vor einem Adjektiv ein Artikel und folgt kein Nomen, dann ist das Adjektiv zum Nomen geworden. Man schreibt es groß."
+          },
+          {
+            "kind": "steps",
+            "title": "Warum",
+            "body": "Die Wendung *im Allgemeinen* bedeutet *in dem Allgemeinen*. Das Wort *Allgemeinen* ist hier ein Nomen."
+          },
+          {
+            "kind": "remember",
+            "title": "Mehr Beispiele",
+            "body": "- *im Folgenden*: groß, denn es ist ein Nomen.\n- *zum Glück*: groß, denn *Glück* ist ein Nomen.\n- *am besten*: klein, denn es ist eine Steigerungsform."
+          },
+          {
+            "kind": "mistake",
+            "title": "Achtung",
+            "body": "Die höchste Steigerungsstufe mit *am* bleibt klein: *am besten, am schnellsten*. Das sind keine Nomen."
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "im Allgemeinen"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "DE_ORTHO_CASE_002",
+    "why": "'gross' is misspelt in Germany (groß), and the explanation shouted in capitals.",
+    "ops": [
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Was ist das",
+            "body": "Es geht um Tageszeiten als Nomen."
+          },
+          {
+            "kind": "terms",
+            "title": "Die Regel",
+            "body": "Tageszeiten sind Nomen. Man schreibt sie groß. Das Wort *heute* ist ein Adverb. Es bleibt klein."
+          },
+          {
+            "kind": "steps",
+            "title": "Aufbau",
+            "body": "Die Wendung *heute Morgen* besteht aus zwei Wörtern. Das Wort *heute* schreibt man klein, das Wort *Morgen* schreibt man groß."
+          },
+          {
+            "kind": "remember",
+            "title": "Mehr Beispiele",
+            "body": "- heute Abend\n- gestern Nacht\n- morgen Mittag"
+          },
+          {
+            "kind": "mistake",
+            "title": "Achtung: Verwechslungsgefahr",
+            "body": "Das Wort *morgen* (= der nächste Tag) schreibt man klein. Das Wort *Morgen* (= die Tageszeit) schreibt man groß.\n\nMan schreibt *morgen früh*, denn gemeint ist der nächste Tag."
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "heute Morgen"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "DE_ORTHO_CASE_003",
+    "why": "'Sie hat Recht.' is also correct in the official spelling, so the task is replaced by the 'im Recht' variant.",
+    "ops": [
+      {
+        "op": "choices",
+        "choices": [
+          "Sie ist im Recht.",
+          "Sie ist im recht.",
+          "Sie ist Im Recht.",
+          "sie ist im Recht."
+        ],
+        "correct": "Sie ist im Recht."
+      },
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Was ist das",
+            "body": "Es geht um das Wort *Recht* nach *im*."
+          },
+          {
+            "kind": "terms",
+            "title": "Die Regel",
+            "body": "Vor *Recht* steht *im* (= in dem). Mit Artikel ist *Recht* ein Nomen. Man schreibt es groß."
+          },
+          {
+            "kind": "steps",
+            "title": "Die anderen Wörter",
+            "body": "Das Wort *im* steht mitten im Satz und bleibt klein. Das Wort *Sie* steht am Satzanfang. Deshalb schreibt man es groß."
+          },
+          {
+            "kind": "remember",
+            "title": "Unterscheide",
+            "body": "- Sie ist im Recht. (= Sie liegt richtig.)\n- Sie hat ein Recht darauf. (= Sie hat einen Anspruch.)\n- Das ist nicht recht. (= Das ist nicht in Ordnung.)"
+          },
+          {
+            "kind": "mistake",
+            "title": "Ähnliche Fälle",
+            "body": "Bei *recht haben* darf man klein oder groß schreiben: *Sie hat recht.* oder *Sie hat Recht.* Bei *unrecht haben* ist es genauso."
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "Sie ist im Recht."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "DE_ORTHO_SS_SZ_001",
+    "why": "Explanation shouted in capitals and used arrow shorthand.",
+    "ops": [
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Was ist das",
+            "body": "Es geht um die Frage: ss oder ß? Das ist eine wichtige Rechtschreibregel."
+          },
+          {
+            "kind": "terms",
+            "title": "Die Regel",
+            "body": "Nach einem kurzen Vokal schreibt man ss. Nach einem langen Vokal schreibt man ß."
+          },
+          {
+            "kind": "steps",
+            "title": "Test für „muss“",
+            "body": "Wie sprichst du das u? Du sprichst es kurz. Deshalb schreibt man ss."
+          },
+          {
+            "kind": "text",
+            "title": "Vorstellung",
+            "body": "Versuche, das u lang zu ziehen: *muuuuuss*. Das geht nicht. Der Vokal ist kurz, also schreibt man ss."
+          },
+          {
+            "kind": "remember",
+            "title": "Merke",
+            "body": "- muss, dass, Fluss, Schluss: kurzer Vokal, also ss\n- Fuß, Gruß, groß, Straße: langer Vokal, also ß"
+          },
+          {
+            "kind": "mistake",
+            "title": "Schweiz",
+            "body": "In der Schweiz gibt es kein ß. Dort schreibt man immer ss."
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "Ich muss gehen."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "DE_ORTHO_SS_SZ_002",
+    "why": "'After au, ei, eu always ß' is wrong (Haus, Eis); the explanation also shouted in capitals.",
+    "ops": [
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Was ist das",
+            "body": "Es geht um die Frage: ss oder ß nach einem langen Vokal?"
+          },
+          {
+            "kind": "terms",
+            "title": "Die Regel",
+            "body": "Nach einem langen Vokal und nach einem Doppellaut schreibt man nie ss. Für den scharfen s-Laut schreibt man dort ß."
+          },
+          {
+            "kind": "steps",
+            "title": "Test für „Straße“",
+            "body": "Wie sprichst du das a? Du sprichst es lang: *Straaaaaße*. Deshalb schreibt man ß."
+          },
+          {
+            "kind": "text",
+            "title": "Vorstellung",
+            "body": "Kannst du den Vokal lang ziehen? Bei *Straaaaaße* geht das, also schreibt man ß. Bei *muuuuuss* geht das nicht, also schreibt man ss."
+          },
+          {
+            "kind": "remember",
+            "title": "Doppellaute",
+            "body": "Doppellaute sind au, ei, eu und äu. Nach ihnen schreibt man nie ss.\n\nBleibt der s-Laut beim Verlängern scharf, schreibt man ß: *draußen, heißen, reißen*.\n\nWird der s-Laut beim Verlängern weich, schreibt man s: *Haus* (Häuser), *Eis* (eisig)."
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "Die Straße ist lang."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "DE_ORTHO_DOUBLE_001",
+    "why": "Without a sentence 'Kommen' is also a correct spelling; the explanation also shouted in capitals.",
+    "ops": [
+      {
+        "op": "prompt",
+        "text": "Welche Schreibweise ist richtig? „Wir ___ morgen zu dir.“"
+      },
+      {
+        "op": "choices",
+        "choices": [
+          "kommen",
+          "komen",
+          "kommmen",
+          "kohmen"
+        ],
+        "correct": "kommen"
+      },
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Was ist das",
+            "body": "Es geht um doppelte Konsonanten nach einem kurzen Vokal."
+          },
+          {
+            "kind": "terms",
+            "title": "Die Regel",
+            "body": "Nach einem kurzen Vokal folgt oft ein doppelter Konsonant."
+          },
+          {
+            "kind": "steps",
+            "title": "Test für „kommen“",
+            "body": "Wie sprichst du das o? Du sprichst es kurz, nicht lang wie in *koooomen*. Deshalb schreibt man zwei m."
+          },
+          {
+            "kind": "text",
+            "title": "Vorstellung",
+            "body": "Der kurze Vokal braucht Schutz. Die beiden Konsonanten sind wie eine Mauer."
+          },
+          {
+            "kind": "remember",
+            "title": "Mehr Beispiele",
+            "body": "- Sommer, Sonne, Tanne\n- rennen, Wasser, Butter\n- Mutter, Teller, fallen"
+          },
+          {
+            "kind": "mistake",
+            "title": "Aber",
+            "body": "Nach einem langen Vokal steht kein doppelter Konsonant: *Vater* (langes a), *Boden* (langes o)."
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "kommen"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "DE_GRAM_WORD_CLASSES_001",
+    "why": "Heading 'Adjektiv-erkennung' was misspelt, and the explanation shouted in capitals.",
+    "ops": [
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Was ist das",
+            "body": "Es geht darum, Wortarten zu erkennen. Hier geht es um Adjektive."
+          },
+          {
+            "kind": "terms",
+            "title": "Die Begriffe",
+            "body": "- Ein Adjektiv ist ein Wie-Wort. Es beschreibt Eigenschaften.\n- Ein Nomen ist ein Namenwort. Es bezeichnet Personen und Dinge.\n- Ein Verb ist ein Tu-Wort. Es bezeichnet Handlungen.\n- Ein Artikel ist ein Begleiter: der, die, das."
+          },
+          {
+            "kind": "steps",
+            "title": "Test",
+            "body": "Frage: Wie ist der Zug? Antwort: schnell. Mit der Frage *Wie?* fragst du nach einem Adjektiv."
+          },
+          {
+            "kind": "text",
+            "title": "Adjektive erkennen",
+            "body": "- Ein Adjektiv kann vor einem Nomen stehen: der schnelle Zug.\n- Man kann es steigern: schnell, schneller, am schnellsten.\n- Es antwortet auf die Frage *Wie?*"
+          },
+          {
+            "kind": "remember",
+            "title": "Merke",
+            "body": "Adjektive beschreiben Eigenschaften."
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "Adjektiv"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "DE_GRAM_WORD_CLASSES_002",
+    "why": "Heading 'Verb-erkennung' was misspelt (named in the finding for DE_GRAM_WORD_CLASSES_001).",
+    "ops": [
+      {
+        "op": "section",
+        "index": 3,
+        "title": "Verben erkennen"
+      }
+    ]
+  },
+  {
+    "id": "DE_GRAM_WORD_CLASSES_003",
+    "why": "'Montag' is not a proper name; 'gross' and 'davor setzen' were misspelt; headings and capitals corrected.",
+    "ops": [
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Was ist das",
+            "body": "Es geht darum, Wortarten zu erkennen. Hier geht es um Nomen."
+          },
+          {
+            "kind": "terms",
+            "title": "Die Begriffe",
+            "body": "Ein Nomen heißt auch Namenwort oder Hauptwort. Es bezeichnet Personen, Tiere, Dinge und Gefühle."
+          },
+          {
+            "kind": "steps",
+            "title": "Erkennungsmerkmale",
+            "body": "- Ein Nomen schreibt man groß.\n- Es hat einen Artikel: der Tisch.\n- Es hat einen Plural: die Tische."
+          },
+          {
+            "kind": "text",
+            "title": "Der Nomen-Test",
+            "body": "Kann ich der, die oder das davorsetzen? *Der Tisch* passt. Also ist *Tisch* ein Nomen."
+          },
+          {
+            "kind": "remember",
+            "title": "Arten von Nomen",
+            "body": "- Konkrete Nomen: Tisch, Hund, Apfel\n- Abstrakte Nomen: Liebe, Glück, Freiheit\n- Eigennamen: Berlin, Anna, Spree"
+          },
+          {
+            "kind": "mistake",
+            "title": "Achtung",
+            "body": "Nomen schreibt man immer groß."
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "Nomen"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "DE_GRAM_TENSES_001",
+    "why": "Explanation shouted in capitals and used keyword shorthand.",
+    "ops": [
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Was ist das",
+            "body": "Es geht darum, Zeitformen zu erkennen. Hier geht es um das Präteritum."
+          },
+          {
+            "kind": "terms",
+            "title": "Die Begriffe",
+            "body": "Das Präteritum ist die einfache Vergangenheit. Man benutzt es vor allem in geschriebenen Texten. Es heißt auch Imperfekt oder 1. Vergangenheit."
+          },
+          {
+            "kind": "steps",
+            "title": "So erkennst du es",
+            "body": "Ein einziges Verb drückt die Vergangenheit aus. Aus *gehen* wird *ging*."
+          },
+          {
+            "kind": "text",
+            "title": "Vergleich",
+            "body": "- Präsens: Ich gehe.\n- Präteritum: Ich ging. (1 Wort)\n- Perfekt: Ich bin gegangen. (2 Wörter)"
+          },
+          {
+            "kind": "remember",
+            "title": "Typische Formen im Präteritum",
+            "body": "- Starke Verben: ich ging, ich sah, ich kam\n- Schwache Verben mit -te: ich spielte, ich machte"
+          },
+          {
+            "kind": "mistake",
+            "title": "Beim Sprechen",
+            "body": "Beim Sprechen benutzt man oft das Perfekt statt des Präteritums: *Ich bin gegangen* statt *Ich ging*."
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "Präteritum"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "DE_GRAM_TENSES_002",
+    "why": "Explanation shouted in capitals and used shorthand with arrows and brackets.",
+    "ops": [
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Was ist das",
+            "body": "Es geht darum, Zeitformen zu erkennen. Hier geht es um das Perfekt."
+          },
+          {
+            "kind": "terms",
+            "title": "Die Begriffe",
+            "body": "Das Perfekt heißt auch vollendete Gegenwart oder 2. Vergangenheit. Man benutzt es vor allem beim Sprechen."
+          },
+          {
+            "kind": "steps",
+            "title": "So erkennst du es",
+            "body": "Das Perfekt besteht aus zwei Teilen: einer Form von *haben* oder *sein* und dem Partizip II. Hier ist *habe* das Hilfsverb und *gelesen* das Partizip II."
+          },
+          {
+            "kind": "text",
+            "title": "Aufbau",
+            "body": "Das Partizip II beginnt meist mit ge- und endet auf -t oder -en.\n\n- Ich habe gespielt.\n- Ich bin gegangen."
+          },
+          {
+            "kind": "remember",
+            "title": "Wann steht „sein“?",
+            "body": "Das Hilfsverb *sein* steht bei Verben der Bewegung oder der Zustandsänderung: gehen, laufen, fahren. Beispiel: *Ich bin gegangen.*\n\nSonst steht *haben*: schlafen, spielen. Beispiel: *Ich habe geschlafen.*"
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "Perfekt"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "DE_GRAM_TENSES_003",
+    "why": "Explanation shouted in capitals and used arrow shorthand.",
+    "ops": [
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Was ist das",
+            "body": "Es geht darum, Zeitformen zu erkennen. Hier geht es um das Futur I."
+          },
+          {
+            "kind": "terms",
+            "title": "Die Begriffe",
+            "body": "Das Futur I ist die Zeitform für die Zukunft. Es drückt aus, was geschehen wird."
+          },
+          {
+            "kind": "steps",
+            "title": "So erkennst du es",
+            "body": "Das Futur I besteht aus einer Form von *werden* und dem Infinitiv. Hier ist das: *werde … gehen*."
+          },
+          {
+            "kind": "text",
+            "title": "Aufbau",
+            "body": "- Ich werde spielen.\n- Du wirst kommen.\n- Er wird lernen."
+          },
+          {
+            "kind": "remember",
+            "title": "Auch möglich",
+            "body": "Auch das Präsens mit einer Zeitangabe kann die Zukunft ausdrücken: *Morgen gehe ich ins Kino.* Das ist im Deutschen sogar häufiger."
+          },
+          {
+            "kind": "mistake",
+            "title": "Achtung",
+            "body": "Das Futur I kann auch eine Vermutung ausdrücken: *Er wird wohl krank sein.*"
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "Futur I"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "DE_GRAM_SENTENCE_TYPES_001",
+    "why": "Explanation shouted in capitals and used keywords with equals signs instead of sentences.",
+    "ops": [
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Was ist das",
+            "body": "Es geht um den Unterschied zwischen Hauptsatz und Nebensatz."
+          },
+          {
+            "kind": "terms",
+            "title": "Die Begriffe",
+            "body": "Ein Hauptsatz kann allein stehen und ergibt für sich einen Sinn. Ein Nebensatz braucht einen Hauptsatz, damit er einen Sinn ergibt."
+          },
+          {
+            "kind": "text",
+            "title": "Beispiele",
+            "body": "Ein Hauptsatz ist: *Ich gehe nach Hause.* Er ergibt allein einen Sinn.\n\nEin Nebensatz ist: *weil ich müde bin*. Allein ist er unvollständig."
+          },
+          {
+            "kind": "steps",
+            "title": "Erkennungsmerkmale",
+            "body": "Im Hauptsatz steht das gebeugte Verb an zweiter Stelle. Im Nebensatz steht es am Ende. Außerdem beginnt der Nebensatz mit einem Signalwort."
+          },
+          {
+            "kind": "remember",
+            "title": "Signalwörter für Nebensätze",
+            "body": "Nebensätze beginnen oft mit Wörtern wie weil, dass, wenn, obwohl, als oder damit."
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "Ein Satz, der alleine stehen kann"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "DE_READ_CORE_001",
+    "why": "The task showed no text, although the explanation argued with 'not mentioned in the text'; capitals and a misspelt heading corrected.",
+    "ops": [
+      {
+        "op": "prompt",
+        "text": "Lies: „Viele Jugendliche schlafen zu wenig. Ein Grund ist der frühe Schulbeginn. Dazu kommen Hausaufgaben am Abend. Außerdem liegt das Handy oft bis spät in die Nacht im Bett.“ Was ist am ehesten die Kernaussage?"
+      },
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Was ist das",
+            "body": "Es geht darum, die Kernaussage zu finden. Die Kernaussage ist die wichtigste Botschaft eines Textes."
+          },
+          {
+            "kind": "terms",
+            "title": "Die Begriffe",
+            "body": "Die Kernaussage beantwortet die Frage: Was will der Text vor allem sagen? Einzelne Details oder Meinungen sind keine Kernaussage."
+          },
+          {
+            "kind": "steps",
+            "title": "So findest du die Kernaussage",
+            "body": "1. Was ist das Thema? Hier ist es: Jugendliche schlafen zu wenig.\n2. Was sagt der Text insgesamt dazu? Er nennt drei Gründe aus dem Alltag: Schulbeginn, Hausaufgaben und Handy.\n3. Die Kernaussage ist neutral formuliert. Sie wertet nicht."
+          },
+          {
+            "kind": "text",
+            "title": "Die anderen Antworten",
+            "body": "Dass Jugendliche faul sind, ist eine Wertung und steht nicht im Text. Dass die Schule zu leicht ist oder dass Sport verboten ist, steht auch nicht im Text."
+          },
+          {
+            "kind": "remember",
+            "title": "Merkmale der Kernaussage",
+            "body": "- Sie ist neutral formuliert.\n- Sie fasst den ganzen Text zusammen.\n- Sie enthält keine erfundenen Details."
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "Jugendliche schlafen weniger, weil mehrere Alltagsfaktoren zusammenwirken."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "DE_READ_CORE_002",
+    "why": "Explanation shouted in capitals and used arrow shorthand.",
+    "ops": [
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Was ist das",
+            "body": "Es geht darum, die Textabsicht zu erkennen. Die Frage lautet: Warum wurde der Text geschrieben?"
+          },
+          {
+            "kind": "terms",
+            "title": "Textabsichten",
+            "body": "- Informieren: Der Text teilt Fakten mit.\n- Appellieren: Der Text fordert zum Handeln auf.\n- Unterhalten: Der Text soll Spaß machen.\n- Überzeugen: Der Text will eine Meinung ändern."
+          },
+          {
+            "kind": "steps",
+            "title": "Der Text Schritt für Schritt",
+            "body": "Der Text nennt eine Studie und eine Zahl. Das sind sachliche Angaben. Außerdem warnen Experten vor Folgen. Der Text informiert also über ein Problem."
+          },
+          {
+            "kind": "text",
+            "title": "Die anderen Antworten",
+            "body": "Der Text wirbt nicht für Smartphones. Er lobt die Jugendlichen nicht, sondern er warnt eher. Die Experten werden zitiert, nicht kritisiert."
+          },
+          {
+            "kind": "remember",
+            "title": "Signalwörter für Information",
+            "body": "Wörter wie Studie, Prozent, Experten und Forscher zeigen oft, dass ein Text informieren will."
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "Über ein Problem informieren"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "DE_WRITE_REPHRASE_001",
+    "why": "Explanation shouted in capitals and used shorthand with arrows and unequal signs.",
+    "ops": [
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Was ist das",
+            "body": "Es geht darum, einen Satz umzuformulieren: gleiche Bedeutung, andere Wörter."
+          },
+          {
+            "kind": "terms",
+            "title": "Was der Satz bedeutet",
+            "body": "Wer keine Zeit hat, kann sich nicht um etwas kümmern. Er hat andere Dinge zu tun. Er ist also beschäftigt."
+          },
+          {
+            "kind": "steps",
+            "title": "Die anderen Antworten",
+            "body": "- *Er ist nicht da* bedeutet: Er ist abwesend.\n- *Er ist müde* bedeutet: Er ist erschöpft.\n- *Er ist froh* bedeutet: Er ist glücklich.\n\nDas alles sagt nichts über die Zeit."
+          },
+          {
+            "kind": "remember",
+            "title": "Umformulieren heißt",
+            "body": "Der Sinn bleibt gleich, aber die Wörter sind andere. Du suchst also ein passendes Synonym."
+          },
+          {
+            "kind": "mistake",
+            "title": "Vorsicht",
+            "body": "Wörter, die ähnlich klingen, sind nicht immer Synonyme."
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "Er ist beschäftigt."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "DE_PUNCT_SPEECH_001",
+    "why": "The rule 'no comma after ! or ?' is the old spelling; today the comma always follows the quoted speech.",
+    "ops": [
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Was ist das",
+            "body": "Es geht um die direkte Rede. Sie gibt die Worte einer Person wörtlich wieder."
+          },
+          {
+            "kind": "terms",
+            "title": "Die Regeln",
+            "body": "1. Nach dem Begleitsatz steht ein Doppelpunkt.\n2. Die wörtliche Rede steht in Anführungszeichen.\n3. Der Punkt oder das Fragezeichen steht vor dem letzten Anführungszeichen."
+          },
+          {
+            "kind": "steps",
+            "title": "Aufbau",
+            "body": "Sie sagte: \"Ich komme morgen.\"\n\nNach *Sie sagte* steht der Doppelpunkt. Dann folgt das erste Anführungszeichen. Am Ende steht erst der Punkt und dann das zweite Anführungszeichen."
+          },
+          {
+            "kind": "remember",
+            "title": "Rede zuerst",
+            "body": "- \"Ich komme\", sagte sie. Steht die Rede zuerst, folgt nach dem Anführungszeichen ein Komma. Der Punkt der Rede fällt weg.\n- \"Ich komme!\", sagte sie. Auch nach einem Ausrufezeichen oder Fragezeichen steht das Komma."
+          },
+          {
+            "kind": "mistake",
+            "title": "Typische Fehler",
+            "body": "- Der Doppelpunkt fehlt.\n- Die Anführungszeichen fehlen.\n- Der Punkt steht nach den Anführungszeichen."
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "Sie sagte: \"Ich komme morgen.\""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "DE_ORTHO_CASE_TRAIN_001",
+    "why": "In häufig/Haufen au becomes äu, not a becomes ä; the explanation also shouted in capitals.",
+    "ops": [
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Was ist das",
+            "body": "Es geht um eine Rechtschreibstrategie: das Ableiten."
+          },
+          {
+            "kind": "terms",
+            "title": "Die Regel",
+            "body": "Bei der Frage e oder ä, eu oder äu, i oder ü hilft die Ableitungsprobe. Suche ein verwandtes Wort."
+          },
+          {
+            "kind": "steps",
+            "title": "Beispiel",
+            "body": "Zu *eifersüchtig* gehört das Wort *Sucht*. In *Sucht* hörst du das u deutlich. Also schreibt man *eifersüchtig* mit ü."
+          },
+          {
+            "kind": "remember",
+            "title": "Weitere Beispiele",
+            "body": "- häufig gehört zu Haufen: Aus au wird äu.\n- Stärke gehört zu stark: Aus a wird ä.\n- Bäume gehört zu Baum: Aus au wird äu."
+          },
+          {
+            "kind": "mistake",
+            "title": "Merke",
+            "body": "Das Ableiten hilft bei diesen Fragen:\n\n- e oder ä?\n- eu oder äu?\n- i oder ü?"
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "Ich suche ein stammverwandtes Wort"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "DE_ORTHO_CASE_TRAIN_002",
+    "why": "Explanation shouted in capitals and used arrow chains.",
+    "ops": [
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Was ist das",
+            "body": "Es geht um eine Rechtschreibstrategie: das Verlängern."
+          },
+          {
+            "kind": "terms",
+            "title": "Die Regel",
+            "body": "Bei der Frage g oder k, d oder t, b oder p hilft das Verlängern. Am Wortende hört man den Unterschied nicht."
+          },
+          {
+            "kind": "steps",
+            "title": "So verlängerst du",
+            "body": "- Bei Nomen bildest du den Plural.\n- Bei Verben bildest du den Infinitiv.\n- Adjektive steigerst du."
+          },
+          {
+            "kind": "steps",
+            "title": "Beispiel",
+            "body": "Verlängere *eifersüchtig* zu *eifersüchtiger*. Jetzt hörst du das g deutlich. Also schreibt man *eifersüchtig* mit g."
+          },
+          {
+            "kind": "remember",
+            "title": "Weitere Beispiele",
+            "body": "- Hund oder Hunt? Verlängere zu Hunde. Also: Hund.\n- klug oder kluk? Verlängere zu klüger. Also: klug.\n- liebt oder liept? Der Infinitiv heißt lieben. Also: liebt."
+          },
+          {
+            "kind": "mistake",
+            "title": "Merke",
+            "body": "Das Verlängern hilft bei diesen Fragen:\n\n- g oder k?\n- d oder t?\n- b oder p?"
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "Ich verlängere das Wort"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "DE_ORTHO_DOUBLE_TRAIN_001",
+    "why": "Explanation shouted in capitals and used arrow shorthand.",
+    "ops": [
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Was ist das",
+            "body": "Es geht um die Rechtschreibung mit dem Umlaut ä."
+          },
+          {
+            "kind": "terms",
+            "title": "Die Strategie",
+            "body": "Die Strategie heißt Ableiten: Suche ein verwandtes Wort ohne Umlaut."
+          },
+          {
+            "kind": "steps",
+            "title": "Ableitung",
+            "body": "Das Wort *Stärke* gehört zu *stark*. In *stark* steht ein a. Deshalb schreibt man *Stärke* mit ä."
+          },
+          {
+            "kind": "remember",
+            "title": "Die Regel",
+            "body": "Hat das Grundwort ein a, dann schreibt man im abgeleiteten Wort ä und nicht e."
+          },
+          {
+            "kind": "text",
+            "title": "Weitere Beispiele",
+            "body": "- Bäcker gehört zu backen.\n- Händler gehört zu Handel.\n- Länge gehört zu lang.\n- kälter gehört zu kalt."
+          },
+          {
+            "kind": "mistake",
+            "title": "Achtung",
+            "body": "Auch wenn ä und e gleich klingen, musst du das Grundwort suchen."
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "Stärke"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "DE_ORTHO_DOUBLE_TRAIN_002",
+    "why": "Explanation shouted in capitals and used arrow shorthand.",
+    "ops": [
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Was ist das",
+            "body": "Es geht um die Rechtschreibung mit äu oder eu."
+          },
+          {
+            "kind": "terms",
+            "title": "Die Strategie",
+            "body": "Die Strategie heißt Ableiten: Suche ein verwandtes Wort."
+          },
+          {
+            "kind": "steps",
+            "title": "Ableitung",
+            "body": "Das Wort *häufig* gehört zu *Haufen*. In *Haufen* steht au. Deshalb schreibt man *häufig* mit äu."
+          },
+          {
+            "kind": "remember",
+            "title": "Die Regel",
+            "body": "Hat das Grundwort au, dann schreibt man im abgeleiteten Wort äu und nicht eu."
+          },
+          {
+            "kind": "text",
+            "title": "Weitere Beispiele",
+            "body": "- Bäume gehört zu Baum.\n- träumen gehört zu Traum.\n- Mäuse gehört zu Maus.\n- läuft gehört zu laufen."
+          },
+          {
+            "kind": "mistake",
+            "title": "Aber",
+            "body": "Zu *heute* und *neu* gibt es kein verwandtes Wort mit au. Deshalb schreibt man sie mit eu."
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "häufig"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "DE_GRAM_WORD_CLASSES_TRAIN_001",
+    "why": "The German translation in the prompt was an anaphora, so 'Anapher' was a second correct choice; the explanation also shouted in capitals.",
+    "ops": [
+      {
+        "op": "prompt",
+        "text": "Welches Stilmittel wird hier verwendet? 'Veni, vidi, vici.' (Der Satz ist lateinisch. Achte auf die Wortanfänge.)"
+      },
+      {
+        "op": "choices",
+        "choices": [
+          "Alliteration",
+          "Vergleich",
+          "Antithese",
+          "Metapher"
+        ],
+        "correct": "Alliteration"
+      },
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Was ist das",
+            "body": "Es geht darum, ein Stilmittel zu erkennen: die Alliteration."
+          },
+          {
+            "kind": "terms",
+            "title": "Definition",
+            "body": "Bei einer Alliteration beginnen mindestens zwei aufeinanderfolgende Wörter mit demselben Laut."
+          },
+          {
+            "kind": "steps",
+            "title": "Die Wörter prüfen",
+            "body": "Die drei Wörter heißen veni, vidi und vici. Alle drei beginnen mit v. Das ist eine Alliteration."
+          },
+          {
+            "kind": "remember",
+            "title": "Weitere Beispiele",
+            "body": "- frisch und fröhlich\n- Kind und Kegel\n- Mann und Maus"
+          },
+          {
+            "kind": "mistake",
+            "title": "Wichtig",
+            "body": "Es kommt auf den Laut an, nicht auf den Buchstaben. *Chemie und Charme* ist keine Alliteration, denn das Ch klingt in beiden Wörtern verschieden."
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "Alliteration"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "DE_GRAM_WORD_CLASSES_TRAIN_002",
+    "why": "The plural of Anapher is Anaphern; the explanation also shouted in capitals.",
+    "ops": [
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Was ist das",
+            "body": "Es geht darum, ein Stilmittel zu erkennen: die Anapher."
+          },
+          {
+            "kind": "terms",
+            "title": "Definition",
+            "body": "Bei einer Anapher wird ein Wort oder eine Wortgruppe am Anfang aufeinanderfolgender Sätze wiederholt."
+          },
+          {
+            "kind": "steps",
+            "title": "Die Sätze prüfen",
+            "body": "Die drei Sätze heißen: *Wer war das? Wer hat das getan? Wer ist schuld?* Jeder Satz beginnt mit *Wer*. Das ist eine Anapher."
+          },
+          {
+            "kind": "remember",
+            "title": "Weitere Beispiele",
+            "body": "- Ich fordere Mut. Ich fordere Tatkraft. Ich fordere Einheit.\n- Das Wasser rauscht. Das Wasser schwoll."
+          },
+          {
+            "kind": "mistake",
+            "title": "Unterschied zur Alliteration",
+            "body": "Bei der Alliteration beginnen Wörter mit demselben Laut. Bei der Anapher steht dasselbe Wort am Satzanfang."
+          },
+          {
+            "kind": "text",
+            "title": "Wirkung",
+            "body": "Anaphern verstärken die Aussage und erzeugen einen Rhythmus."
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "Anapher"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "DE_GRAM_WORD_CLASSES_TRAIN_003",
+    "why": "Explanation shouted in capitals and used shorthand with arrows and unequal signs.",
+    "ops": [
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Was ist das",
+            "body": "Es geht darum, ein Stilmittel zu erkennen: die Antithese."
+          },
+          {
+            "kind": "terms",
+            "title": "Definition",
+            "body": "Eine Antithese stellt Gegensätze nebeneinander."
+          },
+          {
+            "kind": "steps",
+            "title": "Die Wörter prüfen",
+            "body": "Die Wörter *Jung* und *Alt* sind Gegensätze. Das ist eine Antithese."
+          },
+          {
+            "kind": "remember",
+            "title": "Weitere Beispiele",
+            "body": "- Gut und Böse\n- Himmel und Hölle\n- Krieg und Frieden\n- Tag und Nacht\n- Arm und Reich"
+          },
+          {
+            "kind": "text",
+            "title": "Wirkung",
+            "body": "Antithesen betonen Gegensätze und machen Texte lebendiger."
+          },
+          {
+            "kind": "mistake",
+            "title": "Verwechslungsgefahr",
+            "body": "Die Reihe *Wasser, Luft, Erde, Feuer* ist kein Gegensatz, sondern eine Aufzählung."
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "Antithese"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "DE_GRAM_WORD_CLASSES_TRAIN_004",
+    "why": "Explanation shouted in capitals and used arrow shorthand.",
+    "ops": [
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Was ist das",
+            "body": "Es geht darum, ein Stilmittel zu erkennen: das Asyndeton."
+          },
+          {
+            "kind": "terms",
+            "title": "Definition",
+            "body": "Ein Asyndeton ist eine Aufzählung ohne Bindewort wie *und* oder *oder*."
+          },
+          {
+            "kind": "steps",
+            "title": "Die Aufzählung prüfen",
+            "body": "In der Reihe *Wasser, Luft, Erde, Feuer* stehen nur Kommas. Das Wort *und* fehlt. Das ist ein Asyndeton.\n\nÜblich wäre: *Wasser, Luft, Erde und Feuer*."
+          },
+          {
+            "kind": "remember",
+            "title": "Weitere Beispiele",
+            "body": "- Er kam, sah, siegte. (statt: Er kam, sah und siegte.)\n- Groß, klein, dick, dünn: Alle waren da."
+          },
+          {
+            "kind": "text",
+            "title": "Wirkung",
+            "body": "- Es erzeugt Tempo.\n- Es wirkt eindringlich.\n- Es hebt die Aufzählung hervor."
+          },
+          {
+            "kind": "mistake",
+            "title": "Gegenteil",
+            "body": "Das Gegenteil heißt Polysyndeton. Das ist eine Aufzählung mit vielen *und*: *Wasser und Luft und Erde und Feuer*."
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "Asyndeton"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "DE_PUNCT_COMMA_MAIN_SUB_TRAIN_001",
+    "why": "Explanation shouted in capitals.",
+    "ops": [
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Was ist das",
+            "body": "Es geht um das Komma zwischen Hauptsatz und Nebensatz."
+          },
+          {
+            "kind": "terms",
+            "title": "Die Regel",
+            "body": "Vor einem Wort, das einen Nebensatz einleitet, steht ein Komma."
+          },
+          {
+            "kind": "steps",
+            "title": "Die Teile des Satzes",
+            "body": "Der Hauptsatz ist *Ich gehe nach Hause*. Er kann allein stehen.\n\nDer Nebensatz ist *weil ich müde bin*. Er beginnt mit *weil*.\n\nZwischen Hauptsatz und Nebensatz steht das Komma."
+          },
+          {
+            "kind": "remember",
+            "title": "Signalwörter für Nebensätze",
+            "body": "- weil, da, obwohl, wenn, falls\n- dass, ob\n- der, die, das (Relativpronomen)\n- als, nachdem, bevor, während"
+          },
+          {
+            "kind": "text",
+            "title": "Tipp",
+            "body": "Im Nebensatz steht das gebeugte Verb am Ende: *weil ich müde bin*."
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "Ich gehe nach Hause, weil ich müde bin."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "DE_GRAM_TENSES_TRAIN_001",
+    "why": "Explanation shouted in capitals (heading and text) and used an arrow sketch.",
+    "ops": [
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Was ist das",
+            "body": "Es geht darum, die Zeitform (das Tempus) zu erkennen."
+          },
+          {
+            "kind": "terms",
+            "title": "So erkennst du das Perfekt",
+            "body": "Das Perfekt besteht aus einem Hilfsverb (haben oder sein) und dem Partizip II. Das Partizip II beginnt meist mit ge- und endet auf -t oder -en."
+          },
+          {
+            "kind": "steps",
+            "title": "Den Satz prüfen",
+            "body": "Hier ist *habe* das Hilfsverb und *gespielt* das Partizip II. Der Satz steht also im Perfekt."
+          },
+          {
+            "kind": "remember",
+            "title": "Übersicht Zeitformen",
+            "body": "- Präsens: Ich spiele. (jetzt)\n- Präteritum: Ich spielte. (Vergangenheit, vor allem beim Erzählen)\n- Perfekt: Ich habe gespielt. (Vergangenheit, vor allem beim Sprechen)\n- Futur: Ich werde spielen. (Zukunft)"
+          },
+          {
+            "kind": "mistake",
+            "title": "Unterschied zwischen Perfekt und Präteritum",
+            "body": "Das Perfekt benutzt man vor allem beim Sprechen: *Ich habe gespielt.* Das Präteritum benutzt man vor allem beim Schreiben und Erzählen: *Ich spielte.*"
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "Perfekt"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "DE_READ_CORE_TRAIN_001",
+    "why": "Prompt and explanation shouted in capitals.",
+    "ops": [
+      {
+        "op": "prompt",
+        "text": "Was ist die Kernaussage eines Textes?"
+      },
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Was ist das",
+            "body": "Es geht um die Definition der Kernaussage."
+          },
+          {
+            "kind": "terms",
+            "title": "Die Kernaussage",
+            "body": "Die Kernaussage ist die zentrale Botschaft oder Hauptidee, die der Autor vermitteln möchte."
+          },
+          {
+            "kind": "steps",
+            "title": "Wie findet man sie",
+            "body": "1. Lies den Text ganz durch.\n2. Frage dich: Worum geht es hauptsächlich?\n3. Fasse den Text in 1 bis 2 Sätzen zusammen.\n4. Prüfe: Deckt deine Zusammenfassung das Wichtigste ab?"
+          },
+          {
+            "kind": "remember",
+            "title": "Was die Kernaussage nicht ist",
+            "body": "- Sie ist nicht der erste Satz. Er kann die Einleitung sein.\n- Sie ist nicht die Überschrift. Die Überschrift ist oft nur ein Hinweis.\n- Sie ist kein wörtliches Zitat. Ein Zitat ist nur ein Teil des Textes."
+          },
+          {
+            "kind": "text",
+            "title": "Beispiel",
+            "body": "Ein Text über Umweltschutz enthält viele Details. Seine Kernaussage kann lauten: *Jeder kann durch kleine Handlungen zum Umweltschutz beitragen.*"
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "Die zentrale Botschaft oder Hauptidee des Textes"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "DE_GRAM_TENSES_010",
+    "why": "'Konjunktiv-II-Form' needs hyphens throughout, and the heading 'Die vier Modi' had no text.",
+    "ops": [
+      {
+        "op": "section",
+        "index": 0,
+        "body": "Es gibt vier Modi: den Indikativ (Wirklichkeit), den Konjunktiv I (indirekte Rede), den Konjunktiv II (Wunsch, höfliche Bitte, Unwirkliches) und den Imperativ (Aufforderung)."
+      },
+      {
+        "op": "section",
+        "index": 2,
+        "body": "*Könntest* ist die Konjunktiv-II-Form von *können*."
+      }
+    ]
+  },
+  {
+    "id": "DE_GRAM_TENSES_012",
+    "why": "'Los!' is not a verb form; the explanation must say why the verbless call still counts as imperative.",
+    "ops": [
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Imperativ - Befehlsform",
+            "body": "Der Imperativ ist die Befehlsform."
+          },
+          {
+            "kind": "terms",
+            "title": "Der Imperativ",
+            "body": "Wird verwendet für:\n• Befehle und Aufforderungen\n• Anweisungen\n• Ratschläge"
+          },
+          {
+            "kind": "steps",
+            "title": "Erkennungszeichen",
+            "body": "• Ausrufezeichen (!)\n• Keine Subjektperson genannt\n• Direkte Aufforderung"
+          },
+          {
+            "kind": "remember",
+            "title": "Beispiele",
+            "body": "- Geh!\n- Komm!\n- Lauft!"
+          },
+          {
+            "kind": "text",
+            "title": "Der Satz in der Aufgabe",
+            "body": "Der Ausruf *Auf die Plätze, fertig, los!* enthält kein Verb. Er ist aber ein Befehl. Gemeint ist: *Geht auf die Plätze, macht euch fertig, lauft los!* Deshalb wird er dem Imperativ zugeordnet."
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "Imperativ"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "DE_GRAM_WORD_CLASSES_006",
+    "why": "The adjectives were wrongly capitalised, and the reason named the first letter although the definition asks for the first sound.",
+    "ops": [
+      {
+        "op": "section",
+        "index": 2,
+        "body": "Die Wörter *frisch* und *fröhlich* beginnen beide mit dem Laut f. Zwei aufeinanderfolgende Wörter mit demselben Anfangslaut sind eine Alliteration."
+      }
+    ]
+  },
+  {
+    "id": "DE_GRAM_WORD_CLASSES_008",
+    "why": "Explanation shouted in capitals and used arrow keywords.",
+    "ops": [
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Pleonasmus",
+            "body": ""
+          },
+          {
+            "kind": "terms",
+            "title": "Definition",
+            "body": "Ein Pleonasmus ist eine Dopplung: Zwei Wörter sagen dasselbe."
+          },
+          {
+            "kind": "steps",
+            "title": "Die Wörter prüfen",
+            "body": "Ein Schimmel ist immer ein weißes Pferd. Das Wort *weiß* sagt also nichts Neues. Es ist überflüssig, verstärkt aber die Aussage."
+          },
+          {
+            "kind": "remember",
+            "title": "Weitere Beispiele",
+            "body": "- nasser Regen\n- großer Riese\n- runde Kugel"
+          },
+          {
+            "kind": "mistake",
+            "title": "Unterschied zum Oxymoron",
+            "body": "Ein Oxymoron ist ein Widerspruch: *alter Jüngling*. Ein Pleonasmus ist eine Dopplung: *weißer Schimmel*."
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "Pleonasmus"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "DE_GRAM_WORD_CLASSES_010",
+    "why": "'Schneckentempo' can also be read as a metaphor, so that choice is replaced.",
+    "ops": [
+      {
+        "op": "choices",
+        "choices": [
+          "Hyperbel",
+          "Alliteration",
+          "Vergleich",
+          "Personifikation"
+        ],
+        "correct": "Hyperbel"
+      }
+    ]
+  },
+  {
+    "id": "DE_GRAM_WORD_CLASSES_011",
+    "why": "Explanation shouted in capitals.",
+    "ops": [
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Anapher",
+            "body": ""
+          },
+          {
+            "kind": "terms",
+            "title": "Definition",
+            "body": "Bei einer Anapher wird ein Wort oder eine Wortgruppe am Anfang aufeinanderfolgender Sätze oder Verse wiederholt."
+          },
+          {
+            "kind": "steps",
+            "title": "Die Sätze prüfen",
+            "body": "Hier beginnen beide Sätze mit *Wer*."
+          },
+          {
+            "kind": "remember",
+            "title": "Weitere Beispiele",
+            "body": "- Ich will leben. Ich will lieben. Ich will lachen.\n- Das ist mein Haus. Das ist mein Garten."
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "Anapher"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "DE_ORTHO_CASE_005",
+    "why": "In 'Schwimmen macht Spaß' the word is a noun, so it was a wrong example for a lower-case verb.",
+    "ops": [
+      {
+        "op": "replace",
+        "in": "prompt",
+        "from": "RICHTIG",
+        "to": "richtig"
+      },
+      {
+        "op": "section",
+        "index": 2,
+        "body": "- Ein Artikel steht davor: das Schwimmen.\n- Ein Adjektiv steht davor: langes Schwimmen."
+      },
+      {
+        "op": "section",
+        "index": 3,
+        "body": "- Wir gehen schwimmen. Hier ist es ein Verb, also klein.\n- Das Schwimmen ist gesund. Hier ist es ein Nomen, also groß.\n- Ich finde, dass Schwimmen Spaß macht. Hier ist es ein Nomen, also groß, auch ohne Artikel."
+      }
+    ]
+  },
+  {
+    "id": "DE_ORTHO_CASE_006",
+    "why": "The counter-example showed a case error instead of the capitalisation rule and was written in abbreviations.",
+    "ops": [
+      {
+        "op": "replace",
+        "in": "prompt",
+        "from": "RICHTIG",
+        "to": "richtig"
+      },
+      {
+        "op": "section",
+        "index": 1,
+        "body": "In der höflichen Anrede schreibt man *Sie*, *Ihnen* und *Ihr* groß."
+      },
+      {
+        "op": "section",
+        "index": 3,
+        "body": "Wenn man über mehrere andere Personen spricht, bleibt *ihnen* klein: *Die Kinder haben Hunger. Ich gebe ihnen ein Brot.*"
+      }
+    ]
+  },
+  {
+    "id": "DE_ORTHO_CASE_007",
+    "why": "Explanation shouted in capitals (GROSSgeschrieben, KLEINgeschrieben).",
+    "ops": [
+      {
+        "op": "replace",
+        "in": "prompt",
+        "from": "RICHTIG",
+        "to": "richtig"
+      },
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Wochentage als Nomen",
+            "body": ""
+          },
+          {
+            "kind": "terms",
+            "title": "Die Regel",
+            "body": "Wochentage werden großgeschrieben, wenn sie Nomen sind."
+          },
+          {
+            "kind": "steps",
+            "title": "Erkennungszeichen",
+            "body": "Vor dem Wochentag steht ein Artikel oder eine Präposition: *am Montag, der Dienstag*."
+          },
+          {
+            "kind": "mistake",
+            "title": "Aber",
+            "body": "Als Adverb mit s am Ende schreibt man sie klein: *montags* (= jeden Montag), *dienstags*."
+          },
+          {
+            "kind": "remember",
+            "title": "Vergleich",
+            "body": "- Ich gehe am Montag … Hier ist es ein Nomen, also groß.\n- Ich gehe montags immer … Hier ist es ein Adverb, also klein."
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "am Montag"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "DE_PUNCT_INFINITIVE_002",
+    "why": "Heading and example shouted in capitals.",
+    "ops": [
+      {
+        "op": "section",
+        "index": 1,
+        "title": "Ein Komma muss stehen, wenn …",
+        "body": "1. die Infinitivgruppe ein einleitendes Wort hat (um, ohne, statt, anstatt, außer, als),\n2. die Infinitivgruppe von einem Nomen abhängt,\n3. ein hinweisendes Wort die Infinitivgruppe ankündigt."
+      },
+      {
+        "op": "section",
+        "index": 2,
+        "body": "- Ich gehe los, um einzukaufen. (einleitendes Wort *um*)\n- Die Absicht, zu helfen, ist lobenswert. (hängt vom Nomen *Absicht* ab)"
+      }
+    ]
+  },
+  {
+    "id": "DE_GRAM_WORD_CLASSES_012",
+    "why": "'Abfallende Steigerung' contradicts itself, the heading shouted, and the analysis was only an arrow chain.",
+    "ops": [
+      {
+        "op": "explanation",
+        "sections": [
+          {
+            "kind": "what",
+            "title": "Klimax",
+            "body": ""
+          },
+          {
+            "kind": "terms",
+            "title": "Definition",
+            "body": "Eine Klimax ist eine Steigerung: Jedes Glied ist stärker oder wichtiger als das davor."
+          },
+          {
+            "kind": "steps",
+            "title": "Den Satz prüfen",
+            "body": "Erst kommt er nur an, dann sieht er sich um, am Ende siegt er. Die Handlung wird also von Glied zu Glied wichtiger."
+          },
+          {
+            "kind": "remember",
+            "title": "Das Gegenteil: Antiklimax",
+            "body": "Bei einer Antiklimax werden die Glieder schwächer oder kleiner, zum Beispiel: *Könige, Fürsten, Bürger*."
+          },
+          {
+            "kind": "answer",
+            "title": "Antwort",
+            "body": "Klimax"
+          }
+        ]
+      }
+    ]
+  }
+]

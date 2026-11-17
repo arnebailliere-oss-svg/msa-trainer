@@ -321,12 +321,12 @@
     "topicId": "DE_PUNCT_INFINITIVE",
     "difficulty": 3,
     "qtype": "MCQ",
-    "prompt": "Warum steht hier ein Komma vor der Infinitivgruppe?\n\n„{{s_satz}}“",
+    "prompt": "Warum wird die Infinitivgruppe hier durch ein Komma abgetrennt?\n\n„{{s_satz}}“",
     "payload": {
       "choices": [
         "Einleitendes Wort (um, ohne, anstatt, statt, als)",
         "Die Infinitivgruppe hängt von einem Nomen ab",
-        "Ein hinweisendes Wort (es, das, daran …) kündigt sie an"
+        "Ein hinweisendes Wort (es, das, daran …) weist auf sie hin"
       ]
     },
     "solution": {
@@ -336,7 +336,7 @@
       {
         "kind": "what",
         "title": "Das Signal",
-        "body": "{{s_hinweis}} Das ist eines der drei Signale, bei denen vor einer Gruppe mit zu ein Komma stehen muss."
+        "body": "{{s_hinweis}} Das ist eines der drei Signale, bei denen eine Gruppe mit zu durch ein Komma abgetrennt werden muss."
       },
       {
         "kind": "remember",
@@ -362,8 +362,8 @@
               "hinweis": "„anstatt“ leitet die Infinitivgruppe ein."
             },
             {
-              "satz": "Ein eigenes Buch zu schreiben, das war sein größter Traum.",
-              "regel": "Ein hinweisendes Wort (es, das, daran …) kündigt sie an",
+              "satz": "Ein eigenes Buch zu schreiben, das wollte er schon immer.",
+              "regel": "Ein hinweisendes Wort (es, das, daran …) weist auf sie hin",
               "hinweis": "„das“ im Hauptsatz weist auf die Infinitivgruppe zurück."
             },
             {
@@ -383,7 +383,7 @@
             },
             {
               "satz": "Er liebte es, abenteuerliche Reisen zu unternehmen.",
-              "regel": "Ein hinweisendes Wort (es, das, daran …) kündigt sie an",
+              "regel": "Ein hinweisendes Wort (es, das, daran …) weist auf sie hin",
               "hinweis": "„es“ kündigt die Infinitivgruppe an."
             },
             {
@@ -393,7 +393,7 @@
             },
             {
               "satz": "Ich denke daran, dich bald zu besuchen.",
-              "regel": "Ein hinweisendes Wort (es, das, daran …) kündigt sie an",
+              "regel": "Ein hinweisendes Wort (es, das, daran …) weist auf sie hin",
               "hinweis": "„daran“ weist auf die Infinitivgruppe hin."
             },
             {
@@ -408,7 +408,7 @@
             },
             {
               "satz": "Es ist wichtig, pünktlich zu sein.",
-              "regel": "Ein hinweisendes Wort (es, das, daran …) kündigt sie an",
+              "regel": "Ein hinweisendes Wort (es, das, daran …) weist auf sie hin",
               "hinweis": "„es“ am Satzanfang kündigt die Infinitivgruppe an."
             },
             {
@@ -427,7 +427,7 @@
     "topicId": "DE_GRAM_SENTENCE_TYPES",
     "difficulty": 2,
     "qtype": "MCQ",
-    "prompt": "Ist der markierte Teil ein Hauptsatz oder ein Nebensatz?\n\n„{{s_satz}}“ — gemeint ist: **{{s_teil}}**",
+    "prompt": "Ist der markierte Teil ein Hauptsatz, ein Nebensatz oder eine Infinitivgruppe?\n\n„{{s_satz}}“ — gemeint ist: **{{s_teil}}**",
     "payload": {
       "choices": [
         "Hauptsatz",
@@ -634,7 +634,7 @@
               "b": "Der Lehrer sagte „Morgen schreiben wir einen Test.“",
               "c": "Der Lehrer sagte: „Morgen schreiben wir einen Test“.",
               "d": "Der Lehrer sagte; „Morgen schreiben wir einen Test.“",
-              "regel": "Begleitsatz vorn: **Doppelpunkt** (kein Semikolon, kein Nichts), Punkt **vor** dem schließenden Anführungszeichen."
+              "regel": "Steht der Begleitsatz vorn, folgt ein **Doppelpunkt**. Ein Semikolon ist falsch, und das Zeichen darf auch nicht fehlen. Der Punkt steht **vor** dem schließenden Anführungszeichen."
             }
           ]
         }

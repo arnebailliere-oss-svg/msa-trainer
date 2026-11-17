@@ -270,7 +270,7 @@
       },
       {
         "kind": "steps",
-        "body": "1. Grundfläche: $A_G = \\pi \\cdot {{r}}^2 = \\pi \\cdot {{= r*r}} \\approx {{= pi*r*r | fixed:2}}\\,\\text{cm}^2$\n2. Volumen: $V = {{= pi*r*r | fixed:2}} \\cdot {{h}} \\approx {{= pi*r*r*h | fixed:1}}\\,\\text{cm}^3$"
+        "body": "1. Grundfläche: $A_G = \\pi \\cdot {{r}}^2 = \\pi \\cdot {{= r*r}} \\approx {{= pi*r*r | fixed:2}}\\,\\text{cm}^2$\n2. Volumen: $V = \\pi \\cdot {{= r*r}} \\cdot {{h}} \\approx {{= pi*r*r*h | fixed:1}}\\,\\text{cm}^3$\n\nRechne mit dem genauen Wert weiter. Nimm nicht die gerundete Grundfläche. Runde erst am Ende."
       },
       {
         "kind": "answer",

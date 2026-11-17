@@ -307,7 +307,7 @@
     "explanation": [
       {
         "kind": "steps",
-        "body": "Winkelsumme im Viereck: 360°. Die beiden oberen Winkel sind gleich groß:\n\n$\\gamma = (360° - 56° - 56°) : 2 = 248° : 2 = 124°$\n\n(Oder: Nebenwinkel an den Parallelen: $180° - 56° = 124°$.)"
+        "body": "Winkelsumme im Viereck: 360°. Die beiden oberen Winkel sind gleich groß:\n\n$\\gamma = (360° - 56° - 56°) : 2 = 248° : 2 = 124°$\n\n(Oder: Die beiden Winkel an einem Schenkel ergeben zusammen 180°, weil die Grundseiten parallel sind: $180° - 56° = 124°$.)"
       },
       {
         "kind": "answer",
@@ -714,16 +714,16 @@
       "tolerance": 0.3
     },
     "solution": {
-      "value": 24.5
+      "value": 24.6
     },
     "explanation": [
       {
         "kind": "steps",
-        "body": "1. Ein Deckel hat den Durchmesser 8 cm. Auf 100 cm passen $100 : 8 = 12{,}5$, also **12** ganze Deckel.\n2. Fläche eines Deckels: $\\pi \\cdot 4^2 \\approx 50{,}3\\,\\text{cm}^2$. Für 12 Deckel sind das etwa $603{,}2\\,\\text{cm}^2$.\n3. Fläche des Streifens: $8 \\cdot 100 = 800\\,\\text{cm}^2$\n4. Verlust: $\\frac{800 - 603{,}2}{800} \\approx 24{,}6\\,\\%$. Das ist weniger als 25 %, die Vorgabe ist erfüllt."
+        "body": "1. Ein Deckel hat den Durchmesser 8 cm. Auf 100 cm passen $100 : 8 = 12{,}5$, also **12** ganze Deckel.\n2. Fläche eines Deckels: $\\pi \\cdot 4^2 \\approx 50{,}3\\,\\text{cm}^2$. Für 12 Deckel sind das etwa $603{,}2\\,\\text{cm}^2$.\n3. Fläche des Streifens: $8 \\cdot 100 = 800\\,\\text{cm}^2$\n4. Verlust: $\\frac{800 - 603{,}2}{800} \\approx 24{,}6\\,\\%$"
       },
       {
         "kind": "answer",
-        "body": "≈ 24,6 %. Das ist weniger als 25 %, die Vorgabe ist erfüllt."
+        "body": "≈ 24,6 %"
       }
     ],
     "tags": [
