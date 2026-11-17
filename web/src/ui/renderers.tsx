@@ -1,7 +1,7 @@
 /** Question renderers: MCQ, SHORT, CLOZE, MATCH, WRITE. Controlled by SessionView. */
 
 import { useEffect, useMemo, useRef, useState } from "react";
-import { countWords } from "@/core/evaluators";
+import { clozeMatches, countWords } from "@/core/evaluators";
 import type { ClozePayload, MatchPayload, McqPayload, RenderedQuestion, ShortPayload, WritePayload } from "@/core/types";
 import { rngFromBytes } from "@/core/rng";
 import { sha256 } from "@/core/sha256";
@@ -241,7 +241,10 @@ function ShortRenderer({ question, answer, onChange, onSubmit, locked, feedback 
           value={typeof answer === "string" ? answer : ""}
           onChange={(e) => onChange(e.target.value)}
           onKeyDown={(e) => {
-            if (e.key === "Enter") onSubmit();
+            if (e.key !== "Enter") return;
+            // Marks the key press as used, so the session does not also read it as "Weiter".
+            e.preventDefault();
+            onSubmit();
           }}
           disabled={locked}
           inputMode={kind === "number" || kind === "fraction" ? "decimal" : "text"}
@@ -282,7 +285,7 @@ function ClozeRenderer({ question, answer, onChange, locked, feedback }: Rendere
         const key = blank ? String(blank.id) : "";
         const got = value[key] ?? "";
         let cls = "border-line";
-        if (feedback && blank) cls = got.trim().toLowerCase() === (correct[key] ?? "").trim().toLowerCase() ? "border-green bg-green-soft" : "border-red bg-red-soft";
+        if (feedback && blank) cls = clozeMatches(!!blank.choices?.length, got, correct[key] ?? "") ? "border-green bg-green-soft" : "border-red bg-red-soft";
         return (
           <span key={i}>
             <MathText text={part} inline />

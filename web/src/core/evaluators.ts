@@ -3,12 +3,14 @@
 import type { ClozePayload, MatchPayload, RenderedQuestion, ShortPayload, Solution, WriteCheck, WritePayload } from "./types";
 import {
   applyNormalizations,
+  cleanAnswer,
   fractionValue,
   isReduced,
   normalizeNumber,
   normalizeTerm,
   numbersEqual,
   parseFraction,
+  readAnswerNumber,
   reduceFraction,
   termsEquivalent,
 } from "./normalizers";
@@ -73,7 +75,7 @@ export function evaluateShort(question: RenderedQuestion, userAnswer: unknown): 
 
   if (answerType === "number") {
     const correctNum = typeof correct === "number" ? correct : (normalizeNumber(String(correct)) ?? NaN);
-    const userNum = normalizeNumber(userStr);
+    const userNum = readAnswerNumber(userStr);
     const text = formatNumber(correctNum) + unit;
     if (userNum === null) {
       return {
@@ -98,7 +100,7 @@ export function evaluateShort(question: RenderedQuestion, userAnswer: unknown): 
 
   if (answerType === "fraction") {
     const correctFrac = parseFraction(String(correct));
-    const userFrac = parseFraction(userStr);
+    const userFrac = parseFraction(cleanAnswer(userStr));
     const correctText = correctFrac ? fractionText(reduceFraction(correctFrac)) : String(correct);
     if (!correctFrac) {
       return { isCorrect: false, correctAnswer: correct, correctAnswerText: correctText, normalizedAnswer: userStr };
@@ -165,6 +167,29 @@ export function evaluateShort(question: RenderedQuestion, userAnswer: unknown): 
   };
 }
 
+/**
+ * Why an answer cannot be checked at all. Such an answer is sent back to the learner with this sentence
+ * and is not counted as wrong. Null when the answer can be checked.
+ */
+export function answerProblem(question: RenderedQuestion, userAnswer: unknown): string | null {
+  if (question.qtype !== "SHORT") return null;
+  const payload = question.payload as ShortPayload;
+  const s = userAnswer == null ? "" : String(userAnswer);
+  if (payload.answer_type === "number" && readAnswerNumber(s) === null) return "Das kann ich nicht als Zahl lesen. Schreib nur die Zahl, zum Beispiel 3,5.";
+  if (payload.answer_type === "fraction" && parseFraction(cleanAnswer(s)) === null) return "Das kann ich nicht als Bruch lesen. Schreib ihn so: 3/4.";
+  return null;
+}
+
+/**
+ * One gap: a chosen entry must be exactly the right one (in "Laufen / laufen" the capital letter is the
+ * point). A typed entry may differ in capitals, apostrophe style and extra spaces.
+ */
+export function clozeMatches(chosen: boolean, got: string, expected: string): boolean {
+  if (chosen) return got.trim() === expected.trim();
+  const flat = (x: string) => x.trim().toLowerCase().replace(/[’‘´`]/g, "'").replace(/\s+/g, " ");
+  return flat(got) === flat(expected);
+}
+
 /** CLOZE: userAnswer is a map blankId → chosen/typed string. */
 export function evaluateCloze(question: RenderedQuestion, userAnswer: unknown): Evaluation {
   const answers = "answers" in question.solution ? question.solution.answers : {};
@@ -177,7 +202,7 @@ export function evaluateCloze(question: RenderedQuestion, userAnswer: unknown): 
     const expected = (answers[key] ?? "").trim();
     const got = (user[key] ?? "").trim();
     parts.push(expected);
-    if (got.toLowerCase() !== expected.toLowerCase()) all = false;
+    if (!clozeMatches(!!blank.choices?.length, got, expected)) all = false;
   }
   return {
     isCorrect: all,

@@ -32,6 +32,30 @@ export function normalizeNumber(value: string): number | null {
   return Number.isFinite(n) ? n : null;
 }
 
+/**
+ * An answer as learners write it, reduced to its number part: "x = 12 cm" → "12", "≈ 3,5 %" → "3,5",
+ * "ca. 20 Euro" → "20", "5 cm²" → "5", "90 km/h" → "90". The unit is shown next to the field, so typing it
+ * again must not make a right answer wrong.
+ */
+export function cleanAnswer(value: string): string {
+  return value
+    .trim()
+    .replace(/[−–]/g, "-")
+    .replace(/^(?:[a-zA-Zα-ω]\s*(?:_?\d)?\s*)?[=≈]\s*/u, "")
+    .replace(/^(?:ca\.?|etwa|ungefähr|rund)\s+/i, "")
+    .replace(/\s*(?:€|%|°\s?C?|[A-Za-zÄÖÜäöüµ]+(?:\/[A-Za-z]+)?\s?(?:\^?[23]|[²³])?\.?)$/u, "")
+    .trim();
+}
+
+/** The number a learner typed, also when written with a unit or as a fraction ("1/2"). Null when none can be read. */
+export function readAnswerNumber(value: string): number | null {
+  const s = cleanAnswer(value);
+  const n = normalizeNumber(s);
+  if (n !== null) return n;
+  const f = s.includes("/") ? parseFraction(s) : null;
+  return f ? f.num / f.den : null;
+}
+
 export function numbersEqual(a: number, b: number, tolerance = 0): boolean {
   return Math.abs(a - b) <= tolerance + 1e-9;
 }

@@ -7,6 +7,7 @@ import { buildDailyPlan } from "@/core/plan";
 import { readiness } from "@/core/readiness";
 import { SessionController } from "@/core/session";
 import type { AttemptResult, RenderedQuestion, Subject, TrainingMode, WriteCheck } from "@/core/types";
+import { answerProblem } from "@/core/evaluators";
 import { Calculator } from "@/ui/Calculator";
 import { ExplanationBlocks } from "@/ui/Explanation";
 import { FormulaSheetDrawer } from "@/ui/FormulaSheet";
@@ -64,6 +65,7 @@ export function SessionView() {
   const [question, setQuestion] = useState<RenderedQuestion | null>(null);
   const [answer, setAnswer] = useState<unknown>(null);
   const [result, setResult] = useState<AttemptResult | null>(null);
+  const [notice, setNotice] = useState<string | null>(null);
   const [showCalc, setShowCalc] = useState(false);
   const [showFormulas, setShowFormulas] = useState(false);
   const [empty, setEmpty] = useState(false);
@@ -102,6 +104,10 @@ export function SessionView() {
   const submit = useCallback(() => {
     const c = ctrl.current;
     if (!c || !question || result || !isAnswerReady(question, answer)) return;
+    // An answer the app cannot read goes back to the learner. It is not a wrong answer.
+    const problem = answerProblem(question, answer);
+    setNotice(problem);
+    if (problem) return;
     const r = c.submit(answer);
     setResult(r);
     notifyProgress();
@@ -118,12 +124,14 @@ export function SessionView() {
     setQuestion(q);
     setAnswer(null);
     setResult(null);
+    setNotice(null);
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, [finish]);
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
-      if (e.key !== "Enter") return;
+      // A key press that an answer field has already used to submit must not move on as well.
+      if (e.key !== "Enter" || e.defaultPrevented) return;
       if (result) {
         e.preventDefault();
         next();
@@ -227,7 +235,22 @@ export function SessionView() {
           <MathText text={question.prompt} className="text-xl leading-relaxed sm:text-2xl" />
           {question.figure && <div className="mt-4 flex justify-center [&_svg]:max-w-full [&_svg]:h-auto" dangerouslySetInnerHTML={{ __html: question.figure }} />}
           <div className="mt-6">
-            <QuestionRenderer question={question} answer={answer} onChange={setAnswer} onSubmit={submit} locked={!!result} feedback={result ? { isCorrect: result.isCorrect, correctAnswer: result.correctAnswer } : null} />
+            <QuestionRenderer
+              question={question}
+              answer={answer}
+              onChange={(a) => {
+                setAnswer(a);
+                setNotice(null);
+              }}
+              onSubmit={submit}
+              locked={!!result}
+              feedback={result ? { isCorrect: result.isCorrect, correctAnswer: result.correctAnswer } : null}
+            />
+            {notice && !result && (
+              <p role="alert" className="mt-3 text-sm font-medium text-red">
+                {notice}
+              </p>
+            )}
           </div>
         </div>
       </div>

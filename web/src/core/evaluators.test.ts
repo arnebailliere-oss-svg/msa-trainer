@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { countWords, evaluate } from "./evaluators";
+import { answerProblem, countWords, evaluate } from "./evaluators";
 import type { RenderedQuestion } from "./types";
 
 describe("WRITE", () => {
@@ -127,7 +127,7 @@ describe("SHORT number", () => {
     expect(evaluate(q, "12.5").isCorrect).toBe(true);
     expect(evaluate(q, "12,505").isCorrect).toBe(true);
     expect(evaluate(q, "12,6").isCorrect).toBe(false);
-    expect(evaluate(q, "12,5 cm").isCorrect).toBe(false); // unit typed in: hint, not accepted
+    expect(evaluate(q, "12,5 cm").isCorrect).toBe(true); // the unit typed after the number does not make it wrong
   });
   it("without tolerance, accepts answers that round to the stored precision", () => {
     const q = rq({ payload: { answer_type: "number" }, solution: { value: 58.3 } });
@@ -210,9 +210,9 @@ describe("CLOZE", () => {
     payload: { text_with_blanks: "She ___ to school.", blanks: [{ id: 1, choices: ["goes", "go"] }] },
     solution: { answers: { "1": "goes" } },
   });
-  it("compares each blank case-insensitively", () => {
+  it("a chosen entry must be exactly the right one", () => {
     expect(evaluate(q, { "1": "goes" }).isCorrect).toBe(true);
-    expect(evaluate(q, { "1": "Goes" }).isCorrect).toBe(true);
+    expect(evaluate(q, { "1": "Goes" }).isCorrect).toBe(false);
     expect(evaluate(q, { "1": "go" }).isCorrect).toBe(false);
     expect(evaluate(q, {}).isCorrect).toBe(false);
   });
@@ -229,5 +229,57 @@ describe("MATCH", () => {
     expect(evaluate(q, [["a", "1"]]).isCorrect).toBe(false);
     expect(evaluate(q, [["a", "2"], ["b", "1"]]).isCorrect).toBe(false);
     expect(evaluate(q, "nope").isCorrect).toBe(false);
+  });
+});
+
+describe("answers as learners type them", () => {
+  const short = (payload: Record<string, unknown>, value: unknown) => ({ qtype: "SHORT", payload, solution: { value } }) as unknown as Parameters<typeof evaluate>[0];
+  it.each([
+    ["12", true],
+    ["12 cm", true],
+    ["12cm", true],
+    ["x = 12", true],
+    ["= 12", true],
+    ["≈ 12", true],
+    ["ca. 12 cm", true],
+    ["12,0", true],
+    ["12 cm²", true],
+    ["12 cm^2", true],
+    ["12 km/h", true],
+    ["12 €", true],
+    ["12 Euro", true],
+    ["12 Stück", true],
+    ["24/2", true],
+    ["13 cm", false],
+    ["120", false],
+  ])("number 12: %s", (typed, ok) => {
+    expect(evaluate(short({ answer_type: "number", unit: "cm" }, 12), typed).isCorrect).toBe(ok);
+  });
+  it("reads decimals, negative numbers and thousands with a unit", () => {
+    expect(evaluate(short({ answer_type: "number", unit: "€" }, 1234.5), "1.234,50 €").isCorrect).toBe(true);
+    expect(evaluate(short({ answer_type: "number" }, -0.5), "x = −0,5").isCorrect).toBe(true);
+    expect(evaluate(short({ answer_type: "number", unit: "%" }, 25), "25 %").isCorrect).toBe(true);
+    expect(evaluate(short({ answer_type: "number" }, 0.5), "1/2").isCorrect).toBe(true);
+  });
+  it("reads a fraction with a unit or an equals sign", () => {
+    expect(evaluate(short({ answer_type: "fraction" }, "3/4"), "= 3/4").isCorrect).toBe(true);
+    expect(evaluate(short({ answer_type: "fraction" }, "3/4"), "3/4 m").isCorrect).toBe(true);
+  });
+  it("sends unreadable input back instead of counting it as wrong", () => {
+    const q = short({ answer_type: "number" }, 12);
+    expect(answerProblem(q, "zwölf")).toMatch(/nicht als Zahl lesen/);
+    expect(answerProblem(q, "12 und 13")).toMatch(/nicht als Zahl lesen/);
+    expect(answerProblem(q, "12 cm")).toBeNull();
+    expect(answerProblem(short({ answer_type: "fraction" }, "3/4"), "drei Viertel")).toMatch(/nicht als Bruch lesen/);
+    expect(answerProblem(short({ answer_type: "term" }, "2x+6"), "irgendwas")).toBeNull();
+  });
+  it("a chosen gap must match exactly, a typed gap may differ in capitals and apostrophes", () => {
+    const cloze = (blank: Record<string, unknown>, answer: string) => ({ qtype: "CLOZE", payload: { text_with_blanks: "___", blanks: [{ id: 1, ...blank }] }, solution: { answers: { 1: answer } } }) as unknown as Parameters<typeof evaluate>[0];
+    const pick = cloze({ choices: ["Laufen", "laufen"] }, "Laufen");
+    expect(evaluate(pick, { 1: "Laufen" }).isCorrect).toBe(true);
+    expect(evaluate(pick, { 1: "laufen" }).isCorrect).toBe(false);
+    const typed = cloze({}, "didn't go");
+    expect(evaluate(typed, { 1: "Didn’t  go" }).isCorrect).toBe(true);
+    expect(evaluate(typed, { 1: "did go" }).isCorrect).toBe(false);
   });
 });
