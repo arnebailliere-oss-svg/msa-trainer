@@ -2,6 +2,8 @@
  * Safe calculator (tokenizer → recursive-descent parser → AST evaluator). No eval().
  * Supports + - * / ^ ( ) %, German decimal comma, functions (sin cos tan asin acos atan
  * sqrt log ln abs) and constants (pi, e). Trigonometry uses DEGREES, as in MSA exams.
+ * Behaves like a school calculator: -3^2 is -9, 2π and 2(3+4) multiply, a missing ")" at the
+ * end is closed, and the signs ÷ × · − √ ² ³ are understood.
  */
 
 export class CalcError extends Error {
@@ -22,7 +24,15 @@ const CONSTANTS: Record<string, number> = { pi: Math.PI, e: Math.E };
 export const ALLOWED_CHARS = new Set("0123456789.,+-*/()%^ abcdefghijklmnopqrstuvwxyzπ×:−");
 
 export function tokenize(expression: string): Token[] {
-  const expr = expression.toLowerCase().replace(/π/g, "pi").replace(/×/g, "*").replace(/:/g, "/").replace(/−/g, "-");
+  const expr = expression
+    .toLowerCase()
+    .replace(/π/g, "pi")
+    .replace(/√/g, "sqrt")
+    .replace(/²/g, "^2")
+    .replace(/³/g, "^3")
+    .replace(/[×·]/g, "*")
+    .replace(/[:÷]/g, "/")
+    .replace(/[−–]/g, "-");
   for (let i = 0; i < expr.length; i++) {
     if (!ALLOWED_CHARS.has(expr[i]!)) throw new CalcError(`Ungültiges Zeichen: "${expr[i]}"`, i);
   }
@@ -47,8 +57,8 @@ export function tokenize(expression: string): Token[] {
         } else break;
       }
       let value = expr.slice(start, pos).replace(",", ".");
+      if (value === ".") throw new CalcError("Ungültige Zahl", start);
       if (value.startsWith(".")) value = "0" + value;
-      if (value === "0." || value === ".") throw new CalcError("Ungültige Zahl", start);
       tokens.push({ type: "NUMBER", value, position: start });
       continue;
     }
@@ -80,16 +90,22 @@ export type AstNode =
 
 /**
  * expr    → term (('+'|'-') term)*
- * term    → power (('*'|'/') power)*
- * power   → factor ('^' power)?
- * factor  → ('-'|'+')? primary ('%')?
- * primary → NUMBER | CONSTANT | FUNCTION '(' expr ')' | '(' expr ')'
+ * term    → unary (('*'|'/') unary | implicit)*      implicit: "2π", "2(3+4)", "3 sin(30)"
+ * unary   → ('-'|'+') unary | power                  so -3^2 is -(3^2), as on a school calculator
+ * power   → postfix ('^' unary)?
+ * postfix → primary ('%')*
+ * primary → NUMBER | CONSTANT | FUNCTION '(' expr ')' | FUNCTION postfix | '(' expr ')'
+ * A ")" that is missing at the very end is closed silently.
  */
 export function parse(tokens: Token[]): AstNode {
   let p = 0;
   const cur = () => tokens[p] ?? { type: "EOF", value: "", position: -1 };
   const is = (...types: TokenType[]) => types.includes(cur().type);
   const advance = () => tokens[p++]!;
+  const close = () => {
+    if (is("RPAREN")) advance();
+    else if (!is("EOF")) throw new CalcError('Hier fehlt eine Klammer ")"', cur().position);
+  };
 
   function expr(): AstNode {
     let left = term();
@@ -100,32 +116,40 @@ export function parse(tokens: Token[]): AstNode {
     return left;
   }
   function term(): AstNode {
-    let left = power();
-    while (is("STAR", "SLASH")) {
-      const op = advance().type === "STAR" ? "*" : "/";
-      left = { kind: "bin", op, left, right: power() };
+    let left = unary();
+    for (;;) {
+      if (is("STAR", "SLASH")) {
+        const op = advance().type === "STAR" ? "*" : "/";
+        left = { kind: "bin", op, left, right: unary() };
+      } else if (is("CONSTANT", "FUNCTION", "LPAREN")) {
+        left = { kind: "bin", op: "*", left, right: power() };
+      } else if (is("NUMBER")) {
+        throw new CalcError("Zwischen zwei Zahlen fehlt ein Rechenzeichen", cur().position);
+      } else return left;
     }
-    return left;
   }
-  function power(): AstNode {
-    const base = factor();
-    if (is("CARET")) {
-      advance();
-      return { kind: "bin", op: "^", left: base, right: power() };
-    }
-    return base;
-  }
-  function factor(): AstNode {
+  function unary(): AstNode {
     if (is("MINUS")) {
       advance();
-      return { kind: "neg", operand: factor() };
+      return { kind: "neg", operand: unary() };
     }
     if (is("PLUS")) {
       advance();
-      return factor();
+      return unary();
     }
+    return power();
+  }
+  function power(): AstNode {
+    const base = postfix();
+    if (is("CARET")) {
+      advance();
+      return { kind: "bin", op: "^", left: base, right: unary() };
+    }
+    return base;
+  }
+  function postfix(): AstNode {
     let node = primary();
-    if (is("PERCENT")) {
+    while (is("PERCENT")) {
       advance();
       node = { kind: "pct", operand: node };
     }
@@ -143,35 +167,35 @@ export function parse(tokens: Token[]): AstNode {
     }
     if (t.type === "FUNCTION") {
       advance();
-      if (!is("LPAREN")) throw new CalcError(`Erwarte "(" nach ${t.value}`, cur().position);
+      if (!is("LPAREN")) return { kind: "fn", name: t.value, arg: postfix() }; // "√16", "sin 30"
       advance();
       const arg = expr();
-      if (!is("RPAREN")) throw new CalcError('Erwarte ")"', cur().position);
-      advance();
+      close();
       return { kind: "fn", name: t.value, arg };
     }
     if (t.type === "LPAREN") {
       advance();
       const inner = expr();
-      if (!is("RPAREN")) throw new CalcError('Erwarte ")"', cur().position);
-      advance();
+      close();
       return inner;
     }
-    if (t.type === "EOF") throw new CalcError("Ausdruck unvollständig", t.position);
-    throw new CalcError(`Unerwartetes Zeichen: "${t.value}"`, t.position);
+    if (t.type === "EOF") throw new CalcError("Die Rechnung ist noch nicht fertig", t.position);
+    throw new CalcError(`Unerwartetes Zeichen: "${t.value.replace(".", ",")}"`, t.position);
   }
 
   if (cur().type === "EOF") throw new CalcError("Leerer Ausdruck", 0);
   const result = expr();
-  if (cur().type !== "EOF") throw new CalcError(`Unerwartetes Zeichen: "${cur().value}"`, cur().position);
+  if (cur().type !== "EOF") throw new CalcError(`Unerwartetes Zeichen: "${cur().value.replace(".", ",")}"`, cur().position);
   return result;
 }
 
 const deg = Math.PI / 180;
+/** sin(180) and cos(90) are exactly 0, not 1.2e-16; so 1 / sin(180) is an error, not a huge number. */
+const clean = (v: number) => (Math.abs(v) < 1e-14 ? 0 : v);
 const FN: Record<string, (x: number) => number> = {
-  sin: (x) => Math.sin(x * deg),
-  cos: (x) => Math.cos(x * deg),
-  tan: (x) => Math.tan(x * deg),
+  sin: (x) => clean(Math.sin(x * deg)),
+  cos: (x) => clean(Math.cos(x * deg)),
+  tan: (x) => (clean(Math.cos(x * deg)) === 0 ? NaN : clean(Math.sin(x * deg)) / Math.cos(x * deg)),
   asin: (x) => Math.asin(x) / deg,
   acos: (x) => Math.acos(x) / deg,
   atan: (x) => Math.atan(x) / deg,
@@ -193,7 +217,7 @@ export function evaluateAst(node: AstNode): number {
       return evaluateAst(node.operand) / 100;
     case "fn": {
       const v = FN[node.name]!(evaluateAst(node.arg));
-      if (!Number.isFinite(v)) throw new CalcError(`Mathematischer Fehler in ${node.name}`);
+      if (!Number.isFinite(v)) throw new CalcError(node.name === "sqrt" ? "Aus einer negativen Zahl gibt es keine Wurzel" : `Das geht nicht mit ${node.name}`);
       return v;
     }
     case "bin": {
@@ -207,11 +231,11 @@ export function evaluateAst(node: AstNode): number {
         case "*":
           return l * r;
         case "/":
-          if (r === 0) throw new CalcError("Division durch Null");
+          if (r === 0) throw new CalcError("Division durch Null geht nicht");
           return l / r;
         case "^": {
           const v = Math.pow(l, r);
-          if (!Number.isFinite(v)) throw new CalcError("Potenzfehler");
+          if (!Number.isFinite(v)) throw new CalcError("Diese Potenz lässt sich nicht berechnen");
           return v;
         }
       }
