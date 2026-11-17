@@ -171,6 +171,52 @@ export function checkPrimerStandard(p: Primer, terms: string[], primerById: Map<
 /** Table rows in a rich-text body: lines that start with "|". */
 const isTableLine = (l: string) => /^\s*\|/.test(l);
 
+/**
+ * The letters a formula uses: "a", "A_G", "h_s", "K_0", "π", "α". Units and words in \text{} do not count,
+ * and neither do x, y and f, which the lessons introduce as "the unknown" and "the function".
+ */
+const GREEK: Record<string, string> = { alpha: "α", beta: "β", gamma: "γ", pi: "π", rho: "ρ", Omega: "Ω" };
+export function symbolsIn(math: string): string[] {
+  const out = new Set<string>();
+  let m = math.replace(/\\(text|mathbb|mathrm|operatorname)\{[^}]*\}/g, " ");
+  m = m.replace(/\\(alpha|beta|gamma|pi|rho|Omega)(?![a-zA-Z])/g, (_, g: string) => {
+    out.add(GREEK[g]!);
+    return " ";
+  });
+  m = m.replace(/\\[a-zA-Z]+/g, " ");
+  for (const t of m.matchAll(/([A-Za-z])(?:_(\{[^}]*\}|[A-Za-z0-9]))?/g)) {
+    if ("xyf".includes(t[1]!)) continue;
+    out.add(t[1]! + (t[2] ? "_" + t[2].replace(/[{}\s]/g, "") : ""));
+  }
+  return [...out];
+}
+const mathIn = (text: string) => [...text.matchAll(/\$\$?([^$]+)\$\$?/g)].map((x) => x[1]!);
+/** A math piece that is just one letter (with index, or as "p %"), as it stands in a legend. */
+const ONE = /^[\s\\,%]*(\\[a-zA-Z]+|[A-Za-z])(_(\{[^}]*\}|[A-Za-z0-9]))?[\s\\,%]*$/;
+/** Also a plain row of letters: "A, B, C". An index like x_{1,2} keeps its comma. */
+const bare = (math: string) => (ONE.test(math) || math.split(/,(?![^{]*\})/).every((p) => ONE.test(p)) ? symbolsIn(math) : []);
+const LETTERS = String.raw`((?:\$[^$]+\$(?:,\s*|\s+und\s+)?)+)`;
+
+/**
+ * Letters that a text explains. Counted are only the plain forms a learner can find again:
+ * a legend row "| $a$, $b$ | die Seiten |", a list line "- $a$: die Seite", a named term "**Radius** $r$",
+ * or a sentence "$a$ und $b$ sind die Katheten" / "$m$ = **Steigung**".
+ */
+export function symbolsExplained(body: string): Set<string> {
+  const got = new Set<string>();
+  const add = (math: string[]) => math.flatMap(bare).forEach((x) => got.add(x));
+  for (const line of body.split("\n")) {
+    const cells = line.split("|").map((c) => c.trim());
+    if (isTableLine(line) && cells.length >= 4 && words(cells[2]!) >= 2 && cells[1]!.replace(/\$[^$]+\$/g, "").replace(/und|,|\s/g, "") === "") add(mathIn(cells[1]!));
+    const item = line.match(new RegExp(String.raw`^\s*-\s+` + LETTERS + String.raw`\s*(?::|=|ist|sind|heißt)\s+\S+`));
+    if (item) add(mathIn(item[1]!));
+    for (const x of line.matchAll(new RegExp(String.raw`\*\*[^*$]+\*\*:?\s*(?:heißen|heißt)?\s*\(?` + LETTERS, "g"))) add(mathIn(x[1]!));
+    for (const x of line.matchAll(/\*\*[^*$]+\$([^$]+)\$\*\*/g)) add([x[1]!]);
+    for (const x of line.matchAll(new RegExp(LETTERS + String.raw`\s+(?:ist|sind|heißt|steht für|bedeutet|=\s*\*\*)`, "g"))) add(mathIn(x[1]!));
+  }
+  return got;
+}
+
 export function checkSheetStandard(l: Lesson, primerById: Map<string, Primer>): string[] {
   const v: string[] = [];
   if (!l.guided?.length) v.push("a Spickzettel needs `guided`: the lessons that teach the topic");
@@ -190,6 +236,13 @@ export function checkSheetStandard(l: Lesson, primerById: Map<string, Primer>): 
     if (n > LIMITS.sheetSectionWords) v.push(`${w}: ${n} words outside tables (limit ${LIMITS.sheetSectionWords})`);
     if (rows > LIMITS.sheetTableRows + 1) v.push(`${w}: table with ${rows - 1} rows (limit ${LIMITS.sheetTableRows})`);
     for (const c of arrowChains(s.body)) v.push(`${w}: arrow chain "${c.trim().slice(0, 60)}"`);
+    // Every letter in a formula is explained where the learner meets it: a formula section explains its own
+    // letters, every other section may rely on the sections above it.
+    const own = symbolsExplained(s.body);
+    const known = s.kind === "formula" ? own : new Set([...own, ...l.sections.slice(0, i).flatMap((e) => [...symbolsExplained(e.body)])]);
+    const shown = [s.body, ...(s.figures ?? []).map((g) => g.caption ?? "")].join("\n");
+    const missing = [...new Set(mathIn(shown).flatMap(symbolsIn))].filter((x) => !known.has(x));
+    if (missing.length > 0) v.push(`${w}: letters without an explanation: ${missing.join(", ")}`);
     if (s.kind === "remember") {
       // "Merke" is an overview, not a paragraph: a short list or a table, one rule per line.
       const filled = lines.filter((x) => x.trim());

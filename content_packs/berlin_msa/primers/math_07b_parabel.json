@@ -240,7 +240,7 @@
             ],
             "correct": "$-5$",
             "why": "Die Hälfte von 10 ist 5, und davor steht ein Minus.",
-            "hint": "Halbiere die 10. Welches Zeichen steht in der Formel davor?"
+            "hint": "Die Hälfte von 10 stimmt bei beiden. Schau auf das Vorzeichen: Was steht in der Formel ganz vorn?"
           }
         ]
       },

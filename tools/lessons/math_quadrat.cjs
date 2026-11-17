@@ -40,7 +40,7 @@ migrate("primers/math_07b_parabel.json", (p, h) => {
   );
   h.body("Die pq-Formel", "$x_{1,2} = -\\frac{p}{2} \\pm \\sqrt{\\left(\\frac{p}{2}\\right)^2 - q}$", "Vorn steht die Hälfte von $p$ mit einem Minus davor.", "Unter der Wurzel steht: die Hälfte von $p$ zum Quadrat, minus $q$.");
   h.say("Die pq-Formel", "Die Formel sieht wild aus, aber sie besteht nur aus zwei Teilen. Vorn steht die Hälfte von p mit einem Minus. Dahinter kommt plus-minus eine Wurzel. Du musst die Formel nicht auswendig können, denn sie steht auf dem Formelblatt. Wie man sie benutzt, zeigt die nächste Tafel.");
-  h.tasks("Die pq-Formel", k("$p = 10$. Die Formel beginnt mit $-\\frac{p}{2} = $ ___", "$-5$", ["$5$"], "Die Hälfte von 10 ist 5, und davor steht ein Minus.", "Halbiere die 10. Welches Zeichen steht in der Formel davor?"));
+  h.tasks("Die pq-Formel", k("$p = 10$. Die Formel beginnt mit $-\\frac{p}{2} = $ ___", "$-5$", ["$5$"], "Die Hälfte von 10 ist 5, und davor steht ein Minus.", "Die Hälfte von 10 stimmt bei beiden. Schau auf das Vorzeichen: Was steht in der Formel ganz vorn?"));
   h.after(
     "Die pq-Formel",
     b("Die pq-Formel Schritt für Schritt", ["$x^2 + 6x + 5 = 0$", "Ablesen: $p = 6$ und $q = 5$", "Hälfte von $p$: 3", "Unter der Wurzel: $3^2 - 5 = 4$", "$x_{1,2} = -3 \\pm \\sqrt{4} = -3 \\pm 2$", "$x_1 = -1$ und $x_2 = -5$"], "Geh immer in dieser Reihenfolge vor. Zuerst liest du p und q ab. Dann halbierst du p. Danach rechnest du aus, was unter der Wurzel steht. Erst zum Schluss rechnest du einmal mit Plus und einmal mit Minus.", {

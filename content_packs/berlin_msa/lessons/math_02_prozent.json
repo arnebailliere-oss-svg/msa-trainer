@@ -25,7 +25,7 @@
       {
         "kind": "formula",
         "title": "Die Grundformel — und ihre drei Gesichter",
-        "body": "$$\\frac{W}{G} = \\frac{p}{100}$$\n\n**Prozentwert gesucht:** $W = G \\cdot \\frac{p}{100}$\n\n**Prozentsatz gesucht:** $p = \\frac{W}{G} \\cdot 100$\n\n**Grundwert gesucht:** $G = \\frac{W}{p} \\cdot 100 = W : \\frac{p}{100}$",
+        "body": "$$\\frac{W}{G} = \\frac{p}{100}$$\n\n**Prozentwert gesucht:** $W = G \\cdot \\frac{p}{100}$\n\n**Prozentsatz gesucht:** $p = \\frac{W}{G} \\cdot 100$\n\n**Grundwert gesucht:** $G = \\frac{W}{p} \\cdot 100 = W : \\frac{p}{100}$\n\n| Zeichen | Bedeutung |\n|---|---|\n| $G$ | der Grundwert: das Ganze, also 100 % |\n| $W$ | der Prozentwert: der Teil, um den es geht |\n| $p$ | der Prozentsatz: die Zahl vor dem Prozentzeichen |",
         "primer": "P_MATH_PROZENT"
       },
       {
@@ -36,7 +36,7 @@
       {
         "kind": "steps",
         "title": "Prozentuale Änderung (Rabatt, Erhöhung, Zinsen)",
-        "body": "Ein Anfangswert (100 %) wird um $p\\,\\%$ **erhöht** oder **vermindert**:\n\n$$\\text{Endwert} = \\text{Anfangswert} \\cdot \\left(1 \\pm \\frac{p}{100}\\right)$$\n\n- Pizza 9 € mit 15 % Rabatt: $9 \\cdot (1 - 0{,}15) = 9 \\cdot 0{,}85 = 7{,}65$ €\n- 107 700 Autos, 21 % mehr: $107\\,700 \\cdot 1{,}21 = 130\\,317$\n\n**Zinseszins** — jedes Jahr wird der Faktor erneut angewendet:\n\n$$K_n = K_0 \\cdot \\left(1 + \\frac{p}{100}\\right)^n$$\n\n1000 € zu 5 % für 3 Jahre: $1000 \\cdot 1{,}05^3 \\approx 1157{,}63$ €"
+        "body": "Ein Anfangswert (100 %) wird um $p\\,\\%$ **erhöht** oder **vermindert**:\n\n$$\\text{Endwert} = \\text{Anfangswert} \\cdot \\left(1 \\pm \\frac{p}{100}\\right)$$\n\n- Pizza 9 € mit 15 % Rabatt: $9 \\cdot (1 - 0{,}15) = 9 \\cdot 0{,}85 = 7{,}65$ €\n- 107 700 Autos, 21 % mehr: $107\\,700 \\cdot 1{,}21 = 130\\,317$\n\n**Zinseszins** — jedes Jahr wird der Faktor erneut angewendet:\n\n$K_n = K_0 \\cdot \\left(1 + \\frac{p}{100}\\right)^n$\n\n- $K_0$: das Kapital am Anfang, also das Geld im Jahr 0\n- $K_n$: das Kapital nach $n$ Jahren\n- $n$: die Anzahl der Jahre\n\n1000 € zu 5 % für 3 Jahre: $1000 \\cdot 1{,}05^3 \\approx 1157{,}63$ €"
       },
       {
         "kind": "mistake",

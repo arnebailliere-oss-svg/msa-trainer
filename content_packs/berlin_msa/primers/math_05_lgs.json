@@ -33,7 +33,7 @@
       },
       {
         "title": "Die Lösung ist ein Paar",
-        "body": "$x = 6$ und $y = 4$\n\nProbe: $6 + 4 = 10$ ✓ und $6 - 4 = 2$ ✓\n\nDie zwei Zahlen zusammen heißen **Lösungspaar**.\n\nMan schreibt: $L = \\{(6\\,|\\,4)\\}$",
+        "body": "$x = 6$ und $y = 4$\n\nProbe: $6 + 4 = 10$ ✓ und $6 - 4 = 2$ ✓\n\nDie zwei Zahlen zusammen heißen **Lösungspaar**.\n\nMan schreibt: $L = \\{(6\\,|\\,4)\\}$\n\nDer Buchstabe $L$ steht für Lösung.",
         "say": "Die Lösung besteht hier aus zwei Zahlen, die in beiden Zeilen gleichzeitig passen. In der Klammer steht immer zuerst das x und danach das y. Die Probe machst du deshalb zweimal, einmal für jede Zeile.",
         "tasks": [
           {

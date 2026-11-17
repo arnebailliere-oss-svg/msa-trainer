@@ -29,6 +29,7 @@ migrate("primers/math_00_zeichen.json", (p, h) => {
   );
 
   // --- chapter 3: comparing, brackets, order of operations ---
+  h.body("Gleich, ungefähr, ungleich", "$=$ **genau gleich**: $3 + 4 = 7$", "$\\approx$ **ungefähr**, nach dem Runden: $10 : 3 \\approx 3{,}33$", "$\\neq$ **nicht gleich**: $3 \\neq 4$");
   h.tasks("Gleich, ungefähr, ungleich", k("Du hast ein Ergebnis gerundet. Du schreibst davor ___.", "$\\approx$", ["$=$"], "Das Wellenzeichen sagt ehrlich: Das ist nur ungefähr so viel.", "Ist ein gerundetes Ergebnis genau oder nur ungefähr richtig?"));
   h.tasks("Kleiner und größer", k("$9$ ___ $4$", "$>$", ["$<$"], "9 ist größer als 4. Die Spitze zeigt zur kleineren Zahl.", "Auf welche der beiden Zahlen muss die Spitze zeigen?"));
   h.tasks("Klammern zuerst", k("$3 \\cdot (2 + 4) = $ ___", "18", ["10"], "Zuerst die Klammer: 2 plus 4 ist 6. Dann 3 mal 6.", "Was steht in der Klammer? Das rechnest du zuerst aus."));

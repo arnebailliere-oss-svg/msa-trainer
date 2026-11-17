@@ -8,10 +8,10 @@ migrate("primers/math_09_geometrie.json", (p, h) => {
   p.outro = "Der Umfang ist der Zaun, die Fläche ist das Gras, und ein Winkel ist eine Drehung. Im Dreieck liegt die Seite a gegenüber von der Ecke A. Damit kannst du jede Figur in der Lektion lesen.";
 
   // --- chapter 1 ---
-  h.body("Umfang: einmal außen rum", "Rechteck 5 cm mal 3 cm.", "Der **Umfang** ist der Weg einmal außen herum.", "$U = 5 + 3 + 5 + 3 = 16$ cm", "Der **Zaun** um die Wiese.");
+  h.body("Umfang: einmal außen rum", "Rechteck 5 cm mal 3 cm.", "Der **Umfang** ist der Weg einmal außen herum.", "$U = 5 + 3 + 5 + 3 = 16$ cm", "Der Buchstabe $U$ steht für den Umfang.", "Der **Zaun** um die Wiese.");
   h.say("Umfang: einmal außen rum", "Stell dir vor, du läufst einmal außen um die Wiese herum. Die Strecke, die du dabei gehst, ist der Umfang. Du zählst dafür alle vier Seiten zusammen. Weil es eine Länge ist, steht dahinter Zentimeter.");
   h.tasks("Umfang: einmal außen rum", k("Rechteck 4 cm mal 1 cm. Der Umfang ist ___.", "10 cm", ["5 cm"], "Alle vier Seiten zusammen: 4 plus 1 plus 4 plus 1.", "Wie viele Seiten hat ein Rechteck? Zähl alle zusammen."));
-  h.body("Fläche: was drin ist", "$A = 5 \\cdot 3 = 15\\ \\text{cm}^2$", "Das **Gras** auf der Wiese.", "Die Größe der Fläche heißt **Flächeninhalt**.", "Gemessen in **Quadrat**-Zentimetern.");
+  h.body("Fläche: was drin ist", "$A = 5 \\cdot 3 = 15\\ \\text{cm}^2$", "Der Buchstabe $A$ steht für die Fläche.", "Das **Gras** auf der Wiese.", "Die Größe der Fläche heißt **Flächeninhalt**.", "Gemessen in **Quadrat**-Zentimetern.");
   h.say("Fläche: was drin ist", "Die Fläche ist das, was innerhalb des Randes liegt. Beim Rechteck rechnest du Länge mal Breite. Weil du dabei Zentimeter mal Zentimeter rechnest, bekommt die Einheit eine kleine 2. Man liest das Quadratzentimeter.");
   h.tasks("Fläche: was drin ist", k("Rechteck 4 cm mal 2 cm. Die Fläche ist ___.", "$8\\ \\text{cm}^2$", ["$12\\ \\text{cm}^2$"], "Länge mal Breite: 4 mal 2 ergibt 8.", "Rechnest du bei der Fläche plus oder mal?"));
   h.say("Die kleine 2", "Die 15 Quadratzentimeter kannst du dir als 15 kleine Kästchen vorstellen, jedes einen Zentimeter lang und breit. Die kleine 2 ist ein gutes Erkennungszeichen. Siehst du sie in der Prüfung, geht es um eine Fläche. Steht nur Zentimeter da, geht es um eine Länge oder einen Umfang.");

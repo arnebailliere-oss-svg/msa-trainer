@@ -35,7 +35,7 @@
       {
         "kind": "formula",
         "title": "Die Rechenregeln",
-        "body": "**Addition** (gleicher Nenner): $\\frac{a}{c} + \\frac{b}{c} = \\frac{a + b}{c}$\n\n**Subtraktion** (gleicher Nenner): $\\frac{a}{c} - \\frac{b}{c} = \\frac{a - b}{c}$\n\n**Multiplikation**: $\\frac{a}{b} \\cdot \\frac{c}{d} = \\frac{a \\cdot c}{b \\cdot d}$ — Zähler mal Zähler, Nenner mal Nenner\n\n**Division**: $\\frac{a}{b} : \\frac{c}{d} = \\frac{a}{b} \\cdot \\frac{d}{c}$ — mit dem **Kehrwert** multiplizieren",
+        "body": "Die Buchstaben stehen hier, damit die Regel für alle Brüche gilt.\n\n- $a$, $b$, $c$ und $d$: Platzhalter für beliebige Zahlen. Unten darf keine 0 stehen.\n\n**Addition** (gleicher Nenner): $\\frac{a}{c} + \\frac{b}{c} = \\frac{a + b}{c}$\n\n**Subtraktion** (gleicher Nenner): $\\frac{a}{c} - \\frac{b}{c} = \\frac{a - b}{c}$\n\n**Multiplikation**: $\\frac{a}{b} \\cdot \\frac{c}{d} = \\frac{a \\cdot c}{b \\cdot d}$ — Zähler mal Zähler, Nenner mal Nenner\n\n**Division**: $\\frac{a}{b} : \\frac{c}{d} = \\frac{a}{b} \\cdot \\frac{d}{c}$ — mit dem **Kehrwert** multiplizieren",
         "primer": "P_MATH_BRUCH"
       },
       {

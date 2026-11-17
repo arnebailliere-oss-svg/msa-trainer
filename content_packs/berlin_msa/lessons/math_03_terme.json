@@ -17,7 +17,7 @@
       {
         "kind": "what",
         "title": "Term, Gleichung, Lösungsmenge",
-        "body": "Ein **Term** ist ein sinnvoller Rechenausdruck aus Zahlen, Variablen und Rechenzeichen: $4a + 3$, $2x^2 - 5$.\n\nEine **Gleichung** verbindet zwei Terme mit einem Gleichheitszeichen: $x + 5 = 7$.\n\nDie **Lösungsmenge** $L$ enthält alle Werte für $x$, die die Gleichung wahr machen: $x^2 = 4 \\Rightarrow L = \\{2; -2\\}$."
+        "body": "Ein **Term** ist ein sinnvoller Rechenausdruck aus Zahlen, Variablen und Rechenzeichen: $4a + 3$, $2x^2 - 5$.\n\nEine **Gleichung** verbindet zwei Terme mit einem Gleichheitszeichen: $x + 5 = 7$.\n\nDie **Lösungsmenge** $L$ enthält alle Werte für $x$, die die Gleichung wahr machen: $x^2 = 4 \\Rightarrow L = \\{2; -2\\}$.\n\nEin Buchstabe wie $a$ steht für eine Zahl, die noch offen ist. Solche Buchstaben heißen **Variablen**."
       },
       {
         "kind": "formula",
@@ -29,7 +29,7 @@
         "kind": "terms",
         "title": "Die Rechengesetze",
         "primer": "P_MATH_TERME",
-        "body": "- **Kommutativgesetz** — Vertauschen: $a + b = b + a$, $a \\cdot b = b \\cdot a$\n- **Assoziativgesetz** — Klammern versetzen: $(a + b) + c = a + (b + c)$\n- **Distributivgesetz** — Ausmultiplizieren und Ausklammern: $a \\cdot (b + c) = ab + ac$\n\nBeispiel: $2(x + y) = 2x + 2y$ und rückwärts $2x + 4y = 2(x + 2y)$"
+        "body": "- **Kommutativgesetz** — Vertauschen: $a + b = b + a$, $a \\cdot b = b \\cdot a$\n- **Assoziativgesetz** — Klammern versetzen: $(a + b) + c = a + (b + c)$\n- **Distributivgesetz** — Ausmultiplizieren und Ausklammern: $a \\cdot (b + c) = ab + ac$\n\nBeispiel: $2(x + y) = 2x + 2y$ und rückwärts $2x + 4y = 2(x + 2y)$\n\n$a$, $b$ und $c$ sind Platzhalter für beliebige Zahlen."
       },
       {
         "kind": "example",
@@ -45,7 +45,7 @@
       {
         "kind": "formula",
         "title": "Quadratische Gleichungen: die pq-Formel",
-        "body": "Steht $x^2$ in der Gleichung, bringst du sie zuerst in die **Normalform** $x^2 + px + q = 0$ (alles auf eine Seite, dann durch den Faktor vor $x^2$ teilen). Dann:\n\n$$x_{1,2} = -\\frac{p}{2} \\pm \\sqrt{\\left(\\frac{p}{2}\\right)^2 - q}$$\n\nDie Zahl unter der Wurzel zeigt, wie viele Lösungen es gibt:\n\n- Sie ist negativ: **keine** Lösung.\n- Sie ist null: **eine** Lösung.\n- Sie ist positiv: **zwei** Lösungen.\n\nBeispiel: $x^2 + 14x - 15 = 0$: $x_{1,2} = -7 \\pm \\sqrt{49 + 15} = -7 \\pm 8$, also $x_1 = 1$ und $x_2 = -15$",
+        "body": "Steht $x^2$ in der Gleichung, bringst du sie zuerst in die **Normalform** $x^2 + px + q = 0$ (alles auf eine Seite, dann durch den Faktor vor $x^2$ teilen). Dann:\n\n$x_{1,2} = -\\frac{p}{2} \\pm \\sqrt{\\left(\\frac{p}{2}\\right)^2 - q}$\n\n- $p$: die Zahl vor dem $x$, mit ihrem Vorzeichen\n- $q$: die Zahl ohne $x$, mit ihrem Vorzeichen\n- $x_{1,2}$: die beiden Lösungen. Einmal rechnest du mit Plus, einmal mit Minus.\n\nDie Zahl unter der Wurzel zeigt, wie viele Lösungen es gibt:\n\n- Sie ist negativ: **keine** Lösung.\n- Sie ist null: **eine** Lösung.\n- Sie ist positiv: **zwei** Lösungen.\n\nBeispiel: $x^2 + 14x - 15 = 0$. Hier ist $p = 14$ und $q = -15$.\n\n$x_{1,2} = -7 \\pm \\sqrt{49 + 15} = -7 \\pm 8$, also $x_1 = 1$ und $x_2 = -15$",
         "primer": "P_MATH_QUADRAT"
       },
       {

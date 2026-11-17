@@ -10,27 +10,27 @@
       {
         "kind": "formula",
         "title": "Prozent- und Zinsrechnung",
-        "body": "**Grundformel**: $\\frac{W}{p} = \\frac{G}{100}$ — $G$ Grundwert, $W$ Prozentwert, $p\\,\\%$ Prozentsatz\n\nIn der Lektion steht dieselbe Formel als $\\frac{W}{G} = \\frac{p}{100}$. Beide Schreibweisen führen zum selben Ergebnis.\n\n**Kapital nach $n$ Jahren**: $K_n = K_0 \\cdot \\left(1 + \\frac{p}{100}\\right)^n$\n\n**Zinssatz**: $\\frac{p}{100} = \\sqrt[n]{\\frac{K_n}{K_0}} - 1$"
+        "body": "**Grundformel**: $\\frac{W}{p} = \\frac{G}{100}$\n\nIn der Lektion steht dieselbe Formel als $\\frac{W}{G} = \\frac{p}{100}$. Beide Schreibweisen führen zum selben Ergebnis.\n\n**Kapital nach $n$ Jahren**: $K_n = K_0 \\cdot \\left(1 + \\frac{p}{100}\\right)^n$\n\n**Zinssatz**: $\\frac{p}{100} = \\sqrt[n]{\\frac{K_n}{K_0}} - 1$\n\n| Zeichen | Bedeutung |\n|---|---|\n| $G$ | der Grundwert: das Ganze, also 100 % |\n| $W$ | der Prozentwert: der Teil, um den es geht |\n| $p$ | der Prozentsatz: die Zahl vor dem Prozentzeichen |\n| $K_0$ | das Kapital am Anfang, also das Geld im Jahr 0 |\n| $K_n$ | das Kapital nach $n$ Jahren |\n| $n$ | die Anzahl der Jahre |"
       },
       {
         "kind": "formula",
         "title": "Dichte und Geschwindigkeit",
-        "body": "**Dichte**: $\\rho = \\frac{m}{V}$ — Masse durch Volumen\n\n**Geschwindigkeit** (gleichförmig): $v = \\frac{s}{t}$ — Weg durch Zeit"
+        "body": "**Dichte**: $\\rho = \\frac{m}{V}$ — Masse durch Volumen\n\n**Geschwindigkeit** (gleichförmig): $v = \\frac{s}{t}$ — Weg durch Zeit\n\n| Zeichen | Bedeutung |\n|---|---|\n| $\\rho$ | die Dichte (der griechische Buchstabe Rho): wie schwer ein Stoff für seine Größe ist |\n| $m$ | die Masse, also das Gewicht, zum Beispiel in Gramm |\n| $V$ | das Volumen: wie viel Platz der Stoff braucht |\n| $v$ | die Geschwindigkeit, zum Beispiel in Kilometern pro Stunde |\n| $s$ | der Weg, also die Strecke |\n| $t$ | die Zeit, die dafür gebraucht wird |"
       },
       {
         "kind": "formula",
         "title": "Potenzen und Wurzeln",
-        "body": "$a^n = a \\cdot a \\cdot \\ldots \\cdot a$ ($n$-mal) · $a^0 = 1$ · $a^{-n} = \\frac{1}{a^n}$\n\n$\\sqrt[n]{a} = a^{\\frac{1}{n}}$, speziell $\\sqrt{a} = a^{\\frac{1}{2}}$"
+        "body": "$a^n = a \\cdot a \\cdot \\ldots \\cdot a$ ($n$-mal) · $a^0 = 1$ · $a^{-n} = \\frac{1}{a^n}$\n\n$\\sqrt[n]{a} = a^{\\frac{1}{n}}$, speziell $\\sqrt{a} = a^{\\frac{1}{2}}$\n\n| Zeichen | Bedeutung |\n|---|---|\n| $a$ | die Basis: die Zahl, die mit sich selbst malgenommen wird |\n| $n$ | der Exponent, also die Hochzahl: so oft steht die Basis da |"
       },
       {
         "kind": "formula",
         "title": "Quadratische Funktionen und Gleichungen",
-        "body": "**Scheitelpunktform**: $f(x) = (x + d)^2 + e$ mit Scheitelpunkt $S(-d \\,|\\, e)$\n\nIn den Lektionen steht dieselbe Form als $(x - d)^2 + e$ mit $S(d \\,|\\, e)$. Beides sagt dasselbe: Die Zahl in der Klammer wechselt ihr Vorzeichen.\n\nIn den Lektionen steht dieselbe Form als $(x - d)^2 + e$ mit $S(d \\,|\\, e)$. Beides sagt dasselbe: Die Zahl in der Klammer wechselt ihr Vorzeichen.\n\n**Normalform**: $0 = x^2 + px + q$\n\n**Lösungsformel (pq-Formel)**: $x_{1,2} = -\\frac{p}{2} \\pm \\sqrt{\\left(\\frac{p}{2}\\right)^2 - q}$"
+        "body": "**Scheitelpunktform**: $f(x) = (x + d)^2 + e$ mit Scheitelpunkt $S(-d \\,|\\, e)$\n\nIn den Lektionen steht dieselbe Form als $(x - d)^2 + e$ mit $S(d \\,|\\, e)$. Beides sagt dasselbe: Die Zahl in der Klammer wechselt ihr Vorzeichen.\n\n**Normalform**: $0 = x^2 + px + q$\n\n**Lösungsformel (pq-Formel)**: $x_{1,2} = -\\frac{p}{2} \\pm \\sqrt{\\left(\\frac{p}{2}\\right)^2 - q}$\n\n| Zeichen | Bedeutung |\n|---|---|\n| $S$ | der Scheitelpunkt: der tiefste oder der höchste Punkt der Parabel |\n| $d$, $e$ | die beiden Zahlen, an denen du den Scheitelpunkt abliest |\n| $p$ | die Zahl vor dem $x$, mit ihrem Vorzeichen |\n| $q$ | die Zahl ohne $x$, mit ihrem Vorzeichen |\n| $x_{1,2}$ | die beiden Lösungen: einmal mit Plus gerechnet, einmal mit Minus |"
       },
       {
         "kind": "formula",
         "title": "Rechtwinkliges Dreieck",
-        "body": "**Satz des Pythagoras**: $c^2 = a^2 + b^2$ ($c$ gegenüber vom rechten Winkel)\n\n**Umfang**: $u = a + b + c$ · **Fläche**: $A = \\frac{1}{2} a \\cdot b = \\frac{1}{2} c \\cdot h_c$\n\n$\\sin\\alpha = \\frac{\\text{Gegenkathete}}{\\text{Hypotenuse}} = \\frac{a}{c}$ · $\\cos\\alpha = \\frac{\\text{Ankathete}}{\\text{Hypotenuse}} = \\frac{b}{c}$ · $\\tan\\alpha = \\frac{\\text{Gegenkathete}}{\\text{Ankathete}} = \\frac{a}{b}$",
+        "body": "**Satz des Pythagoras**: $c^2 = a^2 + b^2$\n\n**Umfang**: $u = a + b + c$ · **Fläche**: $A = \\frac{1}{2} a \\cdot b = \\frac{1}{2} c \\cdot h_c$\n\n$\\sin\\alpha = \\frac{\\text{Gegenkathete}}{\\text{Hypotenuse}} = \\frac{a}{c}$ · $\\cos\\alpha = \\frac{\\text{Ankathete}}{\\text{Hypotenuse}} = \\frac{b}{c}$ · $\\tan\\alpha = \\frac{\\text{Gegenkathete}}{\\text{Ankathete}} = \\frac{a}{b}$\n\n| Zeichen | Bedeutung |\n|---|---|\n| $a$, $b$ | die Katheten: die beiden Seiten am rechten Winkel |\n| $c$ | die Hypotenuse: die längste Seite, gegenüber vom rechten Winkel |\n| $\\alpha$ | der Winkel Alpha. Er liegt gegenüber von der Seite $a$. |\n| $u$ | der Umfang: einmal außen herum |\n| $A$ | der Flächeninhalt: wie viel Platz das Dreieck bedeckt |\n| $h_c$ | die Höhe auf der Seite $c$: der senkrechte Abstand von $c$ bis zur Ecke gegenüber |",
         "figure": {
           "type": "rightTriangle",
           "a": 4,
@@ -47,7 +47,7 @@
       {
         "kind": "formula",
         "title": "Beliebiges Dreieck",
-        "body": "**Sinussatz**: $\\frac{a}{\\sin\\alpha} = \\frac{b}{\\sin\\beta} = \\frac{c}{\\sin\\gamma}$\n\n**Kosinussatz**: $a^2 = b^2 + c^2 - 2bc \\cdot \\cos\\alpha$\n\n**Umfang**: $u = a + b + c$ · **Fläche**: $A = \\frac{1}{2} c \\cdot h_c = \\frac{1}{2} a \\cdot b \\cdot \\sin\\gamma$",
+        "body": "**Sinussatz**: $\\frac{a}{\\sin\\alpha} = \\frac{b}{\\sin\\beta} = \\frac{c}{\\sin\\gamma}$\n\n**Kosinussatz**: $a^2 = b^2 + c^2 - 2bc \\cdot \\cos\\alpha$\n\n**Umfang**: $u = a + b + c$ · **Fläche**: $A = \\frac{1}{2} c \\cdot h_c = \\frac{1}{2} a \\cdot b \\cdot \\sin\\gamma$\n\n| Zeichen | Bedeutung |\n|---|---|\n| $a$, $b$, $c$ | die drei Seiten des Dreiecks |\n| $\\alpha$, $\\beta$, $\\gamma$ | die drei Winkel Alpha, Beta und Gamma. $\\alpha$ liegt gegenüber von $a$, $\\beta$ gegenüber von $b$, $\\gamma$ gegenüber von $c$. |\n| $u$ | der Umfang: einmal außen herum |\n| $A$ | der Flächeninhalt: wie viel Platz das Dreieck bedeckt |\n| $h_c$ | die Höhe auf der Seite $c$: der senkrechte Abstand von $c$ bis zur Ecke gegenüber |",
         "figure": {
           "type": "triangle",
           "alpha": 70,
@@ -65,7 +65,7 @@
       {
         "kind": "formula",
         "title": "Rechteck, Trapez, Kreis",
-        "body": "**Rechteck**: $u = 2a + 2b$ · $A = a \\cdot b$ · Diagonale $e = \\sqrt{a^2 + b^2}$\n\n**Trapez**: Mittellinie $m = \\frac{1}{2}(a + c)$ · $A = m \\cdot h = \\frac{1}{2}(a + c) \\cdot h$\n\n**Kreis**: $d = 2r$ · $u = 2 \\cdot \\pi \\cdot r$ · $A = \\pi \\cdot r^2$",
+        "body": "**Rechteck**: $u = 2a + 2b$ · $A = a \\cdot b$ · Diagonale $e = \\sqrt{a^2 + b^2}$\n\n**Trapez**: Mittellinie $m = \\frac{1}{2}(a + c)$ · $A = m \\cdot h = \\frac{1}{2}(a + c) \\cdot h$\n\n**Kreis**: $d = 2r$ · $u = 2 \\cdot \\pi \\cdot r$ · $A = \\pi \\cdot r^2$\n\n| Zeichen | Bedeutung |\n|---|---|\n| $u$ | der Umfang: einmal außen herum |\n| $A$ | der Flächeninhalt: wie viel Platz die Figur bedeckt |\n| $a$, $b$ | beim Rechteck: die Länge und die Breite |\n| $e$ | die Diagonale: die Strecke von einer Ecke zur Ecke gegenüber |\n| $a$, $c$ | beim Trapez: die beiden Seiten, die parallel liegen |\n| $m$ | die Mittellinie: der Durchschnitt der beiden parallelen Seiten |\n| $h$ | die Höhe: der senkrechte Abstand zwischen den parallelen Seiten |\n| $r$ | der Radius: von der Mitte des Kreises bis zum Rand |\n| $d$ | der Durchmesser: einmal quer durch die Mitte des Kreises |\n| $\\pi$ | die Kreiszahl Pi, ungefähr 3,14. Der Taschenrechner hat dafür eine Taste. |",
         "figures": [
           {
             "figure": {
@@ -108,7 +108,7 @@
       {
         "kind": "formula",
         "title": "Würfel und Quader",
-        "body": "**Würfel**: $A_G = a^2$ · $A_O = 6a^2$ · $V = a^3$ · Raumdiagonale $d = a\\sqrt{3}$\n\n**Quader**: $A_G = a \\cdot b$ · $A_O = 2ab + 2bc + 2ac$ · $V = a \\cdot b \\cdot c$ · $d = \\sqrt{a^2 + b^2 + c^2}$",
+        "body": "**Würfel**: $A_G = a^2$ · $A_O = 6a^2$ · $V = a^3$ · Raumdiagonale $d = a\\sqrt{3}$\n\n**Quader**: $A_G = a \\cdot b$ · $A_O = 2ab + 2bc + 2ac$ · $V = a \\cdot b \\cdot c$ · $d = \\sqrt{a^2 + b^2 + c^2}$\n\n| Zeichen | Bedeutung |\n|---|---|\n| $a$, $b$, $c$ | die Kantenlängen: Länge, Breite und Höhe. Beim Würfel sind alle gleich. |\n| $A_G$ | die Grundfläche: der Boden |\n| $A_O$ | die Oberfläche: alle sechs Seitenflächen zusammen |\n| $V$ | das Volumen: was hineinpasst |\n| $d$ | die Raumdiagonale: die Strecke quer durch den Körper, von einer Ecke zur Ecke gegenüber |\n\nStehen Buchstaben direkt nebeneinander, wird malgenommen: $2ab$ bedeutet $2 \\cdot a \\cdot b$.",
         "figure": {
           "type": "box",
           "a": 4,
@@ -124,7 +124,7 @@
       {
         "kind": "formula",
         "title": "Prisma, Pyramide, Zylinder, Kegel",
-        "body": "**Prisma** (gerade): $A_M = u_G \\cdot h$ · $A_O = 2A_G + A_M$ · $V = A_G \\cdot h$\n\n**Pyramide** (quadratisch): $A_G = a^2$ · $A_M = 2a \\cdot h_s$ · $A_O = A_G + A_M$ · $V = \\frac{1}{3} A_G \\cdot h$\n\n**Zylinder**: $A_G = \\pi r^2$ · $A_M = 2\\pi r \\cdot h$ · $A_O = 2A_G + A_M$ · $V = \\pi r^2 \\cdot h$\n\n**Kegel**: $V = \\frac{1}{3} \\pi r^2 \\cdot h$",
+        "body": "**Prisma** (gerade): $A_M = u_G \\cdot h$ · $A_O = 2A_G + A_M$ · $V = A_G \\cdot h$\n\n**Pyramide** (quadratisch): $A_G = a^2$ · $A_M = 2a \\cdot h_s$ · $A_O = A_G + A_M$ · $V = \\frac{1}{3} A_G \\cdot h$\n\n**Zylinder**: $A_G = \\pi r^2$ · $A_M = 2\\pi r \\cdot h$ · $A_O = 2A_G + A_M$ · $V = \\pi r^2 \\cdot h$\n\n**Kegel**: $V = \\frac{1}{3} \\pi r^2 \\cdot h$\n\n| Zeichen | Bedeutung |\n|---|---|\n| $A_G$ | die Grundfläche: der Boden |\n| $A_M$ | die Mantelfläche: die Seiten ohne Boden und Deckel |\n| $A_O$ | die Oberfläche: alle Flächen außen zusammen |\n| $V$ | das Volumen: was hineinpasst |\n| $u_G$ | der Umfang der Grundfläche: einmal um den Boden herum |\n| $h$ | die Höhe des Körpers, senkrecht gemessen |\n| $h_s$ | die Seitenhöhe der Pyramide: schräg vom Rand des Bodens bis zur Spitze |\n| $a$ | die Seitenlänge des quadratischen Bodens |\n| $r$ | der Radius des Kreises am Boden |\n| $\\pi$ | die Kreiszahl Pi, ungefähr 3,14. Der Taschenrechner hat dafür eine Taste. |",
         "figure": {
           "type": "cylinder",
           "r": 2,

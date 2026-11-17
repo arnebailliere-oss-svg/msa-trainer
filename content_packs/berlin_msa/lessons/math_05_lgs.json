@@ -10,7 +10,7 @@
       {
         "kind": "what",
         "title": "Was ist ein LGS?",
-        "body": "Mehrere lineare Gleichungen mit mehreren Variablen bilden ein **lineares Gleichungssystem**. Für eine eindeutige Lösung brauchst du mindestens so viele Gleichungen wie Variablen — im MSA fast immer **2 Gleichungen, 2 Variablen** ($x$ und $y$).\n\nDie Lösung ist ein Zahlenpaar $(x \\,|\\, y)$, das **beide** Gleichungen erfüllt.",
+        "body": "Mehrere lineare Gleichungen mit mehreren Variablen bilden ein **lineares Gleichungssystem**. Für eine eindeutige Lösung brauchst du mindestens so viele Gleichungen wie Variablen — im MSA fast immer **2 Gleichungen, 2 Variablen** ($x$ und $y$).\n\nDie Lösung ist ein Zahlenpaar $(x \\,|\\, y)$, das **beide** Gleichungen erfüllt.\n\nAm Ende schreibst du die Lösung als **Lösungsmenge** $L$ auf.",
         "primer": "P_MATH_LGS"
       },
       {
@@ -32,7 +32,7 @@
       {
         "kind": "example",
         "title": "Grafisch lösen",
-        "body": "Jede Gleichung ist eine **Gerade**. Beide nach $y$ umstellen, zeichnen, Schnittpunkt ablesen.\n\n- Die Geraden **schneiden** sich → genau **eine** Lösung (der Schnittpunkt)\n- Die Geraden sind **parallel** → **keine** Lösung\n- Die Geraden sind **identisch** → **unendlich viele** Lösungen\n\n$y = x + 2$ und $y = -x + 6$ schneiden sich in $S(2 \\,|\\, 4)$, also $L = \\{(2 \\,|\\, 4)\\}$.",
+        "body": "Jede Gleichung ist eine **Gerade**. Beide nach $y$ umstellen, zeichnen, Schnittpunkt ablesen.\n\n- Die Geraden **schneiden** sich → genau **eine** Lösung (der Schnittpunkt)\n- Die Geraden sind **parallel** → **keine** Lösung\n- Die Geraden sind **identisch** → **unendlich viele** Lösungen\n\n$y = x + 2$ und $y = -x + 6$ schneiden sich im **Schnittpunkt** $S$. Er liegt bei $S(2 \\,|\\, 4)$, also $L = \\{(2 \\,|\\, 4)\\}$.",
         "figure": {
           "type": "coordinateSystem",
           "xmin": -1,
@@ -70,7 +70,7 @@
       {
         "kind": "remember",
         "title": "Merke",
-        "body": "- Steht in einer Gleichung schon $y = \\ldots$, dann nimmst du das **Einsetzen** oder das **Gleichsetzen**.\n- Haben beide Gleichungen die Form $ax + by = c$, dann nimmst du das **Additionsverfahren**.\n- Die Lösung gibst du immer als Paar $(x \\,|\\, y)$ an."
+        "body": "- Steht in einer Gleichung schon $y = \\ldots$, dann nimmst du das **Einsetzen** oder das **Gleichsetzen**.\n- Stehen in beiden Gleichungen $x$ und $y$ links und eine Zahl rechts, dann nimmst du das **Additionsverfahren**.\n- Die Lösung gibst du immer als Paar $(x \\,|\\, y)$ an."
       }
     ],
     "primer": "P_MATH_LGS",

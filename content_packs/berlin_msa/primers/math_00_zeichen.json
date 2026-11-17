@@ -188,7 +188,7 @@
       {
         "chapter": "Vergleichen und die Reihenfolge beim Rechnen",
         "title": "Gleich, ungefähr, ungleich",
-        "body": "$=$ **genau gleich**: $3 + 4 = 7$\n\n$\\approx$ **ungefähr**, nach dem Runden: $\\pi \\approx 3{,}14$\n\n$\\neq$ **nicht gleich**: $3 \\neq 4$",
+        "body": "$=$ **genau gleich**: $3 + 4 = 7$\n\n$\\approx$ **ungefähr**, nach dem Runden: $10 : 3 \\approx 3{,}33$\n\n$\\neq$ **nicht gleich**: $3 \\neq 4$",
         "say": "Das Wellen-Gleich benutzt du immer, wenn du gerundet hast. Damit sagst du ehrlich: ungefähr.",
         "tasks": [
           {

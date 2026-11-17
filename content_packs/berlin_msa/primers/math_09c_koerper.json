@@ -18,7 +18,7 @@
       {
         "chapter": "Volumen und Oberfläche",
         "title": "Volumen: wie viel passt rein",
-        "body": "Quader 4 · 3 · 2:\n\n$V = 4 \\cdot 3 \\cdot 2 = 24\\ \\text{cm}^3$\n\n24 Würfel von 1 cm Kante.",
+        "body": "Quader 4 · 3 · 2:\n\n$V = 4 \\cdot 3 \\cdot 2 = 24\\ \\text{cm}^3$\n\nDer Buchstabe $V$ steht für das Volumen.\n\n24 Würfel von 1 cm Kante.",
         "figure": {
           "type": "box",
           "a": 4,
@@ -46,7 +46,7 @@
       },
       {
         "title": "Oberfläche: die Verpackung",
-        "body": "Die **Oberfläche** sind alle Flächen außen zusammen.\n\nQuader: 6 Rechtecke, je zwei gleich\n\n$O = 2 \\cdot (4 \\cdot 3 + 4 \\cdot 2 + 3 \\cdot 2) = 52\\ \\text{cm}^2$",
+        "body": "Die **Oberfläche** sind alle Flächen außen zusammen.\n\nQuader: 6 Rechtecke, je zwei gleich\n\n$O = 2 \\cdot (4 \\cdot 3 + 4 \\cdot 2 + 3 \\cdot 2) = 52\\ \\text{cm}^2$\n\nDer Buchstabe $O$ steht für die Oberfläche.",
         "say": "Stell dir vor, du packst den Körper in Geschenkpapier ein. Die Menge Papier, die du brauchst, ist die Oberfläche. Ein Quader hat sechs Seiten, und gegenüberliegende Seiten sind gleich groß. Weil es eine Fläche ist, steht dahinter Quadratzentimeter.",
         "tasks": [
           {
@@ -57,7 +57,7 @@
             ],
             "correct": "$24\\ \\text{cm}^2$",
             "why": "Sechs Flächen mit je 4 Quadratzentimetern ergeben 24. Es bleibt eine Fläche, also Quadratzentimeter.",
-            "hint": "Rechne 6 mal 4. Welche kleine Hochzahl gehört zu einer Fläche?"
+            "hint": "Die Zahl 24 stimmt bei beiden. Schau auf die Einheit: Welche kleine Hochzahl gehört zu einer Fläche?"
           }
         ]
       },
@@ -124,7 +124,7 @@
       },
       {
         "title": "Der Mantel",
-        "body": "Der **Mantel** ist die Wand außen herum, ohne Deckel und Boden.\n\nAbgerollt ein Rechteck: $M = U \\cdot h = 2\\pi r \\cdot h$",
+        "body": "Der **Mantel** ist die Wand außen herum, ohne Deckel und Boden.\n\nAbgerollt ein Rechteck: $M = U \\cdot h = 2\\pi r \\cdot h$\n\n$M$ steht für den Mantel, $U$ für den Umfang des Kreises.",
         "say": "Schneide in Gedanken das Etikett einer Dose auf und leg es flach auf den Tisch. Du siehst ein Rechteck. Seine Breite ist der Umfang des Kreises, und seine Höhe ist die Höhe der Dose. Deshalb rechnest du für den Mantel Umfang mal Höhe.",
         "tasks": [
           {

@@ -2,6 +2,7 @@
 // Formulas, examples, figures and widgets stay as they are. Changed are only:
 // "Merke" boxes (now a short list of full sentences), arrow chains, and one card that was too long.
 // Repeatable: every change sets a whole value or replaces an exact text that is checked.
+// math_sheet_letters.cjs runs after this file and adds the explanation of every letter.
 const fs = require("fs");
 const path = require("path");
 const dir = path.join(__dirname, "..", "..", "content_packs", "berlin_msa", "lessons");
@@ -52,7 +53,7 @@ const merke = {
   ),
   L_MATH_ALG_LGS: list(
     "Steht in einer Gleichung schon $y = \\ldots$, dann nimmst du das **Einsetzen** oder das **Gleichsetzen**.",
-    "Haben beide Gleichungen die Form $ax + by = c$, dann nimmst du das **Additionsverfahren**.",
+    "Stehen in beiden Gleichungen $x$ und $y$ links und eine Zahl rechts, dann nimmst du das **Additionsverfahren**.",
     "Die Lösung gibst du immer als Paar $(x \\,|\\, y)$ an.",
   ),
   L_MATH_DATA: list(
@@ -175,8 +176,10 @@ for (const f of fs.readdirSync(dir).filter((x) => x.startsWith("math_"))) {
       if (s.title === "Merke" && merke[l.id]) s.body = merke[l.id];
       for (const [id, title, from, to] of swaps) {
         if (id !== l.id || title !== s.title) continue;
+        // `to` is checked first: some replacements contain their own `from`, and a second run must not repeat them.
+        // A section that math_sheet_letters.cjs has rewritten since no longer holds either text; it is left alone.
+        if (s.body.includes(to)) continue;
         if (s.body.includes(from)) s.body = s.body.replace(from, to);
-        else if (!s.body.includes(to)) throw new Error(`${id} "${title}": text to replace not found`);
       }
     }
     changed++;

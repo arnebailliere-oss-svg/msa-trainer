@@ -13,7 +13,7 @@
       {
         "kind": "terms",
         "title": "Begriffe",
-        "body": "- Ein **Vieleck** hat $n$ Ecken; ein **regelmäßiges** Vieleck hat lauter gleiche Seiten und Winkel (regelmäßiges Viereck = Quadrat).\n- **Punkte** heißen $A, B, C$ (Großbuchstaben), **Seiten** $a, b, c$ (Kleinbuchstaben). Im Dreieck liegt Seite $a$ **gegenüber** von Punkt $A$.\n- **Kreis**: alle Punkte gleich weit vom Mittelpunkt entfernt — der **Radius** $r$. Durchmesser $d = 2r$.\n- **Koordinaten**: $P(x \\,|\\, y)$ — **erst $x$** (waagerecht), **dann $y$** (senkrecht).",
+        "body": "- Ein **Vieleck** hat mehrere Ecken. $n$ ist die Anzahl der Ecken. Ein **regelmäßiges** Vieleck hat lauter gleiche Seiten und Winkel (regelmäßiges Viereck = Quadrat).\n- **Punkte** heißen $A, B, C$ (Großbuchstaben), **Seiten** heißen $a, b, c$ (Kleinbuchstaben). Im Dreieck liegt Seite $a$ **gegenüber** von Punkt $A$.\n- **Winkel** heißen $\\alpha$, $\\beta$, $\\gamma$ (Alpha, Beta, Gamma). Der Winkel $\\alpha$ liegt an der Ecke $A$.\n- **Kreis**: Alle Punkte sind gleich weit vom Mittelpunkt entfernt. Dieser Abstand ist der **Radius** $r$. Der **Durchmesser** $d$ geht einmal quer durch die Mitte: $d = 2r$.\n- **Punkt** $P$ im Koordinatensystem: $P(x \\,|\\, y)$ — **erst $x$** (waagerecht), **dann $y$** (senkrecht).",
         "figures": [
           {
             "figure": {
@@ -65,7 +65,7 @@
       {
         "kind": "formula",
         "title": "Flächen, die du auswendig können musst",
-        "body": "**Rechteck**: $A = a \\cdot b$, Umfang $u = 2a + 2b$\n\n**Quadrat**: $A = a^2$, $u = 4a$\n\n**Parallelogramm**: $A = a \\cdot h$ (Grundseite mal **Höhe**, nicht mal die schräge Seite)\n\n**Dreieck**: $A = \\frac{1}{2} \\cdot a \\cdot h$\n\n**Trapez**: $A = \\frac{1}{2}(a + c) \\cdot h$\n\n**Kreis**: $A = \\pi \\cdot r^2$, Umfang $u = 2 \\cdot \\pi \\cdot r = \\pi \\cdot d$",
+        "body": "| Zeichen | Bedeutung |\n|---|---|\n| $A$ | der Flächeninhalt: wie viel Platz die Figur bedeckt |\n| $u$ | der Umfang: einmal außen herum |\n| $a$, $b$ | die Seitenlängen. $a$ ist meist die Grundseite, also die Seite unten. |\n| $c$ | beim Trapez: die Seite, die parallel zu $a$ liegt |\n| $h$ | die Höhe: der senkrechte Abstand von der Grundseite nach oben |\n| $r$ | der Radius: von der Mitte des Kreises bis zum Rand |\n| $d$ | der Durchmesser: einmal quer durch die Mitte, also zweimal der Radius |\n| $\\pi$ | die Kreiszahl Pi, ungefähr 3,14. Der Taschenrechner hat dafür eine Taste. |\n\n| Formel | In Worten |\n|---|---|\n| **Rechteck**: $A = a \\cdot b$ | Länge mal Breite |\n| $u = 2a + 2b$ | zweimal die Länge plus zweimal die Breite |\n| **Quadrat**: $A = a^2$ | Seite mal Seite |\n| $u = 4a$ | vier gleich lange Seiten |\n| **Parallelogramm**: $A = a \\cdot h$ | Grundseite mal **Höhe**, nicht mal die schräge Seite |\n| **Dreieck**: $A = \\frac{1}{2} \\cdot a \\cdot h$ | die Hälfte von Grundseite mal Höhe |\n| **Trapez**: $A = \\frac{1}{2}(a + c) \\cdot h$ | die beiden parallelen Seiten zusammenzählen, halbieren, mal die Höhe |\n| **Kreis**: $A = \\pi \\cdot r^2$ | Pi mal Radius mal Radius |\n| $u = 2 \\cdot \\pi \\cdot r = \\pi \\cdot d$ | zweimal Pi mal Radius. Das ist dasselbe wie Pi mal Durchmesser. |",
         "primer": "P_MATH_GEO_BEGRIFFE",
         "figures": [
           {
@@ -316,7 +316,7 @@
       {
         "kind": "terms",
         "title": "Trigonometrie: die Seiten vom Winkel aus gesehen",
-        "body": "Im rechtwinkligen Dreieck, vom Winkel $\\alpha$ aus:\n- **Hypotenuse**: gegenüber vom rechten Winkel (immer dieselbe)\n- **Gegenkathete** von $\\alpha$: die Seite **gegenüber** von $\\alpha$\n- **Ankathete** von $\\alpha$: die Seite **am** Winkel $\\alpha$ (aber nicht die Hypotenuse)\n\n$$\\sin\\alpha = \\frac{\\text{Gegenkathete}}{\\text{Hypotenuse}} \\qquad \\cos\\alpha = \\frac{\\text{Ankathete}}{\\text{Hypotenuse}} \\qquad \\tan\\alpha = \\frac{\\text{Gegenkathete}}{\\text{Ankathete}}$$\n\nMerkwort: **GAGA HüHnerHof AG** — Sinus: **G**egenkathete/**H**ypotenuse, Kosinus: **A**nkathete/**H**ypotenuse, Tangens: **G**egenkathete/**A**nkathete.",
+        "body": "Im rechtwinkligen Dreieck, vom **Winkel** $\\alpha$ (Alpha) aus:\n- **Hypotenuse**: gegenüber vom rechten Winkel (immer dieselbe)\n- **Gegenkathete** von $\\alpha$: die Seite **gegenüber** von $\\alpha$\n- **Ankathete** von $\\alpha$: die Seite **am** Winkel $\\alpha$ (aber nicht die Hypotenuse)\n\n$$\\sin\\alpha = \\frac{\\text{Gegenkathete}}{\\text{Hypotenuse}} \\qquad \\cos\\alpha = \\frac{\\text{Ankathete}}{\\text{Hypotenuse}} \\qquad \\tan\\alpha = \\frac{\\text{Gegenkathete}}{\\text{Ankathete}}$$\n\nMerkwort: **GAGA HüHnerHof AG** — Sinus: **G**egenkathete/**H**ypotenuse, Kosinus: **A**nkathete/**H**ypotenuse, Tangens: **G**egenkathete/**A**nkathete.",
         "primer": "P_MATH_PYTH_TRIG",
         "figure": {
           "type": "rightTriangle",
@@ -333,12 +333,12 @@
       {
         "kind": "steps",
         "title": "So rechnest du",
-        "body": "1. Rechten Winkel finden, Hypotenuse markieren.\n2. Vom gegebenen Winkel aus: Welche Seite ist gegeben, welche ist gesucht? Danach wählst du sin, cos oder tan.\n3. Gleichung aufstellen, umstellen, Taschenrechner (auf **DEG** stellen!).\n\n**Beispiel 1, Seite gesucht:** Der rechte Winkel liegt hier bei $\\alpha$. Deshalb ist $a = 8$ die Hypotenuse. Gegeben ist $\\beta = 55°$, gesucht ist $c$, die Ankathete von $\\beta$.\n\n$\\cos 55° = \\frac{c}{8}$, also $c = 8 \\cdot \\cos 55° \\approx 4{,}59$\n\n**Beispiel 2, Winkel gesucht:** Die Gegenkathete ist 4, die Ankathete ist 8.\n\n$\\tan\\alpha = \\frac{4}{8} = 0{,}5$, also $\\alpha = \\tan^{-1}(0{,}5) \\approx 26{,}6°$"
+        "body": "1. Rechten Winkel finden, Hypotenuse markieren.\n2. Vom gegebenen Winkel aus: Welche Seite ist gegeben, welche ist gesucht? Danach wählst du sin, cos oder tan.\n3. Gleichung aufstellen, umstellen, Taschenrechner (auf **DEG** stellen!).\n\n$\\alpha$ und $\\beta$ sind die Namen der Winkel (Alpha und Beta).\n\n**Beispiel 1, Seite gesucht:** Der rechte Winkel liegt hier bei $\\alpha$. Deshalb ist $a = 8$ die Hypotenuse. Gegeben ist $\\beta = 55°$, gesucht ist $c$, die Ankathete von $\\beta$.\n\n$\\cos 55° = \\frac{c}{8}$, also $c = 8 \\cdot \\cos 55° \\approx 4{,}59$\n\n**Beispiel 2, Winkel gesucht:** Die Gegenkathete ist 4, die Ankathete ist 8.\n\n$\\tan\\alpha = \\frac{4}{8} = 0{,}5$, also $\\alpha = \\tan^{-1}(0{,}5) \\approx 26{,}6°$"
       },
       {
         "kind": "formula",
         "title": "Beliebige Dreiecke: Sinussatz und Kosinussatz (Formelblatt)",
-        "body": "**Sinussatz**: $\\frac{a}{\\sin\\alpha} = \\frac{b}{\\sin\\beta} = \\frac{c}{\\sin\\gamma}$ — wenn ein Paar aus Seite und Gegenwinkel bekannt ist.\n\n$\\alpha = 70°$, $\\beta = 46°$, $b = 4{,}3$: $a = \\frac{\\sin 70°}{\\sin 46°} \\cdot 4{,}3 \\approx 5{,}62$\n\n**Kosinussatz**: $a^2 = b^2 + c^2 - 2bc \\cdot \\cos\\alpha$ — der „Pythagoras mit Korrektur“ für zwei Seiten und den eingeschlossenen Winkel.\n\n$b = 7$, $c = 4$, $\\alpha = 65°$: $a = \\sqrt{49 + 16 - 56 \\cdot \\cos 65°} \\approx 6{,}43$",
+        "body": "**Sinussatz**: $\\frac{a}{\\sin\\alpha} = \\frac{b}{\\sin\\beta} = \\frac{c}{\\sin\\gamma}$ — wenn ein Paar aus Seite und Gegenwinkel bekannt ist.\n\n$\\alpha = 70°$, $\\beta = 46°$, $b = 4{,}3$: $a = \\frac{\\sin 70°}{\\sin 46°} \\cdot 4{,}3 \\approx 5{,}62$\n\n**Kosinussatz**: $a^2 = b^2 + c^2 - 2bc \\cdot \\cos\\alpha$ — der „Pythagoras mit Korrektur“ für zwei Seiten und den eingeschlossenen Winkel.\n\n$b = 7$, $c = 4$, $\\alpha = 65°$: $a = \\sqrt{49 + 16 - 56 \\cdot \\cos 65°} \\approx 6{,}43$\n\n| Zeichen | Bedeutung |\n|---|---|\n| $a$, $b$, $c$ | die drei Seiten des Dreiecks |\n| $\\alpha$, $\\beta$, $\\gamma$ | die drei Winkel Alpha, Beta und Gamma. $\\alpha$ liegt gegenüber von $a$, $\\beta$ gegenüber von $b$, $\\gamma$ gegenüber von $c$. |",
         "primer": "P_MATH_PYTH_TRIG",
         "figure": {
           "type": "triangle",
@@ -385,7 +385,7 @@
       {
         "kind": "terms",
         "title": "Begriffe",
-        "body": "- **Volumen** $V$: das Fassungsvermögen — in cm³, dm³ (= Liter), m³.\n- **Grundfläche** $A_G$: die Fläche, auf der der Körper steht.\n- **Mantelfläche** $A_M$: alle **Seitenflächen** zusammen (ohne Boden und Deckel).\n- **Oberfläche** $A_O$: **alle** Flächen zusammen — Mantel plus Grund- (und Deck-)fläche.",
+        "body": "- **Volumen** $V$: was in den Körper hineinpasst. Einheiten: cm³, dm³ (das ist ein Liter), m³.\n- **Grundfläche** $A_G$: die Fläche, auf der der Körper steht, also der Boden.\n- **Mantelfläche** $A_M$: alle **Seitenflächen** zusammen, ohne Boden und Deckel.\n- **Oberfläche** $A_O$: **alle** Flächen zusammen, also Mantel plus Boden und Deckel.\n- **Höhe** $h$: der Abstand vom Boden bis ganz oben, senkrecht gemessen.\n- **Kanten** $a$, $b$, $c$: die Seitenlängen eines Quaders.\n- **Radius** $r$: der Abstand von der Mitte eines Kreises bis zum Rand.\n\n$A$ steht für eine Fläche. Der kleine Buchstabe daneben sagt, welche: G wie Grund, M wie Mantel, O wie Ober.",
         "figures": [
           {
             "figure": {
@@ -399,7 +399,7 @@
                 "c": "c"
               }
             },
-            "caption": "Quader: Grundfläche $G = a \\cdot b$, Höhe $c$"
+            "caption": "Quader: Grundfläche $A_G = a \\cdot b$, Höhe $c$"
           },
           {
             "figure": {
@@ -417,9 +417,8 @@
       },
       {
         "kind": "formula",
-        "title": "Die Formeln (Formelblatt)",
-        "body": "**Würfel**: $V = a^3$, $A_O = 6a^2$, Raumdiagonale $d = a\\sqrt{3}$\n\n**Quader**: $V = a \\cdot b \\cdot c$, $A_O = 2ab + 2bc + 2ac$, $d = \\sqrt{a^2 + b^2 + c^2}$\n\n**Prisma** (gerade): $V = A_G \\cdot h$, $A_M = u_G \\cdot h$, $A_O = 2A_G + A_M$\n\n**Zylinder**: $V = \\pi r^2 \\cdot h$, $A_M = 2\\pi r \\cdot h$, $A_O = 2\\pi r^2 + 2\\pi r h$\n\n**Pyramide** (quadratisch): $V = \\frac{1}{3} a^2 \\cdot h$, $A_M = 2a \\cdot h_s$\n\n**Kegel**: $V = \\frac{1}{3} \\pi r^2 \\cdot h$\n\n**Kugel**: $V = \\frac{4}{3} \\pi r^3$",
-        "primer": "P_MATH_KOERPER",
+        "title": "Formeln: Würfel und Quader",
+        "body": "Ein Würfel hat lauter gleich lange Kanten. Ein Quader sieht aus wie ein Schuhkarton.\n\n| Zeichen | Bedeutung |\n|---|---|\n| $a$, $b$, $c$ | die Kantenlängen: Länge, Breite und Höhe. Beim Würfel sind alle gleich, deshalb steht dort nur $a$. |\n| $V$ | das Volumen: was hineinpasst |\n| $A_O$ | die Oberfläche: alle sechs Seitenflächen zusammen |\n| $d$ | die Raumdiagonale: die Strecke quer durch den Körper, von einer Ecke zur Ecke gegenüber |\n\n**Würfel**\n\n| Formel | In Worten |\n|---|---|\n| $V = a^3$ | Kante mal Kante mal Kante |\n| $A_O = 6a^2$ | Eine Seite ist ein Quadrat mit der Fläche $a^2$. Davon gibt es sechs. |\n| $d = a\\sqrt{3}$ | Kante mal Wurzel aus 3 |\n\n**Quader**\n\n| Formel | In Worten |\n|---|---|\n| $V = a \\cdot b \\cdot c$ | Länge mal Breite mal Höhe |\n| $A_O = 2ab + 2bc + 2ac$ | Es gibt drei verschiedene Rechtecke. Jedes kommt zweimal vor. |\n| $d = \\sqrt{a^2 + b^2 + c^2}$ | alle drei Kanten quadrieren, zusammenzählen, dann die Wurzel ziehen |\n\nStehen Buchstaben direkt nebeneinander, wird malgenommen: $2ab$ bedeutet $2 \\cdot a \\cdot b$.",
         "figures": [
           {
             "figure": {
@@ -433,8 +432,15 @@
                 "c": "c"
               }
             },
-            "caption": "Quader: $V = a \\cdot b \\cdot c$, $O = 2(ab + ac + bc)$"
-          },
+            "caption": "Quader: $V = a \\cdot b \\cdot c$, $A_O = 2ab + 2bc + 2ac$"
+          }
+        ]
+      },
+      {
+        "kind": "formula",
+        "title": "Formeln: Prisma und Zylinder",
+        "body": "Beide haben gerade Wände. Boden und Deckel sind gleich groß. Ein Prisma hat einen eckigen Boden, ein Zylinder ist eine Dose.\n\n| Zeichen | Bedeutung |\n|---|---|\n| $A_G$ | die Grundfläche: der Boden |\n| $h$ | die Höhe des Körpers |\n| $u_G$ | der Umfang der Grundfläche: einmal um den Boden herum |\n| $A_M$ | die Mantelfläche: die Wand ohne Boden und Deckel |\n| $A_O$ | die Oberfläche: Wand, Boden und Deckel zusammen |\n| $V$ | das Volumen: was hineinpasst |\n| $r$ | der Radius des Kreises am Boden |\n| $\\pi$ | die Kreiszahl Pi, ungefähr 3,14. Der Taschenrechner hat dafür eine Taste. |\n\n**Prisma**\n\n| Formel | In Worten |\n|---|---|\n| $V = A_G \\cdot h$ | Boden mal Höhe |\n| $A_M = u_G \\cdot h$ | Umfang des Bodens mal Höhe |\n| $A_O = 2A_G + A_M$ | Boden und Deckel (zweimal die Grundfläche) plus die Wand |\n\n**Zylinder** (der Boden ist ein Kreis)\n\n| Formel | In Worten |\n|---|---|\n| $V = \\pi r^2 \\cdot h$ | Kreisfläche mal Höhe. Die Kreisfläche ist $\\pi r^2$. |\n| $A_M = 2\\pi r \\cdot h$ | Kreisumfang mal Höhe. Der Kreisumfang ist $2\\pi r$. |\n| $A_O = 2\\pi r^2 + 2\\pi r h$ | zwei Kreise (Boden und Deckel) plus die Wand |",
+        "figures": [
           {
             "figure": {
               "type": "cylinder",
@@ -445,8 +451,16 @@
                 "h": "h"
               }
             },
-            "caption": "Zylinder: $V = \\pi r^2 \\cdot h$, $M = 2\\pi r \\cdot h$"
-          },
+            "caption": "Zylinder: $V = \\pi r^2 \\cdot h$, $A_M = 2\\pi r \\cdot h$"
+          }
+        ]
+      },
+      {
+        "kind": "formula",
+        "title": "Formeln: Pyramide, Kegel, Kugel",
+        "body": "Pyramide und Kegel laufen oben spitz zu. Deshalb steht in ihrer Formel ein Drittel.\n\n| Zeichen | Bedeutung |\n|---|---|\n| $a$ | bei der Pyramide: die Seitenlänge des quadratischen Bodens |\n| $A_G$ | die Grundfläche: der Boden |\n| $h$ | die Höhe: von der Mitte des Bodens senkrecht hoch bis zur Spitze |\n| $h_s$ | die Seitenhöhe: die Höhe eines Dreiecks an der Seite, schräg vom Rand des Bodens bis zur Spitze |\n| $r$ | der Radius: beim Kegel vom Kreis am Boden, bei der Kugel von der Mitte bis nach außen |\n| $\\pi$ | die Kreiszahl Pi, ungefähr 3,14. Der Taschenrechner hat dafür eine Taste. |\n| $V$ | das Volumen: was hineinpasst |\n| $A_M$ | die Mantelfläche: die schrägen Seiten ohne den Boden |\n| $A_O$ | die Oberfläche: alles, was außen ist |\n\n**Pyramide** (mit quadratischem Boden)\n\n| Formel | In Worten |\n|---|---|\n| $V = \\frac{1}{3} a^2 \\cdot h$ | ein Drittel von Boden mal Höhe. Der Boden ist das Quadrat $a^2$. |\n| $A_M = 2a \\cdot h_s$ | vier Dreiecke. Jedes hat die Fläche $\\frac{1}{2} \\cdot a \\cdot h_s$. |\n\n**Kegel** und **Kugel**\n\n| Formel | In Worten |\n|---|---|\n| $V = \\frac{1}{3} \\pi r^2 \\cdot h$ | Kegel: ein Drittel von Kreisfläche mal Höhe |\n| $V = \\frac{4}{3} \\pi r^3$ | Kugel: vier Drittel mal Pi mal Radius hoch 3 |\n| $A_O = 4 \\pi r^2$ | Kugel: viermal die Fläche eines Kreises mit demselben Radius |",
+        "primer": "P_MATH_KOERPER",
+        "figures": [
           {
             "figure": {
               "type": "pyramid",
@@ -457,7 +471,7 @@
                 "h": "h"
               }
             },
-            "caption": "Pyramide: $V = \\frac{1}{3} \\cdot G \\cdot h$"
+            "caption": "Pyramide: $V = \\frac{1}{3} \\cdot A_G \\cdot h$"
           },
           {
             "figure": {
@@ -478,14 +492,14 @@
                 "r": "r"
               }
             },
-            "caption": "Kugel: $V = \\frac{4}{3} \\pi r^3$, $O = 4 \\pi r^2$"
+            "caption": "Kugel: $V = \\frac{4}{3} \\pi r^3$, $A_O = 4 \\pi r^2$"
           }
         ]
       },
       {
         "kind": "example",
         "title": "Beispiele",
-        "body": "Würfel $a = 5$ cm: $V = 5^3 = 125\\,\\text{cm}^3$\n\nQuader $4 \\times 4 \\times 2$ cm: $V = 4 \\cdot 4 \\cdot 2 = 32\\,\\text{cm}^3$\n\nZylinder $r = 3$ cm, $h = 10$ cm: $V = \\pi \\cdot 9 \\cdot 10 \\approx 282{,}7\\,\\text{cm}^3$\n\nRegentonne $d = 60$ cm, $h = 90$ cm: $V = \\pi \\cdot 30^2 \\cdot 90 \\approx 254\\,469\\,\\text{cm}^3 \\approx 254$ Liter"
+        "body": "Würfel $a = 5$ cm: $V = 5^3 = 125\\,\\text{cm}^3$\n\nQuader $4 \\times 4 \\times 2$ cm: $V = 4 \\cdot 4 \\cdot 2 = 32\\,\\text{cm}^3$\n\nZylinder $r = 3$ cm, $h = 10$ cm: $V = \\pi \\cdot 9 \\cdot 10 \\approx 282{,}7\\,\\text{cm}^3$\n\nRegentonne mit 60 cm Durchmesser, also $r = 30$ cm, und $h = 90$ cm: $V = \\pi \\cdot 30^2 \\cdot 90 \\approx 254\\,469\\,\\text{cm}^3 \\approx 254$ Liter"
       },
       {
         "kind": "steps",

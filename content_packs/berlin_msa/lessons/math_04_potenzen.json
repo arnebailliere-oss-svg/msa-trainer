@@ -10,7 +10,7 @@
       {
         "kind": "what",
         "title": "Was ist eine Potenz?",
-        "body": "Mehrfaches Multiplizieren einer Zahl mit sich selbst: $2^3 = 2 \\cdot 2 \\cdot 2 = 8$.\n\n$\\text{Potenz} = \\text{Basis}^{\\text{Exponent}}$ — die **Basis** ist 2, der **Exponent** 3."
+        "body": "Mehrfaches Multiplizieren einer Zahl mit sich selbst: $2^3 = 2 \\cdot 2 \\cdot 2 = 8$.\n\n$\\text{Potenz} = \\text{Basis}^{\\text{Exponent}}$ — die **Basis** ist 2, der **Exponent** 3.\n\nIn den Regeln stehen Buchstaben als Platzhalter. $a$ und $b$ sind beliebige Zahlen als Basis. $m$ und $n$ sind beliebige Exponenten."
       },
       {
         "kind": "terms",
@@ -20,7 +20,7 @@
       {
         "kind": "formula",
         "title": "Potenzgesetze",
-        "body": "**Gleiche Basis, multiplizieren → Exponenten addieren:** $a^m \\cdot a^n = a^{m+n}$ — $3^4 \\cdot 3^1 = 3^5$\n\n**Gleiche Basis, dividieren → Exponenten subtrahieren:** $\\frac{a^n}{a^m} = a^{n-m}$ — $\\frac{4^5}{4^2} = 4^3$\n\n**Potenz einer Potenz → Exponenten multiplizieren:** $(a^n)^m = a^{n \\cdot m}$ — $(6^4)^2 = 6^8$\n\n**Gleicher Exponent:** $a^n \\cdot b^n = (a \\cdot b)^n$ und $\\frac{a^n}{b^n} = \\left(\\frac{a}{b}\\right)^n$ — $3^2 \\cdot 5^2 = 15^2$",
+        "body": "- $a$ und $b$: beliebige Zahlen als Basis\n- $m$ und $n$: beliebige Exponenten, also Hochzahlen\n\n**Gleiche Basis, multiplizieren → Exponenten addieren:** $a^m \\cdot a^n = a^{m+n}$ — $3^4 \\cdot 3^1 = 3^5$\n\n**Gleiche Basis, dividieren → Exponenten subtrahieren:** $\\frac{a^n}{a^m} = a^{n-m}$ — $\\frac{4^5}{4^2} = 4^3$\n\n**Potenz einer Potenz → Exponenten multiplizieren:** $(a^n)^m = a^{n \\cdot m}$ — $(6^4)^2 = 6^8$\n\n**Gleicher Exponent:** $a^n \\cdot b^n = (a \\cdot b)^n$ und $\\frac{a^n}{b^n} = \\left(\\frac{a}{b}\\right)^n$ — $3^2 \\cdot 5^2 = 15^2$",
         "primer": "P_MATH_POTENZ"
       },
       {
