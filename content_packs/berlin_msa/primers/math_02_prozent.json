@@ -84,7 +84,7 @@
       {
         "chapter": "Die drei Grundaufgaben",
         "title": "Der Teil vom Ganzen",
-        "body": "20 % von 150:\n\n$150 \\cdot 0{,}2 = 30$\n\nGanzes mal Prozentsatz als Dezimalzahl.",
+        "body": "20 % von 150:\n\n20 % als Dezimalzahl: $0{,}2$\n\n$150 \\cdot 0{,}2 = 30$\n\nGanzes mal Prozentsatz als Dezimalzahl.",
         "say": "Prozent in Dezimalzahl, dann mal. 20 % von 150 sind 30. Das ist der Prozentwert.",
         "tasks": [
           {
@@ -118,7 +118,7 @@
       },
       {
         "title": "Wie viel Prozent sind das?",
-        "body": "30 von 150:\n\n$30 : 150 = 0{,}2 = 20\\,\\%$\n\nTeil geteilt durch Ganzes.",
+        "body": "30 von 150:\n\nTeil geteilt durch Ganzes: $30 : 150 = 0{,}2$\n\nAls Prozent: $0{,}2 = 20\\,\\%$",
         "say": "Teil durch Ganzes, dann mal 100. Das ist der Prozentsatz.",
         "tasks": [
           {
@@ -135,8 +135,8 @@
       },
       {
         "title": "Das Ganze finden",
-        "body": "20 % sind 30. Wie viel ist alles?\n\n$30 : 0{,}2 = 150$\n\nTeil geteilt durch Prozentsatz.",
-        "say": "Oder mit 1 %: 30 geteilt durch 20 ist 1,5. Mal 100 ist 150.",
+        "body": "20 % sind 30. Wie viel ist alles?\n\n1 % ist dann $30 : 20 = 1{,}5$\n\n100 % sind $1{,}5 \\cdot 100 = 150$\n\nKürzer mit dem Taschenrechner: $30 : 0{,}2 = 150$",
+        "say": "Du gehst über 1 Prozent. Wenn 20 Prozent 30 sind, teilst du durch 20 und hast 1 Prozent. Mal 100 ergibt das Ganze. Mit dem Taschenrechner geht es in einem Schritt: Teil geteilt durch den Prozentsatz als Dezimalzahl.",
         "tasks": [
           {
             "text": "10 % sind 7. Das Ganze ist ___.",
@@ -248,7 +248,7 @@
       },
       {
         "title": "Zinsen im zweiten Jahr",
-        "body": "Nach einem Jahr: 510 €\n\nIm zweiten Jahr gibt es Zinsen auf **510 €**:\n\n$510 \\cdot 0{,}02 = 10{,}20$ €\n\nDie Zinsen bekommen selbst Zinsen. Das nennt man **Zinseszins**.",
+        "body": "Nach einem Jahr: 510 €\n\nIm zweiten Jahr gibt es Zinsen auf **510 €**:\n\n$510 \\cdot 0{,}02 = 10{,}20$ €\n\nNeuer Stand: $510 + 10{,}20 = 520{,}20$ €\n\nDie Zinsen bekommen selbst Zinsen. Das nennt man **Zinseszins**.",
         "say": "Wenn du die Zinsen auf dem Konto lässt, wächst das Geld im nächsten Jahr etwas schneller. Die Bank rechnet dann mit dem neuen, größeren Betrag. Für mehrere Jahre nimmst du das Geld einfach mehrmals mit 1,02 mal. Zweimal für zwei Jahre, dreimal für drei."
       },
       {

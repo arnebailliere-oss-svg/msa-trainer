@@ -10,7 +10,8 @@
     "requires": [
       "P_MATH_ZEICHEN",
       "P_MATH_TERME",
-      "P_MATH_GLEICHUNG"
+      "P_MATH_GLEICHUNG",
+      "P_MATH_FUNKTION"
     ],
     "steps": [
       {
@@ -149,7 +150,7 @@
       },
       {
         "title": "Idee 2: Addieren",
-        "body": "(I) $x + y = 10$\n\n(II) $x - y = 2$\n\nBeide Zeilen zusammenzählen: $2x = 12$\n\nTeilen durch 2: $x = 6$\n\nIn (I) einsetzen: $6 + y = 10$, also $y = 4$\n\nDieser Weg heißt **Additionsverfahren**.",
+        "body": "(I) $x + y = 10$\n\n(II) $x - y = 2$\n\nZähle die beiden Zeilen zusammen.\n\nLinks: $x + x = 2x$. Aus $y - y$ wird nichts.\n\nRechts: $10 + 2 = 12$\n\nAlso $2x = 12$ und damit $x = 6$.\n\nIn (I): $6 + y = 10$, also $y = 4$\n\nDieser Weg heißt **Additionsverfahren**.",
         "say": "Du zählst die linken Seiten zusammen und die rechten Seiten zusammen. Dabei treffen plus y und minus y aufeinander und heben sich auf. Übrig bleibt eine Zeile nur mit x. Wenn du das x kennst, setzt du es in eine der beiden Zeilen ein und findest das y.",
         "tasks": [
           {
@@ -166,7 +167,7 @@
       },
       {
         "title": "Wenn nichts wegfällt",
-        "body": "(I) $x + 2y = 8$\n\n(II) $x + y = 5$\n\nNimm (II) mal $-1$: $-x - y = -5$\n\nJetzt zusammenzählen: $y = 3$\n\nIn (II) einsetzen: $x + 3 = 5$, also $x = 2$",
+        "body": "(I) $x + 2y = 8$\n\n(II) $x + y = 5$\n\nNimm (II) mal $-1$: $-x - y = -5$\n\nZähle (I) und die neue Zeile zusammen.\n\n$x - x$ fällt weg. $2y - y = y$. Rechts: $8 - 5 = 3$\n\nAlso $y = 3$.\n\nIn (II): $x + 3 = 5$, also $x = 2$",
         "tasks": [
           {
             "text": "(I) $x + 3y = 9$, (II) $x + y = 5$. Damit das $x$ wegfällt, nimmst du (II) mal ___.",

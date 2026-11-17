@@ -54,6 +54,12 @@ migrate("primers/math_01_bruch.json", (p, h) => {
   h.body("Mal: einfach durch", "$\\frac{2}{3} \\cdot \\frac{3}{4}$", "Oben: $2 \\cdot 3 = 6$", "Unten: $3 \\cdot 4 = 12$", "Ergebnis: $\\frac{6}{12}$", "Gekürzt: $\\frac{1}{2}$", "Zähler mal Zähler, Nenner mal Nenner.");
   h.body("Geteilt: umdrehen und mal", "$\\frac{1}{2} : \\frac{1}{4}$", "Den zweiten Bruch **umdrehen**: Aus $\\frac{1}{4}$ wird $\\frac{4}{1}$.", "Dann mal: $\\frac{1}{2} \\cdot \\frac{4}{1} = \\frac{4}{2}$", "$\\frac{4}{2} = 2$", "Der umgedrehte Bruch heißt **Kehrwert**.");
 
+  // Read-through: each step of expanding is shown, and the board that only poses the problem no longer skips ahead.
+  p.requires = ["P_MATH_ZEICHEN"];
+  h.body("Erweitern: mehr Stücke, gleiche Pizza", "$\\frac{1}{2}$", "Oben mal 2 und unten mal 2: $\\frac{2}{4}$", "Noch einmal oben und unten mal 2: $\\frac{4}{8}$", "Der Wert bleibt gleich: Es ist immer die halbe Pizza.");
+  h.body("Ungleiche Nenner: erst gleich machen", "$\\frac{1}{2} + \\frac{1}{3}$", "Die Stücke sind verschieden groß. So kannst du sie nicht zählen.", "Erst müssen beide Brüche denselben Nenner bekommen.", "Wie das geht, zeigen die nächsten zwei Tafeln.");
+  h.body("Der berühmte Fehler", "$\\frac{1}{2} + \\frac{1}{3}$ ist **nicht** $\\frac{2}{5}$.", "Oben plus oben, unten plus unten: **verboten**.", "Richtig: erst beide auf Sechstel bringen.", "$\\frac{3}{6} + \\frac{2}{6} = \\frac{5}{6}$");
+
   h.chapters([
     ["Eine Pizza in Stücken", "Was ein Bruch ist"],
     ["Erweitern: mehr Stücke, gleiche Pizza", "Erweitern und Kürzen"],

@@ -53,6 +53,10 @@ migrate("primers/math_03_terme.json", (p, h) => {
     }),
   );
 
+  // Read-through: one line per step when a bracket is opened or closed.
+  h.body("Verteilen", "$2 \\cdot (x + 3)$", "Die 2 wird auf **jeden** in der Klammer verteilt:", "$2 \\cdot x + 2 \\cdot 3$", "Ausgerechnet: $2x + 6$", "Das heißt **Distributivgesetz**.");
+  h.body("Ausklammern = rückwärts", "$4x + 8$", "In beiden steckt die 4: $4 \\cdot x$ und $4 \\cdot 2$", "Die 4 kommt **vor die Klammer**:", "$4 \\cdot (x + 2)$");
+
   h.chapters([
     ["Eine Kiste namens x", "Was ein x ist"],
     ["Äpfel zu Äpfeln", "Zusammenfassen"],

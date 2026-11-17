@@ -67,7 +67,7 @@
       },
       {
         "title": "Das Gegenereignis",
-        "body": "$P(\\text{nicht rot}) = 1 - \\frac{3}{10} = \\frac{7}{10}$\n\nAlle Wahrscheinlichkeiten zusammen sind **1**.\n\nDas Gegenteil eines Ereignisses heißt **Gegenereignis**.",
+        "body": "$P(\\text{nicht rot}) = 1 - \\frac{3}{10}$\n\nDie 1 ist dasselbe wie $\\frac{10}{10}$.\n\n$\\frac{10}{10} - \\frac{3}{10} = \\frac{7}{10}$\n\nAlle Wahrscheinlichkeiten zusammen sind **1**.\n\nDas Gegenteil eines Ereignisses heißt **Gegenereignis**.",
         "say": "Im Beutel ist jede Kugel entweder rot oder blau. Was nicht rot ist, muss also blau sein. Das Gegenteil bekommt immer den Rest bis 1. Das ist praktisch, wenn sich das Gegenteil leichter ausrechnen lässt.",
         "tasks": [
           {
@@ -144,7 +144,7 @@
       },
       {
         "title": "Summenregel: plus",
-        "body": "Genau einmal rot: rot-blau **oder** blau-rot\n\n$\\frac{3}{10} \\cdot \\frac{7}{10} + \\frac{7}{10} \\cdot \\frac{3}{10} = \\frac{42}{100}$",
+        "body": "Genau einmal rot: rot-blau **oder** blau-rot\n\nWeg rot-blau: $\\frac{3}{10} \\cdot \\frac{7}{10} = \\frac{21}{100}$\n\nWeg blau-rot: $\\frac{7}{10} \\cdot \\frac{3}{10} = \\frac{21}{100}$\n\nZusammen: $\\frac{21}{100} + \\frac{21}{100} = \\frac{42}{100}$",
         "say": "Genau einmal rot kann auf zwei Wegen passieren: erst rot und dann blau, oder erst blau und dann rot. Du rechnest jeden Weg für sich aus, so wie eben. Danach zählst du die beiden Ergebnisse zusammen, weil beide Wege zu deinem Ereignis passen.",
         "tasks": [
           {
@@ -162,7 +162,7 @@
       {
         "chapter": "Listen von Zahlen",
         "title": "Statistik: der Mittelwert",
-        "body": "Noten: 2, 3, 3, 4\n\n$\\frac{2 + 3 + 3 + 4}{4} = \\frac{12}{4} = 3$\n\nAlles zusammen, geteilt durch die Anzahl: Das ist der **Mittelwert**.",
+        "body": "Noten: 2, 3, 3, 4\n\nZusammenzählen: $2 + 3 + 3 + 4 = 12$\n\nDurch die Anzahl teilen: $12 : 4 = 3$\n\nAlles zusammen, geteilt durch die Anzahl: Das ist der **Mittelwert**.",
         "say": "Jetzt geht es um Listen von Zahlen. Der Mittelwert ist das, was du im Alltag Durchschnitt nennst. Du kennst ihn vom Zeugnis. Du zählst alle Werte zusammen und teilst durch die Anzahl der Werte.",
         "tasks": [
           {

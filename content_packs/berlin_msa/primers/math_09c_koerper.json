@@ -46,7 +46,7 @@
       },
       {
         "title": "Oberfläche: die Verpackung",
-        "body": "Die **Oberfläche** sind alle Flächen außen zusammen.\n\nQuader: 6 Rechtecke, je zwei gleich\n\n$O = 2 \\cdot (4 \\cdot 3 + 4 \\cdot 2 + 3 \\cdot 2) = 52\\ \\text{cm}^2$\n\nDer Buchstabe $O$ steht für die Oberfläche.",
+        "body": "Die **Oberfläche** sind alle Flächen außen zusammen.\n\nBoden und Deckel: $4 \\cdot 3 = 12$\n\nVorn und hinten: $4 \\cdot 2 = 8$\n\nLinks und rechts: $3 \\cdot 2 = 6$\n\nJede Fläche gibt es zweimal:\n\n$O = 2 \\cdot (12 + 8 + 6) = 52\\ \\text{cm}^2$\n\n$O$ steht für die Oberfläche.",
         "say": "Stell dir vor, du packst den Körper in Geschenkpapier ein. Die Menge Papier, die du brauchst, ist die Oberfläche. Ein Quader hat sechs Seiten, und gegenüberliegende Seiten sind gleich groß. Weil es eine Fläche ist, steht dahinter Quadratzentimeter.",
         "tasks": [
           {

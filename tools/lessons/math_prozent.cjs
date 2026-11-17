@@ -49,6 +49,13 @@ migrate("primers/math_02_prozent.json", (p, h) => {
     }),
   );
 
+  // Read-through: where a decimal comes from is written on the board; the whole is found via 1 %.
+  h.body("Der Teil vom Ganzen", "20 % von 150:", "20 % als Dezimalzahl: $0{,}2$", "$150 \\cdot 0{,}2 = 30$", "Ganzes mal Prozentsatz als Dezimalzahl.");
+  h.body("Wie viel Prozent sind das?", "30 von 150:", "Teil geteilt durch Ganzes: $30 : 150 = 0{,}2$", "Als Prozent: $0{,}2 = 20\\,\\%$");
+  h.body("Das Ganze finden", "20 % sind 30. Wie viel ist alles?", "1 % ist dann $30 : 20 = 1{,}5$", "100 % sind $1{,}5 \\cdot 100 = 150$", "Kürzer mit dem Taschenrechner: $30 : 0{,}2 = 150$");
+  h.say("Das Ganze finden", "Du gehst über 1 Prozent. Wenn 20 Prozent 30 sind, teilst du durch 20 und hast 1 Prozent. Mal 100 ergibt das Ganze. Mit dem Taschenrechner geht es in einem Schritt: Teil geteilt durch den Prozentsatz als Dezimalzahl.");
+  h.body("Zinsen im zweiten Jahr", "Nach einem Jahr: 510 €", "Im zweiten Jahr gibt es Zinsen auf **510 €**:", "$510 \\cdot 0{,}02 = 10{,}20$ €", "Neuer Stand: $510 + 10{,}20 = 520{,}20$ €", "Die Zinsen bekommen selbst Zinsen. Das nennt man **Zinseszins**.");
+
   h.chapters([
     ["Von hundert", "Was Prozent bedeutet"],
     ["Der Teil vom Ganzen", "Die drei Grundaufgaben"],

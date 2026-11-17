@@ -65,6 +65,20 @@ migrate("primers/math_07_funktionen.json", (p, h) => {
   h.board("Die allgemeine Form").widget = "line-explorer";
   h.board("Nullstelle").figure = { ...grid, lines: [{ m: 2, n: 1, label: "y = 2x + 1" }], points: [{ x: -0.5, y: 0, label: "Nullstelle" }] };
 
+  // Read-through: no arrows on the board; reading the slope from two points gets its own board (the Spickzettel
+  // uses it); the zero is found one step per line.
+  h.body("Die Maschine", "Regel: **verdopple und plus 1**", "$x = 2$ rein, $5$ raus", "$x = 3$ rein, $7$ raus", "$y = 2x + 1$", "So eine Regel heißt **Funktion**.");
+  h.body("Was ist die Steigung?", "$y = 2x + 1$: Die **2** ist die **Steigung** $m$.", "Ein Schritt nach rechts bedeutet **2** Schritte nach oben.");
+  h.body("Negative Steigung", "$y = -x + 4$: Steigung $-1$", "Ein Schritt nach rechts bedeutet 1 Schritt nach **unten**.", "Die Gerade **fällt**.");
+  h.after(
+    "Negative Steigung",
+    b("Die Steigung ablesen", ["Such dir zwei Punkte auf der Geraden.", "Von $(0\\,|\\,1)$ zu $(2\\,|\\,5)$: 2 nach rechts, 4 nach oben", "Steigung: nach oben geteilt durch nach rechts", "$m = 4 : 2 = 2$"], "Manchmal siehst du nur das Bild und sollst die Steigung herausfinden. Nimm zwei Punkte, die genau auf Gitterlinien liegen. Zähl, wie weit es von einem zum anderen nach rechts geht und wie weit nach oben. Dann teilst du: nach oben durch nach rechts.", {
+      figure: { ...grid, lines: [{ m: 2, n: 1, label: "y = 2x + 1" }], points: [{ x: 0, y: 1, label: "(0|1)" }, { x: 2, y: 5, label: "(2|5)" }] },
+      tasks: [k("Von einem Punkt zum nächsten: 3 nach rechts und 6 nach oben. Die Steigung ist ___.", "2", ["3"], "Nach oben geteilt durch nach rechts: 6 geteilt durch 3.", "Welche der beiden Zahlen wird durch die andere geteilt?")],
+    }),
+  );
+  h.body("Nullstelle", "Wo ist $y = 0$?", "$2x + 1 = 0 \\quad | -1$", "$2x = -1 \\quad | :2$", "$x = -0{,}5$", "Dort schneidet die Gerade die x-Achse. Diese Stelle heißt **Nullstelle**.");
+
   h.chapters([
     ["Die Maschine", "Maschine, Tabelle und Bild"],
     ["Was ist die Steigung?", "Steigung und Startwert"],

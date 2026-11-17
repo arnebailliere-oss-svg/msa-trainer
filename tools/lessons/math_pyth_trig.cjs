@@ -69,6 +69,9 @@ migrate("primers/math_09b_pythagoras.json", (p, h) => {
   h.board("Seite berechnen").figure = { type: "rightTriangle", a: 5, b: 8.66, labels: { a: "a = ?", c: "c = 10", alpha: "30°" } };
   h.board("Winkel berechnen").figure = { type: "rightTriangle", a: 5, b: 8.66, labels: { a: "a = 5", c: "c = 10", alpha: "α = ?" } };
 
+  // Read-through: the board says why the sine is the right choice.
+  h.body("Seite berechnen", "$c = 10$ und $\\alpha = 30°$, gesucht ist $a$.", "$a$ liegt gegenüber vom Winkel, $c$ ist die Hypotenuse: Das ist der Sinus.", "$\\sin 30° = \\frac{a}{10}$", "Beide Seiten mal 10: $a = 10 \\cdot \\sin 30°$", "$a = 10 \\cdot 0{,}5 = 5$");
+
   h.chapters([
     ["Das rechtwinklige Dreieck", "Der Satz des Pythagoras"],
     ["Gegenkathete und Ankathete", "Sinus, Kosinus und Tangens"],

@@ -18,7 +18,7 @@
       {
         "chapter": "Die Parabel",
         "title": "x² macht eine Schüssel",
-        "body": "$y = x^2$\n\n$x = 2$ → $4$\n\n$x = -2$ → auch $4$\n\nLinks und rechts gleich: **symmetrisch**.\n\nDiese Kurve heißt **Parabel**.",
+        "body": "$y = x^2$\n\n$x = 2$: $y = 2 \\cdot 2 = 4$\n\n$x = -2$: $y = (-2) \\cdot (-2) = 4$\n\nLinks und rechts gleich: **symmetrisch**.\n\nDiese Kurve heißt **Parabel**.",
         "figure": {
           "type": "coordinateSystem",
           "xmin": -4,
@@ -108,8 +108,90 @@
         ]
       },
       {
+        "title": "Nach oben und nach unten schieben",
+        "body": "$y = x^2 + 3$: Die Parabel rutscht 3 nach **oben**.\n\n$y = x^2 - 2$: Sie rutscht 2 nach **unten**.\n\nDer Scheitelpunkt wandert mit: $S(0\\,|\\,-2)$",
+        "figure": {
+          "type": "coordinateSystem",
+          "xmin": -4,
+          "xmax": 4,
+          "ymin": -4,
+          "ymax": 8,
+          "width": 300,
+          "height": 320,
+          "parabolas": [
+            {
+              "a": 1,
+              "d": 0,
+              "e": -2,
+              "label": "y = x² − 2"
+            }
+          ],
+          "points": [
+            {
+              "x": 0,
+              "y": -2,
+              "label": "S"
+            }
+          ]
+        },
+        "tasks": [
+          {
+            "text": "$y = x^2 + 4$ hat den Scheitelpunkt ___.",
+            "choices": [
+              "$S(0\\,|\\,4)$",
+              "$S(4\\,|\\,0)$"
+            ],
+            "correct": "$S(0\\,|\\,4)$",
+            "why": "Die Zahl hinter dem x hoch 2 schiebt nach oben. Zur Seite bewegt sich nichts.",
+            "hint": "Schiebt die Zahl am Ende nach oben oder zur Seite?"
+          }
+        ],
+        "say": "Eine Zahl hinter dem x hoch 2 hebt oder senkt die ganze Schüssel. Bei plus 3 liegt jeder Punkt 3 höher als vorher. Bei minus 2 liegt jeder Punkt 2 tiefer. Die Form bleibt dieselbe, nur die Höhe ändert sich."
+      },
+      {
+        "title": "Nach rechts und nach links schieben",
+        "body": "$y = (x - 1)^2$: Die Parabel rutscht 1 nach **rechts**.\n\n$y = (x + 1)^2$: Sie rutscht 1 nach **links**.\n\nAchtung, es ist umgekehrt: Minus in der Klammer heißt nach rechts.\n\nBei $y = (x - 1)^2$ liegt der Scheitelpunkt bei $S(1\\,|\\,0)$.",
+        "figure": {
+          "type": "coordinateSystem",
+          "xmin": -3,
+          "xmax": 5,
+          "ymin": -2,
+          "ymax": 8,
+          "width": 300,
+          "height": 320,
+          "parabolas": [
+            {
+              "a": 1,
+              "d": 1,
+              "e": 0,
+              "label": "(x − 1)²"
+            }
+          ],
+          "points": [
+            {
+              "x": 1,
+              "y": 0,
+              "label": "S"
+            }
+          ]
+        },
+        "tasks": [
+          {
+            "text": "$y = (x - 3)^2$ hat den Scheitelpunkt ___.",
+            "choices": [
+              "$S(3\\,|\\,0)$",
+              "$S(-3\\,|\\,0)$"
+            ],
+            "correct": "$S(3\\,|\\,0)$",
+            "why": "Die Klammer wird null, wenn x gleich 3 ist. Dort liegt der tiefste Punkt.",
+            "hint": "Für welche Zahl wird die Klammer genau null?"
+          }
+        ],
+        "say": "Steht die Zahl in der Klammer beim x, rutscht die Schüssel zur Seite. Der tiefste Punkt liegt dort, wo die Klammer null wird. Bei x minus 1 ist das bei x gleich 1, also rechts. Deshalb wirkt das Vorzeichen in der Klammer umgekehrt."
+      },
+      {
         "title": "Die Parabel verschieben",
-        "body": "$y = (x - 1)^2 - 2$\n\nScheitelpunkt: $S(1\\,|\\,-2)$\n\nIn der Klammer steht das Gegenteil: Aus $-1$ wird $x = 1$.",
+        "body": "Beides zusammen: $y = (x - 1)^2 - 2$\n\n1 nach rechts und 2 nach unten\n\nScheitelpunkt: $S(1\\,|\\,-2)$\n\nDiese Schreibweise heißt **Scheitelpunktform**.",
         "figure": {
           "type": "coordinateSystem",
           "xmin": -3,
@@ -257,7 +339,7 @@
       },
       {
         "title": "Die pq-Formel",
-        "body": "$x_{1,2} = -\\frac{p}{2} \\pm \\sqrt{\\left(\\frac{p}{2}\\right)^2 - q}$\n\nVorn steht die Hälfte von $p$ mit einem Minus davor.\n\nUnter der Wurzel steht: die Hälfte von $p$ zum Quadrat, minus $q$.",
+        "body": "$x_{1,2} = -\\frac{p}{2} \\pm \\sqrt{\\left(\\frac{p}{2}\\right)^2 - q}$\n\n$x_{1,2}$ heißt: die beiden Lösungen $x_1$ und $x_2$.\n\nVorn steht die Hälfte von $p$ mit einem Minus davor.\n\nUnter der Wurzel steht: die Hälfte von $p$ zum Quadrat, minus $q$.",
         "say": "Die Formel sieht wild aus, aber sie besteht nur aus zwei Teilen. Vorn steht die Hälfte von p mit einem Minus. Dahinter kommt plus-minus eine Wurzel. Du musst die Formel nicht auswendig können, denn sie steht auf dem Formelblatt. Wie man sie benutzt, zeigt die nächste Tafel.",
         "tasks": [
           {
@@ -274,7 +356,7 @@
       },
       {
         "title": "Die pq-Formel Schritt für Schritt",
-        "body": "$x^2 + 6x + 5 = 0$\n\nAblesen: $p = 6$ und $q = 5$\n\nHälfte von $p$: 3\n\nUnter der Wurzel: $3^2 - 5 = 4$\n\n$x_{1,2} = -3 \\pm \\sqrt{4} = -3 \\pm 2$\n\n$x_1 = -1$ und $x_2 = -5$",
+        "body": "$x^2 + 6x + 5 = 0$\n\nAblesen: $p = 6$ und $q = 5$\n\nHälfte von $p$: 3\n\nUnter der Wurzel: $3^2 - 5 = 4$\n\nWurzel: $\\sqrt{4} = 2$\n\n$x_{1,2} = -3 \\pm 2$\n\nMit Plus: $x_1 = -1$. Mit Minus: $x_2 = -5$.",
         "tasks": [
           {
             "text": "$x^2 + 4x + 3 = 0$. Unter der Wurzel steht $2^2 - 3 = $ ___",

@@ -188,7 +188,7 @@
       {
         "chapter": "Schwierigere Gleichungen",
         "title": "x auf beiden Seiten",
-        "body": "$5x + 3 = 3x + 11 \\quad | -3x$\n\n$2x + 3 = 11 \\quad | -3$\n\n$2x = 8 \\quad | :2$\n\n$x = 4$",
+        "body": "$5x + 3 = 3x + 11$\n\nNimm auf beiden Seiten $3x$ weg: $| -3x$\n\nLinks bleibt $2x + 3$. Rechts bleibt $11$.\n\n$2x + 3 = 11$\n\nAb hier wie gewohnt: $| -3$, dann $| :2$\n\n$x = 4$",
         "say": "Erst alle x auf eine Seite. Dann wie gewohnt. Das Ziel ist immer: x steht allein.",
         "tasks": [
           {
@@ -223,7 +223,7 @@
       {
         "title": "Wie viele Lösungen?",
         "body": "$x + 1 = x + 1$: **immer** wahr\n\n$x = x + 1$: **nie** wahr\n\n$x^2 = 9$: $x = 3$ oder $x = -3$\n\nAlle Lösungen zusammen heißen **Lösungsmenge**.",
-        "say": "Meistens gibt es genau eine Lösung. Aber nicht immer, und genau das fragen sie gern.",
+        "say": "Meistens gibt es genau eine Lösung, aber nicht immer. Bei x hoch 2 gleich 9 passen zwei Zahlen: 3 mal 3 ist 9, und minus 3 mal minus 3 ist auch 9. Genau solche Fälle werden in der Prüfung gern gefragt.",
         "tasks": [
           {
             "text": "$x^2 = 16$ hat ___.",

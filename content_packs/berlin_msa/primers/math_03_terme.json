@@ -228,7 +228,7 @@
       },
       {
         "title": "Verteilen",
-        "body": "$2 \\cdot (x + 3) = 2 \\cdot x + 2 \\cdot 3 = 2x + 6$\n\nDie 2 wird auf **jeden** in der Klammer verteilt.\n\nDas heißt **Distributivgesetz**.",
+        "body": "$2 \\cdot (x + 3)$\n\nDie 2 wird auf **jeden** in der Klammer verteilt:\n\n$2 \\cdot x + 2 \\cdot 3$\n\nAusgerechnet: $2x + 6$\n\nDas heißt **Distributivgesetz**.",
         "say": "Distribuieren heißt verteilen. Stell dir 2 Tüten vor, in jeder ein x und drei Bonbons. Zusammen: 2x und 6 Bonbons.",
         "tasks": [
           {
@@ -251,7 +251,7 @@
       },
       {
         "title": "Ausklammern = rückwärts",
-        "body": "$4x + 8 = 4 \\cdot (x + 2)$\n\nWas steckt in beiden? Die 4.\n\nDie kommt **vor die Klammer**.",
+        "body": "$4x + 8$\n\nIn beiden steckt die 4: $4 \\cdot x$ und $4 \\cdot 2$\n\nDie 4 kommt **vor die Klammer**:\n\n$4 \\cdot (x + 2)$",
         "say": "Probe: wieder ausmultiplizieren. 4 mal x plus 4 mal 2 ist 4x + 8. Passt.",
         "tasks": [
           {

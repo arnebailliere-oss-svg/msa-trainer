@@ -57,6 +57,10 @@ migrate("primers/math_03b_gleichung.json", (p, h) => {
     }),
   );
 
+  // Read-through: what stays on each side is said, and why x² = 9 has two solutions.
+  h.body("x auf beiden Seiten", "$5x + 3 = 3x + 11$", "Nimm auf beiden Seiten $3x$ weg: $| -3x$", "Links bleibt $2x + 3$. Rechts bleibt $11$.", "$2x + 3 = 11$", "Ab hier wie gewohnt: $| -3$, dann $| :2$", "$x = 4$");
+  h.say("Wie viele Lösungen?", "Meistens gibt es genau eine Lösung, aber nicht immer. Bei x hoch 2 gleich 9 passen zwei Zahlen: 3 mal 3 ist 9, und minus 3 mal minus 3 ist auch 9. Genau solche Fälle werden in der Prüfung gern gefragt.");
+
   h.chapters([
     ["Ein Rätsel", "Was eine Gleichung ist"],
     ["Auf beiden Seiten das Gleiche", "Der sichere Weg zur Lösung"],

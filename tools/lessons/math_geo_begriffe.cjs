@@ -66,6 +66,9 @@ migrate("primers/math_09_geometrie.json", (p, h) => {
     { caption: "gleichseitig", figure: { type: "triangle", alpha: 60, beta: 60, labels: { alpha: "60°", beta: "60°", gamma: "60°" } } },
   ];
 
+  // Read-through: the triangle area gets a worked example.
+  h.body("Die Höhe", "Die **Höhe** $h$ steht **senkrecht** auf der Grundseite $g$.", "Dreieck: $A = \\frac{g \\cdot h}{2}$", "Beispiel: $g = 8$ cm und $h = 5$ cm", "$8 \\cdot 5 = 40$, die Hälfte ist $20\\ \\text{cm}^2$");
+
   h.chapters([
     ["Umfang: einmal außen rum", "Umfang und Fläche"],
     ["Das Dreieck beschriften", "Dreiecke und Winkel"],

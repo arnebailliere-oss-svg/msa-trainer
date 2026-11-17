@@ -265,7 +265,7 @@
       },
       {
         "title": "Die Höhe",
-        "body": "Die **Höhe** $h$ steht **senkrecht** auf der Grundseite $g$.\n\nDreieck: $A = \\frac{g \\cdot h}{2}$",
+        "body": "Die **Höhe** $h$ steht **senkrecht** auf der Grundseite $g$.\n\nDreieck: $A = \\frac{g \\cdot h}{2}$\n\nBeispiel: $g = 8$ cm und $h = 5$ cm\n\n$8 \\cdot 5 = 40$, die Hälfte ist $20\\ \\text{cm}^2$",
         "figure": {
           "type": "triangle",
           "alpha": 50.2,

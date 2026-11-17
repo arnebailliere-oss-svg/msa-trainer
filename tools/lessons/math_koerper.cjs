@@ -92,6 +92,9 @@ migrate("primers/math_09c_koerper.json", (p, h) => {
   ];
   h.board("Die Kugel").figure = { type: "sphere", labels: { r: "r" } };
 
+  // Read-through: the surface is added up face by face.
+  h.body("Oberfläche: die Verpackung", "Die **Oberfläche** sind alle Flächen außen zusammen.", "Boden und Deckel: $4 \\cdot 3 = 12$", "Vorn und hinten: $4 \\cdot 2 = 8$", "Links und rechts: $3 \\cdot 2 = 6$", "Jede Fläche gibt es zweimal:", "$O = 2 \\cdot (12 + 8 + 6) = 52\\ \\text{cm}^2$", "$O$ steht für die Oberfläche.");
+
   h.chapters([
     ["Volumen: wie viel passt rein", "Volumen und Oberfläche"],
     ["Der Kreis", "Der Kreis und die Dose"],

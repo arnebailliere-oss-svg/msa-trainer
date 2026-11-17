@@ -7,6 +7,9 @@
     "hook": "Zahlen mit einem Strich in der Mitte machen vielen Angst. Dabei steckt dahinter nur eine Pizza, die man teilt. Wenn du dieses Bild im Kopf hast, ist der Rest Handwerk. Wir gehen es in Ruhe durch, ein Stück nach dem anderen.",
     "outro": "Pizza, Stücke, gleich groß schneiden: Das ist alles, was hinter Brüchen steckt. Jetzt kannst du in die Lektion.",
     "standard": 2,
+    "requires": [
+      "P_MATH_ZEICHEN"
+    ],
     "steps": [
       {
         "chapter": "Was ein Bruch ist",
@@ -79,7 +82,7 @@
       {
         "chapter": "Erweitern und Kürzen",
         "title": "Erweitern: mehr Stücke, gleiche Pizza",
-        "body": "$\\frac{1}{2} = \\frac{2}{4} = \\frac{4}{8}$\n\nOben **und** unten mal die gleiche Zahl.\n\nDer Wert bleibt gleich.",
+        "body": "$\\frac{1}{2}$\n\nOben mal 2 und unten mal 2: $\\frac{2}{4}$\n\nNoch einmal oben und unten mal 2: $\\frac{4}{8}$\n\nDer Wert bleibt gleich: Es ist immer die halbe Pizza.",
         "say": "Du schneidest die Stücke nur kleiner. Die Menge Pizza ändert sich nicht.",
         "tasks": [
           {
@@ -165,7 +168,7 @@
       },
       {
         "title": "Ungleiche Nenner: erst gleich machen",
-        "body": "$\\frac{1}{2} + \\frac{1}{3}$\n\nErweitern auf Sechstel:\n\n$\\frac{3}{6} + \\frac{2}{6} = \\frac{5}{6}$",
+        "body": "$\\frac{1}{2} + \\frac{1}{3}$\n\nDie Stücke sind verschieden groß. So kannst du sie nicht zählen.\n\nErst müssen beide Brüche denselben Nenner bekommen.\n\nWie das geht, zeigen die nächsten zwei Tafeln.",
         "say": "Halbe und Drittel kann man nicht direkt zählen, die Stücke sind verschieden groß. Erst gleich groß schneiden, dann zählen."
       },
       {
@@ -204,7 +207,7 @@
       },
       {
         "title": "Der berühmte Fehler",
-        "body": "$\\frac{1}{2} + \\frac{1}{3}$ ist **nicht** $\\frac{2}{5}$.\n\nOben plus oben, unten plus unten: **verboten**.",
+        "body": "$\\frac{1}{2} + \\frac{1}{3}$ ist **nicht** $\\frac{2}{5}$.\n\nOben plus oben, unten plus unten: **verboten**.\n\nRichtig: erst beide auf Sechstel bringen.\n\n$\\frac{3}{6} + \\frac{2}{6} = \\frac{5}{6}$",
         "say": "Zwei Fünftel sind sogar weniger als eine halbe Pizza. Das kann nicht stimmen, wenn du eine halbe und noch etwas isst."
       },
       {

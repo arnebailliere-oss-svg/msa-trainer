@@ -280,7 +280,7 @@
       },
       {
         "title": "Seite berechnen",
-        "body": "$c = 10$ und $\\alpha = 30°$, gesucht ist $a$.\n\n$\\sin 30° = \\frac{a}{10}$\n\nBeide Seiten mal 10: $a = 10 \\cdot \\sin 30°$\n\n$a = 10 \\cdot 0{,}5 = 5$",
+        "body": "$c = 10$ und $\\alpha = 30°$, gesucht ist $a$.\n\n$a$ liegt gegenüber vom Winkel, $c$ ist die Hypotenuse: Das ist der Sinus.\n\n$\\sin 30° = \\frac{a}{10}$\n\nBeide Seiten mal 10: $a = 10 \\cdot \\sin 30°$\n\n$a = 10 \\cdot 0{,}5 = 5$",
         "say": "Du schreibst zuerst die passende Zeile vom Formelblatt hin. Dann setzt du die Zahlen ein, die du kennst. Übrig bleibt eine Gleichung mit einer Unbekannten. Die löst du wie gewohnt, hier indem du beide Seiten mal 10 nimmst.",
         "tasks": [
           {

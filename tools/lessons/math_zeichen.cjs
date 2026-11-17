@@ -54,6 +54,35 @@ migrate("primers/math_00_zeichen.json", (p, h) => {
     }),
   );
 
+  // Read-through: nothing is used before its board. Letters come before "3a", Punkt vor Strich before brackets,
+  // and multiplying negative numbers gets its own board because later lessons rely on "minus mal minus".
+  {
+    const move = (title, afterTitle) => {
+      const s = h.board(title);
+      p.steps.splice(p.steps.indexOf(s), 1);
+      h.after(afterTitle, s);
+    };
+    move("Der Punkt darf verschwinden", "Buchstaben sind Kisten");
+    move("Klammern zuerst", "Punkt vor Strich");
+  }
+  h.after(
+    "Mal ist ein Punkt",
+    b("Mal mit Minuszahlen", ["$3 \\cdot (-2) = -6$", "Dreimal 2 Euro Schulden sind 6 Euro Schulden.", "$(-3) \\cdot (-2) = 6$", "Minus mal Minus ergibt **Plus**.", "Die Bögen um die Zahl zeigen nur: Das Minus gehört zu ihr."], "Mit Minuszahlen kannst du auch malnehmen. Ist eine der beiden Zahlen negativ, wird das Ergebnis negativ. Sind beide negativ, wird das Ergebnis positiv. Das klingt seltsam, aber du brauchst es später oft. Merk dir einfach: Zwei Minus heben sich beim Malnehmen auf.", {
+      tasks: [k("$(-4) \\cdot (-2) = $ ___", "$8$", ["$-8$"], "Beide Zahlen sind negativ. Zwei Minus heben sich beim Malnehmen auf.", "Wie viele der beiden Zahlen haben ein Minus davor?")],
+    }),
+  );
+  h.body("Buchstaben sind Kisten", "$x$ ist eine **Kiste**. Darin liegt eine Zahl, die du noch nicht kennst.", "So ein Buchstabe heißt **Variable**.", "$x + 2$ mit $x = 4$: $4 + 2 = 6$");
+  h.tasks("Buchstaben sind Kisten", k("$x + 3$ mit $x = 5$ ergibt ___.", "8", ["53"], "Die 5 kommt an die Stelle vom x. Dann rechnest du 5 plus 3.", "Setz die Zahl an die Stelle vom Buchstaben und rechne dann aus."));
+  h.body("Der Punkt darf verschwinden", "$3a$ heißt $3 \\cdot a$.", "$2x$ heißt $2 \\cdot x$.", "Zwischen Zahl und Buchstabe schreibt keiner den Punkt.", "$3x + 2$ mit $x = 4$: $3 \\cdot 4 + 2 = 14$");
+  h.tasks(
+    "Der Punkt darf verschwinden",
+    k("$5b$ heißt ___.", "$5 \\cdot b$", ["$5 + b$"], "Zwischen Zahl und Buchstabe steht ein unsichtbarer Malpunkt.", "Welches Zeichen lässt man zwischen Zahl und Buchstabe weg?"),
+    k("$2x + 1$ mit $x = 5$ ergibt ___.", "11", ["26"], "2 mal 5 ist 10, und 10 plus 1 ergibt 11.", "Denk an den unsichtbaren Malpunkt zwischen der Zahl und dem Buchstaben."),
+  );
+  h.say("Punkt vor Strich", "Beim Rechnen gibt es eine feste Reihenfolge. Mal und Geteilt werden mit Punkten geschrieben, Plus und Minus mit Strichen. Deshalb heißt die Regel Punkt vor Strich. Wer einfach von links nach rechts rechnet, bekommt hier 20 heraus, und das ist falsch.");
+  h.say("Klammern zuerst", "Eine Klammer ist stärker als Punkt vor Strich. Was in ihr steht, rechnest du als Erstes aus. Vergleich die beiden Zeilen: Mit Klammer kommt 14 heraus, ohne Klammer nur 10.");
+  h.body("Prozent heißt „von hundert“", "$25\\,\\%$ heißt 25 von 100.", "Geschrieben mit dem Geteilt-Strich: $\\frac{25}{100}$", "Als Zahl mit Komma: $0{,}25$", "$\\%$ = pro **cent**um = von **hundert**");
+
   h.chapters([
     ["Mathe ist eine Sprache", "Die Rechenzeichen"],
     ["Hochzahlen", "Hochzahl und Wurzel"],

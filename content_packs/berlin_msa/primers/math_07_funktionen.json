@@ -16,7 +16,7 @@
       {
         "chapter": "Maschine, Tabelle und Bild",
         "title": "Die Maschine",
-        "body": "Regel: **verdopple und plus 1**\n\n$x = 2$ rein → $5$ raus\n\n$x = 3$ rein → $7$ raus\n\n$y = 2x + 1$\n\nSo eine Regel heißt **Funktion**.",
+        "body": "Regel: **verdopple und plus 1**\n\n$x = 2$ rein, $5$ raus\n\n$x = 3$ rein, $7$ raus\n\n$y = 2x + 1$\n\nSo eine Regel heißt **Funktion**.",
         "say": "Das x ist die Zahl, die in die Maschine hineinkommt. Das y ist die Zahl, die herauskommt. Die Regel dazwischen ist das, was die Maschine tut. Hier verdoppelt sie die Zahl und zählt dann 1 dazu.",
         "tasks": [
           {
@@ -152,7 +152,7 @@
       {
         "chapter": "Steigung und Startwert",
         "title": "Was ist die Steigung?",
-        "body": "$y = 2x + 1$: Die **2** ist die **Steigung** $m$.\n\nEin Schritt nach rechts → **2** Schritte nach oben.",
+        "body": "$y = 2x + 1$: Die **2** ist die **Steigung** $m$.\n\nEin Schritt nach rechts bedeutet **2** Schritte nach oben.",
         "say": "Die Steigung sagt, wie viel die Gerade klettert, wenn du einen Schritt nach rechts gehst. Bei einer 2 geht es zwei Schritte nach oben, das ist ziemlich steil. Die Steigung ist immer die Zahl, die vor dem x steht.",
         "tasks": [
           {
@@ -195,7 +195,7 @@
       },
       {
         "title": "Negative Steigung",
-        "body": "$y = -x + 4$: Steigung $-1$\n\nEin Schritt nach rechts → 1 Schritt nach **unten**.\n\nDie Gerade **fällt**.",
+        "body": "$y = -x + 4$: Steigung $-1$\n\nEin Schritt nach rechts bedeutet 1 Schritt nach **unten**.\n\nDie Gerade **fällt**.",
         "figure": {
           "type": "coordinateSystem",
           "xmin": -2,
@@ -225,6 +225,51 @@
             "hint": "Welches Vorzeichen hat die Zahl vor dem x?"
           }
         ]
+      },
+      {
+        "title": "Die Steigung ablesen",
+        "body": "Such dir zwei Punkte auf der Geraden.\n\nVon $(0\\,|\\,1)$ zu $(2\\,|\\,5)$: 2 nach rechts, 4 nach oben\n\nSteigung: nach oben geteilt durch nach rechts\n\n$m = 4 : 2 = 2$",
+        "figure": {
+          "type": "coordinateSystem",
+          "xmin": -3,
+          "xmax": 5,
+          "ymin": -2,
+          "ymax": 8,
+          "width": 300,
+          "height": 300,
+          "lines": [
+            {
+              "m": 2,
+              "n": 1,
+              "label": "y = 2x + 1"
+            }
+          ],
+          "points": [
+            {
+              "x": 0,
+              "y": 1,
+              "label": "(0|1)"
+            },
+            {
+              "x": 2,
+              "y": 5,
+              "label": "(2|5)"
+            }
+          ]
+        },
+        "tasks": [
+          {
+            "text": "Von einem Punkt zum nächsten: 3 nach rechts und 6 nach oben. Die Steigung ist ___.",
+            "choices": [
+              "2",
+              "3"
+            ],
+            "correct": "2",
+            "why": "Nach oben geteilt durch nach rechts: 6 geteilt durch 3.",
+            "hint": "Welche der beiden Zahlen wird durch die andere geteilt?"
+          }
+        ],
+        "say": "Manchmal siehst du nur das Bild und sollst die Steigung herausfinden. Nimm zwei Punkte, die genau auf Gitterlinien liegen. Zähl, wie weit es von einem zum anderen nach rechts geht und wie weit nach oben. Dann teilst du: nach oben durch nach rechts."
       },
       {
         "title": "Der Startwert n",
@@ -341,7 +386,7 @@
       },
       {
         "title": "Nullstelle",
-        "body": "Wo ist $y = 0$?\n\n$2x + 1 = 0 \\quad | -1 \\quad | :2$\n\n$x = -0{,}5$\n\nDort schneidet die Gerade die x-Achse. Diese Stelle heißt **Nullstelle**.",
+        "body": "Wo ist $y = 0$?\n\n$2x + 1 = 0 \\quad | -1$\n\n$2x = -1 \\quad | :2$\n\n$x = -0{,}5$\n\nDort schneidet die Gerade die x-Achse. Diese Stelle heißt **Nullstelle**.",
         "say": "An der Nullstelle gibt die Maschine eine Null heraus. Um sie zu finden, schreibst du für y eine 0 und löst die Gleichung nach x auf. Das kannst du schon: erst die Zahl ohne x wegräumen, dann teilen.",
         "tasks": [
           {

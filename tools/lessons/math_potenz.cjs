@@ -57,6 +57,10 @@ migrate("primers/math_04_potenzen.json", (p, h) => {
     }),
   );
 
+  // Read-through: the rule is shown written out before it is named.
+  h.body("Mal bei gleicher Basis", "$2^3 \\cdot 2^2$", "Ausgeschrieben: $2 \\cdot 2 \\cdot 2 \\cdot 2 \\cdot 2$", "Das sind fünf Zweier: $2^5$", "Hochzahlen **addieren**: $3 + 2 = 5$");
+  h.body("Geteilt bei gleicher Basis", "$\\frac{2^5}{2^2}$", "Ausgeschrieben: $\\frac{2 \\cdot 2 \\cdot 2 \\cdot 2 \\cdot 2}{2 \\cdot 2}$", "Zwei Zweier kürzen sich weg, drei bleiben: $2^3$", "Hochzahlen **subtrahieren**: $5 - 2 = 3$");
+
   h.chapters([
     ["Die Abkürzung", "Was eine Potenz ist"],
     ["Hoch 1 und hoch 0", "Besondere Hochzahlen"],

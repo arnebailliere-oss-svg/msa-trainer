@@ -153,7 +153,7 @@
       {
         "chapter": "Rechnen mit Potenzen",
         "title": "Mal bei gleicher Basis",
-        "body": "$2^3 \\cdot 2^2 = 2 \\cdot 2 \\cdot 2 \\cdot 2 \\cdot 2 = 2^5$\n\nHochzahlen **addieren**.",
+        "body": "$2^3 \\cdot 2^2$\n\nAusgeschrieben: $2 \\cdot 2 \\cdot 2 \\cdot 2 \\cdot 2$\n\nDas sind fünf Zweier: $2^5$\n\nHochzahlen **addieren**: $3 + 2 = 5$",
         "say": "Drei Zweier mal zwei Zweier sind fünf Zweier. Darum plus.",
         "tasks": [
           {
@@ -170,7 +170,7 @@
       },
       {
         "title": "Geteilt bei gleicher Basis",
-        "body": "$\\frac{2^5}{2^2} = 2^3$\n\nHochzahlen **subtrahieren**.",
+        "body": "$\\frac{2^5}{2^2}$\n\nAusgeschrieben: $\\frac{2 \\cdot 2 \\cdot 2 \\cdot 2 \\cdot 2}{2 \\cdot 2}$\n\nZwei Zweier kürzen sich weg, drei bleiben: $2^3$\n\nHochzahlen **subtrahieren**: $5 - 2 = 3$",
         "say": "Fünf Zweier, zwei kürzen sich weg, drei bleiben.",
         "tasks": [
           {

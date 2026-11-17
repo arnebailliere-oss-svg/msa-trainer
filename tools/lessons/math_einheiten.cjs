@@ -50,6 +50,9 @@ migrate("primers/math_08_einheiten.json", (p, h) => {
   // Every board that talks about a shape shows it (drawings and try-it-out elements the app already has).
   h.board("Volumen: alles mal 1000").figure = { type: "box", a: 3, b: 3, c: 3, labels: { a: "100 cm", b: "100 cm", c: "100 cm" } };
 
+  // Read-through: the example says how many steps and in which direction.
+  h.body("Beispiel", "$3{,}5$ m in cm: zwei Stufen hinunter, also mal 100", "$3{,}5 \\cdot 100 = 350$ cm", "$4200$ m in km: eine Stufe hinauf, also geteilt durch 1000", "$4200 : 1000 = 4{,}2$ km");
+
   h.chapters([
     ["Die Vorsilben", "Vorsilben und Längen"],
     ["Fläche: alles mal 100", "Flächen, Volumen, Gewicht und Zeit"],

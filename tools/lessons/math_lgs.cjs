@@ -62,6 +62,12 @@ migrate("primers/math_05_lgs.json", (p, h) => {
     }),
   );
 
+  // Read-through: what happens on each side when two lines are added is written out. The picture boards need the
+  // coordinate system, so the lesson on functions comes first.
+  p.requires = ["P_MATH_ZEICHEN", "P_MATH_TERME", "P_MATH_GLEICHUNG", "P_MATH_FUNKTION"];
+  h.body("Idee 2: Addieren", "(I) $x + y = 10$", "(II) $x - y = 2$", "Zähle die beiden Zeilen zusammen.", "Links: $x + x = 2x$. Aus $y - y$ wird nichts.", "Rechts: $10 + 2 = 12$", "Also $2x = 12$ und damit $x = 6$.", "In (I): $6 + y = 10$, also $y = 4$", "Dieser Weg heißt **Additionsverfahren**.");
+  h.body("Wenn nichts wegfällt", "(I) $x + 2y = 8$", "(II) $x + y = 5$", "Nimm (II) mal $-1$: $-x - y = -5$", "Zähle (I) und die neue Zeile zusammen.", "$x - x$ fällt weg. $2y - y = y$. Rechts: $8 - 5 = 3$", "Also $y = 3$.", "In (II): $x + 3 = 5$, also $x = 2$");
+
   h.chapters([
     ["Ein Rätsel mit zwei Zahlen", "Zwei Gleichungen, ein Paar"],
     ["Idee 1: Einsetzen", "Zwei Wege zur Lösung"],

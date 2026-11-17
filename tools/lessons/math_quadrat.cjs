@@ -61,6 +61,24 @@ migrate("primers/math_07b_parabel.json", (p, h) => {
   h.board("Die Parabel verschieben").widget = "parabola-explorer";
   h.board("Nullstellen").figure = { type: "coordinateSystem", xmin: -3, xmax: 5, ymin: -5, ymax: 6, width: 300, height: 320, parabolas: [{ a: 1, d: 1, e: -4, label: "2 Nullstellen" }], points: [{ x: -1, y: 0 }, { x: 3, y: 0 }] };
 
+  // Read-through: moving the parabola is taught in two boards (up/down, right/left) before both are combined;
+  // no arrows on the board; the pq formula names x1 and x2 and is worked one line per step.
+  h.body("x² macht eine Schüssel", "$y = x^2$", "$x = 2$: $y = 2 \\cdot 2 = 4$", "$x = -2$: $y = (-2) \\cdot (-2) = 4$", "Links und rechts gleich: **symmetrisch**.", "Diese Kurve heißt **Parabel**.");
+  h.before(
+    "Die Parabel verschieben",
+    b("Nach oben und nach unten schieben", ["$y = x^2 + 3$: Die Parabel rutscht 3 nach **oben**.", "$y = x^2 - 2$: Sie rutscht 2 nach **unten**.", "Der Scheitelpunkt wandert mit: $S(0\\,|\\,-2)$"], "Eine Zahl hinter dem x hoch 2 hebt oder senkt die ganze Schüssel. Bei plus 3 liegt jeder Punkt 3 höher als vorher. Bei minus 2 liegt jeder Punkt 2 tiefer. Die Form bleibt dieselbe, nur die Höhe ändert sich.", {
+      figure: { type: "coordinateSystem", xmin: -4, xmax: 4, ymin: -4, ymax: 8, width: 300, height: 320, parabolas: [{ a: 1, d: 0, e: -2, label: "y = x² − 2" }], points: [{ x: 0, y: -2, label: "S" }] },
+      tasks: [k("$y = x^2 + 4$ hat den Scheitelpunkt ___.", "$S(0\\,|\\,4)$", ["$S(4\\,|\\,0)$"], "Die Zahl hinter dem x hoch 2 schiebt nach oben. Zur Seite bewegt sich nichts.", "Schiebt die Zahl am Ende nach oben oder zur Seite?")],
+    }),
+    b("Nach rechts und nach links schieben", ["$y = (x - 1)^2$: Die Parabel rutscht 1 nach **rechts**.", "$y = (x + 1)^2$: Sie rutscht 1 nach **links**.", "Achtung, es ist umgekehrt: Minus in der Klammer heißt nach rechts.", "Bei $y = (x - 1)^2$ liegt der Scheitelpunkt bei $S(1\\,|\\,0)$."], "Steht die Zahl in der Klammer beim x, rutscht die Schüssel zur Seite. Der tiefste Punkt liegt dort, wo die Klammer null wird. Bei x minus 1 ist das bei x gleich 1, also rechts. Deshalb wirkt das Vorzeichen in der Klammer umgekehrt.", {
+      figure: { type: "coordinateSystem", xmin: -3, xmax: 5, ymin: -2, ymax: 8, width: 300, height: 320, parabolas: [{ a: 1, d: 1, e: 0, label: "(x − 1)²" }], points: [{ x: 1, y: 0, label: "S" }] },
+      tasks: [k("$y = (x - 3)^2$ hat den Scheitelpunkt ___.", "$S(3\\,|\\,0)$", ["$S(-3\\,|\\,0)$"], "Die Klammer wird null, wenn x gleich 3 ist. Dort liegt der tiefste Punkt.", "Für welche Zahl wird die Klammer genau null?")],
+    }),
+  );
+  h.body("Die Parabel verschieben", "Beides zusammen: $y = (x - 1)^2 - 2$", "1 nach rechts und 2 nach unten", "Scheitelpunkt: $S(1\\,|\\,-2)$", "Diese Schreibweise heißt **Scheitelpunktform**.");
+  h.body("Die pq-Formel", "$x_{1,2} = -\\frac{p}{2} \\pm \\sqrt{\\left(\\frac{p}{2}\\right)^2 - q}$", "$x_{1,2}$ heißt: die beiden Lösungen $x_1$ und $x_2$.", "Vorn steht die Hälfte von $p$ mit einem Minus davor.", "Unter der Wurzel steht: die Hälfte von $p$ zum Quadrat, minus $q$.");
+  h.body("Die pq-Formel Schritt für Schritt", "$x^2 + 6x + 5 = 0$", "Ablesen: $p = 6$ und $q = 5$", "Hälfte von $p$: 3", "Unter der Wurzel: $3^2 - 5 = 4$", "Wurzel: $\\sqrt{4} = 2$", "$x_{1,2} = -3 \\pm 2$", "Mit Plus: $x_1 = -1$. Mit Minus: $x_2 = -5$.");
+
   h.chapters([
     ["x² macht eine Schüssel", "Die Parabel"],
     ["Die einfachste quadratische Gleichung", "Quadratische Gleichungen lösen"],

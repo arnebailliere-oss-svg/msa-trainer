@@ -66,21 +66,21 @@
         ]
       },
       {
-        "title": "Der Punkt darf verschwinden",
-        "body": "$3a$ heißt $3 \\cdot a$.\n\n$2x$ heißt $2 \\cdot x$.\n\nZwischen Zahl und Buchstabe schreibt keiner den Punkt.",
-        "say": "Wenn du irgendwo 3a siehst: still „drei mal a“ lesen. Dann ist es nicht mehr komisch.",
+        "title": "Mal mit Minuszahlen",
+        "body": "$3 \\cdot (-2) = -6$\n\nDreimal 2 Euro Schulden sind 6 Euro Schulden.\n\n$(-3) \\cdot (-2) = 6$\n\nMinus mal Minus ergibt **Plus**.\n\nDie Bögen um die Zahl zeigen nur: Das Minus gehört zu ihr.",
         "tasks": [
           {
-            "text": "$5b$ heißt ___.",
+            "text": "$(-4) \\cdot (-2) = $ ___",
             "choices": [
-              "$5 \\cdot b$",
-              "$5 + b$"
+              "$8$",
+              "$-8$"
             ],
-            "correct": "$5 \\cdot b$",
-            "why": "Zwischen Zahl und Buchstabe steht ein unsichtbarer Malpunkt.",
-            "hint": "Welches Zeichen lässt man zwischen Zahl und Buchstabe weg?"
+            "correct": "$8$",
+            "why": "Beide Zahlen sind negativ. Zwei Minus heben sich beim Malnehmen auf.",
+            "hint": "Wie viele der beiden Zahlen haben ein Minus davor?"
           }
-        ]
+        ],
+        "say": "Mit Minuszahlen kannst du auch malnehmen. Ist eine der beiden Zahlen negativ, wird das Ergebnis negativ. Sind beide negativ, wird das Ergebnis positiv. Das klingt seltsam, aber du brauchst es später oft. Merk dir einfach: Zwei Minus heben sich beim Malnehmen auf."
       },
       {
         "title": "Geteilt: drei Schreibweisen",
@@ -221,23 +221,6 @@
         ]
       },
       {
-        "title": "Klammern zuerst",
-        "body": "$2 \\cdot (3 + 4) = 2 \\cdot 7 = 14$\n\n$2 \\cdot 3 + 4 = 6 + 4 = 10$\n\nWas in der **Klammer** steht, rechnest du **zuerst**.",
-        "say": "Ohne Klammer gilt: Punkt vor Strich. Mal und Geteilt kommen vor Plus und Minus.",
-        "tasks": [
-          {
-            "text": "$3 \\cdot (2 + 4) = $ ___",
-            "choices": [
-              "18",
-              "10"
-            ],
-            "correct": "18",
-            "why": "Zuerst die Klammer: 2 plus 4 ist 6. Dann 3 mal 6.",
-            "hint": "Was steht in der Klammer? Das rechnest du zuerst aus."
-          }
-        ]
-      },
-      {
         "title": "Punkt vor Strich",
         "body": "$2 + 3 \\cdot 4$\n\nZuerst mal: $3 \\cdot 4 = 12$\n\nDann plus: $2 + 12 = 14$\n\nMal und Geteilt kommen **vor** Plus und Minus.",
         "tasks": [
@@ -252,23 +235,67 @@
             "hint": "Welche der beiden Rechnungen ist eine Punktrechnung und kommt zuerst?"
           }
         ],
-        "say": "Wenn keine Klammer da ist, gibt es eine feste Reihenfolge. Mal und Geteilt werden mit Punkten geschrieben, Plus und Minus mit Strichen. Deshalb heißt die Regel Punkt vor Strich. Wer einfach von links nach rechts rechnet, bekommt hier 20 heraus, und das ist falsch."
+        "say": "Beim Rechnen gibt es eine feste Reihenfolge. Mal und Geteilt werden mit Punkten geschrieben, Plus und Minus mit Strichen. Deshalb heißt die Regel Punkt vor Strich. Wer einfach von links nach rechts rechnet, bekommt hier 20 heraus, und das ist falsch."
+      },
+      {
+        "title": "Klammern zuerst",
+        "body": "$2 \\cdot (3 + 4) = 2 \\cdot 7 = 14$\n\n$2 \\cdot 3 + 4 = 6 + 4 = 10$\n\nWas in der **Klammer** steht, rechnest du **zuerst**.",
+        "say": "Eine Klammer ist stärker als Punkt vor Strich. Was in ihr steht, rechnest du als Erstes aus. Vergleich die beiden Zeilen: Mit Klammer kommt 14 heraus, ohne Klammer nur 10.",
+        "tasks": [
+          {
+            "text": "$3 \\cdot (2 + 4) = $ ___",
+            "choices": [
+              "18",
+              "10"
+            ],
+            "correct": "18",
+            "why": "Zuerst die Klammer: 2 plus 4 ist 6. Dann 3 mal 6.",
+            "hint": "Was steht in der Klammer? Das rechnest du zuerst aus."
+          }
+        ]
       },
       {
         "chapter": "Buchstaben und Prozent",
         "title": "Buchstaben sind Kisten",
-        "body": "$x$ ist eine **Kiste**. Darin liegt eine Zahl, die du noch nicht kennst.\n\nSo ein Buchstabe heißt **Variable**.\n\n$3x + 2$ mit $x = 4$: $3 \\cdot 4 + 2 = 14$",
+        "body": "$x$ ist eine **Kiste**. Darin liegt eine Zahl, die du noch nicht kennst.\n\nSo ein Buchstabe heißt **Variable**.\n\n$x + 2$ mit $x = 4$: $4 + 2 = 6$",
         "say": "Nichts Magisches. Ein Buchstabe ist nur ein Platz für eine Zahl.",
         "tasks": [
+          {
+            "text": "$x + 3$ mit $x = 5$ ergibt ___.",
+            "choices": [
+              "8",
+              "53"
+            ],
+            "correct": "8",
+            "why": "Die 5 kommt an die Stelle vom x. Dann rechnest du 5 plus 3.",
+            "hint": "Setz die Zahl an die Stelle vom Buchstaben und rechne dann aus."
+          }
+        ]
+      },
+      {
+        "title": "Der Punkt darf verschwinden",
+        "body": "$3a$ heißt $3 \\cdot a$.\n\n$2x$ heißt $2 \\cdot x$.\n\nZwischen Zahl und Buchstabe schreibt keiner den Punkt.\n\n$3x + 2$ mit $x = 4$: $3 \\cdot 4 + 2 = 14$",
+        "say": "Wenn du irgendwo 3a siehst: still „drei mal a“ lesen. Dann ist es nicht mehr komisch.",
+        "tasks": [
+          {
+            "text": "$5b$ heißt ___.",
+            "choices": [
+              "$5 \\cdot b$",
+              "$5 + b$"
+            ],
+            "correct": "$5 \\cdot b$",
+            "why": "Zwischen Zahl und Buchstabe steht ein unsichtbarer Malpunkt.",
+            "hint": "Welches Zeichen lässt man zwischen Zahl und Buchstabe weg?"
+          },
           {
             "text": "$2x + 1$ mit $x = 5$ ergibt ___.",
             "choices": [
               "11",
-              "8"
+              "26"
             ],
             "correct": "11",
-            "why": "2 mal 5 ist 10, und dazu kommt 1.",
-            "hint": "Setz die 5 für das x ein. Was bedeutet 2x?"
+            "why": "2 mal 5 ist 10, und 10 plus 1 ergibt 11.",
+            "hint": "Denk an den unsichtbaren Malpunkt zwischen der Zahl und dem Buchstaben."
           }
         ]
       },
@@ -279,7 +306,7 @@
       },
       {
         "title": "Prozent heißt „von hundert“",
-        "body": "$25\\,\\%$ = 25 von 100 = $\\frac{25}{100}$ = $0{,}25$\n\n$\\%$ = pro **cent**um = von **hundert**",
+        "body": "$25\\,\\%$ heißt 25 von 100.\n\nGeschrieben mit dem Geteilt-Strich: $\\frac{25}{100}$\n\nAls Zahl mit Komma: $0{,}25$\n\n$\\%$ = pro **cent**um = von **hundert**",
         "say": "Prozent kommt aus dem Lateinischen und bedeutet von hundert. Es gibt auch Promille, das bedeutet von tausend. Probier unten noch eine Aufgabe. Danach kommt eine letzte Tafel, die alles zusammenfasst.",
         "tasks": [
           {

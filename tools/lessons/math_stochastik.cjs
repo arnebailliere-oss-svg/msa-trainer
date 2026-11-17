@@ -56,6 +56,11 @@ migrate("primers/math_06_stochastik.json", (p, h) => {
   // Small steps: one line per way of writing the result.
   h.body("Als Bruch, Dezimalzahl, Prozent", "Als Bruch: $P = \\frac{1}{4}$", "Als Dezimalzahl: $0{,}25$", "In Prozent: $25\\,\\%$", "Immer zwischen 0 (nie) und 1 (sicher).");
 
+  // Read-through: one line per step.
+  h.body("Das Gegenereignis", "$P(\\text{nicht rot}) = 1 - \\frac{3}{10}$", "Die 1 ist dasselbe wie $\\frac{10}{10}$.", "$\\frac{10}{10} - \\frac{3}{10} = \\frac{7}{10}$", "Alle Wahrscheinlichkeiten zusammen sind **1**.", "Das Gegenteil eines Ereignisses heißt **Gegenereignis**.");
+  h.body("Summenregel: plus", "Genau einmal rot: rot-blau **oder** blau-rot", "Weg rot-blau: $\\frac{3}{10} \\cdot \\frac{7}{10} = \\frac{21}{100}$", "Weg blau-rot: $\\frac{7}{10} \\cdot \\frac{3}{10} = \\frac{21}{100}$", "Zusammen: $\\frac{21}{100} + \\frac{21}{100} = \\frac{42}{100}$");
+  h.body("Statistik: der Mittelwert", "Noten: 2, 3, 3, 4", "Zusammenzählen: $2 + 3 + 3 + 4 = 12$", "Durch die Anzahl teilen: $12 : 4 = 3$", "Alles zusammen, geteilt durch die Anzahl: Das ist der **Mittelwert**.");
+
   h.chapters([
     ["Wie viele von allen?", "Was Wahrscheinlichkeit bedeutet"],
     ["Zweimal ziehen: der Baum", "Zweimal ziehen"],
