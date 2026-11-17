@@ -217,7 +217,7 @@
       },
       {
         "title": "Fläche des Kreises",
-        "body": "$A = \\pi \\cdot r \\cdot r$\n\nKürzer geschrieben: $A = \\pi \\cdot r^2$\n\nBeispiel: $r = 3$ cm\n\n$3 \\cdot 3 = 9$\n\n$A \\approx 3{,}14 \\cdot 9 = 28{,}3\\ \\text{cm}^2$",
+        "body": "$A = \\pi \\cdot r \\cdot r$\n\nKürzer geschrieben: $A = \\pi \\cdot r^2$\n\nBeispiel: $r = 3$ cm\n\n$3 \\cdot 3 = 9$\n\n$A \\approx 3{,}14 \\cdot 9 = 28{,}26\\ \\text{cm}^2$\n\nGerundet: $A \\approx 28{,}3\\ \\text{cm}^2$",
         "figure": {
           "type": "circle",
           "labels": {
@@ -320,7 +320,7 @@
         "chapter": "Spitze Körper und die Kugel",
         "title": "Spitze Körper: ein Drittel",
         "body": "Eine **Pyramide** hat einen eckigen Boden und eine Spitze.\n\nEin **Kegel** hat einen runden Boden und eine Spitze.\n\n$V = \\frac{1}{3} \\cdot G \\cdot h$",
-        "say": "Ein Kegel sieht aus wie eine Eistüte. In einen Quader passen genau drei Pyramiden mit demselben Boden und derselben Höhe. Deshalb steht in der Formel ein Drittel. Du rechnest also Boden mal Höhe und teilst das Ergebnis durch 3.",
+        "say": "Ein Kegel sieht aus wie eine Eistüte. Füll eine Pyramide mit Sand und schütte ihn in einen Quader mit demselben Boden und derselben Höhe. Erst nach dem dritten Mal ist der Quader voll. Beim Kegel und der Dose ist es genauso. Deshalb steht in der Formel ein Drittel. Du rechnest also Boden mal Höhe und teilst das Ergebnis durch 3.",
         "tasks": [
           {
             "text": "Ein Kegel hat $G = 30\\ \\text{cm}^2$ und $h = 10$ cm. $V = $ ___",

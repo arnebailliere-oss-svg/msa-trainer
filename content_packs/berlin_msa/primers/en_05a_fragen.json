@@ -22,18 +22,18 @@
         "body": "**who** = wer\n**what** = was\n**where** = wo\n**when** = wann\n**why** = warum\n**how** = wie",
         "tasks": [
           {
-            "text": "when = ___",
+            "text": "___ is your birthday? – In May.",
             "choices": [
-              "wann",
-              "wer",
-              "wo"
+              "When",
+              "Who",
+              "Where"
             ],
-            "correct": "wann",
-            "why": "When fragt nach einer Zeit, also nach dem Wann.",
-            "hint": "Schau in die vierte Zeile der Tafel."
+            "correct": "When",
+            "why": "In May ist eine Zeit. Nach einer Zeit fragst du mit when.",
+            "hint": "Was ist in May: ein Mensch, ein Ort oder eine Zeit?"
           }
         ],
-        "say": "Das sind die sechs Fragewörter, die du am häufigsten brauchst. Fünf davon beginnen mit wh, deshalb nennt man sie im Englischen auch wh-questions. Lies sie einmal langsam von oben nach unten. Unten kannst du gleich eins ausprobieren."
+        "say": "Das sind die sechs Fragewörter, die du am häufigsten brauchst. Fünf davon beginnen mit wh. Deshalb nennt man Fragen mit einem Fragewort im Englischen auch wh-questions. Lies sie einmal langsam von oben nach unten. Unten kannst du gleich eins ausprobieren."
       },
       {
         "title": "Die Falle mit who und where",
@@ -197,8 +197,8 @@
       {
         "chapter": "Antworten und typische Fehler",
         "title": "Kurze Antworten",
-        "body": "*Do you like tea?*\n*Yes, I **do**.* oder *No, I **don't**.*\n\n*Is she at home?*\n*Yes, she **is**.* oder *No, she **isn't**.*",
-        "say": "Auf eine Frage ohne Fragewort antwortet man im Englischen selten nur mit yes oder no. Das klingt etwas unhöflich. Man hängt die Person und den Helfer aus der Frage an. Der Helfer aus der Frage kommt also in der Antwort wieder."
+        "body": "*Do you like tea?*\n*Yes, I **do**.* oder *No, I **don't**.*\n\n*Is she at home?*\n*Yes, she **is**.* oder *No, she **isn't**.*\n\n*Are you tired?*\n*Yes, I **am**.*",
+        "say": "Auf eine Frage ohne Fragewort antwortet man im Englischen selten nur mit yes oder no. Das klingt etwas unhöflich. Man hängt die Person und den Helfer aus der Frage an. Der Helfer aus der Frage kommt also in der Antwort wieder. Achtung: Die Person wechselt von you zu I. Der Helfer passt sich an die neue Person an. Aus are you wird deshalb I am."
       },
       {
         "title": "Jetzt du: kurz antworten",
@@ -235,7 +235,7 @@
             "hint": "Mit welchem Wort beginnt die Frage?"
           }
         ],
-        "say": "Such in jeder Frage das erste Wort. Das ist der Helfer. Genau dieser Helfer gehört auch in die Antwort."
+        "say": "Such in jeder Frage das erste Wort. Das ist der Helfer. Derselbe Helfer gehört auch in die Antwort. Er muss nur zur Person in der Antwort passen."
       },
       {
         "title": "Höflich fragen",

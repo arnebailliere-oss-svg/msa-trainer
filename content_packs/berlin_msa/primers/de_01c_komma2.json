@@ -63,7 +63,7 @@
             "hint": "Welches Wort im Hauptsatz weist auf die Gruppe mit zu voraus?"
           }
         ],
-        "say": "Das dritte Signal ist ein kleines Wort im Hauptsatz, das auf die Gruppe vorausweist. Im ersten Beispiel liebt er es, und dieses es steht für das frühe Aufstehen. Wenn so ein Hinweiswort dasteht, gehört vor die Infinitivgruppe ein Komma."
+        "say": "Das dritte Signal ist ein kleines Wort im Hauptsatz, das auf die Gruppe vorausweist. Im ersten Beispiel liebt er es, und dieses es steht für das frühe Aufstehen. Schau genau hin: In aufzustehen steckt das zu mitten im Verb. Das ist trotzdem eine Gruppe mit zu. Wenn so ein Hinweiswort dasteht, gehört vor die Infinitivgruppe ein Komma."
       },
       {
         "title": "Ohne Signal ist das Komma freiwillig",
@@ -203,7 +203,7 @@
         "chapter": "Die Regeln beim Namen nennen",
         "title": "Die Namen der Regeln",
         "body": "**Aufzählung**: *Äpfel, Birnen und Trauben*\n**Satzreihe**: zwei Hauptsätze\n**Satzgefüge**: Hauptsatz und Nebensatz\n**Einschub**: ein Nebensatz in der Mitte\n**Infinitivgruppe**: Gruppe mit zu\n**Entgegenstellung**: aber, sondern",
-        "say": "In der Prüfung sollst du manchmal nicht nur das Komma setzen, sondern auch die Regel nennen. Dafür brauchst du diese sechs Namen. Zwei davon sind neu: Eine Satzreihe sind zwei Hauptsätze nebeneinander. Ein Satzgefüge ist ein Hauptsatz mit einem Nebensatz."
+        "say": "In der Prüfung sollst du manchmal nicht nur das Komma setzen, sondern auch die Regel nennen. Dafür brauchst du diese sechs Namen. Drei davon sind neu: Eine Satzreihe sind zwei Hauptsätze nebeneinander. Ein Satzgefüge ist ein Hauptsatz mit einem Nebensatz. Eine Entgegenstellung ist ein Gegensatz mit aber oder sondern."
       },
       {
         "title": "Jetzt du: die Regel benennen",

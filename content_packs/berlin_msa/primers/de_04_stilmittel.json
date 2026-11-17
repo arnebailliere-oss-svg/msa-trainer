@@ -96,13 +96,13 @@
         "body": "*Tischbein, Flussarm, Warteschlange*\n\n*Du bist mein Sonnenschein.*\n\nViele Metaphern bemerkt man gar nicht mehr.",
         "tasks": [
           {
-            "text": "Du bist mein Sonnenschein. Das ist ___.",
+            "text": "Mein Opa ist ein wandelndes Lexikon. Das ist ___.",
             "choices": [
               "eine Metapher",
               "ein Vergleich"
             ],
             "correct": "eine Metapher",
-            "why": "Ein Mensch wird direkt als Sonnenschein bezeichnet. Das Wort wie fehlt.",
+            "why": "Ein Mensch wird direkt als Lexikon bezeichnet. Das Wort wie fehlt.",
             "hint": "Steht im Satz das Wort wie?"
           }
         ],
@@ -178,14 +178,14 @@
         "body": "die weiße Taube: Frieden\ndas rote Herz: Liebe\ndie Waage: Gerechtigkeit\n\nEin Symbol ist ein festes Zeichen, das für etwas anderes steht.",
         "tasks": [
           {
-            "text": "Ein rotes Herz steht für ___.",
+            "text": "Ein vierblättriges Kleeblatt steht für ___.",
             "choices": [
-              "Liebe",
+              "Glück",
               "Hunger"
             ],
-            "correct": "Liebe",
+            "correct": "Glück",
             "why": "Dieses Zeichen versteht fast jeder Mensch auf dieselbe Weise.",
-            "hint": "Wofür malt man ein Herz auf eine Karte?"
+            "hint": "Was wünscht man jemandem, dem man ein Kleeblatt schenkt?"
           }
         ],
         "say": "Ein Symbol ist ein Bild, das alle kennen und gleich verstehen. Niemand muss erklären, was ein rotes Herz bedeutet. Der Unterschied zur Metapher ist, dass ein Symbol fest ist. Es bedeutet immer dasselbe, egal in welchem Text es vorkommt."
@@ -223,9 +223,19 @@
             "correct": "eine Metapher",
             "why": "Ein Mensch wird direkt als Fels bezeichnet. Das Wort wie fehlt.",
             "hint": "Steht im Satz das Wort wie? Wird etwas direkt als etwas anderes bezeichnet?"
+          },
+          {
+            "text": "Auf dem Plakat ist eine weiße Taube. Die Taube ist ___.",
+            "choices": [
+              "ein Symbol",
+              "ein Vergleich"
+            ],
+            "correct": "ein Symbol",
+            "why": "Die weiße Taube ist ein festes Zeichen für Frieden.",
+            "hint": "Steht die Taube hier für etwas anderes, das alle kennen?"
           }
         ],
-        "say": "Jetzt kommen alle vier Sprachbilder vor. Geh die Proben durch: Steht ein wie da? Tut ein Ding etwas Menschliches? Wird etwas direkt als etwas anderes bezeichnet?"
+        "say": "Jetzt kommen alle vier Sprachbilder vor. Geh die Proben durch: Steht ein wie da? Tut ein Ding etwas Menschliches? Wird etwas direkt als etwas anderes bezeichnet? Oder ist es ein festes Zeichen, das alle kennen?"
       },
       {
         "title": "Das nimmst du mit",

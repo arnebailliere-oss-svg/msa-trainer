@@ -129,8 +129,8 @@
       },
       {
         "title": "Der Nebensatz kann vorn stehen",
-        "body": "***Weil es regnet,** lese ich ein Buch.*\n\nDer Nebensatz steht jetzt am Anfang.\n\nDer Hauptsatz danach beginnt mit dem Verb.",
-        "say": "Nebensätze müssen nicht hinten stehen. Sie können auch ganz vorn stehen. An den drei Zeichen ändert das nichts. Weil es regnet beginnt mit einer Konjunktion, das Verb steht am Ende, und allein ist der Teil unfertig."
+        "body": "***Weil es regnet,** lese ich ein Buch.*\n\nDer Nebensatz steht jetzt an der ersten Stelle.\n\nDas Verb *lese* kommt gleich danach, also wieder an zweiter Stelle.",
+        "say": "Nebensätze müssen nicht hinten stehen. Sie können auch ganz vorn stehen. An den drei Zeichen ändert das nichts. Weil es regnet beginnt mit einer Konjunktion, das Verb steht am Ende, und allein ist der Teil unfertig. Der ganze Nebensatz zählt hier wie das erste Wort. Deshalb folgt direkt nach dem Komma das Verb des Hauptsatzes."
       },
       {
         "title": "Jetzt du: Hauptsatz oder Nebensatz?",
@@ -178,7 +178,7 @@
       {
         "title": "Er beginnt mit der, die oder das",
         "body": "Der Mann, **der** dort steht\nDie Frau, **die** lacht\nDas Kind, **das** spielt\n\nDiese Wörter heißen hier **Relativpronomen**.",
-        "say": "Ein Relativsatz beginnt nicht mit weil oder dass. Er beginnt mit der, die oder das. Das Wort richtet sich nach dem Nomen davor. Der Mann, der. Die Frau, die. Das Kind, das. In dieser Aufgabe heißen diese Wörter Relativpronomen."
+        "say": "Ein Relativsatz beginnt nicht mit weil oder dass. Er beginnt mit der, die oder das. Das Wort richtet sich nach dem Nomen davor. Der Mann, der. Die Frau, die. Das Kind, das. Wenn der, die oder das einen Relativsatz einleiten, heißen sie Relativpronomen."
       },
       {
         "title": "Artikel oder Relativpronomen?",

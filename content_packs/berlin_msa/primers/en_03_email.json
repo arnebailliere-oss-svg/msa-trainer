@@ -135,10 +135,10 @@
             ],
             "correct": "Best wishes,",
             "why": "Das ist ein lockerer, freundlicher Gruß.",
-            "hint": "Welcher der beiden Grüße klingt nach einem Brief an eine Firma?"
+            "hint": "Wishes heißt Wünsche. Welcher der beiden Grüße wünscht der Freundin etwas Gutes?"
           }
         ],
-        "say": "Am Ende steht eine Schlussformel. Best wishes bedeutet viele Grüße. An Freunde passen auch Take care oder See you soon. Danach kommt ein Komma, und in der nächsten Zeile steht nur dein Vorname."
+        "say": "Vor der Schlussformel kannst du noch einen letzten Satz schreiben. Write back soon bedeutet: Schreib bald zurück. Danach kommt die Schlussformel. Best wishes bedeutet viele Grüße. An Freunde passen auch Take care oder See you soon. Nach der Schlussformel kommt ein Komma, und in der nächsten Zeile steht nur dein Vorname."
       },
       {
         "title": "Am Ende: nachzählen",

@@ -107,21 +107,21 @@
             "hint": "Hat der Sprecher wirklich mehr Zeit? Welche Form zeigt, dass es nur ein Gedanke ist?"
           }
         ],
-        "say": "Bei vielen Verben klingt die eigentliche Form veraltet. Niemand sagt heute ich hülfe. Deshalb nimmt man meistens würde und hängt das Verb in der Grundform an. Das ist richtig und klingt natürlich. Nur bei sein, haben und können benutzt man die kurze Form."
+        "say": "Bei vielen Verben klingt die eigentliche Form veraltet. Niemand sagt heute ich hülfe. Deshalb nimmt man meistens würde und hängt das Verb in der Grundform an. Das ist richtig und klingt natürlich. Bei sein, haben und Verben wie können, müssen und wissen benutzt man meistens die kurze Form: wäre, hätte, könnte, müsste, wüsste."
       },
       {
         "title": "Drei Aufgaben des Konjunktivs II",
         "body": "**Unwirkliches**: *Wenn ich fliegen könnte …*\n**Wünsche**: *Ich hätte gern ein Eis.*\n**Höfliche Bitten**: *Könntest du mir helfen?*",
         "tasks": [
           {
-            "text": "___ du mir bitte das Salz geben?",
+            "text": "Du willst besonders höflich bitten: ___ du mir bitte das Salz geben?",
             "choices": [
               "Könntest",
               "Kannst"
             ],
             "correct": "Könntest",
-            "why": "Mit dieser Form klingt die Bitte besonders höflich.",
-            "hint": "Welche der beiden Formen hat zwei Punkte auf einem Buchstaben und klingt höflicher?"
+            "why": "Der Konjunktiv II macht die Bitte höflicher. Kannst ist auch richtig, klingt aber direkter.",
+            "hint": "Welche der beiden Formen lässt dem anderen mehr die Wahl?"
           }
         ],
         "say": "Der Konjunktiv II hat drei Aufgaben. Er zeigt, dass etwas nicht wirklich ist. Er drückt Wünsche aus. Und er macht Bitten höflicher. Kannst du mir helfen klingt direkt. Könntest du mir helfen klingt freundlicher, weil es dem anderen die Wahl lässt."

@@ -36,8 +36,8 @@
       },
       {
         "title": "Nach einem kurzen Vokal: doppelter Konsonant",
-        "body": "*o**ff**en, Mi**tt**e, ke**nn**en, Bu**tt**er*\n\nNach einem kurzen Vokal wird der Konsonant **verdoppelt**.",
-        "say": "Das ist die erste Regel. Wenn der Vokal kurz ist, schreibst du den Konsonanten danach zweimal. Der doppelte Buchstabe ist wie ein Schild für den Leser. Er sagt: Sprich den Vokal davor kurz. Ohne dieses Schild würde man offen wie Ofen lesen."
+        "body": "*o**ff**en, Mi**tt**e, ke**nn**en, Bu**tt**er*\n\nFolgt nach einem kurzen Vokal nur **ein** Konsonant, wird er **verdoppelt**.\n\nFolgen schon zwei verschiedene, bleibt es dabei: *Hund, kalt*.",
+        "say": "Das ist die erste Regel. Wenn der Vokal kurz ist, schreibst du den Konsonanten danach zweimal. Der doppelte Buchstabe ist wie ein Schild für den Leser. Er sagt: Sprich den Vokal davor kurz. Ohne dieses Schild würde man offen wie Ofen lesen. Bei Hund hörst du nach dem kurzen u schon zwei Konsonanten, n und d. Dann wird nichts verdoppelt."
       },
       {
         "title": "Nach einem langen Vokal: nur einer",
@@ -46,11 +46,11 @@
           {
             "text": "Welches Wort hat einen kurzen Vokal? ___",
             "choices": [
-              "Betten",
-              "beten"
+              "Ratte",
+              "raten"
             ],
-            "correct": "Betten",
-            "why": "Die beiden t zeigen an, dass das e davor kurz gesprochen wird.",
+            "correct": "Ratte",
+            "why": "Die beiden t zeigen an, dass das a davor kurz gesprochen wird.",
             "hint": "Sprich beide Wörter laut. Bei welchem springst du schnell zum t?"
           }
         ],
@@ -121,13 +121,13 @@
         "body": "*hei**ß**, drau**ß**en, flei**ß**ig*\n\nZwei Vokale hintereinander zählen wie ein langer Vokal.",
         "tasks": [
           {
-            "text": "Heute ist es sehr ___.",
+            "text": "Sie pflückt einen ___ Blumen.",
             "choices": [
-              "heiß",
-              "heiss"
+              "Strauß",
+              "Strauss"
             ],
-            "correct": "heiß",
-            "why": "Vor dem fraglichen Laut steht ei. Danach schreibt man diesen Buchstaben.",
+            "correct": "Strauß",
+            "why": "Vor dem fraglichen Laut steht au. Danach schreibt man diesen Buchstaben.",
             "hint": "Welche zwei Vokale stehen vor dem fraglichen Laut?"
           }
         ],
@@ -302,13 +302,13 @@
         "body": "*se-**h**en, ge-**h**en, Ru-**h**e*\n\nSprich in Silben. Dann hörst du das h.",
         "tasks": [
           {
-            "text": "Wir ___ heute ins Kino.",
+            "text": "Die Kühe ___ auf der Wiese.",
             "choices": [
-              "gehen",
-              "geen"
+              "stehen",
+              "steen"
             ],
-            "correct": "gehen",
-            "why": "In Silben gesprochen hörst du das h am Anfang der zweiten Silbe.",
+            "correct": "stehen",
+            "why": "In Silben gesprochen hörst du das h am Anfang der zweiten Silbe: ste-hen.",
             "hint": "Sprich das Wort in zwei Silben. Womit beginnt die zweite?"
           }
         ],
@@ -463,7 +463,7 @@
           "Weil es von Kamm kommt."
         ],
         "correct": "Weil das o kurz ist.",
-        "explain": "Nach einem kurzen Vokal wird der Konsonant verdoppelt. In Silben gesprochen hörst du es: kom-men."
+        "explain": "Nach dem kurzen o steht nur ein Konsonant, das m. Deshalb wird er verdoppelt. In Silben gesprochen hörst du es: kom-men."
       },
       {
         "prompt": "Welches Wort ist richtig geschrieben?",

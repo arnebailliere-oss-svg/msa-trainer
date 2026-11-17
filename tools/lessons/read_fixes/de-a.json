@@ -1,0 +1,480 @@
+[
+  {
+    "lesson": "P_DE_KOMMA1",
+    "why": "A signal word only announces a comma when a clause with the verb at the end follows (als, während without a clause take none).",
+    "ops": [
+      {
+        "op": "say",
+        "board": "Wörter, die ein Komma ankündigen",
+        "text": "Diese Konjunktionen leiten Nebensätze ein. Siehst du eine, schau nach, ob danach ein Teilsatz mit dem Verb am Ende folgt. Dann beginnt dort ein Nebensatz. Steht er hinten, kommt das Komma vor das Signalwort. Pass bei als auf: In Er ist größer als ich folgt kein Verb, also steht kein Komma. Auch bei der, die und das steht ein Komma nur vor einem Relativsatz."
+      }
+    ]
+  },
+  {
+    "lesson": "P_DE_KOMMA1",
+    "why": "The comma before aber, doch, jedoch is not 'always' there, only when the word joins two parts as a contrast.",
+    "ops": [
+      {
+        "op": "body",
+        "board": "aber, sondern und doch",
+        "lines": [
+          "*Er ist nicht dumm**,** sondern faul.*",
+          "*Sie spielt gern Tennis**,** aber sie hasst Fußball.*",
+          "Verbinden aber, sondern, doch oder jedoch zwei Teile als Gegensatz, steht davor ein Komma."
+        ]
+      },
+      {
+        "op": "say",
+        "board": "aber, sondern und doch",
+        "text": "Diese vier Wörter zeigen einen Gegensatz an. Der zweite Teil sagt etwas, das zum ersten nicht passt oder ihn einschränkt. Wenn eines dieser Wörter zwei Teile als Gegensatz verbindet, steht davor ein Komma. Das gilt auch, wenn danach gar kein ganzer Satz folgt, wie im ersten Beispiel. Steht das Wort nur mitten im Satz, wie in Das ist aber schön, steht kein Komma."
+      },
+      {
+        "op": "tasks",
+        "board": "aber, sondern und doch",
+        "tasks": [
+          {
+            "text": "Welche Schreibung ist richtig? Das ist nicht mein Hund ___ der Hund meiner Nachbarin.",
+            "correct": ", sondern",
+            "wrong": ["sondern"],
+            "why": "Das Wort verbindet hier zwei Teile als Gegensatz. Deshalb steht davor ein Komma.",
+            "hint": "Zeigt das Wort einen Gegensatz an? Was gilt dann für das Komma?"
+          }
+        ]
+      },
+      {
+        "op": "quiz",
+        "index": 4,
+        "explain": "Sondern verbindet hier zwei Teile als Gegensatz. Dann steht vor sondern, aber, doch und jedoch ein Komma."
+      }
+    ]
+  },
+  {
+    "lesson": "P_DE_KOMMA2",
+    "why": "Nobody says that in aufzustehen the zu sits in the middle of the verb.",
+    "ops": [
+      {
+        "op": "say",
+        "board": "Signal 3: ein Hinweiswort",
+        "text": "Das dritte Signal ist ein kleines Wort im Hauptsatz, das auf die Gruppe vorausweist. Im ersten Beispiel liebt er es, und dieses es steht für das frühe Aufstehen. Schau genau hin: In aufzustehen steckt das zu mitten im Verb. Das ist trotzdem eine Gruppe mit zu. Wenn so ein Hinweiswort dasteht, gehört vor die Infinitivgruppe ein Komma."
+      }
+    ]
+  },
+  {
+    "lesson": "P_DE_KOMMA2",
+    "why": "The name Entgegenstellung is new too and Ferdinand did not explain it.",
+    "ops": [
+      {
+        "op": "say",
+        "board": "Die Namen der Regeln",
+        "text": "In der Prüfung sollst du manchmal nicht nur das Komma setzen, sondern auch die Regel nennen. Dafür brauchst du diese sechs Namen. Drei davon sind neu: Eine Satzreihe sind zwei Hauptsätze nebeneinander. Ein Satzgefüge ist ein Hauptsatz mit einem Nebensatz. Eine Entgegenstellung ist ein Gegensatz mit aber oder sondern."
+      }
+    ]
+  },
+  {
+    "lesson": "P_DE_SATZ",
+    "why": "The board said the main clause begins with the verb, which contradicts verb-second; the subordinate clause counts as the first position.",
+    "ops": [
+      {
+        "op": "body",
+        "board": "Der Nebensatz kann vorn stehen",
+        "lines": [
+          "***Weil es regnet,** lese ich ein Buch.*",
+          "Der Nebensatz steht jetzt an der ersten Stelle.",
+          "Das Verb *lese* kommt gleich danach, also wieder an zweiter Stelle."
+        ]
+      },
+      {
+        "op": "say",
+        "board": "Der Nebensatz kann vorn stehen",
+        "text": "Nebensätze müssen nicht hinten stehen. Sie können auch ganz vorn stehen. An den drei Zeichen ändert das nichts. Weil es regnet beginnt mit einer Konjunktion, das Verb steht am Ende, und allein ist der Teil unfertig. Der ganze Nebensatz zählt hier wie das erste Wort. Deshalb folgt direkt nach dem Komma das Verb des Hauptsatzes."
+      }
+    ]
+  },
+  {
+    "lesson": "P_DE_SATZ",
+    "why": "The phrase 'In dieser Aufgabe' reads like an exercise instead of the role of the word.",
+    "ops": [
+      {
+        "op": "say",
+        "board": "Er beginnt mit der, die oder das",
+        "text": "Ein Relativsatz beginnt nicht mit weil oder dass. Er beginnt mit der, die oder das. Das Wort richtet sich nach dem Nomen davor. Der Mann, der. Die Frau, die. Das Kind, das. Wenn der, die oder das einen Relativsatz einleiten, heißen sie Relativpronomen."
+      }
+    ]
+  },
+  {
+    "lesson": "P_DE_STRATEGIEN",
+    "why": "Doubling only applies when a single consonant follows the short vowel (Hund, kalt are not doubled).",
+    "ops": [
+      {
+        "op": "body",
+        "board": "Nach einem kurzen Vokal: doppelter Konsonant",
+        "lines": [
+          "*o**ff**en, Mi**tt**e, ke**nn**en, Bu**tt**er*",
+          "Folgt nach einem kurzen Vokal nur **ein** Konsonant, wird er **verdoppelt**.",
+          "Folgen schon zwei verschiedene, bleibt es dabei: *Hund, kalt*."
+        ]
+      },
+      {
+        "op": "say",
+        "board": "Nach einem kurzen Vokal: doppelter Konsonant",
+        "text": "Das ist die erste Regel. Wenn der Vokal kurz ist, schreibst du den Konsonanten danach zweimal. Der doppelte Buchstabe ist wie ein Schild für den Leser. Er sagt: Sprich den Vokal davor kurz. Ohne dieses Schild würde man offen wie Ofen lesen. Bei Hund hörst du nach dem kurzen u schon zwei Konsonanten, n und d. Dann wird nichts verdoppelt."
+      }
+    ]
+  },
+  {
+    "lesson": "P_DE_STRATEGIEN",
+    "why": "The task answer Betten stood word for word on the same board.",
+    "ops": [
+      {
+        "op": "tasks",
+        "board": "Nach einem langen Vokal: nur einer",
+        "tasks": [
+          {
+            "text": "Welches Wort hat einen kurzen Vokal? ___",
+            "correct": "Ratte",
+            "wrong": ["raten"],
+            "why": "Die beiden t zeigen an, dass das a davor kurz gesprochen wird.",
+            "hint": "Sprich beide Wörter laut. Bei welchem springst du schnell zum t?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": "P_DE_STRATEGIEN",
+    "why": "The task answer heiß was the first example word on the same board.",
+    "ops": [
+      {
+        "op": "tasks",
+        "board": "Nach ei, au und eu steht auch ß",
+        "tasks": [
+          {
+            "text": "Sie pflückt einen ___ Blumen.",
+            "correct": "Strauß",
+            "wrong": ["Strauss"],
+            "why": "Vor dem fraglichen Laut steht au. Danach schreibt man diesen Buchstaben.",
+            "hint": "Welche zwei Vokale stehen vor dem fraglichen Laut?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": "P_DE_STRATEGIEN",
+    "why": "The task answer gehen stood on the same board and in Ferdinand's text.",
+    "ops": [
+      {
+        "op": "tasks",
+        "board": "Das h zwischen zwei Vokalen",
+        "tasks": [
+          {
+            "text": "Die Kühe ___ auf der Wiese.",
+            "correct": "stehen",
+            "wrong": ["steen"],
+            "why": "In Silben gesprochen hörst du das h am Anfang der zweiten Silbe: ste-hen.",
+            "hint": "Sprich das Wort in zwei Silben. Womit beginnt die zweite?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": "P_DE_GROSS_KLEIN",
+    "why": "The title names vom, but neither the board nor Ferdinand explained it or gave an example.",
+    "ops": [
+      {
+        "op": "body",
+        "board": "beim, zum, im und vom",
+        "lines": [
+          "**beim** Essen, **zum** Lachen, **im** Stehen, **vom** Schwimmen",
+          "In diesen Wörtern steckt ein Artikel: *beim* ist *bei dem*."
+        ]
+      },
+      {
+        "op": "say",
+        "board": "beim, zum, im und vom",
+        "text": "Diese kleinen Wörter sind versteckte Artikel. Beim bedeutet bei dem, zum bedeutet zu dem, im bedeutet in dem, und vom bedeutet von dem. Wenn danach ein Verb folgt, ist es zu einem Nomen geworden. Du schreibst es groß: beim Essen, zum Lachen."
+      }
+    ]
+  },
+  {
+    "lesson": "P_DE_GROSS_KLEIN",
+    "why": "The task answer alles Gute stood word for word on the same board.",
+    "ops": [
+      {
+        "op": "tasks",
+        "board": "Auch Adjektive werden zu Nomen",
+        "tasks": [
+          {
+            "text": "Sie hat mir etwas ___ erzählt.",
+            "correct": "Lustiges",
+            "wrong": ["lustiges"],
+            "why": "Nach etwas wird das Adjektiv zum Nomen und großgeschrieben.",
+            "hint": "Welches Wort steht vor der Lücke? Wirkt es wie ein Begleiter?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": "P_DE_GROSS_KLEIN",
+    "why": "'Small as long as no article stands before it' contradicts der kleine Hund; capital only when no noun follows.",
+    "ops": [
+      {
+        "op": "body",
+        "board": "Verben und Adjektive",
+        "lines": [
+          "*Sie **läuft** sehr **schnell**.*",
+          "Verben und Adjektive schreibt man klein.",
+          "Groß werden sie nur, wenn ein Artikel davorsteht und kein Nomen mehr folgt: *das Gute*, aber *der gute Freund*."
+        ]
+      },
+      {
+        "op": "body",
+        "board": "Das nimmst du mit",
+        "lines": [
+          "**Groß**: Nomen mit Begleiter\n**Groß**: Verb oder Adjektiv mit Artikel und ohne Nomen danach, auch nach beim, zum, etwas, nichts\n**Groß**: Sie und Ihnen in der Anrede",
+          "**Klein**: alle anderen Verben und Adjektive\n**Klein**: am schnellsten, montags, heute, morgen"
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": "P_DE_GROSS_KLEIN",
+    "why": "The task answer am schönsten stood word for word on the same board.",
+    "ops": [
+      {
+        "op": "tasks",
+        "board": "Die höchste Stufe mit am",
+        "tasks": [
+          {
+            "text": "Sie singt am ___.",
+            "correct": "lautesten",
+            "wrong": ["Lautesten"],
+            "why": "Es ist die höchste Stufe beim Steigern. Du kannst mit wie danach fragen.",
+            "hint": "Kannst du nach dem Wort mit wie fragen?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": "P_DE_GROSS_KLEIN",
+    "why": "The task answer montags stood word for word on the same board.",
+    "ops": [
+      {
+        "op": "tasks",
+        "board": "Wochentage und Tageszeiten",
+        "tasks": [
+          {
+            "text": "Wir trainieren immer ___.",
+            "correct": "dienstags",
+            "wrong": ["Dienstags"],
+            "why": "Mit s am Ende bedeutet es jeden Dienstag. Es ist ein Adverb und bleibt klein.",
+            "hint": "Hat das Wort ein s am Ende? Was bedeutet es dann?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": "P_DE_GROSS_KLEIN",
+    "why": "The task was almost word for word the board sentence Können Sie mir helfen.",
+    "ops": [
+      {
+        "op": "tasks",
+        "board": "Die höfliche Anrede",
+        "tasks": [
+          {
+            "text": "Herr Müller, haben ___ kurz Zeit für mich?",
+            "correct": "Sie",
+            "wrong": ["sie"],
+            "why": "Herr Müller wird höflich angesprochen. Die Anrede wird großgeschrieben.",
+            "hint": "Wird hier jemand höflich angesprochen, oder spricht man über andere Leute?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": "P_DE_GETRENNT",
+    "why": "The task answer Haustür stood as an example on the same board.",
+    "ops": [
+      {
+        "op": "tasks",
+        "board": "Nomen und Nomen: zusammen",
+        "tasks": [
+          {
+            "text": "Wir essen heute am ___.",
+            "correct": "Küchentisch",
+            "wrong": ["Küchen Tisch"],
+            "why": "Zwei Nomen benennen zusammen ein neues Ding.",
+            "hint": "Benennen die beiden Wörter zusammen eine einzige Sache?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": "P_DE_GETRENNT",
+    "why": "The task answer Klavier spielen was the first example on the same board.",
+    "ops": [
+      {
+        "op": "tasks",
+        "board": "Nomen und Verb: getrennt",
+        "tasks": [
+          {
+            "text": "Meine Schwester kann gut ___.",
+            "correct": "Schach spielen",
+            "wrong": ["schachspielen"],
+            "why": "Ein Nomen und ein Verb bleiben zwei Wörter.",
+            "hint": "Welche beiden Wortarten stehen hier direkt nebeneinander?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": "P_DE_GETRENNT",
+    "why": "The task answer schwimmen gehen stood on the same board and in Ferdinand's text.",
+    "ops": [
+      {
+        "op": "tasks",
+        "board": "Verb und Verb: getrennt",
+        "tasks": [
+          {
+            "text": "Am Wochenende wollen wir ___.",
+            "correct": "tanzen gehen",
+            "wrong": ["tanzengehen"],
+            "why": "Zwei Verben hintereinander bleiben zwei Wörter.",
+            "hint": "Welche Wortart sind die beiden Wörter?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": "P_DE_GETRENNT",
+    "why": "The task answer aufstehen was the first example on the same board and in Ferdinand's text.",
+    "ops": [
+      {
+        "op": "tasks",
+        "board": "Kleine Wörter vorn: zusammen",
+        "tasks": [
+          {
+            "text": "Wann wollen wir ___?",
+            "correct": "anfangen",
+            "wrong": ["an fangen"],
+            "why": "Das kurze Wort wächst mit dem Verb zu einem neuen Wort zusammen.",
+            "hint": "Bedeutet das Wort mit dem kurzen Wort davor etwas anderes als das Verb allein?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": "P_DE_GETRENNT",
+    "why": "The sign 'they mean almost nothing alone' does not hold for mit, weg, hin and does not separate them from laut or schnell.",
+    "ops": [
+      {
+        "op": "say",
+        "board": "Kleine Wörter vorn: zusammen",
+        "text": "Hier ist es umgekehrt. Kurze Wörter wie auf, an, aus, ein, mit, weg und hin verbinden sich mit dem Verb zu einem neuen Wort. Aufstehen ist etwas anderes als stehen. Diese Wörter erkennst du daran, dass sie kein Nomen, kein Verb und kein Adjektiv sind. Du kannst nicht mit wie nach ihnen fragen. Sie geben dem Verb eine neue Bedeutung."
+      }
+    ]
+  },
+  {
+    "lesson": "P_DE_GETRENNT",
+    "why": "'After zu' leads to the error zu aufstehen; the zu moves into the middle (aufzustehen).",
+    "ops": [
+      {
+        "op": "say",
+        "board": "Im Satz trennt sich das Verb wieder",
+        "text": "Das verwirrt manchmal. In einem einfachen Satz wandert das kurze Wort ans Ende, und das Verb steht an zweiter Stelle. Sobald beide wieder nebeneinanderstehen, schreibst du sie zusammen. Das passiert nach müssen, wollen und können. Kommt ein zu dazu, rutscht es in die Mitte, und alles bleibt ein Wort: Ich habe keine Lust aufzustehen."
+      }
+    ]
+  },
+  {
+    "lesson": "P_DE_GETRENNT",
+    "why": "The task answer Spazierengehen stood word for word in Ferdinand's text on the same board.",
+    "ops": [
+      {
+        "op": "tasks",
+        "board": "Wenn ein Nomen daraus wird",
+        "tasks": [
+          {
+            "text": "Das ___ macht mir Spaß.",
+            "correct": "Klavierspielen",
+            "wrong": ["Klavier spielen"],
+            "why": "Davor steht ein Artikel. Die Verbindung wird zum Nomen und zu einem Wort.",
+            "hint": "Welches Wort steht vor der Lücke? Ist es ein Artikel?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": "P_DE_GETRENNT",
+    "why": "The board claimed two stresses for wieder sehen but marked only one.",
+    "ops": [
+      {
+        "op": "body",
+        "board": "Hör auf die Betonung",
+        "lines": [
+          "**WIE**dersehen: eine Betonung, ein Wort\n**WIE**der **SE**hen: zwei Betonungen, zwei Wörter"
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": "P_DE_GETRENNT",
+    "why": "The task used the farewell from the board instead of applying the stress test to a new case.",
+    "ops": [
+      {
+        "op": "tasks",
+        "board": "Hör auf die Betonung",
+        "tasks": [
+          {
+            "text": "Ich möchte dich bald ___.",
+            "correct": "wiedersehen",
+            "wrong": ["wieder sehen"],
+            "why": "Gemeint ist das erneute Treffen. Du hörst nur eine Betonung, also ist es ein Wort.",
+            "hint": "Wie viele Betonungen hörst du, wenn du den Satz sprichst?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": "P_DE_DAS_DASS",
+    "why": "A comma does not 'always' stand before dass (not at the start of a sentence); title, summary point 3 and quiz question 6 said the same.",
+    "ops": [
+      {
+        "op": "title",
+        "board": "Davor steht immer ein Komma",
+        "title": "Davor steht ein Komma"
+      },
+      {
+        "op": "say",
+        "board": "Davor steht immer ein Komma",
+        "text": "Das folgt aus der Kommaregel, die du schon kennst. Das Bindewort leitet einen Nebensatz ein, und zwischen Hauptsatz und Nebensatz steht immer ein Komma. Wenn du also mitten im Satz zwei s schreibst, gehört fast immer ein Komma davor. Nur wenn das Wort ganz am Satzanfang steht, kommt das Komma erst am Ende des Nebensatzes: Dass du kommst, freut mich."
+      },
+      {
+        "op": "body",
+        "board": "Das nimmst du mit",
+        "lines": [
+          "(1) Passt **dieses** oder **welches**: ein s.",
+          "(2) Passt keins von beiden: zwei s.",
+          "(3) Vor dem Wort mit zwei s steht mitten im Satz ein **Komma**."
+        ]
+      },
+      {
+        "op": "quiz",
+        "index": 5,
+        "correct": "Wenn es zwei s hat und mitten im Satz steht.",
+        "wrong": ["Nie.", "Nur am Satzanfang.", "Nur, wenn es ein Artikel ist."],
+        "explain": "Das Bindewort leitet einen Nebensatz ein. Steht es mitten im Satz, kommt davor ein Komma. Am Satzanfang steht davor keines."
+      }
+    ]
+  }
+]

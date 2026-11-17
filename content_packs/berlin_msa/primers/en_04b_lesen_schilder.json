@@ -89,15 +89,15 @@
         "body": "**not allowed** = *forbidden, you must not*\n**free** = *no charge, costs nothing*\n**closed** = *not open, shut*\n**staff** = *people who work here*",
         "tasks": [
           {
-            "text": "no charge = ___",
+            "text": "Schild: Smoking is not allowed. Welcher Satz sagt dasselbe? ___",
             "choices": [
-              "free",
-              "closed",
-              "forbidden"
+              "You must not smoke here.",
+              "Smoking costs nothing.",
+              "The smoking room is shut."
             ],
-            "correct": "free",
-            "why": "No charge heißt, dass nichts berechnet wird. Es kostet also nichts.",
-            "hint": "Schau in die zweite Zeile der Tafel. Dort steht das Paar."
+            "correct": "You must not smoke here.",
+            "why": "Not allowed und you must not bedeuten beide: Es ist verboten.",
+            "hint": "Welcher Zwilling gehört zu not allowed? Schau auf die erste Zeile der Tafel."
           }
         ],
         "say": "Viele Wörter auf Schildern haben einen Zwilling, der dasselbe bedeutet. Not allowed heißt nicht erlaubt, genauso wie forbidden. Staff sind die Leute, die an einem Ort arbeiten. Wenn du diese Paare kennst, erkennst du den richtigen Satz schneller."

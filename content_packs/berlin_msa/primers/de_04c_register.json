@@ -106,14 +106,14 @@
         "body": "*voll, mega, total*: sehr\n*krass*: beeindruckend, heftig\n*Bock*: Lust\n*kapieren, checken*: verstehen\n*Klamotten*: Kleidung\n*kaputt machen*: beschädigen, zerstören",
         "tasks": [
           {
-            "text": "Ich habe keinen Bock. In Standardsprache: Ich habe keine ___.",
+            "text": "Hast du das kapiert? In Standardsprache: Hast du das ___?",
             "choices": [
-              "Lust",
-              "Laune dazu, ey"
+              "verstanden",
+              "gecheckt"
             ],
-            "correct": "Lust",
-            "why": "Das ist das sachliche Wort für dasselbe Gefühl.",
-            "hint": "Schau in die dritte Zeile der Tafel."
+            "correct": "verstanden",
+            "why": "Das ist das sachliche Wort für dasselbe.",
+            "hint": "Welches der beiden Wörter würde in einer Zeitung stehen?"
           }
         ],
         "say": "Viele Wörter gehören nur in die Umgangssprache. Für jedes davon gibt es ein sachliches Wort in der Standardsprache. Auf der Tafel siehst du die häufigsten Paare. In der Prüfung musst du für ein lockeres Wort das passende sachliche finden."
@@ -148,7 +148,7 @@
             "hint": "Welches Wort würdest du in einer Prüfung durch ein sachliches ersetzen?"
           },
           {
-            "text": "Sie trägt immer coole Klamotten. ___",
+            "text": "Sie trägt immer schöne Klamotten. ___",
             "choices": [
               "Klamotten",
               "trägt"
@@ -203,23 +203,23 @@
             "hint": "Welches der beiden Wörter würde in einer Zeitung stehen?"
           },
           {
-            "text": "Ich hab das nicht kapiert. In Standardsprache: Ich habe das nicht ___.",
+            "text": "Sie trägt gern bunte Klamotten. In Standardsprache: Sie trägt gern bunte ___.",
             "choices": [
-              "verstanden",
-              "gecheckt"
+              "Kleidung",
+              "Sachen"
             ],
-            "correct": "verstanden",
-            "why": "Verstanden ist das sachliche Wort für dasselbe.",
-            "hint": "Welches der beiden Wörter gehört nicht in die Umgangssprache?"
+            "correct": "Kleidung",
+            "why": "Kleidung ist das sachliche Wort. Sachen ist ungenau und klingt locker.",
+            "hint": "Welches der beiden Wörter passt in einen sachlichen Text über Mode?"
           },
           {
             "text": "Zu viele Autos machen die Luft kaputt. In Standardsprache: Zu viele Autos ___ die Luft.",
             "choices": [
-              "verschmutzen",
+              "belasten",
               "ruinieren total"
             ],
-            "correct": "verschmutzen",
-            "why": "Das ist ein sachliches, genaues Wort für das, was mit der Luft geschieht.",
+            "correct": "belasten",
+            "why": "Das ist ein sachliches Wort dafür. Der Inhalt bleibt gleich.",
             "hint": "Welches Wort beschreibt genau und sachlich, was mit der Luft geschieht?"
           }
         ],

@@ -252,7 +252,7 @@
             "hint": "Welche Rechnung macht aus minus 2 eine Null?"
           }
         ],
-        "say": "Mit diesen vier Schritten löst du jede Gleichung, die im MSA vorkommt. Die Probe kostet dich nur ein paar Sekunden und zeigt dir jeden Fehler. Gleich kommen noch die Wörter zum Nachlesen und ein kleines Quiz."
+        "say": "Mit diesen vier Schritten löst du jede Gleichung, in der das x ohne Hochzahl vorkommt. Die Probe kostet dich nur ein paar Sekunden und zeigt dir jeden Fehler. Gleich kommen noch die Wörter zum Nachlesen und ein kleines Quiz."
       }
     ],
     "vocab": [

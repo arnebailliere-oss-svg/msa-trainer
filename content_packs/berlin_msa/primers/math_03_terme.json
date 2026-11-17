@@ -211,8 +211,8 @@
       },
       {
         "title": "Der Trick damit",
-        "body": "$25 \\cdot 4 \\cdot 7$\n\nErst $25 \\cdot 4 = 100$\n\nDann $100 \\cdot 7 = 700$",
-        "say": "Du darfst dir die leichte Rechnung zuerst rauspicken. Genau dafür ist das Gesetz da.",
+        "body": "$7 \\cdot 25 \\cdot 4$\n\nDas Gesetz gilt auch bei Mal: $(7 \\cdot 25) \\cdot 4 = 7 \\cdot (25 \\cdot 4)$\n\nErst $25 \\cdot 4 = 100$\n\nDann $7 \\cdot 100 = 700$",
+        "say": "Du darfst dir die leichte Rechnung zuerst rauspicken. Weil du bei Mal auch tauschen darfst, kannst du dir sogar zwei Zahlen aussuchen, die nicht nebeneinander stehen.",
         "tasks": [
           {
             "text": "$5 \\cdot 13 \\cdot 2$: Was rechnest du am besten zuerst? ___",
@@ -252,7 +252,7 @@
       {
         "title": "Ausklammern = rückwärts",
         "body": "$4x + 8$\n\nIn beiden steckt die 4: $4 \\cdot x$ und $4 \\cdot 2$\n\nDie 4 kommt **vor die Klammer**:\n\n$4 \\cdot (x + 2)$",
-        "say": "Probe: wieder ausmultiplizieren. 4 mal x plus 4 mal 2 ist 4x + 8. Passt.",
+        "say": "Probe: die Klammer wieder auflösen. Das nennt man auch **ausmultiplizieren**. 4 mal x plus 4 mal 2 ist 4x + 8. Passt.",
         "tasks": [
           {
             "text": "$5x + 10 = $ ___",
@@ -465,12 +465,12 @@
       {
         "prompt": "Was heißt es, dass Plus kommutativ ist?",
         "choices": [
-          "Man darf die Summanden vertauschen",
+          "Man darf die Zahlen vertauschen",
           "Man darf die Klammer weglassen",
           "Man darf durch 0 teilen",
           "Plus ist stärker als Mal"
         ],
-        "correct": "Man darf die Summanden vertauschen",
+        "correct": "Man darf die Zahlen vertauschen",
         "explain": "Kommutativ bedeutet vertauschbar. Bei Plus kommt dasselbe heraus, egal welche Zahl vorn steht."
       },
       {

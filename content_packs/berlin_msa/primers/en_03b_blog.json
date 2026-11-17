@@ -8,7 +8,8 @@
     "outro": "Du kannst jetzt auf einen Blogbeitrag antworten. Du sagst deine Meinung, nennst einen Grund mit because, gibst ein Beispiel von dir und schließt freundlich ab. Mit Wörtern wie but, so und however verbindest du deine Sätze, und du weißt, wie man höflich zustimmt oder widerspricht.",
     "standard": 2,
     "requires": [
-      "P_EN_VERBFORMEN"
+      "P_EN_VERBFORMEN",
+      "P_EN_EMAIL"
     ],
     "steps": [
       {
@@ -27,14 +28,14 @@
         "body": "(1) *What do you think?*\nSam fragt nach deiner **Meinung**.\n\n(2) *How much time do you spend online?*\nSam fragt nach deiner **Erfahrung**.",
         "tasks": [
           {
-            "text": "What do you think? fragt nach ___.",
+            "text": "Do you do sport after school? fragt nach ___.",
             "choices": [
-              "deiner Meinung",
-              "einer Uhrzeit"
+              "deiner Erfahrung",
+              "deiner Meinung"
             ],
-            "correct": "deiner Meinung",
-            "why": "To think heißt denken. Sam will wissen, was du darüber denkst.",
-            "hint": "Was bedeutet das Wort think auf Deutsch?"
+            "correct": "deiner Erfahrung",
+            "why": "Die Frage will wissen, wie es bei dir selbst ist. Das ist deine Erfahrung.",
+            "hint": "Will die Frage wissen, was du über etwas denkst, oder was du selbst tust?"
           }
         ],
         "say": "Wie bei der E-Mail zählst du zuerst die Fragen. Hier sind es zwei. Die erste fragt, was du über das Thema denkst. Die zweite fragt, wie es bei dir selbst ist. Beide Fragen musst du beantworten, sonst fehlen dir Punkte für den Inhalt."
@@ -159,6 +160,24 @@
         "body": "*I don't agree.*\n= Ich stimme nicht zu.\n\n*I see your point, but …*\n= Ich verstehe, was du meinst, aber …\n\n*I'm not sure about that.*\n= Da bin ich mir nicht sicher.",
         "tasks": [
           {
+            "text": "Du bist anderer Meinung und willst höflich bleiben. Du schreibst: ___",
+            "choices": [
+              "I see your point, but I think phones are useful.",
+              "You are wrong."
+            ],
+            "correct": "I see your point, but I think phones are useful.",
+            "why": "Du zeigst zuerst Verständnis und sagst dann deine eigene Sicht.",
+            "hint": "Welcher Satz zeigt zuerst, dass du den anderen verstehst?"
+          }
+        ],
+        "say": "Du darfst auch anderer Meinung sein. Das ist sogar interessanter zu lesen. Wichtig ist, dass du höflich bleibst. Mit I see your point, but zeigst du zuerst Verständnis und sagst dann deine eigene Sicht."
+      },
+      {
+        "title": "Die Falle: I am agree",
+        "body": "Falsch: *I am agree.*\n\nRichtig: *I **agree**.*\n\nAgree ist selbst das Verb.",
+        "say": "Dieser Fehler kommt vom Deutschen. Dort sagt man: Ich bin einverstanden. Deshalb möchte man I am agree schreiben. Im Englischen ist agree aber ein Verb wie play oder like. Du sagst ja auch nicht I am play.",
+        "tasks": [
+          {
             "text": "Ich stimme dir zu. = ___",
             "choices": [
               "I agree with you.",
@@ -168,13 +187,7 @@
             "why": "Agree ist schon das Verb. Ein am davor ist falsch.",
             "hint": "Ist agree ein Verb? Braucht ein Verb noch ein am davor?"
           }
-        ],
-        "say": "Du darfst auch anderer Meinung sein. Das ist sogar interessanter zu lesen. Wichtig ist, dass du höflich bleibst. Mit I see your point, but zeigst du zuerst Verständnis und sagst dann deine eigene Sicht."
-      },
-      {
-        "title": "Die Falle: I am agree",
-        "body": "Falsch: *I am agree.*\n\nRichtig: *I **agree**.*\n\nAgree ist selbst das Verb.",
-        "say": "Dieser Fehler kommt vom Deutschen. Dort sagt man: Ich bin einverstanden. Deshalb möchte man I am agree schreiben. Im Englischen ist agree aber ein Verb wie play oder like. Du sagst ja auch nicht I am play."
+        ]
       },
       {
         "title": "Jetzt du: ein kleiner Text",

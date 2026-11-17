@@ -113,18 +113,18 @@
         "body": "**always** = immer\n**usually** = normalerweise\n**often** = oft\n**sometimes** = manchmal\n**never** = nie\n**every day** = jeden Tag",
         "tasks": [
           {
-            "text": "usually = ___",
+            "text": "Tom ___ plays football on Saturdays. Meistens, aber nicht immer.",
             "choices": [
-              "normalerweise",
-              "nie",
-              "gerade jetzt"
+              "usually",
+              "never",
+              "always"
             ],
-            "correct": "normalerweise",
+            "correct": "usually",
             "why": "Usually heißt normalerweise. Es beschreibt, was meistens so ist.",
-            "hint": "Schau in die zweite Zeile der Tafel. Dort steht das Wort."
+            "hint": "Welches Wort auf der Tafel bedeutet meistens, also nicht immer und nicht nie?"
           }
         ],
-        "say": "Das sind die sechs wichtigsten. Lies sie einmal langsam von oben nach unten. Sie gehen von immer bis nie. Every kannst du mit jedem Zeitwort verbinden: every day, every week, every Saturday. Unten kannst du prüfen, ob eins schon sitzt."
+        "say": "Das sind die sechs wichtigsten. Lies sie einmal langsam von oben nach unten. Die ersten fünf gehen von immer bis nie. Das sechste ist every day. Every kannst du mit jedem Zeitwort verbinden: every day, every week, every Saturday. Unten kannst du prüfen, ob eins schon sitzt."
       },
       {
         "title": "Auch Tatsachen stehen im Simple Present",
@@ -179,15 +179,15 @@
         "body": "**am / is / are** + Verb mit **-ing**\n\nI **am** play**ing**.\nShe **is** play**ing**.\nThey **are** play**ing**.",
         "tasks": [
           {
-            "text": "They ___ playing.",
+            "text": "We ___ playing.",
             "choices": [
               "are",
               "is",
               "am"
             ],
             "correct": "are",
-            "why": "They sind mehrere. Zu you, we und they gehört are.",
-            "hint": "Schau auf die dritte Zeile der Tafel. Welches Wort steht dort bei they?"
+            "why": "We sind mehrere. Zu you, we und they gehört are.",
+            "hint": "We sind mehrere, genau wie they. Welches kleine Wort steht auf der Tafel bei they?"
           }
         ],
         "say": "Diese Zeit besteht immer aus zwei Teilen. Der erste Teil ist am, is oder are. Der zweite Teil ist das Verb mit ing. Auch das kennst du schon aus der Lektion über die Verbformen. Zu I gehört am, zu he, she, it gehört is, und zu allen anderen gehört are."
@@ -276,14 +276,14 @@
         },
         "tasks": [
           {
-            "text": "She ___ tennis every week.",
+            "text": "He ___ his grandma every Sunday.",
             "choices": [
-              "plays",
-              "is playing"
+              "visits",
+              "is visiting"
             ],
-            "correct": "plays",
-            "why": "Every week heißt jede Woche. Es passiert immer wieder, also Simple Present.",
-            "hint": "Schau auf every week. Ist das ein einzelner Moment oder eine Gewohnheit?"
+            "correct": "visits",
+            "why": "Every Sunday heißt jeden Sonntag. Es passiert immer wieder, also Simple Present.",
+            "hint": "Schau auf every Sunday. Ist das ein einzelner Moment oder eine Gewohnheit?"
           }
         ],
         "say": "Bevor wir weitergehen, legen wir beide Zeiten nebeneinander. Im Bild siehst du den Unterschied. Das Simple Present gilt für viele Tage, früher, heute und später. Das Present Progressive gilt nur für diesen einen Moment in der Mitte."

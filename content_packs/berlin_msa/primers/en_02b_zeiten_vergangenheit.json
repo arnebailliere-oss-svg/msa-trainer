@@ -338,11 +338,37 @@
       {
         "title": "since: der Anfang",
         "body": "**since** 2019\n**since** Monday\n**since** my birthday\n\nNach since steht der **Zeitpunkt**, an dem es angefangen hat.",
+        "figure": {
+          "type": "timeline",
+          "spans": [
+            {
+              "from": -0.6,
+              "to": 0,
+              "label": "bis jetzt"
+            }
+          ],
+          "points": [
+            {
+              "at": -0.6,
+              "label": "since 2019"
+            }
+          ]
+        },
         "say": "Ein Zeitpunkt ist ein Punkt auf dem Zeitstrahl. Du kannst mit dem Finger darauf zeigen: genau hier hat es angefangen. Ein Jahr, ein Wochentag oder ein Geburtstag sind solche Punkte. Vor ihnen steht since."
       },
       {
         "title": "for: die Dauer",
         "body": "**for** five years\n**for** two hours\n**for** a long time\n\nNach for steht die **Dauer**. Sie sagt, wie lange etwas schon geht.",
+        "figure": {
+          "type": "timeline",
+          "spans": [
+            {
+              "from": -0.6,
+              "to": 0,
+              "label": "for five years"
+            }
+          ]
+        },
         "tasks": [
           {
             "text": "Two hours ist ___.",

@@ -1,0 +1,573 @@
+[
+  {
+    "lesson": "P_EN_PHOTO",
+    "why": "The finished photo text has 35 words, not 34.",
+    "ops": [
+      {
+        "op": "say",
+        "board": "Ein fertiger Text",
+        "text": "Das sind 35 Wörter. Schau, wie die drei Schritte darin stecken. Zuerst der Überblick: ein Skatepark. Dann, was wo zu sehen ist und was Mia gerade tut. Am Ende ein Gedanke und der Gruß."
+      }
+    ]
+  },
+  {
+    "lesson": "P_EN_ZEITFORMEN",
+    "why": "The task repeated the board sentence with they and the hint named the wrong line.",
+    "ops": [
+      {
+        "op": "tasks",
+        "board": "So baust du das Present Progressive",
+        "tasks": [
+          {
+            "text": "We ___ playing.",
+            "correct": "are",
+            "wrong": ["is", "am"],
+            "why": "We sind mehrere. Zu you, we und they gehört are.",
+            "hint": "We sind mehrere, genau wie they. Welches kleine Wort steht auf der Tafel bei they?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": "P_EN_ZEITFORMEN",
+    "why": "The task repeated the board sentence about tennis every week.",
+    "ops": [
+      {
+        "op": "tasks",
+        "board": "Kurz zurückschauen",
+        "tasks": [
+          {
+            "text": "He ___ his grandma every Sunday.",
+            "correct": "visits",
+            "wrong": ["is visiting"],
+            "why": "Every Sunday heißt jeden Sonntag. Es passiert immer wieder, also Simple Present.",
+            "hint": "Schau auf every Sunday. Ist das ein einzelner Moment oder eine Gewohnheit?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": "P_EN_ZEITFORMEN",
+    "why": "The task only asked for the board line of usually instead of using the signal word.",
+    "ops": [
+      {
+        "op": "tasks",
+        "board": "Die Signalwörter für immer wieder",
+        "tasks": [
+          {
+            "text": "Tom ___ plays football on Saturdays. Meistens, aber nicht immer.",
+            "correct": "usually",
+            "wrong": ["never", "always"],
+            "why": "Usually heißt normalerweise. Es beschreibt, was meistens so ist.",
+            "hint": "Welches Wort auf der Tafel bedeutet meistens, also nicht immer und nicht nie?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": "P_EN_ZEITFORMEN",
+    "why": "The six signal words do not all run from always to never, the sixth is every day.",
+    "ops": [
+      {
+        "op": "say",
+        "board": "Die Signalwörter für immer wieder",
+        "text": "Das sind die sechs wichtigsten. Lies sie einmal langsam von oben nach unten. Die ersten fünf gehen von immer bis nie. Das sechste ist every day. Every kannst du mit jedem Zeitwort verbinden: every day, every week, every Saturday. Unten kannst du prüfen, ob eins schon sitzt."
+      }
+    ]
+  },
+  {
+    "lesson": "P_EN_BLOG",
+    "why": "The blog lesson refers to the e-mail lesson, so that lesson is now required.",
+    "ops": [{ "op": "requires", "add": ["P_EN_EMAIL"] }]
+  },
+  {
+    "lesson": "P_EN_BLOG",
+    "why": "Board 3 task finding: by decision not reworded, only the e-mail lesson is required.",
+    "ops": [{ "op": "requires", "add": ["P_EN_EMAIL"] }]
+  },
+  {
+    "lesson": "P_EN_BLOG",
+    "why": "The phrase at least is taught in the e-mail lesson, which is now required.",
+    "ops": [{ "op": "requires", "add": ["P_EN_EMAIL"] }]
+  },
+  {
+    "lesson": "P_EN_BLOG",
+    "why": "The agree task sat one board before its explanation; disagreeing politely had no task.",
+    "ops": [
+      {
+        "op": "tasks",
+        "board": "Höflich widersprechen",
+        "tasks": [
+          {
+            "text": "Du bist anderer Meinung und willst höflich bleiben. Du schreibst: ___",
+            "correct": "I see your point, but I think phones are useful.",
+            "wrong": ["You are wrong."],
+            "why": "Du zeigst zuerst Verständnis und sagst dann deine eigene Sicht.",
+            "hint": "Welcher Satz zeigt zuerst, dass du den anderen verstehst?"
+          }
+        ]
+      },
+      {
+        "op": "tasks",
+        "board": "Die Falle: I am agree",
+        "tasks": [
+          {
+            "text": "Ich stimme dir zu. = ___",
+            "correct": "I agree with you.",
+            "wrong": ["I am agree with you."],
+            "why": "Agree ist schon das Verb. Ein am davor ist falsch.",
+            "hint": "Ist agree ein Verb? Braucht ein Verb noch ein am davor?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": "P_EN_BLOG",
+    "why": "Quiz questions 7 and 2 use formal e-mail phrases from the now required e-mail lesson.",
+    "ops": [{ "op": "requires", "add": ["P_EN_EMAIL"] }]
+  },
+  {
+    "lesson": "P_EN_MEDIATION",
+    "why": "The mediation lesson refers to the e-mail lesson, so that lesson is now required.",
+    "ops": [{ "op": "requires", "add": ["P_EN_EMAIL"] }]
+  },
+  {
+    "lesson": "P_EN_MEDIATION",
+    "why": "The task repeated every Thursday, which stands on the same board.",
+    "ops": [
+      {
+        "op": "tasks",
+        "board": "Namen und Zahlen übernimmst du",
+        "tasks": [
+          {
+            "text": "Im Text steht: 25 Schüler. Du schreibst: ___",
+            "correct": "25 students",
+            "wrong": ["many students"],
+            "why": "Die Zahl ist eine genaue Angabe. Du überträgst sie so, wie sie ist.",
+            "hint": "Ist die Zahl eine genaue Angabe, die dein Freund braucht?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": "P_EN_MEDIATION",
+    "why": "The task repeated the board sentence with about and the hint only said to read it off.",
+    "ops": [
+      {
+        "op": "tasks",
+        "board": "Der Satz, der alles einleitet",
+        "tasks": [
+          {
+            "text": "The text is ___ a football club in Berlin.",
+            "correct": "about",
+            "wrong": ["over"],
+            "why": "Worum es in einem Text geht, sagt man im Englischen mit about.",
+            "hint": "Im Deutschen sagst du über. Welches englische Wort steht dafür auf der Tafel?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": "P_EN_FEHLER",
+    "why": "The memory sentence about a smaller word was wrong, in, on and at are equally long.",
+    "ops": [
+      {
+        "op": "say",
+        "board": "Die drei auf einen Blick",
+        "text": "Hier siehst du die drei kleinen Wörter nebeneinander. Sie passen zu verschieden großen Zeiträumen. In ist für die großen Zeiträume. On ist für einen Tag. At ist für den genauen Moment auf der Uhr."
+      }
+    ]
+  },
+  {
+    "lesson": "P_EN_FEHLER",
+    "why": "The rule that a person always follows tell was too strong.",
+    "ops": [
+      {
+        "op": "say",
+        "board": "say oder tell?",
+        "text": "Auch für sagen gibt es zwei Wörter. Nach tell steht fast immer die Person, der man etwas sagt: tell me, tell him, tell my mum. Nach say steht direkt das, was gesagt wird. She said me ist also falsch."
+      }
+    ]
+  },
+  {
+    "lesson": "P_EN_EMAIL",
+    "why": "Write back soon stood on the board without a translation or a place in the six parts.",
+    "ops": [
+      {
+        "op": "say",
+        "board": "Teil 5 und 6: Schluss und Name",
+        "text": "Vor der Schlussformel kannst du noch einen letzten Satz schreiben. Write back soon bedeutet: Schreib bald zurück. Danach kommt die Schlussformel. Best wishes bedeutet viele Grüße. An Freunde passen auch Take care oder See you soon. Nach der Schlussformel kommt ein Komma, und in der nächsten Zeile steht nur dein Vorname."
+      }
+    ]
+  },
+  {
+    "lesson": "P_EN_EMAIL",
+    "why": "The hint asked the learner to judge Yours faithfully, which is only explained later.",
+    "ops": [
+      {
+        "op": "tasks",
+        "board": "Teil 5 und 6: Schluss und Name",
+        "tasks": [
+          {
+            "text": "Welcher Schluss passt an eine Freundin? ___",
+            "correct": "Best wishes,",
+            "wrong": ["Yours faithfully,"],
+            "why": "Das ist ein lockerer, freundlicher Gruß.",
+            "hint": "Wishes heißt Wünsche. Welcher der beiden Grüße wünscht der Freundin etwas Gutes?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": "P_EN_READ_MATCH",
+    "why": "The word adults was never explained and Ferdinand announced a different task.",
+    "ops": [
+      {
+        "op": "say",
+        "board": "Schritt 3: noch einmal prüfen",
+        "text": "Erst jetzt liest du genau, und nur noch ein oder zwei kurze Texte. Das spart viel Zeit. Wenn du für jeden Wunsch auf ein Wort zeigen kannst, ist die Antwort sicher. Unten probierst du Schritt 3 aus. Ein Wort dazu: adults sind Erwachsene."
+      },
+      {
+        "op": "tasks",
+        "board": "Schritt 3: noch einmal prüfen",
+        "tasks": [
+          {
+            "text": "Zwei Angebote bleiben übrig. In Angebot A steht: adults only. Die Person ist 15. Du wählst ___.",
+            "correct": "das andere Angebot",
+            "wrong": ["Angebot A"],
+            "why": "Adults only heißt nur für Erwachsene. Mit 15 darf die Person dort nicht teilnehmen.",
+            "hint": "Adults sind Erwachsene, only heißt nur. Ist jemand mit 15 schon erwachsen?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": "P_EN_READ_MATCH",
+    "why": "The task only asked for the first board line and the hint said the answer stands there.",
+    "ops": [
+      {
+        "op": "tasks",
+        "board": "Wörter, die in Angeboten oft vorkommen",
+        "tasks": [
+          {
+            "text": "Person: Lena is on a budget. Im Angebot suchst du ein Wort wie ___.",
+            "correct": "cheap",
+            "wrong": ["outdoors", "beginner"],
+            "why": "On a budget heißt mit wenig Geld. Dazu passt cheap, also billig.",
+            "hint": "Was bedeutet on a budget? Welches der drei Wörter hat mit Geld zu tun?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": "P_EN_READ_SIGNS",
+    "why": "The task only asked for the pair in the second board line.",
+    "ops": [
+      {
+        "op": "tasks",
+        "board": "Wörter und ihre Zwillinge",
+        "tasks": [
+          {
+            "text": "Schild: Smoking is not allowed. Welcher Satz sagt dasselbe? ___",
+            "correct": "You must not smoke here.",
+            "wrong": ["Smoking costs nothing.", "The smoking room is shut."],
+            "why": "Not allowed und you must not bedeuten beide: Es ist verboten.",
+            "hint": "Welcher Zwilling gehört zu not allowed? Schau auf die erste Zeile der Tafel."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": "P_EN_LISTENING",
+    "why": "A quarter to nine is not in the eighth hour; same mistake in quiz question 2.",
+    "ops": [
+      {
+        "op": "say",
+        "board": "quarter past und quarter to",
+        "text": "A quarter ist ein Viertel, also eine Viertelstunde. Quarter past nine ist eine Viertelstunde nach neun. Quarter to nine ist eine Viertelstunde vor neun. Die Uhr zeigt also noch 8 vorn: 8:45. Achte deshalb genau auf das kleine Wort in der Mitte."
+      },
+      {
+        "op": "quiz",
+        "index": 1,
+        "explain": "To heißt vor. Eine Viertelstunde vor sieben ist 6:45. Die Uhr zeigt also noch 6 vorn."
+      }
+    ]
+  },
+  {
+    "lesson": "P_EN_LISTENING",
+    "why": "Not all days from the fourth on end in th: 21st, 22nd, 23rd and 31st do not.",
+    "ops": [
+      {
+        "op": "body",
+        "board": "Der Tag im Monat",
+        "lines": [
+          "**1st** = first\n**2nd** = second\n**3rd** = third",
+          "Ab der 4 hängt man **-th** an: fourth, fifth, sixth.",
+          "Aber: 21st = twenty-first, 22nd = twenty-second, 23rd = twenty-third, 31st = thirty-first.",
+          "*the fifth of May* = 5. Mai"
+        ]
+      },
+      {
+        "op": "say",
+        "board": "Der Tag im Monat",
+        "text": "Für ein Datum braucht man die Zahlen, mit denen man eine Reihenfolge angibt: der erste, der zweite, der dritte. Die ersten drei haben eigene Wörter. Fast alle anderen bekommen ein th ans Ende, das wie ein weiches s mit der Zunge zwischen den Zähnen klingt. Nur bei 21, 22, 23 und 31 kommen first, second und third noch einmal."
+      }
+    ]
+  },
+  {
+    "lesson": "P_EN_READING",
+    "why": "The answer choices need darkness, crime and burglars, which were not explained before.",
+    "ops": [
+      {
+        "op": "say",
+        "board": "Jetzt du: Was sagt die Polizei?",
+        "text": "Break-ins sind Einbrüche. To rise bedeutet steigen. Lies die beiden Sätze langsam und überleg, was mit der Zahl der Einbrüche passiert ist. Dann suchst du die Antwort, die genau das sagt. Für die Antworten brauchst du noch drei Wörter: Darkness ist die Dunkelheit, crime sind Verbrechen, und burglars sind Einbrecher."
+      }
+    ]
+  },
+  {
+    "lesson": "P_EN_FRAGEN",
+    "why": "The task only asked for the fourth board line instead of using a question word.",
+    "ops": [
+      {
+        "op": "tasks",
+        "board": "Die sechs wichtigsten",
+        "tasks": [
+          {
+            "text": "___ is your birthday? – In May.",
+            "correct": "When",
+            "wrong": ["Who", "Where"],
+            "why": "In May ist eine Zeit. Nach einer Zeit fragst du mit when.",
+            "hint": "Was ist in May: ein Mensch, ein Ort oder eine Zeit?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": "P_EN_FRAGEN",
+    "why": "The name wh-questions belongs to the questions, not to the question words.",
+    "ops": [
+      {
+        "op": "say",
+        "board": "Die sechs wichtigsten",
+        "text": "Das sind die sechs Fragewörter, die du am häufigsten brauchst. Fünf davon beginnen mit wh. Deshalb nennt man Fragen mit einem Fragewort im Englischen auch wh-questions. Lies sie einmal langsam von oben nach unten. Unten kannst du gleich eins ausprobieren."
+      }
+    ]
+  },
+  {
+    "lesson": "P_EN_FRAGEN",
+    "why": "Quiz question 6 needs am for are you, but no board showed that the helper follows the new person.",
+    "ops": [
+      {
+        "op": "body",
+        "board": "Kurze Antworten",
+        "lines": [
+          "*Do you like tea?*\n*Yes, I **do**.* oder *No, I **don't**.*",
+          "*Is she at home?*\n*Yes, she **is**.* oder *No, she **isn't**.*",
+          "*Are you tired?*\n*Yes, I **am**.*"
+        ]
+      },
+      {
+        "op": "say",
+        "board": "Kurze Antworten",
+        "text": "Auf eine Frage ohne Fragewort antwortet man im Englischen selten nur mit yes oder no. Das klingt etwas unhöflich. Man hängt die Person und den Helfer aus der Frage an. Der Helfer aus der Frage kommt also in der Antwort wieder. Achtung: Die Person wechselt von you zu I. Der Helfer passt sich an die neue Person an. Aus are you wird deshalb I am."
+      },
+      {
+        "op": "say",
+        "board": "Jetzt du: kurz antworten",
+        "text": "Such in jeder Frage das erste Wort. Das ist der Helfer. Derselbe Helfer gehört auch in die Antwort. Er muss nur zur Person in der Antwort passen."
+      }
+    ]
+  },
+  {
+    "lesson": "P_EN_MODALS",
+    "why": "The task only asked for the third board line instead of using a modal verb.",
+    "ops": [
+      {
+        "op": "tasks",
+        "board": "Die wichtigsten Modalverben",
+        "tasks": [
+          {
+            "text": "Tom is not sure. He ___ come later. (vielleicht)",
+            "correct": "may",
+            "wrong": ["must"],
+            "why": "May sagt hier, dass etwas vielleicht passiert.",
+            "hint": "Welches Modalverb auf der Tafel hat die Bedeutung vielleicht?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": "P_EN_MODALS",
+    "why": "The be allowed to board tested could and used short forms that were never introduced.",
+    "ops": [
+      {
+        "op": "tasks",
+        "board": "Ersatz für may: be allowed to",
+        "tasks": [
+          {
+            "text": "Last Saturday I ___ go to the concert.",
+            "correct": "was allowed to",
+            "wrong": ["am allowed to"],
+            "why": "Last Saturday ist vorbei. Dann steht be in der Vergangenheit: was allowed to.",
+            "hint": "Welches Wort zeigt die Zeit? In welcher Zeit muss be dann stehen?"
+          }
+        ]
+      },
+      {
+        "op": "body",
+        "board": "Ersatz für can: be able to",
+        "lines": [
+          "Gestern: *I **could** swim.*\nOder: *I **was able to** swim.*",
+          "Morgen: *I **will be able to** swim.*",
+          "**can't** und **couldn't** sind die Kurzformen von cannot und could not."
+        ]
+      },
+      {
+        "op": "tasks",
+        "board": "Ersatz für can: be able to",
+        "tasks": [
+          {
+            "text": "When I was five, I ___ read.",
+            "correct": "couldn't",
+            "wrong": ["can't"],
+            "why": "When I was five ist vorbei. Die Vergangenheit von can't ist diese Form.",
+            "hint": "Geht es um heute oder um die Zeit, als du fünf warst?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": "P_EN_IF",
+    "why": "The task used exactly the board sentence about the dog, which the board already labels.",
+    "ops": [
+      {
+        "op": "tasks",
+        "board": "Vergangenheit, aber nicht gestern",
+        "tasks": [
+          {
+            "text": "If I lived in London, I would speak English every day. Wohnt der Sprecher in London? ___",
+            "correct": "Nein",
+            "wrong": ["Ja"],
+            "why": "Lived ist hier nur vorgestellt. Der Sprecher malt sich aus, wie es in London wäre.",
+            "hint": "Ist das ein Bericht über die Wirklichkeit, oder malt sich jemand etwas aus?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": "P_EN_IF",
+    "why": "The task was the German version of the bird sentence that the board already labels.",
+    "ops": [
+      {
+        "op": "tasks",
+        "board": "Kann es passieren, oder stellst du es dir nur vor?",
+        "tasks": [
+          {
+            "text": "If I have time tomorrow, I will call you. Das ist ___.",
+            "correct": "gut möglich",
+            "wrong": ["nur vorgestellt"],
+            "why": "Morgen Zeit zu haben kann wirklich passieren. Das ist Typ 1.",
+            "hint": "Kann der Sprecher morgen wirklich Zeit haben? Schau auch auf have und will."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": "P_EN_IF",
+    "why": "In quiz question 6 the wrong choice would pass is possible English as a mixed conditional.",
+    "ops": [
+      {
+        "op": "quiz",
+        "index": 5,
+        "wrong": ["will pass", "passes", "would passed"]
+      }
+    ]
+  },
+  {
+    "lesson": "P_EN_COMPARISON",
+    "why": "The doubling rule was stated for all short words, but tall, old and fast do not double.",
+    "ops": [
+      {
+        "op": "body",
+        "board": "Drei kleine Schreibregeln",
+        "lines": [
+          "big wird zu bi**gg**er: Endet ein kurzes Wort auf einen Selbstlaut und einen Mitlaut, wird der letzte Buchstabe verdoppelt.",
+          "nice wird zu nice**r**: Das e ist schon da.",
+          "happy wird zu happ**ier**: Aus y wird i."
+        ]
+      },
+      {
+        "op": "say",
+        "board": "Drei kleine Schreibregeln",
+        "text": "Diese Regeln kennst du in ähnlicher Form schon von den Verben. Bei big und hot steht am Ende ein einzelner Selbstlaut und dann ein einzelner Mitlaut. Dann wird der letzte Buchstabe verdoppelt. Bei tall, old oder fast ist das nicht so: taller, older, faster. Endet das Wort schon auf e, hängst du nur ein r an. Und aus einem y am Ende wird ein i."
+      },
+      {
+        "op": "tasks",
+        "board": "Drei kleine Schreibregeln",
+        "tasks": [
+          {
+            "text": "Today is ___ than yesterday. (hot)",
+            "correct": "hotter",
+            "wrong": ["hoter"],
+            "why": "Hot endet auf einen Selbstlaut und einen Mitlaut. Der letzte Buchstabe wird verdoppelt.",
+            "hint": "Wie endet hot: mit einem Selbstlaut und einem Mitlaut wie big?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": "P_EN_COMPARISON",
+    "why": "The word guter exists in German, only not as the comparative of gut.",
+    "ops": [
+      {
+        "op": "say",
+        "board": "Drei Wörter machen nicht mit",
+        "text": "Drei sehr häufige Wörter halten sich an keine Regel. Im Deutschen ist das genauso: gut, besser, am besten. Niemand sagt: Das ist guter als gestern. Lies die drei Zeilen ein paarmal laut. Good, better, best kennst du vielleicht schon aus Liedern."
+      },
+      {
+        "op": "tasks",
+        "board": "Jetzt du: unregelmäßig",
+        "tasks": [
+          {
+            "text": "This pizza is ___ than the last one.",
+            "correct": "better",
+            "wrong": ["gooder"],
+            "why": "Good ist unregelmäßig. Der Komparativ hat eine eigene Form.",
+            "hint": "Wie sagst du auf Deutsch: Die Pizza ist guter oder besser? Im Englischen ist es ähnlich."
+          },
+          {
+            "text": "It was the ___ day of my life.",
+            "correct": "worst",
+            "wrong": ["baddest"],
+            "why": "Bad ist unregelmäßig. Der Superlativ hat eine eigene Form.",
+            "hint": "Schau in die zweite Zeile der Tafel davor. Welche Form steht hinter the?"
+          },
+          {
+            "text": "I have ___ books than you.",
+            "correct": "more",
+            "wrong": ["manyer"],
+            "why": "Der Komparativ von many heißt so. Bücher kann man zählen.",
+            "hint": "Schau in die dritte Zeile der Tafel davor."
+          }
+        ]
+      }
+    ]
+  }
+]

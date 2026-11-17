@@ -44,14 +44,14 @@
         "body": "lachen: ich lach**te**\nHier kommt nur -te dazu.\n\ngehen: ich **ging**\nHier ändert sich der **Vokal**, also der Laut in der Mitte.",
         "tasks": [
           {
-            "text": "Das Präteritum von singen heißt: ich ___.",
+            "text": "Das Präteritum von trinken heißt: ich ___.",
             "choices": [
-              "sang",
-              "singte"
+              "trank",
+              "trinkte"
             ],
-            "correct": "sang",
-            "why": "Singen ist ein starkes Verb. Der Vokal ändert sich.",
-            "hint": "Wie würdest du in einem Märchen schreiben, was der Vogel gestern tat?"
+            "correct": "trank",
+            "why": "Trinken ist ein starkes Verb. Der Vokal ändert sich.",
+            "hint": "Wie würdest du in einem Märchen schreiben, was der König gestern aus dem Becher tat?"
           }
         ],
         "say": "Es gibt zwei Sorten von Verben. Die einen bilden das Präteritum ganz regelmäßig mit te. Man nennt sie schwache Verben. Die anderen ändern ihren Vokal: gehen, ging. Singen, sang. Man nennt sie starke Verben. Die starken musst du kennen, aber die meisten kennst du schon."
@@ -76,7 +76,7 @@
             "hint": "Bewegt man sich bei diesem Verb von einem Ort zum anderen?"
           }
         ],
-        "say": "Die meisten Verben bilden das Perfekt mit haben. Sein steht nur bei zwei Gruppen. Die erste sind Verben, bei denen man sich von einem Ort zum anderen bewegt: gehen, fahren, laufen. Die zweite sind Verben, bei denen sich ein Zustand ändert: aufwachen, einschlafen, wachsen."
+        "say": "Die meisten Verben bilden das Perfekt mit haben. Sein steht vor allem bei zwei Gruppen. Die erste sind Verben, bei denen man sich von einem Ort zum anderen bewegt: gehen, fahren, laufen. Die zweite sind Verben, bei denen sich ein Zustand ändert: aufwachen, einschlafen, wachsen. Auch sein und bleiben selbst nehmen sein: ich bin gewesen, ich bin geblieben."
       },
       {
         "title": "Jetzt du: Präsens, Präteritum oder Perfekt?",
@@ -136,21 +136,21 @@
             "hint": "Was geschah zuerst? In welcher Zeit steht das Spätere?"
           }
         ],
-        "say": "Das Plusquamperfekt steht fast nie allein. Es braucht eine zweite Handlung, die später geschah. Besonders oft findest du es nach den Wörtern nachdem und als. Das Frühere bekommt hatte oder war, das Spätere steht im Präteritum."
+        "say": "Das Plusquamperfekt steht fast nie allein. Es braucht eine zweite Handlung, die später geschah. Besonders oft findest du es in Sätzen mit nachdem und als. Das Frühere bekommt hatte oder war, das Spätere steht im Präteritum."
       },
       {
         "title": "Futur: die Zukunft",
         "body": "ich **werde** gehen, es **wird** regnen\n\nDiese Zeitform heißt **Futur**.",
         "tasks": [
           {
-            "text": "Morgen ___ es regnen.",
+            "text": "Nächste Woche ___ wir umziehen.",
             "choices": [
-              "wird",
-              "wurde"
+              "werden",
+              "wurden"
             ],
-            "correct": "wird",
-            "why": "Morgen kommt noch. Für die Zukunft steht eine Form von werden im Präsens.",
-            "hint": "Liegt morgen in der Zukunft oder in der Vergangenheit?"
+            "correct": "werden",
+            "why": "Nächste Woche kommt noch. Für die Zukunft steht eine Form von werden im Präsens.",
+            "hint": "Liegt nächste Woche in der Zukunft oder in der Vergangenheit?"
           }
         ],
         "say": "Für das, was noch kommt, gibt es das Futur. Es besteht aus einer Form von werden und dem Verb im Infinitiv. Ich werde gehen, du wirst gehen, er wird gehen. Den Infinitiv kennst du schon als die Grundform des Verbs."
@@ -229,14 +229,14 @@
         "body": "**Ein Verbteil**: Präsens oder Präteritum\n**habe** oder **bin** und Partizip: Perfekt\n**hatte** oder **war** und Partizip: Plusquamperfekt\n**werde** und Infinitiv: Futur",
         "tasks": [
           {
-            "text": "Der erste Verbteil heißt war, der zweite ist ein Partizip. Das ist ___.",
+            "text": "Die Kinder waren schon eingeschlafen. Das ist ___.",
             "choices": [
               "Plusquamperfekt",
               "Perfekt"
             ],
             "correct": "Plusquamperfekt",
-            "why": "War und hatte zeigen die Vorvergangenheit an.",
-            "hint": "Schau in die dritte Zeile der Tafel."
+            "why": "Der erste Verbteil heißt waren. War und hatte zeigen die Vorvergangenheit an.",
+            "hint": "Heißt der erste Verbteil sind oder waren?"
           }
         ],
         "say": "Mit dieser kleinen Liste benennst du jede Form. Zähl zuerst die Verbteile. Bei zwei Teilen schaust du nur auf den ersten. Er verrät dir alles. Habe und bin gehören zum Perfekt, hatte und war zum Plusquamperfekt, und werde gehört zum Futur."

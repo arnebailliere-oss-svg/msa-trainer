@@ -435,12 +435,12 @@
         "explain": "6 von 10 Kugeln sind blau. Sechs Zehntel sind dasselbe wie 60 Prozent."
       },
       {
-        "prompt": "Zweimal Kopf beim Münzwurf?",
+        "prompt": "Eine Münze hat zwei Seiten: Kopf und Zahl. Du wirfst sie zweimal. Wie groß ist die Wahrscheinlichkeit für zweimal Kopf?",
         "choices": [
           "$\\frac{1}{4}$",
           "$\\frac{1}{2}$",
           "1",
-          "$\\frac{2}{2}$"
+          "$\\frac{3}{4}$"
         ],
         "correct": "$\\frac{1}{4}$",
         "explain": "Entlang eines Weges wird malgenommen. Ein Halb mal ein Halb ergibt ein Viertel."

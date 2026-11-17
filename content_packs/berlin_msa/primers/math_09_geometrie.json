@@ -187,7 +187,7 @@
       },
       {
         "title": "Winkel-Sorten",
-        "body": "**spitz**: unter 90°\n\n**rechter** Winkel: genau 90°\n\n**stumpf**: über 90°\n\n**gestreckt**: 180°, eine gerade Linie",
+        "body": "**spitz**: unter 90°\n\n**rechter** Winkel: genau 90°\n\n**stumpf**: zwischen 90° und 180°\n\n**gestreckt**: genau 180°, eine gerade Linie",
         "say": "Die Namen kannst du dir mit Bildern merken. Ein spitzer Winkel sieht aus wie die Spitze von einem Stück Pizza. Ein stumpfer Winkel sieht aus wie ein weit aufgeklappter Laptop. Die Grenze zwischen beiden ist der rechte Winkel mit genau 90 Grad.",
         "tasks": [
           {
@@ -295,14 +295,14 @@
         "say": "Bei einem gleichschenkligen Dreieck sind zwei Seiten gleich lang. Die beiden Winkel an der dritten Seite sind dann auch gleich groß. Das wird in der Prüfung fast jedes Jahr gebraucht. Beim gleichseitigen Dreieck ist alles gleich, und jeder Winkel hat 60 Grad.",
         "tasks": [
           {
-            "text": "In einem gleichseitigen Dreieck hat jeder Winkel ___.",
+            "text": "Ein gleichschenkliges Dreieck hat an der dritten Seite links einen Winkel von 70°. Der Winkel rechts an dieser Seite hat ___.",
             "choices": [
-              "60°",
-              "90°"
+              "70°",
+              "110°"
             ],
-            "correct": "60°",
-            "why": "Drei gleiche Winkel teilen sich 180 Grad. Das sind 60 Grad für jeden.",
-            "hint": "Wie viel ist 180 geteilt durch 3?"
+            "correct": "70°",
+            "why": "Im gleichschenkligen Dreieck sind die beiden Winkel an der dritten Seite gleich groß.",
+            "hint": "Was gilt für die zwei Winkel an der dritten Seite, wenn zwei Seiten gleich lang sind?"
           }
         ],
         "figures": [
@@ -314,7 +314,7 @@
               "beta": 70,
               "labels": {
                 "alpha": "70°",
-                "beta": "70°"
+                "beta": "?"
               }
             }
           },

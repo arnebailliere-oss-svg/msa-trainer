@@ -232,7 +232,7 @@
       {
         "title": "Zinsen sind Prozent vom Geld",
         "body": "500 € auf dem Konto, 2 % Zinsen im Jahr:\n\n$500 \\cdot 0{,}02 = 10$ € Zinsen\n\nNach einem Jahr: 510 €\n\nDas Geld auf dem Konto heißt **Kapital**, der Prozentsatz heißt **Zinssatz**.",
-        "say": "Zinsen sind nichts Neues. Das Kapital ist der Grundwert, der Zinssatz ist der Prozentsatz.",
+        "say": "Wenn dein Geld auf dem Konto liegt, zahlt dir die Bank etwas dafür. Dieses Geld heißt **Zinsen**. Zinsen sind nichts Neues: Das Kapital ist der Grundwert, der Zinssatz ist der Prozentsatz, und die Zinsen sind der Prozentwert.",
         "tasks": [
           {
             "text": "1000 € bei 3 % Zinsen bringen in einem Jahr ___.",
@@ -249,7 +249,7 @@
       {
         "title": "Zinsen im zweiten Jahr",
         "body": "Nach einem Jahr: 510 €\n\nIm zweiten Jahr gibt es Zinsen auf **510 €**:\n\n$510 \\cdot 0{,}02 = 10{,}20$ €\n\nNeuer Stand: $510 + 10{,}20 = 520{,}20$ €\n\nDie Zinsen bekommen selbst Zinsen. Das nennt man **Zinseszins**.",
-        "say": "Wenn du die Zinsen auf dem Konto lässt, wächst das Geld im nächsten Jahr etwas schneller. Die Bank rechnet dann mit dem neuen, größeren Betrag. Für mehrere Jahre nimmst du das Geld einfach mehrmals mit 1,02 mal. Zweimal für zwei Jahre, dreimal für drei."
+        "say": "Wenn du die Zinsen auf dem Konto lässt, wächst das Geld im nächsten Jahr etwas schneller. Die Bank rechnet dann mit dem neuen, größeren Betrag. Für jedes weitere Jahr rechnest du genauso: Zinsen vom neuen Stand ausrechnen und dazuzählen. Auf den nächsten Tafeln zeige ich dir eine Abkürzung dafür."
       },
       {
         "title": "Der Faktor",

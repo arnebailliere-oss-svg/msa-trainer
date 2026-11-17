@@ -41,7 +41,7 @@
         "body": "Im Text steht: *Es gibt allerdings auch Hürden. Am häufigsten nennen Jugendliche Zeitmangel.*\n\nDie Wörter aus der Frage stehen fast genauso im Text.",
         "tasks": [
           {
-            "text": "Die Antwort auf die Frage lautet: ___",
+            "text": "Frage: Welche Hürde nennen Jugendliche am häufigsten? Die Antwort lautet: ___",
             "choices": [
               "Zeitmangel",
               "Geldmangel"
@@ -74,13 +74,13 @@
         "body": "In der **Überschrift**.\n\nAm **Anfang** oder am **Ende** des Textes.\n\nNach Wörtern wie *insgesamt, deshalb, klar ist*.",
         "tasks": [
           {
-            "text": "Eine Schule in Niedersachsen beginnt um 8:50 Uhr. Das ist ___.",
+            "text": "Ein Text handelt vom Handyverbot an Schulen. Darin steht: An der Schule von Mia liegen die Handys in einer Kiste. Das ist ___.",
             "choices": [
               "eine Einzelheit",
               "die Kernaussage"
             ],
             "correct": "eine Einzelheit",
-            "why": "Der Satz nennt ein einzelnes Beispiel mit Ort und Uhrzeit.",
+            "why": "Der Satz nennt ein einzelnes Beispiel mit einer Person.",
             "hint": "Gilt der Satz für den ganzen Text oder nur für ein Beispiel?"
           }
         ],
@@ -98,7 +98,7 @@
             ],
             "correct": "überzeugen",
             "why": "Eine Forderung mit Ausrufezeichen zeigt eine Meinung, für die der Text wirbt.",
-            "hint": "Bleibt der Satz neutral, oder fordert er etwas?"
+            "hint": "Will der Satz dich zum Lachen bringen, oder fordert er etwas?"
           }
         ],
         "say": "Jeder Text wird mit einer Absicht geschrieben. Ein Bericht will informieren und bleibt neutral. Ein Kommentar will überzeugen und sagt deutlich seine Meinung. Du erkennst die Absicht an der Sprache: Stehen Forderungen und Wertungen im Text, oder nur Tatsachen?"
@@ -207,15 +207,15 @@
         "body": "Text: *Die Schule testete den späteren Beginn vier Wochen lang. Danach kamen weniger Schüler zu spät.*",
         "tasks": [
           {
-            "text": "Der Test dauerte einen Monat. ___",
+            "text": "Der Test dauerte 28 Tage. ___",
             "choices": [
               "richtig",
               "falsch",
               "steht nicht im Text"
             ],
             "correct": "richtig",
-            "why": "Vier Wochen sind ein Monat. Die Wörter sind anders, die Bedeutung ist gleich.",
-            "hint": "Wie lange sind vier Wochen, anders ausgedrückt?"
+            "why": "Vier Wochen sind 28 Tage. Die Wörter sind anders, die Bedeutung ist gleich.",
+            "hint": "Wie viele Tage sind vier Wochen?"
           },
           {
             "text": "Nach dem Test kamen mehr Schüler zu spät. ___",
@@ -250,8 +250,8 @@
       },
       {
         "title": "So zitierst du richtig",
-        "body": "(1) Die Stelle **wörtlich** abschreiben.\n\n(2) In **Anführungszeichen** setzen.\n\n(3) Die **Zeile** angeben: *(Z. 5)*\n\n(4) Eine Auslassung mit **(…)** kennzeichnen.",
-        "say": "Ein Zitat ist eine wörtlich abgeschriebene Textstelle. Du darfst kein Wort verändern. Wenn du etwas weglässt, weil die Stelle zu lang ist, setzt du drei Punkte in Klammern. Diese vier Dinge gehören zusammen. Fehlt eines davon, gibt es einen Abzug."
+        "body": "(1) Die Stelle **wörtlich** abschreiben.\n\n(2) In **Anführungszeichen** setzen.\n\n(3) Die **Zeile** angeben: *(Z. 5)*\n\n(4) Eine Auslassung mit **[…]** kennzeichnen.",
+        "say": "Ein Zitat ist eine wörtlich abgeschriebene Textstelle. Du darfst kein Wort verändern. Wenn du etwas weglässt, weil die Stelle zu lang ist, setzt du drei Punkte in eckige Klammern. Die ersten drei Dinge gehören immer dazu. Fehlt eines davon, gibt es einen Abzug."
       },
       {
         "title": "Ein Beispiel",

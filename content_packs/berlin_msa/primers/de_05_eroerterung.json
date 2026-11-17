@@ -23,7 +23,7 @@
       {
         "title": "Zwei Aufgaben, zweimal Punkte",
         "body": "(1) Der **Schreibplan**: eine Tabelle mit Stichpunkten.\n\n(2) Der **Text**: die ausgeschriebene Erörterung.\n\nBeides wird bewertet.",
-        "say": "In der Prüfung bekommst du zuerst eine leere Tabelle. In sie trägst du in Stichpunkten ein, was du schreiben willst. Das ist der Schreibplan, und er bringt fast so viele Punkte wie der Text selbst. Lass ihn deshalb nie aus, auch wenn du lieber gleich losschreiben würdest."
+        "say": "In der Prüfung bekommst du zuerst eine leere Tabelle. In sie trägst du in Stichpunkten ein, was du schreiben willst. Das ist der Schreibplan, und er bringt eigene Punkte. Lass ihn deshalb nie aus, auch wenn du lieber gleich losschreiben würdest."
       },
       {
         "title": "Die drei Teile des Textes",
@@ -131,7 +131,7 @@
             ],
             "correct": "zu den Argumenten dafür",
             "why": "Müdigkeit am Morgen spricht für einen späteren Beginn.",
-            "hint": "Spricht dieser Gedanke für oder gegen den späteren Beginn?"
+            "hint": "Ist das ein Grund für eine Seite, oder ist es schon dein eigenes Urteil?"
           },
           {
             "text": "Unterricht bis in den späten Nachmittag. Der Stichpunkt gehört ___.",
@@ -172,14 +172,14 @@
         "body": "Jedes Argument bekommt einen **eigenen Absatz**.\n\nZwischen den Absätzen lässt du eine Zeile frei oder rückst ein.",
         "tasks": [
           {
-            "text": "Im Plan stehen drei Argumente dafür und drei dagegen. Der Hauptteil hat ___ Absätze.",
+            "text": "Im Plan stehen drei Argumente dafür und drei dagegen. Der ganze Text mit Einleitung und Schluss hat ___ Absätze.",
             "choices": [
-              "sechs",
-              "zwei"
+              "acht",
+              "sechs"
             ],
-            "correct": "sechs",
-            "why": "Jedes Argument bekommt einen eigenen Absatz.",
-            "hint": "Wie viele Argumente sind es zusammen?"
+            "correct": "acht",
+            "why": "Sechs Absätze für die Argumente, dazu einer für die Einleitung und einer für den Schluss.",
+            "hint": "Wie viele Absätze hat der Hauptteil? Welche zwei Teile kommen noch dazu?"
           }
         ],
         "say": "Absätze machen deinen Text übersichtlich. Der Leser sieht sofort, wo ein Gedanke aufhört und der nächste anfängt. Bei drei Argumenten auf jeder Seite hat dein Hauptteil also sechs Absätze. Dazu kommen einer für die Einleitung und einer für den Schluss."
@@ -204,21 +204,21 @@
       {
         "title": "Der Schluss",
         "body": "(1) Deine **Meinung**: *Meiner Ansicht nach überwiegen …*\n\n(2) Der wichtigste Grund dafür.\n\n(3) Ein Vorschlag oder ein Ausblick.",
-        "say": "Jetzt darfst du endlich ich sagen. Du nennst deine Entscheidung und sagst, welches Argument dich am meisten überzeugt hat. Diese Zusammenfassung mit Urteil nennt man **Fazit**. Zum Abschluss kannst du einen Vorschlag machen, was man tun sollte."
+        "say": "Jetzt darfst du endlich ich sagen. Du nennst deine Entscheidung und sagst, welches Argument dich am meisten überzeugt hat. Diese Zusammenfassung mit Urteil nennt man **Fazit**. Zum Abschluss kannst du einen Vorschlag machen, was man tun sollte. Oder du gibst einen **Ausblick**. Das ist ein Satz darüber, wie es in Zukunft weitergehen könnte."
       },
       {
         "title": "Im Schluss kommt nichts Neues",
         "body": "Der Schluss **wiederholt** das stärkste Argument.\n\nEr bringt **kein neues** Argument.",
         "tasks": [
           {
-            "text": "Beim Schluss fällt dir ein neues Argument ein. Es gehört ___.",
+            "text": "In einem Schluss steht: Außerdem sparen Familien mit Schulkleidung Geld. Was ist hier falsch? ___",
             "choices": [
-              "in den Hauptteil",
-              "in den Schluss"
+              "Das ist ein neues Argument.",
+              "Der Satz ist zu kurz."
             ],
-            "correct": "in den Hauptteil",
-            "why": "Im Schluss wird nur noch geurteilt und zusammengefasst.",
-            "hint": "In welchem Teil stehen alle Argumente?"
+            "correct": "Das ist ein neues Argument.",
+            "why": "Außerdem leitet ein weiteres Argument ein. Im Schluss wird nur noch geurteilt.",
+            "hint": "Was kündigt das Wort außerdem an?"
           }
         ],
         "say": "Das ist ein häufiger Fehler. Beim Schreiben des Schlusses fällt einem plötzlich noch ein guter Gedanke ein, und man schreibt ihn dazu. Im Schluss wird aber nur noch geurteilt. Ein neues Argument gehört in den Hauptteil. Wenn dir eins einfällt, trag es dort nach."

@@ -170,8 +170,8 @@
       },
       {
         "title": "Wörter, die ein Komma ankündigen",
-        "body": "*weil, dass, wenn, obwohl, als, ob, während, nachdem, damit*\n\nJedes dieser Wörter ist ein **Signalwort**: Hier beginnt ein Nebensatz.",
-        "say": "Diese Konjunktionen leiten Nebensätze ein. Wenn du eine von ihnen siehst, weißt du, dass dort ein Nebensatz anfängt. Vor ihr steht dann ein Komma. Bei der, die und das musst du genauer hinschauen: Ein Komma steht nur davor, wenn ein Relativsatz beginnt."
+        "body": "*weil, dass, wenn, obwohl, als, ob, während, nachdem, damit*\n\nJedes dieser Wörter ist ein **Signalwort**: Hier kann ein Nebensatz beginnen.",
+        "say": "Diese Konjunktionen leiten Nebensätze ein. Siehst du eine, schau nach, ob danach ein Teilsatz mit dem Verb am Ende folgt. Dann beginnt dort ein Nebensatz. Steht er hinten, kommt das Komma vor das Signalwort. Pass bei als auf: In Er ist größer als ich folgt kein Verb, also steht kein Komma. Auch bei der, die und das steht ein Komma nur vor einem Relativsatz."
       },
       {
         "title": "Jetzt du: Hauptsatz und Nebensatz",
@@ -223,7 +223,7 @@
       },
       {
         "title": "aber, sondern und doch",
-        "body": "*Er ist nicht dumm**,** sondern faul.*\n\n*Sie spielt gern Tennis**,** aber sie hasst Fußball.*\n\nVor aber, sondern, doch und jedoch steht ein Komma.",
+        "body": "*Er ist nicht dumm**,** sondern faul.*\n\n*Sie spielt gern Tennis**,** aber sie hasst Fußball.*\n\nVerbinden aber, sondern, doch oder jedoch zwei Teile als Gegensatz, steht davor ein Komma.",
         "tasks": [
           {
             "text": "Welche Schreibung ist richtig? Das ist nicht mein Hund ___ der Hund meiner Nachbarin.",
@@ -232,11 +232,11 @@
               "sondern"
             ],
             "correct": ", sondern",
-            "why": "Vor diesem Wort steht immer ein Komma, weil es einen Gegensatz anzeigt.",
+            "why": "Das Wort verbindet hier zwei Teile als Gegensatz. Deshalb steht davor ein Komma.",
             "hint": "Zeigt das Wort einen Gegensatz an? Was gilt dann für das Komma?"
           }
         ],
-        "say": "Diese vier Wörter zeigen einen Gegensatz an. Der zweite Teil sagt etwas, das zum ersten nicht passt oder ihn einschränkt. Vor ihnen steht immer ein Komma, auch wenn danach gar kein ganzer Satz folgt, wie im ersten Beispiel."
+        "say": "Diese vier Wörter zeigen einen Gegensatz an. Der zweite Teil sagt etwas, das zum ersten nicht passt oder ihn einschränkt. Wenn eines dieser Wörter zwei Teile als Gegensatz verbindet, steht davor ein Komma. Das gilt auch, wenn danach gar kein ganzer Satz folgt, wie im ersten Beispiel. Steht das Wort nur mitten im Satz, wie in Das ist aber schön, steht kein Komma."
       },
       {
         "title": "Jetzt du: alles gemischt",
@@ -368,7 +368,7 @@
           "nirgends"
         ],
         "correct": "vor sondern",
-        "explain": "Sondern zeigt einen Gegensatz an. Vor sondern, aber, doch und jedoch steht ein Komma."
+        "explain": "Sondern verbindet hier zwei Teile als Gegensatz. Dann steht vor sondern, aber, doch und jedoch ein Komma."
       },
       {
         "prompt": "Vor welchem Wort steht in einer Aufzählung kein Komma?",

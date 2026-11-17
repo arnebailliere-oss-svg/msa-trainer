@@ -23,14 +23,14 @@
         "body": "*Heute | fährt | mein Bruder | nach Hamburg.*\n\n*Mein Bruder | fährt | heute | nach Hamburg.*\n\nWas zusammen wandert, ist ein Satzglied.",
         "tasks": [
           {
-            "text": "Die Wörter nach Hamburg wandern immer zusammen. Sie sind ___.",
+            "text": "Lena spielt am Samstag im Park. Am Samstag spielt Lena im Park. Die Wörter im Park sind ___.",
             "choices": [
               "ein Satzglied",
               "zwei Satzglieder"
             ],
             "correct": "ein Satzglied",
-            "why": "Was beim Umstellen zusammenbleibt, ist ein einziges Satzglied.",
-            "hint": "Kannst du die beiden Wörter beim Umstellen voneinander trennen?"
+            "why": "Im Park bleibt beim Umstellen zusammen. Es ist ein einziges Satzglied.",
+            "hint": "Schau dir die beiden Sätze an. Bleiben die zwei Wörter zusammen?"
           }
         ],
         "say": "So findest du heraus, was zusammengehört. Du stellst den Satz um und schaust, welche Wörter gemeinsam ihren Platz wechseln. Mein Bruder bleibt immer zusammen. Nach Hamburg auch. Du kannst nicht sagen: Nach fährt mein Bruder Hamburg. Diese Probe heißt Umstellprobe."
@@ -101,14 +101,14 @@
         "body": "*Heute bellt **der Hund**.*\n\n*Im Garten spielen **die Kinder**.*\n\nDie Frage entscheidet, nicht der Platz im Satz.",
         "tasks": [
           {
-            "text": "Im Garten spielen die Kinder. Das Subjekt heißt: ___",
+            "text": "Auf dem Dach sitzt eine Taube. Das Subjekt heißt: ___",
             "choices": [
-              "die Kinder",
-              "im Garten"
+              "eine Taube",
+              "auf dem Dach"
             ],
-            "correct": "die Kinder",
-            "why": "Wer spielt? Darauf antwortet diese Gruppe.",
-            "hint": "Frag: Wer oder was spielt? Welche Gruppe antwortet darauf?"
+            "correct": "eine Taube",
+            "why": "Wer oder was sitzt? Darauf antwortet diese Gruppe.",
+            "hint": "Frag: Wer oder was sitzt? Welche Gruppe antwortet darauf?"
           }
         ],
         "say": "Viele denken, das Subjekt steht immer am Anfang. Das stimmt nicht. Im Deutschen kann fast jedes Satzglied vorn stehen. Verlass dich deshalb nie auf die Stelle. Stell immer die Frage: Wer oder was? Die Antwort ist das Subjekt."
@@ -177,7 +177,7 @@
             "hint": "Stell die Frage laut: Wem schenke ich die Blumen?"
           }
         ],
-        "say": "Es gibt ein zweites Objekt, das auf eine andere Frage antwortet. Wem helfe ich? Wem gehört das? Wem schenkst du etwas? Dieses Objekt heißt Dativobjekt. Du erkennst es oft an Endungen wie dem, einem oder meiner."
+        "say": "Es gibt ein zweites Objekt, das auf eine andere Frage antwortet. Wem helfe ich? Wem gehört das? Wem schenkst du etwas? Dieses Objekt heißt Dativobjekt. Du erkennst es oft an Wörtern wie dem, einem oder meiner."
       },
       {
         "title": "Zwei Objekte in einem Satz",
@@ -266,13 +266,13 @@
         "body": "**Wo? Wohin?** Das ist der Ort: *im Park*\n**Wann? Wie lange?** Das ist die Zeit: *am Montag*\n**Wie?** Das ist die Art und Weise: *mit Freude*\n**Warum?** Das ist der Grund: *wegen des Regens*",
         "tasks": [
           {
-            "text": "wegen des Regens antwortet auf die Frage ___",
+            "text": "Das Spiel fällt wegen eines Gewitters aus. wegen eines Gewitters antwortet auf die Frage ___",
             "choices": [
               "Warum?",
               "Wo?"
             ],
             "correct": "Warum?",
-            "why": "Die Gruppe nennt den Grund, aus dem etwas geschieht.",
+            "why": "Die Gruppe nennt den Grund, aus dem das Spiel ausfällt.",
             "hint": "Nennt die Gruppe einen Ort oder einen Grund?"
           }
         ],

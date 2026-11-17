@@ -1,0 +1,578 @@
+[
+ {
+  "lesson": "P_MATH_LGS",
+  "why": "Answer key was wrong: the pair (6|2) does fit line (I), only line (II) fails.",
+  "ops": [
+   {
+    "op": "tasks",
+    "board": "Jetzt du: Passt das Paar?",
+    "tasks": [
+     {
+      "text": "$x = 6$ und $y = 2$: Das Paar ___.",
+      "correct": "passt nur zu (I)",
+      "wrong": [
+       "ist die Lösung"
+      ],
+      "why": "6 plus 2 ergibt 8, das passt zu (I). Aber 6 minus 2 ergibt 4 und nicht 2. Ein Paar muss in beide Zeilen passen.",
+      "hint": "Rechne 6 minus 2 aus. Steht das in der zweiten Zeile rechts?"
+     },
+     {
+      "text": "$x = 5$ und $y = 3$: Das Paar ___.",
+      "correct": "ist die Lösung",
+      "wrong": [
+       "passt nur zu (I)"
+      ],
+      "why": "5 plus 3 ergibt 8, und 5 minus 3 ergibt 2. Beide Zeilen stimmen.",
+      "hint": "Rechne 5 plus 3 und danach 5 minus 3 aus."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "lesson": "P_MATH_TERME",
+  "why": "Quiz answer used the unexplained word Summanden.",
+  "ops": [
+   {
+    "op": "quiz",
+    "index": 2,
+    "correct": "Man darf die Zahlen vertauschen"
+   }
+  ]
+ },
+ {
+  "lesson": "P_MATH_POTENZ",
+  "why": "Task only repeated the board line about the root of 10; it now uses the root of 20.",
+  "ops": [
+   {
+    "op": "tasks",
+    "board": "Wurzel aus keiner Quadratzahl",
+    "tasks": [
+     {
+      "text": "Der Taschenrechner zeigt für $\\sqrt{20}$ die Zahl 4,4721... Du rundest und schreibst: $\\sqrt{20}$ ___",
+      "correct": "$\\approx 4{,}47$",
+      "wrong": [
+       "$= 4{,}47$"
+      ],
+      "why": "Das Ergebnis ist gerundet, also nur ungefähr richtig.",
+      "hint": "Ist ein gerundetes Ergebnis genau oder nur ungefähr richtig?"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "lesson": "P_MATH_BRUCH",
+  "why": "Task only read off the board line for one quarter; it now asks for one fifth.",
+  "ops": [
+   {
+    "op": "tasks",
+    "board": "Bruch, Dezimalzahl, Prozent",
+    "tasks": [
+     {
+      "text": "$\\frac{1}{5}$ $= 1 : 5 = 0{,}2 = $ ___",
+      "correct": "20 %",
+      "wrong": [
+       "5 %"
+      ],
+      "why": "0,2 ist dasselbe wie 0,20. Das sind 20 von hundert.",
+      "hint": "0,2 ist dasselbe wie 0,20. Wie viele von hundert sind das?"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "lesson": "P_MATH_BRUCH",
+  "why": "Task repeated the example of the board before and needed only one step of cancelling.",
+  "ops": [
+   {
+    "op": "tasks",
+    "board": "Wann ist ein Bruch fertig gekürzt?",
+    "tasks": [
+     {
+      "text": "$\\frac{8}{12}$ so weit wie möglich gekürzt ist ___.",
+      "correct": "$\\frac{2}{3}$",
+      "wrong": [
+       "$\\frac{4}{6}$"
+      ],
+      "why": "Erst durch 2: vier Sechstel. Noch einmal durch 2: zwei Drittel. Danach geht es nicht weiter.",
+      "hint": "Gibt es eine Zahl, durch die sich 4 und 6 beide noch teilen lassen?"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "lesson": "P_MATH_PROZENT",
+  "why": "The factor 1,02 was used one board before it is taught.",
+  "ops": [
+   {
+    "op": "say",
+    "board": "Zinsen im zweiten Jahr",
+    "text": "Wenn du die Zinsen auf dem Konto lässt, wächst das Geld im nächsten Jahr etwas schneller. Die Bank rechnet dann mit dem neuen, größeren Betrag. Für jedes weitere Jahr rechnest du genauso: Zinsen vom neuen Stand ausrechnen und dazuzählen. Auf den nächsten Tafeln zeige ich dir eine Abkürzung dafür."
+   }
+  ]
+ },
+ {
+  "lesson": "P_MATH_PROZENT",
+  "why": "The basic word Zinsen was never explained.",
+  "ops": [
+   {
+    "op": "say",
+    "board": "Zinsen sind Prozent vom Geld",
+    "text": "Wenn dein Geld auf dem Konto liegt, zahlt dir die Bank etwas dafür. Dieses Geld heißt **Zinsen**. Zinsen sind nichts Neues: Das Kapital ist der Grundwert, der Zinssatz ist der Prozentsatz, und die Zinsen sind der Prozentwert."
+   }
+  ]
+ },
+ {
+  "lesson": "P_MATH_TERME",
+  "why": "The example did not need the law and used it for multiplication without saying so.",
+  "ops": [
+   {
+    "op": "body",
+    "board": "Der Trick damit",
+    "lines": [
+     "$7 \\cdot 25 \\cdot 4$",
+     "Das Gesetz gilt auch bei Mal: $(7 \\cdot 25) \\cdot 4 = 7 \\cdot (25 \\cdot 4)$",
+     "Erst $25 \\cdot 4 = 100$",
+     "Dann $7 \\cdot 100 = 700$"
+    ]
+   },
+   {
+    "op": "say",
+    "board": "Der Trick damit",
+    "text": "Du darfst dir die leichte Rechnung zuerst rauspicken. Weil du bei Mal auch tauschen darfst, kannst du dir sogar zwei Zahlen aussuchen, die nicht nebeneinander stehen."
+   }
+  ]
+ },
+ {
+  "lesson": "P_MATH_TERME",
+  "why": "The word ausmultiplizieren was used without explanation.",
+  "ops": [
+   {
+    "op": "say",
+    "board": "Ausklammern = rückwärts",
+    "text": "Probe: die Klammer wieder auflösen. Das nennt man auch **ausmultiplizieren**. 4 mal x plus 4 mal 2 ist 4x + 8. Passt."
+   }
+  ]
+ },
+ {
+  "lesson": "P_MATH_ZEICHEN",
+  "why": "The words negativ and positiv were used without explanation.",
+  "ops": [
+   {
+    "op": "say",
+    "board": "Mal mit Minuszahlen",
+    "text": "Mit Minuszahlen kannst du auch malnehmen. Eine Zahl unter null nennt man **negativ**, eine Zahl über null **positiv**. Ist eine der beiden Zahlen negativ, wird das Ergebnis negativ. Sind beide negativ, wird das Ergebnis positiv. Das klingt seltsam, aber du brauchst es später oft. Merk dir einfach: Zwei Minus heben sich beim Malnehmen auf."
+   }
+  ]
+ },
+ {
+  "lesson": "P_MATH_ZEICHEN",
+  "why": "The board never said how a power is read, the word hoch was used later without it.",
+  "ops": [
+   {
+    "op": "body",
+    "board": "Hochzahlen",
+    "lines": [
+     "$5^2 = 5 \\cdot 5 = 25$",
+     "$5^3 = 5 \\cdot 5 \\cdot 5 = 125$",
+     "Man liest: **5 hoch 2** und **5 hoch 3**.",
+     "Die kleine Zahl oben sagt: **so oft steht die 5 da.**"
+    ]
+   }
+  ]
+ },
+ {
+  "lesson": "P_MATH_BRUCH",
+  "why": "The word Vielfache was on the board but not explained.",
+  "ops": [
+   {
+    "op": "say",
+    "board": "So findest du den gemeinsamen Nenner",
+    "text": "Du brauchst eine Stückgröße, in die sich beide Brüche umschneiden lassen. Schreib dafür die Reihe von jedem Nenner auf, wie beim Einmaleins. Die Zahlen in so einer Reihe heißen **Vielfache**. Die erste Zahl, die in beiden Reihen vorkommt, ist dein gemeinsamer Nenner. Man nennt sie das kleinste gemeinsame Vielfache, kurz **kgV**."
+   }
+  ]
+ },
+ {
+  "lesson": "P_MATH_LGS",
+  "why": "The short form LGS did not match the word before it; linear was neither named nor explained.",
+  "ops": [
+   {
+    "op": "body",
+    "board": "Was heißt „System“?",
+    "lines": [
+     "System heißt nur: **mehrere Gleichungen, die zusammengehören**.",
+     "Zusammen nennt man sie ein lineares **Gleichungssystem**, kurz LGS.",
+     "Linear heißt hier: $x$ und $y$ haben keine Hochzahl.",
+     "Man nummeriert sie: (I) und (II)."
+    ]
+   }
+  ]
+ },
+ {
+  "lesson": "P_MATH_LGS",
+  "why": "The curly brackets around the solution pair were not explained.",
+  "ops": [
+   {
+    "op": "body",
+    "board": "Die Lösung ist ein Paar",
+    "lines": [
+     "$x = 6$ und $y = 4$",
+     "Probe: $6 + 4 = 10$ ✓ und $6 - 4 = 2$ ✓",
+     "Die zwei Zahlen zusammen heißen **Lösungspaar**.",
+     "Man schreibt: $L = \\{(6\\,|\\,4)\\}$",
+     "Der Buchstabe $L$ steht für **Lösungsmenge**.",
+     "Die geschweiften Klammern außen heißen: Das sind alle Lösungen. Hier gibt es genau ein Paar."
+    ]
+   }
+  ]
+ },
+ {
+  "lesson": "P_MATH_GLEICHUNG",
+  "why": "The claim that four steps solve every exam equation was too strong (not for equations with x squared).",
+  "ops": [
+   {
+    "op": "say",
+    "board": "Das nimmst du mit",
+    "text": "Mit diesen vier Schritten löst du jede Gleichung, in der das x ohne Hochzahl vorkommt. Die Probe kostet dich nur ein paar Sekunden und zeigt dir jeden Fehler. Gleich kommen noch die Wörter zum Nachlesen und ein kleines Quiz."
+   }
+  ]
+ },
+ {
+  "lesson": "P_MATH_PYTH_TRIG",
+  "why": "The memory word was misspelled with three capital H.",
+  "ops": [
+   {
+    "op": "body",
+    "board": "Merkwort",
+    "lines": [
+     "**GAGA HühnerHof AG**",
+     "sin = **G**/**H**, cos = **A**/**H**, tan = **G**/**A**"
+    ]
+   }
+  ]
+ },
+ {
+  "lesson": "P_MATH_PYTH_TRIG",
+  "why": "The memory word has four letter pairs but only three fractions were named.",
+  "ops": [
+   {
+    "op": "say",
+    "board": "Merkwort",
+    "text": "Dieser Merkspruch klingt albern, aber er funktioniert seit Generationen. Die großen Buchstaben stehen für Gegenkathete, Ankathete und Hypotenuse. Die großen Buchstaben von GAGA stehen der Reihe nach oben im Bruch. Die von HühnerHof AG stehen der Reihe nach unten: H, H, A, G. Die Reihenfolge ist sin, cos, tan. Das vierte Paar, A durch G, gehört zu einem vierten Bruch, den du in der Prüfung nicht brauchst."
+   }
+  ]
+ },
+ {
+  "lesson": "P_MATH_PYTH_TRIG",
+  "why": "Task only read off the last board line; it now asks which key turns the fraction into the angle.",
+  "ops": [
+   {
+    "op": "tasks",
+    "board": "Winkel berechnen",
+    "tasks": [
+     {
+      "text": "Die Gegenkathete ist 4 cm lang, die Hypotenuse 8 cm. Was tippst du ein, um den Winkel zu bekommen? ___",
+      "correct": "$\\sin^{-1}(0{,}5)$",
+      "wrong": [
+       "$\\sin(0{,}5)$"
+      ],
+      "why": "4 geteilt durch 8 ist 0,5. Um aus dem Bruch den Winkel zu machen, brauchst du die Taste sin hoch minus eins.",
+      "hint": "Suchst du den Bruch oder den Winkel? Welche Taste macht aus dem Bruch den Winkel?"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "lesson": "P_MATH_PYTH_TRIG",
+  "why": "The hint named the finished calculation (half of 8 cm).",
+  "ops": [
+   {
+    "op": "tasks",
+    "board": "Was der Taschenrechner tut",
+    "tasks": [
+     {
+      "text": "$\\sin 30° = 0{,}5$. Die Hypotenuse ist 8 cm lang. Die Gegenkathete ist ___.",
+      "correct": "4 cm",
+      "wrong": [
+       "16 cm"
+      ],
+      "why": "Die Gegenkathete ist hier halb so lang wie die Hypotenuse.",
+      "hint": "Der Sinus ist 0,5. Ist die Gegenkathete dann länger oder kürzer als die Hypotenuse?"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "lesson": "P_MATH_PYTH_TRIG",
+  "why": "The hint told the learner directly to take half.",
+  "ops": [
+   {
+    "op": "tasks",
+    "board": "Seite berechnen",
+    "tasks": [
+     {
+      "text": "$c = 20$ und $\\alpha = 30°$. Dann ist $a = 20 \\cdot 0{,}5 = $ ___",
+      "correct": "10",
+      "wrong": [
+       "40"
+      ],
+      "why": "Mal 0,5 ist dasselbe wie die Hälfte. Die Hälfte von 20 ist 10.",
+      "hint": "0,5 ist kleiner als 1. Wird eine Zahl größer oder kleiner, wenn du sie mal 0,5 nimmst?"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "lesson": "P_MATH_PYTH_TRIG",
+  "why": "DEG and RAD were used without explanation.",
+  "ops": [
+   {
+    "op": "say",
+    "board": "Was der Taschenrechner tut",
+    "text": "Der Taschenrechner kennt für jeden Winkel den passenden Bruch. Bei 30 Grad zeigt er für den Sinus 0,5 an. Das bedeutet, die Gegenkathete ist halb so lang wie die Hypotenuse. Achte darauf, dass im Display DEG steht. DEG ist die Abkürzung für das englische Wort degree, das heißt Grad. Steht dort RAD, misst der Taschenrechner die Winkel anders, und es kommen falsche Werte heraus."
+   }
+  ]
+ },
+ {
+  "lesson": "P_MATH_PYTH_TRIG",
+  "why": "The wrong quiz choice GRAD looked as right as DEG.",
+  "ops": [
+   {
+    "op": "quiz",
+    "index": 4,
+    "wrong": [
+     "RAD",
+     "MATH",
+     "AUTO"
+    ]
+   }
+  ]
+ },
+ {
+  "lesson": "P_MATH_PYTH_TRIG",
+  "why": "The value 0,766 for the sine of 50 degrees appeared without saying where it comes from.",
+  "ops": [
+   {
+    "op": "body",
+    "board": "Sinussatz: eine Seite berechnen",
+    "lines": [
+     "$\\beta = 50°$, $b = 8$, $\\alpha = 30°$, gesucht ist $a$.",
+     "$\\frac{a}{\\sin 30°} = \\frac{8}{\\sin 50°}$",
+     "Taschenrechner: $\\sin 50° \\approx 0{,}766$",
+     "Rechte Seite: $8 : 0{,}766 \\approx 10{,}44$",
+     "Beide Seiten mal $\\sin 30°$, also mal 0,5:",
+     "$a \\approx 10{,}44 \\cdot 0{,}5 = 5{,}22$"
+    ]
+   }
+  ]
+ },
+ {
+  "lesson": "P_MATH_PYTH_TRIG",
+  "why": "Task only read off the board; it now applies the idea to side c.",
+  "ops": [
+   {
+    "op": "tasks",
+    "board": "Kein rechter Winkel?",
+    "tasks": [
+     {
+      "text": "Du kennst die Seite $c$. Für ein vollständiges Paar brauchst du noch den Winkel ___.",
+      "correct": "$\\gamma$",
+      "wrong": [
+       "$\\alpha$"
+      ],
+      "why": "Zur Seite c gehört der Winkel gegenüber, und das ist Gamma.",
+      "hint": "Welcher griechische Buchstabe passt zum kleinen c?"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "lesson": "P_MATH_PYTH_TRIG",
+  "why": "The summary said everything needs a right angle, which contradicts the chapter on the sine and cosine rule.",
+  "ops": [
+   {
+    "op": "body",
+    "board": "Das nimmst du mit",
+    "lines": [
+     "(1) Pythagoras und sin, cos, tan gelten nur mit rechtem Winkel.",
+     "(2) Die Hypotenuse ist die längste Seite.",
+     "(3) $a^2 + b^2 = c^2$",
+     "(4) Rechter Winkel, zwei Seiten bekannt, dritte gesucht: Pythagoras.",
+     "(5) Kein rechter Winkel: Sinussatz oder Kosinussatz."
+    ]
+   },
+   {
+    "op": "tasks",
+    "board": "Das nimmst du mit",
+    "tasks": [
+     {
+      "text": "Ein Dreieck hat einen rechten Winkel. Du kennst zwei Seiten und suchst die dritte. Du nimmst ___.",
+      "correct": "den Satz des Pythagoras",
+      "wrong": [
+       "den Sinus"
+      ],
+      "why": "Wenn nur Seiten vorkommen und kein Winkel, hilft der Satz mit den Quadraten.",
+      "hint": "Kommt in der Aufgabe ein Winkel vor oder nur Seiten?"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "lesson": "P_MATH_QUADRAT",
+  "why": "Task repeated the board sentence with the same equation; it now computes a value.",
+  "ops": [
+   {
+    "op": "tasks",
+    "board": "Nach oben oder nach unten",
+    "tasks": [
+     {
+      "text": "$y = -x^2$. Für $x = 2$ ist $y = $ ___",
+      "correct": "$-4$",
+      "wrong": [
+       "$4$"
+      ],
+      "why": "2 mal 2 ist 4, und das Minus davor macht daraus minus 4. Deshalb liegt die Kurve unter der Achse.",
+      "hint": "Rechne zuerst 2 mal 2. Was macht das Minus davor aus dem Ergebnis?"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "lesson": "P_MATH_QUADRAT",
+  "why": "Task only repeated the board; it now uses a bowl at another place.",
+  "ops": [
+   {
+    "op": "tasks",
+    "board": "Der Scheitelpunkt",
+    "tasks": [
+     {
+      "text": "Eine Schüssel hat ihren tiefsten Punkt bei $(2\\,|\\,1)$. Ihr Scheitelpunkt ist ___.",
+      "correct": "$S(2\\,|\\,1)$",
+      "wrong": [
+       "$S(0\\,|\\,0)$"
+      ],
+      "why": "Der Scheitelpunkt ist der tiefste Punkt der Schüssel, egal wo sie liegt.",
+      "hint": "Wie heißt der tiefste Punkt einer Schüssel?"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "lesson": "P_MATH_QUADRAT",
+  "why": "A negative q appeared first in the quiz and the sign change was never shown.",
+  "ops": [
+   {
+    "op": "quiz",
+    "index": 5,
+    "explain": "Die Hälfte von p ist 1. Das q ist minus 3. Unter der Wurzel steht 1 hoch 2 minus q, also 1 minus minus 3. Minus minus wird plus: 1 plus 3 ergibt 4. Die Wurzel aus 4 ist 2. Minus 1 plus 2 ergibt 1, und minus 1 minus 2 ergibt minus 3."
+   },
+   {
+    "op": "body",
+    "board": "Die pq-Formel Schritt für Schritt",
+    "lines": [
+     "$x^2 + 6x + 5 = 0$",
+     "Ablesen: $p = 6$ und $q = 5$",
+     "Hälfte von $p$: 3",
+     "Unter der Wurzel: $3^2 - 5 = 4$",
+     "Wurzel: $\\sqrt{4} = 2$",
+     "$x_{1,2} = -3 \\pm 2$",
+     "Mit Plus: $x_1 = -1$. Mit Minus: $x_2 = -5$.",
+     "Ist $q$ negativ, wird aus minus $q$ ein Plus. Für $p = 2$ und $q = -3$: $1^2 - (-3) = 1 + 3 = 4$"
+    ]
+   }
+  ]
+ },
+ {
+  "lesson": "P_MATH_STOCHASTIK",
+  "why": "Two wrong quiz choices were the same number and the coin was never introduced.",
+  "ops": [
+   {
+    "op": "quiz",
+    "index": 2,
+    "prompt": "Eine Münze hat zwei Seiten: Kopf und Zahl. Du wirfst sie zweimal. Wie groß ist die Wahrscheinlichkeit für zweimal Kopf?",
+    "correct": "$\\frac{1}{4}$",
+    "wrong": [
+     "$\\frac{1}{2}$",
+     "1",
+     "$\\frac{3}{4}$"
+    ]
+   }
+  ]
+ },
+ {
+  "lesson": "P_MATH_KOERPER",
+  "why": "3,14 times 9 is 28,26, the board showed the rounded 28,3 with an equals sign.",
+  "ops": [
+   {
+    "op": "body",
+    "board": "Fläche des Kreises",
+    "lines": [
+     "$A = \\pi \\cdot r \\cdot r$",
+     "Kürzer geschrieben: $A = \\pi \\cdot r^2$",
+     "Beispiel: $r = 3$ cm",
+     "$3 \\cdot 3 = 9$",
+     "$A \\approx 3{,}14 \\cdot 9 = 28{,}26\\ \\text{cm}^2$",
+     "Gerundet: $A \\approx 28{,}3\\ \\text{cm}^2$"
+    ]
+   }
+  ]
+ },
+ {
+  "lesson": "P_MATH_KOERPER",
+  "why": "Three pyramids do not literally fit into a box; the cone was not explained at all.",
+  "ops": [
+   {
+    "op": "say",
+    "board": "Spitze Körper: ein Drittel",
+    "text": "Ein Kegel sieht aus wie eine Eistüte. Füll eine Pyramide mit Sand und schütte ihn in einen Quader mit demselben Boden und derselben Höhe. Erst nach dem dritten Mal ist der Quader voll. Beim Kegel und der Dose ist es genauso. Deshalb steht in der Formel ein Drittel. Du rechnest also Boden mal Höhe und teilst das Ergebnis durch 3."
+   }
+  ]
+ },
+ {
+  "lesson": "P_MATH_GEO_BEGRIFFE",
+  "why": "Task read the answer off the board and the isosceles triangle was not practised.",
+  "ops": [
+   {
+    "op": "tasks",
+    "board": "Gleichschenklig und gleichseitig",
+    "tasks": [
+     {
+      "text": "Ein gleichschenkliges Dreieck hat an der dritten Seite links einen Winkel von 70°. Der Winkel rechts an dieser Seite hat ___.",
+      "correct": "70°",
+      "wrong": [
+       "110°"
+      ],
+      "why": "Im gleichschenkligen Dreieck sind die beiden Winkel an der dritten Seite gleich groß.",
+      "hint": "Was gilt für die zwei Winkel an der dritten Seite, wenn zwei Seiten gleich lang sind?"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "lesson": "P_MATH_GEO_BEGRIFFE",
+  "why": "Over 90 degrees also covered 180 degrees and more, which are not obtuse.",
+  "ops": [
+   {
+    "op": "body",
+    "board": "Winkel-Sorten",
+    "lines": [
+     "**spitz**: unter 90°",
+     "**rechter** Winkel: genau 90°",
+     "**stumpf**: zwischen 90° und 180°",
+     "**gestreckt**: genau 180°, eine gerade Linie"
+    ]
+   }
+  ]
+ }
+]

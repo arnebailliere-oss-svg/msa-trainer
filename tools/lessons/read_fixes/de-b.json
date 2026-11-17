@@ -1,0 +1,780 @@
+[
+  {
+    "lesson": "P_DE_WORTARTEN2",
+    "why": "The comma rule only holds when the attached clause comes second, not when it opens the sentence.",
+    "ops": [
+      {
+        "op": "body",
+        "board": "Warum das für Kommas wichtig ist",
+        "lines": [
+          "Ich glaube**,** dass es regnet.",
+          "Wir gehen raus**,** obwohl es kalt ist.",
+          "Steht weil, dass, wenn oder obwohl mitten im Satz, kommt davor ein Komma."
+        ]
+      },
+      {
+        "op": "say",
+        "board": "Warum das für Kommas wichtig ist",
+        "text": "Hier siehst du, wozu du die Konjunktionen brauchst. Die Wörter der zweiten Gruppe sind wie ein Warnschild. Wenn du eins davon mitten im Satz siehst, weißt du: Davor gehört ein Komma. Steht so ein Wort ganz am Satzanfang, kommt das Komma später, am Ende des angehängten Satzes: Wenn es regnet, bleibe ich hier. Wer diese Wörter erkennt, hat die meisten Kommas schon gefunden."
+      }
+    ]
+  },
+  {
+    "lesson": "P_DE_WORTARTEN2",
+    "why": "The instruction spoke of a bold word although the word is named in the task text.",
+    "ops": [
+      {
+        "op": "body",
+        "board": "Jetzt du: Welche Wortart?",
+        "lines": [
+          "Tipp bei jedem Satz auf die richtige Wortart des genannten Wortes."
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": "P_DE_WORTARTEN2",
+    "why": "The adverb example oft can be compared (öfter) and so fails the test the lesson teaches.",
+    "ops": [
+      {
+        "op": "body",
+        "board": "Wann, wo und wie",
+        "lines": [
+          "*heute, dort, gern, sehr, immer*",
+          "Ein **Adverb** sagt genauer, wann, wo oder wie etwas geschieht."
+        ]
+      },
+      {
+        "op": "body",
+        "board": "Typische Adverbien",
+        "lines": [
+          "**Zeit**: heute, gestern, immer, nie, bald\n**Ort**: hier, dort, draußen, oben\n**Art**: gern, leider, sehr, vielleicht"
+        ]
+      },
+      {
+        "op": "quiz",
+        "index": 2,
+        "correct": "immer",
+        "wrong": [
+          "unter",
+          "weil",
+          "freundlich"
+        ],
+        "explain": "Immer sagt, wann etwas geschieht, und verändert sich nie. Freundlich kannst du steigern, es ist ein Adjektiv."
+      }
+    ]
+  },
+  {
+    "lesson": "P_DE_WORTARTEN2",
+    "why": "The task only repeated the board sentence about dort instead of applying the test to a new word.",
+    "ops": [
+      {
+        "op": "tasks",
+        "board": "Adverb oder Adjektiv?",
+        "tasks": [
+          {
+            "text": "Sie wohnt oben. Das Wort oben ist ___.",
+            "correct": "ein Adverb",
+            "wrong": [
+              "ein Adjektiv"
+            ],
+            "why": "Es gibt keine zweite Stufe davon. Was du nicht steigern kannst, ist ein Adverb.",
+            "hint": "Probier es aus: Gibt es eine Form mit -er am Ende?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": "P_DE_WORTARTEN2",
+    "why": "Not every German word belongs to one of the eight groups (number words, exclamations).",
+    "ops": [
+      {
+        "op": "say",
+        "board": "Alle acht Wortarten",
+        "text": "Mit den drei neuen sind es zusammen acht Wortarten. Mehr musst du für die Prüfung nicht kennen. Fast jedes deutsche Wort gehört zu einer dieser Gruppen. Gleich kommen noch die Wörter zum Nachlesen und ein kleines Quiz."
+      }
+    ]
+  },
+  {
+    "lesson": "P_DE_SATZGLIEDER",
+    "why": "The task reused the board example and gave away the observation instead of a new sentence pair.",
+    "ops": [
+      {
+        "op": "tasks",
+        "board": "Die Umstellprobe",
+        "tasks": [
+          {
+            "text": "Lena spielt am Samstag im Park. Am Samstag spielt Lena im Park. Die Wörter im Park sind ___.",
+            "correct": "ein Satzglied",
+            "wrong": [
+              "zwei Satzglieder"
+            ],
+            "why": "Im Park bleibt beim Umstellen zusammen. Es ist ein einziges Satzglied.",
+            "hint": "Schau dir die beiden Sätze an. Bleiben die zwei Wörter zusammen?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": "P_DE_SATZGLIEDER",
+    "why": "The task used the board sentence in which the subject is already marked in bold.",
+    "ops": [
+      {
+        "op": "tasks",
+        "board": "Das Subjekt steht nicht immer vorn",
+        "tasks": [
+          {
+            "text": "Auf dem Dach sitzt eine Taube. Das Subjekt heißt: ___",
+            "correct": "eine Taube",
+            "wrong": [
+              "auf dem Dach"
+            ],
+            "why": "Wer oder was sitzt? Darauf antwortet diese Gruppe.",
+            "hint": "Frag: Wer oder was sitzt? Welche Gruppe antwortet darauf?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": "P_DE_SATZGLIEDER",
+    "why": "dem, einem and meiner are whole words, not endings.",
+    "ops": [
+      {
+        "op": "say",
+        "board": "Wem?",
+        "text": "Es gibt ein zweites Objekt, das auf eine andere Frage antwortet. Wem helfe ich? Wem gehört das? Wem schenkst du etwas? Dieses Objekt heißt Dativobjekt. Du erkennst es oft an Wörtern wie dem, einem oder meiner."
+      }
+    ]
+  },
+  {
+    "lesson": "P_DE_SATZGLIEDER",
+    "why": "The task asked for a pair that can be read off the board; it now uses a new sentence.",
+    "ops": [
+      {
+        "op": "tasks",
+        "board": "Vier Fragen, vier Arten",
+        "tasks": [
+          {
+            "text": "Das Spiel fällt wegen eines Gewitters aus. wegen eines Gewitters antwortet auf die Frage ___",
+            "correct": "Warum?",
+            "wrong": [
+              "Wo?"
+            ],
+            "why": "Die Gruppe nennt den Grund, aus dem das Spiel ausfällt.",
+            "hint": "Nennt die Gruppe einen Ort oder einen Grund?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": "P_DE_WORTARTEN",
+    "why": "The five words of the example do not have five different word classes (kleine and laut are both adjectives).",
+    "ops": [
+      {
+        "op": "body",
+        "board": "Ein Satz ist wie eine Mannschaft",
+        "lines": [
+          "*Der kleine Hund bellt laut.*",
+          "Fünf Wörter, und jedes hat eine **Aufgabe**.",
+          "Die Aufgabe eines Wortes nennt man seine **Wortart**."
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": "P_DE_WORTARTEN",
+    "why": "The task repeated what Ferdinand says next to the board; it now uses a new sentence.",
+    "ops": [
+      {
+        "op": "tasks",
+        "board": "Drei Wortarten zuerst",
+        "tasks": [
+          {
+            "text": "Das müde Kind gähnt. Welches Wort sagt, was passiert? ___",
+            "correct": "gähnt",
+            "wrong": [
+              "Kind",
+              "müde"
+            ],
+            "why": "Das Gähnen ist das, was in diesem Satz geschieht.",
+            "hint": "Frag dich: Was tut das Kind? Das Wort, das darauf antwortet, suchst du."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": "P_DE_WORTARTEN",
+    "why": "The article test in the hint also fits the wrong choice Morgen, so the sentence now starts with Heute.",
+    "ops": [
+      {
+        "op": "tasks",
+        "board": "Jetzt du: Nomen finden",
+        "tasks": [
+          {
+            "text": "Heute schreiben wir einen Test. ___",
+            "correct": "Test",
+            "wrong": [
+              "Heute",
+              "schreiben"
+            ],
+            "why": "Die Probe passt: der Test. Heute sagt nur, wann es passiert.",
+            "hint": "Vor welches der Wörter passt hier der, die oder das?"
+          },
+          {
+            "text": "Ihre Hoffnung war groß. ___",
+            "correct": "Hoffnung",
+            "wrong": [
+              "groß",
+              "war"
+            ],
+            "why": "Die Probe passt: die Hoffnung. Es ist der Name für ein Gefühl.",
+            "hint": "Welches Wort ist der Name für ein Gefühl?"
+          },
+          {
+            "text": "Leise fiel der Schnee. ___",
+            "correct": "Schnee",
+            "wrong": [
+              "Leise",
+              "fiel"
+            ],
+            "why": "Der Artikel steht sogar schon davor: der Schnee.",
+            "hint": "Vor welchem Wort steht schon ein Artikel?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": "P_DE_WORTARTEN",
+    "why": "Hint and explanation used the past-tense test, which is only taught on the next board.",
+    "ops": [
+      {
+        "op": "tasks",
+        "board": "Auch sein und haben sind Verben",
+        "tasks": [
+          {
+            "text": "Der Himmel ist blau. Das Verb heißt: ___",
+            "correct": "ist",
+            "wrong": [
+              "blau",
+              "Himmel"
+            ],
+            "why": "Das Wort ist eine Form von sein. Sein ist ein Verb, auch wenn hier niemand etwas tut.",
+            "hint": "Welches der drei Wörter gehört zu sein oder haben? Schau dir die Formen an, die Ferdinand aufgezählt hat."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": "P_DE_WORTARTEN",
+    "why": "The task sentence stood on the same board with the right spelling; it now uses a new sentence.",
+    "ops": [
+      {
+        "op": "tasks",
+        "board": "Adjektive schreibt man klein",
+        "tasks": [
+          {
+            "text": "Wir hatten einen ___ Abend.",
+            "correct": "lustigen",
+            "wrong": [
+              "Lustigen"
+            ],
+            "why": "Das Wort beschreibt den Abend. Es ist ein Adjektiv und wird kleingeschrieben.",
+            "hint": "Sagt das Wort, wie der Abend war? Kannst du es steigern?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": "P_DE_WORTARTEN",
+    "why": "Quiz question 7 showed the right answer already capitalised and with an article.",
+    "ops": [
+      {
+        "op": "quiz",
+        "index": 6,
+        "prompt": "Hier ist alles kleingeschrieben. Welches Wort musst du großschreiben?",
+        "correct": "hoffnung",
+        "wrong": [
+          "hoffen",
+          "hoffnungsvoll",
+          "hoffentlich"
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": "P_DE_STILMITTEL2",
+    "why": "The parallelism examples began their parts with the same word der and so also fitted the anaphora.",
+    "ops": [
+      {
+        "op": "body",
+        "board": "Der Parallelismus",
+        "lines": [
+          "*Der Hund bellt, die Katze miaut, das Pferd wiehert.*",
+          "Mehrere Sätze sind genau gleich gebaut.",
+          "Dieses Stilmittel heißt **Parallelismus**."
+        ]
+      },
+      {
+        "op": "tasks",
+        "board": "Jetzt du: Was wiederholt sich?",
+        "tasks": [
+          {
+            "text": "Wind und Wetter. Das ist ___.",
+            "correct": "eine Alliteration",
+            "wrong": [
+              "eine Anapher"
+            ],
+            "why": "Beide Wörter beginnen mit demselben Laut.",
+            "hint": "Schau auf die ersten Buchstaben der beiden Wörter."
+          },
+          {
+            "text": "Heute lernen wir. Heute lachen wir. Heute feiern wir. Das ist ___.",
+            "correct": "eine Anapher",
+            "wrong": [
+              "eine Alliteration"
+            ],
+            "why": "Jeder Satz beginnt mit demselben Wort.",
+            "hint": "Mit welchem Wort beginnt jeder der drei Sätze?"
+          },
+          {
+            "text": "Die Sonne scheint, der Wind weht, das Gras wächst. Das ist ___.",
+            "correct": "ein Parallelismus",
+            "wrong": [
+              "eine Anapher"
+            ],
+            "why": "Alle drei Teile sind genau gleich gebaut, aber sie beginnen mit verschiedenen Wörtern.",
+            "hint": "Beginnen die Teile mit demselben Wort, oder sind sie nur gleich gebaut?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": "P_DE_STILMITTEL2",
+    "why": "The word Scheinfrage appeared without explanation; the board now says Frage ohne Antwort (text combined with the four-question fix).",
+    "ops": [
+      {
+        "op": "title",
+        "board": "Drei Fragen, mit denen du jedes Stilmittel findest",
+        "title": "Vier Fragen, mit denen du jedes Stilmittel findest"
+      },
+      {
+        "op": "body",
+        "board": "Drei Fragen, mit denen du jedes Stilmittel findest",
+        "lines": [
+          "(1) **Wiederholt** sich etwas? Ein Laut, ein Wort, der Satzbau?",
+          "(2) Ist es ein **Bild**? Mit wie, ohne wie, oder handelt ein Ding?",
+          "(3) Ist es **übertrieben, beschönigt, das Gegenteil gemeint oder eine Frage ohne Antwort**?",
+          "(4) Fällt der **Satzbau** auf? Ein Gegensatz, eine Steigerung, oder fehlt ein Wort?"
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": "P_DE_STILMITTEL2",
+    "why": "The three questions did not lead to irony, climax or ellipsis, so there are now four questions.",
+    "ops": [
+      {
+        "op": "title",
+        "board": "Drei Fragen, mit denen du jedes Stilmittel findest",
+        "title": "Vier Fragen, mit denen du jedes Stilmittel findest"
+      },
+      {
+        "op": "body",
+        "board": "Drei Fragen, mit denen du jedes Stilmittel findest",
+        "lines": [
+          "(1) **Wiederholt** sich etwas? Ein Laut, ein Wort, der Satzbau?",
+          "(2) Ist es ein **Bild**? Mit wie, ohne wie, oder handelt ein Ding?",
+          "(3) Ist es **übertrieben, beschönigt, das Gegenteil gemeint oder eine Frage ohne Antwort**?",
+          "(4) Fällt der **Satzbau** auf? Ein Gegensatz, eine Steigerung, oder fehlt ein Wort?"
+        ]
+      },
+      {
+        "op": "say",
+        "board": "Drei Fragen, mit denen du jedes Stilmittel findest",
+        "text": "Mit diesen vier Fragen gehst du an jeden Satz heran. Die erste Frage führt zu Alliteration, Anapher und Parallelismus. Die zweite führt zu den Sprachbildern. Die dritte führt zu den Kunstgriffen: Hyperbel, Euphemismus, Ironie und rhetorische Frage. Die vierte führt zum Satzbau: Antithese, Klimax und Ellipse."
+      },
+      {
+        "op": "say",
+        "board": "Zwei Stilmittel in einem Satz",
+        "text": "In der Prüfung heißt es oft: Notieren Sie zwei Stilmittel. Dann stecken tatsächlich zwei in einem Satz. Geh einfach alle vier Fragen durch und hör nicht nach dem ersten Fund auf. Hier findest du eine rhetorische Frage und zugleich eine Metapher."
+      },
+      {
+        "op": "say",
+        "board": "Jetzt du: alles gemischt",
+        "text": "Jetzt kommen Stilmittel aus beiden Lektionen vor. Geh die vier Fragen der Reihe nach durch. Lass dir Zeit, es sind viele Namen."
+      },
+      {
+        "op": "quiz",
+        "index": 7,
+        "correct": "Ich gehe alle vier Fragen durch und höre nach dem ersten Fund nicht auf.",
+        "wrong": [
+          "Ich nenne dasselbe Stilmittel zweimal.",
+          "Ich rate.",
+          "Ich zähle die Wörter."
+        ],
+        "explain": "In einem Satz können mehrere Stilmittel gleichzeitig stecken. Die vier Fragen führen dich zu allen."
+      }
+    ]
+  },
+  {
+    "lesson": "P_DE_STILMITTEL2",
+    "why": "The task sentence had no verb, so the wrong choice Ellipse was also right.",
+    "ops": [
+      {
+        "op": "tasks",
+        "board": "Zwei Stilmittel in einem Satz",
+        "tasks": [
+          {
+            "text": "Er ist stark wie ein Stier und sanft wie ein Lamm. Hier stecken ein Gegensatz und ___.",
+            "correct": "zwei Vergleiche",
+            "wrong": [
+              "eine rhetorische Frage"
+            ],
+            "why": "Zweimal steht das Wort wie. Stark und sanft bilden außerdem einen Gegensatz.",
+            "hint": "Welches kleine Wort kommt in dem Satz zweimal vor?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": "P_DE_REGISTER",
+    "why": "The task asked for the pair Bock and Lust and the hint pointed at its board line; later practice now uses another word.",
+    "ops": [
+      {
+        "op": "tasks",
+        "board": "Lockere Wörter",
+        "tasks": [
+          {
+            "text": "Hast du das kapiert? In Standardsprache: Hast du das ___?",
+            "correct": "verstanden",
+            "wrong": [
+              "gecheckt"
+            ],
+            "why": "Das ist das sachliche Wort für dasselbe.",
+            "hint": "Welches der beiden Wörter würde in einer Zeitung stehen?"
+          }
+        ]
+      },
+      {
+        "op": "tasks",
+        "board": "Jetzt du: umformen",
+        "tasks": [
+          {
+            "text": "Der Film war voll langweilig. In Standardsprache: Der Film war ___ langweilig.",
+            "correct": "sehr",
+            "wrong": [
+              "mega"
+            ],
+            "why": "Sehr ist das sachliche Wort für eine Verstärkung.",
+            "hint": "Welches der beiden Wörter würde in einer Zeitung stehen?"
+          },
+          {
+            "text": "Sie trägt gern bunte Klamotten. In Standardsprache: Sie trägt gern bunte ___.",
+            "correct": "Kleidung",
+            "wrong": [
+              "Sachen"
+            ],
+            "why": "Kleidung ist das sachliche Wort. Sachen ist ungenau und klingt locker.",
+            "hint": "Welches der beiden Wörter passt in einen sachlichen Text über Mode?"
+          },
+          {
+            "text": "Zu viele Autos machen die Luft kaputt. In Standardsprache: Zu viele Autos ___ die Luft.",
+            "correct": "belasten",
+            "wrong": [
+              "ruinieren total"
+            ],
+            "why": "Das ist ein sachliches Wort dafür. Der Inhalt bleibt gleich.",
+            "hint": "Welches Wort beschreibt genau und sachlich, was mit der Luft geschieht?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": "P_DE_REGISTER",
+    "why": "The sentence held two colloquial words (coole and Klamotten) although Ferdinand promises exactly one.",
+    "ops": [
+      {
+        "op": "tasks",
+        "board": "Jetzt du: Umgangssprache finden",
+        "tasks": [
+          {
+            "text": "Der Film war echt spannend. ___",
+            "correct": "echt",
+            "wrong": [
+              "spannend"
+            ],
+            "why": "Das Wort dient hier nur als Verstärkung und ist ein lockeres Füllwort.",
+            "hint": "Welches Wort kannst du streichen, ohne dass der Sinn sich ändert?"
+          },
+          {
+            "text": "Ich habe die Aufgabe nicht gecheckt. ___",
+            "correct": "gecheckt",
+            "wrong": [
+              "Aufgabe"
+            ],
+            "why": "Das ist ein lockeres Wort für verstanden.",
+            "hint": "Welches Wort würdest du in einer Prüfung durch ein sachliches ersetzen?"
+          },
+          {
+            "text": "Sie trägt immer schöne Klamotten. ___",
+            "correct": "Klamotten",
+            "wrong": [
+              "trägt"
+            ],
+            "why": "Das ist ein lockeres Wort für Kleidung.",
+            "hint": "Welches der beiden Wörter hat ein sachliches Ersatzwort?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": "P_DE_REGISTER",
+    "why": "verschmutzen narrowed the meaning of kaputt machen; by decision the answer is now belasten.",
+    "ops": [
+      {
+        "op": "tasks",
+        "board": "Jetzt du: umformen",
+        "tasks": [
+          {
+            "text": "Der Film war voll langweilig. In Standardsprache: Der Film war ___ langweilig.",
+            "correct": "sehr",
+            "wrong": [
+              "mega"
+            ],
+            "why": "Sehr ist das sachliche Wort für eine Verstärkung.",
+            "hint": "Welches der beiden Wörter würde in einer Zeitung stehen?"
+          },
+          {
+            "text": "Sie trägt gern bunte Klamotten. In Standardsprache: Sie trägt gern bunte ___.",
+            "correct": "Kleidung",
+            "wrong": [
+              "Sachen"
+            ],
+            "why": "Kleidung ist das sachliche Wort. Sachen ist ungenau und klingt locker.",
+            "hint": "Welches der beiden Wörter passt in einen sachlichen Text über Mode?"
+          },
+          {
+            "text": "Zu viele Autos machen die Luft kaputt. In Standardsprache: Zu viele Autos ___ die Luft.",
+            "correct": "belasten",
+            "wrong": [
+              "ruinieren total"
+            ],
+            "why": "Das ist ein sachliches Wort dafür. Der Inhalt bleibt gleich.",
+            "hint": "Welches Wort beschreibt genau und sachlich, was mit der Luft geschieht?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": "P_DE_FEHLERARTEN",
+    "why": "The hint only restated the task instead of showing how spelling and grammar mistakes differ here.",
+    "ops": [
+      {
+        "op": "tasks",
+        "board": "Die Falle: das und dass",
+        "tasks": [
+          {
+            "text": "Sie hofft, das alles gut geht. Der Fehler ist ein ___.",
+            "correct": "Rechtschreibfehler",
+            "wrong": [
+              "Grammatikfehler"
+            ],
+            "why": "Die Verwechslung von einem und zwei s zählt zur Rechtschreibung.",
+            "hint": "Hat das Wort eine falsche Form, oder fehlt nur ein Buchstabe, nämlich ein zweites s?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": "P_DE_FEHLERARTEN",
+    "why": "wegen dem counts as colloquial, so Ausdrucksfehler was a defensible choice for the wegen dem Stau task.",
+    "ops": [
+      {
+        "op": "tasks",
+        "board": "Jetzt du: alle vier gemischt",
+        "tasks": [
+          {
+            "text": "Das Wetter war gestern sehr schön aber kalt. Der Fehler ist ein ___.",
+            "correct": "Zeichensetzungsfehler",
+            "wrong": [
+              "Grammatikfehler"
+            ],
+            "why": "Vor aber fehlt ein Komma. Alle Wörter sind richtig.",
+            "hint": "Sind alle Wörter richtig geschrieben und richtig geformt? Was fehlt vor aber?"
+          },
+          {
+            "text": "Wegen dem Stau kamen wir zu spät. Der Fehler ist ein ___.",
+            "correct": "Grammatikfehler",
+            "wrong": [
+              "Zeichensetzungsfehler"
+            ],
+            "why": "Nach wegen steht der Genitiv: wegen des Staus. Der Fall ist falsch.",
+            "hint": "Welcher Fall steht nach dem Wort wegen?"
+          },
+          {
+            "text": "Die Lehrerin erklärte uns die aufgabe. Der Fehler ist ein ___.",
+            "correct": "Rechtschreibfehler",
+            "wrong": [
+              "Zeichensetzungsfehler"
+            ],
+            "why": "Aufgabe ist ein Nomen und wird großgeschrieben.",
+            "hint": "Welches Wort ist ein Nomen und beginnt trotzdem mit einem kleinen Buchstaben?"
+          }
+        ]
+      },
+      {
+        "op": "say",
+        "board": "Drei häufige Grammatikfehler",
+        "text": "Die meisten Grammatikfehler gehören zu einer dieser drei Gruppen. Beim ersten stimmt der Fall nicht. Wegen dem hört man oft. In der Prüfung zählt es trotzdem als falscher Fall, also als G. Beim zweiten ist die Form des Verbs falsch gebildet. Beim dritten steht das Subjekt in der Mehrzahl und das Verb in der Einzahl oder umgekehrt."
+      }
+    ]
+  },
+  {
+    "lesson": "P_DE_FEHLERARTEN",
+    "why": "The starting sentence kein Bock carried a second, unintended grammar mistake.",
+    "ops": [
+      {
+        "op": "tasks",
+        "board": "Jetzt du: verbessern",
+        "tasks": [
+          {
+            "text": "Ich habe keinen Bock auf Mathe. Besser: Ich habe keine ___ auf Mathe.",
+            "correct": "Lust",
+            "wrong": [
+              "Böcke"
+            ],
+            "why": "Bock ist Umgangssprache. Das sachliche Wort bedeutet dasselbe.",
+            "hint": "Welches sachliche Wort bedeutet dasselbe wie das lockere Wort?"
+          },
+          {
+            "text": "Er hat den Zug verpasst weil er verschlafen hat. Das Komma gehört vor ___.",
+            "correct": "weil",
+            "wrong": [
+              "er"
+            ],
+            "why": "Mit weil beginnt der Nebensatz. Davor steht ein Komma.",
+            "hint": "Mit welchem Wort beginnt der zweite Teil des Satzes?"
+          },
+          {
+            "text": "Sie ist schneller wie ihr Bruder. Richtig: Sie ist schneller ___ ihr Bruder.",
+            "correct": "als",
+            "wrong": [
+              "so wie"
+            ],
+            "why": "Nach einer Steigerungsform steht dieses Wort.",
+            "hint": "Welches Wort steht nach größer, schneller und besser?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": "P_DE_STILMITTEL",
+    "why": "The task sentence stood on the same board as the metaphor example; it now uses a new sentence.",
+    "ops": [
+      {
+        "op": "tasks",
+        "board": "Metaphern stecken überall",
+        "tasks": [
+          {
+            "text": "Mein Opa ist ein wandelndes Lexikon. Das ist ___.",
+            "correct": "eine Metapher",
+            "wrong": [
+              "ein Vergleich"
+            ],
+            "why": "Ein Mensch wird direkt als Lexikon bezeichnet. Das Wort wie fehlt.",
+            "hint": "Steht im Satz das Wort wie?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": "P_DE_STILMITTEL",
+    "why": "The pair red heart and love stood word for word on the board; the task now uses a new symbol.",
+    "ops": [
+      {
+        "op": "tasks",
+        "board": "Das Symbol",
+        "tasks": [
+          {
+            "text": "Ein vierblättriges Kleeblatt steht für ___.",
+            "correct": "Glück",
+            "wrong": [
+              "Hunger"
+            ],
+            "why": "Dieses Zeichen versteht fast jeder Mensch auf dieselbe Weise.",
+            "hint": "Was wünscht man jemandem, dem man ein Kleeblatt schenkt?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": "P_DE_STILMITTEL",
+    "why": "The board promised all four images but had no symbol task and no symbol test; a fourth task is added.",
+    "ops": [
+      {
+        "op": "tasks",
+        "board": "Jetzt du: alle vier gemischt",
+        "tasks": [
+          {
+            "text": "Die Blätter tanzen im Wind. Das ist ___.",
+            "correct": "eine Personifikation",
+            "wrong": [
+              "eine Metapher"
+            ],
+            "why": "Tanzen können nur Lebewesen. Die Blätter werden wie Personen behandelt.",
+            "hint": "Können Blätter wirklich tanzen, so wie Menschen es tun?"
+          },
+          {
+            "text": "Der Junge ist flink wie ein Wiesel. Das ist ___.",
+            "correct": "ein Vergleich",
+            "wrong": [
+              "eine Personifikation"
+            ],
+            "why": "Im Satz steht das Wort wie.",
+            "hint": "Welches kleine Wort verbindet flink und ein Wiesel?"
+          },
+          {
+            "text": "Sie ist der Fels in der Brandung. Das ist ___.",
+            "correct": "eine Metapher",
+            "wrong": [
+              "ein Vergleich"
+            ],
+            "why": "Ein Mensch wird direkt als Fels bezeichnet. Das Wort wie fehlt.",
+            "hint": "Steht im Satz das Wort wie? Wird etwas direkt als etwas anderes bezeichnet?"
+          },
+          {
+            "text": "Auf dem Plakat ist eine weiße Taube. Die Taube ist ___.",
+            "correct": "ein Symbol",
+            "wrong": [
+              "ein Vergleich"
+            ],
+            "why": "Die weiße Taube ist ein festes Zeichen für Frieden.",
+            "hint": "Steht die Taube hier für etwas anderes, das alle kennen?"
+          }
+        ]
+      },
+      {
+        "op": "say",
+        "board": "Jetzt du: alle vier gemischt",
+        "text": "Jetzt kommen alle vier Sprachbilder vor. Geh die Proben durch: Steht ein wie da? Tut ein Ding etwas Menschliches? Wird etwas direkt als etwas anderes bezeichnet? Oder ist es ein festes Zeichen, das alle kennen?"
+      }
+    ]
+  }
+]

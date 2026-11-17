@@ -264,7 +264,7 @@
       {
         "title": "Was der Taschenrechner tut",
         "body": "$\\sin 30° = 0{,}5$\n\nHeißt: Bei 30° ist die Gegenkathete **halb so lang** wie die Hypotenuse.",
-        "say": "Der Taschenrechner kennt für jeden Winkel den passenden Bruch. Bei 30 Grad zeigt er für den Sinus 0,5 an. Das bedeutet, die Gegenkathete ist halb so lang wie die Hypotenuse. Achte darauf, dass im Display DEG steht und nicht RAD.",
+        "say": "Der Taschenrechner kennt für jeden Winkel den passenden Bruch. Bei 30 Grad zeigt er für den Sinus 0,5 an. Das bedeutet, die Gegenkathete ist halb so lang wie die Hypotenuse. Achte darauf, dass im Display DEG steht. DEG ist die Abkürzung für das englische Wort degree, das heißt Grad. Steht dort RAD, misst der Taschenrechner die Winkel anders, und es kommen falsche Werte heraus.",
         "tasks": [
           {
             "text": "$\\sin 30° = 0{,}5$. Die Hypotenuse ist 8 cm lang. Die Gegenkathete ist ___.",
@@ -274,7 +274,7 @@
             ],
             "correct": "4 cm",
             "why": "Die Gegenkathete ist hier halb so lang wie die Hypotenuse.",
-            "hint": "Was ist die Hälfte von 8 cm?"
+            "hint": "Der Sinus ist 0,5. Ist die Gegenkathete dann länger oder kürzer als die Hypotenuse?"
           }
         ]
       },
@@ -291,7 +291,7 @@
             ],
             "correct": "10",
             "why": "Mal 0,5 ist dasselbe wie die Hälfte. Die Hälfte von 20 ist 10.",
-            "hint": "Mal 0,5 bedeutet: Nimm die Hälfte."
+            "hint": "0,5 ist kleiner als 1. Wird eine Zahl größer oder kleiner, wenn du sie mal 0,5 nimmst?"
           }
         ],
         "figure": {
@@ -311,14 +311,14 @@
         "say": "Hier geht es rückwärts. Du kennst zwei Seiten und rechnest daraus den Bruch aus. Dann brauchst du die Taste sin hoch minus eins. Auf vielen Taschenrechnern drückst du dafür zuerst SHIFT und dann sin. Sie macht aus dem Bruch wieder den Winkel.",
         "tasks": [
           {
-            "text": "$\\sin\\alpha = 0{,}5$. Du tippst $\\sin^{-1}(0{,}5)$ ein. Der Taschenrechner zeigt ___.",
+            "text": "Die Gegenkathete ist 4 cm lang, die Hypotenuse 8 cm. Was tippst du ein, um den Winkel zu bekommen? ___",
             "choices": [
-              "30°",
-              "0,5°"
+              "$\\sin^{-1}(0{,}5)$",
+              "$\\sin(0{,}5)$"
             ],
-            "correct": "30°",
-            "why": "Die Taste macht aus dem Bruch den Winkel. Zum Wert 0,5 gehört beim Sinus der Winkel 30 Grad.",
-            "hint": "Schau auf die letzte Zeile der Tafel. Welcher Winkel steht dort?"
+            "correct": "$\\sin^{-1}(0{,}5)$",
+            "why": "4 geteilt durch 8 ist 0,5. Um aus dem Bruch den Winkel zu machen, brauchst du die Taste sin hoch minus eins.",
+            "hint": "Suchst du den Bruch oder den Winkel? Welche Taste macht aus dem Bruch den Winkel?"
           }
         ],
         "figure": {
@@ -334,8 +334,8 @@
       },
       {
         "title": "Merkwort",
-        "body": "**GAGA HüHnerHof AG**\n\nsin = **G**/**H**, cos = **A**/**H**, tan = **G**/**A**",
-        "say": "Dieser Merkspruch klingt albern, aber er funktioniert seit Generationen. Die großen Buchstaben stehen für Gegenkathete, Ankathete und Hypotenuse. Das erste Wort liefert, was oben im Bruch steht. Das zweite Wort liefert, was unten steht. Die Reihenfolge ist immer sin, cos, tan.",
+        "body": "**GAGA HühnerHof AG**\n\nsin = **G**/**H**, cos = **A**/**H**, tan = **G**/**A**",
+        "say": "Dieser Merkspruch klingt albern, aber er funktioniert seit Generationen. Die großen Buchstaben stehen für Gegenkathete, Ankathete und Hypotenuse. Die großen Buchstaben von GAGA stehen der Reihe nach oben im Bruch. Die von HühnerHof AG stehen der Reihe nach unten: H, H, A, G. Die Reihenfolge ist sin, cos, tan. Das vierte Paar, A durch G, gehört zu einem vierten Bruch, den du in der Prüfung nicht brauchst.",
         "tasks": [
           {
             "text": "Die Gegenkathete ist 4 cm lang, die Ankathete 8 cm. Dann ist $\\tan\\alpha = $ ___",
@@ -368,14 +368,14 @@
         },
         "tasks": [
           {
-            "text": "Gegenüber vom Winkel $\\beta$ liegt die Seite ___.",
+            "text": "Du kennst die Seite $c$. Für ein vollständiges Paar brauchst du noch den Winkel ___.",
             "choices": [
-              "$b$",
-              "$a$"
+              "$\\gamma$",
+              "$\\alpha$"
             ],
-            "correct": "$b$",
-            "why": "Zum Winkel Beta gehört die Seite mit dem Buchstaben b.",
-            "hint": "Welcher lateinische Buchstabe passt zum griechischen Beta?"
+            "correct": "$\\gamma$",
+            "why": "Zur Seite c gehört der Winkel gegenüber, und das ist Gamma.",
+            "hint": "Welcher griechische Buchstabe passt zum kleinen c?"
           }
         ],
         "say": "Viele Dreiecke haben keinen rechten Winkel. Dann darfst du nichts von dem benutzen, was du bisher in dieser Lektion gelernt hast. Dafür gibt es zwei andere Werkzeuge. Für beide musst du wissen, welche Seite welchem Winkel gegenüberliegt. Das sagen dir die Buchstaben."
@@ -410,7 +410,7 @@
       },
       {
         "title": "Sinussatz: eine Seite berechnen",
-        "body": "$\\beta = 50°$, $b = 8$, $\\alpha = 30°$, gesucht ist $a$.\n\n$\\frac{a}{\\sin 30°} = \\frac{8}{\\sin 50°}$\n\nRechte Seite: $8 : 0{,}766 \\approx 10{,}44$\n\nBeide Seiten mal $\\sin 30°$, also mal 0,5:\n\n$a \\approx 10{,}44 \\cdot 0{,}5 = 5{,}22$",
+        "body": "$\\beta = 50°$, $b = 8$, $\\alpha = 30°$, gesucht ist $a$.\n\n$\\frac{a}{\\sin 30°} = \\frac{8}{\\sin 50°}$\n\nTaschenrechner: $\\sin 50° \\approx 0{,}766$\n\nRechte Seite: $8 : 0{,}766 \\approx 10{,}44$\n\nBeide Seiten mal $\\sin 30°$, also mal 0,5:\n\n$a \\approx 10{,}44 \\cdot 0{,}5 = 5{,}22$",
         "figure": {
           "type": "triangle",
           "alpha": 30,
@@ -494,10 +494,10 @@
       },
       {
         "title": "Das nimmst du mit",
-        "body": "(1) Alles gilt nur mit rechtem Winkel.\n\n(2) Die Hypotenuse ist die längste Seite.\n\n(3) $a^2 + b^2 = c^2$\n\n(4) Zwei Seiten bekannt, dritte gesucht: Pythagoras.\n\n(5) Ein Winkel ist im Spiel: sin, cos oder tan.",
+        "body": "(1) Pythagoras und sin, cos, tan gelten nur mit rechtem Winkel.\n\n(2) Die Hypotenuse ist die längste Seite.\n\n(3) $a^2 + b^2 = c^2$\n\n(4) Rechter Winkel, zwei Seiten bekannt, dritte gesucht: Pythagoras.\n\n(5) Kein rechter Winkel: Sinussatz oder Kosinussatz.",
         "tasks": [
           {
-            "text": "Du kennst zwei Seiten und suchst die dritte. Du nimmst ___.",
+            "text": "Ein Dreieck hat einen rechten Winkel. Du kennst zwei Seiten und suchst die dritte. Du nimmst ___.",
             "choices": [
               "den Satz des Pythagoras",
               "den Sinus"
@@ -507,7 +507,7 @@
             "hint": "Kommt in der Aufgabe ein Winkel vor oder nur Seiten?"
           }
         ],
-        "say": "Das sind die fünf Dinge, die du aus dieser Lektion brauchst. Die wichtigste Frage bei jeder Aufgabe lautet: Kommt ein Winkel vor oder nur Seiten? Danach weißt du, welches Werkzeug du nimmst. Gleich kommen die Wörter und ein kleines Quiz.",
+        "say": "Das sind die fünf Dinge, die du aus dieser Lektion brauchst. Die wichtigste Frage bei jeder Aufgabe lautet: Hat das Dreieck einen rechten Winkel? Wenn ja, nimmst du Pythagoras oder sin, cos und tan. Wenn nein, nimmst du den Sinussatz oder den Kosinussatz. Gleich kommen die Wörter und ein kleines Quiz.",
         "widget": "triangle-explorer"
       }
     ],
@@ -623,7 +623,7 @@
         "choices": [
           "DEG",
           "RAD",
-          "GRAD",
+          "MATH",
           "AUTO"
         ],
         "correct": "DEG",

@@ -66,7 +66,7 @@
       },
       {
         "title": "Merkwort",
-        "body": "**GAGA HüHnerHof AG**\n\nsin = **G**/**H**, cos = **A**/**H**, tan = **G**/**A**",
+        "body": "**GAGA HühnerHof AG**\n\nsin = **G**/**H**, cos = **A**/**H**, tan = **G**/**A**",
         "say": "Gegenkathete, Ankathete, Gegenkathete. Hypotenuse, Hypotenuse, Ankathete. Klingt albern, funktioniert seit Generationen."
       }
     ],
@@ -86,7 +86,7 @@
       { "prompt": "Welche Seite ist die Hypotenuse?", "choices": ["Die längste, gegenüber vom rechten Winkel", "Die kürzeste", "Eine der Seiten am rechten Winkel", "Die untere"], "correct": "Die längste, gegenüber vom rechten Winkel", "explain": "Sie spannt sich gegenüber der rechten Ecke und ist immer die längste." },
       { "prompt": "$a = 3$, $b = 4$. Wie lang ist $c$?", "choices": ["5", "7", "25", "12"], "correct": "5", "explain": "$9 + 16 = 25$, Wurzel: 5." },
       { "prompt": "$c = 10$, $a = 6$. Wie lang ist $b$?", "choices": ["8", "4", "16", "136"], "correct": "8", "explain": "$\\sqrt{100 - 36} = \\sqrt{64} = 8$." },
-      { "prompt": "$\\sin\\alpha$ ist …", "choices": ["Gegenkathete durch Hypotenuse", "Ankathete durch Hypotenuse", "Gegenkathete durch Ankathete", "Hypotenuse durch Gegenkathete"], "correct": "Gegenkathete durch Hypotenuse", "explain": "GAGA HüHnerHof AG: sin = G/H." },
+      { "prompt": "$\\sin\\alpha$ ist …", "choices": ["Gegenkathete durch Hypotenuse", "Ankathete durch Hypotenuse", "Gegenkathete durch Ankathete", "Hypotenuse durch Gegenkathete"], "correct": "Gegenkathete durch Hypotenuse", "explain": "GAGA HühnerHof AG: sin = G/H." },
       { "prompt": "Der Taschenrechner muss auf … stehen.", "choices": ["DEG", "RAD", "GRAD", "AUTO"], "correct": "DEG", "explain": "DEG heißt Grad. Auf RAD kommen falsche Werte raus." }
     ]
   }

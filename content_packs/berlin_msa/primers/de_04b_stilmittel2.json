@@ -41,7 +41,7 @@
       },
       {
         "title": "Der Parallelismus",
-        "body": "*Der Mensch läuft, der Fisch schwimmt, der Vogel fliegt.*\n\nMehrere Sätze sind genau gleich gebaut.\n\nDieses Stilmittel heißt **Parallelismus**.",
+        "body": "*Der Hund bellt, die Katze miaut, das Pferd wiehert.*\n\nMehrere Sätze sind genau gleich gebaut.\n\nDieses Stilmittel heißt **Parallelismus**.",
         "tasks": [
           {
             "text": "Ich will leben. Ich will lachen. Ich will tanzen. Dreimal dasselbe Wort am Satzanfang: Das ist ___.",
@@ -81,7 +81,7 @@
             "hint": "Mit welchem Wort beginnt jeder der drei Sätze?"
           },
           {
-            "text": "Die Sonne scheint, der Wind weht, der Regen fällt. Das ist ___.",
+            "text": "Die Sonne scheint, der Wind weht, das Gras wächst. Das ist ___.",
             "choices": [
               "ein Parallelismus",
               "eine Anapher"
@@ -216,26 +216,26 @@
         "say": "In diesen Sätzen fehlt das Wort, das sagt, was geschieht. Vollständig hieße es: Erst kommt die Arbeit, dann kommt das Vergnügen. Trotzdem versteht jeder den Satz. Durch die Kürze klingt er knapp und einprägsam, fast wie ein Sprichwort."
       },
       {
-        "title": "Drei Fragen, mit denen du jedes Stilmittel findest",
-        "body": "(1) **Wiederholt** sich etwas? Ein Laut, ein Wort, der Satzbau?\n\n(2) Ist es ein **Bild**? Mit wie, ohne wie, oder handelt ein Ding?\n\n(3) Ist es **übertrieben, beschönigt, eine Scheinfrage oder ein Gegensatz**?",
-        "say": "Mit diesen drei Fragen gehst du an jeden Satz heran. Sie führen dich zu den drei Gruppen, die du kennst. Die erste Frage führt zu Alliteration, Anapher und Parallelismus. Die zweite führt zu den Sprachbildern. Die dritte führt zu den Kunstgriffen und zum Satzbau."
+        "title": "Vier Fragen, mit denen du jedes Stilmittel findest",
+        "body": "(1) **Wiederholt** sich etwas? Ein Laut, ein Wort, der Satzbau?\n\n(2) Ist es ein **Bild**? Mit wie, ohne wie, oder handelt ein Ding?\n\n(3) Ist es **übertrieben, beschönigt, das Gegenteil gemeint oder eine Frage ohne Antwort**?\n\n(4) Fällt der **Satzbau** auf? Ein Gegensatz, eine Steigerung, oder fehlt ein Wort?",
+        "say": "Mit diesen vier Fragen gehst du an jeden Satz heran. Die erste Frage führt zu Alliteration, Anapher und Parallelismus. Die zweite führt zu den Sprachbildern. Die dritte führt zu den Kunstgriffen: Hyperbel, Euphemismus, Ironie und rhetorische Frage. Die vierte führt zum Satzbau: Antithese, Klimax und Ellipse."
       },
       {
         "title": "Zwei Stilmittel in einem Satz",
         "body": "*Ist der Mensch nur ein nackter Affe?*\n\nEine Frage ohne Antwort: rhetorische Frage.\nDer Mensch wird als Affe bezeichnet: Metapher.",
         "tasks": [
           {
-            "text": "Stark wie ein Stier und sanft wie ein Lamm. Hier stecken ein Gegensatz und ___.",
+            "text": "Er ist stark wie ein Stier und sanft wie ein Lamm. Hier stecken ein Gegensatz und ___.",
             "choices": [
               "zwei Vergleiche",
-              "eine Ellipse"
+              "eine rhetorische Frage"
             ],
             "correct": "zwei Vergleiche",
             "why": "Zweimal steht das Wort wie. Stark und sanft bilden außerdem einen Gegensatz.",
             "hint": "Welches kleine Wort kommt in dem Satz zweimal vor?"
           }
         ],
-        "say": "In der Prüfung heißt es oft: Notieren Sie zwei Stilmittel. Dann stecken tatsächlich zwei in einem Satz. Geh einfach alle drei Fragen durch und hör nicht nach dem ersten Fund auf. Hier findest du eine rhetorische Frage und zugleich eine Metapher."
+        "say": "In der Prüfung heißt es oft: Notieren Sie zwei Stilmittel. Dann stecken tatsächlich zwei in einem Satz. Geh einfach alle vier Fragen durch und hör nicht nach dem ersten Fund auf. Hier findest du eine rhetorische Frage und zugleich eine Metapher."
       },
       {
         "title": "Jetzt du: alles gemischt",
@@ -272,7 +272,7 @@
             "hint": "Kann ein Berg wirklich rufen, so wie ein Mensch es tut?"
           }
         ],
-        "say": "Jetzt kommen Stilmittel aus beiden Lektionen vor. Geh die drei Fragen der Reihe nach durch. Lass dir Zeit, es sind viele Namen."
+        "say": "Jetzt kommen Stilmittel aus beiden Lektionen vor. Geh die vier Fragen der Reihe nach durch. Lass dir Zeit, es sind viele Namen."
       },
       {
         "title": "Das nimmst du mit",
@@ -425,13 +425,13 @@
       {
         "prompt": "Du sollst zwei Stilmittel in einem Satz finden. Wie gehst du vor?",
         "choices": [
-          "Ich gehe alle drei Fragen durch und höre nach dem ersten Fund nicht auf.",
+          "Ich gehe alle vier Fragen durch und höre nach dem ersten Fund nicht auf.",
           "Ich nenne dasselbe Stilmittel zweimal.",
           "Ich rate.",
           "Ich zähle die Wörter."
         ],
-        "correct": "Ich gehe alle drei Fragen durch und höre nach dem ersten Fund nicht auf.",
-        "explain": "In einem Satz können mehrere Stilmittel gleichzeitig stecken. Die drei Fragen führen dich zu allen."
+        "correct": "Ich gehe alle vier Fragen durch und höre nach dem ersten Fund nicht auf.",
+        "explain": "In einem Satz können mehrere Stilmittel gleichzeitig stecken. Die vier Fragen führen dich zu allen."
       }
     ]
   }

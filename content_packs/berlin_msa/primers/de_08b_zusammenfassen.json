@@ -84,14 +84,14 @@
         "body": "**Bericht**: informiert sachlich.\n**Kommentar**: sagt eine Meinung.\n**Interview**: Fragen und Antworten.",
         "tasks": [
           {
-            "text": "Ein Text sagt deutlich seine Meinung und fordert etwas. Es ist ___.",
+            "text": "In einem Text steht: Die Stadt muss endlich mehr Radwege bauen! Der Text ist ___.",
             "choices": [
               "ein Kommentar",
               "ein Bericht"
             ],
             "correct": "ein Kommentar",
             "why": "Ein Bericht bliebe neutral. Hier wird gewertet und gefordert.",
-            "hint": "Bleibt der Text neutral, oder wertet er?"
+            "hint": "Bleibt der Satz neutral, oder fordert er etwas?"
           }
         ],
         "say": "Die Textart steht oft schon in der Aufgabe. Wenn nicht, erkennst du sie an der Absicht des Textes. Ein Bericht bleibt neutral. Ein Kommentar will überzeugen und wertet. Ein Interview besteht aus Fragen und Antworten. Diese drei kommen in der Prüfung am häufigsten vor."
@@ -232,7 +232,7 @@
         "body": "**Satz 1**: Textart, Titel, Kernaussage\n\n**Satz 2**: die wichtigsten Punkte\n\nGegenwart.\nKeine eigene Meinung.\nEigene Worte.\nKeine Einzelheiten.",
         "tasks": [
           {
-            "text": "Der Text handelt von Müll im Meer. Was fehlt in diesem ersten Satz? ___",
+            "text": "Der Text warnt davor, dass immer mehr Müll im Meer landet. Was fehlt in diesem ersten Satz? ___",
             "choices": [
               "Textart und Titel",
               "die eigene Meinung"

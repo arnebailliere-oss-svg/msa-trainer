@@ -29,12 +29,12 @@
         "body": "Auto und Bahn: **Autobahn**\nHaus und Tür: **Haustür**\nFuß und Ball: **Fußball**",
         "tasks": [
           {
-            "text": "Bitte schließ die ___.",
+            "text": "Wir essen heute am ___.",
             "choices": [
-              "Haustür",
-              "Haus Tür"
+              "Küchentisch",
+              "Küchen Tisch"
             ],
-            "correct": "Haustür",
+            "correct": "Küchentisch",
             "why": "Zwei Nomen benennen zusammen ein neues Ding.",
             "hint": "Benennen die beiden Wörter zusammen eine einzige Sache?"
           }
@@ -74,12 +74,12 @@
         "body": "**Klavier spielen**, **Rad fahren**, **Fußball spielen**\n\nDas Nomen bleibt groß, das Verb bleibt klein.",
         "tasks": [
           {
-            "text": "Meine Schwester kann ___.",
+            "text": "Meine Schwester kann gut ___.",
             "choices": [
-              "Klavier spielen",
-              "klavierspielen"
+              "Schach spielen",
+              "schachspielen"
             ],
-            "correct": "Klavier spielen",
+            "correct": "Schach spielen",
             "why": "Ein Nomen und ein Verb bleiben zwei Wörter.",
             "hint": "Welche beiden Wortarten stehen hier direkt nebeneinander?"
           }
@@ -93,10 +93,10 @@
           {
             "text": "Am Wochenende wollen wir ___.",
             "choices": [
-              "schwimmen gehen",
-              "schwimmengehen"
+              "tanzen gehen",
+              "tanzengehen"
             ],
-            "correct": "schwimmen gehen",
+            "correct": "tanzen gehen",
             "why": "Zwei Verben hintereinander bleiben zwei Wörter.",
             "hint": "Welche Wortart sind die beiden Wörter?"
           }
@@ -113,36 +113,36 @@
         "body": "**auf**stehen, **an**machen, **hin**gehen, **weg**laufen, **mit**kommen\n\nEin kurzes Wort vor dem Verb wächst mit ihm zusammen.",
         "tasks": [
           {
-            "text": "Ich muss morgen früh ___.",
+            "text": "Wann wollen wir ___?",
             "choices": [
-              "aufstehen",
-              "auf stehen"
+              "anfangen",
+              "an fangen"
             ],
-            "correct": "aufstehen",
+            "correct": "anfangen",
             "why": "Das kurze Wort wächst mit dem Verb zu einem neuen Wort zusammen.",
             "hint": "Bedeutet das Wort mit dem kurzen Wort davor etwas anderes als das Verb allein?"
           }
         ],
-        "say": "Hier ist es umgekehrt. Kurze Wörter wie auf, an, aus, ein, mit, weg und hin verbinden sich mit dem Verb zu einem neuen Wort. Aufstehen ist etwas anderes als stehen. Diese Wörter erkennst du daran, dass sie allein kaum etwas bedeuten."
+        "say": "Hier ist es umgekehrt. Kurze Wörter wie auf, an, aus, ein, mit, weg und hin verbinden sich mit dem Verb zu einem neuen Wort. Aufstehen ist etwas anderes als stehen. Diese Wörter erkennst du daran, dass sie kein Nomen, kein Verb und kein Adjektiv sind. Du kannst nicht mit wie nach ihnen fragen. Sie geben dem Verb eine neue Bedeutung."
       },
       {
         "title": "Im Satz trennt sich das Verb wieder",
         "body": "Ich **stehe** früh **auf**.\nHier stehen die Teile getrennt.\n\nIch muss früh **aufstehen**.\nHier stehen sie zusammen.",
-        "say": "Das verwirrt manchmal. In einem einfachen Satz wandert das kurze Wort ans Ende, und das Verb steht an zweiter Stelle. Sobald beide wieder nebeneinanderstehen, schreibst du sie zusammen. Das passiert nach müssen, wollen, können und nach zu."
+        "say": "Das verwirrt manchmal. In einem einfachen Satz wandert das kurze Wort ans Ende, und das Verb steht an zweiter Stelle. Sobald beide wieder nebeneinanderstehen, schreibst du sie zusammen. Das passiert nach müssen, wollen und können. Kommt ein zu dazu, rutscht es in die Mitte, und alles bleibt ein Wort: Ich habe keine Lust aufzustehen."
       },
       {
         "title": "Wenn ein Nomen daraus wird",
         "body": "Wir wollen **Rad fahren**.\nDas sind zwei Wörter.\n\n**Das Radfahren** macht Spaß.\nDas ist ein Nomen: zusammen und groß.",
         "tasks": [
           {
-            "text": "Beim ___ habe ich Tom getroffen.",
+            "text": "Das ___ macht mir Spaß.",
             "choices": [
-              "Spazierengehen",
-              "spazieren gehen"
+              "Klavierspielen",
+              "Klavier spielen"
             ],
-            "correct": "Spazierengehen",
-            "why": "In beim steckt ein Artikel. Die Verbindung wird zum Nomen und zu einem Wort.",
-            "hint": "Welches Wort steht vor der Lücke? Steckt ein Artikel darin?"
+            "correct": "Klavierspielen",
+            "why": "Davor steht ein Artikel. Die Verbindung wird zum Nomen und zu einem Wort.",
+            "hint": "Welches Wort steht vor der Lücke? Ist es ein Artikel?"
           }
         ],
         "say": "Du weißt schon, dass aus einem Verb ein Nomen werden kann, wenn ein Artikel davorsteht. Dann wächst die ganze Verbindung zu einem Wort zusammen. Aus Rad fahren wird das Radfahren. Aus spazieren gehen wird beim Spazierengehen."
@@ -192,17 +192,17 @@
       },
       {
         "title": "Hör auf die Betonung",
-        "body": "**WIE**dersehen: eine Betonung, ein Wort\nwieder **SE**hen: zwei Betonungen, zwei Wörter",
+        "body": "**WIE**dersehen: eine Betonung, ein Wort\n**WIE**der **SE**hen: zwei Betonungen, zwei Wörter",
         "tasks": [
           {
-            "text": "Tschüss und auf ___!",
+            "text": "Ich möchte dich bald ___.",
             "choices": [
-              "Wiedersehen",
-              "Wieder sehen"
+              "wiedersehen",
+              "wieder sehen"
             ],
-            "correct": "Wiedersehen",
-            "why": "Gemeint ist das erneute Treffen. Es ist ein Wort mit einer Betonung.",
-            "hint": "Wie viele Betonungen hörst du, wenn du den Gruß sprichst?"
+            "correct": "wiedersehen",
+            "why": "Gemeint ist das erneute Treffen. Du hörst nur eine Betonung, also ist es ein Wort.",
+            "hint": "Wie viele Betonungen hörst du, wenn du den Satz sprichst?"
           }
         ],
         "say": "Sprich beide laut aus. Beim Abschiedsgruß betonst du nur den Anfang. Beim Sehen nach der Operation betonst du beide Wörter. Das ist eine gute Faustregel: Hörst du nur eine Betonung, schreibst du zusammen. Hörst du zwei, schreibst du getrennt."

@@ -44,15 +44,14 @@
         "body": "**can** = können\n**must** = müssen\n**should** = sollte\n**may** = dürfen, oder: vielleicht\n**could** = könnte, oder: konnte",
         "tasks": [
           {
-            "text": "should = ___",
+            "text": "Tom is not sure. He ___ come later. (vielleicht)",
             "choices": [
-              "sollte",
-              "müssen",
-              "können"
+              "may",
+              "must"
             ],
-            "correct": "sollte",
-            "why": "Should gibt einen Rat: Du solltest das tun.",
-            "hint": "Schau in die dritte Zeile der Tafel."
+            "correct": "may",
+            "why": "May sagt hier, dass etwas vielleicht passiert.",
+            "hint": "Welches Modalverb auf der Tafel hat die Bedeutung vielleicht?"
           }
         ],
         "say": "Das sind die fünf Modalverben, die im MSA am häufigsten vorkommen. Should benutzt du für einen Rat. May hat zwei Bedeutungen: Es fragt nach einer Erlaubnis, oder es sagt, dass etwas vielleicht passiert. It may rain heißt: Es regnet vielleicht."
@@ -218,8 +217,20 @@
       },
       {
         "title": "Ersatz für can: be able to",
-        "body": "Gestern: *I **could** swim.*\nOder: *I **was able to** swim.*\n\nMorgen: *I **will be able to** swim.*",
-        "say": "Able bedeutet fähig. To be able to heißt also: fähig sein, etwas zu tun. Für die Vergangenheit kannst du auch einfach could nehmen. Für die Zukunft brauchst du die Ersatzform, denn will can gibt es nicht."
+        "body": "Gestern: *I **could** swim.*\nOder: *I **was able to** swim.*\n\nMorgen: *I **will be able to** swim.*\n\n**can't** und **couldn't** sind die Kurzformen von cannot und could not.",
+        "say": "Able bedeutet fähig. To be able to heißt also: fähig sein, etwas zu tun. Für die Vergangenheit kannst du auch einfach could nehmen. Für die Zukunft brauchst du die Ersatzform, denn will can gibt es nicht.",
+        "tasks": [
+          {
+            "text": "When I was five, I ___ read.",
+            "choices": [
+              "couldn't",
+              "can't"
+            ],
+            "correct": "couldn't",
+            "why": "When I was five ist vorbei. Die Vergangenheit von can't ist diese Form.",
+            "hint": "Geht es um heute oder um die Zeit, als du fünf warst?"
+          }
+        ]
       },
       {
         "title": "Ersatz für must: have to",
@@ -243,14 +254,14 @@
         "body": "*I **was allowed to** stay up late.*\n\n= Ich durfte lange aufbleiben.\n\n*We **are not allowed to** use our phones.*",
         "tasks": [
           {
-            "text": "When I was five, I ___ read.",
+            "text": "Last Saturday I ___ go to the concert.",
             "choices": [
-              "couldn't",
-              "can't"
+              "was allowed to",
+              "am allowed to"
             ],
-            "correct": "couldn't",
-            "why": "When I was five ist vorbei. Die Vergangenheit von can't ist diese Form.",
-            "hint": "Geht es um heute oder um die Zeit, als du fünf warst?"
+            "correct": "was allowed to",
+            "why": "Last Saturday ist vorbei. Dann steht be in der Vergangenheit: was allowed to.",
+            "hint": "Welches Wort zeigt die Zeit? In welcher Zeit muss be dann stehen?"
           }
         ],
         "say": "Allowed bedeutet erlaubt. To be allowed to heißt: die Erlaubnis haben. Diese Form brauchst du, wenn du über Regeln sprichst, zum Beispiel in der Schule. Das Wort allowed kennst du vielleicht schon von Schildern."

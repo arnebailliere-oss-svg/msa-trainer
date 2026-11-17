@@ -1,0 +1,96 @@
+[
+  {
+    "lesson": "P_EN_BLOG",
+    "why": "The task asked for a line that stands on the board; it now applies the distinction to a new question.",
+    "ops": [
+      {
+        "op": "tasks",
+        "board": "Zwei Fragen, zwei Antworten",
+        "tasks": [
+          {
+            "text": "Do you do sport after school? fragt nach ___.",
+            "correct": "deiner Erfahrung",
+            "wrong": [
+              "deiner Meinung"
+            ],
+            "why": "Die Frage will wissen, wie es bei dir selbst ist. Das ist deine Erfahrung.",
+            "hint": "Will die Frage wissen, was du über etwas denkst, oder was du selbst tust?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": "P_MATH_GEO_BEGRIFFE",
+    "why": "The drawing showed both angles, which gave the new task's answer away.",
+    "ops": [
+      {
+        "op": "figures",
+        "board": "Gleichschenklig und gleichseitig",
+        "figures": [
+          {
+            "caption": "gleichschenklig",
+            "figure": {
+              "type": "triangle",
+              "alpha": 70,
+              "beta": 70,
+              "labels": {
+                "alpha": "70°",
+                "beta": "?"
+              }
+            }
+          },
+          {
+            "caption": "gleichseitig",
+            "figure": {
+              "type": "triangle",
+              "alpha": 60,
+              "beta": 60,
+              "labels": {
+                "alpha": "60°",
+                "beta": "60°",
+                "gamma": "60°"
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": "P_MATH_PYTH_TRIG",
+    "why": "Ferdinand's closing line still named the old deciding question; it now matches the corrected summary.",
+    "ops": [
+      {
+        "op": "say",
+        "board": "Das nimmst du mit",
+        "text": "Das sind die fünf Dinge, die du aus dieser Lektion brauchst. Die wichtigste Frage bei jeder Aufgabe lautet: Hat das Dreieck einen rechten Winkel? Wenn ja, nimmst du Pythagoras oder sin, cos und tan. Wenn nein, nimmst du den Sinussatz oder den Kosinussatz. Gleich kommen die Wörter und ein kleines Quiz."
+      }
+    ]
+  },
+  {
+    "lesson": "P_DE_STRATEGIEN",
+    "why": "The quiz explanation still stated the doubling rule without its condition.",
+    "ops": [
+      {
+        "op": "quiz",
+        "index": 4,
+        "explain": "Nach dem kurzen o steht nur ein Konsonant, das m. Deshalb wird er verdoppelt. In Silben gesprochen hörst du es: kom-men."
+      }
+    ]
+  },
+  {
+    "lesson": "P_DE_KOMMA1",
+    "why": "The chalk line still said a clause always begins after these words.",
+    "ops": [
+      {
+        "op": "body",
+        "board": "Wörter, die ein Komma ankündigen",
+        "lines": [
+          "*weil, dass, wenn, obwohl, als, ob, während, nachdem, damit*",
+          "Jedes dieser Wörter ist ein **Signalwort**: Hier kann ein Nebensatz beginnen."
+        ]
+      }
+    ]
+  }
+]

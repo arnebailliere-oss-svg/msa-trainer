@@ -120,7 +120,7 @@
             "hint": "Sind die Freunde einer oder mehrere? Welche Form passt dazu?"
           }
         ],
-        "say": "Die meisten Grammatikfehler gehören zu einer dieser drei Gruppen. Beim ersten stimmt der Fall nicht. Beim zweiten ist die Form des Verbs falsch gebildet. Beim dritten steht das Subjekt in der Mehrzahl und das Verb in der Einzahl oder umgekehrt."
+        "say": "Die meisten Grammatikfehler gehören zu einer dieser drei Gruppen. Beim ersten stimmt der Fall nicht. Wegen dem hört man oft. In der Prüfung zählt es trotzdem als falscher Fall, also als G. Beim zweiten ist die Form des Verbs falsch gebildet. Beim dritten steht das Subjekt in der Mehrzahl und das Verb in der Einzahl oder umgekehrt."
       },
       {
         "title": "A: der Ausdrucksfehler",
@@ -151,7 +151,7 @@
             ],
             "correct": "Rechtschreibfehler",
             "why": "Die Verwechslung von einem und zwei s zählt zur Rechtschreibung.",
-            "hint": "Wie wird diese Verwechslung in der Prüfung eingeordnet?"
+            "hint": "Hat das Wort eine falsche Form, oder fehlt nur ein Buchstabe, nämlich ein zweites s?"
           }
         ],
         "say": "Diese Stelle wird in der Prüfung sehr oft falsch eingeordnet. Viele halten sie für Grammatik, weil es zwei verschiedene Wortarten sind. In der Bewertung zählt sie aber zur Rechtschreibung, denn es geht um die Schreibung mit einem oder zwei s."
@@ -227,7 +227,7 @@
             "text": "Wegen dem Stau kamen wir zu spät. Der Fehler ist ein ___.",
             "choices": [
               "Grammatikfehler",
-              "Ausdrucksfehler"
+              "Zeichensetzungsfehler"
             ],
             "correct": "Grammatikfehler",
             "why": "Nach wegen steht der Genitiv: wegen des Staus. Der Fall ist falsch.",
@@ -251,7 +251,7 @@
         "body": "Tipp bei jedem Satz auf die richtige Verbesserung.",
         "tasks": [
           {
-            "text": "Ich habe kein Bock auf Mathe. Besser: Ich habe keine ___ auf Mathe.",
+            "text": "Ich habe keinen Bock auf Mathe. Besser: Ich habe keine ___ auf Mathe.",
             "choices": [
               "Lust",
               "Böcke"

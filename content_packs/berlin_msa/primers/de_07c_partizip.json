@@ -23,31 +23,31 @@
         "body": "lachen: **ge**lach**t**\nSchwache Verben enden auf -t.\n\ngehen: **ge**gang**en**\nStarke Verben enden auf -en.",
         "tasks": [
           {
-            "text": "Das Partizip II von kaufen heißt ___.",
+            "text": "Das Partizip I von spielen heißt ___.",
             "choices": [
-              "gekauft",
-              "gekaufen"
+              "spielend",
+              "gespielt"
             ],
-            "correct": "gekauft",
-            "why": "Kaufen ist ein schwaches Verb. Sein Partizip II endet auf t.",
-            "hint": "Wie sagst du es im Perfekt: Ich habe etwas …?"
+            "correct": "spielend",
+            "why": "An den Infinitiv wird ein d gehängt.",
+            "hint": "Welche der beiden Formen ist der Infinitiv mit einem d am Ende?"
           }
         ],
-        "say": "Das Partizip II hat fast immer die zwei Buchstaben ge am Anfang. Am Ende steht bei schwachen Verben ein t und bei starken Verben ein en. Bei den starken Verben ändert sich oft auch der Laut in der Mitte: gehen, gegangen. Singen, gesungen."
+        "say": "Das Partizip I ist ganz leicht zu bilden. Du nimmst die Grundform des Verbs und hängst ein d an. Das funktioniert bei fast jedem Verb gleich. Es gibt hier keine starken und schwachen Verben."
       },
       {
         "title": "Manchmal ohne ge",
         "body": "telefonieren: **telefoniert**\nbesuchen: **besucht**\nverstehen: **verstanden**\nerzählen: **erzählt**",
         "tasks": [
           {
-            "text": "Das Partizip II von besuchen heißt ___.",
+            "text": "Das Partizip II von bezahlen heißt ___.",
             "choices": [
-              "besucht",
-              "gebesucht"
+              "bezahlt",
+              "gebezahlt"
             ],
-            "correct": "besucht",
+            "correct": "bezahlt",
             "why": "Verben, die mit be beginnen, bekommen kein ge.",
-            "hint": "Sprich beide Formen laut. Welche klingt richtig?"
+            "hint": "Womit beginnt das Verb? Was gilt für solche Verben?"
           }
         ],
         "say": "Zwei Gruppen von Verben bekommen kein ge. Die erste Gruppe sind Verben, die auf ieren enden. Die zweite Gruppe sind Verben, die mit be, ver, er, ent oder zer beginnen. Niemand sagt gebesucht. Dein Sprachgefühl hilft dir hier zuverlässig."
@@ -122,14 +122,14 @@
         "body": "das **kochende** Wasser\nEs kocht in diesem Moment.\n\ndas **gekochte** Ei\nEs ist fertig gekocht.",
         "tasks": [
           {
-            "text": "Das Wasser kocht gerade. Es ist ___ Wasser.",
+            "text": "Die Blätter fallen gerade vom Baum. Es sind ___ Blätter.",
             "choices": [
-              "kochendes",
-              "gekochtes"
+              "fallende",
+              "gefallene"
             ],
-            "correct": "kochendes",
+            "correct": "fallende",
             "why": "Es geschieht in diesem Moment. Dafür steht das Partizip I.",
-            "hint": "Kocht das Wasser noch, oder ist es schon fertig?"
+            "hint": "Fallen die Blätter noch, oder liegen sie schon am Boden?"
           }
         ],
         "say": "Hier siehst du beide Partizipien nebeneinander. Das kochende Wasser sprudelt gerade im Topf. Das gekochte Ei liegt fertig auf dem Teller. Der Unterschied ist also die Zeit: gerade dabei oder schon fertig."
@@ -187,14 +187,14 @@
         "body": "*Der **bellende** Hund jagte die **erschrockene** Katze.*\n\nbellend: Der Hund bellt dabei.\nerschrocken: Der Schreck ist schon geschehen.",
         "tasks": [
           {
-            "text": "die erschrockene Katze: Das ist Partizip ___.",
+            "text": "das zerbrochene Glas: Das ist Partizip ___.",
             "choices": [
               "II",
               "I"
             ],
             "correct": "II",
-            "why": "Der Schreck ist schon geschehen. Das Verb erschrecken bekommt kein ge.",
-            "hint": "Ist der Schreck schon geschehen? Endet das Wort auf end?"
+            "why": "Das Zerbrechen ist schon geschehen. Das Verb zerbrechen beginnt mit zer und bekommt kein ge.",
+            "hint": "Ist das Zerbrechen schon geschehen? Endet der Kern des Wortes auf end?"
           }
         ],
         "say": "In diesem Satz stehen beide Partizipien. Der Hund bellt, während er jagt, also Partizip I. Die Katze ist bereits erschrocken, also Partizip II. Erschrocken hat kein ge, weil das Verb mit er beginnt. Das hast du in dieser Lektion schon gelernt."
@@ -224,14 +224,14 @@
             "hint": "Ist der Kuchen schon fertig, oder wird er gerade gebacken?"
           },
           {
-            "text": "Sie sah den ___ Zug nur noch von hinten.",
+            "text": "Wir liefen durch den ___ Regen nach Hause.",
             "choices": [
-              "abfahrenden",
-              "abgefahrenen und stehenden"
+              "fallenden",
+              "gefallenen"
             ],
-            "correct": "abfahrenden",
-            "why": "Der Zug fährt in diesem Moment ab.",
-            "hint": "Fährt der Zug gerade los, während sie ihn sieht?"
+            "correct": "fallenden",
+            "why": "Der Regen fällt in diesem Moment.",
+            "hint": "Regnet es noch, während sie laufen?"
           }
         ],
         "say": "Überleg bei jedem Satz, ob etwas gerade geschieht oder schon abgeschlossen ist. Danach wählst du die passende Form."

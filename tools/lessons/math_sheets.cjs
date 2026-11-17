@@ -83,7 +83,7 @@ const merke = {
   ),
   L_MATH_GEO_PYTH_TRIG: list(
     "Im rechtwinkligen Dreieck gilt **$a^2 + b^2 = c^2$**. Dabei liegt $c$ gegenüber vom rechten Winkel.",
-    "Für sin, cos und tan hilft das Merkwort **GAGA HüHnerHof AG**.",
+    "Für sin, cos und tan hilft das Merkwort **GAGA HühnerHof AG**.",
     "Ist ein Winkel gesucht, nimmst du $\\sin^{-1}$, $\\cos^{-1}$ oder $\\tan^{-1}$.",
     "Ohne rechten Winkel nimmst du den Sinussatz oder den Kosinussatz vom Formelblatt.",
   ),

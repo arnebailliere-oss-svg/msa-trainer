@@ -119,14 +119,14 @@
         "body": "$\\frac{12}{18}$\n\nGeteilt durch 2: $\\frac{6}{9}$\n\nGeteilt durch 3: $\\frac{2}{3}$\n\nJetzt gibt es keine Zahl mehr, durch die sich beide teilen lassen.",
         "tasks": [
           {
-            "text": "$\\frac{6}{8}$ so weit wie möglich gekürzt ist ___.",
+            "text": "$\\frac{8}{12}$ so weit wie möglich gekürzt ist ___.",
             "choices": [
-              "$\\frac{3}{4}$",
-              "$\\frac{6}{8}$"
+              "$\\frac{2}{3}$",
+              "$\\frac{4}{6}$"
             ],
-            "correct": "$\\frac{3}{4}$",
-            "why": "Beide Zahlen lassen sich durch 2 teilen. Danach geht es nicht weiter.",
-            "hint": "Gibt es eine Zahl, durch die sich 6 und 8 beide teilen lassen?"
+            "correct": "$\\frac{2}{3}$",
+            "why": "Erst durch 2: vier Sechstel. Noch einmal durch 2: zwei Drittel. Danach geht es nicht weiter.",
+            "hint": "Gibt es eine Zahl, durch die sich 4 und 6 beide noch teilen lassen?"
           }
         ],
         "say": "Manchmal musst du mehrmals kürzen. Du suchst immer wieder eine Zahl, durch die sich Zähler und Nenner beide teilen lassen. Wenn du keine mehr findest, ist der Bruch so weit wie möglich gekürzt. Das wird in der Prüfung oft verlangt."
@@ -186,7 +186,7 @@
             "hint": "Welche Zahl kommt in der Zweierreihe und in der Fünferreihe zuerst gemeinsam vor?"
           }
         ],
-        "say": "Du brauchst eine Stückgröße, in die sich beide Brüche umschneiden lassen. Schreib dafür die Reihe von jedem Nenner auf, wie beim Einmaleins. Die erste Zahl, die in beiden Reihen vorkommt, ist dein gemeinsamer Nenner. Man nennt sie das kleinste gemeinsame Vielfache, kurz **kgV**."
+        "say": "Du brauchst eine Stückgröße, in die sich beide Brüche umschneiden lassen. Schreib dafür die Reihe von jedem Nenner auf, wie beim Einmaleins. Die Zahlen in so einer Reihe heißen **Vielfache**. Die erste Zahl, die in beiden Reihen vorkommt, ist dein gemeinsamer Nenner. Man nennt sie das kleinste gemeinsame Vielfache, kurz **kgV**."
       },
       {
         "title": "Dann erweitern und zusammenzählen",
@@ -251,14 +251,14 @@
         "say": "Drei Schreibweisen für dieselbe Menge. Die solltest du auswendig kennen.",
         "tasks": [
           {
-            "text": "$\\frac{1}{4}$ $= $ ___",
+            "text": "$\\frac{1}{5}$ $= 1 : 5 = 0{,}2 = $ ___",
             "choices": [
-              "25 %",
-              "4 %"
+              "20 %",
+              "5 %"
             ],
-            "correct": "25 %",
-            "why": "Ein Viertel von hundert sind 25.",
-            "hint": "Wie viel ist ein Viertel von 100?"
+            "correct": "20 %",
+            "why": "0,2 ist dasselbe wie 0,20. Das sind 20 von hundert.",
+            "hint": "0,2 ist dasselbe wie 0,20. Wie viele von hundert sind das?"
           }
         ]
       },

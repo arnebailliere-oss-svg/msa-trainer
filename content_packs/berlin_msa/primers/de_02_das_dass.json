@@ -104,7 +104,7 @@
         "say": "Es gibt Verben, nach denen dieses Bindewort besonders häufig folgt. Es sind Verben des Sagens, Denkens und Fühlens. Wenn du eines davon siehst und danach ein Nebensatz kommt, ist es fast immer das Wort mit zwei s."
       },
       {
-        "title": "Davor steht immer ein Komma",
+        "title": "Davor steht ein Komma",
         "body": "*Ich weiß**,** dass du recht hast.*\n\nHauptsatz und Nebensatz werden durch ein Komma getrennt.",
         "tasks": [
           {
@@ -118,7 +118,7 @@
             "hint": "Wo endet der Hauptsatz, und wo beginnt der Nebensatz?"
           }
         ],
-        "say": "Das folgt aus der Kommaregel, die du schon kennst. Das Bindewort leitet einen Nebensatz ein, und zwischen Hauptsatz und Nebensatz steht immer ein Komma. Wenn du also zwei s schreibst, weißt du gleichzeitig, dass davor ein Komma gehört."
+        "say": "Das folgt aus der Kommaregel, die du schon kennst. Das Bindewort leitet einen Nebensatz ein, und zwischen Hauptsatz und Nebensatz steht immer ein Komma. Wenn du also mitten im Satz zwei s schreibst, gehört fast immer ein Komma davor. Nur wenn das Wort ganz am Satzanfang steht, kommt das Komma erst am Ende des Nebensatzes: Dass du kommst, freut mich."
       },
       {
         "chapter": "Die Ersatzprobe",
@@ -234,7 +234,7 @@
       },
       {
         "title": "Das nimmst du mit",
-        "body": "(1) Passt **dieses** oder **welches**: ein s.\n\n(2) Passt keins von beiden: zwei s.\n\n(3) Vor dem Wort mit zwei s steht immer ein **Komma**.",
+        "body": "(1) Passt **dieses** oder **welches**: ein s.\n\n(2) Passt keins von beiden: zwei s.\n\n(3) Vor dem Wort mit zwei s steht mitten im Satz ein **Komma**.",
         "tasks": [
           {
             "text": "Ich glaube, dieses es regnet. Die Probe klingt falsch. Also schreibst du ___.",
@@ -329,13 +329,13 @@
       {
         "prompt": "Wann steht vor dem Wort ein Komma?",
         "choices": [
-          "Immer, wenn es zwei s hat.",
+          "Wenn es zwei s hat und mitten im Satz steht.",
           "Nie.",
           "Nur am Satzanfang.",
           "Nur, wenn es ein Artikel ist."
         ],
-        "correct": "Immer, wenn es zwei s hat.",
-        "explain": "Das Bindewort leitet einen Nebensatz ein, und vor einem Nebensatz steht ein Komma."
+        "correct": "Wenn es zwei s hat und mitten im Satz steht.",
+        "explain": "Das Bindewort leitet einen Nebensatz ein. Steht es mitten im Satz, kommt davor ein Komma. Am Satzanfang steht davor keines."
       },
       {
         "prompt": "Sie sagt, ___ ___ Wetter schön wird. Welche Reihenfolge ist richtig?",

@@ -80,7 +80,7 @@
             "hint": "Wie viele der beiden Zahlen haben ein Minus davor?"
           }
         ],
-        "say": "Mit Minuszahlen kannst du auch malnehmen. Ist eine der beiden Zahlen negativ, wird das Ergebnis negativ. Sind beide negativ, wird das Ergebnis positiv. Das klingt seltsam, aber du brauchst es später oft. Merk dir einfach: Zwei Minus heben sich beim Malnehmen auf."
+        "say": "Mit Minuszahlen kannst du auch malnehmen. Eine Zahl unter null nennt man **negativ**, eine Zahl über null **positiv**. Ist eine der beiden Zahlen negativ, wird das Ergebnis negativ. Sind beide negativ, wird das Ergebnis positiv. Das klingt seltsam, aber du brauchst es später oft. Merk dir einfach: Zwei Minus heben sich beim Malnehmen auf."
       },
       {
         "title": "Geteilt: drei Schreibweisen",
@@ -102,7 +102,7 @@
       {
         "chapter": "Hochzahl und Wurzel",
         "title": "Hochzahlen",
-        "body": "$5^2 = 5 \\cdot 5 = 25$\n\n$5^3 = 5 \\cdot 5 \\cdot 5 = 125$\n\nDie kleine Zahl oben sagt: **so oft steht die 5 da.**",
+        "body": "$5^2 = 5 \\cdot 5 = 25$\n\n$5^3 = 5 \\cdot 5 \\cdot 5 = 125$\n\nMan liest: **5 hoch 2** und **5 hoch 3**.\n\nDie kleine Zahl oben sagt: **so oft steht die 5 da.**",
         "say": "Vorsicht, die Falle: 5² ist nicht 5 mal 2. Es ist 5 mal 5.",
         "tasks": [
           {

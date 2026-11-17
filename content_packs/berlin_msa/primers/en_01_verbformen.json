@@ -88,7 +88,7 @@
       },
       {
         "title": "Die -s-Form",
-        "body": "I play. → **Tom** play**s**.\n\nI like pizza. → **She** like**s** pizza.\n\nEs geht um **eine** andere Person: Ein **-s** kommt ans Verb.",
+        "body": "I play. Aber: **Tom** play**s**.\n\nI like pizza. Aber: **She** like**s** pizza.\n\nEs geht um **eine** andere Person: Ein **-s** kommt ans Verb.",
         "say": "Jetzt passiert zum ersten Mal etwas mit dem Verb. Schau dir die beiden Sätze in Ruhe an. Sobald du über genau eine andere Person sprichst, hängt sich ein s an das Verb. Aus play wird plays. Aus like wird likes."
       },
       {
@@ -159,7 +159,7 @@
       },
       {
         "title": "Auflösung: mit s oder ohne?",
-        "body": "(1) My sister **likes** music. → *my sister* = she\n\n(2) My friends **like** music. → *my friends* = they, mehrere\n\n(3) The bus **stops** here. → *the bus* = it",
+        "body": "(1) My sister **likes** music. Denn *my sister* = she.\n\n(2) My friends **like** music. Denn *my friends* = they, also mehrere.\n\n(3) The bus **stops** here. Denn *the bus* = it.",
         "say": "My sister ist eine Person, also she. Das Verb bekommt sein s. My friends sind mehrere, also they. Da bleibt die Grundform, ohne s. Und der Bus ist eine Sache, also it, mit s. Wenn du Satz zwei falsch hattest: Das geht fast allen so. Jetzt weißt du, worauf du achtest."
       },
       {
@@ -230,7 +230,7 @@
       },
       {
         "title": "Zwei kleine Schreibregeln für -ing",
-        "body": "writ**e** → writ**ing**: Das **e** am Ende fällt weg.\n\nru**n** → ru**nn**ing: Der letzte Buchstabe wird **verdoppelt**.",
+        "body": "Aus writ**e** wird writ**ing**: Das **e** am Ende fällt weg.\n\nAus ru**n** wird ru**nn**ing: Der letzte Buchstabe wird **verdoppelt**.",
         "say": "Sprich die Wörter einmal leise aus. Bei write hörst du das e am Ende gar nicht. Deshalb fällt es weg, wenn ing dazukommt. Run ist ein kurzes Wort mit einem einzelnen kurzen u und einem einzelnen n am Ende. Nur bei solchen kurzen Wörtern schreibst du den letzten Buchstaben doppelt, so wie bei swimming und sitting. Bei reading oder playing wird nichts verdoppelt."
       },
       {
@@ -322,7 +322,7 @@
       },
       {
         "title": "Manche Verben machen nicht mit",
-        "body": "go → nicht *goed*, sondern **went**\n\nsee → nicht *seed*, sondern **saw**\n\nwrite → nicht *writed*, sondern **wrote**",
+        "body": "go: nicht *goed*, sondern **went**\n\nsee: nicht *seed*, sondern **saw**\n\nwrite: nicht *writed*, sondern **wrote**",
         "say": "Einige Verben halten sich nicht an die Regel mit ed. Man nennt sie unregelmäßige Verben. Im Deutschen gibt es das auch. Du sagst ich ging und nicht ich gehte. Für diese Formen gibt es leider keinen Trick. Man lernt sie nach und nach, und die wichtigsten begegnen dir ständig."
       },
       {
@@ -367,7 +367,7 @@
       },
       {
         "title": "Auflösung: Was war gestern?",
-        "body": "(1) Yesterday we **played** cards. → regelmäßig, mit *ed*\n\n(2) Last week I **went** to Hamburg. → *go* ist unregelmäßig\n\n(3) She **saw** a film on Sunday. → *see* ist unregelmäßig",
+        "body": "(1) Yesterday we **played** cards. Regelmäßig, mit *ed*.\n\n(2) Last week I **went** to Hamburg. *go* ist unregelmäßig.\n\n(3) She **saw** a film on Sunday. *see* ist unregelmäßig.",
         "say": "Play ist ein normales Verb und bekommt ed. Go und see sind unregelmäßig, also went und saw. Vielleicht wolltest du bei Satz drei ein s anhängen, weil dort she steht. In der Vergangenheit gibt es aber kein s. Es heißt einfach she saw."
       },
       {
@@ -479,7 +479,7 @@
       },
       {
         "title": "Auflösung: 2. oder 3. Form?",
-        "body": "(1) I have **seen** this film. → nach *have*: 3. Form\n\n(2) I **saw** this film yesterday. → allein: 2. Form\n\n(3) She has **gone** home. → nach *has*: 3. Form",
+        "body": "(1) I have **seen** this film. Nach *have*: 3. Form.\n\n(2) I **saw** this film yesterday. Allein: 2. Form.\n\n(3) She has **gone** home. Nach *has*: 3. Form.",
         "say": "Das ist die wichtigste Unterscheidung in dieser Lektion. Steht der Helfer have oder has davor, kommt die dritte Form. Steht kein Helfer davor, kommt die zweite Form. Wenn du das verstanden hast, hast du heute viel geschafft."
       },
       {
@@ -539,7 +539,7 @@
         "say": "Aus jedem Satz soll eine Frage werden. Tipp auf den richtigen Anfang. Überleg dir: Welcher Helfer gehört nach vorn, do, does oder did? Und in welcher Form steht das Verb danach?",
         "tasks": [
           {
-            "text": "They play tennis. → ___ tennis?",
+            "text": "They play tennis. Als Frage: ___ tennis?",
             "choices": [
               "Do they play",
               "Does they play",
@@ -550,7 +550,7 @@
             "hint": "Überleg zuerst: Sind they eine Person oder mehrere? Welcher Helfer gehört dann nach vorn?"
           },
           {
-            "text": "He plays tennis. → ___ tennis?",
+            "text": "He plays tennis. Als Frage: ___ tennis?",
             "choices": [
               "Does he plays",
               "Do he play",
@@ -561,7 +561,7 @@
             "hint": "In einem Satz gibt es das s nur einmal. Wenn der Helfer es schon hat, was passiert dann mit dem Verb?"
           },
           {
-            "text": "He played tennis. → ___ tennis?",
+            "text": "He played tennis. Als Frage: ___ tennis?",
             "choices": [
               "Did he played",
               "Did he play",
@@ -581,7 +581,7 @@
       {
         "chapter": "Nein sagen",
         "title": "Nein sagen mit not",
-        "body": "I like it. → I **do not** like it.\n\nShe likes it. → She **does not** like it.\n\nHe came. → He **did not** come.",
+        "body": "I like it. Verneint: I **do not** like it.\n\nShe likes it. Verneint: She **does not** like it.\n\nHe came. Verneint: He **did not** come.",
         "say": "Wenn du etwas verneinen willst, brauchst du denselben Helfer. Do, does oder did kommt vor das Verb, und das Wort not stellt sich direkt dahinter. Und wie bei den Fragen steht das Verb danach wieder in der Grundform: does not like, did not come."
       },
       {
@@ -613,7 +613,7 @@
         "say": "Jetzt verneinst du die Sätze. Tipp auf die richtige Form. Schau bei jedem Satz zuerst, ob schon ein Helfer da ist. Wenn ja, kommt nur not dazu. Wenn nein, brauchst du don't oder doesn't.",
         "tasks": [
           {
-            "text": "We play cards. → We ___ cards.",
+            "text": "We play cards. Verneint: We ___ cards.",
             "choices": [
               "doesn't play",
               "don't play",
@@ -624,7 +624,7 @@
             "hint": "Im Satz steht noch kein Helfer. Welcher Ersatzhelfer gehört zu we?"
           },
           {
-            "text": "Tom likes fish. → Tom ___ fish.",
+            "text": "Tom likes fish. Verneint: Tom ___ fish.",
             "choices": [
               "doesn't likes",
               "don't like",
@@ -635,7 +635,7 @@
             "hint": "Tom ist eine einzelne Person. Welcher Helfer gehört dazu, und wer bekommt dann das s?"
           },
           {
-            "text": "She is sleeping. → She ___ sleeping.",
+            "text": "She is sleeping. Verneint: She ___ sleeping.",
             "choices": [
               "doesn't",
               "is not",
@@ -649,7 +649,7 @@
       },
       {
         "title": "Auflösung: Sag nein",
-        "body": "(1) We **don't play** cards.\n\n(2) Tom **doesn't like** fish. → kein -s an *like*\n\n(3) She **is not** sleeping. → *is* ist schon da",
+        "body": "(1) We **don't play** cards.\n\n(2) Tom **doesn't like** fish. Kein -s an *like*.\n\n(3) She **is not** sleeping. *is* ist schon da.",
         "say": "In Satz eins und zwei gab es keinen Helfer, also springt do ein. Bei Tom wird daraus doesn't, und like verliert sein s. In Satz drei steht schon is. Da brauchst du kein do, nur not."
       },
       {

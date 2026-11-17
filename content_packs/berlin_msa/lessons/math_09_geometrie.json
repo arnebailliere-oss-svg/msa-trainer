@@ -316,7 +316,7 @@
       {
         "kind": "terms",
         "title": "Trigonometrie: die Seiten vom Winkel aus gesehen",
-        "body": "Im rechtwinkligen Dreieck, vom **Winkel** $\\alpha$ (Alpha) aus:\n- **Hypotenuse**: gegenüber vom rechten Winkel (immer dieselbe)\n- **Gegenkathete** von $\\alpha$: die Seite **gegenüber** von $\\alpha$\n- **Ankathete** von $\\alpha$: die Seite **am** Winkel $\\alpha$ (aber nicht die Hypotenuse)\n\n$$\\sin\\alpha = \\frac{\\text{Gegenkathete}}{\\text{Hypotenuse}} \\qquad \\cos\\alpha = \\frac{\\text{Ankathete}}{\\text{Hypotenuse}} \\qquad \\tan\\alpha = \\frac{\\text{Gegenkathete}}{\\text{Ankathete}}$$\n\nMerkwort: **GAGA HüHnerHof AG** — Sinus: **G**egenkathete/**H**ypotenuse, Kosinus: **A**nkathete/**H**ypotenuse, Tangens: **G**egenkathete/**A**nkathete.",
+        "body": "Im rechtwinkligen Dreieck, vom **Winkel** $\\alpha$ (Alpha) aus:\n- **Hypotenuse**: gegenüber vom rechten Winkel (immer dieselbe)\n- **Gegenkathete** von $\\alpha$: die Seite **gegenüber** von $\\alpha$\n- **Ankathete** von $\\alpha$: die Seite **am** Winkel $\\alpha$ (aber nicht die Hypotenuse)\n\n$$\\sin\\alpha = \\frac{\\text{Gegenkathete}}{\\text{Hypotenuse}} \\qquad \\cos\\alpha = \\frac{\\text{Ankathete}}{\\text{Hypotenuse}} \\qquad \\tan\\alpha = \\frac{\\text{Gegenkathete}}{\\text{Ankathete}}$$\n\nMerkwort: **GAGA HühnerHof AG** — Sinus: **G**egenkathete/**H**ypotenuse, Kosinus: **A**nkathete/**H**ypotenuse, Tangens: **G**egenkathete/**A**nkathete.",
         "primer": "P_MATH_PYTH_TRIG",
         "figure": {
           "type": "rightTriangle",
@@ -362,7 +362,7 @@
       {
         "kind": "remember",
         "title": "Merke",
-        "body": "- Im rechtwinkligen Dreieck gilt **$a^2 + b^2 = c^2$**. Dabei liegt $c$ gegenüber vom rechten Winkel.\n- Für sin, cos und tan hilft das Merkwort **GAGA HüHnerHof AG**.\n- Ist ein Winkel gesucht, nimmst du $\\sin^{-1}$, $\\cos^{-1}$ oder $\\tan^{-1}$.\n- Ohne rechten Winkel nimmst du den Sinussatz oder den Kosinussatz vom Formelblatt."
+        "body": "- Im rechtwinkligen Dreieck gilt **$a^2 + b^2 = c^2$**. Dabei liegt $c$ gegenüber vom rechten Winkel.\n- Für sin, cos und tan hilft das Merkwort **GAGA HühnerHof AG**.\n- Ist ein Winkel gesucht, nimmst du $\\sin^{-1}$, $\\cos^{-1}$ oder $\\tan^{-1}$.\n- Ohne rechten Winkel nimmst du den Sinussatz oder den Kosinussatz vom Formelblatt."
       }
     ],
     "primer": "P_MATH_PYTH_TRIG",

@@ -37,12 +37,12 @@
             "hint": "Welcher der beiden Sätze antwortet auf die Frage warum?"
           }
         ],
-        "say": "Das Argument liefert den Grund. Es antwortet auf die Frage warum. Du erkennst es oft an kleinen Wörtern wie weil, denn, da und deshalb. Wenn du in einem Text nach Argumenten suchst, such nach diesen Wörtern und nach der Antwort auf warum."
+        "say": "Das Argument liefert den Grund. Es antwortet auf die Frage warum. Du erkennst es oft an kleinen Wörtern wie weil, denn und da. Wenn du in einem Text nach Argumenten suchst, such nach diesen Wörtern und nach der Antwort auf warum."
       },
       {
         "title": "Das Beispiel",
         "body": "*An einer Hamburger Schule fühlten sich danach weniger Kinder ausgegrenzt.*\n\nEin **Beispiel** zeigt das Argument an einem bestimmten Fall.",
-        "say": "Das Beispiel macht ein Argument anschaulich. Es nennt einen Ort, eine Person, eine Zahl oder eine Untersuchung. Du kannst es dir vorstellen. Typische Signale sind zum Beispiel, etwa, so zeigt eine Studie. Ein Beispiel beweist das Argument, aber es ist nicht das Argument selbst."
+        "say": "Das Beispiel macht ein Argument anschaulich. Es nennt einen Ort, eine Person, eine Zahl oder eine Untersuchung. Du kannst es dir vorstellen. Typische Signale sind zum Beispiel, etwa, so zeigt eine Studie. Ein Beispiel stützt das Argument, aber es ist nicht das Argument selbst."
       },
       {
         "title": "Die Kette",
@@ -201,7 +201,7 @@
             "hint": "Antwortet der Satz auf die Frage warum?"
           }
         ],
-        "say": "Hier ist alles da. Zuerst kommt die Behauptung. Nach weil folgt der Grund. Und nach so folgt ein Fall, der den Grund anschaulich macht. In der Prüfung wirst du manchmal gefragt, welcher Teil in einem Argument fehlt. Dann gehst du die drei Teile durch."
+        "say": "Bisher war das Argument nur der Grund. Oft nennt man aber alle drei Teile zusammen ein vollständiges Argument: Behauptung, Grund und Beispiel. Hier ist alles da. Zuerst kommt die Behauptung. Nach weil folgt der Grund. Nach so folgt ein Fall, der ihn anschaulich macht. In der Prüfung wirst du manchmal gefragt, welcher Teil fehlt. Dann gehst du die drei Teile durch."
       },
       {
         "title": "Jetzt du: Was fehlt?",

@@ -106,6 +106,9 @@ export function checkPrimerStandard(p: Primer, terms: string[], primerById: Map<
       if (clipped.length > 1) v.push(`${b}: clipped sentences in Ferdinand's line (${clipped.slice(0, 3).join(" / ")})`);
     }
     for (const l of arrowChains(s.body)) v.push(`${b}: arrow chain "${l.trim().slice(0, 60)}"`);
+    // An owl board says it in words: "aus go wird went", never "go → went".
+    if (/→|⇒/.test(s.body)) v.push(`${b}: arrow on the board (write it as a sentence)`);
+    for (const t of s.tasks ?? []) if (/→|⇒/.test(t.text + t.choices.join(" "))) v.push(`${b}: arrow in a task (write it as a sentence)`);
     (s.tasks ?? []).forEach((t, ti) => {
       const w = `${b} task ${ti + 1}`;
       if (!t.why || words(t.why) < LIMITS.whyWordsMin) v.push(`${w}: "why" missing or shorter than ${LIMITS.whyWordsMin} words`);

@@ -124,8 +124,8 @@
       },
       {
         "title": "Warum das für Kommas wichtig ist",
-        "body": "Ich glaube**,** dass es regnet.\n\nWir gehen raus**,** obwohl es kalt ist.\n\nVor weil, dass, wenn und obwohl steht ein Komma.",
-        "say": "Hier siehst du, wozu du die Konjunktionen brauchst. Die Wörter der zweiten Gruppe sind wie ein Warnschild. Wenn du eins davon siehst, weißt du: Davor gehört ein Komma. Wer diese Wörter erkennt, hat die meisten Kommas schon gefunden."
+        "body": "Ich glaube**,** dass es regnet.\n\nWir gehen raus**,** obwohl es kalt ist.\n\nSteht weil, dass, wenn oder obwohl mitten im Satz, kommt davor ein Komma.",
+        "say": "Hier siehst du, wozu du die Konjunktionen brauchst. Die Wörter der zweiten Gruppe sind wie ein Warnschild. Wenn du eins davon mitten im Satz siehst, weißt du: Davor gehört ein Komma. Steht so ein Wort ganz am Satzanfang, kommt das Komma später, am Ende des angehängten Satzes: Wenn es regnet, bleibe ich hier. Wer diese Wörter erkennt, hat die meisten Kommas schon gefunden."
       },
       {
         "title": "Präposition oder Konjunktion?",
@@ -146,7 +146,7 @@
       },
       {
         "title": "Jetzt du: Welche Wortart?",
-        "body": "Tipp bei jedem Satz auf die richtige Wortart des fett gemeinten Wortes.",
+        "body": "Tipp bei jedem Satz auf die richtige Wortart des genannten Wortes.",
         "tasks": [
           {
             "text": "Wir warten vor der Schule. Das Wort vor ist ___.",
@@ -184,7 +184,7 @@
       {
         "chapter": "Adverbien",
         "title": "Wann, wo und wie",
-        "body": "*heute, dort, gern, sehr, oft*\n\nEin **Adverb** sagt genauer, wann, wo oder wie etwas geschieht.",
+        "body": "*heute, dort, gern, sehr, immer*\n\nEin **Adverb** sagt genauer, wann, wo oder wie etwas geschieht.",
         "say": "Ein Adverb gibt einem Satz mehr Genauigkeit. Ich komme ist ein fertiger Satz. Ich komme heute sagt zusätzlich, wann. Ich komme gern sagt, wie. Das Wort Adverb bedeutet beim Verb, weil es meistens etwas über das Verb aussagt."
       },
       {
@@ -210,13 +210,13 @@
         "body": "Er läuft **schnell**.\nSchnell kannst du steigern: schneller. Es ist ein Adjektiv.\n\nEr läuft **dort**.\nDort kannst du nicht steigern. Es ist ein Adverb.",
         "tasks": [
           {
-            "text": "Kannst du das Wort dort steigern? ___",
+            "text": "Sie wohnt oben. Das Wort oben ist ___.",
             "choices": [
-              "Nein",
-              "Ja"
+              "ein Adverb",
+              "ein Adjektiv"
             ],
-            "correct": "Nein",
-            "why": "Es gibt keine zweite Stufe davon. Deshalb ist es ein Adverb.",
+            "correct": "ein Adverb",
+            "why": "Es gibt keine zweite Stufe davon. Was du nicht steigern kannst, ist ein Adverb.",
             "hint": "Probier es aus: Gibt es eine Form mit -er am Ende?"
           }
         ],
@@ -224,7 +224,7 @@
       },
       {
         "title": "Typische Adverbien",
-        "body": "**Zeit**: heute, gestern, oft, nie, bald\n**Ort**: hier, dort, draußen, oben\n**Art**: gern, leider, sehr, vielleicht",
+        "body": "**Zeit**: heute, gestern, immer, nie, bald\n**Ort**: hier, dort, draußen, oben\n**Art**: gern, leider, sehr, vielleicht",
         "say": "Diese Wörter solltest du als Adverbien wiedererkennen. Die erste Zeile antwortet auf die Frage wann. Die zweite antwortet auf die Frage wo. Die dritte sagt etwas darüber, wie jemand etwas findet oder wie sicher etwas ist."
       },
       {
@@ -282,7 +282,7 @@
             "hint": "Verbindet das Wort zwei Sätze, oder steht es vor einem Nomen?"
           }
         ],
-        "say": "Mit den drei neuen sind es zusammen acht Wortarten. Mehr musst du für die Prüfung nicht kennen. Jedes deutsche Wort gehört zu einer dieser Gruppen. Gleich kommen noch die Wörter zum Nachlesen und ein kleines Quiz."
+        "say": "Mit den drei neuen sind es zusammen acht Wortarten. Mehr musst du für die Prüfung nicht kennen. Fast jedes deutsche Wort gehört zu einer dieser Gruppen. Gleich kommen noch die Wörter zum Nachlesen und ein kleines Quiz."
       }
     ],
     "vocab": [
@@ -332,13 +332,13 @@
       {
         "prompt": "Welches Wort ist ein Adverb?",
         "choices": [
-          "oft",
+          "immer",
           "unter",
           "weil",
           "freundlich"
         ],
-        "correct": "oft",
-        "explain": "Oft sagt, wie häufig etwas geschieht, und verändert sich nie. Freundlich kannst du steigern, es ist ein Adjektiv."
+        "correct": "immer",
+        "explain": "Immer sagt, wann etwas geschieht, und verändert sich nie. Freundlich kannst du steigern, es ist ein Adjektiv."
       },
       {
         "prompt": "Woran erkennst du ein Adverb?",

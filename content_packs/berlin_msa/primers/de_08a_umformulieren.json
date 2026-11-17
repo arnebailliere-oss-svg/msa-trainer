@@ -44,14 +44,14 @@
         "body": "Konsum: Verbrauch\nProjekt: Vorhaben\nKooperation: Zusammenarbeit\nResonanz: Rückmeldung",
         "tasks": [
           {
-            "text": "Kooperation bedeutet auf Deutsch ___.",
+            "text": "Kontrolle bedeutet auf Deutsch ___.",
             "choices": [
-              "Zusammenarbeit",
-              "Aufstand"
+              "Überprüfung",
+              "Zusammenarbeit"
             ],
-            "correct": "Zusammenarbeit",
-            "why": "Wer kooperiert, arbeitet mit anderen zusammen.",
-            "hint": "Was tun zwei Firmen, wenn sie kooperieren?"
+            "correct": "Überprüfung",
+            "why": "Wer etwas kontrolliert, prüft nach, ob es stimmt.",
+            "hint": "Was tut eine Lehrerin, wenn sie die Hausaufgaben kontrolliert?"
           }
         ],
         "say": "Ein Fremdwort ist ein Wort, das aus einer anderen Sprache ins Deutsche gekommen ist. Für die meisten gibt es ein deutsches Wort mit derselben Bedeutung. In der Prüfung ordnest du beide einander zu. Viele Fremdwörter kennst du aus dem Alltag, ohne darüber nachzudenken."
@@ -162,7 +162,7 @@
         "chapter": "Einen Satz gezielt verändern",
         "title": "Eine Einschränkung streichen",
         "body": "*Eigentlich habe ich immer gute Rückmeldungen bekommen.*\n\nOhne Einschränkung: *Ich habe immer gute Rückmeldungen bekommen.*\n\nDas Wort **eigentlich** schränkt ein.",
-        "say": "Manche kleinen Wörter machen eine Aussage vorsichtiger: eigentlich, fast, meistens, ziemlich, im Grunde. Sie schränken ein. Wenn die Aufgabe einen Satz ohne Einschränkung verlangt, streichst du genau dieses eine Wort. Den Rest des Satzes lässt du unverändert."
+        "say": "Manche kleinen Wörter machen eine Aussage vorsichtiger: eigentlich, fast, meistens, ziemlich, im Grunde. Sie schränken ein. Wenn die Aufgabe einen Satz ohne Einschränkung verlangt, streichst du genau dieses eine Wort. Stand es am Satzanfang, tauschen die nächsten beiden Wörter den Platz: Aus Eigentlich habe ich wird Ich habe. Sonst bleibt der Satz unverändert."
       },
       {
         "title": "Aus einer Vermutung eine Tatsache machen",
@@ -245,7 +245,7 @@
         "body": "(1) Ein **Synonym** muss in den Satz passen.\n\n(2) Bei einer **Redewendung** fragst du: Was ist gemeint?\n\n(3) Du änderst nur das eine Wort, das die Aufgabe verlangt.",
         "tasks": [
           {
-            "text": "Im Grunde war der Test leicht. Welches Wort schränkt ein? ___",
+            "text": "Im Grunde war der Test leicht. Was schränkt hier ein? ___",
             "choices": [
               "Im Grunde",
               "leicht"

@@ -165,25 +165,25 @@
             ],
             "correct": "das andere Angebot",
             "why": "Adults only heißt nur für Erwachsene. Mit 15 darf die Person dort nicht teilnehmen.",
-            "hint": "Was bedeutet adults only? Passt das zu einem Alter von 15?"
+            "hint": "Adults sind Erwachsene, only heißt nur. Ist jemand mit 15 schon erwachsen?"
           }
         ],
-        "say": "Erst jetzt liest du genau, und nur noch ein oder zwei kurze Texte. Das spart viel Zeit. Wenn du für jeden Wunsch auf ein Wort zeigen kannst, ist die Antwort sicher. Unten kannst du prüfen, ob du die Reihenfolge noch weißt."
+        "say": "Erst jetzt liest du genau, und nur noch ein oder zwei kurze Texte. Das spart viel Zeit. Wenn du für jeden Wunsch auf ein Wort zeigen kannst, ist die Antwort sicher. Unten probierst du Schritt 3 aus. Ein Wort dazu: adults sind Erwachsene."
       },
       {
         "title": "Wörter, die in Angeboten oft vorkommen",
         "body": "**on a budget** = mit wenig Geld\n**outdoors** = draußen\n**suitable for** = geeignet für\n**beginner** = Anfänger\n**book in advance** = vorher buchen",
         "tasks": [
           {
-            "text": "on a budget = ___",
+            "text": "Person: Lena is on a budget. Im Angebot suchst du ein Wort wie ___.",
             "choices": [
-              "mit wenig Geld",
-              "draußen",
-              "für Anfänger"
+              "cheap",
+              "outdoors",
+              "beginner"
             ],
-            "correct": "mit wenig Geld",
-            "why": "Ein Budget ist das Geld, das man ausgeben kann. On a budget heißt: Es ist knapp.",
-            "hint": "Schau in die erste Zeile der Tafel. Dort steht die Lösung."
+            "correct": "cheap",
+            "why": "On a budget heißt mit wenig Geld. Dazu passt cheap, also billig.",
+            "hint": "Was bedeutet on a budget? Welches der drei Wörter hat mit Geld zu tun?"
           }
         ],
         "say": "Diese fünf Ausdrücke stehen in fast jeder Prüfung irgendwo. Lies sie einmal langsam durch. Du musst sie nicht sofort auswendig können. Es hilft schon, wenn du sie wiedererkennst, sobald sie in einem Angebot auftauchen."

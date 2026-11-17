@@ -34,7 +34,7 @@
       },
       {
         "title": "Die Lösung ist ein Paar",
-        "body": "$x = 6$ und $y = 4$\n\nProbe: $6 + 4 = 10$ ✓ und $6 - 4 = 2$ ✓\n\nDie zwei Zahlen zusammen heißen **Lösungspaar**.\n\nMan schreibt: $L = \\{(6\\,|\\,4)\\}$\n\nDer Buchstabe $L$ steht für Lösung.",
+        "body": "$x = 6$ und $y = 4$\n\nProbe: $6 + 4 = 10$ ✓ und $6 - 4 = 2$ ✓\n\nDie zwei Zahlen zusammen heißen **Lösungspaar**.\n\nMan schreibt: $L = \\{(6\\,|\\,4)\\}$\n\nDer Buchstabe $L$ steht für **Lösungsmenge**.\n\nDie geschweiften Klammern außen heißen: Das sind alle Lösungen. Hier gibt es genau ein Paar.",
         "say": "Die Lösung besteht hier aus zwei Zahlen, die in beiden Zeilen gleichzeitig passen. In der Klammer steht immer zuerst das x und danach das y. Die Probe machst du deshalb zweimal, einmal für jede Zeile.",
         "tasks": [
           {
@@ -51,7 +51,7 @@
       },
       {
         "title": "Was heißt „System“?",
-        "body": "System heißt nur: **mehrere Gleichungen, die zusammengehören**.\n\nZusammen nennt man sie **Gleichungssystem**, kurz LGS.\n\nMan nummeriert sie: (I) und (II).",
+        "body": "System heißt nur: **mehrere Gleichungen, die zusammengehören**.\n\nZusammen nennt man sie ein lineares **Gleichungssystem**, kurz LGS.\n\nLinear heißt hier: $x$ und $y$ haben keine Hochzahl.\n\nMan nummeriert sie: (I) und (II).",
         "say": "Das Wort klingt groß, aber es bedeutet nur, dass die Zeilen zusammengehören. Die römischen Zahlen I und II sind einfach Namen für die erste und die zweite Zeile. So kannst du später kurz sagen, mit welcher Zeile du gerade rechnest.",
         "tasks": [
           {
@@ -73,11 +73,11 @@
           {
             "text": "$x = 6$ und $y = 2$: Das Paar ___.",
             "choices": [
-              "passt in keine Zeile ganz",
+              "passt nur zu (I)",
               "ist die Lösung"
             ],
-            "correct": "passt in keine Zeile ganz",
-            "why": "6 plus 2 ergibt 8, aber 6 minus 2 ergibt 4 und nicht 2. Ein Paar muss in beide Zeilen passen.",
+            "correct": "passt nur zu (I)",
+            "why": "6 plus 2 ergibt 8, das passt zu (I). Aber 6 minus 2 ergibt 4 und nicht 2. Ein Paar muss in beide Zeilen passen.",
             "hint": "Rechne 6 minus 2 aus. Steht das in der zweiten Zeile rechts?"
           },
           {

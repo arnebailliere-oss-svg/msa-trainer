@@ -91,6 +91,7 @@ function migrate(file, fn) {
     },
   };
   fn(p, h);
+  require("./read_fixes.cjs").apply(p); // corrections from the board-by-board read stay on top
   p.standard = 2;
   // keep a stable, readable key order
   const { id, subject, title, teaser, hook, outro, standard, requires, steps, vocab, quiz, source } = p;

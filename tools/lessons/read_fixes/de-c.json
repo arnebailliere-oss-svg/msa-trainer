@@ -1,0 +1,631 @@
+[
+  {
+    "lesson": "P_DE_EROERTERUNG",
+    "why": "The hint of task 1 on the plan board did not point at the difference between an argument and the own verdict.",
+    "ops": [
+      {
+        "op": "tasks",
+        "board": "Jetzt du: den Plan füllen",
+        "tasks": [
+          {
+            "text": "Jugendliche morgens müde, lernen schlechter. Der Stichpunkt gehört ___.",
+            "correct": "zu den Argumenten dafür",
+            "wrong": ["in den Schluss"],
+            "why": "Müdigkeit am Morgen spricht für einen späteren Beginn.",
+            "hint": "Ist das ein Grund für eine Seite, oder ist es schon dein eigenes Urteil?"
+          },
+          {
+            "text": "Unterricht bis in den späten Nachmittag. Der Stichpunkt gehört ___.",
+            "correct": "zu den Argumenten dagegen",
+            "wrong": ["zu den Argumenten dafür"],
+            "why": "Ein später Schulschluss ist ein Nachteil.",
+            "hint": "Ist ein später Schulschluss ein Vorteil oder ein Nachteil?"
+          },
+          {
+            "text": "Meine Meinung: später Beginn, aber nur eine halbe Stunde. Der Stichpunkt gehört ___.",
+            "correct": "in den Schluss",
+            "wrong": ["in die Einleitung"],
+            "why": "Die eigene Meinung steht erst am Ende.",
+            "hint": "In welchem Teil steht dein eigenes Urteil?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": "P_DE_EROERTERUNG",
+    "why": "The paragraph task only asked back the sentence Ferdinand says on the same board.",
+    "ops": [
+      {
+        "op": "tasks",
+        "board": "Ein Argument, ein Absatz",
+        "tasks": [
+          {
+            "text": "Im Plan stehen drei Argumente dafür und drei dagegen. Der ganze Text mit Einleitung und Schluss hat ___ Absätze.",
+            "correct": "acht",
+            "wrong": ["sechs"],
+            "why": "Sechs Absätze für die Argumente, dazu einer für die Einleitung und einer für den Schluss.",
+            "hint": "Wie viele Absätze hat der Hauptteil? Welche zwei Teile kommen noch dazu?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": "P_DE_EROERTERUNG",
+    "why": "The task on the conclusion board only repeated Ferdinand's sentence about new arguments.",
+    "ops": [
+      {
+        "op": "tasks",
+        "board": "Im Schluss kommt nichts Neues",
+        "tasks": [
+          {
+            "text": "In einem Schluss steht: Außerdem sparen Familien mit Schulkleidung Geld. Was ist hier falsch? ___",
+            "correct": "Das ist ein neues Argument.",
+            "wrong": ["Der Satz ist zu kurz."],
+            "why": "Außerdem leitet ein weiteres Argument ein. Im Schluss wird nur noch geurteilt.",
+            "hint": "Was kündigt das Wort außerdem an?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": "P_DE_EROERTERUNG",
+    "why": "The word Ausblick on the conclusion board was never explained although the quiz uses it.",
+    "ops": [
+      {
+        "op": "say",
+        "board": "Der Schluss",
+        "text": "Jetzt darfst du endlich ich sagen. Du nennst deine Entscheidung und sagst, welches Argument dich am meisten überzeugt hat. Diese Zusammenfassung mit Urteil nennt man **Fazit**. Zum Abschluss kannst du einen Vorschlag machen, was man tun sollte. Oder du gibst einen **Ausblick**. Das ist ein Satz darüber, wie es in Zukunft weitergehen könnte."
+      }
+    ]
+  },
+  {
+    "lesson": "P_DE_EROERTERUNG",
+    "why": "The claim that the writing plan earns almost as many points as the text could not be verified, so the cautious wording is used.",
+    "ops": [
+      {
+        "op": "say",
+        "board": "Zwei Aufgaben, zweimal Punkte",
+        "text": "In der Prüfung bekommst du zuerst eine leere Tabelle. In sie trägst du in Stichpunkten ein, was du schreiben willst. Das ist der Schreibplan, und er bringt eigene Punkte. Lass ihn deshalb nie aus, auch wenn du lieber gleich losschreiben würdest."
+      }
+    ]
+  },
+  {
+    "lesson": "P_DE_ARGUMENT",
+    "why": "Deshalb was listed as a signal word for the reason, but it introduces the consequence.",
+    "ops": [
+      {
+        "op": "say",
+        "board": "Das Argument",
+        "text": "Das Argument liefert den Grund. Es antwortet auf die Frage warum. Du erkennst es oft an kleinen Wörtern wie weil, denn und da. Wenn du in einem Text nach Argumenten suchst, such nach diesen Wörtern und nach der Antwort auf warum."
+      }
+    ]
+  },
+  {
+    "lesson": "P_DE_ARGUMENT",
+    "why": "An example supports an argument, it does not prove it.",
+    "ops": [
+      {
+        "op": "say",
+        "board": "Das Beispiel",
+        "text": "Das Beispiel macht ein Argument anschaulich. Es nennt einen Ort, eine Person, eine Zahl oder eine Untersuchung. Du kannst es dir vorstellen. Typische Signale sind zum Beispiel, etwa, so zeigt eine Studie. Ein Beispiel stützt das Argument, aber es ist nicht das Argument selbst."
+      }
+    ]
+  },
+  {
+    "lesson": "P_DE_ARGUMENT",
+    "why": "The change of meaning from argument as the reason to a complete argument of three parts was not said.",
+    "ops": [
+      {
+        "op": "say",
+        "board": "Ein vollständiges Argument",
+        "text": "Bisher war das Argument nur der Grund. Oft nennt man aber alle drei Teile zusammen ein vollständiges Argument: Behauptung, Grund und Beispiel. Hier ist alles da. Zuerst kommt die Behauptung. Nach weil folgt der Grund. Nach so folgt ein Fall, der ihn anschaulich macht. In der Prüfung wirst du manchmal gefragt, welcher Teil fehlt. Dann gehst du die drei Teile durch."
+      }
+    ]
+  },
+  {
+    "lesson": "P_DE_LESEN",
+    "why": "The task on finding the passage did not say which question is meant.",
+    "ops": [
+      {
+        "op": "tasks",
+        "board": "Die Stelle finden",
+        "tasks": [
+          {
+            "text": "Frage: Welche Hürde nennen Jugendliche am häufigsten? Die Antwort lautet: ___",
+            "correct": "Zeitmangel",
+            "wrong": ["Geldmangel"],
+            "why": "Dieses Wort steht im Text direkt nach am häufigsten nennen Jugendliche.",
+            "hint": "Welches Wort folgt im Text auf am häufigsten nennen Jugendliche?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": "P_DE_LESEN",
+    "why": "The task on the key-statement board repeated a sentence already labelled as a detail on an earlier board.",
+    "ops": [
+      {
+        "op": "tasks",
+        "board": "Wo die Kernaussage oft steht",
+        "tasks": [
+          {
+            "text": "Ein Text handelt vom Handyverbot an Schulen. Darin steht: An der Schule von Mia liegen die Handys in einer Kiste. Das ist ___.",
+            "correct": "eine Einzelheit",
+            "wrong": ["die Kernaussage"],
+            "why": "Der Satz nennt ein einzelnes Beispiel mit einer Person.",
+            "hint": "Gilt der Satz für den ganzen Text oder nur für ein Beispiel?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": "P_DE_LESEN",
+    "why": "The hint on the text-purpose task separated informing from convincing, but the wrong choice is entertaining.",
+    "ops": [
+      {
+        "op": "tasks",
+        "board": "Was der Text will",
+        "tasks": [
+          {
+            "text": "Ein Text fordert: Die Schule muss endlich später beginnen! Der Text will ___.",
+            "correct": "überzeugen",
+            "wrong": ["unterhalten"],
+            "why": "Eine Forderung mit Ausrufezeichen zeigt eine Meinung, für die der Text wirbt.",
+            "hint": "Will der Satz dich zum Lachen bringen, oder fordert er etwas?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": "P_DE_LESEN",
+    "why": "Four weeks are not exactly one month, so the first statement could be judged false with good reason.",
+    "ops": [
+      {
+        "op": "tasks",
+        "board": "Jetzt du: drei Aussagen zu einem Text",
+        "tasks": [
+          {
+            "text": "Der Test dauerte 28 Tage. ___",
+            "correct": "richtig",
+            "wrong": ["falsch", "steht nicht im Text"],
+            "why": "Vier Wochen sind 28 Tage. Die Wörter sind anders, die Bedeutung ist gleich.",
+            "hint": "Wie viele Tage sind vier Wochen?"
+          },
+          {
+            "text": "Nach dem Test kamen mehr Schüler zu spät. ___",
+            "correct": "falsch",
+            "wrong": ["richtig", "steht nicht im Text"],
+            "why": "Im Text steht weniger. Die Aussage sagt das Gegenteil.",
+            "hint": "Steht im Text mehr oder weniger?"
+          },
+          {
+            "text": "Die Noten wurden nach dem Test besser. ___",
+            "correct": "steht nicht im Text",
+            "wrong": ["richtig", "falsch"],
+            "why": "Über Noten sagt der kleine Text kein Wort.",
+            "hint": "Kommt das Wort Noten oder etwas Ähnliches im Text vor?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": "P_DE_LESEN",
+    "why": "An omission in a quotation is marked with square brackets, and only the first three rules always apply.",
+    "ops": [
+      {
+        "op": "body",
+        "board": "So zitierst du richtig",
+        "lines": [
+          "(1) Die Stelle **wörtlich** abschreiben.",
+          "(2) In **Anführungszeichen** setzen.",
+          "(3) Die **Zeile** angeben: *(Z. 5)*",
+          "(4) Eine Auslassung mit **[…]** kennzeichnen."
+        ]
+      },
+      {
+        "op": "say",
+        "board": "So zitierst du richtig",
+        "text": "Ein Zitat ist eine wörtlich abgeschriebene Textstelle. Du darfst kein Wort verändern. Wenn du etwas weglässt, weil die Stelle zu lang ist, setzt du drei Punkte in eckige Klammern. Die ersten drei Dinge gehören immer dazu. Fehlt eines davon, gibt es einen Abzug."
+      }
+    ]
+  },
+  {
+    "lesson": "P_DE_ZEITFORMEN",
+    "why": "The task on strong verbs asked for singen, sang, which Ferdinand already names on the board.",
+    "ops": [
+      {
+        "op": "tasks",
+        "board": "Schwache und starke Verben",
+        "tasks": [
+          {
+            "text": "Das Präteritum von trinken heißt: ich ___.",
+            "correct": "trank",
+            "wrong": ["trinkte"],
+            "why": "Trinken ist ein starkes Verb. Der Vokal ändert sich.",
+            "hint": "Wie würdest du in einem Märchen schreiben, was der König gestern aus dem Becher tat?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": "P_DE_ZEITFORMEN",
+    "why": "Sein is not used only with two groups, since sein and bleiben also form the perfect with sein.",
+    "ops": [
+      {
+        "op": "say",
+        "board": "haben oder sein?",
+        "text": "Die meisten Verben bilden das Perfekt mit haben. Sein steht vor allem bei zwei Gruppen. Die erste sind Verben, bei denen man sich von einem Ort zum anderen bewegt: gehen, fahren, laufen. Die zweite sind Verben, bei denen sich ein Zustand ändert: aufwachen, einschlafen, wachsen. Auch sein und bleiben selbst nehmen sein: ich bin gewesen, ich bin geblieben."
+      }
+    ]
+  },
+  {
+    "lesson": "P_DE_ZEITFORMEN",
+    "why": "The pluperfect does not stand after als, it stands in sentences with nachdem and als.",
+    "ops": [
+      {
+        "op": "say",
+        "board": "Zwei Zeiten in einem Satz",
+        "text": "Das Plusquamperfekt steht fast nie allein. Es braucht eine zweite Handlung, die später geschah. Besonders oft findest du es in Sätzen mit nachdem und als. Das Frühere bekommt hatte oder war, das Spätere steht im Präteritum."
+      }
+    ]
+  },
+  {
+    "lesson": "P_DE_ZEITFORMEN",
+    "why": "The future task repeated the board example es wird regnen.",
+    "ops": [
+      {
+        "op": "tasks",
+        "board": "Futur: die Zukunft",
+        "tasks": [
+          {
+            "text": "Nächste Woche ___ wir umziehen.",
+            "correct": "werden",
+            "wrong": ["wurden"],
+            "why": "Nächste Woche kommt noch. Für die Zukunft steht eine Form von werden im Präsens.",
+            "hint": "Liegt nächste Woche in der Zukunft oder in der Vergangenheit?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": "P_DE_ZEITFORMEN",
+    "why": "The task on recognising the tense asked back the third board line instead of applying it to a sentence.",
+    "ops": [
+      {
+        "op": "tasks",
+        "board": "So erkennst du die Zeitform",
+        "tasks": [
+          {
+            "text": "Die Kinder waren schon eingeschlafen. Das ist ___.",
+            "correct": "Plusquamperfekt",
+            "wrong": ["Perfekt"],
+            "why": "Der erste Verbteil heißt waren. War und hatte zeigen die Vorvergangenheit an.",
+            "hint": "Heißt der erste Verbteil sind oder waren?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": "P_DE_MODUS",
+    "why": "The short Konjunktiv II form is not limited to sein, haben and können, which contradicted other boards.",
+    "ops": [
+      {
+        "op": "say",
+        "board": "würde hilft immer",
+        "text": "Bei vielen Verben klingt die eigentliche Form veraltet. Niemand sagt heute ich hülfe. Deshalb nimmt man meistens würde und hängt das Verb in der Grundform an. Das ist richtig und klingt natürlich. Bei sein, haben und Verben wie können, müssen und wissen benutzt man meistens die kurze Form: wäre, hätte, könnte, müsste, wüsste."
+      }
+    ]
+  },
+  {
+    "lesson": "P_DE_MODUS",
+    "why": "The polite-request task did not say that the more polite form is wanted, and the hint gave away the answer by its spelling.",
+    "ops": [
+      {
+        "op": "tasks",
+        "board": "Drei Aufgaben des Konjunktivs II",
+        "tasks": [
+          {
+            "text": "Du willst besonders höflich bitten: ___ du mir bitte das Salz geben?",
+            "correct": "Könntest",
+            "wrong": ["Kannst"],
+            "why": "Der Konjunktiv II macht die Bitte höflicher. Kannst ist auch richtig, klingt aber direkter.",
+            "hint": "Welche der beiden Formen lässt dem anderen mehr die Wahl?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": "P_DE_PARTIZIP",
+    "why": "The task on participles without ge asked for besucht, which stands on the board.",
+    "ops": [
+      {
+        "op": "tasks",
+        "board": "Manchmal ohne ge",
+        "tasks": [
+          {
+            "text": "Das Partizip II von bezahlen heißt ___.",
+            "correct": "bezahlt",
+            "wrong": ["gebezahlt"],
+            "why": "Verben, die mit be beginnen, bekommen kein ge.",
+            "hint": "Womit beginnt das Verb? Was gilt für solche Verben?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": "P_DE_PARTIZIP",
+    "why": "The task on forming Partizip I repeated the board example schlafend.",
+    "ops": [
+      {
+        "op": "tasks",
+        "board": "So wird es gebildet",
+        "tasks": [
+          {
+            "text": "Das Partizip I von spielen heißt ___.",
+            "correct": "spielend",
+            "wrong": ["gespielt"],
+            "why": "An den Infinitiv wird ein d gehängt.",
+            "hint": "Welche der beiden Formen ist der Infinitiv mit einem d am Ende?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": "P_DE_PARTIZIP",
+    "why": "Partizip I does have exceptions (seiend, tuend), so the claim of no exceptions was wrong.",
+    "ops": [
+      {
+        "op": "say",
+        "board": "So wird es gebildet",
+        "text": "Das Partizip I ist ganz leicht zu bilden. Du nimmst die Grundform des Verbs und hängst ein d an. Das funktioniert bei fast jedem Verb gleich. Es gibt hier keine starken und schwachen Verben."
+      }
+    ]
+  },
+  {
+    "lesson": "P_DE_PARTIZIP",
+    "why": "The task on the meaning of Partizip I repeated the board example with the boiling water.",
+    "ops": [
+      {
+        "op": "tasks",
+        "board": "Es bedeutet: Das geschieht gerade",
+        "tasks": [
+          {
+            "text": "Die Blätter fallen gerade vom Baum. Es sind ___ Blätter.",
+            "correct": "fallende",
+            "wrong": ["gefallene"],
+            "why": "Es geschieht in diesem Moment. Dafür steht das Partizip I.",
+            "hint": "Fallen die Blätter noch, oder liegen sie schon am Boden?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": "P_DE_PARTIZIP",
+    "why": "The task on both participles asked again for erschrocken, which board and Ferdinand already solve.",
+    "ops": [
+      {
+        "op": "tasks",
+        "board": "Beide in einem Satz",
+        "tasks": [
+          {
+            "text": "das zerbrochene Glas: Das ist Partizip ___.",
+            "correct": "II",
+            "wrong": ["I"],
+            "why": "Das Zerbrechen ist schon geschehen. Das Verb zerbrechen beginnt mit zer und bekommt kein ge.",
+            "hint": "Ist das Zerbrechen schon geschehen? Endet der Kern des Wortes auf end?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": "P_DE_PARTIZIP",
+    "why": "The third mixed task had an artificially lengthened wrong choice because both participles fitted the train sentence.",
+    "ops": [
+      {
+        "op": "tasks",
+        "board": "Jetzt du: gemischt",
+        "tasks": [
+          {
+            "text": "Das ___ Baby wurde in den Arm genommen.",
+            "correct": "schreiende",
+            "wrong": ["geschriene"],
+            "why": "Das Baby schreit in diesem Moment.",
+            "hint": "Schreit das Baby noch, während man es nimmt?"
+          },
+          {
+            "text": "Der ___ Kuchen stand auf dem Tisch.",
+            "correct": "gebackene",
+            "wrong": ["backende"],
+            "why": "Der Kuchen ist fertig. Niemand backt ihn mehr.",
+            "hint": "Ist der Kuchen schon fertig, oder wird er gerade gebacken?"
+          },
+          {
+            "text": "Wir liefen durch den ___ Regen nach Hause.",
+            "correct": "fallenden",
+            "wrong": ["gefallenen"],
+            "why": "Der Regen fällt in diesem Moment.",
+            "hint": "Regnet es noch, während sie laufen?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": "P_DE_PASSIV",
+    "why": "The three steps never said that the article of a masculine noun changes (den Dieb, der Dieb).",
+    "ops": [
+      {
+        "op": "say",
+        "board": "Die drei Schritte",
+        "text": "So formst du jeden Satz um. Aus die Katze wird das neue Subjekt. Aus jagt wird wird gejagt. Der Hund, der vorher Subjekt war, kommt mit von dazu: vom Hund. Vom ist die Kurzform von von dem. Achte auf den Artikel. Aus den Dieb wird im Passiv der Dieb, denn das Subjekt antwortet auf die Frage wer. Zurück ins Aktiv wird aus der Ball wieder den Ball."
+      }
+    ]
+  },
+  {
+    "lesson": "P_DE_INDIREKT",
+    "why": "The word Begleitsatz was used in step 1 without an explanation.",
+    "ops": [
+      {
+        "op": "say",
+        "board": "Schritt 1: die Zeichen entfernen",
+        "text": "Du fängst mit dem Einfachsten an. Der **Begleitsatz** ist der Teil, der sagt, wer spricht: Tom sagt. Er bleibt, wie er ist. Der Doppelpunkt wird zu einem Komma, und die Anführungszeichen streichst du. Jetzt hast du den Anfang deines neuen Satzes: Tom sagt, und dann geht es weiter."
+      }
+    ]
+  },
+  {
+    "lesson": "P_DE_INDIREKT",
+    "why": "The Konjunktiv I task asked for habe, which stands on the board, instead of applying the rule to a new verb.",
+    "ops": [
+      {
+        "op": "tasks",
+        "board": "Schritt 3: das Verb in den Konjunktiv I setzen",
+        "tasks": [
+          {
+            "text": "Tom sagt: „Ich nehme den Bus.“ Indirekt: Tom sagt, er ___ den Bus.",
+            "correct": "nehme",
+            "wrong": ["nimmt"],
+            "why": "In der indirekten Rede steht das Verb im Konjunktiv I: Infinitiv nehmen ohne n.",
+            "hint": "Nimm den Infinitiv und lass das n weg. Was bleibt übrig?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": "P_DE_INDIREKT",
+    "why": "The change from du to ich and the verb moving to the end in reported questions was never explained.",
+    "ops": [
+      {
+        "op": "say",
+        "board": "Fragen ohne Fragewort bekommen ob",
+        "text": "Auch Fragen kann man berichten. Wenn die Frage mit dem Verb beginnt und man mit ja oder nein antworten kann, brauchst du das Wort ob. Das Fragezeichen fällt weg, denn der neue Satz ist keine Frage mehr. Er hat mich gefragt. Mit du bin also ich gemeint, deshalb wird aus du das Wort ich. Das Verb rückt wie bei dass ans Ende."
+      }
+    ]
+  },
+  {
+    "lesson": "P_DE_INDIREKT",
+    "why": "The board shows solle but the answer is sollten, and the reason for the Konjunktiv II with wir was missing in task and quiz.",
+    "ops": [
+      {
+        "op": "tasks",
+        "board": "Aufforderungen bekommen sollen",
+        "tasks": [
+          {
+            "text": "Die Lehrerin sagt: „Seid leise!“ Indirekt: Sie sagt, wir ___ leise sein.",
+            "correct": "sollten",
+            "wrong": ["sind"],
+            "why": "Eine Aufforderung gibt man mit einer Form von sollen wieder. Bei wir sieht sollen aus wie die normale Form. Deshalb nimmt man den Konjunktiv II: sollten.",
+            "hint": "Welches Verb drückt aus, dass jemand etwas tun soll?"
+          }
+        ]
+      },
+      {
+        "op": "quiz",
+        "index": 5,
+        "explain": "Eine Aufforderung gibt man mit einer Form von sollen wieder. Bei wir sieht sollen aus wie die normale Form. Deshalb nimmt man den Konjunktiv II: sollten."
+      }
+    ]
+  },
+  {
+    "lesson": "P_DE_UMFORMULIEREN",
+    "why": "The foreign-word task only read Kooperation off the board.",
+    "ops": [
+      {
+        "op": "tasks",
+        "board": "Fremdwörter auf Deutsch sagen",
+        "tasks": [
+          {
+            "text": "Kontrolle bedeutet auf Deutsch ___.",
+            "correct": "Überprüfung",
+            "wrong": ["Zusammenarbeit"],
+            "why": "Wer etwas kontrolliert, prüft nach, ob es stimmt.",
+            "hint": "Was tut eine Lehrerin, wenn sie die Hausaufgaben kontrolliert?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": "P_DE_UMFORMULIEREN",
+    "why": "Striking a restricting word at the start of a sentence changes the word order, which was not said.",
+    "ops": [
+      {
+        "op": "say",
+        "board": "Eine Einschränkung streichen",
+        "text": "Manche kleinen Wörter machen eine Aussage vorsichtiger: eigentlich, fast, meistens, ziemlich, im Grunde. Sie schränken ein. Wenn die Aufgabe einen Satz ohne Einschränkung verlangt, streichst du genau dieses eine Wort. Stand es am Satzanfang, tauschen die nächsten beiden Wörter den Platz: Aus Eigentlich habe ich wird Ich habe. Sonst bleibt der Satz unverändert."
+      }
+    ]
+  },
+  {
+    "lesson": "P_DE_UMFORMULIEREN",
+    "why": "The summary task asked for one word although the answer Im Grunde is two words.",
+    "ops": [
+      {
+        "op": "tasks",
+        "board": "Das nimmst du mit",
+        "tasks": [
+          {
+            "text": "Im Grunde war der Test leicht. Was schränkt hier ein? ___",
+            "correct": "Im Grunde",
+            "wrong": ["leicht"],
+            "why": "Ohne diese beiden Wörter gilt die Aussage ohne Vorbehalt.",
+            "hint": "Welche Wörter kannst du streichen, damit der Satz ohne Vorbehalt gilt?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": "P_DE_ZUSAMMENFASSEN",
+    "why": "The text-type task repeated the board line about the commentary instead of using an example.",
+    "ops": [
+      {
+        "op": "tasks",
+        "board": "Die Textart erkennen",
+        "tasks": [
+          {
+            "text": "In einem Text steht: Die Stadt muss endlich mehr Radwege bauen! Der Text ist ___.",
+            "correct": "ein Kommentar",
+            "wrong": ["ein Bericht"],
+            "why": "Ein Bericht bliebe neutral. Hier wird gewertet und gefordert.",
+            "hint": "Bleibt der Satz neutral, oder fordert er etwas?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "lesson": "P_DE_ZUSAMMENFASSEN",
+    "why": "The example first sentence named only the topic, yet the explanation claimed it contained the key statement.",
+    "ops": [
+      {
+        "op": "tasks",
+        "board": "Das nimmst du mit",
+        "tasks": [
+          {
+            "text": "Der Text warnt davor, dass immer mehr Müll im Meer landet. Was fehlt in diesem ersten Satz? ___",
+            "correct": "Textart und Titel",
+            "wrong": ["die eigene Meinung"],
+            "why": "Der erste Satz nennt Textart, Titel und Kernaussage. Hier steht nur die Kernaussage.",
+            "hint": "Halte den Satz neben die erste Zeile der Tafel. Was steht schon da?"
+          }
+        ]
+      }
+    ]
+  }
+]

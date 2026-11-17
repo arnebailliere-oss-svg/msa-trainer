@@ -56,14 +56,14 @@
         "say": "Das Wort Scheitel kennst du vom Haar: Es ist die Stelle, an der es sich teilt. Bei der Schüssel ist das der tiefste Punkt. Links davon geht es hinunter, rechts davon wieder hinauf.",
         "tasks": [
           {
-            "text": "Der tiefste Punkt von $y = x^2$ liegt bei ___.",
+            "text": "Eine Schüssel hat ihren tiefsten Punkt bei $(2\\,|\\,1)$. Ihr Scheitelpunkt ist ___.",
             "choices": [
-              "$(0\\,|\\,0)$",
-              "$(1\\,|\\,1)$"
+              "$S(2\\,|\\,1)$",
+              "$S(0\\,|\\,0)$"
             ],
-            "correct": "$(0\\,|\\,0)$",
-            "why": "Für x gleich 0 kommt 0 heraus. Kleiner kann x hoch 2 nicht werden.",
-            "hint": "Für welche Zahl wird x hoch 2 am kleinsten?"
+            "correct": "$S(2\\,|\\,1)$",
+            "why": "Der Scheitelpunkt ist der tiefste Punkt der Schüssel, egal wo sie liegt.",
+            "hint": "Wie heißt der tiefste Punkt einer Schüssel?"
           }
         ]
       },
@@ -96,14 +96,14 @@
         "say": "Ein Minus vor dem x hoch 2 dreht die Schüssel um. Dann zeigt die Öffnung nach unten, und der Scheitelpunkt ist nicht mehr der tiefste, sondern der höchste Punkt.",
         "tasks": [
           {
-            "text": "$y = -x^2$ ist offen nach ___.",
+            "text": "$y = -x^2$. Für $x = 2$ ist $y = $ ___",
             "choices": [
-              "unten",
-              "oben"
+              "$-4$",
+              "$4$"
             ],
-            "correct": "unten",
-            "why": "Das Minus vor dem x hoch 2 dreht die Schüssel um.",
-            "hint": "Was macht ein Minus vor dem x hoch 2 mit der Schüssel?"
+            "correct": "$-4$",
+            "why": "2 mal 2 ist 4, und das Minus davor macht daraus minus 4. Deshalb liegt die Kurve unter der Achse.",
+            "hint": "Rechne zuerst 2 mal 2. Was macht das Minus davor aus dem Ergebnis?"
           }
         ]
       },
@@ -356,7 +356,7 @@
       },
       {
         "title": "Die pq-Formel Schritt für Schritt",
-        "body": "$x^2 + 6x + 5 = 0$\n\nAblesen: $p = 6$ und $q = 5$\n\nHälfte von $p$: 3\n\nUnter der Wurzel: $3^2 - 5 = 4$\n\nWurzel: $\\sqrt{4} = 2$\n\n$x_{1,2} = -3 \\pm 2$\n\nMit Plus: $x_1 = -1$. Mit Minus: $x_2 = -5$.",
+        "body": "$x^2 + 6x + 5 = 0$\n\nAblesen: $p = 6$ und $q = 5$\n\nHälfte von $p$: 3\n\nUnter der Wurzel: $3^2 - 5 = 4$\n\nWurzel: $\\sqrt{4} = 2$\n\n$x_{1,2} = -3 \\pm 2$\n\nMit Plus: $x_1 = -1$. Mit Minus: $x_2 = -5$.\n\nIst $q$ negativ, wird aus minus $q$ ein Plus. Für $p = 2$ und $q = -3$: $1^2 - (-3) = 1 + 3 = 4$",
         "tasks": [
           {
             "text": "$x^2 + 4x + 3 = 0$. Unter der Wurzel steht $2^2 - 3 = $ ___",
@@ -518,7 +518,7 @@
           "Es gibt keine Lösung"
         ],
         "correct": "$x_1 = 1$ und $x_2 = -3$",
-        "explain": "Die Hälfte von p ist 1. Unter der Wurzel steht 1 plus 3, also 4. Minus 1 plus 2 ergibt 1, und minus 1 minus 2 ergibt minus 3."
+        "explain": "Die Hälfte von p ist 1. Das q ist minus 3. Unter der Wurzel steht 1 hoch 2 minus q, also 1 minus minus 3. Minus minus wird plus: 1 plus 3 ergibt 4. Die Wurzel aus 4 ist 2. Minus 1 plus 2 ergibt 1, und minus 1 minus 2 ergibt minus 3."
       }
     ]
   }

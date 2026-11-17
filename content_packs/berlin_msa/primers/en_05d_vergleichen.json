@@ -47,7 +47,7 @@
       },
       {
         "title": "Drei kleine Schreibregeln",
-        "body": "big wird zu bi**gg**er: Der letzte Buchstabe wird verdoppelt.\n\nnice wird zu nice**r**: Das e ist schon da.\n\nhappy wird zu happ**ier**: Aus y wird i.",
+        "body": "big wird zu bi**gg**er: Endet ein kurzes Wort auf einen Selbstlaut und einen Mitlaut, wird der letzte Buchstabe verdoppelt.\n\nnice wird zu nice**r**: Das e ist schon da.\n\nhappy wird zu happ**ier**: Aus y wird i.",
         "tasks": [
           {
             "text": "Today is ___ than yesterday. (hot)",
@@ -56,11 +56,11 @@
               "hoter"
             ],
             "correct": "hotter",
-            "why": "Hot ist ein kurzes Wort. Der letzte Buchstabe wird verdoppelt.",
-            "hint": "Schau auf die erste Regel der Tafel. Ist hot ein kurzes Wort wie big?"
+            "why": "Hot endet auf einen Selbstlaut und einen Mitlaut. Der letzte Buchstabe wird verdoppelt.",
+            "hint": "Wie endet hot: mit einem Selbstlaut und einem Mitlaut wie big?"
           }
         ],
-        "say": "Diese Regeln kennst du in ähnlicher Form schon von den Verben. Bei kurzen Wörtern wie big oder hot wird der letzte Buchstabe verdoppelt. Endet das Wort schon auf e, hängst du nur ein r an. Und aus einem y am Ende wird ein i."
+        "say": "Diese Regeln kennst du in ähnlicher Form schon von den Verben. Bei big und hot steht am Ende ein einzelner Selbstlaut und dann ein einzelner Mitlaut. Dann wird der letzte Buchstabe verdoppelt. Bei tall, old oder fast ist das nicht so: taller, older, faster. Endet das Wort schon auf e, hängst du nur ein r an. Und aus einem y am Ende wird ein i."
       },
       {
         "title": "Jetzt du: -er oder -est?",
@@ -197,7 +197,7 @@
         "chapter": "Unregelmäßige Wörter und as … as",
         "title": "Drei Wörter machen nicht mit",
         "body": "good, **better**, the **best**\nbad, **worse**, the **worst**\nmuch / many, **more**, the **most**",
-        "say": "Drei sehr häufige Wörter halten sich an keine Regel. Im Deutschen ist das genauso: gut, besser, am besten. Niemand sagt guter. Lies die drei Zeilen ein paarmal laut. Good, better, best kennst du vielleicht schon aus Liedern."
+        "say": "Drei sehr häufige Wörter halten sich an keine Regel. Im Deutschen ist das genauso: gut, besser, am besten. Niemand sagt: Das ist guter als gestern. Lies die drei Zeilen ein paarmal laut. Good, better, best kennst du vielleicht schon aus Liedern."
       },
       {
         "title": "Jetzt du: unregelmäßig",
@@ -211,7 +211,7 @@
             ],
             "correct": "better",
             "why": "Good ist unregelmäßig. Der Komparativ hat eine eigene Form.",
-            "hint": "Wie heißt es auf Deutsch: guter oder besser? Im Englischen ist es ähnlich."
+            "hint": "Wie sagst du auf Deutsch: Die Pizza ist guter oder besser? Im Englischen ist es ähnlich."
           },
           {
             "text": "It was the ___ day of my life.",

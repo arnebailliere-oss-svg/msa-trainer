@@ -154,12 +154,13 @@ primer(
         "since: der Anfang",
         [L("**since** 2019", "**since** Monday", "**since** my birthday"), "Nach since steht der **Zeitpunkt**, an dem es angefangen hat."],
         "Ein Zeitpunkt ist ein Punkt auf dem Zeitstrahl. Du kannst mit dem Finger darauf zeigen: genau hier hat es angefangen. Ein Jahr, ein Wochentag oder ein Geburtstag sind solche Punkte. Vor ihnen steht since.",
+        { figure: { type: "timeline", spans: [{ from: -0.6, to: 0, label: "bis jetzt" }], points: [{ at: -0.6, label: "since 2019" }] } },
       ),
       b(
         "for: die Dauer",
         [L("**for** five years", "**for** two hours", "**for** a long time"), "Nach for steht die **Dauer**. Sie sagt, wie lange etwas schon geht."],
         "Eine Dauer ist kein Punkt, sondern eine Strecke auf dem Zeitstrahl. Du kannst sie zählen: fünf Jahre, zwei Stunden, drei Wochen. Davor steht for. Frag dich also immer, ob du einen Anfang nennst oder eine Menge an Zeit.",
-        { tasks: [k("Two hours ist ___.", "eine Dauer", ["ein Zeitpunkt"], "Zwei Stunden kann man zählen. Das ist eine Strecke und kein einzelner Punkt.", "Kannst du auf dem Zeitstrahl darauf zeigen, oder musst du es zählen?")] },
+        { figure: { type: "timeline", spans: [{ from: -0.6, to: 0, label: "for five years" }] }, tasks: [k("Two hours ist ___.", "eine Dauer", ["ein Zeitpunkt"], "Zwei Stunden kann man zählen. Das ist eine Strecke und kein einzelner Punkt.", "Kannst du auf dem Zeitstrahl darauf zeigen, oder musst du es zählen?")] },
       ),
       b(
         "Die Falle mit seit",

@@ -114,7 +114,7 @@
       },
       {
         "title": "beim, zum, im und vom",
-        "body": "**beim** Essen, **zum** Lachen, **im** Stehen\n\nIn diesen Wörtern steckt ein Artikel: *beim* ist *bei dem*.",
+        "body": "**beim** Essen, **zum** Lachen, **im** Stehen, **vom** Schwimmen\n\nIn diesen Wörtern steckt ein Artikel: *beim* ist *bei dem*.",
         "tasks": [
           {
             "text": "Beim ___ höre ich Musik.",
@@ -127,20 +127,20 @@
             "hint": "Welcher Artikel steckt in dem Wort vor der Lücke?"
           }
         ],
-        "say": "Diese kleinen Wörter sind versteckte Artikel. Beim bedeutet bei dem, zum bedeutet zu dem, und im bedeutet in dem. Wenn danach ein Verb folgt, ist es zu einem Nomen geworden. Du schreibst es groß: beim Essen, zum Lachen."
+        "say": "Diese kleinen Wörter sind versteckte Artikel. Beim bedeutet bei dem, zum bedeutet zu dem, im bedeutet in dem, und vom bedeutet von dem. Wenn danach ein Verb folgt, ist es zu einem Nomen geworden. Du schreibst es groß: beim Essen, zum Lachen."
       },
       {
         "title": "Auch Adjektive werden zu Nomen",
         "body": "das **Gute** daran\n\netwas **Neues**, nichts **Besonderes**\n\nviel **Schönes**, alles **Gute**",
         "tasks": [
           {
-            "text": "Ich wünsche dir alles ___.",
+            "text": "Sie hat mir etwas ___ erzählt.",
             "choices": [
-              "Gute",
-              "gute"
+              "Lustiges",
+              "lustiges"
             ],
-            "correct": "Gute",
-            "why": "Nach alles wird das Adjektiv zum Nomen und großgeschrieben.",
+            "correct": "Lustiges",
+            "why": "Nach etwas wird das Adjektiv zum Nomen und großgeschrieben.",
             "hint": "Welches Wort steht vor der Lücke? Wirkt es wie ein Begleiter?"
           }
         ],
@@ -208,7 +208,7 @@
       {
         "chapter": "Was klein bleibt",
         "title": "Verben und Adjektive",
-        "body": "*Sie **läuft** sehr **schnell**.*\n\nVerben und Adjektive schreibt man klein, solange kein Artikel davorsteht.",
+        "body": "*Sie **läuft** sehr **schnell**.*\n\nVerben und Adjektive schreibt man klein.\n\nGroß werden sie nur, wenn ein Artikel davorsteht und kein Nomen mehr folgt: *das Gute*, aber *der gute Freund*.",
         "say": "Das ist die Gegenseite der Regel. Ein Verb, das sagt, was jemand tut, bleibt klein. Ein Adjektiv, das sagt, wie etwas ist, bleibt klein. Großgeschrieben werden sie nur in dem besonderen Fall, den du gerade gelernt hast."
       },
       {
@@ -218,10 +218,10 @@
           {
             "text": "Sie singt am ___.",
             "choices": [
-              "schönsten",
-              "Schönsten"
+              "lautesten",
+              "Lautesten"
             ],
-            "correct": "schönsten",
+            "correct": "lautesten",
             "why": "Es ist die höchste Stufe beim Steigern. Du kannst mit wie danach fragen.",
             "hint": "Kannst du nach dem Wort mit wie fragen?"
           }
@@ -235,11 +235,11 @@
           {
             "text": "Wir trainieren immer ___.",
             "choices": [
-              "montags",
-              "Montags"
+              "dienstags",
+              "Dienstags"
             ],
-            "correct": "montags",
-            "why": "Mit s am Ende bedeutet es jeden Montag. Es ist ein Adverb und bleibt klein.",
+            "correct": "dienstags",
+            "why": "Mit s am Ende bedeutet es jeden Dienstag. Es ist ein Adverb und bleibt klein.",
             "hint": "Hat das Wort ein s am Ende? Was bedeutet es dann?"
           }
         ],
@@ -267,7 +267,7 @@
         "body": "*Können **Sie** mir helfen?*\n\n*Ich danke **Ihnen** für **Ihre** Antwort.*\n\nIn der höflichen Anrede schreibt man Sie, Ihnen und Ihr groß.",
         "tasks": [
           {
-            "text": "Können ___ mir bitte helfen, Herr Müller?",
+            "text": "Herr Müller, haben ___ kurz Zeit für mich?",
             "choices": [
               "Sie",
               "sie"
@@ -318,7 +318,7 @@
       },
       {
         "title": "Das nimmst du mit",
-        "body": "**Groß**: Nomen mit Begleiter\n**Groß**: Verb oder Adjektiv mit Artikel, auch nach beim, zum, etwas, nichts\n**Groß**: Sie und Ihnen in der Anrede\n\n**Klein**: Verben und Adjektive ohne Artikel\n**Klein**: am schnellsten, montags, heute, morgen",
+        "body": "**Groß**: Nomen mit Begleiter\n**Groß**: Verb oder Adjektiv mit Artikel und ohne Nomen danach, auch nach beim, zum, etwas, nichts\n**Groß**: Sie und Ihnen in der Anrede\n\n**Klein**: alle anderen Verben und Adjektive\n**Klein**: am schnellsten, montags, heute, morgen",
         "tasks": [
           {
             "text": "Ich habe etwas ___ gesehen.",

@@ -73,7 +73,7 @@
         "chapter": "Umformen in vier Schritten",
         "title": "Schritt 1: die Zeichen entfernen",
         "body": "Tom sagt**:** **„**Ich habe Hunger.**“**\n\nTom sagt**,** …\n\nAus dem Doppelpunkt wird ein Komma.",
-        "say": "Du fängst mit dem Einfachsten an. Der Begleitsatz bleibt, wie er ist. Der Doppelpunkt wird zu einem Komma, und die Anführungszeichen streichst du. Jetzt hast du den Anfang deines neuen Satzes: Tom sagt, und dann geht es weiter."
+        "say": "Du fängst mit dem Einfachsten an. Der **Begleitsatz** ist der Teil, der sagt, wer spricht: Tom sagt. Er bleibt, wie er ist. Der Doppelpunkt wird zu einem Komma, und die Anführungszeichen streichst du. Jetzt hast du den Anfang deines neuen Satzes: Tom sagt, und dann geht es weiter."
       },
       {
         "title": "Schritt 2: die Person anpassen",
@@ -97,14 +97,14 @@
         "body": "ich bin: er **sei**\nich habe: er **habe**\nich komme: er **komme**",
         "tasks": [
           {
-            "text": "Tom sagt, er ___ Hunger.",
+            "text": "Tom sagt: „Ich nehme den Bus.“ Indirekt: Tom sagt, er ___ den Bus.",
             "choices": [
-              "habe",
-              "hat"
+              "nehme",
+              "nimmt"
             ],
-            "correct": "habe",
-            "why": "In der indirekten Rede steht das Verb im Konjunktiv I.",
-            "hint": "Welche der beiden Formen zeigt, dass du nur weitergibst, was Tom gesagt hat?"
+            "correct": "nehme",
+            "why": "In der indirekten Rede steht das Verb im Konjunktiv I: Infinitiv nehmen ohne n.",
+            "hint": "Nimm den Infinitiv und lass das n weg. Was bleibt übrig?"
           }
         ],
         "say": "Jetzt kommt das Verb. Du setzt es in den Konjunktiv I, den du aus der Lektion über den Modus kennst. Meistens nimmst du den Infinitiv und lässt das n weg. Nur sein ist anders und heißt sei. Damit zeigst du, dass du nur weitergibst."
@@ -177,7 +177,7 @@
         "chapter": "Fragen und Aufforderungen",
         "title": "Fragen ohne Fragewort bekommen ob",
         "body": "Er fragt: „Kommst du mit?“\n\nEr fragt, **ob** ich mitkomme.",
-        "say": "Auch Fragen kann man berichten. Wenn die Frage mit dem Verb beginnt und man mit ja oder nein antworten kann, brauchst du das Wort ob. Das Fragezeichen fällt weg, denn der neue Satz ist keine Frage mehr. Er ist ein Bericht über eine Frage."
+        "say": "Auch Fragen kann man berichten. Wenn die Frage mit dem Verb beginnt und man mit ja oder nein antworten kann, brauchst du das Wort ob. Das Fragezeichen fällt weg, denn der neue Satz ist keine Frage mehr. Er hat mich gefragt. Mit du bin also ich gemeint, deshalb wird aus du das Wort ich. Das Verb rückt wie bei dass ans Ende."
       },
       {
         "title": "Fragen mit Fragewort behalten es",
@@ -207,7 +207,7 @@
               "sind"
             ],
             "correct": "sollten",
-            "why": "Eine Aufforderung gibt man mit einer Form von sollen wieder.",
+            "why": "Eine Aufforderung gibt man mit einer Form von sollen wieder. Bei wir sieht sollen aus wie die normale Form. Deshalb nimmt man den Konjunktiv II: sollten.",
             "hint": "Welches Verb drückt aus, dass jemand etwas tun soll?"
           }
         ],
@@ -318,7 +318,7 @@
           "Der Trainer sagt, ob wir schneller laufen."
         ],
         "correct": "Der Trainer sagt, wir sollten schneller laufen.",
-        "explain": "Eine Aufforderung gibt man mit einer Form von sollen wieder."
+        "explain": "Eine Aufforderung gibt man mit einer Form von sollen wieder. Bei wir sieht sollen aus wie die normale Form. Deshalb nimmt man den Konjunktiv II: sollten."
       },
       {
         "prompt": "Was passiert mit dem Doppelpunkt der direkten Rede?",

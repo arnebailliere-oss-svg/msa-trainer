@@ -110,13 +110,13 @@
         "body": "*If I **had** a dog, I would go for walks.*\n\nDas Simple Past zeigt hier nicht gestern.\n\nEs zeigt: Das ist **nur vorgestellt**.",
         "tasks": [
           {
-            "text": "If I had a dog, I would go for walks. Hat der Sprecher einen Hund? ___",
+            "text": "If I lived in London, I would speak English every day. Wohnt der Sprecher in London? ___",
             "choices": [
               "Nein",
               "Ja"
             ],
             "correct": "Nein",
-            "why": "Der Satz stellt sich nur vor, wie es mit einem Hund wäre.",
+            "why": "Lived ist hier nur vorgestellt. Der Sprecher malt sich aus, wie es in London wäre.",
             "hint": "Ist das ein Bericht über die Wirklichkeit, oder malt sich jemand etwas aus?"
           }
         ],
@@ -187,14 +187,14 @@
         "body": "**Typ 1**: Es kann gut passieren.\n*If it rains, I will stay in.*\n\n**Typ 2**: Es ist nur vorgestellt.\n*If I were a bird, I would fly.*",
         "tasks": [
           {
-            "text": "Wenn ich ein Vogel wäre, würde ich fliegen. Das ist ___.",
+            "text": "If I have time tomorrow, I will call you. Das ist ___.",
             "choices": [
-              "nur vorgestellt",
-              "gut möglich"
+              "gut möglich",
+              "nur vorgestellt"
             ],
-            "correct": "nur vorgestellt",
-            "why": "Ein Mensch kann kein Vogel werden. Der Satz malt sich etwas aus.",
-            "hint": "Kann das wirklich passieren? Achte auf das Wort wäre."
+            "correct": "gut möglich",
+            "why": "Morgen Zeit zu haben kann wirklich passieren. Das ist Typ 1.",
+            "hint": "Kann der Sprecher morgen wirklich Zeit haben? Schau auch auf have und will."
           }
         ],
         "say": "Mit dieser einen Frage unterscheidest du die beiden Typen. Regen kann morgen wirklich kommen. Ein Vogel wirst du dagegen nie sein. Im Deutschen hörst du den Unterschied auch: wenn es regnet gegen wenn ich wäre."
@@ -396,7 +396,7 @@
           "would have passed",
           "will pass",
           "passes",
-          "would pass"
+          "would passed"
         ],
         "correct": "would have passed",
         "explain": "Had studied zeigt Typ 3. Dazu gehört im anderen Teil would have und die 3. Form."

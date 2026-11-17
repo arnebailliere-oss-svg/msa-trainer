@@ -11,7 +11,7 @@
       {
         "chapter": "Wörter haben Aufgaben",
         "title": "Ein Satz ist wie eine Mannschaft",
-        "body": "*Der kleine Hund bellt laut.*\n\nFünf Wörter, und jedes hat eine andere **Aufgabe**.\n\nDie Aufgabe eines Wortes nennt man seine **Wortart**.",
+        "body": "*Der kleine Hund bellt laut.*\n\nFünf Wörter, und jedes hat eine **Aufgabe**.\n\nDie Aufgabe eines Wortes nennt man seine **Wortart**.",
         "say": "Stell dir eine Fußballmannschaft vor. Da gibt es einen Torwart, Verteidiger und Stürmer. Jeder hat seine Aufgabe, und an der Aufgabe erkennst du ihn. Bei den Wörtern in einem Satz ist es genauso. Jedes Wort hat eine Aufgabe, und danach bekommt es seinen Namen."
       },
       {
@@ -19,15 +19,15 @@
         "body": "**Nomen** geben etwas einen Namen.\n\n**Verben** sagen, was passiert.\n\n**Adjektive** sagen, wie etwas ist.",
         "tasks": [
           {
-            "text": "Der kleine Hund bellt. Welches Wort sagt, was passiert? ___",
+            "text": "Das müde Kind gähnt. Welches Wort sagt, was passiert? ___",
             "choices": [
-              "bellt",
-              "Hund",
-              "kleine"
+              "gähnt",
+              "Kind",
+              "müde"
             ],
-            "correct": "bellt",
-            "why": "Das Bellen ist das, was in diesem Satz geschieht.",
-            "hint": "Frag dich: Was tut der Hund? Das Wort, das darauf antwortet, suchst du."
+            "correct": "gähnt",
+            "why": "Das Gähnen ist das, was in diesem Satz geschieht.",
+            "hint": "Frag dich: Was tut das Kind? Das Wort, das darauf antwortet, suchst du."
           }
         ],
         "say": "Mit diesen drei fangen wir an, weil sie die wichtigsten sind. Im Satz von eben ist Hund das Nomen, denn es benennt ein Tier. Bellt ist das Verb, denn es sagt, was passiert. Und klein ist ein Adjektiv, denn es sagt, wie der Hund ist."
@@ -144,14 +144,14 @@
         "body": "Tipp in jedem Satz auf das Nomen.",
         "tasks": [
           {
-            "text": "Morgen schreiben wir einen Test. ___",
+            "text": "Heute schreiben wir einen Test. ___",
             "choices": [
               "Test",
-              "Morgen",
+              "Heute",
               "schreiben"
             ],
             "correct": "Test",
-            "why": "Die Probe passt: der Test. Morgen sagt hier nur, wann es passiert.",
+            "why": "Die Probe passt: der Test. Heute sagt nur, wann es passiert.",
             "hint": "Vor welches der Wörter passt hier der, die oder das?"
           },
           {
@@ -197,8 +197,8 @@
               "Himmel"
             ],
             "correct": "ist",
-            "why": "Das Wort gehört zu sein. Es verändert sich, wenn du den Satz in die Vergangenheit setzt.",
-            "hint": "Setz den Satz in die Vergangenheit. Welches Wort verändert sich dabei?"
+            "why": "Das Wort ist eine Form von sein. Sein ist ein Verb, auch wenn hier niemand etwas tut.",
+            "hint": "Welches der drei Wörter gehört zu sein oder haben? Schau dir die Formen an, die Ferdinand aufgezählt hat."
           }
         ],
         "say": "Diese beiden werden oft übersehen, weil niemand dabei etwas tut. Sein und haben sind aber Verben, sogar die häufigsten der deutschen Sprache. Sie haben viele Formen: bin, bist, ist, sind, war, hat, hatte. Wenn du nach dem Verb suchst, vergiss sie nicht."
@@ -312,14 +312,14 @@
         "body": "Das war ein **s**chöner Tag.\nSchöner ist ein Adjektiv.\n\nDie **S**chönheit der Berge.\nSchönheit ist ein Nomen.",
         "tasks": [
           {
-            "text": "Das war ein ___ Tag.",
+            "text": "Wir hatten einen ___ Abend.",
             "choices": [
-              "schöner",
-              "Schöner"
+              "lustigen",
+              "Lustigen"
             ],
-            "correct": "schöner",
-            "why": "Das Wort beschreibt den Tag. Es ist ein Adjektiv und wird kleingeschrieben.",
-            "hint": "Sagt das Wort, wie der Tag war? Und passt ein Artikel davor?"
+            "correct": "lustigen",
+            "why": "Das Wort beschreibt den Abend. Es ist ein Adjektiv und wird kleingeschrieben.",
+            "hint": "Sagt das Wort, wie der Abend war? Kannst du es steigern?"
           }
         ],
         "say": "Adjektive beginnen mit einem kleinen Buchstaben. Pass aber auf Wörter auf, die sich ähnlich sehen. Schön ist ein Adjektiv. Die Schönheit ist ein Nomen, denn der Artikel passt davor. Mach im Zweifel immer beide Proben."
@@ -557,14 +557,14 @@
         "explain": "Der Infinitiv ist die Form, unter der du ein Verb im Wörterbuch findest, zum Beispiel laufen."
       },
       {
-        "prompt": "Welches Wort musst du großschreiben?",
+        "prompt": "Hier ist alles kleingeschrieben. Welches Wort musst du großschreiben?",
         "choices": [
-          "die Hoffnung",
+          "hoffnung",
           "hoffen",
           "hoffnungsvoll",
           "hoffentlich"
         ],
-        "correct": "die Hoffnung",
+        "correct": "hoffnung",
         "explain": "Hoffnung ist ein Nomen, denn der Artikel passt davor. Nomen schreibt man im Deutschen groß."
       },
       {

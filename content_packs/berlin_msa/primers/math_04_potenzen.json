@@ -297,12 +297,12 @@
         "say": "Die meisten Wurzeln sind krumme Zahlen. Kein Problem, dafür gibt es die Wurzel-Taste.",
         "tasks": [
           {
-            "text": "Du hast $\\sqrt{10}$ gerundet. Du schreibst ___.",
+            "text": "Der Taschenrechner zeigt für $\\sqrt{20}$ die Zahl 4,4721... Du rundest und schreibst: $\\sqrt{20}$ ___",
             "choices": [
-              "$\\approx 3{,}16$",
-              "$= 3{,}16$"
+              "$\\approx 4{,}47$",
+              "$= 4{,}47$"
             ],
-            "correct": "$\\approx 3{,}16$",
+            "correct": "$\\approx 4{,}47$",
             "why": "Das Ergebnis ist gerundet, also nur ungefähr richtig.",
             "hint": "Ist ein gerundetes Ergebnis genau oder nur ungefähr richtig?"
           }

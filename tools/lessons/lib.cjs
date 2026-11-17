@@ -43,6 +43,7 @@ function writeArray(file, item) {
 function primer(file, meta, chapters, vocab, quiz) {
   const steps = chapters.flat();
   const item = { id: meta.id, subject: meta.subject, title: meta.title, teaser: meta.teaser, hook: meta.hook, outro: meta.outro, standard: 2, ...(meta.requires ? { requires: meta.requires } : {}), steps, vocab, quiz, ...(meta.source ? { source: meta.source } : {}) };
+  require("./read_fixes.cjs").apply(item); // corrections from the board-by-board read stay on top
   writeArray(file, item);
   console.log(`${meta.id}: ${steps.length} boards, ${chapters.length} chapters, ${steps.filter((s) => s.tasks).length} with tasks, ${quiz.length} quiz`);
 }

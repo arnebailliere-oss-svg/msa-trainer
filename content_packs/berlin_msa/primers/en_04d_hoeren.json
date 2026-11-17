@@ -111,7 +111,7 @@
             "hint": "Bedeutet to nach oder vor? Liegt die Zeit dann vor oder nach sechs Uhr?"
           }
         ],
-        "say": "A quarter ist ein Viertel, also eine Viertelstunde. Quarter past nine ist eine Viertelstunde nach neun. Quarter to nine ist eine Viertelstunde vor neun, also noch in der achten Stunde. Achte deshalb genau auf das kleine Wort in der Mitte."
+        "say": "A quarter ist ein Viertel, also eine Viertelstunde. Quarter past nine ist eine Viertelstunde nach neun. Quarter to nine ist eine Viertelstunde vor neun. Die Uhr zeigt also noch 8 vorn: 8:45. Achte deshalb genau auf das kleine Wort in der Mitte."
       },
       {
         "title": "Minuten mit past und to",
@@ -258,8 +258,8 @@
       {
         "chapter": "Daten und Jahre",
         "title": "Der Tag im Monat",
-        "body": "**1st** = first\n**2nd** = second\n**3rd** = third\n\nAb der 4 hängt man **-th** an: fourth, fifth, sixth.\n\n*the fifth of May* = 5. Mai",
-        "say": "Für ein Datum braucht man die Zahlen, mit denen man eine Reihenfolge angibt: der erste, der zweite, der dritte. Die ersten drei haben eigene Wörter. Alle anderen bekommen ein th ans Ende, das wie ein weiches s mit der Zunge zwischen den Zähnen klingt."
+        "body": "**1st** = first\n**2nd** = second\n**3rd** = third\n\nAb der 4 hängt man **-th** an: fourth, fifth, sixth.\n\nAber: 21st = twenty-first, 22nd = twenty-second, 23rd = twenty-third, 31st = thirty-first.\n\n*the fifth of May* = 5. Mai",
+        "say": "Für ein Datum braucht man die Zahlen, mit denen man eine Reihenfolge angibt: der erste, der zweite, der dritte. Die ersten drei haben eigene Wörter. Fast alle anderen bekommen ein th ans Ende, das wie ein weiches s mit der Zunge zwischen den Zähnen klingt. Nur bei 21, 22, 23 und 31 kommen first, second und third noch einmal."
       },
       {
         "title": "Zwei Arten, ein Datum zu sagen",
@@ -399,7 +399,7 @@
           "6:15"
         ],
         "correct": "6:45",
-        "explain": "To heißt vor. Eine Viertelstunde vor sieben liegt noch in der sechsten Stunde."
+        "explain": "To heißt vor. Eine Viertelstunde vor sieben ist 6:45. Die Uhr zeigt also noch 6 vorn."
       },
       {
         "prompt": "6 pm ist auf Deutsch",

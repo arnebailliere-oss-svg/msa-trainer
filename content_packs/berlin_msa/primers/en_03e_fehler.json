@@ -136,7 +136,7 @@
       {
         "title": "Die drei auf einen Blick",
         "body": "**on** + Tag: *on Monday*\n**in** + Monat, Jahr, Tageszeit: *in July*\n**at** + Uhrzeit: *at six o'clock*",
-        "say": "Hier siehst du die drei kleinen Wörter nebeneinander. Je genauer der Zeitpunkt, desto kleiner das Wort. In ist für die großen Zeiträume. On ist für einen Tag. At ist für den genauen Moment auf der Uhr."
+        "say": "Hier siehst du die drei kleinen Wörter nebeneinander. Sie passen zu verschieden großen Zeiträumen. In ist für die großen Zeiträume. On ist für einen Tag. At ist für den genauen Moment auf der Uhr."
       },
       {
         "title": "to oder at?",
@@ -242,7 +242,7 @@
             "hint": "Steht nach der Lücke eine Person? Welches der beiden Wörter verlangt das?"
           }
         ],
-        "say": "Auch für sagen gibt es zwei Wörter. Nach tell steht immer die Person, der man etwas sagt: tell me, tell him, tell my mum. Nach say steht direkt das, was gesagt wird. She said me ist also falsch."
+        "say": "Auch für sagen gibt es zwei Wörter. Nach tell steht fast immer die Person, der man etwas sagt: tell me, tell him, tell my mum. Nach say steht direkt das, was gesagt wird. She said me ist also falsch."
       },
       {
         "title": "bored oder boring?",

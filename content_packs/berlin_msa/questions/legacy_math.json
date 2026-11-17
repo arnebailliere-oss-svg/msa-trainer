@@ -26,12 +26,12 @@
       },
       {
         "kind": "terms",
-        "title": "Die begriffe",
+        "title": "Die Begriffe",
         "body": "• Prozent (%) = 'von Hundert' (20% = 20 von 100)\n• Grundwert (G) = Die ganze Menge (hier: 150)\n• Prozentwert (W) = Das Ergebnis, das wir suchen"
       },
       {
         "kind": "formula",
-        "title": "Die formel",
+        "title": "Die Formel",
         "body": "W = p × G\n↓   ↓   ↓\nErgebnis = Prozentsatz × Grundwert"
       },
       {
@@ -72,12 +72,12 @@
       },
       {
         "kind": "terms",
-        "title": "Die begriffe",
+        "title": "Die Begriffe",
         "body": "• p = Prozentsatz (15%)\n• G = Grundwert - die Ausgangszahl (80)\n• W = Prozentwert - das suchen wir!"
       },
       {
         "kind": "formula",
-        "title": "Die formel",
+        "title": "Die Formel",
         "body": "W = p × G\n↓   ↓   ↓\n?  = 0,15 × 80"
       },
       {
@@ -273,7 +273,7 @@
       },
       {
         "kind": "terms",
-        "title": "Die begriffe",
+        "title": "Die Begriffe",
         "body": "• Rabatt = Preisnachlass, Ersparnis\n• 15% Rabatt = du zahlst 15% WENIGER"
       },
       {
@@ -283,7 +283,7 @@
       },
       {
         "kind": "text",
-        "title": "Schritt für schritt",
+        "title": "Schritt für Schritt",
         "body": "10% von 400€ = 40€\n5% von 400€ = 20€ (die Hälfte von 10%)\n15% = 10% + 5% = 40€ + 20€ = 60€"
       },
       {
@@ -330,12 +330,12 @@
       },
       {
         "kind": "terms",
-        "title": "Die begriffe",
+        "title": "Die Begriffe",
         "body": "• W = Prozentwert (30) - der Teil\n• G = Grundwert (120) - das Ganze\n• p = Prozentsatz - DAS SUCHEN WIR"
       },
       {
         "kind": "formula",
-        "title": "Die formel",
+        "title": "Die Formel",
         "body": "p = W ÷ G × 100\n↓   ↓   ↓\n?  = 30 ÷ 120 × 100"
       },
       {
@@ -381,12 +381,12 @@
       },
       {
         "kind": "terms",
-        "title": "Die begriffe",
+        "title": "Die Begriffe",
         "body": "• W = Prozentwert (45) - der Teil, den wir kennen\n• p = Prozentsatz (20%)\n• G = Grundwert - DAS SUCHEN WIR"
       },
       {
         "kind": "formula",
-        "title": "Die formel",
+        "title": "Die Formel",
         "body": "G = W ÷ p × 100\n↓   ↓   ↓\n?  = 45 ÷ 20 × 100"
       },
       {
@@ -443,12 +443,12 @@
       },
       {
         "kind": "terms",
-        "title": "Die begriffe",
+        "title": "Die Begriffe",
         "body": "• Alter Wert = Startwert (50€)\n• Neuer Wert = Endwert (60€)\n• Änderung = Unterschied zwischen beiden"
       },
       {
         "kind": "formula",
-        "title": "Die formel",
+        "title": "Die Formel",
         "body": "Änderung in % = (Neu - Alt) ÷ Alt × 100\n                    ↓\n           IMMER durch den ALTEN Wert teilen!"
       },
       {
@@ -493,12 +493,12 @@
       },
       {
         "kind": "terms",
-        "title": "Die begriffe",
+        "title": "Die Begriffe",
         "body": "• Alter Preis = 80€ (VORHER)\n• Neuer Preis = 60€ (NACHHER)\n• Reduzierung = um wie viel es weniger wurde"
       },
       {
         "kind": "formula",
-        "title": "Die formel",
+        "title": "Die Formel",
         "body": "Abnahme in % = (Alt - Neu) ÷ Alt × 100\n                    ↓\n         IMMER durch den ALTEN Wert teilen!"
       },
       {
@@ -550,7 +550,7 @@
       },
       {
         "kind": "terms",
-        "title": "Die begriffe",
+        "title": "Die Begriffe",
         "body": "• Alter Preis = 40€\n• Erhöhung = 10%\n• Neuer Preis = das suchen wir"
       },
       {
@@ -560,7 +560,7 @@
       },
       {
         "kind": "remember",
-        "title": "Schnellere methode",
+        "title": "Schnellere Methode",
         "body": "100% + 10% = 110%\n110% von 40€ = 1,1 × 40€ = 44€"
       },
       {
@@ -602,7 +602,7 @@
       },
       {
         "kind": "terms",
-        "title": "Die begriffe",
+        "title": "Die Begriffe",
         "body": "• Prozent = 'von Hundert'\n• 50% = 50 von 100 = 50/100"
       },
       {
@@ -659,7 +659,7 @@
       },
       {
         "kind": "terms",
-        "title": "Die begriffe",
+        "title": "Die Begriffe",
         "body": "• Zähler = oben (12)\n• Nenner = unten (18)\n• Kürzen = kleiner machen, gleicher Wert"
       },
       {
@@ -716,7 +716,7 @@
       },
       {
         "kind": "formula",
-        "title": "Die regel",
+        "title": "Die Regel",
         "body": "Gleicher Nenner? → Zähler addieren, Nenner bleibt!"
       },
       {
@@ -731,7 +731,7 @@
       },
       {
         "kind": "mistake",
-        "title": "Typischer fehler",
+        "title": "Typischer Fehler",
         "body": "Nenner NICHT addieren!\nFALSCH: 1/4 + 2/4 = 3/8\nRICHTIG: 1/4 + 2/4 = 3/4"
       },
       {
@@ -768,7 +768,7 @@
       },
       {
         "kind": "formula",
-        "title": "Die regel",
+        "title": "Die Regel",
         "body": "Verschiedener Nenner? → Erst gleichnamig machen!"
       },
       {
@@ -820,7 +820,7 @@
       },
       {
         "kind": "formula",
-        "title": "Die regel",
+        "title": "Die Regel",
         "body": "Zähler × Zähler\nNenner × Nenner"
       },
       {
@@ -886,7 +886,7 @@
       },
       {
         "kind": "mistake",
-        "title": "Typischer fehler",
+        "title": "Typischer Fehler",
         "body": "Nur 3×2=6 rechnen und x vergessen!\nFALSCH: 6 (nur die Äpfel!)\nRICHTIG: 3x + 6 (Kisten UND Äpfel)"
       },
       {
@@ -938,7 +938,7 @@
       },
       {
         "kind": "mistake",
-        "title": "Typischer fehler",
+        "title": "Typischer Fehler",
         "body": "Das Minus vergessen!\nFALSCH: 5a - 3 (die 3 nicht multipliziert)\nRICHTIG: 5a - 15"
       },
       {
@@ -1031,12 +1031,12 @@
       },
       {
         "kind": "formula",
-        "title": "Die regel",
+        "title": "Die Regel",
         "body": "Nur GLEICHE Buchstaben dürfen addiert werden!\n• 4x + 3x = 7x ✓\n• 4x + 3y = 4x + 3y (bleibt so!)"
       },
       {
         "kind": "mistake",
-        "title": "Typischer fehler",
+        "title": "Typischer Fehler",
         "body": "FALSCH: 4x + 3x = 12x (multipliziert statt addiert)\nFALSCH: 4x + 3x = 7x² (x² ist was anderes!)\nRICHTIG: 4x + 3x = 7x"
       },
       {
@@ -1118,12 +1118,12 @@
       },
       {
         "kind": "terms",
-        "title": "Die begriffe",
+        "title": "Die Begriffe",
         "body": "• Gleichung = links und rechts vom = steht der gleiche Wert\n• x = die Unbekannte (das suchen wir!)\n• Lösen = x alleine auf eine Seite bringen"
       },
       {
         "kind": "formula",
-        "title": "Die regel",
+        "title": "Die Regel",
         "body": "Was du auf einer Seite machst, musst du auch auf der anderen machen!"
       },
       {
@@ -1225,7 +1225,7 @@
       },
       {
         "kind": "formula",
-        "title": "Die regel",
+        "title": "Die Regel",
         "body": "4x bedeutet: 4 × x\nUm x alleine zu bekommen: ÷4"
       },
       {
@@ -1388,12 +1388,12 @@
       },
       {
         "kind": "terms",
-        "title": "Die begriffe",
+        "title": "Die Begriffe",
         "body": "• y = der y-Wert (hoch/runter)\n• x = der x-Wert (links/rechts)\n• m = Steigung (wie steil ist die Gerade?)\n• b = y-Achsenabschnitt (wo kreuzt die Gerade die y-Achse?)"
       },
       {
         "kind": "formula",
-        "title": "Die formel",
+        "title": "Die Formel",
         "body": "y = m·x + b\n    ↓     ↓\n    2    -3"
       },
       {
@@ -1454,12 +1454,12 @@
       },
       {
         "kind": "terms",
-        "title": "Die begriffe",
+        "title": "Die Begriffe",
         "body": "• y-Achse = die senkrechte Linie (bei x = 0)\n• y-Achsenabschnitt = der Punkt, wo die Gerade diese Linie kreuzt"
       },
       {
         "kind": "formula",
-        "title": "In der formel",
+        "title": "In der Formel",
         "body": "y = mx + b\n        ↓\n        b = y-Achsenabschnitt\n\nHier: y = 3x + 5\n           ↓\n           5"
       },
       {
@@ -1512,7 +1512,7 @@
       },
       {
         "kind": "terms",
-        "title": "Die begriffe",
+        "title": "Die Begriffe",
         "body": "• x = 3 ist der EINGABEWERT\n• y = ? ist der AUSGABEWERT (den suchen wir)"
       },
       {
@@ -1527,7 +1527,7 @@
       },
       {
         "kind": "text",
-        "title": "Als punkt",
+        "title": "Als Punkt",
         "body": "Der Punkt (3|7) liegt auf der Geraden."
       },
       {
@@ -1575,12 +1575,12 @@
       },
       {
         "kind": "terms",
-        "title": "Die begriffe",
+        "title": "Die Begriffe",
         "body": "• Fläche (A) = der Platz innerhalb der Form\n• a = eine Seite (Länge)\n• b = andere Seite (Breite)\n• cm² = Quadratzentimeter (Flächeneinheit)"
       },
       {
         "kind": "formula",
-        "title": "Die formel",
+        "title": "Die Formel",
         "body": "A = a × b\n↓   ↓   ↓\nFläche = Länge × Breite"
       },
       {
@@ -1641,12 +1641,12 @@
       },
       {
         "kind": "terms",
-        "title": "Die begriffe",
+        "title": "Die Begriffe",
         "body": "• Umfang (U) = einmal komplett außen rum\n• a und b = die zwei verschiedenen Seitenlängen"
       },
       {
         "kind": "formula",
-        "title": "Die formel",
+        "title": "Die Formel",
         "body": "U = 2a + 2b = 2×(a+b)"
       },
       {
@@ -1706,12 +1706,12 @@
       },
       {
         "kind": "terms",
-        "title": "Die begriffe",
+        "title": "Die Begriffe",
         "body": "• g = Grundseite (die 'untere' Seite)\n• h = Höhe (senkrecht von g zur Spitze)\n• A = Fläche"
       },
       {
         "kind": "formula",
-        "title": "Die formel",
+        "title": "Die Formel",
         "body": "A = (g × h) ÷ 2\n     oder\nA = g × h / 2"
       },
       {
@@ -1777,12 +1777,12 @@
       },
       {
         "kind": "terms",
-        "title": "Die begriffe",
+        "title": "Die Begriffe",
         "body": "• r = Radius (Mitte → Rand)\n• d = Durchmesser = 2r (quer durch)\n• π (Pi) ≈ 3,14"
       },
       {
         "kind": "formula",
-        "title": "Die formel",
+        "title": "Die Formel",
         "body": "U = 2 × π × r\noder: U = π × d"
       },
       {
@@ -1841,12 +1841,12 @@
       },
       {
         "kind": "terms",
-        "title": "Die begriffe",
+        "title": "Die Begriffe",
         "body": "• r = Radius (Mitte → Rand) = 5 cm\n• π (Pi) ≈ 3,14\n• r² = r × r (Radius zum Quadrat)"
       },
       {
         "kind": "formula",
-        "title": "Die formel",
+        "title": "Die Formel",
         "body": "A = π × r²"
       },
       {
@@ -1910,12 +1910,12 @@
       },
       {
         "kind": "terms",
-        "title": "Die begriffe",
+        "title": "Die Begriffe",
         "body": "• Rechtwinkliges Dreieck = hat einen 90° Winkel\n• Katheten (a, b) = die zwei kurzen Seiten AM rechten Winkel\n• Hypotenuse (c) = die LÄNGSTE Seite, GEGENÜBER vom rechten Winkel"
       },
       {
         "kind": "formula",
-        "title": "Die formel",
+        "title": "Die Formel",
         "body": "a² + b² = c²\n↓    ↓    ↓\n6²  + 8² = c²"
       },
       {
@@ -1970,7 +1970,7 @@
       },
       {
         "kind": "terms",
-        "title": "Die begriffe",
+        "title": "Die Begriffe",
         "body": "• a = Kathete (5 cm) - bekannt\n• c = Hypotenuse (13 cm) - bekannt\n• b = Kathete - DAS SUCHEN WIR"
       },
       {
@@ -2035,12 +2035,12 @@
       },
       {
         "kind": "terms",
-        "title": "Die begriffe",
+        "title": "Die Begriffe",
         "body": "• Quader = 'Schuhkarton-Form'\n• a, b, c = die drei Kantenlängen\n• Volumen = Inhalt (cm³)"
       },
       {
         "kind": "formula",
-        "title": "Die formel",
+        "title": "Die Formel",
         "body": "V = a × b × c\n↓   ↓   ↓   ↓\nVolumen = Länge × Breite × Höhe"
       },
       {
@@ -2108,12 +2108,12 @@
       },
       {
         "kind": "terms",
-        "title": "Die begriffe",
+        "title": "Die Begriffe",
         "body": "• Zylinder = Dose, Rohr\n• r = Radius der Grundfläche\n• h = Höhe"
       },
       {
         "kind": "formula",
-        "title": "Die formel",
+        "title": "Die Formel",
         "body": "V = π × r² × h\n    ↓\n    Grundfläche × Höhe"
       },
       {
@@ -2175,12 +2175,12 @@
       },
       {
         "kind": "terms",
-        "title": "Die begriffe",
+        "title": "Die Begriffe",
         "body": "• Mittelwert = Durchschnitt = alle Werte fair aufgeteilt\n• Summe = alle Zahlen zusammengezählt\n• Anzahl = wie viele Zahlen es sind"
       },
       {
         "kind": "formula",
-        "title": "Die formel",
+        "title": "Die Formel",
         "body": "Mittelwert = Summe aller Werte ÷ Anzahl"
       },
       {
@@ -2242,7 +2242,7 @@
       },
       {
         "kind": "remember",
-        "title": "Bei gerader anzahl",
+        "title": "Bei gerader Anzahl",
         "body": "Wenn zwei Werte in der Mitte sind,\nnimm den Durchschnitt der beiden."
       },
       {
@@ -2284,12 +2284,12 @@
       },
       {
         "kind": "terms",
-        "title": "Die begriffe",
+        "title": "Die Begriffe",
         "body": "• Günstig = eine 6 (nur 1 Möglichkeit)\n• Möglich = 1, 2, 3, 4, 5, 6 (6 Seiten)"
       },
       {
         "kind": "formula",
-        "title": "Die formel",
+        "title": "Die Formel",
         "body": "P = günstige ÷ mögliche"
       },
       {
@@ -2304,7 +2304,7 @@
       },
       {
         "kind": "mistake",
-        "title": "Merke für würfel",
+        "title": "Merke für Würfel",
         "body": "• Eine bestimmte Zahl: 1/6\n• Gerade Zahl (2,4,6): 3/6 = 1/2\n• Zahl > 4: 2/6 = 1/3"
       },
       {
@@ -2346,7 +2346,7 @@
       },
       {
         "kind": "formula",
-        "title": "Die methode",
+        "title": "Die Methode",
         "body": "Zähler ÷ Nenner = Dezimalzahl"
       },
       {
@@ -2361,7 +2361,7 @@
       },
       {
         "kind": "mistake",
-        "title": "Wichtige umrechnungen",
+        "title": "Wichtige Umrechnungen",
         "body": "• 1/2 = 0,5\n• 1/4 = 0,25\n• 3/4 = 0,75\n• 1/5 = 0,2\n• 1/10 = 0,1"
       },
       {
@@ -2398,7 +2398,7 @@
       },
       {
         "kind": "formula",
-        "title": "Die methode",
+        "title": "Die Methode",
         "body": "1. Dezimalzahl als Bruch schreiben\n2. Kürzen"
       },
       {
@@ -2444,12 +2444,12 @@
       },
       {
         "kind": "terms",
-        "title": "Die begriffe",
+        "title": "Die Begriffe",
         "body": "• Kapital (K) = das Geld, das du anlegst (500€)\n• Zinssatz (p) = der Prozentsatz (2%)\n• Zinsen (Z) = das, was du dazubekommst"
       },
       {
         "kind": "formula",
-        "title": "Die formel",
+        "title": "Die Formel",
         "body": "Z = K × p\n↓   ↓   ↓\nZinsen = Kapital × Zinssatz"
       },
       {
@@ -2500,7 +2500,7 @@
       },
       {
         "kind": "terms",
-        "title": "Die begriffe",
+        "title": "Die Begriffe",
         "body": "• Startkapital = 1000€\n• Zinssatz = 3%\n• Endkapital = Startkapital + Zinsen"
       },
       {
@@ -2550,12 +2550,12 @@
       },
       {
         "kind": "terms",
-        "title": "Die begriffe",
+        "title": "Die Begriffe",
         "body": "• Grundwert G = 300€\n• Prozentsatz p = 20%\n• Prozentwert W = gesucht"
       },
       {
         "kind": "formula",
-        "title": "Die formel",
+        "title": "Die Formel",
         "body": "W = G × p/100"
       },
       {
@@ -2608,12 +2608,12 @@
       },
       {
         "kind": "terms",
-        "title": "Die begriffe",
+        "title": "Die Begriffe",
         "body": "• Kapital K = 400€ (das Geld auf dem Konto)\n• Zinssatz p = 2%\n• Zinsen Z = gesucht (was Max bekommt)"
       },
       {
         "kind": "formula",
-        "title": "Die formel",
+        "title": "Die Formel",
         "body": "Z = K × p/100"
       },
       {
@@ -2666,12 +2666,12 @@
       },
       {
         "kind": "terms",
-        "title": "Die begriffe",
+        "title": "Die Begriffe",
         "body": "• Kapital K = 10.000€\n• Zinsen Z = 230€\n• Zinssatz p = gesucht"
       },
       {
         "kind": "formula",
-        "title": "Die formel",
+        "title": "Die Formel",
         "body": "p = (Z/K) × 100"
       },
       {
@@ -2724,12 +2724,12 @@
       },
       {
         "kind": "terms",
-        "title": "Die begriffe",
+        "title": "Die Begriffe",
         "body": "• Grundwert G = 25 Schüler (alle)\n• Prozentwert W = 2 Schüler (fehlen)\n• Prozentsatz p = gesucht"
       },
       {
         "kind": "formula",
-        "title": "Die formel",
+        "title": "Die Formel",
         "body": "p = (W/G) × 100"
       },
       {
@@ -2782,12 +2782,12 @@
       },
       {
         "kind": "terms",
-        "title": "Die begriffe",
+        "title": "Die Begriffe",
         "body": "• Prozentwert W = 15.000€ (das, was gespendet wurde)\n• Prozentsatz p = 25%\n• Grundwert G = gesucht (der ganze Gewinn)"
       },
       {
         "kind": "formula",
-        "title": "Die formel",
+        "title": "Die Formel",
         "body": "G = W × 100/p"
       },
       {
@@ -2846,12 +2846,12 @@
       },
       {
         "kind": "terms",
-        "title": "Die begriffe",
+        "title": "Die Begriffe",
         "body": "• Prozentwert W = 90€ (der bekannte Teil)\n• Prozentsatz p = 75%\n• Grundwert G = 100% = gesucht"
       },
       {
         "kind": "formula",
-        "title": "Die formel",
+        "title": "Die Formel",
         "body": "G = W × 100/p"
       },
       {
@@ -2911,7 +2911,7 @@
       },
       {
         "kind": "terms",
-        "title": "Die begriffe",
+        "title": "Die Begriffe",
         "body": "• Relative Häufigkeit = Anzahl E ÷ Gesamtanzahl\n• Wort: E-R-D-B-E-E-R-E"
       },
       {
@@ -2970,7 +2970,7 @@
       },
       {
         "kind": "formula",
-        "title": "Die methode",
+        "title": "Die Methode",
         "body": "Bruch ÷ Nenner × 100 = Prozent"
       },
       {
@@ -2980,7 +2980,7 @@
       },
       {
         "kind": "remember",
-        "title": "Wichtige brüche merken",
+        "title": "Wichtige Brüche merken",
         "body": "• 1/2 = 50%\n• 1/4 = 25%\n• 1/5 = 20%\n• 1/10 = 10%\n• 1/3 ≈ 33,3%"
       },
       {
@@ -3030,12 +3030,12 @@
       },
       {
         "kind": "terms",
-        "title": "Die begriffe",
+        "title": "Die Begriffe",
         "body": "• Prozent = 'von Hundert'\n• 8% = 8 von 100"
       },
       {
         "kind": "steps",
-        "title": "Analyse der aussagen",
+        "title": "Analyse der Aussagen",
         "body": ""
       },
       {
@@ -3100,12 +3100,12 @@
       },
       {
         "kind": "terms",
-        "title": "Die begriffe",
+        "title": "Die Begriffe",
         "body": "• Senf-Pfannkuchen = 6 (günstig)\n• Alle Pfannkuchen = 16 + 6 = 22 (möglich)\n• Prozentsatz = gesucht"
       },
       {
         "kind": "formula",
-        "title": "Die formel",
+        "title": "Die Formel",
         "body": "p = (Teil/Ganzes) × 100"
       },
       {
@@ -3159,12 +3159,12 @@
       },
       {
         "kind": "terms",
-        "title": "Die begriffe",
+        "title": "Die Begriffe",
         "body": "• Gesamtplätze = 74.220 (Grundwert G)\n• Belegte Plätze = 45.482 (Prozentwert W)\n• Auslastung = Prozentsatz p"
       },
       {
         "kind": "formula",
-        "title": "Die formel",
+        "title": "Die Formel",
         "body": "p = (W/G) × 100"
       },
       {
@@ -3218,12 +3218,12 @@
     "explanation": [
       {
         "kind": "text",
-        "title": "Begriffe im rechtwinkligen dreieck",
+        "title": "Begriffe im rechtwinkligen Dreieck",
         "body": "• Hypotenuse = Die LÄNGSTE Seite (liegt dem 90°-Winkel gegenüber)\n• Gegenkathete = Die Seite GEGENÜBER vom Winkel α\n• Ankathete = Die Seite AM Winkel α (aber nicht die Hypotenuse)"
       },
       {
         "kind": "formula",
-        "title": "Was ist sinus",
+        "title": "Was ist Sinus",
         "body": "Der Sinus beschreibt das VERHÄLTNIS zweier Seiten:\nsin(α) = Gegenkathete / Hypotenuse"
       },
       {
@@ -3278,12 +3278,12 @@
     "explanation": [
       {
         "kind": "text",
-        "title": "Begriffe im rechtwinkligen dreieck",
+        "title": "Begriffe im rechtwinkligen Dreieck",
         "body": "• Hypotenuse = Die LÄNGSTE Seite (liegt dem 90°-Winkel gegenüber)\n• Ankathete = Die Seite AM Winkel α (aber nicht die Hypotenuse)\n• Gegenkathete = Die Seite GEGENÜBER vom Winkel α"
       },
       {
         "kind": "formula",
-        "title": "Was ist kosinus",
+        "title": "Was ist Kosinus",
         "body": "Der Kosinus beschreibt das VERHÄLTNIS zweier Seiten:\ncos(α) = Ankathete / Hypotenuse"
       },
       {
@@ -3338,12 +3338,12 @@
     "explanation": [
       {
         "kind": "text",
-        "title": "Begriffe im rechtwinkligen dreieck",
+        "title": "Begriffe im rechtwinkligen Dreieck",
         "body": "• Gegenkathete = Die Seite GEGENÜBER vom Winkel α\n• Ankathete = Die Seite AM Winkel α (aber nicht die Hypotenuse)\n• Hypotenuse = Die LÄNGSTE Seite (wird beim Tangens NICHT gebraucht!)"
       },
       {
         "kind": "formula",
-        "title": "Was ist tangens",
+        "title": "Was ist Tangens",
         "body": "Der Tangens beschreibt das VERHÄLTNIS der beiden Katheten:\ntan(α) = Gegenkathete / Ankathete"
       },
       {
@@ -3401,7 +3401,7 @@
       },
       {
         "kind": "formula",
-        "title": "Was ist sinus",
+        "title": "Was ist Sinus",
         "body": "Sinus ist ein Verhältnis: sin(α) = Gegenkathete / Hypotenuse\nEs sagt dir: \"Wie groß ist die Gegenkathete im Vergleich zur Hypotenuse?\""
       },
       {
@@ -3411,7 +3411,7 @@
       },
       {
         "kind": "text",
-        "title": "Schritt für schritt",
+        "title": "Schritt für Schritt",
         "body": "1. Gegeben: Hypotenuse c = 10 cm, Winkel α = 30°\n2. Gesucht: Gegenkathete a\n3. Formel: a = sin(30°) × 10 cm\n4. Einsetzen: a = 0,5 × 10 cm\n5. Ergebnis: a = 5 cm"
       },
       {
@@ -3459,7 +3459,7 @@
       },
       {
         "kind": "formula",
-        "title": "Was ist kosinus",
+        "title": "Was ist Kosinus",
         "body": "Kosinus ist ein Verhältnis: cos(α) = Ankathete / Hypotenuse\nEs sagt dir: \"Wie groß ist die Ankathete im Vergleich zur Hypotenuse?\""
       },
       {
@@ -3469,7 +3469,7 @@
       },
       {
         "kind": "text",
-        "title": "Schritt für schritt",
+        "title": "Schritt für Schritt",
         "body": "1. Gegeben: Ankathete b = 8 cm, Winkel α = 60°\n2. Gesucht: Hypotenuse c\n3. Formel: c = b / cos(60°)\n4. Einsetzen: c = 8 cm / 0,5\n5. Ergebnis: c = 16 cm"
       },
       {
@@ -3522,12 +3522,12 @@
       },
       {
         "kind": "formula",
-        "title": "Winkel berechnen mit sinus",
+        "title": "Winkel berechnen mit Sinus",
         "body": "Wenn du Gegenkathete und Hypotenuse kennst:\n1. sin(α) = Gegenkathete / Hypotenuse\n2. α = arcsin(Gegenkathete / Hypotenuse)"
       },
       {
         "kind": "text",
-        "title": "Schritt für schritt",
+        "title": "Schritt für Schritt",
         "body": "1. sin(α) = 4 / 8 = 0,5\n2. α = arcsin(0,5)\n3. α = 30°"
       },
       {
@@ -3575,7 +3575,7 @@
       },
       {
         "kind": "text",
-        "title": "Schritt für schritt",
+        "title": "Schritt für Schritt",
         "body": "1. Gegeben: α = 45°, γ = 90°\n2. Gesucht: β\n3. Formel umstellen: β = 180° - α - γ\n4. Einsetzen: β = 180° - 45° - 90°\n5. Ergebnis: β = 45°"
       },
       {
@@ -3625,12 +3625,12 @@
       },
       {
         "kind": "terms",
-        "title": "Die begriffe",
+        "title": "Die Begriffe",
         "body": "• Anfangsbestand = 0,5 g\n• Wachstumsfaktor = 2 (Verdopplung)\n• Zeit = 3 Stunden"
       },
       {
         "kind": "formula",
-        "title": "Die formel",
+        "title": "Die Formel",
         "body": "f(t) = Anfang × Faktor^Zeit\nf(3) = 0,5 × 2³"
       },
       {
@@ -3747,7 +3747,7 @@
       },
       {
         "kind": "formula",
-        "title": "Die formel",
+        "title": "Die Formel",
         "body": "f(t) = Anfang × 3^t"
       },
       {
@@ -3879,7 +3879,7 @@
       },
       {
         "kind": "remember",
-        "title": "Unterschied zu wachstum",
+        "title": "Unterschied zu Wachstum",
         "body": "• Wachstum: Faktor > 1 (z.B. 1,02)\n• Abnahme: Faktor < 1 (z.B. 0,9)"
       },
       {
@@ -3921,17 +3921,17 @@
       },
       {
         "kind": "terms",
-        "title": "Die allgemeine form",
+        "title": "Die allgemeine Form",
         "body": "f(t) = a × b^t\n• a = Anfangsbestand\n• b = Wachstumsfaktor\n• t = Zeit"
       },
       {
         "kind": "terms",
-        "title": "In dieser aufgabe",
+        "title": "In dieser Aufgabe",
         "body": "• a = 100 (Anfangsbakterien)\n• b = 2 (Verdopplung)\n• t = Zeit in Stunden"
       },
       {
         "kind": "steps",
-        "title": "Die formel",
+        "title": "Die Formel",
         "body": "f(t) = 100 × 2^t"
       },
       {
@@ -3977,12 +3977,12 @@
       },
       {
         "kind": "terms",
-        "title": "Die begriffe",
+        "title": "Die Begriffe",
         "body": "• Quader = rechteckiger Körper (wie ein Karton)\n• a, b, c = die drei Kantenlängen"
       },
       {
         "kind": "formula",
-        "title": "Die formel",
+        "title": "Die Formel",
         "body": "V = a × b × c"
       },
       {
@@ -4044,12 +4044,12 @@
       },
       {
         "kind": "terms",
-        "title": "Ein quader hat 6 flächen",
+        "title": "Ein Quader hat 6 Flächen",
         "body": "• 2 × Vorderseite (a × h) = 2 × 3 × 5 = 30\n• 2 × Seite (b × h) = 2 × 4 × 5 = 40\n• 2 × Boden/Deckel (a × b) = 2 × 3 × 4 = 24"
       },
       {
         "kind": "formula",
-        "title": "Die formel",
+        "title": "Die Formel",
         "body": "O = 2(ab + ah + bh)"
       },
       {
@@ -4107,12 +4107,12 @@
       },
       {
         "kind": "terms",
-        "title": "Die begriffe",
+        "title": "Die Begriffe",
         "body": "• Prisma = 'Säule' mit beliebiger Grundfläche\n• G = Grundfläche (hier: 4,16 m²)\n• h = Höhe (hier: 0,20 m)"
       },
       {
         "kind": "formula",
-        "title": "Die formel",
+        "title": "Die Formel",
         "body": "V = G × h\n(Grundfläche × Höhe)"
       },
       {
@@ -4122,7 +4122,7 @@
       },
       {
         "kind": "remember",
-        "title": "Diese formel gilt für",
+        "title": "Diese Formel gilt für",
         "body": "• Quader (Grundfläche = Rechteck)\n• Zylinder (Grundfläche = Kreis)\n• Dreiecksprisma (Grundfläche = Dreieck)\n• Jede Säulenform!"
       },
       {
@@ -4166,12 +4166,12 @@
       },
       {
         "kind": "terms",
-        "title": "Die begriffe",
+        "title": "Die Begriffe",
         "body": "• d = 55 cm → r = 27,5 cm (Radius = Durchmesser ÷ 2)\n• h = 60 cm\n• π ≈ 3,14"
       },
       {
         "kind": "formula",
-        "title": "Die formel",
+        "title": "Die Formel",
         "body": "V = π × r² × h\n(Grundfläche × Höhe)"
       },
       {
@@ -4287,12 +4287,12 @@
       },
       {
         "kind": "terms",
-        "title": "Die begriffe",
+        "title": "Die Begriffe",
         "body": "• Grundfläche G = a² = 5² = 25 cm²\n• Höhe h = 7 cm"
       },
       {
         "kind": "formula",
-        "title": "Die formel",
+        "title": "Die Formel",
         "body": "V = (1/3) × G × h"
       },
       {
@@ -4354,7 +4354,7 @@
       },
       {
         "kind": "formula",
-        "title": "Die formel",
+        "title": "Die Formel",
         "body": "V = (1/3) × G × h"
       },
       {
@@ -4408,12 +4408,12 @@
       },
       {
         "kind": "terms",
-        "title": "Die begriffe",
+        "title": "Die Begriffe",
         "body": "• r = Radius der Grundfläche = 6 cm\n• h = Höhe = 10 cm\n• π ≈ 3,14"
       },
       {
         "kind": "formula",
-        "title": "Die formel",
+        "title": "Die Formel",
         "body": "V = (1/3) × π × r² × h"
       },
       {
@@ -4465,12 +4465,12 @@
       },
       {
         "kind": "terms",
-        "title": "Die begriffe",
+        "title": "Die Begriffe",
         "body": "• r = Radius = 3 cm\n• π ≈ 3,14"
       },
       {
         "kind": "formula",
-        "title": "Die formel",
+        "title": "Die Formel",
         "body": "V = (4/3) × π × r³"
       },
       {
@@ -4517,12 +4517,12 @@
       },
       {
         "kind": "terms",
-        "title": "Die begriffe",
+        "title": "Die Begriffe",
         "body": "• d = 65 cm → U = π × d = 204,1 cm (Umfang)\n• h = 75 cm\n• Mantelfläche = Rechteck wenn abgerollt!"
       },
       {
         "kind": "formula",
-        "title": "Die formel",
+        "title": "Die Formel",
         "body": "M = π × d × h = U × h"
       },
       {
@@ -4576,7 +4576,7 @@
       },
       {
         "kind": "formula",
-        "title": "Die formel",
+        "title": "Die Formel",
         "body": "Mittelwert = Summe aller Werte ÷ Anzahl"
       },
       {
@@ -4635,7 +4635,7 @@
       },
       {
         "kind": "terms",
-        "title": "Die daten",
+        "title": "Die Daten",
         "body": "123 cm, 124 cm, 151 cm, 123 cm, 169 cm"
       },
       {
@@ -4686,7 +4686,7 @@
       },
       {
         "kind": "formula",
-        "title": "Die formel",
+        "title": "Die Formel",
         "body": "Spannweite = Maximum - Minimum"
       },
       {
@@ -4747,7 +4747,7 @@
       },
       {
         "kind": "remember",
-        "title": "Bei 7 werten",
+        "title": "Bei 7 Werten",
         "body": "Position = (7+1) ÷ 2 = 4\nDer 4. Wert ist der Median."
       },
       {
@@ -4798,7 +4798,7 @@
       },
       {
         "kind": "remember",
-        "title": "Bei gerader anzahl",
+        "title": "Bei gerader Anzahl",
         "body": "Es gibt keinen einzelnen mittleren Wert.\nAlso: Durchschnitt der beiden mittleren!"
       },
       {
@@ -5116,7 +5116,7 @@
       },
       {
         "kind": "terms",
-        "title": "Die formel",
+        "title": "Die Formel",
         "body": "A = (Grundseite × Höhe) ÷ 2\nA = (g × h) ÷ 2\n\nMit unseren Buchstaben:\nA = (z × y) ÷ 2"
       },
       {
@@ -5175,17 +5175,17 @@
       },
       {
         "kind": "terms",
-        "title": "Der satz",
+        "title": "Der Satz",
         "body": "a² + b² = c²\n\nIn Worten:\nDas Quadrat über der Hypotenuse (c)\nist gleich der Summe der Quadrate\nüber den beiden Katheten (a und b)."
       },
       {
         "kind": "text",
-        "title": "Die begriffe",
+        "title": "Die Begriffe",
         "body": "• Hypotenuse (c) = längste Seite, liegt dem rechten Winkel GEGENÜBER\n• Katheten (a, b) = die beiden kürzeren Seiten, bilden den rechten Winkel"
       },
       {
         "kind": "text",
-        "title": "Falsche antworten",
+        "title": "Falsche Antworten",
         "body": "• 'Gegenüber der Hypotenuse ist der rechte Winkel' - FALSCH! Der rechte Winkel liegt ZWISCHEN den Katheten\n• 'c - a = b' - FALSCH! Richtig wäre c² = a² + b²"
       },
       {
@@ -5229,12 +5229,12 @@
       },
       {
         "kind": "terms",
-        "title": "Was ist eine symmetrieachse",
+        "title": "Was ist eine Symmetrieachse",
         "body": "Eine Linie, an der man die Figur falten kann,\nsodass beide Hälften genau übereinander liegen."
       },
       {
         "kind": "text",
-        "title": "Der drachen",
+        "title": "Der Drachen",
         "body": "△\n   ╱│╲\n  ╱ │ ╲\n ╱  │  ╲\n△───┼───△\n ╲  │  ╱\n  ╲ │ ╱\n   ╲│╱\n    ▽\n\nDie senkrechte Linie (│) ist die EINZIGE Symmetrieachse!"
       },
       {
@@ -5282,7 +5282,7 @@
       },
       {
         "kind": "terms",
-        "title": "Regel für negative exponenten",
+        "title": "Regel für negative Exponenten",
         "body": "a⁻ⁿ = 1/aⁿ"
       },
       {
@@ -5297,7 +5297,7 @@
       },
       {
         "kind": "mistake",
-        "title": "Häufiger fehler",
+        "title": "Häufiger Fehler",
         "body": "2⁻² ist NICHT -4!\n2⁻² = 1/4 = 0,25"
       },
       {
@@ -5392,7 +5392,7 @@
       },
       {
         "kind": "terms",
-        "title": "Die regel",
+        "title": "Die Regel",
         "body": "Dezimalzahl × 100 = Prozent"
       },
       {
@@ -5407,7 +5407,7 @@
       },
       {
         "kind": "text",
-        "title": "Weitere beispiele",
+        "title": "Weitere Beispiele",
         "body": "0,25 → 25%\n0,08 → 8%\n1,50 → 150%"
       },
       {
@@ -5450,7 +5450,7 @@
       },
       {
         "kind": "terms",
-        "title": "Die regel",
+        "title": "Die Regel",
         "body": "Dezimalzahl × 100 = Prozent"
       },
       {
@@ -5522,7 +5522,7 @@
       },
       {
         "kind": "text",
-        "title": "Weitere beispiele",
+        "title": "Weitere Beispiele",
         "body": "1/4 = 25/100 = 25%\n1/5 = 20/100 = 20%\n1/20 = 5/100 = 5%"
       },
       {
@@ -5560,7 +5560,7 @@
       },
       {
         "kind": "terms",
-        "title": "Die begriffe",
+        "title": "Die Begriffe",
         "body": "• Prozent (%) = von Hundert (÷ 100)\n• Promille (‰) = von Tausend (÷ 1000)"
       },
       {
@@ -5618,7 +5618,7 @@
       },
       {
         "kind": "terms",
-        "title": "Die formel",
+        "title": "Die Formel",
         "body": "Prozentsatz = (Teil ÷ Ganzes) × 100"
       },
       {
@@ -5670,7 +5670,7 @@
       },
       {
         "kind": "terms",
-        "title": "Die formel",
+        "title": "Die Formel",
         "body": "Neuer Wert = Alter Wert × (1 + p/100)\noder\nNeuer Wert = Alter Wert + Zunahme"
       },
       {
@@ -5724,7 +5724,7 @@
       },
       {
         "kind": "terms",
-        "title": "Die formel",
+        "title": "Die Formel",
         "body": "K(n) = K₀ × (1 + p/100)ⁿ\n\nK₀ = Anfangskapital = 2500 €\np = Zinssatz = 4%\nn = Jahre = 4"
       },
       {
@@ -5734,7 +5734,7 @@
       },
       {
         "kind": "remember",
-        "title": "Schritt für schritt",
+        "title": "Schritt für Schritt",
         "body": "Jahr 0: 2500,00 €\nJahr 1: 2500 × 1,04 = 2600,00 €\nJahr 2: 2600 × 1,04 = 2704,00 €\nJahr 3: 2704 × 1,04 = 2812,16 €\nJahr 4: 2812,16 × 1,04 = 2924,65 €"
       },
       {
@@ -5772,7 +5772,7 @@
       },
       {
         "kind": "terms",
-        "title": "Zwei methoden",
+        "title": "Zwei Methoden",
         "body": ""
       },
       {
@@ -5835,7 +5835,7 @@
       },
       {
         "kind": "terms",
-        "title": "Die formel",
+        "title": "Die Formel",
         "body": "Grundwert = Prozentwert × 100 ÷ Prozentsatz\nG = W × 100 ÷ p"
       },
       {
@@ -5888,7 +5888,7 @@
       },
       {
         "kind": "terms",
-        "title": "Die formel",
+        "title": "Die Formel",
         "body": "p = (Teil ÷ Ganzes) × 100"
       },
       {
@@ -5942,7 +5942,7 @@
       },
       {
         "kind": "terms",
-        "title": "Die formel",
+        "title": "Die Formel",
         "body": "Prozentwert = Grundwert × Prozentsatz\nW = G × p"
       },
       {
@@ -6059,7 +6059,7 @@
       },
       {
         "kind": "terms",
-        "title": "Die regel",
+        "title": "Die Regel",
         "body": "a⁻ⁿ = 1/aⁿ\n\nEin negativer Exponent bedeutet:\n'1 geteilt durch die Potenz'"
       },
       {
@@ -6074,12 +6074,12 @@
       },
       {
         "kind": "text",
-        "title": "Weitere beispiele",
+        "title": "Weitere Beispiele",
         "body": "10⁻¹ = 1/10 = 0,1\n10⁻³ = 1/1000 = 0,001\n2⁻¹ = 1/2 = 0,5\n2⁻² = 1/4 = 0,25"
       },
       {
         "kind": "text",
-        "title": "Häufiger fehler",
+        "title": "Häufiger Fehler",
         "body": "10⁻² ≠ -20 (negativ ist der Exponent, nicht das Ergebnis!)"
       },
       {
@@ -6116,7 +6116,7 @@
       },
       {
         "kind": "terms",
-        "title": "Die regel",
+        "title": "Die Regel",
         "body": "aⁿ ÷ bⁿ = (a ÷ b)ⁿ"
       },
       {
@@ -6174,7 +6174,7 @@
       },
       {
         "kind": "terms",
-        "title": "Die regel",
+        "title": "Die Regel",
         "body": "a⁰ = 1 (für alle a ≠ 0)\n\nJEDE Zahl hoch 0 ist 1!"
       },
       {
@@ -6227,7 +6227,7 @@
       },
       {
         "kind": "terms",
-        "title": "Die regel",
+        "title": "Die Regel",
         "body": "(aⁿ)ᵐ = aⁿ×ᵐ\n\nBei 'Potenz hoch Potenz' werden die Exponenten MULTIPLIZIERT!"
       },
       {
@@ -6294,7 +6294,7 @@
       },
       {
         "kind": "remember",
-        "title": "Wichtige kubikzahlen",
+        "title": "Wichtige Kubikzahlen",
         "body": "1³ = 1\n2³ = 8\n3³ = 27\n4³ = 64\n5³ = 125\n6³ = 216\n10³ = 1000"
       },
       {
@@ -6331,7 +6331,7 @@
       },
       {
         "kind": "terms",
-        "title": "Die formel",
+        "title": "Die Formel",
         "body": "Durchschnitt = Summe aller Werte ÷ Anzahl der Werte"
       },
       {
@@ -6384,7 +6384,7 @@
       },
       {
         "kind": "terms",
-        "title": "So findest du den median",
+        "title": "So findest du den Median",
         "body": "1. Sortiere die Zahlen der Größe nach\n2. Finde die mittlere Zahl"
       },
       {
@@ -6399,7 +6399,7 @@
       },
       {
         "kind": "mistake",
-        "title": "Bei gerader anzahl",
+        "title": "Bei gerader Anzahl",
         "body": "Durchschnitt der beiden mittleren Werte!"
       },
       {
@@ -6442,7 +6442,7 @@
       },
       {
         "kind": "terms",
-        "title": "Die formel",
+        "title": "Die Formel",
         "body": "P(E) = günstige Ergebnisse ÷ alle möglichen Ergebnisse"
       },
       {
@@ -6501,7 +6501,7 @@
       },
       {
         "kind": "terms",
-        "title": "Die regel",
+        "title": "Die Regel",
         "body": "a/c + b/c = (a+b)/c\n\nBei gleichem Nenner: Nur die Zähler addieren!\nDer Nenner bleibt gleich."
       },
       {
@@ -6521,7 +6521,7 @@
       },
       {
         "kind": "text",
-        "title": "Häufiger fehler",
+        "title": "Häufiger Fehler",
         "body": "3/5 + 1/5 ≠ 4/10\nDie Nenner werden NICHT addiert!"
       },
       {
@@ -6565,7 +6565,7 @@
       },
       {
         "kind": "terms",
-        "title": "Die regel",
+        "title": "Die Regel",
         "body": "a/b × c/d = (a×c)/(b×d)\n\nZähler mal Zähler, Nenner mal Nenner!"
       },
       {
@@ -6628,7 +6628,7 @@
       },
       {
         "kind": "terms",
-        "title": "Die regel",
+        "title": "Die Regel",
         "body": "a/b ÷ c/d = a/b × d/c\n\nDividieren = Mit dem Kehrwert multiplizieren!"
       },
       {
@@ -6887,7 +6887,7 @@
       },
       {
         "kind": "remember",
-        "title": "Schneller weg",
+        "title": "Schneller Weg",
         "body": "Wenn 3·(x-8) + 2 = 2\nDann 3·(x-8) = 0\nDann x-8 = 0\nAlso x = 8"
       },
       {
@@ -6978,7 +6978,7 @@
       },
       {
         "kind": "terms",
-        "title": "Die regel",
+        "title": "Die Regel",
         "body": "Die Summe aller Winkel im Dreieck = 180°\nα + β + γ = 180°"
       },
       {
@@ -7042,7 +7042,7 @@
       },
       {
         "kind": "steps",
-        "title": "Schritt für schritt",
+        "title": "Schritt für Schritt",
         "body": "1. 'Doppeltes einer Zahl a' = 2a\n\n2. 'Differenz aus dem Doppelten und 13' = 2a - 13\n\n3. 'wird verdreifacht' = mal 3 = 3 · (...)"
       },
       {
@@ -7155,7 +7155,7 @@
       },
       {
         "kind": "terms",
-        "title": "Die formel",
+        "title": "Die Formel",
         "body": "A = (a + c) / 2 × h\n\na = lange parallele Seite\nc = kurze parallele Seite\nh = Höhe (senkrecht zwischen a und c)"
       },
       {
@@ -7215,7 +7215,7 @@
       },
       {
         "kind": "terms",
-        "title": "Die formel",
+        "title": "Die Formel",
         "body": "V = π × r² × h"
       },
       {
@@ -7273,7 +7273,7 @@
       },
       {
         "kind": "terms",
-        "title": "Die formel",
+        "title": "Die Formel",
         "body": "M = 2 × π × r × h\n(Umfang × Höhe)"
       },
       {
@@ -7385,7 +7385,7 @@
       },
       {
         "kind": "terms",
-        "title": "Was ist die nullstelle",
+        "title": "Was ist die Nullstelle",
         "body": "Der x-Wert, bei dem y = 0 ist.\n(Wo die Gerade die x-Achse schneidet)"
       },
       {
@@ -7453,7 +7453,7 @@
       },
       {
         "kind": "terms",
-        "title": "Die scheitelpunktform",
+        "title": "Die Scheitelpunktform",
         "body": "y = (x - d)² + e\nScheitelpunkt: S(d|e)"
       },
       {
@@ -7559,7 +7559,7 @@
       },
       {
         "kind": "terms",
-        "title": "Regeln für trapeze",
+        "title": "Regeln für Trapeze",
         "body": "1. Winkelsumme im Viereck = 360°\n2. Bei gleichschenkligem Trapez: Basiswinkel gleich groß\n3. Nebeneinanderliegende Winkel = 180° (an parallelen Seiten)"
       },
       {
@@ -7618,7 +7618,7 @@
       },
       {
         "kind": "terms",
-        "title": "Die formel",
+        "title": "Die Formel",
         "body": "P(E) = günstige Ergebnisse / alle Ergebnisse"
       },
       {
@@ -7670,7 +7670,7 @@
       },
       {
         "kind": "terms",
-        "title": "Die regel",
+        "title": "Die Regel",
         "body": "1 km = 1000 m"
       },
       {
@@ -7721,7 +7721,7 @@
       },
       {
         "kind": "terms",
-        "title": "Die regel",
+        "title": "Die Regel",
         "body": "1 cm = 10 mm\n1 cm² = 100 mm² (10 × 10)"
       },
       {
@@ -7731,7 +7731,7 @@
       },
       {
         "kind": "mistake",
-        "title": "Achtung bei flächen",
+        "title": "Achtung bei Flächen",
         "body": "Bei Flächen (²) quadriert sich der Faktor!\n• Länge: mm → cm = ÷10\n• Fläche: mm² → cm² = ÷100\n• Volumen: mm³ → cm³ = ÷1000"
       },
       {
@@ -7773,7 +7773,7 @@
       },
       {
         "kind": "terms",
-        "title": "Die regel",
+        "title": "Die Regel",
         "body": "Kehrwert = Zähler und Nenner tauschen"
       },
       {
@@ -7788,7 +7788,7 @@
       },
       {
         "kind": "text",
-        "title": "Weitere beispiele",
+        "title": "Weitere Beispiele",
         "body": "• Kehrwert von 3 = 1/3\n• Kehrwert von 1/4 = 4\n• Kehrwert von 7/3 = 3/7"
       },
       {
@@ -7830,7 +7830,7 @@
       },
       {
         "kind": "terms",
-        "title": "Die regel",
+        "title": "Die Regel",
         "body": "a · (b + c) = a·b + a·c"
       },
       {
@@ -7845,7 +7845,7 @@
       },
       {
         "kind": "mistake",
-        "title": "Häufiger fehler",
+        "title": "Häufiger Fehler",
         "body": "2·(x + 3) ≠ 2x + 3\nDie 3 muss auch multipliziert werden!"
       },
       {
@@ -7887,7 +7887,7 @@
       },
       {
         "kind": "terms",
-        "title": "Die formel",
+        "title": "Die Formel",
         "body": "(a + b)² = a² + 2ab + b²"
       },
       {
@@ -7897,12 +7897,12 @@
       },
       {
         "kind": "remember",
-        "title": "Die 3 binomischen formeln",
+        "title": "Die 3 binomischen Formeln",
         "body": "1. (a + b)² = a² + 2ab + b²\n2. (a - b)² = a² - 2ab + b²\n3. (a + b)(a - b) = a² - b²"
       },
       {
         "kind": "mistake",
-        "title": "Häufiger fehler",
+        "title": "Häufiger Fehler",
         "body": "(a + 3)² ≠ a² + 9\nDas mittlere Glied (2ab = 6a) fehlt!"
       },
       {
@@ -8006,7 +8006,7 @@
       },
       {
         "kind": "terms",
-        "title": "Die formel",
+        "title": "Die Formel",
         "body": "K(n) = K₀ · (1 + p/100)ⁿ"
       },
       {
@@ -8064,7 +8064,7 @@
       },
       {
         "kind": "terms",
-        "title": "Die regel",
+        "title": "Die Regel",
         "body": "Vollkreis = 360° = 100%"
       },
       {
@@ -8074,7 +8074,7 @@
       },
       {
         "kind": "remember",
-        "title": "Wichtige winkel",
+        "title": "Wichtige Winkel",
         "body": "• 360° = 100%\n• 180° = 50%\n• 90° = 25%\n• 36° = 10%\n• 3,6° = 1%"
       },
       {
@@ -8404,12 +8404,12 @@
     "explanation": [
       {
         "kind": "what",
-        "title": "Volumen und liter",
+        "title": "Volumen und Liter",
         "body": ""
       },
       {
         "kind": "terms",
-        "title": "Goldene regel",
+        "title": "Goldene Regel",
         "body": "1 dm³ = 1 Liter (IMMER!)"
       },
       {
@@ -8466,7 +8466,7 @@
       },
       {
         "kind": "remember",
-        "title": "Warum wie rechteck",
+        "title": "Warum wie Rechteck",
         "body": "Wenn du ein Dreieck von der Seite abschneidest\nund auf der anderen Seite ansetzt,\nentsteht ein Rechteck!"
       },
       {
@@ -8528,7 +8528,7 @@
       },
       {
         "kind": "remember",
-        "title": "Alternative formel",
+        "title": "Alternative Formel",
         "body": "U = π × d (mit Durchmesser)"
       },
       {
@@ -8571,7 +8571,7 @@
     "explanation": [
       {
         "kind": "what",
-        "title": "Vom umfang zur fläche",
+        "title": "Vom Umfang zur Fläche",
         "body": ""
       },
       {
@@ -8681,7 +8681,7 @@
     "explanation": [
       {
         "kind": "what",
-        "title": "Satz des pythagoras",
+        "title": "Satz des Pythagoras",
         "body": ""
       },
       {
@@ -8728,7 +8728,7 @@
     "explanation": [
       {
         "kind": "what",
-        "title": "Seite mit kosinus berechnen",
+        "title": "Seite mit Kosinus berechnen",
         "body": ""
       },
       {
@@ -8854,7 +8854,7 @@
     "explanation": [
       {
         "kind": "what",
-        "title": "Radius aus volumen berechnen",
+        "title": "Radius aus Volumen berechnen",
         "body": ""
       },
       {
@@ -8958,7 +8958,7 @@
     "explanation": [
       {
         "kind": "what",
-        "title": "Innenwinkelsumme im dreieck",
+        "title": "Innenwinkelsumme im Dreieck",
         "body": ""
       },
       {
@@ -9026,7 +9026,7 @@
       },
       {
         "kind": "remember",
-        "title": "Wann sinussatz",
+        "title": "Wann Sinussatz",
         "body": "Wenn du 2 Winkel und 1 Seite kennst!"
       },
       {
@@ -9089,7 +9089,7 @@
       },
       {
         "kind": "remember",
-        "title": "Wann kosinussatz",
+        "title": "Wann Kosinussatz",
         "body": "Wenn du 2 Seiten und den eingeschlossenen Winkel kennst!"
       },
       {
@@ -9137,7 +9137,7 @@
     "explanation": [
       {
         "kind": "what",
-        "title": "Mantelfläche zylinder",
+        "title": "Mantelfläche Zylinder",
         "body": ""
       },
       {
@@ -9184,7 +9184,7 @@
     "explanation": [
       {
         "kind": "what",
-        "title": "Umfang mit einheiten",
+        "title": "Umfang mit Einheiten",
         "body": ""
       },
       {
@@ -9313,7 +9313,7 @@
       },
       {
         "kind": "terms",
-        "title": "Beim abwickeln",
+        "title": "Beim Abwickeln",
         "body": "Die Mantelfläche wird zu einem Rechteck!\n• Länge a = Umfang des Kreises = 2πr\n• Breite b = Höhe h"
       },
       {
@@ -9370,7 +9370,7 @@
     "explanation": [
       {
         "kind": "what",
-        "title": "Deckel aus blechstreifen",
+        "title": "Deckel aus Blechstreifen",
         "body": ""
       },
       {
@@ -9418,7 +9418,7 @@
     "explanation": [
       {
         "kind": "what",
-        "title": "Höhe aus volumen berechnen",
+        "title": "Höhe aus Volumen berechnen",
         "body": ""
       },
       {
@@ -9475,7 +9475,7 @@
     "explanation": [
       {
         "kind": "what",
-        "title": "Lineare funktion analysieren",
+        "title": "Lineare Funktion analysieren",
         "body": ""
       },
       {
@@ -9601,7 +9601,7 @@
     "explanation": [
       {
         "kind": "what",
-        "title": "Quadratische gleichung lösen",
+        "title": "Quadratische Gleichung lösen",
         "body": ""
       },
       {
@@ -9776,7 +9776,7 @@
     "explanation": [
       {
         "kind": "what",
-        "title": "Wahrscheinlichkeit mit zurücklegen",
+        "title": "Wahrscheinlichkeit mit Zurücklegen",
         "body": ""
       },
       {
@@ -9837,12 +9837,12 @@
     "explanation": [
       {
         "kind": "what",
-        "title": "Pythagoras bei der seilbahn",
+        "title": "Pythagoras bei der Seilbahn",
         "body": ""
       },
       {
         "kind": "formula",
-        "title": "Rechtwinkliges dreieck",
+        "title": "Rechtwinkliges Dreieck",
         "body": "• AB = Hypotenuse = 384 m (Seil)\n• FB = Kathete = 255 m (horizontal)\n• FA = Kathete = ? (Höhenunterschied)"
       },
       {
@@ -9911,7 +9911,7 @@
       },
       {
         "kind": "remember",
-        "title": "Bei exponentiellem wachstum",
+        "title": "Bei exponentiellem Wachstum",
         "body": "Der Wachstumsfaktor ist KONSTANT!"
       },
       {
@@ -9954,7 +9954,7 @@
     "explanation": [
       {
         "kind": "what",
-        "title": "Exponentielles wachstum berechnen",
+        "title": "Exponentielles Wachstum berechnen",
         "body": ""
       },
       {
@@ -9974,7 +9974,7 @@
       },
       {
         "kind": "mistake",
-        "title": "Exponentielles wachstum",
+        "title": "Exponentielles Wachstum",
         "body": "Wächst SEHR SCHNELL!\nNach 24h: fast 400.000 Bakterien!"
       },
       {
@@ -10012,7 +10012,7 @@
     "explanation": [
       {
         "kind": "what",
-        "title": "Winkel im kreisdiagramm",
+        "title": "Winkel im Kreisdiagramm",
         "body": ""
       },
       {
@@ -10123,7 +10123,7 @@
     "explanation": [
       {
         "kind": "what",
-        "title": "Prozentuale abnahme",
+        "title": "Prozentuale Abnahme",
         "body": ""
       },
       {
