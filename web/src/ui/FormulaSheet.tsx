@@ -1,5 +1,6 @@
 /** The official formula sheet, rendered from lesson L_MATH_FORMELBLATT — as a page or a slide-over inside a session. */
 
+import { useEffect } from "react";
 import { useApp } from "@/app/state";
 import { renderFigureSpec } from "@/core/variants";
 import { ExplanationBlocks } from "./Explanation";
@@ -23,6 +24,11 @@ export function FormulaSheetContent() {
 
 /** Slide-over used during sessions so the current question is not lost. */
 export function FormulaSheetDrawer({ onClose }: { onClose(): void }) {
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => e.key === "Escape" && onClose();
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [onClose]);
   return (
     <div className="fixed inset-0 z-40 flex justify-end bg-black/40" onClick={onClose} role="presentation">
       <aside className="h-full w-full max-w-lg overflow-y-auto bg-bg-2 p-5 shadow-2xl anim-pop" onClick={(e) => e.stopPropagation()} role="dialog" aria-label="Formelblatt">

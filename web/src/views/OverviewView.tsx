@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import { exportAll, importAll } from "@/app/db";
+import { exportAll } from "@/app/db";
 import { useApp } from "@/app/state";
 import { LEVEL_LABEL } from "@/core/levels";
 import { ampelFor, levelFromMastery } from "@/core/mastery";
@@ -9,7 +9,7 @@ import { Ampel, Button, PageTitle, SUBJECT_LABEL } from "@/ui/primitives";
 
 /** Parent / self overview: every topic with numbers, plus backup export/import. */
 export function OverviewView() {
-  const { content, profile, store, progressVersion, selectProfile } = useApp();
+  const { content, profile, store, progressVersion, importBackup, flush } = useApp();
   const fileRef = useRef<HTMLInputElement>(null);
   const [msg, setMsg] = useState<string | null>(null);
   if (!content || !profile || !store) return null;
@@ -19,6 +19,7 @@ export function OverviewView() {
   const correct = attempts.filter((a) => a.isCorrect).length;
 
   const download = async () => {
+    await flush(); // what was answered a moment ago belongs in the file too
     const json = await exportAll();
     const blob = new Blob([json], { type: "application/json" });
     const a = document.createElement("a");
@@ -29,9 +30,8 @@ export function OverviewView() {
   };
   const upload = async (file: File) => {
     try {
-      const n = await importAll(await file.text());
-      setMsg(`${n} Profil(e) importiert. Bitte Profil neu auswählen.`);
-      await selectProfile(null);
+      const n = await importBackup(await file.text());
+      setMsg(`Sicherung eingelesen: ${n} ${n === 1 ? "Profil" : "Profile"}. Zum Wechseln tipp oben auf deinen Namen.`);
     } catch (e) {
       setMsg((e as Error).message);
     }
@@ -56,6 +56,9 @@ export function OverviewView() {
         </div>
       </div>
 
+      {/* On a phone there is no hover text, so the star is explained in words. */}
+      <p className="mb-4 text-sm text-ink-2">⭐ bedeutet: Dieses Thema ist für die Prüfung besonders wichtig.</p>
+
       {(["MATH", "DE", "EN"] as Subject[]).map((s) => {
         const rows = content.practicableTopics(s).map((t) => ({ t, m: store.getMastery(profile.id, t.id) }));
         return (
@@ -68,8 +71,8 @@ export function OverviewView() {
                     <th className="px-4 py-2">Thema</th>
                     <th className="px-2 py-2">Ampel</th>
                     <th className="px-2 py-2">Stufe</th>
-                    <th className="px-2 py-2 text-right">Versuche</th>
-                    <th className="px-4 py-2 text-right">Zuletzt</th>
+                    <th className="px-2 py-2 pr-4 text-right sm:pr-2">Versuche</th>
+                    <th className="hidden px-4 py-2 text-right sm:table-cell">Zuletzt</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -87,8 +90,8 @@ export function OverviewView() {
                         {LEVEL_LABEL[levelFromMastery(m)]}
                         {t.priority === 3 && <span title="wichtig für die Prüfung"> ⭐</span>}
                       </td>
-                      <td className="px-2 py-2 text-right tabular-nums">{m?.attempts ?? 0}</td>
-                      <td className="px-4 py-2 text-right text-ink-3">{m?.lastPracticedAt ? new Date(m.lastPracticedAt).toLocaleDateString("de-DE") : "–"}</td>
+                      <td className="px-2 py-2 pr-4 text-right tabular-nums sm:pr-2">{m?.attempts ?? 0}</td>
+                      <td className="hidden px-4 py-2 text-right text-ink-3 sm:table-cell">{m?.lastPracticedAt ? new Date(m.lastPracticedAt).toLocaleDateString("de-DE") : "–"}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -108,7 +111,12 @@ export function OverviewView() {
           <Button variant="ghost" onClick={() => fileRef.current?.click()}>
             ⬆︎ Importieren
           </Button>
-          <input ref={fileRef} type="file" accept="application/json" className="hidden" onChange={(e) => e.target.files?.[0] && upload(e.target.files[0])} />
+          <input ref={fileRef} type="file" accept="application/json" className="hidden" onChange={(e) => {
+              const file = e.target.files?.[0];
+              e.target.value = ""; // so the same file can be chosen again
+              if (file) void upload(file);
+            }}
+          />
         </div>
         {msg && <p className="mt-3 text-sm text-brand-2">{msg}</p>}
       </section>

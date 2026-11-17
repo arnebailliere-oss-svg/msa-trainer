@@ -36,7 +36,8 @@ test("exam mode: Basisaufgaben first, no calculator, per-task summary", async ({
 
   await expect(page.getByText("Deine Aufgaben")).toBeVisible();
   await expect(page.getByText(/pro Aufgabe/)).toBeVisible();
-  await expect(page.getByText(/MSA Berlin 202[345]/).first()).toBeVisible();
+  // where a task came from is an internal note and is not shown
+  await expect(page.getByText(/MSA Berlin 20[0-9][0-9]/)).toHaveCount(0);
   await page.waitForTimeout(600);
   await page.screenshot({ path: `e2e/screenshots/${test.info().project.name}-11-exam-result.png`, fullPage: true });
 });

@@ -153,3 +153,23 @@ Models to copy: en_04_drills, de_07/08/09 drill files, math_12_graphen_tabellen_
 ## Worth preserving
 
 Ferdinand's voice and tone (no shaming found in German or Maths) · German-first bridges ("ich ging, nicht ich gehte") · "das -s wandert zum Helfer" · P_DE_DAS_DASS (one probe repeated) · P_DE_LESEN's chain and "Die Routine in Aktion" · P_MATH_GLEICHUNG boards 1–6 · maths hooks (pizza, box for x, the riddle) · naming the wrong intuition · word origins · the "Probe ✓" habit in maths drills.
+
+## 2026-11-17: findings from the owner's read-through, applied to all lessons
+
+Each point started with one thing the owner hit while using the app; each was then screened across all lessons.
+
+| Finding | Screen | Result |
+|---|---|---|
+| Tap tasks that repeat the board | read of all 887 tasks | 67 rewritten; rule: board title must not give the answer |
+| Calculator ÷ key refused its own sign | key-by-key browser test | 8 faults fixed (`web/e2e/calculator.spec.ts`) |
+| Letters in Spickzettel formulas unexplained | new rule in `web/scripts/standard.ts` | 50 sections on 12 maths sheets fixed; formulas also said in words |
+| Hint beside the point when choices share the number | screen of all tasks with equal numbers (24) | 2 hints rewritten |
+| Owl boards name a shape without showing it | screen for shape words | drawings on all such boards; several drawings and try-it-out elements per board are now possible; new prism drawing |
+| Formula chains, steps skipped ("Der Mantel") | mechanical screen (11 boards) plus a board-by-board read of all 15 maths owl lessons | 41 boards rewritten to one step per line, 5 boards added, order fixed where something was used before it was taught |
+| Topics on the Spickzettel with no owl boards | comparison sheet against lessons | 32 new boards in seven lessons |
+| Typed answers | probe of the evaluator plus browser test | unit after the number accepted, unreadable input sent back, Enter no longer skips the feedback, dropdown gaps compared exactly |
+| Formelblatt drawer, backup, progress page | browser test as a learner (`web/e2e/tools.spec.ts`) | Escape closes the drawer; import shows the profile at once and restores the open profile; progress table fits a phone |
+
+Source notes are no longer shipped or shown (owner decision of the same day); they stay in `content_packs`.
+
+Still open: the board-by-board read for the German and English owl lessons; the read of all hints (does each address the actual mistake); the Formelblatt has not been compared with the official sheet.

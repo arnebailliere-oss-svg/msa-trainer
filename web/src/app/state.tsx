@@ -7,7 +7,7 @@ import type { ContentIndex } from "@/core/contentIndex";
 import type { InMemoryProgressStore } from "@/core/progress";
 import type { Profile } from "@/core/types";
 import { loadContent } from "./content";
-import { createPersistentStore, deleteProfileData, loadProfiles, loadProgress, saveProfiles } from "./db";
+import { createPersistentStore, deleteProfileData, importAll, loadProfiles, loadProgress, saveProfiles } from "./db";
 
 const ACTIVE_KEY = "msa:activeProfile";
 
@@ -22,6 +22,8 @@ interface AppState {
   createProfile(name: string, emoji: string): Promise<Profile>;
   selectProfile(id: string | null): Promise<void>;
   deleteProfile(id: string): Promise<void>;
+  /** Read a backup file. Returns the number of profiles in it; throws with a German sentence if it is not a backup. */
+  importBackup(json: string): Promise<number>;
   flush(): Promise<void>;
   notifyProgress(): void;
 }
@@ -119,6 +121,16 @@ export function AppProvider({ children }: { children: ReactNode }) {
         await saveProfiles(next);
         await deleteProfileData(id);
         if (profile?.id === id) await activate(null);
+      },
+      async importBackup(json) {
+        const current = profile?.id ?? null;
+        await flushRef.current(); // first save what is in memory …
+        const n = await importAll(json); // (throws before writing anything if the file is not a backup)
+        flushRef.current = () => Promise.resolve(); // … and after the import never write the old state over it
+        const all = await loadProfiles();
+        setProfiles(all);
+        await activate(all.find((p) => p.id === current) ?? null); // reloads the progress that is now stored
+        return n;
       },
       flush: () => flushRef.current(),
       notifyProgress: () => setProgressVersion((v) => v + 1),
