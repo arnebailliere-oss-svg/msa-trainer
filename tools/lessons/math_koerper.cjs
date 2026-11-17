@@ -46,9 +46,56 @@ migrate("primers/math_09c_koerper.json", (p, h) => {
     }),
   );
 
+  // Small steps: the circle is taught before the can needs it, and the Mantel formula is built in two boards.
+  h.before(
+    "Der Zylinder",
+    b("Der Kreis", ["Der Boden einer Dose ist ein Kreis.", "Der **Radius** $r$ reicht von der Mitte bis zum Rand.", "Der **Durchmesser** $d$ geht einmal quer durch die Mitte.", "$d = 2 \\cdot r$"], "Bevor wir zur Dose kommen, schauen wir uns den Kreis an, denn der Boden einer Dose ist ein Kreis. Zwei Längen sind wichtig. Der Radius geht von der Mitte bis zum Rand. Der Durchmesser geht von Rand zu Rand durch die Mitte und ist deshalb doppelt so lang.", {
+      figure: { type: "circle", labels: { r: "r", d: "d" } },
+      tasks: [k("Der Durchmesser einer Dose ist 10 cm. Der Radius ist ___.", "5 cm", ["20 cm"], "Der Radius ist die Hälfte vom Durchmesser.", "Der Radius reicht nur von der Mitte bis zum Rand.")],
+    }),
+    b("Umfang des Kreises", ["Wie lang ist der Rand eines Kreises?", "Nimm den Durchmesser mal 3,14.", "Die Zahl 3,14 heißt **Pi**. Ihr Zeichen ist $\\pi$.", "$U = \\pi \\cdot d$", "Beispiel: $d = 10$ cm", "$U \\approx 3{,}14 \\cdot 10 = 31{,}4$ cm"], "Leg einen Faden einmal um einen Teller und miss ihn. Er ist immer etwas mehr als dreimal so lang, wie der Teller breit ist. Genauer gesagt 3,14-mal. Diese Zahl ist bei jedem Kreis gleich. Sie heißt Pi, und dein Taschenrechner hat dafür eine eigene Taste.", {
+      figure: { type: "circle", labels: { d: "d = 10 cm", u: "U ≈ 31,4 cm" } },
+      tasks: [k("Ein Teller hat den Durchmesser 20 cm. Sein Rand ist etwa ___ lang.", "62,8 cm", ["23,14 cm"], "Durchmesser mal Pi: 20 mal 3,14 ergibt 62,8.", "Rechnest du den Durchmesser mal Pi oder plus Pi?")],
+    }),
+    b("Umfang mit dem Radius", ["Oft kennst du nur den Radius.", "Zwei Radien sind ein Durchmesser: $d = 2 \\cdot r$", "Also: $U = \\pi \\cdot 2 \\cdot r$", "Auf dem Formelblatt steht die 2 vorn:", "$U = 2 \\cdot \\pi \\cdot r$"], "In vielen Aufgaben steht nur der Radius. Das macht nichts, denn zwei Radien ergeben den Durchmesser. Du verdoppelst also den Radius und nimmst das Ergebnis mal Pi. Auf dem Formelblatt steht die Zwei ganz vorn. Das ist dieselbe Rechnung, nur in anderer Reihenfolge.", {
+      figure: { type: "circle", labels: { r: "r", u: "U = 2 · π · r" } },
+      tasks: [k("$r = 5$ cm. Der Umfang ist etwa ___.", "31,4 cm", ["15,7 cm"], "Zweimal 5 ist 10, und 10 mal 3,14 ergibt 31,4.", "Verdopple zuerst den Radius. Was kommt danach?")],
+    }),
+    b("Fläche des Kreises", ["$A = \\pi \\cdot r \\cdot r$", "Kürzer geschrieben: $A = \\pi \\cdot r^2$", "Beispiel: $r = 3$ cm", "$3 \\cdot 3 = 9$", "$A \\approx 3{,}14 \\cdot 9 = 28{,}3\\ \\text{cm}^2$"], "Für die Fläche brauchst du den Radius zweimal. Du nimmst ihn mit sich selbst mal und danach mal Pi. Die kleine 2 ist nur die kurze Schreibweise für Radius mal Radius. Weil es eine Fläche ist, steht am Ende Quadratzentimeter.", {
+      figure: { type: "circle", labels: { r: "r = 3 cm" } },
+      tasks: [k("$r = 2$ cm. Die Kreisfläche ist etwa ___.", "$12{,}6\\ \\text{cm}^2$", ["$6{,}3\\ \\text{cm}^2$"], "2 mal 2 ist 4, und 4 mal 3,14 ergibt etwa 12,6.", "Rechne zuerst Radius mal Radius. Erst danach kommt Pi.")],
+    }),
+  );
+  h.body("Der Zylinder", "Eine Dose: Der Boden ist ein Kreis.", "Boden: $G = \\pi \\cdot r^2$", "Volumen: Boden mal Höhe", "Beispiel: $r = 3$ cm und $h = 10$ cm", "Boden: $G \\approx 28{,}3\\ \\text{cm}^2$", "Volumen: $V \\approx 28{,}3 \\cdot 10 = 283\\ \\text{cm}^3$");
+  h.say("Der Zylinder", "Ein Zylinder ist eine Dose. Ihr Boden ist ein Kreis, und dessen Fläche kannst du jetzt ausrechnen. Danach gilt dieselbe Regel wie beim Quader: Boden mal Höhe. Du rechnest also in zwei Schritten, erst den Boden und dann das Volumen.");
+  h.tasks("Der Zylinder", k("Eine Dose hat den Boden $G = 50\\ \\text{cm}^2$ und die Höhe 8 cm. $V = $ ___", "$400\\ \\text{cm}^3$", ["$58\\ \\text{cm}^3$"], "Boden mal Höhe: 50 mal 8 ergibt 400.", "Gilt bei der Dose Boden mal Höhe oder Boden plus Höhe?"));
+  h.body("Der Mantel", "Der **Mantel** ist die Wand außen herum, ohne Deckel und Boden.", "Rolle das Etikett ab: Es ist ein Rechteck.", "Breite: der Umfang $U$ des Kreises", "Höhe: $h$", "$M = U \\cdot h$", "$M$ steht für den Mantel.");
+  h.after(
+    "Der Mantel",
+    b("Der Mantel mit dem Radius", ["Kennst du nur den Radius? Rechne zuerst den Umfang aus.", "Beispiel: $r = 5$ cm und $h = 10$ cm", "Umfang: $U \\approx 31{,}4$ cm", "Mantel: $M \\approx 31{,}4 \\cdot 10 = 314\\ \\text{cm}^2$", "Das Formelblatt schreibt beides in eine Zeile:", "$M = 2 \\cdot \\pi \\cdot r \\cdot h$"], "Hier steckst du zwei Schritte zusammen, die du schon kannst. Zuerst rechnest du aus dem Radius den Umfang aus. Dann nimmst du den Umfang mal die Höhe. Das Formelblatt schreibt beide Schritte in eine einzige Zeile. Lies sie so: Zwei mal Pi mal Radius ist der Umfang, und dahinter steht mal Höhe.", {
+      figure: { type: "cylinder", r: 5, h: 10, labels: { r: "r = 5 cm", h: "h = 10 cm" } },
+      tasks: [k("$r = 1$ cm, also $U \\approx 6{,}28$ cm. Die Dose ist 10 cm hoch. $M \\approx$ ___", "$62{,}8\\ \\text{cm}^2$", ["$16{,}28\\ \\text{cm}^2$"], "Umfang mal Höhe: 6,28 mal 10 ergibt 62,8.", "Der Umfang steht schon da. Womit nimmst du ihn mal?")],
+    }),
+  );
+
+  // Every board that talks about a shape shows it (drawings and try-it-out elements the app already has).
+  h.board("Oberfläche: die Verpackung").figure = h.board("Volumen: wie viel passt rein").figure;
+  h.board("Grundfläche mal Höhe").figures = [
+    { caption: "Quader", figure: { type: "box", a: 4, b: 3, c: 3, labels: { c: "h" } } },
+    { caption: "Zylinder", figure: { type: "cylinder", r: 2, h: 4, labels: { h: "h" } } },
+    { caption: "Prisma", figure: { type: "prism", a: 4, h: 5, labels: { h: "h" } } },
+  ];
+  h.board("Der Mantel").figure = { type: "cylinder", r: 3, h: 10, labels: { r: "r", h: "h" } };
+  h.board("Spitze Körper: ein Drittel").figures = [
+    { caption: "Pyramide", figure: { type: "pyramid", a: 4, h: 5, labels: { h: "h" } } },
+    { caption: "Kegel", figure: { type: "cone", r: 2, h: 5, labels: { h: "h" } } },
+  ];
+  h.board("Die Kugel").figure = { type: "sphere", labels: { r: "r" } };
+
   h.chapters([
     ["Volumen: wie viel passt rein", "Volumen und Oberfläche"],
-    ["Der Zylinder", "Dose, Pyramide, Kegel und Kugel"],
+    ["Der Kreis", "Der Kreis und die Dose"],
+    ["Spitze Körper: ein Drittel", "Spitze Körper und die Kugel"],
   ]);
   h.renameVocab({ "Volumen V": "Volumen", "Oberfläche O": "Oberfläche", "Grundfläche G": "Grundfläche", "Höhe h": "Höhe", "Mantel M": "Mantel", "Pyramide / Kegel": "Pyramide" });
   p.vocab.push({ term: "Kegel", plain: "Ein spitzer Körper mit einem Kreis als Boden, wie eine Eistüte.", example: "$V = \\frac{1}{3} G h$" });

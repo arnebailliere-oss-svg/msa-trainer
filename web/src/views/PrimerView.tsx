@@ -9,6 +9,7 @@ import { useApp } from "@/app/state";
 import { renderFigureSpec } from "@/core/variants";
 import { MathText } from "@/ui/MathText";
 import { OWL_NAME, OwlAvatar } from "@/ui/Owl";
+import { LessonWidget } from "@/ui/widgets";
 import { Button } from "@/ui/primitives";
 
 /** "pause" is the board between two chapters: a place to stop; `step` is the first board of the next chapter. */
@@ -148,6 +149,8 @@ export function PrimerView() {
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
+      // Keys pressed inside a try-it-out element (sliders) belong to that element, not to the board.
+      if ((e.target as HTMLElement | null)?.closest?.("[data-owl-widget]")) return;
       if (e.key === "Enter") {
         if (pos.phase === "done" || (pos.phase === "quiz" && picked === null)) return;
         e.preventDefault();
@@ -190,14 +193,18 @@ export function PrimerView() {
     }
   };
 
-  const stepFigure = useMemo(() => {
+  // One drawing (figure) or several side by side (figures), each with an optional caption.
+  const stepFigures = useMemo(() => {
     const s = primer?.steps[pos.step];
-    if (!s?.figure || pos.phase !== "steps") return undefined;
-    try {
-      return renderFigureSpec(s.figure, {});
-    } catch {
-      return undefined;
-    }
+    if (!s || pos.phase !== "steps") return [];
+    const specs: { caption?: string; figure: NonNullable<typeof s.figure> }[] = [...(s.figure ? [{ figure: s.figure }] : []), ...(s.figures ?? [])];
+    return specs.flatMap((g) => {
+      try {
+        return [{ svg: renderFigureSpec(g.figure, {}), caption: g.caption }];
+      } catch {
+        return [];
+      }
+    });
   }, [primer, pos]);
 
   if (!content) return null;
@@ -337,7 +344,25 @@ export function PrimerView() {
             <>
               <h2 className="chalk-title">{stepData.title}</h2>
               <MathText text={stepData.body} />
-              {stepFigure && <div className="chalk-board-figure mt-3 flex justify-center" dangerouslySetInnerHTML={{ __html: stepFigure }} />}
+              {stepFigures.length > 0 && (
+                <div className={`mt-3 grid justify-items-center gap-3 ${stepFigures.length === 1 ? "" : stepFigures.length === 2 ? "grid-cols-2" : "grid-cols-2 sm:grid-cols-3"}`}>
+                  {stepFigures.map((g, gi) => (
+                    <figure key={gi} className="chalk-board-figure flex flex-col items-center">
+                      <div dangerouslySetInnerHTML={{ __html: g.svg }} />
+                      {g.caption && (
+                        <figcaption className="mt-1 text-center text-sm">
+                          <MathText text={g.caption} />
+                        </figcaption>
+                      )}
+                    </figure>
+                  ))}
+                </div>
+              )}
+              {stepData.widget && (
+                <div className="card-solid mt-3 p-3 text-ink" data-owl-widget={stepData.widget}>
+                  <LessonWidget id={stepData.widget} />
+                </div>
+              )}
               {tasks.length > 0 && (
                 <ol className="mt-3 grid gap-4">
                   {tasks.map((t, ti) => {

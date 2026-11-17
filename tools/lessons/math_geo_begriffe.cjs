@@ -48,6 +48,24 @@ migrate("primers/math_09_geometrie.json", (p, h) => {
     }),
   );
 
+  // Every board that talks about a shape shows it (drawings and try-it-out elements the app already has).
+  h.board("Fläche: was drin ist").figure = h.board("Umfang: einmal außen rum").figure;
+  h.board("Was ist ein Winkel?").figures = [
+    { caption: "einmal ganz herum: 360°", figure: { type: "angle", deg: 360, label: "360°" } },
+    { caption: "ein Viertel davon: 90°", figure: { type: "angle", deg: 90, label: "90°" } },
+  ];
+  h.board("Winkel-Sorten").figures = [
+    { caption: "spitz", figure: { type: "angle", deg: 45, label: "45°" } },
+    { caption: "rechter Winkel", figure: { type: "angle", deg: 90, label: "90°" } },
+    { caption: "stumpf", figure: { type: "angle", deg: 130, label: "130°" } },
+    { caption: "gestreckt", figure: { type: "angle", deg: 180, label: "180°" } },
+  ];
+  h.board("Winkelsumme im Dreieck").figure = { type: "triangle", alpha: 70, beta: 60, labels: { alpha: "70°", beta: "60°", gamma: "γ" } };
+  h.board("Gleichschenklig und gleichseitig").figures = [
+    { caption: "gleichschenklig", figure: { type: "triangle", alpha: 70, beta: 70, labels: { alpha: "70°", beta: "70°" } } },
+    { caption: "gleichseitig", figure: { type: "triangle", alpha: 60, beta: 60, labels: { alpha: "60°", beta: "60°", gamma: "60°" } } },
+  ];
+
   h.chapters([
     ["Umfang: einmal außen rum", "Umfang und Fläche"],
     ["Das Dreieck beschriften", "Dreiecke und Winkel"],

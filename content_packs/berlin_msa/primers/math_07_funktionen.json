@@ -165,7 +165,33 @@
             "why": "Die Zahl vor dem x ist die Steigung, also die 3.",
             "hint": "Welche Zahl steht direkt vor dem x?"
           }
-        ]
+        ],
+        "figure": {
+          "type": "coordinateSystem",
+          "xmin": -3,
+          "xmax": 5,
+          "ymin": -2,
+          "ymax": 8,
+          "width": 300,
+          "height": 300,
+          "lines": [
+            {
+              "m": 2,
+              "n": 1,
+              "label": "y = 2x + 1"
+            }
+          ],
+          "points": [
+            {
+              "x": 1,
+              "y": 3
+            },
+            {
+              "x": 2,
+              "y": 5
+            }
+          ]
+        }
       },
       {
         "title": "Negative Steigung",
@@ -215,7 +241,30 @@
             "why": "Bei x gleich 0 bleibt nur die 3 übrig. Das ist der Startwert.",
             "hint": "Was bleibt von der Regel übrig, wenn du für x eine Null einsetzt?"
           }
-        ]
+        ],
+        "figure": {
+          "type": "coordinateSystem",
+          "xmin": -3,
+          "xmax": 5,
+          "ymin": -2,
+          "ymax": 8,
+          "width": 300,
+          "height": 300,
+          "lines": [
+            {
+              "m": 2,
+              "n": 1,
+              "label": "y = 2x + 1"
+            }
+          ],
+          "points": [
+            {
+              "x": 0,
+              "y": 1,
+              "label": "(0|1)"
+            }
+          ]
+        }
       },
       {
         "title": "Die allgemeine Form",
@@ -232,7 +281,8 @@
             "why": "Das m ist die Zahl vor dem x. Hier ist das die 5.",
             "hint": "Welche Zahl steht in der Gleichung direkt vor dem x?"
           }
-        ]
+        ],
+        "widget": "line-explorer"
       },
       {
         "chapter": "Geraden lesen und prüfen",
@@ -304,7 +354,30 @@
             "why": "Auf beiden Seiten plus 4 ergibt x gleich 4. Dort schneidet die Gerade die x-Achse.",
             "hint": "Welche Rechnung macht aus minus 4 eine Null?"
           }
-        ]
+        ],
+        "figure": {
+          "type": "coordinateSystem",
+          "xmin": -3,
+          "xmax": 5,
+          "ymin": -2,
+          "ymax": 8,
+          "width": 300,
+          "height": 300,
+          "lines": [
+            {
+              "m": 2,
+              "n": 1,
+              "label": "y = 2x + 1"
+            }
+          ],
+          "points": [
+            {
+              "x": -0.5,
+              "y": 0,
+              "label": "Nullstelle"
+            }
+          ]
+        }
       },
       {
         "title": "Das nimmst du mit",

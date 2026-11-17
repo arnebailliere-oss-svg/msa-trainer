@@ -33,7 +33,7 @@
       },
       {
         "title": "Als Bruch, Dezimalzahl, Prozent",
-        "body": "$P = \\frac{1}{4} = 0{,}25 = 25\\,\\%$\n\nImmer zwischen 0 (nie) und 1 (sicher).",
+        "body": "Als Bruch: $P = \\frac{1}{4}$\n\nAls Dezimalzahl: $0{,}25$\n\nIn Prozent: $25\\,\\%$\n\nImmer zwischen 0 (nie) und 1 (sicher).",
         "say": "Du kannst das Ergebnis auf drei Arten schreiben, und alle drei bedeuten dasselbe. Der Wert liegt immer zwischen 0 und 1. Bei 0 passiert etwas nie, bei 1 passiert es sicher. Ein Wert von 1,5 kann nicht stimmen, denn mehr als sicher geht nicht.",
         "tasks": [
           {

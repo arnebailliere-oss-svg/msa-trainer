@@ -88,6 +88,10 @@ export interface PrimerStep {
   title: string;
   body: string;
   figure?: FigureSpec;
+  /** Several small drawings side by side, each with a short caption: one per shape the board talks about. */
+  figures?: { caption?: string; figure: FigureSpec }[];
+  /** Interactive element to try things out (same ids as the lesson widgets, see ui/widgets.tsx). */
+  widget?: string;
   /** Tap-to-answer gaps shown on the board under the body. */
   tasks?: PrimerTask[];
   /** What Ferdinand says while this board is shown. */

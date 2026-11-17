@@ -431,6 +431,30 @@ export function cylinder(spec: FigureSpec): string {
   return svg(W, H, body, "Zylinder");
 }
 
+/** Upright prism with a triangular base: base edge a, height h. */
+export function prism(spec: FigureSpec): string {
+  const a = num(spec.a, 4);
+  const h = num(spec.h, 5);
+  const labels = (spec.labels ?? {}) as Record<string, unknown>;
+  const W = 300;
+  const H = 230;
+  const scale = Math.min(150 / a, 140 / (h + a * 0.3));
+  const A = a * scale;
+  const Hh = h * scale;
+  const x0 = 70;
+  const y0 = H - 36;
+  const bx = x0 + A * 0.62; // the corner at the back
+  const by = y0 - A * 0.3;
+  const P = (x: number, y: number) => `${f(x)},${f(y)}`;
+  let body = `<polygon points='${P(x0, y0)} ${P(x0 + A, y0)} ${P(x0 + A, y0 - Hh)} ${P(x0, y0 - Hh)}' fill='${SOFT}' stroke='currentColor' stroke-width='2'/>`;
+  body += `<polygon points='${P(x0, y0 - Hh)} ${P(x0 + A, y0 - Hh)} ${P(bx, by - Hh)}' fill='rgba(34,211,238,0.18)' stroke='currentColor' stroke-width='2' stroke-linejoin='round'/>`;
+  body += line(x0, y0, bx, by, { dashed: true, width: 1.2 }) + line(x0 + A, y0, bx, by, { dashed: true, width: 1.2 }) + line(bx, by, bx, by - Hh, { dashed: true, width: 1.2 });
+  if (labels.h !== undefined) body += text(x0 - 10, y0 - Hh / 2 + 4, str(labels.h), { anchor: "end", bold: true });
+  if (labels.a !== undefined) body += text(x0 + A / 2, y0 + 18, str(labels.a), { bold: true });
+  if (labels.g !== undefined) body += text((x0 + x0 + A + bx) / 3, (y0 - Hh + y0 - Hh + by - Hh) / 3 + 4, str(labels.g), { fill: ACCENT3, bold: true });
+  return svg(W, H, body, "Prisma");
+}
+
 /** A single angle of `deg` degrees (1–360) with arc and label. */
 export function angle(spec: FigureSpec): string {
   const deg = Math.max(1, Math.min(360, num(spec.deg, 45)));
@@ -573,6 +597,7 @@ const GENERATORS: Record<string, (spec: FigureSpec) => string> = {
   treeDiagram,
   box,
   cylinder,
+  prism,
   timeline,
 };
 

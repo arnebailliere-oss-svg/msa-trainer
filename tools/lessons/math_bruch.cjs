@@ -50,6 +50,10 @@ migrate("primers/math_01_bruch.json", (p, h) => {
     }),
   );
 
+  // Small steps: one line per step instead of one long calculation.
+  h.body("Mal: einfach durch", "$\\frac{2}{3} \\cdot \\frac{3}{4}$", "Oben: $2 \\cdot 3 = 6$", "Unten: $3 \\cdot 4 = 12$", "Ergebnis: $\\frac{6}{12}$", "Gekürzt: $\\frac{1}{2}$", "Zähler mal Zähler, Nenner mal Nenner.");
+  h.body("Geteilt: umdrehen und mal", "$\\frac{1}{2} : \\frac{1}{4}$", "Den zweiten Bruch **umdrehen**: Aus $\\frac{1}{4}$ wird $\\frac{4}{1}$.", "Dann mal: $\\frac{1}{2} \\cdot \\frac{4}{1} = \\frac{4}{2}$", "$\\frac{4}{2} = 2$", "Der umgedrehte Bruch heißt **Kehrwert**.");
+
   h.chapters([
     ["Eine Pizza in Stücken", "Was ein Bruch ist"],
     ["Erweitern: mehr Stücke, gleiche Pizza", "Erweitern und Kürzen"],

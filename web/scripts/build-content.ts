@@ -335,6 +335,14 @@ for (const p of primers) {
         error(`${where} step ${i + 1}`, `figure failed: ${(e as Error).message}`);
       }
     }
+    for (const g of s.figures ?? []) {
+      if (g.caption) checkTex(`${where} step ${i + 1}`, g.caption);
+      try {
+        renderFigureSpec(g.figure, {});
+      } catch (e) {
+        error(`${where} step ${i + 1}`, `figure failed: ${(e as Error).message}`);
+      }
+    }
     (s.tasks ?? []).forEach((t, ti) => {
       const w = `${where} step ${i + 1} task ${ti + 1}`;
       if (t.text.split("___").length !== 2) error(w, "text needs exactly one ___ gap");
@@ -434,7 +442,8 @@ for (const s of subjects) {
   const ps = primers.filter((p) => p.subject === s);
   const xs = passages.filter((p) => p.subject === s);
   const file = `${s}.json`;
-  writeFileSync(join(OUT_DIR, file), JSON.stringify({ questions: qs, lessons: ls, primers: ps, passages: xs }));
+  // Where a piece of content came from is an internal note. It stays in content_packs and is not shipped.
+  writeFileSync(join(OUT_DIR, file), JSON.stringify({ questions: qs, lessons: ls, primers: ps, passages: xs }, (key, value) => (key === "source" ? undefined : Array.isArray(value) ? value.filter((x) => !(x && x.title === "Quelle")) : value)));
   (out.subjects as Record<string, unknown>)[s] = { questions: qs.length, lessons: ls.length, primers: ps.length, passages: xs.length, file };
 }
 writeFileSync(join(OUT_DIR, "topics.json"), JSON.stringify(topics));

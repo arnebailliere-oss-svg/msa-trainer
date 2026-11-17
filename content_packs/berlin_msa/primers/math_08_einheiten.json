@@ -144,7 +144,18 @@
             "why": "Es ist eine Stufe nach unten, und beim Volumen ist jede Stufe mal 1000.",
             "hint": "Rechne 10 mal 10 mal 10 aus."
           }
-        ]
+        ],
+        "figure": {
+          "type": "box",
+          "a": 3,
+          "b": 3,
+          "c": 3,
+          "labels": {
+            "a": "100 cm",
+            "b": "100 cm",
+            "c": "100 cm"
+          }
+        }
       },
       {
         "title": "Liter",

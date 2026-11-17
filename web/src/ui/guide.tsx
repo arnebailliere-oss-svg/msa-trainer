@@ -92,7 +92,7 @@ function ModeCards() {
   const modes = [
     { emoji: "⚡", title: "Schnelltraining", desc: "10 Aufgaben, die App sucht deine Schwächen" },
     { emoji: "🩹", title: "Fehler-Training", desc: "nur die Themen, die gerade rot sind" },
-    { emoji: "🏁", title: "Prüfungs-Modus", desc: "Originalaufgaben mit Stoppuhr" },
+    { emoji: "🏁", title: "Prüfungs-Modus", desc: "Prüfungsaufgaben mit Stoppuhr" },
   ];
   return (
     <div className="subject-MATH grid gap-2 sm:grid-cols-3">
@@ -211,7 +211,7 @@ export const GUIDE: GuideSection[] = [
           Jedes Fach hat seine eigene Farbe: Mathe blau, Deutsch pink, Englisch grün. Woran du gerade arbeitest, siehst du also auf einen Blick. Die App merkt sich dein zuletzt gewähltes Fach — beim nächsten Öffnen bist du direkt wieder da.
         </p>
         <p className="mt-2">
-          Mathe ist am weitesten ausgebaut (Lektionen, Formelblatt, Original-Prüfungen). Deutsch und Englisch wachsen Schritt für Schritt nach.
+          Mathe ist am weitesten ausgebaut (Lektionen, Formelblatt, Prüfungs-Modus). Deutsch und Englisch wachsen Schritt für Schritt nach.
         </p>
       </>
     ),
@@ -282,7 +282,7 @@ export const GUIDE: GuideSection[] = [
           <strong>🩹 Fehler-Training</strong> — 10 Aufgaben nur aus den Themen, die gerade auf Rot stehen. Der Knopf sagt dir, um wie viele Themen es geht.
         </li>
         <li>
-          <strong>🏁 Prüfungs-Modus</strong> — 10 echte Aufgaben aus den MSA-Prüfungen 2023 bis 2025, mit Stoppuhr oben in der Ecke. Wie in der richtigen Prüfung sind die ersten Aufgaben <em>Basisaufgaben</em>: hilfsmittelfrei, der Taschenrechner ist gesperrt. Danach kommen die Sachaufgaben, dann darfst du ihn wieder benutzen. Am Ende siehst du jede Aufgabe einzeln mit Zeit und richtiger Lösung.
+          <strong>🏁 Prüfungs-Modus</strong> — 10 Aufgaben auf Prüfungsniveau, mit Stoppuhr oben in der Ecke. Wie in der richtigen Prüfung sind die ersten Aufgaben <em>Basisaufgaben</em>: hilfsmittelfrei, der Taschenrechner ist gesperrt. Danach kommen die Sachaufgaben, dann darfst du ihn wieder benutzen. Am Ende siehst du jede Aufgabe einzeln mit Zeit und richtiger Lösung.
         </li>
         <li>
           <strong>✏️ Thema üben</strong> — 8 Aufgaben zu genau einem Thema. Über den Knopf <em>Üben</em> in der Themenliste oder <em>Jetzt üben</em> unten auf der Themenseite.

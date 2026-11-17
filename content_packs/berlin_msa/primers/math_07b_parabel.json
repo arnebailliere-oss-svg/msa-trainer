@@ -146,7 +146,8 @@
             "why": "In der Klammer steht minus 2, also ist x gleich 2. Die 3 dahinter bleibt.",
             "hint": "In der Klammer steht das Gegenteil. Was wird aus minus 2?"
           }
-        ]
+        ],
+        "widget": "parabola-explorer"
       },
       {
         "title": "Nullstellen",
@@ -163,7 +164,34 @@
             "why": "Eine Nullstelle gibt es nur dort, wo die Kurve die x-Achse trifft.",
             "hint": "Trifft die Kurve die waagerechte Achse überhaupt irgendwo?"
           }
-        ]
+        ],
+        "figure": {
+          "type": "coordinateSystem",
+          "xmin": -3,
+          "xmax": 5,
+          "ymin": -5,
+          "ymax": 6,
+          "width": 300,
+          "height": 320,
+          "parabolas": [
+            {
+              "a": 1,
+              "d": 1,
+              "e": -4,
+              "label": "2 Nullstellen"
+            }
+          ],
+          "points": [
+            {
+              "x": -1,
+              "y": 0
+            },
+            {
+              "x": 3,
+              "y": 0
+            }
+          ]
+        }
       },
       {
         "chapter": "Quadratische Gleichungen lösen",

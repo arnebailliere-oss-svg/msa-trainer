@@ -54,7 +54,16 @@
             "why": "Länge mal Breite: 4 mal 2 ergibt 8.",
             "hint": "Rechnest du bei der Fläche plus oder mal?"
           }
-        ]
+        ],
+        "figure": {
+          "type": "rectangle",
+          "a": 5,
+          "b": 3,
+          "labels": {
+            "a": "5 cm",
+            "b": "3 cm"
+          }
+        }
       },
       {
         "title": "Die kleine 2",
@@ -156,6 +165,24 @@
             "why": "Eine ganze Drehung hat 360 Grad. Die Hälfte davon sind 180 Grad.",
             "hint": "Wie viel Grad hat eine ganze Drehung? Nimm davon die Hälfte."
           }
+        ],
+        "figures": [
+          {
+            "caption": "einmal ganz herum: 360°",
+            "figure": {
+              "type": "angle",
+              "deg": 360,
+              "label": "360°"
+            }
+          },
+          {
+            "caption": "ein Viertel davon: 90°",
+            "figure": {
+              "type": "angle",
+              "deg": 90,
+              "label": "90°"
+            }
+          }
         ]
       },
       {
@@ -172,6 +199,40 @@
             "correct": "spitz",
             "why": "40 Grad sind weniger als 90 Grad.",
             "hint": "Ist der Winkel kleiner oder größer als die Ecke von einem Blatt Papier?"
+          }
+        ],
+        "figures": [
+          {
+            "caption": "spitz",
+            "figure": {
+              "type": "angle",
+              "deg": 45,
+              "label": "45°"
+            }
+          },
+          {
+            "caption": "rechter Winkel",
+            "figure": {
+              "type": "angle",
+              "deg": 90,
+              "label": "90°"
+            }
+          },
+          {
+            "caption": "stumpf",
+            "figure": {
+              "type": "angle",
+              "deg": 130,
+              "label": "130°"
+            }
+          },
+          {
+            "caption": "gestreckt",
+            "figure": {
+              "type": "angle",
+              "deg": 180,
+              "label": "180°"
+            }
           }
         ]
       },
@@ -190,7 +251,17 @@
             "why": "100 plus 30 sind 130. Bis 180 fehlen noch 50.",
             "hint": "Wie viel fehlt von 130 bis 180?"
           }
-        ]
+        ],
+        "figure": {
+          "type": "triangle",
+          "alpha": 70,
+          "beta": 60,
+          "labels": {
+            "alpha": "70°",
+            "beta": "60°",
+            "gamma": "γ"
+          }
+        }
       },
       {
         "title": "Die Höhe",
@@ -232,6 +303,33 @@
             "correct": "60°",
             "why": "Drei gleiche Winkel teilen sich 180 Grad. Das sind 60 Grad für jeden.",
             "hint": "Wie viel ist 180 geteilt durch 3?"
+          }
+        ],
+        "figures": [
+          {
+            "caption": "gleichschenklig",
+            "figure": {
+              "type": "triangle",
+              "alpha": 70,
+              "beta": 70,
+              "labels": {
+                "alpha": "70°",
+                "beta": "70°"
+              }
+            }
+          },
+          {
+            "caption": "gleichseitig",
+            "figure": {
+              "type": "triangle",
+              "alpha": 60,
+              "beta": 60,
+              "labels": {
+                "alpha": "60°",
+                "beta": "60°",
+                "gamma": "60°"
+              }
+            }
           }
         ]
       },

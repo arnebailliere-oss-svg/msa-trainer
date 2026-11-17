@@ -53,6 +53,9 @@ migrate("primers/math_06_stochastik.json", (p, h) => {
     }),
   );
 
+  // Small steps: one line per way of writing the result.
+  h.body("Als Bruch, Dezimalzahl, Prozent", "Als Bruch: $P = \\frac{1}{4}$", "Als Dezimalzahl: $0{,}25$", "In Prozent: $25\\,\\%$", "Immer zwischen 0 (nie) und 1 (sicher).");
+
   h.chapters([
     ["Wie viele von allen?", "Was Wahrscheinlichkeit bedeutet"],
     ["Zweimal ziehen: der Baum", "Zweimal ziehen"],

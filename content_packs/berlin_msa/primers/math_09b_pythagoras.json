@@ -58,7 +58,17 @@
             "why": "Die Hypotenuse ist immer die längste Seite. Die beiden kürzeren sind die Katheten.",
             "hint": "Welche der drei Seiten ist die längste?"
           }
-        ]
+        ],
+        "figure": {
+          "type": "rightTriangle",
+          "a": 4,
+          "b": 3,
+          "labels": {
+            "a": "Kathete a",
+            "b": "Kathete b",
+            "c": "Hypotenuse c"
+          }
+        }
       },
       {
         "title": "Der Satz des Pythagoras",
@@ -75,7 +85,17 @@
             "why": "6 mal 6 ist 36, und 8 mal 8 ist 64. Zusammen sind das 100.",
             "hint": "Rechne erst 6 mal 6 und 8 mal 8. Zähl dann zusammen."
           }
-        ]
+        ],
+        "figure": {
+          "type": "rightTriangle",
+          "a": 3,
+          "b": 4,
+          "labels": {
+            "a": "a = 3",
+            "b": "b = 4",
+            "c": "c = 5"
+          }
+        }
       },
       {
         "title": "Was heißt das als Bild?",
@@ -92,11 +112,21 @@
             "why": "Die beiden kleinen Flächen zusammen ergeben die große: 9 plus 16.",
             "hint": "Zähl die beiden kleinen Flächen zusammen."
           }
-        ]
+        ],
+        "figure": {
+          "type": "rightTriangle",
+          "a": 3,
+          "b": 4,
+          "labels": {
+            "a": "3",
+            "b": "4",
+            "c": "5"
+          }
+        }
       },
       {
         "title": "Hypotenuse berechnen",
-        "body": "$c = \\sqrt{a^2 + b^2}$\n\n$a = 6$, $b = 8$: $c = \\sqrt{36 + 64} = \\sqrt{100} = 10$",
+        "body": "$c = \\sqrt{a^2 + b^2}$\n\nBeispiel: $a = 6$ und $b = 8$\n\nQuadrieren: $36$ und $64$\n\nZusammenzählen: $36 + 64 = 100$\n\nWurzel ziehen: $c = \\sqrt{100} = 10$",
         "say": "Du gehst immer in drei Schritten vor. Zuerst nimmst du beide Katheten hoch 2. Dann zählst du die beiden Ergebnisse zusammen. Zum Schluss ziehst du die Wurzel, denn du suchst die Seite und nicht ihr Quadrat.",
         "tasks": [
           {
@@ -109,11 +139,21 @@
             "why": "7 mal 7 ergibt 49. Die Wurzel halbiert nicht.",
             "hint": "Welche Zahl ergibt 49, wenn du sie mit sich selbst malnimmst?"
           }
-        ]
+        ],
+        "figure": {
+          "type": "rightTriangle",
+          "a": 6,
+          "b": 8,
+          "labels": {
+            "a": "a = 6",
+            "b": "b = 8",
+            "c": "c = ?"
+          }
+        }
       },
       {
         "title": "Kathete berechnen",
-        "body": "$b = \\sqrt{c^2 - a^2}$\n\n$c = 13$, $a = 5$: $b = \\sqrt{169 - 25} = \\sqrt{144} = 12$",
+        "body": "$b = \\sqrt{c^2 - a^2}$\n\nBeispiel: $c = 13$ und $a = 5$\n\nQuadrieren: $169$ und $25$\n\nAbziehen: $169 - 25 = 144$\n\nWurzel ziehen: $b = \\sqrt{144} = 12$",
         "say": "Manchmal kennst du die Hypotenuse und suchst eine Kathete. Dann rechnest du rückwärts und ziehst ab. Vom Quadrat der Hypotenuse nimmst du das Quadrat der bekannten Kathete weg. Die Hypotenuse steht dabei immer vorn, weil sie die größte ist.",
         "tasks": [
           {
@@ -126,7 +166,17 @@
             "why": "Gesucht ist eine Kathete. Dann wird das Quadrat der bekannten Kathete abgezogen.",
             "hint": "Ist die gesuchte Seite kürzer als die Hypotenuse? Was folgt daraus?"
           }
-        ]
+        ],
+        "figure": {
+          "type": "rightTriangle",
+          "a": 5,
+          "b": 12,
+          "labels": {
+            "a": "a = 5",
+            "b": "b = ?",
+            "c": "c = 13"
+          }
+        }
       },
       {
         "title": "Jetzt du: Pythagoras",
@@ -243,7 +293,17 @@
             "why": "Mal 0,5 ist dasselbe wie die Hälfte. Die Hälfte von 20 ist 10.",
             "hint": "Mal 0,5 bedeutet: Nimm die Hälfte."
           }
-        ]
+        ],
+        "figure": {
+          "type": "rightTriangle",
+          "a": 5,
+          "b": 8.66,
+          "labels": {
+            "a": "a = ?",
+            "c": "c = 10",
+            "alpha": "30°"
+          }
+        }
       },
       {
         "title": "Winkel berechnen",
@@ -260,7 +320,17 @@
             "why": "Die Taste macht aus dem Bruch den Winkel. Zum Wert 0,5 gehört beim Sinus der Winkel 30 Grad.",
             "hint": "Schau auf die letzte Zeile der Tafel. Welcher Winkel steht dort?"
           }
-        ]
+        ],
+        "figure": {
+          "type": "rightTriangle",
+          "a": 5,
+          "b": 8.66,
+          "labels": {
+            "a": "a = 5",
+            "c": "c = 10",
+            "alpha": "α = ?"
+          }
+        }
       },
       {
         "title": "Merkwort",
@@ -294,7 +364,8 @@
             "hint": "Kommt in der Aufgabe ein Winkel vor oder nur Seiten?"
           }
         ],
-        "say": "Das sind die fünf Dinge, die du aus dieser Lektion brauchst. Die wichtigste Frage bei jeder Aufgabe lautet: Kommt ein Winkel vor oder nur Seiten? Danach weißt du, welches Werkzeug du nimmst. Gleich kommen die Wörter und ein kleines Quiz."
+        "say": "Das sind die fünf Dinge, die du aus dieser Lektion brauchst. Die wichtigste Frage bei jeder Aufgabe lautet: Kommt ein Winkel vor oder nur Seiten? Danach weißt du, welches Werkzeug du nimmst. Gleich kommen die Wörter und ein kleines Quiz.",
+        "widget": "triangle-explorer"
       }
     ],
     "vocab": [

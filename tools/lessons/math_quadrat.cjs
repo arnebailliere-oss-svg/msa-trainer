@@ -57,6 +57,10 @@ migrate("primers/math_07b_parabel.json", (p, h) => {
     }),
   );
 
+  // Every board that talks about a shape shows it (drawings and try-it-out elements the app already has).
+  h.board("Die Parabel verschieben").widget = "parabola-explorer";
+  h.board("Nullstellen").figure = { type: "coordinateSystem", xmin: -3, xmax: 5, ymin: -5, ymax: 6, width: 300, height: 320, parabolas: [{ a: 1, d: 1, e: -4, label: "2 Nullstellen" }], points: [{ x: -1, y: 0 }, { x: 3, y: 0 }] };
+
   h.chapters([
     ["x² macht eine Schüssel", "Die Parabel"],
     ["Die einfachste quadratische Gleichung", "Quadratische Gleichungen lösen"],

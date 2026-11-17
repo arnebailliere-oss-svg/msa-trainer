@@ -43,7 +43,7 @@ export function ResultView() {
           {stats.correctCount} von {stats.totalQuestions} richtig · {minutes < 1 ? "unter 1 Minute" : `${minutes} Min.`}
           {mode === "MSA" && items.length > 0 && ` · Ø ${avgSec} s pro Aufgabe`}
         </p>
-        {mode === "MSA" && <p className="mt-2 text-sm text-ink-3">Prüfungs-Check mit Originalaufgaben aus den letzten MSA-Prüfungen. Schau dir unten jede Aufgabe an, die nicht geklappt hat.</p>}
+        {mode === "MSA" && <p className="mt-2 text-sm text-ink-3">Prüfungs-Check mit Aufgaben auf Prüfungsniveau. Schau dir unten jede Aufgabe an, die nicht geklappt hat.</p>}
         {mode === "PLAN" && <p className="mt-2 text-sm text-ink-3">Tagesplan erledigt ✓ Deine Prüfungsreife siehst du auf der Startseite. Morgen wartet der nächste Plan.</p>}
       </div>
 

@@ -58,6 +58,13 @@ migrate("primers/math_07_funktionen.json", (p, h) => {
     }),
   );
 
+  // Every board that talks about a shape shows it (drawings and try-it-out elements the app already has).
+  const grid = { type: "coordinateSystem", xmin: -3, xmax: 5, ymin: -2, ymax: 8, width: 300, height: 300 };
+  h.board("Was ist die Steigung?").figure = { ...grid, lines: [{ m: 2, n: 1, label: "y = 2x + 1" }], points: [{ x: 1, y: 3 }, { x: 2, y: 5 }] };
+  h.board("Der Startwert n").figure = { ...grid, lines: [{ m: 2, n: 1, label: "y = 2x + 1" }], points: [{ x: 0, y: 1, label: "(0|1)" }] };
+  h.board("Die allgemeine Form").widget = "line-explorer";
+  h.board("Nullstelle").figure = { ...grid, lines: [{ m: 2, n: 1, label: "y = 2x + 1" }], points: [{ x: -0.5, y: 0, label: "Nullstelle" }] };
+
   h.chapters([
     ["Die Maschine", "Maschine, Tabelle und Bild"],
     ["Was ist die Steigung?", "Steigung und Startwert"],

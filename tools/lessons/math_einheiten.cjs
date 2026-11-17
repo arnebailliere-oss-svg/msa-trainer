@@ -47,6 +47,9 @@ migrate("primers/math_08_einheiten.json", (p, h) => {
     }),
   );
 
+  // Every board that talks about a shape shows it (drawings and try-it-out elements the app already has).
+  h.board("Volumen: alles mal 1000").figure = { type: "box", a: 3, b: 3, c: 3, labels: { a: "100 cm", b: "100 cm", c: "100 cm" } };
+
   h.chapters([
     ["Die Vorsilben", "Vorsilben und Längen"],
     ["Fläche: alles mal 100", "Flächen, Volumen, Gewicht und Zeit"],

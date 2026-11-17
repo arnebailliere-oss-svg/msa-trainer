@@ -55,6 +55,20 @@ migrate("primers/math_09b_pythagoras.json", (p, h) => {
     }),
   );
 
+  // Small steps: one line per step instead of one long calculation.
+  h.body("Hypotenuse berechnen", "$c = \\sqrt{a^2 + b^2}$", "Beispiel: $a = 6$ und $b = 8$", "Quadrieren: $36$ und $64$", "Zusammenzählen: $36 + 64 = 100$", "Wurzel ziehen: $c = \\sqrt{100} = 10$");
+  h.body("Kathete berechnen", "$b = \\sqrt{c^2 - a^2}$", "Beispiel: $c = 13$ und $a = 5$", "Quadrieren: $169$ und $25$", "Abziehen: $169 - 25 = 144$", "Wurzel ziehen: $b = \\sqrt{144} = 12$");
+
+  // Every board that talks about a shape shows it (drawings and try-it-out elements the app already has).
+  h.board("Katheten und Hypotenuse").figure = { type: "rightTriangle", a: 4, b: 3, labels: { a: "Kathete a", b: "Kathete b", c: "Hypotenuse c" } };
+  h.board("Der Satz des Pythagoras").figure = { type: "rightTriangle", a: 3, b: 4, labels: { a: "a = 3", b: "b = 4", c: "c = 5" } };
+  h.board("Was heißt das als Bild?").figure = { type: "rightTriangle", a: 3, b: 4, labels: { a: "3", b: "4", c: "5" } };
+  h.board("Das nimmst du mit").widget = "triangle-explorer";
+  h.board("Hypotenuse berechnen").figure = { type: "rightTriangle", a: 6, b: 8, labels: { a: "a = 6", b: "b = 8", c: "c = ?" } };
+  h.board("Kathete berechnen").figure = { type: "rightTriangle", a: 5, b: 12, labels: { a: "a = 5", b: "b = ?", c: "c = 13" } };
+  h.board("Seite berechnen").figure = { type: "rightTriangle", a: 5, b: 8.66, labels: { a: "a = ?", c: "c = 10", alpha: "30°" } };
+  h.board("Winkel berechnen").figure = { type: "rightTriangle", a: 5, b: 8.66, labels: { a: "a = 5", c: "c = 10", alpha: "α = ?" } };
+
   h.chapters([
     ["Das rechtwinklige Dreieck", "Der Satz des Pythagoras"],
     ["Gegenkathete und Ankathete", "Sinus, Kosinus und Tangens"],

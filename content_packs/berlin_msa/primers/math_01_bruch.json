@@ -210,7 +210,7 @@
       {
         "chapter": "Mal, Geteilt und Umwandeln",
         "title": "Mal: einfach durch",
-        "body": "$\\frac{2}{3} \\cdot \\frac{3}{4} = \\frac{2 \\cdot 3}{3 \\cdot 4} = \\frac{6}{12} = \\frac{1}{2}$\n\nZähler mal Zähler, Nenner mal Nenner.",
+        "body": "$\\frac{2}{3} \\cdot \\frac{3}{4}$\n\nOben: $2 \\cdot 3 = 6$\n\nUnten: $3 \\cdot 4 = 12$\n\nErgebnis: $\\frac{6}{12}$\n\nGekürzt: $\\frac{1}{2}$\n\nZähler mal Zähler, Nenner mal Nenner.",
         "say": "Malnehmen ist bei Brüchen das Leichteste. Am Ende kürzen.",
         "tasks": [
           {
@@ -227,7 +227,7 @@
       },
       {
         "title": "Geteilt: umdrehen und mal",
-        "body": "$\\frac{1}{2} : \\frac{1}{4} = \\frac{1}{2} \\cdot \\frac{4}{1} = \\frac{4}{2} = 2$\n\nDen zweiten Bruch **umdrehen**, dann mal.\n\nDer umgedrehte Bruch heißt **Kehrwert**.",
+        "body": "$\\frac{1}{2} : \\frac{1}{4}$\n\nDen zweiten Bruch **umdrehen**: Aus $\\frac{1}{4}$ wird $\\frac{4}{1}$.\n\nDann mal: $\\frac{1}{2} \\cdot \\frac{4}{1} = \\frac{4}{2}$\n\n$\\frac{4}{2} = 2$\n\nDer umgedrehte Bruch heißt **Kehrwert**.",
         "say": "Frage: Wie oft passt ein Viertel in eine Hälfte? Zweimal. Genau das kommt raus.",
         "tasks": [
           {

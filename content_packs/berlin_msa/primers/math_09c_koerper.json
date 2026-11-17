@@ -59,7 +59,18 @@
             "why": "Sechs Flächen mit je 4 Quadratzentimetern ergeben 24. Es bleibt eine Fläche, also Quadratzentimeter.",
             "hint": "Die Zahl 24 stimmt bei beiden. Schau auf die Einheit: Welche kleine Hochzahl gehört zu einer Fläche?"
           }
-        ]
+        ],
+        "figure": {
+          "type": "box",
+          "a": 4,
+          "b": 3,
+          "c": 2,
+          "labels": {
+            "a": "4 cm",
+            "b": "3 cm",
+            "c": "2 cm"
+          }
+        }
       },
       {
         "title": "Liter",
@@ -93,22 +104,55 @@
             "why": "Boden mal Höhe: 12 mal 5 ergibt 60.",
             "hint": "Die Formel heißt Boden mal Höhe. Rechnest du plus oder mal?"
           }
+        ],
+        "figures": [
+          {
+            "caption": "Quader",
+            "figure": {
+              "type": "box",
+              "a": 4,
+              "b": 3,
+              "c": 3,
+              "labels": {
+                "c": "h"
+              }
+            }
+          },
+          {
+            "caption": "Zylinder",
+            "figure": {
+              "type": "cylinder",
+              "r": 2,
+              "h": 4,
+              "labels": {
+                "h": "h"
+              }
+            }
+          },
+          {
+            "caption": "Prisma",
+            "figure": {
+              "type": "prism",
+              "a": 4,
+              "h": 5,
+              "labels": {
+                "h": "h"
+              }
+            }
+          }
         ]
       },
       {
-        "chapter": "Dose, Pyramide, Kegel und Kugel",
-        "title": "Der Zylinder",
-        "body": "Der Boden ist ein Kreis: $G = \\pi \\cdot r^2$\n\nDer **Radius** $r$ reicht von der Mitte zum Rand. Der **Durchmesser** ist doppelt so lang.\n\n$V = \\pi \\cdot 3^2 \\cdot 10 \\approx 283\\ \\text{cm}^3$",
+        "chapter": "Der Kreis und die Dose",
+        "title": "Der Kreis",
+        "body": "Der Boden einer Dose ist ein Kreis.\n\nDer **Radius** $r$ reicht von der Mitte bis zum Rand.\n\nDer **Durchmesser** $d$ geht einmal quer durch die Mitte.\n\n$d = 2 \\cdot r$",
         "figure": {
-          "type": "cylinder",
-          "r": 3,
-          "h": 10,
+          "type": "circle",
           "labels": {
-            "r": "r = 3 cm",
-            "h": "h = 10 cm"
+            "r": "r",
+            "d": "d"
           }
         },
-        "say": "Ein Zylinder ist eine Dose. Du rechnest die Fläche des Kreises aus und nimmst sie mal die Höhe. Das Zeichen in der Formel heißt Pi und steht für die Zahl 3,14. Dein Taschenrechner hat dafür eine eigene Taste. Achte darauf, ob in der Aufgabe der Radius oder der Durchmesser steht.",
         "tasks": [
           {
             "text": "Der Durchmesser einer Dose ist 10 cm. Der Radius ist ___.",
@@ -120,11 +164,109 @@
             "why": "Der Radius ist die Hälfte vom Durchmesser.",
             "hint": "Der Radius reicht nur von der Mitte bis zum Rand."
           }
+        ],
+        "say": "Bevor wir zur Dose kommen, schauen wir uns den Kreis an, denn der Boden einer Dose ist ein Kreis. Zwei Längen sind wichtig. Der Radius geht von der Mitte bis zum Rand. Der Durchmesser geht von Rand zu Rand durch die Mitte und ist deshalb doppelt so lang."
+      },
+      {
+        "title": "Umfang des Kreises",
+        "body": "Wie lang ist der Rand eines Kreises?\n\nNimm den Durchmesser mal 3,14.\n\nDie Zahl 3,14 heißt **Pi**. Ihr Zeichen ist $\\pi$.\n\n$U = \\pi \\cdot d$\n\nBeispiel: $d = 10$ cm\n\n$U \\approx 3{,}14 \\cdot 10 = 31{,}4$ cm",
+        "figure": {
+          "type": "circle",
+          "labels": {
+            "d": "d = 10 cm",
+            "u": "U ≈ 31,4 cm"
+          }
+        },
+        "tasks": [
+          {
+            "text": "Ein Teller hat den Durchmesser 20 cm. Sein Rand ist etwa ___ lang.",
+            "choices": [
+              "62,8 cm",
+              "23,14 cm"
+            ],
+            "correct": "62,8 cm",
+            "why": "Durchmesser mal Pi: 20 mal 3,14 ergibt 62,8.",
+            "hint": "Rechnest du den Durchmesser mal Pi oder plus Pi?"
+          }
+        ],
+        "say": "Leg einen Faden einmal um einen Teller und miss ihn. Er ist immer etwas mehr als dreimal so lang, wie der Teller breit ist. Genauer gesagt 3,14-mal. Diese Zahl ist bei jedem Kreis gleich. Sie heißt Pi, und dein Taschenrechner hat dafür eine eigene Taste."
+      },
+      {
+        "title": "Umfang mit dem Radius",
+        "body": "Oft kennst du nur den Radius.\n\nZwei Radien sind ein Durchmesser: $d = 2 \\cdot r$\n\nAlso: $U = \\pi \\cdot 2 \\cdot r$\n\nAuf dem Formelblatt steht die 2 vorn:\n\n$U = 2 \\cdot \\pi \\cdot r$",
+        "figure": {
+          "type": "circle",
+          "labels": {
+            "r": "r",
+            "u": "U = 2 · π · r"
+          }
+        },
+        "tasks": [
+          {
+            "text": "$r = 5$ cm. Der Umfang ist etwa ___.",
+            "choices": [
+              "31,4 cm",
+              "15,7 cm"
+            ],
+            "correct": "31,4 cm",
+            "why": "Zweimal 5 ist 10, und 10 mal 3,14 ergibt 31,4.",
+            "hint": "Verdopple zuerst den Radius. Was kommt danach?"
+          }
+        ],
+        "say": "In vielen Aufgaben steht nur der Radius. Das macht nichts, denn zwei Radien ergeben den Durchmesser. Du verdoppelst also den Radius und nimmst das Ergebnis mal Pi. Auf dem Formelblatt steht die Zwei ganz vorn. Das ist dieselbe Rechnung, nur in anderer Reihenfolge."
+      },
+      {
+        "title": "Fläche des Kreises",
+        "body": "$A = \\pi \\cdot r \\cdot r$\n\nKürzer geschrieben: $A = \\pi \\cdot r^2$\n\nBeispiel: $r = 3$ cm\n\n$3 \\cdot 3 = 9$\n\n$A \\approx 3{,}14 \\cdot 9 = 28{,}3\\ \\text{cm}^2$",
+        "figure": {
+          "type": "circle",
+          "labels": {
+            "r": "r = 3 cm"
+          }
+        },
+        "tasks": [
+          {
+            "text": "$r = 2$ cm. Die Kreisfläche ist etwa ___.",
+            "choices": [
+              "$12{,}6\\ \\text{cm}^2$",
+              "$6{,}3\\ \\text{cm}^2$"
+            ],
+            "correct": "$12{,}6\\ \\text{cm}^2$",
+            "why": "2 mal 2 ist 4, und 4 mal 3,14 ergibt etwa 12,6.",
+            "hint": "Rechne zuerst Radius mal Radius. Erst danach kommt Pi."
+          }
+        ],
+        "say": "Für die Fläche brauchst du den Radius zweimal. Du nimmst ihn mit sich selbst mal und danach mal Pi. Die kleine 2 ist nur die kurze Schreibweise für Radius mal Radius. Weil es eine Fläche ist, steht am Ende Quadratzentimeter."
+      },
+      {
+        "title": "Der Zylinder",
+        "body": "Eine Dose: Der Boden ist ein Kreis.\n\nBoden: $G = \\pi \\cdot r^2$\n\nVolumen: Boden mal Höhe\n\nBeispiel: $r = 3$ cm und $h = 10$ cm\n\nBoden: $G \\approx 28{,}3\\ \\text{cm}^2$\n\nVolumen: $V \\approx 28{,}3 \\cdot 10 = 283\\ \\text{cm}^3$",
+        "figure": {
+          "type": "cylinder",
+          "r": 3,
+          "h": 10,
+          "labels": {
+            "r": "r = 3 cm",
+            "h": "h = 10 cm"
+          }
+        },
+        "say": "Ein Zylinder ist eine Dose. Ihr Boden ist ein Kreis, und dessen Fläche kannst du jetzt ausrechnen. Danach gilt dieselbe Regel wie beim Quader: Boden mal Höhe. Du rechnest also in zwei Schritten, erst den Boden und dann das Volumen.",
+        "tasks": [
+          {
+            "text": "Eine Dose hat den Boden $G = 50\\ \\text{cm}^2$ und die Höhe 8 cm. $V = $ ___",
+            "choices": [
+              "$400\\ \\text{cm}^3$",
+              "$58\\ \\text{cm}^3$"
+            ],
+            "correct": "$400\\ \\text{cm}^3$",
+            "why": "Boden mal Höhe: 50 mal 8 ergibt 400.",
+            "hint": "Gilt bei der Dose Boden mal Höhe oder Boden plus Höhe?"
+          }
         ]
       },
       {
         "title": "Der Mantel",
-        "body": "Der **Mantel** ist die Wand außen herum, ohne Deckel und Boden.\n\nAbgerollt ein Rechteck: $M = U \\cdot h = 2\\pi r \\cdot h$\n\n$M$ steht für den Mantel, $U$ für den Umfang des Kreises.",
+        "body": "Der **Mantel** ist die Wand außen herum, ohne Deckel und Boden.\n\nRolle das Etikett ab: Es ist ein Rechteck.\n\nBreite: der Umfang $U$ des Kreises\n\nHöhe: $h$\n\n$M = U \\cdot h$\n\n$M$ steht für den Mantel.",
         "say": "Schneide in Gedanken das Etikett einer Dose auf und leg es flach auf den Tisch. Du siehst ein Rechteck. Seine Breite ist der Umfang des Kreises, und seine Höhe ist die Höhe der Dose. Deshalb rechnest du für den Mantel Umfang mal Höhe.",
         "tasks": [
           {
@@ -137,9 +279,45 @@
             "why": "Abgerollt ist der Mantel ein Rechteck. Du rechnest Umfang mal Höhe, also 20 mal 10.",
             "hint": "Das abgerollte Etikett ist ein Rechteck. Wie berechnest du dessen Fläche?"
           }
-        ]
+        ],
+        "figure": {
+          "type": "cylinder",
+          "r": 3,
+          "h": 10,
+          "labels": {
+            "r": "r",
+            "h": "h"
+          }
+        }
       },
       {
+        "title": "Der Mantel mit dem Radius",
+        "body": "Kennst du nur den Radius? Rechne zuerst den Umfang aus.\n\nBeispiel: $r = 5$ cm und $h = 10$ cm\n\nUmfang: $U \\approx 31{,}4$ cm\n\nMantel: $M \\approx 31{,}4 \\cdot 10 = 314\\ \\text{cm}^2$\n\nDas Formelblatt schreibt beides in eine Zeile:\n\n$M = 2 \\cdot \\pi \\cdot r \\cdot h$",
+        "figure": {
+          "type": "cylinder",
+          "r": 5,
+          "h": 10,
+          "labels": {
+            "r": "r = 5 cm",
+            "h": "h = 10 cm"
+          }
+        },
+        "tasks": [
+          {
+            "text": "$r = 1$ cm, also $U \\approx 6{,}28$ cm. Die Dose ist 10 cm hoch. $M \\approx$ ___",
+            "choices": [
+              "$62{,}8\\ \\text{cm}^2$",
+              "$16{,}28\\ \\text{cm}^2$"
+            ],
+            "correct": "$62{,}8\\ \\text{cm}^2$",
+            "why": "Umfang mal Höhe: 6,28 mal 10 ergibt 62,8.",
+            "hint": "Der Umfang steht schon da. Womit nimmst du ihn mal?"
+          }
+        ],
+        "say": "Hier steckst du zwei Schritte zusammen, die du schon kannst. Zuerst rechnest du aus dem Radius den Umfang aus. Dann nimmst du den Umfang mal die Höhe. Das Formelblatt schreibt beide Schritte in eine einzige Zeile. Lies sie so: Zwei mal Pi mal Radius ist der Umfang, und dahinter steht mal Höhe."
+      },
+      {
+        "chapter": "Spitze Körper und die Kugel",
         "title": "Spitze Körper: ein Drittel",
         "body": "Eine **Pyramide** hat einen eckigen Boden und eine Spitze.\n\nEin **Kegel** hat einen runden Boden und eine Spitze.\n\n$V = \\frac{1}{3} \\cdot G \\cdot h$",
         "say": "Ein Kegel sieht aus wie eine Eistüte. In einen Quader passen genau drei Pyramiden mit demselben Boden und derselben Höhe. Deshalb steht in der Formel ein Drittel. Du rechnest also Boden mal Höhe und teilst das Ergebnis durch 3.",
@@ -153,6 +331,30 @@
             "correct": "$100\\ \\text{cm}^3$",
             "why": "Boden mal Höhe ergibt 300. Ein Drittel davon ist 100.",
             "hint": "Boden mal Höhe ergibt 300. Was fehlt noch bei spitzen Körpern?"
+          }
+        ],
+        "figures": [
+          {
+            "caption": "Pyramide",
+            "figure": {
+              "type": "pyramid",
+              "a": 4,
+              "h": 5,
+              "labels": {
+                "h": "h"
+              }
+            }
+          },
+          {
+            "caption": "Kegel",
+            "figure": {
+              "type": "cone",
+              "r": 2,
+              "h": 5,
+              "labels": {
+                "h": "h"
+              }
+            }
           }
         ]
       },
@@ -171,7 +373,13 @@
             "why": "Das Volumen hat den Buchstaben V, und in seiner Formel steht r hoch 3.",
             "hint": "Mit welchem Buchstaben wird das Volumen abgekürzt?"
           }
-        ]
+        ],
+        "figure": {
+          "type": "sphere",
+          "labels": {
+            "r": "r"
+          }
+        }
       },
       {
         "title": "Jetzt du: Was wird gesucht?",
