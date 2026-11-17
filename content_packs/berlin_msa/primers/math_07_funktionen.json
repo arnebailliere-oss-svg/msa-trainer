@@ -34,9 +34,42 @@
         ]
       },
       {
-        "title": "Schreibweisen",
-        "body": "$y = 2x + 1$ oder $f(x) = 2x + 1$\n\n$f(3) = 2 \\cdot 3 + 1 = 7$\n\n„f von 3 ist 7“",
-        "say": "Für dieselbe Maschine gibt es zwei Schreibweisen. Die zweite liest man f von x. Wenn in der Klammer eine 3 steht, bedeutet das nicht mal 3. Es bedeutet: Steck die 3 in die Maschine mit dem Namen f.",
+        "title": "Die Maschine bekommt einen Namen",
+        "body": "Unsere Maschine: **verdopple und plus 1**.\n\nDamit man über sie sprechen kann, bekommt sie einen Namen.\n\nSie heißt **f**.\n\nf ist nur ein Name, so wie Max oder Lena.",
+        "tasks": [
+          {
+            "text": "Eine zweite Maschine macht: mal 3. Ein passender Name für sie ist ___.",
+            "choices": [
+              "g",
+              "3"
+            ],
+            "correct": "g",
+            "why": "Maschinen bekommen einen Buchstaben als Namen. Nach f nimmt man oft g.",
+            "hint": "Ist der Name einer Maschine eine Zahl oder ein Buchstabe?"
+          }
+        ],
+        "say": "Wenn es mehrere Maschinen gibt, muss man sie auseinanderhalten können. Deshalb gibt man jeder einen kurzen Namen. Meistens nimmt man den Buchstaben f, weil das Wort Funktion mit f beginnt. Eine zweite Maschine würde man g nennen. Mehr steckt hinter dem Buchstaben nicht."
+      },
+      {
+        "title": "So liest man f(x)",
+        "body": "$f(x)$\n\nMan liest: **f von x**.\n\nEs bedeutet: das, was die Maschine f aus der Zahl $x$ macht.\n\nDie Klammer heißt hier **nicht** mal.",
+        "tasks": [
+          {
+            "text": "Eine Maschine heißt g. $g(x)$ liest man ___.",
+            "choices": [
+              "g von x",
+              "g mal x"
+            ],
+            "correct": "g von x",
+            "why": "Die Klammer zeigt, was in die Maschine g hineinkommt. Sie bedeutet nicht mal.",
+            "hint": "Ist g hier eine Zahl, mit der man malnimmt, oder der Name einer Maschine?"
+          }
+        ],
+        "say": "Jetzt kommt eine neue Schreibweise. Hinter dem Namen der Maschine steht eine Klammer, und in der Klammer steht die Zahl, die hineinkommt. Das Ganze liest du f von x. Vorsicht: Sonst bedeutet eine Klammer oft mal. Hier nicht. Hier zeigt sie nur, was in die Maschine hineinkommt."
+      },
+      {
+        "title": "Eine Zahl in die Maschine stecken",
+        "body": "$f(x) = 2x + 1$\n\n$f(3)$ heißt: Steck die 3 in die Maschine f.\n\nÜberall, wo $x$ steht, schreibst du 3:\n\n$2 \\cdot 3 + 1$\n\nDas ergibt $6 + 1$, also 7.\n\nMan schreibt: $f(3) = 7$. Man liest: f von 3 ist 7.",
         "tasks": [
           {
             "text": "$f(x) = 2x + 1$. Dann ist $f(5) = $ ___",
@@ -45,8 +78,26 @@
               "10"
             ],
             "correct": "11",
-            "why": "Die 5 kommt für das x hinein: 2 mal 5 plus 1 ergibt 11.",
-            "hint": "Setz die 5 für das x ein. Vergiss das plus 1 am Ende nicht."
+            "why": "Du setzt 5 für x ein: 2 mal 5 ist 10, und 10 plus 1 ergibt 11.",
+            "hint": "Du hast 2 mal 5 gerechnet. Was steht in der Regel noch dahinter?"
+          }
+        ],
+        "say": "Die erste Zeile ist die Regel der Maschine. Steht in der Klammer statt x eine Zahl, dann setzt du diese Zahl überall ein, wo in der Regel ein x steht. Danach rechnest du Schritt für Schritt aus. Erst mal, dann plus. Das Ergebnis ist die Zahl, die aus der Maschine herauskommt."
+      },
+      {
+        "title": "Zwei Schreibweisen, dieselbe Maschine",
+        "body": "$y = 2x + 1$\n\n$f(x) = 2x + 1$\n\nBeide Zeilen beschreiben dieselbe Maschine.\n\n$y$ ist die Zahl, die herauskommt.\n\n$f(x)$ ist auch die Zahl, die herauskommt.",
+        "say": "In Aufgaben siehst du mal die eine und mal die andere Schreibweise. Beide meinen dasselbe. Links steht jeweils die Zahl, die herauskommt, einmal mit dem Namen y und einmal mit dem Namen f von x. Rechts steht die Regel. Du darfst die eine Schreibweise jederzeit durch die andere ersetzen.",
+        "tasks": [
+          {
+            "text": "$f(x) = 3x$. Dieselbe Maschine, mit $y$ geschrieben: ___",
+            "choices": [
+              "$y = 3x$",
+              "$y = f \\cdot 3x$"
+            ],
+            "correct": "$y = 3x$",
+            "why": "Statt f von x schreibst du einfach y. Die Regel rechts bleibt gleich.",
+            "hint": "Welcher Teil ändert sich: der Name links oder die Regel rechts?"
           }
         ]
       },

@@ -79,6 +79,24 @@ migrate("primers/math_07_funktionen.json", (p, h) => {
   );
   h.body("Nullstelle", "Wo ist $y = 0$?", "$2x + 1 = 0 \\quad | -1$", "$2x = -1 \\quad | :2$", "$x = -0{,}5$", "Dort schneidet die Gerade die x-Achse. Diese Stelle heißt **Nullstelle**.");
 
+  // One idea per board: f as a name, how f(x) is read, putting a number in, and only then the two ways of writing.
+  h.before(
+    "Schreibweisen",
+    b("Die Maschine bekommt einen Namen", ["Unsere Maschine: **verdopple und plus 1**.", "Damit man über sie sprechen kann, bekommt sie einen Namen.", "Sie heißt **f**.", "f ist nur ein Name, so wie Max oder Lena."], "Wenn es mehrere Maschinen gibt, muss man sie auseinanderhalten können. Deshalb gibt man jeder einen kurzen Namen. Meistens nimmt man den Buchstaben f, weil das Wort Funktion mit f beginnt. Eine zweite Maschine würde man g nennen. Mehr steckt hinter dem Buchstaben nicht.", {
+      tasks: [k("Eine zweite Maschine macht: mal 3. Ein passender Name für sie ist ___.", "g", ["3"], "Maschinen bekommen einen Buchstaben als Namen. Nach f nimmt man oft g.", "Ist der Name einer Maschine eine Zahl oder ein Buchstabe?")],
+    }),
+    b("So liest man f(x)", ["$f(x)$", "Man liest: **f von x**.", "Es bedeutet: das, was die Maschine f aus der Zahl $x$ macht.", "Die Klammer heißt hier **nicht** mal."], "Jetzt kommt eine neue Schreibweise. Hinter dem Namen der Maschine steht eine Klammer, und in der Klammer steht die Zahl, die hineinkommt. Das Ganze liest du f von x. Vorsicht: Sonst bedeutet eine Klammer oft mal. Hier nicht. Hier zeigt sie nur, was in die Maschine hineinkommt.", {
+      tasks: [k("Eine Maschine heißt g. $g(x)$ liest man ___.", "g von x", ["g mal x"], "Die Klammer zeigt, was in die Maschine g hineinkommt. Sie bedeutet nicht mal.", "Ist g hier eine Zahl, mit der man malnimmt, oder der Name einer Maschine?")],
+    }),
+    b("Eine Zahl in die Maschine stecken", ["$f(x) = 2x + 1$", "$f(3)$ heißt: Steck die 3 in die Maschine f.", "Überall, wo $x$ steht, schreibst du 3:", "$2 \\cdot 3 + 1$", "Das ergibt $6 + 1$, also 7.", "Man schreibt: $f(3) = 7$. Man liest: f von 3 ist 7."], "Die erste Zeile ist die Regel der Maschine. Steht in der Klammer statt x eine Zahl, dann setzt du diese Zahl überall ein, wo in der Regel ein x steht. Danach rechnest du Schritt für Schritt aus. Erst mal, dann plus. Das Ergebnis ist die Zahl, die aus der Maschine herauskommt.", {
+      tasks: [k("$f(x) = 2x + 1$. Dann ist $f(5) = $ ___", "11", ["10"], "Du setzt 5 für x ein: 2 mal 5 ist 10, und 10 plus 1 ergibt 11.", "Du hast 2 mal 5 gerechnet. Was steht in der Regel noch dahinter?")],
+    }),
+  );
+  h.rename("Schreibweisen", "Zwei Schreibweisen, dieselbe Maschine");
+  h.body("Zwei Schreibweisen, dieselbe Maschine", "$y = 2x + 1$", "$f(x) = 2x + 1$", "Beide Zeilen beschreiben dieselbe Maschine.", "$y$ ist die Zahl, die herauskommt.", "$f(x)$ ist auch die Zahl, die herauskommt.");
+  h.say("Zwei Schreibweisen, dieselbe Maschine", "In Aufgaben siehst du mal die eine und mal die andere Schreibweise. Beide meinen dasselbe. Links steht jeweils die Zahl, die herauskommt, einmal mit dem Namen y und einmal mit dem Namen f von x. Rechts steht die Regel. Du darfst die eine Schreibweise jederzeit durch die andere ersetzen.");
+  h.tasks("Zwei Schreibweisen, dieselbe Maschine", k("$f(x) = 3x$. Dieselbe Maschine, mit $y$ geschrieben: ___", "$y = 3x$", ["$y = f \\cdot 3x$"], "Statt f von x schreibst du einfach y. Die Regel rechts bleibt gleich.", "Welcher Teil ändert sich: der Name links oder die Regel rechts?"));
+
   // New topics: linear and exponential growth (on the Spickzettel, taught nowhere before).
   p.requires = ["P_MATH_ZEICHEN", "P_MATH_BRUCH", "P_MATH_TERME", "P_MATH_GLEICHUNG", "P_MATH_PROZENT"];
   h.before(
