@@ -516,5 +516,11 @@ append(
   ),
 );
 
+// Links from Spickzettel cards to the owl lesson that now teaches the topic ("Zu schwer? Frag Ferdinand").
+sec("L_MATH_ALG_EQU", "Binomische Formeln").primer = "P_MATH_TERME";
+sec("L_MATH_DATA", "Häufigkeit und Wahrscheinlichkeit").primer = "P_MATH_STOCHASTIK";
+sec("L_MATH_DATA", "Diagramme").primer = "P_MATH_STOCHASTIK";
+sec("L_MATH_NUM_PCT", "Prozentuale Änderung (Rabatt, Erhöhung, Zinsen)").primer = "P_MATH_PROZENT";
+
 for (const f of Object.keys(files)) fs.writeFileSync(path.join(dir, f), JSON.stringify(files[f], null, 2) + "\n");
 console.log("letters explained on the maths Spickzettel");

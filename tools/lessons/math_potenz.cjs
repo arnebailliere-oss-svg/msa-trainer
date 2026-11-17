@@ -1,6 +1,6 @@
 // P_MATH_POTENZ to the standard: boards stay; chapters, tap tasks and hints are added.
 // New: the pattern that shows why "hoch 0" is 1 and why a negative exponent gives a fraction.
-const { migrate, k, b } = require("./migrate.cjs");
+const { migrate, k, b, q } = require("./migrate.cjs");
 
 migrate("primers/math_04_potenzen.json", (p, h) => {
   p.requires = ["P_MATH_ZEICHEN", "P_MATH_BRUCH"];
@@ -61,6 +61,32 @@ migrate("primers/math_04_potenzen.json", (p, h) => {
   h.body("Mal bei gleicher Basis", "$2^3 \\cdot 2^2$", "Ausgeschrieben: $2 \\cdot 2 \\cdot 2 \\cdot 2 \\cdot 2$", "Das sind fünf Zweier: $2^5$", "Hochzahlen **addieren**: $3 + 2 = 5$");
   h.body("Geteilt bei gleicher Basis", "$\\frac{2^5}{2^2}$", "Ausgeschrieben: $\\frac{2 \\cdot 2 \\cdot 2 \\cdot 2 \\cdot 2}{2 \\cdot 2}$", "Zwei Zweier kürzen sich weg, drei bleiben: $2^3$", "Hochzahlen **subtrahieren**: $5 - 2 = 3$");
 
+  // New topics: power of a power, same exponent, and the root laws from the Spickzettel.
+  h.after(
+    "Nur bei gleicher Basis",
+    b("Potenz hoch Potenz", ["$(2^3)^2$", "Das heißt: $2^3 \\cdot 2^3$", "Ausgeschrieben sind das sechs Zweier: $2^6$", "Hochzahlen **malnehmen**: $3 \\cdot 2 = 6$"], "Hier steht eine Potenz in einer Klammer und bekommt noch eine Hochzahl. Die äußere Hochzahl sagt, wie oft die ganze Klammer dasteht. Zweimal drei Zweier sind sechs Zweier. Deshalb nimmst du die beiden Hochzahlen miteinander mal.", {
+      tasks: [k("$(5^2)^4 = $ ___", "$5^8$", ["$5^6$"], "Die Klammer steht viermal da, jedes Mal mit zwei Fünfern. Das sind acht Fünfer.", "Wie oft steht die Klammer da, und wie viele Fünfer stecken in jeder?")],
+    }),
+    b("Gleiche Hochzahl", ["$2^2 \\cdot 5^2$", "Ausgeschrieben: $2 \\cdot 2 \\cdot 5 \\cdot 5$", "Umsortiert: $(2 \\cdot 5) \\cdot (2 \\cdot 5)$", "Das ist $10^2 = 100$.", "Bei gleicher Hochzahl darfst du die Basen malnehmen."], "Hier sind die Basen verschieden, aber die Hochzahlen gleich. Dann kannst du die Zahlen paarweise zusammenlegen: immer eine 2 mit einer 5. Aus jedem Paar wird eine 10. Das spart oft viel Rechnerei, zum Beispiel bei 2 hoch 3 mal 5 hoch 3.", {
+      tasks: [k("$2^3 \\cdot 5^3 = $ ___", "$10^3$", ["$10^6$"], "Die Basen werden malgenommen: 2 mal 5 ist 10. Die Hochzahl 3 bleibt.", "Was passiert mit der Hochzahl, wenn sie bei beiden gleich ist?")],
+    }),
+  );
+  h.after(
+    "Wurzel aus Minus?",
+    b("Wurzeln malnehmen", ["$\\sqrt{4} \\cdot \\sqrt{9}$", "Einzeln: $2 \\cdot 3 = 6$", "Unter einem Dach: $\\sqrt{4 \\cdot 9} = \\sqrt{36}$, und das ist auch 6.", "Beim Malnehmen darfst du zwei Wurzeln unter ein Wurzelzeichen schreiben."], "Probier es mit Zahlen aus, bei denen du die Wurzel kennst. Ob du erst die Wurzeln ziehst und dann malnimmst oder erst malnimmst und dann die Wurzel ziehst, das Ergebnis ist gleich. Das hilft bei krummen Wurzeln: Wurzel 5 mal Wurzel 20 ist Wurzel 100, also 10.", {
+      tasks: [k("$\\sqrt{2} \\cdot \\sqrt{8} = $ ___", "4", ["16"], "Unter einem Dach steht 2 mal 8, also 16. Die Wurzel aus 16 ist 4.", "Was steht unter dem gemeinsamen Wurzelzeichen, und was ist davon die Wurzel?")],
+    }),
+    b("Wurzeln teilen", ["$\\frac{\\sqrt{50}}{\\sqrt{2}}$", "Unter einem Dach: $\\sqrt{50 : 2}$", "$\\sqrt{25} = 5$", "Beim Teilen gilt dasselbe wie beim Malnehmen."], "Auch beim Teilen darfst du beide Zahlen unter ein gemeinsames Wurzelzeichen schreiben. Erst teilst du die Zahlen, dann ziehst du die Wurzel. Bei Plus und Minus geht das nicht. Wurzel 9 plus Wurzel 16 ist 3 plus 4, also 7, und nicht Wurzel 25.", {
+      tasks: [k("$\\frac{\\sqrt{18}}{\\sqrt{2}} = $ ___", "3", ["9"], "18 geteilt durch 2 ist 9. Die Wurzel aus 9 ist 3.", "Du hast geteilt. Welcher Schritt fehlt danach noch?")],
+    }),
+    b("Die dritte Wurzel", ["$\\sqrt[3]{8} = 2$, weil $2 \\cdot 2 \\cdot 2 = 8$", "Die kleine 3 am Wurzelzeichen fragt: Welche Zahl **dreimal** mit sich selbst mal ergibt das?", "$\\sqrt[3]{27} = 3$, weil $3 \\cdot 3 \\cdot 3 = 27$"], "Die normale Wurzel gehört zu hoch 2. Es gibt auch eine Wurzel zu hoch 3, die dritte Wurzel. Du erkennst sie an der kleinen 3 im Wurzelzeichen. Sie macht hoch 3 rückgängig, so wie die normale Wurzel hoch 2 rückgängig macht.", {
+      tasks: [k("$\\sqrt[3]{1000} = $ ___", "10", ["100"], "10 mal 10 mal 10 ergibt 1000. Also ist die dritte Wurzel 10.", "Welche Zahl ergibt dreimal mit sich selbst malgenommen 1000?")],
+    }),
+    b("Wurzel als Hochzahl", ["$9^{\\frac{1}{2}}$ ist dasselbe wie $\\sqrt{9}$, also 3.", "Hoch ein Halb ist nur eine andere Schreibweise für die Wurzel.", "$8^{\\frac{1}{3}}$ ist dasselbe wie $\\sqrt[3]{8}$, also 2.", "Hoch ein Drittel ist die dritte Wurzel."], "Auf dem Formelblatt steht die Wurzel manchmal als Bruch in der Hochzahl. Das sieht ungewohnt aus, bedeutet aber nichts Neues. Ein Halb in der Hochzahl heißt Wurzel, ein Drittel heißt dritte Wurzel. Der Nenner des Bruchs sagt dir, welche Wurzel gemeint ist.", {
+      tasks: [k("$16^{\\frac{1}{2}} = $ ___", "4", ["8"], "Hoch ein Halb bedeutet Wurzel. Die Wurzel aus 16 ist 4.", "Bedeutet hoch ein Halb die Hälfte oder die Wurzel?")],
+    }),
+  );
+
   h.chapters([
     ["Die Abkürzung", "Was eine Potenz ist"],
     ["Hoch 1 und hoch 0", "Besondere Hochzahlen"],
@@ -75,4 +101,6 @@ migrate("primers/math_04_potenzen.json", (p, h) => {
     "Die Wurzel fragt, welche Zahl mit sich selbst malgenommen 64 ergibt. Das ist 8.",
     "Bei gleicher Basis werden die Hochzahlen zusammengezählt: 2 plus 4 ist 6. Die Basis bleibt 3.",
   ]);
+  // New topics, words and quiz: added after the old quiz explanations.
+  h.quiz(q("Was ist $(3^2)^3$?", "$3^6$", ["$3^5$", "$3^8$", "$9^6$"], "Die Klammer steht dreimal da, jedes Mal mit zwei Dreien. Das sind sechs Dreien, also 3 hoch 6."));
 });

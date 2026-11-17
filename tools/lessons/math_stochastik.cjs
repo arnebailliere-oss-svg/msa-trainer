@@ -1,6 +1,6 @@
 // P_MATH_STOCHASTIK to the standard: boards and the tree figure stay; chapters, tap tasks and hints are added.
 // New: "without putting back" gets its own board (it was squeezed into one spoken line), plus a summary board.
-const { migrate, k, b } = require("./migrate.cjs");
+const { migrate, k, b, q } = require("./migrate.cjs");
 
 migrate("primers/math_06_stochastik.json", (p, h) => {
   p.requires = ["P_MATH_ZEICHEN", "P_MATH_BRUCH", "P_MATH_PROZENT"];
@@ -61,10 +61,31 @@ migrate("primers/math_06_stochastik.json", (p, h) => {
   h.body("Summenregel: plus", "Genau einmal rot: rot-blau **oder** blau-rot", "Weg rot-blau: $\\frac{3}{10} \\cdot \\frac{7}{10} = \\frac{21}{100}$", "Weg blau-rot: $\\frac{7}{10} \\cdot \\frac{3}{10} = \\frac{21}{100}$", "Zusammen: $\\frac{21}{100} + \\frac{21}{100} = \\frac{42}{100}$");
   h.body("Statistik: der Mittelwert", "Noten: 2, 3, 3, 4", "Zusammenzählen: $2 + 3 + 3 + 4 = 12$", "Durch die Anzahl teilen: $12 : 4 = 3$", "Alles zusammen, geteilt durch die Anzahl: Das ist der **Mittelwert**.");
 
+  // New topics: absolute and relative frequency, bar chart and pie chart (on the Spickzettel, taught nowhere before).
+  p.requires = ["P_MATH_ZEICHEN", "P_MATH_BRUCH", "P_MATH_PROZENT", "P_MATH_GEO_BEGRIFFE"];
+  h.before(
+    "Das nimmst du mit",
+    b("Absolute und relative Häufigkeit", ["10 Würfe, 2-mal kam die 6.", "Die **absolute Häufigkeit** ist 2. Das ist gezählt.", "Die **relative Häufigkeit** ist $\\frac{2}{10}$. Das ist der Anteil.", "In Prozent: 20 %"], "Wenn du etwas zählst, bekommst du die absolute Häufigkeit. Das ist einfach die Anzahl. Die relative Häufigkeit sagt, welcher Anteil von allen Versuchen das ist. Sie ist ein Bruch oder eine Prozentzahl. Nur mit ihr kannst du Gruppen vergleichen, die verschieden groß sind.", {
+      tasks: [k("In einer Klasse mit 20 Kindern tragen 5 eine Brille. Der Anteil der Kinder mit Brille ist ___.", "$\\frac{5}{20}$", ["5"], "Die 5 allein ist nur gezählt. Der Anteil ist 5 von 20.", "Gesucht ist der Anteil an allen Kindern, nicht nur die Anzahl.")],
+    }),
+    b("Das Säulendiagramm", ["Jede Säule steht für eine Gruppe.", "Die Höhe der Säule zeigt die Anzahl.", "Den Wert liest du links an der Achse ab.", "Im Bild: Am Dienstag waren es 18."], "Ein Säulendiagramm zeigt gezählte Werte nebeneinander. Du siehst auf einen Blick, welche Gruppe am größten und welche am kleinsten ist. Zum genauen Ablesen gehst du von der Oberkante der Säule waagerecht nach links bis zur Achse.", {
+      figure: { type: "barChart", categories: ["Mo", "Di", "Mi", "Do"], values: [12, 18, 9, 15] },
+      tasks: [k("Im Bild: Der kleinste Wert gehört zum ___.", "Mittwoch", ["Montag"], "Die Säule über Mi ist die niedrigste. Sie zeigt 9.", "Such die Säule, die am wenigsten hoch ist.")],
+    }),
+    b("Das Kreisdiagramm", ["Der ganze Kreis ist alles zusammen: 100 %.", "Jedes Stück zeigt einen Anteil.", "Ein ganzer Kreis hat 360°.", "Die Hälfte hat 180°, ein Viertel hat 90°."], "Ein Kreisdiagramm zeigt, wie sich ein Ganzes aufteilt. Es sieht aus wie eine Pizza mit verschieden großen Stücken. Je größer der Anteil, desto breiter das Stück. Wie breit ein Stück ist, misst man als Winkel in Grad.", {
+      figure: { type: "pieChart", categories: ["Bus", "Rad", "zu Fuß"], values: [2, 1, 1] },
+      tasks: [k("Ein Stück im Kreisdiagramm zeigt 25 %. Sein Winkel ist ___.", "90°", ["25°"], "25 Prozent sind ein Viertel. Ein Viertel von 360 Grad sind 90 Grad.", "Welcher Bruchteil vom ganzen Kreis sind 25 Prozent?")],
+    }),
+    b("Vom Anteil zum Winkel", ["12 von 36 Kindern kommen mit dem Bus.", "Anteil: $\\frac{12}{36}$, gekürzt $\\frac{1}{3}$", "Ein Drittel vom Kreis: $360° : 3 = 120°$", "Das Stück für den Bus bekommt 120°."], "So zeichnest du selbst ein Kreisdiagramm. Zuerst rechnest du den Anteil als Bruch aus und kürzt ihn. Dann nimmst du diesen Bruchteil von 360 Grad. Das Ergebnis ist der Winkel, den du mit dem Geodreieck abträgst.", {
+      tasks: [k("10 von 40 Kindern kommen mit dem Rad. Das Stück im Kreisdiagramm hat ___.", "90°", ["10°"], "10 von 40 ist ein Viertel. Ein Viertel von 360 Grad sind 90 Grad.", "Kürze zuerst den Bruch. Welcher Teil von 360 Grad ist das?")],
+    }),
+  );
+
   h.chapters([
     ["Wie viele von allen?", "Was Wahrscheinlichkeit bedeutet"],
     ["Zweimal ziehen: der Baum", "Zweimal ziehen"],
     ["Statistik: der Mittelwert", "Listen von Zahlen"],
+    ["Absolute und relative Häufigkeit", "Häufigkeit und Diagramme"],
   ]);
   h.renameVocab({ "Wahrscheinlichkeit P": "Wahrscheinlichkeit" });
   h.explain([
@@ -75,4 +96,11 @@ migrate("primers/math_06_stochastik.json", (p, h) => {
     "Zusammen ergeben die drei Werte 12. Geteilt durch 3 ist das 4.",
     "Du ziehst den kleinsten Wert vom größten ab: 15 minus 3 ergibt 12.",
   ]);
+  // New topics, words and quiz: added after the old quiz explanations.
+  p.vocab.push(
+    { term: "absolute Häufigkeit", plain: "Wie oft etwas vorkommt. Einfach gezählt.", example: "2-mal die 6" },
+    { term: "relative Häufigkeit", plain: "Der Anteil an allen Versuchen, als Bruch oder in Prozent.", example: "$\\frac{2}{10}$ oder 20 %" },
+    { term: "Kreisdiagramm", plain: "Ein Kreis, der in Stücke geteilt ist. Jedes Stück zeigt einen Anteil am Ganzen.", example: "25 % sind 90°" },
+  );
+  h.quiz(q("Von 60 Befragten mögen 20 am liebsten Pizza. Wie groß ist der Winkel für Pizza im Kreisdiagramm?", "120°", ["20°", "60°", "180°"], "20 von 60 ist ein Drittel. Ein Drittel von 360 Grad sind 120 Grad."));
 });

@@ -56,6 +56,20 @@ migrate("primers/math_02_prozent.json", (p, h) => {
   h.say("Das Ganze finden", "Du gehst über 1 Prozent. Wenn 20 Prozent 30 sind, teilst du durch 20 und hast 1 Prozent. Mal 100 ergibt das Ganze. Mit dem Taschenrechner geht es in einem Schritt: Teil geteilt durch den Prozentsatz als Dezimalzahl.");
   h.body("Zinsen im zweiten Jahr", "Nach einem Jahr: 510 €", "Im zweiten Jahr gibt es Zinsen auf **510 €**:", "$510 \\cdot 0{,}02 = 10{,}20$ €", "Neuer Stand: $510 + 10{,}20 = 520{,}20$ €", "Die Zinsen bekommen selbst Zinsen. Das nennt man **Zinseszins**.");
 
+  // New topics: the growth factor and the compound interest formula from the Formelblatt, built step by step.
+  h.after(
+    "Zinsen im zweiten Jahr",
+    b("Der Faktor", ["2 % Zinsen dazu: Aus 100 % werden 102 %.", "Als Dezimalzahl: $1{,}02$", "$500 \\cdot 1{,}02 = 510$ €", "Eine Zahl, mit der man malnimmt, heißt **Faktor**. Diese hier heißt **Wachstumsfaktor**."], "Du kannst die Zinsen in einem einzigen Schritt dazurechnen. Das Geld vom Anfang sind 100 Prozent, dazu kommen 2 Prozent. Zusammen sind das 102 Prozent, also 1,02. Wenn du mit dieser Zahl malnimmst, hast du sofort den neuen Stand.", {
+      tasks: [k("5 % Zinsen. Der Faktor ist ___.", "1,05", ["0,05"], "Aus 100 Prozent werden 105 Prozent. Als Dezimalzahl ist das 1,05.", "Wie viel Prozent hast du nach einem Jahr insgesamt: nur die Zinsen oder alles zusammen?")],
+    }),
+    b("Mehrere Jahre", ["Jedes Jahr mal 1,02:", "Nach 1 Jahr: $500 \\cdot 1{,}02$", "Nach 2 Jahren: $500 \\cdot 1{,}02 \\cdot 1{,}02$", "Kürzer: $500 \\cdot 1{,}02^2 = 520{,}20$ €", "Die Hochzahl zählt die Jahre."], "Für jedes Jahr nimmst du noch einmal mit dem Faktor mal. Nach zwei Jahren steht der Faktor zweimal da, nach zehn Jahren zehnmal. Dafür gibt es die Hochzahl, die du schon kennst. Sie zählt einfach, wie oft der Faktor dasteht.", {
+      tasks: [k("1000 € bei 3 % Zinsen nach 4 Jahren: $1000 \\cdot 1{,}03$ hoch ___", "4", ["3"], "Der Faktor steht für jedes Jahr einmal da, also viermal.", "Was zählt die Hochzahl: die Prozent oder die Jahre?")],
+    }),
+    b("Die Formel vom Formelblatt", ["$K_n = K_0 \\cdot \\left(1 + \\frac{p}{100}\\right)^n$", "$K_0$: das Kapital am Anfang", "$1 + \\frac{p}{100}$: der Faktor, bei 2 % also 1,02", "$n$: die Anzahl der Jahre", "$K_n$: das Kapital nach $n$ Jahren"], "Diese Zeile sieht schwierig aus, sagt aber genau das, was du gerade gerechnet hast. Vorn steht das Geld vom Anfang. In der Klammer steht der Faktor. Die Hochzahl zählt die Jahre. Heraus kommt das Geld nach dieser Zeit.", {
+      tasks: [k("800 € werden 5 Jahre lang zu 3 % angelegt. In der Formel ist $K_0 = $ ___", "800", ["5"], "Das K mit der kleinen 0 ist das Geld ganz am Anfang.", "Welche der Zahlen ist das Geld, mit dem alles beginnt?")],
+    }),
+  );
+
   h.chapters([
     ["Von hundert", "Was Prozent bedeutet"],
     ["Der Teil vom Ganzen", "Die drei Grundaufgaben"],
@@ -74,4 +88,7 @@ migrate("primers/math_02_prozent.json", (p, h) => {
     q("10 % sind 12 €. Wie viel sind 100 %?", "120 €", ["1,20 €", "22 €", "1200 €"], "100 Prozent sind zehnmal so viel wie 10 Prozent. Zehn mal 12 Euro sind 120 Euro."),
   );
   p.teaser = "Was Prozent bedeutet, welche drei Zahlen es immer gibt und wie du herausfindest, welche davon gesucht ist. Dazu Rabatt, Erhöhung und Zinsen.";
+  // New topics, words and quiz: added after the old quiz explanations.
+  p.vocab.push({ term: "Wachstumsfaktor", plain: "Die Zahl, mit der du malnimmst, um die Zinsen gleich dazuzurechnen.", example: "2 % mehr: mal 1,02" });
+  h.quiz(q("500 € werden 2 Jahre lang zu 10 % angelegt, und die Zinsen bleiben auf dem Konto. Wie viel ist es danach?", "605 €", ["600 €", "550 €", "510 €"], "Nach einem Jahr sind es 500 mal 1,1, also 550 €. Nach dem zweiten Jahr sind es 550 mal 1,1, also 605 €."));
 });

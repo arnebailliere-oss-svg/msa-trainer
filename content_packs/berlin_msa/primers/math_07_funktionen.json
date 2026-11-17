@@ -9,8 +9,10 @@
     "standard": 2,
     "requires": [
       "P_MATH_ZEICHEN",
+      "P_MATH_BRUCH",
       "P_MATH_TERME",
-      "P_MATH_GLEICHUNG"
+      "P_MATH_GLEICHUNG",
+      "P_MATH_PROZENT"
     ],
     "steps": [
       {
@@ -312,6 +314,7 @@
         }
       },
       {
+        "chapter": "Geraden lesen und prüfen",
         "title": "Die allgemeine Form",
         "body": "$y = m \\cdot x + n$\n\n$m$ = Steigung\n\n$n$ = Startwert auf der y-Achse",
         "say": "Diese Zeile steht auf dem Formelblatt. Die Buchstaben m und n sind Platzhalter für die zwei Zahlen, die eine Gerade festlegen. Du weißt jetzt, was beide tun: m ist die Steigung, und n ist der Startwert.",
@@ -330,7 +333,6 @@
         "widget": "line-explorer"
       },
       {
-        "chapter": "Geraden lesen und prüfen",
         "title": "Jetzt du: eine Gerade lesen",
         "body": "$y = -3x + 6$\n\nLies die Steigung und den Startwert ab.",
         "tasks": [
@@ -425,6 +427,122 @@
         }
       },
       {
+        "chapter": "Wachstum: plus oder mal",
+        "title": "Zwei Arten zu wachsen",
+        "body": "Sparschwein: jeden Monat **plus** 50 €\n\n100 €, 150 €, 200 €, 250 €\n\nImmer die gleiche Zahl dazu: Das heißt **lineares Wachstum**.\n\nDer Graph ist eine Gerade.",
+        "figure": {
+          "type": "barChart",
+          "categories": [
+            "Start",
+            "1",
+            "2",
+            "3"
+          ],
+          "values": [
+            100,
+            150,
+            200,
+            250
+          ]
+        },
+        "tasks": [
+          {
+            "text": "Ein Baum ist 200 cm hoch und wächst jedes Jahr 30 cm. Nach 2 Jahren ist er ___ hoch.",
+            "choices": [
+              "260 cm",
+              "230 cm"
+            ],
+            "correct": "260 cm",
+            "why": "Zweimal kommen 30 cm dazu: 200 plus 30 plus 30.",
+            "hint": "Wie oft kommen die 30 cm in zwei Jahren dazu?"
+          }
+        ],
+        "say": "Bis jetzt ging es um Geraden. Bei einer Geraden kommt mit jedem Schritt gleich viel dazu. Das nennt man lineares Wachstum. Beim Sparschwein sind es jeden Monat 50 Euro, egal wie voll es schon ist. Gleich siehst du eine zweite Art zu wachsen, die ganz anders verläuft."
+      },
+      {
+        "title": "Mal statt plus",
+        "body": "Bakterien: jede Stunde **mal** 2\n\n100, 200, 400, 800\n\nImmer mal die gleiche Zahl: Das heißt **exponentielles Wachstum**.\n\nEs wird mit jedem Schritt schneller.",
+        "figure": {
+          "type": "barChart",
+          "categories": [
+            "Start",
+            "1",
+            "2",
+            "3"
+          ],
+          "values": [
+            100,
+            200,
+            400,
+            800
+          ]
+        },
+        "tasks": [
+          {
+            "text": "3, 6, 12, 24: Hier wird in jedem Schritt ___.",
+            "choices": [
+              "mal 2 gerechnet",
+              "plus 3 gerechnet"
+            ],
+            "correct": "mal 2 gerechnet",
+            "why": "Von 3 auf 6 passt beides. Aber von 6 auf 12 passt nur mal 2.",
+            "hint": "Prüf deine Idee auch am zweiten und am dritten Schritt."
+          }
+        ],
+        "say": "Hier kommt nicht jedes Mal gleich viel dazu. Stattdessen wird jedes Mal mit derselben Zahl malgenommen. Am Anfang sieht das harmlos aus, aber die Sprünge werden immer größer. Von 400 auf 800 kommt mehr dazu als in allen Schritten davor zusammen."
+      },
+      {
+        "title": "Der Wachstumsfaktor",
+        "body": "Die Zahl, mit der malgenommen wird, heißt **Wachstumsfaktor** $q$.\n\nVerdoppeln: $q = 2$\n\n5 % mehr: $q = 1{,}05$\n\n20 % weniger: $q = 0{,}8$",
+        "tasks": [
+          {
+            "text": "Ein Wert steigt jedes Jahr um 3 %. Der Faktor ist $q = $ ___",
+            "choices": [
+              "1,03",
+              "0,03"
+            ],
+            "correct": "1,03",
+            "why": "Aus 100 Prozent werden 103 Prozent. Als Dezimalzahl ist das 1,03.",
+            "hint": "Wie viel Prozent sind nach einem Jahr insgesamt da?"
+          }
+        ],
+        "say": "Den Faktor kennst du aus der Prozentrechnung. Bei 5 Prozent mehr werden aus 100 Prozent 105 Prozent, also 1,05. Bei 20 Prozent weniger bleiben 80 Prozent, also 0,8. Ist der Faktor kleiner als 1, wird der Wert mit jedem Schritt kleiner. Das nennt man Abnahme."
+      },
+      {
+        "title": "Nach mehreren Schritten",
+        "body": "Start: 100 Bakterien, $q = 2$\n\nNach 1 Stunde: $100 \\cdot 2$\n\nNach 2 Stunden: $100 \\cdot 2 \\cdot 2$\n\nNach 3 Stunden: $100 \\cdot 2^3 = 800$\n\nDie Hochzahl zählt die Schritte.",
+        "tasks": [
+          {
+            "text": "Start 50, $q = 2$. Nach 2 Schritten sind es $50 \\cdot 2^2 = $ ___",
+            "choices": [
+              "200",
+              "100"
+            ],
+            "correct": "200",
+            "why": "2 hoch 2 ist 4, und 50 mal 4 ergibt 200.",
+            "hint": "Rechne zuerst die Zahl mit der Hochzahl aus. Erst danach kommt die 50."
+          }
+        ],
+        "say": "Für jeden Schritt nimmst du einmal mit dem Faktor mal. Nach drei Schritten steht der Faktor dreimal da. Das schreibst du kurz mit einer Hochzahl. Achte darauf: Der Faktor steht hoch 3 und nicht mal 3."
+      },
+      {
+        "title": "Die Formel für Wachstum",
+        "body": "$B(n) = B_0 \\cdot q^n$\n\n$B_0$: der Startwert\n\n$q$: der Wachstumsfaktor\n\n$n$: die Anzahl der Schritte\n\n$B(n)$: der Wert nach $n$ Schritten",
+        "tasks": [
+          {
+            "text": "Ein Auto kostet 10 000 € und verliert jedes Jahr 20 % an Wert. Nach $n$ Jahren ist es noch ___ wert.",
+            "choices": [
+              "$10\\,000 \\cdot 0{,}8^n$",
+              "$10\\,000 \\cdot 1{,}2^n$"
+            ],
+            "correct": "$10\\,000 \\cdot 0{,}8^n$",
+            "why": "20 Prozent weniger heißt: 80 Prozent bleiben. Der Faktor ist deshalb 0,8.",
+            "hint": "Wird der Wert größer oder kleiner? Was heißt das für den Faktor?"
+          }
+        ],
+        "say": "So steht es auf dem Spickzettel. Die Zeile sagt dasselbe wie die Rechnung mit den Bakterien: Startwert mal Faktor hoch Anzahl der Schritte. Die Schreibweise B von n kennst du von f von x. Sie bedeutet: der Wert, der zu n gehört."
+      },
+      {
         "title": "Das nimmst du mit",
         "body": "(1) Eine Funktion gibt jedem $x$ genau ein $y$.\n\n(2) Punkt lesen: erst nach rechts, dann nach oben.\n\n(3) Die Zahl vor dem $x$ ist die Steigung.\n\n(4) Die Zahl ohne $x$ ist der Startwert auf der y-Achse.\n\n(5) Punktprobe: $x$ einsetzen, mit $y$ vergleichen.",
         "tasks": [
@@ -487,6 +605,21 @@
         "term": "Punktprobe",
         "plain": "Prüfen, ob ein Punkt auf dem Graphen liegt.",
         "example": "x einsetzen, y vergleichen"
+      },
+      {
+        "term": "lineares Wachstum",
+        "plain": "In jedem Schritt kommt die gleiche Zahl dazu.",
+        "example": "100, 150, 200, 250"
+      },
+      {
+        "term": "exponentielles Wachstum",
+        "plain": "In jedem Schritt wird mit der gleichen Zahl malgenommen.",
+        "example": "100, 200, 400, 800"
+      },
+      {
+        "term": "Wachstumsfaktor",
+        "plain": "Die Zahl, mit der in jedem Schritt malgenommen wird.",
+        "example": "5 % mehr: $q = 1{,}05$"
       }
     ],
     "quiz": [
@@ -555,6 +688,17 @@
         ],
         "correct": "Ja, denn $3 \\cdot 2 + 1 = 7$",
         "explain": "Bei der Punktprobe setzt du die 2 für x ein. Es kommt 7 heraus, also liegt der Punkt auf der Geraden."
+      },
+      {
+        "prompt": "Ein Wert verdoppelt sich in jedem Schritt. Der Start ist 5. Wie groß ist er nach 3 Schritten?",
+        "choices": [
+          "40",
+          "30",
+          "15",
+          "11"
+        ],
+        "correct": "40",
+        "explain": "5 mal 2 ist 10, mal 2 ist 20, mal 2 ist 40. Der Faktor 2 steht dreimal da."
       }
     ]
   }

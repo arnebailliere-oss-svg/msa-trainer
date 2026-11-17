@@ -252,6 +252,57 @@
         "say": "Wenn du die Zinsen auf dem Konto lässt, wächst das Geld im nächsten Jahr etwas schneller. Die Bank rechnet dann mit dem neuen, größeren Betrag. Für mehrere Jahre nimmst du das Geld einfach mehrmals mit 1,02 mal. Zweimal für zwei Jahre, dreimal für drei."
       },
       {
+        "title": "Der Faktor",
+        "body": "2 % Zinsen dazu: Aus 100 % werden 102 %.\n\nAls Dezimalzahl: $1{,}02$\n\n$500 \\cdot 1{,}02 = 510$ €\n\nEine Zahl, mit der man malnimmt, heißt **Faktor**. Diese hier heißt **Wachstumsfaktor**.",
+        "tasks": [
+          {
+            "text": "5 % Zinsen. Der Faktor ist ___.",
+            "choices": [
+              "1,05",
+              "0,05"
+            ],
+            "correct": "1,05",
+            "why": "Aus 100 Prozent werden 105 Prozent. Als Dezimalzahl ist das 1,05.",
+            "hint": "Wie viel Prozent hast du nach einem Jahr insgesamt: nur die Zinsen oder alles zusammen?"
+          }
+        ],
+        "say": "Du kannst die Zinsen in einem einzigen Schritt dazurechnen. Das Geld vom Anfang sind 100 Prozent, dazu kommen 2 Prozent. Zusammen sind das 102 Prozent, also 1,02. Wenn du mit dieser Zahl malnimmst, hast du sofort den neuen Stand."
+      },
+      {
+        "title": "Mehrere Jahre",
+        "body": "Jedes Jahr mal 1,02:\n\nNach 1 Jahr: $500 \\cdot 1{,}02$\n\nNach 2 Jahren: $500 \\cdot 1{,}02 \\cdot 1{,}02$\n\nKürzer: $500 \\cdot 1{,}02^2 = 520{,}20$ €\n\nDie Hochzahl zählt die Jahre.",
+        "tasks": [
+          {
+            "text": "1000 € bei 3 % Zinsen nach 4 Jahren: $1000 \\cdot 1{,}03$ hoch ___",
+            "choices": [
+              "4",
+              "3"
+            ],
+            "correct": "4",
+            "why": "Der Faktor steht für jedes Jahr einmal da, also viermal.",
+            "hint": "Was zählt die Hochzahl: die Prozent oder die Jahre?"
+          }
+        ],
+        "say": "Für jedes Jahr nimmst du noch einmal mit dem Faktor mal. Nach zwei Jahren steht der Faktor zweimal da, nach zehn Jahren zehnmal. Dafür gibt es die Hochzahl, die du schon kennst. Sie zählt einfach, wie oft der Faktor dasteht."
+      },
+      {
+        "title": "Die Formel vom Formelblatt",
+        "body": "$K_n = K_0 \\cdot \\left(1 + \\frac{p}{100}\\right)^n$\n\n$K_0$: das Kapital am Anfang\n\n$1 + \\frac{p}{100}$: der Faktor, bei 2 % also 1,02\n\n$n$: die Anzahl der Jahre\n\n$K_n$: das Kapital nach $n$ Jahren",
+        "tasks": [
+          {
+            "text": "800 € werden 5 Jahre lang zu 3 % angelegt. In der Formel ist $K_0 = $ ___",
+            "choices": [
+              "800",
+              "5"
+            ],
+            "correct": "800",
+            "why": "Das K mit der kleinen 0 ist das Geld ganz am Anfang.",
+            "hint": "Welche der Zahlen ist das Geld, mit dem alles beginnt?"
+          }
+        ],
+        "say": "Diese Zeile sieht schwierig aus, sagt aber genau das, was du gerade gerechnet hast. Vorn steht das Geld vom Anfang. In der Klammer steht der Faktor. Die Hochzahl zählt die Jahre. Heraus kommt das Geld nach dieser Zeit."
+      },
+      {
         "title": "Das nimmst du mit",
         "body": "(1) Erst klären: Ganzes, Teil oder Anteil?\n\n(2) 1 % ist das Ganze geteilt durch 100.\n\n(3) Rabatt: weg. Erhöhung: dazu.\n\n(4) **um** ist die Änderung, **auf** ist der Rest.",
         "tasks": [
@@ -304,6 +355,11 @@
         "term": "Promille",
         "plain": "Von tausend.",
         "example": "5 ‰ = $0{,}005$"
+      },
+      {
+        "term": "Wachstumsfaktor",
+        "plain": "Die Zahl, mit der du malnimmst, um die Zinsen gleich dazuzurechnen.",
+        "example": "2 % mehr: mal 1,02"
       }
     ],
     "quiz": [
@@ -383,6 +439,17 @@
         ],
         "correct": "120 €",
         "explain": "100 Prozent sind zehnmal so viel wie 10 Prozent. Zehn mal 12 Euro sind 120 Euro."
+      },
+      {
+        "prompt": "500 € werden 2 Jahre lang zu 10 % angelegt, und die Zinsen bleiben auf dem Konto. Wie viel ist es danach?",
+        "choices": [
+          "605 €",
+          "600 €",
+          "550 €",
+          "510 €"
+        ],
+        "correct": "605 €",
+        "explain": "Nach einem Jahr sind es 500 mal 1,1, also 550 €. Nach dem zweiten Jahr sind es 550 mal 1,1, also 605 €."
       }
     ]
   }

@@ -334,6 +334,161 @@
         ]
       },
       {
+        "chapter": "Parallelogramm, Trapez und Kreis",
+        "title": "Das Parallelogramm",
+        "body": "Ein **Parallelogramm** ist ein schief gedrücktes Rechteck.\n\nGegenüberliegende Seiten sind gleich lang.\n\nFläche: Grundseite mal Höhe\n\n$A = g \\cdot h$\n\nDie Höhe steht senkrecht auf der Grundseite. Die schräge Seite zählt nicht.",
+        "figure": {
+          "type": "parallelogram",
+          "a": 5,
+          "h": 2.5,
+          "offset": 1.5,
+          "labels": {
+            "a": "g",
+            "h": "h"
+          }
+        },
+        "tasks": [
+          {
+            "text": "Ein Parallelogramm hat die Grundseite 6 cm, die Höhe 3 cm und die schräge Seite 4 cm. Seine Fläche ist ___.",
+            "choices": [
+              "$18\\ \\text{cm}^2$",
+              "$24\\ \\text{cm}^2$"
+            ],
+            "correct": "$18\\ \\text{cm}^2$",
+            "why": "Grundseite mal Höhe: 6 mal 3 ergibt 18. Die schräge Seite zählt nicht.",
+            "hint": "Welche der beiden Längen steht senkrecht auf der Grundseite?"
+          }
+        ],
+        "say": "Schneide in Gedanken links das schräge Dreieck ab und setz es rechts wieder an. Dann hast du ein Rechteck mit derselben Grundseite und derselben Höhe. Deshalb rechnest du wie beim Rechteck. Die schräge Seite brauchst du nur für den Umfang."
+      },
+      {
+        "title": "Das Trapez",
+        "body": "Ein **Trapez** hat zwei Seiten, die parallel liegen: $a$ und $c$.\n\nParallel heißt: Sie laufen nebeneinander her wie Schienen.\n\nDie beiden Seiten sind verschieden lang.\n\nDie Höhe $h$ ist der Abstand zwischen ihnen.",
+        "figure": {
+          "type": "trapezoid",
+          "a": 6,
+          "c": 3,
+          "h": 2.5,
+          "labels": {
+            "a": "a",
+            "c": "c",
+            "h": "h"
+          }
+        },
+        "tasks": [
+          {
+            "text": "Die parallelen Seiten sind 8 cm und 4 cm lang. Eine Linie genau in der Mitte dazwischen wäre ___ lang.",
+            "choices": [
+              "6 cm",
+              "12 cm"
+            ],
+            "correct": "6 cm",
+            "why": "Die Mitte zwischen 8 und 4 ist 6. Du zählst beide zusammen und halbierst.",
+            "hint": "Zähl beide Längen zusammen und nimm davon die Hälfte."
+          }
+        ],
+        "say": "Ein Trapez sieht aus wie ein Rechteck, bei dem eine Seite kürzer geraten ist. Denk an einen Blumentopf von der Seite oder an ein Dach. Wichtig sind drei Längen: die lange parallele Seite, die kurze parallele Seite und der Abstand dazwischen."
+      },
+      {
+        "title": "Fläche vom Trapez",
+        "body": "Beispiel: $a = 8$ cm, $c = 4$ cm, $h = 5$ cm\n\nMitte der parallelen Seiten: $(8 + 4) : 2 = 6$\n\nMal die Höhe: $6 \\cdot 5 = 30\\ \\text{cm}^2$\n\nAuf dem Formelblatt steht dasselbe so:\n\n$A = \\frac{1}{2} \\cdot (a + c) \\cdot h$",
+        "figure": {
+          "type": "trapezoid",
+          "a": 8,
+          "c": 4,
+          "h": 5,
+          "labels": {
+            "a": "a = 8",
+            "c": "c = 4",
+            "h": "h = 5"
+          }
+        },
+        "tasks": [
+          {
+            "text": "Trapez mit $a = 10$ cm, $c = 6$ cm und $h = 2$ cm. Die Fläche ist ___.",
+            "choices": [
+              "$16\\ \\text{cm}^2$",
+              "$32\\ \\text{cm}^2$"
+            ],
+            "correct": "$16\\ \\text{cm}^2$",
+            "why": "10 plus 6 ist 16, die Hälfte ist 8. 8 mal 2 ergibt 16.",
+            "hint": "Hast du die beiden Seiten zusammengezählt und halbiert, bevor du mal die Höhe rechnest?"
+          }
+        ],
+        "say": "Ein Trapez hat so viel Fläche wie ein Rechteck mit der mittleren Breite. Du zählst die beiden parallelen Seiten zusammen und halbierst. Das Ergebnis nimmst du mal die Höhe. Ein halb mal bedeutet in der Formel nichts anderes als die Hälfte."
+      },
+      {
+        "title": "Der Kreis",
+        "body": "Alle Punkte auf dem Rand sind gleich weit von der Mitte entfernt.\n\nDer **Radius** $r$ reicht von der Mitte bis zum Rand.\n\nDer **Durchmesser** $d$ geht einmal quer durch die Mitte.\n\n$d = 2 \\cdot r$",
+        "figure": {
+          "type": "circle",
+          "labels": {
+            "r": "r",
+            "d": "d"
+          }
+        },
+        "tasks": [
+          {
+            "text": "Ein Fahrradreifen hat den Radius 30 cm. Sein Durchmesser ist ___.",
+            "choices": [
+              "60 cm",
+              "15 cm"
+            ],
+            "correct": "60 cm",
+            "why": "Der Durchmesser ist zweimal der Radius: 2 mal 30.",
+            "hint": "Ist der Durchmesser länger oder kürzer als der Radius?"
+          }
+        ],
+        "say": "Einen Kreis zeichnest du mit dem Zirkel. Die Spitze steht in der Mitte, und der Stift bleibt immer gleich weit von ihr weg. Dieser Abstand ist der Radius. Der Durchmesser geht von Rand zu Rand durch die Mitte und ist doppelt so lang."
+      },
+      {
+        "title": "Umfang vom Kreis",
+        "body": "Der Rand ist etwa 3,14-mal so lang wie der Durchmesser.\n\nDie Zahl 3,14 heißt **Pi**. Ihr Zeichen ist $\\pi$.\n\n$U = \\pi \\cdot d$\n\nBeispiel: $d = 60$ cm\n\n$U \\approx 3{,}14 \\cdot 60 = 188{,}4$ cm",
+        "figure": {
+          "type": "circle",
+          "labels": {
+            "d": "d = 60 cm",
+            "u": "U ≈ 188,4 cm"
+          }
+        },
+        "tasks": [
+          {
+            "text": "Ein runder Tisch hat den Durchmesser 100 cm. Sein Rand ist etwa ___ lang.",
+            "choices": [
+              "314 cm",
+              "103,14 cm"
+            ],
+            "correct": "314 cm",
+            "why": "Durchmesser mal Pi: 100 mal 3,14 ergibt 314.",
+            "hint": "Rechnest du den Durchmesser mal Pi oder plus Pi?"
+          }
+        ],
+        "say": "Leg ein Maßband einmal um einen Reifen. Die Länge ist immer etwas mehr als dreimal der Durchmesser, genauer 3,14-mal. Diese Zahl ist bei jedem Kreis dieselbe und heißt Pi. Dein Taschenrechner hat eine eigene Taste dafür. Kennst du nur den Radius, verdoppelst du ihn zuerst."
+      },
+      {
+        "title": "Fläche vom Kreis",
+        "body": "$A = \\pi \\cdot r \\cdot r$\n\nKürzer geschrieben: $A = \\pi \\cdot r^2$\n\nBeispiel: $r = 10$ cm\n\n$10 \\cdot 10 = 100$\n\n$A \\approx 3{,}14 \\cdot 100 = 314\\ \\text{cm}^2$",
+        "figure": {
+          "type": "circle",
+          "labels": {
+            "r": "r = 10 cm"
+          }
+        },
+        "tasks": [
+          {
+            "text": "Ein Kreis hat den Durchmesser 4 cm. Für die Fläche rechnest du mit $r = $ ___",
+            "choices": [
+              "2 cm",
+              "4 cm"
+            ],
+            "correct": "2 cm",
+            "why": "Die Formel braucht den Radius. Das ist die Hälfte vom Durchmesser.",
+            "hint": "Steht in der Formel für die Fläche der Radius oder der Durchmesser?"
+          }
+        ],
+        "say": "Für die Fläche nimmst du den Radius mit sich selbst mal und dann mal Pi. Achte darauf, dass du wirklich den Radius nimmst. Steht in der Aufgabe der Durchmesser, halbierst du ihn zuerst. Das ist der häufigste Fehler bei Kreisaufgaben."
+      },
+      {
         "title": "Das nimmst du mit",
         "body": "(1) Umfang: der Rand, in cm.\n\n(2) Fläche: das Innere, in $\\text{cm}^2$.\n\n(3) Seite a liegt gegenüber von Ecke A.\n\n(4) Die Winkel im Dreieck ergeben zusammen 180°.\n\n(5) Dreieck: Grundseite mal Höhe, geteilt durch 2.",
         "tasks": [
@@ -391,6 +546,31 @@
         "term": "Winkelsumme",
         "plain": "Im Dreieck immer 180°.",
         "example": "$\\alpha + \\beta + \\gamma = 180°$"
+      },
+      {
+        "term": "Parallelogramm",
+        "plain": "Ein schief gedrücktes Rechteck. Gegenüberliegende Seiten sind gleich lang.",
+        "example": "$A = g \\cdot h$"
+      },
+      {
+        "term": "Trapez",
+        "plain": "Ein Viereck mit zwei parallelen Seiten, die verschieden lang sind.",
+        "example": "$A = \\frac{1}{2} \\cdot (a + c) \\cdot h$"
+      },
+      {
+        "term": "Radius",
+        "plain": "Der Abstand von der Mitte eines Kreises bis zum Rand.",
+        "example": "$r$"
+      },
+      {
+        "term": "Durchmesser",
+        "plain": "Einmal quer durch die Mitte des Kreises. Doppelt so lang wie der Radius.",
+        "example": "$d = 2 \\cdot r$"
+      },
+      {
+        "term": "Pi",
+        "plain": "Die Zahl 3,14. So oft passt der Durchmesser in den Rand eines Kreises.",
+        "example": "$\\pi \\approx 3{,}14$"
       }
     ],
     "quiz": [
@@ -459,6 +639,28 @@
         ],
         "correct": "15 cm²",
         "explain": "Grundseite mal Höhe ergibt 30. Weil es ein Dreieck ist, nimmst du davon die Hälfte, also 15."
+      },
+      {
+        "prompt": "Ein Trapez hat die parallelen Seiten 6 cm und 4 cm und die Höhe 3 cm. Wie groß ist die Fläche?",
+        "choices": [
+          "15 cm²",
+          "30 cm²",
+          "13 cm²",
+          "72 cm²"
+        ],
+        "correct": "15 cm²",
+        "explain": "6 plus 4 ist 10, die Hälfte ist 5. 5 mal 3 ergibt 15 Quadratzentimeter."
+      },
+      {
+        "prompt": "Ein Kreis hat den Radius 5 cm. Wie lang ist sein Umfang ungefähr?",
+        "choices": [
+          "31,4 cm",
+          "15,7 cm",
+          "78,5 cm",
+          "10 cm"
+        ],
+        "correct": "31,4 cm",
+        "explain": "Der Durchmesser ist 10 cm. 10 mal 3,14 ergibt 31,4 cm."
       }
     ]
   }

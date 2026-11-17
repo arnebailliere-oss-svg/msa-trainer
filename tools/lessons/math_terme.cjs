@@ -57,11 +57,29 @@ migrate("primers/math_03_terme.json", (p, h) => {
   h.body("Verteilen", "$2 \\cdot (x + 3)$", "Die 2 wird auf **jeden** in der Klammer verteilt:", "$2 \\cdot x + 2 \\cdot 3$", "Ausgerechnet: $2x + 6$", "Das heißt **Distributivgesetz**.");
   h.body("Ausklammern = rückwärts", "$4x + 8$", "In beiden steckt die 4: $4 \\cdot x$ und $4 \\cdot 2$", "Die 4 kommt **vor die Klammer**:", "$4 \\cdot (x + 2)$");
 
+  // New topics: bracket times bracket and the three binomial formulas (on the Spickzettel, taught nowhere before).
+  h.before(
+    "Das nimmst du mit",
+    b("Klammer mal Klammer", ["$(x + 2) \\cdot (x + 3)$", "Jeder aus der ersten Klammer mal jeden aus der zweiten:", "$x \\cdot x + x \\cdot 3 + 2 \\cdot x + 2 \\cdot 3$", "$x^2 + 3x + 2x + 6$", "Zusammengefasst: $x^2 + 5x + 6$"], "Hier treffen zwei Klammern aufeinander. Jeder Teil der ersten Klammer wird mit jedem Teil der zweiten malgenommen. Das ergibt vier kleine Rechnungen. Danach fasst du gleiche Sorten zusammen, so wie du es schon kannst.", {
+      tasks: [k("$(x + 1) \\cdot (x + 2) = $ ___", "$x^2 + 3x + 2$", ["$x^2 + 2$"], "Die vier Teile sind x hoch 2, 2 x, 1 x und 2. Die beiden mittleren ergeben zusammen 3 x.", "Hast du alle vier Rechnungen gemacht, auch die beiden in der Mitte?")],
+    }),
+    b("Dieselbe Klammer zweimal", ["$(x + 3)^2$ heißt $(x + 3) \\cdot (x + 3)$.", "$x^2 + 3x + 3x + 9$", "Zusammengefasst: $x^2 + 6x + 9$", "Der berühmte Fehler: nur $x^2 + 9$. Dann fehlt die Mitte."], "Die Hochzahl 2 an einer Klammer bedeutet, dass die ganze Klammer zweimal dasteht. Du rechnest wieder jeden mit jedem. In der Mitte entsteht zweimal derselbe Teil, hier zweimal 3 x. Wer nur vorn und hinten quadriert, vergisst genau diese Mitte.", {
+      tasks: [k("$(x + 2)^2 = $ ___", "$x^2 + 4x + 4$", ["$x^2 + 4$"], "In der Mitte steht zweimal 2 x, also 4 x. Vorn steht x hoch 2, hinten 4.", "Was entsteht in der Mitte, wenn du jeden mit jedem malnimmst?")],
+    }),
+    b("Die erste binomische Formel", ["$(a + b)^2 = a^2 + 2ab + b^2$", "Dieses Muster heißt **binomische Formel**.", "Vorn das Quadrat vom ersten Teil, hinten das Quadrat vom zweiten.", "In der Mitte: zweimal das Produkt aus beiden."], "Weil dieses Muster so oft vorkommt, hat es einen Namen bekommen. Die Buchstaben a und b sind Platzhalter für die zwei Teile der Klammer. Die Formel sagt nur, was du eben ausgerechnet hast. Wenn du unsicher bist, rechne lieber jeden mit jedem. Das Ergebnis ist dasselbe.", {
+      tasks: [k("$(x + 5)^2$: In der Mitte steht ___.", "$10x$", ["$5x$"], "Zweimal das Produkt aus x und 5: 2 mal 5 mal x.", "Wie oft kommt das Produkt aus beiden Teilen in der Mitte vor?")],
+    }),
+    b("Die zweite und die dritte", ["Mit Minus: $(a - b)^2 = a^2 - 2ab + b^2$", "Plus mal Minus: $(a + b) \\cdot (a - b) = a^2 - b^2$", "Bei der dritten fällt die Mitte weg: $+ab$ und $-ab$ heben sich auf."], "Es gibt drei binomische Formeln, und alle stehen auf dem Spickzettel. Bei der zweiten wird die Mitte abgezogen. Das Ende bleibt trotzdem plus, denn minus mal minus ergibt plus. Bei der dritten heben sich die beiden mittleren Teile gegenseitig auf.", {
+      tasks: [k("$(x + 3) \\cdot (x - 3) = $ ___", "$x^2 - 9$", ["$x^2 - 6x + 9$"], "Die mittleren Teile sind plus 3 x und minus 3 x. Sie heben sich auf.", "Was passiert mit den beiden mittleren Teilen, wenn einer plus und einer minus ist?")],
+    }),
+  );
+
   h.chapters([
     ["Eine Kiste namens x", "Was ein x ist"],
     ["Äpfel zu Äpfeln", "Zusammenfassen"],
     ["Vertauschen ist erlaubt", "Die drei Rechengesetze"],
     ["Der klassische Fehler", "Klammern auflösen"],
+    ["Klammer mal Klammer", "Klammer mal Klammer und binomische Formeln"],
   ]);
   h.explain([
     "Gleiche Buchstaben darfst du zusammenzählen: 3 a und 4 a sind 7 a. Der Buchstabe selbst ändert sich dabei nicht.",
@@ -71,4 +89,7 @@ migrate("primers/math_03_terme.json", (p, h) => {
     "Das Minus vor der Klammer dreht jedes Vorzeichen um. Aus a wird minus a, und aus minus 4 wird plus 4.",
   ]);
   h.quiz(q("Was ist $2a + 3b + a$?", "$3a + 3b$", ["$6ab$", "$5a + b$", "$3a + 3$"], "Zuerst sortierst du: 2 a und 1 a sind 3 a. Die 3 b sind eine andere Sorte und bleiben für sich."));
+  // New topics, words and quiz: added after the old quiz explanations.
+  p.vocab.push({ term: "binomische Formel", plain: "Ein festes Muster für eine Klammer hoch 2: vorn ein Quadrat, hinten ein Quadrat, in der Mitte zweimal das Produkt.", example: "$(a + b)^2 = a^2 + 2ab + b^2$" });
+  h.quiz(q("Was ist $(x + 4)^2$?", "$x^2 + 8x + 16$", ["$x^2 + 16$", "$x^2 + 4x + 16$", "$2x + 8$"], "Vorn steht x hoch 2, hinten 4 mal 4, also 16. In der Mitte steht zweimal 4 x, also 8 x."));
 });

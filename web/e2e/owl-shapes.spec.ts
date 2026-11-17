@@ -25,7 +25,7 @@ const shot = async (page: Page, name: string) => {
 };
 
 test("boards show their shapes and the try-it-out elements", async ({ page }) => {
-  test.setTimeout(180_000);
+  test.setTimeout(420_000);
   const errors: string[] = [];
   page.on("pageerror", (e) => errors.push(e.message));
   await createProfile(page, "Formen");
@@ -54,6 +54,34 @@ test("boards show their shapes and the try-it-out elements", async ({ page }) =>
   await noOverflow(page);
   await shot(page, "winkel-sorten");
 
+
+  await openBoard(page, "P_MATH_FUNKTION", "Die allgemeine Form");
+  await expect(page.locator('[data-owl-widget="line-explorer"]')).toBeVisible();
+  await noOverflow(page);
+  await shot(page, "gerade-ausprobieren");
+
+  await openBoard(page, "P_MATH_QUADRAT", "Die Parabel verschieben");
+  await expect(page.locator('[data-owl-widget="parabola-explorer"]')).toBeVisible();
+  await noOverflow(page);
+  await shot(page, "parabel-ausprobieren");
+
+  // new topics: each board is reachable, shows its drawing and fits the screen
+  for (const [id, title, name] of [
+    ["P_MATH_GEO_BEGRIFFE", "Fläche vom Trapez", "neu-trapez"],
+    ["P_MATH_FUNKTION", "Mal statt plus", "neu-wachstum"],
+    ["P_MATH_PYTH_TRIG", "Kosinussatz: Schritt für Schritt", "neu-kosinussatz"],
+    ["P_MATH_STOCHASTIK", "Das Kreisdiagramm", "neu-kreisdiagramm"],
+  ] as const) {
+    await openBoard(page, id, title);
+    await expect(page.locator(".chalk-board-figure svg")).toHaveCount(1);
+    await noOverflow(page);
+    await shot(page, name);
+  }
+  await openBoard(page, "P_MATH_TERME", "Die zweite und die dritte");
+  await noOverflow(page);
+  await shot(page, "neu-binomisch");
+
+  // last, because it is the final board of its lesson
   await openBoard(page, "P_MATH_PYTH_TRIG", "Das nimmst du mit");
   const tri = page.locator('[data-owl-widget="triangle-explorer"]');
   await expect(tri).toBeVisible();
@@ -66,16 +94,6 @@ test("boards show their shapes and the try-it-out elements", async ({ page }) =>
   await expect(page.getByRole("heading", { name: "Das nimmst du mit", exact: true })).toBeVisible();
   await noOverflow(page);
   await shot(page, "pythagoras-ausprobieren");
-
-  await openBoard(page, "P_MATH_FUNKTION", "Die allgemeine Form");
-  await expect(page.locator('[data-owl-widget="line-explorer"]')).toBeVisible();
-  await noOverflow(page);
-  await shot(page, "gerade-ausprobieren");
-
-  await openBoard(page, "P_MATH_QUADRAT", "Die Parabel verschieben");
-  await expect(page.locator('[data-owl-widget="parabola-explorer"]')).toBeVisible();
-  await noOverflow(page);
-  await shot(page, "parabel-ausprobieren");
 
   expect(errors).toEqual([]);
 });

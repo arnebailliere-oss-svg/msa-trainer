@@ -79,10 +79,34 @@ migrate("primers/math_07_funktionen.json", (p, h) => {
   );
   h.body("Nullstelle", "Wo ist $y = 0$?", "$2x + 1 = 0 \\quad | -1$", "$2x = -1 \\quad | :2$", "$x = -0{,}5$", "Dort schneidet die Gerade die x-Achse. Diese Stelle heißt **Nullstelle**.");
 
+  // New topics: linear and exponential growth (on the Spickzettel, taught nowhere before).
+  p.requires = ["P_MATH_ZEICHEN", "P_MATH_BRUCH", "P_MATH_TERME", "P_MATH_GLEICHUNG", "P_MATH_PROZENT"];
+  h.before(
+    "Das nimmst du mit",
+    b("Zwei Arten zu wachsen", ["Sparschwein: jeden Monat **plus** 50 €", "100 €, 150 €, 200 €, 250 €", "Immer die gleiche Zahl dazu: Das heißt **lineares Wachstum**.", "Der Graph ist eine Gerade."], "Bis jetzt ging es um Geraden. Bei einer Geraden kommt mit jedem Schritt gleich viel dazu. Das nennt man lineares Wachstum. Beim Sparschwein sind es jeden Monat 50 Euro, egal wie voll es schon ist. Gleich siehst du eine zweite Art zu wachsen, die ganz anders verläuft.", {
+      figure: { type: "barChart", categories: ["Start", "1", "2", "3"], values: [100, 150, 200, 250] },
+      tasks: [k("Ein Baum ist 200 cm hoch und wächst jedes Jahr 30 cm. Nach 2 Jahren ist er ___ hoch.", "260 cm", ["230 cm"], "Zweimal kommen 30 cm dazu: 200 plus 30 plus 30.", "Wie oft kommen die 30 cm in zwei Jahren dazu?")],
+    }),
+    b("Mal statt plus", ["Bakterien: jede Stunde **mal** 2", "100, 200, 400, 800", "Immer mal die gleiche Zahl: Das heißt **exponentielles Wachstum**.", "Es wird mit jedem Schritt schneller."], "Hier kommt nicht jedes Mal gleich viel dazu. Stattdessen wird jedes Mal mit derselben Zahl malgenommen. Am Anfang sieht das harmlos aus, aber die Sprünge werden immer größer. Von 400 auf 800 kommt mehr dazu als in allen Schritten davor zusammen.", {
+      figure: { type: "barChart", categories: ["Start", "1", "2", "3"], values: [100, 200, 400, 800] },
+      tasks: [k("3, 6, 12, 24: Hier wird in jedem Schritt ___.", "mal 2 gerechnet", ["plus 3 gerechnet"], "Von 3 auf 6 passt beides. Aber von 6 auf 12 passt nur mal 2.", "Prüf deine Idee auch am zweiten und am dritten Schritt.")],
+    }),
+    b("Der Wachstumsfaktor", ["Die Zahl, mit der malgenommen wird, heißt **Wachstumsfaktor** $q$.", "Verdoppeln: $q = 2$", "5 % mehr: $q = 1{,}05$", "20 % weniger: $q = 0{,}8$"], "Den Faktor kennst du aus der Prozentrechnung. Bei 5 Prozent mehr werden aus 100 Prozent 105 Prozent, also 1,05. Bei 20 Prozent weniger bleiben 80 Prozent, also 0,8. Ist der Faktor kleiner als 1, wird der Wert mit jedem Schritt kleiner. Das nennt man Abnahme.", {
+      tasks: [k("Ein Wert steigt jedes Jahr um 3 %. Der Faktor ist $q = $ ___", "1,03", ["0,03"], "Aus 100 Prozent werden 103 Prozent. Als Dezimalzahl ist das 1,03.", "Wie viel Prozent sind nach einem Jahr insgesamt da?")],
+    }),
+    b("Nach mehreren Schritten", ["Start: 100 Bakterien, $q = 2$", "Nach 1 Stunde: $100 \\cdot 2$", "Nach 2 Stunden: $100 \\cdot 2 \\cdot 2$", "Nach 3 Stunden: $100 \\cdot 2^3 = 800$", "Die Hochzahl zählt die Schritte."], "Für jeden Schritt nimmst du einmal mit dem Faktor mal. Nach drei Schritten steht der Faktor dreimal da. Das schreibst du kurz mit einer Hochzahl. Achte darauf: Der Faktor steht hoch 3 und nicht mal 3.", {
+      tasks: [k("Start 50, $q = 2$. Nach 2 Schritten sind es $50 \\cdot 2^2 = $ ___", "200", ["100"], "2 hoch 2 ist 4, und 50 mal 4 ergibt 200.", "Rechne zuerst die Zahl mit der Hochzahl aus. Erst danach kommt die 50.")],
+    }),
+    b("Die Formel für Wachstum", ["$B(n) = B_0 \\cdot q^n$", "$B_0$: der Startwert", "$q$: der Wachstumsfaktor", "$n$: die Anzahl der Schritte", "$B(n)$: der Wert nach $n$ Schritten"], "So steht es auf dem Spickzettel. Die Zeile sagt dasselbe wie die Rechnung mit den Bakterien: Startwert mal Faktor hoch Anzahl der Schritte. Die Schreibweise B von n kennst du von f von x. Sie bedeutet: der Wert, der zu n gehört.", {
+      tasks: [k("Ein Auto kostet 10 000 € und verliert jedes Jahr 20 % an Wert. Nach $n$ Jahren ist es noch ___ wert.", "$10\\,000 \\cdot 0{,}8^n$", ["$10\\,000 \\cdot 1{,}2^n$"], "20 Prozent weniger heißt: 80 Prozent bleiben. Der Faktor ist deshalb 0,8.", "Wird der Wert größer oder kleiner? Was heißt das für den Faktor?")],
+    }),
+  );
+
   h.chapters([
     ["Die Maschine", "Maschine, Tabelle und Bild"],
     ["Was ist die Steigung?", "Steigung und Startwert"],
-    ["Jetzt du: eine Gerade lesen", "Geraden lesen und prüfen"],
+    ["Die allgemeine Form", "Geraden lesen und prüfen"],
+    ["Zwei Arten zu wachsen", "Wachstum: plus oder mal"],
   ]);
   h.renameVocab({ "y oder f(x)": "y", "Steigung m": "Steigung", "y-Achsenabschnitt n": "y-Achsenabschnitt" });
   h.explain([
@@ -93,4 +117,11 @@ migrate("primers/math_07_funktionen.json", (p, h) => {
     "Ein Minus vor dem x bedeutet bergab, von links nach rechts gelesen.",
   ]);
   h.quiz(q("Liegt der Punkt $(2\\,|\\,7)$ auf der Geraden $y = 3x + 1$?", "Ja, denn $3 \\cdot 2 + 1 = 7$", ["Nein, denn $3 \\cdot 2 + 1 = 6$", "Ja, denn $2 + 7 = 9$", "Das kann man nicht prüfen"], "Bei der Punktprobe setzt du die 2 für x ein. Es kommt 7 heraus, also liegt der Punkt auf der Geraden."));
+  // New topics, words and quiz: added after the old quiz explanations.
+  p.vocab.push(
+    { term: "lineares Wachstum", plain: "In jedem Schritt kommt die gleiche Zahl dazu.", example: "100, 150, 200, 250" },
+    { term: "exponentielles Wachstum", plain: "In jedem Schritt wird mit der gleichen Zahl malgenommen.", example: "100, 200, 400, 800" },
+    { term: "Wachstumsfaktor", plain: "Die Zahl, mit der in jedem Schritt malgenommen wird.", example: "5 % mehr: $q = 1{,}05$" },
+  );
+  h.quiz(q("Ein Wert verdoppelt sich in jedem Schritt. Der Start ist 5. Wie groß ist er nach 3 Schritten?", "40", ["30", "15", "11"], "5 mal 2 ist 10, mal 2 ist 20, mal 2 ist 40. Der Faktor 2 steht dreimal da."));
 });

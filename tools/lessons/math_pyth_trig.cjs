@@ -72,9 +72,35 @@ migrate("primers/math_09b_pythagoras.json", (p, h) => {
   // Read-through: the board says why the sine is the right choice.
   h.body("Seite berechnen", "$c = 10$ und $\\alpha = 30°$, gesucht ist $a$.", "$a$ liegt gegenüber vom Winkel, $c$ ist die Hypotenuse: Das ist der Sinus.", "$\\sin 30° = \\frac{a}{10}$", "Beide Seiten mal 10: $a = 10 \\cdot \\sin 30°$", "$a = 10 \\cdot 0{,}5 = 5$");
 
+  // New topics: Sinussatz and Kosinussatz for triangles without a right angle (on the Spickzettel and the Formelblatt).
+  h.before(
+    "Das nimmst du mit",
+    b("Kein rechter Winkel?", ["Pythagoras und sin, cos, tan brauchen einen rechten Winkel.", "Für alle anderen Dreiecke stehen zwei Sätze auf dem Formelblatt: der **Sinussatz** und der **Kosinussatz**.", "Seite $a$ liegt gegenüber vom Winkel $\\alpha$, $b$ gegenüber von $\\beta$, $c$ gegenüber von $\\gamma$."], "Viele Dreiecke haben keinen rechten Winkel. Dann darfst du nichts von dem benutzen, was du bisher in dieser Lektion gelernt hast. Dafür gibt es zwei andere Werkzeuge. Für beide musst du wissen, welche Seite welchem Winkel gegenüberliegt. Das sagen dir die Buchstaben.", {
+      figure: { type: "triangle", alpha: 60, beta: 50, labels: { a: "a", b: "b", c: "c", alpha: "α", beta: "β", gamma: "γ" } },
+      tasks: [k("Gegenüber vom Winkel $\\beta$ liegt die Seite ___.", "$b$", ["$a$"], "Zum Winkel Beta gehört die Seite mit dem Buchstaben b.", "Welcher lateinische Buchstabe passt zum griechischen Beta?")],
+    }),
+    b("Der Sinussatz", ["$\\frac{a}{\\sin\\alpha} = \\frac{b}{\\sin\\beta}$", "In Worten: Seite geteilt durch den Sinus des Winkels gegenüber. Das ist bei jedem Paar gleich.", "Du brauchst ein vollständiges Paar: eine Seite **und** den Winkel gegenüber."], "Der Sinussatz vergleicht zwei Paare. Jedes Paar besteht aus einer Seite und dem Winkel, der ihr gegenüberliegt. Kennst du ein Paar ganz und vom zweiten Paar einen Teil, kannst du den fehlenden Teil ausrechnen. Auf dem Formelblatt steht auch noch das dritte Paar mit c und Gamma.", {
+      figure: { type: "triangle", alpha: 30, beta: 50, labels: { a: "a", b: "b", alpha: "α", beta: "β" } },
+      tasks: [k("Du kennst $b$, $\\beta$ und $\\alpha$. Gesucht ist $a$. Du nimmst ___.", "den Sinussatz", ["den Satz des Pythagoras"], "Du hast ein ganzes Paar, nämlich b und Beta, und vom zweiten Paar den Winkel.", "Hat das Dreieck einen rechten Winkel? Und kennst du ein Paar aus Seite und Winkel gegenüber?")],
+    }),
+    b("Sinussatz: eine Seite berechnen", ["$\\beta = 50°$, $b = 8$, $\\alpha = 30°$, gesucht ist $a$.", "$\\frac{a}{\\sin 30°} = \\frac{8}{\\sin 50°}$", "Rechte Seite: $8 : 0{,}766 \\approx 10{,}44$", "Beide Seiten mal $\\sin 30°$, also mal 0,5:", "$a \\approx 10{,}44 \\cdot 0{,}5 = 5{,}22$"], "Du setzt zuerst alles ein, was du kennst. Die rechte Seite kannst du dann ganz ausrechnen. Links steht a geteilt durch den Sinus von 30 Grad. Um a allein zu bekommen, nimmst du beide Seiten mit diesem Sinus mal. Das ist dieselbe Idee wie bei jeder Gleichung.", {
+      figure: { type: "triangle", alpha: 30, beta: 50, labels: { a: "a = ?", b: "b = 8", alpha: "30°", beta: "50°" } },
+      tasks: [k("$\\frac{a}{0{,}5} = 10$. Dann ist $a = $ ___", "5", ["20"], "Du nimmst beide Seiten mal 0,5. 10 mal 0,5 ergibt 5.", "Wie wirst du das Geteilt durch 0,5 auf der linken Seite los?")],
+    }),
+    b("Der Kosinussatz", ["$a^2 = b^2 + c^2 - 2 \\cdot b \\cdot c \\cdot \\cos\\alpha$", "Vorn steht der Pythagoras: $b^2 + c^2$", "Dahinter wird etwas abgezogen, weil der Winkel nicht 90° hat.", "Du brauchst zwei Seiten und den Winkel **zwischen** ihnen."], "Der Kosinussatz ist ein Pythagoras mit einer Korrektur. Bei einem rechten Winkel wäre der hintere Teil null, und es bliebe der normale Satz übrig. Du nimmst ihn, wenn du zwei Seiten kennst und den Winkel, den diese beiden Seiten einschließen.", {
+      figure: { type: "triangle", alpha: 60, beta: 85.3, labels: { a: "a", b: "b", c: "c", alpha: "α" } },
+      tasks: [k("Du kennst $b$, $c$ und den Winkel $\\alpha$ zwischen ihnen. Für $a$ nimmst du ___.", "den Kosinussatz", ["den Sinussatz"], "Zwei Seiten und der Winkel dazwischen: Dafür ist der Kosinussatz da.", "Kennst du ein ganzes Paar aus Seite und Winkel gegenüber, oder zwei Seiten mit dem Winkel dazwischen?")],
+    }),
+    b("Kosinussatz: Schritt für Schritt", ["$b = 7$, $c = 4$, $\\alpha = 60°$", "Vorn: $49 + 16 = 65$", "Hinten zuerst: $2 \\cdot 7 \\cdot 4 = 56$", "Der Kosinus: $\\cos 60° = 0{,}5$", "Zusammen: $56 \\cdot 0{,}5 = 28$","$a^2 = 65 - 28 = 37$", "$a = \\sqrt{37} \\approx 6{,}08$"], "Rechne die Formel in kleinen Stücken. Zuerst die beiden Quadrate vorn. Dann den hinteren Teil: zwei mal die eine Seite mal die andere, und das Ergebnis mal den Kosinus. Danach ziehst du ab. Ganz am Ende kommt die Wurzel, denn bis dahin hast du erst a hoch 2.", {
+      figure: { type: "triangle", alpha: 60, beta: 85.3, labels: { a: "a = ?", b: "b = 7", c: "c = 4", alpha: "60°" } },
+      tasks: [k("$a^2 = 100 - 36 = 64$. Dann ist $a = $ ___", "8", ["32"], "Du ziehst die Wurzel aus 64. 8 mal 8 ergibt 64.", "Du hast erst a hoch 2. Welcher Schritt fehlt noch?")],
+    }),
+  );
+
   h.chapters([
     ["Das rechtwinklige Dreieck", "Der Satz des Pythagoras"],
     ["Gegenkathete und Ankathete", "Sinus, Kosinus und Tangens"],
+    ["Kein rechter Winkel?", "Dreiecke ohne rechten Winkel"],
   ]);
   h.renameVocab({ "Rechter Winkel": "rechter Winkel" });
   h.explain([
@@ -85,4 +111,10 @@ migrate("primers/math_09b_pythagoras.json", (p, h) => {
     "DEG bedeutet Grad. Steht der Taschenrechner auf RAD, kommen falsche Werte heraus.",
   ]);
   h.quiz(q("$c = 10$, $\\alpha = 30°$ und $\\sin 30° = 0{,}5$. Wie lang ist die Gegenkathete $a$?", "5", ["20", "0,05", "15"], "Der Sinus ist Gegenkathete durch Hypotenuse. Die Gegenkathete ist also 10 mal 0,5, und das ergibt 5."));
+  // New topics, words and quiz: added after the old quiz explanations.
+  p.vocab.push(
+    { term: "Sinussatz", plain: "Für Dreiecke ohne rechten Winkel: Seite geteilt durch den Sinus des Winkels gegenüber ist bei jedem Paar gleich.", example: "$\\frac{a}{\\sin\\alpha} = \\frac{b}{\\sin\\beta}$" },
+    { term: "Kosinussatz", plain: "Für Dreiecke ohne rechten Winkel: ein Pythagoras mit Korrektur. Du brauchst zwei Seiten und den Winkel dazwischen.", example: "$a^2 = b^2 + c^2 - 2 \\cdot b \\cdot c \\cdot \\cos\\alpha$" },
+  );
+  h.quiz(q("Ein Dreieck hat keinen rechten Winkel. Du kennst zwei Seiten und den Winkel zwischen ihnen. Welchen Satz nimmst du für die dritte Seite?", "den Kosinussatz", ["den Sinussatz", "den Satz des Pythagoras", "den Tangens"], "Zwei Seiten und der Winkel dazwischen: Das ist der Fall für den Kosinussatz. Der Pythagoras gilt nur mit rechtem Winkel."));
 });

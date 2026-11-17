@@ -301,6 +301,75 @@
         ]
       },
       {
+        "chapter": "Klammer mal Klammer und binomische Formeln",
+        "title": "Klammer mal Klammer",
+        "body": "$(x + 2) \\cdot (x + 3)$\n\nJeder aus der ersten Klammer mal jeden aus der zweiten:\n\n$x \\cdot x + x \\cdot 3 + 2 \\cdot x + 2 \\cdot 3$\n\n$x^2 + 3x + 2x + 6$\n\nZusammengefasst: $x^2 + 5x + 6$",
+        "tasks": [
+          {
+            "text": "$(x + 1) \\cdot (x + 2) = $ ___",
+            "choices": [
+              "$x^2 + 3x + 2$",
+              "$x^2 + 2$"
+            ],
+            "correct": "$x^2 + 3x + 2$",
+            "why": "Die vier Teile sind x hoch 2, 2 x, 1 x und 2. Die beiden mittleren ergeben zusammen 3 x.",
+            "hint": "Hast du alle vier Rechnungen gemacht, auch die beiden in der Mitte?"
+          }
+        ],
+        "say": "Hier treffen zwei Klammern aufeinander. Jeder Teil der ersten Klammer wird mit jedem Teil der zweiten malgenommen. Das ergibt vier kleine Rechnungen. Danach fasst du gleiche Sorten zusammen, so wie du es schon kannst."
+      },
+      {
+        "title": "Dieselbe Klammer zweimal",
+        "body": "$(x + 3)^2$ heißt $(x + 3) \\cdot (x + 3)$.\n\n$x^2 + 3x + 3x + 9$\n\nZusammengefasst: $x^2 + 6x + 9$\n\nDer berühmte Fehler: nur $x^2 + 9$. Dann fehlt die Mitte.",
+        "tasks": [
+          {
+            "text": "$(x + 2)^2 = $ ___",
+            "choices": [
+              "$x^2 + 4x + 4$",
+              "$x^2 + 4$"
+            ],
+            "correct": "$x^2 + 4x + 4$",
+            "why": "In der Mitte steht zweimal 2 x, also 4 x. Vorn steht x hoch 2, hinten 4.",
+            "hint": "Was entsteht in der Mitte, wenn du jeden mit jedem malnimmst?"
+          }
+        ],
+        "say": "Die Hochzahl 2 an einer Klammer bedeutet, dass die ganze Klammer zweimal dasteht. Du rechnest wieder jeden mit jedem. In der Mitte entsteht zweimal derselbe Teil, hier zweimal 3 x. Wer nur vorn und hinten quadriert, vergisst genau diese Mitte."
+      },
+      {
+        "title": "Die erste binomische Formel",
+        "body": "$(a + b)^2 = a^2 + 2ab + b^2$\n\nDieses Muster heißt **binomische Formel**.\n\nVorn das Quadrat vom ersten Teil, hinten das Quadrat vom zweiten.\n\nIn der Mitte: zweimal das Produkt aus beiden.",
+        "tasks": [
+          {
+            "text": "$(x + 5)^2$: In der Mitte steht ___.",
+            "choices": [
+              "$10x$",
+              "$5x$"
+            ],
+            "correct": "$10x$",
+            "why": "Zweimal das Produkt aus x und 5: 2 mal 5 mal x.",
+            "hint": "Wie oft kommt das Produkt aus beiden Teilen in der Mitte vor?"
+          }
+        ],
+        "say": "Weil dieses Muster so oft vorkommt, hat es einen Namen bekommen. Die Buchstaben a und b sind Platzhalter für die zwei Teile der Klammer. Die Formel sagt nur, was du eben ausgerechnet hast. Wenn du unsicher bist, rechne lieber jeden mit jedem. Das Ergebnis ist dasselbe."
+      },
+      {
+        "title": "Die zweite und die dritte",
+        "body": "Mit Minus: $(a - b)^2 = a^2 - 2ab + b^2$\n\nPlus mal Minus: $(a + b) \\cdot (a - b) = a^2 - b^2$\n\nBei der dritten fällt die Mitte weg: $+ab$ und $-ab$ heben sich auf.",
+        "tasks": [
+          {
+            "text": "$(x + 3) \\cdot (x - 3) = $ ___",
+            "choices": [
+              "$x^2 - 9$",
+              "$x^2 - 6x + 9$"
+            ],
+            "correct": "$x^2 - 9$",
+            "why": "Die mittleren Teile sind plus 3 x und minus 3 x. Sie heben sich auf.",
+            "hint": "Was passiert mit den beiden mittleren Teilen, wenn einer plus und einer minus ist?"
+          }
+        ],
+        "say": "Es gibt drei binomische Formeln, und alle stehen auf dem Spickzettel. Bei der zweiten wird die Mitte abgezogen. Das Ende bleibt trotzdem plus, denn minus mal minus ergibt plus. Bei der dritten heben sich die beiden mittleren Teile gegenseitig auf."
+      },
+      {
         "title": "Das nimmst du mit",
         "body": "(1) Gleiche Sorten zusammenfassen.\n\n(2) Bei Plus und Mal darfst du tauschen.\n\n(3) Die Zahl vor der Klammer geht an **jeden** in der Klammer.\n\n(4) Ein Minus vor der Klammer dreht alles um.",
         "tasks": [
@@ -363,6 +432,11 @@
         "term": "Distributiv",
         "plain": "Verteilen: Mal auf eine Klammer.",
         "example": "$a(b + c) = ab + ac$"
+      },
+      {
+        "term": "binomische Formel",
+        "plain": "Ein festes Muster für eine Klammer hoch 2: vorn ein Quadrat, hinten ein Quadrat, in der Mitte zweimal das Produkt.",
+        "example": "$(a + b)^2 = a^2 + 2ab + b^2$"
       }
     ],
     "quiz": [
@@ -431,6 +505,17 @@
         ],
         "correct": "$3a + 3b$",
         "explain": "Zuerst sortierst du: 2 a und 1 a sind 3 a. Die 3 b sind eine andere Sorte und bleiben für sich."
+      },
+      {
+        "prompt": "Was ist $(x + 4)^2$?",
+        "choices": [
+          "$x^2 + 8x + 16$",
+          "$x^2 + 16$",
+          "$x^2 + 4x + 16$",
+          "$2x + 8$"
+        ],
+        "correct": "$x^2 + 8x + 16$",
+        "explain": "Vorn steht x hoch 2, hinten 4 mal 4, also 16. In der Mitte steht zweimal 4 x, also 8 x."
       }
     ]
   }

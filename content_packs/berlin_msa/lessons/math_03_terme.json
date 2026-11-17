@@ -34,7 +34,8 @@
       {
         "kind": "example",
         "title": "Binomische Formeln",
-        "body": "$(a + b)^2 = a^2 + 2ab + b^2$\n\n$(a - b)^2 = a^2 - 2ab + b^2$\n\n$(a + b)(a - b) = a^2 - b^2$\n\nMit Zahlen: $(x + 3)^2 = x^2 + 6x + 9$, $(x - 3)^2 = x^2 - 6x + 9$, $(x + 3)(x - 3) = x^2 - 9$"
+        "body": "$(a + b)^2 = a^2 + 2ab + b^2$\n\n$(a - b)^2 = a^2 - 2ab + b^2$\n\n$(a + b)(a - b) = a^2 - b^2$\n\nMit Zahlen: $(x + 3)^2 = x^2 + 6x + 9$, $(x - 3)^2 = x^2 - 6x + 9$, $(x + 3)(x - 3) = x^2 - 9$",
+        "primer": "P_MATH_TERME"
       },
       {
         "kind": "steps",

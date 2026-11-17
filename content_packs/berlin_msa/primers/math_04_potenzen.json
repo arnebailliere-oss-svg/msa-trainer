@@ -203,6 +203,40 @@
         "say": "Die beiden Regeln funktionieren nur, wenn unten dieselbe Zahl steht. Bei 2 hoch 3 mal 3 hoch 2 gibt es Zweier und Dreier, also zwei verschiedene Sorten. Die kannst du nicht zusammenzählen. Du rechnest jede Potenz für sich aus und nimmst dann mal."
       },
       {
+        "title": "Potenz hoch Potenz",
+        "body": "$(2^3)^2$\n\nDas heißt: $2^3 \\cdot 2^3$\n\nAusgeschrieben sind das sechs Zweier: $2^6$\n\nHochzahlen **malnehmen**: $3 \\cdot 2 = 6$",
+        "tasks": [
+          {
+            "text": "$(5^2)^4 = $ ___",
+            "choices": [
+              "$5^8$",
+              "$5^6$"
+            ],
+            "correct": "$5^8$",
+            "why": "Die Klammer steht viermal da, jedes Mal mit zwei Fünfern. Das sind acht Fünfer.",
+            "hint": "Wie oft steht die Klammer da, und wie viele Fünfer stecken in jeder?"
+          }
+        ],
+        "say": "Hier steht eine Potenz in einer Klammer und bekommt noch eine Hochzahl. Die äußere Hochzahl sagt, wie oft die ganze Klammer dasteht. Zweimal drei Zweier sind sechs Zweier. Deshalb nimmst du die beiden Hochzahlen miteinander mal."
+      },
+      {
+        "title": "Gleiche Hochzahl",
+        "body": "$2^2 \\cdot 5^2$\n\nAusgeschrieben: $2 \\cdot 2 \\cdot 5 \\cdot 5$\n\nUmsortiert: $(2 \\cdot 5) \\cdot (2 \\cdot 5)$\n\nDas ist $10^2 = 100$.\n\nBei gleicher Hochzahl darfst du die Basen malnehmen.",
+        "tasks": [
+          {
+            "text": "$2^3 \\cdot 5^3 = $ ___",
+            "choices": [
+              "$10^3$",
+              "$10^6$"
+            ],
+            "correct": "$10^3$",
+            "why": "Die Basen werden malgenommen: 2 mal 5 ist 10. Die Hochzahl 3 bleibt.",
+            "hint": "Was passiert mit der Hochzahl, wenn sie bei beiden gleich ist?"
+          }
+        ],
+        "say": "Hier sind die Basen verschieden, aber die Hochzahlen gleich. Dann kannst du die Zahlen paarweise zusammenlegen: immer eine 2 mit einer 5. Aus jedem Paar wird eine 10. Das spart oft viel Rechnerei, zum Beispiel bei 2 hoch 3 mal 5 hoch 3."
+      },
+      {
         "title": "Jetzt du: rechnen mit Potenzen",
         "body": "Tipp bei jeder Aufgabe auf das richtige Ergebnis.",
         "tasks": [
@@ -278,6 +312,74 @@
         "title": "Wurzel aus Minus?",
         "body": "$\\sqrt{-25}$ gibt es **nicht**.\n\nKeine Zahl mal sich selbst ist negativ.",
         "say": "Plus mal plus ist plus, minus mal minus ist auch plus. Also kann kein Quadrat negativ sein."
+      },
+      {
+        "title": "Wurzeln malnehmen",
+        "body": "$\\sqrt{4} \\cdot \\sqrt{9}$\n\nEinzeln: $2 \\cdot 3 = 6$\n\nUnter einem Dach: $\\sqrt{4 \\cdot 9} = \\sqrt{36}$, und das ist auch 6.\n\nBeim Malnehmen darfst du zwei Wurzeln unter ein Wurzelzeichen schreiben.",
+        "tasks": [
+          {
+            "text": "$\\sqrt{2} \\cdot \\sqrt{8} = $ ___",
+            "choices": [
+              "4",
+              "16"
+            ],
+            "correct": "4",
+            "why": "Unter einem Dach steht 2 mal 8, also 16. Die Wurzel aus 16 ist 4.",
+            "hint": "Was steht unter dem gemeinsamen Wurzelzeichen, und was ist davon die Wurzel?"
+          }
+        ],
+        "say": "Probier es mit Zahlen aus, bei denen du die Wurzel kennst. Ob du erst die Wurzeln ziehst und dann malnimmst oder erst malnimmst und dann die Wurzel ziehst, das Ergebnis ist gleich. Das hilft bei krummen Wurzeln: Wurzel 5 mal Wurzel 20 ist Wurzel 100, also 10."
+      },
+      {
+        "title": "Wurzeln teilen",
+        "body": "$\\frac{\\sqrt{50}}{\\sqrt{2}}$\n\nUnter einem Dach: $\\sqrt{50 : 2}$\n\n$\\sqrt{25} = 5$\n\nBeim Teilen gilt dasselbe wie beim Malnehmen.",
+        "tasks": [
+          {
+            "text": "$\\frac{\\sqrt{18}}{\\sqrt{2}} = $ ___",
+            "choices": [
+              "3",
+              "9"
+            ],
+            "correct": "3",
+            "why": "18 geteilt durch 2 ist 9. Die Wurzel aus 9 ist 3.",
+            "hint": "Du hast geteilt. Welcher Schritt fehlt danach noch?"
+          }
+        ],
+        "say": "Auch beim Teilen darfst du beide Zahlen unter ein gemeinsames Wurzelzeichen schreiben. Erst teilst du die Zahlen, dann ziehst du die Wurzel. Bei Plus und Minus geht das nicht. Wurzel 9 plus Wurzel 16 ist 3 plus 4, also 7, und nicht Wurzel 25."
+      },
+      {
+        "title": "Die dritte Wurzel",
+        "body": "$\\sqrt[3]{8} = 2$, weil $2 \\cdot 2 \\cdot 2 = 8$\n\nDie kleine 3 am Wurzelzeichen fragt: Welche Zahl **dreimal** mit sich selbst mal ergibt das?\n\n$\\sqrt[3]{27} = 3$, weil $3 \\cdot 3 \\cdot 3 = 27$",
+        "tasks": [
+          {
+            "text": "$\\sqrt[3]{1000} = $ ___",
+            "choices": [
+              "10",
+              "100"
+            ],
+            "correct": "10",
+            "why": "10 mal 10 mal 10 ergibt 1000. Also ist die dritte Wurzel 10.",
+            "hint": "Welche Zahl ergibt dreimal mit sich selbst malgenommen 1000?"
+          }
+        ],
+        "say": "Die normale Wurzel gehört zu hoch 2. Es gibt auch eine Wurzel zu hoch 3, die dritte Wurzel. Du erkennst sie an der kleinen 3 im Wurzelzeichen. Sie macht hoch 3 rückgängig, so wie die normale Wurzel hoch 2 rückgängig macht."
+      },
+      {
+        "title": "Wurzel als Hochzahl",
+        "body": "$9^{\\frac{1}{2}}$ ist dasselbe wie $\\sqrt{9}$, also 3.\n\nHoch ein Halb ist nur eine andere Schreibweise für die Wurzel.\n\n$8^{\\frac{1}{3}}$ ist dasselbe wie $\\sqrt[3]{8}$, also 2.\n\nHoch ein Drittel ist die dritte Wurzel.",
+        "tasks": [
+          {
+            "text": "$16^{\\frac{1}{2}} = $ ___",
+            "choices": [
+              "4",
+              "8"
+            ],
+            "correct": "4",
+            "why": "Hoch ein Halb bedeutet Wurzel. Die Wurzel aus 16 ist 4.",
+            "hint": "Bedeutet hoch ein Halb die Hälfte oder die Wurzel?"
+          }
+        ],
+        "say": "Auf dem Formelblatt steht die Wurzel manchmal als Bruch in der Hochzahl. Das sieht ungewohnt aus, bedeutet aber nichts Neues. Ein Halb in der Hochzahl heißt Wurzel, ein Drittel heißt dritte Wurzel. Der Nenner des Bruchs sagt dir, welche Wurzel gemeint ist."
       },
       {
         "title": "Das nimmst du mit",
@@ -400,6 +502,17 @@
         ],
         "correct": "$3^6$",
         "explain": "Bei gleicher Basis werden die Hochzahlen zusammengezählt: 2 plus 4 ist 6. Die Basis bleibt 3."
+      },
+      {
+        "prompt": "Was ist $(3^2)^3$?",
+        "choices": [
+          "$3^6$",
+          "$3^5$",
+          "$3^8$",
+          "$9^6$"
+        ],
+        "correct": "$3^6$",
+        "explain": "Die Klammer steht dreimal da, jedes Mal mit zwei Dreien. Das sind sechs Dreien, also 3 hoch 6."
       }
     ]
   }
