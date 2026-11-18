@@ -424,17 +424,6 @@
   ]
  },
  {
-  "lesson": "P_MATH_KOERPER",
-  "why": "Three pyramids do not literally fit into a box; the cone was not explained at all.",
-  "ops": [
-   {
-    "op": "say",
-    "board": "Spitze Körper: ein Drittel",
-    "text": "Ein Kegel sieht aus wie eine Eistüte. Füll eine Pyramide mit Sand und schütte ihn in einen Quader mit demselben Boden und derselben Höhe. Erst nach dem dritten Mal ist der Quader voll. Beim Kegel und der Dose ist es genauso. Deshalb steht in der Formel ein Drittel. Du rechnest also Boden mal Höhe und teilst das Ergebnis durch 3."
-   }
-  ]
- },
- {
   "lesson": "P_MATH_GEO_BEGRIFFE",
   "why": "Task read the answer off the board and the isosceles triangle was not practised.",
   "ops": [
