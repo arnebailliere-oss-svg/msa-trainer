@@ -81,6 +81,20 @@ migrate("primers/math_06_stochastik.json", (p, h) => {
     }),
   );
 
+  // Gentle start: "1 von 6" in words, then the fraction, and the letter P only on the third board.
+  h.body("Wie viele von allen?", "Ein Würfel hat 6 Seiten.", "Nur eine davon zeigt die 6.", "Deine Chance auf eine 6 ist also: 1 von 6.", "Diese Chance heißt **Wahrscheinlichkeit**.");
+  h.say("Wie viele von allen?", "Bei einem Würfel ist jede Seite gleich wahrscheinlich. Es gibt sechs Seiten, und nur eine davon zeigt die 6. Deine Chance ist also eins von sechs. Für das Wort Chance sagt man in Mathe Wahrscheinlichkeit.");
+  h.tasks("Wie viele von allen?", k("Ein Würfel. Die Chance auf eine 3 ist ___.", "1 von 6", ["3 von 6"], "Nur eine der sechs Seiten zeigt die 3.", "Wie viele Seiten des Würfels zeigen eine 3?"));
+  h.after(
+    "Wie viele von allen?",
+    b("Günstig durch möglich", ["1 von 6 schreibt man als Bruch: $\\frac{1}{6}$", "Oben stehen die **günstigen** Fälle.", "Unten stehen alle **möglichen** Fälle.", "Das, worauf du hoffst, heißt **Ereignis**."], "Eins von sechs kannst du als Bruch schreiben. Oben steht, wie viele Fälle du dir wünschst. Unten steht, wie viele Fälle es überhaupt gibt. Deshalb merkt man sich: günstig durch möglich.", {
+      tasks: [k("Ein Glücksrad hat 8 Felder, 3 davon gewinnen. Die Wahrscheinlichkeit für einen Gewinn ist ___.", "$\\frac{3}{8}$", ["$\\frac{8}{3}$"], "3 Felder gewinnen, 8 gibt es insgesamt. Günstig steht oben.", "Welche Zahl steht oben: die gewünschten Fälle oder alle Fälle?")],
+    }),
+    b("Der Buchstabe P", ["Für Wahrscheinlichkeit schreibt man kurz $P$.", "$P(6)$ liest man: P von 6.", "Es bedeutet: die Wahrscheinlichkeit für eine 6.", "$P(6) = \\frac{1}{6}$"], "Der Buchstabe P kommt vom englischen Wort probability. In der Klammer steht das Ereignis, um das es geht. Die Klammer bedeutet hier nicht mal. Du liest die ganze Zeile so: Die Wahrscheinlichkeit für eine 6 ist ein Sechstel.", {
+      tasks: [k("Ein Würfel. $P(3) = $ ___", "$\\frac{1}{6}$", ["$\\frac{3}{6}$"], "Nur eine der sechs Seiten zeigt die 3. Günstig ist also 1, möglich sind 6.", "Wie viele Seiten zeigen die 3, und wie viele Seiten gibt es?")],
+    }),
+  );
+
   h.chapters([
     ["Wie viele von allen?", "Was Wahrscheinlichkeit bedeutet"],
     ["Zweimal ziehen: der Baum", "Zweimal ziehen"],

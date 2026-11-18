@@ -17,8 +17,25 @@
     "steps": [
       {
         "chapter": "Die Parabel",
+        "title": "Eine neue Maschine",
+        "body": "Du kennst die Maschine: verdopple und plus 1.\n\nJetzt eine neue Regel: **nimm die Zahl mal sich selbst**.\n\n2 hinein, 4 heraus\n\n3 hinein, 9 heraus\n\nMinus 2 hinein, auch 4 heraus",
+        "tasks": [
+          {
+            "text": "Regel: nimm die Zahl mal sich selbst. 5 hinein, ___ heraus.",
+            "choices": [
+              "25",
+              "10"
+            ],
+            "correct": "25",
+            "why": "Die Zahl mal sich selbst: 5 mal 5 ergibt 25.",
+            "hint": "Du nimmst die 5 mit sich selbst mal, nicht mit 2."
+          }
+        ],
+        "say": "Du kennst die Maschine, die verdoppelt und 1 dazuzählt. Jetzt bekommt die Maschine eine neue Regel: Sie nimmt die Zahl mit sich selbst mal. Aus 3 wird 9. Auch aus minus 2 wird 4, denn minus mal minus ergibt plus."
+      },
+      {
         "title": "x² macht eine Schüssel",
-        "body": "$y = x^2$\n\n$x = 2$: $y = 2 \\cdot 2 = 4$\n\n$x = -2$: $y = (-2) \\cdot (-2) = 4$\n\nLinks und rechts gleich: **symmetrisch**.\n\nDiese Kurve heißt **Parabel**.",
+        "body": "Die Regel kurz geschrieben: $y = x^2$\n\n$x = 2$: $y = 2 \\cdot 2 = 4$\n\n$x = -2$: $y = (-2) \\cdot (-2) = 4$\n\nLinks und rechts gleich: **symmetrisch**.\n\nDiese Kurve heißt **Parabel**.",
         "figure": {
           "type": "coordinateSystem",
           "xmin": -4,

@@ -79,8 +79,17 @@ migrate("primers/math_07b_parabel.json", (p, h) => {
   h.body("Die pq-Formel", "$x_{1,2} = -\\frac{p}{2} \\pm \\sqrt{\\left(\\frac{p}{2}\\right)^2 - q}$", "$x_{1,2}$ heißt: die beiden Lösungen $x_1$ und $x_2$.", "Vorn steht die Hälfte von $p$ mit einem Minus davor.", "Unter der Wurzel steht: die Hälfte von $p$ zum Quadrat, minus $q$.");
   h.body("Die pq-Formel Schritt für Schritt", "$x^2 + 6x + 5 = 0$", "Ablesen: $p = 6$ und $q = 5$", "Hälfte von $p$: 3", "Unter der Wurzel: $3^2 - 5 = 4$", "Wurzel: $\\sqrt{4} = 2$", "$x_{1,2} = -3 \\pm 2$", "Mit Plus: $x_1 = -1$. Mit Minus: $x_2 = -5$.");
 
+  // Gentle start: the new rule as a machine with numbers first; y = x² on the next board.
+  h.before(
+    "x² macht eine Schüssel",
+    b("Eine neue Maschine", ["Du kennst die Maschine: verdopple und plus 1.", "Jetzt eine neue Regel: **nimm die Zahl mal sich selbst**.", "2 hinein, 4 heraus", "3 hinein, 9 heraus", "Minus 2 hinein, auch 4 heraus"], "Du kennst die Maschine, die verdoppelt und 1 dazuzählt. Jetzt bekommt die Maschine eine neue Regel: Sie nimmt die Zahl mit sich selbst mal. Aus 3 wird 9. Auch aus minus 2 wird 4, denn minus mal minus ergibt plus.", {
+      tasks: [k("Regel: nimm die Zahl mal sich selbst. 5 hinein, ___ heraus.", "25", ["10"], "Die Zahl mal sich selbst: 5 mal 5 ergibt 25.", "Du nimmst die 5 mit sich selbst mal, nicht mit 2.")],
+    }),
+  );
+  h.body("x² macht eine Schüssel", "Die Regel kurz geschrieben: $y = x^2$", "$x = 2$: $y = 2 \\cdot 2 = 4$", "$x = -2$: $y = (-2) \\cdot (-2) = 4$", "Links und rechts gleich: **symmetrisch**.", "Diese Kurve heißt **Parabel**.");
+
   h.chapters([
-    ["x² macht eine Schüssel", "Die Parabel"],
+    ["Eine neue Maschine", "Die Parabel"],
     ["Die einfachste quadratische Gleichung", "Quadratische Gleichungen lösen"],
   ]);
   h.renameVocab({ "Scheitelpunkt S": "Scheitelpunkt", "±": "Plus-minus" });

@@ -120,6 +120,105 @@ migrate("primers/math_07_funktionen.json", (p, h) => {
     }),
   );
 
+  // Gentle start: the machine in words and numbers first; the letters x and y and the short rule on the next board.
+  h.body("Die Maschine", "Stell dir eine Maschine vor.", "Vorne kommt eine Zahl hinein, hinten kommt eine Zahl heraus.", "Ihre Regel: **verdopple und plus 1**", "2 hinein, 5 heraus", "3 hinein, 7 heraus");
+  h.say("Die Maschine", "So eine Maschine ist ganz einfach. Du steckst eine Zahl hinein, und sie macht immer dasselbe damit. Hier verdoppelt sie die Zahl und zählt dann 1 dazu. Aus 2 wird 4 und dann 5. Probier es unten mit einer anderen Zahl aus.");
+  h.tasks("Die Maschine", k("Regel: verdopple und plus 1. 4 hinein, ___ heraus.", "9", ["6"], "4 verdoppelt ist 8, und 8 plus 1 ergibt 9.", "Verdopple zuerst die 4. Was kommt dann noch dazu?"));
+  h.after(
+    "Die Maschine",
+    b("Die Regel kurz aufschreiben", ["Die Zahl, die hineinkommt, nennt man $x$.", "Die Zahl, die herauskommt, nennt man $y$.", "Verdopple und plus 1 heißt dann: $y = 2x + 1$", "So eine Regel heißt **Funktion**."], "Das x ist die Zahl, die in die Maschine hineinkommt. Das y ist die Zahl, die herauskommt. Die Regel dazwischen ist das, was die Maschine tut. Verdoppeln schreibt man als 2x, und plus 1 kommt dahinter. So steht die ganze Maschine in einer kurzen Zeile.", {
+      tasks: [k("Regel: nimm die Zahl mal 3. Kurz geschrieben: ___", "$y = 3x$", ["$y = x + 3$"], "Mal 3 schreibt man als 3x. Das Ergebnis heißt y.", "Wird in der Regel malgenommen oder dazugezählt?")],
+    }),
+  );
+
+  // One new thing per board: names for the numbers, the short rule, the word Funktion, the grid, a point,
+  // the slope as a picture before the letter m, the start value as a picture before the letter n.
+  h.before(
+    "Die Regel kurz aufschreiben",
+    b("Die Zahlen bekommen Namen", ["Die Zahl, die hineinkommt, nennt man $x$.", "Die Zahl, die herauskommt, nennt man $y$.", "2 hinein, 5 heraus heißt dann: $x = 2$ und $y = 5$."], "Damit man nicht immer hinein und heraus sagen muss, bekommen die beiden Zahlen kurze Namen. Die Zahl, die in die Maschine hineinkommt, heißt x. Die Zahl, die herauskommt, heißt y. Mehr bedeuten diese zwei Buchstaben in dieser Lektion nicht.", {
+      tasks: [k("3 hinein, 7 heraus. Dann ist $y = $ ___", "7", ["3"], "Das y ist die Zahl, die aus der Maschine herauskommt.", "Welche der beiden Zahlen kommt heraus, und wie heißt sie?")],
+    }),
+  );
+  h.body("Die Regel kurz aufschreiben", "Die Regel heißt: verdopple und plus 1.", "Verdoppeln heißt 2 mal $x$. Kurz: $2x$", "Plus 1 kommt dahinter: $2x + 1$", "Das ist die Zahl, die herauskommt: $y = 2x + 1$");
+  h.say("Die Regel kurz aufschreiben", "Jetzt schreiben wir die Regel in kurzer Form auf. Verdoppeln bedeutet zwei mal x, und den Malpunkt lässt man weg. Dahinter kommt plus 1. Das Ergebnis ist die Zahl, die herauskommt, also y. So steht die ganze Maschine in einer einzigen Zeile.");
+  h.after(
+    "Die Regel kurz aufschreiben",
+    b("Das Wort Funktion", ["So eine Regel heißt **Funktion**.", "Eine Funktion macht aus jeder Zahl $x$ genau eine Zahl $y$.", "Dieselbe Zahl hinein ergibt immer dieselbe Zahl heraus."], "Funktion ist nur das Fachwort für so eine Maschine. Wichtig ist eine einzige Eigenschaft: Die Maschine ist zuverlässig. Wenn du heute eine 4 hineinsteckst und morgen wieder, kommt beide Male dasselbe heraus.", {
+      tasks: [k("Eine Funktion bekommt zweimal die 4. Heraus kommt ___.", "beide Male dieselbe Zahl", ["jedes Mal eine andere Zahl"], "Eine Funktion ist zuverlässig. Dieselbe Zahl hinein ergibt dieselbe Zahl heraus.", "Kann eine zuverlässige Maschine bei derselben Zahl verschiedene Ergebnisse liefern?")],
+    }),
+  );
+  h.body("Die Wertetabelle", "Steck nacheinander 0, 1, 2 und 3 in die Maschine.", "Schreib auf, was herauskommt:", "$x$: 0, 1, 2, 3", "$y$: 1, 3, 5, 7", "So eine Liste heißt **Wertetabelle**.");
+
+  // The grid first, a point in it afterwards.
+  {
+    const grid0 = { type: "coordinateSystem", xmin: -1, xmax: 6, ymin: -1, ymax: 8, width: 300, height: 300 };
+    const point = h.board("Das Koordinatensystem").figure;
+    h.before(
+      "Das Koordinatensystem",
+      b("Ein Gitter mit zwei Achsen", ["Das Gitter hat zwei Achsen.", "Die waagerechte heißt **x-Achse**. Nach rechts wird $x$ größer.", "Die senkrechte heißt **y-Achse**. Nach oben wird $y$ größer.", "Das ganze Gitter heißt **Koordinatensystem**."], "Um die Maschine zu zeichnen, brauchst du ein Gitter. Es hat zwei Linien mit Pfeilen, die Achsen. Auf der waagerechten Achse liest du x ab, auf der senkrechten y. Wo sich die beiden Achsen kreuzen, sind beide Zahlen null.", {
+        figure: grid0,
+        tasks: [k("Du gehst im Gitter nach oben. Dabei wird ___ größer.", "$y$", ["$x$"], "Nach oben liest du an der senkrechten Achse ab, und das ist die y-Achse.", "Welche Achse steht senkrecht, also von unten nach oben?")],
+      }),
+    );
+    h.rename("Das Koordinatensystem", "Ein Punkt im Gitter");
+    h.body("Ein Punkt im Gitter", "Ein Punkt hat zwei Zahlen: $(2\\,|\\,5)$", "Die erste Zahl ist $x$: 2 nach rechts.", "Die zweite Zahl ist $y$: 5 nach oben.", "Merk dir: erst laufen, dann klettern.");
+    h.board("Ein Punkt im Gitter").figure = point;
+  }
+  h.body("Punkte werden ein Bild", "Jedes Paar aus der Tabelle ist ein Punkt, zum Beispiel $(0\\,|\\,1)$ und $(1\\,|\\,3)$.", "Trägst du alle ein, liegen sie auf einer geraden Linie.", "Diese Linie heißt **Gerade**.", "Sie ist das Bild der Funktion. Dafür sagt man **Graph**.");
+
+  // Slope: the picture first, the letter m on the next board.
+  h.body("Was ist die Steigung?", "Geh auf der Geraden einen Schritt nach rechts.", "Dann geht es 2 Schritte nach oben.", "Diese Zahl heißt **Steigung**.", "Die Steigung dieser Geraden ist 2.");
+  h.say("Was ist die Steigung?", "Die Steigung sagt, wie steil eine Gerade ist. Du gehst immer genau einen Schritt nach rechts und schaust, wie weit es dabei nach oben geht. Bei dieser Geraden sind es zwei Schritte. Je größer die Zahl, desto steiler der Berg.");
+  h.tasks("Was ist die Steigung?", k("Bei einer anderen Geraden geht es pro Schritt nach rechts 3 Schritte nach oben. Ihre Steigung ist ___.", "3", ["1"], "Die Steigung ist die Zahl der Schritte nach oben bei einem Schritt nach rechts.", "Wie weit geht es nach oben, wenn du einen Schritt nach rechts gehst?"));
+  h.after(
+    "Was ist die Steigung?",
+    b("Die Steigung steht in der Regel", ["$y = 2x + 1$", "Die Zahl vor dem $x$ ist die Steigung: die **2**.", "Für die Steigung schreibt man kurz $m$.", "Hier ist $m = 2$."], "Du musst die Steigung nicht jedes Mal im Bild abzählen. Sie steht schon in der Regel, nämlich direkt vor dem x. Weil man oft über die Steigung spricht, hat sie einen kurzen Namen bekommen, den Buchstaben m.", {
+      tasks: [k("$y = 3x + 2$. Ein Schritt nach rechts bedeutet ___ nach oben.", "3 Schritte", ["2 Schritte"], "Die Zahl vor dem x ist die Steigung. Hier ist das die 3.", "Welche der beiden Zahlen steht direkt vor dem x?")],
+    }),
+  );
+  h.body("Negative Steigung", "$y = -x + 4$", "Vor dem $x$ steht nur ein Minus. Das heißt: Steigung $-1$.", "Ein Schritt nach rechts bedeutet 1 Schritt nach **unten**.", "Die Gerade **fällt**.");
+
+  // Start value: the picture first, the technical word and the letter n on the next board.
+  {
+    const fig = h.board("Der Startwert n").figure;
+    h.before(
+      "Der Startwert n",
+      b("Wo die Gerade startet", ["Schau auf das Bild.", "Die Gerade kreuzt die senkrechte Achse bei der Höhe 1.", "Diese Höhe ist der **Startwert** der Geraden."], "Jede Gerade kreuzt irgendwo die senkrechte Achse. Diese Stelle kannst du dir als Start vorstellen. Von dort aus geht es mit der Steigung weiter, nach rechts hinauf oder hinunter. Bei dieser Geraden liegt der Start bei der Höhe 1.", {
+        figure: fig,
+        tasks: [k("Eine andere Gerade kreuzt die senkrechte Achse bei der Höhe 3. Ihr Startwert ist ___.", "3", ["0"], "Der Startwert ist die Höhe, bei der die Gerade die senkrechte Achse kreuzt.", "Bei welcher Höhe kreuzt diese Gerade die senkrechte Achse?")],
+      }),
+    );
+    h.rename("Der Startwert n", "Der Startwert steht in der Regel");
+    delete h.board("Der Startwert steht in der Regel").figure;
+    h.body("Der Startwert steht in der Regel", "$y = 2x + 1$", "Die Zahl ohne $x$ ist der Startwert: die **1**.", "Das Fachwort dafür ist **y-Achsenabschnitt**.", "Kurz schreibt man dafür $n$. Hier ist $n = 1$.");
+    h.say("Der Startwert steht in der Regel", "Auch den Startwert musst du nicht im Bild suchen. Er steht in der Regel, und zwar als die Zahl ohne x. Sein Fachwort ist lang: y-Achsenabschnitt. Es bedeutet nur: die Stelle, an der die Gerade die y-Achse schneidet. Der kurze Name dafür ist der Buchstabe n.");
+  }
+  h.body("Die allgemeine Form", "$y = m \\cdot x + n$", "$m$ ist die Steigung: die Zahl vor dem $x$.", "$n$ ist der Startwert: die Zahl ohne $x$.", "Jede Gerade lässt sich so aufschreiben.");
+
+  // Punktprobe: the case that fits and the case that does not fit on two boards.
+  h.body("Punktprobe", "Liegt der Punkt $(3\\,|\\,7)$ auf $y = 2x + 1$?", "Setz die erste Zahl für $x$ ein: $2 \\cdot 3 + 1 = 7$", "Heraus kommt 7. Das ist die zweite Zahl des Punktes.", "Also liegt der Punkt auf der Geraden.", "Diese Prüfung heißt **Punktprobe**.");
+  h.after(
+    "Punktprobe",
+    b("Wenn es nicht passt", ["Liegt der Punkt $(3\\,|\\,8)$ auf $y = 2x + 1$?", "Einsetzen: $2 \\cdot 3 + 1 = 7$", "Der Punkt sagt aber 8.", "7 ist nicht 8. Der Punkt liegt **nicht** auf der Geraden."], "Jetzt dieselbe Prüfung mit einem anderen Punkt. Du setzt wieder die erste Zahl ein und rechnest. Kommt etwas anderes heraus als die zweite Zahl des Punktes, dann liegt der Punkt neben der Geraden.", {
+      tasks: [k("Liegt $(1\\,|\\,5)$ auf $y = 2x + 1$? ___", "Nein", ["Ja"], "Eingesetzt kommt 3 heraus. Der Punkt sagt aber 5.", "Setz 1 für x ein. Kommt die zweite Zahl des Punktes heraus?")],
+    }),
+  );
+
+  // Nullstelle: the picture first, the calculation on the next board.
+  {
+    const s = h.board("Nullstelle");
+    const oldTasks = s.tasks;
+    h.body("Nullstelle", "Schau auf das Bild.", "Die Gerade kreuzt die waagerechte Achse.", "An dieser Stelle ist die Höhe null, also $y = 0$.", "Diese Stelle heißt **Nullstelle**.");
+    h.say("Nullstelle", "An der Nullstelle gibt die Maschine eine Null heraus. Im Bild erkennst du sie sofort: Es ist die Stelle, an der die Gerade die waagerechte Achse kreuzt. Dort ist die Höhe null. Wie du sie ausrechnest, zeigt die nächste Tafel.");
+    h.tasks("Nullstelle", k("Eine Gerade kreuzt die waagerechte Achse bei $x = 3$. Ihre Nullstelle ist ___.", "$x = 3$", ["$y = 3$"], "Die Nullstelle ist die Stelle auf der x-Achse. Dort ist y gleich null.", "Auf welcher Achse liegt die Nullstelle: auf der waagerechten oder der senkrechten?"));
+    h.after("Nullstelle", {
+      title: "Die Nullstelle ausrechnen",
+      body: ["Schreib für $y$ eine 0: $2x + 1 = 0$", "Auf beiden Seiten minus 1: $2x = -1$", "Auf beiden Seiten geteilt durch 2: $x = -0{,}5$", "Die Nullstelle liegt bei $x = -0{,}5$."].join("\n\n"),
+      tasks: oldTasks,
+      say: "Um die Nullstelle auszurechnen, schreibst du für y eine 0. Dann hast du eine Gleichung mit x, und die löst du wie gewohnt. Erst räumst du die Zahl ohne x weg, dann teilst du durch die Zahl vor dem x.",
+    });
+  }
+
   h.chapters([
     ["Die Maschine", "Maschine, Tabelle und Bild"],
     ["Was ist die Steigung?", "Steigung und Startwert"],
@@ -142,4 +241,29 @@ migrate("primers/math_07_funktionen.json", (p, h) => {
     { term: "Wachstumsfaktor", plain: "Die Zahl, mit der in jedem Schritt malgenommen wird.", example: "5 % mehr: $q = 1{,}05$" },
   );
   h.quiz(q("Ein Wert verdoppelt sich in jedem Schritt. Der Start ist 5. Wie groß ist er nach 3 Schritten?", "40", ["30", "15", "11"], "5 mal 2 ist 10, mal 2 ist 20, mal 2 ist 40. Der Faktor 2 steht dreimal da."));
+  // Word card: every word and sign of this lesson in the learner's words.
+  h.vocab(
+    { term: "x", plain: "Die Zahl, die in die Maschine hineinkommt.", example: "$x = 2$" },
+    { term: "y", plain: "Die Zahl, die aus der Maschine herauskommt.", example: "$y = 5$" },
+    { term: "Funktion", plain: "Eine Regel, die aus jeder Zahl x genau eine Zahl y macht. Wie eine Maschine.", example: "$y = 2x + 1$" },
+    { term: "f(x)", plain: "Gelesen: f von x. Das, was die Maschine f aus der Zahl x macht. Es ist dasselbe wie y.", example: "$f(3) = 7$" },
+    { term: "Wertetabelle", plain: "Eine Liste. Oben stehen die Zahlen, die hineinkommen. Darunter steht, was herauskommt." },
+    { term: "Koordinatensystem", plain: "Ein Gitter mit zwei Achsen, in das man Punkte einträgt." },
+    { term: "x-Achse", plain: "Die waagerechte Achse. Nach rechts wird x größer." },
+    { term: "y-Achse", plain: "Die senkrechte Achse. Nach oben wird y größer." },
+    { term: "Punkt", plain: "Eine Stelle im Gitter mit zwei Zahlen: erst nach rechts, dann nach oben.", example: "$(2\\,|\\,5)$" },
+    { term: "Gerade", plain: "Eine gerade Linie ohne Knick." },
+    { term: "Graph", plain: "Das Bild einer Funktion im Koordinatensystem." },
+    { term: "Steigung", plain: "Wie viel es nach oben geht, wenn du einen Schritt nach rechts gehst. Bei einem Minus geht es nach unten." },
+    { term: "m", plain: "Der Buchstabe für die Steigung. Es ist die Zahl vor dem x.", example: "In $y = 2x + 1$ ist $m = 2$." },
+    { term: "Startwert", plain: "Die Höhe, bei der die Gerade die senkrechte Achse kreuzt." },
+    { term: "y-Achsenabschnitt", plain: "Das Fachwort für den Startwert." },
+    { term: "n", plain: "Der Buchstabe für den Startwert. Es ist die Zahl ohne x. Beim Wachstum zählt n dagegen die Schritte.", example: "In $y = 2x + 1$ ist $n = 1$." },
+    { term: "Punktprobe", plain: "Prüfen, ob ein Punkt auf der Geraden liegt: erste Zahl einsetzen und mit der zweiten vergleichen." },
+    { term: "Nullstelle", plain: "Die Stelle, an der die Gerade die waagerechte Achse kreuzt. Dort ist y gleich null." },
+    { term: "lineares Wachstum", plain: "In jedem Schritt kommt die gleiche Zahl dazu.", example: "100, 150, 200, 250" },
+    { term: "exponentielles Wachstum", plain: "In jedem Schritt wird mit der gleichen Zahl malgenommen.", example: "100, 200, 400, 800" },
+    { term: "Wachstumsfaktor", plain: "Die Zahl, mit der in jedem Schritt malgenommen wird.", example: "5 % mehr: $q = 1{,}05$" },
+    { term: "q", plain: "Der Buchstabe für den Wachstumsfaktor." },
+  );
 });

@@ -106,6 +106,13 @@ export function checkPrimerStandard(p: Primer, terms: string[], primerById: Map<
       if (clipped.length > 1) v.push(`${b}: clipped sentences in Ferdinand's line (${clipped.slice(0, 3).join(" / ")})`);
     }
     for (const l of arrowChains(s.body)) v.push(`${b}: arrow chain "${l.trim().slice(0, 60)}"`);
+    // Gentle start (maths): the first board is a situation in words and plain numbers. No letters, no formula;
+    // the first sign or letter gets its own board afterwards.
+    if (p.subject === "MATH" && i === 0) {
+      const maths = [...s.body.matchAll(/\$\$?([^$]+)\$\$?/g)].map((x) => x[1]!.replace(/\\(text|mathrm)\{[^}]*\}/g, "").replace(/\\[a-zA-Z]+/g, ""));
+      if (maths.some((m) => /[A-Za-z]/.test(m))) v.push(`${b}: the first board of a maths lesson must not use letters in a formula`);
+      if (s.body.split(/\n+/).filter((l) => l.includes("$")).length > 2) v.push(`${b}: the first board of a maths lesson has more than two lines with maths`);
+    }
     // An owl board says it in words: "aus go wird went", never "go → went".
     if (/→|⇒/.test(s.body)) v.push(`${b}: arrow on the board (write it as a sentence)`);
     for (const t of s.tasks ?? []) if (/→|⇒/.test(t.text + t.choices.join(" "))) v.push(`${b}: arrow in a task (write it as a sentence)`);

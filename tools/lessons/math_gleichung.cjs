@@ -61,6 +61,17 @@ migrate("primers/math_03b_gleichung.json", (p, h) => {
   h.body("x auf beiden Seiten", "$5x + 3 = 3x + 11$", "Nimm auf beiden Seiten $3x$ weg: $| -3x$", "Links bleibt $2x + 3$. Rechts bleibt $11$.", "$2x + 3 = 11$", "Ab hier wie gewohnt: $| -3$, dann $| :2$", "$x = 4$");
   h.say("Wie viele Lösungen?", "Meistens gibt es genau eine Lösung, aber nicht immer. Bei x hoch 2 gleich 9 passen zwei Zahlen: 3 mal 3 ist 9, und minus 3 mal minus 3 ist auch 9. Genau solche Fälle werden in der Prüfung gern gefragt.");
 
+  // Gentle start: the riddle in words first; the letter x and the equation on the next board.
+  h.body("Ein Rätsel", "Ich denke mir eine Zahl.", "Ich verdopple sie und zähle 3 dazu.", "Es kommt 11 heraus.", "Welche Zahl war es?");
+  h.say("Ein Rätsel", "So ein Rätsel kennst du vielleicht aus der Grundschule. Du kannst probieren: Mit 3 kommt 9 heraus, das ist zu wenig. Mit 4 kommt 11 heraus, das passt. In dieser Lektion lernst du einen Weg, bei dem du nicht mehr probieren musst.");
+  h.tasks("Ein Rätsel", k("Ich denke mir eine Zahl. Ich verdopple sie, und es kommt 10 heraus. Die Zahl war ___.", "5", ["20"], "Das Doppelte von 5 ist 10. Also war es die 5.", "Welche Zahl ergibt 10, wenn man sie verdoppelt?"));
+  h.after(
+    "Ein Rätsel",
+    b("Das Rätsel kurz aufschreiben", ["Für die gedachte Zahl schreibst du $x$.", "Das Doppelte davon: $2x$", "Dazu 3: $2x + 3$", "Es kommt 11 heraus: $2x + 3 = 11$", "So ein Zahlenrätsel heißt **Gleichung**."], "Das ist alles, was eine Gleichung ist: ein Zahlenrätsel in kurzer Schreibweise. Das x ist die gesuchte Zahl. Du baust die Zeile Stück für Stück auf, genau so, wie das Rätsel erzählt wird.", {
+      tasks: [k("Ich denke mir eine Zahl. Plus 4 ergibt 10. Als Gleichung: ___", "$x + 4 = 10$", ["$x \\cdot 4 = 10$"], "Das x steht für die gedachte Zahl, und plus 4 wird genau so hingeschrieben.", "Welches Rechenzeichen steht im Rätsel: plus oder mal?")],
+    }),
+  );
+
   h.chapters([
     ["Ein Rätsel", "Was eine Gleichung ist"],
     ["Auf beiden Seiten das Gleiche", "Der sichere Weg zur Lösung"],

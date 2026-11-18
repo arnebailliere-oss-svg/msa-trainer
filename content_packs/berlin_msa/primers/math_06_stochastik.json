@@ -17,8 +17,41 @@
       {
         "chapter": "Was Wahrscheinlichkeit bedeutet",
         "title": "Wie viele von allen?",
-        "body": "Würfel: 6 Seiten, eine davon ist die 6.\n\n$P(6) = \\frac{1}{6}$\n\nDas ist die **Wahrscheinlichkeit** für eine 6: **günstig** durch **möglich**.\n\nDas, worauf du hoffst, heißt **Ereignis**.",
-        "say": "Der Buchstabe P kommt vom englischen Wort probability. Oben im Bruch steht, wie viele Fälle du dir wünschst. Unten steht, wie viele Fälle es überhaupt gibt. Beim Würfel gibt es sechs Seiten, und nur eine davon zeigt die 6.",
+        "body": "Ein Würfel hat 6 Seiten.\n\nNur eine davon zeigt die 6.\n\nDeine Chance auf eine 6 ist also: 1 von 6.\n\nDiese Chance heißt **Wahrscheinlichkeit**.",
+        "say": "Bei einem Würfel ist jede Seite gleich wahrscheinlich. Es gibt sechs Seiten, und nur eine davon zeigt die 6. Deine Chance ist also eins von sechs. Für das Wort Chance sagt man in Mathe Wahrscheinlichkeit.",
+        "tasks": [
+          {
+            "text": "Ein Würfel. Die Chance auf eine 3 ist ___.",
+            "choices": [
+              "1 von 6",
+              "3 von 6"
+            ],
+            "correct": "1 von 6",
+            "why": "Nur eine der sechs Seiten zeigt die 3.",
+            "hint": "Wie viele Seiten des Würfels zeigen eine 3?"
+          }
+        ]
+      },
+      {
+        "title": "Günstig durch möglich",
+        "body": "1 von 6 schreibt man als Bruch: $\\frac{1}{6}$\n\nOben stehen die **günstigen** Fälle.\n\nUnten stehen alle **möglichen** Fälle.\n\nDas, worauf du hoffst, heißt **Ereignis**.",
+        "tasks": [
+          {
+            "text": "Ein Glücksrad hat 8 Felder, 3 davon gewinnen. Die Wahrscheinlichkeit für einen Gewinn ist ___.",
+            "choices": [
+              "$\\frac{3}{8}$",
+              "$\\frac{8}{3}$"
+            ],
+            "correct": "$\\frac{3}{8}$",
+            "why": "3 Felder gewinnen, 8 gibt es insgesamt. Günstig steht oben.",
+            "hint": "Welche Zahl steht oben: die gewünschten Fälle oder alle Fälle?"
+          }
+        ],
+        "say": "Eins von sechs kannst du als Bruch schreiben. Oben steht, wie viele Fälle du dir wünschst. Unten steht, wie viele Fälle es überhaupt gibt. Deshalb merkt man sich: günstig durch möglich."
+      },
+      {
+        "title": "Der Buchstabe P",
+        "body": "Für Wahrscheinlichkeit schreibt man kurz $P$.\n\n$P(6)$ liest man: P von 6.\n\nEs bedeutet: die Wahrscheinlichkeit für eine 6.\n\n$P(6) = \\frac{1}{6}$",
         "tasks": [
           {
             "text": "Ein Würfel. $P(3) = $ ___",
@@ -27,10 +60,11 @@
               "$\\frac{3}{6}$"
             ],
             "correct": "$\\frac{1}{6}$",
-            "why": "Nur eine der sechs Seiten zeigt die 3.",
-            "hint": "Wie viele Seiten des Würfels zeigen eine Drei?"
+            "why": "Nur eine der sechs Seiten zeigt die 3. Günstig ist also 1, möglich sind 6.",
+            "hint": "Wie viele Seiten zeigen die 3, und wie viele Seiten gibt es?"
           }
-        ]
+        ],
+        "say": "Der Buchstabe P kommt vom englischen Wort probability. In der Klammer steht das Ereignis, um das es geht. Die Klammer bedeutet hier nicht mal. Du liest die ganze Zeile so: Die Wahrscheinlichkeit für eine 6 ist ein Sechstel."
       },
       {
         "title": "Als Bruch, Dezimalzahl, Prozent",

@@ -15,24 +15,41 @@
       {
         "chapter": "Was Prozent bedeutet",
         "title": "Von hundert",
-        "body": "$1\\,\\%$ = 1 von 100 = $\\frac{1}{100}$ = $0{,}01$\n\n$50\\,\\%$ = 50 von 100 = die **Hälfte**",
-        "say": "Prozent kommt aus dem Lateinischen, pro centum, und bedeutet von hundert. Das Zeichen dafür ist nur eine Abkürzung. Es gibt auch Promille, das bedeutet von tausend. Fünfzig Prozent sind fünfzig von hundert, also genau die Hälfte.",
+        "body": "100 Schüler stehen auf dem Hof. 25 davon tragen eine Mütze.\n\n25 von 100: Das sind 25 **Prozent**.\n\nProzent heißt: **von hundert**.\n\nDas Zeichen dafür ist %.",
+        "say": "Prozent kommt aus dem Lateinischen und bedeutet von hundert. Stell dir immer hundert Dinge vor: hundert Schüler, hundert Euro, hundert Lose. Wie viele davon gemeint sind, sagt die Zahl vor dem Zeichen. Das Zeichen selbst ist nur eine Abkürzung für diese zwei Wörter.",
         "tasks": [
           {
-            "text": "$50\\,\\%$ von etwas ist ___.",
+            "text": "Von 100 Losen gewinnen 7. Das sind ___.",
             "choices": [
-              "die Hälfte",
-              "ein Viertel"
+              "7 %",
+              "70 %"
             ],
-            "correct": "die Hälfte",
-            "why": "50 von 100 ist genau die Hälfte.",
-            "hint": "Wie viel von 100 sind 50? Die Hälfte oder weniger?"
+            "correct": "7 %",
+            "why": "7 von 100 sind genau 7 Prozent.",
+            "hint": "Wie viele von den hundert Losen gewinnen?"
           }
         ]
       },
       {
+        "title": "Die Hälfte, ein Viertel, alles",
+        "body": "50 % sind 50 von 100: die **Hälfte**.\n\n25 % sind 25 von 100: ein Viertel.\n\n100 % sind 100 von 100: alles.\n\n1 % ist nur 1 von 100.",
+        "tasks": [
+          {
+            "text": "75 % sind ___.",
+            "choices": [
+              "drei Viertel",
+              "ein Viertel"
+            ],
+            "correct": "drei Viertel",
+            "why": "25 Prozent sind ein Viertel. 75 Prozent sind dreimal so viel.",
+            "hint": "Wie oft passen 25 Prozent in 75 Prozent hinein?"
+          }
+        ],
+        "say": "Ein paar Prozentzahlen solltest du sofort erkennen. Fünfzig Prozent sind die Hälfte, fünfundzwanzig Prozent sind ein Viertel. Hundert Prozent sind das Ganze. Es gibt auch Promille, das bedeutet von tausend, aber das brauchst du selten."
+      },
+      {
         "title": "Prozent als Bruch und Dezimalzahl",
-        "body": "$25\\,\\% = \\frac{25}{100} = 0{,}25$\n\n$10\\,\\% = \\frac{10}{100} = 0{,}1$\n\n$100\\,\\% = 1$ = alles",
+        "body": "25 % heißt 25 von 100.\n\nAls Bruch: $\\frac{25}{100}$\n\nAls Dezimalzahl: $0{,}25$\n\nDer Trick: Das Komma rückt zwei Stellen nach links.",
         "say": "Prozent in Dezimalzahl: Komma zwei Stellen nach links. Aus 25 % wird 0,25.",
         "tasks": [
           {

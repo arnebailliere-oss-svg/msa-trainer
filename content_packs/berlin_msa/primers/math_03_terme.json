@@ -13,9 +13,42 @@
     "steps": [
       {
         "chapter": "Was ein x ist",
-        "title": "Eine Kiste namens x",
-        "body": "$x$ ist ein **Platzhalter**. Ein Ticket kostet $x$ Euro.\n\n3 Tickets kosten $3 \\cdot x = 3x$ Euro.\n\nDie Zahl vor dem $x$ heißt **Koeffizient**.",
+        "title": "Eine Kiste für eine Zahl",
+        "body": "Ein Ticket fürs Kino. Den Preis kennst du noch nicht.\n\nStell dir eine geschlossene **Kiste** vor.\n\nIn der Kiste liegt der Preis.\n\nDu weißt nur: Es ist eine Zahl.",
         "say": "Du weißt noch nicht, was ein Ticket kostet. Also schreibst du x. Später setzt du die richtige Zahl ein.",
+        "tasks": [
+          {
+            "text": "Du weißt noch nicht, wie viele Gäste zur Party kommen. Die Anzahl ist noch ___.",
+            "choices": [
+              "unbekannt",
+              "null"
+            ],
+            "correct": "unbekannt",
+            "why": "Du kennst die Zahl noch nicht. Das heißt aber nicht, dass niemand kommt.",
+            "hint": "Bedeutet nicht kennen dasselbe wie nichts?"
+          }
+        ]
+      },
+      {
+        "title": "Die Kiste heißt x",
+        "body": "Die Kiste bekommt einen Namen: $x$\n\n$x$ ist ein **Platzhalter** für eine Zahl.\n\nEin Ticket kostet also $x$ Euro.",
+        "tasks": [
+          {
+            "text": "Eine Kugel Eis kostet einen Preis, den du noch nicht kennst. Dafür schreibst du ___.",
+            "choices": [
+              "einen Buchstaben",
+              "eine Null"
+            ],
+            "correct": "einen Buchstaben",
+            "why": "Ein Buchstabe hält den Platz frei, bis du die Zahl kennst.",
+            "hint": "Was schreibt man für eine Zahl, die man noch nicht kennt?"
+          }
+        ],
+        "say": "Damit man über die Kiste sprechen kann, gibt man ihr einen Namen. Meistens nimmt man den Buchstaben x. Er hält den Platz frei, bis du die Zahl kennst. Später setzt du die richtige Zahl ein."
+      },
+      {
+        "title": "Mehrere Tickets",
+        "body": "Ein Ticket kostet $x$ Euro.\n\n3 Tickets kosten 3 mal $x$ Euro: $3 \\cdot x$\n\nKurz schreibt man: $3x$",
         "tasks": [
           {
             "text": "5 Tickets kosten ___ Euro.",
@@ -24,10 +57,28 @@
               "$x + 5$"
             ],
             "correct": "$5x$",
-            "why": "Fünf Tickets kosten fünfmal den Preis eines Tickets.",
+            "why": "Fünf Tickets kosten fünfmal den Preis von einem Ticket.",
             "hint": "Rechnest du bei mehreren gleichen Tickets plus oder mal?"
           }
-        ]
+        ],
+        "say": "Jetzt kaufst du drei Tickets. Jedes kostet x Euro, also zahlst du drei mal x. Den Malpunkt zwischen Zahl und Buchstabe lässt man weg. So wird aus 3 mal x einfach 3x."
+      },
+      {
+        "title": "Die Zahl vor dem x",
+        "body": "In $3x$ steht die 3 vor dem $x$.\n\nDiese Zahl heißt **Koeffizient**.\n\nSie sagt, wie oft das $x$ genommen wird.",
+        "tasks": [
+          {
+            "text": "In $7x$ ist der Koeffizient ___.",
+            "choices": [
+              "7",
+              "$x$"
+            ],
+            "correct": "7",
+            "why": "Die 7 steht vor dem Buchstaben. Sie ist der Koeffizient.",
+            "hint": "Welche Zahl steht direkt vor dem Buchstaben?"
+          }
+        ],
+        "say": "Die Zahl, die vor dem Buchstaben steht, hat einen eigenen Namen. Sie heißt Koeffizient. Das Wort klingt schwer, bedeutet aber nur: so oft wird das x genommen. In 3x ist das die 3."
       },
       {
         "title": "Variable heißt veränderlich",

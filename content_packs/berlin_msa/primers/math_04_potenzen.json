@@ -15,7 +15,7 @@
       {
         "chapter": "Was eine Potenz ist",
         "title": "Die Abkürzung",
-        "body": "$2 \\cdot 2 \\cdot 2 \\cdot 2 \\cdot 2 = 2^5 = 32$\n\nStatt fünfmal 2 schreibt man **2 hoch 5**.\n\nSo ein Ausdruck heißt **Potenz**.",
+        "body": "$2 \\cdot 2 \\cdot 2 \\cdot 2 \\cdot 2$\n\nDas ist lang. Fünfmal steht die 2 da.\n\nKürzer schreibt man: $2^5$\n\nMan liest: **2 hoch 5**. Ausgerechnet ist das 32.\n\nSo ein Ausdruck heißt **Potenz**.",
         "say": "Wie „mal“ eine Abkürzung für Plus ist, ist „hoch“ eine Abkürzung für Mal.",
         "tasks": [
           {

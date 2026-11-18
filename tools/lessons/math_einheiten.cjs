@@ -53,8 +53,17 @@ migrate("primers/math_08_einheiten.json", (p, h) => {
   // Read-through: the example says how many steps and in which direction.
   h.body("Beispiel", "$3{,}5$ m in cm: zwei Stufen hinunter, also mal 100", "$3{,}5 \\cdot 100 = 350$ cm", "$4200$ m in km: eine Stufe hinauf, also geteilt durch 1000", "$4200 : 1000 = 4{,}2$ km");
 
+  // Gentle start: lengths the learner knows from everyday life come before the prefixes; no fractions on the prefix board.
+  h.before(
+    "Die Vorsilben",
+    b("Was du schon kennst", ["Ein Lineal ist 30 **Zentimeter** lang.", "Eine Tür ist 2 **Meter** hoch.", "Der Schulweg ist 2 **Kilometer** weit.", "Alle drei messen eine Länge. Nur die Einheit ist verschieden groß."], "Mit Längen misst du jeden Tag, ohne darüber nachzudenken. Kleine Dinge misst du in Zentimetern, Zimmer in Metern und Wege in Kilometern. Es ist immer dieselbe Sache, nämlich eine Länge. Nur die Einheit ist verschieden groß.", {
+      tasks: [k("Die Länge eines Stifts misst du am besten in ___.", "Zentimetern", ["Kilometern"], "Ein Stift ist klein. Dafür passt die kleine Einheit.", "Ist ein Stift eher so lang wie ein Finger oder wie ein Schulweg?")],
+    }),
+  );
+  h.body("Die Vorsilben", "**kilo** heißt tausend: 1 km = 1000 m", "**dezi** heißt Zehntel: 10 dm = 1 m", "**zenti** heißt Hundertstel: 100 cm = 1 m", "**milli** heißt Tausendstel: 1000 mm = 1 m");
+
   h.chapters([
-    ["Die Vorsilben", "Vorsilben und Längen"],
+    ["Was du schon kennst", "Vorsilben und Längen"],
     ["Fläche: alles mal 100", "Flächen, Volumen, Gewicht und Zeit"],
   ]);
   h.renameVocab({ "Quadrat-Einheit (m²)": "Quadratmeter", "Kubik-Einheit (m³)": "Volumen" });

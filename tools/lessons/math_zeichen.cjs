@@ -83,6 +83,9 @@ migrate("primers/math_00_zeichen.json", (p, h) => {
   h.say("Klammern zuerst", "Eine Klammer ist stärker als Punkt vor Strich. Was in ihr steht, rechnest du als Erstes aus. Vergleich die beiden Zeilen: Mit Klammer kommt 14 heraus, ohne Klammer nur 10.");
   h.body("Prozent heißt „von hundert“", "$25\\,\\%$ heißt 25 von 100.", "Geschrieben mit dem Geteilt-Strich: $\\frac{25}{100}$", "Als Zahl mit Komma: $0{,}25$", "$\\%$ = pro **cent**um = von **hundert**");
 
+  // Gentle start: the first board does not show a row of eight signs at once.
+  h.body("Mathe ist eine Sprache", "Jedes Zeichen in Mathe ist ein **Wort**.", "Zwei davon kennst du schon lange: $+$ und $-$.", "Die anderen zeige ich dir einzeln, eins nach dem anderen.", "Wenn du die Wörter kennst, verstehst du die Sätze.");
+
   h.chapters([
     ["Mathe ist eine Sprache", "Die Rechenzeichen"],
     ["Hochzahlen", "Hochzahl und Wurzel"],

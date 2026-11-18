@@ -68,6 +68,17 @@ migrate("primers/math_05_lgs.json", (p, h) => {
   h.body("Idee 2: Addieren", "(I) $x + y = 10$", "(II) $x - y = 2$", "Zähle die beiden Zeilen zusammen.", "Links: $x + x = 2x$. Aus $y - y$ wird nichts.", "Rechts: $10 + 2 = 12$", "Also $2x = 12$ und damit $x = 6$.", "In (I): $6 + y = 10$, also $y = 4$", "Dieser Weg heißt **Additionsverfahren**.");
   h.body("Wenn nichts wegfällt", "(I) $x + 2y = 8$", "(II) $x + y = 5$", "Nimm (II) mal $-1$: $-x - y = -5$", "Zähle (I) und die neue Zeile zusammen.", "$x - x$ fällt weg. $2y - y = y$. Rechts: $8 - 5 = 3$", "Also $y = 3$.", "In (II): $x + 3 = 5$, also $x = 2$");
 
+  // Gentle start: the riddle with two numbers in words first; x and y on the next board.
+  h.body("Ein Rätsel mit zwei Zahlen", "Ich denke mir zwei Zahlen.", "Zusammen ergeben sie 10.", "Zieht man die zweite von der ersten ab, bleibt 2.", "Welche zwei Zahlen sind es?");
+  h.say("Ein Rätsel mit zwei Zahlen", "Hier werden zwei Zahlen gesucht. Der erste Hinweis allein reicht nicht, denn 5 und 5 ergeben 10, 7 und 3 aber auch. Erst der zweite Hinweis entscheidet. Deshalb braucht man bei zwei gesuchten Zahlen immer zwei Hinweise.");
+  h.tasks("Ein Rätsel mit zwei Zahlen", k("Zusammen 10, und die erste minus die zweite ergibt 2. Welches Paar passt zu beiden Hinweisen? ___", "6 und 4", ["7 und 3"], "6 plus 4 ist 10, und 6 minus 4 ist 2. Beide Hinweise stimmen.", "Prüf bei jedem Paar auch den zweiten Hinweis mit dem Abziehen."));
+  h.after(
+    "Ein Rätsel mit zwei Zahlen",
+    b("Die Hinweise kurz aufschreiben", ["Die erste Zahl nennst du $x$, die zweite $y$.", "Zusammen 10: $x + y = 10$", "Erste minus zweite ist 2: $x - y = 2$", "Die gesuchten Zahlen $x$ und $y$ heißen **Unbekannte**."], "Jeder Hinweis wird zu einer eigenen Zeile. Für die beiden gesuchten Zahlen nimmst du zwei verschiedene Buchstaben, damit du sie nicht verwechselst. Mehr ist nicht passiert: Die zwei Sätze aus dem Rätsel stehen jetzt in kurzer Schreibweise da.", {
+      tasks: [k("Passen $x = 7$ und $y = 3$ zur ersten Zeile $x + y = 10$? ___", "Ja", ["Nein"], "7 plus 3 ergibt 10. Zur ersten Zeile passen diese Zahlen, zur zweiten aber nicht.", "Setz beide Zahlen ein und rechne 7 plus 3 aus.")],
+    }),
+  );
+
   h.chapters([
     ["Ein Rätsel mit zwei Zahlen", "Zwei Gleichungen, ein Paar"],
     ["Idee 1: Einsetzen", "Zwei Wege zur Lösung"],

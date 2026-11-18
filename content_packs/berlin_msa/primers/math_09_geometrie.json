@@ -15,7 +15,7 @@
       {
         "chapter": "Umfang und Fläche",
         "title": "Umfang: einmal außen rum",
-        "body": "Rechteck 5 cm mal 3 cm.\n\nDer **Umfang** ist der Weg einmal außen herum.\n\n$U = 5 + 3 + 5 + 3 = 16$ cm\n\nDer Buchstabe $U$ steht für den Umfang.\n\nDer **Zaun** um die Wiese.",
+        "body": "Ein Rechteck: 5 cm lang und 3 cm breit.\n\nDer **Umfang** ist der Weg einmal außen herum.\n\n$5 + 3 + 5 + 3 = 16$ cm\n\nDer **Zaun** um die Wiese.",
         "figure": {
           "type": "rectangle",
           "a": 5,
@@ -41,7 +41,7 @@
       },
       {
         "title": "Fläche: was drin ist",
-        "body": "$A = 5 \\cdot 3 = 15\\ \\text{cm}^2$\n\nDer Buchstabe $A$ steht für die Fläche.\n\nDas **Gras** auf der Wiese.\n\nDie Größe der Fläche heißt **Flächeninhalt**.\n\nGemessen in **Quadrat**-Zentimetern.",
+        "body": "Länge mal Breite: $5 \\cdot 3 = 15$\n\nDas **Gras** auf der Wiese.\n\nDie Größe der Fläche heißt **Flächeninhalt**.\n\nGemessen in **Quadrat**-Zentimetern: $15\\ \\text{cm}^2$\n\nKurz schreibt man $U$ für den Umfang und $A$ für die Fläche.",
         "say": "Die Fläche ist das, was innerhalb des Randes liegt. Beim Rechteck rechnest du Länge mal Breite. Weil du dabei Zentimeter mal Zentimeter rechnest, bekommt die Einheit eine kleine 2. Man liest das Quadratzentimeter.",
         "tasks": [
           {

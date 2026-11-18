@@ -10,6 +10,7 @@ import { renderFigureSpec } from "@/core/variants";
 import { MathText } from "@/ui/MathText";
 import { OWL_NAME, OwlAvatar } from "@/ui/Owl";
 import { LessonWidget } from "@/ui/widgets";
+import { WordCard, wordsIn } from "@/ui/WordCard";
 import { Button } from "@/ui/primitives";
 
 /** "pause" is the board between two chapters: a place to stop; `step` is the first board of the next chapter. */
@@ -49,6 +50,7 @@ export function PrimerView() {
   /** The lesson `pos` belongs to; guards against saving a position into a lesson the address just switched to. */
   const [posId, setPosId] = useState(id);
   const [picked, setPicked] = useState<string | null>(null);
+  const [showWords, setShowWords] = useState(false);
   const [score, setScore] = useState(0);
   const [wiping, setWiping] = useState(false);
   /** "Jetzt du" boards: which gaps are solved, which wrong choices were tried, and what Ferdinand answers. */
@@ -151,6 +153,8 @@ export function PrimerView() {
     const onKey = (e: KeyboardEvent) => {
       // Keys pressed inside a try-it-out element (sliders) belong to that element, not to the board.
       if ((e.target as HTMLElement | null)?.closest?.("[data-owl-widget]")) return;
+      // While the word card is open the board does not move; the card closes itself on Escape.
+      if (showWords) return;
       if (e.key === "Enter") {
         if (pos.phase === "done" || (pos.phase === "quiz" && picked === null)) return;
         e.preventDefault();
@@ -166,7 +170,7 @@ export function PrimerView() {
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [advance, backStep, pos, picked, quiz]);
+  }, [advance, backStep, pos, picked, quiz, showWords]);
 
   const current = quiz[pos.qi];
   const quizChoices = useMemo(() => (current ? shuffled(current.choices, visit.current + hash(`${id}q${pos.qi}`)) : []), [current, id, pos.qi]);
@@ -206,6 +210,15 @@ export function PrimerView() {
       }
     });
   }, [primer, pos]);
+
+  // Words and signs of this lesson (and of the lessons it builds on) that stand on the current board.
+  const wordsHere = useMemo(() => {
+    const st = primer?.steps[pos.step];
+    if (!primer || !st || pos.phase !== "steps") return [];
+    const text = [st.title, st.body, ...(st.tasks ?? []).map((t) => `${t.text} ${t.choices.join(" ")}`)].join("\n");
+    const earlier = (primer.requires ?? []).map((r) => content?.primerById(r)?.vocab ?? []);
+    return wordsIn(text, [primer.vocab, ...earlier]);
+  }, [primer, pos, content]);
 
   if (!content) return null;
   if (!primer) {
@@ -471,6 +484,13 @@ export function PrimerView() {
             <MathText text={says} />
           </div>
         </div>
+        {/* Every word and sign of the lesson, reachable from every board */}
+        {pos.phase === "steps" && stepData && primer.vocab.length > 0 && (
+          <button onClick={() => setShowWords(true)} className="mt-3 self-start rounded-xl border border-line bg-surface px-4 py-2 text-sm font-semibold text-ink-2 hover:bg-surface-2 lg:self-stretch">
+            📖 Wörter und Zeichen{wordsHere.length > 0 ? ` (${wordsHere.length} auf dieser Tafel)` : ""}
+          </button>
+        )}
+        {showWords && <WordCard here={wordsHere} all={primer.vocab} onClose={() => setShowWords(false)} />}
         {/* Controls, wide screens: anchored at the foot of Ferdinand's column */}
         <div className="mt-auto hidden items-center gap-3 pt-10 lg:flex">{controls}</div>
       </aside>

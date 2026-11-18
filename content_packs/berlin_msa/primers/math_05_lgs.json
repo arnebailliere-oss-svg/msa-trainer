@@ -17,8 +17,24 @@
       {
         "chapter": "Zwei Gleichungen, ein Paar",
         "title": "Ein Rätsel mit zwei Zahlen",
-        "body": "Zwei Zahlen ergeben zusammen 10.\n\nZieht man die zweite von der ersten ab, bleibt 2.\n\n$x + y = 10$\n\n$x - y = 2$\n\nDie gesuchten Zahlen $x$ und $y$ heißen **Unbekannte**.",
-        "say": "Hier gibt es zwei gesuchte Zahlen, nämlich x und y. Eine Zeile allein reicht nicht, denn 5 und 5 passen zur ersten Zeile, 7 und 3 aber auch. Erst beide Zeilen zusammen legen fest, welche zwei Zahlen gemeint sind.",
+        "body": "Ich denke mir zwei Zahlen.\n\nZusammen ergeben sie 10.\n\nZieht man die zweite von der ersten ab, bleibt 2.\n\nWelche zwei Zahlen sind es?",
+        "say": "Hier werden zwei Zahlen gesucht. Der erste Hinweis allein reicht nicht, denn 5 und 5 ergeben 10, 7 und 3 aber auch. Erst der zweite Hinweis entscheidet. Deshalb braucht man bei zwei gesuchten Zahlen immer zwei Hinweise.",
+        "tasks": [
+          {
+            "text": "Zusammen 10, und die erste minus die zweite ergibt 2. Welches Paar passt zu beiden Hinweisen? ___",
+            "choices": [
+              "6 und 4",
+              "7 und 3"
+            ],
+            "correct": "6 und 4",
+            "why": "6 plus 4 ist 10, und 6 minus 4 ist 2. Beide Hinweise stimmen.",
+            "hint": "Prüf bei jedem Paar auch den zweiten Hinweis mit dem Abziehen."
+          }
+        ]
+      },
+      {
+        "title": "Die Hinweise kurz aufschreiben",
+        "body": "Die erste Zahl nennst du $x$, die zweite $y$.\n\nZusammen 10: $x + y = 10$\n\nErste minus zweite ist 2: $x - y = 2$\n\nDie gesuchten Zahlen $x$ und $y$ heißen **Unbekannte**.",
         "tasks": [
           {
             "text": "Passen $x = 7$ und $y = 3$ zur ersten Zeile $x + y = 10$? ___",
@@ -30,7 +46,8 @@
             "why": "7 plus 3 ergibt 10. Zur ersten Zeile passen diese Zahlen, zur zweiten aber nicht.",
             "hint": "Setz beide Zahlen ein und rechne 7 plus 3 aus."
           }
-        ]
+        ],
+        "say": "Jeder Hinweis wird zu einer eigenen Zeile. Für die beiden gesuchten Zahlen nimmst du zwei verschiedene Buchstaben, damit du sie nicht verwechselst. Mehr ist nicht passiert: Die zwei Sätze aus dem Rätsel stehen jetzt in kurzer Schreibweise da."
       },
       {
         "title": "Die Lösung ist ein Paar",

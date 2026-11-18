@@ -70,6 +70,18 @@ migrate("primers/math_02_prozent.json", (p, h) => {
     }),
   );
 
+  // Gentle start: hundred pupils first, the sign after that, fraction and decimal on a later board.
+  h.body("Von hundert", "100 Schüler stehen auf dem Hof. 25 davon tragen eine Mütze.", "25 von 100: Das sind 25 **Prozent**.", "Prozent heißt: **von hundert**.", "Das Zeichen dafür ist %.");
+  h.say("Von hundert", "Prozent kommt aus dem Lateinischen und bedeutet von hundert. Stell dir immer hundert Dinge vor: hundert Schüler, hundert Euro, hundert Lose. Wie viele davon gemeint sind, sagt die Zahl vor dem Zeichen. Das Zeichen selbst ist nur eine Abkürzung für diese zwei Wörter.");
+  h.tasks("Von hundert", k("Von 100 Losen gewinnen 7. Das sind ___.", "7 %", ["70 %"], "7 von 100 sind genau 7 Prozent.", "Wie viele von den hundert Losen gewinnen?"));
+  h.after(
+    "Von hundert",
+    b("Die Hälfte, ein Viertel, alles", ["50 % sind 50 von 100: die **Hälfte**.", "25 % sind 25 von 100: ein Viertel.", "100 % sind 100 von 100: alles.", "1 % ist nur 1 von 100."], "Ein paar Prozentzahlen solltest du sofort erkennen. Fünfzig Prozent sind die Hälfte, fünfundzwanzig Prozent sind ein Viertel. Hundert Prozent sind das Ganze. Es gibt auch Promille, das bedeutet von tausend, aber das brauchst du selten.", {
+      tasks: [k("75 % sind ___.", "drei Viertel", ["ein Viertel"], "25 Prozent sind ein Viertel. 75 Prozent sind dreimal so viel.", "Wie oft passen 25 Prozent in 75 Prozent hinein?")],
+    }),
+  );
+  h.body("Prozent als Bruch und Dezimalzahl", "25 % heißt 25 von 100.", "Als Bruch: $\\frac{25}{100}$", "Als Dezimalzahl: $0{,}25$", "Der Trick: Das Komma rückt zwei Stellen nach links.");
+
   h.chapters([
     ["Von hundert", "Was Prozent bedeutet"],
     ["Der Teil vom Ganzen", "Die drei Grundaufgaben"],

@@ -74,8 +74,32 @@ migrate("primers/math_03_terme.json", (p, h) => {
     }),
   );
 
+  // Gentle start: the unknown price first, then several tickets, then the name of the number in front.
+  h.body("Eine Kiste namens x", "Ein Ticket fürs Kino. Den Preis kennst du noch nicht.", "Für den Preis schreibst du einen Buchstaben: $x$", "$x$ ist ein **Platzhalter** für eine Zahl.");
+  h.tasks("Eine Kiste namens x", k("Eine Kugel Eis kostet einen Preis, den du noch nicht kennst. Dafür schreibst du ___.", "einen Buchstaben", ["eine Null"], "Ein Buchstabe hält den Platz frei, bis du die Zahl kennst.", "Was schreibt man für eine Zahl, die man noch nicht kennt?"));
+  h.after(
+    "Eine Kiste namens x",
+    b("Mehrere Tickets", ["Ein Ticket kostet $x$ Euro.", "3 Tickets kosten 3 mal $x$ Euro: $3 \\cdot x$", "Kurz schreibt man: $3x$"], "Jetzt kaufst du drei Tickets. Jedes kostet x Euro, also zahlst du drei mal x. Den Malpunkt zwischen Zahl und Buchstabe lässt man weg. So wird aus 3 mal x einfach 3x.", {
+      tasks: [k("5 Tickets kosten ___ Euro.", "$5x$", ["$x + 5$"], "Fünf Tickets kosten fünfmal den Preis von einem Ticket.", "Rechnest du bei mehreren gleichen Tickets plus oder mal?")],
+    }),
+    b("Die Zahl vor dem x", ["In $3x$ steht die 3 vor dem $x$.", "Diese Zahl heißt **Koeffizient**.", "Sie sagt, wie oft das $x$ genommen wird."], "Die Zahl, die vor dem Buchstaben steht, hat einen eigenen Namen. Sie heißt Koeffizient. Das Wort klingt schwer, bedeutet aber nur: so oft wird das x genommen. In 3x ist das die 3.", {
+      tasks: [k("In $7x$ ist der Koeffizient ___.", "7", ["$x$"], "Die 7 steht vor dem Buchstaben. Sie ist der Koeffizient.", "Welche Zahl steht direkt vor dem Buchstaben?")],
+    }),
+  );
+
+  // First board without a letter: the unknown price as a closed box; the name x comes on the next board.
+  h.body("Eine Kiste namens x", "Ein Ticket fürs Kino. Den Preis kennst du noch nicht.", "Stell dir eine geschlossene **Kiste** vor.", "In der Kiste liegt der Preis.", "Du weißt nur: Es ist eine Zahl.");
+  h.rename("Eine Kiste namens x", "Eine Kiste für eine Zahl");
+  h.tasks("Eine Kiste für eine Zahl", k("Du weißt noch nicht, wie viele Gäste zur Party kommen. Die Anzahl ist noch ___.", "unbekannt", ["null"], "Du kennst die Zahl noch nicht. Das heißt aber nicht, dass niemand kommt.", "Bedeutet nicht kennen dasselbe wie nichts?"));
+  h.after(
+    "Eine Kiste für eine Zahl",
+    b("Die Kiste heißt x", ["Die Kiste bekommt einen Namen: $x$", "$x$ ist ein **Platzhalter** für eine Zahl.", "Ein Ticket kostet also $x$ Euro."], "Damit man über die Kiste sprechen kann, gibt man ihr einen Namen. Meistens nimmt man den Buchstaben x. Er hält den Platz frei, bis du die Zahl kennst. Später setzt du die richtige Zahl ein.", {
+      tasks: [k("Eine Kugel Eis kostet einen Preis, den du noch nicht kennst. Dafür schreibst du ___.", "einen Buchstaben", ["eine Null"], "Ein Buchstabe hält den Platz frei, bis du die Zahl kennst.", "Was schreibt man für eine Zahl, die man noch nicht kennt?")],
+    }),
+  );
+
   h.chapters([
-    ["Eine Kiste namens x", "Was ein x ist"],
+    ["Eine Kiste für eine Zahl", "Was ein x ist"],
     ["Äpfel zu Äpfeln", "Zusammenfassen"],
     ["Vertauschen ist erlaubt", "Die drei Rechengesetze"],
     ["Der klassische Fehler", "Klammern auflösen"],

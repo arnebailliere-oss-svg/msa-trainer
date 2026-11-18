@@ -95,8 +95,18 @@ migrate("primers/math_09c_koerper.json", (p, h) => {
   // Read-through: the surface is added up face by face.
   h.body("Oberfläche: die Verpackung", "Die **Oberfläche** sind alle Flächen außen zusammen.", "Boden und Deckel: $4 \\cdot 3 = 12$", "Vorn und hinten: $4 \\cdot 2 = 8$", "Links und rechts: $3 \\cdot 2 = 6$", "Jede Fläche gibt es zweimal:", "$O = 2 \\cdot (12 + 8 + 6) = 52\\ \\text{cm}^2$", "$O$ steht für die Oberfläche.");
 
+  // Gentle start: count the small cubes in a box first; multiplying, the unit and the letter V come on the next board.
+  h.before(
+    "Volumen: wie viel passt rein",
+    b("Wie viel passt hinein?", ["Ein Karton: 4 cm lang, 3 cm breit, 2 cm hoch.", "Wie viele Würfel mit 1 cm Kante passen hinein?", "Unten liegen 4 mal 3, also 12 Würfel.", "Darüber liegt eine zweite Schicht: zusammen 24.", "Diese Menge heißt **Volumen**."], "Stell dir kleine Würfel vor, jeder einen Zentimeter lang, breit und hoch. Du legst den Boden des Kartons damit aus und stapelst dann Schicht auf Schicht. Wenn der Karton voll ist, zählst du die Würfel. Diese Zahl sagt, wie viel hineinpasst.", {
+      figure: { type: "box", a: 4, b: 3, c: 2, labels: { a: "4 cm", b: "3 cm", c: "2 cm" } },
+      tasks: [k("In einem Karton liegen unten 6 Würfel, und es gibt 3 Schichten. Hinein passen ___ Würfel.", "18", ["9"], "Jede Schicht hat 6 Würfel. Drei Schichten sind 3 mal 6.", "Wie viele Würfel liegen in einer Schicht, und wie viele Schichten gibt es?")],
+    }),
+  );
+  h.body("Volumen: wie viel passt rein", "Schneller geht es mit Rechnen: Länge mal Breite mal Höhe.", "$4 \\cdot 3 \\cdot 2 = 24$", "Die Einheit heißt Kubikzentimeter: $\\text{cm}^3$", "Für Volumen schreibt man kurz $V$: $V = 24\\ \\text{cm}^3$");
+
   h.chapters([
-    ["Volumen: wie viel passt rein", "Volumen und Oberfläche"],
+    ["Wie viel passt hinein?", "Volumen und Oberfläche"],
     ["Der Kreis", "Der Kreis und die Dose"],
     ["Spitze Körper: ein Drittel", "Spitze Körper und die Kugel"],
   ]);

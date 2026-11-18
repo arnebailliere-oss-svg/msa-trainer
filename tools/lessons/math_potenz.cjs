@@ -87,6 +87,9 @@ migrate("primers/math_04_potenzen.json", (p, h) => {
     }),
   );
 
+  // Gentle start: the long product, then the short way of writing it, one line each.
+  h.body("Die Abkürzung", "$2 \\cdot 2 \\cdot 2 \\cdot 2 \\cdot 2$", "Das ist lang. Fünfmal steht die 2 da.", "Kürzer schreibt man: $2^5$", "Man liest: **2 hoch 5**. Ausgerechnet ist das 32.", "So ein Ausdruck heißt **Potenz**.");
+
   h.chapters([
     ["Die Abkürzung", "Was eine Potenz ist"],
     ["Hoch 1 und hoch 0", "Besondere Hochzahlen"],

@@ -98,6 +98,10 @@ migrate("primers/math_09_geometrie.json", (p, h) => {
     }),
   );
 
+  // Gentle start: the walk around the meadow in numbers; the letters U and A come on the second board.
+  h.body("Umfang: einmal außen rum", "Ein Rechteck: 5 cm lang und 3 cm breit.", "Der **Umfang** ist der Weg einmal außen herum.", "$5 + 3 + 5 + 3 = 16$ cm", "Der **Zaun** um die Wiese.");
+  h.body("Fläche: was drin ist", "Länge mal Breite: $5 \\cdot 3 = 15$", "Das **Gras** auf der Wiese.", "Die Größe der Fläche heißt **Flächeninhalt**.", "Gemessen in **Quadrat**-Zentimetern: $15\\ \\text{cm}^2$", "Kurz schreibt man $U$ für den Umfang und $A$ für die Fläche.");
+
   h.chapters([
     ["Umfang: einmal außen rum", "Umfang und Fläche"],
     ["Das Dreieck beschriften", "Dreiecke und Winkel"],

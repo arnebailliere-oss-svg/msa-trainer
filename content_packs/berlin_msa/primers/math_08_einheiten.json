@@ -15,8 +15,25 @@
     "steps": [
       {
         "chapter": "Vorsilben und Längen",
+        "title": "Was du schon kennst",
+        "body": "Ein Lineal ist 30 **Zentimeter** lang.\n\nEine Tür ist 2 **Meter** hoch.\n\nDer Schulweg ist 2 **Kilometer** weit.\n\nAlle drei messen eine Länge. Nur die Einheit ist verschieden groß.",
+        "tasks": [
+          {
+            "text": "Die Länge eines Stifts misst du am besten in ___.",
+            "choices": [
+              "Zentimetern",
+              "Kilometern"
+            ],
+            "correct": "Zentimetern",
+            "why": "Ein Stift ist klein. Dafür passt die kleine Einheit.",
+            "hint": "Ist ein Stift eher so lang wie ein Finger oder wie ein Schulweg?"
+          }
+        ],
+        "say": "Mit Längen misst du jeden Tag, ohne darüber nachzudenken. Kleine Dinge misst du in Zentimetern, Zimmer in Metern und Wege in Kilometern. Es ist immer dieselbe Sache, nämlich eine Länge. Nur die Einheit ist verschieden groß."
+      },
+      {
         "title": "Die Vorsilben",
-        "body": "**kilo** = tausend: 1 km = 1000 m\n\n**dezi** = zehntel: 1 dm = $\\frac{1}{10}$ m\n\n**zenti** = hundertstel: 1 cm = $\\frac{1}{100}$ m\n\n**milli** = tausendstel: 1 mm = $\\frac{1}{1000}$ m",
+        "body": "**kilo** heißt tausend: 1 km = 1000 m\n\n**dezi** heißt Zehntel: 10 dm = 1 m\n\n**zenti** heißt Hundertstel: 100 cm = 1 m\n\n**milli** heißt Tausendstel: 1000 mm = 1 m",
         "say": "Diese vier kleinen Wörter kommen aus dem Griechischen und Lateinischen. Sie stehen vor der Einheit und sagen, wie groß sie ist. Ein Kilometer sind tausend Meter. Ein Zentimeter ist ein Hundertstel von einem Meter. Mehr musst du dir nicht merken.",
         "tasks": [
           {

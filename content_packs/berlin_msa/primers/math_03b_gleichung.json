@@ -15,8 +15,24 @@
       {
         "chapter": "Was eine Gleichung ist",
         "title": "Ein Rätsel",
-        "body": "Ich denke mir eine Zahl. Das Doppelte plus 3 ergibt 11.\n\n$2x + 3 = 11$\n\nSo ein Zahlenrätsel heißt **Gleichung**.",
-        "say": "Das ist alles, was eine Gleichung ist: ein Zahlenrätsel in kurzer Schreibweise. Das x ist die gesuchte Zahl.",
+        "body": "Ich denke mir eine Zahl.\n\nIch verdopple sie und zähle 3 dazu.\n\nEs kommt 11 heraus.\n\nWelche Zahl war es?",
+        "say": "So ein Rätsel kennst du vielleicht aus der Grundschule. Du kannst probieren: Mit 3 kommt 9 heraus, das ist zu wenig. Mit 4 kommt 11 heraus, das passt. In dieser Lektion lernst du einen Weg, bei dem du nicht mehr probieren musst.",
+        "tasks": [
+          {
+            "text": "Ich denke mir eine Zahl. Ich verdopple sie, und es kommt 10 heraus. Die Zahl war ___.",
+            "choices": [
+              "5",
+              "20"
+            ],
+            "correct": "5",
+            "why": "Das Doppelte von 5 ist 10. Also war es die 5.",
+            "hint": "Welche Zahl ergibt 10, wenn man sie verdoppelt?"
+          }
+        ]
+      },
+      {
+        "title": "Das Rätsel kurz aufschreiben",
+        "body": "Für die gedachte Zahl schreibst du $x$.\n\nDas Doppelte davon: $2x$\n\nDazu 3: $2x + 3$\n\nEs kommt 11 heraus: $2x + 3 = 11$\n\nSo ein Zahlenrätsel heißt **Gleichung**.",
         "tasks": [
           {
             "text": "Ich denke mir eine Zahl. Plus 4 ergibt 10. Als Gleichung: ___",
@@ -28,7 +44,8 @@
             "why": "Das x steht für die gedachte Zahl, und plus 4 wird genau so hingeschrieben.",
             "hint": "Welches Rechenzeichen steht im Rätsel: plus oder mal?"
           }
-        ]
+        ],
+        "say": "Das ist alles, was eine Gleichung ist: ein Zahlenrätsel in kurzer Schreibweise. Das x ist die gesuchte Zahl. Du baust die Zeile Stück für Stück auf, genau so, wie das Rätsel erzählt wird."
       },
       {
         "title": "Das Gleichheitszeichen",
