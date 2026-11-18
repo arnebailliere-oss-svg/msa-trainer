@@ -34,8 +34,25 @@
         "say": "Du kennst die Maschine, die verdoppelt und 1 dazuzählt. Jetzt bekommt die Maschine eine neue Regel: Sie nimmt die Zahl mit sich selbst mal. Aus 3 wird 9. Auch aus minus 2 wird 4, denn minus mal minus ergibt plus."
       },
       {
+        "title": "Die Regel kurz geschrieben",
+        "body": "Die Regel heißt: nimm die Zahl mal sich selbst.\n\nDie Zahl, die hineinkommt, heißt $x$.\n\n$x$ mal $x$ schreibt man kurz: $x^2$\n\nHeraus kommt $y$. Also: $y = x^2$",
+        "tasks": [
+          {
+            "text": "$y = x^2$. Für $x = -3$ ist $y = $ ___",
+            "choices": [
+              "9",
+              "$-9$"
+            ],
+            "correct": "9",
+            "why": "Minus 3 mal minus 3 ergibt plus 9.",
+            "hint": "Was ergibt minus 3 mal minus 3?"
+          }
+        ],
+        "say": "Wie bei der ersten Maschine schreiben wir die Regel kurz auf. Die Zahl, die hineinkommt, heißt wieder x. Mal sich selbst bedeutet x mal x, und dafür schreibt man x hoch 2. Was herauskommt, heißt wieder y."
+      },
+      {
         "title": "x² macht eine Schüssel",
-        "body": "Die Regel kurz geschrieben: $y = x^2$\n\n$x = 2$: $y = 2 \\cdot 2 = 4$\n\n$x = -2$: $y = (-2) \\cdot (-2) = 4$\n\nLinks und rechts gleich: **symmetrisch**.\n\nDiese Kurve heißt **Parabel**.",
+        "body": "Trag die Punkte ins Gitter ein.\n\nEs entsteht eine Kurve wie eine Schüssel.\n\nDiese Kurve heißt **Parabel**.\n\nLinks und rechts sieht sie gleich aus. Das nennt man **symmetrisch**.",
         "figure": {
           "type": "coordinateSystem",
           "xmin": -4,
@@ -56,20 +73,20 @@
         "say": "Minus mal minus ergibt plus. Deshalb landen minus 2 und 2 auf derselben Höhe, nämlich bei 4. Das gilt für jedes Zahlenpaar links und rechts. So entsteht die Form einer Schüssel, bei der beide Seiten gleich aussehen.",
         "tasks": [
           {
-            "text": "$y = x^2$. Für $x = -3$ ist $y = $ ___",
+            "text": "Die Parabel $y = x^2$ ist bei $x = 3$ genauso hoch wie bei ___.",
             "choices": [
-              "9",
-              "$-9$"
+              "$x = -3$",
+              "$x = 0$"
             ],
-            "correct": "9",
-            "why": "Minus 3 mal minus 3 ergibt plus 9.",
-            "hint": "Was ergibt minus 3 mal minus 3?"
+            "correct": "$x = -3$",
+            "why": "Links und rechts ist die Schüssel gleich hoch. 3 und minus 3 ergeben beide 9.",
+            "hint": "Welche Zahl liegt auf der anderen Seite genauso weit von der Mitte weg?"
           }
         ]
       },
       {
         "title": "Der Scheitelpunkt",
-        "body": "Der tiefste (oder höchste) Punkt heißt **Scheitelpunkt** $S$.\n\nBei $y = x^2$: $S(0\\,|\\,0)$",
+        "body": "Der tiefste Punkt der Schüssel heißt **Scheitelpunkt**.\n\nMan schreibt dafür kurz $S$.\n\nBei $y = x^2$ liegt er bei $S(0\\,|\\,0)$.",
         "say": "Das Wort Scheitel kennst du vom Haar: Es ist die Stelle, an der es sich teilt. Bei der Schüssel ist das der tiefste Punkt. Links davon geht es hinunter, rechts davon wieder hinauf.",
         "tasks": [
           {
@@ -86,7 +103,7 @@
       },
       {
         "title": "Nach oben oder nach unten",
-        "body": "$y = x^2$: offen nach **oben**\n\n$y = -x^2$: offen nach **unten**",
+        "body": "$y = x^2$: offen nach **oben**\n\n$y = -x^2$: offen nach **unten**\n\nDann ist der Scheitelpunkt der höchste Punkt.",
         "figure": {
           "type": "coordinateSystem",
           "xmin": -4,
@@ -295,7 +312,7 @@
       {
         "chapter": "Quadratische Gleichungen lösen",
         "title": "Die einfachste quadratische Gleichung",
-        "body": "$x^2 = 9$\n\n$x = 3$ oder $x = -3$\n\nZwei Lösungen, weil $(-3)^2$ auch 9 ist.",
+        "body": "Eine Gleichung mit $x^2$ heißt **quadratische Gleichung**.\n\n$x^2 = 9$\n\n$x = 3$ oder $x = -3$\n\nZwei Lösungen, weil $(-3)^2$ auch 9 ist.",
         "say": "Hier ziehst du auf beiden Seiten die Wurzel. Vergiss dabei die zweite Lösung nicht, denn auch minus 3 mal minus 3 ergibt 9. Das passt zum Bild: Die Schüssel hat links und rechts dieselbe Höhe.",
         "tasks": [
           {
@@ -312,8 +329,24 @@
       },
       {
         "title": "Die Normalform",
-        "body": "$x^2 + px + q = 0$\n\nVor $x^2$ steht **nichts** (also 1), rechts steht **0**.\n\n$x^2 + 6x + 5 = 0$: $p = 6$, $q = 5$",
-        "say": "Bevor du die Formel auf der übernächsten Tafel benutzen darfst, muss die Gleichung genau so aussehen. Das p ist die Zahl vor dem x, und das q ist die Zahl ohne x. Bei beiden gehört das Vorzeichen dazu.",
+        "body": "$x^2 + 6x + 5 = 0$\n\nVor $x^2$ steht nichts. Rechts steht 0.\n\nSo eine Gleichung steht in der **Normalform**.",
+        "say": "Bevor du die Formel benutzen darfst, muss die Gleichung aufgeräumt sein. Vor dem x hoch 2 darf keine Zahl stehen, und auf der rechten Seite muss eine Null stehen. Diese aufgeräumte Form heißt Normalform.",
+        "tasks": [
+          {
+            "text": "Welche Gleichung steht in der Normalform? ___",
+            "choices": [
+              "$x^2 + 2x - 3 = 0$",
+              "$2x^2 + 2x = 3$"
+            ],
+            "correct": "$x^2 + 2x - 3 = 0$",
+            "why": "Vor dem x hoch 2 steht nichts, und rechts steht die 0.",
+            "hint": "Bei welcher Gleichung steht rechts vom Gleichheitszeichen eine 0?"
+          }
+        ]
+      },
+      {
+        "title": "Die Buchstaben p und q",
+        "body": "$x^2 + 6x + 5 = 0$\n\nDie Zahl vor dem $x$ nennt man $p$. Hier: $p = 6$\n\nDie Zahl ohne $x$ nennt man $q$. Hier: $q = 5$\n\nAllgemein schreibt man: $x^2 + px + q = 0$",
         "tasks": [
           {
             "text": "$x^2 + 4x - 12 = 0$: Hier ist $p = $ ___",
@@ -335,7 +368,8 @@
             "why": "Das q ist die Zahl ohne x, und ihr Vorzeichen gehört dazu.",
             "hint": "Welches Vorzeichen steht vor der Zahl ohne x?"
           }
-        ]
+        ],
+        "say": "In der Normalform gibt es zwei Zahlen, die du für die Formel brauchst. Die Zahl vor dem x heißt p, und die Zahl ohne x heißt q. Bei beiden gehört das Vorzeichen dazu."
       },
       {
         "title": "Plus-minus",
@@ -355,8 +389,25 @@
         "say": "Dieses Zeichen brauchst du gleich in der Formel. Es ist nur eine Abkürzung für zwei Rechnungen. Du rechnest zuerst mit Plus und schreibst das Ergebnis auf. Dann rechnest du dasselbe noch einmal mit Minus."
       },
       {
+        "title": "Zwei Lösungen, zwei Namen",
+        "body": "Eine quadratische Gleichung hat oft zwei Lösungen.\n\nDie erste nennt man $x_1$, die zweite $x_2$.\n\nBeide zusammen schreibt man kurz: $x_{1,2}$",
+        "tasks": [
+          {
+            "text": "$x_{1,2} = 4 \\pm 1$. Dann ist $x_1 = 5$ und $x_2 = $ ___",
+            "choices": [
+              "3",
+              "4"
+            ],
+            "correct": "3",
+            "why": "Die zweite Lösung rechnest du mit Minus: 4 minus 1 ergibt 3.",
+            "hint": "Die erste Lösung war mit Plus gerechnet. Welches Zeichen fehlt noch?"
+          }
+        ],
+        "say": "Weil es oft zwei Lösungen gibt, brauchen sie Namen. Die kleine Zahl unten am x ist nur eine Nummer, wie bei Hausnummern. Sie hat nichts mit Rechnen zu tun. x eins Komma zwei bedeutet: Hier stehen beide Lösungen in einer Zeile."
+      },
+      {
         "title": "Die pq-Formel",
-        "body": "$x_{1,2} = -\\frac{p}{2} \\pm \\sqrt{\\left(\\frac{p}{2}\\right)^2 - q}$\n\n$x_{1,2}$ heißt: die beiden Lösungen $x_1$ und $x_2$.\n\nVorn steht die Hälfte von $p$ mit einem Minus davor.\n\nUnter der Wurzel steht: die Hälfte von $p$ zum Quadrat, minus $q$.",
+        "body": "$x_{1,2} = -\\frac{p}{2} \\pm \\sqrt{\\left(\\frac{p}{2}\\right)^2 - q}$\n\nVorn steht die Hälfte von $p$ mit einem Minus davor.\n\nUnter der Wurzel steht: die Hälfte von $p$ zum Quadrat, minus $q$.",
         "say": "Die Formel sieht wild aus, aber sie besteht nur aus zwei Teilen. Vorn steht die Hälfte von p mit einem Minus. Dahinter kommt plus-minus eine Wurzel. Du musst die Formel nicht auswendig können, denn sie steht auf dem Formelblatt. Wie man sie benutzt, zeigt die nächste Tafel.",
         "tasks": [
           {
@@ -373,7 +424,7 @@
       },
       {
         "title": "Die pq-Formel Schritt für Schritt",
-        "body": "$x^2 + 6x + 5 = 0$\n\nAblesen: $p = 6$ und $q = 5$\n\nHälfte von $p$: 3\n\nUnter der Wurzel: $3^2 - 5 = 4$\n\nWurzel: $\\sqrt{4} = 2$\n\n$x_{1,2} = -3 \\pm 2$\n\nMit Plus: $x_1 = -1$. Mit Minus: $x_2 = -5$.\n\nIst $q$ negativ, wird aus minus $q$ ein Plus. Für $p = 2$ und $q = -3$: $1^2 - (-3) = 1 + 3 = 4$",
+        "body": "$x^2 + 6x + 5 = 0$\n\nSchritt 1, ablesen: $p = 6$ und $q = 5$\n\nSchritt 2: Die Hälfte von $p$ ist 3.\n\nSchritt 3, unter der Wurzel: $3^2 - 5 = 4$",
         "tasks": [
           {
             "text": "$x^2 + 4x + 3 = 0$. Unter der Wurzel steht $2^2 - 3 = $ ___",
@@ -384,7 +435,14 @@
             "correct": "1",
             "why": "2 hoch 2 ist 4, und 4 minus 3 ergibt 1.",
             "hint": "Rechne zuerst 2 hoch 2. Was ziehst du dann ab?"
-          },
+          }
+        ],
+        "say": "Geh immer in dieser Reihenfolge vor. Zuerst liest du p und q ab. Dann halbierst du p. Danach rechnest du aus, was unter der Wurzel steht. Die letzten beiden Schritte kommen auf der nächsten Tafel."
+      },
+      {
+        "title": "Die letzten zwei Schritte",
+        "body": "Schritt 4, die Wurzel ziehen: $\\sqrt{4} = 2$\n\nSchritt 5: $x_{1,2} = -3 \\pm 2$\n\nMit Plus: $x_1 = -1$\n\nMit Minus: $x_2 = -5$",
+        "tasks": [
           {
             "text": "Also ist $x_{1,2} = -2 \\pm 1$. Die Lösungen sind ___.",
             "choices": [
@@ -396,7 +454,24 @@
             "hint": "Rechne von minus 2 aus einmal 1 dazu und einmal 1 weg."
           }
         ],
-        "say": "Geh immer in dieser Reihenfolge vor. Zuerst liest du p und q ab. Dann halbierst du p. Danach rechnest du aus, was unter der Wurzel steht. Erst zum Schluss rechnest du einmal mit Plus und einmal mit Minus."
+        "say": "Jetzt ziehst du die Wurzel aus der Zahl von eben. Dann setzt du alles zusammen: vorn die Hälfte von p mit Minus, dahinter plus-minus die Wurzel. Zum Schluss rechnest du einmal mit Plus und einmal mit Minus."
+      },
+      {
+        "title": "Wenn q negativ ist",
+        "body": "$x^2 + 2x - 3 = 0$: $p = 2$ und $q = -3$\n\nUnter der Wurzel: $1^2 - (-3)$\n\nMinus minus 3 wird plus 3: $1 + 3 = 4$",
+        "tasks": [
+          {
+            "text": "$p = 4$ und $q = -5$. Unter der Wurzel steht $2^2 - (-5) = $ ___",
+            "choices": [
+              "9",
+              "$-1$"
+            ],
+            "correct": "9",
+            "why": "2 hoch 2 ist 4. Minus minus 5 wird plus 5, und 4 plus 5 ergibt 9.",
+            "hint": "Was wird aus einem Minus vor einer negativen Zahl?"
+          }
+        ],
+        "say": "Hier lauert ein häufiger Fehler. Wenn q selbst negativ ist, stehen unter der Wurzel zwei Minus hintereinander. Daraus wird ein Plus. Schreib dir die Klammer um das negative q immer hin, dann übersiehst du es nicht."
       },
       {
         "title": "Wie viele Lösungen?",
@@ -436,38 +511,73 @@
     "vocab": [
       {
         "term": "Parabel",
-        "plain": "Die Kurve von $x^2$. Sieht aus wie eine Schüssel.",
+        "plain": "Die Kurve von x hoch 2. Sie sieht aus wie eine Schüssel.",
         "example": "$y = x^2$"
       },
       {
+        "term": "symmetrisch",
+        "plain": "Links und rechts sieht es gleich aus.",
+        "example": "Bei $x = 2$ und $x = -2$ ist die Parabel gleich hoch."
+      },
+      {
         "term": "Scheitelpunkt",
-        "plain": "Der tiefste oder höchste Punkt.",
+        "plain": "Der tiefste Punkt der Schüssel. Ist sie nach unten offen, ist es der höchste Punkt.",
         "example": "$S(1\\,|\\,-2)$"
       },
       {
+        "term": "S",
+        "plain": "Der Buchstabe für den Scheitelpunkt.",
+        "example": "$S(0\\,|\\,0)$"
+      },
+      {
         "term": "Scheitelpunktform",
-        "plain": "$y = (x - d)^2 + e$, Scheitel bei $(d\\,|\\,e)$.",
-        "example": "$(x - 1)^2 - 2$"
+        "plain": "Eine Schreibweise, aus der du den Scheitelpunkt ablesen kannst.",
+        "example": "$y = (x - 1)^2 - 2$ hat $S(1\\,|\\,-2)$."
       },
       {
         "term": "Nullstelle",
-        "plain": "Wo die Parabel die x-Achse schneidet ($y = 0$).",
-        "example": "0, 1 oder 2 Stück"
+        "plain": "Die Stelle, an der die Kurve die x-Achse trifft. Dort ist y gleich 0.",
+        "example": "Eine Parabel hat 0, 1 oder 2 Nullstellen."
+      },
+      {
+        "term": "quadratische Gleichung",
+        "plain": "Eine Gleichung, in der x hoch 2 vorkommt.",
+        "example": "$x^2 = 9$"
       },
       {
         "term": "Normalform",
-        "plain": "$x^2 + px + q = 0$",
+        "plain": "Vor x hoch 2 steht nichts, und rechts steht 0.",
         "example": "$x^2 + 6x + 5 = 0$"
       },
       {
-        "term": "pq-Formel",
-        "plain": "Formel für die Lösungen der Normalform.",
-        "example": "$-\\frac{p}{2} \\pm \\sqrt{(\\frac{p}{2})^2 - q}$"
+        "term": "p",
+        "plain": "In der Normalform die Zahl vor dem x, mit ihrem Vorzeichen.",
+        "example": "$x^2 + 6x + 5 = 0$: $p = 6$"
       },
       {
-        "term": "Plus-minus",
-        "plain": "Einmal plus, einmal minus rechnen.",
-        "example": "$-3 \\pm 2$ → $-1$ und $-5$"
+        "term": "q",
+        "plain": "In der Normalform die Zahl ohne x, mit ihrem Vorzeichen.",
+        "example": "$x^2 + 6x + 5 = 0$: $q = 5$"
+      },
+      {
+        "term": "$\\pm$",
+        "plain": "Plus-minus. Einmal mit Plus rechnen, einmal mit Minus.",
+        "example": "$3 \\pm 2$ ergibt 5 und 1."
+      },
+      {
+        "term": "$x_1$",
+        "plain": "Die erste Lösung. Die zweite heißt $x_2$. Die kleine Zahl ist nur eine Nummer.",
+        "example": "$x_1 = -1$ und $x_2 = -5$"
+      },
+      {
+        "term": "$x_{1,2}$",
+        "plain": "Beide Lösungen in einer Zeile.",
+        "example": "$x_{1,2} = -3 \\pm 2$"
+      },
+      {
+        "term": "pq-Formel",
+        "plain": "Die Formel für die Lösungen einer Gleichung in der Normalform. Sie steht auf dem Formelblatt.",
+        "example": "$x_{1,2} = -\\frac{p}{2} \\pm \\sqrt{\\left(\\frac{p}{2}\\right)^2 - q}$"
       }
     ],
     "quiz": [

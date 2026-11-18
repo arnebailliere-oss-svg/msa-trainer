@@ -88,6 +88,54 @@ migrate("primers/math_07b_parabel.json", (p, h) => {
   );
   h.body("x² macht eine Schüssel", "Die Regel kurz geschrieben: $y = x^2$", "$x = 2$: $y = 2 \\cdot 2 = 4$", "$x = -2$: $y = (-2) \\cdot (-2) = 4$", "Links und rechts gleich: **symmetrisch**.", "Diese Kurve heißt **Parabel**.");
 
+  // One new thing per board: the short rule before the curve, the Normalform before p and q,
+  // x1 and x2 before the formula, the worked example in three boards.
+  h.before(
+    "x² macht eine Schüssel",
+    b("Die Regel kurz geschrieben", ["Die Regel heißt: nimm die Zahl mal sich selbst.", "Die Zahl, die hineinkommt, heißt $x$.", "$x$ mal $x$ schreibt man kurz: $x^2$", "Heraus kommt $y$. Also: $y = x^2$"], "Wie bei der ersten Maschine schreiben wir die Regel kurz auf. Die Zahl, die hineinkommt, heißt wieder x. Mal sich selbst bedeutet x mal x, und dafür schreibt man x hoch 2. Was herauskommt, heißt wieder y.", {
+      tasks: [k("$y = x^2$. Für $x = -3$ ist $y = $ ___", "9", ["$-9$"], "Minus 3 mal minus 3 ergibt plus 9.", "Was ergibt minus 3 mal minus 3?")],
+    }),
+  );
+  h.body("x² macht eine Schüssel", "Trag die Punkte ins Gitter ein.", "Es entsteht eine Kurve wie eine Schüssel.", "Diese Kurve heißt **Parabel**.", "Links und rechts sieht sie gleich aus. Das nennt man **symmetrisch**.");
+  h.tasks("x² macht eine Schüssel", k("Die Parabel $y = x^2$ ist bei $x = 3$ genauso hoch wie bei ___.", "$x = -3$", ["$x = 0$"], "Links und rechts ist die Schüssel gleich hoch. 3 und minus 3 ergeben beide 9.", "Welche Zahl liegt auf der anderen Seite genauso weit von der Mitte weg?"));
+  h.body("Der Scheitelpunkt", "Der tiefste Punkt der Schüssel heißt **Scheitelpunkt**.", "Man schreibt dafür kurz $S$.", "Bei $y = x^2$ liegt er bei $S(0\\,|\\,0)$.");
+  h.body("Nach oben oder nach unten", "$y = x^2$: offen nach **oben**", "$y = -x^2$: offen nach **unten**", "Dann ist der Scheitelpunkt der höchste Punkt.");
+  h.body("Die einfachste quadratische Gleichung", "Eine Gleichung mit $x^2$ heißt **quadratische Gleichung**.", "$x^2 = 9$", "$x = 3$ oder $x = -3$", "Zwei Lösungen, weil $(-3)^2$ auch 9 ist.");
+
+  h.body("Die Normalform", "$x^2 + 6x + 5 = 0$", "Vor $x^2$ steht nichts. Rechts steht 0.", "So eine Gleichung steht in der **Normalform**.");
+  h.say("Die Normalform", "Bevor du die Formel benutzen darfst, muss die Gleichung aufgeräumt sein. Vor dem x hoch 2 darf keine Zahl stehen, und auf der rechten Seite muss eine Null stehen. Diese aufgeräumte Form heißt Normalform.");
+  h.tasks("Die Normalform", k("Welche Gleichung steht in der Normalform? ___", "$x^2 + 2x - 3 = 0$", ["$2x^2 + 2x = 3$"], "Vor dem x hoch 2 steht nichts, und rechts steht die 0.", "Bei welcher Gleichung steht rechts vom Gleichheitszeichen eine 0?"));
+  h.after(
+    "Die Normalform",
+    b("Die Buchstaben p und q", ["$x^2 + 6x + 5 = 0$", "Die Zahl vor dem $x$ nennt man $p$. Hier: $p = 6$", "Die Zahl ohne $x$ nennt man $q$. Hier: $q = 5$", "Allgemein schreibt man: $x^2 + px + q = 0$"], "In der Normalform gibt es zwei Zahlen, die du für die Formel brauchst. Die Zahl vor dem x heißt p, und die Zahl ohne x heißt q. Bei beiden gehört das Vorzeichen dazu.", {
+      tasks: [
+        k("$x^2 + 4x - 12 = 0$: Hier ist $p = $ ___", "4", ["$-12$"], "Das p ist die Zahl, die vor dem x steht.", "Welche Zahl steht direkt vor dem einfachen x?"),
+        k("$x^2 + 4x - 12 = 0$: Hier ist $q = $ ___", "$-12$", ["$12$"], "Das q ist die Zahl ohne x, und ihr Vorzeichen gehört dazu.", "Welches Vorzeichen steht vor der Zahl ohne x?"),
+      ],
+    }),
+  );
+  h.before(
+    "Die pq-Formel",
+    b("Zwei Lösungen, zwei Namen", ["Eine quadratische Gleichung hat oft zwei Lösungen.", "Die erste nennt man $x_1$, die zweite $x_2$.", "Beide zusammen schreibt man kurz: $x_{1,2}$"], "Weil es oft zwei Lösungen gibt, brauchen sie Namen. Die kleine Zahl unten am x ist nur eine Nummer, wie bei Hausnummern. Sie hat nichts mit Rechnen zu tun. x eins Komma zwei bedeutet: Hier stehen beide Lösungen in einer Zeile.", {
+      tasks: [k("$x_{1,2} = 4 \\pm 1$. Dann ist $x_1 = 5$ und $x_2 = $ ___", "3", ["4"], "Die zweite Lösung rechnest du mit Minus: 4 minus 1 ergibt 3.", "Die erste Lösung war mit Plus gerechnet. Welches Zeichen fehlt noch?")],
+    }),
+  );
+  h.body("Die pq-Formel", "$x_{1,2} = -\\frac{p}{2} \\pm \\sqrt{\\left(\\frac{p}{2}\\right)^2 - q}$", "Vorn steht die Hälfte von $p$ mit einem Minus davor.", "Unter der Wurzel steht: die Hälfte von $p$ zum Quadrat, minus $q$.");
+
+  h.body("Die pq-Formel Schritt für Schritt", "$x^2 + 6x + 5 = 0$", "Schritt 1, ablesen: $p = 6$ und $q = 5$", "Schritt 2: Die Hälfte von $p$ ist 3.", "Schritt 3, unter der Wurzel: $3^2 - 5 = 4$");
+  h.say("Die pq-Formel Schritt für Schritt", "Geh immer in dieser Reihenfolge vor. Zuerst liest du p und q ab. Dann halbierst du p. Danach rechnest du aus, was unter der Wurzel steht. Die letzten beiden Schritte kommen auf der nächsten Tafel.");
+  {
+    const [first, second] = h.board("Die pq-Formel Schritt für Schritt").tasks;
+    h.board("Die pq-Formel Schritt für Schritt").tasks = [first];
+    h.after(
+      "Die pq-Formel Schritt für Schritt",
+      b("Die letzten zwei Schritte", ["Schritt 4, die Wurzel ziehen: $\\sqrt{4} = 2$", "Schritt 5: $x_{1,2} = -3 \\pm 2$", "Mit Plus: $x_1 = -1$", "Mit Minus: $x_2 = -5$"], "Jetzt ziehst du die Wurzel aus der Zahl von eben. Dann setzt du alles zusammen: vorn die Hälfte von p mit Minus, dahinter plus-minus die Wurzel. Zum Schluss rechnest du einmal mit Plus und einmal mit Minus.", { tasks: [second] }),
+      b("Wenn q negativ ist", ["$x^2 + 2x - 3 = 0$: $p = 2$ und $q = -3$", "Unter der Wurzel: $1^2 - (-3)$", "Minus minus 3 wird plus 3: $1 + 3 = 4$"], "Hier lauert ein häufiger Fehler. Wenn q selbst negativ ist, stehen unter der Wurzel zwei Minus hintereinander. Daraus wird ein Plus. Schreib dir die Klammer um das negative q immer hin, dann übersiehst du es nicht.", {
+        tasks: [k("$p = 4$ und $q = -5$. Unter der Wurzel steht $2^2 - (-5) = $ ___", "9", ["$-1$"], "2 hoch 2 ist 4. Minus minus 5 wird plus 5, und 4 plus 5 ergibt 9.", "Was wird aus einem Minus vor einer negativen Zahl?")],
+      }),
+    );
+  }
+
   h.chapters([
     ["Eine neue Maschine", "Die Parabel"],
     ["Die einfachste quadratische Gleichung", "Quadratische Gleichungen lösen"],
@@ -101,4 +149,22 @@ migrate("primers/math_07b_parabel.json", (p, h) => {
     "An einer Nullstelle gibt die Funktion 0 aus. Der Graph schneidet dort die x-Achse.",
   ]);
   h.quiz(q("Löse $x^2 + 2x - 3 = 0$ mit der pq-Formel.", "$x_1 = 1$ und $x_2 = -3$", ["$x_1 = -1$ und $x_2 = 3$", "$x_1 = 2$ und $x_2 = -3$", "Es gibt keine Lösung"], "Die Hälfte von p ist 1. Unter der Wurzel steht 1 plus 3, also 4. Minus 1 plus 2 ergibt 1, und minus 1 minus 2 ergibt minus 3."));
+
+  // Word card: every word, sign and letter of this lesson.
+  h.vocab(
+    { term: "Parabel", plain: "Die Kurve von x hoch 2. Sie sieht aus wie eine Schüssel.", example: "$y = x^2$" },
+    { term: "symmetrisch", plain: "Links und rechts sieht es gleich aus.", example: "Bei $x = 2$ und $x = -2$ ist die Parabel gleich hoch." },
+    { term: "Scheitelpunkt", plain: "Der tiefste Punkt der Schüssel. Ist sie nach unten offen, ist es der höchste Punkt.", example: "$S(1\\,|\\,-2)$" },
+    { term: "S", plain: "Der Buchstabe für den Scheitelpunkt.", example: "$S(0\\,|\\,0)$" },
+    { term: "Scheitelpunktform", plain: "Eine Schreibweise, aus der du den Scheitelpunkt ablesen kannst.", example: "$y = (x - 1)^2 - 2$ hat $S(1\\,|\\,-2)$." },
+    { term: "Nullstelle", plain: "Die Stelle, an der die Kurve die x-Achse trifft. Dort ist y gleich 0.", example: "Eine Parabel hat 0, 1 oder 2 Nullstellen." },
+    { term: "quadratische Gleichung", plain: "Eine Gleichung, in der x hoch 2 vorkommt.", example: "$x^2 = 9$" },
+    { term: "Normalform", plain: "Vor x hoch 2 steht nichts, und rechts steht 0.", example: "$x^2 + 6x + 5 = 0$" },
+    { term: "p", plain: "In der Normalform die Zahl vor dem x, mit ihrem Vorzeichen.", example: "$x^2 + 6x + 5 = 0$: $p = 6$" },
+    { term: "q", plain: "In der Normalform die Zahl ohne x, mit ihrem Vorzeichen.", example: "$x^2 + 6x + 5 = 0$: $q = 5$" },
+    { term: "$\\pm$", plain: "Plus-minus. Einmal mit Plus rechnen, einmal mit Minus.", example: "$3 \\pm 2$ ergibt 5 und 1." },
+    { term: "$x_1$", plain: "Die erste Lösung. Die zweite heißt $x_2$. Die kleine Zahl ist nur eine Nummer.", example: "$x_1 = -1$ und $x_2 = -5$" },
+    { term: "$x_{1,2}$", plain: "Beide Lösungen in einer Zeile.", example: "$x_{1,2} = -3 \\pm 2$" },
+    { term: "pq-Formel", plain: "Die Formel für die Lösungen einer Gleichung in der Normalform. Sie steht auf dem Formelblatt.", example: "$x_{1,2} = -\\frac{p}{2} \\pm \\sqrt{\\left(\\frac{p}{2}\\right)^2 - q}$" },
+  );
 });

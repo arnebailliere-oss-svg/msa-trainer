@@ -10,7 +10,7 @@ const plain = (text: string) =>
     .replace(/[$*{}_^\\]/g, " ");
 
 /** Signs that are written as a command inside a formula. A word list names them by the sign itself. */
-const SIGNS: Record<string, string> = { cdot: "·", approx: "≈", neq: "≠", sqrt: "Wurzel", pi: "π", alpha: "α", beta: "β", gamma: "γ", le: "≤", ge: "≥", Delta: "Δ" };
+const SIGNS: Record<string, string> = { cdot: "·", approx: "≈", neq: "≠", sqrt: "Wurzel", pi: "π", alpha: "α", beta: "β", gamma: "γ", le: "≤", ge: "≥", Delta: "Δ", pm: "±" };
 
 /** Only what stands inside formulas: a colon or a dash in a sentence is punctuation, not a sign. */
 const formulas = (text: string) => (text.match(/\$[^$]+\$/g) ?? []).join(" ");

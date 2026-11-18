@@ -403,20 +403,6 @@
     "op": "quiz",
     "index": 5,
     "explain": "Die Hälfte von p ist 1. Das q ist minus 3. Unter der Wurzel steht 1 hoch 2 minus q, also 1 minus minus 3. Minus minus wird plus: 1 plus 3 ergibt 4. Die Wurzel aus 4 ist 2. Minus 1 plus 2 ergibt 1, und minus 1 minus 2 ergibt minus 3."
-   },
-   {
-    "op": "body",
-    "board": "Die pq-Formel Schritt für Schritt",
-    "lines": [
-     "$x^2 + 6x + 5 = 0$",
-     "Ablesen: $p = 6$ und $q = 5$",
-     "Hälfte von $p$: 3",
-     "Unter der Wurzel: $3^2 - 5 = 4$",
-     "Wurzel: $\\sqrt{4} = 2$",
-     "$x_{1,2} = -3 \\pm 2$",
-     "Mit Plus: $x_1 = -1$. Mit Minus: $x_2 = -5$.",
-     "Ist $q$ negativ, wird aus minus $q$ ein Plus. Für $p = 2$ und $q = -3$: $1^2 - (-3) = 1 + 3 = 4$"
-    ]
    }
   ]
  },
