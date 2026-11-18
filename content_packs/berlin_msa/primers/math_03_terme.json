@@ -479,6 +479,16 @@
         "example": "Ein Ticket kostet $x$ Euro."
       },
       {
+        "term": "a",
+        "plain": "Ein Buchstabe für eine Zahl, genau wie x. Verschiedene Buchstaben stehen für verschiedene Zahlen.",
+        "example": "$3a + 2a = 5a$"
+      },
+      {
+        "term": "b",
+        "plain": "Noch ein Buchstabe für eine Zahl. Er ist eine andere Sorte als a.",
+        "example": "$3a + 2b$ bleibt so stehen."
+      },
+      {
         "term": "Platzhalter",
         "plain": "Etwas, das den Platz für eine Zahl frei hält.",
         "example": "$x$"

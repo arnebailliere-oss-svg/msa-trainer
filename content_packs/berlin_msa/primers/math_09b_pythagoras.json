@@ -153,7 +153,7 @@
       },
       {
         "title": "Hypotenuse berechnen",
-        "body": "Beispiel: $a = 6$ und $b = 8$\n\nHoch 2 nehmen: $6^2 = 36$ und $8^2 = 64$\n\nZusammenzählen: $36 + 64 = 100$\n\nWurzel ziehen: $c = \\sqrt{100} = 10$\n\nAls Formel: $c = \\sqrt{a^2 + b^2}$",
+        "body": "Beispiel: $a = 6$ und $b = 8$\n\nHoch 2 nehmen: $6^2 = 36$ und $8^2 = 64$\n\nZusammenzählen: $36 + 64 = 100$\n\nWurzel ziehen: $c = \\sqrt{100} = 10$",
         "say": "Du gehst immer in drei Schritten vor. Zuerst nimmst du beide Katheten hoch 2. Dann zählst du die beiden Ergebnisse zusammen. Zum Schluss ziehst du die Wurzel, denn du suchst die Seite und nicht ihr Quadrat.",
         "tasks": [
           {
@@ -180,7 +180,7 @@
       },
       {
         "title": "Kathete berechnen",
-        "body": "Beispiel: $c = 13$ und $a = 5$\n\nHoch 2 nehmen: $13^2 = 169$ und $5^2 = 25$\n\nAbziehen: $169 - 25 = 144$\n\nWurzel ziehen: $b = \\sqrt{144} = 12$\n\nAls Formel: $b = \\sqrt{c^2 - a^2}$",
+        "body": "Beispiel: $c = 13$ und $a = 5$\n\nHoch 2 nehmen: $13^2 = 169$ und $5^2 = 25$\n\nAbziehen: $169 - 25 = 144$\n\nWurzel ziehen: $b = \\sqrt{144} = 12$",
         "say": "Manchmal kennst du die Hypotenuse und suchst eine Kathete. Dann rechnest du rückwärts und ziehst ab. Vom Quadrat der Hypotenuse nimmst du das Quadrat der bekannten Kathete weg. Die Hypotenuse steht dabei immer vorn, weil sie die größte ist.",
         "tasks": [
           {
@@ -204,6 +204,23 @@
             "c": "c = 13"
           }
         }
+      },
+      {
+        "title": "Beide Wege als Formel",
+        "body": "Hypotenuse gesucht: $c = \\sqrt{a^2 + b^2}$\n\nKathete gesucht: $b = \\sqrt{c^2 - a^2}$\n\nDas sind dieselben drei Schritte, nur kurz geschrieben.",
+        "tasks": [
+          {
+            "text": "Gesucht ist die längste Seite. Unter der Wurzel steht dann ___.",
+            "choices": [
+              "ein Plus",
+              "ein Minus"
+            ],
+            "correct": "ein Plus",
+            "why": "Für die Hypotenuse werden die beiden Quadrate zusammengezählt.",
+            "hint": "Ist die gesuchte Seite länger oder kürzer als die beiden anderen?"
+          }
+        ],
+        "say": "Auf dem Formelblatt stehen die beiden Wege als Formeln. Sie sagen nichts Neues. Unter der Wurzel steht, was du mit den Quadraten machst: zusammenzählen für die lange Seite, abziehen für eine kurze."
       },
       {
         "title": "Jetzt du: Pythagoras",
@@ -374,18 +391,18 @@
       },
       {
         "title": "Seite berechnen",
-        "body": "$c = 10$ und $\\alpha = 30°$, gesucht ist $a$.\n\n$a$ liegt gegenüber vom Winkel, $c$ ist die Hypotenuse: Das ist der Sinus.\n\n$\\sin 30° = \\frac{a}{10}$\n\nBeide Seiten mal 10: $a = 10 \\cdot \\sin 30°$\n\n$a = 10 \\cdot 0{,}5 = 5$",
-        "say": "Du schreibst zuerst die passende Zeile vom Formelblatt hin. Dann setzt du die Zahlen ein, die du kennst. Übrig bleibt eine Gleichung mit einer Unbekannten. Die löst du wie gewohnt, hier indem du beide Seiten mal 10 nimmst.",
+        "body": "$c = 10$ und $\\alpha = 30°$, gesucht ist $a$.\n\n$a$ liegt gegenüber vom Winkel, $c$ ist die Hypotenuse.\n\nGegenkathete und Hypotenuse: Das ist der Sinus.\n\n$\\sin 30° = \\frac{a}{10}$",
+        "say": "Zuerst überlegst du, welche zwei Seiten in der Aufgabe vorkommen. Dann suchst du den Bruch, in dem genau diese beiden stehen. Hier sind es Gegenkathete und Hypotenuse, also der Sinus. Diese Zeile schreibst du hin und setzt die Zahlen ein.",
         "tasks": [
           {
-            "text": "$c = 20$ und $\\alpha = 30°$. Dann ist $a = 20 \\cdot 0{,}5 = $ ___",
+            "text": "In der Aufgabe kommen die Ankathete und die Hypotenuse vor. Du nimmst ___.",
             "choices": [
-              "10",
-              "40"
+              "den Kosinus",
+              "den Sinus"
             ],
-            "correct": "10",
-            "why": "Mal 0,5 ist dasselbe wie die Hälfte. Die Hälfte von 20 ist 10.",
-            "hint": "0,5 ist kleiner als 1. Wird eine Zahl größer oder kleiner, wenn du sie mal 0,5 nimmst?"
+            "correct": "den Kosinus",
+            "why": "Im Kosinus stehen Ankathete und Hypotenuse.",
+            "hint": "In welchem der drei Brüche kommen Ankathete und Hypotenuse vor?"
           }
         ],
         "figure": {
@@ -398,6 +415,33 @@
             "alpha": "30°"
           }
         }
+      },
+      {
+        "title": "Dann nach a auflösen",
+        "body": "$\\sin 30° = \\frac{a}{10}$\n\nBeide Seiten mal 10: $a = 10 \\cdot \\sin 30°$\n\n$a = 10 \\cdot 0{,}5 = 5$",
+        "figure": {
+          "type": "rightTriangle",
+          "a": 5,
+          "b": 8.66,
+          "labels": {
+            "a": "a = ?",
+            "c": "c = 10",
+            "alpha": "30°"
+          }
+        },
+        "tasks": [
+          {
+            "text": "$c = 20$ und $\\alpha = 30°$. Dann ist $a = 20 \\cdot 0{,}5 = $ ___",
+            "choices": [
+              "10",
+              "40"
+            ],
+            "correct": "10",
+            "why": "Mal 0,5 ist dasselbe wie die Hälfte. Die Hälfte von 20 ist 10.",
+            "hint": "0,5 ist kleiner als 1. Wird eine Zahl größer oder kleiner, wenn du sie mal 0,5 nimmst?"
+          }
+        ],
+        "say": "Übrig bleibt eine Gleichung mit einer Unbekannten. Die löst du wie gewohnt. Das a wird durch 10 geteilt, also nimmst du beide Seiten mal 10. Den Sinus von 30 Grad liefert dir der Taschenrechner."
       },
       {
         "title": "Winkel berechnen",

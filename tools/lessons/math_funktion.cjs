@@ -219,8 +219,30 @@ migrate("primers/math_07_funktionen.json", (p, h) => {
     });
   }
 
+  // Round 2: putting a number in and working it out apart; the growth letters before the growth formula.
+  h.body("Eine Zahl in die Maschine stecken", "$f(x) = 2x + 1$", "$f(3)$ heißt: Steck die 3 in die Maschine f.", "Überall, wo $x$ steht, schreibst du 3: $2 \\cdot 3 + 1$");
+  h.say("Eine Zahl in die Maschine stecken", "Die erste Zeile ist die Regel der Maschine. Steht in der Klammer statt x eine Zahl, dann setzt du diese Zahl überall ein, wo in der Regel ein x steht. Mehr passiert auf dieser Tafel nicht. Ausgerechnet wird auf der nächsten.");
+  {
+    const work = h.board("Eine Zahl in die Maschine stecken").tasks;
+    h.tasks("Eine Zahl in die Maschine stecken", k("$f(x) = 2x + 1$. Für $f(4)$ schreibst du ___.", "$2 \\cdot 4 + 1$", ["$2 \\cdot x + 4$"], "Die 4 kommt genau an die Stelle, an der in der Regel das x steht.", "An welcher Stelle der Regel steht das x? Dort kommt die 4 hin."));
+    h.after(
+      "Eine Zahl in die Maschine stecken",
+      b("Dann ausrechnen", ["$2 \\cdot 3 + 1$", "Erst mal: $6 + 1$", "Dann plus: 7", "Man schreibt: $f(3) = 7$. Man liest: f von 3 ist 7."], "Jetzt rechnest du Schritt für Schritt aus. Erst mal, dann plus. Das Ergebnis ist die Zahl, die aus der Maschine herauskommt. Die letzte Zeile sagt in kurzer Form: Steckst du 3 hinein, kommt 7 heraus.", { tasks: work }),
+    );
+    const growth = h.board("Die Formel für Wachstum").tasks;
+    h.before(
+      "Die Formel für Wachstum",
+      b("Buchstaben für das Wachstum", ["Du hast gerechnet: $100 \\cdot 2^3 = 800$", "Den Wert am Anfang nennt man $B_0$. Hier: 100", "Die Anzahl der Schritte nennt man $n$. Hier: 3", "Den Wert nach $n$ Schritten nennt man $B(n)$. Hier: $B(3) = 800$"], "Für die Formel bekommen die Zahlen wieder Namen. B steht für Bestand, also für das, was gerade da ist. Die kleine 0 bedeutet: nach null Schritten, also am Anfang. Achtung: Der Buchstabe n zählt hier die Schritte. Bei den Geraden stand er für etwas anderes.", {
+        tasks: [k("Start 50, $q = 2$, nach 4 Schritten. Dann ist $n = $ ___", "4", ["50"], "Das n ist die Anzahl der Schritte. Hier sind es 4.", "Welche der Zahlen zählt die Schritte?")],
+      }),
+    );
+    h.body("Die Formel für Wachstum", "$B(n) = B_0 \\cdot q^n$", "In Worten: Wert am Anfang mal Wachstumsfaktor hoch Anzahl der Schritte.", "Mit den Bakterien: $B(3) = 100 \\cdot 2^3$");
+    h.board("Die Formel für Wachstum").tasks = growth;
+  }
+
   h.chapters([
-    ["Die Maschine", "Maschine, Tabelle und Bild"],
+    ["Die Maschine", "Die Maschine und ihre Regel"],
+    ["Die Wertetabelle", "Tabelle und Bild"],
     ["Was ist die Steigung?", "Steigung und Startwert"],
     ["Die allgemeine Form", "Geraden lesen und prüfen"],
     ["Zwei Arten zu wachsen", "Wachstum: plus oder mal"],
@@ -265,5 +287,12 @@ migrate("primers/math_07_funktionen.json", (p, h) => {
     { term: "exponentielles Wachstum", plain: "In jedem Schritt wird mit der gleichen Zahl malgenommen.", example: "100, 200, 400, 800" },
     { term: "Wachstumsfaktor", plain: "Die Zahl, mit der in jedem Schritt malgenommen wird.", example: "5 % mehr: $q = 1{,}05$" },
     { term: "q", plain: "Der Buchstabe für den Wachstumsfaktor." },
+  );
+
+  // Round 2: the letters of the growth formula and the machine's name are on the card too.
+  p.vocab.push(
+    { term: "f", plain: "Der Name der Maschine. Eine zweite Maschine heißt oft g.", example: "$f(x) = 2x + 1$" },
+    { term: "$B_0$", plain: "Der Wert am Anfang, also nach null Schritten.", example: "$B_0 = 100$" },
+    { term: "B(n)", plain: "Der Wert nach n Schritten.", example: "$B(3) = 800$" },
   );
 });

@@ -237,27 +237,6 @@
  },
  {
   "lesson": "P_MATH_PYTH_TRIG",
-  "why": "The hint told the learner directly to take half.",
-  "ops": [
-   {
-    "op": "tasks",
-    "board": "Seite berechnen",
-    "tasks": [
-     {
-      "text": "$c = 20$ und $\\alpha = 30°$. Dann ist $a = 20 \\cdot 0{,}5 = $ ___",
-      "correct": "10",
-      "wrong": [
-       "40"
-      ],
-      "why": "Mal 0,5 ist dasselbe wie die Hälfte. Die Hälfte von 20 ist 10.",
-      "hint": "0,5 ist kleiner als 1. Wird eine Zahl größer oder kleiner, wenn du sie mal 0,5 nimmst?"
-     }
-    ]
-   }
-  ]
- },
- {
-  "lesson": "P_MATH_PYTH_TRIG",
   "why": "DEG and RAD were used without explanation.",
   "ops": [
    {
@@ -401,24 +380,6 @@
      "$\\frac{1}{2}$",
      "1",
      "$\\frac{3}{4}$"
-    ]
-   }
-  ]
- },
- {
-  "lesson": "P_MATH_KOERPER",
-  "why": "3,14 times 9 is 28,26, the board showed the rounded 28,3 with an equals sign.",
-  "ops": [
-   {
-    "op": "body",
-    "board": "Fläche des Kreises",
-    "lines": [
-     "$A = \\pi \\cdot r \\cdot r$",
-     "Kürzer geschrieben: $A = \\pi \\cdot r^2$",
-     "Beispiel: $r = 3$ cm",
-     "$3 \\cdot 3 = 9$",
-     "$A \\approx 3{,}14 \\cdot 9 = 28{,}26\\ \\text{cm}^2$",
-     "Gerundet: $A \\approx 28{,}3\\ \\text{cm}^2$"
     ]
    }
   ]

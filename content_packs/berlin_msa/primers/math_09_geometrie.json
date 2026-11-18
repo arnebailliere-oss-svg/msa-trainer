@@ -591,7 +591,7 @@
       },
       {
         "title": "Fläche vom Kreis",
-        "body": "$A = \\pi \\cdot r \\cdot r$\n\nKürzer geschrieben: $A = \\pi \\cdot r^2$\n\nBeispiel: $r = 10$ cm\n\n$10 \\cdot 10 = 100$\n\n$A \\approx 3{,}14 \\cdot 100 = 314\\ \\text{cm}^2$",
+        "body": "$A = \\pi \\cdot r \\cdot r$\n\nKürzer geschrieben: $A = \\pi \\cdot r^2$\n\nAchtung: Du brauchst den Radius, nicht den Durchmesser.",
         "figure": {
           "type": "circle",
           "labels": {
@@ -611,6 +611,29 @@
           }
         ],
         "say": "Für die Fläche nimmst du den Radius mit sich selbst mal und dann mal Pi. Achte darauf, dass du wirklich den Radius nimmst. Steht in der Aufgabe der Durchmesser, halbierst du ihn zuerst. Das ist der häufigste Fehler bei Kreisaufgaben."
+      },
+      {
+        "title": "Kreisfläche: ein Beispiel",
+        "body": "Beispiel: $r = 10$ cm\n\nErst Radius mal Radius: $10 \\cdot 10 = 100$\n\nDann mal $\\pi$: $A \\approx 3{,}14 \\cdot 100 = 314\\ \\text{cm}^2$",
+        "figure": {
+          "type": "circle",
+          "labels": {
+            "r": "r = 10 cm"
+          }
+        },
+        "tasks": [
+          {
+            "text": "$r = 2$ cm, also $2 \\cdot 2 = 4$. Die Kreisfläche ist etwa ___.",
+            "choices": [
+              "$12{,}56\\ \\text{cm}^2$",
+              "$6{,}28\\ \\text{cm}^2$"
+            ],
+            "correct": "$12{,}56\\ \\text{cm}^2$",
+            "why": "4 mal 3,14 ergibt 12,56.",
+            "hint": "Du hast schon Radius mal Radius. Womit nimmst du jetzt noch mal?"
+          }
+        ],
+        "say": "Du rechnest in zwei Schritten. Zuerst nimmst du den Radius mit sich selbst mal. Das Ergebnis nimmst du dann mal Pi. Weil es eine Fläche ist, steht am Ende Quadratzentimeter."
       },
       {
         "title": "Das nimmst du mit",
@@ -660,6 +683,16 @@
         "term": "a",
         "plain": "Im Dreieck die Seite gegenüber von Ecke A. Genauso liegen b und c gegenüber von B und C.",
         "example": "$a = 8$ cm"
+      },
+      {
+        "term": "b",
+        "plain": "Im Dreieck die Seite gegenüber von Ecke B.",
+        "example": "$b = 7$ cm"
+      },
+      {
+        "term": "c",
+        "plain": "Im Dreieck die Seite gegenüber von Ecke C.",
+        "example": "$c = 4$ cm"
       },
       {
         "term": "Winkel",

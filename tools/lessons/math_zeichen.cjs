@@ -158,6 +158,8 @@ migrate("primers/math_00_zeichen.json", (p, h) => {
 
   h.body("Prozent heißt „von hundert“", "$25\\,\\%$ heißt **25 von 100**.", "Von 100 Bonbons sind 25 für dich.", "$\\%$ kommt von pro **cent**um. Das heißt: von **hundert**.");
 
+
+
   h.chapters([
     ["Mathe ist eine Sprache", "Die Rechenzeichen"],
     ["Hochzahlen", "Hochzahl und Wurzel"],
@@ -204,5 +206,11 @@ migrate("primers/math_00_zeichen.json", (p, h) => {
     { term: "Winkel", plain: "Die Ecke zwischen zwei Linien. Man misst ihn in Grad.", example: "Die Ecke eines Blatts hat 90°." },
     { term: "$\\pi$", plain: "Pi, die Kreiszahl. Eine feste Zahl, ungefähr 3,14.", example: "$2 \\cdot \\pi \\approx 6{,}28$" },
     { term: "$\\%$", plain: "Prozent. Das heißt: von hundert.", example: "$25\\,\\%$ sind 25 von 100." },
+  );
+
+  // Round 2: the letters used on the boards are on the card too.
+  p.vocab.splice(p.vocab.findIndex((v) => v.term === "Variable") + 1, 0,
+    { term: "x", plain: "Ein Buchstabe als Kiste für eine Zahl, die du noch nicht kennst.", example: "$x + 2$ mit $x = 4$ ergibt 6." },
+    { term: "a", plain: "Auch ein Buchstabe als Kiste für eine Zahl, genau wie x.", example: "$3a$ heißt $3 \\cdot a$." },
   );
 });

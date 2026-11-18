@@ -165,6 +165,29 @@ migrate("primers/math_09b_pythagoras.json", (p, h) => {
     );
   }
 
+  // Round 2: the two formulas on a board of their own, the side calculation in two boards.
+  h.body("Hypotenuse berechnen", "Beispiel: $a = 6$ und $b = 8$", "Hoch 2 nehmen: $6^2 = 36$ und $8^2 = 64$", "Zusammenzählen: $36 + 64 = 100$", "Wurzel ziehen: $c = \\sqrt{100} = 10$");
+  h.body("Kathete berechnen", "Beispiel: $c = 13$ und $a = 5$", "Hoch 2 nehmen: $13^2 = 169$ und $5^2 = 25$", "Abziehen: $169 - 25 = 144$", "Wurzel ziehen: $b = \\sqrt{144} = 12$");
+  h.after(
+    "Kathete berechnen",
+    b("Beide Wege als Formel", ["Hypotenuse gesucht: $c = \\sqrt{a^2 + b^2}$", "Kathete gesucht: $b = \\sqrt{c^2 - a^2}$", "Das sind dieselben drei Schritte, nur kurz geschrieben."], "Auf dem Formelblatt stehen die beiden Wege als Formeln. Sie sagen nichts Neues. Unter der Wurzel steht, was du mit den Quadraten machst: zusammenzählen für die lange Seite, abziehen für eine kurze.", {
+      tasks: [k("Gesucht ist die längste Seite. Unter der Wurzel steht dann ___.", "ein Plus", ["ein Minus"], "Für die Hypotenuse werden die beiden Quadrate zusammengezählt.", "Ist die gesuchte Seite länger oder kürzer als die beiden anderen?")],
+    }),
+  );
+  {
+    const right = h.board("Seite berechnen").figure;
+    h.body("Seite berechnen", "$c = 10$ und $\\alpha = 30°$, gesucht ist $a$.", "$a$ liegt gegenüber vom Winkel, $c$ ist die Hypotenuse.", "Gegenkathete und Hypotenuse: Das ist der Sinus.", "$\\sin 30° = \\frac{a}{10}$");
+    h.say("Seite berechnen", "Zuerst überlegst du, welche zwei Seiten in der Aufgabe vorkommen. Dann suchst du den Bruch, in dem genau diese beiden stehen. Hier sind es Gegenkathete und Hypotenuse, also der Sinus. Diese Zeile schreibst du hin und setzt die Zahlen ein.");
+    h.tasks("Seite berechnen", k("In der Aufgabe kommen die Ankathete und die Hypotenuse vor. Du nimmst ___.", "den Kosinus", ["den Sinus"], "Im Kosinus stehen Ankathete und Hypotenuse.", "In welchem der drei Brüche kommen Ankathete und Hypotenuse vor?"));
+    h.after(
+      "Seite berechnen",
+      b("Dann nach a auflösen", ["$\\sin 30° = \\frac{a}{10}$", "Beide Seiten mal 10: $a = 10 \\cdot \\sin 30°$", "$a = 10 \\cdot 0{,}5 = 5$"], "Übrig bleibt eine Gleichung mit einer Unbekannten. Die löst du wie gewohnt. Das a wird durch 10 geteilt, also nimmst du beide Seiten mal 10. Den Sinus von 30 Grad liefert dir der Taschenrechner.", {
+        figure: right,
+        tasks: [k("$c = 20$ und $\\alpha = 30°$. Dann ist $a = 20 \\cdot 0{,}5 = $ ___", "10", ["40"], "Mal 0,5 ist dasselbe wie die Hälfte. Die Hälfte von 20 ist 10.", "0,5 ist kleiner als 1. Wird eine Zahl größer oder kleiner, wenn du sie mal 0,5 nimmst?")],
+      }),
+    );
+  }
+
   h.chapters([
     ["Das rechtwinklige Dreieck", "Der Satz des Pythagoras"],
     ["Gegenkathete und Ankathete", "Sinus, Kosinus und Tangens"],

@@ -121,6 +121,8 @@ migrate("primers/math_03_terme.json", (p, h) => {
     }),
   );
 
+
+
   h.chapters([
     ["Eine Kiste für eine Zahl", "Was ein x ist"],
     ["Äpfel zu Äpfeln", "Zusammenfassen"],
@@ -157,5 +159,11 @@ migrate("primers/math_03_terme.json", (p, h) => {
     { term: "Ausklammern", plain: "Das Gemeinsame vor die Klammer ziehen. Das ist Ausmultiplizieren rückwärts.", example: "$4x + 8 = 4 \\cdot (x + 2)$" },
     { term: "Vorzeichen", plain: "Das Plus oder Minus vor einer Zahl oder einem Buchstaben.", example: "Bei $-3$ ist das Vorzeichen minus." },
     { term: "binomische Formel", plain: "Ein festes Muster für eine Klammer hoch 2: vorn ein Quadrat, hinten ein Quadrat, in der Mitte zweimal das Produkt.", example: "$(a + b)^2 = a^2 + 2ab + b^2$" },
+  );
+
+  // Round 2: the letters used on the boards are on the card too.
+  p.vocab.splice(p.vocab.findIndex((v) => v.term === "x") + 1, 0,
+    { term: "a", plain: "Ein Buchstabe für eine Zahl, genau wie x. Verschiedene Buchstaben stehen für verschiedene Zahlen.", example: "$3a + 2a = 5a$" },
+    { term: "b", plain: "Noch ein Buchstabe für eine Zahl. Er ist eine andere Sorte als a.", example: "$3a + 2b$ bleibt so stehen." },
   );
 });

@@ -165,6 +165,19 @@ migrate("primers/math_09_geometrie.json", (p, h) => {
   }
   h.body("Umfang vom Kreis", "Der Rand ist etwa 3,14-mal so lang wie der Durchmesser.", "Diese Zahl kennst du schon: $\\pi$", "$U = \\pi \\cdot d$", "Beispiel: $d = 60$ cm, also $U \\approx 3{,}14 \\cdot 60 = 188{,}4$ cm");
 
+  // Round 2: the circle area in two boards, formula first, example after.
+  {
+    const circle = h.board("Fläche vom Kreis").figure;
+    h.body("Fläche vom Kreis", "$A = \\pi \\cdot r \\cdot r$", "Kürzer geschrieben: $A = \\pi \\cdot r^2$", "Achtung: Du brauchst den Radius, nicht den Durchmesser.");
+    h.after(
+      "Fläche vom Kreis",
+      b("Kreisfläche: ein Beispiel", ["Beispiel: $r = 10$ cm", "Erst Radius mal Radius: $10 \\cdot 10 = 100$", "Dann mal $\\pi$: $A \\approx 3{,}14 \\cdot 100 = 314\\ \\text{cm}^2$"], "Du rechnest in zwei Schritten. Zuerst nimmst du den Radius mit sich selbst mal. Das Ergebnis nimmst du dann mal Pi. Weil es eine Fläche ist, steht am Ende Quadratzentimeter.", {
+        figure: circle,
+        tasks: [k("$r = 2$ cm, also $2 \\cdot 2 = 4$. Die Kreisfläche ist etwa ___.", "$12{,}56\\ \\text{cm}^2$", ["$6{,}28\\ \\text{cm}^2$"], "4 mal 3,14 ergibt 12,56.", "Du hast schon Radius mal Radius. Womit nimmst du jetzt noch mal?")],
+      }),
+    );
+  }
+
   h.chapters([
     ["Umfang: einmal außen rum", "Umfang und Fläche"],
     ["Das Dreieck beschriften", "Dreiecke und Winkel"],
@@ -223,5 +236,11 @@ migrate("primers/math_09_geometrie.json", (p, h) => {
     { term: "Durchmesser", plain: "Einmal quer durch die Mitte des Kreises. Doppelt so lang wie der Radius. Kurz: d.", example: "$d = 2 \\cdot r$" },
     { term: "d", plain: "Der Buchstabe für den Durchmesser.", example: "$U = \\pi \\cdot d$" },
     { term: "$\\pi$", plain: "Pi, die Kreiszahl. Ungefähr 3,14. So oft passt der Durchmesser in den Rand eines Kreises.", example: "$U = \\pi \\cdot d$" },
+  );
+
+  // Round 2: the sides b and c are on the card too.
+  p.vocab.splice(p.vocab.findIndex((v) => v.term === "a") + 1, 0,
+    { term: "b", plain: "Im Dreieck die Seite gegenüber von Ecke B.", example: "$b = 7$ cm" },
+    { term: "c", plain: "Im Dreieck die Seite gegenüber von Ecke C.", example: "$c = 4$ cm" },
   );
 });

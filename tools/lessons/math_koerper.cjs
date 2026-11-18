@@ -185,6 +185,18 @@ migrate("primers/math_09c_koerper.json", (p, h) => {
     );
   }
 
+  // Round 2: the circle area in two boards, formula first, example after.
+  {
+    const circle = h.board("Fläche des Kreises").figure;
+    const example = h.board("Fläche des Kreises").tasks;
+    h.body("Fläche des Kreises", "$A = \\pi \\cdot r \\cdot r$", "Kürzer geschrieben: $A = \\pi \\cdot r^2$", "Erst Radius mal Radius, dann mal $\\pi$.");
+    h.tasks("Fläche des Kreises", k("In $A = \\pi \\cdot r^2$ bedeutet $r^2$: ___", "$r \\cdot r$", ["$2 \\cdot r$"], "Die kleine 2 ist die kurze Schreibweise für Radius mal Radius.", "Was bedeutet eine Hochzahl 2: mal 2 oder mal sich selbst?"));
+    h.after(
+      "Fläche des Kreises",
+      b("Kreisfläche: ein Beispiel", ["Beispiel: $r = 3$ cm", "$3 \\cdot 3 = 9$", "$A \\approx 3{,}14 \\cdot 9 = 28{,}26\\ \\text{cm}^2$", "Gerundet: $A \\approx 28{,}3\\ \\text{cm}^2$"], "Du rechnest in zwei Schritten. Zuerst nimmst du den Radius mit sich selbst mal, danach mal Pi. Weil es eine Fläche ist, steht am Ende Quadratzentimeter. Das Ergebnis rundest du auf eine Stelle hinter dem Komma.", { figure: circle, tasks: example }),
+    );
+  }
+
   h.chapters([
     ["Wie viel passt hinein?", "Volumen und Oberfläche"],
     ["Der Kreis", "Der Kreis und die Dose"],
