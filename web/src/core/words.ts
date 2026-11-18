@@ -22,7 +22,7 @@ export function mentions(text: string, term: string): boolean {
   const needle = plain(term).replace(/\s+/g, " ").trim();
   if (!needle) return false;
   const hay = plain(needle === ":" || needle === "-" ? formulas(text) : text);
-  if (needle.length <= 2 || /[()]/.test(needle)) {
+  if (needle.length <= 3 || /[()]/.test(needle)) {
     const esc = needle.replace(/[.*+?^${}()|[\]\\]/g, "\\$&").replace(/ /g, "\\s*");
     return new RegExp(`(^|[^${LETTER}])${esc}([^${LETTER}]|$)`).test(hay);
   }

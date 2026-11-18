@@ -60,6 +60,49 @@ migrate("primers/math_01_bruch.json", (p, h) => {
   h.body("Ungleiche Nenner: erst gleich machen", "$\\frac{1}{2} + \\frac{1}{3}$", "Die Stücke sind verschieden groß. So kannst du sie nicht zählen.", "Erst müssen beide Brüche denselben Nenner bekommen.", "Wie das geht, zeigen die nächsten zwei Tafeln.");
   h.body("Der berühmte Fehler", "$\\frac{1}{2} + \\frac{1}{3}$ ist **nicht** $\\frac{2}{5}$.", "Oben plus oben, unten plus unten: **verboten**.", "Richtig: erst beide auf Sechstel bringen.", "$\\frac{3}{6} + \\frac{2}{6} = \\frac{5}{6}$");
 
+  // One new thing per board: Nenner and Zähler apart, Vielfache before the common denominator,
+  // multiplying and shortening apart, the Kehrwert before dividing.
+  {
+    const pizza = h.board("Eine Pizza in Stücken").figure;
+    h.rename("Zähler und Nenner", "Die Zahl unten");
+    h.body("Die Zahl unten", "$\\frac{3}{4}$", "Die Zahl unten heißt **Nenner**.", "Sie nennt, in wie viele Stücke geteilt wurde: in 4.");
+    h.say("Die Zahl unten", "Fang unten an. Dort steht, in wie viele gleiche Stücke das Ganze geteilt wurde. Diese Zahl heißt Nenner. Merkhilfe: Der Nenner steht unten wie der Boden.");
+    h.tasks("Die Zahl unten", k("Eine Torte wird in 8 gleiche Stücke geteilt. Der Nenner ist ___.", "8", ["1"], "Der Nenner sagt, in wie viele Stücke geteilt wurde. Das sind hier 8.", "In wie viele Stücke wurde die Torte geteilt?"));
+    h.board("Die Zahl unten").figure = pizza;
+    h.after(
+      "Die Zahl unten",
+      b("Die Zahl oben", ["$\\frac{3}{4}$", "Die Zahl oben heißt **Zähler**.", "Sie zählt, wie viele Stücke du nimmst: 3."], "Oben steht, wie viele von den Stücken gemeint sind. Diese Zahl heißt Zähler, weil sie die Stücke zählt. Drei Viertel heißt also: Von vier Stücken nimmst du drei.", {
+        figure: pizza,
+        tasks: [k("Bei $\\frac{2}{5}$ ist die 5 der ___.", "Nenner", ["Zähler"], "Die Zahl unten nennt, in wie viele Stücke geteilt wurde.", "Steht die 5 oben oder unten? Welcher Name gehört zu dieser Stelle?")],
+      }),
+    );
+  }
+  h.body("Der Bruchstrich ist Geteilt", "$\\frac{3}{4}$ heißt auch: 3 geteilt durch 4.", "Mit dem Taschenrechner: $3 : 4 = 0{,}75$", "Eine Zahl mit Komma heißt **Dezimalzahl**.");
+  h.body("Gleichnamig: gleicher Nenner", "$\\frac{1}{4} + \\frac{2}{4} = \\frac{3}{4}$", "Die Stücke sind gleich groß: einfach zählen.", "Der Nenner bleibt 4.", "Brüche mit gleichem Nenner heißen **gleichnamig**.");
+  h.before(
+    "So findest du den gemeinsamen Nenner",
+    b("Was ist ein Vielfaches?", ["Die Viererreihe: 4, 8, 12, 16", "Diese Zahlen heißen **Vielfache** von 4.", "Die Sechserreihe: 6, 12, 18", "Das sind die Vielfachen von 6."], "Bevor wir den gemeinsamen Nenner suchen, brauchst du ein Wort. Die Zahlen einer Reihe aus dem Einmaleins heißen Vielfache. Die Vielfachen von 4 sind also 4, 8, 12 und so weiter. Du bekommst sie, wenn du immer wieder 4 dazuzählst.", {
+      tasks: [k("Ein Vielfaches von 5 ist ___.", "15", ["12"], "Die 15 steht in der Fünferreihe: 5, 10, 15.", "Zähl die Fünferreihe auf. Welche der beiden Zahlen kommt darin vor?")],
+    }),
+  );
+
+  h.body("Mal: einfach durch", "$\\frac{2}{3} \\cdot \\frac{3}{4}$", "Oben mal oben: $2 \\cdot 3 = 6$", "Unten mal unten: $3 \\cdot 4 = 12$", "Ergebnis: $\\frac{6}{12}$");
+  h.say("Mal: einfach durch", "Malnehmen ist bei Brüchen das Leichteste. Du rechnest Zähler mal Zähler und Nenner mal Nenner. Mehr ist es nicht.");
+  h.after(
+    "Mal: einfach durch",
+    b("Am Ende kürzen", ["$\\frac{6}{12}$ lässt sich noch kürzen.", "Oben und unten durch 6: $\\frac{1}{2}$", "Schau nach dem Malnehmen immer, ob du kürzen kannst."], "Das Ergebnis von eben war sechs Zwölftel. Sechs und zwölf lassen sich beide durch sechs teilen. Dann bleibt ein Halb übrig. In der Prüfung wird das gekürzte Ergebnis erwartet.", {
+      tasks: [k("$\\frac{2}{3}$ $\\cdot$ $\\frac{1}{2}$ $=$ $\\frac{2}{6}$ $= $ ___", "$\\frac{1}{3}$", ["$\\frac{2}{3}$"], "Oben und unten durch 2 geteilt ergibt ein Drittel.", "Durch welche Zahl lassen sich 2 und 6 beide teilen?")],
+    }),
+  );
+  h.before(
+    "Geteilt: umdrehen und mal",
+    b("Einen Bruch umdrehen", ["Dreh einen Bruch um: Oben und unten tauschen die Plätze.", "Aus $\\frac{1}{4}$ wird $\\frac{4}{1}$.", "Der umgedrehte Bruch heißt **Kehrwert**."], "Für das Teilen brauchst du einen kleinen Handgriff. Du stellst einen Bruch auf den Kopf. Was oben stand, steht dann unten, und umgekehrt. Dieser umgedrehte Bruch hat einen Namen, den Kehrwert.", {
+      tasks: [k("Der Kehrwert von $\\frac{2}{3}$ ist ___.", "$\\frac{3}{2}$", ["$\\frac{1}{3}$"], "Beim Kehrwert tauschen Zähler und Nenner die Plätze.", "Was passiert mit oben und unten, wenn du einen Bruch umdrehst?")],
+    }),
+  );
+  h.body("Geteilt: umdrehen und mal", "$\\frac{1}{2} : \\frac{1}{4}$", "Nimm vom zweiten Bruch den Kehrwert: $\\frac{4}{1}$", "Dann rechnest du mal: $\\frac{1}{2} \\cdot \\frac{4}{1} = \\frac{4}{2}$", "$\\frac{4}{2} = 2$");
+  h.tasks("Geteilt: umdrehen und mal", k("$\\frac{1}{3}$ $:$ $\\frac{1}{2}$ $=$ $\\frac{1}{3}$ $\\cdot$ ___", "$\\frac{2}{1}$", ["$\\frac{1}{2}$"], "Beim Teilen nimmst du mit dem Kehrwert des zweiten Bruchs mal.", "Welchen Bruch drehst du um, bevor du malnimmst?"));
+
   h.chapters([
     ["Eine Pizza in Stücken", "Was ein Bruch ist"],
     ["Erweitern: mehr Stücke, gleiche Pizza", "Erweitern und Kürzen"],
@@ -76,4 +119,20 @@ migrate("primers/math_01_bruch.json", (p, h) => {
     "Drei geteilt durch vier ist 0,75. Das sind 75 von 100, also 75 Prozent.",
   ]);
   p.teaser = "Was Zähler und Nenner sind, was Kürzen und Erweitern wirklich heißen, wie du einen gemeinsamen Nenner findest und warum ein Halbes plus ein Drittel nicht zwei Fünftel ist.";
+
+  // Word card: every word of this lesson.
+  h.vocab(
+    { term: "Bruch", plain: "So viele von so vielen gleichen Stücken.", example: "$\\frac{3}{4}$ sind 3 von 4 Stücken." },
+    { term: "Nenner", plain: "Die Zahl unten. Sie nennt, in wie viele Stücke geteilt wurde.", example: "Bei $\\frac{3}{4}$ ist 4 der Nenner." },
+    { term: "Zähler", plain: "Die Zahl oben. Sie zählt die Stücke, die gemeint sind.", example: "Bei $\\frac{3}{4}$ ist 3 der Zähler." },
+    { term: "Bruchstrich", plain: "Der Strich zwischen oben und unten. Er bedeutet geteilt.", example: "$\\frac{3}{4} = 3 : 4$" },
+    { term: "Dezimalzahl", plain: "Eine Zahl mit Komma.", example: "$0{,}75$" },
+    { term: "Erweitern", plain: "Oben und unten mal dieselbe Zahl. Der Wert bleibt gleich.", example: "$\\frac{1}{2} = \\frac{3}{6}$" },
+    { term: "Kürzen", plain: "Oben und unten durch dieselbe Zahl. Der Wert bleibt gleich.", example: "$\\frac{6}{8} = \\frac{3}{4}$" },
+    { term: "Gemischte Zahl", plain: "Eine ganze Zahl mit einem Bruch daneben.", example: "$1\\frac{1}{4} = \\frac{5}{4}$" },
+    { term: "Gleichnamig", plain: "Mit gleichem Nenner. Erst dann kannst du Brüche zusammenzählen oder abziehen.", example: "$\\frac{1}{6} + \\frac{2}{6} = \\frac{3}{6}$" },
+    { term: "Vielfaches", plain: "Eine Zahl aus der Reihe im Einmaleins.", example: "Vielfache von 4: 4, 8, 12, 16" },
+    { term: "kgV", plain: "Kleinstes gemeinsames Vielfaches. Die erste Zahl, die in beiden Reihen vorkommt. Sie wird der gemeinsame Nenner.", example: "4 und 6: Das kgV ist 12." },
+    { term: "Kehrwert", plain: "Der Bruch auf den Kopf gestellt.", example: "Der Kehrwert von $\\frac{2}{3}$ ist $\\frac{3}{2}$." },
+  );
 });

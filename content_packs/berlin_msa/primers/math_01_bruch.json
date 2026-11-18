@@ -29,9 +29,47 @@
         "say": "Ein Bruch ist immer „so viele von so vielen“. Unten steht, in wie viele Stücke geteilt wurde, oben, wie viele du nimmst."
       },
       {
-        "title": "Zähler und Nenner",
-        "body": "$\\frac{3}{4}$\n\nOben: **Zähler**, er zählt die Stücke.\n\nUnten: **Nenner**, er nennt die Größe der Stücke.",
-        "say": "Merkhilfe: Der Nenner steht unten wie der Boden, und er benennt, wie groß ein Stück ist.",
+        "title": "Die Zahl unten",
+        "body": "$\\frac{3}{4}$\n\nDie Zahl unten heißt **Nenner**.\n\nSie nennt, in wie viele Stücke geteilt wurde: in 4.",
+        "say": "Fang unten an. Dort steht, in wie viele gleiche Stücke das Ganze geteilt wurde. Diese Zahl heißt Nenner. Merkhilfe: Der Nenner steht unten wie der Boden.",
+        "tasks": [
+          {
+            "text": "Eine Torte wird in 8 gleiche Stücke geteilt. Der Nenner ist ___.",
+            "choices": [
+              "8",
+              "1"
+            ],
+            "correct": "8",
+            "why": "Der Nenner sagt, in wie viele Stücke geteilt wurde. Das sind hier 8.",
+            "hint": "In wie viele Stücke wurde die Torte geteilt?"
+          }
+        ],
+        "figure": {
+          "type": "pieChart",
+          "categories": [
+            "gegessen",
+            "übrig"
+          ],
+          "values": [
+            3,
+            1
+          ]
+        }
+      },
+      {
+        "title": "Die Zahl oben",
+        "body": "$\\frac{3}{4}$\n\nDie Zahl oben heißt **Zähler**.\n\nSie zählt, wie viele Stücke du nimmst: 3.",
+        "figure": {
+          "type": "pieChart",
+          "categories": [
+            "gegessen",
+            "übrig"
+          ],
+          "values": [
+            3,
+            1
+          ]
+        },
         "tasks": [
           {
             "text": "Bei $\\frac{2}{5}$ ist die 5 der ___.",
@@ -43,11 +81,12 @@
             "why": "Die Zahl unten nennt, in wie viele Stücke geteilt wurde.",
             "hint": "Steht die 5 oben oder unten? Welcher Name gehört zu dieser Stelle?"
           }
-        ]
+        ],
+        "say": "Oben steht, wie viele von den Stücken gemeint sind. Diese Zahl heißt Zähler, weil sie die Stücke zählt. Drei Viertel heißt also: Von vier Stücken nimmst du drei."
       },
       {
         "title": "Der Bruchstrich ist Geteilt",
-        "body": "$\\frac{3}{4} = 3 : 4 = 0{,}75$\n\n$\\frac{1}{2} = 1 : 2 = 0{,}5$\n\nEine Zahl mit Komma heißt **Dezimalzahl**.",
+        "body": "$\\frac{3}{4}$ heißt auch: 3 geteilt durch 4.\n\nMit dem Taschenrechner: $3 : 4 = 0{,}75$\n\nEine Zahl mit Komma heißt **Dezimalzahl**.",
         "say": "Mit dem Taschenrechner kannst du jeden Bruch in eine Dezimalzahl verwandeln: oben geteilt durch unten.",
         "tasks": [
           {
@@ -151,7 +190,7 @@
       {
         "chapter": "Plus und Minus",
         "title": "Gleichnamig: gleicher Nenner",
-        "body": "$\\frac{1}{4} + \\frac{2}{4} = \\frac{3}{4}$\n\nGleiche Stückgröße: einfach die Stücke zählen.\n\nDer Nenner bleibt 4!",
+        "body": "$\\frac{1}{4} + \\frac{2}{4} = \\frac{3}{4}$\n\nDie Stücke sind gleich groß: einfach zählen.\n\nDer Nenner bleibt 4.\n\nBrüche mit gleichem Nenner heißen **gleichnamig**.",
         "say": "Ein Viertel plus zwei Viertel sind drei Viertel. Wie ein Apfel plus zwei Äpfel.",
         "tasks": [
           {
@@ -170,6 +209,23 @@
         "title": "Ungleiche Nenner: erst gleich machen",
         "body": "$\\frac{1}{2} + \\frac{1}{3}$\n\nDie Stücke sind verschieden groß. So kannst du sie nicht zählen.\n\nErst müssen beide Brüche denselben Nenner bekommen.\n\nWie das geht, zeigen die nächsten zwei Tafeln.",
         "say": "Halbe und Drittel kann man nicht direkt zählen, die Stücke sind verschieden groß. Erst gleich groß schneiden, dann zählen."
+      },
+      {
+        "title": "Was ist ein Vielfaches?",
+        "body": "Die Viererreihe: 4, 8, 12, 16\n\nDiese Zahlen heißen **Vielfache** von 4.\n\nDie Sechserreihe: 6, 12, 18\n\nDas sind die Vielfachen von 6.",
+        "tasks": [
+          {
+            "text": "Ein Vielfaches von 5 ist ___.",
+            "choices": [
+              "15",
+              "12"
+            ],
+            "correct": "15",
+            "why": "Die 15 steht in der Fünferreihe: 5, 10, 15.",
+            "hint": "Zähl die Fünferreihe auf. Welche der beiden Zahlen kommt darin vor?"
+          }
+        ],
+        "say": "Bevor wir den gemeinsamen Nenner suchen, brauchst du ein Wort. Die Zahlen einer Reihe aus dem Einmaleins heißen Vielfache. Die Vielfachen von 4 sind also 4, 8, 12 und so weiter. Du bekommst sie, wenn du immer wieder 4 dazuzählst."
       },
       {
         "title": "So findest du den gemeinsamen Nenner",
@@ -213,8 +269,8 @@
       {
         "chapter": "Mal, Geteilt und Umwandeln",
         "title": "Mal: einfach durch",
-        "body": "$\\frac{2}{3} \\cdot \\frac{3}{4}$\n\nOben: $2 \\cdot 3 = 6$\n\nUnten: $3 \\cdot 4 = 12$\n\nErgebnis: $\\frac{6}{12}$\n\nGekürzt: $\\frac{1}{2}$\n\nZähler mal Zähler, Nenner mal Nenner.",
-        "say": "Malnehmen ist bei Brüchen das Leichteste. Am Ende kürzen.",
+        "body": "$\\frac{2}{3} \\cdot \\frac{3}{4}$\n\nOben mal oben: $2 \\cdot 3 = 6$\n\nUnten mal unten: $3 \\cdot 4 = 12$\n\nErgebnis: $\\frac{6}{12}$",
+        "say": "Malnehmen ist bei Brüchen das Leichteste. Du rechnest Zähler mal Zähler und Nenner mal Nenner. Mehr ist es nicht.",
         "tasks": [
           {
             "text": "$\\frac{1}{2}$ $\\cdot$ $\\frac{3}{5}$ $= $ ___",
@@ -229,9 +285,25 @@
         ]
       },
       {
-        "title": "Geteilt: umdrehen und mal",
-        "body": "$\\frac{1}{2} : \\frac{1}{4}$\n\nDen zweiten Bruch **umdrehen**: Aus $\\frac{1}{4}$ wird $\\frac{4}{1}$.\n\nDann mal: $\\frac{1}{2} \\cdot \\frac{4}{1} = \\frac{4}{2}$\n\n$\\frac{4}{2} = 2$\n\nDer umgedrehte Bruch heißt **Kehrwert**.",
-        "say": "Frage: Wie oft passt ein Viertel in eine Hälfte? Zweimal. Genau das kommt raus.",
+        "title": "Am Ende kürzen",
+        "body": "$\\frac{6}{12}$ lässt sich noch kürzen.\n\nOben und unten durch 6: $\\frac{1}{2}$\n\nSchau nach dem Malnehmen immer, ob du kürzen kannst.",
+        "tasks": [
+          {
+            "text": "$\\frac{2}{3}$ $\\cdot$ $\\frac{1}{2}$ $=$ $\\frac{2}{6}$ $= $ ___",
+            "choices": [
+              "$\\frac{1}{3}$",
+              "$\\frac{2}{3}$"
+            ],
+            "correct": "$\\frac{1}{3}$",
+            "why": "Oben und unten durch 2 geteilt ergibt ein Drittel.",
+            "hint": "Durch welche Zahl lassen sich 2 und 6 beide teilen?"
+          }
+        ],
+        "say": "Das Ergebnis von eben war sechs Zwölftel. Sechs und zwölf lassen sich beide durch sechs teilen. Dann bleibt ein Halb übrig. In der Prüfung wird das gekürzte Ergebnis erwartet."
+      },
+      {
+        "title": "Einen Bruch umdrehen",
+        "body": "Dreh einen Bruch um: Oben und unten tauschen die Plätze.\n\nAus $\\frac{1}{4}$ wird $\\frac{4}{1}$.\n\nDer umgedrehte Bruch heißt **Kehrwert**.",
         "tasks": [
           {
             "text": "Der Kehrwert von $\\frac{2}{3}$ ist ___.",
@@ -242,6 +314,24 @@
             "correct": "$\\frac{3}{2}$",
             "why": "Beim Kehrwert tauschen Zähler und Nenner die Plätze.",
             "hint": "Was passiert mit oben und unten, wenn du einen Bruch umdrehst?"
+          }
+        ],
+        "say": "Für das Teilen brauchst du einen kleinen Handgriff. Du stellst einen Bruch auf den Kopf. Was oben stand, steht dann unten, und umgekehrt. Dieser umgedrehte Bruch hat einen Namen, den Kehrwert."
+      },
+      {
+        "title": "Geteilt: umdrehen und mal",
+        "body": "$\\frac{1}{2} : \\frac{1}{4}$\n\nNimm vom zweiten Bruch den Kehrwert: $\\frac{4}{1}$\n\nDann rechnest du mal: $\\frac{1}{2} \\cdot \\frac{4}{1} = \\frac{4}{2}$\n\n$\\frac{4}{2} = 2$",
+        "say": "Frage: Wie oft passt ein Viertel in eine Hälfte? Zweimal. Genau das kommt raus.",
+        "tasks": [
+          {
+            "text": "$\\frac{1}{3}$ $:$ $\\frac{1}{2}$ $=$ $\\frac{1}{3}$ $\\cdot$ ___",
+            "choices": [
+              "$\\frac{2}{1}$",
+              "$\\frac{1}{2}$"
+            ],
+            "correct": "$\\frac{2}{1}$",
+            "why": "Beim Teilen nimmst du mit dem Kehrwert des zweiten Bruchs mal.",
+            "hint": "Welchen Bruch drehst du um, bevor du malnimmst?"
           }
         ]
       },
@@ -284,42 +374,62 @@
       {
         "term": "Bruch",
         "plain": "So viele von so vielen gleichen Stücken.",
-        "example": "$\\frac{3}{4}$"
-      },
-      {
-        "term": "Zähler",
-        "plain": "Die Zahl oben. Zählt die Stücke.",
-        "example": "Bei $\\frac{3}{4}$ ist 3 der Zähler."
+        "example": "$\\frac{3}{4}$ sind 3 von 4 Stücken."
       },
       {
         "term": "Nenner",
-        "plain": "Die Zahl unten. Nennt, wie groß ein Stück ist.",
+        "plain": "Die Zahl unten. Sie nennt, in wie viele Stücke geteilt wurde.",
         "example": "Bei $\\frac{3}{4}$ ist 4 der Nenner."
       },
       {
+        "term": "Zähler",
+        "plain": "Die Zahl oben. Sie zählt die Stücke, die gemeint sind.",
+        "example": "Bei $\\frac{3}{4}$ ist 3 der Zähler."
+      },
+      {
+        "term": "Bruchstrich",
+        "plain": "Der Strich zwischen oben und unten. Er bedeutet geteilt.",
+        "example": "$\\frac{3}{4} = 3 : 4$"
+      },
+      {
+        "term": "Dezimalzahl",
+        "plain": "Eine Zahl mit Komma.",
+        "example": "$0{,}75$"
+      },
+      {
         "term": "Erweitern",
-        "plain": "Oben und unten mal dieselbe Zahl. Wert bleibt.",
+        "plain": "Oben und unten mal dieselbe Zahl. Der Wert bleibt gleich.",
         "example": "$\\frac{1}{2} = \\frac{3}{6}$"
       },
       {
         "term": "Kürzen",
-        "plain": "Oben und unten durch dieselbe Zahl. Wert bleibt.",
+        "plain": "Oben und unten durch dieselbe Zahl. Der Wert bleibt gleich.",
         "example": "$\\frac{6}{8} = \\frac{3}{4}$"
       },
       {
+        "term": "Gemischte Zahl",
+        "plain": "Eine ganze Zahl mit einem Bruch daneben.",
+        "example": "$1\\frac{1}{4} = \\frac{5}{4}$"
+      },
+      {
         "term": "Gleichnamig",
-        "plain": "Gleicher Nenner. Erst dann darf man plus und minus rechnen.",
-        "example": "$\\frac{1}{6} + \\frac{2}{6}$"
+        "plain": "Mit gleichem Nenner. Erst dann kannst du Brüche zusammenzählen oder abziehen.",
+        "example": "$\\frac{1}{6} + \\frac{2}{6} = \\frac{3}{6}$"
+      },
+      {
+        "term": "Vielfaches",
+        "plain": "Eine Zahl aus der Reihe im Einmaleins.",
+        "example": "Vielfache von 4: 4, 8, 12, 16"
+      },
+      {
+        "term": "kgV",
+        "plain": "Kleinstes gemeinsames Vielfaches. Die erste Zahl, die in beiden Reihen vorkommt. Sie wird der gemeinsame Nenner.",
+        "example": "4 und 6: Das kgV ist 12."
       },
       {
         "term": "Kehrwert",
         "plain": "Der Bruch auf den Kopf gestellt.",
-        "example": "Kehrwert von $\\frac{2}{3}$ ist $\\frac{3}{2}$."
-      },
-      {
-        "term": "Gemischte Zahl",
-        "plain": "Ganze plus Bruch.",
-        "example": "$1\\frac{1}{2} = \\frac{3}{2}$"
+        "example": "Der Kehrwert von $\\frac{2}{3}$ ist $\\frac{3}{2}$."
       }
     ],
     "quiz": [

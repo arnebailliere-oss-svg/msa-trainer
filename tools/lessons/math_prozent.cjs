@@ -82,10 +82,81 @@ migrate("primers/math_02_prozent.json", (p, h) => {
   );
   h.body("Prozent als Bruch und Dezimalzahl", "25 % heißt 25 von 100.", "Als Bruch: $\\frac{25}{100}$", "Als Dezimalzahl: $0{,}25$", "Der Trick: Das Komma rückt zwei Stellen nach links.");
 
+  // One new thing per board: fraction and decimal apart, one name per board, one way per board,
+  // the bank words apart, the letters before the formula.
+  h.rename("Prozent als Bruch und Dezimalzahl", "Prozent als Dezimalzahl");
+  h.before(
+    "Prozent als Dezimalzahl",
+    b("Prozent als Bruch", ["25 % heißt 25 von 100.", "Das kannst du als Bruch schreiben: $\\frac{25}{100}$", "Unten steht bei Prozent immer die 100."], "Prozent kannst du auch als Bruch schreiben. Die Zahl vor dem Zeichen kommt nach oben, und unten steht immer hundert. Das ist nur eine andere Schreibweise für von hundert.", {
+      tasks: [k("$7\\,\\% = $ ___", "$\\frac{7}{100}$", ["$\\frac{7}{10}$"], "Prozent heißt von hundert. Unten steht deshalb die 100.", "Welche Zahl steht bei Prozent immer unten?")],
+    }),
+  );
+  h.body("Prozent als Dezimalzahl", "$\\frac{25}{100}$ heißt 25 geteilt durch 100.", "$25 : 100 = 0{,}25$", "Der Trick: Das Komma rückt zwei Stellen nach links.", "Aus 25 % wird $0{,}25$.");
+  h.say("Prozent als Dezimalzahl", "Zum Rechnen brauchst du Prozent meistens als Zahl mit Komma. Der Bruchstrich bedeutet geteilt, also teilst du durch hundert. Dabei rückt das Komma zwei Stellen nach links. Aus 25 Prozent wird 0,25.");
+
+  h.rename("Die Namen", "Der Grundwert");
+  h.body("Der Grundwert", "Von 200 Schülern fahren 50 Rad. Das sind 25 %.", "Das Ganze heißt **Grundwert**.", "Hier ist der Grundwert 200.", "Der Grundwert ist immer 100 %.");
+  h.say("Der Grundwert", "Für die drei Zahlen gibt es Fachwörter, die in Aufgaben oft vorkommen. Wir nehmen sie einzeln. Das erste ist der Grundwert. Das ist das Ganze, also der ganze Preis, alle Schüler oder das ganze Geld.");
+  h.tasks("Der Grundwert", k("Ein Pulli kostet 40 €. Er wird 10 % billiger. Der Grundwert ist ___.", "40 €", ["10 %"], "Der alte Preis ist das Ganze, also die 100 Prozent.", "Welche Zahl steht für den ganzen Preis?"));
+  h.after(
+    "Der Grundwert",
+    b("Der Prozentwert", ["Der Teil heißt **Prozentwert**.", "Hier ist der Prozentwert 50: die 50 Schüler mit Rad.", "Er hat dieselbe Einheit wie das Ganze: Schüler, Euro oder Kilo."], "Das zweite Wort ist der Prozentwert. Das ist der Teil vom Ganzen. Lass dich vom Namen nicht täuschen: Der Prozentwert ist keine Zahl mit Prozentzeichen. Es sind Schüler, Euro oder Kilo.", {
+      tasks: [k("Von 30 Schülern kommen 12 mit dem Bus. Der Prozentwert ist ___.", "12", ["30"], "Die 12 Schüler sind ein Teil von allen. Der Teil hat diesen Namen.", "Welche Zahl ist nur ein Teil von allen Schülern?")],
+    }),
+    b("Der Prozentsatz", ["Der Anteil heißt **Prozentsatz**.", "Hier ist der Prozentsatz 25 %.", "Du erkennst ihn am Zeichen %."], "Das dritte Wort ist der Prozentsatz. Das ist die Zahl mit dem Prozentzeichen. Sie sagt, wie groß der Teil im Vergleich zum Ganzen ist.", {
+      tasks: [k("Von 400 € hast du 80 € gespart. Das sind 20 %. Der Prozentsatz ist ___.", "20 %", ["80 €"], "Der Prozentsatz ist die Zahl mit dem Prozentzeichen.", "Welche der Zahlen trägt das Prozentzeichen?")],
+    }),
+  );
+
+  h.body("Das Ganze finden", "20 % sind 30. Wie viel ist alles?", "1 % ist dann $30 : 20 = 1{,}5$", "100 % sind $1{,}5 \\cdot 100 = 150$");
+  h.say("Das Ganze finden", "Du gehst über 1 Prozent. Wenn 20 Prozent 30 sind, teilst du durch 20 und hast 1 Prozent. Mal 100 ergibt das Ganze, denn das Ganze sind immer 100 Prozent.");
+  h.after(
+    "Welche Zahl wird gesucht?",
+    b("Die Buchstaben auf dem Formelblatt", ["Auf dem Formelblatt stehen Buchstaben statt Wörter.", "$G$ ist der Grundwert.", "$W$ ist der Prozentwert.", "$p\\,\\%$ ist der Prozentsatz."], "Auf dem Formelblatt ist wenig Platz. Deshalb stehen dort nur die Anfangsbuchstaben. G steht für Grundwert, W für Prozentwert. Nur der Prozentsatz heißt p, wie Prozent.", {
+      tasks: [k("Von 60 Schülern fehlen 12. Dann ist $G = $ ___", "60", ["12"], "G ist der Grundwert, also das Ganze. Das sind alle 60 Schüler.", "Für welches Wort steht das G? Welche Zahl ist das Ganze?")],
+    }),
+  );
+
+  h.body("Rabatt", "**Rabatt** heißt: Der Preis wird billiger.", "Preis 80 €, 25 % Rabatt.", "Rabatt: $80 \\cdot 0{,}25 = 20$ €", "Neuer Preis: $80 - 20 = 60$ €");
+  h.say("Rabatt", "Rabatt kennst du aus dem Laden. Ein Teil vom Preis wird dir geschenkt. Du rechnest zuerst aus, wie viel Euro das sind, und ziehst sie dann vom Preis ab.");
+  h.after(
+    "Rabatt",
+    b("Rabatt in einem Schritt", ["25 % gehen weg. Dann bleiben 75 %.", "75 % als Dezimalzahl: $0{,}75$", "$80 \\cdot 0{,}75 = 60$ €"], "Es geht auch schneller. Wenn 25 Prozent weggehen, bleiben 75 Prozent vom Preis übrig. Du nimmst den alten Preis also gleich mit 0,75 mal und hast den neuen Preis.", {
+      tasks: [k("30 % Rabatt. Für den neuen Preis rechnest du: alter Preis mal ___.", "0,7", ["0,3"], "30 Prozent gehen weg, 70 Prozent bleiben. Das ist 0,7.", "Wie viel Prozent vom Preis bleiben übrig, wenn 30 weggehen?")],
+    }),
+  );
+  h.body("Wenn etwas teurer wird", "Miete 500 €, sie steigt um 10 %.", "Erhöhung: $500 \\cdot 0{,}1 = 50$ €", "Neue Miete: $500 + 50 = 550$ €");
+  h.say("Wenn etwas teurer wird", "Bei einer Erhöhung rechnest du genauso wie beim Rabatt, nur kommt der Betrag dazu. Erst die Erhöhung in Euro ausrechnen, dann zum alten Preis dazuzählen.");
+  h.after(
+    "Wenn etwas teurer wird",
+    b("Teurer in einem Schritt", ["10 % kommen dazu. Aus 100 % werden 110 %.", "110 % als Dezimalzahl: $1{,}1$", "$500 \\cdot 1{,}1 = 550$ €"], "Auch hier gibt es den schnellen Weg. Zehn Prozent mehr bedeutet: Aus 100 Prozent werden 110 Prozent. Als Dezimalzahl ist das 1,1. Deshalb führt mal 1,1 direkt zum neuen Preis.", {
+      tasks: [k("20 % mehr. Du rechnest: alter Preis mal ___.", "1,2", ["0,2"], "Aus 100 Prozent werden 120 Prozent. Als Dezimalzahl ist das 1,2.", "Wie viel Prozent hast du am Ende insgesamt: nur die Erhöhung oder alles zusammen?")],
+    }),
+  );
+
+  h.body("Zinsen sind Prozent vom Geld", "500 € auf dem Konto, 2 % im Jahr:", "$500 \\cdot 0{,}02 = 10$ €", "Die Bank zahlt dir 10 € dazu. Dieses Geld heißt **Zinsen**.", "Nach einem Jahr: 510 €");
+  h.say("Zinsen sind Prozent vom Geld", "Wenn dein Geld auf dem Konto liegt, zahlt dir die Bank etwas dafür. Dieses Geld heißt Zinsen. Du rechnest sie aus wie jeden Teil vom Ganzen: Geld mal Prozentsatz als Dezimalzahl.");
+  h.after(
+    "Zinsen sind Prozent vom Geld",
+    b("Zwei Wörter von der Bank", ["Das Geld auf dem Konto heißt **Kapital**. Hier: 500 €.", "Der Prozentsatz heißt bei der Bank **Zinssatz**. Hier: 2 %."], "Bei der Bank haben die drei Zahlen eigene Namen. Das Kapital ist der Grundwert, also das Geld auf dem Konto. Der Zinssatz ist der Prozentsatz. Und die Zinsen sind der Prozentwert. Es ist dieselbe Rechnung mit anderen Wörtern.", {
+      tasks: [k("800 € liegen auf dem Konto. Es gibt 3 % Zinsen. Das Kapital ist ___.", "800 €", ["3 %"], "Das Kapital ist das Geld, das auf dem Konto liegt.", "Welche der beiden Zahlen ist das Geld auf dem Konto?")],
+    }),
+  );
+
+  h.before(
+    "Die Formel vom Formelblatt",
+    b("Buchstaben statt Zahlen", ["Du hast gerechnet: $500 \\cdot 1{,}02^2 = 520{,}20$", "Das Geld am Anfang nennt man $K_0$. Hier: 500 €.", "Die Zahl der Jahre nennt man $n$. Hier: 2.", "Das Geld nach $n$ Jahren nennt man $K_n$. Hier: 520,20 €."], "Auf dem Formelblatt stehen statt der Zahlen Buchstaben. K steht für Kapital. Die kleine 0 bedeutet nach null Jahren, also am Anfang. Das kleine n bedeutet nach n Jahren. Und n ist einfach die Zahl der Jahre.", {
+      tasks: [k("800 € werden 5 Jahre lang zu 3 % angelegt. Dann ist $K_0 = $ ___", "800", ["5"], "Das K mit der kleinen 0 ist das Geld ganz am Anfang.", "Welche der Zahlen ist das Geld, mit dem alles beginnt?")],
+    }),
+  );
+  h.body("Die Formel vom Formelblatt", "$K_n = K_0 \\cdot \\left(1 + \\frac{p}{100}\\right)^n$", "In der Klammer steht der Wachstumsfaktor.", "$p$ ist die Zahl vor dem Prozentzeichen. Bei 2 % ist $p = 2$.", "$1 + \\frac{2}{100} = 1{,}02$");
+  h.tasks("Die Formel vom Formelblatt", k("Bei 4 % Zinsen steht in der Klammer: $1 + \\frac{4}{100} = $ ___", "1,04", ["1,4"], "4 geteilt durch 100 ist 0,04. Dazu kommt die 1.", "Rechne zuerst 4 geteilt durch 100. Was kommt dann noch dazu?"));
+
   h.chapters([
     ["Von hundert", "Was Prozent bedeutet"],
     ["Der Teil vom Ganzen", "Die drei Grundaufgaben"],
-    ["Rabatt", "Rabatt, Erhöhung und Zinsen"],
+    ["Rabatt", "Rabatt und Erhöhung"],
+    ["Zinsen sind Prozent vom Geld", "Zinsen"],
   ]);
   h.renameVocab({ "Grundwert G": "Grundwert", "Prozentwert W": "Prozentwert", "Prozentsatz p": "Prozentsatz", "Promille (‰)": "Promille" });
   h.explain([
@@ -103,4 +174,27 @@ migrate("primers/math_02_prozent.json", (p, h) => {
   // New topics, words and quiz: added after the old quiz explanations.
   p.vocab.push({ term: "Wachstumsfaktor", plain: "Die Zahl, mit der du malnimmst, um die Zinsen gleich dazuzurechnen.", example: "2 % mehr: mal 1,02" });
   h.quiz(q("500 € werden 2 Jahre lang zu 10 % angelegt, und die Zinsen bleiben auf dem Konto. Wie viel ist es danach?", "605 €", ["600 €", "550 €", "510 €"], "Nach einem Jahr sind es 500 mal 1,1, also 550 €. Nach dem zweiten Jahr sind es 550 mal 1,1, also 605 €."));
+
+  // Word card: every word, sign and letter of this lesson.
+  h.vocab(
+    { term: "Prozent", plain: "Von hundert. Das Zeichen dafür ist %.", example: "$25\\,\\%$ sind 25 von 100." },
+    { term: "Promille", plain: "Von tausend. Das Zeichen dafür ist ‰.", example: "5 ‰ sind 5 von 1000." },
+    { term: "Grundwert", plain: "Das Ganze. Es ist immer 100 %.", example: "Alle 200 Schüler." },
+    { term: "Prozentwert", plain: "Der Teil vom Ganzen. Keine Zahl mit %, sondern Schüler, Euro oder Kilo.", example: "50 Schüler fahren Rad." },
+    { term: "Prozentsatz", plain: "Der Anteil. Die Zahl mit dem Zeichen %.", example: "25 %" },
+    { term: "G", plain: "Der Buchstabe für den Grundwert auf dem Formelblatt.", example: "$G = 200$" },
+    { term: "W", plain: "Der Buchstabe für den Prozentwert auf dem Formelblatt.", example: "$W = 50$" },
+    { term: "p", plain: "Die Zahl vor dem Prozentzeichen.", example: "Bei 25 % ist $p = 25$." },
+    { term: "Rabatt", plain: "Der Preis wird billiger. Ein Teil vom Preis wird abgezogen.", example: "25 % Rabatt auf 80 €: 60 €" },
+    { term: "um oder auf", plain: "Um sagt, wie viel wegfällt oder dazukommt. Auf sagt, wie viel am Ende noch da ist.", example: "Sinkt um 20 %: 80 % bleiben. Sinkt auf 20 %: 20 % bleiben." },
+    { term: "Zinsen", plain: "Geld, das die Bank dir zahlt, weil dein Geld auf dem Konto liegt.", example: "2 % von 500 € sind 10 €." },
+    { term: "Kapital", plain: "Das Geld auf dem Konto. Bei Zinsen ist es der Grundwert.", example: "500 €" },
+    { term: "Zinssatz", plain: "Der Prozentsatz, den die Bank zahlt.", example: "2 % im Jahr" },
+    { term: "Zinseszins", plain: "Die Zinsen bleiben auf dem Konto und bekommen im nächsten Jahr selbst Zinsen.", example: "Aus 510 € werden 520,20 €." },
+    { term: "Faktor", plain: "Eine Zahl, mit der man malnimmt.", example: "$500 \\cdot 1{,}02$: Die 1,02 ist ein Faktor." },
+    { term: "Wachstumsfaktor", plain: "Die Zahl, mit der du malnimmst, um die Zinsen gleich dazuzurechnen.", example: "2 % mehr: mal 1,02" },
+    { term: "$K_0$", plain: "Das Kapital am Anfang, also nach null Jahren.", example: "$K_0 = 500$" },
+    { term: "n", plain: "Die Anzahl der Jahre.", example: "$n = 2$" },
+    { term: "$K_n$", plain: "Das Kapital nach n Jahren.", example: "$K_2 = 520{,}20$" },
+  );
 });

@@ -115,17 +115,6 @@
   ]
  },
  {
-  "lesson": "P_MATH_PROZENT",
-  "why": "The basic word Zinsen was never explained.",
-  "ops": [
-   {
-    "op": "say",
-    "board": "Zinsen sind Prozent vom Geld",
-    "text": "Wenn dein Geld auf dem Konto liegt, zahlt dir die Bank etwas dafür. Dieses Geld heißt **Zinsen**. Zinsen sind nichts Neues: Das Kapital ist der Grundwert, der Zinssatz ist der Prozentsatz, und die Zinsen sind der Prozentwert."
-   }
-  ]
- },
- {
   "lesson": "P_MATH_TERME",
   "why": "The example did not need the law and used it for multiplication without saying so.",
   "ops": [
