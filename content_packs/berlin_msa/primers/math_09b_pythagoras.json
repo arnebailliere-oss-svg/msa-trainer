@@ -44,19 +44,19 @@
         ]
       },
       {
-        "title": "Katheten und Hypotenuse",
-        "body": "Die zwei Seiten **am** rechten Winkel: **Katheten** ($a$, $b$)\n\nDie Seite **gegenüber**: **Hypotenuse** ($c$), immer die längste",
-        "say": "Die Seiten haben eigene Namen, die aus dem Griechischen kommen. Die zwei Seiten, die den rechten Winkel bilden, heißen Katheten. Die dritte Seite liegt gegenüber und heißt Hypotenuse. Sie ist immer die längste der drei.",
+        "title": "Die Katheten",
+        "body": "Die zwei Seiten **am** rechten Winkel heißen **Katheten**.\n\nSie bilden zusammen die rechte Ecke.\n\nIm Bild sind das $a$ und $b$.",
+        "say": "Die Seiten haben eigene Namen, die aus dem Griechischen kommen. Fang mit den zwei Seiten an, die den rechten Winkel bilden. Sie heißen Katheten. Du findest sie, indem du schaust, welche Seiten das kleine Quadrat berühren.",
         "tasks": [
           {
-            "text": "Ein rechtwinkliges Dreieck hat die Seiten 3 cm, 4 cm und 5 cm. Die Hypotenuse ist ___ lang.",
+            "text": "Die Seiten mit 3 cm und 4 cm bilden den rechten Winkel. Die dritte Seite ist 5 cm lang. Die Katheten sind ___.",
             "choices": [
-              "5 cm",
-              "3 cm"
+              "3 cm und 4 cm",
+              "4 cm und 5 cm"
             ],
-            "correct": "5 cm",
-            "why": "Die Hypotenuse ist immer die längste Seite. Die beiden kürzeren sind die Katheten.",
-            "hint": "Welche der drei Seiten ist die längste?"
+            "correct": "3 cm und 4 cm",
+            "why": "Katheten sind die zwei Seiten, die den rechten Winkel bilden.",
+            "hint": "Welche zwei Seiten berühren die rechte Ecke?"
           }
         ],
         "figure": {
@@ -71,9 +71,36 @@
         }
       },
       {
+        "title": "Die Hypotenuse",
+        "body": "Die Seite **gegenüber** vom rechten Winkel heißt **Hypotenuse**.\n\nSie ist immer die längste Seite.\n\nIm Bild ist das $c$.",
+        "figure": {
+          "type": "rightTriangle",
+          "a": 4,
+          "b": 3,
+          "labels": {
+            "a": "Kathete a",
+            "b": "Kathete b",
+            "c": "Hypotenuse c"
+          }
+        },
+        "tasks": [
+          {
+            "text": "Ein rechtwinkliges Dreieck hat die Seiten 3 cm, 4 cm und 5 cm. Die Hypotenuse ist ___ lang.",
+            "choices": [
+              "5 cm",
+              "3 cm"
+            ],
+            "correct": "5 cm",
+            "why": "Die Hypotenuse ist immer die längste Seite. Die beiden kürzeren sind die Katheten.",
+            "hint": "Welche der drei Seiten ist die längste?"
+          }
+        ],
+        "say": "Die dritte Seite berührt den rechten Winkel nicht. Sie liegt ihm gegenüber und heißt Hypotenuse. Du erkennst sie auch daran, dass sie immer die längste der drei Seiten ist."
+      },
+      {
         "title": "Der Satz des Pythagoras",
-        "body": "$a^2 + b^2 = c^2$\n\nBeispiel: $a = 3$ und $b = 4$\n\n$9 + 16 = 25$, also $c^2 = 25$\n\n$c = 5$, denn $5 \\cdot 5 = 25$",
-        "say": "Der Satz sagt: Wenn du beide Katheten mit sich selbst malnimmst und die Ergebnisse zusammenzählst, bekommst du das Quadrat der Hypotenuse. Mit den Zahlen 3, 4 und 5 geht das ohne Rest auf. Deshalb kommen sie in Aufgaben so oft vor.",
+        "body": "Nimm jede Kathete mal sich selbst und zähl beides zusammen.\n\nDas ergibt die Hypotenuse mal sich selbst.\n\nKurz: $a^2 + b^2 = c^2$\n\nDas ist der **Satz des Pythagoras**.",
+        "say": "Der Satz sagt: Wenn du beide Katheten mit sich selbst malnimmst und die Ergebnisse zusammenzählst, bekommst du das Quadrat der Hypotenuse. Die Buchstaben a und b stehen für die Katheten, c für die Hypotenuse. Auf der nächsten Tafel siehst du das als Bild.",
         "tasks": [
           {
             "text": "$a = 6$ und $b = 8$. Dann ist $a^2 + b^2 = $ ___",
@@ -99,7 +126,7 @@
       },
       {
         "title": "Was heißt das als Bild?",
-        "body": "Ein Quadrat auf jeder Seite:\n\n$3^2 = 9$, $4^2 = 16$, $5^2 = 25$\n\n$9 + 16 = 25$ ✓",
+        "body": "Ein Quadrat auf jeder Seite:\n\n$3^2 = 9$, $4^2 = 16$, $5^2 = 25$\n\n$9 + 16 = 25$ ✓\n\nDie lange Seite ist also 5, denn $5 \\cdot 5 = 25$.",
         "say": "Stell dir auf jeder Seite des Dreiecks ein Quadrat vor. Die beiden kleinen Quadrate haben zusammen genau so viel Fläche wie das große. Mehr sagt der Satz nicht. Er vergleicht also Flächen und nicht die Seiten selbst.",
         "tasks": [
           {
@@ -126,7 +153,7 @@
       },
       {
         "title": "Hypotenuse berechnen",
-        "body": "$c = \\sqrt{a^2 + b^2}$\n\nBeispiel: $a = 6$ und $b = 8$\n\nQuadrieren: $36$ und $64$\n\nZusammenzählen: $36 + 64 = 100$\n\nWurzel ziehen: $c = \\sqrt{100} = 10$",
+        "body": "Beispiel: $a = 6$ und $b = 8$\n\nHoch 2 nehmen: $6^2 = 36$ und $8^2 = 64$\n\nZusammenzählen: $36 + 64 = 100$\n\nWurzel ziehen: $c = \\sqrt{100} = 10$\n\nAls Formel: $c = \\sqrt{a^2 + b^2}$",
         "say": "Du gehst immer in drei Schritten vor. Zuerst nimmst du beide Katheten hoch 2. Dann zählst du die beiden Ergebnisse zusammen. Zum Schluss ziehst du die Wurzel, denn du suchst die Seite und nicht ihr Quadrat.",
         "tasks": [
           {
@@ -153,7 +180,7 @@
       },
       {
         "title": "Kathete berechnen",
-        "body": "$b = \\sqrt{c^2 - a^2}$\n\nBeispiel: $c = 13$ und $a = 5$\n\nQuadrieren: $169$ und $25$\n\nAbziehen: $169 - 25 = 144$\n\nWurzel ziehen: $b = \\sqrt{144} = 12$",
+        "body": "Beispiel: $c = 13$ und $a = 5$\n\nHoch 2 nehmen: $13^2 = 169$ und $5^2 = 25$\n\nAbziehen: $169 - 25 = 144$\n\nWurzel ziehen: $b = \\sqrt{144} = 12$\n\nAls Formel: $b = \\sqrt{c^2 - a^2}$",
         "say": "Manchmal kennst du die Hypotenuse und suchst eine Kathete. Dann rechnest du rückwärts und ziehst ab. Vom Quadrat der Hypotenuse nimmst du das Quadrat der bekannten Kathete weg. Die Hypotenuse steht dabei immer vorn, weil sie die größte ist.",
         "tasks": [
           {
@@ -218,7 +245,7 @@
       {
         "chapter": "Sinus, Kosinus und Tangens",
         "title": "Gegenkathete und Ankathete",
-        "body": "Vom Winkel $\\alpha$ aus gesehen:\n\n**Gegenkathete**: liegt gegenüber\n\n**Ankathete**: liegt an $\\alpha$",
+        "body": "Jetzt kommt ein Winkel dazu: $\\alpha$\n\nDie Kathete **gegenüber** von $\\alpha$ heißt **Gegenkathete**.\n\nDie Kathete, die $\\alpha$ berührt, heißt **Ankathete**.",
         "figure": {
           "type": "rightTriangle",
           "a": 4,
@@ -245,9 +272,47 @@
         ]
       },
       {
-        "title": "sin, cos, tan sind Brüche",
-        "body": "$\\sin\\alpha = \\frac{\\text{Gegenkathete}}{\\text{Hypotenuse}}$\n\n$\\cos\\alpha = \\frac{\\text{Ankathete}}{\\text{Hypotenuse}}$\n\n$\\tan\\alpha = \\frac{\\text{Gegenkathete}}{\\text{Ankathete}}$\n\nMan liest: **Sinus**, **Kosinus**, **Tangens**.",
-        "say": "Hinter den drei Wörtern steckt jedes Mal ein Bruch aus zwei Seiten des Dreiecks. Der Winkel legt fest, wie groß dieser Bruch ist. Du musst die drei Zeilen nicht auswendig lernen, denn genau so stehen sie auf dem Formelblatt.",
+        "title": "Der Sinus ist ein Bruch",
+        "body": "$\\sin\\alpha = \\frac{\\text{Gegenkathete}}{\\text{Hypotenuse}}$\n\nMan liest: **Sinus** von alpha.\n\nDer Sinus ist ein Bruch aus zwei Seiten des Dreiecks.",
+        "say": "Hinter dem Wort Sinus steckt ein Bruch aus zwei Seiten. Oben steht die Gegenkathete, unten die Hypotenuse. Der Winkel legt fest, wie groß dieser Bruch ist. Du musst die Zeile nicht auswendig lernen, denn genau so steht sie auf dem Formelblatt.",
+        "tasks": [
+          {
+            "text": "Die Gegenkathete ist 3 cm lang, die Hypotenuse 6 cm. Dann ist $\\sin\\alpha = $ ___",
+            "choices": [
+              "$\\frac{3}{6}$",
+              "$\\frac{6}{3}$"
+            ],
+            "correct": "$\\frac{3}{6}$",
+            "why": "Beim Sinus steht die Gegenkathete oben und die Hypotenuse unten.",
+            "hint": "Welche der beiden Seiten steht beim Sinus oben im Bruch?"
+          }
+        ],
+        "figure": {
+          "type": "rightTriangle",
+          "a": 4,
+          "b": 3,
+          "labels": {
+            "a": "Gegenkathete",
+            "b": "Ankathete",
+            "c": "Hypotenuse",
+            "alpha": "α"
+          }
+        }
+      },
+      {
+        "title": "Der Kosinus",
+        "body": "$\\cos\\alpha = \\frac{\\text{Ankathete}}{\\text{Hypotenuse}}$\n\nMan liest: **Kosinus** von alpha.\n\nOben steht jetzt die Ankathete statt der Gegenkathete.",
+        "figure": {
+          "type": "rightTriangle",
+          "a": 4,
+          "b": 3,
+          "labels": {
+            "a": "Gegenkathete",
+            "b": "Ankathete",
+            "c": "Hypotenuse",
+            "alpha": "α"
+          }
+        },
         "tasks": [
           {
             "text": "Die Ankathete ist 3 cm lang, die Hypotenuse 5 cm. Dann ist $\\cos\\alpha = $ ___",
@@ -259,7 +324,36 @@
             "why": "Beim Kosinus steht die Ankathete oben und die Hypotenuse unten.",
             "hint": "Welche der beiden Seiten steht beim Kosinus oben im Bruch?"
           }
-        ]
+        ],
+        "say": "Der Kosinus ist der zweite Bruch. Unten steht wieder die Hypotenuse. Oben steht aber die andere Kathete, nämlich die, die den Winkel berührt."
+      },
+      {
+        "title": "Der Tangens",
+        "body": "$\\tan\\alpha = \\frac{\\text{Gegenkathete}}{\\text{Ankathete}}$\n\nMan liest: **Tangens** von alpha.\n\nHier kommt die Hypotenuse nicht vor.",
+        "figure": {
+          "type": "rightTriangle",
+          "a": 4,
+          "b": 3,
+          "labels": {
+            "a": "Gegenkathete",
+            "b": "Ankathete",
+            "c": "Hypotenuse",
+            "alpha": "α"
+          }
+        },
+        "tasks": [
+          {
+            "text": "Die Gegenkathete ist 2 cm lang, die Ankathete 5 cm. Dann ist $\\tan\\alpha = $ ___",
+            "choices": [
+              "$\\frac{2}{5}$",
+              "$\\frac{5}{2}$"
+            ],
+            "correct": "$\\frac{2}{5}$",
+            "why": "Beim Tangens steht die Gegenkathete oben und die Ankathete unten.",
+            "hint": "Welche der beiden Katheten steht beim Tangens oben im Bruch?"
+          }
+        ],
+        "say": "Der Tangens ist der dritte Bruch. Er braucht nur die beiden Katheten. Oben steht die Gegenkathete, unten die Ankathete. Du nimmst ihn, wenn in der Aufgabe die Hypotenuse gar nicht vorkommt."
       },
       {
         "title": "Was der Taschenrechner tut",
@@ -410,7 +504,35 @@
       },
       {
         "title": "Sinussatz: eine Seite berechnen",
-        "body": "$\\beta = 50°$, $b = 8$, $\\alpha = 30°$, gesucht ist $a$.\n\n$\\frac{a}{\\sin 30°} = \\frac{8}{\\sin 50°}$\n\nTaschenrechner: $\\sin 50° \\approx 0{,}766$\n\nRechte Seite: $8 : 0{,}766 \\approx 10{,}44$\n\nBeide Seiten mal $\\sin 30°$, also mal 0,5:\n\n$a \\approx 10{,}44 \\cdot 0{,}5 = 5{,}22$",
+        "body": "$\\beta = 50°$, $b = 8$, $\\alpha = 30°$, gesucht ist $a$.\n\nEinsetzen: $\\frac{a}{\\sin 30°} = \\frac{8}{\\sin 50°}$\n\nTaschenrechner: $\\sin 50° \\approx 0{,}766$\n\nRechte Seite: $8 : 0{,}766 \\approx 10{,}44$",
+        "figure": {
+          "type": "triangle",
+          "alpha": 30,
+          "beta": 50,
+          "labels": {
+            "a": "a = ?",
+            "b": "b = 8",
+            "alpha": "30°",
+            "beta": "50°"
+          }
+        },
+        "tasks": [
+          {
+            "text": "Nach dem Einsetzen steht rechts $\\frac{6}{0{,}5}$. Das ergibt ___.",
+            "choices": [
+              "12",
+              "3"
+            ],
+            "correct": "12",
+            "why": "6 geteilt durch 0,5 ergibt 12. Geteilt durch ein Halb ist dasselbe wie mal 2.",
+            "hint": "Wie oft passt ein Halbes in 6 hinein?"
+          }
+        ],
+        "say": "Du setzt zuerst alles ein, was du kennst. Auf der rechten Seite stehen dann nur noch Zahlen. Die rechnest du mit dem Taschenrechner aus. Wie es links weitergeht, zeigt die nächste Tafel."
+      },
+      {
+        "title": "Dann a allein stellen",
+        "body": "$\\frac{a}{\\sin 30°} \\approx 10{,}44$\n\n$\\sin 30° = 0{,}5$\n\nBeide Seiten mal 0,5:\n\n$a \\approx 10{,}44 \\cdot 0{,}5 = 5{,}22$",
         "figure": {
           "type": "triangle",
           "alpha": 30,
@@ -434,7 +556,7 @@
             "hint": "Wie wirst du das Geteilt durch 0,5 auf der linken Seite los?"
           }
         ],
-        "say": "Du setzt zuerst alles ein, was du kennst. Die rechte Seite kannst du dann ganz ausrechnen. Links steht a geteilt durch den Sinus von 30 Grad. Um a allein zu bekommen, nimmst du beide Seiten mit diesem Sinus mal. Das ist dieselbe Idee wie bei jeder Gleichung."
+        "say": "Links steht a geteilt durch den Sinus von 30 Grad. Um a allein zu bekommen, nimmst du beide Seiten mit diesem Sinus mal. Das ist dieselbe Idee wie bei jeder Gleichung: auf beiden Seiten dasselbe tun."
       },
       {
         "title": "Der Kosinussatz",
@@ -466,7 +588,35 @@
       },
       {
         "title": "Kosinussatz: Schritt für Schritt",
-        "body": "$b = 7$, $c = 4$, $\\alpha = 60°$\n\nVorn: $49 + 16 = 65$\n\nHinten zuerst: $2 \\cdot 7 \\cdot 4 = 56$\n\nDer Kosinus: $\\cos 60° = 0{,}5$\n\nZusammen: $56 \\cdot 0{,}5 = 28$\n\n$a^2 = 65 - 28 = 37$\n\n$a = \\sqrt{37} \\approx 6{,}08$",
+        "body": "$b = 7$, $c = 4$, $\\alpha = 60°$\n\nVorn: $7^2 + 4^2 = 49 + 16 = 65$\n\nHinten zuerst: $2 \\cdot 7 \\cdot 4 = 56$\n\nMal den Kosinus: $56 \\cdot \\cos 60° = 56 \\cdot 0{,}5 = 28$",
+        "figure": {
+          "type": "triangle",
+          "alpha": 60,
+          "beta": 85.3,
+          "labels": {
+            "a": "a = ?",
+            "b": "b = 7",
+            "c": "c = 4",
+            "alpha": "60°"
+          }
+        },
+        "tasks": [
+          {
+            "text": "$b = 3$ und $c = 5$. Der vordere Teil $b^2 + c^2$ ergibt ___.",
+            "choices": [
+              "34",
+              "16"
+            ],
+            "correct": "34",
+            "why": "3 mal 3 ist 9, und 5 mal 5 ist 25. Zusammen sind das 34.",
+            "hint": "Nimm erst jede Seite mal sich selbst. Zähl dann zusammen."
+          }
+        ],
+        "say": "Rechne die Formel in kleinen Stücken. Zuerst die beiden Quadrate vorn. Dann den hinteren Teil: zwei mal die eine Seite mal die andere, und das Ergebnis mal den Kosinus. Wie du beides zusammensetzt, zeigt die nächste Tafel."
+      },
+      {
+        "title": "Abziehen und Wurzel ziehen",
+        "body": "Vorn 65, hinten 28.\n\n$a^2 = 65 - 28 = 37$\n\nJetzt die Wurzel: $a = \\sqrt{37} \\approx 6{,}08$",
         "figure": {
           "type": "triangle",
           "alpha": 60,
@@ -490,7 +640,7 @@
             "hint": "Du hast erst a hoch 2. Welcher Schritt fehlt noch?"
           }
         ],
-        "say": "Rechne die Formel in kleinen Stücken. Zuerst die beiden Quadrate vorn. Dann den hinteren Teil: zwei mal die eine Seite mal die andere, und das Ergebnis mal den Kosinus. Danach ziehst du ab. Ganz am Ende kommt die Wurzel, denn bis dahin hast du erst a hoch 2."
+        "say": "Jetzt ziehst du den hinteren Teil vom vorderen ab. Damit hast du a hoch 2, aber noch nicht a. Ganz am Ende kommt deshalb die Wurzel. Diesen letzten Schritt vergessen viele."
       },
       {
         "title": "Das nimmst du mit",
@@ -514,53 +664,73 @@
     "vocab": [
       {
         "term": "rechter Winkel",
-        "plain": "Genau 90°. Das kleine Quadrat in der Ecke.",
-        "example": "$\\gamma = 90°$"
+        "plain": "Ein Winkel von genau 90°. Im Bild das kleine Quadrat in der Ecke.",
+        "example": "Die Ecke von einem Blatt Papier."
+      },
+      {
+        "term": "rechtwinklig",
+        "plain": "Mit einem rechten Winkel.",
+        "example": "Ein rechtwinkliges Dreieck hat eine Ecke mit 90°."
       },
       {
         "term": "Kathete",
-        "plain": "Eine der zwei Seiten am rechten Winkel.",
+        "plain": "Eine der zwei Seiten, die den rechten Winkel bilden.",
         "example": "$a$ und $b$"
       },
       {
         "term": "Hypotenuse",
-        "plain": "Die längste Seite, gegenüber vom rechten Winkel.",
+        "plain": "Die Seite gegenüber vom rechten Winkel. Immer die längste.",
         "example": "$c$"
       },
       {
+        "term": "Satz des Pythagoras",
+        "plain": "Kathete hoch 2 plus Kathete hoch 2 ergibt Hypotenuse hoch 2. Gilt nur mit rechtem Winkel.",
+        "example": "$3^2 + 4^2 = 5^2$"
+      },
+      {
         "term": "Gegenkathete",
-        "plain": "Die Kathete gegenüber vom Winkel.",
-        "example": "bei $\\alpha$: $a$"
+        "plain": "Die Kathete, die dem Winkel gegenüberliegt.",
+        "example": "bei $\\alpha$: die Seite $a$"
       },
       {
         "term": "Ankathete",
-        "plain": "Die Kathete am Winkel.",
-        "example": "bei $\\alpha$: $b$"
-      },
-      {
-        "term": "Satz des Pythagoras",
-        "plain": "Kathete² + Kathete² = Hypotenuse².",
-        "example": "$a^2 + b^2 = c^2$"
+        "plain": "Die Kathete, die den Winkel berührt.",
+        "example": "bei $\\alpha$: die Seite $b$"
       },
       {
         "term": "Sinus",
-        "plain": "Gegenkathete durch Hypotenuse.",
+        "plain": "Gegenkathete geteilt durch Hypotenuse. Kurz: sin.",
         "example": "$\\sin 30° = 0{,}5$"
       },
       {
         "term": "Kosinus",
-        "plain": "Ankathete durch Hypotenuse.",
+        "plain": "Ankathete geteilt durch Hypotenuse. Kurz: cos.",
         "example": "$\\cos 60° = 0{,}5$"
       },
       {
         "term": "Tangens",
-        "plain": "Gegenkathete durch Ankathete.",
+        "plain": "Gegenkathete geteilt durch Ankathete. Kurz: tan.",
+        "example": "$\\tan 45° = 1$"
+      },
+      {
+        "term": "sin",
+        "plain": "Die Abkürzung für Sinus. Die Taste sin hoch minus eins (SHIFT und sin) macht aus dem Bruch wieder den Winkel.",
+        "example": "$\\sin^{-1}(0{,}5) = 30°$"
+      },
+      {
+        "term": "cos",
+        "plain": "Die Abkürzung für Kosinus.",
+        "example": "$\\cos 60° = 0{,}5$"
+      },
+      {
+        "term": "tan",
+        "plain": "Die Abkürzung für Tangens.",
         "example": "$\\tan 45° = 1$"
       },
       {
         "term": "DEG",
-        "plain": "Taschenrechner-Modus für Grad.",
-        "example": "nicht RAD!"
+        "plain": "Die Einstellung am Taschenrechner für Grad. Sie muss im Display stehen, nicht RAD.",
+        "example": "DEG kommt von degree, Grad."
       },
       {
         "term": "Sinussatz",

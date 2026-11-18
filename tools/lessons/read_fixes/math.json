@@ -284,24 +284,6 @@
  },
  {
   "lesson": "P_MATH_PYTH_TRIG",
-  "why": "The value 0,766 for the sine of 50 degrees appeared without saying where it comes from.",
-  "ops": [
-   {
-    "op": "body",
-    "board": "Sinussatz: eine Seite berechnen",
-    "lines": [
-     "$\\beta = 50°$, $b = 8$, $\\alpha = 30°$, gesucht ist $a$.",
-     "$\\frac{a}{\\sin 30°} = \\frac{8}{\\sin 50°}$",
-     "Taschenrechner: $\\sin 50° \\approx 0{,}766$",
-     "Rechte Seite: $8 : 0{,}766 \\approx 10{,}44$",
-     "Beide Seiten mal $\\sin 30°$, also mal 0,5:",
-     "$a \\approx 10{,}44 \\cdot 0{,}5 = 5{,}22$"
-    ]
-   }
-  ]
- },
- {
-  "lesson": "P_MATH_PYTH_TRIG",
   "why": "Task only read off the board; it now applies the idea to side c.",
   "ops": [
    {
