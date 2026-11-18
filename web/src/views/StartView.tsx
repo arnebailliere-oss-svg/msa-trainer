@@ -109,6 +109,11 @@ export function StartView() {
         </Link>
       </p>
       <p className="mt-6 text-center text-xs text-ink-3">Alles bleibt auf diesem Gerät gespeichert. Kein Konto, keine Cloud.</p>
+      <p className="mt-3 text-center text-xs text-ink-3">
+        <Link to="/ueber" className="underline hover:text-ink">
+          Über diese App · Kontakt · Impressum
+        </Link>
+      </p>
     </div>
   );
 }

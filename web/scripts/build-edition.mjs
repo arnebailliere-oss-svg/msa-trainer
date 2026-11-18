@@ -17,7 +17,7 @@ const keep = SUBJECTS[edition];
 
 execFileSync(process.execPath, [join("node_modules", "vite", "bin", "vite.js"), "build", "--outDir", out, "--emptyOutDir"], {
   stdio: "inherit",
-  env: { ...process.env, VITE_EDITION: edition, VITE_SHELL: "app", BASE_PATH: "./" },
+  env: { ...process.env, VITE_EDITION: edition, VITE_SHELL: "app", BASE_PATH: "./", VITE_APP_VERSION: JSON.parse(readFileSync("package.json", "utf8")).version },
 });
 
 // Content: only this product's subjects are shipped.

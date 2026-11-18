@@ -2,7 +2,7 @@ import { useMemo, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useAccess } from "@/app/entitlement";
 import { useApp } from "@/app/state";
-import { freePrimerId, freeTopicId, topicOpen } from "@/core/access";
+import { FREE_PRIMERS, FREE_TOPICS, topicOpen } from "@/core/access";
 import { LEVEL_WINDOW, READY_PERCENT } from "@/core/constants";
 import { EDITION_SUBJECTS, SINGLE_SUBJECT } from "@/core/edition";
 import { LEVEL_LABEL } from "@/core/levels";
@@ -90,8 +90,6 @@ export function DashboardView() {
   const { r } = data;
   const planDone = r.doneToday >= r.goal;
   const locked = !access.has(subject);
-  const freeTopic = content.topicById(freeTopicId(content, subject) ?? "");
-  const freePrimer = content.primerById(freePrimerId(content, subject) ?? "");
 
   return (
     <div className={`subject-${subject} mx-auto max-w-5xl px-4 pb-16`}>
@@ -144,9 +142,7 @@ export function DashboardView() {
           <div className="text-sm">
             <div className="font-bold">🔓 Gratis-Version</div>
             <div className="text-ink-2">
-              Frei sind{freePrimer ? <> die Eulen-Lektion „{freePrimer.title}“</> : null}
-              {freePrimer && freeTopic ? " und" : ""}
-              {freeTopic ? <> das Thema „{freeTopic.name}“</> : null}. Alles andere hat ein 🔒.
+              Frei sind die ersten {FREE_PRIMERS} Eulen-Lektionen und die ersten {FREE_TOPICS} Themen zum Üben. Alles andere hat ein 🔒.
             </div>
           </div>
           <Button size="sm" variant="primary" onClick={() => nav("/freischalten")}>
@@ -187,6 +183,9 @@ export function DashboardView() {
         )}
         <Link to="/hilfe" className="inline-flex items-center gap-2 rounded-2xl bg-surface px-4 py-2 text-sm font-semibold text-ink-2 hover:bg-surface-2 hover:text-ink">
           ❓ So funktioniert's
+        </Link>
+        <Link to="/ueber" className="inline-flex items-center gap-2 rounded-2xl bg-surface px-4 py-2 text-sm font-semibold text-ink-2 hover:bg-surface-2 hover:text-ink">
+          ℹ️ Über · Kontakt
         </Link>
       </div>
 

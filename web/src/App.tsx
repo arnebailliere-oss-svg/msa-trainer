@@ -5,7 +5,9 @@ import { AppProvider, useApp } from "./app/state";
 import { primerOpen, sessionOpen, topicOpen } from "./core/access";
 import { IN_APP_SHELL } from "./core/edition";
 import type { Subject, TrainingMode } from "./core/types";
+import { BrandSplash } from "./ui/Brand";
 import { Spinner } from "./ui/primitives";
+import { AboutView } from "./views/AboutView";
 import { BuyView } from "./views/BuyView";
 import { DashboardView } from "./views/DashboardView";
 import { OverviewView } from "./views/OverviewView";
@@ -111,8 +113,17 @@ function RequireProfile({ children }: { children: ReactNode }) {
   return <>{children}</>;
 }
 
+/** How long the start screen of the apps stays at least, so the maker's name can be read. */
+const SPLASH_MS = 1800;
+
 function Shell() {
   const { content, contentError } = useApp();
+  const [splashDone, setSplashDone] = useState(!IN_APP_SHELL);
+  useEffect(() => {
+    if (!IN_APP_SHELL) return;
+    const t = setTimeout(() => setSplashDone(true), SPLASH_MS);
+    return () => clearTimeout(t);
+  }, []);
   if (contentError)
     return (
       <div className="mx-auto max-w-lg p-8 text-center">
@@ -120,6 +131,7 @@ function Shell() {
         <p className="mt-2 text-ink-2">{contentError}</p>
       </div>
     );
+  if (IN_APP_SHELL && (!content || !splashDone)) return <BrandSplash />;
   if (!content) return <Spinner label="Aufgaben werden geladen…" />;
   return (
     <>
@@ -195,6 +207,7 @@ function Shell() {
           <Route path="/preview/:id" element={IN_APP_SHELL ? <Navigate to="/" replace /> : <PreviewView />} />
           <Route path="/formeln" element={<FormulaView />} />
           <Route path="/hilfe" element={<HelpView />} />
+          <Route path="/ueber" element={<AboutView />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </main>

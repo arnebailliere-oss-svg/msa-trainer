@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { accessTo, freePrimerId, freeTopicId, fullAccess, primerOpen, sessionOpen, topicOpen } from "./access";
+import { accessTo, freePrimerIds, freeTopicIds, fullAccess, primerOpen, sessionOpen, topicOpen } from "./access";
 import { buildContentIndex } from "./contentIndex";
 import type { ContentPack, Primer, Question, Topic } from "./types";
 
@@ -11,30 +11,32 @@ const index = buildContentIndex({
   packId: "t",
   version: "1",
   title: "t",
-  topics: [topic("M_EMPTY", "MATH"), topic("M_A", "MATH"), topic("M_B", "MATH"), topic("D_A", "DE")],
-  questions: [question("q1", "M_A", "MATH"), question("q2", "M_B", "MATH"), question("q3", "D_A", "DE")],
+  topics: [topic("M_EMPTY", "MATH"), topic("M_A", "MATH"), topic("M_A2", "MATH"), topic("M_A3", "MATH"), topic("M_B", "MATH"), topic("D_A", "DE")],
+  questions: [question("q1", "M_A", "MATH"), question("q1b", "M_A2", "MATH"), question("q1c", "M_A3", "MATH"), question("q2", "M_B", "MATH"), question("q3", "D_A", "DE")],
   lessons: [],
-  primers: [primer("P_M1", "MATH"), primer("P_M2", "MATH"), primer("P_D1", "DE")],
+  primers: [primer("P_M1", "MATH"), primer("P_M1b", "MATH"), primer("P_M1c", "MATH"), primer("P_M2", "MATH"), primer("P_D1", "DE")],
   passages: [],
 } as ContentPack);
 
 describe("free taste and locks", () => {
   const none = accessTo([]);
 
-  it("the first lesson and the first topic with tasks of each subject are free", () => {
-    expect(freePrimerId(index, "MATH")).toBe("P_M1");
-    expect(freePrimerId(index, "DE")).toBe("P_D1");
-    expect(freeTopicId(index, "MATH")).toBe("M_A"); // M_EMPTY has no tasks
+  it("the first three lessons and the first three topics with tasks of each subject are free", () => {
+    expect(freePrimerIds(index, "MATH")).toEqual(["P_M1", "P_M1b", "P_M1c"]);
+    expect(freePrimerIds(index, "DE")).toEqual(["P_D1"]);
+    expect(freeTopicIds(index, "MATH")).toEqual(["M_A", "M_A2", "M_A3"]); // M_EMPTY has no tasks
   });
 
-  it("without a purchase only the free lesson opens", () => {
+  it("without a purchase only the free lessons open", () => {
     expect(primerOpen(none, index, "P_M1")).toBe(true);
+    expect(primerOpen(none, index, "P_M1c")).toBe(true);
     expect(primerOpen(none, index, "P_M2")).toBe(false);
     expect(primerOpen(none, index, "P_D1")).toBe(true);
   });
 
   it("without a purchase only the free topic opens, and only topic training on it", () => {
     expect(topicOpen(none, index, "M_A")).toBe(true);
+    expect(topicOpen(none, index, "M_A3")).toBe(true);
     expect(topicOpen(none, index, "M_B")).toBe(false);
     expect(sessionOpen(none, index, "MATH", "TOPIC", "M_A")).toBe(true);
     expect(sessionOpen(none, index, "MATH", "TOPIC", "M_B")).toBe(false);

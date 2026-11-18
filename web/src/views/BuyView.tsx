@@ -4,7 +4,7 @@ import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { PURCHASE_AVAILABLE, lockAgain, purchase, useAccess } from "@/app/entitlement";
 import { useApp } from "@/app/state";
-import { freePrimerId, freeTopicId } from "@/core/access";
+import { freePrimerIds, freeTopicIds } from "@/core/access";
 import { APP_NAME, EDITION_SUBJECTS, SINGLE_SUBJECT } from "@/core/edition";
 import { Button, SUBJECT_EMOJI, SUBJECT_LABEL } from "@/ui/primitives";
 
@@ -73,23 +73,26 @@ export function BuyView({ what }: { what?: string }) {
           <h2 className="mb-2 text-sm font-bold uppercase tracking-wider text-ink-3">Gratis ausprobieren</h2>
           <div className="grid gap-2">
             {EDITION_SUBJECTS.filter((s) => !access.has(s)).map((s) => {
-              const primer = content.primerById(freePrimerId(content, s) ?? "");
-              const topic = content.topicById(freeTopicId(content, s) ?? "");
               return (
                 <div key={s} className={`subject-${s} grid gap-2`}>
-                  {primer && (
-                    <Link to={`/eule/${primer.id}`} className="card-solid flex items-center gap-3 p-3.5">
+                  {freePrimerIds(content, s).map((id) => {
+                    const primer = content.primerById(id);
+                    return primer && (
+                    <Link key={id} to={`/eule/${primer.id}`} className="card-solid flex items-center gap-3 p-3.5">
                       <span className="text-2xl">🦉</span>
                       <span className="min-w-0 flex-1">
                         <span className="block font-semibold">{primer.title}</span>
                         <span className="block text-xs text-ink-3">
-                          {SUBJECT_EMOJI[s]} {SUBJECT_LABEL[s]} · erste Eulen-Lektion
+                          {SUBJECT_EMOJI[s]} {SUBJECT_LABEL[s]} · Eulen-Lektion
                         </span>
                       </span>
                     </Link>
-                  )}
-                  {topic && (
-                    <Link to={`/topic/${topic.id}`} className="card-solid flex items-center gap-3 p-3.5">
+                  );
+                  })}
+                  {freeTopicIds(content, s).map((id) => {
+                    const topic = content.topicById(id);
+                    return topic && (
+                    <Link key={id} to={`/topic/${topic.id}`} className="card-solid flex items-center gap-3 p-3.5">
                       <span className="text-2xl">✏️</span>
                       <span className="min-w-0 flex-1">
                         <span className="block font-semibold">{topic.name}</span>
@@ -98,7 +101,8 @@ export function BuyView({ what }: { what?: string }) {
                         </span>
                       </span>
                     </Link>
-                  )}
+                  );
+                  })}
                 </div>
               );
             })}

@@ -2,7 +2,7 @@
 import { Link, useNavigate } from "react-router-dom";
 import { useAccess } from "@/app/entitlement";
 import { useApp } from "@/app/state";
-import { primerOpen } from "@/core/access";
+import { FREE_PRIMERS, primerOpen } from "@/core/access";
 import { EDITION_SUBJECTS } from "@/core/edition";
 import { OWL_NAME, OwlAvatar, OwlBubble } from "@/ui/Owl";
 import { Button, PageTitle, SUBJECT_LABEL } from "@/ui/primitives";
@@ -32,7 +32,7 @@ export function PrimerIndexView() {
       </OwlBubble>
       {someLocked && (
         <div className="glass mb-4 flex flex-col gap-3 p-4 sm:flex-row sm:items-center sm:justify-between">
-          <div className="text-sm text-ink-2">🔓 Gratis-Version: Die erste Lektion jedes Fachs ist frei. Die anderen haben ein 🔒.</div>
+          <div className="text-sm text-ink-2">🔓 Gratis-Version: Die ersten {FREE_PRIMERS} Lektionen jedes Fachs sind frei. Die anderen haben ein 🔒.</div>
           <Button size="sm" variant="primary" onClick={() => nav("/freischalten")}>
             Alles freischalten
           </Button>
