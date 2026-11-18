@@ -1,6 +1,18 @@
 # MSA Trainer: implementation plan for Windows and Android
 
-Status: plan, 2026-11-18. Nothing in here is built yet.
+Status: plan, written 2026-11-18 in the morning.
+
+> **Note, 2026-11-18 evening: what changed after this plan was written.**
+> The plan below is kept as written. Where it differs from what was built, this note is right.
+>
+> - **Windows uses Electron, not Tauri.** Rust is not installed on the build PC and the owner chose Electron. The Windows app is about 360 MB unpacked (roughly 100 MB as an installer) instead of the 10 MB named below.
+> - **Order:** the plan says Windows first. The owner then started with Android. Both shells now exist as test builds.
+> - **Free part:** wider than proposed in section 2. Per subject the first three owl lessons and the first three topics with training are free, plus calculator, Formelblatt, help and progress.
+> - **Built so far:** G1 (edition switch), G2 (locks), G3 (free part and unlock screen, with a test unlock instead of a purchase), G4 (icons, splash, DCS start screen, about page), A1 (four Android apps from one project), W1 (Windows shell).
+> - **Not built:** purchase on either platform, signed release builds, installer, store listings.
+> - **App IDs confirmed by the owner:** `net.dcsanalytics.msatrainer.komplett`, `.mathe`, `.deutsch`, `.englisch`.
+>
+> Current state, paths and build commands: `E:\Dev\MSA_TRAINER_NOTES.md`.
 
 ## 1. What we sell
 
