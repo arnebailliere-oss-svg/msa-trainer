@@ -4,7 +4,7 @@ import { exportAll } from "@/app/db";
 import { useApp } from "@/app/state";
 import { LEVEL_LABEL } from "@/core/levels";
 import { ampelFor, levelFromMastery } from "@/core/mastery";
-import type { Subject } from "@/core/types";
+import { EDITION_SUBJECTS } from "@/core/edition";
 import { Ampel, Button, PageTitle, SUBJECT_LABEL } from "@/ui/primitives";
 
 /** Parent / self overview: every topic with numbers, plus backup export/import. */
@@ -59,7 +59,7 @@ export function OverviewView() {
       {/* On a phone there is no hover text, so the star is explained in words. */}
       <p className="mb-4 text-sm text-ink-2">⭐ bedeutet: Dieses Thema ist für die Prüfung besonders wichtig.</p>
 
-      {(["MATH", "DE", "EN"] as Subject[]).map((s) => {
+      {EDITION_SUBJECTS.map((s) => {
         const rows = content.practicableTopics(s).map((t) => ({ t, m: store.getMastery(profile.id, t.id) }));
         return (
           <section key={s} className="mb-8">

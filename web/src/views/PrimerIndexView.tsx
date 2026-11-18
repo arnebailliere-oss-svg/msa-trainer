@@ -1,7 +1,7 @@
 /** Ferdinands Leiter: all Eulen-Lektionen in order, from zero upwards. */
 import { Link, useNavigate } from "react-router-dom";
 import { useApp } from "@/app/state";
-import type { Subject } from "@/core/types";
+import { EDITION_SUBJECTS } from "@/core/edition";
 import { OWL_NAME, OwlAvatar, OwlBubble } from "@/ui/Owl";
 import { Button, PageTitle, SUBJECT_LABEL } from "@/ui/primitives";
 
@@ -9,7 +9,7 @@ export function PrimerIndexView() {
   const { content, profile, store } = useApp();
   const nav = useNavigate();
   if (!content || !profile || !store) return null;
-  const subjects: Subject[] = ["MATH", "DE", "EN"];
+  const subjects = EDITION_SUBJECTS;
   const done = new Set(store.primersDone(profile.id));
   const all = content.primers;
   const next = all.find((p) => !done.has(p.id));

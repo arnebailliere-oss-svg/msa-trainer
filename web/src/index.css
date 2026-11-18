@@ -488,3 +488,23 @@ textarea {
     min-height: 3rem;
   }
 }
+
+/* Inside the Android app the page is drawn under the status bar and the gesture bar.
+   In a normal browser these insets are 0, so nothing changes there. */
+body {
+  padding-top: env(safe-area-inset-top, 0px);
+}
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0 0 auto 0;
+  height: env(safe-area-inset-top, 0px);
+  background: var(--bg);
+  z-index: 60;
+}
+.sticky.top-0 {
+  top: env(safe-area-inset-top, 0px);
+}
+.fixed.bottom-0 {
+  padding-bottom: calc(0.75rem + env(safe-area-inset-bottom, 0px));
+}

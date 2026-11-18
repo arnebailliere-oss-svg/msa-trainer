@@ -9,7 +9,7 @@
  */
 
 import type { ReactNode } from "react";
-import type { Subject } from "@/core/types";
+import { EDITION_SUBJECTS, SINGLE_SUBJECT } from "@/core/edition";
 import { OwlAvatar, OWL_NAME } from "./Owl";
 import { Ampel, AMPEL_LABEL, Ring, SUBJECT_EMOJI, SUBJECT_LABEL } from "./primitives";
 
@@ -39,7 +39,7 @@ function Demo({ label, children }: { label?: string; children: ReactNode }) {
 }
 
 function SubjectTabs() {
-  const subjects: Subject[] = ["MATH", "DE", "EN"];
+  const subjects = EDITION_SUBJECTS;
   return (
     <div className="flex flex-wrap gap-2">
       {subjects.map((s, i) => (
@@ -177,12 +177,15 @@ function CalcTable() {
 
 /* ---------- the guide ------------------------------------------------------ */
 
-export const GUIDE: GuideSection[] = [
+/** "Mathe, Deutsch und Englisch", or just the one subject of a single-subject product. */
+const SUBJECT_WORDS = EDITION_SUBJECTS.map((s) => SUBJECT_LABEL[s]).join(", ").replace(/, ([^,]+)$/, " und $1");
+
+const ALL_SECTIONS: GuideSection[] = [
   {
     id: "willkommen",
     emoji: "👋",
     title: "Willkommen im MSA Trainer",
-    lead: "Hier übst du für den Mittleren Schulabschluss (MSA) — Mathe, Deutsch und Englisch. Du bekommst eine Aufgabe, tippst deine Antwort ein und siehst sofort, ob es stimmt, mit der Lösung Schritt für Schritt.",
+    lead: `Hier übst du für den Mittleren Schulabschluss (MSA) — ${SUBJECT_WORDS}. Du bekommst eine Aufgabe, tippst deine Antwort ein und siehst sofort, ob es stimmt, mit der Lösung Schritt für Schritt.`,
     more: (
       <>
         <p>
@@ -410,5 +413,7 @@ export const GUIDE: GuideSection[] = [
     ),
   },
 ];
+
+export const GUIDE: GuideSection[] = ALL_SECTIONS.filter((g) => !(SINGLE_SUBJECT && g.id === "faecher"));
 
 export const TOUR_STEPS = GUIDE.filter((s) => s.tour);

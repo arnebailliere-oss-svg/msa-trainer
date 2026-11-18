@@ -2,6 +2,7 @@ import { useMemo, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useApp } from "@/app/state";
 import { LEVEL_WINDOW, READY_PERCENT } from "@/core/constants";
+import { EDITION_SUBJECTS, SINGLE_SUBJECT } from "@/core/edition";
 import { LEVEL_LABEL } from "@/core/levels";
 import { ampelForLevel } from "@/core/mastery";
 import { readiness } from "@/core/readiness";
@@ -9,7 +10,9 @@ import type { AmpelState, Level, Subject, Topic } from "@/core/types";
 import { Ampel, AMPEL_LABEL, Button, Chip, Ring, SUBJECT_EMOJI, SUBJECT_LABEL } from "@/ui/primitives";
 import { WelcomeTour } from "@/ui/WelcomeTour";
 
-const SUBJECTS: Subject[] = ["MATH", "DE", "EN"];
+const SUBJECTS = EDITION_SUBJECTS;
+const firstSubject = SUBJECTS[0]!;
+const inEdition = (s: string | null): Subject => (SUBJECTS.includes(s as Subject) ? (s as Subject) : firstSubject);
 const SUBJECT_KEY = "msa:subject";
 
 function streakDays(dates: string[]): number {
@@ -46,9 +49,9 @@ export function DashboardView() {
   const nav = useNavigate();
   const [subject, setSubject] = useState<Subject>(() => {
     try {
-      return (localStorage.getItem(SUBJECT_KEY) as Subject) || "MATH";
+      return inEdition(localStorage.getItem(SUBJECT_KEY));
     } catch {
-      return "MATH";
+      return firstSubject;
     }
   });
   const pick = (s: Subject) => {
@@ -119,9 +122,9 @@ export function DashboardView() {
         </div>
       </div>
 
-      {/* Subject tabs */}
-      <div className="mt-6 mb-2 text-xs font-bold uppercase tracking-wider text-ink-3">Fach wählen</div>
-      <div className="flex gap-2 overflow-x-auto pb-1">
+      {/* Subject tabs: a one-subject product has nothing to choose */}
+      {!SINGLE_SUBJECT && <div className="mt-6 mb-2 text-xs font-bold uppercase tracking-wider text-ink-3">Fach wählen</div>}
+      <div className={SINGLE_SUBJECT ? "mt-6 hidden" : "flex gap-2 overflow-x-auto pb-1"}>
         {SUBJECTS.map((s) => (
           <button key={s} onClick={() => pick(s)} className={`subject-${s} flex shrink-0 items-center gap-2 rounded-2xl px-4 py-2.5 font-semibold transition-all ${subject === s ? "accent-gradient text-white shadow-lg" : "bg-surface text-ink-2 hover:bg-surface-2"}`} aria-pressed={subject === s}>
             <span>{SUBJECT_EMOJI[s]}</span>

@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useApp } from "@/app/state";
-import { Button, Card } from "@/ui/primitives";
+import { EDITION_SUBJECTS } from "@/core/edition";
+import { Button, Card, SUBJECT_LABEL } from "@/ui/primitives";
 
 const EMOJIS = ["🦊", "🐼", "🦄", "🐯", "🐸", "🦖", "🐙", "🦁", "🐨", "🚀", "⚡", "🎯", "🎧", "🛹", "🍕", "🌈"];
 
@@ -26,7 +27,7 @@ export function StartView() {
         <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl">
           MSA <span className="gradient-text">Trainer</span>
         </h1>
-        <p className="mt-2 text-ink-2">Mathe, Deutsch, Englisch — bis es sitzt.</p>
+        <p className="mt-2 text-ink-2">{EDITION_SUBJECTS.map((s) => SUBJECT_LABEL[s]).join(", ")} — bis es sitzt.</p>
       </div>
 
       {profiles.length > 0 && (

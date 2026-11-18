@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { registerSW } from "virtual:pwa-register";
 import App from "./App";
+import { APP_NAME, IN_APP_SHELL } from "./core/edition";
 import "./index.css";
 
 /** Screens where a surprise reload would throw the student out of their work. */
@@ -9,7 +10,10 @@ const busy = () => /^#\/(session|eule)\//.test(location.hash);
 
 // The service worker precaches lessons and questions. After a deploy the new worker activates in the
 // background; without this the old content stayed on screen until the next manual reload.
-registerSW({
+document.title = APP_NAME;
+
+// Inside the Windows and Android apps every file is local: no service worker there.
+if (!IN_APP_SHELL) registerSW({
   immediate: true,
   onNeedReload() {
     if (!busy()) {
