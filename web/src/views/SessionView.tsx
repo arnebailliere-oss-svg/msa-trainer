@@ -264,10 +264,10 @@ export function SessionView() {
               <div className="text-lg font-bold">{question.qtype === "WRITE" ? (result.isCorrect ? "Inhalt und Aufbau sitzen!" : "Da fehlt noch etwas.") : result.isCorrect ? "Richtig!" : "Leider nicht richtig."}</div>
               {!result.isCorrect && question.qtype !== "WRITE" && (
                 <div className="text-ink-2">
-                  Richtige Antwort: <strong className="text-ink whitespace-pre-line">{result.correctAnswerText}</strong>
+                  Richtige Antwort: <strong className="text-ink whitespace-pre-line">{result.correctAnswerText.includes("$") ? <MathText text={result.correctAnswerText} inline /> : result.correctAnswerText}</strong>
                 </div>
               )}
-              {result.hint && <div className="mt-1 text-sm text-ink-2">💬 {result.hint}</div>}
+              {result.hint && <div className="mt-1 text-sm text-ink-2">💬 {result.hint.includes("$") ? <MathText text={result.hint} inline /> : result.hint}</div>}
               {result.checks && <WriteChecklist checks={result.checks} />}
               <div className="mt-1 text-sm text-ink-3">
                 „{topic?.name}“: <strong className="text-ink">{LEVEL_LABEL[result.level]}</strong>
