@@ -79,9 +79,74 @@ migrate("primers/math_05_lgs.json", (p, h) => {
     }),
   );
 
+  // One new thing per board: the pair before its notation, System before linear, each way in three
+  // short boards, the two special cases apart and each with its picture.
+  h.body("Die Lösung ist ein Paar", "$x = 6$ und $y = 4$", "Probe in der ersten Zeile: $6 + 4 = 10$ ✓", "Probe in der zweiten Zeile: $6 - 4 = 2$ ✓", "Die zwei Zahlen zusammen heißen **Lösungspaar**.");
+  h.say("Die Lösung ist ein Paar", "Die Lösung besteht hier aus zwei Zahlen, die in beiden Zeilen gleichzeitig passen. Die Probe machst du deshalb zweimal, einmal für jede Zeile. Erst wenn beide stimmen, hast du die Lösung.");
+  h.tasks("Die Lösung ist ein Paar", k("Zu $x + y = 7$ und $x - y = 1$ passt das Paar ___.", "$x = 4$ und $y = 3$", ["$x = 5$ und $y = 2$"], "4 plus 3 ist 7, und 4 minus 3 ist 1. Beide Zeilen stimmen.", "Prüf bei jedem Paar auch die zweite Zeile mit dem Abziehen."));
+  h.after(
+    "Die Lösung ist ein Paar",
+    b("So schreibt man das Paar auf", ["Kurz schreibt man das Paar so: $(6\\,|\\,4)$", "Vorn steht immer $x$, hinten $y$.", "Ganz genau: $L = \\{(6\\,|\\,4)\\}$", "$L$ steht für **Lösungsmenge**: alle Lösungen zusammen."], "Für das Paar gibt es eine kurze Schreibweise, die du schon von Punkten kennst. In der runden Klammer steht zuerst das x und danach das y. Manchmal steht davor noch ein L mit geschweiften Klammern. Das bedeutet nur: Das sind alle Lösungen, und hier gibt es genau eine.", {
+      tasks: [k("Im Paar $(6\\,|\\,4)$ steht die 4 für ___.", "$y$", ["$x$"], "In der Klammer steht zuerst das x und danach das y.", "Welcher Buchstabe kommt in der Klammer an zweiter Stelle?")],
+    }),
+  );
+  h.body("Was heißt „System“?", "System heißt nur: mehrere Gleichungen, die **zusammengehören**.", "Zusammen nennt man sie ein **Gleichungssystem**.", "Man nummeriert die Zeilen: (I) und (II).");
+  h.after(
+    "Was heißt „System“?",
+    b("Was heißt „linear“?", ["**Linear** heißt: $x$ und $y$ haben keine Hochzahl.", "$x + y = 10$ ist linear.", "$x^2 + y = 10$ ist nicht linear.", "Lineares Gleichungssystem kürzt man ab: **LGS**."], "In Aufgaben steht oft lineares Gleichungssystem. Linear bedeutet nur, dass die Buchstaben ohne Hochzahl vorkommen. Andere Systeme kommen in deiner Prüfung nicht vor. Weil das Wort so lang ist, sagt man kurz LGS.", {
+      tasks: [k("Welche Gleichung ist linear? ___", "$2x + y = 5$", ["$x^2 + y = 5$"], "In dieser Gleichung hat kein Buchstabe eine Hochzahl.", "In welcher der beiden Gleichungen steht eine Hochzahl?")],
+    }),
+  );
+
+  h.body("Idee 1: Einsetzen", "(I) $y = 2x$", "(II) $x + y = 9$", "Zeile (I) sagt schon, was $y$ ist: $2x$", "Setz das in (II) für $y$ ein: $x + 2x = 9$");
+  h.say("Idee 1: Einsetzen", "Die erste Zeile sagt dir schon, was y ist, nämlich 2 mal x. Das steckst du in die zweite Zeile, genau an die Stelle vom y. Dann bleibt eine Zeile mit nur noch einem Buchstaben.");
+  h.after(
+    "Idee 1: Einsetzen",
+    b("Dann das x ausrechnen", ["$x + 2x = 9$", "Zusammenfassen: $3x = 9$", "Teilen durch 3: $x = 3$"], "Jetzt steht da eine Gleichung, wie du sie kennst. Es gibt nur noch das x. Du fasst zusammen und teilst dann durch die Zahl vor dem x. Damit kennst du die erste der beiden Zahlen.", {
+      tasks: [k("$x + 3x = 8$ zusammengefasst: ___", "$4x = 8$", ["$3x = 8$"], "Ein x und drei x sind zusammen vier x.", "Wie viele x sind es zusammen? Auch das einzelne x zählt.")],
+    }),
+    b("Zum Schluss das y", ["Du kennst jetzt $x = 3$.", "Setz es in (I) ein: $y = 2 \\cdot 3 = 6$", "Die Lösung ist das Paar $(3\\,|\\,6)$.", "Dieser Weg heißt **Einsetzungsverfahren**."], "Die zweite Zahl fehlt noch. Dafür nimmst du die Zeile, die mit y gleich beginnt, und setzt dein x ein. Dann hast du beide Zahlen, also das Lösungspaar. Dieser Weg hat einen langen Namen, aber du hast nur zweimal eingesetzt.", {
+      tasks: [k("(I) $y = 3x$ und $x = 2$. Dann ist $y = $ ___", "6", ["5"], "Zwischen 3 und x steht ein Malpunkt. 3 mal 2 ergibt 6.", "Setz die 2 für das x ein. Welches Zeichen steht unsichtbar zwischen 3 und x?")],
+    }),
+  );
+
+  h.body("Idee 2: Addieren", "(I) $x + y = 10$", "(II) $x - y = 2$", "Zähl die beiden Zeilen zusammen: links mit links, rechts mit rechts.", "Dabei soll ein Buchstabe verschwinden.");
+  h.say("Idee 2: Addieren", "Der zweite Weg benutzt einen Trick. Du zählst die beiden Zeilen zusammen, die linken Seiten für sich und die rechten Seiten für sich. Das darfst du, weil in jeder Zeile links und rechts gleich viel steht.");
+  h.tasks("Idee 2: Addieren", k("(I) $x + y = 9$, (II) $x - y = 3$. Die rechten Seiten ergeben zusammen ___.", "12", ["6"], "Rechts stehen 9 und 3. Zusammen sind das 12.", "Welche zwei Zahlen stehen rechts vom Gleichheitszeichen? Zähl sie zusammen."));
+  h.after(
+    "Idee 2: Addieren",
+    b("Das y hebt sich auf", ["Links: $x + x = 2x$", "$+y$ und $-y$ heben sich auf.", "Rechts: $10 + 2 = 12$", "Es bleibt: $2x = 12$"], "Schau, was links passiert. Aus x und x werden zwei x. Plus y und minus y treffen aufeinander und heben sich auf. Übrig bleibt eine Zeile nur mit x.", {
+      tasks: [k("(I) $x + y = 9$, (II) $x - y = 3$. Zusammengezählt ergibt das ___.", "$2x = 12$", ["$2y = 12$"], "Plus y und minus y heben sich auf. Links bleiben zwei x, rechts 9 plus 3.", "Welcher Buchstabe hebt sich auf, wenn plus und minus zusammentreffen?")],
+    }),
+    b("Dann x und y ausrechnen", ["$2x = 12$, also $x = 6$", "In (I) einsetzen: $6 + y = 10$", "Also $y = 4$.", "Dieser Weg heißt **Additionsverfahren**."], "Der Rest ist wie beim ersten Weg. Du teilst durch 2 und kennst das x. Dann setzt du es in eine der beiden Zeilen ein und findest das y. Addieren ist das Fachwort für zusammenzählen, daher der Name.", {
+      tasks: [k("Du weißt $x = 6$. In $x + y = 9$ eingesetzt ist $y = $ ___", "3", ["15"], "6 plus y ergibt 9. Dann muss y gleich 3 sein.", "Welche Zahl fehlt von 6 bis 9?")],
+    }),
+  );
+
+  h.body("Wenn nichts wegfällt", "(I) $x + 2y = 8$", "(II) $x + y = 5$", "Beim Zusammenzählen fällt hier nichts weg.", "Nimm darum die ganze Zeile (II) mal $-1$: $-x - y = -5$");
+  h.after(
+    "Wenn nichts wegfällt",
+    b("Jetzt fällt das x weg", ["(I) $x + 2y = 8$", "Neue Zeile: $-x - y = -5$", "Zusammengezählt: $y = 3$", "In (II): $x + 3 = 5$, also $x = 2$"], "Jetzt zählst du die erste Zeile und die neue Zeile zusammen. Das x und das minus x heben sich auf. Von zwei y wird ein y abgezogen, es bleibt ein y. Rechts steht 8 minus 5, also 3.", {
+      tasks: [k("$2y$ und $-y$ ergeben zusammen ___.", "$y$", ["$3y$"], "Von zwei y wird ein y abgezogen. Es bleibt ein y.", "Was bleibt von zwei Äpfeln, wenn du einen wegnimmst?")],
+    }),
+  );
+
+  h.rename("Keine oder unendlich viele", "Geraden, die sich nie treffen");
+  h.body("Geraden, die sich nie treffen", "Diese zwei Geraden laufen nebeneinander her.", "Sie treffen sich nie.", "Dann hat das System **keine** Lösung.");
+  h.say("Geraden, die sich nie treffen", "In der Prüfung wird gern gefragt, wie viele Lösungen ein System hat. Denk dann an die zwei Linien. Laufen sie nebeneinander her wie zwei Schienen, treffen sie sich nie. Dann gibt es keinen Punkt, der zu beiden Zeilen passt.");
+  h.board("Geraden, die sich nie treffen").figure = { type: "coordinateSystem", xmin: -1, xmax: 7, ymin: -3, ymax: 9, width: 300, height: 300, lines: [{ m: 1, n: 2, label: "y = x + 2" }, { m: 1, n: -2, label: "y = x − 2" }] };
+  h.after(
+    "Geraden, die sich nie treffen",
+    b("Dieselbe Gerade zweimal", ["(I) $x + y = 4$", "(II) $2x + 2y = 8$", "Zeile (II) ist nur Zeile (I) mal 2. Es ist dieselbe Gerade.", "Jeder Punkt darauf passt: **unendlich viele** Lösungen."], "Manchmal sehen zwei Zeilen verschieden aus und sagen doch dasselbe. Dann liegen die beiden Linien genau aufeinander. Jeder Punkt der Geraden passt zu beiden Zeilen, und davon gibt es unendlich viele.", {
+      figure: { type: "coordinateSystem", xmin: -1, xmax: 6, ymin: -1, ymax: 6, width: 300, height: 300, lines: [{ m: -1, n: 4, label: "x + y = 4" }] },
+      tasks: [k("Zwei Zeilen ergeben genau dieselbe Gerade. Das System hat ___.", "unendlich viele Lösungen", ["keine Lösung"], "Jeder Punkt der Geraden passt zu beiden Zeilen. Davon gibt es unendlich viele.", "Wie viele gemeinsame Punkte haben zwei Linien, die genau aufeinanderliegen?")],
+    }),
+  );
+
   h.chapters([
     ["Ein Rätsel mit zwei Zahlen", "Zwei Gleichungen, ein Paar"],
     ["Idee 1: Einsetzen", "Zwei Wege zur Lösung"],
+    ["Das Bild dazu", "Das Bild und besondere Fälle"],
   ]);
   h.renameVocab({ "Gleichungssystem (LGS)": "Gleichungssystem" });
   h.explain([
@@ -93,5 +158,23 @@ migrate("primers/math_05_lgs.json", (p, h) => {
   h.quiz(
     q("(I) $x + y = 12$, (II) $x - y = 4$. Was ergibt das Zusammenzählen beider Zeilen?", "$2x = 16$", ["$2y = 16$", "$2x = 8$", "$x = 16$"], "Plus y und minus y heben sich auf. Links bleiben zwei x stehen, rechts 12 plus 4, also 16."),
     q("Wann ist ein Zahlenpaar die Lösung eines Gleichungssystems?", "Wenn es in beide Gleichungen passt", ["Wenn es in eine Gleichung passt", "Wenn beide Zahlen gleich sind", "Wenn beide Zahlen positiv sind"], "Ein Paar ist nur dann die Lösung, wenn die Probe in der ersten und in der zweiten Zeile stimmt."),
+  );
+
+  // Word card: every word, sign and letter of this lesson.
+  h.vocab(
+    { term: "x", plain: "Die erste gesuchte Zahl.", example: "$x = 6$" },
+    { term: "y", plain: "Die zweite gesuchte Zahl.", example: "$y = 4$" },
+    { term: "Unbekannte", plain: "Eine Zahl, die gesucht wird.", example: "$x$ und $y$" },
+    { term: "Lösungspaar", plain: "Zwei Zahlen, die in beide Gleichungen passen. Vorn steht x, hinten y.", example: "$(6\\,|\\,4)$" },
+    { term: "Lösungsmenge", plain: "Alle Lösungen zusammen, in geschweiften Klammern.", example: "$L = \\{(6\\,|\\,4)\\}$" },
+    { term: "L", plain: "Der Buchstabe für die Lösungsmenge.", example: "$L = \\{(6\\,|\\,4)\\}$" },
+    { term: "Gleichungssystem", plain: "Mehrere Gleichungen, die zusammengehören.", example: "(I) $x + y = 10$ und (II) $x - y = 2$" },
+    { term: "(I)", plain: "Der Name der ersten Zeile. (II) ist der Name der zweiten Zeile.", example: "(I) $x + y = 10$" },
+    { term: "Linear", plain: "Die Buchstaben haben keine Hochzahl.", example: "$x + y = 10$" },
+    { term: "LGS", plain: "Die Abkürzung für lineares Gleichungssystem.", example: "(I) und (II) zusammen" },
+    { term: "Einsetzungsverfahren", plain: "Eine Zeile sagt, was y ist. Das steckst du in die andere Zeile.", example: "$y = 2x$ in $x + y = 9$ ergibt $x + 2x = 9$." },
+    { term: "Additionsverfahren", plain: "Beide Zeilen zusammenzählen, sodass ein Buchstabe verschwindet.", example: "$+y$ und $-y$ heben sich auf." },
+    { term: "Gerade", plain: "Eine gerade Linie. Jede Gleichung lässt sich als Gerade zeichnen.", example: "$x + y = 10$" },
+    { term: "Schnittpunkt", plain: "Der Punkt, in dem sich die beiden Geraden treffen. Er ist die Lösung.", example: "$(6\\,|\\,4)$" },
   );
 });

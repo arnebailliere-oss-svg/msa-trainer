@@ -31,9 +31,9 @@
         ]
       },
       {
-        "title": "Basis und Hochzahl",
-        "body": "$2^5$\n\nDie 2 unten heißt **Basis**. Sie wird malgenommen.\n\nDie 5 oben heißt Hochzahl oder **Exponent**. Sie sagt, wie oft.",
-        "say": "Basis heißt Grundlage. Sie steht unten, die Hochzahl steht oben.",
+        "title": "Die Zahl unten",
+        "body": "$2^5$\n\nDie 2 unten heißt **Basis**.\n\nSie ist die Zahl, die malgenommen wird.",
+        "say": "Eine Potenz besteht aus zwei Zahlen. Fang unten an. Die große Zahl unten heißt Basis. Basis bedeutet Grundlage: Das ist die Zahl, die immer wieder malgenommen wird.",
         "tasks": [
           {
             "text": "Bei $7^2$ ist die 7 die ___.",
@@ -46,6 +46,23 @@
             "hint": "Steht die 7 unten oder oben? Welcher Name gehört zu dieser Stelle?"
           }
         ]
+      },
+      {
+        "title": "Die Zahl oben",
+        "body": "$2^5$\n\nDie kleine 5 oben heißt **Hochzahl**.\n\nSie sagt, wie oft die Basis dasteht.\n\nDas Fachwort für Hochzahl ist **Exponent**.",
+        "tasks": [
+          {
+            "text": "Bei $7^2$ ist die 2 ___.",
+            "choices": [
+              "die Hochzahl",
+              "die Basis"
+            ],
+            "correct": "die Hochzahl",
+            "why": "Die kleine Zahl oben ist die Hochzahl. Sie sagt, wie oft die 7 dasteht.",
+            "hint": "Steht die 2 unten oder oben? Welcher Name gehört zu dieser Stelle?"
+          }
+        ],
+        "say": "Die kleine Zahl oben kennst du schon als Hochzahl. Sie zählt, wie oft die Basis dasteht. In Büchern und Aufgaben steht dafür oft das Fachwort Exponent. Beide Wörter bedeuten genau dasselbe."
       },
       {
         "title": "Nicht verwechseln",
@@ -66,8 +83,8 @@
       },
       {
         "title": "Hoch 2 und hoch 3",
-        "body": "$4^2 = 16$: das Quadrat von 4\n\n$4^3 = 64$: 4 Kubik\n\nZahlen wie 16, 25 und 36 heißen **Quadratzahlen**.",
-        "say": "1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196, 225. Lies sie dir ein paarmal durch.",
+        "body": "$4^2 = 16$. Dafür sagt man auch: **4 Quadrat**.\n\n$4^3 = 64$. Dafür sagt man auch: **4 Kubik**.",
+        "say": "Für hoch 2 und hoch 3 gibt es eigene Wörter, weil sie so oft vorkommen. Hoch 2 heißt Quadrat, das kennst du schon. Hoch 3 heißt Kubik. Das begegnet dir später wieder, wenn es um den Rauminhalt geht.",
         "tasks": [
           {
             "text": "$5^2 = $ ___",
@@ -82,20 +99,37 @@
         ]
       },
       {
+        "title": "Quadratzahlen",
+        "body": "$1^2 = 1 \\qquad 2^2 = 4 \\qquad 3^2 = 9 \\qquad 4^2 = 16$\n\nDie Ergebnisse 1, 4, 9 und 16 heißen **Quadratzahlen**.\n\nEs lohnt sich, sie bis $15^2 = 225$ zu kennen.",
+        "tasks": [
+          {
+            "text": "Welche Zahl ist eine Quadratzahl? ___",
+            "choices": [
+              "49",
+              "48"
+            ],
+            "correct": "49",
+            "why": "7 mal 7 ergibt 49. Für 48 gibt es keine solche ganze Zahl.",
+            "hint": "Welche der beiden Zahlen entsteht, wenn du eine Zahl mit sich selbst malnimmst?"
+          }
+        ],
+        "say": "1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196, 225. Das sind die Quadratzahlen bis 15 mal 15. Lies sie dir ein paarmal durch. Du brauchst sie später bei den Wurzeln."
+      },
+      {
         "chapter": "Besondere Hochzahlen",
         "title": "Hoch 1 und hoch 0",
-        "body": "$7^1 = 7$\n\n$7^0 = 1$\n\nJede Zahl hoch 0 ist **1**.",
+        "body": "$7^1 = 7$: Die 7 steht einmal da.\n\n$7^0 = 1$\n\nJede Zahl hoch 0 ist **1**.",
         "say": "Hoch 1 ist leicht: Die Zahl steht einmal da. Hoch 0 überrascht die meisten, denn es kommt immer 1 heraus und nicht 0. Das ist keine Regel, die jemand einfach festgelegt hat. Warum es so sein muss, siehst du auf der nächsten Tafel.",
         "tasks": [
           {
-            "text": "$9^0 = $ ___",
+            "text": "$5^1 = $ ___",
             "choices": [
-              "1",
-              "0"
+              "5",
+              "1"
             ],
-            "correct": "1",
-            "why": "Jede Zahl hoch 0 ergibt 1.",
-            "hint": "Was steht auf der Tafel in der letzten Zeile?"
+            "correct": "5",
+            "why": "Hoch 1 heißt: Die Zahl steht genau einmal da.",
+            "hint": "Wie oft steht die 5 da, wenn die Hochzahl 1 ist?"
           }
         ]
       },
@@ -135,25 +169,42 @@
       },
       {
         "title": "Negative Hochzahl = Bruch",
-        "body": "$2^{-1} = \\frac{1}{2}$\n\n$2^{-3} = \\frac{1}{2^3} = \\frac{1}{8}$\n\n$10^{-2} = \\frac{1}{100} = 0{,}01$",
+        "body": "Die Reihe geht weiter: $2^1 = 2$, dann $2^0 = 1$\n\nNoch einmal durch 2: $2^{-1} = \\frac{1}{2}$\n\nNoch einmal durch 2: $2^{-2} = \\frac{1}{4}$\n\nMinus in der Hochzahl heißt: 1 geteilt durch die Potenz.",
         "say": "Die Reihe von eben geht einfach weiter. Nach der 1 kommt ein Halbes, dann ein Viertel, dann ein Achtel. Ein Minus in der Hochzahl bedeutet also eins geteilt durch die Potenz. Die Zahl wird dadurch nicht negativ. Sie wird nur sehr klein.",
         "tasks": [
           {
-            "text": "$2^{-2} = $ ___",
+            "text": "$2^{-3} = $ ___",
             "choices": [
-              "$\\frac{1}{4}$",
-              "$-4$"
+              "$\\frac{1}{8}$",
+              "$-8$"
             ],
-            "correct": "$\\frac{1}{4}$",
-            "why": "Eins geteilt durch 2 hoch 2, also eins geteilt durch 4.",
+            "correct": "$\\frac{1}{8}$",
+            "why": "Eins geteilt durch 2 hoch 3, also eins geteilt durch 8.",
             "hint": "Macht das Minus in der Hochzahl die Zahl negativ oder klein?"
           }
         ]
       },
       {
+        "title": "Kleine Zehnerpotenzen",
+        "body": "$10^{-1} = \\frac{1}{10} = 0{,}1$\n\n$10^{-2} = \\frac{1}{100} = 0{,}01$\n\nDie Zahl hinter dem Minus zählt die Stellen hinter dem Komma.",
+        "tasks": [
+          {
+            "text": "$10^{-3} = $ ___",
+            "choices": [
+              "0,001",
+              "$-1000$"
+            ],
+            "correct": "0,001",
+            "why": "Eins geteilt durch 1000. Das sind drei Stellen hinter dem Komma.",
+            "hint": "Wie viele Stellen hinter dem Komma sagt die Hochzahl an?"
+          }
+        ],
+        "say": "Bei der Zehn ist das besonders praktisch. Zehn hoch minus eins ist ein Zehntel, zehn hoch minus zwei ist ein Hundertstel. So schreibt man sehr kleine Zahlen kurz auf, zum Beispiel die Größe von Bakterien."
+      },
+      {
         "chapter": "Rechnen mit Potenzen",
         "title": "Mal bei gleicher Basis",
-        "body": "$2^3 \\cdot 2^2$\n\nAusgeschrieben: $2 \\cdot 2 \\cdot 2 \\cdot 2 \\cdot 2$\n\nDas sind fünf Zweier: $2^5$\n\nHochzahlen **addieren**: $3 + 2 = 5$",
+        "body": "$2^3 \\cdot 2^2$\n\nAusgeschrieben: $2 \\cdot 2 \\cdot 2 \\cdot 2 \\cdot 2$\n\nDas sind fünf Zweier: $2^5$\n\nDie Hochzahlen werden **zusammengezählt**: $3 + 2 = 5$",
         "say": "Drei Zweier mal zwei Zweier sind fünf Zweier. Darum plus.",
         "tasks": [
           {
@@ -170,7 +221,7 @@
       },
       {
         "title": "Geteilt bei gleicher Basis",
-        "body": "$\\frac{2^5}{2^2}$\n\nAusgeschrieben: $\\frac{2 \\cdot 2 \\cdot 2 \\cdot 2 \\cdot 2}{2 \\cdot 2}$\n\nZwei Zweier kürzen sich weg, drei bleiben: $2^3$\n\nHochzahlen **subtrahieren**: $5 - 2 = 3$",
+        "body": "$\\frac{2^5}{2^2}$\n\nAusgeschrieben: $\\frac{2 \\cdot 2 \\cdot 2 \\cdot 2 \\cdot 2}{2 \\cdot 2}$\n\nZwei Zweier kürzen sich weg, drei bleiben: $2^3$\n\nDie Hochzahlen werden **abgezogen**: $5 - 2 = 3$",
         "say": "Fünf Zweier, zwei kürzen sich weg, drei bleiben.",
         "tasks": [
           {
@@ -293,7 +344,7 @@
       },
       {
         "title": "Wurzel aus keiner Quadratzahl",
-        "body": "$\\sqrt{10} \\approx 3{,}16$\n\nTaschenrechner. Und dann ≈, weil gerundet.",
+        "body": "10 ist keine Quadratzahl.\n\nDer Taschenrechner zeigt für $\\sqrt{10}$: 3,1622…\n\nDu rundest: $\\sqrt{10} \\approx 3{,}16$",
         "say": "Die meisten Wurzeln sind krumme Zahlen. Kein Problem, dafür gibt es die Wurzel-Taste.",
         "tasks": [
           {
@@ -366,7 +417,7 @@
       },
       {
         "title": "Wurzel als Hochzahl",
-        "body": "$9^{\\frac{1}{2}}$ ist dasselbe wie $\\sqrt{9}$, also 3.\n\nHoch ein Halb ist nur eine andere Schreibweise für die Wurzel.\n\n$8^{\\frac{1}{3}}$ ist dasselbe wie $\\sqrt[3]{8}$, also 2.\n\nHoch ein Drittel ist die dritte Wurzel.",
+        "body": "$9^{\\frac{1}{2}}$ ist dasselbe wie $\\sqrt{9}$, also 3.\n\nHoch ein Halb ist nur eine andere Schreibweise für die Wurzel.",
         "tasks": [
           {
             "text": "$16^{\\frac{1}{2}} = $ ___",
@@ -379,7 +430,24 @@
             "hint": "Bedeutet hoch ein Halb die Hälfte oder die Wurzel?"
           }
         ],
-        "say": "Auf dem Formelblatt steht die Wurzel manchmal als Bruch in der Hochzahl. Das sieht ungewohnt aus, bedeutet aber nichts Neues. Ein Halb in der Hochzahl heißt Wurzel, ein Drittel heißt dritte Wurzel. Der Nenner des Bruchs sagt dir, welche Wurzel gemeint ist."
+        "say": "Auf dem Formelblatt steht die Wurzel manchmal als Bruch in der Hochzahl. Das sieht ungewohnt aus, bedeutet aber nichts Neues. Ein Halb in der Hochzahl heißt einfach Wurzel."
+      },
+      {
+        "title": "Hoch ein Drittel",
+        "body": "$8^{\\frac{1}{3}}$ ist dasselbe wie $\\sqrt[3]{8}$, also 2.\n\nHoch ein Drittel ist die dritte Wurzel.\n\nDer Nenner sagt, welche Wurzel gemeint ist.",
+        "tasks": [
+          {
+            "text": "$27^{\\frac{1}{3}} = $ ___",
+            "choices": [
+              "3",
+              "9"
+            ],
+            "correct": "3",
+            "why": "Hoch ein Drittel ist die dritte Wurzel. 3 mal 3 mal 3 ergibt 27.",
+            "hint": "Welche Zahl ergibt dreimal mit sich selbst malgenommen 27?"
+          }
+        ],
+        "say": "Mit dem Drittel geht es genauso. Ein Drittel in der Hochzahl heißt dritte Wurzel. Der Nenner des Bruchs sagt dir also immer, welche Wurzel gemeint ist: die 2 die normale, die 3 die dritte."
       },
       {
         "title": "Das nimmst du mit",
@@ -402,38 +470,63 @@
     "vocab": [
       {
         "term": "Potenz",
-        "plain": "Eine Zahl mehrmals mit sich selbst mal genommen.",
-        "example": "$2^5 = 32$"
+        "plain": "Eine kurze Schreibweise dafür, dass eine Zahl mehrmals mit sich selbst malgenommen wird.",
+        "example": "$2^5 = 2 \\cdot 2 \\cdot 2 \\cdot 2 \\cdot 2 = 32$"
       },
       {
         "term": "Basis",
-        "plain": "Die Zahl unten, die multipliziert wird.",
+        "plain": "Die große Zahl unten. Sie wird malgenommen.",
         "example": "Bei $2^5$ ist 2 die Basis."
       },
       {
-        "term": "Hochzahl (Exponent)",
-        "plain": "Die Zahl oben. Sagt, wie oft.",
+        "term": "Hochzahl",
+        "plain": "Die kleine Zahl oben. Sie sagt, wie oft die Basis dasteht.",
         "example": "Bei $2^5$ ist 5 die Hochzahl."
       },
       {
+        "term": "Exponent",
+        "plain": "Das Fachwort für Hochzahl.",
+        "example": "Bei $2^5$ ist 5 der Exponent."
+      },
+      {
+        "term": "Quadrat",
+        "plain": "Hoch 2.",
+        "example": "$4^2 = 16$, gelesen: 4 Quadrat"
+      },
+      {
+        "term": "Kubik",
+        "plain": "Hoch 3.",
+        "example": "$4^3 = 64$, gelesen: 4 Kubik"
+      },
+      {
         "term": "Quadratzahl",
-        "plain": "Eine Zahl hoch 2.",
-        "example": "$7^2 = 49$"
+        "plain": "Das Ergebnis, wenn du eine ganze Zahl mit sich selbst malnimmst.",
+        "example": "$7^2 = 49$. Die 49 ist eine Quadratzahl."
       },
       {
         "term": "Zehnerpotenz",
-        "plain": "10 hoch etwas. Die Hochzahl zählt die Nullen.",
+        "plain": "10 hoch eine Zahl. Die Hochzahl zählt die Nullen.",
         "example": "$10^4 = 10\\,000$"
       },
       {
+        "term": "Negative Hochzahl",
+        "plain": "Ein Minus in der Hochzahl heißt: 1 geteilt durch die Potenz. Die Zahl wird klein, nicht negativ.",
+        "example": "$2^{-3} = \\frac{1}{8}$"
+      },
+      {
         "term": "Wurzel",
-        "plain": "Die Rückfrage zum Quadrieren.",
+        "plain": "Die Rückfrage zum Quadrat: Welche Zahl mal sich selbst ergibt das?",
         "example": "$\\sqrt{49} = 7$"
       },
       {
         "term": "Radikand",
-        "plain": "Die Zahl unter der Wurzel.",
+        "plain": "Die Zahl unter dem Wurzelzeichen.",
         "example": "Bei $\\sqrt{49}$ ist 49 der Radikand."
+      },
+      {
+        "term": "Dritte Wurzel",
+        "plain": "Die Rückfrage zu hoch 3: Welche Zahl dreimal mit sich selbst mal ergibt das?",
+        "example": "$\\sqrt[3]{8} = 2$"
       }
     ],
     "quiz": [

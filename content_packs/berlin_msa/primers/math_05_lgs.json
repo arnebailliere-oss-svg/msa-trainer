@@ -51,8 +51,24 @@
       },
       {
         "title": "Die Lösung ist ein Paar",
-        "body": "$x = 6$ und $y = 4$\n\nProbe: $6 + 4 = 10$ ✓ und $6 - 4 = 2$ ✓\n\nDie zwei Zahlen zusammen heißen **Lösungspaar**.\n\nMan schreibt: $L = \\{(6\\,|\\,4)\\}$\n\nDer Buchstabe $L$ steht für **Lösungsmenge**.\n\nDie geschweiften Klammern außen heißen: Das sind alle Lösungen. Hier gibt es genau ein Paar.",
-        "say": "Die Lösung besteht hier aus zwei Zahlen, die in beiden Zeilen gleichzeitig passen. In der Klammer steht immer zuerst das x und danach das y. Die Probe machst du deshalb zweimal, einmal für jede Zeile.",
+        "body": "$x = 6$ und $y = 4$\n\nProbe in der ersten Zeile: $6 + 4 = 10$ ✓\n\nProbe in der zweiten Zeile: $6 - 4 = 2$ ✓\n\nDie zwei Zahlen zusammen heißen **Lösungspaar**.",
+        "say": "Die Lösung besteht hier aus zwei Zahlen, die in beiden Zeilen gleichzeitig passen. Die Probe machst du deshalb zweimal, einmal für jede Zeile. Erst wenn beide stimmen, hast du die Lösung.",
+        "tasks": [
+          {
+            "text": "Zu $x + y = 7$ und $x - y = 1$ passt das Paar ___.",
+            "choices": [
+              "$x = 4$ und $y = 3$",
+              "$x = 5$ und $y = 2$"
+            ],
+            "correct": "$x = 4$ und $y = 3$",
+            "why": "4 plus 3 ist 7, und 4 minus 3 ist 1. Beide Zeilen stimmen.",
+            "hint": "Prüf bei jedem Paar auch die zweite Zeile mit dem Abziehen."
+          }
+        ]
+      },
+      {
+        "title": "So schreibt man das Paar auf",
+        "body": "Kurz schreibt man das Paar so: $(6\\,|\\,4)$\n\nVorn steht immer $x$, hinten $y$.\n\nGanz genau: $L = \\{(6\\,|\\,4)\\}$\n\n$L$ steht für **Lösungsmenge**: alle Lösungen zusammen.",
         "tasks": [
           {
             "text": "Im Paar $(6\\,|\\,4)$ steht die 4 für ___.",
@@ -64,11 +80,12 @@
             "why": "In der Klammer steht zuerst das x und danach das y.",
             "hint": "Welcher Buchstabe kommt in der Klammer an zweiter Stelle?"
           }
-        ]
+        ],
+        "say": "Für das Paar gibt es eine kurze Schreibweise, die du schon von Punkten kennst. In der runden Klammer steht zuerst das x und danach das y. Manchmal steht davor noch ein L mit geschweiften Klammern. Das bedeutet nur: Das sind alle Lösungen, und hier gibt es genau eine."
       },
       {
         "title": "Was heißt „System“?",
-        "body": "System heißt nur: **mehrere Gleichungen, die zusammengehören**.\n\nZusammen nennt man sie ein lineares **Gleichungssystem**, kurz LGS.\n\nLinear heißt hier: $x$ und $y$ haben keine Hochzahl.\n\nMan nummeriert sie: (I) und (II).",
+        "body": "System heißt nur: mehrere Gleichungen, die **zusammengehören**.\n\nZusammen nennt man sie ein **Gleichungssystem**.\n\nMan nummeriert die Zeilen: (I) und (II).",
         "say": "Das Wort klingt groß, aber es bedeutet nur, dass die Zeilen zusammengehören. Die römischen Zahlen I und II sind einfach Namen für die erste und die zweite Zeile. So kannst du später kurz sagen, mit welcher Zeile du gerade rechnest.",
         "tasks": [
           {
@@ -82,6 +99,23 @@
             "hint": "In welcher der beiden Zeilen steht ein Minuszeichen?"
           }
         ]
+      },
+      {
+        "title": "Was heißt „linear“?",
+        "body": "**Linear** heißt: $x$ und $y$ haben keine Hochzahl.\n\n$x + y = 10$ ist linear.\n\n$x^2 + y = 10$ ist nicht linear.\n\nLineares Gleichungssystem kürzt man ab: **LGS**.",
+        "tasks": [
+          {
+            "text": "Welche Gleichung ist linear? ___",
+            "choices": [
+              "$2x + y = 5$",
+              "$x^2 + y = 5$"
+            ],
+            "correct": "$2x + y = 5$",
+            "why": "In dieser Gleichung hat kein Buchstabe eine Hochzahl.",
+            "hint": "In welcher der beiden Gleichungen steht eine Hochzahl?"
+          }
+        ],
+        "say": "In Aufgaben steht oft lineares Gleichungssystem. Linear bedeutet nur, dass die Buchstaben ohne Hochzahl vorkommen. Andere Systeme kommen in deiner Prüfung nicht vor. Weil das Wort so lang ist, sagt man kurz LGS."
       },
       {
         "title": "Jetzt du: Passt das Paar?",
@@ -113,8 +147,8 @@
       {
         "chapter": "Zwei Wege zur Lösung",
         "title": "Idee 1: Einsetzen",
-        "body": "(I) $y = 2x$\n\n(II) $x + y = 9$\n\nSetze $2x$ für $y$ in (II) ein: $x + 2x = 9$\n\nZusammenfassen: $3x = 9$\n\nTeilen durch 3: $x = 3$\n\nIn (I) einsetzen: $y = 2 \\cdot 3 = 6$\n\nDieser Weg heißt **Einsetzungsverfahren**.",
-        "say": "Die erste Zeile sagt dir schon, was y ist, nämlich 2 mal x. Das steckst du in die zweite Zeile, genau an die Stelle vom y. Dann bleibt eine Zeile mit nur noch einem Buchstaben, und die kannst du lösen. Zum Schluss rechnest du mit dem x das y aus.",
+        "body": "(I) $y = 2x$\n\n(II) $x + y = 9$\n\nZeile (I) sagt schon, was $y$ ist: $2x$\n\nSetz das in (II) für $y$ ein: $x + 2x = 9$",
+        "say": "Die erste Zeile sagt dir schon, was y ist, nämlich 2 mal x. Das steckst du in die zweite Zeile, genau an die Stelle vom y. Dann bleibt eine Zeile mit nur noch einem Buchstaben.",
         "tasks": [
           {
             "text": "(I) $y = 3x$, (II) $x + y = 8$. Nach dem Einsetzen steht da: ___",
@@ -127,6 +161,40 @@
             "hint": "Welcher Buchstabe verschwindet aus der zweiten Zeile, und was kommt an seine Stelle?"
           }
         ]
+      },
+      {
+        "title": "Dann das x ausrechnen",
+        "body": "$x + 2x = 9$\n\nZusammenfassen: $3x = 9$\n\nTeilen durch 3: $x = 3$",
+        "tasks": [
+          {
+            "text": "$x + 3x = 8$ zusammengefasst: ___",
+            "choices": [
+              "$4x = 8$",
+              "$3x = 8$"
+            ],
+            "correct": "$4x = 8$",
+            "why": "Ein x und drei x sind zusammen vier x.",
+            "hint": "Wie viele x sind es zusammen? Auch das einzelne x zählt."
+          }
+        ],
+        "say": "Jetzt steht da eine Gleichung, wie du sie kennst. Es gibt nur noch das x. Du fasst zusammen und teilst dann durch die Zahl vor dem x. Damit kennst du die erste der beiden Zahlen."
+      },
+      {
+        "title": "Zum Schluss das y",
+        "body": "Du kennst jetzt $x = 3$.\n\nSetz es in (I) ein: $y = 2 \\cdot 3 = 6$\n\nDie Lösung ist das Paar $(3\\,|\\,6)$.\n\nDieser Weg heißt **Einsetzungsverfahren**.",
+        "tasks": [
+          {
+            "text": "(I) $y = 3x$ und $x = 2$. Dann ist $y = $ ___",
+            "choices": [
+              "6",
+              "5"
+            ],
+            "correct": "6",
+            "why": "Zwischen 3 und x steht ein Malpunkt. 3 mal 2 ergibt 6.",
+            "hint": "Setz die 2 für das x ein. Welches Zeichen steht unsichtbar zwischen 3 und x?"
+          }
+        ],
+        "say": "Die zweite Zahl fehlt noch. Dafür nimmst du die Zeile, die mit y gleich beginnt, und setzt dein x ein. Dann hast du beide Zahlen, also das Lösungspaar. Dieser Weg hat einen langen Namen, aber du hast nur zweimal eingesetzt."
       },
       {
         "title": "Jetzt du: einsetzen",
@@ -167,8 +235,24 @@
       },
       {
         "title": "Idee 2: Addieren",
-        "body": "(I) $x + y = 10$\n\n(II) $x - y = 2$\n\nZähle die beiden Zeilen zusammen.\n\nLinks: $x + x = 2x$. Aus $y - y$ wird nichts.\n\nRechts: $10 + 2 = 12$\n\nAlso $2x = 12$ und damit $x = 6$.\n\nIn (I): $6 + y = 10$, also $y = 4$\n\nDieser Weg heißt **Additionsverfahren**.",
-        "say": "Du zählst die linken Seiten zusammen und die rechten Seiten zusammen. Dabei treffen plus y und minus y aufeinander und heben sich auf. Übrig bleibt eine Zeile nur mit x. Wenn du das x kennst, setzt du es in eine der beiden Zeilen ein und findest das y.",
+        "body": "(I) $x + y = 10$\n\n(II) $x - y = 2$\n\nZähl die beiden Zeilen zusammen: links mit links, rechts mit rechts.\n\nDabei soll ein Buchstabe verschwinden.",
+        "say": "Der zweite Weg benutzt einen Trick. Du zählst die beiden Zeilen zusammen, die linken Seiten für sich und die rechten Seiten für sich. Das darfst du, weil in jeder Zeile links und rechts gleich viel steht.",
+        "tasks": [
+          {
+            "text": "(I) $x + y = 9$, (II) $x - y = 3$. Die rechten Seiten ergeben zusammen ___.",
+            "choices": [
+              "12",
+              "6"
+            ],
+            "correct": "12",
+            "why": "Rechts stehen 9 und 3. Zusammen sind das 12.",
+            "hint": "Welche zwei Zahlen stehen rechts vom Gleichheitszeichen? Zähl sie zusammen."
+          }
+        ]
+      },
+      {
+        "title": "Das y hebt sich auf",
+        "body": "Links: $x + x = 2x$\n\n$+y$ und $-y$ heben sich auf.\n\nRechts: $10 + 2 = 12$\n\nEs bleibt: $2x = 12$",
         "tasks": [
           {
             "text": "(I) $x + y = 9$, (II) $x - y = 3$. Zusammengezählt ergibt das ___.",
@@ -180,11 +264,29 @@
             "why": "Plus y und minus y heben sich auf. Links bleiben zwei x, rechts 9 plus 3.",
             "hint": "Welcher Buchstabe hebt sich auf, wenn plus und minus zusammentreffen?"
           }
-        ]
+        ],
+        "say": "Schau, was links passiert. Aus x und x werden zwei x. Plus y und minus y treffen aufeinander und heben sich auf. Übrig bleibt eine Zeile nur mit x."
+      },
+      {
+        "title": "Dann x und y ausrechnen",
+        "body": "$2x = 12$, also $x = 6$\n\nIn (I) einsetzen: $6 + y = 10$\n\nAlso $y = 4$.\n\nDieser Weg heißt **Additionsverfahren**.",
+        "tasks": [
+          {
+            "text": "Du weißt $x = 6$. In $x + y = 9$ eingesetzt ist $y = $ ___",
+            "choices": [
+              "3",
+              "15"
+            ],
+            "correct": "3",
+            "why": "6 plus y ergibt 9. Dann muss y gleich 3 sein.",
+            "hint": "Welche Zahl fehlt von 6 bis 9?"
+          }
+        ],
+        "say": "Der Rest ist wie beim ersten Weg. Du teilst durch 2 und kennst das x. Dann setzt du es in eine der beiden Zeilen ein und findest das y. Addieren ist das Fachwort für zusammenzählen, daher der Name."
       },
       {
         "title": "Wenn nichts wegfällt",
-        "body": "(I) $x + 2y = 8$\n\n(II) $x + y = 5$\n\nNimm (II) mal $-1$: $-x - y = -5$\n\nZähle (I) und die neue Zeile zusammen.\n\n$x - x$ fällt weg. $2y - y = y$. Rechts: $8 - 5 = 3$\n\nAlso $y = 3$.\n\nIn (II): $x + 3 = 5$, also $x = 2$",
+        "body": "(I) $x + 2y = 8$\n\n(II) $x + y = 5$\n\nBeim Zusammenzählen fällt hier nichts weg.\n\nNimm darum die ganze Zeile (II) mal $-1$: $-x - y = -5$",
         "tasks": [
           {
             "text": "(I) $x + 3y = 9$, (II) $x + y = 5$. Damit das $x$ wegfällt, nimmst du (II) mal ___.",
@@ -200,6 +302,24 @@
         "say": "Manchmal hebt sich beim Zusammenzählen nichts auf. Dann hilfst du nach und nimmst eine ganze Zeile mit einer Zahl mal, auf beiden Seiten. Hier wird aus x ein minus x. Danach treffen x und minus x aufeinander und fallen weg."
       },
       {
+        "title": "Jetzt fällt das x weg",
+        "body": "(I) $x + 2y = 8$\n\nNeue Zeile: $-x - y = -5$\n\nZusammengezählt: $y = 3$\n\nIn (II): $x + 3 = 5$, also $x = 2$",
+        "tasks": [
+          {
+            "text": "$2y$ und $-y$ ergeben zusammen ___.",
+            "choices": [
+              "$y$",
+              "$3y$"
+            ],
+            "correct": "$y$",
+            "why": "Von zwei y wird ein y abgezogen. Es bleibt ein y.",
+            "hint": "Was bleibt von zwei Äpfeln, wenn du einen wegnimmst?"
+          }
+        ],
+        "say": "Jetzt zählst du die erste Zeile und die neue Zeile zusammen. Das x und das minus x heben sich auf. Von zwei y wird ein y abgezogen, es bleibt ein y. Rechts steht 8 minus 5, also 3."
+      },
+      {
+        "chapter": "Das Bild und besondere Fälle",
         "title": "Das Bild dazu",
         "body": "Jede Gleichung ist eine Gerade.\n\nDie Lösung ist der **Schnittpunkt**.",
         "figure": {
@@ -245,9 +365,9 @@
         ]
       },
       {
-        "title": "Keine oder unendlich viele",
-        "body": "Die Geraden laufen nebeneinander her und treffen sich nie: **keine** Lösung.\n\nDieselbe Gerade zweimal: **unendlich viele** Lösungen.",
-        "say": "In der Prüfung wird gern gefragt, wie viele Lösungen ein System hat. Denk dann an die zwei Linien. Treffen sie sich nie, gibt es keine Lösung. Liegen sie genau aufeinander, passt jeder Punkt, und es gibt unendlich viele Lösungen.",
+        "title": "Geraden, die sich nie treffen",
+        "body": "Diese zwei Geraden laufen nebeneinander her.\n\nSie treffen sich nie.\n\nDann hat das System **keine** Lösung.",
+        "say": "In der Prüfung wird gern gefragt, wie viele Lösungen ein System hat. Denk dann an die zwei Linien. Laufen sie nebeneinander her wie zwei Schienen, treffen sie sich nie. Dann gibt es keinen Punkt, der zu beiden Zeilen passt.",
         "tasks": [
           {
             "text": "Zwei Geraden schneiden sich in einem Punkt. Das System hat ___.",
@@ -259,7 +379,61 @@
             "why": "Der eine Punkt, in dem sich die Linien treffen, ist die Lösung.",
             "hint": "Wie viele gemeinsame Punkte haben die beiden Linien dann?"
           }
-        ]
+        ],
+        "figure": {
+          "type": "coordinateSystem",
+          "xmin": -1,
+          "xmax": 7,
+          "ymin": -3,
+          "ymax": 9,
+          "width": 300,
+          "height": 300,
+          "lines": [
+            {
+              "m": 1,
+              "n": 2,
+              "label": "y = x + 2"
+            },
+            {
+              "m": 1,
+              "n": -2,
+              "label": "y = x − 2"
+            }
+          ]
+        }
+      },
+      {
+        "title": "Dieselbe Gerade zweimal",
+        "body": "(I) $x + y = 4$\n\n(II) $2x + 2y = 8$\n\nZeile (II) ist nur Zeile (I) mal 2. Es ist dieselbe Gerade.\n\nJeder Punkt darauf passt: **unendlich viele** Lösungen.",
+        "figure": {
+          "type": "coordinateSystem",
+          "xmin": -1,
+          "xmax": 6,
+          "ymin": -1,
+          "ymax": 6,
+          "width": 300,
+          "height": 300,
+          "lines": [
+            {
+              "m": -1,
+              "n": 4,
+              "label": "x + y = 4"
+            }
+          ]
+        },
+        "tasks": [
+          {
+            "text": "Zwei Zeilen ergeben genau dieselbe Gerade. Das System hat ___.",
+            "choices": [
+              "unendlich viele Lösungen",
+              "keine Lösung"
+            ],
+            "correct": "unendlich viele Lösungen",
+            "why": "Jeder Punkt der Geraden passt zu beiden Zeilen. Davon gibt es unendlich viele.",
+            "hint": "Wie viele gemeinsame Punkte haben zwei Linien, die genau aufeinanderliegen?"
+          }
+        ],
+        "say": "Manchmal sehen zwei Zeilen verschieden aus und sagen doch dasselbe. Dann liegen die beiden Linien genau aufeinander. Jeder Punkt der Geraden passt zu beiden Zeilen, und davon gibt es unendlich viele."
       },
       {
         "title": "Das nimmst du mit",
@@ -281,33 +455,73 @@
     ],
     "vocab": [
       {
-        "term": "Gleichungssystem",
-        "plain": "Mehrere Gleichungen, die zusammengehören.",
-        "example": "(I) und (II)"
+        "term": "x",
+        "plain": "Die erste gesuchte Zahl.",
+        "example": "$x = 6$"
+      },
+      {
+        "term": "y",
+        "plain": "Die zweite gesuchte Zahl.",
+        "example": "$y = 4$"
       },
       {
         "term": "Unbekannte",
-        "plain": "Die gesuchten Zahlen.",
+        "plain": "Eine Zahl, die gesucht wird.",
         "example": "$x$ und $y$"
       },
       {
         "term": "Lösungspaar",
-        "plain": "Zwei Zahlen, die in beiden Gleichungen passen.",
+        "plain": "Zwei Zahlen, die in beide Gleichungen passen. Vorn steht x, hinten y.",
         "example": "$(6\\,|\\,4)$"
       },
       {
+        "term": "Lösungsmenge",
+        "plain": "Alle Lösungen zusammen, in geschweiften Klammern.",
+        "example": "$L = \\{(6\\,|\\,4)\\}$"
+      },
+      {
+        "term": "L",
+        "plain": "Der Buchstabe für die Lösungsmenge.",
+        "example": "$L = \\{(6\\,|\\,4)\\}$"
+      },
+      {
+        "term": "Gleichungssystem",
+        "plain": "Mehrere Gleichungen, die zusammengehören.",
+        "example": "(I) $x + y = 10$ und (II) $x - y = 2$"
+      },
+      {
+        "term": "(I)",
+        "plain": "Der Name der ersten Zeile. (II) ist der Name der zweiten Zeile.",
+        "example": "(I) $x + y = 10$"
+      },
+      {
+        "term": "Linear",
+        "plain": "Die Buchstaben haben keine Hochzahl.",
+        "example": "$x + y = 10$"
+      },
+      {
+        "term": "LGS",
+        "plain": "Die Abkürzung für lineares Gleichungssystem.",
+        "example": "(I) und (II) zusammen"
+      },
+      {
         "term": "Einsetzungsverfahren",
-        "plain": "Eine Gleichung nach y auflösen und in die andere stecken.",
-        "example": "$y = 2x$ in $x + y = 9$"
+        "plain": "Eine Zeile sagt, was y ist. Das steckst du in die andere Zeile.",
+        "example": "$y = 2x$ in $x + y = 9$ ergibt $x + 2x = 9$."
       },
       {
         "term": "Additionsverfahren",
-        "plain": "Beide Gleichungen addieren, sodass eine Unbekannte verschwindet.",
+        "plain": "Beide Zeilen zusammenzählen, sodass ein Buchstabe verschwindet.",
         "example": "$+y$ und $-y$ heben sich auf."
       },
       {
+        "term": "Gerade",
+        "plain": "Eine gerade Linie. Jede Gleichung lässt sich als Gerade zeichnen.",
+        "example": "$x + y = 10$"
+      },
+      {
         "term": "Schnittpunkt",
-        "plain": "Wo sich die beiden Geraden treffen. Das ist die Lösung.",
+        "plain": "Der Punkt, in dem sich die beiden Geraden treffen. Er ist die Lösung.",
         "example": "$(6\\,|\\,4)$"
       }
     ],

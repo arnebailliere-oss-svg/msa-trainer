@@ -158,40 +158,6 @@
   ]
  },
  {
-  "lesson": "P_MATH_LGS",
-  "why": "The short form LGS did not match the word before it; linear was neither named nor explained.",
-  "ops": [
-   {
-    "op": "body",
-    "board": "Was heißt „System“?",
-    "lines": [
-     "System heißt nur: **mehrere Gleichungen, die zusammengehören**.",
-     "Zusammen nennt man sie ein lineares **Gleichungssystem**, kurz LGS.",
-     "Linear heißt hier: $x$ und $y$ haben keine Hochzahl.",
-     "Man nummeriert sie: (I) und (II)."
-    ]
-   }
-  ]
- },
- {
-  "lesson": "P_MATH_LGS",
-  "why": "The curly brackets around the solution pair were not explained.",
-  "ops": [
-   {
-    "op": "body",
-    "board": "Die Lösung ist ein Paar",
-    "lines": [
-     "$x = 6$ und $y = 4$",
-     "Probe: $6 + 4 = 10$ ✓ und $6 - 4 = 2$ ✓",
-     "Die zwei Zahlen zusammen heißen **Lösungspaar**.",
-     "Man schreibt: $L = \\{(6\\,|\\,4)\\}$",
-     "Der Buchstabe $L$ steht für **Lösungsmenge**.",
-     "Die geschweiften Klammern außen heißen: Das sind alle Lösungen. Hier gibt es genau ein Paar."
-    ]
-   }
-  ]
- },
- {
   "lesson": "P_MATH_GLEICHUNG",
   "why": "The claim that four steps solve every exam equation was too strong (not for equations with x squared).",
   "ops": [
