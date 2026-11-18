@@ -158,33 +158,6 @@
   ]
  },
  {
-  "lesson": "P_MATH_ZEICHEN",
-  "why": "The words negativ and positiv were used without explanation.",
-  "ops": [
-   {
-    "op": "say",
-    "board": "Mal mit Minuszahlen",
-    "text": "Mit Minuszahlen kannst du auch malnehmen. Eine Zahl unter null nennt man **negativ**, eine Zahl über null **positiv**. Ist eine der beiden Zahlen negativ, wird das Ergebnis negativ. Sind beide negativ, wird das Ergebnis positiv. Das klingt seltsam, aber du brauchst es später oft. Merk dir einfach: Zwei Minus heben sich beim Malnehmen auf."
-   }
-  ]
- },
- {
-  "lesson": "P_MATH_ZEICHEN",
-  "why": "The board never said how a power is read, the word hoch was used later without it.",
-  "ops": [
-   {
-    "op": "body",
-    "board": "Hochzahlen",
-    "lines": [
-     "$5^2 = 5 \\cdot 5 = 25$",
-     "$5^3 = 5 \\cdot 5 \\cdot 5 = 125$",
-     "Man liest: **5 hoch 2** und **5 hoch 3**.",
-     "Die kleine Zahl oben sagt: **so oft steht die 5 da.**"
-    ]
-   }
-  ]
- },
- {
   "lesson": "P_MATH_BRUCH",
   "why": "The word Vielfache was on the board but not explained.",
   "ops": [

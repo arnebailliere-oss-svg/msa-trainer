@@ -8,6 +8,7 @@
  * human checklist in the audit file.
  */
 import type { Lesson, Primer } from "../src/core/types";
+import { mentions } from "../src/core/words";
 
 export const LIMITS = {
   /** A lesson longer than this needs chapters. */
@@ -171,9 +172,10 @@ export function checkPrimerStandard(p: Primer, terms: string[], primerById: Map<
     }
   });
   const allText = strip(steps.map((s) => `${s.title}\n${s.body}\n${s.say ?? ""}`).join("\n")).toLowerCase();
+  const rawText = steps.map((s) => [s.title, s.body, ...(s.tasks ?? []).map((x) => `${x.text} ${x.choices.join(" ")}`)].join("\n")).join("\n");
   for (const voc of p.vocab) {
     const head = strip(voc.term).split(/[,(/]/)[0]!.replace(/[…?.! ]+$/, "").trim().toLowerCase();
-    if (head && !allText.includes(head)) v.push(`word list: "${voc.term}" never appears on a board`);
+    if (head && !allText.includes(head) && !mentions(rawText, voc.term)) v.push(`word list: "${voc.term}" never appears on a board`);
   }
   return v;
 }
