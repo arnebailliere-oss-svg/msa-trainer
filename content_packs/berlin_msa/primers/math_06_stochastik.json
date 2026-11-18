@@ -34,7 +34,7 @@
       },
       {
         "title": "Günstig durch möglich",
-        "body": "1 von 6 schreibt man als Bruch: $\\frac{1}{6}$\n\nOben stehen die **günstigen** Fälle.\n\nUnten stehen alle **möglichen** Fälle.\n\nDas, worauf du hoffst, heißt **Ereignis**.",
+        "body": "1 von 6 schreibt man als Bruch: $\\frac{1}{6}$\n\nOben stehen die **günstigen** Fälle.\n\nUnten stehen alle **möglichen** Fälle.",
         "tasks": [
           {
             "text": "Ein Glücksrad hat 8 Felder, 3 davon gewinnen. Die Wahrscheinlichkeit für einen Gewinn ist ___.",
@@ -48,6 +48,23 @@
           }
         ],
         "say": "Eins von sechs kannst du als Bruch schreiben. Oben steht, wie viele Fälle du dir wünschst. Unten steht, wie viele Fälle es überhaupt gibt. Deshalb merkt man sich: günstig durch möglich."
+      },
+      {
+        "title": "Das Wort Ereignis",
+        "body": "Das, worauf du hoffst, heißt **Ereignis**.\n\nBeim Würfel kann das Ereignis heißen: eine 6.\n\nOder: eine gerade Zahl. Dann sind 2, 4 und 6 günstig.",
+        "tasks": [
+          {
+            "text": "Ein Würfel. Das Ereignis heißt: eine gerade Zahl. Günstig sind ___ Seiten.",
+            "choices": [
+              "3",
+              "1"
+            ],
+            "correct": "3",
+            "why": "Die geraden Zahlen sind 2, 4 und 6. Das sind drei Seiten.",
+            "hint": "Welche Zahlen auf dem Würfel sind gerade? Zähl sie."
+          }
+        ],
+        "say": "In Aufgaben steht oft das Wort Ereignis. Gemeint ist das, was eintreten soll. Ein Ereignis kann eine einzige Zahl sein, es kann aber auch mehrere Fälle zusammenfassen. Gerade Zahl bedeutet zum Beispiel drei günstige Seiten."
       },
       {
         "title": "Der Buchstabe P",
@@ -102,8 +119,24 @@
       },
       {
         "title": "Das Gegenereignis",
-        "body": "$P(\\text{nicht rot}) = 1 - \\frac{3}{10}$\n\nDie 1 ist dasselbe wie $\\frac{10}{10}$.\n\n$\\frac{10}{10} - \\frac{3}{10} = \\frac{7}{10}$\n\nAlle Wahrscheinlichkeiten zusammen sind **1**.\n\nDas Gegenteil eines Ereignisses heißt **Gegenereignis**.",
-        "say": "Im Beutel ist jede Kugel entweder rot oder blau. Was nicht rot ist, muss also blau sein. Das Gegenteil bekommt immer den Rest bis 1. Das ist praktisch, wenn sich das Gegenteil leichter ausrechnen lässt.",
+        "body": "Im Beutel: 3 rote und 7 blaue Kugeln.\n\nNicht rot heißt hier blau: $\\frac{7}{10}$\n\nRot und nicht rot zusammen: $\\frac{3}{10} + \\frac{7}{10} = 1$\n\nDas Gegenteil eines Ereignisses heißt **Gegenereignis**.",
+        "say": "Im Beutel ist jede Kugel entweder rot oder blau. Was nicht rot ist, muss also blau sein. Zählst du ein Ereignis und sein Gegenteil zusammen, kommt immer 1 heraus. Denn eines von beiden passiert sicher.",
+        "tasks": [
+          {
+            "text": "Ein Würfel. Das Gegenereignis zu „eine 6“ ist ___.",
+            "choices": [
+              "keine 6",
+              "eine 1"
+            ],
+            "correct": "keine 6",
+            "why": "Zum Gegenereignis gehört alles, was nicht zum Ereignis gehört, also jede andere Zahl.",
+            "hint": "Was kann alles passieren, wenn die 6 nicht kommt?"
+          }
+        ]
+      },
+      {
+        "title": "Der Rest bis 1",
+        "body": "$P(\\text{nicht rot}) = 1 - \\frac{3}{10}$\n\nDie 1 ist dasselbe wie $\\frac{10}{10}$.\n\n$\\frac{10}{10} - \\frac{3}{10} = \\frac{7}{10}$",
         "tasks": [
           {
             "text": "$P(\\text{Regen}) = 0{,}3$. Dann ist $P(\\text{kein Regen}) = $ ___",
@@ -115,12 +148,30 @@
             "why": "Das Gegenteil bekommt den Rest bis 1, und 1 minus 0,3 ist 0,7.",
             "hint": "Wie viel fehlt von 0,3 bis zur 1?"
           }
-        ]
+        ],
+        "say": "Weil beide zusammen 1 ergeben, bekommt das Gegenteil immer den Rest bis 1. Du musst die blauen Kugeln also gar nicht zählen. Das ist praktisch, wenn sich das Gegenteil leichter ausrechnen lässt."
       },
       {
         "chapter": "Zweimal ziehen",
+        "title": "Mit Zurücklegen",
+        "body": "Du ziehst eine Kugel und schaust sie an.\n\nDann legst du sie **zurück** in den Beutel.\n\nBeim zweiten Ziehen ist alles wie am Anfang.\n\nDas heißt: Ziehen **mit Zurücklegen**.",
+        "tasks": [
+          {
+            "text": "3 rote und 7 blaue Kugeln, mit Zurücklegen. Beim zweiten Ziehen liegen ___ Kugeln im Beutel.",
+            "choices": [
+              "10",
+              "9"
+            ],
+            "correct": "10",
+            "why": "Die erste Kugel wurde zurückgelegt. Es sind wieder alle 10 da.",
+            "hint": "Was passiert mit der ersten Kugel, bevor du zum zweiten Mal ziehst?"
+          }
+        ],
+        "say": "Jetzt ziehst du zweimal hintereinander. Dabei ist wichtig, was mit der ersten Kugel passiert. Legst du sie zurück, liegen beim zweiten Mal wieder alle Kugeln im Beutel. Die Chancen sind dann dieselben wie beim ersten Mal."
+      },
+      {
         "title": "Zweimal ziehen: der Baum",
-        "body": "Zweimal ziehen **mit Zurücklegen**.\n\nSo ein Bild heißt **Baumdiagramm**. Jeder Ast hat seine Wahrscheinlichkeit.",
+        "body": "Zweimal ziehen mit Zurücklegen.\n\nSo ein Bild heißt **Baumdiagramm**.\n\nJeder Ast hat seine Wahrscheinlichkeit.",
         "figure": {
           "type": "treeDiagram",
           "a": "R",
@@ -129,7 +180,7 @@
           "pb": "7/10",
           "stages": 2
         },
-        "say": "Mit Zurücklegen bedeutet: Du legst die Kugel nach dem ersten Ziehen wieder in den Beutel. Beim zweiten Ziehen ist also alles wie am Anfang. Der Baum zeigt alle Wege, die es gibt. Jeder Weg von links nach rechts ist ein möglicher Ausgang.",
+        "say": "Der Baum zeigt alle Wege, die es gibt. Zuerst teilt er sich in rot und blau für das erste Ziehen. Dann teilt sich jeder Ast noch einmal für das zweite Ziehen. Jeder Weg von links nach rechts ist ein möglicher Ausgang.",
         "tasks": [
           {
             "text": "Wie viele Wege von links nach rechts zeigt der Baum? ___",
@@ -145,7 +196,7 @@
       },
       {
         "title": "Pfadregel: mal",
-        "body": "Zweimal rot:\n\n$\\frac{3}{10} \\cdot \\frac{3}{10} = \\frac{9}{100}$\n\nEntlang eines Pfades wird **multipliziert**.",
+        "body": "Ein Weg durch den Baum heißt **Pfad**.\n\nZweimal rot: $\\frac{3}{10} \\cdot \\frac{3}{10} = \\frac{9}{100}$\n\nEntlang eines Pfades wird **malgenommen**.\n\nDas ist die Pfadregel.",
         "say": "Ein Weg durch den Baum heißt auch Pfad. Für zweimal rot gehst du zweimal den roten Ast entlang. Die beiden Brüche auf diesem Weg nimmst du miteinander mal. Das Ergebnis ist kleiner als jeder einzelne Bruch, und das passt: Zweimal Glück ist seltener als einmal.",
         "tasks": [
           {
@@ -247,9 +298,25 @@
         ]
       },
       {
-        "title": "Modus und Spannweite",
-        "body": "3, 5, 5, 7, 9\n\n**Modus**: der häufigste Wert, hier 5\n\n**Spannweite**: größter minus kleinster Wert, hier $9 - 3 = 6$",
-        "say": "Modus erinnert an das Wort Mode: Es ist der Wert, der am häufigsten vorkommt. Die Spannweite sagt dir, wie weit die Werte auseinanderliegen. Dafür ziehst du den kleinsten Wert vom größten ab.",
+        "title": "Der Modus",
+        "body": "3, 5, 5, 7, 9\n\nDie 5 kommt zweimal vor, alle anderen nur einmal.\n\nDer häufigste Wert heißt **Modus**. Hier: 5.",
+        "say": "Modus erinnert an das Wort Mode: Es ist der Wert, der am häufigsten vorkommt. Du musst dafür nichts rechnen. Du zählst nur, welche Zahl am öftesten in der Liste steht.",
+        "tasks": [
+          {
+            "text": "Der Modus von 2, 4, 4, 4, 8 ist ___.",
+            "choices": [
+              "4",
+              "8"
+            ],
+            "correct": "4",
+            "why": "Die 4 kommt dreimal vor, öfter als jede andere Zahl.",
+            "hint": "Welche Zahl kommt in der Liste am häufigsten vor?"
+          }
+        ]
+      },
+      {
+        "title": "Die Spannweite",
+        "body": "3, 5, 5, 7, 9\n\nGrößter Wert minus kleinster Wert: $9 - 3 = 6$\n\nDiese Zahl heißt **Spannweite**.\n\nSie sagt, wie weit die Werte auseinanderliegen.",
         "tasks": [
           {
             "text": "Die Spannweite von 4, 6, 10 ist ___.",
@@ -261,12 +328,30 @@
             "why": "Der größte Wert ist 10, der kleinste 4. 10 minus 4 ergibt 6.",
             "hint": "Welcher Wert ist der größte und welcher der kleinste? Zieh sie voneinander ab."
           }
-        ]
+        ],
+        "say": "Die Spannweite sagt dir, wie weit die Werte auseinanderliegen. Dafür suchst du den größten und den kleinsten Wert und ziehst den kleinsten vom größten ab. Eine kleine Spannweite heißt: Die Werte liegen dicht beieinander."
       },
       {
         "chapter": "Häufigkeit und Diagramme",
-        "title": "Absolute und relative Häufigkeit",
-        "body": "10 Würfe, 2-mal kam die 6.\n\nDie **absolute Häufigkeit** ist 2. Das ist gezählt.\n\nDie **relative Häufigkeit** ist $\\frac{2}{10}$. Das ist der Anteil.\n\nIn Prozent: 20 %",
+        "title": "Die absolute Häufigkeit",
+        "body": "10 Würfe, 2-mal kam die 6.\n\nDu hast gezählt: 2.\n\nDiese gezählte Zahl heißt **absolute Häufigkeit**.",
+        "tasks": [
+          {
+            "text": "In einer Klasse tragen 5 von 20 Kindern eine Brille. Die absolute Häufigkeit ist ___.",
+            "choices": [
+              "5",
+              "$\\frac{5}{20}$"
+            ],
+            "correct": "5",
+            "why": "Die absolute Häufigkeit ist nur gezählt: 5 Kinder.",
+            "hint": "Gesucht ist die gezählte Anzahl, nicht der Anteil."
+          }
+        ],
+        "say": "Wenn du etwas zählst, bekommst du die absolute Häufigkeit. Das ist einfach die Anzahl. Wie oft kam die 6? Zweimal. Mehr steckt hinter dem langen Wort nicht."
+      },
+      {
+        "title": "Die relative Häufigkeit",
+        "body": "2 von 10 Würfen: $\\frac{2}{10}$\n\nDieser Anteil heißt **relative Häufigkeit**.\n\nIn Prozent: 20 %",
         "tasks": [
           {
             "text": "In einer Klasse mit 20 Kindern tragen 5 eine Brille. Der Anteil der Kinder mit Brille ist ___.",
@@ -279,7 +364,7 @@
             "hint": "Gesucht ist der Anteil an allen Kindern, nicht nur die Anzahl."
           }
         ],
-        "say": "Wenn du etwas zählst, bekommst du die absolute Häufigkeit. Das ist einfach die Anzahl. Die relative Häufigkeit sagt, welcher Anteil von allen Versuchen das ist. Sie ist ein Bruch oder eine Prozentzahl. Nur mit ihr kannst du Gruppen vergleichen, die verschieden groß sind."
+        "say": "Die relative Häufigkeit sagt, welcher Anteil von allen Versuchen das ist. Sie ist ein Bruch oder eine Prozentzahl. Nur mit ihr kannst du Gruppen vergleichen, die verschieden groß sind."
       },
       {
         "title": "Das Säulendiagramm",
@@ -315,7 +400,7 @@
       },
       {
         "title": "Das Kreisdiagramm",
-        "body": "Der ganze Kreis ist alles zusammen: 100 %.\n\nJedes Stück zeigt einen Anteil.\n\nEin ganzer Kreis hat 360°.\n\nDie Hälfte hat 180°, ein Viertel hat 90°.",
+        "body": "Der ganze Kreis ist alles zusammen: 100 %.\n\nJedes Stück zeigt einen Anteil.\n\nJe größer der Anteil, desto breiter das Stück.",
         "figure": {
           "type": "pieChart",
           "categories": [
@@ -331,6 +416,23 @@
         },
         "tasks": [
           {
+            "text": "Ein Stück ist genau der halbe Kreis. Es zeigt ___.",
+            "choices": [
+              "50 %",
+              "25 %"
+            ],
+            "correct": "50 %",
+            "why": "Der ganze Kreis sind 100 Prozent. Die Hälfte davon sind 50 Prozent.",
+            "hint": "Wie viel Prozent ist der ganze Kreis? Nimm davon die Hälfte."
+          }
+        ],
+        "say": "Ein Kreisdiagramm zeigt, wie sich ein Ganzes aufteilt. Es sieht aus wie eine Pizza mit verschieden großen Stücken. Je größer der Anteil, desto breiter das Stück."
+      },
+      {
+        "title": "Der Kreis hat 360 Grad",
+        "body": "Wie breit ein Stück ist, misst man als Winkel.\n\nEin ganzer Kreis hat 360°.\n\nDie Hälfte hat 180°.\n\nEin Viertel hat 90°.",
+        "tasks": [
+          {
             "text": "Ein Stück im Kreisdiagramm zeigt 25 %. Sein Winkel ist ___.",
             "choices": [
               "90°",
@@ -341,7 +443,7 @@
             "hint": "Welcher Bruchteil vom ganzen Kreis sind 25 Prozent?"
           }
         ],
-        "say": "Ein Kreisdiagramm zeigt, wie sich ein Ganzes aufteilt. Es sieht aus wie eine Pizza mit verschieden großen Stücken. Je größer der Anteil, desto breiter das Stück. Wie breit ein Stück ist, misst man als Winkel in Grad."
+        "say": "Wenn du ein Kreisdiagramm zeichnen sollst, brauchst du für jedes Stück einen Winkel. Einmal ganz herum sind 360 Grad. Ein halber Kreis hat also 180 Grad und ein Viertelkreis 90 Grad."
       },
       {
         "title": "Vom Anteil zum Winkel",
@@ -381,52 +483,87 @@
     "vocab": [
       {
         "term": "Wahrscheinlichkeit",
-        "plain": "Günstig durch möglich. Zwischen 0 und 1.",
-        "example": "$P(6) = \\frac{1}{6}$"
+        "plain": "Die Chance, dass etwas passiert. Günstig durch möglich. Sie liegt zwischen 0 und 1.",
+        "example": "Eine 6 würfeln: $\\frac{1}{6}$"
+      },
+      {
+        "term": "günstig",
+        "plain": "Die Fälle, auf die du hoffst. Sie stehen oben im Bruch.",
+        "example": "Eine 6: 1 günstiger Fall"
+      },
+      {
+        "term": "möglich",
+        "plain": "Alle Fälle, die es gibt. Sie stehen unten im Bruch.",
+        "example": "Ein Würfel: 6 mögliche Fälle"
       },
       {
         "term": "Ereignis",
-        "plain": "Das, was du willst.",
-        "example": "„eine gerade Zahl“"
+        "plain": "Das, was eintreten soll.",
+        "example": "eine gerade Zahl würfeln"
+      },
+      {
+        "term": "P",
+        "plain": "Der Buchstabe für Wahrscheinlichkeit. In der Klammer steht das Ereignis.",
+        "example": "$P(6) = \\frac{1}{6}$"
       },
       {
         "term": "Gegenereignis",
-        "plain": "Das Gegenteil. Hat den Rest bis 1.",
-        "example": "$1 - P$"
+        "plain": "Das Gegenteil eines Ereignisses. Es bekommt den Rest bis 1.",
+        "example": "Nicht rot: $1 - \\frac{3}{10} = \\frac{7}{10}$"
+      },
+      {
+        "term": "Mit Zurücklegen",
+        "plain": "Die gezogene Kugel kommt wieder in den Beutel. Beim nächsten Ziehen ist alles wie am Anfang.",
+        "example": "Zweimal $\\frac{3}{10}$"
+      },
+      {
+        "term": "Ohne Zurücklegen",
+        "plain": "Die gezogene Kugel bleibt draußen. Beim nächsten Ziehen fehlt sie.",
+        "example": "Erst $\\frac{3}{10}$, dann $\\frac{2}{9}$"
       },
       {
         "term": "Baumdiagramm",
-        "plain": "Alle Wege bei mehreren Zügen.",
+        "plain": "Ein Bild mit Ästen. Es zeigt alle Wege bei mehreren Zügen.",
         "example": "erst rot, dann blau"
       },
       {
+        "term": "Pfad",
+        "plain": "Ein Weg durch den Baum, von links nach rechts.",
+        "example": "rot, dann rot"
+      },
+      {
         "term": "Pfadregel",
-        "plain": "Entlang eines Weges: mal.",
-        "example": "$\\frac{3}{10} \\cdot \\frac{3}{10}$"
+        "plain": "Entlang eines Pfades wird malgenommen.",
+        "example": "$\\frac{3}{10} \\cdot \\frac{3}{10} = \\frac{9}{100}$"
       },
       {
         "term": "Summenregel",
-        "plain": "Mehrere passende Wege: plus.",
+        "plain": "Passen mehrere Pfade zum Ereignis, zählst du ihre Ergebnisse zusammen.",
         "example": "rot-blau plus blau-rot"
       },
       {
         "term": "Mittelwert",
-        "plain": "Alles zusammen, geteilt durch die Anzahl.",
-        "example": "Durchschnitt"
+        "plain": "Der Durchschnitt. Alles zusammenzählen, dann durch die Anzahl teilen.",
+        "example": "2, 3, 3, 4: $12 : 4 = 3$"
       },
       {
         "term": "Median",
-        "plain": "Sortieren, dann der Wert in der Mitte.",
-        "example": "1, 3, **5**, 8, 20"
+        "plain": "Erst sortieren. Dann der Wert in der Mitte.",
+        "example": "1, 3, 5, 8, 20: Der Median ist 5."
+      },
+      {
+        "term": "Ausreißer",
+        "plain": "Ein Wert, der weit weg von den anderen liegt.",
+        "example": "1, 3, 5, 8, 20: Die 20 ist ein Ausreißer."
       },
       {
         "term": "Modus",
-        "plain": "Der häufigste Wert.",
-        "example": "3, 5, 5, 7 → 5"
+        "plain": "Der Wert, der am häufigsten vorkommt.",
+        "example": "3, 5, 5, 7: Der Modus ist 5."
       },
       {
         "term": "Spannweite",
-        "plain": "Größter minus kleinster Wert.",
+        "plain": "Größter Wert minus kleinster Wert.",
         "example": "$9 - 3 = 6$"
       },
       {
@@ -440,9 +577,14 @@
         "example": "$\\frac{2}{10}$ oder 20 %"
       },
       {
+        "term": "Säulendiagramm",
+        "plain": "Ein Bild mit Säulen. Die Höhe jeder Säule zeigt eine Anzahl.",
+        "example": "Am Dienstag: 18"
+      },
+      {
         "term": "Kreisdiagramm",
         "plain": "Ein Kreis, der in Stücke geteilt ist. Jedes Stück zeigt einen Anteil am Ganzen.",
-        "example": "25 % sind 90°"
+        "example": "25 % sind 90°."
       }
     ],
     "quiz": [

@@ -95,11 +95,73 @@ migrate("primers/math_06_stochastik.json", (p, h) => {
     }),
   );
 
+  // One new thing per board: Ereignis apart, the opposite event before its calculation, putting back
+  // before the tree, Modus and Spannweite apart, the two frequencies apart, the 360 degrees apart.
+  h.body("Günstig durch möglich", "1 von 6 schreibt man als Bruch: $\\frac{1}{6}$", "Oben stehen die **günstigen** Fälle.", "Unten stehen alle **möglichen** Fälle.");
+  h.after(
+    "Günstig durch möglich",
+    b("Das Wort Ereignis", ["Das, worauf du hoffst, heißt **Ereignis**.", "Beim Würfel kann das Ereignis heißen: eine 6.", "Oder: eine gerade Zahl. Dann sind 2, 4 und 6 günstig."], "In Aufgaben steht oft das Wort Ereignis. Gemeint ist das, was eintreten soll. Ein Ereignis kann eine einzige Zahl sein, es kann aber auch mehrere Fälle zusammenfassen. Gerade Zahl bedeutet zum Beispiel drei günstige Seiten.", {
+      tasks: [k("Ein Würfel. Das Ereignis heißt: eine gerade Zahl. Günstig sind ___ Seiten.", "3", ["1"], "Die geraden Zahlen sind 2, 4 und 6. Das sind drei Seiten.", "Welche Zahlen auf dem Würfel sind gerade? Zähl sie.")],
+    }),
+  );
+
+  h.body("Das Gegenereignis", "Im Beutel: 3 rote und 7 blaue Kugeln.", "Nicht rot heißt hier blau: $\\frac{7}{10}$", "Rot und nicht rot zusammen: $\\frac{3}{10} + \\frac{7}{10} = 1$", "Das Gegenteil eines Ereignisses heißt **Gegenereignis**.");
+  h.say("Das Gegenereignis", "Im Beutel ist jede Kugel entweder rot oder blau. Was nicht rot ist, muss also blau sein. Zählst du ein Ereignis und sein Gegenteil zusammen, kommt immer 1 heraus. Denn eines von beiden passiert sicher.");
+  h.tasks("Das Gegenereignis", k("Ein Würfel. Das Gegenereignis zu „eine 6“ ist ___.", "keine 6", ["eine 1"], "Zum Gegenereignis gehört alles, was nicht zum Ereignis gehört, also jede andere Zahl.", "Was kann alles passieren, wenn die 6 nicht kommt?"));
+  h.after(
+    "Das Gegenereignis",
+    b("Der Rest bis 1", ["$P(\\text{nicht rot}) = 1 - \\frac{3}{10}$", "Die 1 ist dasselbe wie $\\frac{10}{10}$.", "$\\frac{10}{10} - \\frac{3}{10} = \\frac{7}{10}$"], "Weil beide zusammen 1 ergeben, bekommt das Gegenteil immer den Rest bis 1. Du musst die blauen Kugeln also gar nicht zählen. Das ist praktisch, wenn sich das Gegenteil leichter ausrechnen lässt.", {
+      tasks: [k("$P(\\text{Regen}) = 0{,}3$. Dann ist $P(\\text{kein Regen}) = $ ___", "$0{,}7$", ["$0{,}3$"], "Das Gegenteil bekommt den Rest bis 1, und 1 minus 0,3 ist 0,7.", "Wie viel fehlt von 0,3 bis zur 1?")],
+    }),
+  );
+
+  h.before(
+    "Zweimal ziehen: der Baum",
+    b("Mit Zurücklegen", ["Du ziehst eine Kugel und schaust sie an.", "Dann legst du sie **zurück** in den Beutel.", "Beim zweiten Ziehen ist alles wie am Anfang.", "Das heißt: Ziehen **mit Zurücklegen**."], "Jetzt ziehst du zweimal hintereinander. Dabei ist wichtig, was mit der ersten Kugel passiert. Legst du sie zurück, liegen beim zweiten Mal wieder alle Kugeln im Beutel. Die Chancen sind dann dieselben wie beim ersten Mal.", {
+      tasks: [k("3 rote und 7 blaue Kugeln, mit Zurücklegen. Beim zweiten Ziehen liegen ___ Kugeln im Beutel.", "10", ["9"], "Die erste Kugel wurde zurückgelegt. Es sind wieder alle 10 da.", "Was passiert mit der ersten Kugel, bevor du zum zweiten Mal ziehst?")],
+    }),
+  );
+  h.body("Zweimal ziehen: der Baum", "Zweimal ziehen mit Zurücklegen.", "So ein Bild heißt **Baumdiagramm**.", "Jeder Ast hat seine Wahrscheinlichkeit.");
+  h.say("Zweimal ziehen: der Baum", "Der Baum zeigt alle Wege, die es gibt. Zuerst teilt er sich in rot und blau für das erste Ziehen. Dann teilt sich jeder Ast noch einmal für das zweite Ziehen. Jeder Weg von links nach rechts ist ein möglicher Ausgang.");
+  h.body("Pfadregel: mal", "Ein Weg durch den Baum heißt **Pfad**.", "Zweimal rot: $\\frac{3}{10} \\cdot \\frac{3}{10} = \\frac{9}{100}$", "Entlang eines Pfades wird **malgenommen**.", "Das ist die Pfadregel.");
+
+  h.rename("Modus und Spannweite", "Der Modus");
+  h.body("Der Modus", "3, 5, 5, 7, 9", "Die 5 kommt zweimal vor, alle anderen nur einmal.", "Der häufigste Wert heißt **Modus**. Hier: 5.");
+  h.say("Der Modus", "Modus erinnert an das Wort Mode: Es ist der Wert, der am häufigsten vorkommt. Du musst dafür nichts rechnen. Du zählst nur, welche Zahl am öftesten in der Liste steht.");
+  h.tasks("Der Modus", k("Der Modus von 2, 4, 4, 4, 8 ist ___.", "4", ["8"], "Die 4 kommt dreimal vor, öfter als jede andere Zahl.", "Welche Zahl kommt in der Liste am häufigsten vor?"));
+  h.after(
+    "Der Modus",
+    b("Die Spannweite", ["3, 5, 5, 7, 9", "Größter Wert minus kleinster Wert: $9 - 3 = 6$", "Diese Zahl heißt **Spannweite**.", "Sie sagt, wie weit die Werte auseinanderliegen."], "Die Spannweite sagt dir, wie weit die Werte auseinanderliegen. Dafür suchst du den größten und den kleinsten Wert und ziehst den kleinsten vom größten ab. Eine kleine Spannweite heißt: Die Werte liegen dicht beieinander.", {
+      tasks: [k("Die Spannweite von 4, 6, 10 ist ___.", "6", ["10"], "Der größte Wert ist 10, der kleinste 4. 10 minus 4 ergibt 6.", "Welcher Wert ist der größte und welcher der kleinste? Zieh sie voneinander ab.")],
+    }),
+  );
+
+  h.rename("Absolute und relative Häufigkeit", "Die absolute Häufigkeit");
+  h.body("Die absolute Häufigkeit", "10 Würfe, 2-mal kam die 6.", "Du hast gezählt: 2.", "Diese gezählte Zahl heißt **absolute Häufigkeit**.");
+  h.say("Die absolute Häufigkeit", "Wenn du etwas zählst, bekommst du die absolute Häufigkeit. Das ist einfach die Anzahl. Wie oft kam die 6? Zweimal. Mehr steckt hinter dem langen Wort nicht.");
+  h.tasks("Die absolute Häufigkeit", k("In einer Klasse tragen 5 von 20 Kindern eine Brille. Die absolute Häufigkeit ist ___.", "5", ["$\\frac{5}{20}$"], "Die absolute Häufigkeit ist nur gezählt: 5 Kinder.", "Gesucht ist die gezählte Anzahl, nicht der Anteil."));
+  h.after(
+    "Die absolute Häufigkeit",
+    b("Die relative Häufigkeit", ["2 von 10 Würfen: $\\frac{2}{10}$", "Dieser Anteil heißt **relative Häufigkeit**.", "In Prozent: 20 %"], "Die relative Häufigkeit sagt, welcher Anteil von allen Versuchen das ist. Sie ist ein Bruch oder eine Prozentzahl. Nur mit ihr kannst du Gruppen vergleichen, die verschieden groß sind.", {
+      tasks: [k("In einer Klasse mit 20 Kindern tragen 5 eine Brille. Der Anteil der Kinder mit Brille ist ___.", "$\\frac{5}{20}$", ["5"], "Die 5 allein ist nur gezählt. Der Anteil ist 5 von 20.", "Gesucht ist der Anteil an allen Kindern, nicht nur die Anzahl.")],
+    }),
+  );
+
+  h.body("Das Kreisdiagramm", "Der ganze Kreis ist alles zusammen: 100 %.", "Jedes Stück zeigt einen Anteil.", "Je größer der Anteil, desto breiter das Stück.");
+  h.say("Das Kreisdiagramm", "Ein Kreisdiagramm zeigt, wie sich ein Ganzes aufteilt. Es sieht aus wie eine Pizza mit verschieden großen Stücken. Je größer der Anteil, desto breiter das Stück.");
+  h.tasks("Das Kreisdiagramm", k("Ein Stück ist genau der halbe Kreis. Es zeigt ___.", "50 %", ["25 %"], "Der ganze Kreis sind 100 Prozent. Die Hälfte davon sind 50 Prozent.", "Wie viel Prozent ist der ganze Kreis? Nimm davon die Hälfte."));
+  h.after(
+    "Das Kreisdiagramm",
+    b("Der Kreis hat 360 Grad", ["Wie breit ein Stück ist, misst man als Winkel.", "Ein ganzer Kreis hat 360°.", "Die Hälfte hat 180°.", "Ein Viertel hat 90°."], "Wenn du ein Kreisdiagramm zeichnen sollst, brauchst du für jedes Stück einen Winkel. Einmal ganz herum sind 360 Grad. Ein halber Kreis hat also 180 Grad und ein Viertelkreis 90 Grad.", {
+      tasks: [k("Ein Stück im Kreisdiagramm zeigt 25 %. Sein Winkel ist ___.", "90°", ["25°"], "25 Prozent sind ein Viertel. Ein Viertel von 360 Grad sind 90 Grad.", "Welcher Bruchteil vom ganzen Kreis sind 25 Prozent?")],
+    }),
+  );
+
   h.chapters([
     ["Wie viele von allen?", "Was Wahrscheinlichkeit bedeutet"],
-    ["Zweimal ziehen: der Baum", "Zweimal ziehen"],
+    ["Mit Zurücklegen", "Zweimal ziehen"],
     ["Statistik: der Mittelwert", "Listen von Zahlen"],
-    ["Absolute und relative Häufigkeit", "Häufigkeit und Diagramme"],
+    ["Die absolute Häufigkeit", "Häufigkeit und Diagramme"],
   ]);
   h.renameVocab({ "Wahrscheinlichkeit P": "Wahrscheinlichkeit" });
   h.explain([
@@ -117,4 +179,29 @@ migrate("primers/math_06_stochastik.json", (p, h) => {
     { term: "Kreisdiagramm", plain: "Ein Kreis, der in Stücke geteilt ist. Jedes Stück zeigt einen Anteil am Ganzen.", example: "25 % sind 90°" },
   );
   h.quiz(q("Von 60 Befragten mögen 20 am liebsten Pizza. Wie groß ist der Winkel für Pizza im Kreisdiagramm?", "120°", ["20°", "60°", "180°"], "20 von 60 ist ein Drittel. Ein Drittel von 360 Grad sind 120 Grad."));
+
+  // Word card: every word and letter of this lesson.
+  h.vocab(
+    { term: "Wahrscheinlichkeit", plain: "Die Chance, dass etwas passiert. Günstig durch möglich. Sie liegt zwischen 0 und 1.", example: "Eine 6 würfeln: $\\frac{1}{6}$" },
+    { term: "günstig", plain: "Die Fälle, auf die du hoffst. Sie stehen oben im Bruch.", example: "Eine 6: 1 günstiger Fall" },
+    { term: "möglich", plain: "Alle Fälle, die es gibt. Sie stehen unten im Bruch.", example: "Ein Würfel: 6 mögliche Fälle" },
+    { term: "Ereignis", plain: "Das, was eintreten soll.", example: "eine gerade Zahl würfeln" },
+    { term: "P", plain: "Der Buchstabe für Wahrscheinlichkeit. In der Klammer steht das Ereignis.", example: "$P(6) = \\frac{1}{6}$" },
+    { term: "Gegenereignis", plain: "Das Gegenteil eines Ereignisses. Es bekommt den Rest bis 1.", example: "Nicht rot: $1 - \\frac{3}{10} = \\frac{7}{10}$" },
+    { term: "Mit Zurücklegen", plain: "Die gezogene Kugel kommt wieder in den Beutel. Beim nächsten Ziehen ist alles wie am Anfang.", example: "Zweimal $\\frac{3}{10}$" },
+    { term: "Ohne Zurücklegen", plain: "Die gezogene Kugel bleibt draußen. Beim nächsten Ziehen fehlt sie.", example: "Erst $\\frac{3}{10}$, dann $\\frac{2}{9}$" },
+    { term: "Baumdiagramm", plain: "Ein Bild mit Ästen. Es zeigt alle Wege bei mehreren Zügen.", example: "erst rot, dann blau" },
+    { term: "Pfad", plain: "Ein Weg durch den Baum, von links nach rechts.", example: "rot, dann rot" },
+    { term: "Pfadregel", plain: "Entlang eines Pfades wird malgenommen.", example: "$\\frac{3}{10} \\cdot \\frac{3}{10} = \\frac{9}{100}$" },
+    { term: "Summenregel", plain: "Passen mehrere Pfade zum Ereignis, zählst du ihre Ergebnisse zusammen.", example: "rot-blau plus blau-rot" },
+    { term: "Mittelwert", plain: "Der Durchschnitt. Alles zusammenzählen, dann durch die Anzahl teilen.", example: "2, 3, 3, 4: $12 : 4 = 3$" },
+    { term: "Median", plain: "Erst sortieren. Dann der Wert in der Mitte.", example: "1, 3, 5, 8, 20: Der Median ist 5." },
+    { term: "Ausreißer", plain: "Ein Wert, der weit weg von den anderen liegt.", example: "1, 3, 5, 8, 20: Die 20 ist ein Ausreißer." },
+    { term: "Modus", plain: "Der Wert, der am häufigsten vorkommt.", example: "3, 5, 5, 7: Der Modus ist 5." },
+    { term: "Spannweite", plain: "Größter Wert minus kleinster Wert.", example: "$9 - 3 = 6$" },
+    { term: "absolute Häufigkeit", plain: "Wie oft etwas vorkommt. Einfach gezählt.", example: "2-mal die 6" },
+    { term: "relative Häufigkeit", plain: "Der Anteil an allen Versuchen, als Bruch oder in Prozent.", example: "$\\frac{2}{10}$ oder 20 %" },
+    { term: "Säulendiagramm", plain: "Ein Bild mit Säulen. Die Höhe jeder Säule zeigt eine Anzahl.", example: "Am Dienstag: 18" },
+    { term: "Kreisdiagramm", plain: "Ein Kreis, der in Stücke geteilt ist. Jedes Stück zeigt einen Anteil am Ganzen.", example: "25 % sind 90°." },
+  );
 });
