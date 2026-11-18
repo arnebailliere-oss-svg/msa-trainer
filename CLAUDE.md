@@ -60,3 +60,9 @@ content_packs/schema.v2.json
 - Schnelltraining selection priority = 0.45·weakness + 0.25·error rate + 0.20·recency + 0.10·(1 − stability).
 - Repair mode after a wrong answer: 2 same-topic questions (difficulty ≤ current), then 1 transfer question from sibling topics; correct transfer exits, wrong transfer restarts one level easier. Repair overrides selection. Attempt is persisted before mastery is updated.
 - Variants: seed = SHA-256(user|subject|topic|question|date|mode|counter); local RNG only; trig in degrees.
+
+## Products and porting (Windows, Android)
+
+- Read `E:\Dev\MSA_TRAINER_NOTES.md` first: all folders, build steps, state of the work, open decisions and how the owner wants the project handled.
+- Plan: `docs/PORTING_PLAN.md`. Shell projects: `E:\Dev\msa-trainer-android` (Capacitor) and `E:\Dev\msa-trainer-windows` (Electron).
+- One codebase, five builds: `node scripts/build-edition.mjs <all|math|de|en> <outDir>` in `web`. What is free or locked is decided only in `web/src/core/access.ts`; what the device has unlocked lives in `web/src/app/entitlement.ts`.
