@@ -62,9 +62,98 @@ migrate("primers/math_08_einheiten.json", (p, h) => {
   );
   h.body("Die Vorsilben", "**kilo** heißt tausend: 1 km = 1000 m", "**dezi** heißt Zehntel: 10 dm = 1 m", "**zenti** heißt Hundertstel: 100 cm = 1 m", "**milli** heißt Tausendstel: 1000 mm = 1 m");
 
+  // One new thing per board: the short forms, one prefix per board, one example per board,
+  // square metre and cubic metre before their rules, litre and millilitre apart, the comma trap apart.
+  h.after(
+    "Was du schon kennst",
+    b("Einheiten kurz geschrieben", ["Das Maß, in dem du misst, heißt **Einheit**.", "Meter schreibt man kurz: m", "Zentimeter schreibt man kurz: cm", "Kilometer schreibt man kurz: km"], "Meter, Zentimeter und Kilometer sind Einheiten. Weil man sie ständig braucht, schreibt man sie abgekürzt. Die Abkürzung steht immer hinter der Zahl. 30 cm liest du also dreißig Zentimeter.", {
+      tasks: [k("Der Schulweg ist 2 km weit. Das liest man: 2 ___.", "Kilometer", ["Zentimeter"], "Die Abkürzung km steht für Kilometer.", "Für welches Wort steht das k am Anfang der Abkürzung?")],
+    }),
+  );
+  h.rename("Die Vorsilben", "Kilo heißt tausend");
+  h.body("Kilo heißt tausend", "Ein **Kilo**meter sind 1000 Meter.", "1 km = 1000 m", "**kilo** heißt immer: tausend.", "Darum hat auch ein Kilogramm 1000 Gramm.");
+  h.say("Kilo heißt tausend", "Vor dem Wort Meter steht oft ein kleines Wort, eine Vorsilbe. Sie sagt, wie groß die Einheit ist. Die erste Vorsilbe ist kilo. Kilo bedeutet tausend, und zwar bei jeder Einheit.");
+  h.tasks("Kilo heißt tausend", k("$3\\ \\text{km} = $ ___", "3000 m", ["300 m"], "Kilo heißt tausend. 3 mal 1000 ergibt 3000.", "Was bedeutet die Vorsilbe kilo? Rechne 3 mal diese Zahl."));
+  h.after(
+    "Kilo heißt tausend",
+    b("Zenti heißt Hundertstel", ["Ein Meter hat 100 Zentimeter.", "100 cm = 1 m", "**zenti** heißt: ein Hundertstel."], "Die zweite Vorsilbe ist zenti. Ein Zentimeter ist ein Hundertstel von einem Meter. Das bedeutet: Du brauchst hundert Zentimeter, bis ein Meter voll ist. Denk an Cent und Euro, dort ist es genauso.", {
+      tasks: [k("$2\\ \\text{m} = $ ___", "200 cm", ["20 cm"], "Ein Meter hat 100 Zentimeter. Zwei Meter haben 200.", "Wie viele Zentimeter hat ein Meter? Nimm das mal 2.")],
+    }),
+    b("Milli heißt Tausendstel", ["Ein Meter hat 1000 Millimeter.", "1000 mm = 1 m", "**milli** heißt: ein Tausendstel.", "Ein Millimeter ist der kleinste Strich auf dem Lineal."], "Die dritte Vorsilbe ist milli. Ein Millimeter ist ein Tausendstel von einem Meter. Das ist sehr klein: der Abstand zwischen zwei kleinen Strichen auf deinem Lineal.", {
+      tasks: [k("$3\\ \\text{m} = $ ___", "3000 mm", ["300 mm"], "Ein Meter hat 1000 Millimeter. Drei Meter haben 3000.", "Wie viele Millimeter hat ein Meter? Nimm das mal 3.")],
+    }),
+    b("Dezi heißt Zehntel", ["Ein Meter hat 10 Dezimeter.", "10 dm = 1 m", "**dezi** heißt: ein Zehntel.", "Ein Dezimeter ist etwa so breit wie deine Hand."], "Die vierte Vorsilbe ist dezi. Ein Dezimeter ist ein Zehntel von einem Meter, also 10 Zentimeter. Im Alltag sagt das kaum jemand. In Matheaufgaben kommt der Dezimeter aber oft vor, vor allem beim Liter.", {
+      tasks: [k("$5\\ \\text{m} = $ ___", "50 dm", ["500 dm"], "Ein Meter hat 10 Dezimeter. Fünf Meter haben 50.", "Wie viele Dezimeter hat ein Meter? Nimm das mal 5.")],
+    }),
+  );
+
+  h.rename("Beispiel", "Ein Beispiel nach unten");
+  h.body("Ein Beispiel nach unten", "$3{,}5$ m in cm", "Von m zu cm sind es zwei Stufen hinunter.", "Zweimal mal 10 ist mal 100.", "$3{,}5 \\cdot 100 = 350$ cm");
+  h.say("Ein Beispiel nach unten", "Du gehst die Leiter hinunter, von Meter über Dezimeter zu Zentimeter. Das sind zwei Stufen, und jede Stufe ist mal 10. Zusammen rechnest du also mal 100. Die Einheit wird kleiner, deshalb wird die Zahl größer.");
+  h.tasks("Ein Beispiel nach unten", k("2 m in mm: drei Stufen hinunter. Du rechnest ___.", "mal 1000", ["mal 30"], "Jede Stufe ist mal 10. Dreimal mal 10 ist mal 1000.", "Was ergibt 10 mal 10 mal 10?"));
+  h.after(
+    "Ein Beispiel nach unten",
+    b("Ein Beispiel nach oben", ["$4200$ m in km", "Von m zu km geht es hinauf.", "Hinauf heißt teilen, hier durch 1000.", "$4200 : 1000 = 4{,}2$ km"], "Jetzt geht es in die andere Richtung, zur größeren Einheit. Dann teilst du. Mit einer einfachen Frage kannst du jedes Ergebnis prüfen: Wird die Einheit größer, muss die Zahl kleiner werden. Von großen Schritten brauchst du schließlich weniger als von kleinen.", {
+      tasks: [k("Du rechnest von m in km um. Die Zahl wird ___.", "kleiner", ["größer"], "Der Kilometer ist die größere Einheit. Davon brauchst du weniger.", "Brauchst du von großen Schritten mehr oder weniger als von kurzen?")],
+    }),
+  );
+
+  {
+    const square = h.board("Fläche: alles mal 100").figure;
+    h.before(
+      "Fläche: alles mal 100",
+      b("Der Quadratmeter", ["Eine Fläche misst man in Quadraten.", "Ein Quadrat mit 1 m Länge und 1 m Breite heißt **Quadratmeter**.", "Kurz: $1\\ \\text{m}^2$", "Die kleine 2 sagt: Länge mal Breite."], "Für Flächen reicht ein Meterstab nicht. Du legst die Fläche mit Quadraten aus und zählst sie. Ein Quadrat, das einen Meter lang und einen Meter breit ist, heißt Quadratmeter. Die kleine 2 an der Einheit erinnert an die zwei Richtungen.", {
+        figure: square,
+        tasks: [k("Ein Quadrat ist 1 cm lang und 1 cm breit. Es heißt ___.", "Quadratzentimeter", ["Zentimeter"], "Ein Quadrat mit 1 cm Seitenlänge ist ein Quadratzentimeter. Damit misst man kleine Flächen.", "Ist das Quadrat eine Länge oder eine Fläche?")],
+      }),
+    );
+    h.body("Fläche: alles mal 100", "1 m = 10 dm", "$1\\ \\text{m}^2 = 10 \\cdot 10 = 100\\ \\text{dm}^2$", "Bei Flächen ist jede Stufe **mal 100**.");
+    h.say("Fläche: alles mal 100", "Ein Quadratmeter ist 10 Dezimeter lang und 10 Dezimeter breit. Es passen also 10 mal 10 kleine Quadrate hinein. Bei Flächen zählt jede Stufe der Leiter doppelt: einmal für die Länge und einmal für die Breite. Deshalb ist jede Stufe mal 100.");
+    h.after(
+      "Fläche: alles mal 100",
+      b("Zwei Stufen bei Flächen", ["Von $\\text{m}^2$ zu $\\text{cm}^2$ sind es zwei Stufen.", "Zweimal mal 100: $100 \\cdot 100 = 10\\,000$", "$1\\ \\text{m}^2 = 10\\,000\\ \\text{cm}^2$"], "Bei zwei Stufen rechnest du zweimal mal 100. Das ergibt mal zehntausend. In einen Quadratmeter passen also zehntausend Quadratzentimeter. Das überrascht viele, weil ein Meter nur hundert Zentimeter hat.", {
+        tasks: [k("$2\\ \\text{m}^2 = $ ___", "$200\\ \\text{dm}^2$", ["$20\\ \\text{dm}^2$"], "Es ist eine Stufe nach unten, und bei Flächen ist jede Stufe mal 100.", "Geht es hier um eine Länge oder um eine Fläche? Welche Zahl gehört zu einer Stufe?")],
+      }),
+    );
+    const cube = h.board("Volumen: alles mal 1000").figure;
+    h.before(
+      "Volumen: alles mal 1000",
+      b("Der Kubikmeter", ["Das **Volumen** sagt, wie viel in etwas hineinpasst.", "Man misst es in Würfeln.", "Ein Würfel mit 1 m Kantenlänge heißt **Kubikmeter**: $1\\ \\text{m}^3$", "Die kleine 3 sagt: Länge mal Breite mal Höhe."], "Wie viel in eine Kiste passt, misst du mit Würfeln. Ein Würfel, der einen Meter lang, breit und hoch ist, heißt Kubikmeter. Kubik kennst du schon als Wort für hoch 3. Die kleine 3 erinnert an die drei Richtungen.", {
+        figure: cube,
+        tasks: [k("Ein Würfel mit 1 cm Kantenlänge heißt ___.", "Kubikzentimeter", ["Quadratzentimeter"], "Ein Würfel hat drei Richtungen. Dazu gehört das Wort Kubik.", "Ist ein Würfel flach wie ein Blatt, oder passt etwas hinein?")],
+      }),
+    );
+    h.body("Volumen: alles mal 1000", "1 m = 10 dm", "$1\\ \\text{m}^3 = 10 \\cdot 10 \\cdot 10 = 1000\\ \\text{dm}^3$", "Beim Volumen ist jede Stufe **mal 1000**.");
+  }
+
+  h.body("Liter", "Flüssigkeiten misst man in **Litern**. Kurz: l", "$1\\ \\text{l} = 1\\ \\text{dm}^3$", "Das ist ein Würfel mit 10 cm Kantenlänge, so groß wie ein Milchkarton.");
+  h.say("Liter", "Ein Liter ist genau so viel, wie in einen Würfel mit 10 Zentimetern Kantenlänge passt. Denk an einen Milchkarton. Liter und Kubikdezimeter sind also zwei Namen für dieselbe Menge.");
+  h.after(
+    "Liter",
+    b("Milliliter", ["Ein **Milliliter** ist ein Tausendstel Liter. Kurz: ml", "1 l = 1000 ml", "$1\\ \\text{ml} = 1\\ \\text{cm}^3$"], "Die Vorsilbe milli kennst du schon. Ein Milliliter ist ein Tausendstel von einem Liter. Das ist ein winziger Würfel mit einem Zentimeter Kantenlänge. Auf Trinkflaschen und Medizin steht die Menge oft in Millilitern.", {
+      tasks: [k("Eine Flasche fasst 0,5 l. Das sind ___.", "500 ml", ["50 ml"], "Ein Liter hat 1000 Milliliter. Die Hälfte davon sind 500.", "Wie viele Milliliter hat ein ganzer Liter? Nimm davon die Hälfte.")],
+    }),
+    b("Kubikmeter und Liter", ["$1\\ \\text{m}^3 = 1000\\ \\text{dm}^3$", "Jeder Kubikdezimeter ist ein Liter.", "Also: $1\\ \\text{m}^3 = 1000\\ \\text{l}$"], "In Aufgaben mit Schwimmbecken oder Regentonnen wird oft nach Litern gefragt. Dann hilft dir diese Zeile. In einen Kubikmeter passen tausend Liter, denn er besteht aus tausend Kubikdezimetern.", {
+      tasks: [k("$2\\ \\text{m}^3 = $ ___", "2000 l", ["200 l"], "Ein Kubikmeter sind 1000 Liter. Zwei Kubikmeter sind 2000 Liter.", "Wie viele Liter passen in einen Kubikmeter? Nimm das mal 2.")],
+    }),
+  );
+
+  h.body("Gewicht", "Gewicht misst man in Gramm (g), Kilogramm (kg) und Tonnen (t).", "1 kg = 1000 g", "1 t = 1000 kg", "Jeder Schritt ist **mal 1000**.");
+  h.say("Gewicht", "Beim Gewicht gibt es nur Schritte von tausend. Ein Kilogramm sind tausend Gramm, und eine Tonne sind tausend Kilogramm. Für sehr leichte Dinge gibt es noch das Milligramm, ein Tausendstel Gramm. Zwischenstufen wie bei den Längen kommen nicht vor.");
+  h.body("Zeit ist die Ausnahme", "Stunde schreibt man kurz h, Minute min, Sekunde s.", "1 h = **60** min", "1 min = **60** s");
+  h.say("Zeit ist die Ausnahme", "Die Zeit läuft in Sechzigern und nicht in Zehnern. Eine Stunde hat 60 Minuten, und eine Minute hat 60 Sekunden. Das h kommt vom englischen Wort hour.");
+  h.tasks("Zeit ist die Ausnahme", k("2 h sind ___.", "120 min", ["200 min"], "Eine Stunde hat 60 Minuten. Zwei Stunden haben 120.", "Wie viele Minuten hat eine Stunde? Nimm das mal 2."));
+  h.after(
+    "Zeit ist die Ausnahme",
+    b("Vorsicht mit dem Komma", ["1,5 h heißt: eine Stunde und eine halbe.", "Eine halbe Stunde sind 30 min.", "1,5 h sind also **90** min, nicht 150."], "Das Komma bei Stunden führt leicht in die Irre. Die 5 hinter dem Komma bedeutet eine halbe Stunde und nicht 50 Minuten. Rechne die Stunden immer mal 60, dann bist du sicher.", {
+      tasks: [k("2,5 h sind ___.", "150 min", ["250 min"], "Zwei Stunden sind 120 Minuten, und die halbe Stunde bringt noch 30 dazu.", "Wie viele Minuten hat eine halbe Stunde?")],
+    }),
+  );
+
   h.chapters([
     ["Was du schon kennst", "Vorsilben und Längen"],
-    ["Fläche: alles mal 100", "Flächen, Volumen, Gewicht und Zeit"],
+    ["Der Quadratmeter", "Flächen und Volumen"],
+    ["Gewicht", "Gewicht und Zeit"],
   ]);
   h.renameVocab({ "Quadrat-Einheit (m²)": "Quadratmeter", "Kubik-Einheit (m³)": "Volumen" });
   h.explain([
@@ -75,4 +164,30 @@ migrate("primers/math_08_einheiten.json", (p, h) => {
     "Bei Flächen bedeutet eine Stufe nach oben geteilt durch 100. 42 000 geteilt durch 100 ergibt 420.",
   ]);
   h.quiz(q("0,25 Stunden sind wie viele Minuten?", "15 Minuten", ["25 Minuten", "2,5 Minuten", "40 Minuten"], "Die Zeit läuft in Sechzigern. Ein Viertel von 60 Minuten sind 15 Minuten."));
+
+  // Word card: every word and short form of this lesson.
+  h.vocab(
+    { term: "Einheit", plain: "Das Maß, in dem du misst.", example: "Meter, Liter, Kilogramm, Stunde" },
+    { term: "m", plain: "Meter.", example: "Eine Tür ist 2 m hoch." },
+    { term: "cm", plain: "Zentimeter. Ein Hundertstel Meter.", example: "100 cm = 1 m" },
+    { term: "km", plain: "Kilometer. Tausend Meter.", example: "1 km = 1000 m" },
+    { term: "mm", plain: "Millimeter. Ein Tausendstel Meter.", example: "1000 mm = 1 m" },
+    { term: "dm", plain: "Dezimeter. Ein Zehntel Meter.", example: "10 dm = 1 m" },
+    { term: "Vorsilbe", plain: "Ein kleines Wort vor der Einheit. Es sagt, wie groß sie ist.", example: "kilo, zenti, milli, dezi" },
+    { term: "kilo", plain: "Tausend.", example: "1 km = 1000 m, 1 kg = 1000 g" },
+    { term: "zenti", plain: "Ein Hundertstel.", example: "100 cm = 1 m" },
+    { term: "milli", plain: "Ein Tausendstel.", example: "1000 mm = 1 m, 1000 ml = 1 l" },
+    { term: "dezi", plain: "Ein Zehntel.", example: "10 dm = 1 m" },
+    { term: "Quadratmeter", plain: "Ein Quadrat mit 1 m Länge und 1 m Breite. Damit misst man Flächen. Kurz: m². Jede Stufe ist mal 100.", example: "$1\\ \\text{m}^2 = 100\\ \\text{dm}^2$" },
+    { term: "Volumen", plain: "Wie viel in etwas hineinpasst.", example: "Ein Milchkarton hat 1 Liter Volumen." },
+    { term: "Kubikmeter", plain: "Ein Würfel mit 1 m Kantenlänge. Damit misst man das Volumen. Kurz: m³. Jede Stufe ist mal 1000.", example: "$1\\ \\text{m}^3 = 1000\\ \\text{dm}^3$" },
+    { term: "Liter", plain: "Das Maß für Flüssigkeiten. Kurz: l. Ein Liter ist ein Kubikdezimeter.", example: "$1\\ \\text{l} = 1\\ \\text{dm}^3$" },
+    { term: "ml", plain: "Milliliter. Ein Tausendstel Liter.", example: "1 l = 1000 ml" },
+    { term: "Gramm", plain: "Ein Maß für Gewicht. Kurz: g.", example: "1 kg = 1000 g" },
+    { term: "kg", plain: "Kilogramm. Tausend Gramm.", example: "1 kg = 1000 g" },
+    { term: "Tonne", plain: "Tausend Kilogramm. Kurz: t.", example: "1 t = 1000 kg" },
+    { term: "Stunde", plain: "60 Minuten. Kurz: h.", example: "1 h = 60 min = 3600 s" },
+    { term: "min", plain: "Minute. 60 Sekunden.", example: "1 min = 60 s" },
+    { term: "Sekunde", plain: "Kurz: s. 60 Sekunden sind eine Minute.", example: "1 min = 60 s" },
+  );
 });
