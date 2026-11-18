@@ -1,6 +1,8 @@
 import { useMemo, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { useAccess } from "@/app/entitlement";
 import { useApp } from "@/app/state";
+import { freePrimerId, freeTopicId, topicOpen } from "@/core/access";
 import { LEVEL_WINDOW, READY_PERCENT } from "@/core/constants";
 import { EDITION_SUBJECTS, SINGLE_SUBJECT } from "@/core/edition";
 import { LEVEL_LABEL } from "@/core/levels";
@@ -47,6 +49,7 @@ interface TopicRow {
 export function DashboardView() {
   const { content, profile, store, progressVersion } = useApp();
   const nav = useNavigate();
+  const access = useAccess();
   const [subject, setSubject] = useState<Subject>(() => {
     try {
       return inEdition(localStorage.getItem(SUBJECT_KEY));
@@ -86,6 +89,9 @@ export function DashboardView() {
   if (!content || !profile || !data) return null;
   const { r } = data;
   const planDone = r.doneToday >= r.goal;
+  const locked = !access.has(subject);
+  const freeTopic = content.topicById(freeTopicId(content, subject) ?? "");
+  const freePrimer = content.primerById(freePrimerId(content, subject) ?? "");
 
   return (
     <div className={`subject-${subject} mx-auto max-w-5xl px-4 pb-16`}>
@@ -133,18 +139,35 @@ export function DashboardView() {
         ))}
       </div>
 
+      {locked && (
+        <div className="glass mt-4 flex flex-col gap-3 p-4 sm:flex-row sm:items-center sm:justify-between" data-free-banner>
+          <div className="text-sm">
+            <div className="font-bold">🔓 Gratis-Version</div>
+            <div className="text-ink-2">
+              Frei sind{freePrimer ? <> die Eulen-Lektion „{freePrimer.title}“</> : null}
+              {freePrimer && freeTopic ? " und" : ""}
+              {freeTopic ? <> das Thema „{freeTopic.name}“</> : null}. Alles andere hat ein 🔒.
+            </div>
+          </div>
+          <Button size="sm" variant="primary" onClick={() => nav("/freischalten")}>
+            Alles freischalten
+          </Button>
+        </div>
+      )}
+
       {/* Modes */}
       <div className="mt-5 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4">
         <ModeCard
+          locked={locked}
           title={planDone ? "Heute geschafft ✓" : `Heute: ${r.goal} Aufgaben`}
           desc={planDone ? "Tagesziel erreicht. Lust auf eine Extra-Runde?" : `${r.doneToday} von ${r.goal} gemacht · Checks, Fehler, nächste Themen`}
           emoji="📅"
           onClick={() => nav(`/session/PLAN/${subject}`)}
           primary
         />
-        <ModeCard title="Schnelltraining" desc="10 Aufgaben, passend zu deinen Schwächen" emoji="⚡" onClick={() => nav(`/session/QUICK/${subject}`)} />
-        <ModeCard title="Fehler-Training" desc={data.errorTopics ? `${data.errorTopics} Themen mit Fehlern üben` : "Noch keine Fehler — super!"} emoji="🩹" onClick={() => nav(`/session/ERRORS/${subject}`)} />
-        <ModeCard title="Prüfungs-Modus" desc={r.examPassed ? "Bestanden ✓ · nochmal wie im MSA" : "Schwere Aufgaben wie im MSA, ohne Hilfe"} emoji="🏁" onClick={() => nav(`/session/MSA/${subject}`)} />
+        <ModeCard locked={locked} title="Schnelltraining" desc="10 Aufgaben, passend zu deinen Schwächen" emoji="⚡" onClick={() => nav(`/session/QUICK/${subject}`)} />
+        <ModeCard locked={locked} title="Fehler-Training" desc={data.errorTopics ? `${data.errorTopics} Themen mit Fehlern üben` : "Noch keine Fehler — super!"} emoji="🩹" onClick={() => nav(`/session/ERRORS/${subject}`)} />
+        <ModeCard locked={locked} title="Prüfungs-Modus" desc={r.examPassed ? "Bestanden ✓ · nochmal wie im MSA" : "Schwere Aufgaben wie im MSA, ohne Hilfe"} emoji="🏁" onClick={() => nav(`/session/MSA/${subject}`)} />
       </div>
 
       <div className="mt-3 flex flex-wrap items-center gap-3">
@@ -200,9 +223,15 @@ export function DashboardView() {
                     {LEVEL_LABEL[level]} · {count} Aufgaben{hasLesson ? " · 📘 Lektion" : ""}
                   </div>
                 </Link>
-                <Button size="sm" variant="accent" onClick={() => nav(`/session/TOPIC/${subject}/${topic.id}`)}>
-                  Üben
-                </Button>
+                {topicOpen(access, content, topic.id) ? (
+                  <Button size="sm" variant="accent" onClick={() => nav(`/session/TOPIC/${subject}/${topic.id}`)}>
+                    {locked ? "Gratis üben" : "Üben"}
+                  </Button>
+                ) : (
+                  <Button size="sm" variant="ghost" onClick={() => nav(`/topic/${topic.id}`)} aria-label={`${topic.name}: gehört zur Vollversion`}>
+                    🔒
+                  </Button>
+                )}
               </div>
             ))}
           </div>
@@ -213,10 +242,17 @@ export function DashboardView() {
   );
 }
 
-function ModeCard({ title, desc, emoji, onClick, primary }: { title: string; desc: string; emoji: string; onClick(): void; primary?: boolean }) {
+function ModeCard({ title, desc, emoji, onClick, primary, locked }: { title: string; desc: string; emoji: string; onClick(): void; primary?: boolean; locked?: boolean }) {
   return (
     <button onClick={onClick} className={`group text-left rounded-3xl p-5 transition-all hover:-translate-y-0.5 ${primary ? "accent-gradient text-white shadow-[0_16px_40px_-16px_var(--accent,var(--brand))]" : "glass hover:bg-surface-2"}`}>
-      <div className="mb-2 text-3xl">{emoji}</div>
+      <div className="mb-2 flex items-start justify-between text-3xl">
+        <span>{emoji}</span>
+        {locked && (
+          <span className="text-xl" title="gehört zur Vollversion" aria-label="gehört zur Vollversion">
+            🔒
+          </span>
+        )}
+      </div>
       <div className="text-lg font-bold">{title}</div>
       <div className={`text-sm ${primary ? "text-white/85" : "text-ink-2"}`}>{desc}</div>
     </button>

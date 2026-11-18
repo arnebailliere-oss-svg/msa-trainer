@@ -1,7 +1,12 @@
 import { useEffect, useState, type ReactNode } from "react";
-import { HashRouter, Link, Navigate, Route, Routes, useLocation } from "react-router-dom";
+import { HashRouter, Link, Navigate, Route, Routes, useLocation, useParams } from "react-router-dom";
+import { useAccess } from "./app/entitlement";
 import { AppProvider, useApp } from "./app/state";
+import { primerOpen, sessionOpen, topicOpen } from "./core/access";
+import { IN_APP_SHELL } from "./core/edition";
+import type { Subject, TrainingMode } from "./core/types";
 import { Spinner } from "./ui/primitives";
+import { BuyView } from "./views/BuyView";
 import { DashboardView } from "./views/DashboardView";
 import { OverviewView } from "./views/OverviewView";
 import { PreviewView } from "./views/PreviewView";
@@ -77,6 +82,29 @@ function Header() {
   );
 }
 
+/** Locked parts of the full version open the unlock screen instead. The rules live in core/access.ts. */
+function SessionGate() {
+  const { content } = useApp();
+  const access = useAccess();
+  const p = useParams();
+  if (content && !sessionOpen(access, content, (p.subject as Subject) ?? "MATH", (p.mode as TrainingMode) ?? "QUICK", p.topicId)) return <BuyView what="Dieses Training" />;
+  return <SessionView />;
+}
+function TopicGate() {
+  const { content } = useApp();
+  const access = useAccess();
+  const { id } = useParams();
+  if (content && id && !topicOpen(access, content, id)) return <BuyView what="Dieses Thema" />;
+  return <TopicView />;
+}
+function PrimerGate() {
+  const { content } = useApp();
+  const access = useAccess();
+  const { id } = useParams();
+  if (content && id && !primerOpen(access, content, id)) return <BuyView what="Diese Eulen-Lektion" />;
+  return <PrimerView />;
+}
+
 function RequireProfile({ children }: { children: ReactNode }) {
   const { profile } = useApp();
   if (!profile) return <Navigate to="/" replace />;
@@ -111,7 +139,7 @@ function Shell() {
             path="/topic/:id"
             element={
               <RequireProfile>
-                <TopicView />
+                <TopicGate />
               </RequireProfile>
             }
           />
@@ -119,7 +147,7 @@ function Shell() {
             path="/session/:mode/:subject/:topicId?"
             element={
               <RequireProfile>
-                <SessionView />
+                <SessionGate />
               </RequireProfile>
             }
           />
@@ -151,11 +179,20 @@ function Shell() {
             path="/eule/:id"
             element={
               <RequireProfile>
-                <PrimerView />
+                <PrimerGate />
               </RequireProfile>
             }
           />
-          <Route path="/preview/:id" element={<PreviewView />} />
+          <Route
+            path="/freischalten"
+            element={
+              <RequireProfile>
+                <BuyView />
+              </RequireProfile>
+            }
+          />
+          {/* The task preview is a tool for the website; inside the apps it would open every task. */}
+          <Route path="/preview/:id" element={IN_APP_SHELL ? <Navigate to="/" replace /> : <PreviewView />} />
           <Route path="/formeln" element={<FormulaView />} />
           <Route path="/hilfe" element={<HelpView />} />
           <Route path="*" element={<Navigate to="/" replace />} />
