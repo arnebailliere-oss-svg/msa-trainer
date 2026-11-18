@@ -134,7 +134,7 @@
       {
         "chapter": "Zusammenfassen",
         "title": "Äpfel zu Äpfeln",
-        "body": "$3a + 2a = 5a$\n\n3 Äpfel + 2 Äpfel = 5 Äpfel",
+        "body": "$3a + 2a = 5a$\n\n3 Äpfel + 2 Äpfel = 5 Äpfel\n\nDas nennt man **zusammenfassen**.",
         "say": "Gleiche Buchstaben darfst du zusammenzählen. Das nennt man Zusammenfassen.",
         "tasks": [
           {
@@ -151,7 +151,7 @@
       },
       {
         "title": "Äpfel und Birnen",
-        "body": "$3a + 2b$ bleibt $3a + 2b$.\n\nAuch $x^2$ und $x$ sind **verschieden**:\n\n$x^2 + x$ bleibt so.",
+        "body": "$3a + 2b$ bleibt $3a + 2b$.\n\nDie Buchstaben sind **verschieden**.\n\nVerschiedene Buchstaben kannst du nicht zusammenzählen.",
         "say": "Äpfel und Birnen kann man nicht zu fünf Äpfeln machen. Das ist der häufigste Fehler überhaupt.",
         "tasks": [
           {
@@ -165,6 +165,23 @@
             "hint": "Sind die beiden Buchstaben gleich oder verschieden?"
           }
         ]
+      },
+      {
+        "title": "Auch die Hochzahl macht eine eigene Sorte",
+        "body": "$x^2$ heißt $x \\cdot x$. Das ist etwas anderes als $x$.\n\nMit $x = 3$: $x^2 = 9$, aber $x = 3$.\n\n$x^2 + x$ bleibt deshalb so stehen.",
+        "tasks": [
+          {
+            "text": "$x^2 + 2x$ ___",
+            "choices": [
+              "lässt sich nicht zusammenfassen",
+              "ergibt $3x^2$"
+            ],
+            "correct": "lässt sich nicht zusammenfassen",
+            "why": "Ein x mit Hochzahl 2 und ein x ohne Hochzahl sind verschiedene Sorten. Sie bleiben getrennt.",
+            "hint": "Haben beide Teile dieselbe Hochzahl am x?"
+          }
+        ],
+        "say": "Auch derselbe Buchstabe kann zu zwei Sorten gehören. Ein x mit der Hochzahl 2 ist etwas anderes als ein x ohne Hochzahl. Du siehst es, wenn du eine Zahl einsetzt. Darum darfst du die beiden nicht zusammenzählen."
       },
       {
         "title": "Erst sortieren, dann zusammenfassen",
@@ -336,7 +353,7 @@
       },
       {
         "title": "Minus vor der Klammer",
-        "body": "$-(x - 3) = -x + 3$\n\nDas Minus **dreht jedes Vorzeichen** in der Klammer um.",
+        "body": "Das Plus oder Minus vor einer Zahl heißt **Vorzeichen**.\n\n$-(x - 3) = -x + 3$\n\nDas Minus vor der Klammer dreht jedes Vorzeichen in der Klammer um.",
         "say": "Das Vorzeichen ist das Plus oder Minus, das vor einer Zahl oder einem Buchstaben steht. Ein Minus vor der Klammer dreht jedes Vorzeichen in der Klammer um. Aus x wird minus x, und aus minus 3 wird plus 3. Das brauchst du später beim Rechnen ständig.",
         "tasks": [
           {
@@ -404,8 +421,25 @@
         "say": "Weil dieses Muster so oft vorkommt, hat es einen Namen bekommen. Die Buchstaben a und b sind Platzhalter für die zwei Teile der Klammer. Die Formel sagt nur, was du eben ausgerechnet hast. Wenn du unsicher bist, rechne lieber jeden mit jedem. Das Ergebnis ist dasselbe."
       },
       {
-        "title": "Die zweite und die dritte",
-        "body": "Mit Minus: $(a - b)^2 = a^2 - 2ab + b^2$\n\nPlus mal Minus: $(a + b) \\cdot (a - b) = a^2 - b^2$\n\nBei der dritten fällt die Mitte weg: $+ab$ und $-ab$ heben sich auf.",
+        "title": "Die zweite binomische Formel",
+        "body": "$(a - b)^2 = a^2 - 2ab + b^2$\n\nWie die erste, nur wird die Mitte abgezogen.\n\nDas Ende bleibt plus, denn minus mal minus ergibt plus.",
+        "tasks": [
+          {
+            "text": "$(x - 4)^2 = $ ___",
+            "choices": [
+              "$x^2 - 8x + 16$",
+              "$x^2 - 8x - 16$"
+            ],
+            "correct": "$x^2 - 8x + 16$",
+            "why": "Die Mitte ist zweimal 4 mal x und wird abgezogen. Hinten steht 4 mal 4, und das bleibt plus.",
+            "hint": "Minus mal minus: Welches Zeichen steht dann vor der letzten Zahl?"
+          }
+        ],
+        "say": "Es gibt drei binomische Formeln, und alle stehen auf dem Spickzettel. Die zweite gilt, wenn in der Klammer ein Minus steht. Dann wird die Mitte abgezogen. Das Ende bleibt trotzdem plus, denn minus mal minus ergibt plus."
+      },
+      {
+        "title": "Die dritte binomische Formel",
+        "body": "$(a + b) \\cdot (a - b) = a^2 - b^2$\n\nIn der Mitte entstehen $-ab$ und $+ab$.\n\nDie beiden heben sich auf. Die Mitte fällt weg.",
         "tasks": [
           {
             "text": "$(x + 3) \\cdot (x - 3) = $ ___",
@@ -418,7 +452,7 @@
             "hint": "Was passiert mit den beiden mittleren Teilen, wenn einer plus und einer minus ist?"
           }
         ],
-        "say": "Es gibt drei binomische Formeln, und alle stehen auf dem Spickzettel. Bei der zweiten wird die Mitte abgezogen. Das Ende bleibt trotzdem plus, denn minus mal minus ergibt plus. Bei der dritten heben sich die beiden mittleren Teile gegenseitig auf."
+        "say": "Bei der dritten Formel steht in einer Klammer ein Plus und in der anderen ein Minus. Wenn du jeden mit jedem malnimmst, entstehen in der Mitte zwei Teile, die sich gegenseitig aufheben. Übrig bleiben nur vorn und hinten die beiden Quadrate."
       },
       {
         "title": "Das nimmst du mit",
@@ -440,9 +474,24 @@
     ],
     "vocab": [
       {
+        "term": "x",
+        "plain": "Ein Buchstabe als Kiste für eine Zahl, die du noch nicht kennst.",
+        "example": "Ein Ticket kostet $x$ Euro."
+      },
+      {
+        "term": "Platzhalter",
+        "plain": "Etwas, das den Platz für eine Zahl frei hält.",
+        "example": "$x$"
+      },
+      {
         "term": "Variable",
-        "plain": "Ein Buchstabe als Platzhalter für eine Zahl.",
+        "plain": "Ein Buchstabe, für den du jede Zahl einsetzen darfst.",
         "example": "$x$, $a$, $y$"
+      },
+      {
+        "term": "Koeffizient",
+        "plain": "Die Zahl vor dem Buchstaben. Sie sagt, wie oft er genommen wird.",
+        "example": "Bei $7x$ ist 7 der Koeffizient."
       },
       {
         "term": "Term",
@@ -450,39 +499,49 @@
         "example": "$3x + 5$"
       },
       {
-        "term": "Koeffizient",
-        "plain": "Die Zahl vor der Variable.",
-        "example": "Bei $7x$ ist 7 der Koeffizient."
+        "term": "Einsetzen",
+        "plain": "Für den Buchstaben eine Zahl schreiben und ausrechnen.",
+        "example": "$3x + 5$ mit $x = 4$: $3 \\cdot 4 + 5 = 17$"
       },
       {
         "term": "Zusammenfassen",
-        "plain": "Gleiche Buchstaben zusammenzählen.",
+        "plain": "Gleiche Sorten zusammenzählen.",
         "example": "$3a + 2a = 5a$"
       },
       {
+        "term": "Sorte",
+        "plain": "Teile mit demselben Buchstaben und derselben Hochzahl.",
+        "example": "$3a$ und $2a$ sind eine Sorte, $a$ und $b$ nicht."
+      },
+      {
+        "term": "Kommutativgesetz",
+        "plain": "Bei Plus und Mal darfst du die Reihenfolge tauschen.",
+        "example": "$3 + 5 = 5 + 3$"
+      },
+      {
+        "term": "Assoziativgesetz",
+        "plain": "Bei Plus und Mal darfst du die Klammern versetzen.",
+        "example": "$(2 + 3) + 7 = 2 + (3 + 7)$"
+      },
+      {
+        "term": "Distributivgesetz",
+        "plain": "Die Zahl vor der Klammer wird auf jeden in der Klammer verteilt.",
+        "example": "$2 \\cdot (x + 3) = 2x + 6$"
+      },
+      {
         "term": "Ausmultiplizieren",
-        "plain": "Die Zahl vor der Klammer auf jeden in der Klammer verteilen.",
-        "example": "$2(x + 3) = 2x + 6$"
+        "plain": "Eine Klammer auflösen, indem du die Zahl davor verteilst.",
+        "example": "$4 \\cdot (x + 2) = 4x + 8$"
       },
       {
         "term": "Ausklammern",
-        "plain": "Das Gemeinsame vor die Klammer ziehen, also rückwärts.",
-        "example": "$4x + 8 = 4(x + 2)$"
+        "plain": "Das Gemeinsame vor die Klammer ziehen. Das ist Ausmultiplizieren rückwärts.",
+        "example": "$4x + 8 = 4 \\cdot (x + 2)$"
       },
       {
-        "term": "Kommutativ",
-        "plain": "Vertauschen erlaubt (Plus und Mal).",
-        "example": "$a + b = b + a$"
-      },
-      {
-        "term": "Assoziativ",
-        "plain": "Klammern versetzen erlaubt (Plus und Mal).",
-        "example": "$(a + b) + c = a + (b + c)$"
-      },
-      {
-        "term": "Distributiv",
-        "plain": "Verteilen: Mal auf eine Klammer.",
-        "example": "$a(b + c) = ab + ac$"
+        "term": "Vorzeichen",
+        "plain": "Das Plus oder Minus vor einer Zahl oder einem Buchstaben.",
+        "example": "Bei $-3$ ist das Vorzeichen minus."
       },
       {
         "term": "binomische Formel",

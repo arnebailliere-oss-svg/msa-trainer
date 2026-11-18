@@ -98,6 +98,29 @@ migrate("primers/math_03_terme.json", (p, h) => {
     }),
   );
 
+  // One new thing per board: letters and powers apart, the word Vorzeichen on the board,
+  // the second and the third binomial formula apart.
+  h.body("Äpfel zu Äpfeln", "$3a + 2a = 5a$", "3 Äpfel + 2 Äpfel = 5 Äpfel", "Das nennt man **zusammenfassen**.");
+  h.body("Äpfel und Birnen", "$3a + 2b$ bleibt $3a + 2b$.", "Die Buchstaben sind **verschieden**.", "Verschiedene Buchstaben kannst du nicht zusammenzählen.");
+  h.after(
+    "Äpfel und Birnen",
+    b("Auch die Hochzahl macht eine eigene Sorte", ["$x^2$ heißt $x \\cdot x$. Das ist etwas anderes als $x$.", "Mit $x = 3$: $x^2 = 9$, aber $x = 3$.", "$x^2 + x$ bleibt deshalb so stehen."], "Auch derselbe Buchstabe kann zu zwei Sorten gehören. Ein x mit der Hochzahl 2 ist etwas anderes als ein x ohne Hochzahl. Du siehst es, wenn du eine Zahl einsetzt. Darum darfst du die beiden nicht zusammenzählen.", {
+      tasks: [k("$x^2 + 2x$ ___", "lässt sich nicht zusammenfassen", ["ergibt $3x^2$"], "Ein x mit Hochzahl 2 und ein x ohne Hochzahl sind verschiedene Sorten. Sie bleiben getrennt.", "Haben beide Teile dieselbe Hochzahl am x?")],
+    }),
+  );
+  h.body("Minus vor der Klammer", "Das Plus oder Minus vor einer Zahl heißt **Vorzeichen**.", "$-(x - 3) = -x + 3$", "Das Minus vor der Klammer dreht jedes Vorzeichen in der Klammer um.");
+
+  h.rename("Die zweite und die dritte", "Die zweite binomische Formel");
+  h.body("Die zweite binomische Formel", "$(a - b)^2 = a^2 - 2ab + b^2$", "Wie die erste, nur wird die Mitte abgezogen.", "Das Ende bleibt plus, denn minus mal minus ergibt plus.");
+  h.say("Die zweite binomische Formel", "Es gibt drei binomische Formeln, und alle stehen auf dem Spickzettel. Die zweite gilt, wenn in der Klammer ein Minus steht. Dann wird die Mitte abgezogen. Das Ende bleibt trotzdem plus, denn minus mal minus ergibt plus.");
+  h.tasks("Die zweite binomische Formel", k("$(x - 4)^2 = $ ___", "$x^2 - 8x + 16$", ["$x^2 - 8x - 16$"], "Die Mitte ist zweimal 4 mal x und wird abgezogen. Hinten steht 4 mal 4, und das bleibt plus.", "Minus mal minus: Welches Zeichen steht dann vor der letzten Zahl?"));
+  h.after(
+    "Die zweite binomische Formel",
+    b("Die dritte binomische Formel", ["$(a + b) \\cdot (a - b) = a^2 - b^2$", "In der Mitte entstehen $-ab$ und $+ab$.", "Die beiden heben sich auf. Die Mitte fällt weg."], "Bei der dritten Formel steht in einer Klammer ein Plus und in der anderen ein Minus. Wenn du jeden mit jedem malnimmst, entstehen in der Mitte zwei Teile, die sich gegenseitig aufheben. Übrig bleiben nur vorn und hinten die beiden Quadrate.", {
+      tasks: [k("$(x + 3) \\cdot (x - 3) = $ ___", "$x^2 - 9$", ["$x^2 - 6x + 9$"], "Die mittleren Teile sind plus 3 x und minus 3 x. Sie heben sich auf.", "Was passiert mit den beiden mittleren Teilen, wenn einer plus und einer minus ist?")],
+    }),
+  );
+
   h.chapters([
     ["Eine Kiste für eine Zahl", "Was ein x ist"],
     ["Äpfel zu Äpfeln", "Zusammenfassen"],
@@ -116,4 +139,23 @@ migrate("primers/math_03_terme.json", (p, h) => {
   // New topics, words and quiz: added after the old quiz explanations.
   p.vocab.push({ term: "binomische Formel", plain: "Ein festes Muster für eine Klammer hoch 2: vorn ein Quadrat, hinten ein Quadrat, in der Mitte zweimal das Produkt.", example: "$(a + b)^2 = a^2 + 2ab + b^2$" });
   h.quiz(q("Was ist $(x + 4)^2$?", "$x^2 + 8x + 16$", ["$x^2 + 16$", "$x^2 + 4x + 16$", "$2x + 8$"], "Vorn steht x hoch 2, hinten 4 mal 4, also 16. In der Mitte steht zweimal 4 x, also 8 x."));
+
+  // Word card: every word and letter of this lesson.
+  h.vocab(
+    { term: "x", plain: "Ein Buchstabe als Kiste für eine Zahl, die du noch nicht kennst.", example: "Ein Ticket kostet $x$ Euro." },
+    { term: "Platzhalter", plain: "Etwas, das den Platz für eine Zahl frei hält.", example: "$x$" },
+    { term: "Variable", plain: "Ein Buchstabe, für den du jede Zahl einsetzen darfst.", example: "$x$, $a$, $y$" },
+    { term: "Koeffizient", plain: "Die Zahl vor dem Buchstaben. Sie sagt, wie oft er genommen wird.", example: "Bei $7x$ ist 7 der Koeffizient." },
+    { term: "Term", plain: "Ein Rechenausdruck ohne Gleichheitszeichen.", example: "$3x + 5$" },
+    { term: "Einsetzen", plain: "Für den Buchstaben eine Zahl schreiben und ausrechnen.", example: "$3x + 5$ mit $x = 4$: $3 \\cdot 4 + 5 = 17$" },
+    { term: "Zusammenfassen", plain: "Gleiche Sorten zusammenzählen.", example: "$3a + 2a = 5a$" },
+    { term: "Sorte", plain: "Teile mit demselben Buchstaben und derselben Hochzahl.", example: "$3a$ und $2a$ sind eine Sorte, $a$ und $b$ nicht." },
+    { term: "Kommutativgesetz", plain: "Bei Plus und Mal darfst du die Reihenfolge tauschen.", example: "$3 + 5 = 5 + 3$" },
+    { term: "Assoziativgesetz", plain: "Bei Plus und Mal darfst du die Klammern versetzen.", example: "$(2 + 3) + 7 = 2 + (3 + 7)$" },
+    { term: "Distributivgesetz", plain: "Die Zahl vor der Klammer wird auf jeden in der Klammer verteilt.", example: "$2 \\cdot (x + 3) = 2x + 6$" },
+    { term: "Ausmultiplizieren", plain: "Eine Klammer auflösen, indem du die Zahl davor verteilst.", example: "$4 \\cdot (x + 2) = 4x + 8$" },
+    { term: "Ausklammern", plain: "Das Gemeinsame vor die Klammer ziehen. Das ist Ausmultiplizieren rückwärts.", example: "$4x + 8 = 4 \\cdot (x + 2)$" },
+    { term: "Vorzeichen", plain: "Das Plus oder Minus vor einer Zahl oder einem Buchstaben.", example: "Bei $-3$ ist das Vorzeichen minus." },
+    { term: "binomische Formel", plain: "Ein festes Muster für eine Klammer hoch 2: vorn ein Quadrat, hinten ein Quadrat, in der Mitte zweimal das Produkt.", example: "$(a + b)^2 = a^2 + 2ab + b^2$" },
+  );
 });

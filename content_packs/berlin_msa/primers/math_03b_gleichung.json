@@ -111,8 +111,24 @@
       {
         "chapter": "Der sichere Weg zur Lösung",
         "title": "Auf beiden Seiten das Gleiche",
-        "body": "Nimmst du links 3 weg, musst du rechts auch 3 wegnehmen.\n\n$2x + 3 = 11 \\quad | -3$\n\n$2x = 8$",
-        "say": "Stell dir wieder die Waage vor. Wenn du nur links etwas wegnimmst, kippt sie. Deshalb machst du auf beiden Seiten immer dasselbe. Der senkrechte Strich bedeutet: Das, was dahinter steht, geschieht auf beiden Seiten. Fachleute nennen so einen Schritt Äquivalenzumformung.",
+        "body": "$2x + 3 = 11$\n\nDie 3 stört. Du nimmst sie links weg.\n\nDann musst du rechts auch 3 wegnehmen. Sonst kippt die Waage.\n\nÜbrig bleibt: $2x = 8$",
+        "say": "Stell dir wieder die Waage vor. Wenn du nur links etwas wegnimmst, kippt sie. Deshalb machst du auf beiden Seiten immer dasselbe. Links verschwindet die 3, und rechts werden aus 11 nur noch 8.",
+        "tasks": [
+          {
+            "text": "$x + 5 = 9$. Du nimmst links 5 weg. Rechts steht dann ___.",
+            "choices": [
+              "4",
+              "9"
+            ],
+            "correct": "4",
+            "why": "Auf beiden Seiten werden 5 weggenommen. 9 minus 5 ist 4.",
+            "hint": "Was musst du rechts tun, wenn du links 5 wegnimmst?"
+          }
+        ]
+      },
+      {
+        "title": "Der Strich hinter der Gleichung",
+        "body": "$2x + 3 = 11 \\quad | -3$\n\nDer senkrechte Strich heißt: Das mache ich auf **beiden** Seiten.\n\nDarunter schreibst du, was übrig bleibt: $2x = 8$",
         "tasks": [
           {
             "text": "$x + 7 = 12 \\quad | -7$ ergibt ___.",
@@ -124,7 +140,8 @@
             "why": "Auf beiden Seiten werden 7 abgezogen: 12 minus 7 ist 5.",
             "hint": "Was passiert mit der 12, wenn du auf beiden Seiten 7 abziehst?"
           }
-        ]
+        ],
+        "say": "Damit du nicht jedes Mal einen ganzen Satz schreiben musst, gibt es eine Abkürzung. Hinter die Gleichung kommt ein senkrechter Strich und dahinter die Rechnung. Das bedeutet: Das geschieht auf beiden Seiten. Fachleute nennen so einen Schritt Äquivalenzumformung."
       },
       {
         "title": "Dann teilen",
@@ -205,8 +222,8 @@
       {
         "chapter": "Schwierigere Gleichungen",
         "title": "x auf beiden Seiten",
-        "body": "$5x + 3 = 3x + 11$\n\nNimm auf beiden Seiten $3x$ weg: $| -3x$\n\nLinks bleibt $2x + 3$. Rechts bleibt $11$.\n\n$2x + 3 = 11$\n\nAb hier wie gewohnt: $| -3$, dann $| :2$\n\n$x = 4$",
-        "say": "Erst alle x auf eine Seite. Dann wie gewohnt. Das Ziel ist immer: x steht allein.",
+        "body": "$5x + 3 = 3x + 11$\n\nDas $x$ steht links und rechts.\n\nNimm auf beiden Seiten $3x$ weg: $| -3x$\n\nLinks bleibt $2x + 3$. Rechts bleibt $11$.",
+        "say": "Manchmal steht das x auf beiden Seiten. Dann holst du zuerst alle x auf eine Seite. Dafür nimmst du auf beiden Seiten gleich viele x weg. Rechts bleibt dann kein x mehr übrig.",
         "tasks": [
           {
             "text": "$4x = x + 9$. Der erste Schritt ist ___.",
@@ -219,6 +236,23 @@
             "hint": "Auf welcher Seite stört das x noch? Wie bekommst du es dort weg?"
           }
         ]
+      },
+      {
+        "title": "Dann wie gewohnt",
+        "body": "$2x + 3 = 11$\n\n$| -3$: $2x = 8$\n\n$| :2$: $x = 4$",
+        "tasks": [
+          {
+            "text": "$4x = x + 9 \\quad | -x$ ergibt ___.",
+            "choices": [
+              "$3x = 9$",
+              "$4x = 9$"
+            ],
+            "correct": "$3x = 9$",
+            "why": "Links bleiben von vier x noch drei x. Rechts bleibt die 9.",
+            "hint": "Wie viele x bleiben links, wenn du von vier x eines wegnimmst?"
+          }
+        ],
+        "say": "Jetzt steht das x nur noch auf einer Seite. Diese Gleichung kennst du schon. Du räumst die Zahl ohne x weg und teilst dann. Das Ziel ist immer dasselbe: Das x steht am Ende allein."
       },
       {
         "title": "Erst die Klammer auflösen",
@@ -238,9 +272,26 @@
         "say": "Wenn in einer Gleichung eine Klammer steht, löst du sie zuerst auf. Das kennst du aus der Lektion über Terme: Die 2 wird auf jeden in der Klammer verteilt. Danach sieht die Gleichung aus wie alle anderen, und du gehst den gewohnten Weg."
       },
       {
-        "title": "Wie viele Lösungen?",
-        "body": "$x + 1 = x + 1$: **immer** wahr\n\n$x = x + 1$: **nie** wahr\n\n$x^2 = 9$: $x = 3$ oder $x = -3$\n\nAlle Lösungen zusammen heißen **Lösungsmenge**.",
-        "say": "Meistens gibt es genau eine Lösung, aber nicht immer. Bei x hoch 2 gleich 9 passen zwei Zahlen: 3 mal 3 ist 9, und minus 3 mal minus 3 ist auch 9. Genau solche Fälle werden in der Prüfung gern gefragt.",
+        "title": "Immer wahr oder nie wahr",
+        "body": "$x + 1 = x + 1$ stimmt für **jede** Zahl.\n\n$x = x + 1$ stimmt für **keine** Zahl.\n\nKeine Zahl ist um 1 größer als sie selbst.",
+        "tasks": [
+          {
+            "text": "$x + 2 = x + 2$ stimmt für ___.",
+            "choices": [
+              "jede Zahl",
+              "keine Zahl"
+            ],
+            "correct": "jede Zahl",
+            "why": "Links und rechts steht genau dasselbe. Das ist immer gleich.",
+            "hint": "Vergleich die linke und die rechte Seite. Unterscheiden sie sich?"
+          }
+        ],
+        "say": "Meistens hat eine Gleichung genau eine Lösung, aber nicht immer. Steht links und rechts genau dasselbe, passt jede Zahl. Und manche Gleichungen können gar nicht stimmen, egal welche Zahl du einsetzt."
+      },
+      {
+        "title": "Mehr als eine Lösung",
+        "body": "$x^2 = 9$\n\n$3 \\cdot 3 = 9$. Also passt $x = 3$.\n\n$(-3) \\cdot (-3) = 9$. Also passt auch $x = -3$.\n\nAlle Lösungen zusammen heißen **Lösungsmenge**.",
+        "say": "Bei x hoch 2 gleich 9 passen zwei Zahlen. 3 mal 3 ist 9, und minus 3 mal minus 3 ist auch 9, denn minus mal minus ergibt plus. Genau solche Fälle werden in der Prüfung gern gefragt.",
         "tasks": [
           {
             "text": "$x^2 = 16$ hat ___.",
@@ -274,9 +325,19 @@
     ],
     "vocab": [
       {
-        "term": "Gleichung",
-        "plain": "Zwei Terme mit einem Gleichheitszeichen dazwischen.",
+        "term": "x",
+        "plain": "Die gesuchte Zahl. Man nennt sie auch die Unbekannte.",
         "example": "$2x + 3 = 11$"
+      },
+      {
+        "term": "Gleichung",
+        "plain": "Ein Zahlenrätsel in kurzer Schreibweise. Links und rechts vom Gleichheitszeichen steht derselbe Wert.",
+        "example": "$2x + 3 = 11$"
+      },
+      {
+        "term": "Gleichheitszeichen",
+        "plain": "Das Zeichen =. Links und rechts davon steht derselbe Wert.",
+        "example": "$7 + 3 = 6 + 4$"
       },
       {
         "term": "Lösung",
@@ -284,19 +345,14 @@
         "example": "$x = 4$"
       },
       {
-        "term": "Lösungsmenge",
-        "plain": "Alle Lösungen zusammen, in geschweiften Klammern.",
-        "example": "$L = \\{4\\}$"
+        "term": "$|$",
+        "plain": "Der Strich hinter der Gleichung. Was dahinter steht, machst du auf beiden Seiten.",
+        "example": "$2x + 3 = 11 \\quad | -3$"
       },
       {
         "term": "Äquivalenzumformung",
-        "plain": "Ein erlaubter Schritt auf beiden Seiten, der die Lösung nicht ändert.",
+        "plain": "Ein Schritt, der auf beiden Seiten dasselbe tut. Die Lösung bleibt dabei gleich.",
         "example": "$| -3$ oder $| :2$"
-      },
-      {
-        "term": "Probe",
-        "plain": "Lösung einsetzen und nachrechnen.",
-        "example": "$2 \\cdot 4 + 3 = 11$ ✓"
       },
       {
         "term": "Isolieren",
@@ -304,9 +360,19 @@
         "example": "$x = 4$"
       },
       {
-        "term": "Unbekannte",
-        "plain": "Ein anderes Wort für die gesuchte Variable.",
-        "example": "meist $x$"
+        "term": "Probe",
+        "plain": "Die Lösung einsetzen und nachrechnen.",
+        "example": "$2 \\cdot 4 + 3 = 11$ ✓"
+      },
+      {
+        "term": "Rüberbringen",
+        "plain": "Ein Spruch für: auf beiden Seiten dasselbe abziehen oder dazuzählen.",
+        "example": "Die 3 rüberbringen heißt $| -3$."
+      },
+      {
+        "term": "Lösungsmenge",
+        "plain": "Alle Lösungen zusammen, in geschweiften Klammern.",
+        "example": "$L = \\{-3; 3\\}$"
       }
     ],
     "quiz": [

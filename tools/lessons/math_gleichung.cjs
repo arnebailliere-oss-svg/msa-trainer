@@ -72,6 +72,37 @@ migrate("primers/math_03b_gleichung.json", (p, h) => {
     }),
   );
 
+  // One new thing per board: the idea of doing the same on both sides before the stroke notation,
+  // x on both sides in two boards, the special cases apart.
+  h.body("Auf beiden Seiten das Gleiche", "$2x + 3 = 11$", "Die 3 stört. Du nimmst sie links weg.", "Dann musst du rechts auch 3 wegnehmen. Sonst kippt die Waage.", "Übrig bleibt: $2x = 8$");
+  h.say("Auf beiden Seiten das Gleiche", "Stell dir wieder die Waage vor. Wenn du nur links etwas wegnimmst, kippt sie. Deshalb machst du auf beiden Seiten immer dasselbe. Links verschwindet die 3, und rechts werden aus 11 nur noch 8.");
+  h.tasks("Auf beiden Seiten das Gleiche", k("$x + 5 = 9$. Du nimmst links 5 weg. Rechts steht dann ___.", "4", ["9"], "Auf beiden Seiten werden 5 weggenommen. 9 minus 5 ist 4.", "Was musst du rechts tun, wenn du links 5 wegnimmst?"));
+  h.after(
+    "Auf beiden Seiten das Gleiche",
+    b("Der Strich hinter der Gleichung", ["$2x + 3 = 11 \\quad | -3$", "Der senkrechte Strich heißt: Das mache ich auf **beiden** Seiten.", "Darunter schreibst du, was übrig bleibt: $2x = 8$"], "Damit du nicht jedes Mal einen ganzen Satz schreiben musst, gibt es eine Abkürzung. Hinter die Gleichung kommt ein senkrechter Strich und dahinter die Rechnung. Das bedeutet: Das geschieht auf beiden Seiten. Fachleute nennen so einen Schritt Äquivalenzumformung.", {
+      tasks: [k("$x + 7 = 12 \\quad | -7$ ergibt ___.", "$x = 5$", ["$x = 19$"], "Auf beiden Seiten werden 7 abgezogen: 12 minus 7 ist 5.", "Was passiert mit der 12, wenn du auf beiden Seiten 7 abziehst?")],
+    }),
+  );
+
+  h.body("x auf beiden Seiten", "$5x + 3 = 3x + 11$", "Das $x$ steht links und rechts.", "Nimm auf beiden Seiten $3x$ weg: $| -3x$", "Links bleibt $2x + 3$. Rechts bleibt $11$.");
+  h.say("x auf beiden Seiten", "Manchmal steht das x auf beiden Seiten. Dann holst du zuerst alle x auf eine Seite. Dafür nimmst du auf beiden Seiten gleich viele x weg. Rechts bleibt dann kein x mehr übrig.");
+  h.after(
+    "x auf beiden Seiten",
+    b("Dann wie gewohnt", ["$2x + 3 = 11$", "$| -3$: $2x = 8$", "$| :2$: $x = 4$"], "Jetzt steht das x nur noch auf einer Seite. Diese Gleichung kennst du schon. Du räumst die Zahl ohne x weg und teilst dann. Das Ziel ist immer dasselbe: Das x steht am Ende allein.", {
+      tasks: [k("$4x = x + 9 \\quad | -x$ ergibt ___.", "$3x = 9$", ["$4x = 9$"], "Links bleiben von vier x noch drei x. Rechts bleibt die 9.", "Wie viele x bleiben links, wenn du von vier x eines wegnimmst?")],
+    }),
+  );
+
+  h.rename("Wie viele Lösungen?", "Mehr als eine Lösung");
+  h.before(
+    "Mehr als eine Lösung",
+    b("Immer wahr oder nie wahr", ["$x + 1 = x + 1$ stimmt für **jede** Zahl.", "$x = x + 1$ stimmt für **keine** Zahl.", "Keine Zahl ist um 1 größer als sie selbst."], "Meistens hat eine Gleichung genau eine Lösung, aber nicht immer. Steht links und rechts genau dasselbe, passt jede Zahl. Und manche Gleichungen können gar nicht stimmen, egal welche Zahl du einsetzt.", {
+      tasks: [k("$x + 2 = x + 2$ stimmt für ___.", "jede Zahl", ["keine Zahl"], "Links und rechts steht genau dasselbe. Das ist immer gleich.", "Vergleich die linke und die rechte Seite. Unterscheiden sie sich?")],
+    }),
+  );
+  h.body("Mehr als eine Lösung", "$x^2 = 9$", "$3 \\cdot 3 = 9$. Also passt $x = 3$.", "$(-3) \\cdot (-3) = 9$. Also passt auch $x = -3$.", "Alle Lösungen zusammen heißen **Lösungsmenge**.");
+  h.say("Mehr als eine Lösung", "Bei x hoch 2 gleich 9 passen zwei Zahlen. 3 mal 3 ist 9, und minus 3 mal minus 3 ist auch 9, denn minus mal minus ergibt plus. Genau solche Fälle werden in der Prüfung gern gefragt.");
+
   h.chapters([
     ["Ein Rätsel", "Was eine Gleichung ist"],
     ["Auf beiden Seiten das Gleiche", "Der sichere Weg zur Lösung"],
@@ -86,4 +117,18 @@ migrate("primers/math_03b_gleichung.json", (p, h) => {
     "4 mal 4 ist 16, und minus 4 mal minus 4 ist ebenfalls 16. Deshalb gibt es zwei Lösungen.",
   ]);
   h.quiz(q("Löse $3x - 4 = 11$.", "$x = 5$", ["$x = 7$", "$x = 15$", "$x = \\frac{7}{3}$"], "Zuerst auf beiden Seiten plus 4, dann steht 3x gleich 15 da. Geteilt durch 3 ergibt das 5."));
+
+  // Word card: every word and sign of this lesson.
+  h.vocab(
+    { term: "x", plain: "Die gesuchte Zahl. Man nennt sie auch die Unbekannte.", example: "$2x + 3 = 11$" },
+    { term: "Gleichung", plain: "Ein Zahlenrätsel in kurzer Schreibweise. Links und rechts vom Gleichheitszeichen steht derselbe Wert.", example: "$2x + 3 = 11$" },
+    { term: "Gleichheitszeichen", plain: "Das Zeichen =. Links und rechts davon steht derselbe Wert.", example: "$7 + 3 = 6 + 4$" },
+    { term: "Lösung", plain: "Die Zahl, die die Gleichung wahr macht.", example: "$x = 4$" },
+    { term: "$|$", plain: "Der Strich hinter der Gleichung. Was dahinter steht, machst du auf beiden Seiten.", example: "$2x + 3 = 11 \\quad | -3$" },
+    { term: "Äquivalenzumformung", plain: "Ein Schritt, der auf beiden Seiten dasselbe tut. Die Lösung bleibt dabei gleich.", example: "$| -3$ oder $| :2$" },
+    { term: "Isolieren", plain: "Das x allein auf eine Seite stellen.", example: "$x = 4$" },
+    { term: "Probe", plain: "Die Lösung einsetzen und nachrechnen.", example: "$2 \\cdot 4 + 3 = 11$ ✓" },
+    { term: "Rüberbringen", plain: "Ein Spruch für: auf beiden Seiten dasselbe abziehen oder dazuzählen.", example: "Die 3 rüberbringen heißt $| -3$." },
+    { term: "Lösungsmenge", plain: "Alle Lösungen zusammen, in geschweiften Klammern.", example: "$L = \\{-3; 3\\}$" },
+  );
 });
