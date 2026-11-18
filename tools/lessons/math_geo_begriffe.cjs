@@ -102,6 +102,69 @@ migrate("primers/math_09_geometrie.json", (p, h) => {
   h.body("Umfang: einmal außen rum", "Ein Rechteck: 5 cm lang und 3 cm breit.", "Der **Umfang** ist der Weg einmal außen herum.", "$5 + 3 + 5 + 3 = 16$ cm", "Der **Zaun** um die Wiese.");
   h.body("Fläche: was drin ist", "Länge mal Breite: $5 \\cdot 3 = 15$", "Das **Gras** auf der Wiese.", "Die Größe der Fläche heißt **Flächeninhalt**.", "Gemessen in **Quadrat**-Zentimetern: $15\\ \\text{cm}^2$", "Kurz schreibt man $U$ für den Umfang und $A$ für die Fläche.");
 
+  // One new thing per board: the area before its unit and before the letters U and A, corners and sides
+  // before the angle names, the height before the triangle area, each shape before its area, radius before diameter.
+  h.body("Fläche: was drin ist", "Die **Fläche** ist das, was innerhalb des Randes liegt.", "Das **Gras** auf der Wiese.", "Beim Rechteck rechnest du Länge mal Breite.", "$5 \\cdot 3 = 15$");
+  h.say("Fläche: was drin ist", "Die Fläche ist das, was innerhalb des Randes liegt. Beim Rechteck rechnest du Länge mal Breite. In welcher Einheit man das Ergebnis angibt, zeigt die nächste Tafel.");
+  h.body("Die kleine 2", "Eine Fläche misst man in Quadraten.", "$15\\ \\text{cm}^2$ heißt: 15 Quadrate von 1 cm mal 1 cm.", "Die Größe der Fläche heißt **Flächeninhalt**.", "Umfang: cm. Fläche: $\\text{cm}^2$.");
+  h.after(
+    "Die kleine 2",
+    b("Zwei Buchstaben: U und A", ["Für den Umfang schreibt man kurz $U$.", "Für den Flächeninhalt schreibt man kurz $A$.", "Beim Rechteck von eben: $U = 16$ cm und $A = 15\\ \\text{cm}^2$"], "Auf dem Formelblatt stehen statt der Wörter Buchstaben. U steht für Umfang. A steht für den Flächeninhalt, das kommt vom englischen Wort area. Mehr bedeuten die beiden Buchstaben nicht.", {
+      tasks: [k("Auf dem Formelblatt steht $A = 24\\ \\text{cm}^2$. Gemeint ist ___.", "der Flächeninhalt", ["der Umfang"], "Der Buchstabe A steht für den Flächeninhalt. Auch die kleine 2 passt dazu.", "Für welches Wort steht der Buchstabe A?")],
+    }),
+  );
+
+  {
+    const tri = h.board("Das Dreieck beschriften").figure;
+    h.body("Das Dreieck beschriften", "Die Ecken bekommen große Buchstaben: **A, B, C**.", "Die Seiten bekommen kleine Buchstaben: **a, b, c**.", "Jede Seite liegt **gegenüber** ihrer Ecke: a gegenüber von A.");
+    h.say("Das Dreieck beschriften", "Für Dreiecke gibt es eine feste Ordnung. Die Ecken bekommen große Buchstaben und die Seiten kleine. Die Seite a liegt immer gegenüber von der Ecke A. Sie berührt die Ecke A also nicht.");
+    h.body("Was ist ein Winkel?", "Ein Winkel ist eine **Drehung**.", "Man misst ihn in **Grad**. Das Zeichen ist °.", "Einmal ganz herum: 360°", "Ein Viertel davon: 90°. Das ist der **rechte Winkel**.");
+    h.before(
+      "Winkelsumme im Dreieck",
+      b("Die Winkel im Dreieck", ["Die Winkel bekommen griechische Buchstaben.", "$\\alpha$ (alpha) liegt an der Ecke A.", "$\\beta$ (beta) liegt an der Ecke B.", "$\\gamma$ (gamma) liegt an der Ecke C."], "Jetzt bekommen auch die drei Winkel im Dreieck Namen. Man nimmt dafür griechische Buchstaben: Alpha, Beta und Gamma. Die Reihenfolge ist dieselbe wie bei den Ecken. Alpha gehört zu A, Beta zu B und Gamma zu C.", {
+        figure: tri,
+        tasks: [k("Der Winkel an der Ecke B heißt ___.", "$\\beta$", ["$\\alpha$"], "Beta ist der zweite griechische Buchstabe und gehört zur zweiten Ecke, zu B.", "Welcher griechische Buchstabe klingt wie das B?")],
+      }),
+    );
+
+    const high = h.board("Die Höhe").figure;
+    h.body("Die Höhe", "Die Seite, auf der das Dreieck steht, heißt **Grundseite**. Kurz: $g$", "Die **Höhe** geht von der Ecke oben gerade hinunter auf die Grundseite. Kurz: $h$", "Sie steht **senkrecht** darauf: Dort ist ein rechter Winkel.");
+    h.say("Die Höhe", "Die Höhe geht von einer Ecke gerade hinunter auf die Seite gegenüber, wie ein Lot. Senkrecht bedeutet, dass dort ein rechter Winkel entsteht. Die Höhe ist also nicht die schräge Seite, sondern der kürzeste Weg nach unten.");
+    h.tasks("Die Höhe", k("Die Höhe und die Grundseite bilden einen Winkel von ___.", "90°", ["180°"], "Senkrecht heißt: Es entsteht ein rechter Winkel, und der hat 90 Grad.", "Wie viel Grad hat ein rechter Winkel?"));
+    h.after(
+      "Die Höhe",
+      b("Fläche vom Dreieck", ["Ein Dreieck ist ein halbes Rechteck.", "Darum: Grundseite mal Höhe, geteilt durch 2.", "Beispiel: $g = 8$ cm und $h = 5$ cm", "$8 \\cdot 5 = 40$, die Hälfte ist $20\\ \\text{cm}^2$", "Auf dem Formelblatt: $A = \\frac{g \\cdot h}{2}$"], "Warum wird durch 2 geteilt? Ein Dreieck ist ein halbes Rechteck. Zeichne die andere Hälfte dazu, dann siehst du es. Du rechnest also erst wie beim Rechteck und nimmst dann die Hälfte.", {
+        figure: high,
+        tasks: [k("Dreieck mit $g = 6$ cm und $h = 4$ cm. Die Fläche ist ___.", "$12\\ \\text{cm}^2$", ["$24\\ \\text{cm}^2$"], "6 mal 4 ist 24, und die Hälfte davon ist 12.", "Du hast 6 mal 4 gerechnet. Was fehlt noch, weil es ein Dreieck ist?")],
+      }),
+    );
+
+    const para = h.board("Das Parallelogramm").figure;
+    h.body("Das Parallelogramm", "Ein **Parallelogramm** ist ein schief gedrücktes Rechteck.", "Gegenüberliegende Seiten sind gleich lang.", "Sie sind auch **parallel**: Sie laufen nebeneinander her wie Schienen.");
+    h.say("Das Parallelogramm", "Stell dir ein Rechteck aus vier Stäben vor und drück es zur Seite. Die Seiten bleiben gleich lang, aber die Ecken sind keine rechten Winkel mehr. Die Seiten, die sich gegenüberliegen, laufen immer noch nebeneinander her.");
+    h.tasks("Das Parallelogramm", k("Ein Parallelogramm hat oben eine Seite von 7 cm. Die Seite unten ist ___ lang.", "7 cm", ["14 cm"], "Gegenüberliegende Seiten sind im Parallelogramm gleich lang.", "Was gilt für zwei Seiten, die sich im Parallelogramm gegenüberliegen?"));
+    h.after(
+      "Das Parallelogramm",
+      b("Fläche vom Parallelogramm", ["Fläche: Grundseite mal Höhe", "$A = g \\cdot h$", "Die Höhe steht senkrecht auf der Grundseite.", "Die schräge Seite zählt nicht."], "Schneide in Gedanken links das schräge Dreieck ab und setz es rechts wieder an. Dann hast du ein Rechteck mit derselben Grundseite und derselben Höhe. Deshalb rechnest du wie beim Rechteck. Die schräge Seite brauchst du nur für den Umfang.", {
+        figure: para,
+        tasks: [k("Ein Parallelogramm hat die Grundseite 6 cm, die Höhe 3 cm und die schräge Seite 4 cm. Seine Fläche ist ___.", "$18\\ \\text{cm}^2$", ["$24\\ \\text{cm}^2$"], "Grundseite mal Höhe: 6 mal 3 ergibt 18. Die schräge Seite zählt nicht.", "Welche der beiden Längen steht senkrecht auf der Grundseite?")],
+      }),
+    );
+
+    const circle = h.board("Der Kreis").figure;
+    h.body("Der Kreis", "Alle Punkte auf dem Rand sind gleich weit von der Mitte entfernt.", "Der **Radius** reicht von der Mitte bis zum Rand.", "Kurz: $r$");
+    h.say("Der Kreis", "Einen Kreis zeichnest du mit dem Zirkel. Die Spitze steht in der Mitte, und der Stift bleibt immer gleich weit von ihr weg. Dieser Abstand ist der Radius.");
+    h.tasks("Der Kreis", k("Ein Zirkel ist 5 cm weit geöffnet. Der Kreis bekommt den Radius ___.", "5 cm", ["10 cm"], "Der Abstand zwischen Spitze und Stift ist der Radius.", "Wie weit ist der Stift von der Mitte entfernt?"));
+    h.after(
+      "Der Kreis",
+      b("Der Durchmesser", ["Der **Durchmesser** geht quer durch die Mitte, von Rand zu Rand.", "Kurz: $d$", "Er ist doppelt so lang wie der Radius: $d = 2 \\cdot r$"], "Der Durchmesser geht von Rand zu Rand durch die Mitte. Er besteht aus zwei Radien hintereinander und ist deshalb doppelt so lang. Kennst du den einen, kennst du also auch den anderen.", {
+        figure: circle,
+        tasks: [k("Ein Fahrradreifen hat den Radius 30 cm. Sein Durchmesser ist ___.", "60 cm", ["15 cm"], "Der Durchmesser ist zweimal der Radius: 2 mal 30.", "Ist der Durchmesser länger oder kürzer als der Radius?")],
+      }),
+    );
+  }
+  h.body("Umfang vom Kreis", "Der Rand ist etwa 3,14-mal so lang wie der Durchmesser.", "Diese Zahl kennst du schon: $\\pi$", "$U = \\pi \\cdot d$", "Beispiel: $d = 60$ cm, also $U \\approx 3{,}14 \\cdot 60 = 188{,}4$ cm");
+
   h.chapters([
     ["Umfang: einmal außen rum", "Umfang und Fläche"],
     ["Das Dreieck beschriften", "Dreiecke und Winkel"],
@@ -127,5 +190,38 @@ migrate("primers/math_09_geometrie.json", (p, h) => {
   h.quiz(
     q("Ein Trapez hat die parallelen Seiten 6 cm und 4 cm und die Höhe 3 cm. Wie groß ist die Fläche?", "15 cm²", ["30 cm²", "13 cm²", "72 cm²"], "6 plus 4 ist 10, die Hälfte ist 5. 5 mal 3 ergibt 15 Quadratzentimeter."),
     q("Ein Kreis hat den Radius 5 cm. Wie lang ist sein Umfang ungefähr?", "31,4 cm", ["15,7 cm", "78,5 cm", "10 cm"], "Der Durchmesser ist 10 cm. 10 mal 3,14 ergibt 31,4 cm."),
+  );
+
+  // Word card: every word, sign and letter of this lesson.
+  h.vocab(
+    { term: "Umfang", plain: "Der Weg einmal außen herum. Eine Länge.", example: "Rechteck 5 cm mal 3 cm: 16 cm" },
+    { term: "U", plain: "Der Buchstabe für den Umfang.", example: "$U = 16$ cm" },
+    { term: "Fläche", plain: "Das, was innerhalb des Randes liegt.", example: "Das Gras auf der Wiese." },
+    { term: "Flächeninhalt", plain: "Die Größe der Fläche. Gemessen in Quadraten, zum Beispiel cm².", example: "$15\\ \\text{cm}^2$" },
+    { term: "A", plain: "Auf dem Formelblatt der Buchstabe für den Flächeninhalt. Im Dreieck heißt auch eine Ecke A.", example: "$A = 15\\ \\text{cm}^2$" },
+    { term: "a", plain: "Im Dreieck die Seite gegenüber von Ecke A. Genauso liegen b und c gegenüber von B und C.", example: "$a = 8$ cm" },
+    { term: "Winkel", plain: "Eine Drehung, gemessen in Grad.", example: "Die Ecke eines Blatts hat 90°." },
+    { term: "Grad", plain: "Die Einheit für Winkel. Das Zeichen ist °.", example: "Eine ganze Drehung hat 360°." },
+    { term: "rechter Winkel", plain: "Ein Winkel von genau 90°.", example: "Die Ecke von einem Blatt Papier." },
+    { term: "spitz", plain: "Ein Winkel unter 90°.", example: "40°" },
+    { term: "stumpf", plain: "Ein Winkel zwischen 90° und 180°.", example: "120°" },
+    { term: "gestreckt", plain: "Ein Winkel von genau 180°. Er sieht aus wie eine gerade Linie.", example: "180°" },
+    { term: "$\\alpha$", plain: "Alpha, der Winkel an der Ecke A. Genauso gehört $\\beta$ (beta) zu B und $\\gamma$ (gamma) zu C.", example: "$\\alpha = 70°$" },
+    { term: "Winkelsumme", plain: "Alle Winkel zusammen. Im Dreieck sind das immer 180°.", example: "$\\alpha + \\beta + \\gamma = 180°$" },
+    { term: "Grundseite", plain: "Die Seite, auf der die Höhe steht. Kurz: g.", example: "$g = 8$ cm" },
+    { term: "g", plain: "Der Buchstabe für die Grundseite.", example: "$A = g \\cdot h$" },
+    { term: "Höhe", plain: "Die Strecke von der Ecke oben gerade hinunter auf die Grundseite. Kurz: h.", example: "$h = 5$ cm" },
+    { term: "h", plain: "Der Buchstabe für die Höhe.", example: "$A = g \\cdot h$" },
+    { term: "senkrecht", plain: "Im rechten Winkel zueinander.", example: "Die Höhe steht senkrecht auf der Grundseite." },
+    { term: "gleichschenklig", plain: "Ein Dreieck mit zwei gleich langen Seiten. Die zwei Winkel an der dritten Seite sind gleich groß.", example: "zweimal 70° und einmal 40°" },
+    { term: "gleichseitig", plain: "Ein Dreieck mit drei gleich langen Seiten. Alle Winkel haben 60°.", example: "$a = b = c$" },
+    { term: "Parallelogramm", plain: "Ein schief gedrücktes Rechteck. Gegenüberliegende Seiten sind gleich lang und parallel.", example: "$A = g \\cdot h$" },
+    { term: "parallel", plain: "Zwei Linien laufen nebeneinander her wie Schienen und treffen sich nie.", example: "Die Linien im Schulheft." },
+    { term: "Trapez", plain: "Ein Viereck mit zwei parallelen Seiten, die verschieden lang sind.", example: "$A = \\frac{1}{2} \\cdot (a + c) \\cdot h$" },
+    { term: "Radius", plain: "Der Abstand von der Mitte eines Kreises bis zum Rand. Kurz: r.", example: "$r = 30$ cm" },
+    { term: "r", plain: "Der Buchstabe für den Radius.", example: "$A = \\pi \\cdot r^2$" },
+    { term: "Durchmesser", plain: "Einmal quer durch die Mitte des Kreises. Doppelt so lang wie der Radius. Kurz: d.", example: "$d = 2 \\cdot r$" },
+    { term: "d", plain: "Der Buchstabe für den Durchmesser.", example: "$U = \\pi \\cdot d$" },
+    { term: "$\\pi$", plain: "Pi, die Kreiszahl. Ungefähr 3,14. So oft passt der Durchmesser in den Rand eines Kreises.", example: "$U = \\pi \\cdot d$" },
   );
 });

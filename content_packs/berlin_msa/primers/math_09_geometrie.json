@@ -41,8 +41,8 @@
       },
       {
         "title": "Fläche: was drin ist",
-        "body": "Länge mal Breite: $5 \\cdot 3 = 15$\n\nDas **Gras** auf der Wiese.\n\nDie Größe der Fläche heißt **Flächeninhalt**.\n\nGemessen in **Quadrat**-Zentimetern: $15\\ \\text{cm}^2$\n\nKurz schreibt man $U$ für den Umfang und $A$ für die Fläche.",
-        "say": "Die Fläche ist das, was innerhalb des Randes liegt. Beim Rechteck rechnest du Länge mal Breite. Weil du dabei Zentimeter mal Zentimeter rechnest, bekommt die Einheit eine kleine 2. Man liest das Quadratzentimeter.",
+        "body": "Die **Fläche** ist das, was innerhalb des Randes liegt.\n\nDas **Gras** auf der Wiese.\n\nBeim Rechteck rechnest du Länge mal Breite.\n\n$5 \\cdot 3 = 15$",
+        "say": "Die Fläche ist das, was innerhalb des Randes liegt. Beim Rechteck rechnest du Länge mal Breite. In welcher Einheit man das Ergebnis angibt, zeigt die nächste Tafel.",
         "tasks": [
           {
             "text": "Rechteck 4 cm mal 2 cm. Die Fläche ist ___.",
@@ -67,7 +67,7 @@
       },
       {
         "title": "Die kleine 2",
-        "body": "$15\\ \\text{cm}^2$ = 15 Quadrate von 1 cm mal 1 cm.\n\nUmfang: cm. Fläche: cm².",
+        "body": "Eine Fläche misst man in Quadraten.\n\n$15\\ \\text{cm}^2$ heißt: 15 Quadrate von 1 cm mal 1 cm.\n\nDie Größe der Fläche heißt **Flächeninhalt**.\n\nUmfang: cm. Fläche: $\\text{cm}^2$.",
         "say": "Die 15 Quadratzentimeter kannst du dir als 15 kleine Kästchen vorstellen, jedes einen Zentimeter lang und breit. Die kleine 2 ist ein gutes Erkennungszeichen. Siehst du sie in der Prüfung, geht es um eine Fläche. Steht nur Zentimeter da, geht es um eine Länge oder einen Umfang.",
         "tasks": [
           {
@@ -81,6 +81,23 @@
             "hint": "Was verrät die kleine 2 an der Einheit?"
           }
         ]
+      },
+      {
+        "title": "Zwei Buchstaben: U und A",
+        "body": "Für den Umfang schreibt man kurz $U$.\n\nFür den Flächeninhalt schreibt man kurz $A$.\n\nBeim Rechteck von eben: $U = 16$ cm und $A = 15\\ \\text{cm}^2$",
+        "tasks": [
+          {
+            "text": "Auf dem Formelblatt steht $A = 24\\ \\text{cm}^2$. Gemeint ist ___.",
+            "choices": [
+              "der Flächeninhalt",
+              "der Umfang"
+            ],
+            "correct": "der Flächeninhalt",
+            "why": "Der Buchstabe A steht für den Flächeninhalt. Auch die kleine 2 passt dazu.",
+            "hint": "Für welches Wort steht der Buchstabe A?"
+          }
+        ],
+        "say": "Auf dem Formelblatt stehen statt der Wörter Buchstaben. U steht für Umfang. A steht für den Flächeninhalt, das kommt vom englischen Wort area. Mehr bedeuten die beiden Buchstaben nicht."
       },
       {
         "title": "Jetzt du: Zaun oder Gras?",
@@ -122,7 +139,7 @@
       {
         "chapter": "Dreiecke und Winkel",
         "title": "Das Dreieck beschriften",
-        "body": "Ecken: **A, B, C** (groß)\n\nSeiten: **a, b, c** (klein), jede **gegenüber** ihrer Ecke\n\nWinkel: **α, β, γ** an A, B, C",
+        "body": "Die Ecken bekommen große Buchstaben: **A, B, C**.\n\nDie Seiten bekommen kleine Buchstaben: **a, b, c**.\n\nJede Seite liegt **gegenüber** ihrer Ecke: a gegenüber von A.",
         "figure": {
           "type": "triangle",
           "alpha": 60,
@@ -136,7 +153,7 @@
             "gamma": "γ"
           }
         },
-        "say": "Für Dreiecke gibt es eine feste Ordnung. Die Ecken bekommen große Buchstaben und die Seiten kleine. Die Seite a liegt immer gegenüber von der Ecke A. Die Winkel bekommen griechische Buchstaben: Alpha, Beta und Gamma.",
+        "say": "Für Dreiecke gibt es eine feste Ordnung. Die Ecken bekommen große Buchstaben und die Seiten kleine. Die Seite a liegt immer gegenüber von der Ecke A. Sie berührt die Ecke A also nicht.",
         "tasks": [
           {
             "text": "Gegenüber von der Ecke C liegt die Seite ___.",
@@ -152,7 +169,7 @@
       },
       {
         "title": "Was ist ein Winkel?",
-        "body": "Ein Winkel ist eine **Drehung**.\n\nEinmal ganz herum: 360°\n\nEin Viertel davon: 90°, der **rechte Winkel**",
+        "body": "Ein Winkel ist eine **Drehung**.\n\nMan misst ihn in **Grad**. Das Zeichen ist °.\n\nEinmal ganz herum: 360°\n\nEin Viertel davon: 90°. Das ist der **rechte Winkel**.",
         "say": "Ein Winkel misst, wie weit sich etwas dreht. Die Einheit heißt Grad, und ihr Zeichen ist der kleine Kreis. Eine ganze Drehung hat 360 Grad. Ein Viertel davon sind 90 Grad, das ist die Ecke von jedem Blatt Papier.",
         "tasks": [
           {
@@ -237,6 +254,36 @@
         ]
       },
       {
+        "title": "Die Winkel im Dreieck",
+        "body": "Die Winkel bekommen griechische Buchstaben.\n\n$\\alpha$ (alpha) liegt an der Ecke A.\n\n$\\beta$ (beta) liegt an der Ecke B.\n\n$\\gamma$ (gamma) liegt an der Ecke C.",
+        "figure": {
+          "type": "triangle",
+          "alpha": 60,
+          "beta": 50,
+          "labels": {
+            "a": "a",
+            "b": "b",
+            "c": "c",
+            "alpha": "α",
+            "beta": "β",
+            "gamma": "γ"
+          }
+        },
+        "tasks": [
+          {
+            "text": "Der Winkel an der Ecke B heißt ___.",
+            "choices": [
+              "$\\beta$",
+              "$\\alpha$"
+            ],
+            "correct": "$\\beta$",
+            "why": "Beta ist der zweite griechische Buchstabe und gehört zur zweiten Ecke, zu B.",
+            "hint": "Welcher griechische Buchstabe klingt wie das B?"
+          }
+        ],
+        "say": "Jetzt bekommen auch die drei Winkel im Dreieck Namen. Man nimmt dafür griechische Buchstaben: Alpha, Beta und Gamma. Die Reihenfolge ist dieselbe wie bei den Ecken. Alpha gehört zu A, Beta zu B und Gamma zu C."
+      },
+      {
         "title": "Winkelsumme im Dreieck",
         "body": "$\\alpha + \\beta + \\gamma = 180°$\n\nDas ist die **Winkelsumme**.\n\nBeispiel: $\\alpha = 70°$ und $\\beta = 60°$\n\n$\\gamma = 180° - 70° - 60° = 50°$",
         "say": "Das gilt in jedem Dreieck, egal wie es aussieht: Die drei Winkel ergeben zusammen immer 180 Grad. Wenn du zwei Winkel kennst, ziehst du beide von 180 ab. Was übrig bleibt, ist der dritte Winkel.",
@@ -265,7 +312,7 @@
       },
       {
         "title": "Die Höhe",
-        "body": "Die **Höhe** $h$ steht **senkrecht** auf der Grundseite $g$.\n\nDreieck: $A = \\frac{g \\cdot h}{2}$\n\nBeispiel: $g = 8$ cm und $h = 5$ cm\n\n$8 \\cdot 5 = 40$, die Hälfte ist $20\\ \\text{cm}^2$",
+        "body": "Die Seite, auf der das Dreieck steht, heißt **Grundseite**. Kurz: $g$\n\nDie **Höhe** geht von der Ecke oben gerade hinunter auf die Grundseite. Kurz: $h$\n\nSie steht **senkrecht** darauf: Dort ist ein rechter Winkel.",
         "figure": {
           "type": "triangle",
           "alpha": 50.2,
@@ -275,7 +322,32 @@
             "h": "h"
           }
         },
-        "say": "Die Höhe geht von einer Ecke gerade hinunter auf die Seite gegenüber, wie ein Lot. Senkrecht bedeutet, dass dort ein rechter Winkel entsteht. Und warum wird durch 2 geteilt? Ein Dreieck ist ein halbes Rechteck. Zeichne die andere Hälfte dazu, dann siehst du es.",
+        "say": "Die Höhe geht von einer Ecke gerade hinunter auf die Seite gegenüber, wie ein Lot. Senkrecht bedeutet, dass dort ein rechter Winkel entsteht. Die Höhe ist also nicht die schräge Seite, sondern der kürzeste Weg nach unten.",
+        "tasks": [
+          {
+            "text": "Die Höhe und die Grundseite bilden einen Winkel von ___.",
+            "choices": [
+              "90°",
+              "180°"
+            ],
+            "correct": "90°",
+            "why": "Senkrecht heißt: Es entsteht ein rechter Winkel, und der hat 90 Grad.",
+            "hint": "Wie viel Grad hat ein rechter Winkel?"
+          }
+        ]
+      },
+      {
+        "title": "Fläche vom Dreieck",
+        "body": "Ein Dreieck ist ein halbes Rechteck.\n\nDarum: Grundseite mal Höhe, geteilt durch 2.\n\nBeispiel: $g = 8$ cm und $h = 5$ cm\n\n$8 \\cdot 5 = 40$, die Hälfte ist $20\\ \\text{cm}^2$\n\nAuf dem Formelblatt: $A = \\frac{g \\cdot h}{2}$",
+        "figure": {
+          "type": "triangle",
+          "alpha": 50.2,
+          "beta": 50.2,
+          "labels": {
+            "c": "g",
+            "h": "h"
+          }
+        },
         "tasks": [
           {
             "text": "Dreieck mit $g = 6$ cm und $h = 4$ cm. Die Fläche ist ___.",
@@ -287,7 +359,8 @@
             "why": "6 mal 4 ist 24, und die Hälfte davon ist 12.",
             "hint": "Du hast 6 mal 4 gerechnet. Was fehlt noch, weil es ein Dreieck ist?"
           }
-        ]
+        ],
+        "say": "Warum wird durch 2 geteilt? Ein Dreieck ist ein halbes Rechteck. Zeichne die andere Hälfte dazu, dann siehst du es. Du rechnest also erst wie beim Rechteck und nimmst dann die Hälfte."
       },
       {
         "title": "Gleichschenklig und gleichseitig",
@@ -336,7 +409,34 @@
       {
         "chapter": "Parallelogramm, Trapez und Kreis",
         "title": "Das Parallelogramm",
-        "body": "Ein **Parallelogramm** ist ein schief gedrücktes Rechteck.\n\nGegenüberliegende Seiten sind gleich lang.\n\nFläche: Grundseite mal Höhe\n\n$A = g \\cdot h$\n\nDie Höhe steht senkrecht auf der Grundseite. Die schräge Seite zählt nicht.",
+        "body": "Ein **Parallelogramm** ist ein schief gedrücktes Rechteck.\n\nGegenüberliegende Seiten sind gleich lang.\n\nSie sind auch **parallel**: Sie laufen nebeneinander her wie Schienen.",
+        "figure": {
+          "type": "parallelogram",
+          "a": 5,
+          "h": 2.5,
+          "offset": 1.5,
+          "labels": {
+            "a": "g",
+            "h": "h"
+          }
+        },
+        "tasks": [
+          {
+            "text": "Ein Parallelogramm hat oben eine Seite von 7 cm. Die Seite unten ist ___ lang.",
+            "choices": [
+              "7 cm",
+              "14 cm"
+            ],
+            "correct": "7 cm",
+            "why": "Gegenüberliegende Seiten sind im Parallelogramm gleich lang.",
+            "hint": "Was gilt für zwei Seiten, die sich im Parallelogramm gegenüberliegen?"
+          }
+        ],
+        "say": "Stell dir ein Rechteck aus vier Stäben vor und drück es zur Seite. Die Seiten bleiben gleich lang, aber die Ecken sind keine rechten Winkel mehr. Die Seiten, die sich gegenüberliegen, laufen immer noch nebeneinander her."
+      },
+      {
+        "title": "Fläche vom Parallelogramm",
+        "body": "Fläche: Grundseite mal Höhe\n\n$A = g \\cdot h$\n\nDie Höhe steht senkrecht auf der Grundseite.\n\nDie schräge Seite zählt nicht.",
         "figure": {
           "type": "parallelogram",
           "a": 5,
@@ -419,7 +519,31 @@
       },
       {
         "title": "Der Kreis",
-        "body": "Alle Punkte auf dem Rand sind gleich weit von der Mitte entfernt.\n\nDer **Radius** $r$ reicht von der Mitte bis zum Rand.\n\nDer **Durchmesser** $d$ geht einmal quer durch die Mitte.\n\n$d = 2 \\cdot r$",
+        "body": "Alle Punkte auf dem Rand sind gleich weit von der Mitte entfernt.\n\nDer **Radius** reicht von der Mitte bis zum Rand.\n\nKurz: $r$",
+        "figure": {
+          "type": "circle",
+          "labels": {
+            "r": "r",
+            "d": "d"
+          }
+        },
+        "tasks": [
+          {
+            "text": "Ein Zirkel ist 5 cm weit geöffnet. Der Kreis bekommt den Radius ___.",
+            "choices": [
+              "5 cm",
+              "10 cm"
+            ],
+            "correct": "5 cm",
+            "why": "Der Abstand zwischen Spitze und Stift ist der Radius.",
+            "hint": "Wie weit ist der Stift von der Mitte entfernt?"
+          }
+        ],
+        "say": "Einen Kreis zeichnest du mit dem Zirkel. Die Spitze steht in der Mitte, und der Stift bleibt immer gleich weit von ihr weg. Dieser Abstand ist der Radius."
+      },
+      {
+        "title": "Der Durchmesser",
+        "body": "Der **Durchmesser** geht quer durch die Mitte, von Rand zu Rand.\n\nKurz: $d$\n\nEr ist doppelt so lang wie der Radius: $d = 2 \\cdot r$",
         "figure": {
           "type": "circle",
           "labels": {
@@ -439,11 +563,11 @@
             "hint": "Ist der Durchmesser länger oder kürzer als der Radius?"
           }
         ],
-        "say": "Einen Kreis zeichnest du mit dem Zirkel. Die Spitze steht in der Mitte, und der Stift bleibt immer gleich weit von ihr weg. Dieser Abstand ist der Radius. Der Durchmesser geht von Rand zu Rand durch die Mitte und ist doppelt so lang."
+        "say": "Der Durchmesser geht von Rand zu Rand durch die Mitte. Er besteht aus zwei Radien hintereinander und ist deshalb doppelt so lang. Kennst du den einen, kennst du also auch den anderen."
       },
       {
         "title": "Umfang vom Kreis",
-        "body": "Der Rand ist etwa 3,14-mal so lang wie der Durchmesser.\n\nDie Zahl 3,14 heißt **Pi**. Ihr Zeichen ist $\\pi$.\n\n$U = \\pi \\cdot d$\n\nBeispiel: $d = 60$ cm\n\n$U \\approx 3{,}14 \\cdot 60 = 188{,}4$ cm",
+        "body": "Der Rand ist etwa 3,14-mal so lang wie der Durchmesser.\n\nDiese Zahl kennst du schon: $\\pi$\n\n$U = \\pi \\cdot d$\n\nBeispiel: $d = 60$ cm, also $U \\approx 3{,}14 \\cdot 60 = 188{,}4$ cm",
         "figure": {
           "type": "circle",
           "labels": {
@@ -509,48 +633,118 @@
     "vocab": [
       {
         "term": "Umfang",
-        "plain": "Einmal außen herum. Eine Länge.",
-        "example": "16 cm"
+        "plain": "Der Weg einmal außen herum. Eine Länge.",
+        "example": "Rechteck 5 cm mal 3 cm: 16 cm"
+      },
+      {
+        "term": "U",
+        "plain": "Der Buchstabe für den Umfang.",
+        "example": "$U = 16$ cm"
+      },
+      {
+        "term": "Fläche",
+        "plain": "Das, was innerhalb des Randes liegt.",
+        "example": "Das Gras auf der Wiese."
       },
       {
         "term": "Flächeninhalt",
-        "plain": "Was drin ist. In Quadrat-Einheiten.",
-        "example": "15 cm²"
+        "plain": "Die Größe der Fläche. Gemessen in Quadraten, zum Beispiel cm².",
+        "example": "$15\\ \\text{cm}^2$"
+      },
+      {
+        "term": "A",
+        "plain": "Auf dem Formelblatt der Buchstabe für den Flächeninhalt. Im Dreieck heißt auch eine Ecke A.",
+        "example": "$A = 15\\ \\text{cm}^2$"
+      },
+      {
+        "term": "a",
+        "plain": "Im Dreieck die Seite gegenüber von Ecke A. Genauso liegen b und c gegenüber von B und C.",
+        "example": "$a = 8$ cm"
       },
       {
         "term": "Winkel",
         "plain": "Eine Drehung, gemessen in Grad.",
-        "example": "90° ist ein rechter Winkel"
+        "example": "Die Ecke eines Blatts hat 90°."
       },
       {
-        "term": "Höhe",
-        "plain": "Senkrecht auf der Grundseite.",
-        "example": "$A = \\frac{g \\cdot h}{2}$"
+        "term": "Grad",
+        "plain": "Die Einheit für Winkel. Das Zeichen ist °.",
+        "example": "Eine ganze Drehung hat 360°."
       },
       {
-        "term": "Grundseite",
-        "plain": "Die Seite, auf der die Höhe steht.",
-        "example": "meist die untere"
+        "term": "rechter Winkel",
+        "plain": "Ein Winkel von genau 90°.",
+        "example": "Die Ecke von einem Blatt Papier."
       },
       {
-        "term": "gleichschenklig",
-        "plain": "Zwei gleiche Seiten, zwei gleiche Basiswinkel.",
-        "example": "$\\alpha = \\beta$"
+        "term": "spitz",
+        "plain": "Ein Winkel unter 90°.",
+        "example": "40°"
       },
       {
-        "term": "gleichseitig",
-        "plain": "Drei gleiche Seiten, alle Winkel 60°.",
-        "example": "$a = b = c$"
+        "term": "stumpf",
+        "plain": "Ein Winkel zwischen 90° und 180°.",
+        "example": "120°"
+      },
+      {
+        "term": "gestreckt",
+        "plain": "Ein Winkel von genau 180°. Er sieht aus wie eine gerade Linie.",
+        "example": "180°"
+      },
+      {
+        "term": "$\\alpha$",
+        "plain": "Alpha, der Winkel an der Ecke A. Genauso gehört $\\beta$ (beta) zu B und $\\gamma$ (gamma) zu C.",
+        "example": "$\\alpha = 70°$"
       },
       {
         "term": "Winkelsumme",
-        "plain": "Im Dreieck immer 180°.",
+        "plain": "Alle Winkel zusammen. Im Dreieck sind das immer 180°.",
         "example": "$\\alpha + \\beta + \\gamma = 180°$"
       },
       {
-        "term": "Parallelogramm",
-        "plain": "Ein schief gedrücktes Rechteck. Gegenüberliegende Seiten sind gleich lang.",
+        "term": "Grundseite",
+        "plain": "Die Seite, auf der die Höhe steht. Kurz: g.",
+        "example": "$g = 8$ cm"
+      },
+      {
+        "term": "g",
+        "plain": "Der Buchstabe für die Grundseite.",
         "example": "$A = g \\cdot h$"
+      },
+      {
+        "term": "Höhe",
+        "plain": "Die Strecke von der Ecke oben gerade hinunter auf die Grundseite. Kurz: h.",
+        "example": "$h = 5$ cm"
+      },
+      {
+        "term": "h",
+        "plain": "Der Buchstabe für die Höhe.",
+        "example": "$A = g \\cdot h$"
+      },
+      {
+        "term": "senkrecht",
+        "plain": "Im rechten Winkel zueinander.",
+        "example": "Die Höhe steht senkrecht auf der Grundseite."
+      },
+      {
+        "term": "gleichschenklig",
+        "plain": "Ein Dreieck mit zwei gleich langen Seiten. Die zwei Winkel an der dritten Seite sind gleich groß.",
+        "example": "zweimal 70° und einmal 40°"
+      },
+      {
+        "term": "gleichseitig",
+        "plain": "Ein Dreieck mit drei gleich langen Seiten. Alle Winkel haben 60°.",
+        "example": "$a = b = c$"
+      },
+      {
+        "term": "Parallelogramm",
+        "plain": "Ein schief gedrücktes Rechteck. Gegenüberliegende Seiten sind gleich lang und parallel.",
+        "example": "$A = g \\cdot h$"
+      },
+      {
+        "term": "parallel",
+        "plain": "Zwei Linien laufen nebeneinander her wie Schienen und treffen sich nie.",
+        "example": "Die Linien im Schulheft."
       },
       {
         "term": "Trapez",
@@ -559,18 +753,28 @@
       },
       {
         "term": "Radius",
-        "plain": "Der Abstand von der Mitte eines Kreises bis zum Rand.",
-        "example": "$r$"
+        "plain": "Der Abstand von der Mitte eines Kreises bis zum Rand. Kurz: r.",
+        "example": "$r = 30$ cm"
+      },
+      {
+        "term": "r",
+        "plain": "Der Buchstabe für den Radius.",
+        "example": "$A = \\pi \\cdot r^2$"
       },
       {
         "term": "Durchmesser",
-        "plain": "Einmal quer durch die Mitte des Kreises. Doppelt so lang wie der Radius.",
+        "plain": "Einmal quer durch die Mitte des Kreises. Doppelt so lang wie der Radius. Kurz: d.",
         "example": "$d = 2 \\cdot r$"
       },
       {
-        "term": "Pi",
-        "plain": "Die Zahl 3,14. So oft passt der Durchmesser in den Rand eines Kreises.",
-        "example": "$\\pi \\approx 3{,}14$"
+        "term": "d",
+        "plain": "Der Buchstabe für den Durchmesser.",
+        "example": "$U = \\pi \\cdot d$"
+      },
+      {
+        "term": "$\\pi$",
+        "plain": "Pi, die Kreiszahl. Ungefähr 3,14. So oft passt der Durchmesser in den Rand eines Kreises.",
+        "example": "$U = \\pi \\cdot d$"
       }
     ],
     "quiz": [
