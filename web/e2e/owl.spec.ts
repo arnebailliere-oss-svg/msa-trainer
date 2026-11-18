@@ -39,7 +39,7 @@ test("Ferdinand chalkboard flow", async ({ page }) => {
   await page.waitForTimeout(400);
   await expect(page.getByText("Tafel 7 von")).toBeVisible();
   // run to the vocabulary
-  for (let i = 0; i < 20; i++) {
+  for (let i = 0; i < 45; i++) {
     if (await page.getByRole("heading", { name: "Die Wörter" }).isVisible().catch(() => false)) break;
     await next().click();
     await page.waitForTimeout(350);

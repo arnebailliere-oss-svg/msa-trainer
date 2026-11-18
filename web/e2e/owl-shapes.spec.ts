@@ -44,7 +44,7 @@ test("boards show their shapes and the try-it-out elements", async ({ page }) =>
     await shot(page, name);
   }
 
-  await openBoard(page, "P_MATH_KOERPER", "Spitze Körper: ein Drittel");
+  await openBoard(page, "P_MATH_KOERPER", "Spitze Körper");
   await expect(page.locator(".chalk-board-figure svg")).toHaveCount(2);
   await noOverflow(page);
   await shot(page, "koerper-spitz");
@@ -77,7 +77,7 @@ test("boards show their shapes and the try-it-out elements", async ({ page }) =>
     await noOverflow(page);
     await shot(page, name);
   }
-  await openBoard(page, "P_MATH_TERME", "Die zweite und die dritte");
+  await openBoard(page, "P_MATH_TERME", "Die zweite binomische Formel");
   await noOverflow(page);
   await shot(page, "neu-binomisch");
 
